@@ -2,55 +2,53 @@
 
 ## Resumen
 
-AquaLLM es un ajuste fino (fine-tuning) del modelo Qwen2.5-7B-Instruct orientado a responder preguntas sobre acuariofilia: acuarios de agua dulce y salada, cuidado de peces, seleccion de equipamiento, parametros y quimica del agua, plantas acuaticas y enfermedades comunes de los peces. Lo desarrolla el usuario de Hugging Face oytunistrator y se distribuye con la etiqueta de pipeline `question-answering`.
+AquaLLM es un ajuste fino (fine-tuning) del modelo Qwen2.5-1.5B-Instruct orientado a responder preguntas sobre acuariofilia: acuarios de agua dulce y salada, cuidado de peces, selección de equipamiento, parámetros químicos del agua, plantas acuáticas y enfermedades comunes de los peces. Lo desarrolla el usuario de Hugging Face oytunistrator y se distribuye con pipeline declarado de question-answering, aunque al estar construido sobre un modelo instructivo conserva la capacidad de generación de texto conversacional.
 
-El modelo parte de la arquitectura Qwen2 (transformer decoder-only) del checkpoint Qwen2.5-7B-Instruct, aunque el dato de pesos en safetensors del repositorio indica 1.543.714.304 parametros, es decir, aproximadamente 1,5B, lo que no coincide con los 7B del modelo base declarado. Esta discrepancia es relevante para cualquiera que vaya a desplegarlo: el tamano real de los pesos publicados corresponde a un modelo de ~1,5B, no a uno de 7B.
+El modelo parte de la arquitectura Qwen2 de 1.543.714.304 parámetros (aproximadamente 1,5 mil millones), un transformer decoder-only con atención por ventanas deslizantes y atención completa combinadas, heredado íntegramente del modelo base. El ajuste se realizó sobre el dataset propio oytunistrator/AquaLLM-Dataset, cuyo contenido, tamaño y composición no están documentados en la información disponible.
 
-Su relevancia es acotada: se trata de un modelo de nicho, con 111 descargas en Hugging Face y 3 likes en el momento de la consulta, pensado como asistente especializado para aficionados y para tiendas de animales. No hay informacion publicada sobre licencia, composicion del dataset de entrenamiento ni resultados de benchmarks.
+Su relevancia es la de un modelo de nicho: demuestra el patrón de especialización vertical sobre un modelo pequeño (1,5B) para un dominio concreto, con un coste de inferencia muy bajo y posibilidad de ejecución en hardware de consumo. Está pensado para asistentes de tiendas de animales, guías para aficionados principiantes y consultas rápidas de acuaristas experimentados, en turco e inglés.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (familia Qwen2) |
-| Parametros totales | 1.543.714.304 (~1,5B) segun safetensors del repo; el modelo base declarado es Qwen2.5-7B-Instruct |
+| Arquitectura | Transformer decoder-only (Qwen2), basada en Qwen/Qwen2.5-1.5B-Instruct |
+| Parametros totales | 1.543.714.304 |
 | Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | safetensors y GGUF (formatos presentes en el repo) |
+| Longitud de contexto | no disponible en la informacion proporcionada (el modelo base Qwen2.5-1.5B-Instruct soporta 32.768 tokens, pero el autor no lo declara) |
+| Tipos de cuantizacion | safetensors (precision original) y GGUF (cuantizaciones no detalladas) |
 | Idiomas soportados | turco (tr), ingles (en) |
 | Licencia | no disponible |
 | Formato de pesos | safetensors, GGUF |
-| Tamano del repo | 41,2 GB |
-| Pipeline declarado | question-answering |
-| Dataset de entrenamiento | oytunistrator/AquaLLM-Dataset |
 
 ## Arquitectura y entrenamiento
 
-El modelo se basa en la arquitectura Qwen2, un transformer decoder-only con atencion causal estandar. Segun la model card, se ha realizado un fine-tuning sobre un modelo base (Qwen2.5-7B-Instruct) utilizando un dataset tematico de acuariofilia publicado por el mismo autor (oytunistrator/AquaLLM-Dataset). No se especifican el numero de tokens de entrenamiento, la composicion del dataset, la metodologia (SFT, LoRA, QLoRA, DPO) ni hiperparametros.
+La arquitectura es la de Qwen2.5-1.5B-Instruct sin modificaciones estructurales: un transformer decoder-only con normalización RMSNorm, activación SwiGLU, embeddings ligados (tied embeddings) y RoPE para codificación posicional, con una combinación de atención completa y atención de ventana deslizante según la configuración de Qwen2. El ajuste fino se aplicó sobre el checkpoint instructivo ya alineado, de modo que el modelo conserva el formato de chat y el tokenizador originales.
 
-No hay informacion sobre innovaciones tecnicas adicionales (atencion lineal, decodificacion especulativa, modos de razonamiento extendido). El objetivo declarado por el autor es producir respuestas correctas, breves y comprensibles sobre acuariofilia. La discrepancia entre el modelo base declarado (7B) y el recuento real de parametros en safetensors (~1,5B) no se explica en la model card y deberia verificarse antes de cualquier uso en produccion.
+El entrenamiento consistió en un fine-tuning supervisado sobre el dataset oytunistrator/AquaLLM-Dataset, de temática acuarística. No se documentan en la información disponible el número de tokens de entrenamiento, la composición del dataset, la proporción de ejemplos por idioma, ni si se aplicaron técnicas de RLHF, DPO o preferencia adicional tras el ajuste. Tampoco se especifican hiperparámetros, método de ajuste (full fine-tuning o LoRA/QLoRA) ni si se congelaron capas. No hay innovaciones técnicas propias declaradas más allá de la especialización de dominio.
 
 ## Capacidades
 
-- Generacion de texto y respuesta a preguntas en el dominio de la acuariofilia (agua dulce y salada).
-- Asesoramiento sobre montaje y mantenimiento de acuarios.
-- Recomendaciones sobre plantas acuaticas e iluminacion adecuada.
-- Guia sobre filtracion, calefaccion y otros equipos.
-- Informacion sobre enfermedades comunes de los peces y sus tratamientos.
-- Respuestas sobre parametros y quimica del agua.
-- Capacidades multilingues limitadas a turco e ingles.
-- No se documenta soporte de tool calling, function calling, agentes, vision, audio ni modo de razonamiento extendido.
-- Al derivar de Qwen2.5-7B-Instruct, podria conservar parte de las capacidades generales del modelo base, pero no hay evaluacion publicada que lo confirme.
+- Generación de texto conversacional multirretorno, heredada del modelo base instructivo.
+- Respuesta a preguntas sobre configuración y mantenimiento de acuarios de agua dulce y salada.
+- Recomendación de plantas acuáticas y de iluminación adecuada.
+- Orientación sobre filtración, calefacción y otros equipos de acuariofilia.
+- Información sobre enfermedades comunes de los peces y sus posibles soluciones.
+- Respuesta a preguntas sobre parámetros y química del agua.
+- Capacidad multilingüe limitada a turco e inglés.
+- Soporte de tool calling / function calling: no documentado en la información disponible (el modelo base lo soporta, pero el ajuste puede haber degradado esta capacidad).
+- Modo de razonamiento explícito (thinking): no disponible.
+- Capacidades de visión o audio: no disponibles.
 
 ## Casos de uso
 
-- Asistente para principiantes en acuariofilia: el modelo responde dudas frecuentes sobre ciclado del acuario, eleccion del primer pez y parametros basicos del agua, con respuestas breves y en turco o ingles.
-- Atencion al cliente en tiendas de animales: integrado como chatbot de soporte, puede resolver preguntas sobre compatibilidad de especies, equipos y mantenimiento antes de derivar a un humano.
-- Consulta rapida para acuaristas experimentados: fuente de referencia para contrastar valores de parametros (pH, dureza, temperatura) o identificar sintomas de enfermedades.
-- Soporte en comunidades y foros: moderacion asistida o generacion de respuestas iniciales a hilos de preguntas frecuentes.
-- Guia de compra de equipamiento: el modelo puede explicar diferencias entre tipos de filtros, iluminacion o calefactores y recomendar segun el tipo de acuario.
-- Base para un sistema RAG especializado: combinado con una base documental de acuariofilia, el modelo podria generar respuestas fundamentadas, aunque requeriria validacion previa de su calidad real.
-- Educacion y divulgacion: generacion de fichas o material introductorio sobre especies y cuidados, siempre con revision humana.
+- Asistente en tienda de animales: el modelo puede atender consultas de clientes sobre compatibilidad de especies, ciclado del acuario o elección de filtro, con respuestas breves en turco o inglés y un coste de inferencia mínimo al ser un modelo de 1,5B.
+- Guía para principiantes en acuariofilia: responde preguntas frecuentes sobre el primer montaje, parámetros de agua (pH, dureza, nitritos) y rutinas de mantenimiento, con un tono adaptado por el ajuste de dominio.
+- Consulta rápida para acuaristas experimentados: resolución de dudas puntuales sobre dosificación de fertilizantes, compatibilidad de plantas o síntomas tempranos de enfermedad.
+- Chatbot embebido en una web o foro de acuariofilia: su tamaño permite desplegarlo en una GPU de consumo o incluso en CPU con cuantización GGUF, sirviendo respuestas con latencia baja.
+- Generación de fichas y material divulgativo: redacción de descripciones de especies, guías de cuidado o FAQ para una tienda o comunidad, partiendo de indicaciones breves.
+- Filtrado y triaje de consultas de soporte: clasificación y primera respuesta automática a tickets de atención al cliente relacionados con acuariofilia, derivando los casos complejos a un humano.
+- Prototipado de asistentes verticales: como ejemplo de referencia para evaluar la viabilidad de especializar un modelo de 1,5B en un dominio concreto antes de invertir en modelos mayores.
 
 ## Benchmarks y rendimiento
 
@@ -58,40 +56,41 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: con ~1,5B parametros, en FP16 requiere aproximadamente 3-4 GB; en cuantizacion de 8 bits, unos 2 GB; en 4 bits, en torno a 1-1,5 GB (estimacion teorica, no verificada con el modelo).
-- Si se confirma el tamano de 7B del modelo base, los requisitos subirian a ~14-16 GB en FP16 y ~4-6 GB en cuantizacion de 4 bits.
-- GPU recomendadas: cualquier GPU consumer con 8 GB o mas (RTX 3060, RTX 4060, RTX 4070) deberia bastar para la variante de ~1,5B; para una variante de 7B se recomienda RTX 4090, A100 o H100.
-- Cabe en GPU consumer: si, previsiblemente en la mayoria de tarjetas con 8 GB o mas para la variante de ~1,5B.
-- Opciones de despliegue: llama.cpp u Ollama para los pesos GGUF; vLLM o TGI para los safetensors (el repo incluye la etiqueta `text-generation-inference`).
-- Latencia y throughput: no disponibles.
+- VRAM estimada para inferencia en precisión FP16/BF16: en torno a 3,1 GB solo para pesos, más overhead de KV cache y activaciones; aproximadamente 4-5 GB en la práctica.
+- VRAM estimada con cuantización de 8 bits: alrededor de 1,6-2 GB para pesos.
+- VRAM estimada con cuantización GGUF Q4_K_M: alrededor de 1 GB para pesos, 1,5-2 GB en total con contexto moderado.
+- GPU recomendadas para producción: NVIDIA A10, L4, T4 o A100/H100 para despliegues con alta concurrencia; para desarrollo, cualquier GPU con 6 GB o más.
+- GPU de consumo: cabe holgadamente en RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070, RTX 4090, e incluso en GPUs de 4-6 GB con cuantización GGUF.
+- CPU: viable con llama.cpp y cuantización Q4, con throughput reducido.
+- Opciones de despliegue: llama.cpp y Ollama para GGUF; vLLM, Text Generation Inference (TGI) y Transformers para safetensors; el tag text-generation-inference sugiere compatibilidad con TGI.
+- Latencia y throughput: no disponibles en la información proporcionada; por el tamaño del modelo se espera un throughput alto en GPU modernas, pero no hay cifras publicadas.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Enfoque |
-|---|---|---|---|---|
-| AquaLLM | ~1,5B (declara base 7B) | no disponible | no disponible | Acuariofilia, tr/en |
-| Qwen2.5-7B-Instruct | 7B | 32.768 tokens (segun documentacion de Qwen) | Apache 2.0 (segun Qwen) | Proposito general |
-| Qwen2.5-1.5B-Instruct | 1,5B | 32.768 tokens (segun documentacion de Qwen) | Apache 2.0 (segun Qwen) | Proposito general |
+| Modelo | Parametros | Contexto | Dominio | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| AquaLLM (oytunistrator) | 1,54B | no disponible | Acuariofilia (tr/en) | no disponible | Hugging Face (safetensors, GGUF) |
+| Qwen/Qwen2.5-1.5B-Instruct | 1,54B | 32.768 tokens | General | Apache 2.0 (modelo base) | Hugging Face, ampliamente integrado |
+| Qwen/Qwen2.5-3B-Instruct | 3,09B | 32.768 tokens | General | Apache 2.0 | Hugging Face |
+| Llama 3.2 1B Instruct | 1,24B | 128.000 tokens | General | Llama 3.2 Community License | Hugging Face, Ollama, vLLM |
 
-La comparacion directa con alternativas especializadas en acuariofilia no esta disponible: no se han identificado modelos publicos comparables en la informacion proporcionada. Frente a los modelos base de Qwen, AquaLLM sacrifica generalidad a cambio de especializacion, aunque no hay datos que cuantifiquen esa mejora en el dominio.
+La comparación directa con modelos generalistas no es del todo equitativa: AquaLLM sacrifica amplitud de conocimiento por especialización en acuariofilia. Frente a Qwen2.5-1.5B-Instruct, su ventaja es el ajuste de dominio y su desventaja es la posible pérdida de capacidades generales y de tool calling; frente a modelos de 3B o a Llama 3.2 1B, ofrece un contexto declarado menor (o no declarado) y una licencia sin especificar, lo que complica su adopción comercial.
 
 ## Limitaciones y advertencias
 
-- No hay informacion sobre la licencia: no se puede confirmar si el uso comercial esta permitido.
-- Discrepancia entre el modelo base declarado (Qwen2.5-7B-Instruct) y los parametros reales en safetensors (~1,5B); verificar antes de desplegar.
-- Riesgo de alucinacion en recomendaciones tecnicas (dosis, tratamientos de enfermedades, parametros quimicos) con posible impacto en la salud de los animales.
-- Idiomas limitados a turco e ingles; no se documenta soporte de castellano.
-- Longitud de contexto no documentada.
-- Dataset de entrenamiento no descrito en detalle: se desconoce su tamano, procedencia y posibles sesgos.
-- Sin benchmarks publicados ni evaluacion independiente; las capacidades declaradas no estan verificadas.
-- Comunidad muy pequena (111 descargas, 3 likes): soporte y mantenimiento inciertos.
-- No se documenta soporte de tool calling ni de agentes, lo que limita su uso en pipelines automatizados complejos.
+- La licencia no está disponible, lo que impide determinar si se permite el uso comercial; es un bloqueo potencial para producción.
+- El modelo está ajustado a un dominio muy estrecho (acuariofilia) y puede degradar su rendimiento en tareas generales respecto al modelo base.
+- Riesgo de alucinación en recomendaciones técnicas: dosis de medicamentos, parámetros químicos o compatibilidades de especies pueden ser incorrectos y no deben usarse como única fuente en decisiones que afecten a animales vivos.
+- Idiomas limitados a turco e inglés; el rendimiento en castellano no está garantizado ni documentado.
+- La longitud de contexto efectiva no está declarada por el autor; no debe asumirse la del modelo base sin verificación.
+- El dataset de entrenamiento no está documentado en composición ni tamaño, lo que impide evaluar sesgos y cobertura.
+- El modelo base puede arrastrar sesgos presentes en los datos de Qwen2.5; no se documenta ningún proceso de mitigación adicional.
+- El tamaño del repositorio (50,7 GB) es desproporcionado para un modelo de 1,5B, probablemente por múltiples cuantizaciones GGUF; conviene revisar los archivos antes de descargar.
+- El soporte de tool calling y de agentes no está verificado tras el ajuste; no debe asumirse en pipelines de producción.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/oytunistrator/AquaLLM
-- Dataset: https://huggingface.co/datasets/oytunistrator/AquaLLM-Dataset
-- Repositorio GitHub (issues y contribuciones): https://github.com/oytunistrator/AquaLLM
-- Modelo base: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
-- Estadisticas de uso: https://openmodelstats.com/models/oytunistrator/aquallm
-- Ficha en free2aitools: https://free2aitools.com/model/oytunistrator/aquallm
+- Modelo en Hugging Face: https://huggingface.co/oytunistrator/AquaLLM
+- Dataset de ajuste: https://huggingface.co/datasets/oytunistrator/AquaLLM-Dataset
+- Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
+- Repositorio e issues del autor: https://github.com/oytunistrator/AquaLLM/issues

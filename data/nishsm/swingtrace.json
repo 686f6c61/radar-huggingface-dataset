@@ -52,32 +52,31 @@
   "removal_pattern": null,
   "renamed_to": "nishsm/golf-club-detection-swingtrace",
   "renamed_at": "2026-11-11T06:55:38.936Z",
-  "benchmarks": [],
-  "sources": [
+  "benchmarks": [
     {
-      "title": "SwingTrace AI Pro — AI Golf Swing Analyser | Track Your Progress",
-      "url": "https://swingtrace.golfbiomechanics.net/",
-      "snippet": "AI maps your kinematic sequence SwingTrace automatically detects your P2-P7 swing positions using pose estimation, then processes every frame: tracking hip rotation, shoulder coil, arm path, and club trajectory against biomechanical baselines. In your browser."
+      "task": null,
+      "dataset": "golf-club-tracking (validation split)",
+      "metric": null,
+      "value": 0.93
     },
     {
-      "title": "SwingTrace",
-      "url": "https://www.swingtrace.golf/",
-      "snippet": "Clear boundaries for V1 SwingTrace separates local practice review from account, subscription, support, and enabled sharing flows."
+      "task": null,
+      "dataset": "golf-club-tracking (validation split)",
+      "metric": null,
+      "value": 0.849
     },
     {
-      "title": "GitHub - nishsm/swingtrace: Golf club shaft, head and hands detection ...",
-      "url": "https://github.com/nishsm/swingtrace",
-      "snippet": "Face blurred for privacy. SwingTrace finds the club shaft, club head and hands in every frame and rebuilds the club-head path through the whole swing, including the top of the backswing and impact, where the head turns into a blur and normal detectors lose it."
+      "task": null,
+      "dataset": "golf-club-tracking (validation split)",
+      "metric": null,
+      "value": 0.918
     },
     {
-      "title": "swingtrace/README.md at main · nishsm/swingtrace · GitHub",
-      "url": "https://github.com/nishsm/swingtrace/blob/main/README.md",
-      "snippet": "Golf club shaft, head and hands detection and swing-path tracking with YOLO11m - swingtrace/README.md at main · nishsm/swingtrace"
-    },
-    {
-      "title": "SwingTrace PRO - AI Analysis - Apps on Google Play",
-      "url": "https://play.google.com/store/apps/details?id=com.vicious.swingtrace&hl=en-US",
-      "snippet": "SwingTrace PRO is a golf improvement app powered by V-core AI, which analyzes your swing video and delivers pro-coach quality feedback. Simply record or select a video of your swing."
+      "task": null,
+      "dataset": "golf-club-tracking (validation split)",
+      "metric": null,
+      "value": 0.674
     }
-  ]
+  ],
+  "sources": []
 }

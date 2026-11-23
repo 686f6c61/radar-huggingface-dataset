@@ -57,29 +57,9 @@
   "benchmarks": [],
   "sources": [
     {
-      "title": "Gorillaa-ai-org/pipecat - GitHub",
-      "url": "https://github.com/Gorillaa-ai-org/pipecat",
-      "snippet": "Pipecat is an open-source Python framework for building real-time voice and multimodal conversational agents. Orchestrate audio and video, AI services, different transports, and conversation pipelines effortlessly—so you can focus on what makes your agent unique. Want to dive right in? Try the quickstart."
-    },
-    {
-      "title": "LLM Inference - Pipecat",
-      "url": "https://docs.pipecat.ai/pipecat/learn/llm",
-      "snippet": "Learn how to configure language models to generate intelligent responses in your voice AI pipeline LLM services are responsible for chat completions and tool calling based on the provided context (conversation history). The LLM responds by streaming tokens via LLMTextFrame s, which are used by subsequent processors to create audio output for ..."
-    },
-    {
-      "title": "GitHub - suryahamming/pipecat-ai: Open Source framework for voice and ...",
-      "url": "https://github.com/suryahamming/pipecat-ai",
-      "snippet": "Pipecat is an open-source Python framework for building real-time voice and multimodal conversational agents. Orchestrate audio and video, AI services, different transports, and conversation pipelines effortlessly—so you can focus on what makes your agent unique."
-    },
-    {
-      "title": "Pipecat Open Source Framework - Pipecat - docs.pipecat.ai",
-      "url": "https://docs.pipecat.ai/overview/pipecat",
-      "snippet": "Pipecat is an open source Python framework for voice and multimodal AI agents, orchestrating AI services and transports."
-    },
-    {
-      "title": "Pipecat by Daily",
-      "url": "https://www.pipecat.ai/",
-      "snippet": "Open source framework for voice and multimodal conversational AI."
+      "title": "pipecat-ai · PyPI",
+      "url": "https://pypi.org/project/pipecat-ai/",
+      "snippet": "May 13, 2024 · Pipecat is an open-source Python framework for building real-time voice and multimodal conversational agents. Build …Read more"
     }
   ]
 }

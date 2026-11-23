@@ -1,0 +1,43 @@
+{
+  "schema": 2,
+  "id": "SZLHOLDINGS/salad-ring-ouro-l13",
+  "slug": "szlholdings-salad-ring-ouro-l13",
+  "author": "SZLHOLDINGS",
+  "url": "https://huggingface.co/SZLHOLDINGS/salad-ring-ouro-l13",
+  "created_at": "2026-11-18T08:23:16.000Z",
+  "updated_at": "2026-11-23T01:12:53.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "context_length": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "How to Save More and Trade Smarter with DEX Aggregators",
+      "url": "https://yulys.com/blog/trade-smarter-with-dex-aggregators",
+      "snippet": "Aug 13, 2025 · DEX aggregators refer to the systems offering traders best possible swap rates through the simultaneous scanning of …Read more"
+    }
+  ]
+}

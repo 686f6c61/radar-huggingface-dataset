@@ -77,31 +77,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Anmelden bei Hotmail | Microsoft Support",
-      "url": "https://support.microsoft.com/de-de/accounts-billing/manage/how-to-sign-in-to-hotmail",
-      "snippet": "Microsoft hält immer ein Auge auf ungewöhnliche Anmeldeaktivitäten, nur für den Fall, dass jemand anderes versucht, auf Ihr Konto …"
-    },
-    {
-      "title": "1337Hero/Qwopus3.8-27B-Flash-ROCMFP4-GGUF · Hugging Face",
-      "url": "https://huggingface.co/1337Hero/Qwopus3.8-27B-Flash-ROCMFP4-GGUF",
-      "snippet": "Two experimental 4-bit quantizations of Jackrong/Qwopus3.8-27B-Flash, a 27.3B-parameter dense multimodal model (qwen35architecture, 64 layers, 262K context, hybrid linear/full attention, bundled MTP draft layer, Qwen3.5-style vision encoder). Converted from the BF16 safetensors and quantized on a Radeon AI PRO R9700 (gfx1201, RDNA4)."
-    },
-    {
-      "title": "Microsoft Support and Recovery Assistant (SaRA) command-line utility ...",
-      "url": "https://support.microsoft.com/en-us/servicing/os/windows/docs/2026/03/microsoft-support-and-recovery-assistant-sara-command-line-utility-removal-from-windows",
-      "snippet": "Mar 31, 2026 · Microsoft has officially removed the SaRA utility from all in-support versions of Windows updates released on and after …"
-    },
-    {
-      "title": "Models compatible with the GGUF library – Hugging Face",
-      "url": "https://huggingface.co/models?library=gguf",
-      "snippet": "Explore machine learning models. DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF"
-    },
-    {
-      "title": "Exchange Online EWS, Your Time is Almost Up | Microsoft Community …",
-      "url": "https://techcommunity.microsoft.com/blog/exchange/exchange-online-ews-your-time-is-almost-up/4492361",
-      "snippet": "We wanted to provide an update on Exchange Online EWS deprecation. &nbsp;"
-    }
-  ]
+  "sources": []
 }

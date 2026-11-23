@@ -2,103 +2,90 @@
 
 ## Resumen
 
-Vinci-MLE-123B-1.0-i1-GGUF es un conjunto de cuantizaciones en formato GGUF, generadas con el método i1/imatrix, del modelo simpledirect/Vinci-MLE-123B-1.0. El autor de las cuantizaciones es mradermacher, que publica versiones optimizadas con matrices de importancia (imatrix) para reducir el impacto en perplejidad respecto a las cuantizaciones estáticas equivalentes. El modelo base está orientado a tareas de machine learning engineering y uso de herramientas, según las etiquetas declaradas (machine-learning-engineering, tool-use, devstral, lora, research, conversational).
+Vinci-MLE-123B-1.0-i1-GGUF es la version cuantizada en formato GGUF del modelo Vinci-MLE-123B-1.0, desarrollado originalmente por simpledirect y convertido a GGUF por mradermacher. Se trata de un modelo de lenguaje de gran tamano (125.025.988.608 parametros segun los pesos en safetensors del modelo base) especializado en ingenieria de machine learning (MLE) y uso de herramientas (tool-use), construido sobre una base de tipo Devstral y afinado mediante LoRA. La nomenclatura y las etiquetas asociadas (devstral, lora, canadian-ai, simpledirect, vinci) indican que deriva de la familia Mistral/Devstral y que su licencia es una variante modificada de MIT con clausulas de Mistral AI.
 
-El modelo base cuenta con 125.025.988.608 parámetros totales (aproximadamente 125B), lo que lo sitúa en la gama de modelos densos de gran tamano. El repositorio de cuantizaciones ocupa 731,8 GB en total, repartido entre 13 ficheros GGUF que van desde 29,7 GB (IQ1_M) hasta 102,7 GB (Q6_K, dividido en tres partes). Esto lo convierte en un modelo que no cabe en una GPU de consumo individual: incluso la cuantización más agresiva requiere del orden de 30 GB solo para los pesos.
+El modelo esta pensado para tareas de ingenieria de machine learning: generacion y depuracion de codigo, orquestacion de herramientas y flujos de trabajo tecnicos. Esta publicacion concreta es una coleccion de cuantizaciones de tipo imatrix (i1) generadas por mradermacher, que abarcan desde IQ1_S (27,3 GB) hasta Q6_K (102,7 GB), lo que permite desplegar el modelo en distintos presupuestos de memoria.
 
-La relevancia de esta publicación es fundamentalmente práctica: permite ejecutar un modelo de 125B en hardware modesto mediante llama.cpp y sus derivados, con distintos compromisos entre tamano, velocidad y calidad. La información disponible no incluye detalles sobre la longitud de contexto, la arquitectura interna ni resultados de benchmarks del modelo base o de las cuantizaciones.
+La relevancia de esta ficha radica en que el modelo base es de gran tamano y no cabe en hardware de consumo en precision completa, por lo que las cuantizaciones GGUF son la via practica para ejecutarlo en estaciones de trabajo con GPU de gran VRAM o en configuraciones multi-GPU. La informacion disponible sobre arquitectura interna, contexto y datos de entrenamiento es limitada; se indica explicitamente cuando un dato no esta disponible.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (las etiquetas "devstral" y el nombre de licencia "modified-mit-mistral-ai-2025" apuntan a una base derivada de Mistral; no confirmado en la informacion proporcionada) |
-| Parametros totales | 125.025.988.608 (aproximadamente 125B, dato de safetensors del modelo base) |
-| Parametros activos | no aplica / no disponible (no se indica que sea MoE) |
+| Arquitectura | Transformer (derivada de Devstral/Mistral, segun etiquetas del modelo); detalles internos no disponibles |
+| Parametros totales | 125.025.988.608 (segun safetensors del modelo base) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | i1/imatrix: IQ1_M, IQ2_XXS, IQ2_M, Q2_K_S, Q2_K, IQ3_XXS, Q3_K_S, IQ3_M, Q3_K_M, IQ4_XS, Q4_K_S, Q4_K_M, Q6_K; tambien existen cuantizaciones estaticas en mradermacher/Vinci-MLE-123B-1.0-GGUF |
-| Idiomas soportados | en (ingles), segun la model card |
-| Licencia | modified-mit-mistral-ai-2025 (etiquetada como "other"; requiere revisar el fichero LICENSE) |
-| Formato de pesos | GGUF (cuantizaciones); safetensors en el modelo base |
+| Tipos de cuantizacion | i1-IQ1_S, i1-IQ1_M, i1-IQ2_XXS, i1-IQ2_XS, i1-IQ2_S, i1-IQ2_M, i1-Q2_K_S, i1-Q2_K, i1-IQ3_XXS, i1-IQ3_XS, i1-Q3_K_S, i1-IQ3_S, i1-IQ3_M, i1-Q3_K_M, i1-Q3_K_L, i1-IQ4_XS, i1-Q4_0, i1-Q4_K_S, i1-Q4_K_M, i1-Q4_1, i1-Q5_K_S, i1-Q5_K_M, i1-Q6_K (mas fichero imatrix) |
+| Idiomas soportados | en (ingles) |
+| Licencia | modified-mit-mistral-ai-2025 (licencia "other" con enlace a LICENSE) |
+| Formato de pesos | GGUF (cuantizaciones i1/imatrix); el modelo base en safetensors |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion detallada sobre la arquitectura del modelo base en los datos proporcionados. Las etiquetas del repositorio incluyen "devstral", "lora", "machine-learning-engineering", "tool-use" y "canadian-ai", y la licencia se denomina "modified-mit-mistral-ai-2025", lo que sugiere una base derivada de la familia Mistral con posible ajuste mediante LoRA para tareas de ingenieria de machine learning y uso de herramientas. No hay confirmacion explicita de la arquitectura (transformer denso, MoE, hibrida, etc.) ni del numero de tokens de entrenamiento, la composicion del dataset o si se aplicaron tecnicas de RLHF o DPO.
+La informacion disponible no detalla la arquitectura interna mas alla de las etiquetas del repositorio, que apuntan a una base de tipo Devstral (familia Mistral) y a un ajuste mediante LoRA sobre el modelo simpledirect/Vinci-MLE-123B-1.0. No se especifican el numero de tokens de entrenamiento, la composicion del dataset ni si hubo fases de RLHF o DPO. Tampoco se documentan innovaciones tecnicas como atencion lineal o decodificacion especulativa.
 
-En cuanto a las cuantizaciones, mradermacher ha publicado dos familias: las estaticas (repositorio Vinci-MLE-123B-1.0-GGUF) y las i1 con imatrix (este repositorio). El metodo imatrix calcula una matriz de importancia a partir de datos de calibracion para ponderar la cuantizacion de cada tensor, lo que en la practica reduce la perplejidad frente a cuantizaciones estaticas del mismo tamano. El autor incluye ademas el fichero imatrix (0,1 GB) para que terceros puedan generar sus propias cuantizaciones. No se documentan innovaciones tecnicas propias del modelo base.
+Lo que si es verificable es el proceso de cuantizacion: mradermacher ha generado cuantizaciones ponderadas con imatrix (i1) a partir del modelo base, empleando el pipeline de conversion a GGUF (convert_type: hf) y quantize_version 2. El repositorio incluye un fichero imatrix (0,1 GB) para que terceros puedan generar sus propias cuantizaciones. Las cuantizaciones de mayor tamano (Q6_K) se distribuyen en tres partes.
 
 ## Capacidades
 
-- Generacion de texto conversacional: la etiqueta "conversational" indica soporte de dialogos multi-turno.
-- Uso de herramientas y function calling: las etiquetas "tool-use" y "machine-learning-engineering" apuntan a capacidades de invocacion de herramientas y flujos de trabajo tecnicos.
-- Razonamiento de multiples pasos orientado a agentes: inferido de la etiqueta "tool-use"; no confirmado con documentacion adicional.
-- Idiomas: unicamente ingles segun la model card.
-- Capacidades especiales (vision, audio, modo thinking explicito): no disponibles en la informacion proporcionada.
+- Generacion de texto y conversacion multi-turno (etiqueta "conversational").
+- Ingenieria de machine learning: generacion, revision y depuracion de codigo orientado a pipelines de ML.
+- Uso de herramientas (tool-use) y function calling, segun las etiquetas del modelo.
+- Razonamiento multi-paso orientado a tareas tecnicas y de investigacion.
+- Capacidades multilingues limitadas al ingles (unico idioma declarado).
+- No se documentan capacidades de vision, audio ni modo de razonamiento explicito (thinking mode).
 
 ## Casos de uso
 
-- Asistente de ingenieria de machine learning: dado el etiquetado "machine-learning-engineering", el modelo encaja en la generacion y revision de codigo de entrenamiento, scripts de preprocesado y configuraciones de experimentos, ejecutado en local mediante llama.cpp.
-- Agentes que invocan herramientas: con la etiqueta "tool-use", puede integrarse en pipelines donde el modelo decide que funcion llamar (APIs internas, consultas a bases de datos, ejecucion de comandos) dentro de un bucle de razonamiento.
-- Despliegue en infraestructura con GPU de gran memoria: al requerir entre 30 GB y 103 GB de pesos segun cuantizacion, es adecuado para servidores con A100 80 GB o H100, sirviendo equipos de desarrollo internos.
-- Procesamiento por lotes en CPU + GPU mixto: mediante llama.cpp con offload parcial, permite ejecutar cuantizaciones IQ2/IQ3 en estaciones de trabajo con 24-48 GB de VRAM y RAM abundante.
-- Experimentacion e investigacion sobre cuantizacion: el fichero imatrix publicado permite reproducir y comparar el impacto de distintos tipos de cuantizacion sobre el mismo modelo base, util para estudiar degradacion de calidad.
-- Documentacion tecnica y resumen de codigo en ingles: con contexto largo (longitud no confirmada) podria resumir repositorios, aunque no hay datos que permitan verificar el rendimiento en esta tarea.
-- Evaluacion comparativa de licencias: dado que la licencia es "modified-mit-mistral-ai-2025", sirve como caso de estudio para equipos juridicos que evaluan modelos con licencias no estandar.
+- Asistencia en ingenieria de ML: el modelo puede generar y corregir scripts de entrenamiento, configuraciones de experimentos y codigo de preprocesado, aprovechando su especializacion MLE y su capacidad de tool calling para consultar documentacion o ejecutar validaciones.
+- Automatizacion de pipelines de CI/CD para modelos: integrado como agente que interpreta errores de build, propone parches y verifica resultados mediante llamadas a herramientas, reduciendo la intervencion manual en tareas repetitivas.
+- Agentes de investigacion tecnica: con soporte de tool-use, puede encadenar busquedas, lectura de repositorios y sintesis de resultados en flujos multi-paso, adecuado para prototipado de asistentes de I+D.
+- Generacion de codigo en produccion: su orientacion a Devstral y MLE lo hace util para completar y refactorizar codigo en entornos donde se requiere adhesion a APIs y convenciones internas, siempre con revision humana.
+- Analisis y documentacion de codigo heredado: puede resumir repositorios, explicar dependencias y proponer migraciones, tarea favorecida por su entrenamiento en codigo y su capacidad conversacional.
+- Despliegue local en estaciones de trabajo: gracias a las cuantizaciones GGUF (desde 27,3 GB en IQ1_S), es posible ejecutarlo en equipos con GPU de gran VRAM o configuraciones multi-GPU para prototipos y evaluacion sin depender de la nube.
+- Evaluacion comparativa de tecnicas de cuantizacion: el repositorio ofrece una matriz completa de cuantizaciones i1, util para estudiar el compromiso entre tamano, velocidad y calidad en modelos de 125B.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye cifras de MMLU, HumanEval, GSM8K, MT-Bench ni de ningun otro conjunto de evaluacion, ni para el modelo base ni para las cuantizaciones.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada (solo pesos, sin cache KV):
-  - i1-IQ1_M: 29,7 GB (el autor lo describe como "mostly desperate", calidad muy baja).
-  - i1-IQ2_XXS: 33,8 GB; i1-IQ2_M: 43,1 GB.
-  - i1-Q2_K_S: 43,1 GB; i1-Q2_K: 46,7 GB.
-  - i1-IQ3_XXS: 48,5 GB; i1-Q3_K_S: 54,5 GB; i1-IQ3_M: 56,9 GB; i1-Q3_K_M: 60,7 GB.
-  - i1-IQ4_XS: 67,2 GB; i1-Q4_K_S: 71,3 GB; i1-Q4_K_M: 75,0 GB (recomendado por el autor).
-  - i1-Q6_K: 102,7 GB, dividido en tres partes.
-- GPU recomendadas:
-  - 1x A100 80 GB o H100 80 GB: permite Q4_K_M (75 GB) al limite, con cache KV reducida.
-  - 2x 80 GB (A100/H100): permite Q6_K y Q4_K_M con contexto amplio.
-  - 2x RTX 3090/4090 (48 GB): viable con IQ2_M/Q2_K (43-47 GB) con contexto muy limitado.
-  - 4x RTX 4090 (96 GB): viable con Q4_K_M y margen para cache KV.
-- GPU de consumo: no cabe en una unica GPU de 24 GB (RTX 3090, 4090, 5090). La opcion practica en equipos de consumo es llama.cpp con offload parcial a CPU y RAM suficiente (64-128 GB).
-- Opciones de despliegue: llama.cpp (formato nativo GGUF), Ollama, LM Studio, koboldcpp y servidores basados en llama.cpp. Para safetensors del modelo base se necesitarian vLLM o TGI con hardware multi-GPU.
-- Latencia y throughput: no disponibles. No se han publicado mediciones de tokens por segundo para ninguna de las cuantizaciones.
+- VRAM estimada para inferencia: desde aproximadamente 27,3 GB (i1-IQ1_S) hasta 102,7 GB (i1-Q6_K), segun el tamano de cada cuantizacion; el modelo base en precision completa requiere varios cientos de GB.
+- GPU recomendadas: para las cuantizaciones de mayor calidad (Q5_K_M, Q6_K) se necesitan configuraciones multi-GPU con A100 80 GB o H100 80 GB; para cuantizaciones intermedias (Q4_K_M, 75,0 GB) puede bastar una unica GPU de 80 GB o dos GPU de 48 GB.
+- GPU de consumo: las cuantizaciones mas bajas (IQ1_S, IQ1_M, IQ2_XXS) caben en una RTX 4090 de 24 GB solo parcialmente; en la practica requieren offloading a RAM o configuraciones de 32 GB o mas (por ejemplo, RTX 5090) para IQ1/IQ2.
+- Opciones de despliegue: llama.cpp y sus derivados (Ollama, LM Studio, koboldcpp) para GGUF; vLLM y TGI no soportan GGUF de forma nativa, por lo que para esos motores habria que usar el modelo base en safetensors.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos verificados de benchmarks ni de especificaciones del modelo base que permitan una comparacion rigurosa con alternativas. La unica comparacion objetivable con la informacion proporcionada es estructural, entre las propias cuantizaciones:
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|
+| Vinci-MLE-123B-1.0-i1-GGUF | 125.025.988.608 | no disponible | modified-mit-mistral-ai-2025 | GGUF | Especializado en MLE y tool-use; cuantizaciones i1 desde 27,3 GB |
+| Devstral (familia Mistral) | no disponible | no disponible | no disponible | safetensors | Base declarada del modelo; orientado a codigo y agentes |
+| Mistral Large | no disponible | no disponible | licencia Mistral | safetensors | Alternativa de gran tamano de la misma familia, sin especializacion MLE declarada |
 
-| Variante | Tamano (GB) | Nota del autor |
-|---|---|---|
-| i1-IQ1_M | 29,7 | "mostly desperate" |
-| i1-Q2_K | 46,7 | IQ3_XXS probablemente mejor |
-| i1-Q4_K_M | 75,0 | rapido, recomendado |
-| i1-Q6_K | 102,7 | practicamente como Q6_K estatico |
-
-Comparacion con otros modelos de la misma categoria (por ejemplo, otros modelos densos de mas de 100B con licencia Mistral): no disponible.
+La comparacion cuantitativa con alternativas no es posible con la informacion disponible; los datos de parametros y contexto de los modelos comparables no se han publicado en las fuentes consultadas.
 
 ## Limitaciones y advertencias
 
-- Idiomas: la model card declara unicamente ingles. No hay evidencia de soporte multilingue, por lo que su uso en castellano no esta respaldado por el autor.
-- Contexto: se desconoce la longitud de contexto soportada; esto impide planificar aplicaciones que dependan de ventanas largas.
-- Alucinacion: no se han publicado evaluaciones de fiabilidad ni tasas de alucinacion. Al tratarse de un modelo orientado a codigo y herramientas, el riesgo de generar APIs o funciones inexistentes es relevante en produccion.
-- Cuantizaciones de baja calidad: el propio autor advierte que IQ1_M es "mostly desperate" y que Q2_K_S es de "very low quality". Estas variantes no son aptas para uso en produccion.
-- Licencia: "modified-mit-mistral-ai-2025" esta catalogada como "other", no como MIT estandar. Es obligatorio revisar el fichero LICENSE del repositorio antes de cualquier uso comercial, ya que puede incluir restricciones adicionales respecto a la licencia MIT original.
-- Trazabilidad: las cuantizaciones son un artefacto derivado; los fallos de calidad pueden provenir tanto del modelo base como del proceso de cuantizacion. El autor no publica comparativas de perplejidad para este modelo concreto.
-- Ausencia de benchmarks: no hay ninguna cifra de rendimiento publicada, ni del modelo base ni de las cuantizaciones, lo que impide estimar su calidad relativa frente a alternativas.
-- Resultados de busqueda web: las busquedas realizadas no devolvieron informacion tecnica relevante sobre este modelo (los resultados obtenidos no guardan relacion con el mismo), por lo que no ha sido posible ampliar los datos de la model card.
+- Solo soporta ingles; no se declaran capacidades multilingues.
+- Riesgo de alucinacion inherente a los modelos de lenguaje, especialmente en tareas de codigo y referencias a APIs inexistentes.
+- Las cuantizaciones de baja precision (IQ1, IQ2, Q2_K) degradan notablemente la calidad; el propio autor las etiqueta como "for the desperate" o "very low quality".
+- La licencia modified-mit-mistral-ai-2025 incluye clausulas adicionales de Mistral AI; es necesario revisar el fichero LICENSE antes de uso comercial.
+- No se documentan sesgos especificos ni datos de evaluacion de seguridad.
+- La longitud de contexto no esta publicada, lo que impide planificar despliegues con ventanas largas.
+- El repositorio tiene un tamano de 1332,3 GB y las cuantizaciones Q6_K se distribuyen en tres partes, lo que complica la descarga y verificacion.
+- El modelo base es de 125B, por lo que el despliegue requiere hardware de gama alta y no es apto para inferencia en CPU con latencias interactivas.
 
 ## Enlaces
 
-- Repositorio Hugging Face (cuantizaciones i1/imatrix): https://huggingface.co/mradermacher/Vinci-MLE-123B-1.0-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Vinci-MLE-123B-1.0-i1-GGUF
 - Modelo base: https://huggingface.co/simpledirect/Vinci-MLE-123B-1.0
 - Cuantizaciones estaticas: https://huggingface.co/mradermacher/Vinci-MLE-123B-1.0-GGUF
-- Pagina indice del autor para este modelo: https://hf.tst.eu/model#Vinci-MLE-123B-1.0-i1-GGUF
-- Fichero imatrix: https://huggingface.co/mradermacher/Vinci-MLE-123B-1.0-i1-GGUF/resolve/main/Vinci-MLE-123B-1.0.imatrix.gguf
-- Grafica comparativa de tipos de cuantizacion (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png
+- Pagina de descargas del autor: https://hf.tst.eu/model#Vinci-MLE-123B-1.0-i1-GGUF
+- FAQ y solicitudes de cuantizacion: https://huggingface.co/mradermacher/model_requests
+- Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Grafico de calidad de cuantizaciones (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png
 - Notas de Artefact2 sobre cuantizaciones: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
-- Preguntas frecuentes y solicitudes de cuantizacion: https://huggingface.co/mradermacher/model_requests
-- Ejemplo de uso de GGUF (README de TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF

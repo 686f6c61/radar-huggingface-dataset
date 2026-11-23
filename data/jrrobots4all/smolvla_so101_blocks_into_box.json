@@ -41,8 +41,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "JRrobots/smolvla_so101_blocks_into_box",
+  "renamed_at": "2026-11-23T03:45:22.712Z",
   "benchmarks": [],
   "sources": []
 }

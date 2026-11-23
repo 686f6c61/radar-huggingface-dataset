@@ -54,16 +54,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Kwai-Klear/Klear-AgentForge-8B · Hugging Face",
-      "url": "https://huggingface.co/Kwai-Klear/Klear-AgentForge-8B",
-      "snippet": "Kwai-Klear / Klear-AgentForge-8B like 1 Follow Klear team, Kuaishou Technology 79 Safetensors qwen3 License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new"
-    },
-    {
-      "title": "GitHub - Kwai-Klear/Klear-AgentForge · GitHub",
-      "url": "https://github.com/Kwai-Klear/Klear-AgentForge",
-      "snippet": "Our research project Klear-AgentForge focuses on developing agentic AI capabilities through systematic post-training scaling. We will progressively update and opensource our models, data and training recipes. We present the Klear-AgentForge models, a series of agentic variants based on Qwen3 ..."
-    }
-  ]
+  "sources": []
 }

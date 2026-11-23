@@ -2,83 +2,89 @@
 
 ## Resumen
 
-LFM2.5-2.6B-Pashto-Zi-GGUF es una colección de cuantizaciones GGUF del modelo LFM2.5-2.6B-Pashto-Zi, un fine-tuning en pashto del modelo base LFM2.5-2.6B desarrollado por Liquid AI. Este modelo base es un modelo denso de 2.6 mil millones de parámetros, diseñado específicamente para cargas de trabajo agénticas, con una ventana de contexto de 128.000 tokens y soporte nativo para tool calling. La variante Pashto-Zi, creada por el usuario nassimjp, adapta el modelo para el idioma pashto, aunque no se ha publicado documentación técnica sobre el proceso de adaptación.
+LFM2.5-2.6B-Pashto-Zi-GGUF es la versión cuantizada en formato GGUF del modelo nassimjp/LFM2.5-2.6B-Pashto-Zi, un ajuste fino del modelo LFM2.5 de LiquidAI orientado al pastún (پښتو). El trabajo de cuantización lo firma mradermacher, un conocido publicador de versiones GGUF de la comunidad, que ofrece hasta doce variantes de cuantización estática (desde Q2_K hasta f16) para facilitar la inferencia local en hardware modesto. El modelo base cuenta con 2.691.134.464 parámetros (aproximadamente 2,6 mil millones) y se distribuye bajo licencia Apache 2.0.
 
-La relevancia de esta cuantización radica en que permite ejecutar un modelo con capacidades agénticas y multilingües (incluyendo pashto) en dispositivos con recursos limitados, como teléfonos móviles o portátiles. Según Liquid AI, el modelo base alcanza una velocidad de decodificación de aproximadamente 220 tokens por segundo en un Apple M5 Max con menos de 2,5 GB de memoria, y unos 30 tokens por segundo en un teléfono. Esta versión GGUF, preparada por mradermacher, ofrece múltiples niveles de cuantización para adaptarse a diferentes capacidades de hardware.
+El interés principal de esta ficha radica en su especialización lingüística: frente a los modelos multilingües genéricos, este ajuste incorpora un tokenizador extendido para pastún, urdú y persa, lo que mejora la eficiencia de codificación y la calidad de generación en lenguas de escritura árabe-persa habitualmente infrarrepresentadas en los corpus de entrenamiento. La familia LFM2.5 de LiquidAI está diseñada para despliegue eficiente en el borde, y esta variante mantiene esa filosofía al ofrecer cuantizaciones que caben en GPUs de consumo.
+
+La relevancia actual es doble: por un lado, cubre un hueco práctico para aplicaciones en pastún (atención al ciudadano, traducción, educación) con un modelo pequeño y de licencia permisiva; por otro, demuestra el flujo habitual de la comunidad open source, donde un ajuste fino especializado se publica primero en safetensors y se redistribuye después en GGUF para su uso con llama.cpp y herramientas compatibles.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Híbrida (según Liquid AI, la familia LFM2.5 es híbrida; no se especifica el tipo exacto) |
-| Parametros totales | 2.6 mil millones (del modelo base) |
-| Parametros activos | No aplica (modelo denso) |
-| Longitud de contexto | 128.000 tokens (del modelo base) |
-| Tipos de cuantizacion | x-f16, Q4_K_S, Q2_K, Q8_0, Q6_K, Q3_K_M, Q3_K_S, Q3_K_L, Q4_K_M, Q5_K_S, Q5_K_M, IQ4_XS |
-| Idiomas soportados | No disponible (el modelo base es multilingüe; la variante Pashto-Zi está especializada en pashto, pero no hay lista oficial) |
-| Licencia | No disponible (la cuantización no especifica licencia; el modelo base usa LFM Open License) |
-| Formato de pesos | GGUF |
+| Arquitectura | no disponible en la informacion proporcionada (modelo base LFM2.5 de LiquidAI; familia descrita por el autor como causal-lm con soporte conversacional) |
+| Parametros totales | 2.691.134.464 (2,6 B) |
+| Parametros activos | no aplica (no se indica que sea MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, f16 |
+| Idiomas soportados | etiquetados: en, pastun (پښتو), urdu (اردو), persa (فارسی); la model card solo declara `en` en el campo `language` |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (safetensors en el modelo base) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base LFM2.5-2.6B pertenece a la familia LFM2.5 de Liquid AI, descrita como una nueva generación de modelos híbridos diseñados para despliegue en dispositivos. Según la documentación oficial, se construye sobre la arquitectura LFM2 con pre-entrenamiento extendido y aprendizaje por refuerzo (reinforcement learning). No se han publicado detalles técnicos sobre la composición exacta de la arquitectura (por ejemplo, si combina atención con capas SSM o utiliza mecanismos de atención lineal). La variante Pashto-Zi es un fine-tuning no documentado, probablemente realizado sobre el modelo base para mejorar su rendimiento en pashto, pero no se dispone de información sobre el dataset, el número de tokens de entrenamiento ni el método de ajuste (supervisado, RLHF, etc.).
+La informacion disponible no detalla la arquitectura interna del modelo base. El repositorio se etiqueta como `causal-lm` y `conversational`, y el nombre indica que deriva de la familia LFM2.5 de LiquidAI, pero no se especifican el tipo de bloque (transformer, híbrido o SSM), el número de capas, las dimensiones ocultas ni la estrategia de atención. Tampoco se documentan el número de tokens de entrenamiento, la composición del corpus ni si hubo fases de RLHF o DPO.
+
+El elemento técnico diferencial que sí queda patente en las etiquetas es la extensión del tokenizador (`tokenizer-extension`, `embedding`) para pastún, urdú y persa. Esto implica que el ajuste fino no se limita a reentrenar pesos sobre el vocabulario original, sino que amplía el vocabulario para representar de forma más compacta la escritura árabe-persa, reduciendo el número de tokens por palabra y mejorando la eficiencia en contexto y en coste de inferencia. La cuantización la realiza mradermacher de forma estática; según la model card, no hay cuantizaciones ponderadas con imatrix disponibles en el momento de la publicación.
 
 ## Capacidades
 
-- Generación de texto y razonamiento: el modelo base está entrenado para tareas de razonamiento multi-paso, lo que lo hace adecuado para planificación y ejecución de tareas complejas.
-- Tool calling nativo: soporta llamadas a funciones y herramientas, lo que permite integrarlo en flujos de agentes que necesitan interactuar con APIs o servicios externos.
-- Capacidades agénticas: diseñado para ejecutar tareas de múltiples pasos de forma autónoma, con planificación y ejecución secuencial.
-- Multilingüismo: el modelo base es multilingüe; la variante Pashto-Zi añade soporte específico para pashto, aunque no se especifica el alcance exacto de otros idiomas.
-- Despliegue en dispositivos: optimizado para funcionar con recursos limitados, con velocidades de decodificación altas en hardware de consumo (220 tok/s en Apple M5 Max, 30 tok/s en teléfono).
-- No se ha confirmado soporte de visión, audio u otras modalidades.
+- Generación de texto causal en pastún, urdú y persa, con soporte adicional de inglés según las etiquetas del repositorio.
+- Formato conversacional: el repositorio incluye la etiqueta `conversational`, lo que indica que el modelo está preparado para diálogos multi-turno con plantilla de chat.
+- Tokenizador extendido para lenguas de escritura árabe-persa, con mejor relación tokens/palabra que un tokenizador multilingüe genérico.
+- Uso como modelo base para ajustes posteriores en tareas específicas de pastún (el repositorio se etiqueta como `language-model` y `base_model`).
+- Compatibilidad con endpoints (`endpoints_compatible`) y con el ecosistema transformers.
+- No se documentan capacidades de tool calling, function calling, razonamiento multi-paso, visión, audio ni modo de pensamiento explícito.
 
 ## Casos de uso
 
-- Atención al cliente en pashto: el modelo puede gestionar conversaciones multi-turno con contexto largo (128K tokens) y utilizar tool calling para consultar bases de datos de productos o sistemas de tickets, ofreciendo respuestas en pashto.
-- Asistentes personales en dispositivos móviles: gracias a su tamaño reducido y a las cuantizaciones GGUF, puede ejecutarse en smartphones para tareas como recordatorios, búsqueda de información o control de aplicaciones mediante lenguaje natural.
-- Agentes de automatización de tareas: su capacidad de planificación y tool calling permite construir agentes que ejecutan flujos de trabajo (por ejemplo, envío de correos, gestión de calendarios) con instrucciones en pashto.
-- Traducción y transcripción en tiempo real: aunque no está confirmado como modelo de traducción, su especialización en pashto puede servir para tareas de generación de texto en ese idioma, como resúmenes o redacción de documentos.
-- Chatbots educativos: puede utilizarse como tutor interactivo en pashto para explicar conceptos, resolver dudas o generar ejercicios, aprovechando su contexto largo para mantener conversaciones extensas.
-- Desarrollo de aplicaciones de voz: combinado con un sistema de reconocimiento de voz, puede generar respuestas habladas en pashto para asistentes de voz en dispositivos de bajo consumo.
+- Atención al ciudadano en pastún: despliegue de un asistente conversacional en una administración o ONG que atienda consultas en pastún, con un modelo de 2,6 B cuantizado a Q4_K_M (1,8 GB) que puede ejecutarse en una GPU de consumo o incluso en CPU con llama.cpp.
+- Traducción pastún-inglés y pastún-urdú: uso del modelo como traductor especializado en un pipeline de traducción, aprovechando el tokenizador extendido para reducir la fragmentación de palabras en escritura árabe-persa.
+- Generación de contenido educativo: creación de materiales escolares, resúmenes y ejercicios en pastún para plataformas de aprendizaje, con la ventaja de una licencia Apache 2.0 que permite uso comercial y redistribución.
+- Moderación y clasificación de texto en pastún: adaptación mediante ajuste fino ligero para clasificar comentarios o detectar contenido inapropiado en comunidades de habla pastún, donde los modelos multilingües grandes suelen fallar por falta de datos.
+- Prototipado rápido en local: uso de las cuantizaciones Q4_K_S o Q4_K_M con Ollama o llama.cpp para validar ideas de producto en pastún sin coste de API ni dependencia de la nube.
+- Investigación lingüística: análisis de representaciones y evaluación de modelos pequeños especializados en lenguas de bajos recursos, comparando el efecto de la extensión del tokenizador frente a modelos multilingües de tamaño similar.
+- Asistencia a la traducción en entornos con conectividad limitada: despliegue en dispositivos de borde (portátiles, mini-PC) para traductores que trabajan en zonas con internet intermitente, gracias al tamaño reducido de las cuantizaciones Q3 y Q4.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La única métrica de rendimiento conocida es la velocidad de decodificación del modelo base: aproximadamente 220 tokens por segundo en un Apple M5 Max con menos de 2,5 GB de memoria, y unos 30 tokens por segundo en un teléfono. No hay datos de MMLU, HumanEval, GSM8K u otros benchmarks estándar para esta variante ni para el modelo base en los materiales consultados.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: con cuantizaciones como Q4_K_S o Q2_K, el modelo puede caber en menos de 2,5 GB de memoria, según las afirmaciones de Liquid AI para el modelo base. Para cuantizaciones más altas (Q8_0, F16) se necesitarán más recursos, probablemente entre 3 y 5 GB.
-- GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM (por ejemplo, NVIDIA GTX 1650, RTX 3050) puede ejecutar las cuantizaciones más bajas. Para las más altas, se recomienda una GPU con 6-8 GB (RTX 3060, RTX 4060). También es viable en CPU con suficiente RAM.
-- Compatibilidad con consumer GPU: sí, especialmente con cuantizaciones Q4 o inferiores.
-- Opciones de despliegue: al ser GGUF, es compatible con llama.cpp, Ollama, LM Studio y otros motores que soporten este formato. También puede usarse con vLLM si se convierte a otro formato, aunque no es el flujo habitual.
-- Latencia y throughput: según Liquid AI, el modelo base decodifica a ~220 tok/s en Apple M5 Max y ~30 tok/s en teléfono. En GPUs de gama media, se esperan valores intermedios, pero no hay mediciones publicadas para esta variante.
+- VRAM estimada para inferencia (según tamaño del archivo GGUF): Q2_K ~1,2 GB; Q3_K_S ~1,4 GB; Q4_K_S ~1,7 GB; Q4_K_M ~1,8 GB; Q5_K_M ~2,0 GB; Q6_K ~2,3 GB; Q8_0 ~3,0 GB; f16 ~5,5 GB. A estas cifras hay que sumar el espacio para la caché KV, que depende del contexto configurado.
+- GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM para cuantizaciones Q4 (GTX 1650, RTX 3050, RTX 4060); 6-8 GB para Q6_K y Q8_0 (RTX 3060, RTX 4060 Ti, RTX 3070); f16 requiere 8 GB o más (RTX 3080, RTX 4070, A10). Para despliegues de servidor, A100 o H100 no son necesarias por el tamaño del modelo, pero pueden usarse para servir muchas instancias concurrentes.
+- Cabe en GPU de consumo: sí, en todas las cuantizaciones hasta Q8_0 con GPUs de 8 GB; f16 cabe en GPUs de 8 GB o más con contexto moderado.
+- Opciones de despliegue: llama.cpp (formato nativo GGUF), Ollama, LM Studio, text-generation-webui, y servidores compatibles con la API de OpenAI mediante llama.cpp server. vLLM y TGI no soportan GGUF de forma nativa generalizada, por lo que para esos motores habría que usar el modelo base en safetensors.
+- Latencia y throughput estimados: no disponibles en la información proporcionada; dependerán de la GPU, la cuantización y la longitud de contexto.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos de benchmarks comparativos en la información proporcionada. A continuación se presenta una comparativa cualitativa basada en características conocidas de modelos de tamaño similar:
-
-| Modelo | Parámetros | Contexto | Licencia | Tool calling | Despliegue on-device |
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| LFM2.5-2.6B (base) | 2.6B | 128K | LFM Open License | Sí | Sí (optimizado) |
-| Llama-3.2-3B | 3B | 128K | Llama 3.2 Community License | No nativo (requiere adaptación) | Parcial |
-| Qwen2.5-3B | 3B | 32K (según versión) | Apache 2.0 | Sí (con entrenamiento específico) | Parcial |
+| LFM2.5-2.6B-Pashto-Zi (GGUF) | 2,6 B | no disponible | Apache 2.0 | GGUF | Especializado en pastún, urdú y persa con tokenizador extendido |
+| Modelo base LFM2.5 de LiquidAI | no disponible | no disponible | no disponible | safetensors | Modelo original sin ajuste lingüístico; referencia para comparar la mejora del ajuste |
+| Modelos multilingües pequeños tipo Qwen2.5-3B o Llama-3.2-3B | ~3 B | 32 K / 128 K según versión | Apache 2.0 / Llama Community | safetensors, GGUF | Cobertura multilingüe amplia pero sin especialización en pastún; tokenizador menos eficiente para escritura árabe-persa |
 
-Nota: los datos de Llama-3.2-3B y Qwen2.5-3B son de conocimiento general y pueden variar según la versión. No se han encontrado comparativas directas con la variante Pashto-Zi.
+La comparación cuantitativa de rendimiento no está disponible porque no se han publicado benchmarks del modelo ajustado ni del base en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- La variante Pashto-Zi no tiene documentación técnica publicada: se desconoce el proceso de fine-tuning, el dataset utilizado y el alcance exacto de su especialización en pashto.
-- La licencia de esta cuantización no está especificada. Aunque el modelo base usa LFM Open License, el usuario mradermacher no indica la licencia de sus archivos GGUF, lo que puede generar incertidumbre legal para uso comercial.
-- Riesgo de alucinación: como cualquier modelo de lenguaje, puede generar información falsa o inventada, especialmente en idiomas con menos datos de entrenamiento como el pashto.
-- Sesgos potenciales: al ser un fine-tuning no documentado, puede heredar sesgos del modelo base o introducir sesgos específicos del dataset de adaptación.
-- Limitaciones de contexto: aunque el modelo base soporta 128K tokens, el rendimiento en contextos muy largos puede degradarse, y no se ha verificado en la variante Pashto-Zi.
-- Restricciones de uso: la LFM Open License del modelo base puede tener cláusulas específicas (por ejemplo, restricciones de uso militar o de vigilancia) que deben revisarse antes de su implementación en producción.
+- No se han publicado evaluaciones de sesgo, toxicidad ni alucinación para este ajuste; se desconoce el comportamiento en dominios sensibles.
+- El campo `language` de la model card solo declara `en`, mientras que las etiquetas mencionan pastún, urdú y persa; conviene validar empíricamente la calidad en cada idioma antes de usarlo en producción.
+- La longitud de contexto no está documentada; planificar el despliegue sin asumir ventanas largas hasta verificarlo con el modelo base.
+- El ajuste fino sobre un modelo de 2,6 B implica menor capacidad de razonamiento complejo que modelos de mayor tamaño; no es adecuado para tareas que requieran matemáticas avanzadas o código extenso.
+- La cuantización Q2_K y Q3_K_M pueden degradar notablemente la calidad; la propia model card marca Q3_K_M como "lower quality" y recomienda Q4_K_S o Q4_K_M como opción rápida.
+- No hay cuantizaciones con imatrix disponibles según la model card, lo que puede suponer una ligera pérdida de calidad frente a cuantizaciones ponderadas en los tamaños bajos.
+- Aunque la licencia es Apache 2.0, conviene revisar las condiciones del modelo base y de los datos de ajuste fino (no documentados) para usos comerciales en pastún.
+- El repositorio ocupa 24,3 GB por incluir todas las cuantizaciones; descargar solo el archivo necesario para evitar consumo innecesario de disco y ancho de banda.
 
 ## Enlaces
 
-- Cuantización GGUF: https://huggingface.co/mradermacher/LFM2.5-2.6B-Pashto-Zi-GGUF
-- Modelo base original (LiquidAI): https://huggingface.co/LiquidAI/LFM2.5-2.6B
-- Cuantizaciones GGUF oficiales de Liquid AI: https://huggingface.co/LiquidAI/LFM2.5-2.6B-GGUF
-- Documentación del modelo en Liquid Docs: https://docs.liquid.ai/lfm/models/lfm25-2.6b
-- Blog de Liquid AI sobre LFM2.5-2.6B: https://www.liquid.ai/blog/lfm2-5-2-6b
-- Página de LLM Releases: https://www.llm-releases.com/models/lfm2-5-2-6b
+- Repositorio GGUF: https://huggingface.co/mradermacher/LFM2.5-2.6B-Pashto-Zi-GGUF
+- Modelo base (safetensors): https://huggingface.co/nassimjp/LFM2.5-2.6B-Pashto-Zi
+- Página de descargas del cuantizador: https://hf.tst.eu/model#LFM2.5-2.6B-Pashto-Zi-GGUF
+- Guía de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Discusión sobre tipos de cuantización (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Solicitudes de cuantización de mradermacher: https://huggingface.co/mradermacher/model_requests
+- Empresa del cuantizador: https://www.nethype.de/

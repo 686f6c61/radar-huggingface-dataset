@@ -52,11 +52,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "infosave/cmf · Hugging Face",
-      "url": "https://huggingface.co/infosave/cmf",
-      "snippet": "infosave / cmf like 0 cortiq cmf License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new CMF — Cortiq Model Format Run one What is actually in the file Published models Where it is honest"
-    }
-  ]
+  "sources": []
 }

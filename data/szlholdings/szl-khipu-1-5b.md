@@ -2,104 +2,87 @@
 
 ## Resumen
 
-SZL-Khipu-1.5B es un ajuste fino (finetune) del modelo base Qwen/Qwen2.5-1.5B-Instruct, desarrollado por SZL Holdings. El modelo no es un generador de texto de proposito general: su rol declarado en la model card es `governed_retrieval_plan_proposer`, es decir, propone planes de recuperacion (retrieval plans) en formato JSON sobre handles que le suministra un controlador validador externo. El controlador resuelve la evidencia y conserva la autoridad de ejecucion; el modelo solo propone.
+SZL-Khipu-1.5B es un modelo de generacion de texto desarrollado por SZLHOLDINGS, un proyecto que se presenta como un "estate" de IA gobernada con resultados auditables y trazables. El modelo es un ajuste fino (fine-tune) de Qwen/Qwen2.5-1.5B-Instruct, por lo que hereda la arquitectura transformer decoder-only de la familia Qwen2.5 con 1.543.714.304 parametros totales y una ventana de contexto que, segun la arquitectura base, alcanza los 32.768 tokens (aunque la model card no lo declara explicitamente).
 
-Arquitectonicamente es un transformer decoder de la familia Qwen2 con 28 capas y dimension oculta de 1536, con 1.543.714.304 parametros totales segun los metadatos de safetensors. El repositorio pesa 3,2 GB y la licencia es Apache 2.0, heredada del modelo base.
+La relevancia de este modelo reside mas en su enfoque de gobernanza y trazabilidad que en innovaciones arquitectonicas: el autor insiste en que cualquier afirmacion de calidad debe estar respaldada por "receipts" (recibos de auditoria) medidos, y declara explicitamente UNKNOWN todo aquello que no ha sido verificado. En el momento de la ultima actualizacion, el propio autor reconoce que no existe una cadena de recibos de evaluacion estricta, por lo que no se emiten afirmaciones de calidad.
 
-La relevancia de esta ficha es doble: por un lado, muestra un caso de uso muy especifico y acotado (planificacion de retrieval con abstencion y citas no alucinadas); por otro, el autor marca explicitamente el modelo como "research only, not promoted", con resultados de abstencion de solo 2/6 en el conjunto held-out. Es, por tanto, un modelo de investigacion con garantias documentales (receipts firmados con Ed25519) mas que un candidato listo para produccion.
+Se distribuye bajo licencia Apache 2.0, con pesos en formato safetensors y un tamano de repositorio de 3,2 GB, lo que sugiere pesos en precision completa (fp16/bf16) sin cuantizaciones adicionales publicadas. Esta orientado principalmente al idioma ingles segun los metadatos de Hugging Face.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Qwen2 decoder, 28 capas, hidden 1536 |
+| Arquitectura | Transformer decoder-only (Qwen2) |
 | Parametros totales | 1.543.714.304 |
 | Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible en esta ficha; existe una version GGUF en SZLHOLDINGS/SZL-Khipu-1.5B-GGUF |
-| Idiomas soportados | en (ingles) |
-| Licencia | apache-2.0 |
+| Longitud de contexto | no disponible en la model card (arquitectura base Qwen2.5: 32.768 tokens) |
+| Tipos de cuantizacion | no disponible (repo en safetensors, presumiblemente fp16/bf16) |
+| Idiomas soportados | en (segun metadatos) |
+| Licencia | Apache 2.0 |
 | Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un transformer decoder denso basado en Qwen2, con 28 capas y dimension oculta de 1536, derivado del checkpoint Qwen/Qwen2.5-1.5B-Instruct (revision `989aa798…`). El rol funcional es el de proponedor de planes de retrieval gobernado: recibe contexto y peticion del controlador y emite un plan JSON sobre handles predefinidos, sin resolver evidencia ni ejecutar acciones.
+El modelo es un fine-tune de Qwen/Qwen2.5-1.5B-Instruct, un transformer decoder-only con atencion causal estandar, normalizacion RMSNorm, activacion SwiGLU y embeddings rotatorios (RoPE). La arquitectura base Qwen2.5-1.5B-Instruct incorpora atencion con query/key/value bias y soporta una ventana de contexto nativa de 32.768 tokens con generacion de hasta 8.192 tokens en la variante instruct.
 
-El entrenamiento se realizo el 2026-07-14 a las 01:54 UTC, con una loss final de entrenamiento de 0,0245 (valor de training loss, no de evaluacion). Los datos incluyen `train.jsonl`, `train.abstain.jsonl`, `adversarial.jsonl` y `eval.jsonl`, todos con hashes sha256 registrados en la model card. Se uso un adaptador (sha256 `fceba8b3…e5a96`) y el artefacto de pesos tiene su propio hash (`ea91ef6a…6791d`). El numero de pasos, epocas y hardware de entrenamiento no esta registrado en el receipt firmado. No se documentan detalles sobre RLHF/DPO ni sobre la composicion exacta del dataset mas alla de los nombres de fichero.
-
-La innovacion principal no es arquitectonica sino de gobernanza: cada evaluacion y cada entrenamiento van acompanados de receipts firmados con Ed25519 (keyId `89540347a69b789e`), verificables contra la clave embebida, lo que permite auditar la procedencia de los resultados.
+No se dispone de informacion sobre el proceso de entrenamiento del fine-tune: la model card no especifica el numero de tokens utilizados, la composicion del dataset, ni si se emplearon tecnicas de RLHF, DPO o SFT adicionales sobre el modelo base. El autor declara explicitamente que las afirmaciones de entrenamiento y evaluacion viven en ficheros de "receipts" del estate y que, en el momento de la auditoria (2026-11-22T23:21:51Z), no se encontro una cadena de recibos estricta (estado UNKNOWN_NO_EVAL_RECEIPT), por lo que no se emiten afirmaciones de calidad.
 
 ## Capacidades
 
-- Generacion de planes de retrieval en JSON sobre handles suministrados por un controlador externo.
-- Abstencion explicita: el modelo esta entrenado para no responder cuando no dispone de base suficiente (aunque el rendimiento medido en abstencion es bajo, 2/6).
-- Cero citas alucinadas en el conjunto de evaluacion held-out (0 hallucinated citations).
-- Capacidad conversacional basica heredada del modelo base Qwen2.5-1.5B-Instruct.
-- Soporte de chat template en el tokenizer, compatible con `apply_chat_template` de transformers 5.x.
-- No se documentan capacidades de tool calling generico, agentes multi-paso, vision, audio ni modo thinking.
-- Capacidades multilingues: solo ingles declarado.
+- Generacion de texto autoregresiva en ingles, heredada del modelo base Qwen2.5-1.5B-Instruct.
+- Razonamiento basico y respuesta a instrucciones (modelo de tipo instruct).
+- Generacion de codigo y matematicas a nivel de modelo pequeno (capacidades del base, no verificadas en este fine-tune).
+- Soporte de conversacion multi-turno mediante plantilla de chat de Qwen2.5 (no documentado explicitamente en la model card).
+- Capacidades multilingues limitadas: los metadatos solo declaran ingles, aunque el modelo base Qwen2.5 soporta multiples idiomas.
+- No se documentan capacidades de tool calling, function calling, agentes, vision, audio ni thinking mode en la informacion disponible.
 
 ## Casos de uso
 
-- Planificacion de retrieval en pipelines RAG con controlador validador: el modelo propone una ruta JSON sobre handles conocidos y el controlador resuelve la evidencia, manteniendo la autoridad de ejecucion fuera del modelo.
-- Investigacion sobre gobernanza de modelos: los receipts firmados (eval y training) permiten auditar la cadena de custodia de pesos, datos y resultados, util para estudiar trazabilidad en modelos pequenos.
-- Evaluacion de abstencion en sistemas de recuperacion: sirve como banco de pruebas para medir cuando un planificador debe declinar frente a responder, dado que el propio autor reporta 2/6 en abstencion correcta.
-- Prototipos de bajo coste en CPU: con 1,5B parametros y licencia Apache 2.0, se puede desplegar en entornos de desarrollo sin GPU dedicada para validar el flujo controlador-modelo.
-- Generacion de rutas de recuperacion en entornos simulados: util para construir datasets sinteticos de planes validos (11/11 de validez en held-out) antes de conectar a un indice real.
-- Base para ajustes finos especificos de dominio: al ser un finetune de Qwen2.5-1.5B-Instruct con licencia permisiva, sirve como punto de partida para tareas de planificacion con requisitos de abstencion y citacion estrictos.
+- Prototipado rapido de asistentes conversacionales en ingles: el modelo cabe en GPUs de consumo y permite iterar sobre prompts y plantillas de chat sin infraestructura dedicada.
+- Generacion de texto en entornos con requisitos de trazabilidad: el enfoque de "receipts" del autor facilita auditar el origen y las afirmaciones sobre el artefacto, util en contextos de compliance.
+- Fine-tuning adicional sobre dominios especificos: al ser un modelo pequeno con licencia Apache 2.0, sirve como punto de partida para ajustes con datos propios.
+- Educacion e investigacion: modelo ligero para experimentar con tecnicas de alineacion, evaluacion y gobernanza de modelos.
+- Generacion de codigo asistida en local: con 1.5B parametros puede ejecutarse en portatiles con GPU modesta para autocompletado o explicacion de fragmentos.
+- Clasificacion y extraccion de informacion en ingles: tareas de NLP supervisadas donde un modelo pequeno instruct es suficiente y el coste de inferencia importa.
+- Despliegue en edge o entornos con recursos limitados: el tamano de 3,2 GB en safetensors permite cuantizacion a 4 bits para ejecucion en CPU o GPUs de gama baja.
 
 ## Benchmarks y rendimiento
 
-Resultados declarados por el autor en el model-index y en `eval_receipt.signed.json` (no verificados de forma independiente):
-
-| Tarea | Metrica | Resultado | Verificado |
-|---|---|---|---|
-| Retrieval-plan proposal (held-out) | Plan validity | 11/11 (1,0) | false |
-| Retrieval-plan proposal (held-out) | Grounding correct | 4/5 (0,8) | false |
-| Retrieval-plan proposal (held-out) | Abstention correct | 2/6 (0,333) | false |
-| Retrieval-plan proposal (held-out) | Hallucinated citations | 0 | false |
-
-Benchmarks estandar (MMLU-Pro, GPQA, IFEval, BFCL), consumo energetico y memoria pico de proceso: no medidos segun la model card.
+No se han publicado resultados de benchmarks en la informacion disponible. El autor declara explicitamente que no se afirma ningun numero de benchmark mas alla de lo que una auditoria fechada haya medido, y la auditoria del 2026-11-22 concluyo con estado UNKNOWN_NO_EVAL_RECEIPT, sin cadena de recibos de evaluacion estricta.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible de forma oficial; para 1,5B parametros en fp16 se situa en torno a 3 GB de pesos, y en cuantizaciones de 8 bits o 4 bits baja aproximadamente a 1,5-2 GB y menos de 1 GB respectivamente (estimacion orientativa, no publicada por el autor).
-- GPU recomendadas: no especificadas por el autor; por tamano, cualquier GPU consumer moderna (RTX 3060, RTX 4090) es suficiente, y el propio autor realizo un smoke test en CPU con transformers 5.22.2 y torch 2.14.1.
-- Cabe en GPU consumer: si, dado el tamano de 1,5B parametros.
-- Opciones de despliegue: transformers (probado por el autor), text-generation-inference (tag `text-generation-inference`), endpoints compatibles; existe variante GGUF para llama.cpp/Ollama en SZLHOLDINGS/SZL-Khipu-1.5B-GGUF.
-- Latencia y throughput: no disponibles.
+- VRAM estimada para inferencia en fp16/bf16: aproximadamente 3,1 GB solo para pesos, mas overhead de activaciones y cache KV (estimacion orientativa de 4-6 GB para contextos moderados).
+- VRAM estimada en cuantizacion 4 bits (si se genera con herramientas externas): aproximadamente 1 GB para pesos, 2-3 GB en total.
+- GPU recomendadas: cualquier GPU con al menos 6-8 GB de VRAM para fp16 (RTX 3060, RTX 4060, RTX 4090, A100, H100); en cuantizacion 4 bits cabe en GPUs de 4 GB o incluso CPU.
+- Cabe en GPU de consumo: si, en la mayoria de GPUs modernas de gama media y alta.
+- Opciones de despliegue: transformers (libreria declarada), llama.cpp/Ollama (requiere conversion a GGUF, no publicada), vLLM y TGI (compatibles con arquitectura Qwen2, previa verificacion).
+- Latencia y throughput estimados: no disponibles; dependen del hardware y de la cuantizacion elegida.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Enfoque |
-|---|---|---|---|---|
-| SZL-Khipu-1.5B | 1.543.714.304 | no disponible | apache-2.0 | Planificacion de retrieval gobernada, solo ingles |
-| Qwen/Qwen2.5-1.5B-Instruct | ~1,5B | no disponible en esta ficha | apache-2.0 | Generacion de texto de proposito general, multilingue |
-| SZL-Khipu-1.5B-GGUF | ~1,5B | no disponible | apache-2.0 | Version cuantizada del mismo modelo para despliegue local |
-
-No se dispone de datos de rendimiento comparables entre estos modelos en la informacion proporcionada; la comparativa se limita a parametros, licencia y enfoque funcional.
+| Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
+|---|---|---|---|---|---|
+| SZL-Khipu-1.5B | 1.543.714.304 | no disponible (base: 32.768) | Apache 2.0 | Hugging Face | Fine-tune de Qwen2.5-1.5B-Instruct, sin benchmarks publicados |
+| Qwen/Qwen2.5-1.5B-Instruct | 1.543.714.304 | 32.768 | Apache 2.0 | Hugging Face | Modelo base, con benchmarks publicados por el autor |
+| Llama 3.2 1B Instruct | ~1.240 millones | 128.000 | Llama 3.2 Community License | Hugging Face | Alternativa de Meta, contexto mayor, licencia con restricciones |
+| SmolLM2-1.7B-Instruct | ~1.700 millones | 8.192 | Apache 2.0 | Hugging Face | Alternativa de Hugging Face, contexto menor |
 
 ## Limitaciones y advertencias
 
-- Modelo marcado por el autor como "research only, not promoted" (`NOT_PROMOTED_RESEARCH_ONLY`); no esta promovido para produccion.
-- Abstencion correcta de solo 2/6 en el conjunto held-out: riesgo alto de responder cuando deberia declinar.
-- Uso fuera de alcance declarado: uso autonomo o de alto riesgo, tratar la salida como evidencia, o navegar un sistema vivo sin controlador validador.
-- Solo ingles declarado; no hay soporte multilingue documentado.
-- Resultados de benchmark no verificados de forma independiente (`verified: false` en el model-index).
-- No se han medido benchmarks estandar (MMLU-Pro, GPQA, IFEval, BFCL), consumo energetico ni memoria pico.
-- Riesgo de alucinacion en general no cuantificado mas alla de la metrica de citas alucinadas (0 en held-out).
-- Sesgos conocidos: no documentados en la informacion disponible.
-- Licencia Apache 2.0 permite uso comercial, pero el estado "research only" del autor desaconseja su despliegue en produccion sin evaluacion adicional.
-- El numero de pasos, epocas y hardware de entrenamiento no esta registrado en el receipt firmado, lo que limita la reproducibilidad completa.
+- No hay benchmarks ni evaluaciones publicadas para este artefacto; el autor declara estado UNKNOWN_NO_EVAL_RECEIPT, por lo que no se puede afirmar su calidad relativa frente al modelo base.
+- Riesgo de alucinacion inherente a modelos de 1.5B parametros; no apto para tareas que requieran alta fiabilidad sin verificacion humana.
+- Idiomas: los metadatos solo declaran ingles; el rendimiento en castellano no esta verificado y probablemente sea inferior al del modelo base multilingue.
+- Sesgos: no documentados; hereda los sesgos del corpus de entrenamiento de Qwen2.5, no auditados en este fine-tune.
+- Restricciones de licencia: Apache 2.0 permite uso comercial, pero el autor no ofrece garantias ni soporte; verificar la licencia del modelo base Qwen2.5 (tambien Apache 2.0).
+- Contexto: la model card no declara la longitud de contexto del fine-tune; asumir la del base (32.768 tokens) sin verificacion puede ser arriesgado en produccion.
+- Gobernanza: el enfoque de "receipts" es una propuesta del autor; la ausencia de cadena de recibos estricta limita la confianza en afirmaciones de entrenamiento.
+- Produccion: al no haber cuantizaciones GGUF publicadas ni benchmarks, requiere evaluacion propia antes de desplegar.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/SZLHOLDINGS/SZLHOLDINGS/SZL-Khipu-1.5B (URL indicada: https://huggingface.co/SZLHOLDINGS/SZL-Khipu-1.5B)
-- Version GGUF: https://huggingface.co/SZLHOLDINGS/SZL-Khipu-1.5B-GGUF
-- Codigo fuente: https://github.com/szl-holdings/szl-forge/tree/e28abe9d4be3ce5efbb09ea2a3a248494c654636
-- Organizacion: https://huggingface.co/SZLHOLDINGS
-- Receipt de evaluacion: https://huggingface.co/SZLHOLDINGS/SZL-Khipu-1.5B/blob/27474937bf4a6177cdf9a8164c0019f98a9a95fc/eval_receipt.signed.json
-- Receipt de entrenamiento: https://huggingface.co/SZLHOLDINGS/SZL-Khipu-1.5B/blob/27474937bf4a6177cdf9a8164c0019f98a9a95fc/training_receipt.signed.json
-- Publicacion: https://huggingface.co/SZLHOLDINGS/SZL-Khipu-1.5B/blob/27474937bf4a6177cdf9a8164c0019f98a9a95fc/publication.json
-- Binding de fuente: https://huggingface.co/SZLHOLDINGS/SZL-Khipu-1.5B/blob/27474937bf4a6177cdf9a8164c0019f98a9a95fc/szl-source-binding.json
-- Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
+- Modelo en Hugging Face: https://huggingface.co/SZLHOLDINGS/SZL-Khipu-1.5B
+- Organizacion SZLHOLDINGS: https://huggingface.co/SZLHOLDINGS
+- Modelo base Qwen2.5-1.5B-Instruct: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
+- Repositorio estate-cards (generador de tarjetas): https://github.com/szl-holdings/estate-cards
+- Organizacion GitHub (referenciada en la model card): https://github.com/szl-holdings

@@ -38,31 +38,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Guest Communication Service 24/7 Receptionists | Guesty",
-      "url": "https://www.guesty.com/features/guest-communication-management/",
-      "snippet": "Our Guest Communication Service team works 24/7 to manually handle all guest communication for your Airbnb and vacation rental …"
-    },
-    {
-      "title": "Guesty: Airbnb & Vacation Rental Software, Built on AI",
-      "url": "https://www.guesty.com/",
-      "snippet": "Guest messaging Save time on manual communication with an AI agent that reads incoming messages, detects sentiment, and …"
-    },
-    {
-      "title": "Managing automated messages – Guesty Help Center",
-      "url": "https://help-lite.guesty.com/hc/en-gb/articles/24924747633309-Managing-automated-messages",
-      "snippet": "Message automations help you save time and ensure consistent communication with your guests, owners, and team members. …"
-    },
-    {
-      "title": "Automated Messaging Overview - Guesty For Hosts Help Center",
-      "url": "https://help.guestyforhosts.com/hc/en-gb/articles/9350829849885-Automated-Messaging-Overview",
-      "snippet": "Use our guest arrival form to gather contact details, verify guests’ phone numbers, and receive a full guest list for active listings. Send …"
-    },
-    {
-      "title": "Automate Guest Communication with Guesty Lite | Step-by-Step Guide",
-      "url": "https://www.youtube.com/watch?v=iQvkxdk9GlA",
-      "snippet": "Dec 22, 2025 · Clear, timely communication makes all the difference in the guest experience. 💬 With Automated Messages in Guesty …"
-    }
-  ]
+  "sources": []
 }

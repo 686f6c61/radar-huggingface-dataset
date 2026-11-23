@@ -2,99 +2,105 @@
 
 ## Resumen
 
-YUBA-XV es un modelo de lenguaje de 8.953.803.264 parámetros (aproximadamente 9 mil millones) publicado por CompiwerAI y cuantizado en formato GGUF por mradermacher. El repositorio analizado contiene exclusivamente las versiones cuantizadas del modelo base `CompiwerAI/YUBA-XV`, distribuidas bajo licencia Apache 2.0 y orientadas a inferencia local mediante `llama.cpp` y herramientas compatibles con GGUF. La model card no documenta la arquitectura interna, el contexto máximo ni los datos de entrenamiento, por lo que la información técnica disponible es limitada.
+YUBA-XV es un modelo de lenguaje de aproximadamente 8.950 millones de parametros (8,95 B), desarrollado originalmente por CompiwerAI y publicado bajo licencia Apache 2.0. Esta ficha corresponde a la version cuantizada en formato GGUF realizada por mradermacher, un conocido publicador de cuantizaciones para la comunidad de inferencia local. El modelo base es `CompiwerAI/YUBA-XV` y esta etiquetado con los tags `stealth` y `compiwer-ai`, lo que sugiere un lanzamiento discreto o experimental por parte del autor original.
 
-El modelo se etiqueta como "stealth" y "compiwer-ai", y declara soporte para inglés, árabe y francés. La relevancia de este repositorio reside en que ofrece un conjunto completo de cuantizaciones estáticas (desde Q2_K hasta f16) que permiten desplegar un modelo de ~9B parámetros en hardware de consumo, algo especialmente útil cuando el modelo base solo se distribuye en precisión completa.
+La relevancia de esta publicacion radica en que permite ejecutar un modelo de casi 9 B de parametros en hardware de consumo gracias a las cuantizaciones GGUF, que van desde 4,0 GB (Q2_K) hasta 18,0 GB (f16). El modelo declara soporte para ingles, arabe y frances, y esta marcado como conversacional. No obstante, la informacion publica disponible es muy limitada: no se detallan la arquitectura interna, la longitud de contexto, los datos de entrenamiento ni resultados de benchmarks, por lo que muchos campos de esta ficha quedan marcados como "no disponible".
 
-No obstante, conviene señalar que el repositorio presenta cero descargas y cero likes en el momento de la consulta, y que la model card no incluye benchmarks, detalles de arquitectura ni instrucciones de prompt. Cualquier evaluación de calidad debe realizarse empíricamente sobre el modelo base antes de adoptarlo en producción.
+Se trata, por tanto, de un modelo orientado a experimentacion y despliegue local mas que a produccion critica, dado el escaso detalle tecnico publicado y la ausencia de evaluaciones verificables.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (modelo base: transformer, inferido por `library_name: transformers`) |
-| Parámetros totales | 8.953.803.264 (~8,95 B) |
-| Parámetros activos | no disponible (no se indica que sea MoE) |
+| Arquitectura | no disponible (transformers; detalles internos no publicados) |
+| Parametros totales | 8.953.803.264 (8,95 B) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantización | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, Q4_K_S, Q4_K_M, Q6_K, Q8_0, f16 |
-| Idiomas soportados | inglés (en), árabe (ar), francés (fr) |
+| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, f16 |
+| Idiomas soportados | ingles (en), arabe (ar), frances (fr) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (repositorio de cuantizaciones); el modelo base en safetensors |
+| Formato de pesos | GGUF (version cuantizada); el modelo base en safetensors |
+
+| Parametro adicional | Valor |
+|---|---|
+| Modelo base | CompiwerAI/YUBA-XV |
+| Cuantizador | mradermacher |
+| Tamano del repo | 81,8 GB (incluye todos los quants) |
+| Descargas | 730 |
+| Libreria declarada | transformers |
+| Pipeline | no disponible |
+| Fecha de creacion | 2026-11-20 |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información sobre la arquitectura interna del modelo base `CompiwerAI/YUBA-XV` en la documentación proporcionada. El tag `library_name: transformers` y el pipeline `conversational` sugieren un transformer decoder-only con plantilla de chat, pero no se confirma el tipo de atención, la presencia de capas MoE, ni innovaciones como decodificación especulativa o atención lineal.
+No se ha publicado informacion sobre la arquitectura interna del modelo base `CompiwerAI/YUBA-XV`. La libreria declarada es `transformers`, lo que es coherente con un transformer decoder-only, pero no se confirma si emplea atencion estandar, atencion lineal, mezcla de expertos (MoE) u otra variante. El recuento de parametros (8,95 B) corresponde a los pesos en safetensors del modelo base y no se desglosa en componentes.
 
-Tampoco se documentan el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron fases de RLHF, DPO o ajuste por instrucciones. El repositorio de mradermacher es únicamente una conversión a GGUF: no aporta información sobre el entrenamiento. Las cuantizaciones son estáticas (no se han publicado versiones con imatrix ni ponderadas en el momento de la consulta), según indica el propio autor.
+Tampoco hay datos sobre el numero de tokens de entrenamiento, la composicion del dataset, el uso de RLHF/DPO o tecnicas de alineacion, ni sobre innovaciones como decodificacion especulativa. La model card del repositorio GGUF es puramente operativa: describe el proceso de cuantizacion estatica (quantize_version 2, output_tensor_quantised 1, convert_type hf) y lista los ficheros generados, sin aportar informacion sobre el entrenamiento. Los quants ponderados/imatrix no estaban disponibles en el momento de la publicacion segun el autor de la cuantizacion.
 
 ## Capacidades
 
-- Generación de texto conversacional multi-turno, según el tag `conversational` y el pipeline declarado.
-- Soporte multilingüe declarado para inglés, árabe y francés.
-- Compatibilidad con endpoints (`endpoints_compatible`), lo que sugiere uso en infraestructuras de inferencia tipo API.
-- No se documenta soporte explícito de tool calling, function calling, agentes, visión, audio ni modo de razonamiento extendido (thinking mode).
-- No se documentan capacidades específicas de código o matemáticas.
+- Generacion de texto conversacional: el modelo esta etiquetado como `conversational`, lo que indica un ajuste orientado a dialogo multi-turno.
+- Soporte multilingue limitado a ingles, arabe y frances segun los metadatos declarados.
+- Capacidad de razonamiento, codigo o matematicas: no disponible (no se documenta).
+- Soporte de tool calling / function calling: no disponible.
+- Soporte de agentes y razonamiento multi-paso: no disponible.
+- Modo thinking, vision o audio: no disponible.
+- Despliegue local mediante llama.cpp y derivados gracias al formato GGUF.
 
 ## Casos de uso
 
-- Despliegue local en estaciones de trabajo: las cuantizaciones Q4_K_M (5,8 GB) y Q5_K_M permiten ejecutar el modelo en GPUs de consumo de 8-12 GB de VRAM mediante `llama.cpp` u Ollama, útil para prototipos y pruebas offline.
-- Asistente conversacional multilingüe en inglés, árabe y francés: el modelo puede integrarse en aplicaciones de chat para atención al usuario en esos tres idiomas, siempre que se valide empíricamente la calidad por idioma.
-- Procesamiento por lotes en CPU: la cuantización Q2_K (4,0 GB) y Q3_K_S (4,4 GB) permiten inferencia en servidores sin GPU, adecuada para tareas de generación de texto de baja criticidad.
-- Investigación y evaluación de cuantizaciones: el repositorio ofrece un espectro completo de niveles de cuantización, lo que facilita estudios comparativos de degradación de calidad frente a tamaño.
-- Integración en pipelines con `transformers` y endpoints compatibles: al declararse `endpoints_compatible`, puede servirse con frameworks que acepten GGUF (por ejemplo, `llama.cpp` server o vLLM con soporte GGUF) para aplicaciones internas.
-- Filtrado y clasificación de texto en árabe y francés: con prompts adecuados, el modelo puede emplearse para tareas de etiquetado o resumen en esos idiomas, previa validación de calidad.
+- Prototipado de asistentes conversacionales en local: con cuantizaciones Q4_K_M de 5,8 GB, el modelo cabe en GPUs de consumo de 8 GB y permite iterar sobre prompts y flujos de dialogo sin coste de API.
+- Experimentacion multilingue en ingles, arabe y frances: util para probar tecnicas de traduccion o atencion al cliente en estos tres idiomas, siempre validando la calidad real por la falta de benchmarks.
+- Evaluacion comparativa de cuantizaciones: el repositorio ofrece 12 variantes (desde Q2_K hasta f16), lo que permite medir el impacto de la cuantizacion en perplejidad y calidad de salida sobre un mismo modelo base.
+- Despliegue en entornos con recursos limitados: la version Q2_K (4,0 GB) puede ejecutarse en CPU o GPUs integradas, adecuada para demos offline o sistemas embebidos.
+- Investigacion sobre modelos de autoría poco documentada: sirve como caso de estudio para analizar como se comporta un modelo "stealth" sin model card detallada.
+- Fine-tuning posterior sobre el modelo base en safetensors: al ser Apache 2.0, permite adaptaciones comerciales, aunque la falta de documentacion incrementa el riesgo tecnico.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia (según tamaño del archivo GGUF):
-  - Q2_K: ~4,0 GB
-  - Q3_K_S: ~4,4 GB
-  - Q3_K_M: ~4,8 GB
-  - Q3_K_L: ~5,1 GB
-  - Q4_K_S: ~5,5 GB
-  - Q4_K_M: ~5,8 GB
-  - Q6_K: ~7,5 GB
-  - Q8_0: ~9,6 GB
-  - f16: ~18,0 GB
-- GPU recomendadas: no disponibles de forma oficial. Por tamaño, una RTX 3060 de 12 GB o RTX 4070 de 12 GB cubren hasta Q8_0; una RTX 4090 (24 GB) permite f16 con holgura. Para Q4_K_M basta una GPU de 8 GB (RTX 3060 Ti, RTX 4060).
-- Cabe en GPU de consumo: sí, desde Q2_K hasta Q8_0 en GPUs de 8-12 GB; f16 requiere 24 GB o más.
-- Opciones de despliegue: `llama.cpp`, Ollama, y servidores compatibles con GGUF. El tag `endpoints_compatible` sugiere compatibilidad con APIs de inferencia, pero no se detalla cuáles.
-- Latencia y throughput: no disponibles.
+- VRAM estimada para inferencia (aproximada, segun el tamano de cada quant):
+  - Q2_K: ~4,0 GB de pesos, ~5-6 GB de VRAM con contexto moderado.
+  - Q3_K_M: ~4,8 GB de pesos, ~6-7 GB de VRAM.
+  - Q4_K_M: ~5,8 GB de pesos, ~7-8 GB de VRAM.
+  - Q5_K_M: ~6,6 GB de pesos, ~8-9 GB de VRAM.
+  - Q6_K: ~7,5 GB de pesos, ~9-10 GB de VRAM.
+  - Q8_0: ~9,6 GB de pesos, ~11-12 GB de VRAM.
+  - f16: ~18,0 GB de pesos, ~20 GB de VRAM.
+- GPU recomendadas: RTX 3060 12 GB, RTX 4060 Ti 16 GB o RTX 4070 para quants Q4-Q5; RTX 4090 o A100/H100 para f16 y Q8_0 con contexto largo.
+- Cabe en GPU de consumo: si, desde Q2_K en GPUs de 6-8 GB hasta Q8_0 en GPUs de 12-16 GB.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, text-generation-webui y cualquier runtime compatible con GGUF. Para el modelo base en safetensors, vLLM o TGI (sin datos de rendimiento publicados).
+- Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos de rendimiento del modelo, por lo que la comparación se limita a parámetros, contexto, licencia y disponibilidad.
+No se dispone de datos de benchmarks ni de especificaciones de contexto que permitan una comparacion rigurosa con alternativas de tamano similar (por ejemplo, Llama 3.1 8B, Mistral 7B o Qwen2.5 7B). Se indica "no disponible" para el rendimiento comparado.
 
-| Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Licencia | Formato GGUF |
 |---|---|---|---|---|
-| YUBA-XV (este) | ~8,95 B | no disponible | Apache 2.0 | GGUF en HF; base en HF |
-| Llama 3.1 8B | 8 B | 128 K | Llama 3.1 Community | safetensors y GGUF |
-| Qwen2.5 7B | 7,6 B | 128 K | Apache 2.0 | safetensors y GGUF |
-| Mistral 7B v0.3 | 7,2 B | 32 K | Apache 2.0 | safetensors y GGUF |
-
-La comparación de rendimiento con estas alternativas no es posible con la información disponible; se recomienda evaluar YUBA-XV con benchmarks propios antes de sustituir modelos consolidados.
+| YUBA-XV (este) | 8,95 B | no disponible | Apache 2.0 | Si (12 quants) |
+| Alternativas de ~7-9 B | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
 
-- No se documentan sesgos conocidos, pero al no haber información sobre el dataset de entrenamiento no puede descartarse la presencia de sesgos en inglés, árabe o francés.
-- Riesgo de alucinación no cuantificado: sin benchmarks ni model card detallada, no hay evidencia sobre la fiabilidad factual del modelo.
-- Contexto máximo desconocido: no puede planificarse su uso en tareas de contexto largo sin validación previa.
-- Cobertura lingüística limitada a tres idiomas declarados; el español no figura entre ellos, por lo que su uso en castellano no está respaldado por el autor.
-- Aunque la licencia es Apache 2.0, el modelo base podría tener condiciones adicionales no reflejadas en este repositorio de cuantizaciones; conviene revisar la model card de `CompiwerAI/YUBA-XV`.
-- Repositorio con cero descargas y cero likes: no hay evidencia de uso en producción ni validación comunitaria.
-- Las cuantizaciones son estáticas y no hay versiones con imatrix, lo que puede implicar mayor degradación de calidad en Q2_K y Q3_K_S frente a cuantizaciones ponderadas.
-- No se documenta plantilla de chat ni formato de prompt, lo que puede provocar respuestas inconsistentes si se usa sin ajustar el template.
+- Documentacion practicamente inexistente: no hay model card detallada del modelo base, ni datos de entrenamiento, contexto o alineacion.
+- Riesgo elevado de alucinacion y comportamiento impredecible al no conocerse el proceso de alineacion ni los datos de entrenamiento.
+- Cobertura linguistica limitada a ingles, arabe y frances; el castellano no esta declarado como soportado.
+- Longitud de contexto desconocida, lo que impide garantizar conversaciones largas o tareas de recuperacion sobre documentos extensos.
+- Los quants Q2_K y Q3_K_M degradan la calidad de forma notable segun la propia model card ("lower quality"); se recomienda Q4_K_M o superior para uso real.
+- Licencia Apache 2.0 permite uso comercial, pero la ausencia de documentacion sobre procedencia de datos incrementa el riesgo legal y etico.
+- Modelo etiquetado como `stealth`: posible lanzamiento experimental sin soporte ni mantenimiento por parte del autor original.
+- No se han publicado evaluaciones de sesgo, toxicidad o robustez.
 
 ## Enlaces
 
 - Repositorio GGUF: https://huggingface.co/mradermacher/YUBA-XV-GGUF
 - Modelo base: https://huggingface.co/CompiwerAI/YUBA-XV
-- Página de descargas del autor: https://hf.tst.eu/model#YUBA-XV-GGUF
-- README de referencia para uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
-- Guía sobre tipos de cuantización (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
-- Solicitudes de cuantización del autor: https://huggingface.co/mradermacher/model_requests
-- Empresa del autor: https://www.nethype.de/
+- Pagina de descargas del cuantizador: https://hf.tst.eu/model#YUBA-XV-GGUF
+- Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Grafico de perplejidad por quant (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png
+- Notas sobre cuantizacion (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- FAQ y peticiones de cuantizacion: https://huggingface.co/mradermacher/model_requests

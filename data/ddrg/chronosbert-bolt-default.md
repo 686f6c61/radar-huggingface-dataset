@@ -2,50 +2,50 @@
 
 ## Resumen
 
-ChronosBERT-Bolt-Default es un codificador bidireccional de tipo BERT-Small (encoder-only) desarrollado por el usuario ddrg para el aprendizaje de representaciones de series temporales. El modelo combina la representacion basada en parches (patches) del modelo de forecasting Chronos-Bolt con una arquitectura transformer bidireccional y un objetivo de preentrenamiento de modelado de lenguaje enmascarado (MLM) adaptado a series temporales: los parches de la serie se enmascaran aleatoriamente y el modelo aprende a reconstruirlos.
+ChronosBERT-Bolt es un codificador bidireccional de tipo BERT-Small (encoder-only) preentrenado para el aprendizaje de representaciones de series temporales. Lo desarrolla el autor identificado en Hugging Face como `ddrg`, y se apoya en la representación basada en parches (patch-based) del modelo de forecasting Chronos-Bolt, combinándola con una arquitectura BERT y un objetivo de preentrenamiento de Masked Language Modeling (MLM) adaptado a series temporales.
 
-Con aproximadamente 15,3 millones de parametros, es un modelo ligero pensado para servir como backbone preentrenado que se transfiere y ajusta finamente (fine-tuning) en tareas posteriores de series temporales, principalmente clasificacion. No es un modelo generativo de texto ni un modelo de forecasting directo: su funcion es producir representaciones transferibles que se acoplan a cabezas de clasificacion u otras tareas descendentes.
+El modelo no genera texto ni mantiene conversaciones: es un extractor de representaciones numéricas. Las series temporales se dividen en parches siguiendo la representación de Chronos-Bolt y estos parches se procesan con un encoder bidireccional entrenado para reconstruir parches enmascarados aleatoriamente. El resultado es un backbone transferible que puede afinarse para tareas posteriores, principalmente clasificación de series temporales.
 
-Su relevancia practica radica en que ofrece una alternativa de bajo coste computacional (repo de 0,1 GB, pesos en safetensors, libreria transformers) para experimentar con representaciones preentrenadas de series temporales sin necesidad de entrenar desde cero. La model card incluye un ejemplo completo de fine-tuning sobre el conjunto ArrowHead del UCR Time Series Classification Archive.
+Con aproximadamente 15,3 millones de parámetros y un repositorio de 0,1 GB, es un modelo muy ligero pensado para investigación y para integración en pipelines de series temporales donde se necesita un encoder compacto y rápido. Es relevante ahora por el creciente interés en adaptar arquitecturas de lenguaje (BERT) a dominios numéricos mediante tokenización por parches, un enfoque que reduce la longitud efectiva de secuencia y facilita el transfer learning.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | BERT-Small (encoder-only, transformer bidireccional) |
+| Arquitectura | BERT-Small (encoder-only, bidireccional) con representacion de parches de Chronos-Bolt |
 | Parametros totales | 15.295.776 (aprox. 15,3 M) |
 | Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | no disponible (definida por `context_length` en la configuracion de Chronos-Bolt) |
+| Longitud de contexto | no disponible (definida por `context_length` en la configuracion de Chronos-Bolt, valor no publicado) |
 | Tipos de cuantizacion | no disponible |
-| Idiomas soportados | no disponible (modelo sobre series temporales numericas, no texto) |
+| Idiomas soportados | no disponible (modelo numerico, no linguistico) |
 | Licencia | no disponible |
-| Formato de pesos | safetensors |
+| Formato de pesos | safetensors (libreria transformers) |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es un transformer encoder-only de tipo BERT-Small. La entrada no es texto sino series temporales numericas: cada serie se divide en parches siguiendo la representacion de Chronos-Bolt, y esos parches se procesan con el encoder bidireccional. El objetivo de preentrenamiento es MLM: se enmascaran parches aleatorios de la serie y el modelo aprende a reconstruirlos, lo que fuerza el aprendizaje de representaciones generales de la dinamica temporal.
+La arquitectura es un encoder BERT de tamano Small (bidireccional, sin decoder) que toma como entrada series temporales divididas en parches mediante la representacion de Chronos-Bolt. Cada parche se trata como una unidad de entrada y el modelo se entrena con un objetivo de Masked Language Modeling: se enmascaran parches aleatorios de la serie y el encoder debe reconstruirlos a partir del contexto bidireccional restante. Este esquema permite aprender representaciones generales de la dinamica temporal sin depender de una tarea concreta.
 
-La model card menciona mecanismos de augmentacion durante el preentrenamiento (probabilidades de enmascarado de parches, `masking_prob` y `patch_masking_prob`, y de perturbacion, `perturbation_prob` y `patch_perturbation_prob`), que el usuario debe desactivar durante el fine-tuning. No se especifica en la informacion disponible el numero de tokens de entrenamiento, la composicion del dataset, ni si hubo etapas de RLHF o DPO (no aplicables de forma habitual en este tipo de modelo). El backbone parte de la configuracion preentrenada de Chronos-Bolt y los pesos se transfieren a la variante de clasificacion, inicializando la cabeza de clasificacion por separado.
+La model card menciona mecanismos de aumento aleatorio de parches configurables (`masking_prob`, `patch_masking_prob`, `perturbation_prob`, `patch_perturbation_prob`) que se desactivan en el momento del fine-tuning. El backbone se inicializa a partir del modelo de forecasting Chronos-Bolt y los pesos preentrenados se transfieren a la cabeza de clasificacion, que se inicializa por separado. No se especifican en la informacion disponible el numero de tokens de entrenamiento, la composicion del dataset, ni si hubo etapas de RLHF o DPO (poco probables en un encoder de series temporales).
 
 ## Capacidades
 
-- Aprendizaje de representaciones de series temporales univariantes mediante encoder bidireccional.
-- Reconstruccion de parches enmascarados de una serie temporal (objetivo MLM adaptado).
-- Transferencia a tareas descendentes: la model card documenta explicitamente el fine-tuning para clasificacion de series temporales.
-- Manejo de valores ausentes mediante una mascara booleana que indica que valores estan observados.
-- Procesamiento directo de valores numericos de la serie (sin tokenizacion de texto).
-- Soporte de pooling configurable en la cabeza de clasificacion (por ejemplo, `pooling="mean"`) y dropout configurable.
-- No soporta generacion de texto, tool calling, agentes, vision, audio ni capacidades multilingues.
+- Aprendizaje de representaciones de series temporales mediante encoder bidireccional.
+- Fine-tuning para clasificacion de series temporales (la model card incluye un ejemplo completo con el dataset ArrowHead del UCR Archive).
+- Procesamiento directo de valores numericos, con soporte de mascara de observacion para valores ausentes (`NaN`).
+- Extraccion de embeddings con pooling configurable (por ejemplo, `pooling="mean"`).
+- Transferencia de pesos desde el backbone de Chronos-Bolt.
+- No soporta generacion de texto, tool calling, agentes, vision, audio ni capacidades multilingues linguisticas.
+- No se documentan capacidades de forecasting directo en esta variante (el backbone original de Chronos-Bolt si las tiene, pero esta ficha describe el encoder preentrenado).
 
 ## Casos de uso
 
-- Clasificacion de series temporales con el UCR Archive: el modelo se ajusta finamente sobre conjuntos como ArrowHead con una cabeza de clasificacion y pooling por media, aprovechando las representaciones preentrenadas para reducir el coste de entrenamiento desde cero.
-- Deteccion de patrones en sensores industriales: al procesar series numericas con mascara de valores observados, puede adaptarse a tareas de clasificacion de estados de maquinaria a partir de lecturas de sensores con huecos.
-- Clasificacion de senales biomedicas: fine-tuning sobre series de ECG, EEG u otras senales para tareas de clasificacion supervisada, usando el backbone preentrenado como extractor de caracteristicas.
-- Extraccion de embeddings para clustering o recuperacion: las representaciones del encoder pueden usarse como features para agrupar series similares o alimentar modelos posteriores.
-- Prototipado rapido en investigacion: con 15,3 M de parametros y pesos en safetensors de 0,1 GB, permite iterar experimentos de representacion de series en entornos con recursos limitados.
-- Baseline para comparativas academicas: sirve como referencia ligera frente a modelos de forecasting o clasificacion de mayor tamano en estudios sobre transferencia de representaciones temporales.
-- Preentrenamiento y ajuste en pipelines propios: el ejemplo de la model card muestra como cargar el modelo con `transformers`, transferir pesos a una variante de clasificacion y entrenar con AdamW y scheduler lineal con warmup.
+- Clasificacion de series temporales: el modelo se afina con una cabeza de clasificacion sobre datasets como UCR (por ejemplo, ArrowHead), aprovechando el backbone preentrenado para reducir el coste de entrenamiento frente a un entrenamiento desde cero.
+- Deteccion de anomalias en sensores industriales: las representaciones del encoder pueden alimentar un clasificador o un detector de umbral para identificar patrones anomalos en lecturas de sensores, con la ventaja de manejar valores ausentes mediante la mascara de observacion.
+- Clasificacion de senales biomedicas: ECG, EEG o senales de actividad fisica pueden tratarse como series numericas y afinarse para tareas de diagnostico o monitorizacion.
+- Segmentacion y etiquetado de regimenes en datos financieros: las representaciones por parches permiten distinguir fases de volatilidad o tendencia en series de precios.
+- Preentrenamiento base para investigacion en representacion de series temporales: util como punto de partida ligero (15,3 M de parametros) para experimentos de transfer learning y comparativas con otros encoders.
+- Extraccion de embeddings para busqueda de similitud entre series: los vectores resultantes pueden indexarse para recuperar series con patrones similares en bases de datos de series temporales.
+- Clasificacion de series en entornos con recursos limitados: el tamano reducido (repositorio de 0,1 GB) permite desplegarlo en CPU o GPU de gama baja para inferencia por lotes.
 
 ## Benchmarks y rendimiento
 
@@ -53,32 +53,32 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: muy baja; con 15,3 M de parametros en fp32 el modelo ocupa aproximadamente 61 MB de pesos, y en fp16 alrededor de 31 MB. La VRAM real dependera del tamano de lote y de la longitud de la serie de entrada.
-- GPU recomendadas: cualquier GPU moderna es suficiente; el modelo cabe holgadamente en tarjetas consumer como RTX 3060, RTX 4060 o RTX 4090, e incluso puede ejecutarse en CPU para inferencia y fine-tuning de conjuntos pequenos.
-- Cabe en GPU consumer: si, sin restricciones practicas por tamano de pesos.
-- Opciones de despliegue: la model card usa la libreria `transformers` y el paquete `chronos_pkg` (modulos `chronos_bolt` y `chronos_bolt_classification`). No se documentan integraciones con vLLM, llama.cpp, Ollama o TGI, y por el tipo de modelo (encoder de series temporales) no son opciones habituales.
-- Latencia y throughput estimados: no disponibles. El coste dominante sera la longitud de la serie de entrada y el tamano de lote, no el numero de parametros.
+- VRAM estimada para inferencia: inferior a 1 GB en FP32 para los 15,3 M de parametros (aprox. 61 MB de pesos), mas el overhead de activaciones y del backbone Chronos-Bolt.
+- GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM es suficiente; tambien funciona en CPU para inferencia por lotes.
+- Cabe en GPU de consumo: si, en practicamente cualquier GPU consumer moderna (RTX 3060, RTX 4060, RTX 4090) e incluso en iGPU con memoria compartida.
+- Opciones de despliegue: la model card usa `transformers` con la clase `ChronosBoltModelForForecasting` del paquete `chronos_pkg`; no se documentan integraciones con vLLM, llama.cpp, Ollama ni TGI (no aplicables a un encoder de series temporales).
+- Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ChronosBERT-Bolt-Default | 15,3 M | no disponible | Representacion de series temporales (encoder) | no disponible | Hugging Face (ddrg/ChronosBERT-Bolt-Default) |
-| Chronos-Bolt | no disponible en la informacion | no disponible | Forecasting de series temporales | no disponible | Referenciado como backbone en la model card |
-| BERT-Small estandar | no disponible en la informacion | no disponible | Representacion de texto (encoder) | no disponible | Ampliamente disponible |
+| ChronosBERT-Bolt-Default | 15,3 M | no disponible | Encoder de series temporales (MLM) | no disponible | Hugging Face |
+| Chronos-Bolt (backbone original) | no disponible | no disponible | Forecasting de series temporales | no disponible | Hugging Face (referenciado) |
+| BERT-Small estandar | aprox. 14-15 M | 512 tokens | NLP (encoder de texto) | Apache 2.0 (tipico) | Amplia |
 
-No se dispone de datos de rendimiento comparativo entre estos modelos en la informacion proporcionada.
+La comparativa se limita a estos tres porque no se dispone de datos de benchmarks ni de otros encoders de series temporales en la informacion proporcionada. No se dispone de datos de rendimiento para establecer una comparacion cuantitativa.
 
 ## Limitaciones y advertencias
 
-- Modelo especializado en series temporales numericas; no es un modelo de lenguaje y no genera texto ni responde a instrucciones.
-- La licencia no esta indicada en la informacion disponible, por lo que el uso comercial no puede darse por permitido sin verificacion previa en el repositorio.
-- No se documentan sesgos especificos, pero al ser un modelo preentrenado sobre datos no descritos, pueden heredar sesgos de la distribucion de series utilizada.
-- Riesgo de alucinacion no aplicable en el sentido generativo, pero si de representaciones poco fiables fuera de la distribucion de entrenamiento.
-- La longitud de contexto no esta publicada; depende de la configuracion de Chronos-Bolt y debe consultarse en el codigo del repositorio de GitHub.
-- El fine-tuning requiere desactivar manualmente las probabilidades de enmascarado y perturbacion de parches, tal como advierte la model card.
-- El ejemplo de la model card depende del paquete `chronos_pkg` y de modulos especificos (`chronos_bolt`, `chronos_bolt_classification`), lo que anade dependencias fuera de `transformers`.
-- El repositorio tiene 0 likes y la model card esta incompleta en varios campos (licencia, idiomas, pipeline), lo que sugiere un modelo de investigacion sin garantias de mantenimiento.
+- Modelo especializado en series temporales numericas; no es un modelo de lenguaje y no debe usarse para generacion de texto ni tareas NLP.
+- No se especifica la licencia, por lo que el uso comercial queda sin garantia juridica hasta que el autor la declare.
+- No se documentan sesgos, pero al ser un modelo entrenado sobre datos de series temporales no especificados, puede heredar sesgos de la distribucion de esos datos (no disponibles).
+- Riesgo de alucinacion no aplicable en el sentido linguistico, pero si de sobreajuste a patrones del dataset de preentrenamiento en tareas downstream.
+- La longitud de contexto no esta publicada; depende de la configuracion de Chronos-Bolt y debe consultarse en el codigo.
+- La model card aparece truncada en la informacion disponible y no incluye resultados de evaluacion ni detalles del dataset de preentrenamiento.
+- El modelo requiere el paquete `chronos_pkg` y clases especificas (`ChronosBoltModelForForecasting`, `ChronosBoltModelForClassification`), lo que anade dependencias no estandar frente a un `transformers` puro.
+- Los resultados de busqueda web sobre "ddrg" corresponden a la International Deep Drawing Research Group y a un acronimo generico, sin relacion con el modelo; no aportan informacion adicional.
 
 ## Enlaces
 

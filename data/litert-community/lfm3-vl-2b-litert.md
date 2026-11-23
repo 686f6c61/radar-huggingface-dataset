@@ -2,99 +2,96 @@
 
 ## Resumen
 
-LFM3-VL-2B-LiteRT es una conversión al formato LiteRT-LM del modelo vision-language LFM3-VL-2B desarrollado por Liquid AI, publicada por la comunidad litert-community. El modelo original es un sistema multimodal de 1.92B parámetros diseñado específicamente para inferencia en dispositivo (on-device) y en el borde (edge), capaz de procesar texto e imágenes y de razonar mediante un bloque `<think>` antes de responder. Esta conversión permite ejecutar el modelo en GPUs móviles y de escritorio mediante el runtime LiteRT-LM, sin necesidad de infraestructura en la nube.
+LFM3-VL-2B-LiteRT es la conversión al formato LiteRT-LM del modelo vision-language LFM3-VL-2B de Liquid AI, publicada por la comunidad litert-community. El modelo original es un sistema multimodal de 1,92 mil millones de parámetros diseñado específicamente para inferencia en dispositivo (on-device), capaz de leer texto, imágenes y vídeo, y que por defecto razona en un bloque `<think>` antes de responder. Esta conversión empaqueta los pesos en archivos `.litertlm` optimizados para ejecutarse con el runtime LiteRT-LM en GPUs de móviles y ordenadores, sin necesidad de infraestructura de servidor.
 
-La arquitectura combina un decodificador de lenguaje LFM3 de 1.73B parámetros (24 capas: 13 convoluciones cortas con compuertas, 5 atenciones de ventana deslizante y 6 atenciones globales) con un codificador visual de 164M parámetros (14 capas: 8 convoluciones 2D depthwise con compuertas y 6 atenciones bidireccionales) y un proyector de 25M. Cada imagen se tokeniza en 256 tokens a resolución 512 × 512. El modelo está pensado para escenarios donde la privacidad, la latencia y el consumo energético son críticos, como aplicaciones móviles de asistencia visual o análisis de documentos en el dispositivo.
+La relevancia de esta ficha radica en que demuestra que un modelo multimodal con razonamiento explícito puede ejecutarse en hardware de consumo: en una Galaxy S26 con GPU, el archivo int4 decodifica 37,88 tokens/s tras un prefill de 1.024 tokens, frente a 14,96 tokens/s del archivo float16. La conversión incluye tres variantes (int4 con contexto 2.048, int4 con contexto 4.096 y float16 con contexto 2.048) y mantiene el codificador visual en fp32 y el adaptador en fp16, con la tabla de embeddings en int8.
 
-La relevancia actual de esta ficha radica en que demuestra la viabilidad de desplegar modelos multimodales con razonamiento en hardware de consumo: según la model card, la variante int4 alcanza 37.88 tokens/s en la GPU de un Galaxy S26 tras un prefill de 1,024 tokens, frente a 14.96 tokens/s de la variante fp16. La licencia lfm1.0 impone restricciones que deben evaluarse antes de cualquier uso comercial.
+El modelo base emplea una arquitectura híbrida poco convencional: 24 capas en el decodificador de texto (13 convoluciones cortas con compuerta, 5 atenciones de ventana deslizante y 6 atenciones globales), un codificador visual de 14 capas y un proyector de 25 millones de parámetros. Está pensado para tareas de comprensión visual en el borde, como responder preguntas sobre fotos o localizar objetos, y su licencia LFM1.0 condiciona el uso comercial.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Híbrida: LFM3 (13 convoluciones cortas con compuertas + 5 atenciones de ventana deslizante + 6 atenciones globales) + codificador visual (8 convoluciones depthwise 2D + 6 atenciones bidireccionales) + proyector |
-| Parametros totales | 1.92B (1.73B lenguaje + 164M visión + 25M proyector) |
+| Arquitectura | Híbrida: decodificador de texto con 13 convoluciones cortas con compuerta, 5 atenciones de ventana deslizante y 6 atenciones globales; codificador visual de 14 capas (8 convoluciones depthwise 2D con compuerta, 6 atenciones bidireccionales); proyector de 25M |
+| Parametros totales | 1,92B (1,73B decodificador de texto + 164M codificador visual + 25M proyector) |
 | Parametros activos | No aplica (no es MoE) |
-| Longitud de contexto | 2,048 tokens (`LFM3-VL-2B_int4.litertlm`, `LFM3-VL-2B_f16.litertlm`); 4,096 tokens (`LFM3-VL-2B_int4_ctx4096.litertlm`) |
-| Tipos de cuantizacion | int4 (bloques de 32, proyección de salida int8, embeddings int8), fp16 (embeddings int8), codificador visual fp32, adaptador fp16 |
+| Longitud de contexto | 2.048 tokens (int4 y f16); 4.096 tokens (int4_ctx4096) |
+| Tipos de cuantizacion | int4 (pesos en bloques de 32, proyección de salida int8, embeddings int8, codificador visual fp32, adaptador fp16); fp16 (decodificador, embeddings int8, codificador visual fp32, adaptador fp16) |
 | Idiomas soportados | Inglés (en) |
-| Licencia | lfm1.0 (other) |
-| Formato de pesos | `.litertlm` (TFLite/LiteRT-LM); el repositorio base ofrece GGUF, MLX y ONNX |
+| Licencia | LFM1.0 (other) |
+| Formato de pesos | `.litertlm` (LiteRT-LM); el modelo base también ofrece GGUF, MLX-4bit y ONNX |
 
 ## Arquitectura y entrenamiento
 
-El modelo base LFM3-VL-2B emplea una arquitectura híbrida poco convencional que sustituye la mayoría de las capas de atención por convoluciones cortas con compuertas (gated short convolutions), reservando la atención para ventanas deslizantes y globales. El decodificador de lenguaje tiene 24 capas distribuidas en 13 convoluciones, 5 atenciones de ventana deslizante y 6 atenciones globales, una configuración que busca reducir el coste computacional y de memoria en inferencia secuencial, algo crítico en dispositivos móviles. El codificador visual, de 14 capas, combina convoluciones depthwise 2D con compuertas y atención bidireccional, y proyecta cada imagen a 256 tokens a 512 × 512 píxeles mediante un proyector de 25M parámetros.
+El decodificador de texto de LFM3-VL-2B es un transformer híbrido de 24 capas que combina convoluciones cortas con compuerta (13 capas), atención de ventana deslizante (5 capas) y atención global (6 capas). Esta mezcla busca reducir el coste computacional de la atención completa manteniendo la capacidad de modelar dependencias de largo alcance, algo crítico en hardware de borde. El codificador visual consta de 14 capas con convoluciones depthwise 2D y atención bidireccional, y un proyector de 25M de parámetros alinea las representaciones visuales con el espacio del decodificador. Cada imagen de 512 × 512 se tokeniza en 256 tokens.
 
-No se dispone en la información proporcionada de detalles sobre el volumen de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas de RLHF o DPO. El modelo incorpora por defecto un modo de razonamiento que genera un bloque `<think>` antes de la respuesta final, lo que permite activar o desactivar el razonamiento según la tarea. La conversión a LiteRT-LM se realizó con litert-torch 0.10.0 (codificador visual) y una versión de su rama principal (decodificador de texto), junto con litert-lm-builder 0.18.1 para LiteRT-LM 0.18.1.
+La información disponible no detalla el volumen de tokens de entrenamiento, la composición del dataset ni si hubo fases de RLHF o DPO en el modelo base. La conversión a LiteRT-LM se realizó con litert-torch (release 0.10.0 para el codificador visual, commit f61d0b7 de main para el decodificador de texto) y litert-lm-builder 0.18.1. Una innovación destacable es el modo de razonamiento por defecto: el modelo genera un bloque `<think>` antes de la respuesta final, lo que motivó la variante con contexto de 4.096 tokens para evitar que el pensamiento agote la ventana.
 
 ## Capacidades
 
-- Generación de texto y razonamiento multimodal: responde preguntas sobre imágenes combinando comprensión visual y lenguaje natural.
-- Modo de razonamiento explícito (`<think>`): genera una cadena de pensamiento interna antes de la respuesta, activable o desactivable.
-- Comprensión de imágenes: lectura de texto en imágenes, descripción de escenas y localización de objetos (la model card menciona tareas de "colocar un objeto en una foto").
+- Generación de texto y respuesta a preguntas sobre imágenes (image-text-to-text).
+- Razonamiento explícito mediante bloque `<think>` activable o desactivable.
+- Comprensión visual: lectura de texto en imágenes, descripción de escenas y localización de objetos en fotos.
 - Procesamiento de vídeo en el modelo base (no incluido en esta conversión LiteRT-LM, que solo acepta texto e imágenes).
-- Soporte multilingüe limitado al inglés.
+- Capacidad multilingüe limitada al inglés.
 - No se documenta soporte de tool calling ni function calling en la información disponible.
-- No se documenta soporte explícito de agentes o razonamiento multi-paso más allá del bloque de pensamiento.
-- Inferencia on-device en GPU móvil y de escritorio mediante el runtime LiteRT-LM.
+- No se documenta soporte explícito de agentes multi-paso en la información disponible.
 
 ## Casos de uso
 
-- Asistencia visual en dispositivos móviles: una aplicación Android puede enviar fotos a 512 × 512 y obtener respuestas en inglés sobre su contenido, ejecutando el modelo int4 en la GPU del teléfono (37.88 tokens/s en Galaxy S26) sin enviar datos a la nube.
-- Lectura de texto en imágenes (OCR asistido): el modelo responde a preguntas como "¿qué palabras aparecen en la imagen?", útil para accesibilidad o digitalización rápida de carteles y documentos.
-- Localización de objetos en fotografías: con el archivo de contexto 4,096 y el modo de pensamiento activado, puede indicar dónde colocar o encontrar un objeto en una escena (21 de 30 aciertos en las pruebas del autor).
-- Aplicaciones de privacidad estricta: al ejecutarse íntegramente en el dispositivo, es adecuado para entornos sanitarios, legales o industriales donde las imágenes no pueden salir del terminal.
-- Prototipado de interfaces multimodales en edge: desarrolladores que quieran validar flujos image-text-to-text en hardware de consumo pueden usar los archivos `.litertlm` con el CLI de LiteRT-LM 0.18.1.
-- Análisis de documentos en campo: técnicos que trabajen sin conectividad pueden fotografiar equipos o etiquetas y obtener respuestas descriptivas en inglés desde un portátil con GPU.
-- Evaluación comparativa de cuantizaciones: el repositorio incluye variantes int4 y fp16 con métricas de velocidad y precisión, útil para decidir el equilibrio entre calidad y rendimiento en un despliegue concreto.
+- Asistencia visual en móvil sin conexión: el archivo int4 se ejecuta en la GPU de una Galaxy S26 a 37,88 tokens/s, permitiendo responder preguntas sobre fotos tomadas por el usuario sin enviar imágenes a la nube.
+- Lectura de carteles y documentos en el dispositivo: el modelo responde correctamente a preguntas sobre texto en imágenes (verificado en Galaxy S26, Pixel 8a y Mac), útil para accesibilidad o traducción visual local.
+- Localización de objetos en fotografías: con el archivo int4_ctx4096 y thinking activo, respondió correctamente 21 de 30 solicitudes de posicionamiento de objetos, adecuado para guiar al usuario en tareas de composición fotográfica.
+- Asistentes de campo para inspección visual: en un Pixel 8a con límite de memoria, el archivo int4 mantiene más de 1,4 GB de margen frente al float16, lo que permite desplegarlo en flujos de inspección de equipos o inventario.
+- Prototipado de aplicaciones edge multimodales: la disponibilidad de variantes int4 y fp16 con distintos contextos facilita comparar latencia y precisión antes de fijar una configuración de producción.
+- Análisis de imágenes en entornos con requisitos de privacidad: al ejecutarse íntegramente en el dispositivo mediante LiteRT-LM, las imágenes no salen del terminal, lo que encaja en sectores regulados.
+- Evaluación comparativa de runtimes: sirve como banco de pruebas para medir el rendimiento de LiteRT-LM frente a GGUF, MLX u ONNX sobre el mismo modelo base.
 
 ## Benchmarks y rendimiento
 
-| Metrica | LFM3-VL-2B_int4 | LFM3-VL-2B_int4_ctx4096 | LFM3-VL-2B_f16 |
-|---|---|---|---|
-| Decodificacion en Galaxy S26 GPU (tokens/s, tras prefill de 1,024) | 37.88 | 34.35 | 14.96 |
-| Decodificacion en Mac GPU (tokens/s, tras prefill de 1,024) | No disponible | 11 % mas lenta que int4 | No disponible |
-| Memoria en Pixel 8a GPU | Mas de 1.4 GB por debajo del limite de prueba | No disponible | En el limite de prueba |
-| Aciertos en preguntas con respuesta correcta (Galaxy S26, Pixel 8a, Mac) | 7/7, 7/7, 18/18 | No disponible | No disponible |
-| Tarea de colocar objeto en foto (30 peticiones, Mac GPU) | 17 aciertos, 7 sin respuesta por falta de contexto | 21 aciertos, 0 sin respuesta | No disponible |
+No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible. Los datos de rendimiento publicados son mediciones de velocidad y precisión cualitativa:
 
-No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible.
+| Metrica | int4 (ctx 2048) | int4_ctx4096 | f16 |
+|---|---|---|---|
+| Decodificacion en Galaxy S26 GPU (tras prefill de 1.024 tokens) | 37,88 tok/s | 34,35 tok/s | 14,96 tok/s |
+| Decodificacion en Mac GPU | No disponible | 11 % mas lenta que int4 | No disponible |
+| Preguntas de imagen con respuesta unica correcta (Galaxy S26, Pixel 8a, Mac) | 7, 7 y 18 correctas | No disponible | No disponible |
+| Solicitudes de localizacion de objeto (thinking on, Mac GPU) | 17 de 30 correctas; 7 sin respuesta por agotar contexto | 21 de 30 correctas; 0 sin respuesta | No disponible |
+| Margen de memoria en Pixel 8a | >1,4 GB por encima del limite de prueba | No disponible | En el limite |
 
 ## Requisitos de hardware
 
-- VRAM/almacenamiento: el archivo int4 ocupa 2.07 GB y el fp16 4.44 GB; en el Pixel 8a el int4 deja más de 1.4 GB de margen bajo el límite de memoria de la prueba, mientras que el fp16 queda justo en el límite.
-- GPU recomendadas: GPU móviles (Galaxy S26, Pixel 8a) y GPU de escritorio (Mac con backend GPU); no se especifican modelos concretos de NVIDIA o AMD en la información disponible.
-- Cabe en GPU de consumo: sí, al menos en las GPU móviles y Mac probadas; el tamaño de 2.07 GB (int4) es compatible con hardware de gama alta de consumo.
-- Opciones de despliegue: LiteRT-LM 0.18.1 (CLI `litert-lm run` con `--backend gpu` y `--vision-backend gpu`); el modelo base ofrece GGUF, MLX y ONNX para otros runtimes.
-- Latencia y throughput: 37.88 tokens/s (int4, Galaxy S26 GPU), 34.35 tokens/s (int4 ctx4096, Galaxy S26 GPU), 14.96 tokens/s (fp16, Galaxy S26 GPU); el int4 decodifica 2.5 veces más rápido que el fp16 en ese dispositivo.
+- VRAM/almacenamiento: el archivo int4 ocupa 2,07 GB y el float16 4,44 GB; en el Pixel 8a el int4 mantiene más de 1,4 GB de margen sobre el límite de memoria de la prueba, mientras el float16 queda justo en el límite.
+- GPU recomendadas: GPU integradas de móviles de gama alta (Galaxy S26, Pixel 8a) y GPU de Mac; no se documentan requisitos para A100, H100 o RTX 4090.
+- Cabe en GPU de consumo: sí, en las GPU móviles citadas; el archivo int4 es la opción recomendada para dispositivos con memoria ajustada.
+- Opciones de despliegue: runtime LiteRT-LM 0.18.1 (CLI `litert-lm run` con `--backend gpu --vision-backend gpu`); el modelo base ofrece GGUF, MLX-4bit y ONNX para otros entornos.
+- Latencia y throughput: 37,88 tok/s (int4, Galaxy S26 GPU) y 14,96 tok/s (f16, mismo dispositivo) tras un prefill de 1.024 tokens; el int4_ctx4096 decodifica un 9 % más lento que el int4 en Galaxy S26 y un 11 % más lento en Mac GPU.
+- Preprocesado obligatorio: LiteRT-LM 0.18.1 estira toda imagen a 512 × 512 sin preservar relación de aspecto ni orientación EXIF, por lo que hay que rotar y redimensionar antes de la inferencia.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Modalidad | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Formato/despliegue | Licencia | Notas |
 |---|---|---|---|---|---|
-| LFM3-VL-2B-LiteRT (esta ficha) | 1.92B | 2,048 / 4,096 tokens | Texto + imagen | lfm1.0 | LiteRT-LM; base en GGUF, MLX, ONNX |
-| LFM3-VL-2B (modelo base) | 1.92B | No disponible | Texto + imagen + vídeo | lfm1.0 | Hugging Face (LiquidAI) |
-| Alternativas de tamaño similar | No disponible | No disponible | No disponible | No disponible | No disponible |
-
-No se dispone en la información proporcionada de datos sobre modelos comparables de la misma categoría (vision-language on-device de ~2B) para establecer una comparación cuantitativa.
+| LFM3-VL-2B-LiteRT (esta ficha) | 1,92B | 2.048 / 4.096 | `.litertlm`, LiteRT-LM | LFM1.0 | Optimizado para GPU móvil; thinking por defecto |
+| LiquidAI/LFM3-VL-2B (base) | 1,92B | No disponible | Safetensors y variantes GGUF, MLX-4bit, ONNX | LFM1.0 | Modelo fuente; incluye vídeo |
+| Alternativas de tamaño similar | No disponible | No disponible | No disponible | No disponible | No se dispone de datos comparativos en la información proporcionada |
 
 ## Limitaciones y advertencias
 
-- Idioma: solo soporta inglés; no se ha validado su comportamiento en castellano ni en otros idiomas.
-- Contexto limitado: 2,048 tokens por defecto; con razonamiento activado, 7 de 30 peticiones agotaron el contexto sin respuesta en el archivo de 2,048 tokens, por lo que se recomienda el de 4,096 para tareas de pensamiento largo.
-- Preprocesado de imagen obligatorio: LiteRT-LM 0.18.1 estira toda imagen a 512 × 512 sin respetar relación de aspecto ni orientación EXIF; es necesario rotar y redimensionar manualmente antes de la inferencia.
-- Sin vídeo: esta conversión solo acepta texto e imágenes, aunque el modelo base soporte vídeo.
-- Licencia lfm1.0: es una licencia "other" con posibles restricciones para uso comercial; debe revisarse el archivo LICENSE antes de desplegar en producción.
-- Riesgo de alucinación: como todo modelo generativo, puede producir respuestas incorrectas o inventadas, especialmente en preguntas visuales ambiguas o con imágenes de baja calidad.
-- Sesgos: no se documentan evaluaciones de sesgo en la información disponible.
-- Precisión de cuantización: el archivo fp16 se mantiene más fiel a la redacción exacta del modelo base que el int4, según la model card.
-- Runtime específico: depende de LiteRT-LM 0.18.1 y de la versión concreta de litert-torch; cambios de versión pueden alterar el comportamiento.
+- Solo soporta inglés; no se documentan capacidades multilingües.
+- La conversión LiteRT-LM no incluye procesamiento de vídeo, aunque el modelo base sí lo soporta.
+- El preprocesado de imagen es rígido: LiteRT-LM 0.18.1 estira a 512 × 512 sin respetar relación de aspecto ni orientación EXIF, lo que puede degradar resultados si no se prepara la imagen.
+- Con thinking activo y contexto de 2.048 tokens, el bloque de razonamiento puede agotar la ventana antes de emitir respuesta (ocurrió en 7 de 30 solicitudes de localización de objetos); se recomienda la variante de 4.096 tokens en esos casos.
+- El archivo float16 en el Pixel 8a queda en el límite de memoria de la prueba, con riesgo de fallo en dispositivos con menos RAM.
+- Riesgo de alucinación inherente a los modelos generativos; no se documentan evaluaciones formales de sesgo.
+- La licencia LFM1.0 es de tipo "other" y condiciona el uso comercial; es necesario revisar el archivo LICENSE antes de desplegar en producción.
+- La información disponible no incluye datos sobre sesgos conocidos ni sobre el dataset de entrenamiento del modelo base.
 
 ## Enlaces
 
-- Hugging Face (esta conversión): https://huggingface.co/litert-community/LFM3-VL-2B-LiteRT
+- Repositorio Hugging Face: https://huggingface.co/litert-community/LFM3-VL-2B-LiteRT
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-VL-2B
-- GGUF del modelo base: https://huggingface.co/LiquidAI/LFM3-VL-2B-GGUF
-- MLX 4-bit del modelo base: https://huggingface.co/LiquidAI/LFM3-VL-2B-MLX-4bit
-- ONNX del modelo base: https://huggingface.co/LiquidAI/LFM3-VL-2B-ONNX
-- Licencia: https://huggingface.co/litert-community/LFM3-VL-2B-LiteRT/blob/main/LICENSE
+- GGUF oficial: https://huggingface.co/LiquidAI/LFM3-VL-2B-GGUF
+- MLX-4bit oficial: https://huggingface.co/LiquidAI/LFM3-VL-2B-MLX-4bit
+- ONNX oficial: https://huggingface.co/LiquidAI/LFM3-VL-2B-ONNX
+- Licencia LFM1.0: https://huggingface.co/litert-community/LFM3-VL-2B-LiteRT/blob/main/LICENSE

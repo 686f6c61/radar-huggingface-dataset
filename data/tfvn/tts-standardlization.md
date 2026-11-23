@@ -2,102 +2,95 @@
 
 ## Resumen
 
-teencode-normalizer v3 es un modelo seq2seq de tipo encoder-decoder Transformer desarrollado por el usuario tfvn, disenado especificamente para normalizar teencode vietnamita (abreviaturas, falta de tonos, grafias de jerga, pronombres acortados) a vietnamita estandar. Con aproximadamente 19,94 millones de parametros, es un modelo compacto orientado a inferencia en el borde, y su version cuantizada INT8 ocupa unos 20,8 MB, lo que permite ejecutarlo en una Raspberry Pi 4 con ONNX Runtime.
+teencode-normalizer v3 es un modelo encoder-decoder de tipo Transformer seq2seq desarrollado por tfvn (usuario de Hugging Face) que convierte texto informal vietnamita —abreviaturas, falta de tonos, jerga y pronombres acortados conocidos como *teencode*— en vietnamita estándar. El modelo resuelve un problema muy concreto de preprocesado lingüístico: el texto de chats y redes sociales vietnamitas es ruidoso y difícil de procesar por pipelines de NLP, TTS o motores de búsqueda, y este modelo lo normaliza de forma determinista sin generar contenido nuevo.
 
-El modelo resuelve un problema concreto de preprocesado de texto: el vietnamita informal en chats y redes sociales es muy ruidoso y degrada pipelines de busqueda, TTS y NLP. A diferencia de un LLM generativo, este modelo no traduce ni genera texto libre: reescribe la entrada manteniendo el contenido y restaurando la forma estandar. Su licencia MIT y su formato ONNX lo hacen adecuado para integracion en produccion y en dispositivos con recursos limitados.
+Con aproximadamente 19,94 millones de parámetros, 8 capas de encoder y 4 de decoder, dimensión 256 y un tokenizador BPE compartido de 8.000 tokens, es un modelo deliberadamente pequeño. Su repo ocupa 0,1 GB y la versión INT8 pesa unos 20,8 MB, lo que permite ejecutarlo en hardware de borde como una Raspberry Pi 4 con ONNX Runtime. Emplea atención pre-LayerNorm y una longitud máxima de 192 tokens.
 
-La relevancia actual radica en su tamano reducido y su enfoque en una tarea acotada, lo que lo convierte en una alternativa practica frente a modelos genericos de mayor tamano para normalizacion de texto vietnamita en entornos de borde.
+Es relevante porque demuestra que una tarea de normalización lingüística acotada no requiere modelos de miles de millones de parámetros: con un diseño seq2seq compacto, decodificación beam 4 con una guarda de alineamiento de palabras y cuantización INT8, alcanza un CER del 2,08 % en el conjunto de test original de teencode. La licencia MIT facilita su integración en productos comerciales.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
 | Arquitectura | Transformer seq2seq encoder-decoder, pre-LayerNorm |
-| Parametros totales | 19.935.040 (~19,94 M) |
-| Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | 192 tokens (max length) |
-| Tipos de cuantizacion | INT8 dinamica (ONNX), BF16 y FP32 (entrenamiento/evaluacion) |
+| Parámetros totales | 19.935.040 (~19,94 M) |
+| Parámetros activos | no disponible (no es MoE) |
+| Longitud de contexto | 192 tokens (máximo de entrada/salida) |
+| Tipos de cuantización | INT8 dinámica (ONNX); pesos PyTorch en FP16; evaluación también en BF16 y FP32 |
 | Idiomas soportados | vietnamita (vi) |
 | Licencia | MIT |
-| Formato de pesos | safetensors (FP16, solo pesos), ONNX (encoder/decoder INT8), tokenizer.json |
+| Formato de pesos | safetensors (FP16, solo pesos), ONNX (encoder.int8.onnx, decoder.int8.onnx), tokenizer.json |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un Transformer seq2seq con pre-LayerNorm compuesto por 8 capas de encoder y 4 de decoder, con d_model de 256, 8 cabezas de atencion, d_ff de 1536 y dropout de 0,1. Emplea un tokenizer BPE compartido de 8000 tokens con normalizacion NFC y una longitud maxima de 192 tokens; los ids especiales son PAD 0, BOS 1, EOS 2 y UNK 3. El checkpoint seleccionado corresponde al paso 13.000, elegido por el mejor CER combinado en el conjunto de desarrollo.
+El modelo es un Transformer seq2seq con pre-LayerNorm compuesto por 8 capas de encoder y 4 de decoder, dimensión de modelo 256, 8 cabezas de atención, dimensión feed-forward de 1536 y dropout de 0,1. Utiliza un tokenizador BPE compartido de 8.000 tokens con normalización NFC y una longitud máxima de 192 tokens; los identificadores especiales son PAD 0, BOS 1, EOS 2 y UNK 3. La exportación a ONNX es INT8 con cuantización dinámica y sin caché KV, lo que simplifica el despliegue pero implica recómputo del decoder en cada paso.
 
-El entrenamiento se realizo con PyTorch usando autocast en BF16, optimizador AdamW y schedule coseno. El modelo se construyo a partir de una version anterior (v2) mas pequena mediante inicializacion que preserva la funcion. La decodificacion recomendada es beam search de anchura 4 combinada con un guard de alineacion de palabras (`guard.json`). No se dispone de informacion sobre el numero exacto de tokens de entrenamiento ni sobre la composicion detallada del dataset, salvo que los pares de teencode son sinteticos.
+El entrenamiento se realizó en PyTorch con autocast BF16, optimizador AdamW y schedule coseno. El modelo v3 se obtuvo a partir de un modelo v2 más pequeño mediante inicialización que preserva la función (*function-preserving initialization*), y el checkpoint seleccionado es el paso 13.000, elegido por el mejor CER combinado en dev. La decodificación recomendada es beam 4 con una guarda de alineamiento de palabras (`guard.json`) que corrige posibles palabras malformadas. No se detalla en la información disponible el número exacto de tokens de entrenamiento ni la composición completa del dataset, aunque los conjuntos de evaluación se describen como pares sintéticos de teencode vietnamita.
 
 ## Capacidades
 
-- Normalizacion de texto vietnamita informal (teencode) a vietnamita estandar.
-- Restauracion de tonos y diacriticos ausentes.
-- Expansion de abreviaturas y jerga a formas estandar.
-- Resolucion de pronombres acortados y formas coloquiales.
-- Generacion de texto seq2seq acotada a la tarea de reescritura (no generacion libre).
-- Inferencia en dispositivo de borde mediante ONNX Runtime (Raspberry Pi 4).
-- Decodificacion con beam search (anchura 4) y guard de alineacion de palabras.
-- No soporta tool calling, function calling, agentes ni razonamiento multi-paso.
-- No soporta vision ni audio.
-- Capacidad multilingue limitada exclusivamente al vietnamita.
+- Normalización de texto vietnamita informal (teencode) a vietnamita estándar: expansión de abreviaturas, restauración de tonos, resolución de jerga y pronombres acortados.
+- Generación texto-a-texto seq2seq con tokenizador BPE compartido y control de longitud (máximo 192 tokens).
+- Reescritura determinista orientada a normalización; no es un modelo generativo de propósito general.
+- Ejecución en hardware de borde mediante ONNX Runtime (Raspberry Pi 4 y similares).
+- Inferencia en dos modos: runner en Rust con beam 4 + guarda (recomendado) y ejemplo en Python con decodificación greedy sin guarda.
+- No soporta tool calling, function calling, agentes, visión, audio ni modos de razonamiento extendido (no disponible / fuera de alcance).
+- Capacidad multilingüe limitada al vietnamita.
 
 ## Casos de uso
 
-- Preprocesado de busqueda: normalizar consultas de usuarios escritas en teencode antes de indexar o buscar, mejorando la coincidencia con documentos en vietnamita estandar.
-- Pipelines de TTS: convertir texto de chat informal a vietnamita estandar con tonos correctos antes de la sintesis de voz, evitando pronunciaciones erroneas.
-- Moderacion y analisis de redes sociales: normalizar comentarios y mensajes para que los clasificadores posteriores trabajen sobre texto limpio y consistente.
-- Atencion al cliente automatizada: limpiar los mensajes entrantes de usuarios antes de pasarlos a un sistema de comprension o enrutado, reduciendo errores por jerga.
-- Despliegue en el borde: ejecutar la normalizacion en una Raspberry Pi 4 con el runner en Rust y el endpoint HTTP `POST /normalize`, sin depender de la nube.
-- Enriquecimiento de datasets: normalizar grandes volumenes de texto vietnamita informal para construir corpus de entrenamiento o evaluacion en vietnamita estandar.
-- Integracion en aplicaciones moviles o embebidas: al ocupar unos 20,8 MB en INT8, puede incorporarse en apps con recursos limitados para mostrar texto legible al usuario.
+- Preprocesado de texto para búsqueda: normalizar consultas y documentos de chats o redes sociales antes de indexar, de modo que "c oi, e nho c qua" y "chị ơi, em nhớ chị quá" se traten como equivalentes y mejore el recall del motor de búsqueda.
+- Entrada para pipelines de NLP: limpiar corpus vietnamitas ruidosos antes de tareas de etiquetado, análisis de sentimiento o clasificación, reduciendo la dispersión léxica causada por el teencode.
+- Síntesis de voz (TTS): convertir texto informal en vietnamita estándar con tonos correctos antes de pasarlo a un motor TTS, evitando pronunciaciones erróneas por falta de diacríticos.
+- Moderación y visualización de contenido: mostrar mensajes de usuario en formato estándar en interfaces de chat o paneles de moderación, sin filtrar ni censurar (el modelo reescribe, no filtra).
+- Despliegue en dispositivo de borde: servicio HTTP `POST /normalize` en una Raspberry Pi 4 con la imagen Docker del repositorio, útil para normalizar localmente sin enviar texto a la nube.
+- Ajuste fino para dominios específicos: partir de los pesos safetensors (FP16) y la clase `Seq2Seq` del repositorio para adaptar el modelo a jergas de un sector concreto mediante `--init-from`.
+- Investigación en normalización lingüística: servir como línea base compacta para experimentos de normalización de texto informal en lenguas de bajos recursos.
 
 ## Benchmarks y rendimiento
 
-Resultados declarados por el autor (CER, menor es mejor; beam 4 + guard):
+Resultados declarados por el autor (CER, menor es mejor; beam 4 + guarda):
 
-| Conjunto de prueba | v2 | v3 INT8 | v3 BF16 | v3 FP32 |
+| Conjunto de test | v2 | v3 INT8 | v3 BF16 | v3 FP32 |
 |---|---|---|---|---|
 | Teencode original (999) | 2,92 % | 2,08 % | 2,05 % | 2,03 % |
 | Sin tonos (986) | 12,38 % | 11,19 % | 11,37 % | 11,31 % |
-| Contexto (803, in-distribution) | 11,93 % | 0,35 % | 0,23 % | 0,22 % |
-| Dificil (1.251, solo evaluacion) | 10,96 % | 4,95 % | 4,84 % | 4,85 % |
-| Dificil: abreviaturas ambiguas | 13,59 % | 8,09 % | 7,94 % | 7,94 % |
-| Dificil: pares de pronombres | 9,45 % | 2,34 % | 2,22 % | 2,24 % |
-| Dificil: contexto sin tonos | 10,04 % | 6,20 % | 6,22 % | 6,22 % |
+| Contexto (803, en distribución) | 11,93 % | 0,35 % | 0,23 % | 0,22 % |
+| Difícil (1.251, solo evaluación) | 10,96 % | 4,95 % | 4,84 % | 4,85 % |
+| Difícil: abreviaturas ambiguas | 13,59 % | 8,09 % | 7,94 % | 7,94 % |
+| Difícil: pares de pronombres | 9,45 % | 2,34 % | 2,22 % | 2,24 % |
+| Difícil: contexto sin tonos | 10,04 % | 6,20 % | 6,22 % | 6,22 % |
 
-El autor advierte que el conjunto de contexto proviene del mismo generador que los datos de entrenamiento, por lo que su resultado es optimista; el conjunto dificil, sin solapamiento con el entrenamiento, es la medida mas justa.
+El autor advierte que el conjunto de contexto proviene del mismo generador que los datos de entrenamiento, por lo que su resultado es optimista; el conjunto difícil, sin solapamiento con el entrenamiento, es la medida más justa. La cuantización INT8 apenas degrada el CER frente a BF16/FP32 (diferencias de centésimas).
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: inferior a 1 GB; el modelo INT8 ocupa unos 20,8 MB en disco y la inferencia cabe holgadamente en memoria de cualquier GPU consumer.
-- GPU recomendadas: no requiere GPU; puede ejecutarse en CPU. Cualquier GPU consumer (por ejemplo, RTX 3060 o superior) es mas que suficiente.
-- Cabe en GPU consumer: si, en cualquier GPU consumer e incluso en CPU.
-- Despliegue en borde: Raspberry Pi 4 con ONNX Runtime (build ARM64) y el runner en Rust; imagen Docker con endpoint HTTP disponible en el repositorio de GitHub.
-- Opciones de despliegue: ONNX Runtime (Python o Rust), con pesos safetensors para reentrenamiento o reexportacion; no se mencionan vLLM, llama.cpp, Ollama ni TGI.
-- Latencia y throughput: no disponible.
+- VRAM estimada: inferior a 1 GB en INT8 (modelo de ~20,8 MB más estados de inferencia); muy por debajo de cualquier GPU moderna.
+- GPU recomendadas: no requiere GPU; cualquier GPU consumer (RTX 4090, RTX 3060, etc.) lo ejecuta con holgura, pero el caso de uso previsto es CPU.
+- ¿Cabe en GPU consumer? Sí, en todas; también en CPU de escritorio, móvil y Raspberry Pi 4 (objetivo declarado del autor).
+- Opciones de despliegue: ONNX Runtime (Python y Rust), runner Rust con beam 4 + guarda, imagen Docker para Raspberry Pi con endpoint HTTP `POST /normalize`; pesos PyTorch para reentrenamiento o reexportación.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-No se dispone de informacion sobre modelos comparables en la documentacion proporcionada. Se trata de un modelo especializado y de muy pequeno tamano (19,94 M de parametros) para una tarea concreta de normalizacion de vietnamita, por lo que las comparaciones con LLM genericos no serian homogeneas.
-
-| Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
+| Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| teencode-normalizer v3 | 19,94 M | 192 tokens | Normalizacion de teencode vietnamita | MIT | Hugging Face (ONNX + safetensors) |
-| Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
+| teencode-normalizer v3 (tfvn) | ~19,94 M | 192 tokens | Normalización de teencode vietnamita | MIT | Hugging Face + GitHub, ONNX INT8 y safetensors |
+| Modelos seq2seq genéricos tipo T5/mBART pequeños | no disponible | no disponible | Traducción/generación multilingüe | según modelo | Hugging Face |
+| Modelos de traducción vi generalistas | no disponible | no disponible | Traducción entre idiomas | según modelo | Hugging Face |
+
+No se dispone en la información proporcionada de modelos directamente comparables en la tarea específica de normalización de teencode vietnamita con métricas equivalentes; la comparativa con alternativas genéricas queda como referencia cualitativa.
 
 ## Limitaciones y advertencias
 
-- El modelo reescribe texto; no traduce, no modera contenido y no genera texto libre. Esta fuera de su alcance el filtrado o la moderacion.
-- El conjunto de evaluacion de contexto es in-distribution y su resultado (0,35 % CER) es optimista; el rendimiento real en texto no visto puede acercarse mas al conjunto dificil (4,95 % CER).
-- El rendimiento en texto sin tonos es notablemente peor (11,19 % CER en INT8), lo que indica dificultad para restaurar diacriticos en ausencia total de informacion tonal.
-- Las abreviaturas ambiguas siguen presentando un CER elevado (8,09 % en INT8), lo que puede producir normalizaciones incorrectas en casos ambiguos.
-- La decodificacion greedy sin el guard de alineacion puede producir ocasionalmente palabras mal formadas; se recomienda beam 4 + guard.
-- El ambito linguistico esta limitado al vietnamita; no hay soporte multilingue.
-- La longitud maxima de 192 tokens limita la normalizacion de entradas largas.
-- Los pares de entrenamiento son sinteticos, lo que puede introducir un sesgo de distribucion respecto al teencode real.
-- Licencia MIT: permite uso comercial, pero se recomienda revisar los terminos del repositorio de GitHub asociado, ya que la model card referencia una URL con marcador de posicion (`<you>`).
+- Sesgos: al entrenarse con pares sintéticos, puede no cubrir toda la variabilidad real del teencode vietnamita; el rendimiento en jerga no vista puede degradarse.
+- Riesgo de alucinación: bajo en el sentido generativo, pero puede producir reescrituras incorrectas o palabras malformadas; el autor recomienda beam 4 + guarda para mitigarlo (la decodificación greedy puede generar palabras malformadas).
+- Limitaciones de idioma: solo vietnamita; no traduce a otros idiomas.
+- Limitación de contexto: máximo 192 tokens, insuficiente para documentos largos; requiere segmentación previa.
+- Restricciones de licencia: MIT permite uso comercial, pero conviene conservar el aviso de copyright.
+- Caveats de producción: el conjunto de contexto da resultados optimistas (en distribución); usar el conjunto difícil como referencia realista. El CER del 11,19 % en texto sin tonos indica que la restauración de diacríticos sigue siendo el punto débil. La exportación ONNX no usa caché KV, lo que puede afectar la latencia en secuencias largas. El modelo reescribe, no filtra: no debe usarse para moderación de contenido.
 
 ## Enlaces
 
 - Hugging Face: https://huggingface.co/tfvn/TTS-standardlization
-- Repositorio de GitHub (referenciado en la model card, URL con marcador de posicion): https://github.com/<you>/teencode-normalizer
-- No se han encontrado otros enlaces (papers, blogs, demos) en la informacion disponible.
+- Repositorio GitHub (preparación de datos e inferencia en Rust, servidor HTTP, entrenamiento en Python, Docker para Raspberry Pi, Colab): https://github.com/femboyvn/TFVN-TTS-standardlization

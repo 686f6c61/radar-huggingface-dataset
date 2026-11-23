@@ -54,29 +54,29 @@
   "benchmarks": [],
   "sources": [
     {
-      "title": "iapp/openthai2.0-qwen3.8-27b · Hugging Face",
-      "url": "https://huggingface.co/iapp/openthai2.0-qwen3.8-27b",
-      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+      "title": "IAPP",
+      "url": "https://iapp.org/",
+      "snippet": "The IAPP is a policy neutral, not-for-profit association founded in 2000 with a mission to define, promote and improve the professions …Read more"
     },
     {
-      "title": "OpenThai 2.0 — Open-Source Thai Knowledge, Document and Agentic AI ...",
-      "url": "https://iapp.co.th/openmodels/openthai2p0",
-      "snippet": "openthai2.0-qwen3.8-27b An open all-in-one Thai AI: it reads Thai documents and handwriting at specialist level, answers with Thai knowledge in natural, explanatory Thai, leads its base model and Typhoon 2.5 on agentic tool use (BFCL) — and keeps its base model&#x27;s general intelligence."
+      "title": "MyIAPP",
+      "url": "https://myiapp.org/",
+      "snippet": "Manage your IAPP account"
     },
     {
-      "title": "Introducing OpenThai 2.0 — Open Thai Knowledge, Document & Agentic AI ...",
-      "url": "https://openthai.aieat.or.th/en/openthai2p0",
-      "snippet": "OpenThai 2.0 is an open-weight (Apache 2.0) 27B Thai AI built on Qwen3.8-27B. It reads Thai documents and handwriting at specialist level, leads open models on Thai knowledge, and beats its base model on agentic tool use (BFCL) — shipped in 5 formats from a MacBook to Blackwell."
+      "title": "Certification | IAPP",
+      "url": "https://iapp.org/certify",
+      "snippet": "The IAPP offers six distinct CIPP designation concentrations, demonstrating mastery in privacy laws, regulations and frameworks for …Read more"
     },
     {
-      "title": "iapp/openthai2.0-qwen3.8-27b-GGUF at main - Hugging Face",
-      "url": "https://huggingface.co/iapp/openthai2.0-qwen3.8-27b-GGUF/tree/main",
-      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+      "title": "International Association of Privacy Professionals - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/International_Association_of_Privacy_Professionals",
+      "snippet": "The IAPP offers a full suite of educational and professional development services, including privacy training, certification programs, …Read more"
     },
     {
-      "title": "OpenThai 2.0 — one open model that reads Thai documents, knows Thailand ...",
-      "url": "https://iapp.co.th/blog/openthai2p0-launch",
-      "snippet": "iApp Technology and AIEAT release OpenThai 2.0, an open-source Thai vision-language model (27B, Apache 2.0). It cuts Thai handwriting reading errors by 60% versus its base model, scores 0.842 on Thai national exams, leads on agentic tool use (BFCL 0.820), and ships in five formats from MacBook to Blackwell. Weights free on Hugging Face."
+      "title": "IAPP Store",
+      "url": "https://store.iapp.org/",
+      "snippet": "Exclusive networking events and discounted pricing on all products, including our popular conferences, are just two of many valuable …Read more"
     }
   ]
 }

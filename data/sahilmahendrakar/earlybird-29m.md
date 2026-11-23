@@ -2,108 +2,114 @@
 
 ## Resumen
 
-Earlybird es un modelo de reconocimiento automático del habla (ASR) en streaming desarrollado por sahilmahendrakar, un fine-tune de Moonshine Streaming Tiny de Moonshine AI. Su particularidad es que predice cada palabra antes de que el hablante termine de pronunciarla, junto con una puntuación de confianza por palabra. En palabras de su autor, sobre audiolibros predice correctamente una palabra típica 90 ms antes de que termine, frente a los 90-400 ms después que tardan los modelos de streaming publicados.
+Earlybird es un modelo de reconocimiento automático del habla (ASR) en streaming disenado para ejecutarse en dispositivo, desarrollado por sahilmahendrakar y publicado en Hugging Face. Se trata de un fine-tuning de Moonshine Streaming Tiny (Moonshine AI) que predice cada palabra antes de que el hablante termine de pronunciarla, junto con una puntuacion de confianza por palabra. Con 29 millones de parametros y un peso de 16,8 MB en cuantizacion de 4 bits, su propuesta es reducir la latencia de transcripcion por debajo de cero: en audio de audiolibros, la palabra tipica se predice correctamente 90 ms antes de que el hablante la termine, frente a los 90-400 ms de retraso de los modelos de streaming convencionales.
 
-El modelo parte de la arquitectura Moonshine Tiny y reduce su vocabulario a los 19.007 tokens que cubren el habla en inglés, lo que lo deja en 29M parámetros con una pérdida de precisión mínima. Se distribuye cuantizado a 4 bits en un formato personalizado que ocupa 16,8 MB, lo que lo hace apto para inferencia en dispositivo. Funciona a aproximadamente el doble de velocidad que el tiempo real en un solo hilo de CPU.
+El modelo aborda un problema concreto de los agentes de voz: el tiempo que un reconocedor tarda en emitir una palabra es tiempo que el agente no puede dedicar a buscar, recuperar un registro o planificar una respuesta mientras el usuario aun habla. Earlybird invierte esa dinamica adelantando la salida, a costa de reescrituras posteriores (1,3 cambios por palabra en audiolibros y entre 2 y 6 en habla espontanea o ruidosa).
 
-Es relevante para pipelines de voz de baja latencia, como agentes conversacionales, donde disponer de las primeras palabras del usuario antes de que termine la frase permite empezar a buscar, recuperar datos o planificar una respuesta en paralelo. Su licencia MIT y su tamaño reducido facilitan la integración en producción, con la contrapartida de que solo soporta inglés y de que su tasa de error queda por detrás de modelos más grandes como Whisper base.
+Es relevante ahora porque demuestra que un modelo por debajo de 100 MB puede igualar o superar en precision a alternativas del mismo orden de tamano y, ademas, ser el unico modelo por debajo de 1 GB que acierta la palabra mediana antes de que termine. Su licencia MIT y su naturaleza on-device lo hacen atractivo para despliegues con requisitos estrictos de privacidad y latencia.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Moonshine Streaming Tiny (transformer encoder-decoder para ASR en streaming), fine-tune |
-| Parámetros totales | 29M |
-| Parámetros activos | no disponible (no es MoE) |
+| Arquitectura | Transformer derivado de Moonshine Streaming Tiny (fine-tuning) |
+| Parametros totales | 29M |
+| Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantización | 4 bits (formato personalizado) |
-| Idiomas soportados | inglés (en) |
+| Tipos de cuantizacion | 4 bits (formato personalizado, requiere `earlybird.py`) |
+| Idiomas soportados | ingles (en) |
 | Licencia | MIT |
-| Formato de pesos | cuantización 4-bit personalizada, cargada mediante `earlybird.py` (no safetensors estándar) |
+| Formato de pesos | formato de 4 bits personalizado, cargado mediante script propio (`earlybird.py`); no compatible con safetensors/GGUF estandar |
+| Tamano del modelo | 16,8 MB |
+| Entrada de audio | 16 kHz mono float32, en pasos de 80 ms |
+| Vocabulario | 19.007 tokens (subconjunto del vocabulario de Moonshine Tiny) |
+| Velocidad de inferencia | ~2x tiempo real en un solo hilo de CPU |
 
 ## Arquitectura y entrenamiento
 
-Earlybird es un fine-tune de Moonshine Streaming Tiny, un modelo encoder-decoder orientado a ASR en streaming. El autor recortó el vocabulario original a los 19.007 tokens que cubren el habla en inglés, lo que reduce el modelo a 29M parámetros con casi ninguna pérdida de precisión, y lo cuantizó a 4 bits hasta los 16,8 MB. El modelo procesa audio mono a 16 kHz en pasos de 80 ms y emite una actualización por cada paso.
+Earlybird parte de Moonshine Streaming Tiny y se ajusta con un objetivo poco habitual: se le presentan audios cortados en puntos aleatorios, incluso a mitad de palabra, y se le pide que escriba todas las palabras escuchadas hasta ese momento, incluida la palabra a medio pronunciar de forma completa, mas una prediccion de las dos palabras siguientes. Las probabilidades brutas de los tokens sirven como confianza por palabra, sin calibracion adicional. El autor recorto el vocabulario de Moonshine Tiny a los 19.007 tokens que usa el habla en ingles, lo que reduce el modelo a 29M parametros con una perdida de precision casi nula, y lo cuantizo a 4 bits.
 
-El entrenamiento se realizó sobre aproximadamente 1.000 horas de habla pública en inglés (LibriSpeech, People's Speech) más unas 25 horas de habla sintética. La innovación técnica clave es el procedimiento de fine-tune: el modelo aprende de audio cortado en puntos aleatorios, incluso a mitad de palabra, y se le pide que escriba todas las palabras escuchadas hasta el momento (incluida la palabra a medio pronunciar, completa) más una conjetura de las dos palabras siguientes. Las probabilidades brutas de sus tokens proporcionan la confianza por palabra, sin calibración adicional. No se menciona uso de RLHF ni DPO en la información disponible.
+El entrenamiento utilizo aproximadamente 1.000 horas de habla publica en ingles (LibriSpeech y People's Speech) mas unas 25 horas de habla sintetica. No se documenta en la informacion disponible el uso de RLHF o DPO. La innovacion principal no es arquitectonica sino de formulacion de la tarea: el modelo aprende a emitir palabras parciales y predicciones futuras con confianza asociada, lo que permite mostrar texto antes de que el hablante termine.
 
 ## Capacidades
 
-- Reconocimiento automático del habla en inglés en streaming, con actualizaciones cada 80 ms de audio.
-- Predicción anticipada de palabras: emite cada palabra antes de que el hablante termine de pronunciarla, incluida la palabra que se está pronunciando en ese momento.
-- Puntuación de confianza por palabra a partir de las probabilidades brutas del modelo, sin calibración extra.
-- Conjetura de las dos palabras siguientes a la transcripción actual.
-- Transcripción completa de ficheros de audio mediante `transcribe()`.
-- Procesamiento en vivo mediante `stream().feed(chunk)` con chunks de audio de cualquier tamaño.
-- Inferencia en dispositivo: aproximadamente el doble de velocidad que el tiempo real en un solo hilo de CPU.
-- No soporta tool calling, function calling, agentes, visión ni audio más allá del ASR; no se documentan capacidades multilingües (solo inglés).
+- Reconocimiento de voz en streaming con actualizaciones cada 80 ms de audio.
+- Prediccion de palabras antes de que el hablante las termine (latencia mediana negativa en todos los conjuntos de prueba evaluados).
+- Puntuacion de confianza por palabra basada en probabilidades brutas del modelo, incluidas las palabras aun en curso.
+- Prediccion de las dos palabras siguientes como ayuda a la salida temprana.
+- Transcripcion por lotes de ficheros de audio (`transcribe`) y en vivo mediante un flujo (`stream().feed()`).
+- Ejecucion en dispositivo: ~2x tiempo real en un solo hilo de CPU.
+- No soporta tool calling, function calling, vision, audio de entrada mas alla de ASR, ni razonamiento multi-paso.
+- Capacidad multilingue limitada al ingles exclusivamente.
 
 ## Casos de uso
 
-- Agentes de voz conversacionales: al disponer de las palabras del usuario antes de que termine la frase, el agente puede iniciar búsquedas, recuperar registros o planificar la respuesta en paralelo a la locución, reduciendo la latencia percibida de extremo a extremo.
-- Subtitulado en vivo de baja latencia: la predicción anticipada y las actualizaciones cada 80 ms permiten mostrar subtítulos que se adelantan ligeramente al habla, útiles en retransmisiones o eventos con un solo hilo de CPU.
-- Transcripción en dispositivo sin conexión: sus 16,8 MB y su velocidad de 2x tiempo real en CPU permiten integrarlo en dispositivos embebidos o móviles sin GPU ni conectividad.
-- Análisis de llamadas de resultados empresariales: el modelo está evaluado sobre earnings calls (18,4% WER) y puede transcribir reuniones en streaming para alimentar resúmenes o extracción de acciones en tiempo real.
-- Dictado y asistentes de escritura: la confianza por palabra permite resaltar o corregir términos dudosos mientras el usuario habla, y la conjetura de las dos palabras siguientes puede acelerar la autocorrección.
-- Enrutado temprano en centros de contacto: con las primeras palabras transcritas antes de que el cliente termine la frase, el sistema puede clasificar la intención y derivar la llamada al departamento adecuado con antelación.
-- Investigación en ASR de baja latencia: sirve como referencia reproducible (código y pesos MIT) para estudiar el compromiso entre latencia negativa, reescrituras y precisión.
+- Agentes de voz de baja latencia: el agente puede iniciar busquedas, recuperar registros o preparar una respuesta mientras el usuario aun pronuncia la frase, gracias a la prediccion adelantada de palabras con confianza.
+- Subtitulado en vivo en dispositivos locales: actualizaciones cada 80 ms y ejecucion a 2x tiempo real en CPU permiten generar subtitulos en un portatil o dispositivo embebido sin conexion.
+- Asistentes de dictado en movil o edge: el modelo de 16,8 MB cabe en memoria sin problema y funciona sin GPU, lo que facilita integrarlo en aplicaciones con requisitos de privacidad (el audio no sale del dispositivo).
+- Transcripcion de reuniones y llamadas de earnings: los resultados publicados en llamadas de resultados (18,4% WER, -46 ms de latencia) lo hacen util para actas y resumenes en tiempo casi real.
+- Interfaces de accesibilidad: la salida temprana con confianza permite anticipar comandos por voz y reducir la sensacion de retardo en usuarios con dificultades motoras.
+- Filtrado y enrutamiento de audio en pipelines: la confianza por palabra permite descartar o marcar segmentos dudosos antes de pasarlos a un modelo mayor (por ejemplo, Whisper) para verificacion.
+- Prototipado de investigacion en ASR streaming: licencia MIT, codigo y paper disponibles, lo que facilita reproducir y extender el enfoque de prediccion adelantada.
 
 ## Benchmarks y rendimiento
 
-Resultados publicados por el autor. Cada celda: latencia mediana por palabra · tasa de error de palabra (WER). Latencia negativa significa que la palabra se emite antes de que el hablante la termine.
+Latencia mediana por palabra (ms; negativo = predicha antes de terminar) y word error rate (WER):
 
-| Test set | Earlybird | Moonshine Tiny | Whistle | Whisper base |
+| Conjunto de prueba | Earlybird | Moonshine Tiny | Whistle | Whisper base |
 |---|---|---|---|---|
-| Audiolibros | −90 ms · 2,3% | +270 ms · 3,9% | +400 ms · 3,1% | +90 ms · 2,3% |
-| Audiolibros difíciles | −60 ms · 9,7% | +300 ms · 13,2% | +460 ms · 10,1% | +140 ms · 8,7% |
-| Charlas TED | −68 ms · 5,4% | +298 ms · 6,8% | +505 ms · 7,3% | +125 ms · 4,8% |
-| Discurso público | −66 ms · 14,5% | +290 ms · 16,7% | +477 ms · 14,2% | +127 ms · 10,5% |
-| Llamadas de resultados | −46 ms · 18,4% | +309 ms · 21,6% | +535 ms · 17,8% | +142 ms · 13,3% |
-| Habla sintética | −73 ms · 5,6% | +292 ms · 7,0% | +424 ms · 7,5% | +90 ms · 4,8% |
+| Audiolibros | -90 ms · 2,3% | +270 ms · 3,9% | +400 ms · 3,1% | +90 ms · 2,3% |
+| Audiolibros dificiles | -60 ms · 9,7% | +300 ms · 13,2% | +460 ms · 10,1% | +140 ms · 8,7% |
+| Charlas TED | -68 ms · 5,4% | +298 ms · 6,8% | +505 ms · 7,3% | +125 ms · 4,8% |
+| Discurso publico | -66 ms · 14,5% | +290 ms · 16,7% | +477 ms · 14,2% | +127 ms · 10,5% |
+| Llamadas de resultados | -46 ms · 18,4% | +309 ms · 21,6% | +535 ms · 17,8% | +142 ms · 13,3% |
+| Habla sintetica | -73 ms · 5,6% | +292 ms · 7,0% | +424 ms · 7,5% | +90 ms · 4,8% |
 
-Precisión media en los 8 conjuntos en inglés del Hugging Face Open ASR Leaderboard:
+Precision media en los 8 conjuntos del Hugging Face Open ASR Leaderboard:
 
-| Modelo | Tamaño | WER medio (8 conjuntos Open ASR) |
+| Modelo | Tamano | WER medio (8 conjuntos) |
 |---|---|---|
 | Whisper base | ~145 MB | 9,7% |
 | Whistle | 16,9 MB | 12,2% |
 | Earlybird | 16,8 MB | 12,6% |
 | Moonshine Tiny | 45 MB | 14,4% |
 
-Según el autor, Earlybird comete menos errores que Moonshine Tiny en los 8 conjuntos y empata aproximadamente con Whistle; Whisper base es más preciso con unas 9 veces su tamaño. Es el único modelo por debajo de 1 GB que predice correctamente la palabra mediana antes de que termine. Con confianza de al menos el 90% en una palabra aún no terminada, acierta entre el 91% y el 96% de las veces.
+Calibracion de la confianza: cuando Earlybird declara al menos un 90% de confianza en una palabra aun no terminada, acierta entre el 91% y el 96% de las veces.
 
 ## Requisitos de hardware
 
-- VRAM estimada: el modelo pesa 16,8 MB en cuantización 4-bit; puede ejecutarse en CPU sin GPU.
-- GPU recomendadas: no requiere GPU; cualquier GPU con soporte de PyTorch puede alojarlo, pero no es necesario para el rendimiento documentado.
-- Cabe en cualquier GPU de consumo (y en CPU): el autor reporta aproximadamente 2x tiempo real en un solo hilo de CPU.
-- Opciones de despliegue: carga mediante `earlybird.py` incluido en el repositorio (requiere `torch`, `transformers>=5`, `soundfile`, `huggingface_hub`); no se documenta soporte para vLLM, llama.cpp, Ollama ni TGI.
-- Latencia y throughput: una actualización por cada 80 ms de audio; velocidad de inferencia de aproximadamente el doble del tiempo real en un hilo de CPU.
+- VRAM estimada: no requiere GPU; el modelo pesa 16,8 MB en 4 bits y se ejecuta en CPU.
+- GPU recomendadas: no necesarias; cualquier CPU moderna es suficiente. En GPU, no se documentan requisitos especificos.
+- Cabe en cualquier GPU de consumo e incluso en dispositivos embebidos; el limite practico es la memoria del sistema, no la VRAM.
+- Despliegue: carga mediante `earlybird.py` (incluido en el repo y en GitHub) con `transformers>=5`, `torch`, `soundfile` y `huggingface_hub`. No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI.
+- Latencia y throughput: ~2x tiempo real en un solo hilo de CPU; actualizaciones de salida cada 80 ms de audio.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros / tamaño | Contexto | WER medio (8 sets Open ASR) | Latencia mediana por palabra (audiolibros) | Licencia | Disponibilidad |
-|---|---|---|---|---|---|---|
-| Earlybird | 29M / 16,8 MB (4-bit) | no disponible | 12,6% | −90 ms | MIT | Hugging Face, código en GitHub |
-| Moonshine Tiny | no disponible / 45 MB | no disponible | 14,4% | +270 ms | MIT | Hugging Face / GitHub de Moonshine AI |
-| Whistle | no disponible / 16,9 MB | no disponible | 12,2% | +400 ms | no disponible | publicado (referenciado en la model card) |
-| Whisper base | no disponible / ~145 MB | no disponible | 9,7% | +90 ms | no disponible | OpenAI Whisper |
+| Modelo | Parametros / tamano | Latencia mediana (audiolibros) | WER medio Open ASR | Licencia | Notas |
+|---|---|---|---|---|---|
+| Earlybird | 29M / 16,8 MB | -90 ms | 12,6% | MIT | Salida adelantada con confianza; solo ingles |
+| Moonshine Tiny | 45 MB | +270 ms | 14,4% | MIT | Modelo base; streaming convencional |
+| Whistle | 16,9 MB | +400 ms | 12,2% | no disponible | Precision similar; sin salida adelantada |
+| Whisper base | ~145 MB | +90 ms | 9,7% | MIT | Mas preciso pero ~9x mas grande y con retardo positivo |
 
 ## Limitaciones y advertencias
 
-- Precisión: Whisper base, 2,5 veces más grande, comete menos errores en todos los conjuntos salvo en audiolibros, donde empatan. La brecha es mayor con ruido de fondo: a 10 dB, Earlybird falla el 32% de las palabras frente al 8,9% de Whisper base.
-- Reescrituras: mostrar palabras antes implica cambiarlas más a menudo; 1,3 cambios por palabra en audiolibros y 2-6 en habla espontánea o ruidosa.
-- Las conjeturas de la palabra siguiente aportan menos de lo esperado: con confianza del 50% o más, aproximadamente 1 de cada 7 palabras se acierta antes de terminar; la mayoría de las palabras tempranas provienen de la propia transcripción.
-- Solo inglés: no hay soporte multilingüe documentado.
-- Riesgo de alucinación: no se documenta explícitamente, pero como todo modelo ASR puede producir palabras incorrectas, especialmente en audio ruidoso; la confianza por palabra ayuda a filtrarlas.
-- Licencia MIT: permite uso comercial con atribución; el modelo base Moonshine Tiny es también MIT (Copyright 2025 Useful Sensors, Inc. dba Moonshine AI).
-- Formato de pesos personalizado: no se carga con `from_pretrained` estándar de transformers, sino mediante `earlybird.py`; esto complica la integración con stacks de despliegue convencionales.
-- Repositorio pequeño (0,0 GB reportados) y muy pocas descargas (6) en el momento de la consulta: ecosistema y validación externa limitados.
+- Precision: Whisper base, 2,5 veces mas grande, comete menos errores en todos los conjuntos salvo en audiolibros, donde empatan. Con ruido de fondo a 10 dB, Earlybird falla el 32% de las palabras frente al 8,9% de Whisper base.
+- Reescrituras: mostrar palabras antes implica cambiarlas mas a menudo; 1,3 cambios por palabra en audiolibros y entre 2 y 6 en habla espontanea o ruidosa, lo que exige gestionar la UI y la logica de sustitucion.
+- Las predicciones de las dos palabras siguientes aportan poco: con confianza del 50% o mas, solo aproximadamente 1 de cada 7 palabras se acierta antes de terminar; la mayoria de la salida temprana proviene de la propia transcripcion.
+- Solo ingles; no hay soporte multilingue.
+- Formato de pesos personalizado de 4 bits: no se carga con herramientas estandar (safetensors, GGUF, vLLM, llama.cpp); requiere el script `earlybird.py`.
+- Riesgo de alucinacion y sustituciones en audio ruidoso o con habla solapada, agravado por la emision temprana.
+- No se documentan sesgos especificos mas alla de los inherentes a los corpus de entrenamiento (LibriSpeech, People's Speech), predominantemente ingles y de dominio publico.
+- Licencia MIT permite uso comercial, pero se debe conservar el aviso de copyright de Useful Sensors, Inc. (dba Moonshine) por el modelo base.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/sahilmahendrakar/Earlybird-29M
+- Hugging Face: https://huggingface.co/sahilmahendrakar/Earlybird-29M
 - Write-up del autor: https://sahilmahendrakar.com/writings/earlybird
-- Código en GitHub: https://github.com/sahilmahendrakar/earlybird
-- Paper: en arXiv próximamente (enlace pendiente de anuncio según la model card)
-- Moonshine (modelo base): https://github.com/moonshine-ai/moonshine
+- Codigo: https://github.com/sahilmahendrakar/earlybird
+- Demo: https://huggingface.co/spaces/sahilmahendrakar/earlybird
+- Paper: https://arxiv.org/abs/2611.14421
+- Modelo base (Moonshine Streaming Tiny): https://huggingface.co/moonshine-ai/moonshine-streaming-tiny
+- Repositorio Moonshine: https://github.com/moonshine-ai/moonshine

@@ -2,100 +2,116 @@
 
 ## Resumen
 
-DeepSeek-V4.1-Flash-1017 DIY IQ1_S (v3bu) es una cuantizacion GGUF de clase 1 bit (1,68 bpw) del modelo DeepSeek-V4.1-Flash-1017, publicada por el usuario independiente naualex2023. No se trata de un modelo original, sino de una distribucion derivada y reproducible del backbone de DeepSeek-V4.1-Flash-1017, cuantizado con llama.cpp a partir de los pesos publicos oficiales. El objetivo declarado es conseguir que un modelo de gran escala (552B de backbone mas 196B de Engram) quepa de forma residente en una maquina de 128 GB de RAM, en concreto una APU AMD Ryzen AI Max+ 395 (Strix Halo).
+DeepSeek-V4.1-Flash-1017-DIY-v3bu es una cuantizacion GGUF dinamica de tipo IQ1_S dominante (aproximadamente 1,77 bits por peso) del modelo DeepSeek-V4.1-Flash-1017, desarrollado por el usuario independiente naualex2023. El modelo base, obra de DeepSeek, es un transformer de tipo Mixture of Experts (MoE) con un backbone de 552.000 millones de parametros y una tabla de memoria condicional denominada Engram de 196.000 millones de parametros. Esta version cuantizada reduce el backbone a 121,8 GB repartidos en cinco shards, con el objetivo declarado de ejecutarse de forma totalmente residente en una maquina con 128 GB de RAM unificada (AMD Ryzen AI Max+ 395, plataforma Strix Halo).
 
-El paquete se compone de cinco shards del backbone (121,8 GB en total) y deja fuera el tensor de memoria condicional Engram (110,6 GB), que debe descargarse por separado desde el repositorio de Unsloth y marcarse como shard 6. Esta separacion permite cargar el backbone completo en memoria unificada y mantener la tabla Engram en SSD con carga perezosa. La relevancia de esta ficha radica en que documenta un caso real de cuantizacion extrema (1,68 bpw) sobre un modelo de escala frontera, con mediciones de calidad frente a una referencia Q8 y frente a la cuantizacion oficial de Unsloth.
+La relevancia de esta ficha no reside en el modelo original, sino en el ejercicio de reproducibilidad que documenta: todo el pipeline (descarga, conversion, extraccion, cuantizacion, ensamblaje y evaluacion) esta publicado y es reproducible, y la calidad se mide con divergencia KL frente a una referencia Q8. Es un caso practico de cuantizacion agresiva a 1 bit para hardware de consumo con memoria unificada, un nicho creciente entre desarrolladores que quieren ejecutar modelos de gran escala sin GPU dedicada.
 
-La informacion disponible sobre el modelo base (arquitectura exacta, numero de parametros activos, contexto nativo, idiomas y licencia concreta) es limitada; esta ficha se limita a lo publicado en la model card del repositorio de cuantizacion y marca explicitamente como "no disponible" todo aquello que no aparece en ella.
+La release actual es la v5, que sustituyo in situ a la v3bu manteniendo tamano y nombres de fichero. El modelo base es propietario bajo licencia DeepSeek, y esta derivacion se distribuye bajo los mismos terminos. La informacion disponible sobre arquitectura interna, datos de entrenamiento o benchmarks del modelo original es muy limitada en la documentacion proporcionada, por lo que muchos campos se marcan como no disponibles.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (modelo base DeepSeek-V4.1-Flash-1017; la cuantizacion conserva la topologia del base, con backbone de 552B y modulo Engram de 196B segun la model card) |
-| Parametros totales | 552B (backbone) + 196B (Engram) segun la model card del autor |
+| Arquitectura | Transformer Mixture of Experts (MoE) con backbone de 552B y tabla Engram de 196B (segun model card del cuantizador) |
+| Parametros totales | 552B backbone + 196B Engram (748B en total, segun model card) |
 | Parametros activos | no disponible |
-| Longitud de contexto | 32.768 tokens en la configuracion de ejemplo (`-c 32768`); contexto nativo del modelo base no disponible |
-| Tipos de cuantizacion | IQ1_S (1,68 bpw) para el backbone; IQ4_NL para el shard Engram (no re-alojado en este repo) |
+| Longitud de contexto | 32.768 tokens (configuracion de ejemplo del autor, `-c 32768`) |
+| Tipos de cuantizacion | IQ1_S dominante (~1,77 bpw), con capas sensibles en IQ2_XXS, ruta activa en Q5_K-Q8_0/F32, Engram en IQ4_NL |
 | Idiomas soportados | no disponible |
-| Licencia | other / deepseek (terminos del modelo base; enlace a LICENSE en el repo oficial) |
-| Formato de pesos | GGUF (5 shards de backbone + 1 shard Engram externo) |
+| Licencia | DeepSeek (other, license_name: deepseek) |
+| Formato de pesos | GGUF (5 shards del backbone + shard 6 Engram externo) |
+| Tamano del repo | 243,6 GB |
+| Tamano del backbone cuantizado | 121,8 GB en 5 shards |
+| Tamano del shard Engram | 110,6 GB (IQ4_NL, no re-hosteado) |
+| Descargas | 546 |
+| Fecha de creacion | 2026-11-11 |
+| Ultima actualizacion | 2026-11-15 |
 
 ## Arquitectura y entrenamiento
 
-La model card indica que el modelo base es DeepSeek-V4.1-Flash-1017, con un backbone de 552B de parametros y un componente adicional denominado Engram de 196B, descrito como "memoria condicional" y materializado en el tensor `per_layer_token_embd`. La presencia de tensores `ffn_(up|down|gate)_exps.weight` en las instrucciones de ejecucion sugiere una arquitectura con capas de mezcla de expertos (MoE), aunque la model card no detalla el numero de expertos, los parametros activos ni la composicion del dataset de entrenamiento. No se documentan fases de RLHF, DPO ni datos de preentrenamiento.
+El modelo base DeepSeek-V4.1-Flash-1017 es, segun la model card del cuantizador, un transformer de tipo Mixture of Experts con un backbone de 552.000 millones de parametros y una estructura de memoria condicional llamada Engram de 196.000 millones de parametros adicionales, materializada en el tensor `per_layer_token_embd`. No se dispone de informacion detallada sobre el numero de tokens de entrenamiento, la composicion del dataset ni el uso de RLHF o DPO en la informacion proporcionada.
 
-La innovacion tecnica de esta publicacion no esta en el modelo, sino en el proceso de cuantizacion: un pipeline completo y reproducible (descarga, conversion, extraccion, cuantizacion, ensamblado y evaluacion) ejecutado en una sola maquina de 128 GB de RAM. El autor documenta una reproduccion independiente del layout oficial `UD-IQ1_S` de Unsloth y analiza por que la version oficial obtiene mejores metricas, atribuyendo la diferencia a la fuente de pesos (FP8 publicos frente a pesos internos de mayor precision) y no al layout ni a las herramientas. La ejecucion requiere una version de llama.cpp con soporte para DeepSeek-V4.1 (rama del PR #30817 o master posterior).
+La aportacion tecnica de esta ficha es el proceso de cuantizacion. Se trata de una cuantizacion dinamica por tensor: los expertos enrutados usan mayoritariamente IQ1_S (88 tensores) con las capas de expertos mas sensibles en IQ2_XXS (32 tensores), mientras que la ruta activa (atencion, expertos compartidos y routers) se mantiene en Q5_K-Q8_0/F32 para preservar calidad. La tabla Engram se mantiene como un shard separado IQ4_NL de carga perezosa desde SSD. El autor genero su propia imatrix con estadisticas por experto (3D) sobre el original en FP8, con 2000 chunks, y documenta que ampliar de 400 a 2000 chunks solo mejora la KLD en 0,004, lo que indica saturacion del volumen de calibracion.
 
 ## Capacidades
 
-- Generacion de texto y razonamiento: heredadas del modelo base DeepSeek-V4.1-Flash-1017; la model card no detalla capacidades especificas.
-- Codigo y matematicas: no documentadas de forma explicita en la informacion disponible.
-- Tool calling / function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingues: no disponible.
-- Capacidades especiales (modo thinking, vision, audio): no disponible. El componente Engram (memoria condicional) es una caracteristica estructural del modelo base, pero su funcionamiento no se describe en la model card.
-- Ejecucion en hardware de consumo: capacidad destacada de esta cuantizacion, que permite correr el backbone completo en una APU de 128 GB de memoria unificada.
+- Generacion de texto y razonamiento: al ser una cuantizacion del modelo base, hereda sus capacidades de generacion y razonamiento, aunque degradadas por la cuantizacion a 1 bit.
+- Codigo y matematicas: no hay datos especificos en la informacion disponible sobre el rendimiento en estas tareas tras la cuantizacion.
+- Tool calling / function calling: no disponible en la informacion proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
+- Capacidades multilingues: no disponible; el modelo base no declara idiomas en la informacion proporcionada.
+- Memoria condicional Engram: el modelo incorpora una tabla de memoria condicional de 196B parametros que se carga de forma perezosa desde SSD, una capacidad arquitectonica distintiva del modelo base.
+- Modo thinking: no disponible en la informacion proporcionada.
+- Vision y audio: no disponible en la informacion proporcionada.
 
 ## Casos de uso
 
-- Inferencia local de gran escala en hardware de consumo: el caso principal. Permite ejecutar un modelo de escala frontera en una APU Strix Halo de 128 GB, sin GPU dedicada, manteniendo el backbone residente en RAM y el Engram en SSD con carga perezosa. Adecuado para laboratorios y desarrolladores que quieren experimentar con modelos grandes sin infraestructura de centro de datos.
-- Investigacion sobre cuantizacion extrema: el repositorio incluye el pipeline completo y mediciones de KLD y PPL frente a una referencia Q8, lo que lo convierte en un banco de pruebas para estudiar el impacto de la cuantizacion a 1,68 bpw en modelos de gran escala.
-- Reproduccion y auditoria de cuantizaciones: el "build passport" documenta cada paso, lo que permite reproducir el proceso y comparar con la cuantizacion oficial de Unsloth. Util para equipos que necesitan verificar la procedencia y calidad de pesos cuantizados.
-- Prototipado de asistentes conversacionales con contexto largo: con 32k tokens de contexto en la configuracion de ejemplo, sirve para probar conversaciones multi-turno y documentos largos en local, aceptando la latencia de 5-6 tok/s.
-- Evaluacion comparativa de layouts de cuantizacion: la metrica de acuerdo top-1 (75,3% frente a la oficial) permite estudiar diferencias entre layouts IQ1_S independientes y oficiales sobre el mismo modelo base.
-- Docencia y formacion en tecnicas de cuantizacion: el pipeline scriptado y las metricas publicadas sirven como material didactico para explicar bpw, KLD, PPL ratio y control self-vs-self en un caso real.
+- Inferencia local en APU de memoria unificada: el caso de uso central de esta ficha es ejecutar un modelo de escala 552B en una maquina de 128 GB de RAM unificada (Ryzen AI Max+ 395), con el backbone residente en RAM y el Engram en streaming desde SSD. Es adecuado porque el diseno de shards y los flags `--override-tensor` estan pensados exactamente para ese perfil de hardware.
+- Experimentacion con cuantizacion extrema a 1 bit: investigadores que quieran estudiar el impacto de IQ1_S en un MoE de gran escala pueden reproducir el pipeline completo, ya que el autor publica scripts, imatrix y evaluacion KLD.
+- Evaluacion de calidad de cuantizaciones: el repositorio incluye metricas de KLD, PPL ratio y top-1 agreement frente a la release oficial y frente a una referencia Q8, lo que permite comparar metodos de cuantizacion de forma objetiva.
+- Prototipado offline sin GPU dedicada: para desarrolladores que necesiten un entorno local de pruebas de generacion de texto de gran escala sin acceso a A100/H100, esta build ofrece una via realista aunque lenta (~5-6 tok/s).
+- Reproduccion de pipelines de cuantizacion: el "build passport" documenta cada paso, lo que sirve como material de referencia para quien quiera cuantizar otros modelos con llama.cpp en hardware similar.
+- Benchmarking de hardware Strix Halo: permite medir latencia, throughput y consumo de memoria de un modelo grande en una APU, con cifras concretas publicadas por el autor (~1 min de carga, 5-6 tok/s, 32k de contexto).
 
 ## Benchmarks y rendimiento
 
-Metricas de calidad publicadas por el autor (wiki1100, frente a referencia Q8_K_XL):
+La model card proporciona metricas de calidad de la cuantizacion (KLD frente a referencia Q8_K_XL sobre wiki1100), no benchmarks de tareas estandar como MMLU o HumanEval.
 
-| Metrica | Este build (DIY IQ1_S v3bu) | Oficial UD-IQ1_S (misma pipeline) |
-|---|---|---|
-| KLD media | 0,612 | 0,414 |
-| KLD mediana | 0,265 | 0,155 |
-| Ratio de PPL vs referencia | 1,485 | 1,156 |
-| Acuerdo top-1 (modelo vs modelo) | 75,3% | 77,1% |
-| Control self-vs-self | 0,000 | 0,000 |
+| Metrica (wiki1100, vs Q8_K_XL) | v3bu (inicial) | v3bi (interino) | v5 (actual) | Oficial UD-IQ1_S |
+|---|---|---|---|---|
+| KLD media / mediana | 0,612 / 0,265 | 0,597 / 0,245 | 0,594 / 0,242 | 0,414 / 0,155 |
+| PPL ratio vs referencia | 1,485 | 1,479 | 1,486 | 1,156 |
+| Top-1 agreement con oficial | no disponible | no disponible | 75,3% | 77,1% |
+| Control self vs self | 0,000 | 0,000 | 0,000 | 0,000 |
 
-Rendimiento de inferencia medido en Ryzen AI Max+ 395 (Strix Halo, 128 GB): aproximadamente 1 minuto de carga del modelo y 5-6 tok/s de generacion con contexto de 32k. No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) en la informacion disponible.
+Rendimiento en hardware del autor (Ryzen AI Max+ 395):
+
+| Metrica | Valor |
+|---|---|
+| Tiempo de carga del modelo | ~1 minuto |
+| Throughput de generacion | ~5-6 tok/s |
+| Contexto configurado | 32.768 tokens |
+| Backbone residente en RAM | Si (121,8 GB) |
+| Engram | Streaming perezoso desde SSD (110,6 GB) |
+
+No se han publicado resultados de benchmarks de tareas (MMLU, HumanEval, GSM8K) en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM/RAM estimada: 121,8 GB para el backbone en 5 shards, mas 110,6 GB para el shard Engram (IQ4_NL) que se mantiene en SSD con carga perezosa. En total, el conjunto completo ronda los 232 GB de almacenamiento.
-- Hardware de referencia: AMD Ryzen AI Max+ 395 (Strix Halo) con 128 GB de memoria unificada, Ubuntu. Es el unico hardware validado en la model card.
-- GPU dedicadas: no se documenta soporte ni rendimiento en A100, H100 o RTX 4090. El tamano del backbone hace inviable su residencia completa en GPUs de consumo (24 GB o menos).
-- Opciones de despliegue: llama.cpp (llama-server) con soporte para DeepSeek-V4.1 (rama del PR #30817 o master posterior). No se mencionan vLLM, TGI ni Ollama.
-- Flags imprescindibles en APU de 128 GB: `--override-tensor 'per_layer_token_embd.weight=CPU'` para mantener el Engram fuera del asignador de GPU y `--override-tensor 'blk\.([0-9]+)\.ffn_(up|down|gate)_exps\.weight=CPU'` para mantener los expertos MoE en CPU. Tambien `--load-mode mmap --lazy-mode on`.
-- Latencia y throughput: aproximadamente 5-6 tok/s de generacion y alrededor de 1 minuto de carga en el hardware de referencia.
-- Muestreo recomendado: `--temp 1.0 --top-p 1.0 --top-k 0 --min-p 0.0`; temperaturas mas bajas pueden degradar en bucles de repeticion, segun el autor.
+- VRAM/RAM estimada: el backbone cuantizado ocupa 121,8 GB y el shard Engram 110,6 GB. En una APU con memoria unificada de 128 GB, el backbone cabe residente y el Engram se sirve desde SSD en modo lazy.
+- GPU recomendadas: el autor valida la ejecucion en AMD Ryzen AI Max+ 395 (Strix Halo, 128 GB de memoria unificada). No se documentan otras GPU en la informacion disponible.
+- Cabe en GPU de consumo: no en GPU discretas convencionales por el tamano del backbone (121,8 GB); si en APUs con 128 GB de memoria unificada segun el autor.
+- Opciones de despliegue: llama.cpp (`llama-server`) con soporte para DeepSeek-V4.1 (rama del PR #30817 o master posterior). El autor usa `--load-mode mmap --lazy-mode on` y dos flags `--override-tensor` para mantener el Engram y los expertos MoE fuera del asignador de GPU.
+- Latencia y throughput: ~1 minuto de carga y ~5-6 tok/s de generacion en el hardware del autor, con contexto de 32k.
+- Muestreo recomendado: `--temp 1.0 --top-p 1.0 --top-k 0 --min-p 0.0`; temperaturas mas bajas pueden provocar bucles de repeticion, segun el autor.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Calidad (KLD media vs Q8) | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Calidad (KLD media) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DeepSeek-V4.1-Flash-1017 DIY IQ1_S v3bu (este) | 552B + 196B Engram | 32k en config. de ejemplo | 0,612 | other / deepseek | GGUF, 5 shards + Engram externo |
-| DeepSeek-V4.1-Flash-1017 UD-IQ1_S (Unsloth) | 552B + 196B Engram | no disponible | 0,414 | other / deepseek | GGUF (incluye shard Engram) |
-| DeepSeek-V4.1-Flash-1017 (base, FP8) | 552B + 196B Engram | no disponible | referencia (Q8_K_XL) | other / deepseek | Pesos oficiales en HF |
+| DeepSeek-V4.1-Flash-1017-DIY-v3bu (esta ficha) | 552B backbone + 196B Engram | 32k (config. autor) | 0,594 | DeepSeek | GGUF, 5 shards + Engram externo |
+| UD-IQ1_S oficial (unsloth) | 552B backbone + 196B Engram | no disponible | 0,414 | DeepSeek | GGUF, con shard Engram incluido |
+| Referencia Q8_K_XL | 552B backbone + 196B Engram | no disponible | 0 (referencia) | DeepSeek | GGUF de alta precision |
 
-La comparativa se limita al mismo modelo base en distintos formatos, ya que la informacion disponible no incluye datos de modelos alternativos de la misma categoria. La cuantizacion oficial de Unsloth obtiene mejor KLD y PPL que este build, atribuido por el autor a la fuente de pesos.
+La comparativa se limita a las variantes del mismo modelo base documentadas en la informacion proporcionada. No se dispone de datos de otros modelos comparables de la misma categoria en la informacion disponible.
 
 ## Limitaciones y advertencias
 
-- Perdida de calidad medible: KLD media de 0,612 y ratio de PPL de 1,485 frente a la referencia Q8, peores que la cuantizacion oficial (0,414 y 1,156). A 1,68 bpw la degradacion es sustancial y puede afectar tareas de razonamiento fino.
-- Sensibilidad al muestreo: el autor advierte que temperaturas bajas pueden provocar bucles de repeticion; se recomienda temperatura 1.0 y top-p 1.0.
-- Dependencia de un shard externo: el repositorio no incluye el shard Engram; hay que descargarlo de Unsloth y remarcarlo como shard 6, lo que anade un paso manual y un punto de fallo.
-- Requisito de version especifica de llama.cpp: necesita una build con soporte para DeepSeek-V4.1 (PR #30817 o master posterior); no funciona con versiones estables antiguas.
-- Hardware muy especifico: validado unicamente en Ryzen AI Max+ 395 con 128 GB de memoria unificada; el rendimiento en otras configuraciones no esta documentado.
-- Licencia: se distribuye bajo los terminos del modelo base DeepSeek (licencia "other" con nombre "deepseek"). Es responsabilidad del usuario revisar las restricciones de uso comercial del modelo base antes de desplegarlo en produccion.
-- Idiomas, sesgos y riesgo de alucinacion: no documentados en la informacion disponible; deben evaluarse contra el modelo base.
-- Repositorio con 0 descargas y 0 likes en el momento de la consulta: no hay evidencia de validacion por parte de la comunidad.
+- Degradacion de calidad por cuantizacion extrema: la KLD media de 0,594 y el PPL ratio de 1,486 frente a la referencia Q8 indican una perdida de fidelidad notable; la release oficial UD-IQ1_S obtiene mejores cifras (0,414 y 1,156), y el autor atribuye la diferencia al origen de los pesos (FP8 publico frente a pesos internos de mayor precision), no al layout.
+- Brecha con la release oficial: el top-1 agreement con la oficial es del 75,3%, lo que implica divergencias sustanciales en la distribucion de salida.
+- Riesgo de bucles de repeticion: el autor advierte que temperaturas de muestreo bajas pueden degradar la generacion en builds de 1 bit; es necesario usar los parametros de muestreo indicados.
+- Dependencia de un shard externo: el shard Engram (110,6 GB) no se re-hospeda y debe descargarse de unsloth y renombrarse manualmente; un error en este paso impide la ejecucion.
+- Requisito de version especifica de llama.cpp: necesita soporte para DeepSeek-V4.1 (PR #30817 o master posterior), lo que limita la portabilidad a otras herramientas de inferencia.
+- Licencia: se distribuye bajo la licencia DeepSeek del modelo base; es imprescindible revisar sus terminos para uso comercial, ya que la model card no detalla restricciones concretas.
+- Idiomas y sesgos: no hay informacion disponible sobre idiomas soportados ni sesgos conocidos del modelo base o de esta cuantizacion.
+- Alucinacion: no hay evaluacion especifica de alucinacion en la informacion disponible; la cuantizacion a 1 bit puede incrementar el riesgo respecto al modelo original.
+- Hardware muy especifico: el rendimiento documentado (~5-6 tok/s) corresponde a una APU concreta; en otros equipos las cifras pueden diferir sustancialmente.
 
 ## Enlaces
 
-- Repositorio de la cuantizacion: https://huggingface.co/naualex2023/DeepSeek-V4.1-Flash-1017-DIY-v3bu
+- Repositorio Hugging Face de esta cuantizacion: https://huggingface.co/naualex2023/DeepSeek-V4.1-Flash-1017-DIY-v3bu
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017
 - Licencia del modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017/blob/main/LICENSE
-- Cuantizacion oficial de Unsloth (shard Engram): https://huggingface.co/unsloth/DeepSeek-V4.1-Flash-1017-GGUF
-- Build passport del autor: PASSPORT.md (referenciado en la model card del repositorio)
-- PR de llama.cpp con soporte DeepSeek-V4.1: PR #30817 (referenciado en la model card)
+- Cuantizacion oficial de referencia (unsloth): https://huggingface.co/unsloth/DeepSeek-V4.1-Flash-1017-GGUF
+- Build passport (documentacion del pipeline, referenciado en la model card): PASSPORT.md dentro del repositorio
+- Rama de llama.cpp con soporte DeepSeek-V4.1: PR #30817 (referenciado en la model card)

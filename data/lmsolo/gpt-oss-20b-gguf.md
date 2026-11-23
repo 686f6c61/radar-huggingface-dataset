@@ -2,95 +2,96 @@
 
 ## Resumen
 
-`lmsolo/gpt-oss-20b-GGUF` es una reproducción no oficial en formato GGUF del modelo `gpt-oss-20b` publicado por OpenAI dentro de su familia de pesos abiertos gpt-oss. Se trata de un transformer con arquitectura Mixture of Experts (MoE) de 20.914.757.184 parámetros totales, de los cuales aproximadamente 3.6 mil millones están activos por token, pensado para inferencia de baja latencia en hardware local o especializado. La licencia es Apache 2.0, lo que permite uso comercial sin restricciones de copyleft.
+gpt-oss-20b es un modelo de lenguaje de pesos abiertos desarrollado por OpenAI, disenado para razonamiento, tareas agenticas y casos de uso generales de desarrollo. Se trata de un transformer con arquitectura Mixture-of-Experts (MoE) de 20.900 millones de parametros totales, de los cuales solo 3.600 millones estan activos por token, lo que permite una latencia reducida y su ejecucion en hardware de consumo. Forma parte de la serie gpt-oss junto al modelo mayor gpt-oss-120b.
 
-El modelo original está diseñado para razonamiento, tareas agénticas y uso general por parte de desarrolladores, con un formato de respuesta propietario llamado harmony que debe aplicarse obligatoriamente para que el modelo funcione correctamente. Incluye esfuerzo de razonamiento configurable (low, medium, high), acceso completo a la cadena de pensamiento y capacidades nativas de function calling, navegación web y ejecución de código Python.
+El repositorio `lmsolo/gpt-oss-20b-GGUF` es una redistribucion no oficial en formato GGUF del modelo original de OpenAI, publicada bajo licencia Apache 2.0. El modelo emplea el formato de respuesta "harmony" de OpenAI, que es obligatorio para su correcto funcionamiento, y fue post-entrenado con cuantizacion MXFP4 de los pesos MoE, lo que permite ejecutarlo dentro de 16 GB de memoria.
 
-Este repositorio concreto es un espejo GGUF creado por el usuario `lmsolo`, con 0 descargas y 0 likes en el momento de la consulta, y un tamaño de repositorio de 179 GB. La model card incluida es la del modelo original de OpenAI, no una documentación específica de esta conversión, por lo que los detalles de cuantización concretos de este repo no están disponibles.
+Su relevancia actual radica en que ofrece capacidades de razonamiento configurable (low, medium, high), cadena de pensamiento completa accesible, soporte nativo de function calling y ejecucion de codigo Python, todo bajo una licencia permisiva que permite uso comercial sin restricciones de copyleft. La cuantizacion GGUF anade la posibilidad de desplegarlo en llama.cpp y Ollama sobre hardware asequible.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer con Mixture of Experts (MoE) |
-| Parametros totales | 20.914.757.184 |
-| Parametros activos | ~3.6 mil millones por token |
+| Arquitectura | Transformer con Mixture-of-Experts (MoE) |
+| Parametros totales | 20.914.757.184 (~20,9 B) |
+| Parametros activos | 3.600 millones (~3,6 B) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | MXFP4 (cuantización de pesos MoE aplicada en post-entrenamiento); este repo es GGUF, variantes concretas no disponibles |
+| Tipos de cuantizacion | MXFP4 (pesos MoE post-entrenados); GGUF en este repositorio |
 | Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (repo); safetensors en el modelo original |
+| Formato de pesos | GGUF (repositorio); safetensors en el original |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un transformer con capas de mezcla de expertos (MoE). El modelo original fue post-entrenado con cuantización MXFP4 de los pesos MoE, lo que permite que `gpt-oss-20b` se ejecute dentro de 16 GB de memoria. Las evaluaciones publicadas por OpenAI se realizaron con esa misma cuantización MXFP4. El modelo fue entrenado sobre el formato de respuesta harmony de OpenAI y solo debe usarse con dicho formato; de lo contrario, el comportamiento es incorrecto.
+gpt-oss-20b es un transformer con capas Mixture-of-Experts. De sus aproximadamente 20,9 mil millones de parametros totales, solo 3,6 mil millones se activan por token, lo que reduce el coste computacional de inferencia respecto a un modelo denso del mismo tamano. Los pesos MoE fueron post-entrenados con cuantizacion MXFP4, una decision que permite que el modelo completo se ejecute dentro de 16 GB de memoria y que todas las evaluaciones publicadas se realicen con esa misma cuantizacion.
 
-La información disponible no detalla el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron RLHF o DPO. Sí se documenta que el modelo es ajustable por parámetros (fine-tunable) y que expone la cadena de pensamiento completa, lo que facilita depuración y auditoría. No se documentan innovaciones adicionales como decodificación especulativa o atención lineal en la información proporcionada.
+El modelo fue entrenado sobre el formato de respuesta "harmony" de OpenAI, que estructura los turnos de conversacion, el razonamiento y las llamadas a herramientas. Es imperativo usar dicho formato: el modelo no funciona correctamente sin el. Incluye un modo de razonamiento configurable (low, medium, high) y expone la cadena de pensamiento completa, orientada a depuracion y confianza en las salidas, no a su presentacion al usuario final. No se dispone en la informacion proporcionada de detalles sobre el numero de tokens de entrenamiento, la composicion del dataset ni las tecnicas de alineacion (RLHF/DPO) empleadas.
 
 ## Capacidades
 
-- Generación de texto y razonamiento con esfuerzo configurable (low, medium, high).
-- Cadena de pensamiento completa accesible (no pensada para mostrarse al usuario final).
-- Function calling nativo y soporte de agentes.
-- Navegación web integrada según la documentación del modelo original.
-- Ejecución de código Python.
+- Generacion de texto conversacional multi-turno.
+- Razonamiento con esfuerzo configurable (low, medium, high) y cadena de pensamiento completa accesible.
+- Function calling / tool calling nativo.
+- Navegacion web (web browsing) mediante herramientas.
+- Ejecucion de codigo Python.
 - Salidas estructuradas (Structured Outputs).
-- Ajuste fino por parámetros.
-- Capacidades multilingües: no disponibles en la información proporcionada.
+- Capacidades agenticas y razonamiento multi-paso.
+- Ajuste fino (fine-tuning) de parametros para casos de uso especificos.
+- Capacidades multilingues: no disponibles en la informacion proporcionada.
 
 ## Casos de uso
 
-- Asistentes de razonamiento local: al ejecutarse en menos de 16 GB con MXFP4, se puede desplegar en estaciones de trabajo con GPU consumer para tareas de análisis y respuesta razonada sin depender de la nube.
-- Automatización agéntica con tool calling: el soporte nativo de function calling y salidas estructuradas permite orquestar flujos multi-paso que invocan APIs externas y validan respuestas con esquemas.
-- Generación y ejecución de código: la capacidad de ejecutar Python y producir salidas estructuradas lo hace adecuado para pipelines de análisis de datos y prototipado asistido.
-- Atención al cliente con razonamiento configurable: se puede bajar el esfuerzo de razonamiento para reducir latencia en conversaciones de alto volumen y subirlo en casos complejos.
-- Depuración de razonamiento en investigación: el acceso a la cadena de pensamiento completa permite auditar por qué el modelo llega a una conclusión, útil en entornos de evaluación de modelos.
-- Despliegue en servidores compatibles con OpenAI: mediante vLLM o `transformers serve` se expone una API compatible con OpenAI para integrarse en aplicaciones existentes.
-- Experimentación y fine-tuning: la licencia Apache 2.0 y la posibilidad de ajuste por parámetros permiten adaptar el modelo a dominios específicos sin riesgo de copyleft.
+- Atencion al cliente automatizada: el modelo puede gestionar conversaciones multi-turno con soporte de tool calling para consultar sistemas internos (pedidos, cuentas), con razonamiento en modo low para minimizar latencia en produccion.
+- Agentes autonomos de investigacion: combinando navegacion web y ejecucion de Python, el modelo puede recopilar informacion, procesarla y generar informes estructurados en un bucle multi-paso.
+- Generacion y ejecucion de codigo en pipelines: su soporte nativo de Python y salidas estructuradas permite integrarlo en flujos de CI/CD para generar, validar y ejecutar fragmentos de codigo.
+- Asistentes de desarrollo local: al caber en 16 GB de memoria y estar disponible en GGUF, puede desplegarse en estaciones de trabajo con GPU de consumo mediante Ollama o llama.cpp para autocompletado y refactorizacion.
+- Extraccion de datos estructurados: uso de Structured Outputs para convertir texto libre en JSON validado en procesos ETL o de enriquecimiento de datos.
+- Razonamiento con trazabilidad: en entornos donde se requiere auditar el proceso de decision, la cadena de pensamiento completa permite depurar y verificar las respuestas del modelo.
+- Despliegue en entornos con recursos limitados: su naturaleza MoE con 3,6 B parametros activos y la cuantizacion MXFP4 lo hacen adecuado para inferencia de baja latencia en hardware modesto.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: el modelo original cabe en 16 GB de memoria con cuantización MXFP4.
-- GPU recomendadas: el modelo hermano `gpt-oss-120b` está pensado para una sola GPU de 80 GB (NVIDIA H100 o AMD MI300X); para `gpt-oss-20b` la información no especifica GPU de referencia más allá de la cota de 16 GB.
-- GPU consumer: sí cabe en GPUs consumer con al menos 16 GB de VRAM; modelos concretos no disponibles en la información.
-- Opciones de despliegue: Transformers, vLLM (versión 0.10.1+gptoss con wheels específicos), Ollama (`gpt-oss:20b`), LM Studio, PyTorch/Triton con implementaciones de referencia, y `transformers serve` para API compatible con OpenAI.
-- Latencia y throughput: no disponibles.
+- VRAM estimada para inferencia: aproximadamente 16 GB con cuantizacion MXFP4 (dato indicado por el autor del modelo original); las cuantizaciones GGUF de este repositorio pueden reducir o ajustar ese requisito segun el nivel de cuantizacion.
+- GPU recomendadas: el modelo original esta pensado para ejecutarse en una unica GPU de 80 GB en el caso de gpt-oss-120b; para gpt-oss-20b basta con hardware que disponga de ~16 GB de memoria.
+- GPU de consumo: si, el modelo cabe en GPUs de consumo con 16 GB o mas de VRAM (por ejemplo, RTX 4080/4090 o superiores), y potencialmente en configuraciones menores con cuantizaciones GGUF mas agresivas.
+- Opciones de despliegue: Transformers, vLLM (build especifico `vllm==0.10.1+gptoss`), PyTorch/Triton (implementaciones de referencia), Ollama (`ollama pull gpt-oss:20b`), LM Studio y llama.cpp mediante los ficheros GGUF de este repositorio.
+- Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros totales | Parametros activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| gpt-oss-20b (este repo, GGUF) | 20.914.757.184 | ~3.6B | no disponible | Apache 2.0 | Hugging Face (repo no oficial) |
-| gpt-oss-120b | 117B | 5.1B | no disponible | Apache 2.0 | Hugging Face (openai/gpt-oss-120b) |
-| Alternativas de tamano similar | no disponible | no disponible | no disponible | no disponible | no disponible |
+| gpt-oss-20b | ~20,9 B | ~3,6 B | no disponible | Apache 2.0 | Pesos abiertos (HF, GGUF) |
+| gpt-oss-120b | 117 B | 5,1 B | no disponible | Apache 2.0 | Pesos abiertos (HF) |
+| Alternativas de mismo tamano | no disponible | no disponible | no disponible | no disponible | no disponible |
+
+La unica comparacion directa documentada en la informacion disponible es con gpt-oss-120b, el modelo mayor de la misma familia, orientado a produccion y razonamiento de alta exigencia y disenado para una unica GPU de 80 GB. No se dispone de datos de rendimiento comparativo con otros modelos de la categoria.
 
 ## Limitaciones y advertencias
 
-- Este repositorio es una conversión no oficial de un tercero (`lmsolo`), no la publicación original de OpenAI; la model card es la del modelo original y no documenta la conversión GGUF concreta.
-- El modelo solo funciona correctamente con el formato harmony; usarlo con otros formatos produce comportamiento incorrecto.
-- La cadena de pensamiento no está pensada para mostrarse al usuario final.
-- No se dispone de información sobre sesgos, riesgo de alucinación ni cobertura idiomática en la documentación proporcionada.
-- La longitud de contexto no está disponible en la información suministrada.
-- Aunque la licencia Apache 2.0 permite uso comercial, conviene verificar la procedencia y fidelidad de esta conversión GGUF antes de usarla en producción.
-- El repositorio presenta 0 descargas y 0 likes, lo que sugiere ausencia de validación comunitaria.
+- El modelo solo funciona correctamente con el formato de respuesta "harmony"; su uso fuera de dicho formato produce resultados incorrectos.
+- La cadena de pensamiento completa no esta pensada para mostrarse al usuario final.
+- Riesgo de alucinacion inherente a los modelos de lenguaje; no se dispone de tasas medidas en la informacion proporcionada.
+- Sesgos conocidos: no disponibles en la informacion proporcionada.
+- Idiomas soportados: no disponibles; no se puede garantizar un rendimiento uniforme fuera del ingles.
+- Longitud de contexto: no disponible, lo que impide planificar cargas de trabajo con ventanas largas sin verificacion previa.
+- Este repositorio concreto (`lmsolo/gpt-oss-20b-GGUF`) es una redistribucion no oficial; para produccion conviene validar la integridad de los pesos frente al repositorio original de OpenAI.
+- La licencia Apache 2.0 permite uso comercial sin copyleft, pero se recomienda revisar los terminos de la licencia del modelo original y las condiciones de uso de OpenAI para la serie gpt-oss.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/lmsolo/gpt-oss-20b-GGUF
-- Modelo original: https://huggingface.co/openai/gpt-oss-20b
-- Modelo hermano: https://huggingface.co/openai/gpt-oss-120b
-- Colección gpt-oss: https://huggingface.co/collections/openai/gpt-oss-68911959590a1634ba11c7a4
-- Paper / model card: https://arxiv.org/abs/2508.10925
+- Repositorio Hugging Face de esta redistribucion: https://huggingface.co/lmsolo/gpt-oss-20b-GGUF
+- Modelo original en Hugging Face: https://huggingface.co/openai/gpt-oss-20b
+- Modelo mayor de la familia: https://huggingface.co/openai/gpt-oss-120b
+- Coleccion gpt-oss en Hugging Face: https://huggingface.co/collections/openai/gpt-oss-68911959590a1634ba11c7a4
+- Model card / paper: https://arxiv.org/abs/2508.10925
 - Blog de OpenAI: https://openai.com/index/introducing-gpt-oss/
-- Sitio del proyecto: https://gpt-oss.com
-- Guías (cookbook): https://cookbook.openai.com/topic/gpt-oss
+- Pagina oficial del modelo: https://gpt-oss.com
+- Guias (cookbook): https://cookbook.openai.com/topic/gpt-oss
 - Repositorio GitHub: https://github.com/openai/gpt-oss
 - Formato harmony: https://github.com/openai/harmony
-- Lista de recursos: https://github.com/openai/gpt-oss/blob/main/awesome-gpt-oss.md
-- Guía Transformers: https://cookbook.openai.com/articles/gpt-oss/run-transformers
-- Guía vLLM: https://cookbook.openai.com/articles/gpt-oss/run-vllm
-- Guía Ollama: https://cookbook.openai.com/articles/gpt-oss/run-locally-ollama
+- Lista de recursos de la comunidad: https://github.com/openai/gpt-oss/blob/main/awesome-gpt-oss.md

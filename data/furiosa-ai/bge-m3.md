@@ -2,82 +2,95 @@
 
 ## Resumen
 
-`furiosa-ai/bge-m3` es un build del modelo de embeddings multilingüe BGE-M3, desarrollado originalmente por BAAI, adaptado por FuriosaAI para ejecutarse en su hardware NPU RNGD mediante el framework Furiosa-LLM. El modelo base BGE-M3 unifica tres funcionalidades de recuperación (dense, sparse y multi-vector), pero este build expone únicamente los embeddings densos de 1024 dimensiones, obtenidos mediante CLS-pooling. Está pensado para tareas de búsqueda semántica, similitud y recuperación de información en entornos de producción que utilicen la infraestructura de FuriosaAI.
+furiosa-ai/bge-m3 es una compilación en BF16 del modelo de embeddings multilingüe BGE-M3 de BAAI, empaquetada por FuriosaAI para su ejecución en aceleradores RNGD mediante la librería Furiosa-LLM. No se trata de un modelo nuevo ni de un fine-tuning: es una distribución del mismo encoder XLM-RoBERTa (567,7 millones de parámetros) con un Furiosa Executable Bundle (FXB) precompilado, orientada a desplegar búsqueda semántica y recuperación de información sobre hardware NPU de FuriosaAI.
 
-La relevancia de este modelo radica en que permite desplegar un encoder multilingüe de alto rendimiento en hardware especializado (RNGD), con una integración sencilla a través de un servidor compatible con la API de OpenAI y una API Python offline. Al estar basado en XLM-RoBERTa, hereda la capacidad de procesar más de 100 idiomas, aunque la información proporcionada no especifica la lista exacta. El repositorio incluye los pesos en BF16 (safetensors) y un Furiosa Executable Bundle (FXB) que se descubre automáticamente al cargar el modelo con Furiosa-LLM.
+El modelo resuelve el problema de generar representaciones vectoriales densas de 1.024 dimensiones para similitud semántica, búsqueda y clustering de documentos. Su relevancia actual radica en que ofrece una vía de despliegue del conocido BGE-M3 fuera del ecosistema GPU, con un servidor compatible con la API de embeddings de OpenAI y una estrategia de paralelismo tensorial de 8 PEs que ocupa una única tarjeta RNGD.
+
+Conviene subrayar que esta build expone únicamente los embeddings densos CLS-pooled; las capacidades de recuperación dispersa (sparse lexical) y multi-vector del BGE-M3 original no se anuncian en esta integración. Para usos con FlagEmbedding, Sentence Transformers o Transformers, la model card remite al repositorio upstream de BAAI.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | XLM-RoBERTa (dense encoder), `XLMRobertaModel` |
+| Arquitectura | XLM-RoBERTa (encoder denso, `XLMRobertaModel`) |
 | Parametros totales | 567.754.752 |
-| Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | no disponible (el modelo base BGE-M3 soporta 8192 tokens, pero no se confirma en esta build) |
-| Tipos de cuantizacion | BF16 (sin cuantizacion de menor precision) |
-| Idiomas soportados | multilingue (mas de 100 idiomas segun el modelo base) |
+| Parametros activos | no aplica (no es MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | BF16 (sin esquema de cuantizacion de menor precision) |
+| Idiomas soportados | no disponibles (el modelo upstream BGE-M3 es multilingue) |
 | Licencia | MIT |
-| Formato de pesos | safetensors (BF16) y FXB (Furiosa Executable Bundle) |
+| Formato de pesos | safetensors + Furiosa Executable Bundle (FXB); libreria furiosa-llm |
+| Dimension de embedding | 1.024 (pooling CLS, normalizado L2) |
+| Hardware soportado | FuriosaAI RNGD (8 PEs por tarjeta, tensor-parallel size 8) |
+| Tamano del repositorio | 1,3 GB |
 
 ## Arquitectura y entrenamiento
 
-El modelo base BGE-M3 fue desarrollado por BAAI sobre la arquitectura XLM-RoBERTa, un encoder transformer preentrenado con un objetivo de enmascaramiento de lenguaje. BGE-M3 se distingue por su multifuncionalidad: combina recuperacion densa, sparse (lexical) y multi-vector en un unico modelo. Sin embargo, el build de FuriosaAI expone exclusivamente los embeddings densos, que son vectores L2-normalizados de 1024 dimensiones obtenidos mediante CLS-pooling. No se proporcionan detalles sobre el entrenamiento especifico de esta build, pero al ser una adaptacion del modelo original, hereda sus caracteristicas de entrenamiento (datos multilingues, objetivos de contraste, etc.). La innovacion principal de este repositorio es la compilacion a un FXB optimizado para la NPU RNGD, que permite una ejecucion eficiente con un paralelismo tensor de 8 PEs (una tarjeta).
+La arquitectura es la del encoder XLM-RoBERTa de BGE-M3, un transformer bidireccional que produce una representación densa por texto mediante pooling de la token CLS y normalización L2, de modo que el producto escalar entre vectores equivale a la similitud coseno. El modelo upstream de BAAI unifica tres modos de recuperación (denso, disperso léxico y multi-vector); esta build de FuriosaAI expone solo la salida densa de 1.024 dimensiones.
+
+No se dispone en la información proporcionada de detalles sobre el corpus de entrenamiento, el número de tokens, la composición del dataset ni si hubo etapas de ajuste con datos de pares o preferencias. Tampoco se documentan innovaciones de decodificación o atención específicas de esta build. La aportación técnica propia de FuriosaAI es la compilación a BF16 y el empaquetado FXB para RNGD, junto con la integración en Furiosa-LLM: servidor OpenAI-compatible con endpoint `/v1/embeddings` y API Python (`LLM(...).embed(...)`). BGE-M3 no requiere prefijo de instrucción en las consultas.
 
 ## Capacidades
 
-- Generacion de embeddings densos de 1024 dimensiones para texto, con normalizacion L2 (el producto punto equivale a la similitud coseno).
-- Busqueda semantica y recuperacion de informacion en multiples idiomas (mas de 100 segun el modelo base).
-- Similitud entre frases y documentos, util para deduplicacion, clustering y clasificacion.
-- Integracion con pipelines de RAG (retrieval augmented generation) como componente de recuperacion.
-- Compatible con el servidor Furiosa-LLM, que expone un endpoint `/v1/embeddings` compatible con la API de OpenAI.
-- Uso offline mediante la API Python de Furiosa-LLM (`LLM.embed`).
-- No soporta generacion de texto, tool calling, agentes ni razonamiento multi-paso, al ser un modelo encoder puro.
+- Generación de embeddings densos de 1.024 dimensiones para textos, con normalización L2 y similitud coseno directa por producto escalar.
+- Similitud semántica entre frases y documentos (`pipeline_tag: sentence-similarity`).
+- Extracción de características (`feature-extraction`) y uso como modelo de sentence-transformers.
+- Búsqueda semántica y recuperación de información sobre corpus indexados.
+- Capacidades multilingües heredadas del modelo upstream BGE-M3 (la model card de esta build no detalla la lista de idiomas).
+- Servidor compatible con la API de embeddings de OpenAI, lo que permite sustituir clientes existentes sin cambios de código.
+- No se documentan en esta build tool calling, agentes, razonamiento multi-paso, visión, audio ni modo de pensamiento: es un encoder, no un modelo generativo.
 
 ## Casos de uso
 
-- Busqueda semantica en bases de conocimiento: indexar documentos y consultas con los embeddings densos para recuperar pasajes relevantes mediante similitud coseno, aprovechando el soporte multilingue para cubrir contenido en varios idiomas.
-- Sistemas de recomendacion basados en contenido: representar items (articulos, productos, noticias) como vectores y calcular similitudes para sugerir elementos relacionados.
-- Clasificacion de texto: usar los embeddings como caracteristicas de entrada para un clasificador supervisado (por ejemplo, analisis de sentimiento o categorizacion de tickets).
-- Deduplicacion de documentos: comparar embeddings de documentos para identificar duplicados o versiones cercanas, util en pipelines de limpieza de datos.
-- Recuperacion aumentada por generacion (RAG): integrar el modelo como retriever en un sistema de preguntas y respuestas, donde los embeddings de las consultas se comparan con los de los documentos almacenados.
-- Moderacion de contenido multilingue: clasificar textos en multiples idiomas para detectar contenido inapropiado, usando los embeddings como entrada a un modelo de clasificacion.
+- Búsqueda semántica en documentación técnica: indexar manuales y fragmentos de código como vectores de 1.024 dimensiones y recuperar por similitud coseno; el modelo está pensado exactamente para esta tarea y el endpoint OpenAI-compatible simplifica la integración con bases vectoriales existentes.
+- Motor de recuperación en pipelines RAG: generar embeddings de pasajes y consultas para alimentar un sistema de generación aumentada; el despliegue en una sola tarjeta RNGD con tensor-parallel de 8 PEs facilita el servicio dedicado de recuperación.
+- Deduplicación y clustering de documentos: agrupar artículos, tickets o registros con contenido casi idéntico calculando similitudes por producto escalar sobre vectores normalizados.
+- Moderación y clasificación por similitud: comparar mensajes entrantes con un conjunto de referencia de casos etiquetados para enrutar o priorizar revisiones.
+- Sistemas de recomendación basados en contenido: representar ítems y perfiles de usuario en el mismo espacio vectorial y ordenar candidatos por afinidad semántica.
+- Búsqueda multilingüe en catálogos: aprovechar la naturaleza multilingüe del modelo upstream para consultar documentos en un idioma y recuperar resultados en otro, siempre que se valide el comportamiento en los idiomas objetivo.
+- Sustitución de proveedores de embeddings en producción: al exponer `/v1/embeddings` compatible con OpenAI, se puede migrar un servicio existente apuntando el cliente al servidor de Furiosa-LLM sin reescribir la lógica de aplicación.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El modelo base BGE-M3 tiene resultados publicados en el paper original, pero esta build especifica para FuriosaAI no incluye metricas propias. Se recomienda consultar la documentacion de FuriosaAI para datos de latencia y throughput en RNGD, que no estan disponibles en la informacion proporcionada.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card de esta build no incluye métricas de recuperación (nDCG, Recall@k), MMLU, HumanEval, GSM8K ni latencias o throughput medidos.
 
 ## Requisitos de hardware
 
-- Requiere hardware FuriosaAI RNGD (NPU), no es compatible con GPUs convencionales.
-- El modelo se ejecuta con un paralelismo tensor de 8 PEs, que corresponde a una unica tarjeta RNGD.
-- No cabe en GPUs de consumo (RTX, etc.) porque el FXB esta compilado exclusivamente para RNGD.
-- Despliegue mediante Furiosa-LLM: servidor OpenAI-compatible (`furiosa-llm serve`) o API Python offline.
-- No se dispone de datos de latencia o throughput en la informacion proporcionada.
+- Hardware objetivo: FuriosaAI RNGD, con tensor-parallel size de 8 PEs, que corresponde a una única tarjeta RNGD.
+- No se documenta soporte para GPU NVIDIA, AMD ni ejecución en CPU en esta build; para esos entornos la model card remite a BAAI/bge-m3 con FlagEmbedding, Sentence Transformers o Transformers.
+- VRAM estimada: no disponible (no es un despliegue en GPU; el modelo pesa 567,7 M de parámetros en BF16, aproximadamente 1,1 GB de pesos).
+- ¿Cabe en GPU de consumo? No disponible para esta build; el modelo upstream, por su tamaño, es ejecutable en GPU de consumo con frameworks estándar, pero no se aportan cifras verificadas en la información disponible.
+- Opciones de despliegue: `furiosa-llm serve furiosa-ai/bge-m3` (servidor OpenAI-compatible en el puerto 8000) o la API Python `furiosa_llm.LLM` para uso offline; el FXB incluido en el repositorio se descubre automáticamente.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Idiomas | Licencia | Hardware |
+| Modelo | Parametros | Contexto | Salidas | Licencia | Hardware / despliegue |
 |---|---|---|---|---|---|
-| furiosa-ai/bge-m3 (esta build) | 567M | no disponible | multilingue | MIT | FuriosaAI RNGD |
-| BAAI/bge-m3 (original) | 567M | 8192 | mas de 100 | MIT | GPUs, CPU, etc. |
-| multilingual-e5-large | 560M | 512 | 100+ | MIT | GPUs, CPU |
+| furiosa-ai/bge-m3 | 567,7 M | no disponible | Embedding denso 1.024 d | MIT | FuriosaAI RNGD, Furiosa-LLM |
+| BAAI/bge-m3 (upstream) | 567,7 M | no disponible en esta informacion | Denso, disperso y multi-vector | MIT | GPU/CPU, FlagEmbedding, Sentence Transformers, Transformers |
+| Otros modelos de embeddings de tamano similar | no disponible | no disponible | no disponible | no disponible | no disponible |
 
-La comparativa se limita a aspectos generales porque no se dispone de datos de rendimiento especificos de esta build. La principal diferencia con el modelo original es el formato de pesos (BF16 + FXB) y el hardware objetivo (RNGD), mientras que el resto de caracteristicas son identicas al modelo base.
+La comparación relevante es con el modelo upstream: misma arquitectura y mismos pesos en esencia, pero la build de FuriosaAI limita la salida al embedding denso y ata el despliegue al hardware RNGD, mientras que el original ofrece los tres modos de recuperación y funciona en el ecosistema estándar de Python.
 
 ## Limitaciones y advertencias
 
-- Requiere hardware FuriosaAI RNGD; no es portable a otras arquitecturas sin recompilar el modelo.
-- Esta build solo expone embeddings densos; las funcionalidades sparse y multi-vector del modelo base no estan disponibles a traves de Furiosa-LLM.
-- La longitud de contexto no se confirma en la informacion proporcionada; si se usa el modelo base como referencia, es de 8192 tokens, pero se debe verificar en la documentacion de FuriosaAI.
-- Al ser un modelo de embeddings, no genera texto y no es adecuado para tareas generativas.
-- Puede heredar sesgos del modelo base XLM-RoBERTa, especialmente en idiomas poco representados.
-- La licencia MIT permite uso comercial, pero el despliegue esta condicionado a la disponibilidad de hardware FuriosaAI.
+- Dependencia de hardware propietario: la build está compilada para FuriosaAI RNGD; no se documenta ejecución en GPU o CPU, lo que limita la portabilidad y crea dependencia de un único proveedor.
+- Solo se exponen embeddings densos; las capacidades sparse y multi-vector del BGE-M3 original no están disponibles en esta integración.
+- No es un modelo generativo: no produce texto, no soporta tool calling ni razonamiento; cualquier expectativa de chatbot o agente queda fuera de su alcance.
+- Riesgo de alucinación no aplica en el sentido generativo, pero sí existe riesgo de recuperaciones irrelevantes si los umbrales de similitud o la estrategia de chunking no se calibran.
+- Sesgos: no se documentan evaluaciones de sesgo en la información disponible; al heredar los pesos del upstream, arrastra los sesgos de su corpus de entrenamiento.
+- Idiomas: la lista de idiomas soportados no está disponible en esta ficha; debe validarse empíricamente en los idiomas de producción antes de desplegar.
+- Longitud de contexto: no disponible; conviene verificar el límite efectivo de tokens por entrada antes de indexar documentos largos.
+- Licencia MIT, que permite uso comercial, pero debe revisarse también la licencia y las condiciones del runtime Furiosa-LLM y del hardware.
+- Repositorio con 513 descargas y 0 likes: tracción comunitaria muy baja, por lo que el soporte y la validación de terceros son escasos.
 
 ## Enlaces
 
-- [Repositorio Hugging Face furiosa-ai/bge-m3](https://huggingface.co/furiosa-ai/bge-m3)
-- [Modelo base BAAI/bge-m3](https://huggingface.co/BAAI/bge-m3)
-- [Documentacion Furiosa-LLM](https://developer.furiosa.ai/latest/en/furiosa_llm/intro.html)
-- [Documentacion del servidor Furiosa-LLM](https://developer.furiosa.ai/latest/en/furiosa_llm/furiosa-llm-serve.html)
-- [Pagina de BGE-M3 en BGE documentation](https://bge-model.com/bge/bge_m3.html)
-- [Lista de modelos soportados por Furiosa-LLM](https://developer.furiosa.ai/latest/en/furiosa_llm/supported_models.html)
+- Modelo en Hugging Face: https://huggingface.co/furiosa-ai/bge-m3
+- Modelo upstream: https://huggingface.co/BAAI/bge-m3
+- Documentación de Furiosa-LLM: https://developer.furiosa.ai/latest/en/furiosa_llm/intro.html
+- Servidor Furiosa-LLM (`furiosa-llm serve`) y API de embeddings: https://developer.furiosa.ai/latest/en/furiosa_llm/furiosa-llm-serve.html
+- Guía de instalación de Furiosa-LLM: https://developer.furiosa.ai/latest/en/get_started/furiosa_llm.html#installing-furiosa-llm
+- Sitio de FuriosaAI: https://furiosa.ai
+- Licencia MIT: https://opensource.org/license/mit

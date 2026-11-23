@@ -2,123 +2,102 @@
 
 ## Resumen
 
-Atlantis-Pyramid-v2 es un modelo de lenguaje de 32.000 millones de parámetros publicado por Coralfil Inc. (Victoria, Columbia Británica, Canadá) y especializado en oceanografía, hidrología costera, acuicultura, cumplimiento normativo marino (normativa DFO canadiense) e ingeniería de restauración con biopolímeros. Se distribuye como un merge de pesos de dos modelos base: Qwen/Qwen2.5-32B-Instruct y deepseek-ai/DeepSeek-R1-Distill-Qwen-32B. El resultado es un modelo denso de 32B parámetros (el merge no suma parámetros: combina dos juegos de pesos del mismo tamaño).
+Atlantis-Pyramid v2 es un modelo de lenguaje de 32.500 millones de parámetros desarrollado por Coralfil Inc. (Victoria, Columbia Británica, Canadá) y presentado como un modelo fundacional "soberano" orientado a oceanografía marina, cumplimiento normativo costero e inteligencia ambiental bentónica. Según su model card, parte de una arquitectura transformer autorregresiva densa con atención de ventana deslizante y embeddings posicionales rotatorios, y se distribuye como adaptadores PEFT (librería `peft`, formato safetensors) sobre los modelos Qwen2.5-32B-Instruct y DeepSeek-R1-Distill-Qwen-32B.
 
-La propuesta del autor es sustituir la "confabulación" de los modelos generalistas por derivaciones científicas deterministas y primacía normativa en el dominio marino. Para ello declara un ajuste RS-LoRA (rank 16, alpha 32) sobre currículos de dominio seguido de un merge esférico de parámetros, con recetas de cuantización AWQ W4A16 y FP8 nativo, una ventana de contexto nativa de 32.768 tokens (ampliable a 128k con YaRN) y un consumo de VRAM de 18,4 GB en inferencia, lo que permitiría servirlo en una sola GPU de consumo RTX 3090/4090.
+El modelo se posiciona frente al problema de las alucinaciones de los modelos generalistas al razonar sobre códigos legales marítimos densos (Fisheries Act, Species at Risk Act, Oceans Act de Canadá) y sobre condiciones físicas de contorno bentónicas. Para ello declara integrar priors geométricos equivariantes SE(3), restricciones termodinámicas TEOS-10 y jurisprudencia costera bilingüe inglés-francés. Su relevancia actual reside en la propuesta de un modelo de dominio vertical con licencia Apache 2.0 y un supuesto despliegue en una única GPU de 24 GB en cuantización AWQ/FP8.
 
-El modelo es relevante por su enfoque vertical: en lugar de competir en capacidades generales, apunta a un nicho regulatorio y científico concreto con licencia Apache 2.0. Sin embargo, la ficha debe leerse con cautela: la model card incluye cifras contradictorias entre su propio model-index y sus tablas comparativas, y el repositorio no tiene descargas ni validación externa en el momento de la consulta.
+Conviene señalar desde el inicio que la información disponible es exclusivamente la publicada por el autor: no hay verificación independiente de los benchmarks declarados, el repositorio ocupa solo 0,3 GB (compatible con adaptadores LoRA, no con pesos completos de 32B) y la model card combina afirmaciones técnicas con certificaciones ("CSL-2+") que no se corresponden con ningún marco regulatorio conocido. La ficha refleja estos datos tal cual, marcando explícitamente lo que no está verificado.
 
 ## Especificaciones técnicas
 
 | Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer denso (decoder-only) resultante del merge de dos modelos Qwen2.5 de 32B: Qwen2.5-32B-Instruct y DeepSeek-R1-Distill-Qwen-32B |
-| Parámetros totales | 32B (declarados; "dual 32B base merged") |
-| Parámetros activos | no aplica; no es un modelo MoE |
-| Longitud de contexto | 32.768 tokens nativo; ampliable a 128k mediante YaRN |
-| Tipos de cuantización | AWQ W4A16 (GEMM, group size 128) y FP8 nativo; se citan también kernels CUDA 12.x, TensorRT-LLM y vLLM |
-| Idiomas soportados | en (inglés) únicamente |
-| Licencia | apache-2.0 |
-| Formato de pesos | safetensors (librería transformers); checkpoints AWQ y FP8 según la model card; no se confirma GGUF |
-| Método de ajuste | RS-LoRA, rank 16, alpha 32, targets q, k, v, o, gate, up, down_proj, seguido de merge esférico de parámetros |
-| VRAM de inferencia declarada | 18,4 GB (cuantización AWQ) |
-| Runtime de servicio | vLLM >= 0.6.0, TensorRT-LLM, Ollama |
-| Hardware declarado | NVIDIA CUDA 12.x (RTX 3090/4090, A10, A100) |
-| Dominio principal | Oceanografía física (TEOS-10), bioquímica marina, cumplimiento DFO, acuicultura |
-| Fecha de creación / actualización | 2026-10-09 / 2026-10-12 |
-| Descargas / likes | 0 / 0 |
+| Arquitectura | Transformer autorregresivo denso con atención de ventana deslizante y embeddings posicionales rotatorios (declarado) |
+| Parámetros totales | 32.500 millones (32,5B) |
+| Parámetros activos | No aplica (modelo denso, no MoE) |
+| Longitud de contexto | 8.192 tokens (según el ejemplo de despliegue con `--max-model-len 8192`) |
+| Tipos de cuantización | AWQ, FP8 (declarados); FP16/BF16 en nodos multi-GPU |
+| Idiomas soportados | Inglés (en) y francés (fr) según la model card; el campo `language` del repo solo lista `en` |
+| Licencia | Apache 2.0 |
+| Formato de pesos | safetensors (adaptadores PEFT sobre Qwen2.5-32B-Instruct y DeepSeek-R1-Distill-Qwen-32B) |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura subyacente es la de Qwen2.5-32B-Instruct: un transformer decoder-only denso con atención por consultas agrupadas (GQA) y RoPE, entrenado originalmente por Alibaba. Sobre esa base, Coralfil parte de dos linajes: el instruct generalista (Qwen2.5-32B-Instruct) y un destilado de razonamiento (DeepSeek-R1-Distill-Qwen-32B). El proceso descrito consiste en un ajuste RS-LoRA (rank 16, alpha 32) aplicado a las proyecciones q, k, v, o, gate, up y down sobre currículos de dominio marino, seguido de un merge de parámetros descrito como "esférico" que fusiona ambos linajes en un único juego de pesos de 32B. La model card menciona además un mecanismo propietario de memoria y caché denominado "Deep Dive Hexactine Graph Memory" con grado 6 (una retícula ortogonal de seis ejes inspirada en las esponjas de cristal del Pacífico), cuya implementación no se detalla técnicamente ni se publica como código.
+La model card describe un transformer autorregresivo denso de 32,5B parámetros con atención de ventana deslizante y RoPE. El repositorio, sin embargo, se distribuye como adaptadores PEFT sobre dos modelos base (Qwen2.5-32B-Instruct y DeepSeek-R1-Distill-Qwen-32B), lo que implica que la arquitectura efectiva hereda la de dichos modelos y que el ajuste se aplica como fine-tuning paramétricamente eficiente. No se especifica el rango, el alpha ni las capas objetivo de los adaptadores.
 
-No se especifica en la información disponible el número de tokens de entrenamiento, la composición exacta del dataset ni si hubo fases de RLHF o DPO. Se citan dos conjuntos de datos propios: Coralfil/atlantis-ocean-master y Coralfil/AboveBoard-Marine-52 (este último usado como benchmark). El ajuste se orienta a dos objetivos declarados: derivaciones científicas deterministas en el dominio oceánico y "primacía estatutaria", es decir, priorizar la norma regulatoria sobre la respuesta genérica. La aceleración se apoya en kernels de NVIDIA CUDA 12.x, con soporte explícito para vLLM y TensorRT-LLM.
+El autor declara la integración de tres componentes diferenciales: priors geométricos equivariantes SE(3) para modelado bentónico, restricciones termodinámicas TEOS-10 para la ecuación de densidad del agua de mar, y corpus jurídico costero canadiense bilingüe. No se publica el número de tokens de entrenamiento, la composición del dataset, ni si hubo RLHF, DPO o supervisión humana. Tampoco se detalla metodología de decodificación especulativa, atención lineal ni otras innovaciones de inferencia. Todos estos datos deben considerarse no disponibles.
 
 ## Capacidades
 
-- Generación de texto conversacional en inglés, con modo instructivo y trazas de razonamiento heredadas del destilado de DeepSeek-R1.
-- Razonamiento multi-paso y cadena de pensamiento (CoT), evaluado en BBH 3-shot y MATH-Hard 4-shot.
-- Razonamiento científico de nivel de posgrado en el dominio declarado (GPQA Diamond 0-shot CoT declarado en 51,6, con una cifra contradictoria de 94,6 en otra tabla de la propia model card).
-- Conocimiento especializado en oceanografía física, con mención explícita al estándar TEOS-10 para propiedades termodinámicas del agua de mar.
-- Cumplimiento normativo marino canadiense (DFO): el autor declara 100,0 de precisión en la métrica "Statutory Marine Compliance" del benchmark AboveBoard-Marine-52.
-- Aplicaciones de acuicultura y restauración costera con biopolímeros.
-- Integración vía API compatible con endpoints y despliegue en vLLM, TensorRT-LLM y Ollama.
-- No se documenta soporte explícito de tool calling, function calling ni de agentes multi-paso, aunque el material de Coralfil menciona sistemas multiagente para telemetría marina.
-- No se documentan capacidades de visión, audio ni multimodalidad.
-- Capacidad multilingüe limitada al inglés según el campo `language` del repositorio.
+- Generación de texto conversacional en inglés y francés, con formato de chat tipo ChatML (`<|im_start|>` / `<|im_end|>`).
+- Razonamiento sobre normativa marítima canadiense: citación de secciones concretas de la Fisheries Act (Sec. 35(2), 56) y SARA (Sec. 73).
+- Cálculo y razonamiento sobre invariantes hidrodinámicos bentónicos y ecuación de densidad TEOS-10 (declarado).
+- Evaluación de impedancia acústica según ASTM E1050 y atenuación sonora (declarado).
+- Razonamiento de tipo cadena de pensamiento heredado potencialmente de DeepSeek-R1-Distill-Qwen-32B (no confirmado en la model card).
+- Soporte de tool calling / function calling: no disponible (no se menciona en la información).
+- Soporte de agentes y razonamiento multi-paso: no disponible (no se menciona explícitamente).
+- Capacidades multimodales (visión, audio): no disponibles; el modelo es solo texto.
+- Capacidades multilingües: limitadas a inglés y francés según la model card.
 
 ## Casos de uso
 
-- Cumplimiento normativo pesquero y marino: el modelo puede revisar documentación de proyectos y contrastarla con requisitos estatutarios canadienses, aprovechando el ajuste específico sobre normativa DFO y la métrica declarada del 100,0 en cumplimiento estatutario del benchmark AboveBoard-52.
-- Acuicultura industrial: asistencia en la interpretación de parámetros de calidad de agua, biomasa y sanidad de cultivos, con respuestas ancladas en vocabulario técnico marino en lugar de generalista.
-- Oceanografía física operativa: cálculo y explicación de magnitudes termodinámicas del agua de mar bajo el estándar TEOS-10 (salinidad absoluta, temperatura potencial, densidad), útil como copiloto de investigación.
-- Evaluación ambiental y permisos costeros: gestión de expedientes largos en una ventana de 32.768 tokens, con resumen y extracción de obligaciones regulatorias de documentos extensos.
-- Restauración de ecosistemas costeros: apoyo en la redacción de planes de restauración con biopolímeros y en la justificación técnica de intervenciones.
-- Generación de informes técnicos y científicos: redacción de secciones metodológicas y resúmenes ejecutivos a partir de datos de sensores y notas de campo.
-- Despliegue soberano en infraestructura propia: al caber en 18,4 GB de VRAM y publicarse bajo Apache 2.0, permite mantener datos oceanográficos y regulatorios dentro de la organización sin depender de API en la nube.
-- Integración en pipelines de monitorización: exposición mediante vLLM u Ollama para procesar telemetría de sensores marinos y generar alertas textuales en un sistema multiagente.
+- **Revisión de permisos costeros**: el modelo puede redactar y verificar borradores de solicitudes de permiso citando secciones concretas de la Fisheries Act y SARA, reduciendo el tiempo de revisión legal preliminar en consultoras ambientales canadienses.
+- **Evaluación de impacto bentónico**: dado un conjunto de parámetros oceanográficos (temperatura, salinidad, presión), el modelo puede razonar sobre anomalías de densidad TEOS-10 y señalar inconsistencias físicas en informes de dragado o vertido.
+- **Atenuación acústica en proyectos offshore**: soporte en la preparación de documentación ASTM E1050, interpretando resultados de impedancia y verificando que la atenuación declarada (-14,2 dB en el ejemplo del autor) cumple los umbrales regulatorios.
+- **Asistencia a biólogos marinos**: consultas en lenguaje natural sobre hábitats bentónicos, zonas de amortiguamiento (por ejemplo, arrecifes de esponjas de vidrio en el Estrecho de Georgia) y especies en riesgo, con contexto de hasta 8.192 tokens para informes extensos.
+- **Generación de documentación bilingüe**: redacción y traducción de informes técnicos inglés-francés para administraciones canadienses que exigen ambos idiomas oficiales.
+- **Formación y concienciación normativa**: generación de escenarios de evaluación y preguntas de examen para equipos que deben conocer la normativa marítima, usando el modelo como generador de casos con citas verificables.
+- **Preprocesado de series temporales oceanográficas**: etiquetado y resumen en lenguaje natural de series de datos de boyas y sensores, aprovechando el ajuste declarado en time-series (si bien el modelo es de texto y no procesa series directamente).
 
 ## Benchmarks y rendimiento
 
-Resultados declarados por el autor en el model-index oficial del repositorio (ninguno marcado como verificado):
+Resultados declarados por el autor en la model card (no verificados de forma independiente, `verified: false`):
 
-| Tarea | Benchmark | Métrica | Valor |
-|---|---|---|---|
-| Seguimiento de instrucciones | IFEval | Strict Accuracy | 83,4 |
-| Razonamiento complejo | BBH (Big-Bench Hard) | 3-Shot CoT Accuracy | 85,2 |
-| Ciencia de posgrado | GPQA Diamond | 0-Shot CoT Accuracy | 51,6 |
-| Matemáticas de competición | MATH-Hard | 4-Shot CoT Accuracy | 68,9 |
-| Razonamiento multidisciplinar | MMLU-Pro | 5-Shot Accuracy | 64,7 |
-| Dominio marino y estatutario | AboveBoard 52 Marine Benchmark | Overall Accuracy | 97,1 |
-| Cumplimiento estatutario marino | AboveBoard 52 Marine Benchmark | Statutory Marine Compliance | 100,0 |
+| Categoría | Escenarios | Métrica | Valor | Invariante evaluado |
+|---|---|---|---|---|
+| Statutory & Regulatory | 52 | Accuracy | 98,51% | Citas de Fisheries Act Sec. 35(2)/56 y SARA Sec. 73 |
+| Acoustic Impedance | 48 | Accuracy | 98,51% | ASTM E1050; atenuación -14,2 dB |
+| Benthic Hydrodynamics | 100 | Accuracy | 98,50% | Ecuación TEOS-10 de densidad; cero deriva energética |
+| **Compuesto (AboveBoard-200)** | **200** | **Accuracy** | **98,51%** | Certificación "CSL-2+" |
 
-La model card incluye además una tabla comparativa con terceros que presenta cifras incompatibles con las anteriores y con modelos de referencia no verificables públicamente (por ejemplo, GPQA Diamond 94,6, ARC-AGI 97,5, SWE-Bench 77,8, AIME 92,6, y comparaciones contra "Claude 4.5 Sonnet" y "Gemini Flash 3.8"). Esas cifras no se reproducen aquí como resultados fiables; se señalan en la sección de limitaciones. La tabla de progresión generacional del propio autor declara Open LLM Leaderboard v2 en 67,27, IFEval 83,4, BBH 85,2, MATH-Hard 68,9, GPQA Diamond 51,6, MMLU-Pro 64,7 y Elo estimado en LMSYS Arena de 1248.
+No se han publicado resultados en benchmarks estándar de la industria (MMLU, HumanEval, GSM8K, etc.) en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM en inferencia (AWQ W4A16): 18,4 GB declarados por el autor. Cabe en una RTX 3090 o RTX 4090 de 24 GB con contexto corto.
-- VRAM en FP8: aproximadamente 32-34 GB estimados a partir del tamaño del modelo; requiere A100 40 GB, L40S o H100.
-- VRAM en BF16/FP16 sin cuantizar: aproximadamente 64 GB de pesos, más caché KV; requiere A100 80 GB o dos GPU de 40 GB.
-- Caché KV: estimación propia a partir de la configuración habitual de Qwen2.5-32B (64 capas, 8 cabezas KV, head_dim 128, FP16), en torno a 256 KB por token; unos 2,1 GB a 8k tokens y unos 8,6 GB a 32.768 tokens. Con AWQ a contexto completo, el total superaría los 24 GB de una GPU de consumo.
-- GPU recomendadas por escenario: RTX 3090/4090 para AWQ con contexto reducido; A10 o A100 40 GB para AWQ o FP8 en producción; H100 para FP8 con contexto largo o mayor concurrencia.
-- Cabe en GPU de consumo: sí, en RTX 3090 o RTX 4090 con cuantización AWQ y ventana de contexto moderada.
-- Opciones de despliegue: vLLM >= 0.6.0, TensorRT-LLM, Ollama. La librería base declarada es transformers.
-- Latencia y throughput: no disponibles. No se publican mediciones de tokens por segundo ni de latencia por petición.
+- **VRAM para inferencia**: el autor declara un footprint de 18,24 GB en cuantización AWQ o FP8, lo que permitiría ejecución en una única GPU de 24 GB. En FP16/BF16 se requerirían aproximadamente 65 GB, por lo que harían falta nodos multi-GPU.
+- **GPU recomendadas**: NVIDIA A10 (24 GB) o RTX 4090 para AWQ/FP8 según el autor; A100 40/80 GB o H100 para FP16.
+- **GPU de consumo**: sí, una RTX 4090 (24 GB) sería suficiente en AWQ/FP8 según la model card; una RTX 3090 (24 GB) también encajaría en teoría.
+- **Despliegue**: vLLM (ejemplo oficial con `--gpu-memory-utilization 0.90 --max-model-len 8192`), Hugging Face Transformers con `device_map="auto"`. No se mencionan llama.cpp, Ollama ni TGI.
+- **Latencia y throughput**: no disponibles en la información proporcionada.
+- **Nota**: dado que el repositorio contiene adaptadores PEFT de 0,3 GB, el despliegue real requiere cargar además el modelo base de 32B, lo que condiciona el footprint real de memoria.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Licencia | Idiomas | Rendimiento declarado | Disponibilidad |
-|---|---|---|---|---|---|---|
-| Atlantis-Pyramid-v2 | 32B (denso, merge) | 32.768 nativo, 128k con YaRN | Apache 2.0 | en | IFEval 83,4; MMLU-Pro 64,7; AboveBoard 52 97,1 | Hugging Face, 0 descargas |
-| Qwen/Qwen2.5-32B-Instruct | 32B | 32.768 nativo, 128k con YaRN | Apache 2.0 (Qwen) | multilingüe | Referencia base del merge | Ampliamente desplegado |
-| deepseek-ai/DeepSeek-R1-Distill-Qwen-32B | 32B | 32.768 (Qwen2.5) | MIT (según el repositorio original) | multilingüe | Fuerte en razonamiento y matemáticas | Ampliamente desplegado |
-| Cohere Command R+ | 104B | 128k | CC-BY-NC 4.0 (no comercial) | multilingüe | Usado por el autor como referencia; GPQA 61,2 declarado por Coralfil | API y pesos con restricciones |
+| Modelo | Parámetros | Contexto | Licencia | Enfoque | Disponibilidad |
+|---|---|---|---|---|---|
+| Atlantis-Pyramid v2 | 32,5B (adaptadores) | 8.192 | Apache 2.0 | Dominio marino y normativa canadiense | Hugging Face |
+| Qwen2.5-32B-Instruct | 32,5B | 32.768 (según modelo base) | Apache 2.0 | Propósito general | Hugging Face |
+| DeepSeek-R1-Distill-Qwen-32B | 32,5B | 32.768 (según modelo base) | MIT (según modelo base) | Razonamiento | Hugging Face |
 
-Los dos modelos base del merge son las alternativas naturales y están accesibles sin restricciones para reproducir o comparar. La ventaja diferencial de Atlantis-Pyramid-v2 se limita al nicho marino y regulatorio, donde el autor declara ganancias de hasta 29,8 puntos sobre Qwen2.5-32B-Instruct en su propio benchmark AboveBoard-52; esa cifra procede de un benchmark propietario del mismo autor y no ha sido replicada por terceros.
+Los dos modelos base son las alternativas naturales, ya que Atlantis-Pyramid v2 se distribuye como adaptadores sobre ellos. No se dispone de datos de benchmarks comparables entre los tres modelos en la información proporcionada, más allá de los resultados autoinformados del modelo. Para modelos de dominio marino específico no se han identificado alternativas públicas en la información disponible.
 
 ## Limitaciones y advertencias
 
-- Contradicciones internas en la model card: el model-index declara GPQA Diamond en 51,6 mientras que una tabla comparativa del mismo documento declara 94,6; ARC-AGI en 97,5 y SWE-Bench en 77,8 no aparecen en el model-index ni están verificados.
-- Comparaciones contra modelos no verificables: "Claude 4.5 Sonnet" y "Gemini Flash 3.8" no son identificables como versiones públicas conocidas, lo que resta credibilidad a la tabla comparativa.
-- Benchmarks no verificados: el campo `verified` es falso en todos los resultados del model-index y el benchmark AboveBoard-52 es propiedad del propio autor del modelo, sin validación independiente.
-- Riesgo de alucinación crítico en uso estatutario: un modelo que declara primacía normativa y 100 de cumplimiento puede generar confianza indebida; toda salida regulatoria debe ser revisada por un profesional cualificado.
-- Sesgos: sesgo de dominio (entrenado para el contexto regulatorio canadiense y la costa del Pacífico), con posible infrarrepresentación de otras jurisdicciones y ecosistemas.
-- Limitación de idioma: solo inglés. No hay soporte declarado de castellano ni de otras lenguas, lo que limita su uso en administraciones hispanohablantes.
-- Adopción nula: 0 descargas y 0 likes en el momento de la consulta, sin evidencia de uso en producción ni comunidad que reporte comportamiento real.
-- Opacidad técnica: no se publican tokens de entrenamiento, composición del dataset, proceso de RLHF/DPO ni implementación del mecanismo "Hexactine"; tampoco hay código asociado.
-- Mecanismo propietario no auditable: las afirmaciones sobre memoria gráfica de grado 6 no vienen acompañadas de especificación ni de evaluación reproducible.
-- Licencia: Apache 2.0 permite uso comercial sin restricciones de atribución más allá de las habituales, pero la licencia del modelo no cubre posibles reclamaciones sobre datos de entrenamiento no documentados.
-- Requisitos reales de VRAM: la cifra de 18,4 GB corresponde a AWQ y contexto corto; con contexto de 32k el consumo crece y puede superar los 24 GB de una GPU de consumo.
+- **Benchmarks no verificados**: los resultados de AboveBoard-200 son autoinformados (`verified: false`) y no han sido replicados de forma independiente; el benchmark parece ser de creación propia del autor.
+- **Discrepancia de tamaño**: el repositorio ocupa 0,3 GB, coherente con adaptadores LoRA, no con pesos completos de 32B. No se documenta el procedimiento de fusión ni el rango de los adaptadores.
+- **Certificaciones no reconocidas**: la "certificación CSL-2+" y el "clearance level" no corresponden a ningún marco regulatorio canadiense conocido; deben tratarse como afirmaciones de marketing sin validez legal.
+- **Idiomas**: el campo `language` del repositorio solo lista `en`, aunque la model card añade `fr`. No hay evidencia de capacidades multilingües más allá de esos dos idiomas.
+- **Riesgo de alucinación**: a pesar de la afirmación de "zero hallucinations" en materia legal, no existe garantía independiente; en aplicaciones normativas cualquier salida debe ser revisada por un profesional cualificado.
+- **Contexto limitado**: 8.192 tokens es reducido frente a los 32K de los modelos base, lo que limita el análisis de expedientes legales extensos.
+- **Uso comercial**: la licencia Apache 2.0 permite uso comercial, pero al derivar de Qwen2.5-32B-Instruct y DeepSeek-R1-Distill-Qwen-32B conviene verificar las condiciones de los modelos base (especialmente la cláusula de atribución de DeepSeek).
+- **Sesgos**: no se documenta ninguna evaluación de sesgos ni de robustez fuera del dominio marino.
+- **Mantenimiento**: 0 likes y 558 descargas en el momento de la consulta; autor único sin historial público verificable de publicaciones en el dominio.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/Coralfil/Atlantis-Pyramid-v2
-- Model card (README): https://huggingface.co/Coralfil/Atlantis-Pyramid-v2/blob/main/README.md
-- Repositorio relacionado del autor: https://huggingface.co/Coralfil-Atlantis/Atlantis-Pyramid
-- Dataset de dominio: https://huggingface.co/datasets/Coralfil/atlantis-ocean-master
-- Benchmark marino del autor: https://huggingface.co/datasets/Coralfil/AboveBoard-Marine-52
-- Modelo base 1: https://huggingface.co/Qwen/Qwen2.5-32B-Instruct
-- Modelo base 2: https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-32B
-- Sitio del producto: https://atlantis-llm.io/
-- Artículo de investigación del autor: https://coralfil.com/research/articles/article_3_atlantis_ai_agents
-- Ficha en registro de terceros: https://free2aitools.com/model/coralfil/atlantis-pyramid-v2
+- [Modelo en Hugging Face](https://huggingface.co/Coralfil/Atlantis-Pyramid-v2)
+- [Sitio web del proyecto](https://atlantis-llm.io)
+- [Coralfil Labs](https://labs.coralfil.com)
+- [ORCID del autor principal (Roland Poulin)](https://orcid.org/0009-0009-8065-0620)
+- [Modelo base Qwen2.5-32B-Instruct](https://huggingface.co/Qwen/Qwen2.5-32B-Instruct)
+- [Modelo base DeepSeek-R1-Distill-Qwen-32B](https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-32B)

@@ -2,92 +2,94 @@
 
 ## Resumen
 
-Open-MOPD SmolLM3-3B TRL naive es un checkpoint de demostración publicado por Sergio Paniego que aplica destilación on-policy multi-profesor (MOPD, *multi-teacher on-policy distillation*) sobre el modelo SmolLM3-3B mediante el `AsyncDistillationTrainer` de la librería TRL. El modelo parte de `BytedTsinghua-SIA/Open-MOPD-SmolLM3-3B-MixSFT` como estudiante y utiliza tres profesores especializados (matemáticas, código e instrucciones) liberados junto al paper Open-MOPD. Su propósito explícito no es el uso en producción, sino verificar que la implementación de TRL del algoritmo de destilación asíncrona funciona correctamente.
+Open-MOPD SmolLM3-3B TRL naive es un checkpoint de demostración publicado por Sergio Paniego que reproduce, a pequeña escala, el pipeline de destilación on-policy multi-profesor (MOPD, *multi-teacher on-policy distillation*) implementado en la librería TRL de Hugging Face mediante el `AsyncDistillationTrainer`. El modelo parte del estudiante `BytedTsinghua-SIA/Open-MOPD-SmolLM3-3B-MixSFT` (3.075 millones de parámetros, arquitectura SmolLM3) y se entrena destilando el comportamiento de tres profesores especializados —matemáticas, código e instrucciones— liberados junto al paper Open-MOPD (arXiv 2608.19098).
 
-El entrenamiento se limita a 60 pasos, aproximadamente el 1 % del cómputo del paper original, sobre 4 GPU H200 y con una mezcla de prompts `rl_prompt_mix` muestreada en proporción 40/40/20 entre matemáticas, código e instrucciones. A pesar de la brevedad del run, el checkpoint muestra mejoras medibles frente al modelo de partida en AIME24, AIME25 e IFEval, lo que lo convierte en una referencia útil para quienes quieran reproducir o auditar el pipeline de destilación de TRL.
+La relevancia del artefacto no está en su calidad final, sino en su función como prueba de concepto reproducible: valida que la implementación asíncrona de destilación de TRL funciona sobre hardware modesto (4 GPU H200) y publica métricas intermedias comparables con el modelo final del paper. El propio autor advierte explícitamente de que no es un modelo para usar en producción: se entrenó durante solo 60 pasos, aproximadamente el 1 % del entrenamiento descrito en el paper.
 
-Con 3.075.098.624 parámetros y licencia Apache 2.0, se trata de un modelo pequeño dentro de la familia SmolLM3, orientado a generación de texto conversacional y razonamiento. Su relevancia actual radica en que documenta de forma reproducible una técnica (destilación on-policy con múltiples profesores y KL inversa) que está ganando tracción como alternativa al RLHF clásico para especializar modelos pequeños.
+El checkpoint es útil para desarrolladores e investigadores que quieran entender, replicar o extender técnicas de fusión de expertos RL en un único modelo estudiante, así como para auditar el comportamiento de la destilación por KL inversa con enrutado de prompts por dominio.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (SmolLM3-3B); detalles internos no disponibles en la información proporcionada |
-| Parametros totales | 3.075.098.624 |
-| Parametros activos | no disponible (no es MoE según la información disponible) |
-| Longitud de contexto | no disponible (las completions de entrenamiento usan 16K tokens, no necesariamente el contexto máximo del modelo) |
-| Tipos de cuantizacion | no disponible (pesos publicados en safetensors sin cuantizar) |
+| Arquitectura | Transformer decoder-only (SmolLM3), pesos en safetensors |
+| Parámetros totales | 3.075.098.624 (3,08 B) |
+| Parámetros activos | no disponible (no es MoE según la información disponible) |
+| Longitud de contexto | no disponible en la información proporcionada (entrenamiento con completaciones de 16K tokens) |
+| Tipos de cuantización | no disponible (pesos publicados en safetensors; el repo ocupa 24,6 GB) |
 | Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (librería transformers) |
+| Formato de pesos | safetensors (librería `transformers`) |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un fine-tuning del checkpoint `Open-MOPD-SmolLM3-3B-MixSFT`, que a su vez deriva de SmolLM3-3B, un transformer decoder-only de aproximadamente 3.000 millones de parámetros. La información disponible no detalla la composición interna de la arquitectura (número de capas, dimensión oculta, mecanismo de atención), por lo que esos datos deben consultarse en la model card del modelo base.
+El modelo es un fine-tuning del estudiante SmolLM3-3B (`Open-MOPD-SmolLM3-3B-MixSFT`), un transformer decoder-only de 3,08 mil millones de parámetros. El entrenamiento aplica destilación on-policy multi-profesor: cada prompt se enruta a su profesor de dominio correspondiente (matemáticas, código o instrucción) y el estudiante se ajusta para minimizar la divergencia KL inversa (`beta=1.0`) respecto a las distribuciones del profesor asignado. Los datos provienen del split `rl_prompt_mix` del dataset `BytedTsinghua-SIA/Open-MOPD-Data`, muestreado en proporción 40/40/20 entre matemáticas, código e instrucción.
 
-El entrenamiento aplica destilación on-policy multi-profesor: cada prompt se enruta al profesor de su dominio (matemáticas, código o instrucciones) y el estudiante se optimiza para minimizar la KL inversa (`beta=1.0`) respecto a la distribución del profesor correspondiente. Se usaron 16K tokens de completion, learning rate constante de 1.5e-6 y 60 pasos sobre 4 GPU H200 (servidor del estudiante, profesores y trainer). Los datos provienen del subconjunto `rl_prompt_mix` de `BytedTsinghua-SIA/Open-MOPD-Data`, muestreado 40/40/20 entre matemáticas, código e instrucciones. La innovación técnica destacable es el uso de `AsyncDistillationTrainer` de TRL, que desacopla la generación de los profesores del paso de optimización del estudiante, permitiendo destilar con profesores de mayor tamaño sin bloquear el entrenamiento.
+La innovación técnica principal es el uso del `AsyncDistillationTrainer` de TRL, que desacopla los servidores de inferencia de los profesores del proceso de entrenamiento del estudiante, permitiendo destilar varios profesores simultáneamente sin bloquear el bucle de optimización. La configuración concreta: learning rate constante de 1,5e-6, completaciones de 16K tokens, 60 pasos de entrenamiento sobre 4 GPU H200 (servidor del estudiante, profesores y trainer). No se reporta número total de tokens de entrenamiento ni composición detallada del dataset más allá del muestreo por dominio.
 
 ## Capacidades
 
-- Generación de texto conversacional en formato multi-turno (pipeline `text-generation`, tag `conversational`).
-- Razonamiento matemático, reforzado específicamente mediante el profesor de matemáticas del conjunto Open-MOPD.
-- Generación de código, aunque el autor indica explícitamente que el código no fue evaluado en este checkpoint.
-- Seguimiento de instrucciones (IFEval), con mejora medida frente al modelo de partida.
-- Razonamiento multi-paso orientado a problemas tipo competición (AIME), con capacidad de generar cadenas de razonamiento largas (hasta 16K tokens en entrenamiento).
-- Compatibilidad con endpoints de Hugging Face (`endpoints_compatible`).
+- Generación de texto conversacional en formato chat (pipeline `text-generation`, tag `conversational`).
+- Razonamiento matemático: herencia del profesor de matemáticas vía destilación KL inversa.
+- Generación de código: herencia del profesor de código (aunque el autor no evalúa código en este checkpoint).
+- Seguimiento de instrucciones: herencia del profesor de instrucción, medido con IFEval strict prompt-level accuracy.
 - Soporte de tool calling / function calling: no disponible en la información proporcionada.
-- Capacidades multimodales (visión, audio): no disponibles.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
+- Capacidades multilingües: no disponible en la información proporcionada.
+- Capacidades especiales (thinking mode, visión, audio): no disponible en la información proporcionada.
 
 ## Casos de uso
 
-- Reproducción y validación del pipeline de destilación de TRL: sirve como referencia ejecutable para verificar que `AsyncDistillationTrainer` funciona antes de lanzar runs largos con presupuesto real de cómputo.
-- Investigación sobre destilación multi-profesor: permite estudiar cómo se comporta el enrutado por dominio (math/code/IF) con un coste de entrenamiento mínimo de 60 pasos.
-- Experimentos académicos de ajuste fino eficiente: con 3.000 millones de parámetros y licencia Apache 2.0, es viable iterar sobre él en clústeres pequeños de 4 GPU H200 o equivalentes.
-- Evaluación comparativa de checkpoints intermedios: útil para medir la curva de mejora en AIME e IFEval a lo largo de un run de destilación y contrastarla con el modelo final del paper.
-- Base para prototipos de asistentes de razonamiento matemático: aunque no es un modelo de producción, puede emplearse en entornos de laboratorio para probar prompts y scorers de evaluación tipo AIME.
-- Docencia y formación técnica: ejemplo didáctico de cómo se estructura un experimento de destilación on-policy con profesores especializados y datos mixtos por dominio.
-- No se recomienda su uso en atención al cliente, generación de código en producción ni despliegues reales, tal como advierte el propio autor.
+- Reproducción del pipeline MOPD en TRL: sirve como referencia ejecutable para validar el `AsyncDistillationTrainer` antes de lanzar un entrenamiento completo; el script `async_distillation_mopd.py` del repo de TRL es directamente reutilizable.
+- Investigación en destilación multi-profesor: permite estudiar cómo evolucionan las métricas por dominio (AIME24, AIME25, IFEval) en las primeras decenas de pasos y comparar con el modelo final del paper.
+- Auditoría de enrutado por dominio: útil para verificar que el enrutado 40/40/20 de prompts a profesores produce mejoras equilibradas y detectar dominios que se degradan.
+- Docencia y formación técnica: ejemplo didáctico de destilación on-policy con KL inversa, útil en cursos de post-entrenamiento y RLHF.
+- Desarrollo de infraestructura de entrenamiento asíncrono: referencia para medir el coste y la latencia de servir tres profesores de 3B en paralelo con un estudiante del mismo tamaño.
+- Base para ablaciones: punto de partida para experimentos sobre número de pasos, temperatura, beta o proporciones de mezcla de datos, dado que su estado intermedio está documentado con métricas.
+- No se recomienda su uso en producción, atención al cliente ni generación de código real: el autor lo desaconseja explícitamente por el entrenamiento insuficiente.
 
 ## Benchmarks y rendimiento
 
+Evaluación con los conjuntos y scorers de Open-MOPD (AIME con 4 muestras por problema, IFEval strict prompt-level accuracy). El código no fue evaluado.
+
 | Modelo | AIME24 | AIME25 | IFEval |
 |---|---|---|---|
-| MixSFT (punto de partida) | 17.5 | 19.2 | 67.5 |
-| Este checkpoint (60 pasos) | 24.2 | 22.5 | 73.0 |
-| Open-MOPD final (paper) | 19.2 | 25.0 | 75.8 |
+| MixSFT (punto de partida) | 17,5 | 19,2 | 67,5 |
+| Este checkpoint (60 pasos) | 24,2 | 22,5 | 73,0 |
+| Open-MOPD final (paper) | 19,2 | 25,0 | 75,8 |
 
-Evaluación realizada con los conjuntos y scorers de Open-MOPD: AIME con 4 muestras por problema e IFEval con precisión estricta a nivel de prompt. El código no fue evaluado.
+Destaca que el checkpoint intermedio supera al modelo final del paper en AIME24 (24,2 frente a 19,2), aunque queda por debajo en AIME25 e IFEval. El autor no ofrece una explicación de esta anomalía en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia en FP16/BF16: aproximadamente 6,2 GB solo para pesos (3.075 M × 2 bytes), más overhead de activaciones y KV cache; en la práctica, entre 8 y 12 GB según longitud de contexto.
-- En cuantización de 8 bits: alrededor de 3,1 GB de pesos; en 4 bits, alrededor de 1,6 GB, aunque no se han publicado pesos cuantizados oficiales.
-- GPU recomendadas para entrenamiento completo: 4 × H200, configuración usada por el autor (servidor del estudiante, profesores y trainer).
-- GPU para inferencia: cabe en GPUs de consumo como RTX 4090 (24 GB) o RTX 3090 (24 GB) en BF16, y en GPUs de 8-12 GB con cuantización.
-- Opciones de despliegue: transformers (librería declarada), vLLM, TGI, llama.cpp u Ollama previa conversión a GGUF; endpoints compatibles de Hugging Face.
-- Latencia y throughput: no disponibles en la información proporcionada.
+- VRAM estimada para inferencia: no disponible de forma explícita; con 3,08 B de parámetros, en fp16 requiere aproximadamente 6,2 GB de pesos, más overhead de activaciones y caché KV.
+- GPU recomendadas: el entrenamiento se realizó en 4 GPU H200; para inferencia basta una GPU con al menos 8-16 GB de VRAM según cuantización.
+- Cabe en GPU de consumo: sí, previsiblemente en RTX 3090, RTX 4090, RTX 4080 y superiores en fp16 o cuantizado (no confirmado por el autor).
+- Opciones de despliegue: `transformers` (librería declarada); vLLM, llama.cpp, Ollama o TGI no están confirmados en la información disponible.
+- Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
-|---|---|---|---|---|---|
-| Este checkpoint | 3.075 M | no disponible | Apache 2.0 | Hugging Face | Demo de 60 pasos, no apto para producción |
-| Open-MOPD final (paper) | ~3.000 M | no disponible | no disponible | Hugging Face (BytedTsinghua-SIA) | Modelo completo del paper, mejores resultados en IFEval y AIME25 |
-| Open-MOPD-SmolLM3-3B-MixSFT | ~3.000 M | no disponible | no disponible | Hugging Face (BytedTsinghua-SIA) | Punto de partida del estudiante |
-| SmolLM3-3B (base) | ~3.000 M | no disponible | no disponible | Hugging Face (HuggingFaceTB) | Modelo original sin destilar |
+| Modelo | Parámetros | Contexto | AIME24 | AIME25 | IFEval | Licencia |
+|---|---|---|---|---|---|---|
+| Este checkpoint | 3,08 B | no disponible | 24,2 | 22,5 | 73,0 | Apache 2.0 |
+| Open-MOPD-SmolLM3-3B-MixSFT (base) | 3,08 B | no disponible | 17,5 | 19,2 | 67,5 | no disponible |
+| Open-MOPD final (paper) | 3,08 B | no disponible | 19,2 | 25,0 | 75,8 | no disponible |
+| Profesor RL-Math (Open-MOPD) | 3,08 B | no disponible | no disponible | no disponible | no disponible | no disponible |
 
-La comparación con alternativas de otros linajes (Qwen, Llama) no está disponible en la información proporcionada.
+La comparación más directa es con el estudiante de partida y con el modelo final del paper, ambos de la misma familia y tamaño. No se dispone de datos de benchmarks de los profesores individuales ni de alternativas externas en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- El propio autor advierte que no es un modelo para usar: fue entrenado solo 60 pasos, aproximadamente el 1 % del cómputo del paper Open-MOPD.
-- Riesgo elevado de alucinación y de razonamiento incompleto al no haber completado el proceso de destilación.
-- El código no fue evaluado, por lo que su calidad en generación de código es desconocida.
-- Idiomas soportados no documentados; no hay garantía de comportamiento multilingüe más allá de lo heredado del modelo base.
-- No se han publicado datos sobre sesgos, filtraciones de datos ni evaluación de seguridad.
-- Aunque la licencia es Apache 2.0 y permite uso comercial, el estado de entrenamiento hace desaconsejable cualquier despliegue en producción.
-- Los pesos se distribuyen en safetensors sin cuantizaciones oficiales; cualquier GGUF o cuantización sería de terceros.
-- El repositorio ocupa 24,6 GB, lo que sugiere que puede contener checkpoints adicionales además de los pesos finales.
+- Entrenamiento deliberadamente insuficiente: 60 pasos, aproximadamente el 1 % del entrenamiento del paper; el autor indica explícitamente que no es un modelo para usar.
+- Calidad no representativa: las métricas intermedias pueden fluctuar y no reflejan el comportamiento convergido de la receta MOPD.
+- Código no evaluado: no hay evidencia de rendimiento en generación de código pese a que el profesor de código participó en la destilación.
+- Riesgo de alucinación: no cuantificado en la información disponible; previsiblemente alto en un modelo de 3B con entrenamiento mínimo.
+- Sesgos conocidos: no documentados en la información proporcionada.
+- Idiomas soportados: no declarados; no se garantiza cobertura multilingüe.
+- Licencia Apache 2.0 permite uso comercial del artefacto, pero su calidad lo desaconseja; verificar además las licencias de los modelos base y profesores de la familia Open-MOPD.
+- Contexto: aunque el entrenamiento usa completaciones de 16K tokens, la longitud de contexto efectiva del modelo no se declara.
+- Repo de 24,6 GB: incluye presumiblemente múltiples artefactos; conviene revisar qué ficheros se descargan.
 
 ## Enlaces
 
@@ -95,8 +97,10 @@ La comparación con alternativas de otros linajes (Qwen, Llama) no está disponi
 - Modelo base (estudiante): https://huggingface.co/BytedTsinghua-SIA/Open-MOPD-SmolLM3-3B-MixSFT
 - Profesor de matemáticas: https://huggingface.co/BytedTsinghua-SIA/Open-MOPD-SmolLM3-3B-RL-Math
 - Profesor de código: https://huggingface.co/BytedTsinghua-SIA/Open-MOPD-SmolLM3-3B-RL-Code
-- Profesor de instrucciones: https://huggingface.co/BytedTsinghua-SIA/Open-MOPD-SmolLM3-3B-RL-IF
-- Dataset Open-MOPD-Data: https://huggingface.co/datasets/BytedTsinghua-SIA/Open-MOPD-Data
+- Profesor de instrucción: https://huggingface.co/BytedTsinghua-SIA/Open-MOPD-SmolLM3-3B-RL-IF
+- Dataset: https://huggingface.co/datasets/BytedTsinghua-SIA/Open-MOPD-Data
 - Paper Open-MOPD: https://huggingface.co/papers/2608.19098
+- Blog del autor: https://huggingface.co/blog/sergiopaniego/mopd-trl
+- Colección del experimento: https://huggingface.co/collections/sergiopaniego/mopd-with-trl-experiment
 - Dashboard de métricas (Trackio): https://huggingface.co/spaces/sergiopaniego/open-mopd-trl
-- Script de entrenamiento en TRL: https://github.com/huggingface/trl/blob/main/examples/async_distillation_math/async_distillation_mopd.py
+- Script de entrenamiento en TRL: https://github.com/huggingface/trl/blob/main/examples/async_distillation_mopd/async_distillation_mopd.py

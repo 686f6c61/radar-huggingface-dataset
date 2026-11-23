@@ -2,117 +2,118 @@
 
 ## Resumen
 
-KnowLine-2B-Gen1 es un modelo de decisión de 2.213.241.664 parámetros desarrollado por PelaAI, un equipo con sede en Japón, mediante un ajuste fino supervisado (LoRA SFT) sobre el modelo base Qwen/Qwen3.5-2B. A diferencia de un modelo generativo convencional, su función es mapear un estado estructurado y una o varias preguntas tipadas a probabilidades sobre las opciones suministradas, cubriendo preguntas de elección entre opciones nombradas, preguntas de sí/no y preguntas de puntuación ordenada. El modelo lee directamente la probabilidad de cada etiqueta de opción y no genera texto libre cuando responde.
+KnowLine-2B-Gen1 es un modelo de decisión de 2.213 millones de parámetros desarrollado por PelaAI, afinado por LoRA sobre Qwen/Qwen3.5-2B. No es un modelo generativo al uso: transforma un estado estructurado y un conjunto de preguntas tipadas (elección entre opciones, sí/no y puntuación ordenada) en distribuciones de probabilidad sobre las opciones suministradas. En lugar de generar texto libre, lee directamente la probabilidad del token de cada etiqueta de opción, lo que lo convierte en un componente de decisión determinista y calibrado dentro de pipelines más amplios.
 
-La relevancia del modelo radica en su enfoque: sustituye la generación de texto por una lectura calibrada de logits sobre etiquetas, lo que permite obtener distribuciones de probabilidad interpretables en lugar de respuestas en lenguaje natural. Incorpora una temperatura de lectura T = 1.32 plegada en los pesos (concretamente en `model.language_model.norm.weight`), de modo que el front end lee a temperatura 1, y una división de logits por 0.7576 en las preguntas de puntuación para que se lean a temperatura efectiva 1.0. El modelo se publica junto a otras variantes de la familia: KnowLine-0.8B-Gen1, KnowLine-9B-Gen1 y KnowLine-4B-Gen5.5.
+La arquitectura subyacente es la de Qwen3.5-2B (transformer denso con torre de visión heredada), sobre la que se aplicó un único epoch de SFT con LoRA (rango 32, alpha 64) limitado a las capas lineales del modelo de lenguaje, fusionado después en pesos bf16. Una innovación destacable es la temperatura de lectura T = 1.32, ajustada sobre datos de validación y plegada directamente en `model.language_model.norm.weight`, de modo que el front end lee a temperatura 1 sin recalibración externa.
 
-El modelo tiene una longitud de contexto no especificada en la información disponible, si bien el entrenamiento se realizó con filas de como máximo 12.288 tokens. Soporta inglés y chino (simplificado y tradicional según las evaluaciones internas), se distribuye bajo licencia Apache-2.0 y está pensado para integrarse en pipelines de decisión estructurada más que en aplicaciones de chat generativo.
+El modelo es relevante ahora porque cubre un nicho poco atendido: la clasificación y decisión estructurada con probabilidades calibradas (ECE 0.016-0.025) en un tamaño que cabe en una sola GPU de consumo. Publica resultados propios en el suite público Decision Index 0.3 (52.23), C-Eval (67.0) y JevBench (77.5), y se distribuye con licencia Apache-2.0, lo que facilita su integración comercial.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer multimodal (image-text-to-text) basada en Qwen3.5-2B, con torre de visión del modelo base; ajuste LoRA SFT fusionado en bf16 |
-| Parametros totales | 2.213.241.664 |
-| Parametros activos | No aplica (no es MoE) |
-| Longitud de contexto | No disponible (entrenamiento con filas de hasta 12.288 tokens) |
-| Tipos de cuantizacion | No disponible (los resultados publicados se obtuvieron en bf16) |
-| Idiomas soportados | Inglés (en), chino (zh); evaluaciones internas en inglés, chino simplificado y chino tradicional |
+| Arquitectura | Transformer denso (Qwen3.5-2B) con torre de visión heredada; cabecera de decisión sobre logits de etiquetas |
+| Parametros totales | 2.213.241.664 (2,2 B) |
+| Parametros activos | no aplica (modelo denso) |
+| Longitud de contexto | no disponible (la model card menciona lecturas de hasta 3.000 tokens en una sola pasada, sin especificar ventana máxima) |
+| Tipos de cuantizacion | no disponible (pesos publicados en bf16; no se documentan GGUF ni otras cuantizaciones) |
+| Idiomas soportados | en, zh |
 | Licencia | Apache-2.0 |
-| Formato de pesos | Safetensors |
+| Formato de pesos | safetensors (transformers); repo de 4,6 GB |
 
 ## Arquitectura y entrenamiento
 
-KnowLine-2B-Gen1 parte de Qwen/Qwen3.5-2B, un transformer multimodal con torre de visión, y se obtiene mediante una época de LoRA SFT con rango 32 y alpha 64, aplicada únicamente a las capas lineales del modelo de lenguaje y fusionada posteriormente en pesos bf16. El checkpoint publicado corresponde al final del entrenamiento. No se realizó entrenamiento de imagen: la torre de visión es la del modelo base, por lo que las capacidades visuales no han sido adaptadas a la tarea de decisión.
+El modelo parte de Qwen/Qwen3.5-2B, un transformer denso con torre de visión. El afinado consistió en un epoch de LoRA SFT con rango 32 y alpha 64, aplicado únicamente a las capas lineales del modelo de lenguaje, con filas de hasta 12.288 tokens. Los adaptadores se fusionaron en pesos bf16 y el checkpoint publicado corresponde al final del entrenamiento. Los ejemplos de entrenamiento incluyen tareas de decisión redactadas y etiquetadas por profesores LLM; el dataset no se distribuye en el repositorio.
 
-Los datos de entrenamiento son el mismo conjunto de decisión empleado en KnowLine-9B-Gen1: 1.143.656 filas renderizadas con la plantilla de chat de Qwen3.5 y un máximo de 12.288 tokens por fila. El conjunto de datos no se incluye en el repositorio. La innovación técnica principal es el mecanismo de lectura calibrada: una temperatura T = 1.32 ajustada sobre los conjuntos dorados del equipo y plegada en la normalización del modelo de lenguaje (documentada en `CALIBRATION.json`), junto con un factor de 0.7576 (= 1/1.32) aplicado a los logits de las preguntas de puntuación a través de `temperatures.json`. El front end renderiza los prompts con `enable_thinking=False`, ya que la plantilla de chat de Qwen3.5-2B activa el modo thinking por defecto. Para peticiones cortas de solo texto (hasta 3.000 tokens) el modelo se lee dos veces.
+La innovación principal es el mecanismo de lectura: el modelo no genera texto, sino que puntúa las etiquetas de opción y devuelve probabilidades. La temperatura de lectura T = 1.32 se ajustó sobre datos de validación y se plegó en `model.language_model.norm.weight` (documentado en `CALIBRATION.json`), mientras que `temperatures.json` divide los logits de preguntas de puntuación por 0.7576 (= 1/1.32). El front end (`knowline_server.py`, `knowline_engine.py`, `knowline_layout.py`) renderiza los prompts con `enable_thinking=False`; es importante forzarlo manualmente si se construyen prompts propios, porque la plantilla de chat de Qwen3.5-2B activa el modo thinking por defecto. No hubo entrenamiento con imágenes: la torre de visión es la del modelo base.
 
 ## Capacidades
 
-- Preguntas de elección entre opciones nombradas, devolviendo una distribución de probabilidad sobre cada opción.
-- Preguntas de sí/no con probabilidad calibrada.
-- Preguntas de puntuación ordenada sobre las opciones suministradas.
-- Lectura calibrada de probabilidades mediante temperatura plegada en los pesos (T = 1.32) y factor de escala en preguntas de puntuación.
-- Procesamiento de entradas multimodales image-text-to-text heredado de la arquitectura base, aunque sin entrenamiento específico en imagen.
-- Soporte de inglés y chino (simplificado y tradicional en las evaluaciones internas).
-- Doble lectura para peticiones cortas de solo texto (hasta 3.000 tokens).
-- No genera texto libre cuando responde: la salida es una distribución sobre las opciones proporcionadas.
-- No se documenta soporte de tool calling, function calling ni razonamiento multi-paso en la información disponible.
+- Preguntas de elección con opciones nombradas y criterios descriptivos por opción.
+- Preguntas de sí/no (tipo `noul` en el ejemplo de la model card).
+- Preguntas de puntuación ordenada, leídas a temperatura efectiva 1.0.
+- Salida de probabilidades calibradas por opción (ECE 0.016-0.025 en el suite público).
+- Lectura doble para peticiones cortas de solo texto (hasta 3.000 tokens leídos una vez).
+- Soporte de entrada image-text-to-text por herencia del modelo base, aunque sin entrenamiento específico en imágenes.
+- Idiomas: inglés y chino.
+- No genera texto libre cuando responde; devuelve distribuciones sobre las opciones.
+- Servicio HTTP compatible con endpoints (`/v1/systemone`) mediante el front end incluido.
 
 ## Casos de uso
 
-- Enrutamiento de tickets de soporte: el modelo recibe el estado del caso (por ejemplo, el texto de la incidencia) y una pregunta de elección con criterios nombrados (`billing`, `support`, etc.), devolviendo la probabilidad de cada equipo; encaja en pipelines de triaje donde se necesita una distribución calibrada y no una respuesta en texto libre.
-- Decisiones de reembolso o compensación: con una pregunta de tipo sí/no sobre el estado de un pedido, el modelo devuelve la probabilidad de que proceda el reembolso, lo que permite fijar umbrales de automatización y derivar los casos dudosos a revisión humana.
-- Puntuación de riesgo en flujos de aprobación: mediante preguntas de puntuación ordenada, el modelo asigna probabilidades a niveles de riesgo o prioridad sobre un estado estructurado, adecuado para colas de revisión con umbrales configurables.
-- Clasificación estructurada por lotes: al leer directamente las probabilidades de las etiquetas, puede procesar grandes volúmenes de peticiones cortas de solo texto con doble lectura y baja latencia (mediana de 30,0 ms en una H20), lo que lo hace apto para clasificación masiva de registros.
-- Moderación o etiquetado con opciones tipadas: preguntas de elección con categorías predefinidas permiten obtener una distribución sobre categorías de contenido, útil cuando se requiere una medida de confianza por clase en lugar de una etiqueta única.
-- Evaluación de políticas y reglas de negocio: el modelo puede emplearse para comparar la probabilidad asignada a distintas opciones bajo una misma política, sirviendo como componente de decisión en sistemas de scoring internos donde la calibración (ECE de 0,016-0,025 en la suite pública) es un requisito.
-- Integración como servicio HTTP: el front end incluido (`serve_knowline.sh`, `knowline_server.py`, `knowline_engine.py`, `knowline_layout.py`) expone el endpoint `/v1/systemone`, lo que facilita su despliegue tras una API compatible con peticiones JSON.
+- Enrutado de tickets de soporte: dado el texto de una incidencia y un conjunto de colas (facturación, soporte técnico, etc.), el modelo devuelve la probabilidad de cada cola y permite aplicar umbrales de confianza o escalado a humano cuando la distribución es ambigua.
+- Moderación y clasificación de contenido: preguntas sí/no sobre políticas concretas con probabilidad calibrada, útil para auditar decisiones y fijar umbrales reproducibles.
+- Decisión de reembolsos y disputas: el ejemplo de la model card (paquete dañado → ¿reembolso?) se generaliza a flujos de atención al cliente donde se requiere una respuesta binaria con confianza medible.
+- Puntuación ordenada de candidatos: ranking de respuestas, productos o propuestas mediante preguntas de score ordenado, con la temperatura ya corregida en los pesos.
+- Componente de decisión en agentes: sustituir llamadas generativas por una consulta de bajo coste (30 ms de mediana en H20) cuando el agente solo necesita elegir entre acciones predefinidas.
+- Extracción de etiquetas en pipelines de datos: clasificación por lotes de documentos cortos con salida probabilística apta para agregación estadística.
+- Evaluación de políticas y A/B testing: comparar distribuciones de decisión entre versiones del modelo o entre configuraciones de criterios sin depender de generación libre.
 
 ## Benchmarks y rendimiento
 
-| Medicion | Resultado |
-|---|---:|
-| Public Decision Index 0.3 | 52,23 |
-| Public raw index | 64,24 |
-| Peticiones / peticiones puntuables | 140.620 / 140.178 |
-| Respuestas puntuables / errores / no soportadas | 140.178 / 0 / 0 |
-| Latencia una petición a la vez: mediana / media / percentil 95 | 30,0 / 60,6 / 214,9 ms |
-| Consistencia (300 peticiones, 477 respuestas) | 476 idénticas; 1 casi empate (dos opciones a menos de 0,06) |
-| S1MB (English v1, ejecución local): Task Avg sobre 137 benchmarks | 44,85 (26.269 decisiones, ninguna fallida ni abstenida) |
-| Conjuntos internos retenidos: inglés / chino simplificado / chino tradicional | 64,9 / 66,6 / 58,5 |
-| C-Eval | 67,0 |
-| Open-Jev 1.1 test / OOD | 80,1 / 77,4 |
-| JevBench / JevBench-hard | 77,5 / 55,9 |
-| Tareas de decisión de dominios nuevos (45 tareas propias) | 32,1 |
-| Instrucciones plantadas con plantillas vistas en entrenamiento | 2,6 % de respuestas desviadas a la opción plantada |
-| Instrucciones plantadas con plantillas no vistas en entrenamiento | 6,3 % (38 de 600), por encima del objetivo del 5 % |
-| ECE (método del board sobre la suite pública) | 0,016-0,025 |
+Resultados publicados por el autor (autoejecución con el kit oficial, salvo donde se indique):
 
-La ejecución completa de la suite pública se realizó con el kit oficial (commit `62d2f51`) sobre cuatro servidores H20 idénticos arrancados con `serve_knowline.sh` y 32 fragmentos de cliente; ninguna petición requirió reintento y ninguna entrada fue truncada.
+| Benchmark | KnowLine-2B-Gen1 | KnowLine-0.8B-Gen1 |
+|---|---:|---:|
+| Decision Index 0.3 público | 52.23 | no disponible |
+| Decision Index 0.3 raw index | 64.24 | no disponible |
+| C-Eval (4 categorías, macro) | 67.0 | 56.3 |
+| JevBench | 77.5 | 71.9 |
+| JevBench-hard | 55.9 | 49.5 |
+| S1MB English v1 (Task Avg) | 44.85 | no disponible |
+
+Detalle del run de Decision Index 0.3 (2026-10-29, bf16, lectura doble, cuatro servidores H20, 32 shards de cliente): 140.620 peticiones enviadas, 140.178 puntuables, 0 errores y 0 no soportadas. Latencia con una petición a la vez: mediana 30,0 ms, media 60,6 ms, percentil 95 214,9 ms. En S1MB English v1: 137 benchmarks, 18.701 casos, 26.269 decisiones, ninguna fallida ni abstenida; desglose por tipo: elección 57,4, sí/no 48,4, puntuación 28,7.
+
+Comparativa del tablero Decision Index (snapshot multimodalart/jev-decision-index @ c130faf6, datos de 2026-10-29):
+
+| Modelo | Tamano | DI 0.3 publico | DI 0.4.1 full | Fuente |
+|---|---:|---:|---:|---|
+| KnowLine-2B-Gen1 | 2B | 52.23 | no puntuado aun | autoejecucion, kit oficial |
+| StartLux-Decision v1.1 2B | 2,3B | 59.23 | 40.11 | tablero |
+| baselabs joey-1 (2B) | 2,7B | 63.30 | 35.91 | tablero |
+| Jev-Style 2B v4 | 2,2B | 44.37 | 34.53 | tablero |
+| Sieve 2B v3 | 2,3B | 53.51 | 34.45 | tablero |
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible de forma explícita; con 2.213.241.664 parámetros en bf16 el peso ocupa aproximadamente 4,4 GB, a lo que hay que sumar la torre de visión y el estado de activaciones.
-- GPU recomendadas: los resultados publicados se obtuvieron en NVIDIA H20; no se documentan otras GPU en la información disponible.
-- GPU de consumo: no se documenta compatibilidad con GPU de consumo en la información disponible.
-- Opciones de despliegue: el autor incluye un front end basado en SGLang 0.5.21 junto con `transformers` y PyTorch con CUDA; el script `serve_knowline.sh` arranca el servicio y expone `/v1/systemone`. No se documentan despliegues con vLLM, llama.cpp, Ollama ni TGI.
-- Latencia: una petición a la vez en una H20, mediana de 30,0 ms, media de 60,6 ms y percentil 95 de 214,9 ms.
-- Throughput: no disponible en la información proporcionada.
+- VRAM estimada: los pesos bf16 ocupan aproximadamente 4,4 GB (2,21 B de parámetros × 2 bytes), más overhead de activaciones y del front end; una GPU con 8-12 GB debería ser suficiente en bf16, aunque el autor no publica cifras de VRAM.
+- GPU recomendadas por el autor: H20 para las mediciones publicadas (30 ms de mediana con una petición a la vez).
+- GPU de consumo: no se documenta soporte de cuantización (GGUF, AWQ, GPTQ), por lo que el despliegue en GPUs de consumo queda condicionado a ejecutar bf16 o fp16; no hay datos publicados de funcionamiento en RTX 4090 u otras.
+- Despliegue: el autor proporciona un front end propio (`serve_knowline.sh`, `knowline_server.py`, `knowline_engine.py`, `knowline_layout.py`) sobre SGLang 0.5.21 con PyTorch CUDA y `transformers`; expone `/v1/systemone`. No se documentan opciones con vLLM, llama.cpp, Ollama ni TGI.
+- Latencia y throughput: mediana 30,0 ms, media 60,6 ms y p95 214,9 ms por petición individual en H20; el run completo usó cuatro servidores H20 idénticos y 32 shards de cliente, sin cifras de throughput agregado publicadas.
 
 ## Comparativa con modelos similares
 
-Datos del snapshot del board Decision Index (multimodalart/jev-decision-index @ c130faf6, generado el 2026-10-29 14:04 UTC). La puntuación completa DI 0.4.1 proviene de la ejecución privada de los mantenedores del board.
+| Modelo | Parametros | Contexto | DI 0.3 publico | DI 0.4.1 full | Licencia | Disponibilidad |
+|---|---:|---|---:|---:|---|---|
+| KnowLine-2B-Gen1 | 2,2B | no disponible | 52.23 | no puntuado | Apache-2.0 | Hugging Face |
+| StartLux-Decision v1.1 2B | 2,3B | no disponible | 59.23 | 40.11 | no disponible | tablero Decision Index |
+| baselabs joey-1 (2B) | 2,7B | no disponible | 63.30 | 35.91 | no disponible | tablero Decision Index |
+| Jev-Style 2B v4 | 2,2B | no disponible | 44.37 | 34.53 | no disponible | tablero Decision Index |
+| Sieve 2B v3 | 2,3B | no disponible | 53.51 | 34.45 | no disponible | tablero Decision Index |
 
-| Modelo | Tamano | DI 0.3 public | DI 0.4.1 full | Fuente |
-|---|---:|---:|---:|---|
-| **KnowLine-2B-Gen1** | 2B | **52,23** | sin puntuar | ejecución propia, kit oficial |
-| StartLux-Decision v1.1 2B | 2,3B | 59,23 | 40,11 | board |
-| baselabs joey-1 (2B) | 2,7B | 63,30 | 35,91 | board |
-| Jev-Style 2B v4 | 2,2B | 44,37 | 34,53 | board |
-| Sieve 2B v3 | 2,3B | 53,51 | 34,45 | board |
+Las cifras de los competidores provienen del tablero público y no han sido verificadas de forma independiente; las de KnowLine son autoejecución con el kit oficial, y su puntuación completa en DI 0.4.1 aún no está disponible.
 
 ## Limitaciones y advertencias
 
-- El modelo no genera texto libre: solo devuelve probabilidades sobre las opciones suministradas, por lo que no es adecuado para tareas generativas.
-- Riesgo de manipulación por instrucciones plantadas: el 2,6 % de las respuestas se desviaron a una opción plantada con plantillas vistas en entrenamiento y el 6,3 % (38 de 600) con plantillas no vistas, por encima del objetivo del 5 % fijado por el propio equipo.
-- La puntuación completa DI 0.4.1 no está disponible para este modelo; la cifra DI 0.3 public (52,23) es una ejecución propia y no la del board.
-- El rendimiento en tareas de decisión de dominios nuevos es bajo (32,1 sobre 45 tareas propias), lo que sugiere una generalización limitada fuera de las distribuciones de entrenamiento.
-- El modelo no ha recibido entrenamiento de imagen: la torre de visión es la del modelo base y no está adaptada a la tarea de decisión.
-- La longitud de contexto no está especificada; el entrenamiento usó filas de hasta 12.288 tokens, y la doble lectura solo se aplica a peticiones de hasta 3.000 tokens.
-- Idiomas limitados a inglés y chino; no se documenta soporte de castellano ni de otras lenguas.
-- La plantilla de chat de Qwen3.5-2B activa el modo thinking por defecto; es necesario pasar `enable_thinking=False` si se construyen los prompts manualmente.
-- El conjunto de datos de entrenamiento no se incluye en el repositorio, lo que limita la reproducibilidad del ajuste.
-- Los sesgos conocidos no se documentan en la información disponible.
-- Licencia Apache-2.0: permite uso comercial, pero conviene revisar las condiciones del modelo base Qwen3.5-2B de forma independiente.
+- No genera texto libre: solo responde a preguntas tipadas con opciones suministradas. No sirve para diálogo abierto ni para generación de contenido.
+- Idiomas limitados a inglés y chino; el rendimiento en castellano no está evaluado y no se recomienda sin validación previa.
+- La torre de visión es la del modelo base y no recibió entrenamiento específico con imágenes; el pipeline declarado es image-text-to-text, pero no hay resultados multimodales publicados.
+- La temperatura de calibración está plegada en los pesos y el front end aplica un factor adicional (0.7576) a las preguntas de puntuación; construir prompts propios sin replicar el front end invalida la calibración.
+- Es imprescindible pasar `enable_thinking=False`: la plantilla de chat de Qwen3.5-2B activa thinking por defecto y alteraría el formato de lectura.
+- El dataset de entrenamiento no se publica, por lo que no es posible auditar la composición ni los sesgos de los profesores LLM que etiquetaron los datos.
+- Riesgo de alucinación estructuralmente bajo en la respuesta (devuelve probabilidades sobre opciones dadas), pero las probabilidades no garantizan corrección semántica si las opciones o los criterios están mal definidos.
+- La puntuación completa en Decision Index 0.4.1 no está disponible; la comparativa con rivales se basa en el suite público 0.3.
+- No se documentan cuantizaciones, por lo que el despliegue en hardware limitado no está soportado oficialmente.
+- Licencia Apache-2.0: permite uso comercial, pero conviene revisar las condiciones del modelo base Qwen3.5-2B por si imponen restricciones adicionales.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/PelaAI/KnowLine-2B-Gen1
-- Notas de inferencia: [INFERENCE.md](INFERENCE.md) (incluido en el repositorio)
-- README en chino: [README.zh.md](README.zh.md) (incluido en el repositorio)
+- Notas de inferencia: https://huggingface.co/PelaAI/KnowLine-2B-Gen1/blob/main/INFERENCE.md
+- README en chino: https://huggingface.co/PelaAI/KnowLine-2B-Gen1/blob/main/README.zh.md
+- Modelo hermano 0.8B: https://huggingface.co/PelaAI/KnowLine-0.8B-Gen1
+- Modelo hermano 9B: https://huggingface.co/PelaAI/KnowLine-9B-Gen1
+- Modelo hermano 4B Gen5.5: https://huggingface.co/PelaAI/KnowLine-4B-Gen5.5
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B
-- KnowLine-0.8B-Gen1: https://huggingface.co/PelaAI/KnowLine-0.8B-Gen1
-- KnowLine-9B-Gen1: https://huggingface.co/PelaAI/KnowLine-9B-Gen1
-- KnowLine-4B-Gen5.5: https://huggingface.co/PelaAI/KnowLine-4B-Gen5.5
-- Board Decision Index: https://huggingface.co/multimodalart/jev-decision-index (snapshot c130faf6)
+- Tablero Decision Index (snapshot): https://huggingface.co/multimodalart/jev-decision-index

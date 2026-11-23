@@ -2,88 +2,97 @@
 
 ## Resumen
 
-MiniCPM-OCR-1.0 es un modelo de OCR multimodal desarrollado por OpenBMB, especializado en el reconocimiento de texto en imágenes (líneas, párrafos, tablas y documentos completos). Esta ficha corresponde a la conversión a formato GGUF publicada por el usuario cstr, pensada para el runtime nativo ggml de CrispEmbed. El modelo original combina un codificador de visión SigLIP con un decodificador de lenguaje de tipo Qwen3.5, con un total de aproximadamente 1.300 millones de parámetros.
+MiniCPM-OCR-1.0 es un modelo multimodal de tipo image-text-to-text especializado en reconocimiento óptico de caracteres (OCR), desarrollado originalmente por OpenBMB. Esta ficha describe la conversión a formato GGUF publicada por el usuario `cstr` bajo el paraguas del proyecto CrispEmbed, que adapta los pesos originales en BF16 safetensors a un runtime nativo basado en ggml. El modelo combina un codificador visual SigLIP con un decodificador derivado de Qwen3.5, según las etiquetas del repositorio, y está pensado para tareas de extracción de texto en imágenes, tablas y documentos.
 
-Su relevancia radica en ofrecer un OCR ligero y de peso abierto (Apache 2.0) que puede ejecutarse localmente sin depender de APIs de pago, con conversiones F16 que reproducen exactamente los tokens generados por el modelo original en Transformers. Es útil para desarrolladores que necesitan extraer texto de documentos escaneados, capturas o tablas en entornos con recursos limitados. Cabe destacar que estos ficheros GGUF no son los de llama.cpp y no son cargables por ese runtime.
+El interés de esta publicación no reside en un modelo nuevo, sino en la disponibilidad de pesos cuantizados en GGUF que pueden ejecutarse en CPU mediante CrispEmbed, una alternativa a llama.cpp que implementa su propio runtime. Los archivos publicados incluyen tres precisiones: F16, Q8_0 y una variante Q4_K_MIX marcada como experimental. La conversión preserva la licencia Apache 2.0 del modelo original y documenta de forma exhaustiva el proceso de conversión, los hashes SHA256 y las pruebas de paridad frente al modelo original.
 
-## Especificaciones tecnicas
+La relevancia actual de esta ficha es doble: por un lado, permite evaluar un modelo OCR compacto de aproximadamente 1.300 millones de parámetros con licencia permisiva; por otro, ilustra las prácticas de reproducibilidad y verificación de paridad que un proyecto de cuantización debería documentar antes de publicar artefactos derivados.
 
-| Parametro | Valor |
+## Especificaciones técnicas
+
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Multimodal image-text-to-text (codificador de visión SigLIP + decodificador Qwen3.5) |
-| Parametros totales | 1.300.434.160 (~1,3 B) |
-| Parametros activos | no disponible (no consta arquitectura MoE) |
+| Arquitectura | Multimodal image-text-to-text; codificador visual SigLIP y decodificador derivado de Qwen3.5 (según etiquetas del repositorio) |
+| Parámetros totales | 1.300.434.160 |
+| Parámetros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | F16 (publicada); F32 usada internamente como base de conversión; no hay variantes cuantizadas verificadas |
-| Idiomas soportados | no disponible (las tareas de referencia incluyen al menos inglés) |
+| Tipos de cuantización | F16, Q8_0, Q4_K_MIX (experimental) |
+| Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (conversión desde safetensors BF16) |
+| Formato de pesos | GGUF (runtime nativo de CrispEmbed; no compatible con llama.cpp) |
 
 ## Arquitectura y entrenamiento
 
-El modelo sigue una arquitectura multimodal típica de OCR: un codificador de visión basado en SigLIP procesa la imagen de entrada y un decodificador de lenguaje de la familia Qwen3.5 genera la transcripción de texto de forma autorregresiva. La conversión GGUF reutiliza la "gate" del decodificador Qwen3.5 en CrispEmbed, lo que confirma esa procedencia del decodificador.
+La información disponible no detalla la arquitectura interna más allá de las etiquetas del repositorio, que apuntan a una combinación de codificador visual SigLIP y decodificador basado en Qwen3.5. El modelo original fue publicado por OpenBMB en la revisión `6796197bb3a8e224b2f64ae462bfbb3f8a15ac4b`, con pesos en BF16 safetensors. No se dispone de datos sobre el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas de alineación como RLHF o DPO.
 
-No se dispone de información sobre el corpus de entrenamiento, el número de tokens, ni sobre técnicas de alineación como RLHF o DPO. En cuanto al proceso de conversión: los pesos BF16 en safetensors de la revisión `6796197bb3a8e224b2f64ae462bfbb3f8a15ac4b` se convirtieron a GGUF con cambio de nombre de tensores y casting BF16 a F32/F16 (los tensores unidimensionales como normas y sesgos permanecen en F32). No se entrenó, ajustó ni fusionó ningún peso. Las conversiones F32 y F16 reproducen exactamente los IDs de tokens del modelo original en Transformers 5.21.0 en los 5 casos de referencia (hasta 1024 tokens generados).
+La contribución de esta publicación es exclusivamente de formato: los pesos se convirtieron a GGUF mediante el script `models/convert-minicpm-ocr-to-gguf.py` del proyecto CrispEmbed, con renombrado de tensores, conversión de BF16 a F32/F16 y embebido de metadatos del tokenizador y del preprocesado. Las variantes cuantizadas se generaron con la herramienta propia `crispembed-quantize`, aplicando la receta `q8_0` para Q8_0 y la política `minicpm_q4k_v1` para Q4_K_MIX. Los tensores unidimensionales (normas, sesgos) se mantienen en F32. No se entrenó, ajustó ni fusionó ningún peso.
 
 ## Capacidades
 
-- Reconocimiento de texto en líneas sueltas (tarea de referencia `line`)
-- Transcripción de párrafos de texto (tarea de referencia `para-en`)
-- Reconocimiento de texto en tablas (tarea de referencia `table`)
-- Procesamiento de imágenes de documentos verticales/alargados (tarea de referencia `tall`)
-- Reconocimiento de texto en imágenes pequeñas (tarea de referencia `tiny`)
-- Generación condicionada por prompt de OCR (por ejemplo, `"Text Recognition:"`)
-- Pipeline de imagen-a-texto (image-text-to-text), apto para uso conversacional según las etiquetas del repositorio
-
-No hay información disponible sobre tool calling, agentes, razonamiento multi-paso ni procesamiento de audio.
+- Reconocimiento de texto en imágenes (OCR) mediante prompts de tarea, por ejemplo `Text Recognition:`.
+- Procesamiento de imágenes de entrada y generación de texto de salida en un pipeline image-text-to-text.
+- Manejo de distintos tipos de contenido visual según los casos de referencia documentados: líneas de texto, párrafos en inglés, tablas, imágenes de formato alto y texto de pequeño tamaño.
+- Generación autorregresiva con decodificación greedy verificada hasta 1024 tokens nuevos en las pruebas de paridad.
+- Soporte de conversación (etiqueta `conversational` en el repositorio).
+- No se documentan capacidades de tool calling, function calling, razonamiento multi-paso, agentes, audio ni modos de pensamiento explícitos.
 
 ## Casos de uso
 
-- Digitalización de documentos escaneados: transcripción de párrafos y páginas completas a texto plano de forma local, sin enviar datos a servicios externos, adecuado para documentos sensibles.
-- Extracción de tablas: reconocimiento de estructura tabular en imágenes de informes, facturas o papers, útil como paso previo a su importación en hojas de cálculo o bases de datos.
-- OCR en dispositivos con recursos limitados: con ~1,3 B de parámetros y formato GGUF F16 (~2,6 GB), puede ejecutarse en CPU o en portátiles sin GPU dedicada mediante el runtime de CrispEmbed.
-- Indexación de archivos de imágenes: transcripción masiva de capturas de pantalla o fotografías de texto para alimentar motores de búsqueda o sistemas RAG.
-- Procesamiento de documentos verticales: manejo de imágenes alargadas (recibos, tickets, listas largas) gracias a la tarea de referencia `tall`.
-- OCR en pipelines de datos: integración en flujos de preprocesamiento automatizados gracias a la interfaz de línea de comandos (`--ocr page.png`) y a la salida determinista (decodificación greedy con paridad exacta de tokens).
-- Verificación de integridad en producción: los hashes SHA256 publicados por fichero permiten validar los pesos desplegados en entornos regulados.
+- Digitalización de documentos escaneados: el modelo puede extraer texto de páginas completas procesando la imagen con el prompt de reconocimiento, adecuado por su tamaño compacto y su licencia Apache 2.0 para integrarse en pipelines internos.
+- Extracción de tablas en informes y facturas: los casos de referencia incluyen una prueba específica de tabla (`table`, 56 tokens generados), lo que permite validar el comportamiento en estructuras tabulares antes de desplegar en producción.
+- Procesamiento por lotes en CPU sin GPU: las variantes Q8_0 y F16 se ejecutan en el runtime nativo de CrispEmbed, lo que facilita el despliegue en servidores sin acelerador dedicado, a costa de throughput limitado.
+- Preprocesado de corpus para entrenamiento o búsqueda: la salida OCR puede alimentar etapas posteriores de indexación o anotación, siempre que se acepte la licencia permisiva del modelo.
+- Verificación de calidad en entornos con requisitos de reproducibilidad: el repositorio documenta hashes SHA256, recibos de paridad y comparaciones token a token frente al original, lo que resulta útil en auditorías de pipelines documentales.
+- Prototipado de aplicaciones de accesibilidad: conversión de texto impreso a texto digital en aplicaciones de lectura asistida, con la advertencia de que el rendimiento en documentos reales no está medido.
+- Evaluación comparativa de cuantizaciones: la publicación sirve como caso de estudio para medir la degradación de Q4_K_MIX frente a Q8_0 en tareas OCR sensibles a glifos.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El repositorio indica explícitamente que las tareas de calidad a nivel de benchmark no han sido verificadas; solo se ha validado la paridad exacta de IDs de token frente al modelo original en Transformers en 5 casos de referencia (19, 63, 56, 279 y 3 tokens generados respectivamente).
+No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u otros) en la información disponible. La model card incluye, en cambio, pruebas de paridad frente al modelo original en CPU con decodificación greedy sobre cinco casos de referencia:
+
+| Precisión | Tamaño (bytes) | Tokens idénticos vs original (5 casos) | Texto decodificado / CER | Coseno de logits finales mínimo | Estado |
+|---|---:|---|---|---|---|
+| F16 | 2.612.763.136 | 5/5 exactos | idéntico al original (CER 0) | no medido | recomendado |
+| Q8_0 | 1.525.926.080 | 5/5 exactos a 2 y 4 hilos | idéntico al original (CER 0) | 0,9998 (caso `para-en`) | recomendado |
+| Q4_K_MIX | 1.017.943.296 | 4/5 exactos; `para-en` diverge en el token 54 | 4/5 idénticos; `para-en` lee umlauts como `Gr×e, Stra×e, ×pfel` | 0,9671 (peor caso, `para-en`) | experimental |
+
+Los casos de referencia generan 19, 63, 56, 279 y 3 tokens respectivamente (`line`, `para-en`, `table`, `tall`, `tiny`). No se han medido los backends de GPU, los documentos multipágina, los benchmarks de calidad a nivel de tarea ni prompts distintos de las tareas de referencia.
 
 ## Requisitos de hardware
 
-- VRAM / memoria estimada: el fichero F16 ocupa 2.612.763.136 bytes (~2,6 GB), por lo que se necesita al menos ~3 GB de RAM o VRAM para alojar los pesos, más memoria para el contexto y la imagen.
-- GPU recomendadas: no disponible; el runtime de CrispEmbed se ha validado en CPU (decodificación greedy). Los backends de GPU no están verificados.
-- Consumer GPUs: al ocupar ~2,6 GB en F16, cabría con holgura en GPUs de gama media y alta (por ejemplo, una RTX 3060 de 12 GB o superior), aunque no hay validación publicada.
-- Opciones de despliegue: exclusivamente el runtime nativo de CrispEmbed (`crispembed`), activando el soporte experimental con las variables de entorno `CRISPEMBED_MINICPM_OCR=1` y `CRISPEMBED_QWEN35_OCR=1`. Importante: estos GGUF no son cargables por llama.cpp, ni se ha documentado soporte en Ollama, vLLM o TGI. Para esos runtimes, usar el modelo original en safetensors o los GGUF oficiales de `openbmb/MiniCPM-OCR-1.0-gguf`.
-- Latencia y throughput: no disponibles.
+- VRAM estimada para inferencia: no disponible de forma explícita; por el tamaño de los archivos, F16 requiere al menos 2,6 GB de memoria para los pesos, Q8_0 unos 1,5 GB y Q4_K_MIX alrededor de 1,0 GB, más el espacio para el codificador visual, el contexto y las activaciones.
+- GPU recomendadas: no disponible; la model card indica que los backends de GPU no han sido verificados.
+- Compatibilidad con GPU de consumo: probable por tamaño de pesos en Q8_0 y Q4_K_MIX, pero no verificada por el autor.
+- Opciones de despliegue: runtime nativo de CrispEmbed con las variables `CRISPEMBED_MINICPM_OCR=1` y `CRISPEMBED_QWEN35_OCR=1`. Los archivos no son cargables por llama.cpp.
+- Latencia y throughput: no disponibles; las pruebas de paridad se ejecutaron en CPU con decodificación greedy, sin cifras de rendimiento publicadas.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Formato | Licencia | Runtime | Notas |
-|---|---|---|---|---|---|
-| MiniCPM-OCR-1.0 (original, OpenBMB) | ~1,3 B | safetensors (BF16) | Apache 2.0 | Transformers | Modelo base de esta conversión |
-| MiniCPM-OCR-1.0 GGUF (cstr, esta ficha) | ~1,3 B | GGUF F16 | Apache 2.0 | CrispEmbed (ggml nativo) | Paridad exacta de tokens verificada en CPU |
-| MiniCPM-OCR-1.0-gguf (openbmb) | ~1,3 B | GGUF | Apache 2.0 | llama.cpp | Variante oficial para llama.cpp, distinta de esta conversión |
+No se dispone de datos de benchmarks que permitan una comparación cuantitativa con alternativas. A continuación se comparan únicamente características estructurales verificables:
 
-No se dispone de datos de rendimiento comparativo entre estas variantes.
+| Modelo | Parámetros | Contexto | Formato | Licencia | Notas |
+|---|---|---|---|---|---|
+| MiniCPM-OCR-1.0 (esta conversión GGUF) | 1.300.434.160 | no disponible | GGUF (CrispEmbed) | Apache 2.0 | Runtime propio, no compatible con llama.cpp |
+| openbmb/MiniCPM-OCR-1.0 (original) | 1.300.434.160 | no disponible | safetensors BF16 | Apache 2.0 | Modelo de referencia; requiere Transformers |
+| openbmb/MiniCPM-OCR-1.0-gguf | no disponible | no disponible | GGUF (llama.cpp) | no disponible en esta ficha | Conversión oficial para llama.cpp, distinta de esta |
+
+No se han identificado en la información proporcionada otros modelos OCR comparables con datos de rendimiento verificables.
 
 ## Limitaciones y advertencias
 
-- El soporte de MiniCPM-OCR en CrispEmbed es experimental y está desactivado por defecto; requiere activación explícita por variables de entorno.
-- Solo se publican precisiones sin cuantizar (F16/F32): no existe ninguna variante cuantizada con recibo de precisión exacta de tokens verificado.
-- La paridad exacta se ha validado únicamente en CPU con decodificación greedy y en 5 casos de referencia; los backends de GPU, documentos multipágina y prompts distintos de las tareas de referencia no están verificados.
-- No hay benchmarks de calidad publicados para el modelo ni para la conversión, por lo que su precisión real en dominios concretos debe evaluarse por el usuario.
-- La longitud de contexto y los idiomas soportados no están documentados en la información disponible.
-- Riesgo de alucinación: al ser un modelo generativo, puede inventar caracteres o palabras en imágenes de baja calidad; no hay datos que cuantifiquen este riesgo.
-- La licencia Apache 2.0 permite uso comercial, pero el repositorio del modelo original no incluye fichero LICENSE ni NOTICE; la licencia se toma del repositorio de código upstream de OpenBMB.
-- Sesgos conocidos: no disponibles.
+- La variante Q4_K_MIX está marcada como experimental: no es token-ID exacta en todos los casos y falla en la lectura de umlauts y glifos de caja en el caso `para-en`; no debe usarse donde se requiera coincidencia exacta con el original.
+- La calidad en páginas reales representativas no se ha medido; las pruebas se limitan a cinco casos sintéticos de referencia.
+- Los backends de GPU no están verificados; solo se ha validado la ejecución en CPU con decodificación greedy.
+- No se ha evaluado el comportamiento en documentos multipágina ni con prompts distintos de las tareas de referencia.
+- No hay información sobre sesgos, tasas de alucinación ni cobertura idiomática; la lista de idiomas no está disponible.
+- Los archivos no son compatibles con llama.cpp; deben cargarse con CrispEmbed, lo que limita la portabilidad frente a otras herramientas del ecosistema.
+- El soporte de MiniCPM-OCR en CrispEmbed es experimental y está desactivado por defecto, lo que requiere variables de entorno específicas.
+- La licencia Apache 2.0 permite uso comercial, pero el autor de la conversión no ofrece garantías sobre los artefactos derivados; se recomienda validar la paridad en el dominio de uso concreto.
 
 ## Enlaces
 
-- Repositorio GGUF (esta ficha): https://huggingface.co/cstr/MiniCPM-OCR-1.0-GGUF
-- Modelo original: https://huggingface.co/openbmb/MiniCPM-OCR-1.0 (revisión fijada: `6796197bb3a8e224b2f64ae462bfbb3f8a15ac4b`)
-- Runtime CrispEmbed: https://github.com/CrispStrobe/CrispEmbed
-- Licencia upstream: https://github.com/OpenBMB/MiniCPM-OCR/blob/8a16a6ad007b1105ac7811ab238808587615e4c7/LICENSE
-- Organización OpenBMB en Hugging Face: https://huggingface.co/openbmb
+- Repositorio Hugging Face de esta conversión: https://huggingface.co/cstr/MiniCPM-OCR-1.0-GGUF
+- Modelo original: https://huggingface.co/openbmb/MiniCPM-OCR-1.0/tree/6796197bb3a8e224b2f64ae462bfbb3f8a15ac4b
+- Repositorio de código original: https://github.com/OpenBMB/MiniCPM-OCR
+- Proyecto CrispEmbed: https://github.com/CrispStrobe/CrispEmbed
+- Conversión oficial para llama.cpp (distinta de esta): https://huggingface.co/openbmb/MiniCPM-OCR-1.0-gguf

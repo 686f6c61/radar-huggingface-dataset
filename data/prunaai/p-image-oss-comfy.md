@@ -2,52 +2,50 @@
 
 ## Resumen
 
-P-Image-OSS-Comfy es una distribución en un solo archivo (single-file) del modelo de difusión P-Image-OSS de PrunaAI, empaquetada específicamente para su uso directo en ComfyUI. Se trata de una versión cuantizada (int8 y 4-bit) del modelo base, orientada a la generación y edición de imágenes a partir de texto, con soporte adicional de upsampling de prompts y adaptadores LoRA. El modelo se distribuye bajo la licencia comunitaria MiniMax-H3 y está etiquetado como derivado de la familia MiniMax-H3.
+P-Image-OSS-Comfy es un empaquetado en formato single-file para ComfyUI del modelo de difusion P-Image-OSS desarrollado por PrunaAI, orientado a generacion y edicion de imagenes a partir de texto. Se distribuye como un unico archivo compatible con el ecosistema ComfyUI, lo que simplifica su carga en flujos de trabajo visuales frente a los checkpoints multimodulo tradicionales. El modelo base es PrunaAI/P-Image-OSS y esta version incorpora cuantizacion int8 y 4-bit, ademas de soporte de LoRA y upsampling de prompts.
 
-La relevancia de esta ficha radica en que combina tres factores poco habituales en el ecosistema: un empaquetado listo para ComfyUI sin necesidad de conversión, cuantizaciones agresivas que reducen los requisitos de VRAM, y un volumen de descargas muy elevado (más de 1,2 millones), lo que indica una adopción amplia en la comunidad. El repositorio, sin embargo, es muy pesado (214,7 GB), lo que refleja que incluye múltiples variantes de pesos.
+La relevancia de esta ficha radica en que se trata de una distribucion optimizada para inferencia local en ComfyUI, con un repo de 214,7 GB que incluye multiples variantes de pesos. El modelo esta etiquetado con la licencia comunitaria minimax-h3-community-license-agreement, lo que condiciona su uso comercial, y declara soporte unicamente para ingles. No se dispone de informacion publica sobre el numero de parametros, la longitud de contexto (no aplica del mismo modo en difusion) ni la composicion del dataset de entrenamiento.
 
-No se dispone de información pública sobre el número de parámetros, la longitud de contexto (en el sentido de resolución máxima o número de tokens de imagen) ni los detalles del dataset de entrenamiento en la información proporcionada, por lo que esos campos se marcan como no disponibles.
+Con mas de 1,3 millones de descargas y 412 likes en Hugging Face, es una de las distribuciones mas populares de la familia P-Image-OSS para el ecosistema ComfyUI, lo que sugiere una adopcion amplia en flujos de generacion de imagenes por parte de la comunidad.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | modelo de difusión (diffusion-single-file); detalles internos no disponibles |
+| Arquitectura | Modelo de difusion (text-to-image / image-to-image); detalles internos no disponibles |
 | Parametros totales | no disponible |
 | Parametros activos | no aplica (no es MoE) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | int8, 4-bit (según tags del repositorio) |
-| Idiomas soportados | en (inglés) |
+| Longitud de contexto | no disponible (modelo de difusion; no aplica ventana de tokens de LLM) |
+| Tipos de cuantizacion | int8, 4-bit (segun tags del repo) |
+| Idiomas soportados | en (ingles) |
 | Licencia | minimax-h3-community-license-agreement (licencia "other") |
-| Formato de pesos | diffusion-single-file (compatible con ComfyUI); no se especifican safetensors ni GGUF |
+| Formato de pesos | diffusion-single-file (archivo unico para ComfyUI) |
 
 ## Arquitectura y entrenamiento
 
-El modelo es una distribución cuantizada del modelo base PrunaAI/P-Image-OSS, que a su vez pertenece a la familia MiniMax-H3. La arquitectura concreta (tipo de backbone de difusión, número de pasos, scheduler, etc.) no se detalla en la información disponible; lo que sí se documenta es que se trata de un modelo de difusión para text-to-image e image-to-image, empaquetado como archivo único para ComfyUI. Las cuantizaciones int8 y 4-bit indican que se han aplicado técnicas de compresión de pesos para reducir el uso de memoria, presumiblemente mediante cuantización post-entrenamiento, aunque no se especifica la metodología exacta.
+La informacion disponible no detalla la arquitectura interna del modelo base P-Image-OSS mas alla de su naturaleza como modelo de difusion para text-to-image e image-to-image. El repo se distribuye como un archivo unico compatible con ComfyUI (formato diffusion-single-file), lo que implica que los pesos han sido consolidados para su carga directa en ese entorno. La version Comfy incorpora variantes cuantizadas a int8 y 4-bit, lo que reduce los requisitos de VRAM respecto a los pesos en precision completa.
 
-No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron técnicas de RLHF, DPO o ajuste fino con preferencias humanas. Tampoco se documentan innovaciones técnicas como decodificación especulativa o atención lineal. La presencia de etiquetas como "prompt-upsampling" y "lora" sugiere que el pipeline soporta refinamiento de prompts y adaptadores de bajo rango, pero no se detalla su implementación interna.
+No se han publicado en la informacion disponible datos sobre el numero de tokens de entrenamiento, la composicion del dataset, el uso de RLHF/DPO ni innovaciones tecnicas especificas como decodificacion especulativa o atencion lineal. El modelo base es PrunaAI/P-Image-OSS, y esta version se declara como una cuantizacion del mismo (base_model_relation: quantized). Las etiquetas indican soporte de LoRA y de upsampling de prompts, funcionalidades que en ComfyUI suelen implementarse mediante nodos especificos del flujo de trabajo.
 
 ## Capacidades
 
-- Generación de imágenes a partir de texto (text-to-image) en inglés.
-- Edición de imágenes (image-to-image), incluyendo modificación guiada por prompt.
-- Upsampling de prompts: el pipeline incluye mecanismos para enriquecer o expandir la descripción textual antes de la generación.
-- Soporte de LoRA: permite cargar adaptadores de bajo rango para personalizar el estilo o el contenido generado.
-- Integración nativa con ComfyUI como archivo único, sin necesidad de conversión manual.
-- Cuantizaciones int8 y 4-bit para reducir requisitos de memoria.
-- No se documenta soporte de tool calling, function calling, agentes ni razonamiento multi-paso (no es un modelo de lenguaje).
-- Capacidades multilingües limitadas al inglés según la etiqueta de idioma.
-- No se documentan modos especiales como thinking mode, visión o audio más allá de la generación de imágenes.
+- Generacion de imagenes a partir de texto (text-to-image) en ingles.
+- Edicion de imagenes (image-to-image), incluyendo transformaciones guiadas por prompt.
+- Upsampling de prompts: expansion o refinado del prompt de entrada antes de la generacion.
+- Soporte de LoRA: posibilidad de aplicar adaptadores de bajo rango para personalizar estilo o dominio.
+- Integracion nativa con ComfyUI mediante archivo unico (diffusion-single-file).
+- Cuantizacion int8 y 4-bit para reducir requisitos de memoria en inferencia.
+- No se ha documentado soporte de tool calling, agentes, razonamiento multi-paso, vision de entrada, audio ni modo "thinking"; son capacidades propias de modelos de lenguaje, no de este modelo de difusion.
 
 ## Casos de uso
 
-- Generación de ilustraciones para prototipado rápido: el modelo permite crear imágenes a partir de descripciones en inglés directamente en ComfyUI, lo que agiliza la iteración en equipos de diseño que ya usan este entorno.
-- Edición de imágenes existentes en flujos de postproducción: mediante image-to-image se pueden modificar escenas, estilos o elementos concretos sin partir de cero, aprovechando el upsampling de prompts para mantener coherencia.
-- Personalización de estilo con LoRA: estudios pequeños pueden entrenar o cargar adaptadores LoRA para fijar una identidad visual concreta (marca, personaje, estética) y aplicarla de forma consistente en lotes de imágenes.
-- Despliegue en hardware de consumo: gracias a las cuantizaciones int8 y 4-bit, el modelo puede ejecutarse en GPUs con VRAM limitada, lo que facilita su uso en estaciones de trabajo locales sin clústeres dedicados.
-- Generación de material para marketing y redes sociales: creación de banners, fondos y variaciones visuales a partir de briefs textuales, con la posibilidad de ajustar el prompt automáticamente mediante el upsampling integrado.
-- Integración en pipelines de automatización de contenido: al ser un archivo único compatible con ComfyUI, se puede orquestar mediante scripts o flujos de nodos para producir imágenes de forma programática en procesos por lotes.
-- Experimentación académica en difusión cuantizada: investigadores pueden comparar el comportamiento de las variantes int8 y 4-bit frente al modelo base para estudiar el impacto de la cuantización en la calidad visual.
+- Generacion de ilustraciones para articulos y blogs: el modelo recibe un prompt en ingles y produce una imagen en un flujo de ComfyUI; el upsampling de prompt ayuda a enriquecer descripciones breves antes de la difusion.
+- Edicion de imagenes existentes en produccion de contenidos: mediante image-to-image se pueden aplicar cambios de estilo o composicion sobre una imagen base, util en retoque y variaciones de campanas.
+- Creacion de assets para videojuegos y prototipado: generacion rapida de conceptos visuales y variaciones con LoRA para mantener un estilo coherente entre assets.
+- Personalizacion de estilo con LoRA: entrenar o cargar adaptadores LoRA para un estilo de marca concreto y aplicarlos sobre el modelo cuantizado en ComfyUI.
+- Despliegue local en estaciones de trabajo con GPU de consumo: las variantes int8 y 4-bit permiten ejecutar el modelo en GPUs con VRAM limitada, reduciendo costes frente a soluciones en la nube.
+- Automatizacion de pipelines de generacion por lotes: al ser un archivo unico para ComfyUI, se puede integrar en flujos automatizados que generan imagenes a partir de listas de prompts en ingles.
+- Experimentacion e investigacion en difusion: la disponibilidad de variantes cuantizadas y del modelo base permite comparar calidad y rendimiento entre precisiones en un mismo entorno.
 
 ## Benchmarks y rendimiento
 
@@ -55,33 +53,39 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: no disponible de forma oficial. Las cuantizaciones int8 y 4-bit están pensadas para reducir el consumo, pero no se especifican cifras concretas en la información proporcionada.
-- GPU recomendadas: no disponible. No se documentan modelos de GPU concretos (A100, H100, RTX 4090, etc.).
-- Compatibilidad con GPU de consumo: probable gracias a las variantes 4-bit e int8, pero sin datos verificables en la información disponible.
-- Opciones de despliegue: ComfyUI (soporte nativo por el formato diffusion-single-file). No se documenta soporte explícito para vLLM, llama.cpp, Ollama o TGI, que además están orientados a modelos de lenguaje y no a difusión.
-- Latencia y throughput: no disponible.
+- VRAM estimada: no disponible de forma oficial; depende del tamano real del modelo base y de la variante (int8 o 4-bit). Las variantes 4-bit reducen sustancialmente la memoria frente a los pesos en precision completa.
+- GPU recomendadas: no especificadas en la informacion disponible. Por el formato y las cuantizaciones ofrecidas, esta pensado para ejecucion local en GPUs de consumo y profesionales; no se confirman modelos concretos (RTX 4090, A100, H100).
+- Compatibilidad con GPU de consumo: probable gracias a las variantes int8 y 4-bit, pero no se detallan modelos ni VRAM minima en la informacion disponible.
+- Opciones de despliegue: ComfyUI es el entorno objetivo declarado (formato diffusion-single-file). No se documentan otros runners como vLLM, llama.cpp, Ollama o TGI, que ademas no aplican a modelos de difusion en este formato.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-No se dispone de información sobre modelos comparables en la documentación proporcionada (parámetros, contexto, rendimiento y licencia de alternativas). No disponible.
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|
+| PrunaAI/P-Image-OSS-Comfy | no disponible | no aplica | minimax-h3-community-license-agreement | diffusion-single-file | Version cuantizada (int8, 4-bit) para ComfyUI del modelo P-Image-OSS |
+| PrunaAI/P-Image-OSS | no disponible | no aplica | no disponible en la informacion proporcionada | no disponible | Modelo base del que deriva esta version |
+| Otros modelos text-to-image | no disponible | no aplica | no disponible | no disponible | No se dispone de datos verificables de alternativas comparables en la informacion proporcionada |
+
+No se dispone de informacion suficiente para establecer una comparativa cuantitativa con alternativas de la misma categoria.
 
 ## Limitaciones y advertencias
 
-- El modelo solo está etiquetado para inglés; los prompts en otros idiomas pueden degradar la calidad o no interpretarse correctamente.
-- Al ser un modelo de difusión cuantizado, las variantes int8 y 4-bit pueden introducir pérdida de calidad frente al modelo base sin cuantizar; no se documenta el grado de degradación.
-- No se dispone de información sobre sesgos conocidos en el dataset de entrenamiento ni sobre riesgos específicos de alucinación visual (artefactos, incoherencias).
-- La licencia MiniMax-H3 Community License Agreement es una licencia "other" con posibles restricciones para uso comercial; es imprescindible revisar el archivo LICENSE antes de desplegar en producción.
-- El repositorio ocupa 214,7 GB, lo que implica requisitos de almacenamiento considerables y descargas largas.
-- No se documentan límites de resolución, número máximo de pasos ni restricciones de contexto de imagen.
-- La integración está orientada a ComfyUI; otros entornos pueden requerir conversión adicional no documentada.
-- No hay garantías de soporte ni mantenimiento por parte del autor más allá de las actualizaciones del repositorio.
+- Solo soporta ingles segun los metadatos del repo; los prompts en otros idiomas pueden degradar la calidad.
+- Licencia minimax-h3-community-license-agreement: es una licencia "other" con posibles restricciones para uso comercial; es imprescindible revisar el archivo LICENSE antes de desplegar en produccion.
+- No se dispone de informacion sobre sesgos del modelo base ni sobre tasas de alucinacion visual (artefactos, incoherencias).
+- El repo ocupa 214,7 GB, lo que implica requisitos de almacenamiento considerables y descargas largas.
+- Al ser una cuantizacion (int8, 4-bit), puede haber perdida de calidad respecto al modelo base en precision completa; no se han publicado metricas comparativas.
+- No se documentan limites de resolucion, pasos de muestreo recomendados ni configuraciones optimas de inferencia.
+- La integracion esta orientada a ComfyUI; otros entornos pueden requerir conversion de formato no documentada.
+- No hay datos publicos sobre el dataset de entrenamiento, lo que limita la evaluacion de riesgos de contenido y sesgos.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/PrunaAI/P-Image-OSS-Comfy
+- Modelo en Hugging Face: https://huggingface.co/PrunaAI/P-Image-OSS-Comfy
 - Modelo base: https://huggingface.co/PrunaAI/P-Image-OSS
-- GitHub de PrunaAI: https://github.com/PrunaAI/pruna
-- Twitter/X: https://twitter.com/PrunaAI
-- LinkedIn: https://www.linkedin.com/company/pruna-ai
-- Discord: https://discord.com/invite/JFQmtFKCjd
+- Repositorio GitHub de PrunaAI: https://github.com/PrunaAI/pruna
+- Twitter/X de PrunaAI: https://twitter.com/PrunaAI
+- LinkedIn de PrunaAI: https://www.linkedin.com/company/pruna-ai
+- Discord de PrunaAI: https://discord.com/invite/JFQmtFKCjd
 - Dashboard de PrunaAI: https://dashboard.pruna.ai/login

@@ -2,87 +2,97 @@
 
 ## Resumen
 
-VidDub es un modelo de doblaje de vídeo (video dubbing) con sincronización labial, desarrollado por el equipo de LAW1223 y publicado bajo el identificador AIPeanutman/VidDub en Hugging Face. El modelo toma como entrada un vídeo con un rostro detectable y una pista de audio objetivo, y genera un vídeo modificado en el que los movimientos de la boca y la parte inferior del rostro se ajustan al nuevo audio. Se presenta como el checkpoint "full-context two-step" asociado al artículo "VidDub: Replacement-Aware Distillation for Two-Step Video Dubbing" (arXiv:2611.03404).
+VidDub es un modelo de video a video especializado en doblaje automático con sincronización labial (lip-sync). Lo desarrolla AIPeanutman y se construye como un fine-tuning de Wan2.1-VACE-1.3B, el modelo de generación y edición de vídeo de Alibaba. El modelo toma un vídeo fuente y una pista de audio objetivo y genera un vídeo donde la boca del hablante se ajusta al nuevo audio, manteniendo el resto del contenido visual. Resuelve el problema del doblaje de vídeo a otros idiomas o voces sin necesidad de regrabar, algo relevante para localización de contenido, doblaje multilingüe y producción audiovisual automatizada.
 
-Técnicamente, VidDub es un modelo de difusión para vídeo construido sobre el backbone Wan2.1-VACE-1.3B, con un adaptador de audio propio y un encoder Whisper-small para procesar la señal de voz. La innovación principal es la destilación en dos pasos (DMD), que reduce el número de pasos de muestreo a 2, frente a los múltiples pasos habituales en modelos de difusión de vídeo. El repositorio almacena los componentes entrenados (DiT, VACE y adaptador de audio) con un total de 2.440.958.285 parámetros, y depende de pesos base externos (VAE, T5 y Whisper) que no se duplican en el repo.
+Técnicamente se apoya en una arquitectura DiT (Diffusion Transformer) heredada de Wan, con un adaptador de audio propio y un esquema de muestreo de dos pasos basado en DMD (Distribution Matching Distillation). El checkpoint liberado es la variante "full-context" seleccionada del paper, con 2.440.958.285 parámetros totales en los componentes entrenados (el "1.3B" se refiere solo al backbone Wan, no al cómputo completo de inferencia). Usa ventanas de 81 fotogramas a 24 FPS con solapamiento de 17 fotogramas para vídeos largos, y consume audio a 16 kHz mono.
 
-El modelo es relevante porque aborda una tarea de posproducción audiovisual concreta (doblaje y lip-sync) con un coste de inferencia reducido gracias a la destilación en dos pasos, y porque publica junto al modelo un benchmark específico (VidDub-Bench) y el código de entrenamiento e inferencia. Su licencia es restrictiva: permite uso individual comercial y académico no comercial, pero exige permiso escrito para uso empresarial, SaaS, APIs y servicios gestionados.
+El modelo se publica junto a un ecosistema notable: paper en arXiv, código de entrenamiento e inferencia, dataset de benchmark (VidDub-Bench), nodo para ComfyUI, una aplicación de escritorio web (OpenDub) y un checkpoint profesor (VidDub-SFT). La licencia es propia y restrictiva, lo que condiciona fuertemente su uso comercial.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Difusión para vídeo (DiT) sobre backbone Wan2.1-VACE-1.3B, con adaptador de audio y encoder Whisper-small |
-| Parametros totales | 2.440.958.285 (componentes entrenados: DiT, VACE y adaptador de audio) |
-| Parametros activos | no disponible (no es un modelo MoE) |
-| Longitud de contexto | no disponible; ventana de 81 frames a 24 FPS (protocolo de ventanas deslizantes con stride 64 y solapamiento de 17 frames) |
-| Tipos de cuantizacion | no disponible; pesos publicados en BF16 (DiT y VACE) y FP32 (adaptador de audio) |
-| Idiomas soportados | no disponible |
-| Licencia | viddub-individual-commercial-research-1.0 (VidDub Individual Commercial and Research License 1.0) |
-| Formato de pesos | safetensors (diffusion_pytorch_model.safetensors, model.safetensors) |
+| Arquitectura | DiT (Diffusion Transformer) derivada de Wan2.1-VACE, con adaptador de audio y muestreo DMD de 2 pasos |
+| Parámetros totales | 2.440.958.285 (componentes entrenados: DiT, VACE y adaptador de audio) |
+| Parámetros activos | no disponible (no es MoE) |
+| Longitud de contexto | ventana de 81 fotogramas a 24 FPS (aprox. 3,4 s por ventana); vídeos largos con stride 64 y solapamiento de 17 fotogramas |
+| Tipos de cuantización | no disponible (pesos publicados en BF16) |
+| Idiomas soportados | no disponible (el modelo opera sobre audio, no sobre texto; el idioma depende del audio de entrada) |
+| Licencia | viddub-individual-commercial-research-1.0 (licencia propia, "other") |
+| Formato de pesos | safetensors (BF16) |
+| Modelo base | Wan-AI/Wan2.1-VACE-1.3B |
+| Dependencia de audio | openai/whisper-small |
+| Frecuencia de vídeo | 24 FPS |
+| Frecuencia de audio | 16 kHz mono |
+| Pasos de muestreo | 2 (fijos por configuración) |
+| CFG de audio en inferencia | 1 (fijo) |
+| Tamaño del repo | 5,5 GB |
 
 ## Arquitectura y entrenamiento
 
-VidDub se construye sobre Wan2.1-VACE-1.3B, un modelo de difusión para vídeo. El repositorio incluye un DiT en BF16, un módulo VACE en BF16 y un adaptador de audio específico de VidDub en FP32. La señal de audio se procesa con Whisper-small (resampleada a 16 kHz mono), mientras que el vídeo se maneja a 24 FPS. El modelo se entrena con una estrategia de destilación denominada "Replacement-Aware Distillation" y un esquema DMD (Distribution Matching Distillation) que fija el muestreo en 2 pasos, con un CFG de audio fijo en 1. El checkpoint publicado corresponde a la variante "full-context 2-step DMD" seleccionada por el artículo.
+VidDub se construye sobre Wan2.1-VACE-1.3B, un modelo de difusión con backbone transformer (DiT) para generación y edición de vídeo. Sobre esa base se añaden componentes entrenados específicos: un adaptador de audio que inyecta las características acústicas en el proceso de difusión, y módulos VACE heredados del modelo base. La representación del audio se obtiene con Whisper-small, que actúa como encoder de las características acústicas que guían la generación del movimiento labial. El repositorio incluye solo los componentes entrenados (DiT, VACE y adaptador de audio); el VAE, el tokenizador T5 y el checkpoint de Whisper se descargan por separado.
 
-La inferencia opera con una ventana de 81 frames. Para vídeos de exactamente 81 frames se realiza una única llamada de contexto completo; para vídeos más largos se aplica un protocolo de ventanas solapadas con stride 64 y 17 frames compartidos, cada ventana con su propia semilla, mezcla lineal de solapamientos y armonización de color en la zona inferior del rostro (corrección Lab). El modelo base VAE, el tokenizer T5 y el checkpoint de Whisper no se incluyen en el repositorio y deben descargarse por separado. No se detalla en la información disponible el número de tokens de entrenamiento ni la composición exacta del dataset.
+El entrenamiento sigue el enfoque descrito en el paper "VidDub: Replacement-Aware Supervision for Two-Step Video Dubbing". La innovación central es la supervisión consciente de reemplazo (replacement-aware supervision) combinada con destilación DMD para reducir el muestreo a dos pasos, lo que abarata mucho la inferencia frente a los esquemas de difusión de decenas de pasos. El checkpoint liberado es la variante full-context seleccionada del paper, entrenada con contexto completo de ventana. Para vídeos largos se usa un protocolo de ventanas deslizantes de 81 fotogramas con stride 64 y 17 fotogramas compartidos, cada ventana con su propia semilla, mezcla lineal en los solapamientos y armonización de color en la zona inferior del rostro (corrección Lab). Existe además un checkpoint profesor (VidDub-SFT) con más pasos de denoising y CFG de audio ajustable.
 
 ## Capacidades
 
-- Doblaje de vídeo completo: sustituye el audio original por una pista objetivo y regenera la zona de la boca y la parte inferior del rostro para sincronizarla con la nueva voz.
-- Sincronización labial (lip-sync) guiada por audio, con armonización de color de la región inferior del rostro para integrar el resultado en el vídeo fuente.
-- Procesamiento de vídeos largos mediante ventanas deslizantes de 81 frames con solapamiento y mezcla lineal.
-- Generación en dos pasos de muestreo (DMD), lo que reduce el coste computacional frente a esquemas de difusión multi-paso.
-- Entrada de audio flexible: la pista objetivo se remuestrea automáticamente a 16 kHz mono.
-- Conservación de la resolución y el frame rate del vídeo de entrada en la salida.
-- No se documentan capacidades de tool calling, agentes, razonamiento multi-paso, visión general, audio generation ni modo thinking; el modelo es específico de video-to-video con condicionamiento de audio.
-- Capacidades multilingües: no disponibles en la información proporcionada.
+- Doblaje de vídeo a vídeo: sustituye la voz original por una pista de audio objetivo y regenera la región de la boca para que coincida con el nuevo audio.
+- Sincronización labial audio-driven: el movimiento de labios se genera a partir de las características acústicas extraídas con Whisper-small.
+- Procesamiento de vídeo largo: protocolo de ventanas de 81 fotogramas con solapamiento y mezcla para secuencias de duración arbitraria.
+- Preservación del resto del vídeo: mantiene resolución y frame rate originales, con pegado selectivo de la región de la boca y feathering configurable.
+- Armonización de color: corrección en espacio Lab de la zona inferior del rostro para evitar discontinuidades de tono entre generación y vídeo original.
+- Control de semilla y parámetros de inferencia: seed configurable, radio de feather, activación/desactivación de armonización de color.
+- Integración con ComfyUI mediante nodo personalizado oficial.
+- Integración en flujo de trabajo de escritorio web mediante OpenDub (aunque este no envuelve todavía el stack de inferencia de VidDub).
+- Tool calling / function calling: no disponible.
+- Capacidades de agente o razonamiento multi-paso: no disponible.
+- Capacidades multilingües: no aplica directamente; el idioma lo determina el audio de entrada, no el modelo.
 
 ## Casos de uso
 
-- Doblaje de contenido audiovisual a otros idiomas: se sustituye la pista de voz original por una traducción locutada y el modelo regenera la sincronización labial, manteniendo resolución y frame rate del material original. Adecuado para vídeos con un rostro frontal estable.
-- Localización de material formativo y corporativo: cursos, tutoriales y vídeos internos pueden doblarse a nuevos idiomas sin regrabar al presentador, usando la ventana de 81 frames y el protocolo de ventanas para piezas de varios minutos.
-- Posproducción de cortometrajes y piezas de ficción: corrección de diálogos o sustitución de voces en planos con rostro frontal, con armonización de color para integrar la boca regenerada en la iluminación original.
-- Creación de contenido para redes sociales: adaptación rápida de clips cortos a distintas pistas de audio o idiomas, aprovechando el bajo número de pasos (2) para reducir el tiempo de inferencia.
-- Investigación académica en síntesis audiovisual: el modelo, el benchmark VidDub-Bench y el código de entrenamiento permiten reproducir experimentos de destilación y lip-sync en condiciones same-audio y cross-audio.
-- Pruebas de accesibilidad y prototipado: generación de versiones alternativas de un vídeo con distintas locuciones para evaluar comprensión o para prototipar campañas antes de la producción final.
-- Evaluación comparativa de modelos de dubbing: uso del checkpoint junto con VidDub-Bench para medir calidad de sincronización y realismo en un protocolo fijo y reproducible.
+- Localización de contenido audiovisual: doblar un vídeo a otro idioma sustituyendo la pista de audio y regenerando el movimiento labial, manteniendo el resto del plano intacto. Adecuado por su capacidad de preservar resolución y frame rate originales.
+- Doblaje de vídeos corporativos y formativos: sustituir la voz de presentadores por una versión en otro idioma o con otra locución, sin regrabar, usando el protocolo de ventanas para vídeos de varios minutos.
+- Postproducción de series cortas o clips para redes: regenerar la boca de un hablante para corregir desincronización o cambiar la locución en clips de hasta 81 fotogramas por llamada, o más con ventanas solapadas.
+- Creación de contenido multilingüe a partir de un único rodaje: un mismo vídeo con varias pistas de audio en distintos idiomas, generando una versión doblada por idioma con el mismo material visual.
+- Prototipado de pipelines de doblaje en investigación: usar VidDub-Bench y los scripts de benchmark para evaluar calidad de lip-sync en condiciones same-audio y cross-audio de forma reproducible.
+- Integración en herramientas de edición: a través del nodo ComfyUI-VidDub, incorporar el doblaje con lip-sync a flujos de postproducción basados en nodos.
+- Investigación en generación de vídeo condicionada por audio: servir de base para experimentos de sincronización labial y destilación DMD de dos pasos, dado que el código de entrenamiento es público.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card referencia VidDub-Bench (dataset AIPeanutman/VidDub-Bench) y los scripts `validate_benchmark.py` y `run_benchmark.py` del repositorio de código, pero no incluye cifras numéricas de métricas en la información proporcionada.
+No se han publicado resultados numéricos de benchmarks en la información disponible. El autor publica un benchmark propio (VidDub-Bench, 256 fuentes en condiciones same/cross audio) y scripts para ejecutarlo (`scripts/run_benchmark.py`, `scripts/validate_benchmark.py`), pero no se incluyen cifras de MMLU, HumanEval, GSM8K ni métricas de lip-sync en la información proporcionada.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible de forma explícita. El repo ocupa 5,5 GB e incluye DiT y VACE en BF16 más un adaptador de audio en FP32; a ello hay que sumar los pesos base de Wan2.1-VACE-1.3B, el VAE, el T5 y Whisper-small descargados por separado.
-- GPU recomendadas: no se especifican modelos concretos; la model card indica únicamente "an NVIDIA CUDA GPU" con Linux.
-- Compatibilidad con GPU de consumo: no confirmada en la información disponible; requiere evaluar el conjunto DiT + VACE + VAE + T5 + Whisper en BF16/FP16.
-- Opciones de despliegue: el modelo se ejecuta mediante el repositorio oficial `LAW1223/VidDub` con `scripts/infer.py`; requiere Python 3.10+, Git y FFmpeg. No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI (no aplicables a un modelo de difusión de vídeo de este tipo).
-- Latencia y throughput: no disponibles. La inferencia usa 2 pasos de muestreo y CFG de audio fijo en 1, lo que reduce el coste frente a esquemas multi-paso, pero no se publican tiempos medidos.
-- El modo de ejecución es offline/por ventanas, no un servidor de streaming en tiempo real persistente.
+- VRAM estimada: no disponible de forma explícita. El repo pesa 5,5 GB en BF16 para los componentes entrenados, pero hay que sumar el VAE, el T5 y Whisper-small del modelo base, por lo que el consumo real de inferencia es mayor.
+- GPU recomendadas: no disponibles en la información proporcionada. El modelo requiere Linux, GPU NVIDIA con CUDA, Python 3.10+ y FFmpeg.
+- ¿Cabe en GPU consumer? No disponible. No se especifica en la model card.
+- Opciones de despliegue: CLI oficial (`scripts/infer.py`) del repositorio de GitHub; nodo ComfyUI-VidDub; descarga vía `huggingface-cli`. No se mencionan vLLM, llama.cpp, Ollama ni TGI (no aplican a un modelo de difusión de vídeo).
+- Latencia y throughput: no disponibles. Solo se indica que el muestreo es de 2 pasos (fijo) y CFG de audio 1, lo que reduce coste frente a esquemas de difusión convencionales, pero sin cifras publicadas.
 
 ## Comparativa con modelos similares
 
-| Modelo | Tipo | Parametros | Contexto / ventana | Licencia | Disponibilidad |
+| Modelo | Parámetros | Contexto / ventana | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| VidDub | Difusión vídeo + audio (doblaje, lip-sync) | 2.440.958.285 (componentes entrenados) | Ventana de 81 frames a 24 FPS | viddub-individual-commercial-research-1.0 | Pesos en Hugging Face, código en GitHub |
-| Wan2.1-VACE-1.3B | Difusión vídeo (base) | 1.3B (clase de backbone) | no disponible | no disponible en la información proporcionada | Hugging Face (Wan-AI) |
-| Alternativas específicas de lip-sync/dubbing | no disponible | no disponible | no disponible | no disponible | no disponible |
+| VidDub | 2.440.958.285 (componentes entrenados) | 81 fotogramas @ 24 FPS, ventanas solapadas | Doblaje vídeo a vídeo con lip-sync | viddub-individual-commercial-research-1.0 (propia) | Hugging Face, GitHub, ComfyUI |
+| Wan2.1-VACE-1.3B (base) | ~1,3B (backbone) | no disponible en la información | Generación y edición de vídeo | no disponible en la información | Hugging Face (Wan-AI) |
+| VidDub-SFT (profesor) | no disponible | 81 fotogramas | Doblaje vídeo a vídeo con lip-sync | no disponible en la información | Hugging Face (AIPeanutman) |
 
-No se dispone en la información proporcionada de datos de rendimiento comparativo con otros modelos de dubbing o lip-sync, por lo que la comparación cuantitativa queda como no disponible.
+No se dispone de datos de benchmarks ni de otros modelos de doblaje comparables en la información proporcionada para establecer una comparativa de rendimiento.
 
 ## Limitaciones y advertencias
 
-- El modelo requiere un rostro detectable y mayoritariamente frontal; los perfiles, oclusiones, múltiples rostros y movimientos grandes de cabeza quedan fuera de su régimen principal de funcionamiento.
-- Los vídeos deben tener al menos 81 frames; clips más cortos no son el caso de uso previsto.
-- La implementación es offline y por ventanas, no un servidor de streaming en tiempo real.
-- Solo se publican los componentes entrenados; es necesario descargar aparte el VAE, el T5 y Whisper-small, lo que añade complejidad de despliegue.
-- Riesgo de alucinación visual y artefactos en la región regenerada de la boca, especialmente en ventanas con solapamiento o iluminación cambiante; la armonización de color mitiga pero no elimina las costuras.
-- Sesgos conocidos: no documentados en la información disponible; al operar sobre rostros reales, hereda los sesgos de representación de los datos de entrenamiento (no detallados).
-- Idiomas soportados: no disponibles; el rendimiento multilingüe del condicionamiento de audio no está documentado.
-- Licencia restrictiva: uso individual personal o comercial permitido, incluida la monetización de resultados; investigación académica no comercial permitida; uso empresarial, SaaS, APIs, inferencia alojada, aplicaciones web, bots e integraciones de plataforma requieren permiso escrito separado. Aplican además los términos de terceros (Wan2.1-VACE-1.3B, Whisper-small).
-- Uso responsable: prohibido para suplantación de identidad, fraude, acoso, contenido sexual no consentido o manipulación política/mediática engañosa; el material generado debe divulgarse cuando corresponda.
-- Para producción, conviene validar la calidad en el dominio concreto (iluminación, resolución, duración) y revisar el cumplimiento de la licencia antes de ofrecerlo como servicio.
+- Licencia restrictiva: la licencia viddub-individual-commercial-research-1.0 no es de código abierto estándar. El acceso a través de servicio alojado, web, API, bot o despliegue gestionado requiere permiso escrito adicional, según la model card.
+- Requisitos de entrada estrictos: el vídeo fuente debe contener un rostro detectable y mayoritariamente frontal, y tener al menos 81 fotogramas. No funciona bien con perfiles, oclusiones o rostros no detectables.
+- Resolución y frame rate no modificables: la salida mantiene los del vídeo de entrada; no se ofrece upscaling ni cambio de cadencia.
+- Ventana limitada por llamada: exactamente 81 fotogramas por llamada full-context; vídeos más largos dependen de ventanas solapadas con mezcla lineal, lo que puede introducir artefactos en las transiciones.
+- Posibles artefactos visuales: la armonización de color en la zona inferior del rostro es una corrección heurística (Lab) y el pegado con feathering puede dejar discontinuidades en casos difíciles.
+- Dependencia de Whisper-small para el audio: la calidad de la sincronización está acotada por la representación acústica que extrae ese encoder.
+- Idiomas: no se documentan idiomas soportados; el comportamiento depende del audio de entrada y no está validado por idioma en la información disponible.
+- Sesgos: no se documentan sesgos específicos en la model card; al derivar de Wan2.1-VACE, hereda los sesgos del modelo base y de sus datos de entrenamiento, no detallados aquí.
+- Riesgo de alucinación visual: como modelo generativo de vídeo, puede producir movimientos labiales plausibles pero incorrectos respecto al audio, especialmente en fonemas o condiciones acústicas poco representadas.
+- OpenDub no envuelve el stack de inferencia de VidDub: la aplicación web es un workbench separado con licencia Apache-2.0 y no redistribuye ni integra actualmente el modelo; para usarlo hay que recurrir a la CLI.
+- Entorno de ejecución: requiere Linux, GPU NVIDIA con CUDA, Python 3.10+, Git y FFmpeg; no se documenta soporte para otros sistemas.
 
 ## Enlaces
 
@@ -90,7 +100,13 @@ No se dispone en la información proporcionada de datos de rendimiento comparati
 - Paper (arXiv): https://arxiv.org/abs/2611.03404
 - Página del proyecto: https://law1223.github.io/viddub-project-page/
 - Código: https://github.com/LAW1223/VidDub
-- Guía del benchmark: https://github.com/LAW1223/VidDub/blob/main/docs/BENCHMARK.md
-- Dataset VidDub-Bench: https://huggingface.co/datasets/AIPeanutman/VidDub-Bench
-- Modelo base Wan2.1-VACE-1.3B: https://huggingface.co/Wan-AI/Wan2.1-VACE-1.3B
-- Encoder de audio Whisper-small: https://huggingface.co/openai/whisper-small
+- Checkpoint profesor (VidDub-SFT): https://huggingface.co/AIPeanutman/VidDub-SFT
+- Demo comunitaria en Spaces: https://huggingface.co/spaces/hugging-apps/viddub-2611
+- Aplicación OpenDub: https://github.com/LAW1223/OpenDub
+- Nodo ComfyUI: https://github.com/LAW1223/ComfyUI-VidDub
+- Dataset de benchmark (VidDub-Bench): https://huggingface.co/datasets/AIPeanutman/VidDub-Bench
+- Dataset de vídeos fuente de entrenamiento: https://huggingface.co/datasets/AIPeanutman/VidDub-Training-Data
+- Dataset de clips listos para el modelo: https://huggingface.co/datasets/AIPeanutman/VidDub-Training-Clips
+- Guía de benchmark: https://github.com/LAW1223/VidDub/blob/main/docs/BENCHMARK.md
+- Modelo base: https://huggingface.co/Wan-AI/Wan2.1-VACE-1.3B
+- Encoder de audio: https://huggingface.co/openai/whisper-small

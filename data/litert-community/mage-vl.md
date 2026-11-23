@@ -2,99 +2,102 @@
 
 ## Resumen
 
-Mage-VL es un modelo de visión-lenguaje (VLM) de 4,7B parámetros desarrollado originalmente por Microsoft, que combina un encoder visual ViT de 24 capas con un decodificador de lenguaje Qwen3-4B. El repositorio `litert-community/Mage-VL` ofrece una conversión de ese modelo al formato `.litertlm` de LiteRT-LM, el runtime de inferencia on-device de Google AI Edge, lo que permite ejecutar inferencia multimodal imagen+texto íntegramente en dispositivos móviles y de escritorio sin conexión a la nube.
+Mage-VL es un modelo de visión-lenguaje (VLM) de 4.700 millones de parámetros desarrollado por Microsoft, distribuido bajo licencia Apache-2.0. Combina un codificador visual ViT de 24 capas con embeddings posicionales rotatorios tridimensionales y un decodificador lingüístico Qwen3-4B de 36 capas. La versión aquí descrita es la conversión realizada por la comunidad litert-community al formato LiteRT-LM (`.litertlm`), optimizada para inferencia totalmente local en dispositivos móviles y de escritorio mediante el runtime LiteRT-LM de Google AI Edge.
 
-La relevancia de esta conversión radica en que es la primera versión de Mage-VL disponible en formato LiteRT-LM y en que demuestra un rendimiento práctico en hardware de consumo: aproximadamente 10 tokens/s de decodificación en un iPhone 17 Pro con un pico de memoria de ~1,5 GiB, y hasta 80 tokens/s en GPU Metal sobre un Apple M4 Max. El bundle ocupa ~2,81 GB y está cuantizado de forma agresiva (int8 en visión y adaptador, int4 en el decodificador).
+El modelo resuelve el problema de ejecutar un VLM multimodal en hardware de consumo sin conexión a la nube: el archivo resultante ocupa aproximadamente 2,81 GB, utiliza pesos int8 en el codificador visual y en el adaptador PatchMerger, e int4 con cuantización por bloques de 128 elementos más la técnica OCTAV en el decodificador. La ventana de contexto del caché KV está limitada a 2048 tokens y la entrada de imagen se fija estáticamente a 448×448 píxeles, lo que produce 196 tokens visuales tras la fusión 2×2 de parches.
 
-El modelo está pensado para tareas de descripción general de imágenes y, especialmente, de lectura de documentos (OCR) en el dispositivo. La licencia Apache-2.0 del modelo base facilita su integración en productos comerciales, y el soporte de backends CPU y GPU en Android, macOS, Linux y Windows amplía su aplicabilidad más allá del móvil.
+Su relevancia actual radica en que es la primera conversión de Mage-VL al formato LiteRT-LM y demuestra que un VLM de casi 5.000 millones de parámetros puede describir imágenes y transcribir documentos con precisión verificada en un iPhone 17 Pro, manteniendo una huella de memoria pico de aproximadamente 1,5 GiB. Para desarrolladores que necesitan privacidad de datos, latencia predecible sin red o despliegue en flotas de dispositivos sin GPU dedicada, esta conversión ofrece una alternativa práctica a las API en la nube.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | VLM: ViT de 24 capas (encoder visual) + Qwen3-4B (decodificador de lenguaje, transformer denso con GQA) |
-| Parámetros totales | 4,7B (modelo base) |
-| Parámetros activos | no aplica (modelo denso, no MoE) |
-| Longitud de contexto | 2048 tokens (KV cache del bundle LiteRT-LM) |
-| Tipos de cuantización | Visión: int8; adaptador PatchMerger: int8; decodificador: int4 (simétrico, blockwise-128 + OCTAV); embedder externo: int8 |
+| Arquitectura | VLM: ViT de 24 capas (1024 dim, atención completa, RoPE 3-D) + adaptador PatchMerger + decodificador Qwen3-4B (36 capas, hidden 2560, GQA con 8 cabezas KV) |
+| Parametros totales | 4.700 millones (aproximado, según model card) |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | 2048 tokens (caché KV) |
+| Tipos de cuantizacion | Visión: int8; adaptador PatchMerger: int8; decodificador: int4 simétrico con bloques de 128 + OCTAV; embedder externo en int8 |
 | Idiomas soportados | no disponible |
 | Licencia | Apache-2.0 |
-| Formato de pesos | `.litertlm` (LiteRT-LM); modelo base en formato original de Microsoft |
+| Formato de pesos | `.litertlm` (LiteRT-LM), archivo único de ~2,81 GB |
+| Modelo base | microsoft/Mage-VL |
+| Entrada de imagen | 448×448 estático, normalización OpenAI-CLIP integrada en el codificador |
+| Tokens de imagen | 784 parches → fusión 2×2 → 196 tokens visuales |
+| Runtime | LiteRT-LM (Google AI Edge) |
 
 ## Arquitectura y entrenamiento
 
-El modelo sigue una arquitectura típica de VLM con dos torres: un encoder visual ViT de 24 capas con dimensión 1024, atención completa y embeddings posicionales rotatorios 3-D, que en este bundle se reescribe de forma estática a 448×448 píxeles, generando 784 parches que tras un merge 2×2 se reducen a 196 tokens de imagen. Un adaptador PatchMerger (LayerNorm → agrupación 2×2 → MLP) proyecta esas representaciones al tamaño oculto del texto (2560). El decodificador es Qwen3-4B: 36 capas, hidden size 2560, GQA con 8 cabezas KV, y usa posiciones secuenciales 1-D nativas (sin M-RoPE), lo que el runtime `fast_vlm` de LiteRT-LM reproduce de forma matemáticamente idéntica al modelo original.
+La arquitectura sigue un esquema estándar de VLM con torre visual y decodificador de lenguaje acoplados mediante un adaptador. El codificador visual es un ViT de 24 capas con dimensión 1024, atención completa y embeddings posicionales rotatorios tridimensionales, reescrito de forma estática a 448×448 píxeles para eliminar operaciones dinámicas. La salida pasa por un PatchMerger que aplica normalización de capa, agrupación 2×2 y un perceptrón multicapa que proyecta al tamaño oculto del texto (2560). El decodificador es Qwen3-4B, rehospedado como `Qwen3ForCausalLM` independiente con un dict de estados estrictamente 1:1 y `lm_head` no atado, cuantizado con la misma receta int4 por bloques que los LLM Qwen3-4B ya publicados en este formato.
 
-La conversión incluye varias decisiones técnicas destacables: el encoder visual se verificó con correlación 1.0 en fp32 y 0.994 en int8 frente a la implementación de referencia, sin operaciones FLEX/CUSTOM, y el pipeline de parches es bit-idéntico al procesador de imágenes original (diferencia máxima 2.4e-7). El decodificador se re-aloja como `Qwen3ForCausalLM` independiente con state-dict 1:1 y se cuantiza con la receta blockwise-128 + OCTAV int4 empleada en los LLM Qwen3-4B ya publicados. No se dispone de información sobre el dataset de entrenamiento, el número de tokens o si hubo RLHF/DPO en la información proporcionada.
+Un detalle técnico relevante es que el decodificador de Mage-VL utiliza posiciones secuenciales 1-D planas, sin M-RoPE, lo que coincide exactamente con lo que proporciona el runtime `fast_vlm` de LiteRT-LM y evita compromisos posicionales que sí afectan a la familia Qwen2-VL. La verificación reportada incluye correlación 1.0 en fp32 y 0.994 en int8 para la torre visual, cero operaciones FLEX/CUSTOM, y una diferencia máxima de 2,4e-7 entre el pipeline de parches y el procesador de imágenes original del modelo. No se dispone de información sobre el volumen de tokens de entrenamiento, la composición del dataset ni si se aplicaron etapas de RLHF o DPO en la model card proporcionada.
 
 ## Capacidades
 
-- Generación de texto e inferencia multimodal imagen+texto (image-text-to-text).
-- Descripción general de imágenes con nivel de detalle alto (escenas, objetos, composición).
-- Lectura de documentos y OCR: transcripción de texto en imágenes, incluidos números, correos y teléfonos.
-- Respuesta a preguntas visuales (VQA) sobre una imagen adjunta.
-- Conversaciones multi-turno con imágenes: cada imagen se envía en su propio mensaje; los turnos de seguimiento solo texto tienen TTFT de ~2 s en móvil.
-- Soporte de múltiples imágenes mediante adjuntos repetidos en la CLI (`--attachment` varias veces), aunque el uso de varias imágenes en una misma conversación no está probado.
-- Ejecución on-device con API local compatible con OpenAI mediante `litert-lm serve`.
-- No se documenta soporte de tool calling, function calling, agentes, audio ni modo thinking en la información disponible.
+- Generación de descripciones detalladas de imágenes: la model card reporta descripciones precisas y detalladas de paisajes y escenas fotográficas, idénticas token a token entre el runtime móvil y el de escritorio.
+- Lectura de documentos y OCR: transcripción completa y correcta de una página de informe sintética, incluyendo cifras, direcciones de correo y números de teléfono, a resolución 448×448.
+- Respuesta visual a preguntas (VQA): respuestas fundamentadas en el contenido de la imagen adjunta.
+- Conversación multi-turno con imágenes: permite adjuntar varias imágenes en una misma sesión y continuar con turnos de solo texto, con un tiempo hasta el primer token de aproximadamente 2 segundos en iPhone 17 Pro para turnos textuales de seguimiento.
+- Procesamiento totalmente local: inferencia sin conexión a red, con la codificación visual y el prefill ejecutándose en el dispositivo.
+- Servicio como API local compatible con OpenAI mediante `litert-lm serve`.
+- Capacidades de tool calling, function calling, agentes o razonamiento multi-paso: no disponible en la información proporcionada.
+- Capacidades de audio: no disponible.
+- Cobertura multilingüe: no disponible.
 
 ## Casos de uso
 
-- **Atención al cliente con comprensión de imágenes**: el modelo puede recibir capturas de pantalla, fotos de productos o documentos enviados por el usuario y responder preguntas sobre ellos, con contexto de 2048 tokens suficiente para conversaciones de soporte de varios turnos.
-- **Digitalización de documentos en movilidad**: OCR on-device verificado con transcripción perfecta de una página de informe sintética a 448×448; útil para escanear facturas, albaranes o informes sin enviar datos a la nube.
-- **Accesibilidad para personas con discapacidad visual**: descripción de escenas en tiempo real desde la cámara del móvil, con ~10 tok/s en iPhone 17 Pro y un pico de ~1,5 GiB que cabe en memoria de dispositivo.
-- **Asistentes de campo sin conectividad**: aplicaciones de inspección, agricultura o mantenimiento que necesitan describir imágenes in situ en entornos sin red, ejecutando el bundle en Android (backend GPU, 820 MB de pico en Galaxy S26) o en portátiles macOS/Linux/Windows.
-- **Moderación y etiquetado de imágenes en el borde**: clasificación y descripción automática de contenido visual en el propio dispositivo, evitando el coste y la latencia de subir imágenes a un servidor.
-- **Prototipado rápido de apps VLM**: integración en una app de escritorio o móvil mediante `litert-lm run` o `litert-lm serve` (API compatible con OpenAI) para validar flujos de imagen+texto antes de invertir en infraestructura.
-- **Procesamiento por lotes en portátil**: con 80 tok/s de decodificación y 740 tok/s de prefill en GPU Metal de un M4 Max, es viable procesar lotes moderados de imágenes para generar descripciones o extraer texto.
+- Descripción automática de imágenes en aplicaciones móviles: el modelo procesa una foto y genera una descripción en una frase con aproximadamente 10 tokens por segundo en un iPhone 17 Pro, adecuado para funciones de accesibilidad (lectores de pantalla para personas con discapacidad visual) que deben operar sin conexión y sin enviar imágenes a servidores externos.
+- Digitalización de documentos en campo: la transcripción OCR verificada a 448×448 permite capturar informes, facturas o formularios con la cámara del teléfono y extraer el texto localmente, útil en inspecciones industriales, logística o trabajo de campo sin cobertura de red.
+- Asistentes de atención al cliente con imágenes: un chatbot embebido en una app puede recibir capturas de pantalla o fotos del producto del usuario y responder preguntas de seguimiento en la misma conversación, aprovechando los turnos de solo texto con aproximadamente 2 segundos de latencia en móvil.
+- Moderación y etiquetado de contenido visual en el dispositivo: clasificación y descripción de imágenes generadas por el usuario antes de subirlas, reduciendo costes de backend y mejorando la privacidad al no transmitir el contenido original.
+- Prototipado e investigación en robótica de bajo coste: integración del runtime LiteRT-LM en sistemas embebidos basados en Linux o macOS para tareas de percepción visual descriptiva, con un consumo de memoria pico de aproximadamente 1,5 GiB.
+- Herramientas de escritorio para análisis de imágenes: en Apple Silicon, el backend GPU Metal alcanza 80 tokens por segundo en decodificación y 740 tokens por segundo en prefill, lo que permite flujos interactivos de descripción y pregunta-respuesta sobre lotes de imágenes en un portátil.
+- Evaluación comparativa de runtimes: servir como referencia reproducible para medir el impacto de la cuantización int4 e int8 en la calidad de un VLM, gracias a la verificación token a token entre plataformas documentada por el autor.
 
 ## Benchmarks y rendimiento
 
-| Plataforma | Backend | Prefill (256) | Decode | TTFT | Pico de memoria |
-|---|---|---|---|---|---|
-| iPhone 17 Pro | CPU | no disponible | ~10 tok/s | 7,5–9 s (incluye encode visual + prefill) | ~1,5 GiB (1,47 GiB medido) |
-| Apple M4 Max (macOS) | CPU | 65 tok/s | 23,0 tok/s | 4,11 s | no disponible |
-| Apple M4 Max (macOS) | GPU (Metal) | 740 tok/s | 80,0 tok/s | 0,37 s | no disponible |
-| macOS Apple Silicon (LiteRT-LM CPU) | CPU | no disponible | ~66 tok/s | ~2 s | no disponible |
-| Samsung Galaxy S26 | GPU (LiteRT GPU) | no disponible | no disponible | no disponible | 820 MB |
+La model card no publica resultados en benchmarks académicos estándar (MMLU, HumanEval, GSM8K, etc.). Los datos disponibles son mediciones de rendimiento de inferencia y verificaciones cualitativas de precisión:
 
-Otras métricas publicadas: inicialización del motor de 0,8 s en caliente y ~3–4 s en la primera ejecución en iPhone 17 Pro; 2,8 s de init en la compilación de contexto 2048; delegación GPU de 6618/6618 operaciones en 4 subgrafos en el Galaxy S26. En la puerta de cordura de escritorio con 8 preguntas el decodificador obtuvo 7/8 sin degeneración. No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, etc.) en la información disponible.
+| Plataforma | Backend | Prefill (256 tokens) | Decodificación | TTFT | Inicialización | Huella pico |
+|---|---|---|---|---|---|---|
+| Apple M4 Max (macOS) | CPU | 65 tok/s | 23,0 tok/s | 4,11 s | no disponible | no disponible |
+| Apple M4 Max (macOS) | GPU (Metal) | 740 tok/s | 80,0 tok/s | 0,37 s | no disponible | no disponible |
+| iPhone 17 Pro | CPU | no disponible | ~10 tok/s | 7,5–9 s (incluye codificación visual y prefill) | 0,8 s en caliente / 3–4 s primera ejecución | ~1,5 GiB |
+
+Las cifras de escritorio corresponden a `litert-lm benchmark` 0.15.0 con `-p 256 -d 256 --runs 3`, máximo de 4096 tokens y sin incluir el codificador visual. La fila del iPhone corresponde a la comprobación del 3 de agosto de 2026 con la compilación de contexto 2048: inicialización del motor en 2,8 s y 1,47 GiB de pico al describir una foto. En cuanto a precisión cualitativa, se reporta correlación de 1.0 en fp32 y 0.994 en int8 para la torre visual, y una comprobación de cordura de 8 preguntas en escritorio con 7 aciertos y sin degeneración.
 
 ## Requisitos de hardware
 
-- **VRAM/memoria estimada**: ~1,5 GiB de pico en iPhone 17 Pro durante la descripción de una foto; 820 MB de pico en Galaxy S26 con backend GPU. El fichero del bundle ocupa ~2,81 GB en disco (repo de 16,9 GB con artefactos adicionales).
-- **GPU recomendadas**: Apple Silicon (M4 Max verificado, GPU Metal); GPU integrada de Android vía LiteRT GPU; no se documentan requisitos para A100, H100 o RTX 4090, ya que el objetivo es el borde.
-- **¿Cabe en GPU de consumo?**: sí, el diseño está orientado a móvil y portátil; verificado en iPhone 17 Pro, Samsung Galaxy S26 y Apple M4 Max. No hay datos para GPUs discretas de sobremesa.
-- **Opciones de despliegue**: runtime LiteRT-LM (`pip install litert-lm`), CLI `litert-lm run`, servidor local compatible con OpenAI `litert-lm serve`, herramienta `litert-lm benchmark` y app Google AI Edge Gallery para Android. No se menciona soporte de vLLM, llama.cpp, Ollama ni TGI.
-- **Latencia y throughput**: decodificación de ~10 tok/s en iPhone 17 Pro (CPU) y 80 tok/s en M4 Max (GPU Metal); TTFT de 7,5–9 s con imagen en móvil y 0,37 s en GPU de escritorio; turnos de seguimiento solo texto con ~2 s de TTFT en el teléfono.
+- VRAM o memoria unificada estimada: aproximadamente 1,5 GiB de huella pico en inferencia móvil; el archivo en disco ocupa ~2,81 GB.
+- GPU recomendadas: no se especifican modelos concretos de GPU de escritorio; el runtime soporta backend GPU Metal en Apple Silicon. Para A100, H100 o RTX 4090 no hay datos publicados.
+- Compatibilidad con GPU de consumo: el modelo está diseñado para ejecutarse en CPU de dispositivos móviles (iPhone 17 Pro verificado) y en CPU/GPU de Apple Silicon; no se documenta soporte para GPUs NVIDIA de consumo.
+- Opciones de despliegue: runtime LiteRT-LM (`pip install litert-lm`), con los comandos `litert-lm run` para inferencia puntual, `litert-lm serve` para exponer una API local compatible con OpenAI y `litert-lm benchmark` para mediciones. El mismo archivo funciona en macOS, Linux y Windows.
+- Latencia y throughput: 10 tok/s en iPhone 17 Pro (CPU), 23 tok/s en Apple M4 Max (CPU) y 80 tok/s con GPU Metal; TTFT de 7,5–9 s en móvil con imagen y de 0,37 s en M4 Max con GPU.
+- Advertencia operativa: versiones del CLI entre 0.14.0 y 0.19.2 pueden reutilizar descargas incompletas en `~/.litert-lm/cache/huggingface/litert-community/Mage-VL/` sin verificar su tamaño; si el proceso termina con error de bus o con `too large for file size`, debe eliminarse el archivo en caché y repetir la ejecución.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Formato on-device | Licencia | Notas |
-|---|---|---|---|---|---|
-| litert-community/Mage-VL | 4,7B | 2048 | LiteRT-LM (`.litertlm`) | Apache-2.0 | ViT 24L + Qwen3-4B; int4/int8; OCR verificado |
-| Qwen2-VL (bundles LiteRT-LM de la familia) | no disponible | no disponible | LiteRT-LM | no disponible | Usa M-RoPE; el bundle presenta la limitación de ranking con tabla 2-D que Mage-VL evita |
-| microsoft/Mage-VL (modelo base) | 4,7B | no disponible | Pesos originales (no LiteRT) | Apache-2.0 | Incluye pipeline de vídeo con compresión de frames por códec neuronal, ausente en el bundle |
+No se dispone de datos de benchmarks ni de especificaciones de modelos alternativos en la información proporcionada, por lo que la comparación cuantitativa no está disponible. A continuación se indican únicamente los ejes que pueden contrastarse con alternativas de la misma categoría (VLM de 3.000–5.000 millones de parámetros para despliegue local), sin cifras inventadas:
 
-No se dispone de datos de benchmarks comparativos con alternativas de la misma categoría en la información proporcionada.
+| Modelo | Parámetros | Contexto | Formato on-device | Licencia |
+|---|---|---|---|---|
+| Mage-VL (LiteRT-LM) | ~4,7 B | 2048 | `.litertlm` (LiteRT-LM) | Apache-2.0 |
+| Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
 
-- **Solo imágenes**: el pipeline de vídeo del modelo base (compresión de frames con códec neuronal) no está incluido; el bundle maneja imágenes individuales.
-- **Múltiples imágenes sin probar**: se pueden adjuntar varias imágenes, pero el comportamiento con varias imágenes en una misma conversación no está validado.
-- **Contexto limitado a 2048 tokens**: suficiente para VQA y documentos cortos, pero restrictivo para documentos extensos o conversaciones largas.
-- **Resolución fija 448×448**: el encoder se reescribe de forma estática; textos muy pequeños o documentos de alta densidad pueden perder detalle, aunque el OCR se verificó con transcripción perfecta en una página sintética.
-- **Riesgo de alucinación**: no se documentan evaluaciones de fidelidad factual ni tasas de alucinación; como todo VLM, puede generar descripciones plausibles pero incorrectas.
-- **Sesgos**: no se dispone de información sobre sesgos conocidos ni sobre la composición del dataset de entrenamiento.
-- **Idiomas**: no se especifican los idiomas soportados; el decodificador Qwen3-4B tiene capacidades multilingües, pero no están validadas en esta conversión.
-- **Licencia**: Apache-2.0 permite uso comercial, pero conviene revisar las condiciones del modelo base `microsoft/Mage-VL` y del runtime LiteRT-LM.
-- **Madurez**: repositorio con pocas descargas (276) y likes (4); las cifras de rendimiento provienen de pruebas del autor y deben replicarse en el hardware objetivo antes de producción.
-- **Sin soporte documentado** de tool calling, agentes o modo thinking en esta conversión.
+- Contexto limitado a 2048 tokens de caché KV, insuficiente para documentos extensos o conversaciones muy largas; los documentos deben caber en ese presupuesto tras los 196 tokens de imagen.
+- Entrada de imagen fija a 448×448 píxeles: imágenes de mayor resolución se reescalan, lo que puede degradar la lectura de texto muy pequeño o detalles finos, aunque la transcripción de una página de informe sintética se verificó correcta a esa resolución.
+- Idiomas soportados no documentados: no hay garantía explícita de calidad multilingüe más allá de lo observado en las pruebas en inglés de la model card.
+- Sesgos conocidos: no disponible; no se documenta ninguna evaluación de sesgos demográficos, culturales o de otro tipo.
+- Riesgo de alucinación: no cuantificado; como todo VLM, puede generar descripciones plausibles pero incorrectas, especialmente con imágenes ambiguas o de baja calidad. No se han publicado tasas de error en benchmarks de fidelidad visual.
+- Restricciones de licencia: Apache-2.0 permite uso comercial, pero debe conservarse el aviso de licencia y tenerse en cuenta que el modelo base es microsoft/Mage-VL, también Apache-2.0 según la model card.
+- Caveat de producción: la cuantización int4 del decodificador y int8 del codificador introducen pérdida de precisión (correlación 0.994 en la torre visual); la comprobación de cordura de 8 preguntas con 7 aciertos sugiere que pueden aparecer errores en tareas exigentes.
+- Gestión de caché del CLI: las versiones 0.14.0 a 0.19.2 no validan el tamaño ni la versión del archivo descargado, lo que puede provocar fallos silenciosos o ejecución de una versión obsoleta si no se limpia el directorio de caché manualmente.
+- Sin soporte documentado de tool calling, agentes o razonamiento multi-paso, lo que limita su uso en pipelines automatizados complejos.
 
 ## Enlaces
 
-- [litert-community/Mage-VL en Hugging Face](https://huggingface.co/litert-community/Mage-VL)
-- [Árbol de ficheros del repositorio](https://huggingface.co/litert-community/Mage-VL/tree/main)
-- [Modelo base microsoft/Mage-VL](https://huggingface.co/microsoft/Mage-VL)
-- [Runtime LiteRT-LM (Google AI Edge)](https://github.com/google-ai-edge/litert-lm)
-- [Imagen de ejemplo COCO](https://huggingface.co/huggingface/documentation-images)
+- Modelo en Hugging Face: https://huggingface.co/litert-community/Mage-VL
+- Modelo base: https://huggingface.co/microsoft/Mage-VL
+- Runtime LiteRT-LM: https://github.com/google-ai-edge/litert-lm
+- Imagen de ejemplo COCO: https://huggingface.co/huggingface/documentation-images/blob/main/coco_sample.png

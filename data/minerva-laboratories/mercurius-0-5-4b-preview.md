@@ -2,99 +2,103 @@
 
 ## Resumen
 
-Mercurius 0.5 4B Preview es un checkpoint intermedio publicado por Minerva-Laboratories dentro de su Mercurius-Pipeline, un proceso de destilación y reestructuración arquitectónica que parte de Qwen3.5-4B. El modelo no es un transformer convencional: el estudiante se ha convertido en una arquitectura híbrida compuesta por 24 capas GDN-2 (atención lineal de tipo gated delta network) y 8 capas MLA (multi-head latent attention), con adaptadores VeRA y un mecanismo de caché KV propio denominado FoveaKV 2+2 con un 10% de tokens dinámicos (Dyn10). El profesor empleado para la destilación es Qwen3.6-35B-A3B, servido mediante llama.cpp.
+Mercurius 0.5 4B Preview es un checkpoint intermedio de un proceso de destilación propietario denominado Mercurius-Pipeline, desarrollado por Minerva-Laboratories. El modelo parte de Qwen3.5-4B como estudiante y lo convierte en una arquitectura híbrida compuesta por 24 capas GDN-2 y 8 capas MLA, incorporando adaptadores VeRA y un mecanismo de caché KV denominado FoveaKV 2+2 con un 10% de tokens dinámicos (Dyn10). El profesor empleado en la destilación es Qwen3.6-35B-A3B, servido mediante llama.cpp.
 
-El entrenamiento está pausado en el paso 5825 de 6300, con entrenamiento consciente de cuantización (QAT) activo desde el paso 4200, lo que explica que los pesos publicados estén empaquetados en Q4/Q8 en lugar de en precisión completa. El corpus de entrenamiento combina 70,8 millones de tokens de texto, 39,1 millones de tokens de episodios agénticos y 10,4 millones de tokens matemáticos. La relevancia de esta publicación es fundamentalmente experimental: documenta una vía poco habitual de reconversión de un modelo denso de 4B en un híbrido con atención lineal y caché KV selectiva, aunque el propio autor advierte de que se trata de un checkpoint intermedio y no de una versión final.
+El entrenamiento se encuentra pausado en el paso 5825 de 6300, con entrenamiento consciente de cuantización (QAT) activo desde el paso 4200. El corpus utilizado suma 70,8 millones de tokens de texto, 39,1 millones de tokens de episodios agénticos y 10,4 millones de tokens matemáticos. El objetivo declarado es evaluar la viabilidad de la arquitectura híbrida y del esquema FoveaKV antes de una versión final.
 
-El modelo se distribuye bajo licencia Apache 2.0, con pesos en safetensors empaquetados y en GGUF, ambos ligados a herramientas propias del pipeline. No es un checkpoint estándar de Transformers ni se carga con llama.cpp sin parches.
+El modelo es relevante ahora por dos motivos: por un lado, explora la sustitución parcial de atención completa por capas GDN-2 con el fin de reducir el coste de la caché KV en contextos largos; por otro, distribuye pesos empaquetados en Q4/Q8 tanto en formato GGUF como en safetensors, lo que permite medir el impacto real de la cuantización en el rendimiento. No obstante, los resultados publicados muestran degradaciones notables frente al modelo base en código y en tareas de contexto largo, por lo que debe considerarse un artefacto de investigación y no un modelo listo para producción.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Híbrida: 24 capas GDN-2 (atención lineal) + 8 capas MLA, con adaptadores VeRA |
-| Parametros totales | 1.502.753.280 (dato real de safetensors); el autor lo etiqueta como 4B por herencia del modelo base |
+| Arquitectura | Híbrida: 24 capas GDN-2 + 8 capas MLA, con adaptadores VeRA; base Qwen3.5-4B |
+| Parametros totales | 1.502.753.280 (según safetensors) |
 | Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | 32.768 tokens en la configuración de evaluación; perplexity medida a 65.536 |
-| Tipos de cuantizacion | Pesos empaquetados Q4/Q8 (formato propietario `mercurius-packed-v1`); GGUF con Q4/Q8 empaquetados |
+| Longitud de contexto | 65.536 tokens evaluados en PG-19; ventana de evaluación de 32.768 tokens en benchmarks |
+| Tipos de cuantizacion | Pesos empaquetados Q4/Q8 (packed Q4/Q8); GGUF con metadatos FoveaKV Dyn10 |
 | Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (empaquetado, no estándar), GGUF (requiere fork parcheado de llama.cpp), resume.pt (estado de entrenamiento) |
+| Formato de pesos | safetensors (`model.safetensors`, formato `mercurius-packed-v1`), GGUF, `resume.pt` (estado de entrenamiento) |
 
 ## Arquitectura y entrenamiento
 
-El estudiante parte de Qwen3.5-4B y se reconvierte en un híbrido de 32 capas: 24 capas GDN-2, que sustituyen la atención completa por atención lineal con estado recurrente, y 8 capas MLA, que mantienen atención con compresión latente de claves y valores. Sobre esta base se insertan adaptadores VeRA (variante de bajo rango con vectores compartidos), lo que reduce el número de parámetros entrenables. La caché KV se gestiona con FoveaKV 2+2, un esquema que reserva 2 capas con caché completa y 2 con caché selectiva, y que descarta dinámicamente el 10% de los tokens (Dyn10) para limitar el crecimiento de memoria en contextos largos.
+El modelo emplea una arquitectura híbrida que combina 24 capas GDN-2 (atención lineal de tipo gated delta network) con 8 capas MLA (multi-head latent attention), partiendo del transformer denso de Qwen3.5-4B. Sobre esta conversión se añaden adaptadores VeRA, un esquema de adaptación de bajo rango con vectores compartidos. La caché KV utiliza FoveaKV 2+2 con un 10% de tokens dinámicos, un mecanismo que reserva parte de la caché para tokens seleccionados dinámicamente y el resto para ventanas fijas. El número de parámetros reportado en safetensors (1.502.753.280) no coincide con el tamaño nominal de 4B del nombre del modelo, lo que sugiere que el checkpoint empaquetado contiene solo un subconjunto de los pesos o que el empaquetado Q4/Q8 altera el recuento.
 
-El entrenamiento es una destilación desde Qwen3.6-35B-A3B (un MoE de 35B con 3B activos) servido por llama.cpp, sobre un corpus de 120,3 millones de tokens en total: 70,8M de texto, 39,1M de episodios agénticos y 10,4M de matemáticas. Desde el paso 4200 se aplica QAT, de ahí que los pesos publicados estén ya empaquetados en Q4/Q8. El checkpoint se detiene en el paso 5825 de 6300, por lo que el proceso de destilación no ha concluido. La innovación principal es la combinación de atención lineal con caché KV selectiva en un modelo de este tamaño, junto con el formato de pesos empaquetado y el fork de llama.cpp necesario para servirlo.
+El entrenamiento se realizó mediante destilación desde Qwen3.6-35B-A3B, servido con llama.cpp, sobre un corpus de 70,8M tokens de texto, 39,1M tokens de episodios agénticos y 10,4M tokens matemáticos. El entrenamiento consciente de cuantización (QAT) se activó en el paso 4200 y el proceso quedó pausado en el paso 5825 de 6300. No se especifica en la información disponible si se aplicaron fases de RLHF o DPO, ni la composición detallada del corpus más allá de los tres bloques citados. El código del pipeline está publicado en el repositorio `Minerva-Laboratories/Mercurius-Pipeline`, rama `feat/native-foveakv-evaluation`.
 
 ## Capacidades
 
-- Generación de texto conversacional en formato multi-turno.
-- Razonamiento matemático: 91,96% en GSM8K, aunque el propio autor señala que el split de entrenamiento forma parte del corpus (resultado en dominio).
-- Generación de código: 68,90% en HumanEval y 71,21% en MBPP sanitized, por debajo del modelo base.
-- Razonamiento sobre contextos largos: 83,38% en RULER con 5 tareas a 32K.
-- Capacidades agénticas: el corpus incluye 39,1M de tokens de episodios agénticos, lo que sugiere entrenamiento orientado a flujos multi-paso.
-- Perfil de decodificación específico `qwen35_nonthinking_v1` (temperatura 0.7, top-p 0.8, top-k 20, presence penalty 1.5), lo que implica que el modo "thinking" no se usa en la evaluación publicada.
+- Generación de texto conversacional en modo no-thinking, con perfil de decodificación `qwen35_nonthinking_v1` (temperatura 0.7, top-p 0.8, top-k 20, penalización de presencia 1.5).
+- Razonamiento matemático: 91,96% en GSM8K bajo el protocolo de evaluación publicado, aunque el conjunto de entrenamiento incluye el split de GSM8K, por lo que la métrica está contaminada.
+- Generación de código: 68,90% en HumanEval y 71,21% en MBPP sanitized, con degradación frente al modelo base.
+- Manejo de contexto largo: evaluado en RULER a 32K con 83,38% de media y perplejidad PG-19 a 65.536 tokens de 13,09.
+- Capacidades agénticas: el corpus de entrenamiento incluye 39,1M tokens de episodios agénticos, lo que sugiere exposición a trayectorias multi-paso, aunque no se documentan herramientas específicas ni formato de tool calling.
 - Soporte de tool calling / function calling: no disponible en la información proporcionada.
-- Capacidades multimodales (visión, audio): no disponible.
+- Capacidades multilingües: no disponible.
+- Modo thinking: no soportado en la evaluación publicada (se usa explícitamente modo non-thinking).
+- Visión y audio: no disponible.
 
 ## Casos de uso
 
-- Investigación sobre arquitecturas híbridas: sirve como banco de pruebas para medir el impacto de sustituir atención completa por GDN-2 y MLA en un modelo de ~1,5B parámetros reales, comparando directamente contra Qwen3.5-4B con el mismo protocolo de decodificación.
-- Estudio de caché KV selectiva: FoveaKV 2+2 con Dyn10 permite experimentar con políticas de descarte de tokens en contextos de 32K a 65K, útil para grupos que investigan eficiencia de memoria en inferencia.
-- Evaluación de QAT en producción: al estar los pesos empaquetados en Q4/Q8 desde el paso 4200, el checkpoint permite analizar la degradación de calidad asociada a la cuantización consciente frente al modelo base en precisión completa.
-- Prototipado de pipelines de destilación: el repositorio `Mercurius-Pipeline` y el estado `resume.pt` documentan el proceso completo, lo que facilita reproducir o extender la receta con otros profesores o corpus.
-- Benchmarking de decodificación en contextos largos: con RULER a 32K y perplexity a 65.536, es adecuado para validar implementaciones de atención lineal en tareas de recuperación de información en documentos extensos.
-- Análisis de fallos en generación de código: dado que el autor reporta salidas repetitivas largas en algunos prompts de código, el modelo resulta útil para estudiar modos de fallo de la destilación en tareas de programación y diseñar mitigaciones.
+- Investigación sobre arquitecturas híbridas de atención: el modelo permite medir el impacto de sustituir 24 de las 32 capas por GDN-2 y comparar la calidad resultante frente al transformer denso original, usando el mismo protocolo de decodificación y los mismos ejemplos.
+- Evaluación de esquemas de caché KV comprimida: FoveaKV 2+2 con Dyn10 puede analizarse en cargas de contexto largo (RULER a 32K, PG-19 a 65K) para cuantificar la pérdida de recuperación de información en tareas de multiple-key y multivalue.
+- Estudio de cuantización consciente (QAT): al distribuir pesos empaquetados Q4/Q8, sirve para analizar la brecha de rendimiento entre un checkpoint cuantizado y el modelo base en F32 con caché KV exacta.
+- Reproducción de pipelines de destilación: el repositorio Mercurius-Pipeline y el archivo `resume.pt` permiten reanudar el entrenamiento desde el paso 5825 y experimentar con la rama `feat/native-foveakv-evaluation`.
+- Benchmarking de decodificación especulativa y perfiles de sampling: el perfil `qwen35_nonthinking_v1` documentado permite replicar exactamente las condiciones de evaluación y comparar variantes de decodificación.
+- Docencia y divulgación técnica: como checkpoint intermedio con métricas publicadas y limitaciones explícitas, es útil para ilustrar en cursos o artículos el compromiso entre eficiencia de caché y calidad en modelos híbridos.
+- Pruebas de robustez frente a bucles repetitivos: los cinco fallos por límite de 32.768 tokens documentados en HumanEval, MBPP y GSM8K constituyen un caso de estudio sobre degeneración en generación larga.
 
 ## Benchmarks y rendimiento
 
-Resultados medidos con llama.cpp/CUDA, FoveaKV Dyn10 y perfil `qwen35_nonthinking_v1`, con límite de generación de 32.768 tokens.
+Evaluación con llama.cpp/CUDA, mismos ejemplos, prompts y semillas por ejemplo, modo non-thinking, perfil `qwen35_nonthinking_v1`, hasta 32.768 tokens por respuesta. Mercurius con FoveaKV 2+2 Dyn10; Qwen3.5-4B con pesos F32 y caché KV exacta. Una muestra por ejemplo, sin reintentos ni best-of.
 
-| Benchmark | Mercurius 5825 | Qwen3.5-4B, mismo protocolo |
-|---|---:|---:|
-| HumanEval (164) | 68,90% | 84,15% |
-| MBPP sanitized (257) | 71,21% | 79,38% |
-| GSM8K (1.319) | 91,96% | 94,16% |
-| RULER, 5 tareas a 32K (200) | 83,38% | parcial |
-| PG-19 perplexity a 65.536 (12 libros) | 13,09 | parcial |
+| Benchmark | Mercurius 0.5 4B Preview | Qwen3.5-4B (mismo protocolo) | Diferencia |
+|---|---:|---:|---:|
+| HumanEval (164) | 68,90% | 84,15% | -15,2 pp |
+| MBPP sanitized (257) | 71,21% | 79,38% | -8,2 pp |
+| GSM8K (1.319) | 91,96% | 94,16% | -2,2 pp |
+| RULER, 5 tareas a 32K (200) | 83,38% | 92,25% | -8,9 pp |
+| PG-19 perplexity a 65.536 (12 libros, menor es mejor) | 13,09 | 12,22 | +0,86 |
 
-El propio autor advierte de que GSM8K está en dominio porque su split de entrenamiento forma parte del corpus. En el resto de benchmarks el checkpoint intermedio queda por debajo del modelo base, especialmente en código.
+Desglose adicional: en RULER, la mayor parte de la pérdida de Mercurius se concentra en `niah_multikey_3` (60,0% frente a 72,5%) y `niah_multivalue` (82,5% frente a 96,25%); ambos modelos alcanzan el 100% en `niah_multikey_2`. En PG-19, la brecha de NLL se mantiene en torno a 0,06-0,07 nats en todos los tramos de posición, de 0-2K a 32K-64K, por lo que no crece con la longitud de contexto. Mercurius produjo 5 respuestas que alcanzaron el límite de 32.768 tokens entre HumanEval, MBPP y GSM8K, todas fallidas por bucles repetitivos; el modelo original no produjo ninguna.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: con pesos empaquetados Q4/Q8 y ~1,5B parámetros reales, la carga en memoria rondaría los 1-2 GB para los pesos; el consumo adicional depende de la caché FoveaKV y del contexto, que a 32K puede añadir varios GB.
-- GPU recomendadas: no disponible en la información proporcionada. Por tamaño, cabría en GPUs de consumo con al menos 8 GB, pero el autor no publica requisitos oficiales.
-- Cabe en GPU de consumo: previsiblemente sí, dado el tamaño real de 1,5B parámetros, aunque no hay confirmación del autor.
-- Opciones de despliegue: llama.cpp con el fork parcheado construido por `scripts/build_native_bench.sh` (el llama.cpp estándar no carga el GGUF correctamente); pipeline PyTorch propio con `config.json`, tokenizer y `export-manifest.json`. vLLM, TGI y Ollama no están soportados según la información disponible.
-- Latencia y throughput: no disponible.
+- VRAM estimada para inferencia: no disponible de forma explícita. Con pesos empaquetados Q4/Q8 y un recuento de 1.502.753.280 parámetros en safetensors, la huella de pesos sería del orden de 1-1,5 GB en Q4 y 1,5-3 GB en Q8, a lo que habría que sumar la caché KV FoveaKV y el overhead del runtime.
+- GPU recomendadas: no disponible. La evaluación publicada se realizó con llama.cpp sobre CUDA, sin especificar modelo de GPU.
+- Compatibilidad con GPU de consumo: probable por tamaño de pesos, pero no confirmada en la información disponible; el GGUF requiere el fork parcheado de llama.cpp construido con `scripts/build_native_bench.sh`.
+- Opciones de despliegue: llama.cpp (obligatoriamente el fork parcheado de Minerva-Laboratories para el GGUF); el checkpoint safetensors no es un checkpoint estándar de Transformers y requiere el pipeline Mercurius con `config.json`, tokenizer y `export-manifest.json`. No se documenta soporte para vLLM, TGI, Ollama ni SGLang.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | HumanEval | GSM8K | Licencia | Disponibilidad |
-|---|---|---:|---:|---:|---|---|
-| Mercurius 0.5 4B Preview | 1,5B reales (etiquetado 4B) | 32K evaluado | 68,90% | 91,96% | Apache 2.0 | Pesos empaquetados + GGUF con fork |
-| Qwen3.5-4B (base) | 4B | no disponible | 84,15% | 94,16% | no disponible | Estándar |
-| Qwen3.6-35B-A3B (profesor) | 35B totales, 3B activos | no disponible | no disponible | no disponible | no disponible | Estándar |
+| Modelo | Parámetros | Contexto | HumanEval | GSM8K | RULER 32K | Licencia | Disponibilidad |
+|---|---|---:|---:|---:|---:|---|---|
+| Mercurius 0.5 4B Preview | 1.502.753.280 (safetensors empaquetado) | 65.536 (evaluado) | 68,90% | 91,96% | 83,38% | Apache 2.0 | Hugging Face, checkpoint intermedio |
+| Qwen3.5-4B | 4B (nominal) | no disponible | 84,15% | 94,16% | 92,25% | no disponible | Hugging Face |
+| Qwen3.6-35B-A3B (profesor) | 35B totales, A3B activos | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
-La comparación directa con el modelo base es la más informativa: el checkpoint intermedio pierde 15,25 puntos en HumanEval y 8,17 en MBPP respecto a Qwen3.5-4B, y 2,2 puntos en GSM8K. No se dispone de datos de otros modelos híbridos comparables en la información proporcionada.
+La comparación directa con Qwen3.5-4B es la única disponible con métricas publicadas bajo protocolo idéntico; el profesor Qwen3.6-35B-A3B se cita únicamente como origen de la destilación y no cuenta con resultados en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Checkpoint intermedio: el entrenamiento está pausado en el paso 5825 de 6300, por lo que no es una versión final ni representa el techo de la receta.
-- Degradación frente al base: pierde entre 8 y 15 puntos en benchmarks de código respecto a Qwen3.5-4B.
-- Salidas repetitivas: el autor reporta generaciones largas y repetitivas en algunos prompts de código.
-- GSM8K en dominio: el split de entrenamiento forma parte del corpus, por lo que el 91,96% no es comparable con evaluaciones zero-shot.
-- Formato no estándar: los pesos safetensors están empaquetados (`mercurius-packed-v1`) y no se cargan con Transformers convencional; el GGUF requiere un fork parcheado de llama.cpp.
-- Riesgo de alucinación: no cuantificado en la información disponible, pero esperable en un modelo destilado de 1,5B parámetros reales.
-- Idiomas soportados: no especificados; no hay garantía de cobertura multilingüe más allá de la del modelo base.
-- Sesgos: no documentados por el autor.
-- Licencia Apache 2.0: permite uso comercial, pero la dependencia de un fork de llama.cpp y de un pipeline propio condiciona el despliegue en producción.
-- Sin datos de tool calling ni de capacidades multimodales: no apto para esos casos sin validación previa.
+- Checkpoint intermedio: el entrenamiento está pausado en el paso 5825 de 6300, por lo que no representa una versión final ni un modelo validado para producción.
+- Degradación frente al modelo base: pierde 15,2 pp en HumanEval, 8,2 pp en MBPP, 8,9 pp en RULER a 32K y 2,2 pp en GSM8K, además de empeorar la perplejidad PG-19 en 0,86 puntos.
+- Contaminación de benchmark: el split de entrenamiento de GSM8K forma parte del corpus, por lo que la puntuación de 91,96% no es una medida limpia de capacidad matemática.
+- Bucles repetitivos: se documentan 5 respuestas que agotan el límite de 32.768 tokens y fallan, un riesgo relevante en generación larga y en pipelines automatizados.
+- Atribución imposible: la comparación se hace entre modelos completos desplegados, por lo que no se puede separar el efecto del entrenamiento, la conversión a MLA, la cuantización de pesos y FoveaKV.
+- Dependencia de tooling no estándar: el GGUF requiere un fork parcheado de llama.cpp y el safetensors no es un checkpoint estándar de Transformers; el despliegue con herramientas convencionales no está soportado.
+- Discrepancia de parámetros: el recuento de safetensors (1.502.753.280) no coincide con el tamaño nominal de 4B del nombre, lo que exige verificar el contenido real del checkpoint antes de usarlo.
+- Idiomas soportados no documentados: no hay información sobre cobertura multilingüe ni sobre calidad fuera del inglés.
+- Sesgos conocidos: no documentados en la información proporcionada.
+- Licencia Apache 2.0: permite uso comercial, pero al derivar de Qwen3.5-4B conviene verificar las condiciones del modelo base y de los datos de destilación.
+- Riesgo de alucinación: no cuantificado en la información disponible; la degradación en tareas de recuperación en contexto (RULER) sugiere mayor propensión a errores cuando la respuesta depende de información distribuida en ventanas largas.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/Minerva-Laboratories/Mercurius-0.5-4B-Preview
-- Repositorio del pipeline (rama `feat/native-foveakv-evaluation`): `Minerva-Laboratories/Mercurius-Pipeline` (referenciado en la model card; URL no proporcionada)
+- Hugging Face: https://huggingface.co/Minerva-Laboratories/Mercurius-0.5-4B-Preview
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
-- Paper, blog o demo adicionales: no disponible
+- Repositorio del pipeline: `Minerva-Laboratories/Mercurius-Pipeline`, rama `feat/native-foveakv-evaluation` (no se dispone de URL directa en la información proporcionada)
+- Script de compilación del fork de llama.cpp: `scripts/build_native_bench.sh` dentro del repositorio del pipeline
+- Paper, blog o demo: no disponibles en la información proporcionada

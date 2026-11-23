@@ -2,58 +2,55 @@
 
 ## Resumen
 
-DeepSeek-V4-Pro-0813 es la version oficial de DeepSeek-V4-Pro, publicada por DeepSeek AI y redistribuida en este repositorio por RedHatAI. Sustituye a la version Preview e incorpora mejoras sustanciales en capacidades agenticas (uso de herramientas, ejecucion de tareas multi-paso y desarrollo de software autonomo). El modelo se construye sobre la estructura de DeepSeek-V4-Pro (Preview) con un modulo de decodificacion especulativa denominado DSpark acoplado.
+DeepSeek-V4-Pro-0813 es la versión oficial del modelo insignia de la familia DeepSeek V4, publicada por DeepSeek y redistribuida en cuantización FP8 de 8 bits por Red Hat AI (RedHatAI) bajo el identificador `RedHatAI/DeepSeek-V4-Pro-0813`. Sustituye a la versión Preview y se centra en mejorar de forma notable las capacidades agénticas y el rendimiento en entornos de producción. El modelo cuenta con 1,65 billones de parámetros totales (1.650.497.936.906 según los pesos en safetensors) y una arquitectura de tipo `deepseek_v4` con mezcla de expertos (MoE), lo que permite activar solo una fracción de los parámetros por token.
 
-El repositorio de RedHatAI contiene pesos en formato safetensors con cuantizacion de 8 bits / FP8, es compatible con la libreria transformers y con endpoints, y se distribuye bajo licencia MIT. El dato real extraido de los safetensors indica 1.650.497.936.906 parametros totales (aproximadamente 1,65 billones), con un tamano de repositorio de 892,8 GB, lo que lo situa en la categoria de modelos frontera que requieren infraestructura multi-GPU de centro de datos.
+La relevancia de esta versión radica en su salto cualitativo en tareas de agente: frente a la Preview, mejora de forma drástica en benchmarks como DeepSWE (62,7 frente a 12,8), NL2Repo (61,5 frente a 38,5) o Cybergym (83,3 frente a 52,7), y se sitúa en rango competitivo con modelos propietarios de primer nivel como Opus-4.8 o Fable-5 en varias pruebas. Incorpora además un módulo de decodificación especulativa propio, DSpark, que acelera la inferencia y se activa con un único flag en vLLM.
 
-La relevancia actual del modelo radica en su orientacion a entornos de produccion con agentes: la model card reporta resultados competitivos con modelos propietarios de primera linea en pruebas como Terminal Bench 2.1, DeepSWE, Toolathlon-Verified y Cybergym, ademas de soportar tres niveles de esfuerzo de razonamiento (`low`, `high`, `max`) y un modo de pensamiento explicito. El ID de arXiv asociado es 2606.19348.
+La licencia es MIT, lo que facilita su uso comercial, y el repositorio ocupa 892,8 GB en formato safetensors cuantizado a FP8. Está pensado para despliegues de gran escala en clústeres con GPUs de última generación (por ejemplo, nodos de 4×GB300), no para hardware de consumo.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer con mezcla de expertos (MoE), segun los flags de despliegue de la model card (`--enable-expert-parallel`, `--moe-backend deep_gemm_mega_moe`); la model card no detalla la arquitectura completa |
-| Parametros totales | 1.650.497.936.906 (dato real extraido de los safetensors) |
+| Arquitectura | Transformer con mezcla de expertos (MoE), familia `deepseek_v4` |
+| Parametros totales | 1.650.497.936.906 (1,65 B) |
 | Parametros activos | no disponible |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | 8 bits / FP8 en este repositorio (tags: `8-bit`, `fp8`); la model card no enumera otras variantes |
+| Tipos de cuantizacion | FP8 (8 bits); pesos publicados en safetensors cuantizados |
 | Idiomas soportados | no disponible |
 | Licencia | MIT |
-| Formato de pesos | safetensors (libreria transformers; repo de 892,8 GB) |
+| Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
 
-La informacion disponible confirma que el modelo es una arquitectura de mezcla de expertos (MoE) con atencion estandar de tipo transformer: los comandos de despliegue de la model card activan `--enable-expert-parallel`, usan el backend `deep_gemm_mega_moe` para las capas MoE y configuran `--attention-config '{"use_fp4_indexer_cache": true}'`, lo que sugiere un mecanismo de indexado de atencion que puede almacenarse en cache FP4. No se dispone de detalles sobre el numero de expertos, el ratio de activacion por token, el numero de capas ni la dimension oculta.
+El modelo se basa en la estructura de DeepSeek-V4-Pro (Preview), una arquitectura transformer con mezcla de expertos (MoE) y atención optimizada, e incorpora un módulo de decodificación especulativa denominado DSpark adjunto al modelo base. Este módulo permite generar varios tokens candidatos por paso con un modelo borrador y validarlos con el modelo principal, reduciendo la latencia de generación; en vLLM se activa mediante `--speculative-config` con `method: dspark`, `num_speculative_tokens: 7` y `draft_sample_method: greedy`.
 
-La innovacion tecnica destacada es DSpark, un modulo de decodificacion especulativa integrado en la propia estructura del modelo y que se habilita con un unico flag: en vLLM mediante `--speculative-config '{"method":"dspark","num_speculative_tokens":7,"draft_sample_method":"greedy"}'` y en SGLang con `--speculative-algorithm DSPARK`. La model card no proporciona informacion sobre el volumen de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de RLHF o DPO. Tampoco incluye una plantilla de chat en formato Jinja: en su lugar se distribuye una carpeta `encoding` con scripts Python (`encoding_dsv4`) para convertir mensajes en formato compatible con OpenAI a la cadena de entrada del modelo y para parsear su salida.
+No se dispone en la información proporcionada de detalles sobre el volumen de tokens de entrenamiento, la composición del dataset ni las etapas de alineación (RLHF/DPO). La model card menciona un informe técnico en arXiv (2606.19348) que presumiblemente contiene estos datos, pero su contenido no se incluye aquí. Sí se documenta un sistema de razonamiento configurable mediante el parámetro `reasoning_effort` con tres niveles (`low`, `high`, `max`), que controla cuánto delibera el modelo antes de responder, y un modo de pensamiento (`thinking_mode`) integrado en la plantilla de codificación propia.
 
 ## Capacidades
 
-- Generacion de texto y razonamiento con modo de pensamiento explicito y tres niveles de esfuerzo configurables: `low`, `high` y `max`.
-- Razonamiento agentico y multi-paso: los benchmarks reportados se evaluan con un framework de agente (DeepSeek Harness) y con `temperature = 1.0, top_p = 0.95`.
-- Uso de herramientas: la prueba Toolathlon-Verified (74,1) y el soporte del parametro de herramientas en la codificacion de mensajes indican soporte de tool calling / function calling.
-- Tareas de terminal y operacion de sistemas: Terminal Bench 2.1 con 87,9 puntos.
-- Desarrollo de software y agentes de codigo: DeepSWE (62,7), NL2Repo (61,5), DSBench-FullStack (71,1) y DSBench-Hard (67,2).
-- Ciberseguridad en entornos de agente: Cybergym con 83,3.
-- Razonamiento de alta dificultad con y sin herramientas: HLE con 42,7 sin herramientas y 60,0 con herramientas.
-- Capacidades multilingues: no disponible en la informacion proporcionada.
-- Vision, audio u otras modalidades: no disponible.
+- Generación de texto y razonamiento avanzado con modo de pensamiento configurable en tres niveles de esfuerzo (`low`, `high`, `max`).
+- Capacidades agénticas reforzadas: ejecución de tareas multi-paso, uso de herramientas y automatización de flujos complejos, con mejoras notables frente a la Preview en benchmarks como Toolathlon-Verified, AutomationBench y Agents' Last Exam.
+- Ingeniería de software y código: resolución de problemas de desarrollo full-stack (DSBench-FullStack, DSBench-Hard), generación de repositorios a partir de lenguaje natural (NL2Repo) y tareas de terminal (Terminal Bench 2.1).
+- Ciberseguridad ofensiva y defensiva evaluada en Cybergym.
+- Razonamiento científico y de conocimiento experto con y sin herramientas (HLE con y sin tools).
+- Soporte de function calling y tool calling, con compatibilidad con endpoints de estilo OpenAI (`endpoints_compatible`).
+- Codificación y decodificación de mensajes mediante scripts Python propios (`encoding_dsv4`), sin plantilla Jinja estándar.
+- Capacidades multilingües: no documentadas en la información disponible.
 
 ## Casos de uso
 
-- Agentes de desarrollo de software autonomos: el modelo puede resolver tareas de repositorio completo (NL2Repo, 61,5) y problemas dificiles de ingenieria (DSBench-Hard, 67,2), integrándose en pipelines de CI/CD como agente que propone parches y valida tests.
-- Automatizacion de operaciones en terminal: con 87,9 en Terminal Bench 2.1, es adecuado para agentes que ejecutan comandos, depuran fallos de entorno y administran sistemas en un bucle de observacion-accion.
-- Orquestacion de herramientas empresariales: el resultado de 74,1 en Toolathlon-Verified lo hace apto para agentes que encadenan APIs, consultas a bases de datos y servicios internos mediante function calling.
-- Analisis de seguridad ofensiva y defensiva en laboratorio: Cybergym (83,3) indica utilidad en tareas de deteccion de vulnerabilidades y ejercicios de red team dentro de entornos controlados.
-- Razonamiento experto asistido por herramientas: HLE con herramientas alcanza 60,0, por lo que puede emplearse en investigacion tecnica donde el modelo consulta buscadores o calculadoras externas antes de responder.
-- Asistentes de codificacion full-stack: DSBench-FullStack (71,1) sugiere su uso en generacion y mantenimiento de aplicaciones completas, con el modo de razonamiento `max` para tareas complejas y `low` para autocompletado.
-- Despliegue en endpoints compatibles con OpenAI: el tag `endpoints_compatible` y los scripts de `encoding` permiten sustituir modelos propietarios en infraestructuras existentes sin cambiar el contrato de la API.
+- Agentes autónomos de desarrollo de software: el modelo puede resolver tareas de ingeniería de extremo a extremo (lectura de repositorio, edición de código, ejecución en terminal) gracias a sus resultados en Terminal Bench 2.1 (87,9) y DeepSWE (62,7), integrándose en pipelines de CI/CD como agente de corrección o generación de parches.
+- Generación de repositorios completos a partir de especificaciones en lenguaje natural: con 61,5 en NL2Repo, es adecuado para prototipado rápido de aplicaciones full-stack donde se parte de un brief y se espera un esqueleto de código funcional.
+- Automatización de operaciones de seguridad: su puntuación de 83,3 en Cybergym lo hace apto para tareas de análisis de vulnerabilidades, simulación de ataques controlados y respuesta a incidentes en entornos autorizados.
+- Asistentes de investigación con acceso a herramientas: el rendimiento de 60,0 en HLE con herramientas permite usarlo en flujos de búsqueda, verificación y síntesis de información científica con recuperación aumentada.
+- Automatización de procesos empresariales multi-paso: con 74,1 en Toolathlon-Verified y 31,8 en AutomationBench, puede orquestar llamadas a APIs, hojas de cálculo y sistemas internos en flujos de back-office.
+- Razonamiento de alta exigencia con control de coste: el parámetro `reasoning_effort` permite ajustar la profundidad de deliberación según la tarea, usando `low` para consultas simples y `max` para problemas complejos, optimizando latencia y consumo.
+- Despliegue en producción a gran escala: la integración con vLLM, la decodificación especulativa DSpark y el soporte de FP8 permiten servir el modelo en clústeres multi-GPU con throughput elevado.
 
 ## Benchmarks y rendimiento
 
-Resultados reportados en la model card del autor (evaluacion con DeepSeek Harness en modo minimal, `max` reasoning effort, `temperature = 1.0`, `top_p = 0.95`):
-
-| Benchmark | V4-Pro-0813 | V4-Flash-0731 | V4-Pro (Preview) | V4-Flash (Preview) | GLM-5.2 | Kimi K3 | Opus-4.8 | Fable-5 |
+| Benchmark | V4-Pro-0813 | V4-Flash-0731 | V4-Pro (Preview) | V4-Flash (Preview) | GLM-5.2 | Kimi K3 | Opus-4.8 | Fable-5 (w/ fallback) |
 |---|---|---|---|---|---|---|---|---|
 | HLE (sin / con herramientas) | 42,7 / 60,0 | 37,8 / 51,5 | 37,7 / 48,2 | 34,8 / 45,1 | 40,5 / 54,7 | 43,5 / 56,0 | 49,8 / 57,9 | 53,3 / 63,0 |
 | Terminal Bench 2.1 | 87,9 | 82,7 | 72,1 | 61,8 | 81,0 | 88,3 | 85,0 | 88,0 |
@@ -62,56 +59,47 @@ Resultados reportados en la model card del autor (evaluacion con DeepSeek Harnes
 | DeepSWE | 62,7 | 54,4 | 12,8 | 7,3 | 46,2 | 67,5 | 58,0 | 70,0 |
 | Toolathlon-Verified | 74,1 | 70,3 | 55,9 | 49,7 | 59,9 | 76,5 | 76,2 | 77,9 |
 | Agents' Last Exam | 25,7 | 25,2 | 16,5 | 15,8 | 23,8 | 27,6 | 25,7 | - |
-| AutomationBench (Public) | 31,8 | 25,1 | 12,8 | 10,8 | 12,9 | 30,8 | 27,2 | 29,1 |
-| DSBench-FullStack (interno) | 71,1 | 68,7 | 41,8 | 37,0 | 61,8 | 73,7 | 71,6 | 77,2 |
-| DSBench-Hard (interno) | 67,2 | 59,6 | 31,1 | 25,8 | 54,5 | 63,0 | 71,7 | 68,3 |
+| AutomationBench (público) | 31,8 | 25,1 | 12,8 | 10,8 | 12,9 | 30,8 | 27,2 | 29,1 |
+| DSBench-FullStack † | 71,1 | 68,7 | 41,8 | 37,0 | 61,8 | 73,7 | 71,6 | 77,2 |
+| DSBench-Hard † | 67,2 | 59,6 | 31,1 | 25,8 | 54,5 | 63,0 | 71,7 | 68,3 |
 
-DSBench-FullStack y DSBench-Hard son conjuntos internos del autor, no benchmarks publicos. No se dispone de resultados de MMLU, GSM8K, HumanEval ni de otras pruebas clasicas en la informacion proporcionada.
+† DSBench-FullStack y DSBench-Hard son conjuntos de prueba internos de DeepSeek. Las tareas de agente de código se evaluaron con el modo minimal de DeepSeek Harness, `reasoning_effort = max`, `temperature = 1.0` y `top_p = 0.95`.
 
 ## Requisitos de hardware
 
-- Los pesos de este repositorio ocupan 892,8 GB, por lo que la inferencia requiere agregacion de memoria entre varias GPU. Como referencia aritmetica, repartidos sobre 4 GPU suponen aproximadamente 223 GB por GPU.
-- La model card documenta el despliegue en un unico nodo de 4 GPU GB300 (Blackwell Ultra) con vLLM, usando `--data-parallel-size 4`, `--enable-expert-parallel`, `--kv-cache-dtype fp8`, `--block-size 256` y `--attention-config '{"use_fp4_indexer_cache": true}'`.
-- GPU de gama de centro de datos: GB300 esta confirmada por la model card. No se especifican otras configuraciones validadas; el enlace a la receta de vLLM se presenta como fuente de "otras configuraciones de hardware".
-- No cabe en GPU de consumo: con 1,65 billones de parametros, incluso una cuantizacion de 4 bits exigiria del orden de 825 GB solo para pesos, muy por encima de la VRAM de una RTX 4090 (24 GB) o de cualquier GPU consumer actual.
-- Opciones de despliegue documentadas: vLLM con DSpark activado por flag y SGLang con `--speculative-algorithm DSPARK`. No se mencionan llama.cpp, Ollama ni TGI en la informacion disponible.
-- Latencia y throughput: no disponible. La model card no publica mediciones de tokens por segundo ni tiempos de primera token.
+- VRAM estimada: con 1,65 billones de parámetros en FP8, los pesos ocupan aproximadamente 1,65 TB; se requiere un clúster multi-GPU con memoria agregada muy superior a esa cifra para acomodar pesos, caché KV y activaciones.
+- GPU recomendadas: el ejemplo oficial de despliegue usa un nodo de 4×GB300 con vLLM. Se recomienda hardware de centro de datos de última generación (GB300, H100/H200, B200) con interconexión de alta velocidad.
+- No cabe en GPUs de consumo (RTX 4090, 5090 ni similares); el modelo no está pensado para inferencia local en una sola tarjeta.
+- Opciones de despliegue: vLLM es la vía documentada, con soporte de `--kv-cache-dtype fp8`, `--enable-expert-parallel`, `--moe-backend deep_gemm_mega_moe`, caché de índice FP4 (`use_fp4_indexer_cache`) y decodificación especulativa DSpark. No se documentan recetas para llama.cpp, Ollama ni TGI en la información disponible.
+- Latencia y throughput: no se publican cifras concretas; la decodificación especulativa DSpark (7 tokens especulativos, muestreo greedy) está orientada a reducir la latencia de generación.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento relativo segun la model card |
+| Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| DeepSeek-V4-Pro-0813 | 1,65 billones (total) | no disponible | MIT | Hugging Face (RedHatAI y deepseek-ai) | Referencia |
-| DeepSeek-V4-Pro (Preview) | no disponible | no disponible | no disponible | Hugging Face | Inferior en las 10 pruebas reportadas; p. ej. DeepSWE 12,8 frente a 62,7 |
-| DeepSeek-V4-Flash-0731 | no disponible | no disponible | no disponible | Hugging Face | Competitivo pero inferior en la mayoria de pruebas; AutomationBench 25,1 frente a 31,8 |
-| GLM-5.2 | no disponible | no disponible | no disponible | no disponible | Inferior en casi todas las pruebas reportadas; Toolathlon 59,9 frente a 74,1 |
-| Kimi K3 | no disponible | no disponible | no disponible | no disponible | Mixto: supera a V4-Pro-0813 en HLE, Terminal Bench 2.1, DeepSWE y Toolathlon; queda por debajo en DSBench-Hard y AutomationBench |
-| Opus-4.8 | no disponible | no disponible | no disponible | no disponible | Mixto: supera en HLE, NL2Repo y DSBench-Hard; inferior en Terminal Bench 2.1, Cybergym y Toolathlon |
-| Fable-5 (con fallback) | no disponible | no disponible | no disponible | no disponible | Superior en HLE, DeepSWE, DSBench-FullStack y Toolathlon; inferior en Cybergym y DSBench-Hard |
-
-Los datos de parametros, contexto y licencia de los modelos comparados no aparecen en la informacion proporcionada; solo se dispone de sus puntuaciones en la tabla de benchmarks.
+| DeepSeek-V4-Pro-0813 | 1,65 B (MoE, FP8) | no disponible | MIT | Hugging Face (RedHatAI) | Mejor equilibrio agéntico de la familia V4; DSpark integrado |
+| DeepSeek-V4-Flash-0731 | no disponible | no disponible | no disponible | Hugging Face (DeepSeek) | Variante más ligera; inferior en todos los benchmarks publicados |
+| Kimi K3 | no disponible | no disponible | no disponible | no disponible | Competitivo en Terminal Bench (88,3), DeepSWE (67,5) y Toolathlon (76,5) |
+| Opus-4.8 | no disponible | no disponible | propietaria | API | Superior en HLE (49,8 sin herramientas) y NL2Repo (69,7) |
 
 ## Limitaciones y advertencias
 
-- Riesgo de alucinacion: no se documenta ningun mecanismo de mitigacion ni tasa de error; como modelo generativo de gran escala, mantiene este riesgo en produccion.
-- Idiomas soportados: no declarados. No se puede garantizar un rendimiento uniforme fuera del ingles y el chino sin evaluacion propia.
-- Longitud de contexto: no especificada, lo que impide planificar despliegues con documentos largos o conversaciones multi-turno extensas sin medirlo previamente.
-- Sin plantilla de chat Jinja: es obligatorio usar la carpeta `encoding` y los scripts proporcionados para formatear mensajes y parsear salidas; no es un modelo plug-and-play con el pipeline estandar de transformers.
-- Requiere `--trust-remote-code` en vLLM, lo que implica ejecutar codigo del repositorio con privilegios: conviene auditar el repositorio antes de desplegarlo en produccion.
-- Coste de infraestructura muy elevado: 892,8 GB de pesos y necesidad de nodos de 4 GPU GB300 o equivalentes; no es viable en entornos con una sola GPU ni en hardware de consumo.
-- Procedencia: este repositorio lo publica RedHatAI, no el autor original. Registra 0 descargas y 0 likes y fue creado el 11 de septiembre de 2026. Se recomienda verificar la integridad de los pesos contra el repositorio oficial de DeepSeek antes de usarlos en produccion.
-- Resultados de benchmarks parcialmente autoinformados: dos de las diez pruebas (DSBench-FullStack y DSBench-Hard) son conjuntos internos del autor y no son reproducibles de forma independiente. Ademas, la evaluacion se realizo con un framework de agente concreto (DeepSeek Harness en modo minimal), por lo que los numeros no son directamente comparables con evaluaciones en zero-shot.
-- Algunas comparaciones de la tabla incluyen la anotacion "(w/ fallback)" en el caso de Fable-5, lo que indica una configuracion asistida que puede no ser equivalente al resto de entradas.
-- Licencia MIT: permite uso comercial y modificacion, pero no incluye garantias ni clausulas de responsabilidad por parte de los autores; el cumplimiento normativo del despliegue recae en el integrador.
+- No se documentan sesgos conocidos ni evaluaciones de seguridad en la información proporcionada; conviene auditar el modelo antes de usos sensibles.
+- Riesgo de alucinación inherente a los modelos de lenguaje de gran escala; los resultados en HLE (42,7 sin herramientas) indican que aún comete errores en razonamiento experto.
+- El repositorio no incluye plantilla de chat Jinja; es obligatorio usar los scripts de la carpeta `encoding` para formatear mensajes correctamente, lo que añade complejidad de integración.
+- No se especifican los idiomas soportados ni la longitud de contexto, lo que dificulta planificar despliegues con requisitos multilingües o de contexto largo.
+- El tamaño (892,8 GB en el repositorio, ~1,65 TB de pesos FP8) exige infraestructura de centro de datos; no es viable en hardware de consumo.
+- Aunque la licencia es MIT, el uso comercial de un modelo de este tamaño implica costes operativos elevados y requisitos de cumplimiento propios de cada organización.
+- Las puntuaciones en DSBench-FullStack y DSBench-Hard provienen de conjuntos internos de DeepSeek y no son verificables de forma independiente.
+- La información de benchmarks corresponde al autor del modelo; no se han incluido evaluaciones de terceros.
 
 ## Enlaces
 
-- Repositorio en Hugging Face (RedHatAI): https://huggingface.co/RedHatAI/DeepSeek-V4-Pro-0813
-- Repositorio oficial de DeepSeek AI referenciado en la model card: https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro-0813
-- Informe tecnico (arXiv:2606.19348): https://arxiv.org/abs/2606.19348
-- Receta de despliegue con vLLM: https://recipes.vllm.ai/deepseek-ai/DeepSeek-V4-Pro
-- Organizacion de DeepSeek AI en Hugging Face: https://huggingface.co/deepseek-ai
-- Sitio oficial: https://www.deepseek.com/
-- Chat publico: https://chat.deepseek.com/
-- Perfil en X/Twitter: https://twitter.com/deepseek_ai
-- Busqueda web: las consultas realizadas no devolvieron resultados relevantes sobre el modelo; los unicos resultados obtenidos correspondian a paginas de Google Meet y no guardan relacion con DeepSeek-V4-Pro-0813.
+- Modelo en Hugging Face: https://huggingface.co/RedHatAI/DeepSeek-V4-Pro-0813
+- Informe técnico (arXiv): https://arxiv.org/abs/2606.19348
+- Organización DeepSeek en Hugging Face: https://huggingface.co/deepseek-ai
+- Página principal de DeepSeek: https://www.deepseek.com/
+- Chat de DeepSeek: https://chat.deepseek.com/
+- Receta de vLLM para DeepSeek-V4-Pro: https://recipes.vllm.ai/deepseek-ai/DeepSeek-V4-Pro
+- Repositorio DeepSeek-V2 (recursos gráficos y referencia): https://github.com/deepseek-ai/DeepSeek-V2
+- Twitter/X de DeepSeek: https://twitter.com/deepseek_ai

@@ -1,0 +1,53 @@
+{
+  "schema": 2,
+  "id": "Sompote/GeoTech-SLM-9B-LoRA",
+  "slug": "sompote-geotech-slm-9b-lora",
+  "author": "Sompote",
+  "url": "https://huggingface.co/Sompote/GeoTech-SLM-9B-LoRA",
+  "created_at": "2026-11-23T03:43:31.000Z",
+  "updated_at": "2026-11-23T04:02:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "qwen",
+    "qwen3.5",
+    "geotechnical-engineering",
+    "civil-engineering",
+    "text-generation",
+    "en",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:adapter:Qwen/Qwen3.5-9B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 319453768,
+  "storage_human": "319 MB",
+  "context_length": null,
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -2,110 +2,117 @@
 
 ## Resumen
 
-f5tts-multi-spring-unicode es una voz de síntesis de voz (text-to-speech) para el motor [phoonnx](https://github.com/TigreGotico/phoonnx), distribuida como modelo ONNX. Deriva del modelo SPRINGLab/SPRING_F5, desarrollado por SPRINGLab, que a su vez es un ajuste fino de SWivid/F5-TTS. La conversión a ONNX y su publicación las realiza TigreGotico Lda. El modelo está pensado para síntesis multilingüe en un conjunto amplio de lenguas indias (asamés, bengalí, hindi, kannada, malayalam, tamil, telugu, urdu, entre otras) además del inglés, con una única voz de hablante y clonación de voz a partir de una muestra de referencia.
+f5tts-multi-spring-unicode es una voz de síntesis de voz (text-to-speech) para el motor phoonnx, publicada por Phoonnx (TigreGotico Lda) como conversión a ONNX del modelo SPRINGLab/SPRING_F5. El modelo subyacente es una implementación de F5-TTS, una arquitectura de TTS basada en flow matching y decodificación no autorregresiva que permite clonación de voz zero-shot a partir de un clip de referencia corto y su transcripción. El repositorio distribuye únicamente los grafos ONNX (fp32 e int8), no los checkpoints de entrenamiento.
 
-La arquitectura es F5-TTS, un modelo de TTS basado en flow matching que genera audio a 24 kHz. El modelo no usa fonemizador: lee directamente los puntos de código Unicode del texto, descompuestos en NFD por phoonnx, y se entrenó con la puntuación de cláusula (`,` `.` `!` `?` `:` `;`). El repositorio ocupa 1,9 GB e incluye los grafos ONNX en fp32 e int8.
+El interés principal reside en su cobertura multilingüe: cubre 24 idiomas, con especial énfasis en lenguas indias (asamés, bengalí, hindi, tamil, telugu, urdu, entre otras) más inglés, y se entrenó sobre los corpus ai4bharat/IndicVoices y ai4bharat/Rasa. Esto lo convierte en una opción poco habitual para TTS en lenguas del subcontinente indio dentro del ecosistema ONNX.
 
-Es relevante para desarrolladores que necesiten TTS multilingüe offline y ligero en CPU, con despliegue sencillo mediante ONNX Runtime y integración con el stack de asistentes de voz OVOS. Hay que tener en cuenta, no obstante, que la licencia efectiva del modelo entrenado impide el uso comercial (véase la sección de limitaciones).
+La conversión está pensada para el stack de OVOS/phoonnx, con un proceso de QA documentado (WER 0.000 sobre tres frases FLORES-200 en inglés, con ASR nemo-parakeet-tdt-0.6b-v3 int8). Es importante señalar que la model card indica explícitamente que la voz no es apta para uso comercial, pese a la licencia Apache 2.0 declarada, por la herencia del modelo base SWivid/F5-TTS (CC BY-NC 4.0).
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | F5-TTS (flow matching) |
+| Arquitectura | F5-TTS (flow matching, no autorregresiva) |
 | Parametros totales | no disponible |
-| Parametros activos | no disponible (no es MoE) |
+| Parametros activos | no aplica (no es MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | fp32 e int8 (quantize_dynamic de onnxruntime, pesos QInt8) |
-| Idiomas soportados | as, bn, bo, gu, hi, kn, ks, kok, mai, ml, mni, mr, ne, or, pa, sa, sat, sd, ta, te, ur, doi, raj, en (etiqueta `mul`) |
-| Licencia | apache-2.0 en la conversión; el modelo base F5-TTS es CC BY-NC 4.0, lo que restringe el uso comercial |
-| Formato de pesos | ONNX (`.onnx` fp32 e `_int8.onnx`) |
+| Tipos de cuantizacion | fp32 e int8 (quantize_dynamic, QInt8, onnxruntime 1.32.0) |
+| Idiomas soportados | as, bn, bo, gu, hi, kn, ks, kok, mai, ml, mni, mr, ne, or, pa, sa, sat, sd, ta, te, ur, doi, raj, en |
+| Licencia | Apache 2.0 (declarada); uso comercial no permitido según la model card |
+| Formato de pesos | ONNX (`<graph>.onnx` y `<graph>_int8.onnx`) |
 | Frecuencia de muestreo | 24000 Hz |
-| Hablantes | 1 (con clonación por referencia) |
-| Fonemizador | ninguno; entrada por puntos de código Unicode (NFD) |
-| Tamano del grafo | 1455,0 MB (fp32) / 463,1 MB (int8) |
-| Libreria | phoonnx |
+| Hablantes | 1 (clonación zero-shot mediante clip de referencia) |
+| Entrada de texto | Caracteres, mayúsculas y marcas incluidas (`f5tts_pinyin`) |
+| Puntuación entrenada | , . ! ? : ; |
+| Tamano del repo | 1.9 GB |
+| Grafo fp32 | 1455.0 MB |
+| Grafo int8 | 463.1 MB |
+| Pico de RSS (fp32 / int8) | 3201.0 MB / 1193.8 MB |
+| RTF mediana (fp32 / int8, 4 hilos) | 31.127 / 19.886 |
+| Caracteres por segundo | 13.8 |
 
 ## Arquitectura y entrenamiento
 
-El modelo sigue la arquitectura F5-TTS, un sistema de síntesis basado en flow matching con un transformer como backbone generativo, que produce audio a 24 kHz a partir de texto. La entrada textual se codifica directamente como puntos de código Unicode (descompuestos en NFD por phoonnx), sin fonemización intermedia; el mapeo de voz configura caracteres individuales, igual que F5-TTS hace para texto no chino. El modelo se entrenó con puntuación de cláusula (`,` `.` `!` `?` `:` `;`), que phoonnx 1.96.1a1 y posteriores conservan en la síntesis.
+El modelo base es F5-TTS, un sistema de síntesis de voz no autorregresivo que emplea flow matching para generar mel-espectrogramas a partir de texto y de una referencia de audio del hablante. La clonación de voz es zero-shot: en inferencia se proporciona un clip corto (`speaker_reference`) junto con su transcripción (`speaker_reference_text`), y el modelo reproduce la identidad vocal del clip. La entrada de texto se procesa carácter a carácter mediante la función `convert_char_to_pinyin` portada a scriptconv (`f5tts_pinyin`), que interpreta caracteres chinos como sílabas pinyin; para las lenguas de la model card (sin chino) la correspondencia de ids con F5-TTS es prácticamente exacta (176 de 185 filas de FLORES-200 idénticas, 3 adicionales equivalentes por frase y 6 con diferencias solo de espacio inicial o final).
 
-SPRINGLab entrenó el modelo sobre los datasets ai4bharat/IndicVoices y ai4bharat/Rasa, partiendo de SWivid/F5-TTS. No se especifican en la información disponible el número de tokens de entrenamiento, la composición exacta del dataset ni si se aplicaron etapas de RLHF/DPO. La conversión a ONNX la realizó TigreGotico Lda sin alterar los pesos; las copias int8 se generaron con `onnxruntime.quantization.quantize_dynamic` (onnxruntime 1.32.0) y pesos QInt8, y pasaron un control de calidad que exige audio finito y no silencioso, longitud entre 0,8 y 1,25 veces la de fp32 y WER no superior al de fp32 más 0,05.
+SPRINGLab realizó el ajuste fino desde SWivid/F5-TTS sobre los corpus ai4bharat/IndicVoices y ai4bharat/Rasa, orientados a lenguas indias. Phoonnx (TigreGotico Lda) realizó la conversión a ONNX sin modificar los pesos, y generó copias int8 mediante `onnxruntime.quantization.quantize_dynamic` con pesos QInt8. Las copias int8 pasan un control de calidad específico: audio finito y no silencioso, longitud entre 0.8 y 1.25 veces la de fp32, y WER como máximo el de fp32 más 0.05. No se especifican en la información disponible el número de tokens de entrenamiento, la composición exacta del dataset ni si hubo etapas de RLHF o DPO.
 
 ## Capacidades
 
-- Síntesis de voz multilingüe en más de 20 lenguas indias y en inglés, con una única voz de hablante.
-- Clonación de voz a partir de una muestra de referencia corta y su transcripción (`speaker_reference` y `speaker_reference_text`).
-- Entrada directa por Unicode, sin fonemizador, lo que simplifica el pipeline para escrituras índicas.
-- Manejo de puntuación de cláusula (`,` `.` `!` `?` `:` `;`) para prosodia.
-- Generación de audio a 24 kHz.
-- Ejecución en CPU mediante ONNX Runtime, con variantes fp32 e int8.
-- Integración con el stack OVOS mediante el plugin `ovos-tts-plugin-phoonnx`.
-- No se documentan tool calling, agentes, visión, audio de entrada ni modo thinking.
+- Síntesis de voz a 24 kHz con clonación zero-shot del hablante a partir de un clip de referencia y su transcripción.
+- Cobertura multilingüe de 24 idiomas, con foco en lenguas indias (asamés, bengalí, bodo, guyaratí, hindi, canarés, cachemir, konkani, maithili, malabar, manipuri, maratí, nepalí, oriya, panyabí, sánscrito, santali, sindhi, tamil, telugu, urdu, dogri, rajastaní) e inglés.
+- Procesamiento de texto carácter a carácter con conservación de mayúsculas, marcas y puntuación de cláusula (, . ! ? : ;).
+- Normalización de texto previa mediante text2spoken para expandir números, fechas, horas, monedas, unidades y abreviaturas a palabras habladas.
+- Inferencia en CPU mediante ONNX Runtime, con variantes fp32 e int8.
+- Integración con el ecosistema OVOS a través del plugin `ovos-tts-plugin-phoonnx`.
+- No se documentan capacidades de tool calling, agentes, visión, audio de entrada más allá de la referencia de hablante, ni modo de razonamiento.
 
 ## Casos de uso
 
-- Asistentes de voz offline para OVOS: el modelo se selecciona como voz `f5tts/spring` en `mycroft.conf` mediante el plugin `ovos-tts-plugin-phoonnx`, permitiendo síntesis local en CPU sin dependencia de servicios en la nube.
-- Lectura de contenido en lenguas indias: artículos, notificaciones o textos de interfaz en hindi, tamil, telugu, bengalí, urdu y otras lenguas del conjunto, usando la entrada Unicode directa sin fonemizador.
-- Clonación de voz para locuciones personalizadas: a partir de una muestra de referencia y su transcripción, el modelo reproduce el timbre del hablante para generar audios de narración.
-- Síntesis en dispositivos con recursos limitados: la variante int8 (grafo de 463,1 MB y pico de RSS de 1193,8 MB) permite desplegar TTS en equipos sin GPU dedicada.
-- Prototipado de aplicaciones de accesibilidad: conversión de texto a voz para lectores de pantalla o interfaces habilitadas por voz en entornos multilingües.
-- Generación de audiolibros o contenido educativo multilingüe: el modelo sintetiza texto con puntuación de cláusula para obtener pausas naturales, con frecuencia de 24 kHz adecuada para reproducción general.
-- Investigación en TTS multilingüe: al estar en ONNX y con pesos int8 verificados, sirve como base reproducible para experimentos de evaluación y comparación de motores.
+- Síntesis de voz para lenguas indias en asistentes de voz: el modelo cubre 24 idiomas con entrenamiento específico en IndicVoices y Rasa, lo que permite generar respuestas habladas en tamil, telugu, bengalí o hindi dentro de un asistente OVOS configurando la voz `f5tts/spring`.
+- Clonación de voz para locuciones personalizadas: dado un clip de referencia corto y su transcripción, se puede generar audio con la identidad vocal de un locutor concreto, útil para mantener consistencia de marca en contenidos pregrabados.
+- Accesibilidad y lectura de contenido: conversión de texto a voz en aplicaciones de lectura para usuarios con discapacidad visual, con la ventaja de funcionar en CPU mediante el grafo int8 (463 MB, pico de RSS de 1193.8 MB).
+- Integración en asistentes domésticos OVOS: el plugin `ovos-tts-plugin-phoonnx` permite seleccionar esta voz en `mycroft.conf` sin infraestructura adicional, con inferencia local.
+- Prototipado de TTS multilingüe en entornos sin GPU: el RTF medido en un AMD Ryzen 5 7600 (19.886 en int8 con 4 hilos) permite generar audio en CPU para pruebas y demos, aunque no para producción de baja latencia en tiempo real.
+- Generación de audio para doblaje o audiolibros en lenguas de la India: la cobertura de 24 idiomas y la clonación de hablante facilitan producir versiones habladas de un mismo texto en varios idiomas con una voz de referencia coherente.
+- Investigación en TTS multilingüe sobre ONNX: el repositorio sirve como artefacto reproducible para comparar fp32 frente a int8 en calidad (WER) y coste (RTF, RSS) sin necesidad de reentrenar.
 
 ## Benchmarks y rendimiento
 
-La model card incluye únicamente una verificación de calidad (QA) en inglés, medida con ASR nemo-parakeet-tdt-0.6b-v3 int8, sobre 3 frases del devtest de FLORES-200 y con la referencia LJ001-0009 de LJ Speech:
+Los únicos datos publicados en la información disponible son los del control de calidad de la conversión, medidos sobre tres frases de FLORES-200 devtest en inglés con ASR nemo-parakeet-tdt-0.6b-v3 int8 y referencia LJ001-0009.
 
-| Check | fp32 | int8 |
+| Metrica | fp32 | int8 |
 |---|---|---|
-| Resultado | pass | pass |
-| WER | 0,000 | 0,000 |
-| Caracteres por segundo | 13,8 | no disponible |
-| Longitud, int8 / fp32 | no disponible | 1,00 |
-| Tamano del grafo | 1455,0 MB | 463,1 MB |
-| Pico de RSS | 3201,0 MB | 1193,8 MB |
-| RTF (mediana de 3, 4 hilos) | 31,127 | 19,886 |
+| Resultado QA | pass | pass |
+| WER | 0.000 | 0.000 |
+| Caracteres por segundo | 13.8 | no disponible |
+| Longitud int8 / fp32 | no aplica | 1.00 |
+| Tamano del grafo | 1455.0 MB | 463.1 MB |
+| Pico de RSS | 3201.0 MB | 1193.8 MB |
+| RTF (mediana de 3, 4 hilos) | 31.127 | 19.886 |
 
-Medido en un AMD Ryzen 5 7600 de 6 núcleos; RTF es el tiempo de síntesis dividido por la duración del audio. No se han publicado resultados de benchmarks comparativos (MMLU, HumanEval, GSM8K u otros) en la información disponible, y no procede extrapolarlos para un modelo de TTS.
+No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u otros) en la información disponible, ni comparativas de calidad subjetiva (MOS) frente a otros sistemas TTS.
 
 ## Requisitos de hardware
 
-- VRAM: no disponible; el modelo está orientado a ejecución en CPU mediante ONNX Runtime.
-- Pico de memoria (RSS): 3201,0 MB en fp32 y 1193,8 MB en int8, medidos en AMD Ryzen 5 7600.
-- GPU recomendadas: no disponibles en la información; no se documenta aceleración por GPU.
-- Cabe en hardware consumer: sí; las medidas se realizaron en un procesador de escritorio de 6 núcleos sin GPU.
-- Opciones de despliegue: phoonnx con ONNX Runtime (`pip install --pre phoonnx`), plugin `ovos-tts-plugin-phoonnx` para OVOS. No se documentan vLLM, llama.cpp ni TGI, que no aplican a este tipo de modelo.
-- Latencia y throughput: RTF 31,127 en fp32 y 19,886 en int8 (mediana de 3 ejecuciones con 4 hilos); 13,8 caracteres por segundo en fp32. El RTF superior a 1 indica que la síntesis tarda más que la duración del audio generado en este hardware.
+- VRAM estimada: no aplica en el escenario medido, ya que la inferencia documentada es en CPU con ONNX Runtime. No se proporcionan cifras de VRAM para GPU.
+- Memoria RAM: pico de RSS de 3201.0 MB en fp32 y 1193.8 MB en int8.
+- GPU recomendadas: no disponible; el autor no documenta ejecución en GPU.
+- CPU de referencia: AMD Ryzen 5 7600 de 6 núcleos, con 4 hilos en la medición de RTF.
+- Cabe en hardware de consumo: sí, en CPU de escritorio convencional; el grafo int8 de 463.1 MB y un pico de RSS de 1193.8 MB son asequibles para equipos domésticos.
+- Opciones de despliegue: ONNX Runtime a través de phoonnx (`pip install --pre phoonnx`) y el plugin `ovos-tts-plugin-phoonnx` para OVOS. No se documentan integraciones con vLLM, llama.cpp, Ollama ni TGI (no aplicables a TTS).
+- Latencia y throughput: RTF de 31.127 en fp32 y 19.886 en int8 (mediana de 3 ejecuciones, 4 hilos). Un RTF superior a 1 implica síntesis más lenta que tiempo real; con estos valores la generación es considerablemente más lenta que la reproducción, por lo que no es adecuada para streaming interactivo en el hardware medido.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| f5tts-multi-spring-unicode | no disponible | no disponible | >20 lenguas indias + en | apache-2.0 en la conversión; base CC BY-NC 4.0 | Hugging Face (ONNX) |
-| SPRINGLab/SPRING_F5 | no disponible | no disponible | multilingüe índico | apache-2.0 (según model card) | Hugging Face |
-| SWivid/F5-TTS | no disponible | no disponible | zh + en principalmente | CC BY-NC 4.0 | Hugging Face |
+| Modelo | Parametros | Contexto | Idiomas | Licencia | Formato | Notas |
+|---|---|---|---|---|---|---|
+| f5tts-multi-spring-unicode | no disponible | no disponible | 24 (foco en lenguas indias) | Apache 2.0 declarada, uso comercial no permitido | ONNX fp32/int8 | Conversión de SPRINGLab/SPRING_F5; clonación zero-shot; inferencia en CPU |
+| SWivid/F5-TTS (base) | no disponible | no disponible | no disponible | CC BY-NC 4.0 | safetensors (upstream) | Modelo original del que deriva; uso no comercial |
+| SPRINGLab/SPRING_F5 | no disponible | no disponible | multilingüe (lenguas indias) | Apache 2.0 | no disponible | Modelo upstream de esta conversión; entrenado por SPRINGLab |
+| Otros TTS multilingües (p. ej. XTTS, MMS) | no disponible | no disponible | no disponible | no disponible | no disponible | No se dispone de datos comparativos en la información proporcionada |
 
-No se dispone de datos de rendimiento comparables entre estos modelos en la información proporcionada; la comparativa se limita a licencia, idiomas y formato de distribución.
+No se dispone de datos de benchmarks comparativos con alternativas en la información disponible.
 
 ## Limitaciones y advertencias
 
-- Restricción comercial: aunque la conversión se publica bajo apache-2.0, SPRINGLab ajustó el modelo desde SWivid/F5-TTS, que es CC BY-NC 4.0; la propia model card indica que el uso comercial de esta voz no está permitido.
-- Atribución: debe acreditarse a SPRINGLab al usar la voz.
-- Una sola voz de hablante; la personalización requiere clonación con una muestra de referencia y su transcripción.
-- La QA de calidad solo cubre inglés (3 frases de FLORES-200); no hay verificación publicada para las lenguas indias.
-- phoonnx elimina el danda (।) al final de una frase en hindi, lo que puede afectar la prosodia final.
-- El mapeo de voz configura caracteres individuales; no hay fonemización, por lo que la pronunciación depende de la cobertura Unicode del modelo.
-- Riesgo de alucinación acústica o artefactos no evaluado sistemáticamente más allá del control de audio finito y no silencioso de las copias int8.
-- RTF superior a 1 en el hardware de referencia implica síntesis más lenta que tiempo real en CPU; no se documenta rendimiento en GPU.
-- Sesgos: no se documentan sesgos específicos derivados de los datasets IndicVoices y Rasa en la información disponible.
+- Uso comercial no permitido: aunque la licencia declarada es Apache 2.0, la model card indica que el modelo deriva de SWivid/F5-TTS (CC BY-NC 4.0) y que el uso comercial de esta voz no está autorizado. Es imprescindible revisar la licencia antes de cualquier despliegue productivo.
+- Riesgo de alucinación y artefactos de audio: no se documentan métricas de calidad subjetiva (MOS) ni pruebas extensas más allá de tres frases en inglés; el WER 0.000 se obtuvo sobre una muestra muy reducida.
+- Cobertura de QA limitada: el control de calidad cubre únicamente inglés, pese a que el modelo declara 24 idiomas; no hay verificación publicada para las lenguas indias.
+- Sin soporte de chino en la práctica: la configuración de la voz no contiene sílabas pinyin, por lo que phoonnx asigna id 0 a los caracteres chinos, a diferencia de F5-TTS. El chino no figura entre los idiomas de la model card.
+- Requiere clip de referencia: la síntesis necesita un audio de referencia y su transcripción; no es un TTS de voz fija sin condicionamiento.
+- Latencia elevada: RTF de 19.886 en int8 sobre la CPU medida implica una generación mucho más lenta que tiempo real, lo que limita su uso en diálogo interactivo.
+- Sin checkpoints de entrenamiento en el repositorio: solo se distribuyen grafos ONNX; el reentrenamiento o ajuste fino debe hacerse sobre el modelo upstream.
+- Sin datos sobre sesgos: no se documentan sesgos conocidos del modelo ni de los corpus IndicVoices y Rasa.
+- Dependencia de normalización externa: el texto debe pasar por text2spoken con la etiqueta de idioma correcta para expandir números, fechas y abreviaturas; de lo contrario la calidad de síntesis puede degradarse.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/Phoonnx/f5tts-multi-spring-unicode
-- Modelo base (upstream): https://huggingface.co/SPRINGLab/SPRING_F5
-- Modelo original F5-TTS: https://huggingface.co/SWivid/F5-TTS
-- Motor phoonnx: https://github.com/TigreGotico/phoonnx
+- Modelo upstream (SPRINGLab/SPRING_F5): https://huggingface.co/SPRINGLab/SPRING_F5
+- Modelo base original (SWivid/F5-TTS): https://huggingface.co/SWivid/F5-TTS
+- Repositorio phoonnx: https://github.com/TigreGotico/phoonnx
+- Herramienta de normalización text2spoken: https://github.com/TigreGotico/text2spoken
 - TigreGotico: https://tigregotico.pt
 - Dataset IndicVoices: https://huggingface.co/datasets/ai4bharat/IndicVoices
 - Dataset Rasa: https://huggingface.co/datasets/ai4bharat/Rasa

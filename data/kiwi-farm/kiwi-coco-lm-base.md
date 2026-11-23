@@ -2,94 +2,105 @@
 
 ## Resumen
 
-kiwi-farm/kiwi-coco-lm-base es un modelo publicado en Hugging Face por el usuario kiwi-farm, con licencia Apache 2.0 y pesos en formato safetensors. La etiqueta principal del repositorio es "modernbert", lo que apunta a un encoder transformer de la familia ModernBERT, aunque la model card no aporta ninguna descripción, dataset de entrenamiento ni detalles de arquitectura mas alla de la linea de licencia.
+Kiwi COCO-LM es un modelo encoder de tipo transformer basado en ModernBERT-base, desarrollado por el autor kiwi-farm. Se trata de un modelo de representaciones (feature-extraction) y masked language modeling adaptado al coreano y al inglés, con una ventana de contexto de hasta 8192 tokens. El modelo parte de los pesos de answerdotai/ModernBERT-base y aplica un reajuste del vocabulario: elimina tokens multilingües de baja frecuencia y los sustituye por tokens coreanos, para después continuar el preentrenamiento sobre corpus coreano e inglés.
 
-El repositorio ocupa 0,3 GB y registra 0 descargas y 0 likes en el momento de la consulta, con fecha de creacion y ultima actualizacion del 24 de septiembre de 2026. No se declaran idiomas soportados, pipeline de inferencia, numero de parametros ni longitud de contexto, por lo que se trata de un modelo practicamente indocumentado.
+La innovación principal es la aplicación de la metodología COCO-LM (arXiv:2102.08473) al preentrenamiento de ModernBERT. Frente al Replaced Token Detection (RTD) de ELECTRA, que solo discrimina si un token fue sustituido, COCO-LM añade Corrective Language Modeling (CLM), que obliga a reconstruir el token original, y Sequence Contrastive Learning (SCL), que aprende representaciones a nivel de secuencia. El repositorio publica el Discriminator (22 capas, 161 millones de parámetros); el Generator (6 capas, 80 millones) se distribuye en un repositorio aparte.
 
-Su relevancia actual es limitada: no hay resultados de benchmarks, no hay documentacion tecnica y la busqueda web no devuelve ningun material asociado al modelo (los resultados obtenidos corresponden a la fruta kiwi y a la agencia de viajes Kiwi.com, sin relacion alguna). Se recomienda tratarlo como un experimento sin validar antes de considerarlo para cualquier uso en produccion.
+Con 161.418.496 parámetros reales según safetensors y un tamaño de repositorio de 0,3 GB, el modelo resulta relevante para tareas de comprensión del lenguaje, clasificación, NER, QA extractiva y recuperación de información en contextos bilingües coreano-inglés, donde los encoders angloparlantes estándar rinden muy por debajo. Su licencia Apache 2.0 facilita el uso comercial.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | No disponible. La unica referencia es la etiqueta "modernbert" del repositorio, que sugiere un encoder transformer de la familia ModernBERT |
-| Parametros totales | No disponible. Estimacion indirecta: el repositorio ocupa 0,3 GB, lo que equivaldria a entre ~75 millones (fp32) y ~150 millones (bf16) de parametros |
-| Parametros activos | No aplica (no hay indicios de arquitectura MoE) |
-| Longitud de contexto | No disponible |
-| Tipos de cuantizacion | No disponible. Solo se publican pesos en safetensors sin versiones cuantizadas declaradas |
-| Idiomas soportados | No disponible |
+| Arquitectura | Transformer encoder (ModernBERT), atención bidireccional con RoPE y Flash Attention 2 |
+| Parametros totales | 161.418.496 (incluye embeddings de 64k × 768, unos 49M, y cabezas RTD/SCL de preentrenamiento de unos 1,3M) |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | 8192 tokens |
+| Tipos de cuantizacion | no disponible (el autor no documenta cuantizaciones específicas; al ser un encoder de 161M es viable en fp16/bf16 e int8) |
+| Idiomas soportados | coreano (ko) e inglés (en) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors |
+| Formato de pesos | safetensors (librería transformers) |
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura concreta, el numero de tokens de entrenamiento, la composicion del dataset ni si hubo fases de ajuste tipo RLHF, DPO o instrucciones. La unica pista disponible es la etiqueta "modernbert" y el sufijo "base" del nombre del modelo, que en la nomenclatura habitual de Hugging Face indica un modelo preentrenado sin ajuste posterior por instrucciones.
+El modelo es un encoder transformer de 22 capas con dimensión oculta 768 y vocabulario de 64.000 tokens mediante Byte-level BPE, heredado de ModernBERT-base. ModernBERT sustituye las positional embeddings absolutas por RoPE, usa atención alternada local/global y está diseñado para aprovechar Flash Attention 2. El vocabulario se modificó respecto al original: se retiraron tokens multilingües poco frecuentes y se añadieron 26.858 tokens que contienen hangul (41,97 % del vocabulario), lo que reduce el número de tokens por palabra en coreano a 2,37 y elimina los tokens UNK en las 16 sílabas raras evaluadas.
 
-Si el modelo sigue efectivamente la familia ModernBERT, cabria esperar un encoder transformer con embeddings posicionales rotatorios (RoPE), atencion alternada local/global, atencion con Flash Attention 2 y tecnicas de "unpadding" para mayor eficiencia en secuencias cortas, ademas de un contexto mucho mayor que los 512 tokens de BERT clasico. Estas caracteristicas son propias de la familia ModernBERT segun su documentacion publica, pero no estan confirmadas para este repositorio concreto y deben verificarse inspeccionando los pesos.
+El preentrenamiento adicional sigue el esquema COCO-LM sobre corpus coreano e inglés. Un Generator de 6 capas y 80M parámetros genera sustituciones verosímiles; el Discriminator (este repositorio) se entrena con tres objetivos: RTD (detectar tokens sustituidos), CLM (reconstruir el token original) y SCL (contraste a nivel de secuencia). El autor no detalla el número exacto de tokens de entrenamiento ni la composición del dataset más allá de indicar que es bilingüe coreano-inglés. No se documenta RLHF ni DPO, algo esperable en un encoder.
 
 ## Capacidades
 
-- No hay ninguna capacidad documentada por el autor del modelo.
-- Por la etiqueta "modernbert" y el sufijo "base", lo mas probable es que se trate de un encoder sin ajuste por instrucciones, orientado a tareas de comprension del lenguaje (clasificacion, extraccion de caracteres, similitud semantica) y no a generacion de texto abierta.
-- No consta soporte de tool calling ni de function calling.
-- No consta soporte de agentes ni de razonamiento multi-paso.
-- No consta soporte multilingue declarado.
-- No consta modo "thinking", vision, audio ni ninguna capacidad multimodal.
-- Cualquier capacidad adicional debe considerarse no verificada.
+- Extracción de embeddings de frase y de token (pipeline `feature-extraction`), con embedding `[CLS]` disponible para representaciones de secuencia.
+- Clasificación de secuencias, etiquetado de tokens (NER), QA extractiva y recuperación de información tras fine-tuning, igual que cualquier modelo BERT.
+- Comprensión de contexto largo: hasta 8192 tokens en una sola pasada, útil para documentos extensos.
+- Bilingüe coreano-inglés, con tokenizador optimizado para hangul.
+- Masked language modeling solo en el sentido de corrección de ruido (CLM); no es adecuado para `fill-mask` clásico con `[MASK]`.
+- No soporta tool calling, function calling, agentes ni generación autoregresiva: es un encoder, no un modelo causal.
+- No tiene visión, audio ni modo de razonamiento explícito.
 
 ## Casos de uso
 
-Los siguientes casos son hipotesis de uso coherentes con un encoder tipo ModernBERT, no capacidades confirmadas por el autor. Deben validarse experimentalmente antes de llevarlos a produccion.
-
-- Clasificacion de texto: ajuste ligero (fine-tuning) de la cabeza de clasificacion para tareas como deteccion de spam, moderacion de contenidos o categorizacion de tickets de soporte. El modelo serviria como extractor de representaciones congelado o ajustado, con un coste de entrenamiento bajo si el tamano real esta en el rango de 75-150 millones de parametros.
-- Reconocimiento de entidades nombradas (NER): etiquetado de secuencias para extraer personas, organizaciones, ubicaciones o importes en documentos. El formato safetensors y el reducido tamano del repositorio facilitan el ajuste en una unica GPU de gama media.
-- Busqueda semantica y recuperacion aumentada (RAG): uso del encoder para generar embeddings de documentos y consultas en un sistema de recuperacion, combinado con una base vectorial. Si el contexto real es largo (8.192 tokens en los modelos ModernBERT publicos), permitiria indexar fragmentos extensos sin troceado agresivo.
-- Reranking de resultados de busqueda: puntuacion cruzada entre consulta y documento para reordenar los candidatos devueltos por un recuperador inicial, mejorando la precision del top-k en buscadores internos.
-- Analisis de sentimiento y opinion en resenas: clasificacion de resenas de producto o de atencion al cliente, con la ventaja de que el modelo no requiere API externa y puede ejecutarse en infraestructura propia bajo licencia Apache 2.0.
-- Agrupacion y deduplicacion de documentos: generacion de embeddings para agrupar textos similares en corpus grandes, deteccion de duplicados o construccion de clusters tematicos en pipelines de datos.
-- Extraccion de informacion en documentos financieros o legales: etiquetado de campos concretos (fechas, clausulas, importes) sobre textos largos, siempre que se confirme la ventana de contexto y el rendimiento en dominios especializados.
-- Base para destilacion o experimentacion academica: al ser un modelo pequeno con licencia permisiva, resulta util como punto de partida para comparativas de arquitecturas encoder en entornos con recursos limitados.
+- Clasificación de textos coreanos en producción: fine-tuning con `AutoModelForSequenceClassification` sobre reseñas, tickets o noticias; el vocabulario ampliado en hangul reduce la longitud de secuencia y el coste de inferencia frente a encoders multilingües genéricos.
+- Reconocimiento de entidades nombradas (NER) en coreano: el modelo obtiene 84,44 de MacroF1 de entidad y 93,02 de MacroF1 de carácter en KLUE-NER, por encima de KLUE RoBERTa y KoELECTRA, lo que lo hace apto para extracción de entidades en pipelines de datos.
+- Búsqueda semántica y recuperación bilingüe coreano-inglés: usar los embeddings `[CLS]` o mean-pooling para indexar documentos y consultas; el contexto de 8192 tokens permite indexar pasajes largos sin truncar.
+- Question answering extractiva sobre documentación técnica: fine-tuning en KLUE-MRC alcanza 71,38 EM y 77,00 RougeW, adecuado para asistentes de soporte sobre manuales.
+- Moderación y filtrado de contenido: clasificación multietiqueta de comentarios en coreano e inglés con un encoder de 161M que cabe en una sola GPU consumer.
+- Deduplicación y clustering de documentos: SCL entrena representaciones de secuencia discriminativas, útiles para agrupar documentos similares en corpus bilingües.
+- Reranking en sistemas RAG: puntuar pares consulta-pasaje con la cabeza de clasificación para reordenar candidatos recuperados por un retriever vectorial.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. No se dispone de datos de MMLU, GLUE, SuperGLUE, HumanEval, GSM8K ni de ninguna otra evaluacion, y no se deben asumir cifras a partir de otros modelos de la familia.
+Resultados publicados por el autor en la model card (tamaño Base). KLUE, media de tareas: 82,34 para Kiwi COCO-LM.
+
+| Modelo | KLUE Avg | GLUE Avg | KLUE-NLI (Acc) | KLUE-STS (PearsonR) | GLUE CoLA (MCC) | GLUE RTE (Acc) |
+|---|---|---|---|---|---|---|
+| Kiwi COCO-LM | 82,34 | 83,02 | 87,87 | 92,23 | 61,16 | 83,03 |
+| KLUE RoBERTa | 80,44 | 70,75 | 85,63 | 92,68 | 4,45 | 63,54 |
+| KoELECTRA | 77,79 | 69,49 | 87,23 | 93,13 | 11,84 | 62,09 |
+| A.X-Encoder | 82,91 | 74,99 | 87,37 | 92,58 | 24,23 | 66,07 |
+| KF-DeBERTa | 82,89 | 71,34 | 87,73 | 92,63 | 9,25 | 63,18 |
+| ModernBERT (base original) | 62,36 | 80,30 | 67,40 | 76,63 | 61,92 | 66,43 |
+| mmBERT | 79,33 | 81,01 | 83,30 | 90,51 | 60,79 | 80,14 |
+
+En GLUE, Kiwi COCO-LM lidera la media (83,02) y supera a ModernBERT original en MRPC (90,93 / 93,47), STS-B (91,00 / 90,79) y RTE (83,03), aunque queda por debajo en SST2 (93,01 frente a 95,30), CoLA (61,16 frente a 61,92), QQP y MNLI. En KLUE, el modelo mejora a KLUE RoBERTa y KoELECTRA en la media, pero A.X-Encoder y KF-DeBERTa quedan ligeramente por encima en algunas tareas (KLUE-NER y KLUE-MRC respectivamente).
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible de forma oficial. Como estimacion a partir del tamano del repositorio (0,3 GB), los pesos ocuparian aproximadamente 0,3 GB en bf16, 0,6 GB en fp32, 0,15 GB en int8 y alrededor de 0,08 GB en 4 bits.
-- GPU recomendadas: no disponibles. Por el tamano estimado, cualquier GPU con 2 GB o mas de VRAM es suficiente, incluidas GTX 1650, RTX 3050, RTX 4090, A100 o H100 sin ninguna restriccion.
-- Cabe en GPU de consumo: si, con margen amplio en cualquier tarjeta moderna. Tambien cabe con holgura en GPU integradas y en CPU.
-- Opciones de despliegue: al ser safetensors, es compatible con el ecosistema Transformers y con servidores de inferencia tipo vLLM o TGI si el modelo es efectivamente un encoder ModernBERT soportado. Las opciones GGUF, llama.cpp y Ollama no estan confirmadas para este repositorio.
-- Latencia y throughput: no disponibles. En un encoder de este tamano, el rendimiento dependera principalmente de la longitud de secuencia y del tamano de lote, no del modelo en si.
-- Almacenamiento en disco: 0,3 GB para los pesos publicados.
+- VRAM estimada: unos 0,65 GB en fp16/bf16 para los pesos (161M parámetros), más activaciones; en la práctica, 2-4 GB permiten inferencia con batch moderado y contexto largo.
+- GPU recomendadas: cualquier GPU con al menos 8 GB para contexto completo; RTX 3060/4060, RTX 4090, A100 y H100 funcionan sin problema. Para batches grandes o 8192 tokens, se recomienda 16 GB o más.
+- Cabe en GPU consumer: sí, en todas las GPU modernas con 6-8 GB o más, incluidas portátiles.
+- Despliegue: transformers (v5 o superior), Text Embeddings Inference (el repo incluye el tag `text-embeddings-inference` y `endpoints_compatible`), y exportación a ONNX o cuantización int8 para CPU. No se documenta soporte GGUF ni llama.cpp.
+- Latencia y throughput: no disponibles en la información proporcionada. Se recomienda instalar `flash-attn` para aprovechar Flash Attention 2, según indica el autor.
 
 ## Comparativa con modelos similares
 
-Los datos de los modelos alternativos proceden de su documentacion publica y no aparecian en los resultados de busqueda de esta consulta; conviene verificarlos en sus repositorios oficiales.
+| Modelo | Parámetros | Contexto | KLUE Avg | GLUE Avg | Licencia | Disponibilidad |
+|---|---|---|---|---|---|---|
+| Kiwi COCO-LM | 161M | 8192 | 82,34 | 83,02 | Apache 2.0 | Hugging Face |
+| KLUE RoBERTa | ~110M (base) | 512 | 80,44 | 70,75 | Apache 2.0 | Hugging Face |
+| KoELECTRA | ~110M (base) | 512 | 77,79 | 69,49 | Apache 2.0 | Hugging Face |
+| A.X-Encoder | ~110M (base) | 512 | 82,91 | 74,99 | no disponible | Hugging Face |
+| KF-DeBERTa | ~110M (base) | 512 | 82,89 | 71,34 | no disponible | Hugging Face |
+| ModernBERT-base | 149M | 8192 | 62,36 | 80,30 | Apache 2.0 | Hugging Face |
 
-| Modelo | Arquitectura | Parametros | Contexto | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| kiwi-farm/kiwi-coco-lm-base | No confirmada (etiqueta "modernbert") | No disponible (estimado 75-150 M) | No disponible | Apache 2.0 | Hugging Face, 0 descargas |
-| answerdotai/ModernBERT-base | Encoder transformer ModernBERT | ~149 M | 8.192 tokens | Apache 2.0 | Hugging Face, ampliamente utilizado |
-| google-bert/bert-base-uncased | Encoder transformer BERT | ~110 M | 512 tokens | Apache 2.0 | Hugging Face, referencia historica |
-| FacebookAI/roberta-base | Encoder transformer RoBERTa | ~125 M | 512 tokens | MIT | Hugging Face, ampliamente utilizado |
-
-No hay datos de rendimiento de kiwi-coco-lm-base que permitan una comparacion cuantitativa con estas alternativas.
+La ventaja diferencial frente a los encoders coreanos clásicos es el contexto de 8192 tokens y el mejor rendimiento en inglés; frente a ModernBERT original, la mejora en coreano es sustancial (de 62,36 a 82,34 en KLUE).
 
 ## Limitaciones y advertencias
 
-- Modelo sin documentacion: la model card solo contiene la declaracion de licencia, sin informacion sobre datos de entrenamiento, sesgos, uso previsto ni limitaciones.
-- Riesgo elevado de sesgos desconocidos: al no publicarse la composicion del dataset, no es posible evaluar sesgos de genero, raza, idioma o dominio.
-- Riesgo de alucinacion: si el modelo resulta ser un encoder sin ajuste generativo, este riesgo no aplica directamente; si se usa como generador, el riesgo no esta evaluado.
-- Idiomas soportados no declarados: no se puede asumir cobertura multilingue ni un rendimiento concreto en castellano.
-- Longitud de contexto no declarada: cualquier uso con textos largos requiere verificacion experimental previa.
-- Sin resultados de benchmarks: no hay evidencia publica de calidad frente a alternativas consolidadas como ModernBERT-base o RoBERTa-base.
-- Sin adopcion: 0 descargas y 0 likes indican que el modelo no ha sido validado por terceros, lo que aumenta el riesgo de pesos corruptos, entrenamiento incompleto o configuraciones erroneas.
-- Licencia Apache 2.0: permite uso comercial y modificacion, pero el usuario asume toda la responsabilidad sobre el origen de los datos de entrenamiento y las obligaciones legales asociadas.
-- Advertencia para produccion: no se recomienda desplegar este modelo en entornos productivos sin una evaluacion propia exhaustiva y sin compararlo con alternativas documentadas.
+- No es un modelo generativo: no puede usarse para chat, tool calling ni agentes; solo produce representaciones y logits de clasificación.
+- El pipeline `fill-mask` no es adecuado: el modelo fue entrenado con CLM sobre tokens sustituidos por el Generator, no con `[MASK]`; se recomienda fine-tuning.
+- Requiere `transformers` v5 o superior por el formato del tokenizador; en v4.x `AutoTokenizer` puede fallar al cargar.
+- Solo cubre coreano e inglés; el rendimiento en otros idiomas no está documentado y probablemente sea deficiente tras el recorte de vocabulario multilingüe.
+- Riesgo de alucinación no aplicable en sentido generativo, pero sí de errores de clasificación en dominios fuera de distribución (jurídico, médico, jerga).
+- Sesgos: no se documentan análisis de sesgo; al entrenarse sobre corpus web coreano e inglés, puede heredar sesgos de género, geográficos y de registro.
+- El autor no detalla el volumen ni la composición exacta del corpus de preentrenamiento, lo que dificulta auditar la cobertura y los sesgos.
+- Licencia Apache 2.0 permite uso comercial, pero conviene revisar las condiciones del modelo base ModernBERT y de los datasets de fine-tuning empleados.
+- En producción, verificar el mensaje de pesos inesperados (`rtd_head`, `scl_head`) al cargar; es esperado y no afecta al uso downstream.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/kiwi-farm/kiwi-coco-lm-base
-- Model card del autor: sin contenido tecnico, unicamente la linea de licencia Apache 2.0
-- No se han encontrado papers, blogs, repositorios ni demos asociados al modelo en la busqueda web realizada. Los resultados obtenidos corresponden a sitios sin relacion (Kiwi.com, kiwi.fr, Wikipedia sobre la fruta kiwi y un articulo divulgativo sobre nutricion).
+- Modelo en Hugging Face: https://huggingface.co/kiwi-farm/kiwi-coco-lm-base
+- Generator: https://huggingface.co/kiwi-farm/kiwi-coco-lm-base-generator
+- Modelo base ModernBERT: https://huggingface.co/answerdotai/ModernBERT-base
+- Paper COCO-LM: https://arxiv.org/abs/2102.08473
+- Análisis de tokenizadores coreanos: https://github.com/bab2min/korean-tokenizer-analysis
+- Flash Attention: https://github.com/Dao-AILab/flash-attention

@@ -52,31 +52,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "jsbaicenter/JSBAI-Coder-4B · Hugging Face",
-      "url": "https://huggingface.co/jsbaicenter/JSBAI-Coder-4B",
-      "snippet": "JSBAI-Coder-4B is a 4B-parameter model, fine-tuned from Qwen3.5-4B, that investigates bugs, edits files, runs commands, and verifies its own fixes in real software repositories."
-    },
-    {
-      "title": "SDSU James Silberrad Center for Artificial Intelligence - GitHub",
-      "url": "https://github.com/JSBAICenter",
-      "snippet": "SDSU James Silberrad Center for Artificial Intelligence has 17 repositories available. Follow their code on GitHub."
-    },
-    {
-      "title": "jsbaicenter/JSBAI-Coder-4B · Hugging Face | Aaron Elkins",
-      "url": "https://www.linkedin.com/posts/aaroncelkins_jsbaicenterjsbai-coder-4b-hugging-face-activity-7508987840081551360-owvj",
-      "snippet": "Meet JSBAI-Coder-4B: a 4B model that fixes real bugs in real repos. Tiny but mighty. Check out our preview version here: https://lnkd.in/gftjtKT3 We distilled a frontier GLM 5.3 744B with a blend ..."
-    },
-    {
-      "title": "JSBAICenter repositories · GitHub",
-      "url": "https://github.com/orgs/JSBAICenter/repositories",
-      "snippet": "SDSU James Silberrad Center for Artificial Intelligence has 14 repositories available. Follow their code on GitHub."
-    },
-    {
-      "title": "DeepSeek Coder:",
-      "url": "https://deepseekcoder.github.io/",
-      "snippet": "DeepSeek Coder comprises a series of code language models trained from scratch on both 87% code and 13% natural language in English and Chinese, with each model pre-trained on 2T tokens."
-    }
-  ]
+  "sources": []
 }

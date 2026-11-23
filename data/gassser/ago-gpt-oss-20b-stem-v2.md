@@ -2,53 +2,49 @@
 
 ## Resumen
 
-`gassser/ago-gpt-oss-20b-stem-v2` es un adaptador LoRA publicado en Hugging Face por el usuario `gassser`, construido sobre el modelo base `unsloth/gpt-oss-20b-unsloth-bnb-4bit`. Se trata, por tanto, de un fine-tuning ligero (PEFT) de la variante cuantizada a 4 bits del modelo GPT-OSS de 20.000 millones de parametros, distribuida por Unsloth para facilitar el entrenamiento en hardware de consumo. El adaptador se ha entrenado presumiblemente para reforzar competencias en el ambito STEM (ciencia, tecnologia, ingenieria y matematicas), aunque la model card no documenta el dataset ni el procedimiento concreto.
+ago-gpt-oss-20b-stem-v2 es un adaptador LoRA publicado por el usuario gassser sobre el modelo base unsloth/gpt-oss-20b-unsloth-bnb-4bit, una versión cuantizada a 4 bits del gpt-oss-20b de OpenAI preparada por Unsloth para entrenamiento e inferencia eficientes. El repositorio contiene únicamente los pesos del adaptador en formato safetensors (0,1 GB), no el modelo completo, por lo que su uso requiere cargar el modelo base y aplicar el adaptador mediante la librería PEFT.
 
-El repositorio tiene un tamano de 0,1 GB, coherente con un adaptador LoRA y no con pesos completos, y se distribuye en formato `safetensors` bajo la libreria `peft`. El pipeline declarado es `text-generation` y las etiquetas incluyen `conversational`, lo que sugiere un uso orientado a dialogos y generacion de texto. No se han publicado descargas ni interacciones, y la model card es la plantilla por defecto de Hugging Face sin completar, por lo que la mayor parte de los metadatos tecnicos (licencia, idiomas, datos de entrenamiento, evaluacion) figuran como no disponibles.
+El sufijo "stem" sugiere un ajuste orientado a disciplinas STEM (ciencia, tecnología, ingeniería y matemáticas), aunque la model card no documenta el conjunto de datos, el procedimiento de entrenamiento ni los hiperparámetros empleados. La ficha del autor es la plantilla por defecto de Hugging Face sin completar, de modo que la mayor parte de los metadatos técnicos (licencia, idiomas, evaluación) no están disponibles.
 
-La relevancia de esta ficha radica en documentar con rigor lo que si se puede afirmar a partir de los metadatos y del modelo base, y en marcar explicitamente los vacios de informacion para que cualquier evaluador sepa que extremos requieren verificacion empirica antes de usar el adaptador en produccion.
+Su relevancia es limitada y experimental: se trata de un fine-tuning comunitario de un modelo abierto de 20 mil millones de parámetros con arquitectura Mixture-of-Experts, publicado en noviembre de 2026 y con 477 descargas. Resulta útil como ejemplo de adaptación ligera sobre gpt-oss-20b, pero no debe considerarse un artefacto listo para producción sin una evaluación propia.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Adaptador LoRA sobre transformer GPT-OSS (modelo base: `unsloth/gpt-oss-20b-unsloth-bnb-4bit`) |
-| Parametros totales | No disponible en la informacion proporcionada (el modelo base se denomina "20b"; el adaptador LoRA anade un numero no especificado de parametros entrenables) |
-| Parametros activos | No disponible |
-| Longitud de contexto | No disponible en la informacion proporcionada (depende del modelo base GPT-OSS-20B) |
-| Tipos de cuantizacion | Modelo base distribuido en 4 bits (bnb-4bit); el adaptador se publica en safetensors sin cuantizar |
-| Idiomas soportados | No disponible |
-| Licencia | No disponible |
+| Arquitectura | LoRA (adaptador de bajo rango) sobre gpt-oss-20b, transformer Mixture-of-Experts |
+| Parametros totales | no disponible para el adaptador; el modelo base gpt-oss-20b tiene 21 000 millones (dato del modelo base, no verificado en la información proporcionada) |
+| Parametros activos | no disponible para el adaptador; el modelo base es MoE (dato del modelo base) |
+| Longitud de contexto | no disponible (heredada del modelo base, no documentada aquí) |
+| Tipos de cuantizacion | el modelo base se distribuye en bnb-4bit; el adaptador es compatible con PEFT y presumiblemente con GGUF tras fusión, aunque no se documenta |
+| Idiomas soportados | no disponible |
+| Licencia | no disponible |
 | Formato de pesos | safetensors (adaptador PEFT/LoRA) |
-| Libreria | peft 0.21.2, transformers, unsloth |
-| Tamano del repositorio | 0,1 GB |
-| Pipeline | text-generation |
 
 ## Arquitectura y entrenamiento
 
-El artefacto publicado es un adaptador LoRA (Low-Rank Adaptation) que se aplica sobre el modelo base `unsloth/gpt-oss-20b-unsloth-bnb-4bit`. Esto implica que la arquitectura subyacente es la del transformer GPT-OSS de 20.000 millones de parametros en su version cuantizada a 4 bits preparada por Unsloth, y que el entrenamiento realizado por `gassser` consistio en ajustar un conjunto reducido de matrices de bajo rango sobre dicho modelo congelado. El repositorio no incluye los pesos completos, sino unicamente los del adaptador, que deben combinarse con el modelo base en tiempo de carga.
+El artefacto es un adaptador LoRA de bajo rango entrenado con Unsloth sobre unsloth/gpt-oss-20b-unsloth-bnb-4bit, una variante del gpt-oss-20b de OpenAI cuantizada a 4 bits para reducir los requisitos de memoria durante el ajuste fino. El modelo base emplea una arquitectura transformer con capas Mixture-of-Experts, si bien la información proporcionada no detalla el número de expertos, la dimensión oculta ni la ventana de contexto efectiva.
 
-No se dispone de informacion sobre el volumen de datos de entrenamiento, la composicion del dataset, el numero de tokens vistos, la existencia de RLHF, DPO o cualquier otra etapa de alineamiento posterior, ni sobre hiperparametros como rango del LoRA, alpha, tasa de aprendizaje o numero de epochs. La model card conserva la plantilla por defecto de Hugging Face con la mayoria de secciones marcadas como "[More Information Needed]", de modo que no es posible confirmar la naturaleza exacta del ajuste STEM ni las tecnicas de entrenamiento empleadas. Tampoco se documenta ninguna innovacion tecnica adicional (decodificacion especulativa, atencion lineal, mezcla de expertos u otras).
+No se especifican el número de tokens de entrenamiento, la composición del dataset, el rango y alfa del adaptador, la tasa de aprendizaje ni si se aplicaron técnicas de alineación como RLHF o DPO. La única referencia técnica de la model card es la plantilla estándar, que cita el calculador de impacto ambiental de Lacoste et al. (2019) sin aportar valores. Tampoco se documenta ninguna innovación adicional (decodificación especulativa, atención lineal, etc.) más allá de las propias del modelo base.
 
 ## Capacidades
 
-- Generacion de texto conversacional, segun la etiqueta `conversational` y el pipeline `text-generation` declarados.
-- Especializacion presumible en dominios STEM (ciencia, tecnologia, ingenieria y matematicas) por el nombre del adaptador (`stem-v2`), aunque no se documenta el alcance ni la metodologia.
-- Herencia de las capacidades del modelo base GPT-OSS-20B, que no se detallan en la informacion proporcionada.
-- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
-- Capacidades multilingues: no disponible en la informacion proporcionada.
-- Capacidades especiales (modo thinking, vision, audio): no disponible en la informacion proporcionada.
+- Generación de texto conversacional, heredada del modelo base gpt-oss-20b.
+- Razonamiento y resolución de problemas, presumiblemente reforzados por el ajuste orientado a STEM, aunque sin evidencia documentada.
+- Generación y asistencia en código y matemáticas, capacidades típicas del modelo base y del dominio declarado en el nombre.
+- Soporte de tool calling y function calling: no disponible en la documentación del adaptador (el modelo base lo soporta, pero no se confirma que el fine-tuning lo preserve).
+- Razonamiento multi-paso y uso como agente: no disponible.
+- Capacidades multilingües: no disponible; el adaptador podría degradar idiomas distintos del inglés si el dataset de ajuste fue monolingüe, algo que no se puede verificar.
+- Modo thinking, visión o audio: no disponible.
 
 ## Casos de uso
 
-- Asistencia en resolucion de problemas matematicos y fisicos: el adaptador, orientado a STEM, puede emplearse como asistente conversacional para explicar derivaciones paso a paso, siempre que se valide empiricamente su calidad frente al modelo base sin adaptador.
-- Generacion de codigo cientifico y scripts de analisis de datos: integrable en un pipeline de `transformers` con PEFT para autocompletar o explicar fragmentos de codigo en Python, R o MATLAB en entornos de investigacion.
-- Tutoria academica en asignaturas tecnicas: uso en un chatbot educativo que responda dudas de estudiantes de ingenieria, con la salvedad de que la ausencia de evaluacion publicada obliga a auditar las respuestas.
-- Prototipado rapido de asistentes especializados: al ser un adaptador de 0,1 GB, permite experimentar con un dominio concreto sin reentrenar el modelo completo, cargandolo sobre el base en 4 bits en una unica GPU.
-- Investigacion sobre fine-tuning eficiente: sirve como caso de estudio para comparar el efecto de un LoRA de dominio sobre GPT-OSS-20B en tareas STEM, midiendo la degradacion o mejora respecto al base.
-- Generacion de documentacion tecnica y resumenes de articulos cientificos: el modelo puede redactar sintesis de papers o notas de laboratorio, condicionado a una validacion manual por el riesgo de alucinacion.
-- Despliegue en entornos con VRAM limitada: al combinar el adaptador con el base cuantizado a 4 bits, es viable en GPUs de consumo, lo que facilita pruebas locales de asistentes tecnicos.
+- Prototipado de asistentes técnicos en dominios STEM: el adaptador puede cargarse sobre el modelo base para experimentar con respuestas orientadas a física, matemáticas o ingeniería, siempre que se valide su calidad con un conjunto de evaluación propio.
+- Investigación sobre fine-tuning eficiente: sirve como ejemplo reproducible de cómo aplicar LoRA con Unsloth sobre un modelo MoE cuantizado a 4 bits, útil para estudiar el impacto del ajuste en modelos de 20 000 millones de parámetros.
+- Generación de borradores de código en entornos de desarrollo personales: con el modelo base y el adaptador fusionados, puede integrarse en editores o scripts locales para autocompletado y explicación de fragmentos.
+- Experimentación académica con adaptadores de bajo rango: permite comparar el comportamiento del modelo base frente al ajustado en tareas de razonamiento cuantitativo, midiendo la degradación o mejora introducida.
+- Base para futuros fine-tunings: al ser un adaptador ligero (0,1 GB), puede servir de punto de partida o de referencia para entrenamientos posteriores con datasets propios.
+- Despliegue en entornos con recursos limitados tras la fusión y cuantización: el modelo base en 4 bits más el adaptador puede ejecutarse en una única GPU de gama alta de consumo, lo que facilita pruebas locales sin infraestructura dedicada.
 
 ## Benchmarks y rendimiento
 
@@ -56,36 +52,38 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible de forma exacta; al tratarse de un adaptador sobre un modelo base de 20.000 millones de parametros en 4 bits, se requiere cargar dicho base, lo que tipicamente exige del orden de 12-16 GB de VRAM solo para los pesos, mas el overhead de activaciones y cache KV.
-- GPU recomendadas: no disponible en la informacion proporcionada; por el tamano del base en 4 bits, GPUs con 24 GB o mas (RTX 3090, RTX 4090, A10G, L4, A100) son candidatas razonables, pero no hay confirmacion del autor.
-- Cabe en GPU de consumo: probablemente en RTX 3090/4090 (24 GB) con el base en 4 bits, aunque no esta verificado ni documentado.
-- Opciones de despliegue: `transformers` con `peft` (segun la libreria declarada) y `unsloth` para carga eficiente; no se documenta compatibilidad con vLLM, llama.cpp, Ollama o TGI.
-- Latencia y throughput estimados: no disponible.
+- VRAM estimada para inferencia: el adaptador en sí ocupa aproximadamente 0,1 GB; el modelo base en 4 bits requiere del orden de 12-16 GB de VRAM, aunque este dato no está confirmado en la información proporcionada.
+- GPU recomendadas: para el modelo base cuantizado a 4 bits, una RTX 4090 (24 GB) o una A100/H100 para mayor throughput; no hay datos específicos del adaptador.
+- Cabe en GPU de consumo: previsiblemente sí en tarjetas con 16-24 GB de VRAM (RTX 4080, 4090, A6000), siempre que se use el modelo base en 4 bits; no verificado.
+- Opciones de despliegue: PEFT con Transformers para cargar el adaptador, Unsloth para entrenamiento e inferencia, y vLLM, llama.cpp u Ollama tras fusionar el adaptador con el modelo base y convertirlo a GGUF; estas últimas rutas no están documentadas por el autor.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Formato | Observaciones |
+| Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `gassser/ago-gpt-oss-20b-stem-v2` | Adaptador LoRA sobre base de 20b | No disponible | No disponible | safetensors (PEFT) | Especializado en STEM segun nombre; sin evaluacion publicada |
-| `unsloth/gpt-oss-20b-unsloth-bnb-4bit` (modelo base) | 20b (cuantizado 4 bits) | No disponible | No disponible | safetensors (bnb-4bit) | Base sin ajuste de dominio; referencia para medir el efecto del LoRA |
-| GPT-OSS-20B (version original) | 20b | No disponible | No disponible | No disponible | Modelo de referencia del que deriva toda la cadena |
+| gassser/ago-gpt-oss-20b-stem-v2 | Adaptador LoRA sobre 20B (MoE) | no disponible | no disponible | Hugging Face, 477 descargas | Fine-tuning comunitario sin documentación |
+| unsloth/gpt-oss-20b-unsloth-bnb-4bit | 20B (MoE) | no disponible | la del modelo base (no confirmada aquí) | Hugging Face | Modelo base cuantizado a 4 bits |
+| gpt-oss-20b (OpenAI) | 20B (MoE) | no disponible | no disponible en esta ficha | Hugging Face / OpenAI | Modelo original sin ajuste |
 
-No se dispone de datos de rendimiento ni de especificaciones completas de los modelos comparables en la informacion proporcionada, por lo que la comparativa se limita a parametros y formato.
+No se dispone de datos de rendimiento comparativo entre estas variantes en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- La model card no documenta sesgos conocidos, datos de entrenamiento ni procesos de alineamiento, lo que impide evaluar riesgos de sesgo de forma fundamentada.
-- Riesgo de alucinacion inherente a los modelos generativos; en dominios STEM el fallo puede ser especialmente danino si se presentan calculos o referencias incorrectas con apariencia de rigor.
-- No se especifican los idiomas soportados ni la calidad en castellano; el uso en espanol requiere validacion empirica.
-- Licencia no disponible: no puede confirmarse la legalidad del uso comercial del adaptador ni del modelo base; es imprescindible verificar la licencia de `unsloth/gpt-oss-20b-unsloth-bnb-4bit` antes de cualquier despliegue productivo.
-- El repositorio tiene cero descargas y cero likes, y fue creado y actualizado el mismo dia (3 de noviembre de 2026), lo que sugiere un artefacto sin validacion comunitaria.
-- Al ser un adaptador, requiere cargar el modelo base en 4 bits; la combinacion puede introducir degradacion adicional respecto al base en precision completa.
-- No hay informacion sobre el dataset de entrenamiento, por lo que no puede descartarse sobreajuste al dominio STEM ni contaminacion de datos.
-- No se documenta compatibilidad con motores de inferencia de alto rendimiento (vLLM, TGI), lo que limita su uso en produccion a gran escala.
+- La model card está sin completar: no hay información sobre datos de entrenamiento, hiperparámetros ni evaluación, lo que impide reproducir el ajuste.
+- Licencia no especificada: no se puede confirmar si el uso comercial está permitido; además, la licencia del adaptador debe ser compatible con la del modelo base gpt-oss-20b.
+- Idiomas no declarados: el ajuste podría haber reducido el rendimiento multilingüe del modelo base.
+- Riesgo de alucinación inherente al modelo base, potencialmente alterado (mejorado o agravado) por el fine-tuning sin evaluación pública.
+- Sesgos desconocidos: al no documentarse el dataset, no es posible identificar sesgos introducidos durante el ajuste.
+- El adaptador no incluye el modelo base: su uso requiere descargar por separado unsloth/gpt-oss-20b-unsloth-bnb-4bit y contar con PEFT 0.21.2 o compatible.
+- Sin garantías de producción: 477 descargas y 0 likes indican un artefacto experimental de baja validación comunitaria.
+- La fecha de creación (noviembre de 2026) y la ausencia de documentación sugieren que no ha pasado por revisiones de calidad.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/gassser/ago-gpt-oss-20b-stem-v2
+- Modelo en Hugging Face: https://huggingface.co/gassser/ago-gpt-oss-20b-stem-v2
 - Modelo base: https://huggingface.co/unsloth/gpt-oss-20b-unsloth-bnb-4bit
-- Paper de referencia sobre impacto ambiental citado en la model card (Lacoste et al., 2019): https://arxiv.org/abs/1910.09700
-- Calculadora de impacto ML: https://mlco2.github.io/impact
+- Paper citado en la model card (Lacoste et al., 2019): https://arxiv.org/abs/1910.09700
+- Calculador de impacto ambiental: https://mlco2.github.io/impact
+- Librería PEFT: https://github.com/huggingface/peft
+- Unsloth: https://github.com/unslothai/unsloth

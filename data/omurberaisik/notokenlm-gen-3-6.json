@@ -56,31 +56,5 @@
   "renamed_to": "VeroLM/NoTokenLM-Gen-3.6",
   "renamed_at": "2026-11-11T07:00:38.911Z",
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Email & SMS Marketing Platform | Mailchimp",
-      "url": "https://mailchimp.com/?msockid=1cd69cc2e7c9673205278b1ee6f866fb",
-      "snippet": "Join Mailchimp with a free 14-day trial or save 15% off on 10,000+ contacts. Start today."
-    },
-    {
-      "title": "Die E-Mail-Marketing-Plattform, jetzt mit SMS | Mailchimp",
-      "url": "https://mailchimp.com/de/?msockid=1cd69cc2e7c9673205278b1ee6f866fb",
-      "snippet": "Steigere dein Wachstum mit den zeitsparenden Marketing-Tools von Mailchimp. Starte deine 14-tägige kostenlose Testphase."
-    },
-    {
-      "title": "Login | Mailchimp",
-      "url": "https://mailchimp.app.link/aTLHBibqQR",
-      "snippet": "Mailchimp Login | Mailchimp Become the brand you want to be with smarter marketing built for big things."
-    },
-    {
-      "title": "Mailchimp",
-      "url": "https://forms.admin.mailchimp.com/Public/Login",
-      "snippet": "Log in to your Mailchimp account to manage email marketing, automation, and more."
-    },
-    {
-      "title": "Sign Up for Mailchimp",
-      "url": "https://login.mailchimp.com/signup/?msockid=1cd69cc2e7c9673205278b1ee6f866fb",
-      "snippet": "©2026 Intuit Inc. All rights reserved. Mailchimp® is a registered trademark of The Rocket Science Group, Cookie Preferences, …"
-    }
-  ]
+  "sources": []
 }

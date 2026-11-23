@@ -2,109 +2,98 @@
 
 ## Resumen
 
-Sync-shared native-gguf abliterated huihui es un fichero GGUF compartido (la parte "common") del sistema Sync-Strata, un proyecto que distribuye un modelo base junto con "packs" de expertos MoE separados. Este repositorio no contiene un modelo completo: es un reemplazo directo del fichero `native-gguf/Qwen3.8-Flash-Next-Sync-common.gguf` de `hiru2005/Sync-shared`, al que se le ha aplicado el parche de abliteración v2 de huihui-ai. La abliteración elimina la dirección de rechazo de los pesos, de modo que el modelo deja de negarse a responder a peticiones que el original rechazaría.
+Sync-shared native-gguf abliterated huihui es un fichero GGUF que sustituye la parte compartida (*shared*) de la familia de modelos Sync-Strata, desarrollada por hiruhiru2005. El modelo base es `hiru2005/Sync-shared`, un fine-tune de Qwen3.8-Flash-Next con arquitectura MoE y atención híbrida (capas de atención lineal y capas de atención completa). Este repositorio no contiene un modelo completo: contiene únicamente el fichero `native-gguf/Qwen3.8-Flash-Next-Sync-common.gguf` (32,7 GB) al que se ha aplicado el parche de abliteración v2 de huihui-ai. Los *expert packs* (por ejemplo Sync-M) no se incluyen y no se modifican.
 
-El modelo base declarado es Qwen3.8-Flash-Next, una arquitectura híbrida con capas de atención lineal (SSM) y atención completa, y componentes MoE. Los pesos publicados suman 56.147.944.320 parámetros totales y el repo ocupa 32,7 GB. El fichero GGUF tiene 32.692.038.016 bytes y su SHA-256 está documentado en la model card. Solo se modificaron 96 tensores mediante sobrescritura de igual longitud: el resto del fichero es idéntico byte a byte al original.
+La relevancia de esta ficha es acotada: se trata de un artefacto experimental de reemplazo directo (*drop-in*) para usuarios de Sync-Strata que quieren reducir el comportamiento de rechazo del modelo. La abliteración es trabajo de huihui-ai; este repositorio solo aplica su parche publicado al fichero compartido. El resultado es un modelo sin garantías de seguridad por defecto, pensado para investigación y entornos controlados, no para producción ni aplicaciones comerciales de cara al público.
 
-Es relevante ahora como caso de estudio de modificación de pesos en formato GGUF y de los problemas de trazabilidad que introduce: el autor advierte de que la verificación de la app puede detectar el fichero como corrupto, de que los expertos enrutados y la capa draft MTP no están abliterados, y de que no se ejecutó ningún benchmark formal. La licencia declarada es qwen-community-1.0, con la etiqueta `license: other` en los metadatos.
+El modelo declara 56.147.944.320 parámetros totales (56,1 mil millones) y soporta japonés e inglés. La licencia es `qwen-community-1.0`, con etiqueta `license:other`. El repositorio acumula 664 descargas y 1 like desde su creación el 19 de noviembre de 2026.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer híbrido con capas de atención lineal (SSM) y atención completa, con componentes MoE (según la model card: `ssm_out`, `attn_output`, `ffn_down_shexp`, expertos enrutados) |
-| Parametros totales | 56.147.944.320 |
+| Arquitectura | MoE con atención híbrida (capas de atención lineal y capas de atención completa); etiquetada como `qwen3.8-flash-next` y `sync-strata` |
+| Parametros totales | 56.147.944.320 (56,1 mil millones) |
 | Parametros activos | no disponible |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Q5_K (tensores `ssm_out` y `attn_output`), Q8_0 (tensores `ffn_down_shexp`); el parche original de huihui-ai incluye además BF16 |
+| Tipos de cuantizacion | GGUF con tensores Q5_K y Q8_0 en las capas modificadas; el resto del fichero conserva la cuantización original |
 | Idiomas soportados | ja, en |
-| Licencia | qwen-community-1.0 (metadatos: `license: other`) |
+| Licencia | qwen-community-1.0 (`license:other`) |
 | Formato de pesos | GGUF (`native-gguf/Qwen3.8-Flash-Next-Sync-common.gguf`, 32.692.038.016 bytes) |
 
 ## Arquitectura y entrenamiento
 
-El fichero corresponde a la parte compartida del sistema Sync-Strata, que separa un tronco común de una serie de "packs" de expertos (por ejemplo, Sync-M) distribuidos por separado. La arquitectura del tronco combina 36 capas de atención lineal (`blk.N.ssm_out.weight`), 12 capas de atención completa (`blk.N.attn_output.weight`) y 48 capas con componente MoE (`blk.N.ffn_down_shexp.weight` en todas las capas). El sistema incluye además una capa draft MTP (`mtp-rt`) para decodificación especulativa, que no forma parte de este repositorio y no fue modificada.
+La arquitectura es un transformer MoE con atención híbrida: 36 capas usan atención lineal (`blk.N.ssm_out.weight`), 12 capas usan atención completa (`blk.N.attn_output.weight`) y las 48 capas incluyen una proyección *down* de expertos compartidos (`blk.N.ffn_down_shexp.weight`). El modelo base `hiru2005/Sync-shared` es un fine-tune de Qwen3.8-Flash-Next dentro del framework Sync-Strata, que separa una parte compartida (este fichero) de paquetes de expertos enrutados descargables por separado (Sync-M, entre otros).
 
-El único "entrenamiento" aplicado aquí es la abliteración de huihui-ai v2: se sobrescribieron 96 tensores con los bytes del parche publicado por huihui-ai, dirigidos al conjunto `--ablate-experts 2` en todas las capas (`ssm_out`, `attn_output`, `ffn_down_shexp`). Para `ssm_out` y `ffn_down_shexp` se usó la versión del parche del mismo tipo de cuantización (exacta); para `attn_output` el parche no incluía versión Q5_K, así que el tensor BF16 se recuantizó a Q5_K con ggml, con un error RMS relativo del 3,7-3,9 % frente al tensor BF16. Los expertos enrutados y la capa draft MTP no fueron abliterados. No se dispone de información sobre el dataset de entrenamiento original del modelo base ni sobre si hubo RLHF o DPO.
+El único entrenamiento aplicado aquí es la abliteración v2 de huihui-ai, que elimina la dirección de rechazo de los pesos. Se modificaron exactamente 96 tensores mediante sobrescritura de igual longitud: los 36 tensores `ssm_out` en Q5_K y los 48 tensores `ffn_down_shexp` en Q8_0 se copiaron del parche de huihui-ai con el mismo tipo (exacto); los 12 tensores `attn_output` en Q5_K no tenían versión Q5_K en el parche, por lo que se cuantizó la versión BF16 a Q5_K con ggml (error RMS relativo del 3,7-3,9 % frente al tensor BF16). La cabecera, el tamaño y todos los demás tensores son idénticos byte a byte al original. Los expertos enrutados (en los paquetes Sync) y la capa *draft* MTP (`mtp-rt`) no están abliterados.
 
 ## Capacidades
 
-- Generación de texto conversacional en japonés e inglés, según los idiomas declarados.
-- Razonamiento y respuesta a preguntas de carácter general: la evaluación informal usó 40 preguntas generales en ja/en.
-- Explicación de fragmentos de documentos técnicos: la evaluación incluyó 60 peticiones de este tipo.
-- Modo "thinking" conmutable: la comparación de salidas se hizo con `thinking off`.
-- Decodificación especulativa mediante la capa MTP del sistema Sync-Strata (no incluida en este repo).
-- Comportamiento "uncensored": la abliteración reduce los rechazos, de modo que el modelo responde a peticiones que el original declinaría.
-- Soporte de tool calling / function calling: no disponible en la información proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
-- Capacidades de visión: no disponible (la model card menciona un `mmproj` opcional en el sistema Sync-Strata, pero no se detalla su función ni se incluye aquí).
-- Capacidades de audio: no disponible.
+- Generación de texto conversacional en japonés e inglés, heredada de Qwen3.8-Flash-Next.
+- Razonamiento y respuesta a preguntas generales; el autor evaluó con 40 preguntas generales en ja/en.
+- Explicación de extractos de documentos técnicos (60 de las 100 prompts de evaluación).
+- Modo *thinking* desactivable; la evaluación de cambio de salida se hizo con *thinking* off.
+- Decodificación especulativa mediante capa *draft* MTP (mantenida del original, no abliterada).
+- Reducción del comportamiento de rechazo respecto al fichero original (verificación A/B informal del autor).
+- No se declara soporte de *tool calling*, agentes, visión ni audio en la información disponible.
 
 ## Casos de uso
 
-- Investigación sobre abliteración: comparar el comportamiento del fichero original y el parcheado con los mismos prompts para estudiar cómo se distribuye la dirección de rechazo en tensores concretos (`ssm_out`, `attn_output`, `ffn_down_shexp`).
-- Evaluación de robustez de seguridad: medir la tasa de rechazos antes y después del parche en un conjunto controlado de prompts, en un entorno aislado y con revisión manual de salidas.
-- Pruebas de compatibilidad de GGUF: verificar cómo distintas herramientas (llama.cpp, motores que consumen GGUF) tratan un fichero con el mismo tamaño pero distinto SHA-256, y si la verificación por tamaño de la app Sync-Strata lo acepta.
-- Estudio de recuantización: analizar el impacto del error RMS del 3,7-3,9 % introducido al recuantizar `attn_output` de BF16 a Q5_K, comparando la divergencia KL frente a la versión BF16 del parche.
-- Análisis de divergencia de salidas: reproducir la comparación KLD documentada (media 0,0224, mediana 0,0053, acuerdo top-1 del 93,7 % sobre 1.408 posiciones) para validar metodologías de comparación entre variantes de un mismo modelo.
-- Docencia y divulgación: ilustrar en un curso o artículo cómo una modificación de 96 tensores cambia el comportamiento de un modelo de 56 000 millones de parámetros sin reentrenar.
-- Procesamiento de documentación técnica en ja/en en entornos controlados: resúmenes y explicaciones de extractos, siempre con revisión humana por la ausencia de filtros de seguridad.
+- Investigación sobre abliteración: comparar el comportamiento del fichero original y el parcheado con las mismas prompts, usando la métrica de KLD y acuerdo top-1 reportada por el autor (KLD medio 0,0224, mediana 0,0053, acuerdo top-1 del 93,7 % sobre 1.408 posiciones).
+- Evaluación controlada de robustez: medir cuánto cambia la distribución de salida al eliminar la dirección de rechazo en un modelo MoE con atención híbrida.
+- Pruebas de *red teaming* en entorno aislado: generar respuestas que el modelo original rechazaría para analizar fallos de filtrado, con revisión manual obligatoria.
+- Sustitución directa en Sync-Strata: reemplazar `native-gguf/Qwen3.8-Flash-Next-Sync-common.gguf` en la carpeta de modelos para obtener un Sync-M con menos rechazos, manteniendo los paquetes de expertos intactos.
+- Experimentos de decodificación especulativa: estudiar el impacto de una capa *draft* no abliterada sobre la tasa de aceptación cuando el modelo verificador sí está abliterado (el autor no midió esta tasa).
+- Docencia y demostraciones sobre alineación: ilustrar cómo un parche de pesos de 96 tensores altera el comportamiento conversacional sin reentrenamiento.
+- Análisis de cuantización: evaluar el efecto de cuantizar a Q5_K tensores de atención completa desde BF16 (error RMS del 3,7-3,9 %) en la calidad de salida.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La model card solo incluye medidas de divergencia y una comprobación informal de rechazos:
+No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) en la información disponible. El autor reporta exclusivamente métricas internas de comparación entre el fichero original y el abliterado:
 
-| Metrica | Valor |
-|---|---|
-| KL a la versión original (Sync-M, eval_v4, 8 dominios, 1.400 ventanas) | 0,1642 (solo original; la versión abliterada no se midió) |
-| KLD media original vs. abliterado (greedy, thinking off, 1.408 posiciones) | 0,0224 |
-| KLD mediana original vs. abliterado | 0,0053 |
-| Acuerdo top-1 original vs. abliterado | 93,7 % |
-| KLD media ruido run-to-run (original vs. original, 598 posiciones) | 0,0073 |
-| KLD media ruido run-to-run (abliterado vs. abliterado, 591 posiciones) | 0,0086 |
-| Rechazos (A/B informal, Sync-M, GPU de 6 GB) | Menos rechazos con el fichero parcheado; sin benchmark |
+| Comparacion | KLD medio | KLD mediana | Acuerdo top-1 | Posiciones |
+|---|---:|---:|---:|---:|
+| Original vs. abliterado | 0,0224 | 0,0053 | 93,7 % | 1.408 |
+| Original vs. original (ruido entre ejecuciones) | 0,0073 | 0,0016 | 96,5 % | 598 |
+| Abliterado vs. abliterado (ruido entre ejecuciones) | 0,0086 | 0,0018 | 96,1 % | 591 |
 
-La KLD se aproxima a partir de las top-20 log-probabilidades que devuelve el motor, por lo que subestima la KLD de vocabulario completo. La comparación usó 100 prompts cotidianos (40 preguntas generales en ja/en, 60 explicaciones de extractos técnicos) de 32 tokens cada uno.
+Estas cifras provienen de 100 prompts cotidianas (40 preguntas generales en ja/en y 60 explicaciones de extractos técnicos), 32 tokens cada una, decodificación greedy con *thinking* off, comparando solo posiciones con contexto idéntico hasta el primer token divergente. La KLD se aproxima a partir de las top-20 log-probabilidades devolvidas por el motor, por lo que es inferior a una KLD de vocabulario completo. La KLD de Sync-M original frente al profesor Q8_0 es 0,1642 (eval_v4, 8 dominios, 1.400 ventanas); la del fichero abliterado no se midió y no es comparable con la tabla anterior.
 
 ## Requisitos de hardware
 
-- VRAM estimada: el fichero GGUF ocupa 32,7 GB, por lo que la inferencia completa requiere al menos unos 33-36 GB de VRAM o memoria unificada, más el espacio de caché KV.
-- El autor reporta una prueba con una GPU de 6 GB usando Sync-M; no se detalla cómo se reparte la carga entre GPU y CPU/RAM en ese escenario.
-- GPU recomendadas: no disponible en la información proporcionada. Por tamaño, encaja en A100 80 GB, H100, L40S 48 GB o configuraciones con memoria unificada de 64 GB o más.
-- GPU de consumo: no cabe en RTX 4090 (24 GB) ni en RTX 3090 (24 GB) sin offloading a RAM del sistema.
-- Opciones de despliegue: el sistema Sync-Strata es el entorno previsto (descarga los packs de expertos y las demás partes compartidas); el fichero es GGUF y las herramientas compatibles con GGUF podrían cargarlo, aunque no se documenta compatibilidad con llama.cpp, Ollama, vLLM o TGI.
-- Latencia y throughput: no disponible.
+- VRAM estimada: no disponible de forma oficial; el fichero compartido pesa 32,7 GB y requiere además los paquetes de expertos Sync para funcionar, por lo que el consumo total depende del pack elegido.
+- El autor ejecutó la verificación A/B con Sync-M en una GPU de 6 GB, lo que indica que el pack Sync-M con este fichero compartido cabe en hardware consumer modesto.
+- GPU recomendadas: no disponibles en la información proporcionada; el dato de 6 GB sugiere viabilidad en RTX 3060, RTX 4060 y superiores para el pack Sync-M.
+- Despliegue: la vía prevista es la aplicación Sync-Strata, que descarga los ficheros compartidos y los packs; no se documenta compatibilidad con vLLM, llama.cpp, Ollama o TGI.
+- Latencia y throughput: no disponibles. Con MTP activo, la capa *draft* es la original y la tasa de aceptación podría ser algo menor, sin medir.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros totales | Contexto | Licencia | Formato | Notas |
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| Sync-shared native-gguf abliterated huihui (este) | 56.147.944.320 | no disponible | qwen-community-1.0 | GGUF | Parte compartida de Sync-Strata con parche de abliteración v2; requiere packs de expertos externos |
-| hiru2005/Sync-shared (original) | no disponible | no disponible | no disponible | GGUF | Mismo fichero sin abliterar; SHA-256 `82a78508…` |
-| Huihui-Qwen3.8-Flash-Next-abliterated-v2-GGUF | no disponible | no disponible | no disponible | GGUF | Modelo completo de huihui-ai con la abliteración v2; fuente del parche aplicado aquí |
-| sync-strata/Sync-M | no disponible | no disponible | no disponible | GGUF | Pack de expertos usado en las evaluaciones; no incluye el fichero compartido |
-
-No se dispone de datos de rendimiento comparables entre estas variantes más allá de las medidas de divergencia de la sección anterior.
+| Sync-shared abliterated (este) | 56,1 mil millones | no disponible | qwen-community-1.0 | GGUF | Fichero compartido con parche de abliteración v2; requiere packs Sync |
+| hiru2005/Sync-shared (original) | 56,1 mil millones | no disponible | no disponible | GGUF | Fichero compartido sin abliterar; SHA-256 `82a78508d291130fdf4654b90acb5780e8f7f44b28b0ac3495aed59163a00e69` |
+| Huihui-Qwen3.8-Flash-Next-abliterated-v2-GGUF | no disponible | no disponible | no disponible | GGUF | Modelo completo abliterado de huihui-ai; fuente del parche |
+| sync-strata/Sync-M | no disponible | no disponible | no disponible | GGUF | Pack de expertos que se combina con el fichero compartido; KLD 0,1642 frente al profesor Q8_0 |
 
 ## Limitaciones y advertencias
 
-- La abliteración elimina la mayor parte de los rechazos: las salidas pueden ser sensibles, controvertidas o inapropiadas, y el filtrado de seguridad es mucho más débil que en el original.
-- No es apto para audiencias generales, entornos públicos, menores ni usos que requieran alta seguridad; el autor recomienda limitarlo a investigación, pruebas y entornos controlados.
-- Uso en producción o en aplicaciones comerciales de cara al público desaconsejado explícitamente por el autor; sin garantías de seguridad por defecto.
-- Riesgo de alucinación: no cuantificado; no se ejecutaron benchmarks de calidad, veracidad ni razonamiento.
-- Los expertos enrutados (en los packs Sync) y la capa draft MTP no están abliterados; con MTP activo, la tasa de aceptación del draft puede ser algo menor (no medida).
-- El SHA-256 difiere del que figura en la lista de modelos de la app; la verificación normal solo comprueba el tamaño, pero una re-descarga o verificación podría tratar el fichero como dañado y recuperar el original (no probado).
-- El error de recuantización de `attn_output` (3,7-3,9 % RMS relativo) introduce una divergencia adicional respecto al parche BF16 de huihui-ai.
-- Idiomas limitados a japonés e inglés; no se declara soporte de castellano.
-- La licencia qwen-community-1.0 puede imponer restricciones al uso comercial; conviene revisar el texto de la licencia antes de cualquier despliegue.
-- Repositorio con 0 descargas y 1 like en el momento de la consulta: no hay evidencia de uso comunitario ni validación independiente.
-- El fichero no es un modelo autónomo: sin los packs de expertos y las demás partes compartidas de Sync-Strata no es utilizable.
+- El filtrado de seguridad es mucho más débil que el del original: las salidas pueden ser sensibles, controvertidas o inapropiadas y deben revisarse manualmente.
+- No es apto para públicos amplios, menores ni usos que exijan alta seguridad; el autor recomienda limitarlo a investigación, pruebas y entornos controlados.
+- Uso en producción o en aplicaciones comerciales de cara al público desaconsejado por el propio autor, sin garantías de seguridad por defecto.
+- Riesgo de alucinación: no cuantificado; no hay benchmarks de veracidad en la información disponible.
+- La SHA-256 difiere de la esperada por la lista de modelos de Sync-Strata; una reverificación o redescarga puede tratar el fichero como corrupto y recuperar el original (no probado).
+- Con MTP activo, la capa *draft* no está abliterada; la salida sigue al modelo abliterado porque cada borrador se verifica, pero la tasa de aceptación podría bajar (no medida).
+- Los expertos enrutados de los packs Sync no están abliterados, de modo que el efecto global de la abliteración depende de qué pack se use.
+- Solo japonés e inglés declarados; sin cobertura documentada de otros idiomas.
+- Licencia `qwen-community-1.0` con etiqueta `license:other`: conviene revisar los términos antes de cualquier uso comercial.
+- Artefacto experimental: creado y actualizado en noviembre de 2026, con 1 like y 664 descargas, sin pipeline declarado.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/hisaki-13/Sync-shared-native-gguf-abliterated-huihui
 - Modelo base: https://huggingface.co/hiru2005/Sync-shared
-- Proyecto Sync-Strata: https://github.com/hiruhiru2005/sync-strata
-- Pack de expertos Sync-M: https://huggingface.co/sync-strata/Sync-M
+- Parche de abliteración de huihui-ai: https://huggingface.co/huihui-ai/Huihui-Qwen3.8-Flash-Next-abliterated-v2-GGUF
 - Organización huihui-ai: https://huggingface.co/huihui-ai
-- Modelo de referencia de la abliteración: https://huggingface.co/huihui-ai/Huihui-Qwen3.8-Flash-Next-abliterated-v2-GGUF
+- Framework Sync-Strata: https://github.com/hiruhiru2005/sync-strata
+- Pack Sync-M: https://huggingface.co/sync-strata/Sync-M

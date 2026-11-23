@@ -5,7 +5,7 @@
   "author": "Mohsen07",
   "url": "https://huggingface.co/Mohsen07/Qwen3-1.7B-Tunisian-Arabizi-Sentiment-LoRA",
   "created_at": "2026-11-17T15:16:42.000Z",
-  "updated_at": "2026-11-18T10:09:21.000Z",
+  "updated_at": "2026-11-22T08:48:16.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -34,7 +34,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 69,
+  "downloads_30d": 70,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

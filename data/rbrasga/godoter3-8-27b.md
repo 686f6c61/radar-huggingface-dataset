@@ -1,101 +1,83 @@
 # rbrasga/Godoter3.8-27B
 
 ## Resumen
+Godoter3.8-27B es un ajuste fino (fine-tune) del modelo Qwen3.8-27B especializado en el motor de videojuegos Godot Engine 4.x. Lo desarrolla el usuario rbrasga y se distribuye bajo licencia Apache 2.0. El objetivo es responder con precision sobre las APIs, nodos y flujos de trabajo de Godot, partiendo de las capacidades generales del modelo base. Al ser un modelo de vision-lenguaje (VLM), acepta entradas de imagen y texto.
 
-`rbrasga/Godoter3.8-27B` es un repositorio de modelo publicado en Hugging Face por el usuario `rbrasga` bajo licencia Apache 2.0. El nombre sugiere un modelo de aproximadamente 27 000 millones de parámetros (la cifra "27B" del identificador), pero la model card asociada no contiene ninguna documentación técnica: se reduce a la cabecera YAML con la licencia, sin descripción, sin arquitectura declarada, sin tokenizer documentado y sin datos de entrenamiento.
+El modelo se ha entrenado mediante QLoRA sobre el checkpoint base cargado en 4 bits, con un dataset de 24.631 pares instruccion/respuesta anclados a paginas oficiales de la documentacion de Godot 4.x. Conserva las capacidades generales del modelo base y mejora de forma notable el conocimiento especifico del motor. Se publica en pesos safetensors de 16 bits y en cuantizaciones GGUF para llama.cpp.
 
-No se ha podido verificar ningún dato funcional del modelo. El repositorio registra cero descargas y cero likes en el momento de la consulta, y las marcas temporales de creación y actualización son idénticas (2026-10-20T22:04:25Z), lo que apunta a una subida única sin mantenimiento posterior ni histórico de versiones.
-
-Su relevancia actual es, por tanto, indeterminada. Sin model card, sin benchmarks, sin ficha de arquitectura y sin pipeline declarado, no es posible recomendarlo para uso en producción ni evaluarlo frente a alternativas consolidadas en el rango de 24-32B. Esta ficha se limita a documentar lo que consta de forma verificable e indica explícitamente cada dato ausente. Nota adicional: los resultados de búsqueda web devueltos para este modelo son íntegramente irrelevantes (foros sobre Guitar Pro, tipografías de películas y videojuegos) y no aportan ninguna fuente secundaria.
+Con 27.781.427.952 parametros totales y un repositorio de 55,6 GB, esta pensado para desarrolladores de Godot que quieran un asistente local con conocimiento profundo del motor, ejecutable con llama.cpp/llama-server y con soporte de comprension de imagenes mediante el proyector de vision (mmproj).
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (no declarada en la model card) |
-| Parametros totales | 27B (deducido del nombre del repositorio; no confirmado) |
-| Parametros activos | no disponible (se desconoce si es MoE) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible (no se publican pesos GGUF, AWQ ni GPTQ) |
+| Arquitectura | Transformer multimodal (VLM), basada en Qwen3.8-27B; detalles internos no disponibles |
+| Parametros totales | 27.781.427.952 |
+| Parametros activos | no disponible (no se indica que sea MoE) |
+| Longitud de contexto | 32.768 tokens (valor usado en los ejemplos de llama-server; maximo nativo no disponible) |
+| Tipos de cuantizacion | 16 bits (safetensors), Q4_K_M, Q6_K, Q8_0 (GGUF) |
 | Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | no disponible (no se lista el contenido del repositorio) |
+| Formato de pesos | safetensors (16 bits) y GGUF (llama.cpp), con mmproj para vision |
 
 ## Arquitectura y entrenamiento
+El modelo parte de Qwen3.8-27B, un transformer multimodal de tipo vision-lenguaje (pipeline image-text-to-text) que procesa imagenes y texto. El ajuste se realizo con QLoRA (r=32, alpha=64) sobre el checkpoint de 4 bits de unsloth/Qwen3.8-27B, con una longitud de secuencia de 4096, 3 epocas y el framework Unsloth 2026.10.5 sobre ROCm. El dataset empleado es arunsrajan/godot-docs-dataset, compuesto por 24.631 pares instruccion/respuesta, cada uno vinculado a una pagina oficial de la documentacion de Godot Engine 4.x.
 
-No disponible. La model card no especifica la familia arquitectónica (transformer denso, MoE, híbrido con SSM, etc.), ni el tokenizer, ni la longitud de contexto nativa, ni el volumen o composición del corpus de entrenamiento. Tampoco hay referencia a etapas de alineación (RLHF, DPO, ORPO) ni a innovaciones técnicas como atención lineal, decodificación especulativa o modos de razonamiento explícito.
-
-El único dato estructural cierto es el tamaño implícito en el nombre del repositorio (27B). Cualquier afirmación sobre su arquitectura o su proceso de entrenamiento requeriría consultar los archivos de configuración (`config.json`) del repositorio, que no se han proporcionado en la información disponible.
+No se detalla la composicion completa del dataset de preentrenamiento del modelo base ni si hubo etapas de RLHF o DPO en el ajuste. La innovacion principal de este fine-tune es la especializacion documental: el entrenamiento ancla cada respuesta a una fuente oficial, lo que reduce el riesgo de respuestas genericas sobre el motor. Las cuantizaciones GGUF incluyen el proyector de vision necesario para la comprension de imagenes.
 
 ## Capacidades
-
-No hay información verificable sobre las capacidades del modelo. La model card no documenta ninguna de las siguientes áreas, por lo que su presencia o ausencia es desconocida:
-
-- Generación de texto y razonamiento general.
-- Generación y comprensión de código.
-- Razonamiento matemático.
-- Capacidades de visión o audio (se desconoce si es multimodal).
-- Soporte de tool calling / function calling.
-- Soporte de agentes y razonamiento multi-paso.
-- Cobertura multilingüe.
-- Modos especiales (thinking mode, decodificación extendida).
+- Generacion de texto y respuesta conversacional sobre Godot Engine 4.x: APIs, nodos, escenas, senales y flujos de trabajo.
+- Comprension de imagenes (entrada image-text-to-text) gracias al proyector de vision incluido en las cuantizaciones.
+- Razonamiento general y conocimiento general heredados del modelo base Qwen3.8-27B.
+- Respuestas ancladas a la documentacion oficial de Godot, con mayor precision en terminologia y nombres de clases.
+- Capacidad multilingue: no confirmada en la informacion disponible.
+- Soporte de tool calling / function calling: no confirmado en la informacion disponible.
+- Soporte de agentes y razonamiento multi-paso: no confirmado en la informacion disponible.
+- Modo de razonamiento (thinking), audio u otras capacidades especiales: no disponible.
 
 ## Casos de uso
-
-Advertencia previa: al no existir documentación de capacidades, los escenarios siguientes son hipótesis de evaluación condicionadas a que el modelo se comporte como un LLM denso de ~27B parámetros de propósito general. No deben tomarse como casos de uso validados. Cada uno exige una prueba de concepto previa antes de cualquier compromiso.
-
-- Evaluación comparativa interna: desplegar el modelo junto a alternativas consolidadas de 24-32B con un conjunto de prompts propio (código, resumen, extracción de datos) para determinar si su rendimiento justifica considerarlo; es el único uso inmediato razonable dado el vacío documental.
-- Sustitución de bajo coste en pipelines de generación de texto: si el modelo funciona, su licencia Apache 2.0 permite integrarlo sin fricción legal en un servicio de resumen o reescritura, algo que no ocurre con pesos de licencia restrictiva.
-- Ajuste fino supervisado (SFT) sobre dominio propio: un checkpoint de 27B con licencia permisiva es una base potencial para especialización mediante LoRA, siempre que se confirme que los pesos son completos y no un delta o un merge defectuoso.
-- Experimentación académica con hardware limitado: el rango de 27B permite cuantización a 4 bits en una GPU de 24 GB, lo que facilita reproducir experimentos sin clúster.
-- Análisis forense de artefactos publicados: examinar `config.json`, `tokenizer_config.json` y `generation_config.json` para determinar la arquitectura real, el vocabulario y los tokens especiales, útil para investigadores que estudian prácticas de publicación en Hugging Face.
-- Docencia sobre riesgos de cadena de suministro de modelos: el caso ilustra por qué un repositorio sin model card, sin descargas y sin procedencia declarada no debe incorporarse a un pipeline de producción sin auditoría previa.
+- Asistente de documentacion de Godot en local: el modelo responde preguntas sobre nodos y APIs (por ejemplo, RayCast2D) con conocimiento extraido de la documentacion oficial, ejecutable con llama-cli o llama-server sin conexion.
+- Ayuda contextual en el editor: integrado mediante una API compatible con OpenAI, puede responder dudas sobre escenas, senales y scripts mientras el desarrollador trabaja, con una ventana de 32.768 tokens para incluir fragmentos de proyecto.
+- Explicacion de capturas de pantalla del editor: al aceptar imagenes, puede interpretar capturas de la interfaz de Godot y describir que nodo o panel se muestra y como usarlo.
+- Generacion de scripts GDScript comentados: produce codigo de ejemplo para tareas concretas del motor, apoyandose en su conocimiento de la API y en el contexto largo para mantener coherencia entre ficheros.
+- Formacion y onboarding de nuevos desarrolladores: actua como tutor que responde preguntas frecuentes sobre el motor con referencias a conceptos oficiales, reduciendo la dependencia de busquedas manuales.
+- Base para un chatbot de soporte de un estudio: desplegado con llama-server en una GPU de 12-16 GB, atiende consultas internas del equipo sobre Godot con baja latencia y sin enviar datos a servicios externos.
+- Prototipado de herramientas de analisis de documentacion: sirve como modelo de referencia para comparar respuestas sobre la API de Godot en pipelines de evaluacion o generacion de material didactico.
 
 ## Benchmarks y rendimiento
-
-No se han publicado resultados de benchmarks en la información disponible. No existen datos de MMLU, HumanEval, GSM8K, MATH ni de ninguna otra evaluación en la model card, y la búsqueda web no ha devuelto ninguna fuente secundaria relacionada con el modelo.
+No se han publicado resultados de benchmarks en la informacion disponible. El autor indica explicitamente que todavia no se han ejecutado benchmarks y que las cifras se anadiran cuando esten disponibles.
 
 ## Requisitos de hardware
-
-Estimaciones calculadas a partir del supuesto de 27 000 millones de parámetros; no son mediciones del modelo real.
-
-- VRAM para pesos en FP16/BF16: aproximadamente 54 GB solo para pesos, más caché KV (dependiente de contexto y batch). Requiere GPU de 80 GB o reparto multi-GPU.
-- VRAM en cuantización de 8 bits: aproximadamente 27-30 GB de pesos. Encaja en una A100 40 GB o en dos RTX 4090.
-- VRAM en cuantización de 4 bits: aproximadamente 14-16 GB de pesos, más 2-6 GB de caché KV según longitud de contexto. Cabe en una RTX 4090 (24 GB) y, con contexto corto y batch pequeño, en una RTX 3090 o 4080.
-- GPU recomendadas: H100 80 GB o A100 80 GB para FP16 con contexto largo; A100 40 GB para 8 bits; RTX 4090 para 4 bits en inferencia interactiva.
-- Opciones de despliegue: no verificables. No se publican pesos en GGUF, por lo que llama.cpp y Ollama no son utilizables sin conversión previa. vLLM y TGI requerirían confirmar la arquitectura y los formatos de pesos reales del repositorio.
-- Latencia y throughput: no disponibles. No hay mediciones publicadas.
+- VRAM estimada para inferencia segun cuantizacion: Q4_K_M aproximadamente 12 GB, Q6_K aproximadamente 16 GB, Q8_0 aproximadamente 21 GB (cifras del autor, que incluyen el modelo y el proyector de vision).
+- GPU recomendadas: no se especifican modelos concretos; por VRAM, una RTX 4090 (24 GB) cubre Q4_K_M, Q6_K y Q8_0; para Q8_0 con margen se sugiere configuracion multi-GPU con reparto tensorial (--split-mode tensor).
+- Cabe en GPU de consumo: si, en tarjetas con 12 GB o mas para Q4_K_M; Q6_K requiere unos 16 GB y Q8_0 unos 21 GB.
+- Opciones de despliegue: llama.cpp (llama-server y llama-cli), con soporte de API compatible con OpenAI; el modelo base puede desplegarse con otras herramientas, pero la informacion solo documenta llama.cpp.
+- Latencia y throughput estimados: no disponibles.
 
 ## Comparativa con modelos similares
 
-Los datos de las alternativas provienen de sus fichas públicas y deben verificarse contra la versión vigente; los del modelo evaluado son, en su mayoría, desconocidos.
+| Modelo | Parametros | Contexto | Especializacion | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| Godoter3.8-27B | 27,78 B | 32.768 tokens (configurado) | Godot Engine 4.x + vision | Apache 2.0 | safetensors y GGUF |
+| Qwen3.8-27B (base) | 27,78 B (mismo orden) | no disponible | General + vision | Apache 2.0 | pesos del modelo base |
+| Alternativas especializadas en Godot de tamano similar | no disponible | no disponible | no disponible | no disponible | no disponible |
 
-| Modelo | Parametros | Contexto | Licencia | Documentacion publica |
-|---|---|---|---|---|
-| Godoter3.8-27B (rbrasga) | 27B (por el nombre) | no disponible | Apache 2.0 | Practicamente inexistente |
-| Gemma 3 27B (Google) | 27B denso | 128k | Gemma Terms | Model card completa, benchmarks publicados |
-| Qwen3 32B (Alibaba) | ~32B denso | 128k | Apache 2.0 | Model card completa, benchmarks publicados |
-| Mistral Small 3.1 24B | 24B denso | 128k | Apache 2.0 | Model card completa, benchmarks publicados |
-
-No es posible establecer una comparación de rendimiento con estos modelos porque el modelo evaluado no publica ninguna métrica. A igualdad de licencia (Apache 2.0), Qwen3 32B y Mistral Small 3.1 24B ofrecen contexto declarado, tokenizer documentado y evaluaciones reproducibles, ventajas que Godoter3.8-27B no aporta con la información disponible.
+No se dispone de datos de benchmarks ni de otros fine-tunes comparables en la informacion proporcionada, por lo que la comparacion se limita al modelo base y a la ausencia de alternativas documentadas.
 
 ## Limitaciones y advertencias
-
-- Ausencia total de model card: no se puede determinar arquitectura, tokenizer, contexto, idiomas ni datos de entrenamiento. Esto impide cualquier evaluación de riesgos previa al despliegue.
-- Procedencia no verificada: no se documenta de qué modelo base deriva, si es un ajuste fino, un merge o un entrenamiento desde cero. Tampoco se declaran los datos de entrenamiento, lo que impide evaluar contaminación de benchmarks o cumplimiento de licencias de terceros.
-- Riesgo de sesgo desconocido: sin información sobre el corpus, no es posible estimar sesgos de género, etnia, idioma o dominio.
-- Riesgo de alucinación desconocido: no hay evaluaciones de fidelidad ni de tasa de alucinación publicadas.
-- Idiomas: se desconoce si el modelo soporta castellano con calidad suficiente. Cualquier uso en producción en español requiere evaluación propia.
-- Licencia: Apache 2.0 permite uso comercial y modificación, pero el autor no ofrece garantías ni declaración de titularidad de los pesos. Antes de uso comercial conviene confirmar que el publicador tiene derechos para licenciar el modelo.
-- Señal de riesgo en metadatos: cero descargas y cero likes, sin actualizaciones desde la creación, indican que el repositorio no ha pasado por ninguna revisión comunitaria.
-- Posible fecha anómala: las marcas temporales indican 2026-10-20, posterior a la fecha habitual de consulta; conviene verificar la integridad de los metadatos del repositorio.
-- Recomendación operativa: no incorporar este modelo a ningún pipeline de producción sin auditar previamente los archivos del repositorio (`config.json`, `tokenizer_config.json`, pesos) y ejecutar una batería de evaluación propia.
+- Sesgos conocidos: no documentados por el autor; al heredar el modelo base, puede reproducir sesgos presentes en sus datos de entrenamiento.
+- Riesgo de alucinacion: aunque el ajuste se ancla a documentacion oficial, puede generar APIs, propiedades o comportamientos inexistentes, especialmente fuera del ambito de Godot 4.x; conviene verificar en la documentacion oficial.
+- Cobertura limitada a Godot Engine 4.x: el conocimiento especifico se centra en esa version y en el dataset de 24.631 pares; versiones anteriores o caracteristicas muy recientes pueden no estar cubiertas.
+- Idiomas soportados: no confirmados; el dataset de entrenamiento esta en ingles, por lo que el rendimiento en castellano u otros idiomas no esta garantizado.
+- Contexto: los 32.768 tokens son el valor usado en los ejemplos de despliegue; el maximo nativo del modelo base no se especifica.
+- Sin benchmarks publicados: no hay evidencia cuantitativa de mejora frente al modelo base.
+- Requisitos de vision: el proyector mmproj debe cargarse junto al modelo principal; omitirlo desactiva la comprension de imagenes.
+- Licencia: Apache 2.0 permite uso comercial, pero conviene revisar las condiciones del modelo base y del dataset de entrenamiento.
 
 ## Enlaces
-
-- Hugging Face: https://huggingface.co/rbrasga/Godoter3.8-27B
-- Paper: no disponible
-- Blog del autor: no disponible
-- Repositorio de código: no disponible
-- Demo: no disponible
-- Nota: la búsqueda web realizada no devolvió ningún resultado relacionado con este modelo; las entradas obtenidas fueron contenido de foros sin relación (Guitar Pro, tipografías, videojuegos) y se han descartado por no ser fuentes válidas.
+- Modelo en Hugging Face: https://huggingface.co/rbrasga/Godoter3.8-27B
+- Cuantizaciones GGUF: https://huggingface.co/rbrasga/Godoter3.8-27B-GGUF
+- Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
+- Checkpoint 4 bits para entrenamiento: https://huggingface.co/unsloth/Qwen3.8-27B
+- Dataset de entrenamiento: https://huggingface.co/datasets/arunsrajan/godot-docs-dataset
+- llama.cpp: https://github.com/ggml-org/llama.cpp

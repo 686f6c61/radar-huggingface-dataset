@@ -2,101 +2,99 @@
 
 ## Resumen
 
-WeVisDoc-2B-i1-GGUF es la versión cuantizada en formato GGUF del modelo multimodal tencent/WeVisDoc-2B, publicada por el usuario mradermacher. No se trata de un modelo nuevo, sino de una redistribución optimizada para inferencia local: el repositorio recoge cuantizaciones de tipo imatrix (i1) generadas con llama.cpp a partir de los pesos originales de Tencent. La model card indica explícitamente que se trata de un modelo de visión, y que los ficheros `mmproj` necesarios para el componente visual se alojan en el repositorio estático paralelo (mradermacher/WeVisDoc-2B-GGUF), no en este.
+WeVisDoc-2B-i1-GGUF es la versión cuantizada en formato GGUF del modelo WeVisDoc-2B, desarrollado originalmente por Tencent y redistribuido por mradermacher, un conocido creador de cuantizaciones para la comunidad de inferencia local. El modelo base es un transformer de 2.031.739.904 parámetros (aproximadamente 2B) orientado a tareas de documento con componente visual, según se deduce de su nombre y de su linaje dentro de la familia WeVisDoc de Tencent.
 
-El modelo base apunta a un tamaño nominal de 2B parámetros, con soporte declarado de inglés y chino (en, zh) y licencia Apache 2.0, lo que lo sitúa en la categoría de modelos pequeños de comprensión de documentos e imagen, aptos para ejecución en hardware de consumo. La relevancia de esta ficha es práctica: permite disponer de un modelo multimodal de 2B en GGUF para despliegue con llama.cpp, Ollama o LM Studio, con distintos niveles de cuantización que van desde IQ1_S hasta Q6_K.
+Esta ficha cubre específicamente la publicación de cuantizaciones GGUF, que incluye un conjunto amplio de variantes con calibración imatrix (desde i1-IQ1_S de 0,7 GB hasta i1-Q6_K de 1,8 GB), pensadas para ejecución en CPU, GPU de gama baja y entornos con memoria limitada mediante llama.cpp y derivados. La licencia Apache 2.0 del modelo base facilita su uso comercial y su integración en productos.
 
-Conviene señalar dos advertencias de fiabilidad sobre los metadatos disponibles: por un lado, el repositorio figura con 0 descargas, 0 likes y un tamaño de 0.0 GB, y la tabla de ficheros de la model card solo lista el fichero de imatrix (0.1 GB), no los pesos cuantizados, por lo que la disponibilidad efectiva de los GGUF debe verificarse en el repositorio. Por otro lado, los metadatos de safetensors del modelo base reportan 516.292 parámetros totales, un valor incoherente con la denominación "2B"; no hay información que permita resolver esa discrepancia.
+La relevancia actual de esta publicación radica en que permite ejecutar un modelo especializado de 2B parámetros en hardware de consumo, algo especialmente útil para procesamiento de documentos en local (privacidad de datos) y para pipelines de extracción de información donde no se dispone de GPU de datacenter. No obstante, la información pública disponible sobre el modelo base es limitada: no se detallan arquitectura interna, datos de entrenamiento ni benchmarks en la documentación proporcionada.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | No disponible. La model card solo indica que es un modelo de visión (`This is a vision model`); no especifica la arquitectura del transformer ni el codificador visual |
-| Parametros totales | 516.292 según los metadatos de safetensors del modelo base (dato incoherente con la denominación "2B" del nombre del modelo); no disponible el desglose real |
-| Parametros activos | No aplica / no disponible (no hay indicios de que sea MoE) |
+| Arquitectura | Transformer (detalles internos no disponibles) |
+| Parametros totales | 2.031.739.904 (~2B) |
+| Parametros activos | No aplica (no es MoE) |
 | Longitud de contexto | No disponible |
-| Tipos de cuantizacion | GGUF i1 (imatrix): Q2_K, Q2_K_S, IQ2_XXS, IQ2_XS, IQ2_S, IQ2_M, IQ1_S, IQ1_M, Q3_K_S, Q3_K_M, Q3_K_L, IQ3_XXS, IQ3_XS, IQ3_S, IQ3_M, Q4_0, Q4_1, Q4_K_S, Q4_K_M, IQ4_NL (small), IQ4_XS, Q5_K_S, Q5_K_M, Q6_K |
-| Idiomas soportados | Inglés (en) y chino (zh) |
+| Tipos de cuantizacion | GGUF con imatrix: IQ1_S, IQ1_M, IQ2_XXS, IQ2_XS, IQ2_S, IQ2_M, Q2_K_S, Q2_K, IQ3_XXS, IQ3_XS, IQ3_S, Q3_K_S, IQ3_M, Q3_K_M, Q3_K_L, IQ4_XS, IQ4_NL, Q4_0, Q4_K_S, Q4_K_M, Q4_1, Q5_K_S, Q5_K_M, Q6_K |
+| Idiomas soportados | Ingles (en), chino (zh) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (fichero imatrix `WeVisDoc-2B.imatrix.gguf` de 0.1 GB en este repositorio; el resto de cuantizaciones, junto con los posibles ficheros `mmproj`, se anuncian en el repositorio estático mradermacher/WeVisDoc-2B-GGUF) |
+| Formato de pesos | GGUF (safetensors en el modelo base) |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información sobre la arquitectura interna del modelo base tencent/WeVisDoc-2B en los datos proporcionados. La única característica estructural confirmada por la model card es su naturaleza multimodal: el autor de la cuantización etiqueta el modelo como "vision model" y remite los ficheros `mmproj` (proyector multimodal) al repositorio estático, lo que implica la existencia de un codificador visual acoplado a un modelo de lenguaje y de un proyector que alinea ambos espacios de representación. No se especifica si el componente lingüístico es un transformer denso, ni el número de capas, dimensión oculta, tipo de atención o vocabulario.
+El modelo base WeVisDoc-2B es un transformer de aproximadamente 2B parámetros desarrollado por Tencent. La nomenclatura "WeVisDoc" sugiere una especialización en comprensión de documentos con componente visual, aunque la información proporcionada no detalla la arquitectura interna exacta (número de capas, dimensión oculta, mecanismo de atención, integración del encoder visual ni estrategia de fusión multimodal). Tampoco se especifican el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas de alineación como RLHF o DPO.
 
-Tampoco hay datos disponibles sobre el proceso de entrenamiento: no se indica el número de tokens, la composición del corpus, la proporción de datos en inglés y chino, ni si se aplicaron técnicas de ajuste como SFT, RLHF o DPO. Del mismo modo, se desconoce si el modelo incorpora innovaciones como decodificación especulativa, atención lineal o mecanismos de compresión de contexto. La contribución técnica verificable de este repositorio concreto es la cuantización: mradermacher ha generado cuantizaciones ponderadas con imatrix (etiquetadas "i1"), que aplican una matriz de importancia durante el proceso de cuantización para mejorar la perplejidad frente a las cuantizaciones estáticas equivalentes, disponibles por separado en el repositorio mradermacher/WeVisDoc-2B-GGUF.
+La contribución técnica de esta publicación es la cuantización con calibración imatrix, un proceso que estima la importancia de cada tensor mediante un dataset de calibración y ajusta los parámetros de cuantización en consecuencia. Esto produce, según el autor, una calidad superior a la de las cuantizaciones estáticas equivalentes en tamaño (por ejemplo, i1-IQ3_S "beats Q3_K*"). Se ofrecen tanto cuantizaciones IQ (importancia-cuántica, más eficientes en bits por peso) como K-quants clásicas, permitiendo elegir el equilibrio entre tamaño, velocidad y fidelidad. El repositorio incluye además el fichero imatrix (0,1 GB) para que otros usuarios puedan generar sus propias cuantizaciones.
 
 ## Capacidades
 
-- Procesamiento multimodal de imagen y texto: la model card clasifica el modelo como modelo de visión, por lo que se le presupone capacidad de recibir entradas visuales. No se detalla qué tareas concretas cubre.
-- Comprensión de documentos: el nombre del modelo base (WeVisDoc) sugiere orientación a documentos, pero no hay confirmación explícita en la información disponible.
-- Generación de texto en inglés y chino: son los dos únicos idiomas declarados en los metadatos.
-- Cuantización para inferencia local: el repositorio ofrece 24 tipos de cuantización GGUF distintos, lo que permite ajustar el equilibrio entre tamaño, VRAM y calidad.
-- Soporte de tool calling / function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Modo de razonamiento explícito (thinking mode), audio o vídeo: no disponible.
-- Capacidades multilingües adicionales fuera de en y zh: no disponible.
+- Generación de texto conversacional en inglés y chino, según los tags del modelo (conversational).
+- Procesamiento de documentos: el nombre y el linaje WeVisDoc apuntan a tareas de comprensión y extracción de información de documentos, presumiblemente con soporte de entrada visual, aunque la documentación disponible no lo confirma explícitamente.
+- Ejecución local mediante llama.cpp y ecosistema GGUF (Ollama, LM Studio, etc.).
+- Cuantizaciones de muy bajo bit-width (IQ1/IQ2) que permiten ejecución en entornos con menos de 1 GB de memoria para los pesos.
+- Soporte de tool calling / function calling: no disponible en la información proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
+- Capacidades multilingües: limitadas a inglés y chino según los metadatos.
+- Modo thinking, audio u otras capacidades especiales: no disponible en la información proporcionada.
 
 ## Casos de uso
 
-- Extracción de datos de documentos escaneados: dado que el modelo base se orienta a visión y documentos, un uso natural es el parsing de facturas, formularios o recibos en inglés y chino, ejecutando el GGUF con llama.cpp y el fichero `mmproj` correspondiente. Debe validarse empíricamente antes de llevarlo a producción.
-- Digitalización de archivos en entornos con requisitos de privacidad: al ser un modelo de 2B en GGUF, puede ejecutarse íntegramente en local sin enviar documentos a APIs externas, lo que resulta adecuado para sectores con datos sensibles (legal, sanitario, banca).
-- Procesamiento por lotes a bajo coste: la disponibilidad de cuantizaciones IQ2/IQ3 de muy bajo peso permitiría procesar grandes volúmenes de documentos en GPUs modestas o incluso en CPU, priorizando el coste por página sobre la precisión máxima.
-- Asistencia documental en aplicaciones de escritorio: integración en herramientas ofimáticas o visores de PDF mediante Ollama o LM Studio, aprovechando el formato GGUF y los endpoints compatibles con OpenAI.
-- Prototipado rápido de pipelines RAG multimodales: uso del modelo como extractor de texto y estructura de imágenes antes de indexar en una base vectorial, con la ventaja de que la licencia Apache 2.0 no impone restricciones de uso comercial.
-- Investigación en cuantización y evaluación de modelos pequeños: el repositorio ofrece 24 variantes de cuantización del mismo modelo, lo que lo convierte en un banco de pruebas útil para medir el impacto de cada tipo de cuantización en tareas de visión-documento.
-- Despliegue en edge o dispositivos con recursos limitados: un modelo de 2B en cuantizaciones de 1-2 GB es candidato para escenarios de inferencia en el borde, siempre que se verifique el consumo real de memoria del componente visual.
+- Procesamiento de documentos en local con privacidad: al ejecutarse con llama.cpp en CPU o GPU de consumo, permite extraer y resumir información de documentos sin enviar datos a servicios en la nube, algo crítico en sectores como legal, sanidad o administración pública.
+- Digitalización y análisis de facturas o formularios: un modelo de 2B especializado en documentos puede clasificar y extraer campos estructurados en pipelines batch, con la ventaja de que la cuantización Q4_K_M (1,4 GB) cabe en cualquier portátil moderno.
+- Asistente conversacional ligero en inglés o chino: para aplicaciones de chat embebidas en dispositivos con recursos limitados (Raspberry Pi, mini-PC, móviles de gama alta), usando cuantizaciones IQ2/IQ3 de alrededor de 1 GB.
+- Preprocesamiento en pipelines RAG: el modelo puede actuar como extractor o resumidor de fragmentos de documentos antes de indexarlos en una base vectorial, reduciendo coste frente a modelos mayores en la fase de ingesta.
+- Despliegue en entornos air-gapped: organizaciones con requisitos de aislamiento de red pueden distribuir el fichero GGUF y ejecutarlo con Ollama o llama.cpp sin dependencias externas, gracias a la licencia Apache 2.0.
+- Experimentación e investigación: el conjunto de 24 cuantizaciones con distintos bit-widths permite estudiar la degradación de calidad por nivel de compresión en un modelo multimodal de 2B, útil para trabajos académicos sobre eficiencia de inferencia.
+- Prototipado rápido de aplicaciones documentales: usar Q4_K_S (1,3 GB) como baseline en fases de desarrollo antes de escalar a modelos mayores en producción.
 
 ## Benchmarks y rendimiento
 
 No se han publicado resultados de benchmarks en la informacion disponible.
 
-La búsqueda web asociada no devolvió ningún resultado relevante sobre el modelo: los enlaces recuperados son discusiones en foros chinos sobre Wikipedia, letras de canciones y volcados de texto, sin relación con WeVisDoc-2B ni con cuantizaciones GGUF.
-
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible como dato oficial. Como estimación basada en un modelo de ~2B parámetros (etiqueta del nombre, no confirmada por los metadatos), cabría esperar aproximadamente: ~4 GB en FP16, ~2,2 GB en Q8_0, ~1,3-1,5 GB en Q4_K_M e inferior a 1 GB en cuantizaciones IQ2/IQ3. A estas cifras hay que sumar el coste del proyector visual (`mmproj`) y de la caché KV, que dependen del contexto y de la resolución de imagen de entrada. Estas cifras son estimaciones, no datos publicados.
-- GPU recomendadas: no disponible. Por tamaño, cualquier GPU con 8 GB o más debería ser suficiente; modelos de gama alta (A100, H100) no son necesarios para este tamaño.
-- Compatibilidad con GPU de consumo: previsiblemente sí, en tarjetas como RTX 3060 12 GB, RTX 4060, RTX 4070 o superiores, e incluso en GPUs de 6-8 GB con cuantizaciones agresivas. No confirmado por el autor.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, KoboldCpp y cualquier runtime compatible con GGUF. Para el componente visual es imprescindible cargar el fichero `mmproj` del repositorio estático. vLLM y TGI no son el objetivo de este repositorio (trabajan con safetensors, no con GGUF).
-- Latencia y throughput estimados: no disponible.
+- VRAM estimada para inferencia (solo pesos, sin KV cache):
+  - IQ1_S / IQ1_M: ~0,7 GB
+  - IQ2_XXS a IQ2_M: ~0,8–0,9 GB
+  - Q2_K / IQ3_XXS: ~1,0 GB
+  - IQ3_S / Q3_K_M: ~1,1–1,2 GB
+  - IQ4_XS / Q4_K_S / Q4_K_M: ~1,3–1,4 GB
+  - Q5_K_M: ~1,6 GB
+  - Q6_K: ~1,8 GB
+- GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM para las cuantizaciones Q4; RTX 3060/4060, GTX 1660, Apple Silicon (M1 en adelante) y GPUs integradas recientes son suficientes. Para Q6_K se recomienda 3–4 GB de VRAM para dejar margen al KV cache.
+- Cabe en GPU de consumo: sí, en prácticamente todas las GPUs dedicadas de los últimos diez años, e incluso en modo CPU puro.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, llama-cpp-python, text-generation-webui, Jan. vLLM y TGI no soportan GGUF de forma nativa (requerirían el modelo base en safetensors).
+- Latencia y throughput: no disponibles en la información proporcionada. En términos orientativos de la familia de 2B en Q4 con llama.cpp en CPU moderna se suele obtener un throughput interactivo, pero no se aportan cifras verificadas para este modelo concreto.
 
 ## Comparativa con modelos similares
 
-No hay datos de rendimiento publicados para WeVisDoc-2B, por lo que la comparación se limita a parámetros, licencia y disponibilidad. Los datos de contexto y rendimiento de los modelos alternativos deben verificarse en sus respectivas fichas.
+| Modelo | Parámetros | Contexto | Idiomas | Licencia | Formato | Notas |
+|---|---|---|---|---|---|---|
+| WeVisDoc-2B-i1-GGUF (este) | ~2B | No disponible | en, zh | Apache 2.0 | GGUF | Cuantizaciones imatrix, especializado en documentos |
+| Qwen2-VL-2B | ~2B | No disponible en esta ficha | multilingüe | Apache 2.0 | safetensors, GGUF (comunidad) | Modelo multimodal de referencia en el rango 2B |
+| SmolVLM-2B | ~2B | No disponible en esta ficha | en | Apache 2.0 | safetensors, GGUF | Alternativa ligera multimodal de Hugging Face |
+| MiniCPM-V 2.6 (8B) | ~8B | No disponible en esta ficha | multilingüe | Modelo abierto con restricciones | safetensors, GGUF | Mayor tamaño y capacidad, requiere más VRAM |
 
-| Modelo | Parametros | Contexto | Licencia | Formato / disponibilidad | Rendimiento |
-|---|---|---|---|---|---|
-| WeVisDoc-2B (base de esta ficha) | ~2B según nombre; metadatos safetensors reportan 516.292 | No disponible | Apache 2.0 | Safetensors (base) y GGUF (esta cuantización) | No disponible |
-| Qwen2-VL-2B | ~2B | No disponible en esta ficha | Apache 2.0 | Safetensors y múltiples cuantizaciones comunitarias | No disponible |
-| InternVL2-2B | ~2B | No disponible en esta ficha | MIT | Safetensors y cuantizaciones comunitarias | No disponible |
-| SmolVLM (familia de ~2B) | ~2B | No disponible en esta ficha | Apache 2.0 | Safetensors y GGUF | No disponible |
-
-Nota: los datos de licencia y tamaño de los modelos alternativos proceden de conocimiento general de la familia de modelos y deben confirmarse en sus fichas oficiales antes de tomar decisiones de producción. No se han incluido cifras de benchmarks porque no hay datos verificables en la información proporcionada para ninguno de ellos.
+La comparación cuantitativa de rendimiento no es posible con la información disponible; los modelos alternativos se incluyen por proximidad de tamaño y dominio (documentos/multimodal), no por datos de benchmarks verificados en esta ficha.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de benchmarks: no existe ninguna evaluación publicada en la información disponible que permita estimar la calidad del modelo en tareas de OCR, VQA o comprensión documental. Cualquier uso en producción exige una evaluación propia previa.
-- Riesgo de alucinación: inherente a los modelos generativos, especialmente crítico en extracción de datos de documentos, donde una cifra o un nombre inventado puede tener consecuencias graves. Se recomienda validación posterior y reglas de negocio.
-- Discrepancia en el recuento de parámetros: los metadatos reportan 516.292 parámetros totales, un valor que no encaja con la denominación "2B". Esto puede deberse a un error de indexación de Hugging Face o a un modelo con un componente lingüístico muy pequeño. Afecta directamente a las estimaciones de VRAM y a la expectativa de capacidades.
-- Disponibilidad del repositorio dudosa: 0 descargas, 0 likes, tamaño de repositorio 0.0 GB y una tabla de ficheros que solo lista el imatrix de 0.1 GB. Es posible que los GGUF anunciados no estén subidos. Verificar antes de depender de ellos.
-- Dependencia de ficheros externos: el componente visual requiere los `mmproj` del repositorio estático mradermacher/WeVisDoc-2B-GGUF. Sin ellos, el modelo no funcionará como multimodal.
-- Cobertura lingüística limitada: solo inglés y chino. No hay soporte declarado de castellano ni de otras lenguas, y el rendimiento en idiomas no declarados es impredecible.
-- Pérdida de calidad por cuantización: las cuantizaciones IQ1/IQ2 introducen degradación notable de perplejidad. Para tareas de comprensión documental, donde el detalle importa, se recomienda Q4_K_M o superior.
-- Licencia: Apache 2.0 permite uso comercial y modificación, pero se hereda del modelo base; conviene verificar que la ficha de tencent/WeVisDoc-2B no añada condiciones adicionales (términos de uso, restricciones de despliegue o requisitos de atribución).
-- Sesgos: no disponible. No hay información sobre la composición del dataset de entrenamiento, por lo que no puede evaluarse el sesgo demográfico, geográfico o cultural.
-- Modelo de nicho y baja adopción: sin comunidad, sin issues públicos y sin documentación adicional, el soporte y la resolución de problemas dependen exclusivamente del autor de la cuantización.
+- La información pública sobre el modelo base es escasa: no se documentan arquitectura interna, contexto máximo, datos de entrenamiento ni evaluación, lo que dificulta estimar su calidad real frente a alternativas.
+- Idiomas limitados a inglés y chino; el rendimiento en castellano no está garantizado ni documentado.
+- Riesgo de alucinación inherente a modelos de 2B parámetros, especialmente en tareas de extracción de datos de documentos donde la fidelidad es crítica; se recomienda validación posterior.
+- Las cuantizaciones de muy bajo bit-width (IQ1, IQ2, Q2_K) degradan notablemente la calidad; el propio autor las etiqueta como "for the desperate" o "very low quality".
+- No se confirma soporte de tool calling, agentes ni modo thinking; no asumir estas capacidades en producción.
+- Aunque la licencia del modelo base es Apache 2.0, conviene verificar los términos del modelo original de Tencent por si existiesen condiciones adicionales no reflejadas en los metadatos.
+- El tamaño del repositorio (25,2 GB) se debe al conjunto completo de cuantizaciones; descargar solo el fichero necesario para evitar consumo innecesario de disco.
+- Al ser una cuantización de la comunidad, no hay garantía de soporte oficial ni de actualizaciones por parte de Tencent.
 
 ## Enlaces
 
-- Repositorio de la cuantización: https://huggingface.co/mradermacher/WeVisDoc-2B-i1-GGUF
-- Modelo base: https://huggingface.co/tencent/WeVisDoc-2B
-- Repositorio estático de cuantizaciones (incluye posibles `mmproj`): https://huggingface.co/mradermacher/WeVisDoc-2B-GGUF
-- Página resumen de descargas del autor: https://hf.tst.eu/model#WeVisDoc-2B-i1-GGUF
-- Preguntas frecuentes y solicitudes de cuantización de mradermacher: https://huggingface.co/mradermacher/model_requests
-- Guía de uso de ficheros GGUF (README de TheBloke, referenciado por el autor): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
-- Gráfica comparativa de tipos de cuantización (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png
-- Notas de Artefact2 sobre cuantizaciones: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
-- Empresa del autor de la cuantización: https://www.nethype.de/
-- Paper, blog o demo oficiales del modelo base: no disponible en la información proporcionada.
+- Repositorio GGUF (esta publicación): https://huggingface.co/mradermacher/WeVisDoc-2B-i1-GGUF
+- Cuantizaciones estáticas del mismo autor: https://huggingface.co/mradermacher/WeVisDoc-2B-GGUF
+- Modelo base original: https://huggingface.co/tencent/WeVisDoc-2B
+- Página de descargas del autor: https://hf.tst.eu/model#WeVisDoc-2B-i1-GGUF
+- FAQ y solicitudes de cuantización: https://huggingface.co/mradermacher/model_requests
+- Guía de uso de GGUF (referencia de TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Análisis de tipos de cuantización (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9

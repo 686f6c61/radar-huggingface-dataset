@@ -5,15 +5,18 @@
   "author": "JackyHoCL",
   "url": "https://huggingface.co/JackyHoCL/Qwen3.6-35B-A3B-Cantonese-Audio-exp",
   "created_at": "2026-11-22T09:36:34.000Z",
-  "updated_at": "2026-11-22T14:05:10.000Z",
-  "license": null,
-  "license_family": "unknown",
+  "updated_at": "2026-11-22T14:25:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
   "pipeline_tag": null,
   "library": null,
   "languages": [],
   "tags": [
     "safetensors",
     "omni35_thinker",
+    "base_model:Qwen/Qwen3.6-35B-A3B",
+    "base_model:quantized:Qwen/Qwen3.6-35B-A3B",
+    "license:apache-2.0",
     "fp8",
     "region:us"
   ],
@@ -25,7 +28,7 @@
   "storage_bytes": 38788091653,
   "storage_human": "38.8 GB",
   "context_length": null,
-  "base_model": null,
+  "base_model": "Qwen/Qwen3.6-35B-A3B",
   "formats": [
     "safetensors"
   ],

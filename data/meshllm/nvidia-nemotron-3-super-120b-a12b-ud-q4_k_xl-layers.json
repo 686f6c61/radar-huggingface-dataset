@@ -49,31 +49,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "2026 Midterm Election Results: Senate, House and Governor Races",
-      "url": "https://apnews.com/projects/elections-2026/",
-      "snippet": "Mar 3, 2026 · Follow elections for U.S. Senate, U.S. House, governor and more across all 50 states with real-time vote counts, county …"
-    },
-    {
-      "title": "Election 2026: Results, news and analysis | CNN Politics",
-      "url": "https://www.cnn.com/election/2026",
-      "snippet": "23 hours ago · Follow the latest news, results and analysis from every race in the 2026 midterm elections."
-    },
-    {
-      "title": "Election News: Latest Results from Local and National Races",
-      "url": "https://www.nbcnews.com/politics/elections",
-      "snippet": "Find the latest presidential election news stories, photos and videos on NBCNews.com. Read headlines covering the presidential …"
-    },
-    {
-      "title": "2024 United States presidential election - Wikipedia",
-      "url": "https://en.m.wikipedia.org/wiki/2024_United_States_presidential_election",
-      "snippet": "1.1.1Donald Trump's false claims of interference. 1.1.2Interference by foreign nations. 1.1.2.1China. 1.1.2.2Russia. 1.1.2.3Iran. …"
-    },
-    {
-      "title": "2026 Midterm Elections News | Top Headlines, Latest Polls & Analysis ...",
-      "url": "https://www.reuters.com/world/us/elections/",
-      "snippet": "2 days ago · Follow stories, results, data and implications of U.S. elections here."
-    }
-  ]
+  "sources": []
 }

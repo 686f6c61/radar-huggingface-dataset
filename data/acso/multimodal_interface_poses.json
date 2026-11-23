@@ -1,0 +1,81 @@
+{
+  "schema": 2,
+  "id": "acso/multimodal_interface_poses",
+  "slug": "acso-multimodal_interface_poses",
+  "author": "acso",
+  "url": "https://huggingface.co/acso/multimodal_interface_poses",
+  "created_at": "2026-11-18T17:42:37.000Z",
+  "updated_at": "2026-11-23T02:55:08.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "tabular-classification",
+  "library": "scikit-learn",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "scikit-learn",
+    "joblib",
+    "robotics",
+    "ros2",
+    "nav2",
+    "human-robot-interaction",
+    "hri",
+    "pose-classification",
+    "yolov8-pose",
+    "random-forest",
+    "multimodal-navigation",
+    "service-robots",
+    "robocup-at-home",
+    "tabular-classification",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3763446,
+  "storage_human": "4 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ACSO – Centres Socioculturels d'Oullins",
+      "url": "https://csoullins.org/",
+      "snippet": "Nov 10, 2019 · Retour en images sur notre soirée d’Halloween au Centre de Loisirs !"
+    },
+    {
+      "title": "ACSO | Votre spécialiste du chauffage rayonnant",
+      "url": "https://acso.fr/",
+      "snippet": "La gamme ACSO s’adapte sans cesse aux nouvelles réglementations et aux demandes du marché. Son département Recherche & …Read more"
+    },
+    {
+      "title": "Accueil - Agglomération Creil Sud Oise ( ACSO )",
+      "url": "https://www.creilsudoise.fr/",
+      "snippet": "Bienvenue sur le site internet de la Communauté d’Agglomération Creil Sud Oise (ACSO). L' ACSO compte 11 communes et 88 000 …Read more"
+    },
+    {
+      "title": "Nos catalogues - ACSO",
+      "url": "https://acso.fr/nos-catalogues/",
+      "snippet": "Nos catalogues Retrouvez ici tous nos catalogues disponibles au téléchargement :"
+    },
+    {
+      "title": "ACSO CONSEILS",
+      "url": "https://www.acso-conseils.com/fr/",
+      "snippet": "S’appuyant sur des équipes pluridisciplinaires et des liens privilégiés avec des professionnels locaux (avocats et notaires), l’offre …Read more"
+    }
+  ]
+}

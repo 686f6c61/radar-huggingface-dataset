@@ -46,31 +46,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "tinyopsec/incorrecter-GGUF · Hugging Face",
-      "url": "https://huggingface.co/tinyopsec/incorrecter-GGUF",
-      "snippet": "Text Generation model with 0.5B parameters, built with GGUF. Download, explore files and run it on Hugging Face."
-    },
-    {
-      "title": "tinyopsec (TinyTech) - Hugging Face",
-      "url": "https://huggingface.co/tinyopsec/models",
-      "snippet": "tinyopsec&#x27;s models35 Sort: Recently updated tinyopsec/bible-assistant-qwen35-4b-GGUF Text Generation • 4B•Updated 11 days ago• 2.16k • 1"
-    },
-    {
-      "title": "GitHub - Avicennasis/incorrecter: The opposite of autocorrect: a 0.5B ...",
-      "url": "https://github.com/Avicennasis/incorrecter/tree/main/",
-      "snippet": "The opposite of autocorrect. Incorrecter takes clean, AI-sounding text — a thank-you email, a landlord note, a Slack update, a short essay — and adds a few realistic human errors: eggcorns, wrong homophones, fat-finger slips, a lowercase sentence start, a doubled space, a dropped final period."
-    },
-    {
-      "title": "GGUF vs GPTQ vs AWQ vs EXL2: LLM Model Formats Explained (2026)",
-      "url": "https://www.marktechpost.com/2026/09/18/gguf-vs-gptq-vs-awq-vs-exl2-llm-model-formats-explained-2026/",
-      "snippet": "GGUF, GPTQ, AWQ, EXL2, EXL3 explained: verified bits-per-weight, calibration, hardware fit, and runtime support for running local LLMs."
-    },
-    {
-      "title": "GitHub - GGUFloader/gguf-loader: GGUF Loader with its Agentic Mode, and ...",
-      "url": "https://github.com/GGUFloader/gguf-loader",
-      "snippet": "GGUF Loader with its Agentic Mode, and floating button, ai Models | Open Source & Offline. Mistral, Deepseek, llama, gemma, qwen - GGUFloader/gguf-loader"
-    }
-  ]
+  "sources": []
 }

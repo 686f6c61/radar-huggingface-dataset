@@ -27,7 +27,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 457,
+  "downloads_30d": 459,
   "trending_score": 0,
   "parameters": 31742607472,
   "parameters_human": "31.74B",
@@ -48,31 +48,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "YouTube kanalınızı silme veya gizleme",
-      "url": "https://support.google.com/youtube/answer/55759?hl=tr",
-      "snippet": "YouTube kanalınızdaki içeriği gizleyebilir ve daha sonra tekrar etkinleştirmeyi tercih edebilirsiniz. Kanalınızı gizlediğinizde kanal adı, …"
-    },
-    {
-      "title": "จัดการวิธีการชำระเงิน - คอมพิวเตอร์ - YouTube ความช่วยเหลือ",
-      "url": "https://support.google.com/youtube/answer/9517178?hl=th&co=GENIE.Platform%3DDesktop",
-      "snippet": "คุณสามารถเปลี่ยน ลบ และเพิ่มวิธีการชำระเงินสำรองเพื่อให้ ..."
-    },
-    {
-      "title": "Results for \"yt jeffsy\" - Pinkbike BuySell Search",
-      "url": "https://www.pinkbike.com/buysell/list/?region=3&q=yt+jeffsy",
-      "snippet": "Explore North America's largest marketplace for used mountain bikes and parts."
-    },
-    {
-      "title": "Results for \"Decoy\" - Pinkbike BuySell Search",
-      "url": "https://www.pinkbike.com/buysell/list/?q=Decoy",
-      "snippet": "YT DECOY core 2 mx, great condition, has had ride wrap on the bike since I purchased, around 350 miles ridden, and only 10 since …"
-    },
-    {
-      "title": "Jak wylogować się z konta YouTube na telewizorze lub konsoli do gier ...",
-      "url": "https://support.google.com/youtube/answer/7612539?hl=pl",
-      "snippet": "Możesz wylogować się z konta YouTube na telewizorze lub konsoli do gier albo usunąć je niezależnie od tego, czy masz dostęp do …"
-    }
-  ]
+  "sources": []
 }

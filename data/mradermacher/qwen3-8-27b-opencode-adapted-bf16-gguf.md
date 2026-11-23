@@ -2,49 +2,50 @@
 
 ## Resumen
 
-`mradermacher/Qwen3.8-27B-opencode-adapted-bf16-GGUF` es una publicación de cuantizaciones estáticas en formato GGUF del modelo `prithivMLmods/Qwen3.8-27B-opencode-adapted-bf16`. El autor, mradermacher, es un conocido generador de cuantizaciones GGUF para llama.cpp, y en este caso se limita a convertir y cuantizar los pesos originales en bf16 a una batería de niveles de cuantización (Q2_K a Q8_0, además de F16 e IQ4_XS). No se trata, por tanto, de un modelo entrenado desde cero, sino de una distribución derivada.
+Qwen3.8-27B-opencode-adapted-bf16-GGUF es una distribucion de cuantizaciones estaticas en formato GGUF del modelo prithivMLmods/Qwen3.8-27B-opencode-adapted-bf16, publicada por el usuario mradermacher. No se trata de un modelo entrenado desde cero, sino de un trabajo de conversion y cuantizacion que permite ejecutar un modelo de 27.320.697.856 parametros en hardware de consumo mediante llama.cpp y entornos compatibles con GGUF. El modelo base deriva de la familia Qwen3 y ha sido adaptado especificamente para tareas de agentes y programacion mediante tecnicas de aprendizaje por refuerzo (GRPO y async-GRPO) y LoRA sobre datasets orientados a entornos de agente como harbor y openenv.
 
-El modelo base declara 27.320.697.856 parámetros totales según los safetensors del repositorio original, lo que lo sitúa en la categoría de modelos densos de ~27B. El nombre sugiere una adaptación orientada a tareas de "opencode" (generación de código y agentes de programación), pero la información disponible no permite confirmar la naturaleza exacta de ese ajuste ni los datos empleados.
+La relevancia de esta publicacion radica en que pone a disposicion de la comunidad un modelo de 27B parametros ajustado para flujos de trabajo agente (tool calling, edicion de codigo, ejecucion multi-paso) en un rango de tamanos de archivo que va desde 11,3 GB con Q2_K hasta 29,1 GB con Q8_0. Esto lo hace viable en GPUs de consumo de gama alta y en configuraciones multi-GPU modestas, algo que el checkpoint original en bf16 (repo de 190,7 GB) no permite.
 
-La relevancia de esta ficha es doble: por un lado, documenta una de las pocas rutas prácticas para ejecutar un modelo de 27B en hardware de consumo mediante cuantización agresiva (Q2_K, Q3_K_S); por otro, advierte de que la model card original es prácticamente vacía y de que el modelo base es una adaptación de terceros sobre una arquitectura presumiblemente Qwen3, sin verificación independiente.
+La licencia Apache 2.0 facilita su uso comercial. Sin embargo, la informacion publicada es escasa: no se documentan la longitud de contexto, los idiomas soportados mas alla del ingles, ni resultados de benchmarks, por lo que las evaluaciones deben realizarse de forma empirica antes de llevarlo a produccion.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (presumiblemente transformer denso basado en Qwen3; no confirmado) |
+| Arquitectura | Transformer (derivada de la familia Qwen3; detalles no disponibles) |
 | Parametros totales | 27.320.697.856 |
-| Parametros activos | no aplica (no hay indicios de MoE) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | F16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q4_K_M, Q4_K_S, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K, IQ4_XS |
-| Idiomas soportados | no disponible |
-| Licencia | no disponible |
-| Formato de pesos | GGUF (cuantizaciones estáticas); pesos originales en bf16 safetensors |
+| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0 |
+| Idiomas soportados | en (ingles declarado; el resto no disponible) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (checkpoint base en bf16/safetensors) |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información sobre la arquitectura interna del modelo base más allá de su tamaño (27.320.697.856 parámetros según safetensors) y de la convención de nombres "Qwen3.8-27B", que sugiere una variante de la familia Qwen3. No hay datos publicados sobre número de tokens de entrenamiento, composición del dataset, uso de RLHF/DPO ni innovaciones técnicas (atención lineal, decodificación especulativa, etc.) en la información proporcionada.
+El modelo base es un transformer de 27.320.697.856 parametros perteneciente a la familia Qwen3, segun se deduce del nombre y de la nomenclatura del checkpoint. La adaptacion realizada por prithivMLmods se ha orientado a tareas de agente y programacion: las etiquetas del repositorio indican el uso de GRPO y async-GRPO (variantes de aprendizaje por refuerzo con verificacion), junto con LoRA, sobre datasets especificos de entornos de agente como harness-hub/scale800-harbor, harness-hub/harness-adapters, harness-hub/termgrade-train-harbor y ai-and/termgrade-environments. Tambien aparecen etiquetas relacionadas con harbor, openenv, opencode y mtp (multi-token prediction).
 
-Respecto al proceso de esta publicación concreta, la model card indica únicamente metadatos de la herramienta de cuantización (`quantize_version: 2`, `output_tensor_quantised: 1`, `convert_type: hf`) y la lista de cuantizaciones generadas. Se trata, por tanto, de una conversión HF→GGUF seguida de cuantización estática, sin entrenamiento adicional ni ajuste fino por parte de mradermacher. El sufijo "opencode-adapted" del modelo base sugiere un ajuste orientado a código, pero no se documenta su metodología.
+No se dispone de informacion sobre el numero de tokens de entrenamiento, la composicion exacta del dataset, la existencia de fases de RLHF o DPO adicionales, ni innovaciones arquitectonicas concretas mas alla de las mencionadas etiquetas. El trabajo de mradermacher se limita a la conversion a GGUF y a la generacion de cuantizaciones estaticas (quantize_version 2, output_tensor_quantised 1, convert_type hf); tambien ofrece cuantizaciones ponderadas/imatrix en un repositorio separado.
 
 ## Capacidades
 
-- Generación de texto conversacional (etiqueta `conversational` en el repo).
-- Presunta especialización en código y flujos de programación por el sufijo "opencode" del modelo base, aunque no verificable con la información disponible.
-- Compatibilidad con endpoints (etiqueta `endpoints_compatible`), lo que indica que puede servirse mediante Inference Endpoints de Hugging Face.
-- Soporte de tool calling / function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingües: no disponible.
-- Capacidades especiales (thinking mode, visión, audio): no disponible.
+- Generacion de texto conversacional en ingles, con soporte para text-generation-inference.
+- Razonamiento multi-paso y ejecucion de tareas de agente, segun la adaptacion con GRPO y los datasets de entornos harbor/openenv.
+- Tool calling y function calling, coherente con las etiquetas agents y opencode.
+- Edicion y generacion de codigo en flujos de tipo opencode (asistente de programacion en terminal).
+- Entrenamiento con multi-token prediction (etiqueta mtp), lo que puede mejorar el throughput de decodificacion.
+- Capacidades multilingues: solo se declara ingles; el resto no disponible.
+- No se documentan capacidades de vision, audio ni modo thinking explicito.
 
 ## Casos de uso
 
-- Despliegue local en estaciones de trabajo con GPU de consumo: las cuantizaciones Q3_K_M y Q4_K_S permiten cargar un modelo de 27B en GPUs con 12–16 GB de VRAM, algo inviable con los pesos bf16 originales (más de 50 GB).
-- Servicio conversacional autoalojado: la etiqueta `conversational` y el formato GGUF permiten servirlo con llama.cpp u Ollama en un servidor modesto, sin depender de APIs externas.
-- Experimentación con modelos de ~27B en entornos con recursos limitados: útil para investigadores que quieran evaluar el comportamiento de la familia Qwen3 a mayor escala sin acceso a clústeres.
-- Integración en pipelines de generación de código asistida: si se confirma la especialización "opencode", podría emplearse como asistente de programación local, aunque la falta de benchmarks impide garantizar su calidad.
-- Pruebas de cuantización y evaluación de degradación: el repositorio ofrece 12 niveles distintos, lo que permite medir empíricamente la pérdida de calidad entre Q2_K y Q8_0 en la misma tarea.
-- Base para fine-tuning ligero en formato GGUF: aunque no es el flujo habitual (se recomienda partir de safetensors), puede servir para experimentos con LoRA sobre versiones cuantizadas en herramientas compatibles.
+- Asistente de programacion en terminal: el modelo puede integrarse en flujos tipo opencode para sugerir parches, explicar errores y generar comandos, gracias a su adaptacion especifica a este dominio y al soporte de tool calling.
+- Agente autonomo con herramientas: al haber sido entrenado con GRPO sobre entornos harbor/openenv, es adecuado para tareas donde el modelo debe invocar funciones, interpretar resultados y encadenar pasos hasta completar un objetivo.
+- Automatizacion de tareas de refactorizacion: con cuantizaciones Q4_K_M (17,1 GB) o Q5_K_M (19,7 GB) puede desplegarse en una RTX 4090 o A6000 para procesar repositorios de codigo en lotes, manteniendo calidad cercana al bf16.
+- Evaluacion de agentes en entornos simulados: util para investigadores que quieran reproducir o comparar el comportamiento del modelo en harness de agentes sin necesidad de un cluster de GPUs.
+- Prototipado local de asistentes conversacionales en ingles: las variantes Q4_K_S (15,9 GB) permiten ejecutar el modelo en una unica GPU de 24 GB con llama.cpp u Ollama para pruebas de concepto.
+- Generacion de codigo en pipelines de CI/CD: mediante integracion con servidores compatibles con la API de OpenAI (endpoints_compatible), puede actuar como revisor automatico de pull requests o generador de tests en entornos controlados.
+- Despliegue en hardware limitado: la variante Q2_K (11,3 GB) permite ejecutar el modelo en GPUs de 12-16 GB, aunque con degradacion de calidad esperable.
 
 ## Benchmarks y rendimiento
 
@@ -52,43 +53,40 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia (aproximada según tamaño de pesos, sin overhead de contexto):
-  - F16: ~55 GB.
-  - Q8_0: ~29 GB.
-  - Q6_K: ~22 GB.
-  - Q5_K_M: ~19 GB.
-  - Q4_K_M: ~16 GB.
-  - Q3_K_M: ~13 GB.
-  - Q2_K: ~10 GB.
-- GPU recomendadas: A100 80 GB o H100 para F16/Q8_0; RTX 4090 (24 GB) para Q4_K_M y superiores; RTX 3090/4080 (16–24 GB) para Q4_K_S y Q5_K_S; GPUs de 12 GB para Q3_K_M con contexto reducido.
-- Cabe en GPU de consumo: sí, en RTX 3060 12 GB (Q3_K_M/Q2_K), RTX 4070/4080 y RTX 4090 (hasta Q5_K_M/Q6_K).
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, llama-cpp-python, y servidores compatibles con GGUF (koboldcpp, text-generation-webui). vLLM y TGI no soportan GGUF de forma nativa en todos los casos.
-- Latencia y throughput: no disponibles; dependerán del hardware y del nivel de cuantización.
+- VRAM estimada para inferencia: aproximadamente el tamano del archivo GGUF mas el contexto y el overhead de la KV cache. Referencia orientativa: Q2_K ~11,3 GB; Q4_K_M ~17,1 GB; Q5_K_M ~19,7 GB; Q8_0 ~29,1 GB.
+- GPU recomendadas: para Q4_K_M o Q5_K_M, una RTX 4090 (24 GB), RTX 3090 (24 GB), A6000 (48 GB) o L40S. Para Q8_0, una A100 40 GB o H100. Para bf16 completo (repo de 190,7 GB), se requiere un entorno multi-GPU de alta gama.
+- Cabe en GPU de consumo: si, en RTX 4090/3090 con cuantizaciones Q4_K_M o inferiores; en GPUs de 12-16 GB solo con Q2_K o Q3_K_S y contexto reducido.
+- Opciones de despliegue: llama.cpp, Ollama, servidores compatibles con la API de OpenAI (el repositorio incluye la etiqueta endpoints_compatible), y TGI para el checkpoint base en transformers. vLLM no soporta GGUF de forma nativa para todos los casos.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| Qwen3.8-27B-opencode-adapted (este, GGUF) | 27,3B | no disponible | no disponible | GGUF | Cuantización de terceros, sin benchmarks |
-| Qwen2.5-Coder-32B-Instruct | 32,5B | 128K (según model card oficial) | Apache 2.0 | safetensors, GGUF | Modelo oficial con benchmarks publicados |
-| Gemma-2-27B-it | 27B | 8K | Gemma Terms | safetensors, GGUF | Tamaño comparable, licencia restrictiva |
-| Mistral-Small-24B-Instruct | 24B | 32K | Apache 2.0 | safetensors, GGUF | Alternativa densa de tamaño similar |
+| Qwen3.8-27B-opencode-adapted-bf16-GGUF (este) | 27,3B | no disponible | Apache 2.0 | GGUF | Adaptado a agentes y opencode |
+| Qwen3.8-27B-opencode-adapted-bf16 (base) | 27,3B | no disponible | Apache 2.0 | safetensors (bf16) | Checkpoint original, 190,7 GB |
+| Cuantizaciones i1 (imatrix) del mismo modelo | 27,3B | no disponible | Apache 2.0 | GGUF | Publicadas por mradermacher en repositorio separado |
+| Otros modelos Qwen3 de ~27B | no disponible | no disponible | Apache 2.0 | varios | No se dispone de datos comparativos verificados |
 
-La comparación es orientativa: los datos de los modelos alternativos provienen de sus model cards oficiales, mientras que del modelo de esta ficha no se dispone de contexto, licencia ni benchmarks verificables.
+No se dispone de informacion suficiente para comparar con alternativas de otros desarrolladores en terminos de rendimiento o contexto.
 
 ## Limitaciones y advertencias
 
-- La model card del repositorio es prácticamente vacía: no hay información sobre licencia, idiomas, contexto ni datos de entrenamiento.
-- El modelo base (`prithivMLmods/Qwen3.8-27B-opencode-adapted-bf16`) es una adaptación de terceros; no está claro si respeta la licencia del modelo Qwen original ni si su uso comercial es lícito.
-- La designación "Qwen3.8" no corresponde a ninguna versión oficial conocida de Qwen; conviene verificar la procedencia real de los pesos antes de usarlos en producción.
-- Sin benchmarks publicados, no es posible evaluar la calidad ni compararla con alternativas oficiales.
-- Las cuantizaciones Q2_K y Q3_K_S degradan notablemente la calidad en modelos de este tamaño; se recomienda Q4_K_M o superior para uso serio.
-- Riesgo de alucinación y sesgos: no documentados, pero inherentes a cualquier modelo de lenguaje sin evaluación publicada.
-- Repositorio con 0 descargas y 0 likes en el momento de la consulta: sin validación por parte de la comunidad.
-- Tamaño del repo (119,4 GB) elevado para descargar todas las cuantizaciones; conviene descargar solo el archivo GGUF necesario.
+- La model card no documenta sesgos conocidos, riesgos de alucinacion ni evaluaciones de seguridad; deben asumirse los riesgos habituales de los modelos de lenguaje.
+- Solo se declara soporte de ingles; el rendimiento en castellano u otros idiomas no esta verificado.
+- La longitud de contexto no esta publicada, lo que impide planificar despliegues con ventanas largas sin pruebas previas.
+- Las cuantizaciones de baja precision (Q2_K, Q3_K_S) degradan la calidad de forma notable; para produccion se recomienda Q4_K_M o superior.
+- El modelo esta adaptado a entornos de agente concretos (harbor, openenv, opencode); su comportamiento fuera de esos dominios puede ser menos fiable.
+- Aunque la licencia es Apache 2.0, conviene revisar las condiciones del modelo base y de los datasets utilizados en el entrenamiento antes de un uso comercial.
+- El repositorio tiene 849 descargas y 0 likes en el momento de la consulta, lo que indica una validacion comunitaria muy limitada.
+- No hay informacion sobre latencia, throughput ni resultados de evaluacion estandar, por lo que es imprescindible realizar una evaluacion propia antes de adoptarlo.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/mradermacher/Qwen3.8-27B-opencode-adapted-bf16-GGUF
+- Repositorio GGUF: https://huggingface.co/mradermacher/Qwen3.8-27B-opencode-adapted-bf16-GGUF
 - Modelo base: https://huggingface.co/prithivMLmods/Qwen3.8-27B-opencode-adapted-bf16
-- Perfil del autor de las cuantizaciones: https://huggingface.co/mradermacher
+- Cuantizaciones imatrix: https://huggingface.co/mradermacher/Qwen3.8-27B-opencode-adapted-bf16-i1-GGUF
+- Pagina de resumen del autor: https://hf.tst.eu/model#Qwen3.8-27B-opencode-adapted-bf16-GGUF
+- Peticiones de cuantizacion: https://huggingface.co/mradermacher/model_requests
+- Guia de uso de GGUF (ejemplo de TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Notas sobre tipos de cuantizacion (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9

@@ -2,80 +2,91 @@
 
 ## Resumen
 
-`mradermacher/jailbreak-creator-GGUF` es una colección de cuantizaciones estáticas en formato GGUF del modelo `SynastriaNetworks/jailbreak-creator`, publicada por el usuario mradermacher, conocido en Hugging Face por generar versiones cuantizadas de modelos de terceros para su uso con llama.cpp y herramientas compatibles. El repositorio no incluye model card descriptiva propia: el README únicamente documenta los parámetros del proceso de conversión y la lista de cuantizaciones generadas.
+jailbreak-creator-GGUF es la versión cuantizada en formato GGUF del modelo SynastriaNetworks/jailbreak-creator, publicada por mradermacher, un conocido creador de cuantizaciones para la comunidad de llama.cpp. El modelo original es un ajuste fino de la familia Qwen2, con aproximadamente 494 millones de parámetros totales, orientado explícitamente a tareas de red-teaming y evaluación de seguridad (safety). Su propósito declarado es la generación de prompts de tipo jailbreak, lo que lo convierte en una herramienta de doble uso: útil para auditar defensas de otros modelos, pero también potencialmente peligrosa si se emplea sin las salvaguardas adecuadas.
 
-La información disponible es muy limitada. No se especifican arquitectura, número de parámetros, longitud de contexto, idiomas soportados ni licencia del modelo original. El nombre del modelo (`jailbreak-creator`) sugiere que el modelo base está orientado a la generación de prompts de evasión de restricciones (jailbreaks), una categoría de modelos "sin censura" que operan sin los filtros de seguridad habituales de los proveedores comerciales.
+La relevancia de esta ficha radica en que se trata de un modelo pequeño (sub-1B), lo que permite desplegarlo en hardware muy modesto, incluso en CPU, con cuantizaciones que van desde Q2_K (0,4 GB) hasta f16 (1,1 GB). El repositorio GGUF ocupa 5,4 GB en total e incluye once variantes de cuantización estáticas. El autor de la cuantización indica que no hay planes inmediatos para cuantizaciones ponderadas o con imatrix, aunque acepta peticiones a través de discusiones de la comunidad.
 
-Por su naturaleza (modelo sin censura, sin licencia declarada y sin documentación técnica), esta ficha debe interpretarse con cautela: no hay datos verificables sobre rendimiento, entrenamiento ni seguridad. Su relevancia es marginal para producción y se limita a investigación sobre dinámicas de jailbreak y modelos sin restricciones.
+La licencia es OpenRAIL, una licencia de uso restringido que impone condiciones sobre usos dañinos, lo cual es coherente con la naturaleza sensible del modelo. El idioma declarado en la model card es portugués (pt), aunque no se especifican más detalles sobre cobertura multilingüe. No se dispone de información sobre el pipeline de la tarea ni sobre benchmarks publicados.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible |
-| Parámetros totales | no disponible |
-| Parámetros activos | no disponible (no consta que sea MoE) |
+| Arquitectura | Transformer decoder-only (familia Qwen2) |
+| Parametros totales | 494.032.768 |
+| Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantización | x-f16, Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, IQ4_XS |
-| Idiomas soportados | no disponible |
-| Licencia | no disponible |
-| Formato de pesos | GGUF (cuantizaciones estáticas); pesos originales presumiblemente en safetensors (no confirmado) |
+| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, f16 |
+| Idiomas soportados | Portugues (segun model card); cobertura adicional no disponible |
+| Licencia | OpenRAIL |
+| Formato de pesos | GGUF (safetensors en el modelo base) |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información sobre la arquitectura del modelo base (`SynastriaNetworks/jailbreak-creator`). Los metadatos del repositorio de cuantización indican únicamente que se ha aplicado una conversión de tipo `hf` con `quantize_version: 2` y `output_tensor_quantised: 1`, lo que confirma que los pesos provienen de un modelo en formato Hugging Face y que la salida es un GGUF con tensores cuantizados.
+El modelo base SynastriaNetworks/jailbreak-creator es un ajuste fino de un modelo de la familia Qwen2, tal como indican las etiquetas del repositorio (qwen2). Con 494 millones de parámetros, se sitúa en el rango de los modelos pequeños de Qwen2 (probablemente Qwen2-0.5B, aunque el dato exacto del checkpoint de partida no se especifica en la información disponible). La arquitectura es un transformer decoder-only estándar con atención causal, sin mecanismos MoE ni componentes híbridos SSM.
 
-No hay datos sobre número de tokens de entrenamiento, composición del dataset, técnicas de alineación (RLHF, DPO) ni innovaciones arquitectónicas. Cualquier afirmación al respecto sería especulativa y no se incluye.
+No se dispone de información sobre el volumen de tokens de entrenamiento, la composición del dataset, ni sobre si se aplicaron técnicas de RLHF, DPO o ajuste supervisado. Las etiquetas red-teaming y safety sugieren que el ajuste se orientó a la generación de prompts adversariales, pero no se documentan detalles metodológicos. Tampoco se describen innovaciones técnicas como decodificación especulativa o atención lineal. La cuantización fue realizada por mradermacher con convert_type hf y quantize_version 2, generando cuantizaciones estáticas sin imatrix.
 
 ## Capacidades
 
-- Generación de texto: presumiblemente, dado que es un modelo de lenguaje convertido a GGUF (no confirmado por documentación).
-- Generación de prompts de jailbreak: el nombre del modelo sugiere esta especialización, pero no hay evidencia documental en la información proporcionada.
-- Tool calling / function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingües: no disponible.
-- Capacidades especiales (thinking mode, visión, audio): no disponible.
+- Generación de texto conversacional: el modelo está etiquetado como conversational y orientado a diálogo multi-turno.
+- Generación de prompts de jailbreak: capacidad central del ajuste, pensada para red-teaming y pruebas de robustez de sistemas de moderación.
+- Evaluación de seguridad: puede emplearse para generar casos adversariales que pongan a prueba las defensas de otros modelos o filtros.
+- Soporte de tool calling / function calling: no disponible en la información proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
+- Capacidades multilingües: el portugués es el único idioma declarado; no se documenta cobertura adicional.
+- Capacidades especiales (thinking mode, visión, audio): no disponible en la información proporcionada.
 
 ## Casos de uso
 
-- Investigación sobre seguridad de LLM: uso del modelo para estudiar patrones de generación de jailbreaks y evaluar la robustez de sistemas de moderación. Adecuado por su orientación declarada en el nombre, aunque sin documentación que lo respalde.
-- Análisis de modelos sin censura en entornos controlados: el modelo puede emplearse en laboratorios de investigación que estudien el comportamiento de modelos sin alineación de seguridad, tal como se describe en la literatura académica sobre modelos "uncensored" (MDPI, 2025).
-- Pruebas de red teaming: generación de prompts adversarios para evaluar filtros de seguridad en pipelines propios.
-- Experimentación local con llama.cpp: al distribuirse en GGUF, puede ejecutarse en entornos de desarrollo sin GPU dedicada con cuantizaciones Q2_K–Q4_K, aunque se desconoce el tamaño real del modelo.
-- Docencia y divulgación sobre riesgos de IA: ejemplos controlados de evasión de restricciones en cursos de seguridad.
-- Benchmarking de cuantizaciones: comparación de la degradación de calidad entre Q2_K, Q4_K_M y Q8_0 sobre un mismo modelo base, útil para estudiar el impacto de la cuantización.
-
-No se recomienda ningún uso en producción orientado a usuarios finales dada la ausencia de licencia, documentación y garantías de seguridad.
+- Red-teaming de filtros de moderación: el modelo puede generar variantes de prompts adversariales en portugués para comprobar si un clasificador de contenido detecta intentos de jailbreak, gracias a su ajuste específico en esta tarea y a su bajo coste de inferencia.
+- Auditoría de sistemas conversacionales: integrado en un pipeline de evaluación, permite producir lotes de entradas maliciosas y medir la tasa de éxito de las defensas de un chatbot desplegado.
+- Investigación en seguridad de LLM: sirve como generador controlado de casos de prueba en entornos de laboratorio, donde el investigador necesita material adversarial reproducible y de tamaño reducido para ejecutar en local.
+- Formación de equipos de seguridad: permite construir ejercicios prácticos de detección de jailbreaks sin depender de APIs externas, al poder ejecutarse en CPU con cuantizaciones Q4_K_M de 0,5 GB.
+- Pruebas de regresión en CI/CD de moderación: al ser pequeño y rápido, puede incorporarse a suites automatizadas que verifiquen que un cambio en el filtro de contenido no degrada la detección de ataques conocidos.
+- Análisis de sesgos en clasificadores de seguridad: generar prompts adversariales en portugués permite estudiar si los filtros tienen un rendimiento inferior en este idioma frente al inglés, un fenómeno documentado en la literatura.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: no disponible, al desconocerse el número de parámetros del modelo base.
-- GPU recomendadas: no disponible por la misma razón.
-- Compatibilidad con GPU de consumo: indeterminada; las cuantizaciones Q2_K y Q3_K_S permitirían, en principio, ejecución en GPU de consumo si el modelo base es de tamaño pequeño o mediano, pero no puede confirmarse.
-- Opciones de despliegue: llama.cpp y cualquier runtime compatible con GGUF (Ollama, LM Studio, llama-cpp-python, text-generation-webui). No consta soporte para vLLM o TGI, que requieren pesos en safetensors.
-- Latencia y throughput: no disponibles.
+- VRAM estimada para inferencia: menos de 1 GB en todas las cuantizaciones; Q4_K_M ocupa 0,5 GB y f16 1,1 GB, por lo que cabe holgadamente en cualquier GPU consumer.
+- GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM (GTX 1050 Ti, RTX 3050, RTX 4060, etc.); también funciona en CPU sin GPU dedicada.
+- Cabe en consumer GPU: sí, en todas las GPU modernas e incluso en iGPU con memoria compartida suficiente.
+- Opciones de despliegue: llama.cpp, Ollama (previa importación del GGUF), y servidores compatibles con GGUF como llama-cpp-python o text-generation-webui. El modelo base es compatible con transformers y text-generation-inference, pero las cuantizaciones GGUF requieren runtimes específicos.
+- Latencia y throughput estimados: no disponibles en la información proporcionada; por el tamaño (sub-1B), se espera una latencia muy baja en GPU y aceptable en CPU, pero no se aportan cifras concretas.
 
 ## Comparativa con modelos similares
 
-No disponible. No se dispone de información sobre el modelo base ni sobre alternativas comparables en la misma categoría (modelos sin censura cuantizados a GGUF) con datos verificables de parámetros, contexto o rendimiento.
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|
+| jailbreak-creator-GGUF (este) | 494 M | no disponible | OpenRAIL | GGUF | Ajuste específico para red-teaming, en portugués |
+| Qwen2-0.5B-Instruct | ~494 M | 32 768 (según documentación pública de Qwen2) | Apache 2.0 | safetensors, GGUF | Modelo generalista de referencia de la misma familia; contexto y licencia más permisivos |
+| Qwen2.5-0.5B-Instruct | ~494 M | 32 768 (según documentación pública de Qwen2.5) | Apache 2.0 | safetensors, GGUF | Sucesor generalista con mejoras en instrucciones y multilingüismo |
+| SmolLM2-360M-Instruct | 360 M | 8 192 (según documentación pública) | Apache 2.0 | safetensors, GGUF | Alternativa pequeña generalista de Hugging Face |
+
+La comparación con los modelos generalistas de la misma familia es relevante porque comparten tamaño y arquitectura base, pero difieren en propósito: jailbreak-creator está especializado en generación adversarial y no está pensado como asistente general. Los datos de contexto de los modelos comparables provienen de documentación pública y no de la información proporcionada para este modelo, por lo que se indican como referencia externa.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de licencia declarada: no puede determinarse si el uso comercial está permitido; en la práctica, esto impide su adopción en producción.
-- Modelo presumiblemente sin alineación de seguridad: el nombre y la categoría sugieren que está diseñado para evadir restricciones, lo que implica riesgo de generar contenido dañino, ilegal o abusivo.
-- Riesgo elevado de alucinación: sin datos de entrenamiento ni evaluaciones, no puede acotarse la fiabilidad factual.
-- Sin información sobre sesgos: no hay documentación sobre composición del dataset ni evaluaciones de sesgo.
-- Contexto e idiomas desconocidos: imposible planificar su uso en tareas que requieran ventanas largas o multilingüismo.
-- Repositorio sin descargas ni likes en el momento de la consulta: no hay evidencia de uso comunitario ni de validación por terceros.
-- Las cuantizaciones de baja precisión (Q2_K, Q3_K_S) degradan notablemente la calidad en modelos pequeños; sin conocer el tamaño base, no puede recomendarse una cuantización concreta.
-- Advertencia legal: generar contenido para evadir salvaguardas de otros sistemas puede vulnerar términos de servicio de terceros y, en determinadas jurisdicciones, normativa aplicable.
+- Uso dual: el modelo está diseñado para generar jailbreaks; un uso no controlado puede facilitar eludir salvaguardas de otros sistemas. Debe emplearse únicamente en entornos de investigación y con supervisión.
+- Licencia OpenRAIL: impone restricciones de uso; no es una licencia permisiva como Apache 2.0 y requiere revisar las cláusulas de uso aceptable antes de cualquier despliegue comercial.
+- Idiomas: solo se declara portugués; el rendimiento en castellano u otros idiomas no está documentado y probablemente sea limitado.
+- Contexto: no se especifica la longitud de contexto, lo que impide garantizar conversaciones multi-turno largas.
+- Alucinación: al ser un modelo de 494 M de parámetros, la coherencia factual es limitada; no debe usarse como fuente de información.
+- Sesgos: no se documentan evaluaciones de sesgo; los modelos pequeños ajustados con datasets específicos tienden a reproducir sesgos de los datos de entrenamiento.
+- Benchmarks: no hay métricas publicadas, por lo que no es posible comparar su eficacia real como generador de jailbreaks frente a alternativas.
+- Producción: no se recomienda su despliegue en sistemas de cara al usuario sin filtros adicionales; su función es de herramienta interna de seguridad.
 
 ## Enlaces
 
 - Repositorio GGUF: https://huggingface.co/mradermacher/jailbreak-creator-GGUF
 - Modelo base: https://huggingface.co/SynastriaNetworks/jailbreak-creator
-- Artículo de referencia sobre modelos sin censura: https://www.mdpi.com/1999-5903/17/10/477
+- Página de resumen del cuantizador: https://hf.tst.eu/model#jailbreak-creator-GGUF
+- README de referencia para uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Peticiones de cuantización de mradermacher: https://huggingface.co/mradermacher/model_requests
+- Gráfico de calidad de cuantizaciones de ikawrakow: https://www.nethype.de/huggingface_embed/quantpplgraph.png
+- Notas de Artefact2 sobre cuantizaciones: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Empresa del cuantizador: https://www.nethype.de/

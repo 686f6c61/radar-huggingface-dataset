@@ -2,118 +2,106 @@
 
 ## Resumen
 
-`mradermacher/Swift-Qwen3.8-27b-i1-GGUF` es un repositorio de pesos cuantizados en formato GGUF publicado por el usuario mradermacher, derivado del modelo `ukisai/Swift-Qwen3.8-27b`. No se trata de un modelo entrenado desde cero, sino de una distribucion de cuantizaciones generadas con llama.cpp sobre los pesos originales, empleando calibracion con matriz de importancia (imatrix, de ahi el sufijo `i1`). El modelo base cuenta con 27.320.697.856 parametros (aproximadamente 27,3 mil millones).
+Swift-Qwen3.8-27b-i1-GGUF es la version cuantizada en formato GGUF del modelo Swift-Qwen3.8-27b, un ajuste fino mediante LoRA del modelo base ukisai/Swift-Qwen3.8-27b. El trabajo de cuantizacion lo firma mradermacher, un conocido publicador de cuantizaciones GGUF, que ofrece tanto cuantizaciones estaticas como cuantizaciones con imatrix (etiquetadas i1) para este modelo de 27.320.697.856 parametros.
 
-El repositorio incluye 23 variantes de cuantizacion, desde IQ1_S (la mas agresiva) hasta Q6_K (la mas cercana al modelo original), lo que permite desplegar un modelo de clase 27B en hardware muy diverso: desde tarjetas graficas de gama media de 12-16 GB de VRAM hasta estaciones de trabajo sin GPU, usando la CPU y memoria RAM. El tamano del repositorio declarado por Hugging Face es de 10,9 GB.
+El modelo se presenta con las etiquetas "efficient-thinking", "reasoning" y "token-efficient", lo que sugiere que su proposito es ofrecer capacidades de razonamiento con un consumo reducido de tokens de pensamiento. El repositorio incluye un amplio conjunto de cuantizaciones que van desde i1-Q2_K (11,0 GB) hasta i1-Q6_K (22,5 GB), ademas de un archivo imatrix para generar cuantizaciones propias.
 
-La relevancia de esta publicacion es practica: es una de las pocas vias para ejecutar localmente la base Swift-Qwen3.8-27b sin acceso a infraestructura de datacenter. Sin embargo, la model card es minima, no se declara licencia ni idiomas, y no hay resultados de evaluacion publicados, por lo que cualquier uso en produccion exige una verificacion previa por parte del integrador.
+La relevancia de esta publicacion radica en que permite ejecutar un modelo de aproximadamente 27.000 millones de parametros en hardware de consumo mediante llama.cpp y formatos GGUF, con opciones de cuantizacion que equilibran tamano, velocidad y calidad. La licencia es swift-open-license-1.0, una licencia personalizada que conviene revisar antes de cualquier uso comercial.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (el nombre del modelo base sugiere la familia Qwen3, sin confirmar en la informacion proporcionada) |
-| Parametros totales | 27.320.697.856 (aprox. 27,3 mil millones) |
-| Parametros activos | no disponible (no se indica que sea un modelo MoE) |
+| Arquitectura | no disponible (etiqueta qwen3_8; detalles no publicados en la informacion disponible) |
+| Parametros totales | 27.320.697.856 |
+| Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Q2_K, IQ3_M, Q4_K_S, IQ3_XXS, Q3_K_M, small-IQ4_NL, Q4_K_M, IQ2_M, Q6_K, IQ4_XS, Q2_K_S, IQ1_M, Q3_K_S, IQ2_XXS, Q3_K_L, IQ2_XS, Q5_K_S, IQ2_S, IQ1_S, Q5_K_M, Q4_0, IQ3_XS, Q4_1, IQ3_S |
-| Idiomas soportados | no disponible |
-| Licencia | no disponible |
-| Formato de pesos | GGUF (el modelo base se distribuye en safetensors) |
-| Metodo de cuantizacion | imatrix (weighted/imatrix quants), quantize_version 2 de llama.cpp |
-| Modelo base | ukisai/Swift-Qwen3.8-27b |
-| Tamano del repositorio | 10,9 GB (segun metadatos de Hugging Face) |
-| Fecha de publicacion | 2026-09-12 |
+| Tipos de cuantizacion | i1-Q2_K, i1-Q3_K_S, i1-IQ3_S, i1-IQ3_M, i1-Q3_K_M, i1-Q3_K_L, i1-IQ4_XS, i1-Q4_0, i1-Q4_K_S, i1-Q4_K_M, i1-Q4_1, i1-Q5_K_S, i1-Q5_K_M, i1-Q6_K (ademas de imatrix y cuantizaciones estaticas en el repo hermano) |
+| Idiomas soportados | ingles (etiqueta language: en) |
+| Licencia | swift-open-license-1.0 (license: other) |
+| Formato de pesos | GGUF |
 
 ## Arquitectura y entrenamiento
 
-Este repositorio no contiene entrenamiento alguno: es el resultado de aplicar el pipeline de cuantizacion de llama.cpp sobre los pesos del modelo `ukisai/Swift-Qwen3.8-27b`. Los metadatos internos de la model card indican `quantize_version: 2`, `output_tensor_quantised: 1` y `convert_type: hf`, es decir, una conversion desde pesos en formato Hugging Face (safetensors) a GGUF seguida de cuantizacion. El prefijo `i1` identifica variantes generadas con imatrix, un metodo de calibracion que pondera la importancia de cada tensor segun su sensibilidad estadistica, lo que en teoria reduce la perdida de calidad en regimenes de baja precision (IQ1, IQ2, IQ3).
+La informacion disponible no detalla la arquitectura interna del modelo mas alla de la etiqueta qwen3_8, que sugiere una base de la familia Qwen3 con aproximadamente 27.000 millones de parametros. El modelo es un ajuste fino mediante LoRA (etiqueta lora) sobre ukisai/Swift-Qwen3.8-27b, orientado a un razonamiento eficiente en tokens (efficient-thinking, token-efficient). No se especifican en la informacion proporcionada el numero de tokens de entrenamiento, la composicion del dataset ni si se emplearon tecnicas de RLHF o DPO.
 
-No se dispone de informacion sobre la arquitectura interna del modelo base (tipo de transformer, atencion, numero de capas o cabezas), ni sobre el volumen de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas de alineacion como RLHF, DPO o similares. Tampoco hay datos sobre innovaciones tecnicas especificas (atencion lineal, decodificacion especulativa, mezcla de expertos) en la informacion proporcionada. El nombre `Qwen3.8` apunta a un derivado de la familia Qwen, pero esto no esta confirmado por ninguna fuente accesible y no debe asumirse.
+El trabajo de mradermacher consiste en la cuantizacion del modelo original a formato GGUF, incluyendo cuantizaciones con matriz de importancia (imatrix) que mejoran la calidad respecto a cuantizaciones estaticas de tamano similar. El repositorio incluye el archivo imatrix (0,1 GB) para que otros usuarios puedan generar sus propias cuantizaciones. Las cuantizaciones i1 se describen como "weighted/imatrix quants" del modelo base.
 
 ## Capacidades
 
-Las capacidades reales no estan documentadas en la informacion disponible. Las etiquetas del repositorio permiten afirmar unicamente lo siguiente:
-
-- Generacion de texto conversacional: la etiqueta `conversational` indica que el modelo base esta orientado a dialogos multi-turno.
-- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` sugiere que el modelo puede servirse a traves de una interfaz HTTP compatible con el formato de la API de OpenAI, aunque la conformidad exacta no esta verificada.
-- Inferencia local: el formato GGUF permite ejecucion en CPU y en GPU con llama.cpp y derivados.
-- Soporte de tool calling / function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingues: no disponible.
-- Capacidades especiales (modo de razonamiento, vision, audio): no disponible.
-- Capacidades de codigo o matematicas: no disponible.
+- Generacion de texto conversacional (etiqueta conversational).
+- Razonamiento con modo de pensamiento eficiente en tokens (efficient-thinking, reasoning, token-efficient).
+- Ajuste fino tipo LoRA sobre el modelo base, lo que sugiere especializacion en el estilo de razonamiento del modelo original.
+- Compatibilidad con endpoints (etiqueta endpoints_compatible).
+- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
+- Capacidades multilingues: solo se declara ingles.
+- Capacidades especiales (vision, audio): no disponible en la informacion proporcionada.
 
 ## Casos de uso
 
-- Ejecucion local en estaciones de trabajo sin GPU de datacenter: las variantes IQ2_M, IQ3_M o Q4_K_S permiten cargar un modelo de 27B en equipos con 12-16 GB de VRAM o incluso en CPU con suficiente RAM, gracias al formato GGUF y a la gestion de memoria por capas de llama.cpp.
-- Servicio de API autoalojado: la etiqueta `endpoints_compatible` permite desplegar el modelo con `llama-server` o con Ollama y exponer una interfaz HTTP que los clientes existentes (SDK de OpenAI, LangChain, LlamaIndex) pueden consumir sin cambios en el codigo de integracion.
-- Despliegue on-premise con requisitos de privacidad: en entornos sanitarios, juridicos o financieros donde los datos no pueden salir de la infraestructura propia, el modelo se ejecuta integramente en local, sin llamadas a APIs externas.
-- Seleccion de la cuantizacion optima mediante evaluacion empirica: el repositorio ofrece 23 variantes del mismo modelo base, lo que permite al integrador medir la degradacion real entre IQ1_S, Q2_K, Q4_K_M y Q6_K sobre su propio conjunto de validacion y elegir el punto de equilibrio entre calidad y consumo de memoria.
-- Prototipado rapido de aplicaciones conversacionales: con las variantes de menor tamano (IQ1_S, IQ2_XXS) se puede levantar un prototipo funcional en portatiles con 8-16 GB de RAM antes de invertir en hardware o en un endpoint gestionado.
-- Distribucion offline o en entornos aislados: los ficheros GGUF son autocontenidos y no requieren conexion a internet en tiempo de ejecucion, lo que resulta util en escenarios de formacion, investigacion de campo o sistemas air-gapped.
-- Reproduccion del pipeline de cuantizacion: un equipo de ingenieria puede usar este repositorio como referencia para replicar el proceso imatrix de mradermacher sobre su propio modelo afinado y comparar resultados.
+- Razonamiento con coste controlado de tokens: el modelo esta etiquetado como token-efficient, por lo que resulta adecuado para pipelines donde el coste por token de pensamiento es critico, como clasificacion compleja o resolucion de problemas con presupuesto limitado.
+- Despliegue en hardware de consumo: las cuantizaciones i1-Q4_K_M (16,9 GB) e i1-Q4_K_S (15,9 GB) permiten ejecutar un modelo de 27.000 millones de parametros en GPUs con 24 GB de VRAM, como la RTX 4090, usando llama.cpp.
+- Asistente conversacional local: la etiqueta conversational y el formato GGUF facilitan su integracion en aplicaciones de escritorio o servidores locales con Ollama o llama.cpp, sin dependencia de la nube.
+- Generacion de codigo y tareas tecnicas: aunque no se documentan benchmarks, un modelo de 27.000 millones de parametros con capacidades de razonamiento puede emplearse en asistencia de programacion; conviene validar su rendimiento real antes de producción.
+- Experimentacion e investigacion: el archivo imatrix y el rango completo de cuantizaciones permiten estudiar el impacto de la cuantizacion en la calidad del razonamiento, comparando i1-Q2_K frente a i1-Q6_K.
+- Sustitucion de modelos mayores en entornos con restricciones de memoria: con cuantizaciones de 11-13 GB (i1-Q2_K, i1-Q3_K_S, i1-IQ3_S) se puede desplegar en GPUs de 16 GB o en configuraciones con offload parcial a CPU.
+- Fine-tuning posterior y destilacion: al estar disponible el modelo base y sus pesos, puede servir como punto de partida para ajustes adicionales o para generar datos sinteticos.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card del repositorio no incluye ninguna evaluacion (MMLU, HumanEval, GSM8K, MT-Bench ni similares), y tampoco se dispone de datos de perplejidad por cuantizacion.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-Los tamanos de fichero que se indican a continuacion son estimaciones calculadas a partir del numero de parametros declarado (27.320.697.856) y de los bits por peso tipicos de cada tipo de cuantizacion en llama.cpp. No son cifras oficiales. La VRAM total necesaria es superior, ya que hay que anadir la cache KV y el overhead de runtime.
-
-| Cuantizacion | Bits por peso aprox. | Tamano estimado de pesos | Hardware orientativo |
-|---|---|---|---|
-| IQ1_S | 1,56 | ~5,3 GB | GPU de 8 GB o CPU con 16 GB de RAM |
-| IQ2_M | 2,70 | ~9,2 GB | GPU de 12 GB |
-| Q2_K | 2,63 | ~9,0 GB | GPU de 12 GB |
-| IQ3_M | 3,66 | ~12,5 GB | GPU de 16 GB |
-| Q3_K_M | 3,91 | ~13,4 GB | GPU de 16 GB |
-| IQ4_XS | 4,25 | ~14,5 GB | GPU de 16-24 GB |
-| Q4_K_M | 4,85 | ~16,6 GB | GPU de 24 GB |
-| Q5_K_M | 5,67 | ~19,4 GB | GPU de 24 GB (ajustado) |
-| Q6_K | 6,56 | ~22,4 GB | GPU de 24 GB (muy ajustado) o 32 GB |
-
-- VRAM estimada para inferencia: no disponible de forma oficial. Depende del tipo de cuantizacion, de la longitud de contexto configurada y del numero de capas y cabezas KV del modelo base, que no se detallan en la informacion proporcionada. La cache KV puede anadir varios gigabytes en contextos largos.
-- GPU recomendadas: para las variantes Q4_K_M y superiores, una RTX 4090, RTX 3090, L4 (24 GB) o A100/H100 de 40-80 GB. Para IQ1_S a Q3_K_M, tarjetas de 12-16 GB como RTX 4070 Ti, RTX 4080 o Tesla T4/V100.
-- Cabe en GPU de consumo: si. Las variantes IQ1_S, IQ2 y Q3 caben en GPUs de consumo de 12-16 GB (RTX 4070, 4080, 3080 Ti). Q4_K_M cabe en una RTX 4090 o 3090 de 24 GB con contexto moderado. Q6_K requiere 24 GB con contexto reducido o reparto parcial con CPU.
-- Opciones de despliegue: llama.cpp (`llama-cli`, `llama-server`), Ollama, LM Studio, koboldcpp, text-generation-webui, llama-cpp-python y Jan. vLLM y TGI no estan optimizados para GGUF, por lo que no son la via recomendada.
-- Latencia y throughput: no disponible. No se han publicado mediciones de tokens por segundo ni de latencia para ninguna de las variantes.
+- VRAM estimada para inferencia segun cuantizacion (tamano del archivo, sin contar overhead de contexto):
+  - i1-Q2_K: 11,0 GB
+  - i1-Q3_K_S: 12,4 GB
+  - i1-IQ3_S: 12,7 GB
+  - i1-IQ3_M: 12,9 GB
+  - i1-Q3_K_M: 13,6 GB
+  - i1-Q3_K_L: 14,7 GB
+  - i1-IQ4_XS: 15,4 GB
+  - i1-Q4_K_S: 15,9 GB
+  - i1-Q4_K_M: 16,9 GB
+  - i1-Q5_K_M: 19,6 GB
+  - i1-Q6_K: 22,5 GB
+- GPU recomendadas: para cuantizaciones Q4/Q5, GPUs de 24 GB (RTX 4090, A10G, L4 con offload); para Q6_K, 24 GB justos o GPUs de 32 GB o mas (A100 40 GB, H100). Para cuantizaciones Q2/Q3, GPUs de 16 GB (RTX 4080, RTX 4060 Ti 16 GB).
+- Cabe en GPU de consumo: si, en RTX 4090 (24 GB) con cuantizaciones hasta i1-Q6_K; en GPUs de 16 GB con cuantizaciones Q2/Q3.
+- Opciones de despliegue: llama.cpp (formato nativo GGUF), Ollama, y servidores compatibles con GGUF; la etiqueta endpoints_compatible sugiere compatibilidad con endpoints tipo OpenAI. vLLM y TGI no soportan GGUF de forma nativa en todos los casos, por lo que se recomienda llama.cpp.
+- Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos de otros modelos en la informacion proporcionada, por lo que no es posible establecer una comparativa con cifras verificables. La comparacion mas util que permite este repositorio es interna, entre sus propias cuantizaciones del mismo modelo base:
+| Modelo | Parametros | Contexto | Formato | Licencia | Notas |
+|---|---|---|---|---|---|
+| Swift-Qwen3.8-27b-i1-GGUF (este) | 27,3 B | no disponible | GGUF | swift-open-license-1.0 | Cuantizaciones i1 con imatrix, rango Q2_K a Q6_K |
+| Swift-Qwen3.8-27b (modelo base) | 27,3 B | no disponible | safetensors | swift-open-license-1.0 | Pesos originales sin cuantizar |
+| Swift-Qwen3.8-27b-GGUF (cuantizaciones estaticas) | 27,3 B | no disponible | GGUF | swift-open-license-1.0 | Mismo modelo, cuantizaciones sin imatrix |
 
-| Variante | Bits por peso aprox. | Tamano estimado | Compromiso |
-|---|---|---|---|
-| IQ1_S | 1,56 | ~5,3 GB | Maxima compresion, degradacion esperada alta |
-| IQ2_M | 2,70 | ~9,2 GB | Compresion fuerte, calidad moderada |
-| Q3_K_M | 3,91 | ~13,4 GB | Equilibrio habitual para GPU de 16 GB |
-| Q4_K_M | 4,85 | ~16,6 GB | Punto de equilibrio estandar de la comunidad |
-| Q6_K | 6,56 | ~22,4 GB | Perdida minima, requisitos altos |
-
-Por clase de tamano, los comparables naturales serian otras cuantizaciones comunitarias de modelos de 27B a 32B (por ejemplo, alternativas de las familias Qwen o Gemma 2 27B), pero no hay datos de parametros, contexto, rendimiento ni licencia de esos modelos en la informacion proporcionada que permitan una tabla fiable.
+No se dispone de datos de benchmarks ni de modelos comparables de otros autores en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- Licencia no declarada: el repositorio no especifica licencia. Es imprescindible verificar la licencia del modelo base `ukisai/Swift-Qwen3.8-27b` antes de cualquier uso comercial, ya que la ausencia de licencia implica ausencia de permisos explicitos.
-- Perdida por cuantizacion: toda cuantizacion introduce degradacion. En las variantes extremas (IQ1_S, IQ1_M, IQ2_XXS, IQ2_XS) la perdida de calidad puede ser sustancial y afectar a tareas de razonamiento o codigo. No hay mediciones publicadas de esta degradacion.
-- Ausencia de evaluacion: no hay benchmarks, ni datos de perplejidad, ni comparaciones con el modelo en precision completa. No es posible afirmar que la calidad sea adecuada para produccion.
-- Idiomas no declarados: se desconoce si el modelo base tiene un buen rendimiento en castellano o si esta predominantemente entrenado en ingles y chino.
-- Contexto desconocido: al no declararse la longitud de contexto, no se puede planificar su uso en tareas de contexto largo (analisis de documentos extensos, conversaciones prolongadas).
-- Riesgo de alucinacion: inherente a los modelos de lenguaje generativos. Sin evaluacion disponible, el riesgo no esta cuantificado y debe mitigarse con verificacion externa y recuperacion aumentada.
-- Model card minima: la documentacion del autor se limita a una linea de texto y a metadatos HTML comentados. No hay guia de prompt, ni plantilla de chat documentada, lo que puede provocar un formateo incorrecto de las conversaciones si no se inspecciona el tokenizador embebido en el GGUF.
-- Inconsistencia del tamano de repositorio: los 10,9 GB declarados por Hugging Face son dificilmente compatibles con 23 cuantizaciones de un modelo de 27B, cuyo conjunto superaria ampliamente esa cifra. La cifra probablemente corresponde a un subconjunto de ficheros; conviene verificar los tamanos reales en la pagina del repositorio.
-- Falta de validacion comunitaria: el repositorio registra 0 descargas y 0 likes en el momento de la consulta, por lo que no ha sido contrastado por terceros.
-- Compatibilidad de endpoints: la etiqueta `endpoints_compatible` no garantiza conformidad completa con la API de OpenAI; hay que verificar el soporte de tool calling, streaming y formato de respuesta antes de integrarlo.
-- Fecha de publicacion: los metadatos indican 2026-09-12, fecha que conviene contrastar con la cronologia real del modelo base.
+- La licencia swift-open-license-1.0 es una licencia personalizada; es imprescindible revisar sus terminos (enlace en el modelo base) antes de cualquier uso comercial.
+- El modelo solo declara soporte de ingles; el rendimiento en castellano no esta documentado.
+- No se han publicado benchmarks, por lo que no hay evidencia cuantitativa de su calidad en razonamiento, codigo o matematicas.
+- Las cuantizaciones de baja precision (i1-Q2_K, i1-Q3_K_S) pueden degradar notablemente la calidad del razonamiento; el propio autor recomienda IQ3_XXS o IQ3_XS frente a Q3_K* y Q2_K.
+- Riesgo de alucinacion inherente a los modelos de lenguaje; no se documentan medidas especificas de mitigacion.
+- No se documentan sesgos conocidos ni datos de entrenamiento, lo que dificulta evaluar riesgos de sesgo.
+- El modelo es un ajuste LoRA sobre un modelo base de terceros; su comportamiento depende en gran medida de la calidad de dicho modelo base.
+- La longitud de contexto no esta disponible, lo que impide planificar casos de uso con ventanas largas.
+- El repositorio ocupa 218,6 GB en total; conviene descargar solo la cuantizacion necesaria.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/mradermacher/Swift-Qwen3.8-27b-i1-GGUF
+- Modelo en Hugging Face: https://huggingface.co/mradermacher/Swift-Qwen3.8-27b-i1-GGUF
 - Modelo base: https://huggingface.co/ukisai/Swift-Qwen3.8-27b
-- Perfil del autor de las cuantizaciones: https://huggingface.co/mradermacher
-- llama.cpp (runtime para GGUF): https://github.com/ggml-org/llama.cpp
-- Ollama (despliegue simplificado de GGUF): https://github.com/ollama/ollama
-
-Nota: la busqueda web realizada no devolvio resultados relevantes sobre este modelo; todas las referencias recuperadas correspondian a servicios de mensajeria ajenos al contenido solicitado. No se han podido localizar papers, blogs tecnicos ni demos asociados al modelo.
+- Licencia: https://huggingface.co/ukisai/Swift-Qwen3.8-27b/blob/main/LICENSE
+- Cuantizaciones estaticas: https://huggingface.co/mradermacher/Swift-Qwen3.8-27b-GGUF
+- Pagina de descargas del autor: https://hf.tst.eu/model#Swift-Qwen3.8-27b-i1-GGUF
+- README de referencia para uso de GGUF: https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Grafico comparativo de cuantizaciones: https://www.nethype.de/huggingface_embed/quantpplgraph.png
+- Analisis de Artefact2 sobre cuantizaciones: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Peticiones de modelos del autor: https://huggingface.co/mradermacher/model_requests
+- nethype GmbH: https://www.nethype.de/

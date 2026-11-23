@@ -39,16 +39,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "SZLHOLDINGS Models — Downloads, Rankings & Growth",
-      "url": "https://openmodelstats.com/owners/szlholdings",
-      "snippet": "AI models published by SZLHOLDINGS. 47 tracked models, 19.1K combined all-time downloads, 13 likes. Download statistics, growth history and ranking positions, tracked daily by OpenModelStats."
-    },
-    {
-      "title": "Start Here - a SZLHOLDINGS Collection - Hugging Face",
-      "url": "https://huggingface.co/collections/SZLHOLDINGS/start-here",
-      "snippet": "Public navigation only; each artifact card and live status is authoritative. Λ remains Conjecture 1 (advisory). Canonical site: https://a-11-oy.com."
-    }
-  ]
+  "sources": []
 }

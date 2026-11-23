@@ -2,90 +2,98 @@
 
 ## Resumen
 
-Athena-27B-i1-GGUF es una coleccion de cuantizaciones en formato GGUF generadas por mradermacher a partir del modelo base Athena-27B, publicado por el usuario Batman787 en Hugging Face. No se trata de un modelo entrenado desde cero por mradermacher, sino de una redistribucion optimizada para inferencia local mediante llama.cpp y otros motores compatibles con GGUF, empleando cuantizacion ponderada con matriz de importancia (imatrix).
+Athena-27B-i1-GGUF es una colección de cuantizaciones GGUF generadas por mradermacher a partir del modelo base athenaresearch/Athena-27B, un modelo de lenguaje de aproximadamente 26.900 millones de parámetros (26.895.998.464 según los pesos en safetensors). El modelo original está orientado a tareas de agente de programación, uso de herramientas (tool use), razonamiento y soporte multilingüe, con especial énfasis en lenguas de la India además del inglés. Esta ficha describe la versión cuantizada distribuida en formato GGUF, pensada para inferencia local y despliegue con llama.cpp y derivados.
 
-El modelo base cuenta con 26.895.998.464 parametros (aproximadamente 26,9 mil millones), lo que lo situa en la categoria de modelos densos de gran tamano, aptos para tareas conversacionales y de razonamiento general. La model card del repositorio es extremadamente escueta: unicamente indica que se trata de cuantizaciones weighted/imatrix del modelo Athena-27B de Batman787, sin aportar informacion sobre arquitectura, datos de entrenamiento, licencia o idiomas soportados.
+La relevancia de esta publicación radica en que reduce los requisitos de hardware del modelo original: los cuantizados van desde aproximadamente 7,2 GB (i1-IQ1_S) hasta 22,2 GB (i1-Q6_K), lo que permite ejecutar un modelo de ~27B en GPUs de consumo con suficiente VRAM en los niveles medios y altos de cuantización. Las cuantizaciones son de tipo i1 (imatrix), generadas con un fichero imatrix propio, lo que según el autor suele ofrecer mejor calidad que cuantizados estáticos de tamaño equivalente.
 
-La relevancia de esta publicacion radica en que permite ejecutar un modelo de ~27B en hardware de consumo mediante cuantizaciones de 1 a 6 bits (desde IQ1_S hasta Q6_K), cubriendo un rango amplio de compromisos entre calidad y requisitos de memoria. El repositorio ocupa 10,7 GB y no registra descargas ni likes en el momento de la consulta, lo que sugiere una publicacion muy reciente o de baja difusion.
+La licencia del modelo es Apache 2.0, lo que facilita el uso comercial. El repositorio ocupa 300,3 GB e incluye múltiples variantes de cuantización. No se dispone de información detallada sobre arquitectura interna, longitud de contexto o datos de entrenamiento en la información proporcionada, por lo que esos apartados se marcan como no disponibles.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | no disponible |
-| Parametros totales | 26.895.998.464 (~26,9B) |
-| Parametros activos | no aplica (no se indica que sea MoE) |
+| Arquitectura | no disponible (modelo transformer, detalles no especificados) |
+| Parámetros totales | 26.895.998.464 (~26,9B) |
+| Parámetros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Q2_K, IQ3_M, Q4_K_S, IQ3_XXS, Q3_K_M, small-IQ4_NL, Q4_K_M, IQ2_M, Q6_K, IQ4_XS, Q2_K_S, IQ1_M, Q3_K_S, IQ2_XXS, Q3_K_L, IQ2_XS, Q5_K_S, IQ2_S, IQ1_S, Q5_K_M, Q4_0, IQ3_XS, Q4_1, IQ3_S |
-| Idiomas soportados | no disponible |
-| Licencia | no disponible |
-| Formato de pesos | GGUF (cuantizaciones derivadas de safetensors del modelo base) |
+| Tipos de cuantización | i1 (imatrix): IQ1_S, IQ1_M, IQ2_XXS, IQ2_XS, IQ2_S, IQ2_M, Q2_K_S, Q2_K, IQ3_XXS, IQ3_XS, Q3_K_S, IQ3_S, IQ3_M, Q3_K_M, Q3_K_L, IQ4_XS, Q4_0, Q4_K_S, Q4_K_M, Q4_1, Q5_K_S, Q5_K_M, Q6_K; además fichero imatrix |
+| Idiomas soportados | en, hi, bn, ta, te, mr, gu, kn, ml, pa, ur |
+| Licencia | apache-2.0 |
+| Formato de pesos | GGUF (cuantizado); modelo base en safetensors |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion sobre la arquitectura del modelo base Athena-27B en la documentacion proporcionada. El nombre y el numero de parametros (~26,9B) son los unicos datos tecnicos disponibles. No se especifica si se trata de un transformer denso convencional, un modelo con atencion lineal, una arquitectura hibrida o cualquier otra variante, ni se detallan la composicion del dataset de entrenamiento, el numero de tokens procesados o si se aplicaron tecnicas de alineacion como RLHF o DPO.
+No se dispone en la información proporcionada de detalles sobre la arquitectura interna del modelo base Athena-27B (tipo de transformer, uso de atención lineal, mezcla de expertos u otras innovaciones). El modelo base es athenaresearch/Athena-27B y los tags indican orientación a coding-agent, agents, tool-use, reasoning y multilingual, con foco en la India. Tampoco se especifican el número de tokens de entrenamiento, la composición del dataset ni si se emplearon técnicas de RLHF o DPO.
 
-Respecto al proceso de cuantizacion, la model card indica que las versiones GGUF se generaron con cuantizacion ponderada mediante imatrix (matriz de importancia), una tecnica que calcula la relevancia de cada peso a partir de activaciones de calibracion para minimizar la perdida de calidad en bits bajos. Los metadatos internos del repositorio confirman `quantize_version: 2`, `output_tensor_quantised: 1` y `convert_type: hf`, lo que indica una conversion directa desde pesos Hugging Face. Se ofrecen 24 variantes de cuantizacion, desde IQ1_S (aproximadamente 1 bit por peso) hasta Q6_K, cubriendo el espectro habitual de llama.cpp.
+Respecto a esta publicación concreta, se trata de cuantizaciones i1 (imatrix) generadas por mradermacher con un fichero imatrix propio (Athena-27B.imatrix.gguf), lo que permite crear cuantizados de mayor calidad que los estáticos de tamaño comparable. El autor indica que el modelo es de visión y que los ficheros mmproj, si existen, se encuentran en el repositorio estático (mradermacher/Athena-27B-GGUF). El proceso de conversión se realizó desde formato HF (convert_type: hf) con output_tensor_quantised: 1.
 
 ## Capacidades
 
-- Generacion de texto conversacional: el tag `conversational` del repositorio sugiere un modelo afinado o preparado para dialogos multi-turno.
-- Razonamiento general y respuesta a instrucciones: inferido del uso previsto de un modelo de ~27B, aunque no se detalla en la model card.
-- Compatibilidad con endpoints: el tag `endpoints_compatible` indica que puede desplegarse en la infraestructura de Inference Endpoints de Hugging Face.
-- Ejecucion local mediante llama.cpp: todas las cuantizaciones estan en formato GGUF, listas para motores compatibles.
-- Capacidades multilingues: no disponible.
-- Soporte de tool calling o function calling: no disponible.
-- Modo thinking, vision o audio: no disponible.
-- Capacidades de agente o razonamiento multi-paso: no disponible.
+- Generación de texto conversacional y razonamiento, según los tags del modelo (reasoning, conversational).
+- Agente de programación (coding-agent): orientado a tareas de escritura y manipulación de código.
+- Uso de herramientas y function calling (tool-use, agents).
+- Razonamiento multi-paso para flujos de agente.
+- Capacidades multilingües: inglés y lenguas de la India (hindi, bengalí, tamil, telugu, maratí, guyaratí, canarés, malayalam, panyabí, urdu).
+- Posible soporte de visión: el autor indica que es un modelo de visión y que los mmproj estarían en el repositorio estático; no se confirma en esta publicación.
+- No se dispone de información sobre modo thinking explícito, audio u otras capacidades especiales.
 
 ## Casos de uso
 
-- Despliegue local en estaciones de trabajo: con cuantizaciones Q4_K_M o IQ4_XS, el modelo ocupa aproximadamente 15-17 GB, lo que permite ejecutarlo en una GPU de consumo con 24 GB de VRAM (RTX 3090, RTX 4090) o en configuracion CPU+GPU con llama.cpp.
-- Prototipado de asistentes conversacionales: el tag `conversational` y el tamano del modelo lo hacen adecuado para construir chatbots de proposito general en entornos de desarrollo, usando la cuantizacion Q5_K_M o Q6_K cuando la calidad sea prioritaria.
-- Experimentacion con tecnicas de cuantizacion: el repositorio ofrece 24 variantes distintas, lo que permite comparar el impacto de IQ1_S frente a Q6_K en la misma tarea y medir la degradacion de calidad de forma controlada.
-- Inferencia en servidores sin GPU dedicada: las cuantizaciones IQ2 e IQ3 (aproximadamente 8-11 GB) permiten ejecutar el modelo en CPU con memoria RAM suficiente, util para entornos de validacion o demos de baja concurrencia.
-- Evaluacion comparativa de modelos de ~27B: sirve como base para pruebas de razonamiento y generacion frente a otros modelos densos del mismo orden de magnitud, siempre que se documente la cuantizacion empleada.
-- Integracion en pipelines de generacion de texto por lotes: mediante llama.cpp o servidores compatibles con la API de OpenAI, el modelo puede procesar lotes de documentos para resumen, clasificacion o reescritura en entornos con recursos limitados.
+- Asistente de programación local: con cuantizados Q4_K_M (16,6 GB) o Q5_K_M (19,3 GB) puede desplegarse en una GPU de 24 GB para autocompletado, refactorización y generación de código en entornos sin conexión.
+- Agente con tool calling en pipelines de CI/CD: los tags de tool-use y agents permiten integrar el modelo en flujos que invocan herramientas (ejecución de tests, consultas a APIs) mediante un runtime compatible con GGUF.
+- Atención al cliente multilingüe en la India: el soporte de en, hi, bn, ta, te, mr, gu, kn, ml, pa y ur lo hace adecuado para conversaciones multi-turno en esos idiomas, aunque la longitud de contexto no está confirmada.
+- Despliegue en estaciones de trabajo con GPU de consumo: las variantes IQ3_M (12,7 GB) o Q4_K_S (15,7 GB) caben en GPUs de 16 GB, permitiendo prototipado local de agentes.
+- Investigación y evaluación de cuantizaciones: el fichero imatrix y el amplio rango de cuantizados (de IQ1_S a Q6_K) permiten estudiar el compromiso calidad/tamaño en un modelo de ~27B.
+- Razonamiento asistido en entornos con requisitos de privacidad: al ejecutarse en local con llama.cpp, los datos no salen del equipo, útil para sectores regulados.
+- Generación de código en producción con recursos limitados: el cuantizado Q2_K (10,8 GB) o IQ2_M (10,1 GB) permite ejecutar el modelo en GPUs de 12 GB, con la consiguiente pérdida de calidad.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada segun cuantizacion (aproximada, para pesos mas overhead de contexto):
-  - IQ1_S / IQ1_M: ~4-6 GB.
-  - IQ2_XXS / IQ2_XS / IQ2_S / IQ2_M: ~7-9 GB.
-  - Q2_K / Q2_K_S / IQ3_XXS / IQ3_XS / IQ3_S / IQ3_M / Q3_K_S / Q3_K_M / Q3_K_L: ~10-13 GB.
-  - IQ4_XS / small-IQ4_NL / Q4_0 / Q4_1 / Q4_K_S / Q4_K_M: ~14-17 GB.
-  - Q5_K_S / Q5_K_M: ~18-19 GB.
-  - Q6_K: ~21-22 GB.
-- GPU recomendadas: RTX 4090 o RTX 3090 (24 GB) para cuantizaciones Q4 y Q5; A100 40 GB o H100 para Q6_K con contexto largo; GPUs de 16 GB (RTX 4080, A4000) para IQ3 y Q4 bajas con contexto moderado.
-- Cabe en GPU de consumo: si, en RTX 3090/4090 con cuantizaciones Q4_K_M o inferiores; en GPUs de 16 GB con IQ3 o Q4_K_S recortando contexto.
-- Opciones de despliegue: llama.cpp, Ollama (importando el GGUF), llama-cpp-python, servidores compatibles con la API de OpenAI basados en llama.cpp, y Hugging Face Inference Endpoints (tag `endpoints_compatible`).
-- Latencia y throughput: no disponibles. Dependen fuertemente de la cuantizacion, el hardware y la longitud de contexto; no se han publicado mediciones.
+- VRAM estimada para inferencia (según tamaño del fichero GGUF, más overhead de contexto y KV cache):
+  - i1-IQ1_S: ~7,2 GB; i1-IQ1_M: ~7,7 GB.
+  - i1-IQ2_XXS: ~8,5 GB; i1-IQ2_XS: ~9,2 GB; i1-IQ2_S: ~9,5 GB; i1-IQ2_M: ~10,1 GB.
+  - i1-Q2_K_S: ~10,3 GB; i1-Q2_K: ~10,8 GB.
+  - i1-IQ3_XXS: ~11,3 GB; i1-IQ3_XS: ~12,1 GB; i1-Q3_K_S: ~12,2 GB; i1-IQ3_S: ~12,5 GB; i1-IQ3_M: ~12,7 GB; i1-Q3_K_M: ~13,4 GB; i1-Q3_K_L: ~14,4 GB.
+  - i1-IQ4_XS: ~15,2 GB; i1-Q4_0: ~15,6 GB; i1-Q4_K_S: ~15,7 GB; i1-Q4_K_M: ~16,6 GB; i1-Q4_1: ~17,2 GB.
+  - i1-Q5_K_S: ~18,8 GB; i1-Q5_K_M: ~19,3 GB.
+  - i1-Q6_K: ~22,2 GB.
+- GPU recomendadas: para Q4_K_M y superiores, GPUs de 24 GB (RTX 3090, RTX 4090, A10G) o superiores (A100 40/80 GB, H100) si se busca contexto largo; para IQ3_M o Q4_K_S, GPUs de 16 GB (RTX 4080, RTX 4060 Ti 16 GB); para cuantizados IQ2, GPUs de 12 GB (RTX 3060 12 GB, RTX 4070).
+- Cabe en GPU de consumo: sí, desde IQ2_M en 12 GB hasta Q6_K en 24 GB; los cuantizados IQ1 son para entornos con VRAM muy limitada.
+- Opciones de despliegue: llama.cpp, Ollama, y otros runtimes compatibles con GGUF; el repositorio indica endpoints_compatible y librería transformers para el modelo base.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-No se dispone de informacion suficiente sobre Athena-27B (arquitectura, contexto, licencia, rendimiento) para establecer una comparativa rigurosa con alternativas. Como referencia de categoria por tamano, podrian considerarse modelos densos de ~27B como Gemma 2 27B o Qwen2.5 32B, pero no hay datos que permitan afirmar equivalencia de rendimiento ni de condiciones de uso.
+No se dispone de datos de rendimiento del modelo base ni de alternativas comparables en la información proporcionada, por lo que no es posible establecer una comparativa cuantitativa fiable. Como referencia estructural, esta publicación se compara con sus propias variantes:
 
-| Modelo | Parametros | Contexto | Licencia | Disponibilidad |
-|---|---|---|---|---|
-| Athena-27B (base) | ~26,9B | no disponible | no disponible | Hugging Face (Batman787) |
-| Athena-27B-i1-GGUF | ~26,9B | no disponible | no disponible | Hugging Face (mradermacher) |
-| Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
+| Variante | Tipo | Tamaño (GB) | Nota del autor |
+|---|---|---|---|
+| Athena-27B-i1-GGUF (i1-Q4_K_M) | imatrix | 16,6 | rápido, recomendado |
+| Athena-27B-GGUF (estático) | estático | no disponible | cuantizados estáticos del mismo modelo base |
+| Modelo base athenaresearch/Athena-27B | safetensors | no disponible en esta ficha | pesos originales sin cuantizar |
 
 ## Limitaciones y advertencias
 
-- La model card no especifica la licencia del modelo base ni de las cuantizaciones; no debe asumirse uso comercial permitido sin verificar la licencia original en el repositorio de Batman787.
-- No hay informacion sobre sesgos, datos de entrenamiento ni evaluaciones de seguridad; el riesgo de alucinacion es el habitual en modelos de lenguaje de este tamano y no ha sido cuantificado.
-- Las cuantizaciones de 1 y 2 bits (IQ1_S, IQ1_M, IQ2_XXS, IQ2_XS) degradan notablemente la calidad respecto a los pesos originales; no se recomiendan para produccion.
-- El repositorio no registra descargas ni likes, y la model card es minima; no hay evidencia de validacion por parte de la comunidad.
-- No se conocen los idiomas soportados ni la longitud de contexto nativa, lo que impide garantizar un comportamiento correcto en castellano o en contextos largos.
-- Al ser una redistribucion de terceros, la trazabilidad del modelo base es limitada; conviene auditar el repositorio original antes de usarlo en entornos productivos.
-- El tag `endpoints_compatible` no garantiza un rendimiento adecuado en Inference Endpoints; habria que validar latencia y throughput en el hardware objetivo.
+- Los cuantizados de baja precisión (IQ1_S, IQ1_M, Q2_K_S, Q2_K, IQ2_*) degradan la calidad de forma notable; el propio autor califica IQ1_S como "for the desperate" y Q2_K_S como "very low quality".
+- No se dispone de información sobre sesgos del modelo base; al ser un modelo con foco en lenguas de la India, el equilibrio entre idiomas puede no ser uniforme.
+- Riesgo de alucinación inherente a los modelos de lenguaje; no hay datos específicos de evaluación en esta publicación.
+- La longitud de contexto no está confirmada, lo que impide garantizar conversaciones multi-turno largas.
+- El modelo es de visión según el autor, pero los ficheros mmproj no están en este repositorio; para uso multimodal hay que acudir al repositorio estático.
+- Licencia Apache 2.0: permite uso comercial, pero conviene revisar los términos del modelo base y de los datos de entrenamiento originales.
+- El repositorio ocupa 300,3 GB; la descarga completa es costosa y conviene seleccionar solo la variante necesaria.
+- No se han publicado benchmarks en la información disponible, por lo que el rendimiento real debe validarse en el caso de uso concreto.
 
 ## Enlaces
 
-- Repositorio GGUF: https://huggingface.co/mradermacher/Athena-27B-i1-GGUF
-- Modelo base: https://huggingface.co/Batman787/Athena-27B
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Athena-27B-i1-GGUF
+- Modelo base: https://huggingface.co/athenaresearch/Athena-27B
+- Cuantizados estáticos: https://huggingface.co/mradermacher/Athena-27B-GGUF
+- Página de descargas del autor: https://hf.tst.eu/model#Athena-27B-i1-GGUF
+- FAQ y solicitudes de cuantización: https://huggingface.co/mradermacher/model_requests
+- Guía de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Análisis de cuantizaciones de Artefact2: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Gráfica de perplejidad de cuantizados (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png

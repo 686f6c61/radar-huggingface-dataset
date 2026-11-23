@@ -5,7 +5,7 @@
   "author": "Daemons-Q",
   "url": "https://huggingface.co/Daemons-Q/qsh-finance-aml-mlp-large",
   "created_at": "2026-11-09T10:13:21.000Z",
-  "updated_at": "2026-11-16T08:15:07.000Z",
+  "updated_at": "2026-11-22T12:26:18.000Z",
   "license": "cdla-sharing-1.0",
   "license_family": "oss",
   "pipeline_tag": "tabular-classification",
@@ -21,6 +21,7 @@
     "arxiv:2402.08593",
     "arxiv:2412.00241",
     "arxiv:2610.18054",
+    "arxiv:2507.08835",
     "license:cdla-sharing-1.0",
     "region:us"
   ],

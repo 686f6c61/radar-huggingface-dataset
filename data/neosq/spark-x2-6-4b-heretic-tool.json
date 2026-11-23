@@ -38,7 +38,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 469,
+  "downloads_30d": 470,
   "trending_score": 0,
   "parameters": 4112079360,
   "parameters_human": "4.11B",
@@ -58,11 +58,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Lidl autour de moi – adresses, horaires et itinéraire",
-      "url": "https://storelocatortool.com/v3/fr/recherche.php?enseigne=lidl&pays=france",
-      "snippet": "Lidl à proximité : magasins Lidl en France par ville, avec carte, adresse, horaires d'ouverture et itinéraire."
-    }
-  ]
+  "sources": []
 }

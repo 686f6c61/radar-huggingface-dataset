@@ -51,31 +51,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Capacitor Calculator – Fast, Free Capacitor Tool | No Ads | InfiniteCalcs",
-      "url": "https://infinitecalcs.com/calculators/electrical/capacitor-calculator/",
-      "snippet": "Capacitor Calculator – Calculate capacitor instantly. Calculate capacitors in series and parallel Free, fast, and accurate with step-by …"
-    },
-    {
-      "title": "Capacitance Conversion Calculator | DigiKey Electronics",
-      "url": "https://www.digikey.com/en/resources/conversion-calculators/conversion-calculator-capacitance?msockid=2a79b467c3e761c404e3a3bec25d60c5",
-      "snippet": "Use DigiKey’s electrostatic capacitance conversion calculator to quickly perform conversions between capacitance units including pF, …"
-    },
-    {
-      "title": "Free Capacitor Calculator - Charge, Energy & Code Decoder",
-      "url": "https://miniwebtool.com/capacitor-calculator/",
-      "snippet": "Mar 17, 2026 · Capacitor Calculator - Calculate stored charge (Q=CV), energy (E=½CV²), and reactance (Xc=1/2πfC) for capacitors. …"
-    },
-    {
-      "title": "Capacitance Calculator | iCalculator™",
-      "url": "https://physics.icalculator.com/capacitance-calculator.html",
-      "snippet": "Capacitance Calculator This calculator evaluates capacitance across multiple electrostatic configurations including charge–voltage …"
-    },
-    {
-      "title": "Capacitor Calculator - simplified.tools",
-      "url": "https://www.simplified.tools/calculate_capacitor",
-      "snippet": "Capacitor Calculator Calculate parallel-plate capacitance from plate geometry and dielectric choice, then estimate stored charge and …"
-    }
-  ]
+  "sources": []
 }

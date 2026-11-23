@@ -2,82 +2,81 @@
 
 ## Resumen
 
-Este repositorio contiene una cuantización GGUF de Qwen3.8-Flash-Next en su variante "abliterated" (con los mecanismos de rechazo de seguridad eliminados), publicada por el usuario ZHUOZA en Hugging Face. Se trata de una versión "self contained MTP" (Multi-Token Prediction) derivada del trabajo de huihui-ai sobre el modelo base Qwen3.8-Flash-Next de Qwen, concretamente de su cuantización UD-Q6_K_XL.
+Qwen3.8-Flash-Next-abliterated-Q6_K_S-MTP es una cuantización GGUF publicada por el usuario ZHUOZA a partir de la versión abliterated de Huihui (huihui-ai/Huihui-Qwen3.8-Flash-Next-abliterated-v2-GGUF), que a su vez deriva del modelo Qwen3.8-Flash-Next de Alibaba. Se trata, por tanto, de una variante de terceros con las capas de rechazo ("abliterated") eliminadas y reempaquetada en formato GGUF con cuantización mixta Q6_K/Q5 para caber en un único dispositivo de 128 GB de memoria junto con caché KV en Q8/Q5_1.
 
-La particularidad de esta versión es que integra la capacidad de predicción multi-token (MTP) directamente en el archivo GGUF, lo que permite acelerar la decodificación especulativa en runtimes compatibles. Además, el autor ha sustituido algunos expertos de cuantización Q6 a Q5 con el objetivo de que el modelo completo quepa en un único dispositivo de 128 GB de memoria manteniendo una caché KV en Q8/Q5_1.
+El dato de parámetros totales registrado en safetensors es de 448.931.056, aunque el repositorio ocupa 234,5 GB, lo que indica una discrepancia entre el campo declarado y el contenido real de los pesos (probablemente un modelo de mayor escala con pesos en múltiples ficheros). No se dispone de información verificada sobre arquitectura, contexto o composición del entrenamiento en la documentación proporcionada.
 
-Es relevante para usuarios que ejecutan modelos grandes localmente en estaciones de trabajo con memoria unificada (por ejemplo, Mac Studio de 128 GB o plataformas equivalentes) y que buscan una versión sin filtros de seguridad de un modelo flash de la familia Qwen3.8, priorizando la capacidad de decodificación rápida frente a una mínima pérdida de precisión en ciertos expertos.
+Su relevancia es acotada: interesa a quienes quieran ejecutar localmente una variante sin censura del modelo Qwen en hardware de gama alta con 128 GB de memoria unificada o VRAM, y el sufijo MTP sugiere soporte de decodificación multi-token (multi-token prediction) para acelerar la inferencia especulativa.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer MoE (familia Qwen3.8-Flash-Next), con MTP integrado |
-| Parametros totales | 448.931.056 (dato de safetensors; el tamaño del repo de 170,2 GB sugiere un modelo MoE mucho mayor, dato exacto no disponible) |
+| Arquitectura | no disponible (derivada de Qwen3.8-Flash-Next; presumiblemente transformer/MoE, sin confirmar) |
+| Parametros totales | 448.931.056 (según safetensors); el tamaño del repo (234,5 GB) no es coherente con esa cifra |
 | Parametros activos | no disponible |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Q6_K_S (base), con algunos expertos rebajados de Q6 a Q5; KV cache en Q8/Q5_1 |
+| Tipos de cuantizacion | GGUF mixta: Q6_K con algunos expertos degradados a Q5; caché KV Q8/Q5_1 |
 | Idiomas soportados | no disponible |
-| Licencia | qwen-community-1.0 (licencia "other", enlazada a la licencia de Qwen/Qwen3.8-Flash-Next) |
-| Formato de pesos | GGUF |
+| Licencia | qwen-community-1.0 (etiquetada como "other" en Hugging Face) |
+| Formato de pesos | GGUF (safetensors declarado en los metadatos del repo) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base, Qwen3.8-Flash-Next, es un modelo de la familia Qwen de Alibaba. La evidencia del tamaño del repositorio (170,2 GB en cuantización Q6_K) y de la mención explícita a "expertos" indica que se trata de una arquitectura Mixture of Experts (MoE), aunque ni el número total real de parámetros del modelo completo ni los parámetros activos por token están documentados en la model card. El sufijo "Flash-Next" sugiere una variante optimizada para velocidad de inferencia, y "MTP" hace referencia a Multi-Token Prediction, una técnica de decodificación especulativa en la que el modelo predice varios tokens por paso, reduciendo la latencia.
+No se dispone de información verificada sobre la arquitectura interna, el número de tokens de entrenamiento, la composición del dataset ni las fases de alineación (RLHF/DPO) del modelo base Qwen3.8-Flash-Next. La model card del autor se limita a describir el proceso de reempaquetado: parte de la versión UD-Q6_K_XL de Huihui y sustituye algunos expertos de Q6 a Q5 para que el conjunto quepa en un solo dispositivo de 128 GB con caché KV en Q8/Q5_1.
 
-Sobre la variante "abliterated": es una modificación post-entrenamiento (popularizada por huihui-ai) que neutraliza los mecanismos internos del modelo responsables de los rechazos por seguridad, sin reentrenamiento completo. No hay información en la model card sobre el número de tokens de entrenamiento, la composición del dataset ni el uso de RLHF/DPO, ya que se trata de una cuantización derivada y no del modelo original.
+El sufijo "MTP" en el nombre indica soporte de multi-token prediction, una técnica de decodificación especulativa en la que el modelo predice varios tokens por paso para aumentar el throughput. El término "abliterated" hace referencia a la eliminación de la dirección de rechazo en el espacio de activaciones, práctica habitual en las variantes sin censura de modelos abiertos.
 
 ## Capacidades
 
-- Generacion de texto general, heredada del modelo base Qwen3.8-Flash-Next.
-- Prediccion multi-token (MTP) integrada en el GGUF, que permite decodificacion especulativa y mayor velocidad de generacion en runtimes compatibles.
-- Ejecucion local completa en un unico dispositivo de 128 GB de memoria gracias a la cuantizacion mixta Q6/Q5 y a la KV cache en Q8/Q5_1.
-- Ausencia de filtros de seguridad ("abliterated"): responde a peticiones que el modelo original rechazaria, lo cual es tanto una capacidad buscada por algunos usuarios como un riesgo importante.
-- Capacidades de codigo, razonamiento, matematicas o vision: no disponible en la informacion proporcionada.
-- Soporte de tool calling o agentes: no disponible.
+- Generación de texto y razonamiento general, heredadas del modelo base Qwen3.8-Flash-Next (sin verificación independiente en esta ficha).
+- Variante abliterated: menor tendencia a rechazar peticiones, incluidas las que el modelo original declinaría.
+- Decodificación multi-token (MTP) para acelerar la generación en motores compatibles.
+- Soporte de tool calling y agentes: no confirmado en la documentación disponible.
+- Capacidades multilingües: no disponibles.
+- Capacidades de visión o audio: no disponibles.
 
 ## Casos de uso
 
-- Despliegue local en hardware de 128 GB: el autor ha ajustado la cuantizacion expresamente para que el modelo quepa en un solo dispositivo de 128 GB con KV cache cuantizada, ideal para estaciones de trabajo locales sin necesidad de multiples GPUs.
-- Inferencia de alta velocidad con MTP: en runtimes compatibles con decodificacion especulativa (como llama.cpp con soporte MTP), la prediccion multi-token reduce la latencia por token en tareas de generacion larga.
-- Investigacion sobre abliteration: util para estudiar como la eliminacion de capas de rechazo afecta al comportamiento del modelo en comparacion con la version original de huihui-ai o la oficial de Qwen.
-- Asistentes personales offline: al ejecutarse localmente sin filtros, puede usarse para chatbots privados donde no se desea enviar datos a servicios externos, asumiendo los riesgos de la version sin salvaguardas.
-- Experimentacion con cuantizacion mixta: sirve como ejemplo practico de como rebajar selectivamente expertos concretos (Q6 a Q5) para ajustar el footprint de memoria de un MoE sin recuantizar todo el modelo.
-- Procesamiento por lotes local: la combinacion de MTP y cuantizacion agresiva permite maximizar el throughput en cargas de generacion masiva en una sola maquina.
+- Inferencia local en hardware de 128 GB: el reempaquetado está diseñado explícitamente para caber en un único dispositivo con esa memoria, incluyendo caché KV, lo que permite desplegar el modelo en estaciones de trabajo con memoria unificada sin repartir pesos entre nodos.
+- Investigación sobre alineación y seguridad: la variante abliterated permite estudiar el comportamiento del modelo sin las capas de rechazo, útil para analizar sesgos, robustez y eficacia de los mecanismos de seguridad del modelo original.
+- Evaluación de decodificación especulativa: el soporte MTP permite medir ganancias de throughput frente a decodificación autoregresiva estándar en motores como llama.cpp.
+- Prototipado de asistentes conversacionales sin restricciones temáticas, en entornos controlados y con supervisión humana.
+- Pruebas de cuantización mixta: la mezcla Q6/Q5 con caché KV Q8/Q5_1 sirve como caso de estudio de compromisos entre calidad y huella de memoria.
+- Despliegue en pipelines de generación por lotes donde el coste por token importa y se dispone de GPU de gran memoria (A100 80 GB en pares, H100 80 GB, o sistemas Apple con memoria unificada de 128 GB o más).
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. Al tratarse de una cuantizacion derivada, el rendimiento en benchmarks dependera del modelo base Qwen3.8-Flash-Next, cuyos resultados no se incluyen en la model card de este repositorio.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM / memoria estimada: el repo ocupa 170,2 GB en disco, pero el autor indica que con la cuantizacion mixta aplicada cabe en un unico dispositivo de 128 GB usando KV cache en Q8/Q5_1 (esto implica que los pesos efectivos en memoria rondan o son inferiores a los ~112-120 GB utiles tras reservar espacio para la KV cache).
-- GPU recomendadas: no disponible explicitamente; por el perfil de memoria de 128 GB, candidatos tipicos son Apple Mac Studio con 128 GB de memoria unificada, o plataformas multi-GPU (2x A100 80 GB, 2x H100 80 GB o equivalentes con NVLink).
-- Consumer GPU: no cabe en GPUs de consumo actuales (una RTX 4090 con 24 GB o una RTX 5090 con 32 GB son insuficientes por si solas; se requeriria offloading a RAM con penalizacion severa de velocidad).
-- Opciones de despliegue: llama.cpp (formato GGUF nativo, con soporte de MTP si la version lo implementa), Ollama (via llama.cpp), LM Studio. vLLM y TGI no soportan GGUF de forma nativa para este caso.
-- Latencia y throughput: no disponible; se espera beneficio de velocidad por el MTP, pero no hay cifras publicadas.
+- VRAM/memoria estimada: el autor indica que el paquete está pensado para un dispositivo de 128 GB, incluyendo caché KV en Q8/Q5_1; el tamaño del repositorio es de 234,5 GB, por lo que la cifra de 128 GB debe interpretarse como objetivo de despliegue y no como tamaño de los ficheros.
+- GPU recomendadas: H100 80 GB, A100 80 GB (posiblemente en configuración multi-GPU), o sistemas con memoria unificada de 128 GB o superior.
+- GPU de consumo: improbable que quepa en RTX 4090 (24 GB) o RTX 3090 (24 GB) dada la huella declarada; no disponible confirmación.
+- Opciones de despliegue: llama.cpp y derivados (Ollama, LM Studio) por el formato GGUF; compatibilidad con vLLM o TGI no confirmada para este empaquetado.
+- Latencia y throughput: no disponibles; el soporte MTP debería mejorar el throughput en motores que lo implementen, sin cifras publicadas.
 
 ## Comparativa con modelos similares
 
-| Modelo | Formato | Cuantizacion | MTP | Abliterated | Licencia | Notas |
-|---|---|---|---|---|---|---|
-| ZHUOZA/Qwen3.8-Flash-Next-abliterated-Q6_K_S-MTP | GGUF | Q6_K_S con expertos Q5 mixtos | Si (integrado) | Si | qwen-community-1.0 | Diseno para 128 GB con KV Q8/Q5_1 |
-| huihui-ai/Huihui-Qwen3.8-Flash-Next-abliterated-v2-GGUF | GGUF | UD-Q6_K_XL | no disponible | Si | no disponible | Modelo origen de esta derivada |
-| Qwen/Qwen3.8-Flash-Next | no disponible | Pesos originales | no disponible | No | qwen-community-1.0 | Version oficial con salvaguardas completas |
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|
+| ZHUOZA/Qwen3.8-Flash-Next-abliterated-Q6_K_S-MTP | 448.931.056 (declarado) | no disponible | qwen-community-1.0 | GGUF | Variante abliterated reempaquetada para 128 GB |
+| huihui-ai/Huihui-Qwen3.8-Flash-Next-abliterated-v2-GGUF | no disponible | no disponible | qwen-community-1.0 | GGUF | Modelo de origen de esta cuantización |
+| Qwen/Qwen3.8-Flash-Next | no disponible | no disponible | qwen-community-1.0 | safetensors | Modelo base original, con alineación intacta |
 
 ## Limitaciones y advertencias
 
-- Variante abliterated: el modelo ha sido modificado para eliminar sus rechazos de seguridad. Esto implica riesgo elevado de generar contenido nocivo, ilegal o peligroso, y una responsabilidad legal y etica plenamente asumida por el usuario. No es apto para entornos de produccion orientados a publico general.
-- Licencia qwen-community-1.0: al ser una licencia "other" de la familia Qwen, puede imponer restricciones de uso comercial (limites por numero de usuarios o ingresos, requisitos de atribucion). Debe revisarse el texto en el enlace de la licencia antes de cualquier despliegue comercial.
-- Precision reducida en algunos expertos: el autor rebajo expertos concretos de Q6 a Q5 para ajustar el footprint, lo que puede degradar ligeramente la calidad en las areas de conocimiento asociadas a esos expertos.
-- Riesgo de alucinacion: inherente a cualquier LLM; no hay datos que indiquen si la abliteration o la cuantizacion mixta la agravan, pero es plausible que la eliminacion de salvaguardas aumente la propension a afirmaciones sin fundamento.
-- Contexto e idiomas: la longitud de contexto y los idiomas soportados no estan documentados en este repositorio; deben consultarse en la ficha del modelo base oficial.
-- Comunidad minima: con 1 descarga y 1 like en el momento de la ficha, se trata de un repositorio sin validacion comunitaria; los archivos pueden contener errores o estar incompletos.
-- Requisito de hardware muy alto: requiere ~128 GB de memoria unificada, lo que lo excluye de la mayoria de configuraciones de consumo.
+- La variante abliterated elimina los mecanismos de rechazo del modelo original, lo que aumenta el riesgo de generar contenido dañino, ilegal o inexacto; no es apta para producción sin filtros externos.
+- El dato de parámetros totales (448.931.056) es incoherente con el tamaño del repositorio (234,5 GB); conviene verificar los pesos antes de desplegar.
+- No hay información verificada sobre contexto máximo, idiomas o capacidades de tool calling; no asumir compatibilidad con pipelines de agentes sin pruebas.
+- La licencia qwen-community-1.0 impone condiciones de uso comercial que deben revisarse en el enlace oficial; el etiquetado "other" en Hugging Face añade ambigüedad.
+- Al ser una cuantización mixta Q6/Q5, existe una pérdida de calidad respecto al modelo en precisión completa, no cuantificada públicamente.
+- Riesgo de alucinación inherente al modelo base, agravado por la falta de benchmarks publicados para esta variante.
+- Modelo de terceros: no cuenta con el soporte ni las garantías del equipo de Qwen.
 
 ## Enlaces
 
-- Repositorio en Hugging Face: https://huggingface.co/ZHUOZA/Qwen3.8-Flash-Next-abliterated-Q6_K_S-MTP
-- Modelo origen (huihui-ai): https://huggingface.co/huihui-ai/Huihui-Qwen3.8-Flash-Next-abliterated-v2-GGUF
+- Hugging Face: https://huggingface.co/ZHUOZA/Qwen3.8-Flash-Next-abliterated-Q6_K_S-MTP
+- Modelo de origen (Huihui): https://huggingface.co/huihui-ai/Huihui-Qwen3.8-Flash-Next-abliterated-v2-GGUF
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next/blob/main/LICENSE
-- Model base oficial (referenciado por la licencia): https://huggingface.co/Qwen/Qwen3.8-Flash-Next

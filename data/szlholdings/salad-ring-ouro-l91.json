@@ -1,0 +1,43 @@
+{
+  "schema": 2,
+  "id": "SZLHOLDINGS/salad-ring-ouro-l91",
+  "slug": "szlholdings-salad-ring-ouro-l91",
+  "author": "SZLHOLDINGS",
+  "url": "https://huggingface.co/SZLHOLDINGS/salad-ring-ouro-l91",
+  "created_at": "2026-11-19T02:28:02.000Z",
+  "updated_at": "2026-11-23T01:05:57.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "context_length": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "How to Find Amazon Influencer Storefronts? A Complete Guide",
+      "url": "https://www.saasant.com/blog/how-to-find-and-collaborate-with-amazon-storefront-influencers/",
+      "snippet": "Discover effective strategies for identifying and partnering with Amazon Storefront influencers on our website. Learn how to maximize …Read more"
+    }
+  ]
+}

@@ -41,29 +41,29 @@
   "benchmarks": [],
   "sources": [
     {
-      "title": "OpenAI-Clip - Qualcomm® AI Hub",
-      "url": "https://aihub.qualcomm.com/compute/models/openai_clip",
-      "snippet": "OpenAI-Clip Multi‑modal foundational model for vision and language tasks like image/text similarity and for zero‑shot image classification. Contrastive Language‑Image Pre‑Training (CLIP) uses a ViT like transformer to get visual features and a causal language model to get the text features."
+      "title": "Qualcomm: Intelligent Computing Everywhere",
+      "url": "https://www.qualcomm.com/",
+      "snippet": "Learn how Qualcomm transforms industries with leading edge AI, high-performance, low-power computing and unrivaled connectivity."
     },
     {
-      "title": "qualcomm/OpenAI-Clip · Hugging Face",
-      "url": "https://huggingface.co/qualcomm/OpenAI-Clip",
-      "snippet": "This is based on the implementation of OpenAI-Clip found here. This repository contains pre-exported model files optimized for Qualcomm® devices. You can use the Qualcomm® AI Hub Models library to export with custom configurations. More details on model performance across various devices, can be found here."
+      "title": "Qualcomm - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Qualcomm",
+      "snippet": "Qualcomm Incorporated (/ ˈkwɒlkɒm /) [2] is an American multinational technology corporation headquartered in San Diego, …Read more"
     },
     {
-      "title": "ai-hub-models/src/qai_hub_models/models/openai_clip at main · qualcomm ...",
-      "url": "https://github.com/qualcomm/ai-hub-models/tree/main/src/qai_hub_models/models/openai_clip",
-      "snippet": "This is based on the implementation of OpenAI-Clip found here. This repository contains scripts for optimized on-device export suitable to run on Qualcomm® devices. More details on model performance across various devices, can be found here. Qualcomm AI Hub Models uses Qualcomm AI Hub Workbench to compile, profile, and evaluate this model."
+      "title": "About Qualcomm | Company Information & History | Qualcomm",
+      "url": "https://www.qualcomm.com/company",
+      "snippet": "Qualcomm is a company of inventors with diverse skills and backgrounds, who are driven to improve communication around the …Read more"
     },
     {
-      "title": "ai-hub-models/src/qai_hub_models/models/openai_clip/README.md ... - GitHub",
-      "url": "https://github.com/qualcomm/ai-hub-models/blob/main/src/qai_hub_models/models/openai_clip/README.md",
-      "snippet": "This is based on the implementation of OpenAI-Clip found here. This repository contains scripts for optimized on-device export suitable to run on Qualcomm® devices. More details on model performance across various devices, can be found here. Qualcomm AI Hub Models uses Qualcomm AI Hub Workbench to compile, profile, and evaluate this model."
+      "title": "QUALCOMM Cours Action QCOM, Cotation Bourse NASDAQ",
+      "url": "https://www.boursorama.com/cours/QCOM/",
+      "snippet": "Le cours de l'action QUALCOMM QCOM sur Boursorama : historique de la cotation sur NASDAQ, graphique, actualités, consensus …Read more"
     },
     {
-      "title": "qualcomm/OpenAI-Clip at main - Hugging Face",
-      "url": "https://huggingface.co/qualcomm/OpenAI-Clip/tree/main",
-      "snippet": "qualcomm / OpenAI-Clip like 7 Follow Qualcomm 472 Image Classification PyTorch LiteRT ONNX foundation android arxiv:2103.00020 License:mit Model card FilesFiles and versions Community 1 main OpenAI-Clip 3 contributors History:201 commits qaihm-bot Upload CLIPTextEncoder.onnx with huggingface_hub 5079429 verified4 days ago .gitattributes Safe"
+      "title": "Qualcomm - Investor Relations",
+      "url": "https://investor.qualcomm.com/overview/default.aspx",
+      "snippet": "Nov 5, 2026 · Qualcomm Earnings Release Available on Company's Investor Relations Website View All Press Releases"
     }
   ]
 }

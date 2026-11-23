@@ -54,16 +54,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "oytunistrator/AquaLLM — Downloads, Growth & Stats | OpenModelStats",
-      "url": "https://openmodelstats.com/models/oytunistrator/aquallm",
-      "snippet": "AquaLLM by oytunistrator: 1,506 all-time downloads, 336 in the last 30 days, 3 likes. A question answering model with 1.5B parameters. Daily download history, growth trends and ranking position, tracked and updated by OpenModelStats."
-    },
-    {
-      "title": "AquaLLM - AI Model Insights & Benchmarks - free2aitools.com",
-      "url": "https://free2aitools.com/model/oytunistrator/aquallm",
-      "snippet": "by oytunistrator hf-dataset--oytunistrator--aquallm Nexus Index 29.7Top 100% S: Semantic50 A: Authority0 P: Popularity3 R: Recency34 Q: Quality65 Tech Context Vital Performance 31 DL / 30D 0.0% Source → Share: 📤 𝕏 in 📣 🔗 Audited 29.7 FNI Score Tiny - Params - Context 31 Downloads 🔬Dive Deep"
-    }
-  ]
+  "sources": []
 }

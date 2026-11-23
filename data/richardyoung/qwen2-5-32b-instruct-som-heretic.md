@@ -2,102 +2,86 @@
 
 ## Resumen
 
-Qwen2.5-32B-Instruct-SOM-heretic es una versión "decensored" (también etiquetada como abliterated) del modelo Qwen2.5-32B-Instruct de Alibaba Cloud, publicada por el usuario richardyoung. El modelo conserva la arquitectura y los pesos del original, pero aplica una técnica de ablación multi-direccional basada en mapas autoorganizados (SOM, Self-Organizing Map) mediante la herramienta Heretic v2.0.0, con el objetivo de reducir la tasa de rechazos (refusals) ante peticiones que el modelo original declinaría.
+Qwen2.5-32B-Instruct-SOM-heretic es una variante modificada del modelo Qwen2.5-32B-Instruct desarrollada por el usuario richardyoung. Se trata de un ajuste fino orientado a eliminar los mecanismos de rechazo y censura del modelo original, empleando técnicas de "abliteration" (modificación de los pesos para suprimir comportamientos de negativa) combinadas con el método SOM (probablemente "Self-Organizing Maps" aplicado a la intervención de capas, aunque la documentación del autor no lo detalla). El resultado es un modelo de 32.763.876.352 parámetros que responde a instrucciones que el modelo base rechazaría.
 
-El modelo base Qwen2.5-32B-Instruct es un transformer causal de 32.500 millones de parámetros (32.763.876.352 según los safetensors), con 64 capas, atención GQA (40 cabezas de consulta y 8 de clave-valor), RoPE, SwiGLU, RMSNorm y sesgo en QKV. Soporta un contexto completo de 131.072 tokens (aunque el config.json por defecto está ajustado a 32.768, ampliable con YaRN) y genera hasta 8.192 tokens.
+El modelo hereda la arquitectura transformer densa de Qwen2.5-32B-Instruct, con una ventana de contexto de 131.072 tokens según la especificación del modelo base, y está pensado para generación de texto conversacional. Su relevancia radica en que ofrece una alternativa sin restricciones de contenido sobre una base de alta calidad (Qwen2.5 es uno de los modelos abiertos más capaces en su rango de tamaño), lo que interesa a investigadores que estudian alineación, robustez y comportamiento de modelos, así como a desarrolladores que necesitan un modelo sin filtros para aplicaciones creativas o de rol.
 
-La relevancia de esta variante es concreta: ofrece el mismo rendimiento del Qwen2.5-32B-Instruct en tareas de razonamiento, código y matemáticas, pero con una tasa de rechazos reducida de 98/100 a 73/100 en la evaluación del autor, a costa de una divergencia KL de 0,0750 respecto al original. Es un modelo pensado para entornos controlados donde se necesita evitar negativas del modelo ante contenido legítimo.
+El acceso está restringido en Hugging Face (gated), requiere aceptar condiciones, y la licencia declarada es Apache 2.0, aunque conviene verificar las condiciones reales del autor. El modelo solo declara soporte para inglés y acumula 517 descargas en el momento de la consulta.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer causal (Qwen2) con RoPE, SwiGLU, RMSNorm, atención GQA y sesgo QKV |
-| Parametros totales | 32.763.876.352 (32,5B; 31,0B sin embeddings) |
-| Parametros activos | No aplica (modelo denso, no MoE) |
-| Longitud de contexto | 131.072 tokens completos; config.json por defecto a 32.768; generación de 8.192 tokens |
-| Tipos de cuantizacion | No disponible (el repo solo contiene safetensors en el formato original; no se listan GGUF ni cuantizaciones publicadas) |
-| Idiomas soportados | El modelo base soporta más de 29 idiomas (inglés, chino, español, francés, portugués, alemán, italiano, ruso, japonés, coreano, vietnamita, tailandés, árabe, etc.); la model card de esta variante declara únicamente `en` |
-| Licencia | Apache 2.0 |
-| Formato de pesos | Safetensors (repo de 65,5 GB) |
+| Arquitectura | Transformer denso (Qwen2) |
+| Parametros totales | 32.763.876.352 |
+| Parametros activos | no aplica (modelo denso) |
+| Longitud de contexto | 131.072 tokens (según modelo base Qwen2.5-32B-Instruct; no confirmado explícitamente en la ficha del autor) |
+| Tipos de cuantizacion | no disponible (pesos en safetensors; se pueden aplicar cuantizaciones estándar GPTQ/AWQ/GGUF por conversión) |
+| Idiomas soportados | en (inglés) |
+| Licencia | apache-2.0 (declarada; acceso gated con condiciones del autor) |
+| Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es la del Qwen2.5-32B-Instruct original: un transformer causal denso de 64 capas con 40 cabezas de atención para consultas y 8 para clave-valor (GQA), RoPE para codificación posicional, activación SwiGLU, normalización RMSNorm y sesgo en las proyecciones QKV. El modelo base fue entrenado por el equipo Qwen en dos fases (pretraining y post-training, incluyendo instrucción y preferencias), con mejoras específicas en conocimiento, código, matemáticas, seguimiento de instrucciones, generación de textos largos y salidas estructuradas (JSON). El contexto nativo es de 131.072 tokens, ampliable mediante YaRN con un factor de 4,0 sobre una ventana original de 32.768.
+El modelo parte de Qwen2.5-32B-Instruct, un transformer decoder-only denso con 32.763.876.352 parámetros, atención con RoPE, GQA (grouped query attention) y normalización RMSNorm, entrenado por Alibaba sobre un corpus multilingüe masivo (hasta 18 billones de tokens según la documentación oficial de Qwen2.5) con fases de preentrenamiento, ajuste supervisado y optimización por preferencias (DPO). Sobre esa base, richardyoung aplica una intervención de tipo "abliteration" combinada con el método SOM para suprimir las direcciones de activación asociadas a respuestas de rechazo.
 
-La modificación de esta variante no es un fine-tuning, sino una ablación de direcciones en el espacio de activaciones. Heretic v2.0.0 aplica un SOM multi-direccional que identifica direcciones asociadas al comportamiento de rechazo y las atenúa con pesos y posiciones específicas: en `attn.o_proj` con peso máximo 0,98 en la posición 44,28 y peso mínimo 0,62 a distancia 13,71; en `mlp.down_proj` con peso máximo 1,14 en la posición 49,04 y peso mínimo 0,90 a distancia 37,45. El índice de dirección es 50 y la decadencia de dirección 0,68. El resultado es una reducción de rechazos de 98/100 a 73/100 con una divergencia KL de 0,0750 respecto al modelo original.
+La información pública del autor no detalla el volumen de datos de ajuste, la composición del dataset ni si hubo RLHF adicional. Las referencias arXiv incluidas en los tags (2309.00071 y 2407.10671) corresponden a trabajos sobre evaluación de seguridad y al informe técnico de Qwen2, respectivamente, no a un paper propio de esta variante. No se documentan innovaciones de decodificación especulativa ni atención lineal; las capacidades técnicas son las heredadas del modelo base.
 
 ## Capacidades
 
-- Generación de texto y conversación multi-turno con plantilla de chat (`apply_chat_template`).
-- Razonamiento, matemáticas y generación de código, heredados del Qwen2.5-32B-Instruct, que incluye modelos expertos especializados en estos dominios durante el entrenamiento.
-- Seguimiento de instrucciones y resistencia a la diversidad de system prompts, útil para role-play y configuración de condiciones en chatbots.
-- Comprensión y generación de datos estructurados (tablas, JSON) y textos largos de más de 8K tokens.
-- Capacidad multilingüe del modelo base (más de 29 idiomas), aunque esta variante declara únicamente inglés en su model card.
-- Reducción del comportamiento de rechazo: responde a peticiones que el modelo original declinaría, manteniendo coherencia general (KL 0,0750).
-- Tool calling y function calling: no se documenta explícitamente en la información disponible para esta variante; el modelo base Qwen2.5-Instruct lo soporta, pero no se confirma aquí.
-- Modo thinking, visión o audio: no disponible en esta variante (es un modelo de texto).
+- Generación de texto conversacional multi-turno en inglés.
+- Razonamiento general, matemáticas y código heredados de Qwen2.5-32B-Instruct.
+- Respuesta a instrucciones sin los rechazos típicos del modelo alineado (comportamiento "uncensored"/"decensored").
+- Soporte de tool calling y function calling heredado del modelo base (formato Qwen).
+- Capacidad de razonamiento multi-paso y uso como agente, en la medida en que lo permite la base.
+- Capacidades multilingües limitadas a las del modelo base, aunque la ficha solo declara inglés.
+- No se documenta modo "thinking" explícito, visión ni audio.
 
 ## Casos de uso
 
-- Investigación sobre alineación y seguridad: el modelo permite estudiar el comportamiento de rechazo y la ablación de direcciones comparando sus respuestas con las del Qwen2.5-32B-Instruct original, con una métrica objetiva de divergencia KL (0,0750) y tasa de rechazos (73/100 frente a 98/100).
-- Generación creativa sin restricciones excesivas: escritura de ficción, guiones o narrativa con temáticas sensibles donde el modelo original se negaría, aprovechando la reducción de rechazos y el contexto de hasta 131.072 tokens para tramas largas.
-- Role-play y simulación de personajes: la resistencia a system prompts diversos del Qwen2.5 y la menor tasa de negativas permiten mantener personajes con condiciones de rol complejas en conversaciones multi-turno.
-- Procesamiento de documentos largos en inglés: análisis de contratos, informes o artículos de hasta 131.072 tokens (con YaRN) para extracción de información y resumen, aprovechando la ventana extendida y la comprensión de datos estructurados.
-- Generación de código en pipelines internos: el modelo hereda las capacidades de código del Qwen2.5-32B-Instruct y puede integrarse en flujos de generación y revisión de código donde se requiera evitar negativas ante peticiones técnicas legítimas.
-- Evaluación comparativa de modelos decensored: como referencia en estudios que comparan técnicas de ablación (Heretic SOM frente a otras), gracias a los parámetros de ablación publicados y a las métricas de rechazo y KL.
-- Chatbot de dominio controlado: despliegue en entornos internos con contenido sensible (por ejemplo,模拟 de escenarios de seguridad) donde se necesita que el modelo no rechace sistemáticamente las consultas.
+- Investigación sobre alineación y seguridad: comparar las respuestas de esta variante con las del Qwen2.5-32B-Instruct original para estudiar qué comportamientos se suprimen y con qué coste en calidad, usando el mismo prompt en ambos modelos.
+- Generación creativa sin filtros: escritura de ficción, guiones o narrativa con temáticas adultas o controvertidas donde el modelo base rechazaría la petición, aprovechando los 32B de parámetros para mantener coherencia en textos largos.
+- Role-play y simulación de personajes: diálogos multi-turno con contexto extenso (hasta 131k tokens) para mantener personalidad y memoria de conversación en sesiones largas.
+- Red teaming y evaluación de robustez: generar respuestas a prompts adversarios para construir datasets de evaluación de filtros y clasificadores de seguridad en pipelines de moderación.
+- Generación de código en entornos controlados: tareas de programación donde se quiere evitar negativas ante peticiones de análisis de vulnerabilidades o exploits con fines defensivos, con revisión humana obligatoria.
+- Fine-tuning posterior: servir como base para ajustes específicos de dominio donde las negativas del modelo alineado interfieren con el dataset, siempre que la licencia y las condiciones del autor lo permitan.
 
 ## Benchmarks y rendimiento
 
-| Metrica | Este modelo | Qwen2.5-32B-Instruct original |
-|---|---|---|
-| Rechazos (refusals) | 73/100 | 98/100 |
-| Divergencia KL | 0,0750 | 0 (por definición) |
-
-No se han publicado en la información disponible resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, etc.) para esta variante. El autor remite al blog de Qwen2.5 para los resultados del modelo base.
+No se han publicado resultados de benchmarks en la informacion disponible. El autor no incluye métricas propias y no debe asumirse que el rendimiento coincide con el del Qwen2.5-32B-Instruct original; la abliteration suele degradar ligeramente tareas de razonamiento y aumentar la tasa de respuestas dañinas.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia en precisión completa (BF16/FP16): aproximadamente 65,5 GB de pesos, por lo que se necesitan al menos 2 GPU de 40 GB (A100 40GB) o una GPU de 80 GB (A100 80GB, H100 80GB) para cargar el modelo sin cuantizar.
-- Cuantización a 8 bits: alrededor de 33 GB, cabe en una A100 40GB o en dos RTX 4090 de 24 GB.
-- Cuantización a 4 bits: alrededor de 17-18 GB, cabe en una RTX 4090 (24 GB) o RTX 3090 (24 GB).
-- GPU recomendadas: A100 80GB, H100 80GB para producción sin cuantizar; A100 40GB o 2x RTX 4090 para 8 bits; RTX 4090/3090 para 4 bits.
-- Opciones de despliegue: transformers (recomendado con versión reciente, `transformers>=4.37.0`), vLLM (recomendado por Qwen para producción, con soporte de YaRN estático), text-generation-inference (el repo incluye el tag `text-generation-inference` y `endpoints_compatible`). No se listan GGUF ni Ollama en la información disponible.
-- Latencia y throughput: no disponible en la información proporcionada; Qwen remite a su benchmark de velocidad para el modelo base.
+- VRAM para inferencia en FP16/BF16: aproximadamente 65,5 GB solo para pesos, más overhead de KV cache; se recomienda 80 GB (A100 80GB, H100 80GB) para contexto largo.
+- Cuantización INT8: ~33 GB, viable en 2×RTX 4090 (48 GB) o una A6000 48GB con contexto moderado.
+- Cuantización INT4 (GPTQ/AWQ/GGUF Q4): ~18-20 GB, cabe en una RTX 4090 24GB o RTX 3090 con contexto reducido.
+- Consumer GPU: sí con cuantización 4-bit en GPUs de 24 GB; en 16 GB (RTX 4080) solo con cuantizaciones más agresivas y contexto corto.
+- Despliegue: transformers, vLLM, TGI (el repo incluye tag text-generation-inference), llama.cpp/Ollama tras conversión a GGUF.
+- Latencia y throughput: no disponibles; dependen fuertemente del hardware y la cuantización.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Notas |
+| Modelo | Parámetros | Contexto | Licencia | Notas |
 |---|---|---|---|---|
-| Qwen2.5-32B-Instruct-SOM-heretic (este) | 32,5B | 131.072 tokens (32.768 por defecto, YaRN) | Apache 2.0 | Variante decensored con ablación SOM; rechazos 73/100, KL 0,0750 |
-| Qwen/Qwen2.5-32B-Instruct | 32,5B | 131.072 tokens | Apache 2.0 | Modelo base original; rechazos 98/100; referencia de rendimiento estándar |
-| Otras variantes abliterated de Qwen2.5-32B-Instruct | 32,5B | 131.072 tokens | Apache 2.0 (heredada) | No disponible en la información proporcionada; no se detallan métricas comparables |
-
-No se dispone de datos de benchmarks estándar ni de otras variantes decensored comparables en la información proporcionada para establecer una comparación de rendimiento más amplia.
+| Qwen2.5-32B-Instruct-SOM-heretic | 32,7B | 131k (heredado) | Apache 2.0 (gated) | Variante abliterated, solo inglés declarado |
+| Qwen/Qwen2.5-32B-Instruct | 32,7B | 131k | Apache 2.0 | Modelo base alineado, multilingüe, referencia de calidad |
+| Meta Llama 3.3 70B Instruct | 70B | 128k | Llama 3.3 Community License | Mayor tamaño y calidad, licencia con restricciones |
+| Mistral Small 3 (24B) | 24B | 32k | Apache 2.0 | Alternativa abierta de menor tamaño y contexto |
 
 ## Limitaciones y advertencias
 
-- La ablación reduce la tasa de rechazos de 98/100 a 73/100, pero no la elimina por completo; aún puede negarse ante ciertas peticiones.
-- La divergencia KL de 0,0750 respecto al original implica cambios en la distribución de salida que pueden afectar a la calidad en tareas sensibles; no se han publicado evaluaciones exhaustivas de regresión.
-- La model card declara únicamente el idioma inglés (`en`), aunque el modelo base soporta más de 29 idiomas; el comportamiento multilingüe tras la ablación no está verificado.
-- Riesgo de alucinación inherente al modelo base, no evaluado específicamente en esta variante.
-- Sesgos conocidos del Qwen2.5-32B-Instruct original, no mitigados por la ablación; la reducción de rechazos puede exponer contenido sesgado o inapropiado en producción.
-- Licencia Apache 2.0, que permite uso comercial, pero el despliegue de un modelo decensored conlleva responsabilidad legal y ética sobre el contenido generado; se recomienda revisión y filtrado externos.
-- El contexto por defecto en `config.json` es de 32.768 tokens; para aprovechar los 131.072 hay que configurar YaRN, y vLLM solo soporta YaRN estático, lo que puede degradar el rendimiento en textos cortos.
-- El repo no incluye cuantizaciones GGUF ni versiones ligeras; el despliegue en hardware de consumo requiere cuantizar manualmente.
-- Fecha de creación del repo: 2026-11-05; con 0 descargas y 0 likes, no hay validación comunitaria ni informes de uso en producción.
+- Modelo "uncensored": elimina rechazos de seguridad, por lo que puede generar contenido dañino, ilegal o sexualmente explícito; no apto para producción orientada al usuario final sin moderación externa.
+- La abliteration puede degradar capacidades de razonamiento, matemáticas y código respecto al modelo base; no hay benchmarks que lo cuantifiquen.
+- Riesgo elevado de alucinación, como en cualquier LLM de 32B, sin mitigación específica documentada.
+- Solo declara inglés; el multilingüe del base puede verse afectado por el ajuste.
+- Licencia Apache 2.0 declarada, pero el acceso es gated y las condiciones del autor pueden imponer restricciones adicionales; verificar antes de uso comercial.
+- Procedencia y metodología de entrenamiento poco documentadas (sin paper ni dataset público), lo que dificulta la reproducibilidad.
+- Contexto de 131k heredado no confirmado explícitamente en la ficha del autor; validar empíricamente.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/richardyoung/Qwen2.5-32B-Instruct-SOM-heretic
+- Hugging Face: https://huggingface.co/richardyoung/Qwen2.5-32B-Instruct-SOM-heretic
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-32B-Instruct
-- Licencia del modelo base: https://huggingface.co/Qwen/Qwen2.5-32B-Instruct/blob/main/LICENSE
-- Heretic (herramienta de decensoring): https://heretic-project.org
-- Blog de Qwen2.5: https://qwenlm.github.io/blog/qwen2.5/
-- GitHub de Qwen2.5: https://github.com/QwenLM/Qwen2.5
-- Documentación de Qwen: https://qwen.readthedocs.io/en/latest/
-- Documentación de despliegue con vLLM: https://qwen.readthedocs.io/en/latest/deployment/vllm.html
-- Benchmark de velocidad de Qwen: https://qwen.readthedocs.io/en/latest/benchmark/speed_benchmark.html
-- Paper de YaRN: https://arxiv.org/abs/2309.00071
-- Paper de Qwen2 (arxiv:2407.10671): https://arxiv.org/abs/2407.10671
+- Informe técnico Qwen2 (arXiv:2407.10671): https://arxiv.org/abs/2407.10671
+- Referencia arXiv:2309.00071: https://arxiv.org/abs/2309.00071
+- Repositorio Qwen2.5: https://github.com/QwenLM/Qwen2.5

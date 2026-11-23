@@ -67,11 +67,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "mlx-community (MLX Community) - Hugging Face",
-      "url": "https://huggingface.co/mlx-community",
-      "snippet": "Org profile for MLX Community on Hugging Face, the AI community building the future."
-    }
-  ]
+  "sources": []
 }

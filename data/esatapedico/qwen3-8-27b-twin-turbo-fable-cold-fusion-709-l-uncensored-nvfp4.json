@@ -62,31 +62,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Citavi - Literaturverwaltung und Wissensorganisation",
-      "url": "https://www.citavi.com/de?EPU=false",
-      "snippet": "Citavi ist das einzige Literaturverwaltungsprogramm, mit dem Teams ihre Daten auf dem eigenen Server anstatt in der Cloud …"
-    },
-    {
-      "title": "Citavi Web ist da! | Citavi - Literaturverwaltung und Wissensorganisation",
-      "url": "https://www.citavi.com/de/citavi-web-release",
-      "snippet": "Mit Citavi Web können Sie überall arbeiten, wo Sie eine Internetverbindung haben – auf jedem Betriebssystem, sei es Mac OS, …"
-    },
-    {
-      "title": "Citavi 6: Handbuch",
-      "url": "https://www1.citavi.com/sub/manual6/de/installing_on_a_pc.html",
-      "snippet": "Sie können Citavi entweder lokal auf einem PC, einem Netzwerklaufwerk oder einem Terminalserver installieren. Wenn Sie Citavi in …"
-    },
-    {
-      "title": "Instalar Citavi y comprobar si hay actualizaciones disponibles ...",
-      "url": "https://www1.citavi.com/sub/manual6/es/installing_on_a_pc.html",
-      "snippet": "Puede instalar Citavi en su PC, en una unidad de red o en un servidor de terminal. Si quiere usar Citavi en un Mac con una máquina …"
-    },
-    {
-      "title": "Citavi 7.1 Now Available",
-      "url": "https://ghost.citavi.com/citavi-7-1-now-available/",
-      "snippet": "Aug 12, 2025 · We are excited to announce the release of Citavi 7.1. This release builds on the foundation we set with Citavi 7, …"
-    }
-  ]
+  "sources": []
 }

@@ -44,31 +44,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "How to See All Bing Related Searches on Any Device",
-      "url": "https://rottenwifi.com/how-to-see-all-bing-related-searches/",
-      "snippet": "Jul 1, 2026 · Learn where Bing related searches appear, how to expand them, and what to do when suggestions do not show on …"
-    },
-    {
-      "title": "Search - Microsoft Bing",
-      "url": "https://www.bing.com/",
-      "snippet": "Search with Microsoft Bing and use the power of AI to find information, explore webpages, images, videos, maps, and more. A smart …"
-    },
-    {
-      "title": "Bing",
-      "url": "https://www.bing.com/?lc=en-US&brdr=1",
-      "snippet": "Bing is an AI-powered search engine for finding information, exploring media, and navigating maps."
-    },
-    {
-      "title": "Microsoft разработала приложение, которое переключает …",
-      "url": "https://habr.com/ru/news/1074250/",
-      "snippet": "Aug 25, 2026 · Microsoft создала приложение, которое переключает поисковую систему по умолчанию на Bing во всех …"
-    },
-    {
-      "title": "Bing",
-      "url": "https://www.bing.com/version",
-      "snippet": "Bing ... Versions"
-    }
-  ]
+  "sources": []
 }

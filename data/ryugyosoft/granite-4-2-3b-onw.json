@@ -50,31 +50,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "ibm-granite/granite-4.2-3b · Hugging Face",
-      "url": "https://huggingface.co/ibm-granite/granite-4.2-3b",
-      "snippet": "Granite-4.2-3B supports tool calling with integrated reasoning — the model thinks about which tool to call and why before making the call. Tools are defined using the OpenAI function definition schema."
-    },
-    {
-      "title": "Granite 4.2 - IBM",
-      "url": "https://www.ibm.com/granite/docs/models/granite4-2",
-      "snippet": "Granite 4.2 Dense reasoning language model family in 3B, 8B, and 30B sizes with built-in chain-of-thought thinking, flexible thinking modes, and reasoning-augmented tool calling."
-    },
-    {
-      "title": "Granite 4.2 Language Models - a ibm-granite Collection",
-      "url": "https://huggingface.co/collections/ibm-granite/granite-42-language-models",
-      "snippet": "Efficient reasoning and thinking language models for multilingual generation, coding, and AI assistant workflows."
-    },
-    {
-      "title": "Granite 4.2 brings native reasoning to enterprise agents",
-      "url": "https://research.ibm.com/blog/introducing-granite-4-2",
-      "snippet": "In enterprise workflows, tasks can be ambiguous and involve many steps to complete. An AI model must be able to follow complex instructions, retrieve the correct information, choose the right tools, act in the right sequence, and verify the result. Reasoning helps Granite 4.2 navigate this process more reliably."
-    },
-    {
-      "title": "Granite - IBM",
-      "url": "https://www.ibm.com/granite",
-      "snippet": "IBM Granite is a family of open, trusted AI models for business, offering efficient language, vision, speech and guardrail models you can customize and deploy."
-    }
-  ]
+  "sources": []
 }

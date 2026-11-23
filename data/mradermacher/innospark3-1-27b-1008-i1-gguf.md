@@ -2,105 +2,93 @@
 
 ## Resumen
 
-InnoSpark3.1-27B-1008 es un modelo de lenguaje de 27.320.697.856 parametros (unos 27,3 mil millones) desarrollado por sii-research, orientado a tareas de educacion y tutoria segun los tags del repositorio (education, tutoring). El repositorio analizado no contiene los pesos originales, sino la cuantizacion GGUF realizada por mradermacher bajo el esquema i1 (imatrix/weighted), lo que permite ejecutar el modelo en hardware de consumo mediante llama.cpp y derivados.
+InnoSpark3.1-27B-1008-i1-GGUF es una cuantizacion en formato GGUF del modelo sii-research/InnoSpark3.1-27B-1008, un modelo de lenguaje de 27.320.697.856 parametros (aproximadamente 27,3 mil millones) orientado a tareas de educacion y tutoria. El trabajo de cuantizacion lo realiza mradermacher, un conocido publicador de versiones GGUF en Hugging Face, que genera variantes con y sin imatrix para facilitar su despliegue en hardware de consumo mediante llama.cpp y herramientas compatibles.
 
-La relevancia de esta ficha esta en que se trata de una cuantizacion reciente (creada el 9 de octubre de 2026) de un modelo de 27B con licencia Apache 2.0, lo que facilita su uso comercial y su despliegue local. El pipeline declarado es reinforcement-learning, y los tags apuntan a la familia Qwen, aunque la model card disponible no detalla la arquitectura interna ni la longitud de contexto.
+El modelo base esta etiquetado como derivado de la familia Qwen y entrenado con tecnicas de aprendizaje por refuerzo (reinforcement learning), lo que sugiere un ajuste orientado a mejorar la calidad de las respuestas en contextos conversacionales y de ensenanza. Su licencia Apache 2.0 permite uso comercial sin restricciones adicionales, lo que lo hace atractivo para productos educativos que necesiten desplegar inferencia local o en servidores propios.
 
-Se advierte de que la informacion publica es muy limitada: la model card del cuantizador es generica y no incluye datos de entrenamiento, benchmarks ni especificaciones de contexto. Todo aquello que no aparece en la informacion proporcionada se marca como "no disponible" en lugar de estimarse.
+La relevancia de esta ficha radica en que combina un tamano manejable (27B) con cuantizaciones que van desde 11 GB hasta 22,5 GB, permitiendo ejecutar el modelo en GPUs de consumo de gama alta o en configuraciones multi-GPU. Sin embargo, la informacion publica disponible es limitada: la model card del repositorio cuantizado se centra en los aspectos tecnicos de las cuantizaciones y no detalla la arquitectura interna ni los datos de entrenamiento del modelo original.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible en detalle; los tags del repositorio indican familia Qwen (transformer) |
-| Parametros totales | 27.320.697.856 (unos 27,3B) |
+| Arquitectura | Transformer (derivado de Qwen, segun tags del repositorio); detalles internos no disponibles |
+| Parametros totales | 27.320.697.856 (27,3B) |
 | Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | i1-Q2_K (11,0 GB), i1-IQ3_M (12,9 GB), i1-Q4_K_S (15,9 GB) en la tabla del README; la lista completa de cuants del repositorio incluye Q2_K, Q2_K_S, IQ1_S, IQ1_M, IQ2_XXS, IQ2_XS, IQ2_S, IQ2_M, IQ3_XXS, IQ3_XS, IQ3_S, IQ3_M, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, IQ4_NL, Q4_0, Q4_1, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K y el fichero imatrix |
-| Idiomas soportados | zh, en |
-| Licencia | apache-2.0 |
-| Formato de pesos | GGUF (cuantizado); el modelo base original esta en formato transformers/safetensors |
-| Tamano del repositorio | 39,5 GB |
-| Modelo base | sii-research/InnoSpark3.1-27B-1008 |
-| Fecha de creacion | 2026-10-09 |
+| Tipos de cuantizacion | i1-Q2_K, i1-Q3_K_S, i1-IQ3_S, i1-IQ3_M, i1-Q3_K_M, i1-Q3_K_L, i1-IQ4_XS, i1-Q4_0, i1-Q4_K_S, i1-Q4_K_M, i1-Q4_1, i1-Q5_K_S, i1-Q5_K_M, i1-Q6_K, ademas de fichero imatrix |
+| Idiomas soportados | chino (zh) e ingles (en) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (cuantizaciones i1 con imatrix); el modelo base esta en safetensors |
 
 ## Arquitectura y entrenamiento
 
-La informacion disponible no describe la arquitectura interna del modelo. Los tags del repositorio incluyen "qwen", lo que sugiere que se trata de un transformer de la familia Qwen, pero la model card no confirma si es un modelo denso o de mezcla de expertos, ni detalla el mecanismo de atencion ni la ventana de contexto efectiva. El pipeline declarado en Hugging Face es reinforcement-learning, y los tags education y tutoring indican que el ajuste posterior al preentrenamiento esta orientado a tareas de ensenanza y asistencia educativa, presumiblemente mediante tecnicas de RL (RLHF, DPO u otras variantes no especificadas).
+La informacion disponible no detalla la arquitectura interna del modelo base. Los tags del repositorio indican que se trata de un transformer de la familia Qwen, con pipeline de reinforcement learning y etiquetas de educacion y tutoria. El nombre del modelo (InnoSpark3.1-27B-1008) sugiere una version 3.1 con 27B de parametros y una fecha de referencia (1008), pero no se especifica el numero de tokens de entrenamiento, la composicion del dataset ni si se emplearon tecnicas como RLHF o DPO mas alla de la mencion generica a reinforcement learning.
 
-El README del cuantizador indica ademas que se trata de un "vision model", de modo que podria incorporar capacidades multimodales; no obstante, el propio texto matiza que los ficheros mmproj, si existen, estarian en el repositorio estatico de cuantizaciones, y no se aporta confirmacion adicional. La model card no incluye numero de tokens de entrenamiento, composicion del dataset, ni detalles sobre las etapas de alineacion.
+El repositorio cuantizado documenta el proceso de cuantizacion: se generaron cuantizaciones ponderadas con imatrix (i1) a partir del modelo original, cubriendo desde Q2_K hasta Q6_K, con variantes IQ para los rangos bajos y medios. El fichero imatrix incluido permite crear cuantizaciones propias. No se dispone de informacion sobre innovaciones tecnicas adicionales como decodificacion especulativa o atencion lineal.
 
 ## Capacidades
 
-- Generacion de texto conversacional en chino (zh) e ingles (en), segun los idiomas declarados.
-- Orientacion a tareas de educacion y tutoria, segun los tags education y tutoring del repositorio.
-- Posible soporte de entrada visual: el README del cuantizador describe el modelo como "vision model", aunque no se detalla ni se confirma en los metadatos del repositorio.
-- No se documenta soporte de tool calling ni de function calling en la informacion disponible.
-- No se documenta soporte explicito de agentes o razonamiento multi-paso en la informacion disponible.
-- No se documenta modo "thinking", soporte de audio ni capacidades especiales adicionales.
+- Generacion de texto conversacional en chino e ingles, orientada a contextos educativos y de tutoria.
+- Razonamiento y respuesta a preguntas, segun el pipeline de reinforcement learning declarado.
+- Capacidades multilingues limitadas a chino e ingles; no se declaran otros idiomas.
+- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
+- Capacidades especiales (thinking mode, vision, audio): no disponible en la informacion proporcionada.
+- Compatibilidad con endpoints (tag endpoints_compatible), lo que sugiere integracion con APIs de inferencia.
 
 ## Casos de uso
 
-- Tutoria academica asistida: el modelo esta etiquetado como education y tutoring, por lo que encaja en asistentes que guian al estudiante en la resolucion de ejercicios paso a paso y explican conceptos en chino o ingles.
-- Correccion de ejercicios y feedback formativo: generar comentarios sobre respuestas abiertas en plataformas de aprendizaje, con la ventaja de poder ejecutarse en local y evitar el envio de datos de menores a servicios externos.
-- Generacion de material didactico: redaccion de enunciados, resumenes y guiones de clase en zh/en a partir de un temario proporcionado en el prompt.
-- Asistente conversacional bilingue chino-ingles: atencion a usuarios de ambas comunidades linguisticas con un unico modelo, util en plataformas educativas internacionales.
-- Despliegue local en equipos de investigacion: al existir cuantizaciones GGUF desde 11,0 GB, puede ejecutarse en estaciones de trabajo con GPU de consumo para experimentos de ajuste fino o evaluacion sin depender de API externas.
-- Evaluacion comparativa de tecnicas de RL: al declarar el pipeline reinforcement-learning, sirve como punto de partida para estudiar el efecto del ajuste por refuerzo en modelos de ~27B.
-- Procesamiento de documentos con posible componente visual: si finalmente se confirma la naturaleza multimodal y se publican los ficheros mmproj, podria usarse para tareas de lectura de material escaneado; este caso queda condicionado a la disponibilidad de dichos ficheros.
+- Tutoria educativa automatizada: el modelo puede gestionar dialogos de ensenanza en chino e ingles, explicando conceptos y resolviendo dudas de estudiantes, gracias a su ajuste con reinforcement learning orientado a educacion.
+- Asistente de estudio en local: con cuantizaciones de 15-17 GB (Q4_K_M), puede desplegarse en una GPU de consumo de gama alta para ofrecer asistencia sin conexion, util en entornos con requisitos de privacidad.
+- Generacion de material didactico: produccion de ejercicios, resumenes y explicaciones en chino e ingles para plataformas de aprendizaje, aprovechando la licencia Apache 2.0 para uso comercial.
+- Chatbot de atencion al estudiante: integracion en portales academicos para responder consultas frecuentes en ambos idiomas, con despliegue mediante llama.cpp u Ollama en servidores propios.
+- Investigacion en NLP educativo: uso como modelo base para experimentos de ajuste fino en tareas de tutoria, dado su tamano manejable y su licencia permisiva.
+- Prototipado rapido con GGUF: las cuantizaciones Q4_K_S y Q4_K_M permiten iterar en estaciones de trabajo con una sola GPU, reduciendo costes frente a alternativas de mayor tamano.
+- Despliegue en entornos con restricciones de red: al ser un modelo local en formato GGUF, puede ejecutarse en infraestructuras aisladas para aplicaciones educativas sensibles.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card del repositorio de cuantizacion no incluye tablas de MMLU, HumanEval, GSM8K ni ninguna otra metrica, y la busqueda web realizada no ha devuelto resultados relacionados con el modelo (los unicos resultados obtenidos corresponden a codigos de un videojuego de Roblox, sin relacion con esta ficha). No se dispone por tanto de comparaciones de rendimiento frente a otros modelos.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-Las cifras de VRAM para los cuants con tamano publicado son las siguientes, calculadas a partir del tamano de fichero declarado en el README:
-
-- i1-Q2_K: 11,0 GB en disco; requiere del orden de 12-13 GB de VRAM para inferencia, segun longitud de contexto.
-- i1-IQ3_M: 12,9 GB en disco; requiere del orden de 14-15 GB de VRAM.
-- i1-Q4_K_S: 15,9 GB en disco, descrito por el autor como "optimal size/speed/quality"; requiere del orden de 17-18 GB de VRAM.
-- Cuantizaciones intermedias no publicadas en la tabla del README (Q5_K_M, Q6_K, Q8, entre otras): el tamano exacto no esta disponible en la informacion proporcionada.
-- Pesos en precision completa (FP16/BF16): estimacion aritmetica de aproximadamente 54,6 GB (27,32B parametros a 2 bytes), mas overhead de activaciones y cache KV. Requiere GPU de 80 GB o reparto en multiples GPU.
-- Cache KV: no estimable con precision, ya que la longitud de contexto no esta disponible.
-
-Recomendaciones de despliegue:
-
-- GPU de consumo: las cuantizaciones de 11,0 a 15,9 GB caben en tarjetas de 16 GB (RTX 4060 Ti 16 GB, RTX 4080) y de 24 GB (RTX 3090, RTX 4090) con margen para cache KV. La i1-Q4_K_S es ajustada en 16 GB y holgada en 24 GB.
-- GPU profesionales: A100 40/80 GB, H100 y similares permiten precision completa o cuants altos con contexto largo.
-- Runtimes compatibles con GGUF: llama.cpp, Ollama, LM Studio, kobold.cpp y servidores basados en llama.cpp. Para los pesos originales en safetensors pueden usarse vLLM o TGI, aunque no se documenta soporte especifico en la informacion disponible.
-- Latencia y throughput: no disponibles. El autor no publica mediciones de tokens por segundo.
+- VRAM estimada para inferencia segun cuantizacion: i1-Q2_K ~11 GB; i1-IQ3_S ~12,7 GB; i1-Q3_K_M ~13,6 GB; i1-IQ4_XS ~15,4 GB; i1-Q4_K_S ~15,9 GB; i1-Q4_K_M ~16,9 GB; i1-Q5_K_M ~19,6 GB; i1-Q6_K ~22,5 GB. A estas cifras hay que sumar la memoria para el contexto KV cache, que depende de la longitud de contexto configurada (no disponible).
+- GPU recomendadas: para Q4_K_M (16,9 GB) se necesita una GPU con al menos 20-24 GB de VRAM, como RTX 3090, RTX 4090, A10G o L4; para Q6_K (22,5 GB) se recomienda RTX 4090 de 24 GB, A100 40 GB o H100. Para cuantizaciones Q2/Q3 puede bastar una GPU de 12-16 GB (RTX 3060 12 GB, RTX 4070 Ti, etc.) con contexto reducido.
+- Cabe en GPU de consumo: si, en RTX 3090/4090 para cuantizaciones Q4-Q5; en GPUs de 12 GB solo con cuantizaciones Q2/Q3 y contexto limitado.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, text-generation-webui y cualquier runtime compatible con GGUF. El tag endpoints_compatible sugiere compatibilidad con APIs de inferencia tipo OpenAI.
+- Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-No se dispone de informacion verificada sobre modelos comparables en la documentacion proporcionada (ni parametros, ni contexto, ni licencia de las alternativas). La model card del cuantizador no incluye comparaciones, y la busqueda web no ha devuelto resultados relevantes.
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|
+| InnoSpark3.1-27B-1008-i1-GGUF | 27,3B | no disponible | Apache 2.0 | GGUF | Cuantizaciones i1 con imatrix; idiomas zh/en; orientado a educacion |
+| Qwen2.5-32B-Instruct | 32,5B | 128K (segun documentacion publica de Qwen) | Apache 2.0 | safetensors, GGUF | Alternativa de tamano similar de la familia Qwen, con contexto amplio declarado |
+| Gemma-2-27B-it | 27B | 8K (segun documentacion publica de Google) | Gemma license | safetensors, GGUF | Tamano comparable, licencia mas restrictiva |
+| Mistral-Small-24B-Instruct | 24B | 32K (segun documentacion publica de Mistral) | Apache 2.0 | safetensors, GGUF | Ligeramente menor, multilingue |
 
-| Modelo | Parametros | Contexto | Licencia | Disponibilidad |
-|---|---|---|---|---|
-| InnoSpark3.1-27B-1008 (i1-GGUF) | 27,3B | no disponible | apache-2.0 | Hugging Face, formato GGUF |
-| Alternativas de ~27-32B de la familia Qwen | no disponible | no disponible | no disponible | no disponible |
-| Alternativas de ~24-27B de otras familias | no disponible | no disponible | no disponible | no disponible |
+Nota: los datos de los modelos comparativos provienen de documentacion publica general y no de la informacion proporcionada en esta ficha; deben verificarse en sus respectivas model cards.
 
 ## Limitaciones y advertencias
 
-- Sesgos conocidos: no disponibles. No hay evaluaciones de sesgo publicadas para este modelo en la informacion proporcionada.
-- Riesgo de alucinacion: no cuantificado. Al ser un modelo ajustado con RL para tutoria, puede generar explicaciones plausibles pero incorrectas en dominios especializados, algo critico en contextos educativos.
-- Idiomas: solo se declaran chino e ingles. No hay evidencia de soporte de castellano ni de otras lenguas, por lo que su uso en espanol no esta garantizado.
-- Longitud de contexto desconocida: no es posible planificar aplicaciones con documentos largos ni estimar el consumo de cache KV.
-- Naturaleza del repositorio: este repositorio contiene exclusivamente cuantizaciones GGUF realizadas por un tercero (mradermacher). Para evaluar el modelo original debe consultarse sii-research/InnoSpark3.1-27B-1008.
-- Las cuantizaciones de 2 y 3 bits (i1-Q2_K, i1-IQ3_M) degradan la calidad respecto a los pesos originales; el propio autor recomienda IQ3_XXS frente a Q2_K y senala Q4_K_S como el equilibrio optimo.
-- Capacidad multimodal no confirmada: el README menciona que es un modelo de vision y que los ficheros mmproj, si existen, estarian en el repositorio estatico. No debe asumirse soporte de imagen sin verificarlo.
-- Licencia Apache 2.0: permite uso comercial y modificacion, pero conviene revisar la licencia y los terminos del modelo base original (sii-research/InnoSpark3.1-27B-1008) por si imponen condiciones adicionales.
-- Estado de adopcion: 0 descargas y 0 "me gusta" en el momento de la consulta, sin evidencia de validacion por parte de la comunidad.
-- Advertencia sobre la fecha: el repositorio esta fechado en octubre de 2026; conviene verificar si existe una revision posterior del modelo o de las cuantizaciones.
+- Idiomas limitados a chino e ingles; no se declara soporte de castellano, lo que limita su uso directo en productos en espanol.
+- No se dispone de informacion sobre sesgos conocidos, riesgo de alucinacion ni evaluaciones de seguridad del modelo base.
+- La longitud de contexto no esta documentada, lo que impide planificar aplicaciones con ventanas largas.
+- Las cuantizaciones de baja calidad (Q2_K, Q3) pueden degradar notablemente la calidad de las respuestas; se recomienda Q4_K_M o superior para produccion.
+- El modelo base esta orientado a educacion y tutoria; su rendimiento en tareas de codigo, matematicas avanzadas o agentes no esta verificado.
+- Aunque la licencia es Apache 2.0, conviene revisar la model card del modelo base (sii-research/InnoSpark3.1-27B-1008) por si hubiera terminos adicionales no reflejados en el repositorio cuantizado.
+- El repositorio cuantizado tiene 218,6 GB, por lo que la descarga completa de todas las variantes es costosa; se recomienda descargar solo la cuantizacion necesaria.
+- No hay garantias de soporte o mantenimiento por parte del autor de la cuantizacion.
 
 ## Enlaces
 
-- Repositorio de cuantizaciones i1 (este modelo): https://huggingface.co/mradermacher/InnoSpark3.1-27B-1008-i1-GGUF
-- Repositorio de cuantizaciones estaticas: https://huggingface.co/mradermacher/InnoSpark3.1-27B-1008-GGUF
-- Modelo base original: https://huggingface.co/sii-research/InnoSpark3.1-27B-1008
-- Pagina de resumen y descarga del cuantizador: https://hf.tst.eu/model#InnoSpark3.1-27B-1008-i1-GGUF
-- Peticiones de cuantizacion y preguntas frecuentes: https://huggingface.co/mradermacher/model_requests
-- Grafica comparativa de perplejidad entre tipos de cuantizacion (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png
-- Notas de Artefact2 sobre cuantizacion: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
-- Ejemplo de README de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Repositorio Hugging Face (cuantizado): https://huggingface.co/mradermacher/InnoSpark3.1-27B-1008-i1-GGUF
+- Modelo base: https://huggingface.co/sii-research/InnoSpark3.1-27B-1008
+- Cuantizaciones estaticas: https://huggingface.co/mradermacher/InnoSpark3.1-27B-1008-GGUF
+- Pagina de conveniencia del autor: https://hf.tst.eu/model#InnoSpark3.1-27B-1008-i1-GGUF
+- Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Grafico comparativo de cuantizaciones (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png
+- Notas de Artefact2 sobre cuantizaciones: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Solicitudes de cuantizacion del autor: https://huggingface.co/mradermacher/model_requests
+- nethype GmbH: https://www.nethype.de/

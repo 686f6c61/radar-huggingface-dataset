@@ -2,98 +2,93 @@
 
 ## Resumen
 
-WILLAY-GGUF es el repositorio de cuantizaciones en formato GGUF del modelo SZLHOLDINGS/WILLAY, generado por el usuario mradermacher (nethype GmbH). Se trata de una recopilación de pesos cuantizados estáticos, no de un modelo entrenado desde cero: el autor original del modelo base es SZLHOLDINGS, y las etiquetas de la model card apuntan a un ajuste fino supervisado (sft, trl, hf_jobs) dentro de un marco denominado governed-ai / doctrine-v11, con un componente explícito de "identity" (identidad) y nombre propio WILLAY.
+WILLAY es un modelo de lenguaje de tipo transformer con aproximadamente 494 millones de parámetros (494.032.768 según los pesos en safetensors), desarrollado por SZLHOLDINGS bajo una línea de trabajo que el autor etiqueta como "governed-ai" y "doctrine-v11". La ficha que nos ocupa, WILLAY-GGUF, no es el modelo original sino la colección de cuantizaciones GGUF publicadas por mradermacher, un conocido cuantizador de la comunidad de Hugging Face, a partir del modelo base SZLHOLDINGS/WILLAY. Su relevancia práctica reside en que permite ejecutar el modelo en hardware modesto mediante llama.cpp y derivados, algo imposible con los pesos originales en transformers para muchos usuarios.
 
-El modelo base tiene 494.032.768 parámetros (aproximadamente 494 M), un tamaño que lo sitúa en la categoría de modelos pequeños, apto para ejecución en CPU o en GPUs de gama baja. El repositorio GGUF ocupa 5,4 GB en total, pero cada cuantización individual es muy ligera: desde 0,4 GB en Q2_K/Q3_K_S hasta 1,1 GB en f16. La licencia declarada es Apache 2.0 y el único idioma declarado es el inglés (en).
+El modelo está entrenado exclusivamente en inglés y se distribuye con licencia Apache 2.0, lo que facilita su uso comercial sin restricciones adicionales. El tamaño del repositorio es de 5,4 GB e incluye un abanico amplio de cuantizaciones estáticas, desde Q2_K hasta f16, con pesos que van de 0,4 GB a 1,1 GB. No se dispone de información pública sobre la longitud de contexto, la composición exacta del dataset ni los detalles de entrenamiento más allá de las referencias a los datasets de doctrina citados en la model card.
 
-La relevancia de esta ficha es fundamentalmente práctica: al no existir resultados de benchmarks publicados ni especificaciones de contexto o arquitectura en la información disponible, el valor del repositorio reside en ofrecer hasta doce variantes de cuantización listas para desplegar con llama.cpp, Ollama o cualquier runtime compatible con GGUF, con un coste de hardware mínimo. La fecha de creación del repositorio que consta en los metadatos es 2026-09-13.
+La relevancia de esta ficha es doble: por un lado, documenta un modelo pequeño y ligero orientado a despliegues con recursos limitados; por otro, ilustra el flujo habitual de cuantización comunitaria, donde un tercero (mradermacher) publica versiones GGUF de un modelo base poco conocido. Conviene tratar la información disponible con cautela, ya que la model card original es muy escasa y no se han publicado benchmarks ni detalles técnicos verificables.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | no disponible (no especificada en la model card) |
-| Parametros totales | 494.032.768 (dato real de safetensors del modelo base) |
-| Parametros activos | no aplica (no hay indicios de que sea MoE) |
+| Arquitectura | Transformer (detalles no disponibles) |
+| Parámetros totales | 494.032.768 |
+| Parámetros activos | no disponible (no es MoE según la información disponible) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | f16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q4_K_M, Q4_K_S, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K, IQ4_XS |
-| Idiomas soportados | en (ingles) |
-| Licencia | apache-2.0 |
-| Formato de pesos | GGUF (este repositorio); el modelo base publica pesos en safetensors |
-| Tamano del repositorio | 5,4 GB (suma de todas las cuantizaciones) |
-| Modelo base | SZLHOLDINGS/WILLAY |
-| Cuantizado por | mradermacher (nethype GmbH) |
+| Tipos de cuantización | f16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q4_K_M, Q4_K_S, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K, IQ4_XS |
+| Idiomas soportados | inglés (en) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (cuantizaciones); safetensors en el modelo base |
 
 ## Arquitectura y entrenamiento
 
-La model card del repositorio GGUF no aporta información sobre la arquitectura del modelo base. Las únicas pistas disponibles son las etiquetas asociadas al modelo original: sft (supervised fine-tuning), trl (Transformer Reinforcement Learning), hf_jobs (entrenamiento ejecutado en la infraestructura de trabajos de Hugging Face), governed-ai, szl-holdings, doctrine-v11, identity y willay. Esto indica que el modelo base pasó por un proceso de ajuste fino supervisado, probablemente sobre un modelo preentrenado previo, y que existe una definición interna de "doctrina" (doctrine-v11) y de comportamiento identitario que condiciona sus respuestas.
+La información disponible no detalla la arquitectura interna más allá de que se trata de un transformer y de que el modelo base se distribuye con la librería transformers. No se especifican el número de capas, la dimensión oculta, el número de cabezas de atención ni si emplea alguna variante como atención lineal, decodificación especulativa o mezcla de expertos. El tamaño de 494 millones de parámetros sitúa al modelo en la categoría de modelos pequeños, comparable en escala a la familia GPT-2 large o a modelos tipo Qwen2-0.5B, aunque no se confirma ninguna equivalencia arquitectónica.
 
-No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset, si hubo fases de RLHF o DPO posteriores al SFT, ni sobre innovaciones técnicas concretas (atención lineal, decodificación especulativa, mezcla de expertos). Tampoco se documentan detalles del tokenizador ni la ventana de contexto máxima soportada. Las cuantizaciones de este repositorio son "static quants" (cuantización estática); el autor indica que en el momento de la publicación no había cuantizaciones ponderadas o basadas en imatrix disponibles.
+En cuanto al entrenamiento, la model card del modelo base cita tres datasets: SZLHOLDINGS/doctrine-v10-v11, SZLHOLDINGS/szl-1-doctrine-sft y SZLHOLDINGS/why-we-lead. No se indica el número de tokens de entrenamiento, la composición del corpus, ni si hubo fases de RLHF, DPO o ajuste supervisado más allá de la referencia a un dataset con sufijo "sft". Tampoco se documentan innovaciones técnicas destacables. La cuantización la ha realizado mradermacher con su pipeline habitual (quantize_version 2, convert_type hf) y no se han publicado cuantizaciones ponderadas o con imatrix para este modelo en el momento de la ficha.
 
 ## Capacidades
 
-- Generación de texto conversacional: el repositorio está etiquetado como "conversational" y "endpoints_compatible", lo que sugiere uso en diálogo multi-turno.
-- Ajuste por instrucciones: la etiqueta sft indica que el modelo fue afinado para seguir instrucciones, no solo para completar texto.
-- Comportamiento identitario gobernado: las etiquetas governed-ai, doctrine-v11 e identity apuntan a un condicionamiento explícito de la identidad y de las políticas de respuesta del modelo, presumiblemente con reglas de comportamiento definidas por SZLHOLDINGS.
-- Capacidades multilingües: limitadas al inglés según el campo language de la model card.
-- Tool calling / function calling: no disponible (no se documenta soporte).
-- Uso como agente o razonamiento multi-paso: no disponible (no se documenta).
-- Modo "thinking", visión o audio: no disponible (no se documenta).
-- Ejecución local eficiente: al ser un modelo de ~494 M de parámetros con cuantizaciones desde 0,4 GB, es viable en CPU y en GPUs integradas.
+- Generación de texto conversacional en inglés, según la etiqueta "conversational" del repositorio.
+- Razonamiento de propósito general y respuesta a instrucciones, presumiblemente derivado del ajuste SFT, aunque no se detalla su alcance.
+- No se documenta soporte de tool calling ni function calling.
+- No se documenta soporte explícito de agentes ni de razonamiento multi-paso.
+- Capacidad multilingüe limitada al inglés; no se declaran otros idiomas.
+- No se documentan capacidades de visión, audio ni modos de "thinking".
+- Compatible con endpoints (etiqueta "endpoints_compatible"), lo que sugiere uso en infraestructura de inferencia estándar.
 
 ## Casos de uso
 
-- Prototipado rápido de asistentes conversacionales en local: con la cuantización Q4_K_M (0,5 GB) el modelo se carga en cualquier portátil y permite iterar sobre prompts y flujos de diálogo sin coste de API.
-- Pruebas de integración de endpoints compatibles con OpenAI: la etiqueta endpoints_compatible sugiere que puede desplegarse detrás de una API estilo OpenAI para validar pipelines de cliente antes de migrar a un modelo mayor.
-- Filtrado o clasificación previa en pipelines de datos: al ser tan ligero, puede usarse como primera etapa para etiquetar, resumir o descartar texto antes de invocar un modelo grande, reduciendo coste por token.
-- Despliegue en dispositivos con recursos limitados: con Q4_K_S o Q2_K (0,4-0,5 GB) cabe en Raspberry Pi, mini-PC o contenedores con poca RAM, útil para demos offline o entornos sin conectividad.
-- Evaluación de comportamiento "gobernado": para investigadores interesados en cómo se implementan restricciones de identidad y doctrina en modelos pequeños, este checkpoint permite auditar respuestas bajo distintas condiciones de prompt.
-- Generación de texto asistida en inglés dentro de aplicaciones de escritorio: integrable mediante llama.cpp u Ollama en herramientas ofimáticas o editores para autocompletado y reescritura breve.
-- Base para experimentos de cuantización: las doce variantes publicadas (de Q2_K a f16) permiten estudiar la degradación de calidad por bits por peso en un modelo concreto.
+- Prototipado rápido en local: gracias a sus cuantizaciones de 0,4 a 0,6 GB, el modelo puede cargarse en un portátil convencional con llama.cpp u Ollama para experimentar con generación de texto sin depender de la nube.
+- Asistente conversacional ligero en inglés: su etiqueta "conversational" y su tamaño permiten integrarlo en chatbots de soporte básico o asistentes de documentación donde la latencia y el coste importan más que la profundidad del razonamiento.
+- Filtrado y clasificación de texto: un modelo de 494M puede emplearse para tareas de etiquetado, moderación o enrutamiento de consultas dentro de un pipeline mayor, actuando como primera etapa antes de un modelo más grande.
+- Generación de borradores y resúmenes cortos: adecuado para producir textos breves en inglés en entornos con recursos limitados, como dispositivos de borde o contenedores sin GPU.
+- Despliegue en entornos aislados o air-gapped: al ser GGUF y Apache 2.0, puede ejecutarse íntegramente en local sin conexión, lo que encaja en escenarios de cumplimiento estricto o investigación reproducible.
+- Educación e investigación sobre cuantización: el repositorio ofrece doce variantes de cuantización del mismo modelo, lo que lo convierte en un caso práctico para estudiar el impacto de Q2_K frente a Q8_0 en calidad y tamaño.
+- Base para fine-tuning ligero: su reducido número de parámetros permite ajustarlo en una sola GPU consumer, aunque la licencia y la falta de documentación sobre el dataset original deben evaluarse antes de usarlo en producción.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card del repositorio GGUF no incluye métricas de MMLU, HumanEval, GSM8K ni de ningún otro conjunto de evaluación, y la búsqueda web realizada no devolvió resultados relacionados con el modelo (los resultados obtenidos trataban sobre almacenamiento de frutas y no guardan relación con WILLAY).
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia (pesos en memoria, según los tamaños de archivo publicados): f16 ≈ 1,1 GB; Q8_0 ≈ 0,6 GB; Q6_K ≈ 0,6 GB; Q5_K_M / Q5_K_S ≈ 0,5 GB; Q4_K_M / Q4_K_S ≈ 0,5 GB; IQ4_XS ≈ 0,5 GB; Q3_K_L / Q3_K_M / Q3_K_S ≈ 0,4-0,5 GB; Q2_K ≈ 0,4 GB. Hay que añadir el consumo del contexto (KV cache), no cuantificado en estas cifras.
-- GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM es suficiente para las cuantizaciones bajas; tarjetas como RTX 3060, RTX 4060, RTX 4090, A100 o H100 funcionan sin problema, aunque están sobredimensionadas para este tamaño de modelo.
-- Cabe en GPU de consumo: sí, en todas las GPU de consumo actuales e incluso en iGPUs con memoria compartida suficiente.
-- Ejecución en CPU: viable y probablemente el escenario principal, dado el tamaño (0,4-1,1 GB de pesos); también cabe en dispositivos con 2-4 GB de RAM libre.
-- Opciones de despliegue: llama.cpp (formato nativo GGUF), Ollama, LM Studio, text-generation-webui, servidores compatibles con endpoints OpenAI. vLLM y TGI soportan GGUF de forma limitada o experimental, por lo que no es la vía recomendada para este repositorio.
-- Latencia y throughput: no disponible. No se han publicado mediciones de tokens por segundo ni de latencia para ninguna de las cuantizaciones.
+- VRAM estimada para inferencia: aproximadamente 0,5-0,7 GB con cuantizaciones Q4_K_M o Q5_K_M, y en torno a 1,2-1,5 GB con f16, incluyendo overhead de contexto y caché KV.
+- GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM es suficiente; una RTX 3060, RTX 4060 o incluso una GTX 1650 pueden ejecutar las cuantizaciones pequeñas sin problemas.
+- Cabe en GPU consumer: sí, en prácticamente todas las GPU dedicadas modernas y en muchas integradas con memoria unificada.
+- Despliegue: llama.cpp, Ollama, LM Studio, text-generation-webui y cualquier runtime compatible con GGUF. Para los pesos originales en safetensors, transformers con PyTorch.
+- Latencia y throughput: no disponibles de forma oficial; por el tamaño del modelo, se espera una generación de decenas de tokens por segundo en GPU consumer y de varios tokens por segundo en CPU, aunque no se aportan mediciones verificadas.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Formato | Rendimiento |
-|---|---|---|---|---|---|
-| WILLAY-GGUF (este) | 494 M | no disponible | Apache 2.0 | GGUF (12 cuantizaciones) | no disponible |
-| Qwen2.5-0.5B (referencia de tamano similar) | 494 M aprox. | no disponible en esta busqueda | Apache 2.0 | safetensors, GGUF de terceros | no disponible en esta busqueda |
-| SmolLM2-360M (referencia de tamano similar) | 362 M | no disponible en esta busqueda | Apache 2.0 | safetensors, GGUF de terceros | no disponible en esta busqueda |
-| TinyLlama-1.1B (referencia de tamano superior) | 1,1 B | no disponible en esta busqueda | Apache 2.0 | safetensors, GGUF de terceros | no disponible en esta busqueda |
+| Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
+|---|---|---|---|---|
+| WILLAY (esta ficha) | 494M | no disponible | Apache 2.0 | GGUF y safetensors en HF |
+| Qwen2-0.5B | 494M | 32.768 tokens | Apache 2.0 | safetensors, GGUF comunitario |
+| SmolLM-360M | 360M | 2.048 tokens | Apache 2.0 | safetensors, GGUF comunitario |
+| GPT-2 large | 774M | 1.024 tokens | MIT | safetensors, GGUF comunitario |
 
-No se dispone de datos de rendimiento comparativo entre WILLAY y estas alternativas dentro de la informacion proporcionada, por lo que la comparacion se limita a parametros, licencia y disponibilidad de formatos. La busqueda web no aporto ningun resultado relevante sobre WILLAY ni sobre modelos comparables.
+La comparación es aproximada: Qwen2-0.5B y SmolLM son alternativas consolidadas en el mismo rango de tamaño con documentación pública de contexto y benchmarks, mientras que WILLAY carece de esos datos. No se dispone de resultados comparativos de rendimiento entre estos modelos en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de benchmarks: no hay ninguna métrica publicada que permita estimar la calidad del modelo en tareas de razonamiento, código o matemáticas; cualquier uso en producción debería ir precedido de una evaluación propia.
-- Idiomas: solo se declara inglés. No hay evidencia de soporte de castellano u otros idiomas; el rendimiento fuera del inglés es desconocido.
-- Longitud de contexto desconocida: al no documentarse la ventana de contexto, no se puede asumir soporte fiable para conversaciones largas o documentos extensos.
-- Riesgo de alucinación: inherente a los modelos de ~494 M de parámetros, que tienen una capacidad factual y de razonamiento limitada en comparación con modelos de miles de millones de parámetros.
-- Sesgos: no se documenta ninguna evaluación de sesgos, toxicidad o seguridad. El condicionamiento por "doctrine-v11" e "identity" implica una orientación deliberada de las respuestas cuyo contenido y criterios no están descritos públicamente, lo que puede introducir sesgos no auditados.
-- Licencia Apache 2.0: permite uso comercial y modificación, pero no exime de responsabilidad sobre el comportamiento del modelo ni sobre los datos con los que se le entrene posteriormente.
-- Trazabilidad del proceso de cuantización: al tratarse de cuantizaciones estáticas (sin imatrix), puede haber una pérdida de calidad mayor que en cuantizaciones ponderadas equivalentes en bits; el autor indica que no había planes confirmados de publicar variantes ponderadas.
-- Datos del repositorio: las descargas registradas son 0 y los "likes" 1, lo que indica una adopción prácticamente nula y ausencia de validación por parte de la comunidad.
-- Fechas de metadatos poco habituales: la fecha de creación indicada (2026-09-13) es posterior a la fecha habitual de consulta, lo que conviene verificar antes de citar el modelo.
+- La model card original es extremadamente escasa: no hay información sobre sesgos, datos de entrenamiento detallados ni evaluación de calidad.
+- Riesgo de alucinación elevado en un modelo de 494M sin benchmarks publicados; no se recomienda para tareas que exijan alta fiabilidad sin validación previa.
+- Cobertura lingüística limitada al inglés; no se garantiza un comportamiento correcto en castellano u otros idiomas.
+- Longitud de contexto desconocida, lo que impide planificar aplicaciones con ventanas largas.
+- La licencia Apache 2.0 permite uso comercial, pero la procedencia y composición de los datasets de doctrina no están documentadas, lo que puede plantear dudas de cumplimiento en entornos regulados.
+- Las cuantizaciones Q2_K y Q3_K_S, pese a su reducido tamaño, degradan la calidad de forma notable; para producción se recomienda Q4_K_M o superior.
+- No hay cuantizaciones ponderadas (imatrix) publicadas por el autor en el momento de la ficha, lo que limita la comparación de calidad entre variantes.
+- El modelo tiene muy pocas descargas y likes, señal de escasa validación por parte de la comunidad.
 
 ## Enlaces
 
 - Repositorio GGUF: https://huggingface.co/mradermacher/WILLAY-GGUF
 - Modelo base: https://huggingface.co/SZLHOLDINGS/WILLAY
-- Pagina de resumen del autor para este modelo: https://hf.tst.eu/model#WILLAY-GGUF
-- Guia de uso de GGUF citada por el autor: https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
-- Solicitudes de cuantizacion del autor: https://huggingface.co/mradermacher/model_requests
-- Grafica comparativa de tipos de cuantizacion: https://www.nethype.de/huggingface_embed/quantpplgraph.png
-- Notas de Artefact2 sobre cuantizacion: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
-- Web de nethype GmbH: https://www.nethype.de/
+- Página de descargas del cuantizador: https://hf.tst.eu/model#WILLAY-GGUF
+- Dataset doctrine-v10-v11: https://huggingface.co/datasets/SZLHOLDINGS/doctrine-v10-v11
+- Dataset szl-1-doctrine-sft: https://huggingface.co/datasets/SZLHOLDINGS/szl-1-doctrine-sft
+- Dataset why-we-lead: https://huggingface.co/datasets/SZLHOLDINGS/why-we-lead
+- Guía de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Análisis de cuantizaciones de Artefact2: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Solicitudes de cuantización de mradermacher: https://huggingface.co/mradermacher/model_requests

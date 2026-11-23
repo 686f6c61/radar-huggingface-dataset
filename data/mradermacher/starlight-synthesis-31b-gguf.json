@@ -47,31 +47,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Úvodní strana - AZ Steeltrading",
-      "url": "https://www.steeltrading.cz/",
-      "snippet": "Vítejte na stránkách obchodní společnosti AZ Steeltrading s.r.o. Jsme přímí dovozci a výrobci široké škály ocelových výrobků. Za …"
-    },
-    {
-      "title": "Úvod - AZ STEEL s.r.o.",
-      "url": "http://www.azsteel.cz/",
-      "snippet": "Vítáme Vás na stránkách společnosti AZ STEEL s.r.o.. Společnost byla založena v roce 2002 a je ryze českým subjektem bez účasti …"
-    },
-    {
-      "title": "E-shop - AZ Steeltrading",
-      "url": "https://www.steeltrading.cz/eshop",
-      "snippet": "Vítejte na stránkách obchodní společnosti AZ Steeltrading s.r.o. Jsme přímí dovozci a výrobci široké škály ocelových výrobků. Za …"
-    },
-    {
-      "title": "O nás - AZ STEEL s.r.o.",
-      "url": "https://azsteel.cz/o-nas",
-      "snippet": "Vítáme Vás na stránkách společnosti AZ STEEL s.r.o.. Společnost byla založena v roce 2002 a je ryze českým subjektem bez účasti …"
-    },
-    {
-      "title": "AZ STEEL, s.r.o. (Oslavice) • Firmy.cz",
-      "url": "https://www.firmy.cz/detail/656528-az-steel-oslavice.html",
-      "snippet": "Provádíme čištění a renovaci dílů, kabinové pískování, tryskání a mikrotryskání - balotina korund granát. Pískování skla a keramiky. …"
-    }
-  ]
+  "sources": []
 }

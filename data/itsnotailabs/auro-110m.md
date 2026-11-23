@@ -2,112 +2,97 @@
 
 ## Resumen
 
-Auro-110M es un modelo de lenguaje causal decoder-only de 110 millones de parámetros desarrollado por MedinaMemorySystems (publicado en el Hub bajo la organización ItsnotAilabs) para el ecosistema Sovereign Knowledge Studio. Se obtiene mediante poda y destilación del modelo EleutherAI/pythia-160m-deduped y está especializado en la ejecución del DSL propietario CortexScript, además de la generación de código cognitivo y la escritura creativa. Su propuesta diferencial es el despliegue en hardware muy limitado: según el autor, funciona en CPU convencional con menos de 500 MB de RAM.
+Auro-110M es un modelo de lenguaje causal de pequeno tamano (105.619.968 parametros segun los pesos en safetensors) desarrollado por MedinaMemorySystems / ItsnotAilabs. Se obtiene mediante poda y destilacion a partir de EleutherAI/pythia-160m-deduped, conservando la arquitectura GPT-NeoX, y se afina especificamente para ejecutar CortexScript, un DSL propietario orientado a agentes cognitivos, y para generar llamadas a herramientas en formato ReAct. Su propuesta de valor es la eficiencia extrema: el autor declara que funciona en CPU con menos de 500 MB de RAM en FP32 y unos 65 MB en GGUF Q4_K_M.
 
-Técnicamente es un transformer de 12 capas, 12 cabezas de atención y dimensión oculta 768, con una ventana de contexto de 2048 tokens y tokenizador adaptado a CortexScript. Incorpora ajuste fino para emitir formatos estructurados de llamada a herramientas tipo ReAct (bloques `<Thought>` / `<Action>`) y monólogos internos de agente, lo que lo orienta a flujos agénticos en el borde y no a conocimiento factual general.
+El modelo esta pensado para flujos agenticos en el borde (on-device), orquestacion ligera y generacion de codigo estructurado, no para razonamiento general. Con 12 capas, 12 cabezas de atencion, dimension oculta de 768 y una ventana de contexto de 2048 tokens, sus capacidades fuera del dominio de afinado son muy limitadas, y el propio autor lo advierte. Su relevancia actual radica en el nicho de agentes de bajo consumo que necesitan producir salidas estructuradas de forma predecible y barata.
 
-Su relevancia actual es limitada pero específica: cubre el nicho de modelos de menos de 150 M de parámetros ejecutables en CPU para orquestación ligera y generación de DSL, un espacio donde la mayoría de alternativas exige GPU o supera ampliamente ese presupuesto de memoria. El propio autor advierte de que su capacidad de razonamiento zero-shot fuera de su distribución de ajuste es muy reducida.
+La licencia es Apache 2.0, lo que facilita su integracion comercial, aunque el ecosistema de herramientas (tokenizer y benchmark propios de CortexScript) no esta publicado de forma independiente en la informacion disponible. El modelo tiene 507 descargas y 1 like en Hugging Face en el momento de la consulta.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only, variante GPT-NeoX |
-| Parámetros totales | 110 millones |
-| Parámetros activos | no aplica (no es un modelo MoE) |
+| Arquitectura | GPT-NeoX (transformer decoder causal), 12 capas, 12 cabezas, hidden 768 |
+| Parametros totales | 105.619.968 (110M nominales) |
+| Parametros activos | no aplica (modelo denso) |
 | Longitud de contexto | 2048 tokens |
-| Tipos de cuantización | FP32, FP16, INT8 y GGUF Q4_K_M (según tabla del autor) |
-| Idiomas soportados | inglés (en) |
-| Licencia | apache-2.0 |
-| Formato de pesos | no disponible (la model card no especifica safetensors ni GGUF descargable) |
-| Capas | 12 |
-| Cabezas de atención | 12 |
-| Dimensión oculta | 768 |
-| Modelo base | EleutherAI/pythia-160m-deduped (poda y destilación) |
-| Librería | transformers (PyTorch) |
-| Pipeline | text-generation |
+| Tipos de cuantizacion | FP32, FP16, INT8, GGUF Q4_K_M (segun el autor) |
+| Idiomas soportados | Ingles (en) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | safetensors (repo de 1.1 GB); GGUF mencionado en la model card |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es un transformer causal decoder-only con el bloque GPT-NeoX, en la configuración de 12 capas, 12 cabezas de atención y dimensión oculta 768, lo que da los 110 M de parámetros declarados. Parte de `EleutherAI/pythia-160m-deduped`, sobre el que se aplican poda y destilación, y se sustituye o adapta el tokenizador para que sea consciente de CortexScript. El contexto máximo es de 2048 tokens, idéntico al del modelo base Pythia del que deriva.
+Auro-110M es un transformer decoder causal de tipo GPT-NeoX con 12 capas, 12 cabezas de atencion y dimension oculta de 768. Deriva de EleutherAI/pythia-160m-deduped mediante poda y destilacion, reduciendo el numero de parametros hasta unos 110M. El autor indica que incorpora un tokenizer adaptado a CortexScript, aunque no se detalla el vocabulario ni el proceso exacto de adaptacion.
 
-La model card indica ajuste fino sobre un corpus propio denominado `custom-sovereign-corpus` y orientado a tres objetivos: generación de código en el DSL CortexScript, emisión de llamadas a herramientas en formato ReAct y producción de monólogos internos de agente. No se especifica el número de tokens de entrenamiento, la composición del dataset, ni si se emplearon técnicas de alineación como RLHF o DPO. También se declara un benchmark propio, CortexScript-Exec, sin publicación de su metodología ni del conjunto de evaluación.
+El entrenamiento se realiza sobre un corpus propio denominado custom-sovereign-corpus, con afinado orientado a tres tareas: generacion de codigo CortexScript, produccion de llamadas a herramientas en formato ReAct (Thought/Action) y monologos internos de agente. No se especifican en la informacion disponible el numero de tokens de entrenamiento, la composicion del dataset, ni si se emplearon tecnicas de RLHF o DPO. Tampoco se documentan innovaciones de inferencia como decodificacion especulativa o atencion lineal.
 
 ## Capacidades
 
-- Generación de texto causal en inglés, con calidad limitada por el tamaño del modelo.
-- Generación de código específicamente en el DSL CortexScript, tanto sintáctica como semánticamente.
-- Tool calling estructurado en formato ReAct, con etiquetas `<Thought>` y `<Action>`.
-- Monólogos internos de agente y trazas de razonamiento paso a paso dentro de ese formato.
-- Escritura creativa y generación de texto libre de forma secundaria.
-- Ejecución en CPU con menos de 500 MB de RAM según el autor, sin necesidad de GPU.
-- No dispone de capacidades de visión, audio ni multimodalidad.
-- No se declara soporte multilingüe: únicamente inglés (etiqueta `en` en el Hub).
-- No se documenta modo "thinking" nativo más allá del formato ReAct de ajuste.
+- Generacion de texto autoregresiva en ingles, con calidad limitada fuera del dominio de afinado.
+- Generacion e interpretacion de codigo en el DSL CortexScript, incluyendo rutinas estructuradas.
+- Generacion de llamadas a herramientas en formato ReAct estructurado (`<Thought>`, `<Action>`).
+- Mantenimiento de monologos internos de agente para orquestacion de pasos.
+- Generacion de codigo general y escritura creativa a nivel basico, segun el autor.
+- Soporte de prompt de sistema estructurado para definir rol y formato de salida.
+- No se documenta soporte de vision, audio, tool calling nativo del tokenizer de chat, ni modo de razonamiento extendido.
+- Capacidad multilingue practicamente inexistente: solo ingles declarado.
 
 ## Casos de uso
 
-- Agentes cognitivos en dispositivos de borde: el modelo cabe en menos de 500 MB en FP32 y en torno a 65 MB en GGUF Q4_K_M, por lo que puede ejecutarse de forma continua en Raspberry Pi, mini-PC o móvil para tareas de orquestación local.
-- Generación de rutinas CortexScript: dado su ajuste específico y el 84,7 % declarado en CortexScript-Exec, sirve para producir scaffolding de rutinas del DSL dentro de un IDE o de un pipeline de compilación propio.
-- Tool calling ligero en pipelines de automatización: su formato ReAct predecible permite parsear acciones con expresiones regulares y encadenarlas contra APIs internas sin un modelo mayor.
-- Preprocesado y clasificación de intenciones en sistemas RAG: puede etiquetar consultas y decidir qué herramienta invocar antes de delegar la respuesta a un modelo de mayor tamaño.
-- Prototipado e investigación en modelos pequeños: al derivar de Pythia-160m-deduped, es un banco de pruebas útil para estudiar poda, destilación y adaptación de tokenizadores a lenguajes DSL.
-- Generación de plantillas y código repetitivo en pipelines de CI/CD: puede emitir esqueletos de ficheros y bloques de configuración que después se validan con un linter o compilador.
-- Simulación de agentes conversacionales con memoria corta: sus 2048 tokens de contexto y los monólogos internos permiten construir demos de agentes con estado limitado y coste de cómputo mínimo.
-- Educación y demos offline: al no requerir GPU ni conexión, es adecuado para talleres sobre agentes, ReAct y lenguajes específicos de dominio.
+- Agentes en dispositivos de borde: el modelo cabe en unos 65 MB en GGUF Q4_K_M y puede ejecutarse de forma continua en CPU de bajo consumo, lo que permite desplegar bucles de agente ligeros sin GPU.
+- Orquestacion de herramientas en pipelines: genera llamadas ReAct estructuradas y predecibles que un orquestador externo puede parsear y ejecutar, reduciendo la necesidad de un LLM grande para el enrutamiento.
+- Generacion de scripts CortexScript: dado un prompt en lenguaje natural, produce rutinas del DSL con una tasa declarada del 84,7 % en el benchmark propio CortexScript-Exec.
+- Prototipado rapido de flujos agenticos: sirve como sustituto barato de modelos mayores durante el desarrollo de la logica de orquestacion antes de escalar a modelos de produccion.
+- Automatizacion de tareas de sistema en entornos con restricciones: por ejemplo, generacion de rutinas para consultar la hora del sistema y registrarla, tal como muestra el ejemplo de la model card.
+- Educacion y experimentacion: su tamano permite estudiar el comportamiento de un transformer pequeno afinado en un DSL y comparar tecnicas de poda y destilacion sobre Pythia-160m.
+- Generacion de texto creativo breve en ingles para prototipos de interfaz, con la advertencia de que la calidad es limitada.
 
 ## Benchmarks y rendimiento
 
-Resultados declarados por el autor en el `model-index` de la model card. Ninguno está marcado como verificado (`verified: false`).
+| Benchmark | Auro-110M | Notas |
+|---|---|---|
+| HellaSwag (10-shot) | 38,2 % accuracy | Declarado por el autor, no verificado |
+| ARC-Easy (25-shot) | 52,1 % accuracy | Declarado por el autor, no verificado |
+| CortexScript-Exec (0-shot) | 84,7 % | Benchmark propio del autor, no verificado |
 
-| Benchmark | Protocolo | Resultado | Verificado |
-|---|---|---|---|
-| HellaSwag | 10-shot | 38,2 % de accuracy | No |
-| ARC-Easy | 25-shot | 52,1 % de accuracy | No |
-| CortexScript-Exec | 0-shot | 84,7 % | No (benchmark propio del autor, sin metodología publicada) |
-
-Los datos de HellaSwag y ARC-Easy corresponden a los valores oficiales del `model-index`. El resultado de CortexScript-Exec aparece únicamente en el cuerpo de la model card. No se han proporcionado resultados de MMLU, GSM8K, HumanEval ni de ninguna otra batería estándar.
+Metricas de produccion declaradas por el autor: throughput de 40,0 tokens/s, latencia de 15,0 ms/token, uso de RAM de aproximadamente 450 MB en linea base y una precision de tarea del 96,5 % (sin especificar el conjunto de evaluacion). No se han publicado resultados de benchmarks independientes en la informacion disponible.
 
 ## Requisitos de hardware
 
-- Memoria estimada según la tabla del autor: FP32 ~450 MB, FP16 ~220 MB, INT8 ~110 MB, GGUF Q4_K_M ~65 MB.
-- Ejecutable en CPU convencional; el autor indica un consumo de RAM inferior a 500 MB y lo etiqueta explícitamente como hardware CPU.
-- Cabe en cualquier GPU de consumo, incluidas GTX 1050, RTX 3060 o superiores; el requisito de VRAM es inferior a 1 GB en todas las cuantizaciones.
-- Latencia declarada en CPU: 20 ms/token en FP32, 15 ms/token en FP16, 10 ms/token en INT8 y 5 ms/token en GGUF Q4_K_M.
-- Throughput declarado en las "Verified Production Metrics": 40 tokens/s, con latencia de 15 ms/token y 450 MB de RAM. Estos dos últimos valores son mutuamente inconsistentes con el throughput indicado (40 tokens/s equivaldría a 25 ms/token), por lo que deben tomarse como estimaciones no verificadas.
-- Opciones de despliegue: carga directa con `transformers` y PyTorch (`AutoModelForCausalLM`), y exportación a GGUF para llama.cpp u Ollama según la tabla de cuantizaciones. El soporte en vLLM o TGI no está confirmado en la documentación del modelo.
-- Al ser un modelo de 110 M de parámetros con contexto de 2048, el coste de serving es mínimo y puede compartir GPU con otros servicios.
+- VRAM/RAM estimada segun el autor: aproximadamente 450 MB en FP32, 220 MB en FP16, 110 MB en INT8 y 65 MB en GGUF Q4_K_M.
+- GPU recomendadas: no se especifican; el modelo esta disenado para CPU. Cualquier GPU consumer moderna (por ejemplo, RTX 3060 o superior) lo ejecutaria con holgura, aunque no se aportan cifras.
+- Cabe en cualquier GPU consumer e incluso en CPU de gama baja; el autor lo posiciona como modelo de hardware CPU.
+- Opciones de despliegue: transformers (PyTorch) de forma nativa; el tag `text-generation-inference` y `endpoints_compatible` sugiere compatibilidad con TGI y endpoints de Hugging Face. El formato GGUF permite llama.cpp y potencialmente Ollama, aunque no se confirma en la informacion disponible.
+- Latencia declarada: 20 ms/token en FP32, 15 ms/token en FP16, 10 ms/token en INT8 y 5 ms/token en Q4_K_M, todos en CPU. Throughput de 40 tokens/s.
 
 ## Comparativa con modelos similares
 
-Los datos de parámetros, contexto y licencia de las alternativas provienen de información pública general, no de la documentación de Auro-110M; no se dispone de resultados de benchmarks comparables entre ellos en la información proporcionada.
+| Modelo | Parametros | Contexto | Licencia | Notas |
+|---|---|---|---|---|
+| Auro-110M | 105,6M | 2048 | Apache 2.0 | Afinado para CortexScript y ReAct; HellaSwag 38,2 %, ARC-Easy 52,1 % |
+| EleutherAI/pythia-160m-deduped | 160M | 2048 | Apache 2.0 | Modelo base; mayor numero de parametros, sin afinado especifico de agente |
+| Modelos de ~100-150M de la familia GPT-2 small | 124M | 1024 | MIT | Referencia generalista en ingles; sin soporte de DSL ni ReAct |
+| SmolLM-135M | 135M | 2048 | Apache 2.0 | Alternativa generalista pequena; no disponible comparacion de benchmarks en la informacion proporcionada |
 
-| Modelo | Parámetros | Contexto | Licencia | Enfoque | Rendimiento comparado |
-|---|---|---|---|---|---|
-| Auro-110M | 110 M | 2048 | apache-2.0 | DSL CortexScript y ReAct | HellaSwag 38,2 % / ARC-Easy 52,1 % (autor, sin verificar) |
-| EleutherAI/pythia-160m-deduped | 160 M | 2048 | apache-2.0 | Lenguaje general de investigación | no disponible en esta ficha |
-| TinyLlama-1.1B-Chat | 1,1 B | 2048 | apache-2.0 | Chat general | no disponible en esta ficha |
-| Qwen2.5-0.5B-Instruct | ~0,5 B | 32 768 | apache-2.0 | Chat e instrucciones generales | no disponible en esta ficha |
-
-Frente al modelo base, Auro-110M reduce parámetros y gana especialización en CortexScript y formato ReAct, a costa de perder generalidad. Frente a las alternativas de mayor tamaño, ofrece una huella de memoria mucho menor (65-450 MB) pero carece de datos públicos de rendimiento comparables.
+No se dispone de datos de benchmarks comparativos verificados entre estos modelos en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- El propio autor reconoce que, por su reducido número de parámetros, el modelo falla en razonamiento zero-shot complejo fuera de su distribución de ajuste.
-- Alta propensión a la alucinación en consultas de conocimiento factual; no debe usarse como fuente de información.
-- No incorpora guardarraíles de seguridad propios; el autor recomienda moderación externa de contenido para uso en producción.
-- Idiomas: solo inglés; no se declara ni se evalúa soporte para castellano ni otras lenguas.
-- Contexto limitado a 2048 tokens, insuficiente para tareas de documento largo o conversaciones extensas.
-- Los benchmarks declarados no están verificados y los de CortexScript-Exec usan un conjunto propio sin metodología pública ni comparabilidad externa.
-- La métrica "Task Accuracy: 96,5 %" de las "Verified Production Metrics" no especifica la tarea evaluada y no es reproducible con la información disponible; no debe citarse como resultado sólido.
-- Existe una discrepancia de identidad del repositorio: el identificador del Hub es `ItsnotAilabs/Auro-110M`, mientras que la model card y la cita BibTeX hacen referencia a `MedinaMemorySystems/Auro-110M`. Conviene confirmar cuál es el repositorio canónico antes de fijar una versión en producción.
-- El repositorio presenta cero descargas y cero valoraciones, sin comunidad que haya validado su comportamiento.
-- El ajuste fino está acoplado a un DSL propietario (CortexScript), lo que limita su utilidad fuera de ese ecosistema.
-- Licencia Apache 2.0, que permite uso comercial, modificación y redistribución con atribución y sin garantías.
+- Razonamiento zero-shot muy limitado fuera del dominio de afinado; el propio autor lo reconoce.
+- Alta propension a alucinaciones en consultas de conocimiento factual.
+- Solo soporta ingles; no hay capacidades multilingues declaradas.
+- Ventana de contexto corta (2048 tokens), insuficiente para documentos largos o conversaciones extensas.
+- No incorpora guardrails de seguridad propios; requiere moderacion externa en produccion.
+- El benchmark CortexScript-Exec y la metrica de precision del 96,5 % son propios y no verificados; no deben tomarse como indicadores comparables con benchmarks estandar.
+- El tokenizer adaptado a CortexScript no esta documentado publicamente en la informacion disponible, lo que dificulta la reproducibilidad.
+- La licencia Apache 2.0 permite uso comercial, pero el DSL CortexScript y el corpus de entrenamiento son propietarios y su disponibilidad no esta confirmada.
+- Discrepancia entre el ID del repositorio en Hugging Face (ItsnotAilabs/Auro-110M) y el nombre usado en la model card y el ejemplo de codigo (MedinaMemorySystems/Auro-110M); conviene verificar la ruta correcta antes de integrar.
 
 ## Enlaces
 
-- Modelo en Hugging Face (identificador del Hub): https://huggingface.co/ItsnotAilabs/Auro-110M
-- Modelo en Hugging Face (identificador citado en la model card): https://huggingface.co/MedinaMemorySystems/Auro-110M
+- Hugging Face: https://huggingface.co/ItsnotAilabs/Auro-110M
 - Modelo base: https://huggingface.co/EleutherAI/pythia-160m-deduped
-- No se han encontrado papers, blogs técnicos, repositorios de código ni demos asociados al modelo en la búsqueda web realizada; los resultados devueltos no guardan relación con el modelo.
+- Repositorio de referencia en la model card: https://huggingface.co/MedinaMemorySystems/Auro-110M
+- Paper de Pythia: no disponible en la informacion proporcionada
+- Blog o demo de CortexScript: no disponible en la informacion proporcionada

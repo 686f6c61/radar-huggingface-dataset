@@ -1,0 +1,41 @@
+{
+  "schema": 2,
+  "id": "eigami/Kokoro-82M-ONNX",
+  "slug": "eigami-kokoro-82m-onnx",
+  "author": "eigami",
+  "url": "https://huggingface.co/eigami/Kokoro-82M-ONNX",
+  "created_at": "2026-11-22T22:53:43.000Z",
+  "updated_at": "2026-11-22T23:00:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 99150175,
+  "storage_human": "99 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

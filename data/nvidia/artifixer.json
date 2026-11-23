@@ -36,29 +36,24 @@
   "benchmarks": [],
   "sources": [
     {
-      "title": "ArtiFixer: Enhancing and Extending 3D Reconstruction",
-      "url": "https://research.nvidia.com/labs/sil/projects/artifixer/",
-      "snippet": "ArtiFixer retains a strong generative ability thanks to opacity mixing and training dropout, and is able to generate videos from text prompts alone, similar to its base model. Prompt: A bronze statue of two children standing back to back on a stone pedestal inside a modern exhibition hall."
+      "title": "Téléchargez les pilotes NVIDIA officiels | NVIDIA",
+      "url": "https://www.nvidia.com/fr-fr/drivers/",
+      "snippet": "Téléchargez les pilotes NVIDIA officiels les plus récents pour optimiser votre expérience de jeu sur PC et faire tourner vos …Read more"
     },
     {
-      "title": "nvidia/ArtiFixer · Hugging Face",
-      "url": "https://huggingface.co/nvidia/ArtiFixer",
-      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+      "title": "World Leader in Artificial Intelligence Computing | NVIDIA",
+      "url": "https://www.nvidia.com/en-us/",
+      "snippet": "NVIDIA invents the GPU and drives advances in AI, HPC, gaming, creative design, autonomous vehicles, and robotics."
     },
     {
-      "title": "GitHub - nv-tlabs/ArtiFixer",
-      "url": "https://github.com/nv-tlabs/ArtiFixer",
-      "snippet": "Contribute to nv-tlabs/ArtiFixer development by creating an account on GitHub."
+      "title": "Nvidia - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Nvidia",
+      "snippet": "Founded in 1993 by Jensen Huang, Chris Malachowsky, and Curtis Priem, Nvidia is among the largest companies by market …Read more"
     },
     {
-      "title": "nvidia/ArtiFixer at main - Hugging Face",
-      "url": "https://huggingface.co/nvidia/ArtiFixer/tree/main",
-      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
-    },
-    {
-      "title": "nvidia/ArtiFixer model by nvidia | Metatext",
-      "url": "https://metatext.ai/models/nvidia-artifixer",
-      "snippet": "Nvidia/ArtiFixer is a machine learning model from nvidia released in 2026. It is available through the artifixer library, and has 118 downloads and 32 likes."
+      "title": "NVIDIA",
+      "url": "https://www.nvidia.fr/default.htm",
+      "snippet": "Explorez les dernières innovations et produits NVIDIA, leader en technologies graphiques et d'intelligence artificielle."
     }
   ]
 }

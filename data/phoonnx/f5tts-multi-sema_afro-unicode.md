@@ -2,111 +2,110 @@
 
 ## Resumen
 
-`f5tts-multi-sema_afro-unicode` es una voz de síntesis de voz (text-to-speech) del modelo F5-TTS, convertida a formato ONNX para su uso con la librería phoonnx. La publica Phoonnx (TigreGotico Lda) a partir del modelo original `travis-moore/sema-tts-afro`, entrenado por travis-moore (Sema). El modelo base de la cadena es `mrfakename/OpenF5-TTS`. No es un modelo de lenguaje: es un modelo acústico de TTS que genera audio a 24 kHz a partir de texto, con una única voz y capacidad de clonación de hablante mediante un clip de referencia.
+f5tts-multi-sema_afro-unicode es una voz de síntesis de voz (text-to-speech) del modelo F5-TTS, convertida a formato ONNX por Phoonnx (TigreGotico Lda) a partir del modelo original travis-moore/sema-tts-afro. Está pensada para su uso con la librería phoonnx y el ecosistema OVOS, y cubre 23 idiomas, con un enfoque claro en lenguas africanas (yoruba, suajili, hausa, zulú, amárico, etc.) junto con el inglés. Resuelve el problema de disponibilidad de voces TTS de calidad para idiomas africanos, un segmento habitualmente desatendido por los modelos comerciales.
 
-El interés principal está en su cobertura multilingüe: cubre 23 idiomas, con un peso claro hacia lenguas africanas (afrikáans, amárico, fula, hausa, igbo, kamba, criollo caboverdiano, luganda, lingala, luo, chichewa, sotho septentrional, oromo, shona, somalí, suajili, twi, umbundu, wolof, xhosa, yoruba y zulú) además de inglés. Es una de las pocas voces TTS empaquetadas en ONNX con esta cobertura lingüística, lo que la hace relevante para aplicaciones de accesibilidad y asistentes de voz en mercados africanos.
+La arquitectura subyacente es F5-TTS, un modelo de síntesis basado en flow matching y difusión que clona la voz del hablante a partir de una muestra de referencia corta y su transcripción. Esta conversión mantiene los pesos originales en fp32 y añade copias cuantizadas a int8 mediante onnxruntime, reduciendo el grafo de 1455,8 MB a 463,3 MB. El repositorio ocupa 1,9 GB y se distribuye bajo licencia Apache 2.0.
 
-La conversión a ONNX incluye variantes en fp32 (1455,8 MB) e int8 (463,3 MB), lo que permite despliegue en CPU sin GPU. La licencia Apache 2.0 facilita el uso comercial. El modelo no emplea fonemizador: lee directamente los puntos de código Unicode del texto, descompuestos en NFD por phoonnx.
+Es relevante ahora porque ofrece una vía práctica de desplegar TTS multilingüe en CPU (el QA se realizó en un AMD Ryzen 5 7600), con un RTF medido de 22,6 en int8 y 29,4 en fp32, lo que la hace viable para aplicaciones de asistente de voz locales sin GPU dedicada.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | F5-TTS (modelo acústico TTS, no transformer de lenguaje) |
-| Parametros totales | no disponible |
-| Parametros activos | no aplica (no es MoE) |
-| Longitud de contexto | no disponible (procesa texto por cláusulas; sin ventana declarada) |
-| Tipos de cuantizacion | fp32, int8 (quantize_dynamic con QInt8, onnxruntime 1.32.0) |
-| Idiomas soportados | af, am, en, ff, ha, ig, kam, kea, lg, ln, luo, ny, nso, om, sn, so, sw, tw, umb, wo, xh, yo, zu (23) |
+| Arquitectura | F5-TTS (flow matching / difusión) |
+| Parámetros totales | no disponible |
+| Parámetros activos | no aplica (no es MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantización | fp32 (original), int8 (quantize_dynamic con QInt8) |
+| Idiomas soportados | af, am, en, ff, ha, ig, kam, kea, lg, ln, luo, ny, nso, om, sn, so, sw, tw, umb, wo, xh, yo, zu (23 idiomas) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | ONNX (`<graph>.onnx` fp32 y `<graph>_int8.onnx` int8) |
+| Formato de pesos | ONNX (grafos fp32 e int8) |
 | Frecuencia de muestreo | 24000 Hz |
-| Hablantes | 1 (clonación mediante clip de referencia) |
-| Fonemizador | Ninguno; lee puntos de código Unicode (NFD) |
-| Puntuación entrenada | `, . ! ? : ;` |
-| Tamaño del grafo | 1455,8 MB (fp32) / 463,3 MB (int8) |
-| Pico de RSS | 3200,7 MB (fp32) / 1204,2 MB (int8) |
-| Modelo base | mrfakename/OpenF5-TTS → travis-moore/sema-tts-afro |
-| Librería | phoonnx (pip install --pre phoonnx) |
+| Hablantes | 1 (voz clonable por referencia) |
+| Entrada de texto | Caracteres con mayúsculas y marcas (`f5tts_pinyin` / variante `unicode`) |
+| Puntuación entrenada | , . ! ? : ; |
+| Phonemizer | scriptconv `f5tts_pinyin` (0.0.4a110+) |
+| Modelo base | mrfakename/OpenF5-TTS (vía travis-moore/sema-tts-afro) |
+| Tamaño del repositorio | 1,9 GB |
+| Librería | phoonnx |
 
 ## Arquitectura y entrenamiento
 
-Se trata de un modelo F5-TTS, una familia de TTS de flujo matching basada en difusión que sintetiza audio a partir de texto y de una referencia de hablante. La conversión a ONNX no altera los pesos; las copias int8 se generan con `onnxruntime.quantization.quantize_dynamic` sobre los pesos QInt8. El modelo no usa fonemizador: phoonnx descompone el texto en NFD y el modelo consume los puntos de código Unicode directamente, lo que simplifica el pipeline pero implica que letras precompuestas (por ejemplo en yoruba) llegan como letra base más marca combinante.
+El modelo sigue la arquitectura F5-TTS, un sistema de síntesis de voz basado en flow matching con un transformer de difusión que genera mel-espectrogramas condicionados por el texto y por una referencia de voz. La inferencia requiere un clip de audio de referencia junto con su transcripción para clonar la identidad del hablante, tal como se muestra en el ejemplo de uso de la model card. La entrada de texto se procesa mediante la función `convert_char_to_pinyin` portada a scriptconv, que conserva la forma Unicode de cada letra, de modo que una letra yoruba precompuesta con marca tonal cuenta como un único id.
 
-Los datos de entrenamiento no están documentados en la model card upstream (`travis-moore/sema-tts-afro`). No se declara número de horas de audio, composición del corpus ni si hubo etapas de ajuste fino con RLHF o DPO (no aplicable en TTS). El control de calidad se realizó con ASR `nemo-parakeet-tdt-0.6b-v3` int8 sobre 3 frases de FLORES-200 devtest, con clip de referencia LJ001-0009 (dominio público), y solo cubre inglés.
+Los datos de entrenamiento no están registrados en el modelo original (travis-moore/sema-tts-afro), por lo que se desconoce el número de tokens, la composición del dataset y si hubo etapas de RLHF o ajuste fino supervisado. El modelo base es mrfakename/OpenF5-TTS. La conversión a ONNX no altera los pesos; las copias int8 se generan con `onnxruntime.quantization.quantize_dynamic` (onnxruntime 1.32.0) y pesos QInt8, y pasan un control de calidad que exige audio finito y no silencioso, longitud entre 0,8 y 1,25 veces la de fp32 y WER como máximo el de fp32 más 0,05.
 
 ## Capacidades
 
-- Síntesis de voz a 24 kHz a partir de texto en 23 idiomas, con foco en lenguas africanas.
-- Clonación de hablante zero-shot mediante un clip de referencia corto y su transcripción (`speaker_reference` y `speaker_reference_text`).
-- Manejo de puntuación de cláusula (`, . ! ? : ;`) entrenada explícitamente.
-- Procesamiento directo de Unicode (NFD), sin fonemizador externo.
-- Inferencia en CPU: las variantes int8 caben en ~1,2 GB de RSS.
+- Síntesis de voz (text-to-speech) con salida a 24 kHz.
+- Clonación de voz zero-shot a partir de un clip de referencia y su transcripción.
+- Soporte multilingüe para 23 idiomas, con énfasis en lenguas africanas: afrikáans, amárico, fula, hausa, igbo, kamba, criollo de Cabo Verde, luganda, lingala, luo, chichewa, sotho septentrional, oromo, shona, somalí, suajili, twi, umbundu, wolof, xhosa, yoruba y zulú, además de inglés.
+- Procesamiento de texto con mayúsculas y marcas diacríticas, incluidas letras precompuestas con marcas tonales (relevante para yoruba).
+- Conservación de la puntuación de cláusula (, . ! ? : ;) en la síntesis con phoonnx 1.96.1a1 y posteriores.
 - Integración con OVOS mediante el plugin `ovos-tts-plugin-phoonnx`.
-- No soporta tool calling, agentes, visión ni audio de entrada; es exclusivamente TTS.
+- Normalización de texto previa mediante text2spoken para números, fechas, horas, monedas, unidades y abreviaturas.
+- No dispone de tool calling, razonamiento multi-paso ni capacidades de visión o audio de entrada; es exclusivamente un modelo TTS.
 
 ## Casos de uso
 
-- Asistentes de voz en lenguas africanas: el modelo cubre suajili, hausa, yoruba, zulú, amárico y otras 18 lenguas, lo que permite construir asistentes locales sin depender de servicios en la nube con cobertura limitada.
-- Accesibilidad y lectura de textos: convertir artículos, documentos o interfaces en audio a 24 kHz para usuarios con discapacidad visual en idiomas minorizados donde escasean voces TTS de calidad.
-- Integración en asistentes domésticos OVOS/Mycroft: el plugin `ovos-tts-plugin-phoonnx` permite seleccionar la voz `f5tts/sema-afro` en `mycroft.conf` sin infraestructura adicional.
-- Clonación de voz para locuciones personalizadas: dado un clip de referencia y su transcripción, se puede generar audio con la voz del hablante para doblaje, audiolibros o contenido educativo.
-- Despliegue en dispositivos de borde: la variante int8 (463,3 MB de grafo, 1,2 GB de RSS) es viable en CPU de escritorio o servidores modestos, útil para kioscos, señalética hablada o terminales de atención pública.
-- Generación de audio para pruebas y prototipado: al ser Apache 2.0 y ONNX, se puede integrar en pipelines de CI para validar sistemas de ASR o de diálogo con audio sintético en múltiples idiomas.
-- Localización de contenidos: generar pistas de voz en varios idiomas africanos a partir de un mismo guion para formación corporativa o campañas de salud pública.
+- Asistentes de voz locales en OVOS: la voz se selecciona en `mycroft.conf` mediante el plugin `ovos-tts-plugin-phoonnx` y sintetiza respuestas en los 23 idiomas soportados, lo que permite desplegar asistentes de voz en entornos sin conexión y en CPU.
+- Accesibilidad para lenguas africanas: lectura en voz alta de contenido en yoruba, suajili, hausa o zulú, idiomas con escasa cobertura en TTS comerciales, usando la clonación de voz para adaptar el timbre a un locutor de referencia.
+- Locución automatizada de contenidos educativos: generación de audio para cursos y materiales didácticos en lenguas africanas, con normalización previa de cifras y fechas mediante text2spoken para que se lean como palabras.
+- Clonación de voz para preservación lingüística: grabación de un clip corto de un hablante nativo y su transcripción para generar nuevas locuciones con su timbre, útil en proyectos de documentación de lenguas minoritarias.
+- Integración en pipelines de software con Python: la API de phoonnx (`voice.synthesize_wav`) permite generar archivos WAV en scripts de postproducción o en servicios de backend, con la opción int8 para reducir el uso de memoria a 1204,2 MB de RSS pico.
+- Síntesis en dispositivos de bajos recursos: con el grafo int8 de 463,3 MB y un RTF de 22,6 en CPU de escritorio, es adecuada para servidores sin GPU o entornos de borde donde no se dispone de aceleración hardware.
+- Prototipado de interfaces conversacionales multilingües: combinación de la voz con un LLM para construir demos de atención al cliente o lectura de noticias en varios idiomas africanos, aprovechando la licencia Apache 2.0 para uso comercial.
 
 ## Benchmarks y rendimiento
 
-Resultados de QA publicados en la model card (ASR `nemo-parakeet-tdt-0.6b-v3` int8, 3 frases FLORES-200 devtest, medición en AMD Ryzen 5 7600, 4 hilos):
-
-| Metrica | fp32 | int8 |
+| Prueba | fp32 | int8 |
 |---|---|---|
-| Resultado QA | pass | pass |
-| WER | 0,038 | 0,000 |
+| Resultado del control | pass | pass |
+| WER (ASR nemo-parakeet-tdt-0.6b-v3 int8, FLORES-200 devtest, 3 frases, inglés) | 0,038 | 0,000 |
 | Caracteres por segundo | 13,8 | no disponible |
-| Longitud int8/fp32 | no aplica | 1,00 |
+| Longitud int8 / fp32 | no aplica | 1,00 |
 | Tamaño del grafo | 1455,8 MB | 463,3 MB |
-| Pico de RSS | 3200,7 MB | 1204,2 MB |
-| RTF (mediana de 3) | 29,445 | 22,578 |
+| RSS pico | 3200,7 MB | 1204,2 MB |
+| RTF (mediana de 3, 4 hilos) | 29,445 | 22,578 |
 
-No se han publicado resultados de benchmarks comparativos (MMLU, HumanEval, GSM8K u otros) porque no aplican a un modelo TTS. El RTF superior a 1 indica síntesis más lenta que tiempo real en la CPU medida.
+Las mediciones se realizaron en un AMD Ryzen 5 7600 de 6 núcleos. El RTF es el tiempo de síntesis dividido por la duración del audio. El QA cubre únicamente inglés y usó el clip de referencia LJ Speech LJ001-0009 (dominio público). No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u otros) en la información disponible, ya que no aplican a un modelo TTS.
 
 ## Requisitos de hardware
 
-- VRAM: no aplica; el modelo se ejecuta en CPU con onnxruntime.
-- RAM estimada: ~3,2 GB de pico en fp32 y ~1,2 GB en int8.
-- GPU: no se documenta aceleración por GPU; la conversión es ONNX CPU-first. No hay datos de rendimiento en A100, H100 o RTX 4090.
-- Cabe en cualquier equipo de consumo con al menos 4 GB de RAM libres (int8) o 4 GB (fp32).
-- Despliegue: phoonnx (`pip install --pre phoonnx`), plugin OVOS `ovos-tts-plugin-phoonnx`; onnxruntime como runtime.
-- Latencia y throughput: RTF 22,578 (int8) y 29,445 (fp32) en Ryzen 5 7600 con 4 hilos; es decir, entre 22 y 29 veces más lento que tiempo real en ese hardware. No hay datos para otras plataformas.
+- VRAM estimada para inferencia: no aplica en la configuración medida, que se ejecutó en CPU; no se dispone de cifras de VRAM para GPU.
+- Memoria RAM: RSS pico de 3200,7 MB en fp32 y 1204,2 MB en int8.
+- GPU recomendadas: no disponible; el QA se realizó en CPU (AMD Ryzen 5 7600).
+- ¿Cabe en GPU de consumo? No hay datos publicados; el grafo int8 de 463,3 MB sugiere que podría caber en GPUs con 4 GB o más, pero no está verificado en la información disponible.
+- Opciones de despliegue: phoonnx (librería principal), plugin `ovos-tts-plugin-phoonnx` para OVOS y ONNX Runtime para la ejecución de los grafos.
+- Latencia y throughput: RTF de 29,445 en fp32 y 22,578 en int8 (mediana de 3 ejecuciones con 4 hilos); 13,8 caracteres por segundo en fp32.
 
 ## Comparativa con modelos similares
 
-| Modelo | Tipo | Idiomas | Licencia | Formato | Notas |
+| Modelo | Arquitectura | Idiomas | Contexto / referencia | Licencia | Formato |
 |---|---|---|---|---|---|
-| f5tts-multi-sema_afro-unicode | F5-TTS ONNX | 23 (foco africano) | Apache 2.0 | ONNX fp32/int8 | Clonación por referencia; CPU |
-| travis-moore/sema-tts-afro | F5-TTS (upstream) | 23 | Apache 2.0 | pesos originales | Mismo modelo sin conversión ONNX |
-| mrfakename/OpenF5-TTS | F5-TTS base | mayoritariamente inglés | no disponible en esta ficha | safetensors | Modelo base de la cadena |
-| Otros TTS multilingües (p. ej. Coqui XTTS, MMS) | TTS | variable | variable | variable | No se dispone de datos comparativos en la información proporcionada |
+| f5tts-multi-sema_afro-unicode | F5-TTS (ONNX) | 23 (énfasis africano) | Clonación con clip de referencia | Apache 2.0 | ONNX fp32/int8 |
+| travis-moore/sema-tts-afro | F5-TTS | 23 (énfasis africano) | Clonación con clip de referencia | Apache 2.0 | Pesos originales (no especificado) |
+| mrfakename/OpenF5-TTS | F5-TTS | no disponible | Clonación con clip de referencia | no disponible | no disponible |
 
-No se dispone de comparativas de rendimiento (WER, MOS o RTF) frente a alternativas en la información proporcionada.
+No se dispone de datos de benchmarks comparativos con otros modelos TTS en la información proporcionada, por lo que la comparación se limita a arquitectura, licencia y cobertura idiomática.
 
 ## Limitaciones y advertencias
 
-- El QA solo cubre inglés; no hay validación publicada del WER en las lenguas africanas soportadas.
-- La descomposición NFD puede degradar la pronunciación de letras precompuestas (por ejemplo, caracteres con diacríticos en yoruba) al llegar al modelo como letra base más marca combinante.
-- El RTF es alto (22-29 en la CPU medida): no es apto para síntesis en tiempo real sin hardware más potente o paralelización.
-- Una sola voz; la variación requiere clonación con clip de referencia, cuya calidad condiciona el resultado.
-- Los datos de entrenamiento no están documentados, lo que impide auditar sesgos de acento, género o calidad por idioma.
-- Riesgo de alucinación acústica y artefactos en textos largos o fuera de distribución; se recomienda segmentar por cláusulas.
-- Licencia Apache 2.0 permite uso comercial, pero exige atribución a travis-moore (Sema) y a TigreGotico Lda por la conversión.
-- Dependencia de la librería phoonnx en versión preliminar (`--pre`), lo que implica API potencialmente inestable.
-- No soporta SSML avanzado, control de prosodia fino ni marcas de hablante múltiple.
+- El QA se realizó únicamente en inglés y con tres frases de FLORES-200 devtest; no hay evaluación publicada del rendimiento en los 22 idiomas restantes.
+- Los datos de entrenamiento no están registrados, lo que impide evaluar sesgos de dominio, calidad por idioma o posibles problemas de representación.
+- Riesgo de alucinación y artefactos propio de los modelos TTS generativos, especialmente en textos largos o con puntuación atípica.
+- La clonación de voz requiere un clip de referencia y su transcripción exacta; una transcripción incorrecta degrada la calidad de la síntesis.
+- La entrada de texto debe normalizarse previamente con text2spoken para números, fechas y abreviaturas; de lo contrario, la lectura puede ser incorrecta.
+- El modelo no nombra un idioma único, por lo que es necesario indicar la etiqueta de idioma a text2spoken en cada caso.
+- La licencia Apache 2.0 permite uso comercial, pero exige atribución a travis-moore (Sema) como autor del modelo original y a TigreGotico Lda por la conversión.
+- El rendimiento medido corresponde a CPU de escritorio; no hay datos de latencia en GPU ni de escalado con lotes.
+- Al ser un modelo de un solo hablante clonable, no ofrece control explícito de emociones ni estilos más allá del timbre de referencia.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/Phoonnx/f5tts-multi-sema_afro-unicode
-- Modelo upstream: https://huggingface.co/travis-moore/sema-tts-afro
-- Modelo base de la cadena: https://huggingface.co/mrfakename/OpenF5-TTS
+- Modelo en Hugging Face: https://huggingface.co/Phoonnx/f5tts-multi-sema_afro-unicode
+- Modelo original: https://huggingface.co/travis-moore/sema-tts-afro
+- Modelo base: https://huggingface.co/mrfakename/OpenF5-TTS
 - Repositorio phoonnx: https://github.com/TigreGotico/phoonnx
 - TigreGotico: https://tigregotico.pt
+- text2spoken: https://github.com/TigreGotico/text2spoken

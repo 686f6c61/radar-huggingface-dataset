@@ -2,116 +2,120 @@
 
 ## Resumen
 
-El modelo `sigmanih/Qwen-Qwen2.5-Coder-14B-Instruct-GGUF-Q3_K_M` es una cuantización GGUF en formato Q3_K_M del modelo base `Qwen/Qwen2.5-Coder-14B-Instruct`, desarrollada por el autor sigmanih y publicada a través del módulo Model Hub de Sigma Studio. Está pensado para ofrecer una versión ligera del modelo de 14.700 millones de parámetros, optimizada para inferencia local en GPU de consumo y para entornos de producción que requieren alta velocidad de ejecución.
+Qwen2.5-Coder-14B-Instruct es un modelo de lenguaje especializado en generación de código desarrollado por el equipo Qwen de Alibaba. Esta ficha documenta la cuantización GGUF Q3_K_M publicada por el usuario sigmanih bajo el paraguas de su proyecto Sigma Studio, que redistribuye los pesos originales en formato GGUF de 3 bits para reducir los requisitos de memoria. El modelo base resuelve tareas de generación y completado de código, razonamiento matemático, instrucciones conversacionales y uso de herramientas, y su relevancia actual radica en que permite ejecutar un modelo de 14.770 millones de parámetros en GPUs de consumo con 12-16 GB de VRAM.
 
-El modelo base Qwen2.5-Coder está diseñado para tareas de generación, razonamiento y corrección de código, además de conversación general. Esta variante en Q3_K_M reduce el peso del modelo a 6.84 GB, lo que permite cargarlo en tarjetas gráficas con 16 GB de VRAM, manteniendo una ventana de contexto de 32.768 tokens. Es una opción relevante para desarrolladores que necesitan ejecutar un modelo de código de nivel medio-alto en máquinas con recursos limitados o en sistemas de inferencia rápida.
+La arquitectura del modelo base es un transformer causal denso (CausalLM) con una ventana de contexto de 32.768 tokens. Esta versión concreta pesa 7,3 GB en el repositorio y, según la model card del redistribuidor, requiere aproximadamente 12,4 GB de VRAM para descarga completa en GPU o unos 11,5 GB de RAM en modo CPU/híbrido. La cuantización Q3_K_M introduce pérdida de precisión respecto al modelo original en BF16, por lo que conviene evaluar su impacto antes de usarla en producción.
 
-## Especificaciones técnicas
+Es importante señalar que esta publicación no es un modelo nuevo ni un fine-tuning: es una conversión de pesos del checkpoint oficial Qwen/Qwen2.5-Coder-14B-Instruct. La licencia declarada es "other" y la model card incluye una insignia de Apache-2.0 que no coincide con el campo de licencia del repositorio, una discrepancia que debe resolverse consultando la licencia del modelo base antes de cualquier uso comercial.
 
-| Parámetro | Valor |
+## Especificaciones tecnicas
+
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Qwen2 (Transformer decoder-only) |
-| Parámetros totales | 14.770.033.664 (14.7B) |
-| Parámetros activos | No aplica (modelo denso) |
+| Arquitectura | Transformer causal denso (CausalLM) |
+| Parametros totales | 14.770.033.664 |
+| Parametros activos | no disponible (modelo denso, no MoE) |
 | Longitud de contexto | 32.768 tokens |
-| Tipos de cuantización | Q3_K_M |
-| Idiomas soportados | en, it |
-| Licencia | other |
-| Formato de pesos | GGUF (Q3_K_M) |
-| Número de capas | 48 |
-| Dimensión oculta | 5120 |
-| Tamaño del fichero | 6.84 GB |
-| Tamaño total del repositorio | 7.3 GB |
+| Tipos de cuantizacion | GGUF Q3_K_M (3 bits, variante K-quant media) |
+| Idiomas soportados | en, it (declarados en el repositorio); el modelo base Qwen2.5-Coder soporta multilingue, no detallado aqui |
+| Licencia | other (la model card muestra una insignia Apache-2.0 que no coincide con el campo del repositorio) |
+| Formato de pesos | GGUF |
+| Tamano del repositorio | 7,3 GB |
+| VRAM estimada (offload completo) | ~12,4 GB |
+| RAM estimada (CPU/hibrido) | ~11,5 GB |
+| Fecha de creacion | 2026-09-07 |
+| Ultima actualizacion | 2026-11-02 |
+| Descargas | 450 |
+| Likes | 1 |
 
 ## Arquitectura y entrenamiento
 
-El modelo es una cuantización en Q3_K_M de `Qwen/Qwen2.5-Coder-14B-Instruct`. La arquitectura base es Qwen2, un transformer decoder-only de 48 capas y una dimensión oculta de 5120. La cuantización reduce la precisión de los pesos para disminuir la memoria necesaria, pasando del formato de 14B completo a un fichero GGUF de 6.84 GB, lo que permite su ejecución en hardware con VRAM limitada.
+El modelo subyacente es un transformer causal denso de la familia Qwen2.5-Coder, con 14.770 millones de parametros y una ventana de contexto de 32.768 tokens. La model card del redistribuidor no aporta informacion sobre el volumen de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas de RLHF, DPO o instruction tuning mas alla de la designacion "Instruct" del checkpoint original. Tampoco se documentan innovaciones tecnicas especificas como decodificacion especulativa o atencion lineal en esta publicacion.
 
-En la información disponible no se detallan los datos de entrenamiento, número de tokens ni técnicas de alineamiento específicas utilizadas en la generación de esta cuantización. El modelo original Qwen2.5-Coder-14B-Instruct está orientado a tareas de código y razonamiento, pero no se aportan cifras sobre la composición del dataset ni sobre procesos de RLHF o DPO en esta ficha.
+El unico proceso tecnico documentado en esta ficha es la cuantizacion a GGUF Q3_K_M realizada por sigmanih mediante el modulo Model Hub de Sigma Studio. No se detalla la herramienta de conversion (llama.cpp u otra), ni el metodo de calibracion de la cuantizacion, ni si se preservaron las capas de embeddings y output en mayor precision. La model card incluye ademas una seccion de evaluacion ejecutada con "SigmaEngine Direct GPU" con semilla 42 y temperatura 0,0, pero no describe el pipeline de entrenamiento del modelo base.
 
 ## Capacidades
 
-- Generación de código en Python: los benchmarks de la muestra obtienen un 86% en HumanEval y un 100% en MBPP.
-- Razonamiento matemático: 100% en GSM8K y 89% en MATH en la muestra evaluada.
-- Razonamiento general y de sentido común: 89% en ARC-Challenge y 56% en HellaSwag en la muestra evaluada.
-- Conocimiento general y razonamiento avanzado: 43% en MMLU y 33% en MMLU-Pro en la muestra evaluada.
-- Factualidad y anti-alucinación: 78% en TruthfulQA en la muestra evaluada.
-- Conversación bilingüe en inglés e italiano.
-- El autor recomienda su uso para tareas de codificación de alta velocidad, asistentes cotidianos y loops de razonamiento para agentes autónomos.
-- No se documenta explícitamente soporte de tool calling o function calling en la información proporcionada.
+- Generacion y completado de codigo en multiples lenguajes, con enfasis en Python segun los benchmarks reportados.
+- Razonamiento matematico multi-paso, con resultados altos en GSM8K y MATH en la evaluacion del redistribuidor.
+- Respuesta conversacional a instrucciones (checkpoint Instruct).
+- Modo de razonamiento comparado en la model card: "No-Thinking" (respuesta directa) frente a "Deep Thinking" (cadena de pensamiento), con una diferencia de -6,8 % a favor del modo directo en la evaluacion reportada.
+- Uso de herramientas: la model card reporta un 77,2 % de adherencia al protocolo de herramientas en un sandbox, aunque con 0 % de finalizacion autonoma de tareas.
+- Capacidades multilingues limitadas en esta publicacion a ingles e italiano segun los metadatos del repositorio.
+- No se documentan capacidades de vision, audio ni otras modalidades.
 
 ## Casos de uso
 
-- Autocompletado y generación de código en entornos de desarrollo integrado: puede integrarse en editores como VS Code o JetBrains para sugerir funciones, clases y bloques completos; su velocidad de decodificación de 52,9 tokens/s en RTX 5070 Ti permite una experiencia interactiva fluida.
-- Asistente de depuración: el modelo puede analizar mensajes de error, trazas de pila y código problemático para proponer hipótesis y correcciones. Su capacidad de razonamiento multi-paso facilita la identificación de fallos lógicos.
-- Tutor de programación bilingüe: con soporte para inglés e italiano, puede explicar conceptos de programación, resolver dudas y generar ejercicios prácticos en plataformas educativas o internas de empresas.
-- Revisión y refactorización de código legacy: gracias a la ventana de 32.768 tokens, puede procesar archivos de código extensos, resumir su funcionalidad, detectar deudas técnicas y sugerir refactorizaciones.
-- Generación de pruebas unitarias: el modelo es capaz de crear casos de prueba a partir de descripciones o de código existente; los resultados de MBPP (100% en la muestra) indican una buena capacidad para generar pruebas que superan assertions.
-- Motor de razonamiento para agentes autónomos: puede usarse como cerebro de un agente que planifica y ejecuta tareas de automatización en varios pasos, aprovechando el contexto largo y la capacidad de seguir instrucciones complejas sin necesidad de herramientas externas.
-- Generación de documentación técnica: puede producir comentarios, docstrings, READMEs y documentación de API de forma automática, acelerando el mantenimiento de repositorios.
-- Análisis de scripts y logs: útil en tareas de mantenimiento y operaciones para interpretar salidas de logs, detectar patrones y generar explicaciones en lenguaje natural.
+- Asistente de codigo en local para desarrolladores con GPU de 12-16 GB: el modelo cabe con offload completo segun la VRAM estimada (~12,4 GB), lo que permite autocompletado y explicacion de codigo sin depender de APIs externas.
+- Generacion de tests unitarios en Python: los resultados reportados en MBPP (100 % en la muestra evaluada) y HumanEval (86 %) sugieren utilidad para generar pruebas a partir de firmas de funciones, siempre validando la salida.
+- Prototipado rapido de scripts y utilidades CLI: el contexto de 32.768 tokens permite incluir varios ficheros de un proyecto pequeno en el prompt para tareas de refactorizacion acotada.
+- Educacion y tutoria de programacion: el modo "No-Thinking" ofrece baja latencia para respuestas directas en un chatbot de ensenanza, con la salvedad de que la evaluacion de MMLU (43 %) indica conocimiento general limitado.
+- Automatizacion de tareas de agente con herramientas registradas: la adherencia del 77,2 % al protocolo de herramientas permite integrarlo en bucles de agente simples, aunque el 0 % de finalizacion autonoma reportado obliga a supervision humana.
+- Despliegue en entornos con RAM limitada: el modo CPU/hibrido con ~11,5 GB de RAM permite ejecutarlo en estaciones de trabajo sin GPU dedicada, a costa de latencia mayor.
+- Traduccion tecnica y documentacion entre ingles e italiano, unicos idiomas declarados en el repositorio.
 
 ## Benchmarks y rendimiento
 
-Los siguientes datos corresponden a una evaluación realizada por el autor sobre una muestra parcial de los datasets, no sobre la suite completa. Por tanto, no son comparables con ejecuciones de referencia a gran escala.
+Los datos siguientes provienen de la model card del redistribuidor y fueron medidos sobre una muestra parcial de cada suite, no sobre el conjunto completo. La propia model card advierte que la puntuacion no es comparable con una ejecucion completa.
 
-| Dataset / Suite | Dominio | Correcto / Total | Precisión (%) |
+| Benchmark | Dominio | Aciertos / total | Precision |
 |---|---|---|---|
-| ARC-Challenge | Razonamiento escolar y científico | 8 / 9 | 89 |
-| BIG-Bench Hard | Lógica compleja y simbólica | 5 / 7 | 71 |
-| GPQA | Razonamiento académico de posgrado | 3 / 9 | 33 |
-| GSM8K | Matemáticas de varios pasos | 9 / 9 | 100 |
-| HellaSwag | Razonamiento de sentido común | 5 / 9 | 56 |
-| HumanEval | Generación de código Python (pass@1) | 6 / 7 | 86 |
-| MATH | Matemáticas de competición | 8 / 9 | 89 |
-| MBPP | Programación Python con tests | 9 / 9 | 100 |
-| MMLU | Conocimiento general | 6 / 14 | 43 |
-| MMLU-Pro | Razonamiento avanzado | 3 / 9 | 33 |
-| TruthfulQA | Factualidad y anti-alucinación | 7 / 9 | 78 |
-| Total | Todos los datasets evaluados | 69 / 100 | 69 |
+| ARC-Challenge | Ciencia y razonamiento escolar | 8 / 9 | 89 % |
+| BIG-Bench Hard | Logica y simbolismo multitarea | 5 / 7 | 71 % |
+| GPQA | Razonamiento academico de posgrado | 3 / 9 | 33 % |
+| GSM8K | Matematicas escolares multi-paso | 9 / 9 | 100 % |
+| HellaSwag | Sentido comun y NLI situacional | 5 / 9 | 56 % |
+| HumanEval | Codigo Python (pass@1) | 6 / 7 | 86 % |
+| MATH | Matematicas de competicion | 8 / 9 | 89 % |
+| MBPP | Programacion Python con tests | 9 / 9 | 100 % |
+| MMLU | Conocimiento general multi-materia | 6 / 14 | 43 % |
+| MMLU-Pro | Razonamiento avanzado multi-paso | 3 / 9 | 33 % |
+| TruthfulQA | Factualidad y anti-alucinacion | 7 / 9 | 78 % |
+| Total | Todas las suites evaluadas | 69 / 100 | 69 % |
 
-Protocolo de evaluación: code_execution, continuation_logprob, cot_generation, letter_logprob. Temperatura 0.0, seed 42. Reproducibilidad: `SHA256-9FB5093BE8146218`.
+| Modo de ejecucion | Precision | Preguntas superadas | Perfil |
+|---|---|---|---|
+| No-Thinking (respuesta directa) | 71,9 % | 41 / 57 | Latencia minima, sin tokens de razonamiento |
+| Deep Thinking (CoT) | 65,1 % | 28 / 43 | Traza de razonamiento multi-paso, delta de -6,8 % |
 
-Velocidad medida en una NVIDIA GeForce RTX 5070 Ti con 15.9 GB de VRAM:
-
-- Decodificación en un solo stream: 52,9 tokens/s.
-- Procesamiento de prompt: 23 tokens/s.
-- Throughput agregado durante la evaluación: 51,5 tokens/s (varias solicitudes simultáneas).
+Protocolo declarado: code_execution, continuation_logprob, cot_generation, letter_logprob; temperatura 0,0; semilla 42; hash de reproducibilidad SHA256-9FB5093BE8146218. No se han publicado resultados de benchmarks del modelo base en la informacion proporcionada.
 
 ## Requisitos de hardware
 
-- Tamaño del fichero GGUF: 6.84 GB.
-- VRAM recomendada para los pesos: 6.84 GB, más la memoria necesaria para las claves de atención y activaciones. Para contextos cortos, una GPU con al menos 10-12 GB puede ser suficiente; para aprovechar la ventana completa de 32.768 tokens, se recomiendan 16 GB o más.
-- GPU verificada: NVIDIA GeForce RTX 5070 Ti con 15.9 GB de VRAM.
-- Compatibilidad con GPU de consumo: es viable en tarjetas de 16 GB como RTX 4080, RTX 4090 o RTX 5070 Ti; en GPUs de 12 GB como RTX 3060 funcionará con contextos reducidos o con menor número de solicitudes concurrentes.
-- Opciones de despliegue: llama.cpp (`llama-cli`) con la opción `-ngl 99` para la aceleración completa por GPU, y Sigma Studio. Cualquier servidor compatible con formato GGUF (por ejemplo, Ollama o LM Studio) puede cargar el fichero.
-- Latencia y throughput: 52,9 tokens/s de decodificación en un solo stream y 23 tokens/s de procesamiento de prompt en la máquina de referencia. Estos valores dependen de la memoria disponible, la cuantización, la longitud del contexto y el driver, por lo que no se deben extrapolar a otros entornos sin mediciones adicionales.
+- VRAM estimada para inferencia: ~12,4 GB con offload completo en GPU; ~11,5 GB de RAM en modo CPU/hibrido.
+- GPU recomendadas segun la model card: RTX 3060 o RTX 4070 (12-16 GB de VRAM) o sistemas con 32 GB de RAM.
+- Cabe en GPU de consumo de 12 GB o mas; por debajo de 12 GB habria que recurrir a offload parcial de capas a CPU.
+- Opciones de despliegue: el formato GGUF es compatible con llama.cpp, Ollama y servidores basados en llama.cpp; la model card menciona "endpoints_compatible" y "SigmaEngine", pero no detalla integracion con vLLM ni TGI (que normalmente requieren safetensors, no GGUF).
+- Latencia y throughput: no disponibles. La model card solo describe cualitativamente el modo "No-Thinking" como de latencia minima, sin cifras de tokens por segundo.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Cuantización | Formato | Licencia |
+| Modelo | Parametros | Contexto | Formato | Licencia | Notas |
 |---|---|---|---|---|---|
-| Qwen2.5-Coder-14B-Instruct (base) | 14.7B | 32.768 | Sin cuantizar (BF16) | safetensors | Apache 2.0 (según modelo base) |
-| sigmanih/Qwen-Qwen2.5-Coder-14B-Instruct-GGUF-Q3_K_M (este modelo) | 14.7B | 32.768 | Q3_K_M | GGUF | other |
-| Qwen/Qwen2.5-Coder-14B-Instruct-GGUF | 14.7B | 32.768 | Q4_K_M, Q5_K_M, Q8_0, etc. | GGUF | Apache 2.0 (según modelo base) |
+| Qwen2.5-Coder-14B-Instruct (original) | 14,77 B | 32.768 | safetensors (BF16) | Apache-2.0 (segun el ecosistema Qwen) | Referencia de calidad completa; requiere ~28-30 GB en BF16 |
+| Esta publicacion (Q3_K_M) | 14,77 B | 32.768 | GGUF Q3_K_M | other (discrepancia con insignia Apache-2.0) | ~7,3 GB en disco, ~12,4 GB VRAM; perdida de precision por cuantizacion |
+| Otras cuantizaciones GGUF del mismo base (Q4_K_M, Q5_K_M, Q8_0) | 14,77 B | 32.768 | GGUF | segun el publicador | No disponibles en la informacion proporcionada; Q4_K_M suele ser el punto de equilibrio habitual |
+| Alternativas de tamano similar (p. ej. CodeLlama-13B-Instruct, DeepSeek-Coder-6.7B) | 6,7-13 B | variable | safetensors/GGUF | variable | No disponibles datos de rendimiento comparables en la informacion proporcionada |
 
-No se dispone de resultados de benchmarks para los modelos comparables en la información proporcionada. La comparativa se basa en características técnicas: el modelo base sin cuantizar ofrece mayor precisión a cambio de un mayor consumo de memoria, mientras que las variantes GGUF con cuantizaciones más altas (Q4_K_M, Q5_K_M, Q8_0) mantienen mejor calidad que el Q3_K_M, pero ocupan más espacio en disco y VRAM.
+No se dispone de datos de benchmarks del modelo original ni de alternativas en la informacion proporcionada, por lo que la comparativa se limita a parametros, contexto, formato y licencia.
 
 ## Limitaciones y advertencias
 
-- Los benchmarks presentados se han medido sobre una muestra parcial de los datasets y no reflejan el rendimiento real sobre la suite completa. No deben utilizarse para comparar con resultados de evaluaciones integrales.
-- La cuantización Q3_K_M reduce la precisión del modelo respecto a los pesos originales. Para tareas críticas, como razonamiento matemático avanzado o generación de código de alta complejidad, se recomiendan cuantizaciones superiores (Q5_K_M, Q8_0).
-- La licencia del repositorio se indica como "other". Aunque el modelo base se distribuye bajo Apache 2.0, este fichero cuantizado puede tener términos adicionales o restrictivos. Es necesario revisar la licencia antes de utilizarlo en entornos comerciales.
-- Solo se documentan los idiomas inglés e italiano en esta cuantización. No se confirma el soporte para otros idiomas, aunque el modelo base puede tener capacidades multilingües adicionales.
-- No se documentan sesgos específicos en la información proporcionada, pero el modelo puede heredar sesgos presentes en los datos de entrenamiento del modelo base.
-- Existe riesgo de alucinación. En TruthfulQA la muestra obtiene un 78%, lo que indica que una parte de las respuestas puede ser inexacta. Se recomienda validar las salidas en contextos de producción.
-- La ventana de contexto es de 32.768 tokens. En tareas que requieran procesar repositorios completos o documentos muy extensos, el contenido puede truncarse.
-- No se menciona soporte de tool calling o function calling en la documentación disponible. Aunque el modelo base Qwen2.5-Coder-Instruct puede ser compatible con estas características, no se debe asumir sin verificar.
-- Las velocidades de inferencia reportadas se han medido en una única máquina con RTX 5070 Ti y no deben extrapolarse a otros equipos sin pruebas específicas.
+- La cuantizacion Q3_K_M degrada la precision respecto al modelo en BF16; los benchmarks reportados corresponden a esta version cuantizada y a muestras parciales, no al modelo completo.
+- La model card advierte explicitamente que las puntuaciones se midieron sobre un subconjunto del dataset y no son comparables con ejecuciones completas.
+- GPQA (33 %) y MMLU-Pro (33 %) indican un rendimiento bajo en razonamiento academico avanzado; MMLU (43 %) sugiere conocimiento general limitado.
+- La evaluacion de agente reporta 0 % de finalizacion autonoma de tareas y 0 de 92 criterios analiticos verificados, pese a un 77,2 % de adherencia al protocolo de herramientas; no es fiable para bucles autonomos sin supervision.
+- El modo Deep Thinking (CoT) obtuvo peor resultado que el modo directo (-6,8 %) en la evaluacion reportada, lo que cuestiona el beneficio del razonamiento explicito en esta configuracion.
+- Riesgo de alucinacion de codigo y APIs inexistentes: TruthfulQA al 78 % en una muestra de 9 preguntas no es evidencia suficiente de robustez.
+- Idiomas declarados limitados a ingles e italiano en los metadatos del repositorio, aunque el modelo base Qwen2.5-Coder es multilingue; el castellano no figura entre los idiomas declarados.
+- Discrepancia de licencia: el campo del repositorio indica "other" mientras la model card muestra una insignia Apache-2.0. Antes de uso comercial debe verificarse la licencia del modelo base Qwen/Qwen2.5-Coder-14B-Instruct.
+- Publicacion de terceros con 450 descargas y 1 like; no es una publicacion oficial de Qwen y no hay garantia de mantenimiento.
+- La model card contiene errores de formato y campos vacios (por ejemplo, "Weight Format: Sconosciuto", "Total Disk Footprint: 0.0 GB"), lo que reduce la fiabilidad de la documentacion tecnica.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/sigmanih/Qwen-Qwen2.5-Coder-14B-Instruct-GGUF-Q3_K_M
-- Sigma Studio (GitHub): https://github.com/Sigmanih/SigmaStudio
-- Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-14B
-- Cuantizaciones oficiales del modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-14B-Instruct-GGUF
+- Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-14B-Instruct
+- Repositorio Sigma Studio: https://github.com/Sigmanih/SigmaStudio
+- Perfil del autor en Hugging Face: https://huggingface.co/sigmanih
+- Licencia Apache-2.0 (referenciada en la insignia): https://opensource.org/licenses/Apache-2.0

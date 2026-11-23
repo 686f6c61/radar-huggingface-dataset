@@ -2,90 +2,91 @@
 
 ## Resumen
 
-Parakeet Ultra ExecuTorch es una exportación del modelo de reconocimiento automático del habla (ASR) Parakeet Ultra de Moondream, empaquetada para el runtime ExecuTorch v1.5.1 con el backend XNNPACK. El modelo subyacente es un post-entrenamiento de parakeet-tdt-0.6b-v3 de NVIDIA, una arquitectura TDT (Token-and-Duration Transducer) de aproximadamente 600 millones de parámetros. Esta versión concreta está pensada para inferencia en dispositivo (on-device), concretamente para dictado por voz offline en la aplicación WM Keyboard.
+Parakeet Ultra ExecuTorch es una exportación del modelo de reconocimiento automático del habla (ASR) Parakeet Ultra de Moondream, a su vez un post-entrenamiento de parakeet-tdt-0.6b-v3 de NVIDIA. La exportación la firma wasi-master y está pensada para ejecutarse con ExecuTorch v1.5.1 sobre el backend XNNPACK, lo que permite inferencia local en dispositivos sin depender de un servidor. El modelo se distribuye como un fichero `.pte` cuantizado (8 bits en activaciones dinámicas y 4 bits en pesos por grupos de 32, esquema 8da4w) junto con el tokenizer SentencePiece original.
 
-La relevancia de esta ficha radica en que demuestra un flujo completo de conversión de pesos de transformers a NeMo, cuantización a 8da4w (activaciones de 8 bits dinámicas, pesos de 4 bits en grupos de 32) y exportación a un formato `.pte` ejecutable sin dependencias de Python. El tamaño del repositorio es de 0,7 GB, lo que refleja el peso compacto del artefacto cuantizado.
+El modelo resuelve el problema de la transcripción de voz offline en aplicaciones de teclado y dictado, y es relevante porque demuestra un pipeline completo de conversión de pesos de transformers a NeMo, cuantización y exportación a un runtime embebido. Mantiene la arquitectura TDT (Token-and-Duration Transducer) del modelo base, con unos 0,6 mil millones de parámetros, y cubre 25 idiomas europeos.
 
-El modelo cubre 25 idiomas europeos y está publicado bajo licencia CC-BY-4.0. No se han publicado resultados de benchmarks propios en la información disponible; cualquier cifra de rendimiento debe remitirse a la del modelo base parakeet-tdt-0.6b-v3.
+El repositorio ocupa 1,6 GB y acumula 515 descargas en el momento de la consulta. La licencia es CC-BY-4.0, heredada del modelo original, y la exportación conserva la misma interfaz de programa (`preprocessor`, `encoder`, `decoder_step`, `joint`) que la exportación oficial de parakeet-tdt-0.6b-v3 en ExecuTorch.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
 | Arquitectura | TDT (Token-and-Duration Transducer), exportada a ExecuTorch con backend XNNPACK |
-| Parametros totales | aproximadamente 0,6 mil millones (heredados de parakeet-tdt-0.6b-v3) |
-| Parametros activos | no disponible (no es MoE) |
+| Parametros totales | 0,6 mil millones (heredados de parakeet-tdt-0.6b-v3) |
+| Parametros activos | no disponible (no es un modelo MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | 8da4w (activaciones de 8 bits dinamicas, pesos de 4 bits en grupos de 32) |
+| Tipos de cuantizacion | 8da4w (activaciones dinámicas de 8 bits, pesos de 4 bits en grupos de 32) |
 | Idiomas soportados | en, de, fr, es, it, pt, ru, uk, hr, sl, lv, lt, et, fi, sv, da, nl, pl, cs, sk, hu, ro, bg, el, mt (25 idiomas) |
 | Licencia | cc-by-4.0 |
-| Formato de pesos | `.pte` (ExecuTorch); tokenizer SentencePiece (`tokenizer.model`) |
+| Formato de pesos | `.pte` (ExecuTorch) y `tokenizer.model` (SentencePiece) |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un transducer TDT, una variante de arquitectura encoder-decoder con un componente conjunto (joint) que predice simultáneamente tokens y duraciones. La exportación conserva los cuatro métodos del runner oficial de ExecuTorch para parakeet-tdt-0.6b-v3: `preprocessor`, `encoder`, `decoder_step` y `joint`. Esto implica que el archivo `.pte` es compatible con el runner estándar de Parakeet sin modificaciones.
+El modelo base es parakeet-tdt-0.6b-v3 de NVIDIA, un transducer TDT con unos 0,6 mil millones de parámetros. Moondream publicó Parakeet Ultra como pesos de Hugging Face transformers, y esta exportación los reconvierte al formato de NeMo: los tensores se renombraron con el mapeo de conversión NeMo de transformers ejecutado en sentido inverso y se cargaron en el modelo NeMo de parakeet-tdt-0.6b-v3. El mapeo se validó previamente sobre v3, comprobando que cada peso NeMo coincide con el tensor homónimo de la conversión oficial de NVIDIA. La cabeza de actividad de voz (voice-activity) de Ultra no tiene equivalente en el modelo NeMo y se descartó.
 
-El proceso de conversión consistió en renombrar los tensores de los pesos transformers publicados por Moondream a la nomenclatura de NeMo, usando el mapeo de conversión NeMo de transformers en sentido inverso, y cargarlos en el modelo NeMo de parakeet-tdt-0.6b-v3. El mapeo se validó previamente sobre el propio v3, comprobando que cada peso NeMo coincide con el tensor homónimo de la conversión a transformers de NVIDIA. La cabeza de detección de actividad de voz (VAD) de Ultra se descartó por no tener equivalente en el modelo NeMo. Posteriormente se cuantizó y exportó con el script `examples/models/parakeet/export_parakeet_tdt.py` de ExecuTorch v1.5.1. El repositorio incluye un `manifest.json` con fuentes fijadas, hashes de archivos y transcripciones de prueba.
-
-No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni si hubo RLHF o DPO en el post-entrenamiento de Moondream.
+La cuantización y exportación se realizaron con el script `examples/models/parakeet/export_parakeet_tdt.py` de ExecuTorch v1.5.1. El resultado es un programa `.pte` con los métodos `preprocessor`, `encoder`, `decoder_step` y `joint`, idénticos a los de la exportación oficial de parakeet-tdt-0.6b-v3, de modo que el runner de Parakeet de ExecuTorch puede ejecutarlo sin cambios. El repositorio incluye un `manifest.json` con las fuentes fijadas, los hashes de los ficheros y transcripciones de prueba. No se detalla en la información disponible el volumen de datos de entrenamiento, la composición del dataset ni si hubo RLHF o DPO.
 
 ## Capacidades
 
-- Reconocimiento automático del habla (ASR) offline, sin conexión a red.
-- Transcripción multilingüe en 25 idiomas europeos, incluidos eslavos, bálticos, nórdicos y románicos.
-- Ejecución en dispositivo mediante ExecuTorch y XNNPACK, sin dependencia de Python en tiempo de inferencia.
-- Integración directa con el runner de Parakeet de ExecuTorch (métodos `preprocessor`, `encoder`, `decoder_step`, `joint`).
-- Tokenización SentencePiece idéntica a la del modelo base parakeet-tdt-0.6b-v3.
-- No se documentan capacidades de tool calling, agentes, razonamiento multi-paso, visión ni audio más allá del ASR.
+- Reconocimiento automático del habla (ASR) offline con arquitectura TDT.
+- Transcripción multilingüe en 25 idiomas europeos: inglés, alemán, francés, español, italiano, portugués, ruso, ucraniano, croata, esloveno, letón, lituano, estonio, finés, sueco, danés, neerlandés, polaco, checo, eslovaco, húngaro, rumano, búlgaro, griego y maltés.
+- Ejecución local en dispositivos mediante ExecuTorch y XNNPACK, sin necesidad de servidor.
+- Integración directa con el runner de Parakeet de ExecuTorch gracias a la compatibilidad de métodos del programa.
+- Tokenización con SentencePiece, sin cambios respecto a parakeet-tdt-0.6b-v3.
+- Uso previsto en dictado por voz dentro de la aplicación WM Keyboard.
+- No se documentan capacidades de tool calling, agentes, visión ni audio más allá del ASR.
 
 ## Casos de uso
 
-- Dictado por voz en teclados móviles: es el caso de uso previsto por el autor, ya que WM Keyboard descarga este `.pte` para transcripción offline en el dispositivo, sin enviar audio a servidores externos.
-- Aplicaciones de notas de voz sin conexión: el modelo puede transcribir grabaciones en local en entornos sin red, útil en dispositivos con conectividad intermitente o requisitos de privacidad estrictos.
-- Subtitulado en tiempo real en aplicaciones de escritorio o móviles: al ejecutarse con ExecuTorch y XNNPACK, puede integrarse en apps nativas que necesiten transcripción de baja latencia sin backend.
-- Procesamiento por lotes de archivos de audio en pipelines locales: el artefacto `.pte` puede invocarse desde un runner de ExecuTorch para transcribir colecciones de audio en máquinas sin GPU.
-- Asistentes de accesibilidad: transcripción de voz a texto para usuarios con movilidad reducida, con independencia de servicios en la nube y con soporte de 25 idiomas.
-- Investigación en ASR on-device: sirve como referencia reproducible de conversión transformers → NeMo → ExecuTorch con cuantización 8da4w, gracias al `manifest.json` y al script de exportación publicado.
-- Aplicaciones de transcripción multilingüe en Europa: el amplio conjunto de idiomas (eslavos, bálticos, nórdicos) permite desplegar una única app con cobertura lingüística regional.
+- Dictado por voz en teclados móviles: WM Keyboard descarga este `.pte` y lo ejecuta con ExecuTorch para transcribir la voz del usuario en local, sin enviar audio a un servidor y con la cuantización 8da4w reduciendo el coste de cómputo en el dispositivo.
+- Transcripción offline en aplicaciones de escritorio: al ser un programa ExecuTorch, puede integrarse en herramientas nativas que necesiten ASR sin conexión, con un único fichero de modelo y el tokenizer SentencePiece.
+- Subtitulado y notas de reuniones en local: el soporte de 25 idiomas europeos permite transcribir reuniones multilingües sin salir del dispositivo, útil en entornos con requisitos de privacidad.
+- Procesamiento por lotes en servidores con CPU: el backend XNNPACK y la cuantización 4-bit permiten desplegar la transcripción en hardware sin GPU dedicada.
+- Investigación en ASR embebido: sirve como referencia reproducible de conversión transformers a NeMo, cuantización y exportación a ExecuTorch, con manifest de hashes y transcripciones de prueba.
+- Aplicaciones de accesibilidad: entrada de texto por voz para usuarios con dificultades motoras, ejecutándose localmente y con latencia baja al no requerir red.
+- Prototipado de pipelines ASR multilingües: el modelo cubre lenguas eslavas, bálticas y nórdicas poco frecuentes en otros modelos abiertos, lo que facilita pruebas rápidas en esas lenguas.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El repositorio no incluye métricas de WER, latencia ni throughput; solo transcripciones de prueba en el `manifest.json`. Para referencias de rendimiento debe consultarse la documentación del modelo base parakeet-tdt-0.6b-v3 de NVIDIA.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible de forma explícita; el artefacto cuantizado ocupa 0,7 GB en disco (8da4w), por lo que la huella en memoria es del orden de cientos de MB.
-- GPU recomendadas: no aplica de forma directa, ya que el destino es ExecuTorch con XNNPACK, orientado a CPU y aceleradores móviles; no se documentan requisitos de GPU.
-- Cabe en GPU consumer: el tamaño cuantizado (0,7 GB) es compatible con cualquier GPU consumer, pero el runtime objetivo es on-device, no CUDA.
-- Opciones de despliegue: ExecuTorch v1.5.1 con backend XNNPACK y el runner de Parakeet; no se documentan exportaciones para vLLM, llama.cpp, Ollama ni TGI.
-- Latencia y throughput estimados: no disponibles.
+- El repositorio pesa 1,6 GB, lo que da una idea del tamaño del artefacto descargable; el `.pte` cuantizado 8da4w es el componente principal.
+- Al estar exportado a ExecuTorch con XNNPACK, el despliegue previsto es en CPU y dispositivos embebidos, no en GPU mediante frameworks de servidor.
+- VRAM estimada para inferencia en GPU: no disponible.
+- GPU recomendadas: no disponible; el formato no está pensado para ejecución en GPU con vLLM, TGI o llama.cpp.
+- Compatibilidad con GPU de consumo: no disponible.
+- Opciones de despliegue: runtime de ExecuTorch v1.5.1 con backend XNNPACK y el runner de Parakeet de ExecuTorch.
+- Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Idiomas | Licencia | Formato / despliegue |
+| Modelo | Parametros | Contexto | Idiomas | Licencia | Formato |
 |---|---|---|---|---|---|
-| Parakeet Ultra ExecuTorch (este) | ~0,6 B | no disponible | 25 | CC-BY-4.0 | `.pte` / ExecuTorch + XNNPACK |
-| parakeet-tdt-0.6b-v3 (NVIDIA) | ~0,6 B | no disponible | no disponible en esta ficha | no disponible en esta ficha | NeMo / transformers |
-| Parakeet Ultra (Moondream) | ~0,6 B | no disponible | no disponible en esta ficha | CC-BY-4.0 | transformers |
+| Parakeet Ultra ExecuTorch (esta ficha) | 0,6 mil millones | no disponible | 25 | cc-by-4.0 | `.pte` (ExecuTorch) |
+| parakeet-tdt-0.6b-v3 (NVIDIA) | 0,6 mil millones | no disponible | no disponible en la informacion | no disponible en la informacion | pesos NeMo / transformers |
+| Parakeet Ultra (Moondream) | 0,6 mil millones | no disponible | no disponible en la informacion | cc-by-4.0 | pesos transformers |
 
-La comparativa se limita a la familia Parakeet porque la información proporcionada no incluye datos de benchmarks ni especificaciones de modelos alternativos de otros autores. No se dispone de cifras de WER para comparar rendimiento entre estas variantes.
+La comparación se limita a los modelos citados en la información disponible; no se dispone de datos de rendimiento ni de contexto para establecer diferencias cuantitativas.
 
 ## Limitaciones y advertencias
 
-- El modelo es una exportación cuantizada a 4 bits (8da4w); la cuantización puede degradar la precisión de transcripción respecto a los pesos originales en transformers, aunque no se han publicado métricas que lo cuantifiquen.
-- La cabeza de detección de actividad de voz (VAD) de Parakeet Ultra se eliminó en la conversión a NeMo; no está disponible en este artefacto.
-- Solo se soportan los 25 idiomas listados; no hay soporte documentado para otras lenguas.
-- El destino es ExecuTorch con XNNPACK; no es un artefacto para PyTorch/CUDA estándar ni para servidores de inferencia convencionales.
-- No se han publicado benchmarks propios; el rendimiento real en producción debe validarse contra el modelo base.
-- Riesgo de alucinación y sesgos: no documentado en la información disponible; al ser un modelo ASR, los errores se manifiestan como transcripciones incorrectas, especialmente en audio con ruido o acentos no representados en el entrenamiento.
-- Licencia CC-BY-4.0: permite uso comercial con atribución; deben conservarse los créditos a Moondream y NVIDIA, y documentarse los cambios (conversión a NeMo, cuantización y exportación).
-- El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, por lo que no hay validación comunitaria del artefacto.
+- Es una exportación, no un modelo nuevo: hereda los sesgos y limitaciones de Parakeet Ultra y de parakeet-tdt-0.6b-v3.
+- Riesgo de alucinación y errores de transcripción inherente a los modelos ASR, especialmente con audio ruidoso o acentos no representados.
+- La cabeza de actividad de voz de Ultra se eliminó en la conversión, por lo que no se dispone de esa funcionalidad.
+- La cobertura lingüística se limita a 25 idiomas europeos; no se documentan otros idiomas.
+- La licencia CC-BY-4.0 exige atribución a Moondream y a NVIDIA, e indica los cambios realizados (conversión a formato NeMo, cuantización y exportación a ExecuTorch).
+- El formato `.pte` está atado a ExecuTorch v1.5.1 y al backend XNNPACK; no es directamente utilizable en vLLM, llama.cpp u otros runtimes.
+- No se han publicado benchmarks en la información disponible, por lo que no puede evaluarse la pérdida de precisión frente al modelo original sin pruebas propias.
+- El repositorio tiene 0 likes y 515 descargas, lo que indica una validación comunitaria limitada.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/wasi-master/parakeet-ultra-executorch
-- Modelo base (Moondream Parakeet Ultra): https://huggingface.co/moondream/parakeet-ultra
-- Modelo original NVIDIA: https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3
+- Modelo en Hugging Face: https://huggingface.co/wasi-master/parakeet-ultra-executorch
+- Modelo base Parakeet Ultra (Moondream): https://huggingface.co/moondream/parakeet-ultra
+- Modelo original parakeet-tdt-0.6b-v3 (NVIDIA): https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3
 - ExecuTorch: https://github.com/pytorch/executorch
 - Script de exportación: https://github.com/wasi-master/wmkeyboard/blob/main/tools/parakeet-ultra/export_ultra.py
 - Aplicación WM Keyboard: https://github.com/wasi-master/wmkeyboard

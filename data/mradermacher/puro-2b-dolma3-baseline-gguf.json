@@ -1,0 +1,53 @@
+{
+  "schema": 2,
+  "id": "mradermacher/Puro-2B-Dolma3-Baseline-GGUF",
+  "slug": "mradermacher-puro-2b-dolma3-baseline-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Puro-2B-Dolma3-Baseline-GGUF",
+  "created_at": "2026-11-23T01:39:23.000Z",
+  "updated_at": "2026-11-23T01:49:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "puro",
+    "continual-pretraining",
+    "base-model",
+    "en",
+    "dataset:allenai/dolma3_dolmino_mix-100B-1125",
+    "base_model:thu-pacman/Puro-2B-Dolma3-Baseline",
+    "base_model:quantized:thu-pacman/Puro-2B-Dolma3-Baseline",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2031739904,
+  "parameters_human": "2.03B",
+  "storage_bytes": 18614553600,
+  "storage_human": "18.6 GB",
+  "context_length": 4096,
+  "base_model": "thu-pacman/Puro-2B-Dolma3-Baseline",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

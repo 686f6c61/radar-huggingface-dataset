@@ -72,13 +72,13 @@
       "task": "Automatic Speech Recognition",
       "dataset": "Earnings22-Cleaned-AA-chunked",
       "metric": "Test WER",
-      "value": 5.85
+      "value": 5.88
     },
     {
       "task": "Automatic Speech Recognition",
       "dataset": "Gigaspeech-Cleaned",
       "metric": "Test WER",
-      "value": 7.11
+      "value": 7.12
     },
     {
       "task": "Automatic Speech Recognition",
@@ -90,32 +90,58 @@
       "task": "Automatic Speech Recognition",
       "dataset": "LS Other",
       "metric": "Test WER",
-      "value": 2.89
+      "value": 2.92
     },
     {
       "task": "Automatic Speech Recognition",
       "dataset": "SPGISpeech",
       "metric": "Test WER",
-      "value": 2.75
+      "value": 2.74
     },
     {
       "task": "Automatic Speech Recognition",
       "dataset": "URGENT2024",
       "metric": "Test WER",
-      "value": 9.48
+      "value": 9.44
     },
     {
       "task": "Automatic Speech Recognition",
       "dataset": "Voice Arena Monsoon",
       "metric": "Test WER",
-      "value": 3.5
+      "value": 3.51
     },
     {
       "task": "Automatic Speech Recognition",
       "dataset": "Voxpopuli-AA-Cleaned",
       "metric": "Test WER",
-      "value": 2.11
+      "value": 2.07
     }
   ],
-  "sources": []
+  "sources": [
+    {
+      "title": "Orthopaedic Research | UK Charity",
+      "url": "https://oruk.org/",
+      "snippet": "Not only is ORUK providing funding to help us get to the next stage in our development, but it has also opened-up multiple links to …Read more"
+    },
+    {
+      "title": "Oruk — Voice APIs: STT, Tone and Voice Agents",
+      "url": "https://oruk.ai/",
+      "snippet": "Play recorded voices, compare their transcripts and acoustic scores, and inspect the API response. Explore Oruk models, …Read more"
+    },
+    {
+      "title": "Speech models and open weights | oruk",
+      "url": "https://oruk.ai/models",
+      "snippet": "Explore Oruk-1.7B, Spectra-2 and Oruk-MoE. Find downloadable speech models, runtime guides and supported API endpoints."
+    },
+    {
+      "title": "oruk/orukeet · Hugging Face",
+      "url": "https://huggingface.co/oruk/orukeet",
+      "snippet": "Sep 9, 2026 · Choose Local → Oruk → Orukeet, then Download. Recognition runs locally after installation. Follow the file-upload …Read more"
+    },
+    {
+      "title": "Our Research Funds — Orthopaedic Research UK",
+      "url": "https://oruk.org/our-research-funds/",
+      "snippet": "Nov 9, 2026 · ORUK MSK Innovation Accelerator Programme Sponsored by TIME Interconnect MedTech UK Limited, this unique …Read more"
+    }
+  ]
 }

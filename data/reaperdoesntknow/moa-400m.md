@@ -2,93 +2,90 @@
 
 ## Resumen
 
-MoA-400M (denominado en la model card como MoA-Metric-LM-400M) es un modelo de lenguaje causal de aproximadamente 400 millones de parámetros desarrollado por el usuario independiente reaperdoesntknow. Su propuesta central es sustituir la atención por producto escalar estándar por una atención "métrica" que puntúa las relaciones entre query y key mediante distancias L2, coseno o Mahalanobis diagonal, junto con una variante de RoPE denominada BlackHoleRoPE. El modelo se presenta como un experimento de investigación orientado a hardware modesto, con especial énfasis en ejecución sobre CPU en FP32.
+MoA-400M (publicado también como MoA-Metric-LM-400M Convergent) es un modelo de lenguaje causal de aproximadamente 400 millones de parámetros desarrollado por el usuario reaperdoesntknow. Su particularidad es que sustituye la atención por producto escalar estándar por una atención "métrica" basada en distancias (L2, coseno y Mahalanobis diagonal), combinada con un bloque Mixture-of-Architectures (MoA) que enruta cada token entre cuatro cabezas especializadas. Incorpora además BlackHoleRoPE, una variante aprendible de RoPE pensada para mejorar la estabilidad numérica y la extrapolación de longitud.
 
-La arquitectura combina bloques MoA (Mixture-of-Architectures) que enrutan cada token, mediante un router suave, entre cuatro cabezas: una convolución local, atención multi-cabeza métrica, un MLP de mezcla de canales y una atención multi-query métrica con K/V compartidas. El contexto de entrenamiento se sitúa principalmente entre 512 y 1024 tokens, aunque la configuración permite hasta 2048. El modelo está integrado en el ecosistema Transformers y se distribuye con pesos compatibles con `AutoModelForCausalLM`.
+El modelo está diseñado explícitamente para entrenar y ejecutar en hardware modesto, con orientación CPU-first (FP32 sobre AVX2/AVX-512), y es compatible con la librería Transformers. Se posiciona como una pieza de investigación sobre sesgos inductivos geométricos y atención basada en distancias, más que como un modelo de producción generalista. El contexto de entrenamiento se sitúa en 512-1024 tokens, con configuración que permite hasta 2048.
 
-Su relevancia es fundamentalmente investigadora: explora sesgos inductivos geométricos (atención basada en distancias, regularizador de desigualdad triangular) y eficiencia en CPU, más que competir en rendimiento con modelos de escala similar entrenados con presupuestos masivos de tokens. Los datos publicados sobre entrenamiento son escasos y el número de descargas (2056) sugiere un interés moderado dentro de la comunidad.
+Es relevante ahora por su enfoque poco habitual (atención métrica con regularizador de desigualdad triangular) y por su bajo coste de ejecución, aunque su presupuesto de entrenamiento es muy reducido (cientos de miles de tokens) y no se han publicado resultados de benchmarks. La licencia indicada en la model card es Apache-2.0, aunque el campo de licencia de la ficha de Hugging Face figura como no disponible.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer causal con bloques MoA (Mixture-of-Architectures): LocalConv, MetricMHAttention, ChannelMix y MetricMQA; atención métrica (L2 / coseno / Mahalanobis diagonal) y BlackHoleRoPE |
+| Arquitectura | Transformer causal con atención métrica (L2 / coseno / Mahalanobis diagonal), bloque MoA con router por token y BlackHoleRoPE |
 | Parametros totales | ~400 M (el recuento exacto depende del vocabulario; ver config.json) |
-| Parametros activos | No aplica (no es MoE; el router mezcla arquitecturas, no expertos dispersos) |
+| Parametros activos | No es MoE denso clásico; el router mezcla cuatro cabezas por token (LocalConv, MetricMHAttention, ChannelMix, MetricMQA) |
 | Longitud de contexto | Entrenado principalmente a 512-1024 tokens; la configuración permite hasta 2048 |
-| Tipos de cuantizacion | No se documentan cuantizaciones publicadas; inferencia soportada en FP32, BF16 y FP16 |
+| Tipos de cuantizacion | No se documentan cuantizaciones específicas; inferencia soportada en FP32, BF16 y FP16 |
 | Idiomas soportados | No disponible |
-| Licencia | Apache-2.0 según la model card (el campo de licencia del repo en Hugging Face figura como no disponible) |
-| Formato de pesos | Pesos Transformers (safetensors/PyTorch); repo de 3,4 GB |
+| Licencia | Apache-2.0 según la model card; el campo de licencia del repo figura como no disponible |
+| Formato de pesos | Pesos compatibles con Transformers (safetensors/PyTorch); tamaño del repo 3,4 GB |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un transformer causal de 12 a 24 capas (según variante), con tamaño oculto de al menos 1024 en la variante de 400 M. Cada bloque MoA incorpora un router por token que mezcla suavemente cuatro rutas: LocalConv (convolución depthwise local), MetricMHAttention (atención multi-cabeza con puntuaciones basadas en distancia), ChannelMix (MLP) y MetricMQA (atención multi-query con K/V compartidas). Las puntuaciones de atención métrica se calculan como L2 negativo escalado, coseno normalizado o Mahalanobis diagonal por cabeza, con un escalado logarítmico aprendible y una posible máscara de poda por radio.
+El modelo es un LM causal con 12-24 capas (según variante), hidden size de al menos 1024 y atención nativa métrica. Cada cabeza puntúa mediante L2 (-||q-k||²/sqrt(d)), coseno normalizado o Mahalanobis diagonal por cabeza, con logits escalados por un α aprendible y una máscara opcional de poda por radio. La ruta de valores usa proyectores Up/Down con gating. Se añade MetricMQA (multi-query con K/V compartidos) para throughput y memoria, y un bloque MoA donde un TokenRouter asigna pesos por token a cuatro cabezas: LocalConv (convolución depthwise local), MetricMHAttention, ChannelMix (MLP) y MetricMQA. HyperFFN combina SwiGLU, SepConv1d y una ruta de bajo rango, también mezclada por router.
 
-BlackHoleRoPE aplica rotación unitaria solo a Q/K (preservando normas) y una amplificación de energía acotada a V, con parámetros sintetizados desde una base de Fourier pequeña, lo que reduce el tamaño de caché y busca generalización en longitud. El FFN es un HyperFFN que combina SwiGLU, SepConv1d y una ruta de bajo rango. Se incluye un regularizador de desigualdad triangular sobre tripletas aleatorias para evitar geometrías métricas degeneradas.
-
-El entrenamiento se realizó en CPU en FP32, con AdamW/Adam, batch de 2-4 y secuencias de 512-1024 tokens. Los datasets citados son Agentic-Long-Context-Understanding-QA y MATH-500, con presupuestos de "cientos de miles de tokens" (la model card menciona ~256000 tokens por dataset). No se documentan fases de RLHF, DPO ni datos multilingües.
+BlackHoleRoPE aplica rotación unitaria solo a Q/K (preserva normas) y una amplificación de energía acotada en V (energy_min..energy_max) con modulación opcional por discrepancia; sus parámetros se sintetizan desde una base de Fourier pequeña, lo que reduce el tamaño de caché y busca generalización de longitud. Un regularizador de desigualdad triangular penaliza violaciones métricas sobre tripletas aleatorias. El entrenamiento se realizó en CPU en FP32 con AdamW/Adam, batch 2-4 y secuencias de 512-1024, sobre los datasets Agentic-Long-Context-Understanding-QA y MATH-500 (aproximadamente 256.000 tokens cada uno según la model card). El presupuesto total es de cientos de miles de tokens; no se documenta RLHF ni DPO.
 
 ## Capacidades
 
-- Generación de texto causal y conversación multi-turno básica.
-- Razonamiento matemático de estilo paso a paso, entrenado sobre MATH-500.
-- Lectura y QA sobre contexto largo moderado (hasta 1024-2048 tokens).
-- Seguimiento de contexto y recuperación de información en documentos largos (dataset Agentic-Long-Context-Understanding-QA).
-- Inferencia en CPU en FP32 sobre máquinas con AVX2/AVX-512.
-- Compatibilidad con el pipeline `text-generation` de Transformers y con `AutoModelForCausalLM`.
+- Generación de texto causal conversacional y de formato pregunta-respuesta.
+- Razonamiento matemático de estilo paso a paso (entrenado con MATH-500).
+- Lectura y QA sobre contexto largo dentro de los límites de entrenamiento (512-1024 tokens).
+- Seguimiento de contexto y recuperación de información en ventanas moderadas.
+- Inferencia en CPU en FP32 sobre AVX2/AVX-512, además de FP16/BF16 en GPU.
+- Compatibilidad con `AutoModelForCausalLM`, `pipeline` y `generate` de Transformers.
 - No se documenta soporte de tool calling, function calling, agentes multi-paso, visión, audio ni modo thinking explícito.
 - Capacidades multilingües: no disponibles.
 
 ## Casos de uso
 
-- Asistente compacto en local: el modelo puede ejecutarse en CPU sin GPU dedicada, lo que permite desplegar un asistente de texto en portátiles o servidores de bajo coste para tareas de generación breve.
-- Investigación sobre atención métrica: sirve como banco de pruebas reproducible para estudiar atención basada en distancias (L2, coseno, Mahalanobis) frente a producto escalar, con pesos públicos y código compatible con Transformers.
-- Experimentos de generalización en longitud: BlackHoleRoPE está diseñado para extrapolar; el modelo permite evaluar calidad y throughput más allá de 1024 tokens en entornos controlados.
-- Razonamiento matemático elemental: con prompts de estilo "Reasoning:", puede generar cadenas de pasos para problemas aritméticos y algebraicos sencillos, útil en demos educativas.
-- QA sobre documentos largos moderados: con ventanas de 1024-2048 tokens puede responder preguntas sobre informes o artículos que quepan en ese contexto.
-- Prototipado de arquitecturas híbridas: el bloque MoA con router por token y el regularizador de desigualdad triangular son componentes reutilizables para investigar mezclas de arquitecturas en modelos pequeños.
-- Evaluación de eficiencia en CPU: útil para medir latencia y memoria en FP32/BF16/FP16 en hardware sin acelerador, comparando con transformers densos de tamaño similar.
+- Asistentes compactos en local: el modelo cabe en CPU y en GPUs de consumo, por lo que puede desplegarse como asistente de texto en entornos sin acelerador dedicado, aceptando contextos de hasta 1024 tokens.
+- Investigación sobre atención métrica: sirve como banco de pruebas para comparar atención por distancias (L2, coseno, Mahalanobis) frente a producto escalar en tareas controladas y con presupuestos pequeños.
+- Experimentos de enrutado MoA: permite estudiar el comportamiento del TokenRouter y de las puertas por cabeza en modelos pequeños antes de escalar el diseño.
+- Pruebas de extrapolación posicional: BlackHoleRoPE puede evaluarse en tareas de longitud superior a la de entrenamiento (hasta 2048 según configuración) para medir degradación de calidad.
+- Razonamiento matemático elemental: con prompts de estilo "Reasoning:" puede generar cadenas de pasos para problemas aritméticos y algebraicos sencillos, útil en demos educativas.
+- QA sobre documentos cortos: para lectura de fragmentos de hasta ~1000 tokens en pipelines de extracción de respuestas, siempre con validación humana.
+- Prototipado de pipelines Transformers: al ser compatible con `pipeline("text-generation")`, sirve para validar integraciones y flujos de inferencia antes de migrar a modelos mayores.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card solo indica que los registros de entrenamiento mostraron un descenso saludable de la pérdida en longitudes de 512 y 1024 tokens en ejecuciones sobre CPU, sin cifras concretas de MMLU, HumanEval, GSM8K ni comparaciones numéricas.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: no aplica para CPU; en GPU, ~1,6 GB en FP16/BF16 y ~3,2 GB en FP32 para los ~400 M de parámetros, más overhead de activaciones y caché KV.
-- GPU recomendadas: cualquier GPU con al menos 4-6 GB de VRAM para FP16 (RTX 3060, RTX 4060, RTX 4090, A100, H100); el modelo está pensado principalmente para CPU.
-- Cabe en GPU de consumo: sí, en tarjetas con 6 GB o más en FP16; en FP32 conviene disponer de 8 GB o más.
-- Despliegue: Transformers (`AutoModelForCausalLM`, `pipeline`), con `accelerate` y `sentencepiece`. No se documenta soporte verificado de vLLM, llama.cpp, Ollama o TGI, y la atención métrica personalizada probablemente requiera código propio, por lo que estos motores no son compatibles de forma directa.
-- Latencia y throughput: no disponibles. La model card solo indica que el entrenamiento e inferencia en FP32 funcionan bien en AVX2/AVX-512.
+- VRAM estimada: con ~400 M de parámetros, en FP32 ocupa aproximadamente 1,6 GB de pesos; en FP16/BF16, unos 0,8 GB. Añadiendo caché KV y overhead, el consumo real es de unos 2-3 GB en FP32 para contextos de 1024-2048 tokens.
+- GPU recomendadas: cualquier GPU con 4 GB o más de VRAM es suficiente; no se requiere A100 ni H100. Una RTX 3060, RTX 4060 o superior funciona con holgura.
+- Consumer GPU: sí, cabe en GPUs de consumo e incluso en CPU. El autor indica que está implementado para funcionar bien en FP32 sobre AVX2/AVX-512.
+- Opciones de despliegue: Transformers (`AutoModelForCausalLM`, `pipeline`), con `accelerate` para `device_map`. No se documenta soporte de vLLM, llama.cpp, Ollama ni TGI; al no haber pesos GGUF publicados, llama.cpp/Ollama no están disponibles de forma directa.
+- Latencia y throughput: no disponibles. El autor solo reporta descenso saludable de la pérdida en ejecuciones CPU a 512 y 1024 tokens.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
+| Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MoA-400M | ~400 M | 512-1024 (hasta 2048 en config) | Apache-2.0 (según model card) | Hugging Face, Transformers | Atención métrica y BlackHoleRoPE; orientado a CPU |
-| SmolLM2-360M | 360 M | 8192 | Apache-2.0 | Hugging Face, Transformers, GGUF | Transformer denso convencional, ampliamente adoptado |
-| Qwen2.5-0.5B | 500 M | 32768 | Apache-2.0 | Hugging Face, Transformers, GGUF | Transformer denso con contexto largo y multilingüe |
-| TinyLlama-1.1B | 1,1 B | 2048 | Apache-2.0 | Hugging Face, Transformers, GGUF | Mayor tamaño y contexto moderado; ecosistema maduro |
+| MoA-400M | ~400 M | 512-1024 entrenamiento; hasta 2048 en config | Atención métrica + MoA + BlackHoleRoPE | Apache-2.0 (model card) | Hugging Face, Transformers |
+| Qwen2.5-0.5B | ~500 M | 32.768 tokens | Transformer denso estándar con RoPE | Apache-2.0 | Hugging Face, amplio ecosistema |
+| SmolLM2-360M | ~360 M | 8.192 tokens | Transformer denso estándar | Apache-2.0 | Hugging Face, GGUF y Ollama |
+| TinyLlama-1.1B | ~1.100 M | 2.048 tokens | Transformer denso estándar | Apache-2.0 | Hugging Face, GGUF y Ollama |
 
-No se dispone de datos de benchmarks para MoA-400M que permitan una comparación cuantitativa de rendimiento con estas alternativas.
+La comparación con Qwen2.5-0.5B, SmolLM2-360M y TinyLlama-1.1B es orientativa por tamaño, no por rendimiento: no hay benchmarks publicados de MoA-400M que permitan una comparación cuantitativa. Los tres alternativos cuentan con contextos mayores, cuantizaciones GGUF y amplia adopción en producción, mientras que MoA-400M es un modelo de investigación con presupuesto de entrenamiento muy limitado.
 
 ## Limitaciones y advertencias
 
-- El entrenamiento usó presupuestos muy reducidos (cientos de miles de tokens), por lo que la calidad factual y la fluidez serán limitadas en comparación con modelos entrenados con billones de tokens.
-- Riesgo elevado de alucinación en QA factual y en dominios especializados; la model card excluye explícitamente el uso en QA factual a escala web.
-- Contexto efectivo limitado a 512-1024 tokens en entrenamiento; más allá de 2048 la calidad no está garantizada aunque BlackHoleRoPE sea extrapolable.
+- Presupuesto de entrenamiento muy reducido (cientos de miles de tokens), lo que limita conocimiento factual y calidad general frente a modelos de tamaño similar entrenados con billones de tokens.
+- Riesgo elevado de alucinación en QA factual: el propio autor desaconseja su uso para QA factual a escala web.
+- Contexto efectivo limitado a 512-1024 tokens; aunque la configuración permite 2048, la calidad más allá de la longitud de entrenamiento no está garantizada.
 - Idiomas soportados no documentados; no hay evidencia de capacidades multilingües.
-- La licencia figura como Apache-2.0 en la model card, pero el campo de licencia del repositorio en Hugging Face aparece como no disponible; conviene verificar antes de uso comercial.
-- No apto para sistemas de seguridad crítica ni para dominios que requieran precisión garantizada.
-- La atención métrica personalizada puede no ser compatible con motores de inferencia optimizados (vLLM, llama.cpp, TGI) sin adaptaciones.
-- La model card advierte de posibles NaN/Inf durante el muestreo si las máscaras no son aditivas 0/-inf o si no se define `pad_token_id` en `generate()`.
-- No se documentan evaluaciones de sesgo ni de seguridad.
+- No apto para usos críticos de seguridad ni dominios que requieran precisión garantizada, según la model card.
+- La licencia aparece como Apache-2.0 en la model card pero como no disponible en los metadatos del repo; conviene verificar antes de uso comercial.
+- Sin soporte documentado de tool calling, agentes ni cuantizaciones GGUF, lo que limita su integración en stacks de producción habituales.
+- El autor advierte de posibles NaN/Inf en muestreo si las máscaras no son aditivas (0/-inf) o si no se fija `pad_token_id` en `generate()`.
+- Sesgos conocidos: no documentados.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/reaperdoesntknow/MoA-400M
-- Dataset MATH-500: https://huggingface.co/datasets/HuggingFaceH4/MATH-500
-- Dataset LongForm: https://huggingface.co/datasets/akoksal/LongForm
-- Dataset Agentic-Long-Context-Understanding-QA: https://huggingface.co/datasets/yzhuang/Agentic-Long-Context-Understanding-QA
-- Documentación de Transformers: https://huggingface.co/docs/transformers
+- Dataset HuggingFaceH4/MATH-500: https://huggingface.co/datasets/HuggingFaceH4/MATH-500
+- Dataset akoksal/LongForm: https://huggingface.co/datasets/akoksal/LongForm
+- Dataset yzhuang/Agentic-Long-Context-Understanding-QA (citado en la model card): https://huggingface.co/datasets/yzhuang/Agentic-Long-Context-Understanding-QA

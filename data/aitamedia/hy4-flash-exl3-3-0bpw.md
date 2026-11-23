@@ -2,87 +2,98 @@
 
 ## Resumen
 
-Hy4-flash-EXL3-3.0bpw es una cuantización de 3 bits del modelo tencent/Hy4-flash-FP8, publicada por el usuario aitamedia. Se trata de un modelo de arquitectura Mixture of Experts (MoE) con 224.000 millones de parámetros totales, de los cuales solo 12.000 millones están activos por token, y una ventana de contexto de 1 millón de tokens. La cuantización emplea el formato EXL3 (ExLlamaV3 trellis-coded) y afecta únicamente a los expertos MoE enrutados (41 capas × 512 expertos, 148.600 millones de parámetros), dejando el resto de componentes copiados byte a byte desde el modelo FP8 original.
+Hy4-flash-EXL3-3.0bpw es una cuantizacion EXL3 (trellis-coded, ExLlamaV3) del modelo tencent/Hy4-flash-FP8, publicada por el usuario aitamedia. Se trata de una version de 3.0 bits por peso aplicada exclusivamente a los expertos enrutados de la arquitectura MoE, lo que reduce el peso de estos de 148.6 B parametros a unos 55.72 GB, manteniendo el resto de componentes (atencion, router, normas, embeddings, torre de vision y cabeza MTP) copiados byte a byte desde el modelo FP8 original.
 
-La característica más singular de este paquete es que la tabla Engram (cuatro tensores de embedding de 31,68 GB cada uno, 126,9 GB en total) se distribuye en shards independientes y cargables por separado, de modo que un runtime puede mapearlos desde NVMe y paginar únicamente las filas que toca cada token. Esto convierte al modelo en un candidato para hardware de memoria unificada como DGX Spark GB10, donde el offload a disco es la única forma real de liberar el pool de 121 GB.
+El modelo base es un transformer MoE nativamente multimodal con 224 B parametros totales (155.5 B de backbone, 63.5 B de tabla Engram y 0.85 B de draft), 12 B parametros activos, 512 expertos enrutados con top-16 y una ventana de contexto de 1 M tokens. La particularidad de esta publicacion es el tratamiento de la tabla Engram: se distribuye en shards independientes, un tensor por fichero, pensados para que un runtime pueda mapearlos desde NVMe y paginar solo las filas que toca cada token.
 
-El modelo es multimodal nativo, soporta inglés y chino, y su licencia es "other", heredada del modelo base. El repo ocupa 198,3 GB y la cuantización de expertos produce 55,72 GB, lo que confirma una densidad efectiva de 3,0 bits por peso.
+La relevancia de esta ficha radica en que muestra un patron de cuantizacion selectiva y offload a disco orientado a hardware de memoria unificada (DGX Spark GB10), donde la distincion entre RAM de host y VRAM desaparece y el paginado desde SSD es la unica forma real de liberar el pool de memoria.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Mixture of Experts (MoE) transformer, multimodal nativa, con tabla Engram y cabeza MTP |
-| Parametros totales | 224 B (155,5 B backbone + 63,5 B Engram + 0,85 B draft) |
-| Parametros activos | 12 B por token |
+| Arquitectura | Transformer MoE con tabla Engram (multi_head_embedding), vision tower y cabeza MTP; nativamente multimodal |
+| Parametros totales | 71.672.177.062 (pesos safetensors del repo); 224 B segun model card (155.5 B backbone + 63.5 B Engram + 0.85 B draft) |
+| Parametros activos | 12 B |
 | Longitud de contexto | 1 M tokens |
-| Tipos de cuantizacion | EXL3 trellis 3,0 bpw sobre expertos MoE enrutados; resto en FP8/BF16 copiado del original |
+| Tipos de cuantizacion | EXL3 trellis 3.0 bpw (codebook `mcg`, tiles 16x16, K=3) en expertos enrutados; Engram en FP8 e4m3fn con escalas BF16 por fila (variante recomendada) o BF16 |
 | Idiomas soportados | en, zh |
-| Licencia | other (sigue los terminos del modelo base) |
-| Formato de pesos | safetensors + experts.pt (EXL3 trellis) + scales.json + exl3_k_map.json |
+| Licencia | other (sigue los terminos del modelo fuente tencent/Hy4-flash-FP8) |
+| Formato de pesos | safetensors + `experts.pt` (EXL3) + `scales.json` + `exl3_k_map.json` |
+| Expertos enrutados | 512 por capa, top-16, 41 capas |
+| Tamano del repo | 319.1 GB |
+| Tamano de expertos cuantizados | 55.72 GB (1.36 GB por capa) |
+| Tamano de tabla Engram | 64.7 GB en FP8 (4 x 15.84 GB + escalas) o 126.9 GB en BF16 |
+| Descargas | 468 |
+| Likes | 1 |
 
 ## Arquitectura y entrenamiento
 
-El modelo base Hy4-flash-FP8 es un transformer MoE con 512 expertos enrutados por capa y top-16 en el enrutamiento, distribuidos en 41 capas. Incorpora una tabla Engram de cuatro tensores `multi_head_embedding.embedding.weight` en las capas 1, 11, 21 y 31, con dimensiones [164994380, 96], [164999008, 96], [165004086, 96] y [165008942, 96] en BF16, que suman 126,9 GB. También incluye una torre de visión y una cabeza MTP (multi-token prediction) para decodificación especulativa.
+El modelo base es un transformer de mezcla de expertos (MoE) con 41 capas y 512 expertos enrutados por capa, activando los 16 mejores en cada token. Incorpora una tabla Engram denominada `multi_head_embedding.embedding.weight` distribuida en cuatro tensores (capas 1, 11, 21 y 31) con dimensiones [164994380, 96], [164999008, 96], [165004086, 96] y [165008942, 96] en BF16, lo que suma 126.9 GB. La configuracion declara `engram_fp8_embedding: true`, de modo que FP8 es la precision prevista para esta tabla. Ademas incluye una torre de vision y una cabeza MTP (multi-token prediction) para decodificacion especulativa.
 
-La cuantización EXL3 afecta solo a los expertos enrutados: 41 capas × 512 expertos, 148,6 B parámetros, codificados con codebook `mcg` (mean-centroid, sin mul1), tiles de 16 × 16 sobre bloques de 256 pesos y K = 3. El `gate_up_proj` está fusionado por experto. El resto de componentes (atención, router, normas, embeddings, torre de visión, cabeza MTP) se copia byte a byte desde el modelo FP8. El proceso de codificación se realizó íntegramente en CPU (GB10 es sm_121, por encima del techo CUDA 12.0 de torch), con un tiempo total de 3,81 horas (41 capas × 5,7 minutos). No se dispone de información sobre el dataset de entrenamiento, número de tokens, composición ni si hubo RLHF/DPO.
+Esta publicacion concreta no entrena nada: solo cuantiza. El proceso de encode se realizo en CPU exclusivamente (la GB10 es sm_121 y el techo CUDA de torch es 12.0) usando `quantize_tiles` y `pack_trellis` de exllamav3 con los parametros `{"K":3,"mcg":true,"mul1":false}`. El tiempo total de encode fue de 3.81 horas (41 capas x 5.7 min). El resultado son 55.72 GB frente a los 55.7 GB proyectados a 3.0 bpw, lo que confirma la densidad del empaquetado. El `gate_up_proj` se fusiona por experto y solo se cuantizan los expertos enrutados; el resto de tensores se copia byte a byte desde el FP8 de origen (148 shards, 289.2 GB, verificado por sha en disco).
+
+La innovacion destacable es el layout: cada shard de Engram contiene exactamente un tensor, de modo que un backend de offload a disco puede apuntar solo a esos cuatro ficheros y mapear las filas necesarias (192 bytes por fila: 96 dimensiones x BF16) sin mantener la tabla residente. Se ofrecen dos variantes de Engram: FP8 (64.7 GB, error relativo medio absoluto del 2.20-2.22% frente a las tablas BF16, ahorro de 62 GB, 51% del original) y BF16 (126.9 GB, para comparaciones de exactitud).
 
 ## Capacidades
 
-- Generación de texto conversacional en inglés y chino.
-- Razonamiento multi-paso y soporte de agentes, gracias a la cabeza MTP y al contexto de 1 M tokens.
-- Procesamiento multimodal nativo: incluye torre de visión en el paquete de pesos.
-- Decodificación especulativa mediante la cabeza draft de 0,85 B parámetros.
-- Enrutamiento MoE con top-16 sobre 512 expertos por capa, lo que permite activar solo 12 B parámetros por token.
-- Tabla Engram con paginación por filas desde disco, pensada para cargar únicamente las filas que toca cada token.
-- No se documenta soporte explícito de tool calling o function calling en la información disponible.
+- Generacion de texto conversacional en ingles y chino.
+- Razonamiento multi-paso y modo agente, segun las capacidades del modelo base.
+- Procesamiento multimodal nativo (torre de vision incluida en los pesos copiados).
+- Decodificacion especulativa mediante cabeza MTP (0.85 B parametros de draft).
+- Ventana de contexto de 1 M tokens, adecuada para documentos extensos y conversaciones de muchos turnos.
+- Capacidad MoE con 512 expertos y top-16, que permite 12 B parametros activos sobre 224 B totales.
+- Soporte de tool calling y function calling: no confirmado en la informacion disponible para esta cuantizacion concreta.
+- Capacidades de codigo y matematicas: no documentadas especificamente en la informacion disponible.
 
 ## Casos de uso
 
-- Despliegue en DGX Spark GB10: el paquete está diseñado específicamente para memoria unificada, con la tabla Engram paginada desde NVMe mediante backends de offload a disco (dsv41/DeepSeek-V4.1 o MiaAI-Lab kit), liberando el pool de 121 GB para el resto de pesos.
-- Servicio de conversación de contexto largo: con 1 M tokens de ventana, el modelo puede mantener conversaciones multi-turno con documentos extensos, historiales completos o bases de conocimiento embebidas sin truncar.
-- Procesamiento multimodal de documentos: la torre de visión incluida permite extraer información de imágenes y PDFs escaneados combinándola con el contexto largo para tareas de análisis documental.
-- Investigación sobre cuantización extrema: el paquete sirve como referencia reproducible para estudiar el impacto de EXL3 a 3,0 bpw sobre un MoE de 224 B, con mapas K por tensor y procedencia de codificación por capa.
-- Experimentación con offload a disco: los cuatro shards Engram exclusivos permiten probar estrategias de `preadv` + `fadvise` y medir latencia de paginación por filas en cargas reales.
-- Inferencia en clústeres con poca VRAM por GPU: al reducir los expertos a 55,72 GB (1,36 GB por capa, uniforme), el modelo puede distribuirse entre varias GPU consumer o profesionales con un backend compatible con EXL3.
-- Evaluación comparativa de decodificación especulativa: la cabeza MTP de 0,85 B permite medir ganancias de throughput frente a decodificación autoregresiva estándar en el mismo hardware.
+- Servicio conversacional de contexto largo: con 1 M tokens de ventana, el modelo puede mantener conversaciones multi-turno con historiales extensos o procesar documentos completos sin truncar, aunque el offload de Engram a disco introduce latencia dependiente del almacenamiento.
+- Despliegue en hardware de memoria unificada (DGX Spark GB10): el layout de shards independientes permite paginar la tabla Engram desde NVMe y mantener solo los expertos cuantizados y el backbone en el pool, haciendo viable un modelo de 224 B en una maquina de escritorio de gama alta.
+- Procesamiento de documentos en chino e ingles: la cobertura bilingue y el contexto de 1 M tokens lo hacen apto para analisis de contratos, informes o corpus tecnicos en ambos idiomas.
+- Investigacion sobre cuantizacion selectiva: sirve como referencia reproducible de cuantizacion EXL3 a 3.0 bpw solo en expertos, con provenance detallada (encode-state.json) y comparativa FP8 vs BF16 en la tabla Engram.
+- Evaluacion de estrategias de offload a disco: los cuatro shards de Engram, un tensor por fichero, permiten medir el impacto del row-fetch desde SSD en el throughput real de un MoE de gran tamano.
+- Prototipado de pipelines multimodales: la torre de vision copiada desde el modelo base permite experimentar con entrada de imagenes y texto en un entorno cuantizado, siempre que el runtime soporte la arquitectura.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card unicamente aporta metricas de cuantizacion: error relativo medio absoluto del 2.20-2.22% para la tabla Engram en FP8 frente a BF16, y una densidad de empaquetado de 55.72 GB reales frente a 55.7 GB proyectados a 3.0 bpw.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: los expertos cuantizados ocupan 55,72 GB; el resto de pesos (atención, router, normas, embeddings, visión, MTP) suma aproximadamente 11,8 GB × 5 shards = 59 GB adicionales en FP8/BF16. La tabla Engram (126,9 GB) debe residir en SSD y paginarse por filas.
-- GPU recomendadas: DGX Spark GB10 (memoria unificada de 121 GB) es el objetivo declarado; para el resto de pesos se requieren GPUs con al menos 60 GB combinados, como A100 80 GB, H100 80 GB o varias RTX 4090/5090 en paralelo.
-- Cabe en consumer GPU: sí, de forma parcial y distribuida; los expertos a 3,0 bpw (55,72 GB) caben en dos RTX 4090 de 24 GB o en una RTX 5090 de 32 GB más offload, pero la tabla Engram exige almacenamiento NVMe.
-- Opciones de despliegue: backends con soporte EXL3/ExLlamaV3 y offload a disco. La model card cita dsv41/DeepSeek-V4.1 con `--engram-config '{"cpu_offload":true,"dp_shared_memory":false,"disk_offload":true,"disk_threads":256}'` y el kit MiaAI-Lab (`engram_file_backend.py` + `librow_store.so` vía `--hf-overrides '{"engram_table_dir": …}'`). El motor de offload a disco de vLLM upstream está limitado a Qwen4Exp y la ruta HYV4-Flash solo expone `pin_memory`.
-- Latencia y throughput: no disponibles. El tiempo de codificación (3,81 h en CPU) no es representativo de la inferencia.
+- VRAM estimada: los expertos cuantizados ocupan 55.72 GB; el backbone (atencion, router, normas, vision, MTP) suma aproximadamente 11.8 GB por shard en el layout descrito; la tabla Engram en FP8 ocupa 64.7 GB y en BF16 126.9 GB.
+- En configuracion con Engram en disco, el pool residente minimo ronda los 67-68 GB (expertos + backbone) mas el espacio de trabajo del runtime.
+- GPU recomendadas: DGX Spark GB10 (memoria unificada, sm_121) es el objetivo declarado; en GPUs discretas se requeriria un pool de al menos 128 GB para mantener la tabla Engram en memoria, lo que apunta a configuraciones multi-GPU tipo H100/H200 o A100 de 80 GB en paralelo.
+- En consumer GPU: no cabe en RTX 4090 (24 GB) ni en RTX 5090 (32 GB) con la tabla Engram residente; solo seria viable con offload agresivo a disco y un runtime especifico.
+- Opciones de despliegue: exllamav3 (formato nativo EXL3); vLLM upstream expone `pin_memory` para el Engram de este modelo, pero en memoria unificada eso no constituye un offload real, por lo que se requiere un backend con row store respaldado por disco.
+- Latencia y throughput: no disponibles en la informacion proporcionada; dependen criticamente del ancho de banda de la SSD cuando la tabla Engram se pagina desde disco.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros totales | Activos | Contexto | Cuantizacion | Licencia | Disponibilidad |
+| Modelo | Parametros | Activos | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Hy4-flash-EXL3-3.0bpw | 224 B | 12 B | 1 M | EXL3 3,0 bpw (expertos) | other | Hugging Face (aitamedia) |
-| tencent/Hy4-flash-FP8 | 224 B | 12 B | 1 M | FP8 | other | Hugging Face (Tencent) |
-| DeepSeek-V4.1 (referenciado en la model card) | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
+| Hy4-flash-EXL3-3.0bpw | 224 B (71.67 B en safetensors) | 12 B | 1 M | EXL3 3.0 bpw en expertos + Engram FP8/BF16 | other | Hugging Face |
+| tencent/Hy4-flash-FP8 | 224 B | 12 B | 1 M | FP8 | other | Hugging Face |
+| tencent/Hy4-flash (BF16, si existe) | no disponible | no disponible | no disponible | BF16 | no disponible | no disponible |
 
-La comparativa se limita al modelo base FP8 del que deriva este paquete y a DeepSeek-V4.1, citado únicamente como backend de offload compatible. No se dispone de datos de benchmarks ni de otros modelos comparables en la información proporcionada.
+La comparativa directa mas relevante es contra el modelo fuente en FP8: esta cuantizacion reduce los expertos de 148.6 B parametros a 55.72 GB, a costa de un error de cuantizacion no documentado en la model card para los expertos (solo se documenta el error de la tabla Engram en FP8). No se dispone de informacion sobre otros modelos comparables de la misma categoria en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- La licencia es "other" y sigue los términos del modelo base tencent/Hy4-flash-FP8; es imprescindible revisar dichos términos antes de cualquier uso comercial.
-- Solo se soportan inglés y chino de forma nativa; el rendimiento en castellano no está documentado.
-- La tabla Engram de 126,9 GB exige almacenamiento NVMe y un backend de offload a disco específico; sin él, el modelo no es servible en hardware de memoria unificada.
-- El motor de offload a disco de vLLM upstream no cubre la ruta HYV4-Flash (solo expone `pin_memory`), lo que limita las opciones de despliegue estándar.
-- Riesgo de alucinación inherente a los modelos generativos; no se documentan evaluaciones de fidelidad factual.
-- No se documentan sesgos conocidos, pero al entrenarse principalmente en inglés y chino pueden aparecer sesgos culturales y lingüísticos en esos idiomas.
-- La cuantización a 3,0 bpw puede degradar la calidad frente al modelo FP8 original; no se publican métricas de degradación.
-- El repo tiene 0 descargas y 0 likes en el momento de la consulta, por lo que no hay validación comunitaria del paquete.
-- No se documenta soporte de tool calling ni function calling, lo que limita su uso en pipelines de agentes que dependan de esas interfaces.
+- Solo cubre ingles y chino; no hay soporte declarado de castellano ni de otros idiomas.
+- La licencia es "other" y remite a los terminos del modelo fuente tencent/Hy4-flash-FP8; es imprescindible revisarlos antes de cualquier uso comercial.
+- El error de cuantizacion de los expertos a 3.0 bpw no se cuantifica en la model card; solo se documenta el error de la tabla Engram en FP8 (2.20-2.22%).
+- La tabla Engram en BF16 ocupa 126.9 GB y en FP8 64.7 GB; sin offload a disco, el modelo no cabe en hardware de consumo.
+- En memoria unificada, `pin_memory` de vLLM no libera el pool; se requiere un runtime con row store en disco, lo que limita las opciones de despliegue.
+- La dependencia de lectura desde SSD introduce latencia variable y reduce el throughput frente a una ejecucion completamente residente en memoria.
+- Riesgo de alucinacion y sesgos: no documentados en la informacion disponible para esta cuantizacion; deben asumirse los del modelo base.
+- El proceso de encode se realizo en CPU por incompatibilidad de sm_121 con el techo CUDA de torch 12.0, lo que puede afectar a la reproducibilidad en otros entornos.
+- El repo pesa 319.1 GB, lo que exige planificacion de almacenamiento y descarga considerable.
 
 ## Enlaces
 
-- [Hugging Face: aitamedia/Hy4-flash-EXL3-3.0bpw](https://huggingface.co/aitamedia/Hy4-flash-EXL3-3.0bpw)
-- [Modelo base: tencent/Hy4-flash-FP8](https://huggingface.co/tencent/Hy4-flash-FP8)
-- No se han encontrado papers, blogs, repositorios o demos adicionales en la información proporcionada.
+- Hugging Face: https://huggingface.co/aitamedia/Hy4-flash-EXL3-3.0bpw
+- Modelo base: https://huggingface.co/tencent/Hy4-flash-FP8
+- Repositorio exllamav3 (encoder utilizado): no disponible en la informacion proporcionada
+- Paper o blog del modelo base: no disponible en la informacion proporcionada
+- Demos: no disponibles en la informacion proporcionada

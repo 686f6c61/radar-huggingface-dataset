@@ -62,7 +62,7 @@
     "conversational"
   ],
   "likes": 3,
-  "downloads_30d": 538,
+  "downloads_30d": 529,
   "trending_score": 0,
   "parameters": 34660610688,
   "parameters_human": "34.66B",
@@ -82,31 +82,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "TDK-Lamda GEN40-38 可编程直流电源维修流程-百度经验",
-      "url": "https://jingyan.baidu.com/article/215817f7b1c3eb1eda1423c3.html",
-      "snippet": "Jan 15, 2018 · TDK-Lamda GEN40-38 可编程直流电源，电源实际输出值和前面板显示值不匹配； 【客户描述】电源实际输出值和前 …"
-    },
-    {
-      "title": "Word表格怎样插入自动序号或编号 - 百度经验",
-      "url": "https://jingyan.baidu.com/article/358570f683a804ce4724fcd6.html",
-      "snippet": "Nov 2, 2018 · Word表格怎样插入自动序号或编号,在Word文档中编辑表格时，经常需要为表格添加序号或编号，可以设置为自动序号 …"
-    },
-    {
-      "title": "SSD | Ổ cứng SSD laptop/PC giá rẻ từ 590k, giảm đến 45%",
-      "url": "https://cellphones.com.vn/linh-kien/o-cung/ssd.html",
-      "snippet": "Ổ cứng SSD laptop/PC giá rẻ từ 590k, trả góp 0%, giao nhanh 2 giờ, bảo hành chính hãng. Mua ngay ổ SSD laptop/PC 120gb đến …"
-    },
-    {
-      "title": "iPhone (Apple) chính hãng, giá tốt, góp 0% từ 0đ T09/2026",
-      "url": "https://cellphones.com.vn/mobile/apple.html",
-      "snippet": "Mua điện thoại iPhone chính hãng Apple bao gồm iPhone 17 Series, iPhone 16 Series, iPhone 15 Series, iPhone 14 Series giá rẻ tại …"
-    },
-    {
-      "title": "DJI大疆社区",
-      "url": "https://bbs.dji.com/pro/detail?mod=viewthread&tid=420293",
-      "snippet": "Oct 24, 2024 · 大疆社区官方论坛是无人机爱好者的大本营，在这里交流大疆无人机的使用技巧心得，了解大疆最新动态，参与大疆无 …"
-    }
-  ]
+  "sources": []
 }

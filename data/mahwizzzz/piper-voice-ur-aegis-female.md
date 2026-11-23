@@ -2,88 +2,89 @@
 
 ## Resumen
 
-Aegis es una voz femenina de síntesis de voz (TTS) para urdu, desarrollada por Muhammad Mahwiz Khalil (Proxima AI) sobre el ecosistema Piper de Rhasspy. El modelo se distribuye en formato ONNX y está diseñado específicamente para inferencia en CPU, lo que permite su ejecución offline en dispositivos de bajos recursos, incluidos ordenadores de placa única como Raspberry Pi. Su tamaño de aproximadamente 61 MB lo convierte en una opción práctica para integraciones embebidas y aplicaciones de accesibilidad.
+Aegis es una voz de síntesis de habla femenina en urdu (variante `ur_PK`) distribuida en formato Piper ONNX. La publica Muhammad Mahwiz Khalil (Proxima AI) bajo licencia MIT y está pensada para inferencia en CPU, lo que la hace apta para despliegues ligeros, sistemas de accesibilidad y aplicaciones embebidas donde no hay GPU disponible. El repositorio ocupa aproximadamente 0,1 GB y el archivo ONNX principal pesa 63.515.589 bytes.
 
-El modelo aborda la escasez de voces femeninas de calidad en urdu dentro del ecosistema Piper, complementando la voz masculina existente Fasih. Se construyó mediante un proceso de destilación a nivel de datos que comprime las capacidades de un sistema TTS multilingüe más grande (OmniVoice) en un formato compacto y eficiente. La voz se generó utilizando un modelo TTS zero-shot para crear datos de entrenamiento, que posteriormente se utilizaron para afinar el checkpoint masculino Fasih, transfiriendo así las características de habla femenina.
+Técnicamente se trata de un modelo VITS de calidad "medium", con una frecuencia de muestreo de 22.050 Hz y fonemización mediante eSpeak-ng en su variante `ur`. Según la model card, la voz se obtuvo por fine-tuning del checkpoint masculino Fasih (`ur_PK-male-medium`) de IhorShevchuk, que a su vez deriva de un checkpoint medio en hindi (`hi_IN`) llamado Rohan, procedente de `rhasspy/piper-checkpoints`. La card menciona además un artículo sobre destilación de OmniVoice hacia un estudiante VITS, aunque no reconcilia ese relato con el fine-tuning declarado.
 
-La relevancia actual de este modelo radica en su licencia MIT, que permite uso comercial y modificación sin restricciones, y en su integración nativa con el motor Piper, ampliamente adoptado en proyectos de domótica, asistentes de voz y herramientas de accesibilidad. Su naturaleza ligera y su enfoque en un idioma con poca representación en TTS open source lo convierten en un recurso valioso para la comunidad de habla urdu.
+Su relevancia actual es doble: por un lado, cubre un hueco de recursos TTS abiertos para urdu, un idioma con poca oferta en modelos de voz ligeros; por otro, su formato ONNX y su licencia permisiva permiten integrarlo en pipelines de producción sin dependencias de infraestructura pesada. La contrapartida es la escasez de documentación sobre datos de entrenamiento y evaluación: no hay métricas objetivas publicadas en el repositorio.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Piper TTS (basada en VITS) |
-| Parametros totales | no disponible (modelo ONNX de ~61 MB) |
-| Parametros activos | no aplicable (no es MoE) |
-| Longitud de contexto | no aplicable (TTS) |
-| Tipos de cuantizacion | no disponible (formato ONNX estándar) |
-| Idiomas soportados | Urdu (`ur_PK`) |
-| Licencia | MIT |
-| Formato de pesos | ONNX (`.onnx` + `.onnx.json`) |
+| Arquitectura | VITS (síntesis extremo a extremo, formato Piper ONNX) |
+| Parametros totales | no disponible (tamaño del archivo ONNX: 63.515.589 bytes) |
+| Parametros activos | no aplica (no es MoE) |
+| Longitud de contexto | no aplica (modelo TTS; entrada de texto sin ventana declarada) |
+| Tipos de cuantizacion | no disponible (se distribuye un único ONNX de precisión no declarada) |
+| Idiomas soportados | urdu (`ur_PK`) |
+| Licencia | MIT (copyright Muhammad Mahwiz Khalil / Proxima AI) |
+| Formato de pesos | ONNX (`.onnx`) con configuración `.onnx.json` |
 
 ## Arquitectura y entrenamiento
 
-El modelo se basa en la arquitectura Piper, que a su vez utiliza VITS (Variational Inference with adversarial Training for end-to-end Text-to-Speech). VITS combina un encoder de texto, un decoder de forma de onda y un discriminador adversarial, todo entrenado de extremo a extremo. El modelo procesa texto en urdu, lo convierte en fonemas IPA mediante eSpeak-ng, y genera audio a 22050 Hz de frecuencia de muestreo.
+El modelo sigue la arquitectura VITS que utiliza Piper para sus voces: un sistema de síntesis extremo a extremo que combina codificador de texto, predictor de duración, flujo normalizador y decodificador vocacional, entrenado de forma adversarial. La calidad declarada es "medium" y la salida se genera a 22.050 Hz. La entrada de texto se convierte a fonemas IPA mediante eSpeak-ng en su variante `ur`, lo que implica que la pronunciación depende de la cobertura y precisión de ese fonemizador.
 
-El entrenamiento se realizó en dos etapas. Primero, se utilizó un modelo TTS zero-shot (OmniVoice) para generar datos de habla femenina en urdu, en un proceso de destilación a nivel de datos. Estos datos sintéticos se emplearon para afinar el checkpoint masculino Fasih (`ur_PK-male-medium`), creado por IhorShevchuk. Fasih, a su vez, fue entrenado a partir de un checkpoint de hindi medio (Rohan) disponible en `rhasspy/piper-checkpoints`. Este enfoque de transferencia entre idiomas relacionados (hindi-urdu) y entre géneros (masculino a femenino) es la innovación técnica principal del modelo.
+En cuanto al entrenamiento, la model card indica que la voz se afinó a partir del checkpoint masculino Fasih (`ur_PK-male-medium`), que a su vez procede de un checkpoint medio en hindi (Rohan) de `rhasspy/piper-checkpoints`. No se publican pasos de entrenamiento, tasa de aprendizaje, hardware, semilla, número de horas de audio, número de hablantes ni composición del corpus. Tampoco se especifica si el audio de entrenamiento es grabado o sintético. El artículo enlazado sobre destilación de OmniVoice hacia Aegis describe una destilación a nivel de datos hacia un estudiante VITS, pero el repositorio no contiene el corpus de destilación, las salidas del profesor ni los registros de entrenamiento, y la card no reconcilia ambas narrativas.
 
 ## Capacidades
 
-- Generación de voz femenina en urdu con calidad media.
-- Inferencia en CPU sin necesidad de GPU, con ejecución offline completa.
-- Integración con el motor Piper mediante línea de comandos o API.
-- Compatible con el ecosistema de herramientas de Rhasspy (asistente de voz open source).
-- Frecuencia de muestreo de 22050 Hz, adecuada para reproducción estándar.
-- Soporte para fonemización mediante eSpeak-ng en urdu.
-- Modelo compacto (~61 MB) apto para dispositivos con recursos limitados.
+- Síntesis de voz femenina en urdu (`ur_PK`) a partir de texto plano.
+- Fonemización automática mediante eSpeak-ng en variante `ur`, sin necesidad de entrada fonética manual.
+- Inferencia en CPU gracias al formato ONNX y al tamaño contenido del modelo (unos 61 MB).
+- Integración con la CLI `piper` y con el ecosistema Piper (configuración `.onnx.json` incluida).
+- Generación de audio a 22.050 Hz en formato WAV.
+- No se declaran capacidades de clonación de voz, control de emoción, cambios de hablante ni multilingüismo.
+- No se declara soporte de tool calling, agentes ni razonamiento multi-paso (no aplica a un modelo TTS).
 
 ## Casos de uso
 
-- Accesibilidad para personas con discapacidad visual en urdu: el modelo puede integrarse en lectores de pantalla que convierten texto en voz, proporcionando una voz femenina natural para usuarios de habla urdu en aplicaciones de escritorio o móviles.
-- Asistentes de voz para domótica: al ser ligero y ejecutarse en CPU, puede desplegarse en Raspberry Pi o dispositivos similares para crear asistentes domésticos que respondan en urdu, integrándose con Home Assistant o Rhasspy.
-- Audiolibros y contenido educativo: la voz puede utilizarse para generar audiolibros en urdu, especialmente útil para material educativo dirigido a niños o personas que prefieren contenido auditivo.
-- Sistemas de navegación GPS: integración en aplicaciones de navegación que necesiten instrucciones habladas en urdu con voz femenina, funcionando offline en dispositivos móviles.
-- Atención al cliente automatizada: en sistemas IVR (respuesta de voz interactiva) para empresas que atienden a población de habla urdu, el modelo puede generar respuestas pregrabadas o dinámicas sin necesidad de servicios en la nube.
-- Herramientas de aprendizaje de idiomas: aplicaciones que enseñan urdu pueden usar esta voz para pronunciar palabras y frases, ofreciendo una alternativa femenina a las voces masculinas existentes.
-- Generación de contenido para redes sociales: creadores de contenido en urdu pueden generar locuciones para vídeos o podcasts sin necesidad de estudios de grabación, usando herramientas basadas en Piper.
+- Lectura de pantalla y accesibilidad: el modelo puede convertir texto en urdu a voz para lectores de pantalla y aplicaciones de accesibilidad, con inferencia en CPU que no requiere GPU en el dispositivo del usuario.
+- Asistentes de voz locales para urdu: integración en asistentes domésticos o aplicaciones de escritorio que necesitan una voz femenina en urdu con baja latencia y sin conexión a servicios en la nube.
+- Audiolibros y contenido educativo: generación por lotes de narraciones en urdu a partir de textos, usando el pipeline de Piper para procesar capítulos completos de forma automatizada.
+- Sistemas de anuncios y megafonía: síntesis de avisos dinámicos en urdu en entornos como transporte público o comercios, donde el coste de una GPU dedicada no está justificado.
+- Integración en aplicaciones móviles y embebidas: el tamaño de 61 MB y el formato ONNX permiten empaquetar la voz en aplicaciones con recursos limitados, incluidas plataformas sin aceleración hardware.
+- Prototipado de productos de voz para el mercado pakistaní: permite validar flujos de conversación en urdu antes de invertir en voces comerciales o en un entrenamiento propio a mayor escala.
+- Generación de contenido multimedia: doblaje o narración automatizada de vídeos y pódcast en urdu, con la salvedad de que la calidad "medium" y la fonemización eSpeak pueden requerir revisión humana.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El modelo no incluye métricas objetivas como MOS (Mean Opinion Score) o comparaciones con otras voces de urdu. La calidad se describe como "media" en la model card, pero sin datos cuantitativos que respalden esta afirmación.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card indica explícitamente que no se almacena en el repositorio ninguna cifra de word-error rate, MOS ni similitud de hablante, y que las muestras de audio están en `samples/`.
 
 ## Requisitos de hardware
 
-- Inferencia en CPU: el modelo está diseñado para ejecutarse en procesadores x86_64 y ARM, incluidos Raspberry Pi 3 y superiores.
-- Memoria RAM: se estima que requiere menos de 256 MB en tiempo de ejecución, dado el tamaño del modelo (~61 MB).
-- GPU: no necesaria. El modelo funciona exclusivamente en CPU.
-- Almacenamiento: aproximadamente 61 MB para el modelo ONNX más el archivo de configuración JSON.
-- Opciones de despliegue: motor Piper (CLI), integración con Rhasspy, uso mediante librerías Python como `piper-tts`, o servidores TTS como Piper HTTP server.
-- Latencia: no disponible, pero los modelos Piper suelen generar audio más rápido que en tiempo real en CPUs modernas.
+- VRAM estimada para inferencia: no aplica; el modelo está diseñado para inferencia en CPU y no requiere GPU.
+- GPU recomendadas: no necesarias. Cualquier GPU compatible con ONNX Runtime podría ejecutarlo, pero no se documenta ningún requisito ni optimización específica.
+- Cabe en GPU de consumo: sí, por tamaño (61 MB), aunque su diseño objetivo es CPU; no se han publicado requisitos de VRAM.
+- Opciones de despliegue: CLI `piper`, ONNX Runtime, y cualquier integración que consuma modelos Piper (por ejemplo, servicios que envuelvan la CLI o bindings de ONNX). No se documenta soporte específico para vLLM, TGI, llama.cpp u Ollama, que no son adecuados para este tipo de modelo.
+- Latencia y throughput: no disponibles. No se publican mediciones de tiempo real ni de velocidad de síntesis.
 
 ## Comparativa con modelos similares
 
-| Modelo | Idioma | Género | Tamaño | Licencia | Formato |
+| Modelo | Idioma | Arquitectura | Calidad | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Aegis (este modelo) | Urdu | Femenino | ~61 MB | MIT | ONNX |
-| Fasih (`IhorShevchuk/piper-voice-ur-fasih`) | Urdu | Masculino | similar | MIT | ONNX |
-| Rohan (checkpoint hindi) | Hindi | Masculino | similar | MIT | ONNX |
+| Aegis (`ur_PK-aegis_female-medium`) | Urdu (`ur_PK`) | VITS / Piper ONNX | Medium, 22.050 Hz | MIT | Hugging Face, 586 descargas |
+| Fasih (`ur_PK-male-medium`, IhorShevchuk) | Urdu (`ur_PK`) | VITS / Piper ONNX | Medium | no disponible en la información proporcionada | Hugging Face |
+| Rohan (`hi_IN` medium, vía `rhasspy/piper-checkpoints`) | Hindi (`hi_IN`) | VITS / Piper | Medium | no disponible en la información proporcionada | Repositorio de checkpoints de Piper |
 
-La comparativa se limita a modelos de la familia Piper, ya que no se dispone de información sobre otras voces femeninas en urdu dentro del ecosistema. Aegis es el único modelo femenino de urdu documentado en Piper, lo que lo hace único en su categoría. Frente a Fasih, su contraparte masculina, comparte arquitectura y licencia, diferenciándose únicamente en el género de la voz y el proceso de entrenamiento.
+La comparación se limita a los modelos citados en la propia model card; no se dispone de datos de rendimiento (MOS, WER) para ninguno de ellos en la información proporcionada, por lo que no es posible establecer una comparación cuantitativa.
 
 ## Limitaciones y advertencias
 
-- Calidad de voz media: la voz puede sonar menos natural que modelos comerciales de TTS, especialmente en oraciones largas o con entonación compleja.
-- Limitación a un solo idioma: el modelo solo soporta urdu (`ur_PK`), sin capacidades multilingües.
-- Dependencia de eSpeak-ng: la fonemización depende de la calidad de eSpeak-ng para urdu, que puede tener errores en palabras poco comunes o nombres propios.
-- Datos de entrenamiento sintéticos: al haberse generado los datos mediante un modelo zero-shot, puede haber artefactos o sesgos en la pronunciación que no aparecerían con datos naturales.
-- Sin control de emociones o estilos: el modelo genera voz plana, sin soporte para emociones, énfasis o estilos de habla específicos.
-- Requisito de atribución: la licencia MIT exige conservar el aviso de copyright y atribución a Muhammad Mahwiz Khalil en cualquier redistribución o uso del modelo.
-- Sin actualizaciones garantizadas: al ser un proyecto personal, no hay garantía de mantenimiento o soporte a largo plazo.
+- No se han publicado métricas de calidad (MOS, WER, similitud de hablante); la evaluación subjetiva queda a cargo del usuario a partir de las muestras.
+- La fonemización con eSpeak-ng en urdu puede divergir de la pronunciación nativa; es una propiedad del fonemizador declarado, no un error medido.
+- No se documentan la procedencia de los datos de entrenamiento, las horas de audio, el número de hablantes ni la licencia del corpus, lo que dificulta evaluar riesgos de sesgo o de derechos sobre los datos.
+- La card no reconcilia el relato de fine-tuning desde Fasih con el artículo sobre destilación de OmniVoice; la genealogía exacta del modelo es ambigua.
+- Cobertura de dialectos y comportamiento ante code-switching (urdu-inglés) no medidos.
+- La licencia MIT exige conservar el aviso de copyright y la atribución a Muhammad Mahwiz Khalil (Proxima AI) en todas las copias y redistribuciones, incluidas las re-subidas.
+- Riesgo de alucinación no aplica en el sentido de generación de texto, pero sí existe riesgo de pronunciación incorrecta o prosodia antinatural en palabras fuera del dominio de entrenamiento.
+- Al ser un modelo de un solo hablante, no permite selección de voz ni clonación.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/mahwizzzz/piper-voice-ur-aegis-female
-- Repositorio del modelo (archivos): https://huggingface.co/mahwizzzz/piper-voice-ur-aegis-female/tree/main
-- Modelo base Fasih: https://huggingface.co/IhorShevchuk/piper-voice-ur-fasih
-- Artículo sobre destilación de OmniVoice en Aegis: https://www.plushcap.com/content/huggingface/blog/huggingface-distilling-omnivoice-into-aegis-female-urdu-tts-at-61-mb-onnx-for-cpu-inference
-- Lista completa de voces Piper: https://docs.gladecore.com/files/piper-voice-models
+- Licencia: https://huggingface.co/mahwizzzz/piper-voice-ur-aegis-female/blob/main/LICENSE
+- Modelo base declarado (Fasih, IhorShevchuk): https://huggingface.co/IhorShevchuk/piper-voice-ur-fasih
+- Artículo sobre destilación de OmniVoice en Aegis: https://huggingface.co/blog/mahwizzzz/distilling-omnivoice-into-aegis
+- Checkpoints de Piper: https://huggingface.co/rhasspy/piper-checkpoints
+- Perfil del autor: https://huggingface.co/mahwizzzz

@@ -2,48 +2,47 @@
 
 ## Resumen
 
-Saathi-Axiom-32B-Apex-GGUF es una coleccion de cuantizaciones en formato GGUF del modelo Saathi-Axiom-32B-Apex, publicada por el usuario mradermacher, conocido en Hugging Face por distribuir conversiones GGUF de modelos de terceros. El repositorio no aporta model card propia mas alla de la referencia al modelo base, por lo que toda la informacion sustantiva sobre entrenamiento, datos y capacidades debe rastrearse en el repositorio original del autor (Saathimed).
+Saathi-Axiom-32B-Apex es un modelo de lenguaje de 32.763.876.352 parametros (aproximadamente 32,8 mil millones) desarrollado por Saathimed y distribuido en formato GGUF por mradermacher. Se trata de una cuantizacion estatica del modelo original Saathimed/Saathi-Axiom-32B-Apex, pensada para facilitar su despliegue en entornos con recursos limitados mediante llama.cpp y herramientas compatibles con GGUF. El repositorio incluye once variantes de cuantizacion que van desde Q2_K (12,4 GB) hasta Q8_0 (34,9 GB).
 
-El modelo base cuenta con 32.763.876.352 parametros totales segun los pesos en safetensors, lo que lo situa en la categoria de modelos densos de aproximadamente 32B. El repositorio GGUF ocupa 65,9 GB, coherente con un modelo de ese tamano distribuido en multiples niveles de cuantizacion. El pipeline no esta declarado y la licencia no aparece especificada en los metadatos de Hugging Face.
+La informacion publica disponible sobre este modelo es muy limitada. La model card del repositorio GGUF no incluye detalles sobre arquitectura interna, datos de entrenamiento, longitud de contexto, licencia ni resultados de benchmarks. El autor original (Saathimed) no ha publicado, segun la informacion disponible, una model card detallada accesible en este repositorio. El modelo esta etiquetado como conversacional y en ingles, y es compatible con endpoints de inferencia estandar.
 
-La relevancia de esta publicacion es practica: permite ejecutar un modelo de 32B en hardware de consumo o en entornos con VRAM limitada mediante llama.cpp y derivados, eligiendo el nivel de cuantizacion segun el presupuesto de memoria. Al no haber descargas ni likes registrados en el momento de la consulta, se trata de una publicacion reciente y sin validacion comunitaria todavia.
+Su relevancia actual radica en que ofrece una alternativa de 32B en formato GGUF lista para usar con llama.cpp, Ollama o servidores compatibles, con un rango de cuantizaciones que permite ajustar el equilibrio entre calidad y requisitos de memoria. No obstante, la ausencia de documentacion tecnica y de benchmarks publicos limita seriamente su evaluacion rigurosa antes de adoptarlo en produccion.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (modelo base de ~32B; no se especifica transformer, MoE ni hibrida) |
-| Parametros totales | 32.763.876.352 |
-| Parametros activos | no disponible (no se indica que sea MoE) |
+| Arquitectura | no disponible (modelo transformer, segun formato de pesos) |
+| Parametros totales | 32.763.876.352 (~32,8B) |
+| Parametros activos | no aplica (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | x-f16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q4_K_M, Q4_K_S, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K, IQ4_XS |
-| Idiomas soportados | no disponible |
+| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0 |
+| Idiomas soportados | en (ingles, segun metadatos) |
 | Licencia | no disponible |
-| Formato de pesos | GGUF (repo de cuantizaciones); el modelo base se distribuye en safetensors |
+| Formato de pesos | GGUF (safetensors en el modelo base) |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion sobre la arquitectura interna del modelo base Saathi-Axiom-32B-Apex en la documentacion proporcionada. El unico dato estructural fiable es el recuento de parametros (32.763.876.352), que corresponde a un modelo denso de aproximadamente 32B. No se especifica si emplea atencion estandar, atencion lineal, mezcla de expertos ni ninguna innovacion concreta.
+No se dispone de informacion publica sobre la arquitectura interna del modelo base Saathimed/Saathi-Axiom-32B-Apex. Por el numero de parametros y el formato de pesos (safetensors en el original, GGUF en esta cuantizacion) se trata de un transformer decoder-only, pero no se confirma en la documentacion disponible si emplea atencion estandar, atencion lineal, mezcla de expertos (MoE) u otra variante. Tampoco se especifica la longitud de contexto nativa ni el vocabulario.
 
-Tampoco hay datos sobre el volumen de tokens de entrenamiento, la composicion del dataset, el uso de RLHF, DPO u otras tecnicas de alineamiento. La model card del repositorio GGUF se limita a indicar que las cuantizaciones son estaticas y que derivan del modelo Saathimed/Saathi-Axiom-32B-Apex, con la etiqueta `convert_type: hf`, lo que indica que la conversion se hizo desde pesos en formato Hugging Face. Cualquier detalle adicional debe consultarse en el repositorio del autor original.
+Respecto al entrenamiento, no hay datos disponibles sobre el numero de tokens, la composicion del dataset, la posible aplicacion de RLHF, DPO u otras tecnicas de alineacion. La model card del repositorio GGUF es una plantilla generica de mradermacher que solo documenta el proceso de cuantizacion estatica (sin imatrix ni quants ponderados, segun indica el propio autor) y no aporta informacion sobre el modelo original. Cualquier afirmacion sobre innovaciones tecnicas (decodificacion especulativa, attention linear, etc.) seria especulativa y no se incluye.
 
 ## Capacidades
 
-- Generacion de texto conversacional: la etiqueta `conversational` del repositorio sugiere un ajuste orientado a dialogo multi-turno.
-- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` indica que el formato GGUF puede servirse mediante infraestructura compatible con la API de Hugging Face.
-- Ejecucion local mediante llama.cpp y derivados: al estar en GGUF, el modelo puede ejecutarse en CPU, GPU o configuraciones hibridas.
-- Capacidades especificas de razonamiento, codigo, matematicas, vision, tool calling o agentes: no disponibles en la informacion proporcionada.
-- Soporte multilingue: no disponible.
-- Modos especiales (thinking, vision, audio): no disponibles.
+- Generacion de texto conversacional: el modelo esta etiquetado como "conversational" y orientado a dialogos multi-turno.
+- Idioma: los metadatos indican soporte de ingles ("en"); no se confirma soporte multilingue adicional.
+- Compatibilidad con endpoints: la etiqueta "endpoints_compatible" sugiere que puede servirse mediante la infraestructura de inferencia de Hugging Face.
+- Despliegue en llama.cpp y derivados: al estar en formato GGUF, es compatible con llama.cpp, Ollama, LM Studio y servidores basados en llama.cpp.
+- Capacidades avanzadas (tool calling, function calling, agentes, vision, audio, thinking mode): no disponibles en la informacion proporcionada.
 
 ## Casos de uso
 
-- Despliegue en estaciones de trabajo con una sola GPU de consumo: usando Q4_K_M o IQ4_XS, el modelo puede cargarse en GPUs con 24 GB de VRAM (RTX 3090, RTX 4090) con offloading parcial, lo que permite prototipar asistentes conversacionales sin infraestructura de datacenter.
-- Experimentacion en CPU con llama.cpp: las cuantizaciones Q2_K y Q3_K_S reducen el peso lo suficiente para probar el modelo en equipos sin GPU dedicada, util para evaluacion inicial antes de invertir en hardware.
-- Chat conversacional autoalojado: la orientacion conversacional del modelo base permite montar un asistente privado sobre Ollama o llama.cpp, manteniendo los datos en infraestructura propia.
-- Evaluacion comparativa de cuantizaciones: el repositorio ofrece doce niveles distintos, lo que facilita medir la degradacion de calidad frente al ahorro de memoria en un mismo modelo.
-- Integracion en pipelines de inferencia con servidores compatibles con la API de OpenAI: herramientas como llama.cpp server o vLLM (con soporte GGUF limitado) permiten exponer el modelo como endpoint HTTP para aplicaciones existentes.
-- Fine-tuning o investigacion sobre el modelo base: quien necesite modificar el modelo puede partir de los pesos safetensors del repositorio original y usar las cuantizaciones GGUF solo para inferencia y validacion rapida.
+- Prototipado local de asistentes conversacionales: con la cuantizacion Q4_K_M (20,0 GB) el modelo puede ejecutarse en una GPU de 24 GB o en configuraciones CPU+GPU, permitiendo iterar sobre prompts y flujos conversacionales sin depender de APIs externas.
+- Despliegue en estaciones de trabajo con una sola GPU: la variante Q4_K_S (18,9 GB) o IQ4_XS (18,0 GB) encaja en GPUs consumer de gama alta (RTX 3090/4090 con 24 GB), lo que facilita pruebas de concepto en hardware asequible.
+- Evaluacion comparativa de cuantizaciones: el repositorio ofrece once variantes, lo que permite medir el impacto de la cuantizacion en la calidad de las respuestas para un caso de uso concreto antes de fijar una version en produccion.
+- Generacion de texto en ingles para tareas generales: si el modelo rinde segun lo esperable en un 32B, podria usarse para redaccion, resumen y reescritura en ingles, aunque sin benchmarks publicos no puede confirmarse.
+- Integracion en pipelines con llama.cpp: al ser GGUF, puede incorporarse a servicios propios basados en llama.cpp server para tareas de generacion de texto por lotes.
+- Experimentacion academica con modelos de 32B: util como linea base en estudios sobre cuantizacion y degradacion de calidad en modelos de este tamano.
 
 ## Benchmarks y rendimiento
 
@@ -51,42 +50,57 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia (aproximada, segun el peso de cada cuantizacion sobre 32,76B parametros):
-  - Q8_0: en torno a 34-35 GB.
-  - Q6_K: en torno a 27-28 GB.
-  - Q5_K_M: en torno a 23-24 GB.
-  - Q4_K_M: en torno a 19-20 GB.
-  - Q3_K_M: en torno a 15-16 GB.
-  - Q2_K: en torno a 12-13 GB.
-- GPUs recomendadas: A100 40/80 GB o H100 para Q8_0 y Q6_K sin offloading; RTX 4090 (24 GB) para Q5_K_M y Q4_K_M; RTX 3090 (24 GB) en las mismas cuantizaciones; GPUs de 16 GB para Q3_K_M con contexto reducido.
-- Cabe en GPU de consumo: si, en RTX 4090, RTX 3090 y, con cuantizaciones bajas, en GPUs de 12-16 GB como RTX 4070 Ti o RTX 4080, a costa de calidad y de longitud de contexto.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, llama-cpp-python y servidores compatibles con la API de OpenAI basados en llama.cpp. vLLM y TGI no soportan GGUF de forma nativa completa, por lo que para esos motores conviene usar los safetensors del modelo base.
+- VRAM estimada para inferencia (solo pesos, sin overhead de contexto):
+  - Q2_K: ~12,4 GB
+  - Q3_K_S: ~14,5 GB
+  - Q3_K_M: ~16,0 GB
+  - Q3_K_L: ~17,3 GB
+  - IQ4_XS: ~18,0 GB
+  - Q4_K_S: ~18,9 GB
+  - Q4_K_M: ~20,0 GB
+  - Q5_K_S: ~22,7 GB
+  - Q5_K_M: ~23,4 GB
+  - Q6_K: ~27,0 GB
+  - Q8_0: ~34,9 GB
+- GPU recomendadas:
+  - Q4_K_M y superiores en calidad: A100 40/80 GB, H100, RTX A6000 (48 GB) para Q6_K y Q8_0.
+  - Consumer: RTX 3090/4090 (24 GB) admite hasta Q5_K_M con margen limitado para contexto; Q4_K_M es la opcion mas equilibrada.
+  - Q2_K y Q3_K_S pueden caber en GPUs de 16 GB, con degradacion de calidad esperable.
+- Cabe en consumer GPU: si, en RTX 3090/4090 (24 GB) con cuantizaciones Q4 y Q5; en GPUs de 16 GB solo con Q2/Q3.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, llama-cpp-python y servidores compatibles con GGUF. No se indica soporte nativo en vLLM o TGI para este repositorio (aunque el modelo base en safetensors podria servirse con transformers).
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
-|---|---|---|---|---|---|
-| Saathi-Axiom-32B-Apex (este) | 32,76B | no disponible | no disponible | GGUF y safetensors | Publicacion reciente, sin descargas ni likes |
-| Qwen2.5-32B-Instruct | ~32,8B | 128K (declarado por el autor) | Apache 2.0 (Qwen) | safetensors, GGUF | Referencia consolidada en la categoria 32B |
-| Gemma 2 27B | 27B | 8K | Gemma Terms | safetensors, GGUF | Menor numero de parametros, licencia restrictiva |
-| Yi-34B | 34B | 4K-200K segun variante | Apache 2.0 (Yi) | safetensors, GGUF | Ligeramente mayor, ecosistema maduro |
+No se dispone de datos de rendimiento del modelo, por lo que la comparativa se limita a parametros y formato. Se comparan alternativas de tamano similar con cuantizaciones GGUF ampliamente documentadas.
 
-La comparacion se limita a parametros, contexto declarado y licencia; no hay datos de rendimiento del modelo Saathi que permitan contrastar calidad frente a estas alternativas.
+| Modelo | Parametros | Contexto | Licencia | Formato | Benchmarks publicos |
+|---|---|---|---|---|---|
+| Saathi-Axiom-32B-Apex (este) | ~32,8B | no disponible | no disponible | GGUF | no disponibles |
+| Qwen2.5-32B-Instruct | 32,5B | 32.768 tokens | Apache 2.0 | safetensors, GGUF | si (MMLU, HumanEval, GSM8K) |
+| Gemma-2-27B-it | 27B | 8.192 tokens | Gemma Terms | safetensors, GGUF | si |
+| Yi-1.5-34B-Chat | 34B | 4.096 tokens | Apache 2.0 (con condiciones) | safetensors, GGUF | si |
+
+La comparativa se ofrece solo como referencia de categoria; no implica equivalencia de calidad, ya que no hay benchmarks publicos del modelo evaluado.
 
 ## Limitaciones y advertencias
 
-- Ausencia de model card sustantiva: no se documentan datos de entrenamiento, sesgos, idiomas ni comportamiento esperado, lo que dificulta evaluar riesgos antes de desplegarlo.
-- Licencia no especificada: sin licencia explicita no puede asumirse permiso para uso comercial; es imprescindible consultar el repositorio del autor original antes de cualquier despliegue en produccion.
-- Riesgo de alucinacion: no cuantificado ni documentado por el autor.
-- Idiomas soportados desconocidos: no hay garantia de calidad fuera del idioma o idiomas de entrenamiento, que no se detallan.
-- Longitud de contexto desconocida: planificar el despliegue sin asumir ventanas largas hasta verificarlo con el modelo base.
-- Cuantizaciones bajas (Q2_K, Q3_K_S): la perdida de calidad frente a f16 puede ser significativa en tareas de razonamiento y codigo; se recomienda validar con evaluaciones propias.
-- Sin validacion comunitaria: cero descargas y cero likes en el momento de la consulta implican ausencia de retroalimentacion de terceros sobre el comportamiento real del modelo.
-- Repositorio de terceros: mradermacher no es el autor del modelo base; los errores de conversion o los metadatos incompletos son responsabilidad del publicador de las cuantizaciones.
+- Ausencia total de documentacion tecnica: no se publican arquitectura, contexto, datos de entrenamiento ni proceso de alineacion, lo que impide evaluar sesgos, robustez o calidad de forma rigurosa.
+- Sin benchmarks publicos: no es posible verificar el rendimiento frente a alternativas establecidas de tamano similar.
+- Licencia no disponible: no puede confirmarse si el uso comercial esta permitido; adoptarlo en produccion sin aclarar la licencia conlleva riesgo legal.
+- Idioma: solo se declara ingles; el rendimiento en castellano es desconocido y probablemente limitado.
+- Riesgo de alucinacion: inherente a los modelos de lenguaje; sin evaluacion publica no puede acotarse su magnitud.
+- Cuantizaciones bajas (Q2_K, Q3_K_S): degradacion de calidad esperable; no recomendadas para tareas que requieran precision.
+- Cuantizaciones estaticas sin imatrix: el autor indica que no hay quants ponderados, lo que puede suponer menor calidad frente a alternativas con imatrix a igual tamano.
+- Origen y trazabilidad del modelo base inciertos: sin model card detallada del autor original, no puede verificarse la procedencia de los datos de entrenamiento.
+- Fecha de creacion futura en los metadatos (2026-11-19): conviene verificar la integridad y procedencia del repositorio antes de su uso.
 
 ## Enlaces
 
 - Repositorio GGUF: https://huggingface.co/mradermacher/Saathi-Axiom-32B-Apex-GGUF
 - Modelo base: https://huggingface.co/Saathimed/Saathi-Axiom-32B-Apex
-- Perfil del publicador de las cuantizaciones: https://huggingface.co/mradermacher
+- Pagina de descargas del autor: https://hf.tst.eu/model#Saathi-Axiom-32B-Apex-GGUF
+- Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Grafico de calidad de cuantizaciones (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png
+- Notas sobre cuantizaciones (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Solicitudes de cuantizacion del autor: https://huggingface.co/mradermacher/model_requests

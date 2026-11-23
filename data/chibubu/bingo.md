@@ -2,89 +2,90 @@
 
 ## Resumen
 
-Bingo (chibubu/bingo) es la republicación en Hugging Face del modelo AudioVisualFlamingo (AVF) de NVIDIA, un modelo multimodal de 8.742.888.688 parámetros (~8,74B) especializado en comprensión conjunta de vídeo y audio, con pipeline de tipo video-text-to-text. A diferencia de los sistemas que procesan fotogramas y audio como flujos independientes, AVF alinea fragmentos sincronizados de imagen y sonido, los intercala a lo largo del eje temporal y alimenta la secuencia fusionada al modelo de lenguaje, lo que le permite atender a eventos visuales y auditivos co-ocurrentes.
+Bingo es un modelo de lenguaje multimodal de tipo any-to-any desarrollado por el usuario chibubu y publicado en Hugging Face bajo licencia Apache 2.0. Está construido sobre la arquitectura Audio-Visual Flamingo (AV-Flamingo), un diseno que combina un backbone de lenguaje con mecanismos de atencion cruzada para integrar entradas de audio y video de forma entrelazada. Con aproximadamente 8.740 millones de parametros, el modelo esta orientado a la investigacion academica en grounding temporal cross-modal y comprension audiovisual.
 
-Su arquitectura combina una torre de visión SigLIP con tiling multiescala Dynamic-S2, un codificador de audio estilo AF-Whisper (128 bins mel, 16 kHz) y un backbone decoder-only de la familia Qwen2.5-7B. Se ha entrenado con el dataset nvidia/AV-Skills y etapas de contexto largo que alcanzan los 32K tokens para vídeos de hasta 15 minutos.
+El modelo acepta texto, audio y video como entradas, pero genera unicamente texto como salida, lo que lo situa en la categoria any-to-any por su capacidad de ingerir multiples modalidades. Su proposito declarado es el razonamiento temporal sobre eventos audiovisuales, la localizacion de eventos y la alineacion entre modalidades. Es relevante en el contexto actual de modelos multimodales porque aborda una tarea menos cubierta que la generacion de video o imagen: la comprension conjunta de audio y video con referencias temporales.
 
-Es relevante porque ofrece una única interfaz de chat para imagen, audio, vídeo y texto, con capacidades de ASR, grounding temporal por marcas de tiempo y razonamiento audiovisual, un área donde hay pocos modelos abiertos. Su licencia restringe el uso a investigación no comercial.
+A pesar de su pipeline any-to-any y su volumen de parametros, la model card es notablemente escasa: no documenta datos de entrenamiento, benchmarks, ni detalles sobre el tokenizador o el preprocesado de audio y video. Esto limita seriamente la evaluacion practica del modelo para produccion.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | AudioVisualFlamingo: SigLIP (visión) + AF-Whisper (audio) + proyectores MLP + Qwen2.5-7B (LLM) |
-| Parámetros totales | 8.742.888.688 (dato real de safetensors) |
-| Parámetros activos | No aplica (arquitectura densa, no MoE) |
-| Longitud de contexto | 32K tokens (en etapas de contexto largo) |
-| Tipos de cuantización | No disponible (el tamaño del repo, 17,5 GB para 8,74B parámetros, es coherente con pesos en bfloat16) |
-| Idiomas soportados | Inglés |
-| Licencia | Other: uso exclusivo para investigación no comercial |
+| Arquitectura | Audio-Visual Flamingo (AV-Flamingo), transformer multimodal con atencion cruzada |
+| Parametros totales | 8.742.888.688 (~8.740 M) |
+| Parametros activos | No aplica (no es MoE) |
+| Longitud de contexto | No disponible |
+| Tipos de cuantizacion | No disponible |
+| Idiomas soportados | Ingles (en) |
+| Licencia | Apache 2.0 |
 | Formato de pesos | Safetensors |
 
 ## Arquitectura y entrenamiento
 
-AVF se compone de cuatro bloques. El codificador visual es una torre SigLIP con procesamiento de imagen a 448x448 y tiling multiescala Dynamic-S2 (hidden_size de 1152 en la configuración publicada). El codificador de audio sigue el estilo AF-Whisper: recibe audio mono a 16 kHz, extrae 128 bins log-mel y procesa el sonido en ventanas de 30 segundos, con chunking para audios largos (`audio_chunk_length="max_3600"`). Proyectores MLP independientes para visión y audio mapean las salidas de ambos codificadores al tamaño oculto del LLM. La fusión temporal intercala fragmentos sincronizados de vídeo y audio a lo largo del eje temporal, aumentados con la técnica CRTE (los tags también mencionan TAVIT, aunque la model card no detalla este componente). El modelo de lenguaje es un decoder-only de la familia Qwen2.5-7B encargado del razonamiento multimodal y la generación de texto.
+La arquitectura se basa en AV-Flamingo, una variante de la familia Flamingo adaptada para procesar audio y video de forma entrelazada. Este diseno tipicamente combina un modelo de lenguaje preentrenado con capas de atencion cruzada que permiten al backbone de texto "consultar" representaciones de las modalidades no textuales, manteniendo el backbone congelado o parcialmente ajustado. La informacion disponible no detalla la configuracion exacta de capas, dimensiones ocultas ni el encoder de audio o video empleado.
 
-Sobre el entrenamiento, la model card indica que es un modelo instruction-tuned entrenado con el dataset nvidia/AV-Skills, e incluye etapas de contexto largo diseñadas para vídeos de hasta 15 minutos con 32K tokens de ventana. El número de tokens de preentrenamiento, la composición detallada del corpus y el uso de técnicas como RLHF o DPO no están disponibles en la información proporcionada.
+No se han publicado datos sobre el volumen de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas de RLHF, DPO o ajuste supervisado. La unica indicacion es que el modelo esta orientado a investigacion sobre grounding temporal y comprension audiovisual, lo que sugiere un entrenamiento centrado en tareas de localizacion de eventos y alineacion cross-modal, pero no se aportan cifras ni metodologia.
 
 ## Capacidades
 
-- Respuesta a preguntas sobre vídeo cuando importan tanto la evidencia visual como la auditiva.
-- Subtitulado detallado audiovisual de vídeos reales, cubriendo escena, habla, sonidos y música.
-- Razonamiento temporal sobre orden de eventos, cambios de escena y contexto de largo alcance.
-- Alineación de eventos audiovisual: identificar qué sonido corresponde a qué momento visual.
-- Razonamiento conjunto sobre habla, sonidos ambientales, música y acciones visuales.
-- Transcripción de habla (ASR) con grounding por marcas de tiempo.
-- Interfaz de chat unificada que acepta imagen, audio, vídeo y texto en una misma conversación.
-- Procesamiento de vídeos largos: hasta 128 fotogramas muestreados por defecto y audio en ventanas de 30 segundos.
+- Generacion de texto condicionada por entradas de audio y video entrelazadas.
+- Razonamiento temporal sobre eventos audiovisuales: localizacion de eventos y grounding cross-modal.
+- Comprension de audio y video como modalidades de entrada (sin generacion de audio ni video).
+- Analisis de atencion cross-modal (aplicacion de investigacion).
+- Modelado de lenguaje audiovisual (audio-visual language modeling).
+- Capacidades multilingues: limitadas al ingles segun la metadata.
+- Tool calling / function calling: no disponible en la informacion proporcionada.
+- Soporte de agentes y multi-step reasoning: no disponible en la informacion proporcionada.
+- Modo thinking, vision o audio como salida: no disponible (solo texto como salida).
 
 ## Casos de uso
 
-- Análisis de vídeo con evidencia audiovisual: en videovigilancia o grabaciones de incidentes, el modelo puede responder preguntas que requieren correlacionar un sonido (una rotura de cristal, una alarma) con el momento visual exacto, citando timestamps.
-- Subtitulado y accesibilidad: generación de descripciones detalladas que combinan escena, diálogo y música, útil para audiodescripción de contenido y para indexar bibliotecas de vídeo por contenido audiovisual.
-- Razonamiento temporal en vídeos largos: ordenar cronológicamente los eventos principales de una grabación de hasta 15 minutos con sus evidencias, aplicable a resúmenes automáticos, detección de highlights deportivos o revisión de grabaciones de reuniones.
-- Control de calidad de sincronización: verificar si el audio y los visuals están alineados en doblajes, emisiones en directo o producciones audiovisuales, pidiendo al modelo que mencione transiciones de escena y timestamps clave.
-- Transcripción con contexto visual: transcribir el habla de una entrevista o clase y relacionarla con lo que ocurre en pantalla (diagramas, gestos, objetos), algo que un ASR puro no puede hacer.
-- Investigación en percepción multimodal: como modelo instruction-tuned sobre nvidia/AV-Skills, sirve como base para experimentos de alineación audiovisual, grounding temporal y evaluación de razonamiento de largo alcance en vídeo.
-- Asistente multimodal en un solo turno: combinar una imagen de referencia, un fichero de audio y un vídeo en el mismo prompt para responder qué aporta el audio que no es evidente en los frames.
+- Investigacion en grounding temporal audiovisual: el modelo puede emplearse para localizar eventos concretos en secuencias de video con audio, sirviendo como base para experimentos academicos sobre alineacion temporal.
+- Analisis de atencion cross-modal: util para estudiar como el backbone de lenguaje atiende a representaciones de audio y video en tareas de comprension, especialmente en entornos de investigacion interpretabilidad.
+- Comprension de contenido audiovisual para anotacion asistida: puede generar descripciones textuales de eventos en material audiovisual, apoyando pipelines de etiquetado en investigacion.
+- Experimentos de referencia en modelado de lenguaje audiovisual: sirve como linea base para comparar arquitecturas AV-Flamingo frente a alternativas en tareas de razonamiento temporal.
+- Analisis de alineacion audio-texto en entornos controlados: util para estudiar correspondencias entre eventos sonoros y descripciones textuales en datasets academicos.
+- Prototipado de sistemas de recuperacion audiovisual: las representaciones internas del modelo pueden aprovecharse para tareas de matching entre consultas textuales y fragmentos audiovisuales en laboratorio.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: los pesos en bfloat16 ocupan 17,5 GB; a esto hay que sumar activaciones de los codificadores de visión y audio y la caché KV. Estimación realista: mínimo 24 GB de VRAM, siendo más cómodo disponer de 40-48 GB para vídeos largos con 128 frames y contexto extenso.
-- GPU recomendadas: RTX 4090 o RTX 3090 (24 GB) como mínimo viable; A100 40 GB, L40S o RTX 6000 Ada/A6000 (48 GB) para cargas de vídeo largo con holgura.
-- Consumer GPU: cabe en una RTX 4090/3090 de 24 GB en bf16 con contexto moderado, pero queda justo con 128 frames y audio largo. No se han publicado versiones cuantizadas, por lo que no es viable ejecutarlo en tarjetas de 12-16 GB.
-- Despliegue: únicamente mediante la librería Transformers a través del fork de integración AVF (`AudioVisualFlamingoForConditionalGeneration`), mientras el PR upstream está pendiente. Requiere `ffmpeg`, `libsndfile1`, `torch`, `torchaudio`, `librosa` y `soundfile`. No hay soporte documentado para vLLM, llama.cpp, Ollama ni TGI, y no existen pesos en GGUF.
+- VRAM estimada para inferencia en FP16/BF16: aproximadamente 17,5 GB solo para pesos, mas overhead de activaciones y encoders multimodales; se recomienda al menos 24 GB.
+- VRAM estimada en cuantizacion de 8 bits: en torno a 9-10 GB para pesos; en 4 bits, aproximadamente 5-6 GB, aunque no se documentan formatos de cuantizacion compatibles.
+- GPU recomendadas: A100 (40/80 GB) o H100 para FP16 sin restricciones; RTX 4090 (24 GB) para FP16 ajustado; RTX 3090 (24 GB) como alternativa consumer.
+- Cabe en GPU consumer: si, en tarjetas con 24 GB o mas para FP16, y potencialmente en 12-16 GB con cuantizacion, siempre que se valide el soporte real de audio y video.
+- Opciones de despliegue: transformers (libreria declarada); compatibilidad con vLLM, llama.cpp, Ollama o TGI no disponible en la informacion proporcionada.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Modalidades | Contexto | Licencia |
-|---|---|---|---|---|
-| bingo (AVF) | 8,74B | Imagen, vídeo, audio, texto | 32K | Investigación no comercial |
-| Qwen2.5-Omni-7B | ~10,7B totales (Thinker-Talker) | Imagen, vídeo, audio, texto (con salida de voz) | 32K | Apache 2.0 |
-| Video-LLaVA-7B | ~7B (Vicuna-1.5) | Imagen, vídeo, audio (LanguageBind) | 4K | Apache 2.0 |
+| Modelo | Parametros | Contexto | Modalidades | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| Bingo (chibubu) | ~8.740 M | No disponible | Texto, audio, video (entrada); texto (salida) | Apache 2.0 | Hugging Face |
+| Qwen2-Audio | ~7.000 M (aprox.) | No disponible en esta ficha | Audio y texto | Apache 2.0 | Hugging Face |
+| Video-LLaVA | ~7.000 M (aprox.) | No disponible en esta ficha | Video e imagen; texto | Apache 2.0 (segun variante) | Hugging Face |
 
-Frente a Qwen2.5-Omni-7B, AVF apuesta por una fusión temporal explícita de chunks audiovisuales sincronizados en lugar de tratar las modalidades como flujos paralelos, y está optimizado para vídeo largo (hasta 15 minutos), pero carece de salida de voz y su licencia impide uso comercial. Frente a Video-LLaVA-7B, ofrece un contexto mucho mayor (32K frente a 4K) y un pipeline de vídeo-audio más sofisticado, a costa de requisitos de VRAM superiores y una integración menos madura en el ecosistema.
+La comparativa se limita a categorias generales de modelos multimodales de escala similar; no hay datos de rendimiento de Bingo que permitan una comparacion cuantitativa.
 
 ## Limitaciones y advertencias
 
-- Licencia restrictiva: el modelo y sus recursos se publican solo para investigación no comercial; cualquier producto o servicio comercial queda excluido. Los usuarios finales son responsables de aplicar salvaguardas, controles de privacidad y evaluaciones específicas de dominio.
-- Limitación de idioma: según la model card, el modelo está soportado en inglés; no hay garantías de rendimiento en castellano ni otros idiomas.
-- Vídeos muy largos y densos siguen siendo un reto: el entrenamiento de contexto largo cubre hasta 15 minutos y 32K tokens, y fuera de ese rango la calidad puede degradarse.
-- El prompting es determinante: la model card recomienda pedir explícitamente evidencia audiovisual, timestamps, transiciones de escena u orden temporal cuando esos detalles importan; prompts genéricos pueden omitir esa información.
-- Dependencia de un fork de Transformers: el soporte vive en una rama de integración mientras el PR upstream está pendiente, lo que introduce riesgo de ruptura en actualizaciones y de mantenimiento a medio plazo.
-- Riesgo de alucinación: como en todo modelo audiovisual generativo, puede atribuir sonidos a eventos visuales incorrectos o inventar contenido no presente en la pista de audio; se recomienda verificar las salidas en flujos críticos.
-- Procedencia del repositorio: la ficha analizada (chibubu/bingo) parece un espejo del modelo oficial de NVIDIA referenciado en el código de ejemplo; conviene verificar la integridad y procedencia de los pesos antes de usarlos, y preferir el repositorio oficial cuando esté disponible.
-- Madurez comunitaria: 0 descargas y 0 likes en el momento de la ficha; no existe validación comunitaria ni benchmarks públicos que respalden su rendimiento.
+- Model card muy escasa: no documenta datos de entrenamiento, benchmarks, tokenizador ni preprocesado, lo que impide validar su rendimiento real.
+- Solo genera texto: no produce audio ni video, pese a la etiqueta any-to-any.
+- Idiomas: unicamente ingles declarado; el rendimiento en castellano no esta documentado.
+- Riesgo de alucinacion: inherente a modelos de lenguaje multimodales; no hay evaluaciones publicadas que lo cuantifiquen.
+- Sesgos: no documentados; al desconocer el dataset de entrenamiento no se pueden evaluar sesgos de genero, culturales o de otro tipo.
+- Longitud de contexto desconocida: limita la planificacion de casos de uso con secuencias audiovisuales largas.
+- Uso previsto exclusivamente de investigacion academica segun el autor; aunque la licencia Apache 2.0 permite uso comercial, la falta de documentacion desaconseja produccion.
+- Sin datos sobre cuantizacion: el despliegue eficiente en hardware limitado no esta verificado.
+- Repositorio de 17,5 GB: requiere espacio de almacenamiento considerable y descarga completa de pesos safetensors.
 
 ## Enlaces
 
-- Ficha del modelo: https://huggingface.co/chibubu/bingo
-- Modelo oficial referenciado en el código de ejemplo: https://huggingface.co/nvidia/nemotron-labs-audio-visual-flamingo-hf
-- Dataset de entrenamiento (nvidia/AV-Skills): https://huggingface.co/datasets/nvidia/AV-Skills
-- Fork de Transformers con soporte AVF (rama `add_AudioVisualFlamingo`): https://github.com/lashahub/transformers
-- Diagrama de arquitectura incluido en el repositorio: `static/avf_architecture.png` (dentro de la ficha del modelo)
+- Hugging Face: https://huggingface.co/chibubu/bingo
+- Paper o blog de AV-Flamingo: no disponible en la informacion proporcionada
+- Repositorio de codigo: no disponible en la informacion proporcionada
+- Demo: no disponible en la informacion proporcionada

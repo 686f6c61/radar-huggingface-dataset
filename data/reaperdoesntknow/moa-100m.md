@@ -2,92 +2,95 @@
 
 ## Resumen
 
-MoA-100M (también referido como MoAMetricLM-100M) es un modelo de lenguaje causal decoder-only de investigación desarrollado por el usuario independiente reaperdoesntknow. Su propuesta central es sustituir la atención por producto escalar clásica por un esquema de "mixture of attentions" (MoA) en el que cada bloque Transformer combina cuatro tipos de cabeza de atención —convolución local, atención multi-cabeza basada en métricas de distancia, multi-query attention métrica y mezcla de canales— y un router por token decide cuáles activar. La atención métrica usa distancias L2, coseno o Mahalanobis diagonal en lugar del producto escalar, lo que da al modelo un sesgo geométrico explícito.
+MoA-100M (identificado en la model card como MoAMetricLM-100M) es un modelo de lenguaje causal decoder-only desarrollado por el usuario independiente reaperdoesntknow, orientado a la investigación sobre mecanismos de atención alternativos al producto escalar clásico. Su propuesta central es una arquitectura propia denominada `moa_metric` (mixture of attentions), que combina en cada bloque Transformer cuatro tipos de cabeza de atención —convolución local, atención multi-cabeza basada en métricas de distancia, multi-query attention también en espacio métrico y una cabeza de mezcla de canales— y las enruta token a token mediante un router aprendido.
 
-El modelo declara unos 185 M de parámetros totales con aproximadamente 100 M "efectivos" por la naturaleza dispersa del enrutado, una dimensión oculta de 768, 12 capas y una longitud de contexto de 2048 tokens con tokenizador GPT-2. Se entrenó únicamente en CPU (Intel, FP32) sobre un presupuesto de aproximadamente 500 000 tokens procedentes de dos datasets (nvidia/Nemotron-Math-HumanReasoning y WeMake/Intelligent-Content-Understanding), lo que lo sitúa en la categoría de prototipo de investigación más que de modelo de propósito general.
+El modelo declara aproximadamente 185 millones de parámetros totales, con un tamaño efectivo de unos 100 millones debido a la mezcla y al enrutamiento disperso. Emplea el tokenizador GPT-2 (vocabulario de 50 257 tokens), una dimensión oculta de 768, 12 capas y una longitud de contexto de 2048 tokens. La alimentación (FFN) sustituye el MLP convencional por un HyperFFN con tres ramas paralelas (SwiGLU, convolución separable y baja dimensionalidad) combinadas por un router de rama.
 
-Su relevancia es acotada pero concreta: sirve como banco de pruebas reproducible para estudiar atención geométrica, sparsity estructurada mediante "ball pruning" y enrutado por token en modelos pequeños. No está pensado para producción, no tiene KV-cache implementada y carece de alineamiento o ajuste de seguridad, por lo que su uso realista se limita a experimentación académica y didáctica.
+Es relevante ahora no por su rendimiento —entrenado en CPU con un presupuesto de unos 500 000 tokens y sin benchmarks publicados— sino como banco de pruebas reproducible de ideas geométricas en atención: penalizaciones de desigualdad triangular, poda por bolas (ball pruning) y atención basada en distancias L2, coseno o Mahalanobis diagonal. Su licencia Apache-2.0 y su integración con Transformers lo hacen accesible para experimentación, aunque no está pensado como modelo de propósito general.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | `moa_metric` (Transformer decoder-only con Mixture of Attentions y HyperFFN) |
-| Parametros totales | ~185 M (≈100 M efectivos por el enrutado disperso) |
-| Parametros activos | no disponible (no es MoE clásico; el router selecciona cabezas por token) |
-| Longitud de contexto | 2048 tokens (`max_position_embeddings`) |
-| Tipos de cuantizacion | no disponible (pesos publicados en el repo de 1,3 GB; no se documentan variantes GGUF/AWQ/GPTQ) |
-| Idiomas soportados | en (inglés) |
+| Arquitectura | `moa_metric` (Transformer decoder-only con mixture of attentions y HyperFFN) |
+| Parametros totales | ~185 M (≈100 M efectivos según el autor) |
+| Parametros activos | no disponible (mezcla por router, sin cifra oficial de activos) |
+| Longitud de contexto | 2048 tokens |
+| Tipos de cuantizacion | no disponible (pesos en FP32; sin GGUF ni cuantizaciones publicadas) |
+| Idiomas soportados | inglés (`en`) |
 | Licencia | Apache-2.0 |
-| Formato de pesos | safetensors/PyTorch vía `transformers` (repo de 1,3 GB; no se listan GGUF ni otros formatos) |
+| Formato de pesos | safetensors / PyTorch (librería `transformers`; repo de 1,3 GB) |
+
+Otros datos técnicos: dimensión 768, 12 capas, 8 cabezas de atención, 8 cabezas Q en MQA, `mixer_hidden` y `ffn_hidden` de 3072, tokenizador GPT-2 con `pad_token = eos_token`, `vocab_size` 50 257.
 
 ## Arquitectura y entrenamiento
 
-Cada bloque del modelo combina cuatro cabezas de atención bajo un router por token: LocalConvHead (convolución depthwise-separable 1D para contexto de corto alcance), MetricMHAttention (atención multi-cabeza con pesos proporcionales a exp(−α·‖q−k‖²) sobre distancias L2, coseno o Mahalanobis diagonal), MetricMQA (multi-query attention con K/V compartidas en el mismo espacio métrico, más barata que la MHA completa) y ChannelMixHead (MLP por token que mezcla dimensiones de canal sin mezclar posiciones). El router aplica además compuertas tipo FiLM y sesgos de enrutado para escalar arriba/abajo la contribución de cada cabeza. La FFN es una HyperFFN con tres ramas paralelas (SwiGLU, convolución separable y baja dimensionalidad) combinadas por un router de rama, con LayerScale y DropPath opcional para estabilidad.
+Cada bloque Transformer de MoA contiene cuatro cabezas que se combinan mediante un router token a token: LocalConvHead (convolución 1D depthwise-separable para contexto de corto alcance), MetricMHAttention (atención soft-min sobre distancias L2, coseno o Mahalanobis diagonal, con pesos proporcionales a exp(−α_h·‖q_i − k_j‖²)), MetricMQA (multi-query con K/V compartidas en el mismo espacio métrico) y ChannelMixHead (MLP por token que mezcla dimensiones de canal sin mezclar posiciones). El router aplica además puertas de características estilo FiLM y sesgos de enrutamiento para escalar arriba/abajo. La FFN es un HyperFFN con tres ramas paralelas (SwiGLU, convolución separable y baja dimensionalidad) combinadas por un router de rama, con LayerScale y DropPath opcional para estabilidad.
 
-El entrenamiento se realizó íntegramente en CPU (Intel) en FP32, con AdamW, learning rate 5e-4, batch de 4, secuencias de hasta 512 tokens y un total de aproximadamente 500 000 tokens (≈256 000 por cada uno de los dos datasets citados). La pérdida final de entrenamiento reportada es ≈0,30. El modelo incorpora regularización opcional: una penalización de desigualdad triangular sobre tripletas muestreadas para forzar comportamiento métrico real y un "ball pruning" en el que cada cabeza aprende un origen o_h y un radio r_h, enmascarando claves fuera de la bola para obtener sparsity estructurada. No se documenta RLHF, DPO ni ajuste de alineamiento de ningún tipo.
+El entrenamiento se realizó únicamente en CPU (Intel) en FP32, con AdamW, LR 5e-4, batch de 4, secuencias de hasta 512 tokens y un presupuesto total de unas 500 000 tokens (≈2 × 256 000) extraídos de los datasets nvidia/Nemotron-Math-HumanReasoning y WeMake/Intelligent-Content-Understanding. La pérdida final de entrenamiento reportada es ≈0,30. Incluye regularización opcional: penalización de desigualdad triangular sobre tripletas muestreadas para forzar comportamiento métrico real, y ball pruning, donde cada cabeza aprende un origen o_h y un radio r_h que enmascara claves fuera de la bola, generando dispersión estructurada. No se aplicó RLHF, DPO ni ajuste de alineamiento.
 
 ## Capacidades
 
-- Generación de texto causal autoregresiva en inglés con tokenizador GPT-2 (vocabulario de 50 257).
-- Modelado de lenguaje a nivel de prototipo; útil para estudiar atención métrica y enrutado por token, no para tareas abiertas de alta calidad.
-- Soporte de tool calling / function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingües: limitadas al inglés declarado; no se documentan otros idiomas.
-- Capacidades especiales: atención geométrica con métricas L2/coseno/Mahalanobis, sparsity por ball pruning, HyperFFN con router de rama. No hay modo "thinking", visión ni audio.
-- Sin KV-cache: la generación recalcula el contexto completo en cada paso, lo que degrada la latencia de forma lineal con la longitud acumulada.
+- Generación de texto causal en inglés (modelo decoder-only con `pipeline_tag: text-generation`).
+- Razonamiento básico y matemático acotado, condicionado por el dataset Nemotron-Math-HumanReasoning usado en el entrenamiento.
+- Atención geométrica configurable: métrica L2, coseno o Mahalanobis diagonal, seleccionable en la configuración.
+- Enrutamiento token a token entre cuatro mecanismos de atención y tres ramas de FFN.
+- Dispersión estructurada mediante ball pruning (origen y radio aprendidos por cabeza).
+- No soporta tool calling ni function calling de forma nativa.
+- No soporta agentes ni razonamiento multi-paso explícito.
+- Multilingüe: no; solo inglés declarado.
+- Sin modo thinking, visión, audio ni otras modalidades.
+- Generación determinista con `do_sample=False` o muestreo con temperatura.
 
 ## Casos de uso
 
-- Investigación sobre atención geométrica: reproducir experimentos con atención basada en distancias L2, coseno o Mahalanobis diagonal en un modelo pequeño y entrenable en CPU, comparando frente a atención por producto escalar.
-- Estudio de sparsity estructurada: analizar el efecto del ball pruning (origen y radio aprendidos por cabeza) sobre la calidad del modelado y el coste computacional en un entorno controlado.
-- Experimentos de enrutado por token: evaluar cómo un router decide qué cabeza de atención activar y cómo afectan las compuertas FiLM y los sesgos de enrutado a la pérdida y a la estabilidad del entrenamiento.
-- Docencia y divulgación: ejemplo didáctico de arquitectura Transformer alternativa con código de inferencia y bucle de entrenamiento mínimo en `transformers`.
-- Pruebas de concepto de HyperFFN: comparar la combinación de ramas SwiGLU, convolucional y de bajo rango frente a una FFN convencional en tareas de modelado de lenguaje a pequeña escala.
-- Validación de regularización métrica: medir el impacto de la penalización de desigualdad triangular sobre la coherencia geométrica de las representaciones en un presupuesto de cómputo reducido.
-- Baseline para ablaciones: punto de partida ligero para comparar variantes de atención en papers o trabajos de fin de máster sin requerir GPUs.
+- Investigación sobre atención basada en métricas: sirve como implementación de referencia para comparar atención por producto escalar frente a atención por distancias L2, coseno o Mahalanobis en un Transformer pequeño y entrenable en CPU.
+- Estudio de dispersión estructurada: el ball pruning permite analizar cómo evolucionan los orígenes y radios aprendidos por cabeza y su efecto en el enmascaramiento de claves, útil para papers sobre sparsity estructurada.
+- Experimentos de enrutamiento condicional: el router token a token y el router de rama del HyperFFN permiten estudiar políticas de mezcla de expertos de atención en modelos de ~100 M efectivos.
+- Reproducción de regularización geométrica: la penalización de desigualdad triangular es un caso concreto para validar si una atención aprendida respeta propiedades métricas.
+- Docencia y prototipado rápido: al entrenar en CPU y caber en cualquier GPU de consumo, es adecuado para cursos o talleres donde se modifica la arquitectura y se reentrena en horas.
+- Ablación de componentes: al ser modular (cuatro cabezas, tres ramas FFN, métricas conmutables), permite aislar el impacto de cada pieza en la pérdida y en la calidad de generación.
+- Generación de texto exploratoria en inglés: útil para pruebas cualitativas de continuidad y coherencia a corto plazo, no para producción.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La única métrica reportada por el autor es la pérdida final de entrenamiento (≈0,30) sobre un presupuesto de ~500 000 tokens, que no es comparable con MMLU, HumanEval, GSM8K ni otras evaluaciones estándar.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card únicamente reporta una pérdida final de entrenamiento de ≈0,30 sobre el conjunto de entrenamiento, sin métricas de validación, MMLU, HumanEval, GSM8K ni comparaciones con otros modelos.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: el modelo tiene ~185 M de parámetros; en FP32 ocupa aproximadamente 0,75 GB de pesos, en FP16 ~0,37 GB y en int8 ~0,19 GB, a lo que hay que sumar activaciones y el coste de recalcular el contexto completo en cada paso al no haber KV-cache.
-- GPU recomendadas: cualquier GPU consumer moderna es suficiente; una RTX 3060, RTX 4060 o superior lo ejecuta con holgura. También funciona en CPU, que es de hecho el entorno de entrenamiento declarado.
-- Cabe en GPU consumer: sí, en cualquier GPU con al menos 2-4 GB de VRAM efectiva considerando overhead; incluso en iGPU o CPU con suficiente RAM.
-- Opciones de despliegue: `transformers` con `AutoModelForCausalLM` (soporte oficial). No se documenta compatibilidad con vLLM, llama.cpp, Ollama ni TGI; la arquitectura `moa_metric` es personalizada y requeriría portabilidad manual para esos runtimes.
-- Latencia y throughput: no disponibles como cifras medidas. Cualitativamente, la ausencia de KV-cache implica que el tiempo de generación crece linealmente con la longitud total del contexto, penalizando secuencias largas.
+- VRAM estimada para inferencia: ~0,7 GB en FP32 (185 M de parámetros); en FP16 ~0,4 GB; en cuantización de 8 bits ~0,2 GB (aunque no se publican pesos cuantizados).
+- GPU recomendadas: cualquier GPU con ≥2 GB de VRAM; no requiere A100 ni H100.
+- Cabe holgadamente en GPU de consumo: GTX 1650, RTX 3060, RTX 4090, e incluso en CPU.
+- Opciones de despliegue: `transformers` con `AutoModelForCausalLM` (soporte nativo); no hay confirmación de soporte en vLLM, llama.cpp, Ollama ni TGI, y la ausencia de KV-cache complica su integración en servidores de inferencia estándar.
+- Latencia y throughput: no disponibles como cifras medidas; el autor advierte que, al no implementar KV-cache, la generación recalcula todo el contexto en cada paso y el tiempo crece linealmente con la longitud total.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Arquitectura | Licencia | Benchmarks |
 |---|---|---|---|---|---|
-| MoA-100M (este) | ~185 M (~100 M efectivos) | 2048 | Mixture of attentions con métricas de distancia, HyperFFN, ball pruning | Apache-2.0 | Hugging Face, `transformers` |
-| GPT-2 small | 124 M | 1024 | Transformer decoder-only clásico con atención por producto escalar | MIT | Hugging Face, ampliamente soportado (vLLM, llama.cpp, etc.) |
-| GPT-2 medium | 355 M | 1024 | Transformer decoder-only clásico | MIT | Hugging Face, ampliamente soportado |
-| SmolLM-135M | 135 M | 2048 | Transformer decoder-only moderno entrenado con muchos más tokens | Apache-2.0 | Hugging Face, `transformers`, GGUF disponible |
+| MoA-100M | ~185 M (~100 M efectivos) | 2048 | MoA métrica + HyperFFN | Apache-2.0 | no disponibles |
+| GPT-2 small | 124 M | 1024 | Transformer clásico | MIT | publicados por OpenAI |
+| GPT-2 medium | 355 M | 1024 | Transformer clásico | MIT | publicados por OpenAI |
+| SmolLM-135M | 135 M | 2048 | Transformer decoder-only | Apache-2.0 | publicados por HuggingFace |
 
-La comparación es principalmente estructural: MoA-100M se distingue por su esquema de atención geométrica y enrutado, pero su presupuesto de entrenamiento (~500 000 tokens) es varios órdenes de magnitud inferior al de cualquier modelo de propósito general de tamaño comparable, por lo que la comparación de calidad no es significativa.
+La comparación es cualitativa: MoA-100M se sitúa en el rango de tamaño de GPT-2 small y SmolLM-135M, pero carece de benchmarks y de KV-cache, y su entrenamiento (500 k tokens en CPU) es órdenes de magnitud menor que el de los modelos citados (decenas o cientos de miles de millones de tokens). No es, por tanto, un competidor en calidad de generación, sino una propuesta arquitectónica experimental.
 
 ## Limitaciones y advertencias
 
-- Presupuesto de entrenamiento muy reducido (~500 000 tokens): no es un modelo de propósito general y su calidad de generación será muy limitada fuera del dominio de los datos de entrenamiento.
-- Sin KV-cache: la generación recalcula el contexto completo en cada paso, con latencia que crece linealmente con la longitud de la secuencia.
-- Sin alineamiento ni ajuste de seguridad: puede producir contenido sesgado, ofensivo o inexacto; el autor lo advierte explícitamente.
-- Riesgo alto de alucinación y de incoherencia en respuestas largas o en temas no cubiertos por los datos de entrenamiento.
-- Solo inglés declarado; sin soporte multilingüe documentado.
-- Contexto limitado a 2048 tokens.
-- Arquitectura personalizada (`moa_metric`): requiere la versión de `transformers` compatible con el código del autor; no hay garantía de soporte en runtimes de inferencia optimizados (vLLM, llama.cpp, TGI) ni de pesos en formato GGUF.
-- Uso fuera de alcance: aplicaciones de alto riesgo (médicas, legales, financieras) sin evaluación adicional.
-- Licencia Apache-2.0: permite uso comercial, pero el estado del modelo (prototipo de investigación sin alineamiento) desaconseja cualquier despliegue en producción.
-- El número de descargas (1961) y likes (1) sugiere adopción muy limitada; no hay validación independiente de su comportamiento.
+- Sin alineamiento ni ajuste de seguridad: el autor advierte explícitamente que las salidas pueden ser sesgadas o inexactas.
+- Riesgo alto de alucinación: el presupuesto de entrenamiento (~500 k tokens) es insuficiente para un modelo de propósito general.
+- Sin KV-cache: la generación es lenta y escala linealmente con la longitud del contexto.
+- Contexto limitado a 2048 tokens y solo inglés declarado.
+- Entrenado en CPU con FP32 y batch pequeño, lo que limita la calidad y la estabilidad del ajuste.
+- Fuera de alcance para aplicaciones de alto riesgo (médicas, legales, financieras) sin evaluación adicional.
+- Uso comercial permitido por Apache-2.0, pero sin garantías de calidad; conviene verificar la procedencia de los datasets de entrenamiento antes de un uso en producción.
+- La model card menciona "no KV-cache" como limitación conocida; cualquier despliegue en servidor requerirá implementar caché o aceptar la penalización de latencia.
+- El repositorio pesa 1,3 GB, lo que sugiere pesos en FP32 y posiblemente checkpoints adicionales; verificar el contenido antes de descargar.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/reaperdoesntknow/MoA-100M
-- Dataset nvidia/Nemotron-Math-HumanReasoning: https://huggingface.co/datasets/nvidia/Nemotron-Math-HumanReasoning
-- Dataset WeMake/Intelligent-Content-Understanding: https://huggingface.co/datasets/WeMake/Intelligent-Content-Understanding
-- Tokenizador GPT-2 (referenciado): https://huggingface.co/gpt2
-- Documentación de `transformers` para modelos causales: https://huggingface.co/docs/transformers
-- Paper, blog o repositorio adicional del autor: no disponible en la información proporcionada.
+- Hugging Face: https://huggingface.co/reaperdoesntknow/MoA-100M
+- Dataset de entrenamiento (matemáticas y razonamiento): https://huggingface.co/datasets/nvidia/Nemotron-Math-HumanReasoning
+- Dataset de entrenamiento (contenido): https://huggingface.co/datasets/WeMake/Intelligent-Content-Understanding
+- Tokenizador GPT-2: https://huggingface.co/gpt2
+- Librería Transformers: https://github.com/huggingface/transformers

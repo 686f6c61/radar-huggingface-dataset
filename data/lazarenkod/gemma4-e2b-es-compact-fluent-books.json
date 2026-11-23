@@ -52,16 +52,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "lazarenkod/gemma4-e2b-compact-fluent-books · Hugging Face",
-      "url": "https://huggingface.co/lazarenkod/gemma4-e2b-compact-fluent-books",
-      "snippet": "Instructions to use lazarenkod/gemma4-e2b-compact-fluent-books with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
-    },
-    {
-      "title": "lazarenkod/gemma4-e2b-fluent-books · Hugging Face",
-      "url": "https://huggingface.co/lazarenkod/gemma4-e2b-fluent-books",
-      "snippet": "A LoRA fine-tune of google/gemma-4-E2B-it with its vocabulary cut from 262,144 to 40,000 tokens, merged and quantised (Q4_K_M, the per-layer embedding table at Q3_K, with an importance matrix), for the on-device assistant of the Fluent Books reading app (an English reader for Russian speakers)."
-    }
-  ]
+  "sources": []
 }

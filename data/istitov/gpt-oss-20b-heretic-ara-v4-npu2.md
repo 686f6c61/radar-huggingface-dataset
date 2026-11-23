@@ -2,114 +2,103 @@
 
 ## Resumen
 
-GPT-OSS-20B-heretic-ara-v4-NPU2 es una conversión no oficial del modelo `p-e-w/gpt-oss-20b-heretic-ara-v4` (a su vez una variante "abliterated" de `openai/gpt-oss-20b`) al formato Q4NX propietario de FastFlowLM, pensada para ejecutarse exclusivamente sobre NPUs AMD XDNA 2 (familia Ryzen AI 300 y posteriores). El autor de la conversión es el usuario de Hugging Face `istitov`, sin afiliación con OpenAI, p-e-w, AMD ni el proyecto FastFlowLM. No se ha entrenado nada: el repositorio solo convierte y reempaqueta los pesos originales, manteniendo los expertos en MXFP4 como hace la conversión oficial de FastFlowLM.
+GPT-OSS-20B-heretic-ara-v4-NPU2 es una conversión no oficial del modelo `p-e-w/gpt-oss-20b-heretic-ara-v4` (a su vez un derivado "abliterated" de `openai/gpt-oss-20b`) al formato Q4NX propietario de FastFlowLM, pensada para ejecutarse exclusivamente sobre las NPU AMD XDNA 2 integradas en los procesadores Ryzen AI 300 y posteriores. El autor, `istitov`, no entrena ni modifica los pesos más allá del repacking: su aportación es empaquetar los pesos en el formato que entiende el runtime de AMD y registrarlos contra los kernels propietarios de FastFlowLM para que el modelo funcione en la NPU local de un portátil.
 
-El modelo hereda la arquitectura Mixture-of-Experts de GPT-OSS-20B (20 000 millones de parámetros totales, aproximadamente 3 600 millones activos por token) y el trabajo de "desensibilización" de p-e-w, que reduce la tasa de rechazos del modelo original. Su relevancia es doble: por un lado, demuestra que es posible ejecutar un MoE de 20B en una NPU integrada de portátil con un rendimiento de decodificación cercano al del modelo oficial (18,4 frente a 18,7 tokens/s); por otro, ofrece una vía para desplegar modelos con menos restricciones de rechazo en hardware de consumo sin GPU dedicada.
+El modelo hereda la arquitectura de GPT-OSS-20B: un transformer con mezcla de expertos (MoE) de aproximadamente 21 000 millones de parámetros totales y unos 3 600 millones activos por token, con los expertos cuantizados en MXFP4. La conversión mantiene los expertos en MXFP4 y empaqueta el resto en Q4NX, dando un repositorio de 14,5 GB. El contexto probado es de 8 192 tokens, el valor por defecto del registro de FastFlowLM.
 
-La ficha se centra en la conversión y sus particularidades de despliegue, ya que las capacidades cognitivas son las del modelo base y deben consultarse en las model cards de OpenAI y de p-e-w. El contexto probado es de 8192 tokens (valor por defecto del registro de FastFlowLM) y el tamaño de descarga es de 14,5 GB.
+Su relevancia es doble: por un lado, demuestra que es posible ejecutar un MoE de 20B en la NPU de un portátil Ryzen AI sin GPU dedicada ni servicio en la nube; por otro, ofrece una variante "uncensored" (heretic) que reduce drásticamente los rechazos (9/100 frente a 98/100 del modelo stock según cifras del autor original), útil en dominios donde los filtros de seguridad generan falsos positivos. La contrapartida es que no es un GGUF, no carga en Transformers, llama.cpp ni Ollama, y depende de un runtime cerrado y de un formato que puede romperse entre versiones.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer Mixture-of-Experts (MoE), herencia de GPT-OSS-20B |
-| Parametros totales | 20 000 millones (20B) |
-| Parametros activos | Aproximadamente 3 600 millones (3,6B) por token |
-| Longitud de contexto | 8192 tokens probados (valor por defecto del registro de FastFlowLM); contexto nativo del modelo base no disponible en esta ficha |
-| Tipos de cuantizacion | Q4NX con expertos en MXFP4 (formato propietario de FastFlowLM); no es GGUF |
-| Idiomas soportados | No disponible |
+| Arquitectura | Transformer con mezcla de expertos (MoE), derivada de GPT-OSS-20B |
+| Parametros totales | ~21 000 millones (heredado de GPT-OSS-20B) |
+| Parametros activos | ~3 600 millones por token (MoE) |
+| Longitud de contexto | 8 192 tokens (valor probado, por defecto del registro) |
+| Tipos de cuantizacion | Q4NX para pesos generales; expertos en MXFP4 |
+| Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | Q4NX (FastFlowLM); no compatible con safetensors, GGUF ni Transformers |
-| Tamano del repositorio | 14,5 GB |
-| Runtime | FastFlowLM 1.0.12 (probado); también OpenFlowLM con kernels cerrados |
-| Hardware objetivo | NPU AMD XDNA 2 (Ryzen AI 300 y posteriores) |
-| Sistema operativo probado | Linux (Windows no probado) |
-| Formato de chat | Harmony (plantilla de FastFlowLM, copiada sin cambios) |
+| Formato de pesos | Q4NX (formato propietario de FastFlowLM); no es GGUF ni safetensors |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura subyacente es la de `openai/gpt-oss-20b`: un transformer con capas Mixture-of-Experts en el que cada token activa una fracción reducida de los 20B parámetros totales (alrededor de 3,6B activos). Esta conversión concreta no entrena ni ajusta nada; su único trabajo es reempaquetar los pesos de `p-e-w/gpt-oss-20b-heretic-ara-v4` en el formato Q4NX de FastFlowLM, conservando los expertos en MXFP4 igual que la conversión oficial de FastFlowLM para GPT-OSS-20B. Los 435 tensores del archivo resultante coinciden en nombre, tipo, forma y tamaño con el archivo oficial de FastFlowLM, según las comprobaciones del publicador.
+El modelo subyacente es `openai/gpt-oss-20b`, un transformer con mezcla de expertos de aproximadamente 21B parámetros totales y ~3,6B activos por token, con los expertos en MXFP4. Sobre esa base, `p-e-w` aplicó la técnica "heretic" (abliteration), que edita los pesos para suprimir la dirección de rechazo sin reentrenar el modelo. Esta conversión concreta no entrena nada: solo repaqueta los pesos del build heretic en Q4NX, mantiene los expertos en MXFP4 igual que la conversión oficial de FastFlowLM y los registra contra los kernels stock de GPT-OSS-20B del runtime. No se dispone de información sobre el volumen de tokens de entrenamiento original ni sobre la composición del dataset, más allá de lo publicado en las fichas de OpenAI y de `p-e-w`.
 
-El trabajo de modificación de comportamiento (la reducción de rechazos, etiquetada como "heretic" y "abliterated") es obra de p-e-w y se realizó antes de la conversión; los detalles de ese proceso deben consultarse en su model card. La innovación técnica de este repositorio es, por tanto, de despliegue: adaptar un MoE de 20B al motor cerrado de FastFlowLM sobre NPU XDNA 2, con kernels emparejados con los del modelo oficial y una plantilla de chat Harmony intacta. No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni el uso de RLHF o DPO en esta ficha.
+La innovación técnica relevante aquí no está en el modelo sino en el pipeline de despliegue: FastFlowLM ejecuta el MoE sobre la NPU XDNA 2 usando kernels cerrados específicos por arquitectura, y el script `flm-add` copia la lista de modelos empaquetada, añade la entrada del modelo convertido, enlaza los kernels stock correspondientes y descarga los pesos. El chat requiere el formato harmony de GPT-OSS, que la plantilla de FastFlowLM reproduce sin cambios.
 
 ## Capacidades
 
-- Generación de texto y conversación multi-turno, con el formato de chat Harmony que esperan todos los modelos GPT-OSS.
-- Razonamiento y resolución de problemas, heredado del modelo base GPT-OSS-20B.
-- Generación de código y matemáticas, según las capacidades del modelo original (no verificadas de forma independiente en esta conversión).
-- Reducción de rechazos: el modelo base de p-e-w reporta 9 rechazos de cada 100 frente a 98 de cada 100 del GPT-OSS-20B original; la cuantización puede alterar estas cifras en cualquier dirección.
-- Ejecución local en NPU: inferencia en hardware AMD XDNA 2 sin GPU dedicada.
-- Compatibilidad con OpenFlowLM usando los kernels cerrados de FastFlowLM para GPT-OSS-20B.
-- Soporte de tool calling, agentes, visión o audio: no disponible en la información proporcionada para esta conversión; debe consultarse en las model cards del modelo base.
+- Generación de texto y conversación multi-turno en formato harmony.
+- Razonamiento con modo "thinking" heredado de GPT-OSS (el modelo emite tokens de razonamiento antes de la respuesta).
+- Generación de código y matemáticas, en línea con las capacidades del GPT-OSS-20B original.
+- Reducción drástica de rechazos: 9/100 negativas frente a 98/100 del modelo stock según las mediciones de `p-e-w` previas a la conversión.
+- Ejecución local en NPU AMD XDNA 2 sin GPU ni conexión a la nube.
+- Capacidades multilingües: no disponible (los idiomas no están documentados en la información proporcionada).
+- Soporte de tool calling y function calling: no documentado en esta ficha; debe consultarse la ficha del modelo base.
 
 ## Casos de uso
 
-- Asistentes conversacionales locales en portátiles con Ryzen AI 300: el modelo se ejecuta íntegramente en la NPU XDNA 2 a unos 18,4 tokens/s, lo que permite mantener un chatbot privado sin enviar datos a la nube y sin consumir la GPU integrada.
-- Generación de texto creativo sin filtros restrictivos: la reducción de rechazos (9/100 frente a 98/100) lo hace adecuado para escritura de ficción, guiones o contenido que los modelos alineados suelen declinar, siempre con moderación externa si el despliegue es público.
-- Prototipado de aplicaciones de IA en hardware de consumo: sirve para validar pipelines de generación de texto y formato Harmony en equipos sin GPU dedicada, con un coste de infraestructura mínimo.
-- Investigación sobre alineación y seguridad: permite estudiar el comportamiento de un modelo con rechazos reducidos y compararlo con el GPT-OSS-20B original en las mismas condiciones de hardware.
-- Evaluación de la madurez del ecosistema NPU: útil para medir latencia, throughput y estabilidad de FastFlowLM y OpenFlowLM con un MoE de 20B en XDNA 2, con cifras de referencia publicadas (18,4 frente a 18,7 tokens/s del modelo oficial).
-- Despliegue en entornos con requisitos de soberanía de datos: al ejecutarse en local y con licencia Apache 2.0, encaja en escenarios donde el texto no puede salir del dispositivo, como documentación interna o análisis de contenido sensible.
-- Pruebas de conversión de formatos: el repositorio y las herramientas asociadas (`flm-add`, `flm-custom-sync`) sirven como referencia para convertir otros fine-tunes de GPT-OSS al formato Q4NX.
+- Asistente local en portátil Ryzen AI: el modelo se ejecuta íntegramente en la NPU XDNA 2 a unos 18,4 tokens/s, lo que permite tener un asistente conversacional sin GPU dedicada, sin consumo de batería asociado a la GPU y sin enviar datos a la nube.
+- Trabajo de seguridad y análisis de vulnerabilidades: la supresión de rechazos permite analizar payloads, explicar técnicas de explotación en laboratorio o redactar informes de pentesting sin que el modelo derive la petición por parecido superficial con contenido malicioso.
+- Redacción de ficción y contenido sensible: guiones, narrativa o diálogos que abordan violencia, sexualidad o temas controvertidos sin las evasivas habituales de los modelos alineados.
+- Documentación legal y médica: resumir casos, explicar procedimientos o redactar borradores donde el modelo stock rechazaría por proximidad temática con contenido sensible.
+- Prototipado de agentes con razonamiento: el modo thinking y la ventana de 8 192 tokens permiten cadenas de razonamiento de varios pasos en local, útil para demos de agentes sin infraestructura cloud.
+- Evaluación de despliegues en NPU: sirve como banco de pruebas para medir latencia, throughput y estabilidad de FastFlowLM con modelos modificados, comparando contra el GPT-OSS-20B stock (18,7 tokens/s) en el mismo hardware.
+- Generación de código asistida en entornos air-gapped: al ejecutarse en local y sin telemetría de nube, encaja en estaciones de trabajo con requisitos de confidencialidad, siempre que se acepte el contexto de 8 192 tokens.
 
 ## Benchmarks y rendimiento
 
-| Metrica | GPT-OSS-20B-heretic-ara-v4-NPU2 | GPT-OSS-20B oficial (FastFlowLM) |
-|---|---|---|
-| Decodificacion (Ryzen AI 9 HX 370) | ~18,4 tokens/s | ~18,7 tokens/s |
-| Rechazos (100 peticiones) | 9/100 (cifra de p-e-w, medida antes de la conversion) | 98/100 |
-| PIQA | 0,7742 (cifra de p-e-w) | 0,7731 |
-| Throughput en OpenFlowLM | ~13-16 tokens/s (prompt y razonamiento incluidos) | No disponible |
-| Tensores verificados | 435, coincidentes con el archivo oficial | Referencia |
+Los únicos datos disponibles son los aportados por el autor de la conversión y por `p-e-w` antes de la cuantización. No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible para esta conversión concreta.
 
-No se han publicado en la informacion disponible resultados de MMLU, HumanEval, GSM8K ni otros benchmarks estándar para esta conversión concreta. Las cifras de rechazos y PIQA proceden del autor del modelo base y se midieron antes de la conversión; la cuantización puede modificarlas.
+| Metrica | GPT-OSS-20B stock | Heretic ARA v4 (pre-conversion) |
+|---|---|---|
+| Rechazos (sobre 100) | 98/100 | 9/100 |
+| PIQA | 0,7731 | 0,7742 |
+| Decode (Ryzen AI 9 HX 370) | 18,7 tok/s | 18,4 tok/s (esta conversion Q4NX) |
+
+Adicionalmente, en OpenFlowLM (fork comunitario) el modelo respondió correctamente a unos 13–16 tokens/s contando prompt y tokens de razonamiento.
 
 ## Requisitos de hardware
 
-- NPU AMD XDNA 2 obligatoria: Ryzen AI 300 series y posteriores. No funciona en GPU, CPU ni NPU de otras generaciones.
-- Memoria del sistema: el equipo de prueba (Ryzen AI 9 HX 370) tenía 55 GiB de RAM visibles para Linux; el modelo ocupa 14,5 GB en disco y requiere memoria compartida con la NPU para cargarse.
-- VRAM de GPU: no aplica; el modelo no se ejecuta en GPU y no es compatible con CUDA, ROCm ni Metal.
-- GPU recomendadas: ninguna; el hardware objetivo es la NPU integrada.
-- Cabe en hardware de consumo: sí, en portátiles y mini-PC con Ryzen AI 300 o superior, siempre que el sistema operativo sea Linux (Windows no fue probado).
-- Opciones de despliegue: FastFlowLM 1.0.12 (runtime principal, motor cerrado) y OpenFlowLM (fork comunitario, probado en el commit `96b915d` con kernels cerrados de FastFlowLM). No es compatible con vLLM, llama.cpp, Ollama ni TGI.
-- Instalación: mediante `flm-add` (PyPI) o `flm-custom-sync` en el overlay `stuff` de Gentoo; requiere exportar `FLM_CONFIG_PATH` y `FLM_XCLBIN_PATH` y usar la etiqueta `--tag gpt-oss-heretic-ara:20b` para no sobrescribir la entrada oficial de GPT-OSS-20B.
-- Latencia y throughput: aproximadamente 18,4 tokens/s en decodificación con FastFlowLM y 13-16 tokens/s en OpenFlowLM contando prompt y tokens de razonamiento.
+- NPU AMD XDNA 2 obligatoria: Ryzen AI 300 series o posterior. No funciona en GPU ni CPU.
+- VRAM: no aplica; el modelo se ejecuta en la NPU y en memoria del sistema. El repositorio ocupa 14,5 GB en disco.
+- GPU recomendadas: ninguna; el modelo no soporta aceleración por GPU en este formato.
+- Consumer: sí cabe en un portátil Ryzen AI (probado en Ryzen AI 9 HX 370).
+- Runtime: FastFlowLM 1.0.12 (probado) en Linux; Windows no fue probado. También funciona en OpenFlowLM con los kernels cerrados de FastFlowLM (probado en el commit `96b915d`).
+- Instalación: `pipx install flm-add` y `flm-add istitov/GPT-OSS-20B-heretic-ara-v4-NPU2 --tag gpt-oss-heretic-ara:20b`; es imprescindible pasar `--tag` para no sobrescribir la entrada stock de GPT-OSS-20B.
+- Throughput: ~18,4 tok/s de decode en Ryzen AI 9 HX 370 con FastFlowLM; 13–16 tok/s en OpenFlowLM contando prompt y razonamiento.
+- No compatible con vLLM, llama.cpp, Ollama ni TGI.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Formato / runtime | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Formato / runtime | Licencia | Notas |
 |---|---|---|---|---|---|
-| GPT-OSS-20B-heretic-ara-v4-NPU2 | 20B totales, ~3,6B activos | 8192 probados | Q4NX / FastFlowLM en NPU XDNA 2 | Apache 2.0 | Hugging Face, 0 descargas |
-| openai/gpt-oss-20b (oficial) | 20B totales, ~3,6B activos | No disponible en esta ficha | Safetensors, GGUF, MXFP4; vLLM, llama.cpp, Ollama, Transformers | Apache 2.0 | Amplia, ecosistema maduro |
-| p-e-w/gpt-oss-20b-heretic-ara-v4 | 20B totales, ~3,6B activos | No disponible en esta ficha | Safetensors; Transformers y runtimes compatibles | Apache 2.0 | Hugging Face, modelo base de esta conversión |
-| Conversión oficial GPT-OSS-20B de FastFlowLM | 20B totales, ~3,6B activos | 8192 por defecto | Q4NX / FastFlowLM en NPU XDNA 2 | Apache 2.0 | Incluida en el paquete FastFlowLM |
-
-La diferencia principal frente al modelo oficial de FastFlowLM es el comportamiento (menos rechazos) y el rendimiento ligeramente inferior (18,4 frente a 18,7 tokens/s). Frente a las versiones en safetensors o GGUF, la conversión pierde portabilidad: solo funciona en NPU XDNA 2 con FastFlowLM u OpenFlowLM.
+| GPT-OSS-20B-heretic-ara-v4-NPU2 (este) | ~21B totales, ~3,6B activos | 8 192 | Q4NX / FastFlowLM en NPU XDNA 2 | Apache 2.0 | Sin censura, solo NPU AMD |
+| openai/gpt-oss-20b (stock) | ~21B totales, ~3,6B activos | 8 192 en esta conversion | Multiples (safetensors, GGUF, Q4NX) | Apache 2.0 | Alta tasa de rechazos (98/100) |
+| p-e-w/gpt-oss-20b-heretic-ara-v4 | ~21B totales, ~3,6B activos | No disponible | Safetensors (Transformers) | Apache 2.0 | Modelo fuente de esta conversion |
+| Llama-3.1-8B-Instruct (referencia del mismo ecosistema NPU) | 8B densos | 128K | Multiples, incluido Q4NX | Llama 3.1 Community | Menos parametros, mas contexto, runtime mas extendido |
 
 ## Limitaciones y advertencias
 
-- Conversión no oficial: no está afiliada ni respaldada por OpenAI, p-e-w, AMD ni FastFlowLM; no hay garantía de mantenimiento ni de compatibilidad futura.
-- Formato propietario: Q4NX no carga en Transformers, llama.cpp, Ollama, vLLM ni TGI; queda restringido a FastFlowLM y OpenFlowLM sobre NPU XDNA 2.
-- Fragilidad ante actualizaciones: una nueva versión de FastFlowLM que cambie el formato de pesos puede dejar de funcionar con esta conversión y exigir una reconversión.
-- Solo Linux probado: Windows no fue testeado, aunque FastFlowLM lo soporte en otros modelos.
-- Contenido dañino: el modelo base fue modificado para rechazar menos y puede producir material ofensivo, falso o peligroso; el despliegue necesita una capa de moderación propia.
-- Rechazos reducidos, no eliminados: las cifras de 9/100 proceden del autor del modelo base y se midieron antes de la cuantización, que puede alterarlas en cualquier dirección.
-- Idiomas: no se dispone de información sobre los idiomas soportados en esta conversión.
-- Riesgo de alucinación: no cuantificado en la información disponible; debe evaluarse en el caso de uso concreto.
-- Contexto limitado a 8192 tokens en la configuración probada; no se ha verificado un contexto mayor en esta conversión.
-- Sesgos: no documentados para esta conversión; deben consultarse en las model cards de OpenAI y de p-e-w.
-- Licencia Apache 2.0: permite uso comercial, pero el autor no ofrece garantías y la responsabilidad sobre el contenido generado recae en el desplegador.
-- Sin descargas ni likes en el momento de la consulta: ecosistema de usuarios prácticamente inexistente, lo que reduce el soporte comunitario disponible.
+- Contenido dañino: el modelo ha sido modificado para rechazar menos y puede producir material ofensivo, falso o peligroso. La responsabilidad de moderación recae en el despliegue.
+- Los rechazos se reducen, no se eliminan; las cifras (9/100) son del autor original y previas a la cuantización, que puede alterarlas en cualquier dirección.
+- Compatibilidad frágil: un cambio de formato de pesos en una release de FastFlowLM puede dejar de funcionar el modelo convertido, que necesitaría una nueva conversión.
+- Solo NPU XDNA 2: no hay soporte para GPU, CPU, Apple Silicon ni otras NPU. Windows no fue probado.
+- Contexto limitado a 8 192 tokens, muy por debajo de alternativas contemporáneas.
+- Idiomas soportados no documentados; no se puede garantizar calidad multilingüe.
+- Dependencia de kernels cerrados de FastFlowLM; el fork OpenFlowLM aún no tiene kernels abiertos para GPT-OSS.
+- Licencia Apache 2.0 permite uso comercial, pero el contenido generado y su moderación son responsabilidad del integrador.
+- Riesgo de alucinación inherente al modelo base; no hay evaluaciones específicas de factualidad para esta conversión.
+- Conversión no oficial: no está afiliada ni respaldada por OpenAI, `p-e-w`, AMD ni el proyecto FastFlowLM.
 
 ## Enlaces
 
-- Repositorio en Hugging Face: https://huggingface.co/istitov/GPT-OSS-20B-heretic-ara-v4-NPU2
-- Modelo base (p-e-w): https://huggingface.co/p-e-w/gpt-oss-20b-heretic-ara-v4
+- Repositorio Hugging Face: https://huggingface.co/istitov/GPT-OSS-20B-heretic-ara-v4-NPU2
+- Modelo base (heretic ARA v4): https://huggingface.co/p-e-w/gpt-oss-20b-heretic-ara-v4
 - Modelo original de OpenAI: https://huggingface.co/openai/gpt-oss-20b
-- FastFlowLM (GitHub): https://github.com/ROCm/FastFlowLM
+- FastFlowLM: https://github.com/ROCm/FastFlowLM
 - OpenFlowLM (fork comunitario): https://github.com/Atomic-Germ/OpenFlowLM-Next
-- Herramienta flm-add (PyPI): https://pypi.org/project/flm-add/
-- Overlay stuff para Gentoo: https://github.com/istitov/stuff
-- Guía de fine-tunes en NPU: https://istitov.github.io/stuff/guides/npu-custom-models/
-- Colección de conversiones NPU2 Heretic: https://huggingface.co/collections/istitov/fastflowlm-npu2-heretic-conversions-6af22b7bf264c137a0b92875
-- Repositorio de referencia Llama-3.1-8B-Instruct-heretic-NPU2: https://huggingface.co/istitov/Llama-3.1-8B-Instruct-heretic-NPU2
+- Herramienta flm-add: https://pypi.org/project/flm-add/
+- Coleccion de conversiones NPU2 Heretic: https://huggingface.co/collections/istitov/fastflowlm-npu2-heretic-conversions-6af22b7bf264c137a0b92875
+- Overlay de Gentoo del autor: https://github.com/istitov/stuff

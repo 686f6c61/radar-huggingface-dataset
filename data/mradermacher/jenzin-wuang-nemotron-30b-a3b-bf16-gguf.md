@@ -2,87 +2,90 @@
 
 ## Resumen
 
-Jenzin-Wuang-Nemotron-30B-A3B-BF16 es un modelo de lenguaje de gran tamano (LLM) de arquitectura MoE (Mixture of Experts) con 31.6 mil millones de parametros totales y 3 mil millones de parametros activos. Este repositorio contiene la version cuantizada en formato GGUF del modelo original publicado por ApolloRaines, preparada por mradermacher para su uso con motores de inferencia como llama.cpp, Ollama o LM Studio. El modelo base subyacente es NVIDIA Nemotron-3-Nano-30B-A3B, una familia de modelos open source de NVIDIA disenada para tareas de razonamiento, codificacion y agentes.
+Jenzin-Wuang-Nemotron-30B-A3B-BF16-GGUF es la version cuantizada en formato GGUF del modelo ApolloRaines/Jenzin-Wuang-Nemotron-30B-A3B-BF16, un derivado de la familia NVIDIA Nemotron 3.5 Lightning de 30B con arquitectura Mixture-of-Experts (MoE) y aproximadamente 3B de parametros activos por token. El autor de la cuantizacion es mradermacher, un conocido publicador de versiones GGUF de la comunidad, mientras que el modelo base procede de un trabajo de "cirugia de pesos" (weight surgery) e "injerto de identidad" (identity transplant) realizado por ApolloRaines sobre el checkpoint original de NVIDIA. La model card del modelo base lo etiqueta explicitamente como una demo y parodia, lo que condiciona su uso en produccion.
 
-La relevancia de este modelo radica en su eficiencia: al ser una arquitectura MoE con solo 3B parametros activos, ofrece un rendimiento comparable a modelos densos mucho mas grandes con un coste computacional significativamente menor. La cuantizacion GGUF permite ademas ejecutarlo en hardware de consumo, democratizando el acceso a un modelo de nivel profesional. El repositorio incluye multiples niveles de cuantizacion (Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, IQ4_XS y F16) para adaptarse a diferentes capacidades de hardware.
+El modelo resuelve el problema de ejecutar un transformer MoE de ~31,6 mil millones de parametros totales en hardware de consumo o en entornos con memoria limitada, gracias a las cuantizaciones GGUF que van desde Q2_K (18 GB) hasta Q8_0 (33,7 GB). Al ser un MoE con solo ~3B de parametros activos, la inferencia es comparativamente rapida frente a un modelo denso del mismo tamano total, aunque el requisito de memoria viene dominado por el total de parametros.
+
+La relevancia actual es doble: por un lado, demuestra el flujo de cuantizacion estatica de mradermacher sobre modelos MoE recientes; por otro, sirve como ejemplo de las modificaciones de comportamiento e identidad que la comunidad aplica sobre pesos abiertos, con las implicaciones eticas y de licencia que ello conlleva. No se dispone de informacion sobre la longitud de contexto, los idiomas soportados mas alla del ingles declarado ni los resultados de benchmarks en la informacion proporcionada.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Mixture of Experts (MoE) basada en NVIDIA Nemotron-3-Nano-30B-A3B |
-| Parametros totales | 31.577.940.288 (31.6B) |
-| Parametros activos | 3B (A3B) |
-| Longitud de contexto | 1.000.000 tokens (segun NVIDIA para el modelo base) |
-| Tipos de cuantizacion | F16, Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, IQ4_XS |
-| Idiomas soportados | no disponible (el modelo base de NVIDIA soporta principalmente ingles) |
-| Licencia | no disponible (el modelo base de NVIDIA usa licencia NVIDIA Open Model License) |
-| Formato de pesos | GGUF (cuantizado), safetensors (original) |
+| Arquitectura | Mixture-of-Experts (MoE) tipo transformer, derivada de NVIDIA Nemotron 3.5 Lightning 30B-A3B |
+| Parametros totales | 31.577.940.288 (~31,6B) |
+| Parametros activos | ~3B (segun la nomenclatura A3B del modelo base) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0 (estaticas); versiones ponderadas/imatrix en repo i1-GGUF |
+| Idiomas soportados | ingles (declarado en la model card); resto no disponible |
+| Licencia | other (same-as-base), enlazada a NVIDIA Nemotron 3.5 Lightning 30B-A3B-BF16 |
+| Formato de pesos | GGUF (el modelo base esta en BF16/safetensors) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base NVIDIA Nemotron-3-Nano-30B-A3B utiliza una arquitectura Transformer con mezcla de expertos (MoE), donde solo 3 mil millones de los 31.6 mil millones de parametros totales se activan por token procesado. Esta diseno permite un equilibrio entre capacidad y eficiencia computacional, reduciendo la latencia y los requisitos de memoria en comparacion con un modelo denso del mismo tamano total. El modelo fue preentrenado con una combinacion de datos rastreados y sinteticos de codigo, matematicas, ciencia y conocimiento general, segun la documentacion de NVIDIA.
+El modelo base es un transformer con capas Mixture-of-Experts: de los ~31,6B de parametros totales, solo ~3B se activan por token, lo que reduce el coste computacional de inferencia manteniendo una capacidad de representacion propia de un modelo de mayor tamano. Esta arquitectura, popularizada por modelos como Mixtral o DeepSeek, permite desplegar el modelo en GPUs de consumo si se acepta una cuantizacion agresiva, a costa de requerir memoria para la totalidad de los expertos.
 
-La version Jenzin-Wuang es un fine-tuning del modelo base de NVIDIA, aunque los detalles especificos del proceso de ajuste (dataset utilizado, tecnica de alineacion como RLHF o DPO, epocas de entrenamiento) no estan disponibles en la informacion proporcionada. El repositorio actual contiene exclusivamente las versiones cuantizadas en formato GGUF, generadas con la herramienta de cuantizacion de llama.cpp, manteniendo la arquitectura original del modelo.
+Sobre el entrenamiento original de NVIDIA Nemotron 3.5 Lightning no se proporciona informacion en la documentacion disponible (numero de tokens, composicion del dataset, uso de RLHF/DPO, etc.). Lo que si documenta el autor del modelo base es un proceso de "weight surgery" e "identity transplant": una modificacion de pesos orientada a alterar el comportamiento y la identidad del modelo, etiquetada como demo y parodia. Este tipo de intervencion no es un reentrenamiento y no garantiza que las capacidades originales se preserven intactas. La cuantizacion de mradermacher es estatica (quantize_version 2, output_tensor_quantised 1, convert_type hf) y no incluye ajuste imatrix en este repositorio; las versiones ponderadas estan en el repositorio i1-GGUF.
 
 ## Capacidades
 
-- Generacion de texto y razonamiento complejo multi-paso, gracias a la arquitectura MoE de 3B parametros activos.
-- Codificacion de software en multiples lenguajes de programacion, con soporte para generacion, explicacion y depuracion de codigo.
-- Razonamiento matematico y cientifico, incluyendo problemas de nivel competitivo.
-- Instruccion following precisa, capaz de seguir instrucciones complejas y detalladas.
-- Tool calling y function calling, permitiendo la integracion con APIs y herramientas externas.
-- Soporte para agentes autonomos y flujos de trabajo multi-paso.
-- Ventana de contexto de 1M tokens, permitiendo procesar documentos extensos, libros completos o conversaciones muy largas.
-- Capacidades multilingues limitadas, principalmente optimizado para ingles (segun el modelo base de NVIDIA).
+- Generacion de texto conversacional en ingles, segun la etiqueta `conversational` del repositorio.
+- Razonamiento y generacion de codigo: capacidades heredadas del modelo base Nemotron, aunque no verificadas tras la modificacion de pesos.
+- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
+- Capacidades multilingues: solo se declara ingles; no hay evidencia de soporte de otros idiomas.
+- Capacidades especiales (vision, audio, modo thinking): no disponibles en la informacion proporcionada.
+- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` sugiere uso mediante APIs de inferencia compatibles con el formato de Hugging Face.
 
 ## Casos de uso
 
-- Atencion al cliente automatizada: con su contexto de 1M tokens, el modelo puede mantener conversaciones multi-turno muy largas recordando todos los detalles previos, gestionando consultas complejas de soporte tecnico sin perder el hilo.
-- Generacion de codigo en produccion: su capacidad de tool calling permite integrarlo en pipelines de CI/CD para generar tests, revisar pull requests o autocompletar funciones, reduciendo el tiempo de desarrollo.
-- Analisis de documentos legales y financieros: la ventana de contexto extendida permite procesar contratos completos, informes anuales o expedientes, extrayendo informacion relevante y resumiendo clausulas.
-- Asistentes de investigacion cientifica: puede razonar sobre articulos academicos extensos, ayudar a formular hipotesis y sugerir experimentos basados en la literatura existente.
-- Agentes autonomos de automatizacion: su soporte para function calling y razonamiento multi-paso lo hace adecuado para agentes que interactuan con APIs, bases de datos y herramientas de productividad.
-- Educacion y tutoria: puede explicar conceptos complejos de matematicas, fisica o programacion con razonamiento paso a paso, adaptandose al nivel del estudiante.
-- Desarrollo de chatbots especializados: su capacidad de seguir instrucciones y su conocimiento de codigo lo hacen util para crear asistentes tecnicos en dominios especificos como DevOps o ciberseguridad.
+- Evaluacion de tecnicas de cuantizacion en MoE: el modelo permite comparar la degradacion de calidad entre Q2_K, IQ4_XS, Q4_K_M y Q8_0 en un MoE de 31,6B con ~3B activos, util para investigar el impacto de la cuantizacion en modelos con expertos.
+- Experimentacion con modificaciones de pesos: sirve como caso de estudio de "identity transplant" y "weight surgery", permitiendo analizar como cambia el comportamiento de un modelo al alterar sus pesos y que capacidades se degradan.
+- Prototipado local en hardware de consumo: con Q4_K_M (24,6 GB) o IQ4_XS (18,3 GB) puede ejecutarse en GPUs con 24 GB de VRAM, como una RTX 4090, para pruebas de generacion de texto sin infraestructura de datacenter.
+- Investigacion sobre seguridad y alineacion: al ser una parodia con identidad modificada, es un banco de pruebas para estudiar como las intervenciones en pesos afectan a la coherencia, la veracidad y los sesgos del modelo.
+- Demostraciones educativas de arquitecturas MoE: permite ilustrar en clase o en talleres la diferencia entre parametros totales y activos, y el impacto en memoria y latencia.
+- Pruebas de pipelines de inferencia GGUF: util para validar integraciones con llama.cpp, Ollama o servidores compatibles antes de desplegar modelos base mas estables.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks especificos para la version Jenzin-Wuang en la informacion disponible. El modelo base NVIDIA Nemotron-3-Nano-30B-A3B ha sido evaluado por NVIDIA en tareas de codificacion, razonamiento y tool calling, pero los numeros concretos no se incluyen en los datos proporcionados. Se recomienda consultar la model card oficial de NVIDIA para obtener resultados comparativos.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: depende de la cuantizacion. Con Q4_K_M (aproximadamente 18-20 GB), cabe en GPUs de consumo como RTX 4090 (24 GB) o RTX 3090 (24 GB). Con Q8_0 (aproximadamente 32 GB), requiere GPUs profesionales como A6000 o A100.
-- GPU recomendadas: RTX 3090/4090 para cuantizaciones Q4-Q6; A100, H100 o A6000 para cuantizaciones Q8_0 o F16.
-- Si cabe en consumer GPU: si, con cuantizaciones Q4_K_M o inferiores en GPUs de 24 GB.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, llama-cpp-python, o servidores compatibles con GGUF como llama.cpp server o text-generation-webui.
-- Latencia y throughput: no disponible, pero al ser MoE con 3B activos, la velocidad de generacion es significativamente mayor que un modelo denso de 30B, tipicamente entre 30-60 tokens/segundo en una RTX 4090 con Q4_K_M.
+- VRAM estimada para inferencia: entre ~18 GB (Q2_K, Q3_K_S, IQ4_XS) y ~34 GB (Q6_K, Q8_0); Q4_K_M ocupa 24,6 GB y Q5_K_M 26,1 GB.
+- GPU recomendadas: RTX 4090 (24 GB) para Q4_K_S/Q4_K_M; A100 40 GB o H100 para Q5_K_M, Q6_K y Q8_0; configuraciones multi-GPU para el modelo base en BF16.
+- Cabe en GPU de consumo: si, en RTX 3090/4090 (24 GB) con cuantizaciones Q4 o inferiores; IQ4_XS (18,3 GB) deja margen para el contexto.
+- Opciones de despliegue: llama.cpp, Ollama, y servidores compatibles con GGUF; el modelo base en safetensors puede servirse con vLLM o TGI si el formato lo permite.
+- Latencia y throughput: no disponibles; al ser MoE con ~3B activos se espera una velocidad de decodificacion superior a la de un modelo denso de 31,6B, pero no hay mediciones publicadas.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros totales | Parametros activos | Contexto | Licencia | Formato |
-|---|---|---|---|---|---|
-| Jenzin-Wuang-Nemotron-30B-A3B (este) | 31.6B | 3B | 1M | no disponible | GGUF |
-| NVIDIA Nemotron-3-Nano-30B-A3B | 31.6B | 3B | 1M | NVIDIA Open Model License | safetensors |
-| Qwen2.5-32B-Instruct | 32.8B | 32.8B (denso) | 128K | Apache 2.0 | safetensors, GGUF |
-| Mixtral-8x7B-Instruct | 46.7B | 12.9B | 32K | Apache 2.0 | safetensors, GGUF |
+| Modelo | Parametros totales / activos | Contexto | Licencia | Formato |
+|---|---|---|---|---|
+| Jenzin-Wuang-Nemotron-30B-A3B (este) | ~31,6B / ~3B | no disponible | other (same-as-base) | GGUF, BF16 |
+| NVIDIA Nemotron 3.5 Lightning 30B-A3B | ~30B / ~3B | no disponible | segun modelo original de NVIDIA | BF16 |
+| Modelos MoE densos comparables (p. ej. Mixtral 8x7B) | ~47B / ~13B | no disponible en esta ficha | licencia propia del modelo | safetensors, GGUF |
 
-La principal ventaja frente a modelos densos como Qwen2.5-32B es la eficiencia: 3B activos frente a 32B, lo que reduce la latencia y el coste por token. Frente a Mixtral-8x7B, el contexto de 1M tokens es muy superior. La desventaja es la disponibilidad de la licencia, que no esta clara en este repositorio.
+La comparativa cuantitativa con alternativas no esta disponible en la informacion proporcionada; los datos de rendimiento de los modelos de referencia no se incluyen.
 
 ## Limitaciones y advertencias
 
-- Sesgos conocidos: el modelo base fue preentrenado con datos de codigo, matematicas y conocimiento general, por lo que puede tener sesgos en dominios sociales o culturales menos representados.
-- Riesgo de alucinacion: como todo LLM, puede generar informacion falsa o inventada, especialmente en temas de actualidad o muy especificos.
-- Limitaciones de contexto: aunque la ventana es de 1M tokens, el rendimiento puede degradarse en los extremos de la ventana; se recomienda no superar el 80% de la capacidad.
-- Limitaciones de idioma: optimizado principalmente para ingles; el rendimiento en otros idiomas puede ser inferior.
-- Restricciones de licencia: la licencia del modelo original de NVIDIA restringe el uso comercial en algunos casos; la licencia de esta version cuantizada no esta especificada, por lo que se debe contactar con el autor antes de usar en produccion.
-- Caveat de produccion: al ser un fine-tuning no documentado, no hay garantias de calidad ni soporte; se recomienda evaluar exhaustivamente antes de desplegar.
+- El modelo base se declara explicitamente como demo y parodia; no es un modelo de proposito general validado para produccion.
+- La modificacion de pesos ("identity transplant", "behavioral modification") puede degradar capacidades originales y alterar el comportamiento de forma impredecible.
+- Riesgo de alucinacion elevado: no hay benchmarks ni evaluaciones publicadas que respalden la calidad de las respuestas.
+- Idiomas: solo se declara ingles; el uso en castellano no esta soportado ni evaluado.
+- Longitud de contexto desconocida: no se puede garantizar el manejo de conversaciones o documentos largos.
+- Licencia "other" vinculada a la del modelo base de NVIDIA: es imprescindible revisar los terminos originales antes de cualquier uso comercial, y la cadena de derivaciones (NVIDIA -> ApolloRaines -> mradermacher) anade incertidumbre juridica.
+- Las cuantizaciones Q2_K y Q3_K_S tienen calidad reducida; para uso serio se recomienda Q4_K_M o superior.
+- No hay garantia de soporte de tool calling ni de modo agente tras la modificacion de pesos.
 
 ## Enlaces
 
-- Repositorio GGUF cuantizado: https://huggingface.co/mradermacher/Jenzin-Wuang-Nemotron-30B-A3B-BF16-GGUF
-- Modelo original (safetensors): https://huggingface.co/ApolloRaines/Jenzin-Wuang-Nemotron-30B-A3B-BF16
-- Modelo base de NVIDIA: https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16
-- Model card de NVIDIA NIM: https://build.nvidia.com/nvidia/nemotron-3-nano-30b-a3b/modelcard
-- Pagina de NVIDIA Nemotron: https://developer.nvidia.com/topics/ai/nemotron
-- Perfil de mradermacher: https://huggingface.co/mradermacher
+- Repositorio GGUF: https://huggingface.co/mradermacher/Jenzin-Wuang-Nemotron-30B-A3B-BF16-GGUF
+- Modelo base: https://huggingface.co/ApolloRaines/Jenzin-Wuang-Nemotron-30B-A3B-BF16
+- Licencia del modelo original: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16
+- Cuantizaciones imatrix: https://huggingface.co/mradermacher/Jenzin-Wuang-Nemotron-30B-A3B-BF16-i1-GGUF
+- Pagina de resumen del autor: https://hf.tst.eu/model#Jenzin-Wuang-Nemotron-30B-A3B-BF16-GGUF
+- Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Analisis de tipos de cuantizacion (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Peticiones de cuantizacion de mradermacher: https://huggingface.co/mradermacher/model_requests

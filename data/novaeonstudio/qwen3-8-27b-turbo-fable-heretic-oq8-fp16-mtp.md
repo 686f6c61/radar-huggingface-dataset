@@ -2,132 +2,129 @@
 
 ## Resumen
 
-Qwen3.8-27B-TURBO-Fable-Heretic-oQ8-fp16-mtp es una cuantización y reempaquetado para Apple Silicon del modelo DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU, publicada por NovaeonStudio. Se trata de un transformer denso de 27.781.427.952 parámetros (unos 27,8 mil millones) con arquitectura híbrida `qwen3_5` —atención lineal GatedDeltaNet intercalada con atención completa— que conserva el codificador de visión y una cabeza nativa de predicción multi-token (MTP). El repositorio incluye un único artefacto en formato nativo de MLX (librería `mlx`), cuantizado en oQ8 con unos 8,59 bits por peso efectivos, 28,4 GB en disco y 30,9 GB de repositorio.
+Qwen3.8-27B-TURBO-Fable-Heretic-oQ8-fp16-mtp es una cuantizacion de 8 bits en formato oMLX del modelo base DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU, publicada por Novaeon.Studio. Se trata de un modelo denso de 27.781 millones de parametros con arquitectura hibrida qwen3_5 (GatedDeltaNet con atencion lineal combinada con atencion completa intercalada), torre de vision preservada y una cabeza MTP (multi-token prediction) nativa que sobrevive al proceso de cuantizacion. El objetivo declarado del autor es ofrecer un razonador denso multimodal utilizable en Apple Silicon, donde el cuello de botella es la velocidad de decodificacion.
 
-El modelo resuelve un problema muy concreto: disponer de un 27B denso multimodal, descensurado y con razonamiento sólido que sea usable de forma interactiva en un Mac. La palanca es la cabeza MTP, que sobrevive a la cuantización de 8 bits: según las mediciones del autor en un Apple M5 Max de 128 GB, activa la decodificación especulativa y eleva el throughput de 12,2 a 26,2 tokens/s (+115 %) con `draft-6`. El modelo base fue descensurado con la herramienta Heretic (ARA) sin reentrenamiento destructivo; la model card del base reporta 0/100 rechazos con divergencia KL de 0,0535.
+El modelo se distribuye en formato nativo de oMLX (libreria MLX de Apple) con un peso efectivo de aproximadamente 8,59 bits por peso y unos 28,4 GB en disco. La cabeza MTP, con `mtp_num_hidden_layers: 1` y 29 tensores `mtp.*` conservados, actua como decodificador especulativo y practicamente duplica el rendimiento de decodificacion respecto a la misma configuracion con MTP desactivado (26,2 frente a 12,2 tok/s en un M5 Max de 128 GB).
 
-Es relevante ahora porque combina tres elementos poco habituales en un mismo artefacto: contexto nativo de 262.144 tokens, visión preservada y una política de rechazo efectivamente eliminada, todo ello empaquetado para inferencia local en hardware de consumo de gama alta (memoria unificada), sin depender de APIs externas. El coste de esa combinación es una validación todavía muy limitada: 0 descargas y 1 like en el momento de redactar esta ficha, y benchmarks que pertenecen al modelo base, no a este repack.
+La relevancia actual del modelo radica en tres factores: es uno de los pocos repacks de 8 bits en los que la cabeza MTP sigue siendo funcional, mantiene la ventana de contexto nativa de 262.144 tokens y conserva la vision, y hereda del modelo base un tratamiento de "presupuesto de razonamiento" (TURBO) que reduce el gasto de tokens de pensamiento entre la mitad y una decima parte de lo habitual. Todo ello bajo licencia Apache-2.0, aunque con el aviso explicito de que la alineacion de seguridad del modelo base ha sido reducida.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer denso híbrido `qwen3_5`: GatedDeltaNet (atención lineal) + atención completa intercalada, con codificador de visión y cabeza MTP |
-| Parametros totales | 27.781.427.952 (≈27,8 mil millones), denso |
-| Parametros activos | No aplica (modelo denso, no MoE) |
+| Arquitectura | qwen3_5 densa hibrida: GatedDeltaNet (atencion lineal) + atencion completa intercalada, con encoder de vision |
+| Parametros totales | 27.781.427.952 (27,78 B) |
+| Parametros activos | no aplica (modelo denso) |
 | Longitud de contexto | 262.144 tokens nativos |
-| Tipos de cuantizacion | oQ8 de oMLX: 8 bits casi uniforme, ~8,59 bpw efectivos, con tensores sensibles y de router en float16. No se publican variantes GGUF, AWQ, GPTQ ni de 4 bits |
-| Idiomas soportados | en (inglés). No se declaran otros idiomas |
+| Tipos de cuantizacion | oQ8 (8 bits casi uniforme, tensores sensibles en float16); ~8,59 bpw efectivos |
+| Idiomas soportados | en (ingles) |
 | Licencia | apache-2.0 |
-| Formato de pesos | safetensors en formato nativo de MLX (librería `mlx`) |
-| Tamano del repositorio | 30,9 GB (28,4 GB de pesos cuantizados en disco, según el autor) |
-| Cabeza MTP | Nativa, `mtp_num_hidden_layers: 1`, 29 tensores `mtp.*` preservados en oQ8 |
-| Modos de razonamiento | Tres: xhigh (por defecto), medium y low, según la model card del modelo base |
-| Alineacion | Descensurado mediante Heretic ARA (sin rechazos) |
-| Pipeline declarado | image-text-to-text (texto + imagen → texto) |
-| Modelo base | DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU |
+| Formato de pesos | safetensors en formato nativo oMLX (MLX), ~28,4 GB en disco, repo de 30,9 GB |
+| Cabeza MTP | nativa, `mtp_num_hidden_layers: 1`, 29 tensores `mtp.*` preservados |
+| Modalidad | image-text-to-text (vision + texto) |
+| Motor de inferencia | oMLX (Apple MLX), motor VLM |
+| Hardware de referencia | Apple M5 Max, 128 GB |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura declarada es `qwen3_5` en variante densa híbrida: capas de atención lineal GatedDeltaNet combinadas con capas de atención completa intercaladas, más una torre de visión preservada del modelo base. El modelo incorpora además una cabeza nativa de predicción multi-token (MTP) con `mtp_num_hidden_layers: 1` y 29 tensores `mtp.*` que sobreviven al proceso de cuantización oQ8, algo que el autor destaca como poco frecuente en repacks de 8 bits. El contexto nativo es de 262.144 tokens y el pipeline es multimodal (imagen y texto como entrada).
+El modelo es un transformer denso de la familia qwen3_5 con una arquitectura hibrida: capas de atencion lineal GatedDeltaNet intercaladas con capas de atencion completa. Este diseno reduce el coste computacional y de memoria del contexto largo frente a un transformer de atencion completa puro, lo que hace viable la ventana de 262.144 tokens en hardware de consumo. Incorpora ademas un encoder de vision que se mantiene intacto en esta cuantizacion, de modo que el modelo acepta entradas de imagen y texto y produce texto.
 
-Sobre el entrenamiento, la información disponible se limita a lo que describe el modelo base: un proceso multi-etapa de Cold-Fusion y un merge con Fable-Fusion-711, seguido de un tratamiento "TURBO" que reduce el gasto de tokens de razonamiento a aproximadamente entre 1/2 y 1/10 de lo que consumiría un modelo de razonamiento estándar. La descensura se realizó con Heretic mediante eliminación de direcciones de rechazo (ARA), sin reentrenamiento destructivo; la model card del base reporta 0/100 rechazos en su evaluación de etapa 1 con divergencia KL de 0,0535. No se especifican en la información disponible el número de tokens de entrenamiento, la composición del dataset ni si hubo fases de RLHF o DPO. Este repositorio concreto es una cuantización (`base_model_relation: quantized`), no un reentrenamiento: no añade datos ni modifica la alineación, solo comprime pesos y los reempaqueta para oMLX.
+El entrenamiento original no esta documentado en la informacion disponible. El modelo base procede de un proceso de fusion y ajuste fino en multiples etapas denominado Cold-Fusion, combinado con Fable-Fusion-711, segun la model card del autor del repack. La model card del modelo base reporta tres modos de razonamiento (xhigh por defecto, medium y low) y un tratamiento "TURBO" que reduce el numero de tokens de pensamiento generados. No se especifican en la informacion proporcionada el volumen de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de RLHF o DPO.
+
+La innovacion tecnica mas destacable de esta publicacion concreta es la preservacion funcional de la cabeza MTP tras la cuantizacion a 8 bits. La MTP actua como mecanismo de decodificacion especulativa: propone varios tokens candidatos que el modelo principal verifica, aceptando los correctos en bloque. En la mayoria de repacks de 8 bits esta cabeza queda inutilizada o degradada; aqui el autor reporta una tasa de aceptacion real que sostiene el incremento de velocidad medido.
 
 ## Capacidades
 
-- Generación de texto y razonamiento en tres niveles configurables (xhigh por defecto, medium y low), heredados del modelo base.
-- Modo de razonamiento con presupuesto reducido ("TURBO"): consume entre 1/2 y 1/10 de los tokens de razonamiento de un modelo thinking convencional, lo que hace viable el uso interactivo a 26 tokens/s.
-- Visión: entrada de imagen y texto (pipeline image-text-to-text); la torre de visión se conserva desde el modelo base, aunque no se publican evaluaciones específicas de visión.
-- Decodificación especulativa mediante la cabeza MTP nativa, funcional bajo cuantización de 8 bits, con una mejora medida del 115 % en decodificación.
-- Generación descensurada: sin direcciones de rechazo, con 0 rechazos reportados en las sondas del autor sobre estos pesos cuantizados.
-- Idiomas: únicamente inglés declarado en los metadatos.
-- Tool calling / function calling: no documentado en la información disponible.
-- Soporte de agentes y razonamiento multi-paso: no documentado ni evaluado; el autor indica explícitamente que no ejecutó suites agénticas ni IFEval sobre esta build.
+- Generacion de texto conversacional y de formato largo, con modos de razonamiento configurables (xhigh, medium, low).
+- Razonamiento de multiples pasos con presupuesto de pensamiento reducido mediante el tratamiento TURBO.
+- Comprension de imagenes (image-text-to-text): descripcion, respuesta a preguntas visuales y analisis de contenido grafico.
+- Contexto largo de 262.144 tokens, adecuado para documentos extensos, bases de codigo o historiales de conversacion prolongados.
+- Decodificacion especulativa nativa mediante cabeza MTP, con ganancia medida de aproximadamente el 115 % en velocidad de decodificacion.
+- Escritura creativa y roleplay, ambito declarado como uso previsto por el autor.
+- Investigacion en seguridad, dado que la alineacion de rechazo del modelo base ha sido reducida deliberadamente.
+- Soporte de tool calling y function calling: no disponible en la informacion proporcionada.
+- Capacidades de agente multi-paso: no disponible en la informacion proporcionada.
+- Capacidades multilingues: limitadas al ingles segun el campo `language` del repositorio.
 - Capacidades de audio: no disponibles.
 
 ## Casos de uso
 
-- Asistente local en Mac para desarrollo de software: el modelo corre íntegramente en memoria unificada mediante oMLX, de modo que el código fuente y los datos del proyecto nunca salen de la máquina; los 262.144 tokens de contexto permiten cargar módulos completos o árboles de repositorio en una sola ventana.
-- Análisis de capturas de pantalla y diagramas técnicos: al ser multimodal, puede interpretar diagramas de arquitectura, capturas de interfaces o gráficos de monitorización y razonar sobre ellos en inglés, útil para depuración de UI o revisión de documentación visual.
-- Procesamiento por lotes de documentos largos: con 262k de contexto y 28,4 GB de pesos, es viable ejecutar resúmenes, extracción estructurada o preguntas sobre informes extensos sin trocear el documento, reduciendo pérdidas de coherencia entre fragmentos.
-- Escritura creativa y de ficción sin filtros editoriales: la eliminación de direcciones de rechazo permite abordar narrativa con violencia, contenido adulto o temas sensibles sin bloqueos del modelo, siempre que el operador aplique sus propias políticas.
-- Investigación en seguridad y alineación: sirve como sujeto de estudio para medir cómo afecta la descensura (ARA) al comportamiento del modelo, comparando las tasas de rechazo de este artefacto con las del base sin descensurar y evaluando la degradación introducida por la cuantización oQ8.
-- Evaluación comparativa de cuantizaciones en Apple Silicon: dado que el repositorio publica curvas de throughput (MTP on/off, draft-6 y draft-8) y ajustes óptimos, es un banco de pruebas práctico para medir el impacto de la cuantización de 8 bits sobre una cabeza MTP funcional.
-- Generación asistida con latencia interactiva: a 26,2 tokens/s con `draft-6`, encaja en flujos de autocompletado de texto largo, corrección de estilo o redacción iterativa donde la latencia percibida importa más que el throughput por lotes.
-- Inferencia con requisitos de privacidad estrictos (sector legal, sanitario o investigación interna): al no requerir conectividad, el modelo permite tratar material confidencial en local; conviene, no obstante, revisar que la ausencia de rechazos no exponga a fuga de información sensible en las respuestas.
+- Analisis de documentos con imagenes en local: el modelo puede procesar capturas, diagramas o paginas escaneadas junto con texto de instrucciones y responder sobre el contenido combinado, gracias a la torre de vision preservada y a la ventana de 262.144 tokens que permite adjuntar lotes grandes de material en una sola peticion.
+- Escritura creativa y narrativa larga: con contexto de 262.000 tokens es posible mantener coherencia de personajes y tramas a lo largo de novelas o guiones completos, y el modo de razonamiento reducido evita que el modelo consuma presupuesto excesivo en deliberacion interna antes de escribir.
+- Investigacion en seguridad y red teaming: el modelo base presenta una tasa de rechazo declarada de 0 sobre 100 en la evaluacion de prompts de seguridad del autor, lo que lo hace util para estudiar comportamientos de modelos desalineados o para construir clasificadores de defensa con datos de respuesta controlados.
+- Evaluacion de modelos en Apple Silicon: sirve como banco de pruebas para medir el impacto real de la decodificacion especulativa MTP bajo cuantizacion de 8 bits, con una configuracion de referencia reproducible (MTP activado, prefill ANE desactivado, draft-6).
+- Asistente de analisis tecnico sobre codigo y diagramas de arquitectura: combinando entrada visual de esquemas con contexto de repositorio, el modelo puede razonar sobre la relacion entre el diagrama y el codigo, aunque sin garantias de tool calling verificado.
+- Prototipado de interfaces conversacionales multimodales en macOS: al ejecutarse sobre oMLX, se integra en aplicaciones nativas de Apple Silicon sin dependencia de servicios en la nube, lo que facilita pruebas de privacidad y latencia en entorno local.
+- Generacion de resumenes de reuniones a partir de capturas de pizarra y notas: el modelo acepta la imagen de la pizarra y el texto de las notas y produce un resumen estructurado en una sola pasada, sin fragmentar el contexto.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible para este repositorio oQ8 concreto. El autor indica explícitamente que las cifras de precisión pertenecen al modelo base y que no ejecutó suites IFEval ni agénticas sobre este repack. Los datos siguientes corresponden al modelo base, medidos por Nightmedia en mxfp8 y mxfp4.
+Los resultados de precision corresponden al modelo base, medidos por Nightmedia en mxfp8 y mxfp4, no a este repack oQ8. Los datos de velocidad si corresponden a esta cuantizacion, medidos en un Apple M5 Max de 128 GB con oMLX.
 
-Comparativa ARC-Challenge en la misma clase (mxfp8), modelo base:
-
-| Modelo (mxfp8) | ARC-C |
+| Benchmark (modelo base, mxfp8) | Resultado |
 |---|---|
-| Qwen3.8-27B-TURBO-Fable-Heretic (base de esta build) | 0,735 |
-| Qwen3.6-27B | 0,647 |
-| Qwen3.8-27B | 0,591 |
-| Qwen3.6-35B-A3B | 0,581 |
-| Qwen3.5-27B | 0,557 |
+| ARC-Challenge | 0,735 |
+| ARC-Easy | 0,882 |
+| BoolQ | 0,917 |
+| HellaSwag | 0,832 |
+| OpenBookQA | 0,530 |
+| PIQA | 0,837 |
+| Winogrande | 0,785 |
 
-Barrido completo de siete benchmarks sobre el modelo base:
+| Benchmark (modelo base, mxfp4) | Resultado |
+|---|---|
+| ARC-Challenge | 0,719 |
+| ARC-Easy | 0,887 |
+| BoolQ | 0,916 |
+| HellaSwag | 0,821 |
+| OpenBookQA | 0,524 |
+| PIQA | 0,831 |
+| Winogrande | 0,786 |
 
-| Precisión | arc_c | arc_e | boolq | hellaswag | openbookqa | piqa | winogrande |
-|---|---|---|---|---|---|---|---|
-| mxfp8 | 0,735 | 0,882 | 0,917 | 0,832 | 0,530 | 0,837 | 0,785 |
-| mxfp4 | 0,719 | 0,887 | 0,916 | 0,821 | 0,524 | 0,831 | 0,786 |
-
-Rendimiento medido por el autor sobre estos pesos cuantizados (Apple M5 Max de 128 GB, oMLX, generación de 220 tokens, thinking desactivado):
-
-| Configuración | Decodificación (tok/s) |
+| Configuracion MTP (esta cuantizacion, M5 Max) | Decodificacion (tok/s) |
 |---|---|
 | MTP desactivado | 12,2 |
 | MTP activado, draft-8 | 17,9 |
-| MTP activado, draft-6 (óptimo) | 26,2 |
+| MTP activado, draft-6 (optimo) | 26,2 |
+
+No se han publicado resultados de MMLU, HumanEval, GSM8K ni de suites agente o IFEval en la informacion disponible; el propio autor indica que no ejecuto esas pruebas sobre este build.
 
 ## Requisitos de hardware
 
-- Pesos cuantizados: 28,4 GB en disco y 30,9 GB de repositorio, según el autor. Esa cifra marca el suelo de memoria necesaria para cargar el modelo.
-- Hardware de referencia medido: Apple M5 Max con 128 GB de memoria unificada, único equipo sobre el que se publican cifras de rendimiento.
-- VRAM estimada para GPU NVIDIA o AMD: no disponible. El repositorio es de MLX (Apple Silicon) y no incluye pesos en GGUF ni safetensors estándar para CUDA.
-- GPU de consumo (RTX 4090, etc.): no hay ruta de despliegue soportada en este repositorio; no se publican cifras para CUDA.
-- Cabe en consumer GPU: no aplica a este artefacto; sí cabe en Mac de gama alta con memoria unificada suficiente para alojar 28,4 GB de pesos más caché KV y el codificador de visión.
-- Opciones de despliegue: oMLX (motor VLM de Apple MLX). No se declara soporte para vLLM, llama.cpp, Ollama ni TGI en este repositorio.
-- Ajustes óptimos publicados por el autor: `mtp_enabled` = true; `mtp_num_draft_tokens` = 6 (barrido de 6 y 8, con 6 óptimo); `qwen35_ane_prefill_enabled` = false (regresa el rendimiento de extremo a extremo cuando MTP está activo por sobrecarga de despacho).
-- Latencia y throughput: 26,2 tok/s con draft-6, 17,9 tok/s con draft-8 y 12,2 tok/s con MTP desactivado, en generación de 220 tokens con thinking desactivado. No se publican cifras de prefill ni de latencia a primer token.
-- La model card se interrumpe en la fila de ajustes relativa a `turboquant_kv_enabled` / `turboquant_kv_bits`, por lo que el resto de la configuración óptima de caché KV no está documentada.
+- VRAM/ memoria unificada estimada: aproximadamente 28,4 GB de pesos en disco para la cuantizacion oQ8; en Apple Silicon se requiere memoria unificada suficiente para pesos mas cache KV, lo que en la practica exige 48 GB o mas para contexto moderado y 64-128 GB para contexto largo.
+- GPU recomendadas: el formato es nativo de MLX, por lo que el hardware objetivo son los chips de Apple. El autor valida el modelo en un M5 Max de 128 GB. No se reportan pruebas en A100, H100 ni RTX 4090, y el formato oMLX no es directamente compatible con CUDA.
+- Cabe en GPU de consumo: si, en equipos Apple Silicon con memoria unificada de 48 GB o superior; en GPUs NVIDIA de consumo no es desplegable sin conversion previa del formato.
+- Opciones de despliegue: oMLX (motor VLM, libreria MLX) es el soporte nativo. No se documenta compatibilidad con vLLM, llama.cpp, Ollama ni TGI en la informacion disponible.
+- Latencia y throughput: 26,2 tok/s de decodificacion con MTP activo y draft-6 en un M5 Max de 128 GB, generacion de 220 tokens con pensamiento desactivado; 12,2 tok/s con MTP desactivado. No se reportan cifras de prefill ni de latencia al primer token.
+- Configuracion optima reportada: `mtp_enabled: true` y prefill en ANE desactivado, ya que con MTP funcional el coste de despacho de ANE resulta contraproducente.
 
 ## Comparativa con modelos similares
 
-La información disponible solo permite comparar ARC-Challenge y clase de tamaño, no parámetros, contexto ni licencia de las alternativas. Las cifras pertenecen al modelo base en mxfp8.
-
-| Modelo | Parámetros | Contexto | ARC-C (mxfp8) | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | ARC-C (mxfp8) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-27B-TURBO-Fable-Heretic-oQ8-fp16-mtp (esta build) | 27,8 mil millones (denso) | 262.144 | No medido en este repack; 0,735 en el base | apache-2.0 | Hugging Face, formato MLX |
-| Qwen3.6-27B | no disponible | no disponible | 0,647 | no disponible | no disponible |
-| Qwen3.8-27B | no disponible | no disponible | 0,591 | no disponible | no disponible |
-| Qwen3.6-35B-A3B | no disponible (MoE, según nomenclatura) | no disponible | 0,581 | no disponible | no disponible |
-| Qwen3.5-27B | no disponible | no disponible | 0,557 | no disponible | no disponible |
+| Qwen3.8-27B-TURBO-Fable (base de este build) | 27,78 B densos | 262.144 | 0,735 | Apache-2.0 | Hugging Face |
+| Qwen3.6-27B | 27 B densos | no disponible | 0,647 | no disponible | Hugging Face |
+| Qwen3.8-27B | 27 B densos | no disponible | 0,591 | no disponible | Hugging Face |
+| Qwen3.6-35B-A3B | 35 B totales (MoE) | no disponible | 0,581 | no disponible | Hugging Face |
+| Qwen3.5-27B | 27 B densos | no disponible | 0,557 | no disponible | Hugging Face |
+
+La comparativa se limita a ARC-Challenge en mxfp8 sobre el modelo base, unica metrica comun reportada. En ella el modelo supera a los cuatro modelos de la misma clase por un margen de entre 0,088 y 0,178 puntos. No hay datos publicados de MMLU, HumanEval ni otras tareas que permitan una comparacion mas amplia, ni se dispone de cifras de rendimiento de los competidores en hardware Apple Silicon.
 
 ## Limitaciones y advertencias
 
-- Modelo descensurado de forma deliberada: los metadatos y la model card confirman cero rechazos. Puede producir contenido ofensivo, ilegal, peligroso o sexual sin filtro interno. En producción es obligatorio añadir una capa externa de moderación y definir políticas de uso.
-- Idiomas: solo se declara inglés. El rendimiento en castellano no está documentado y no debería asumirse.
-- Los benchmarks publicados se midieron sobre los pesos del modelo base en mxfp8 y mxfp4, no sobre este repack oQ8. La degradación introducida por la cuantización de 8 bits aplicada aquí no está cuantificada.
-- No se han ejecutado IFEval ni suites agénticas sobre esta build, tal como reconoce el propio autor. No hay evidencia publicada sobre tool calling, uso agéntico ni fiabilidad multi-paso.
-- Validación comunitaria prácticamente nula: 0 descargas y 1 like en el momento de redactar la ficha. Las cifras de throughput y las sondas de rechazo provienen del autor, no de terceros independientes.
-- Dependencia de plataforma: los pesos están en formato nativo de MLX y requieren oMLX sobre Apple Silicon. No hay ruta de despliegue documentada para CUDA, ROCm ni aceleradores no Apple.
-- Riesgo de alucinación: inherente a la familia y no medido en este artefacto; la ausencia de evaluaciones de factualidad impide acotarlo.
-- Visión preservada pero no evaluada: no se publican métricas de comprensión de imagen, por lo que la calidad del componente multimodal es desconocida.
-- Licencia apache-2.0 en este repositorio, pero conviene verificar la cadena completa de modelos base y merges intermedios antes de un uso comercial, ya que la descensura mediante Heretic no altera las obligaciones de atribución de los pesos originales.
-- La model card está truncada en la sección de ajustes óptimos, de modo que parte de la configuración recomendada (parámetros de cuantización de caché KV) no es recuperable desde la información disponible.
-- Build muy reciente y con un único artefacto publicado: no hay historial de versiones ni parches que permitan juzgar su mantenimiento.
+- Alineacion de seguridad reducida: el modelo base incorpora el calificativo "Heretic" y el autor declara explicitamente que su comportamiento de seguridad por defecto ha sido disminuido, con 0 de 100 rechazos en su propia evaluacion. No es apto para produccion sin una capa de seguridad propia.
+- Riesgo de alucinacion: no se han publicado evaluaciones de veracidad ni de calibracion sobre este build; el autor confirma no haber ejecutado IFEval ni suites agente.
+- Idiomas: solo ingles declarado. El rendimiento en castellano u otras lenguas no esta evaluado y previsiblemente sera deficiente.
+- Licencia: Apache-2.0 permite uso comercial, pero el autor restringe el uso previsto a investigacion y evaluacion privada; conviene revisar la licencia del modelo base y de sus componentes de fusion antes de un despliegue comercial.
+- Dependencia de plataforma: formato oMLX exclusivo para Apple Silicon; no hay pesos GGUF ni safetensors estandar de transformers en este repositorio, lo que limita la portabilidad a CUDA.
+- Naturaleza derivada: es una cuantizacion de un merge de multiples etapas (Cold-Fusion + Fable-Fusion), lo que complica la trazabilidad de los datos de entrenamiento y de las obligaciones de atribucion.
+- Rendimiento modesto en terminos absolutos: 26,2 tok/s en un M5 Max de 128 GB es bajo para cargas de alta concurrencia; el propio autor lo describe como modelo complementario y no como caballo de batalla de throughput.
+- Los benchmarks de precision citados corresponden al modelo base en otras precisiones (mxfp8, mxfp4), no a este repack oQ8; la degradacion introducida por la cuantizacion de 8 bits no esta cuantificada.
+- Contexto de 262.144 tokens declarado, pero sin medicion publicada de rendimiento efectivo en esa longitud (perdida en el medio, coste de atencion).
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/NovaeonStudio/Qwen3.8-27B-TURBO-Fable-Heretic-oQ8-fp16-mtp
 - Modelo base: https://huggingface.co/DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU
-- oMLX (motor de inferencia): https://github.com/jundot/omlx
-- Heretic (descensura mediante ARA): https://github.com/p-e-w/heretic
-- Novaeon.Studio: https://novaeon.studio
-- La búsqueda web realizada no devolvió resultados relevantes para este modelo (paper, blog o demo adicionales): no disponible.
+- Repositorio oMLX: https://github.com/jundot/omlx
+- Sitio del autor: https://novaeon.studio

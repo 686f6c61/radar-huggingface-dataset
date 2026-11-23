@@ -1,0 +1,48 @@
+{
+  "schema": 2,
+  "id": "mradermacher/t5-russian-detoxifier-GGUF",
+  "slug": "mradermacher-t5-russian-detoxifier-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/t5-russian-detoxifier-GGUF",
+  "created_at": "2024-12-21T08:27:45.000Z",
+  "updated_at": "2026-11-22T23:54:52.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:wantuta/t5-russian-detoxifier",
+    "base_model:quantized:wantuta/t5-russian-detoxifier",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 115,
+  "trending_score": 0,
+  "parameters": 244309248,
+  "parameters_human": "244.3M",
+  "storage_bytes": 2206184256,
+  "storage_human": "2.2 GB",
+  "context_length": 512,
+  "base_model": "wantuta/t5-russian-detoxifier",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

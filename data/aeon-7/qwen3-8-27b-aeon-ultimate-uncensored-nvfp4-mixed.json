@@ -5,7 +5,7 @@
   "author": "AEON-7",
   "url": "https://huggingface.co/AEON-7/Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED-NVFP4-MIXED",
   "created_at": "2026-09-07T16:09:23.000Z",
-  "updated_at": "2026-11-13T04:45:22.000Z",
+  "updated_at": "2026-11-22T04:39:48.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -83,8 +83,8 @@
     "8-bit",
     "region:us"
   ],
-  "likes": 56,
-  "downloads_30d": 2867,
+  "likes": 57,
+  "downloads_30d": 2855,
   "trending_score": 11,
   "parameters": 19869895920,
   "parameters_human": "19.87B",
@@ -121,9 +121,14 @@
       "snippet": "The latest and most popular Essays from Aeon. Longform articles on philosophy, psychology, science, society, history and the arts, …"
     },
     {
-      "title": "Aeon - Wikipedia",
-      "url": "https://en.wikipedia.org/wiki/Aeon",
-      "snippet": "Although the term aeon may be used in reference to a period of a billion years (especially in geology, cosmology and astronomy), its …"
+      "title": "AEON Pass : programme ski à la journée sur 3 domaines",
+      "url": "https://www.flexipass-aeon.com/",
+      "snippet": "AEON Pass est le forfait qui vous permet de skier plus librement à Alpe d’Huez, aux 2 Alpes et à La Grave. Une fois membre, vous …"
+    },
+    {
+      "title": "AEON | Home",
+      "url": "https://www.aeon.info/sp/en/",
+      "snippet": "Apr 11, 2018 · AEON is a retail corporate group constituted AEON Co., Ltd. in inside and outside the country company by the core."
     }
   ]
 }

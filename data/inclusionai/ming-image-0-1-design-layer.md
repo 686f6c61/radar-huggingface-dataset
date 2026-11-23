@@ -2,101 +2,105 @@
 
 ## Resumen
 
-Ming-Image-0.1-Design-Layer es un modelo de difusion para descomposicion de disenos graficos desarrollado por inclusionAI. Su tarea no es generar imagenes desde cero, sino tomar un diseno ya aplanado (un cartel, una tarjeta, una creatividad publicitaria con todos sus elementos fusionados en un unico plano) y separarlo en un numero solicitado de capas RGBA independientes, cada una con su canal alfa, de forma que puedan editarse o recomponerse por separado.
+Ming-Image-0.1-Design-Layer es un modelo de difusion especializado en la descomposicion de disenos graficos planos en capas RGBA independientes. Lo desarrolla inclusionAI y resuelve un problema muy concreto del flujo de trabajo de diseno: a partir de una imagen aplanada (por ejemplo, un PNG exportado) y un plan de capas expresado en lenguaje natural, el modelo genera cada elemento grafico como una capa separada con canal alfa, lista para editar en herramientas como Photoshop, Figma o GIMP.
 
-El modelo se distribuye a traves de la libreria diffusers con pipeline `image-text-to-image`: recibe una imagen de entrada y, opcionalmente, un prompt que describe el plan de capas (cuantas capas y que debe contener cada una). Si se omite el prompt, basta con indicar el numero de capas mediante `--num-layers`. La salida son ficheros PNG en formato RGBA que preservan la relacion de aspecto de la imagen original.
+El modelo se distribuye con la libreria `custom` y el pipeline `image-text-to-image`, y emplea una arquitectura identificada en sus tags como `bailingmm_moe_v2_lite`, es decir, una variante de mezcla de expertos (MoE) multimodal. Cuenta con 6.154.908.736 parametros totales segun los pesos en safetensors, y el repositorio ocupa 65,2 GB, lo que refleja pesos en BF16 junto con los componentes auxiliares del pipeline.
 
-Cuenta con aproximadamente 6.154.908.736 parametros (unos 6,15 mil millones) y un repositorio de 65,2 GB en Hugging Face. Se libera bajo licencia MIT, lo que permite uso comercial sin restricciones de royalties. La configuracion validada por el autor requiere una GPU CUDA con 80 GiB de VRAM, 12 pasos de muestreo, escala CFG de 2,0 y precision BF16, con una resolucion de trabajo recomendada de 1024 (o 512 para descomposiciones mas rapidas). Es relevante ahora porque automatiza un cuello de botella clasico en los flujos de produccion de diseno grafico: la separacion manual de capas en herramientas como Photoshop o Figma.
+Su relevancia actual radica en que automatiza una tarea tradicionalmente manual y tediosa en produccion grafica: separar fondos, textos, formas e imagenes incrustadas de un diseno final. La licencia MIT y la disponibilidad de un repositorio de inferencia propio, junto con recetas para vLLM-Omni, lo hacen utilizable tanto en investigacion como en productos comerciales.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | No especificada en la informacion disponible; pipeline de difusion `image-text-to-image` distribuido via diffusers, con soporte de `flash_attention_2` |
-| Parametros totales | 6.154.908.736 (aproximadamente 6,15 mil millones) |
-| Parametros activos | No aplica (no se describe una arquitectura MoE) |
-| Longitud de contexto | No aplica; la condicion de entrada es una imagen mas un prompt de plan de capas |
-| Tipos de cuantizacion | No disponible; la precision validada por el autor es BF16 |
-| Idiomas soportados | No disponible |
+| Arquitectura | MoE multimodal (`bailingmm_moe_v2_lite` segun tags); modelo de difusion para image-text-to-image |
+| Parametros totales | 6.154.908.736 |
+| Parametros activos | no disponible |
+| Longitud de contexto | no disponible (no aplica a un modelo de difusion de imagen) |
+| Tipos de cuantizacion | no disponible (el autor valida BF16) |
+| Idiomas soportados | no disponible |
 | Licencia | MIT |
-| Formato de pesos | safetensors (libreria diffusers) |
-
-Otros datos tecnicos: resolucion de trabajo recomendada 1024 (512 como alternativa rapida), 12 pasos de muestreo, CFG 2,0, salida en PNG RGBA, tamano del repositorio 65,2 GB, 14 likes y 0 descargas en el momento de la consulta, creado el 17 de septiembre de 2026 y actualizado el 22 de septiembre de 2026.
+| Formato de pesos | safetensors (libreria `custom`, compatible con diffusers) |
 
 ## Arquitectura y entrenamiento
 
-La model card no detalla la arquitectura interna ni el proceso de entrenamiento. Lo que si se documenta es el comportamiento del pipeline: se trata de un modelo de difusion condicionado por imagen y texto (`image-text-to-image`) cuya salida tiene cuatro canales (RGBA), ya que el objetivo es producir capas con transparencia. El uso de `flash_attention_2` como implementacion de atencion en el script de inferencia indica que el backbone emplea mecanismos de atencion de tipo transformer, pero no se especifica si se trata de un DiT, un U-Net o una variante hibrida, ni el numero de tokens de entrenamiento, la composicion del dataset o si hubo fases de ajuste fino con RLHF o DPO. Todos esos datos deben considerarse "no disponibles".
+La informacion disponible indica que el modelo se apoya en una arquitectura denominada `bailingmm_moe_v2_lite`, con un pipeline de tipo image-text-to-image y soporte de diffusers. Se trata, por tanto, de un modelo generativo condicionado por imagen y texto que produce un conjunto de capas RGBA. El prompt de entrada actua como plan de capas: describe cuantas capas debe generar y que contenido corresponde a cada una. Si se omite el prompt, el parametro `--num-layers` fija el numero de capas de la peticion por defecto.
 
-El autor menciona una mejora de prompt (prompt enhancement, PE) que puede apoyarse en `Ling-3.0-flash-VL` o `qwen3.8-27B`, lo que sugiere que el plan de capas se puede generar o reescribir automaticamente con un modelo de vision-lenguaje antes de pasarlo al descomponedor. La unica referencia a evaluacion es el conjunto de test Crello, sobre el que se reportan las metricas RGB L1 (menor es mejor) y Alpha soft IoU (mayor es mejor), aunque sin valores numericos en la informacion disponible.
+No se han publicado en la informacion disponible detalles sobre el numero de tokens de entrenamiento, la composicion del dataset, el uso de RLHF/DPO ni innovaciones tecnicas concretas como decodificacion especulativa o atencion lineal. La model card unicamente documenta la configuracion de inferencia validada: 12 pasos de muestreo, CFG scale de 2.0, precision BF16, resolucion de trabajo de 1024 (o 512 para mayor velocidad) y una GPU CUDA con 80 GiB de VRAM. El modelo preserva la relacion de aspecto de la imagen de entrada.
 
 ## Capacidades
 
-- Descomposicion de capas: convierte una imagen de diseno aplanada en un numero solicitado de capas RGBA independientes.
-- Control del numero de capas: mediante el parametro `--num-layers N` o mediante un prompt detallado que declare el numero de capas y su contenido.
-- Condicionamiento por texto: acepta una especificacion de plan de capas en lenguaje natural para guiar la separacion.
-- Preservacion de la relacion de aspecto: la salida mantiene el aspect ratio de la imagen de entrada.
-- Salida con transparencia: los resultados se guardan como PNG en RGBA, listos para edicion por capas.
-- Recomposicion: la galeria del autor muestra el resultado de recomponer las capas descompuestas sobre el diseno original.
-- Soporte de mejora de prompt con modelos externos de vision-lenguaje (`Ling-3.0-flash-VL`, `qwen3.8-27B`).
-- No se documentan capacidades de generacion de texto, razonamiento, codigo, matematicas, tool calling, function calling, comportamiento agentico, audio ni video.
-- Capacidades multilingues: no disponibles.
+- Descomposicion de imagenes de diseno planas en un numero configurable de capas RGBA independientes.
+- Generacion condicionada por texto: el prompt define el plan de capas y el contenido de cada una.
+- Salida en PNG con canal alfa por capa, directamente editable.
+- Preservacion de la relacion de aspecto de la imagen original.
+- Soporte de dos resoluciones de trabajo: 1024 (recomendada) y 512 (mas rapida).
+- Integracion con frameworks de inferencia como vLLM-Omni.
+- Mejora de prompts (prompt enhancement) mediante modelos auxiliares como Ling-3.0-flash-VL o qwen3.8-27B.
+- Casos documentados de uso combinado con skills de diseno y de conversion de imagen a PPT editable.
+- No se documentan capacidades de tool calling, agentes, audio ni thinking mode.
 
 ## Casos de uso
 
-- Automatizacion de produccion grafica: dado un cartel o creatividad publicitaria ya aplanada, el modelo genera las capas separadas (fondo, texto, ilustracion, logotipo) para que el equipo de diseno las edite sin rehacer el trabajo desde cero.
-- Adaptacion de creatividades a distintos formatos: a partir de un diseno plano se obtienen capas RGBA que permiten recolocar, recortar o reescalar elementos para generar variantes de campana en diferentes tamanos sin perder transparencias.
-- Plantillas editables para herramientas de diseno: las capas resultantes se pueden importar en editores que trabajan con capas para construir plantillas reutilizables por parte de usuarios no tecnicos.
-- Localizacion de materiales de marketing: al aislar las capas de texto del resto de elementos visuales, se pueden sustituir los textos por traducciones manteniendo intactos los graficos y el fondo.
-- Recuperacion y modernizacion de archivos antiguos: disenos heredados que solo existen como imagen plana o rasterizada se convierten en capas para poder reutilizarlos con las herramientas actuales.
-- Preprocesado para pipelines de generacion: las capas transparentes sirven como entrada limpia para modelos de generacion o de edicion de imagen que necesitan mascaras o elementos aislados.
-- Control de calidad y auditoria de marca: separar los elementos permite comprobar de forma automatizada que el logotipo, la tipografia y los colores corporativos cumplen las guias, algo que sobre una imagen plana es mucho mas costoso.
-- Demo interactiva de descomposicion: el ejemplo publicado de tarjeta de seis capas sirve como referencia reproducible para evaluar la calidad del modelo antes de integrarlo en un flujo propio.
+- Edicion de material grafico corporativo: a partir de un cartel o tarjeta aplanada, el modelo separa fondo, tipografia, formas e imagenes en capas RGBA para que el equipo de diseno modifique textos o colores sin rehacer la pieza.
+- Conversion de imagenes a presentaciones editables: combinado con la skill `image-to-editable-ppt`, permite reconstruir diapositivas exportadas como imagen en elementos editables.
+- Reconstruccion de archivos fuente perdidos: cuando solo se conserva el PNG final de un diseno, el modelo genera una aproximacion por capas que sirve como punto de partida para recuperar el proyecto.
+- Automatizacion de variantes de marca: en un pipeline de marketing, se descompone una plantilla y se sustituyen capas concretas (logotipo, texto promocional) para producir variantes sin intervencion manual.
+- Preprocesado para herramientas de diseno asistido: las capas RGBA generadas alimentan editores o sistemas de retoque que necesitan elementos separados con transparencia.
+- Catalogacion y analisis de assets: la separacion por capas facilita extraer y clasificar elementos recurrentes (iconos, tipografias, fondos) de un archivo historico de disenos.
+- Prototipado rapido en estudios de diseno: con resolucion 512 y 12 pasos de muestreo se obtiene una primera descomposicion rapida antes de refinar a 1024.
 
 ## Benchmarks y rendimiento
 
-La model card reporta resultados cuantitativos de descomposicion de capas sobre el conjunto de test Crello, con las metricas RGB L1 (menor es mejor) y Alpha soft IoU (mayor es mejor), pero no incluye los valores numericos en la informacion disponible. No se han publicado cifras concretas de benchmarks en la informacion disponible, ni comparaciones con otros modelos, ni datos de latencia o throughput.
+La model card incluye una figura de resultados cuantitativos sobre el conjunto de test de Crello, con las metricas RGB L1 (menor es mejor) y Alpha soft IoU (mayor es mejor), pero los valores numericos no estan disponibles en la informacion proporcionada.
 
-| Evaluacion | Conjunto de datos | Metricas | Resultado |
-|---|---|---|---|
-| Descomposicion de capas | Crello test set | RGB L1 (menor mejor), Alpha soft IoU (mayor mejor) | No disponibles (solo se indica la existencia de la tabla) |
+| Benchmark | Metrica | Resultado |
+|---|---|---|
+| Crello test set | RGB L1 | no disponible |
+| Crello test set | Alpha soft IoU | no disponible |
+
+No se han publicado en la informacion disponible resultados numericos de benchmarks como MMLU, HumanEval o GSM8K, que ademas no aplican a este tipo de modelo.
 
 ## Requisitos de hardware
 
-- VRAM: la configuracion validada por el autor es una unica GPU CUDA con 80 GiB de VRAM. Con 6,15 mil millones de parametros en BF16, los pesos ocupan aproximadamente 12,3 GB, pero el pipeline completo de difusion a resolucion 1024 con salidas RGBA y multiples capas eleva el consumo muy por encima de esa cifra.
-- GPU recomendadas: A100 80 GB, H100 80 GB o H200, al ser las opciones habituales con 80 GiB de memoria. La information disponible solo valida explicitamente la configuracion de 80 GiB, sin nombrar modelos concretos.
-- GPU de consumo: no se documenta compatibilidad con GPUs de consumo (RTX 4090 de 24 GB, RTX 3090 de 24 GB, etc.). Dado el requisito declarado de 80 GiB, se debe asumir que no cabe en una GPU de consumo en la configuracion validada; a resolucion 512 y con cuantizacion podria ser viable, pero no esta confirmado por el autor.
-- Memoria en disco: el repositorio ocupa 65,2 GB.
-- Opciones de despliegue: diffusers para inferencia local mediante el script `infer.py` del repositorio acompanante, y vLLM-Omni para servirlo, con recetas oficiales publicadas por el proyecto (ver enlaces).
-- Ajustes de inferencia: `--attn-implementation flash_attention_2`, `--resolution 1024` (o 512 para mayor velocidad), 12 pasos de muestreo, CFG 2,0, precision BF16.
+- VRAM: la configuracion validada por el autor es una unica GPU CUDA con 80 GiB de VRAM en BF16.
+- GPU recomendadas: A100 80 GB o H100 80 GB, alineadas con la configuracion validada.
+- GPU de consumo: no se documenta que el modelo quepa en GPUs de consumo como la RTX 4090 (24 GB); con 6,15 mil millones de parametros en BF16 los pesos ocupan aproximadamente 12,3 GB, pero el pipeline completo y los estados intermedios a resolucion 1024 no estan validados en ese hardware.
+- Despliegue: repositorio oficial Ming-Image (`infer.py`) y recetas para vLLM-Omni. No se documentan opciones para llama.cpp, Ollama ni TGI.
+- Precision: BF16.
+- Resolucion: 1024 recomendada, 512 para descomposicion mas rapida.
+- Muestreo: 12 pasos, CFG scale 2.0.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos de benchmarks ni de especificaciones de modelos comparables en la informacion proporcionada. El unico artefacto relacionado documentado es el repositorio acompanante `inclusionAI/Ming-Image`, que contiene el codigo de instalacion, la demo de descomposicion de capas y las utilidades de reescritura de prompt, pero no se aportan cifras comparativas frente a alternativas de descomposicion de capas o de generacion de imagen condicionada.
+No se dispone en la informacion proporcionada de datos de rendimiento ni de especificaciones de modelos alternativos de descomposicion de capas, por lo que la comparativa cuantitativa no esta disponible.
 
-| Modelo | Parametros | Contexto | Licencia | Disponibilidad | Datos comparativos |
-|---|---|---|---|---|---|
-| Ming-Image-0.1-Design-Layer | 6.154.908.736 | No aplica | MIT | Hugging Face (diffusers, safetensors) | No disponibles |
-| Alternativas de la misma categoria | No disponible | No disponible | No disponible | No disponible | No disponible |
+| Modelo | Parametros | Contexto | Licencia | Notas |
+|---|---|---|---|---|
+| Ming-Image-0.1-Design-Layer | 6.154.908.736 | no aplica | MIT | Descomposicion en capas RGBA con plan textual |
+| Alternativas de descomposicion de capas | no disponible | no disponible | no disponible | No se han identificado en la informacion disponible |
 
 ## Limitaciones y advertencias
 
-- Sesgos conocidos: no disponibles. No se documenta ninguna evaluacion de sesgos del modelo.
-- Riesgo de alucinacion: en el contexto de este modelo, el riesgo se traduce en capas mal separadas, elementos duplicados entre capas o atribucion incorrecta de un elemento a la capa equivocada, especialmente con disenos complejos o con solapamientos fuertes. No se aportan tasas de error.
-- Numero de capas: si se proporciona un prompt, el numero de capas declarado en ese prompt controla el numero de salidas. Un plan de capas mal formulado produce una descomposicion incorrecta, por lo que la calidad del prompt es critica.
-- Idiomas: la lista de idiomas soportados no esta disponible, lo que impide asegurar un comportamiento correcto con textos en castellano dentro de los disenos de entrada o en los planes de capas.
-- Contexto: se trata de un modelo de imagen, no de un modelo de lenguaje; no admite conversaciones multi-turno ni ventanas de contexto de texto.
-- Requisitos de hardware: la configuracion validada exige 80 GiB de VRAM, lo que excluye el despliegue en GPUs de consumo sin ajustes no documentados.
-- Licencia: MIT, sin restricciones conocidas para uso comercial. Se debe conservar el aviso de licencia correspondiente.
-- Produccion: no hay datos publicados de latencia, throughput ni estabilidad en cargas concurrentes. El campo `inference: false` de la model card indica que la inferencia no esta habilitada en la infraestructura de Hugging Face, por lo que hay que desplegarlo en infraestructura propia mediante diffusers o vLLM-Omni.
-- Fecha del modelo: los metadatos indican creacion en septiembre de 2026; conviene verificar la version vigente del repositorio acompanante antes de integrarlo, ya que los ajustes de inferencia pueden cambiar entre revisiones.
+- La VRAM validada (80 GiB) limita el despliegue a GPUs de datacenter; no hay confirmacion de funcionamiento en GPUs de consumo.
+- El numero de capas y su contenido dependen en gran medida de la calidad del plan de capas del prompt; prompts ambiguos pueden producir descomposiciones incorrectas.
+- No se documentan sesgos conocidos, pero al ser un modelo generativo de imagen puede reproducir sesgos presentes en los datos de entrenamiento, sobre los que no hay informacion publicada.
+- Riesgo de alucinacion visual: elementos inventados o mal separados en las capas generadas, especialmente en disenos complejos o con solapamientos.
+- No se especifican los idiomas soportados en los prompts, por lo que el comportamiento multilingue no esta garantizado.
+- La licencia MIT permite uso comercial, pero conviene revisar las licencias de los componentes auxiliares (modelos de prompt enhancement, frameworks de inferencia) antes de desplegar en produccion.
+- La model card marca `inference: false` en los metadatos, lo que indica que la inferencia no esta habilitada directamente en el Hub; es necesario usar el repositorio oficial o vLLM-Omni.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/inclusionAI/Ming-Image-0.1-Design-Layer
-- Repositorio de codigo Ming-Image: https://github.com/inclusionAI/Ming-Image
-- Demo de descomposicion de capas: https://github.com/inclusionAI/Ming-Image#layer-decomposition-demo
-- Reescritura de prompt para descomposicion de capas: https://github.com/inclusionAI/Ming-Image#layer-decomposition-prompt-rewriting
-- Receta de vLLM-Omni para Ming-Image: https://github.com/vllm-project/vllm-omni/blob/main/recipes/inclusionAI/Ming-Image.md
+- Hugging Face: https://huggingface.co/inclusionAI/Ming-Image-0.1-Design-Layer
+- ModelScope: https://www.modelscope.cn/models/inclusionAI/Ming-Image-0.1-Design-Layer
+- Blog: https://mp.weixin.qq.com/s/VGdtxfM8kbHIQJw50VD_Sw
+- Demo en Spaces: https://huggingface.co/spaces/Xiaolong-Wang/Ming-Image-0.1-Design-Layer
+- Repositorio de inferencia: https://github.com/inclusionAI/Ming-Image
+- Demo de descomposicion en capas: https://github.com/inclusionAI/Ming-Image#layer-decomposition-demo
+- Reescritura de prompts: https://github.com/inclusionAI/Ming-Image#layer-decomposition-prompt-rewriting
+- Skill de diseno: https://github.com/inclusionAI/ling-cookbook/tree/main/resources/recommended-skills/ling-ui-design
+- Skill de imagen a PPT editable: https://github.com/inclusionAI/ling-cookbook/tree/main/resources/recommended-skills/image-to-editable-ppt
+- Recetas vLLM-Omni: https://github.com/vllm-project/vllm-omni/blob/main/recipes/inclusionAI/Ming-Image.md
 - Guia de instalacion de vLLM-Omni: https://docs.vllm.ai/projects/vllm-omni/en/latest/getting_started/quickstart/
-- Licencia MIT: https://huggingface.co/inclusionAI/Ming-Image-0.1-Design-Layer/blob/main/LICENSE
+- Licencia: https://huggingface.co/inclusionAI/Ming-Image-0.1-Design-Layer/blob/main/LICENSE

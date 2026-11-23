@@ -2,91 +2,95 @@
 
 ## Resumen
 
-Sarath OM 1.1 es un modelo publicado en Hugging Face bajo el identificador `sarath-om/sarath_om-1.1` y distribuido principalmente a través del runtime Ollama. Según los metadatos del repositorio, se trata de un modelo de la familia Qwen2 (etiqueta `qwen2` en los tags) con 1.543.714.304 parámetros totales verificados a partir de los pesos en safetensors, lo que lo sitúa en el rango de aproximadamente 1,5 mil millones de parámetros. La model card declara capacidades de entrada de texto e imagen, visión, tool calling y modo de razonamiento (thinking), así como una ventana de contexto anunciada de 256K tokens.
+Sarath OM 1.1 es un modelo de generacion de texto y de imagen a texto publicado por sarath-om, el repositorio oficial de la familia de modelos Sarath OM asociada a Sarath AI. Segun los metadatos del repositorio, el modelo se construye sobre la arquitectura Qwen2 y cuenta con 1.543.714.304 parametros totales (aproximadamente 1,5 mil millones), con pesos en formato safetensors y un tamano de repositorio de 5,2 GB. La model card lo presenta como un modelo multimodal que acepta texto e imagenes y que anuncia capacidades de vision, tool calling y modo de razonamiento (thinking).
 
-Es relevante señalar que la propia model card aclara de forma explícita que Sarath AI es una plataforma de software e integración, no un proyecto de desarrollo o entrenamiento de modelos fundacionales. El autor no reclama la autoría del modelo base ni documenta el origen upstream, el proceso de entrenamiento, los datos utilizados ni los resultados de evaluación. Esto convierte a Sarath OM 1.1 en un artefacto de distribución cuyo valor técnico debe evaluarse con cautela, ya que la información verificable es escasa y parte de las especificaciones publicadas (contexto de 256K, tamaño de 3,3 GB) no concuerdan con los 1,54 mil millones de parámetros y el tamaño del repositorio de 5,2 GB.
+El modelo resulta relevante por su ventana de contexto declarada de 256K tokens, un valor muy alto para su rango de parametros, y por su publicacion simultanea en Hugging Face y Ollama, lo que facilita su despliegue local. La licencia declarada en los metadatos es MIT, lo que en principio permite uso comercial, aunque la propia model card advierte de que deben verificarse los terminos de los modelos y datos upstream antes de redistribuir o explotar comercialmente el modelo.
 
-En la práctica, el modelo se presenta como una experiencia lista para usar vía Ollama, con variantes local (`latest`) y en la nube (`cloud`). Para desarrolladores e investigadores, la ficha resulta útil como ejercicio de evaluación crítica: permite identificar qué datos están confirmados por los pesos y los metadatos, y qué afirmaciones proceden únicamente de la documentación del autor sin verificación independiente.
+La informacion publicada es incompleta en varios aspectos clave: no se documentan los datos de entrenamiento, el metodo de alineacion, los idiomas soportados ni resultados de benchmarks verificados. La model card es explicitamente conservadora y pide verificar la configuracion del repositorio antes de asumir arquitectura, contexto o formatos. Esta ficha recoge unicamente los datos disponibles y marca como "no disponible" todo aquello que no aparece en la informacion proporcionada.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | No documentada de forma independiente; etiqueta `qwen2` en los tags del repositorio, lo que sugiere una arquitectura transformer de la familia Qwen2 |
-| Parametros totales | 1.543.714.304 (dato verificado en safetensors) |
-| Parametros activos | No aplica (no se ha documentado una arquitectura MoE) |
-| Longitud de contexto | 256K tokens anunciados en la model card y en el listado de Ollama; no verificado de forma independiente |
-| Tipos de cuantizacion | No disponible (la model card indica "confirmar a partir de la configuración publicada") |
+| Arquitectura | Qwen2 (según tag del repositorio); detalles de configuracion no disponibles |
+| Parametros totales | 1.543.714.304 (aprox. 1,5 mil millones) |
+| Parametros activos | No aplica (no se documenta como MoE) |
+| Longitud de contexto | 256K tokens (listado de Ollama); no verificada en la configuracion del repositorio |
+| Tipos de cuantizacion | No disponible (el listado de Ollama indica un tamano publicado de aprox. 3,3 GB) |
 | Idiomas soportados | No disponible |
-| Licencia | No disponible (la model card indica "verificar los términos del modelo y de la distribución upstream") |
-| Formato de pesos | safetensors (según los tags del repositorio) |
+| Licencia | MIT (metadatos del repositorio); verificacion de terminos upstream pendiente segun la model card |
+| Formato de pesos | safetensors |
+| Modalidades de entrada | Texto e imagen |
+| Capacidades anunciadas | Vision, tool calling, thinking |
+| Tamano del repositorio | 5,2 GB |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura no está documentada de forma independiente en la información disponible. El tag `qwen2` del repositorio apunta a una arquitectura transformer decoder-only de la familia Qwen2, pero la model card no confirma el modelo base, no describe la configuración de capas, dimensiones ocultas ni cabezas de atención, y no aporta información sobre el proceso de entrenamiento. No se especifican el número de tokens de entrenamiento, la composición del dataset, ni si hubo fases de RLHF, DPO o ajuste por instrucciones.
+El repositorio etiqueta el modelo con la arquitectura Qwen2, lo que situa la base en un transformer decoder-only con atencion por grupos de consultas (GQA) y tokenizer BPE, si bien la model card no confirma explicitamente la configuracion concreta ni el modelo base exacto del que deriva. Con 1.543.714.304 parametros y pesos en safetensors, el modelo se situa en la categoria de modelos pequenos, adecuado para inferencia local. La presencia de la etiqueta "image-text-to-text" y de la capacidad de vision anunciada implica algun componente de proyeccion o codificador visual, pero no se documenta su naturaleza ni su procedencia.
 
-La model card declara explícitamente que el proyecto no desarrolla ni entrena modelos fundacionales, y que el origen upstream, la procedencia del entrenamiento y la titularidad de los pesos deben establecerse a partir de la configuración publicada y de la documentación del modelo original. No se documenta ninguna innovación técnica destacable (atención lineal, decodificación especulativa, arquitecturas híbridas, etc.). Cualquier afirmación sobre el entrenamiento o la arquitectura más allá del tag `qwen2` carece de respaldo en la información proporcionada.
+No hay informacion publicada sobre el numero de tokens de entrenamiento, la composicion del dataset, el uso de RLHF, DPO u otras tecnicas de alineacion, ni sobre innovaciones tecnicas como decodificacion especulativa o atencion lineal. La model card indica de forma explicita que los detalles tecnicos y de procedencia deben documentarse solo tras verificarlos contra los archivos del repositorio, y que si el modelo deriva de un modelo upstream debe identificarse y cumplir sus requisitos de atribucion y licencia. Tampoco se documenta el metodo de entrenamiento del modo thinking ni del soporte de tool calling.
 
 ## Capacidades
 
-- Generación de texto: capacidad listada en la model card como entrada de texto.
-- Entrada de imágenes y visión: la model card lista entrada de imagen y soporte de visión, aunque no se detalla la resolución, el codificador visual ni el formato de imagen admitido.
-- Tool calling / function calling: listado como capacidad soportada según la model card y los tags del repositorio.
-- Modo de razonamiento (thinking): listado como capacidad soportada, sin documentación sobre el formato de los tokens de pensamiento ni sobre cómo activarlo o desactivarlo.
-- Contexto largo: ventana anunciada de 256K tokens, útil para conversaciones multi-turno y documentos extensos, aunque sin verificación independiente.
-- Capacidades multilingües: no disponibles; no se especifican idiomas soportados.
-- Capacidades de agente y razonamiento multi-paso: no documentadas de forma explícita, aunque la combinación de tool calling y modo thinking sugiere que el autor las contempla.
+- Generacion de texto conversacional en formato multi-turno, segun la etiqueta "conversational" del repositorio.
+- Entrada multimodal de texto e imagen, con capacidad de vision anunciada en el listado de Ollama.
+- Tool calling o function calling, anunciado como capacidad del modelo.
+- Modo de razonamiento explicito (thinking), anunciado en el listado de Ollama.
+- Integracion con el ecosistema Ollama mediante el identificador `sarath-om/sarath_om-1.1`.
+- Capacidades multilingues: no documentadas; no se dispone de lista de idiomas.
+- No se documentan capacidades especificas de codigo, matematicas, audio ni agentes multi-paso mas alla de las etiquetas genericas del repositorio.
 
 ## Casos de uso
 
-- Asistente conversacional local: el modelo puede desplegarse con `ollama run sarath-om/sarath_om-1.1` y gestionar diálogos multi-turno mediante la API HTTP local de Ollama, lo que lo hace adecuado para prototipos de asistentes en máquinas de desarrollo sin depender de servicios en la nube.
-- Procesamiento de documentos largos: la ventana anunciada de 256K tokens permitiría, en teoría, resumir o extraer información de documentos extensos en una sola pasada; conviene validar empíricamente el comportamiento en contextos muy largos antes de usarlo en producción.
-- Automatización con herramientas: gracias al soporte declarado de tool calling, puede integrarse en flujos donde el modelo decida invocar funciones externas (consultas a APIs, operaciones sobre archivos) a través de la API de chat de Ollama.
-- Análisis de imágenes en local: la entrada de imagen y el soporte de visión permiten construir prototipos de descripción de imágenes o extracción de información visual, siempre que se confirme el formato y la calidad del codificador visual.
-- Razonamiento asistido con modo thinking: para tareas que requieran pasos intermedios de razonamiento (planificación, resolución de problemas), el modo thinking listado puede emplearse en entornos de experimentación, verificando la calidad de las cadenas de razonamiento generadas.
-- Integración en aplicaciones Python o JavaScript: la API de Ollama y los ejemplos de la model card (paquete `ollama` para Python, llamadas cURL) facilitan la incorporación del modelo en backends de aplicaciones, bots o pipelines de automatización.
-- Evaluación y experimentación académica: como artefacto de 1,54 mil millones de parámetros con pesos en safetensors, puede servir para estudiar el comportamiento de modelos pequeños con capacidades multimodales y de tool calling declaradas, siempre teniendo en cuenta la falta de documentación sobre su procedencia.
+- Asistente conversacional local: el modelo puede desplegarse con Ollama en una maquina de desarrollo y gestionar dialogos multi-turno, aprovechando su ventana declarada de 256K tokens para mantener historiales largos sin truncamiento agresivo.
+- Procesamiento de documentos extensos: con 256K tokens de contexto declarado, es adecuado para resumir o extraer informacion de contratos, informes o transcripciones largas en una sola pasada, siempre que se valide el contexto real en la configuracion desplegada.
+- Analisis de imagenes en flujos de soporte: la entrada image-text-to-text permite adjuntar capturas o fotografias y pedir descripciones, clasificaciones o extraccion de datos, integrandolo en herramientas internas de triaje.
+- Automatizacion con herramientas: el soporte de tool calling permite conectar el modelo a APIs internas (calendario, tickets, bases de datos) en asistentes de productividad, validando siempre nombres y argumentos antes de ejecutar acciones, como recomienda la model card.
+- Prototipado de agentes con razonamiento: el modo thinking facilita la experimentacion con cadenas de razonamiento paso a paso en tareas de planificacion sencilla, con la cautela de que no hay benchmarks que respalden su calidad.
+- Educacion y demostraciones: su tamano reducido (aprox. 3,3 GB en el listado de Ollama) y su licencia MIT lo hacen util para talleres, demos y entornos de aprendizaje donde se necesita un modelo multimodal ejecutable en local.
+- Evaluacion comparativa interna: sirve como linea base pequena y multimodal en pipelines de evaluacion propios, midiendo latencia, calidad y fiabilidad de tool calling frente a alternativas mayores.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card indica explícitamente que no incluye resultados de evaluación verificados de forma independiente y que el rendimiento depende de la variante, la aplicación, la versión del runtime y la configuración.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card afirma explicitamente que no se incluyen puntuaciones verificadas de forma independiente y que cualquier evaluacion reproducible deberia incluir datasets, metricas, hardware, revision del modelo y casos de fallo.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: con 1,54 mil millones de parámetros, en precisión FP16 se requieren aproximadamente 3,1 GB solo para los pesos, más overhead de activaciones y caché KV; en cuantizaciones de 8 bits o 4 bits el requisito de pesos baja aproximadamente a 1,5 GB y 0,8 GB respectivamente, aunque no se han publicado cuantizaciones oficiales.
-- GPU recomendadas: para FP16, una GPU con 6-8 GB de VRAM es suficiente (por ejemplo, RTX 3060, RTX 4060, RTX 2070); para cuantizaciones de 4 bits, una GPU con 4 GB o incluso CPU puede ser viable.
-- Compatibilidad con GPU de consumo: sí, el tamaño del modelo permite ejecutarlo en GPUs de consumo de gama media; la model card menciona un tamaño de modelo de aproximadamente 3,3 GB, coherente con una cuantización de 16 bits o similar.
-- Opciones de despliegue: Ollama es el runtime documentado (variantes `latest` y `cloud`); la API HTTP local de Ollama permite integrarlo con aplicaciones. No se documentan otras opciones como vLLM, llama.cpp o TGI, aunque al estar los pesos en safetensors podrían convertirse a otros formatos.
-- Latencia y throughput estimados: no disponibles; dependen del hardware, la cuantización, la longitud de contexto y la variante (local o cloud).
+- VRAM estimada para inferencia: con 1,5 mil millones de parametros, en fp16 se requieren aproximadamente 3,1 GB solo para pesos, mas overhead de activaciones y cache KV; en cuantizacion de 4 bits el modelo ronda los 1 GB de pesos. El listado de Ollama publica un tamano de aproximadamente 3,3 GB, coherente con una cuantizacion de 8 bits o con pesos empaquetados.
+- La ventana de 256K tokens incrementa de forma notable el consumo de cache KV; para contextos muy largos se necesita VRAM adicional proporcional al contexto efectivo utilizado.
+- GPU recomendadas: tarjetas consumer con 8 GB o mas (RTX 3060, RTX 4060, RTX 4070) deberian bastar para contextos moderados; para contextos cercanos a 256K se recomienda A100, H100 o GPUs con 24 GB o mas (RTX 3090, RTX 4090).
+- Cabe en GPU consumer: si, en la mayoria de tarjetas con 8 GB o mas para contextos normales.
+- Opciones de despliegue: Ollama (`ollama pull sarath-om/sarath_om-1.1`), Hugging Face CLI (`hf download sarath-om/sarath_om-1.1`) y frameworks compatibles con safetensors y Qwen2; la model card advierte de que el codigo de inferencia correcto depende de los archivos reales del repositorio y debe verificarse.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Vision | Tool calling | Licencia | Disponibilidad |
-|---|---|---|---|---|---|---|
-| Sarath OM 1.1 | 1,54B (verificado) | 256K anunciado | Listado | Listado | No disponible | Hugging Face y Ollama |
-| Qwen2-VL-2B (referencia de familia) | ~2B | 32K (ampliable) | Sí | Sí | Apache 2.0 (según el modelo original) | Hugging Face, vLLM, etc. |
-| SmolVLM-2B (referencia de familia) | ~2B | 8K-16K según variante | Sí | Parcial | Apache 2.0 (según el modelo original) | Hugging Face, llama.cpp |
-| Gemma 3 1B (referencia de familia) | ~1B | 32K | Sí (en variantes multimodales) | Sí | Términos de Gemma | Hugging Face, Ollama |
+| Modelo | Parametros | Contexto | Modalidad | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| Sarath OM 1.1 | 1,5B | 256K (declarado en Ollama) | Texto e imagen | MIT (metadatos) | Hugging Face y Ollama |
+| Qwen2-VL-2B | 2B | 32K nativo, extensible | Texto e imagen | Apache 2.0 | Hugging Face |
+| Qwen2.5-1.5B-Instruct | 1,5B | 32K | Texto | Apache 2.0 | Hugging Face y Ollama |
+| SmolVLM-2B | 2B | 8K | Texto e imagen | Apache 2.0 | Hugging Face |
 
-La comparativa con modelos de la familia Qwen2-VL, SmolVLM o Gemma 3 es orientativa: la información disponible no permite confirmar que Sarath OM 1.1 sea un fine-tuning de alguno de ellos, ni que sus capacidades declaradas (visión, tool calling, thinking) estén a la altura de esos modelos. La principal diferencia es la falta de licencia explícita y de documentación sobre procedencia y evaluación en Sarath OM 1.1.
+La comparativa se basa en caracteristicas publicas de modelos de rango similar; no se dispone de benchmarks de Sarath OM 1.1 que permitan comparar calidad de forma objetiva. El contexto de 256K declarado es superior al de las alternativas listadas, pero no esta verificado en la configuracion del repositorio.
 
 ## Limitaciones y advertencias
 
-- Procedencia no documentada: la model card no confirma el modelo base, el proceso de entrenamiento ni la titularidad de los pesos; el autor declara explícitamente que no desarrolla ni entrena modelos fundacionales.
-- Licencia no disponible: no se especifican los términos de uso, lo que impide evaluar la legalidad de un uso comercial o de la redistribución.
-- Idiomas no especificados: no hay información sobre el soporte multilingüe ni sobre la calidad en castellano.
-- Riesgo de alucinación: no se han publicado evaluaciones de fiabilidad; como cualquier modelo generativo, puede producir información incorrecta, especialmente en dominios especializados.
-- Inconsistencias en las especificaciones: el tamaño anunciado de 3,3 GB y la ventana de 256K tokens no concuerdan de forma obvia con los 1,54 mil millones de parámetros y el tamaño del repositorio (5,2 GB); conviene verificar la configuración real antes de confiar en esas cifras.
-- Capacidades declaradas sin verificación: visión, tool calling y thinking aparecen listados, pero no se documenta su formato, activación ni calidad; es necesario validarlos empíricamente.
-- Dependencia del runtime Ollama: el despliegue documentado está ligado a Ollama; otras rutas (vLLM, llama.cpp) no están documentadas y podrían requerir conversiones no oficiales.
-- Variante cloud con implicaciones de privacidad: la variante `cloud` procesa las peticiones en un servicio alojado; la model card recomienda revisar los términos de privacidad antes de enviar información confidencial.
-- Fecha de creación futura: los metadatos indican una fecha de creación de 2026-10-16, lo que debe tenerse en cuenta al evaluar la madurez y el historial del repositorio.
+- No hay benchmarks independientes ni datos de entrenamiento publicados; la calidad real del modelo no esta respaldada por evidencia verificable.
+- La model card advierte de que las salidas pueden ser inexactas, incompletas o inconsistentes, con riesgo de alucinacion en tareas factuales.
+- El contexto de 256K procede del listado de Ollama y no se ha verificado contra la configuracion del repositorio; el contexto efectivo podria ser menor.
+- No se documentan los idiomas soportados, por lo que el rendimiento fuera del ingles es incierto.
+- Las capacidades de vision y tool calling deben validarse en la variante concreta desplegada; la model card indica que solo deben usarse cuando la variante seleccionada las soporte.
+- Validar siempre nombres y argumentos de herramientas antes de ejecutar acciones, tal como recomienda el autor.
+- La licencia MIT figura en los metadatos, pero la model card pide comprobar el archivo LICENSE y los terminos de los modelos, codigo y datasets upstream antes de redistribuir o usar comercialmente.
+- No usar las salidas como unica base para decisiones medicas, legales, financieras o de alto impacto.
+- La informacion de gobernanza del proyecto (fundador y CEO identificados como la misma persona) y la ausencia de documentacion tecnica detallada aconsejan tratar el modelo con cautela en entornos de produccion.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/sarath-om/sarath_om-1.1
-- Modelo en Ollama: https://ollama.com/sarath-om/sarath_om-1.1
-- Sitio web oficial: https://sarath.openflip.in/
-- GitHub del proyecto: https://github.com/Sarath-Om
-- Documentación de Ollama Cloud: https://docs.ollama.com/cloud
-- Descarga de Ollama: https://ollama.com/download
+- Perfil del autor en Hugging Face: https://huggingface.co/sarath-om
+- Listado en Ollama: https://ollama.com/sarath-om/sarath_om-1.1
+- Web oficial de Sarath OM: https://sarath.openflip.in/
+- GitHub de Sarath AI: https://github.com/Sarath-Om
+- LinkedIn de Sarath AI: https://www.linkedin.com/company/sarath-ai

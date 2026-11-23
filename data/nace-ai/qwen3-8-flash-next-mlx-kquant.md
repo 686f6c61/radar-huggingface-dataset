@@ -2,96 +2,99 @@
 
 ## Resumen
 
-Qwen3.8-Flash-Next-MLX-KQuant es una cuantizacion de 4 bits del modelo multimodal Qwen3.8-Flash-Next de Alibaba Qwen, empaquetada en formato MLX por el desarrollador independiente nace-ai para su ejecucion en Apple Silicon. El modelo base resuelve tareas de imagen-texto-a-texto (image-text-to-text) con capacidad conversacional y de razonamiento, y esta cuantizacion busca hacer viable su inferencia en Macs de gama alta con memoria unificada de 192 GB o superior.
+Qwen3.8-Flash-Next-MLX-KQuant es una cuantización de 4 bits del modelo Qwen/Qwen3.8-Flash-Next, publicada por nace-ai para su uso en Apple Silicon mediante la librería MLX. El modelo base es un transformer multimodal de tipo image-text-to-text desarrollado por el equipo Qwen (Alibaba), con aproximadamente 180.000 millones de parámetros totales según los pesos en safetensors del repositorio. La versión que nos ocupa no es un modelo nuevo, sino un empaquetado de pesos cuantizados en formato MLX que busca preservar la fidelidad respecto al BF16 original con un tamaño de archivo menor.
 
-El pack emplea una tecnica propietaria de cuantizacion denominada KQuant, que combina grupos de 64 elementos en 4 bits con 696 modulos elevados a 8 bits, logrando una divergencia KL de 0.067 respecto al modelo original en BF16. Segun el autor, esto supone una mejora sustancial frente al empaquetado de 4 bits de mlx-community (KL 0.249) y reduce el peso del modelo de lenguaje en 5.4 GB (105.20 GB frente a 110.62 GB).
+El interés de esta ficha radica en que nace-ai reporta una divergencia KL de 0,067 respecto al modelo BF16 original, frente a 0,249 de la alternativa de mlx-community en 4 bits, con 5,4 GB menos de pesos del modelo de lenguaje (105,20 GB frente a 110,62 GB). Es decir, se trata de una cuantización orientada a mantener la calidad del modelo original reduciendo el espacio en disco, un compromiso relevante para quienes despliegan modelos grandes en Macs con memoria unificada limitada.
 
-El modelo cuenta con aproximadamente 180.000 millones de parametros totales (179.999.981.459 segun los safetensors) y un repositorio de 179.1 GB. Es relevante ahora porque permite ejecutar localmente en hardware Apple un modelo de gran tamano con capacidades multimodales y de razonamiento, aunque con requisitos de memoria muy elevados y un ecosistema de herramientas todavia en maduracion.
+El paquete incluye pesos en 4 bits agrupados en bloques de 64, con 696 módulos elevados a 8 bits, y requiere un mínimo orientativo de 192 GB de RAM en macOS para caber con holgura. La licencia es qwen-community-1.0, lo que condiciona el uso comercial.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | no disponible (modelo base Qwen3.8-Flash-Next; tag qwen4_exp) |
-| Parametros totales | 179.999.981.459 |
-| Parametros activos | no disponible |
+| Arquitectura | Transformer multimodal (image-text-to-text); detalles internos no disponibles |
+| Parámetros totales | 179.999.981.459 (~180B) |
+| Parámetros activos | no disponible |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | 4 bits (grupos de 64) con 696 modulos en 8 bits (grupos de 64 o 128) |
+| Tipos de cuantización | 4 bits en grupos de 64, con 696 módulos a 8 bits (grupos de 64 o 128) |
 | Idiomas soportados | no disponible |
-| Licencia | qwen-community-1.0 (license: other) |
-| Formato de pesos | safetensors (MLX) |
+| Licencia | qwen-community-1.0 (etiquetada como "other") |
+| Formato de pesos | safetensors (MLX), empaquetado para mlx-vlm y Kapitsa |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion detallada sobre la arquitectura interna del modelo base en la informacion proporcionada. El tag `qwen4_exp` sugiere una variante experimental de la familia Qwen4, y el pipeline `image-text-to-text` confirma que se trata de un modelo multimodal que acepta imagenes y texto como entrada. El modelo base es Qwen/Qwen3.8-Flash-Next, desarrollado por Alibaba Qwen.
+La información disponible no detalla la arquitectura interna del modelo base Qwen3.8-Flash-Next más allá de su carácter multimodal (pipeline image-text-to-text) y de que se trata de un transformer. El repositorio de nace-ai se limita a describir el proceso de cuantización: pesos en 4 bits con grupos de 64 y 696 módulos promovidos a 8 bits, presumiblemente aquellos más sensibles a la pérdida de precisión. No se especifican el número de tokens de entrenamiento, la composición del dataset, ni si hubo RLHF, DPO u otras fases de alineamiento en el modelo original.
 
-Esta publicacion es exclusivamente una cuantizacion: no se ha reentrenado el modelo, sino que se han aplicado tecnicas de compresion de pesos. La innovacion tecnica destacable es el esquema KQuant, que combina cuantizacion de 4 bits en grupos de 64 con la promocion selectiva de 696 modulos a 8 bits, reduciendo la perdida de calidad respecto al BF16 original. El autor reporta una divergencia KL de 0.067 frente al modelo en BF16, medida sobre el modelo de lenguaje. No se dispone de informacion sobre el dataset de entrenamiento original, el numero de tokens ni si hubo etapas de RLHF o DPO.
+La innovación técnica destacable de este paquete es la metodología de cuantización de nace-ai, que reporta una KL de 0,067 frente al BF16, muy por debajo de la alternativa de mlx-community (0,249), con un ahorro de 5,4 GB en los pesos del modelo de lenguaje. El autor menciona una herramienta propia, Kapitsa, un motor de inferencia para modelos Qwen en Mac que sirve APIs compatibles con OpenAI, Anthropic y Ollama, y que en su versión 0.2.36 sirve una revisión anterior del repositorio, no los archivos de `Q4/`. El soporte de Kapitsa para `Q4/` llegará en una versión posterior. También se indica que mlx-lm 0.32.2 no puede cargar esta arquitectura todavía, y que la verificación de release se hizo con mlx-vlm 0.7.8 y MLX 0.32.4 sobre CUDA (NVIDIA H200), no sobre un Mac.
 
 ## Capacidades
 
-- Generacion de texto conversacional multi-turno.
-- Procesamiento de imagenes junto con texto (image-text-to-text).
-- Razonamiento con modo "thinking" activado por defecto, con profundidades configurables (`low`, `medium`, `xhigh`).
-- Desactivacion del razonamiento mediante `reasoning_effort: none` o `enable_thinking: false`.
-- Soporte de tool calling / function calling con definiciones compatibles con OpenAI.
-- Integracion con APIs OpenAI, Anthropic y Ollama a traves del motor Kapitsa.
-- Capacidades multilingues: no disponibles en la informacion proporcionada.
-- Generacion de hasta 32.768 tokens de salida en la mayoria de tareas con thinking activado (recomendacion del autor).
+- Generación de texto conversacional multi-turno, con modo de razonamiento ("thinking") activado por defecto.
+- Procesamiento de imagen y texto (image-text-to-text), según el pipeline declarado.
+- Control de profundidad de razonamiento mediante `reasoning_effort` con valores `low`, `medium`, `xhigh` y `none`.
+- Tool calling / function calling con definiciones de herramientas compatibles con la API de OpenAI, incluyendo ida y vuelta completa de llamada y respuesta.
+- Razonamiento multi-paso y uso en agentes, implícito en el soporte de tool calling y del modo thinking.
+- Capacidades matemáticas y de razonamiento general, ejemplificadas en la model card con operaciones aritméticas.
+- Servido mediante APIs compatibles con OpenAI, Anthropic y Ollama a través de Kapitsa.
+- Capacidades multilingües: no disponibles en la información proporcionada.
 
 ## Casos de uso
 
-- Asistencia conversacional local en Mac: el modelo puede mantener conversaciones multi-turno con razonamiento profundo, adecuado para usuarios que requieren privacidad y no quieren enviar datos a la nube, gracias a su ejecucion local via Kapitsa o mlx-vlm.
-- Analisis de imagenes con descripcion textual: al ser un modelo image-text-to-text, permite extraer informacion de capturas, documentos escaneados o fotografias y generar resumenes o respuestas contextualizadas.
-- Agentes con tool calling: la integracion con definiciones de herramientas estilo OpenAI permite construir agentes que consulten APIs externas (por ejemplo, meteorologia, bases de datos) y encadenen llamadas dentro de un flujo multi-paso.
-- Razonamiento matematico y resolucion de problemas: el modo thinking con profundidades configurables permite ajustar el esfuerzo computacional segun la complejidad de la tarea (por ejemplo, calculos como 17 * 23 con verificacion intermedia).
-- Prototipado de aplicaciones multimodales en Apple Silicon: desarrolladores que quieran validar pipelines de vision-lenguaje sin depender de GPUs NVIDIA pueden usar mlx-vlm con este pack.
-- Despliegue de API compatible con OpenAI en local: mediante `kapitsa serve` se puede exponer un endpoint `/v1/chat/completions` para integrar el modelo en herramientas existentes que ya hablan el protocolo OpenAI.
-- Investigacion sobre cuantizacion: el pack sirve como referencia para estudiar el impacto de KQuant frente a otras tecnicas (mlx-community 4-bit, TensorFold 4-bit, TensorFold oQ4-MTP) en terminos de divergencia KL.
+- Asistente conversacional local en Mac: el paquete está pensado para ejecutarse en Apple Silicon con memoria unificada de 192 GB o más, sirviendo una página de chat y APIs compatibles con OpenAI, Anthropic y Ollama mediante Kapitsa, lo que permite integrarlo en herramientas existentes sin cambiar de SDK.
+- Automatización de agentes con herramientas: gracias al soporte de tool calling con el SDK de OpenAI, se puede construir un agente que consulte APIs externas (por ejemplo, meteorología, bases de datos internas) y combine los resultados en una respuesta final, como muestra el ejemplo de la model card con `get_weather`.
+- Razonamiento profundo con control de coste: el parámetro `reasoning_effort` permite ajustar la profundidad del pensamiento entre `low`, `medium` y `xhigh`, útil para tareas de análisis que requieren más cómputo frente a consultas rápidas donde conviene desactivar el thinking.
+- Procesamiento de documentos con imagen y texto: al ser un modelo image-text-to-text, puede emplearse para extraer información de capturas, formularios o figuras combinadas con instrucciones textuales, aunque la información disponible no detalla la resolución o el formato de imagen soportado.
+- Evaluación de cuantizaciones en investigación: la métrica KL reportada frente a BF16 convierte este paquete en un punto de referencia para estudiar el impacto de distintas estrategias de cuantización (grupos de 64, módulos mixtos a 8 bits) en modelos de gran tamaño.
+- Despliegue de un modelo de ~180B en hardware de consumo de gama alta: con 107,6 GB de descarga y un requisito orientativo de 192 GB de RAM, es viable en Mac Studio con memoria unificada suficiente, evitando clústeres de GPUs dedicadas.
+- Generación de código y matemáticas en local: el modo thinking y las configuraciones de muestreo recomendadas (temperature 1.0, top_p 0.95, top_k 20 en modo thinking) permiten usar el modelo para tareas de programación y cálculo sin depender de servicios en la nube.
 
 ## Benchmarks y rendimiento
 
-| Metrica | Nace Q4 (este repo) | mlx-community 4-bit | BF16 original |
-|---|---|---|---|
-| Divergencia KL respecto a BF16 (modelo de lenguaje) | 0.067 | 0.249 | 0 (referencia) |
-| Peso del modelo de lenguaje | 105.20 GB | 110.62 GB | no disponible |
-| Tamano de descarga | 107.6 GB | no disponible | no disponible |
+No se han publicado resultados de benchmarks en la información disponible. La única métrica reportada es la divergencia KL respecto al modelo BF16 original:
 
-No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K, etc.) en la informacion disponible. La unica metrica de calidad reportada es la divergencia KL frente al modelo en BF16.
+| Paquete | KL frente a BF16 | Tamaño de pesos del modelo de lenguaje |
+|---|---|---|
+| Nace Q4 (este repositorio) | 0,067 | 105,20 GB |
+| mlx-community 4-bit | 0,249 | 110,62 GB |
 
 ## Requisitos de hardware
 
-- VRAM/memoria unificada estimada: el autor indica que el pack encaja en Macs con 192 GB de memoria unificada o superior (regla aproximada: el menor tamano de RAM cuyo reparto por defecto de GPU en macOS aloje la descarga mas 2 GB para una conversacion).
-- GPU recomendadas: Apple Silicon con memoria unificada de 192 GB o mas (por ejemplo, Mac Studio o Mac Pro de gama alta). El autor probo la carga en una NVIDIA H200 con CUDA mediante mlx-vlm 0.7.8 y MLX 0.32.4, pero no en un Mac.
-- Cabe en consumer GPU: no, por el tamano del pack (107.6 GB de descarga, 179.1 GB de repositorio). No es viable en GPUs de consumo convencionales.
-- Opciones de despliegue: mlx-vlm 0.7.8 (con MLX 0.32.4), motor Kapitsa 0.2.36 (con soporte para la revision anterior `8fda1047`; el soporte de `Q4/` llegara en una version posterior). mlx-lm 0.32.2 no puede cargar esta arquitectura todavia.
-- Latencia y throughput: no disponibles. El autor no reporta mediciones en Mac.
+- Descarga total: 107,6 GB de archivos para el checkpoint `Q4/`.
+- RAM orientativa: 192 GB o más en macOS, calculado como el tamaño de RAM más pequeño cuya cuota de GPU por defecto en macOS aloja la descarga más 2 GB para una conversación. Es una regla empírica, no una medición.
+- Kapitsa puede requerir un escalón menos de RAM al omitir partes que no utiliza; `kapitsa doctor` comprueba un Mac concreto.
+- GPU: la verificación de release se realizó en una NVIDIA H200 (CUDA) con mlx-vlm 0.7.8 y MLX 0.32.4; no se ha probado en un Mac según la model card.
+- En GPUs de consumo (RTX 4090, etc.) no hay datos de viabilidad; el paquete está orientado a Apple Silicon con memoria unificada.
+- Opciones de despliegue: mlx-vlm 0.7.8 (carga y generación), Kapitsa 0.2.36 (sirve una revisión anterior, no `Q4/`; soporte de `Q4/` en versión posterior), APIs compatibles con OpenAI, Anthropic y Ollama mediante Kapitsa. mlx-lm 0.32.2 no puede cargar esta arquitectura.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Divergencia KL a BF16 | Licencia | Disponibilidad |
+| Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Nace Q4 (este repo) | ~180B | no disponible | 0.067 | qwen-community-1.0 | Hugging Face (MLX) |
-| mlx-community 4-bit | no disponible | no disponible | 0.249 | no disponible | Hugging Face (MLX) |
-| TensorFold 4-bit | no disponible | no disponible | no disponible | no disponible | Hugging Face (MLX) |
-| TensorFold oQ4-MTP | no disponible | no disponible | no disponible | no disponible | Hugging Face (MLX) |
+| nace-ai/Qwen3.8-Flash-Next-MLX-KQuant (este) | ~180B | no disponible | 4 bits MLX, KL 0,067 | qwen-community-1.0 | Hugging Face, 1688 descargas |
+| mlx-community 4-bit (Qwen3.8-Flash-Next) | ~180B (base) | no disponible | 4 bits MLX, KL 0,249 | según modelo base | Hugging Face |
+| TensorFold 4-bit (Qwen3.8-Flash-Next) | ~180B (base) | no disponible | 4 bits MLX | según modelo base | Hugging Face |
+| TensorFold oQ4-MTP (Qwen3.8-Flash-Next) | ~180B (base) | no disponible | 4 bits MLX | según modelo base | Hugging Face |
 
-Los tres comparadores son empaquetados MLX del mismo modelo base Qwen3.8-Flash-Next. No se dispone de datos de parametros, contexto ni licencia para ellos en la informacion proporcionada.
+Los datos de parámetros y contexto de las alternativas no están detallados en la información proporcionada; se asume el mismo modelo base Qwen3.8-Flash-Next. La comparativa se limita, por tanto, a la métrica KL y al tamaño de los pesos.
 
 ## Limitaciones y advertencias
 
-- Requisito de memoria muy elevado: necesita 192 GB o mas de memoria unificada en Apple Silicon, lo que limita su uso a equipos de gama muy alta.
-- Ecosistema inmaduro: mlx-lm 0.32.2 no puede cargar la arquitectura; otras aplicaciones MLX no han sido probadas. El soporte de Kapitsa para `Q4/` aun no esta disponible en la version 0.2.36.
-- No verificado en Mac: la prueba de release se ejecuto en una NVIDIA H200 con CUDA, no en hardware Apple, por lo que el rendimiento real en Mac no esta confirmado.
-- Riesgo de alucinacion: no se reportan evaluaciones especificas; al ser una cuantizacion, puede introducir degradaciones adicionales respecto al BF16, aunque la divergencia KL reportada es baja.
-- Idiomas soportados: no disponibles; no se puede confirmar cobertura multilingue.
-- Licencia qwen-community-1.0: es una licencia "other" que puede imponer restricciones al uso comercial; es necesario revisar el archivo LICENSE antes de desplegar en produccion.
-- Penalizaciones altas de presencia pueden provocar mezcla de idiomas segun el autor.
-- El modelo piensa antes de responder por defecto, lo que incrementa el consumo de tokens y la latencia si no se desactiva el modo thinking.
+- La licencia qwen-community-1.0 impone condiciones específicas para uso comercial; es necesario revisar el archivo LICENSE antes de desplegar en producción.
+- El paquete es una cuantización de 4 bits: aunque la KL reportada es baja (0,067), existe una degradación respecto al BF16 original que puede manifestarse en tareas sensibles a la precisión.
+- mlx-lm 0.32.2 no puede cargar esta arquitectura; otras aplicaciones MLX distintas de mlx-vlm no han sido probadas.
+- La verificación de release se hizo en CUDA (H200), no en un Mac; el rendimiento real en Apple Silicon no está medido en la información disponible.
+- Kapitsa 0.2.36 sirve una revisión anterior del repositorio, no los archivos de `Q4/`; quien use Kapitsa debe esperar una versión posterior para este checkpoint.
+- El requisito de 192 GB de RAM es una regla orientativa, no una medición; puede fallar en configuraciones límite.
+- No se dispone de información sobre sesgos, idiomas soportados ni tasas de alucinación del modelo base.
+- El tamaño de descarga (107,6 GB) y el requisito de memoria limitan su uso a equipos de gama muy alta.
+- El modo thinking está activado por defecto y consume tokens de salida adicionales; conviene ajustar `reasoning_effort` o desactivarlo según la tarea.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/nace-ai/Qwen3.8-Flash-Next-MLX-KQuant
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
-- Practicas recomendadas del modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next#best-practices
-- Revision anterior soportada por Kapitsa: https://huggingface.co/nace-ai/Qwen3.8-Flash-Next-MLX/tree/8fda104737236c4bbe1d6fb2784fb499ffd0a4cd
+- Mejores prácticas del modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next#best-practices
 - Motor Kapitsa: https://github.com/nace-ai/kapitsa
+- Revisión anterior servida por Kapitsa 0.2.36: https://huggingface.co/nace-ai/Qwen3.8-Flash-Next-MLX/tree/8fda104737236c4bbe1d6fb2784fb499ffd0a4cd
+- Assets de la model card (gráfica KL): https://huggingface.co/nace-ai/Qwen3.8-Flash-Next-MLX/resolve/main/assets/nace-dark.svg

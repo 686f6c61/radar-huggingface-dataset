@@ -1,0 +1,66 @@
+{
+  "schema": 2,
+  "id": "khb2439/2026-11-23",
+  "slug": "khb2439-2026-11-23",
+  "author": "khb2439",
+  "url": "https://huggingface.co/khb2439/2026-11-23",
+  "created_at": "2026-11-23T01:56:44.000Z",
+  "updated_at": "2026-11-23T02:06:19.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "piper",
+  "languages": [],
+  "tags": [
+    "piper",
+    "safetensors",
+    "robotics",
+    "gr00t",
+    "base_model:nvidia/GR00T-N1.7-3B",
+    "base_model:finetune:nvidia/GR00T-N1.7-3B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 27641997664,
+  "storage_human": "27.6 GB",
+  "context_length": null,
+  "base_model": "nvidia/GR00T-N1.7-3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "McDonald's Menu With Prices of October 2026",
+      "url": "https://mcd-menu.com/",
+      "snippet": "Nov 16, 2026 · Get the Latest McDonald's Menu in USA with prices, Nutrition and Recipes of 2024. Also, McDonald's Menu Prices in …Read more"
+    },
+    {
+      "title": "McDonald's Menu Prices UK (2026) - Full Menu & Calories",
+      "url": "https://www.mcdonalds-menuprices.co.uk/",
+      "snippet": "6 days ago · Browse McDonald's UK menu prices for 2026 - burgers, breakfast, meals, saver deals, McCafé, desserts and drinks, …Read more"
+    },
+    {
+      "title": "McDonald's United Kingdom Menu & Prices (2026)",
+      "url": "https://pricemymeal.com/mcdonalds/united-kingdom/",
+      "snippet": "Aug 13, 2026 · Full McDonald's United Kingdom menu with prices in GBP and USD. Compare Big Mac, and 85+ items. Updated …Read more"
+    },
+    {
+      "title": "McDonald’s Menu with Prices USA: Updated Full Menu Nov 2026",
+      "url": "https://macdomenuprices.com/",
+      "snippet": "McDonald's Menu USA: Prices and Calories for Every Item (November 2026) Here is the full McDonald's menu in the US with a price …Read more"
+    }
+  ]
+}

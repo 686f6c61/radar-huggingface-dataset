@@ -53,31 +53,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "CloudSurf — Software that ships.",
-      "url": "https://cloudsurfsoftware.com/",
-      "snippet": "Surfspace puts docs, tasks, and knowledge in one AI workspace. Surfy is the AI agent that builds with you. Built with Rust, deployed on Fly.io."
-    },
-    {
-      "title": "CloudSurf — Experience Better Software",
-      "url": "https://www.cloudsurf.cc/",
-      "snippet": "CloudSurf builds conversion-first software and subscription products: WaveSite, TaskSurf, and NoteSurf. Launch fast, capture leads, and scale with clean operations."
-    },
-    {
-      "title": "GitHub - cloudsurf-ai/cloudsurf · GitHub",
-      "url": "https://github.com/cloudsurf-ai/cloudsurf",
-      "snippet": "What is CloudSurf? CloudSurf is a browser assistant that can help you perform tasks on the web. It&#x27;s particularly useful for tasks that would take you 1-5 minutes to do manually or tasks which are repetitive in nature. The extension controls your browser on your behalf, performing actions as if you were doing them yourself."
-    },
-    {
-      "title": "CloudSurf - GitHub",
-      "url": "https://github.com/cloudsurf-software",
-      "snippet": "cloudsurf-db Public PostgreSQL connection pool with exponential backoff retry for Fly.io Rust 0 MIT 0 0 0 Updated on Mar 29 homebrew-tap Public Homebrew tap for CloudSurf CLI tools Ruby 0 0 0 0 Updated on Mar 23 surfdoc-vscode Public VS Code extension for SurfDoc (.surf) — syntax highlighting, snippets, file icons 0 MIT 0 0 0 Updated on Feb 22"
-    },
-    {
-      "title": "Home Page - Cloudsurf Asia Simulations",
-      "url": "https://cloudsurfasia-simulations.com/",
-      "snippet": "ABOUT US Cloudsurf Asia Simulations is an independent developer headquartered in Philippines specializes on airport visualization & simulation based on real life geographic data. Using cutting edge technologies and its expertise in 3D Modelling and Programming; Cloudsurf Asia Simulations delivers first-class products providing maximum realism in flight simulation platforms. Registration No ..."
-    }
-  ]
+  "sources": []
 }

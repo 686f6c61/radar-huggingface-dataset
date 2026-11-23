@@ -2,99 +2,97 @@
 
 ## Resumen
 
-KORMo-Web-11B es un modelo vision-lenguaje de 10.756.624.384 parámetros (aproximadamente 11B) desarrollado por KAIST MLP Lab y orientado a tareas de agente web y de interfaz gráfica (GUI agent, web agent). Esta ficha concreta, publicada por Xylolabs, es la conversión a formato GGUF del checkpoint original `KORMo-VL/KORMo-Web-11B`, pensada para ejecutarse en llama.cpp sobre CUDA, Metal o CPU. El modelo acepta entradas de imagen y texto (`image-text-to-text`), lo que le permite interpretar capturas de pantalla de páginas web o de interfaces y razonar sobre ellas.
+KORMo-Web-11B-GGUF es la versión cuantizada en formato GGUF del modelo multimodal KORMo-Web-11B, desarrollado originalmente por KAIST MLP Lab y convertido a GGUF por Xylolabs. Se trata de un modelo de tipo image-text-to-text especializado en interacción con interfaces web y agentes GUI: recibe capturas de pantalla o imágenes de páginas junto con instrucciones en lenguaje natural y genera respuestas o acciones. Con 10.756.624.384 parámetros (aproximadamente 10,76 mil millones), está pensado para ejecutarse localmente mediante llama.cpp en CUDA, Metal o CPU.
 
-La relevancia de esta versión radica en que traslada un modelo de agente web de 11B a un formato cuantizado y ejecutable en hardware de consumo, con cuantizaciones que van de 11,44 GB (Q8_0) a 4,98 GB (IQ3_M). La cuantización Q4_K_M, la más habitual en despliegues prácticos, ocupa 6,56 GB y mantiene un top-1 del 92,57 % respecto al BF16 de referencia, con una divergencia KL media de 0,0262.
+La relevancia de esta ficha radica en que permite desplegar un agente web multimodal de ~11B en hardware de consumo, algo poco habitual en modelos de esta categoría. El repositorio incluye ocho niveles de cuantización (desde Q8_0 de 11,44 GB hasta IQ3_M de 4,98 GB), dos proyectores de visión (F16 y Q8_0) y una importance matrix para cuantización con imatrix. El modelo soporta coreano e inglés, emplea licencia Apache-2.0 y activa por defecto un modo de razonamiento (thinking) que puede desactivarse por parámetro.
 
-El modelo base está entrenado para razonar por defecto (modo thinking), soporta coreano e inglés y se distribuye bajo licencia Apache 2.0. La conversión a GGUF es obra de Xylolabs, que no está afiliada a KAIST MLP Lab. Para usar la parte de visión es necesario aplicar un parche (`llava-onevision.patch`) sobre un commit concreto de llama.cpp, ya que la versión estándar solo ejecuta el modelo de texto.
+La versión GGUF requiere aplicar un parche específico (`llava-onevision.patch`) sobre un commit concreto de llama.cpp para que el proyector de visión funcione, lo que condiciona su integración en producción. El modelo base es KORMo-VL/KORMo-Web-11B y esta conversión no está afiliada ni respaldada por KAIST MLP Lab.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (modelo vision-lenguaje con proyector LLaVA-OneVision; detalles del transformer no especificados) |
-| Parámetros totales | 10.756.624.384 (~11B) |
-| Parámetros activos | no aplica (no se indica que sea MoE) |
-| Longitud de contexto | 32.768 tokens (según el ejemplo de ejecución con `-c 32768`) |
-| Tipos de cuantización | Q8_0, Q6_K, Q5_K_M, Q4_K_M, Q4_K_S, IQ3_M; proyector de visión en F16 y Q8_0 |
+| Arquitectura | no disponible (modelo multimodal image-text-to-text; el repositorio no detalla la arquitectura interna) |
+| Parametros totales | 10.756.624.384 (~10,76 B) |
+| Parametros activos | no aplica (no se indica que sea MoE) |
+| Longitud de contexto | 32.768 tokens (valor usado en los comandos de ejemplo con `-c 32768`) |
+| Tipos de cuantizacion | Q8_0, Q6_K, Q5_K_M, Q4_K_M, Q4_K_S, IQ4_XS, Q3_K_M, IQ3_M; proyectores de visión en F16 y Q8_0 |
 | Idiomas soportados | coreano (ko), inglés (en) |
-| Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (llama.cpp); proyector de visión en GGUF separado (`mmproj`) |
+| Licencia | Apache-2.0 |
+| Formato de pesos | GGUF (llama.cpp); proyectores mmproj en GGUF |
 
 ## Arquitectura y entrenamiento
 
-La información disponible no detalla la arquitectura interna del transformer del modelo base ni la composición del dataset de entrenamiento. Lo que sí se documenta es que se trata de un modelo vision-lenguaje que incorpora el proyector de visión de LLaVA-OneVision (`llava_onevision`), añadido a llama.cpp mediante un parche específico. El modelo está diseñado como agente web y de GUI, por lo que se infiere un entrenamiento orientado a interacción con páginas e interfaces, aunque no se especifican el número de tokens, la mezcla del corpus ni si hubo fases de RLHF o DPO.
+El repositorio no proporciona detalles sobre la arquitectura interna del modelo base (tipo de transformer, composición del dataset, número de tokens de entrenamiento ni si hubo RLHF/DPO). Lo que sí se documenta es que se trata de un modelo multimodal image-text-to-text con un proyector de visión separado, empaquetado como `mmproj-KORMo-Web-11B-F16.gguf` (871,52 MB) o `mmproj-KORMo-Web-11B-Q8_0.gguf` (592,85 MB). El proyector sigue el esquema llava-onevision, de ahí que sea necesario aplicar `llava-onevision.patch` sobre el commit `e4b620af19f02960dea7a3a81de7c5805aa3a333` de llama.cpp para habilitar la entrada visual.
 
-En cuanto al proceso de cuantización, Xylolabs convirtió el checkpoint BF16 a GGUF con `convert_hf_to_gguf.py` y generó el proyector de visión con `--mmproj`. La matriz de importancia se construyó con `llama-imatrix` (`--parse-special --process-output`) sobre 1.790 fragmentos de 512 tokens con formato de chat en inglés, coreano, código y matemáticas, más texto plano en inglés y coreano. Cada cuantización se generó con `llama-quantize` usando dicha matriz, salvo Q8_0. El modelo piensa por defecto; se puede desactivar el modo thinking con `--chat-template-kwargs '{"enable_thinking":false}'`.
+En cuanto al proceso de cuantización, Xylolabs publica una importance matrix (`KORMo-Web-11B.imatrix.gguf`, 13,23 MB) y métricas de fidelidad frente a BF16: divergencia KL media y acuerdo top-1 sobre tres conjuntos (WikiText-2, chat y held-out). Los archivos Q6_K, Q5_K_M, Q4_K_M y Q4_K_S fueron reconstruidos el 2026-11-20, y el IQ3_M se rehízo el 2026-11-22 con menor tamaño (4,98 GB) y mejores métricas. El modelo activa por defecto el modo thinking, que puede desactivarse con `--chat-template-kwargs '{"enable_thinking":false}'`.
 
 ## Capacidades
 
-- Generación de texto y razonamiento con modo thinking activado por defecto.
-- Comprensión de imágenes: interpretación de capturas de pantalla de páginas web e interfaces gráficas.
-- Actuación como agente web y GUI: razonamiento sobre el estado visual de una interfaz para decidir acciones.
-- Soporte de conversación multi-turno con plantilla de chat incluida en el GGUF.
+- Generación de texto y razonamiento multimodal: procesa imágenes (capturas de pantalla, páginas web) junto con instrucciones textuales.
+- Agente web y GUI: etiquetado explícito como `gui-agent` y `web-agent`, orientado a interpretar interfaces y decidir acciones.
+- Modo thinking activado por defecto, desactivable mediante parámetro de plantilla de chat.
+- Conversación multi-turno (`conversational` en los tags).
+- Soporte de plantilla de chat Jinja (`--jinja` en los comandos de ejemplo).
 - Capacidades multilingües limitadas a coreano e inglés.
-- Ejecución en llama.cpp con soporte de CUDA, Metal y CPU.
-- Compatibilidad con endpoints (`endpoints_compatible` según los tags del repositorio).
-- No se documenta soporte explícito de tool calling, function calling, audio ni otros modos especiales más allá del thinking.
+- Soporte de tool calling / function calling: no disponible en la información proporcionada.
+- Soporte de audio: no disponible.
 
 ## Casos de uso
 
-- Automatización de navegación web: el modelo puede analizar capturas de páginas y decidir el siguiente clic o campo a rellenar, adecuado para pipelines de agentes web que necesitan comprensión visual del estado de la página.
-- Testing de interfaces gráficas: dado que interpreta capturas de pantalla, puede usarse para verificar visualmente el estado de una UI tras una acción y detectar regresiones en flujos de usuario.
-- Asistencia en tareas de scraping guiado: combinando imagen y texto, permite extraer información de páginas cuyo DOM es complejo o dinámico, razonando sobre lo que se ve en pantalla.
-- Despliegue en hardware de consumo: con la cuantización Q4_K_M (6,56 GB) puede ejecutarse en GPUs de gama alta para consumidores, lo que facilita prototipos de agentes web sin infraestructura de servidor.
-- Documentación y descripción de pantallas: el modelo puede describir el contenido de una captura, útil para generar descripciones accesibles o resúmenes de páginas.
-- Evaluación de agentes en local: al ser GGUF y ejecutable con llama.cpp, sirve para reproducir experimentos de agentes web en entornos aislados sin depender de APIs externas.
-- Soporte bilingüe coreano-inglés: aplicable a productos dirigidos a ambos mercados que requieran interacción visual con contenido web en esos idiomas.
+- Automatización de tareas web: el modelo puede recibir una captura de pantalla de una página y una instrucción ("rellena este formulario", "encuentra el botón de envío") y devolver la descripción o acción correspondiente, gracias a su naturaleza de agente GUI y a su proyector de visión llava-onevision.
+- Testing de interfaces: integrado en pipelines de QA para describir el estado visual de una página y detectar regresiones de UI comparando capturas con la respuesta esperada.
+- Asistencia a usuarios en coreano e inglés: despliegue local en atención al cliente que necesite interpretar capturas enviadas por el usuario y responder en su idioma.
+- Extracción de información de documentos visuales: dado que procesa imágenes, puede describir el contenido de una página o documento renderizado como imagen mediante `llama-mtmd-cli --image page.png`.
+- Despliegue en hardware de consumo: con la cuantización IQ3_M (4,98 GB) o Q4_K_M (6,56 GB) cabe en GPUs de consumo, lo que permite prototipar agentes web sin infraestructura cloud.
+- Investigación sobre agentes multimodales: al estar en Apache-2.0 y en GGUF, sirve como base reproducible para experimentos de razonamiento visual en local con llama.cpp.
+- Procesamiento por lotes en CPU: llama.cpp permite ejecutar el modelo sin GPU, útil para tareas de descripción de páginas a baja escala.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks de tareas (MMLU, HumanEval, GSM8K, etc.) en la información disponible. Los únicos datos de rendimiento publicados son métricas de cuantización frente al BF16 de referencia, medidas sobre wikitext-2 (80 fragmentos de 512 tokens, evaluando las posiciones 256 a 511, 20.400 tokens en total):
+No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, etc.) en la información disponible. El autor sí publica métricas de fidelidad de cuantización frente a BF16 (divergencia KL media, menor es mejor; y acuerdo top-1):
 
-| Cuantización | Tamaño | PPL | KL media vs BF16 | Mismo top-1 vs BF16 |
-|---|---|---|---|---|
-| Q8_0 | 11,44 GB | 11,7514 | 0,0014 | 98,30 % |
-| Q6_K | 8,83 GB | 11,7583 | 0,0061 | 96,44 % |
-| Q5_K_M | 7,66 GB | 11,7942 | 0,0100 | 95,16 % |
-| Q4_K_M | 6,56 GB | 11,8784 | 0,0262 | 92,57 % |
-| Q4_K_S | 6,23 GB | 11,8347 | 0,0281 | 92,49 % |
-| IQ3_M | 4,98 GB | 12,0083 | 0,0928 | 86,69 % |
-
-El BF16 de referencia tiene una PPL de 11,7595 y fue validado contra transformers en f32 (KL 0,00003, top-1 99,71 %).
+| Cuantizacion | Tamano | WikiText-2 KL | top-1 | Chat KL | top-1 | Held-out KL | top-1 |
+|---|---:|---:|---:|---:|---:|---:|---:|
+| Q8_0 | 11,44 GB | 0,001357 | 98,30% | 0,004699 | 98,40% | 0,000973 | 98,52% |
+| Q6_K | 8,83 GB | 0,002771 | 97,58% | 0,006418 | 97,77% | 0,002077 | 97,82% |
+| Q5_K_M | 7,66 GB | 0,006964 | 95,99% | 0,010319 | 96,52% | 0,004865 | 96,88% |
+| Q4_K_M | 6,56 GB | 0,016915 | 94,06% | 0,028158 | 94,45% | 0,013323 | 94,48% |
+| Q4_K_S | 6,23 GB | 0,022264 | 93,11% | 0,034518 | 93,80% | 0,017122 | 93,84% |
+| IQ4_XS | 5,90 GB | 0,027927 | 92,33% | 0,042670 | 92,99% | 0,021583 | 92,86% |
+| Q3_K_M | 5,31 GB | 0,051346 | 89,69% | 0,070909 | 90,91% | 0,038036 | 90,66% |
+| IQ3_M | 4,98 GB | 0,085897 | 87,25% | 0,127902 | 87,67% | 0,067227 | 88,11% |
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: aproximadamente el tamaño del archivo GGUF más el proyector de visión (0,87 GB en F16 o 0,59 GB en Q8_0). Con Q4_K_M y proyector F16, en torno a 7,4 GB; con Q8_0, unos 12,3 GB.
-- GPU recomendadas: para Q8_0, GPUs con 16 GB o más (RTX 4080/4090, A100, H100). Para Q4_K_M, GPUs de 8-12 GB pueden ser suficientes según el contexto y el offloading.
-- Cabe en GPU de consumo: sí, con cuantizaciones Q4_K_M, Q4_K_S e IQ3_M en GPUs de 8 GB o más; Q6_K y Q5_K_M requieren alrededor de 10-12 GB.
-- Opciones de despliegue: llama.cpp (`llama-server`, `llama-mtmd-cli`) con el parche `llava-onevision.patch` aplicado sobre el commit `e4b620af19f02960dea7a3a81de7c5805aa3a333`. Para la parte de texto funciona llama.cpp estándar; para visión es obligatorio el parche.
-- Latencia y throughput: no disponibles en la información proporcionada.
+- VRAM estimada para inferencia: aproximadamente el tamaño del archivo GGUF más el proyector de visión. Con Q4_K_M (6,56 GB) y mmproj F16 (871,52 MB) se ronda los 7,5 GB; con IQ3_M (4,98 GB) y mmproj Q8_0 (592,85 MB), unos 5,6 GB.
+- GPU recomendadas: el repositorio cita compilación con `-DGGML_CUDA=ON` para NVIDIA y soporte de Metal; no se especifican modelos concretos de GPU.
+- Cabe en GPU de consumo: sí, con cuantizaciones Q4_K_M, Q4_K_S, IQ4_XS, Q3_K_M o IQ3_M en tarjetas con 8 GB o más de VRAM.
+- Opciones de despliegue: llama.cpp (`llama-server` y `llama-mtmd-cli`) con el parche `llava-onevision.patch` aplicado sobre el commit `e4b620af19f02960dea7a3a81de7c5805aa3a333`. No se mencionan vLLM, Ollama ni TGI en la información disponible.
+- Contexto en ejecución: los comandos de ejemplo usan `-c 32768` y `-ngl 99`.
+- Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos de benchmarks ni de especificaciones de modelos comparables en la información proporcionada, por lo que no es posible establecer una comparativa rigurosa con alternativas de la misma categoría (agentes web vision-lenguaje de ~11B). Los datos disponibles solo permiten comparar internamente las distintas cuantizaciones de este mismo modelo.
-
-| Modelo | Parámetros | Contexto | Licencia | Formato | Disponibilidad |
-|---|---|---|---|---|---|
-| KORMo-Web-11B (GGUF) | ~11B | 32.768 | Apache 2.0 | GGUF | Hugging Face (Xylolabs) |
-| Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
+No disponible. La información proporcionada no incluye modelos comparables de la misma categoría (agentes web multimodales de ~11B) con datos de parámetros, contexto o rendimiento que permitan una comparación rigurosa.
 
 ## Limitaciones y advertencias
 
-- Sesgos conocidos: no documentados en la información disponible; al estar entrenado principalmente en coreano e inglés, el rendimiento en otros idiomas puede degradarse.
-- Riesgo de alucinación: no cuantificado; como modelo generativo aplicado a interpretación de interfaces, puede describir elementos que no están presentes en la captura.
-- Limitaciones de contexto e idioma: contexto de 32.768 tokens según el ejemplo de ejecución; solo coreano e inglés declarados.
-- Restricciones de licencia: Apache 2.0 permite uso comercial, pero debe conservarse el archivo `LICENSE` y las atribuciones del `NOTICE`, que nombra el modelo fuente y su titular de copyright.
-- La parte de visión requiere aplicar un parche sobre un commit concreto de llama.cpp; sin él, solo funciona el modelo de texto. Esto añade fricción de despliegue y riesgo de incompatibilidad con versiones futuras.
-- El modelo piensa por defecto, lo que aumenta la latencia; es necesario desactivar el thinking explícitamente si se busca respuesta directa.
-- Xylolabs no está afiliada a KAIST MLP Lab; la sección original de la model card describe el checkpoint base, no los archivos GGUF.
-- Las métricas de cuantización se midieron solo sobre wikitext-2; no reflejan necesariamente el rendimiento en tareas de agente web o visión.
+- Idiomas limitados a coreano e inglés; no se documenta soporte de castellano.
+- No hay benchmarks estándar publicados, por lo que el rendimiento en tareas de razonamiento, código o matemáticas no está verificado.
+- El proyector de visión exige aplicar un parche a un commit concreto de llama.cpp; sin él, solo funciona el modelo de texto. Esto complica la integración y el mantenimiento en producción.
+- El modo thinking está activado por defecto y añade latencia si no se desactiva explícitamente.
+- Riesgo de alucinación: no cuantificado en la información disponible; es un riesgo inherente a modelos generativos sin métricas publicadas.
+- Sesgos conocidos: no documentados en la información disponible.
+- Licencia Apache-2.0 permite uso comercial, pero Xylolabs aclara que no está afiliada ni respaldada por KAIST MLP Lab; conviene revisar `NOTICE` y `LICENSE` del repositorio.
+- Las cuantizaciones agresivas (IQ3_M, Q3_K_M) degradan notablemente la fidelidad: IQ3_M baja al 87,25% de acuerdo top-1 en WikiText-2 frente al 98,30% de Q8_0.
+- El repositorio ocupa 58,4 GB; conviene descargar solo la cuantización necesaria.
 
 ## Enlaces
 
 - Repositorio GGUF: https://huggingface.co/Xylolabs/KORMo-Web-11B-GGUF
 - Modelo base: https://huggingface.co/KORMo-VL/KORMo-Web-11B
 - Licencia: https://huggingface.co/Xylolabs/KORMo-Web-11B-GGUF/blob/main/LICENSE
-- llama.cpp (commit de referencia): https://github.com/ggml-org/llama.cpp/tree/e4b620af19f02960dea7a3a81de7c5805aa3a333
-- Repositorio de Xylolabs (assets y herramientas): https://github.com/XylolabsInc/tensix-bfp-gptq
+- llama.cpp (commit referenciado): https://github.com/ggml-org/llama.cpp/tree/e4b620af19f02960dea7a3a81de7c5805aa3a333
+- Parche de visión: https://huggingface.co/Xylolabs/KORMo-Web-11B-GGUF/resolve/main/llava-onevision.patch
+- Repositorio de Xylolabs: https://github.com/XylolabsInc/tensix-bfp-gptq

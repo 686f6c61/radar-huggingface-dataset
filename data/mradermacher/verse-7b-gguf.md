@@ -2,116 +2,91 @@
 
 ## Resumen
 
-VERSE-7B-GGUF es la version cuantizada en formato GGUF del modelo VERSE-7B, publicado por el usuario mradermacher a partir de los pesos originales de Aeronix-zzz/VERSE-7B. Se trata de un modelo de vision-lenguaje (VLM) de aproximadamente 7.615 millones de parametros, etiquetado por su autor como especializado en razonamiento espacial (spatial-reasoning), con linaje arquitectonico de la familia Qwen2.5-VL y un proceso de ajuste que incluye tecnicas de auto-evolucion (self-evolve) y aprendizaje por refuerzo con GRPO.
+VERSE-7B-GGUF es la versión cuantizada en formato GGUF del modelo VERSE-7B, desarrollado originalmente por Aeronix-zzz y convertido a GGUF por mradermacher. Se trata de un modelo de lenguaje y visión (vision-language) construido sobre la arquitectura Qwen2.5-VL, con aproximadamente 7.615 millones de parámetros (7,6B) y orientado explícitamente al razonamiento espacial (spatial reasoning). Su licencia Apache 2.0 permite uso comercial sin restricciones adicionales, lo que lo hace atractivo para integraciones en producto.
 
-El repositorio no aporta pesos en safetensors ni un README propio del modelo original: es un repositorio de conversion, cuyo valor practico es permitir la ejecucion local del modelo en hardware de consumo mediante llama.cpp y derivados. Ofrece un abanico amplio de cuantizaciones (desde Q2_K de 3,1 GB hasta Q8_0 de 8,2 GB) mas los ficheros mmproj necesarios para conservar la torre de vision.
+La relevancia de esta ficha radica en que el repositorio GGUF es la vía práctica para desplegar el modelo en hardware de consumo mediante llama.cpp u Ollama, algo imposible con los pesos originales en safetensors para la mayoría de equipos. El autor de la cuantización ofrece un abanico amplio de niveles (desde Q2_K hasta f16, más los suplementos multimodales mmproj), lo que permite ajustar el equilibrio entre calidad y huella de memoria.
 
-Su relevancia actual es limitada y debe evaluarse con cautela: el repositorio registra 0 descargas y 0 likes, esta fechado el 22 de septiembre de 2026 (fecha anomala) y no incluye resultados de benchmarks ni documentacion de entrenamiento. La licencia Apache-2.0 declarada facilita el uso comercial, pero la ausencia de validacion independiente y de datos de evaluacion obliga a tratar el modelo como experimental.
+La información pública disponible sobre el modelo base es escasa: no se detallan la longitud de contexto, la composición del dataset de entrenamiento ni resultados de benchmarks. Los tags de la model card apuntan a un entrenamiento con GRPO (Group Relative Policy Optimization) y a una estrategia de self-evolve, lo que sugiere un enfoque de aprendizaje por refuerzo sobre tareas de razonamiento espacial, pero no se aportan métricas verificables.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Vision-lenguaje basada en la familia Qwen2.5-VL (segun etiquetas del repositorio); detalles internos no disponibles |
-| Parametros totales | 7.615.616.512 (~7,6 B) |
-| Parametros activos | No aplica (no es un modelo MoE segun la informacion disponible) |
-| Longitud de contexto | No disponible |
-| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, IQ4_XS, Q6_K, Q8_0, f16; ademas mmproj-Q8_0 y mmproj-f16 para la parte multimodal |
-| Idiomas soportados | Ingles (en) |
-| Licencia | Apache-2.0 |
-| Formato de pesos | GGUF (quantized_by: mradermacher; convert_type: hf; output_tensor_quantised: 1) |
-| Modelo base | Aeronix-zzz/VERSE-7B |
-| Tamano del repositorio | 70,4 GB |
-| Fecha de publicacion | 22 de septiembre de 2026 (segun metadatos de Hugging Face) |
+| Arquitectura | Transformer multimodal basada en Qwen2.5-VL (vision-language) |
+| Parametros totales | 7.615.616.512 (7,6B) |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, f16; suplementos mmproj en Q8_0 y f16 |
+| Idiomas soportados | en (ingles) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (safetensors en el modelo base original) |
 
 ## Arquitectura y entrenamiento
 
-La informacion disponible no documenta la arquitectura interna del modelo. Las etiquetas del repositorio indican qwen2.5-vl, vision-language, spatial-reasoning, self-evolve y grpo, lo que apunta a un transformer multimodal con vision encoder y un proceso de ajuste posterior al preentrenamiento basado en aprendizaje por refuerzo con GRPO (Group Relative Policy Optimization) y algun mecanismo de auto-evolucion de datos o trayectorias. No se especifica el numero de tokens de entrenamiento, la composicion del dataset, ni si hubo fases de SFT, RLHF o DPO adicionales.
+El modelo se apoya en la arquitectura de Qwen2.5-VL, un transformer multimodal que combina un codificador visual con un decodificador de lenguaje. Los tags del repositorio indican especialización en razonamiento espacial (spatial-reasoning) y el uso de GRPO, un algoritmo de aprendizaje por refuerzo con ventajas relativas de grupo, junto con una metodología de self-evolve que probablemente genera y filtra datos de entrenamiento de forma iterativa. No se especifican el número de tokens de entrenamiento, la composición del dataset ni si hubo fases de SFT, RLHF o DPO más allá de la referencia a GRPO.
 
-En el plano de la conversion, el repositorio es una cuantizacion estatica (quantize_version: 2, output_tensor_quantised: 1) generada por mradermacher, con el modelo completo convertido desde el formato Hugging Face a GGUF. El autor indica que en el momento de la publicacion no estaban disponibles las cuantizaciones ponderadas ni con matriz de importancia (imatrix). El repositorio incluye ficheros mmproj (proyector multimodal) en Q8_0 y f16, imprescindibles para que las capacidades de vision funcionen en llama.cpp.
+La cuantización la realiza mradermacher con su pipeline habitual (quantize_version 2, convert_type hf), generando cuantizaciones estáticas sin imatrix ponderada en el momento de la publicación. El repositorio incluye los ficheros mmproj necesarios para el procesamiento de imágenes en llama.cpp, lo que confirma que la capacidad visual se preserva en el despliegue GGUF.
 
 ## Capacidades
 
-- Generacion de texto conversacional en ingles (etiqueta conversational y libreria transformers).
-- Comprension de imagenes y vision-lenguaje: el repositorio incluye ficheros mmproj, lo que confirma soporte multimodal en el runtime GGUF.
-- Razonamiento espacial: capacidad declarada explicitamente en las etiquetas del modelo (spatial-reasoning), orientada a relaciones de posicion, geometria y disposicion de objetos en la imagen.
-- Ajuste orientado a tareas de razonamiento mediante GRPO y self-evolve, segun las etiquetas del autor.
-- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no confirmado; no hay documentacion al respecto.
-- Capacidades multilingues: limitadas al ingles segun el campo language; no se declaran otros idiomas.
-- Modo thinking explicito, audio u otras modalidades: no disponible en la informacion proporcionada.
+- Generación de texto conversacional en inglés.
+- Procesamiento de imágenes y razonamiento visual (vision-language), con especial énfasis en razonamiento espacial: relaciones entre objetos, posiciones y geometría de la escena.
+- Razonamiento multi-paso, presumiblemente reforzado mediante GRPO y self-evolve.
+- Soporte de conversaciones multi-turno (tag conversational).
+- Compatibilidad con endpoints (tag endpoints_compatible), lo que facilita su exposición como API.
+- Capacidad multimodal preservada en GGUF mediante los ficheros mmproj.
+- No se documenta soporte explícito de tool calling, function calling ni agentes.
+- No se documenta soporte de audio ni modo thinking explícito.
 
 ## Casos de uso
 
-- Analisis de documentos tecnicos con imagenes: el modelo puede recibir capturas de planos, esquemas o diagramas junto con una pregunta en lenguaje natural y devolver una descripcion o extraccion de datos, aprovechando la torre de vision y su orientacion a razonamiento espacial. Requiere cargar el fichero mmproj junto al GGUF.
-- Automatizacion de RPA sobre interfaces graficas: integrado en un pipeline que captura pantallas de aplicaciones legacy, el modelo puede interpretar la disposicion de botones, campos y tablas para decidir la siguiente accion, reduciendo la dependencia de selectores fragiles.
-- Control de calidad visual en industria: con una imagen de una pieza o linea de produccion, el modelo puede describir anomalias, posicion de componentes o desviaciones respecto a lo esperado y emitir un informe textual que alimente un sistema de alertas.
-- Accesibilidad asistida por imagen: generacion de descripciones de escenas o de documentos visuales para usuarios con discapacidad visual, ejecutandose en local para evitar enviar imagenes personales a servicios en la nube.
-- Analisis de graficos y tablas en informes: extraccion de tendencias, valores y relaciones a partir de figuras incluidas en PDF convertidos a imagen, como apoyo a tareas de analisis financiero o cientifico.
-- Despliegue en edge o entornos aislados: gracias a las cuantizaciones desde 3,1 GB (Q2_K) y 4,8 GB (Q4_K_M), el modelo puede ejecutarse en un portatil o en un equipo sin conexion a internet, lo que resulta adecuado para dominios con requisitos de confidencialidad (sanidad, legal, defensa).
-- Prototipado de agentes visuales en investigacion: al ser un modelo pequeno y con licencia Apache-2.0, sirve como punto de partida para experimentar con tecnicas de razonamiento espacial o de refuerzo tipo GRPO sin depender de APIs externas.
-- Chatbot multimodal de nicho en ingles: atencion a usuarios que envian fotos de productos, tickets o recibos, siempre que el alcance se limite al ingles y se acepte la falta de benchmarks publicos.
+- Razonamiento espacial sobre imágenes: el modelo puede analizar fotografías o capturas y responder preguntas sobre posiciones relativas, distancias y disposición de objetos, aprovechando su entrenamiento específico en spatial-reasoning.
+- Asistencia en robótica y navegación: interpretación de escenas visuales para generar descripciones estructuradas del entorno que alimenten planificadores de movimiento, gracias a su combinación de visión y razonamiento.
+- Análisis de documentos con layout complejo: extracción de relaciones espaciales en facturas, planos o diagramas donde la posición del contenido importa tanto como el texto.
+- Despliegue local en estaciones de trabajo: al estar en GGUF, puede ejecutarse con llama.cpp u Ollama en equipos sin GPU de datacenter, usando cuantizaciones Q4_K_M (4,8 GB) o Q5_K_M (5,5 GB) más el mmproj.
+- Prototipado de aplicaciones vision-language: integración vía endpoints compatibles para validar producto antes de escalar a modelos mayores, con coste de infraestructura mínimo.
+- Investigación en RL para modelos multimodales: al estar entrenado con GRPO y self-evolve, sirve como referencia reproducible para estudiar estas técnicas sobre una base Qwen2.5-VL de 7B.
+- Evaluación comparativa de cuantizaciones: el repositorio ofrece doce niveles de cuantización más dos mmproj, útil para medir la degradación de calidad en tareas espaciales según el bit-width.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card del repositorio de cuantizacion no incluye tablas de MMLU, HumanEval, GSM8K, MMMU, ChartQA ni ninguna otra metrica, ni tampoco comparaciones con modelos de referencia. El repositorio original Aeronix-zzz/VERSE-7B no ha sido inspeccionado en esta busqueda, por lo que tampoco se pueden confirmar datos de evaluacion procedentes de esa fuente.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: aproximadamente el tamano del fichero GGUF mas el proyector multimodal y la cache KV. Con Q4_K_M (4,8 GB) mas mmproj-Q8_0 (1,0 GB), el consumo tipico se situa en torno a 7-9 GB con contexto moderado. Con Q8_0 (8,2 GB) mas mmproj, en torno a 11-13 GB. Con Q2_K (3,1 GB) mas mmproj, en torno a 5-6 GB. Estas cifras son estimaciones basadas en los tamanos de fichero publicados, no en mediciones del autor.
-- GPU recomendadas: RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070 Ti Super, RTX 4080, RTX 4090 (24 GB) para las cuantizaciones altas con contexto largo. En el entorno profesional, A100 40/80 GB, H100 o L40S permiten mayor contexto y concurrencia, aunque son sobredimensionadas para un modelo de 7,6 B.
-- Cabe en GPU de consumo: si. Las cuantizaciones Q2_K a Q4_K_M entran en GPUs de 8 GB (con contexto corto), y de Q5_K_S a Q8_0 requieren 12 GB o mas. La ejecucion en CPU con llama.cpp tambien es viable gracias a los tamanos reducidos.
-- Opciones de despliegue: llama.cpp (referencia para GGUF y para el modo multimodal con mmproj), Ollama, LM Studio, koboldcpp, text-generation-webui y otros frontends compatibles con GGUF. Para servir en produccion con mayor throughput, vLLM y TGI no consumen GGUF de forma nativa en configuraciones multimodales, por lo que habria que partir de los pesos originales en safetensors o convertir a otro formato.
-- Latencia y throughput estimados: no disponible. No se han publicado mediciones de tokens por segundo ni de latencia en la informacion proporcionada.
-- Tabla de cuantizaciones publicadas (tamano en GB, segun el autor):
-
-| Cuantizacion | Tamano (GB) | Nota del autor |
-|---|---|---|
-| Q2_K | 3,1 | |
-| Q3_K_S | 3,6 | |
-| Q3_K_M | 3,9 | calidad inferior |
-| Q3_K_L | 4,2 | |
-| Q4_K_S | 4,6 | rapida, recomendada |
-| Q4_K_M | 4,8 | rapida, recomendada |
-| Q5_K_S | 5,4 | |
-| Q6_K | 6,4 | muy buena calidad |
-| Q8_0 | 8,2 | rapida, mejor calidad |
-| mmproj-Q8_0 | 1,0 | suplemento multimodal |
-| mmproj-f16 | 1,5 | suplemento multimodal |
+- VRAM estimada para inferencia (solo pesos, sin KV cache): Q2_K ~3,1 GB; Q4_K_M ~4,8 GB; Q5_K_M ~5,5 GB; Q6_K ~6,4 GB; Q8_0 ~8,2 GB; f16 ~15,3 GB. Añadir entre 1,0 y 1,5 GB si se usa la capacidad visual (mmproj).
+- GPU recomendadas: RTX 3060 12 GB, RTX 4070, RTX 4090 para cuantizaciones Q4 a Q8; A100 o H100 solo si se busca f16 con contexto largo o alto throughput.
+- Cabe en GPU de consumo: sí, desde una RTX 3060 12 GB con Q4_K_M o Q5_K_M; una GPU de 8 GB puede alojar Q4_K_S pero con margen ajustado para KV cache.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, y servidores compatibles con GGUF; el modelo base puede servirse con vLLM o TGI si se usan los safetensors originales.
+- Latencia y throughput: no disponibles; dependen del hardware y del backend. Como referencia cualitativa, el autor marca Q4_K_S y Q4_K_M como "fast, recommended" y Q8_0 como "fast, best quality".
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| VERSE-7B-GGUF (este) | ~7,6 B | no disponible | Apache-2.0 | GGUF en Hugging Face, 0 descargas | Sin benchmarks publicados; fecha de publicacion anomala |
-| Qwen2.5-VL-7B-Instruct | no verificado en la informacion disponible | no verificado | no verificado | safetensors y despliegues habituales | Familia a la que apuntan las etiquetas del modelo; referencia natural de comparacion |
-| InternVL2.5-8B | no verificado en la informacion disponible | no verificado | no verificado | safetensors | Alternativa de VLM de tamano similar |
-| MiniCPM-V 2.6 | no verificado en la informacion disponible | no verificado | no verificado | safetensors, GGUF de terceros | Alternativa de VLM compacto orientada a movil y edge |
+| VERSE-7B (este) | 7,6B | no disponible | Apache 2.0 | GGUF + safetensors | Especializado en razonamiento espacial, base Qwen2.5-VL |
+| Qwen2.5-VL-7B | 7B aprox. | no disponible en esta ficha | Apache 2.0 | safetensors, GGUF de terceros | Modelo base generalista de visión-lenguaje |
+| InternVL2-8B | 8B aprox. | no disponible en esta ficha | MIT (según versión) | safetensors, GGUF de terceros | Alternativa multimodal de tamaño similar |
+| LLaVA-OneVision-7B | 7B aprox. | no disponible en esta ficha | Apache 2.0 | safetensors, GGUF de terceros | Enfoque generalista en visión-lenguaje |
 
-No se dispone de datos verificados de parametros, contexto ni rendimiento de los modelos alternativos dentro de la informacion proporcionada, por lo que la comparacion cuantitativa no puede completarse. La unica comparacion defendible es cualitativa: VERSE-7B se posiciona en el segmento de VLM de ~7-8 B con enfasis declarado en razonamiento espacial, y su ventaja potencial es la disponibilidad inmediata de cuantizaciones GGUF con fichero mmproj incluido.
+Los datos de contexto y rendimiento de los modelos comparables no están disponibles en la información proporcionada; la comparación se limita a tamaño, licencia y formato de distribución.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de benchmarks: no hay ninguna metrica publicada que permita estimar la calidad real del modelo frente a alternativas conocidas.
-- Validacion comunitaria nula: 0 descargas y 0 likes en el momento de la consulta, sin issues ni discusiones que aporten evidencia de funcionamiento.
-- Fecha de publicacion anomala (22 de septiembre de 2026, posterior a la fecha habitual de referencia), lo que sugiere metadatos poco fiables o generados automaticamente.
-- Modelo base de procedencia no verificada: Aeronix-zzz/VERSE-7B no es un modelo ampliamente conocido, y no se documentan datos de entrenamiento, composicion del dataset ni proceso de alineacion.
-- Sesgos: no documentados por el autor. Al ser un modelo entrenado predominantemente o exclusivamente en ingles, es esperable un sesgo cultural anglosajon en las respuestas, aunque no hay evaluacion que lo cuantifique.
-- Riesgo de alucinacion: no evaluado. En tareas de vision, la alucinacion de objetos o texto inexistentes en la imagen es un riesgo habitual en modelos de este tamano y no hay datos que permitan acotarlo.
-- Limitacion linguistica: solo se declara ingles. El uso en castellano no esta soportado oficialmente y previsiblemente degradara la calidad.
-- Limitacion de contexto: se desconoce la ventana soportada. En despliegues GGUF, el contexto efectivo depende ademas de la configuracion de llama.cpp y de la VRAM disponible, no solo del modelo.
-- Perdida por cuantizacion: las cuantizaciones bajas (Q2_K, Q3_K_*) degradan la calidad de forma notable; el propio autor marca Q3_K_M como "calidad inferior". Para tareas de razonamiento espacial fino conviene usar Q5_K_M o superior.
-- Licencia: Apache-2.0 declarada, lo que permite uso comercial. No obstante, la licencia aplica al artefacto de cuantizacion y hereda la del modelo base; conviene verificar la licencia del repositorio Aeronix-zzz/VERSE-7B antes de un despliegue comercial.
-- Caveat de produccion: no existen cuantizaciones ponderadas ni imatrix, y el autor no garantiza su publicacion futura, lo que limita las opciones de optimizacion de calidad por tamano.
-- La busqueda web realizada no devolvio ningun resultado relevante sobre el modelo: los enlaces recuperados corresponden a un foro hungaro sobre Windows y no guardan relacion con VERSE-7B.
+- Solo se declara soporte de inglés; el rendimiento en castellano no está verificado y probablemente sea inferior.
+- No hay benchmarks publicados, por lo que no puede afirmarse superioridad frente a Qwen2.5-VL-7B u otras alternativas en tareas generales.
+- Riesgo de alucinación inherente a modelos de 7B, especialmente en descripciones visuales detalladas y razonamiento espacial fino.
+- La cuantización introduce degradación de calidad; Q2_K y Q3_K_M están marcadas por el autor como de menor calidad.
+- Las cuantizaciones ponderadas con imatrix no estaban disponibles en el momento de la publicación, lo que puede reducir la calidad respecto a otras distribuciones GGUF.
+- La licencia Apache 2.0 permite uso comercial, pero el modelo base podría arrastrar condiciones de Qwen2.5-VL; conviene verificar la cadena de licencias antes de producción.
+- El repositorio tiene muy poca tracción (550 descargas, 0 likes) y la información del modelo base es escasa; tratarlo como experimental.
+- No se documenta soporte de tool calling ni de agentes, lo que limita su uso en pipelines automatizados complejos.
 
 ## Enlaces
 
 - Repositorio GGUF: https://huggingface.co/mradermacher/VERSE-7B-GGUF
 - Modelo base: https://huggingface.co/Aeronix-zzz/VERSE-7B
-- Pagina de resumen de cuantizaciones del autor: https://hf.tst.eu/model#VERSE-7B-GGUF
-- Guia de uso de GGUF referenciada por el autor: https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
-- Grafico comparativo de calidad por tipo de cuantizacion: https://www.nethype.de/huggingface_embed/quantpplgraph.png
-- Notas de Artefact2 sobre cuantizaciones: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
-- Peticiones de cuantizacion del autor: https://huggingface.co/mradermacher/model_requests
-- Resultados de la busqueda web: no se encontro ningun enlace relevante sobre este modelo.
+- Página de descargas del cuantizador: https://hf.tst.eu/model#VERSE-7B-GGUF
+- Guía de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Solicitudes de cuantización de mradermacher: https://huggingface.co/mradermacher/model_requests
+- Comparativa de tipos de cuantización (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9

@@ -89,7 +89,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 396,
+  "downloads_30d": 429,
   "trending_score": 0,
   "parameters": 14770033664,
   "parameters_human": "14.77B",
@@ -110,16 +110,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Outlier-Ai/Qwen2.5-Coder-14B-Instruct-MLX-4bit · Hugging Face",
-      "url": "https://huggingface.co/Outlier-Ai/Qwen2.5-Coder-14B-Instruct-MLX-4bit",
-      "snippet": "4-bit MLX conversion of Qwen2.5-Coder-14B-Instruct for Apple Silicon. Runs natively on M1, M2, M3, and M4 Macs via mlx_lm. Faithful port of the upstream weights — no fine-tuning, no merge ..."
-    },
-    {
-      "title": "Outlier-Ai/Outlier-Coder-Qwen25-14B-MLX-4bit · Hugging Face",
-      "url": "https://huggingface.co/Outlier-Ai/Outlier-Coder-Qwen25-14B-MLX-4bit",
-      "snippet": "💻 Outlier-optimized MLX 4-bit build of Qwen2.5-Coder-14B-Instruct by Qwen team at Alibaba. This is a format conversion. Model weights are unchanged from the original Qwen team at Alibaba release — all credit for capability goes to them. Outlier adds the MLX 4-bit packaging so it runs fast and ..."
-    }
-  ]
+  "sources": []
 }

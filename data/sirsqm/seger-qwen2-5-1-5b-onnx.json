@@ -42,31 +42,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "LibreView",
-      "url": "https://www.libreview.com/",
-      "snippet": "LibreView is supported in the countries / regions listed above. New countries / regions will be added in the future. Please check back …"
-    },
-    {
-      "title": "LibreView",
-      "url": "https://www2.libreview.com/Accounts/Login/?lang=en&country=US",
-      "snippet": "1 day ago · LibreView is a secure, cloud-based diabetes management system that gives healthcare professionals and patients clear, …"
-    },
-    {
-      "title": "LibreView",
-      "url": "https://www2.libreview.com/Accounts/login?lang=fr-FR",
-      "snippet": "Le boîtier du capteur, FreeStyle, Libre et les marques associées sont des marques d’Abbott. Les autres marques de commerce …"
-    },
-    {
-      "title": "LibreView",
-      "url": "https://www.libreview.com/?country=US&lang=en-US",
-      "snippet": "LibreView is a secure, cloud-based diabetes management system that gives healthcare professionals and patients clear, easy-to …"
-    },
-    {
-      "title": "Consultez et partagez facilement vos données de glucose avec LibreView",
-      "url": "https://www.freestyle.abbott/lu-fr/products/connected-care/libreview.html",
-      "snippet": "1 day ago · LibreView, notre plateforme de rapport intuitive en ligne, vous permet de voir tous vos résultats de glucose et de les …"
-    }
-  ]
+  "sources": []
 }

@@ -2,86 +2,89 @@
 
 ## Resumen
 
-Graph Qwenputer es un checkpoint derivado de Qwen3.5-4B en el que se han insertado 11 capas adicionales delante de las 32 originales del modelo base. Esas capas implementan una CPU RV32IM (con extension Zba) compilada mediante el proyecto Qwenputer, junto con 85 unidades de salida adicionales que permiten a la máquina emitir tokens ordinarios. El resultado es un modelo que, con el firmware y el driver adecuados, puede leer y escribir un grafo tipado y dirigido de hasta 1.024 nodos desde dentro de su propia ejecución. Lo publica el usuario hopski en Hugging Face bajo licencia Apache 2.0.
+Graph Qwenputer es un checkpoint derivado de Qwen3.5-4B en el que el autor, hopski, ha insertado una CPU RV32IM (RISC-V de 32 bits con extensiones base y Zba) implementada como capas de transformer, compilada mediante el proyecto Qwenputer de Divyansh Agrawal. El modelo conserva las 32 capas originales de Qwen3.5-4B con sus pesos publicados y antepone 11 capas nuevas que emulan una maquina de computacion grafica: un grafo dirigido y tipado de hasta 1024 nodos que el modelo puede leer y modificar durante su propia ejecucion mediante llamadas como `path`, `neighbours`, `add_node` y `link`.
 
-La propuesta es inusual: no se entrena nada. Los 424 tensores originales de Qwen3.5-4B permanecen bit a bit idénticos y las capas nuevas son pesos compilados que representan una máquina virtual. El modelo no contiene conocimiento sobre ningún grafo concreto; el firmware y la estructura del grafo se cargan en el estado de ejecución después del prompt, de modo que los pesos por sí solos son una máquina vacía que requiere el driver y el firmware del repositorio del proyecto.
+El checkpoint no ha sido entrenado: las 11 capas anadidas son pesos compilados que implementan el interprete de la CPU y 85 unidades de salida adicionales para que la maquina pueda emitir tokens ordinarios. De los 424 tensores de las 32 capas de Qwen, 360 coinciden bit a bit con la release original y los 64 restantes son ganancias de normalizacion reescaladas por Qwenputer para el modelo ensanchado. El resultado es un modelo de 9.381.981.888 parametros totales (18,9 GB en safetensors) que actua como una maquina vacia: los pesos no contienen ningun grafo, sino la capacidad de ejecutar uno cargado en tiempo de inferencia.
 
-Su relevancia es fundamentalmente experimental: demuestra que es posible incrustar un intérprete de CPU dentro de un transformer sin reentrenar, a costa de un rendimiento muy bajo (una consulta al grafo tarda minutos frente a milisegundos de una herramienta convencional) y de una fiabilidad dependiente del enrutado de tokens del driver. No es un modelo para producción, sino una prueba de concepto sobre cómputo simbólico dentro de modelos de lenguaje.
+La relevancia es fundamentalmente experimental: demuestra que se puede incrustar una CPU funcional dentro de un transformer sin reentrenar, a costa de un rendimiento muy bajo (una consulta al grafo tarda minutos frente a milisegundos de una herramienta convencional). No es un modelo para produccion, sino una prueba de concepto sobre computacion hibrida entre redes neuronales y maquinas de estado explicitas.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (Qwen3.5-4B) con 11 capas adicionales que implementan una CPU RV32IM + Zba compilada |
-| Parametros totales | 9.381.981.888 (9,38 mil millones, segun safetensors) |
-| Parametros activos | No aplica (no es MoE) |
-| Longitud de contexto | No disponible |
-| Tipos de cuantizacion | No disponible (el repo solo contiene safetensors) |
-| Idiomas soportados | No disponible |
+| Arquitectura | Transformer decoder-only (Qwen3.5-4B, 32 capas) con 11 capas adicionales que implementan una CPU RV32IM+Zba compilada |
+| Parametros totales | 9.381.981.888 |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | no disponible (solo safetensors en el repo) |
+| Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
 | Formato de pesos | safetensors |
+| Modelo base | Qwen/Qwen3.5-4B |
+| Tamano del repo | 18,9 GB |
+| Tipo de pesos | compilados (no entrenados) |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de Qwen3.5-4B, un transformer decoder-only, y le antepone 11 capas que no son neuronas entrenadas sino pesos compilados que implementan una CPU RISC-V de 32 bits con el conjunto base RV32IM y la extension Zba (aritmetica de direcciones). Estas capas se generan con el compilador Qwenputer, de Divyansh Agrawal, que traduce la lógica de la máquina a tensores compatibles con el formato de transformers. Se añaden además 85 unidades de salida ("exit units") que permiten que la máquina emita tokens normales del vocabulario.
+El modelo parte de Qwen3.5-4B, un transformer decoder-only de 32 capas, y le antepone 11 capas generadas por el compilador Qwenputer. Estas capas implementan una CPU RISC-V RV32IM con la extension Zba, con 85 unidades de salida adicionales que permiten a la maquina emitir tokens normales del vocabulario. No hay entrenamiento involucrado: los pesos de las capas nuevas son el resultado de compilar el firmware de la CPU a tensores, y los pesos de Qwen se conservan intactos salvo 64 tensores de normalizacion que Qwenputer reescala para adaptarlos a las dimensiones ensanchadas del modelo. Ademas, Qwenputer anade columnas disenadas para mantener las capas de Qwen "silenciosas" ante los tokens de la computadora, de modo que el modelo base no interfiera con la ejecucion del grafo.
 
-No hay entrenamiento ni ajuste fino: los 424 tensores del modelo base son bit a bit idénticos a los de Qwen3.5-4B. El checkpoint completo ocupa 18,76 GB y no cambia entre compilaciones de firmware, porque el firmware y el grafo se inyectan en el estado de ejecución en tiempo de inferencia, no en los pesos. La innovación técnica consiste en aprovechar el mecanismo de atención y las capas del transformer como sustrato para ejecutar instrucciones de una CPU virtual, con el driver del proyecto encargándose de ofrecer la herramienta, cargar la memoria y enrutar los tokens.
+La innovacion tecnica es la incrustacion de una maquina de estado explicita (un grafo tipado y dirigido de hasta 1024 nodos) dentro del propio forward pass del transformer. El firmware y el grafo no estan en los pesos: se cargan en el estado de ejecucion despues del prompt, por lo que el checkpoint por si solo es una maquina vacia que necesita el driver y el firmware del repositorio del proyecto. No se han publicado detalles sobre datos de entrenamiento, RLHF, DPO ni tecnicas de decodificacion especulativa, ya que no hay fase de entrenamiento.
 
 ## Capacidades
 
-- Generación de texto conversacional heredada de Qwen3.5-4B.
-- Lectura y escritura de un grafo tipado y dirigido de hasta 1.024 nodos desde dentro de la ejecución del modelo.
-- Operaciones de grafo expuestas como llamadas: `path`, `neighbours`, `add_node` y `link`.
-- Ejecución de firmware cargado externamente en el estado de ejecución tras el prompt.
-- Emisión de tokens ordinarios mediante las 85 unidades de salida añadidas.
-- El ejemplo trabajado del proyecto es la red de metro de Nueva York, aunque el grafo puede ser cualquiera.
-- No se documentan capacidades de tool calling genérico, agentes multi-paso, visión, audio ni modo de razonamiento extendido más allá de lo que herede del modelo base.
+- Generacion de texto conversacional heredada de Qwen3.5-4B, aunque el autor advierte que la respuesta de Qwen tras la ejecucion del grafo puede ser basura sin el enrutado del driver.
+- Lectura y escritura de un grafo dirigido y tipado de hasta 1024 nodos mediante llamadas como `path`, `neighbours`, `add_node` y `link`.
+- Ejecucion de una CPU RV32IM+Zba completa dentro del forward pass, con firmware cargado en tiempo de inferencia.
+- Emision de tokens ordinarios gracias a las 85 unidades de salida adicionales.
+- Soporte de tool calling: el driver ofrece la herramienta y enruta los tokens, actuando como capa de integracion.
+- Capacidades multilingues: no disponibles en la informacion proporcionada.
+- Sin soporte de vision, audio ni modo thinking documentado.
 
 ## Casos de uso
 
-- Investigación sobre cómputo simbólico en transformers: permite estudiar cómo un modelo de lenguaje puede alojar un intérprete de CPU y ejecutar operaciones deterministas sobre estructuras de datos, sirviendo como banco de pruebas para arquitecturas híbridas neurosimbólicas.
-- Experimentos de grafo en el estado de ejecución: cargar un grafo propio (por ejemplo, una topología de red, un árbol genealógico o un grafo de dependencias) y consultar rutas o vecinos mediante las llamadas `path` y `neighbours`, siempre con el driver y el firmware del proyecto.
-- Docencia y divulgación: ilustrar de forma tangible cómo se compila una máquina virtual a pesos de un transformer y cómo se enrutan tokens para que la máquina "hable", usando el ejemplo del metro de Nueva York como caso reproducible.
-- Pruebas de robustez del enrutado de tokens: evaluar cómo se comporta un modelo cuando el driver impone un enrutado frente a un bucle de top-token simple, que según el autor acertó en 6 de 6 trayectos probados pero unas cinco veces más lento y con una respuesta posterior de Qwen inservible.
-- Reproducción de los "real-weights runs" del proyecto: utilizar el checkpoint de 18,76 GB tal cual para replicar los experimentos publicados en el repositorio.
-- Base para extensiones del compilador Qwenputer: modificar el firmware o añadir instrucciones y recompilar las capas, aprovechando que los pesos de Qwen permanecen intactos y que el checkpoint no cambia entre compilaciones.
+- Investigacion sobre computacion hibrida neuro-simbolica: el modelo permite estudiar como un transformer puede ejecutar una maquina de estado explicita dentro de su propio forward pass, sirviendo como banco de pruebas para arquitecturas que combinan redes neuronales con interpretes.
+- Demostracion educativa de compilacion de CPU a tensores: util para cursos y articulos que expliquen como se traduce un firmware RISC-V a pesos de transformer y como se conservan las capas originales bit a bit.
+- Experimentos de grafos pequenos en entornos controlados: con el firmware y el driver del repositorio, se puede cargar un grafo de hasta 1024 nodos (el ejemplo documentado es el metro de Nueva York) y consultar rutas y vecinos, aunque con latencias de minutos.
+- Validacion de tecnicas de preservacion de pesos: el hecho de que 360 de 424 tensores coincidan bit a bit con Qwen3.5-4B permite estudiar metodos de ensanchado de modelos sin reentrenamiento.
+- Pruebas de robustez de drivers de inferencia: el modelo exige un driver que cargue memoria y enrute tokens, lo que lo convierte en un caso extremo para probar pipelines de transformers personalizados.
+- Reproduccion de resultados academicos: el checkpoint es el usado en las ejecuciones con pesos reales del proyecto, por lo que sirve para replicar los experimentos publicados en el repositorio.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card solo aporta observaciones cualitativas: una consulta al grafo tarda minutos frente a milisegundos de una herramienta convencional, y un bucle de top-token sin el enrutado del driver acertó en 6 de 6 trayectos probados, aproximadamente cinco veces más lento y con una respuesta posterior de Qwen inservible.
+No se han publicado resultados de benchmarks en la informacion disponible. El autor solo reporta cualitativamente que una consulta al grafo tarda minutos frente a milisegundos de una herramienta convencional, y que un bucle de top-token sin el enrutado del driver acerto en 6 de 6 viajes probados, aproximadamente cinco veces mas lento, con respuesta posterior de Qwen inservible.
 
 ## Requisitos de hardware
 
-- El repo pesa 18,9 GB y el checkpoint 18,76 GB en safetensors, por lo que en precisión original requiere del orden de 19 GB de VRAM solo para los pesos, más overhead de activaciones y estado de ejecución.
-- GPU recomendadas para inferencia en precisión completa: A100 40 GB, H100, o GPUs consumer con 24 GB o más (RTX 3090, RTX 4090) siempre que el resto del estado quepa en memoria.
-- En GPUs consumer de 16 GB o menos no cabe en precisión original; no se documentan cuantizaciones GGUF ni versiones reducidas.
-- Opciones de despliegue: transformers con el driver y el firmware del repositorio del proyecto; no se documenta compatibilidad con vLLM, llama.cpp, Ollama ni TGI.
-- Latencia y throughput: una consulta al grafo tarda minutos; no se proporcionan cifras de tokens por segundo.
+- VRAM estimada para inferencia: al menos 19 GB en precision completa (fp16/bf16) para los 18,9 GB de safetensors, mas overhead de activaciones y estado del grafo.
+- GPU recomendadas: A100 40 GB, H100, o GPUs consumer con 24 GB o mas (RTX 3090, RTX 4090) para fp16; no cabe en GPUs de 16 GB sin cuantizacion, que no esta disponible en el repo.
+- Opciones de despliegue: transformers con el driver y firmware del repositorio del proyecto; no se documentan integraciones con vLLM, llama.cpp, Ollama ni TGI.
+- Latencia y throughput: el autor indica que una consulta al grafo tarda minutos, ordenes de magnitud por encima de una herramienta convencional; no se proporcionan cifras de throughput.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Capacidad de grafo | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Graph Qwenputer | 9,38 mil millones (4B base + capas compiladas) | No disponible | Si, grafo de hasta 1.024 nodos via CPU RV32IM embebida | Apache 2.0 | Hugging Face, requiere driver y firmware |
-| Qwen3.5-4B | 4 mil millones (aproximado, segun nombre) | No disponible | No | Apache 2.0 | Hugging Face |
-| Herramientas externas de grafo (p. ej. librerias de grafos) | No aplica | No aplica | Si, con latencia de milisegundos | Variable | Estandar |
+| Graph Qwenputer | 9,38 B | no disponible | Qwen3.5-4B + CPU RISC-V compilada | Apache 2.0 | Hugging Face (hopski/graph-qwenputer) |
+| Qwen3.5-4B | no disponible | no disponible | Transformer decoder-only convencional | Apache 2.0 | Hugging Face (Qwen/Qwen3.5-4B) |
+| Qwenputer (proyecto original) | no disponible | no disponible | Compilador de CPU a capas de transformer | MIT (compilador) | GitHub (divagr18/qwenputer) |
 
-La comparación relevante es frente al propio Qwen3.5-4B, del que hereda el comportamiento conversacional, y frente a herramientas de grafo convencionales, que segun el autor obtienen las mismas respuestas en milisegundos. No se dispone de datos de benchmarks para comparar rendimiento de razonamiento o codigo con alternativas.
+La comparativa con alternativas de la misma categoria (modelos de ~4 B para generacion de texto) no esta disponible en la informacion proporcionada, ya que no se han publicado datos de rendimiento de Graph Qwenputer frente a modelos convencionales.
 
 ## Limitaciones y advertencias
 
-- Los pesos no contienen ningún grafo: sin el driver y el firmware del repositorio del proyecto, el modelo es una máquina vacía y no puede realizar las operaciones de grafo.
-- El driver es imprescindible: sin su enrutado de tokens, un bucle de top-token simple es unas cinco veces más lento y la respuesta posterior de Qwen resulta inservible.
-- Rendimiento muy bajo: una consulta al grafo tarda minutos, mientras que una herramienta convencional tarda milisegundos y obtiene las mismas respuestas.
-- El juicio de Qwen es la parte débil, segun reconoce el autor en los problemas conocidos del repositorio.
-- Riesgo de alucinación heredado del modelo base, agravado por la complejidad del enrutado.
-- No se documentan sesgos específicos, idiomas soportados ni longitud de contexto.
-- Licencia Apache 2.0 permite uso comercial, pero el proyecto depende de Qwenputer (MIT) y de Qwen3.5-4B (Apache 2.0 segun su model card); conviene revisar las licencias de ambos componentes.
-- No apto para producción: es una prueba de concepto experimental con solo 2 descargas y 0 likes en el momento de la consulta.
+- El modelo es una maquina vacia: los pesos no contienen ningun grafo ni firmware; sin el driver y el firmware del repositorio del proyecto no es funcional.
+- Sin el enrutado del driver, un bucle de top-token simple produce respuestas de Qwen inservibles tras la ejecucion del grafo.
+- Rendimiento muy bajo: una consulta al grafo tarda minutos frente a milisegundos de una herramienta convencional, y una herramienta ordinaria obtiene las mismas respuestas.
+- El juicio de Qwen es la parte debil segun el autor; el repositorio documenta problemas conocidos.
+- Riesgo de alucinacion: no evaluado ni cuantificado en la informacion disponible.
+- Sesgos conocidos: no documentados; al heredar los pesos de Qwen3.5-4B, podria arrastrar los sesgos del modelo base, pero no se confirma.
+- Limitaciones de contexto e idioma: no disponibles.
+- Restricciones de licencia: Apache 2.0 para los pesos; el compilador y la maquina son de Divyansh Agrawal bajo licencia MIT, lo que debe respetarse en uso derivado.
+- No apto para produccion: es una prueba de concepto experimental, no un modelo para despliegues reales.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/hopski/graph-qwenputer
-- Repositorio del proyecto (driver y firmware): https://github.com/ho3h/graph-qwenputer
-- Compilador Qwenputer de Divyansh Agrawal: https://github.com/divagr18/qwenputer
-- Modelo base Qwen3.5-4B: https://huggingface.co/Qwen/Qwen3.5-4B
+- Hugging Face: https://huggingface.co/hopski/graph-qwenputer
+- Repositorio del proyecto: https://github.com/ho3h/graph-qwenputer
+- Qwenputer (compilador original): https://github.com/divagr18/qwenputer
+- Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B

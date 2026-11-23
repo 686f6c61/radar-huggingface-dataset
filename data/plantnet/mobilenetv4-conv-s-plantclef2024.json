@@ -34,7 +34,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 450,
+  "downloads_30d": 505,
   "trending_score": 0,
   "parameters": 12517598,
   "parameters_human": "12.5M",
@@ -57,19 +57,9 @@
   "benchmarks": [],
   "sources": [
     {
-      "title": "Home - Pl@ntNet",
-      "url": "https://plantnet.org/en/",
-      "snippet": "With the Pl@ntNet app, identify one plant from a picture, and be part of a citizen science project on plant biodiversity"
-    },
-    {
       "title": "Accueil - Pl@ntNet",
       "url": "https://plantnet.org/",
-      "snippet": "Avec l'application Pl@ntNet, identifiez une plante à partir d'une photo, et rejoignez un projet de sciences participatives sur la …"
-    },
-    {
-      "title": "MobileNetV4 -- Universal Models for the Mobile Ecosystem",
-      "url": "https://arxiv.org/abs/2404.10518",
-      "snippet": "We present the latest generation of MobileNets, known as MobileNetV4 (MNv4), featuring universally efficient architecture designs for mobile devices. At its core, we introduce the Universal Inverted Bottleneck (UIB) search block, a unified and flexible structure that merges Inverted Bottleneck (IB), ConvNext, Feed Forward Network (FFN), and a novel Extra Depthwise (ExtraDW) variant. Alongside ..."
+      "snippet": "Avec l'application Pl@ntNet, identifiez une plante à partir d'une photo, et rejoignez un projet de sciences participatives sur la …Read more"
     },
     {
       "title": "Pl@ntNet identify",
@@ -77,9 +67,19 @@
       "snippet": "Pl@ntnet est un outil pour vous aider à identifier des plantes à partir d'images."
     },
     {
-      "title": "jaiwei98/MobileNetV4 · Hugging Face",
-      "url": "https://huggingface.co/jaiwei98/MobileNetV4",
-      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+      "title": "Pl@ntNet identify",
+      "url": "https://identify.plantnet.org/",
+      "snippet": "Organization Plantnet.org Team Resources Documentation Open data API Stats Translations Release notes Legal About Terms of …Read more"
+    },
+    {
+      "title": "Home - Pl@ntNet",
+      "url": "https://plantnet.org/en/",
+      "snippet": "With the Pl@ntNet app, identify one plant from a picture, and be part of a citizen science project on plant biodiversity"
+    },
+    {
+      "title": "Commencer | Pl@ntNet doc - docs.plantnet.org",
+      "url": "https://docs.plantnet.org/fr/get-started/",
+      "snippet": "Pl@ntNet : identifiez des plantes facilement via l'appli mobile (Android & iOS) ou le web. Créez un compte, activez la géolocalisation, …Read more"
     }
   ]
 }

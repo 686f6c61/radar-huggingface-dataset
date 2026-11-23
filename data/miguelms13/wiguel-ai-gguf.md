@@ -2,73 +2,85 @@
 
 ## Resumen
 
-Wiguel-AI Core Engine es un modelo de lenguaje conversacional ligero, desarrollado por Miguelms13, diseñado para ejecutarse de forma local en el dispositivo del usuario, ya sea directamente en el navegador mediante WebGPU/WebWorker o a través de un script puente en Python. Su objetivo principal es ofrecer un asistente personal con baja latencia y máxima privacidad, sin depender de servidores centrales, y con capacidad de funcionamiento offline una vez que los pesos se han descargado o cacheado.
+Wiguel-AI-GGUF es un modelo de generacion de texto publicado por el usuario Miguelms13 en Hugging Face, distribuido exclusivamente en formato GGUF y orientado a inferencia local. Con 1.777.088.000 parametros (aproximadamente 1,78 mil millones), se situa en la franja de modelos pequenos, lo que permite ejecutarlo en hardware de consumo. La model card es extremadamente escueta: el autor se limita a indicar que el modelo ha sido "desarrollado por 11to", que es de tipo text-to-text y que soporta ingles y castellano.
 
-El modelo cuenta con aproximadamente 1.240 millones de parámetros (1.235.814.432) y se distribuye en formato GGUF, lo que facilita su uso en entornos de inferencia local como llama.cpp, Ollama o similares. Está pensado para integrarse en aplicaciones web progresivas (PWA) y sistemas que requieran un asistente conversacional con control total de los datos. Su relevancia actual radica en la tendencia hacia la inferencia local y la privacidad, así como en la posibilidad de desplegar modelos de tamaño medio en hardware de consumo.
+La relevancia del modelo radica en su enfoque declarado hacia seguridad, funcionamiento offline y privacidad, segun las etiquetas del repositorio (security, offline, private). Esto sugiere un uso previsto en entornos donde los datos no deben salir de la maquina local, como auditorias, analisis de configuraciones o asistentes internos sin conexion. Sin embargo, no se publica informacion sobre la arquitectura interna, el proceso de entrenamiento ni los datos utilizados.
+
+El repositorio ocupa 15,6 GB, un tamano considerable para un modelo de 1,78 mil millones de parametros, lo que indica la presencia de multiples niveles de cuantizacion. La licencia no esta disponible de forma explicita: la model card menciona "copyright 11to 2026" sin especificar terminos de uso, lo que constituye una limitacion importante para cualquier adopcion en produccion.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
 | Arquitectura | no disponible |
-| Parametros totales | 1.235.814.432 (~1,24 B) |
-| Parametros activos | no aplicable (no es MoE) |
+| Parametros totales | 1.777.088.000 (aprox. 1,78 B) |
+| Parametros activos | no aplica (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible (formato GGUF, se asume cuantizacion variable) |
-| Idiomas soportados | en, es |
-| Licencia | no disponible |
+| Tipos de cuantizacion | GGUF (multiples niveles; el repo ocupa 15,6 GB, lo que implica varias variantes) |
+| Idiomas soportados | ingles (en), castellano (es) |
+| Licencia | no disponible (la model card indica "copyright 11to 2026" sin terminos explicitos) |
 | Formato de pesos | GGUF |
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion detallada sobre la arquitectura interna del modelo (tipo de transformer, numero de capas, dimensiones, etc.) ni sobre el proceso de entrenamiento (dataset, numero de tokens, tecnicas de alineamiento como RLHF o DPO). El autor indica que el modelo esta optimizado para baja latencia y ejecucion local, pero no se ofrecen datos tecnicos adicionales en la model card. Se desconoce si se trata de un modelo original o de un fine-tuning de una base existente.
+No se ha publicado informacion sobre la arquitectura del modelo. La model card incluye un apartado titulado "Model Architecture and Objective" cuyo contenido es unicamente el texto "[11to]", sin describir si se trata de un transformer denso, un modelo MoE, una arquitectura hibrida o cualquier otra variante. Tampoco se especifica el numero de capas, la dimension oculta, el numero de cabezas de atencion ni el mecanismo de atencion empleado.
+
+Respecto al entrenamiento, no hay datos sobre el volumen de tokens, la composicion del dataset, la posible aplicacion de RLHF, DPO u otras tecnicas de alineacion, ni sobre innovaciones tecnicas como decodificacion especulativa o atencion lineal. La unica informacion disponible es que el modelo es de tipo text-to-text y que soporta ingles y castellano. Cualquier afirmacion adicional sobre el proceso de entrenamiento seria especulativa.
 
 ## Capacidades
 
-- Generacion de texto conversacional: responde consultas directas y mantiene dialogos multi-turno.
-- Asistente interactivo: disenado para integrarse en interfaces de usuario, especialmente en aplicaciones web progresivas (PWA).
-- Procesamiento de lenguaje natural en ingles y espanol.
-- Ejecucion local en el navegador mediante WebGPU y WebWorker, sin envio de datos a servidores externos.
-- Modo hibrido/bridge: mediante un script Python (wiguel-bridge.py) puede comunicarse con recursos locales, gestionar descargas en segundo plano y ofrecer inferencia offline.
-- Operacion offline: una vez que los pesos se han descargado o cacheado, el modelo puede funcionar sin conexion a internet.
-- Limpieza automatica: el bridge elimina los archivos temporales y el modelo descargado al cerrar la sesion.
+- Generacion de texto conversacional: el repositorio incluye la etiqueta "conversational", lo que indica que el modelo esta preparado para dialogos multi-turno.
+- Soporte de ingles y castellano, segun los metadatos del modelo.
+- Orientacion a tareas de seguridad: la etiqueta "security" sugiere un uso previsto en analisis o asistencia relacionada con seguridad informatica, aunque no se detalla el alcance.
+- Funcionamiento offline y privado: las etiquetas "offline" y "private" indican que el modelo esta pensado para ejecutarse sin conexion a servicios externos.
+- Compatibilidad con endpoints: la etiqueta "endpoints_compatible" indica que puede desplegarse mediante la infraestructura de endpoints de Hugging Face.
+- No se dispone de informacion sobre soporte de tool calling, function calling, razonamiento multi-paso, vision, audio, modo de pensamiento explicito ni capacidades matematicas o de codigo especializadas.
 
 ## Casos de uso
 
-- Asistente personal en el navegador: integrado en una PWA, el modelo responde preguntas y mantiene conversaciones directamente en la pagina web, sin necesidad de backend, garantizando la privacidad del usuario.
-- Chatbot para sitios web con requisitos estrictos de privacidad: al ejecutarse en el cliente, los datos de los usuarios no salen del dispositivo, lo que lo hace adecuado para sectores como salud o banca.
-- Aplicacion de escritorio con inferencia local: mediante el bridge Python, se puede conectar a aplicaciones de escritorio que necesiten un asistente conversacional sin depender de la nube.
-- Herramienta de soporte tecnico offline: en entornos sin conexion (por ejemplo, zonas remotas o redes aisladas), el modelo puede proporcionar respuestas a preguntas frecuentes o guias de resolucion de problemas.
-- Prototipado rapido de asistentes conversacionales: al ser un modelo pequeno y en formato GGUF, se puede integrar facilmente en demos o pruebas de concepto con hardware modesto.
-- Sistema de respaldo para aplicaciones cloud: si el servicio principal falla, el modelo puede actuar como fallback local para mantener la disponibilidad del asistente, como se indica en los tags del repositorio.
+- Asistente conversacional local: al distribuirse en GGUF y estar orientado a funcionamiento offline, puede desplegarse con llama.cpp u Ollama en un portatil para mantener conversaciones sin enviar datos a la nube. Es adecuado por su tamano reducido y su soporte de castellano e ingles.
+- Analisis de configuraciones y documentacion de seguridad: la etiqueta "security" sugiere su uso para revisar ficheros de configuracion, politicas o notas tecnicas en entornos aislados, donde el modelo resume y responde preguntas sobre el contenido sin conexion.
+- Atencion al cliente en despliegues privados: permite gestionar dialogos multi-turno en castellano e ingles dentro de una infraestructura controlada, evitando la exposicion de datos de clientes a APIs de terceros.
+- Prototipado rapido de aplicaciones de texto: su formato GGUF y su compatibilidad con endpoints permiten integrarlo en fases de prueba sin necesidad de infraestructura GPU dedicada.
+- Traduccion y asistencia bilingue es/en: el soporte declarado de ambos idiomas permite usarlo para reescritura, resumen o adaptacion de textos entre castellano e ingles en flujos internos.
+- Educacion y experimentacion: al ser un modelo pequeno, sirve para estudiar el comportamiento de modelos conversacionales cuantizados en entornos docentes o de investigacion con recursos limitados.
+- Despliegue en entornos con requisitos de privacidad estrictos: organizaciones que no pueden usar servicios en la nube pueden ejecutarlo en estaciones de trabajo locales para tareas de generacion de texto internas.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. No hay datos sobre MMLU, HumanEval, GSM8K ni otras metricas estandar.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- Al ser un modelo de aproximadamente 1,24 B parametros en formato GGUF, se estima que una cuantizacion de 4 bits (Q4_K_M) ocuparia alrededor de 0,7-0,8 GB de VRAM, por lo que cabria en GPUs con 2 GB o mas de memoria.
-- Puede ejecutarse en GPUs de consumo como NVIDIA GTX 1650, RTX 2060, RTX 3060, etc., asi como en Apple Silicon (M1/M2) mediante Metal.
-- Tambien es posible ejecutarlo en CPU, aunque con mayor latencia; para uso interactivo se recomienda al menos 8 GB de RAM.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, o directamente en el navegador via WebGPU (como indica la model card).
-- No se dispone de datos oficiales de latencia o throughput.
+- VRAM estimada: no disponible de forma oficial. Como referencia orientativa basada en el tamano (1,78 B parametros), una cuantizacion Q4 requeriria del orden de 1-1,5 GB de VRAM, Q8 en torno a 2 GB y FP16 aproximadamente 3,5 GB; estas cifras son estimaciones por tamano, no datos publicados por el autor.
+- GPU recomendadas: no disponible. Por tamano, el modelo deberia caber en GPUs de consumo como RTX 3060, RTX 4060, RTX 4090 o superiores, asi como en GPUs de datacenter (A100, H100) sobredimensionadas para este tamano.
+- Cabe en GPU de consumo: previsiblemente si, en la mayoria de tarjetas con 4 GB o mas de VRAM, aunque no se confirma oficialmente.
+- Opciones de despliegue: llama.cpp, Ollama y otros runners compatibles con GGUF; el tag "endpoints_compatible" indica soporte para endpoints de Hugging Face.
+- Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
 
-No se dispone de informacion suficiente para realizar una comparativa fiable con otros modelos de tamano similar (por ejemplo, TinyLlama-1.1B, Qwen1.5-1.8B o Phi-2). No se conocen los resultados de benchmarks ni las caracteristicas tecnicas completas de Wiguel-AI, por lo que no es posible establecer una comparacion objetiva.
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|
+| Wiguel-AI-GGUF | 1,78 B | no disponible | no disponible | GGUF | Enfoque en seguridad y uso offline |
+| Qwen2.5-1.5B-Instruct | 1,54 B | 32.768 tokens | Apache 2.0 | safetensors, GGUF | Modelo abierto con benchmarks publicados y amplio soporte de herramientas |
+| Llama 3.2 1B Instruct | 1,24 B | 128.000 tokens | Llama 3.2 Community License | safetensors, GGUF | Modelo pequeno de Meta con contexto largo y licencia con restricciones |
+| Gemma 2 2B | 2,6 B | 8.192 tokens | Gemma Terms of Use | safetensors, GGUF | Modelo de Google con benchmarks publicados |
+
+La comparativa se ofrece como referencia de categoria; no se dispone de datos de rendimiento de Wiguel-AI-GGUF que permitan una comparacion cuantitativa con estas alternativas.
 
 ## Limitaciones y advertencias
 
-- La licencia no esta especificada, lo que genera incertidumbre sobre su uso comercial y la redistribucion. Se recomienda contactar con el autor antes de utilizarlo en produccion.
-- No se ha publicado informacion sobre sesgos, alucinaciones o limitaciones de contexto. Al ser un modelo relativamente pequeno, es probable que presente dificultades en tareas de razonamiento complejo o generacion de codigo avanzado.
-- El modelo solo soporta ingles y espanol; no se garantiza un rendimiento adecuado en otros idiomas.
-- La ejecucion en el navegador depende de la compatibilidad con WebGPU, que no esta disponible en todos los navegadores o dispositivos.
-- El script bridge requiere Python y puede implicar riesgos de seguridad si se ejecuta en entornos no controlados, ya que gestiona descargas y limpieza de archivos.
-- No hay garantias de soporte o mantenimiento a largo plazo, dado que el proyecto parece ser de un desarrollador individual.
+- Ausencia total de documentacion tecnica: no se describe arquitectura, datos de entrenamiento ni proceso de alineacion, lo que impide evaluar su calidad de forma rigurosa.
+- Licencia no disponible: la model card solo indica "copyright 11to 2026", sin terminos de uso. No se puede confirmar si el uso comercial esta permitido, lo que desaconseja su adopcion en produccion sin aclaracion previa del autor.
+- Riesgo de alucinacion: al no publicarse informacion sobre el entrenamiento ni evaluaciones, no es posible estimar la fiabilidad de sus respuestas.
+- Cobertura limitada de idiomas: solo se declaran ingles y castellano; no hay datos sobre el rendimiento en otros idiomas.
+- Longitud de contexto desconocida: no se puede planificar su uso en tareas que requieran ventanas largas.
+- Sin benchmarks publicados: no existen datos objetivos de MMLU, HumanEval, GSM8K ni otras pruebas que permitan compararlo con alternativas.
+- Trazabilidad limitada: el autor de la model card ("11to") y el publicador del repositorio (Miguelms13) no aportan informacion sobre el origen de los datos ni sobre posibles sesgos.
+- Tamano del repositorio elevado (15,6 GB) para un modelo de 1,78 B, lo que sugiere muchas variantes de cuantizacion; conviene revisar los ficheros disponibles antes de descargar.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/Miguelms13/Wiguel-AI-GGUF
-- Aplicacion Wiguel-AI: https://wiguel-ai.vercel.app/
-- Script bridge (GitHub): https://github.com/Miguelms13/wiguel-bridge/blob/main/wiguel-bridge.py
+- Repositorio en Hugging Face: https://huggingface.co/Miguelms13/Wiguel-AI-GGUF
+- No se han encontrado en la busqueda web papers, blogs, repositorios adicionales ni demos asociados al modelo.

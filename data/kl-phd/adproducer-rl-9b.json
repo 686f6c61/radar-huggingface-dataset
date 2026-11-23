@@ -5,7 +5,7 @@
   "author": "KL-PHD",
   "url": "https://huggingface.co/KL-PHD/AdProducer-RL-9B",
   "created_at": "2026-11-22T06:58:32.000Z",
-  "updated_at": "2026-11-22T07:28:26.000Z",
+  "updated_at": "2026-11-22T08:02:49.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -17,9 +17,9 @@
     "qwen3_5",
     "image-text-to-text",
     "conversational",
-    "dataset:KL-PHD/AdProducer-Train-Data",
-    "base_model:KL-PHD/AdProducer-SFT-9B",
-    "base_model:finetune:KL-PHD/AdProducer-SFT-9B",
+    "dataset:AdProducer/AdProducer-Train-Data",
+    "base_model:AdProducer/AdProducer-SFT-9B",
+    "base_model:finetune:AdProducer/AdProducer-SFT-9B",
     "license:apache-2.0",
     "endpoints_compatible",
     "region:us"
@@ -32,7 +32,7 @@
   "storage_bytes": 18839710309,
   "storage_human": "18.8 GB",
   "context_length": null,
-  "base_model": "KL-PHD/AdProducer-SFT-9B",
+  "base_model": "AdProducer/AdProducer-SFT-9B",
   "formats": [
     "safetensors"
   ],
@@ -42,8 +42,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "AdProducer/AdProducer-RL-9B",
+  "renamed_at": "2026-11-23T03:55:46.554Z",
   "benchmarks": [],
   "sources": []
 }

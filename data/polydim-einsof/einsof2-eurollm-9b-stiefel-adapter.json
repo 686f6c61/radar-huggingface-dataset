@@ -5,7 +5,7 @@
   "author": "Polydim-Einsof",
   "url": "https://huggingface.co/Polydim-Einsof/einsof2-eurollm-9b-stiefel-adapter",
   "created_at": "2026-11-17T04:49:20.000Z",
-  "updated_at": "2026-11-21T20:44:48.000Z",
+  "updated_at": "2026-11-23T03:08:24.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -28,7 +28,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 26,
+  "downloads_30d": 84,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

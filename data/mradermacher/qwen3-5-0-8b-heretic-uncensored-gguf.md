@@ -2,88 +2,93 @@
 
 ## Resumen
 
-Qwen3.5-0.8B-Heretic-Uncensored-GGUF es una cuantizacion estatica en formato GGUF del modelo Peymandc/Qwen3.5-0.8B-Heretic-Uncensored, publicada por el usuario mradermacher, conocido por generar y distribuir versiones cuantizadas de modelos abiertos para su uso con llama.cpp y derivados. El repositorio contiene unicamente los pesos cuantizados, no el modelo original ni informacion sobre su entrenamiento.
+Qwen3.5-0.8B-Heretic-Uncensored-GGUF es una distribucion de cuantizaciones GGUF del modelo Peymandc/Qwen3.5-0.8B-Heretic-Uncensored, publicada por mradermacher. El modelo base deriva de la familia Qwen3.5 de Alibaba, en su variante de 0,8 mil millones de parametros, sometida a un proceso de "abliteration" o "decensoring" (etiquetado como heretic/uncensored) que elimina parte de los mecanismos de rechazo del modelo original. Esta version GGUF esta pensada para inferencia local en hardware modesto mediante llama.cpp y derivados.
 
-El modelo base se presenta, por su nombre, como una variante "Heretic" y "Uncensored" de una supuesta familia Qwen3.5 en tamano 0.8B, es decir, una version con las capas de alineacion y rechazo presuntamente eliminadas o reducidas. Sin embargo, no se dispone de model card tecnica del modelo original en la informacion proporcionada, por lo que no es posible verificar arquitectura, datos de entrenamiento ni procedencia real de los pesos.
+La relevancia de esta ficha es doble: por un lado, documenta una cuantizacion estatica de un modelo pequeno (752.393.024 parametros reales en safetensors) disponible en 13 variantes de cuantizacion mas dos ficheros mmproj para el componente multimodal; por otro, expone las limitaciones de trazabilidad de las modificaciones "uncensored", dado que el autor de la cuantizacion no documenta el proceso de abliteration ni los datos de entrenamiento.
 
-La relevancia de esta ficha es limitada y debe interpretarse con cautela: se trata de un artefacto de cuantizacion de un modelo de parametros reducidos (100.592.896 parametros segun los safetensors reportados, lo que no coincide con la denominacion "0.8B"), con cero descargas y cero likes en el momento de la consulta, sin licencia declarada y sin idiomas declarados. Cualquier evaluacion de capacidades debe hacerse por prueba directa, no por las afirmaciones del nombre.
+Se trata de un modelo etiquetado como multimodal y vision-language, con licencia Apache 2.0 heredada del modelo Qwen3.5 base. El repositorio ocupa 7,8 GB e incluye pesos en formato GGUF unicamente; el modelo original en safetensors reside en el repositorio del autor del modelo base.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (el nombre sugiere familia Qwen3.5, sin confirmar) |
-| Parametros totales | 100.592.896 (segun safetensors reportados); la denominacion comercial indica 0.8B |
+| Arquitectura | no disponible (derivada de Qwen3.5; el repositorio no detalla la arquitectura interna) |
+| Parametros totales | 752.393.024 |
 | Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | x-f16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q4_K_M, Q4_K_S, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K, IQ4_XS |
-| Idiomas soportados | no disponible |
-| Licencia | no disponible |
-| Formato de pesos | GGUF (cuantizaciones estaticas) |
+| Tipos de cuantizacion | f16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q4_K_M, Q4_K_S, IQ4_XS, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K; ademas mmproj-f16 y mmproj-Q8_0 para el componente multimodal |
+| Idiomas soportados | en (segun la model card) |
+| Licencia | apache-2.0 |
+| Formato de pesos | GGUF (los safetensors corresponden al modelo base Peymandc/Qwen3.5-0.8B-Heretic-Uncensored) |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion sobre la arquitectura del modelo base en la documentacion proporcionada. El nombre del repositorio remite a la familia Qwen3.5, lo que sugeriria un transformer decoder-only con atencion por grupos de consultas (GQA) y posible modo de razonamiento, pero este dato no esta confirmado en la informacion disponible y no debe asumirse.
+El repositorio no documenta la arquitectura interna del modelo base. Los tags indican que se trata de un modelo de la familia Qwen3.5, multimodal y vision-language, con soporte conversacional y pesos en safetensors en su version original. El dato de parametros totales (752.393.024) corresponde a los safetensors del modelo base. No se especifica si emplea atencion estandar, atencion lineal, mezcla de expertos u otra variante; el conteo de parametros es coherente con un modelo denso de aproximadamente 0,8B.
 
-Tampoco hay datos sobre el numero de tokens de entrenamiento, la composicion del dataset, el uso de RLHF, DPO u otras tecnicas de alineacion, ni sobre el proceso que justifica las etiquetas "Heretic" y "Uncensored". La unica informacion tecnica verificable es el proceso de cuantizacion: la model card incluye metadatos de la herramienta de conversion (`quantize_version: 2`, `output_tensor_quantised: 1`, `convert_type: hf`), lo que indica que los pesos se obtuvieron a partir de un checkpoint en formato Hugging Face y se convirtieron a GGUF con cuantizacion por tensor.
+Respecto al entrenamiento, la informacion disponible no incluye numero de tokens, composicion del dataset, ni si hubo RLHF, DPO u otras fases de alineamiento. La unica informacion relevante es que el modelo ha sido sometido a un proceso de "abliteration" o "decensoring" (tags heretic, uncensored, decensored, abliterated), que tipicamente consiste en identificar y neutralizar direcciones de activacion asociadas a comportamientos de rechazo. El autor de la cuantizacion no documenta la metodologia, los datos ni la evaluacion de dicho proceso; el tag "reproducible" sugiere que el autor del modelo base publico el procedimiento, pero no se detalla en esta informacion.
 
 ## Capacidades
 
-- Generacion de texto autoregresiva en formato GGUF, ejecutable con llama.cpp y runtimes compatibles.
-- Razonamiento y conversacion multi-turno: no verificable sin evaluacion directa; el tamano reducido limita la profundidad de razonamiento.
-- Generacion de codigo y matematicas: no documentado; en modelos de este tamano suele ser limitada.
-- Tool calling / function calling: no disponible en la informacion proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingues: no declaradas; no disponible.
-- Capacidades especiales (modo thinking, vision, audio): no disponible.
-- Ajuste "uncensored": el nombre sugiere ausencia de rechazos en la generacion, sin garantia tecnica ni documentacion que lo respalde.
+- Generacion de texto conversacional multi-turno, segun el tag "conversational".
+- Capacidades multimodales y de vision-lenguaje, segun los tags "multimodal" y "vision-language"; el repositorio incluye ficheros mmproj (f16 y Q8_0) necesarios para procesar imagenes.
+- Comportamiento "uncensored" o "abliterated": el modelo ha sido modificado para reducir los rechazos ante ciertas peticiones, segun los tags del repositorio.
+- Compatibilidad con endpoints (tag "endpoints_compatible").
+- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
+- Capacidades multilingues: la model card declara unicamente "en"; no se documentan otros idiomas.
+- Modo thinking, audio u otras capacidades especiales: no disponible en la informacion proporcionada.
 
 ## Casos de uso
 
-- Pruebas de concepto en hardware muy limitado: al tratarse de un GGUF de ~0,3 GB de repo y cuantizaciones desde Q2_K hasta Q8_0, permite experimentar con inferencia local en CPU o GPUs de gama baja sin requisitos de memoria significativos.
-- Evaluacion de tecnicas de cuantizacion: util para comparar la degradacion de calidad entre Q2_K, Q4_K_M y Q8_0 sobre el mismo checkpoint base en tareas controladas.
-- Generacion de texto offline en dispositivos embebidos: el tamano reducido permite integrar el modelo en aplicaciones de escritorio o moviles mediante llama.cpp, siempre que la calidad exigida sea baja.
-- Filtrado y clasificacion de texto simple: tareas de etiquetado, extraccion de entidades o reformateo donde un modelo pequeno y rapido sea suficiente y no se requiera alta precision.
-- Experimentacion con modelos sin alineacion: para investigadores que estudien el comportamiento de modelos "uncensored" en entornos controlados y con fines de analisis de seguridad.
-- Base para fine-tuning ligero: al ser un modelo de ~100M de parametros, es viable ajustarlo en una sola GPU consumer para tareas especificas de dominio, partiendo de la version f16 o Q8_0.
+- Inferencia local en equipos de gama baja: con cuantizaciones de 0,5-0,7 GB (Q2_K a Q5_K_M), el modelo puede ejecutarse en CPU o en GPU consumer con poca VRAM mediante llama.cpp, lo que lo hace adecuado para prototipado y pruebas en portatiles.
+- Procesamiento de imagenes en local: los ficheros mmproj-f16 y mmproj-Q8_0 permiten desplegar el componente vision-language en llama.cpp para tareas de descripcion de imagenes o respuesta a preguntas visuales sin depender de servicios en la nube.
+- Experimentacion con modelos desbloqueados: investigadores que estudian el efecto de la abliteration sobre el comportamiento del modelo pueden usar esta cuantizacion para comparar respuestas frente a la version original de Qwen3.5-0.8B, con la advertencia de que el proceso no esta documentado en este repositorio.
+- Chat conversacional ligero integrado en aplicaciones de escritorio: el tamano reducido (0,5-0,9 GB por cuantizacion) permite empaquetar el modelo dentro de aplicaciones de escritorio o moviles con llama.cpp como backend.
+- Filtrado y generacion de texto en pipelines por lotes: al ser un modelo pequeno, puede procesar grandes volumenes de texto en CPU con bajo coste energetico, por ejemplo para clasificacion o resumen de documentos cortos.
+- Evaluacion comparativa de cuantizaciones: el repositorio ofrece 12 variantes de cuantizacion mas dos mmproj, lo que permite medir el impacto de Q2_K frente a Q8_0 en calidad de salida sobre el mismo modelo, util para calibrar compromisos tamano/calidad en despliegues reales.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye metricas de MMLU, HumanEval, GSM8K ni de evaluaciones multimodales, ni comparaciones con otros modelos.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: inferior a 1 GB en cuantizaciones Q4_K_M y Q5_K_M; en torno a 0,5-0,7 GB para Q4_K_M y aproximadamente 1 GB para Q8_0, considerando pesos y overhead de contexto.
-- GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM; tambien funciona en CPU pura con llama.cpp.
-- Cabe en GPU consumer: si, en practicamente cualquier GPU moderna (GTX 1050, RTX 3050, RTX 4090, integradas con memoria compartida suficiente).
-- Opciones de despliegue: llama.cpp, Ollama (mediante importacion del GGUF), LM Studio, y servidores compatibles con GGUF como llama-cpp-python. vLLM y TGI no soportan GGUF de forma nativa para este formato sin conversion.
-- Latencia y throughput estimados: no disponibles; por el tamano, se espera generacion en tiempo real o superior en CPU moderna, pero no hay mediciones publicadas.
+- VRAM estimada para inferencia: aproximadamente 0,5 GB para Q2_K, 0,6-0,7 GB para Q4_K_M y Q5_K_M, 0,9 GB para Q8_0 y 1,6 GB para f16. Los ficheros mmproj anaden 0,2-0,3 GB si se usa el componente multimodal.
+- GPU recomendadas: cualquier GPU consumer con 2 GB o mas de VRAM es suficiente para las cuantizaciones pequenas; una RTX 3060, RTX 4060 o superior permite cargar Q8_0 con margen. En entornos de servidor, una A100 o H100 no aporta ventaja significativa por el tamano del modelo, salvo por concurrencia.
+- Cabe en GPU consumer: si, practicamente en cualquier GPU con 2 GB o mas de VRAM; tambien en CPU con llama.cpp.
+- Opciones de despliegue: llama.cpp, Ollama (a partir de GGUF), y servidores compatibles con GGUF. vLLM y TGI no son opciones directas para este repositorio GGUF; para esos motores habria que usar el modelo base en safetensors.
+- Latencia y throughput estimados: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| Qwen3.5-0.8B-Heretic-Uncensored-GGUF (este) | ~100M reportados / 0.8B nominal | no disponible | GGUF | no disponible | Hugging Face, 0 descargas |
-| Qwen2.5-0.5B-Instruct (referencia de tamano similar) | 0.49B | 32K (nominal en la familia) | safetensors, GGUF | Apache 2.0 | Amplia, muy descargado |
-| Llama 3.2 1B Instruct (referencia de tamano similar) | 1.24B | 128K | safetensors, GGUF | Llama 3.2 Community License | Amplia, muy descargado |
-| SmolLM2-135M-Instruct (referencia de tamano menor) | 135M | 8K | safetensors, GGUF | Apache 2.0 | Amplia |
+| Qwen3.5-0.8B-Heretic-Uncensored-GGUF (este) | 752.393.024 | no disponible | apache-2.0 | GGUF | Cuantizacion estatica, multimodal, modificado "uncensored" |
+| Peymandc/Qwen3.5-0.8B-Heretic-Uncensored | 752.393.024 | no disponible | apache-2.0 | safetensors | Modelo base del que deriva esta cuantizacion |
+| Qwen3.5-0.8B (original) | no disponible en esta informacion | no disponible | apache-2.0 | safetensors | Version sin modificacion de alineamiento; referencia para comparar el efecto de la abliteration |
 
-La comparativa es orientativa por tamano; no se dispone de datos de rendimiento del modelo evaluado que permitan una comparacion cuantitativa. Los datos de los modelos de referencia corresponden a sus especificaciones publicas habituales y deben verificarse en sus respectivas model cards.
+No se dispone de datos de rendimiento comparativos entre estas variantes en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de model card tecnica: no hay informacion verificable sobre arquitectura, datos de entrenamiento ni proceso de alineacion.
-- Inconsistencia entre el nombre ("0.8B") y los parametros reportados en safetensors (100.592.896), lo que impide confirmar el tamano real del modelo.
-- Licencia no declarada: no es posible determinar si el uso comercial esta permitido; en ausencia de licencia, debe asumirse que no hay autorizacion explicita.
-- Cero descargas y cero likes: no hay evidencia de uso ni validacion por parte de la comunidad.
-- El etiquetado "uncensored" implica presumiblemente la ausencia de filtros de seguridad, con riesgo de generar contenido inapropiado, sesgado o danino; no apto para produccion orientada al publico sin moderacion adicional.
-- Riesgo elevado de alucinacion y baja calidad en razonamiento, codigo y matematicas por el tamano reducido del modelo.
-- Idiomas no declarados: el soporte multilingue, incluido el castellano, es incierto.
-- Procedencia dudosa del checkpoint base: no se enlaza el modelo original en la informacion disponible mas alla de la referencia a Peymandc/Qwen3.5-0.8B-Heretic-Uncensored, cuya autenticidad y relacion con la familia Qwen oficial no esta verificada.
-- Las cuantizaciones de baja precision (Q2_K, Q3_K_S) degradan notablemente la calidad; para evaluaciones serias usar Q5_K_M o superiores.
+- El proceso de abliteration o decensoring no esta documentado en este repositorio: se desconoce que comportamientos de rechazo se han eliminado y con que metodologia, lo que dificulta evaluar riesgos.
+- La eliminacion de mecanismos de rechazo puede aumentar la probabilidad de generar contenido danino, ofensivo o inexacto; no se recomienda su uso en produccion orientada al publico sin filtros adicionales.
+- Riesgo de alucinacion: al ser un modelo de 0,8B, la capacidad de razonamiento y la fidelidad factual son limitadas; no hay evaluaciones publicadas en esta informacion.
+- Idiomas: la model card declara unicamente ingles; el rendimiento en castellano no esta documentado y probablemente sea inferior.
+- Longitud de contexto: no disponible; no se puede garantizar el manejo de conversaciones o documentos largos.
+- Licencia Apache 2.0: permite uso comercial, pero el modelo base y la modificacion "uncensored" pueden conllevar obligaciones adicionales o implicaciones legales segun la jurisdiccion; conviene revisar la licencia del modelo Qwen3.5 original enlazada en la model card.
+- El repositorio solo distribuye GGUF; para usar vLLM o TGI es necesario acudir al modelo base en safetensors.
+- La fecha de creacion del repositorio (2026-11-19) y el reducido numero de likes (1) sugieren poca validacion comunitaria; no hay evidencia de pruebas independientes.
 
 ## Enlaces
 
-- Repositorio GGUF: https://huggingface.co/mradermacher/Qwen3.5-0.8B-Heretic-Uncensored-GGUF
-- Modelo base referenciado en la model card: https://huggingface.co/Peymandc/Qwen3.5-0.8B-Heretic-Uncensored
-- Perfil del autor de la cuantizacion: https://huggingface.co/mradermacher
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Qwen3.5-0.8B-Heretic-Uncensored-GGUF
+- Modelo base: https://huggingface.co/Peymandc/Qwen3.5-0.8B-Heretic-Uncensored
+- Cuantizaciones con imatrix: https://huggingface.co/mradermacher/Qwen3.5-0.8B-Heretic-Uncensored-i1-GGUF
+- Pagina de descargas del autor: https://hf.tst.eu/model#Qwen3.5-0.8B-Heretic-Uncensored-GGUF
+- Licencia del modelo Qwen3.5-0.8B: https://huggingface.co/Qwen/Qwen3.5-0.8B/blob/main/LICENSE
+- Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Grafico comparativo de cuantizaciones (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png
+- Notas sobre cuantizaciones (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Preguntas frecuentes y solicitudes de modelos: https://huggingface.co/mradermacher/model_requests
+- Empresa del autor: https://www.nethype.de/

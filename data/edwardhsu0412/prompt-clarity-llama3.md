@@ -2,51 +2,49 @@
 
 ## Resumen
 
-`prompt-clarity-llama3` es un ajuste fino (fine-tuning) del modelo Llama 3 8B Instruct de Meta, publicado por el usuario EdwardHsu0412 en Hugging Face. El modelo se distribuye unicamente en formato GGUF cuantizado a Q8_0, lo que lo hace directamente ejecutable con llama.cpp y Ollama, y esta pensado para tareas conversacionales relacionadas con la claridad de instrucciones (prompts). El entrenamiento y la conversion a GGUF se realizaron con la libreria Unsloth, segun indica el autor en la model card.
+prompt-clarity-llama3 es un ajuste fino (fine-tuning) del modelo Llama 3 8B Instruct de Meta, publicado por el usuario EdwardHsu0412 en Hugging Face. El modelo se distribuye exclusivamente en formato GGUF, cuantizado en Q8_0, y está pensado para su uso con llama.cpp y Ollama. El nombre sugiere un entrenamiento orientado a mejorar la claridad de las respuestas o de las instrucciones, aunque la model card no documenta el dataset ni el objetivo concreto del ajuste.
 
-El modelo conserva la arquitectura transformer decoder-only de Llama 3 con 8.030.261.248 parametros (aproximadamente 8B), aunque la informacion publicada no detalla la longitud de contexto efectiva tras el ajuste ni los datos de entrenamiento utilizados. El repositorio ocupa 25,6 GB, coherente con un unico fichero GGUF en cuantizacion Q8_0 de un modelo de 8B.
+Con 8.030.261.248 parámetros (8B), se trata de un transformer decoder-only de la familia Llama 3, con una ventana de contexto nominal de 8.192 tokens en la versión Instruct original. El repositorio ocupa 93,9 GB, un tamaño desproporcionado para un único archivo Q8_0 de 8B (que rondaría los 8,5 GB), lo que sugiere que puede contener múltiples artefactos, pesos intermedios o ficheros adicionales no documentados en la model card.
 
-Su relevancia es limitada pero practica: al estar empaquetado como GGUF y con un Modelfile de Ollama incluido, permite desplegar un modelo conversacional afinado en entornos locales sin necesidad de infraestructura GPU dedicada. No obstante, la ausencia de licencia declarada, de idiomas soportados y de benchmarks publicados obliga a tratarlo con cautela en produccion.
+La relevancia de este modelo es limitada y muy específica: se trata de un ajuste comunitario sin benchmarks publicados, sin licencia declarada y con documentación mínima. Resulta útil como ejemplo de flujo de trabajo con Unsloth para producir GGUF, pero no es una opción recomendable para producción sin una evaluación previa propia.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (base: Llama 3 8B Instruct) |
-| Parametros totales | 8.030.261.248 |
-| Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Q8_0 (unico fichero publicado: `llama-3-8b-Instruct.Q8_0.gguf`) |
+| Arquitectura | Transformer decoder-only (Llama 3) |
+| Parametros totales | 8.030.261.248 (~8B) |
+| Parametros activos | no aplica (modelo denso) |
+| Longitud de contexto | no disponible en la model card (la base Llama 3 8B Instruct soporta 8.192 tokens) |
+| Tipos de cuantizacion | Q8_0 (unico archivo documentado) |
 | Idiomas soportados | no disponible |
 | Licencia | no disponible |
-| Formato de pesos | GGUF |
+| Formato de pesos | GGUF (safetensors como origen del fine-tuning) |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de Llama 3 8B Instruct, un transformer decoder-only con atencion multi-cabeza agrupada (GQA) y tokenizador BPE de 128k entradas, segun la documentacion oficial de Llama 3 en Transformers. Sobre esa base, el autor aplico un ajuste fino supervisado y la conversion a GGUF mediante Unsloth, que segun la model card permitio entrenar "2x mas rapido". No se especifica el numero de tokens de entrenamiento, la composicion del dataset, si se aplico RLHF o DPO, ni el metodo exacto de ajuste (LoRA, QLoRA u otro).
+La arquitectura subyacente es la de Llama 3 8B Instruct: un transformer decoder-only denso con atención multi-cabeza agrupada (GQA), normalización RMSNorm y activación SwiGLU. El fine-tuning se realizó con Unsloth, según indica la model card, que también señala que el entrenamiento fue "2x más rápido" gracias a dicha herramienta. No se especifica el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron técnicas de RLHF, DPO o SFT supervisado.
 
-La unica innovacion tecnica documentada es el ajuste del comportamiento del token BOS para garantizar la compatibilidad con GGUF, un detalle relevante porque un BOS mal configurado degrada la coherencia de las respuestas en llama.cpp. No hay informacion sobre decodificacion especulativa, atencion lineal ni otras optimizaciones. El nombre del modelo sugiere un enfasis en la claridad de prompts, pero la model card no describe la tarea de entrenamiento ni aporta ejemplos.
+El único detalle técnico documentado es un ajuste del comportamiento del token BOS para garantizar la compatibilidad con GGUF. La conversión a GGUF se realizó presumiblemente con las utilidades estándar de llama.cpp integradas en el flujo de Unsloth. No hay información sobre decodificación especulativa, atención lineal ni otras innovaciones.
 
 ## Capacidades
 
-- Generacion de texto conversacional multi-turno, heredada de Llama 3 8B Instruct.
-- Razonamiento basico e intermedio y respuesta a instrucciones, segun las capacidades del modelo base.
-- Generacion de codigo y matematicas a nivel de un modelo de 8B, sin datos especificos de este ajuste.
-- Soporte de plantillas de chat via `--jinja` en llama.cpp, lo que permite usar el chat template del modelo.
-- Compatibilidad con endpoints (tag `endpoints_compatible`), lo que facilita su despliegue en servicios de inferencia compatibles.
-- Despliegue local con Ollama mediante el Modelfile incluido.
-- No se documenta soporte de tool calling, function calling, agentes, vision ni audio en la informacion disponible.
-- Capacidades multilingues: no disponibles en la model card; dependen del modelo base.
+- Generación de texto conversacional en formato instruct, heredada de Llama 3 8B Instruct.
+- Razonamiento básico y respuesta a instrucciones de complejidad media.
+- Generación de código y tareas de matemáticas elementales, con las limitaciones propias de un modelo de 8B.
+- Soporte de plantillas de chat mediante `--jinja` en llama.cpp.
+- Compatibilidad con endpoints (tag `endpoints_compatible`), lo que permite desplegarlo en infraestructuras compatibles con la API de Hugging Face.
+- Capacidades multilingües no documentadas; se asume el perfil de Llama 3 (predominantemente inglés, con soporte parcial de otros idiomas).
+- No se documenta soporte explícito de tool calling, function calling ni modos de razonamiento extendido (thinking).
 
 ## Casos de uso
 
-- Prototipado local de asistentes conversacionales: con el fichero Q8_0 y llama.cpp u Ollama, se puede levantar un chatbot funcional en una maquina de sobremesa sin GPU de datacenter, gracias al formato GGUF y al Modelfile incluido.
-- Ingenieria de prompts asistida: dado el nombre del modelo, puede emplearse para reformular instrucciones ambiguas en prompts claros, aunque no hay evaluacion publicada que lo respalde.
-- Evaluacion de ajustes finos de Llama 3: sirve como caso de estudio de un pipeline Unsloth de fine-tuning y conversion a GGUF para desarrolladores que quieran replicar el flujo.
-- Despliegue en entornos con requisitos de privacidad: al ejecutarse localmente con llama.cpp, los datos no salen de la maquina, lo que encaja en escenarios con datos sensibles.
-- Generacion de texto y resumen en castellano o ingles: viable como modelo generalista de 8B, siempre que se valide la calidad del ajuste en el idioma objetivo.
-- Base para nuevos ajustes: al ser un GGUF Q8_0, puede servir de referencia de calidad para comparar contra el Llama 3 8B Instruct original en tareas de claridad de prompts.
-- Integracion en pipelines de CI/CD para pruebas de prompts: mediante llama-cli con `--jinja` se pueden automatizar comprobaciones de respuestas ante cambios en plantillas.
+- Prototipado local de asistentes conversacionales: al distribuirse en GGUF Q8_0, puede ejecutarse con llama.cpp u Ollama en un portátil con GPU de 12-16 GB de VRAM, lo que facilita pruebas rápidas sin infraestructura cloud.
+- Evaluación de ajustes finos comunitarios: sirve como caso de estudio para comparar el efecto de un fine-tuning con Unsloth frente al Llama 3 8B Instruct original en tareas de claridad de instrucciones.
+- Generación de texto asistida en entornos sin conexión: el formato GGUF permite desplegarlo en máquinas aisladas o edge devices con suficiente memoria.
+- Integración en pipelines de llama.cpp: mediante `llama-cli` o la API server de llama.cpp, puede incorporarse a scripts de procesamiento por lotes de texto.
+- Despliegue con Ollama: la model card incluye un Modelfile, lo que simplifica la creación de una imagen local para uso personal o interno.
+- Experimentación educativa: útil para aprender el flujo completo de fine-tuning con Unsloth y conversión a GGUF, dado que la documentación del proceso es reproducible.
 
 ## Benchmarks y rendimiento
 
@@ -54,38 +52,37 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia en Q8_0: aproximadamente 8,5-9 GB solo para los pesos, mas overhead de contexto KV; en la practica, entre 10 y 12 GB para contextos moderados.
-- GPU recomendadas: RTX 4090 (24 GB) o RTX 3090 (24 GB) para Q8_0 con contexto amplio; A100 o H100 si se necesita mayor throughput o contextos muy largos.
-- Cabe en GPU de consumo: si, en tarjetas con 12 GB o mas (RTX 3060 12 GB, RTX 4070 Ti, RTX 4080) para Q8_0 con contexto limitado; en GPUs de 8 GB habria que recurrir a cuantizaciones menores, que no estan publicadas en este repositorio.
-- Opciones de despliegue: llama.cpp (`llama-cli -hf EdwardHsu0412/prompt-clarity-llama3 --jinja`), Ollama mediante el Modelfile incluido, y servicios compatibles con endpoints.
-- Latencia y throughput: no disponibles; dependen del hardware y de la configuracion de llama.cpp.
+- VRAM estimada para inferencia en Q8_0: aproximadamente 9-10 GB para los pesos, más overhead de contexto KV cache (del orden de 1-2 GB adicionales con contexto de 8K).
+- GPU recomendadas: RTX 4090 (24 GB), RTX 3090 (24 GB), A10G (24 GB), L4 (24 GB) para Q8_0 con contexto completo; A100/H100 no son necesarias para un modelo de 8B.
+- Cabe en GPU de consumo: sí, en RTX 4090, RTX 3090, RTX 4080 (16 GB) y RTX 4070 Ti Super (16 GB) con Q8_0; en GPUs de 12 GB conviene bajar a Q4_K_M o Q5_K_M.
+- Opciones de despliegue: llama.cpp (`llama-cli`, `llama-server`), Ollama (Modelfile incluido), y cualquier runtime compatible con GGUF.
+- Latencia y throughput: no disponibles; dependerán del hardware y de la cuantización.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Formato | Licencia | Notas |
+| Modelo | Parametros | Contexto | Formato | Licencia | Benchmarks publicados |
 |---|---|---|---|---|---|
-| prompt-clarity-llama3 | 8,03B | no disponible | GGUF Q8_0 | no disponible | Ajuste fino de Llama 3 8B Instruct con Unsloth |
-| Llama 3 8B Instruct (Meta) | 8B | 8.192 tokens (modelo base) | safetensors, GGUF | Llama 3 Community License | Modelo original, ampliamente evaluado y con benchmarks publicos |
-| Mistral 7B Instruct | 7,2B | 32.768 tokens | safetensors, GGUF | Apache 2.0 | Alternativa de tamano similar con licencia permisiva |
-| Gemma 2 9B Instruct | 9,2B | 8.192 tokens | safetensors, GGUF | Gemma Terms of Use | Alternativa de Google con rendimiento competitivo en 8-9B |
+| prompt-clarity-llama3 | 8B | no disponible (base 8K) | GGUF Q8_0 | no disponible | no |
+| Meta Llama 3 8B Instruct | 8B | 8.192 tokens | safetensors, GGUF | Llama 3 Community License | sí (MMLU, HumanEval, GSM8K) |
+| Mistral 7B Instruct | 7,3B | 32.768 tokens | safetensors, GGUF | Apache 2.0 | sí |
+| Qwen2.5 7B Instruct | 7,6B | 32.768 tokens | safetensors, GGUF | Apache 2.0 | sí |
 
-La comparativa se limita a datos publicos de los modelos base y alternativas; no hay benchmarks del ajuste fino que permitan una comparacion de rendimiento real.
+Frente a la base Llama 3 8B Instruct, este modelo no aporta documentación que justifique la sustitución; frente a Mistral 7B o Qwen2.5 7B, pierde en contexto, licencia clara y benchmarks publicados.
 
 ## Limitaciones y advertencias
 
-- Licencia no declarada: no se puede confirmar si el uso comercial esta permitido; ademas, al derivar de Llama 3, hereda las restricciones de la Llama 3 Community License, que exige cumplir sus terminos.
-- Sin benchmarks publicados: no hay evidencia de que el ajuste fino mejore al modelo base en ninguna tarea; el nombre "prompt-clarity" no esta respaldado por evaluaciones.
-- Riesgo de alucinacion: inherente a los modelos de 8B, especialmente en tareas de razonamiento complejo o datos factuales.
-- Idiomas no declarados: no se especifica que idiomas cubre el ajuste; el rendimiento en castellano puede degradarse respecto al modelo base.
-- Contexto no documentado: se desconoce si el ajuste altero la ventana de contexto original de Llama 3 8B.
-- Un solo fichero Q8_0: no hay cuantizaciones menores (Q4_K_M, Q5_K_M) publicadas, lo que limita el despliegue en GPUs de 8 GB o menos.
-- Ajuste del token BOS: la model card advierte que se modifico el comportamiento del BOS para GGUF; conviene validar la coherencia de las respuestas en el entorno de destino.
-- Repositorio con 144 descargas y 0 likes: escasa validacion por parte de la comunidad; no se recomienda su uso en produccion sin una evaluacion propia.
-- Fecha de creacion futura (2026-10-28) en los metadatos: inconsistencia que sugiere datos de publicacion poco fiables.
+- Licencia no declarada: no se puede asumir uso comercial sin contactar con el autor; la licencia de Llama 3 subyacente impone además restricciones adicionales (política de uso aceptable de Meta).
+- Ausencia total de benchmarks: no hay evidencia de que el fine-tuning mejore al modelo base; podría incluso degradarlo.
+- Documentación mínima: no se especifica dataset, hiperparámetros, número de épocas ni método de alineación.
+- Riesgo de alucinación: inherente a los modelos de 8B, agravado por la falta de evaluación.
+- Idiomas no documentados: se desconoce si el fine-tuning preserva el multilingüismo parcial de Llama 3.
+- Tamaño del repositorio anómalo (93,9 GB): conviene inspeccionar los archivos antes de descargar; puede contener checkpoints intermedios no deseados.
+- Contexto no verificado: aunque la base soporta 8K, no se confirma que el ajuste preserve esa ventana.
+- Sin garantías de mantenimiento: 0 likes y autor individual; riesgo de abandono del repositorio.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/EdwardHsu0412/prompt-clarity-llama3
-- Documentacion de Llama 3 en Transformers: https://huggingface.co/docs/transformers/model_doc/llama3
-- Repositorio de Unsloth: https://github.com/unslothai/unsloth
-- Documentacion de llama.cpp: https://github.com/ggml-org/llama.cpp
+- Unsloth (herramienta de fine-tuning): https://github.com/unslothai/unsloth
+- llama.cpp (runtime GGUF): https://github.com/ggml-org/llama.cpp
+- Meta Llama 3 (modelo base): https://huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct

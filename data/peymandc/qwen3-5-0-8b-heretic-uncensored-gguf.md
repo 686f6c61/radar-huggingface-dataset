@@ -2,95 +2,97 @@
 
 ## Resumen
 
-Qwen3.5-0.8B-Heretic-Uncensored-GGUF es una distribucion cuantizada en formato GGUF del checkpoint Peymandc/Qwen3.5-0.8B-Heretic-Uncensored, una version del modelo Qwen/Qwen3.5-0.8B de Alibaba Qwen a la que se le ha aplicado la tecnica Heretic v2.1.0 (Arbitrary-Rank Ablation, ARA) para reducir su comportamiento de rechazo aprendido. El modelo conserva la arquitectura y el pipeline multimodal image-text-to-text del original, con 752.393.024 parametros reales en el checkpoint safetensors de origen, y se publica bajo licencia Apache 2.0.
+Qwen3.5-0.8B Heretic Uncensored GGUF es una versión cuantizada en formato GGUF del checkpoint Peymandc/Qwen3.5-0.8B-Heretic-Uncensored, que a su vez deriva del modelo original Qwen/Qwen3.5-0.8B de Alibaba. La modificación consiste en una ablación de rango arbitrario (Arbitrary-Rank Ablation, ARA) aplicada con Heretic v2.1.0 sobre las capas 9 a 20, con el objetivo de eliminar el comportamiento de rechazo aprendido del modelo base. No se trata de un reentrenamiento ni de un fine-tuning supervisado convencional, sino de una intervención sobre los pesos que altera la dirección de activación asociada a las negativas.
 
-El paquete incluye cuatro cuantizaciones del modelo de lenguaje (Q4_K_M, Q6_K, Q8_0 y BF16) y un proyector multimodal BF16 independiente (mmproj) de 207 MB que habilita la entrada de imagenes. La publicacion esta pensada para inferencia local eficiente con llama.cpp y entornos compatibles con GGUF, no para despliegues de alta concurrencia en servidores.
+El modelo conserva la arquitectura y capacidades del Qwen3.5-0.8B original, incluyendo su naturaleza multimodal (pipeline image-text-to-text), pero con el sesgo de rechazo atenuado. El repositorio incluye cuatro cuantizaciones del modelo de lenguaje (Q4_K_M, Q6_K, Q8_0 y BF16) más un proyector multimodal separado en BF16, lo que permite despliegue local en hardware de consumo mediante llama.cpp.
 
-Su relevancia radica en dos factores: por un lado, ofrece una via para ejecutar un modelo multimodal de menos de mil millones de parametros en hardware muy modesto; por otro, documenta de forma transparente el proceso de ablacion aplicado (indices de capas, pesos y metricas de evaluacion), lo que permite evaluar el compromiso entre reduccion de rechazos y divergencia respecto al modelo original.
+Su relevancia actual radica en que ofrece una alternativa de 752 millones de parámetros con capacidades multimodales y ventana de contexto heredada del modelo base, empaquetada para inferencia eficiente en CPU o GPU modesta. La licencia Apache 2.0 facilita su integración comercial, aunque la modificación Heretic introduce consideraciones éticas y de seguridad que conviene evaluar antes de usarlo en producción.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer multimodal (image-text-to-text) derivado de Qwen3.5-0.8B |
-| Parametros totales | 752.393.024 |
-| Parametros activos | no disponible (no se indica que sea MoE) |
+| Arquitectura | Transformer (heredada de Qwen3.5-0.8B; detalles específicos no disponibles) |
+| Parámetros totales | 752.393.024 |
+| Parámetros activos | no disponible (no es MoE según los datos disponibles) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Q4_K_M, Q6_K, Q8_0, BF16 (mas proyector mmproj en BF16) |
+| Tipos de cuantización | Q4_K_M (535 MB), Q6_K (630 MB), Q8_0 (812 MB), BF16 (1,52 GB); proyector multimodal BF16 (207 MB) |
 | Idiomas soportados | no disponible |
-| Licencia | apache-2.0 |
+| Licencia | Apache 2.0 |
 | Formato de pesos | GGUF (safetensors en el checkpoint base) |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de Qwen/Qwen3.5-0.8B y no ha sido reentrenado: la modificacion consiste en una ablacion de rangos arbitrarios (ARA) aplicada con Heretic v2.1.0 sobre las capas 9 a 20, con los pesos `preserve_good_behavior_weight=0.4395`, `steer_bad_behavior_weight=0.0002`, `overcorrect_relative_weight=0.6954` y `neighbor_count=2`. Esta intervencion altera el comportamiento de rechazo aprendido sin ejecutar un nuevo preentrenamiento ni un fine-tuning supervisado convencional. El pipeline declarado es image-text-to-text, lo que implica que el modelo original incorpora codificacion visual; el repositorio GGUF separa esa componente en un proyector multimodal BF16 independiente que debe cargarse junto a los pesos del lenguaje para procesar imagenes.
+La arquitectura subyacente es la del Qwen3.5-0.8B original, un transformer de 752 millones de parámetros con capacidad multimodal (procesamiento de imagen y texto). Sobre ese checkpoint se aplicó Heretic v2.1.0 con su método de Ablación de Rango Arbitrario (ARA), configurado con `start_layer_index` 9, `end_layer_index` 20, `preserve_good_behavior_weight` 0,4395, `steer_bad_behavior_weight` 0,0002, `overcorrect_relative_weight` 0,6954 y `neighbor_count` 2. Esta intervención modifica los pesos en el rango de capas indicado para redirigir las activaciones asociadas al rechazo, sin ejecutar un nuevo preentrenamiento ni un fine-tuning supervisado.
 
-No se dispone de informacion sobre el numero de tokens de entrenamiento, la composicion del dataset, ni sobre si el modelo original empleo RLHF o DPO. Tampoco se documentan innovaciones tecnicas adicionales como decodificacion especulativa o atencion lineal en la informacion proporcionada.
+No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni si hubo etapas de RLHF o DPO en el modelo original, ya que la model card no los detalla. La evaluación reportada por el autor sobre el checkpoint safetensors fuente indica una reducción de las coincidencias de palabras clave de rechazo del 93% al 8% sobre los primeros 100 prompts de `mlabonne/harmful_behaviors`, con una divergencia KL de 0,0675 frente al modelo original medida sobre `mlabonne/harmless_alpaca`. Estos datos corresponden al checkpoint safetensors, no a las variantes GGUF, que no han sido evaluadas de forma independiente según la propia model card.
 
 ## Capacidades
 
-- Generacion de texto conversacional multi-turno en el formato esperado por llama.cpp.
-- Procesamiento de imagenes como entrada (image-text-to-text) mediante el proyector mmproj BF16 incluido.
-- Reduccion del comportamiento de rechazo: la evaluacion del checkpoint fuente reporta 8/100 coincidencias de palabras clave de rechazo frente a 93/100 del Qwen3.5-0.8B original.
-- Inferencia local en CPU y GPU a traves de llama.cpp y runtimes compatibles con GGUF.
-- Capacidades de razonamiento, codigo, matematicas, tool calling o agentes: no disponibles en la informacion proporcionada.
-- Cobertura multilingue: no disponible en la informacion proporcionada.
+- Generación de texto conversacional multi-turno, heredada del modelo base Qwen3.5-0.8B.
+- Procesamiento multimodal imagen-texto mediante el proyector `mmproj` en BF16 incluido en el repositorio.
+- Comportamiento de rechazo atenuado: la modificación Heretic reduce las negativas ante peticiones que el modelo original rechazaría.
+- Inferencia local eficiente mediante llama.cpp en formatos GGUF.
+- Compatibilidad con endpoints (tag `endpoints_compatible`).
+- Capacidades específicas de tool calling, agentes, matemáticas o código: no disponibles en la información proporcionada.
+- Idiomas soportados: no disponibles en la información proporcionada.
 
 ## Casos de uso
 
-- Prototipado local de asistentes conversacionales: con la cuantizacion Q4_K_M (535 MB) el modelo se ejecuta en equipos con poca memoria, lo que permite iterar sobre prompts y flujos conversacionales sin depender de APIs externas.
-- Procesamiento de imagenes en el borde: el par de archivos Q4_K_M mas mmproj BF16 (535 MB + 207 MB) permite describir o interpretar imagenes en portatiles y mini-PC sin GPU dedicada, usando llama.cpp con soporte multimodal.
-- Investigacion sobre alineacion y rechazo: las metricas publicadas (8/100 frente a 93/100 y KL de 0.0675) permiten estudiar el efecto de la ablacion ARA sobre el comportamiento del modelo y comparar con otras tecnicas de decensurado.
-- Evaluacion de tecnicas de cuantizacion: al ofrecer cuatro variantes del mismo checkpoint (Q4_K_M, Q6_K, Q8_0, BF16), sirve para medir el impacto de la precision en tareas concretas antes de fijar una configuracion de produccion.
-- Generacion de contenido sin restricciones de rechazo en entornos controlados: util para pruebas de robustez, red teaming interno y analisis de respuestas del modelo ante prompts sensibles, siempre dentro de un marco de uso responsable.
-- Despliegue en dispositivos con recursos limitados: con BF16 (1,52 GB) el modelo cabe en GPUs de consumo de gama media y en sistemas con 8 GB de RAM, lo que facilita demos y entornos de desarrollo embebidos.
+- Inferencia local en hardware de consumo: la cuantización Q4_K_M de 535 MB permite ejecutar el modelo en CPU o en GPUs con poca VRAM, útil para prototipos y pruebas de concepto sin infraestructura dedicada.
+- Procesamiento de imágenes en local: el proyector multimodal BF16 (207 MB) habilita tareas de image-text-to-text en entornos sin conexión, como descripción de imágenes o extracción de información visual.
+- Investigación sobre alineación y rechazo: el modelo sirve como objeto de estudio para analizar cómo la ablación ARA afecta al comportamiento de negativa y a la divergencia KL respecto al original.
+- Generación de contenido creativo sin restricciones de rechazo: escritura de ficción, guiones o narrativa donde el modelo base podría negarse por temáticas sensibles.
+- Asistentes conversacionales de bajo coste: despliegue en dispositivos edge o entornos con recursos limitados gracias al tamaño reducido del modelo.
+- Evaluación comparativa de cuantizaciones: los cuatro formatos GGUF permiten medir el impacto de la precisión (Q4_K_M frente a Q8_0 o BF16) en la calidad de salida sobre el mismo checkpoint.
+- Pruebas de pipelines multimodales con llama.cpp: integración del modelo y el proyector en flujos de inferencia local para validar latencia y consumo de memoria.
 
 ## Benchmarks y rendimiento
 
-La model card no publica benchmarks de calidad (MMLU, HumanEval, GSM8K u otros) para las variantes GGUF. Los unicos datos de evaluacion disponibles corresponden al checkpoint safetensors fuente y miden el efecto de la modificacion Heretic:
+La model card reporta únicamente métricas de la modificación Heretic sobre el checkpoint safetensors fuente, no sobre las variantes GGUF:
 
-| Metrica | Checkpoint modificado | Qwen3.5-0.8B original |
-|---|---:|---:|
-| Coincidencias de palabras clave de rechazo (KeywordRate, primeros 100 prompts de mlabonne/harmful_behaviors) | 8/100 (8%) | 93/100 (93%) |
-| Divergencia KL (primeros 100 prompts de mlabonne/harmless_alpaca) | 0.0675 | 0.0000 (por definicion) |
+| Métrica | Checkpoint modificado | Qwen3.5-0.8B original |
+|---|---|---|
+| Coincidencias de palabras clave de rechazo | 8/100 (8%) | 93/100 (93%) |
+| Divergencia KL | 0,0675 | 0,0000 (por definición) |
 
-No se han publicado resultados de benchmarks de capacidad (razonamiento, codigo, matematicas, vision) en la informacion disponible. El autor indica explicitamente que no existen comparativas de calidad ni de velocidad entre las distintas cuantizaciones GGUF.
+No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, etc.) en la información disponible, ni para el checkpoint safetensors ni para las cuantizaciones GGUF. La propia model card indica que no existen benchmarks comparativos de calidad o velocidad para las variantes GGUF individuales.
 
 ## Requisitos de hardware
 
-- VRAM/RAM estimada para los pesos: Q4_K_M 535 MB, Q6_K 630 MB, Q8_0 812 MB, BF16 1,52 GB; el proyector multimodal anade 207 MB si se procesan imagenes.
-- El consumo real de memoria es superior al tamano de archivo: depende de la longitud de contexto, la cache KV, los buffers del runtime, el offloading a GPU y la carga del proyector.
-- GPU recomendadas: cualquier GPU con al menos 2-4 GB de VRAM libre puede alojar las variantes cuantizadas; una RTX 3060, RTX 4060 o superior permite cargar el modelo completo en GPU con margen para contexto amplio. Para BF16 con contexto largo se recomienda 4 GB o mas de VRAM.
-- Cabe en GPU de consumo: si, en toda la gama actual (GTX 1060 6 GB, RTX 3050, RTX 4090, etc.), asi como en CPU con 4-8 GB de RAM.
-- Opciones de despliegue: llama.cpp es el runtime de referencia; tambien Ollama y otros frontends compatibles con GGUF. vLLM y TGI no se mencionan como soportados en la informacion disponible.
-- Latencia y throughput: no disponibles; el autor no publica mediciones.
+- VRAM estimada para inferencia: los tamaños de archivo son Q4_K_M 535 MB, Q6_K 630 MB, Q8_0 812 MB y BF16 1,52 GB; el consumo real de RAM/VRAM depende de la longitud de contexto, la caché KV, los buffers del runtime y si se carga el proyector multimodal.
+- GPU recomendadas: no disponibles en la información proporcionada; por el tamaño del modelo, cabe en GPUs de consumo con suficiente VRAM para el contexto elegido.
+- Cabe en GPU de consumo: sí, todas las cuantizaciones son compatibles con GPUs de consumo; la Q4_K_M es la más adecuada para entornos con VRAM muy limitada.
+- Opciones de despliegue: llama.cpp (formato nativo GGUF); otros runtimes compatibles con GGUF no están confirmados en la información disponible.
+- Latencia y throughput estimados: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Multimodal | Licencia | Formato |
-|---|---:|---|---|---|---|
-| Peymandc/Qwen3.5-0.8B-Heretic-Uncensored-GGUF | 752 M | no disponible | Si (mmproj) | Apache 2.0 | GGUF |
-| Qwen/Qwen3.5-0.8B (original) | 752 M | no disponible | Si | Apache 2.0 | safetensors |
-| Peymandc/Qwen3.5-0.8B-Heretic-Uncensored (safetensors) | 752 M | no disponible | Si | Apache 2.0 | safetensors |
+| Modelo | Parámetros | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|
+| Peymandc/Qwen3.5-0.8B-Heretic-Uncensored-GGUF | 752 M | no disponible | Apache 2.0 | GGUF | Versión cuantizada con ablación Heretic |
+| Peymandc/Qwen3.5-0.8B-Heretic-Uncensored | 752 M | no disponible | Apache 2.0 | safetensors | Checkpoint fuente de la modificación |
+| Qwen/Qwen3.5-0.8B | 752 M | no disponible | no disponible en la información | safetensors | Modelo original sin modificar |
 
-La comparativa se limita al linaje directo del modelo, ya que la informacion disponible no incluye datos de rendimiento frente a alternativas de otros autores. La diferencia principal entre las tres variantes es el formato de pesos y la presencia o ausencia de la modificacion Heretic: el GGUF y el safetensors modificado incorporan la ablacion, mientras que el original de Qwen no.
+No se dispone de datos de rendimiento comparativo entre estas variantes más allá de las métricas de rechazo y divergencia KL reportadas. Otras alternativas de la misma categoría (modelos multimodales de menos de 1.000 millones de parámetros) no están documentadas en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- La reduccion de rechazos es deliberada: el modelo respondera a prompts que el original rechazaria, lo que exige politicas de uso y moderacion externas en cualquier despliegue publico.
-- La evaluacion de rechazo se basa en coincidencia de palabras clave (KeywordRate), no en un clasificador semantico ni en revision humana; el 8% puede no reflejar el comportamiento real en produccion.
-- La divergencia KL de 0.0675 respecto al original indica que la ablacion altera la distribucion de salidas mas alla del comportamiento de rechazo, con posible degradacion en tareas generales no medida.
-- No hay datos publicados sobre sesgos, tasas de alucinacion ni rendimiento por idioma; el campo de idiomas figura como no disponible.
-- La longitud de contexto no esta documentada en la informacion proporcionada, lo que impide dimensionar la cache KV con precision.
-- Licencia Apache 2.0: permite uso comercial, pero el usuario es responsable del cumplimiento normativo y de las condiciones de uso del modelo base de Qwen.
-- El repositorio registra 0 descargas y 0 likes en el momento de la consulta, y el autor no ofrece garantias de mantenimiento ni soporte.
-- No se han publicado benchmarks de calidad ni de velocidad para las variantes GGUF; las diferencias de rendimiento entre cuantizaciones son desconocidas.
+- La modificación Heretic elimina parcialmente el comportamiento de rechazo, lo que puede facilitar la generación de contenido dañino, sesgado o inapropiado; no debe desplegarse sin filtros de seguridad externos en aplicaciones de cara al público.
+- Las métricas de rechazo se basan en un scorer de palabras clave (`KeywordRate`), no en un clasificador semántico ni en revisión humana; el 8% reportado es un proxy, no una evaluación exhaustiva.
+- La divergencia KL de 0,0675 respecto al original indica un cambio medible en la distribución de salidas que puede afectar a la calidad en tareas generales, no solo en las relacionadas con el rechazo.
+- Las cuantizaciones GGUF no han sido evaluadas de forma independiente; su calidad puede diferir del checkpoint safetensors fuente.
+- Riesgo de alucinación inherente a un modelo de 752 millones de parámetros; no se han publicado evaluaciones de fidelidad factual.
+- Idiomas soportados y longitud de contexto no documentados en la información disponible.
+- Aunque la licencia es Apache 2.0, el uso comercial de un modelo con el rechazo atenuado puede conllevar riesgos legales y reputacionales según la jurisdicción y el caso de uso.
+- El modelo base Qwen3.5-0.8B y sus datos de entrenamiento no están detallados en la información proporcionada, lo que limita la evaluación de sesgos heredados.
 
 ## Enlaces
 
 - Repositorio GGUF: https://huggingface.co/Peymandc/Qwen3.5-0.8B-Heretic-Uncensored-GGUF
-- Checkpoint safetensors modificado: https://huggingface.co/Peymandc/Qwen3.5-0.8B-Heretic-Uncensored
+- Checkpoint safetensors fuente: https://huggingface.co/Peymandc/Qwen3.5-0.8B-Heretic-Uncensored
 - Modelo original: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Proyecto Heretic: https://heretic-project.org
-- Pagina de soporte del autor: https://huggingface.co/spaces/Peymandc/support
-- Badge Model Pulse: https://huggingface.co/spaces/tardellirs/model-pulse?model=Peymandc/Qwen3.5-0.8B-Heretic-Uncensored
+- Página de apoyo del autor: https://huggingface.co/spaces/Peymandc/support
+- Dataset de evaluación de rechazo: `mlabonne/harmful_behaviors` (referenciado en la model card)
+- Dataset de evaluación de divergencia KL: `mlabonne/harmless_alpaca` (referenciado en la model card)

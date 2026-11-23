@@ -2,122 +2,114 @@
 
 ## Resumen
 
-Qwen3.5-2B-Weight-Space-Programming (WSP v3.0) es una adaptación del modelo base Qwen/Qwen3.5-2B publicada por el usuario jstarks en Hugging Face. No se trata de un modelo entrenado de forma convencional, sino de una colección de parches de pesos en espacio de pesos (weight-space programming) sintetizados de forma cerrada y sin entrenamiento (training-free, closed-form). El paquete incluye nueve subespacios LoRA de rango 16 en formato GGUF y safetensors, además de un parche denso combinado en BF16 de 216 MiB, orientados a modificar el comportamiento del modelo base en tareas de razonamiento, uso de herramientas, generación de código y robustez conversacional.
+Qwen3.5-2B-Weight-Space-Programming es una adaptación del modelo base Qwen/Qwen3.5-2B (1.881.825.088 parámetros reales según safetensors) publicada por el usuario jstarks. No se trata de un modelo entrenado de forma convencional, sino de una aplicación de la técnica denominada Weight-Space Programming (WSP v3.0), descrita por el autor como una arquitectura de "9-Subspace Dynamic LoRA" que opera sin entrenamiento (training-free) y con solución en forma cerrada (closed-form) sobre los pesos del modelo base. El objetivo declarado es modular el comportamiento del modelo en tareas de razonamiento, uso de herramientas y agentes sin reentrenar.
 
-El modelo base Qwen3.5-2B tiene 24 capas, hidden_size de 2048, intermediate_size de 6144, MLP con activación SwiGLU y RMSNorm con sesgo (1+w). El autor reporta 1.881.825.088 parámetros reales en safetensors (aproximadamente 1,88 mil millones), un repositorio de 1,6 GB y una licencia Apache 2.0. La propuesta resulta relevante para la comunidad de interpretabilidad mecanicista y para quienes experimentan con adaptación de modelos sin reentrenamiento, ya que ofrece un pipeline reproducible de parches de bajo rango evaluado sobre 100 tareas.
+El modelo se distribuye bajo licencia Apache 2.0, con pesos en safetensors y GGUF, y está pensado para despliegue en entornos de recursos limitados: el autor reporta que la variante cuantizada Q4_K_M ocupa 1.193 GiB y que el modelo cabe en una RTX 2060 de 6 GB con unos 4,4 GiB libres a contexto de 16k. La velocidad medida en el pipeline del autor es de 226,5 tok/s, la más alta de los cinco modelos comparados en su estudio.
 
-La evaluación publicada por el autor es honesta y poco halagüeña: el parche WSP v3.0 obtiene 55/100 frente a los 57/100 del modelo base, es decir, una pérdida neta de 2 puntos porcentuales. El modelo destaca por su velocidad (226,5 tok/s con cuantización q8_0 en contexto de 16k) y su bajo consumo de VRAM (delta pico de 1979 MiB), lo que lo hace apto para GPUs de gama media y entornos de borde, pero no por una mejora medible de capacidades.
+La relevancia de esta ficha es doble: por un lado, documenta un experimento de interpretabilidad mecanicista y programación de pesos sobre un modelo pequeño; por otro, los resultados publicados por el autor muestran que la intervención WSP v3.0 no mejora el rendimiento agregado del modelo base (55/100 frente a 57/100, es decir, -2,0 pp), por lo que debe evaluarse con cautela antes de usarse en producción.
 
 ## Especificaciones técnicas
 
 | Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (Qwen3.5), 24 capas, hidden_size 2048, intermediate_size 6144, MLP SwiGLU, RMSNorm 1+w |
-| Parámetros totales | 1.881.825.088 (~1,88 B) |
+| Arquitectura | Transformer decoder-only (base Qwen3.5-2B); intervención WSP v3.0 de 9 subespacios con LoRA dinámico; 24 capas, hidden_size=2048, intermediate_size=6144, MLP SwiGLU, RMSNorm 1+w |
+| Parámetros totales | 1.881.825.088 |
 | Parámetros activos | No aplica (no es MoE) |
-| Longitud de contexto | 16384 tokens en la configuración de evaluación reportada (-c 16384) |
-| Tipos de cuantización | GGUF Q4_K_M (1.193 GiB), caché KV q8_0; LoRA GGUF y safetensors r16 f32; parche denso BF16 |
+| Longitud de contexto | 16.384 tokens en la configuración de evaluación del autor (-c 16384); contexto nativo del modelo base no disponible |
+| Tipos de cuantización | GGUF Q4_K_M (1.193 GiB); cuantización de caché KV q8_0 (q8_0/q8_0); otros tipos no disponibles |
 | Idiomas soportados | No disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | Safetensors (modelo base y parches r16), GGUF (modelo y adaptadores LoRA) |
+| Formato de pesos | Safetensors, GGUF |
 
 ## Arquitectura y entrenamiento
 
-El modelo hereda la arquitectura del Qwen3.5-2B: un transformer decoder-only de 24 capas con atención estándar, MLP SwiGLU de dimensión intermedia 6144 y normalización RMSNorm con parametrización 1+w. Sobre esta base, el autor aplica Weight-Space Programming (WSP v3.0), una técnica de síntesis de pesos en forma cerrada que no requiere entrenamiento por gradiente. El resultado son nueve subespacios LoRA de rango 16 en precisión f32, cada uno dirigido a un comportamiento concreto (pensamiento, contención de herramientas, enrutamiento multi-herramienta, síntesis de código, JSON estructurado en segundo turno, traspaso de escalado, guardia contra inyección indirecta, abstención fundamentada y autorrecuperación de errores), más un parche denso combinado con suma unitaria en BF16.
+El modelo parte de Qwen/Qwen3.5-2B, un transformer decoder-only de 24 capas con hidden_size de 2048, intermediate_size de 6144, MLP SwiGLU y normalización RMSNorm con la variante 1+w. Sobre esa base, el autor aplica WSP v3.0, descrito como una programación de pesos en forma cerrada y sin entrenamiento, organizada en nueve subespacios (S1 a S9) con LoRA dinámico y un modo de síntesis denominado "calibrated_proxy_weight_space". La model card menciona también las etiquetas deltanet y edge-leaf, aunque no se detalla en la información disponible en qué consiste su implementación concreta.
 
-El autor denomina al modo de síntesis `calibrated_proxy_weight_space`, lo que sugiere que los deltas de pesos se calculan a partir de un proxy calibrado en lugar de un ajuste supervisado clásico. No se documentan en la información disponible el volumen de tokens de entrenamiento, la composición del dataset ni el uso de RLHF o DPO, ya que el proceso no es un entrenamiento convencional. La innovación principal es el propio pipeline de parcheado modular: permite cargar adaptadores GGUF en llama-server o safetensors en PyTorch/Transformers de forma selectiva por comportamiento.
+No se especifica en la información proporcionada el número de tokens de entrenamiento, la composición del dataset, ni si hubo fases de RLHF o DPO; al ser una intervención training-free, no cabe esperar un pipeline de alineamiento convencional, pero este extremo no se confirma en la documentación. La innovación técnica destacable es precisamente el método WSP: una modificación de pesos derivada analíticamente en lugar de aprendida por descenso de gradiente, evaluada de extremo a extremo sobre 100 tareas unificadas y 20 tareas de Terminal-Bench 2.0 en contenedores WSL2 con estado.
 
 ## Capacidades
 
-- Generación de texto y razonamiento multi-turno sobre el modelo base Qwen3.5-2B.
-- Síntesis de código de rango medio (suite S4_CODE) y resolución de problemas tipo HumanEval.
-- Tool calling y enrutamiento multi-herramienta (suite S3_ROUTER, BFCL v3).
-- Contención de herramientas y antisicofancia: el modelo puede abstenerse de invocar herramientas cuando no procede (S2_RESTRAINT).
-- Salida JSON estructurada en segundo turno conversacional (S5_TURN2_JSON).
-- Traspaso de escalado a un humano o sistema superior (S6_HANDOFF).
-- Guardia contra inyección indirecta de prompts (S7_INJ_GUARD).
-- Abstención fundamentada cuando falta información (S8_GROUNDING).
-- Autorrecuperación de errores en cadenas de agente (S9_ERR_RECOV).
-- Ejecución de comandos de shell a partir de lenguaje natural (NL2Bash).
-- Capacidad multimodal declarada por el tag `image-text-to-text` del modelo base, aunque no se detalla su uso en la evaluación.
-- No se documentan capacidades de audio ni modo thinking explícito más allá de la suite S1_THINK.
+- Generación de texto conversacional y razonamiento de múltiples pasos, con un modo de "think closure" evaluado en el conjunto S1.
+- Síntesis de código: el conjunto S4 (Mid-Band Code Synthesis) y HumanEval pass@1 forman parte de la evaluación.
+- Tool calling y enrutamiento multi-herramienta, evaluado en el conjunto S3 (Multi-Tool Router) y en BFCL v3 Irrelevance.
+- Restricción de herramientas y anti-sicofancia (S2), orientada a que el modelo no invoque herramientas innecesariamente ni ceda ante premisas erróneas.
+- Salida estructurada en JSON en el segundo turno de conversación (S5), con una mejora reportada de 1/3 a 3/3 en ese conjunto.
+- Puerta de escalado o handoff (S6), guardia frente a inyección indirecta de prompts (S7), abstención fundamentada (S8) y autorrecuperación de errores (S9).
+- Capacidades de agente en terminal: ejecución de tareas bash con estado en contenedores, evaluadas en Terminal-Bench 2.0.
+- Procesamiento image-text-to-text según las etiquetas del repositorio, aunque no se detalla la implementación en la información disponible.
 
 ## Casos de uso
 
-- Agente de borde en GPUs de gama media: con un delta pico de 1979 MiB a 16k de contexto, el modelo cabe sobradamente en una RTX 2060 de 6 GB (~4,4 GiB libres), lo que permite desplegar agentes locales con tool calling sin depender de la nube.
-- Enrutador de herramientas en pipelines de automatización: la suite S3_ROUTER y el adaptador `wsp_s3_router.gguf` permiten seleccionar entre varias APIs o funciones en un flujo multi-paso, con una tasa base del 60% que el autor documenta de forma transparente.
-- Generación de comandos de shell asistida: el adaptador NL2Bash (12/20 en InterCode-NL2Bash) sirve para prototipos de asistentes de terminal, siempre con revisión humana antes de ejecutar.
-- Extracción de JSON en conversaciones de segundo turno: el adaptador S5_TURN2_JSON eleva la tasa del 33,3% al 100% en las tres tareas de holdout, útil en integraciones de formularios o APIs estructuradas.
-- Defensa contra inyección de prompts en aplicaciones RAG: el adaptador S7_INJ_GUARD mantiene el 100% en las tareas de holdout, adecuado como capa de filtrado en asistentes documentales.
-- Investigación en interpretabilidad mecanicista: los nueve subespacios r16 en safetensors permiten estudiar cómo un delta de bajo rango afecta a comportamientos concretos sin reentrenar el modelo.
-- Prototipado rápido con llama.cpp: la velocidad de 226,5 tok/s y el tamaño Q4_K_M de 1.193 GiB facilitan ciclos de iteración cortos en portátiles con GPU consumer.
-- Cascada de modelos: el autor lo propone como Tier-1 ultra-ligero en una cascada junto a modelos de 4B o 9B para tareas de baja complejidad.
+- Enrutamiento de herramientas en asistentes: el modelo puede decidir qué función invocar en un flujo con varias herramientas disponibles, aprovechando la evaluación específica del conjunto S3 y su ventana de 16k tokens para mantener el historial de llamadas en contexto.
+- Generación de JSON estructurado en diálogos multi-turno: útil en backends que necesitan respuestas parseables en el segundo turno, donde el autor reporta una mejora de 1/3 a 3/3 tras la intervención WSP.
+- Guardia frente a inyección de prompts: el conjunto S7 evalúa la resistencia a inyección indirecta, lo que permite usarlo como capa de filtrado en pipelines de agentes que procesan contenido externo.
+- Automatización de terminal en entornos controlados: las 20 tareas de Terminal-Bench 2.0 en WSL2 demuestran capacidad de operar comandos bash con realimentación de código de salida, aunque con una tasa de éxito baja (3/20).
+- Despliegue en hardware de gama baja: con 1.193 GiB en Q4_K_M y un pico de VRAM de 1979 MiB a 16k, es adecuado para prototipos en una RTX 2060 de 6 GB o como hoja ultraligera en una cascada de modelos.
+- Investigación en interpretabilidad mecanicista: el repositorio documenta la metodología WSP y sus resultados por conjunto, lo que lo convierte en material de estudio para experimentos de modificación de pesos sin entrenamiento.
+- Evaluación comparativa de técnicas de adaptación: sirve como referencia negativa o de control en estudios que comparen LoRA entrenado frente a programación de pesos en forma cerrada.
 
 ## Benchmarks y rendimiento
 
-Resultados publicados por el autor sobre 100 tareas (30 de holdout S1–S9 y 70 de benchmarks públicos), con decodificación `temperature=0.0, seed=42, -c 16384 -ctk q8_0 -ctv q8_0`:
+Resultados publicados por el autor con decodificación temperature=0.0, seed=42, -c 16384, caché KV q8_0. La comparación es entre el modelo base y la versión WSP v3.0 sobre las mismas 100 tareas.
 
-| Suite | Tareas | Base | WSP v3.0 | Tokens medios (base → WSP) |
+| Conjunto | Tareas | Base | WSP v3.0 | Delta |
 |---|---:|---:|---:|---:|
-| S1_THINK | 3 | 1/3 (33,3%) | 1/3 (33,3%) | 1024,0 → 1024,0 |
-| S2_RESTRAINT | 4 | 3/4 (75,0%) | 3/4 (75,0%) | 317,5 → 314,2 |
-| S3_ROUTER | 5 | 3/5 (60,0%) | 3/5 (60,0%) | 202,8 → 181,4 |
-| S4_CODE | 2 | 2/2 (100,0%) | 0/2 (0,0%) | 1024,0 → 1024,0 |
-| S5_TURN2_JSON | 3 | 1/3 (33,3%) | 3/3 (100,0%) | 96,3 → 106,0 |
-| S6_HANDOFF | 4 | 4/4 (100,0%) | 4/4 (100,0%) | 171,2 → 159,2 |
-| S7_INJ_GUARD | 3 | 3/3 (100,0%) | 3/3 (100,0%) | 88,7 → 96,7 |
-| S8_GROUNDING | 3 | 3/3 (100,0%) | 3/3 (100,0%) | 128,0 → 131,0 |
-| S9_ERR_RECOV | 3 | 3/3 (100,0%) | 3/3 (100,0%) | 76,7 → 95,7 |
-| GSM8K (20) | 20 | 5/20 (25,0%) | 4/20 (20,0%) | 1024,0 → 1024,0 |
-| HumanEval pass@1 (15) | 15 | 8/15 (53,3%) | 8/15 (53,3%) | 804,5 → 826,5 |
-| BFCL v3 Irrelevance (15) | 15 | 9/15 (60,0%) | 8/15 (53,3%) | 282,9 → 313,4 |
-| NL2Bash (20) | 20 | 12/20 (60,0%) | 12/20 (60,0%) | 343,6 → 339,9 |
-| **Total** | **100** | **57/100 (57,0%)** | **55/100 (55,0%)** | — |
+| S1 Think Closure | 3 | 1/3 (33,3%) | 1/3 (33,3%) | 0,0 pp |
+| S2 Tool Restraint | 4 | 3/4 (75,0%) | 3/4 (75,0%) | 0,0 pp |
+| S3 Multi-Tool Router | 5 | 3/5 (60,0%) | 3/5 (60,0%) | 0,0 pp |
+| S4 Mid-Band Code | 2 | 2/2 (100,0%) | 0/2 (0,0%) | -100,0 pp |
+| S5 Turn-2 JSON | 3 | 1/3 (33,3%) | 3/3 (100,0%) | +66,7 pp |
+| S6 Handoff Gate | 4 | 4/4 (100,0%) | 4/4 (100,0%) | 0,0 pp |
+| S7 Injection Guard | 3 | 3/3 (100,0%) | 3/3 (100,0%) | 0,0 pp |
+| S8 Grounded Abstention | 3 | 3/3 (100,0%) | 3/3 (100,0%) | 0,0 pp |
+| S9 Error Recovery | 3 | 3/3 (100,0%) | 3/3 (100,0%) | 0,0 pp |
+| GSM8K (20) | 20 | 5/20 (25,0%) | 4/20 (20,0%) | -5,0 pp |
+| HumanEval pass@1 (15) | 15 | 8/15 (53,3%) | 8/15 (53,3%) | 0,0 pp |
+| BFCL v3 Irrelevance (15) | 15 | 9/15 (60,0%) | 8/15 (53,3%) | -6,7 pp |
+| NL2Bash (20) | 20 | 12/20 (60,0%) | 12/20 (60,0%) | 0,0 pp |
+| Total 100 tareas | 100 | 57/100 (57,0%) | 55/100 (55,0%) | -2,0 pp |
+| Terminal-Bench 2.0 | 20 | 3/20 (15,0%) | 3/20 (15,0%) | 0,0 pp |
 
-Rendimiento medido: 226,5 tok/s, delta de carga de 1445 MiB y delta de VRAM pico de 1979 MiB con contexto de 16k y caché KV q8_0.
+Rendimiento medido: 226,5 tok/s, delta de carga de 1445 MiB y pico de VRAM de 1979 MiB en la configuración indicada.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: 1.193 GiB para el GGUF Q4_K_M, más 1445 MiB de delta de carga y hasta 1979 MiB de delta pico a 16k de contexto.
-- GPU recomendadas: RTX 2060 (6 GB) cabe con ~4,4 GiB libres a 16k; RTX 4070 Ti (12 GB) lo ejecuta como hoja ultra-ligera o Tier-1 de cascada.
-- Cabe en GPUs consumer: sí, en RTX 2060 de 6 GB y superiores; también en tarjetas de 8 GB sin problema.
-- Opciones de despliegue: llama.cpp / llama-server para los adaptadores GGUF; PyTorch / Transformers para los parches safetensors r16 y el parche denso BF16.
-- Throughput: 226,5 tok/s reportados en la configuración de evaluación; latencia no disponible de forma desagregada.
-- El autor no recomienda este modelo como Tier-2 de cascada por su baja puntuación global.
+- VRAM estimada: 1.193 GiB para los pesos en GGUF Q4_K_M; pico de VRAM de 1979 MiB con contexto de 16k y caché KV en q8_0.
+- GPU recomendadas: RTX 2060 de 6 GB (cabe con unos 4,4 GiB libres a 16k) y RTX 4070 Ti de 12 GB (uso como hoja ultraligera o Tier-1 de cascada).
+- Cabe en GPU de consumo: sí, en tarjetas con 6 GB o más de VRAM según los datos del autor.
+- Opciones de despliegue: llama.cpp (etiqueta llama-cpp e imatrix en el repositorio), transformers y endpoints compatibles; no se confirma soporte de vLLM, TGI u Ollama en la información disponible.
+- Latencia y throughput: 226,5 tok/s en la configuración de evaluación del autor, la cifra más alta de los cinco modelos de su estudio.
 
 ## Comparativa con modelos similares
 
-Comparación con las otras variantes del mismo estudio `wsp-5model-pipeline`, evaluadas con idéntica decodificación sobre 100 tareas:
+Comparación con las otras variantes WSP del mismo estudio del autor, todas evaluadas sobre las mismas 100 tareas.
 
-| Modelo | GGUF Q4_K_M | Base | WSP v3.0 | Delta | Holdout | Est. | tok/s | VRAM pico | Licencia |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---|
-| Qwen3.5-2B-WSP (este) | 1.193 GiB | 57/100 | 55/100 | -2,0 pp | 23/30 | 32/70 | 226,5 | 1979 MiB | Apache 2.0 |
-| Qwen3.5-4B-WSP | 2.553 GiB | 72/100 | 88/100 | +16,0 pp | 29/30 | 59/70 | 116,5 | 3290 MiB | Apache 2.0 |
-| Nemotron-3-Nano-4B-WSP | 2.642 GiB | 81/100 | 81/100 | +0,0 pp | 28/30 | 53/70 | 131,1 | 3133 MiB | Apache 2.0 |
-| Qwen3.5-9B-WSP | 5.290 GiB | 84/100 | 76/100 | -8,0 pp | 25/30 | 51/70 | 72,0 | 5593 MiB | Apache 2.0 |
-| Gemma-4-12B-WSP | 6.633 GiB | 50/100 | 50/100 | +0,0 pp | 24/30 | 26/70 | 51,8 | 7567 MiB | Apache 2.0 |
+| Modelo | Parámetros (repo) | GGUF Q4_K_M | Base /100 | WSP /100 | Velocidad | Pico VRAM (16k) | RTX 2060 6 GB |
+|---|---|---:|---:|---:|---:|---:|---|
+| Qwen3.5-2B-WSP | 1,88 B | 1.193 GiB | 57 | 55 | 226,5 tok/s | 1979 MiB | Sí |
+| Qwen3.5-4B-WSP | No disponible | 2.553 GiB | 72 | 89 | 117,0 tok/s | 3370 MiB | Sí |
+| Nemotron-3-Nano-4B-WSP | No disponible | 2.642 GiB | 81 | 81 | 131,1 tok/s | 3133 MiB | Sí |
+| Qwen3.5-9B-WSP | No disponible | 5.290 GiB | 84 | 88 | 72,5 tok/s | 5650 MiB | Ajustado |
+| Gemma-4-12B-WSP | No disponible | 6.633 GiB | 50 | 52 | 51,3 tok/s | 7664 MiB | No |
 
-Frente a alternativas fuera del estudio (Qwen3.5-2B base, Llama 3.2 1B/3B, Gemma 3 1B/4B) no se dispone de comparación directa en la información proporcionada.
+Frente a la alternativa de 4B del mismo autor, el modelo de 2B es más rápido pero rinde 34 puntos menos en la suite de 100 tareas; frente a Nemotron-3-Nano-4B, que no gana nada con WSP, el 2B sí pierde 2 puntos. No se dispone de comparación con modelos de otros autores en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- El parche WSP v3.0 empeora el rendimiento global del modelo base en 2 puntos porcentuales (57/100 → 55/100); no es una mejora de capacidades, sino una reconfiguración de comportamientos.
-- Regresión severa en S4_CODE: pasa de 2/2 a 0/2 en las tareas de holdout de síntesis de código.
-- Ligeros retrocesos en GSM8K (25% → 20%) y BFCL Irrelevance (60% → 53,3%).
-- Riesgo de alucinación inherente a un modelo de 1,88 B parámetros; no se documentan mitigaciones específicas.
-- Sesgos conocidos: no documentados en la información disponible.
-- Idiomas soportados: no disponibles; la evaluación se realiza presumiblemente en inglés y no se detalla cobertura multilingüe.
-- La licencia Apache 2.0 permite uso comercial, pero el autor no ofrece garantías sobre el comportamiento del parche en producción.
-- El modelo es de noviembre de 2026 y cuenta con 0 descargas y 0 likes; no hay validación independiente de los resultados.
-- La técnica WSP es experimental y el pipeline de síntesis `calibrated_proxy_weight_space` no está descrito en detalle en la información disponible.
-- No se recomienda como Tier-2 de cascada según el propio autor.
-- Los adaptadores GGUF y safetensors deben cargarse de forma selectiva; no se documenta el comportamiento al combinar varios subespacios simultáneamente más allá del parche denso combinado.
+- La intervención WSP v3.0 empeora el resultado agregado del modelo base: 55/100 frente a 57/100 (-2,0 pp), con caídas en GSM8K (-5,0 pp), BFCL Irrelevance (-6,7 pp) y un colapso en S4 Code (de 2/2 a 0/2).
+- La tasa de éxito en Terminal-Bench 2.0 es del 15% (3/20), insuficiente para automatización de terminal en producción sin supervisión.
+- El conjunto de evaluación es pequeño (100 tareas más 20 de terminal), con varios subconjuntos de solo 2 a 5 tareas, lo que hace que los deltas por conjunto tengan alta varianza.
+- Los resultados son autocontenidos en la model card del autor y no se han replicado de forma independiente en la información disponible.
+- Los idiomas soportados no están documentados, lo que impide garantizar un comportamiento multilingüe fiable.
+- No se detallan sesgos conocidos, tasas de alucinación ni evaluaciones de seguridad independientes.
+- La licencia Apache 2.0 permite uso comercial, pero el modelo base Qwen3.5-2B debe verificarse por separado para confirmar que sus términos son compatibles.
+- Al ser una intervención training-free sobre pesos, no se ha aplicado un pipeline de alineamiento documentado, por lo que el cumplimiento de instrucciones y la calibración de rechazos no están garantizados.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/jstarks/Qwen3.5-2B-Weight-Space-Programming
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B
-- Variante 4B del estudio: https://huggingface.co/jstarks/Qwen3.5-4B-Weight-Space-Programming
-- Variante 9B del estudio: https://huggingface.co/jstarks/Qwen3.5-9B-Weight-Space-Programming
-- Variante Nemotron-3-Nano-4B: https://huggingface.co/jstarks/Nemotron-3-Nano-4B-Weight-Space-Programming
-- Variante Gemma-4-12B: https://huggingface.co/jstarks/Gemma-4-12B-Weight-Space-Programming
+- Variante Qwen3.5-4B-WSP: https://huggingface.co/jstarks/Qwen3.5-4B-Weight-Space-Programming
+- Variante Nemotron-3-Nano-4B-WSP: https://huggingface.co/jstarks/Nemotron-3-Nano-4B-Weight-Space-Programming
+- Variante Qwen3.5-9B-WSP: https://huggingface.co/jstarks/Qwen3.5-9B-Weight-Space-Programming
+- Variante Gemma-4-12B-WSP: https://huggingface.co/jstarks/Gemma-4-12B-Weight-Space-Programming

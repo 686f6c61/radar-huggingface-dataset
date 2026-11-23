@@ -5,7 +5,7 @@
   "author": "Phoonnx",
   "url": "https://huggingface.co/Phoonnx/vits-hu_hu-imre-medium-espeak",
   "created_at": "2026-11-16T18:06:49.000Z",
-  "updated_at": "2026-11-16T18:06:59.000Z",
+  "updated_at": "2026-11-22T08:41:07.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-to-speech",
@@ -23,7 +23,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 27,
+  "downloads_30d": 30,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

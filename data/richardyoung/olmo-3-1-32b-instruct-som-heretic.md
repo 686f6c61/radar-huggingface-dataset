@@ -2,99 +2,85 @@
 
 ## Resumen
 
-Olmo-3.1-32B-Instruct-SOM-heretic es una variante "decensored" (también etiquetada como abliterated o uncensored) del modelo allenai/Olmo-3.1-32B-Instruct, publicada por el usuario richardyoung. El modelo base forma parte de la familia Olmo 3 de AI2 (Allen Institute for AI), una serie de modelos de lenguaje abiertos diseñados para hacer posible la ciencia de los modelos de lenguaje: se publican pesos, código, checkpoints intermedios y detalles de entrenamiento. Esta variante concreta aplica una técnica de ablación multi-direccional basada en mapas autoorganizados (SOM, Self-Organizing Map) mediante la herramienta Heretic v2.0.0, con el objetivo de reducir la tasa de rechazos del modelo.
+Olmo-3.1-32B-Instruct-SOM-heretic es una variante del modelo Olmo-3.1-32B-Instruct de AllenAI, publicada por el usuario richardyoung. Se trata de una finetune orientada a eliminar los mecanismos de rechazo y moderacion del modelo original (proceso conocido como "abliteration" o "decensoring"), etiquetada con los tags heretic, uncensored y abliterated. El modelo conserva la arquitectura y el tamano del original: 32.233.522.176 parametros en formato safetensors, con un repositorio de 64,5 GB.
 
-El modelo conserva la arquitectura y el tamaño del original: 32.233.522.176 parámetros (aproximadamente 32B), pesos en safetensors y licencia Apache 2.0. El modelo base fue preentrenado sobre el dataset Dolma 3 y postentrenado sobre los datasets Dolci (SFT, DPO y RLVR), según la documentación de AI2. La variante heretic declara haber sido generada usando el dataset allenai/Dolci-Instruct-RL como referencia.
+El modelo base, Olmo-3.1-32B-Instruct, forma parte de la familia Olmo de AllenAI, disenada como una linea de modelos abiertos con datos de entrenamiento publicos. Esta variante mantiene la licencia Apache 2.0 declarada y esta pensada para generacion de texto conversacional en ingles. La modificacion principal afecta al comportamiento de rechazo: el modelo ha sido ajustado para responder a peticiones que el original rechazaria.
 
-La relevancia de esta ficha es doble: por un lado, documenta una modificación de alineación (eliminación de rechazos) sobre un modelo abierto de 32B; por otro, sirve para evaluar los compromisos entre "decensoring" y degradación de comportamiento, cuantificados por el autor mediante tasa de rechazos y divergencia KL respecto al original. Es un modelo pensado para experimentación e investigación sobre alineación, no para despliegues de producción sin auditoría previa.
+Es relevante ahora porque representa un ejemplo de la practica creciente de publicar variantes "abliterated" de modelos abiertos, lo que plantea cuestiones sobre seguridad, uso responsable y las condiciones de acceso restringido (gated) que Hugging Face aplica a este repositorio. El modelo registra 495 descargas y 0 likes en el momento de la consulta.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (familia Olmo 3; detalles finos de capas y atención no disponibles en la informacion proporcionada) |
+| Arquitectura | Transformer (familia Olmo 3, segun tags del modelo) |
 | Parametros totales | 32.233.522.176 |
 | Parametros activos | no disponible (no se indica que sea MoE) |
-| Longitud de contexto | no disponible en la informacion proporcionada |
-| Tipos de cuantizacion | no disponible de forma explicita; la model card del base menciona carga en 8 bits con bitsandbytes y float16 |
-| Idiomas soportados | en (inglés) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | no disponible |
+| Idiomas soportados | en (ingles) |
 | Licencia | apache-2.0 |
-| Formato de pesos | safetensors (libreria transformers) |
+| Formato de pesos | safetensors (transformers) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base Olmo-3.1-32B-Instruct es un transformer decoder-only de 32B parámetros desarrollado por AI2 dentro de la familia Olmo 3, que incluye variantes de 7B y 32B en versiones Instruct y Think. El pipeline de postentrenamiento documentado por AI2 sigue varias etapas: SFT sobre Olmo-3.1-32B-Instruct-SFT, DPO sobre Olmo-3.1-32B-Instruct-DPO y una etapa final de RLVR (reinforcement learning with verifiable rewards) que produce el modelo final. El preentrenamiento se realizó sobre el dataset Dolma 3 y el postentrenamiento sobre los datasets Dolci; la variante heretic cita allenai/Dolci-Instruct-RL. No se dispone en la información proporcionada del número exacto de tokens de entrenamiento ni de la composición detallada del dataset.
+La informacion disponible indica que el modelo deriva de allenai/Olmo-3.1-32B-Instruct mediante un proceso de finetune etiquetado como "heretic" y "abliterated". No se detallan en la informacion proporcionada los pormenores de la arquitectura interna (numero de capas, dimension del modelo, tipo de atencion) ni la composicion exacta del dataset de entrenamiento. El tag dataset:allenai/Dolci-Instruct-RL sugiere el uso de datos de instruccion y RL del ecosistema Olmo, pero no se especifica el volumen de tokens ni si se aplicaron tecnicas de RLHF o DPO en esta variante concreta.
 
-La modificación respecto al original consiste en una ablación multi-direccional SOM aplicada con Heretic v2.0.0. Los parámetros publicados incluyen direction_index por capa, direction_decay de 0.28, y pesos de ablación sobre attn.o_proj (max_weight 1.40 en la posición 38.44; min_weight 0.40 a distancia 37.10) y mlp.down_proj (max_weight 1.20 en la posición 41.34; min_weight 0.19 a distancia 31.95). Esta intervención modifica direcciones internas de activación asociadas a comportamientos de rechazo. El autor reporta una tasa de rechazos de 79/100 frente a 100/100 del original, con una divergencia KL de 0.0638 respecto al modelo base. No se documentan innovaciones adicionales como decodificación especulativa o atención lineal en la información disponible.
+La innovacion tecnica declarada es la eliminacion de los mecanismos de rechazo del modelo base, un proceso que en la practica suele implicar la modificacion de direcciones de activacion asociadas a comportamientos de negativa. No se aportan detalles sobre el metodo exacto empleado ni sobre posibles efectos colaterales en capacidades como el razonamiento o el codigo.
 
 ## Capacidades
 
-- Generación de texto conversacional en inglés, heredada del modelo Instruct base.
-- Razonamiento y matemáticas: el modelo base pertenece a una familia en la que AI2 destaca mejoras en tareas de razonamiento, matemáticas y código mediante cadenas de pensamiento largas (variantes Think); esta variante es Instruct, no Think.
-- Generación de código: capacidad esperable por herencia del base, aunque no se aportan métricas específicas en la información disponible.
-- Reducción de rechazos: el propósito declarado de la modificación es responder a peticiones que el modelo original rechazaría (79/100 frentes a 100/100 de rechazos en la evaluación del autor).
-- Soporte de tool calling / function calling: no disponible en la información proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no disponible de forma explícita para esta variante.
-- Capacidades multilingües: limitadas al inglés según la etiqueta de idioma del modelo.
-- Capacidades especiales (modo thinking, visión, audio): no disponibles; esta variante es Instruct y no se declara visión ni audio.
+- Generacion de texto conversacional en ingles.
+- Respuesta a peticiones que el modelo base rechazaria, segun la etiqueta "uncensored" y "decensored".
+- Herencia de las capacidades del modelo base Olmo-3.1-32B-Instruct (razonamiento, codigo, matematicas), aunque no se documentan evaluaciones especificas de esta variante.
+- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
+- Capacidades multilingues: limitadas al ingles segun el campo de idiomas.
+- Capacidades especiales (vision, audio, thinking mode): no disponible.
 
 ## Casos de uso
 
-- Investigación sobre alineación y rechazos: el modelo permite estudiar empíricamente cómo una ablación multi-direccional (SOM) altera la tasa de rechazos y la divergencia KL respecto al original, usando los parámetros publicados para reproducir o variar la intervención.
-- Evaluación de robustez de salvaguardas: sirve como contraste para medir hasta qué punto las políticas de rechazo de un modelo Instruct de 32B son frágiles frente a modificaciones de pesos, comparando 79/100 frente a 100/100 rechazos.
-- Generación de texto creativo sin filtros excesivos: para prototipos de escritura, guiones o narrativa donde los rechazos del modelo base interrumpen el flujo, aceptando la necesidad de revisión humana posterior.
-- Experimentos de destilación y ajuste fino: al ser un modelo de 32B con licencia Apache 2.0 y pesos safetensors, puede usarse como punto de partida para fine-tuning con transformers 4.57.0 o superior, tal como documenta AI2 para el base.
-- Benchmarking de degradación por ablación: comparar métricas de calidad (no solo rechazos) entre esta variante y allenai/Olmo-3.1-32B-Instruct para cuantificar el coste de la modificación en tareas estándar.
-- Docencia y divulgación técnica: ilustrar en un curso o artículo cómo funcionan las técnicas de abliteration y qué compromisos introducen, usando un caso real con parámetros y métricas publicadas.
+- Investigacion sobre seguridad y alineacion: el modelo permite estudiar el comportamiento de sistemas sin mecanismos de rechazo, comparandolo con el original para analizar diferencias en tasas de negativa y contenido generado.
+- Evaluacion de tecnicas de abliteration: sirve como caso de estudio para medir el impacto de la eliminacion de direcciones de rechazo en las capacidades generales del modelo.
+- Generacion creativa sin restricciones tematicas: util en entornos controlados de escritura de ficcion que aborde temas sensibles, donde el modelo base podria declinar.
+- Pruebas de robustez y red teaming: permite generar respuestas adversarias para evaluar filtros y sistemas de moderacion en pipelines de produccion.
+- Analisis comparativo de variantes de un mismo modelo base: util para investigadores que comparan el modelo original con sus derivados en tareas de instruccion.
+- Desarrollo de prototipos conversacionales en ingles: gracias a sus 32.000 millones de parametros, puede emplearse en entornos de investigacion con acceso restringido para experimentar con generacion de texto de alta capacidad.
 
 ## Benchmarks y rendimiento
 
-| Metrica | Este modelo | Modelo original (allenai/Olmo-3.1-32B-Instruct) |
-|---|---|---|
-| Rechazos | 79/100 | 100/100 |
-| Divergencia KL | 0.0638 | 0 (por definición) |
-
-No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, etc.) en la información disponible para esta variante.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia en float16/BF16: aproximadamente 64 GB solo para pesos (32,2B parámetros × 2 bytes), más overhead de activaciones y KV cache; se recomienda al menos 80 GB para comodidad.
-- VRAM estimada en 8 bits: alrededor de 32 GB para pesos, más overhead; encaja en GPUs de 40-48 GB.
-- VRAM estimada en 4 bits: alrededor de 16-20 GB para pesos, más overhead; podría caber en GPUs consumer de 24 GB (por ejemplo, RTX 3090 o RTX 4090), aunque la información proporcionada no confirma cuantizaciones GGUF publicadas para esta variante.
-- GPUs recomendadas: A100 80 GB, H100 80 GB para precisión completa; A6000 48 GB o L40S para 8 bits.
-- Cabe en GPU consumer: solo con cuantización agresiva (4 bits) en GPUs de 24 GB; no cabe en 16 GB sin cuantización extrema.
-- Opciones de despliegue: transformers 4.57.0 o superior con bitsandbytes para 8 bits, según la model card del base; vLLM, llama.cpp, Ollama o TGI no están confirmados en la información disponible para esta variante.
-- Latencia y throughput: no disponibles en la información proporcionada.
+- VRAM estimada para inferencia: no disponible de forma oficial; por el tamano (32.233 millones de parametros) se requiere al menos 64 GB en precision FP16/BF16, y en torno a 20-24 GB con cuantizacion de 4 bits.
+- GPU recomendadas: A100 80 GB, H100 80 GB para precision completa; RTX 4090 (24 GB) o A6000 (48 GB) para cuantizaciones de 4-8 bits.
+- Cabe en GPU de consumo: si, con cuantizacion agresiva (4 bits) en GPUs de 24 GB como la RTX 4090, aunque con posibles perdidas de calidad.
+- Opciones de despliegue: transformers (libreria declarada); vLLM, llama.cpp, Ollama o TGI no se confirman en la informacion disponible.
+- Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Rechazos (segun autor) | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| richardyoung/Olmo-3.1-32B-Instruct-SOM-heretic | 32,2B | no disponible | 79/100 | Apache 2.0 | Hugging Face |
-| allenai/Olmo-3.1-32B-Instruct | 32,2B | no disponible | 100/100 | Apache 2.0 | Hugging Face |
-| allenai/Olmo-3-32B-Think | 32B (familia) | no disponible | no disponible | Apache 2.0 | Hugging Face |
-| allenai/Olmo-3-7B-Instruct | 7B (familia) | no disponible | no disponible | Apache 2.0 | Hugging Face |
+| Modelo | Parametros | Contexto | Licencia | Acceso |
+|---|---|---|---|---|
+| richardyoung/Olmo-3.1-32B-Instruct-SOM-heretic | 32.233.522.176 | no disponible | apache-2.0 | Restringido (gated) |
+| allenai/Olmo-3.1-32B-Instruct (base) | 32.233.522.176 (segun variante) | no disponible | no disponible en esta ficha | no disponible en esta ficha |
+| Otras variantes abliterated de modelos de 32B | no disponible | no disponible | no disponible | no disponible |
 
-La comparación directa más relevante es con el modelo base, del que solo se diferencia por la ablación SOM. Frente a otras variantes de la familia Olmo 3, esta ficha no dispone de métricas de rendimiento comparables más allá de la tasa de rechazos y la divergencia KL.
+No se dispone de datos de rendimiento comparativo en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- La modificación de alineación puede aumentar la probabilidad de generar contenido dañino, inexacto o inapropiado; la tasa de rechazos de 79/100 indica que aún rechaza parte de las peticiones, pero el comportamiento es menos predecible que en el original.
-- La divergencia KL de 0.0638 respecto al original implica cambios medibles en la distribución de salida que pueden afectar a la calidad en tareas generales; no se aportan benchmarks estándar que cuantifiquen esa degradación.
-- Riesgo de alucinación: inherente a los modelos de 32B; no se documentan evaluaciones específicas de factualidad para esta variante.
-- Limitación de idioma: el modelo está etiquetado únicamente para inglés, por lo que su rendimiento en castellano u otros idiomas no está garantizado.
-- Longitud de contexto: no disponible en la información proporcionada; conviene verificarla antes de diseñar aplicaciones que dependan de ventanas largas.
-- Licencia Apache 2.0: permite uso comercial, pero el usuario es responsable del cumplimiento normativo y de las políticas de contenido aplicables; el prefijo "heretic" y las etiquetas "uncensored" y "abliterated" deben tratarse como señales de riesgo en entornos productivos.
-- Procedencia: el modelo lo publica un usuario individual (richardyoung) a partir del base de AI2; no hay garantías de soporte, mantenimiento ni auditoría por parte de AI2.
-- El repositorio muestra 0 descargas y 0 likes en el momento de la consulta, lo que limita la evidencia comunitaria sobre su comportamiento en uso real.
+- Ausencia de mecanismos de rechazo: el modelo puede generar contenido que el original bloquearia, con riesgos de seguridad y uso indebido.
+- Riesgo de alucinacion: no se documentan evaluaciones de fidelidad factual en esta variante.
+- Idiomas: soporte limitado al ingles, segun los metadatos.
+- Licencia: se declara apache-2.0, pero el acceso esta restringido (gated) y requiere aceptar condiciones en Hugging Face; conviene verificar las condiciones de uso comercial del modelo base de AllenAI.
+- Contexto maximo: no disponible, lo que impide planificar su uso en tareas de contexto largo.
+- Efectos de la abliteration: no se documenta si la eliminacion de rechazos degrada capacidades de razonamiento, codigo o instruccion.
+- Datos de benchmarks ausentes: no hay evidencia publicada de su rendimiento real frente al modelo original.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/richardyoung/Olmo-3.1-32B-Instruct-SOM-heretic
+- Hugging Face: https://huggingface.co/richardyoung/Olmo-3.1-32B-Instruct-SOM-heretic
 - Modelo base: https://huggingface.co/allenai/Olmo-3.1-32B-Instruct
-- Checkpoint SFT del base: https://huggingface.co/allenai/Olmo-3.1-32B-Instruct-SFT
-- Checkpoint DPO del base: https://huggingface.co/allenai/Olmo-3.1-32B-Instruct-DPO
-- Modelo base de preentrenamiento: https://huggingface.co/allenai/Olmo-3-1125-32B
-- Dataset de postentrenamiento citado: https://huggingface.co/datasets/allenai/Dolci-Instruct-RL
-- Heretic (herramienta de ablación): https://heretic-project.org
-- Paper referenciado en los tags (arxiv:2512.13961): https://arxiv.org/abs/2512.13961
+- Dataset referenciado: https://huggingface.co/datasets/allenai/Dolci-Instruct-RL
+- Paper referenciado (arxiv:2512.13961): https://arxiv.org/abs/2512.13961

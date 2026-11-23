@@ -1,78 +1,85 @@
 # mradermacher/tin-2b-v3-GGUF
 
 ## Resumen
+tin-2b-v3 es un modelo de lenguaje conversacional de aproximadamente 1.880 millones de parametros (1,88 B) desarrollado por cagataydev y publicado bajo licencia Apache 2.0. Esta ficha se centra en la version cuantizada en formato GGUF distribuida por mradermacher, que facilita su ejecucion en hardware de consumo mediante llama.cpp y derivados. El modelo se presenta con etiquetas orientadas a despliegue en dispositivo (on-device), uso como agente y tool calling, ademas de generacion de codigo, y declara un linaje basado en la familia Qwen3.5 (etiquetas qwen3.5 y qwen3_5) tras un proceso de ajuste supervisado (SFT).
 
-`mradermacher/tin-2b-v3-GGUF` es una publicacion de cuantizaciones estaticas en formato GGUF del modelo base `cagataydev/tin-2b-v3`, generadas por el usuario mradermacher, conocido en Hugging Face por producir versiones cuantizadas de modelos abiertos para su uso con llama.cpp y herramientas compatibles. El repositorio no contiene un modelo original, sino los pesos convertidos y cuantizados del modelo de referencia, lo que permite ejecutar inferencia en hardware mas modesto que el requerido por los pesos en precision completa.
+El modelo base es cagataydev/tin-2b-v3, y esta variante GGUF ofrece un abanico de cuantizaciones estaticas desde Q2_K (1,1 GB) hasta f16 (3,9 GB), lo que permite elegir el equilibrio entre calidad y huella de memoria. Su tamano reducido lo hace relevante para escenarios de inferencia local, prototipado rapido de agentes y automatizacion ligera sin depender de infraestructura de GPU de datacenter.
 
-Por el nombre del modelo (`tin-2b-v3`) se infiere que se trata de un transformer con aproximadamente 2.000 millones de parametros en su version 3, aunque esta informacion no se confirma en la model card, que se limita a listar los tipos de cuantizacion generados y a enlazar el modelo de origen. No se dispone de datos sobre arquitectura exacta, contexto, idiomas, licencia ni composicion del entrenamiento en la informacion proporcionada.
-
-La relevancia de esta ficha es practica: permite a desarrolladores saber que existe una distribucion GGUF del modelo `tin-2b-v3` con un conjunto amplio de cuantizaciones (desde Q2_K hasta F16, incluyendo IQ4_XS), lo que facilita desplegarlo en CPU, GPUs de consumo o entornos con memoria limitada. Cualquier decision de produccion deberia basarse en la model card del modelo original, no en este repositorio derivado.
+La informacion publicada por el autor es limitada: no se detallan resultados de benchmarks, composicion exacta del dataset ni longitud de contexto. Esta ficha recoge exclusivamente los datos disponibles en la model card y en los metadatos de Hugging Face, marcando como "no disponible" todo aquello que no se ha publicado.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (se infiere transformer por el nombre y el pipeline de cuantizacion, sin confirmacion) |
-| Parametros totales | no disponible (el nombre sugiere ~2B, sin confirmacion oficial) |
+| Arquitectura | Transformer (linaje Qwen3.5 segun etiquetas del autor); detalles no disponibles |
+| Parametros totales | 1.881.825.088 (aprox. 1,88 B) |
 | Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | F16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q4_K_M, Q4_K_S, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K, IQ4_XS |
-| Idiomas soportados | no disponible |
-| Licencia | no disponible |
-| Formato de pesos | GGUF (safetensors en el modelo original, presumiblemente) |
+| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, Q4_K_S, IQ4_XS, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, f16 |
+| Idiomas soportados | en, tr (segun model card) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (cuantizaciones estaticas); el modelo base en safetensors |
 
 ## Arquitectura y entrenamiento
+El modelo se basa en una arquitectura transformer, segun se deduce de las etiquetas y del linaje declarado hacia Qwen3.5. El autor no publica en la model card detalles sobre el numero de capas, dimensiones ocultas, mecanismo de atencion ni si incorpora innovaciones como atencion lineal o decodificacion especulativa. Tampoco se especifica si se trata de un modelo denso o de una variante con mezcla de expertos; el recuento de parametros activos no se indica, por lo que se asume un modelo denso de 1,88 B de parametros.
 
-No se dispone de informacion sobre la arquitectura del modelo base `cagataydev/tin-2b-v3` en la documentacion proporcionada. El repositorio es un derivado generado con herramientas de cuantizacion para llama.cpp (los metadatos internos indican `quantize_version: 2`, `output_tensor_quantised: 1` y `convert_type: hf`), lo que implica que los pesos originales estaban en formato Hugging Face y fueron convertidos a GGUF y posteriormente cuantizados.
-
-Tampoco se detallan datos de entrenamiento (numero de tokens, composicion del dataset, uso de RLHF/DPO) ni innovaciones tecnicas del modelo original. Toda esta informacion deberia consultarse en la model card de `cagataydev/tin-2b-v3`, que no forma parte de los datos disponibles en esta busqueda.
+En cuanto al entrenamiento, las etiquetas indican un ajuste supervisado (SFT) sobre el modelo base cagataydev/tin-2b-v3. No se dispone de informacion sobre el volumen de tokens de entrenamiento, la composicion del dataset, el uso de RLHF o DPO, ni sobre tecnicas de alineacion adicionales. La model card de esta variante GGUF se limita a describir el proceso de cuantizacion estatica realizado por mradermacher, sin aportar datos sobre el entrenamiento original.
 
 ## Capacidades
-
-- Generacion de texto: capacidad esperable en un modelo de ~2B, sin confirmacion explicita en la documentacion disponible.
-- Razonamiento y matematicas: no disponible.
-- Generacion de codigo: no disponible.
-- Tool calling / function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingues: no disponible (no se listan idiomas).
-- Capacidades especiales (modo thinking, vision, audio): no disponible.
+- Generacion de texto conversacional multi-turno, orientada a dialogos (etiqueta conversational).
+- Soporte de tool calling / function calling, segun las etiquetas del autor.
+- Uso como agente en flujos de razonamiento multi-paso (etiquetas agent y on-device).
+- Generacion de codigo (etiqueta code).
+- Capacidades multilingues limitadas a ingles (en) y turco (tr) segun la model card.
+- Orientado a despliegue en dispositivo (on-device), lo que sugiere optimizacion para entornos con recursos limitados.
+- Compatibilidad con endpoints (etiqueta endpoints_compatible), lo que facilita su integracion en servicios de inferencia.
+- No se documentan capacidades de vision, audio ni modo de razonamiento explicito (thinking mode).
 
 ## Casos de uso
-
-- Despliegue en CPU o entornos sin GPU: las cuantizaciones Q4_K_M y Q5_K_M permiten ejecutar un modelo de ~2B en equipos de escritorio con llama.cpp u Ollama, con requisitos de RAM moderados.
-- Prototipado rapido en portatiles: usar la variante Q4_K_S o IQ4_XS para pruebas de integracion en pipelines de generacion de texto antes de escalar a un modelo mayor.
-- Inferencia en dispositivos edge: la cuantizacion Q2_K o Q3_K_S reduce el peso del modelo lo suficiente para entornos con memoria muy limitada, a costa de perdida de calidad.
-- Evaluacion comparativa de cuantizaciones: el repositorio incluye 12 variantes, lo que permite medir el impacto de la cuantizacion en la calidad de las respuestas sobre el mismo modelo base.
-- Fine-tuning ligero sobre pesos GGUF: usar la variante F16 o Q8_0 como referencia de alta fidelidad para validar que las diferencias observadas en produccion se deben a la cuantizacion y no al modelo.
-- Integracion en herramientas de escritorio compatibles con GGUF (llama.cpp, LM Studio, Jan): distribuir el modelo como parte de una aplicacion local sin dependencia de servicios en la nube.
+- Asistentes conversacionales locales: el modelo puede gestionar dialogos multi-turno en ingles y turco ejecutandose en un portatil o mini-PC con la cuantizacion Q4_K_M (1,4 GB), sin necesidad de conexion a la nube.
+- Agentes de automatizacion de tareas: gracias al soporte de tool calling, puede integrarse en flujos que invoquen APIs o funciones externas, como consultas a bases de datos o envio de correos, en entornos de prototipado rapido.
+- Generacion de codigo en editores y CLI: su tamano reducido permite autocompletado y generacion de fragmentos de codigo en herramientas de desarrollo locales, con latencias bajas al usar cuantizaciones Q4 o Q5.
+- Procesamiento de texto en dispositivos edge: puede desplegarse en dispositivos con poca memoria (Raspberry Pi con 4-8 GB de RAM usando Q2_K o Q3_K) para tareas de clasificacion, resumen o extraccion de informacion.
+- Chatbots de atencion al cliente para mercados turco e ingles: el soporte nativo de ambos idiomas permite construir asistentes bilingues para pymes sin infraestructura cloud.
+- Educacion y experimentacion: su licencia Apache 2.0 y su reducido tamano lo hacen adecuado para investigacion academica, fine-tuning ligero y ensenanza de tecnicas de cuantizacion e inferencia local.
+- Integracion en pipelines de CI/CD: puede emplearse como modelo de validacion de codigo o generacion de documentacion tecnica en entornos con recursos acotados, gracias a su compatibilidad con endpoints.
 
 ## Benchmarks y rendimiento
-
 No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
-
-- VRAM estimada para inferencia: no disponible de forma oficial. Como referencia orientativa para un modelo de ~2B en GGUF: Q4_K_M ocupa aproximadamente 1,2-1,5 GB, Q8_0 alrededor de 2,2-2,5 GB y F16 en torno a 4-4,5 GB. Estas cifras son estimaciones basadas en el tamano tipico de un modelo de 2B y no estan confirmadas en la documentacion.
-- GPU recomendadas: no disponible. Para un modelo de este tamano, cualquier GPU consumer con 4-8 GB de VRAM (RTX 3060, RTX 4060, RTX 4090) seria suficiente en la mayoria de cuantizaciones.
-- Cabe en GPU consumer: si, previsiblemente en la mayoria de tarjetas actuales con 6 GB o mas, incluso en cuantizaciones altas.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, Jan y cualquier runtime compatible con GGUF. vLLM y TGI no soportan GGUF de forma nativa en todas sus versiones, por lo que requeririan el modelo original en safetensors.
-- Latencia y throughput: no disponible.
+- VRAM/RAM estimada para inferencia segun cuantizacion: Q2_K y Q3_K_S aproximadamente 1,1 GB; Q4_K_M aproximadamente 1,4 GB; Q5_K_M aproximadamente 1,5 GB; Q6_K aproximadamente 1,7 GB; Q8_0 aproximadamente 2,1 GB; f16 aproximadamente 3,9 GB. A estas cifras hay que sumar el espacio para el contexto KV cache, que depende de la longitud de contexto configurada.
+- GPU recomendadas: cualquier GPU consumer con al menos 4 GB de VRAM puede ejecutar las cuantizaciones mas pequenas; una RTX 3060 (12 GB), RTX 4060 Ti (16 GB) o RTX 4090 (24 GB) permiten ejecutar f16 con holgura y contexto amplio. En el ambito profesional, una A100 o H100 no son necesarias por el reducido tamano del modelo, aunque pueden usarse para servir multiples instancias.
+- Cabe en GPU consumer: si, en practicamente todas las GPU consumer modernas con 4 GB o mas de VRAM, e incluso en CPU con 8 GB de RAM usando cuantizaciones Q4.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, text-generation-webui y cualquier runtime compatible con GGUF. Para el modelo base en safetensors, vLLM o TGI si se dispone de la configuracion adecuada (no verificada en la informacion disponible).
+- Latencia y throughput: no disponibles. Por el tamano del modelo, se espera una latencia baja en GPU consumer, pero no se aportan mediciones oficiales.
 
 ## Comparativa con modelos similares
 
-No disponible. No se dispone de informacion sobre el modelo base ni sobre alternativas comparables en la documentacion proporcionada.
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|
+| tin-2b-v3 (esta ficha) | 1,88 B | no disponible | Apache 2.0 | GGUF (y safetensors en el base) | Enfoque on-device, agente y tool calling; idiomas en/tr |
+| Qwen2.5-1.5B-Instruct | 1,54 B | 32.768 tokens (segun documentacion publica de Qwen) | Apache 2.0 | safetensors, GGUF | Alternativa multilingue consolidada, amplia comunidad |
+| Llama-3.2-1B-Instruct | 1,24 B | 128.000 tokens (segun documentacion publica de Meta) | Llama 3.2 Community License | safetensors, GGUF | Requiere aceptar licencia; contexto muy amplio |
+| Gemma-2-2B-it | 2,6 B | 8.192 tokens (segun documentacion publica de Google) | Gemma Terms of Use | safetensors, GGUF | Mayor tamano, licencia con restricciones de uso |
+
+Nota: los datos de contexto y licencia de los modelos comparables provienen de su documentacion publica; no se dispone de comparaciones de rendimiento verificadas con tin-2b-v3.
 
 ## Limitaciones y advertencias
-
-- La model card del repositorio no documenta arquitectura, licencia, idiomas ni datos de entrenamiento; es imprescindible consultar la model card del modelo original `cagataydev/tin-2b-v3` antes de cualquier uso en produccion.
-- La licencia del modelo derivado no se especifica; podria estar sujeta a la licencia del modelo base, que tampoco se indica. Verificar antes de uso comercial.
-- Las cuantizaciones de baja precision (Q2_K, Q3_K_S) degradan la calidad de forma notable en modelos pequenos; se recomienda Q4_K_M o superior para uso real.
-- Riesgo de alucinacion: inherente a los modelos de lenguaje, agravado en modelos de ~2B por su menor capacidad de razonamiento y conocimiento factual.
-- Sesgos: no documentados, pero previsibles en funcion del dataset de entrenamiento del modelo original, no disponible.
-- No se confirma soporte multilingue ni de tool calling; no asumir estas capacidades sin verificacion empirica.
-- El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, lo que sugiere poca validacion comunitaria.
+- No se han publicado evaluaciones de sesgo, toxicidad o alucinacion para este modelo; se recomienda validacion especifica antes de usarlo en produccion.
+- Riesgo de alucinacion inherente a modelos de 1,88 B de parametros, especialmente en tareas de razonamiento complejo o conocimiento factual.
+- Longitud de contexto no documentada; puede ser insuficiente para tareas que requieran ventanas largas.
+- Soporte idiomatico limitado a ingles y turco segun la model card; el rendimiento en castellano no esta garantizado ni documentado.
+- Las cuantizaciones de menor calidad (Q2_K, Q3_K_M) pueden degradar notablemente la coherencia y la capacidad de seguir instrucciones; se recomienda Q4_K_M o superior para uso en produccion.
+- Aunque la licencia es Apache 2.0, el modelo base declara un linaje Qwen3.5; conviene verificar las obligaciones de atribucion y las condiciones de la licencia del modelo base original antes de un despliegue comercial.
+- El repositorio GGUF no incluye pesos con imatrix ni cuantizaciones ponderadas; el autor indica que podrian no estar disponibles.
+- No se documentan garantias de soporte ni mantenimiento por parte del autor.
 
 ## Enlaces
-
-- Repositorio Hugging Face: https://huggingface.co/mradermacher/tin-2b-v3-GGUF
-- Modelo original: https://huggingface.co/cagataydev/tin-2b-v3
+- Repositorio GGUF en Hugging Face: https://huggingface.co/mradermacher/tin-2b-v3-GGUF
+- Modelo base: https://huggingface.co/cagataydev/tin-2b-v3
+- Pagina de descargas del autor: https://hf.tst.eu/model#tin-2b-v3-GGUF
+- Solicitudes de cuantizacion: https://huggingface.co/mradermacher/model_requests
+- Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Grafico comparativo de cuantizaciones (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png
+- Notas sobre cuantizaciones (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9

@@ -45,31 +45,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Universität Graz – We work for tomorrow - Universität Graz",
-      "url": "https://www.uni-graz.at/de/",
-      "snippet": "Lösungen für die Welt von morgen entwickeln – das ist unsere Mission. Erfahre mehr über die Universität Graz, unsere …"
-    },
-    {
-      "title": "REWI Universität Graz - Rechtswissenschaften",
-      "url": "https://rewi.uni-graz.at/de/",
-      "snippet": "Thinking Law! Damit die Rechtswissenschaften eine Zukunft haben, braucht es Neugierde. Erfahren Sie mehr über die REWI und …"
-    },
-    {
-      "title": "Forschung",
-      "url": "https://www.jura.uni-halle.de/lehrstuehle_dozierende/meller-hannich/forschung/",
-      "snippet": "Aug 25, 2026 · Verfahrensrechtliche Aspekte: Kosten, Verfahrensbeschleunigung, Offenlegung von Beweismitteln, Unterrichtung …"
-    },
-    {
-      "title": "news.ORF.at",
-      "url": "https://orf.at/",
-      "snippet": "Aug 9, 2024 · news.ORF.at: Die aktuellsten Nachrichten auf einen Blick - aus Österreich und der ganzen Welt. In Text, Bild und Video."
-    },
-    {
-      "title": "Entwicklungsplan 2025 2030 - Universität Graz",
-      "url": "https://static.uni-graz.at/fileadmin/_files/_administrative_sites/_strategie-und-qualitaet/Entwicklungsplan_2025-2030.pdf",
-      "snippet": "Als eine der größten Universitäten Österreichs tragen wir nicht nur Verantwortung für die Men-schen, die hier arbeiten und studieren, …"
-    }
-  ]
+  "sources": []
 }

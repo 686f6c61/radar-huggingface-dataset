@@ -2,84 +2,109 @@
 
 ## Resumen
 
-Dafeiyu V2 es un ajuste fino (fine-tune) del modelo Qwen 3.5 9B de Alibaba, desarrollado por el usuario 4everImmortality, orientado a dar vida a una persona virtual de tipo VTuber anime llamada "Dafeiyu" (una chica ballena de pelo azul). El modelo se ha entrenado mediante DoRA (una variante de LoRA) sobre el modelo base y se distribuye exclusivamente en formato GGUF cuantizado en Q4_K_M, pensado para su ejecución en entornos de recursos limitados como una Jetson AGX Orin, donde según el autor está desplegado en producción.
+`dafeiyu-qwen35-9b` es un ajuste fino (finetune) del modelo base Qwen3.5-9B, desarrollado por el usuario 4everImmortality para el proyecto Tuber Studio, una plataforma de operación y emisión en directo de VTubers. El modelo está especializado en roleplay conversacional y generación de comentarios para interacción en plataformas de vídeo, con soporte de entrada imagen-texto (image-text-to-text) heredado del modelo base.
 
-La relevancia de esta ficha es limitada desde el punto de vista de la investigación: se trata de un modelo de rol y personaje con un alcance muy específico, sin datos publicados de benchmarks, sin información sobre el dataset de entrenamiento y con una licencia genérica "other" que no aclara las condiciones de uso comercial. Su interés principal radica en ser un ejemplo de fine-tune de Qwen 3.5 para roleplay con contexto nativo de 256K tokens y compatibilidad directa con llama.cpp y Ollama.
+El modelo se distribuye exclusivamente en formato GGUF para su uso con llama.cpp, con un peso principal cuantizado Q4_K_M y un proyector visual Q8_0 separado. Está entrenado mediante DoRA (una variante de LoRA) sobre el checkpoint-38, fusionado posteriormente en el modelo base. Los idiomas soportados son chino (zh) e inglés (en).
 
-La información disponible en la model card es escasa y proviene únicamente del autor; no hay papers, repositorios asociados ni resultados de evaluación publicados. Todo lo que se detalla a continuación se basa en esa model card y en los metadatos de Hugging Face.
+Su relevancia radica en ser un ejemplo de ajuste fino de propósito muy específico: un modelo de 8.950 millones de parámetros orientado a la personificación de un personaje concreto (大肥鱼) en contextos de emisión en directo, con una ventana de contexto declarada de 262.144 tokens en la configuración de producción del autor. La licencia es "other", lo que requiere revisión de los términos del modelo base Qwen3.5-9B.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer (derivada de Qwen 3.5 9B); técnica de ajuste DoRA |
-| Parametros totales | 9B (heredados del modelo base Qwen/Qwen3.5-9B) |
-| Parametros activos | no disponible (no es un modelo MoE según la información disponible) |
-| Longitud de contexto | 262.144 tokens (256K), según el autor |
-| Tipos de cuantizacion | Q4_K_M (única versión publicada) |
-| Idiomas soportados | chino (zh) e inglés (en) |
-| Licencia | other (sin especificar condiciones) |
-| Formato de pesos | GGUF (compatible con llama.cpp y Ollama) |
+| Arquitectura | Transformer (derivada de Qwen3.5-9B, con capas visuales conservadas) |
+| Parámetros totales | 8.953.803.264 (8,95 B) |
+| Parámetros activos | no disponible (no es MoE) |
+| Longitud de contexto | 262.144 tokens en la configuración de producción del autor; ajustable según capacidad del dispositivo |
+| Tipos de cuantización | Q4_K_M (pesos principales), Q8_0 (proyector visual mmproj) |
+| Idiomas soportados | chino (zh), inglés (en) |
+| Licencia | other |
+| Formato de pesos | GGUF (llama.cpp); también existe un peso experimental de texto 9B en la raíz del repositorio |
+| Tamaño del repositorio | 11,9 GB |
+| Pipeline | image-text-to-text |
+| Modelo base | Qwen/Qwen3.5-9B |
+| Método de ajuste | DoRA (checkpoint-38 fusionado) |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de Qwen 3.5 9B, un transformer denso de 9.000 millones de parámetros, y se ha ajustado mediante DoRA (Weight-Decomposed Low-Rank Adaptation), una técnica de ajuste eficiente que descompone los pesos en magnitud y dirección para mejorar la estabilidad del entrenamiento respecto a LoRA estándar. No se especifica el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron etapas de RLHF o DPO; la model card solo indica que el objetivo es encarnar la persona de la VTuber Dafeiyu.
+El modelo parte de la arquitectura transformer de Qwen3.5-9B, un modelo de 8,95 mil millones de parámetros. El ajuste fino se realizó mediante DoRA (Weight-Decomposed Low-Rank Adaptation) sobre el checkpoint-38, que posteriormente se fusionó en el modelo base. Durante el entrenamiento se conservaron las capas visuales del modelo original, lo que permite el procesamiento de imágenes y fotogramas de vídeo mediante el proyector visual separado (mmproj en Q8_0).
 
-Un detalle técnico destacable es la conversión con `--no-mtp`, que según el autor elimina la capa draft de Multi-Token Prediction (MTP) del modelo base para evitar errores de desalineación de tensores en llama.cpp. Esto implica que la decodificación especulativa nativa de Qwen 3.5 no está disponible en esta versión GGUF. El resultado es un único archivo Q4_K_M que, según el autor, permite descargar todas las capas en GPU en una Jetson AGX Orin.
+Los datos de entrenamiento consistieron en sesiones conversacionales originales y variantes derivadas de las mismas, agrupadas y divididas para evitar fugas entre particiones, con ponderación en los fragmentos de entrenamiento. El autor indica que los pesos GGUF exportados no incluyen MTP (multi-token prediction). No se especifica el número total de tokens de entrenamiento ni la composición detallada del dataset más allá de su origen conversacional y su orientación a roleplay y operación de VTuber.
 
 ## Capacidades
 
-- Generación de texto conversacional en chino e inglés con una persona de rol definida (VTuber anime).
-- Roleplay multi-turno con mantenimiento de personaje: identidad, estilo lingüístico (tsundere, informal), preferencias (arroz blanco caliente) y reglas de interacción (cola de ballena que solo puede tocar el "amo").
-- Contexto largo de hasta 256K tokens, útil para conversaciones extensas o para inyectar un system prompt detallado.
-- Compatibilidad con llama.cpp y Ollama mediante un Modelfile de ejemplo con temperatura 0,7 y top_p 0,9.
-- No se documenta soporte de tool calling, function calling, agentes, visión, audio ni modo de razonamiento explícito (thinking mode).
-- Capacidad multilingüe limitada a los dos idiomas declarados; no se garantiza un comportamiento correcto en castellano.
+- Generación de texto conversacional orientada a roleplay y personificación de personaje (大肥鱼).
+- Generación de comentarios para plataformas de vídeo, con lectura de subtítulos y, cuando es necesario, muestreo de fotogramas mediante el proyector visual.
+- Entrada imagen-texto: procesamiento de imágenes y fotogramas de vídeo a través del mmproj Q8_0.
+- Comprensión de intención en lenguaje natural para consultas del operador (autor, estado de entrega, contenido original de comentarios).
+- Soporte de contexto largo: 262.144 tokens en la configuración de producción del autor.
+- Capacidades multilingües limitadas a chino e inglés.
+- Modo de pensamiento (thinking) activado en la configuración de producción del autor.
+- Integración con llama.cpp mediante `--mmproj` para usos imagen-texto.
+- No se documenta soporte explícito de tool calling ni de razonamiento multi-paso genérico más allá de las consultas de operación descritas.
 
 ## Casos de uso
 
-- VTuber o asistente virtual de streaming: el modelo puede mantener una conversación en directo con el público manteniendo la persona de Dafeiyu, con respuestas cortas y con "gancho" cómico gracias al estilo tsundere definido en el system prompt.
-- Chatbot de comunidad en Discord o Telegram: integrado vía Ollama, puede responder a los miembros del servidor con la voz del personaje y sostener conversaciones multi-turno sin perder el rol.
-- Despliegue en hardware de borde: al ser un GGUF Q4_K_M de 9B, cabe en una Jetson AGX Orin con descarga completa en GPU, lo que permite un asistente de personaje local sin dependencia de la nube.
-- Prototipado de personajes para juegos o novelas visuales: sirve como base para probar diálogos y personalidad antes de invertir en un modelo mayor o en un pipeline propio.
-- Demostración de fine-tuning con DoRA sobre Qwen 3.5: útil como caso de estudio de ajuste de personaje y de conversión a GGUF con `--no-mtp` para llama.cpp.
-- Generación de contenido de fan o roleplay creativo en chino: el modelo está entrenado específicamente para ese registro y ese idioma, por lo que es su escenario más natural.
+- Emisión en directo de VTuber: el modelo gestiona la personificación del personaje y responde a interacciones en tiempo real, aprovechando la ventana de contexto de 262.144 tokens para mantener coherencia en sesiones largas.
+- Generación de comentarios en plataformas de vídeo: lee subtítulos y, cuando no están disponibles, escanea fotogramas mediante el proyector visual para producir comentarios contextualizados; el autor reporta 159 comentarios exitosos de 220 candidatos en una prueba real.
+- Atención conversacional con memoria de eventos: responde a preguntas del operador sobre autores, respuestas y texto original de comentarios, con verificación de eventos en la aplicación anfitriona.
+- Roleplay multi-turno: mantiene personajes y relaciones entre participantes según la tarjeta de personaje seleccionada en el espacio de trabajo de Tuber Studio.
+- Análisis de contenido audiovisual: muestreo de fotogramas de vídeo para describir o comentar escenas cuando no hay subtítulos disponibles.
+- Asistencia a la operación de canales: consultas de solo lectura sobre registros de emisión y estado de entrega de mensajes, integradas en el flujo de trabajo de la plataforma.
+- Prototipado de agentes conversacionales especializados: sirve como ejemplo de ajuste fino DoRA de bajo rango sobre un modelo de 9B para una tarea vertical concreta.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+El autor publica evaluaciones de pareado (pairwise) en lugar de benchmarks estándar. Los resultados disponibles son los siguientes:
+
+| Evaluación | Resultado |
+|---|---|
+| Preguntas generales en evaluación de pareado congelada (120 preguntas) | 93/120 en el modelo ajustado frente a 100/120 en el modelo base |
+| Escenarios de personaje (40 escenarios) | 23 victorias, 12 empates, 5 derrotas frente al modelo desplegado en ese momento |
+| Reproducción de auditoría AGX (30 vídeos reales) | no se reporta métrica numérica agregada |
+| Prueba real de operación | 220 candidatos de comentario, 159 comentarios exitosos, 155 textos publicados coincidentes con el candidato |
+| Reproducción de diálogo del operador | 3 rondas consecutivas con coincidencia en el mismo evento y recibo confirmado |
+
+El autor señala que tanto la evaluación de pareado como los escenarios de personaje quedaron por debajo del umbral de la siguiente ronda de publicación. No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para Q4_K_M de 9B: aproximadamente 5,5-6,5 GB de pesos, más overhead de contexto KV; con 256K de contexto la caché KV puede crecer de forma significativa y requerir decenas de GB si se llena.
-- GPU recomendadas: el autor cita la Jetson AGX Orin (64 GB de memoria unificada) como plataforma de producción; en escritorio, una RTX 4090 (24 GB) o RTX 3090 permiten cargar el modelo completo con contexto amplio.
-- Cabe en GPU de consumo: sí, en tarjetas con 8 GB o más si se limita el contexto; en 6 GB solo con contexto muy reducido.
-- Opciones de despliegue: Ollama (Modelfile incluido), llama.cpp y cualquier runtime compatible con GGUF.
-- Latencia y throughput: no disponibles; dependen del hardware y del contexto utilizado.
+- VRAM estimada para inferencia: el peso principal Q4_K_M de un modelo de 8,95 B ocupa aproximadamente 5-6 GB, más el proyector visual Q8_0; el repositorio completo pesa 11,9 GB.
+- La configuración de producción del autor (AGX) activa 262.144 tokens de contexto con caché K/V en `q4_0`, lo que exige memoria muy superior a la del peso; el propio autor indica que otras máquinas deben ajustar la ventana según la capacidad medida.
+- GPU recomendadas: no disponible de forma explícita; por tamaño, cabría en GPU de consumo con suficiente VRAM para el contexto elegido, y en aceleradores de datacenter para contextos largos.
+- Despliegue: llama.cpp es el runtime documentado, con carga del peso principal para texto y `--mmproj` para imagen-texto. No se documentan vLLM, TGI ni Ollama en la información disponible.
+- Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Formato | Licencia | Notas |
-|---|---|---|---|---|---|
-| Dafeiyu V2 (este) | 9B | 256K | GGUF Q4_K_M | other | Fine-tune de personaje, solo zh/en, sin benchmarks |
-| Qwen 3.5 9B (base) | 9B | 256K (según base) | safetensors, GGUF | según Qwen | Modelo generalista, sin persona; referencia directa |
-| Fine-tunes de rol de la familia Qwen 2.5/3 | 7B-14B | variable | GGUF | variable | Alternativas habituales para roleplay en llama.cpp; no se dispone de datos concretos verificables en la información proporcionada |
-
-No se dispone de información suficiente para comparar rendimiento numérico con alternativas; la comparación se limita a parámetros, contexto, formato y licencia.
+| Modelo | Parámetros | Contexto | Idiomas | Licencia | Formato | Notas |
+|---|---|---|---|---|---|---|
+| dafeiyu-qwen35-9b | 8,95 B | 262.144 (config. del autor) | zh, en | other | GGUF | Ajuste DoRA para VTuber/roleplay |
+| Qwen3.5-9B (base) | 8,95 B | no disponible en la información | no disponible en la información | según modelo base | safetensors (original) | Base del ajuste; supera al finetune en preguntas generales (100/120 vs 93/120) |
+| Alternativas de 9B para roleplay | no disponible | no disponible | no disponible | no disponible | no disponible | No se dispone de datos comparativos en la información proporcionada |
 
 ## Limitaciones y advertencias
 
-- Sesgos: al ser un fine-tune de personaje entrenado presumiblemente con diálogos sintéticos o de rol, puede reproducir estereotipos de anime/VTuber y un registro lingüístico muy marcado.
-- Alucinación: no hay evaluación publicada; en roleplay es esperable que invente detalles coherentes con la persona, lo que puede ser aceptable en ficción pero no en usos informativos.
-- Contexto e idioma: solo se declaran chino e inglés; el rendimiento en castellano no está garantizado y probablemente sea deficiente.
-- Licencia: "other" sin texto de licencia visible; no se puede asumir uso comercial permitido. Además, hereda las condiciones del modelo base Qwen 3.5 9B, que deben consultarse por separado.
-- Producción: sin benchmarks, sin dataset documentado y con 0 descargas y 0 likes en el momento de la consulta; no hay evidencia de validación por terceros.
-- La conversión `--no-mtp` desactiva la decodificación especulativa del base, lo que puede reducir el throughput frente a otras distribuciones GGUF de Qwen 3.5.
-- El prompt de sistema incluido contiene reglas de interacción muy específicas (contacto físico, apelativos); debe revisarse antes de exponerlo a usuarios reales.
+- El ajuste fino degrada el rendimiento en preguntas generales respecto al modelo base: 93/120 frente a 100/120 en la evaluación de pareado congelada.
+- En escenarios de personaje, el modelo perdió en 5 de 40 casos frente al modelo desplegado en ese momento, y el autor reconoce que no alcanzó el umbral de publicación de la siguiente ronda.
+- La licencia "other" exige revisar los términos del modelo base Qwen3.5-9B antes de cualquier uso comercial; no se detallan restricciones específicas en la información disponible.
+- Idiomas limitados a chino e inglés; no se documenta soporte de castellano.
+- Riesgo de alucinación inherente a modelos de 9B en tareas de verificación; el autor delega la verificación de autor, hora y estado de entrega a la aplicación anfitriona, no al modelo.
+- La validación de emisión en directo, co-residencia prolongada y emisión real en plataforma seguía pendiente de aceptación según la documentación del autor.
+- El contexto de 262.144 tokens solo es viable con cuantización de caché K/V en `q4_0` y hardware con memoria suficiente; en configuraciones menores debe reducirse la ventana.
+- Los pesos GGUF no incluyen MTP, lo que puede afectar a optimizaciones de decodificación especulativa.
+- El repositorio contiene además un peso experimental de texto 9B en la raíz; la versión recomendada es la del directorio `releases/1.0.0`.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/4everImmortality/dafeiyu-qwen35-9b-gguf
-- Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
-- Ollama: https://ollama.com
-- llama.cpp: https://github.com/ggml-org/llama.cpp
+- Peso principal Q4_K_M: https://huggingface.co/4everImmortality/dafeiyu-qwen35-9b-gguf/blob/21ecede9e9a3f07764c8c0ee3bc24d2de7cf5aff/releases/1.0.0/dafeiyu-qwen35-9b-clean-v1-Q4_K_M.gguf
+- Proyector visual Q8_0: https://huggingface.co/4everImmortality/dafeiyu-qwen35-9b-gguf/blob/21ecede9e9a3f07764c8c0ee3bc24d2de7cf5aff/releases/1.0.0/mmproj-dafeiyu-qwen35-9b-clean-v1-Q8_0.gguf
+- Manifiesto de artefactos: https://huggingface.co/4everImmortality/dafeiyu-qwen35-9b-gguf/blob/21ecede9e9a3f07764c8c0ee3bc24d2de7cf5aff/releases/1.0.0/bundle.json
+- Repositorio Tuber Studio: https://github.com/4everWZ/Tuber_Studio
+- Guía de despliegue: https://github.com/4everWZ/Tuber_Studio/blob/main/docs/guides/deployment.md
+- Evaluación de entrenamiento y pareado: https://github.com/4everWZ/Tuber_Studio/blob/main/evaluations/results/dafeiyu-clean-9b-20261111.md
+- Reproducción de auditoría AGX: https://github.com/4everWZ/Tuber_Studio/blob/main/evaluations/results/review-agx-mainline-20261111.md
+- Verificación de operación real: https://github.com/4everWZ/Tuber_Studio/blob/main/evaluations/results/operations-feedback-20261112.md
+- Plan actual: https://github.com/4everWZ/Tuber_Studio/blob/main/docs/plans/current.md
+- Modelo base Qwen3.5-9B: https://huggingface.co/Qwen/Qwen3.5-9B

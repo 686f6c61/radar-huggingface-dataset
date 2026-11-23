@@ -2,94 +2,100 @@
 
 ## Resumen
 
-ACE-Step 1.5 XL GGUF es una conversión al formato GGUF del modelo de generación de música ACE-Step 1.5 XL, desarrollado originalmente por el equipo ACE-Step. El repositorio, publicado por empyrealworks, empaqueta en formato GGUF los dos variantes del DiT (SFT y turbo), el codificador de texto Qwen3-Embedding-0.6B y el VAE, todo ello para su uso con el motor de inferencia acestep.cpp. El modelo base resuelve el problema de la síntesis de audio musical condicionada por texto (text-to-audio), permitiendo generar canciones con letra, tempo y tonalidad especificados.
+ACE-Step 1.5 XL GGUF es una conversión a formato GGUF del modelo de generación de música ACE-Step 1.5 XL, desarrollada por el usuario empyrealworks a partir de los checkpoints originales de ACE-Step. El paquete incluye el DiT (Diffusion Transformer) de aproximadamente 4.990 millones de parámetros en sus variantes SFT y turbo, el codificador de texto Qwen3-Embedding-0.6B y el VAE, todo empaquetado para su uso con el motor acestep.cpp. El modelo resuelve la generación de audio musical condicionada por texto (text-to-audio), incluyendo letras, tempo y tonalidad.
 
-La arquitectura combina un transformer de difusión (DiT) de aproximadamente 4.990 millones de parámetros con un codificador de texto Qwen3-Embedding-0.6B y un VAE para la decodificación al dominio de audio. La conversión a GGUF y la cuantización permiten ejecutar el modelo en hardware de consumo, algo que los checkpoints originales en FP32 dificultaban. El repositorio incluye dos variantes del DiT: SFT (fine-tuning supervisado) y turbo, cada una con compromisos distintos entre fidelidad y velocidad.
+La relevancia de esta ficha radica en que permite ejecutar un modelo de generación musical de calidad de producción en hardware de consumo mediante cuantización GGUF, algo poco habitual en esta categoría. El autor publica métricas de calidad objetivas (WER de letras, acierto de tempo y tonalidad, y puntuaciones AudioBox de calidad de producción y disfrute) comparando cada cuantización contra el original en BF16, lo que facilita una decisión informada sobre el equilibrio tamaño/calidad.
 
-La relevancia de esta ficha radica en que se trata de una cuantización reciente (noviembre de 2026) orientada a despliegue local, con métricas de calidad comparativas frente a la conversión BF16 de referencia. La licencia MIT del modelo original facilita su uso comercial, aunque el codificador de texto deriva de Qwen3-Embedding-0.6B, publicado bajo Apache 2.0.
+La licencia MIT del modelo base y la Apache 2.0 del codificador de texto hacen que el conjunto sea apto para uso comercial, si bien conviene verificar las condiciones del motor de inferencia acestep.cpp por separado.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | DiT (Diffusion Transformer) para audio, con codificador de texto Qwen3-Embedding-0.6B y VAE |
+| Arquitectura | DiT (Diffusion Transformer) con codificador de texto Qwen3-Embedding-0.6B y VAE |
 | Parametros totales | 4.988.270.726 (DiT XL) |
 | Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Q5_K_M (SFT DiT), Q6_K (turbo DiT y text encoder), BF16 (VAE) |
-| Idiomas soportados | no disponible (la model card menciona letras en inglés en las pruebas) |
-| Licencia | MIT (modelo base ACE-Step 1.5); codificador Qwen3-Embedding-0.6B bajo Apache 2.0 |
-| Formato de pesos | GGUF |
+| Tipos de cuantizacion | Q4_K_M, Q5_K_M, Q6_K, Q8_0 (DiT); Q6_K (text encoder); BF16 (VAE) |
+| Idiomas soportados | no disponible |
+| Licencia | MIT (modelo base); Apache 2.0 (codificador de texto Qwen3-Embedding-0.6B) |
+| Formato de pesos | GGUF (safetensors en los checkpoints originales) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base ACE-Step 1.5 XL emplea un Diffusion Transformer (DiT) de aproximadamente 4.990 millones de parámetros como generador principal, condicionado por un codificador de texto Qwen3-Embedding-0.6B que transforma las indicaciones textuales (letra, estilo, tempo, tonalidad) en embeddings. Un VAE se encarga de la decodificación final al dominio de audio. El repositorio GGUF incluye dos variantes del DiT: SFT (fine-tuning supervisado) y turbo, esta última orientada a una generación más rápida con un ligero compromiso en fidelidad de la letra.
+El modelo se basa en un Diffusion Transformer (DiT) de aproximadamente 4.990 millones de parámetros que genera audio musical a partir de representaciones latentes, apoyado en un codificador de texto Qwen3-Embedding-0.6B para procesar los prompts y en un VAE para la decodificación al dominio de audio. Se distribuyen dos variantes del DiT: SFT (ajustada de forma supervisada) y turbo (optimizada para generación rápida). Las proyecciones de entrada y salida del DiT se mantienen en BF16 en todas las cuantizaciones para preservar calidad.
 
-La conversión se realizó desde los checkpoints originales en FP32 mediante el script `convert.py` de acestep.cpp (commit `973517be024ff8b6bbd50e0adc9e308ab2ed71b3`), seguida de una cuantización con `tools/quantize.cpp` extendido con formatos ggml adicionales. Las proyecciones de entrada y salida del DiT se mantienen en BF16 para preservar la calidad. No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni el uso de RLHF o DPO en la información proporcionada.
+La conversión se realizó desde los checkpoints originales en FP32 mediante `convert.py` de acestep.cpp (commit `973517be024ff8b6bbd50e0adc9e308ab2ed71b3`), generando una conversión intermedia en BF16 desde la que se aplicó `tools/quantize.cpp`, extendido con formatos ggml adicionales. No se detallan en la información disponible los datos de entrenamiento (número de tokens, composición del dataset, uso de RLHF/DPO) del modelo base original.
 
 ## Capacidades
 
-- Generación de audio musical a partir de texto (text-to-audio): produce canciones completas con letra, tempo y tonalidad controlables.
-- Control de atributos musicales: la model card menciona pruebas con 125 BPM y tonalidad de A menor, lo que indica soporte para especificar tempo y key.
-- Generación con letra: el modelo sintetiza voces con letra en inglés (según las pruebas documentadas), evaluada mediante word error rate (WER) sobre las voces separadas.
-- Dos modos de inferencia: variante SFT (mayor fidelidad de letra) y variante turbo (mayor calidad estética y velocidad).
-- Integración con acestep.cpp: los archivos GGUF están diseñados para este motor de inferencia concreto.
-- No se dispone de información sobre tool calling, function calling, capacidades de agente, razonamiento multi-paso, visión o audio de entrada en la información proporcionada.
+- Generación de audio musical a partir de descripciones textuales (text-to-audio).
+- Generación condicionada por letras, con control de tempo (BPM) y tonalidad (por ejemplo, A minor).
+- Producción de piezas de duración extendida (se documentan pruebas con canciones de 150 segundos).
+- Dos modos de inferencia: SFT (mayor fidelidad en letras) y turbo (mayor velocidad, ligera merma en inteligibilidad de letras).
+- Cuantización configurable para ajustar el equilibrio entre tamaño, velocidad y calidad.
+- Capacidades multilingües: no disponible en la información proporcionada.
+- Soporte de tool calling, agentes o razonamiento multi-paso: no aplicable (modelo de audio).
 
 ## Casos de uso
 
-- Producción musical asistida por IA en local: el modelo permite generar canciones completas con letra y parámetros musicales definidos (tempo, tonalidad) en hardware de consumo gracias a la cuantización GGUF, sin depender de servicios en la nube.
-- Prototipado rápido de ideas musicales: la variante turbo, con Q6_K y mayor calidad estética (PQ 7.94, CE 7.23), es adecuada para iterar rápidamente sobre bocetos de canciones antes de refinar con la variante SFT.
-- Generación de bandas sonoras para contenido audiovisual: el control de tempo y tonalidad permite adaptar la música a escenas concretas, y la licencia MIT facilita su integración en proyectos comerciales.
-- Investigación en síntesis musical: el repositorio ofrece métricas reproducibles (WER, tempo, key, PQ, CE) que permiten comparar cuantizaciones y variantes en experimentos académicos.
-- Despliegue en pipelines de generación de audio con acestep.cpp: los archivos GGUF están optimizados para este motor, lo que facilita la integración en flujos de trabajo automatizados de generación musical.
-- Educación y experimentación con modelos de difusión para audio: la disponibilidad de pesos cuantizados y un VAE en BF16 permite estudiar el funcionamiento interno de un DiT aplicado a música en entornos con recursos limitados.
-- Generación de música personalizada para streaming o podcasts: la posibilidad de especificar letra y estilo permite crear cortinillas o temas adaptados a un programa concreto, con la ventaja de la licencia permisiva.
+- Generación de música de fondo para vídeo y podcasts: el modelo permite describir el estilo, tempo y tonalidad deseados y generar una pieza de hasta 150 segundos, adecuada para producción de contenido con presupuesto limitado.
+- Creación de maquetas musicales con letra: permite introducir letras y obtener una interpretación vocal con tempo y tonalidad controlados; la variante SFT ofrece mejor inteligibilidad de letras (9-13,5 % WER en las pruebas del autor).
+- Prototipado rápido en estaciones de trabajo locales: la cuantización Q4_K_M (unos 3 GB por DiT) permite iterar en una GPU de consumo, reduciendo la dependencia de servicios en la nube.
+- Investigación en generación musical: la disponibilidad de múltiples cuantizaciones con métricas de calidad publicadas facilita estudios sobre el impacto de la compresión en la fidelidad musical.
+- Integración en herramientas de producción musical asistida: el modelo puede generar variaciones de una idea musical (cambio de tonalidad o tempo) manteniendo el estilo descrito en el prompt.
+- Despliegue en entornos con recursos limitados: el VAE en BF16 (337 MB) y el codificador de texto Q6_K (677 MB) son ligeros, y el DiT puede ajustarse a la VRAM disponible eligiendo entre Q4_K_M, Q5_K_M, Q6_K o Q8_0.
 
 ## Benchmarks y rendimiento
 
-La model card incluye una comparación de calidad entre los archivos GGUF y la conversión BF16 de referencia, evaluada sobre una petición de 150 segundos con letra en inglés, 125 BPM y A menor, con seis semillas, en una RTX 5090:
+El autor publica métricas de calidad comparando cuantizaciones contra BF16, evaluadas sobre una petición de canción de 150 segundos con letras en inglés, 125 BPM y A minor, en una RTX 5090:
 
-| Modelo | Lyric WER | Tempo, key | PQ | CE |
+| Modelo | WER de letras | Tempo, tonalidad | PQ (AudioBox) | CE (AudioBox) |
 |---|---|---|---|---|
-| SFT, BF16 DiT y text encoder | 14,7% | 6/6, 6/6 | 7,79 | 6,85 |
-| SFT, estos archivos | 13,5% | 6/6, 6/6 | 7,77 | 6,78 |
-| turbo, BF16 DiT y text encoder | 15,8% | 6/6, 6/6 | 7,95 | 7,15 |
-| turbo, estos archivos | 16,9% | 6/6, 6/6 | 7,94 | 7,23 |
+| SFT, BF16 (seeds 42-44) | 10,2 % | 3/3, 3/3 | 7,82 | 6,99 |
+| SFT, Q4_K_M (seeds 42-44) | 9,0 % | 3/3, 3/3 | 7,70 | 6,91 |
+| turbo, BF16 (seeds 42-44) | 20,2 % | 3/3, 3/3 | 7,91 | 7,27 |
+| turbo, Q4_K_M (seeds 42-44) | 13,6 % | 3/3, 3/3 | 7,91 | 7,28 |
+| SFT, BF16 DiT y text encoder (6 seeds) | 14,7 % | 6/6, 6/6 | 7,79 | 6,85 |
+| SFT, Q5_K_M (6 seeds) | 13,5 % | 6/6, 6/6 | 7,77 | 6,78 |
+| turbo, BF16 DiT y text encoder (6 seeds) | 15,8 % | 6/6, 6/6 | 7,95 | 7,15 |
+| turbo, Q6_K (6 seeds) | 16,9 % | 6/6, 6/6 | 7,94 | 7,23 |
 
-La model card señala además que formatos más pequeños empeoran: los DiT en Q4 pierden inteligibilidad de la letra (WER del 19-29%) y un codificador de texto en 4 bits pierde el tempo solicitado. No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible, ya que no aplican a un modelo text-to-audio.
+El autor señala además que formatos menores rinden peor: un DiT SFT en Q4_K sin las proyecciones de valor y down en 6 bits pierde inteligibilidad de letras (22 % WER en seeds 42-44, probado en una Radeon 8060S), y un codificador de texto en 4 bits pierde el tempo solicitado.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: el repositorio completo ocupa 8,6 GB; los archivos individuales suman aproximadamente 8,6 GB (DiT SFT 3,53 GB, DiT turbo 4,10 GB, text encoder 0,68 GB, VAE 0,34 GB). La VRAM necesaria depende de si se cargan ambas variantes del DiT o solo una.
-- GPU recomendadas: la model card documenta pruebas en una RTX 5090. Por el tamaño de los archivos, es plausible su ejecución en GPUs de consumo con 12-16 GB de VRAM o más, aunque no se proporcionan requisitos mínimos oficiales.
-- Cabe en GPU de consumo: sí, según el tamaño de los archivos cuantizados, aunque no se especifican los mínimos exactos.
-- Opciones de despliegue: acestep.cpp es el motor para el que están diseñados estos GGUF. No se mencionan otros motores (llama.cpp, Ollama, vLLM, TGI) en la información proporcionada.
-- Latencia y throughput: no disponibles. La variante turbo está orientada a generación más rápida, pero no se aportan cifras concretas.
+- VRAM estimada para el DiT: aproximadamente 3 GB (Q4_K_M), 3,5 GB (Q5_K_M), 4,1 GB (Q6_K turbo), 5,3 GB (Q8_0).
+- VRAM adicional: codificador de texto Q6_K (~677 MB) y VAE BF16 (~337 MB).
+- GPU recomendadas: RTX 5090 (usada por el autor para las pruebas), y en general GPU de consumo con 8 GB o más de VRAM para Q4_K_M o Q5_K_M.
+- Cabe en GPU de consumo: sí, con las cuantizaciones Q4_K_M y Q5_K_M en tarjetas de 8 GB o más; Q8_0 requiere alrededor de 8-10 GB considerando el resto de componentes.
+- Opciones de despliegue: el paquete está diseñado específicamente para acestep.cpp (https://github.com/ServeurpersoCom/acestep.cpp); no se documenta compatibilidad con vLLM, llama.cpp, Ollama o TGI.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
-|---|---|---|---|---|---|
-| ACE-Step 1.5 XL GGUF (este) | 4.988 M (DiT) | no disponible | MIT | GGUF | Hugging Face |
-| ACE-Step 1.5 XL SFT (BF16) | 4.988 M (DiT) | no disponible | MIT | safetensors/BF16 | Hugging Face |
-| ACE-Step 1.5 XL turbo (BF16) | 4.988 M (DiT) | no disponible | MIT | safetensors/BF16 | Hugging Face |
+| Modelo | Parámetros | Formato | Licencia | Disponibilidad |
+|---|---|---|---|---|
+| ACE-Step 1.5 XL GGUF (esta ficha) | ~4.990 M (DiT) | GGUF (Q4_K_M a Q8_0) | MIT | Hugging Face, 892 descargas |
+| ACE-Step/acestep-v15-xl-sft | ~4.990 M (DiT) | safetensors (FP32/BF16) | MIT | Hugging Face |
+| ACE-Step/acestep-v15-xl-turbo | ~4.990 M (DiT) | safetensors (FP32/BF16) | MIT | Hugging Face |
 
-No se dispone de información sobre otros modelos comparables de text-to-audio en la información proporcionada.
+No se dispone de datos de benchmarks de modelos alternativos de terceros en la información proporcionada, por lo que la comparación se limita a las variantes del propio modelo base.
 
 ## Limitaciones y advertencias
 
-- Sesgos conocidos: no se documentan sesgos específicos en la información proporcionada; al ser un modelo generativo de música, puede reflejar sesgos presentes en sus datos de entrenamiento (no detallados).
-- Riesgo de alucinación: en el contexto de text-to-audio, se traduce en posibles desviaciones de la letra solicitada; la model card reporta un WER del 13,5-16,9% en las variantes cuantizadas, lo que implica errores en la pronunciación o contenido de la letra.
-- Limitaciones de contexto o idioma: no se especifica la longitud de contexto ni los idiomas soportados; las pruebas documentadas usan letra en inglés, por lo que el rendimiento en otros idiomas es desconocido.
-- Restricciones de licencia: el modelo base es MIT, lo que permite uso comercial; el codificador de texto Qwen3-Embedding-0.6B es Apache 2.0, también permisivo. No se identifican restricciones adicionales en la información disponible.
-- Caveats para producción: las cuantizaciones más agresivas (Q4) degradan notablemente la inteligibilidad de la letra (WER 19-29%) y un text encoder en 4 bits pierde el tempo solicitado; se recomienda Q5_K_M o Q6_K para mantener la calidad. El motor acestep.cpp es el único soportado según la información disponible. El repositorio tiene 0 descargas y 0 likes, lo que indica que no ha sido validado por la comunidad.
+- La variante turbo presenta mayor tasa de error en letras que la SFT (20,2 % frente a 10,2 % en BF16, y 16,9 % frente a 13,5 % en las cuantizaciones medidas), lo que puede afectar a la inteligibilidad vocal.
+- Las cuantizaciones por debajo de Q4_K_M (por ejemplo, Q4_K sin proyecciones de 6 bits) degradan notablemente la calidad: 22 % WER y pérdida del tempo solicitado con codificador de texto en 4 bits.
+- Las métricas publicadas proceden de una única petición de prueba (150 segundos, letras en inglés, 125 BPM, A minor) y de un conjunto limitado de seeds; no constituyen una evaluación exhaustiva.
+- No se documentan sesgos conocidos, riesgos de alucinación específicos ni limitaciones idiomáticas en la información disponible.
+- El modelo está pensado para ejecutarse con acestep.cpp; no se garantiza su funcionamiento con otros motores GGUF.
+- La licencia MIT del modelo base permite uso comercial, pero el codificador de texto deriva de Qwen3-Embedding-0.6B (Apache 2.0) y conviene revisar las condiciones del motor de inferencia por separado.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/empyrealworks/ACE-Step-1.5-XL-GGUF
-- Modelo base ACE-Step/acestep-v15-xl-sft: https://huggingface.co/ACE-Step/acestep-v15-xl-sft
-- Modelo base ACE-Step/acestep-v15-xl-turbo: https://huggingface.co/ACE-Step/acestep-v15-xl-turbo
-- Modelo base ACE-Step/Ace-Step1.5: https://huggingface.co/ACE-Step/Ace-Step1.5
-- Codificador de texto Qwen/Qwen3-Embedding-0.6B: https://huggingface.co/Qwen/Qwen3-Embedding-0.6B
+- Hugging Face: https://huggingface.co/empyrealworks/ACE-Step-1.5-XL-GGUF
+- Modelo base SFT: https://huggingface.co/ACE-Step/acestep-v15-xl-sft
+- Modelo base turbo: https://huggingface.co/ACE-Step/acestep-v15-xl-turbo
+- Modelo base ACE-Step 1.5: https://huggingface.co/ACE-Step/Ace-Step1.5
+- Codificador de texto: https://huggingface.co/Qwen/Qwen3-Embedding-0.6B
 - Motor de inferencia acestep.cpp: https://github.com/ServeurpersoCom/acestep.cpp

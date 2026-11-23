@@ -2,49 +2,50 @@
 
 ## Resumen
 
-Miko-M7-V3-GGUF es la distribucion en formato GGUF del modelo Miko-M7-V3, publicado originalmente por el usuario ricer0ll en Hugging Face. La cuantizacion la realiza mradermacher, un perfil conocido en el ecosistema por convertir modelos a GGUF para su uso con llama.cpp y herramientas compatibles. El modelo base cuenta con 7.241.732.096 parametros, lo que lo situa en la categoria de modelos de aproximadamente 7B, un tamano habitual para despliegue en hardware de consumo.
+Miko-M7-V3-GGUF es la distribucion en formato GGUF del modelo Miko-M7-V3, desarrollado originalmente por el usuario ricer0ll y cuantizado por mradermacher, un conocido publicador de cuantizaciones para llama.cpp. El modelo base es un transformer de 7.241.732.096 parametros (aproximadamente 7,2 mil millones) afinado sobre la arquitectura Mistral, orientado a generacion de texto conversacional y etiquetado como no apto para todas las audiencias. Esta cuantizacion existe para facilitar la inferencia local en hardware de consumo mediante llama.cpp y derivados.
 
-La relevancia de esta ficha radica en que se trata de una cuantizacion estatica de un modelo del que no se dispone de model card tecnica detallada: no se documentan arquitectura, datos de entrenamiento, licencia ni resultados de benchmarks. La informacion disponible se limita a los metadatos de Hugging Face y a la model card del cuantizador, que describe el proceso de conversion y los ficheros GGUF generados.
+El modelo se ha afinado sobre el dataset anthracite-org/stheno-filtered-v1.1, un conjunto de datos de instrucciones filtrado, y esta pensado para dialogos multi-turno en ingles. La relevancia de esta ficha radica en que ofrece una via practica de ejecutar un modelo de 7B en GPU de consumo o incluso en CPU, con un abanico de cuantizaciones que va desde Q2_K (2,8 GB) hasta f16 (14,6 GB), lo que permite ajustar el equilibrio entre calidad y requisitos de memoria.
 
-El repositorio incluye unicamente dos cuantizaciones estaticas (Q8_0 y f16), ambas de alta calidad pero con requisitos de almacenamiento considerables. No se han publicado cuantizaciones ponderadas o con imatrix, lo que limita las opciones para entornos con poca memoria. El modelo esta etiquetado exclusivamente para ingles.
+No se dispone de informacion publica sobre la longitud de contexto, la licencia ni los detalles exactos del proceso de entrenamiento en la documentacion proporcionada, por lo que estos datos se marcan como no disponibles.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible |
+| Arquitectura | Transformer (familia Mistral, segun tags) |
 | Parametros totales | 7.241.732.096 |
-| Parametros activos | no disponible (no consta que sea MoE) |
+| Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Q8_0 y f16 (cuantizaciones estaticas) |
+| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, f16 |
 | Idiomas soportados | en (ingles) |
 | Licencia | no disponible |
-| Formato de pesos | GGUF (safetensors en el modelo base) |
+| Formato de pesos | GGUF (cuantizaciones); el modelo base en safetensors |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion sobre la arquitectura del modelo base Miko-M7-V3. El recuento de parametros (7.241.732.096) es coherente con un transformer denso de aproximadamente 7B, pero no se confirma en la documentacion disponible. Tampoco se detallan los datos de entrenamiento, el numero de tokens procesados, la composicion del dataset ni si se aplicaron tecnicas de alineacion como RLHF o DPO.
+El modelo base Miko-M7-V3 sigue la arquitectura Mistral, un transformer decoder-only con atencion por ventanas deslizantes y activacion SwiGLU, segun los tags del repositorio. Cuenta con 7.241.732.096 parametros totales, lo que lo situa en la categoria de 7B. Esta cuantizacion concreta no aporta informacion adicional sobre la arquitectura interna ni sobre innovaciones tecnicas especificas.
 
-La unica informacion tecnica concreta proviene del proceso de cuantizacion: mradermacher indica que se trata de cuantizaciones estaticas (quantize_version 2, output_tensor_quantised 1, convert_type hf) y que no hay cuantizaciones ponderadas o con imatrix disponibles en el momento de la publicacion. El repositorio ocupa 63,9 GB, lo que refleja la presencia de los ficheros GGUF junto con posibles artefactos intermedios.
+El entrenamiento se realizo sobre el dataset anthracite-org/stheno-filtered-v1.1, un conjunto de datos de instrucciones filtrado. No se dispone de informacion sobre el numero de tokens de entrenamiento, la composicion exacta del dataset, ni si se aplicaron tecnicas de RLHF o DPO. Tampoco se documentan innovaciones como decodificacion especulativa o atencion lineal. La cuantizacion fue realizada por mradermacher con la version 2 del proceso de cuantizacion y conversion desde formato Hugging Face, generando tanto cuantizaciones estaticas (este repositorio) como cuantizaciones ponderadas/imatrix en el repositorio Miko-M7-V3-i1-GGUF.
 
 ## Capacidades
 
-- Generacion de texto en ingles: el modelo esta etiquetado exclusivamente para el idioma ingles.
-- No se documentan capacidades especificas de razonamiento, codigo o matematicas en la informacion disponible.
+- Generacion de texto conversacional multi-turno en ingles.
+- Razonamiento basico y respuesta a instrucciones, derivado del ajuste sobre datos de instrucciones.
+- Generacion de codigo y matematicas: no confirmado en la documentacion disponible.
 - Soporte de tool calling / function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingues: limitadas al ingles segun la etiqueta de idioma.
-- Capacidades especiales (modo thinking, vision, audio): no disponible.
-- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` sugiere que el modelo base puede desplegarse mediante Inference Endpoints de Hugging Face.
+- Capacidades multilingues: limitadas al ingles segun el campo `language`.
+- Capacidades especiales (vision, audio, thinking mode): no disponibles.
+- Contenido para adultos: el tag `not-for-all-audiences` indica que el modelo puede generar contenido no apto para todo publico.
 
 ## Casos de uso
 
-- Prototipado local en ingles: al disponer de cuantizaciones Q8_0 (7,8 GB) y f16 (14,6 GB), el modelo puede ejecutarse en estaciones de trabajo con GPU de consumo para experimentacion con texto en ingles, siempre que se valide su calidad previamente.
-- Evaluacion comparativa de modelos de 7B: util para investigadores que quieran contrastar el comportamiento de Miko-M7-V3 frente a otros modelos del mismo tamano en tareas de generacion de texto.
-- Despliegue con llama.cpp u Ollama: el formato GGUF permite integrar el modelo en entornos de inferencia local sin necesidad de infraestructura de GPU dedicada, usando cuantizacion Q8_0 para un equilibrio entre calidad y memoria.
-- Pruebas de integracion en pipelines de Hugging Face: la etiqueta `endpoints_compatible` permite evaluar el modelo a traves de Inference Endpoints para tareas de generacion de texto en ingles.
-- Investigacion sobre cuantizacion: el repositorio sirve como referencia para estudiar el impacto de las cuantizaciones estaticas Q8_0 y f16 en un modelo de 7B, aunque sin cuantizaciones de menor precision no permite analizar regimenes de baja memoria.
-- Generacion de texto asistida en entornos controlados: adecuado para tareas de redaccion o resumen en ingles donde el operador pueda revisar las salidas, dado el desconocimiento sobre sesgos y alucinaciones del modelo base.
+- Prototipado de chatbots conversacionales en local: el modelo puede gestionar dialogos multi-turno en ingles y ejecutarse en una GPU de consumo con cuantizaciones Q4_K_M (4,5 GB), lo que lo hace adecuado para pruebas de concepto sin infraestructura en la nube.
+- Asistente personal offline: con la cuantizacion Q4_K_S (4,2 GB) se puede desplegar en un portatil con GPU de 6-8 GB o incluso en CPU, ofreciendo un asistente de texto que no requiere conexion a internet.
+- Generacion creativa de ficcion y roleplay: el ajuste conversacional y el tag de contenido para adultos lo orientan a aplicaciones de escritura creativa y simulacion de personajes, siempre con las advertencias de contenido.
+- Educacion y experimentacion con cuantizaciones: sirve como caso practico para comparar la degradacion de calidad entre Q2_K, Q4_K_M y Q8_0 en un modelo de 7B, util en cursos de IA y talleres de llama.cpp.
+- Integracion en pipelines de texto por lotes: mediante llama.cpp o servidores compatibles con la API de OpenAI, se puede usar para tareas de generacion masiva de texto en ingles donde no se requiera maxima calidad.
+- Evaluacion de modelos afinados de la comunidad: investigadores pueden usar esta cuantizacion para comparar el rendimiento de Miko-M7-V3 frente a otros fine-tunes de Mistral 7B en tareas conversacionales.
 
 ## Benchmarks y rendimiento
 
@@ -52,39 +53,41 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: aproximadamente 8-9 GB para la cuantizacion Q8_0 y 15-16 GB para f16, incluyendo overhead de contexto y cache KV.
-- GPU recomendadas: RTX 4090 (24 GB) para Q8_0 y f16; A100 o H100 para despliegues con contexto largo o mayor concurrencia.
-- Cabe en GPU de consumo: si, la cuantizacion Q8_0 cabe en GPUs con 12 GB o mas (RTX 3060 12 GB, RTX 4070, RTX 4080); f16 requiere 16 GB o mas.
-- Opciones de despliegue: llama.cpp, Ollama, y herramientas compatibles con GGUF; el modelo base puede servirse con vLLM o TGI si se dispone de los pesos en safetensors.
-- Latencia y throughput: no disponibles.
+- VRAM estimada para inferencia segun cuantizacion: Q2_K ~2,8 GB; Q3_K_S ~3,3 GB; Q4_K_S ~4,2 GB; Q4_K_M ~4,5 GB; Q5_K_M ~5,2 GB; Q6_K ~6,0 GB; Q8_0 ~7,8 GB; f16 ~14,6 GB (mas overhead de contexto y KV cache).
+- GPU recomendadas: RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070, RTX 4090 para cuantizaciones altas; A100/H100 no son necesarias para un modelo de 7B.
+- Cabe en GPU de consumo: si, desde una GTX 1660 6 GB con Q4_K_S hasta una RTX 4090 con Q8_0 o f16.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, servidores compatibles con la API de OpenAI (por ejemplo, llama-cpp-python o text-generation-webui). El repositorio incluye el tag `text-generation-inference` y `endpoints_compatible`.
+- Latencia y throughput estimados: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| Miko-M7-V3-GGUF | 7,24B | no disponible | no disponible | GGUF | Solo Q8_0 y f16; solo ingles |
-| Mistral-7B-Instruct | 7,24B | 32k (v0.2/v0.3) | Apache 2.0 | safetensors, GGUF | Amplia comunidad y cuantizaciones |
-| Llama 3.1 8B Instruct | 8,03B | 128k | Llama 3.1 Community License | safetensors, GGUF | Multilingue, tool calling documentado |
-| Qwen2.5 7B Instruct | 7,62B | 128k | Apache 2.0 (mayoria de variantes) | safetensors, GGUF | Multilingue, buen rendimiento en codigo |
+| Miko-M7-V3-GGUF | 7,2B | no disponible | no disponible | GGUF | Fine-tune conversacional de Mistral, solo ingles |
+| Mistral-7B-Instruct-v0.2 | 7,2B | 32k (segun documentacion publica de Mistral) | Apache 2.0 | safetensors, GGUF | Referencia generalista, multilingue |
+| Zephyr-7B-beta | 7,2B | 32k (segun documentacion publica) | MIT | safetensors, GGUF | Fine-tune con DPO, orientado a instrucciones |
+| OpenHermes-2.5-Mistral-7B | 7,2B | 32k (segun documentacion publica) | Apache 2.0 | safetensors, GGUF | Fine-tune conversacional popular en la comunidad |
 
-La comparativa se limita a parametros y disponibilidad porque no hay datos de rendimiento publicados para Miko-M7-V3. Frente a las alternativas, la principal desventaja es la ausencia de documentacion tecnica, licencia clara y cuantizaciones de baja precision.
+Nota: los datos de contexto y licencia de los modelos comparativos provienen de su documentacion publica habitual; no se dispone de datos de rendimiento comparativo para Miko-M7-V3 en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- Licencia no disponible: no se puede confirmar si el uso comercial esta permitido; es imprescindible contactar con el autor del modelo base antes de usarlo en produccion.
-- Sesgos conocidos: no documentados; al ser un modelo entrenado presumiblemente con datos web en ingles, es probable que herede sesgos de ese corpus, pero no hay informacion oficial.
-- Riesgo de alucinacion: no evaluado; sin benchmarks ni model card del autor original, no se puede estimar la fiabilidad factual.
-- Limitacion de idioma: solo se declara soporte de ingles; el rendimiento en castellano no esta garantizado.
-- Contexto desconocido: se desconoce la longitud de contexto soportada, lo que impide planificar tareas de contexto largo.
-- Cuantizaciones limitadas: solo Q8_0 y f16, sin opciones Q4_K_M ni IQ para entornos con menos de 8 GB de VRAM.
-- Documentacion escasa: la model card del cuantizador no describe el modelo base, su entrenamiento ni sus capacidades.
-- Popularidad nula: 0 descargas y 0 likes en el momento de la consulta, sin senales de validacion por parte de la comunidad.
+- Sesgos conocidos: no documentados, pero al ser un fine-tune sobre datos filtrados de la comunidad, puede heredar sesgos del dataset y del modelo base.
+- Riesgo de alucinacion: presente como en cualquier modelo de 7B; no hay evaluaciones publicadas que lo cuantifiquen.
+- Limitaciones de contexto o idioma: solo se declara soporte de ingles; la longitud de contexto no esta documentada.
+- Restricciones de licencia para uso comercial: la licencia no esta disponible, por lo que no se puede confirmar si el uso comercial esta permitido. Es imprescindible verificar la licencia del modelo base ricer0ll/Miko-M7-V3 antes de cualquier despliegue en produccion.
+- Contenido no apto para todo publico: el tag `not-for-all-audiences` indica que el modelo puede generar contenido adulto o sensible; requiere moderacion en aplicaciones publicas.
+- Al ser una cuantizacion, las versiones de baja calidad (Q2_K, Q3_K_M) degradan notablemente la coherencia; se recomienda Q4_K_M o superior para uso real.
+- No hay garantias de soporte ni mantenimiento por parte del autor de la cuantizacion.
 
 ## Enlaces
 
 - Repositorio GGUF: https://huggingface.co/mradermacher/Miko-M7-V3-GGUF
 - Modelo base: https://huggingface.co/ricer0ll/Miko-M7-V3
-- Pagina de descargas del cuantizador: https://hf.tst.eu/model#Miko-M7-V3-GGUF
-- FAQ y solicitudes de cuantizacion: https://huggingface.co/mradermacher/model_requests
-- README de referencia para uso de GGUF: https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
-- Analisis de tipos de cuantizacion: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Cuantizaciones imatrix/ponderadas: https://huggingface.co/mradermacher/Miko-M7-V3-i1-GGUF
+- Pagina de resumen del autor: https://hf.tst.eu/model#Miko-M7-V3-GGUF
+- Dataset de entrenamiento: https://huggingface.co/datasets/anthracite-org/stheno-filtered-v1.1
+- Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Grafico de calidad de cuantizaciones (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png
+- Notas sobre cuantizaciones (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Peticiones de cuantizacion: https://huggingface.co/mradermacher/model_requests

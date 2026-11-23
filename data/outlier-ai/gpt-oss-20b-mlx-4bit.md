@@ -2,95 +2,97 @@
 
 ## Resumen
 
-`Outlier-Ai/gpt-oss-20b-MLX-4bit` es una conversión a formato MLX de 4 bits del modelo `openai/gpt-oss-20b`, empaquetada por Outlier-Ai para su ejecución nativa en Apple Silicon (M1, M2, M3 y M4). No se trata de un modelo nuevo ni de un ajuste fino: los pesos son los originales de OpenAI y el repositorio solo modifica el formato en disco (safetensors cuantizados, tokenizer y plantilla de chat) para que la librería `mlx-lm` pueda cargarlo en macOS.
+`Outlier-Ai/gpt-oss-20b-MLX-4bit` es una conversion a formato MLX de 4 bits del modelo `openai/gpt-oss-20b` de OpenAI, publicada por el equipo de Outlier para su ejecucion en Apple Silicon (M1, M2, M3, M4). No se trata de un modelo nuevo ni de un fine-tune: solo cambia el formato en disco (safetensors MLX 4-bit, plantilla de chat y tokenizer), manteniendo los pesos y la licencia del modelo original. El objetivo es permitir inferencia local, offline y privada en Macs, sin dependencia de la nube ni de claves de API.
 
-El modelo base es un transformer de tipo mixture-of-experts (MoE) de OpenAI con 20.914.755.648 parámetros totales, publicado bajo licencia Apache 2.0. Esta conversión concreta pesa 11,2 GB en el repositorio y está pensada para inferencia local, sin conexión y con privacidad total, en equipos de sobremesa y portátiles de Apple.
+El modelo base es un transformer de tipo MoE con 20.914.755.648 parametros totales (segun los safetensors del repo), orientado a generacion de texto conversacional, razonamiento y function calling. La conversion esta pensada para `mlx-lm` 0.31.x y ocupa 11,2 GB en el repositorio, lo que la hace viable en equipos con memoria unificada media-alta de la gama Apple Silicon.
 
-Su relevancia actual radica en que permite ejecutar un MoE de ~21B parámetros en un Mac con memoria unificada razonable, manteniendo las capacidades del modelo original (generación de texto, conversación, function calling) sin depender de la nube ni de claves de API. La ficha se centra en las características de esta conversión; los detalles de entrenamiento y benchmarks del modelo original deben consultarse en la model card de OpenAI.
+Su relevancia actual radica en que permite desplegar un modelo de ~21B en hardware de consumo Mac con cuantizacion 4-bit, manteniendo las capacidades del original (chat, tool calling, agentes) y con licencia Apache 2.0. La model card advierte que los numeros de rendimiento publicados por el autor provienen de experimentos internos y no de pruebas de release, por lo que deben tomarse con cautela.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer con mixture-of-experts (MoE), según el modelo base `openai/gpt-oss-20b` |
+| Arquitectura | Transformer con mezcla de expertos (MoE), segun modelo base `openai/gpt-oss-20b` |
 | Parametros totales | 20.914.755.648 (~20,9B) |
-| Parametros activos | no disponible en la informacion proporcionada |
-| Longitud de contexto | no disponible en la informacion proporcionada |
-| Tipos de cuantizacion | MLX 4-bit (group size 64, simetrica); el modelo base admite otras cuantizaciones no detalladas aqui |
-| Idiomas soportados | en (inglés) |
-| Licencia | apache-2.0 |
+| Parametros activos | no disponible |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | MLX 4-bit (group size 64, simetrica) |
+| Idiomas soportados | en (segun metadatos del repo) |
+| Licencia | apache-2.0 (heredada del modelo base) |
 | Formato de pesos | safetensors (MLX 4-bit), con `config.json`, tokenizer y `chat_template.jinja` |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura subyacente es la del modelo `openai/gpt-oss-20b`: un transformer con mezcla de expertos (MoE) de aproximadamente 20,9B parámetros totales. Esta conversión no introduce cambios arquitectónicos ni de pesos; únicamente reempaqueta los tensores en safetensors cuantizados a 4 bits con tamaño de grupo 64 y cuantización simétrica, compatible con `mlx-lm` 0.31.x. No se ha realizado ajuste fino ni fusión de pesos, según la model card del autor.
+La arquitectura corresponde al modelo base `openai/gpt-oss-20b`, un transformer con mezcla de expertos (MoE) segun la informacion disponible. Esta conversion no aporta cambios arquitectonicos: solo modifica el formato en disco a safetensors MLX 4-bit con grupo de cuantizacion de tamano 64 y simetria, compatible con `mlx-lm` 0.31.x. Se incluyen `config.json`, tokenizer y `chat_template.jinja` para el uso conversacional.
 
-No se dispone en la información proporcionada de detalles sobre el número de tokens de entrenamiento, la composición del dataset, el proceso de alineación (RLHF/DPO) ni innovaciones técnicas del modelo original. Esos datos deben consultarse en la model card de `openai/gpt-oss-20b`. La contribución de Outlier-Ai se limita al empaquetado MLX y a la integración con su aplicación de escritorio.
+No se dispone en la informacion proporcionada de detalles sobre el numero de tokens de entrenamiento, composicion del dataset, procesos de RLHF/DPO ni innovaciones tecnicas especificas del modelo base (por ejemplo, decodificacion especulativa o atencion lineal). Cualquier dato de ese tipo debe consultarse en la model card de `openai/gpt-oss-20b`. La model card de esta conversion indica explicitamente que los numeros publicados son de experimentos internos y no de pruebas de release.
 
 ## Capacidades
 
-- Generación de texto y conversación multi-turno (pipeline `text-generation`, tags `chat` y `conversational`).
-- Soporte de function calling / tool calling (tag `function-calling` en el repositorio).
-- Ejecución local y offline en Apple Silicon, sin round-trips a la nube ni claves de API.
-- Inferencia en dispositivo (`on-device`, `edge-ai`) mediante Metal y MLX.
-- Capacidades multilingües limitadas al inglés según el campo `language: en` del repositorio.
-- Integración directa con `mlx-lm` (carga vía `load()` y generación vía `generate()`).
-- Compatibilidad con la aplicación Outlier para Mac, que permite cargar cualquier conversión MLX compatible.
-- No se documentan en la información disponible capacidades de visión, audio ni modo de razonamiento extendido para esta conversión.
+- Generacion de texto conversacional multi-turno (chat, instruct).
+- Razonamiento y respuesta a preguntas de conocimiento general.
+- Function calling / tool calling, segun los tags del repositorio (`function-calling`).
+- Soporte para flujos de agentes y razonamiento multi-paso (heredado del modelo base, no documentado en detalle en esta conversion).
+- Capacidades multilingues limitadas: el metadato de idioma declara unicamente `en`.
+- Ejecucion local y offline en Apple Silicon mediante MLX y Metal, sin llamadas a la nube.
+- Integracion con la aplicacion Outlier para Mac y con `mlx-lm` para uso programatico.
 
 ## Casos de uso
 
-- Asistente conversacional local en macOS: el modelo puede mantener diálogos multi-turno íntegramente en el dispositivo, aprovechando la memoria unificada del Mac y evitando enviar datos a servicios externos. Adecuado para usuarios que priorizan privacidad.
-- Automatización con function calling en flujos de escritorio: gracias al soporte de tool calling, puede integrarse en scripts o aplicaciones macOS que necesiten invocar funciones locales (sistema de archivos, APIs internas) sin salir del equipo.
-- Prototipado rápido de aplicaciones LLM: con `mlx-lm` y unas pocas líneas de Python se puede cargar el modelo y generar texto, lo que acelera la experimentación en un MacBook Pro o Mac Studio.
-- Procesamiento de documentos sensibles: resumen y reescritura de textos confidenciales (contratos, notas internas) en local, sin exponer el contenido a terceros.
-- Educación e investigación: entorno reproducible y sin coste por token para estudiar el comportamiento de un MoE de ~21B en hardware de consumo Apple.
-- Desarrollo de agentes de escritorio: combinación de conversación y llamadas a herramientas para construir asistentes que operen sobre aplicaciones locales, con la ventaja de no requerir conectividad.
-- Uso en entornos con conectividad limitada o restringida: al ejecutarse offline, es viable en escenarios de campo, aviación o instalaciones aisladas.
+- Asistente conversacional local en Mac: el modelo puede mantener dialogos multi-turno con plantilla de chat incluida, ejecutandose integramente en el dispositivo sin enviar datos a la nube, lo que resulta adecuado para entornos con requisitos de privacidad.
+- Automatizacion con function calling en escritorio: gracias al soporte de tool calling, puede integrarse en flujos locales que invoquen APIs o scripts del propio equipo (por ejemplo, automatizacion de tareas ofimaticas o consultas a bases de datos locales).
+- Prototipado de agentes en Apple Silicon: util para desarrolladores que quieran iterar sobre pipelines de agentes multi-paso en un Mac antes de desplegar en infraestructura mayor, aprovechando la cuantizacion 4-bit para reducir requisitos de memoria.
+- Procesamiento de documentos privados: resumenes y extraccion de informacion de textos sensibles (contratos, notas internas) sin salida de datos, usando el modelo via `mlx-lm` en scripts locales.
+- Educacion y experimentacion: analisis de modelos MoE y de tecnicas de cuantizacion 4-bit en un entorno reproducible (`mlx-lm` 0.31.x) con hardware de consumo.
+- Desarrollo de aplicaciones macOS nativas: integracion del modelo en apps de escritorio mediante la libreria MLX y la app Outlier, con modelo descargable y ejecutable sin API keys.
+- Evaluacion comparativa de formatos: util para medir el impacto de la cuantizacion 4-bit frente a los pesos originales en tareas de chat y generacion, siempre que se disponga de un conjunto de evaluacion propio.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card remite a `outlier.host/benchmarks` para cifras de MMLU, HumanEval y tok/s en Macs de la serie M, pero esos datos no se incluyen en el material proporcionado y no se reproducen aquí para no inventar cifras.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card remite a `outlier.host/benchmarks` para cifras de MMLU, HumanEval y tok/s en Macs de la serie M, pero advierte que los numeros son de experimentos internos y no de pruebas de release. No se incluyen tablas numericas en esta ficha para no inventar datos.
 
 ## Requisitos de hardware
 
-- VRAM/memoria unificada estimada: el repositorio ocupa 11,2 GB en 4 bits; se recomienda al menos 16 GB de memoria unificada para cargar el modelo con margen para el contexto y el runtime, y 24-32 GB para contextos largos o uso concurrente.
-- GPU recomendadas: Apple Silicon M1, M2, M3 y M4 (incluidos MacBook Air, MacBook Pro, Mac mini y Mac Studio), según los tags del repositorio.
-- Compatibilidad con GPU de consumo: sí, en equipos Apple Silicon; no está pensado para GPU NVIDIA/AMD en esta conversión concreta (MLX es específico de Apple).
-- Opciones de despliegue: `mlx-lm` (CLI y API Python) y la aplicación Outlier para macOS (`brew install --cask outlier-host/tap/outlier`). No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI en esta conversión.
-- Latencia y throughput: no disponibles en la información proporcionada; dependen del chip M-series concreto y de la longitud de contexto.
+- VRAM/memoria unificada estimada: el repositorio ocupa 11,2 GB en formato MLX 4-bit; se recomienda al menos 16 GB de memoria unificada para cargar el modelo con margen para el contexto y el sistema, y 24-32 GB para sesiones largas o contextos amplios.
+- GPU recomendadas: Apple Silicon M1, M2, M3 y M4 (segun los tags del repositorio), incluyendo MacBook Air, MacBook Pro, Mac mini y Mac Studio. No esta pensado para GPUs NVIDIA ni CUDA.
+- Cabe en GPU de consumo: si, en equipos Apple Silicon con memoria unificada suficiente (orientativamente 16 GB o mas); no aplica a GPUs de consumo x86.
+- Opciones de despliegue: `mlx-lm` 0.31.x (CLI y API Python), aplicacion Outlier para macOS arm64 (instalable via `brew install --cask outlier-host/tap/outlier`). No se mencionan vLLM, llama.cpp, Ollama ni TGI para este formato.
+- Latencia y throughput: no disponibles en la informacion proporcionada; la model card remite a la pagina de benchmarks del autor para cifras de tok/s en Macs de la serie M.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Formato | Licencia | Notas |
+| Modelo | Parametros | Contexto | Formato / cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Outlier-Ai/gpt-oss-20b-MLX-4bit | ~20,9B (MoE) | no disponible | MLX 4-bit safetensors | apache-2.0 | Conversión para Apple Silicon; idioma en |
-| openai/gpt-oss-20b | ~20,9B (MoE) | no disponible | safetensors (original) | apache-2.0 | Modelo base de OpenAI; referencia canónica |
-| Outlier-Ai/Outlier-GPTOSS-20B-MLX-4bit | ~20,9B (MoE) | no disponible | MLX 4-bit | apache-2.0 | Build alternativo del mismo base, empaquetado por Outlier para su app |
-| Outlier-Ai/Qwen3-Coder-30B-A3B-Instruct-MLX-4bit | ~30B (MoE, ~3B activos) | no disponible | MLX 4-bit | no disponible en la información | Conversión MLX de otro MoE orientado a código |
+| `Outlier-Ai/gpt-oss-20b-MLX-4bit` | ~20,9B | no disponible | MLX 4-bit safetensors | apache-2.0 | Hugging Face, `mlx-lm`, app Outlier |
+| `openai/gpt-oss-20b` (base) | ~20,9B | no disponible | safetensors originales | apache-2.0 | Hugging Face |
+| `Outlier-Ai/Qwen3-Coder-30B-A3B-Instruct-MLX-4bit` | no disponible en la informacion | no disponible | MLX 4-bit | no disponible en la informacion | Hugging Face (1.598 descargas) |
+| `Outlier-Ai/Outlier-Core-27B-MLX-4bit` | no disponible en la informacion | no disponible | MLX 4-bit | no disponible en la informacion | Hugging Face (55 descargas) |
 
-La comparación con alternativas de otros proveedores (por ejemplo, modelos densos de ~7B-14B en GGUF) no está disponible en la información proporcionada.
+La comparativa se limita a los modelos citados en la model card; no se dispone de datos de rendimiento comparativo (benchmarks) entre ellos en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- Idioma: el repositorio declara únicamente inglés (`language: en`); el rendimiento en castellano no está garantizado ni documentado.
-- Conocimiento y sesgos: al ser una conversión del modelo original, hereda los sesgos, la fecha de corte y el riesgo de alucinación de `openai/gpt-oss-20b`, no evaluados en esta ficha.
-- Cuantización: la cuantización a 4 bits puede degradar ligeramente la calidad frente a los pesos originales en precisión completa; no se aportan métricas de esa pérdida.
-- Plataforma: MLX es específico de Apple Silicon; no se puede desplegar en servidores Linux con GPU NVIDIA sin otra conversión.
-- Licencia: Apache 2.0 permite uso comercial, pero debe verificarse la model card canónica de OpenAI para condiciones adicionales del modelo base.
-- Empaquetado: la model card incluye promoción de la aplicación Outlier y enlaces con parámetros UTM; conviene separar el contenido técnico del marketing al evaluar el repositorio.
-- Datos ausentes: no se dispone de contexto máximo, número de parámetros activos ni benchmarks verificables en la información proporcionada.
+- Solo se declara soporte de ingles (`en`) en los metadatos; el rendimiento en castellano no esta verificado y podria ser inferior.
+- Riesgo de alucinacion inherente a los modelos de lenguaje; no se documentan mitigaciones especificas en esta conversion.
+- La cuantizacion 4-bit puede degradar la calidad frente a los pesos originales en tareas sensibles (matematicas, codigo, razonamiento largo); no se aportan mediciones en la informacion disponible.
+- La longitud de contexto no esta indicada en el repositorio; conviene consultar la model card de `openai/gpt-oss-20b` antes de disenar flujos con contextos largos.
+- La licencia Apache 2.0 se hereda del modelo base; deben revisarse las restricciones de uso del modelo original en su model card canonica.
+- Los numeros de rendimiento citados por el autor provienen de experimentos internos, no de pruebas de release; no deben usarse como garantia en produccion.
+- El formato es exclusivo de MLX/Apple Silicon; no es portable a CUDA, ROCm ni CPU x86 sin reconversion.
+- La model card incluye promocion de la aplicacion Outlier (plan Pro de pago); esta ficha no valida ni respalda dichas afirmaciones comerciales.
+- El repositorio tiene un numero bajo de descargas (605) y cero likes en el momento de la consulta, lo que sugiere poca validacion comunitaria.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/Outlier-Ai/gpt-oss-20b-MLX-4bit
+- Modelo en Hugging Face: https://huggingface.co/Outlier-Ai/gpt-oss-20b-MLX-4bit
 - Modelo base: https://huggingface.co/openai/gpt-oss-20b
-- Build alternativo de Outlier: https://huggingface.co/Outlier-Ai/Outlier-GPTOSS-20B-MLX-4bit
-- Benchmarks de Outlier: https://outlier.host/benchmarks
-- Aplicación Outlier: https://outlier.host/
-- Otras conversiones de Outlier:
+- Benchmarks del autor: https://outlier.host/benchmarks
+- Aplicacion Outlier: https://outlier.host/
+- Otras conversiones del autor:
   - https://huggingface.co/Outlier-Ai/DeepSeek-R1-Distill-Qwen-7B-MLX-4bit
   - https://huggingface.co/Outlier-Ai/Qwen3-Coder-30B-A3B-Instruct-MLX-4bit
   - https://huggingface.co/Outlier-Ai/Qwen2.5-Coder-7B-Instruct-MLX-4bit
   - https://huggingface.co/Outlier-Ai/Outlier-Core-27B-MLX-4bit
   - https://huggingface.co/Outlier-Ai/Outlier-Nano-4B-MLX-4bit
+  - https://huggingface.co/Outlier-Ai/Outlier-Lite-9B-MLX-4bit
+  - https://huggingface.co/Outlier-Ai/Outlier-Quick-26B-MLX-4bit

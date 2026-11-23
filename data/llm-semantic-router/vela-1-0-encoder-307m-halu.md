@@ -2,122 +2,106 @@
 
 ## Resumen
 
-Vela-1.0-Encoder-307M-Halu es un modelo encoder de 307.531.778 parametros desarrollado por llm-semantic-router, un ajuste fino de llm-semantic-router/Vela-1.0-Encoder-307M sobre tareas de deteccion de alucinaciones. Su funcion no es generar texto, sino etiquetar token a token que fragmentos de una respuesta no estan respaldados por la evidencia proporcionada, devolviendo spans marcados como `supported` (0) o `hallucinated` (1) con desplazamientos en caracteres Unicode. Es, por tanto, un verificador de respuestas fundamentadas, no un modelo generativo.
+Vela-1.0-Encoder-307M-Halu es un modelo encoder de tipo ModernBERT afinado para token-classification, concretamente para la deteccion de alucinaciones en respuestas generadas por modelos de lenguaje. Lo desarrolla el proyecto llm-semantic-router (vLLM Semantic Router) y deriva por fine-tuning del modelo base vllm-sr/Vela-1.0-Encoder-307M. Su funcion es localizar, dentro de una respuesta, los fragmentos (spans) que no estan respaldados por la evidencia proporcionada, etiquetandolos como `supported` (0) o `hallucinated` (1) mediante offsets de caracteres Unicode.
 
-El modelo se apoya en la arquitectura ModernBERT, una familia de encoders transformer con atencion de complejidad eficiente y ventanas de contexto largas para su tamano, lo que le permite procesar hasta 8.192 tokens de entrada (incluyendo tokens especiales) en una sola pasada. Se distribuye bajo licencia Apache 2.0, con pesos en safetensors y pipeline `token-classification`, lo que lo hace integrable en pipelines existentes de Hugging Face Transformers (probado con la version 4.57.6).
+El modelo resuelve un problema concreto en pipelines RAG y de verificacion de respuestas: dado un contexto (evidencia), una pregunta y una respuesta, devuelve las porciones de la respuesta que no se sustentan en el contexto. Con 307 millones de parametros y una longitud de entrada de 8.192 tokens, esta pensado para integrarse como componente de enrutado y control de calidad en sistemas que ya usan LLM, sin necesidad de un segundo modelo generativo para la verificacion.
 
-Su relevancia actual esta ligada al ecosistema de enrutado semantico y verificacion de respuestas del proyecto vLLM Semantic Router: en aplicaciones RAG o de agentes, permite auditar si la respuesta final se sostiene sobre el contexto recuperado o las salidas de herramientas. La distincion es importante: el modelo evalua soporte respecto a la evidencia aportada, no veracidad factual en el mundo real, y un resultado vacio no garantiza que la respuesta sea correcta.
+Es relevante porque aborda la deteccion de alucinaciones como tarea supervisada de etiquetado de spans, con evaluacion sobre conjuntos diversos (codigo, README, salidas de herramientas, Wikipedia, RAGTruth y PsiloQA multilingue) y comparacion directa con LettuceDetect. La licencia Apache 2.0 y el formato safetensors estandar de Transformers facilitan su despliegue en produccion.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | ModernBERT (encoder transformer, clasificacion de tokens) |
+| Arquitectura | ModernBERT (encoder transformer) para token-classification |
 | Parametros totales | 307.531.778 |
-| Parametros activos | no aplica (modelo denso, no es MoE) |
-| Longitud de contexto | 8.192 tokens, incluyendo tokens especiales |
-| Tipos de cuantizacion | no disponible (solo se publican pesos safetensors; la evaluacion oficial usa bfloat16) |
-| Idiomas soportados | no disponible |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | 8.192 tokens, incluidos tokens especiales |
+| Tipos de cuantizacion | no disponible (el repo solo publica safetensors; cuantizacion GGUF/ONNX no documentada) |
+| Idiomas soportados | no disponible (la evaluacion incluye PsiloQA multilingue, pero no se declara lista de idiomas) |
 | Licencia | Apache 2.0 |
 | Formato de pesos | safetensors |
-| Libreria | transformers |
-| Pipeline | token-classification |
-| Etiquetas de salida | `supported` (0), `hallucinated` (1) |
-| Unidad de salida | spans con offsets de caracteres Unicode sobre la respuesta |
-| Modelo base | llm-semantic-router/Vela-1.0-Encoder-307M |
-| Relacion con el modelo base | finetune |
-| Datasets de entrenamiento | KRLabsOrg/lettucedetect-code-hallucination, KRLabsOrg/lettucedetect-prose-hallucination |
-| Tamano del repositorio | 1,3 GB |
-| Descargas / likes | 0 / 0 |
-| Fecha de creacion | 2026-09-17 |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un encoder ModernBERT de 307M de parametros configurado como `AutoModelForTokenClassification`. La entrada se construye como un par de secuencias: un prompt que combina la peticion del usuario y la evidencia o contexto (`User request: {question}\n\n{context}`) y, como segunda secuencia, la respuesta a auditar. La tokenizacion se realiza con `use_fast=True` y `return_offsets_mapping=True`, de modo que cada token se mapea a un rango de caracteres de la respuesta original; el modelo emite una probabilidad por token y la clase `hallucinated` se activa con puntuaciones estrictamente superiores a 0,5. Los tokens contiguos marcados se agrupan en spans, lo que produce la salida final como lista de fragmentos con inicio, fin y texto.
+El modelo es un encoder ModernBERT afinado para token-classification sobre el modelo base vllm-sr/Vela-1.0-Encoder-307M. La cabeza de clasificacion produce dos etiquetas por token (`supported` y `hallucinated`), y la salida se agrupa en spans mediante offsets de caracteres sobre la respuesta. La entrada se construye como un par (prompt = peticion del usuario + evidencia, respuesta), con truncamiento `only_first` en la evaluacion y un limite de 8.192 tokens.
 
-El ajuste fino se realizo a partir de llm-semantic-router/Vela-1.0-Encoder-307M usando dos datasets de KRLabsOrg orientados a deteccion de alucinaciones en代码 y en prosa (`lettucedetect-code-hallucination` y `lettucedetect-prose-hallucination`). No se especifican en la informacion disponible el numero de tokens de entrenamiento, la composicion exacta de las mezclas, ni si se aplicaron tecnicas de alineacion como RLHF o DPO; en el caso de un encoder de clasificacion de tokens, estas ultimas no serian de aplicacion directa. La model card si documenta un detalle de implementacion relevante: la configuracion requiere `config.reference_compile = False` y se recomienda `attn_implementation="sdpa"` para la inferencia.
-
-La innovacion principal no es arquitectonica sino de planteamiento: en lugar de pedir a un modelo generativo que se autoevalue, se entrena un encoder compacto especificamente para localizar spans no soportados, con truncacion `only_first` (es decir, se conserva el prompt completo y se trunca la respuesta si se excede el limite conjunto) y evaluacion sobre un conjunto de test reservado.
+El fine-tuning se realizo sobre los datasets KRLabsOrg/lettucedetect-code-hallucination y KRLabsOrg/lettucedetect-prose-hallucination, orientados a alucinaciones en codigo y en prosa. La model card no detalla el numero de tokens de entrenamiento, la composicion exacta del dataset ni si se aplicaron tecnicas de RLHF o DPO; esa informacion no esta disponible. La evaluacion reportada usa bfloat16, limite de 8.192 tokens, truncamiento `only_first` y umbral de score estrictamente superior a 0,5. El modelo base incluye un parametro de configuracion `reference_compile` que la model card recomienda desactivar (`config.reference_compile = False`) y sugiere `attn_implementation="sdpa"`.
 
 ## Capacidades
 
-- Deteccion de spans alucinados en respuestas fundamentadas: identifica caracteres concretos de una respuesta que no estan respaldados por la evidencia aportada.
-- Verificacion a nivel de ejemplo: determina si una respuesta contiene al menos un span alucinado, ademas de la localizacion exacta.
-- Cobertura de dominio en prosa y en codigo: fue ajustado con datasets especificos de alucinacion en texto y en codigo.
-- Verificacion de salidas de herramientas: incluye una metrica propia para spans sobre salidas de herramientas (`Tool output span F1`), lo que apunta a uso en flujos de agentes.
-- Procesamiento de contexto largo: 8.192 tokens permiten incluir evidencias extensas junto a la peticion y la respuesta en una sola pasada.
-- Salida estructurada con offsets de caracteres, apta para resaltado, anotacion o filtrado programatico sin post-procesado adicional.
-- No dispone de generacion de texto, tool calling, capacidades de agente, vision ni audio: es exclusivamente un clasificador de tokens.
-- Capacidades multilingues: no disponible (no se declaran idiomas soportados).
+- Deteccion de spans no respaldados por la evidencia en respuestas generadas, con etiquetas `supported` (0) y `hallucinated` (1).
+- Verificacion de respuestas en pipelines RAG: compara la respuesta con el contexto recuperado y marca los fragmentos sin soporte.
+- Deteccion de alucinaciones en codigo y en prosa (datasets de entrenamiento especificos para ambos dominios).
+- Procesamiento de entradas largas de hasta 8.192 tokens, suficiente para contexto, pregunta y respuesta en un unico par.
+- Evaluacion multilingue reportada sobre PsiloQA, aunque sin lista explicita de idiomas soportados.
+- Salida a nivel de token con offsets de caracteres Unicode, lo que permite mapear los spans directamente al texto original de la respuesta.
+- No es un modelo generativo: no produce texto, solo clasificacion de tokens. No se documenta soporte de tool calling ni de agentes.
 
 ## Casos de uso
 
-- Verificacion de respuestas en RAG: tras recuperar documentos y generar una respuesta, se pasa el contexto recuperado como evidencia y la respuesta como segunda secuencia; los spans marcados se resaltan al usuario o se descartan antes de mostrar la salida.
-- Guardarraíl en agentes con tool calling: las salidas de herramientas se incorporan como evidencia y el modelo comprueba si el agente describio correctamente lo que devolvio la herramienta, cubierto por la metrica especifica de `Tool output span F1`.
-- Auditoria de asistentes de codigo: los datasets de entrenamiento incluyen alucinacion en codigo, de modo que puede detectar afirmaciones sobre APIs, funciones o comportamiento que no se derivan del fragmento de codigo aportado.
-- Control de calidad en pipelines de generacion de documentacion tecnica: se valida que cada afirmacion del texto generado este respaldada por las fuentes citadas antes de publicar.
-- Anotacion asistida de datasets: la salida con offsets de caracteres sirve como preanotacion para revisores humanos que construyen corpus de deteccion de alucinaciones.
-- Enrutado semantico: dentro del ecosistema vLLM Semantic Router, el modelo puede actuar como clasificador de confianza que decide si una respuesta se entrega, se regenera o se escala a revision humana.
-- Cumplimiento en dominios regulados: verificacion de respuestas en atencion al cliente sobre contratos, normativa o documentacion interna, donde cada afirmacion debe rastrearse hasta el texto de origen.
-- Evaluacion offline de pipelines: integracion en baterias de test que comparan respuestas de distintos modelos contra un mismo conjunto de evidencias, usando el F1 de spans como metrica objetiva.
+- Verificacion de respuestas en RAG: tras recuperar documentos y generar una respuesta, el modelo recibe contexto + pregunta + respuesta y devuelve los spans no soportados, permitiendo bloquear o regenerar respuestas antes de mostrarlas al usuario.
+- Control de calidad en agentes de codigo: con el conjunto de evaluacion "Code agent" (2.015 muestras) y el dataset de alucinaciones en codigo, se puede marcar codigo generado que no se corresponde con la evidencia o la documentacion disponible.
+- Validacion de salidas de herramientas: el grupo "Tool output" (617 muestras) evalua respuestas construidas a partir de resultados de herramientas; el modelo sirve para detectar afirmaciones que la salida de la herramienta no respalda.
+- Enrutado semantico y guardarrailes: integrado en el stack vLLM Semantic Router como componente de verificacion que decide si una respuesta pasa el control de fidelidad antes de continuar el pipeline.
+- Auditoria de documentacion tecnica: el grupo "README" (641 muestras) y "Wikipedia" (1.388 muestras) muestran buen rendimiento en prosa tecnica y enciclopedica, util para revisar resumenes generados sobre documentacion.
+- Verificacion multilingue: el conjunto PsiloQA (2.897 muestras) permite usar el modelo en respuestas en varios idiomas, con rendimiento cercano al de LettuceDetect.
+- Filtrado de datos sinteticos: al puntuar spans por token, se puede usar para descartar o corregir respuestas generadas en la construccion de datasets de entrenamiento.
 
 ## Benchmarks y rendimiento
 
-Resultados publicados por el autor sobre un conjunto de test reservado de 10.698 ejemplos. Escala de 0 a 100; mayor es mejor. La evaluacion usa bfloat16, limite de 8.192 tokens, truncacion `only_first` en pares y umbral de puntuacion de token estrictamente superior a 0,5.
+Resultados reportados en la model card sobre el conjunto fijo de evaluacion de 10.698 ejemplos. Cada celda es Vela Halu / LettuceDetect, escala 0-100, mayor es mejor. En negrita, los valores de Vela que superan al baseline.
 
-| Metrica | Vela Halu |
-|---|---:|
-| F1 de span global | 63,85 |
-| F1 de ejemplo global | 87,12 |
-| F1 de span en codigo | 51,07 |
-| F1 de span en salidas de herramienta | 59,86 |
+| Fuente | Muestras | Span F1 | Span P | Span R | Example F1 | IoU |
+|---|---:|---:|---:|---:|---:|---:|
+| ALL | 10.698 | **64,7** / 64,2 | **70,0** / 68,4 | 60,1 / 60,5 | **87,5** / 86,9 | **67,9** / 67,1 |
+| ACL | 440 | **60,3** / 57,9 | **72,0** / 70,5 | **51,9** / 49,2 | 85,9 / 87,3 | **65,1** / 63,7 |
+| Code agent | 2.015 | **53,0** / 50,8 | **65,5** / 61,9 | **44,6** / 43,0 | **78,3** / 77,0 | 58,0 / 58,1 |
+| README | 641 | **76,7** / 75,1 | **81,8** / 78,9 | **72,2** / 71,6 | **91,5** / 90,0 | **78,4** / 76,8 |
+| Tool output | 617 | **64,3** / 58,8 | **78,0** / 73,6 | **54,7** / 49,0 | **82,7** / 76,3 | **70,3** / 64,5 |
+| Wikipedia | 1.388 | **73,4** / 70,8 | **77,1** / 74,1 | **70,1** / 67,8 | **93,0** / 91,7 | **79,1** / 76,8 |
+| PsiloQA (multilingue) | 2.897 | 70,8 / 71,4 | **70,5** / 69,6 | 71,1 / 73,3 | 94,1 / 94,3 | 62,5 / 62,7 |
+| RAGTruth | 2.700 | 52,5 / 52,8 | **67,4** / 66,8 | 43,1 / 43,7 | **74,9** / 74,3 | **72,8** / 72,4 |
 
-`F1 de span` mide el solapamiento de caracteres; `F1 de ejemplo` mide si una respuesta contiene algun span alucinado. El fichero `scores.json` del repositorio incluye todos los grupos de origen y estadisticas de truncacion. No se han publicado resultados comparativos con otros modelos en la informacion disponible.
+Las metricas de span miden solapamiento de caracteres; Example F1 mide si una respuesta contiene algun span alucinado; IoU es la interseccion sobre union media de conjuntos de caracteres. Los scores de LettuceDetect proceden de su model card publicada, redondeados a tres decimales en escala 0-1 antes de la conversion.
 
 ## Requisitos de hardware
 
-- VRAM estimada para los pesos: unos 1,23 GB en FP32, unos 615 MB en BF16/FP16, unos 308 MB en INT8 y unos 154 MB en INT4. La memoria de activaciones es reducida porque el modelo es un encoder y realiza una unica pasada hacia delante, sin cache KV autoregresiva.
-- Al ser un modelo de 307M de parametros, cabe en cualquier GPU de consumo con 4 GB o mas de VRAM (GTX 1650 4 GB, RTX 3050, RTX 3060, RTX 4060, RTX 4090, etc.) y tambien puede ejecutarse en CPU para cargas de baja concurrencia.
-- Para lotes grandes y secuencias cercanas al limite de 8.192 tokens, se recomienda una GPU con al menos 8-12 GB para aprovechar el paralelismo por lotes.
-- GPU de centro de datos (A100, H100, L40S) solo estan justificadas si se necesita throughput muy alto o despliegue multi-tenant; no son necesarias por tamano de modelo.
-- Opciones de despliegue: Hugging Face Transformers con `AutoModelForTokenClassification` (probado con 4.57.6, `attn_implementation="sdpa"`, `config.reference_compile = False`); exportacion a ONNX Runtime o TorchScript es viable al ser un encoder denso. La compatibilidad de este pipeline concreto con vLLM, TGI o llama.cpp no esta confirmada en la informacion disponible; llama.cpp y Ollama no aplican de forma directa porque el modelo no es generativo.
-- Latencia y throughput: no disponible. Al no haber decodificacion autoregresiva, el coste de inferencia es el de una unica pasada de encoder y crece con la longitud de la secuencia de entrada, no con la longitud de la salida.
+- VRAM estimada para inferencia: con 307 millones de parametros, en bfloat16 el modelo ocupa aproximadamente 0,6 GB de pesos; en float32, unos 1,2 GB. Con overhead de activaciones y batch pequeno, cabe holgadamente en GPUs de 8 GB o menos.
+- GPU recomendadas: cualquier GPU moderna con al menos 8 GB (RTX 3060/4060, RTX 4090, L4, A10, A100, H100). Para lotes grandes y 8.192 tokens de entrada conviene 16 GB o mas.
+- Cabe en GPU de consumo: si, en practicamente todas las GPU consumer recientes con 8 GB o mas; tambien puede ejecutarse en CPU para volumenes bajos.
+- Opciones de despliegue: Transformers con PyTorch (probado con Transformers 4.57.6, `attn_implementation="sdpa"`); al ser un encoder ModernBERT, es compatible con backends de inferencia que soporten esa arquitectura. La model card no documenta integraciones especificas con vLLM, llama.cpp, Ollama o TGI para este checkpoint.
+- Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos comparativos publicados en la informacion proporcionada. Los datasets de entrenamiento provienen de la linea de trabajo `KRLabsOrg/lettucedetect-*`, orientada tambien a deteccion de alucinaciones sobre arquitecturas encoder, lo que la convierte en la referencia conceptual mas cercana, pero no se han facilitado sus especificaciones, licencia ni resultados, por lo que no se puede establecer una comparacion numerica fiable.
+| Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| Vela-1.0-Encoder-307M-Halu | 307,5 M | 8.192 tokens | Deteccion de spans de alucinacion | Apache 2.0 | Hugging Face (transformers, safetensors) |
+| LettuceDetect (baseline de la evaluacion) | no disponible en la informacion | no disponible en la informacion | Deteccion de alucinaciones | no disponible en la informacion | Hugging Face (KRLabsOrg) |
+| Modelo base vllm-sr/Vela-1.0-Encoder-307M | 307 M (aproximado) | no disponible en la informacion | Encoder base | no disponible en la informacion | Hugging Face |
 
-| Modelo | Parametros | Contexto | Licencia | Resultados comparables |
-|---|---|---|---|---|
-| Vela-1.0-Encoder-307M-Halu | 307,5 M | 8.192 tokens | Apache 2.0 | F1 de span 63,85; F1 de ejemplo 87,12 |
-| Vela-1.0-Encoder-307M (base) | 307,5 M (307.531.778 en el ajuste) | no disponible | no disponible en esta ficha | no disponible |
-| Modelos de la familia LettuceDetect | no disponible | no disponible | no disponible | no disponible |
-| Otros detectores de alucinacion basados en encoder | no disponible | no disponible | no disponible | no disponible |
+La comparacion cuantitativa disponible es la de la tabla de benchmarks, donde Vela Halu supera a LettuceDetect en la mayoria de fuentes, con excepciones puntuales en PsiloQA (Span F1, Span R, Example F1 e IoU) y en RAGTruth (Span F1 y Span R). No se dispone de datos de otros detectores de alucinacion comparables en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- El modelo mide soporte respecto a la evidencia aportada, no veracidad factual. Una respuesta puede estar bien fundamentada en un contexto erroneo y recibir etiqueta `supported`.
-- Un resultado vacio no garantiza que la respuesta sea correcta: la model card lo indica de forma explicita.
-- Riesgo de truncacion: con truncacion `only_first` en pares, si el prompt (peticion mas evidencia) es muy largo, la respuesta puede quedar truncada y no evaluarse por completo. El ejemplo oficial comprueba el limite de 8.192 tokens antes de inferir.
-- El rendimiento cae de forma notable en codigo: F1 de span de 51,07 frente a 63,85 global. No debe asumirse el mismo comportamiento en codigo que en prosa.
-- Los spans en salidas de herramientas (59,86) tambien quedan por debajo de la media global.
-- Idiomas soportados: no disponible. No hay garantia de comportamiento fuera de la distribucion de los datasets de ajuste.
-- Umbral fijo de 0,5 sobre la probabilidad softmax de la clase `hallucinated`: no se documentan curvas de precision-recall ni recomendaciones de calibracion del umbral por dominio.
-- Sesgos conocidos: no disponible. Al ajustarse sobre datasets concretos de KRLabsOrg, puede heredar los sesgos de composicion y estilo de esas fuentes.
-- Licencia Apache 2.0: permite uso comercial y modificacion con atribucion y conservacion del aviso de licencia, sin clausulas de uso restringido adicionales conocidas.
-- Madurez: el repositorio registra 0 descargas y 0 likes en el momento de la consulta, sin validacion independiente de la comunidad.
-- Coste de mantenimiento en produccion: exige definir la politica de construccion de evidencia (que contexto se considera fuente valida) y de gestion de spans detectados (bloquear, reescribir o escalar), que queda fuera del alcance del modelo.
+- El soporte de evidencia no equivale a verdad factual: una respuesta puede estar respaldada por el contexto y ser falsa en el mundo real. Un resultado vacio no garantiza correccion.
+- Respuestas que requieren aritmetica o razonamiento multi-paso mas alla del contexto explicito pueden marcarse incorrectamente como alucinadas.
+- La longitud de entrada esta limitada a 8.192 tokens; contexto, pregunta y respuesta deben caber en ese limite, y la evaluacion usa truncamiento `only_first`.
+- El umbral de decision usado en la evaluacion es 0,5 estricto; cambios en el umbral alteran precision y recall, por lo que conviene calibrarlo en produccion.
+- No se declara una lista de idiomas soportados; el rendimiento multilingue solo esta documentado de forma agregada sobre PsiloQA.
+- No se documentan sesgos conocidos ni evaluaciones de robustez fuera de los conjuntos citados.
+- Es un modelo discriminativo: no genera texto ni soporta tool calling; debe combinarse con un LLM generativo en el pipeline.
+- La licencia Apache 2.0 permite uso comercial, pero se recomienda revisar las condiciones de los datasets de entrenamiento (KRLabsOrg/lettucedetect-code-hallucination y lettucedetect-prose-hallucination) para usos derivados.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/llm-semantic-router/Vela-1.0-Encoder-307M-Halu
-- Modelo base: https://huggingface.co/llm-semantic-router/Vela-1.0-Encoder-307M
-- Coleccion Vela 1.0 Router Models: https://huggingface.co/collections/llm-semantic-router/vela-10-router-models-6aa555ba70cc6997d6d67798
-- Resultados completos de evaluacion (`scores.json`): https://huggingface.co/llm-semantic-router/Vela-1.0-Encoder-307M-Halu/blob/main/scores.json
-- Dataset de alucinaciones en codigo: https://huggingface.co/KRLabsOrg/lettucedetect-code-hallucination
-- Dataset de alucinaciones en prosa: https://huggingface.co/KRLabsOrg/lettucedetect-prose-hallucination
-- Documentacion del proyecto vLLM Semantic Router: https://vllm-sr.ai/
-- Blog del proyecto: https://vllm-sr.ai/blog/
+- Modelo base: https://huggingface.co/vllm-sr/Vela-1.0-Encoder-307M
+- Coleccion de modelos Vela: https://huggingface.co/collections/vllm-sr/vela-10-router-models-6aa555ba70cc6997d6d67798
+- Documentacion: https://vllm-sr.ai/
+- Blog: https://vllm-sr.ai/blog/
 - Repositorio GitHub: https://github.com/vllm-project/semantic-router
-- Canal de Slack del proyecto: https://vllm-dev.slack.com/archives/C09CTGF8KCN
-- Busqueda web: los resultados devueltos fueron articulos genericos sobre modelos de lenguaje (Wikipedia, Numerama, Digitiz, Liora) sin relacion con este modelo; no se identificaron fuentes adicionales relevantes.
+- Slack: https://vllm-dev.slack.com/archives/C09CTGF8KCN
+- Dataset de alucinaciones en codigo: https://huggingface.co/datasets/KRLabsOrg/lettucedetect-code-hallucination
+- Dataset de alucinaciones en prosa: https://huggingface.co/datasets/KRLabsOrg/lettucedetect-prose-hallucination
+- Model card de LettuceDetect (baseline): https://huggingface.co/KRLabsOrg/lettucedect-v2-mmbert-base

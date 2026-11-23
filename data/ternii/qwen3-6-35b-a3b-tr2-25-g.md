@@ -2,113 +2,117 @@
 
 ## Resumen
 
-Qwen3.6-35B-A3B-TR2.25-G es una cuantizacion ternaria del modelo Qwen3.6-35B-A3B desarrollado por el equipo Qwen, publicada por el usuario Ternii (Wai Chung). El modelo aplica una tecnica propia denominada TR Quantisation, que almacena los pesos como trits (digitos ternarios) con una media de 2,25 trits por peso, cada uno codificado como un entero pequeno sobre una rejilla simetrica de 9, 27 o 81 niveles, con una escala de 16 bits por cada grupo de 128 pesos. No hay reentrenamiento ni ajuste fino: la arquitectura, el tokenizer y la plantilla de chat son los originales de Qwen.
+Qwen3.6-35B-A3B-TR2.25-G es una versión cuantizada del modelo Qwen3.6-35B-A3B del equipo Qwen, publicada por el usuario Ternii (Wai Chung) bajo licencia Apache-2.0. Se trata de una traducción de pesos a aritmética ternaria mediante la técnica propietaria TR Quantisation: cada peso se almacena como un dígito ternario (trit) codificado en una rejilla simétrica de 9, 27 o 81 niveles, con una escala de 16 bits por cada grupo de 128 pesos. El resultado es una media de 2,25 trits por peso, de ahí el sufijo TR2.25-G, donde la "G" indica que los códigos se calibraron con GPTQ.
 
-El modelo base es un transformer de tipo mixture-of-experts (MoE) con 10.233.365.632 parametros reales almacenados en safetensors (el nombre comercial indica 35B totales y 3B activos). Esta orientado a generacion de texto, conversacion, codigo y razonamiento, con soporte de tool calling y decodificacion especulativa mediante una cabeza de multi-token prediction (MTP). Su interes actual reside en que reduce el peso en memoria de los pesos en GPU a 16,09 GiB frente a los 19,55 GiB del checkpoint NVFP4 de NVIDIA, con una velocidad de decodificacion superior y sin diferencias significativas en los benchmarks principales.
+El modelo conserva la arquitectura, el tokenizador y la plantilla de chat originales de Qwen, sin reentrenamiento ni fine-tuning. Es un transformer de tipo mixture-of-experts (MoE) con 35B parámetros nominales en el modelo base, aunque el checkpoint safetensors de este repositorio declara 10.233.365.632 parámetros reales (el modelo de texto, con el codificador de visión eliminado). La relevancia principal es de eficiencia: reduce el peso en memoria de 19,55 GiB (checkpoint NVFP4 de NVIDIA) a 16,09 GiB, y acelera la decodificación aproximadamente un 41 % a un usuario, manteniendo una precisión comparable en los benchmarks centrales.
 
-La licencia es Apache-2.0, heredada del modelo base, y el repositorio ocupa 18,0 GB. La inferencia requiere un runtime especifico (plugin `tritq-qwen36` sobre vLLM 0.28.0) o la variante GGUF publicada por el mismo autor para llama.cpp y Mac.
+Su despliegue requiere el plugin `tritq-qwen36` sobre vLLM 0.28.0, distribuido como imagen Docker, y está pensado para hardware como el NVIDIA DGX Spark. Existe una variante GGUF para Mac y llama.cpp publicada en un repositorio separado. El modelo está orientado a generación de texto y conversación, y solo declara soporte para inglés.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer MoE (qwen3_5_moe) con cabeza MTP; vision encoder eliminado en este repo |
-| Parametros totales | 10.233.365.632 (segun safetensors); nombre comercial 35B-A3B |
-| Parametros activos | no disponible (el nombre indica 3B, sin confirmacion en la model card) |
-| Longitud de contexto | no disponible (el ejemplo de despliegue usa `--max-model-len 16384`) |
-| Tipos de cuantizacion | Ternaria TR: 2,25 trits/peso de media, rejilla simetrica de 9, 27 o 81 niveles, escala de 16 bits por grupo de 128 pesos; cabeza MTP en 8-bit block floating point |
-| Idiomas soportados | en (segun metadatos); el modelo base Qwen es multilingue |
+| Arquitectura | Transformer MoE (qwen3_5_moe), cuantización ternaria TR (trits con escala de 16 bits por grupo de 128 pesos) |
+| Parámetros totales | 10.233.365.632 (checkpoint de texto, sin codificador de visión) |
+| Parámetros activos | no disponible |
+| Longitud de contexto | no disponible en la información proporcionada (el ejemplo de despliegue usa `--max-model-len 16384`) |
+| Tipos de cuantización | TR2.25-G: media de 2,25 trits por peso, rejilla simétrica de 9/27/81 niveles, calibración GPTQ; cabeza MTP en block floating point de 8 bits |
+| Idiomas soportados | en (inglés) |
 | Licencia | apache-2.0 |
-| Formato de pesos | safetensors (tensores trit empaquetados); variante GGUF en repo separado |
+| Formato de pesos | safetensors (tensores trit empaquetados); variante GGUF en repositorio separado |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura subyacente es la de Qwen3.6-35B-A3B: un transformer con capas de mezcla de expertos, tokenizer y plantilla de chat propias de Qwen, mas una cabeza de multi-token prediction (MTP) utilizada para decodificacion especulativa. La cuantizacion TR no modifica la arquitectura ni el entrenamiento: los pesos originales se traducen a codigos ternarios calibrados con GPTQ (el sufijo `-G` del nombre), agrupados en bloques de 128 pesos con una escala de 16 bits compartida. La cabeza MTP se mantiene en 8-bit block floating point para preservar la calidad del borrador especulativo.
+El modelo base Qwen3.6-35B-A3B es un transformer con arquitectura mixture-of-experts. Esta versión no modifica la arquitectura, el tokenizador ni la plantilla de chat: la intervención consiste exclusivamente en la cuantización de los pesos. Cada peso se representa como un código entero pequeño sobre una rejilla ternaria simétrica de 9, 27 o 81 niveles, con una única escala de 16 bits compartida por cada grupo de 128 pesos. La calibración de los códigos se realizó con GPTQ, sin reentrenamiento ni fine-tuning posterior.
 
-No se especifica en la informacion disponible el numero de tokens de entrenamiento ni la composicion del dataset del modelo base. Los datasets listados en los metadatos (nvidia/OpenCodeInstruct, EleutherAI/hendrycks_math, openai/gsm8k) parecen corresponder a la calibracion GPTQ o a la evaluacion, no al preentrenamiento. La innovacion tecnica destacable es doble: por un lado, el esquema de cuantizacion ternaria con escalas por grupo que permite servir el modelo en 16,09 GiB de VRAM; por otro, el runtime con Model Runner V2 de vLLM y una parada por confianza (`TQ_CSTOP=0.7,3`) que limita el numero de tokens especulados segun la probabilidad top-1 del borrador, con un coste declarado de aproximadamente un 2 % por flujo en escenarios de 4 a 8 usuarios.
+El repositorio contiene el modelo de texto (sin el codificador de visión del modelo base) en tensores trit empaquetados, más la cabeza de predicción multi-token (MTP) en block floating point de 8 bits, junto con el tokenizador, la plantilla de chat y la configuración de Qwen. La innovación técnica destacable es la decodificación especulativa basada en la cabeza MTP con un mecanismo de parada por confianza (confidence stop): con una sola petición en decodificación se generan hasta 6 tokens borrador y se detiene cuando la probabilidad top-1 del borrador cae por debajo de 0,7; con dos o más peticiones se generan 3. El modelo completo verifica cada borrador con el vocabulario completo, y la cabeza borrador puede configurarse como dispersa (todas las lenguas), solo inglés (primeras 100.000 filas del vocabulario) o completa. Los datasets citados en las etiquetas (nvidia/OpenCodeInstruct, EleutherAI/hendrycks_math, openai/gsm8k) aparecen como referencia, aunque no se documenta su uso en un proceso de entrenamiento de esta versión cuantizada.
 
 ## Capacidades
 
-- Generacion de texto y conversacion multi-turno, con plantilla de chat de Qwen y modo thinking desactivable mediante `chat_template_kwargs`.
-- Razonamiento matematico: resultados de 90,83 en GSM8K y 81,9 en MGSM (11 idiomas) segun la model card.
-- Generacion de codigo: 88,41 en HumanEval+ y 76,72 en MBPP+.
-- Function calling: 81,5 en BFCL v4, con capacidad destacada para declinar llamadas irrelevantes.
-- Seguimiento de instrucciones: 82,62 en IFEval (prompt strict).
-- Conocimiento general y razonamiento: 77,7 en MMLU-Pro.
-- Decodificacion especulativa con cabeza MTP y parada por confianza configurable.
-- Capacidades multilingues limitadas en matematicas: MGSM de 81,9, significativamente inferior al checkpoint NVFP4 (84,2), con la mayor brecha en bengali.
-- Vision: no incluida en este repositorio (encoder eliminado); el autor indica que una variante con la torre de vision podria publicarse mas adelante.
+- Generación de texto y conversación multi-turno en inglés.
+- Razonamiento y matemáticas: resultados medidos en GSM8K (90,83) y MGSM multilingüe (81,9).
+- Generación de código: HumanEval+ (88,41) y MBPP+ (76,72).
+- Function calling: BFCL v4 con 81,5 puntos.
+- Seguimiento de instrucciones: IFEval en modo prompt strict con 82,62.
+- Conocimiento general y razonamiento: MMLU-Pro con 77,7.
+- Decodificación especulativa con cabeza MTP y parada por confianza configurable.
+- Modo thinking del modelo base (los benchmarks se ejecutaron con thinking desactivado mediante `enable_thinking: false`).
+- Sin capacidades de visión en este repositorio: el codificador de visión fue eliminado (se sirve con `--language-model-only`); el autor indica que una variante con la torre de visión "podría seguir".
 
 ## Casos de uso
 
-- Despliegue en hardware de borde o estaciones compactas: con 16,09 GiB de pesos en GPU y configuracion de `--gpu-memory-utilization 0.6`, el modelo cabe en una NVIDIA DGX Spark y permite servir inferencia de un MoE de gran tamano en un unico dispositivo.
-- Atencion al cliente automatizada: la ventana de contexto configurable (16.384 tokens en el ejemplo oficial) y la plantilla de chat de Qwen permiten conversaciones multi-turno con historial extenso; el modo thinking desactivable reduce la latencia en produccion.
-- Generacion de codigo en pipelines de CI/CD: los resultados de HumanEval+ (88,41) y MBPP+ (76,72) junto con el soporte de function calling (BFCL v4 de 81,5) permiten integrarlo como agente que invoca herramientas de build, test o analisis estatico.
-- Servicio de inferencia de alta concurrencia: la decodificacion especulativa MTP con parada por confianza ofrece 180,9 tokens/s con un usuario y 82,4 y 54,1 tokens/s por usuario con 4 y 8 usuarios respectivamente, adecuado para APIs con multiples sesiones simultaneas.
-- Razonamiento matematico asistido: GSM8K de 90,83 lo hace util para tutoria o verificacion de calculos, aunque el rendimiento multilingue en matematicas es inferior y conviene restringir a ingles.
-- Evaluacion comparativa de tecnicas de cuantizacion: el repositorio incluye mediciones frente a NVFP4 en el mismo hardware y configuracion de servidor, lo que lo convierte en una referencia practica para estudiar el compromiso entre tamano, velocidad y precision en cuantizacion de baja bit-width.
-- Prototipado de agentes con tool calling: la puntuacion de BFCL v4 y la capacidad de declinar llamadas irrelevantes reducen las invocaciones erroneas en flujos de agentes multi-paso.
+- Servicio de chat en inglés sobre DGX Spark: el modelo cabe en 16,09 GiB de pesos en GPU y ofrece 180,9 tokens/s de decodificación a un usuario, adecuado para asistentes conversacionales de baja latencia en hardware de borde.
+- Generación de código en pipelines de desarrollo: con HumanEval+ de 88,41 y MBPP+ de 76,72, puede integrarse como asistente de código o generador de tests en flujos automatizados, siempre que el prompt esté en inglés.
+- Automatización con function calling: los 81,5 puntos en BFCL v4 permiten usarlo como motor de agentes que invocan herramientas, con especial buen comportamiento en declinar llamadas irrelevantes.
+- Razonamiento matemático en inglés: GSM8K de 90,83 lo hace apto para tutores o verificadores de problemas aritméticos de enunciado, aunque no se recomienda para matemáticas multilingües por su MGSM más bajo.
+- Servicio multiusuario con throughput moderado: a 4 y 8 usuarios mantiene 82,4 y 54,1 tokens/s por usuario en respuestas largas, útil para despliegues pequeños en una sola GPU con `--max-num-seqs 8`.
+- Evaluación e investigación sobre cuantización ternaria: sirve como banco de pruebas para comparar TR2.25-G frente a NVFP4 en precisión y velocidad con el mismo servidor vLLM.
+- Despliegue en Mac o entornos llama.cpp: mediante la variante GGUF del repositorio `Ternii/Qwen3.6-35B-A3B-TR2.25-G-GGUF`, para pruebas locales fuera de GPU NVIDIA.
 
 ## Benchmarks y rendimiento
 
-Resultados publicados en la model card, comparando TR2.25-G con el checkpoint `nvidia/Qwen3.6-35B-A3B-NVFP4` en la misma DGX Spark, vLLM 0.28.0, solo texto y thinking desactivado:
+Resultados publicados por el autor, comparando TR2.25-G con el checkpoint `nvidia/Qwen3.6-35B-A3B-NVFP4`, en el mismo DGX Spark y con las mismas opciones de servidor vLLM 0.28.0, solo texto y thinking desactivado:
 
-| Benchmark | TR2.25-G | NVFP4 | Observacion |
-|---|---|---|---|
-| GSM8K | 90,83 | 91,10 | Sin diferencia significativa |
-| HumanEval+ | 88,41 | 89,02 | Sin diferencia significativa |
-| MBPP+ | 76,72 | 76,19 | Sin diferencia significativa |
-| IFEval (prompt strict) | 82,62 | 84,29 | Sin diferencia significativa |
-| MMLU-Pro | 77,7 | 77,3 | Sin diferencia significativa |
-| BFCL v4 function calling | 81,5 | 79,2 | TR por delante, atribuido a una categoria (declinar llamadas irrelevantes) |
-| MGSM (11 idiomas) | 81,9 | 84,2 | TR significativamente inferior |
+| Benchmark | TR2.25-G | NVIDIA NVFP4 |
+|---|---|---|
+| GSM8K | 90,83 | 91,10 |
+| HumanEval+ | 88,41 | 89,02 |
+| MBPP+ | 76,72 | 76,19 |
+| IFEval (prompt strict) | 82,62 | 84,29 |
+| MMLU-Pro | 77,7 | 77,3 |
+| BFCL v4 (function calling) | 81,5 | 79,2 |
+| MGSM (11 idiomas) | 81,9 | 84,2 |
 
-| Metrica de rendimiento | TR2.25-G | NVFP4 | Ratio |
-|---|---|---|---|
-| Peso de pesos en GPU | 16,09 GiB | 19,55 GiB | 18 % menor |
-| Peso con cabeza MTP y draft head | 17,43 GiB | 21,13 GiB | ~18 % menor |
-| Decodificacion, 1 usuario (tokens/s) | 180,9 | 128,0 | x1,41 |
-| Decodificacion por usuario, 4 / 8 usuarios | 82,4 / 54,1 | 70,5 / 49,6 | x1,17 / x1,09 |
-| Procesamiento de prompt, 2.048 tokens | ~3,4k | ~5,2k | x0,65 (mas lento) |
+Métricas de eficiencia medidas:
 
-El autor advierte que "sin diferencia significativa" no equivale a igualdad: con estos tamanos de test solo se detectarian brechas de aproximadamente 2 puntos en GSM8K y 4 puntos en HumanEval+. La comparacion de MGSM se ejecuto en la ruta de motor propia del autor, no en vLLM estandar.
+| Métrica | TR2.25-G | NVIDIA NVFP4 |
+|---|---|---|
+| Pesos en memoria GPU | 16,09 GiB | 19,55 GiB |
+| Con cabeza MTP y borrador | 17,43 GiB | 21,13 GiB |
+| Decodificación, 1 usuario | 180,9 tok/s | 128,0 tok/s |
+| Decodificación por usuario a 4 / 8 usuarios | 82,4 / 54,1 tok/s | 70,5 / 49,6 tok/s |
+| Procesamiento de prompt (2.048 tokens) | ~3,4k tok/s | ~5,2k tok/s |
+
+El propio autor advierte que "sin diferencia significativa" no equivale a igualdad: con estos tamaños de test solo se detectarían diferencias de unos 2 puntos (GSM8K) a 4 puntos (HumanEval+). La comparación de MGSM se ejecutó con la ruta de motor propia del autor, no con vLLM estándar.
 
 ## Requisitos de hardware
 
-- VRAM estimada: 16,09 GiB para los pesos del modelo de texto en GPU; 16,99 GiB con la cabeza MTP y el draft head en ingles y codigo; 17,43 GiB con el draft head disperso para todos los idiomas. A esto hay que sumar la cache KV (configurada con `--kv-cache-dtype fp8` en el ejemplo oficial).
-- GPU recomendadas: NVIDIA DGX Spark (hardware de referencia de los benchmarks). No se han publicado mediciones en A100, H100 ni RTX 4090.
-- GPU de consumo: no hay datos publicados sobre su viabilidad en RTX 4090 u otras consumer GPU; el peso de 16-17 GiB dejaria poco margen en tarjetas de 24 GB una vez descontada la cache KV, pero no se confirma en la informacion disponible.
-- Opciones de despliegue: vLLM 0.28.0 con el plugin `tritq-qwen36` (imagen Docker `ghcr.io/ternii-ai/tritq-qwen36:0.2`); llama.cpp y Mac mediante la variante GGUF `Ternii/Qwen3.6-35B-A3B-TR2.25-G-GGUF`. Compatible con cualquier cliente OpenAI contra `http://localhost:8000/v1`.
-- Latencia y throughput: 180,9 tokens/s en decodificacion con un usuario; 82,4 y 54,1 tokens/s por usuario con 4 y 8 usuarios; procesamiento de prompt de aproximadamente 3,4k tokens/s para prompts de 2.048 tokens. La parada por confianza cuesta alrededor de un 2 % por flujo en regimen de 4 a 8 usuarios.
+- VRAM para pesos: 16,09 GiB (modelo de texto, sin cabeza MTP); 16,99 GiB con cabeza MTP y cabeza borrador inglés+código; 17,43 GiB con cabeza borrador dispersa.
+- GPU de referencia en las mediciones: NVIDIA DGX Spark (una sola GPU). El autor no documenta otros modelos de GPU.
+- No se confirma compatibilidad con GPU de consumo (RTX 4090, etc.) en la información proporcionada; los 16-17 GiB de pesos más caché KV dejan poco margen en tarjetas de 24 GiB.
+- Despliegue principal: vLLM 0.28.0 con el plugin `tritq-qwen36`, distribuido como imagen Docker `ghcr.io/ternii-ai/tritq-qwen36:0.2` o construible desde `github.com/ternii-ai/tritq-vllm`.
+- Despliegue alternativo: llama.cpp y Mac mediante la variante GGUF.
+- Configuración de referencia: `--max-model-len 16384 --max-num-seqs 8 --gpu-memory-utilization 0.6 --kv-cache-dtype fp8 --language-model-only --speculative-config '{"method":"mtp","num_speculative_tokens":6}'`.
+- Throughput medido: 180,9 tok/s a un usuario; 82,4 y 54,1 tok/s por usuario a 4 y 8 usuarios; procesamiento de prompt de ~3,4k tok/s con 2.048 tokens.
+- La parada por confianza cuesta aproximadamente un 2 % por flujo en escenarios de 4-8 usuarios; para servicio multiusuario se recomienda `-e TQ_CSTOP=` con `num_speculative_tokens: 3`.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | GSM8K | HumanEval+ | MMLU-Pro | Licencia | Formato |
-|---|---|---|---|---|---|---|---|
-| Qwen3.6-35B-A3B-TR2.25-G | 10,23B reales (nombre 35B-A3B) | no disponible | 90,83 | 88,41 | 77,7 | Apache-2.0 | safetensors trit, GGUF |
-| Qwen3.6-35B-A3B NVFP4 (NVIDIA) | mismo base | no disponible | 91,10 | 89,02 | 77,3 | Apache-2.0 | NVFP4 |
-| Qwen3.6-35B-A3B (base, sin cuantizar) | 35B-A3B | no disponible | no disponible | no disponible | no disponible | Apache-2.0 | safetensors BF16 |
+| Modelo | Parámetros | Formato/cuantización | Contexto | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| Qwen3.6-35B-A3B-TR2.25-G (este) | 10.233.365.632 (checkpoint de texto) | safetensors trit, 2,25 trits/peso | no disponible | Apache-2.0 | Hugging Face, requiere plugin vLLM propio; GGUF separado |
+| nvidia/Qwen3.6-35B-A3B-NVFP4 | mismo modelo base | NVFP4 | no disponible | Apache-2.0 (heredada del base) | Hugging Face, vLLM estándar |
+| Qwen/Qwen3.6-35B-A3B (base) | 35B nominales (MoE) | BF16 original | no disponible | Apache-2.0 | Hugging Face |
 
-La comparacion directa disponible en la model card se limita al checkpoint NVFP4 de NVIDIA sobre el mismo modelo base. No se aportan datos frente a otros modelos de la misma categoria o tamano.
+Frente a NVFP4, este checkpoint es un 18 % más pequeño, un 41 % más rápido en decodificación a un usuario y un 35 % más lento en procesamiento de prompt, con precisión equivalente en los benchmarks centrales y peor en MGSM. Frente al modelo base en BF16, la ventaja es de tamaño y velocidad de decodificación, a costa de requerir un runtime específico. No se dispone de datos de otros modelos comparables de la misma categoría en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- El procesamiento de prompt es un 35 % mas lento que NVFP4 (x0,65), lo que penaliza cargas con prompts largos o contextos extensos.
-- El rendimiento en matematicas multilingues es significativamente inferior al de NVFP4 (81,9 frente a 84,2 en MGSM), con la mayor brecha en bengali; conviene restringir el uso matematico a ingles.
-- La inferencia requiere un runtime no estandar (plugin `tritq-qwen36` sobre vLLM 0.28.0), lo que limita la portabilidad y anade dependencia de un unico mantenedor.
-- El draft head y la parada por confianza no son neutrales en la salida: cambian el redondeo en coma flotante y pueden alterar el texto greedy en algunos prompts, segun admite el propio autor.
-- La comparacion de BFCL v4 procede de un unico servidor TR frente a datos NVFP4 agrupados de varias sesiones en dias distintos, por lo que la ventaja declarada debe tomarse con cautela.
-- El repositorio no incluye el encoder de vision; las tareas multimodales no estan cubiertas por esta version.
-- Los metadatos declaran solo ingles como idioma soportado, aunque el modelo base sea multilingue; el rendimiento fuera del ingles no esta documentado salvo en MGSM.
-- Riesgo de alucinacion y sesgos: no se documentan evaluaciones de sesgo ni de tasas de alucinacion en la informacion disponible.
-- Licencia Apache-2.0, sin restricciones conocidas para uso comercial; al derivar del modelo base Qwen, se mantienen las condiciones de este.
-- El modelo tiene 0 descargas y 0 likes en el momento de la ficha, y fue creado el 1 de noviembre de 2026; se trata de una publicacion muy reciente y sin validacion independiente de la comunidad.
+- Solo declara soporte de inglés; el rendimiento multilingüe es significativamente inferior (MGSM 81,9 frente a 84,2 de NVFP4, con la mayor caída en bengalí).
+- El procesamiento de prompt es más lento que NVFP4 (×0,65), lo que penaliza cargas con prompts largos o RAG intensivo.
+- Requiere un plugin y una imagen Docker propios sobre vLLM 0.28.0; no funciona con vLLM estándar sin el plugin `tritq-qwen36`.
+- La cabeza borrador y la parada por confianza no son neutrales en la salida: pueden cambiar el texto generado de forma greedy en algunos prompts por diferencias de redondeo en coma flotante.
+- Sin codificador de visión en este repositorio: no admite entradas de imagen aunque el modelo base sí las soporte.
+- Riesgo de alucinación inherente a los modelos de lenguaje; no se documentan evaluaciones específicas de factualidad ni de sesgos en la información disponible.
+- Los benchmarks del autor tienen poder de detección limitado (diferencias de 2-4 puntos) y la comparación de BFCL v4 y MGSM se realizó con configuraciones de servidor no idénticas entre modelos.
+- Licencia Apache-2.0: permite uso comercial, pero conviene verificar las condiciones del modelo base y del runtime propietario de cuantización.
+- El modelo se publica con `inference: false` en la model card: no es directamente servible sin el runtime indicado.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/Ternii/Qwen3.6-35B-A3B-TR2.25-G
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
+- Checkpoint de comparación NVFP4: https://huggingface.co/nvidia/Qwen3.6-35B-A3B-NVFP4
 - Variante GGUF: https://huggingface.co/Ternii/Qwen3.6-35B-A3B-TR2.25-G-GGUF
 - Runtime y plugin vLLM: https://github.com/ternii-ai/tritq-vllm
-- Checkpoint NVFP4 de NVIDIA (comparativa): `nvidia/Qwen3.6-35B-A3B-NVFP4` en Hugging Face
-- Imagen Docker: `ghcr.io/ternii-ai/tritq-qwen36:0.2`
+- Imagen Docker: ghcr.io/ternii-ai/tritq-qwen36:0.2

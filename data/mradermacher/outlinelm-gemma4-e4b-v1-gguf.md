@@ -1,84 +1,93 @@
 # mradermacher/OutlineLM-Gemma4-E4B-v1-GGUF
 
 ## Resumen
-OutlineLM-Gemma4-E4B-v1-GGUF es la distribucion en formato GGUF del modelo OutlineLM-Gemma4-E4B-v1, publicado por el usuario mradermacher a partir del modelo original de DiTy. Se trata de una cuantizacion estatica del checkpoint base, pensada para su uso con llama.cpp y herramientas derivadas (Ollama, LM Studio, llama-cpp-python) en lugar de con transformers puro. El modelo base declara 7.518.069.290 parametros totales segun los pesos en safetensors, y se apoya en la familia Gemma 4 con una variante etiquetada como E4B.
 
-La relevancia de esta ficha es practica: el repositorio original en transformers requiere hardware de gama alta para inferencia en precision completa, mientras que esta version ofrece cuantizaciones desde Q2_K (4,5 GB) hasta f16 (15,2 GB), lo que permite desplegar el modelo en GPU de consumo. Los idiomas declarados son ingles y ruso, y la licencia es Apache 2.0, lo que facilita su integracion en productos comerciales sin las restricciones de la licencia Gemma original.
+OutlineLM-Gemma4-E4B-v1 es un ajuste fino (fine-tune) del modelo Gemma 4 E4B, publicado por el usuario DiTy bajo licencia Apache 2.0. Esta ficha concreta corresponde a la versión cuantizada en formato GGUF elaborada por mradermacher, un conocido publicador de cuantizaciones para llama.cpp. El modelo base parte de la familia Gemma 4 de Google y cuenta con aproximadamente 7.518 millones de parámetros totales según los pesos en safetensors del repositorio original.
 
-No se dispone de informacion publica sobre la longitud de contexto, la composicion del dataset de entrenamiento ni resultados de benchmarks en la documentacion proporcionada. El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, lo que indica que es una publicacion reciente y sin validacion comunitaria.
+La especialización del modelo, a juzgar por su nombre (OutlineLM), apunta a la generación de esquemas o estructuras de contenido (outlines), aunque la model card no proporciona detalles explícitos sobre el dataset de ajuste ni sobre el proceso de entrenamiento. El repositorio GGUF ofrece un abanico de cuantizaciones estáticas que van desde Q2_K (4,5 GB) hasta f16 (15,2 GB), lo que permite desplegar el modelo en hardware muy diverso, desde GPUs de consumo con 6-8 GB de VRAM hasta servidores con aceleradores de mayor capacidad.
+
+La relevancia de esta ficha radica en que facilita el uso del modelo mediante llama.cpp y ecosistemas compatibles (Ollama, LM Studio, etc.) sin necesidad de infraestructura de transformers. El modelo declara soporte para inglés y ruso, y está etiquetado como conversacional y compatible con endpoints, lo que sugiere su uso en aplicaciones de chat y generación estructurada.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only de la familia Gemma 4 (detalle exacto no disponible) |
+| Arquitectura | Transformer (familia Gemma 4 E4B; detalles específicos no disponibles) |
 | Parametros totales | 7.518.069.290 |
-| Parametros activos | no disponible (no se indica que sea MoE) |
+| Parametros activos | no disponible |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q4_K_S, Q6_K, f16 (cuantizaciones estaticas; no hay imatrix) |
+| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, f16 |
 | Idiomas soportados | en, ru |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (repo original en safetensors/transformers) |
+| Formato de pesos | GGUF (cuantizaciones estáticas); el modelo base en safetensors |
 
 ## Arquitectura y entrenamiento
-El modelo base pertenece a la familia Gemma 4, una arquitectura transformer decoder-only. El sufijo E4B del nombre sugiere una variante de eficiencia o un tamano intermedio dentro de la familia, pero la model card no detalla la configuracion de capas, dimensiones ocultas, mecanismo de atencion ni si incorpora innovaciones como atencion lineal o decodificacion especulativa. El recuento de parametros (7,5 mil millones) es coherente con un modelo denso de clase 7B-8B.
 
-No hay informacion sobre el numero de tokens de entrenamiento, la composicion del dataset, el uso de RLHF/DPO o tecnicas de alineacion. El autor de la cuantizacion indica que se trata de cuantizaciones estaticas (quantize_version 2, output_tensor_quantised 1, convert_type hf) y que no hay cuantizaciones ponderadas con imatrix disponibles en el momento de la publicacion. El proceso de cuantizacion se realizo con llama.cpp a partir del checkpoint en formato Hugging Face.
+El modelo base es Gemma 4 E4B, un transformer de la familia Gemma 4 de Google. La información disponible no detalla la arquitectura interna específica (número de capas, dimensiones de atención, uso de atención lineal o decodificación especulativa). El repositorio indica que se trata de un ajuste fino realizado por DiTy sobre dicho modelo base, pero la model card no documenta el número de tokens de entrenamiento, la composición del dataset, ni si se emplearon técnicas de RLHF o DPO.
+
+La versión aquí descrita es una cuantización estática generada con llama.cpp (quantize_version 2, output_tensor_quantised 1, convert_type hf). El autor de la cuantización también publica versiones con imatrix en el repositorio `mradermacher/OutlineLM-Gemma4-E4B-v1-i1-GGUF`, que suelen ofrecer mejor calidad por tamaño que las cuantizaciones estáticas equivalentes. No se dispone de información sobre innovaciones técnicas adicionales del ajuste fino.
 
 ## Capacidades
-- Generacion de texto conversacional en ingles y ruso, segun los idiomas declarados en la model card.
-- El tag `conversational` en Hugging Face indica que el modelo esta orientado a dialogos multi-turno.
-- No se documentan capacidades de vision, audio, tool calling, function calling ni agentes en la informacion disponible.
-- No se documenta un modo de razonamiento explicito (thinking mode) ni capacidades matematicas o de codigo especificas.
-- Compatible con endpoints (`endpoints_compatible`), lo que sugiere uso via API de inferencia.
-- Al ser una cuantizacion GGUF, hereda las capacidades del modelo base sin modificaciones, pero no se detallan mas alla de lo indicado.
+
+- Generación de texto conversacional en inglés y ruso.
+- Especialización probable en generación de esquemas o estructuras de contenido (outlines), derivada del nombre del modelo; no confirmada explícitamente en la model card.
+- Compatibilidad con endpoints (etiqueta `endpoints_compatible`), lo que facilita su integración en servicios de inferencia.
+- Formato GGUF listo para llama.cpp y herramientas derivadas (Ollama, LM Studio, etc.).
+- Soporte de cuantizaciones de 2 a 16 bits para distintos equilibrios calidad/tamaño.
+- No se documenta soporte de tool calling, function calling, agentes, visión, audio ni modo de razonamiento explícito.
 
 ## Casos de uso
-- Asistente conversacional en ruso e ingles: el modelo puede gestionar dialogos multi-turno en estos dos idiomas, y la cuantizacion Q4_K_S (5,3 GB) permite desplegarlo en una GPU de consumo para prototipos de atencion al cliente o asistentes internos.
-- Despliegue en hardware limitado: con Q2_K (4,5 GB) cabe en GPU con 6-8 GB de VRAM, lo que facilita pruebas en portatiles con RTX 3060 o similares.
-- Inferencia local con llama.cpp u Ollama: al estar en GGUF, se integra directamente en flujos de trabajo de escritorio sin necesidad de Python ni CUDA avanzado.
-- Prototipado rapido de aplicaciones en ruso: dado que la mayoria de modelos abiertos de 7B estan centrados en ingles, esta variante cubre un hueco para productos dirigidos al mercado rusoparlante.
-- Generacion de texto general en entornos con requisitos de licencia permisiva: la licencia Apache 2.0 permite uso comercial sin las restricciones de la licencia Gemma original.
-- Experimentacion academica con modelos de 7B: el rango de cuantizaciones (de Q2_K a f16) permite estudiar el impacto de la cuantizacion en la calidad de salida con un mismo checkpoint.
-- Integracion en pipelines de CI/CD para pruebas de regresion de prompts: la version Q4_K_S ofrece un equilibrio razonable entre velocidad y calidad para ejecutar suites de evaluacion automatizadas.
+
+- Generación de esquemas y estructuras de documentos: dado el nombre del modelo, puede emplearse para producir outlines o esqueletos de artículos, informes o guiones; su ajuste específico lo hace adecuado para esta tarea frente a un modelo generalista.
+- Despliegue en entornos con recursos limitados: con la cuantización Q4_K_S (5,3 GB) cabe en GPUs de consumo de 8 GB de VRAM, permitiendo ejecutar el modelo en estaciones de trabajo sin aceleradores de datacenter.
+- Asistentes conversacionales en inglés y ruso: el modelo está etiquetado como conversacional y soporta ambos idiomas, lo que lo hace útil para chatbots bilingües en esos mercados.
+- Prototipado rápido con llama.cpp u Ollama: la disponibilidad de múltiples cuantizaciones permite iterar desde un Q2_K (4,5 GB) en portátiles hasta un Q8_0 (8,1 GB) en servidores pequeños.
+- Generación estructurada en pipelines de contenido: integrable en flujos que requieran producir esquemas jerárquicos (índices, tablas de contenidos, estructuras de cursos) de forma automatizada.
+- Evaluación comparativa de cuantizaciones: el repositorio ofrece 12 variantes, lo que permite medir el impacto de la cuantización en la calidad de salida para esta tarea concreta.
 
 ## Benchmarks y rendimiento
+
 No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
-- VRAM estimada para inferencia segun cuantizacion: Q2_K ~4,5 GB, Q3_K_S ~4,8 GB, Q3_K_M ~5,0 GB, Q4_K_S ~5,3 GB, Q6_K ~6,3 GB, f16 ~15,2 GB. A estas cifras hay que anadir el espacio para el contexto KV cache, que depende de la longitud de contexto no documentada.
-- GPU recomendadas: para f16 se necesita una GPU con al menos 16-24 GB (RTX 4090, A100 40GB, H100). Para Q4_K_S y Q6_K basta con 8-12 GB (RTX 3060 12GB, RTX 4070, RTX 4080).
-- Cabe en GPU de consumo: si, en Q2_K, Q3_K y Q4_K_S en tarjetas de 6-8 GB; Q6_K en tarjetas de 8-12 GB.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, llama-cpp-python y servidores compatibles con GGUF. El tag `endpoints_compatible` sugiere compatibilidad con endpoints de Hugging Face.
-- Latencia y throughput: no disponibles. Dependen del hardware y de la cuantizacion elegida; no se han publicado mediciones.
+
+- VRAM estimada para inferencia (según cuantización):
+  - Q2_K: ~4,5 GB de pesos; ~5-6 GB de VRAM total con contexto moderado.
+  - Q4_K_M: ~5,4 GB de pesos; ~6-7 GB de VRAM total.
+  - Q8_0: ~8,1 GB de pesos; ~9-10 GB de VRAM total.
+  - f16: ~15,2 GB de pesos; ~16-17 GB de VRAM total.
+- GPU recomendadas: RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070/4080/4090 para cuantizaciones Q4-Q8; A100/H100 no son necesarias para este tamaño, aunque pueden usarse para servir múltiples instancias.
+- Cabe en GPU de consumo: sí, desde Q2_K en GPUs de 6-8 GB hasta f16 en GPUs de 16 GB o más.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, y servidores compatibles con GGUF; el modelo base en safetensors puede servirse con transformers, vLLM o TGI.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Idiomas | Licencia | Formato |
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| OutlineLM-Gemma4-E4B-v1-GGUF (este) | 7,52B | no disponible | en, ru | Apache 2.0 | GGUF |
-| Mistral-7B-Instruct (referencia) | 7,24B | 32k (v0.2) | en, fr, de, es, it | Apache 2.0 | safetensors, GGUF |
-| Llama 3.1 8B Instruct (referencia) | 8,03B | 128k | multilingue (8 idiomas) | Llama 3.1 Community | safetensors, GGUF |
-| Qwen2.5 7B Instruct (referencia) | 7,62B | 128k | multilingue (29 idiomas) | Apache 2.0 | safetensors, GGUF |
+| OutlineLM-Gemma4-E4B-v1 (esta ficha) | ~7,5 B | no disponible | Apache 2.0 | GGUF, safetensors | Ajuste especializado en outlines; en/ru |
+| Gemma 4 E4B (base) | ~7,5 B | no disponible | Apache 2.0 (según familia Gemma 4) | safetensors, GGUF | Modelo generalista del que deriva |
+| Mistral 7B Instruct | ~7,2 B | 32k (versión estándar) | Apache 2.0 | safetensors, GGUF | Generalista multilingüe ampliamente desplegado |
+| Llama 3.1 8B Instruct | ~8 B | 128k | Llama 3.1 Community License | safetensors, GGUF | Generalista con contexto largo; licencia con restricciones |
 
-La comparativa es orientativa: no se dispone de datos de rendimiento del modelo evaluado, por lo que no se puede establecer una comparacion cuantitativa con las alternativas. La principal diferencia es el soporte declarado de ruso frente a modelos centrados en ingles, y la licencia Apache 2.0 frente a la licencia comunitaria de Llama.
+La comparación con Mistral 7B y Llama 3.1 8B es orientativa por tamaño; no se dispone de datos de rendimiento del modelo evaluado para establecer comparaciones cuantitativas.
 
 ## Limitaciones y advertencias
-- Sesgos conocidos: no documentados. Al ser un modelo derivado de Gemma 4, puede heredar sesgos del modelo base, pero no hay informacion al respecto.
-- Riesgo de alucinacion: no evaluado. No hay benchmarks ni evaluaciones de fidelidad publicadas.
-- Limitaciones de contexto e idioma: solo se declaran ingles y ruso; no hay informacion sobre la longitud de contexto, lo que impide planificar casos de uso con documentos largos.
-- Restricciones de licencia: Apache 2.0 permite uso comercial, pero conviene verificar que el modelo base (DiTy/OutlineLM-Gemma4-E4B-v1) mantiene la misma licencia y que la cuantizacion no anade restricciones adicionales.
-- Caveat de produccion: el repositorio tiene 0 descargas y 0 likes, sin validacion comunitaria; no se recomienda su uso en produccion sin una evaluacion propia previa.
-- Las cuantizaciones Q2_K y Q3_K_S pueden degradar notablemente la calidad; el autor recomienda Q4_K_S como opcion rapida y Q6_K como opcion de alta calidad.
-- No hay cuantizaciones imatrix disponibles, que suelen ofrecer mejor relacion calidad/tamano que las estaticas equivalentes.
-- El tag `skip_mmproj: 1` indica que no se incluye el proyector multimodal; si el modelo base tuviera capacidades de vision, no estarian disponibles en esta cuantizacion.
+
+- La model card no documenta sesgos conocidos ni evaluaciones de seguridad; se desconoce el comportamiento del ajuste fino en dominios sensibles.
+- Riesgo de alucinación inherente a los modelos de ~7,5 B; no hay evaluaciones publicadas que lo cuantifiquen.
+- Soporte idiomático limitado a inglés y ruso; el rendimiento en castellano no está garantizado ni evaluado.
+- La licencia Apache 2.0 permite uso comercial, pero el modelo base Gemma 4 puede estar sujeto a los términos de uso de Google; conviene verificar la licencia del modelo base original.
+- Las cuantizaciones de baja precisión (Q2_K, Q3_K_S) pueden degradar notablemente la calidad; se recomienda Q4_K_M o superior para producción.
+- No se documentan capacidades de tool calling ni de agentes; no asumir su disponibilidad sin pruebas.
+- El repositorio tiene 0 likes y un pipeline no definido, lo que sugiere poca validación comunitaria; conviene evaluar el modelo en la tarea objetivo antes de desplegarlo.
 
 ## Enlaces
-- Repositorio Hugging Face: https://huggingface.co/mradermacher/OutlineLM-Gemma4-E4B-v1-GGUF
+
+- Repositorio GGUF: https://huggingface.co/mradermacher/OutlineLM-Gemma4-E4B-v1-GGUF
 - Modelo base: https://huggingface.co/DiTy/OutlineLM-Gemma4-E4B-v1
-- Pagina de resumen del autor: https://hf.tst.eu/model#OutlineLM-Gemma4-E4B-v1-GGUF
-- README de referencia para uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
-- Grafico de perplejidad de cuantizaciones (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png
-- Notas sobre cuantizaciones (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
-- Solicitudes de cuantizacion del autor: https://huggingface.co/mradermacher/model_requests
-- Empresa del autor: https://www.nethype.de/
+- Cuantizaciones con imatrix: https://huggingface.co/mradermacher/OutlineLM-Gemma4-E4B-v1-i1-GGUF
+- Página de descargas del autor: https://hf.tst.eu/model#OutlineLM-Gemma4-E4B-v1-GGUF
+- FAQ y solicitudes de cuantización: https://huggingface.co/mradermacher/model_requests
+- Guía de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Análisis de tipos de cuantización (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9

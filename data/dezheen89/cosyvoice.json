@@ -25,7 +25,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 504,
+  "downloads_30d": 505,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
@@ -43,31 +43,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "GitHub - Render-AI-Team/CosyVoice2: Multi-lingual large voice ...",
-      "url": "https://github.com/Render-AI-Team/CosyVoice2",
-      "snippet": "Model download We strongly recommend that you download our pretrained CosyVoice2-0.5B CosyVoice-300M CosyVoice-300M-SFT CosyVoice-300M-Instruct model and CosyVoice-ttsfrd resource. If you are expert in this field, and you are only interested in training your own CosyVoice model from scratch, you can skip this step."
-    },
-    {
-      "title": "CosyVoice Homepage",
-      "url": "https://cosyvoice.github.io/",
-      "snippet": "An overview of the CosyVoice Models at the inference stage. In summary, CosyVoice consists of an autoregressive transformer to generate corresponding speech tokens for input text, an ODE-based diffusion model, flow matching, to reconstruct Mel spectrum from the generated speech tokens, and a HiFTGAN based vocoder to synthesize waveforms."
-    },
-    {
-      "title": "CosyVoice | Multilingual TTS Model",
-      "url": "https://cosyvoice.org/",
-      "snippet": "Discover CosyVoice, a multilingual zero-shot TTS model, featuring natural pronunciation and high-quality speech synthesis with advanced features."
-    },
-    {
-      "title": "GitHub - QwenAudio/CosyVoice: Multi-lingual large voice generation ...",
-      "url": "https://github.com/QwenAudio/CosyVoice",
-      "snippet": "Multi-lingual large voice generation model, providing inference, training and deployment full-stack ability. - QwenAudio/CosyVoice"
-    },
-    {
-      "title": "CosyVoice2.0",
-      "url": "https://fun-audio-llm.github.io/cosyvoice2/",
-      "snippet": "Ultra-Low Latency: CosyVoice 2.0 introduces a large-scale voice generation model technology that integrates offline and streaming modeling, supporting bidirectional streaming speech synthesis. The first packet synthesis latency can reach 150ms with minimal loss in quality."
-    }
-  ]
+  "sources": []
 }

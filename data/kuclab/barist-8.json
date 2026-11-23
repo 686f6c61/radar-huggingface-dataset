@@ -1,0 +1,41 @@
+{
+  "schema": 2,
+  "id": "KucLab/Barist.8",
+  "slug": "kuclab-barist-8",
+  "author": "KucLab",
+  "url": "https://huggingface.co/KucLab/Barist.8",
+  "created_at": "2026-11-22T22:56:11.000Z",
+  "updated_at": "2026-11-22T22:56:47.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "bert",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 117653760,
+  "parameters_human": "117.7M",
+  "storage_bytes": 641647567,
+  "storage_human": "642 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

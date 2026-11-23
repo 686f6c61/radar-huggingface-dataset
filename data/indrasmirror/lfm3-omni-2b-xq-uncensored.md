@@ -2,119 +2,124 @@
 
 ## Resumen
 
-LFM3-Omni-2B-XQ-Uncensored es una versión modificada y cuantizada del modelo multimodal LiquidAI/LFM3-Omni-2B, desarrollada por IndrasMirror. El modelo original, creado por Liquid AI, es un modelo "any-to-any" que acepta texto, imágenes, vídeo y audio como entrada, y produce texto y voz como salida. Esta variante concreta aplica una edición de dirección de rechazo (abliteration) sobre los pesos en precisión completa y posteriormente los cuantiza mediante el pipeline propietario XQ de precisión mixta, ofreciendo cinco tamaños de cuantización.
+LFM3-Omni-2B-XQ-Uncensored es una cuantización GGUF de precisión mixta del modelo multimodal LiquidAI/LFM3-Omni-2B, publicada por el usuario IndrasMirror. El modelo base, desarrollado por Liquid AI, es un modelo any-to-any que acepta texto, imágenes, vídeo y audio como entrada y produce texto y voz como salida, con aproximadamente 1.730 millones de parámetros. Esta versión concreta aplica una edición de "abliteration" sobre los pesos en precisión completa para eliminar la dirección de rechazo, y después los cuantiza con el pipeline propietario XQ en cinco tamaños distintos.
 
-El modelo base cuenta con 1.728.801.600 parámetros totales (aproximadamente 1,7 mil millones), lo que lo sitúa en la categoría de modelos pequeños optimizados para despliegue en hardware de consumo. La versión publicada aquí está pensada para ejecutarse con llama.cpp y ofrece un equilibrio entre calidad y tamaño: el archivo recomendado XQ-6.0 ocupa 1,29 GiB y alcanza 432 tok/s en una RTX 4090.
+La relevancia de esta ficha reside en que combina tres elementos poco habituales en un mismo artefacto: capacidades omni (visión, audio y habla) en un modelo de menos de 2B parámetros, una cuantización mixta que iguala o supera a Q4_K_M en calidad con menor divergencia KL, y una modificación de alineación que reduce drásticamente las negativas del modelo. El modelo base emplea una arquitectura de Liquid AI (familia LFM3) y está entrenado únicamente en inglés según los metadatos del repositorio.
 
-La relevancia de esta ficha radica en dos aspectos: por un lado, demuestra el estado del arte en cuantización mixta aplicada a modelos multimodales pequeños; por otro, ilustra las implicaciones técnicas y éticas de las modificaciones de tipo abliteration, que reducen drásticamente las tasas de rechazo del modelo original (del 92% al 10% en prompts dañinos según las mediciones del autor).
+El contexto de publicación es relevante para desarrolladores que necesitan un modelo pequeño, desplegable en una sola GPU de consumo, con soporte de tool calling, visión y síntesis de voz, y que quieran evitar las restricciones de rechazo del modelo original. La cuantización XQ-6.0 ocupa 1,29 GiB y decodifica a 432 tok/s en una RTX 4090, lo que lo hace viable como modelo auxiliar junto a un modelo grande.
 
 ## Especificaciones técnicas
 
 | Parámetro | Valor |
 |---|---|
-| Arquitectura | No disponible (modelo base LFM3-Omni-2B de Liquid AI; arquitectura exacta no especificada en la información proporcionada) |
-| Parámetros totales | 1.728.801.600 |
-| Parámetros activos | No aplica (no se indica que sea MoE) |
-| Longitud de contexto | 32.768 tokens (según configuración de llama-server en la model card) |
-| Tipos de cuantización | XQ-6.0, XQ-5.0, XQ-4.5, XQ-4.0, XQ-3.5 (precisión mixta: IQ3_S, IQ4_XS, IQ4_NL, Q3_K a Q6_K, Q8_0, BF16) y Q8_0 estándar |
-| Idiomas soportados | Inglés (en) |
-| Licencia | LFM Open License v1.0 (lfm1.0) |
-| Formato de pesos | GGUF |
+| Arquitectura | no disponible (modelo base de Liquid AI, familia LFM3; no se detalla en la información proporcionada) |
+| Parámetros totales | 1.728.801.600 (según safetensors del modelo base) |
+| Parámetros activos | no disponible (no se indica que sea MoE) |
+| Longitud de contexto | 32.768 tokens (usado en las pruebas de llama-server; no se confirma como máximo oficial) |
+| Tipos de cuantización | XQ-6.0, XQ-5.0, XQ-4.5, XQ-4.0, XQ-3.5 (precisión mixta: IQ3_S, IQ4_XS, IQ4_NL, Q3_K a Q6_K, Q8_0, BF16 por tensor) y Q8_0 |
+| Idiomas soportados | en (inglés) |
+| Licencia | lfm1.0 (license_name: lfm1.0, license: other) |
+| Formato de pesos | GGUF (llama.cpp); proyector multimodal en GGUF Q8_0 |
+| Pipeline | any-to-any |
+| Modalidades de entrada | texto, imagen, vídeo (con pista de audio), audio |
+| Modalidades de salida | texto, voz |
+| Tamaño del repositorio | 8,0 GB |
+| Descargas | 3.403 |
+| Fecha de creación | 2026-11-02 |
+| Última actualización | 2026-11-22 |
 
 ## Arquitectura y entrenamiento
 
-El modelo base LFM3-Omni-2B es un modelo multimodal de Liquid AI que procesa texto, imágenes, vídeo y audio como entrada, y genera texto y voz como salida. La información proporcionada no detalla la arquitectura interna del transformer subyacente (número de capas, dimensión oculta, mecanismo de atención), por lo que estos datos deben consultarse en la model card original de LiquidAI/LFM3-Omni-2B.
+La información disponible no detalla la arquitectura interna del modelo base LFM3-Omni-2B más allá de su pertenencia a la familia LFM3 de Liquid AI y su naturaleza any-to-any. El modelo procesa texto, imágenes, vídeo y audio mediante un proyector multimodal separado (mmproj), que en este repositorio se distribuye como el archivo oficial Q8_0 de Liquid AI sin modificar. El modelo de texto es el único componente alterado por el autor de esta cuantización.
 
-Sobre el proceso de modificación: el autor aplicó primero una edición de dirección de rechazo de rango 2 (abliteration) sobre los pesos en BF16 del checkpoint original, ajustada sobre el modelo de Liquid AI. Esta edición se validó sobre 100 prompts dañinos y 100 prompts inocuos no vistos durante el ajuste, reduciendo la tasa de rechazo en prompts dañinos del 92% al 10%, y en prompts inocuos del 5% al 2%. Posteriormente, cada tensor se cuantizó individualmente con el pipeline XQ, que asigna un formato distinto (IQ3_S, IQ4_XS, IQ4_NL, Q3_K a Q6_K, Q8_0, BF16) según la sensibilidad medida sobre un conjunto de calibración de código, agentes, OCR y contexto largo, para un presupuesto dado de bits por peso. El proyector multimodal (mmproj) es el archivo oficial de Liquid AI, sin modificar.
+El proceso de creación tiene dos fases documentadas. Primero, una abliteración sobre los pesos en precisión completa: una edición de dirección de rechazo de rango 2, ajustada sobre el checkpoint BF16 de Liquid AI. El autor reporta una validación sobre 100 prompts dañinos y 100 inofensivos no vistos: el modelo original rechazaba 92/100 dañinos y 5/100 inofensivos, mientras que la versión abliterada rechaza 10/100 dañinos y 2/100 inofensivos. Segundo, la cuantización con el pipeline XQ, que asigna a cada tensor su propio formato (IQ3_S, IQ4_XS, IQ4_NL, Q3_K a Q6_K, Q8_0, BF16) según la sensibilidad medida sobre un conjunto de calibración de código, agentes, OCR y contexto largo, para un presupuesto de bits por peso dado. El pipeline XQ es privado, pero los archivos resultantes son GGUF estándar y no requieren un cargador especial.
 
-Cabe destacar que LFM3 es un modelo sin razonamiento explícito (non-reasoning): su plantilla de chat abre cada respuesta con un bloque `<think></think>` vacío.
+Un detalle técnico relevante: LFM3 es un modelo sin razonamiento explícito (non-reasoning); su plantilla de chat abre cada respuesta con un bloque `` vacío. No se dispone de datos sobre el número de tokens de entrenamiento, la composición del dataset ni si hubo RLHF o DPO en el modelo base.
 
 ## Capacidades
 
-- Generación de texto conversacional en inglés.
-- Procesamiento de imágenes como entrada (descripción de formas, colores, contenido).
-- Procesamiento de vídeo como entrada, incluyendo su pista de audio.
-- Procesamiento de audio y voz como entrada (transcripción de voz a texto).
-- Generación de voz como salida (text-to-speech) a través de los endpoints `/tts` y `/v1/realtime` de llama.cpp.
-- Soporte de tool calling / function calling (verificado en la prueba de humo del autor).
-- Capacidades multimodales "any-to-any" (texto, imagen, vídeo, audio de entrada; texto y voz de salida).
-- No dispone de modo de razonamiento explícito (non-reasoning).
-- Capacidades multilingües limitadas al inglés según la model card.
+- Generación de texto conversacional en inglés, con soporte de conversaciones multi-turno.
+- Comprensión de imágenes: el autor verifica la descripción correcta de formas, colores y números en una prueba de humo.
+- Comprensión de vídeo, incluyendo la pista de audio asociada (`input_video`).
+- Comprensión de audio y transcripción de voz: una prueba de humo transcribe exactamente un clip de habla.
+- Salida de voz (text-to-speech) mediante `/tts` y el websocket `/v1/realtime` en llama.cpp, o `/v1/audio/speech` en Xolotl.
+- Tool calling / function calling: verificado con una llamada a herramienta correcta en la prueba de humo; en la evaluación de Xolotl, 9 de 10 llamadas a herramientas correctas.
+- Soporte de agentes y bucles multi-step: el autor reporta 0 de 3 bucles agénticos correctos en Xolotl con el modo de razonamiento desactivado, lo que indica una capacidad limitada en este aspecto para un modelo de 2B.
+- Capacidades multilingües: limitadas al inglés según los metadatos; no se documentan otros idiomas.
+- Modo "uncensored": la abliteración reduce los rechazos de 92/100 a 10/100 en prompts dañinos, manteniendo 2/100 rechazos en prompts inofensivos.
+- No es un modelo de razonamiento: no genera cadenas de pensamiento (thinking mode desactivado por diseño).
 
 ## Casos de uso
 
-- **Atención al cliente multimodal**: el modelo puede recibir capturas de pantalla, imágenes de productos o clips de audio de clientes y responder en texto o voz, aprovechando su ventana de 32K tokens para mantener conversaciones multi-turno con contexto extenso.
-- **Transcripción y respuesta por voz en asistentes locales**: gracias a la entrada de audio y la salida TTS vía `/tts` y `/v1/realtime`, puede integrarse en asistentes de voz que funcionan íntegramente en local con llama.cpp, sin depender de servicios en la nube.
-- **Descripción automática de imágenes y vídeo para accesibilidad**: el modelo puede generar descripciones de contenido visual (formas, colores, texto en imagen) para sistemas de accesibilidad o indexación de archivos multimedia.
-- **Pipelines de OCR y procesamiento de documentos**: con el proyector oficial y la cuantización XQ-6.0, puede extraer y describir contenido de imágenes de documentos, integrándose en flujos de digitalización y extracción de datos.
-- **Agentes con tool calling en local**: su soporte de function calling verificado permite construir agentes que invoquen herramientas externas (APIs, bases de datos) en entornos con recursos limitados, ejecutándose en una sola GPU de consumo.
-- **Prototipado rápido de aplicaciones multimodales**: con solo 1,29 GiB para XQ-6.0, es adecuado para desarrolladores que necesitan iterar sobre aplicaciones any-to-any en portátiles o GPUs pequeñas sin infraestructura dedicada.
-- **Investigación sobre alineación y abliteration**: al ser una versión abliterated con métricas de rechazo publicadas, sirve como caso de estudio para investigar los efectos de la edición de dirección de rechazo en modelos multimodales pequeños.
+- Asistente multimodal en local para desarrolladores: el modelo acepta imagen, audio y texto en una sola GPU de consumo (3,5 GB de VRAM con el proyector y contexto de 32K), lo que permite montar un asistente personal que describe capturas de pantalla, transcribe notas de voz y responde en texto sin depender de la nube.
+- Transcripción y respuesta por voz en aplicaciones de accesibilidad: la combinación de entrada de audio (`input_audio`) y salida de voz (`/tts`) permite construir interfaces conversacionales habladas para usuarios con dificultades visuales o motoras, con una latencia de primera respuesta de audio de 0,02 s una vez cargado el modelo en Xolotl.
+- Automatización de atención al cliente de baja latencia: con 389 tok/s de decodificación en GPU y 32K de contexto, el modelo puede gestionar conversaciones multi-turno con historial largo en un servidor modesto; su tamaño reducido permite desplegar varias instancias por GPU.
+- Procesamiento de documentos con OCR y descripción de imágenes: el conjunto de calibración de la cuantización incluye OCR, y la prueba de humo confirma la descripción correcta de formas, colores y números; es adecuado para pipelines de extracción de información de capturas y documentos escaneados.
+- Generación de código asistida en entornos con recursos limitados: el modelo soporta tool calling y obtuvo 13/21 en HumanEval (21 problemas) en la evaluación del autor con Xolotl; es viable como autocompletado o asistente de código ligero en una estación de trabajo con una sola GPU consumer.
+- Moderación y clasificación de contenido sin restricciones de rechazo: al haber reducido la dirección de rechazo, el modelo puede emplearse en tareas de análisis de contenido sensible (por ejemplo, clasificación de mensajes abusivos) donde un modelo fuertemente alineado se negaría a procesar la entrada; requiere supervisión humana y políticas de uso claras.
+- Prototipado rápido de aplicaciones any-to-any: al ser GGUF estándar y funcionar con llama.cpp desde la versión f3586e6, se integra en flujos de desarrollo con llama-server y la API compatible con OpenAI, sin necesidad de infraestructura especializada.
 
 ## Benchmarks y rendimiento
 
-El autor publica métricas de calidad de cuantización (perplejidad y divergencia KL) medidas con `llama-perplexity --kl-divergence` de llama.cpp (f3586e6), comparando cada archivo XQ contra el Q8_0 abliterated (perplejidad 6,379) sobre un conjunto de texto reservado de ~256 KB.
+Calidad de cuantización medida por el autor con `llama-perplexity --kl-divergence` (llama.cpp f3586e6) sobre un conjunto de texto reservado de ~256 KB, tomando como referencia el Q8_0 abliterado (perplejidad 6,379):
 
 | Archivo | Tamaño | Perplejidad | KL (menor es mejor) | KL percentil 99 | Mismo top-1 |
 |---|---|---|---|---|---|
 | XQ-6.0 | 1,29 GiB | 6,466 | 0,0207 | 0,225 | 95,29% |
-| XQ-5.0 | 1,11 GiB | 6,442 | 0,0428 | No disponible | 93,18% |
-| XQ-4.5 | 1,03 GiB | 6,447 | 0,0543 | No disponible | 92,32% |
-| XQ-4.0 | 967 MiB | 6,549 | 0,0773 | No disponible | 90,97% |
-| XQ-3.5 | 879 MiB | 6,828 | 0,1311 | No disponible | 88,31% |
-| Q4_K_M oficial (no abliterated) | 1,02 GiB | 6,346 | 0,0822 | No disponible | 91,17% |
-| Q8_0 oficial (no abliterated) | 1,71 GiB | 6,464 | 0,0059 | 0,068 | 97,44% |
+| XQ-5.0 | 1,11 GiB | 6,442 | 0,0428 | no disponible | 93,18% |
+| XQ-4.5 | 1,03 GiB | 6,447 | 0,0543 | no disponible | 92,32% |
+| XQ-4.0 | 967 MiB | 6,549 | 0,0773 | no disponible | 90,97% |
+| XQ-3.5 | 879 MiB | 6,828 | 0,1311 | no disponible | 88,31% |
+| Q4_K_M oficial (no abliterado) | 1,02 GiB | 6,346 | 0,0822 | no disponible | 91,17% |
+| Q8_0 oficial (no abliterado) | 1,71 GiB | 6,464 | 0,0059 | 0,068 | 97,44% |
 
-Métricas de velocidad (`llama-bench` tg128, RTX 4090 24 GB, Ryzen 7 5700X, Linux, todas las capas en GPU):
+Velocidad de decodificación (`llama-bench` tg128, RTX 4090 24 GB, Ryzen 7 5700X, Linux, todas las capas en GPU):
 
-| Archivo | tg128 (tok/s) |
+| Archivo | tg128 |
 |---|---|
-| XQ-3.5 | 514 |
-| XQ-4.0 | 501 |
-| XQ-4.5 | 481 |
-| XQ-5.0 | 466 |
-| XQ-6.0 | 432 |
-| Q4_K_M oficial | 497 |
-| Q8_0 oficial | 355 |
+| XQ-3.5 | 514 tok/s |
+| XQ-4.0 | 501 tok/s |
+| XQ-4.5 | 481 tok/s |
+| XQ-5.0 | 466 tok/s |
+| XQ-6.0 | 432 tok/s |
+| Q4_K_M oficial | 497 tok/s |
+| Q8_0 oficial | 355 tok/s |
 
-En servicio (llama-server, XQ-6.0 + proyector, contexto 32K): 3,5 GB de VRAM, 389 tok/s de decodificación en GPU, 23 tok/s en CPU con 8 hilos.
-
-Prueba de humo multimodal y de herramientas (XQ-6.0 + proyector Q8_0, llama-server, contexto 32K): tool call correcto, imagen descrita correctamente (formas, colores y número) y clip de voz transcrito exactamente. La salida de voz no se ha medido en estos archivos.
+Rendimiento servido con Xolotl (XQ-6.0, contexto 32K, RTX 4090): prefill de 32.796 tok/s a 5,3K y 26.049 tok/s a 14K; decodificación de ~300 tok/s; turno de seguimiento sobre una conversación de 7K en 0,03 s; salida de voz a 12x tiempo real con primer audio a 0,02 s. En HumanEval (21 problemas), tool calls (10) y bucles agénticos (3) obtuvo 13/9/0 respectivamente. No se han publicado resultados de benchmarks estándar (MMLU, GSM8K, etc.) en la información disponible.
 
 ## Requisitos de hardware
 
-- **VRAM estimada para inferencia**: 3,5 GB en servicio con XQ-6.0 + proyector y contexto de 32K (medido por el autor).
-- **GPU recomendadas**: RTX 4090 24 GB (mediciones publicadas); cualquier GPU con al menos ~4 GB de VRAM debería poder ejecutar XQ-6.0 con el proyector.
-- **Cabe en GPU de consumo**: sí; XQ-3.5 (879 MiB) está pensado para teléfonos y GPUs pequeñas, y el resto de variantes caben en GPUs de consumo de gama media.
-- **Opciones de despliegue**: llama.cpp (llama-server) con soporte LFM3 (upstream desde 31 de octubre de 2026, f3586e6 o posterior); soporte nativo en Xolotl en desarrollo. No se mencionan vLLM, TGI ni Ollama.
-- **Latencia y throughput**: 432 tok/s (XQ-6.0, tg128, RTX 4090); 389 tok/s en servicio con GPU; 23 tok/s en CPU con 8 hilos.
+- VRAM estimada para inferencia: 3,5 GB con XQ-6.0 más el proyector Q8_0 y contexto de 32K en llama-server; el archivo XQ-6.0 solo ocupa 1,29 GiB y el proyector 0,47 GiB.
+- GPU recomendadas: RTX 4090 24 GB para las cifras de velocidad publicadas; cualquier GPU con al menos 4 GB de VRAM libre puede ejecutar el modelo con contexto reducido.
+- Cabe en GPU consumer: sí, en tarjetas de gama media y alta con 4 GB o más de VRAM (por ejemplo, RTX 3060, RTX 4060, RTX 4090); XQ-3.5 (0,87 GiB) está pensado para teléfonos y GPU pequeñas.
+- Despliegue: llama.cpp (llama-server) desde la versión f3586e6 o posterior, con soporte LFM3; Xolotl con el motor `xolotl-lfm3`; cualquier cargador GGUF estándar para el modelo de texto, aunque el proyector multimodal requiere llama.cpp o Xolotl.
+- Latencia y throughput: 432 tok/s de decodificación en RTX 4090 con XQ-6.0 (514 tok/s con XQ-3.5); 389 tok/s servido en GPU y 23 tok/s solo con CPU (8 hilos); prefill de 26.000 a 33.000 tok/s en Xolotl.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Modalidad | Licencia | Formato |
-|---|---|---|---|---|---|
-| LFM3-Omni-2B-XQ-Uncensored (XQ-6.0) | 1,73 B | 32K | Texto, imagen, vídeo, audio → texto y voz | LFM Open License v1.0 | GGUF |
-| LiquidAI/LFM3-Omni-2B (original, Q8_0) | 1,73 B | No disponible | Texto, imagen, vídeo, audio → texto y voz | LFM Open License v1.0 | GGUF / safetensors |
-| LiquidAI/LFM3-Omni-2B (original, Q4_K_M) | 1,73 B | No disponible | Texto, imagen, vídeo, audio → texto y voz | LFM Open License v1.0 | GGUF |
-
-La información proporcionada no incluye datos de benchmarks comparativos frente a otros modelos de la misma categoría (por ejemplo, otros modelos multimodales pequeños como Qwen2-VL-2B o Gemma 3n), por lo que no es posible establecer una comparación de rendimiento más allá de las variantes del propio modelo base.
+| Modelo | Parámetros | Contexto | Modalidades | Licencia | Formato | Notas |
+|---|---|---|---|---|---|---|
+| LFM3-Omni-2B-XQ-Uncensored (XQ-6.0) | 1,73B | 32K (usado) | texto, imagen, vídeo, audio → texto, voz | lfm1.0 | GGUF | Abliterado; KL 0,0207 frente a Q8_0 abliterado; 432 tok/s en RTX 4090 |
+| LiquidAI/LFM3-Omni-2B (Q8_0 oficial) | 1,73B | no disponible | texto, imagen, vídeo, audio → texto, voz | lfm1.0 | GGUF / safetensors | No abliterado; KL 0,0059 frente a sí mismo; 355 tok/s en RTX 4090 |
+| LiquidAI/LFM3-Omni-2B (Q4_K_M oficial) | 1,73B | no disponible | texto, imagen, vídeo, audio → texto, voz | lfm1.0 | GGUF | No abliterado; KL 0,0822; 497 tok/s en RTX 4090 |
+| Alternativas de 2B omni | no disponible | no disponible | no disponible | no disponible | no disponible | No se dispone de datos de otros modelos omni de tamaño similar en la información proporcionada |
 
 ## Limitaciones y advertencias
 
-- **Modelo abliterated**: la edición de dirección de rechazo elimina gran parte de las salvaguardas del modelo original; la tasa de rechazo en prompts dañinos cae del 92% al 10%. Esto implica un riesgo elevado de generar contenido dañino, sesgado o inapropiado, y no es adecuado para despliegues en producción sin filtros adicionales.
-- **Riesgo de alucinación**: como todo modelo de lenguaje, puede generar información incorrecta, especialmente en tareas de OCR, descripción de imágenes o transcripción de audio con contenido ambiguo.
-- **Idioma**: soporte limitado al inglés según la model card; el rendimiento en castellano no está documentado.
-- **Salida de voz no verificada**: el autor indica que la salida de voz (speech output) no se ha medido en estos archivos; solo se ha verificado la transcripción de voz a texto.
-- **Licencia restrictiva**: LFM Open License v1.0 permite uso comercial solo por debajo del umbral de ingresos de Liquid AI; es necesario leer la licencia completa antes de cualquier uso comercial. Los archivos son versiones modificadas del modelo original y deben conservar la atribución correspondiente.
-- **Contexto**: la ventana de 32K tokens es la configuración usada en las pruebas; no se especifica si el modelo soporta contextos mayores.
-- **Cuantización propietaria**: el pipeline XQ es privado; aunque los archivos son GGUF estándar y no requieren un cargador especial, no es posible reproducir la cuantización con las herramientas públicas.
-- **Dependencia de llama.cpp reciente**: requiere una versión de llama.cpp con soporte LFM3 (f3586e6 o posterior); versiones anteriores no cargarán el modelo correctamente.
+- La abliteración elimina parcialmente la dirección de rechazo, pero no la garantía de que el modelo no genere contenido dañino: el autor reporta 10/100 rechazos en prompts dañinos, lo que implica que sigue habiendo negativas y, sobre todo, que el modelo puede producir contenido sensible sin filtro. Requiere moderación externa en producción.
+- Riesgo de alucinación: es un modelo de 1,73B parámetros sin modo de razonamiento; en tareas que exigen multi-step reasoning su rendimiento es bajo (0/3 bucles agénticos correctos en la evaluación del autor) y en HumanEval obtuvo 13/21.
+- Limitación idiomática: solo se declara inglés; no hay evidencia de capacidades en castellano ni en otros idiomas.
+- El contexto máximo oficial no se documenta; las pruebas usan 32K, pero no se confirma que sea el límite del modelo base.
+- La licencia lfm1.0 es "other" y puede imponer restricciones al uso comercial; es necesario revisar el archivo LICENSE del repositorio antes de desplegar en producción. La modificación de pesos (abliteration) puede tener implicaciones adicionales según los términos de la licencia del modelo base.
+- La cuantización XQ es un pipeline privado del autor; aunque los archivos son GGUF estándar, no se puede reproducir la receta exacta ni auditar la selección de formatos por tensor.
+- El proyector multimodal es el archivo oficial de Liquid AI sin modificar; cualquier limitación del proyector original (por ejemplo, resolución de imagen o duración de vídeo) se mantiene.
+- El modelo base no es de razonamiento: la plantilla abre con `` vacío, por lo que no debe esperarse una cadena de pensamiento explícita.
+- Las cifras de velocidad y calidad provienen del autor del repositorio y no han sido verificadas de forma independiente.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/IndrasMirror/LFM3-Omni-2B-XQ-Uncensored
+- Repositorio Hugging Face: https://huggingface.co/IndrasMirror/LFM3-Omni-2B-XQ-Uncensored
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-Omni-2B
 - Repositorio Xolotl: https://github.com/Indras-Mirror/Xolotl
-- Licencia LFM Open License v1.0: https://huggingface.co/IndrasMirror/LFM3-Omni-2B-XQ-Uncensored/blob/main/LICENSE
-- Apoyo al autor: https://ko-fi.com/indrasmirror
-- llama.cpp: no se proporciona enlace directo en la información disponible; el autor referencia el README del servidor de llama.cpp para los endpoints `/tts` y `/v1/realtime`.
+- Documentación del motor LFM3 en Xolotl: https://github.com/Indras-Mirror/Xolotl/blob/main/docs/LFM3.md
+- Licencia del modelo: archivo LICENSE en el repositorio de Hugging Face

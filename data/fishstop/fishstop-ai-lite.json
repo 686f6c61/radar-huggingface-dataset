@@ -39,16 +39,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "fishstop/fishstop-AI-lite · Hugging Face",
-      "url": "https://huggingface.co/fishstop/fishstop-AI-lite",
-      "snippet": "fishstop / fishstop-AI-lite Like 0 GGUF conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
-    },
-    {
-      "title": "fishstop/fishstop-AI · Hugging Face",
-      "url": "https://huggingface.co/fishstop/fishstop-AI",
-      "snippet": "Instructions to use fishstop/fishstop-AI with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Notebooks Google Colab Kaggle Local AppsSettings llama.cpp How to use fishstop/fishstop-AI with llama.cpp: Install (macOS, Linux)"
-    }
-  ]
+  "sources": []
 }

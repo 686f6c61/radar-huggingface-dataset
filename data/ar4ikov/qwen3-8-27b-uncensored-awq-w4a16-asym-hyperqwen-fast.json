@@ -32,7 +32,7 @@
     "region:us"
   ],
   "likes": 3,
-  "downloads_30d": 536,
+  "downloads_30d": 531,
   "trending_score": 0,
   "parameters": 27356728560,
   "parameters_human": "27.36B",
@@ -52,31 +52,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "commodity - Αγγλοελληνικό Λεξικό WordReference.com",
-      "url": "https://www.wordreference.com/engr/commodity",
-      "snippet": "Συνώνυμα: goods, consumer goods, merchandise, materials, products, περισσότερα… Συμφράσεις: a [precious, valuable, strong, …"
-    },
-    {
-      "title": "commodity meaning in Greek — αγαθά, εμπόρευμα | FreeDict",
-      "url": "https://freedict.com/translate/english-greek/commodity",
-      "snippet": "commodity in Greek is αγαθά, εμπόρευμα — commodity means a raw material or basic good that is bought and sold in bulk, such as …"
-    },
-    {
-      "title": "commodity — Translation in Greek - TechDico",
-      "url": "https://www.techdico.com/translation/english-greek/commodity.html",
-      "snippet": "commodity means a material of economic interest in an earth resource. αγαθό (commodity) σημαίνει υλικό οικονομικού …"
-    },
-    {
-      "title": "COMMODITY - ελληνική μετάφραση - λεξικό bab.la",
-      "url": "https://www.babla.gr/%ce%b1%ce%b3%ce%b3%ce%bb%ce%b9%ce%ba%ce%b1-%ce%b5%ce%bb%ce%bb%ce%b7%ce%bd%ce%b9%ce%ba%ce%b1/commodity",
-      "snippet": "Βρείτε όλες τις μεταφράσεις του commodity στο Ελληνικά όπως αγαθό, αγορά βασικών προϊόντων, συμφωνία για τα προϊόντα …"
-    },
-    {
-      "title": "commodity - Βικιλεξικό",
-      "url": "https://el.wiktionary.org/wiki/commodity",
-      "snippet": "Ουσιαστικό επεξεργασία commodity (en) (οικονομία) το αγαθό, το προϊόν, το εμπόρευμα All commodities are exchanged for money. …"
-    }
-  ]
+  "sources": []
 }

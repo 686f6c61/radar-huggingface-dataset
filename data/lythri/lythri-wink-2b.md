@@ -2,108 +2,104 @@
 
 ## Resumen
 
-Lythri-Wink-2B es un modelo de lenguaje conversacional desarrollado por Lythri, orientado a conversacion en dispositivo (on-device) y apoyo emocional. Forma parte de la familia Lythri 2.0 y se construye como un fine-tuning del modelo base google/gemma-4-E2B. Cuenta con 2.522.816.159 parametros totales y 1.480 millones de parametros activos, lo que lo situa en la categoria de modelos compactos con arquitectura de mezcla de expertos (MoE).
+Lythri-Wink-2B es un modelo de lenguaje compacto de 2.522.816.159 parámetros totales (2.52B) desarrollado por Lythri como parte de la familia Lythri 2.0. Está diseñado específicamente para conversación en dispositivo (on-device) y apoyo emocional, con un enfoque en respuestas directas, conversaciones multi-turno y seguimiento de system prompts. El modelo se presenta como una alternativa de menor huella de despliegue frente a Lythri-Tada-4B, su hermano mayor de 4B.
 
-El modelo esta disenado explicitamente para priorizar un footprint de despliegue reducido, conversaciones multi-turno y soporte de system prompt, sacrificando deliberadamente rendimiento en conocimiento general, razonamiento, matematicas y codigo. El autor lo presenta como una alternativa mas ligera que Lythri-Tada-4B dentro de la misma familia, no como un competidor en benchmarks generales.
+La arquitectura se etiqueta como "gemma4" en los metadatos de Hugging Face, con pipeline de text-generation y capacidades declaradas de image-text-to-text. El modelo ha sido afinado (finetune) a partir de Lythri-Wink-2B-pt, el checkpoint preentrenado de la misma familia. Está publicado bajo licencia Apache 2.0, lo que permite uso comercial sin restricciones adicionales, y se distribuye en formato safetensors con un tamaño de repositorio de 5.1 GB.
 
-Su relevancia actual radica en la combinacion de licencia Apache 2.0, tamano contenido (repo de 5,1 GB) y orientacion a casos de uso de acompanamiento conversacional y soporte emocional, un nicho donde los modelos generalistas suelen producir respuestas poco naturales o excesivamente formateadas.
+Su relevancia actual radica en la creciente demanda de asistentes conversacionales ligeros que puedan ejecutarse en hardware de consumo o dispositivos móviles, priorizando naturalidad de escritura y coherencia emocional sobre conocimiento enciclopédico, razonamiento matemático o generación de código. El modelo declara explícitamente este trade-off en su model card.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Mezcla de expertos (MoE) derivada de google/gemma-4-E2B; transformer |
-| Parametros totales | 2.522.816.159 (2,52B) |
-| Parametros activos | 1,48B |
+| Arquitectura | Transformer (etiquetado como "gemma4" en metadatos) |
+| Parámetros totales | 2.522.816.159 (2.52B) |
+| Parámetros activos | 1.48B (según model card; sugiere configuración MoE, no confirmado en detalle) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible (el autor evalua en Q8_0 GGUF, lo que implica soporte de cuantizacion GGUF) |
+| Tipos de cuantización | Q8_0 GGUF mencionado en evaluación; no se detallan otros formatos |
 | Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (libreria transformers); existe variante GGUF Q8_0 usada en evaluacion |
+| Formato de pesos | safetensors (repositorio principal); GGUF Q8_0 usado en benchmarks |
 
 ## Arquitectura y entrenamiento
 
-El modelo se basa en google/gemma-4-E2B, un transformer con arquitectura de mezcla de expertos que activa 1,48B de sus 2,52B parametros totales por token. Esta configuracion permite un coste de inferencia mas cercano a un modelo de 1,5B que a uno de 2,5B denso, lo que encaja con el objetivo declarado de despliegue en dispositivo.
+La información disponible indica que Lythri-Wink-2B es un transformer con 2.52B parámetros totales y 1.48B parámetros activos, lo que apunta a una arquitectura de mezcla de expertos (MoE), aunque la model card no detalla la configuración exacta de expertos, el número de capas ni la dimensionalidad del modelo. El etiquetado "gemma4" en los metadatos de Hugging Face sugiere una base arquitectónica derivada de la familia Gemma, pero no se confirma en la documentación proporcionada.
 
-El fine-tuning se orienta a conversacion de acompanamiento multi-turno, con entrenamiento sobre conversaciones de multiples turnos y contexto de turnos anteriores. El modelo soporta system prompt para definir persona, tono o reglas de la aplicacion. El autor indica que responde de forma directa, sin modo de razonamiento explicito (thinking). No se especifican en la informacion disponible el numero de tokens de entrenamiento, la composicion del dataset ni si se emplearon tecnicas de RLHF o DPO.
+El modelo es un finetune de Lythri-Wink-2B-pt, el checkpoint preentrenado de la familia. El entrenamiento se ha orientado a conversaciones multi-turno de acompañamiento, con énfasis en el contexto de turnos anteriores y en el seguimiento de system prompts para definir persona, tono o reglas de la aplicación. No se especifican en la información disponible el número de tokens de entrenamiento, la composición del dataset, ni si se emplearon técnicas de RLHF o DPO. La model card menciona un informe técnico alojado en Zenodo (DOI 10.5281/zenodo.23179311) que presumiblemente contiene estos detalles, pero su contenido no se ha incluido en la información proporcionada.
 
 ## Capacidades
 
-- Generacion de texto conversacional con respuestas directas, sin cadena de pensamiento explicita.
-- Conversacion multi-turno con aprovechamiento del contexto de turnos anteriores.
-- Soporte de system prompt para configurar persona, tono y reglas de comportamiento.
-- Apoyo emocional y conversacion de acompanamiento, dominio principal del fine-tuning.
-- Procesamiento de entrada imagen-texto segun los tags del repositorio (image-text-to-text); no se detalla el alcance de esta capacidad en la model card.
-- No se documenta soporte de tool calling ni function calling.
-- No se documenta soporte explicito de agentes o razonamiento multi-paso.
-- Capacidades multilingues: no disponibles en la informacion proporcionada.
-- Rendimiento deliberadamente limitado en conocimiento, razonamiento, matematicas y codigo.
+- Generación de texto conversacional con orientación a respuestas directas y naturales.
+- Conversación multi-turno con manejo de contexto de turnos anteriores, entrenado específicamente para diálogos de acompañamiento.
+- Soporte de system prompts para definir persona, tono y reglas de comportamiento de la aplicación.
+- Capacidades declaradas de image-text-to-text en los metadatos de Hugging Face (no detalladas en la model card).
+- Evaluación en tareas de conocimiento general (MMLU, ARC-C), razonamiento (HellaSwag), interacción social (SocialIQA), ciencia (GPQA Diamond), matemáticas (GSM8K), código (HumanEval) e instrucciones (IFEval), con rendimiento limitado en estas áreas por su tamaño reducido.
+- No se declara soporte explícito de tool calling, function calling ni razonamiento agéntico multi-paso en la información disponible.
+- Capacidades multilingües: no disponibles en la información proporcionada.
 
 ## Casos de uso
 
-- Aplicaciones de acompanamiento emocional en dispositivo: el modelo puede mantener conversaciones multi-turno con contexto de turnos previos y un system prompt que defina el tono del asistente, lo que permite integrarlo en apps moviles o de escritorio sin depender de la nube.
-- Asistente conversacional embebido: con 1,48B parametros activos y pesos en safetensors de aproximadamente 5,1 GB en el repo, es viable desplegarlo en equipos de consumo mediante cuantizacion GGUF, reduciendo costes de infraestructura.
-- Simulacion de dialogo para formacion: su entrenamiento en conversaciones de acompanamiento lo hace adecuado para generar respuestas de practica en escenarios de escucha activa y apoyo interpersonal.
-- Prototipado rapido de chatbots con persona: el soporte de system prompt permite definir un personaje o estilo concreto en el mensaje de sistema, sin reentrenamiento, para demos y validacion de producto.
-- Generacion de respuestas empaticas en herramientas de bienestar: puede redactar mensajes de apoyo o reformulaciones empaticas en flujos de texto, dado su enfoque en naturalidad de escritura frente a modelos generalistas.
-- Filtrado y generacion de conversaciones sinteticas: util como generador de dialogos de acompanamiento para aumentar datasets de entrenamiento o evaluacion en el dominio socioemocional.
-- Despliegue en entornos con restricciones de privacidad: al poder ejecutarse localmente, permite procesar conversaciones sensibles sin enviar datos a servicios externos.
+- Aplicaciones de acompañamiento emocional en dispositivo: el modelo está entrenado para conversaciones de apoyo con respuestas directas y naturales, y puede ejecutarse localmente en hardware de consumo gracias a sus 2.52B parámetros, preservando la privacidad del usuario al no requerir envío de datos a la nube.
+- Asistentes conversacionales multi-turno: su entrenamiento específico en contexto de turnos anteriores permite mantener coherencia en diálogos prolongados dentro de aplicaciones de chat, siempre que se gestionen adecuadamente los límites de contexto (no especificados).
+- Aplicaciones con persona configurable: el soporte de system prompts permite definir el tono, estilo y reglas del asistente directamente en el mensaje de sistema, lo que facilita adaptar el mismo modelo a distintos productos o marcas sin reentrenamiento.
+- Prototipado rápido de chatbots: su tamaño compacto y licencia Apache 2.0 permiten integrarlo en fases de validación de producto con costes de infraestructura mínimos, usando GPUs de consumo o incluso CPU con cuantización.
+- Despliegue en entornos con recursos limitados: aplicaciones de escritorio, dispositivos embebidos o móviles donde no es viable ejecutar modelos de 7B o superiores, priorizando la naturalidad conversacional sobre el conocimiento factual.
+- Generación de respuestas empáticas en herramientas de bienestar digital: integrable en apps de journaling, meditación o seguimiento del estado de ánimo que requieran respuestas conversacionales contextualizadas sin depender de servicios externos.
+- Investigación en modelos pequeños de conversación: como checkpoint de referencia para estudiar el equilibrio entre naturalidad de escritura (evaluada con EQ-Bench Slop Score en la familia) y capacidades generales en modelos de menos de 3B parámetros.
 
 ## Benchmarks y rendimiento
 
-Resultados publicados por el autor. Lythri-Wink-2B evaluado como GGUF Q8_0, con plantilla de chat y ajustes estandar de cada tarea. La comparacion con Lythri-Tada-4B es una referencia de familia, no una comparacion con igual numero de parametros.
+Resultados publicados en la model card. Evaluado como Q8_0 GGUF con el chat template aplicado y configuraciones estándar de tarea.
 
 | Benchmark | Lythri-Tada-4B | Lythri-Wink-2B |
 |---|---|---|
-| MMLU | 55,41 | 39,32 |
-| ARC-C | 56,57 | 41,13 |
-| HellaSwag | 74,23 | 58,65 |
-| SocialIQA | 51,43 | 45,24 |
-| GPQA Diamond | 21,21 | 23,23 |
-| GSM8K | 27,45 | 13,04 |
-| HumanEval | 24,39 | 7,93 |
-| IFEval | 39,19 | 23,48 |
+| MMLU | 55.41 | 39.32 |
+| ARC-C | 56.57 | 41.13 |
+| HellaSwag | 74.23 | 58.65 |
+| SocialIQA | 51.43 | 45.24 |
+| GPQA Diamond | 21.21 | 23.23 |
+| GSM8K | 27.45 | 13.04 |
+| HumanEval | 24.39 | 7.93 |
+| IFEval | 39.19 | 23.48 |
 
-En naturalidad de escritura, el autor cita el EQ-Bench Slop Score: Lythri-Tada-4B obtiene 39,0, frente a GPT-4o (47,7), DeepSeek-R1 (67,9), Qwen3-4B (62,2) y Gemma-3-4B (85,2). No se proporciona la puntuacion de Lythri-Wink-2B en esta metrica.
+En cuanto a naturalidad de escritura, la model card referencia el EQ-Bench Slop Score para la familia: Lythri-Tada-4B obtiene 39.0, frente a GPT-4o (47.7), DeepSeek-R1 (67.9), Qwen3-4B (62.2) y Gemma-3-4B (85.2). No se proporciona la puntuación específica de Lythri-Wink-2B en esta métrica.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia en bfloat16: aproximadamente 5 GB solo para pesos (2,52B parametros), mas overhead de activaciones y cache KV; en la practica, del orden de 6-8 GB segun longitud de contexto y lote.
-- VRAM estimada en cuantizacion Q8_0: en torno a 2,7 GB para pesos; en Q4, aproximadamente 1,5-1,8 GB.
-- GPU recomendadas: A100 o H100 para despliegue de alta concurrencia; RTX 4090, RTX 4080 o RTX 3090 para inferencia en una sola GPU sin cuantizar.
-- Cabe en GPU de consumo: si, incluidas tarjetas de 8 GB en bfloat16 y de 4-6 GB con cuantizacion GGUF.
-- Opciones de despliegue: transformers (referencia del autor), llama.cpp y Ollama mediante GGUF, y servidores compatibles con la API de transformers (el repo incluye el tag endpoints_compatible). Soporte de vLLM o TGI: no confirmado en la informacion disponible.
-- Latencia y throughput: no disponibles.
+- VRAM estimada para inferencia en bf16: aproximadamente 5.0-5.5 GB para los pesos (2.52B parámetros × 2 bytes), más overhead de activaciones y caché KV.
+- VRAM estimada en Q8_0: aproximadamente 2.7-3.0 GB para los pesos.
+- VRAM estimada en cuantizaciones de 4 bits (si están disponibles, no confirmadas): aproximadamente 1.5-1.8 GB.
+- GPU recomendadas: cualquier GPU con al menos 6 GB de VRAM para bf16 (RTX 3060, RTX 4060, RTX 2070); GPUs de datacenter como A100 o H100 no son necesarias para este tamaño, pero pueden usarse para servir múltiples instancias.
+- Cabe en GPUs de consumo: sí, en RTX 3060 12GB, RTX 4060 Ti 16GB, RTX 4070, RTX 4080, RTX 4090 y GPUs integradas con suficiente memoria compartida; también es viable en CPU con cuantización GGUF.
+- Opciones de despliegue: transformers (soporte nativo confirmado en la model card), llama.cpp/Ollama (formato GGUF Q8_0 usado en evaluación), vLLM y TGI (compatibilidad no confirmada explícitamente, pero el tag endpoints_compatible sugiere soporte en Inference Endpoints).
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Notas |
+| Modelo | Parámetros | Contexto | Licencia | Enfoque |
 |---|---|---|---|---|
-| Lythri-Wink-2B | 2,52B totales / 1,48B activos | no disponible | Apache 2.0 | Enfoque en soporte emocional y on-device; MMLU 39,32 |
-| Lythri-Tada-4B | no disponible | no disponible | no disponible | Mismo autor y familia; mas capaz en benchmarks (MMLU 55,41) pero mayor footprint |
-| Qwen3-4B | 4B (aproximado) | no disponible | no disponible | Citado por el autor en Slop Score (62,2); modelo generalista |
-| Gemma-3-4B | 4B (aproximado) | no disponible | no disponible | Citado por el autor en Slop Score (85,2); modelo generalista |
+| Lythri-Wink-2B | 2.52B totales / 1.48B activos | no disponible | Apache 2.0 | Conversación y apoyo emocional on-device |
+| Lythri-Tada-4B | ~4B | no disponible | no disponible | Conversación y apoyo emocional (mayor capacidad) |
+| Qwen3-4B | ~4B | no disponible | no disponible | Propósito general |
+| Gemma-3-4B | ~4B | no disponible | no disponible | Propósito general |
 
-Los datos de Qwen3-4B y Gemma-3-4B solo cubren el Slop Score en la informacion disponible; no hay comparacion de parametros, contexto ni benchmarks generales con Wink-2B.
+La comparación directa con Qwen3-4B y Gemma-3-4B solo está disponible en la métrica EQ-Bench Slop Score (menor es mejor): Lythri-Tada-4B obtiene 39.0 frente a 62.2 de Qwen3-4B y 85.2 de Gemma-3-4B, lo que indica mayor naturalidad de escritura en la familia Lythri. No se dispone de comparativas de benchmarks generales entre Lythri-Wink-2B y estos modelos en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Rendimiento bajo en tareas de conocimiento, razonamiento, matematicas y codigo (GSM8K 13,04; HumanEval 7,93; MMLU 39,32). No es adecuado como modelo generalista.
-- Riesgo de alucinacion en consultas factuales, agravado por su orientacion conversacional y su menor capacidad de conocimiento.
-- No se documentan sesgos conocidos ni evaluaciones de seguridad; al tratarse de un modelo de soporte emocional, existe riesgo de respuestas inapropiadas en situaciones de crisis, por lo que requiere salvaguardas externas en produccion.
-- Idiomas soportados no disponibles: no se puede garantizar un rendimiento adecuado fuera del idioma o idiomas de entrenamiento.
-- Longitud de contexto no disponible: limita la planificacion de despliegues con historiales largos.
-- Aunque la licencia es Apache 2.0, el modelo base google/gemma-4-E2B puede estar sujeto a terminos adicionales de Google; conviene revisar las condiciones del modelo base antes de un uso comercial.
-- No se documenta soporte de tool calling ni de agentes, lo que descarta su uso en pipelines que requieran invocacion de funciones.
-- El modelo responde sin modo de razonamiento explicito, lo que puede reducir la calidad en tareas que se beneficien de cadena de pensamiento.
-- El repositorio registra 0 descargas y 0 likes en el momento de la consulta: ecosistema y validacion externa practicamente inexistentes.
+- El modelo prioriza explícitamente la conversación y el apoyo emocional sobre conocimiento, razonamiento, matemáticas y código; su rendimiento en MMLU (39.32), GSM8K (13.04) y HumanEval (7.93) es bajo en términos absolutos y no es adecuado para tareas técnicas o de razonamiento complejo.
+- Riesgo de alucinación elevado en consultas factuales debido a su tamaño reducido y a la orientación de su entrenamiento hacia la conversación, no hacia la precisión enciclopédica.
+- No se especifican los idiomas soportados ni la longitud de contexto, lo que impide garantizar un comportamiento fiable en castellano o en conversaciones muy largas sin validación previa.
+- El uso en contextos de salud mental o apoyo emocional real requiere supervisión humana y salvaguardas adicionales; el modelo no sustituye atención profesional y puede generar respuestas inadecuadas en situaciones de crisis.
+- Aunque la licencia Apache 2.0 permite uso comercial sin restricciones, el despliegue en producción debe considerar la ausencia de documentación sobre sesgos, composición del dataset y evaluación de seguridad.
+- La model card no detalla la configuración MoE (número de expertos, mecanismo de routing) ni el proceso de entrenamiento (tokens, RLHF/DPO), lo que limita la reproducibilidad y la evaluación de riesgos.
+- El tag image-text-to-text sugiere capacidades multimodales no documentadas en la model card; no deben asumirse sin validación empírica.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/Lythri/Lythri-Wink-2B
 - Perfil del autor en Hugging Face: https://huggingface.co/Lythri
 - Perfil en ModelScope: https://www.modelscope.cn/profile/Spike8086
-- Informe tecnico (Zenodo): https://zenodo.org/records/23179312
-- DOI asociado: https://doi.org/10.5281/zenodo.23179311
-- Modelo base: https://huggingface.co/google/gemma-4-E2B
+- Informe técnico (Zenodo): https://zenodo.org/records/23179312
+- DOI del modelo: https://doi.org/10.5281/zenodo.23179311
 - EQ-Bench Slop Score: https://eqbench.com/slop-score.html

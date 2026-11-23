@@ -2,93 +2,82 @@
 
 ## Resumen
 
-EgoCaptioner-GGUF es una conversión a formato GGUF del modelo EgoCaptioner, publicada por el usuario mradermacher en Hugging Face. El modelo original, alojado en la cuenta Vickyinmyheart824/EgoCaptioner, cuenta con aproximadamente 8.950 millones de parámetros según los pesos en safetensors, lo que lo sitúa en la franja de los modelos de ~9B. La información pública disponible es muy limitada: la model card del repositorio GGUF se reduce a metadatos de la herramienta de cuantización y a la referencia al modelo base.
+EgoCaptioner es un modelo de generación de descripciones (captioning) de vídeo egocéntrico, es decir, vídeo grabado desde una cámara en primera persona (por ejemplo, gafas inteligentes o cámaras corporales). El modelo original lo desarrolla Vickyinmyheart824 y esta ficha documenta la versión cuantizada en formato GGUF publicada por mradermacher, que permite ejecutar el modelo en hardware de consumo mediante llama.cpp y herramientas compatibles.
 
-El interés de esta publicación reside en que ofrece cuantizaciones estáticas en múltiples precisiones (desde Q2_K hasta F16, incluyendo IQ4_XS) que permiten ejecutar el modelo en hardware con recursos limitados mediante llama.cpp u otros runtimes compatibles con GGUF. Sin embargo, no se han publicado detalles sobre la arquitectura interna, los datos de entrenamiento, los idiomas soportados ni la licencia, lo que limita seriamente cualquier evaluación rigurosa.
+El modelo parte de una arquitectura transformer con aproximadamente 8.950 millones de parámetros (8,95 B), según los pesos en safetensors del modelo base. Su tarea principal es convertir secuencias de vídeo egocéntrico en descripciones textuales en inglés, un nicho relevante para aplicaciones de asistencia visual, análisis de actividad y documentación automática de tareas manuales.
 
-Dado el nombre "EgoCaptioner", es plausible que el modelo esté orientado a la generación de descripciones (captioning), posiblemente en el contexto de vídeo en primera persona (egocéntrico), pero esta apreciación es una inferencia a partir del nombre y no está confirmada por la documentación disponible. El repositorio ocupa 30,8 GB y no registra descargas ni interacciones en el momento de la consulta.
+La relevancia de esta publicación radica en que ofrece cuantizaciones estáticas (de Q2_K a Q8_0, además de f16) que reducen el peso desde 18 GB en f16 hasta 4 GB en Q2_K, lo que facilita el despliegue local sin depender de infraestructura de GPU de datacenter. La licencia Apache 2.0 permite uso comercial sin restricciones adicionales.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | no disponible |
-| Parametros totales | 8.953.803.264 (~8,95B) |
-| Parametros activos | no disponible (no se indica que sea MoE) |
+| Arquitectura | Transformer (modelo base EgoCaptioner, orientado a vídeo egocéntrico) |
+| Parámetros totales | 8.953.803.264 (8,95 B) |
+| Parámetros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | F16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q4_K_M, Q4_K_S, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K, IQ4_XS |
-| Idiomas soportados | no disponible |
-| Licencia | no disponible |
-| Formato de pesos | GGUF (original en safetensors, segun el campo de parametros) |
+| Tipos de cuantización | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, f16 |
+| Idiomas soportados | inglés (en) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (cuantizaciones); el modelo base en safetensors |
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado información sobre la arquitectura del modelo en la documentación disponible. El recuento de parámetros (8,95B) y el formato de conversión (convert_type: hf) sugieren un transformer decoder-only estándar exportado desde pesos de Hugging Face, pero no se confirma ni el tipo de atención, ni la presencia de componentes MoE, ni innovaciones como decodificación especulativa o atención lineal.
+La información disponible no detalla la arquitectura interna del modelo base más allá de que se trata de un transformer orientado a vídeo egocéntrico. El recuento de parámetros (8,95 B) y el tamaño del repo (81,8 GB, que incluye todas las cuantizaciones) son los únicos datos estructurales verificables. No se especifican el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas de RLHF o DPO.
 
-Tampoco hay datos sobre el corpus de entrenamiento (número de tokens, composición, proporción de código o multilingüe), ni sobre si se aplicaron técnicas de alineación como RLHF, DPO o instrucción supervisada. La model card del repositorio GGUF únicamente documenta el proceso de cuantización estática (quantize_version: 2, output_tensor_quantised: 1) y enumera los tipos de cuantización generados.
+La innovación principal de esta publicación no está en el modelo en sí, sino en el proceso de cuantización estática realizado por mradermacher, que genera versiones con distintos niveles de compresión y calidad. El autor indica que las cuantizaciones ponderadas con imatrix están disponibles en un repositorio separado (EgoCaptioner-i1-GGUF), lo que sugiere que esta versión usa cuantización estática convencional sin matriz de importancia.
 
 ## Capacidades
 
-- Generación de texto conversacional: la etiqueta "conversational" del repositorio indica compatibilidad con plantillas de diálogo, aunque no se detalla el formato exacto.
-- Compatibilidad con endpoints: la etiqueta "endpoints_compatible" sugiere que el modelo puede servirse mediante la infraestructura de Inference Endpoints de Hugging Face.
-- Posible generación de descripciones (captioning): el nombre del modelo apunta a esta función, pero no está documentada ni verificada.
-- Soporte de tool calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingües: no disponible.
-- Capacidades especiales (modo thinking, visión, audio): no disponible.
+- Generación de descripciones textuales de vídeo egocéntrico (primera persona).
+- Procesamiento de entrada de vídeo como modalidad principal, además de texto.
+- Capacidad conversacional (etiqueta `conversational` en el repositorio).
+- Soporte de tool calling / function calling: no disponible en la información proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
+- Capacidades multilingües: solo inglés declarado.
+- Capacidades especiales (thinking mode, audio, visión general): no disponible; la única modalidad especial documentada es vídeo egocéntrico.
 
 ## Casos de uso
 
-- Experimentación local con llama.cpp: las cuantizaciones Q4_K_M e IQ4_XS permiten ejecutar un modelo de ~9B en GPUs de consumo con 6-8 GB de VRAM, lo que facilita pruebas de inferencia sin infraestructura dedicada.
-- Evaluación comparativa de cuantizaciones: al ofrecer desde Q2_K hasta F16, el repositorio permite medir la degradación de calidad frente a la reducción de tamaño en un mismo modelo base.
-- Prototipado de pipelines conversacionales: la etiqueta "conversational" permite integrar el modelo en entornos de chat mediante plantillas de diálogo, siempre que se valide el formato con el modelo original.
-- Servicio en endpoints gestionados: la etiqueta "endpoints_compatible" facilita el despliegue en Hugging Face Inference Endpoints para pruebas de integración.
-- Investigación sobre captioning egocéntrico: si el modelo confirma su orientación a descripciones de vídeo en primera persona, podría emplearse en tareas de anotación automática de datasets de egocentrismo, aunque esta capacidad no está verificada.
-- Despliegue en CPU: las cuantizaciones Q2_K y Q3_K_S reducen el peso a unos pocos gigabytes, permitiendo inferencia en CPU con llama.cpp para tareas de baja latencia no crítica.
+- Descripción automática de vídeo en primera persona para asistentes de accesibilidad: el modelo puede narrar lo que ocurre en la escena captada por una cámara corporal, ayudando a personas con discapacidad visual a comprender su entorno.
+- Documentación de tareas manuales en entornos industriales: a partir de grabaciones de operarios con cámara corporal, el modelo genera descripciones de los pasos ejecutados, útiles para auditoría o formación.
+- Análisis de actividad en investigación de comportamiento: los investigadores pueden etiquetar automáticamente secuencias egocéntricas de experimentos y reducir el trabajo manual de anotación.
+- Indexación y búsqueda de archivos de vídeo personal: las descripciones generadas permiten construir metadatos textuales para buscar fragmentos concretos en grabaciones de gafas inteligentes.
+- Generación de subtítulos para contenido de creadores con cámara en primera persona: el modelo produce texto descriptivo que puede revisarse y publicarse como subtítulos o descripciones alternativas.
+- Prototipado local en hardware de consumo: gracias a las cuantizaciones Q4_K_S (5,5 GB) y Q4_K_M (5,8 GB), es viable desplegar el modelo en una estación de trabajo con GPU de gama alta para pruebas de concepto sin coste de nube.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia (modelo de ~8,95B parámetros):
-  - F16: ~18 GB.
-  - Q8_0: ~9,5 GB.
-  - Q6_K: ~7,3 GB.
-  - Q5_K_M: ~6,3 GB.
-  - Q4_K_M: ~5,4 GB.
-  - Q3_K_M: ~4,3 GB.
-  - Q2_K: ~3,2 GB.
-  - IQ4_XS: ~4,8 GB.
-- GPU recomendadas: A100 o H100 para F16 y Q8_0; RTX 4090 (24 GB) para F16 con margen; RTX 3090/4080 (16-24 GB) para Q8_0 y Q6_K; RTX 4060 Ti (16 GB) o RTX 3060 (12 GB) para Q5_K_M y Q4_K_M.
-- Cabe en GPU de consumo: sí, desde Q4_K_M en GPUs con 6-8 GB de VRAM; Q2_K y Q3_K_S permiten incluso tarjetas de 4 GB.
-- Opciones de despliegue: llama.cpp, Ollama, y cualquier runtime compatible con GGUF; el modelo original en safetensors requeriría vLLM o TGI, pero no se documenta su compatibilidad.
-- Latencia y throughput: no disponibles.
+- VRAM estimada para inferencia según cuantización: Q2_K ~4 GB, Q3_K_S ~4,4 GB, Q3_K_M ~4,8 GB, Q3_K_L ~5,1 GB, IQ4_XS ~5,4 GB, Q4_K_S ~5,5 GB, Q4_K_M ~5,8 GB, Q5_K_S ~6,4 GB, Q5_K_M ~6,6 GB, Q6_K ~7,5 GB, Q8_0 ~9,6 GB, f16 ~18 GB (tamaños de archivo; la VRAM real puede ser algo superior por el contexto y el procesamiento de vídeo).
+- GPU recomendadas: para Q4_K_M o superiores, una RTX 4090 (24 GB) o RTX 3090 (24 GB) permite ejecutar con holgura; para Q8_0 y f16 se recomienda A100 40 GB, H100 o varias GPU consumer.
+- Cabe en GPU de consumo: sí, en modelos con 8 GB o más para cuantizaciones Q2_K a Q4_K_M; Q5 y Q6 requieren 8-12 GB; Q8_0 requiere 12-16 GB.
+- Opciones de despliegue: llama.cpp, Ollama, y cualquier runtime compatible con GGUF; el modelo base usa transformers.
+- Latencia y throughput estimados: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Licencia | Formato | Disponibilidad |
-|---|---|---|---|---|---|
-| EgoCaptioner-GGUF | ~8,95B | no disponible | no disponible | GGUF | Hugging Face (mradermacher) |
-| Llama 3.1 8B Instruct | 8,03B | 128K | Llama 3.1 Community | safetensors, GGUF | Meta / Hugging Face |
-| Qwen2.5 7B Instruct | 7,62B | 128K | Apache 2.0 | safetensors, GGUF | Alibaba / Hugging Face |
-| Mistral 7B Instruct v0.3 | 7,24B | 32K | Apache 2.0 | safetensors, GGUF | Mistral AI / Hugging Face |
-
-La comparativa se limita a parámetros, contexto y licencia, ya que no hay datos de rendimiento del modelo analizado. EgoCaptioner carece de licencia e idiomas declarados, a diferencia de las alternativas, que cuentan con documentación completa y benchmarks publicados.
+No se dispone de datos de benchmarks ni de especificaciones de modelos comparables de captioning de vídeo egocéntrico en la información proporcionada. La comparación cuantitativa con alternativas no está disponible.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de model card: no se documentan arquitectura, datos de entrenamiento, idiomas ni limitaciones, lo que impide una evaluación rigurosa.
-- Licencia no especificada: no se puede garantizar el uso comercial ni la redistribución; es imprescindible contactar con el autor del modelo original antes de cualquier despliegue en producción.
-- Riesgo de alucinación: desconocido, al no haber evaluaciones publicadas.
-- Sesgos: no documentados; sin información sobre la composición del corpus no es posible estimar sesgos de género, idioma o dominio.
-- Contexto e idiomas desconocidos: no se puede planificar su uso en tareas que requieran ventanas largas o cobertura multilingüe.
-- Repositorio sin tracción: 0 descargas y 0 likes en el momento de la consulta, lo que reduce la probabilidad de que la comunidad haya validado su calidad.
-- Procedencia del modelo base: el autor original (Vickyinmyheart824) no es un laboratorio reconocido, lo que añade incertidumbre sobre la calidad y el origen de los datos.
-- Fecha de creación futura (2026-11-20): el metadato del repositorio indica una fecha posterior a la actual, lo que puede reflejar un error de registro o una programación de publicación; conviene verificar la integridad del repositorio.
+- El modelo solo declara soporte de inglés; no se garantiza un rendimiento adecuado en castellano u otros idiomas.
+- No se han publicado datos sobre sesgos, tasas de alucinación ni evaluación cualitativa de las descripciones generadas.
+- La longitud de contexto no está documentada, lo que impide planificar la duración máxima de vídeo procesable.
+- Las cuantizaciones de baja precisión (Q2_K, Q3_K_M marcada como "lower quality") pueden degradar la calidad de las descripciones; se recomienda Q4_K_M o superior para producción.
+- El modelo está especializado en vídeo egocéntrico; su uso con vídeo en tercera persona u otras modalidades no está validado.
+- La licencia Apache 2.0 permite uso comercial, pero al ser una cuantización de un modelo de terceros conviene verificar la licencia del modelo base original.
+- El tamaño del repositorio (81,8 GB) incluye todas las cuantizaciones; descargar solo el archivo GGUF necesario.
 
 ## Enlaces
 
-- Repositorio GGUF: https://huggingface.co/mradermacher/EgoCaptioner-GGUF
-- Modelo original: https://huggingface.co/Vickyinmyheart824/EgoCaptioner
+- Repositorio Hugging Face (cuantizaciones): https://huggingface.co/mradermacher/EgoCaptioner-GGUF
+- Modelo base: https://huggingface.co/Vickyinmyheart824/EgoCaptioner
+- Cuantizaciones ponderadas imatrix: https://huggingface.co/mradermacher/EgoCaptioner-i1-GGUF
+- Página de descarga del autor: https://hf.tst.eu/model#EgoCaptioner-GGUF
+- Guía de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Solicitudes de cuantización: https://huggingface.co/mradermacher/model_requests
+- Análisis de tipos de cuantización (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9

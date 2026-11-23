@@ -5,7 +5,7 @@
   "author": "Phoonnx",
   "url": "https://huggingface.co/Phoonnx/vits-es_es-sharvard-medium-espeak",
   "created_at": "2026-11-16T18:05:38.000Z",
-  "updated_at": "2026-11-16T18:05:49.000Z",
+  "updated_at": "2026-11-22T08:40:47.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-to-speech",
@@ -23,7 +23,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 30,
+  "downloads_30d": 33,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

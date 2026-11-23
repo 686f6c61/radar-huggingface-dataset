@@ -2,110 +2,104 @@
 
 ## Resumen
 
-TRON 1 RL Locomotion Policies es una colección de políticas de locomoción entrenadas por refuerzo (RL) para el robot bípedo LimX TRON 1, distribuidas en formato ONNX por LimX Dynamics. No se trata de un modelo de lenguaje ni de un modelo fundacional generativo, sino de un conjunto de controladores neuronales que mapean observaciones de estado del robot a comandos de articulación para que el robot camine, se mantenga en pie y se desplace de forma estable. El repositorio cubre las tres variantes mecánicas del TRON 1: pie de punta (`PF_*`), pie de suela (`SF_*`) y pie con rueda (`WF_*`).
+TRON 1 RL Locomotion Policies es una coleccion de politicas de locomocion entrenadas con aprendizaje por refuerzo para el robot bípedo LimX TRON 1, distribuidas en formato ONNX por el fabricante LimX Dynamics. No se trata de un modelo de lenguaje, sino de un conjunto de redes neuronales de control motor que generan consignas de articulacion para que el robot camine, se mantenga en equilibrio y, en las variantes con brazo, ejecute tareas de loco-manipulacion. El repositorio cubre las tres morfologias del TRON 1: pie puntual (point-foot, prefijo `PF_`), planta completa (sole-foot, `SF_`) y rueda-pie (wheel-foot, `WF_`).
 
-Cada variante incluye dos políticas entrenadas en simuladores distintos (Isaac Gym e Isaac Lab), más un codificador (`encoder.onnx`) que acompaña a la política en el bucle de control. Las políticas se ejecutan en CPU mediante ONNX Runtime, lo que permite desplegarlas tanto en simulación (MuJoCo) como en el robot físico a través del repositorio `tron1-rl-deploy-python`. El bucle de control corre a 500 Hz y la política a 50 Hz.
+Cada familia incluye multiples variantes de chasis (`TRON1A`, `TRON1B`, `P441A`, `P441B`, `P441C`, `P441C2`) y, para cada una, dos politicas entrenadas en simuladores distintos: Isaac Gym e Isaac Lab. Las politicas se ejecutan en CPU mediante ONNX Runtime, con un bucle de control a 500 Hz y la politica evaluada a 50 Hz, y pueden desplegarse tanto en simulacion MuJoCo como en el robot fisico a traves del SDK `limxsdk`.
 
-La relevancia de esta publicación es práctica: ofrece un conjunto reproducible y abierto (Apache 2.0) de controladores de locomoción para un bípedo comercial, con el código de entrenamiento, simulación y despliegue publicado en GitHub. Es material de referencia para investigadores en robótica con patas y para desarrolladores que quieran validar políticas RL en hardware real sin partir de cero.
+Su relevancia actual radica en que expone publicamente, con licencia Apache 2.0, el resultado de un pipeline sim2real completo de un robot comercial: entrenamiento masivo en simulacion, transferencia a hardware real y una interfaz de despliegue reproducible. Ademas, las variantes `arm/` anaden un brazo de 6 grados de libertad controlado por la misma red, lo que convierte el repositorio en un ejemplo practico de loco-manipulacion extremo a extremo.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Política neuronal RL (observación → acción) exportada a ONNX; codificador separado (`encoder.onnx`) |
+| Arquitectura | Redes neuronales de politica entrenadas con RL (PPO implicito en Isaac Gym / Isaac Lab); arquitectura interna no detallada en la model card |
 | Parametros totales | no disponible |
 | Parametros activos | no aplica (no es MoE) |
-| Longitud de contexto | no aplica (no es un modelo de lenguaje) |
-| Tipos de cuantizacion | no disponible (se distribuye en ONNX de precisión nativa) |
-| Idiomas soportados | en (documentación y model card) |
+| Longitud de contexto | no aplica (politica de control, no modelo de secuencia) |
+| Tipos de cuantizacion | no disponible; pesos distribuidos en ONNX (float) |
+| Idiomas soportados | en, zh (documentacion); las politicas no procesan lenguaje |
 | Licencia | Apache 2.0 |
-| Formato de pesos | ONNX (`policy.onnx` y `encoder.onnx` por variante) |
+| Formato de pesos | ONNX (`policy.onnx`, `encoder.onnx`) + `params.yaml` |
 
-Especificaciones adicionales del despliegue:
+Detalles adicionales de la tabla de familias:
 
-| Parametro | Valor |
-|---|---|
-| Familias incluidas | Point-foot (`PF_TRON1A`, `PF_TRON1B`, `PF_P441A`, `PF_P441B`, `PF_P441C`, `PF_P441C2`), sole-foot (`SF_TRON1A`, `SF_TRON1B`), wheel-foot (`WF_TRON1A`, `WF_TRON1B`) |
-| Articulaciones / acciones | 6 / 6 en point-foot; 8 / 8 en sole-foot y wheel-foot |
-| Entornos de entrenamiento | Isaac Gym (`isaacgym`) e Isaac Lab (`isaaclab`) |
-| Frecuencia de control | 500 Hz (bucle de control) |
-| Frecuencia de política | 50 Hz |
-| Runtime de inferencia | ONNX Runtime en CPU |
-| Simuladores compatibles | MuJoCo (vía `tron1-mujoco-sim`) |
-| Tamaño del repo | 0.0 GB |
+| Familia | Carpetas (`ROBOT_TYPE`) | Articulaciones / acciones |
+|---|---|---|
+| Point-foot | `PF_TRON1A`, `PF_TRON1B`, `PF_P441A`, `PF_P441B`, `PF_P441C`, `PF_P441C2` | 6 / 6 |
+| Sole-foot | `SF_TRON1A`, `SF_TRON1B` | 8 / 8 |
+| Wheel-foot | `WF_TRON1A`, `WF_TRON1B` | 8 / 8 |
+| Sole-foot + brazo 6 DoF | `arm/SF_TRON1A` | 14 / 14 (8 piernas + 6 brazo) |
+| Wheel-foot + brazo 6 DoF | `arm/WF_TRON1A` | 14 / 14 (8 piernas + 6 brazo) |
 
 ## Arquitectura y entrenamiento
 
-Las políticas son redes neuronales entrenadas con aprendizaje por refuerzo en simulación física. Cada variante del robot dispone de dos políticas: una entrenada en Isaac Gym y otra en Isaac Lab, seleccionables mediante la variable `RL_TYPE`. La arquitectura concreta de la red (número de capas, anchura, tipo de observaciones) no se detalla en la model card; solo se especifica que cada política se acompaña de un `encoder.onnx` que forma parte del pipeline de inferencia. El número de parámetros no está disponible.
+Las politicas se entrenan con aprendizaje por refuerzo en dos entornos de simulacion fisica: Isaac Gym y Isaac Lab, ambos de NVIDIA. Para cada modelo se publican dos variantes seleccionables mediante la variable `RL_TYPE` (`isaacgym` o `isaaclab`), lo que permite comparar el comportamiento resultante de cada pipeline de entrenamiento sobre el mismo robot. La model card no especifica el numero de parametros de las redes ni el volumen total de pasos de entrenamiento, por lo que esos datos deben considerarse no disponibles.
 
-El entrenamiento se realiza en los repositorios `tron1-rl-isaacgym` y `tron1-rl-isaaclab`, publicados por el mismo autor. La model card no documenta el número de pasos de entrenamiento, la composición de los datos (que en RL procede de la interacción con el simulador), ni si se aplicaron técnicas de ajuste posteriores como RLHF o DPO, algo que no aplica en este dominio. La innovación destacable es la separación entre política y codificador, y la exportación a ONNX para inferencia en CPU a 50 Hz con un bucle de control a 500 Hz, lo que permite ejecutar el controlador en hardware de bajo coste sin GPU.
+Una innovacion destacable es la separacion en dos redes para las variantes con brazo: un `encoder.onnx` que comprime las ultimas 5 observaciones (405 → 64) y una `policy.onnx` que recibe 81 observaciones mas las 64 del encoder y produce 14 consignas articulares (8 de piernas y 6 del brazo). Esto permite que una unica red mantenga el equilibrio del cuerpo mientras mueve el brazo, es decir, loco-manipulacion integrada en lugar de dos controladores independientes. El bucle de control corre a 500 Hz y la politica se infiere a 50 Hz, una separacion tipica para desacoplar la baja frecuencia de decision de la alta frecuencia de actuacion.
 
 ## Capacidades
 
-- Locomoción bípeda: genera comandos de articulación para caminar, mantenerse en pie y desplazarse en las tres variantes mecánicas del TRON 1.
-- Control en tiempo real: inferencia a 50 Hz dentro de un bucle de control a 500 Hz, ejecutable en CPU con ONNX Runtime.
-- Compatibilidad con tres morfologías: pie de punta (6 articulaciones), pie de suela (8 articulaciones) y pie con rueda (8 articulaciones).
-- Doble procedencia de entrenamiento: políticas entrenadas en Isaac Gym y en Isaac Lab, intercambiables mediante configuración.
-- Despliegue en simulación: integración con MuJoCo a través de `tron1-mujoco-sim`, con reseteo del robot y control por joystick.
-- Despliegue en robot físico: conexión por IP al robot mediante `main.py`, con arranque en L1 + Y y parada en L1 + X (rigidez cero, solo amortiguación).
-- Integración ROS y ROS 2: repositorios de despliegue específicos (`tron1-rl-deploy-ros`, `tron1-rl-deploy-ros2`).
-- No incluye: generación de texto, razonamiento, código, matemáticas, visión, audio, tool calling ni capacidades de agente. Es un controlador de locomoción, no un modelo generativo.
+- Locomocion bipeda en tres morfologias: pie puntual, planta completa y rueda-pie.
+- Marcha en el sitio y desplazamiento controlado por joystick (`robot-joystick`).
+- Control de equilibrio dinamico en tiempo real a 500 Hz de bucle de control.
+- Loco-manipulacion: en las variantes `arm/`, una sola red controla simultaneamente 8 articulaciones de piernas y 6 del brazo.
+- Inferencia en CPU pura mediante ONNX Runtime, sin necesidad de GPU.
+- Compatibilidad con simulacion MuJoCo y con el robot fisico via `limxsdk`.
+- Soporte de dos pipelines de entrenamiento (Isaac Gym e Isaac Lab) intercambiables por configuracion.
+- Interfaz de reinicio y arranque/parada mapeada a botones del mando (Backspace en simulacion; L1 + Y para arrancar, L1 + X para parada con rigidez cero y solo amortiguamiento).
 
 ## Casos de uso
 
-- Validación de políticas en simulación: usar MuJoCo y `tron1-mujoco-sim` para reproducir el comportamiento de la política antes de tocar hardware; el robot se levanta y camina en el sitio, y se controla con el joystick incluido. Adecuado por la separación limpia entre simulador y controlador.
-- Despliegue en el robot TRON 1 físico: ejecutar `main.py <robot-ip>` para conectar el controlador al robot real, con arranque y parada definidos por combinaciones de botones. Adecuado para pruebas de locomoción en laboratorio con un operador entrenado.
-- Investigación en RL para robótica con patas: comparar políticas entrenadas en Isaac Gym frente a Isaac Lab sobre la misma morfología, usando los repositorios de entrenamiento como base para experimentos propios.
-- Integración en stacks ROS/ROS 2: incorporar el controlador en un sistema robótico mayor mediante `tron1-rl-deploy-ros` o `tron1-rl-deploy-ros2`, por ejemplo para coordinar locomoción con percepción o planificación.
-- Evaluación de morfologías: contrastar el comportamiento de las variantes point-foot, sole-foot y wheel-foot sobre el mismo robot para decidir qué configuración mecánica conviene en un escenario concreto.
-- Docencia y prototipado rápido: desplegar un controlador de locomoción bípeda funcional en CPU sin GPU, útil para cursos de robótica o para prototipos que necesiten un baseline de marcha.
-- Base para ajuste fino: partir de las políticas publicadas y reentrenar en Isaac Gym o Isaac Lab para adaptarlas a nuevas condiciones (terrenos, cargas, comandos de velocidad).
+- Investigacion en sim2real: permite reproducir un pipeline completo de entrenamiento en Isaac Gym/Lab y despliegue en MuJoCo y hardware real, sirviendo como banco de pruebas para estudiar la brecha simulacion-realidad con una plataforma comercial documentada.
+- Desarrollo de controladores de locomocion personalizados: las politicas publicadas actuan como linea base contra la que comparar nuevos entrenamientos, gracias a la separacion clara entre `params.yaml`, encoder y policy.
+- Demostraciones y teleoperacion: el Space `tron1-teleop` ejecuta las politicas `PF_TRON1A`, `SF_TRON1A` y `WF_TRON1A` en MuJoCo en el navegador, con control WASD, lo que facilita divulgacion y validacion rapida sin instalacion.
+- Loco-manipulacion con brazo: las variantes `arm/SF_TRON1A` y `arm/WF_TRON1A` permiten prototipar tareas de alcance y manipulacion manteniendo el equilibrio, desplegables con `tron1-rl-deploy-arm` sobre ROS Noetic y Gazebo.
+- Docencia en robotica y RL: el repositorio ofrece un caso real de politicas ONNX ejecutables en CPU, adecuado para practicas de aprendizaje por refuerzo aplicado a robots con patas.
+- Evaluacion de morfologias: al incluir pie puntual, planta y rueda-pie con el mismo framework, permite comparar estabilidad, consumo y comportamiento entre configuraciones sobre el mismo robot.
+- Integracion en pipelines de investigacion con ROS: la variante con brazo se despliega en ROS Noetic, lo que facilita conectarse a herramientas de percepcion y planificacion existentes.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye metricas de recompensa, tasas de exito, velocidad de marcha ni comparaciones cuantitativas entre las variantes Isaac Gym e Isaac Lab.
 
 ## Requisitos de hardware
 
-- VRAM estimada: no aplica; la inferencia se ejecuta en CPU con ONNX Runtime.
-- GPU recomendadas: no se requiere GPU para inferencia. El entrenamiento (en los repositorios de Isaac Gym e Isaac Lab) sí requiere GPU compatible con dichos entornos, pero la model card no especifica modelos concretos.
-- CPU: Linux x86_64 o aarch64, Python 3. Suficiente para ejecutar el controlador a 50 Hz.
-- ¿Cabe en hardware de consumo? Sí, al ejecutarse en CPU; no se especifican requisitos mínimos de CPU ni memoria.
-- Opciones de despliegue: ONNX Runtime (inferencia), MuJoCo (simulación), `tron1-rl-deploy-python` (robot físico), `tron1-rl-deploy-ros` y `tron1-rl-deploy-ros2`.
-- Latencia y throughput: la política corre a 50 Hz y el bucle de control a 500 Hz; no se publican cifras de latencia por inferencia ni de throughput.
+- Inferencia en CPU: las politicas estan pensadas para ejecutarse con ONNX Runtime en CPU, en Linux x86_64 o aarch64, con Python 3.
+- VRAM: no aplica; no se requiere GPU para la inferencia. El tamano del repositorio es de 0.0 GB segun Hugging Face, coherente con redes de control ligeras.
+- GPU recomendadas: no disponibles ni necesarias para el despliegue; el entrenamiento original se realizo en Isaac Gym / Isaac Lab, que requieren GPU NVIDIA, aunque la model card no especifica modelos concretos.
+- Cabe en GPU de consumo: si, en el sentido de que la inferencia no necesita GPU; para reentrenar haria falta una GPU compatible con Isaac Gym/Lab (no detallada).
+- Opciones de despliegue: ONNX Runtime (CPU), MuJoCo para simulacion, `limxsdk` para el robot real, y ROS Noetic + Gazebo para las variantes con brazo.
+- Latencia y throughput: bucle de control a 500 Hz y politica a 50 Hz; no se publican latencias absolutas por inferencia.
 
 ## Comparativa con modelos similares
 
-| Modelo | Tipo | Morfología | Formato | Licencia | Contexto / parámetros |
+| Modelo | Tipo | Morfologias | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| TRON 1 RL Locomotion Policies (LimX) | Políticas RL de locomoción | Bípedo TRON 1 (PF, SF, WF) | ONNX | Apache 2.0 | No aplica / no disponible |
-| Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
+| LimX TRON 1 RL Locomotion Policies | Politicas RL de locomocion | Point-foot, sole-foot, wheel-foot, con y sin brazo | ONNX | Apache 2.0 | Hugging Face, ModelScope, GitHub |
+| Politicas de otros fabricantes de bipedos | Politicas RL de locomocion | no disponible | no disponible | no disponible | no disponible |
 
-No se dispone en la información proporcionada de otros conjuntos de políticas de locomoción directamente comparables con especificaciones verificables.
+No se dispone en la informacion proporcionada de datos sobre politicas equivalentes de otros fabricantes (Unitree, Boston Dynamics, Agility Robotics u otros) que permitan una comparacion cuantitativa de parametros, contexto o rendimiento. La comparativa queda limitada a la disponibilidad y licencia de este repositorio.
 
 ## Limitaciones y advertencias
 
-- No es un modelo de lenguaje: no genera texto, no razona, no responde preguntas ni procesa imágenes o audio. Cualquier uso fuera del control de locomoción del TRON 1 no está soportado.
-- Específico del hardware: las políticas están entrenadas para las morfologías exactas del TRON 1 (PF, SF, WF) y no son transferibles a otros robots sin reentrenamiento.
-- Sin métricas publicadas: no hay benchmarks de rendimiento, tasas de éxito ni comparativas cuantitativas en la model card; la evaluación queda a cargo del usuario.
-- Riesgo en hardware real: la model card advierte explícitamente de probar primero en simulación, contar con un operador entrenado y mantener el paro de emergencia al alcance. La parada se realiza en L1 + X con rigidez cero y solo amortiguación.
-- Dependencia de calibración: el controlador espera el estado de calibración 0 antes de arrancar; una calibración incorrecta puede impedir el despliegue.
-- Idiomas: la documentación está únicamente en inglés.
-- Licencia: Apache 2.0 permite uso comercial, pero el usuario debe verificar el cumplimiento de las licencias de las dependencias (Isaac Gym, Isaac Lab, MuJoCo, ONNX Runtime) y de los repositorios asociados.
-- Repositorio espejo: los archivos se copian tal cual desde `tron1-rl-deploy-python`, que es la fuente de verdad; pueden existir desfases entre el espejo de Hugging Face y el repositorio original.
-- Sin datos de sesgo ni alucinación aplicables: al no ser un modelo generativo, estas categorías no aplican; el riesgo relevante es el fallo de control en el robot físico.
+- No es un modelo de lenguaje ni de vision: no procesa texto, imagenes ni audio; cualquier uso fuera del control motor del TRON 1 carece de sentido.
+- Las politicas estan acopladas a la morfologia y a las articulaciones concretas del TRON 1; no son transferibles directamente a otros robots sin reentrenamiento.
+- La model card no documenta sesgos, tasas de fallo ni condiciones de operacion fuera de las nominales; el comportamiento ante terrenos irregulares, empujes o cargas no esta cuantificado.
+- Riesgo de seguridad en hardware real: el despliegue requiere probar primero en simulacion, contar con un operador entrenado y mantener el paro de emergencia accesible; la parada se realiza con L1 + X en rigidez cero y solo amortiguamiento.
+- Dependencia de un SDK propietario (`limxsdk`) y de un wheel especifico por plataforma para el despliegue en el robot.
+- La licencia Apache 2.0 permite uso comercial, pero el repositorio no incluye garantias ni soporte; las consultas de compra y colaboracion se canalizan por `opensource@limxdynamics.com`.
+- Los archivos se sincronizan desde GitHub, que se declara como fuente de verdad; pueden existir desfases entre el repositorio de Hugging Face y el codigo de despliegue.
+- No se publican numeros de parametros ni de entrenamiento, lo que dificulta auditar el coste computacional del reentrenamiento.
 
 ## Enlaces
 
 - Hugging Face: https://huggingface.co/limxdynamics/tron1-rl-locomotion-policies
-- Repositorio de despliegue (fuente de verdad): https://github.com/limxdynamics/tron1-rl-deploy-python
+- Space de teleoperacion: https://huggingface.co/spaces/limxdynamics/tron1-teleop
+- ModelScope: https://www.modelscope.cn/models/LimXDynamics/tron1-rl-locomotion-policies
+- Despliegue Python: https://github.com/limxdynamics/tron1-rl-deploy-python
+- Despliegue con brazo (ROS Noetic + Gazebo): https://github.com/limxdynamics/tron1-rl-deploy-arm
 - Simulador MuJoCo: https://github.com/limxdynamics/tron1-mujoco-sim
-- Descripción del robot (URDF / MJCF): https://github.com/limxdynamics/tron1-robot-description
-- Entrenamiento en Isaac Gym: https://github.com/limxdynamics/tron1-rl-isaacgym
-- Entrenamiento en Isaac Lab: https://github.com/limxdynamics/tron1-rl-isaaclab
-- Despliegue ROS: https://github.com/limxdynamics/tron1-rl-deploy-ros
-- Despliegue ROS 2: https://github.com/limxdynamics/tron1-rl-deploy-ros2
-- Organización en Hugging Face: https://huggingface.co/limxdynamics
-- Organización en GitHub: https://github.com/limxdynamics
-- Sitio web: https://www.limxdynamics.com/en
-- Contacto comercial: opensource@limxdynamics.com
+- Descripcion del robot (URDF / MJCF): https://github.com/limxdynamics/tron1-robot-description
+- Entrenamiento Isaac Gym: https://github.com/limxdynamics/tron1-rl-isaacgym
+- Entrenamiento Isaac Lab: https://github.com/limxdynamics/tron1-rl-isaaclab
+- Contacto: opensource@limxdynamics.com

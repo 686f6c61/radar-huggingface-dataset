@@ -2,88 +2,95 @@
 
 ## Resumen
 
-YokaiOfDusk/Qwen3.6-27b-A3B-Heretic-Ru es un modelo de lenguaje derivado por el usuario YokaiOfDusk a partir de HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive, que a su vez parte de la familia Qwen3.6 con arquitectura de mezcla de expertos (MoE). El nombre indica una variante orientada al ruso ("Ru") y con un ajuste de tipo "Heretic", denominacion habitual en la comunidad para finetunes que eliminan los rechazos y el alineamiento de seguridad del modelo original. La nomenclatura "27b-A3B" sugiere 27 mil millones de parametros totales con aproximadamente 3 mil millones activos por token, aunque el modelo base declarado figura como "35B-A3B", por lo que existe una discrepancia entre el nombre y la referencia que el autor no documenta.
+Qwen3.6-27B-A3B-Heretic-Ru es una versión podada y cuantizada del modelo `HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive`, publicada por el usuario YokaiOfDusk. Se trata de un modelo de arquitectura Mixture of Experts (MoE) con 26.602.304.128 parámetros totales (unos 26,6 mil millones), del que se han eliminado 64 de los 256 expertos originales (configuración P192) mediante una puntuación de utilidad calibrada con un corpus ruso de 526.000 tokens. El objetivo declarado es reducir el tamaño lo suficiente para que el modelo quepa íntegramente en una GPU de 16 GB de VRAM sin pérdida apreciable de calidad en ruso.
 
-El modelo se publica bajo licencia Apache 2.0 y esta etiquetado exclusivamente para el idioma ruso. No incluye pipeline declarado, no tiene descargas ni interacciones en el momento de la consulta y su model card se limita a los metadatos de licencia e idioma, sin documentacion tecnica adicional. Esto lo convierte en un artefacto de investigacion de trazabilidad limitada: se desconoce el procedimiento exacto de finetune, los datos utilizados y cualquier evaluacion de calidad.
+El modelo está orientado a generación de texto conversacional y roleplay en ruso, sin restricciones de contenido (uncensored, etiquetado 18+), y se distribuye exclusivamente en formato GGUF para llama.cpp. La poda de expertos es irreversible y se combinó con un esquema de cuantización tipo TTQ (Q3_K_M para el archivo principal), lo que da como resultado un fichero de 12,36 GiB que mantiene un uso de 8 expertos por token (el valor original de la arquitectura).
 
-Su relevancia es acotada y experimental. Resulta de interes para quienes investigan tecnicas de "abliteration" o desalineamiento de modelos, para estudios de comportamiento multilingue en ruso y para experimentacion con variantes MoE de bajo coste de inferencia, pero no constituye una opcion recomendable para produccion sin una evaluacion previa propia.
+Su relevancia actual radica en la demostración práctica de que la poda selectiva de expertos en modelos MoE, guiada por una matriz de importancia (imatrix) específica de un idioma, permite reducir el peso del modelo un 22 % y aumentar el throughput hasta unas 142 t/s en LM Studio, con una divergencia KL frente a la referencia Q8_K_P que el autor sitúa en el rango de 0,050-0,059 en ruso.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Mezcla de expertos (MoE) tipo transformer, heredada de la familia Qwen3.6 (detalle no disponible) |
-| Parametros totales | 27B segun el nombre del modelo; el base declarado figura como 35B-A3B (discrepancia no resuelta) |
-| Parametros activos | Aproximadamente 3B por token (segun la nomenclatura A3B) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible |
-| Idiomas soportados | Ruso (etiqueta `ru`) |
+| Arquitectura | Mixture of Experts (MoE) tipo transformer, base Qwen3.6, podada a 192 expertos |
+| Parámetros totales | 26.602.304.128 (26,6 B) |
+| Parámetros activos | 8 expertos por token (expert_used_count = 8); número de parámetros activos no disponible |
+| Longitud de contexto | Hasta 128k con caché KV en q8 (según el autor, requiere offload); no se especifica el contexto nativo del modelo base |
+| Tipos de cuantización | GGUF Q3_K_M (12,36 GiB) y Q4_K_M (15,52 GiB); esquema tipo TTQ con hasta Q3_K/IQ4_XS en los expertos |
+| Idiomas soportados | Ruso (principal) e inglés (secundario, con degradación declarada) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | no disponible |
+| Formato de pesos | GGUF (llama.cpp) |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura corresponde a un transformer con mezcla de expertos, segun la convencion de nombres de la familia Qwen3.6 (sufijo A3B para expertos activos). No obstante, la model card no aporta ningun detalle sobre el numero de capas, la dimension oculta, el numero de expertos, el mecanismo de enrutamiento ni la atencion utilizada. Tampoco se especifica la longitud de contexto nativa, un dato critico en esta familia de modelos.
+El modelo parte de una arquitectura MoE de tipo transformer con 256 expertos y un enrutamiento que activa 8 expertos por token. Sobre esa base, el autor aplicó una poda de 64 expertos (los considerados menos relevantes para ruso) puntuando cada experto con una fórmula que combina la suma de las segundas componentes de la matriz de enrutamiento (`in_sum2`) con la norma al cuadrado de las filas correspondientes de la matriz `W_down`. La calibración se realizó con 526.000 tokens de un corpus ruso, y la evaluación con 40 fragmentos de 512 tokens.
 
-Respecto al entrenamiento, solo se conoce la cadena de derivacion: el modelo parte de HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive, un finetune ya desalineado del Qwen3.6 original, y sobre el se aplica un ajuste adicional etiquetado como "Heretic" y orientado al ruso. Se desconoce el volumen de tokens de entrenamiento, la composicion del dataset, si se emplearon tecnicas de RLHF, DPO o simplemente SFT, y si hubo mezcla de datos en ruso o traduccion de instrucciones. No se documenta ninguna innovacion tecnica adicional.
+No se documenta en la información disponible ningún proceso de entrenamiento adicional, fine-tuning, RLHF o DPO sobre el modelo podado: la intervención se limita a la poda de expertos más la cuantización tipo TTQ. El autor justifica que el esquema TTQ funciona bien sobre MoE porque cada token solo activa un subconjunto de expertos, y advierte explícitamente que el mismo recetario degrada modelos densos (menciona un caso de 9B). También se probaron configuraciones de `expert_used_count` entre 4 y 16, concluyendo que 12 y 16 empeoraban el ruso (hasta +6 % de perplejidad) y eran más lentas, por lo que se mantuvo el valor original de 8.
 
 ## Capacidades
 
-- Generacion de texto en ruso, idioma para el que esta etiquetado el modelo.
-- Razonamiento y respuesta a instrucciones heredados del modelo base Qwen3.6, sin evaluacion publicada en esta variante.
-- Generacion de codigo y matematicas: presumiblemente conservadas del base, aunque no verificadas ni documentadas.
-- Modo "uncensored": el ajuste elimina total o parcialmente los rechazos de seguridad del modelo original, lo que permite generar contenido que el base rechazaria.
-- Soporte de tool calling y function calling: no disponible (no documentado).
-- Capacidades de agente y razonamiento multi-paso: no disponible (no documentado).
-- Capacidades multilingues: limitadas al ruso segun la etiqueta del autor; el comportamiento en otros idiomas no esta verificado.
-- Capacidades especiales (vision, audio, thinking mode): no disponible.
+- Generación de texto conversacional en ruso, con orientación explícita a roleplay y contenido NSFW (modelo sin censura, 18+).
+- Generación de texto en inglés, aunque con perplejidad degradada respecto al modelo original.
+- Conversación multi-turno con ventana de contexto potencialmente larga (hasta 128k con caché KV q8, con requisitos de memoria elevados).
+- Razonamiento y generación de texto general heredados del modelo base Qwen3.6.
+- Compatibilidad con endpoints (etiqueta `endpoints_compatible` en Hugging Face), lo que facilita su despliegue vía API.
+- No se documenta en la información disponible soporte de tool calling, function calling, agentes, visión, audio ni modo thinking explícito.
 
 ## Casos de uso
 
-- Investigacion sobre desalineamiento y abliteration: el modelo sirve como objeto de estudio para medir como evoluciona la tasa de rechazo y la calidad del texto tras aplicar tecnicas de eliminacion de alineamiento sobre un MoE ya modificado, comparando contra el base HauhauCS.
-- Generacion de texto creativo en ruso sin restricciones tematicas: escritura de ficcion, dialogos o narrativa que el modelo original rechazaria por politicas de contenido; requiere revision editorial humana por la ausencia de filtros.
-- Experimentacion con inferencia MoE de bajo coste: con unos 3B parametros activos por token, el modelo permite probar tecnicas de despliegue eficiente (vLLM, SGLang) en entornos con presupuesto de GPU limitado, siempre que se confirme la arquitectura real.
-- Evaluacion comparativa de calidad en ruso: uso como linea base en benchmarks internos de generacion en ruso frente a modelos como Qwen, Gemma o Llama, para cuantificar la degradacion introducida por el finetune.
-- Prototipado de asistentes conversacionales en ruso: pruebas de concepto de chatbots multi-turno en un entorno controlado y no expuesto al publico, dado que no hay garantias de seguridad ni de contexto.
-- Estudio de sesgos y toxicidad: analisis de como un finetune sin alineamiento afecta a la produccion de contenido sesgado o danino en ruso, util para trabajos de seguridad de IA.
-- Dataset augmentation controlada: generacion de datos sinteticos en ruso para tareas de investigacion, con filtrado posterior obligatorio.
+- Roleplay y narrativa interactiva en ruso: el modelo está afinado y calibrado para este escenario, sin filtros de contenido, lo que permite conversaciones de personaje sostenidas y temáticas adultas sin rechazos.
+- Despliegue en GPU de consumo de 16 GB: el archivo Q3_K_M (12,36 GiB) cabe íntegramente en VRAM, lo que permite servir un MoE de 26,6 B en hardware como una RTX 4060 Ti 16 GB o RTX 4080 sin offload a CPU.
+- Prototipado rápido de asistentes conversacionales en ruso: con ~142 t/s en LM Studio, es adecuado para iterar sobre prompts y flujos de diálogo con latencia baja.
+- Investigación sobre poda de expertos: sirve como caso de estudio reproducible de cómo una imatrix específica de idioma permite eliminar el 25 % de los expertos con una divergencia KL de 0,050-0,059 frente a Q8_K_P.
+- Generación de contenido creativo en ruso (ficción, guiones, diálogos) en entornos donde se requiere volumen y velocidad más que precisión factual.
+- Evaluación comparativa de cuantizaciones: al ofrecer Q3_K_M y Q4_K_M del mismo merge, permite medir el compromiso entre tamaño, velocidad (142 t/s frente a 108 t/s del Q4) y calidad en tareas rusas.
+- Fine-tuning o experimentación local en llama.cpp: el formato GGUF y la licencia Apache 2.0 facilitan su uso en pipelines de investigación sin restricciones comerciales.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+Datos publicados por el autor en la model card (KLD y perplejidad frente a una referencia Q8_K_P con 256 expertos; calibración con 526k tokens de ruso, evaluación con 40 fragmentos de 512 tokens):
+
+| Variante | Tamaño | KLD ru (base) | KLD ru (holdout) | PPL en | Velocidad (t/s) |
+|---|---|---|---|---|---|
+| TTQ Q3_K_M original (sin podar) | 15,84 GiB | 0,053 | 0,046 | 1,015 | ~125-130 |
+| Qwen-Q4 | 15,52 GiB | 0,032 | 0,027 | 1,121 | 108 |
+| Qwen-TTQ-Q3 (esta versión podada) | 12,36 GiB | 0,059 | 0,050 | 1,126 | 142 |
+
+No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u otros) en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible de forma oficial. Como referencia orientativa para un MoE de ~27B totales y ~3B activos, en cuantizacion de 4 bits se requeririan aproximadamente 15-18 GB solo para pesos, mas overhead de contexto y cache KV; en FP16, alrededor de 54 GB. Estas cifras son estimaciones basadas en el tamano declarado y no en mediciones del autor.
-- GPU recomendadas: no documentadas. Por tamano, una RTX 4090 (24 GB) podria alojar el modelo en 4 bits con contexto limitado; para FP16 serian necesarias A100 80 GB, H100 o multiples GPU.
-- Compatibilidad con GPU de consumo: probable en cuantizaciones de 4-5 bits en GPUs de 24 GB o superiores, condicionado a que existan pesos GGUF publicados, lo cual no esta confirmado.
-- Opciones de despliegue: no documentadas. Por la arquitectura MoE se podria intentar vLLM o SGLang si la arquitectura es compatible; llama.cpp u Ollama requeririan conversiones GGUF no publicadas por el autor.
-- Latencia y throughput: no disponibles.
+- VRAM estimada: 12,36 GiB para el archivo Q3_K_M (cabe completo en 16 GB) y 15,52 GiB para Q4_K_M (no cabe con caché KV en 16 GB; requiere 24 GB o offload parcial).
+- GPU recomendadas: RTX 4060 Ti 16 GB, RTX 4080, RTX 4090 (24 GB para Q4_K_M), A100 y H100 para despliegues de mayor concurrencia.
+- Cabe en GPU de consumo: sí, con el cuantizado Q3_K_M en tarjetas de 16 GB; el Q4_K_M requiere 24 GB o reparto entre VRAM y RAM.
+- Opciones de despliegue: llama.cpp (llama-cli, llama-server), LM Studio y cualquier runtime compatible con GGUF; la etiqueta `endpoints_compatible` sugiere compatibilidad con servidores de inferencia tipo API.
+- Latencia y throughput: ~142 t/s con Q3_K_M en LM Studio, frente a ~125-130 t/s del TTQ Q3_K_M original y 108 t/s del Qwen-Q4, según mediciones del autor.
+- Contexto largo: el autor advierte que el caché KV a 128k consume VRAM más rápido de lo que ahorra la poda, por lo que el contexto extendido exige offload.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Idiomas | Estado |
+| Modelo | Parámetros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| YokaiOfDusk/Qwen3.6-27b-A3B-Heretic-Ru | ~27B totales / ~3B activos (segun nombre) | no disponible | Apache 2.0 | Ruso | Publicado, sin descargas ni evaluacion |
-| HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive | ~35B totales / ~3B activos | no disponible | no disponible | no disponible | Modelo base declarado |
-| Qwen3.6 (familia original) | Variantes MoE de ~30B | no disponible | Apache 2.0 (segun familia) | Multilingue | Modelo de referencia upstream |
-
-La comparativa cuantitativa no es posible: no hay benchmarks publicados para esta variante ni datos tecnicos del modelo base en la informacion disponible.
+| Qwen3.6-27B-A3B-Heretic-Ru (esta ficha) | 26,6 B (MoE, 8 expertos/token) | hasta 128k (con offload) | Apache 2.0 | GGUF Q3_K_M / Q4_K_M | Podado a 192 expertos, orientado a ruso, uncensored |
+| HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive | ~35 B (MoE, 256 expertos) | no disponible | Apache 2.0 | safetensors / GGUF | Modelo base sin podar; mayor tamaño y menor velocidad |
+| TokenTinkerer/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive-TTQ-GGUF | ~35 B (MoE, 256 expertos) | no disponible | Apache 2.0 | GGUF TTQ | Receta de cuantización TTQ sobre el base, sin poda; ~125-130 t/s en Q3_K_M |
+| YokaiOfDusk/Qwen3.8-9b-distil-ru | ~9 B (denso) | no disponible | no disponible | GGUF | Alternativa densa con vocabulario reducido para GPUs más pequeñas |
 
 ## Limitaciones y advertencias
 
-- Ausencia total de documentacion tecnica: la model card no describe arquitectura, datos, entrenamiento ni evaluaciones, lo que impide validar el modelo.
-- Discrepancia de parametros: el nombre indica 27B y el base declarado 35B-A3B; no se aclara si hubo poda, reentrenamiento o si el nombre es erroneo.
-- Modelo "uncensored": el finetune elimina o reduce los rechazos de seguridad, por lo que puede generar contenido danino, ilegal o sexualmente explicito sin filtros; no apto para aplicaciones orientadas al publico sin moderacion adicional.
-- Riesgo elevado de alucinacion: sin evaluacion y con un finetune agresivo sobre un base ya modificado, la fidelidad factual no esta garantizada.
-- Idioma limitado al ruso segun el autor; el rendimiento en castellano u otros idiomas es desconocido y probablemente degradado.
-- Contexto desconocido: no se puede planificar su uso en tareas de contexto largo sin medir previamente la ventana efectiva.
-- Licencia Apache 2.0 permite uso comercial, pero el autor no ofrece garantias y la cadena de derivacion incluye un modelo "uncensored" de procedencia y terminos no verificados.
-- Cero descargas y cero interacciones: no hay evidencia de uso comunitario ni de que el modelo funcione correctamente.
-- Fecha de creacion futura (2026-11-03) en los metadatos, lo que sugiere posibles inconsistencias en el registro del repositorio.
+- El inglés está degradado: perplejidad de 1,126 frente a 1,015 del original; el autor recomienda usar la versión no podada para tareas en inglés.
+- La poda es irreversible: los 64 expertos eliminados no están en el archivo y no pueden recuperarse ni completarse a posteriori.
+- Contenido sin censura y explícitamente etiquetado 18+: puede generar material NSFW y no incorpora salvaguardas de contenido; requiere moderación externa en producción.
+- Riesgo de alucinación no cuantificado: no se han publicado evaluaciones de factualidad ni benchmarks de razonamiento en la información disponible.
+- El contexto de 128k es teórico en la práctica: el caché KV a longitudes largas excede la VRAM disponible en tarjetas de 16 GB y obliga a offload, con la consiguiente caída de rendimiento.
+- El rendimiento está medido en un único entorno (LM Studio) y con prompts de ruso; no hay datos de throughput con concurrencia ni de latencia en servidores tipo vLLM/TGI.
+- Aunque la licencia es Apache 2.0, el modelo deriva de una cadena de modelos uncensored; conviene revisar las condiciones del modelo base y de la receta TTQ de TokenTinkerer antes de uso comercial.
+- El modelo está especializado en ruso: su utilidad fuera de ese idioma es limitada y no se documentan capacidades multilingües adicionales.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/YokaiOfDusk/Qwen3.6-27b-A3B-Heretic-Ru
-- Modelo base declarado: https://huggingface.co/HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive
-- Paper, blog, repositorio o demo adicionales: no disponible
+- Modelo base: https://huggingface.co/HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive
+- Receta y cuantizados TTQ de referencia: https://huggingface.co/TokenTinkerer/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive-TTQ-GGUF
+- Modelo denso alternativo del mismo autor: https://huggingface.co/YokaiOfDusk/Qwen3.8-9b-distil-ru
+- Fichero de integridad SHA256SUMS: incluido en el repositorio del modelo (SHA256SUMS)

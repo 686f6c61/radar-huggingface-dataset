@@ -2,75 +2,93 @@
 
 ## Resumen
 
-El modelo `furiosa-ai/Qwen3-VL-2B-Thinking` es una distribución oficial de FuriosaAI del modelo vision-language Qwen3-VL-2B-Thinking, empaquetada con un Furiosa Executable Bundle (FXB) para su ejecución en el hardware acelerador RNGD de FuriosaAI mediante el framework Furiosa-LLM. Se trata de un modelo denso de 2.127 millones de parámetros que combina un codificador visual con un decodificador transformer denso, y que incorpora las innovaciones de la serie Qwen3-VL: posicionamiento Interleaved-MRoPE, fusión de características multinivel DeepStack y soporte nativo para tool calling. La edición Thinking genera una cadena de razonamiento explícita antes de la respuesta final, lo que la hace adecuada para tareas que requieren deliberación.
+Qwen3-VL-2B-Thinking es un modelo denso de visión-lenguaje de 2.127 millones de parámetros desarrollado por el equipo Qwen (Alibaba). Combina un codificador visual con un decodificador transformer denso y emplea embeddings posicionales Interleaved-MRoPE junto con fusión multinivel de características DeepStack. Este repositorio concreto, publicado por furiosa-ai, empaqueta los pesos originales junto con un Furiosa Executable Bundle (FXB) para ejecutar el modelo en aceleradores FuriosaAI RNGD mediante la librería Furiosa-LLM.
 
-La relevancia de esta versión radica en que ofrece un despliegue optimizado y precompilado para el hardware RNGD de FuriosaAI, eliminando la necesidad de compilar el modelo manualmente. El modelo base, desarrollado por Alibaba Qwen, está liberado bajo licencia Apache 2.0, lo que permite uso comercial sin restricciones. Aunque esta distribución concreta está pensada para el ecosistema Furiosa, el modelo subyacente también puede ejecutarse con otros frameworks como vLLM, SGLang o Transformers, tal y como indica la propia model card.
+La variante Thinking emite una cadena de razonamiento explícita antes de la respuesta final, lo que la hace adecuada para tareas que requieren razonamiento visual multi-paso, análisis de documentos y comprensión de vídeo. El modelo acepta entradas multimodales (imagen y texto) y produce texto, con soporte nativo de tool calling y una API compatible con OpenAI.
+
+Su relevancia actual radica en dos factores: por un lado, ofrece capacidades de razonamiento visual en un tamaño reducido de 2B parámetros, lo que facilita el despliegue en hardware de inferencia especializado; por otro, la integración con Furiosa-LLM y RNGD proporciona una alternativa de aceleración no-GPU para cargas de trabajo multimodales en producción.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Qwen3-VL (dense, vision encoder + transformer decoder) |
-| Parametros totales | 2.127.532.032 (2,1B) |
-| Parametros activos | No aplica (modelo denso, no MoE) |
-| Longitud de contexto | No disponible |
-| Tipos de cuantizacion | Sin cuantizacion (precision original de los pesos) |
-| Idiomas soportados | No disponible |
+| Arquitectura | Qwen3-VL (transformer denso con codificador visual) |
+| Parametros totales | 2.127.532.032 |
+| Parametros activos | no disponible (modelo denso, no MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | sin cuantización (misma precisión que los pesos upstream) |
+| Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | Safetensors + Furiosa Executable Bundle (FXB) |
+| Formato de pesos | safetensors + Furiosa Executable Bundle (FXB) |
 
 ## Arquitectura y entrenamiento
 
-El modelo sigue la arquitectura Qwen3-VL, que combina un codificador visual con un decodificador transformer denso. Emplea posicionamiento Interleaved-MRoPE, que permite intercalar embeddings posicionales de imagen y texto, y DeepStack, un mecanismo de fusion de caracteristicas multinivel que mejora la comprension de imagenes y videos. La edicion Thinking incorpora un modo de razonamiento que genera una cadena de pensamiento explicita antes de la respuesta final, separada en el campo `reasoning` de la API.
+El modelo sigue la arquitectura Qwen3-VL en su variante densa: un codificador visual acoplado a un decodificador transformer denso. Incorpora Interleaved-MRoPE como esquema de embeddings posicionales y DeepStack para la fusión de características visuales a múltiples niveles, lo que permite al modelo integrar información visual a distintas escalas de abstracción. La variante Thinking genera una cadena de razonamiento explícita antes de la respuesta final, que Furiosa-LLM separa mediante el parser de razonamiento `qwen3`.
 
-Los datos de entrenamiento no estan disponibles en la informacion proporcionada. El modelo base fue desarrollado por Alibaba Qwen y posteriormente adaptado por FuriosaAI para su hardware. No se menciona el uso de RLHF o DPO en la documentacion consultada. La distribucion FuriosaAI no aplica cuantizacion: los pesos se mantienen en la misma precision que el modelo original.
+No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas de RLHF o DPO en la información proporcionada. El repositorio de furiosa-ai no aplica cuantización: los pesos se ejecutan en la misma precisión que los originales de Qwen. En hardware RNGD, el modelo se despliega con un tamaño de paralelismo tensorial de 8 PEs, que corresponde a una única tarjeta RNGD (8 PEs por tarjeta).
 
 ## Capacidades
 
-- Vision-lenguaje multimodal: acepta mensajes con partes de contenido `image_url` junto a texto, siguiendo el formato de OpenAI.
-- Razonamiento con cadena de pensamiento: la edicion Thinking emite un razonamiento explicito que Furiosa-LLM separa mediante el parser `qwen3`.
-- Tool calling: soporta llamadas a funciones mediante el parser `hermes`, compatible con la serie Qwen3.
-- Comprension visual avanzada: OCR, analisis de documentos y graficos, razonamiento espacial y comprension de video (segun la model card).
-- API compatible con OpenAI: expone endpoints `/v1/chat/completions` con soporte para streaming y no streaming.
-- Procesamiento de imagenes por URL remota, base64 o rutas locales (estas ultimas requieren configuracion adicional).
+- Generación de texto y razonamiento: emite cadena de pensamiento explícita antes de la respuesta final (modo Thinking).
+- Comprensión visual: procesa imágenes junto con texto para tareas de descripción, análisis y respuesta a preguntas visuales.
+- OCR y análisis de documentos: lectura de texto en imágenes, análisis de gráficos y tablas.
+- Razonamiento espacial: interpretación de relaciones espaciales en imágenes.
+- Comprensión de vídeo: procesamiento de contenido audiovisual junto con texto.
+- Tool calling / function calling: soporte nativo mediante el parser `hermes`, con `--enable-auto-tool-choice`.
+- API compatible con OpenAI: expone endpoints `/v1/chat/completions` con mensajes multimodales estilo OpenAI (`image_url`).
+- Soporte de imágenes remotas, base64 inline y rutas locales (`file://` con `--allowed-local-media-path`).
+- Control de acceso a medios: restricción de dominios remotos (`--allowed-media-domains`) y límite de imágenes por prompt (`--image-limit-per-prompt`).
+- Separación de razonamiento y respuesta: campo `reasoning` en respuestas no streaming y `delta.reasoning` en streaming.
 
 ## Casos de uso
 
-- Analisis de documentos e imagenes en entornos empresariales: el modelo puede extraer texto, tablas y graficos de capturas o PDFs, gracias a sus capacidades de OCR y comprension de documentos. Se integraria mediante la API OpenAI-compatible de Furiosa-LLM.
-- Atencion al cliente con soporte visual: permite que un agente conversacional reciba capturas de pantalla o fotos de productos y responda con instrucciones o diagnosticos, aprovechando el modo Thinking para razonar antes de responder.
-- Agentes autonomos con tool calling: al soportar llamadas a funciones, puede integrarse en pipelines que consulten bases de datos, APIs externas o ejecuten acciones, combinando vision y razonamiento.
-- Asistencia en educacion y formacion: puede explicar diagramas, resolver problemas matematicos visuales o describir figuras, generando una cadena de razonamiento que facilita la comprension del proceso.
-- Moderacion de contenido visual: analiza imagenes para detectar texto inapropiado o elementos visuales problematicos, con la ventaja de poder razonar sobre el contexto.
-- Prototipado rapido de aplicaciones multimodales: al estar precompilado para RNGD, permite desplegar un servidor de inferencia en minutos con `furiosa-llm serve`, ideal para pruebas de concepto.
+- Análisis de documentos y OCR automatizado: el modelo puede extraer texto y estructura de imágenes de documentos, facturas o formularios, procesando cada imagen mediante el campo `image_url` de la API compatible con OpenAI. Adecuado para pipelines de digitalización donde se requiere interpretación semántica además de OCR.
+- Asistencia en atención al cliente con soporte visual: gestión de conversaciones multi-turno donde el usuario adjunta capturas de pantalla o fotos de productos, gracias a la combinación de entrada multimodal y tool calling para consultar sistemas internos.
+- Análisis de gráficos e informes financieros: interpretación de gráficas y tablas en imágenes para extraer tendencias y responder preguntas analíticas, con la cadena de razonamiento accesible por separado para auditoría.
+- Comprensión de vídeo para moderación o catalogación: procesamiento de contenido audiovisual para generar descripciones, detectar elementos relevantes o clasificar escenas, aprovechando la capacidad de comprensión de vídeo del modelo.
+- Agentes multimodales con razonamiento multi-paso: integración en flujos de agente donde el modelo recibe imágenes, razona sobre ellas y ejecuta llamadas a herramientas mediante el parser `hermes`, con el razonamiento separado en el campo `reasoning` para trazabilidad.
+- Despliegue en infraestructura FuriosaAI RNGD: ejecución en aceleradores RNGD con una sola tarjeta (8 PEs) mediante Furiosa-LLM, orientado a entornos de producción que buscan alternativas a GPU para inferencia multimodal.
+- Prototipado de aplicaciones de visión-lenguaje: gracias a su tamaño de 2B parámetros y licencia Apache 2.0, sirve para experimentar con razonamiento visual en entornos con recursos limitados, usando el servidor OpenAI-compatible de Furiosa-LLM.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card de FuriosaAI no incluye metricas de rendimiento, y los datos de evaluacion del modelo base Qwen3-VL-2B-Thinking no se han proporcionado en esta ficha. Se recomienda consultar la documentacion oficial de Qwen para obtener resultados comparativos.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- Hardware objetivo: FuriosaAI RNGD, con una estrategia de paralelismo de tensor-parallel size 8 PEs, que se corresponde con una unica tarjeta RNGD (8 PEs por tarjeta).
-- VRAM estimada: no disponible, ya que el modelo se ejecuta en el acelerador RNGD y no en GPUs convencionales.
-- GPU recomendadas: no aplica para esta distribucion; el modelo base puede ejecutarse en GPUs estandar con otros frameworks, pero esta version concreta requiere RNGD.
-- Opciones de despliegue: Furiosa-LLM (servidor OpenAI-compatible), con flags para controlar limites de imagenes/videos y proteccion SSRF.
-- Latencia y throughput: no disponibles en la informacion proporcionada.
+- VRAM estimada para inferencia: no disponible en la información proporcionada. Con 2.127 millones de parámetros en precisión completa (sin cuantización), los pesos ocupan aproximadamente 4,3 GB en FP16/BF16, aunque el repositorio incluye también el bundle FXB y el codificador visual, por lo que el requisito real puede ser mayor.
+- GPU recomendadas: no disponible. El repositorio está orientado específicamente a FuriosaAI RNGD mediante Furiosa-LLM.
+- Compatibilidad con GPU de consumo: no confirmada en este repositorio. El modelo upstream Qwen/Qwen3-VL-2B-Thinking puede ejecutarse en otros frameworks (vLLM, SGLang, Transformers), pero los requisitos concretos no se detallan en la información disponible.
+- Opciones de despliegue: Furiosa-LLM (`furiosa-llm serve`) sobre FuriosaAI RNGD. El modelo upstream es compatible con vLLM, SGLang y Transformers según la model card.
+- Paralelismo: tensor-parallel size de 8 PEs, que corresponde a una sola tarjeta RNGD.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos comparativos directos en la informacion proporcionada. El modelo base Qwen3-VL-2B-Thinking es el mismo que el de esta distribucion, por lo que la comparativa se limita a la diferencia de empaquetado (FXB para RNGD frente a pesos estandar). Otros modelos vision-language de tamano similar, como PaliGemma-2B o LLaVA-1.6, no han sido evaluados en esta ficha por falta de datos. Se recomienda consultar los benchmarks publicados por Qwen para el modelo base.
+| Modelo | Parámetros | Contexto | Licencia | Hardware objetivo | Notas |
+|---|---|---|---|---|---|
+| furiosa-ai/Qwen3-VL-2B-Thinking | 2.127 M | no disponible | Apache 2.0 | FuriosaAI RNGD (Furiosa-LLM) | Bundle FXB, sin cuantización, modo Thinking |
+| Qwen/Qwen3-VL-2B-Thinking (upstream) | 2.127 M | no disponible | Apache 2.0 | GPU (vLLM, SGLang, Transformers) | Pesos originales sin bundle FXB |
+| Otros modelos de visión-lenguaje de ~2B | no disponible | no disponible | no disponible | no disponible | No se dispone de datos comparativos en la información proporcionada |
+
+La comparación directa con alternativas de la misma categoría no está disponible en la información proporcionada. El único punto de referencia claro es el modelo upstream, del que este repositorio es un empaquetado para hardware FuriosaAI.
 
 ## Limitaciones y advertencias
 
-- Hardware restringido: esta distribucion solo funciona en FuriosaAI RNGD con Furiosa-LLM; no es portable a GPUs convencionales sin usar el modelo base.
-- Sin cuantizacion: al no aplicar cuantizacion, el modelo requiere la precision completa, lo que puede aumentar el consumo de memoria en comparacion con versiones cuantizadas.
-- Sesgos y alucinaciones: no se han documentado sesgos especificos, pero como modelo de lenguaje multimodal, puede generar contenido incorrecto o inventado, especialmente en tareas de razonamiento complejo.
-- Longitud de contexto no especificada: no se ha indicado la ventana de contexto maxima, lo que limita la planificacion de aplicaciones con entradas largas.
-- Dependencia de la infraestructura Furiosa: el despliegue requiere instalar Furiosa-LLM y sus prerequisitos, lo que anade una capa de complejidad operativa.
-- Acceso a archivos locales restringido: por defecto, no se permite leer rutas `file://`; es necesario configurar `--allowed-local-media-path` explicitamente.
+- Sesgos conocidos: no se documentan en la información disponible; cabe esperar los sesgos heredados de los datos de entrenamiento del modelo upstream Qwen3-VL.
+- Riesgo de alucinación: presente como en cualquier modelo generativo; la cadena de razonamiento explícita no garantiza la corrección factual de la respuesta final.
+- Limitaciones de contexto e idioma: la longitud de contexto y los idiomas soportados no están documentados en la información proporcionada.
+- Restricciones de licencia: Apache 2.0 permite uso comercial, pero conviene verificar las condiciones del modelo upstream y de Furiosa-LLM para el despliegue en producción.
+- Dependencia de hardware: el bundle FXB está diseñado para FuriosaAI RNGD; fuera de ese hardware debe usarse el modelo upstream con otros frameworks.
+- Sin cuantización: el repositorio no aplica cuantización, lo que puede limitar opciones de optimización de memoria.
+- El campo `reasoning` no forma parte de la especificación de la API de OpenAI; su acceso cuando no hay contenido de razonamiento lanza `AttributeError`.
+- El acceso a imágenes locales requiere el flag `--allowed-local-media-path`; sin él, las rutas `file://` no funcionan.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/furiosa-ai/Qwen3-VL-2B-Thinking
-- Documentacion FuriosaAI para Qwen3-VL: https://developer.furiosa.ai/latest/en/furiosa_llm/models/qwen3-vl.html
-- Modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen3-VL-2B-Thinking
-- Pagina de Ollama para qwen3-vl:2b-thinking: https://ollama.com/library/qwen3-vl:2b-thinking
+- Modelo upstream: https://huggingface.co/Qwen/Qwen3-VL-2B-Thinking
+- FuriosaAI: https://furiosa.ai
+- Documentación de Furiosa-LLM: https://developer.furiosa.ai/latest/en/furiosa_llm/intro.html
+- Guía de instalación de Furiosa-LLM: https://developer.furiosa.ai/latest/en/get_started/furiosa_llm.html#installing-furiosa-llm
+- Guía de modelos visión-lenguaje de Furiosa-LLM: https://developer.furiosa.ai/latest/en/furiosa_llm/vision-language.html#server-options

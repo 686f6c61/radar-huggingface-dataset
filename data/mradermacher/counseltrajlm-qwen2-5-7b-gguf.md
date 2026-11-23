@@ -2,50 +2,50 @@
 
 ## Resumen
 
-CounselTrajLM-Qwen2.5-7B-GGUF es una versión cuantizada en formato GGUF del modelo CounselTrajLM-Qwen2.5-7B, publicado por el usuario mradermacher a partir de los pesos originales del equipo UEC-InabaLab. Se trata de un modelo conversacional derivado de Qwen2.5-7B, con 7.615.616.512 parámetros totales, orientado por su nombre a tareas de asesoramiento (counseling) y modelado de trayectorias de diálogo. El repositorio contiene únicamente cuantizaciones estáticas generadas con llama.cpp a partir de los pesos en formato Hugging Face del modelo base.
+CounselTrajLM-Qwen2.5-7B-GGUF es la version cuantizada en formato GGUF del modelo CounselTrajLM-Qwen2.5-7B, desarrollado originalmente por el laboratorio UEC-InabaLab (Universidad de Electro-Comunicaciones, Japon) y cuantizado por mradermacher. Se trata de un ajuste fino de Qwen2.5-7B orientado a conversaciones de consejeria psicologica (counseling), con etiquetas que indican especializacion en trayectorias conversacionales terapeuticas. El modelo base parte de la familia Qwen2.5, una arquitectura transformer densa de 7.615.616.512 parametros (aproximadamente 7,6 mil millones).
 
-La relevancia de esta ficha es limitada pero concreta: permite ejecutar localmente un modelo de 7B especializado en conversación sin necesidad de GPU de datacenter, gracias a los múltiples niveles de cuantización disponibles (desde Q2_K hasta F16). Sin embargo, la model card original no documenta arquitectura, datos de entrenamiento, licencia ni idiomas, por lo que muchos campos de esta ficha deben marcarse como no disponibles.
+La relevancia de esta ficha radica en que ofrece una via practica para desplegar un modelo especializado en dialogo de apoyo emocional en hardware de consumo, gracias a las cuantizaciones GGUF disponibles desde Q2_K (3,1 GB) hasta f16 (15,3 GB). El repositorio ocupa 68,1 GB e incluye once variantes de cuantizacion estatica. La licencia Apache 2.0 permite uso comercial sin restricciones adicionales, aunque el idioma principal declarado es el chino (zh), lo que limita su utilidad directa en castellano sin evaluacion previa.
 
-El modelo se publicó el 19 de noviembre de 2026 y no registra descargas ni likes en el momento de la consulta, lo que indica que es un artefacto reciente y sin validación comunitaria. Cualquier uso en producción debería ir precedido de una evaluación propia sobre el modelo original y de la verificación de la licencia heredada de Qwen2.5.
+El modelo hereda del Qwen2.5 base su ventana de contexto nativa (habitualmente 32.768 tokens en esta familia, aunque no se confirma en la informacion proporcionada para este ajuste concreto) y su tokenizador multilingue. No obstante, la model card del autor no documenta el proceso de entrenamiento especifico, los datos de consejeria utilizados ni resultados de evaluacion, por lo que esta ficha se limita a los datos verificables del repositorio y del modelo base.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (heredada de Qwen2.5-7B; no confirmada en la model card) |
-| Parametros totales | 7.615.616.512 |
-| Parametros activos | no disponible (no es un modelo MoE segun los datos disponibles) |
-| Longitud de contexto | no disponible (el modelo base Qwen2.5-7B soporta hasta 32.768 tokens, pero la model card no lo confirma) |
-| Tipos de cuantizacion | F16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q4_K_M, Q4_K_S, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K, IQ4_XS |
-| Idiomas soportados | no disponible |
-| Licencia | no disponible |
-| Formato de pesos | GGUF (cuantizaciones estaticas generadas con llama.cpp) |
+| Arquitectura | Transformer denso (familia Qwen2.5) |
+| Parametros totales | 7.615.616.512 (aprox. 7,6 B) |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible en la informacion proporcionada (heredada de Qwen2.5-7B) |
+| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, f16 |
+| Idiomas soportados | zh (declarado); multilingue heredado de Qwen2.5, no confirmado para el ajuste |
+| Licencia | apache-2.0 |
+| Formato de pesos | GGUF (repo original en safetensors/transformers) |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información sobre la arquitectura interna más allá de lo que se deduce del nombre del modelo base (Qwen2.5-7B), que emplea un transformer decoder-only con atención completa y RoPE. La model card del repositorio GGUF no describe la arquitectura, los datos de entrenamiento, el número de tokens utilizados, la composición del dataset ni si hubo etapas de RLHF, DPO o fine-tuning supervisado. El nombre "CounselTrajLM" sugiere un ajuste fino orientado a conversaciones de asesoramiento y a la modelización de trayectorias de diálogo, pero no se aporta ninguna evidencia documental en el repositorio.
+La arquitectura subyacente es la de Qwen2.5-7B: un transformer denso con atencion por multi-head con RoPE, capas de normalizacion RMSNorm y proyecciones SwiGLU en el bloque feed-forward. El modelo original UEC-InabaLab/CounselTrajLM-Qwen2.5-7B es un ajuste fino (fine-tuning) sobre esa base, orientado a conversaciones de consejeria; la etiqueta "merged" en el repositorio sugiere que los pesos resultan de una fusion de adaptadores o de un merge de checkpoints, aunque el autor no detalla el procedimiento. No se dispone de informacion sobre el numero de tokens de entrenamiento, la composicion del dataset de consejeria ni si se aplicaron tecnicas de RLHF o DPO.
 
-La única información técnica verificable es el proceso de cuantización: el autor indica `quantize_version: 2`, `output_tensor_quantised: 1` y `convert_type: hf`, lo que confirma que las cuantizaciones se generaron a partir de pesos en formato Hugging Face mediante la herramienta de cuantización de llama.cpp. No se documentan innovaciones técnicas adicionales (decodificación especulativa, atención lineal, etc.).
+La contribucion tecnica de este repositorio concreto es la cuantizacion estatica a GGUF realizada por mradermacher, que permite ejecutar el modelo con llama.cpp y derivados. Se ofrecen tambien cuantizaciones con imatrix/weighted en el repositorio hermano CounselTrajLM-Qwen2.5-7B-i1-GGUF, que suelen preservar mejor la calidad en tamanos pequenos. No se documentan innovaciones adicionales como decodificacion especulativa o atencion lineal.
 
 ## Capacidades
 
-- Generación de texto conversacional multi-turno, según la etiqueta `conversational` del repositorio.
-- Especialización probable en diálogo de asesoramiento y seguimiento de trayectorias conversacionales, deducida del nombre del modelo (no confirmada documentalmente).
-- Compatibilidad con endpoints de inferencia (`endpoints_compatible`), lo que facilita su despliegue en infraestructuras que consumen modelos GGUF.
-- Soporte de tool calling y function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingües: no disponible.
-- Capacidades especiales (modo thinking, visión, audio): no disponible.
+- Generacion de texto conversacional en el dominio de la consejeria psicologica y el apoyo emocional.
+- Dialogo multi-turno con mantenimiento de contexto, heredado de la ventana de Qwen2.5.
+- Capacidades generales de Qwen2.5-7B (razonamiento, codigo, matematicas) presumiblemente preservadas, aunque no verificadas tras el ajuste.
+- Soporte de tool calling / function calling: no confirmado para este ajuste.
+- Capacidades de agente y razonamiento multi-paso: no documentadas.
+- Capacidades multilingues: el modelo base es multilingue, pero el ajuste declara solo chino (zh).
+- Modo thinking, vision o audio: no disponible.
 
 ## Casos de uso
 
-- Asistente conversacional local para prototipos de asesoramiento: el modelo puede desplegarse con llama.cpp u Ollama en una estación de trabajo y mantener diálogos multi-turno, lo que permite iterar sobre prompts y flujos sin coste de API.
-- Investigación en modelado de trayectorias de diálogo: útil para experimentar con técnicas de seguimiento de estado conversacional y evaluación de coherencia a lo largo de sesiones largas, dado su nombre y etiqueta conversacional.
-- Despliegue en entornos con recursos limitados: las cuantizaciones Q4_K_M y Q5_K_M permiten ejecutar el modelo en GPUs de consumo con 8-12 GB de VRAM, adecuado para demos y pruebas de concepto.
-- Generación de respuestas en aplicaciones de bienestar o apoyo emocional de baja criticidad: siempre con supervisión humana y sin sustituir a profesionales, dado el riesgo de alucinación y la falta de documentación sobre sesgos.
-- Integración en pipelines de inferencia compatibles con endpoints: la etiqueta `endpoints_compatible` sugiere que puede servirse detrás de APIs compatibles con OpenAI o similar, facilitando pruebas A/B frente a otros modelos.
-- Evaluación comparativa de cuantizaciones: el repositorio ofrece 12 niveles de cuantización, lo que permite medir el impacto de la compresión en calidad conversacional y latencia sobre un mismo modelo base.
-- Fine-tuning posterior sobre GGUF: no recomendado directamente, pero las cuantizaciones F16 y Q8_0 pueden servir como referencia para comparar con el modelo original en formato safetensors.
+- Prototipado de chatbots de apoyo emocional en chino: el modelo puede gestionar conversaciones multi-turno de consejeria gracias a su ajuste especifico y a la ventana de contexto heredada de Qwen2.5.
+- Investigacion en psicologia computacional: permite estudiar trayectorias conversacionales terapeuticas (counseltraj) en entornos controlados con hardware modesto.
+- Despliegue local en estaciones de trabajo: con cuantizaciones Q4_K_M (4,8 GB) se ejecuta en GPUs de consumo, facilitando pruebas sin infraestructura cloud.
+- Simulacion de clientes para entrenamiento de terapeutas: genera respuestas de rol de consultante para practicas supervisadas.
+- Filtrado y clasificacion de transcripciones de sesiones: puede usarse para etiquetar o resumir dialogos de consejeria en pipelines de investigacion.
+- Evaluacion comparativa de cuantizaciones: el repositorio ofrece once variantes que permiten medir el impacto de la cuantizacion en la calidad del dialogo terapeutico.
+- Integracion en aplicaciones de mensajeria con llama.cpp u Ollama: el formato GGUF permite incrustar el modelo en servicios ligeros sin dependencias de CUDA.
 
 ## Benchmarks y rendimiento
 
@@ -53,43 +53,41 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia (7,6B parámetros):
-  - F16: ~15,2 GB
-  - Q8_0: ~8,1 GB
-  - Q6_K: ~6,3 GB
-  - Q5_K_M: ~5,4 GB
-  - Q4_K_M: ~4,7 GB
-  - Q3_K_M: ~3,8 GB
-  - Q2_K: ~2,9 GB
-- GPU recomendadas: A100 40 GB o H100 para F16 con contexto largo; RTX 4090 (24 GB) para Q8_0 y superiores; RTX 3090/4080 (16-24 GB) para Q5_K_M y Q6_K.
-- Cabe en GPU de consumo: sí, desde Q4_K_M en adelante en GPUs de 8 GB (RTX 3060 Ti, RTX 4060) y con holgura en 12-16 GB (RTX 4070, RTX 4080).
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, servidores compatibles con la API de llama.cpp y cualquier runtime que consuma GGUF (koboldcpp, text-generation-webui). vLLM y TGI no soportan GGUF de forma nativa en todas sus versiones, por lo que se recomienda verificar compatibilidad.
-- Latencia y throughput estimados: no disponibles; dependen fuertemente del hardware y del nivel de cuantización.
+- VRAM estimada para inferencia: desde ~3,1 GB (Q2_K) hasta ~15,3 GB (f16); Q4_K_M requiere ~4,8 GB y Q8_0 ~8,2 GB.
+- GPU recomendadas: RTX 3060 12 GB o superior para Q4_K_M en su totalidad; RTX 4090 o A100/H100 para f16 o Q8_0 con contexto largo.
+- Cabe en GPU de consumo: si, en tarjetas con 6-8 GB para cuantizaciones Q4/Q5 y en 12 GB o mas para Q6/Q8.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, y servidores compatibles con GGUF; el repo original en safetensors admite transformers, vLLM y TGI.
+- Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Licencia | Formato | Disponibilidad |
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| CounselTrajLM-Qwen2.5-7B-GGUF | 7,6B | no disponible | no disponible | GGUF | Hugging Face (mradermacher) |
-| Qwen2.5-7B-Instruct | 7,6B | 32.768 tokens (hasta 131.072 con RoPE scaling) | Apache 2.0 | safetensors, GGUF | Hugging Face (Qwen) |
-| Mistral-7B-Instruct-v0.3 | 7,2B | 32.768 tokens | Apache 2.0 | safetensors, GGUF | Hugging Face (Mistral AI) |
-| Llama-3.1-8B-Instruct | 8,0B | 128.000 tokens | Llama 3.1 Community License | safetensors, GGUF | Hugging Face (Meta) |
+| CounselTrajLM-Qwen2.5-7B-GGUF | 7,6 B | no disponible (heredado Qwen2.5) | Apache 2.0 | GGUF | Especializado en consejeria, solo zh declarado |
+| Qwen2.5-7B-Instruct | 7,6 B | 32.768 (familia) | Apache 2.0 | safetensors, GGUF | Base generalista multilingue, sin ajuste terapeutico |
+| Mistral-7B-Instruct | 7,2 B | 32.768 | Apache 2.0 | safetensors, GGUF | Generalista, sin especializacion en consejeria |
+| Llama-3.1-8B-Instruct | 8,0 B | 131.072 | Llama 3.1 Community | safetensors, GGUF | Mayor contexto, licencia con restricciones de uso |
 
-La comparativa se basa en el modelo base declarado (Qwen2.5-7B); no hay datos de rendimiento específicos de CounselTrajLM que permitan una comparación cuantitativa.
+La comparativa se basa en caracteristicas publicas de los modelos; no se dispone de datos de rendimiento especificos de CounselTrajLM frente a estas alternativas.
 
 ## Limitaciones y advertencias
 
-- La model card no documenta sesgos conocidos; al ser un ajuste fino sobre Qwen2.5, hereda los sesgos del modelo base, no evaluados en este repositorio.
-- Riesgo de alucinación no cuantificado: no se han publicado evaluaciones de fidelidad ni de tasa de alucinación.
-- Longitud de contexto e idiomas no confirmados; asumir los del modelo base Qwen2.5-7B es una suposición razonable pero no verificada.
-- Licencia no disponible: no se puede confirmar si el uso comercial está permitido. Es imprescindible verificar la licencia del modelo original (UEC-InabaLab/CounselTrajLM-Qwen2.5-7B) y la de Qwen2.5 antes de cualquier despliegue comercial.
-- Modelo sin validación comunitaria: 0 descargas y 0 likes en el momento de la consulta; no hay evidencia de que las cuantizaciones hayan sido probadas más allá de la generación automática.
-- El dominio de asesoramiento implica riesgos éticos y legales si se usa sin supervisión humana; no debe emplearse como sustituto de profesionales sanitarios.
-- Las cuantizaciones de baja precisión (Q2_K, Q3_K_S) pueden degradar notablemente la coherencia conversacional; se recomienda Q4_K_M o superior para producción.
+- El modelo esta especializado en consejeria y no debe emplearse como sustituto de atencion psicologica profesional; riesgo de respuestas inadecuadas en situaciones de crisis.
+- Idioma principal declarado: chino (zh); el rendimiento en castellano no esta verificado y probablemente sea inferior.
+- Riesgo de alucinacion inherente a los modelos de 7 B, especialmente en temas clinicos.
+- No se documentan sesgos especificos ni evaluaciones de seguridad del ajuste.
+- La licencia Apache 2.0 permite uso comercial, pero la responsabilidad legal y etica del despliegue en contextos de salud recae en el integrador.
+- Las cuantizaciones de baja calidad (Q2_K, Q3_K_S) pueden degradar notablemente la coherencia conversacional; se recomienda Q4_K_M o superior.
+- No hay informacion sobre el dataset de entrenamiento, lo que impide auditar la procedencia de los datos.
 
 ## Enlaces
 
 - Repositorio GGUF: https://huggingface.co/mradermacher/CounselTrajLM-Qwen2.5-7B-GGUF
-- Modelo original: https://huggingface.co/UEC-InabaLab/CounselTrajLM-Qwen2.5-7B
-- Modelo base Qwen2.5-7B: https://huggingface.co/Qwen/Qwen2.5-7B
-- llama.cpp (herramienta de cuantización): https://github.com/ggerganov/llama.cpp
+- Modelo base original: https://huggingface.co/UEC-InabaLab/CounselTrajLM-Qwen2.5-7B
+- Cuantizaciones con imatrix: https://huggingface.co/mradermacher/CounselTrajLM-Qwen2.5-7B-i1-GGUF
+- Pagina de descargas del autor: https://hf.tst.eu/model#CounselTrajLM-Qwen2.5-7B-GGUF
+- Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Grafico de calidad de cuantizaciones (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png
+- Notas sobre cuantizacion (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Peticiones de modelos del autor: https://huggingface.co/mradermacher/model_requests
+- nethype GmbH: https://www.nethype.de/

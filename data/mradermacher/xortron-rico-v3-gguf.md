@@ -2,116 +2,91 @@
 
 ## Resumen
 
-XORTRON-RICO-v3-GGUF es un repositorio de cuantizaciones en formato GGUF publicado por el usuario mradermacher a partir del modelo darkc0de/XORTRON-RICO-v3. No se trata de un modelo entrenado desde cero, sino de una conversión de pesos a GGUF en varias precisiones (de Q2_K a Q8_0) para facilitar su ejecución en llama.cpp y herramientas derivadas. El modelo base, según sus etiquetas, es un merge construido con mergekit y sometido a técnicas de abliteration ("abliterated", "heretic"), orientado explícitamente a generar contenido sin los filtros de rechazo habituales.
+XORTRON-RICO-v3-GGUF es la versión cuantizada en formato GGUF del modelo darkc0de/XORTRON-RICO-v3, publicada por mradermacher, un conocido creador de cuantizaciones para la comunidad. El modelo base es un merge (fusión) construido con mergekit a partir de otros modelos, orientado a la generación de texto conversacional sin restricciones de contenido (uncensored/abliterated), con un tono marcado como experimental, tóxico y no apto para todo tipo de audiencias según sus propias etiquetas.
 
-El modelo cuenta con 27.320.697.856 parámetros (unos 27,32 mil millones) y está etiquetado únicamente para inglés (en). El repositorio ocupa 136,9 GB e incluye, además de las cuantizaciones de texto, dos ficheros de proyector multimodal (mmproj-Q8_0 y mmproj-f16), lo que sugiere que el proyecto base incorpora algún tipo de codificador multimodal, aunque la model card no especifica de qué modalidad se trata.
+El modelo cuenta con 27.320.697.856 parámetros totales (aproximadamente 27,3 mil millones), lo que lo sitúa en la categoría de modelos densos de gran tamaño. La información disponible no especifica la arquitectura interna exacta más allá de ser un transformer compatible con la librería transformers, ni datos sobre longitud de contexto, composición del dataset de entrenamiento o procesos de alineación como RLHF o DPO.
 
-Su relevancia es acotada y muy específica: no hay resultados de benchmarks, ni licencia declarada, ni documentación de la receta del merge, y las etiquetas lo clasifican como "experimental" y "not-for-all-audiences". Resulta útil, por tanto, como objeto de estudio para investigación en alineación, red-teaming y análisis comparativo de cuantizaciones, más que como modelo de producción. El repositorio registra 0 descargas y 0 likes en el momento de la consulta.
+La relevancia de esta ficha reside en documentar de forma rigurosa un artefacto de la comunidad que combina cuantización GGUF con un modelo base de tipo merge sin alineación de seguridad, algo habitual en el ecosistema de modelos abliterated. Es importante señalar que la información disponible es limitada: no se publican benchmarks, no hay licencia declarada y el único idioma soportado es el inglés.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | no disponible (no documentada; el recuento de parámetros es compatible con un transformer denso de ~27B, sin confirmar) |
-| Parametros totales | 27.320.697.856 (~27,32 B) |
-| Parametros activos | no aplica; no se documenta arquitectura MoE |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | GGUF: Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, Q4_K_S, Q6_K, Q8_0; proyectores mmproj-Q8_0 y mmproj-f16. Los metadatos mencionan además x-f16, Q4_K_M, Q5_K_S, Q5_K_M e IQ4_XS, que no figuran en la tabla de ficheros de la model card |
-| Idiomas soportados | en (inglés) |
-| Licencia | no disponible |
-| Formato de pesos | GGUF (este repositorio); no se incluyen pesos safetensors |
-| Autor de la cuantizacion | mradermacher |
-| Modelo base | darkc0de/XORTRON-RICO-v3 |
-| Tamano del repositorio | 136,9 GB |
-| Descargas / likes | 0 / 0 |
-| Fecha de creacion (metadatos) | 2026-09-20 |
-| Fecha de actualizacion (metadatos) | 2026-09-20 |
+| Arquitectura | Transformer (según etiqueta transformers; detalles internos no disponibles) |
+| Parámetros totales | 27.320.697.856 |
+| Parámetros activos | No aplica (modelo denso, no MoE) |
+| Longitud de contexto | No disponible |
+| Tipos de cuantización | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, mmproj-Q8_0, mmproj-f16 (variantes imatrix en repo separado) |
+| Idiomas soportados | Inglés (en) |
+| Licencia | No disponible |
+| Formato de pesos | GGUF (y safetensors en el modelo base) |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información sobre la arquitectura interna ni sobre el proceso de entrenamiento. La model card de este repositorio es una plantilla automática de cuantización (revision 1) que se limita a indicar que los quants son estáticos y a enlazar al modelo original; no incluye detalles de capas, mecanismos de atención, número de tokens de entrenamiento, composición del dataset ni uso de RLHF o DPO. Tampoco se documenta si el modelo base partió de un transformer preentrenado ajeno o si se ensambló íntegramente mediante merge.
+La información disponible no detalla la arquitectura interna del modelo base más allá de que se trata de un transformer compatible con la librería transformers. El modelo es un merge construido con mergekit, lo que implica que sus pesos resultan de la combinación de otros modelos preexistentes mediante alguna técnica de fusión (no se especifica si es linear, SLERP, TIES, DARE u otra). Las etiquetas del modelo indican que incorpora componentes de tipo "heretic" y "abliterated", lo que sugiere que parte de los modelos fusionados han sido sometidos a procesos de eliminación o atenuación de mecanismos de rechazo (refusal) para generar contenido sin restricciones.
 
-Lo que sí puede deducirse de las etiquetas es el método de construcción: "merge" y "mergekit" indican que el modelo base se obtuvo combinando los pesos de dos o más modelos mediante la herramienta mergekit; "abliterated" y "heretic" apuntan a la aplicación de abliteration, es decir, la ablación direccional de las direcciones de activación asociadas al rechazo de peticiones, con el objetivo de eliminar el comportamiento de negativa sin reentrenar; "unsloth" sugiere que en alguna fase de la ascendencia del modelo se empleó ese framework de ajuste eficiente. La presencia de ficheros mmproj en el repositorio implica que el proyecto base integra un proyector multimodal que llama.cpp puede cargar, aunque no se especifica la modalidad ni el codificador visual asociado.
+No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset, ni si hubo etapas de RLHF, DPO o fine-tuning supervisado. Tampoco se documentan innovaciones técnicas como decodificación especulativa o atención lineal. La cuantización fue realizada por mradermacher con la versión 2 de su pipeline de cuantización, con tensores de salida cuantizados y conversión desde formato HF; se ofrecen tanto cuantizaciones estáticas como variantes con imatrix (ponderadas) en un repositorio separado.
 
 ## Capacidades
 
-- Generación de texto conversacional en inglés: el pipeline declarado en las etiquetas es text-generation-inference y la etiqueta "conversational" indica uso orientado a diálogo.
-- Generación de contenido sin filtros de rechazo: las etiquetas "uncensored", "abliterated" y "heretic" describen un modelo deliberadamente modificado para no negarse a peticiones que otros modelos rechazarían.
-- Procesamiento multimodal: la existencia de ficheros mmproj-Q8_0 y mmproj-f16 implica soporte de un proyector multimodal en llama.cpp; la model card no detalla qué entradas acepta.
-- Ejecución local en CPU/GPU mediante llama.cpp y derivados, al distribuirse exclusivamente en GGUF.
-- Capacidades de razonamiento, código, matemáticas o tool calling: no documentadas en la información disponible.
-- Soporte de agentes y razonamiento multi-paso: no documentado.
-- Capacidades multilingües: no documentadas; el único idioma declarado es inglés.
-- Modo "thinking" o razonamiento explícito: no documentado.
+- Generación de texto conversacional en inglés, orientada a diálogo multi-turno.
+- Modelo sin alineación de seguridad (uncensored/abliterated), capaz de producir contenido que otros modelos rechazarían.
+- Soporte multimodal: el repositorio incluye ficheros mmproj (Q8_0 y f16), lo que indica capacidad de procesamiento de visión en el modelo base, aunque no se detallan las capacidades exactas.
+- Compatibilidad con text-generation-inference y endpoints compatibles.
+- No se documenta soporte explícito de tool calling o function calling.
+- No se documentan capacidades de agentes o razonamiento multi-paso.
+- Capacidades multilingües limitadas al inglés según la metadata.
+- No se documenta modo thinking ni capacidades de audio.
 
 ## Casos de uso
 
-- Investigación en alineación y mecanismos de rechazo: el modelo permite estudiar empíricamente el efecto de la abliteration comparando sus respuestas con las del modelo pre-merge, útil para trabajos sobre direcciones de activación y refusal behavior.
-- Red-teaming y evaluación de seguridad: sirve como generador de entradas adversarias controladas en bancos de pruebas internos, ya que su sesgo hacia contenido sin filtro permite explorar casos límite que un modelo alineado rechazaría.
-- Generación de datos sintéticos para clasificadores de seguridad: sus salidas pueden etiquetarse y usarse para entrenar o evaluar clasificadores de toxicidad y moderación, siempre en un entorno aislado.
-- Análisis comparativo de cuantizaciones GGUF: al publicarse en siete precisiones distintas (Q2_K a Q8_0, de 11,0 a 29,1 GB), permite medir la degradación de perplejidad y coherencia entre niveles de cuantización con un mismo conjunto de prompts.
-- Escritura creativa y ficción sin restricciones editoriales: para autores que necesitan generar narrativa con temáticas que los modelos alineados suelen declinar, en un contexto de uso privado y responsable.
-- Prototipado local sin conexión: desplegado con llama.cpp u Ollama en una estación de trabajo, permite experimentar con un modelo de ~27B sin depender de APIs externas ni enviar datos a terceros.
-- Personajes y simulación de rol de nicho: su comportamiento conversacional y su falta de filtros lo hacen adecuado para entornos de roleplay donde se requiere adherencia a personajes con registros duros.
-- Docencia sobre cuantización de modelos: el repositorio ilustra de forma práctica el intercambio entre tamaño de fichero y calidad (Q3_K_M marcado como "lower quality", Q4_K_S como "fast, recommended", Q6_K como "very good quality").
+- Investigación sobre alineación y seguridad: el modelo sirve como caso de estudio para analizar cómo las técnicas de abliteration y merge afectan al comportamiento de rechazo en modelos de 27B, permitiendo comparar respuestas frente a modelos alineados.
+- Generación de contenido creativo sin restricciones: escritura de ficción, guiones o narrativa que requiera temáticas adultas o controvertidas, donde el modelo no aplica filtros de rechazo.
+- Evaluación de cuantizaciones GGUF: al ofrecer un abanico de cuantizaciones desde Q2_K hasta Q8_0, permite medir el impacto de la compresión en la perplejidad y la calidad de generación en un modelo de 27B.
+- Despliegue local en hardware de consumo: las cuantizaciones Q4_K_M (16,9 GB) y Q4_K_S (15,9 GB) permiten ejecutar un modelo de 27B en GPU con 24 GB de VRAM o en configuraciones híbridas CPU/GPU.
+- Pruebas de robustez y red teaming: útil para que equipos de seguridad generen prompts adversarios y evalúen la resistencia de sistemas de moderación frente a un modelo deliberadamente no alineado.
+- Experimentación con modelos merge: investigadores que estudien técnicas de fusión de modelos pueden usar este artefacto para analizar el comportamiento emergente de merges con componentes abliterated y heretic.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card del repositorio de cuantizaciones no incluye ninguna tabla de MMLU, HumanEval, GSM8K ni métricas equivalentes, y tampoco se han encontrado datos de este tipo en la búsqueda web realizada (cuyos resultados no guardan relación con el modelo). No se aportan cifras estimadas para no introducir datos no verificables.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-Los tamaños siguientes son los que figuran en la model card y sirven como base para la estimación de VRAM; hay que sumar el caché KV, cuyo tamaño depende de una longitud de contexto que no está documentada, más entre 1 y 2 GB de sobrecarga del runtime.
-
-- Q2_K (11,0 GB): cabe en GPUs de 12 GB (RTX 3060 12 GB) con contexto corto; en 16 GB funciona con margen.
-- Q3_K_S (12,4 GB) y Q3_K_M (13,6 GB): aptos para GPUs de 16 GB (RTX 4060 Ti 16 GB, RTX 4070 Ti Super).
-- Q3_K_L (14,7 GB) y Q4_K_S (15,9 GB, marcado como "fast, recommended"): encajan en 16 GB de forma ajustada y en 24 GB (RTX 3090, RTX 4090) con holgura.
-- Q6_K (22,5 GB, marcado como "very good quality"): requiere 24 GB, con contexto limitado; en 16 GB obliga a descarga parcial a CPU.
-- Q8_0 (29,1 GB, marcado como "fast, best quality"): necesita 32 GB o más; en la práctica, dos GPUs de 24 GB, A100 40 GB o H100 80 GB. También es viable con descarga parcial a memoria del sistema.
-- Proyector multimodal: mmproj-Q8_0 ocupa 0,7 GB y mmproj-f16 1,0 GB, que se suman a los requisitos anteriores si se utiliza la parte multimodal.
-- Inferencia en CPU: todas las cuantizaciones pueden ejecutarse íntegramente en RAM con llama.cpp; Q2_K y Q3_K_S son las opciones realistas para equipos con 16-32 GB de RAM.
-- Opciones de despliegue: llama.cpp y sus derivados (Ollama, koboldcpp, text-generation-webui y servidores compatibles con llama.cpp). La etiqueta text-generation-inference figura en los metadatos, pero el formato GGUF no es el nativo de TGI y no se documenta compatibilidad con vLLM.
-- Latencia y throughput: no disponibles; dependen de la cuantización, del hardware y de la longitud de contexto, ninguno de los cuales está documentado.
+- VRAM estimada para inferencia según cuantización: Q2_K ~11 GB, Q3_K_S ~12,4 GB, Q3_K_M ~13,6 GB, Q3_K_L ~14,7 GB, IQ4_XS ~15,5 GB, Q4_K_S ~15,9 GB, Q4_K_M ~16,9 GB, Q5_K_S ~19,1 GB, Q5_K_M ~19,6 GB, Q6_K ~22,5 GB, Q8_0 ~29,1 GB (más overhead de contexto y KV cache).
+- GPU recomendadas: para Q8_0 se requiere una A100 40 GB, H100 o RTX 6000 Ada; para Q4_K_M cabe en una RTX 4090 (24 GB) o RTX 3090; las cuantizaciones Q2_K y Q3 pueden ejecutarse en GPUs de 16 GB como RTX 4080 o A4000.
+- Cabe en GPU de consumo: sí, en RTX 3090/4090 con cuantizaciones Q4 o inferiores; en GPUs de 16 GB con Q2_K/Q3_K.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, text-generation-inference (TGI), y cualquier runtime compatible con GGUF. Para el modelo base en safetensors, vLLM o transformers.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-No disponible. La información proporcionada no identifica los componentes del merge, no publica resultados de benchmarks y no declara licencia, por lo que cualquier comparación cuantitativa con modelos de ~27B de la misma categoría (por ejemplo, modelos densos abiertos de tamaño comparable con variantes GGUF) carecería de base verificable. La model card tampoco indica qué pesos se fusionaron ni con qué proporciones, lo que impide saber si existen alternativas directamente equiparables.
+| Modelo | Parámetros | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|
+| XORTRON-RICO-v3-GGUF | 27,3B | No disponible | No disponible | GGUF | Merge abliterated/heretic, solo inglés |
+| Modelos densos de ~27B de la comunidad | ~27B | Variable | Variable | GGUF/safetensors | No se dispone de comparación directa documentada |
+| Alternativas abliterated de tamaño similar | No disponible | No disponible | No disponible | GGUF | No se identifican modelos comparables concretos en la información disponible |
 
-Como referencia interna sí puede compararse el propio modelo consigo mismo en distintas precisiones:
-
-| Cuantizacion | Tamano (GB) | Nota de la model card | Perfil de uso |
-|---|---|---|---|
-| Q2_K | 11,0 | sin nota | Máxima compresión; GPUs de 12 GB |
-| Q3_K_S | 12,4 | sin nota | Compresión alta; GPUs de 12-16 GB |
-| Q3_K_M | 13,6 | lower quality | Evitar salvo restricción severa de memoria |
-| Q3_K_L | 14,7 | sin nota | Compresión alta con mejor calidad |
-| Q4_K_S | 15,9 | fast, recommended | Punto de equilibrio recomendado |
-| Q6_K | 22,5 | very good quality | Calidad alta; GPUs de 24 GB |
-| Q8_0 | 29,1 | fast, best quality | Prácticamente sin pérdida; 32 GB o más |
-| mmproj-Q8_0 | 0,7 | multi-modal supplement | Complemento multimodal |
-| mmproj-f16 | 1,0 | multi-modal supplement | Complemento multimodal en alta precisión |
+No se dispone de información suficiente para establecer una comparativa rigurosa con modelos concretos de la misma categoría, dado que no se publican benchmarks ni detalles de arquitectura del modelo base.
 
 ## Limitaciones y advertencias
 
-- Contenido dañino por diseño: las etiquetas "uncensored", "harmful", "toxic", "abliterated" y "not-for-all-audiences" indican que el modelo ha sido modificado para eliminar sus mecanismos de rechazo. No debe desplegarse en aplicaciones orientadas al público sin una capa de moderación externa.
-- Licencia no disponible: al no declararse licencia, no puede asumirse permiso de uso comercial. Cualquier uso en producción exige aclarar antes los términos del modelo base con su autor.
-- Ausencia total de benchmarks: no hay ninguna métrica publicada, por lo que no es posible estimar su calidad real frente a alternativas.
-- Riesgo elevado de alucinación: no se documentan datos de entrenamiento, ajuste ni evaluación, y la abliteration suele degradar la coherencia y la fiabilidad factual.
-- Idiomas: únicamente inglés declarado; el rendimiento en castellano u otros idiomas es desconocido.
-- Longitud de contexto desconocida: impide planificar despliegues con conversaciones largas o documentos extensos, y complica el cálculo del caché KV.
-- Sesgos: no hay ninguna evaluación de sesgos publicada; un modelo entrenado con datos no filtrados y sin alineación posterior tiende a reproducir estereotipos y sesgos de su corpus.
-- Metadatos inconsistentes: la model card lista tipos de cuantización (x-f16, Q4_K_M, Q5_K_S, Q5_K_M, IQ4_XS) que no aparecen entre los ficheros efectivamente publicados, y las fechas de creación y actualización figuran en septiembre de 2026, lo que conviene verificar.
-- Sin quants ponderados ni imatrix: el propio autor indica que no hay cuantizaciones con matriz de importancia disponibles, y que probablemente no las habrá; las IQ mencionadas en los metadatos no están publicadas, de modo que la calidad a igual tamaño puede ser inferior a la de otras distribuciones.
-- Estado experimental: con 0 descargas y 0 likes, el repositorio no ha sido validado por la comunidad; no existe evidencia de terceros sobre su comportamiento en producción.
-- Trazabilidad limitada: al ser un merge sin receta publicada, no es posible auditar qué modelos contribuyeron a los pesos ni con qué licencias.
+- Modelo explícitamente etiquetado como uncensored, harmful, toxic y not-for-all-anchored audiences: puede generar contenido dañino, ofensivo o inapropiado sin filtros.
+- Riesgo elevado de alucinación: al ser un merge sin datos de entrenamiento documentados ni benchmarks, no hay garantías de fiabilidad factual.
+- Idiomas: solo inglés declarado; el rendimiento en castellano u otros idiomas no está garantizado.
+- Licencia no disponible: no se puede confirmar si el uso comercial está permitido; se recomienda contactar con el autor antes de cualquier despliegue en producción.
+- Longitud de contexto desconocida: limita la planificación de aplicaciones que requieran ventanas largas.
+- El modelo base es un merge experimental: la combinación de componentes abliterated y heretic puede producir comportamientos impredecibles o incoherentes.
+- No apto para producción en entornos donde se requiera moderación de contenido o cumplimiento normativo.
+- La cuantización Q2_K y Q3_K_M tienen calidad reducida según las propias notas del autor.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/mradermacher/XORTRON-RICO-v3-GGUF
+- Repositorio GGUF: https://huggingface.co/mradermacher/XORTRON-RICO-v3-GGUF
 - Modelo base: https://huggingface.co/darkc0de/XORTRON-RICO-v3
-- Página de descargas del cuantizador: https://hf.tst.eu/model#XORTRON-RICO-v3-GGUF
-- Peticiones de modelos al autor: https://huggingface.co/mradermacher/model_requests
-- Grafo comparativo de perplejidad entre cuantizaciones (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png
-- Notas de Artefact2 sobre tipos de cuantización: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
-- README de referencia sobre uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
-- Empresa responsable de la infraestructura de cuantización: https://www.nethype.de/
+- Cuantizaciones imatrix: https://huggingface.co/mradermacher/XORTRON-RICO-v3-i1-GGUF
+- Página de descargas del autor: https://hf.tst.eu/model#XORTRON-RICO-v3-GGUF
+- Guía de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Peticiones de modelos de mradermacher: https://huggingface.co/mradermacher/model_requests
+- Gráfico de calidad de cuantizaciones (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png
+- Notas sobre cuantizaciones (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9

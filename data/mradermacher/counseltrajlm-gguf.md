@@ -2,76 +2,88 @@
 
 ## Resumen
 
-CounselTrajLM-GGUF es la version cuantizada en formato GGUF del modelo CounselTrajLM, publicado por el usuario mradermacher en Hugging Face. El repositorio original del modelo base corresponde a la organizacion UEC-InabaLab, vinculada a la Universidad de Electro-Comunicaciones de Japon, aunque la model card disponible no detalla el contenido funcional ni el entrenamiento del modelo original.
+CounselTrajLM-GGUF es la versión cuantizada en formato GGUF del modelo CounselTrajLM, desarrollado originalmente por el laboratorio UEC-InabaLab y empaquetado por mradermacher para su uso con llama.cpp y herramientas compatibles. El modelo base está especializado en generación de respuestas de consejería psicológica (counselor-response-generation) y está etiquetado con la arquitectura qwen3_5, lo que sugiere una base derivada de la familia Qwen 3.5 adaptada mediante fusión de pesos (merged) para la tarea de consejería.
 
-La relevancia de esta ficha radica en que se trata de una conversión de pesos a GGUF, el formato estandar para inferencia eficiente en CPU y GPU de consumo mediante llama.cpp y herramientas derivadas. El repositorio incluye un conjunto amplio de cuantizaciones que van desde x-f16 hasta Q2_K, lo que permite desplegar el modelo en hardware con distintos presupuestos de memoria.
+Con aproximadamente 8.950 millones de parámetros totales, se sitúa en la franja de modelos de tamaño medio, lo que lo hace desplegable en GPUs de consumo con las cuantizaciones adecuadas. Su propósito es servir como motor conversacional especializado en diálogo terapéutico y de apoyo psicológico, un nicho con creciente demanda tanto en investigación como en aplicaciones de salud digital. La licencia Apache 2.0 facilita su integración en productos comerciales, aunque con las cautelas propias de un modelo orientado a un dominio sensible.
 
-No obstante, la informacion publicada es extremadamente escasa: no se especifican parametros, contexto, licencia, idiomas ni datos de entrenamiento. Esta ficha documenta lo que se puede verificar y marca explicitamente como "no disponible" todo aquello que no consta en la informacion proporcionada.
+La relevancia de esta ficha radica en que el repositorio GGUF ofrece múltiples cuantizaciones (desde Q2_K hasta f16) que permiten ajustar el equilibrio entre calidad y requisitos de memoria, algo crítico para un modelo que aspira a mantener coherencia conversacional en contextos de consejería. No obstante, la información pública disponible sobre el modelo base es limitada, por lo que varios parámetros técnicos se indican como no disponibles.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | no disponible |
-| Parametros totales | no disponible |
-| Parametros activos | no disponible |
+| Arquitectura | Transformer (etiquetado como qwen3_5, modelo merged) |
+| Parámetros totales | 8.953.803.264 (~8,95 B) |
+| Parámetros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | x-f16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q4_K_M, Q4_K_S, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K, IQ4_XS |
-| Idiomas soportados | no disponible |
-| Licencia | no disponible |
-| Formato de pesos | GGUF (cuantizaciones estaticas, convert_type: hf, quantize_version: 2) |
+| Tipos de cuantización | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, f16 |
+| Idiomas soportados | chino (zh) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (cuantizaciones estáticas); el modelo base en safetensors |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion sobre la arquitectura del modelo base CounselTrajLM en la documentacion proporcionada. El repositorio GGUF unicamente indica que se trata de una conversion de pesos desde el formato Hugging Face (convert_type: hf) mediante un proceso de cuantizacion estatica (quantize_version: 2) con tensores de salida cuantizados (output_tensor_quantised: 1). No consta el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas de RLHF, DPO u otras fases de alineacion.
+El modelo base CounselTrajLM se distribuye como un modelo fusionado (merged) sobre una arquitectura etiquetada como qwen3_5, lo que apunta a una familia de transformers densos derivada de Qwen 3.5. La ficha del repositorio GGUF no detalla el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas de alineación como RLHF o DPO. Tampoco se especifican innovaciones técnicas particulares (decodificación especulativa, atención lineal, etc.) más allá de la propia fusión de pesos que da lugar al modelo.
 
-El nombre "CounselTrajLM" sugiere, por convencion de nomenclatura, un modelo orientado a trayectorias de consejeria o dialogo terapeutico, pero esta interpretacion no esta confirmada por ninguna fuente de la informacion disponible y debe tratarse como especulacion. Tampoco se documenta ninguna innovacion tecnica concreta como decodificacion especulativa, atencion lineal o arquitecturas hibridas.
+El proceso de cuantización realizado por mradermacher genera cuantizaciones estáticas (no imatrix) mediante conversión desde el formato Hugging Face a GGUF. El autor indica que las cuantizaciones ponderadas/imatrix están disponibles en un repositorio separado (CounselTrajLM-i1-GGUF), lo que sugiere que las versiones i1 pueden ofrecer mejor calidad por tamaño. La especialización en consejería psicológica implica que el modelo fue ajustado o fusionado para producir respuestas conversacionales propias de un consejero, aunque los detalles del corpus terapéutico empleado no están documentados en la información disponible.
 
 ## Capacidades
 
-- Generacion de texto: presumiblemente soportada por tratarse de un modelo de lenguaje, aunque no se detalla en la informacion disponible.
-- Razonamiento, codigo y matematicas: no disponible.
-- Soporte de tool calling o function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingues: no disponible.
-- Capacidades especiales (modo thinking, vision, audio): no disponible.
+- Generación de texto conversacional orientada a diálogo de consejería psicológica.
+- Generación de respuestas de consejero (counselor-response-generation) en conversaciones multi-turno.
+- Soporte del idioma chino (zh) como idioma declarado.
+- Compatibilidad con endpoints (tag endpoints_compatible) para despliegue como servicio.
+- Formato GGUF apto para inferencia local con llama.cpp y derivados.
+- No se documentan capacidades de tool calling, function calling, agentes, visión, audio ni modo de razonamiento explícito en la información disponible.
+- No se documentan capacidades multilingües más allá del chino.
 
 ## Casos de uso
 
-- Despliegue en CPU: al estar disponible en formato GGUF con cuantizaciones desde Q2_K hasta x-f16, el modelo puede ejecutarse en entornos sin GPU dedicada mediante llama.cpp, lo que facilita pruebas locales y prototipado.
-- Inferencia en GPU de consumo: las cuantizaciones Q4_K_M y Q5_K_M permiten cargar el modelo en tarjetas con VRAM limitada, aunque el tamano exacto del modelo no esta documentado y no se puede confirmar que quepa en una GPU concreta.
-- Integracion en Ollama: los ficheros GGUF son compatibles con el ecosistema Ollama, lo que permite desplegar el modelo como servicio local para experimentacion con aplicaciones de chat.
-- Evaluacion comparativa de cuantizaciones: el repositorio ofrece doce variantes de cuantizacion, lo que permite medir la degradacion de calidad frente al modelo original en tareas de generacion.
-- Investigacion sobre modelos de consejeria: si el nombre del modelo refleja su dominio, podria emplearse en estudios sobre dialogo terapeutico, aunque esta aplicacion no esta confirmada por la documentacion.
-- Pruebas de pipeline de conversion: util como referencia para validar flujos de cuantizacion estatica desde pesos Hugging Face a GGUF con llama.cpp.
+- Asistente de apoyo emocional en chino: el modelo puede mantener conversaciones multi-turno generando respuestas empáticas propias de un consejero, adecuado para prototipos de aplicaciones de bienestar emocional dirigidas a usuarios sinohablantes.
+- Simulación de sesiones terapéuticas para formación: investigadores en psicología clínica pueden emplear el modelo para generar respuestas de consejero sintéticas y estudiar dinámicas de diálogo, gracias a su especialización en el dominio.
+- Generación de datos sintéticos para investigación: el modelo puede producir pares de diálogo consejero-consultante que sirvan para aumentar corpus de entrenamiento o evaluación en el ámbito de la salud mental conversacional.
+- Chatbot de primera acogida en servicios de orientación psicológica: desplegado con cuantización Q4_K_M o Q5_K_M en una GPU de consumo, puede ofrecer respuestas iniciales de contención antes de derivar a un profesional humano.
+- Evaluación de sistemas de consejería: el modelo puede actuar como referencia (baseline) en benchmarks de generación de respuestas terapéuticas, comparando su salida con la de otros modelos especializados.
+- Despliegue en entornos con recursos limitados: las cuantizaciones Q2_K (4,0 GB) y Q3_K_S (4,4 GB) permiten ejecutar el modelo en GPUs de gama media o incluso en CPU con llama.cpp, facilitando pruebas de concepto sin infraestructura dedicada.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible, ya que no consta el numero de parametros del modelo.
-- GPU recomendadas: no disponible por la misma razon.
-- Compatibilidad con GPU de consumo: no confirmable sin conocer el tamano del modelo; las cuantizaciones Q2_K a Q4_K_S estan disenadas precisamente para minimizar el uso de memoria.
-- Opciones de despliegue: llama.cpp, Ollama y cualquier runtime compatible con GGUF (por ejemplo, LM Studio o llama-cpp-python).
-- Latencia y throughput estimados: no disponible.
+- VRAM estimada para inferencia según cuantización: Q2_K ~4,0 GB; Q3_K_S ~4,4 GB; Q3_K_M ~4,8 GB; Q3_K_L ~5,1 GB; IQ4_XS ~5,4 GB; Q4_K_S ~5,5 GB; Q4_K_M ~5,8 GB; Q5_K_S ~6,4 GB; Q5_K_M ~6,6 GB; Q6_K ~7,5 GB; Q8_0 ~9,6 GB; f16 ~18,0 GB (tamaños de archivo del repositorio; la VRAM real requiere margen adicional para el contexto y el runtime).
+- GPU recomendadas: RTX 3060 12 GB o RTX 4060 Ti 16 GB para cuantizaciones Q4-Q6; RTX 4090 24 GB para Q8_0 o f16 con contexto amplio; A100/H100 para despliegue en producción con f16 y alta concurrencia.
+- Cabe en GPU de consumo: sí, con cuantizaciones Q2_K a Q6_K en GPUs de 8-12 GB; Q8_0 requiere al menos 12-16 GB.
+- Opciones de despliegue: llama.cpp, Ollama, y servidores compatibles con GGUF (por ejemplo, llama-cpp-python o servidores basados en llama.cpp); el modelo base es compatible con transformers.
+- Latencia y throughput estimados: no disponibles.
 
 ## Comparativa con modelos similares
 
-No disponible. La informacion proporcionada no incluye datos sobre el modelo base (parametros, contexto, rendimiento) ni sobre alternativas comparables, por lo que no es posible establecer una comparativa rigurosa.
+No se dispone de información suficiente sobre modelos comparables especializados en consejería psicológica con arquitectura qwen3_5 en la documentación proporcionada. Se indica "no disponible" para una comparativa rigurosa con alternativas de la misma categoría.
+
+| Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
+|---|---|---|---|---|
+| CounselTrajLM-GGUF | ~8,95 B | no disponible | Apache 2.0 | GGUF en Hugging Face |
+| Alternativas especializadas en consejería | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
 
-- Ausencia total de documentacion sobre el modelo base: no se conocen parametros, contexto, datos de entrenamiento ni rendimiento, lo que impide evaluar su idoneidad para produccion.
-- Licencia no especificada: no se puede confirmar si el uso comercial esta permitido; es imprescindible consultar el repositorio original UEC-InabaLab/CounselTrajLM antes de cualquier despliegue.
-- Riesgo de alucinacion: inherente a los modelos de lenguaje, pero no cuantificable sin benchmarks ni evaluaciones publicadas.
-- Sesgos conocidos: no documentados.
-- Limitaciones de idioma y contexto: no disponibles.
-- Las cuantizaciones agresivas (Q2_K, Q3_K_S) pueden degradar la calidad de forma notable; se recomienda validar con Q4_K_M o superior antes de usar variantes mas comprimidas.
-- Repositorio sin descargas ni likes en el momento de la consulta: no hay evidencia de validacion por parte de la comunidad.
+- Modelo especializado en consejería psicológica: no debe utilizarse como sustituto de atención profesional sanitaria; existe riesgo de respuestas inadecuadas en situaciones de crisis.
+- Riesgo de alucinación inherente a los modelos generativos, especialmente crítico en un dominio sensible donde una respuesta errónea puede causar daño.
+- Idiomas soportados limitados al chino según la model card; el rendimiento en castellano u otros idiomas no está garantizado.
+- Longitud de contexto no documentada, lo que dificulta planificar conversaciones largas o tareas de recuperación sobre documentos extensos.
+- Sesgos conocidos: no documentados en la información disponible, pero probables sesgos culturales derivados del corpus de entrenamiento en chino.
+- Licencia Apache 2.0 permite uso comercial, pero el despliegue en aplicaciones de salud mental exige cumplimiento normativo adicional (por ejemplo, regulación de dispositivos médicos y protección de datos).
+- Las cuantizaciones de baja precisión (Q2_K, Q3_K_S) pueden degradar la coherencia conversacional; se recomienda Q4_K_M o superior para producción.
+- El repositorio GGUF no incluye información sobre el proceso de alineación del modelo base, lo que limita la evaluación de su seguridad conversacional.
 
 ## Enlaces
 
 - Repositorio GGUF: https://huggingface.co/mradermacher/CounselTrajLM-GGUF
 - Modelo base: https://huggingface.co/UEC-InabaLab/CounselTrajLM
+- Cuantizaciones imatrix/ponderadas: https://huggingface.co/mradermacher/CounselTrajLM-i1-GGUF
+- Página de descargas del autor: https://hf.tst.eu/model#CounselTrajLM-GGUF
+- Guía de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Peticiones de cuantización del autor: https://huggingface.co/mradermacher/model_requests
+- Notas sobre cuantizaciones de Artefact2: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9

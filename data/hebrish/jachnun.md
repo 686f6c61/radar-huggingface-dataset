@@ -2,107 +2,88 @@
 
 ## Resumen
 
-Jachnun es un modelo de reconocimiento automático del habla (ASR) publicado por el usuario Hebrish en Hugging Face, obtenido por ajuste fino (fine-tuning) del checkpoint `nvidia/parakeet-tdt-0.6b-v2`. Su objetivo concreto es transcribir habla con alternancia de código (code-switching) hebreo-inglés, es decir, conversaciones en las que el hablante mezcla ambas lenguas dentro de la misma frase, un fenómeno muy habitual en la comunidad tecnológica y académica israelí. El modelo se distribuye como checkpoint de NVIDIA NeMo y se etiqueta explícitamente con los descriptores `code-switching`, `speaker-adaptation`, `hebrew` y `english`.
+Jachnun es un modelo de reconocimiento automatico del habla (ASR) especializado en *code-switching* entre hebreo e ingles, es decir, en transcribir conversaciones en las que los hablantes alternan entre ambos idiomas dentro de una misma frase. Se trata de un ajuste fino (fine-tune) del modelo NVIDIA Parakeet TDT 0.6B v2, desarrollado por el usuario Hebrish, y esta pensado para cubrir un hueco que los sistemas ASR monolingues no resuelven bien: el habla mixta hebreo-ingles, muy comun en contextos tecnologicos, academicos y de diaspora.
 
-Arquitectónicamente hereda la arquitectura TDT (Token-and-Duration Transducer) del modelo base, con aproximadamente 0,6 mil millones de parámetros. El ajuste se realizó sobre una mezcla de corpus de lectura en voz alta y frases mixtas hebreo-inglés, según los datasets declarados en la model card: `danielrosehill/Read-Aloud-Voice-Sentences`, `danielrosehill/English-Hebrew-Codeswitching-Sentences`, `Hebrish/English-Hebrew-Mixed-Sentences` y `openslr/librispeech_asr`.
+El modelo parte de la arquitectura Parakeet TDT (Token-and-Duration Transducer) de NVIDIA, con aproximadamente 600 millones de parametros, y anade adaptacion al hablante (*speaker adaptation*) como tecnica destacada. El repositorio ocupa 2.5 GB y se distribuye bajo licencia CC-BY-4.0, con acceso restringido (gated) que requiere aceptar las condiciones en Hugging Face.
 
-Su relevancia ahora es doble: por un lado, cubre un hueco poco atendido por los modelos ASR multilingües generalistas, que suelen degradarse en los puntos de conmutación de lengua; por otro, es un ejemplo de ajuste fino ligero y de bajo coste sobre un modelo base abierto de NVIDIA. Conviene señalar que el repositorio tiene acceso restringido (gated), no registra descargas ni valoraciones y no publica resultados de benchmarks, por lo que su calidad real debe validarse antes de usarlo en producción.
+Es relevante ahora porque el code-switching sigue siendo un punto debil de los ASR comerciales y open source, y porque reutiliza un backbone solido y bien documentado (Parakeet) en lugar de entrenar desde cero, lo que abarata el despliegue. No obstante, la informacion publica disponible es limitada: no hay benchmarks publicados ni documentacion extensa sobre el dataset de entrenamiento.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | TDT (Token-and-Duration Transducer) de NVIDIA NeMo; heredada del modelo base `nvidia/parakeet-tdt-0.6b-v2` |
-| Parametros totales | 0,6 mil millones (heredados del modelo base; no se documenta un cambio en el ajuste fino) |
-| Parametros activos | no aplica (no es un modelo MoE) |
-| Longitud de contexto | no disponible (modelo ASR de audio; no se documenta la ventana de audio ni la longitud máxima de segmento) |
-| Tipos de cuantizacion | no disponible (el repositorio no documenta variantes cuantizadas) |
-| Idiomas soportados | inglés (`en`) y hebreo (`he`), con soporte declarado de code-switching entre ambos |
+| Arquitectura | Parakeet TDT (Token-and-Duration Transducer), derivada de NVIDIA Parakeet TDT 0.6B v2 |
+| Parametros totales | ~0.6B (600 millones, segun el modelo base) |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | no disponible |
+| Idiomas soportados | Ingles (en), hebreo (he), con soporte de code-switching entre ambos |
 | Licencia | CC-BY-4.0 |
-| Formato de pesos | checkpoint `.nemo` de NVIDIA NeMo (tamaño del repositorio: 2,5 GB); no se documentan pesos sueltos en safetensors ni GGUF |
-
-Otros datos de la ficha de Hugging Face: pipeline `automatic-speech-recognition`, librería `nemo`, acceso restringido sujeto a aceptación de condiciones, creado y actualizado el 19 de octubre de 2026, región `us`.
+| Formato de pesos | no disponible (repositorio NeMo, 2.5 GB; probablemente .nemo/.ckpt, no confirmado) |
 
 ## Arquitectura y entrenamiento
 
-El modelo emplea la arquitectura TDT (Token-and-Duration Transducer), una variante de transducer RNNT en la que el predictor emite conjuntamente el token y una predicción de duración. Esta familia de modelos ASR no autorregresiva ofrece streaming nativo y una latencia muy contenida en comparación con los modelos encoder-decoder con decodificación completa, a cambio de una menor explotación del contexto acústico global. El checkpoint base, Parakeet TDT 0.6B v2 de NVIDIA, está entrenado principalmente para inglés y se distribuye con licencia CC-BY-4.0, lo que permite el ajuste fino y la redistribución con atribución.
+El modelo se basa en Parakeet TDT, una arquitectura transducer que predice conjuntamente tokens y duraciones, lo que permite un alineamiento mas eficiente que los CTC clasicos y suele traducirse en mejor rendimiento en ASR. Al ser un fine-tune de `nvidia/parakeet-tdt-0.6b-v2`, hereda el backbone preentrenado de NVIDIA y anade adaptacion al dominio del code-switching hebreo-ingles.
 
-El fine-tuning de Jachnun se orienta a dos ejes: cobertura de hebreo y robustez en puntos de conmutación hebreo-inglés. Los datasets declarados combinan corpus de frases leídas en voz alta (`danielrosehill/Read-Aloud-Voice-Sentences`), frases específicas de code-switching (`danielrosehill/English-Hebrew-Codeswitching-Sentences` y `Hebrish/English-Hebrew-Mixed-Sentences`) y LibriSpeech ASR (`openslr/librispeech_asr`) como anclaje de inglés limpio. La etiqueta `speaker-adaptation` sugiere que parte del ajuste se hizo sobre voces concretas, lo cual es relevante para el rendimiento: un modelo adaptado a un hablante puede degradarse frente a voces no vistas.
-
-No se especifican en la información disponible el número de tokens o de horas de audio empleadas, la composición exacta de la mezcla, la proporción entre habla espontánea y habla leída, ni si se aplicaron etapas de RLHF, DPO u optimización similar. Tampoco se documentan innovaciones técnicas adicionales más allá de las heredadas del transducer TDT. Cualquier afirmación sobre calidad del ajuste requeriría una evaluación reproducible que el repositorio no aporta.
+En cuanto a los datos de entrenamiento, los tags del repositorio mencionan varios datasets: `danielrosehill/Read-Aloud-Voice-Sentences`, `danielrosehill/English-Hebrew-Codeswitching-Sentences`, `Hebrish/English-Hebrew-Mixed-Sentences` y `openslr/librispeech_asr`. No se especifica el numero de horas, la composicion exacta ni si hubo etapas de RLHF o DPO (para ASR no es lo habitual). La innovacion tecnica declarada es la *speaker adaptation*, aunque no se detalla el mecanismo concreto.
 
 ## Capacidades
 
-- Transcripción de voz a texto en inglés y en hebreo, incluyendo enunciados con alternancia de código dentro de la misma frase.
-- Reconocimiento de términos técnicos y anglicismos insertados en discurso hebreo, que es el escenario declarado del ajuste.
-- Adaptación a hablante (speaker adaptation) según la etiqueta del repositorio: el modelo puede haberse especializado en un conjunto reducido de voces.
-- Inferencia ASR de tipo transducer, apta para flujo continuo con latencia baja, aunque no se documenta el modo streaming de forma explícita.
-- Integración con el ecosistema NVIDIA NeMo para carga, evaluación y exportación del checkpoint.
-- No se documenta soporte de tool calling, function calling, razonamiento multi-paso, agentes, visión, audio de entrada más allá del propio ASR, puntuación automática ni diarización de hablantes.
+- Transcripcion de voz a texto (ASR) en hebreo, ingles y habla mixta hebreo-ingles.
+- Manejo de *code-switching* intra-frase, el caso de uso central del modelo.
+- Adaptacion al hablante (*speaker adaptation*), segun los tags del repositorio.
+- Compatible con la libreria NeMo de NVIDIA para inferencia y fine-tuning.
+- Capacidades de tool calling, agentes, vision o audio multimodal: no disponibles (es un modelo puramente ASR).
+- Capacidades multilingues limitadas a en y he; no se declaran otros idiomas.
 
 ## Casos de uso
 
-- Transcripción de reuniones de equipos israelíes con documentación en inglés: el modelo está ajustado precisamente para enunciados que alternan hebreo e inglés, de modo que evita el corte o la traducción forzada que sufren los ASR monolingües en los puntos de conmutación.
-- Subtitulado de contenido audiovisual (podcasts, charlas técnicas, webinars): al partir de un transducer, la generación de hipótesis es incremental y encaja en pipelines de subtitulado casi en tiempo real con revisión humana posterior.
-- Analítica de contact center en Israel: transcripción de llamadas donde el cliente habla hebreo y el agente introduce terminología de producto en inglés, para su posterior clasificación y control de calidad.
-- Dictado personalizado con adaptación a hablante: el etiquetado `speaker-adaptation` lo hace candidato para un asistente de dictado de un usuario concreto, siempre que se valide con esa voz y no con voces nuevas.
-- Investigación lingüística sobre code-switching: generación de transcripciones anotadas de corpus hebreo-inglés para estudiar patrones de cambio de lengua, distribución de anglicismos y fenómenos de interfaz sintáctica.
-- Preprocesado de voz en pipelines de agentes conversacionales: la transcripción se usa como primer eslabón antes de un LLM que gestione la respuesta, aprovechando la baja latencia de la arquitectura transducer.
-- Evaluación comparativa de ASR en entornos académicos: banco de pruebas para medir la degradación de modelos multilingües generalistas frente a un ajuste fino específico de code-switching.
+- Transcripcion de reuniones tecnologicas en Israel: equipos que hablan hebreo e ingles mezclados pueden obtener transcripciones coherentes sin segmentar manualmente por idioma, gracias al entrenamiento especifico en code-switching.
+- Subtitulado de contenido audiovisual bilingue: podcasts, webinars y videos donde los ponentes alternan idiomas; el modelo evita los errores tipicos de ASR monolingue al cambiar de lengua.
+- Atencion al cliente en empresas israelies: transcripcion de llamadas donde el cliente mezcla hebreo e ingles, para analitica de calidad y cumplimiento.
+- Investigacion linguistica sobre code-switching: generacion de corpus transcritos para estudiar patrones de alternancia de codigo, aprovechando el ajuste especifico al fenomeno.
+- Documentacion clinica o legal bilingue: dictado de notas en consultas o declaraciones donde el hablante alterna idiomas, con la ventaja de un unico modelo en lugar de dos pipelines.
+- Prototipado rapido con NeMo: al ser un fine-tune de Parakeet, se integra en flujos existentes de NVIDIA NeMo y permite experimentar con adaptacion al hablante sin reentrenar desde cero.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible.
-
-| Benchmark | Jachnun | Modelo base (parakeet-tdt-0.6b-v2) | Referencia (Whisper large-v3) |
-|---|---|---|---|
-| WER hebreo | no disponible | no disponible | no disponible |
-| WER inglés | no disponible | no disponible | no disponible |
-| WER code-switching hebreo-inglés | no disponible | no disponible | no disponible |
-| CER / otras métricas ASR | no disponible | no disponible | no disponible |
-
-El repositorio no incluye tabla de resultados, conjunto de evaluación retenido ni script de reproducción. Cualquier cifra que se cite para este modelo debe provenir de una evaluación propia sobre un corpus etiquetado de habla mixta hebreo-inglés.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia (estimación aritmética a partir de 0,6 B de parámetros, no verificada por el autor): en fp32 en torno a 2,4 GB de pesos; en fp16/bf16 en torno a 1,2 GB; el consumo real añade memoria para buffers de decoder, features acústicas y overhead de NeMo, por lo que conviene reservar 3-6 GB en total.
-- GPU recomendadas: tarjetas de datacenter tipo A100, H100 o L40S para despliegue concurrente y por lotes; tarjetas de consumo tipo RTX 4090, RTX 4080, RTX 3090 o RTX 4070 Ti para uso individual.
-- Cabe holgadamente en GPU de consumo, incluida gama media con 8 GB de VRAM o más, al tratarse de un modelo de 0,6 B. También es viable en CPU para transcripción por lotes no interactiva, con throughput sensiblemente menor.
-- Opciones de despliegue: NVIDIA NeMo (carga nativa del checkpoint `.nemo`), exportación a ONNX o TensorRT para inferencia optimizada, y servidores de inferencia ASR compatibles con RNNT/TDT. No se documentan integraciones con llama.cpp, Ollama, vLLM ni TGI, que no son la vía habitual para modelos transducer de NeMo.
-- Latencia y throughput: no disponibles. En un transducer TDT la latencia por segmento es baja por diseño, pero no hay cifras publicadas para este checkpoint ni datos de RTF (real-time factor).
+- VRAM estimada para inferencia: no disponible de forma oficial; para un modelo de ~0.6B en fp16 se puede estimar en torno a 1.5-2.5 GB de pesos, mas overhead de activaciones y decodificacion.
+- GPU recomendadas: no disponibles en la documentacion; por tamano, cabria esperar buen funcionamiento en GPUs consumer modernas (RTX 3060/4060 en adelante), aunque no esta confirmado.
+- Cabe en GPU consumer: probablemente si, dado el tamano de ~0.6B, pero no hay confirmacion oficial.
+- Opciones de despliegue: NeMo (libreria declarada); compatibilidad con vLLM, llama.cpp, Ollama o TGI no disponible (son herramientas orientadas a LLM, no a este tipo de ASR).
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Idiomas | Contexto / audio | Licencia | Disponibilidad | Benchmarks públicos |
-|---|---|---|---|---|---|---|
-| Hebrish/Jachnun | 0,6 B | en, he (code-switching) | no disponible | CC-BY-4.0 | Gated en Hugging Face | No publicados |
-| nvidia/parakeet-tdt-0.6b-v2 | 0,6 B | en | no disponible | CC-BY-4.0 | Público en Hugging Face | Métricas publicadas por NVIDIA en su model card (no replicadas aquí) |
-| OpenAI Whisper large-v3 | 1,55 B | multilingüe, incluido hebreo | ventanas de audio de 30 s | Apache-2.0 | Público | Métricas publicadas por OpenAI (no replicadas aquí) |
+| Modelo | Parametros | Idiomas | Code-switching | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| Hebrish/Jachnun | ~0.6B | en, he | Si (objetivo principal) | CC-BY-4.0 | Gated en HF |
+| nvidia/parakeet-tdt-0.6b-v2 | ~0.6B | en (principalmente) | No especifico | no disponible en la informacion | HF |
+| Whisper large-v3 | ~1.55B | multilingue | Parcial, no especializado | MIT (habitual) | Abierto |
+| Modelos ASR hebreos monolingues | variable | he | No | variable | variable |
 
-Frente al modelo base, Jachnun añade cobertura de hebreo y code-switching a costa de perder la validación y el soporte de un checkpoint oficial de NVIDIA. Frente a Whisper large-v3, ofrece un orden de magnitud menos de parámetros y una arquitectura no autorregresiva potencialmente más rápida en streaming, pero carece de la validación multilingüe amplia y del ecosistema de herramientas del modelo de OpenAI. Para hebreo puro existen fine-tunes específicos de Whisper publicados por la comunidad (por ejemplo, la familia de modelos de ivrit.ai), que no se han podido verificar con la información disponible y que deberían compararse empíricamente antes de elegir.
+La comparativa con Whisper y modelos hebreos es orientativa; no se dispone de datos de rendimiento comparativos en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de benchmarks publicados: no hay evidencia cuantitativa de mejora sobre el modelo base ni de calidad absoluta en hebreo o en code-switching.
-- Señales de validación débiles: 0 descargas y 0 valoraciones en el momento de la consulta, repositorio creado y actualizado el mismo día, lo que sugiere un artefacto sin uso comunitario contrastado.
-- Acceso restringido (gated): es necesario aceptar condiciones en Hugging Face antes de descargar los pesos, lo que puede bloquear pipelines automatizados.
-- Posible sobreajuste a hablante: la etiqueta `speaker-adaptation` implica que el modelo puede haber sido ajustado sobre pocas voces y degradarse con hablantes no vistos o con acentos distintos.
-- Dominio de entrenamiento basado mayoritariamente en frases leídas: el habla espontánea, con disfluencias, solapamientos y ruido de fondo, puede estar peor cubierta que la lectura controlada.
-- Riesgo de alucinación típico de los modelos transducer en tramos de silencio, ruido o audio musical: pueden emitir texto plausible sin correspondencia acústica.
-- Sesgos no documentados: no se publica información sobre distribución de género, edad, origen o tipo de micrófono de los datos de ajuste.
-- Idiomas limitados a inglés y hebreo; no hay soporte declarado de castellano ni de otras lenguas.
-- Licencia CC-BY-4.0: permite uso comercial, pero exige atribución explícita al autor y al modelo base, y no ofrece garantías. Conviene revisar también los términos del checkpoint de NVIDIA subyacente.
-- No se documentan puntuación, capitalización, marcas de tiempo ni diarización; si el caso de uso las requiere, habrá que añadir etapas posteriores.
-- No hay información sobre el proceso de anotación ni la calidad de los datasets de code-switching empleados, lo que impide evaluar el ruido de etiquetas.
-- Nota sobre la búsqueda web: los resultados disponibles no contenían información técnica ni enlaces relevantes sobre este modelo; no se han utilizado como fuente.
+- Acceso restringido (gated): es necesario aceptar condiciones en Hugging Face antes de descargar el modelo.
+- Informacion tecnica escasa: no hay benchmarks, ni detalles de dataset, ni guia de cuantizacion publicados.
+- Sesgos conocidos: no documentados; al entrenar sobre datasets especificos (incluido LibriSpeech para ingles), puede heredar sesgos de dominio y acento.
+- Riesgo de alucinacion: en ASR se manifiesta como transcripciones plausibles pero incorrectas, especialmente en audio ruidoso o acentos no vistos.
+- Limitaciones de idioma: solo en y he; no se declaran otros idiomas ni variantes dialectales.
+- Restricciones de licencia: CC-BY-4.0 permite uso comercial con atribucion, pero conviene verificar las condiciones del modelo base de NVIDIA y de los datasets empleados.
+- Caveat para produccion: al ser un fine-tune comunitario con pocas descargas (487) y sin benchmarks, se recomienda validacion exhaustiva en el dominio objetivo antes de desplegarlo.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/Hebrish/Jachnun
 - Modelo base: https://huggingface.co/nvidia/parakeet-tdt-0.6b-v2
-- Dataset `danielrosehill/Read-Aloud-Voice-Sentences`: https://huggingface.co/datasets/danielrosehill/Read-Aloud-Voice-Sentences
-- Dataset `danielrosehill/English-Hebrew-Codeswitching-Sentences`: https://huggingface.co/datasets/danielrosehill/English-Hebrew-Codeswitching-Sentences
-- Dataset `Hebrish/English-Hebrew-Mixed-Sentences`: https://huggingface.co/datasets/Hebrish/English-Hebrew-Mixed-Sentences
-- Dataset `openslr/librispeech_asr`: https://huggingface.co/datasets/openslr/librispeech_asr
-- Documentación de NVIDIA NeMo (framework de carga del checkpoint): https://docs.nvidia.com/nemo-framework/
-- Paper, blog o demo específicos del modelo: no disponible en la información proporcionada.
+- Dataset Read-Aloud-Voice-Sentences: https://huggingface.co/datasets/danielrosehill/Read-Aloud-Voice-Sentences
+- Dataset English-Hebrew-Codeswitching-Sentences: https://huggingface.co/datasets/danielrosehill/English-Hebrew-Codeswitching-Sentences
+- Dataset English-Hebrew-Mixed-Sentences: https://huggingface.co/datasets/Hebrish/English-Hebrew-Mixed-Sentences
+- Dataset LibriSpeech ASR (OpenSLR): https://huggingface.co/datasets/openslr/librispeech_asr
+- DOI: https://doi.org/10.57967/hf/11110

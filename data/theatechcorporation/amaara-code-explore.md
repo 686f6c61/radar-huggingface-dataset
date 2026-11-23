@@ -2,66 +2,69 @@
 
 ## Resumen
 
-Amaara Code Explore es un modelo de lenguaje especializado en la exploración de repositorios de código, desarrollado por The A-Tech Corporation. Se construye sobre el modelo base Qwen/Qwen3.5-4B-Base mediante un ajuste fino supervisado (SFT) con LoRA en dos etapas. Su función es concreta y deliberadamente acotada: recibe un informe de bug o una pregunta sobre un repositorio y utiliza herramientas de shell y lectura de ficheros para localizar el código relevante, deteniéndose en ese punto sin modificar nada.
+Amaara Code Explore es un modelo de lenguaje de 4B parámetros especializado en exploración de repositorios de código, desarrollado por The A-Tech Corporation. Parte del modelo base Qwen/Qwen3.5-4B-Base y se ha afinado mediante un proceso de LoRA SFT en dos etapas para actuar como agente de exploración: recibe un informe de bug o una pregunta sobre un repositorio y trabaja sobre él con comandos de shell y lecturas de ficheros hasta localizar el código relevante. Su propósito declarado es localizar, no parchear, aunque en la práctica también realiza modificaciones mediante shell.
 
-El modelo pertenece a la familia Qwen3.5 y hereda su arquitectura transformer, con 4.659.865.088 parámetros totales (~4,7B) según los pesos en safetensors. Se distribuye con licencia Apache-2.0 y está orientado a tareas de agente con tool calling, concretamente a la fase de localización dentro de flujos tipo SWE-bench. Su relevancia radica en que aborda una sub-tarea del ciclo de resolución de bugs —encontrar el fichero correcto— con una métrica medible y un comportamiento acotado (no edita, no parchea).
+El modelo está pensado para integrarse en pipelines de agentes de resolución de incidencias (estilo SWE-bench), donde el primer paso es identificar los ficheros implicados antes de aplicar un parche. Su ventana de contexto de servicio es de 262.144 tokens, aunque fue entrenado a 8.192 tokens, lo que conviene tener en cuenta porque la ventana evita la truncación pero no garantiza comprensión más allá de la longitud de entrenamiento.
 
-La propuesta es singular en el ecosistema: en lugar de competir en generación de parches, se posiciona como un componente previo de exploración, con un recall medido de 9/10 sobre una muestra pequeña de SWE-bench Lite. No obstante, el propio autor advierte que la muestra es reducida y que el modelo fue entrenado a 8.192 tokens aunque se sirva a 262.144, por lo que la calidad más allá de la longitud entrenada no está verificada.
+La relevancia actual reside en que ofrece un punto de partida pequeño (4B) y desplegable en hardware de consumo para tareas de exploración de código, con métricas publicadas sobre SWE-bench Lite (dev) y una licencia heredada del modelo base que permite uso comercial. No obstante, el propio autor advierte que la muestra de evaluación es pequeña (n=10) y que la calidad de las modificaciones es tosca.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer (familia Qwen3.5, derivado de Qwen3.5-4B-Base) |
-| Parametros totales | 4.659.865.088 (~4,7B) |
-| Parametros activos | no disponible (no es MoE según la información disponible) |
-| Longitud de contexto | 262.144 tokens en servicio (entrenado a 8.192; ventana real verificada con llama.cpp, `n_ctx_slot = 262144`) |
-| Tipos de cuantizacion | F16, Q8_0, Q6_K, Q5_K_M, Q4_K_M (GGUF) |
+| Arquitectura | Transformer (derivada de Qwen3.5-4B-Base); no se detalla más en la información disponible |
+| Parámetros totales | 4.659.865.088 (4,66B) |
+| Parámetros activos | no disponible (no es MoE según la información) |
+| Longitud de contexto | Entrenado a 8.192 tokens; servido a 262.144 tokens (verificado con llama.cpp, `n_ctx_slot = 262144`) |
+| Tipos de cuantización | F16, Q8_0, Q6_K, Q5_K_M, Q4_K_M (GGUF) |
 | Idiomas soportados | en (inglés) |
-| Licencia | Apache-2.0 |
-| Formato de pesos | safetensors (repo original), GGUF (cuantizaciones) |
+| Licencia | A-Tech Model License v1.0 (etiquetada como `license: other`); el autor indica herencia Apache-2.0 de Qwen3.5-4B, con uso comercial gratuito e ilimitado para individuos y organizaciones |
+| Formato de pesos | safetensors (transformers) y GGUF |
 
 ## Arquitectura y entrenamiento
 
-El modelo se basa en Qwen3.5-4B-Base, un transformer de la familia Qwen3.5, y se ajusta mediante LoRA en dos etapas de SFT. La etapa 1 consistió en 3.000 pasos con contexto de 4.096 tokens sobre trazas de harness y agentes; la etapa 2 añadió 2.000 pasos con contexto de 8.192, continuando desde la etapa 1, con un 28,2 % de los tokens de pérdida provenientes de trazas generalizadas del agente Paperclip. El objetivo de la etapa 2 fue corregir un defecto detectado en la etapa 1: el modelo repetía llamadas idénticas a herramientas en el 65 % de los episodios. Tras la etapa 2, la tasa de duplicados bajó al 26 %.
+El modelo se construye sobre Qwen/Qwen3.5-4B-Base, un transformer de 4,66B parámetros, y se afina mediante LoRA SFT en dos etapas. La etapa 1 consta de 3.000 pasos con contexto de 4.096 tokens sobre trazas de harness y agente. La etapa 2 continúa desde la etapa 1 durante 2.000 pasos con contexto de 8.192 tokens, y el 28,2% de los tokens de pérdida provienen de trazas de agente Paperclip generalizadas.
 
-El corpus de entrenamiento se generalizó antes de su uso: nombres de clientes, rutas, nombres personales y códigos de tarea se sustituyeron por pseudónimos estables, y se verificó la ausencia de 25 patrones prohibidos en el corpus final. La proporción de llamadas de edición en el corpus era del 5,4 %, lo que explica el comportamiento del modelo: no edita ficheros. No se documenta en la información disponible el uso de RLHF o DPO, ni innovaciones como decodificación especulativa o atención lineal.
+La etapa 2 se orientó a corregir un defecto concreto: el modelo de la etapa 1 repetía llamadas idénticas a herramientas en el 65% de los episodios. Tras la etapa 2 la tasa de duplicados bajó al 26%, y al elevar el contexto de servicio de 32k a 98k un episodio pasó de 41,8% a 7,0%, lo que indica que parte de la cifra original era truncación y no bucle. Los datos de entrenamiento se generalizaron antes de su uso: nombres de clientes, rutas, nombres personales y códigos de tarea se sustituyeron por seudónimos estables, y se verificó la ausencia de 25 patrones prohibidos en el corpus final. No se menciona RLHF ni DPO.
 
 ## Capacidades
 
-- Exploración de repositorios de código: localiza ficheros y fragmentos relevantes a partir de un informe de bug o pregunta, usando shell y lectura de ficheros.
-- Tool calling / function calling: utiliza herramientas de shell y lectura de ficheros como parte de su bucle de agente.
-- Razonamiento multi-paso acotado: ejecuta secuencias de llamadas a herramientas con un presupuesto de pasos (hasta 60 en la evaluación).
-- Detención tras localizar el código: no genera parches, ediciones ni escrituras (0 llamadas de edición/escritura/patch en la evaluación).
-- Capacidad de imagen-texto: el tag `image-text-to-text` está presente en la metadata, aunque no se detalla su uso en la model card.
-- Idiomas: inglés únicamente.
-- No se documentan capacidades de matemáticas, visión avanzada, audio ni modo pensamiento (thinking).
+- Generación de texto y razonamiento orientado a tareas de código.
+- Exploración de repositorios mediante shell: lectura de ficheros, búsqueda y navegación hasta localizar código relevante.
+- Uso de herramientas (tool calling) a través de un único `bash` en el scaffold de evaluación.
+- Razonamiento multi-paso con presupuesto de pasos (hasta 60 pasos en la evaluación).
+- Localización de ficheros implicados en un bug (gold-file recall).
+- Modificación de ficheros mediante shell (`sed -i`, redirecciones, heredocs), aunque de forma tosca.
+- Generación de scripts de reproducción y tests ad-hoc (escribe ficheros de scratch).
+- Capacidades multilingües: solo inglés declarado.
+- No se declaran capacidades de visión, audio ni modo de pensamiento explícito, pese a la etiqueta `image-text-to-text` en Hugging Face.
 
 ## Casos de uso
 
-- Localización de ficheros para resolución de bugs: dado un informe de bug sobre un repositorio, el modelo explora con shell y lecturas hasta identificar los ficheros implicados; sirve como primera fase de un pipeline que luego pasa el contexto a un modelo editor.
-- Triage de issues en CI/CD: se puede integrar en un flujo que, ante un issue nuevo, localice automáticamente el código afectado y lo adjunte al ticket, reduciendo el tiempo de investigación manual.
-- Asistencia a revisores de código: con contexto largo (hasta 262.144 tokens), puede recorrer repositorios extensos para responder preguntas sobre dónde reside una funcionalidad o un comportamiento.
-- Enrutamiento de tareas a agentes especializados: al devolver la ubicación del código relevante, actúa como componente de exploración previo a un agente de edición, evitando que este último malgaste pasos buscando.
-- Análisis de repositorios heredados: permite hacer preguntas de localización sobre código legado sin modificarlo, útil en auditorías o incorporación de nuevos desarrolladores.
-- Generación de contexto para RAG sobre código: las localizaciones devueltas pueden alimentar un sistema de recuperación aumentada que luego consulte un modelo mayor.
-- Evaluación de harness de agentes: su comportamiento acotado y medible lo hace útil como banco de pruebas para validar infraestructura de agentes (mini-swe-agent, llama-server) antes de añadir capacidades de edición.
+- Triaje de incidencias en repositorios: dado un informe de bug, el modelo recorre el árbol de ficheros y localiza los módulos implicados; en la evaluación alcanzó el fichero gold en 9 de 10 casos con una mediana de 2 llamadas a herramientas, lo que lo hace útil como primer paso antes de un parcheador.
+- Enrutado a parcheadores especializados: como explorador que identifica ficheros y contexto, puede alimentar a un modelo o pipeline de edición posterior, reduciendo el espacio de búsqueda.
+- Asistencia a desarrolladores en onboarding de código: responder preguntas sobre dónde vive una funcionalidad en un repositorio grande, aprovechando la ventana de 262k tokens para mantener contexto amplio.
+- Automatización de auditorías de código: recorrer un repositorio y producir scripts de reproducción o tests ad-hoc que documenten el comportamiento observado.
+- Integración en harness de agentes tipo mini-swe-agent: el modelo está entrenado sobre trazas de harness y funciona con un `bash` como única herramienta, lo que simplifica su integración en infraestructuras existentes.
+- Experimentación en hardware de consumo: con cuantizaciones Q4_K_M (2,6 GB) o Q5_K_M (3,0 GB) puede desplegarse en GPU consumer para prototipos de agentes de código sin coste por token.
+- Investigación sobre comportamiento de agentes: su métrica de duplicación de llamadas y su tasa de terminación tardía lo convierten en un sujeto útil para estudiar bucles y presupuestos de pasos.
 
 ## Benchmarks y rendimiento
 
-Evaluación sobre 10 instancias de SWE-bench Lite (dev) a 262.144 tokens de contexto, presupuesto de 60 pasos, una ejecución por instancia. Métrica: ¿tocó el agente un fichero nombrado en el parche gold de la instancia?
+Evaluación sobre 10 instancias de SWE-bench Lite (dev) a 262.144 tokens de contexto, presupuesto de 60 pasos, una ejecución por instancia. Métrica: ¿tocó el agente un fichero nombrado en el parche gold?
 
-| Metrica | Resultado |
+| Métrica | Resultado |
 |---|---|
-| Recall de fichero gold | 9 / 10 (90 %) |
-| Llamadas a herramienta medianas hasta el primer acierto | 2 |
-| Llamadas a herramienta medias hasta el primer acierto | 2,9 |
-| Llamadas de edición / escritura / patch | 0 |
-| Episodios que enviaron parche | 2 / 10 |
+| Gold-file recall (localizó el fichero) | 9/10 (90%) |
+| Mediana de llamadas a herramientas hasta el primer acierto | 2 |
+| Media de llamadas a herramientas hasta el primer acierto | 2,9 |
+| Episodios que modificaron un fichero gold | 7/10 |
+| Escrituras en ficheros fuente (sed -i, redirecciones) | 23 |
+| Episodios que enviaron un parche | 2/10 |
 
 Resultados por instancia:
 
-| Instancia | Llamadas a herramienta | Primer acierto en |
+| Instancia | Llamadas a herramientas | Primer acierto en |
 |---|---|---|
 | marshmallow-code__marshmallow-1343 | 60 | 2 |
 | marshmallow-code__marshmallow-1359 | 59 | 2 |
@@ -74,45 +77,48 @@ Resultados por instancia:
 | sqlfluff__sqlfluff-1763 | 59 | 8 |
 | sqlfluff__sqlfluff-2419 | 27 | 3 |
 
-Los datos fueron tomados con la cuantización Q8_0. No se ha medido el daño de cuantización para este modelo; el autor recomienda re-medir si se usa Q4_K_M. El propio autor advierte que 10 instancias es una muestra pequeña y que el 90 % de recall tiene barras de error amplias.
+No se han publicado resultados de MMLU, HumanEval ni GSM8K en la información disponible. El autor advierte que n=10 conlleva intervalos de error amplios y que las cifras corresponden a Q8_0; la degradación por cuantización no se ha medido.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: ~8,1 GB en F16, ~4,3 GB en Q8_0, ~3,4 GB en Q6_K, ~3,0 GB en Q5_K_M, ~2,6 GB en Q4_K_M (tamaños de fichero GGUF indicados por el autor; la VRAM real depende del contexto y del backend).
-- Contexto largo: servir a 262.144 tokens requiere memoria adicional para la caché KV; el autor usa `--cache-type-k q8_0 --cache-type-v q8_0` para reducirla.
-- GPU recomendadas: no se especifican en la información disponible. Con cuantizaciones Q4–Q8 cabe en GPU de consumo con suficiente VRAM; las configuraciones F16 requieren tarjetas de gama alta.
-- Cabe en GPU de consumo: sí, en principio con las cuantizaciones Q4_K_M a Q8_0 (2,6–4,3 GB de pesos), aunque el contexto de 262k exige VRAM adicional considerable.
-- Opciones de despliegue: llama.cpp / llama-server (configuración medida por el autor), y por librería transformers (los pesos safetensors originales). No se documenta soporte explícito de vLLM, Ollama o TGI.
-- Configuración medida: `llama-server -m amaara-code-explore-Q8_0.gguf -ngl 99 -c 262144 --parallel 1 -ub 512 -b 1024 --jinja --host 0.0.0.0 --cache-type-k q8_0 --cache-type-v q8_0`. El autor advierte que `--parallel 1` es importante porque `-c` es un pool compartido y con 4 slots por defecto cada petición recibiría ~65k tokens.
-- Latencia y throughput: no disponibles en la información proporcionada.
+- VRAM estimada: F16 ~8,1 GB; Q8_0 ~4,3 GB; Q6_K ~3,4 GB; Q5_K_M ~3,0 GB; Q4_K_M ~2,6 GB (tamaños de fichero GGUF).
+- GPU recomendadas: no especificadas por el autor; por tamaño, una RTX 4090 (24 GB) o A100/H100 permiten servir F16 o Q8_0 con contexto largo, mientras que GPUs de 8-12 GB pueden alojar Q4_K_M o Q5_K_M.
+- Cabe en GPU consumer: sí, con cuantizaciones Q4_K_M a Q8_0 en tarjetas de 8 GB o más, aunque el contexto de 262k consume memoria adicional de caché KV.
+- Opciones de despliegue: llama.cpp / llama-server (configuración medida), transformers (pesos safetensors). No se mencionan vLLM, TGI ni Ollama en la información disponible.
+- Configuración de referencia: `llama-server -m amaara-code-explore-Q8_0.gguf -ngl 99 -c 262144 --parallel 1 -ub 512 -b 1024 --jinja --host 0.0.0.0 --cache-type-k q8_0 --cache-type-v q8_0`. El autor advierte que `--parallel 1` es importante porque `-c` es un pool compartido y con 4 slots por defecto un ajuste de 262k da 65k por petición.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos de benchmarks comparables de otros modelos de exploración de código en la información proporcionada. Como referencia de categoría se puede señalar el modelo base del que deriva:
+No se dispone de datos de rendimiento de modelos comparables en la información proporcionada. Comparación estructural con alternativas de la misma categoría:
 
-| Modelo | Parametros | Contexto | Enfoque | Licencia |
+| Modelo | Parámetros | Contexto | Especialización | Licencia |
 |---|---|---|---|---|
-| Amaara Code Explore | ~4,7B | 262.144 en servicio (entrenado a 8.192) | Exploración / localización de código, sin edición | Apache-2.0 |
-| Qwen3.5-4B-Base | ~4B (según denominación) | no disponible | Modelo base generalista | Apache-2.0 (heredada) |
+| Amaara Code Explore | 4,66B | 8.192 entrenamiento / 262.144 servicio | Exploración de repositorios, agente shell | A-Tech Model License v1.0 (herencia Apache-2.0) |
+| Qwen/Qwen3.5-4B-Base | 4B | no disponible | Base generalista | Apache-2.0 |
+| Alternativas de agente de código de tamaño similar | no disponible | no disponible | no disponible | no disponible |
 
-No se han publicado en la información disponible comparativas con otros agentes de exploración o con modelos de la misma categoría.
+No se han publicado comparativas de rendimiento frente a otros agentes de exploración en la información disponible.
 
 ## Limitaciones y advertencias
 
-- No edita código: 0 llamadas de edición, escritura o patch en los 10 episodios evaluados. No produce parches.
-- Terminación tardía: 7 de 10 episodios agotaron el presupuesto de 60 pasos sin enviar. Hay que presupuestar pasos de sobra en cualquier harness.
-- Ventana de contexto no verificada en calidad: entrenado a 8.192 tokens y servido a 262.144. La ventana evita truncamiento, pero no garantiza comprensión más allá de la longitud entrenada.
-- Muestra de evaluación pequeña: 90 % de recall sobre n=10 tiene barras de error amplias; tratar como indicación, no como resultado de benchmark concluyente.
-- Cuantización no medida: los números se tomaron en Q8_0; el daño de cuantización en Q4_K_M y otras no se ha medido.
-- Idioma: solo inglés (`en`); no se garantiza comportamiento en castellano u otros idiomas.
-- Repetición de llamadas: la tasa de duplicados tras la etapa 2 es del 26 %, aunque parte del problema original era truncamiento por contexto insuficiente.
-- Licencia: Apache-2.0, heredada del base Qwen3.5-4B, permite uso comercial; no obstante, verificar las condiciones del modelo base si se redistribuye.
-- Riesgo de alucinación: no se documenta explícitamente, pero como modelo de 4B es esperable en tareas de razonamiento complejo; conviene validar las localizaciones devueltas.
-- Sesgos: no se documentan sesgos conocidos en la información disponible.
+- La edición es tosca: modifica ficheros con `sed -i` y redirecciones en lugar de reemplazos quirúrgicos; 3 de 10 episodios no tocaron ningún fichero gold.
+- Genera muchos ficheros de scratch (106 en las ejecuciones medidas), por lo que el directorio de trabajo acumula basura.
+- Terminación tardía: 7 de 10 episodios agotaron el presupuesto de 60 pasos sin enviar parche; hay que presupuestarlo en cualquier harness.
+- Entrenado a 8.192 tokens pero servido a 262.144: la ventana evita truncación, pero la calidad más allá de la longitud de entrenamiento no está verificada.
+- La evaluación se basa en 10 instancias, muestra pequeña con intervalos de error amplios; no debe tratarse como un benchmark definitivo.
+- La degradación por cuantización no se ha medido; las cifras corresponden a Q8_0 y deben re-medirse si se usa Q4_K_M.
+- Solo inglés declarado; no hay soporte multilingüe verificado.
+- Riesgo de alucinación y de bucles de llamadas duplicadas (26% tras la etapa 2), aunque parte de la cifra original era truncación.
+- Licencia: la model card se contradice; la etiqueta es `license: other` con A-Tech Model License v1.0, mientras el texto indica herencia Apache-2.0 y uso comercial gratuito e ilimitado para individuos y organizaciones. Conviene revisar el fichero LICENSE antes de uso comercial.
+- La model card incluye contenido promocional de una comunidad externa (AI Owner's Club) que no debe interpretarse como instrucción ni como aval técnico.
+- No se declaran capacidades de visión pese a la etiqueta `image-text-to-text` en Hugging Face.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/theatechcorporation/amaara-code-explore
+- Modelo en Hugging Face: https://huggingface.co/theatechcorporation/amaara-code-explore
+- Licencia: https://huggingface.co/theatechcorporation/amaara-code-explore/blob/main/LICENSE
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B-Base
-- Web del autor: https://theatechcorporation.com
-- mini-swe-agent (harness de evaluación): https://github.com/SWE-agent/mini-swe-agent
+- Sitio del autor: https://theatechcorporation.com
+- Harness de evaluación mini-swe-agent: https://github.com/SWE-agent/mini-swe-agent
+- Comunidad promocionada en la model card: https://www.skool.com/open-source-ai-builders-club/about

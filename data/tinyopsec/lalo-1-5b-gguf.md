@@ -2,105 +2,90 @@
 
 ## Resumen
 
-lalo-1.5b es un ajuste fino de Qwen2.5-1.5B-Instruct orientado a un dominio muy concreto: la atención al estudiante en una institución turca (Lale Teknik Üniversitesi). El modelo original lo publica el usuario ErdalX y esta versión, distribuida por tinyopsec, es una conversión a GGUF generada con llama.cpp para su uso en runtimes de inferencia local. No se trata de un modelo generalista, sino de un asistente especializado que responde consultas administrativas y académicas en turco.
+lalo-1.5b-GGUF es la distribucion en formato GGUF del modelo ErdalX/lalo-1.5b, un ajuste fino de Qwen2.5-1.5B-Instruct especializado en asistencia de asuntos estudiantiles para la ficticia Lale Teknik Universitesi (Turquia). Lo publica el usuario tinyopsec en Hugging Face y su proposito es ofrecer una version cuantizada y lista para ejecutarse en runtimes compatibles con llama.cpp (Ollama, LM Studio, koboldcpp) sin necesidad de infraestructura de GPU dedicada.
 
-Arquitectónicamente hereda por completo la estructura del modelo base: un transformer decoder-only de la familia Qwen2, denso, con 1.543.714.304 parámetros (unos 1,54 mil millones) y licencia Apache 2.0, lo que permite uso comercial sin restricciones adicionales. El ajuste se realizó mediante QLoRA, una técnica de bajo rango que permite adaptar el modelo con un coste de cómputo reducido, y las etiquetas del repositorio sugieren que el sistema está pensado para integrarse en un pipeline de recuperación aumentada (RAG) sobre la documentación institucional.
+El modelo base es un transformer decoder-only tipo Qwen2 con 1.543.714.304 parametros (aproximadamente 1.5B), ajustado mediante QLoRA sobre el modelo instruct de Alibaba. El resultado es un asistente conversacional de dominio restringido, orientado a responder consultas administrativas de estudiantes en turco, con soporte declarado para flujos de RAG.
 
-Su relevancia práctica es acotada pero clara: demuestra el patrón de especializar un modelo pequeño y abierto en un dominio vertical con recursos limitados y desplegarlo en hardware de consumo. Al ser un GGUF de 1,5B, cabe en GPUs de gama baja e incluso en CPU, con cuantizaciones de 4 bits en torno a 1 GB. La contrapartida es que no hay ninguna evaluación publicada, ni descargas, ni validación externa: el repositorio se creó el 27 de octubre de 2026 y, en el momento de redactar esta ficha, no registra actividad de la comunidad.
+Su relevancia practica radica en el empaquetado: el repositorio incluye trece cuantizaciones distintas, desde F16 hasta Q2_K, lo que permite desplegar el modelo desde estaciones de trabajo sin GPU hasta servidores modestos. La licencia Apache 2.0 facilita su integracion en productos comerciales, aunque la especializacion tematica limita su uso fuera del nicho para el que fue entrenado.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only, familia Qwen2 (modelo denso) |
-| Parámetros totales | 1.543.714.304 (≈1,54 B) |
-| Parámetros activos | No aplica (modelo denso, no es MoE) |
-| Longitud de contexto | 32.768 tokens (heredada de Qwen2.5-1.5B-Instruct; no se especifica en la model card) |
-| Tipos de cuantización | F16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q5_0, Q4_K_M (recomendada), Q4_K_S, Q4_0, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K |
-| Idiomas soportados | Turco (único idioma declarado en la model card; el modelo base Qwen2.5 es multilingüe, pero no hay confirmación de que el ajuste lo preserve) |
+| Arquitectura | Transformer decoder-only (Qwen2) |
+| Parametros totales | 1.543.714.304 (~1.5B) |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible en la informacion proporcionada (heredada de Qwen2.5-1.5B-Instruct, no confirmada) |
+| Tipos de cuantizacion | F16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q5_0, Q4_K_M, Q4_K_S, Q4_0, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K |
+| Idiomas soportados | no disponible (el modelo esta orientado a turco; la model card no declara lista de idiomas) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (conversión de un ajuste QLoRA sobre safetensors del modelo base) |
+| Formato de pesos | GGUF (generado con llama.cpp) |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de Qwen2.5-1.5B-Instruct, un transformer decoder-only con atención causal, normalización RMSNorm, activación SwiGLU y atención con query/key/value agrupadas (GQA) propia de la familia Qwen2. Sobre esa base se aplicó un ajuste supervisado con QLoRA, según la etiqueta `qlora` del repositorio, lo que implica que los pesos del modelo base se mantuvieron congelados en cuantización de 4 bits durante el entrenamiento y solo se actualizaron adaptadores de bajo rango. No se publican ni el rango, ni el alfa, ni el número de pasos, ni la composición del dataset de ajuste.
+El modelo base es Qwen2.5-1.5B-Instruct, un transformer decoder-only con atencion causal estandar, normalizacion RMSNorm, activacion SwiGLU y sesgo de atencion QKV segun la arquitectura Qwen2. Sobre esa base, el autor aplico un ajuste fino con QLoRA (cuantizacion de bajo rango) para especializarlo en tareas de asuntos estudiantiles. La model card no detalla el volumen de tokens de entrenamiento, la composicion del dataset ni si se aplicaron etapas de RLHF o DPO adicionales.
 
-Tampoco hay información sobre si se aplicaron fases de alineación adicionales (RLHF, DPO) más allá de las que ya incorpora el modelo base de Qwen, ni sobre el volumen de tokens de entrenamiento del ajuste. La presencia de la etiqueta `rag` sugiere que el sistema se diseñó para operar con contexto recuperado de una base documental, pero la model card no documenta la arquitectura del pipeline ni el corpus utilizado. La conversión a GGUF se realizó con llama.cpp, generando trece ficheros con distintos niveles de cuantización.
+La innovacion tecnica del repositorio no reside en el entrenamiento sino en la distribucion: se ofrecen trece variantes GGUF generadas con llama.cpp, cubriendo el espectro de precision (F16, 3.0 GB) hasta compresion agresiva (Q2_K). La variante Q4_K_M se marca como recomendada por el autor, lo que es coherente con el equilibrio tipico entre tamano y calidad en modelos de este rango. El modelo esta etiquetado con soporte para RAG, lo que sugiere que el ajuste incluyo ejemplos de recuperacion aumentada, aunque no se aportan detalles.
 
 ## Capacidades
 
-- Generación de texto conversacional en turco, orientada a consultas de estudiantes sobre trámites, calendario académico y normativa interna.
-- Respuesta a preguntas de dominio cerrado cuando se le proporciona contexto documental (patrón RAG sugerido por las etiquetas del repositorio).
-- Conversación multi-turno dentro de la ventana de contexto heredada del modelo base (32.768 tokens), suficiente para hilos de atención al estudiante con historial.
-- Capacidades generales de razonamiento, código y matemáticas heredadas de Qwen2.5-1.5B-Instruct, aunque no hay evidencia publicada de cuánto se han conservado tras el ajuste.
-- Soporte de tool calling / function calling heredado del modelo base; no confirmado explícitamente para este ajuste.
-- No se declaran capacidades de visión, audio, modo de razonamiento explícito (*thinking*) ni agentes multi-paso.
-- Despliegue local en CPU o GPU mediante cualquier runtime compatible con GGUF.
+- Generacion de texto conversacional en turco orientada a consultas administrativas de estudiantes.
+- Respuesta a preguntas sobre tramites, normativa y procedimientos universitarios (dominio Lale Teknik Universitesi).
+- Soporte declarado para flujos de recuperacion aumentada (RAG), segun los tags del repositorio.
+- Integracion con runtimes GGUF: llama.cpp, Ollama, LM Studio, koboldcpp y cualquier cliente compatible con la API de llama.cpp.
+- Compatibilidad con endpoints segun el tag `endpoints_compatible`.
+- Capacidades multilingues: no confirmadas en la informacion disponible; el ajuste esta orientado a turco.
+- Tool calling, agentes, vision, audio y modo thinking: no disponibles o no declarados en la informacion proporcionada.
 
 ## Casos de uso
 
-- **Atención al estudiante en mostrador digital**: desplegar el modelo detrás de un chat web de la propia universidad para responder dudas frecuentes sobre matrícula, plazos y documentación, con la ventaja de que la inferencia puede ejecutarse en un servidor modesto o incluso en local.
-- **Asistente RAG sobre reglamento académico**: indexar el reglamento y las guías de la institución en una base vectorial y usar el modelo para redactar respuestas citando los fragmentos recuperados; la etiqueta `rag` del repositorio indica que este es el uso previsto.
-- **Prototipado rápido de asistentes verticales**: servir como plantilla para equipos que quieran especializar un modelo de 1,5B en un dominio propio mediante QLoRA, ya que el coste de entrenamiento e inferencia es mínimo.
-- **Despliegue en hardware de consumo con fines de demostración**: ejecutarlo en un portátil con 8 GB de RAM usando Q4_K_M (~1 GB de pesos), por ejemplo en una feria de orientación universitaria o en un tótem offline sin conexión.
-- **Sistema de respuesta en entornos con requisitos de soberanía del dato**: al ser Apache 2.0 y ejecutarse íntegramente en local, permite procesar consultas de estudiantes sin enviar datos personales a APIs externas.
-- **Generación de borradores de correos administrativos**: redactar respuestas tipo a solicitudes de estudiantes (prórrogas, recursos, certificados) que luego revise un responsable humano.
-- **Evaluación comparativa interna de ajustes QLoRA**: usar el par base/ajustado para medir cuánto degrada el fine-tuning las capacidades generales del modelo original.
+- Atencion al estudiante en ventanilla digital: el modelo responde consultas frecuentes sobre matriculacion, becas y calendario academico en turco, con un tono administrativo consistente gracias al ajuste QLoRA sobre datos del dominio.
+- Chatbot embebido en el portal universitario: al ejecutarse en formato GGUF Q4_K_M, puede desplegarse en un servidor CPU modesto o en una GPU consumer, reduciendo el coste de infraestructura frente a un modelo en la nube.
+- Asistente de RAG sobre normativa interna: combinado con un indice vectorial de reglamentos y resoluciones, el modelo puede citar articulos y responder con contexto recuperado, aprovechando la etiqueta RAG del ajuste.
+- Prototipado rapido en local: investigadores pueden descargar la variante Q4_K_M y probar el comportamiento del ajuste en llama.cpp sin configurar entornos de entrenamiento ni dependencias de PyTorch.
+- Despliegue en entornos con recursos limitados: las variantes Q3_K_S y Q2_K permiten ejecutar el modelo en dispositivos con poca memoria, util para demos en portatiles o entornos de laboratorio.
+- Fine-tuning posterior o evaluacion comparativa: el repositorio incluye F16 como referencia de maxima fidelidad, util para medir la degradacion introducida por cada nivel de cuantizacion antes de elegir una variante en produccion.
+- Integracion en asistentes de escritorio: mediante Ollama o LM Studio, el modelo puede servir como backend local de una aplicacion de escritorio para estudiantes, sin enviar datos a servicios externos.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La model card no incluye MMLU, HumanEval, GSM8K, evaluación de turco ni ninguna métrica de calidad del ajuste, y el repositorio no registra descargas ni validación de la comunidad.
-
-| Benchmark | lalo-1.5b | Qwen2.5-1.5B-Instruct | Observaciones |
-|---|---|---|---|
-| MMLU | no disponible | no disponible en esta ficha | Sin datos publicados por el autor |
-| HumanEval | no disponible | no disponible en esta ficha | Sin datos publicados por el autor |
-| GSM8K | no disponible | no disponible en esta ficha | Sin datos publicados por el autor |
-| Evaluación en turco | no disponible | no disponible en esta ficha | No se documenta ningún conjunto de evaluación |
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- **VRAM/RAM estimada para inferencia** (solo pesos, sin caché KV; el F16 está confirmado en la model card, el resto son estimaciones proporcionales):
-  - F16: ~3,0 GB
-  - Q8_0: ~1,7 GB
-  - Q6_K: ~1,3 GB
-  - Q5_K_M: ~1,1 GB
-  - Q4_K_M (recomendada): ~1,0 GB
-  - Q3_K_M: ~0,85 GB
-  - Q2_K: ~0,7 GB
-- **GPU recomendadas**: cualquier GPU con 4 GB o más de VRAM sirve para Q4_K_M (GTX 1650, RTX 3050, RTX 4060, T4). Para F16 y contextos largos conviene disponer de 6-8 GB (RTX 3060, RTX 4060 Ti, L4). A100/H100 no aportan ventaja con este tamaño de modelo y quedan sobredimensionadas.
-- **¿Cabe en GPU de consumo?** Sí, en todas las configuraciones desde 4 GB, y también en CPU pura con 8 GB de RAM del sistema.
-- **Opciones de despliegue**: llama.cpp (`llama-cli`, `llama-server`), Ollama, LM Studio, koboldcpp, llama-cpp-python. vLLM y TGI solo con soporte parcial o experimental de GGUF; para estos motores sería preferible partir del modelo en safetensors. El repositorio incluye la etiqueta `endpoints_compatible`, lo que sugiere compatibilidad con APIs tipo OpenAI a través de los runtimes habituales.
-- **Latencia y throughput**: no se han publicado mediciones. Como referencia de orden de magnitud para un modelo denso de 1,5B en Q4_K_M, es esperable que genere decenas de tokens por segundo en una GPU de consumo media y varios tokens por segundo en CPU, pero son estimaciones no verificadas para este ajuste concreto.
+- VRAM estimada para inferencia: aproximadamente 3,0 GB en F16, 1,6 GB en Q8_0, 1,2 GB en Q6_K, 1,1 GB en Q5_K_M, 1,0 GB en Q4_K_M, 0,9 GB en Q3_K_M y 0,7 GB en Q2_K (estimaciones a partir del tamano de los ficheros; no confirmadas por el autor).
+- GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM para las variantes de 4 bits; RTX 3060, RTX 4060, RTX 4090, A100 y H100 son sobredimensionadas para este modelo, pero funcionaran sin problema.
+- Cabe en GPU consumer: si, practicamente en cualquier GPU consumer de los ultimos diez anos, e incluso en CPU pura con llama.cpp.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, koboldcpp y cualquier runtime compatible con GGUF.
+- Latencia y throughput estimados: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Licencia | Formato | Notas |
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| lalo-1.5b (este) | 1,54 B | 32.768 tokens (heredado) | Apache 2.0 | GGUF | Ajuste QLoRA en turco para atención al estudiante; sin evaluación publicada |
-| Qwen2.5-1.5B-Instruct | 1,54 B | 32.768 tokens | Apache 2.0 | safetensors, GGUF | Modelo base multilingüe, con evaluación publicada por Alibaba |
-| Qwen2.5-1.5B-Instruct-GGUF | 1,54 B | 32.768 tokens | Apache 2.0 | GGUF | Cuantizaciones oficiales del base; opción de referencia si no se necesita el dominio turco |
-| Llama 3.2 1B Instruct | 1,24 B | 128.000 tokens | Llama 3.2 Community License | safetensors, GGUF | Mayor contexto, licencia con restricciones de uso comercial para grandes entidades |
-| Gemma 2 2B Instruct | 2,6 B | 8.192 tokens | Gemma Terms of Use | safetensors, GGUF | Contexto más corto y licencia con condiciones de uso |
+| lalo-1.5b-GGUF | ~1.5B | no disponible | Apache 2.0 | GGUF (13 variantes) | Ajuste QLoRA para asuntos estudiantiles en turco |
+| Qwen2.5-1.5B-Instruct | ~1.5B | no disponible | Apache 2.0 | safetensors, GGUF | Modelo base generalista de Alibaba |
+| TinyLlama-1.1B-Chat | ~1.1B | no disponible | Apache 2.0 | safetensors, GGUF | Modelo pequeno generalista, sin especializacion |
+| SmolLM2-1.7B-Instruct | ~1.7B | no disponible | Apache 2.0 | safetensors, GGUF | Alternativa pequena generalista de Hugging Face |
 
-La comparación cualitativa es clara: frente al modelo base, lalo-1.5b gana especialización en turco administrativo pero pierde trazabilidad, porque no hay ninguna métrica publicada que cuantifique la mejora ni el posible olvido catastrófico en tareas generales. Frente a Llama 3.2 1B y Gemma 2 2B, el atractivo principal es la licencia Apache 2.0 sin condiciones adicionales y el contexto de 32.768 tokens, superior al de Gemma 2 2B.
+La comparativa se limita a parametros y licencia porque la informacion proporcionada no incluye resultados de benchmarks que permitan contrastar rendimiento. La ventaja diferencial de lalo-1.5b-GGUF es su especializacion en un dominio concreto y su amplia oferta de cuantizaciones; su desventaja es la falta de datos publicos de evaluacion y su orientacion casi exclusiva al turco.
 
 ## Limitaciones y advertencias
 
-- **Ausencia total de evaluación**: no hay benchmarks, ni comparación con el modelo base, ni conjunto de validación publicado. Cualquier afirmación sobre su calidad es una suposición.
-- **Riesgo alto de alucinación en datos institucionales**: al ser un ajuste de 1,5B sin verificación documental, puede inventar plazos, importes de tasas, números de resolución o artículos de reglamento. En producción debe combinarse con RAG y con verificación humana de cualquier dato crítico.
-- **Dominio y idioma muy restringidos**: está pensado para turco y para una única institución (Lale Teknik Üniversitesi). Su comportamiento en castellano o en otras lenguas no está documentado y probablemente sea deficiente.
-- **Posible olvido catastrófico**: un ajuste QLoRA sobre un modelo de 1,5B suele degradar capacidades generales (código, matemáticas, instrucciones complejas). No se ha medido.
-- **Sesgos no auditados**: no se documenta la composición del dataset de ajuste, por lo que no es posible evaluar sesgos de género, origen regional o clase social en las respuestas administrativas.
-- **Trazabilidad del ajuste**: el modelo original es `ErdalX/lalo-1.5b`, un autor distinto del que publica la conversión GGUF. Conviene revisar la ficha original antes de confiar en la procedencia de los datos de entrenamiento.
-- **Licencia**: Apache 2.0 permite uso comercial y modificación sin restricciones adicionales, pero se ofrece sin garantías. Al derivar de Qwen2.5, se mantienen las obligaciones de atribución razonables.
-- **Madurez del repositorio**: 0 descargas y 0 likes en el momento de la ficha, creado el 27 de octubre de 2026. No hay señales de uso en producción ni de mantenimiento.
-- **Tamaño del repositorio**: 15,3 GB en total porque incluye trece cuantizaciones; conviene descargar un único fichero en lugar de clonar el repositorio completo.
+- Modelo de dominio restringido: el ajuste esta pensado para asuntos estudiantiles de una universidad concreta; su rendimiento fuera de ese ambito sera inferior al del Qwen2.5-1.5B-Instruct original.
+- Riesgo de alucinacion: al ser un modelo de 1.5B ajustado con QLoRA, puede inventar normativa, plazos o procedimientos si la consulta queda fuera de su distribucion de entrenamiento.
+- Idiomas: la model card no declara lista de idiomas; el ajuste esta orientado al turco y no hay evidencia de calidad en castellano u otros idiomas.
+- Contexto: no se confirma la longitud de contexto efectiva tras el ajuste; conviene validarla antes de usarlo con documentos largos en RAG.
+- Datos de evaluacion ausentes: no hay benchmarks publicados, por lo que la calidad real del ajuste no esta cuantificada.
+- Licencia: Apache 2.0 permite uso comercial, pero el autor incluye un aviso explicito de evaluar el modelo antes de usarlo en produccion.
+- Fecha de creacion del repositorio: la model card indica octubre de 2026, lo que puede indicar metadatos inconsistentes; conviene verificar la procedencia antes de integrarlo en pipelines criticos.
+- Sin likes ni comunidad: el repositorio tiene 0 likes y 516 descargas, lo que sugiere poca validacion externa.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/tinyopsec/lalo-1.5b-GGUF
-- Modelo base (Qwen2.5-1.5B-Instruct): https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
-- Ajuste original en safetensors: https://huggingface.co/ErdalX/lalo-1.5b
-- Repositorio de llama.cpp (herramienta de conversión y runtime): https://github.com/ggml-org/llama.cpp
-- Cuantizaciones GGUF del modelo base (referencia comparativa): https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct-GGUF
+- Hugging Face: https://huggingface.co/tinyopsec/lalo-1.5b-GGUF
+- Modelo base: https://huggingface.co/ErdalX/lalo-1.5b
+- Modelo original de referencia: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
+- Repositorio de llama.cpp: https://github.com/ggerganov/llama.cpp
+- Ollama: https://ollama.com
+- LM Studio: https://lmstudio.ai

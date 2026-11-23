@@ -5,7 +5,7 @@
   "author": "MeTask-Rain",
   "url": "https://huggingface.co/MeTask-Rain/metask-jev-rain-31B-trained",
   "created_at": "2026-10-11T16:39:58.000Z",
-  "updated_at": "2026-11-16T16:15:43.000Z",
+  "updated_at": "2026-11-22T11:32:45.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -28,7 +28,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 390,
+  "downloads_30d": 382,
   "trending_score": 0,
   "parameters": 32682375020,
   "parameters_human": "32.68B",

@@ -55,31 +55,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "ukisai/Swift-Qwen3.8-27b · Hugging Face",
-      "url": "https://huggingface.co/ukisai/Swift-Qwen3.8-27b",
-      "snippet": "Efficiency across and versus reasoning efforts Qwen3.8&#x27;s reasoning_effort setting lets users choose how much the model thinks. For Swift to be useful across these settings, it needs to reduce thinking while keeping accuracy close to the base. We therefore tested xhigh, medium, and low: thinking-token savings persist at every level."
-    },
-    {
-      "title": "Qwen/Qwen3.8-27B · Hugging Face",
-      "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
-      "snippet": "DeepSWE 1.1: Evaluated with the Claude Code harness at temp=1.0, top_p=0.95, and a 256K context window. QwenSWEBench: In-house coding benchmark for evaluating models&#x27; software engineering capabilities. Evaluated with the Claude Code harness. Reporting avg@3 with an 8-hour timeout, max_tokens=32,768, temperature=1.0, and a 256K context window."
-    },
-    {
-      "title": "Swift-Qwen3.8-27B: less overthinking | UkisAI",
-      "url": "https://ukisai.com/news/introducing-swift",
-      "snippet": "Swift includes a transfer component derived from BottleCap AI&#x27;s ThinkingCap-Qwen3.6-27B. The resulting model uses the standard Qwen3.8 interface and retains text, image, and video support."
-    },
-    {
-      "title": "GitHub - Wassimyounes01/qwen38-uncensored: Local Qwen 3.8 27B ...",
-      "url": "https://github.com/Wassimyounes01/qwen38-uncensored",
-      "snippet": "Check GPU offloading: ollama ps — if you see a CPU/GPU split, the model is partially on CPU Force all layers to GPU: Already set in Modelfile.mac (num_gpu 999), but verify with ollama show qwen3.8:27b-uncensored Reduce context: QWEN_NUM_CTX=4096 node examples/chat.cjs \"test\" — smaller KV cache = less memory Switch to MLX: node bin/install.cjs --mlx — 30-50% faster on Apple Silicon Close ..."
-    },
-    {
-      "title": "Qwen3.8-27B: The Ultimate Guide to Running It Locally",
-      "url": "https://linas.substack.com/p/qwen3-8-27b-local-guide",
-      "snippet": "How to run Alibaba&#x27;s Qwen3.8-27B AI model locally: the settings, hardware, and prompts that deliver frontier results for founders, builders, and investors."
-    }
-  ]
+  "sources": []
 }

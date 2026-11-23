@@ -2,98 +2,88 @@
 
 ## Resumen
 
-Qwen3.8-Flash-Next-mixed-mlx-K50 es un reempaquetado en precisión mixta del modelo ternario Jakevin/Qwen3.8-Flash-Next-ternary-mlx-K50, publicado por el usuario Jakevin. Se trata de una derivación cuantizada y podada del modelo Qwen/Qwen3.8-Flash-Next de Qwen, orientada exclusivamente a inferencia sobre Apple Silicon mediante la librería MLX. El repositorio ocupa 60 GB e incluye 48 capas de expertos empaquetados en formatos afines de 2, 3 y 4 bits, además de una tabla PLE de n-gramas y pesos de atención y expertos compartidos.
+Qwen3.8-Flash-Next-mixed-mlx-K50 es un reempaquetado en precisión mixta del modelo ternario Qwen3.8-Flash-Next-ternary-mlx-K50, publicado por el usuario Jakevin en Hugging Face. Se trata de una variante cuantizada y podada de un modelo de arquitectura MoE (mixture of experts) de la familia Qwen, orientada a su ejecución en Apple Silicon mediante la librería MLX. El repositorio ocupa 60,0 GB e incluye pesos en formato safetensors y fp8, con licencia qwen-community-1.0.
 
-La particularidad técnica del modelo es la conversión sin pérdida de los expertos ternarios (5 trits por byte, una escala bf16 por cada 64 pesos) a registros afines de 2 bits de MLX, denominados `2t`. Según el autor, la equivalencia es exacta: cada peso `scale*code - scale` reproduce el valor ternario `scale*{-1,0,+1}`, y las pruebas con decodificación greedy sobre dos prompts de 256 tokens generan secuencias idénticas y logits con diferencia absoluta máxima de 0 en los primeros 16 pasos.
+El modelo conserva la poda de expertos del modelo ternario original: la capa 0 mantiene los 512 expertos enrutados y las capas 1 a 47 conservan 256 de 512 (un 50% eliminado). La diferencia principal estriba en que los expertos que estaban almacenados en formato ternario se convierten de forma sin pérdida a registros afines de 2 bits de MLX (tipo `2t`), de modo que cada peso `scale*code - scale` reproduce exactamente el valor ternario original. El resto de componentes (atención, expertos compartidos, embeddings, lm_head, routers y tabla PLE) son idénticos byte a byte al repositorio ternario de referencia.
 
-El modelo no es cargable con `mlx-lm` ni `mlx-vlm` estándar: requiere un runtime en C++ específico incluido en el repositorio Jakevin/moe-offload. Está pensado para desarrolladores que quieran ejecutar un MoE de gran tamaño en equipos Apple con memoria unificada limitada, aceptando un rendimiento de decodificación muy bajo (en torno a 5 tokens por segundo en un M4 Pro de 64 GB) a cambio de mantener el modelo completo en disco y solo una parte residente en memoria.
+Su relevancia radica en que ofrece la misma salida que el modelo ternario K50 (256 de 256 tokens idénticos en las pruebas del autor) pero con un formato de experto que puede leer un runner en C++ de código abierto, lo que permite despliegues con presupuesto de memoria controlado en equipos Apple. No obstante, no es cargable directamente con `mlx-lm` ni `mlx-vlm` estándar, lo que limita su adopción a usuarios dispuestos a usar el runtime específico.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | MoE con atención lineal e hiperconexiones (derivada de Qwen3.8-Flash-Next), pesos empaquetados en MLX |
-| Parámetros totales | no disponible |
-| Parámetros activos | no disponible |
+| Arquitectura | MoE (mixture of experts) de tipo transformer, según tags del repositorio (`moe`, `qwen4_exp`); detalles de capas y atención no disponibles |
+| Parametros totales | no disponible |
+| Parametros activos | no disponible |
 | Longitud de contexto | no disponible |
-| Tipos de cuantización | Expertos en affine 2, 3 y 4 bits; expertos ternarios convertidos a `2t` (2 bits, group_size=64, escala bf16); embeddings y lm_head en 8 bits; tabla PLE en affine mixto 2-6 bits |
+| Tipos de cuantizacion | Precisión mixta: expertos en 2 bits afines MLX (tipo `2t`), más expertos en 2, 3 y 4 bits afines; conversión sin pérdida desde ternario |
 | Idiomas soportados | no disponible |
-| Licencia | Qwen Community License 1.0 (etiquetada como `other` en Hugging Face) |
-| Formato de pesos | safetensors (`skeleton.safetensors`, `nonexpert.safetensors`, `router_k50.safetensors`) y binarios empaquetados por capa (`codes.bin`, `scales.bf16`, `bias.bf16`, `index.json`) |
+| Licencia | qwen-community-1.0 (etiquetada como `other` en Hugging Face) |
+| Formato de pesos | safetensors, fp8, con registros de experto `2t` propios de MLX |
 
 ## Arquitectura y entrenamiento
 
-El modelo es una derivación del Qwen3.8-Flash-Next, un transformer con mezcla de expertos (MoE) que incorpora atención lineal, hiperconexiones, expertos compartidos y una tabla PLE (probablemente *Positional Learned Embeddings* o una tabla de n-gramas, según la nomenclatura del autor). La poda de expertos está aplicada de forma fija: la capa 0 conserva los 512 expertos enrutados y las capas 1 a 47 conservan 256 de 512, es decir, se elimina el 50 % de los expertos enrutados. Los identificadores originales conservados están en `K50_kept.json`.
+El modelo es una variante podada y cuantizada de un MoE de la familia Qwen, no un modelo entrenado desde cero. La poda mantiene los 512 expertos enrutados en la capa 0 y 256 de 512 en las capas 1 a 47; los identificadores originales conservados se documentan en `K50_kept.json`. La innovación técnica principal es la conversión sin pérdida de los expertos ternarios (5 trits por byte, una escala bf16 por cada 64 pesos) a registros afines de 2 bits de MLX: códigos en {0,1,2} en carriles uint32 de 2 bits, `group_size=64`, escala bf16 igual a la escala ternaria y sesgo bf16 igual a `-scale`, de modo que cada peso reconstruido coincide exactamente con el valor ternario `scale*{-1,0,+1}`.
 
-No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni si hubo etapas de RLHF o DPO en el modelo original. La contribución técnica de esta ficha es exclusivamente de cuantización y empaquetado: la conversión de ternario a `2t` es sin pérdida y el resto de tensores (atención, expertos compartidos, embeddings, lm_head, routers y tabla PLE) son idénticos byte a byte al repositorio ternario K50. El autor no documenta innovaciones de decodificación especulativa ni de atención más allá de las heredadas del modelo base.
+No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni si hubo RLHF o DPO, ya que el repositorio es un artefacto de cuantización y poda sobre un modelo base, no una ficha de entrenamiento. El autor declara que la equivalencia con el modelo ternario K50 se midió con decodificación greedy: 256 de 256 tokens generados idénticos en un prompt de código en Python y otro de prosa en inglés, y una diferencia absoluta máxima de logits de 0 en los primeros 16 pasos de decodificación.
 
 ## Capacidades
 
-- Generación de texto conversacional y de prosa en inglés, según los prompts de prueba del autor.
-- Generación de código, con un prompt de programación en Python empleado en las mediciones de velocidad.
-- Razonamiento multi-paso y decodificación greedy determinista, verificado con equivalencia exacta frente al modelo ternario.
-- Soporte de tool calling y function calling: no disponible en la información proporcionada.
-- Capacidades de agente: no disponible en la información proporcionada.
-- Capacidades multilingües: no disponible en la información proporcionada.
-- Capacidades de visión o audio: no disponible en la información proporcionada.
+- Generación de texto y conversación: el pipeline declarado es `text-generation` y las tags incluyen `conversational`.
+- Razonamiento y código: el autor emplea un prompt de programación en Python en sus pruebas de equivalencia y velocidad, lo que indica uso previsto para código.
+- Prosa en inglés: se documenta una prueba específica con un prompt de prosa en inglés.
+- Soporte de tool calling / function calling: no disponible en la información proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
+- Capacidades multilingües: no disponible; los idiomas no están declarados en el repositorio.
+- Modo thinking, visión o audio: no disponible en la información proporcionada.
 
 ## Casos de uso
 
-- Inferencia local en Apple Silicon con memoria unificada limitada: el modelo permite ejecutar un MoE podado y cuantizado en un Mac mini M4 Pro de 64 GB manteniendo solo 15,6 GB de expertos residentes y leyendo el resto desde SSD, lo que lo hace adecuado para experimentación local sin GPU dedicada.
-- Evaluación de técnicas de cuantización extrema: investigadores que estudien la conversión ternario a affine 2 bits pueden usar este repositorio como referencia de equivalencia sin pérdida, comparando logits y tokens generados frente al modelo ternario original.
-- Pruebas de decodificación de código en local: con un rendimiento de 5,28 tok/s en un prompt de programación, sirve para validar pipelines de generación de código en entornos sin acceso a la nube, aceptando la latencia como contrapartida.
-- Desarrollo de runtimes de inferencia MoE con offload: el repositorio está diseñado para el runner C++ de Jakevin/moe-offload, por lo que es útil para probar estrategias de caché LRU de expertos y presupuestos de memoria residente configurables con `--resident-gb`.
-- Reproducción de experimentos de poda de expertos: la conservación del 50 % de expertos enrutados en las capas 1-47 y del 100 % en la capa 0 permite estudiar el impacto de la poda en la calidad de generación frente al modelo completo.
-- Verificación de integridad de pesos: el runner incluye `--check-weights`, que permite validar cada tensor del repositorio antes de desplegarlo, útil en pipelines de CI para artefactos de modelos cuantizados.
+- Inferencia local en Apple Silicon con memoria limitada: el modelo está pensado para ejecutarse con el runner en C++ de `Jakevin/moe-offload` y un presupuesto de expertos residentes de 15,6 GB, con una RSS de proceso de aproximadamente 23,3 GB, lo que lo hace adecuado para Mac con 32 GB o más.
+- Investigación sobre cuantización y poda de MoE: la conversión sin pérdida de ternario a 2 bits afines y la conservación de la poda al 50% lo convierten en un caso de estudio reproducible para medir el impacto de la cuantización en la salida.
+- Evaluación comparativa de formatos de experto: al ser equivalente en salida al modelo ternario K50, permite comparar velocidad y huella de memoria entre el formato ternario y el `2t` sobre el mismo hardware.
+- Generación de código asistida en local: las pruebas del autor usan prompts de programación en Python y el modelo mantiene la salida del modelo ternario, por lo que sirve para autocompletado y generación de código en entornos sin conexión.
+- Redacción de prosa en inglés en local: el autor mide velocidad con un prompt de prosa y obtiene 5,4 tok/s, suficiente para generación por lotes no interactiva.
+- Despliegue experimental en pipelines de MLX: para equipos que ya usan MLX y necesitan un MoE podado con presupuesto de memoria acotado, aunque requiere el runtime específico y no funciona con `mlx-lm` estándar.
+- Reproducción de resultados de cuantización: útil para validar que la conversión `2t` no altera la salida frente al modelo ternario, con métricas de equivalencia token a token y de logits.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. El autor indica explícitamente que no se ha ejecutado ningún benchmark sobre este modelo y que las cifras de velocidad provienen de una sola máquina y dos prompts.
+El autor no publica resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible. Sí aporta métricas de velocidad y memoria en un Mac mini con Apple M4 Pro y 64 GB, decodificación greedy, 256 tokens generados por prompt y un presupuesto de expertos residentes de 15,6 GB:
 
-| Métrica (Mac mini M4 Pro, 64 GB) | Prompt de código | Prompt de prosa |
+| Ejecución | Código (tok/s) | Prosa (tok/s) |
 |---|---:|---:|
-| Este modelo, solo (mediana de 3) | 5,28 tok/s | 5,85 tok/s |
-| Este modelo, intercalado con ternario K50 | 3,88 tok/s | 5,47 tok/s |
-| Ternario K50, intercalado con este modelo | 4,03 tok/s | 5,28 tok/s |
-| Tasa de acierto de caché de expertos en decodificación | 95,4 % | 96,4 % |
-| Todos los expertos residentes (23,1 GB, sin lecturas de SSD) | 1,71 tok/s | 1,86 tok/s |
+| Ternary K50, alternado con este modelo (A/B) | 4,03 | 5,28 |
+| Este modelo, alternado con ternary K50 (A/B) | 3,88 | 5,40 |
 
-Memoria con presupuesto de 15,6 GB: RSS máximo del proceso en torno a 23,3 GB, pico de MLX de 19,6 GiB y sin crecimiento de swap. Con todos los expertos residentes, el RSS del proceso fue de aproximadamente 30,6 GB.
-
-## Requisitos de hardware
-
-- Plataforma: exclusivamente Apple Silicon con MLX; no funciona en GPU NVIDIA ni en CPU x86.
-- VRAM/memoria unificada: el autor reporta un presupuesto de expertos residentes de 15,6 GB con RSS pico de 23,3 GB; con todos los expertos residentes se necesitan unos 23,1 GB solo para expertos y 30,6 GB de RSS.
-- GPU recomendadas: Apple M4 Pro con 64 GB es la única configuración documentada; en equipos con menos de 64 GB hay que reducir `--resident-gb`.
-- ¿Cabe en GPU de consumo? No aplica: no hay soporte para RTX 4090 ni similares; el modelo requiere memoria unificada de Apple Silicon.
-- Opciones de despliegue: únicamente el runner C++ `qwen38_decode` del repositorio Jakevin/moe-offload (`mlx-qwen38/cpp`), con CMake ≥ 3.24 y una build de MLX C++. No es compatible con vLLM, llama.cpp, Ollama, TGI ni `mlx-lm`.
-- Latencia y throughput: 5,28 tok/s en código y 5,85 tok/s en prosa en solitario; 1,71 y 1,86 tok/s con todos los expertos residentes. El autor no investigó la causa de que el modo totalmente residente sea más lento que el modo con offload.
+Datos adicionales del autor: RSS de proceso máximo de aproximadamente 23,3 GB con presupuesto de expertos de 15,6 GB; equivalencia de 256/256 tokens idénticos frente al modelo ternario K50 y diferencia absoluta máxima de logits de 0 en los primeros 16 pasos. El autor indica que la concordancia top-1 frente a una referencia no se ha medido para esta variante.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| Jakevin/Qwen3.8-Flash-Next-mixed-mlx-K50 | no disponible | no disponible | Affine 2/3/4 bits + `2t`, embeddings 8 bits | Qwen Community 1.0 | Hugging Face, solo runtime C++ propio |
-| Jakevin/Qwen3.8-Flash-Next-ternary-mlx-K50 | no disponible | no disponible | Ternario (5 trits/byte) | Qwen Community 1.0 | Hugging Face, runtime Python propio |
-| Qwen/Qwen3.8-Flash-Next | no disponible | no disponible | Original (bf16 presumiblemente) | Qwen Community 1.0 | Hugging Face |
+| Modelo | Cuantización / poda | Tamaño en disco | Ejecución | Concordancia top-1 medida | Velocidad medida (Mac mini M4 Pro 64 GB) | Uso sugerido |
+|---|---|---|---|---|---|---|
+| Qwen3.8-Flash-Next-mixed-mlx-K50 (este) | Ternario K50 convertido a 2 bits afines (`2t`); L00 con 512 expertos, L1-47 con 256 | 60,0 GB (archivos del repo) | Requiere runner en C++ de `Jakevin/moe-offload` | No medida frente a referencia; 256/256 tokens idénticos al ternario K50 | 5,28 / 5,85 tok/s (código / prosa, runner C++, presupuesto 15,6 GB) | Usuarios del runner en C++; misma salida que ternary K50 |
+| Qwen3.8-Flash-Next-mixed-mlx-K50-min3bit-oMLX | 256/512 expertos en las 48 capas; todos recuantizados desde FP8 (RTN): 32 capas a 3 bits, 16 a 4 bits | 65,7 GB (archivos del repo, incluye shards PLE) | oMLX listo para usar (`qwen4_exp`, MTP desactivado) | 0,840 (32 prompts; frente a GSQ-RCO Q2 sin podar) | Mediana 8,0 tok/s de decodificación; pico MLX ~34,8 GB | Recomendado para la mayoría de usuarios |
+| Qwen3.8-Flash-Next-ternary-mlx-K50 | Ternario MLX, 50% de expertos enrutados conservados (L00 con 512, L1-47 con 256) | 54 GB en total (`du -sh`; 21 GB capas + 30 GB PLE) | Cargador Python dedicado (`runtime_standalone.py`, requiere mlx-ternary) | 91,9% frente al ternario sin podar (8 secuencias in-sample) | 3,8-4,0 tok/s en caliente con caché de expertos; ~7,4 s/token sin caché | Menor memoria (~15 GB de pico sin caché); investigación / poca RAM |
 
-No se dispone de datos de rendimiento comparativo entre estos modelos en la información proporcionada, salvo la equivalencia exacta en tokens generados y logits entre este modelo y el ternario K50.
+El autor advierte que las cifras de concordancia se midieron de forma distinta en cada repositorio y no son directamente comparables. No se dispone de comparación con modelos de otras familias en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Solo funciona en Apple Silicon con MLX; no hay soporte para CUDA, ROCm ni CPU genérica.
-- Requiere un runtime que entienda el tipo de registro `2t`; `mlx-lm` y `mlx-vlm` estándar no pueden cargar el repositorio, y el `runtime.py` del repositorio ternario tampoco lee registros `2t`.
-- El autor no ha ejecutado ningún benchmark; las cifras de velocidad proceden de una sola máquina y dos prompts, por lo que no son representativas de otros equipos o cargas.
-- El modo con todos los expertos residentes es más lento que el modo con offload (1,71 frente a 5,28 tok/s en código) y la causa no está investigada, lo que desaconseja ese modo de despliegue.
-- Hereda todas las limitaciones y advertencias de evaluación del modelo ternario K50, según indica el propio autor.
-- Licencia Qwen Community 1.0: si el modelo o un derivado se usa en un producto o servicio comercial con más de 100 000 000 de usuarios activos mensuales o 20 000 000 USD de ingresos mensuales, el nombre del modelo debe mostrarse de forma destacada en la interfaz. Los negocios de Model-as-a-Service o AI Work Assistant requieren una licencia separada.
-- No hay información sobre sesgos, riesgo de alucinación, cobertura idiomática ni evaluación de calidad tras la poda del 50 % de expertos.
-- El repositorio tiene 213 descargas y 0 likes en el momento de la consulta, sin validación independiente conocida.
+- Requiere un runtime no estándar: `mlx-lm` y `mlx-vlm` no pueden cargar este repositorio directamente, y el `runtime.py` / `runtime_standalone.py` en Python del repositorio ternario no lee registros `2t`. Es necesario el runner en C++ de `Jakevin/moe-offload` (`mlx-qwen38/cpp`).
+- La concordancia top-1 frente a una referencia no se ha medido para esta variante, por lo que no hay una métrica de calidad publicada más allá de la equivalencia token a token con el modelo ternario.
+- El modelo está podado: se elimina el 50% de los expertos enrutados en las capas 1 a 47, lo que puede degradar capacidades respecto al modelo sin podar; no se documenta el impacto.
+- La cuantización agresiva (expertos en 2 bits, además de 3 y 4 bits) puede afectar a la coherencia en tareas de razonamiento prolongado; no hay evaluaciones publicadas al respecto.
+- No se declaran los idiomas soportados ni se documentan sesgos conocidos; las pruebas del autor se limitan a un prompt de código en Python y otro de prosa en inglés.
+- Riesgo de alucinación no evaluado en la información disponible; al ser un modelo conversacional, debe asumirse el riesgo habitual y validar salidas en producción.
+- La licencia qwen-community-1.0 (etiquetada como `other`) impone condiciones que deben revisarse en el archivo `LICENSE` antes de cualquier uso comercial; no se detallan aquí sus restricciones.
+- El rendimiento medido (3,88-5,40 tok/s) es bajo para uso interactivo y corresponde a un hardware concreto (M4 Pro, 64 GB) y a un presupuesto de expertos de 15,6 GB; no se garantiza en otros equipos.
+- El repositorio tiene 534 descargas y 0 likes en el momento de la consulta, lo que indica una validación comunitaria muy limitada.
 
 ## Enlaces
 
 - Hugging Face: https://huggingface.co/Jakevin/Qwen3.8-Flash-Next-mixed-mlx-K50
-- Modelo ternario base: https://huggingface.co/Jakevin/Qwen3.8-Flash-Next-ternary-mlx-K50
-- Runner C++: https://github.com/Jakevin/moe-offload/tree/main/mlx-qwen38/cpp
-- README del runner: https://github.com/Jakevin/moe-offload/blob/main/mlx-qwen38/cpp/README.md
-- Modelo original: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
+- Modelo base (ternario K50): https://huggingface.co/Jakevin/Qwen3.8-Flash-Next-ternary-mlx-K50
+- Variante min3bit-oMLX: https://huggingface.co/Jakevin/Qwen3.8-Flash-Next-mixed-mlx-K50-min3bit-oMLX
+- Runner en C++ (moe-offload): https://github.com/Jakevin/moe-offload/tree/main/mlx-qwen38/cpp
+- Repositorio moe-offload: https://github.com/Jakevin/moe-offload

@@ -55,31 +55,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Microsoft Entra admin center",
-      "url": "https://aad.portal.azure.com/?nonceErrorSeen=true",
-      "snippet": "Manage and secure your organization's identity and access with advanced tools in Microsoft Entra admin center."
-    },
-    {
-      "title": "Empero — Independent AI Research Lab",
-      "url": "https://empero.org/",
-      "snippet": "Empero is an independent AI research lab in Germany building small, efficient language models you can own and run yourself. Latest: Qwen3.8 distilled to 9B / 4B / 2B, and a GDN-aware 27B Ridge GGUF at 11.7 GiB. 1M+ downloads on Hugging Face."
-    },
-    {
-      "title": "Sign in to your account - admin.microsoft.com",
-      "url": "https://admin.microsoft.com/AdminPortal/Home",
-      "snippet": "Sign in to manage your Microsoft account and access all services securely."
-    },
-    {
-      "title": "empero-ai/Qwen3.8-4B-Distill · Hugging Face",
-      "url": "https://huggingface.co/empero-ai/Qwen3.8-4B-Distill",
-      "snippet": "Instructions to use empero-ai/Qwen3.8-4B-Distill with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
-    },
-    {
-      "title": "Microsoft Entra admin center",
-      "url": "https://entra.microsoft.com/microsoft.com/",
-      "snippet": "Manage your Microsoft Entra account settings and access personalized services in the admin center."
-    }
-  ]
+  "sources": []
 }

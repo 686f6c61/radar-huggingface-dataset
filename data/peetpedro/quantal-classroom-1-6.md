@@ -2,81 +2,105 @@
 
 ## Resumen
 
-quantal-classroom-1.6 es un modelo de lenguaje de 1.700 millones de parámetros desarrollado por PeetPedro, basado en la arquitectura Qwen3-1.7B y cuantizado de forma ternaria (BitNet b1.58) mediante una técnica propia denominada *thresholded-ternary*. El modelo se ha obtenido por destilación de un conjunto de dos profesores —Qwen3-8B y Qwen3-14B— utilizando un esquema *ring-of-teachers* en el que el estudiante aprende de la señal media de ambos. La principal innovación es el entrenamiento *deployed-forward*: la cuantización aplicada durante el entrenamiento es bit-idéntica a la que se ejecuta en inferencia, lo que elimina la brecha entre el modelo entrenado y el desplegado.
+quantal-classroom-1.6 es un modelo de generacion de texto derivado de Qwen/Qwen2.5-0.5B, publicado por el autor PeetPedro dentro de la familia de entrenamiento "8b.is AI". Se trata de un fine-tune orientado a la experimentacion con cuantizacion ternaria (formato b1.58, en la linea de BitNet) sobre un transformer denso de 0,5 mil millones de parametros, empaquetado en formato MLX para su ejecucion en hardware Apple Silicon. El modelo se distribuye con licencia Apache 2.0 y declara soporte para ingles y hungaro.
 
-El modelo está pensado para entornos con recursos limitados, gracias a su tamaño reducido y a la cuantización ternaria, que reduce drásticamente el uso de memoria y cómputo. Se distribuye con licencia Apache-2.0 y su implementación de referencia utiliza la librería MLX, orientada a Apple Silicon. La documentación no especifica la longitud de contexto ni los idiomas soportados, aunque al derivar de Qwen3-1.7B es probable que herede sus capacidades, sin que esto esté confirmado en la información disponible.
+El interes tecnico del modelo no reside en su capacidad bruta —es un modelo de 0,5B, muy por debajo de los estandares actuales— sino en su propuesta de eficiencia: el autor reporta un peso ternario de 0,42 GB frente a 3,4 GB en FP16, con un incremento de throughput de 28 a 118 tokens por segundo en Apple Silicon y movil, lo que supone unas 4,2 veces mas velocidad. El pipeline de entrenamiento combina destilacion desde un "consejo" de profesores (Qwen3-8B y Qwen3-14B) con exportacion ternaria y verificacion de integridad mediante hash.
+
+La relevancia actual del modelo es acotada y de nicho: sirve como banco de pruebas reproducible para investigacion en cuantizacion extrema y destilacion multi-profesor en dispositivos de consumo, no como alternativa a modelos de proposito general. El propio autor advierte que las cifras presentadas no son benchmarks externos salvo que se indique lo contrario, y que la evaluacion se realizo sobre particiones del mismo fichero de entrenamiento.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer (Qwen3) con capas lineales ternarias (BitNet b1.58) |
-| Parametros totales | 1.7B |
-| Parametros activos | No aplica (modelo denso) |
-| Longitud de contexto | No disponible |
-| Tipos de cuantizacion | Ternaria por grupos (thresholded-ternary, G=64, band 0.5·scale, codigos {-1,0,+1}); pesos base en precision completa (safetensors) |
-| Idiomas soportados | No disponible |
-| Licencia | Apache-2.0 |
-| Formato de pesos | safetensors (MLX) y exportacion a capsula ternaria (JSON) para ayeOS |
+| Arquitectura | Transformer denso (derivado de Qwen2.5-0.5B), con exportacion ternaria b1.58 |
+| Parametros totales | 0,5 mil millones (modelo base Qwen2.5-0.5B) |
+| Parametros activos | no aplica (no es MoE) |
+| Longitud de contexto | no disponible (la evaluacion declarada usa ctx 256) |
+| Tipos de cuantizacion | Ternaria b1.58 (peso de 0,42 GB); pesos safetensors en formato MLX |
+| Idiomas soportados | ingles, hungaro |
+| Licencia | Apache 2.0 |
+| Formato de pesos | safetensors (MLX), 8 ficheros, repo de 3,5 GB |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de la arquitectura Qwen3-1.7B, un transformer denso con atención causal estándar. La diferencia clave es la sustitución de las capas lineales por versiones cuantizadas ternarias: cada grupo de 64 pesos se normaliza por su media en valor absoluto, y cada peso se codifica como -1, 0 o +1 según un umbral de 0.5 veces la escala del grupo. Esta cuantización se aplica tanto en el entrenamiento como en la inferencia (*deployed-forward*), garantizando que el modelo exportado se comporte exactamente igual que el entrenado.
+El modelo parte de Qwen/Qwen2.5-0.5B, un transformer denso decoder-only de 0,5B parametros con tokenizer de vocabulario 151.643. Sobre esa base se aplica un proceso de destilacion descrito como "council of elders": un consenso por divergencia KL entre dos profesores, Qwen3-8B y Qwen3-14B, frente a una variante de profesor unico (Qwen3-14B) y una ablacion de entrenamiento solo con entropia cruzada. Los datos de entrenamiento provienen de los corpus PeetPedro/ultrawhale-dogfood y PeetPedro/cogitoergosumma-corpus.
 
-El entrenamiento se realizó mediante destilación desde dos profesores, Qwen3-8B y Qwen3-14B, ambos con el mismo tokenizador que el estudiante (vocabulario de 151.643 tokens). La función de pérdida combina entropía cruzada (CE) con divergencia KL entre el estudiante y la media de los profesores, con un peso de 0.5 para cada término. El factor β de la pérdida KL se incrementó progresivamente desde 0 durante 2 épocas. El conjunto de datos utilizado, PeetPedro/quantal-train-v2, contiene 55.445 muestras. El entrenamiento se ejecutó en clústeres HF Jobs con GPUs H200.
-
-El resultado reportado es una pérdida de validación (CE enmascarada) de 1.6120, inferior a la obtenida con un solo profesor (1.8166) y muy por debajo de la línea base sin destilación (2.1469). La model card incluye una comprobación de honestidad (*harness gate*) que verifica que la mejora es atribuible al entrenamiento y no a cambios en el software de evaluación.
+La innovacion principal es la exportacion ternaria en el esquema b1.58, que reduce el peso del artefacto a 0,42 GB frente a 3,4 GB en FP16. El autor declara verificacion del worktree mediante restricciones AST (100% AST-constrained, sin reward hacking) y un gate de paridad entre un runner en Rust y el forward de referencia, ademas de un control de hash posterior al push (`checkpoint_sha256`) para garantizar que el artefacto publicado coincide con el declarado en el manifiesto. No se especifican en la informacion disponible el numero total de tokens de entrenamiento, la composicion exacta del dataset ni si se aplicaron fases de RLHF o DPO.
 
 ## Capacidades
 
-- Generación de texto y conversación, según el pipeline declarado (`text-generation`).
-- Inferencia eficiente gracias a la cuantización ternaria, que reduce el tamaño del modelo y el coste computacional respecto a un modelo denso de igual número de parámetros.
-- Implementación en MLX, lo que permite ejecución optimizada en hardware Apple Silicon (Mac con Metal).
-- Licencia Apache-2.0, que permite uso comercial, modificación y redistribución sin restricciones adicionales.
-- No se documentan capacidades de *tool calling*, agentes, visión, audio ni *thinking mode* en la información proporcionada.
+- Generacion de texto conversacional en ingles y hungaro.
+- Razonamiento basico y continuacion de texto dentro de la ventana de contexto evaluada (256 tokens en la validacion declarada).
+- Ejecucion local en Apple Silicon y dispositivos moviles gracias al formato MLX y a los pesos ternarios.
+- Destilacion multi-profesor como tecnica reproducible (el modelo es tambien un artefacto de investigacion sobre el metodo).
+- No se declara soporte de tool calling, function calling, agentes, vision, audio ni modo de razonamiento explicito.
+- No se declara capacidad multilingue mas alla de ingles y hungaro.
 
 ## Casos de uso
 
-- Despliegue en dispositivos Apple: gracias a la librería MLX, el modelo puede ejecutarse de forma nativa en Macs con Apple Silicon, aprovechando la GPU integrada para aplicaciones de escritorio o prototipos locales.
-- Asistente conversacional ligero: su tamaño de 1.7B y la cuantización ternaria lo hacen adecuado para entornos con restricciones de memoria, como aplicaciones móviles o sistemas embebidos, donde un modelo denso de mayor tamaño no sería viable.
-- Experimentación académica e investigación: el modelo es un caso práctico de destilación con múltiples profesores y cuantización ternaria, útil para estudiar la interacción entre ambas técnicas y la reproducibilidad del entrenamiento *deployed-forward*.
-- Generación de texto en entornos con baja latencia: al reducir el número de bits por parámetro, la inferencia es más rápida en hardware limitado, lo que puede servir para sistemas de respuesta en tiempo real.
-- Base para fine-tuning adicional: al ser Apache-2.0 y tener un tamaño manejable, puede ajustarse para tareas específicas (clasificación, extracción de información, etc.) con recursos moderados.
-- Validación de pipelines de cuantización: el modelo incluye una exportación a cápsula ternaria (JSON) para el runtime ayeOS, lo que permite probar flujos de despliegue no estándar en entornos de investigación.
+- Experimentacion en cuantizacion ternaria: el modelo sirve como referencia reproducible para medir el impacto de b1.58 sobre perplejidad y throughput en un transformer de 0,5B, comparando con la base FP16.
+- Inferencia en dispositivos de consumo Apple: con 0,42 GB de pesos ternarios y MLX, es viable ejecutarlo en portatiles y moviles con memoria unificada limitada, a 118 tok/s segun el autor.
+- Prototipado de asistentes conversacionales ligeros en ingles o hungaro: util para demos offline donde no se requiere alta calidad linguistica pero si baja latencia y ausencia de red.
+- Investigacion en destilacion multi-profesor: el protocolo de consenso KL entre Qwen3-8B y Qwen3-14B puede replicarse sobre otras bases pequenas usando este modelo como caso de estudio.
+- Verificacion de pipelines de integridad de artefactos: el esquema de hash gate y paridad Rust/referencia documentado es reutilizable en despliegues que exigen trazabilidad de pesos.
+- Educacion y docencia: el tag "classroom" y el enfoque local-first lo hacen adecuado para talleres sobre cuantizacion, MLX y entrenamiento reproducible en hardware propio.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, etc.) en la información disponible. La única métrica reportada es la pérdida de validación en el conjunto de entrenamiento (1.6120), que no es comparable con otros modelos. Por tanto, no es posible evaluar su rendimiento relativo en tareas generales.
+Los datos siguientes son los declarados por el autor en la model card. Corresponden a perplejidad (cross-entropy enmascarada) sobre particiones tematicas del mismo fichero de entrenamiento, no sobre corpus externos, con tokenizer de Qwen (vocabulario 151.643) y contexto de 256 tokens.
+
+| Arm (ablacion) | Perplejidad de validacion |
+|---|---|
+| Council consensus KL (Qwen3-8B + 14B) — quantal-classroom-1.6 | 1,6120 |
+| Single-teacher (Qwen3-14B) | 1,8166 |
+| Base 1.7B sin cuantizar | 2,1369 |
+| Solo CE (cross-entropy) | 2,1469 |
+
+| Metrica de eficiencia | Valor declarado |
+|---|---|
+| Throughput en Apple Silicon / movil | 4,2x respecto a la referencia |
+| Tamano ternario vs FP16 | 0,42 GB vs 3,4 GB |
+| Tokens por segundo | 28 (FP16) -> 118 (ternario) |
+
+No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) en la informacion disponible.
 
 ## Requisitos de hardware
 
-- No se proporcionan datos oficiales de VRAM. No obstante, al tratarse de un modelo de 1.7B con cuantización ternaria, el tamaño en memoria durante la inferencia sería considerablemente inferior al de un modelo denso equivalente. Estimaciones razonables sitúan el consumo en torno a 1-2 GB, pero no son datos verificados.
-- El repositorio contiene safetensors en precisión completa (3.5 GB), lo que permite cargar el modelo en GPUs con al menos 4 GB de VRAM si se usa sin cuantización. La cuantización ternaria se aplica en tiempo de exportación o inferencia, reduciendo drásticamente el requisito.
-- GPU recomendadas: cualquier GPU compatible con MLX (Apple Silicon) para ejecución nativa. Para uso en CUDA, no se indica soporte oficial; sería necesario convertir el modelo a otro formato.
-- Opciones de despliegue: MLX (librería principal), exportación a cápsula ternaria para el runtime ayeOS, y posiblemente otros runners si se adapta el formato (no documentado).
-- Latencia y throughput: no disponibles.
+- VRAM/memoria: aproximadamente 0,42 GB para los pesos ternarios; el repo completo ocupa 3,5 GB, por lo que conviene descargar solo los ficheros necesarios.
+- GPU recomendadas: el formato es MLX, por lo que el objetivo principal son chips Apple (series M1 a M4) con memoria unificada. No se declara soporte CUDA.
+- Cabe en GPU de consumo: si, en cualquier Mac Apple Silicon con 8 GB o mas de memoria unificada; en moviles Apple compatibles con MLX.
+- Opciones de despliegue: libreria MLX (mlx-lm) como via principal. No se declara compatibilidad con vLLM, llama.cpp, Ollama ni TGI en la informacion disponible.
+- Latencia y throughput: 118 tok/s en ternario frente a 28 tok/s en FP16 segun el autor, sobre Apple Silicon y movil.
 
 ## Comparativa con modelos similares
 
-No se dispone de información suficiente para realizar una comparativa cuantitativa con otros modelos de la misma categoría (modelos de 1.7B cuantizados o ternarios). La siguiente tabla compara características estructurales conocidas con el modelo base Qwen3-1.7B, del que deriva.
+| Modelo | Parametros | Contexto | Cuantizacion | Licencia | Notas |
+|---|---|---|---|---|---|
+| quantal-classroom-1.6 | 0,5B | no disponible (eval. a 256) | Ternaria b1.58, MLX | Apache 2.0 | Destilado de Qwen3-8B/14B; enfoque en eficiencia |
+| Qwen/Qwen2.5-0.5B | 0,5B | 32.768 tokens (segun especificacion del modelo base) | FP16/BF16, GGUF via terceros | Apache 2.0 | Modelo base; mayor contexto declarado y ecosistema amplio |
+| BitNet b1.58 (referencias de Microsoft Research) | escalas variables | no disponible | Ternaria nativa desde preentrenamiento | MIT (codigo) | Referencia academica del esquema ternario; no es un fine-tune |
 
-| Modelo | Parametros | Contexto | Licencia | Cuantizacion |
-|---|---|---|---|---|
-| quantal-classroom-1.6 | 1.7B | No disponible | Apache-2.0 | Ternaria (BitNet b1.58) |
-| Qwen3-1.7B (base) | 1.7B | No disponible | Apache-2.0 | Original (sin cuantizar) |
-
-No se incluyen otros modelos ternarios como BitNet b1.58 por falta de datos verificables en la información proporcionada.
+La comparacion con el modelo base es la mas directa: quantal-classroom-1.6 anade destilacion y exportacion ternaria, pero no declara una ventana de contexto equivalente a la del Qwen2.5 original ni un ecosistema de despliegue comparable.
 
 ## Limitaciones y advertencias
 
-- La cuantización ternaria puede degradar la calidad en tareas que requieren alta precisión numérica, aunque no se dispone de benchmarks que confirmen el impacto real.
-- No se documentan sesgos específicos. Al ser una destilación de Qwen3-8B y Qwen3-14B, es plausible que herede sesgos presentes en los profesores, pero no hay evidencia empírica en la model card.
-- La longitud de contexto no está especificada, lo que limita su uso en aplicaciones que requieran ventanas de contexto largas sin verificación previa.
-- La model card menciona un problema de procedencia de los pesos (provenance gap) en versiones anteriores, lo que introduce incertidumbre sobre la integridad del checkpoint actual. El autor declara que el problema está resuelto, pero no se aportan pruebas externas.
-- El rendimiento en dominios fuera del conjunto de entrenamiento (quantal-train-v2) no está verificado; el modelo podría no generalizar bien a tareas no relacionadas.
-- No se han publicado resultados de benchmarks, por lo que no es posible comparar su calidad con otros modelos de tamaño similar.
+- La perplejidad declarada (1,6120) se mide sobre particiones del mismo fichero de entrenamiento, no sobre corpus externos; no es comparable con benchmarks publicos y el propio autor lo advierte.
+- El campo `verified` del model-index esta a `false`: la metrica no ha sido verificada de forma independiente.
+- El autor documenta que el blob `quantal_model.safetensors` ha entregado en ocasiones un checkpoint distinto del declarado en el manifiesto; aunque se ha anadido un hash gate posterior al push, conviene verificar `checkpoint_sha256` antes de usar los pesos.
+- Modelo de 0,5B: capacidad de razonamiento, codigo y matematicas muy limitada; riesgo elevado de alucinacion en tareas factuales.
+- Soporte linguistico restringido a ingles y hungaro; no se declara castellano.
+- Contexto de evaluacion de solo 256 tokens; no se especifica la longitud de contexto efectiva en inferencia.
+- Dependencia de MLX limita el despliegue a hardware Apple; no hay soporte declarado para CUDA, ROCm ni inferencia en servidores x86 convencionales.
+- Licencia Apache 2.0 permite uso comercial, pero la calidad del modelo y la ausencia de benchmarks estandar desaconsejan su uso en produccion sin evaluacion propia.
+- No se declaran mitigaciones de sesgo ni filtros de seguridad.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/PeetPedro/quantal-classroom-1.6
-- Dataset de entrenamiento: https://huggingface.co/datasets/PeetPedro/quantal-train-v2
+- Hugging Face: https://huggingface.co/PeetPedro/quantal-classroom-1.6
+- Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B
+- Dataset de entrenamiento: https://huggingface.co/datasets/PeetPedro/ultrawhale-dogfood
+- Dataset de entrenamiento: https://huggingface.co/datasets/PeetPedro/cogitoergosumma-corpus
+- Familia 8b.is: https://8b.is
+- Classroom: https://classroom.vaked.dev
+- The library: https://pocoo.vaked.dev
+- GitHub: https://github.com/8b-is

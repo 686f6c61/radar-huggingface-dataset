@@ -2,92 +2,84 @@
 
 ## Resumen
 
-Muse-Glimmer-30B Topo-Governed CBP (FineWeb) GGUF es la conversión cuantizada a Q4_K_M, mediante llama.cpp, del modelo base `frankmorales2020/muse-glimmer-30b-topo-governed-cbp-fineweb`, desarrollado por Frank Morales en Sovereign Machine Laboratory (SOMALA). El modelo parte de una base de 30 mil millones de parámetros (27.854.794.240 parámetros reales según los safetensors del repositorio base) y ha sido entrenado sobre el corpus HuggingFaceFW/fineweb aplicando una técnica propietaria denominada Topological Continual Backpropagation (Topo-CBP), que el autor presenta como una solución al dilema estabilidad-plasticidad de Grossberg (1982) sin recurrir a adaptadores PEFT/LoRA ni a buffers de replay.
+Muse-Glimmer-30B Topo-Governed CBP (FineWeb) GGUF es una conversión a formato GGUF del modelo base `frankmorales2020/muse-glimmer-30b-topo-governed-cbp-fineweb`, cuantizada a Q4_K_M mediante llama.cpp. El modelo lo desarrolla el autor independiente frankmorales2020 (Sovereign Machine Laboratory, SOMALA) y se presenta como una demostración de Topological Continual Backpropagation (Topo-CBP), una técnica propietaria que, según su autor, elimina el olvido catastrófico anclando la dinámica de gradientes a coordenadas armónicas de números primos y a una constante de atenuación de Euler.
 
-La propuesta técnica del autor sitúa la innovación en el nivel de los operadores lineales: Topo-CBP ancla una topología matemática invariante a coordenadas armónicas de números primos estacionarios y la modula con una constante de atenuación de Euler. El resultado que se publicita es la conservación bit a bit de esa invariancia tras la cuantización a 4 bits, verificada mediante un digest SHA-256 del estado. Esta GGUF está pensada para ejecución autónoma en CPU sobre RAM convencional, con un tamaño de repositorio de 16,9 GB, lo que permite desplegar el sistema completo sin GPU ni APIs en la nube.
+El modelo base es una adaptación del que el autor denomina "modelo base de 30 mil millones de parámetros de Meta", entrenada sobre HuggingFaceFW/fineweb sin uso de adaptadores PEFT/LoRA. El recuento real de parámetros en safetensors es de 27.854.794.240 (aproximadamente 27,85 mil millones). Esta variante GGUF es exclusivamente de texto: la multimodalidad del modelo original no se conserva en esta conversión.
 
-Es relevante ahora porque propone un caso poco habitual: un modelo de 30B ejecutable en hardware de consumo o servidores sin acelerador, con un enfoque de aprendizaje continuo que evita el olvido catastrófico. Conviene señalar que la model card es explícita sobre las limitaciones de este artefacto concreto: es solo texto (el original era multimodal), no soporta modo chat y está validado únicamente con completado plano. La licencia declarada es Apache 2.0, aunque la model card remite a la licencia del modelo base.
+La relevancia de esta ficha es doble. Por un lado, documenta un artefacto de 16,9 GB que puede ejecutarse íntegramente en CPU sobre RAM convencional, lo que lo hace interesante para despliegues de borde sin GPU. Por otro, conviene tratarlo con cautela: las afirmaciones del autor sobre invariancia bit a bit y conservación topológica tras la cuantización a 4 bits no están respaldadas por benchmarks independientes ni por resultados estándar publicados en la información disponible.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer (base de 30B; detalles internos de capas y atención no disponibles) |
-| Parámetros totales | 27.854.794.240 (~27,85B) |
-| Parámetros activos | No aplica (no es MoE según la información disponible) |
+| Arquitectura | Transformer (base de 30B según el autor; detalles de capas y atención no disponibles) |
+| Parametros totales | 27.854.794.240 (según safetensors del modelo base) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | 2048 tokens en el ejemplo de inferencia de la model card (máximo nativo no disponible) |
-| Tipos de cuantización | Q4_K_M (4 bits, variante K-quant medium de llama.cpp) |
-| Idiomas soportados | No disponible |
-| Licencia | Apache 2.0 (la model card remite a la licencia del modelo base) |
-| Formato de pesos | GGUF (`muse-glimmer-30b-card-faithful-Q4_K_M.gguf`) |
-| Tamaño del repositorio | 16,9 GB |
-| Modelo base | frankmorales2020/muse-glimmer-30b-topo-governed-cbp-fineweb |
-| Pipeline | text-generation |
-| Tokenizer | Heredado del repositorio base |
-| `lm_head.pt` | No aplicado (el código de inferencia del repo base tampoco lo usa) |
+| Tipos de cuantizacion | Q4_K_M (4 bits, formato GGUF); el modelo base en bfloat16 |
+| Idiomas soportados | no disponible |
+| Licencia | apache-2.0 (según metadatos; la model card remite a la licencia del modelo base) |
+| Formato de pesos | GGUF (archivo `muse-glimmer-30b-card-faithful-Q4_K_M.gguf`); base en safetensors |
 
 ## Arquitectura y entrenamiento
 
-La información disponible no detalla la arquitectura interna del transformer base (número de capas, cabezas de atención, dimensión oculta ni tipo de atención). Lo que sí se documenta es el régimen de entrenamiento: el modelo se entrenó sobre HuggingFaceFW/fineweb bajo Topological Continual Backpropagation (Topo-CBP). Según el autor, esta técnica no congela parámetros heurísticamente ni apila deuda de adaptadores, sino que establece una topología matemática invariante anclada a coordenadas armónicas de números primos estacionarios (P = {2, 3, 5, 7, 11, 13}) y modulada por la constante de atenuación de Euler (Λ ≈ 0,9785142874). El objetivo declarado es resolver el dilema estabilidad-plasticidad sin recurrir a experience replay, regularización de pesos (EWC/SI) ni shims LoRA/PEFT.
+La información disponible no detalla la arquitectura interna del transformer (número de capas, dimensión oculta, tipo de atención, uso de RoPE o GQA). El autor describe el modelo base como una adaptación del "modelo base de 30 mil millones de parámetros de Meta", sin especificar cuál. El entrenamiento se realizó sobre el dataset HuggingFaceFW/fineweb bajo el régimen Topo-CBP, que según el autor ancla los operadores lineales a coordenadas armónicas de primos (2, 3, 5, 7, 11, 13) moduladas por la constante de atenuación de Euler (Λ ≈ 0,9785142874). No se indica el número de tokens de entrenamiento, la composición exacta del dataset ni si hubo fases de RLHF o DPO.
 
-El autor reporta dos realizaciones del mismo sistema: un runtime maestro en GPU con bfloat16 que conserva la manipulación de cabezas de proyección a plena precisión, y este runtime autónomo en CPU con cuantización Q4_K_M. Los resultados empíricos publicitados incluyen invariancia de silicio bit a bit con deriva de coordenadas nula (Δ_drift = 0,000000000000) y un digest SHA-256 del estado (c8b99e403ffc1fb48069aa0db3365713e70d1224fb2c052effe436b04c5c54c1) que, según el autor, demuestra que los bloqueos topológicos sobreviven a los mapeos no lineales de la cuantización a enteros de 4 bits. No se especifica el número de tokens de entrenamiento, la composición exacta del dataset más allá de FineWeb, ni si hubo fases de RLHF o DPO.
+La innovación declarada es Topo-CBP como alternativa a experience replay, regularización de pesos (EWC/SI) y adaptadores LoRA/PEFT, con el objetivo de preservar el conocimiento previo durante el aprendizaje continuo sin congelar parámetros ni acumular deuda de adaptadores. El autor afirma una "invariancia de silicio bit a bit" con deriva de coordenadas cero (Δ_drift = 0.000000000000) y un digest SHA-256 del estado que demostraría que los "bloqueos topológicos" sobreviven a la cuantización entera de 4 bits. Estas afirmaciones no van acompañadas de evaluaciones de benchmarks estándar en la información proporcionada.
 
 ## Capacidades
 
-- Generación de texto por completado plano: la model card valida el uso con `llama-completion -no-cnv`, es decir, sin modo conversacional.
-- Discurso técnico coherente en CPU: el autor reporta generación de discurso técnico coherente sobre hilos de CPU sin degradación catastrófica.
-- Aprendizaje continuo sin olvido catastrófico: capacidad declarada del régimen Topo-CBP, orientada a actualizaciones incrementales preservando maniquíes de tareas previas.
-- Ejecución autónoma en edge: inferencia completa del sistema de 30B en RAM de host convencional, sin GPU ni APIs en la nube.
-- Multimodalidad: no disponible en esta GGUF; la model card indica que el modelo original era multimodal pero esta conversión es solo texto.
-- Tool calling / function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingües: no disponible.
-- Modo thinking, visión o audio: no disponible en este artefacto.
+- Generación de texto por completación simple (`llama-completion -no-cnv`); el modo chat no está soportado en esta build según la model card.
+- Razonamiento y discurso técnico coherente en CPU, según la prueba cualitativa del autor.
+- Capacidades multilingües: no documentadas.
+- Tool calling / function calling: no documentado.
+- Soporte de agentes y razonamiento multi-paso: no documentado.
+- Visión: el modelo original es multimodal, pero esta conversión GGUF es solo texto.
+- Modo thinking, audio u otras capacidades especiales: no disponibles.
 
 ## Casos de uso
 
-- Procesamiento por lotes de texto en servidores sin GPU: al ocupar 16,9 GB en Q4_K_M, el modelo puede cargarse íntegramente en RAM de un servidor de CPU y ejecutar tareas de completado de texto, resumen o extracción sobre grandes volúmenes de documentos sin depender de aceleradores.
-- Despliegue en entornos air-gapped o de borde: la ausencia de dependencia de APIs en la nube y de stacks de drivers propietarios permite ejecutarlo en instalaciones aisladas, como plantas industriales o infraestructura on-premise con requisitos de soberanía de datos.
-- Investigación en aprendizaje continuo: sirve como banco de pruebas para reproducir los experimentos de Topo-CBP descritos en el preprint de Zenodo, comparando la invariancia del estado entre el runtime GPU en bfloat16 y el runtime CPU cuantizado.
-- Generación de documentación técnica y borradores: con completado plano y ventana de 2048 tokens, es adecuado para autocompletar secciones de documentación, notas de ingeniería o descripciones de API a partir de un prefijo.
-- Prototipado de bajo coste en estaciones de trabajo: un desarrollador puede evaluar el comportamiento de un modelo de 30B en su propia máquina sin adquirir GPU de datacenter, usando llama.cpp compilado para CPU.
-- Auditoría de cuantización: el digest SHA-256 y la métrica de deriva permiten verificar de forma mecánica que el proceso de cuantización Q4_K_M preserva las propiedades declaradas del estado, útil en pipelines de validación de releases.
-- Educación y demostraciones offline: para talleres o cursos donde no se dispone de clúster, el modelo permite mostrar inferencia de gran escala en hardware asequible.
+- Despliegue en CPU sin GPU: el artefacto de 16,9 GB en Q4_K_M cabe en RAM convencional (por ejemplo, 32 GB) y permite inferencia con llama.cpp sin dependencia de CUDA, útil en entornos de borde o air-gapped.
+- Experimentación con aprendizaje continuo: sirve como banco de pruebas para estudiar las afirmaciones de Topo-CBP sobre olvido catastrófico, comparando el comportamiento del modelo base bf16 y la versión cuantizada.
+- Generación de texto técnico por completación: adecuado para tareas de continuación de documentos, borradores o notas técnicas donde no se requiere modo chat.
+- Investigación reproducible: el autor publica notebook, preprint en Zenodo y digest SHA-256, lo que facilita la verificación de artefactos en estudios de reproducibilidad.
+- Prototipado de pipelines de inferencia local: integrable con `llama-cpp-python` para servicios ligeros de generación de texto en servidores sin acelerador.
+- Docencia y divulgación: ejemplo práctico de cuantización GGUF de un modelo de ~28B y de las limitaciones de ejecutar modelos grandes en CPU.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La model card únicamente reporta métricas internas de invariancia (deriva de coordenadas Δ_drift = 0,000000000000 y digest SHA-256 del estado), que no son comparables con evaluaciones estándar como MMLU, HumanEval o GSM8K.
+No se han publicado resultados de benchmarks en la información disponible. La model card solo reporta métricas internas del autor (invariancia bit a bit, deriva cero y digest SHA-256), que no son benchmarks de calidad lingüística ni de razonamiento y no permiten comparación con otros modelos.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no aplica en el modo CPU; el artefacto Q4_K_M ocupa 16,9 GB y se ejecuta en RAM de host. Con `n_gpu_layers=-1` y una build CUDA de llama.cpp puede descargarse por completo en GPU, requiriendo del orden de 17-20 GB de VRAM considerando overhead de contexto y buffers (estimación, no dato oficial).
-- GPU recomendadas: no especificadas por el autor. Por tamaño de pesos, encajaría en A100 40/80 GB, H100, RTX 4090 (24 GB) y RTX A6000 (48 GB); en GPUs de 16 GB no cabría a plena descarga.
-- ¿Cabe en GPU de consumo? Sí, en RTX 4090 (24 GB) y modelos con 24 GB o más, siempre con build CUDA de llama.cpp. En GPUs de 8-12 GB requeriría offloading parcial a RAM.
-- Opciones de despliegue: llama.cpp (nativo, vía `llama-completion` y `llama-cpp-python`). No se documenta soporte para vLLM, TGI, Ollama ni otros motores.
-- Latencia y throughput: no disponibles. La model card no publica cifras de tokens por segundo ni latencia medida.
-- Contexto de ejecución: el ejemplo oficial usa `n_ctx=2048`, `temperature=0.7`, `top_p=0.9` y `repeat_penalty=1.15`.
+- VRAM/RAM estimada: el archivo Q4_K_M ocupa 16,9 GB; se recomienda al menos 20-24 GB de RAM para CPU y margen para el contexto.
+- GPU recomendadas: no especificadas por el autor; con `n_gpu_layers=-1` puede descargarse a GPU si llama.cpp se compila con CUDA. Una RTX 4090 (24 GB) podría alojar el modelo cuantizado, aunque no hay cifras de rendimiento publicadas.
+- Consumer GPU: probablemente viable en GPUs de 24 GB con Q4_K_M; en GPUs de 8-16 GB requeriría offloading parcial o cuantizaciones más agresivas no publicadas.
+- Opciones de despliegue: llama.cpp y `llama-cpp-python` (build CPU o CUDA). No se documenta compatibilidad con vLLM, TGI u Ollama.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-No disponible. La información proporcionada no incluye comparaciones con otros modelos de la misma categoría ni datos de rendimiento que permitan establecer una comparativa rigurosa con alternativas de 30B o con otros modelos cuantizados a Q4_K_M.
+No disponible. La información proporcionada no incluye comparaciones con otros modelos de tamaño o tarea similar, ni datos de rendimiento que permitan establecer una comparativa rigurosa.
 
 ## Limitaciones y advertencias
 
-- Solo texto: el modelo original era multimodal, pero esta conversión GGUF elimina las capacidades de visión u otras modalidades.
-- Sin modo chat: la model card indica explícitamente que el modo conversacional no está soportado por esta build; solo se valida el completado plano.
-- Contexto limitado en el ejemplo: la configuración de referencia usa 2048 tokens; el máximo nativo no está documentado.
-- Idiomas no especificados: no se declaran los idiomas soportados, por lo que el rendimiento multilingüe es incierto.
-- Riesgo de alucinación: no cuantificado; no hay benchmarks ni evaluaciones de fidelidad publicadas.
-- Sesgos: no documentados. El entrenamiento sobre FineWeb puede heredar sesgos del corpus web, pero no se aportan análisis.
-- Licencia: se declara Apache 2.0, pero la model card remite a la licencia del modelo base; conviene verificar el repositorio base antes de uso comercial o redistribución.
-- Verificación de claims: las afirmaciones sobre invariancia topológica, deriva cero y supervivencia a la cuantización provienen del autor y no han sido replicadas de forma independiente en la información disponible.
-- Ecosistema limitado: solo se documenta llama.cpp; no hay integración verificada con vLLM, TGI u Ollama.
-- Madurez: el repositorio tiene 103 descargas y 0 likes, creado y actualizado el 30 de octubre de 2026, lo que indica una adopción muy baja y escasa validación por la comunidad.
+- Las afirmaciones sobre eliminación del olvido catastrófico e invariancia bit a bit tras cuantización a 4 bits provienen únicamente del autor y no están validadas por evaluaciones independientes ni por benchmarks estándar.
+- El modo chat no está soportado en esta build; solo completación de texto.
+- La multimodalidad del modelo original se pierde en esta conversión GGUF.
+- El contexto probado es de 2048 tokens; no se documenta el máximo nativo ni el comportamiento más allá de ese límite.
+- No se documentan idiomas soportados ni calidad multilingüe.
+- Riesgo de alucinación no cuantificado; al no haber benchmarks, no puede estimarse su fiabilidad en tareas factuales.
+- La licencia declarada es apache-2.0, pero la model card remite a la licencia del modelo base; conviene verificar el repositorio base antes de uso comercial o redistribución.
+- El autor referencia un "modelo base de Meta" sin identificarlo; la procedencia exacta de los pesos originales no está clara en la información disponible.
+- La build se etiqueta como "card-faithful" y no aplica `lm_head.pt` del repositorio base, lo que puede afectar a la fidelidad respecto al modelo original.
 
 ## Enlaces
 
 - Hugging Face (GGUF): https://huggingface.co/frankmorales2020/muse-glimmer-30b-topo-governed-cbp-fineweb-gguf
-- Modelo base (GPU, bfloat16): https://huggingface.co/frankmorales2020/muse-glimmer-30b-topo-governed-cbp-fineweb
+- Modelo base: https://huggingface.co/frankmorales2020/muse-glimmer-30b-topo-governed-cbp-fineweb
 - Notebook de conversión GGUF: https://github.com/frank-morales2020/AST/blob/main/muse_gguf_new.ipynb
 - Preprint en Zenodo: https://doi.org/10.5281/zenodo.23807796
+- Artículo (Medium, finanzas deterministas): https://medium.com/@frankmorales_91352/architecting-deterministic-financial-intelligence-the-financial-pentad-cluster-7138a42c71f3
+- Artículo (Medium, pipeline clínico multiagente): https://medium.com/ai-simplified-in-plain-english/the-architecture-of-determinism-governing-the-multi-agent-clinical-pipeline-5d83a08c36a7
 - Dataset de entrenamiento: https://huggingface.co/datasets/HuggingFaceFW/fineweb

@@ -52,9 +52,9 @@
   "benchmarks": [],
   "sources": [
     {
-      "title": "Lidl detailPage.head.metaTitle.prefix - - detailPage.head.metaTitle ...",
-      "url": "https://www.lidl.fr/s/fr-FR/supermarches/limoges/rue-frederic-bastiat-13/",
-      "snippet": "The page you were looking for can’t be found – it may have been moved or deleted. Please try again or return to the homepage."
+      "title": "Evolution of Meta’s LLaMA Models and Parameter-Efficient ...",
+      "url": "https://arxiv.org/html/2510.12178v1",
+      "snippet": "The most recent expansion is LLaMA 4 [6]. In April 2025, Meta unveiled LLaMA 4 Scout and Maverick. Both have 17B active parameters organized in a sparse Mixture-of-Experts (MoE) framework, meaning they each route tokens through subsets of many “experts\" sub-networks."
     }
   ]
 }

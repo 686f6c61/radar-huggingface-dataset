@@ -2,95 +2,103 @@
 
 ## Resumen
 
-Morrow2-2B es un modelo de lenguaje conversacional de pequeno tamano desarrollado por Noumenon Labs, un colectivo que se presenta como "estudiantes dispersos que aman aprender". El modelo esta construido sobre LFM3-1.7B de Liquid AI mediante fine-tuning supervisado completo (full SFT), y su objetivo declarado es priorizar el comportamiento conversacional util sobre la mera imitacion de un estilo de voz. Se distribuye con pipeline de text-generation y esta etiquetado como conversational, dialogue y behavioral-tuning.
+Morrow V2 es un modelo de lenguaje conversacional desarrollado por Noumenon (noumenon-labs), un colectivo que se presenta como "estudiantes dispersos aficionados al aprendizaje". Se trata de un ajuste fino supervisado completo (full SFT) sobre el modelo base LFM3-1.7B de Liquid AI, con 1.728.801.536 parámetros reales según los pesos en safetensors. El objetivo declarado no es el razonamiento generalista ni el código, sino la calidad del diálogo: comprensión del prompt, sintonía emocional, utilidad cotidiana y un "tono conversacional" consistente.
 
-La propuesta de Morrow V2 es un replanteamiento del modelo original: segun la model card, la primera version aprendio a "hablar como Morrow" pero fallaba en juicio conversacional y comprension de prompts. V2 incorpora un dataset mas diverso basado en datos de preferencia humana, conversaciones reales humano-IA y datos sinteticos informados por Pi y Claude, con el objetivo de ampliar el rango de respuestas validas sin perder la voz pretendida.
+La relevancia del modelo es acotada pero clara: demuestra un enfoque de *behavioral tuning* sobre una base pequeña (familia LFM3, tag `lfm3` en Hugging Face), priorizando el comportamiento conversacional sobre la capacidad bruta. La versión anterior partía de una base de 2,5B parámetros y usaba LoRA cuantizado; V2 reduce el tamaño a 1,7B pero aplica ajuste completo de pesos, lo que según el autor mejora el resultado pese al menor número de parámetros.
 
-Es relevante como ejemplo de ajuste conductual sobre un modelo base compacto: aunque reduce el tamano respecto a la base anterior de 2.5B, el autor afirma que el nuevo base de 1.7B rinde mejor para sus objetivos. La informacion publica es limitada: no se detallan tokens de entrenamiento, longitud de contexto, cuantizaciones ni pesos disponibles, y el dataset permanece privado.
+No obstante, la información pública es escasa: el dataset de entrenamiento es privado, no hay benchmarks estándar (MMLU, GSM8K, HumanEval) y la licencia es "other" sin texto detallado en la información disponible. Es un modelo para evaluar con cautela y validación propia antes de cualquier uso en producción.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer (derivada de LFM3-1.7B; detalles no disponibles) |
-| Parametros totales | 1.7B (base LFM3-1.7B); el identificador del repo indica 2B, dato no confirmado |
+| Arquitectura | Transformer (base LFM3-1.7B de Liquid AI); detalles internos no disponibles |
+| Parametros totales | 1.728.801.536 |
 | Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible |
-| Idiomas soportados | ingles (en) |
-| Licencia | other (terminos no especificados en la informacion disponible) |
-| Formato de pesos | no disponible |
+| Tipos de cuantizacion | no disponible (pesos publicados en safetensors; no se listan GGUF ni otras variantes) |
+| Idiomas soportados | Ingles (`en`) |
+| Licencia | other (texto de licencia no disponible en la informacion proporcionada) |
+| Formato de pesos | safetensors (con `custom_code`; requiere `trust_remote_code`) |
 
 ## Arquitectura y entrenamiento
 
-Morrow V2 parte de LFM3-1.7B, la variante text-only de la familia LFM3 de Liquid AI, elegida por el autor frente a variantes con capacidades de imagen u otras especializaciones. El entrenamiento consiste en un full supervised fine-tuning sobre los pesos del modelo base, en contraste con la version anterior, que era un modelo cuantizado basado en LoRA con un adaptador separado. No se especifica si hubo RLHF, DPO u otras fases de alineamiento adicionales, ni se detalla la arquitectura interna del transformer base (atencion, capas, dimensiones).
+El modelo se construye sobre LFM3-1.7B, la variante text-only de la familia LFM3 de Liquid AI, elegida por el autor frente a variantes con capacidades de imagen u otras especializaciones. El ajuste es un *full Supervised Fine-Tuning*: se actualizan directamente todos los pesos, a diferencia de la versión anterior de Morrow, que era un LoRA cuantizado sobre una base de 2,5B parámetros.
 
-El dataset de entrenamiento combina, segun la model card, datos de preferencia humana, conversaciones reales entre humanos y IA, y datos conversacionales generados por modelos e informados por Pi y Claude. El conjunto de datos permanece privado. La innovacion declarada no es arquitectonica sino conductual: entrenar el comportamiento conversacional (comprension de prompts, gestion de desahogos, tareas cotidianas, juicio situacional) en lugar de solo el estilo de habla, y evitar forzar toda conversacion hacia un intercambio multi-turno.
+El dataset de entrenamiento combina, según la model card, datos de preferencia humana, conversaciones reales humano-humano y humano-IA, y datos conversacionales generados por modelos "informados por Pi y Claude". El objetivo declarado es enseñar al modelo *cómo comportarse* en lugar de *cómo hablar*, exponiéndolo a un rango amplio de respuestas válidas y evitando forzar toda interacción hacia un intercambio multi-turno. El dataset permanece privado. No se documentan detalles sobre número de tokens de entrenamiento, composición exacta, uso de RLHF/DPO ni innovaciones arquitectónicas propias (el modelo no introduce cambios estructurales respecto a la base).
 
 ## Capacidades
 
-- Generacion de texto conversacional en ingles, orientada a dialogo natural y coherente.
-- Comprension de prompts y juicio conversacional mejorados respecto a la version anterior, segun la evaluacion interna del autor.
-- Gestion de situaciones cotidianas y de desahogos emocionales ("vents") con atencion al tono.
-- Respuestas de un solo turno cuando el contexto no requiere continuacion multi-turno.
-- Voz conversacional consistente y personalidad definida.
-- No se documentan capacidades de codigo, matematicas avanzadas, vision, audio, tool calling ni razonamiento multi-paso; la model card advierte limitaciones en razonamiento complejo y recall factual.
+- Generación de texto conversacional en inglés, orientada a diálogo de propósito general.
+- Comprensión de prompts y "juicio conversacional" (decidir cuándo responder de forma breve, cuándo extender la conversación y cuándo no forzar multi-turno).
+- Manejo de "vents" (desahogos o expresiones emocionales del usuario) y sintonía emocional, según la evaluación interna del autor.
+- Tareas cotidianas y conversaciones de utilidad práctica ("everyday tasks").
+- Tono y personalidad consistentes, definidos mediante *behavioral tuning*.
+- Soporte de tool calling / function calling: no disponible en la información proporcionada.
+- Capacidades de agente y razonamiento multi-paso: no disponibles; el autor advierte explícitamente de dificultades en razonamiento complejo.
+- Capacidades multilingües: solo inglés.
+- Capacidades especiales (visión, audio, thinking mode): no disponibles; se descartó deliberadamente una base con capacidades de imagen.
 
 ## Casos de uso
 
-- Asistentes conversacionales de proposito general: el modelo esta afinado para mantener un tono consistente y comprender prompts cotidianos, lo que lo hace adecuado para chatbots de acompanamiento o asistencia ligera en ingles.
-- Aplicaciones de bienestar y escucha activa: la mejora declarada en "emotional attunement" (3.0 a 3.7 en la evaluacion interna) lo orienta a conversaciones donde el usuario busca desahogarse o ser escuchado, sin prometer precision clinica.
-- Prototipado rapido de productos de dialogo: al ser un modelo de 1.7B, puede desplegarse en hardware modesto para validar flujos conversacionales antes de escalar a modelos mayores.
-- Educacion y tutoria conversacional: puede gestionar explicaciones y dialogos guiados en ingles, aunque su recall factual limitado exige verificar datos con fuentes externas.
-- Investigacion en ajuste conductual: sirve como caso de estudio de full SFT sobre un base compacto para modificar comportamiento conversacional en lugar de solo estilo.
-- Asistentes embebidos o de borde: su tamano reducido permite integracion en entornos con recursos limitados donde un modelo de mayor escala no es viable, siempre que la tarea sea conversacional y en ingles.
+- Chatbot de acompañamiento conversacional: el modelo está afinado para mantener un tono consistente y responder a expresiones emocionales, lo que encaja en asistentes de bienestar o compañía donde la naturalidad pesa más que la precisión factual.
+- Atención al cliente de baja complejidad: para consultas rutinarias y conversaciones multi-turno en inglés, siempre que se valide la precisión de las respuestas y se añada una capa de recuperación de conocimiento (RAG) para datos factuales.
+- Asistente de escritura conversacional: borradores de respuestas en correo, mensajería o foros donde el registro informal y la coherencia de voz son prioritarios.
+- Prototipado rápido de productos de diálogo: su tamaño (1,7B) permite iterar y desplegar en hardware modesto, útil para validar flujos conversacionales antes de escalar a modelos mayores.
+- Moderación o simulación de conversaciones: generación de diálogos sintéticos con un estilo controlado para pruebas de UX o datasets de evaluación conversacional.
+- Investigación en *behavioral tuning*: caso de estudio de ajuste de comportamiento sobre bases pequeñas, útil para comparar SFT completo frente a LoRA en modelos de menos de 2B.
+- Asistente de voz (con capa TTS/STT externa): respuestas cortas y naturales en inglés para interfaces habladas de dominio acotado.
 
 ## Benchmarks y rendimiento
 
-Evaluacion conversacional interna del autor, escala 1-5 (no son benchmarks estandar y no hay comparacion con modelos externos):
+El autor publica únicamente una evaluación conversacional interna puntuada de 1 a 5, sin detallar metodología ni conjunto de evaluación:
 
-| Metrica | Version anterior | Morrow V2 |
+| Metrica (evaluacion interna) | Version anterior | Morrow V2 |
 |---|---:|---:|
-| Comprension de prompts | 2.8 | 3.6 |
-| Sintonizacion emocional | 3.0 | 3.7 |
-| Utilidad | 3.1 | 3.8 |
-| Juicio conversacional | 2.7 | 3.6 |
-| Naturalidad | 3.4 | 3.6 |
-| **Global** | **2.88** | **3.66** |
+| Comprension de prompts | 2,8 | 3,6 |
+| Sintonía emocional | 3,0 | 3,7 |
+| Utilidad | 3,1 | 3,8 |
+| Juicio conversacional | 2,7 | 3,6 |
+| Naturalidad | 3,4 | 3,6 |
+| **Global** | **2,88** | **3,66** |
 
-No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K u otros) en la informacion disponible.
+No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K, etc.) en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible de forma oficial; para un modelo de 1.7B, en fp16 se situaria en torno a 3-4 GB de pesos, y en cuantizaciones de 4-8 bits en torno a 1-2 GB, aunque no hay confirmacion de pesos publicados.
-- GPU recomendadas: no disponibles; por tamano, cabria en GPUs consumer como RTX 3060, RTX 4060 o superiores, y en GPUs de datacenter (A100, H100) para mayor throughput.
-- Cabe en GPU consumer: previsiblemente si, dado el tamano de 1.7B, siempre que se publiquen pesos compatibles.
-- Opciones de despliegue: no especificadas; no se confirma disponibilidad de GGUF, safetensors ni integracion con vLLM, llama.cpp, Ollama o TGI.
+- VRAM estimada para inferencia en FP16/BF16: aproximadamente 3,5 GB solo para pesos (1,73B parámetros × 2 bytes), más overhead de activaciones y KV cache; en la práctica, alrededor de 4-6 GB según longitud de contexto y batch.
+- En cuantización de 8 bits: en torno a 1,8-2,5 GB de pesos; en 4 bits, alrededor de 1-1,5 GB. Estas cifras son estimaciones por tamaño, no datos publicados por el autor.
+- GPU recomendadas: cualquier GPU con 8 GB o más (RTX 3060/4060, RTX 3070/4070) para FP16 con contexto moderado; A100/H100 no son necesarias para este tamaño, salvo despliegues de alto throughput.
+- Cabe en GPU de consumo: sí, previsiblemente en GPUs con 6-8 GB o más en FP16, y en GPUs con 4 GB o menos si se cuantiza.
+- Opciones de despliegue: al usar `custom_code` y safetensors, requiere `transformers` con `trust_remote_code=True`; no se confirma compatibilidad con vLLM, llama.cpp, Ollama o TGI en la información disponible, y la ausencia de pesos GGUF publicados limita el uso directo en llama.cpp/Ollama sin conversión propia.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Morrow2-2B | 1.7B (base) | no disponible | Dialogo conversacional afinado | other | Hugging Face (pesos no confirmados) |
-| LFM3-1.7B (Liquid AI) | 1.7B | no disponible | Modelo base text-only | no disponible | no disponible en la informacion |
-| Modelos conversacionales pequenos tipo Phi o Qwen pequenos | 1.5B-2B | variable | Dialogo y asistencia general | variable | amplia |
+| Morrow2-2B | 1,73B | no disponible | Dialogo conversacional (SFT completo sobre LFM3-1.7B) | other | Hugging Face, safetensors con custom_code |
+| LFM3-1.7B (Liquid AI) | ~1,7B | no disponible | Modelo base generalista text-only | no disponible | Hugging Face (base de Morrow V2) |
+| SmolLM2-1.7B (Hugging Face) | 1,7B | 8K (segun su model card publica) | Generalista, instrucciones | Apache 2.0 | Hugging Face, GGUF ampliamente disponible |
+| Qwen2.5-1.5B (Alibaba) | 1,5B | 32K (segun su model card publica) | Generalista, multilingue | Apache 2.0 | Hugging Face, ecosistema amplio (GGUF, vLLM) |
 
-La comparacion cuantitativa con alternativas no esta disponible: no hay benchmarks publicos comparables ni datos de contexto o licencia de los modelos de referencia en la informacion proporcionada.
+La comparación con LFM3-1.7B es la más directa: Morrow V2 es un ajuste conversacional del mismo. Frente a SmolLM2-1.7B y Qwen2.5-1.5B, Morrow V2 prioriza el comportamiento dialógico sobre capacidades generales, pero carece de benchmarks estándar, de contexto documentado y de un ecosistema de cuantizaciones, lo que dificulta una comparación objetiva de rendimiento.
 
 ## Limitaciones y advertencias
 
-- Modelo compacto: el autor advierte que puede fallar en razonamiento complejo, tareas de contexto largo, recall factual y conocimiento fuera de su entrenamiento.
-- Las mejoras conversacionales no garantizan precision en situaciones reales; riesgo de alucinacion inherente a modelos pequenos.
-- Solo soporta ingles; no hay capacidades multilingues documentadas.
-- Licencia "other" sin terminos especificados: es necesario consultar al autor antes de uso comercial.
-- Dataset privado: no es posible auditar la composicion de datos ni los sesgos potenciales.
-- Los benchmarks presentados son una evaluacion interna del propio autor en escala 1-5, sin validacion externa ni comparacion con estandares.
-- No se confirma la publicacion de pesos, formatos de cuantizacion ni soporte de herramientas de despliegue, lo que limita su uso en produccion.
-- Sin soporte documentado de tool calling, agentes o razonamiento multi-paso.
+- El propio autor advierte de dificultades en razonamiento complejo, tareas de contexto largo, recuperación factual y conocimiento más allá del entrenamiento.
+- Riesgo de alucinación relevante: al ser un modelo pequeño y orientado a conversación, no debe usarse como fuente de verdad sin verificación externa.
+- Solo inglés: no hay soporte multilingüe declarado.
+- Longitud de contexto no documentada: limita la planificación de aplicaciones con documentos largos o historiales extensos.
+- Dataset de entrenamiento privado: imposibilita auditar sesgos, composición o posibles contaminaciones; no se documentan sesgos conocidos.
+- Licencia "other" sin texto disponible en la información proporcionada: es imprescindible revisar los términos completos antes de cualquier uso comercial.
+- Requiere `trust_remote_code` por el uso de `custom_code`, lo que implica ejecutar código del repositorio del autor; conviene auditar dicho código en entornos de producción.
+- Sin cuantizaciones oficiales (GGUF, AWQ, GPTQ) ni soporte confirmado en motores de inferencia populares: el despliegue eficiente exige trabajo adicional.
+- Las métricas publicadas son una evaluación interna del autor sin metodología detallada; no son comparables con benchmarks estándar.
+- Modelo con muy poca tracción (430 descargas, 1 like en el momento de la consulta): ecosistema y soporte comunitario mínimos.
 
 ## Enlaces
 
 - Hugging Face: https://huggingface.co/noumenon-labs/Morrow2-2B
-- Modelo base LFM3-1.7B (Liquid AI): no disponible en la informacion proporcionada
-- Paper, blog o repositorio adicional: no disponible en la informacion proporcionada
+- Modelo base LFM3 (Liquid AI): no disponible en la información proporcionada (referenciado en la model card como "LFM3-1.7B")
+- Paper, blog, repositorio o demo del autor: no disponibles en la información proporcionada.

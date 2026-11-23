@@ -2,92 +2,105 @@
 
 ## Resumen
 
-MoziAier-27B-TQ es un ajuste fino (finetune) del modelo denso Qwen3.8-27B, publicado por el desarrollador chenyumo bajo el paraguas del proyecto MoziAI. Se distribuye en formato GGUF para llama.cpp y está orientado a despliegue local en GPUs de consumo, con un enfoque declarado en el dominio financiero, el razonamiento estructurado y el tool calling. El modelo conserva la licencia Apache-2.0 del modelo base, lo que permite uso comercial sin restricciones adicionales.
+MoziAier 27B-TQ es un modelo de lenguaje denso de 27.320.697.856 parámetros (unos 27B) publicado por el usuario chenyumo en Hugging Face, derivado por cuantización del modelo base Qwen/Qwen3.8-27B. Su rasgo diferencial es el uso de cuantización ternaria: los pesos principales se comprimen a valores {-1, 0, +1} mediante un contenedor propietario denominado PTQ1.0, lo que reduce el archivo de pesos a 6,98 GiB y permite ejecutar un contexto de hasta 256K tokens en una GPU de 16 GB. Se distribuye en formato GGUF y está pensado para su uso con una compilación específica de llama.cpp que soporta el tipo ternario (la versión oficial no lo soporta).
 
-La propuesta diferencial del autor gira en torno a tres mecanismos propios: un marco de razonamiento dinámico en siete dimensiones que se activa según la complejidad de la tarea, un bucle de reflexión y verificación denominado LOOP para tareas complejas, y un algoritmo de cuantización híbrida llamado MoziSmartBit que, según la model card, comprime el modelo hasta unos 13,7 GB manteniendo cerca del 99 % de la precisión de FP16. El repositorio ocupa 7,5 GB y declara soporte de visión, tool calling y decodificación especulativa MTP.
+El modelo incorpora además un proyector visual mmproj en Q8_0 (600 MB) para entrada de imágenes, soporte declarado de tool calling y una capa MTP (multi-token prediction) que, según la model card, ofrece decodificación especulativa con un incremento medido del 29,4 % en velocidad de generación (de 47,3 a 61,2 tok/s, con tasa de aceptación del 57,19 %). El autor describe un esquema de razonamiento estructurado propio ("siete dimensiones de pensamiento") y un bucle de agente con criterios de salida, presentados como incrementos originales sobre el modelo base.
 
-Es relevante ahora porque combina un modelo base de 27 000 millones de parámetros con un empaquetado pensado para inferencia local sin dependencia de la nube, un segmento en el que la mayoría de las alternativas de ese tamaño exigen cuantizaciones más agresivas o hardware profesional. No obstante, el modelo tiene cero descargas y cero likes en el momento de la ficha, y no se han publicado resultados de benchmarks verificables en la información disponible.
+Es relevante ahora porque ocupa un nicho poco cubierto: contexto muy largo y capacidades multimodales en hardware de consumo, a costa de una pérdida de precisión difícil de cuantificar sin benchmarks independientes. La información disponible procede casi exclusivamente de la model card del autor y no incluye evaluaciones en MMLU, HumanEval, GSM8K ni comparaciones con modelos de referencia, por lo que las cifras de rendimiento deben tratarse con cautela.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer denso (Dense), basado en Qwen3.8-27B |
-| Parametros totales | 27 320 697 856 (27,3 B) |
-| Parametros activos | No aplica (modelo denso) |
-| Longitud de contexto | No disponible |
-| Tipos de cuantizacion | GGUF con cuantizacion hibrida MoziSmartBit; el autor menciona comparaciones con Q4_K_M y FP16, pero no detalla la matriz completa de niveles |
-| Idiomas soportados | Chino (zh) e ingles (en) declarados en metadatos; la model card afirma soporte de 201 idiomas y dialectos, sin verificacion independiente |
+| Arquitectura | Transformer denso (base Qwen3.8-27B), 65 capas incluyendo capa MTP, atención GQA con 24 cabezas y 4 cabezas KV, dimensión oculta 5.120, FFN 17.408 |
+| Parametros totales | 27.320.697.856 (27B, denso) |
+| Parametros activos | No aplica (modelo denso, no MoE) |
+| Longitud de contexto | Máximo 256K (262.144 tokens); 128K recomendado por defecto |
+| Tipos de cuantizacion | Ternaria {-1, 0, +1} en contenedor PTQ1.0 (GGUF type 143); KV cache en q4_0; proyector visual en Q8_0; capa MTP en Q5_0 |
+| Idiomas soportados | Chino (zh) e inglés (en), con prioridad declarada para chino |
 | Licencia | Apache-2.0 |
-| Formato de pesos | GGUF (libreria llama-cpp); el modelo base original esta en safetensors |
+| Formato de pesos | GGUF (llama-cpp); pesos originales en safetensors según metadatos de Hugging Face |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de Qwen3.8-27B, un transformer denso de 27 300 millones de parametros, y se distribuye como finetune sobre ese base. La model card no especifica el volumen de tokens de entrenamiento, la composicion del dataset ni si se aplicaron fases de RLHF o DPO. El autor menciona la integracion de datos financieros propios y capacidades de dominio financiero, pero no aporta cifras sobre el corpus utilizado ni sobre el reparto entre datos generales y datos de nicho.
+La arquitectura es un transformer denso heredado de Qwen3.8-27B, con 65 capas (una de ellas la capa MTP), atención con grouped-query attention (24 cabezas de consulta y 4 de clave/valor), dimensión oculta de 5.120 y FFN de 17.408. No es un modelo MoE ni híbrido SSM: es un transformer denso convencional sobre el que se aplica una cuantización post-entrenamiento ternaria. El autor no documenta el proceso de entrenamiento original (número de tokens, composición del dataset, fases de RLHF o DPO), que corresponde al modelo base Qwen3.8-27B y no se detalla en la información disponible.
 
-Las innovaciones tecnicas declaradas son de dos tipos. Por un lado, mecanismos de inferencia: el marco de pensamiento en siete dimensiones (comprension de la tarea, evaluacion de complejidad, dependencias, riesgos, recursos, criterios de aceptacion y estrategia de ejecucion) con tres niveles de activacion, y el bucle LOOP de ejecucion, evaluacion, ajuste y verificacion para tareas complejas. Por otro lado, el algoritmo MoziSmartBit, que aplica precision diferenciada por capas en lugar de una cuantizacion uniforme, con el objetivo de superar a Q4_K_M en relacion precision/tamano. Tambien se anuncia decodificacion especulativa MTP (multi-token prediction) para acelerar la generacion, aunque no se publican tasas de aceptacion ni ganancias de throughput medidas.
+La innovación técnica principal es el contenedor de cuantización PTQ1.0, que empaqueta los pesos en valores ternarios y reduce el tamaño a 6,98 GiB. Se complementa con una capa MTP conservada en Q5_0 (278 MB) que actúa como modelo borrador para decodificación especulativa, con un máximo de 2 tokens especulativos por paso (`--spec-draft-n-max 2`). Según la model card, esta es la única variante de la familia MoziAier con ganancia positiva de MTP (+29,4 %); en la variante 9B el mismo mecanismo resulta en una pérdida del 13,7 %. El autor también describe un esquema de salida estructurado en "siete dimensiones" y un bucle de agente, aunque no se aportan detalles sobre cómo se entrenaron o si son instrucciones de prompt más que comportamiento aprendido.
 
 ## Capacidades
 
-- Generacion de texto conversacional y de tipo informativo en chino e ingles.
-- Razonamiento estructurado con marcadores explicitos de pensamiento (`moziAI-Think`) y niveles de profundidad segun la complejidad de la tarea.
-- Modo de iteracion y autorreflexion (`moziAI-Loop`) para tareas de desarrollo, estrategia y flujos multi-paso.
-- Tool calling y function calling nativo, con orquestacion multi-turno de tareas.
-- Soporte declarado de vision para interpretar contenido de imagenes y capturas locales.
-- Programacion general: el autor cita cobertura de Python, JavaScript, TypeScript, Go y Rust, incluyendo depuracion y diseno de arquitectura.
-- Redaccion tecnica y analitica: informes de investigacion, documentacion y contenido creativo.
-- Capacidades financieras: consultas de dominio, programacion cuantitativa y analisis de datos del sector.
-- Integracion con frameworks de agentes citados por el autor: OpenClaw, Hermes, Cursor, Claude Code y Codex.
-- Decodificacion especulativa MTP para reducir latencia en inferencia local.
+- Generación de texto conversacional en chino e inglés, con prioridad declarada para el chino.
+- Razonamiento estructurado mediante un esquema propio de "siete dimensiones" (comprensión de la tarea, evaluación de complejidad, dependencias, riesgos, recursos, criterios de aceptación y estrategia de ejecución), con expansión variable según la dificultad estimada.
+- Bucle de agente ("Agent LOOP") con fases de ejecución, evaluación, ajuste y verificación, y reglas de salida para evitar bucles infinitos.
+- Tool calling / function calling: el autor indica que el modelo emite un formato de llamada a herramientas parseable por frameworks de agentes.
+- Entrada de imágenes mediante proyector mmproj Q8_0 (600 MB), orientada a preguntas sobre capturas de pantalla, lectura de gráficos y documentos escaneados.
+- Contexto largo de hasta 256K tokens para análisis de documentos completos o bases de código medianas.
+- Decodificación especulativa MTP con ganancia medida del 29,4 % en throughput.
+- Comportamiento declarado de rechazo a la fabricación: responde que no dispone de la información en lugar de inventar datos históricos.
+- No se documentan capacidades de audio, vídeo ni ejecución de código nativa.
 
 ## Casos de uso
 
-- **Asistencia financiera local con datos sensibles**: el modelo puede responder consultas sobre instrumentos, metricas y analisis de cartera ejecutandose integramente en hardware propio, lo que evita enviar datos contables o de clientes a APIs externas. El enfoque declarado en dominio financiero y la licencia Apache-2.0 lo hacen adecuado para prototipos internos de asesoramiento y analisis.
-- **Generacion y revision de codigo en pipelines de CI/CD**: gracias al tool calling y al modo LOOP, puede integrarse como paso de revision automatica que propone parches, ejecuta comprobaciones y verifica el resultado antes de emitir la respuesta final. La cobertura declarada de Python, Go, Rust y TypeScript encaja con equipos poliglotas.
-- **Agentes multi-paso sobre documentos largos**: el modelo puede encadenar busqueda, extraccion y sintesis dentro de un flujo de agente, usando el bucle de reflexion para corregir errores intermedios. Requiere validar empiricamente la longitud de contexto efectiva, no publicada.
-- **Atencion al cliente especializada en productos financieros**: conversaciones multi-turno con terminologia del sector, ejecutables en local para cumplir requisitos de residencia de datos. Conviene acompanar de filtros de salida por el riesgo de alucinacion en cifras y normativa.
-- **Extraccion de datos de capturas y documentos escaneados**: la capacidad de vision declarada permite transcribir tablas, graficos o capturas de pantalla a texto estructurado, util en back office contable y conciliacion de extractos.
-- **Despliegue en estaciones de trabajo sin GPU dedicada de gama alta**: el empaquetado GGUF de 7,5 GB y la cuantizacion MoziSmartBit permiten ejecutar el modelo en equipos con 16 GB de VRAM o incluso en configuraciones con offload parcial a CPU mediante llama.cpp u Ollama.
-- **Prototipado rapido de asistentes bilingues chino-ingles**: para equipos que operan con proveedores o clientes en China, el soporte nativo de ambos idiomas y la optimizacion declarada del chino reducen el trabajo de adaptacion.
+- Análisis de documentos extensos: con 256K tokens de contexto y KV cache cuantizada, el modelo puede procesar contratos completos, informes anuales o libros enteros en una sola pasada sobre una GPU de 16 GB, sin fragmentar el texto en trozos.
+- Revisión de bases de código medianas: el contexto de 250K permite cargar varios módulos de un repositorio y hacer preguntas cruzadas sobre dependencias; el soporte de tool calling facilita integrarlo en asistentes de IDE que consulten el sistema de archivos.
+- Atención al cliente con contexto acumulado: conversaciones multi-turno largas se benefician del contexto extendido y del bucle de agente para resolver incidencias en varios pasos, con salida estructurada que un sistema externo puede parsear.
+- Procesamiento de documentos escaneados y capturas: la entrada visual vía mmproj permite extraer datos de facturas, gráficos o pantallas de aplicación y combinarlos con razonamiento textual en la misma sesión.
+- Despliegue local privado en estaciones de trabajo: al caber en 12,89 GB con contexto de 256K, es viable en un equipo con GPU de 16 GB sin enviar datos a la nube, lo que encaja en entornos con requisitos de confidencialidad.
+- Agentes automatizados de varios pasos: el bucle de ejecución-evaluación y el formato de tool calling permiten orquestar tareas como recopilar datos, validarlos y generar un informe, con criterios de aceptación por fase.
+- Generación de resúmenes y traducción zh-en: el modelo está entrenado principalmente en chino e inglés, por lo que sirve para resumir documentación técnica china o traducirla al inglés en flujos internos.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card incluye una seccion de benchmarks en su indice, pero el contenido proporcionado no incluye cifras verificables de MMLU, HumanEval, GSM8K ni de evaluaciones financieras. Tampoco se aportan mediciones de throughput ni de tasa de aceptacion de la decodificacion especulativa MTP.
+La información disponible no incluye resultados en benchmarks estándar (MMLU, HumanEval, GSM8K, MMLU-Pro ni similares). El autor solo publica métricas de velocidad de inferencia medidas en su propio entorno:
+
+| Metrica | Valor | Condiciones |
+|---|---|---|
+| Throughput con MTP activado | 61,2 tok/s | AMD Radeon AI PRO R9700 (32 GB), ROCm 7.13, contexto 150K |
+| Throughput sin MTP | 47,3 tok/s | Mismas condiciones |
+| Ganancia de MTP | +29,4 % | Tasa de aceptación 57,19 % |
+| Throughput en estado estacionario (tres preguntas) | 58,19 tok/s | MTP activado, contexto 150K |
+| Latencia del primer token | ~6,1 s | Contexto 150K |
+| Memoria con contexto 256K | ~12,89 GB | KV cache q4_0, flash-attn activado |
+
+No se han publicado resultados de benchmarks de calidad en la información disponible.
 
 ## Requisitos de hardware
 
-- **VRAM estimada**: el repositorio GGUF ocupa 7,5 GB, lo que sugiere una cuantizacion de aproximadamente 2 bits por parametro o una mezcla agresiva por capas. El autor afirma que MoziSmartBit comprime el modelo a unos 13,7 GB, cifra que no coincide con el tamano del repositorio y que conviene verificar descargando los ficheros reales.
-- **GPU recomendadas**: para la variante de ~13,7 GB, una RTX 4090 (24 GB) o RTX 3090 (24 GB) permiten cargar el modelo completo en VRAM con margen para contexto. Para la variante de 7,5 GB, una RTX 4070 Ti (12 GB) o RTX 4080 (16 GB) son suficientes. En entornos profesionales, A100 40 GB y H100 80 GB permiten mayor contexto y lotes concurrentes.
-- **Compatibilidad con GPU de consumo**: si, segun el autor, que situa el objetivo en GPUs de consumo. Con 16 GB de VRAM se puede cubrir la variante de 13,7 GB con contexto moderado; con 12 GB conviene usar la variante de 7,5 GB o recurrir a offload parcial.
-- **Opciones de despliegue**: llama.cpp, Ollama, LM Studio y Jan, segun la model card. No se menciona soporte de vLLM ni de TGI, coherente con el formato GGUF y la libreria llama-cpp.
-- **Latencia y throughput**: no disponibles. El autor anuncia mejoras por decodificacion especulativa MTP, pero no publica tokens por segundo ni latencias medidas en ningun hardware concreto.
+- VRAM estimada: unos 10,0 GB con contexto de 128K, unos 12,89 GB con 256K y unos 9,4 GB con 100K, según las cifras del autor con KV cache en q4_0 y flash-attn activado.
+- GPU recomendadas: el autor valida el modelo en una AMD Radeon AI PRO R9700 (32 GB) con ROCm 7.13. Para el objetivo declarado de 250K de contexto basta una GPU de 16 GB; no se especifican modelos concretos de NVIDIA.
+- GPU de consumo: cabe en tarjetas de 16 GB o más (por ejemplo, RTX 4080/4090 de 16-24 GB o equivalentes AMD) siempre que se use la compilación ternaria de llama.cpp con soporte flash-attn.
+- Opciones de despliegue: llama.cpp con compilación específica para el tipo ternario (linaje Prism, licencia MIT). La versión oficial de llama.cpp no soporta este formato. Se lanza con `llama-server` y expone una API compatible con endpoints en el puerto 8080. No se documenta soporte en vLLM, TGI ni Ollama.
+- Parámetros críticos de despliegue: `--parallel 1` (el valor por defecto de 4 divide el contexto entre ranuras), `--cache-type-k q4_0 --cache-type-v q4_0` y `--flash-attn on`; sin flash-attn el kernel ternario no se activa y la salida degenera según el autor.
+- Latencia y throughput: primer token en torno a 6,1 s con 150K de contexto; 58-61 tok/s en estado estacionario con MTP en la R9700. No hay datos para otras GPU.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+| Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MoziAier-27B-TQ | 27,3 B (denso) | No disponible | Apache-2.0 | GGUF | Finetune financiero con cuantizacion propietaria y modo de razonamiento estructurado |
-| Qwen3.8-27B (base) | 27,3 B (denso) | No disponible | Apache-2.0 | Safetensors | Modelo original sin ajuste financiero; referencia directa de capacidades |
-| Gemma 2 27B | 27 B (denso) | 8 192 tokens | Gemma License | Safetensors, GGUF | Alternativa de tamano similar con licencia no Apache y contexto documentado |
-| Mistral Small 3 (24B) | 24 B (denso) | 32 000 tokens | Apache-2.0 | Safetensors, GGUF | Referencia en tool calling y despliegue local con contexto declarado |
+| MoziAier 27B-TQ | 27B denso | 256K | Ternaria PTQ1.0 (GGUF) | Apache-2.0 | Hugging Face, ModelScope |
+| MoziAier 27B Q4_K_M (misma familia) | 27B denso | 256K | Q4_K_M (13,7 GB) | Apache-2.0 | Según el autor, misma familia |
+| MoziAier 9B-TQ (misma familia) | 9B denso | 256K | Ternaria PTQ1.0 | Apache-2.0 | Según el autor, misma familia |
+| Qwen3.8-27B (modelo base) | 27B denso | No disponible | safetensors / varias | Apache-2.0 | Hugging Face |
 
-La comparacion con Qwen3.8-27B es la mas directa: MoziAier anade ajuste de dominio y mecanismos de razonamiento, pero hereda las limitaciones del base y no publica metricas que cuantifiquen la mejora. Frente a Gemma 2 27B y Mistral Small 3, la ventaja de MoziAier es la licencia Apache-2.0 combinada con un empaquetado GGUF muy compacto; la desventaja es la ausencia de contexto documentado y de evaluaciones publicas.
+El autor aporta dos comparaciones internas: frente a la variante Q4_K_M del mismo modelo, el tamaño se reduce a la mitad y la decodificación es "varios órdenes de magnitud" más rápida según su medición; frente a la variante 9B-TQ, el 27B triplica parámetros y multiplica por 3,75 el tamaño, pero es la única con ganancia positiva de MTP. No se dispone de comparaciones con modelos de otros desarrolladores (Llama, Mistral, Gemma u otros) en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- **Ausencia de benchmarks verificables**: no hay cifras publicadas de rendimiento en tareas estandar, lo que impide validar las afirmaciones del autor sobre superioridad en dominio financiero o mantenimiento del 99 % de precision tras la cuantizacion.
-- **Riesgo de alucinacion en dominio financiero**: el propio autor senala la baja tolerancia del sector a los errores, pero no documenta mecanismos de mitigacion ni tasas de error medidas. En produccion es imprescindible anadir verificacion factual y fuentes.
-- **Discrepancia de tamanos**: el repositorio ocupa 7,5 GB mientras la model card habla de 13,7 GB para la variante MoziSmartBit. Hay que comprobar que ficheros contiene realmente el repo antes de planificar el despliegue.
-- **Idiomas**: los metadatos solo declaran chino e ingles. La afirmacion de 201 idiomas y dialectos procede de la model card y no esta respaldada por evaluaciones.
-- **Contexto no documentado**: se desconoce la longitud de contexto soportada, lo que dificulta dimensionar casos de uso con documentos largos.
-- **Madurez del proyecto**: cero descargas y cero likes en el momento de la ficha, y una unica fecha de publicacion reciente. No hay evidencia de comunidad, issues resueltos ni mantenimiento continuado.
-- **Licencia**: Apache-2.0 permite uso comercial, pero conviene revisar el fichero NOTICE y la licencia del modelo base Qwen3.8-27B para confirmar el cumplimiento de atribucion.
-- **Soporte de inferencia limitado**: al distribuirse solo en GGUF, no hay soporte declarado para vLLM o TGI, lo que restringe escenarios de alta concurrencia en servidor.
-- **Marcadores de razonamiento propietarios**: los modos `moziAI-Think` y `moziAI-Loop` requieren prompts y parametros especificos; su comportamiento fuera de las plantillas recomendadas no esta documentado.
+- La cuantización ternaria introduce una pérdida de precisión no cuantificada: no hay benchmarks de calidad que permitan estimar la degradación frente al modelo base Qwen3.8-27B.
+- Requiere una compilación no oficial de llama.cpp; la versión estándar no carga el tipo GGUF 143. Esto complica el mantenimiento, la actualización y el soporte en producción.
+- El soporte multilingüe se limita a chino e inglés; no hay evidencia de rendimiento en castellano ni en otras lenguas.
+- Riesgo de alucinación inherente a los modelos de 27B, agravado por la cuantización agresiva; el autor afirma un comportamiento de rechazo a inventar datos, pero no aporta evaluación sistemática.
+- Las capacidades de razonamiento estructurado y bucle de agente son descritas por el autor sin documentación de entrenamiento; podrían depender del prompt más que de comportamiento aprendido, y no están verificadas de forma independiente.
+- El rendimiento declarado (61,2 tok/s, +29,4 % con MTP) se midió únicamente en una AMD Radeon AI PRO R9700 con ROCm 7.13; no es extrapolable a otras GPU ni a CUDA.
+- La configuración es sensible: `--parallel` distinto de 1 divide el contexto, y desactivar flash-attn degrada la salida según el autor.
+- El repositorio tiene muy poca tracción (470 descargas y 1 like en el momento de la consulta) y un único autor; no hay validación comunitaria ni auditoría de seguridad.
+- La licencia Apache-2.0 permite uso comercial, pero se debe respetar el archivo NOTICE de atribución al modelo base y verificar las condiciones heredadas de Qwen3.8-27B.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/chenyumo/MoziAier-27B-TQ
+- Hugging Face: https://huggingface.co/chenyumo/MoziAier-27B-TQ
+- ModelScope: https://modelscope.cn/models/chenyumo/MoziAier-27B-TQ
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
-- Repositorio relacionado citado en la model card: https://huggingface.co/chenyumo/moziAI-27B-MTP
-- Licencia (referencia de la model card): https://huggingface.co/chenyumo/moziAI-27B-MTP/blob/main/LICENSE.md
+- Repositorio llama.cpp (compilación ternaria, linaje Prism, MIT): no disponible en la información proporcionada
+- Paper técnico: no disponible
+- Blog o demo: no disponible

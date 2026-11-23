@@ -2,92 +2,97 @@
 
 ## Resumen
 
-gemma-4-12B-it-abliterated-4bit-mlx es una conversión cuantizada a 4 bits en formato MLX de un Gemma 4 12B instruction-tuned sometido a *abliteration*, una técnica de edición de pesos que suprime la dirección interna de rechazo del modelo. El resultado es un modelo de 11.959.730.224 parámetros (≈12B) que genera texto sin las negativas habituales ante peticiones benignas pero incómodas. Lo publica divinetribe, que se limita a convertir y cuantizar; la abliteración original es de OpenYourMind y el modelo base subyacente es de Google (familia Gemma).
+`divinetribe/gemma-4-12B-it-abliterated-4bit-mlx` es una cuantización de 4 bits en formato MLX de un Gemma 4 de 12B con instrucciones, al que se le ha aplicado la técnica de *abliteration* para suprimir la dirección de rechazo interna del modelo. Lo publica el usuario divinetribe (Matt Macosko) y deriva directamente de `OpenYourMind/gemma-4-12B-it-abliterated-uncensored`, que a su vez es una versión abliterada del Gemma 4 12B instruct original de Google. El modelo está empaquetado específicamente para Apple Silicon y se ejecuta con la librería `mlx-vlm`.
 
-El interés práctico está en el objetivo de despliegue: es un build nativo para Apple Silicon pensado para ejecutarse en local en un MacBook con 24-32 GB de memoria unificada, sin cloud ni claves de API. Se integra en la librería `mlx`/`mlx-vlm` y está diseñado como pieza intercambiable del stack claude-code-local, un servidor local compatible con la API de Anthropic. La licencia es la Gemma de Google, con las restricciones de uso que esta impone.
+El problema que resuelve es doble: por un lado, permite ejecutar un modelo de ~12B parámetros de forma local en un Mac con 24-32 GB de memoria unificada, sin nube ni claves de API; por otro, la abliteración elimina los rechazos ante peticiones benignas pero incómodas, algo relevante para flujos de trabajo creativos o de investigación que no encajan en los filtros por defecto. El repositorio ocupa 11,0 GB y contiene 11.959.730.224 parámetros reales en safetensors.
 
-La relevancia es acotada pero específica: cubre el nicho de inferencia on-device en Mac para tareas de agente y conversación, con un modelo de 12B cuantizado a 4 bits que ocupa 11 GB en disco. No aporta mejoras de capacidad respecto al modelo base; la abliteración elimina rechazos, no añade conocimiento ni razonamiento.
+Es relevante ahora porque forma parte del ecosistema creciente de inferencia local en Apple Silicon (MLX, `mlx-lm`, `mlx-vlm`) y porque se integra como drop-in en la pila `claude-code-local`, que ejecuta Claude Code íntegramente en el dispositivo mediante un servidor compatible con la API de Anthropic. La licencia es la Gemma de Google, no una licencia permisiva genérica.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Gemma 4 (unified), transformer denso; conversión vía mlx-vlm |
-| Parametros totales | 11.959.730.224 (≈12B) |
-| Parametros activos | no aplica (modelo denso) |
+| Arquitectura | Gemma 4 (unified), transformer decoder-only; conversión con `mlx-vlm` |
+| Parametros totales | 11.959.730.224 (~12B) |
+| Parametros activos | no disponible (no es MoE según la información disponible) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | 4 bits, group size 64 (MLX); safetensors cuantizados |
-| Idiomas soportados | inglés (`en`) |
-| Licencia | Gemma (Google) |
-| Formato de pesos | safetensors (MLX, 4-bit); repo de 11,0 GB |
+| Tipos de cuantizacion | 4 bits, group size 64 (MLX) |
+| Idiomas soportados | en (inglés) |
+| Licencia | gemma (Gemma Terms of Use de Google) |
+| Formato de pesos | safetensors en formato MLX; librería `mlx` |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es un Gemma 4 12B instruction-tuned, es decir, un transformer denso de la familia Gemma 4 en su variante "unified". Sobre ese checkpoint, OpenYourMind aplicó *abliteration*: una intervención sobre los pesos que identifica y atenúa la dirección latente asociada a rechazos, de modo que el modelo deja de activar respuestas de negativa ante peticiones benignas pero sensibles. Esta edición no conlleva reentrenamiento ni datos adicionales; es una modificación post-hoc de los pesos.
+La arquitectura subyacente es Gemma 4 en su variante "unified", un transformer decoder-only de ~12B parámetros. El modelo original fue entrenado por Google; la cadena de derivación es: Gemma 4 12B instruct → abliteración por OpenYourMind → cuantización 4-bit MLX por divinetribe. La model card indica que la conversión se realizó con `mlx-vlm`, lo que sugiere que el pipeline de conversión está orientado a modelos multimodales o unificados, aunque las capacidades de visión no se documentan explícitamente en la información disponible.
 
-divinetribe realizó después la conversión a MLX y la cuantización a 4 bits con group size 64, usando mlx-vlm como herramienta de conversión. No se documentan en la información disponible el número de tokens de entrenamiento, la composición del dataset original, ni si hubo RLHF/DPO en el modelo base; esos datos pertenecen a la model card de Google para Gemma 4 y no se reproducen aquí. Tampoco se detalla ninguna innovación de decodificación o atención específica de esta conversión.
+No se dispone de datos sobre el número de tokens de entrenamiento, la composición del dataset ni si hubo RLHF o DPO en el modelo base. La innovación técnica destacable es la *abliteration*: una modificación de los pesos que suprime la dirección de rechazo aprendida, de modo que el modelo no se niega ante peticiones benignas pero "edgy". El autor advierte explícitamente que esto no es una mejora de capacidades, sino una alteración del comportamiento de rechazo. La cuantización usa group size 64, un compromiso habitual en MLX entre calidad y tamaño.
 
 ## Capacidades
 
-- Generación de texto conversacional multi-turno en inglés.
-- Razonamiento general y respuesta a instrucciones (variante instruction-tuned).
-- Generación de código y uso como modelo de agente local dentro de claude-code-local.
-- Integración con tool calling / function calling heredada del modelo base (no verificada explícitamente en la model card de esta conversión).
-- Ejecución totalmente on-device en Apple Silicon mediante MLX, sin dependencia de API externa.
-- Comportamiento "sin rechazos" ante peticiones benignas pero incómodas, gracias a la abliteración.
-- Capacidad multimodal potencial por la conversión con mlx-vlm y la arquitectura "unified", aunque la model card no la detalla ni la confirma.
+- Generación de texto conversacional con instrucciones (pipeline `text-generation`).
+- Razonamiento y respuesta multi-turno en inglés.
+- Ejecución local en Apple Silicon mediante MLX (`mlx-vlm`, `mlx-lm`).
+- Comportamiento sin rechazos ante peticiones benignas pero incómodas (abliterated).
+- Integración como backend en la pila `claude-code-local` a través de un servidor compatible con la API de Anthropic.
+- Capacidades de visión: no confirmadas en la información disponible (la conversión con `mlx-vlm` lo sugiere, pero la model card no lo detalla).
+- Tool calling / function calling: no documentado en la información disponible.
+- Soporte de agentes multi-paso: indirecto, vía su uso en `claude-code-local` y el leaderboard Agent-12.
+- Capacidades multilingües: limitadas al inglés según la etiqueta `language: en`.
 
 ## Casos de uso
 
-- Asistente de código local en Mac: se carga con `mlx_lm`/`mlx-vlm` y se apunta como backend de claude-code-local, permitiendo autocompletado y edición de código sin enviar el código a ningún servicio externo.
-- Agente de desarrollo on-device: al ser un modelo de 12B en 11 GB, encaja en MacBooks de 24-32 GB y puede sostener tareas de agente de varios pasos con latencia local predecible.
-- Conversación y prototipado de prompts: útil para iterar sobre prompts y flujos conversacionales en inglés sin coste de API ni límites de cuota.
-- Investigación sobre abliteration: sirve como punto de comparación controlado frente al modelo base sin abliterar para estudiar el efecto de la supresión de rechazos en la distribución de respuestas.
-- Privacidad de datos: escenarios donde el texto no puede salir del dispositivo (borradores internos, notas personales) y se requiere inferencia local.
-- Pruebas de robustez y seguridad: al eliminar los rechazos, es útil para auditar cómo se comporta un modelo sin salvaguardas conductuales y para diseñar capas de moderación externas.
+- Asistente de código local en Mac: el modelo se integra como drop-in en `claude-code-local`, apuntando la variable `MLX_MODEL` al repositorio, de modo que Claude Code se ejecuta 100% en el dispositivo sin enviar código a la nube. Adecuado para entornos con requisitos de privacidad estrictos.
+- Desarrollo en portátiles Apple Silicon de gama media: con 11 GB de pesos cabe en un Mac de 24-32 GB de memoria unificada, lo que permite trabajar con un LLM de 12B en un MacBook Pro sin GPU dedicada.
+- Prototipado de agentes locales: el leaderboard Agent-12 evalúa tareas de agente reales juzgadas por el sistema de ficheros, y este modelo figura como uno de los "fighters"; útil para comparar su comportamiento agéntico frente a otros modelos locales.
+- Generación de texto creativo sin filtros: la abliteración permite escribir ficción, guiones o contenido con temáticas sensibles sin rechazos automáticos, manteniendo la coherencia de un modelo instruct de 12B.
+- Investigación sobre alineación y rechazo: permite estudiar empíricamente cómo la abliteración afecta al comportamiento del modelo comparándolo con el Gemma 4 12B original, en un entorno reproducible y local.
+- Inferencia offline en campo: escenarios sin conectividad (auditorías, trabajo de campo, entornos air-gapped) donde se necesita un modelo conversacional razonablemente capaz sin depender de APIs externas.
+- Automatización de tareas de texto por lotes: al ejecutarse con MLX de forma local, se puede usar para resumir, reescribir o clasificar documentos en lotes sin coste por token.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM/memoria: 11 GB de pesos en disco; en Apple Silicon se comparte memoria unificada, por lo que se recomienda un Mac con 24 GB o más (la model card indica que funciona "cómodamente" en 32 GB).
-- GPU recomendadas: Apple Silicon (series M1/M2/M3/M4) con memoria unificada suficiente; no es un build CUDA, por lo que no está pensado para A100, H100 ni RTX 4090.
-- Consumer GPU: no aplica en el sentido NVIDIA; el equivalente consumer es un MacBook con 24-32 GB de RAM unificada.
-- Despliegue: `mlx-vlm` (`python -m mlx_vlm.generate`), librería `mlx`/`mlx-lm`; integrable como backend de claude-code-local vía la variable `MLX_MODEL`.
+- VRAM/memoria unificada estimada: ~11 GB solo para los pesos en 4 bits; con overhead de contexto y KV cache, se recomienda un mínimo de 16 GB y un objetivo cómodo de 24-32 GB de memoria unificada.
+- El autor indica que funciona "holgadamente en un Mac de 32 GB" y "feliz en un Mac de 24 GB"; el modelo de 31B de la misma familia es "ajustado" en 32 GB.
+- GPU recomendadas: Apple Silicon (M-series) con memoria unificada; no está pensado para GPUs NVIDIA/AMD, ya que el formato es MLX.
+- Cabe en GPU consumer: no aplica en el sentido tradicional; cabe en Macs consumer con 24 GB o más de memoria unificada.
+- Opciones de despliegue: `mlx-vlm` (`python -m mlx_vlm.generate`), `mlx-lm`, y la pila `claude-code-local` con servidor compatible con la API de Anthropic.
 - Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Cuantización | Licencia | Plataforma |
+| Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| gemma-4-12B-it-abliterated-4bit-mlx (este) | ≈12B | no disponible | 4-bit MLX, group 64 | Gemma | Apple Silicon (MLX) |
-| OpenYourMind/gemma-4-12B-it-abliterated-uncensored (base) | ≈12B | no disponible | pesos completos | Gemma | genérica |
-| Versión 31B del roster divinetribe | ≈31B (según model card) | no disponible | 4-bit MLX | Gemma | Apple Silicon (MLX) |
-| Gemma 4 12B it original (sin abliterar) | ≈12B | no disponible | varias | Gemma | genérica |
+| divinetribe/gemma-4-12B-it-abliterated-4bit-mlx | ~12B | no disponible | MLX safetensors 4-bit | gemma | Hugging Face, 1.481 descargas |
+| OpenYourMind/gemma-4-12B-it-abliterated-uncensored | ~12B | no disponible | safetensors (pre-cuantización) | gemma | Hugging Face (modelo base) |
+| Gemma 4 12B instruct (original de Google) | ~12B | no disponible | safetensors, GGUF, etc. | gemma | Hugging Face / Google |
+| divinetribe (tier 31B de la misma colección) | ~31B | no disponible | MLX 4-bit | gemma | Hugging Face, requiere ~32 GB |
 
-La comparación se limita a lo declarado en la model card: el modelo base sin cuantizar, la variante de 31B del mismo roster (descrita como "tight" en 32 GB) y el Gemma 4 12B it original sin abliteración. No hay datos de rendimiento comparativo publicados en la información disponible.
+La comparativa se limita a la cadena de derivación del propio modelo, ya que la información proporcionada no incluye datos de rendimiento de alternativas de otros fabricantes. La diferencia clave frente al modelo base es el formato MLX 4-bit (menor huella, ejecución en Apple Silicon) y frente al original de Google, la abliteración.
 
 ## Limitaciones y advertencias
 
-- La abliteración suprime rechazos: el modelo puede producir contenido que el Gemma original declinaba, incluido material sensible. No hay salvaguardas conductuales integradas.
-- No es una mejora de capacidad: el conocimiento, el razonamiento y la precisión factual son los del Gemma 4 12B base; la abliteración puede incluso degradar ligeramente la coherencia en algunos dominios.
-- Riesgo de alucinación propio de un modelo de 12B, sin benchmarks publicados que lo acoten.
-- Idiomas: solo inglés declarado; el rendimiento en castellano no está garantizado ni documentado.
-- Longitud de contexto no documentada en esta conversión; no debe asumirse la del modelo base sin verificarla.
-- Licencia Gemma: uso comercial sujeto a los términos de Google para Gemma; la abliteración no altera las obligaciones de licencia.
-- Cuantización 4-bit: pérdida de precisión esperable frente a los pesos completos, especialmente en tareas de matemáticas y código.
-- Dependencia de plataforma: build MLX exclusivo para Apple Silicon; no ejecutable directamente en CUDA.
-- Los datos de estrellas y descargas en la model card proceden de contadores en vivo y pueden no reflejar el estado actual.
+- La abliteración suprime los rechazos, pero no mejora las capacidades; puede aumentar la probabilidad de generar contenido inapropiado o inseguro si se usa sin supervisión.
+- Riesgo de alucinación inherente a un modelo de 12B; no se han publicado evaluaciones de fidelidad en la información disponible.
+- Idiomas: solo inglés etiquetado; el rendimiento en castellano no está garantizado.
+- Longitud de contexto no documentada; no asumir ventanas largas sin verificación empírica.
+- Licencia Gemma: el uso comercial está sujeto a los Gemma Terms of Use de Google, que imponen restricciones y obligaciones de atribución; la abliteración no exime de cumplirlas.
+- Formato MLX: no es portable a GPUs NVIDIA ni a servidores x86 convencionales sin reconversión.
+- La model card incluye estadísticas "live" (estrellas, descargas) que pueden no ser verificables ni estar actualizadas; tratarlas con cautela.
+- El autor advierte explícitamente: "Use it responsibly".
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/divinetribe/gemma-4-12B-it-abliterated-4bit-mlx
 - Modelo base: https://huggingface.co/OpenYourMind/gemma-4-12B-it-abliterated-uncensored
 - Colección "Abliterated MLX for Apple Silicon": https://huggingface.co/collections/divinetribe/abliterated-mlx-for-apple-silicon
-- Repositorio claude-code-local: https://github.com/nicedreamzapp/claude-code-local
-- Perfil GitHub del autor: https://github.com/nicedreamzapp
+- Perfil del autor en Hugging Face: https://huggingface.co/divinetribe
+- Repositorio Claude Code Local: https://github.com/nicedreamzapp/claude-code-local
 - Leaderboard Agent-12: https://nicedreamzapp.github.io/agent12/
 - MLX: https://github.com/ml-explore/mlx
-- Perfil Hugging Face del publicador: https://huggingface.co/divinetribe
+- Perfil GitHub del autor: https://github.com/nicedreamzapp
+- Software del autor: https://nicedreamzwholesale.com/software/
+- GitHub Sponsors: https://github.com/sponsors/nicedreamzapp

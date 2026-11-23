@@ -69,7 +69,7 @@
     "region:us"
   ],
   "likes": 1,
-  "downloads_30d": 284,
+  "downloads_30d": 600,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
@@ -89,5 +89,11 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": []
+  "sources": [
+    {
+      "title": "SideShift Review: Privacy-Focused Crypto Exchange",
+      "url": "https://swapzone.io/blog/sideshift-exchange-review-202",
+      "snippet": "Oct 27, 2025 · Sideshift.ai is a non-custodial cryptocurrency exchange that allows users to swap digital assets across multiple …"
+    }
+  ]
 }

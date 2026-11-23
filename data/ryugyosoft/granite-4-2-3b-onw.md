@@ -2,123 +2,113 @@
 
 ## Resumen
 
-Granite-4.2-3b-onw es una conversion del modelo IBM Granite 4.2 3B al formato del motor onw, un runtime que ejecuta modelos de lenguaje exclusivamente sobre la NPU de los procesadores Intel Core Ultra. Lo publica el usuario ryugyosoft, autor tambien del propio motor onw, y no implica ningun reentrenamiento: se trata de un proceso de recuantizacion y reestructuracion de los pesos originales en grafos estaticos optimizados para la NPU.
+`ryugyosoft/granite-4.2-3b-onw` es una conversión del modelo `ibm-granite/granite-4.2-3b` de IBM para el motor de inferencia `onw`, un runtime que ejecuta LLMs exclusivamente sobre la NPU integrada en los procesadores Intel Core Ultra. El repositorio contiene únicamente los pesos reempaquetados en grafos estáticos segmentados; el motor se distribuye por separado. No se ha realizado ningún entrenamiento: los pesos son una recuantización y reestructuración del modelo original.
 
-El modelo base, Granite 4.2 3B de IBM, es un transformer denso de tipo Llama con aproximadamente 3.000 millones de parametros, perteneciente a la familia Granite 4.2 (3B, 8B y 30B), que introduce razonamiento nativo con cadena de pensamiento y llamada a herramientas aumentada por razonamiento. La version convertida hereda esas capacidades y las expone mediante una API compatible con OpenAI.
+El modelo base pertenece a la generación Granite 4.2 de IBM, orientada a razonamiento y uso de herramientas, con entrenamiento por refuerzo sobre agentes que ejecutan hasta 200 llamadas de herramientas (corrección de código, operación de terminal, búsqueda web). La arquitectura es un transformer convencional de tipo Llama. Esta variante de 3B es la más ligera de la familia y la más rápida dentro del catálogo de onw.
 
-Su relevancia practica esta en el nicho: permite ejecutar un modelo de 3B con soporte de tool calling y modo de pensamiento en equipos portatiles sin GPU dedicada, usando unicamente la NPU integrada (Meteor Lake, Arrow Lake, Lunar Lake o Panther Lake), con una tasa de generacion de 6,7 tokens por segundo y un consumo de memoria de trabajo de unos 6 GB. El repositorio ocupa 2,2 GB y la descarga 2,1 GB.
+La relevancia de esta ficha es práctica: demuestra inferencia de un LLM de 3B parámetros sobre una NPU de consumo (Intel NPU 3720, Core Ultra 9 285HX) con un consumo de memoria de aproximadamente 6 GB y una velocidad de generación de 6,7 tok/s, sin GPU dedicada. Los idiomas declarados son japonés e inglés.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer denso tipo Llama, con razonamiento (thinking) y tool calling |
-| Parametros totales | 3.000 millones (3B) |
-| Parametros activos | no aplica (modelo denso) |
+| Arquitectura | Transformer tipo Llama (modelo base Granite 4.2), exportado como grafos estáticos segmentados para NPU Intel |
+| Parametros totales | 3B (aproximado, según denominación del modelo base) |
+| Parametros activos | no aplica (no es MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | INT4 con signo (sign-aware) en la mayoria de pesos; INT8 con grupo 128 en las proyecciones q/k/v de atencion; INT8 en la capa de salida; INT4 en los embeddings |
-| Idiomas soportados | japones (ja), ingles (en) |
+| Tipos de cuantizacion | INT4 con signo (escala positiva max/7, negativa min/8); INT8 grupo 128 en q/k/v de atención; INT8 en capa de salida; embeddings INT4 |
+| Idiomas soportados | japonés (ja), inglés (en) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | Formato propio de onw: grafos estaticos en XML (`seg*_S1.xml`, `seg*_S16.xml`) acompanados de ficheros binarios por segmento (`seg*.bin`, `shared.bin`); no usa safetensors ni GGUF |
+| Formato de pesos | XML de grafo OpenVINO + binarios `.bin` por segmento (`seg*_S1.xml`, `seg*_S16.xml`, `seg*_S64.xml`, `seg*_S2.xml`, `shared.bin`); no es safetensors ni GGUF |
 
 ## Arquitectura y entrenamiento
 
-Se trata de una conversion, no de un entrenamiento: los pesos proceden del modelo base `ibm-granite/granite-4.2-3b` y se recuantizan y reorganizan para onw. La estructura del modelo es un transformer denso convencional de tipo Llama, con 40 capas organizadas en el motor en cinco segmentos de 8 capas mas un segmento independiente para la capa de salida, formando un grafo estatico. Las operaciones de embedding, residual, atencion y salida incorporan los coeficientes propios de Granite dentro del grafo.
+El modelo base es un transformer estándar de tipo Llama. La conversión a onw divide las 40 capas en 5 secciones de 8 capas más una sección de salida, generando grafos estáticos independientes. Los factores de escala propios de Granite (embeddings, residuales, atención y salida) se incorporan directamente en el grafo. Se generan variantes de grafo para procesamiento de prompt en bloques de 16 y 64 tokens, y una variante de 2 tokens para generación en Lunar Lake y Panther Lake que reduce drásticamente el tiempo de compilación inicial.
 
-La innovacion tecnica relevante esta en la cuantizacion: al comprobar que el INT4 convencional con grupo 128 introducia un error apreciable en Granite, el autor aplica un INT4 que tiene en cuenta el signo (el paso se fija con el maximo dividido entre 7 para valores positivos y con el minimo dividido entre 8 para negativos), manteniendo el mismo orden de datos y velocidad que el INT4 estandar. Solo las proyecciones q/k/v de la atencion se dejan en INT8 con grupo 128, con una perdida de velocidad minima. La capa de salida va en un segmento INT8 separado, y las filas cuya escala cae en numeros subnormales de FP16 (que la NPU convierte a cero) se reconstruyen expresamente.
-
-Respecto al modelo original, IBM indica que Granite 4.2 se refuerza mediante aprendizaje por refuerzo sobre tareas de agente que incluyen hasta 200 llamadas a herramientas (correccion de codigo, operaciones de terminal y busqueda web). Esta informacion corresponde al modelo base, no al proceso de conversion. No se ha realizado ningun ajuste adicional sobre el modelo convertido.
+La cuantización es el punto técnico diferencial: el INT4 estándar con grupo 128 introducía un error excesivo en Granite, por lo que se emplea un INT4 con signo (escala distinta para el rango positivo y negativo), manteniendo el mismo layout de datos y velocidad que el INT4 convencional. Solo las proyecciones q/k/v de atención se mantienen en INT8 con grupo 128. La capa de salida va en INT8 en una sección separada, y las filas cuya escala caería en números subnormales FP16 (que la NPU convierte a cero) se regeneran. No hay entrenamiento, RLHF ni DPO en esta conversión; todas esas fases pertenecen al modelo original de IBM, que según la model card incluye RL sobre agentes con hasta 200 llamadas de herramientas.
 
 ## Capacidades
 
-- Generacion de texto y conversacion multi-turno en japones e ingles.
-- Modo de pensamiento (razonamiento) con cadena de pensamiento explicita: desactivado por defecto y activable mediante `chat_template_kwargs: {"enable_thinking": true}`; el contenido de razonamiento se devuelve en el campo `reasoning_content`.
-- Llamada a herramientas compatible con el esquema de definiciones de funciones de OpenAI (`tools`), con soporte de llamadas en paralelo.
-- Razonamiento aumentado por herramientas: el modelo decide que herramienta invocar y por que antes de hacerlo.
-- Flujos de agente de varios pasos, incluyendo llamadas encadenadas (verificado en pruebas con dos etapas de llamada a herramienta mas respuesta final).
-- Seguimiento de instrucciones, con IFBench reportado de 74,3 en la tarjeta del modelo base.
-- Compatibilidad como servidor de API compatible con OpenAI en `http://localhost:8000/v1`.
-- No soporta vision, audio ni entrada multimodal: la entrada es solo texto.
+- Generación de texto conversacional en japonés e inglés.
+- Modo de razonamiento (thinking) opcional: desactivado por defecto; se activa con `chat_template_kwargs: {"enable_thinking": true}` y el razonamiento se devuelve en `reasoning_content`.
+- Tool calling mediante API compatible con OpenAI (parámetro `tools`), con soporte de llamadas paralelas.
+- Razonamiento multi-paso y uso de agentes, heredado del entrenamiento RL del modelo base (corrección de código, operación de terminal, búsqueda web).
+- Cumplimiento de instrucciones estructuradas (IFBench 74,3 en el modelo base, según la model card).
+- Inferencia exclusiva sobre NPU Intel, sin GPU ni CPU para el cómputo principal.
+- Servidor compatible con OpenAI en `http://localhost:8000/v1`.
 
 ## Casos de uso
 
-- Asistentes de agente en portatiles sin GPU: al ejecutarse integramente sobre la NPU Intel, permite desplegar un agente con tool calling en un equipo de oficina o portatil, sin depender de una tarjeta grafica dedicada ni de la nube.
-- Automatizacion de operaciones de terminal: el modelo base fue reforzado con tareas de operaciones de terminal, por lo que encaja en flujos donde el agente propone y ejecuta comandos de sistema de forma encadenada, verificando el resultado de cada paso.
-- Correccion y generacion de codigo asistida por herramientas: integrado mediante la API compatible con OpenAI, puede conectarse a un servidor de herramientas que aplique parches o ejecute pruebas y devuelva resultados al modelo para iterar.
-- Busqueda web aumentada: el soporte de tool calling permite definir una herramienta de busqueda y dejar que el modelo decida cuando consultarla y como usar los resultados para responder.
-- Procesamiento de lenguaje natural en japones en entornos cerrados: para empresas que necesitan generar o resumir texto en japones sin enviar datos a servicios externos, con la advertencia de que la calidad en japones es inferior a la del ingles y puede producir errores en kanji.
-- Enrutamiento y clasificacion con razonamiento: activando el modo de pensamiento se puede usar como clasificador o etiquetador que justifica su decision, util en pipelines de triaje de incidencias.
-- Prototipado y desarrollo local de agentes: el servidor local compatible con OpenAI permite desarrollar y depurar aplicaciones de agente en un portatil antes de desplegarlas a mayor escala.
-- Demostraciones y evaluacion de modelos en hardware Intel: sirve para medir el rendimiento real de la NPU con cargas de agentes, dado que el propio repositorio publica cifras de velocidad y latencia.
+- Asistentes locales en portátiles con Intel Core Ultra: el modelo se ejecuta íntegramente en la NPU con un working set de aproximadamente 6 GB (2,8 GB en modo de ahorro de memoria), lo que permite tener un asistente siempre disponible sin ocupar la GPU ni consumir batería de forma agresiva.
+- Automatización de agentes con tool calling en entornos de escritorio: la API compatible con OpenAI y el soporte de llamadas paralelas permiten integrarlo en flujos que consultan APIs, ejecutan comandos o buscan en la web, con `max_tokens` de al menos 2000 en modo thinking.
+- Procesamiento por lotes de prompts largos en local: los grafos de 64 tokens por bloque alcanzan aproximadamente 140 tok/s de procesamiento de prompt en la NPU 3720 (frente a los 70 tok/s de los bloques de 16), adecuado para clasificación o resumen de documentos en equipos sin GPU.
+- Prototipado de aplicaciones de razonamiento con separación de trazas: el campo `reasoning_content` permite construir interfaces que muestran u ocultan el razonamiento, útil para depurar pipelines de agentes antes de desplegarlos en infraestructura mayor.
+- Sustitución de modelos en pipelines existentes basados en OpenAI: al exponer un endpoint compatible, se puede apuntar un cliente `openai` al servidor local y comparar comportamiento sin reescribir código.
+- Desarrollo y pruebas offline en Japón o entornos con inglés: al soportar ja y en, sirve para validar flujos conversacionales bilingües en máquinas de desarrollo sin conexión a servicios en la nube.
 
 ## Benchmarks y rendimiento
 
-Los siguientes datos corresponden al modelo base Granite 4.2 3B, segun lo indicado en la tarjeta del modelo convertido (que remite a la tarjeta original de IBM). No son mediciones del modelo convertido.
+Datos de benchmarks del modelo base citados en la model card de esta conversión:
 
-| Benchmark | Granite 4.2 3B |
+| Benchmark | Resultado (modelo base Granite 4.2 3B) |
 |---|---|
 | BFCL v4 | 52,4 |
-| tau3-bench (τ³-bench) | 51,0 |
+| τ³-bench | 51,0 |
 | IFBench | 74,3 |
 
-Segun la tarjeta, BFCL v4 de 52,4 empata con el resultado de la variante de 8B.
+Métricas de la conversión medidas por el autor:
 
-Mediciones propias de la conversion publicadas por el autor:
-
-| Metrica | Valor |
+| Métrica | Valor |
 |---|---|
-| Coincidencia de tokens (teacher forcing, 400 tokens) frente a bf16 en CPU | 344/400 |
-| Coincidencia con INT4 convencional unicamente | 316/400 |
-| Coincidencia del primer token en 20 preguntas en japones (NPU frente a CPU FP32) | 15/20 |
-| Velocidad de generacion (NPU 3720, Core Ultra 9 285HX) | 6,7 tok/s (aproximadamente 7,7 tok/s en chat con verificacion anticipada) |
-| Procesamiento de prompt en preguntas cortas | menos de 1 segundo |
+| Coincidencia de tokens con el original bf16 en CPU (400 tokens, teacher forcing) | 344/400 |
+| Coincidencia con INT4 estándar (referencia comparativa) | 316/400 |
+| Coincidencia del primer token en 20 preguntas en japonés (NPU vs CPU FP32) | 15/20 |
+| Velocidad de generación (NPU 3720) | 6,7 tok/s (≈7,7 tok/s con verificación especulativa en chat) |
+| Procesamiento de prompt (1024 tokens, onw 2.0+) | ≈140 tok/s |
+| Tiempo de primera compilación para NPU | ≈6 minutos |
+| Tiempo de carga posterior | ≈20 segundos |
 
-No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K, etc.) del modelo convertido en la informacion disponible.
+No se han publicado resultados de benchmarks completos (MMLU, HumanEval, GSM8K) específicos de esta conversión en la información disponible.
 
 ## Requisitos de hardware
 
-- Hardware obligatorio: procesador Intel Core Ultra con NPU, series 1 y 2 (Meteor Lake, Arrow Lake, Lunar Lake) o serie 3 (Panther Lake).
+- NPU Intel integrada en Core Ultra series 1 y 2 (Meteor Lake, Arrow Lake, Lunar Lake) y serie 3 (Panther Lake); el cómputo no se ejecuta en GPU.
 - Sistema operativo: Windows 11 o Ubuntu 22.04 o superior.
-- Memoria de trabajo tras la carga: aproximadamente 6 GB.
-- Tamano de descarga: 2,1 GB (repositorio de 2,2 GB).
-- No requiere GPU dedicada; la inferencia se ejecuta integramente en la NPU.
-- Compilacion inicial para la NPU: aproximadamente 6 minutos la primera vez; alrededor de 20 segundos en arranques posteriores.
-- Rendimiento medido en una NPU 3720 (Core Ultra 9 285HX): 6,7 tok/s de generacion. Las cifras variaran segun la NPU y la cantidad de memoria del equipo.
-- Despliegue: mediante el motor onw (instalacion por script en PowerShell para Windows o `curl ... | bash` en Ubuntu), con interfaz grafica y servidor local compatible con OpenAI en `http://localhost:8000/v1`. Tambien admite descarga con `hf download ryugyosoft/granite-4.2-3b-onw` y arranque con `onw serve <carpeta>`. No es compatible con vLLM, llama.cpp ni TGI, ya que el formato de pesos es especifico de onw.
-- No se debe usar `git clone` sin Git LFS, porque los pesos no se descargan y onw detiene la ejecucion al detectarlo.
+- Memoria: working set de aproximadamente 6 GB tras la carga (6,4 GB medidos en un equipo Lunar Lake de 16 GB); modo de ahorro de memoria con aproximadamente 2,8 GB en reposo y durante la respuesta, con picos de 5,1 GB durante el intercambio (unos 3 segundos).
+- Descarga del repositorio: 2,1 GB.
+- No requiere GPU dedicada; no se han publicado cifras para A100, H100 ni RTX 4090 porque el motor solo apunta a NPU Intel.
+- Despliegue mediante el motor onw: instalación con un script PowerShell (`install.ps1`) en Windows o `curl | bash` en Ubuntu, interfaz gráfica con pestañas de modelos, servidor y ajustes, o arranque por línea de comandos con `onw serve <carpeta>`.
+- Endpoint compatible con OpenAI en el puerto 8000.
+- No se soportan `git clone` sin Git LFS (el motor lo detecta y aborta).
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
+| Modelo | Parámetros | Contexto | Licencia | Ejecución en NPU Intel | Notas |
 |---|---|---|---|---|---|
-| granite-4.2-3b-onw | 3B | no disponible | BFCL v4 52,4; tau3-bench 51,0; IFBench 74,3 (datos del base); 6,7 tok/s en NPU 3720 | Apache 2.0 | Hugging Face, formato onw para NPU Intel |
-| ibm-granite/granite-4.2-3b | 3B | no disponible | mismos valores de referencia del modelo base | Apache 2.0 | Hugging Face, pesos originales |
-| Granite 4.2 8B | 8B | no disponible | BFCL v4 52,4 (empate con el 3B segun la tarjeta) | Apache 2.0 | Hugging Face, version original y conversion onw |
-| llm-jp-4.1-8b-thinking-onw | 8B | no disponible | no disponible | no disponible | Hugging Face, conversion onw |
+| granite-4.2-3b-onw (esta ficha) | 3B | no disponible | Apache 2.0 | Sí, nativa | Conversión INT4/INT8 para onw; 6,7 tok/s en NPU 3720 |
+| ibm-granite/granite-4.2-3b | 3B | no disponible | Apache 2.0 | No (requiere GPU/CPU) | Modelo original en bf16; referencia de calidad |
+| llm-jp-4.1-8b-thinking-onw | 8B | no disponible | no disponible | Sí, vía onw | Recomendado por el mismo autor para uso centrado en japonés; mayor tamaño y compilación inicial más lenta (2 h 46 min → 23 min con grafos de 2 tokens en Panther Lake) |
 
-El autor recomienda `llm-jp-4.1-8b-thinking-onw` cuando el uso esta centrado en japones, al ofrecer mejor calidad en ese idioma que esta variante de 3B. La comparativa con modelos de otros fabricantes no esta disponible en la informacion proporcionada.
+No se dispone de datos de benchmarks comparativos entre estas variantes en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Es una conversion de formato, no un modelo nuevo: todas las limitaciones del modelo base se mantienen intactas.
-- El autor advierte que los indicadores multilingues de Granite 4.2 son inferiores a los de ingles y que las respuestas en japones pueden contener errores en kanji o contenido poco natural. En japones, el primer token coincidio solo en 15 de 20 casos frente a la referencia en FP32.
-- Riesgo de alucinacion inherente a los modelos de 3.000 millones de parametros, especialmente en tareas de conocimiento factual y en cadenas de razonamiento largas.
-- El modo de pensamiento genera una cantidad elevada de tokens; el autor recomienda fijar `max_tokens` en 2000 o mas cuando se combina pensamiento y uso de herramientas, lo que aumenta la latencia.
-- Configuracion recomendada por el modelo base: temperatura 1,0 y top_p 0,95. El valor por defecto de onw es generacion voraz (greedy), distinto del recomendado.
-- Dependencia total del motor onw y de hardware Intel Core Ultra con NPU: no es ejecutable en GPU NVIDIA, AMD ni en CPU convencional mediante los runtimes habituales.
-- La cuantizacion INT4 introduce perdida de calidad medible: 344 de 400 tokens coinciden con la referencia bf16, frente a 316 con INT4 convencional.
-- Existe una penalizacion de rendimiento por la compilacion inicial para la NPU, de unos 6 minutos, que afecta a despliegues efimeros o contenedores que se recrean con frecuencia.
-- La licencia Apache 2.0 permite uso comercial, pero el modelo base incluye los terminos propios de IBM Granite, que conviene revisar antes de un despliegue en produccion.
-- El repositorio registra 0 descargas y 0 valoraciones en el momento de la consulta, por lo que no existe validacion externa de la comunidad sobre la calidad de la conversion.
+- El modelo base declara japonés e inglés; el propio autor advierte que las métricas multilingües son inferiores a las de inglés y que las respuestas en japonés pueden contener errores de kanji o contenido poco natural. Para uso centrado en japonés recomienda un modelo de 8B alternativo.
+- Riesgo de alucinación inherente al modelo base; no se han publicado evaluaciones específicas de factualidad para esta conversión.
+- La longitud de contexto no está documentada en la información disponible; no debe asumirse la del modelo original sin verificar.
+- El modo thinking incrementa el consumo de tokens; con herramientas activas se recomienda `max_tokens` de al menos 2000 para evitar truncamientos.
+- La temperatura recomendada por el autor del modelo base es 1.0 con top_p 0.95; onw usa generación greedy por defecto, lo que puede alterar el comportamiento esperado.
+- La primera compilación para NPU tarda aproximadamente 6 minutos; en modelos mayores del mismo motor puede superar las 2 horas, lo que afecta a los tiempos de arranque en frío.
+- Dependencia de hardware Intel Core Ultra con NPU: no es desplegable en GPU NVIDIA/AMD ni en CPU como motor principal.
+- El repositorio no incluye el motor; requiere descargar onw por separado.
+- Licencia Apache 2.0 permite uso comercial, pero al ser una recuantización sin entrenamiento adicional, las limitaciones y sesgos del modelo original se heredan íntegramente.
+- El rendimiento medido (6,7 tok/s) corresponde a un equipo concreto (NPU 3720, Core Ultra 9 285HX) y variará según la NPU y la memoria del sistema.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/ryugyosoft/granite-4.2-3b-onw
+- Repositorio Hugging Face: https://huggingface.co/ryugyosoft/granite-4.2-3b-onw
 - Modelo base: https://huggingface.co/ibm-granite/granite-4.2-3b
-- Coleccion Granite 4.2 Language Models: https://huggingface.co/collections/ibm-granite/granite-42-language-models
-- Documentacion de IBM Granite 4.2: https://www.ibm.com/granite/docs/models/granite4-2
-- Blog de IBM Research sobre Granite 4.2: https://research.ibm.com/blog/introducing-granite-4-2
-- Pagina general de IBM Granite: https://www.ibm.com/granite
+- Colección Granite 4.2 de IBM: https://huggingface.co/collections/ibm-granite/granite-42-language-models
 - Motor onw: https://huggingface.co/ryugyosoft/onw
-- Documentacion tecnica de onw: https://huggingface.co/ryugyosoft/onw/blob/main/TECHNICAL.md
-- Conversion recomendada para japones: https://huggingface.co/ryugyosoft/llm-jp-4.1-8b-thinking-onw
+- Documentación técnica de onw: https://huggingface.co/ryugyosoft/onw/blob/main/TECHNICAL.md
+- Modelo alternativo para japonés: https://huggingface.co/ryugyosoft/llm-jp-4.1-8b-thinking-onw

@@ -2,46 +2,50 @@
 
 ## Resumen
 
-OmniCore-7B-Unified-GGUF es una coleccion de cuantizaciones en formato GGUF del modelo OmniCore-7B-Unified, publicado por el usuario mradermacher en Hugging Face. Se trata de una conversion estatica (no de un modelo original) generada con herramientas de cuantizacion a partir de los pesos en formato Hugging Face del modelo base desarrollado por adityaxess. El repositorio tiene un tamano de 19,7 GB y contiene 12 variantes de cuantizacion distintas, desde x-f16 hasta Q2_K.
+OmniCore-7B-Unified-GGUF es la distribucion en formato GGUF del modelo OmniCore-7B-Unified, un modelo de lenguaje de aproximadamente 7.615 millones de parametros desarrollado originalmente por el usuario adityaxess y cuantizado por mradermacher. El modelo base se ha generado mediante mergekit, una herramienta de fusion de modelos, por lo que se trata de un merge de pesos y no de un entrenamiento desde cero. Esta version GGUF esta pensada para su uso con llama.cpp y ecosistemas compatibles, lo que permite ejecutar el modelo en hardware de consumo.
 
-El modelo base cuenta con 7.615.616.512 parametros totales (aproximadamente 7,6 mil millones), lo que lo situa en la categoria de modelos de 7B. La model card del repositorio es extremadamente escasa: unicamente indica que se trata de "static quants" del modelo original y lista las variantes generadas, sin aportar informacion sobre arquitectura, datos de entrenamiento, licencia, idiomas o capacidades.
+La relevancia de esta ficha radica en que el repositorio ofrece hasta doce variantes de cuantizacion estatica (desde Q2_K de 3,1 GB hasta f16 de 15,3 GB), lo que facilita el despliegue en escenarios con restricciones de VRAM muy distintas. Sin embargo, la informacion publicada es extremadamente escasa: no se detalla la licencia, los idiomas soportados, la longitud de contexto ni los datos de entrenamiento. La model card se limita a listar los ficheros cuantizados y a remitir a enlaces externos.
 
-La relevancia de esta ficha es limitada por la falta de documentacion: no hay informacion publicada sobre benchmarks, licencia, contexto o composicion del entrenamiento. El modelo registra 0 descargas y 0 likes en el momento de la consulta, y fue creado el 20 de noviembre de 2026. Cualquier evaluacion en produccion requeriria consultar directamente el repositorio del modelo base.
+Se trata, por tanto, de un modelo conversacional en ingles (unico idioma declarado en los metadatos) cuya evaluacion rigurosa queda limitada por la ausencia de benchmarks y de documentacion tecnica. Es adecuado para experimentacion y prototipado local, pero no para entornos de produccion que exijan garantias de licencia o de rendimiento medido.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible |
-| Parametros totales | 7.615.616.512 (~7,6B) |
-| Parametros activos | no disponible (no se indica que sea MoE) |
+| Arquitectura | Transformer (derivada de un merge con mergekit; detalles no disponibles) |
+| Parametros totales | 7.615.616.512 |
+| Parametros activos | no disponible (no es un modelo MoE segun la informacion disponible) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | x-f16, Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, IQ4_XS |
-| Idiomas soportados | no disponible |
+| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, f16 |
+| Idiomas soportados | en (ingles) |
 | Licencia | no disponible |
-| Formato de pesos | GGUF (cuantizaciones estaticas); el modelo base se distribuye en formato Hugging Face (safetensors) |
+| Formato de pesos | GGUF (y safetensors en el modelo base) |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion sobre la arquitectura del modelo base OmniCore-7B-Unified. La model card del repositorio GGUF no incluye detalles sobre el tipo de transformer, si emplea atencion lineal, mezcla de expertos u otras innovaciones. Tampoco se documenta el numero de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de alineacion como RLHF o DPO.
+El modelo base OmniCore-7B-Unified se ha construido mediante mergekit, segun las etiquetas del repositorio, lo que indica una fusion de pesos de modelos preexistentes en lugar de un entrenamiento desde cero. No se especifica que modelos se fusionaron, que metodo de merge se aplico (SLERP, TIES, DARE, etc.) ni los hiperparametros empleados. Tampoco se documenta el numero de tokens de entrenamiento, la composicion del dataset ni si hubo fases de RLHF o DPO.
 
-Lo unico verificable es el proceso de conversion: el repositorio contiene cuantizaciones estaticas generadas a partir de los pesos en formato Hugging Face del modelo original, con `quantize_version: 2`, `output_tensor_quantised: 1` y `convert_type: hf`. Las cuantizaciones cubren un rango amplio de precision, desde x-f16 (sin perdida apreciable) hasta Q2_K (fuertemente comprimida), pasando por las familias K-quant e IQ4_XS de llama.cpp.
+La version aqui descrita es una cuantizacion estatica realizada por mradermacher con su pipeline habitual (quantize_version 2, output_tensor_quantised 1, convert_type hf). El autor indica que las cuantizaciones ponderadas o con imatrix no estan disponibles en el momento de publicacion, por lo que solo se ofrecen cuantizaciones estaticas. No se documenta ninguna innovacion tecnica adicional (atencion lineal, decodificacion especulativa, etc.).
 
 ## Capacidades
 
-- Generacion de texto conversacional: el tag `conversational` sugiere uso orientado a dialogo, aunque no se detallan capacidades especificas.
-- Compatibilidad con endpoints: el tag `endpoints_compatible` indica que el formato GGUF es desplegable en infraestructuras compatibles con llama.cpp.
-- Razonamiento, codigo, matematicas, vision, audio, tool calling, agentes y capacidades multilingues: no disponible en la informacion proporcionada.
-- Modo thinking o decodificacion especulativa: no disponible.
+- Generacion de texto conversacional en ingles, segun la etiqueta `conversational` del repositorio.
+- Compatibilidad con endpoints (etiqueta `endpoints_compatible`), lo que sugiere uso mediante APIs de inferencia.
+- Ejecucion local mediante llama.cpp y ecosistemas compatibles con GGUF.
+- Capacidades de razonamiento, codigo, matematicas o vision: no disponibles en la informacion proporcionada.
+- Soporte de tool calling o function calling: no disponible.
+- Soporte de agentes o razonamiento multi-paso: no disponible.
+- Capacidades multilingues: limitadas al ingles segun los metadatos.
+- Modo thinking, vision o audio: no disponible.
 
 ## Casos de uso
 
-- Despliegue en CPU o GPU de gama baja mediante llama.cpp u Ollama: las cuantizaciones Q4_K_M y Q5_K_M permiten ejecutar un modelo de ~7,6B en hardware con recursos limitados, sacrificando precision a cambio de viabilidad.
-- Prototipado de chatbots conversacionales en local: el tag `conversational` y el formato GGUF facilitan pruebas de dialogo sin infraestructura cloud.
-- Evaluacion comparativa de cuantizaciones: el repositorio incluye 12 variantes, lo que permite medir el impacto de la compresion en calidad de salida sobre el mismo modelo base.
-- Integracion en pipelines de inferencia con endpoints compatibles: el tag `endpoints_compatible` sugiere despliegue en servidores tipo llama-server o TGI con backend GGUF.
-- Investigacion sobre degradacion por cuantizacion: util para estudiar como afectan Q2_K frente a Q8_0 en tareas concretas.
-- Uso educativo y experimentation: al ser un modelo pequeno y con multiples cuantizaciones, sirve para aprender el flujo de conversion y despliegue de LLMs.
+- Prototipado local de asistentes conversacionales: con la cuantizacion Q4_K_M (4,8 GB) el modelo cabe en GPUs de consumo de 8 GB, lo que permite iterar en el diseno de prompts y flujos conversacionales sin coste de API.
+- Experimentacion con modelos fusionados: util para investigadores que quieran evaluar cualitativamente el resultado de un merge de mergekit sin necesidad de descargar los pesos en safetensors (68,1 GB de repositorio completo).
+- Despliegue en entornos con VRAM limitada: la variante Q2_K (3,1 GB) permite ejecutar el modelo en GPUs de 4 GB o en CPU con llama.cpp, aunque con perdida de calidad.
+- Generacion de texto en ingles para tareas generales: adecuado para resumen, redaccion o respuesta a preguntas en ingles, siempre que no se requiera precision medida.
+- Evaluacion comparativa de cuantizaciones: el repositorio ofrece doce variantes, lo que permite medir el impacto de la cuantizacion en la perplejidad y en la calidad subjetiva.
+- Base para fine-tuning ligero: al estar disponible en safetensors el modelo base, se puede usar como punto de partida para ajuste con LoRA en tareas especificas en ingles.
 
 ## Benchmarks y rendimiento
 
@@ -49,44 +53,47 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia (aproximada, segun cuantizacion y overhead de llama.cpp):
-  - x-f16: ~15-16 GB
-  - Q8_0: ~8-9 GB
-  - Q6_K: ~6,5-7 GB
-  - Q5_K_M / Q5_K_S: ~5,5-6 GB
-  - Q4_K_M / Q4_K_S: ~4,5-5 GB
-  - IQ4_XS: ~4-4,5 GB
-  - Q3_K_L / Q3_K_M / Q3_K_S: ~3,5-4 GB
-  - Q2_K: ~3 GB
-- GPU recomendadas: RTX 4090 (24 GB) para x-f16 y Q8_0; RTX 3060/4060 (8-12 GB) para Q4-Q6; GPUs integradas o CPU para Q2_K y Q3_K.
-- Cabe en GPU de consumo: si, en la mayoria de cuantizaciones Q2 a Q6 en tarjetas de 6-8 GB o superiores.
-- Opciones de despliegue: llama.cpp, Ollama, llama-server, y cualquier runtime compatible con GGUF (LM Studio, kobold.cpp). vLLM y TGI no soportan GGUF de forma nativa en todas sus versiones.
-- Latencia y throughput: no disponible.
+- VRAM estimada para inferencia (aproximada, segun tamano de fichero GGUF mas overhead de contexto):
+  - Q2_K: ~3,1 GB de pesos, ~4 GB con contexto moderado.
+  - Q4_K_M: ~4,8 GB de pesos, ~6 GB con contexto moderado.
+  - Q8_0: ~8,2 GB de pesos, ~10 GB con contexto moderado.
+  - f16: ~15,3 GB de pesos, ~17 GB con contexto moderado.
+- GPU recomendadas:
+  - Consumer: RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070, RTX 4090 (24 GB) para las cuantizaciones altas.
+  - Profesional: A100 40/80 GB, H100 para f16 con contexto largo.
+- Cabe en GPU de consumo: si, desde Q2_K en GPUs de 4-6 GB hasta Q8_0 en GPUs de 12-16 GB.
+- Opciones de despliegue: llama.cpp, Ollama (importando el GGUF), servidores compatibles con GGUF; vLLM y TGI no soportan GGUF de forma nativa en todas sus versiones, por lo que requeririan el modelo base en safetensors.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| OmniCore-7B-Unified-GGUF | ~7,6B | no disponible | no disponible | GGUF | 12 cuantizaciones, sin benchmarks publicados |
-| Mistral-7B-Instruct (GGUF) | ~7,2B | 32k (v0.2) | Apache 2.0 | GGUF/safetensors | Ampliamente documentado y con benchmarks publicos |
-| Llama-3.1-8B-Instruct (GGUF) | ~8B | 128k | Llama 3.1 Community License | GGUF/safetensors | Ecosistema maduro, tool calling documentado |
-| Qwen2.5-7B-Instruct (GGUF) | ~7,6B | 128k | Apache 2.0 | GGUF/safetensors | Multilingue, benchmarks publicados |
+| OmniCore-7B-Unified-GGUF | 7,6 B | no disponible | no disponible | GGUF | Merge via mergekit, sin benchmarks |
+| Mistral-7B-Instruct (referencia) | 7,2 B | 32k (v0.2) | Apache 2.0 | safetensors, GGUF | Ampliamente documentado y evaluado |
+| Llama 3.1 8B Instruct (referencia) | 8,0 B | 128k | Llama 3.1 Community License | safetensors, GGUF | Benchmarks publicos y soporte amplio |
+| Qwen2.5 7B Instruct (referencia) | 7,6 B | 128k | Apache 2.0 (mayoria de variantes) | safetensors, GGUF | Multilingue y con benchmarks publicos |
 
-La comparativa es estructural: no hay datos de rendimiento de OmniCore-7B-Unified que permitan una comparacion cuantitativa con estas alternativas.
+La comparativa se ofrece a modo de referencia de categoria; no se dispone de datos de rendimiento de OmniCore-7B-Unified que permitan una comparacion cuantitativa.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de documentacion: no hay model card con arquitectura, datos de entrenamiento, licencia ni idiomas, lo que impide evaluar su idoneidad para produccion.
-- Licencia no especificada: no se puede confirmar si el uso comercial esta permitido; es imprescindible consultar el repositorio del modelo base (adityaxess/OmniCore-7B-Unified).
-- Sin benchmarks: no hay evidencia publica de calidad, razonamiento o seguridad.
-- Riesgo de alucinacion: desconocido, pero aplicable a cualquier LLM de 7B sin alineacion documentada.
-- Sesgos: no documentados.
-- Idiomas: no confirmados; no se puede asumir soporte multilingue.
-- Cuantizaciones agresivas (Q2_K, Q3_K_S) degradan notablemente la calidad; para uso serio se recomienda Q4_K_M o superior.
-- Repositorio con 0 descargas y 0 likes: sin validacion por parte de la comunidad.
-- El modelo base podria no existir o haber sido retirado; verificar el enlace antes de usarlo.
+- Ausencia total de benchmarks: no hay evidencia publicada sobre calidad, razonamiento o codigo, por lo que no se puede recomendar para produccion sin evaluacion propia.
+- Licencia no especificada: no se puede garantizar el uso comercial; es imprescindible contactar con el autor del modelo base antes de cualquier despliegue comercial.
+- Idioma limitado al ingles: no se declaran capacidades multilingues, por lo que el rendimiento en castellano es incierto.
+- Longitud de contexto desconocida: no se puede planificar su uso en tareas de contexto largo.
+- Modelo fusionado: los merges con mergekit pueden heredar sesgos y comportamientos erraticos de los modelos originales, y suelen presentar mayor riesgo de alucinacion y de incoherencia en tareas complejas.
+- Cuantizaciones estaticas unicamente: no hay variantes con imatrix, que suelen ofrecer mejor calidad por tamano; las cuantizaciones Q2_K y Q3_K_S pueden degradar notablemente la calidad.
+- Documentacion minima: la model card no describe datos de entrenamiento, arquitectura interna ni limitaciones conocidas.
+- Fecha de creacion futura en los metadatos (2026-11-20): conviene verificar la integridad y procedencia del repositorio.
 
 ## Enlaces
 
 - Repositorio GGUF: https://huggingface.co/mradermacher/OmniCore-7B-Unified-GGUF
 - Modelo base: https://huggingface.co/adityaxess/OmniCore-7B-Unified
+- Pagina de descargas del autor: https://hf.tst.eu/model#OmniCore-7B-Unified-GGUF
+- Solicitudes de cuantizacion: https://huggingface.co/mradermacher/model_requests
+- Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Grafico de perplejidad por cuantizacion (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png
+- Notas sobre cuantizaciones (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- nethype GmbH: https://www.nethype.de/

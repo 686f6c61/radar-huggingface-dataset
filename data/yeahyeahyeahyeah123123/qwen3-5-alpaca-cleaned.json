@@ -1,0 +1,53 @@
+{
+  "schema": 2,
+  "id": "yeahyeahyeahyeah123123/qwen3.5-alpaca-cleaned",
+  "slug": "yeahyeahyeahyeah123123-qwen3-5-alpaca-cleaned",
+  "author": "yeahyeahyeahyeah123123",
+  "url": "https://huggingface.co/yeahyeahyeahyeah123123/qwen3.5-alpaca-cleaned",
+  "created_at": "2026-11-22T22:26:18.000Z",
+  "updated_at": "2026-11-22T22:29:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "unsloth",
+    "text-generation",
+    "conversational",
+    "en",
+    "dataset:yahma/alpaca-cleaned",
+    "base_model:unsloth/Qwen3.5-2B",
+    "base_model:finetune:unsloth/Qwen3.5-2B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2213241664,
+  "parameters_human": "2.21B",
+  "storage_bytes": 4446548488,
+  "storage_human": "4.4 GB",
+  "context_length": null,
+  "base_model": "unsloth/Qwen3.5-2B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

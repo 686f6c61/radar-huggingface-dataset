@@ -54,31 +54,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Fastino Nemotron 3.5 Lightning Finance - Hugging Face",
-      "url": "https://huggingface.co/fastino/Fastino-Nemotron-3.5-Lightning-Finance",
-      "snippet": "Fastino-Nemotron-3.5-Lightning-Finance is a 30B-parameter, 3B-active mixture-of-experts model specialized for financial reasoning, extraction, and research fine-tuned on LoRA with the Fastino Fine-Tuning Agent."
-    },
-    {
-      "title": "Fastino Labs Releases Two Specialized Open-Weight Models for Finance ...",
-      "url": "https://finance.yahoo.com/technology/ai/articles/fastino-labs-releases-two-specialized-140300842.html",
-      "snippet": "Fastino Labs, the applied AI research lab and creator of the GLiNER model family, today announced specialised open weight models for finance and healthcare post-trained on NVIDIA Nemotron 3.5 ..."
-    },
-    {
-      "title": "Introducing Fastino-Nemotron-3.5-Lightning-Finance and Fastino-Nemotron ...",
-      "url": "https://agentic-design.ai/news-hub/introducing-fastino-nemotron-3-5-lightning-finance-fastino-nemotron-3-633fd8",
-      "snippet": "Fastino released two specialized open-weight models fine-tuned on NVIDIA Nemotron 3.5 Lightning for finance and healthcare tasks, available on Hugging Face."
-    },
-    {
-      "title": "Fastino Labs",
-      "url": "https://fastino.ai/",
-      "snippet": "Fastino Labs builds open language models for agentic AI, including GLiNER, GLiGuard, and the Fastino fine-tuning agent. See our research and models."
-    },
-    {
-      "title": "Fastino and NVIDIA: Open Models for Finance and Healthcare",
-      "url": "https://fastino.ai/nvidia-collaboration",
-      "snippet": "Fastino Labs collaborates with NVIDIA to post-train open weight Nemotron 3.5 Lightning for finance and healthcare, fine-tuned entirely by an autonomous agent."
-    }
-  ]
+  "sources": []
 }

@@ -1,0 +1,41 @@
+{
+  "schema": 2,
+  "id": "jhao666/sec-iter-model",
+  "slug": "jhao666-sec-iter-model",
+  "author": "jhao666",
+  "url": "https://huggingface.co/jhao666/sec-iter-model",
+  "created_at": "2026-09-14T04:46:38.000Z",
+  "updated_at": "2026-11-23T02:08:32.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2231650480,
+  "storage_human": "2.2 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

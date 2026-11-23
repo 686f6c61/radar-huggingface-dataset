@@ -2,97 +2,79 @@
 
 ## Resumen
 
-ToastyPigeon/Gemma-4-Test-GGUFs es un repositorio alojado en Hugging Face por el usuario ToastyPigeon que, segun su propia model card, contiene "modelos de prueba" subidos por error mientras el autor intentaba publicar en otro repositorio llamado Gemma4-Test-GGUFs. Se trata, por tanto, de un repositorio de caracter experimental y desordenado, sin una publicacion formal de modelo detras. Cuenta con 88 descargas, 0 likes y las etiquetas gguf, endpoints_compatible y region:us.
+`ToastyPigeon/Gemma-4-Test-GGUFs` es un repositorio de pesos en formato GGUF alojado en Hugging Face por el usuario ToastyPigeon. Segun la model card, se trata de un repositorio de modelos de prueba creado por error al subir contenido a otro repositorio del mismo autor (`Gemma4-Test-GGUFs`). No es, por tanto, un modelo entrenado ni publicado formalmente, sino un artefacto de test.
 
-El unico dato tecnico fiable disponible es el recuento de parametros declarado a partir de los pesos en safetensors: 11.907.350.576 parametros (aproximadamente 11,9 mil millones). El tamano del repositorio es de 25,3 GB, coherente con pesos en precision de 16 bits mas copias adicionales. El nombre del repositorio sugiere alguna relacion con la familia Gemma de Google, pero no hay ninguna confirmacion en la informacion proporcionada, y no existen referencias a "Gemma 4" en fuentes verificables.
+El repositorio contiene pesos con un total de 30.697.345.596 parametros (aproximadamente 30,7 mil millones), segun el recuento de safetensors asociado, y ocupa 243,4 GB. El nombre sugiere una relacion con la familia Gemma de Google, pero no hay confirmacion oficial en la informacion disponible sobre la arquitectura, el entrenamiento o el origen real de los pesos.
 
-No se dispone de informacion sobre arquitectura, datos de entrenamiento, licencia, idiomas soportados ni resultados de benchmarks. Dada su naturaleza de repositorio de pruebas creado por error, su relevancia practica es muy limitada y no deberia emplearse como base para evaluaciones serias ni para despliegues en produccion hasta que el autor publique el repositorio definitivo con documentacion completa.
+Su relevancia practica es muy limitada: no hay model card tecnica, no se declara licencia, no se especifican idiomas y no se han publicado benchmarks. Cualquier uso en produccion requeriria una validacion independiente exhaustiva de los pesos y de las condiciones legales de uso.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
 | Arquitectura | no disponible |
-| Parametros totales | 11.907.350.576 (aprox. 11,9 mil millones) |
-| Parametros activos | no aplica / no disponible (no se indica que sea MoE) |
+| Parametros totales | 30.697.345.596 (aprox. 30,7 B) |
+| Parametros activos | no disponible |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | GGUF (segun etiquetas); cuantizaciones concretas no disponibles |
+| Tipos de cuantizacion | GGUF (variantes concretas no especificadas) |
 | Idiomas soportados | no disponible |
 | Licencia | no disponible |
-| Formato de pesos | GGUF y safetensors (el recuento de parametros se declara sobre safetensors) |
+| Formato de pesos | GGUF (repo de 243,4 GB) |
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura del modelo en la informacion disponible. No se especifica si se trata de un transformer denso, una arquitectura MoE, un modelo hibrido o cualquier otra variante. Tampoco se detalla el numero de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de alineacion como RLHF o DPO.
+No hay informacion publicada sobre la arquitectura del modelo. El nombre del repositorio hace referencia a "Gemma-4", lo que sugiere una posible vinculacion con la familia Gemma de Google, pero no se confirma ni la arquitectura subyacente ni si se trata de un modelo oficial, un fine-tuning o una conversion de pesos.
 
-El unico dato objetivo es el recuento de parametros (11,9 mil millones) y el tamano del repositorio (25,3 GB), que resulta compatible con pesos en 16 bits y archivos adicionales, presumiblemente cuantizaciones GGUF dado que ese es el formato principal anunciado en las etiquetas. Toda informacion adicional sobre innovaciones tecnicas (atencion lineal, decodificacion especulativa, ventana de contexto deslizante, etc.) debe considerarse no disponible.
+Tampoco se dispone de datos sobre el corpus de entrenamiento, el numero de tokens procesados, la composicion del dataset ni la existencia de fases de alineacion como RLHF o DPO. El repositorio se describe explicitamente como un conjunto de modelos de prueba subidos por error, por lo que no debe considerarse una publicacion tecnica validada.
 
 ## Capacidades
 
-No es posible enumerar capacidades verificadas a partir de la informacion proporcionada. Los unicos elementos disponibles son:
-
-- El repositorio esta etiquetado como gguf, lo que implica que el modelo puede ejecutarse con motores de inferencia compatibles con este formato (llama.cpp, Ollama, LM Studio, entre otros).
-- La etiqueta endpoints_compatible sugiere que el modelo podria servirse a traves de endpoints compatibles con las API de inferencia de Hugging Face, aunque no se detalla la configuracion.
-- El resto de capacidades (generacion de texto, razonamiento, codigo, matematicas, tool calling, agentes, capacidades multilingues o modos especiales como thinking) no estan documentadas y, por tanto, se consideran no disponibles.
+- Generacion de texto conversacional: el tag `conversational` sugiere uso previsto para dialogos, aunque no hay documentacion que lo confirme.
+- Compatibilidad con endpoints: el tag `endpoints_compatible` indica que el formato podria desplegarse mediante endpoints de Hugging Face.
+- Capacidades de razonamiento, codigo, matematicas, vision o audio: no disponibles.
+- Soporte de tool calling o function calling: no disponible.
+- Soporte de agentes o razonamiento multi-paso: no disponible.
+- Capacidades multilingues: no disponibles.
 
 ## Casos de uso
 
-Debido a la ausencia de documentacion tecnica, licencia e idiomas confirmados, no es posible recomendar casos de uso en produccion. A continuacion se indican escenarios que solo serian viables tras verificar la documentacion del repositorio definitivo publicado por el autor:
+- Evaluacion interna de pipelines GGUF: el repositorio puede servir para probar la carga de pesos GGUF de gran tamano en herramientas como llama.cpp u Ollama, verificando que el formato se interpreta correctamente antes de usar modelos definitivos.
+- Pruebas de infraestructura de despliegue: util para validar configuraciones de servidores de inferencia (memoria, sharding, carga en GPU) con un artefacto de tamano realista de aproximadamente 30,7 B de parametros.
+- Banco de pruebas de cuantizacion: permite comprobar el comportamiento de distintas variantes GGUF y medir consumo de VRAM y latencia en un entorno controlado, sin expectativas de calidad de salida.
+- Verificacion de compatibilidad con endpoints: dado el tag `endpoints_compatible`, puede emplearse para probar la integracion con la infraestructura de endpoints de Hugging Face.
+- Formacion y experimentacion: adecuado para que desarrolladores noveles practiquen la descarga, conversion y ejecucion de modelos GGUF de gran tamano sin depender de pesos con licencia restrictiva.
+- Auditoria de artefactos de terceros: sirve como caso de estudio sobre por que conviene revisar la model card, la licencia y el origen de los pesos antes de integrarlos en un pipeline.
 
-- Evaluacion interna de pesos: un equipo podria descargar el repositorio y ejecutarlo en local con llama.cpp u Ollama para inspeccionar su comportamiento, siempre que la licencia lo permitiese (actualmente no disponible).
-- Pruebas de compatibilidad de herramientas GGUF: util para validar que un pipeline de cuantizacion o un motor de inferencia carga correctamente pesos de aproximadamente 11,9 mil millones de parametros.
-- Experimentacion academica: serviria como objeto de estudio sobre repositorios de prueba y practicas de publicacion en Hugging Face, no sobre capacidades del modelo.
-- Prototipado sin requisitos de licencia clara: aunque desaconsejado, un desarrollador podria probar el modelo en tareas triviales antes de decidir si migra al repositorio oficial Gemma4-Test-GGUFs.
-- Auditoria de pesos: comprobar el recuento de parametros, el formato y la integridad de los archivos frente al tamano declarado de 25,3 GB.
-- Benchmarking comparativo preliminar: medir latencia y consumo de memoria en GPU para modelos de ~12 mil millones de parametros en formato GGUF, sin extraer conclusiones de calidad.
-
-No se han identificado casos de uso adecuados para produccion con la informacion actual.
+No se recomienda su uso en produccion ni en aplicaciones orientadas a usuarios finales dada la ausencia de documentacion y de garantias legales.
 
 ## Benchmarks y rendimiento
 
 No se han publicado resultados de benchmarks en la informacion disponible.
 
-No existen datos de MMLU, HumanEval, GSM8K ni de ninguna otra evaluacion estandar, ni comparaciones con modelos similares en la informacion proporcionada.
-
 ## Requisitos de hardware
 
-Las siguientes cifras son estimaciones calculadas a partir del recuento de parametros (11,9 mil millones) y no proceden de mediciones publicadas por el autor:
-
-- VRAM estimada para inferencia:
-  - Prevision de 16 bits (BF16/FP16): aproximadamente 24 GB solo para pesos, mas memoria adicional para la cache KV segun contexto y lote.
-  - Cuantizacion de 8 bits: aproximadamente 12-13 GB.
-  - Cuantizacion de 4 bits: aproximadamente 7-8 GB.
-- GPU recomendadas: para precision completa, GPU con 24 GB o mas (A100 40/80 GB, H100, RTX 4090, RTX 3090). Para cuantizaciones de 4 bits, GPU de 8-12 GB pueden ser suficientes.
-- Compatibilidad con GPU de consumo: si, en la mayoria de tarjetas modernas con cuantizacion de 4 u 8 bits; en 16 bits requiere al menos 24 GB (RTX 3090/4090 o superiores).
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio y otros motores compatibles con GGUF. Para safetensors seria necesario un servidor como vLLM o TGI, cuya compatibilidad concreta con este repositorio no esta confirmada.
+- VRAM estimada para inferencia: con 30,7 B de parametros, una cuantizacion Q4_K_M requeriria del orden de 18-20 GB de VRAM; Q8_0 rondaria los 32-33 GB; en FP16 se superarian los 60 GB. Estas cifras son estimaciones basadas en el numero de parametros, no en mediciones publicadas del repositorio.
+- GPU recomendadas: para cuantizaciones agresivas (Q4), una RTX 4090 (24 GB) o RTX 3090 (24 GB) podria ser suficiente; para Q8 o FP16 se requeririan A100 40/80 GB, H100 o configuraciones multi-GPU.
+- Cabe en GPU de consumo: si, en cuantizaciones de 4 bits y con GPUs de 24 GB, siempre que se confirme la arquitectura y el soporte en la herramienta de inferencia.
+- Opciones de despliegue: llama.cpp, Ollama, y potencialmente vLLM o TGI si el formato GGUF es compatible con la version utilizada; tambien endpoints de Hugging Face por el tag declarado.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-La identidad real del modelo base no esta confirmada, por lo que cualquier comparacion es especulativa. A continuacion se ofrece una referencia de modelos abiertos de tamano similar, con datos publicos conocidos, pero sin poder garantizar que este repositorio corresponda a una arquitectura equivalente:
-
-| Modelo | Parametros | Contexto | Licencia | Disponibilidad |
-|---|---|---|---|---|
-| ToastyPigeon/Gemma-4-Test-GGUFs | ~11,9 mil millones | no disponible | no disponible | Hugging Face (repo de prueba) |
-| Gemma 2 9B (Google) | 9 mil millones | 8.192 tokens | Gemma Terms of Use | Hugging Face, ampliamente soportado |
-| Mistral NeMo 12B (Mistral AI / NVIDIA) | 12 mil millones | 128.000 tokens | Apache 2.0 | Hugging Face, ampliamente soportado |
-| Qwen2.5 14B (Alibaba) | 14 mil millones | 128.000 tokens | Apache 2.0 (segun variante) | Hugging Face, ampliamente soportado |
-
-La comparacion de rendimiento no es posible porque no hay benchmarks publicados para el modelo analizado.
+No disponible. No se dispone de informacion suficiente sobre arquitectura, licencia y rendimiento para establecer una comparativa fiable con otros modelos de la misma categoria.
 
 ## Limitaciones y advertencias
 
-- Se trata de un repositorio de pruebas creado por error, segun declara el propio autor en su model card; no es una publicacion oficial ni estable.
-- No hay licencia declarada, por lo que se desconoce si su uso comercial esta permitido. Utilizarlo en produccion sin verificar la licencia constituye un riesgo legal.
-- No se especifica la arquitectura, la ventana de contexto ni los idiomas soportados, lo que impide evaluar su idoneidad para tareas concretas.
-- No hay informacion sobre sesgos ni sobre el dataset de entrenamiento, por lo que no puede estimarse el riesgo de sesgo ni de alucinacion.
-- El recuento de 11,9 mil millones de parametros y el tamano de 25,3 GB corresponden a varios archivos que podrian mezclar pesos de modelos distintos al ser un repositorio de pruebas.
-- La model card apunta a un repositorio alternativo (Gemma4-Test-GGUFs) como destino real de la publicacion; se recomienda consultar ese repositorio antes de usar estos pesos.
-- No se recomienda su uso en produccion ni como referencia tecnica de la familia Gemma.
+- El repositorio se describe como un conjunto de modelos de prueba subidos por error; no es una publicacion oficial ni validada.
+- Ausencia total de model card tecnica: no se documenta arquitectura, entrenamiento, datos ni proceso de alineacion.
+- Licencia no declarada: no se puede garantizar el uso comercial ni la redistribucion de los pesos.
+- Idiomas soportados no especificados.
+- Riesgo elevado de alucinacion y de comportamiento impredecible al no existir evaluacion publicada.
+- Posibles sesgos desconocidos al no documentarse el corpus de entrenamiento.
+- El nombre sugiere una relacion con Gemma, pero no hay confirmacion; podria tratarse de pesos derivados, convertidos o no oficiales.
+- No apto para produccion sin una auditoria tecnica y legal previa.
 
 ## Enlaces
 
 - Repositorio en Hugging Face: https://huggingface.co/ToastyPigeon/Gemma-4-Test-GGUFs
-- Repositorio referenciado en la model card (destino real segun el autor): https://huggingface.co/ToastyPigeon/Gemma4-Test-GGUFs
-
-No se han encontrado papers, blogs, repositorios de codigo ni demos asociados a este modelo en los resultados de busqueda disponibles.
+- Repositorio referenciado en la model card (origen del nombre): https://huggingface.co/ToastyPigeon/Gemma4-Test-GGUFs

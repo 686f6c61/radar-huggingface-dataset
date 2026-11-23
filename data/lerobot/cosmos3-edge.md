@@ -2,87 +2,97 @@
 
 ## Resumen
 
-Cosmos3-Edge (publicado en Hugging Face como `lerobot/cosmos3-edge`) es la conversión a formato de política de LeRobot del checkpoint base Cosmos3-Edge de NVIDIA. No se trata de un modelo de lenguaje general, sino de un modelo de fundación para robótica: predice conjuntamente *chunks* de acciones del robot y latentes de vídeo futuros a partir de instrucciones en lenguaje y observaciones de cámara actuales, con condicionamiento opcional por el estado actual del robot. Su propósito es servir como punto de partida para post-entrenamiento de políticas robóticas, sin ningún fine-tuning específico de tarea incluido.
+Cosmos3-Edge es un modelo de política robótica (vision-language-action, VLA) desarrollado originalmente por NVIDIA y redistribuido por el equipo de LeRobot en formato nativo de la librería LeRobot. Se trata del checkpoint base de NVIDIA Cosmos3-Edge adaptado para su uso como política de robot: recibe imágenes de cámara y una instrucción en lenguaje natural, y predice conjuntamente los fotogramas de vídeo futuros y el siguiente bloque de acciones motrices. Su relevancia radica en que unifica generación de vídeo y predicción de acciones en un único backbone, lo que permite entrenar políticas robóticas con un objetivo de mundo (world model) en lugar de solo imitación directa.
 
-El backbone es un Nemotron 3 Dense VL MoT (Mixture-of-Transformers) con 28 capas de decodificador y anchura oculta de 2048, y almacena 4.563.688.396 pesos escalares (incluyendo componentes congelados y un VAE Wan2.2). Es relevante ahora porque integra en el ecosistema LeRobot las capacidades de generación de vídeo y acción de la familia Cosmos de NVIDIA, permitiendo a desarrolladores de robótica hacer post-entrenamiento sobre un modelo base multimodal con recetas documentadas (DROID y LIBERO).
+El modelo emplea una arquitectura Mixture-of-Transformers: una vía de comprensión que procesa el prompt de texto y una vía de generación que procesa los latentes de vídeo y las acciones, ambas unidas mediante atención compartida. El backbone es un transformer denso de 2B parámetros con 28 capas y tamaño oculto de 2048, sobre el que se montan módulos de acción y un tokenizador de vídeo basado en el VAE de Wan2.2. El total de parámetros asciende a 4.563.688.396 (4,6B), de los cuales 1.423.383.232 (1,4B) se entrenan por defecto al hacer fine-tuning.
+
+Es relevante ahora porque NVIDIA ha liberado la familia Cosmos 3 como modelos de mundo omnimodales para IA física, y LeRobot ofrece la integración práctica para fine-tuning sobre datasets como LIBERO o DROID con un único GPU de 80 GB. Esto baja la barrera para investigadores que quieran adaptar un modelo de mundo a su propio robot sin partir de cero.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Nemotron 3 Dense VL MoT (Mixture-of-Transformers), política de vídeo-acción conjunta con UniPC sampler |
-| Parametros totales | 4.563.688.396 (pesos escalares almacenados, incluye componentes congelados y VAE) |
-| Parametros activos | no disponible (el recuento almacenado no corresponde a parámetros entrenables o activos) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | BF16 (mayoría de los tensores), FP32 (4 tensores del time-embedder y dtype guardado para master weights) |
-| Idiomas soportados | no disponible |
-| Licencia | OpenMDW 1.1 (openmdw1.1-license) |
-| Formato de pesos | safetensors (1188 tensores: 1184 BF16 y 4 FP32), tamaño del repo 9,2 GB |
+| Arquitectura | Mixture-of-Transformers (vía de comprensión + vía de generación con atención compartida); backbone transformer denso de 28 capas, hidden size 2048 |
+| Parametros totales | 4.563.688.396 (4,6B) |
+| Parametros activos | No aplica (no es MoE); 1.423.383.232 (1,4B) entrenables por defecto en fine-tuning |
+| Longitud de contexto | No disponible |
+| Tipos de cuantizacion | No disponible (pesos en bfloat16, timestep embedding en float32) |
+| Idiomas soportados | No disponible |
+| Licencia | OpenMDW 1.1 (license_name: openmdw1.1-license) |
+| Formato de pesos | safetensors (formato LeRobot) |
 
 ## Arquitectura y entrenamiento
 
-El modelo es una política de robótica basada en un backbone Nemotron 3 Dense VL MoT de 28 capas y anchura 2048, que predice de forma conjunta chunks de acciones del robot y latentes de vídeo futuro (modo `wam`, video-and-action) a partir de lenguaje y una única observación de cámara por paso. La generación usa el sampler UniPC; el paquete incluye además un VAE Wan2.2, ficheros de tokenizador y procesadores serializados de LeRobot. No expone las APIs upstream de razonamiento, audio o generación de vídeo independiente.
+La arquitectura es una Mixture-of-Transformers con dos vías diferenciadas que comparten atención. La vía de comprensión lee el prompt de texto; la vía de generación procesa los latentes de vídeo y las acciones. El backbone es un transformer denso de 2B parámetros con 28 capas y tamaño oculto 2048. El tokenizador de vídeo es el VAE de Wan2.2. Los pesos se almacenan en bfloat16, con el timestep embedding en float32, y el `config.json` mantiene `dtype: float32` para los pesos maestros durante el entrenamiento.
 
-Sobre el entrenamiento del checkpoint base original de NVIDIA no hay datos publicados en la información disponible (tokens, composición del dataset, RLHF/DPO). Este repositorio de LeRobot añade exclusivamente la conversión al interfaz de política de LeRobot, sin fine-tuning de tarea. Ofrece dos recetas de post-entrenamiento: la receta DROID guardada (dominio 8, chunks de 32 pasos, condicionamiento por estado, normalización identidad, UniPC con 4 pasos de inferencia y guidance 3) y la receta LIBERO por defecto de la clase de tamaño (dominio 5, chunks de 16 pasos, sin condicionamiento por estado, normalización cuantil de acciones, UniPC con 30 pasos y guidance 1). También permite reinicializar los módulos de acción (`load_action_modules=false`) para post-entrenamiento de estilo nativo.
+El modelo se distribuye como checkpoint base para fine-tuning como política robótica, no como modelo listo para inferencia directa. En el fine-tuning por defecto se entrenan 1,4B de los 4,6B parámetros totales; con `--policy.load_action_modules=false` los módulos de acción arrancan desde su inicialización, replicando el post-entrenamiento nativo de NVIDIA. El entrenamiento completo cabe en un único GPU de 80 GB (unos 47 GB con 32 muestras por GPU y gradient checkpointing). No se especifican en la información disponible el número de tokens de entrenamiento, la composición del dataset ni si hubo RLHF/DPO.
 
 ## Capacidades
 
-- Predicción conjunta de chunks de acciones de robot y latentes de vídeo futuro (modo video-and-action `wam`).
-- Condicionamiento por instrucciones en lenguaje y observaciones de cámara actuales.
-- Condicionamiento opcional por el estado actual del robot (según receta, por ejemplo en DROID).
-- Muestreo de acciones mediante UniPC (configurable en pasos y guidance).
-- Integración completa con el interfaz de políticas de LeRobot: carga, post-entrenamiento y evaluación.
-- No soporta (no expuesto en este paquete): razonamiento upstream, audio, generación de vídeo independiente, tool calling ni capacidades de agente de propósito general.
+- Predicción conjunta de fotogramas de vídeo futuros y del siguiente bloque de acciones (chunk) a partir de imágenes de cámara y una instrucción en lenguaje natural.
+- Comprensión de instrucciones en lenguaje natural como condicionamiento de la política.
+- Modelado de mundo: genera la evolución visual esperada de la escena, lo que aporta una señal de entrenamiento más rica que la imitación pura.
+- Fine-tuning como política robótica sobre datasets en formato LeRobot (por ejemplo, LIBERO, LIBERO-10, DROID).
+- Soporte de entrenamiento con precisión mixta bf16 y gradient checkpointing.
+- Inferencia y evaluación en bfloat16.
+- Soporte de tool calling / function calling: no disponible.
+- Soporte de agentes y multi-step reasoning: no disponible.
+- Capacidades multilingües: no disponible.
+- Capacidades especiales (thinking mode, visión, audio): predicción de vídeo futuro (visión generativa); sin audio ni thinking mode documentados.
 
 ## Casos de uso
 
-- Punto de partida para post-entrenamiento de políticas robóticas: se parte del checkpoint base y se ajusta sobre un dataset propio (DROID o LIBERO) para obtener una política específica de manipulación.
-- Investigación en modelos de política multimodales: la predicción conjunta de vídeo y acción permite estudiar cómo la predicción de futuros visuales mejora el control del robot.
-- Reproducción de recetas LIBERO: usando `--policy.type=cosmos3_edge` se puede entrenar y evaluar en el benchmark LIBERO con la receta por defecto (chunks de 16 pasos, normalización cuantil).
-- Fine-tuning con datos DROID: la receta guardada (32 pasos, condicionamiento por estado, guidance 3) facilita replicar el flujo de post-entrenamiento estilo Policy-DROID.
-- Reentrenamiento de los módulos de acción desde cero: con `load_action_modules=false` se reinicializan las proyecciones de entrada/salida de acción y el embedding de modalidad, útil para adaptar a layouts de acción nuevos.
-- Evaluación comparativa de backbones de política: permite comparar Cosmos3-Edge frente a otras políticas de LeRobot bajo el mismo framework de entrenamiento y evaluación.
+- Fine-tuning de políticas de manipulación sobre LIBERO-10: el modelo se entrena con `--policy.type=cosmos3_edge` y `--policy.pretrained_path=lerobot/Cosmos3-Edge` para obtener un checkpoint de política específico de la tarea, partiendo de un modelo de mundo preentrenado en lugar de una inicialización aleatoria.
+- Investigación en world models para robótica: al predecir fotogramas futuros junto con las acciones, permite estudiar cómo la señal generativa de vídeo mejora la calidad de la política en entornos con contacto físico complejo.
+- Adaptación a un robot propio con hardware de un solo nodo: el fine-tuning completo cabe en un GPU de 80 GB, lo que permite a un laboratorio con una sola A100/H100 adaptar el modelo a su plataforma sin clúster.
+- Evaluación de políticas en simulación: los checkpoints derivados (por ejemplo, `lerobot/Cosmos3-Edge-Policy-LIBERO`) sirven como referencia para comparar recetas de entrenamiento sobre el mismo backbone.
+- Prototipado de instrucciones en lenguaje natural para control de brazos manipuladores: el modelo acepta un prompt textual y lo traduce en una secuencia de acciones condicionada por la imagen de cámara.
+- Reproducción de recetas de post-entrenamiento: con `--policy.load_action_modules=false` se puede replicar el procedimiento nativo de NVIDIA para validar resultados publicados.
+- Integración en pipelines de LeRobot: al estar en formato nativo, se conecta con `lerobot-train` y los datasets `lerobot/LIBERO-Cosmos3` y `lerobot/LIBERO_10-Cosmos3` sin conversión adicional.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card indica explícitamente que no se reporta tasa de éxito en LIBERO en bucle cerrado para esta conversión base, y que los resultados de checkpoints LIBERO fine-tuneados por separado o de modelos NVIDIA Policy-DROID no miden este checkpoint.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible; como referencia, con 4,56 mil millones de parámetros en BF16 los pesos ocupan del orden de 9 GB, por lo que una GPU con 16 GB de VRAM es un mínimo razonable (estimación, no dato oficial).
-- GPU recomendadas: no disponible; para entrenamiento con master weights FP32 se recomienda hardware de gama alta tipo A100/H100 (estimación).
-- Consumer GPU: dada la huella de ~9 GB en BF16, modelos como RTX 4090 (24 GB) deberían ser suficientes para inferencia (estimación no verificada).
-- Despliegue: a través de la librería LeRobot (`library_name: lerobot`); no hay soporte documentado de vLLM, llama.cpp, Ollama o TGI para este tipo de política.
-- Latencia y throughput: no disponible; la receta DROID usa UniPC con 4 pasos de inferencia y la LIBERO con 30 pasos, lo que afecta directamente al coste de muestreo.
+- VRAM estimada para inferencia: no disponible de forma explícita; el checkpoint pesa 9,2 GB en el repositorio (bfloat16), por lo que la inferencia requiere al menos esa cantidad más overhead de activaciones.
+- Fine-tuning completo: cabe en un único GPU de 80 GB (aproximadamente 47 GB con 32 muestras por GPU y gradient checkpointing).
+- GPU recomendadas: A100 80 GB o H100 80 GB para fine-tuning completo.
+- GPU de consumo: no se documenta que el fine-tuning quepa en GPU de consumo; para inferencia en bfloat16 el peso de 9,2 GB sugiere que podría caber en GPUs con 16-24 GB, aunque no se confirma en la información disponible.
+- Opciones de despliegue: LeRobot (`lerobot-train`), con instalación `pip install -e ".[cosmos3,training]"` desde el PR huggingface/lerobot#5134. Otras opciones (vLLM, llama.cpp, Ollama, TGI) no están documentadas.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Tipo | Licencia | Disponibilidad |
-|---|---|---|---|---|
-| lerobot/cosmos3-edge | 4,56 mil millones (pesos almacenados) | Política vídeo-acción para robótica (MoT) | OpenMDW 1.1 | Hugging Face, LeRobot |
-| nvidia/Cosmos3-Edge (checkpoint original) | no disponible | Modelo base Cosmos3 upstream | OpenMDW 1.1 | Hugging Face |
-| Otras políticas de LeRobot (p. ej. pi0, SmolVLA) | no disponible | Políticas de manipulación VLA | no disponible | Hugging Face, LeRobot |
+| Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
+|---|---|---|---|---|---|
+| Cosmos3-Edge (LeRobot) | 4,6B (1,4B entrenables) | No disponible | OpenMDW 1.1 | Hugging Face (lerobot) | Formato LeRobot, fine-tuning en un GPU de 80 GB |
+| nvidia/Cosmos3-Edge | No disponible | No disponible | OpenMDW 1.1 | Hugging Face (nvidia) | Checkpoint original de NVIDIA, mismo backbone |
+| Cosmos3-Edge-Policy-LIBERO | No disponible | No disponible | OpenMDW 1.1 | Hugging Face (lerobot) | Checkpoint ya fine-tuneado sobre LIBERO |
 
-No hay datos de rendimiento comparables publicados para esta conversión base, por lo que la comparativa se limita a parámetros y disponibilidad.
+No se dispone en la información proporcionada de datos de rendimiento de modelos alternativos de la misma categoría (VLA / world models para robótica), por lo que la comparación cuantitativa no está disponible.
 
 ## Limitaciones y advertencias
 
-- Los parámetros almacenados (4,56 mil millones) no representan parámetros entrenables o activos; el paquete incluye componentes congelados y un VAE Wan2.2.
-- Las características de observación y acción guardadas están vacías: el frame rate y el tamaño de cámara no están resueltos y deben proporcionarse desde un dataset objetivo antes de construir la política.
-- No se ha reportado tasa de éxito en LIBERO para este checkpoint base; los resultados de otros checkpoints no lo miden.
-- El layout de estado y acción debe coincidir exactamente con la receta elegida (DROID o LIBERO); la receta LIBERO exige que el dataset coincida con su layout de cámaras y acciones.
-- No expone razonamiento, audio ni generación de vídeo independiente del modelo upstream.
-- Para evaluación se recomienda desactivar TF32 (`--tf32=false`) y usar BF16 en inferencia; el dtype guardado FP32 es para master weights de entrenamiento.
-- La licencia OpenMDW 1.1 exige retener la licencia, avisos de copyright y de origen al redistribuir; conviene revisar el fichero NOTICE y las notas upstream de seguridad, sesgo, privacidad y explicabilidad de NVIDIA.
-- Sesgos, riesgo de alucinación y limitaciones de idioma: no disponibles en la información proporcionada; remitirse a los documentos BIAS.md y SAFETY.md del modelo original de NVIDIA.
+- Es un checkpoint base, no un modelo listo para producción: requiere fine-tuning como política robótica antes de su uso operativo.
+- No se documentan sesgos conocidos; al ser un modelo de robótica condicionado por imágenes y texto, puede heredar sesgos de los datasets de entrenamiento de NVIDIA, no detallados en la información disponible.
+- Riesgo de alucinación: no cuantificado; la predicción de vídeo futuro puede generar fotogramas plausibles pero incorrectos, lo que afecta a la señal de entrenamiento.
+- Limitaciones de contexto e idioma: la longitud de contexto y los idiomas soportados no están disponibles.
+- Licencia OpenMDW 1.1: es una licencia "other" que exige conservar la licencia y los avisos del fichero NOTICE al redistribuir los materiales; conviene revisar los términos completos antes de uso comercial.
+- El uso previsto y las limitaciones del modelo original se describen en la model card de NVIDIA, no en la de LeRobot.
+- Los requisitos de hardware para inferencia y despliegue en producción no están documentados.
 
 ## Enlaces
 
-- Ficha en Hugging Face: https://huggingface.co/lerobot/cosmos3-edge
-- Checkpoint original de NVIDIA: https://huggingface.co/nvidia/Cosmos3-Edge/tree/344d602b128d1bbdacb43b08d0a3626f46343e29
-- Model card original de NVIDIA: https://huggingface.co/nvidia/Cosmos3-Edge/blob/344d602b128d1bbdacb43b08d0a3626f46343e29/README.md
-- Notas de seguridad upstream: https://huggingface.co/nvidia/Cosmos3-Edge/blob/344d602b128d1bbdacb43b08d0a3626f46343e29/SAFETY.md
-- Notas de sesgo upstream: https://huggingface.co/nvidia/Cosmos3-Edge/blob/344d602b128d1bbdacb43b08d0a3626f46343e29/BIAS.md
-- Notas de privacidad upstream: https://huggingface.co/nvidia/Cosmos3-Edge/blob/344d602b128d1bbdacb43b08d0a3626f46343e29/PRIVACY.md
-- Notas de explicabilidad upstream: https://huggingface.co/nvidia/Cosmos3-Edge/blob/344d602b128d1bbdacb43b08d0a3626f46343e29/EXPLAINABILITY.md
+- Hugging Face (LeRobot): https://huggingface.co/lerobot/cosmos3-edge
+- Modelo original de NVIDIA: https://huggingface.co/nvidia/Cosmos3-Edge
+- Documentación de Cosmos3 en LeRobot: https://huggingface.co/docs/lerobot/cosmos3
+- PR de integración en LeRobot: https://github.com/huggingface/lerobot/pull/5134
+- Checkpoint fine-tuneado LIBERO: https://huggingface.co/lerobot/Cosmos3-Edge-Policy-LIBERO
+- Checkpoint fine-tuneado LIBERO-10: https://huggingface.co/lerobot/Cosmos3-Edge-Policy-LIBERO_10
+- Dataset LIBERO-Cosmos3: https://huggingface.co/datasets/lerobot/LIBERO-Cosmos3
+- Dataset LIBERO_10-Cosmos3: https://huggingface.co/datasets/lerobot/LIBERO_10-Cosmos3
+- Informe técnico (arXiv): https://arxiv.org/abs/2606.02800
+- Informe técnico (PDF NVIDIA): https://research.nvidia.com/labs/cosmos-lab/cosmos3/technical-report.pdf
 - Licencia OpenMDW 1.1: https://openmdw.ai/license/1-1/

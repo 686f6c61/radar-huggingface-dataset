@@ -50,31 +50,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Baj van a Windows 11 színkezelésével, összekeverheti őket a ...",
-      "url": "https://pcforum.hu/hirek/24145/baj-van-a-windows-11-szinkezelesevel-osszekeverheti-oket-a-rendszer-egymassal",
-      "snippet": "Dec 28, 2021 · A hibaleírásban szereplő információk szerint a probléma a HDR megjelenítővel összekapcsolt gépeket érinti, amiken …"
-    },
-    {
-      "title": "Ingyen letölthető a Windows Media Player 11 - PC Fórum",
-      "url": "https://pcforum.hu/hirek/10410/ingyen-letoltheto-a-windows-media-player-11",
-      "snippet": "Oct 31, 2006 · Az immár végleges kiadásban elérhető Windows Media Player 11 egy teljesen átalakult külsőt, valamit számos új …"
-    },
-    {
-      "title": "WordPad - PC Fórum",
-      "url": "https://pcforum.hu/cimkek/wordpad",
-      "snippet": "A Windows operációs rendszerek beépített szövegszerkesztő programja. A Wordpad a Notepad-hez képest számos plusz funkciót …"
-    },
-    {
-      "title": "Téma: Animációs képességekkel bővíti a Paint rajzprogramot a ...",
-      "url": "https://pcforum.hu/tarsalgo/155605/f-animacios-kepessegekkel-boviti-animacio-paint",
-      "snippet": "Nov 12, 2025 · Animációs képességekkel bővíti a Paint rajzprogramot a Microsoft 2025-11-12T10:17:15+01:00 2025-11 …"
-    },
-    {
-      "title": "Eltűnik a WordPad szövegszerkesztő a Windows-okból - PC Fórum",
-      "url": "https://pcforum.hu/hirek/26388/microsoft-wordpad-eltavolitas-windows-szovegszerkeszto-program",
-      "snippet": "Sep 4, 2023 · Közel három évtizeddel annak bemutatása után a Microsoft újabb klasszikus alkalmazás t küld nyugdíjba a Windows …"
-    }
-  ]
+  "sources": []
 }

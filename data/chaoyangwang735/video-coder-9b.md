@@ -1,84 +1,93 @@
 # ChaoyangWang735/Video-Coder-9B
 
 ## Resumen
-Video-Coder-9B es un modelo publicado en Hugging Face por el usuario ChaoyangWang735 bajo licencia Apache 2.0. Por el nombre se deduce que está orientado a tareas de generación de código con posible componente de vídeo, y que cuenta con aproximadamente 9 mil millones de parámetros. Sin embargo, la model card pública no contiene descripción, documentación técnica, ejemplos de uso ni resultados de evaluación: únicamente incluye la etiqueta de licencia.
 
-La información disponible es, por tanto, mínima: no se especifican arquitectura, longitud de contexto, idiomas soportados, composición del dataset de entrenamiento ni proceso de alineación. El repositorio registra cero descargas y cero likes en el momento de la consulta, y las fechas de creación y actualización coinciden, lo que sugiere una publicación reciente y sin actividad posterior.
+Video-Coder-9B es un modelo de lenguaje de 9.409.813.744 parámetros (aproximadamente 9,4 mil millones) publicado por ChaoyangWang735 bajo licencia Apache 2.0. Se trata del modelo presentado en el artículo "Video-Coder: Reinforcing Agentic Coding for Video Generation" (arXiv:2611.09894), cuyo objetivo es entrenar un agente de generación de vídeo guiado por código: el modelo escribe y ejecuta código de forma autónoma para construir una escena 3D dinámica (el llamado "Draft Video") que aporta señales de estructura y movimiento a generadores de vídeo posteriores.
 
-Dado que no hay documentación verificable, esta ficha recoge los datos confirmados (identificador, autor, licencia y fecha) y marca explícitamente como "no disponible" todo aquello que el autor no ha publicado. Cualquier evaluación de idoneidad para producción debería posponerse hasta que el autor publique una model card completa o artefactos de pesos verificables.
+El modelo se distribuye en formato safetensors con la etiqueta de arquitectura `qwen3_5`, lo que sugiere una base derivada de la familia Qwen 3.5, aunque la model card no detalla la arquitectura interna ni la longitud de contexto. El repositorio ocupa 18,8 GB y acumula 479 descargas en el momento de la consulta.
+
+Su relevancia actual reside en el enfoque: en lugar de generar vídeo directamente, el modelo actúa como un agente de código que produce y ejecuta programas para renderizar escenas 3D que después condicionan un generador de vídeo. Según la model card, este enfoque mejora Minimax-H3 en aproximadamente 7 puntos en PhyGenBench y 24 puntos en VBench-2.0.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible |
-| Parametros totales | aproximadamente 9B (inferido del nombre del modelo; no confirmado por el autor) |
+| Arquitectura | Transformer (etiqueta `qwen3_5` en Hugging Face; detalles internos no disponibles) |
+| Parametros totales | 9.409.813.744 |
 | Parametros activos | no disponible |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | no disponible |
+| Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
-No se ha publicado información sobre la arquitectura del modelo. El nombre sugiere un transformer de aproximadamente 9 mil millones de parámetros, pero el autor no confirma ni el tipo de arquitectura (densa, MoE, híbrida) ni si incorpora mecanismos específicos para procesamiento de vídeo, codificación de código o ambas cosas.
 
-Tampoco hay datos sobre el corpus de entrenamiento: número de tokens, composición del dataset, proporción de código frente a texto o vídeo, ni si se aplicaron técnicas de alineación como RLHF, DPO o instrucción supervisada. No se dispone de información sobre innovaciones técnicas (atención lineal, decodificación especulativa, modos de razonamiento) ni sobre el pipeline de entrenamiento.
+La model card no describe en detalle la arquitectura interna del modelo. La etiqueta `qwen3_5` en Hugging Face apunta a una base de la familia Qwen 3.5, pero no se especifica si se trata de un transformer denso o de una variante con mezcla de expertos, ni se detalla la longitud de contexto nativa. El recuento real de parámetros en safetensors (9.409.813.744) confirma un tamaño de aproximadamente 9,4 mil millones.
+
+El entrenamiento se articula en dos fases según la documentación del proyecto: un ajuste supervisado (SFT) sobre el conjunto Video-Coder-SFT-10k y un refuerzo (RL) sobre Video-Coder-RL-4k. Ambos datasets contienen prompts diversos y vídeos de referencia ground-truth. El modelo se entrena dentro del Video-Coder Harness, un entorno interactivo unificado que integra ejecución de código, renderizado de escenas 3D y realimentación de ejecución, lo que permite al agente aprender a escribir código que se ejecuta y produce un Draft Video utilizable por generadores de vídeo posteriores. No se especifican en la información disponible el número total de tokens de entrenamiento, la composición exacta del dataset ni si se emplearon técnicas como DPO.
 
 ## Capacidades
-- Generación de texto: no confirmada explícitamente por el autor.
-- Generación de código: sugerida por el nombre del modelo, sin documentación que la respalde.
-- Procesamiento de vídeo: sugerido por el nombre del modelo, sin especificación de si se trata de entrada, salida o ambas.
-- Tool calling / function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingües: no disponible.
-- Modos especiales (thinking, visión, audio): no disponible.
+
+- Generación de código: el modelo escribe programas que construyen escenas 3D dinámicas como paso intermedio para la generación de vídeo.
+- Ejecución de código en bucle agéntico: integrado en el Video-Coder Harness, recibe realimentación de ejecución y renderizado para iterar sobre su propio código.
+- Razonamiento multi-paso orientado a agentes: planifica y refina la construcción de la escena a partir de un prompt de vídeo.
+- Condicionamiento de generadores de vídeo: el Draft Video producido sirve como señal de estructura y movimiento para modelos downstream como Minimax-H3.
+- Capacidades multilingües: no disponible en la información proporcionada.
+- Tool calling / function calling: no disponible de forma explícita; el bucle de ejecución de código del Harness cumple una función análoga.
+- Modo thinking, visión o audio: no disponible en la información proporcionada.
 
 ## Casos de uso
-No es posible recomendar casos de uso concretos con garantías, dado que el autor no ha documentado las capacidades del modelo. A modo orientativo, y siempre sujeto a validación previa por parte del equipo que lo adopte, podrían explorarse los siguientes escenarios:
 
-- Asistencia a la programación en entornos de desarrollo: si el modelo confirma su orientación a código, podría integrarse en editores o asistentes de autocompletado, previa evaluación de su calidad en benchmarks como HumanEval o MBPP.
-- Análisis de contenido audiovisual: si el componente "Video" del nombre implica entrada multimodal, podría emplearse para resumir o describir secuencias, aunque no hay evidencia publicada de ello.
-- Prototipado interno de pipelines de generación de código: el tamaño de 9B permitiría, en principio, desplegarlo en una GPU de gama alta para pruebas controladas.
-- Investigación sobre modelos de código de tamaño medio: útil como punto de partida para experimentos comparativos, siempre que se publiquen los pesos y la configuración.
-- Fine-tuning específico de dominio: la licencia Apache 2.0 facilita la adaptación a dominios concretos, aunque la ausencia de documentación incrementa el coste de validación.
-- Evaluación de robustez y sesgos: el modelo puede servir como objeto de estudio en auditorías de modelos open source de reciente publicación.
-
-En todos los casos, la recomendación es tratar el modelo como no validado hasta que exista documentación técnica o resultados reproducibles.
+- Generación de vídeo con control físico: el modelo escribe código que construye una escena 3D con movimiento plausible y la usa como Draft Video para condicionar un generador downstream, mejorando la coherencia física según los resultados reportados en PhyGenBench.
+- Preproducción de animaciones 3D: a partir de una descripción textual, el agente genera y ejecuta código de escena que produce un borrador animado reutilizable como referencia para artistas o pipelines de render.
+- Investigación en agentes de código: el modelo y el Harness sirven como banco de pruebas para estudiar cómo un LLM aprende a escribir, ejecutar y depurar código en un bucle cerrado con realimentación del entorno.
+- Prototipado rápido de escenas para videojuegos o simulaciones: el agente puede generar escenas 3D dinámicas a partir de prompts, útiles como punto de partida en prototipos de previsualización.
+- Aumento de pipelines de generación de vídeo existentes: el modelo se puede insertar como etapa previa de condicionamiento sobre generadores como Minimax-H3 para mejorar la estructura y el movimiento del resultado final.
+- Evaluación comparativa de agentes de código: al estar entrenado con SFT y RL sobre tareas verificables (renderizado de escena), permite medir la capacidad de un LLM de producir código ejecutable y correcto en un dominio concreto.
 
 ## Benchmarks y rendimiento
-No se han publicado resultados de benchmarks en la informacion disponible.
+
+La model card reporta mejoras relativas al integrar Video-Coder con Minimax-H3, pero no publica una tabla de resultados numéricos detallada del propio modelo en benchmarks estándar de LLM (MMLU, HumanEval, GSM8K, etc.).
+
+| Benchmark | Resultado |
+|---|---|
+| PhyGenBench | mejora de aproximadamente +7 puntos al combinar con Minimax-H3 (valor absoluto no disponible) |
+| VBench-2.0 | mejora de aproximadamente +24 puntos al combinar con Minimax-H3 (valor absoluto no disponible) |
+| MMLU, HumanEval, GSM8K y otros | no disponible |
 
 ## Requisitos de hardware
-- VRAM estimada para inferencia: no disponible de forma oficial; para un modelo denso de ~9B, una estimación orientativa sería de aproximadamente 18 GB en FP16, 9-10 GB en cuantización de 8 bits y 5-6 GB en cuantización de 4 bits, aunque estas cifras no están confirmadas por el autor.
-- GPU recomendadas: no disponible. Por tamaño, cabría esperar compatibilidad con A100, H100, L40S o RTX 4090 en configuraciones adecuadas, sin confirmación oficial.
-- Compatibilidad con GPU de consumo: no confirmada; dependería de la cuantización y del soporte en herramientas como llama.cpp u Ollama, que no está documentado.
-- Opciones de despliegue: no disponible (no se documenta soporte para vLLM, TGI, llama.cpp, Ollama ni similares).
+
+- VRAM estimada para inferencia: no disponible en la información proporcionada. Como referencia orientativa por tamaño (9,4 mil millones de parámetros), en fp16 se requerirían del orden de 18-19 GB solo para los pesos, y en cuantizaciones de 8 y 4 bits aproximadamente 9-10 GB y 5-6 GB respectivamente; estos cálculos son estimaciones por tamaño, no datos publicados por el autor.
+- GPU recomendadas: no disponible en la información proporcionada.
+- Viabilidad en GPU de consumo: no confirmada por el autor; por tamaño, una GPU con 24 GB de VRAM (por ejemplo, RTX 4090) podría alojar los pesos en fp16, aunque sin datos oficiales de latencia ni de memoria total del Harness.
+- Opciones de despliegue: el proyecto remite al repositorio oficial de GitHub para instrucciones de inferencia; no se especifican vLLM, llama.cpp, Ollama ni TGI en la información disponible.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
-No es posible establecer una comparativa rigurosa porque el autor no ha publicado especificaciones verificables (arquitectura, contexto, benchmarks). Como referencia de categoría, se incluyen modelos de tamaño similar ampliamente documentados, pero la comparación con Video-Coder-9B queda pendiente de que se publiquen datos.
 
-| Modelo | Parametros | Contexto | Licencia | Documentacion |
+No se dispone de datos de benchmarks propios del modelo ni de especificaciones de contexto que permitan una comparación rigurosa con alternativas de la misma categoría. La comparación cualitativa se limita a lo siguiente:
+
+| Modelo | Parametros | Contexto | Enfoque | Licencia |
 |---|---|---|---|---|
-| Video-Coder-9B | ~9B (inferido) | no disponible | Apache 2.0 | minima (solo licencia) |
-| Qwen2.5-Coder-7B | 7B | 32K (hasta 128K en variantes) | Apache 2.0 | completa, con benchmarks |
-| CodeLlama-7B | 7B | 16K | Llama 2 custom | completa, con benchmarks |
-| DeepSeek-Coder-6.7B | 6.7B | 16K | DeepSeek license | completa, con benchmarks |
+| Video-Coder-9B | 9,4 mil millones | no disponible | Agente de código para generación de vídeo (Draft Video 3D) | Apache 2.0 |
+| Alternativas de 9B de propósito general | no disponible | no disponible | LLM generalista | no disponible |
+| Generadores de vídeo directos (p. ej. Minimax-H3) | no disponible | no disponible | Generación de vídeo end-to-end | no disponible |
+
+No se han publicado en la información disponible comparativas numéricas con modelos de tamaño o tarea similares.
 
 ## Limitaciones y advertencias
-- Ausencia total de model card técnica: no hay información sobre arquitectura, entrenamiento, datos ni evaluación.
-- Riesgo elevado de alucinación y de comportamiento impredecible al no existir documentación sobre alineación o ajuste por instrucciones.
-- Imposibilidad de verificar sesgos conocidos, cobertura idiomática o calidad en tareas específicas.
-- Licencia Apache 2.0: permite uso comercial y modificación, pero no exime de validar el modelo antes de desplegarlo en producción.
-- Cero descargas y cero likes en el momento de la consulta: no hay evidencia de uso comunitario ni de validación por terceros.
-- Fechas de creación y actualización idénticas: el repositorio no muestra mantenimiento posterior.
-- No se confirma la disponibilidad de pesos en formatos estándar (safetensors, GGUF), lo que impide planificar el despliegue.
-- Se recomienda no emplear el modelo en producción sin una evaluación propia y sin confirmar la integridad y procedencia de los pesos.
+
+- La model card no documenta sesgos conocidos del modelo; al entrenarse sobre datasets propios (Video-Coder-SFT-10k y Video-Coder-RL-4k), los sesgos de dichos datos no están caracterizados públicamente.
+- Riesgo de alucinación: como modelo de código, puede generar programas que no se ejecuten o que produzcan escenas incorrectas; el Harness mitiga parcialmente esto mediante realimentación de ejecución, pero no lo elimina.
+- Limitaciones de contexto e idioma: no se especifican la longitud de contexto ni los idiomas soportados, lo que dificulta evaluar su idoneidad en producción multilingüe.
+- Dependencia del Harness: el flujo agéntico depende del entorno Video-Coder Harness (ejecución de código y renderizado 3D), por lo que el despliegue requiere infraestructura adicional más allá de la inferencia del LLM.
+- Licencia Apache 2.0: permite uso comercial, pero conviene revisar las licencias de los componentes del Harness y de los generadores de vídeo downstream (por ejemplo, Minimax-H3) antes de integrarlo en un producto.
+- Detalles de arquitectura, cuantización y benchmarks estándar no publicados: la información disponible es insuficiente para garantizar un comportamiento predecible en tareas generales de LLM.
 
 ## Enlaces
+
 - Hugging Face: https://huggingface.co/ChaoyangWang735/Video-Coder-9B
-- Paper: no disponible
-- Blog del autor: no disponible
-- Repositorio de código: no disponible
-- Demo: no disponible
+- Paper: https://arxiv.org/abs/2611.09894
+- Página del proyecto: https://cywang735.github.io/Video-Coder/
+- Repositorio de código: https://github.com/CYWang735/Video-Coder

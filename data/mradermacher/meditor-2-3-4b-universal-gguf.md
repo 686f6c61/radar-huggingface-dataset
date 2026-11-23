@@ -2,50 +2,48 @@
 
 ## Resumen
 
-Meditor-2-3.4B-Universal-GGUF es la distribucion en formato GGUF del modelo Meditor-2-3.4B-Universal, publicado por el usuario Yo-Purple y cuantizado por mradermacher, un perfil conocido en Hugging Face por generar versiones cuantizadas de modelos abiertos para su uso con llama.cpp y LM Studio. El modelo base emplea una arquitectura de tipo `qwen2_moe` con mezcla de expertos jerarquica (hierarchical MoE), segun las etiquetas declaradas por el autor, y cuenta con 3.511.666.688 parametros totales segun los pesos en safetensors del repositorio base.
+Meditor-2-3.4B-Universal es un modelo de lenguaje de tipo mezcla de expertos (MoE) desarrollado por Yo-Purple, distribuido en formato GGUF por mradermacher. Con 3.511.666.688 parámetros totales, emplea la arquitectura `qwen2_moe` y está etiquetado como derivado de SmolLM2 y orientado a conversación. La versión aquí documentada es una recuantización estática del modelo base `Yo-Purple/Meditor-2-3.4B-Universal`, publicada bajo licencia Apache 2.0.
 
-La propuesta del modelo gira en torno a tres ejes declarados en sus etiquetas: una ventana de contexto de 500.000 tokens, capacidades de razonamiento y soporte de tool calling (toolformer). El repositorio incluye cuantizaciones estaticas desde Q2_K hasta f16, lo que permite desplegar el modelo en hardware de consumo con requisitos de VRAM que van desde aproximadamente 1,4 GB hasta 7,1 GB segun el nivel de cuantizacion.
+El modelo se presenta como un modelo conversacional de pequeno tamano con estructura MoE, lo que en teoria permite un coste de inferencia inferior al de un modelo denso del mismo numero de parametros totales. La informacion disponible no detalla el numero de parametros activos, la longitud de contexto ni la composicion del dataset de entrenamiento, por lo que estos datos se marcan como no disponibles.
 
-Es relevante ahora porque combina un tamano reducido (3,4B parametros) con una arquitectura MoE y un contexto declarado muy amplio, lo que lo situa en la categoria de modelos pequenos orientados a agentes y tareas de contexto largo. No obstante, la model card es muy escasa: no se detallan datos de entrenamiento, composicion del dataset ni resultados de benchmarks, por lo que muchas especificaciones deben considerarse no disponibles.
+La relevancia de esta ficha radica en su formato: al ofrecerse en GGUF con cuantizaciones desde Q2_K hasta f16, es desplegable en hardware de consumo mediante llama.cpp u Ollama, lo que lo hace atractivo para prototipado local y experimentacion con arquitecturas MoE de baja huella.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | qwen2_moe con hierarchical MoE (hmoe), segun etiquetas del autor |
+| Arquitectura | MoE basada en `qwen2_moe` (segun tags del autor) |
 | Parametros totales | 3.511.666.688 |
 | Parametros activos | no disponible |
-| Longitud de contexto | 500.000 tokens (declarado en etiquetas) |
+| Longitud de contexto | no disponible |
 | Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, f16 |
-| Idiomas soportados | en |
+| Idiomas soportados | en (ingles) |
 | Licencia | apache-2.0 |
-| Formato de pesos | GGUF (repositorio de cuantizaciones); el modelo base usa safetensors |
+| Formato de pesos | GGUF (recuantizacion estatica de pesos safetensors del modelo base) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base se declara como `qwen2_moe`, es decir, un transformer con mezcla de expertos basado en la familia Qwen2, combinado con etiquetas que indican `smollm2`, `moe`, `hierarchical-moe` y `hmoe`. Esto sugiere una arquitectura derivada de SmolLM2 con capas MoE jerarquicas, aunque la model card no proporciona detalles sobre el numero de expertos, el enrutamiento, la dimension oculta ni la configuracion exacta de las capas. Tampoco se especifica cuantos parametros estan activos por token, dato clave en un modelo MoE.
+El modelo emplea una arquitectura de mezcla de expertos (`qwen2_moe`), segun los metadatos del autor. No se dispone de informacion sobre el numero de expertos, la estrategia de enrutamiento, el numero de parametros activos por token ni la dimension de las capas ocultas. La etiqueta `smollm2` sugiere una relacion con la familia SmolLM2 de Hugging Face, pero no se confirma en la informacion proporcionada si se trata de una inicializacion, un destilado o una arquitectura inspirada.
 
-No hay informacion publicada sobre el volumen de tokens de entrenamiento, la composicion del dataset, el uso de RLHF o DPO, ni sobre innovaciones tecnicas concretas como decodificacion especulativa o atencion lineal. Las etiquetas mencionan `500k-context`, `reasoning` y `toolformer`, lo que indica que el autor declara soporte de contexto largo, razonamiento y entrenamiento orientado a uso de herramientas, pero sin documentacion tecnica que lo respalde en la model card. Esta version concreta es una cuantizacion estatica generada por mradermacher; existe tambien una variante con cuantizaciones ponderadas/imatrix en el repositorio `mradermacher/Meditor-2-3.4B-Universal-i1-GGUF`.
+No hay datos publicados sobre el volumen de tokens de entrenamiento, la composicion del dataset, el uso de RLHF/DPO, ni innovaciones tecnicas como decodificacion especulativa o atencion lineal. La unica informacion de entrenamiento disponible es la referencia al modelo base `Yo-Purple/Meditor-2-3.4B-Universal` y la etiqueta `unibench-100`, que sugiere un posible benchmark de evaluacion pero cuyo contenido no se detalla.
 
 ## Capacidades
 
-- Generacion de texto conversacional en ingles, segun la etiqueta `conversational` y el idioma declarado.
-- Razonamiento (etiqueta `reasoning`), sin detalle sobre si existe un modo de pensamiento explicito.
-- Tool calling / function calling (etiqueta `toolformer`), orientado a integracion con herramientas externas.
-- Contexto largo declarado de hasta 500.000 tokens, adecuado para documentos extensos o historiales de conversacion prolongados.
-- Arquitectura MoE, que en teoria permite mayor capacidad con un coste de computo por token inferior al de un modelo denso equivalente, aunque no se especifican los parametros activos.
-- Compatibilidad con LM Studio (etiqueta `lmstudio`) y con el ecosistema GGUF de llama.cpp.
-- Capacidades multilingues: solo ingles declarado; no se documentan otros idiomas.
-- No se declaran capacidades de vision, audio ni otros modalidades.
+- Generacion de texto conversacional en ingles, segun la etiqueta `conversational` y el pipeline declarado.
+- Razonamiento general y respuesta a instrucciones: no se documentan capacidades especificas de codigo, matematicas o vision en la informacion disponible.
+- Soporte de tool calling / function calling: no disponible.
+- Soporte de agentes y razonamiento multi-paso: no disponible.
+- Capacidades multilingues: limitadas al ingles segun el campo `language: en`; no se documentan otros idiomas.
+- Capacidades especiales (modo thinking, vision, audio): no disponible.
 
 ## Casos de uso
 
-- Analisis de documentos largos: el contexto declarado de 500.000 tokens permite procesar informes, expedientes o bases de codigo extensas en una sola pasada, sin fragmentacion, en tareas de resumen o extraccion de informacion.
-- Agentes con uso de herramientas: la etiqueta `toolformer` sugiere que el modelo puede generar llamadas a funciones, lo que lo hace apto para orquestar APIs en flujos de automatizacion con llama.cpp o LM Studio.
-- Asistente conversacional local: con cuantizaciones Q4_K_M de 2,2 GB, puede ejecutarse en portatiles con GPU integrada o en CPU, ofreciendo un asistente en ingles sin dependencia de la nube.
-- Razonamiento multi-paso en entornos con recursos limitados: su tamano reducido y su naturaleza MoE permiten desplegarlo en estaciones de trabajo modestas para tareas de planificacion y descomposicion de problemas.
-- Prototipado rapido de pipelines RAG: el contexto largo facilita inyectar grandes volumentes de contexto recuperado sin truncar, util para validar arquitecturas de recuperacion antes de migrar a modelos mayores.
-- Educacion y experimentacion: al ser un modelo pequeno con licencia Apache 2.0, es adecuado para fines docentes, pruebas de cuantizacion y comparativas de arquitecturas MoE en entornos academicos.
+- Prototipado local de asistentes conversacionales: al estar disponible en GGUF con cuantizaciones de 1,4 a 3,8 GB, puede ejecutarse en portatiles con GPU de gama media o incluso en CPU para validar flujos de chat antes de migrar a modelos mayores.
+- Experimentacion con arquitecturas MoE en entornos con recursos limitados: permite estudiar el comportamiento de un modelo `qwen2_moe` de ~3,5B parametros totales sin necesidad de infraestructura de datacenter.
+- Generacion de texto en ingles para tareas de resumen o reescritura en pipelines offline: su huella reducida facilita el despliegue en entornos con restricciones de memoria.
+- Evaluacion comparativa de cuantizaciones: el repositorio ofrece 12 variantes GGUF, lo que permite medir el impacto de la cuantizacion en calidad y latencia sobre un mismo modelo base.
+- Integracion en aplicaciones de escritorio o edge con llama.cpp: la disponibilidad de binarios GGUF y la licencia Apache 2.0 facilitan su inclusion en productos comerciales.
+- Fines educativos y de investigacion: util para estudiar el comportamiento de modelos conversacionales pequenos y su degradacion con cuantizaciones agresivas (Q2_K, Q3_K_S).
 
 ## Benchmarks y rendimiento
 
@@ -53,42 +51,37 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia segun cuantizacion: Q2_K ~1,4 GB; Q3_K_S ~1,7 GB; Q3_K_M ~1,8 GB; Q3_K_L ~2,0 GB; IQ4_XS ~2,0 GB; Q4_K_S ~2,1 GB; Q4_K_M ~2,2 GB; Q5_K_S ~2,5 GB; Q5_K_M ~2,6 GB; Q6_K ~3,0 GB; Q8_0 ~3,8 GB; f16 ~7,1 GB. Hay que anadir memoria para el contexto KV, que con 500.000 tokens puede ser considerable y depende de la configuracion de llama.cpp.
-- GPU recomendadas: cualquier GPU consumer con 4 GB o mas de VRAM puede ejecutar las cuantizaciones Q4 y Q5; para f16 se recomienda una GPU con 8 GB o mas (RTX 3060 Ti, RTX 4060 Ti, RTX 4070). En entornos profesionales, A100 o H100 no son necesarias por el tamano del modelo, pero permitirian contextos muy largos con mayor throughput.
-- Cabe en GPU consumer: si, practicamente en cualquier GPU moderna con 4-8 GB de VRAM, e incluso en CPU con llama.cpp.
-- Opciones de despliegue: llama.cpp, LM Studio (soporte declarado), Ollama (via importacion de GGUF), y servidores compatibles con la API de OpenAI (etiqueta `endpoints_compatible`). vLLM y TGI no estan confirmados para este formato GGUF concreto.
-- Latencia y throughput estimados: no disponibles.
+- VRAM estimada para inferencia: aproximadamente 1,4 GB (Q2_K), 2,2 GB (Q4_K_M), 3,8 GB (Q8_0) y 7,1 GB (f16), segun los tamanos de fichero publicados.
+- GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM para cuantizaciones Q4; RTX 3060, RTX 4060, RTX 4090 o superiores para mayor throughput; A100/H100 no son necesarias para este tamano.
+- Cabe en GPU de consumo: si, en la mayoria de tarjetas modernas con 4-8 GB de VRAM; tambien puede ejecutarse en CPU con llama.cpp.
+- Opciones de despliegue: llama.cpp, Ollama, y cualquier runtime compatible con GGUF; el modelo base en safetensors podria servirse con vLLM o TGI, pero no se confirma compatibilidad en la informacion disponible.
+- Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| Meditor-2-3.4B-Universal (este) | 3,51B | 500k (declarado) | Apache 2.0 | GGUF / safetensors | MoE jerarquica, solo ingles, sin benchmarks publicados |
-| SmolLM2-1.7B | 1,7B | 8k tipico | Apache 2.0 | safetensors / GGUF | Modelo denso pequeno de Hugging Face; referencia por la etiqueta `smollm2` |
-| Qwen2-1.5B / Qwen2.5-3B | 1,5B / 3B | 32k (Qwen2.5) | Apache 2.0 | safetensors / GGUF | Familia base de la arquitectura `qwen2_moe`; contexto menor |
-| Phi-3-mini | 3,8B | 4k-128k segun variante | MIT | safetensors / GGUF | Denso, con benchmarks publicados; contexto muy inferior |
+| Meditor-2-3.4B-Universal (este) | 3,51B totales (MoE) | no disponible | Apache 2.0 | GGUF | Recuantizacion de Yo-Purple |
+| SmolLM2 (referencia por tag) | no confirmado | no disponible | no disponible | safetensors/GGUF | El tag `smollm2` sugiere relacion, sin confirmar |
+| Qwen2-MoE (familia de referencia) | no disponible | no disponible | no disponible | safetensors/GGUF | Arquitectura base segun tag `qwen2_moe` |
 
-La comparativa es aproximada: no hay datos de rendimiento del modelo para confrontar con las alternativas, y los parametros activos del MoE no estan disponibles, lo que impide estimar su coste real de inferencia frente a modelos densos de tamano similar.
+No se dispone de datos suficientes para una comparativa cuantitativa fiable con alternativas concretas; los modelos citados se incluyen solo como referencia de familia arquitectonica.
 
 ## Limitaciones y advertencias
 
-- Model card muy escasa: no hay informacion sobre datos de entrenamiento, numero de expertos, parametros activos ni proceso de alineacion, lo que dificulta evaluar su calidad real.
-- Ausencia total de benchmarks publicados; no se puede verificar el rendimiento declarado en razonamiento, tool calling o contexto largo.
-- El contexto de 500.000 tokens es una declaracion del autor en etiquetas, no una especificacion documentada; el uso real con contextos muy largos puede degradar la calidad y disparar el consumo de memoria KV.
-- Solo idioma ingles declarado; no se garantiza un comportamiento correcto en castellano u otros idiomas.
-- Riesgo de alucinacion inherente a modelos de este tamano, agravado por la falta de evaluaciones publicadas.
-- Sesgos desconocidos: al no documentarse el dataset, no se pueden anticipar sesgos de genero, raza o ideologicos.
-- Licencia Apache 2.0 permite uso comercial, pero el autor no ofrece garantias ni soporte; conviene validar el modelo en el dominio concreto antes de produccion.
-- La cuantizacion introduce perdida de calidad adicional, especialmente en Q2_K y Q3; para produccion se recomienda Q5_K_M o superior.
-- El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, lo que indica ausencia de validacion por parte de la comunidad.
+- Sesgos conocidos: no documentados en la informacion disponible; al ser un modelo entrenado principalmente en ingles, es probable que herede sesgos de su corpus, pero no se confirma.
+- Riesgo de alucinacion: no cuantificado; como todo modelo generativo de ~3,5B parametros, es esperable un riesgo elevado en tareas factuales, aunque no hay evaluacion publicada.
+- Limitaciones de contexto o idioma: solo se declara soporte de ingles; la longitud de contexto no esta documentada.
+- Restricciones de licencia: Apache 2.0 permite uso comercial, pero se recomienda verificar la licencia del modelo base `Yo-Purple/Meditor-2-3.4B-Universal` por si difiere.
+- Caveats para produccion: la ausencia de benchmarks, de documentacion sobre parametros activos y de contexto hace arriesgado su uso en produccion sin una evaluacion propia previa; las cuantizaciones Q2_K y Q3_K_S pueden degradar notablemente la calidad.
 
 ## Enlaces
 
 - Repositorio GGUF: https://huggingface.co/mradermacher/Meditor-2-3.4B-Universal-GGUF
 - Modelo base: https://huggingface.co/Yo-Purple/Meditor-2-3.4B-Universal
-- Cuantizaciones imatrix/ponderadas: https://huggingface.co/mradermacher/Meditor-2-3.4B-Universal-i1-GGUF
-- Pagina de overview del autor para este modelo: https://hf.tst.eu/model#Meditor-2-3.4B-Universal-GGUF
-- Solicitudes de cuantizacion de mradermacher: https://huggingface.co/mradermacher/model_requests
-- Perfil de mradermacher en Hugging Face: https://huggingface.co/mradermacher/models
-- Guia de uso de GGUF (README de referencia de TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
-- Analisis de tipos de cuantizacion de Artefact2: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Cuantizaciones ponderadas/imatrix: https://huggingface.co/mradermacher/Meditor-2-3.4B-Universal-i1-GGUF
+- Pagina de descargas del autor: https://hf.tst.eu/model#Meditor-2-3.4B-Universal-GGUF
+- Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Grafico de calidad de cuantizaciones (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png
+- Notas sobre cuantizacion (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Solicitudes de cuantizacion: https://huggingface.co/mradermacher/model_requests

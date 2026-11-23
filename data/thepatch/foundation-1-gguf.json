@@ -41,31 +41,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "The Patch — Recrutement IA & Formation",
-      "url": "https://www.thepatch.ai/",
-      "snippet": "The Patch est la plateforme IA qui connecte les meilleurs recruteurs aux meilleurs candidats — et prépare chacun à réussir."
-    },
-    {
-      "title": "thepatch/foundation-1-GGUF · Hugging Face",
-      "url": "https://huggingface.co/thepatch/foundation-1-GGUF",
-      "snippet": "Foundation-1 was trained for 4- or 8-bar clips at 100, 110, 120, 128, 130, 140, or 150 BPM. The prompt should include the selected bar count and BPM. sa3.cpp's Foundation profile calculates the exact sample crop, the whole-second seconds_totalconditioning value, and the padded Oobleck latent canvas independently to match RoyalCities' inference."
-    },
-    {
-      "title": "The Patch",
-      "url": "https://app.thepatch.ai/",
-      "snippet": "Don't have an account? Create an account Forgot your password?"
-    },
-    {
-      "title": "jadael/comma-v0.1-2t-GGUF - Hugging Face",
-      "url": "https://huggingface.co/jadael/comma-v0.1-2t-GGUF",
-      "snippet": "06.06.2025 ... This GGUF conversion is released under Apache 2.0 (same as the original model). Apache 2.0 was chosen because: ... All conversions, tools, and ..."
-    },
-    {
-      "title": "thepatch/stable-audio-open-small-GGUF · Hugging Face",
-      "url": "https://huggingface.co/thepatch/stable-audio-open-small-GGUF",
-      "snippet": "Sources and licensing Stable Audio Open Small GGUF GGUF conversions for sa3.cpp's optional native stable-audio-tools runtime. This repository is deliberately scoped to Stable Audio Open Small (SAOS). Stable Audio Open 1.0 and Foundation-1 belong in separate model repositories. The root contains the released ARC-trained SAOS DiT and the shared T5-base encoder and Oobleck decoder. Validated full ..."
-    }
-  ]
+  "sources": []
 }

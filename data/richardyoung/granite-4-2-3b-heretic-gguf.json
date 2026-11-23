@@ -50,31 +50,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "tinyopsec/granite-4.2-3b-Heretic · Hugging Face",
-      "url": "https://huggingface.co/tinyopsec/granite-4.2-3b-Heretic",
-      "snippet": "Reproducibility The edited model was generated from the Granite 4.2 3B base model using a Heretic-style optimization workflow. For exact reproduction, record and publish:"
-    },
-    {
-      "title": "mradermacher/granite-4.2-3b-Heretic-GGUF · Hugging Face",
-      "url": "https://huggingface.co/mradermacher/granite-4.2-3b-Heretic-GGUF",
-      "snippet": "mradermacher / granite-4.2-3b-Heretic-GGUF like 0 Text Generation Transformers GGUF 9 languages ibm-granite granite causal-lm heretic representation-editing conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
-    },
-    {
-      "title": "Granite 4.2 | IBM Granite",
-      "url": "https://www.ibm.com/granite/docs/models/granite4-2",
-      "snippet": "Granite 4.2 Dense reasoning language model family in 3B, 8B, and 30B sizes with built-in chain-of-thought thinking, flexible thinking modes, and reasoning-augmented tool calling."
-    },
-    {
-      "title": "‎Google Gemini",
-      "url": "https://gemini.google.com/",
-      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
-    },
-    {
-      "title": "Granite 4.2 3B Heretic by tinyopsec — VRAM 7.4GB, 128K context | LLM ...",
-      "url": "https://llm-explorer.com/model/tinyopsec%2Fgranite-4.2-3b-Heretic,5FrvyUnKYPi1PQoygNP8cR",
-      "snippet": "Rank the Granite 4.2 3B Heretic capabilities Have you tried this model? Rate its performance — this feedback helps the ML community find the right model for their needs."
-    }
-  ]
+  "sources": []
 }

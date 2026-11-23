@@ -5,7 +5,7 @@
   "author": "Pilcothink",
   "url": "https://huggingface.co/Pilcothink/Raon-1-nano-NVFP4",
   "created_at": "2026-11-19T07:36:53.000Z",
-  "updated_at": "2026-11-19T07:37:02.000Z",
+  "updated_at": "2026-11-23T02:28:37.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -34,7 +34,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 59,
+  "downloads_30d": 60,
   "trending_score": 0,
   "parameters": 3629689937,
   "parameters_human": "3.63B",

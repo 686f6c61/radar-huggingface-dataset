@@ -2,108 +2,115 @@
 
 ## Resumen
 
-BiMai-Chaoshu-OCR (筆脈) es un ajuste fino mediante LoRA del modelo visual-lingüístico Qwen3-VL-8B-Instruct, especializado en el reconocimiento de escritura cursiva vertical (草書 / 行草) en páginas de libros clásicos chinos y obras caligráficas. Lo publica el usuario kinyeah en Hugging Face como un conjunto de ficheros GGUF listos para llama.cpp: un modelo principal fusionado en Q4_K_M, un proyector visual en F16 y varios adaptadores LoRA en F16 que pueden cargarse en tiempo de ejecución. El problema que ataca es concreto: los OCR convencionales y los VLM generalistas fallan con columnas verticales de caligrafía cursiva, donde la segmentación de trazos, la variabilidad caligráfica y la ausencia de puntuación rompen los pipelines habituales.
+BiMai · Chaosu OCR es un adaptador LoRA (QLoRA r=32) sobre Qwen3-VL-8B-Instruct especializado en el reconocimiento óptico de caracteres de caligrafía china cursiva (*caoshu* / 草書) y semi-cursiva (*xingcao*) en textos clásicos de disposición vertical. Lo desarrolla el usuario independiente kinyeah y resuelve un problema concreto: los modelos VLM generalistas fallan sistemáticamente al transcribir trazos cursivos históricos, tendiendo a "alucinar" poemas o pasajes conocidos en lugar de leer lo que aparece en la imagen.
 
-La propuesta no es solo un modelo, sino un modelo más una disciplina de uso: la entrada debe ser un recorte de una sola columna vertical (de arriba abajo, con el lado corto a 300 px o más y el largo a 3200 px o menos) y la salida es una cadena continua de caracteres chinos sin puntuación. El autor reporta un CER (character error rate) del 28,7 % sobre un conjunto de validación limpio de 40 columnas, con una precisión de carácter del 71,3 %, y advierte que las columnas de cursiva muy libre (狂草) requieren corrección humana.
+La versión publicada como principal (v23) parte de Qwen3-VL-8B-Instruct y se distribuye en formato GGUF para llama.cpp, con un adaptador de 349 MB que se carga junto al modelo base cuantizado y un proyector visual compartido. El resultado es un sistema que reduce el CER (tasa de error de caracteres) del 35,6 % del modelo base al 27,5 % sobre un conjunto de evaluación limpio de 40 columnas y 331 caracteres, es decir, una mejora relativa del 22,7 %.
 
-Es relevante ahora porque demuestra un patrón reproducible de especialización barata: QLoRA r16 sobre un VLM de 8B, corpus propio de ~2000 columnas y despliegue en una única GPU de consumo mediante cuantización Q4_K_M. Frente a entrenar un OCR desde cero, el autor reutiliza las capacidades del modelo base y solo desplaza la distribución hacia un dominio muy estrecho, algo útil para proyectos de digitalización de patrimonio con presupuestos limitados.
+Su relevancia actual radica en que ataca un nicho poco cubierto —digitalización de manuscritos y libros antiguos chinos— con un coste de entrenamiento muy contenido (unas 15 horas de GPU acumuladas en 14 ejecuciones sobre una única NVIDIA Thor) y una licencia Apache-2.0 heredada del modelo base, lo que permite uso comercial sin restricciones adicionales.
 
 ## Especificaciones técnicas
 
 | Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer visual-lingüístico (Qwen3-VL) con adaptador LoRA r16 fusionado en el GGUF principal |
-| Parámetros totales | 8B en el modelo base Qwen3-VL-8B-Instruct; el safetensors del repo declara 87.293.952 parámetros, coherente con el tamaño de un adaptador LoRA, no con el modelo completo |
-| Parámetros activos | no aplica (modelo denso, no es MoE) |
-| Longitud de contexto | no disponible para el modelo base en la información proporcionada; los ejemplos de despliegue del autor fijan `--ctx-size 8192` |
-| Tipos de cuantización | GGUF Q4_K_M (modelo fusionado), F16 (adaptadores LoRA y proyector visual) |
-| Idiomas soportados | zh, en (la tarea de salida es exclusivamente chino tradicional sin puntuación) |
-| Licencia | apache-2.0, heredada del modelo base Qwen3-VL; el autor indica que se rige por los términos del modelo base |
-| Formato de pesos | GGUF (llama.cpp); adaptadores LoRA en GGUF F16; proyector multimodal `mmproj` en F16 separado |
-
-Otros datos del repositorio: tamaño total de 6,4 GB, 0 descargas y 0 likes en el momento de la consulta, creado el 26 de octubre de 2026 y actualizado el mismo día. El pipeline de Hugging Face no está declarado.
+| Arquitectura | Transformer multimodal (VLM) Qwen3-VL-8B-Instruct + adaptador LoRA (QLoRA r=32) |
+| Parámetros totales | 539.010.048 (según safetensors del repositorio); el modelo base Qwen3-VL-8B ronda los 8.000 millones |
+| Parámetros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible en la información proporcionada (heredada de Qwen3-VL-8B-Instruct) |
+| Tipos de cuantización | Q4_K_M (GGUF); adaptador LoRA en F16; proyector visual en F16 |
+| Idiomas soportados | zh, en (salida en chino tradicional) |
+| Licencia | Apache-2.0 (pesos); MIT (código periférico) |
+| Formato de pesos | GGUF (llama.cpp); LoRA en GGUF F16 |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de Qwen3-VL-8B-Instruct, un transformer multimodal que procesa imágenes mediante un proyector visual y las integra como tokens en el contexto del decodificador. El ajuste se realizó con QLoRA de rango 16 sobre la versión del base cuantizada en 4 bits (`unsloth/Qwen3-VL-8B-Instruct-unsloth-bnb-4bit`), con un learning rate de 1e-5 a 2e-5 y 2 épocas. Posteriormente, el adaptador se fusionó con los pesos del base para producir el GGUF `caoshu-v8-merged-Q4_K_M.gguf`; los adaptadores v8, v13 y v14 se distribuyen también por separado para cargarlos con `--lora` en tiempo de ejecución, lo que permite intercambiar versiones sin volver a descargar el modelo completo.
+El modelo es un adaptador LoRA de rango 32 entrenado con QLoRA sobre Qwen3-VL-8B-Instruct, un VLM transformer que combina un codificador visual con un decoder de lenguaje. El adaptador se aplica sobre el decoder y se distribuye por separado (349 MB en F16), de modo que en inferencia se carga el modelo base cuantizado a Q4_K_M, el proyector visual `v16-merged-mmproj-F16.gguf` (1,1 GB) y el LoRA v23 mediante `llama-server --lora`. El entrenamiento usó lr 2e-5, 2 épocas y fusión en bf16, con un coste de 2 horas y 5 minutos para 4.855 columnas (2.428 pasos, 3,1 s/paso) sobre una NVIDIA Thor de 122 GB de memoria unificada.
 
-El corpus de entrenamiento es propio y muy específico: 971 columnas de caligrafía clásica con transcripción oficial (procedentes de obras maestras caligráficas del Museo del Palacio), 244 columnas verificadas mediante un proceso de doble revisión y compuerta de calidad a partir de escaneos de colecciones privadas, y lotes posteriores de minería profunda en el mismo dominio que elevan el total por encima de las 2140 filas en la versión v14. No se documenta el número total de tokens de entrenamiento ni el uso de RLHF o DPO; el ajuste es supervisado sobre pares imagen-transcripción. La innovación destacable no es arquitectónica sino de proceso: el autor reporta descontaminación del conjunto de evaluación, ampliación iterativa del dominio y una comparación explícita entre generaciones (v8, v13, v14) y una prueba con un modelo de 32B descartada por sobreajuste (CER 44,4 %).
+El conjunto de entrenamiento de v23 suma 4.855 columnas: 2.886 columnas de escritura real (30.336 caracteres), 437 columnas sintéticas renderizadas con fuentes y 1.500 pares de glifos individuales de fuentes TTF a 128×128. Las fuentes de aumento cubren en torno al 98 % de los caracteres: 衡山毛筆草書 (96 %, pincel real), 方正行楷 GBK (95 %) y 方正黄草 GBK (89 %). El hallazgo técnico destacable es que los pares de glifos individuales funcionan mucho mejor que las columnas sintéticas completas, y que existe un punto óptimo en torno al 31 % de datos TTF: con 1.500 pares el CER baja a 27,5 %, pero con 3.000 sube a 29,7 % porque el material sintético acaba dominando sobre la escritura real. El prompt de entrenamiento es fijo y restrictivo ("solo lee los trazos visibles, no recites poemas"), lo que mitiga la alucinación de textos canónicos.
 
 ## Capacidades
 
-- Reconocimiento de caracteres chinos en columnas verticales de caligrafía cursiva y semicursiva (草書, 行草), con salida en chino tradicional y sin puntuación.
-- Transcripción de una columna por inferencia dentro de un pipeline de detección de columnas (BiMai), pensado para páginas de libros clásicos y álbumes caligráficos.
-- Lectura de imágenes con recortes de al menos 300 px en el lado corto y hasta 3200 px en el lado largo.
-- Capacidades heredadas del VLM base (descripción de imagen, respuesta a preguntas visuales, comprensión de chino e inglés), aunque no están validadas tras el ajuste y el prompt de entrenamiento restringe la salida a transcripción literal.
-- Multilingüismo limitado: el modelo declara zh y en, pero el uso previsto y el corpus son exclusivamente chinos; no hay soporte documentado para otras escrituras ni para alfabetos latinos.
-- Instrucción anti-alucinación explícita en el prompt: solo transcribir los trazos visibles y detenerse cuando el carácter no sea legible.
-- Tool calling y razonamiento multi-paso: no documentados ni validados en esta ficha; el ajuste está orientado a una tarea de un solo paso.
-- Modo thinking: no disponible; el base es la variante Instruct.
+- Transcripción OCR de caligrafía cursiva y semi-cursiva china en disposición vertical (arriba→abajo), columna a columna.
+- Salida de cadena continua en chino tradicional, sin puntuación.
+- Lectura de escritura manual histórica sobre papel, incluidos trazos con pincel.
+- Aumento de precisión mediante refinamiento iterativo en dos pasadas (autocorrección con el texto de la primera pasada como contexto).
+- Comprensión imagen-texto heredada de Qwen3-VL-8B-Instruct (no es el objetivo del ajuste, pero está disponible en el modelo base).
+- Soporte de conversación multi-turno vía API compatible con OpenAI (`/v1/chat/completions`).
+- Capacidad multilingüe limitada a zh y en según la model card.
+- No soporta (según el autor): caligrafía extremadamente cursiva (*kuangcao*), calcos sobre piedra (*tuoben*), anotaciones a doble columna interlineadas ni texto impreso de libros antiguos.
 
 ## Casos de uso
 
-- Digitalización de fondos caligráficos en bibliotecas y museos: el modelo procesa recortes de columna individuales, de modo que puede encadenarse tras un detector de líneas verticales para convertir un álbum completo en texto plano revisable, con un CER de referencia del 28,7 % que hace obligatoria la corrección humana.
-- Investigación filológica y edición de textos clásicos: un investigador puede obtener una primera transcripción de un manuscrito cursivo y corregirla, reduciendo el tiempo frente a la transcripción manual, siempre que la obra esté en el dominio de caligrafía china vertical.
-- Creación de corpus imagen-texto alineados: las transcripciones generadas y luego verificadas sirven para entrenar o evaluar otros modelos de OCR histórico, un caso especialmente útil porque el propio autor documenta su metodología de descontaminación.
-- Catalogación de colecciones privadas y archivos familiares: cartas, documentos y hojas sueltas en cursiva pueden pasarse por el pipeline con el adaptador v14 cargado en runtime, ajustando el adaptador según el estilo del fondo.
-- Indexación y búsqueda de texto completo en archivos digitalizados: una vez transcritas las columnas, el texto puede alimentar un índice de búsqueda; la naturaleza sin puntuación de la salida no supone un problema para un motor de búsqueda por caracteres.
-- Docencia y estudio de caligrafía: el modelo permite comparar la lectura automática de un fragmento con la interpretación del estudiante, señalando qué columnas son lo bastante legibles como para que coincidan (el autor reporta 76-100 % de precisión en semicursiva cuidada).
-- Despliegue en estaciones de trabajo sin conexión: al ser GGUF y ejecutarse con llama.cpp, encaja en entornos con requisitos de confidencialidad donde no se puede enviar material a una API externa.
+- Digitalización de manuscritos y libros antiguos: se recorta cada columna vertical y se envía al modelo, que devuelve el texto tradicional; encaja en proyectos de preservación documental que necesitan transcripción asistida con revisión humana posterior.
+- Plataformas de investigación sinológica: investigadores que trabajan con facsímiles pueden obtener una primera transcripción automática y centrar el esfuerzo en la corrección, reduciendo el tiempo de lectura manual de cada columna.
+- Herramientas de anotación y corrección: el autor propone un flujo de "dos lecturas alternativas por columna" con selección en un clic, aprovechando que el oráculo de 10 muestras alcanza CER 22,19 % y que ningún selector automático (voto de confianza, LM de 4-gramas, ensemble, verificador LLM) supera al humano.
+- Archivos y bibliotecas digitales: integración en pipelines de digitalización masiva con llama.cpp en servidor local, dado el bajo requisito de hardware (modelo Q4_K_M de 4,7 GB más proyector de 1,1 GB) y un throughput de aproximadamente 1 segundo por columna.
+- Aplicaciones educativas de caligrafía: comparación de trazos y apoyo al aprendizaje de lectura de cursiva clásica, con la salvedad de que el modelo no explica los caracteres, solo los transcribe.
+- Prototipado de investigación en OCR histórico: al ser un LoRA pequeño y con licencia Apache-2.0, sirve como punto de partida para ajustes sobre otros corpus caligráficos o para experimentar con aumentación de datos mediante fuentes TTF.
+- Despliegue en entornos con hardware modesto: al ejecutarse con llama.cpp y cuantización Q4_K_M, puede correr en estaciones de trabajo consumer con GPU de 8-12 GB o incluso en CPU (con latencia mayor), algo inviable con el modelo base en precisión completa.
 
 ## Benchmarks y rendimiento
 
-Resultados reportados por el autor (26 de octubre de 2026, inferencia con llama.cpp, evaluación por columna mediante LCS):
+Evaluación sobre `gold_test40`: 40 columnas verificadas manualmente, 331 caracteres, sin contaminación, decodificación greedy, mismo prompt y CER calculado por LCS columna a columna.
 
-| Versión | CER en gold_test40 sin contaminación | Filas de entrenamiento |
+| Modelo | Precisión de carácter | CER |
 |---|---|---|
-| v8 (LoRA en runtime) | 34,7 % | 971 + 244 |
-| v13 | 29,6 % | 1965 (descontaminado ×2 + 120 recortes de columna) |
-| v14 (con 300 columnas adicionales de minería profunda) | 28,7 % | 2140+ (en ampliación) |
-| Prueba con 32B (descartada por sobreajuste) | 44,4 % | no disponible |
-| Demo de tres páginas reales | v8 31,1 % · v13 33,3 % · v14 32,6 % | n = 132, con filtración parcial |
+| Qwen3-VL-8B original (sin LoRA) | 64,4 % | 35,6 % |
+| BiMai v16 (LoRA v16) | 72,2 % | 27,8 % |
+| **BiMai v23 (modelo publicado)** | **72,5 %** | **27,5 %** |
 
-Precisión de carácter en el conjunto limpio: 71,3 %. En columnas de semicursiva cuidada y caracteres frecuentes el autor reporta entre 76 % y 100 % de precisión. No se han publicado resultados en benchmarks estándar de OCR (OCRBench, MMLU, HumanEval, GSM8K) en la información disponible, por lo que no es posible comparar con la tabla pública de OCRBench.
+Evolución de versiones:
+
+| Versión | CER | Precisión | Columnas de entrenamiento | Cambio |
+|---|---|---|---|---|
+| v8 | 34,7 % | 65,3 % | 1.215 | Ajuste inicial |
+| v13 | 29,6 % | 70,4 % | 1.965 | Limpieza de datos |
+| v16 | 27,8 % | 72,2 % | 2.708 | Corrección de rutas, primer uso del conjunto completo |
+| v19 | 28,1 % | 71,9 % | 3.026 | Incorporación de 108 lecturas manuales |
+| v21 | 28,1 % | 71,9 % | 3.026 | 114 correcciones, sin diferencia |
+| **v23** | **27,5 %** | **72,5 %** | **4.855** | +437 columnas sintéticas y +1.500 pares de glifos TTF |
+
+Experimentos de aumentación con TTF:
+
+| Experimento | Datos TTF | CER | Conclusión |
+|---|---|---|---|
+| v22 (437 columnas sintéticas) | 437 | 28,2 % | Las columnas sintéticas impresas no ayudan |
+| **v23 (1.500 glifos TTF)** | 1.500 | **27,5 %** | Punto óptimo (~31 %) |
+| v24 (3.000 glifos TTF) | 3.000 | 29,7 % | Exceso: el sintético domina al real (38 %) |
+
+Refinamiento iterativo en producción: dos pasadas de prompt con autocorrección bajan el CER de 27,5 % a 26,9 % sin reentrenar. Oráculo con 10 muestras por columna: CER 22,19 % (precisión 77,8 %), cota superior que ningún selector automático logró alcanzar.
 
 ## Requisitos de hardware
 
-- VRAM estimada para el modelo fusionado: aproximadamente 5,8 GB solo de pesos (4,7 GB del Q4_K_M más 1,1 GB del `mmproj` F16); con caché KV a 8192 tokens, el consumo realista se sitúa en el entorno de 7-9 GB (estimación, no medida publicada).
-- VRAM estimada en modo runtime LoRA: base Qwen3-VL-8B en Q4_K_M (del orden de 5 GB) más el `mmproj` de 1,1 GB más el adaptador (87-174 MB), con un total similar al del modelo fusionado.
-- GPU de consumo compatibles: RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070 12 GB y RTX 4090 24 GB; cabe en tarjetas de 8 GB solo con contexto reducido y cuantizaciones más agresivas no publicadas por el autor.
-- GPU de datacenter: A100 40/80 GB y H100 para procesamiento por lotes con contexto largo o para servir varias instancias en paralelo; el modelo no necesita ese hardware para inferencia individual.
-- Despliegue: llama.cpp mediante `llama-server` con `--jinja`, `--ctx-size 8192`, `--mmproj` y, opcionalmente, `--lora`. Al ser GGUF, puede importarse en Ollama o en otras herramientas compatibles con llama.cpp. No se documenta soporte para vLLM o TGI con estos adaptadores en formato GGUF.
-- Latencia y throughput: no disponibles. Conviene tener en cuenta que el pipeline procesa una columna por inferencia, por lo que el coste por página es proporcional al número de columnas detectadas.
+- VRAM estimada: el modelo base en Q4_K_M ocupa 4,7 GB, el proyector visual 1,1 GB y el LoRA 349 MB; en la práctica se necesita en torno a 7-9 GB de VRAM para inferencia cómoda con contexto moderado (estimación, no publicada por el autor).
+- GPU recomendadas: cualquier GPU con 8-12 GB o más; el autor entrenó en una NVIDIA Thor (122 GB unificados), pero la inferencia cuantizada es mucho más ligera.
+- Cabe en GPU consumer: sí, en tarjetas de 8 GB o más (RTX 3060 Ti, RTX 4060 Ti, RTX 4070, RTX 4090) con Q4_K_M; en 6 GB requeriría cuantizaciones más agresivas no publicadas.
+- Opciones de despliegue: llama.cpp (`llama-server`) con `--mmproj` y `--lora`; el repositorio usa la librería llama.cpp y la API es compatible con OpenAI, por lo que puede integrarse en clientes existentes. No se documentan despliegues con vLLM, TGI u Ollama en la información disponible.
+- Latencia y throughput: aproximadamente 1 segundo por columna según el autor; el refinamiento iterativo añade unos 5 segundos por columna.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Enfoque | Formato disponible | Licencia |
+| Modelo | Parámetros | Contexto | CER en cursiva (gold_test40) | Licencia | Formato |
 |---|---|---|---|---|---|
-| BiMai-Chaoshu-OCR | 8B (base) | no disponible (ejemplos a 8192) | OCR de caligrafía cursiva vertical china | GGUF + LoRA GGUF | apache-2.0 |
-| Qwen3-VL-8B-Instruct | 8B | no disponible en la información | VLM generalista, sin especialización caligráfica | safetensors, GGUF (unsloth) | apache-2.0 |
-| PaddleOCR-VL | no disponible | no disponible | OCR de documentos, tablas y fórmulas | no disponible | no disponible |
-| DeepSeek-OCR | no disponible | no disponible | OCR de documentos y parseo de largo alcance | no disponible | no disponible |
-| Baidu Unlimited-OCR | no disponible | no disponible | Parseo de documentos de horizonte largo | no disponible | no disponible |
+| **BiMai Chaosu OCR v23** | LoRA sobre 8B | no disponible | **27,5 %** | Apache-2.0 | GGUF + LoRA |
+| Qwen3-VL-8B-Instruct (base) | ~8B | no disponible | 35,6 % | Apache-2.0 | safetensors, GGUF |
+| BiMai v16 (versión anterior) | LoRA sobre 8B | no disponible | 27,8 % | Apache-2.0 | GGUF + LoRA |
 
-La comparación cuantitativa no es posible con los datos disponibles: las alternativas citadas aparecen en la búsqueda web como referencias del ecosistema OCR, pero sin especificaciones verificables en la información proporcionada. La diferencia cualitativa es clara: los modelos generalistas y los OCR de documentos están optimizados para texto impreso, tablas y fórmulas en disposición horizontal, mientras que BiMai-Chaoshu-OCR se limita a columnas verticales manuscritas y no compite en documentos impresos.
+No se dispone de datos de otros sistemas OCR especializados en cursiva china (por ejemplo, modelos dedicados de OCR histórico) en la información proporcionada, por lo que la comparativa se limita al modelo base y a las versiones previas del mismo proyecto.
 
 ## Limitaciones y advertencias
 
-- La cursiva muy libre (狂草), los calcos (拓本) y las anotaciones interlineales de doble línea se describen como inestables en la propia model card.
-- Las páginas impresas de libros clásicos quedan fuera del dominio de entrenamiento: el modelo puede usarse, pero no está especializado en ellas.
-- El CER del 28,7 % implica que aproximadamente uno de cada tres o cuatro caracteres puede ser erróneo en el conjunto de evaluación; toda transcripción requiere corrección humana antes de usarse como fuente.
-- Riesgo específico de alucinación por memorización: el modelo podría recitar poemas o pasajes famosos en lugar de leer los trazos; el prompt de entrenamiento lo prohíbe explícitamente, pero el riesgo persiste y debe reforzarse en producción.
-- Solo acepta un recorte de columna por inferencia y no devuelve puntuación; el orden de lectura, la segmentación de columnas y la reconstrucción de la página corren a cargo del pipeline externo.
-- Idiomas: únicamente chino (y inglés declarado); no hay soporte para escrituras latinas, árabes ni otras grafías históricas.
-- Sesgo de dominio: el corpus procede de obras maestras del Museo del Palacio y de escaneos de colecciones privadas, por lo que el rendimiento puede degradarse con manos, estilos o soportes distintos.
-- Validación externa inexistente: 0 descargas y 0 likes en el momento de la consulta, sin resultados en benchmarks estándar ni réplica independiente de las cifras reportadas.
-- Licencia: apache-2.0 heredada del base Qwen3-VL, pero el autor remite a los términos del modelo base; conviene revisar dichos términos antes de un uso comercial a gran escala.
-- Fechas y versiones: el repositorio se creó y actualizó el 26 de octubre de 2026 y el autor indica que el corpus sigue ampliándose, por lo que las versiones y los CER pueden cambiar sin aviso.
+- Caligrafía extremadamente cursiva (*kuangcao*) y trazos muy ligados: la tasa de error sube y el autor exige revisión manual.
+- No soporta calcos sobre piedra (*tuoben*), anotaciones interlineadas a doble columna ni texto impreso de libros antiguos.
+- Riesgo de alucinación: el modelo base tiende a recitar poemas o pasajes canónicos; el prompt de entrenamiento lo mitiga, pero el autor recomienda usar exactamente ese prompt y temperatura 0.
+- El ajuste se ha realizado solo con datos de caligrafía china; los idiomas declarados son zh y en, y la salida es siempre en chino tradicional sin puntuación.
+- El CER del 27,5 % implica que aproximadamente uno de cada cuatro caracteres puede ser erróneo: no es apto para transcripción sin supervisión humana.
+- La evaluación se basa en un conjunto de solo 40 columnas y 331 caracteres, lo que limita la significación estadística de las diferencias entre versiones (v16 frente a v23 difiere en 0,3 puntos).
+- Licencia Apache-2.0 en los pesos y MIT en el código periférico: permite uso comercial, pero se heredan las condiciones y avisos del modelo base Qwen3-VL-8B-Instruct.
+- El repositorio incluye únicamente el adaptador y el proyector visual; es necesario descargar por separado el modelo base Qwen3-VL-8B-Instruct en GGUF.
+- El autor declara explícitamente que el uso implica asumir la responsabilidad de la corrección posterior.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/kinyeah/BiMai-Chaoshu-OCR
+- Modelo en Hugging Face: https://huggingface.co/kinyeah/BiMai-Chaosu-OCR
 - Modelo base: https://huggingface.co/Qwen/Qwen3-VL-8B-Instruct
-- GGUF del base citado por el autor: https://huggingface.co/unsloth/Qwen3-VL-8B-Instruct-GGUF
-- Baidu Unlimited-OCR (referencia del ecosistema OCR): https://github.com/baidu/Unlimited-OCR
-- OCRBench Leaderboard (referencia de evaluación OCR): https://llm-stats.com/benchmarks/ocrbench
-- Guía comparativa de modelos OCR (referencia externa): https://local-ai-zone.github.io/guides/best-ai-ocr-models-ultimate-ranking-2026.html
-- Glosario sobre modelos OCR (referencia externa): https://www.llamaindex.ai/glossary/what-are-ai-ocr-models
+- Runtime llama.cpp: https://github.com/ggml-org/llama.cpp

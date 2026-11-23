@@ -2,87 +2,92 @@
 
 ## Resumen
 
-S5-nano-FP8 es una versión cuantizada en FP8 del modelo S5-nano, desarrollado por Maritaca AI, un laboratorio brasileño especializado en modelos de lenguaje para portugués. El modelo base S5-nano es un transformer de tipo Qwen3.5 con 4.659.865.088 parámetros (aproximadamente 4,66 mil millones) y capacidades multimodales, ya que el repositorio incluye un encoder de visión. Esta variante FP8 reduce el peso del repositorio de 8,7 GB a 5,7 GB manteniendo la licencia Apache 2.0.
+S5-nano es un modelo de 4B parámetros desarrollado por Maritaca AI a partir de Qwen3.5-4B mediante preentrenamiento continuado y posterior entrenamiento (post-training). Está diseñado específicamente para mejorar el rendimiento en tareas en portugués brasileño, manteniendo al mismo tiempo un buen desempeño en llamadas a funciones, uso de herramientas y salidas estructuradas. La versión documentada aquí, S5-nano-FP8, es la variante cuantizada a FP8 del checkpoint original, pensada para su despliegue en vLLM y SGLang sobre GPUs con soporte nativo de FP8.
 
-La cuantización se aplica únicamente a las capas lineales, que almacenan sus pesos en FP8 (formato E4M3) con una escala por bloque de 128×128. Las activaciones se cuantizan dinámicamente durante la inferencia, mientras que los embeddings, el encoder de visión y algunas proyecciones pequeñas permanecen en BF16. El modelo conserva la capa MTP (multi-token prediction) del original, lo que permite activar decodificación especulativa en vLLM.
+El modelo es multimodal (image-text-to-text) y soporta una ventana de contexto de hasta 262.144 tokens. Incorpora dos modos de operación: Think, que razona antes de responder y es el modo por defecto, e Instruct, que responde directamente sin paso de razonamiento. Los pesos incluyen una capa MTP (multi-token prediction) que habilita decodificación especulativa.
 
-Es relevante porque ofrece un modelo multimodal con contexto declarado de hasta 262.144 tokens (según el comando de servicio recomendado) en un formato optimizado para GPUs con soporte nativo de FP8 (arquitecturas Ada, Hopper y Blackwell), con soporte de tool calling, modo de razonamiento explícito y despliegue compatible con la API de OpenAI a través de vLLM.
+La relevancia de esta ficha radica en que S5-nano-FP8 reduce el peso del modelo de 9,3 GB (BF16) a 5,8 GB, lo que facilita su despliegue en infraestructura con memoria limitada sin renunciar a las capacidades del modelo base. La licencia Apache 2.0 permite uso comercial sin restricciones adicionales.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer (familia Qwen3.5, tag `qwen3_5`), multimodal con encoder de vision y capa MTP |
-| Parametros totales | 4.659.865.088 (~4,66 mil millones) |
-| Parametros activos | no disponible (no se indica que sea MoE) |
-| Longitud de contexto | hasta 262.144 tokens (configuracion recomendada en vLLM); reducible a 32.768 en GPUs con menos memoria |
-| Tipos de cuantizacion | FP8 (E4M3) en pesos de capas lineales con escala por bloque 128×128; activaciones cuantizadas dinamicamente; embeddings, encoder de vision y proyecciones pequenas en BF16 |
-| Idiomas soportados | portugues (pt) e ingles (en) |
+| Arquitectura | Transformer multimodal (image-text-to-text), basada en Qwen3.5-4B; incluye capa MTP para decodificacion especulativa |
+| Parametros totales | 4.659.865.088 (~4B) |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | 262.144 tokens |
+| Tipos de cuantizacion | FP8 (E4M3 en capas lineales, escala por canal de salida, activaciones cuantizadas dinamicamente por token); embeddings, encoder de vision, capa MTP y algunas proyecciones pequenas permanecen en BF16 |
+| Idiomas soportados | Portugues (pt) e ingles (en) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (repo de 5,7 GB) |
+| Formato de pesos | safetensors (compressed-tensors) |
 
 ## Arquitectura y entrenamiento
 
-El modelo sigue la arquitectura Qwen3.5, un transformer denso de aproximadamente 4,66 mil millones de parámetros con un encoder de visión integrado, lo que lo convierte en un modelo multimodal. Incluye una capa MTP (multi-token prediction) que habilita decodificación especulativa, configurable en vLLM mediante `--speculative-config '{"method":"mtp","num_speculative_tokens":3}'`. Esta variante FP8 no modifica la arquitectura: cuantiza los pesos de las capas lineales a FP8 E4M3 con escalas por bloque de 128×128 y cuantiza las activaciones de forma dinámica en tiempo de inferencia, dejando en BF16 los componentes sensibles (embeddings, encoder de visión y proyecciones pequeñas).
+S5-nano se construye sobre Qwen3.5-4B, un transformer multimodal que procesa texto e imagen. El entrenamiento de Maritaca AI consistió en un preentrenamiento continuado seguido de un post-training orientado a mejorar el rendimiento en benchmarks brasileños y a reforzar capacidades de function calling, tool use y salidas estructuradas. La model card no detalla el número de tokens de entrenamiento ni la composición exacta del dataset, por lo que estos datos no están disponibles.
 
-No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas de RLHF, DPO u otras fases de alineación en el modelo base. La model card únicamente documenta el proceso de cuantización y las recomendaciones de despliegue. El modelo base está etiquetado como `base_model:maritaca-ai/S5-nano`, y esta variante como `quantized`.
+La innovación técnica más destacable es la inclusión de una capa MTP (multi-token prediction) en los pesos, que permite decodificación especulativa y, por tanto, acelerar la generación. La versión FP8 aplica cuantización E4M3 a las capas lineales con una escala por canal de salida y cuantiza las activaciones dinámicamente por token durante la inferencia; los embeddings, el encoder de visión, la capa MTP y algunas proyecciones pequeñas se mantienen en BF16 para preservar precisión. No se especifica en la información disponible si se emplearon RLHF o DPO.
 
 ## Capacidades
 
-- Generación de texto y razonamiento con modo dual: modo Think (`enable_thinking: true`, activado por defecto) que expone el razonamiento en `choices[0].message.reasoning`, y modo Instant (`enable_thinking: false`) para respuestas directas.
-- Procesamiento de imágenes mediante el encoder de visión incluido (puede desactivarse con `--language-model-only` para liberar memoria destinada al KV cache).
-- Tool calling / function calling, con soporte en vLLM mediante `--enable-auto-tool-choice --tool-call-parser qwen3_coder`.
-- Soporte de agentes y razonamiento multi-paso, favorecido por el modo Think y el contexto largo.
-- Capacidades multilingües limitadas a portugués e inglés según los metadatos del modelo.
-- Decodificación especulativa mediante la capa MTP incluida.
-- Salida estructurada compatible con la API de OpenAI a través del servidor vLLM (`/v1/chat/completions`).
+- Generación de texto y razonamiento en dos modos: Think (razonamiento previo a la respuesta, modo por defecto) e Instruct (respuesta directa).
+- Procesamiento multimodal image-text-to-text: acepta imágenes junto con texto.
+- Soporte de function calling y tool use, con énfasis declarado en salidas estructuradas.
+- Capacidades de agentes y razonamiento multi-paso, apoyadas por el modo Think y la ventana de contexto de 262.144 tokens.
+- Capacidades multilingües limitadas a portugués e inglés.
+- Decodificación especulativa mediante capa MTP integrada en los pesos.
+- Rendimiento reforzado en benchmarks brasileños nativos y en portugués traducido.
 
 ## Casos de uso
 
-- Atención al cliente en portugués: el modelo puede mantener conversaciones multi-turno con contexto de hasta 262.144 tokens, adecuado para historiales largos de soporte o documentación de producto adjunta, con respuestas en modo Instant para baja latencia.
-- Asistentes con razonamiento verificable: el modo Think separa el razonamiento (`reasoning`) de la respuesta final (`content`), lo que permite auditar la cadena de pensamiento en aplicaciones de análisis financiero, legal o técnico.
-- Automatización de agentes con tool calling: integrado en vLLM con parser `qwen3_coder`, puede invocar funciones externas en pipelines de automatización, orquestación de tareas o consultas a bases de datos.
-- Procesamiento de documentos con imágenes: el encoder de visión permite extraer información de capturas, formularios escaneados o gráficos combinándolos con texto en una misma ventana de contexto.
-- Generación y revisión de código en entornos de desarrollo: el soporte de tool calling y el modo de razonamiento permiten integrarlo en asistentes de IDE o pipelines de CI/CD para revisión automática y generación de parches.
-- Despliegue en GPUs de gama profesional con FP8: al ocupar 5,7 GB en pesos, es viable en GPUs Ada (RTX 4090, L4), Hopper (H100) y Blackwell, con opción de reducir el contexto a 32.768 tokens para entornos con VRAM limitada.
-- Extracción de información estructurada bilingüe (pt/en): clasificación, resumen y normalización de documentos en portugués e inglés con salida JSON mediante tool calling.
+- Atención al cliente en portugués brasileño: el modelo puede gestionar conversaciones multi-turno con contexto largo gracias a sus 262.144 tokens de ventana, manteniendo coherencia en diálogos extensos y usando el modo Instruct para respuestas rápidas.
+- Generación de código y automatización de pipelines: el soporte de function calling y salidas estructuradas permite integrarlo en flujos de CI/CD para generar parches, invocar herramientas o producir JSON validable.
+- Agentes autónomos multi-paso: el modo Think y la capa MTP facilitan tareas de planificación y ejecución encadenada con latencia reducida gracias a la decodificación especulativa.
+- Análisis de documentos con imágenes: al ser image-text-to-text, puede procesar capturas, formularios escaneados o gráficos junto con texto en aplicaciones de extracción de información.
+- Asistencia técnica en portugués para soporte interno: el ajuste específico en benchmarks brasileños lo hace adecuado para bases de conocimiento y FAQ en pt-BR.
+- Despliegue en GPUs con FP8 nativo: la versión FP8 (5,8 GB) permite servir el modelo en vLLM o SGLang sobre GPUs Ada, Hopper o Blackwell con menor huella de memoria que la BF16.
+- Prototipado rápido en entornos con VRAM limitada: la variante GGUF Q4_K_M (2,8 GB) permite ejecución en llama.cpp y aplicaciones compatibles para pruebas locales.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+Resultados publicados para el checkpoint original S5-nano evaluado en BF16 sobre tareas de texto. Las métricas primarias se ponderan por igual. La columna Coverage indica cuántos benchmarks cubre cada modo (23/23 en Think).
+
+| Modelo | Modo | Native BR | Translated PT | Non-native | Total | Coverage |
+|---|---|---|---|---|---|---|
+| S5-nano | Think | 83,74 | 86,94 | 54,11 | 75,25 | 23/23 |
+| Qwen3.5-4B | Think | no disponible | no disponible | no disponible | no disponible | no disponible |
+
+No se han publicado en la información disponible resultados desglosados por benchmark individual (MMLU, HumanEval, GSM8K, etc.) ni datos para el modo Instruct ni para la variante FP8. Los resultados completos pueden consultarse en el Observatório Maritaca.
 
 ## Requisitos de hardware
 
-- VRAM estimada para pesos: 5,7 GB en FP8. El KV cache para 262.144 tokens requiere memoria adicional significativa; la model card recomienda `--max-model-len 32768` en GPUs con menos memoria.
-- GPUs recomendadas: arquitecturas con soporte nativo de FP8, es decir, Ada (RTX 4090, L4, L40S), Hopper (H100) y Blackwell. En GPUs sin FP8 nativo (Ampere, Turing) el rendimiento puede degradarse por emulación.
-- Cabe en GPU de consumo: sí, en RTX 4090 (24 GB) con margen para KV cache; en GPUs de 16 GB conviene reducir el contexto a 32.768 tokens y valorar `--language-model-only`.
-- Opciones de despliegue: vLLM es el método documentado por el autor, con flags para parser de razonamiento (`--reasoning-parser qwen3`), tool calling y decodificación especulativa MTP. No se documentan otros motores (llama.cpp, Ollama, TGI) en la información disponible.
-- Latencia y throughput: no disponibles. La decodificación especulativa con 3 tokens MTP está soportada y puede mejorar el throughput, pero no se publican cifras.
+- VRAM estimada para inferencia: aproximadamente 6-7 GB para la variante FP8 (5,8 GB de pesos más overhead de KV cache y activaciones); alrededor de 10 GB para BF16 (9,3 GB de pesos); 2,8-4,6 GB para las variantes GGUF Q4_K_M y Q8_0.
+- GPU recomendadas: GPUs con soporte nativo de FP8 (arquitecturas Ada, Hopper y Blackwell) para la variante FP8; por ejemplo, L4, L40S, H100 o B200. Para BF16, A100 o H100.
+- GPU de consumo: la variante FP8 puede caber en GPUs consumer con soporte FP8, como RTX 4090 o RTX 5090; las variantes GGUF Q4_K_M y Q8_0 caben en GPUs consumer con 4-8 GB de VRAM mediante llama.cpp.
+- Opciones de despliegue: vLLM y SGLang para FP8 y BF16; llama.cpp y aplicaciones compatibles para GGUF (BF16, Q8_0, Q4_K_M).
+- Latencia y throughput: no disponibles en la información proporcionada; la capa MTP permite decodificación especulativa, lo que puede reducir la latencia de generación, pero no se han publicado cifras concretas.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+| Modelo | Parametros | Contexto | Licencia | Formatos | Notas |
 |---|---|---|---|---|---|
-| S5-nano-FP8 (este) | ~4,66 B | hasta 262.144 tokens | Apache 2.0 | safetensors FP8 | Version cuantizada; repo 5,7 GB; multimodal; MTP |
-| S5-nano (base) | ~4,66 B | hasta 262.144 tokens (segun card del base) | Apache 2.0 | safetensors BF16 | Version original; repo 8,7 GB; mismo rendimiento esperado con mas VRAM |
-| Alternativas de ~4-5 B | no disponible | no disponible | no disponible | no disponible | No se dispone de datos verificados de modelos comparables en la informacion proporcionada |
+| S5-nano-FP8 | ~4B | 262.144 | Apache 2.0 | safetensors FP8, BF16, GGUF | Ajustado para pt-BR, multimodal, MTP |
+| Qwen3.5-4B | ~4B | no disponible | no disponible | no disponible | Modelo base; S5-nano parte de él |
+| Alternativas de ~4B multimodal | no disponible | no disponible | no disponible | no disponible | No se dispone de datos comparativos en la información |
 
-La comparación directa más fiable es con el propio S5-nano en BF16: misma arquitectura y capacidades, con una reducción de 3 GB en pesos a costa de requerir soporte FP8 nativo para máximo rendimiento.
+La información disponible solo permite comparar con el modelo base Qwen3.5-4B, del que no se detallan especificaciones ni resultados. No se dispone de datos de otros modelos comparables de la misma categoría.
 
 ## Limitaciones y advertencias
 
-- Idiomas: solo portugués e inglés según los metadatos; el rendimiento en castellano u otros idiomas no está garantizado.
-- Riesgo de alucinación inherente a los modelos generativos; el modo Think no elimina este riesgo y debe validarse la salida en producción.
-- La cuantización FP8 puede introducir degradación numérica frente al modelo BF16 original; no se publican evaluaciones comparativas de calidad.
-- Requiere GPUs con soporte nativo de FP8 (Ada, Hopper, Blackwell) para aprovechar el formato; en otras arquitecturas el rendimiento puede ser inferior al esperado.
-- El contexto de 262.144 tokens exige VRAM considerable para el KV cache; en GPUs de gama media debe reducirse a 32.768 tokens.
-- Los parámetros de generación recomendados difieren entre modos (Think: temperature 1.0, top_p 0.95; Instant: temperature 0.7, top_p 0.8) y el `generation_config.json` no incluye `presence_penalty`, que debe enviarse en cada petición.
-- Licencia Apache 2.0: permite uso comercial, pero se recomienda revisar las condiciones del modelo base S5-nano y de los datos de entrenamiento originales.
-- No se documentan sesgos específicos ni evaluaciones de seguridad en la información disponible.
-- El repositorio registra 0 descargas y 0 likes en el momento de la consulta, lo que indica una adopción aún muy limitada y poca validación comunitaria.
+- Sesgos conocidos: no se documentan en la información disponible; al estar ajustado sobre todo a portugués brasileño, puede presentar sesgos derivados de la composición del corpus de preentrenamiento continuado.
+- Riesgo de alucinación: inherente a los modelos generativos; el modo Think puede producir cadenas de razonamiento plausibles pero incorrectas. No se han publicado evaluaciones específicas de factualidad.
+- Limitaciones de idioma: solo se declaran portugués e inglés; el rendimiento en otros idiomas no está garantizado y probablemente sea inferior.
+- Restricciones de licencia: Apache 2.0 permite uso comercial, modificación y redistribución con atribución; no se identifican restricciones adicionales en la información disponible.
+- Caveats para producción: la variante FP8 requiere GPUs con soporte nativo de FP8 para aprovechar su ventaja; en GPUs sin ese soporte el rendimiento puede degradarse. No se han publicado cifras de latencia ni throughput, por lo que la planificación de capacidad debe validarse empíricamente. Los datos de benchmarks corresponden al checkpoint BF16 original, no a la variante FP8.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/maritaca-ai/S5-nano-FP8
-- Modelo base S5-nano: https://huggingface.co/maritaca-ai/S5-nano
-- Documentación de vLLM (despliegue): https://docs.vllm.ai
+- [Hugging Face: maritaca-ai/S5-nano-FP8](https://huggingface.co/maritaca-ai/S5-nano-FP8)
+- [Modelo base BF16: maritaca-ai/S5-nano](https://huggingface.co/maritaca-ai/S5-nano)
+- [Versiones GGUF: maritaca-ai/S5-nano-GGUF](https://huggingface.co/maritaca-ai/S5-nano-GGUF)
+- [Modelo base original: Qwen/Qwen3.5-4B](https://huggingface.co/Qwen/Qwen3.5-4B)
+- [Observatório Maritaca (resultados de evaluación)](https://maritaca-ai.github.io/observatorio-maritaca/)

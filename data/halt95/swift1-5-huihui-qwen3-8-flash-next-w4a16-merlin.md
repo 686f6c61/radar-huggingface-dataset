@@ -1,117 +1,98 @@
 # halt95/Swift1.5-Huihui-Qwen3.8-Flash-Next-W4A16-Merlin
 
 ## Resumen
+Swift1.5-Huihui-Qwen3.8-Flash-Next-W4A16-Merlin es una cuantización de 4 bits del checkpoint Swift 1.5 de UkisAI, un post-entrenamiento de Qwen3.8-Flash-Next (125B de parámetros totales en arquitectura de mezcla de expertos). Sobre esa base, el autor halt95 ha trasladado la edición de "abliteration" de huihui-ai únicamente a las 96 proyecciones densas de salida, de modo que el modelo resultante apenas rechaza peticiones. El objetivo declarado es ejecutar el modelo a su ventana completa de 262.144 tokens sobre cuatro GPU de 24 GB, algo que el checkpoint original en BF16 no permite.
 
-Swift1.5-Huihui-Qwen3.8-Flash-Next-W4A16-Merlin es una compilacion cuantizada a 4 bits del modelo multimodal Qwen3.8-Flash-Next, publicada por el usuario halt95 como derivado independiente. Combina los pesos de UkisAI (Swift 1.5) con la eliminacion de rechazos (abliteration) de huihui-ai, aplicada unicamente sobre las 96 proyecciones densas de salida, y los empaqueta en el formato Merlin W4A16 para poder servirse en cuatro tarjetas RTX 3090 de 24 GB. El modelo tiene 123.958.298.771 parametros totales (unos 124B) y una arquitectura MoE multimodal con 512 expertos enrutados por capa.
+El modelo se sirve con Merlin, un fork de vLLM 0.33.0 optimizado para arquitecturas Ampere y Ada, que mantiene la tabla de embeddings n-gram en RAM del host y la caché KV completa en VRAM. La cuantización combina expertos enrutados en INT4 (g128, Intel AutoRound), proyecciones densas en BF16 e INT8 según el tensor, y caché KV en FP8 E4M3. El resultado son aproximadamente 115 GiB de pesos y un pool KV de 924.993 tokens en VRAM.
 
-El problema que resuelve es doble. Por un lado, permite ejecutar un modelo de ~124B con contexto completo de 262.144 tokens en hardware consumer Ampere (cuatro RTX 3090), algo que en BF16 requeriria bastante mas VRAM. Por otro, ofrece una variante sin mecanismos de rechazo, pensada para escenarios donde el filtrado de salida se delega en el usuario. Se sirve mediante un motor propio (Flash-Next v2.5.2, versionado en el repositorio del autor) y expone un punto de acceso compatible con la API de OpenAI.
+Es relevante porque demuestra que un MoE de 125B con contexto largo y capacidades de visión puede desplegarse en hardware de consumo profesional (RTX 3090) sin renunciar a la ventana completa, a costa de aceptar un modelo sin mecanismos de rechazo y con una licencia restrictiva. No es un modelo oficial de Qwen ni de UkisAI: es un derivado independiente.
 
-Es relevante ahora porque combina tres tendencias: cuantizacion agresiva W4A16 sobre MoE, contexto largo efectivo (se recupera una aguja de 258K tokens) y soporte multimodal con tool calling heredado de Qwen3. Su licencia no es abierta en sentido estricto (swift-open-license-1.0), y el propio autor advierte que es un derivado no revisado ni respaldado por UkisAI, huihui-ai ni Qwen.
+## Especificaciones técnicas
 
-## Especificaciones tecnicas
-
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | MoE multimodal (image-text-to-text) con atencion hibrida y Gated DeltaNet; 512 expertos enrutados por capa; cabeza MTP (multi-token prediction) para decodificacion especulativa |
-| Parametros totales | 123.958.298.771 (~124B) |
-| Parametros activos | no disponible |
-| Longitud de contexto | 262.144 tokens (262K; aguja de 258K recuperada) |
-| Tipos de cuantizacion | W4A16: expertos enrutados en INT4 (Intel AutoRound); proyecciones GDN out_proj en INT8 por canal; atencion q/k/v, down_proj y gate/up en BF16/INT8; embeddings PLE en FP8; KV cache en FP8 E4M3 con escalas estaticas |
-| Idiomas soportados | en (ingles) |
-| Licencia | swift-open-license-1.0 (Hugging Face: license other) |
-| Formato de pesos | safetensors, compressed-tensors; libreria vllm; tamano del repo 123.8 GB (checkpoint ~115 GiB) |
+| Arquitectura | Mezcla de expertos (MoE) con capas de atención y Gated DeltaNet; incluye torre de visión y cabeza MTP para decodificación especulativa |
+| Parámetros totales | 123.958.298.771 (~124B) |
+| Parámetros activos | no disponible |
+| Longitud de contexto | 262.144 tokens |
+| Tipos de cuantización | W4A16 (expertos enrutados INT4 g128 con AutoRound); proyecciones densas en BF16 e INT8 por canal; embeddings n-gram en FP8; caché KV en FP8 E4M3 |
+| Idiomas soportados | Inglés (en) |
+| Licencia | swift-open-license-1.0 (con componentes bajo Qwen Community License 1.0) |
+| Formato de pesos | safetensors (compressed-tensors), servido con vLLM/Merlin |
 
 ## Arquitectura y entrenamiento
+El modelo es un transformer de mezcla de expertos con 125B parámetros totales. La arquitectura combina capas de atención con proyecciones `o_proj` (12 capas) y capas Gated DeltaNet con `out_proj` (36 capas), además de 48 capas con expertos compartidos (`down_proj`). Cada capa contiene 512 expertos enrutados. Incluye una torre de visión, lo que habilita la modalidad image-text-to-text, y una cabeza MTP (multi-token prediction) que actúa como borrador para decodificación especulativa.
 
-El modelo es un derivado de Qwen3.8-Flash-Next, una arquitectura MoE multimodal que Qwen describe como avance de la arquitectura usada en Qwen4. La capa de expertos enrutados consta de 512 expertos por capa, cuantizados en INT4 mediante Intel AutoRound y conservados byte a byte del checkpoint Swift 1.5 W4A16. La atencion utiliza un esquema hibrido con Gated DeltaNet (GDN), cuyas proyecciones de salida se almacenan en INT8 por canal, mientras que las proyecciones q/k/v, gate/up del experto compartido y el resto de proyecciones GDN quedan en BF16 o INT8. La tabla de embeddings n-gram (PLE) se mantiene en FP8 y reside en RAM del host durante el servicio.
+La cuantización se aplica de forma selectiva: los expertos enrutados y la cabeza MTP están en INT4 g128 generado con Intel AutoRound; las proyecciones de atención y de expertos compartidos se mantienen en BF16 con la edición de abliteration aplicada; las proyecciones DeltaNet están en INT8 por canal; y la tabla de embeddings n-gram (PLE) de 51B parámetros se guarda en FP8 y reside en RAM del host durante el servicio. La caché KV usa FP8 E4M3 con escalas estáticas calibradas específicamente sobre este checkpoint.
 
-El cambio de huihui-ai se recupero tensor a tensor comparando sus pesos con el modelo original, hasta el limite de redondeo de BF16, y se aplico a los tensores de Swift 1.5 en la misma direccion del espacio de salida (reflejada, aproximadamente -0,95x) sobre 96 tensores densos. Los expertos enrutados no se tocaron. La cabeza MTP (INT4, empaquetada in-place) habilita decodificacion especulativa, y el KV cache usa FP8 E4M3 con escalas estaticas calibradas especificamente sobre este checkpoint. El tokenizador es el tokenizer.json original de Qwen, sin modificaciones. No hay informacion disponible sobre el numero de tokens de entrenamiento, la composicion del dataset ni si se aplicaron fases de RLHF o DPO en el modelo base.
+No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni si hubo fases de RLHF o DPO en el post-entrenamiento original de Swift 1.5. La edición de abliteration de huihui-ai consiste, según la model card, en una única dirección en el espacio de salida reflejada (aproximadamente −0,95×) aplicada a cada tensor denso afectado.
 
 ## Capacidades
-
-- Generacion de texto y razonamiento: mantiene el rendimiento de razonamiento del modelo base (GSM8K 1.319: 96,29 %).
-- Codigo y matematicas: soporta tareas de programacion y resolucion de problemas aritmeticos, con parsers de razonamiento de Qwen3.
-- Multimodal (vision): procesa hasta 42 imagenes por peticion, pipeline image-text-to-text.
-- Tool calling / function calling: integra los parsers de llamada a herramientas de Qwen3 en un unico endpoint compatible con OpenAI.
-- Agentes y razonamiento multi-paso: soporta turnos de agente con esfuerzo de razonamiento `xhigh`; el coste en tokens en esos turnos fue 0,86x el de Swift 1.5 (IC 95 % 0,64-1,15).
-- Contexto largo: maneja de forma efectiva ventanas de hasta 262.144 tokens (se recupera una aguja de 258K con exactitud).
-- Modo de razonamiento ampliado: esfuerzo `xhigh` configurable en el motor de servicio.
-- Multilingue: limitado a ingles segun la model card (no declara otros idiomas).
-- Sin rechazo (abliterated): comportamiento entrenado para no negarse a peticiones; no aplica filtrado de salida.
+- Generación de texto conversacional multi-turno en inglés.
+- Razonamiento con modo "thinking" configurable (el servidor usa effort medium por defecto).
+- Procesamiento de imágenes y texto combinados (pipeline image-text-to-text), gracias a la torre de visión incluida.
+- Contexto largo de hasta 262.144 tokens, con soporte de múltiples sesiones simultáneas de esa longitud.
+- Decodificación especulativa mediante cabeza MTP y tabla n-gram, que acelera la generación.
+- Ejecución de agentes concurrentes: la model card reporta ocho conversaciones de 16K tokens simultáneas con seguimiento de 512 tokens cada una.
+- Capacidades multilingües limitadas al inglés según la metadata del modelo.
+- No se documenta soporte explícito de tool calling o function calling en la información disponible.
 
 ## Casos de uso
-
-- Agentes de programacion de contexto largo: el modelo puede mantener en memoria un repositorio completo de decenas de miles de tokens y sostener conversaciones multi-turno con tool calling, integrándose en pipelines de CI/CD mediante el endpoint compatible con OpenAI. Su ventana de 262K tokens evita trocear el codigo en fragmentos.
-- Analisis de documentacion tecnica extensa: gracias a la recuperacion fiable a 258K tokens, se puede introducir un manual, un expediente o un libro completo y pedir resumenes o extracciones sin estrategias de RAG fragiles.
-- Procesamiento multimodal de documentos: con hasta 42 imagenes por peticion, resulta util para extraer informacion de capturas, diagramas, formularios escaneados o presentaciones combinadas con texto.
-- Razonamiento matematico y tutoria asistida: con un 96,29 % en GSM8K, es adecuado para resolver problemas verbales de nivel escolar o como componente en cadenas de verificacion paso a paso.
-- Investigacion en seguridad de IA (red teaming): al ser una variante abliterated, sirve para estudiar tasas de rechazo, comportamientos de modelos sin alineamiento defensivo y eficacia de filtros externos, siempre en entornos controlados.
-- Despliegue on-premise en hardware consumer: cuatro RTX 3090 de 24 GB permiten servir el modelo con contexto completo sin depender de A100/H100 ni de servicios en la nube, util para laboratorios con presupuesto limitado.
-- Generacion de datos sinteticos sin filtros: para tareas de aumento de datos donde se necesita que el modelo no aplique rechazos (con la supervision y el filtrado posteriores a cargo del usuario).
-- Simulacion de dialogos abiertos: conversaciones multi-turno donde se requiere un modelo que no bloquee temas sensibles por defecto, con contexto largo para mantener coherencia entre turnos.
+- Análisis de documentos extensos: con 262.144 tokens de contexto, el modelo puede ingerir informes completos, expedientes o bases de código y responder preguntas sobre ellos sin fragmentación, manteniendo la coherencia entre secciones distantes.
+- Procesamiento de documentación técnica con imágenes: al aceptar entradas image-text-to-text, permite extraer información de diagramas, capturas de pantalla o figuras junto al texto que las acompaña, útil en manuales y papers.
+- Despliegue de agentes concurrentes en hardware de consumo: la model card reporta 719 tok/s agregados con ocho agentes simultáneos en cuatro RTX 3090, lo que lo hace viable para orquestaciones multiagente en entornos con presupuesto de GPU limitado.
+- Resumen y extracción de entidades en corpus largos: el pool KV de 924.993 tokens en VRAM permite mantener varias sesiones de contexto largo abiertas a la vez, adecuado para pipelines de procesamiento por lotes de documentos.
+- Asistencia conversacional sin restricciones de contenido: para aplicaciones de investigación sobre comportamiento de modelos, red teaming o generación creativa donde se requiere un modelo que no rechace peticiones; siempre con revisión humana y fuera de entornos con datos de terceros.
+- Prototipado e investigación de cuantización: sirve como referencia para estudiar el impacto de W4A16 con AutoRound y caché KV en FP8 sobre un MoE de 125B, comparando contra el checkpoint Swift 1.5 en BF16.
+- Generación de texto a alta velocidad en contexto corto: con 203 tok/s de decodificación a 262K y 7.076 tok/s de prefill en un prompt de 100K, es adecuado para tareas interactivas donde la latencia de primera respuesta importa.
 
 ## Benchmarks y rendimiento
+La model card no publica resultados de benchmarks de calidad (MMLU, HumanEval, GSM8K u otros). Sí incluye métricas de rendimiento de inferencia medidas en cuatro RTX 3090 sin NVLink a 220W con P2P activado, sobre Merlin 3.0.2.1 (vLLM 0.33.0):
 
-| Benchmark | Este modelo | Swift 1.5 | Notas |
-|---|---|---|---|
-| GSM8K (1.319) | 96,29 % | 95,98 % | Misma ejecucion |
-| StrongREJECT (278 respuestas juzgadas) | 10,4 % de rechazo | 96,8 % | Swift 1.5 con conteo por palabras clave, no comparable en escala; juez GLM 5.3 Flash, una unica pasada y sin validacion humana |
-| XSTest (246 prompts seguros) | 0,4 % de sobrerrechazo (1 de 246) | 3,6 % | Swift 1.5 con conteo por palabras clave |
+| Métrica | Valor | Condiciones |
+|---|---|---|
+| Decodificación | 203 tok/s (mediana 197,9–209,3) | Un stream, thinking on, 261.888 tokens de prompt + 128 de salida |
+| Prefill | 7.076 tok/s | Prompt frío de 101.845 tokens |
+| Agentes concurrentes | 719 tok/s agregados | Ocho conversaciones de 16K + ocho seguimientos de 512 tokens simultáneos |
+| Pool KV en VRAM | 924.993 tokens | FP8, tres sesiones de 262K mantenidas a la vez |
+| Tasa de rechazo | 10,4 % (29 de 278 respuestas) | StrongREJECT, 313 prompts dañinos |
 
-Datos de eficiencia medidos en cuatro RTX 3090 (TP2 x PP2 + EP, MTP K=3, Flash-Next v2.5.1, 2026-10-11/12):
-
-| Metrica | Valor |
-|---|---|
-| Decodificacion | 167-179 tok/s desde 4K hasta 261K de contexto |
-| Prefill | 5.028 tok/s a 10K; 5.446 tok/s a 100K |
-| Coste en tokens (turnos de agente, xhigh) | 0,86x Swift 1.5 (IC 95 % 0,64-1,15) |
-| Coste en tokens (GSM8K) | 0,99x Swift 1.5 |
-| Pool de KV cache FP8 | 924.993 tokens |
-
-En StrongREJECT se cortaron 35 respuestas de 313 por limite de 8.192 tokens y no se juzgaron; de las 278 restantes, un segundo juez que etiqueto la mitad situa la tasa combinada de rechazo entre el 9,4 % y el 18,7 %. No se han publicado resultados de MMLU, HumanEval ni otros benchmarks estandar en la informacion disponible.
+No se han publicado resultados de benchmarks de calidad en la información disponible.
 
 ## Requisitos de hardware
-
-- VRAM estimada: aproximadamente 71,4 GB repartidos entre las cuatro GPU segun LLM Explorer; el checkpoint ocupa unos 115 GiB en disco.
-- GPU recomendadas: 4x RTX 3090 (24 GB, sm_86), sin otro proceso CUDA en las tarjetas. No cabe en una sola GPU consumer. Requiere PCIe peer-to-peer recomendado, aunque no necesita NVLink.
-- Memoria del host: 96 GB de RAM; `/dev/shm` de al menos 1 GB.
-- Almacenamiento: aproximadamente 250 GB libres.
-- Requisitos de software: Linux x86-64 con glibc 2.34 o superior, driver NVIDIA con CUDA 13.0 o superior, Python 3.13 con venv y cabeceras, compilador C/C++, ninja, git y curl.
-- Opciones de despliegue: motor propio Flash-Next v2.5.2 del repositorio halt95/qwen38-flash-next-3090s (basado en vLLM), con script `scripts/serve-huihui.sh` y nombre de modelo `flash-next-swift-huihui`. No se documentan despliegues con llama.cpp, Ollama ni TGI.
-- Latencia y throughput estimados: decodificacion de 167-179 tok/s de 4K a 261K de contexto; prefill de 5.028 tok/s a 10K y 5.446 tok/s a 100K, con MTP K=3 y configuracion TP2 x PP2 + EP.
+- VRAM estimada: aproximadamente 115 GiB de pesos, más la caché KV en FP8. El despliegue medido usa cuatro GPU de 24 GB (96 GB totales) con el pool KV completo en VRAM.
+- GPU recomendadas: cuatro NVIDIA RTX 3090 (Ampere) es la configuración validada. La model card indica que los perfiles para Ada se distribuyen sin probar. No se documenta despliegue en A100 u H100.
+- No cabe en una única GPU de consumo: requiere al menos cuatro GPU de 24 GB para la ventana completa de 262K. Con contextos menores podría reducirse el número de GPU, pero no se aportan datos al respecto.
+- Opciones de despliegue: Merlin 3.0.2.2, un fork de vLLM 0.33.0 optimizado para Ampere y Ada. La tabla de embeddings n-gram permanece en RAM del host, por lo que se necesita memoria de sistema adicional.
+- Latencia y throughput: 203 tok/s de decodificación a contexto máximo y 7.076 tok/s de prefill en 100K tokens, según las mediciones del autor.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Formato / cuantizacion | Licencia | Disponibilidad |
+| Modelo | Parámetros | Contexto | Cuantización | Licencia | Hardware |
 |---|---|---|---|---|---|
-| Este modelo (Swift1.5-Huihui-Qwen3.8-Flash-Next-W4A16-Merlin) | ~124B (MoE) | 262K | W4A16, compressed-tensors, vLLM | swift-open-license-1.0 | Hugging Face, 0 descargas |
-| ukisai/Swift1.5-Qwen3.8-Flash-Next | no disponible | no disponible | no disponible | no disponible | Hugging Face (modelo base) |
-| huihui-ai/Huihui-Qwen3.8-Flash-Next-abliterated | no disponible | no disponible | no disponible | no disponible | Hugging Face (modelo base, sin rechazo) |
-| halt95/Qwen3.8-Flash-Next-W4A16-Merlin | no disponible | no disponible | W4A16, Merlin | no disponible | Hugging Face (checkpoint original sin abliteration) |
+| Swift1.5-Huihui-Qwen3.8-Flash-Next-W4A16-Merlin | ~124B (MoE) | 262.144 | W4A16, KV FP8 | swift-open-license-1.0 | 4× RTX 3090 |
+| Swift1.5-Qwen3.8-Flash-Next (halt95) | ~124B (MoE) | 262.144 | W4A16 | swift-open-license-1.0 | 4× RTX 3090 |
+| UkisAI Swift1.5-Qwen3.8-Flash-Next | ~124B (MoE) | 262.144 | BF16 (original) | swift-open-license-1.0 | no disponible |
+| huihui-ai Huihui-Qwen3.8-Flash-Next-abliterated | ~124B (MoE) | no disponible | BF16 | no disponible | no disponible |
 
-No se dispone de datos de benchmarks comparativos entre estos modelos mas alla de las referencias a Swift 1.5 incluidas en la model card. Las alternativas de la misma categoria (modelos MoE de ~124B con contexto largo y cuantizacion 4 bits) no estan documentadas en la informacion proporcionada.
+La diferencia principal frente a los checkpoints base es la combinación de abliteration parcial (solo en proyecciones densas de salida) con cuantización W4A16 y caché KV en FP8, que reduce los requisitos de hardware de cuatro GPU de 80 GB a cuatro de 24 GB. No se dispone de datos de rendimiento comparativo entre estas variantes.
 
 ## Limitaciones y advertencias
-
-- Modelo sin rechazo: la abliteration se aplico upstream y ningun componente filtra la salida. En StrongREJECT solo rechaza entre el 9,4 % y el 18,7 % de 278 respuestas juzgadas. No debe usarse en contextos donde un rechazo sea la salvaguarda (reglas de privacidad en el prompt de sistema, politicas que un agente deba mantener frente a su usuario, o cualquier tarea que maneje datos o dinero de terceros).
-- Riesgo de alucinacion: no se han publicado mediciones de fidelidad factual ni de tasas de alucinacion. Como cualquier modelo generativo, puede producir contenido incorrecto con aparente seguridad.
-- Limitaciones de idioma: solo declara soporte de ingles. El rendimiento en castellano no esta verificado ni documentado.
-- Restricciones de licencia: swift-open-license-1.0 es una licencia "other", no una licencia de codigo abierto estandar. El uso comercial debe revisarse contra el texto completo de LICENSE antes de cualquier despliegue en produccion.
-- Derivado independiente: no esta hecho, revisado ni respaldado por UkisAI, huihui-ai ni Qwen. Los autores declinan responsabilidad sobre las salidas.
-- Requisitos de hardware estrictos: cuatro RTX 3090 dedicadas, sin otros procesos CUDA, 96 GB de RAM de host y 250 GB de disco. No es desplegable en una sola GPU ni en entornos sin control total sobre el hardware.
-- Ecosistema limitado: solo se documenta soporte para el motor propietario Flash-Next v2.5.2; no hay confirmacion de compatibilidad con llama.cpp, Ollama, TGI u otros servidores estandar.
-- Dependencia de revisiones fijadas: el proceso de descarga verifica hashes (release/checkpoint-huihui.sha256) y fija una revision concreta, por lo que actualizar el checkpoint exige revisar manualmente el pin.
-- Estado del repositorio: 0 descargas y 0 "likes", sin comunidad que haya validado la reproducibilidad de los resultados mas alla de las mediciones del autor.
+- Modelo sin mecanismos de rechazo efectivos: en StrongREJECT rechazó solo el 10,4 % de las respuestas completadas, frente al 96,8 % del Swift 1.5 original. No debe usarse donde el rechazo sea la salvaguarda (reglas de privacidad, políticas de agente, datos o dinero de terceros).
+- Riesgo elevado de alucinación y de generar contenido dañino sin filtro; nada filtra su salida.
+- Idiomas: solo inglés según la metadata; no se garantiza calidad en castellano ni en otros idiomas.
+- Licencia restrictiva: swift-open-license-1.0 más Qwen Community License 1.0 para los componentes heredados. Es necesario revisar ambas antes de cualquier uso comercial.
+- Derivado independiente no revisado ni respaldado por UkisAI, huihui-ai ni Qwen.
+- Los perfiles para GPU Ada se distribuyen sin probar; el despliegue validado es exclusivamente Ampere (RTX 3090).
+- Requiere Merlin, un fork específico de vLLM; no se garantiza compatibilidad con vLLM upstream ni con otros motores de inferencia.
+- La tabla de embeddings n-gram de 51B parámetros reside en RAM del host, lo que añade requisitos de memoria del sistema no cuantificados en la información disponible.
 
 ## Enlaces
-
 - Modelo en Hugging Face: https://huggingface.co/halt95/Swift1.5-Huihui-Qwen3.8-Flash-Next-W4A16-Merlin
-- Archivo de pesos (ejemplo): https://huggingface.co/halt95/Swift1.5-Qwen3.8-Flash-Next-W4A16-Merlin/blob/main/model-plefp8-00007.safetensors
-- Modelo base Swift 1.5 (UkisAI): https://huggingface.co/ukisai/Swift1.5-Qwen3.8-Flash-Next
+- Checkpoint Swift1.5 de halt95: https://huggingface.co/halt95/Swift1.5-Qwen3.8-Flash-Next-W4A16-Merlin
+- Modelo base UkisAI Swift 1.5: https://huggingface.co/ukisai/Swift1.5-Qwen3.8-Flash-Next
 - Abliteration de huihui-ai: https://huggingface.co/huihui-ai/Huihui-Qwen3.8-Flash-Next-abliterated
-- Checkpoint Merlin original: https://huggingface.co/halt95/Qwen3.8-Flash-Next-W4A16-Merlin
-- Checkpoint Swift 1.5 W4A16: https://huggingface.co/halt95/Swift1.5-Qwen3.8-Flash-Next-W4A16-Merlin
-- Repositorio del motor (qwen38-flash-next-3090s): https://github.com/halt95/qwen38-flash-next-3090s
-- Qwen3.8-Flash-Next (QwenLM): https://github.com/QwenLM/Qwen3.8-Flash-Next/
-- Kit de despliegue en 3090 (jon-nielsen): https://github.com/jon-nielsen/qwen38-flash-next-3090-kit
-- Ficha en LLM Explorer: https://llm-explorer.com/model/halt95%2FSwift1.5-Qwen3.8-Flash-Next-W4A16-Merlin,6yynOfidssjeo3CjYk1324
+- Repositorio del motor Merlin: https://github.com/halt95/merlin-engine
+- Bench card: https://github.com/halt95/merlin-engine/blob/main/models/swift1.5-huihui/benchmarks/2026-11-12/BENCH-CARD.md
+- Embeddings n-gram (RadixArk): https://huggingface.co/RadixArk/Qwen3.8-Flash-Next-NVFP4
+- Discord del autor: https://discord.gg/jVDYAwdGzt

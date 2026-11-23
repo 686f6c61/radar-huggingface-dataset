@@ -37,5 +37,16 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": []
+  "sources": [
+    {
+      "title": "IDDRG | International Deep Drawing Research Group",
+      "url": "https://iddrg.com/",
+      "snippet": "IDDRG Booklet A general information booklet on the history and activity of IDDRG can be downloaded here by clicking the link below."
+    },
+    {
+      "title": "DDRG - What does DDRG stand for? The Free Dictionary",
+      "url": "https://acronyms.thefreedictionary.com/DDRG",
+      "snippet": "Looking for online definition of DDRG or what DDRG stands for? DDRG is listed in the World's most authoritative dictionary of …"
+    }
+  ]
 }

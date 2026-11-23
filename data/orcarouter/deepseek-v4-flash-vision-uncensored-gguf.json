@@ -59,29 +59,29 @@
   "benchmarks": [],
   "sources": [
     {
-      "title": "DeepSeek V4 Flash API — Pricing & Benchmarks · OrcaRouter",
-      "url": "https://www.orcarouter.ai/models/deepseek/deepseek-v4-flash",
-      "snippet": "The model is accessible through OrcaRouter&#x27;s OpenAI-compatible API, using the model ID \"deepseek/deepseek-v4-flash\". It is billed at provider rates with zero markup, meaning users pay exactly what OrcaRouter pays DeepSeek."
+      "title": "OrcaRouter — One AI gateway: adaptive LLM routing & governance",
+      "url": "https://www.orcarouter.ai/",
+      "snippet": "OrcaRouter is a production AI gateway: one OpenAI-compatible endpoint with adaptive routing, load balancing, automatic failover, …"
     },
     {
-      "title": "DeepSeek V4 Flash Vision (Exp) Is Live: Vision at Text Prices",
-      "url": "https://www.orcarouter.ai/blog/deepseek-v4-flash-vision-exp-launch",
-      "snippet": "DeepSeek&#x27;s first API vision model matches V4-Flash on text, adds image input at the same token prices, and pushes multimodal agents close to Opus-4.8."
+      "title": "OrcaRouter — Passerelle IA : routage LLM adaptatif",
+      "url": "https://www.orcarouter.ai/fr",
+      "snippet": "OrcaRouter est une passerelle IA de production : un point d'accès compatible OpenAI avec routage adaptatif, répartition de charge, …"
     },
     {
-      "title": "deepseek-ai/DeepSeek-V4-Flash-Vision-Exp | vLLM Recipes",
-      "url": "https://recipes.vllm.ai/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp",
-      "snippet": "DeepSeek&#x27;s first experimental multimodal V4 model — the V4-Flash MoE backbone plus a 32-layer vision tower, 1M context, and a fused DSpark draft module."
+      "title": "Welcome to OrcaRouter - OrcaRouter",
+      "url": "https://docs.orcarouter.ai/introduction",
+      "snippet": "OrcaRouter exposes OpenAI, Anthropic, and Gemini surfaces directly, and translates between them when you call across protocols …"
     },
     {
-      "title": "DeepSeek V4 Flash API - OrcaRouter - AI Model APIs",
-      "url": "https://aimodelapis.com/providers/orcarouter/orcarouter-deepseek-deepseek-v4-flash",
-      "snippet": "This model delivers cost-effective pricing at $0.15/1M input and $0.29/1M output tokens, native tool calling support, open weights architecture. Access DeepSeek V4 Flash via the OrcaRouter API with up to 384K output tokens."
+      "title": "orcarouter/Qwen3.8-27B-Uncensored",
+      "url": "https://ollama.com/orcarouter/Qwen3.8-27B-Uncensored",
+      "snippet": "The same weights are served on OrcaRouter behind an OpenAI-compatible endpoint — 262K context, vision and tool calling, no …"
     },
     {
-      "title": "deepseek-ai/DeepSeek-V4-Flash · Hugging Face",
-      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash",
-      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+      "title": "Auto Router - OrcaRouter",
+      "url": "https://docs.orcarouter.ai/routing/auto-router",
+      "snippet": "You want OrcaRouter’s routing to “just work” without thinking about it. ... You need deterministic output — picking different models at …"
     }
   ]
 }

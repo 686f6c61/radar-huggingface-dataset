@@ -1,95 +1,85 @@
 # Ernnnn/Qwen3.8-27B-Decision-v0.4
 
 ## Resumen
+Qwen3.8-27B-Decision-v0.4 es un modelo de decisión derivado del backbone Qwen3.8-27B (26.896 millones de parámetros totales), publicado por el usuario Ernnnn en Hugging Face. No es un modelo generativo al uso: recibe un estado, una pregunta y un conjunto ordenado de entre 2 y 255 opciones, y devuelve en un único forward pass una distribución de probabilidad softmax sobre esas opciones. La interfaz imita el estilo de decisión tipada de Jev (TypeSafe), pero se trata de una reproducción independiente y no de un lanzamiento oficial de TypeSafe.
 
-Qwen3.8-27B Decision v0.4 es un modelo de decisión derivado del checkpoint base Qwen/Qwen3.8-27B, publicado por el usuario Ernnnn en Hugging Face. No es un modelo generativo al uso: recibe un estado (texto de contexto), una pregunta y entre 2 y 255 opciones ordenadas, y devuelve en un único forward pass una distribución de probabilidad sobre las opciones. Se presenta como una reproducción independiente de una interfaz de decisión al estilo Jev, sin vinculación con TypeSafe.
+El modelo se distribuye como un adaptador LoRA sobre el backbone, con pesos en safetensors (56,4 GB de repositorio) y código personalizado (`trust_remote_code=True`). Incorpora atención bidireccional en 16 de sus 64 capas de atención completa, mientras que las 48 restantes mantienen recurrencia causal. Su ventana de entrada por defecto es de 12.288 tokens, ampliable a 65.536 con FlashAttention 2.
 
-El modelo conserva la arquitectura híbrida del backbone Qwen3.8-27B (atención lineal recurrente combinada con capas de atención completa) y añade dos modificaciones clave: entrena un token de decisión mediante LoRA y convierte las 16 capas de atención completa en atención bidireccional sobre la entrada, mientras las 48 capas restantes mantienen su recurrencia de atención lineal. El resultado es un cabezal de scoring con proyección FP32 y softmax restringido a las opciones proporcionadas.
+Es relevante porque convierte un LLM grande en un clasificador de decisiones probabilístico de alta fidelidad, útil para agentes y sistemas de enrutamiento donde se necesita una distribución calibrada sobre alternativas discretas en lugar de texto libre. El modelo se entrenó sobre 1.199.832 registros de decisión y declara compatibilidad tanto con Transformers como con vLLM.
 
-Es relevante porque propone un patrón distinto al de los LLM generativos para tareas de selección (enrutamiento, clasificación de acciones, triaje): en lugar de generar texto y parsearlo, puntúa directamente las alternativas en una sola pasada, lo que simplifica la integración en pipelines de agentes y reduce la superficie de error de formato. El modelo tiene 26.896.131.584 parámetros totales y un repositorio de 56,4 GB en safetensors.
-
-## Especificaciones técnicas
-
-| Parámetro | Valor |
+## Especificaciones tecnicas
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer híbrido (atención lineal recurrente + atención completa), derivado de Qwen3.8-27B; 16 capas de atención completa bidireccional y 48 capas con recurrencia de atención lineal |
-| Parámetros totales | 26.896.131.584 (26,9 B) |
-| Parámetros activos | no disponible (no se indica que sea MoE) |
-| Longitud de contexto | 12.288 tokens por defecto en el script de referencia (SDPA); 65.536 tokens en la evaluación con FlashAttention 2; el forward de 64.308 tokens se ejecutó en una H100 |
-| Tipos de cuantización | no disponible (pesos publicados en safetensors, con cabezal de salida en FP32; el backbone se entrenó en BF16) |
+| Arquitectura | Transformer derivado de Qwen3.8-27B con atención híbrida (16 capas de atención completa bidireccional, 48 capas con recurrencia causal) y cabeza de decisión |
+| Parametros totales | 26.896.131.584 |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | 12.288 tokens por defecto; 65.536 tokens en configuración de evaluación con FlashAttention 2 |
+| Tipos de cuantizacion | no disponible (pesos publicados en bfloat16; no se documentan cuantizaciones oficiales) |
 | Idiomas soportados | no disponible |
-| Licencia | no disponible en los metadatos; la model card indica que se incluye la licencia Apache 2.0 del modelo base Qwen/Qwen3.8-27B |
-| Formato de pesos | safetensors (12 shards, 56,34 GB / 52,47 GiB) |
+| Licencia | no disponible |
+| Formato de pesos | safetensors (adaptador LoRA sobre Qwen/Qwen3.8-27B) |
 
 ## Arquitectura y entrenamiento
+El modelo parte de Qwen3.8-27B y se ajusta mediante LoRA para una tarea de decisión tipada. La arquitectura conserva 64 capas de atención, de las cuales 16 son de atención completa y ven todo el prompt de forma bidireccional, mientras que las 48 restantes mantienen recurrencia causal. Cada opción recibe un token de posición y, tras la última opción y el sufijo de la plantilla de chat, se coloca un token de decisión separado. La representación de ese token de decisión se proyecta a través de pesos de elección en FP32 y se normaliza con softmax sobre las opciones.
 
-El modelo parte del backbone Qwen3.8-27B congelado en BF16. Sobre él se entrena un adaptador LoRA de rango 32 y alpha 64, junto con un cabezal de decisión, usando entropía cruzada con objetivos suaves (soft-target cross entropy) sobre 1.199.832 registros de decisión durante una época: 6.250 pasos de optimizador, batch global de 192, LR máximo de 0,0001, 3 % de warmup y decaimiento lineal. El entrenamiento completo llevó aproximadamente 11 h 17 min en ocho H100; el checkpoint de 4.500 pasos alcanzó 65,05 en Decision Index Public tras unas 8 h 7 min. Solo se publican los pesos finales, con los adaptadores fusionados y el cabezal de salida en FP32.
-
-La innovación técnica principal es la separación entre dos regímenes de atención: las 16 capas de atención completa pueden atender de forma bidireccional sobre toda la entrada suministrada, mientras que las 48 capas restantes mantienen la recurrencia de atención lineal original del backbone. El scoring se realiza únicamente en la posición final de decisión, con una proyección FP32 y softmax sobre las opciones. La model card advierte explícitamente de que un pipeline causal de text-generation estándar calcula una función distinta, por lo que debe usarse la ruta de scoring incluida (`predict.py`). Las entradas que exceden la longitud máxima lanzan un error en lugar de descartar opciones.
+El entrenamiento utilizó 1.199.832 registros de decisión: 999.832 del split de entrenamiento de Tasksource y 200.000 de una mezcla que abarca conocimiento, lenguaje, recuperación, herramientas y artes. Contando estados, preguntas y conjuntos de opciones idénticos como una sola entrada, hay 1.112.792 entradas distintas. La distribución de tareas fue: 950.008 registros de elección, 131.670 de sí/no y 118.154 de valoración ordenada. En 92.014 registros la masa objetivo positiva se reparte entre más de una opción. Durante la preparación se acortaron 1.605 registros de Tasksource demasiado largos y se escaparon cadenas de tokens reservados en siete registros. La distribución objetivo se usa solo en la pérdida.
 
 ## Capacidades
-
-- Scoring de decisiones: recibe un estado, una pregunta y entre 2 y 255 opciones ordenadas, y devuelve probabilidades normalizadas sobre las opciones en un solo forward pass.
-- Atención bidireccional en las 16 capas completas, lo que permite condicionar la decisión sobre toda la entrada y no solo sobre el prefijo causal.
-- Soporte de contextos largos: hasta 12.288 tokens por defecto y 65.536 tokens en la ruta evaluada con FlashAttention 2.
-- Decisiones binarias (sí/no) y ordinales: la model card reporta mayor ganancia en decisiones sí/no y menor precisión en decisiones ordinales de tipo Score.
-- Integración con Transformers y Accelerate; ruta acelerada con flash-attn 2.8.3, fla-core 0.5.2 y causal-conv1d 1.7.0.
-- No se documentan capacidades de generación de texto libre, código, matemáticas, visión, audio, tool calling ni agentes multi-paso en la información disponible.
+- Decisión sobre opciones discretas: puntúa entre 2 y 255 opciones ordenadas en un solo forward pass y devuelve índice, texto y probabilidad.
+- Elección múltiple tipada: tareas de elección con una probabilidad por opción en el orden suministrado.
+- Preguntas de sí/no: dos probabilidades en el orden falso, verdadero.
+- Valoraciones ordenadas: una probabilidad por nivel en la escala proporcionada.
+- Soporte de objetivos múltiples: puede asignar masa de probabilidad positiva a más de una opción (92.014 registros de entrenamiento lo hacen).
+- Integración con Transformers mediante `AutoModel` y procesador propio con `trust_remote_code=True`.
+- Inferencia por lotes en vLLM con runner de pooling, `PoolerConfig` de tipo LAST y cabeza de decisión del checkpoint.
+- Contexto largo: hasta 12.288 tokens por defecto y 65.536 con FlashAttention 2.
+- No se documentan capacidades de generación libre, tool calling, agentes multi-paso, visión, audio ni modo thinking.
 
 ## Casos de uso
-
-- Enrutamiento de acciones en agentes: dado el estado de una conversación y una lista de acciones posibles (pedir un dato, confirmar un cambio, escalar a humano), el modelo puntúa cada opción y el orquestador selecciona la de mayor probabilidad. Es adecuado porque evita generar y parsear texto libre.
-- Triaje de tickets de soporte: con el texto del ticket como estado y las categorías de cola como opciones, se obtiene una distribución que permite priorizar y derivar; el contexto de 12K tokens cubre hilos de correo largos.
-- Clasificación de intención en asistentes conversacionales: se pasa el historial reciente como estado y el conjunto cerrado de intenciones como opciones, obteniendo una decisión calibrada por softmax en lugar de una etiqueta generada.
-- Verificación de requisitos en formularios: estado con los datos introducidos, pregunta sobre el siguiente campo a solicitar y opciones con los campos pendientes; útil en flujos de atención al cliente (por ejemplo, reservas de vuelo sin número de reserva).
-- Selección de herramienta en pipelines deterministas: las herramientas disponibles se enumeran como opciones y el modelo decide cuál invocar, con la ventaja de que la salida siempre pertenece al conjunto permitido.
-- Evaluación de alternativas en sistemas de recomendación o moderación: puntuar un conjunto acotado de respuestas candidatas y ordenarlas por probabilidad, usando la ventana de 64K para incluir contexto extenso de políticas o catálogo.
-- Decisión sí/no en control de calidad: aprobar o rechazar un contenido o una transición de estado, aprovechando que la model card reporta la mayor ganancia en decisiones binarias.
+- Enrutamiento de atención al cliente: dado el estado de la conversación y una pregunta como "¿qué debe hacer el agente a continuación?", el modelo devuelve una distribución sobre acciones posibles (buscar reserva, pedir número de reserva, transferir a humano). El ejemplo de la model card muestra 99,86% para "pedir el número de reserva".
+- Clasificación de intenciones en asistentes conversacionales: con 2-255 etiquetas ordenadas, se obtiene una probabilidad calibrada por intención en un único paso, lo que simplifica el pipeline frente a un LLM generativo con postprocesado.
+- Triaje de tickets y soporte: el modelo puntúa niveles ordenados (por ejemplo, severidad baja, media, alta) con una probabilidad por nivel, útil para priorización automática.
+- Decisión binaria en pipelines de validación: preguntas de sí/no con dos probabilidades (falso, verdadero) para filtros de calidad, moderación o comprobaciones de consistencia.
+- Selección de herramientas en agentes: dado el estado y la pregunta, elegir entre un conjunto acotado de herramientas o acciones, aprovechando la ventana de 12.288 tokens para incluir contexto de conversación amplio.
+- Evaluación de políticas y simulación de decisiones: al devolver distribuciones completas en lugar de una única etiqueta, permite analizar incertidumbre y comparar políticas en entornos simulados.
+- Procesamiento por lotes offline: con vLLM y el runner de pooling se pueden puntuar múltiples prompts de decisión en batch, útil para anotar grandes volúmenes de datos.
 
 ## Benchmarks y rendimiento
-
-| Benchmark | Este modelo (final) | Referencia pública Jev 1.14 |
-|---|---:|---:|
-| Decision Index Public (score público, entrada de 12K para este modelo) | 65,17 | 60,70 |
-| JevBench Public (exactitud micro, 231 ítems) | 88,74 % | 87,45 % |
-| DecisionBench (exactitud micro, 23.900 ítems, entrada de 64K para este modelo) | 77,04 % | 73,66 % |
-
-Las puntuaciones de referencia provienen de los snapshots públicos de Decision Index y JevalKit citados en la model card. El valor de Decision Index corresponde solo al componente público; no se reporta la puntuación privada Full. La auditoría completa de solapamiento entre datos de entrenamiento y benchmarks públicos está pendiente según el autor.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card únicamente reporta una comparación de consistencia entre backends: en cinco peticiones cortas (elección, sí/no y valoraciones ordenadas), Transformers y vLLM seleccionaron las mismas respuestas, con una diferencia máxima de 0,30 puntos porcentuales por opción.
 
 ## Requisitos de hardware
-
-- Pesos completos en safetensors: 56,34 GB (52,47 GiB) en 12 shards; en BF16 no caben en GPUs de consumo de 24 GB sin cuantización, que no está documentada.
-- Un forward de 64.308 tokens en una H100 80 GB consumió 65,46 GiB de memoria pico asignada y 72,95 GiB reservada, por lo que la ventana de 64K requiere GPUs de 80 GB.
-- Para la ventana por defecto de 12.288 tokens se recomienda al menos una GPU profesional con memoria suficiente para los pesos más el estado de activaciones; no se proporcionan cifras exactas para ese régimen.
-- GPUs recomendadas según la información disponible: H100 80 GB para la ruta de 64K con FlashAttention 2; el entrenamiento se realizó en ocho H100.
-- Despliegue: Transformers 5.16.1 y Accelerate 1.14.0 con PyTorch 2.13.0; ruta acelerada con flash-attn 2.8.3, fla-core 0.5.2 y causal-conv1d 1.7.0. Debe usarse el scorer incluido (`predict.py`), no un pipeline causal estándar.
-- Latencia y throughput: no disponibles; la model card indica que dependen del batch, los kernels y la longitud de entrada, y recomienda empezar con una decisión concurrente y medir la carga objetivo.
+- El autor indica que se usó una H100 de 80 GB para cargar los pesos en bfloat16.
+- El repositorio ocupa 56,4 GB, por lo que la inferencia en precisión completa requiere GPUs de 80 GB o superiores (H100, A100 80 GB).
+- No se documenta si cabe en GPUs de consumo (RTX 4090 de 24 GB, etc.); con 26,9 mil millones de parámetros y pesos bfloat16, no cabría sin cuantización, y no se publican cuantizaciones oficiales.
+- Despliegue con Transformers 5.16.1, Accelerate 1.14.0 y PyTorch 2.13.0 (entorno de referencia del autor), con `attn_implementation="sdpa"` o `"flash_attention_2"`.
+- Despliegue con vLLM 0.32.0 usando `runner="pooling"`, `convert="embed"`, `is_causal=False`, pooling LAST y desactivando prefix caching y chunked prefill.
+- En el ejemplo de vLLM se usa `max_model_len=2048`, `max_num_batched_tokens=2048`, `max_num_seqs=4` y `gpu_memory_utilization=0.88`.
+- No se publican datos de latencia ni throughput.
 
 ## Comparativa con modelos similares
-
-| Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
+| Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-27B Decision v0.4 | 26,9 B | 12.288 por defecto; 65.536 evaluado | Scoring de decisiones sobre opciones | no disponible (incluye Apache 2.0 del base) | Hugging Face, 0 descargas |
-| Qwen/Qwen3.8-27B (base) | 27 B (aprox., según nombre) | no disponible | Generación de texto causal | Apache 2.0 | Hugging Face |
-| Referencia Jev 1.14 | no disponible | no disponible | Interfaz de decisión tipo Jev | no disponible | Solo puntuaciones públicas citadas |
+| Qwen3.8-27B-Decision-v0.4 | 26,9 mil millones | 12.288 (65.536 con FA2) | Decisión tipada sobre 2-255 opciones | no disponible | Hugging Face (adaptador LoRA) |
+| Qwen/Qwen3.8-27B (modelo base) | no disponible en la información | no disponible en la información | Generación de texto | no disponible en la información | Hugging Face |
+| Jev (TypeSafe) | no disponible | no disponible | Interfaz de decisión tipada | no disponible | Referencia citada por el autor; no se aportan datos |
 
-No se dispone de datos de otros modelos de decisión comparables en la información proporcionada.
+No se dispone de información suficiente para comparar parámetros, contexto, rendimiento ni licencia de alternativas de la misma categoría.
 
 ## Limitaciones y advertencias
-
-- No es un modelo generativo: usar un pipeline causal estándar calcula una función distinta y produce resultados incorrectos; es obligatorio emplear la ruta de scoring incluida.
-- El autor indica que la auditoría de solapamiento entre los 1.199.832 registros de entrenamiento y los benchmarks públicos está pendiente, por lo que las cifras de Decision Index, JevBench y DecisionBench deben tomarse con cautela.
-- Solo se reporta el componente público de Decision Index; no hay puntuación Full privada.
-- Menor precisión en decisiones ordinales (Score) que la referencia Jev, según la propia model card.
-- Las entradas que exceden la longitud máxima lanzan un error; no hay truncado ni descarte silencioso de opciones, lo que exige gestionar el límite en producción.
-- Licencia no declarada en los metadatos del repositorio; aunque se incluye la Apache 2.0 del modelo base, la situación legal de los pesos derivados y del uso comercial no está aclarada.
-- Idiomas soportados no documentados; el comportamiento multilingüe heredado del backbone no está verificado.
-- Sin descargas ni likes en el momento de la consulta y con solo los pesos finales publicados (sin checkpoints intermedios), lo que limita la reproducibilidad del entrenamiento.
-- Riesgo de sesgo y alucinación no evaluado en la información disponible; al tratarse de un clasificador restringido a opciones, el riesgo de alucinación de formato es bajo, pero la calibración de probabilidades no está validada fuera de los benchmarks citados.
+- No es un modelo generativo: `LLM.generate()` y las chat completions en vLLM usan generación causal de texto y no la cabeza de decisión; para decisiones hay que usar el runner de pooling.
+- La licencia no está disponible, por lo que no se puede confirmar el uso comercial.
+- Los idiomas soportados no están documentados.
+- No se publican benchmarks de calidad; solo una comparación de consistencia entre backends en cinco peticiones.
+- El modelo requiere `trust_remote_code=True` y código personalizado, lo que implica revisar el código antes de desplegarlo en producción.
+- El límite por defecto de 12.288 tokens puede ser insuficiente para estados muy largos; la configuración de 65.536 tokens exige FlashAttention 2 y `max_length=65536`.
+- Una petición que excede el límite lanza un error para preservar todas las opciones; hay que gestionar ese caso en el pipeline.
+- En vLLM es obligatorio desactivar prefix caching y chunked prefill para que las opciones posteriores influyan en las posiciones anteriores.
+- El autor advierte de que se trata de una reproducción independiente de un estilo de decisión tipo Jev y no de un lanzamiento de TypeSafe.
+- No se documentan sesgos conocidos ni tasas de alucinación; al ser un modelo de clasificación, el riesgo principal es una distribución mal calibrada en dominios alejados de los datos de entrenamiento.
+- El conjunto de entrenamiento contiene entradas repetidas (1.199.832 registros frente a 1.112.792 entradas distintas), lo que puede sobrerrepresentar ciertos patrones.
 
 ## Enlaces
-
 - Modelo en Hugging Face: https://huggingface.co/Ernnnn/Qwen3.8-27B-Decision-v0.4
-- Modelo base Qwen/Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B/tree/1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0
-- Snapshot de Decision Index público: https://huggingface.co/spaces/multimodalart/jev-decision-index/blob/b7e7ea6770d4a628594b2db9ba0e4012bba7b2b6/data/v03.json
-- Snapshot de JevalKit Leaderboard: https://huggingface.co/spaces/Valen-Team/JevalKit-Leaderboard/blob/98b7f74cb7b4959d759c4cd04e25e329140b324b/data/leaderboard.json
+- Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
+- Dataset Tasksource (revisión usada): https://huggingface.co/datasets/tasksource/tasksource-jev-typed-decisions/tree/8df2e5c9a33f19a2c2b8febf291c3acb0a91a8a8
+- No se han encontrado papers, blogs, repositorios ni demos adicionales en la información proporcionada.

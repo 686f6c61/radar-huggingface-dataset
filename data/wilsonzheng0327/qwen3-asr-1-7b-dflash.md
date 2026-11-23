@@ -2,94 +2,100 @@
 
 ## Resumen
 
-Qwen3-ASR-1.7B-dflash es un modelo *draft* (borrador) para decodificación especulativa codiciosa (*greedy speculative decoding*) diseñado para acelerar la inferencia del modelo de reconocimiento de voz Qwen3-ASR-1.7B de Qwen. Ha sido publicado por el usuario wilsonzheng0327 en Hugging Face y se basa en el formato DFlash de la librería `speculators`, tomando como referencia el checkpoint de `mattymchen/Qwen3-ASR-1.7B-speculator.dflash`.
+Qwen3-ASR-1.7B-dflash es un modelo borrador (draft) para decodificacion especulativa codiciosa (greedy speculative decoding) sobre el modelo de reconocimiento automatico del habla Qwen3-ASR-1.7B. Lo publica el usuario wilsonzheng0327 en Hugging Face y sigue el formato de checkpoints de la libreria `speculators` (variante DFlash), tomando como referencia el layout de `mattymchen/Qwen3-ASR-1.7B-speculator.dflash`. No es un modelo autonomo de ASR: es un acelerador que propone tokens que el modelo objetivo verifica, de modo que la transcripcion final es identica a la del objetivo en decodificacion codiciosa, pero con menos rondas de verificacion.
 
-A diferencia del draft de referencia, este modelo ha sido entrenado específicamente para inglés, chino y japonés, lo que permite mantener longitudes de aceptación (*accept length*) altas también en chino y japonés, donde el draft original degrada notablemente (de 6,2 tokens aceptados en inglés a poco más de 2 en japonés). El draft es un modelo ligero de unos 362,8 millones de parámetros (en safetensors, 0,7 GB) que propone hasta 7 tokens por ronda, que luego el modelo objetivo verifica.
+El checkpoint contiene 362.770.944 parametros (unos 363 M) en bf16, con 5 capas Qwen3 de borrador, hidden de 2048, 16 cabezas de atencion y 8 de KV, y una cabeza de salida (`lm_head`) de vocabulario reducido a 48.000 tokens (99,4% de los tokens de etiqueta del entrenamiento), mapeada al vocabulario del objetivo mediante tablas `d2t`/`t2d`. Se entrena sobre estados ocultos auxiliares de las capas 2, 14 y 25 del objetivo, con un tamano de bloque de 8 (7 propuestas por ronda) y una ventana deslizante de 32.768 tokens.
 
-Su relevancia reside en que la transcripción automática (ASR) con modelos tipo LLM es costosa en producción, y un draft bien entrenado puede multiplicar el throughput de transcripción sin alterar la salida del modelo objetivo, ya que la verificación garantiza resultados idénticos a la decodificación codiciosa del target.
+Su relevancia practica es directa: la decodificacion especulativa es una de las tecnicas mas eficaces para reducir la latencia de modelos autorregresivos sin alterar la salida. Este borrador esta especializado en audio multilingue (ingles, chino y japones) y, segun las mediciones del autor, alcanza una longitud de aceptacion media de 5,43 tokens por ronda en el conjunto agregado, frente a 3,51 del checkpoint de referencia, con mejoras especialmente marcadas en japones (4,60 frente a 2,09) y en grabaciones largas de 60 y 180 segundos.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | DFlash draft (5 capas Qwen3, decodificador especulativo con bloques de 8 tokens) |
-| Parametros totales | 362.770.944 (según safetensors) |
-| Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | Ventana deslizante de 32.768 tokens (entrenado con audios de hasta 240 s) |
-| Tipos de cuantizacion | no disponible (precisión nativa bf16) |
-| Idiomas soportados | Ingles, chino y japones (entrenamiento) |
-| Licencia | no disponible |
-| Formato de pesos | safetensors |
+| Arquitectura | Transformer denso (borrador de 5 capas Qwen3) para decodificacion especulativa DFlash sobre Qwen3-ASR-1.7B |
+| Parametros totales | 362.770.944 (aproximadamente 363 M) |
+| Parametros activos | no aplica (no es MoE) |
+| Longitud de contexto | ventana deslizante de 32.768 tokens; entrenado con grabaciones de hasta 240 s |
+| Tipos de cuantizacion | no disponible (checkpoint publicado en bf16) |
+| Idiomas soportados | ingles, chino y japones (entrenamiento); el modelo objetivo Qwen3-ASR-1.7B es multilingue |
+| Licencia | Apache 2.0 |
+| Formato de pesos | safetensors (libreria `speculators`, con `custom_code`) |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un draft DFlash compuesto por 5 capas de tipo Qwen3 (hidden 2048, intermediate 6144, 16 cabezas de atencion y 8 cabezas KV, head_dim 128), con normalizacion oculta (`hidden_norm`), una capa `norm` final y un `lm_head` de vocabulario reducido (48.000 tokens, correspondiente al 99,4 % de los tokens de etiqueta del entrenamiento) construido a partir de filas congeladas del embedding ligado del modelo objetivo. Incluye mapas `d2t`/`t2d` entre el vocabulario reducido del draft y el completo del target. El draft toma como entrada los estados ocultos del target en las capas auxiliares 2, 14 y 25, y propone bloques de 7 tokens por ronda (block size 8, con anclaje en el ultimo token confirmado y causalidad dentro del bloque), usando el token de mascara 151705.
+El borrador replica el layout de `mattymchen/Qwen3-ASR-1.7B-speculator.dflash`: un proyector `fc`, una `hidden_norm`, 5 capas Qwen3 (hidden 2048, intermediate 6144, 16 cabezas de atencion y 8 de KV, head_dim 128), una `norm` final y un `lm_head` de vocabulario reducido a 48.000 tokens construido con filas congeladas del embedding atado del objetivo, mas las tablas de mapeo `d2t` y `t2d`. Toma como entrada los estados ocultos de las capas auxiliares 2, 14 y 25 del modelo objetivo. Usa un tamano de bloque de 8 (7 propuestas por ronda, con el ultimo token confirmado como ancla) y atencion causal dentro del bloque; el token de mascara es el 151705. Existe una variante con vocabulario de 32.000 tokens en el subdirectorio `-32k`. Precision bf16.
 
-El entrenamiento se realizo en dos fases sobre unas 1.600 horas de audio (51 % ingles, 28 % chino, 21 % japones): LibriSpeech train-clean-360, People's Speech (clean), VoxPopuli en, Emilia-YODAS en/zh/ja (solo la parte CC BY), AISHELL-1, Common Voice 17 ja y FLEURS en/zh/ja. Las etiquetas son las transcripciones codiciosas del propio modelo objetivo (generadas con vLLM), lo que garantiza que el draft aprenda a imitar exactamente la salida del target, incluido el prefijo `language X<asr_text>`. La fase 1 entreno 10 epocas (33.920 pasos) con AdamW (lr 6e-4, warmup del 4 %, schedule coseno) sobre 591.765 clips de 0,5-30 s, con lotes empaquetados de 16k tokens en dos H200. La fase 2 (8 epocas, 21.864 pasos, lr 3e-4) amplio la ventana a 32.768 tokens usando 23.938 grabaciones largas (30-240 s) mas 150.000 clips cortos. El checkpoint publicado es el paso 21.864 de la fase 2, el de mejor aceptacion combinada en cortos y largos.
+El entrenamiento se realizo en dos fases con el `DFlashDraftModel` y la perdida de `speculators` (entropia cruzada con pesos de posicion D-Pace). Los datos de audio suman unas 1.600 horas: LibriSpeech train-clean-360, People's Speech (clean), VoxPopuli en, Emilia-YODAS en/zh/ja (excluyendo la parte CC BY-NC), AISHELL-1, Common Voice 17 ja y FLEURS en/zh/ja train; por clips, 51% ingles, 28% chino y 21% japones. Las etiquetas son las transcripciones codiciosas del propio objetivo generadas con vLLM (contexto de sistema vacio, idioma automatico), de modo que la salida conserva el prefijo `language X<asr_text>`. La fase 1 uso AdamW con lr 6e-4, 4% de warmup, decaimiento coseno, 10 epocas (33.920 pasos) sobre 591.765 clips de 0,5 a 30 s, empaquetados en lotes de 16k tokens en dos H200, con hasta 3.072 anclas por lote. La fase 2 partio de ese checkpoint, con lr 3e-4, 8 epocas (21.864 pasos) sobre 23.938 grabaciones largas (fragmentos de 30 a 240 s etiquetados completos) mas 150.000 clips cortos, y elevo la ventana a 32.768. El checkpoint publicado corresponde al paso 21.864 de la fase 2, elegido por el mejor acepte combinado en conjuntos cortos y largos.
 
 ## Capacidades
 
-- Generacion de propuestas de tokens para decodificacion especulativa codiciosa junto a Qwen3-ASR-1.7B (o su variante `Qwen3-ASR-1.7B-hf`).
-- Propuesta de hasta 7 tokens por ronda de verificacion (block size 8), con aceptacion media simulada de 5,43 tokens por ronda en el conjunto de pruebas.
-- Optimizado para transcripcion en tres idiomas: ingles (accept 6,09), chino (5,61) y japones (4,60).
-- Funcionamiento con grabaciones largas: mantiene aceptacion de 5,6-6,25 tokens con clips de ~60 s y de 4,7-6,15 con ~180 s, gracias al entrenamiento en fase 2 con ventana de 32.768 tokens.
-- No es un modelo de ASR por si mismo: requiere el modelo objetivo para producir transcripciones.
+- Propuesta de tokens para decodificacion especulativa codiciosa sobre Qwen3-ASR-1.7B y Qwen3-ASR-1.7B-hf; no genera transcripciones de forma autonoma.
+- Aceleracion de la inferencia ASR manteniendo la salida identica a la del objetivo en modo greedy.
+- Cobertura multilingue de borrador en ingles, chino y japones, con rendimiento medido por separado en cada idioma.
+- Manejo de grabaciones cortas (0,5 a 30 s) y largas (30 a 240 s) gracias a la ventana deslizante de 32.768 tokens.
+- Conservacion del formato de salida del objetivo, incluido el prefijo `language X<asr_text>`.
+- Variante de vocabulario reducido a 32.000 tokens (`-32k`) para entornos con menor presupuesto.
+- No soporta tool calling, function calling, agentes ni vision: su unica funcion es la propuesta de tokens de texto ASR.
 
 ## Casos de uso
 
-- Aceleracion de transcripcion masiva en servidores: al integrar el draft con Qwen3-ASR-1.7B en un runtime de serving, se reduce el numero de pasadas del target (una verificacion por cada ~5,4 tokens aceptados), aumentando el throughput en pipelines de transcripcion por lotes.
-- Subtitulado automatico de contenido multimedia en ingles, chino y japones: la fase 2 mantiene la eficiencia en grabaciones de hasta 180 s, adecuada para procesar videos o podcasts largos sin degradacion del accept length.
-- Procesamiento de call centers y grabaciones de voz: el alto accept length en ingles (6,09 de media) permite transcribir grandes volumenes de audio conversacional reduciendo costes de GPU.
-- Transcripcion multilingue en aplicaciones con deteccion automatica de idioma: el draft se entreno con las etiquetas generadas con contexto de sistema vacio y idioma automatico, replicando el comportamiento por defecto del target.
-- Despliegue en entornos de investigacion de decodificacion especulativa: el formato `speculators` DFlash permite estudiar y comparar drafts (existen variantes de vocabulario 48k y 32k) sobre el mismo target.
-- Reduccion de latencia en transcripcion interactiva: al ser un draft de solo 0,7 GB en bf16, su coste por propuesta es minimo frente al modelo objetivo de 1,7B, lo que beneficia a aplicaciones de dictado en tiempo real.
+- Transcripcion por lotes de audio corto: integrado en un pipeline con vLLM sobre Qwen3-ASR-1.7B, reduce las rondas de verificacion (acepte medio de 5,43 tokens en el agregado) y por tanto el coste de GPU por hora de audio procesada.
+- Subtitulado de reuniones y podcasts de hasta varios minutos: la fase 2 y la ventana de 32.768 tokens permiten mantener un acepte de 6,25, 5,75 y 4,75 en grabaciones de 60 s en ingles, chino y japones respectivamente.
+- Procesamiento de archivos de audio largos (unos 180 s): con acepte de 6,15 (en), 5,64 (zh) y 4,70 (ja), es adecuado para pipelines de transcripcion de entrevistas o clases sin trocear en exceso.
+- Servicio de dictado o notas de voz en produccion: al no alterar la salida del objetivo, se puede desplegar como acelerador transparente sin revalidar la calidad de las transcripciones.
+- Transcripcion de contenido en japones: es donde la mejora frente al checkpoint de referencia es mayor (4,60 frente a 2,09 en el agregado de japones), por lo que resulta especialmente indicado para productos centrados en ese idioma.
+- Evaluacion e investigacion en decodificacion especulativa: sirve como caso de estudio de entrenamiento en dos fases con datos sinteticos generados por el objetivo y de ajuste de vocabulario reducido con tablas `d2t`/`t2d`.
+- Despliegue con restricciones de memoria: la variante `-32k` reduce el coste del `lm_head` a cambio de un acepte algo menor (5,24 en el agregado frente a 5,43).
 
 ## Benchmarks y rendimiento
 
-No se han publicado benchmarks estandar (WER, MMLU, etc.) en la informacion disponible. La metrica relevante publicada es el *accept length* simulado (tokens generados por ronda de verificacion) en decodificacion especulativa codiciosa sobre CUDA con target en bf16, evaluado solo en clips retenidos (held-out):
+Los datos disponibles son de longitud de aceptacion simulada en CUDA con objetivo en bf16: desde cada ancla el borrador propone 7 tokens, se acepta el prefijo mas largo que coincide con la transcripcion codiciosa del objetivo y el objetivo anade un token; acepte = tokens generados / rondas. Solo se usan clips reservados (FLEURS test, LibriSpeech test, Common Voice ja test y un shard no visto de Emilia-YODAS por idioma). No se han medido en un runtime de servicio (vLLM, MLX) ni con objetivo cuantizado.
 
-| draft | Libri clean | Libri other | FLEURS en | Emilia en | FLEURS zh | Emilia zh | CV ja | FLEURS ja | Emilia ja | en | zh | ja | all |
-|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| este draft (48k vocab) | 6,43 | 5,87 | 5,79 | 6,13 | 5,62 | 5,60 | 4,51 | 4,99 | 4,31 | 6,09 | 5,61 | 4,60 | 5,43 |
-| este draft, variante 32k vocab | 6,17 | 5,68 | 5,32 | 5,90 | 5,05 | 5,44 | 4,49 | 4,98 | 4,28 | 5,81 | 5,27 | 4,58 | 5,24 |
-| fase 1 solo (clips cortos) | 6,45 | 5,99 | 5,82 | 6,09 | 5,55 | 5,66 | 4,57 | 5,05 | 4,33 | 6,12 | 5,62 | 4,64 | 5,46 |
-| referencia: mattymchen/Qwen3-ASR-1.7B-speculator.dflash | 6,22 | 5,94 | 4,72 | 5,08 | 5,04 | 4,35 | 2,11 | 2,09 | 2,09 | 5,46 | 4,60 | 2,09 | 3,51 |
+| Borrador | Libri clean | Libri other | FLEURS en | Emilia en | FLEURS zh | Emilia zh | CV ja | FLEURS ja | Emilia ja | en | zh | ja | all | 60 s en | 60 s zh | 60 s ja | 180 s en | 180 s zh | 180 s ja |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| este borrador (vocab 48k) | 6,43 | 5,87 | 5,79 | 6,13 | 5,62 | 5,60 | 4,51 | 4,99 | 4,31 | 6,09 | 5,61 | 4,60 | 5,43 | 6,25 | 5,75 | 4,75 | 6,15 | 5,64 | 4,70 |
+| variante vocab 32k | 6,17 | 5,68 | 5,32 | 5,90 | 5,05 | 5,44 | 4,49 | 4,98 | 4,28 | 5,81 | 5,27 | 4,58 | 5,24 | 5,98 | 5,41 | 4,74 | 5,89 | 5,36 | 4,69 |
+| solo fase 1 (clips cortos) | 6,45 | 5,99 | 5,82 | 6,09 | 5,55 | 5,66 | 4,57 | 5,05 | 4,33 | 6,12 | 5,62 | 4,64 | 5,46 | 1,48 | 1,57 | 1,49 | 1,25 | 1,29 | 1,24 |
+| referencia: mattymchen/Qwen3-ASR-1.7B-speculator.dflash | 6,22 | 5,94 | 4,72 | 5,08 | 5,04 | 4,35 | 2,11 | 2,09 | 2,09 | 5,46 | 4,60 | 2,09 | 3,51 | 5,46 | 4,75 | 1,87 | 2,94 | 2,96 | 1,54 |
 
-En grabaciones largas (~60 s y ~180 s), este draft mantiene accept lengths de 6,25/5,75/4,75 (60 s en/zh/ja) y 6,15/5,64/4,70 (180 s en/zh/ja), frente a 5,46/4,75/1,87 y 2,94/2,96/1,54 del draft de referencia. Importante: estos numeros provienen de simulacion y no han sido medidos en un runtime de serving (vLLM, MLX) ni con target cuantizado.
+No se han publicado resultados de benchmarks de calidad ASR (WER, MMLU, HumanEval, GSM8K) en la informacion disponible; el modelo es un borrador y no produce transcripciones propias.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: aproximadamente 0,7 GB para el draft en bf16, a los que hay que sumar la memoria del modelo objetivo Qwen3-ASR-1.7B (no disponible el detalle exacto del target).
-- GPU recomendadas: el entrenamiento se realizo en NVIDIA H200; para inferencia, cualquier GPU moderna con soporte bf16 es suficiente dado el tamano reducido del draft (por ejemplo RTX 3060, RTX 4090 o superiores junto al target).
-- Cabe con holgura en GPUs de consumo: el draft ocupa menos de 1 GB, por lo que la limitacion real la impone el modelo objetivo de 1,7B.
-- Opciones de despliegue: libreria `speculators` (formato DFlash); el entrenamiento y la simulacion usaron CUDA, y el README menciona vLLM y MLX como runtimes de serving candidatos, aunque no hay mediciones publicadas en ellos.
-- Latencia y throughput: no disponibles; la ganancia teorica se deriva del accept length medio de 5,43 tokens por ronda (hasta 7 propuestas por ronda), lo que implica aproximadamente una verificacion del target por cada 5-6 tokens generados.
+- VRAM estimada para el borrador: unos 0,7 GB en bf16 (363 M de parametros); el repo ocupa 0,7 GB. La memoria dominante es la del objetivo Qwen3-ASR-1.7B, no la del borrador.
+- GPU recomendadas: el autor entreno con dos H200; para servicio con el objetivo completo se recomienda A100, H100 o L40S. El borrador por si solo cabe en cualquier GPU consumer con mas de 1-2 GB libres.
+- Cabe en GPU consumer: si, el borrador cabe en cualquier RTX con 4 GB o mas; el objetivo de 1,7 B en bf16 requiere unos 3,5 GB, por lo que una RTX 4090 o una RTX 3060 de 12 GB pueden alojar el conjunto.
+- Opciones de despliegue: el autor solo cita vLLM y MLX como runtimes objetivo no medidos; no se documenta soporte de llama.cpp, Ollama ni TGI. La carga requiere la libreria `speculators` y `custom_code`.
+- Latencia y throughput: no medidos en runtime de servicio. La longitud de aceptacion (5,43 en el agregado) es el unico indicador publicado; no se aportan tokens por segundo ni latencias absolutas.
 
 ## Comparativa con modelos similares
 
-| Modelo | Tipo | Parametros | Idiomas | Accept length medio (all) | Licencia | Disponibilidad |
-|---|---|---|---|---|---|---|
-| wilsonzheng0327/Qwen3-ASR-1.7B-dflash (este) | Draft DFlash para Qwen3-ASR-1.7B | 362,8 M | en, zh, ja | 5,43 | no disponible | Hugging Face, safetensors |
-| mattymchen/Qwen3-ASR-1.7B-speculator.dflash | Draft DFlash para Qwen3-ASR-1.7B | no disponible | en (degrada en zh/ja) | 3,51 | no disponible | Hugging Face |
-| variante -32k de este draft | Draft DFlash (vocab 32.000) | no disponible | en, zh, ja | 5,24 | no disponible | Hugging Face (repositorio `-32k`) |
+| Modelo | Parametros | Contexto | Acepte agregado (all) | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| wilsonzheng0327/Qwen3-ASR-1.7B-dflash | 363 M | 32.768 | 5,43 | Apache 2.0 | Hugging Face |
+| wilsonzheng0327/Qwen3-ASR-1.7B-dflash (-32k) | 363 M (vocab 32k) | 32.768 | 5,24 | Apache 2.0 | Hugging Face |
+| mattymchen/Qwen3-ASR-1.7B-speculator.dflash | no disponible | no disponible | 3,51 | no disponible | Hugging Face |
+| Qwen/Qwen3-ASR-1.7B (objetivo) | 1,7 B | no disponible | no aplica (no es borrador) | no disponible | Hugging Face |
 
-Frente al draft de referencia de mattymchen, este modelo duplica practicamente el accept length en japones (4,60 frente a 2,09) y mejora en chino (5,61 frente a 4,60), a costa de un ligero descenso en algunos conjuntos de ingles (por ejemplo FLEURS en: 5,79 frente a 4,72 a favor de este draft; Libri clean: 6,43 frente a 6,22, tambien a favor). En ingles, chino y japones simultaneamente, este draft es superior en el global (5,43 frente a 3,51).
+La comparativa se limita a los borradores DFlash para el mismo objetivo; no se dispone de datos de otros aceleradores (EAGLE, Medusa) para Qwen3-ASR en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- El modelo no es un ASR autónomo: solo acelera la inferencia de Qwen3-ASR-1.7B y no puede usarse sin el modelo objetivo.
-- Los accept lengths publicados provienen de simulacion en CUDA con target en bf16; no hay mediciones en runtimes reales (vLLM, MLX) ni con targets cuantizados, por lo que las ganancias en produccion pueden diferir.
-- La decodificacion especulativa codiciosa garantiza salida identica al target solo en modo greedy; con muestreo (temperature, top-p) el comportamiento no esta documentado.
-- El draft esta entrenado para ingles, chino y japones; su rendimiento en otros idiomas soportados por el target no esta evaluado y probablemente sea inferior.
-- El vocabulario reducido (48.000 o 32.000 tokens) cubre el 99,4 % de los tokens de etiqueta del entrenamiento; los tokens fuera del vocabulario del draft no pueden ser propuestos.
-- La licencia del repositorio no esta especificada en la informacion disponible; dado que el modelo base Qwen3-ASR-1.7B puede tener restricciones propias, conviene verificar ambas licencias antes de uso comercial.
-- El modelo hereda implicitamente los sesgos y el riesgo de alucinacion del target Qwen3-ASR-1.7B, ya que imita sus transcripciones codiciosas; no corrige errores del target.
-- Descargas y likes en el momento de la ficha son 0, lo que indica un proyecto experimental sin adopcion comunitaria contrastada.
+- Solo funciona con decodificacion codiciosa; no se ha validado con muestreo ni con decodificacion especulativa no greedy.
+- El acepte se ha medido en simulacion sobre CUDA con objetivo bf16; no hay mediciones en vLLM, MLX ni con objetivo cuantizado, por lo que el rendimiento real en produccion puede diferir.
+- Cobertura de borrador limitada a ingles, chino y japones; en otros idiomas del objetivo el acepte podria degradarse notablemente.
+- Entrenado con transcripciones generadas por el propio objetivo, por lo que hereda sus sesgos y errores de etiquetado.
+- La fase 1 sola colapsa en grabaciones largas (acepte de 1,24-1,57 a 60 y 180 s); solo el checkpoint de fase 2 es apto para audio largo.
+- No es un modelo de ASR autonomo: no debe usarse sin el objetivo Qwen3-ASR-1.7B.
+- Requiere `custom_code` y la libreria `speculators`; la integracion en pipelines existentes exige adaptar el runtime.
+- Licencia Apache 2.0 en el borrador, pero el uso comercial depende tambien de la licencia del modelo objetivo, no indicada en la informacion disponible.
+- Sin likes ni pipeline declarado y con 466 descargas en la fecha de actualizacion; el soporte de la comunidad es minimo.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/wilsonzheng0327/Qwen3-ASR-1.7B-dflash
+- Hugging Face: https://huggingface.co/wilsonzheng0327/Qwen3-ASR-1.7B-dflash
 - Modelo base: https://huggingface.co/Qwen/Qwen3-ASR-1.7B
-- Draft de referencia: https://huggingface.co/mattymchen/Qwen3-ASR-1.7B-speculator.dflash
-- Variante con vocabulario 32k: https://huggingface.co/wilsonzheng0327/Qwen3-ASR-1.7B-dflash-32k
-- Libreria speculators: https://github.com/vllm-project/speculators (no disponible en la informacion proporcionada; enlace orientativo)
+- Modelo base (formato HF): https://huggingface.co/Qwen/Qwen3-ASR-1.7B-hf
+- Checkpoint de referencia del layout: https://huggingface.co/mattymchen/Qwen3-ASR-1.7B-speculator.dflash
+- Libreria `speculators`: no disponible
+- Paper, blog o demo: no disponible

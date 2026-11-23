@@ -50,5 +50,16 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": []
+  "sources": [
+    {
+      "title": "Meta-Task: Turning Terminal Task Synthesis into a Terminal Task for",
+      "url": "http://go/v1/AV1P2VaQXO4hawOQTAFd7pNCxHAqYdFDWnkk7navgX45i2J6YP-WVlEonrngbfhs8wMf6nkDJFgI-wecOyIHuK0o5X_1pgmyK0S2p3eOW0__z41f1J_dl5Nm9Lh-t2_b-LBzOEsLwER3hXa_FFfrFDGec6KVpOAQGaEYS0F94t9cami-9mC39ta1mQdwj4hEgvsC",
+      "snippet": "TerminalTraj-14B (19.1%)."
+    },
+    {
+      "title": "Meta-Task: Turning Terminal Task Synthesis into a Terminal Task ...",
+      "url": "http://go/v1/AV1P2VaQXO4hawOQTAFd7pNCxHAqYdFDWnkk7navgjCl9O3ANfGuzGAO0qoHHCeyg1VZP26j5i5EN4K6UzPzSqTxKpTuqM3H0igJbAqwfGN6K2YcwwrNhHmKl3ZAK6v4xif44ZMOSF8ENXl9y87QNuwYaqRdMuYXnewkhRvyP9B4W_zx99OSbkM-nW89qPCaaeXLCQ",
+      "snippet": "We use Qwen3-14B and Qwen3-32B Yang et al. (2025) as our base models and perform supervised fine-tuning via LoRA Hu et al. (2022) using the SWIFT framework Zhao et al. (2025). We evaluate on Terminal-Bench 2.0 Merrill et al. (2026) following the official evaluation protocol, employing Harbor Harbor Framework Team (2026) as the orchestration framework together with Terminus-2 as the agent scaffold."
+    }
+  ]
 }

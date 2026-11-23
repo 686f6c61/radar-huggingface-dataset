@@ -2,89 +2,102 @@
 
 ## Resumen
 
-DiStil-Qwen3-1.7B-uncensored es un modelo de lenguaje de 1.7B parámetros efectivos (2.03B totales) desarrollado por Convergent Intelligence LLC (publicado bajo el perfil de Hugging Face reaperdoesntknow). Se trata de una destilación de Qwen3 que elimina los comportamientos de rechazo inducidos por alineación, manteniendo las capacidades de razonamiento y generación del modelo base. El objetivo declarado es responder a la pregunta tal como se formula, sin filtros de seguridad heurísticos que pueden fallar en consultas técnicas, analíticas o de investigación legítimas.
+DiStil-Qwen3-1.7B-uncensored es un modelo de lenguaje de 2.031.739.904 parámetros (1.7B efectivos) desarrollado por reaperdoesntknow bajo la división de investigación de Convergent Intelligence LLC. Se trata de un ajuste fino supervisado (SFT) sobre la arquitectura Qwen3, entrenado con datos de instrucción sin censura para eliminar los comportamientos de rechazo impuestos por el alineamiento, preservando las capacidades de razonamiento y generación del modelo base. El modelo parte de `reaperdoesntknow/TopologicalQwen` como base declarada y forma parte de una cadena de destilación orientada a la transferencia de capacidades sin alineamiento.
 
-El modelo se basa en la arquitectura Qwen3ForCausalLM con 28 capas, atención GQA (16 cabezas de consulta, 8 de clave/valor), tamaño oculto de 2048 y una ventana de contexto de 40.960 tokens. Se entrenó mediante supervisión fina (SFT) con datos de instrucción sin censura, sin modificar la arquitectura base. Forma parte de una cadena de destilación que incluye una variante refinada con el marco DISC (Discrepancy Calculus), una teoría matemática propuesta por el mismo equipo para cuantificar la discrepancia estructural entre distribuciones de salida.
+La relevancia del modelo radica en su enfoque: en lugar de aplicar RLHF con criterios de seguridad, se realiza una intervención puramente SFT sobre la superficie de respuesta para desplazar la distribución del modelo fuera de los patrones de negativa. Mantiene la arquitectura y el tokenizador originales de Qwen3, con 28 capas, atención GQA (16 cabezas Q / 8 KV), tamaño oculto de 2048 y una ventana de contexto de 40.960 tokens.
 
-La relevancia de este modelo radica en su enfoque explícito de "uncensored" (sin censura), que lo posiciona como una alternativa para casos de uso donde la alineación estricta limita la utilidad, como la investigación académica, el análisis de contenido sensible o la generación creativa sin restricciones. Sin embargo, esta característica implica riesgos significativos de uso indebido y ausencia de salvaguardas.
+El autor lo presenta como la base de una cadena de destilación que continúa con `Disctil-Qwen3-1.7B` (refinamiento informado por DISC). La model card incluye un marco matemático propio, "Discrepancy Calculus" (DISC), basado en teoría de la medida, que descompone la distribución del profesor en componentes suaves, de salto y de Cantor. No se han publicado resultados de benchmarks ni datos sobre composición del dataset de entrenamiento.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Qwen3ForCausalLM (Transformer decoder-only con GQA) |
-| Parametros totales | 2.031.739.904 (~2.03B) |
-| Parametros activos | No aplica (modelo denso) |
+| Arquitectura | Qwen3ForCausalLM (transformer decoder-only) |
+| Parametros totales | 2.031.739.904 |
+| Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | 40.960 tokens |
-| Tipos de cuantizacion | No disponible (repo en safetensors; existe variante GGUF en modelo paralelo) |
-| Idiomas soportados | No disponible |
-| Licencia | No disponible |
+| Tipos de cuantizacion | no disponible en la informacion proporcionada (existe una variante GGUF del modelo paralelo `DistilQwen3-1.7B-uncensored-GGUF`) |
+| Idiomas soportados | no disponible |
+| Licencia | no disponible |
 | Formato de pesos | safetensors |
+| Tamano del repositorio | 8,1 GB |
+| Tamanio oculto | 2048 |
+| Capas | 28 |
+| Cabezas de atencion | 16 (Q) / 8 (KV), GQA |
+| Dimension intermedia | 6144 |
+| Vocabulario | 151.936 |
+| Modelo base | reaperdoesntknow/TopologicalQwen |
 
 ## Arquitectura y entrenamiento
 
-El modelo utiliza la arquitectura estándar de Qwen3: un transformer decoder-only con atención de consultas agrupadas (GQA), 28 capas, tamaño oculto de 2048, dimensión intermedia de 6144 y vocabulario de 151.936 tokens. La ventana de contexto es de 40.960 tokens, notablemente mayor que la de muchos modelos de tamaño similar. No se especifican detalles sobre el dataset de entrenamiento más allá de que se usaron "datos de instrucción sin censura" mediante SFT con la librería TRL. El proceso de destilación parte del modelo base reaperdoesntknow/TopologicalQwen, que a su vez deriva de Qwen3-30B-A3B (según la sección del portfolio del autor).
+El modelo emplea la arquitectura Qwen3ForCausalLM, un transformer decoder-only con atención de consultas agrupadas (GQA) de 16 cabezas de consulta y 8 de clave-valor, 28 capas, tamaño oculto de 2048 y dimensión intermedia de 6144. El vocabulario es de 151.936 tokens. No se introducen modificaciones arquitectónicas respecto al modelo base: la intervención es exclusivamente sobre la superficie de respuesta mediante SFT.
 
-La innovación técnica destacada es el uso del marco DISC (Discrepancy Calculus), una teoría que descompone la distribución de salida del profesor en componentes absolutamente continuas, de salto y de Cantor, y define un operador de discrepancia que cuantifica el desajuste estructural local que la divergencia KL promedio pierde. Este enfoque se aplica en la cadena de destilación, aunque este modelo concreto se describe como "una intervención SFT pura sobre la superficie de respuesta", sin modificaciones arquitectónicas.
+El entrenamiento se realizó con TRL (Transformer Reinforcement Learning) sobre datos de instrucción sin censura, con el objetivo de desplazar la distribución de respuestas del modelo fuera de los patrones de rechazo. La model card no especifica el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron etapas de RLHF o DPO. El autor enmarca el proceso en el marco teórico "Discrepancy Calculus" (DISC), que descompone la distribución del profesor mediante la identidad fundamental de malla en componentes AC, de salto y de Cantor, y define un operador de discrepancia que cuantifica el desajuste estructural local que la divergencia KL promedia. No se aportan métricas de entrenamiento ni curvas de pérdida en la información disponible.
 
 ## Capacidades
 
-- Generación de texto libre y conversacional, con capacidad de seguir instrucciones complejas.
-- Razonamiento multi-turno gracias a la ventana de contexto de 40.960 tokens.
-- Soporte de chat mediante plantilla de conversación (chat template) estándar de Qwen3.
-- Generación de código y análisis técnico, aunque no hay benchmarks publicados que lo confirmen.
-- Capacidad de responder a preguntas que requieren contenido técnico o académico sin rechazos por políticas de seguridad.
-- No se documenta soporte explícito para tool calling, agentes o modo de pensamiento (thinking mode).
+- Generación de texto autoregresiva con plantilla de chat (`apply_chat_template`) compatible con el formato de conversación de Qwen3.
+- Razonamiento y generación de contenido técnico y analítico, según declara el autor, preservando las capacidades del modelo base.
+- Respuestas sin patrones de rechazo ante consultas técnicas, analíticas y de investigación que los filtros de seguridad convencionales suelen bloquear erróneamente.
+- Soporte de conversaciones multi-turno gracias a una ventana de contexto de 40.960 tokens.
+- Capacidades multilingües: no disponibles en la información proporcionada (el vocabulario de 151.936 tokens de Qwen3 sugiere cobertura multilingüe amplia, pero no se confirma).
+- Tool calling / function calling: no disponible en la información proporcionada.
+- Modo thinking: no disponible en la información proporcionada.
+- Visión y audio: no disponibles.
 
 ## Casos de uso
 
-- Investigación académica en áreas sensibles: el modelo puede analizar literatura sobre temas como seguridad informática, farmacología o psicología sin auto-censurarse, permitiendo a investigadores obtener respuestas directas.
-- Generación de contenido creativo sin restricciones: escritores y guionistas pueden explorar temas tabú o controvertidos en narrativa sin que el modelo imponga bloqueos morales.
-- Análisis de texto con jerga técnica especializada: al no rechazar consultas sobre terminología de nicho, puede procesar documentación de dominios como la ciberseguridad ofensiva o la investigación biomédica.
-- Desarrollo de asistentes de código para tareas de ingeniería inversa: la ausencia de filtros permite preguntar sobre técnicas de explotación o análisis de malware, aunque con implicaciones éticas.
-- Chatbots de rol o simulación de personajes: la falta de alineación permite respuestas más "humanas" en escenarios donde la corrección política sería un obstáculo.
-- Evaluación de modelos de seguridad: los equipos de red team pueden usar este modelo para probar la robustez de sistemas de moderación de contenido, ya que genera respuestas sin filtros.
+- Investigación sobre alineamiento y seguridad: el modelo permite estudiar empíricamente cómo el SFT sin censura afecta a la distribución de respuestas y a las capacidades de razonamiento en modelos pequeños, sirviendo como referencia en experimentos comparativos frente a la versión alineada de Qwen3-1.7B.
+- Análisis técnico y red teaming: útil para evaluar la eficacia de los filtros de seguridad y para generar respuestas que los modelos alineados rechazan, en entornos controlados de auditoría de sistemas.
+- Generación de documentación técnica especializada: con 40.960 tokens de contexto puede procesar manuales, especificaciones o bases de código extensas y producir resúmenes o explicaciones detalladas sin las interrupciones de negativa que afectan a consultas legítimas sobre temas sensibles.
+- Asistencia en investigación académica: redacción y revisión de texto científico sobre temas que rozan áreas sensibles (seguridad, biología, criptografía) donde los filtros de alineamiento pueden degradar la utilidad de la respuesta.
+- Despliegue en edge y entornos con recursos limitados: con 2.03B parámetros y pesos en safetensors, es viable en GPUs de consumo y en CPU con cuantización, adecuado para prototipos locales de asistentes conversacionales.
+- Base para pipelines de destilación: el modelo está diseñado explícitamente como eslabón inicial de una cadena de destilación (hacia `Disctil-Qwen3-1.7B`), por lo que sirve como punto de partida para experimentos de transferencia de capacidades.
+- Generación de código en entornos de desarrollo: aunque no se documenta soporte específico de tool calling, el modelo puede integrarse en asistentes de programación locales para tareas de completado y explicación de código.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. No hay datos de MMLU, HumanEval, GSM8K ni otras métricas estándar. El autor menciona que la destilación preserva las capacidades del modelo base, pero no aporta evidencia cuantitativa.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: aproximadamente 4 GB en FP16 (2.03B parámetros × 2 bytes), ~2 GB en cuantización INT8 y ~1.3 GB en cuantización 4-bit (según el tamaño del GGUF del modelo paralelo en Ollama).
-- GPU recomendadas: cualquier GPU consumer con 6 GB o más de VRAM, como RTX 3060, RTX 4060, RTX 4090, o GPUs de datacenter como A10, A100 (aunque sobran recursos).
-- Cabe en GPUs consumer de gama media y baja; también puede ejecutarse en CPU con llama.cpp, aunque con mayor latencia.
-- Opciones de despliegue: transformers (PyTorch), vLLM, llama.cpp, Ollama (existe un modelo similar en Ollama), FriendliAI (plataforma que lo lista).
-- Latencia y throughput: no se proporcionan datos. Para un modelo de 2B, se espera una generación de 20-50 tokens/segundo en GPU consumer con cuantización 4-bit.
+- VRAM estimada para inferencia en BF16/FP16: aproximadamente 4,1 GB solo para pesos (2.03B parámetros × 2 bytes), más overhead de activaciones y caché KV; en la práctica, 6-8 GB para contexto moderado.
+- VRAM estimada en cuantización de 8 bits: aproximadamente 2,1 GB de pesos.
+- VRAM estimada en cuantización de 4 bits: aproximadamente 1,1 GB de pesos.
+- GPU recomendadas: cualquier GPU con al menos 8 GB de VRAM para BF16 con contexto reducido (RTX 3060 Ti, RTX 4060, RTX 4070); A100 o H100 para despliegues de mayor throughput o contexto completo de 40.960 tokens.
+- Cabe en GPU de consumo: sí, en tarjetas con 8 GB o más en BF16, y en tarjetas con 4-6 GB con cuantización de 4-8 bits.
+- Opciones de despliegue: Transformers (código de ejemplo en la model card), vLLM, llama.cpp y Ollama si se dispone de pesos GGUF (existe una variante GGUF del modelo paralelo `DistilQwen3-1.7B-uncensored-GGUF`), TGI.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Disponibilidad |
-|---|---|---|---|---|
-| DiStil-Qwen3-1.7B-uncensored | 2.03B | 40.960 | No disponible | Hugging Face |
-| Qwen3-1.7B (original) | 1.7B | 32.768 (estimado) | Apache 2.0 | Hugging Face |
-| DistilQwen3-1.7B-uncensored (variante paralela) | ~2.03B | 40.960 (presumible) | No disponible | Hugging Face |
-| TopologicalQwen (modelo base) | ~2.03B | 40.960 (presumible) | No disponible | Hugging Face |
+| Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
+|---|---|---|---|---|---|
+| DiStil-Qwen3-1.7B-uncensored | 2,03B | 40.960 | no disponible | Hugging Face, safetensors | SFT sin censura sobre Qwen3 |
+| Qwen3-1.7B (original) | 1,7B | 40.960 (según arquitectura Qwen3) | Apache 2.0 (según Qwen3) | Hugging Face | Modelo base alineado de referencia |
+| Disctil-Qwen3-1.7B | 1,7B | no disponible | no disponible | Hugging Face | Refinamiento DISC del modelo analizado |
+| DistilQwen3-1.7B-uncensored | 1,7B | no disponible | no disponible | Hugging Face | Variante paralela de destilación sin censura |
 
-No se dispone de datos de rendimiento comparativo. Las diferencias principales son el enfoque de destilación (DISC vs. estándar) y la eliminación de alineación. La licencia no está especificada, lo que dificulta su uso comercial legal.
+No se dispone de datos de rendimiento comparativo (benchmarks) para ninguno de los modelos de la cadena en la información proporcionada. La licencia de Qwen3-1.7B se indica como Apache 2.0 según el conocimiento general del modelo original, pero no se confirma en la información facilitada.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de alineación de seguridad: el modelo puede generar contenido dañino, ilegal o éticamente cuestionable. No debe usarse en aplicaciones orientadas al público general sin un filtro externo.
-- Riesgo elevado de alucinaciones: al no tener restricciones de seguridad, puede afirmar información falsa con mayor confianza, especialmente en dominios técnicos.
-- Sin licencia especificada: el uso comercial, la redistribución o la modificación pueden infringir derechos de autor o términos de uso no declarados.
-- Sin datos de benchmarks: no hay evidencia objetiva de que preserve las capacidades de Qwen3, más allá de la afirmación del autor.
-- Limitaciones de idioma: no se especifican idiomas soportados; probablemente hereda el multilingüismo de Qwen3, pero sin confirmación.
-- Dependencia de un modelo base no estándar (TopologicalQwen): la calidad y reproducibilidad dependen de un modelo intermedio que puede tener sesgos o errores no documentados.
-- El marco DISC y la metodología asociada carecen de validación externa por pares; la referencia al paper "Structure Over Scale" es un DOI de Hugging Face, no una publicación revisada.
+- Ausencia de alineamiento: el modelo está entrenado explícitamente para eliminar los comportamientos de rechazo, lo que implica un riesgo elevado de generar contenido dañino, ilegal o éticamente problemático sin filtros. No es apto para despliegues públicos sin moderación externa.
+- Riesgo de alucinación: no se han publicado evaluaciones de fidelidad factual; al ser un modelo de 1,7B parámetros, la tasa de alucinación es previsiblemente superior a la de modelos de mayor tamaño.
+- Sesgos: no se documenta ningún análisis de sesgos ni de composición del dataset de entrenamiento, por lo que se desconocen los sesgos potenciales introducidos por los datos de SFT.
+- Licencia no especificada: la model card no indica licencia, lo que impide confirmar los términos de uso comercial. El modelo base Qwen3 se distribuye habitualmente bajo Apache 2.0, pero la licencia de este derivado no está declarada.
+- Idiomas: no se confirma qué idiomas soporta el ajuste fino; el vocabulario original de Qwen3 es multilingüe, pero el SFT sin censura podría haber degradado el rendimiento en idiomas distintos del inglés.
+- Contexto: aunque la arquitectura soporta 40.960 tokens, no se ha verificado el rendimiento en el extremo superior de la ventana tras el SFT.
+- Trazabilidad limitada: la model card incluye un marco teórico (DISC) sin resultados empíricos publicados ni métricas de entrenamiento, lo que dificulta la reproducibilidad.
+- Uso en producción: requiere moderación de salida obligatoria, registro de auditoría y revisión legal previa, especialmente en jurisdicciones con requisitos de seguridad de contenido.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/reaperdoesntknow/DiStil-Qwen3-1.7B-uncensored
-- Repositorio de archivos: https://huggingface.co/reaperdoesntknow/DiStil-Qwen3-1.7B-uncensored/tree/main
-- Ficha en FriendliAI: https://friendli.ai/models/reaperdoesntknow/DiStil-Qwen3-1.7B-uncensored
-- Modelo en Ollama (variante paralela): https://ollama.com/reaperdoesntrun/DistilQwen3-1.7B-uncensored
-- Modelo refinado con DISC: https://huggingface.co/reaperdoesntknow/Disctil-Qwen3-1.7B
-- Modelo base TopologicalQwen: https://huggingface.co/reaperdoesntknow/TopologicalQwen
+- Modelo base declarado (TopologicalQwen): https://huggingface.co/reaperdoesntknow/TopologicalQwen
+- Refinamiento DISC (Disctil-Qwen3-1.7B): https://huggingface.co/reaperdoesntknow/Disctil-Qwen3-1.7B
+- Variante paralela (DistilQwen3-1.7B-uncensored): https://huggingface.co/reaperdoesntknow/DistilQwen3-1.7B-uncensored
+- Variante GGUF (DistilQwen3-1.7B-uncensored-GGUF): https://huggingface.co/reaperdoesntknow/DistilQwen3-1.7B-uncensored-GGUF
 - Colección DistilQwen: https://huggingface.co/collections/reaperdoesntknow/distilqwen-69bf40ec669117e3f069ef1c
-- Paper de metodología (DOI): https://doi.org/10.57967/hf/8165
+- Metodología "Structure Over Scale" (DOI): https://doi.org/10.57967/hf/8165
+- Perfil del autor: https://huggingface.co/reaperdoesntknow

@@ -1,0 +1,43 @@
+{
+  "schema": 2,
+  "id": "SZLHOLDINGS/salad-ring-ouro-l97",
+  "slug": "szlholdings-salad-ring-ouro-l97",
+  "author": "SZLHOLDINGS",
+  "url": "https://huggingface.co/SZLHOLDINGS/salad-ring-ouro-l97",
+  "created_at": "2026-11-19T02:58:31.000Z",
+  "updated_at": "2026-11-23T01:06:58.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "context_length": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Cross-Chain Arbitrage in 2026: Measuring Latency, Bridge Fees & MEV",
+      "url": "https://crypto-trading-pro.contentwave.net/article/cross-chain-arbitrage-in-2026-measuring-latency-bridge-fees-mev",
+      "snippet": "2 days ago · A practical analysis of cross-chain arbitrage in 2026: quantifying bridge fees, settlement latency, MEV and liquidity costs …"
+    }
+  ]
+}

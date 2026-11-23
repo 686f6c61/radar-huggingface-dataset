@@ -2,11 +2,11 @@
 
 ## Resumen
 
-HeliosLM HDL E4B es un modelo de lenguaje especializado en generación de código HDL (Verilog y SystemVerilog), desarrollado por Bitstar Inc. y publicado por el usuario chienhsinlin. Se trata de un ajuste fino del modelo base Google Gemma 4 E4B-it, orientado a tareas de diseño de hardware digital: descripción de módulos RTL, testbenches y bloques de lógica sintetizable. La versión documentada aquí es la cuantización GGUF, pensada para su ejecución en llama.cpp, LM Studio y Ollama.
+HeliosLM HDL E4B (GGUF) es una cuantización en formato GGUF del modelo `chienhsinlin/helioslm-hdl-e4b`, publicada por el mismo autor y atribuida a Bitstar Inc. Se trata de un ajuste fino orientado a la generación de código de descripción de hardware (HDL), concretamente Verilog y SystemVerilog, construido sobre Google Gemma 4 E4B-it como modelo base y distribuido con licencia Apache-2.0. Su propósito es facilitar el uso local del modelo en herramientas compatibles con llama.cpp, como LM Studio u Ollama.
 
-El modelo cuenta con 7.463.013.674 parámetros totales según los pesos en safetensors del modelo base, y se distribuye bajo licencia Apache-2.0. La nomenclatura "E4B" remite al modelo Gemma 4 E4B-it del que deriva, aunque no se dispone de información publicada sobre la arquitectura interna concreta en la información proporcionada. La longitud de contexto, los idiomas soportados y los detalles de entrenamiento no están disponibles en la documentación consultada.
+El modelo cuenta con 7.463.013.674 parámetros totales según los pesos en safetensors del modelo original, lo que lo sitúa en la franja de los modelos de aproximadamente 7-8 mil millones de parámetros. La nomenclatura "E4B" remite al linaje Gemma 4, aunque la model card no detalla la arquitectura interna ni la longitud de contexto del modelo base. El repositorio GGUF ocupa 53,1 GB y ofrece dos variantes de cuantización: Q4_K_M, pensada para GPU de 8 GB, y Q8_0, para GPU de 12 GB o más.
 
-Su relevancia actual radica en la escasez de modelos abiertos especializados en HDL: la mayor parte de los LLM generalistas generan Verilog sintácticamente plausible pero con errores semánticos frecuentes. Un ajuste fino sobre un modelo compacto, cuantizado a 4 y 8 bits y ejecutable en GPU de consumo, ofrece una alternativa práctica para integrar asistencia de diseño RTL en flujos locales sin depender de servicios en la nube.
+Su relevancia actual reside en la especialización vertical: frente a modelos generalistas, HeliosLM HDL E4B se orienta a un nicho técnico concreto (diseño digital y verificación RTL) donde los asistentes genéricos suelen producir código sintácticamente plausible pero funcionalmente incorrecto. La disponibilidad en GGUF permite desplegarlo en estaciones de trabajo con GPU de consumo, algo relevante para ingenieros de hardware que trabajan con código propietario y prefieren inferencia local.
 
 ## Especificaciones tecnicas
 
@@ -14,73 +14,75 @@ Su relevancia actual radica en la escasez de modelos abiertos especializados en 
 |---|---|
 | Arquitectura | no disponible (modelo base: Google Gemma 4 E4B-it) |
 | Parametros totales | 7.463.013.674 |
-| Parametros activos | no disponible |
+| Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible (el ejemplo de la model card usa `-c 16384`) |
-| Tipos de cuantizacion | Q4_K_M, Q8_0 |
+| Tipos de cuantizacion | Q4_K_M y Q8_0 (GGUF) |
 | Idiomas soportados | no disponible |
 | Licencia | Apache-2.0 |
-| Formato de pesos | GGUF (repo de 13,3 GB); safetensors en el modelo base |
+| Formato de pesos | GGUF (repositorio derivado); modelo base en safetensors |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información publicada sobre la arquitectura interna del modelo en la documentación consultada. El modelo base declarado es Google Gemma 4 E4B-it, del que HeliosLM HDL E4B hereda la estructura y sobre el que se aplica un ajuste fino orientado a HDL. La model card no detalla el número de tokens de entrenamiento, la composición del dataset, ni si se emplearon técnicas de RLHF, DPO o ajuste supervisado.
+La model card no proporciona detalles sobre la arquitectura interna del modelo, más allá de indicar que deriva de Google Gemma 4 E4B-it. No se especifican el tipo de transformer, el mecanismo de atención, la composición del dataset de ajuste fino, el número de tokens de entrenamiento ni si se emplearon técnicas de alineación como RLHF o DPO. Tampoco se documentan innovaciones técnicas propias del ajuste.
 
-La innovación técnica declarada es la especialización en Verilog y SystemVerilog como dominio objetivo, junto con la publicación de cuantizaciones GGUF listas para llama.cpp. El autor advierte explícitamente que el RTL generado debe verificarse siempre mediante el propio flujo de simulación y síntesis del usuario, lo que sugiere que el ajuste no garantiza corrección funcional del código producido.
+Lo único verificable es el proceso de cuantización a GGUF para su uso con llama.cpp y aplicaciones compatibles. El autor recomienda invocar el servidor con `llama-server -m helioslm-hdl-e4b-Q4_K_M.gguf -ngl 99 -c 16384 --jinja`, lo que sugiere soporte de plantillas de chat mediante Jinja y una ventana de contexto de al menos 16.384 tokens en la configuración de ejemplo, aunque no se confirma como límite máximo del modelo.
 
 ## Capacidades
 
-- Generación de código Verilog y SystemVerilog: módulos, entidades, lógica combinacional y secuencial.
-- Generación de testbenches y bancos de pruebas para verificación de diseños.
-- Conversación multi-turno en formato chat (pipeline `text-generation`, tag `conversational`).
-- Ejecución local mediante llama.cpp, LM Studio y Ollama gracias al formato GGUF.
-- Compatibilidad con endpoints (tag `endpoints_compatible`).
-- Soporte de plantillas de chat mediante el flag `--jinja` en llama-server.
-- Capacidades de tool calling, agentes, visión o audio: no disponible en la información proporcionada.
-- Capacidades multilingües: no disponible; la model card está redactada en chino tradicional e inglés, pero no se documentan los idiomas de entrenamiento.
+- Generación de código Verilog y SystemVerilog (RTL) orientado a diseño digital.
+- Generación de texto conversacional, según la etiqueta `conversational` del repositorio.
+- Uso mediante llama.cpp y aplicaciones compatibles (LM Studio, Ollama, llama-server).
+- Soporte de plantillas de chat Jinja (`--jinja`), lo que habilita el formato de conversación multi-turno.
+- Compatibilidad con endpoints (`endpoints_compatible`), lo que permite su exposición mediante API compatible con OpenAI en servidores de inferencia.
+- Capacidades multilingües: no disponibles (la model card está en chino tradicional e inglés, pero no se declaran idiomas soportados).
+- Tool calling, agentes, visión, audio o modo de razonamiento extendido: no disponibles en la información proporcionada.
 
 ## Casos de uso
 
-- Generación de módulos RTL de partida: el modelo produce esqueletos de módulos Verilog o SystemVerilog a partir de una descripción funcional, que el ingeniero revisa y completa antes de pasar a síntesis.
-- Creación de testbenches: dado un módulo existente, el modelo puede redactar un banco de pruebas con estímulos y comprobaciones, acelerando la fase de verificación inicial.
-- Asistencia en entornos locales sin conexión: al ejecutarse con llama.cpp sobre una GPU de 8 GB en cuantización Q4_K_M, encaja en flujos de trabajo con requisitos de confidencialidad donde no se permite enviar código a la nube.
-- Traducción entre estilos HDL: conversión de descripciones de lógica entre convenciones Verilog y SystemVerilog, o adaptación de bloques a un estilo de codificación corporativo.
-- Docencia y aprendizaje de diseño digital: el modelo puede explicar y comentar fragmentos de HDL, sirviendo de apoyo en asignaturas de electrónica digital.
-- Integración en pipelines de CI como generador de borradores: los bloques generados se someten automáticamente a linting y simulación, y solo los que pasan las comprobaciones se presentan al ingeniero.
-- Prototipado rápido de periféricos: generación de controladores sencillos (UART, SPI, temporizadores) que se validan contra un testbench generado en la misma sesión.
+- Generación de módulos RTL en Verilog: el modelo puede producir esqueletos de módulos, máquinas de estados y lógica combinacional a partir de una descripción en lenguaje natural, lo que acelera el prototipado inicial antes de la revisión manual.
+- Traducción de especificaciones a SystemVerilog: útil para convertir descripciones funcionales en código de verificación (testbenches, assertions), reduciendo el trabajo repetitivo en equipos de verificación.
+- Asistencia en entornos con requisitos de confidencialidad: al ejecutarse localmente con llama.cpp sobre una GPU de 8-12 GB, el código propietario no sale de la infraestructura del equipo, algo crítico en diseño de semiconductores.
+- Integración en editores y asistentes de código locales: mediante LM Studio u Ollama, el modelo puede conectarse a extensiones de IDE para autocompletado y generación de bloques RTL sin depender de servicios en la nube.
+- Exploración y refactorización de código HDL existente: con una ventana de contexto de al menos 16.384 tokens en la configuración recomendada, puede procesar módulos de tamaño medio para proponer mejoras de estilo o reescrituras.
+- Docencia y formación en diseño digital: sirve como herramienta de apoyo para generar ejemplos de Verilog y explicar construcciones del lenguaje, siempre con validación por simulación.
+- Prototipado de scripts de simulación y flujos de síntesis: puede generar scripts de herramientas EDA y Makefiles asociados a partir de una descripción del flujo deseado.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: aproximadamente 8 GB para la cuantización Q4_K_M y 12 GB o más para Q8_0, según las indicaciones del autor en la model card.
-- GPU recomendadas: el autor indica 8 GB para Q4_K_M y 12 GB o más para Q8_0; no se especifican modelos concretos de GPU.
-- GPU de consumo: cabe en tarjetas de 8 GB (por ejemplo, gama RTX 3060/4060) con Q4_K_M y en tarjetas de 12 GB o más con Q8_0.
-- Opciones de despliegue: llama.cpp (`llama-server`), LM Studio y Ollama.
-- Ejemplo de lanzamiento documentado: `llama-server -m helioslm-hdl-e4b-Q4_K_M.gguf -ngl 99 -c 16384 --jinja`.
-- Latencia y throughput: no disponibles.
+- VRAM estimada: aproximadamente 8 GB para la variante Q4_K_M y 12 GB o más para Q8_0, según las indicaciones del autor.
+- GPU recomendadas: no se especifican modelos concretos; por tamaño, una RTX 4090 (24 GB) o RTX 4080 (16 GB) cubren ambas variantes con holgura; GPU de 8 GB como RTX 3070/4060 Ti permiten Q4_K_M.
+- Cabe en GPU de consumo: sí, en tarjetas de 8 GB con Q4_K_M y de 12 GB con Q8_0.
+- Opciones de despliegue: llama.cpp (`llama-server`), LM Studio, Ollama y cualquier runtime compatible con GGUF y plantillas Jinja.
+- Latencia y throughput: no disponibles; no se publican mediciones.
+- Nota: el repositorio completo ocupa 53,1 GB, por lo que conviene descargar solo el archivo de cuantización necesario.
 
 ## Comparativa con modelos similares
 
-No se dispone de información sobre modelos comparables especializados en HDL en la documentación proporcionada, ni de datos de rendimiento que permitan una comparación rigurosa. Se indica "no disponible".
+| Modelo | Parametros | Contexto | Especializacion | Licencia | Formato |
+|---|---|---|---|---|---|
+| HeliosLM HDL E4B (GGUF) | 7.463.013.674 | no disponible | Verilog / SystemVerilog | Apache-2.0 | GGUF |
+| Google Gemma 4 E4B-it (base) | no disponible | no disponible | Generalista | no disponible en la informacion | safetensors |
+| Alternativas especializadas en HDL | no disponible | no disponible | no disponible | no disponible | no disponible |
+
+No se dispone de datos de benchmarks ni de modelos comparables documentados en la información proporcionada, por lo que no es posible establecer una comparación cuantitativa de rendimiento.
 
 ## Limitaciones y advertencias
 
-- El RTL generado debe validarse siempre con el flujo propio de simulación y síntesis; el autor lo advierte de forma explícita. No hay garantía de corrección funcional ni de sintetizabilidad.
-- No se documentan los sesgos conocidos del modelo ni la composición del dataset de ajuste, por lo que no es posible evaluar sesgos de dominio.
-- Riesgo de alucinación: en código HDL, esto se traduce en señales no declaradas, anchos de bus incorrectos o construcciones no sintetizables; requiere revisión humana obligatoria.
-- Longitud de contexto no documentada; el ejemplo de la model card emplea 16384 tokens, pero no se confirma como máximo soportado.
-- Idiomas soportados no documentados; el rendimiento en castellano o en otros idiomas distintos del inglés y el chino es desconocido.
-- Licencia Apache-2.0: permite uso comercial, pero conviene verificar las condiciones heredadas del modelo base Gemma 4 E4B-it, ya que la model card no detalla posibles términos adicionales de Google.
-- Modelo con cero descargas y cero likes en el momento de la consulta: no hay evidencia de uso en producción ni validación independiente por parte de la comunidad.
-- El repositorio GGUF ocupa 13,3 GB, lo que incluye ambas cuantizaciones; conviene descargar solo el archivo necesario.
+- El propio autor advierte de que el RTL generado debe verificarse siempre con el flujo de simulación y síntesis propio; el código puede ser sintácticamente correcto pero funcionalmente incorrecto.
+- Riesgo de alucinación en construcciones HDL menos frecuentes, especialmente en SystemVerilog avanzado (clases, interfaces, assertions complejas).
+- No se documentan sesgos conocidos, pero al no declararse idiomas soportados ni composición del dataset, no es posible evaluar sesgos lingüísticos o de dominio.
+- La longitud máxima de contexto no está confirmada; el valor de 16.384 tokens corresponde solo al ejemplo de invocación.
+- La licencia Apache-2.0 permite uso comercial, pero conviene revisar las condiciones del modelo base Gemma 4, cuyos términos no se detallan en esta model card.
+- El repositorio tiene 0 likes y 487 descargas en el momento de la consulta, lo que indica una validación comunitaria muy limitada.
+- No hay información sobre tool calling ni soporte de agentes; no debe asumirse su disponibilidad en producción.
 
 ## Enlaces
 
 - Repositorio GGUF: https://huggingface.co/chienhsinlin/helioslm-hdl-e4b-GGUF
-- Modelo base (ajuste fino): https://huggingface.co/chienhsinlin/helioslm-hdl-e4b
-- Modelo original de referencia: Google Gemma 4 E4B-it (no se proporciona URL directa en la información disponible)
-- llama.cpp: no se proporciona URL en la información disponible
-- LM Studio: no se proporciona URL en la información disponible
-- Ollama: no se proporciona URL en la información disponible
+- Modelo base: https://huggingface.co/chienhsinlin/helioslm-hdl-e4b
+- Google Gemma 4 E4B-it: no disponible en la informacion proporcionada
+- Paper, blog o repositorio adicional: no disponible en la informacion proporcionada

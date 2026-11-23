@@ -2,104 +2,117 @@
 
 ## Resumen
 
-Qwen3.8-27B-AP-GGUF es un paquete de cuantizaciones GGUF del modelo Qwen3.8-27B, publicado por agentionai bajo la denominación "Agention Precision". No es un modelo entrenado desde cero, sino una recompresión del modelo base de Qwen (27.320.697.856 parámetros, licencia Apache 2.0) en distintos niveles de precisión, con el objetivo declarado de minimizar la divergencia KL respecto a los pesos BF16 originales en comparación con otras cuantizaciones públicas del mismo tamaño.
+Qwen3.8-27B-AP-GGUF es un paquete de cuantizaciones GGUF del modelo Qwen3.8-27B, publicado por agentionai bajo la etiqueta "Agention Precision". El modelo base lo desarrolla Qwen (Alibaba) y este repositorio ofrece versiones cuantizadas en formato GGUF compatibles con llama.cpp, LM Studio y Ollama sin necesidad de forks ni flags adicionales. El pipeline declarado es image-text-to-text, lo que indica que el paquete incluye el proyector de visión (`mmproj-BF16.gguf`) además de los pesos de lenguaje.
 
-La propuesta técnica del autor es que, a igual tamaño de fichero y velocidad de inferencia, sus cuantizaciones quedan más cerca de la distribución de probabilidad del modelo original que las de otros publicadores (Unsloth, ISTA-DASLab, AtomicChat). Para ello aplican una asignación no uniforme de tipos por tensor y corrección de error de bajo coste mediante un codificador propio, manteniendo tipos estándar de llama.cpp sin necesidad de fork ni flags adicionales.
+El modelo base tiene 27.320.697.856 parámetros (27,3 mil millones) y una licencia Apache 2.0. La propuesta de valor del repositorio no es el modelo en sí, sino la calidad de las cuantizaciones: según el autor, cada archivo utiliza asignaciones no uniformes y corrección de error de baja pérdida generadas con un encoder propio, de modo que a igual tamaño de archivo la distribución de siguiente token queda más cerca del BF16 original que las cuantizaciones públicas de referencia.
 
-El paquete incluye el proyector de visión (`mmproj-BF16.gguf`, 0,87 GiB) y la cabeza de borrador MTP, lo que lo hace utilizable tanto para texto como para imagen-a-texto. Es relevante para quien necesite desplegar un modelo de 27B con capacidades multimodales en hardware de consumo o en una sola GPU de 24 GB, donde la elección de cuantización determina directamente la calidad final.
+El paquete cubre ocho tamaños entre 8,95 y 16,35 GiB, pensados para tarjetas de 12, 16 y 24 GB, e incluye la cabeza de borrador MTP (multi-token prediction) para decodificación especulativa y el proyector de visión. Es relevante ahora porque permite desplegar un modelo multimodal de 27B en hardware de consumo manteniendo una fidelidad al modelo original medible y verificable.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer (modelo base Qwen3.8-27B; detalles internos no disponibles) |
-| Parametros totales | 27.320.697.856 |
-| Parametros activos | no disponible (no se indica que sea MoE) |
-| Longitud de contexto | no disponible como cifra oficial; el autor documenta uso a 32k y a 8–16k segun cuantizacion |
-| Tipos de cuantizacion | AP-Q4_K_XL, AP-Q4_K_M, AP-IQ4_XS, AP-Q3_K_XL, AP-IQ3_S, AP-IQ3_XS, AP-IQ3_XXS, AP-IQ2_S; proyector de vision en BF16 |
+| Arquitectura | Transformer con atención híbrida (solo una cuarta parte de las capas usan atención completa); cabeza MTP para decodificación especulativa |
+| Parámetros totales | 27.320.697.856 (27,3B) |
+| Parámetros activos | no disponible (no se indica que sea MoE) |
+| Longitud de contexto | 32.768 tokens (configuración de referencia del autor); contexto nativo del modelo base no disponible |
+| Tipos de cuantización | AP-Q4_K_XL, AP-Q4_K_M, AP-IQ4_XS, AP-Q3_K_XL, AP-IQ3_S, AP-IQ3_XS, AP-IQ3_XXS, AP-IQ2_S (tipos estándar GGUF con asignación no uniforme) |
 | Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (llama.cpp); repo de 195,7 GB con todos los niveles |
+| Formato de pesos | GGUF (safetensors para el modelo base) |
+
+Tamaños de archivo y requisitos de VRAM a 32k de contexto:
+
+| Cuantización | Tamaño | VRAM estimada (32k) | Encaje |
+|---|---:|---:|---|
+| AP-Q4_K_XL | 16,35 GiB | ~18 GiB | 24 GB |
+| AP-Q4_K_M | 15,33 GiB | ~17 GiB | 24 GB |
+| AP-IQ4_XS | 13,27 GiB | ~15 GiB | 16 GB |
+| AP-Q3_K_XL | 12,24 GiB | ~14 GiB | 16 GB con contexto largo |
+| AP-IQ3_S | 11,21 GiB | ~13 GiB | 16 GB a 8–16k |
+| AP-IQ3_XS | 10,70 GiB | ~12,5 GiB | 12 GB a 8–16k |
+| AP-IQ3_XXS | 10,00 GiB | ~12 GiB | 12 GB a 8–16k |
+| AP-IQ2_S | 8,95 GiB | ~10,9 GiB | 12 GB a 8–16k |
+| mmproj-BF16 (visión) | 0,87 GiB | +0,9 GiB | cualquier nivel |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es Qwen3.8-27B, un transformer de 27.320.697.856 parámetros. La model card del paquete GGUF no detalla la arquitectura interna del modelo original (número de capas, cabezas, tipo de atención). Sí aporta un dato estructural relevante: solo una cuarta parte de las capas emplea atención completa, lo que reduce el coste de memoria del contexto (aproximadamente 1 GiB a 32k con KV en q8_0). El modelo incluye una cabeza de borrador MTP (multi-token prediction), empaquetada en el GGUF, y un proyector de visión separado en BF16.
+El modelo base Qwen3.8-27B es un transformer de 27,3B parámetros con atención híbrida: según el autor, solo una cuarta parte de las capas emplean atención completa, lo que reduce el coste de la caché KV (aproximadamente 1 GiB a 32k con caché q8_0). Incluye una cabeza MTP (multi-token prediction) que actúa como borrador para decodificación especulativa, y un encoder de visión separado que se distribuye en BF16 como `mmproj-BF16.gguf`.
 
-El trabajo de agentionai no es de entrenamiento sino de cuantización. Cada fichero usa una asignación no uniforme de tipos por bloque y una corrección de error de bajo coste construida con un codificador propio, sobre tipos estándar de llama.cpp. La calibración y el codificador difieren de los de otras cuantizaciones del mismo tamaño, y el autor publica la metodología de evaluación: divergencia KL de la distribución de siguiente token frente al BF16 de referencia (revisión `1d4bf0f2`), sobre 60 fragmentos de 2048 tokens en tres corpus (texto técnico propio no publicado, una porción sembrada de FineWeb llamada `mixedweb-v1` y wikitext-2), con `llama-perplexity` sin modificaciones sobre una build concreta de llama.cpp (`26bc85e42`). No hay información sobre datos de entrenamiento, RLHF o DPO del modelo base en la documentación proporcionada.
+Los detalles de entrenamiento del modelo base (número de tokens, composición del dataset, uso de RLHF/DPO) no están disponibles en la información proporcionada. La innovación técnica destacable de este repositorio es el proceso de cuantización: el autor afirma haber construido un encoder propio que genera asignaciones no uniformes de bits y corrección de error de baja pérdida, manteniendo los tipos GGUF estándar para que funcionen en llama.cpp sin modificaciones. El modelo tiene el modo "thinking" activado por defecto y se puede desactivar por petición mediante `chat_template_kwargs`.
 
 ## Capacidades
 
-- Generación de texto conversacional y razonamiento, heredadas del modelo base Qwen3.8-27B.
-- Procesamiento de imagen a texto: el paquete incluye `mmproj-BF16.gguf`, el codificador visual de Qwen en BF16, por lo que el pipeline es `image-text-to-text`.
-- Decodificación especulativa mediante la cabeza MTP incluida en el fichero.
-- Compatibilidad con endpoints (`endpoints_compatible` en los tags del repo), lo que sugiere uso detrás de servidores de inferencia estándar.
-- Capacidades de tool calling, agentes o multilingüismo: no disponibles en la información proporcionada; deben consultarse en la model card del modelo base.
-- Modo thinking: no disponible en la información proporcionada.
+- Generación de texto conversacional multi-turno.
+- Razonamiento con modo "thinking" activado por defecto, desactivable por petición.
+- Comprensión de imagen y texto (pipeline image-text-to-text) mediante el proyector `mmproj-BF16.gguf`.
+- Generación de código: el autor reporta pruebas de escritura de páginas web funcionales en el primer intento.
+- Decodificación especulativa mediante la cabeza MTP incluida en el paquete.
+- Compatibilidad con tool calling y function calling: no confirmado explícitamente en la información disponible.
+- Soporte de agentes multi-paso: el autor lo integra en su agente de terminal Marshall (planificador, codificador, revisor).
+- Capacidades multilingües: no disponibles en la información proporcionada.
 
 ## Casos de uso
 
-- Despliegue local en GPU de 24 GB: con `AP-Q4_K_XL` (16,35 GiB, ~18 GiB de VRAM a 32k) o `AP-Q4_K_M` (15,33 GiB, ~17 GiB) el modelo cabe en una RTX 3090/4090 o A10G, permitiendo un asistente conversacional multimodal sin depender de API externa.
-- Estación de trabajo con 16 GB de VRAM: `AP-IQ4_XS` (13,27 GiB, ~15 GiB) es la opción por defecto recomendada por el autor; útil para prototipado de aplicaciones de visión y texto en una sola GPU de gama alta de consumo.
-- Servicios con presupuesto de 12 GB: `AP-IQ3_XS` (10,70 GiB, ~12,5 GiB) o `AP-IQ2_S` (8,95 GiB, ~10,9 GiB) permiten ejecutar el modelo a contextos de 8–16k en GPUs de 12 GB, adecuado para clasificación de documentos, extracción de información o resumen por lotes.
-- Evaluación de calidad de cuantizaciones: el repo publica los scripts y corpus de reproducibilidad (KLD con `llama-perplexity`), por lo que sirve como referencia metodológica para equipos que comparan cuantizaciones antes de fijar una en producción.
-- Procesamiento de documentos con componente visual: al incluir el proyector de visión, se puede usar para describir capturas, extraer texto de imágenes o responder preguntas sobre diagramas en pipelines internos.
-- Inferencia en CPU o mixta CPU/GPU: al ser GGUF estándar de llama.cpp, los niveles bajos (IQ2_S, IQ3_XXS) permiten ejecución parcial en CPU cuando no hay GPU suficiente, a costa de latencia.
+- Asistente de código en local: con AP-IQ4_XS (~15 GiB de VRAM) se puede ejecutar en una RTX 4090 o similar y usarlo como agente de programación con la cabeza MTP para acelerar la generación; el autor lo integra en su CLI Marshall con acciones aprobadas por el usuario.
+- Análisis de documentos con imagen: el proyector de visión permite procesar capturas, diagramas o páginas escaneadas junto a texto en un mismo prompt, con 32k de contexto para documentos largos.
+- Despliegue en estaciones de trabajo de 12 GB: con AP-IQ2_S (8,95 GiB) o AP-IQ3_XXS (10 GiB) cabe en tarjetas de 12 GB a contextos de 8–16k, útil para prototipos y pruebas de razonamiento sin GPU de datacenter.
+- Razonamiento con trazas largas: el modo thinking por defecto y la caché KV en q8_0 permiten cadenas de razonamiento extensas; el autor advierte de que una caché de valores a 4 bits degrada en repetición, por lo que en producción conviene fijar q8_0 o f16.
+- Servicio de inferencia compatible con OpenAI: la etiqueta `endpoints_compatible` y el uso con `llama-server` permiten exponer el modelo como endpoint local para aplicaciones existentes.
+- Evaluación comparativa de cuantizaciones: el paquete incluye ocho niveles con métricas de fidelidad frente a BF16, útil para estudiar el compromiso tamaño-calidad en un modelo de 27B multimodal.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks de tareas (MMLU, HumanEval, GSM8K, etc.) en la información disponible. El autor publica exclusivamente métricas de fidelidad de cuantización: divergencia KL frente al BF16, sobre 60 × 2048 tokens en tres corpus.
+No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible. El autor publica métricas de fidelidad de cuantización frente al BF16 en texto retenido, texto web y wikitext-2:
 
-| Comparativa (KLD, menor es mejor) | held-out | neutral web | wikitext-2 | peor 1% tokens (held-out) |
-|---|---|---|---|---|
-| UD-Q4_K_XL (Unsloth) | 0,0117 | 0,0087 | 0,0122 | 0,088 |
-| AP-Q4_K_XL | 0,0111 (−4,4%) | 0,0083 (−4,5%) | 0,0118 | 0,082 (−7,2%) |
-| UD-Q4_K_M | 0,0153 | 0,0108 | 0,0139 | 0,122 |
-| AP-Q4_K_M | 0,0146 (−4,9%) | 0,0104 (−3,7%) | 0,0150 | 0,111 (−8,8%) |
-| UD-IQ4_XS | 0,0276 | 0,0186 | 0,0252 | 0,233 |
-| AP-IQ4_XS | 0,0255 (−7,6%) | 0,0181 (−2,4%) | 0,0243 (−3,8%) | 0,211 (−9,3%) |
-| UD-Q3_K_XL | 0,0421 | 0,0270 | 0,0337 | 0,366 |
-| AP-Q3_K_XL | 0,0339 (−19,5%) | no disponible (dato truncado) | no disponible | no disponible |
+| Comparación | Métrica reportada por el autor |
+|---|---|
+| AP-IQ3_S vs cuantización líder de mismo tamaño | 20% más cerca de BF16 en texto retenido; 24% más cerca en el 1% de tokens más difíciles |
+| AP-IQ4_XS vs cuantización líder de mismo tamaño | 8% más cerca de BF16; 9% en el 1% de tokens más difíciles |
+| AP-Q4_K_M vs cuantización líder | 5% más cerca en texto técnico no visto; 9% en el 1% más difícil |
+| AP-Q3_K_XL vs cuantización líder | 19% más cerca en texto técnico no visto; 23% en el 1% más difícil |
+| AP-IQ3_XS vs IQ3_S de ISTA (11,29 GiB) | Equiparable en texto técnico no visto con 0,6 GiB menos |
+| AP-IQ2_S vs mejor cuantización de ~10 GiB | 22% más cerca en texto técnico no visto; 18% en wikitext-2 |
+| AP-IQ2_S en prueba de código | Página funcional al primer intento en 4 de 5 ejecuciones (frente a 2 de 5 del archivo de ISTA del mismo tamaño) |
 
-El autor también reporta frente a otras cuantizaciones de ~10–11 GiB: AP-IQ3_S queda a la par de ISTA `IQ3_S` (11,29 GiB) con 0,6 GiB menos, y AP-IQ3_XXS es un 26% más cercano en texto técnico no visto que la mejor cuantización de investigación de ~10 GiB. Estas cifras provienen del propio publicador y no han sido verificadas de forma independiente en la información disponible.
+Estas cifras proceden del autor y no han sido verificadas de forma independiente en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada (pesos + KV q8_0 + buffers de llama.cpp, según el autor): ~18 GiB para AP-Q4_K_XL, ~17 GiB para AP-Q4_K_M, ~15 GiB para AP-IQ4_XS, ~14 GiB para AP-Q3_K_XL, ~13 GiB para AP-IQ3_S, ~12,5 GiB para AP-IQ3_XS, ~12 GiB para AP-IQ3_XXS y ~10,9 GiB para AP-IQ2_S.
-- Proyector de visión: +0,9 GiB adicionales en cualquier nivel.
-- Contexto: a 32k, el KV en q8_0 ocupa aproximadamente 1 GiB gracias a que solo una cuarta parte de las capas usan atención completa.
-- GPU recomendadas: 24 GB (RTX 3090, RTX 4090, A10G, L4 en configuraciones ajustadas) para los niveles Q4; 16 GB (RTX 4080, A4000) para IQ4_XS e IQ3; 12 GB (RTX 3060 12 GB, RTX 4070) para IQ3_XS, IQ3_XXS e IQ2_S a contextos de 8–16k.
-- Cabe en GPU de consumo: sí, en los niveles indicados; los Q4 caben en 24 GB y los IQ3/IQ2 en 12–16 GB.
-- Opciones de despliegue: llama.cpp (formato nativo, sin fork), y por extensión servidores compatibles con GGUF. El tag `endpoints_compatible` sugiere soporte en plataformas de endpoints; no se detallan vLLM, TGI ni Ollama en la información disponible.
-- Latencia y throughput: no disponibles como cifras; el autor afirma que el coste de cambio es cero y que VRAM y tokens/s son iguales a los de cuantizaciones del mismo tamaño.
+- VRAM para inferencia: entre ~10,9 GiB (AP-IQ2_S a 32k) y ~18 GiB (AP-Q4_K_XL a 32k), incluyendo pesos, caché KV q8_0 y buffers de llama.cpp.
+- GPU de 24 GB: RTX 4090, RTX 3090, A10G, L4 (con margen), A100 40/80 GB, H100.
+- GPU de 16 GB: RTX 4080, RTX 4060 Ti 16 GB, V100 16 GB; usar AP-IQ4_XS o inferior.
+- GPU de 12 GB: RTX 3060 12 GB, RTX 4070; usar AP-IQ3_XS o inferior a 8–16k de contexto.
+- Cabe en GPU de consumo: sí, desde 12 GB con las cuantizaciones pequeñas.
+- Despliegue: llama.cpp (`llama-server`), LM Studio, Ollama; el autor no menciona soporte explícito de vLLM o TGI para estos archivos GGUF.
+- Latencia y throughput: no disponibles; el autor afirma que la velocidad es la misma que la de cuantizaciones de igual tamaño ("same size, same speed").
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+| Modelo | Parámetros | Contexto | Formato | Licencia | Notas |
 |---|---|---|---|---|---|
-| agentionai/Qwen3.8-27B-AP-GGUF | 27,32B | no disponible (uso documentado a 32k) | Apache 2.0 | GGUF | Cuantización de alta fidelidad con visión y MTP |
-| Qwen/Qwen3.8-27B | 27,32B | no disponible | Apache 2.0 | safetensors (BF16) | Modelo base de referencia |
-| Unsloth UD-Q4_K_XL / IQ4_XS (mismo base) | 27,32B | mismo base | Apache 2.0 | GGUF | KLD ligeramente superior en los tres corpus medidos |
-| ISTA-DASLab IQ3_S (mismo base) | 27,32B | mismo base | Apache 2.0 | GGUF | 11,29 GiB; AP-IQ3_S iguala fidelidad con 0,6 GiB menos |
-
-La comparación relevante es entre cuantizaciones del mismo modelo base, no entre modelos distintos: todas comparten parámetros, contexto y licencia, y difieren en fidelidad y tamaño de fichero.
+| Qwen3.8-27B-AP-GGUF (este) | 27,3B | 32k (config. de referencia) | GGUF + mmproj | Apache 2.0 | Cuantizaciones con encoder propio; incluye visión y MTP |
+| Qwen3.8-27B (base) | 27,3B | no disponible | safetensors | Apache 2.0 | Referencia BF16; requiere ~55 GB en BF16 |
+| Cuantizaciones de unsloth para Qwen3.8-27B | 27,3B | no disponible | GGUF | Apache 2.0 | Referencia de comparación citada por el autor |
+| Cuantizaciones IQ3_S de ISTA | 27,3B | no disponible | GGUF | Apache 2.0 | 11,29 GiB; comparada con AP-IQ3_XS |
+| Cuantización AtomicChat (~10,38 GiB) | 27,3B | no disponible | GGUF | no disponible | Referencia de comparación citada por el autor |
 
 ## Limitaciones y advertencias
 
-- Las métricas de fidelidad (KLD) las publica el propio autor; no hay verificación independiente en la información disponible. La columna "held-out" usa documentación interna no publicada y, por tanto, no es reproducible por terceros.
-- El corpus de evaluación es limitado (60 × 2048 tokens por corpus); no sustituye a una evaluación de tareas reales (razonamiento, código, visión).
-- No hay datos publicados de benchmarks de tareas ni de idiomas soportados; el rendimiento multilingüe debe validarse contra la model card del modelo base.
-- La licencia Apache 2.0 del paquete se hereda del modelo base; conviene confirmar en el repo de Qwen cualquier condición adicional de uso.
-- Los niveles IQ2 e IQ3 implican pérdida de calidad medible (KLD de 0,0255 en IQ4_XS frente a 0,0111 en Q4_K_XL en texto técnico); no son equivalentes al BF16 para tareas sensibles a precisión.
-- El repo ocupa 195,7 GB por incluir todos los niveles; la descarga selectiva de un solo fichero es imprescindible en la práctica.
-- Riesgo de alucinación y sesgos: no documentados en la información proporcionada; deben evaluarse en el modelo base.
-- El uso de la cabeza MTP para decodificación especulativa requiere un runtime que la soporte; no se especifica compatibilidad fuera de llama.cpp.
+- Las métricas de fidelidad y de calidad de código las publica el propio autor; no hay verificación independiente en la información disponible.
+- El autor advierte de que una caché de valores a 4 bits provoca degeneración en repetición con trazas de razonamiento largas en esta familia de modelos; hay que usar q8_0 o f16.
+- El modo thinking está activado por defecto: consume más tokens y aumenta la latencia si no se desactiva por petición.
+- Riesgo de alucinación: no cuantificado en la información disponible; aplicable el riesgo habitual de los modelos de 27B en tareas factuales.
+- Idiomas soportados no documentados en este repositorio; conviene consultar la model card del modelo base.
+- Licencia Apache 2.0 permite uso comercial, pero las condiciones del modelo base deben verificarse en su propia model card.
+- El repositorio ocupa 195,7 GB; descargar solo el archivo de la cuantización deseada.
+- No se documenta soporte para tool calling ni para vLLM/TGI en la información disponible.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/agentionai/Qwen3.8-27B-AP-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
-- Resultados completos de fidelidad: https://share.fieldworkledger.com/tTkQDHijE_Anj0yv79bsIw
-- Insignia de resultados: https://share.fieldworkledger.com/jWO2-ae4HyoC6GIqZucsaA/badge.svg
-- Corpus de evaluación: https://huggingface.co/datasets/agentionai/quant-fidelity-corpora
-- Script de wikitext-2 de llama.cpp: `llama.cpp/scripts/get-wikitext-2.sh` (referenciado en la model card)
-- Conversor HF a GGUF: `convert_hf_to_gguf.py` (llama.cpp)
+- Resultados completos (Fieldwork Ledger): https://share.fieldworkledger.com/tTkQDHijE_Anj0yv79bsIw
+- Web del autor: https://www.agention.ai/
+- Agente de código Marshall: https://marshall.agention.ai
+- Signal 27B (otro paquete del autor): https://huggingface.co/agentionai/Signal-3.8-27B-GGUF

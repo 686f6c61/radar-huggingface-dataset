@@ -52,7 +52,7 @@
     "conversational"
   ],
   "likes": 1,
-  "downloads_30d": 484,
+  "downloads_30d": 494,
   "trending_score": 0,
   "parameters": 34660610688,
   "parameters_human": "34.66B",
@@ -72,21 +72,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Google Traduction",
-      "url": "https://translate.google.com/?hl=fr",
-      "snippet": "Le service sans frais de Google traduit instantanément des mots, des expressions et des pages Web entre le français et plus de 100 …"
-    },
-    {
-      "title": "Google Traduction : un interprète personnel sur votre téléphone ou ...",
-      "url": "https://translate.google.com/intl/fr/about/",
-      "snippet": "Découvrez comment traduire du texte, des conversations, des images, des documents, des sites Web et bien plus avec Google …"
-    },
-    {
-      "title": "Google Traduction : un interprète personnel sur votre téléphone ou ...",
-      "url": "https://translate.google.com/intl/fr-CA/about/",
-      "snippet": "Comprenez votre monde et communiquez dans plusieurs langues avec Google Traduction. Traduisez des textes, des discours, des …"
-    }
-  ]
+  "sources": []
 }

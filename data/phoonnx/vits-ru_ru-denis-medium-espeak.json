@@ -5,7 +5,7 @@
   "author": "Phoonnx",
   "url": "https://huggingface.co/Phoonnx/vits-ru_ru-denis-medium-espeak",
   "created_at": "2026-11-16T18:08:44.000Z",
-  "updated_at": "2026-11-16T18:08:53.000Z",
+  "updated_at": "2026-11-22T08:41:43.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-to-speech",
@@ -23,7 +23,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 30,
+  "downloads_30d": 35,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

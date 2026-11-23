@@ -2,85 +2,96 @@
 
 ## Resumen
 
-Qwen3.8-27B-Heretic-Abliterated-GGUF es una cuantizacion estatica en formato GGUF del modelo Qwen3.8-27B-Heretic-Abliterated, publicado por el usuario mradermacher. Se trata de un derivado no oficial del modelo base Qwen3.8-27B, que ha sido modificado por el usuario catonooka mediante tecnicas de "abliteration" (eliminacion o reduccion de los mecanismos de rechazo y alineacion) y etiquetado como "Heretic". El resultado es un modelo conversacional de 27.320.697.856 parametros (aproximadamente 27,3 mil millones) orientado a generar respuestas sin las restricciones habituales de seguridad.
+Qwen3.8-27B-Heretic-Abliterated-GGUF es la version cuantizada en formato GGUF del modelo catonooka/Qwen3.8-27B-Heretic-Abliterated, un derivado de la familia Qwen3.8 de 27.320.697.856 parametros (aproximadamente 27,3 mil millones) que ha sido sometido a un proceso de "abliteration" y "heretic" para eliminar los mecanismos de rechazo y moderacion del modelo original. El trabajo de cuantizacion lo firma mradermacher, un conocido publicador de versiones GGUF de modelos abiertos, que distribuye tanto cuantizaciones estaticas (este repositorio) como versiones con imatrix en un repositorio hermano.
 
-El modelo se distribuye exclusivamente en formato GGUF, lo que lo hace adecuado para inferencia en CPU y GPU mediante llama.cpp y sus derivados (Ollama, LM Studio, etc.). El repositorio ocupa 15,8 GB e incluye multiples niveles de cuantizacion: x-f16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q4_K_M, Q4_K_S, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K e IQ4_XS. No se dispone de informacion sobre la licencia, los idiomas soportados ni el pipeline de la tarea.
+El modelo resuelve el problema de desplegar un LLM de gran tamano en hardware de consumo o en entornos con recursos limitados, ofreciendo un rango amplio de cuantizaciones que van desde Q2_K (11,3 GB) hasta Q8_0 (29,1 GB). Al estar en formato GGUF, es compatible con llama.cpp, Ollama y otras herramientas de inferencia local, lo que facilita su uso fuera de infraestructuras con GPUs de datacenter.
 
-La relevancia de este modelo es limitada y controvertida: se trata de un derivado de un modelo base que no corresponde a ninguna version oficial publicada de la familia Qwen (la denominacion "Qwen3.8" no coincide con las versiones conocidas de Alibaba), y su proposito declarado es eliminar las salvaguardas del modelo original. No cuenta con descargas ni interacciones en el momento de la consulta, y no se ha publicado informacion tecnica verificable sobre su entrenamiento o evaluacion.
+La relevancia actual del modelo radica en dos factores: por un lado, la demanda de modelos "uncensored" o "abliterated" para investigacion sobre alineamiento, seguridad y comportamiento de LLMs; por otro, la necesidad de versiones cuantizadas que permitan ejecutar modelos de 27B en GPUs consumer. No obstante, la informacion publicada es escasa: no se detallan datos de entrenamiento, benchmarks ni la longitud de contexto, y la licencia "qwen-community" impone restricciones que deben revisarse antes de cualquier uso comercial.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (derivado de Qwen3.8-27B, presumiblemente transformer denso) |
-| Parametros totales | 27.320.697.856 (aproximadamente 27,3 mil millones) |
-| Parametros activos | no aplica (no se indica que sea MoE) |
+| Arquitectura | no disponible (derivado de la familia Qwen3.8, presumiblemente transformer decoder-only; no confirmado en la informacion proporcionada) |
+| Parametros totales | 27.320.697.856 (27,3 B) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | x-f16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q4_K_M, Q4_K_S, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K, IQ4_XS |
-| Idiomas soportados | no disponible |
-| Licencia | no disponible |
-| Formato de pesos | GGUF |
+| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0 (estaticas); versiones imatrix en repositorio separado |
+| Idiomas soportados | en (segun la model card); no se detallan mas idiomas |
+| Licencia | qwen-community (license: other, con license_link a LICENSE) |
+| Formato de pesos | GGUF (safetensors disponibles en el modelo base) |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion sobre la arquitectura interna del modelo. El nombre indica que deriva de un modelo denominado "Qwen3.8-27B", del cual no hay documentacion publica verificable en la informacion proporcionada. Por el numero de parametros (27,3 mil millones) y la practica habitual de la familia Qwen, es plausible que se trate de un transformer denso con atencion por grupos (GQA), pero este extremo no esta confirmado.
+No se dispone de informacion detallada sobre la arquitectura interna del modelo en la documentacion proporcionada. Por el nombre y el tamano (27,3 B), se trata presumiblemente de un transformer decoder-only de la familia Qwen3.8, pero no se confirma en la model card ni en los metadatos. El modelo base es catonooka/Qwen3.8-27B-Heretic-Abliterated, que a su vez deriva de un modelo Qwen3.8 de 27B sometido a tecnicas de abliteration (eliminacion de direcciones de activacion asociadas al rechazo) y "heretic" (proceso automatizado de ablacion de comportamiento no deseado). No se especifican tokens de entrenamiento, composicion del dataset, ni si hubo RLHF o DPO adicionales tras la ablacion.
 
-El proceso de "abliteration" aplicado por catonooka consiste, segun la practica habitual de esta tecnica, en identificar las direcciones en el espacio de activaciones asociadas a los comportamientos de rechazo y restarles magnitud, o en ajustar finamente el modelo para reducir la probabilidad de respuestas negativas. No se proporcionan detalles sobre el dataset utilizado, el numero de tokens de entrenamiento, ni si se emplearon tecnicas de RLHF o DPO. Tampoco se documenta la composicion de los datos ni ninguna innovacion tecnica adicional. La cuantizacion fue realizada por mradermacher con su pipeline habitual, indicado en la model card mediante los metadatos `quantize_version: 2` y `convert_type: hf`.
+La innovacion tecnica principal de este repositorio no esta en el modelo en si, sino en el trabajo de cuantizacion: mradermacher aplica cuantizaciones estaticas (no imatrix) en este repositorio, con una version con imatrix disponible por separado en mradermacher/Qwen3.8-27B-Heretic-Abliterated-i1-GGUF. Las cuantizaciones IQ (como IQ4_XS) suelen ofrecer mejor relacion calidad/tamano que las K-quants de tamano similar, segun las notas del propio autor. No se documentan tecnicas como decodificacion especulativa, atencion lineal ni arquitecturas hibridas.
 
 ## Capacidades
 
-- Generacion de texto conversacional multi-turno, segun la etiqueta "conversational" del repositorio.
-- Razonamiento y generacion de codigo: capacidades heredadas del modelo base, no verificadas en este derivado.
-- Soporte de tool calling / function calling: no disponible (no confirmado).
-- Soporte de agentes y razonamiento multi-paso: no disponible (no confirmado).
-- Capacidades multilingues: no disponible.
-- Modo "thinking" o razonamiento extendido: no disponible.
-- Vision o audio: no disponible.
-- Reduccion de rechazos y filtros de seguridad: el objetivo declarado del proceso de abliteration es que el modelo responda a peticiones que el modelo base rechazaria, aunque no se documenta el alcance ni la eficacia de esta modificacion.
+- Generacion de texto conversacional en ingles, segun la model card y la etiqueta "conversational".
+- Comportamiento "uncensored" y "abliterated": el modelo ha sido modificado para reducir o eliminar los rechazos ante peticiones que el modelo original rechazaria. Esta es la caracteristica diferencial del modelo.
+- Compatibilidad con endpoints (tag "endpoints_compatible"), lo que sugiere que puede desplegarse detras de APIs compatibles con el formato de Hugging Face.
+- Capacidad de razonamiento y codigo: no confirmada explicitamente en la informacion proporcionada, aunque es esperable en un modelo de 27B de la familia Qwen; no se aportan datos que lo verifiquen.
+- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
+- Capacidades multilingues: solo se declara "en"; no se confirman otros idiomas.
+- Capacidades especiales (vision, audio, thinking mode): no disponible.
 
 ## Casos de uso
 
-- Investigacion sobre alineacion y seguridad: el modelo puede emplearse en entornos controlados para estudiar como la abliteration afecta a la distribucion de respuestas y a la calibracion de los rechazos, comparando su comportamiento con el del modelo base.
-- Experimentacion con cuantizaciones GGUF: dado que el repositorio ofrece doce niveles de cuantizacion, sirve para medir el impacto de la precision (de Q2_K a f16) en la calidad de las respuestas de un modelo de 27,3 mil millones de parametros.
-- Despliegue local en hardware de consumo: las variantes Q4_K_M y Q4_K_S permiten ejecutar el modelo en GPUs con 16-24 GB de VRAM o en CPU con suficiente RAM, mediante llama.cpp u Ollama, para tareas de generacion de texto sin conexion.
-- Generacion creativa sin restricciones: escritura de ficcion, guiones o contenido narrativo que requiera tematicas que los modelos alineados suelen declinar, siempre que el usuario asuma la responsabilidad legal y etica del contenido producido.
-- Evaluacion comparativa de derivados no oficiales: util para analizar la deriva de calidad y coherencia que introducen los procesos de abliteration en modelos de esta escala.
-- Pruebas de robustez y red teaming: el modelo puede emplearse como generador de respuestas adversarias para evaluar clasificadores de contenido o sistemas de moderacion.
+- Investigacion sobre alineamiento y seguridad: el modelo permite estudiar como se comporta un LLM de 27B tras eliminar sus mecanismos de rechazo, comparandolo con el modelo base original. Es adecuado porque la abliteration es precisamente el objeto de estudio y el formato GGUF facilita ejecutarlo en laboratorios con hardware limitado.
+- Despliegue local en estaciones de trabajo con GPU consumer: con cuantizaciones Q4_K_M (17,1 GB) o Q4_K_S (15,9 GB), el modelo puede ejecutarse en GPUs con 16-24 GB de VRAM mediante llama.cpp u Ollama, lo que permite disponer de un modelo de 27B sin depender de la nube.
+- Generacion creativa sin restricciones editoriales: escritores e investigadores pueden usar el modelo para generar narrativa o dialogos que el modelo original rechazaria por politicas de contenido; la naturaleza uncensored es el motivo principal de su uso.
+- Experimentacion con tecnicas de cuantizacion: el repositorio ofrece un espectro amplio de cuantizaciones (de Q2_K a Q8_0) que permite medir el impacto de la cuantizacion en la perplejidad y la calidad de generacion sobre un mismo modelo base.
+- Evaluacion de robustez de filtros de seguridad: equipos de seguridad pueden emplear el modelo como caso de prueba para validar que sus propios sistemas de moderacion detectan contenido generado por modelos abliterated.
+- Prototipado de asistentes conversacionales en ingles: dado su caracter conversacional y su tamano, puede usarse como backend de un chatbot local para pruebas de concepto, siempre que el caso de uso no requiera garantias de contenido seguro.
+- Fine-tuning posterior sobre dominio especifico: al estar disponible el modelo base en safetensors, es posible partir de el para ajuste fino con LoRA o QLoRA, usando las cuantizaciones GGUF solo para inferencia.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye tablas de MMLU, HumanEval, GSM8K ni metricas comparativas. Tampoco se documentan curvas de perplejidad para las distintas cuantizaciones, mas alla de la referencia generica a la grafica de ikawrakow sobre calidad de cuantizaciones.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: aproximadamente 54 GB en f16 (2 bytes por parametro), unos 29 GB en Q8_0, unos 17-18 GB en Q4_K_M, unos 12-13 GB en Q3_K_M y unos 10-11 GB en Q2_K. Estas cifras son estimaciones a partir del numero de parametros y no incluyen el overhead del contexto KV.
-- GPU recomendadas: A100 80 GB o H100 para f16; A100 40 GB, RTX 6000 Ada o RTX 4090 (24 GB) para Q8_0 y Q6_K; RTX 4090, RTX 4080 o RTX 3090 (24 GB) para Q4_K_M y Q5_K_M.
-- Cabe en GPU de consumo: si, en las cuantizaciones Q4 y Q3 en GPUs de 16-24 GB (RTX 4080, 4090, 3090, 4060 Ti de 16 GB). Las variantes Q2_K pueden caber en GPUs de 12 GB, con perdida notable de calidad.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, text-generation-webui, koboldcpp y servidores compatibles con la API de OpenAI (el repositorio incluye la etiqueta `endpoints_compatible`). No se recomienda vLLM ni TGI para este repositorio, ya que solo distribuye pesos GGUF.
-- Latencia y throughput: no disponibles.
+- VRAM estimada para inferencia: aproximadamente el tamano del archivo GGUF mas el overhead de contexto. Para Q4_K_M (17,1 GB) se necesitan en torno a 18-20 GB de VRAM con contexto moderado; para Q8_0 (29,1 GB) se requieren unos 30-32 GB.
+- GPU recomendadas: para Q8_0, una A100 40 GB, H100 o RTX A6000 48 GB. Para Q4_K_M, una RTX 4090 (24 GB) o RTX 3090 (24 GB) es suficiente. Para Q2_K o Q3_K_S, GPUs de 12-16 GB como RTX 4070 Ti o RTX 4080.
+- Cabe en GPU consumer: si, en RTX 3090/4090 (24 GB) con cuantizaciones Q4 y Q5; en GPUs de 16 GB con Q3 o IQ4_XS; en GPUs de 12 GB solo con Q2_K y contexto reducido.
+- Opciones de despliegue: llama.cpp, Ollama, y cualquier runtime compatible con GGUF. El tag "endpoints_compatible" sugiere compatibilidad con endpoints de Hugging Face. No se confirma soporte de vLLM o TGI para este formato.
+- Latencia y throughput estimados: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Formato | Licencia | Notas |
-|---|---|---|---|---|---|
-| Qwen3.8-27B-Heretic-Abliterated-GGUF (este) | 27,3 mil millones | no disponible | GGUF | no disponible | Derivado abliterado, sin benchmarks publicados |
-| Qwen3.8-27B-Heretic-Abliterated (modelo base) | 27,3 mil millones | no disponible | safetensors (presumiblemente) | no disponible | Fuente de la cuantizacion |
-| Modelos oficiales de la familia Qwen de 27-32 mil millones | 27-32 mil millones | 32.768-131.072 tokens (segun version) | safetensors, GGUF | Apache 2.0 o similar (segun version) | Modelos alineados con benchmarks publicados; la denominacion "Qwen3.8" no corresponde a ninguna version oficial conocida |
+No se dispone de datos de benchmarks ni de modelos comparables documentados en la informacion proporcionada. Como referencia estructural, se puede comparar con el modelo base del que deriva y con otras cuantizaciones del mismo autor, pero no con alternativas de la misma categoria con datos verificables.
 
-No se dispone de datos verificables sobre el modelo base "Qwen3.8-27B" ni sobre sus caracteristicas tecnicas, por lo que la comparativa con alternativas oficiales no puede establecerse con rigor.
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|
+| mradermacher/Qwen3.8-27B-Heretic-Abliterated-GGUF | 27,3 B | no disponible | qwen-community | GGUF | Objeto de esta ficha; cuantizaciones estaticas |
+| catonooka/Qwen3.8-27B-Heretic-Abliterated | 27,3 B | no disponible | no disponible | safetensors | Modelo base del que deriva esta cuantizacion |
+| mradermacher/Qwen3.8-27B-Heretic-Abliterated-i1-GGUF | 27,3 B | no disponible | qwen-community | GGUF (imatrix) | Version con cuantizacion imatrix, presumiblemente de mayor calidad |
+
+No se identifican en la informacion proporcionada alternativas comparables de otros autores con datos verificables de rendimiento, contexto o licencia.
 
 ## Limitaciones y advertencias
 
-- Modelo derivado no oficial: no procede de Alibaba ni de ningun laboratorio reconocido; la denominacion "Qwen3.8" no coincide con versiones oficiales publicadas de la familia Qwen, lo que genera dudas sobre su procedencia real.
-- Abliteration: el proceso de eliminacion de rechazos puede degradar la coherencia, aumentar la toxicidad y producir contenido danino, ilegal o sexualmente explicito. No se documenta el alcance de la modificacion ni las evaluaciones de seguridad realizadas.
-- Alucinacion: sin benchmarks publicados, no puede estimarse la tasa de alucinacion; en modelos abliterados es frecuente que la calibracion empeore.
-- Licencia desconocida: al no indicarse la licencia, no puede confirmarse el uso comercial ni las obligaciones de atribucion. Se recomienda contactar con el autor antes de cualquier uso en produccion.
-- Idiomas y contexto desconocidos: no se especifican los idiomas soportados ni la longitud de contexto, lo que impide planificar despliegues multilingues o con ventanas largas.
-- Riesgo legal y reputacional: el uso de modelos sin filtros de seguridad en aplicaciones publicas puede infringir normativas de moderacion de contenido (por ejemplo, la Ley de Servicios Digitales de la UE) y las politicas de las plataformas de despliegue.
-- Sin traccion comunitaria: cero descargas y cero interacciones en el momento de la consulta, lo que reduce la probabilidad de que los errores hayan sido detectados y corregidos.
-- Cuantizaciones agresivas: Q2_K y Q3_K_S pueden degradar significativamente la calidad en un modelo de 27,3 mil millones de parametros; se recomienda Q4_K_M o superior para uso real.
+- El modelo ha sido sometido a abliteration, lo que elimina o reduce los rechazos ante contenido danino, ilegal o etico. Esto lo hace inadecuado para aplicaciones de cara al publico sin capas adicionales de moderacion.
+- Riesgo elevado de generar contenido ofensivo, sesgado o factualmente incorrecto; no se documentan evaluaciones de sesgo ni de alucinacion.
+- Solo se declara soporte de ingles; no se confirman capacidades multilingues.
+- La licencia "qwen-community" (license: other) impone condiciones que deben revisarse en el archivo LICENSE antes de cualquier uso comercial; no se detallan en la informacion proporcionada.
+- No se dispone de informacion sobre la longitud de contexto, lo que impide planificar casos de uso que requieran ventanas largas.
+- El proceso de abliteration puede degradar capacidades generales del modelo (razonamiento, codigo, matematicas) respecto al modelo original; no se aportan datos que cuantifiquen esta degradacion.
+- Las cuantizaciones de baja calidad (Q2_K, Q3_K_S) pueden degradar notablemente la coherencia y la calidad de generacion; el propio autor recomienda Q4_K_S o Q4_K_M como equilibrio rapido/calidad.
+- El repositorio ocupa 190,7 GB en total, lo que requiere planificar el almacenamiento si se descargan varias cuantizaciones.
+- No se documentan garantias de soporte ni mantenimiento por parte del autor del modelo base.
 
 ## Enlaces
 
-- Repositorio GGUF: https://huggingface.co/mradermacher/Qwen3.8-27B-Heretic-Abliterated-GGUF
-- Modelo base citado: https://huggingface.co/catonooka/Qwen3.8-27B-Heretic-Abliterated
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Qwen3.8-27B-Heretic-Abliterated-GGUF
+- Modelo base: https://huggingface.co/catonooka/Qwen3.8-27B-Heretic-Abliterated
+- Cuantizaciones imatrix: https://huggingface.co/mradermacher/Qwen3.8-27B-Heretic-Abliterated-i1-GGUF
+- Pagina de descargas del autor: https://hf.tst.eu/model#Qwen3.8-27B-Heretic-Abliterated-GGUF
+- FAQ y peticiones de modelos de mradermacher: https://huggingface.co/mradermacher/model_requests
+- Guia de uso de GGUF (README de TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Grafica de calidad de cuantizaciones de ikawrakow: https://www.nethype.de/huggingface_embed/quantpplgraph.png
+- Notas de Artefact2 sobre cuantizaciones: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Empresa del autor de cuantizaciones: https://www.nethype.de/

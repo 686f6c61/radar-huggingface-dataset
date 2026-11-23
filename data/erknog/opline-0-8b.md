@@ -2,96 +2,89 @@
 
 ## Resumen
 
-Opline 0.8B es un modelo de lenguaje especializado en edición estructurada de documentos Markdown, desarrollado por el usuario erknog. Se trata de un ajuste fino mediante LoRA del modelo base Qwen3.5-0.8B (0,87 mil millones de parámetros), cuyo propósito es convertir una instrucción de edición en lenguaje natural en exactamente una operación estructurada (ADD, APP, DEL, RM, REP, INSB, INSA o UNDO) que un ejecutor determinista aplica sobre un documento Markdown numerado. El texto que el usuario no menciona permanece byte a byte idéntico, lo que convierte al modelo en un componente de bajo nivel para editores de texto asistidos por voz o por lenguaje natural.
+Opline 0.8B es un modelo de lenguaje especializado en edición de documentos Markdown mediante instrucciones en lenguaje natural, desarrollado por el usuario erknog. Se trata de un fine-tune del modelo base Qwen3.5-0.8B de Unsloth, con 873 millones de parámetros, entrenado específicamente para convertir instrucciones de edición (a menudo dictadas por voz) en operaciones estructuradas de una sola línea que un ejecutor determinista aplica sobre el documento. El modelo no genera el texto del documento, sino la operación de edición.
 
-La relevancia del modelo reside en su enfoque restringido: en lugar de generar texto libre, produce una única línea de operación con anclas copiadas literalmente del documento, delegando la aplicación del cambio a un ejecutor externo. Esto reduce el riesgo de modificaciones no deseadas y facilita la integración en pipelines donde la fidelidad del contenido es crítica. Con 873.438.784 parámetros, una ventana de entrenamiento de 1024 tokens y cuantización Q4_K_M de 517 MB, está diseñado para ejecutarse en hardware muy modesto, incluyendo CPU y Apple Silicon.
+Su relevancia radica en su enfoque de diseño: en lugar de pedir a un modelo generalista que reescriba un documento completo (con el riesgo de alucinación y pérdida de contenido), Opline emite operaciones atómicas y verificables (`ADD`, `DEL`, `REP`, `INSB`, `INSA`, `UNDO`) que un programa TypeScript externo valida y aplica. Esto lo hace adecuado para interfaces de edición por voz o dictado donde la precisión y la reversibilidad son críticas.
 
-La versión documentada es la v1 (denominada `v6c`, fechada el 27 de octubre de 2026), con pesos de 16 bits tras fusionar el adaptador LoRA, instrucciones en inglés y soporte exclusivo para encabezados, párrafos y listas planas en Markdown. Su licencia Apache-2.0, heredada de Qwen3.5-0.8B, permite uso comercial sin restricciones adicionales.
+El modelo se distribuye principalmente en formato GGUF cuantizado Q4_K_M (517 MB), con variantes adicionales en safetensors, MLX 4-bit y un adaptador LoRA PEFT (r=16, alpha=16). Está pensado para ejecutarse en hardware muy modesto, con aproximadamente 0,6 GB de RAM/VRAM a 2k de contexto, y se integra con llama.cpp, MLX y Transformers.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (base Qwen3.5-0.8B), ajuste fino con LoRA fusionado |
-| Parametros totales | 873.438.784 |
-| Parametros activos | No aplica (no es MoE) |
-| Longitud de contexto | 1024 tokens de ventana de entrenamiento; el ejemplo de despliegue usa 2048 tokens de contexto en llama.cpp |
-| Tipos de cuantizacion | Q4_K_M (GGUF, 517 MB); MLX 4-bit; pesos completos en bfloat16 |
-| Idiomas soportados | Inglés (instrucciones y documentos) |
-| Licencia | Apache-2.0 |
-| Formato de pesos | safetensors (bfloat16), GGUF (Q4_K_M), MLX (4-bit), adaptador PEFT LoRA (r=16, alpha=16) |
+| Arquitectura | Transformer (derivada de Qwen3.5), fine-tune con LoRA |
+| Parametros totales | 873.438.784 (0,87B) |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | Ventana de entrenamiento de 1k tokens; configurado a 2k en el ejemplo de llama.cpp |
+| Tipos de cuantizacion | Q4_K_M GGUF (517 MB), MLX 4-bit, bfloat16 (full precision) |
+| Idiomas soportados | Ingles (en) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF, safetensors, MLX 4-bit, adaptador PEFT LoRA |
 
 ## Arquitectura y entrenamiento
 
-El modelo se construye sobre Qwen3.5-0.8B, un transformer decoder-only de 0,87 mil millones de parámetros. El ajuste se realizó con LoRA de rango 16 y alpha 16 en precisión de 16 bits mediante la librería unsloth, con un presupuesto de 1130 pasos (2 épocas), batch efectivo de 32, secuencia de 1024 tokens y tasa de aprendizaje 2e-4 con decaimiento coseno. El conjunto de datos consta de 18.086 turnos de entrenamiento y 2.045 turnos de validación, cada uno compuesto por una instrucción de edición y la operación esperada. La mejor pérdida de evaluación fue 0,0119 en el paso 1000, y el adaptador se restauró a ese punto antes de fusionarse con los pesos base. El entrenamiento completo se ejecutó en una única RTX 4090 en 72 minutos.
+Opline 0.8B se construye sobre Qwen3.5-0.8B, un transformer de 873 millones de parámetros, mediante un fine-tune con LoRA (r=16, alpha=16) sobre el modelo base de Unsloth. El entrenamiento está orientado a una tarea única: dado un prompt de sistema fijo, una instrucción de usuario y un documento Markdown numerado por líneas (`[L01]`, `[L02]`, ...), el modelo debe emitir exactamente una línea de operación. El dataset de entrenamiento no está detallado en la información disponible, pero la model card indica que se compone de instrucciones con estilo de dictado por voz (frases habladas, sin puntuación, números escritos como se pronuncian) y que el fraseo del dataset es "bastante opinado", usando marcos como "saying X", "replace X with Y" o "continue with X".
 
-La innovación principal no es arquitectónica sino de diseño de tarea: el modelo aprende a emitir una sola línea de operación con anclas copiadas byte a byte del documento (máximo 12 palabras, únicas, sin cortar tokens), y los números de línea son solo pistas que el ejecutor resuelve mediante las anclas. El texto dictado se normaliza (por ejemplo, "twenty five dollars" pasa a "$25"), pero se preserva el uso de mayúsculas dictado. El formato de prompt exige un mensaje de sistema fijo y `enable_thinking` desactivado, ya que de lo contrario la operación se genera dentro del campo `reasoning_content` en lugar del contenido principal.
+La innovación técnica principal no reside en la arquitectura, sino en el paradigma de salida estructurada: el modelo emite operaciones atómicas (`ADD`, `APP`, `DEL`, `RM`, `REP`, `INSB`, `INSA`, `UNDO`) con anclas verbatim, y un ejecutor determinista en TypeScript resuelve la línea objetivo por contenido, aplica el cambio y normaliza el Markdown. Las operaciones ambiguas o sin coincidencia se rechazan por completo, dejando el documento intacto. El modelo también soporta un modo de pensamiento (`enable_thinking`) que se desactiva explícitamente en los ejemplos de despliegue, lo que sugiere que el modelo base incluye capacidades de razonamiento que el fine-tune no necesita para su tarea.
 
 ## Capacidades
 
-- Generación de operaciones de edición estructurada en Markdown: ADD, APP, DEL, RM, REP, INSB, INSA y UNDO, una por turno.
-- Interpretación de instrucciones de edición en lenguaje natural en inglés ("Remove the sub heading in line 11" produce `DEL [L11] Questions and Answers`).
-- Copia de anclas byte a byte desde el documento para garantizar la identidad del texto no mencionado.
-- Normalización de texto dictado (números, moneda) preservando el uso de mayúsculas original.
-- Soporte de un único turno de operación por invocación; los cambios múltiples requieren múltiples turnos.
-- Integración con endpoints compatibles con OpenAI mediante llama.cpp (`llama-server`) y MLX (`mlx_lm.server`).
-- No soporta tool calling, function calling, agentes multi-paso, visión, audio ni razonamiento extendido (thinking mode debe desactivarse).
+- Generación de operaciones de edición estructuradas sobre documentos Markdown: inserción de líneas, borrado, reemplazo de fragmentos, inserción antes/después de un ancla y deshacer.
+- Comprensión de instrucciones en lenguaje natural con estilo de dictado por voz (frases habladas, sin puntuación, números pronunciados).
+- Salida de una única operación por turno, con anclas verbatim que el ejecutor resuelve por contenido.
+- Soporte de plantilla de chat compatible con la API de OpenAI (endpoint `/v1` en llama.cpp).
+- Capacidad de continuar el último párrafo del documento ante dictado directo ("bare dictation") si el archivo termina en párrafo; si termina en lista, encabezado o está vacío, inicia un párrafo nuevo.
+- No dispone de soporte nativo de audio: el modelo recibe texto transcrito (STT) y el demo usa `nemotron-speech-streaming-en-0.6b` para la transcripción.
+- Capacidades multilingües limitadas al inglés.
 
 ## Casos de uso
 
-- Edición de documentos por voz: un dictado como "borra el subtítulo de la línea 11" se transforma en una operación DEL que un ejecutor aplica sobre el archivo, manteniendo intacto el resto del contenido; el modelo cabe en 517 MB y puede ejecutarse en local.
-- Asistentes de escritura con fidelidad estricta: en flujos donde el usuario no debe perder ni un carácter de su texto original, el modelo emite la operación y el ejecutor determinista aplica el cambio, evitando reescrituras completas del documento.
-- Automatización de correcciones puntuales en documentación técnica: eliminación de fragmentos, inserción de párrafos antes o después de un ancla, o sustitución de términos concretos en archivos Markdown versionados.
-- Integración en pipelines de CI/CD para documentación: un paso automatizado puede recibir instrucciones de edición y generar la operación que un script aplica sobre los `.md` del repositorio, con validación posterior del diff.
-- Prototipado de editores colaborativos: el modelo actúa como capa de interpretación de intenciones de edición, delegando la aplicación y el control de versiones al backend.
-- Despliegue en dispositivos de recursos limitados: con Q4_K_M y aproximadamente 0,9 GB de RAM/VRAM a 2k de contexto, puede ejecutarse en portátiles sin GPU dedicada o en Apple Silicon mediante MLX 4-bit.
-- Normalización de dictado en herramientas de accesibilidad: conversión de cantidades habladas a formato numérico dentro de la operación de edición, preservando mayúsculas dictadas.
+- Edición de documentos por voz en tiempo real: el modelo convierte una instrucción dictada ("remove line five", "in line four replace walking down the hill with running up the mountain") en una operación `DEL` o `REP` que un ejecutor aplica sobre el Markdown, permitiendo editar notas o documentos sin teclado.
+- Asistentes de dictado para notas rápidas: el usuario dicta contenido nuevo ("add list item saying buying groceries") y el modelo emite una operación `ADD` o `APP`, integrable en una app de notas que mantiene el documento sincronizado.
+- Automatización de correcciones puntuales en documentación técnica: un pipeline puede enviar instrucciones como "remove the subheading in line 11" y el modelo devuelve `DEL [L11] Questions and Answers`, útil para scripts de mantenimiento de README o wikis.
+- Interfaces de edición accesibles: personas con movilidad reducida pueden editar documentos mediante voz, ya que el modelo tolera frases habladas sin puntuación y números pronunciados, y el ejecutor rechaza operaciones ambiguas sin modificar el archivo.
+- Integración en editores Markdown con deshacer determinista: la operación `UNDO` y el rechazo atómico de operaciones inválidas permiten construir un historial de cambios fiable sin necesidad de versionado completo del documento.
+- Prototipado de agentes de edición de bajo coste: al requerir ~0,6 GB de RAM/VRAM y ejecutarse en llama.cpp o MLX, el modelo puede desplegarse en portátiles o dispositivos Apple Silicon para demos y pruebas de concepto de edición estructurada.
+- Filtrado y normalización de instrucciones de edición en pipelines de CI: el modelo puede actuar como capa de traducción entre lenguaje natural y operaciones verificables, permitiendo que un programa valide cada cambio antes de aplicarlo al repositorio.
 
 ## Benchmarks y rendimiento
 
-| Metrica | Resultado v1 |
-|---|---|
-| Pass en conjunto reservado (exacto + mismo documento + cercano) | 1966/2029 = 96,9% |
-| Operación exacta | 1835/2029 = 90,4% |
-| Rechazos del ejecutor | 5 |
-| Suite manual de escenarios completos | 255/272 = 93,8% |
-| Categoría más débil (append tras párrafo al final del archivo) | 45/53 = 85% |
-
-La mayoría de los fallos restantes corresponden a la identidad byte a byte de las anclas (una cita que pierde un paréntesis, añade un punto o captura un fragmento vecino), no a la elección de la operación: solo 6 de los 63 fallos de la barrida eligen una operación incorrecta.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM/RAM estimada: aproximadamente 0,9 GB con Q4_K_M a 2k de contexto (ventana de entrenamiento de 1k).
-- GPU recomendadas: no requiere GPU dedicada; el entrenamiento se realizó en una RTX 4090, pero la inferencia está pensada para hardware modesto.
-- Cabe en GPU de consumo: sí, en cualquier GPU con al menos 1 GB de VRAM libre; también en CPU y en Apple Silicon mediante MLX 4-bit.
-- Opciones de despliegue: llama.cpp (`llama-server` con soporte Qwen3.5 y `--jinja`), MLX (`mlx_lm.server`), transformers con `AutoModelForImageTextToText` en bfloat16.
+- VRAM/RAM estimada: ~0,6 GB a 2k de contexto con la cuantización Q4_K_M (517 MB de pesos).
+- GPU recomendadas: no se especifican modelos concretos; el tamaño del modelo permite ejecución en CPU y en GPUs de gama baja.
+- Compatibilidad con GPU de consumo: sí, cabe holgadamente en cualquier GPU de consumo con al menos 1 GB de VRAM libre, y también en CPU.
+- Opciones de despliegue: llama.cpp (`llama-server` con soporte Qwen3.5, `--jinja`, `--ctx-size 2048`, `--chat-template-kwargs '{"enable_thinking":false}'`), MLX (`mlx_lm.server` en Apple Silicon), Transformers (`AutoModelForImageTextToText` con `dtype=torch.bfloat16`) y adaptador PEFT LoRA sobre el modelo base.
 - Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
+| Modelo | Parámetros | Contexto | Tarea | Licencia | Formato |
 |---|---|---|---|---|---|
-| Opline 0.8B | 873 M | 1024 tokens (entrenamiento) | Edición estructurada de Markdown, una op por turno | Apache-2.0 | Hugging Face (GGUF, safetensors, MLX, LoRA) |
-| Qwen3.5-0.8B (base) | 0,8 B | No disponible | Generación de texto general | Apache-2.0 | Hugging Face |
-| Alternativas especializadas en edición de texto | No disponible | No disponible | No disponible | No disponible | No disponible |
+| Opline 0.8B | 0,87B | 1k entrenamiento / 2k configurado | Edición estructurada de Markdown | Apache 2.0 | GGUF, safetensors, MLX, LoRA |
+| Qwen3.5-0.8B (base) | 0,8B | no disponible | Generación de texto general | no disponible | safetensors |
+| Modelos generalistas de ~1B | ~1B | variable | Asistente general | variable | variable |
 
-No se dispone de datos de benchmarks de modelos comparables en la información proporcionada.
+La comparativa directa con alternativas de la misma categoría (modelos especializados en edición estructurada de documentos) no está disponible en la información proporcionada. Frente a su modelo base Qwen3.5-0.8B, Opline sacrifica generalidad y cobertura multilingüe a cambio de una salida estructurada y verificable para una tarea concreta.
 
 ## Limitaciones y advertencias
 
-- El llamador debe proporcionar el documento con números de línea `[Lnn]`; el modelo no lee archivos por sí mismo.
-- Una sola operación por turno; varios cambios requieren varios turnos.
-- Ventana de entrenamiento de 1024 tokens: documentos de más de aproximadamente 1000 tokens degradan el rendimiento.
-- Solo inglés y Markdown: listas anidadas, bloques de código, tablas, enlaces, citas, negrita y cursiva no son objetivos de edición.
-- Las anclas son byte a byte, por lo que volver a renderizar el documento debilita el emparejamiento.
-- Riesgo de alucinación en la cita de anclas: la mayoría de los fallos observados son anclas que no coinciden exactamente con el texto original.
-- `enable_thinking` debe estar desactivado; de lo contrario, la operación se genera en el campo de razonamiento y no en el contenido.
-- Licencia Apache-2.0 heredada de Qwen3.5-0.8B, sin restricciones adicionales para uso comercial conocidas.
-- No se han documentado sesgos específicos más allá de los heredados del modelo base Qwen3.5-0.8B.
+- Modelo de propósito único: no es un asistente general; no resume, no redacta contenido ni expande notas a prosa. La instrucción debe aportar el contenido.
+- Una sola operación por turno: peticiones como "rename every heading to title case" requieren una instrucción por línea.
+- Requiere mencionar el número de línea al modificar una línea existente; aunque el ejecutor resuelve el ancla por contenido, todas las instrucciones de entrenamiento que apuntan a una línea la nombran.
+- El fraseo importa: el dataset de entrenamiento es opinado y espera marcos concretos ("saying X", "replace X with Y", "continue with X"). No soporta objetivos semánticos como "the second bullet" o "the paragraph about pricing"; hay que citar el texto.
+- Sin soporte nativo de audio: requiere un paso previo de STT.
+- Solo inglés: no hay capacidades multilingües declaradas.
+- Ventana de contexto de entrenamiento de 1k tokens, lo que limita el tamaño del documento que puede procesarse en una sola instrucción.
+- Riesgo de alucinación en las anclas: si el modelo emite un ancla que no coincide con el documento, el ejecutor rechaza la operación completa, pero el fallo puede requerir reintento o reformulación.
+- Licencia Apache 2.0: permite uso comercial, pero se recomienda revisar las condiciones del modelo base Qwen3.5-0.8B de Unsloth, cuya licencia no se detalla en la información disponible.
+- Sin datos de benchmarks publicados, por lo que el rendimiento real en producción no está cuantificado.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/erknog/opline-0.8b
+- Repositorio del código, ejecutor y demo web: https://github.com/kueckelheim/opline
 - Modelo base: https://huggingface.co/unsloth/Qwen3.5-0.8B
-- Modelo base original: https://huggingface.co/Qwen/Qwen3.5-0.8B
-- Licencia: https://huggingface.co/erknog/opline-0.8b/blob/main/LICENSE
+- Demo (GIF en el repositorio del modelo): https://huggingface.co/erknog/opline-0.8b/resolve/main/demo.gif

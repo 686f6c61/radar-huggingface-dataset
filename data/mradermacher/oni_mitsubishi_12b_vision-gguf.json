@@ -1,0 +1,49 @@
+{
+  "schema": 2,
+  "id": "mradermacher/Oni_Mitsubishi_12B_Vision-GGUF",
+  "slug": "mradermacher-oni_mitsubishi_12b_vision-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Oni_Mitsubishi_12B_Vision-GGUF",
+  "created_at": "2025-03-16T23:42:14.000Z",
+  "updated_at": "2026-11-23T04:19:04.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:Sicarius-Prototyping/Oni_Mitsubishi_12B_Vision",
+    "base_model:quantized:Sicarius-Prototyping/Oni_Mitsubishi_12B_Vision",
+    "license:gemma",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 57,
+  "trending_score": 0,
+  "parameters": 11765792256,
+  "parameters_human": "11.77B",
+  "storage_bytes": 83848057088,
+  "storage_human": "83.8 GB",
+  "context_length": 131072,
+  "base_model": "Sicarius-Prototyping/Oni_Mitsubishi_12B_Vision",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -2,96 +2,99 @@
 
 ## Resumen
 
-Qwen3.5-2B-tvbox-GGUF es una cuantización GGUF extrema del modelo Qwen3.5-2B de Alibaba Qwen, publicada por el desarrollador independiente hyperionaidev dentro del proyecto "smolmaxxing". No es una cuantización convencional: incorpora una cabeza de salida podada a 65.672 filas de las 248.320 del vocabulario original, seleccionadas por frecuencia de token en un corpus inglés y multilingüe. El objetivo declarado es ejecutar el modelo en hardware de gama ultra baja, concretamente una Xiaomi TV Box S (3.ª generación) con cuatro núcleos Cortex-A55 y aproximadamente 1 GB de RAM utilizable.
+Qwen3.5-2B-tvbox-GGUF es una cuantización GGUF Q4_K del modelo Qwen/Qwen3.5-2B (2.077.215.176 parámetros) publicada por el usuario hyperionaidev dentro del proyecto smolmaxxing, cuyo objetivo es exprimir modelos de lenguaje en hardware extremadamente limitado. El artefacto está pensado para ejecutarse en una Xiaomi TV Box S (3.ª generación), un dispositivo con 4 núcleos Cortex-A55 y aproximadamente 1 GB de RAM utilizable, donde alcanza 7,7 tok/s en chat real y 17,8 tok/s en procesamiento de prompt.
 
-El modelo base Qwen3.5-2B tiene 2.077.215.176 parámetros según los pesos en safetensors, y esta variante ocupa 1,18 GB en disco (0,99 GB en RAM durante la inferencia). En esa TV box alcanza 7,7 tok/s en chat real y 17,8 tok/s de procesamiento de prompt, con una perplejidad de 0,909 bits por byte sobre un texto fijo de 22 KB.
+La particularidad técnica del fichero es que no es un GGUF estándar: incorpora una cabeza de salida podada de 65.672 filas (frente a las 248.320 del vocabulario original) más un tensor `output_ids`, y requiere un llama.cpp parcheado del repositorio smolmaxxing. Además incluye el bloque de predicción multi-token (MTP) como capa 24, desactivado por defecto. Este tipo de publicación es relevante porque documenta de forma reproducible el compromiso entre calidad y huella de memoria en el extremo inferior del despliegue de LLM.
 
-La relevancia de esta ficha es doble: por un lado demuestra hasta dónde se puede comprimir un transformer de 2B para inferencia en CPU con poca memoria; por otro, introduce dependencias fuertes que rompen la compatibilidad con el ecosistema estándar (llama.cpp, LM Studio, Ollama), lo que la hace inadecuada para la mayoría de despliegues en producción.
+La licencia es Apache-2.0, heredada del modelo base, y el repositorio ocupa 1,2 GB. En el momento de la consulta acumula 574 descargas y ningún "like".
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer (base Qwen3.5-2B); la ficha del autor menciona un bloque MTP (multi-token prediction) como capa 24 y estado DeltaNet, sin más detalle en la información disponible |
+| Arquitectura | Transformer (modelo base Qwen3.5-2B); fichero GGUF cuantizado con cabeza de salida podada y bloque MTP |
 | Parametros totales | 2.077.215.176 |
-| Parametros activos | no disponible (no se indica que sea MoE) |
-| Longitud de contexto | no disponible (el comando de ejemplo usa `-c 1024`) |
-| Tipos de cuantizacion | Q4_K puro en todos los tensores, incluidos embedding y cabeza, con imatrix de unsloth |
-| Idiomas soportados | no disponible (la cabeza podada se eligió con corpus inglés y multilingüe) |
+| Parametros activos | no disponible (no se indica que el modelo base sea MoE) |
+| Longitud de contexto | no disponible en la información proporcionada; el ejemplo de ejecución usa `-c 1024` |
+| Tipos de cuantizacion | Q4_K puro en todos los tensores (incluida embedding y cabeza), con imatrix de unsloth |
+| Idiomas soportados | no disponible (la selección de la cabeza de salida se hizo sobre corpus inglés y multilingüe) |
 | Licencia | Apache-2.0 |
-| Formato de pesos | GGUF (`w-q4k-h65p8.gguf`, 1,18 GB, SHA-256 `631a27ae8926d3fd18cdc7f0276700edd784406a4c6218b5e6e664a4cf54fd11`) |
+| Formato de pesos | GGUF (`w-q4k-h65p8.gguf`, 1,18 GB) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es Qwen3.5-2B, un transformer de 2B parámetros desarrollado por Qwen (Alibaba). La información disponible no detalla la composición del dataset de entrenamiento, el número de tokens ni si hubo RLHF o DPO; la model card de esta cuantización no los reproduce. El autor sí menciona que el modelo incorpora un bloque de predicción multi-token (MTP) que aquí se incluye como capa 24 con `nextn_predict_layers=1`, desactivado por defecto porque en la versión 2B en RAM la especulación degradó el rendimiento (referencia E31 del proyecto).
+El modelo subyacente es Qwen/Qwen3.5-2B, del que esta publicación es una cuantización, no un reentrenamiento. El proceso de conversión parte del BF16 de unsloth/Qwen3.5-2B-GGUF junto con su imatrix, y añade el bloque MTP extraído del repositorio original de Qwen. Todos los tensores, incluidos el embedding y la cabeza de salida, se cuantizan a Q4_K, y la cuantización se realizó en el propio dispositivo TV Box.
 
-La innovación de esta variante es la poda de la cabeza de salida: se conservan 65.672 de las 248.320 filas del vocabulario, elegidas por frecuencia de token en un corpus inglés y multilingüe, y se añade un tensor `output_ids`. El recuento se redondea a múltiplo de 8 para que el backend de CPU repacke la cabeza (+5,8 % de velocidad). Los prompts pueden usar cualquier token del vocabulario original, pero la generación queda restringida a la cabeza podada: el 1,3 % de las posiciones de texto en inglés y el 12,6 % en multilingüe caen fuera de ella. La cuantización se hizo en la propia TV box a partir de la conversión BF16 de unsloth y su imatrix, e incluye el bloque MTP extraído de Qwen/Qwen3.5-2B.
+La innovación principal es la poda del vocabulario de salida: se conservan 65.672 de las 248.320 filas, elegidas por frecuencia de token sobre un corpus inglés y multilingüe, y el recuento se redondea a múltiplo de 8 para que el backend de CPU repaquete la cabeza (+5,8 % de rendimiento). Los prompts pueden usar cualquier token del vocabulario original, pero el modelo solo puede generar tokens presentes en la cabeza podada; según la model card, el 1,3 % de las posiciones de texto en inglés y el 12,6 % en multilingüe caen fuera de ella. El bloque MTP (`nextn_predict_layers=1`) está incluido pero desactivado por defecto, ya que en el modelo de 2B en RAM la especulación no aportó ganancias (E31 del proyecto). No se dispone de información sobre el dataset de entrenamiento del modelo base ni sobre si se aplicaron RLHF o DPO.
 
 ## Capacidades
 
-- Generación de texto conversacional en inglés y multilingüe, con la limitación de vocabulario de salida descrita arriba.
-- Razonamiento y respuesta a prompts generales heredados del modelo base Qwen3.5-2B.
-- Modo de razonamiento desactivable mediante el flag `--reasoning off` de llama-server.
-- Predicción multi-token (MTP) disponible en el archivo, aunque desactivada por defecto por pérdida de rendimiento en este tamaño.
-- Inferencia en CPU pura sin GPU, con estado DeltaNet en fp16 mediante `LLAMA_STATE_F16=1` (+11 % en chat).
-- Tool calling, function calling, capacidades de agente y visión: no disponible en la información proporcionada para esta variante.
+- Generación de texto conversacional, según el pipeline declarado (`text-generation`) y la etiqueta `conversational`.
+- Razonamiento: el ejemplo de ejecución incluye `--reasoning off`, lo que indica que el modelo base soporta un modo de razonamiento desactivable.
+- Predicción multi-token (MTP) disponible en el fichero, aunque desactivada por defecto y no combinable con `LLAMA_STATE_F16=1` (provoca un assert).
+- Capacidades multilingües: no confirmadas en la información disponible; la poda de la cabeza afecta más al multilingüe (12,6 % de posiciones fuera) que al inglés (1,3 %).
+- Tool calling / function calling: no disponible en la información proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
+- Capacidades de visión o audio: no disponibles.
 
 ## Casos de uso
 
-- Chat local en hardware embebido: el caso documentado por el autor es una Xiaomi TV Box S con 4× Cortex-A55 y ~1 GB de RAM, donde el modelo sostiene conversación a 7,7 tok/s. Sirve para asistentes de voz o texto en dispositivos sin GPU.
-- Kioscos y paneles informativos offline: con 0,99 GB en RAM y contexto de 1024 tokens configurado, cabe en dispositivos tipo Raspberry Pi o mini-PC de bajo coste para respuestas guiadas y FAQ.
-- Prototipado de pipelines de generación de texto en entornos sin acelerador: permite validar prompts y flujos antes de migrar a una cuantización estándar o a una GPU.
-- Investigación sobre compresión de vocabulario: la cabeza podada con `output_ids` es un caso de estudio reproducible para medir el impacto de recortar el vocabulario de salida en calidad (bits por byte) y velocidad.
-- Educación y demostraciones de llama.cpp parcheado: útil para explicar cuantización Q4_K, imatrix y repacking de CPU en cursos o talleres.
-- Evaluación comparativa de cuantizaciones en hardware limitado: el autor publica métricas de perplejidad en bits por byte que permiten comparar modelos con tokenizadores distintos de forma justa.
+- Asistente conversacional en dispositivos de gama ultrabaja: el fichero está calibrado para una TV Box con ~1 GB de RAM y 4 Cortex-A55, donde sostiene 7,7 tok/s en chat real; encaja en asistentes de voz o texto embebidos en televisores, receptores o electrodomésticos conectados.
+- Despliegue offline en hardware sin GPU: al ejecutarse con llama.cpp sobre CPU y ocupar 0,99 GB en el dispositivo, permite inferencia local sin conexión ni servicios en la nube en entornos con conectividad intermitente.
+- Prototipado de aplicaciones edge antes de escalar: sirve para validar prompts y flujos conversacionales en el hardware objetivo final antes de migrar a un modelo mayor o a un servidor.
+- Experimentación académica sobre compresión: la poda de cabeza con `output_ids` y la cuantización Q4_K con imatrix son un caso de estudio reproducible para investigar el equilibrio calidad/huella (0,909 bits/byte de perplejidad en inglés).
+- Generación de texto breve en paneles informativos o kioscos: con contexto de ejecución de 1.024 tokens y procesamiento de prompt de 17,8 tok/s, es adecuado para respuestas cortas y plantillas predefinidas.
+- Evaluación comparativa de runtimes: al requerir un llama.cpp parcheado, permite medir el impacto de parches de kernel y repaquetado de tensores frente al llama.cpp estándar en el mismo dispositivo.
 
 ## Benchmarks y rendimiento
 
-| Metrica | Valor | Entorno |
+| Metrica | Valor | Contexto |
 |---|---|---|
-| Chat real | 7,7 tok/s | Xiaomi TV Box S (3.ª gen), 4× Cortex-A55, ~1 GB RAM |
-| Procesamiento de prompt | 17,8 tok/s | mismo entorno |
-| Calidad (perplejidad) | 0,909 bits/byte | texto fijo de 22 KB en inglés |
-| Memoria en inferencia | 0,99 GB | mismo entorno |
-| Tamano del archivo | 1,18 GB | GGUF Q4_K con bloque MTP |
+| Chat real (tok/s) | 7,7 | Xiaomi TV Box S (3.ª gen), 4× Cortex-A55, ~1 GB RAM |
+| Procesamiento de prompt (tok/s) | 17,8 | Mismo dispositivo |
+| Calidad (bits/byte) | 0,909 | Perplejidad en inglés sobre texto fijo de 22 KB, convertida a bits/byte |
+| Huella en dispositivo | 0,99 GB | RAM ocupada en la TV Box |
 
 No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM: no aplica en el caso documentado; la inferencia es en CPU. En RAM se necesitan aproximadamente 0,99 GB para el modelo y algo más para el contexto (con `-c 1024` y `-ub 128`).
-- GPU recomendadas: no disponible; el autor no documenta ejecución en GPU para esta variante.
-- CPU: el caso de referencia es un SoC ARM de 4 núcleos Cortex-A55. El comando de ejemplo usa `-t 3` (tres hilos).
-- ¿Cabe en GPU de consumo? No hay datos; el archivo requiere el llama.cpp parcheado del repositorio smolmaxxing, por lo que no se puede cargar en LM Studio, Ollama ni llama.cpp estándar.
-- Opciones de despliegue: únicamente `llama-server` del fork parcheado (`patches/llama.cpp-v0.8.0-tvbox.patch` sobre llama.cpp en el commit `8642541`). El script `tv-llm-ui/start.sh` del repositorio arranca el modelo con los ajustes del autor.
-- Latencia y throughput: 7,7 tok/s de generación y 17,8 tok/s de prompt en la TV box; no hay mediciones en otros equipos.
+- VRAM/RAM estimada: 0,99 GB en el dispositivo de referencia; el fichero pesa 1,18 GB en disco.
+- GPU recomendadas: no aplica para el escenario objetivo; el modelo está pensado para CPU. No se han publicado requisitos para GPU.
+- Cabe en GPU de consumo: no disponible; el proyecto se centra en CPU de bajo consumo (Cortex-A55).
+- Opciones de despliegue: exclusivamente llama.cpp parcheado (llama.cpp en `8642541` con `patches/llama.cpp-v0.8.0-tvbox.patch`). Stock llama.cpp, LM Studio y Ollama no cargan el fichero.
+- Comando de referencia: `LLAMA_STATE_F16=1 llama-server -m w-q4k-h65p8.gguf -t 3 -c 1024 -ub 128 -b 128 --reasoning off`. `LLAMA_STATE_F16=1` aporta un +11 % en chat y no debe combinarse con especulación MTP.
+- Latencia y throughput: 7,7 tok/s de generación y 17,8 tok/s de prompt en la TV Box de referencia; no hay datos para otros hardware.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Formato | Licencia | Notas |
+| Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| hyperionaidev/Qwen3.5-2B-tvbox-GGUF | 2,08B | no disponible | GGUF Q4_K con cabeza podada | Apache-2.0 | Requiere llama.cpp parcheado; 0,99 GB en RAM; 7,7 tok/s en TV box |
-| Qwen/Qwen3.5-2B | 2,08B | no disponible | safetensors (Transformers) | Apache-2.0 | Modelo base original, sin poda de vocabulario |
-| unsloth/Qwen3.5-2B-GGUF | 2,08B | no disponible | GGUF BF16 + imatrix | Apache-2.0 | Conversión BF16 e imatrix usadas como fuente; compatible con llama.cpp estándar |
-| DevQuasar/Qwen.Qwen3.5-2B-GGUF | 2,08B | no disponible | GGUF | Apache-2.0 | Cuantización GGUF convencional del mismo modelo base |
+| Qwen3.5-2B-tvbox-GGUF (este) | 2,08 B | no disponible (ejemplo con 1.024) | 7,7 tok/s en TV Box; 0,909 bits/byte | Apache-2.0 | GGUF con llama.cpp parcheado |
+| unsloth/Qwen3.5-2B-GGUF | 2,08 B | no disponible | no disponible | Apache-2.0 (según modelo base) | GGUF estándar, compatible con llama.cpp, LM Studio y Ollama |
+| Qwen/Qwen3.5-2B (BF16) | 2,08 B | no disponible | no disponible | Apache-2.0 | Safetensors, requiere hardware con más memoria |
+
+La comparativa con otras familias de modelos del mismo tamaño no está disponible en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Incompatibilidad de runtime: el archivo no carga en llama.cpp estándar, LM Studio ni Ollama; exige el fork parcheado de smolmaxxing.
-- Cabeza de salida podada: el modelo no puede generar el 1,3 % de las posiciones de texto en inglés ni el 12,6 % en multilingüe, lo que produce errores léxicos y tokens extraños en dominios poco representados en el corpus de selección.
-- Contexto corto en la configuración de referencia: el comando de ejemplo usa `-c 1024`; no se documenta la longitud de contexto nativa del modelo base en esta ficha.
-- Riesgo de alucinación: inherente a un modelo de 2B; la poda de vocabulario puede agravarlo en temas especializados.
-- Sesgos: no documentados por el autor; heredados del corpus de entrenamiento del modelo base y del corpus usado para elegir la cabeza.
-- Restricciones de licencia: Apache-2.0 permite uso comercial, pero la obligación de usar un fork parcheado añade coste de mantenimiento y riesgo de seguridad en producción.
-- Madurez: 0 descargas y 0 likes en el momento de la consulta; proyecto de investigación personal, sin soporte ni garantías.
-- El flag `LLAMA_STATE_F16=1` no se puede combinar con la especulación MTP (provoca un assert según el autor).
+- Requiere un llama.cpp parcheado concreto; las herramientas estándar (llama.cpp sin parche, LM Studio, Ollama) no pueden cargar el fichero.
+- La cabeza de salida podada impide generar tokens fuera de las 65.672 filas conservadas: el 1,3 % de las posiciones en inglés y el 12,6 % en multilingüe quedan fuera, con impacto notable en idiomas distintos del inglés.
+- El bloque MTP está desactivado por defecto y su uso combinado con `LLAMA_STATE_F16=1` provoca un assert.
+- El contexto de ejecución documentado es de 1.024 tokens; no se especifica la longitud de contexto nativa del modelo base.
+- Riesgo de alucinación: inherente a un modelo de 2B parámetros; no se han publicado evaluaciones de fidelidad.
+- Sesgos conocidos: no documentados en la información disponible.
+- Uso comercial: permitido por Apache-2.0, pero conviene verificar las condiciones del modelo base y de la imatrix de unsloth, así como el mantenimiento del parche de llama.cpp (MIT).
+- El rendimiento medido (7,7 tok/s) corresponde a un dispositivo concreto; no debe extrapolarse a otro hardware sin medición.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/hyperionaidev/Qwen3.5-2B-tvbox-GGUF
+- Repositorio Hugging Face: https://huggingface.co/hyperionaidev/Qwen3.5-2B-tvbox-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B
-- Conversión BF16 e imatrix: https://huggingface.co/unsloth/Qwen3.5-2B-GGUF
-- Cuantización GGUF alternativa: https://huggingface.co/DevQuasar/Qwen.Qwen3.5-2B-GGUF
+- GGUF BF16 e imatrix de unsloth: https://huggingface.co/unsloth/Qwen3.5-2B-GGUF
 - Proyecto smolmaxxing: https://github.com/hyperionaidev/smolmaxxing
-- Documento de experimentos (secciones 11, 16 y 17): https://github.com/hyperionaidev/smolmaxxing/blob/main/EXPERIMENT.md
+- Documento de experimentos (EXPERIMENT.md, §11, §16, §17): https://github.com/hyperionaidev/smolmaxxing/blob/main/EXPERIMENT.md
+- Scoreboard del proyecto: https://github.com/hyperionaidev/smolmaxxing#scoreboard
+- Guía de inicio rápido: https://github.com/hyperionaidev/smolmaxxing#quick-start
+- Perfil del autor: https://huggingface.co/hyperionaidev
 - llama.cpp: https://github.com/ggml-org/llama.cpp

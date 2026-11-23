@@ -2,101 +2,97 @@
 
 ## Resumen
 
-Fred-9B-i1-GGUF es un repositorio de cuantizaciones en formato GGUF generado por mradermacher a partir del modelo base CrowdMind/Fred-9B. No se trata de un modelo entrenado desde cero, sino de una conversion de pesos ya existentes a cuantizaciones de precision reducida mediante el flujo de trabajo de llama.cpp, en este caso con "importance matrix" (imatrix), como indica el sufijo "i1" y el campo `quantize_version: 2` de la model card.
+Fred-9B-i1-GGUF es una coleccion de cuantizaciones en formato GGUF del modelo base CrowdMind/Fred-9B, publicada por el usuario mradermacher, especializado en la generacion de cuantizaciones de alta calidad con ficheros imatrix. El modelo original cuenta con 9.197.093.888 parametros (aproximadamente 9,2 mil millones) y esta etiquetado con el identificador de arquitectura qwen3_5, lo que lo situa en la familia de transformers densos derivados de Qwen 3.5. La licencia declarada es Apache 2.0, lo que permite uso comercial sin restricciones adicionales.
 
-El repositorio ofrece 24 variantes de cuantizacion distintas, que van desde IQ1_S e IQ1_M (las mas agresivas en compresion) hasta Q6_K, pasando por toda la familia K-quant e I-quant (Q2_K, Q3_K_M, IQ3_XXS, Q4_K_M, IQ4_XS, Q5_K_M, etc.). Esto lo convierte en un catalogo util para quien necesite ajustar el equilibrio entre tamano en disco, consumo de memoria y fidelidad respecto al modelo original.
+La relevancia de esta publicacion radica en que facilita el despliegue del modelo en hardware de consumo mediante cuantizaciones que van desde 4,0 GB (i1-Q2_K) hasta 7,7 GB (i1-Q6_K), ademas de incluir el fichero imatrix necesario para generar cuantizaciones propias. El repositorio completo ocupa 81,3 GB e incluye 22 variantes de cuantizacion, lo que permite elegir el equilibrio entre calidad y huella de memoria segun el hardware disponible.
 
-La relevancia practica del repositorio es limitada por la falta de documentacion: la model card no incluye informacion sobre arquitectura, datos de entrenamiento, licencia, idiomas ni contexto. Ademas, el repositorio registra 0 descargas y 0 "likes" en el momento de la consulta, y los metadatos de safetensors asociados indican 1.278.200 parametros, una cifra incoherente con la denominacion "9B" del modelo, por lo que el dato debe tratarse con cautela.
+El modelo esta orientado a generacion de texto conversacional y esta etiquetado como compatible con text-generation-inference y transformers. La informacion publicada no detalla la longitud de contexto, los datos de entrenamiento ni los resultados de benchmarks del modelo base, por lo que varios apartados de esta ficha se marcan como no disponibles.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (derivada de CrowdMind/Fred-9B; no se documenta en el repositorio) |
-| Parametros totales | no disponible con certeza. La denominacion del modelo indica 9B; los metadatos de safetensors del repo indican 1.278.200, cifra inconsistente |
-| Parametros activos | no disponible (no se indica que sea un modelo MoE) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Q2_K, Q2_K_S, Q3_K_S, Q3_K_M, Q3_K_L, Q4_0, Q4_1, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, IQ1_S, IQ1_M, IQ2_XXS, IQ2_XS, IQ2_S, IQ2_M, IQ3_XXS, IQ3_XS, IQ3_S, IQ3_M, IQ4_XS, small-IQ4_NL |
-| Idiomas soportados | no disponible |
-| Licencia | no disponible |
-| Formato de pesos | GGUF (cuantizaciones para llama.cpp); el campo `convert_type` indica `hf` como origen de la conversion |
-| Tamano del repositorio | 0.0 GB segun los metadatos de Hugging Face (dato probablemente no poblado, no refleja el conjunto real de 24 ficheros GGUF) |
-| Fecha de creacion | 2026-09-12 |
-| Fecha de ultima actualizacion | 2026-09-12 |
-| Descargas / likes | 0 / 0 |
+| Arquitectura | Transformer denso (etiqueta qwen3_5) |
+| Parametros totales | 9.197.093.888 (aproximadamente 9,2 B) |
+| Parametros activos | No aplica (modelo denso) |
+| Longitud de contexto | No disponible |
+| Tipos de cuantizacion | i1-Q2_K, i1-Q3_K_S, i1-IQ3_S, i1-IQ3_M, i1-Q3_K_M, i1-Q3_K_L, i1-IQ4_XS, i1-Q4_0, i1-Q4_K_S, i1-IQ4_NL, i1-Q4_K_M, i1-Q4_1, i1-Q5_K_S, i1-Q5_K_M, i1-Q6_K (mas fichero imatrix) |
+| Idiomas soportados | Ingles (segun la model card del autor) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (cuantizado); el modelo base original en safetensors |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion sobre la arquitectura interna del modelo base CrowdMind/Fred-9B en los datos proporcionados. La model card de este repositorio no describe si se trata de un transformer denso, un MoE, un modelo hibrido ni ninguna innovacion de atencion. Tampoco hay datos sobre el numero de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de alineacion como RLHF, DPO o similares.
+La informacion disponible no detalla la arquitectura interna del modelo base CrowdMind/Fred-9B mas alla de la etiqueta qwen3_5, que sugiere una arquitectura transformer densa derivada de la familia Qwen 3.5. No se han publicado en la informacion proporcionada datos sobre el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas de RLHF, DPO o ajuste supervisado.
 
-Lo unico documentado es el proceso de cuantizacion: la model card incluye los campos `quantize_version: 2`, `output_tensor_quantised: 1` y `convert_type: hf`, ademas de la etiqueta `nicoboss` y la referencia explicita a que son "weighted/imatrix quants" del modelo CrowdMind/Fred-9B. Esto implica que las cuantizaciones se calcularon usando una matriz de importancias (imatrix) para ponderar la perdida de precision por capa, un procedimiento habitual en llama.cpp que mejora la calidad de las cuantizaciones de baja precision (IQ1, IQ2, IQ3) respecto a las cuantizaciones "a ciegas". El campo `skip_mmproj` aparece vacio, pero la informacion no permite confirmar ni descartar que el modelo base tenga componentes multimodales.
+La innovacion tecnica destacable de esta publicacion es el uso de cuantizaciones ponderadas con fichero imatrix (importance matrix), generadas mediante la herramienta de cuantizacion de llama.cpp. Estas cuantizaciones i1 suelen ofrecer mejor calidad que las cuantizaciones estaticas equivalentes en tamano, especialmente en los rangos bajos (Q2, Q3). El autor incluye ademas el fichero imatrix original para que otros usuarios puedan generar sus propias variantes. Las cuantizaciones estaticas estan disponibles en un repositorio separado (mradermacher/Fred-9B-GGUF).
 
 ## Capacidades
 
-No se han documentado capacidades especificas del modelo en la informacion disponible. A partir del formato y del proceso de conversion, lo unico que puede afirmarse con certeza es lo siguiente:
-
-- Generacion de texto mediante el runtime de llama.cpp y sus derivados, al ser un modelo en formato GGUF.
-- Compatibilidad con los 24 niveles de cuantizacion publicados, lo que permite seleccionar el compromiso entre calidad y consumo de recursos.
-- Soporte de tool calling, agentes, razonamiento multi-paso, vision, audio o modo "thinking": no disponible (no documentado).
-- Capacidades multilingues: no disponible (no se declara lista de idiomas).
-- Capacidades de generacion de codigo o matematicas: no disponible (no documentado).
+- Generacion de texto conversacional en ingles, orientada a dialogos multi-turno.
+- Razonamiento y respuesta a instrucciones, segun la naturaleza del modelo base.
+- Compatibilidad con text-generation-inference y transformers.
+- Despliegue mediante llama.cpp y ecosistemas compatibles con GGUF (Ollama, LM Studio, entre otros).
+- Capacidad de generar cuantizaciones personalizadas a partir del fichero imatrix incluido.
+- No se ha documentado soporte de tool calling, function calling, agentes, vision, audio ni modo thinking en la informacion disponible.
+- Capacidades multilingues no documentadas; la model card declara unicamente ingles.
 
 ## Casos de uso
 
-- Inferencia local en estacion de trabajo sin conexion: los ficheros GGUF se ejecutan con llama.cpp u Ollama en CPU o GPU local, lo que permite trabajar con datos que no pueden salir de la red corporativa. Es adecuado porque el repositorio ofrece variantes de distinto tamano para ajustar al hardware disponible.
-- Despliegue en portatiles y equipos de gama media: las cuantizaciones IQ1_S, IQ1_M, IQ2_XXS e IQ2_XS reducen el modelo a un rango aproximado de 2,5 a 4 GB, lo que posibilita ejecutarlo en equipos con 8 GB de RAM unificada o VRAM. Requiere validar previamente la degradacion de calidad, que en estos niveles suele ser notable.
-- Servicio de inferencia autoalojado con llama.cpp server o vLLM: usando Q4_K_M o Q5_K_M en una GPU de consumo se puede exponer un endpoint compatible con la API de OpenAI para prototipos internos.
-- Evaluacion comparativa de cuantizaciones: el repositorio publica 24 variantes del mismo modelo, lo que lo convierte en un material idoneo para investigar la relacion entre nivel de cuantizacion, consumo de memoria y calidad de salida (por ejemplo, midiendo perplejidad frente al modelo original en FP16).
-- Prototipado academico y experimentacion en aprendizaje automatico: util para investigadores que necesiten un modelo de ~9B ejecutable en un unico equipo sin depender de infraestructura en la nube, siempre que la licencia del modelo base lo permita.
-- Sustitucion de bajo coste en pipelines de generacion de texto por lotes: para tareas de resumen, clasificacion o reescritura sobre volumenes grandes, donde el coste por token en API seria elevado, con la advertencia de que la calidad no esta verificada por benchmarks publicos.
-- Pruebas de integracion con herramientas de agentes: si el modelo base soporta function calling, las cuantizaciones Q5_K_M y Q6_K serian las candidatas para entornos de agentes, ya que las de baja precision tienden a degradar el seguimiento de instrucciones estructuradas. Este extremo no esta confirmado en la informacion disponible.
+- Despliegue local en estaciones de trabajo con GPU de consumo: las cuantizaciones i1-Q4_K_M (5,9 GB) e i1-Q5_K_M (6,7 GB) permiten ejecutar el modelo en GPUs con 8-12 GB de VRAM mediante llama.cpp u Ollama, manteniendo una calidad cercana al modelo original.
+- Prototipado rapido de asistentes conversacionales: el modelo puede gestionar dialogos multi-turno en ingles y sirve para validar flujos de conversacion antes de migrar a infraestructura de produccion.
+- Evaluacion comparativa de cuantizaciones: el repositorio incluye 22 variantes de cuantizacion, lo que permite medir el impacto de la cuantizacion en la calidad de las respuestas para un caso de uso concreto.
+- Generacion de cuantizaciones propias: el fichero imatrix publicado permite a equipos con requisitos especificos crear variantes adaptadas a su hardware o dominio.
+- Investigacion sobre cuantizacion: util para estudiar el comportamiento de tecnicas i1 frente a cuantizaciones estaticas en modelos de aproximadamente 9 B de parametros.
+- Inferencia en entornos con memoria limitada: la variante i1-Q2_K (4,0 GB) permite ejecutar el modelo en GPUs con 6 GB de VRAM o incluso en CPU, a costa de una perdida de calidad notable.
+- Integracion en pipelines de generacion de texto con TGI: el modelo esta etiquetado como compatible con text-generation-inference, lo que facilita su despliegue en servidores con esa infraestructura.
 
 ## Benchmarks y rendimiento
 
 No se han publicado resultados de benchmarks en la informacion disponible.
 
-El repositorio no incluye tablas de MMLU, HumanEval, GSM8K ni metricas de perplejidad por cuantizacion, y los resultados de busqueda web asociados no contienen informacion relevante sobre este modelo (devuelven paginas corporativas de Microsoft y un volumen de tareas compartidas de BioNLP ajenas al modelo).
-
 ## Requisitos de hardware
 
-Las cifras de VRAM que se indican a continuacion son estimaciones generales para un modelo de ~9B parametros en formato GGUF, no datos publicados por el autor:
-
-- Cuantizaciones IQ1_S / IQ1_M: aproximadamente 2,5-3,5 GB de memoria. Ejecutables en CPU con 8 GB de RAM.
-- Cuantizaciones IQ2_XXS / IQ2_XS / IQ2_S / IQ2_M y Q2_K: aproximadamente 3,5-4,5 GB. Viables en GPU con 6 GB de VRAM.
-- Cuantizaciones Q3_K_S / Q3_K_M / Q3_K_L e IQ3_*: aproximadamente 4,5-5,5 GB. Viables en GPU de 8 GB de VRAM (RTX 3060 Ti, RTX 4060, RTX 2070).
-- Cuantizaciones Q4_K_S / Q4_K_M / IQ4_XS / small-IQ4_NL: aproximadamente 5,5-6,5 GB. Recomendadas para GPU de 8-12 GB (RTX 3060 12 GB, RTX 4070).
-- Cuantizaciones Q5_K_S / Q5_K_M: aproximadamente 6,5-7,5 GB. Requieren 10-12 GB de VRAM para dejar margen de contexto.
-- Cuantizacion Q6_K: aproximadamente 7,5-8,5 GB. Adecuada para RTX 4080, RTX 4090 o A100 en configuraciones de un solo usuario.
-- GPU de centro de datos: A100 40/80 GB, H100 o L40S si se despliega con vLLM en precision completa o se sirve a multiples usuarios concurrentes.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, llama-cpp-python, KoboldCpp, text-generation-webui y servidores compatibles con GGUF. vLLM y TGI tienen soporte limitado o indirecto para GGUF, por lo que para produccion a escala convendria reconvertir a safetensors.
-- Latencia y throughput estimados: no disponible. Depende del cuantizacion elegida, del hardware y del backend, y no hay mediciones publicadas por el autor.
+- VRAM estimada para inferencia (aproximada, segun el tamano del fichero GGUF mas overhead de contexto):
+  - i1-Q2_K: aproximadamente 4,5-5 GB.
+  - i1-IQ3_M / i1-Q3_K_M: aproximadamente 5-6 GB.
+  - i1-Q4_K_M: aproximadamente 6,5-7,5 GB.
+  - i1-Q5_K_M: aproximadamente 7,5-8,5 GB.
+  - i1-Q6_K: aproximadamente 8,5-9,5 GB.
+- GPU recomendadas: RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070, RTX 4080, RTX 4090, A100 o H100 para despliegues de mayor concurrencia.
+- Cabe en GPU de consumo: si, desde una RTX 3060 12 GB o RTX 4060 Ti 16 GB con cuantizaciones Q4/Q5; las variantes Q2/Q3 pueden ejecutarse en GPUs de 6-8 GB.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, text-generation-inference (con soporte GGUF) y otros runners compatibles con GGUF.
+- Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-No hay datos de rendimiento de Fred-9B-i1-GGUF que permitan una comparacion cuantitativa. La tabla siguiente situa el modelo frente a alternativas de tamano similar ampliamente utilizadas, usando datos publicos de esas alternativas; las celdas de Fred-9B reflejan la ausencia de informacion en el repositorio.
-
-| Modelo | Parametros | Contexto | Licencia | Disponibilidad en GGUF | Notas |
+| Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| Fred-9B-i1-GGUF | 9B segun denominacion (no confirmado) | no disponible | no disponible | Si (24 cuantizaciones) | Repositorio sin descargas ni documentacion |
-| Gemma 2 9B | 9,2B | 8192 tokens | Licencia Gemma (uso comercial con condiciones) | Si | Referencia de dominio publico |
-| Llama 3.1 8B | 8B | 128.000 tokens | Licencia comunitaria Llama 3.1 | Si | Referencia de dominio publico |
-| Mistral 7B | 7,3B | 8000 (v0.1) / 32.000 (v0.3) tokens | Apache 2.0 | Si | Referencia de dominio publico |
+| Fred-9B-i1-GGUF (este) | 9,2 B | No disponible | Apache 2.0 | GGUF cuantizado | Hugging Face |
+| CrowdMind/Fred-9B (base) | 9,2 B | No disponible | Apache 2.0 | Safetensors | Hugging Face |
+| mradermacher/Fred-9B-GGUF (estaticas) | 9,2 B | No disponible | Apache 2.0 | GGUF estatico | Hugging Face |
+
+No se dispone de datos de rendimiento ni de contexto para comparar con alternativas de la misma categoria; la comparativa se limita a las variantes del mismo modelo base.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de licencia declarada: no se especifica la licencia del modelo base ni de las cuantizaciones derivadas. Esto impide determinar si el uso comercial esta permitido y constituye un riesgo legal directo para cualquier despliegue en produccion.
-- Incoherencia en el recuento de parametros: el nombre indica 9B, mientras que los metadatos de safetensors del repositorio indican 1.278.200. No es posible confirmar el tamano real del modelo con la informacion disponible.
-- Repositorio sin adopcion ni validacion externa: 0 descargas y 0 likes, creado y actualizado el mismo dia (2026-09-12). No ha sido auditado por terceros.
-- Calidad no verificada: no hay benchmarks, ni mediciones de perplejidad por cuantizacion, ni comparaciones con el modelo original en FP16. Se desconoce la degradacion real introducida por la cuantizacion.
-- Riesgo de degradacion severa en cuantizaciones extremas: las variantes IQ1_S, IQ1_M e IQ2_XXS operan en regimenes de compresion muy agresivos, donde son frecuentes la perdida de coherencia, la repeticion y el fallo en el seguimiento de instrucciones.
-- Riesgo de alucinacion: inherente a cualquier modelo de lenguaje de esta escala y agravado por la falta de informacion sobre el entrenamiento y la alineacion del modelo base.
-- Contexto e idiomas desconocidos: no se puede planificar el uso en conversaciones multi-turno largas ni en aplicaciones multilingues sin datos del modelo base.
-- El tamano de repositorio reportado (0.0 GB) no refleja el contenido real, lo que sugiere metadatos incompletos en Hugging Face y obliga a verificar los ficheros antes de cualquier integracion automatizada.
-- Los resultados de busqueda web asociados no aportan informacion tecnica sobre el modelo, por lo que no ha sido posible contrastar la model card con fuentes independientes.
+- La model card declara unicamente soporte de ingles; el rendimiento en castellano no esta documentado y probablemente sea inferior.
+- No se ha publicado informacion sobre sesgos, alineacion o filtros de seguridad del modelo base.
+- Riesgo de alucinacion inherente a los modelos de lenguaje; no se han documentado evaluaciones de factualidad.
+- La longitud de contexto no esta disponible, lo que impide planificar casos de uso con ventanas largas.
+- Las cuantizaciones de baja calidad (Q2, Q3) degradan notablemente la calidad de las respuestas; el autor recomienda IQ3_XXS o superiores frente a Q3_K*.
+- El modelo base CrowdMind/Fred-9B no dispone de informacion publica sobre su entrenamiento en la informacion proporcionada, lo que limita la evaluacion de su procedencia y calidad.
+- La licencia Apache 2.0 permite uso comercial, pero conviene verificar la licencia del modelo base original antes de desplegarlo en produccion.
+- El repositorio ocupa 81,3 GB; descargar todas las variantes requiere espacio significativo en disco.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/mradermacher/Fred-9B-i1-GGUF
 - Modelo base: https://huggingface.co/CrowdMind/Fred-9B
-- Los resultados de busqueda web proporcionados no contienen enlaces relevantes sobre este modelo: las entradas devueltas corresponden a paginas corporativas de Microsoft y a un volumen de tareas compartidas de BioNLP 2025, sin relacion con Fred-9B.
-- Paper, blog, repositorio de codigo o demo: no disponible.
+- Cuantizaciones estaticas: https://huggingface.co/mradermacher/Fred-9B-GGUF
+- Pagina de descargas del autor: https://hf.tst.eu/model#Fred-9B-i1-GGUF
+- README de referencia para uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Grafico comparativo de cuantizaciones (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png
+- Analisis de cuantizaciones de Artefact2: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Solicitudes de cuantizacion: https://huggingface.co/mradermacher/model_requests
+- Web del autor (nethype GmbH): https://www.nethype.de/

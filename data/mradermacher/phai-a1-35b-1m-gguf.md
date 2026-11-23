@@ -2,96 +2,96 @@
 
 ## Resumen
 
-Phai-A1-35B-1M-GGUF es una coleccion de cuantizaciones en formato GGUF del modelo Phai-A1-35B-1M, desarrollado originalmente por PhaiModelLab. Esta version concreta la publica mradermacher, un conocido generador de cuantizaciones estaticas para llama.cpp. El modelo base cuenta con 34.660.610.688 parametros (aproximadamente 34,7 mil millones) y, segun el sufijo "1M" de su nombre, esta disenado para trabajar con una ventana de contexto muy extensa.
+Phai-A1-35B-1M es un modelo de lenguaje de aproximadamente 34.660 millones de parámetros desarrollado por PhaiModelLab, orientado a tareas de programación, uso como agente y contexto largo. La versión aquí descrita es una cuantización estática en formato GGUF realizada por mradermacher a partir de los pesos originales en formato transformers, lo que permite ejecutar el modelo en hardware de consumo mediante llama.cpp y herramientas compatibles.
 
-El modelo se distribuye exclusivamente como pesos cuantizados en GGUF, lo que lo orienta a inferencia local y despliegue en entornos con recursos limitados mediante llama.cpp, Ollama o servidores compatibles con la API de endpoints. El repositorio ocupa 19,9 GB e incluye un conjunto amplio de niveles de cuantizacion, desde Q2_K hasta Q8_0 y F16, lo que permite ajustar el equilibrio entre calidad y consumo de memoria.
+El modelo se distribuye bajo licencia Apache 2.0 y declara soporte para seis idiomas: chino, inglés, japonés, árabe, ruso y alemán. Sus etiquetas (coding, agent, long-context, rl) indican que ha sido entrenado o ajustado con refuerzo para tareas de razonamiento multi-paso y generación de código, y el sufijo "1M" del nombre sugiere una ventana de contexto de hasta un millón de tokens, aunque este dato no se confirma de forma explícita en la información disponible.
 
-La relevancia de esta ficha radica en que el modelo base apunta a un caso de uso de contexto ultralargo (hasta un millon de tokens segun su denominacion), un nicho donde pocas alternativas abiertas de ~35B estan disponibles en formato GGUF listo para usar. No obstante, la informacion publica sobre arquitectura, entrenamiento, licencia e idiomas es practicamente inexistente en la model card del repositorio.
+La relevancia de esta ficha radica en que ofrece una vía práctica para desplegar un modelo de 35B en entornos locales: el repositorio incluye once variantes de cuantización que van desde 13,0 GB (Q2_K) hasta 37,0 GB (Q8_0), lo que permite ajustar el equilibrio entre calidad y requisitos de memoria según el hardware disponible.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | no disponible (el nombre sugiere transformer con contexto extendido; sin confirmar) |
-| Parametros totales | 34.660.610.688 (~34,7B) |
-| Parametros activos | no disponible (no se indica que sea MoE) |
-| Longitud de contexto | no disponible con confirmacion; el sufijo "1M" sugiere hasta 1.000.000 de tokens |
-| Tipos de cuantizacion | F16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q4_K_M, Q4_K_S, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K, IQ4_XS |
-| Idiomas soportados | no disponible |
-| Licencia | no disponible |
-| Formato de pesos | GGUF (safetensors en el modelo base) |
+| Arquitectura | no disponible (transformer, según el formato de pesos y el pipeline de transformers) |
+| Parámetros totales | 34.660.610.688 (≈34,66 B) |
+| Parámetros activos | no disponible (no se indica que sea MoE) |
+| Longitud de contexto | no disponible (el nombre del modelo incluye "1M", sin confirmación explícita) |
+| Tipos de cuantización | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0 (estáticas); existen cuantizaciones con imatrix en el repo i1-GGUF |
+| Idiomas soportados | zh, en, ja, ar, ru, de |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (cuantizado); el modelo base se distribuye en transformers/safetensors |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion publica sobre la arquitectura interna del modelo base Phai-A1-35B-1M. Por el nombre y el tamano (34,7B parametros) cabe esperar un transformer denso, aunque no hay confirmacion de si emplea atencion lineal, mecanismos hibridos, decodificacion especulativa u otras tecnicas para sostener contextos de hasta un millon de tokens. Tampoco se documentan el numero de tokens de entrenamiento, la composicion del dataset ni si se aplicaron fases de RLHF, DPO o ajuste por instrucciones.
+No se dispone de información detallada sobre la arquitectura interna del modelo base. Por el formato de pesos (transformers) y el pipeline declarado, se trata de un transformer decoder-only, pero no se especifican innovaciones como atención lineal, decodificación especulativa o arquitecturas híbridas. Tampoco se detalla el número de tokens de entrenamiento, la composición del dataset ni las fases de alineación (RLHF/DPO), más allá de la etiqueta "rl" que indica el uso de aprendizaje por refuerzo en alguna etapa del entrenamiento.
 
-La unica informacion tecnica verificable procede de los metadatos de la cuantizacion: el proceso se realizo con la herramienta de mradermacher (quantize_version 2, convert_type hf, output_tensor_quantised 1), partiendo del repositorio original PhaiModelLab/Phai-A1-35B-1M. Los metadatos no indican la presencia de un proyector multimodal (mmproj), por lo que no hay evidencia de capacidades de vision en esta distribucion.
+La información disponible sobre esta versión se limita al proceso de cuantización: mradermacher ha generado cuantizaciones estáticas (quantize_version 2, output_tensor_quantised 1) a partir del modelo original, y ofrece además una variante con cuantización ponderada mediante imatrix en un repositorio separado. No se documentan detalles sobre el tokenizador, la configuración de atención ni el vocabulario.
 
 ## Capacidades
 
-- Generacion de texto conversacional: la etiqueta "conversational" del repositorio indica que el modelo esta ajustado para dialogos multi-turno.
-- Procesamiento de contexto ultralargo: la denominacion "1M" sugiere capacidad para manejar documentos de hasta un millon de tokens, si bien este dato no esta confirmado en la model card.
-- Compatibilidad con endpoints: la etiqueta "endpoints_compatible" indica que puede servirse a traves de infraestructura compatible con la API de Hugging Face.
-- Inferencia local via GGUF: soportado por llama.cpp y derivados (Ollama, LM Studio, servidores OpenAI-compatibles).
-- Tool calling / function calling: no disponible (no documentado).
-- Capacidades de agente y razonamiento multi-paso: no disponible (no documentado).
-- Capacidades multilingues: no disponible (idiomas no especificados).
-- Vision, audio o modo "thinking": no disponible (no documentado).
+- Generación de texto conversacional en seis idiomas: chino, inglés, japonés, árabe, ruso y alemán.
+- Generación de código, según la etiqueta "coding" del modelo.
+- Uso como agente y razonamiento multi-paso, según la etiqueta "agent".
+- Procesamiento de contexto largo, según la etiqueta "long-context" (la extensión exacta no está confirmada).
+- Entrenamiento con refuerzo (etiqueta "rl"), orientado presumiblemente a mejorar el razonamiento y la fiabilidad en tareas complejas.
+- Compatibilidad con endpoints, según la etiqueta "endpoints_compatible".
+- Soporte de tool calling / function calling: no disponible en la información proporcionada.
+- Capacidades de visión o audio: no disponible en la información proporcionada.
 
 ## Casos de uso
 
-- Analisis de repositorios de codigo completos: con una ventana potencial de hasta un millon de tokens, el modelo podria ingerir bases de codigo enteras para responder preguntas de arquitectura, localizar dependencias o resumir modulos, evitando estrategias de troceado (chunking) y recuperacion.
-- Revision de contratos y documentacion legal extensa: permitiria procesar expedientes completos de cientos de paginas en una sola pasada, comparando clausulas entre documentos y detectando inconsistencias sin perder el hilo global.
-- Asistentes conversacionales de atencion al cliente: la etiqueta "conversational" y el contexto largo permiten mantener historiales de sesion muy extensos con trazabilidad completa de la conversacion.
-- Procesamiento de transcripciones y actas de reuniones largas: resumen jerarquico, extraccion de acuerdos y generacion de tareas a partir de horas de transcripcion en una unica inferencia.
-- Investigacion documental y sintesis bibliografica: agregar decenas de articulos o informes en el contexto y producir revisiones comparativas con citas internas al material cargado.
-- Despliegue local en estaciones de trabajo: gracias a las cuantizaciones Q4_K_M y Q3_K_M, el modelo puede ejecutarse en equipos con 24-32 GB de VRAM o incluso en configuraciones con memoria unificada, sin depender de la nube.
-- Generacion de codigo asistida en IDE: las variantes Q4_K_S o IQ4_XS permiten integrar el modelo en flujos de autocompletado y explicacion de codigo en maquinas de gama alta para consumidor.
+- Asistencia de programación en local: el modelo puede integrarse en editores o CLI mediante llama.cpp u Ollama para autocompletar, explicar y refactorizar código, aprovechando su especialización en "coding" y su licencia Apache 2.0, que permite uso comercial sin restricciones adicionales.
+- Agentes autónomos de desarrollo: gracias a la etiqueta "agent", puede emplearse en bucles de razonamiento multi-paso para tareas como resolución de issues, generación de tests o navegación de repositorios, ejecutándose en estaciones de trabajo con GPU de consumo mediante las cuantizaciones Q4.
+- Análisis de documentación extensa: la orientación a contexto largo permite procesar manuales técnicos, contratos o bases de código completas en una sola pasada, siempre que se verifique empíricamente la ventana real soportada.
+- Atención al cliente multilingüe: con soporte para chino, inglés, japonés, árabe, ruso y alemán, puede desplegarse como backend conversacional para mercados internacionales, usando Q4_K_M (21,3 GB) en servidores con una sola GPU de 24 GB.
+- Procesamiento de documentos en entornos con requisitos de soberanía de datos: al poder ejecutarse íntegramente en infraestructura propia con llama.cpp, es adecuado para sectores regulados que no pueden enviar datos a APIs externas.
+- Investigación en alineación y RL: al estar etiquetado con "rl" y publicarse bajo Apache 2.0, sirve como base para experimentos de ajuste fino y evaluación de técnicas de refuerzo en modelos de 35B.
+- Despliegue en hardware modesto: la variante Q2_K (13,0 GB) permite ejecutar el modelo en GPUs de 16 GB o en configuraciones CPU+GPU con RAM suficiente, útil para prototipado y pruebas de concepto.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia (aproximada, calculada a partir de 34,7B parametros):
-  - F16: ~69 GB (no practico en GPU de consumidor).
-  - Q8_0: ~37 GB.
-  - Q6_K: ~28-29 GB.
-  - Q5_K_M: ~24-25 GB.
-  - Q4_K_M: ~20-21 GB.
-  - Q3_K_M: ~16-17 GB.
-  - Q2_K: ~12-13 GB.
-- GPU recomendadas: A100 80 GB o H100 para F16 y Q8_0; A100 40 GB, L40S o RTX 6000 Ada para Q6_K y Q5_K_M; RTX 4090 (24 GB) para Q4_K_M con contexto moderado.
-- Cabe en GPU de consumidor: si, en RTX 4090/3090 (24 GB) con Q4_K_M o inferiores y contexto limitado; en GPUs de 16 GB solo con Q3_K_M o Q2_K, con perdida notable de calidad.
-- Contexto largo: la ventana de hasta 1M tokens implicaria una cache KV enorme; en la practica requeriria atencion con memoria eficiente o cuantizacion de la cache KV, y no cabe en GPU de consumidor a maxima longitud.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, servidores compatibles con la API de OpenAI (llama-server), y potencialmente vLLM si se dispone de los pesos originales en safetensors.
-- Latencia y throughput: no disponibles (no publicados).
+- VRAM estimada para inferencia (según cuantización, más overhead de contexto KV):
+  - Q2_K: ~13,0 GB de pesos; viable en GPU de 16 GB.
+  - Q3_K_S / Q3_K_M / Q3_K_L: 15,3–18,2 GB; requiere 24 GB para contexto amplio.
+  - IQ4_XS / Q4_K_S / Q4_K_M: 19,0–21,3 GB; encaja en RTX 3090/4090 (24 GB) con contexto moderado.
+  - Q5_K_S / Q5_K_M: 24,1–24,8 GB; al límite de 24 GB, recomendable 32 GB o descarga parcial a CPU.
+  - Q6_K: 28,6 GB; requiere GPU de 32 GB o superior (A100 40 GB, RTX A6000).
+  - Q8_0: 37,0 GB; requiere A100 40 GB/80 GB o H100.
+- GPU recomendadas: RTX 4090/3090 para Q4; A100 40 GB o H100 para Q6/Q8; configuraciones multi-GPU para contexto largo con cuantizaciones altas.
+- ¿Cabe en GPU de consumo? Sí, en RTX 4090 (24 GB) con Q4_K_M y contexto moderado; en GPUs de 16 GB solo con Q2_K o descarga parcial.
+- Opciones de despliegue: llama.cpp, Ollama, y cualquier runtime compatible con GGUF (koboldcpp, LM Studio). Para el modelo base sin cuantizar, vLLM o TGI con safetensors.
+- Latencia y throughput estimados: no disponible en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Formato | Licencia | Notas |
+| Modelo | Parámetros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| Phai-A1-35B-1M-GGUF | ~34,7B | hasta 1M (segun nombre, sin confirmar) | GGUF | no disponible | Cuantizaciones estaticas de mradermacher |
-| Qwen2.5-32B-Instruct | ~32,8B | 131.072 tokens | safetensors, GGUF | Apache 2.0 | Referencia abierta consolidada en ~32B |
-| Gemma 2 27B | ~27B | 8.192 tokens | safetensors, GGUF | Gemma Terms | Menor contexto, ampliamente desplegado |
-| Yi-34B | ~34B | 200.000 tokens | safetensors, GGUF | Apache 2.0 (con matices) | Tamano comparable, contexto largo |
+| Phai-A1-35B-1M (esta ficha) | 34,66 B | no disponible ("1M" en el nombre) | Apache 2.0 | GGUF, safetensors | Etiquetas coding/agent/long-context/rl; 6 idiomas |
+| Modelos comparables de ~30–35B | no disponible | no disponible | no disponible | no disponible | No se dispone de datos verificables de alternativas equivalentes en la información proporcionada |
 
-La comparativa es orientativa: no hay datos publicos de rendimiento del modelo Phai-A1 que permitan una comparacion cuantitativa con estas alternativas.
+No se dispone de información suficiente para establecer una comparativa rigurosa con modelos de la misma categoría.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de model card tecnica: no se documentan arquitectura, datos de entrenamiento, benchmarks ni sesgos conocidos, lo que dificulta evaluar su calidad antes de desplegarlo.
-- Licencia no especificada: no puede confirmarse si el uso comercial esta permitido; es imprescindible verificar la licencia del modelo base PhaiModelLab/Phai-A1-35B-1M antes de cualquier uso en produccion.
-- Riesgo de alucinacion: sin datos de evaluacion ni de alineamiento (RLHF/DPO) no puede estimarse la tasa de alucinacion; debe validarse empiricamente.
-- Contexto de 1M no verificado: el sufijo del nombre no garantiza que la ventana este efectivamente entrenada para esa longitud; los modelos con contexto extendido suelen degradarse en el centro del contexto ("lost in the middle").
-- Idiomas no declarados: se desconoce el soporte real del castellano y de otros idiomas; probablemente el modelo base este orientado al ingles o al chino, sin confirmacion.
-- Cuantizaciones agresivas: Q2_K y Q3_K_S degradan notablemente la calidad en modelos de ~35B; para produccion se recomienda Q4_K_M o superior.
-- Coste de la cache KV: a contextos muy largos, la memoria necesaria para la cache puede superar la de los propios pesos, incluso con cuantizacion.
-- Repositorio sin descargas ni likes: no hay senales de validacion por parte de la comunidad en el momento de la consulta.
+- No se han publicado datos de benchmarks, por lo que el rendimiento real en tareas de código, razonamiento o multilingüismo no está verificado de forma independiente.
+- La ventana de contexto real no está confirmada: el sufijo "1M" del nombre sugiere un millón de tokens, pero debe validarse empíricamente antes de confiar en él en producción.
+- La cuantización degrada la calidad, especialmente en Q2_K y Q3; para uso serio se recomienda Q4_K_M o superior.
+- Riesgo de alucinación inherente a los modelos de lenguaje; no se documentan evaluaciones de fidelidad ni de tasas de error.
+- Sesgos conocidos: no disponibles; al no publicarse la composición del dataset, no es posible evaluar sesgos lingüísticos o culturales, especialmente en los idiomas menos representados (árabe, ruso, japonés).
+- El contexto largo incrementa el consumo de memoria KV, lo que puede reducir la ventana efectiva en GPUs de 24 GB incluso con cuantizaciones Q4.
+- Aunque la licencia es Apache 2.0 (permite uso comercial), conviene revisar la model card del modelo base por si hubiera condiciones adicionales no reflejadas en esta versión cuantizada.
+- El repositorio pesa 237,1 GB; la descarga de todas las variantes no es práctica, debe seleccionarse una sola cuantización.
 
 ## Enlaces
 
-- Repositorio GGUF: https://huggingface.co/mradermacher/Phai-A1-35B-1M-GGUF
+- Repositorio Hugging Face (GGUF): https://huggingface.co/mradermacher/Phai-A1-35B-1M-GGUF
 - Modelo base: https://huggingface.co/PhaiModelLab/Phai-A1-35B-1M
-- Perfil del autor de las cuantizaciones: https://huggingface.co/mradermacher
+- Cuantizaciones con imatrix: https://huggingface.co/mradermacher/Phai-A1-35B-1M-i1-GGUF
+- Página de descarga del autor: https://hf.tst.eu/model#Phai-A1-35B-1M-GGUF
+- Guía de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Comparativa de cuantizaciones (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Peticiones de cuantización del autor: https://huggingface.co/mradermacher/model_requests

@@ -2,122 +2,106 @@
 
 ## Resumen
 
-GoldWorm Coder es un bundle de modelo orientado a agentes de programación locales, publicado por el usuario Uuuuuuniiiiiii en Hugging Face bajo licencia MIT. Su componente central (el "cerebro") es un modelo de lenguaje a nivel de byte de tipo causal transformer con arquitectura de mezcla de expertos (MoE) de 4 expertos temáticos (stories, code, math, wiki). Según la model card, el cerebro base tiene 38M parámetros y alcanza ~113,6M de parámetros contando todos los expertos, con cada experto configurado a d512/L12.
+goldworm-coder es un modelo experimental de generación de texto desarrollado por el autor de Hugging Face Uuuuuuniiiiiii (Gold Lab). Se presenta como un MoE (mixture of experts) "upcycled" que opera a nivel de byte, sin tokenizador, con un vocabulario de 256 símbolos y 113.689.648 parámetros totales repartidos en cuatro expertos temáticos: stories, code, math y wiki. La propuesta no es tanto un modelo generativo de propósito general como el cerebro de un agente local que clasifica, enruta y verifica candidatos antes de emitir una respuesta.
 
-El planteamiento del proyecto es inusual: en lugar de entrenar un modelo generativo grande, el autor construye un agente que usa el MoE para *rankear*, *enrutar* y *verificar*, delegando la generación de lenguaje natural a un modelo auxiliar (qwen2.5-0.5b-GGUF vía llama.cpp). El bundle incluye checkpoints, manifiestos con hashes, scripts de entrenamiento y un sistema de "gate" que valida cada promoción de modelo con umbrales congelados y registro auditable.
+El interés del proyecto reside en su enfoque de ingeniería: el modelo no escribe libremente, sino que puntúa líneas candidatas por bits por byte (BPC) y solo promueve parches cuando una prueba pasa de rojo a verde en un worktree de git desechable. Según la model card, el agente envuelve el modelo con una capa de frases generadas por qwen2.5-0.5b, y el conjunto se distribuye como un bundle autocontenido de 1,73 GB.
 
-Es relevante ahora porque documenta, con números medidos y sin optimismo inflado, un enfoque de MoE a nivel de byte con enrutamiento por dominio verificable (100% de precisión de router en held-out), además de exponer explícitamente sus límites (0/5 en aritmética, ARC a nivel de azar). El repositorio ocupa 6,1 GB e incluye artefactos de sesiones v8 y v10, algunos rechazados por el propio gate del proyecto.
+Es relevante ahora por su honestidad documental sobre límites (0/5 en aritmética como modelo crudo, ARC-AGI a nivel de azar, generación libre con confianza pero incorrecta) y por su arquitectura poco habitual de byte-level sin tokenizador. No obstante, conviene tratarlo como una demo de investigación y no como un modelo de producción: el repositorio contiene stubs de pesos y solo el experto de stories es real.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Causal transformer a nivel de byte con mezcla de expertos (MoE) de 4 expertos tematicos |
-| Parametros totales | 38M (cerebro base), ~113,6M contando los 4 expertos |
-| Parametros activos | no disponible |
-| Longitud de contexto | no disponible (se menciona un candidato con contexto de 1024 tokens, rechazado por el gate) |
-| Tipos de cuantizacion | no disponible para el MoE; el modelo auxiliar de salida usa GGUF (qwen2.5-0.5b-GGUF) |
-| Idiomas soportados | no disponible (tokenizacion a nivel de byte; datos de entrenamiento en ingles para TinyStories mas code/math/wiki) |
-| Licencia | MIT |
-| Formato de pesos | PyTorch (checkpoint `moe.pt` y `experts/{stories,code,math,wiki}.pt`) |
+| Arquitectura | MoE byte-level sin tokenizador, 4 expertos temáticos (stories / code / math / wiki), vocab 256 |
+| Parámetros totales | 113.689.648 |
+| Parámetros activos | no disponible |
+| Longitud de contexto | no disponible (la model card menciona una ventana ctx-256 en el protocolo de evaluación de goldworm-v6, no confirmada para este modelo) |
+| Tipos de cuantización | no disponible |
+| Idiomas soportados | no disponible |
+| Licencia | apache-2.0 |
+| Formato de pesos | PyTorch (`moe.pt`, `experts/*.pt`); bundle de release en zip |
 
 ## Arquitectura y entrenamiento
 
-El cerebro es un transformer causal que opera a nivel de byte (sin tokenizador BPE), con una capa MoE de 4 expertos. Cada experto tiene dimension d512 y 12 capas. El enrutamiento es por dominio tematico con asignacion biyectiva tema→experto: la model card reporta una precision de router del 100% (4/4) en un conjunto held-out de cola y un pico medio de gate de 0,856. Segun las cifras del autor, la mezcla de los 4 expertos supera al mejor experto individual (BPC medio de cola 2,2385 del MoE frente a 2,2700 del mejor single; valor oracle de 1,0734 en stories).
+La arquitectura es un MoE byte-level con enrutamiento biyectivo tema→experto: cada entrada se clasifica en uno de los cuatro temas (stories, code, math, wiki) y se deriva al experto correspondiente. El vocabulario de 256 símbolos elimina el tokenizador y trabaja directamente sobre bytes, lo que simplifica el preprocesado pero limita la eficiencia por token. El modelo se describe como "upcycled", es decir, construido a partir de componentes previos y reorganizado en la estructura MoE, aunque la model card no detalla el proceso exacto de reciclaje.
 
-El proceso de promocion de modelos esta mediado por `rsi/gate.py`, un sistema con umbrales congelados y registro con encadenamiento de hashes que valida determinismo, deriva (KL), identidad de router, colapso de entropia, canarios de contaminacion y guardas anti-Goodhart. Segun la model card, dos candidatos fuertes de la fase 5 fueron rechazados por el gate pese a mejorar la mayoria de ejes (el candidato de contexto 1024 regresaba en TS-val; el candidato orientado a codigo degradaba el pico del router). La sesion v8 (2026-10-09) anadio un quinto dominio (HTML) y un experto de eliminacion de ruido auto-verificable, pero el gate emitio veredicto REJECT por deriva KL de 0,370, problemas de enlace/pico del router y 4,1M de coincidencias de solapamiento en plantillas HTML, por lo que el campeon `moe.pt` quedo intacto y los artefactos se archivaron en `cand_v8/`.
+Los datos de entrenamiento citados son roneneldan/TinyStories y wikitext, lo que explica el sesgo hacia narrativa simple y texto enciclopédico. No se especifica el número de tokens de entrenamiento, la composición exacta del dataset ni si hubo RLHF o DPO. La innovación técnica destacable no está en el modelo en sí, sino en el pipeline que lo rodea: clasificación, compuerta de enrutamiento, ranking por BPC, verificación mediante tests y generación de frases con qwen2.5-0.5b. El gate `rsi/gate.py` aplica umbrales congelados y un registro de auditoría encadenado por hash.
 
 ## Capacidades
 
-- Clasificacion de intencion: la model card reporta 10/10 aciertos exactos en categorias fix/test/chat/help/generate/inspect.
-- Ranking de candidatos por BPC: el modelo puntua soluciones generadas de forma determinista y las ordena.
-- Enrutamiento por dominio: asigna la consulta al experto tematico correspondiente con precision de router reportada del 100% en held-out.
-- Verificacion por tests: en el flujo del agente, una correccion solo se acepta si un test pasa de rojo a verde en un worktree git desechable (2/2 verificados en la sesion reportada).
-- Inspeccion y triaje: 4/4 en las pruebas de inspect/triage.
-- Chat con capa de salida auxiliar: 5/5 en saludos, suma basica (2+2), multiplicacion (7×8), capitales y memoria de sesion; la generacion la realiza qwen2.5-0.5b-GGUF, no el cerebro.
-- Remediacion: 5/5 en limpieza, reset, confirmacion y guardas 401.
-- No dispone de tool calling ni function calling declarados de forma explicita.
-- No dispone de capacidades de vision, audio ni thinking mode.
-- Multilingue: no disponible; la tokenizacion es a nivel de byte pero no se declaran idiomas soportados.
+- Generación de texto a nivel de byte, sin tokenizador, sobre temas de stories, code, math y wiki.
+- Clasificación de intención y enrutamiento temático hacia uno de los cuatro expertos (la model card menciona una demo de routing 10/10).
+- Ranking de líneas candidatas por BPC (menor es mejor), usado como mecanismo de selección en el agente.
+- Flujo de parcheo `fix` con verificación rojo→verde mediante tests en un worktree de git desechable.
+- Comandos de agente documentados: `fix`, `test`, `inspect`, `generate`, `classify`, `bench`, `help`, `reset`.
+- Memoria de sesión para conversación multi-turno (saludos, `2+2`, `7×8`, capitales, "my name is …").
+- Soporte de tool calling / function calling: no disponible explícitamente; el agente implementa su propia capa de comandos.
+- Capacidades multilingües: no disponibles; los datasets citados son en inglés.
+- Modo thinking, visión o audio: no disponibles.
 
 ## Casos de uso
 
-- Agente de reparacion de codigo local: el modelo puede integrarse en un flujo que genera candidatos de parche, los rankea por BPC y acepta solo los que superan un test rojo→verde. Es adecuado porque el autor publica verificacion por tests (2/2) y el diseno obliga a la verificacion empirica antes de fusionar.
-- Triaje de incidencias en pipelines de CI: el modelo clasifica entradas en fix/test/chat/help/generate/inspect (10/10 en las pruebas) y puede enrutar cada incidencia al experto tematico (code, math, wiki) correspondiente.
-- Pre-filtrado de parches en revision de codigo: usar el MoE como ranking barato para descartar candidatos de baja calidad antes de invocar un modelo mayor, reduciendo coste en flujos de generacion masiva.
-- Asistente de documentacion tecnica: combinado con una capa de salida como qwen2.5-0.5b-GGUF, puede mantener conversaciones multi-turno con memoria de sesion (5/5 en pruebas de chat) en despliegues locales sin GPU dedicada.
-- Reparacion de HTML generado: el experto `html.pt` de la sesion v8 rebajo el BPC de validacion de 2,6567 a 0,4234 (64k pasos, 240 min), lo que lo hace util para limpiar o completar plantillas HTML sinteticas, con la advertencia de que el gate lo rechazo por contaminacion.
-- Eliminacion de ruido en texto generado: el experto `proof.pt` (denoising x0) bajo el BPC de validacion de 2,3682 a 0,5732, util como paso de auto-verificacion de bytes generados (`selfprove.py`).
-- Enrutador de consultas en un ensemble local: asignar peticiones al experto correcto (stories, code, math, wiki) antes de invocar modelos especializados externos, aprovechando la precision de router reportada.
+- Enrutamiento temático en pipelines de clasificación: el gate biyectivo tema→experto permite dirigir consultas a un experto concreto (stories, code, math, wiki) con una latencia baja al ser un modelo de 113 M de parámetros.
+- Selección de candidatos por BPC en generación asistida: en lugar de aceptar la primera salida, el sistema puntúa varias líneas candidatas y elige la de menor BPC, útil en tareas de completado donde la verificación es barata.
+- Agente de parcheo verificado en CI: el flujo `fix` promueve un cambio solo cuando un test pasa de rojo a verde en un worktree desechable, lo que encaja en pipelines de integración continua con validación automática.
+- Demo educativa de arquitecturas MoE byte-level: el Space Gold_Lab reproduce el comportamiento del agente en el navegador y sirve para explicar enrutamiento, ranking y verificación sin necesidad de GPU.
+- Prototipado de asistentes con memoria de sesión: la capa de agente mantiene contexto conversacional (saludos, operaciones simples, nombres) para experimentar con flujos multi-turno de bajo coste.
+- Investigación sobre evaluación honesta de modelos pequeños: la model card documenta métricas BPC, límites y artefactos de benchmark, lo que lo hace útil como caso de estudio de reporting reproducible.
+- Clasificación de intención en juguetes y prototipos: la demo de routing 10/10 permite integrar un clasificador temático sencillo en aplicaciones de demostración.
 
 ## Benchmarks y rendimiento
 
-| Metrica | Valor | Protocolo |
-|---|---|---|
-| TinyStories val BPC | 0,8109 | `train_scaled.eval_bpc`, wins=128 |
-| BPC medio de cola por tema (stories/code/math/wiki) | 2,2385 | `verify_moe.bpc` |
-| Pico medio de gate | 0,856 (biyectivo) | `verify_moe.gate_dist` |
-| Precision de router (held-out) | 4/4 (100%) | `expert_router` |
-| ARC-AGI (3 juegos fijados) | 0/3 | seleccion divulgada; azar ≈ 1/16-17 |
-| Aritmetica | 0/5 | model card |
+Los datos son autodeclarados por el autor y medidos con `session_v9_scripts/benchmark_famous.py`; no hay comparación independiente.
 
-Comparativa de habilidades agente (goldworm-hybrid vs qwen2.5:0.5b solo, mismos prompts):
-
-| Habilidad | goldworm | qwen solo |
-|---|---|---|
-| classify | 10/10 | 4/10 |
-| fix | 2/2 | 1/2 (flaky) |
-| inspect | 4/4 | 3/4 |
-| chat | 5/5 | 5/5 |
-
-Artefactos v8 (todos rechazados por el gate, archivados en `cand_v8/`):
-
-| Artefacto | Valor |
+| Métrica | Valor |
 |---|---|
-| `cand_v8/html.pt` | BPC val 2,6567 → 0,4234 (64k pasos / 240 min) |
-| `cand_v8/proof.pt` | denoising x0, BPC val 2,3682 → 0,5732 |
-| `cand_v8/cand_moe_v8.pt` | candidato 5 expertos, BPC balanceado 6,08 → 2,79 |
-| Veredicto del gate | REJECT (deriva KL 0,370; 4,1M coincidencias de solapamiento HTML) |
+| TinyStories validation, slice de 256 KB (bits/byte) | 0,8125 |
+| WikiText-2 test, slice de 256 KB, zero-shot (bits/byte) | 2,2305 |
+| Code-infill interno (vs Qwen2.5-Coder-0.5B) | 5 % vs 47,5 % |
+| Aritmética como modelo crudo | 0/5 |
+| ARC-AGI | nivel de azar |
 
-No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) en la informacion disponible.
+La model card advierte que estos números no son comparables con goldworm-v6 (1,0073 bits/byte), que usa otro protocolo (ventana ctx-256 sobre 129.429 posiciones fijas de validación externa) y otro slice. Los valores anteriores de la card (0,8109 en TinyStories val y 2,2385 de "mean topic-tail") quedan sustituidos por los registrados arriba.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: con 113,6M parametros totales, el checkpoint en fp32 ocuparia aproximadamente 450 MB, en fp16 unos 227 MB, en int8 unos 114 MB y en int4 unos 57 MB. El repositorio completo ocupa 6,1 GB por los artefactos de las sesiones v8 y v10.
-- GPU recomendadas: cualquier GPU consumer moderna es suficiente por tamano; no se especifican modelos concretos en la informacion disponible. El modelo auxiliar de salida (qwen2.5-0.5b-GGUF) tambien cabe en consumer GPU y puede ejecutarse en CPU.
-- Cabe en GPU consumer: si, dado el reducido numero de parametros, aunque la model card no detalla VRAM ni GPU probadas.
-- Opciones de despliegue: carga mediante la ruta propia del proyecto `rsi/gate.load_moe("moe.pt", dev)` (PyTorch), con la advertencia explicita de no confiar en la configuracion embebida del checkpoint. La capa de salida conversacional usa llama.cpp con qwen2.5-0.5b-GGUF. El bundle Linux autocontenido se arranca con `start.sh`. No se mencionan vLLM, TGI ni Ollama.
+- VRAM estimada para inferencia: no disponible de forma oficial. Con 113,7 M de parámetros, en fp32 ocuparía aproximadamente 0,45 GB y en fp16 unos 0,23 GB, pero el bundle real pesa 1,73 GB y no se documentan cuantizaciones.
+- GPU recomendadas: no disponibles; por tamaño, cualquier GPU consumer moderna (RTX 3060 en adelante) debería poder cargar los pesos si el formato lo permite.
+- Cabe en GPU consumer: probablemente sí por número de parámetros, aunque no hay confirmación oficial ni instrucciones de despliegue estándar.
+- Opciones de despliegue: carga vía `rsi.gate.load_moe("moe.pt", dev)`; no se documenta soporte para vLLM, llama.cpp, Ollama ni TGI.
 - Latencia y throughput: no disponibles.
+- Advertencia de pesos: el `moe.pt` de la raíz es un stub (`stub-moe-placeholder`) y `experts/code.pt`, `experts/html.pt` y `experts/math.pt` son stubs de 16 bytes; solo `experts/stories.pt` es real (152 MB). Los pesos reales están en el asset `goldworm-coder-linux-v0.2.0.zip` (1,73 GB).
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
+| Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| goldworm-coder | 38M (cerebro) / ~113,6M con expertos | no disponible | MoE byte-level, agente de ranking/verificacion | MIT | Hugging Face (Uuuuuuniiiiiii/goldworm-coder) |
-| qwen2.5:0.5b | 0,5B | no disponible | Transformer denso, generacion de texto | Apache 2.0 (segun el modelo original) | Uso como capa de salida auxiliar en este proyecto |
-| goldworm-v6 | no disponible | no disponible | byte-level-transformer, tiny-stories | MIT | Hugging Face (Uuuuuuniiiiiii/goldworm-v6) |
+| goldworm-coder | 113,7 M (MoE, 4 expertos) | no disponible | Byte-level sin tokenizador + agente de ranking/verificación | Apache-2.0 | Pesos parcialmente stub; bundle real en release |
+| Qwen2.5-Coder-0.5B | 0,5 B | 32 K (según versión) | Transformer decoder denso para código | Apache-2.0 | Pesos completos en HF |
+| goldworm-v6 | no disponible | ctx-256 en protocolo de evaluación | Versión previa del mismo proyecto | no disponible | no disponible |
 
-La comparacion directa con qwen2.5:0.5b en las habilidades del agente (mismos prompts) muestra ventaja de goldworm en clasificacion (10/10 frente a 4/10) e inspeccion (4/4 frente a 3/4), empate en chat (5/5) y ligera ventaja en fix (2/2 frente a 1/2 flaky). No hay modelos comparables adicionales de tamano similar con MoE byte-level documentados en la informacion disponible.
+La comparación directa con Qwen2.5-Coder-0.5B solo está documentada en el benchmark interno de code-infill (5 % vs 47,5 %), donde goldworm-coder queda muy por detrás como generador de código. La comparación con goldworm-v6 está explícitamente desaconsejada por el autor por diferencias de protocolo y slice.
 
 ## Limitaciones y advertencias
 
-- Aritmetica: la model card reporta 0/5 en pruebas aritmeticas. No debe usarse para calculo.
-- ARC-AGI: 0/3 en los tres juegos fijados, nivel de azar. No apto para tareas de razonamiento abstracto visual.
-- Generacion libre: el autor reconoce que el modelo es "confident-but-wrong" en generacion de texto libre. El producto funciona porque nunca le pide *escribir*, solo *rankear*, *enrutar* y *verificar*.
-- Contexto limitado: no se declara la longitud de contexto del campeon; el candidato de 1024 tokens fue rechazado por el gate, lo que sugiere ventanas cortas.
-- Dependencia de modelo auxiliar: el chat depende de qwen2.5-0.5b-GGUF como capa de salida; el MoE por si solo no genera lenguaje natural de calidad.
-- Configuracion obsoleta en checkpoint: la model card advierte explicitamente de que la configuracion embebida en `moe.pt` esta desactualizada y debe cargarse mediante la ruta del proyecto, no directamente.
-- Artefactos rechazados: los archivos de `cand_v8/` y `v10/` no han pasado el gate de promocion; usarlos en produccion sin re-evaluacion conlleva riesgo de deriva y contaminacion (4,1M coincidencias de solapamiento HTML en el corpus v8).
-- Corpus HTML sintetico: la model card reconoce que el corpus HTML de v8 era exclusivamente sintetico porque `the-stack-smol` esta restringido, lo que limita la generalizacion del experto HTML.
-- Idiomas: no se declaran idiomas soportados; los datos de entrenamiento documentados son fundamentalmente en ingles (TinyStories) mas code/math/wiki.
-- Ausencia de benchmarks estandar: no hay resultados publicados de MMLU, HumanEval ni GSM8K, lo que dificulta comparaciones objetivas con otros modelos de codigo.
-- Licencia: MIT permite uso comercial, pero el modelo se distribuye sin garantias de rendimiento en produccion.
+- Generación libre con confianza pero incorrecta: el modelo puede producir texto plausible sin fundamento.
+- Aritmética muy débil como modelo crudo (0/5 en la evaluación interna).
+- ARC-AGI a nivel de azar.
+- Code-infill muy inferior a Qwen2.5-Coder-0.5B (5 % vs 47,5 % en benchmark interno).
+- Pesos incompletos en el repositorio: `moe.pt` y tres de los cuatro expertos son stubs; es necesario descargar el bundle de release y sobrescribirlos.
+- Idiomas soportados no documentados; los datasets de entrenamiento son en inglés.
+- Sesgos conocidos: no documentados, pero el entrenamiento con TinyStories y wikitext condiciona el estilo y el dominio.
+- Licencia Apache-2.0 permite uso comercial, pero el estado experimental y los stubs de pesos hacen desaconsejable su uso en producción.
+- Las métricas son autodeclaradas y no han sido replicadas de forma independiente.
+- El Space Gold_Lab reproduce el comportamiento en el navegador de forma simulada; no ejecuta el modelo real.
+- La pestaña spotlight-vm del Space corresponde a un proyecto de terceros no afiliado.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/Uuuuuuniiiiiii/goldworm-coder
-- Modelo relacionado goldworm-v6: https://huggingface.co/Uuuuuuniiiiiii/goldworm-v6
-- Ficha de goldworm-v6 en free2aitools: https://free2aitools.com/model/uuuuuuniiiiiii/goldworm-v6
-- Explicacion de loslos321-lab/goldworm: https://explaingit.com/loslos321-lab/goldworm
-- Publicacion en LinkedIn sobre GoldWorm Lab y el Space de demostracion: https://www.linkedin.com/posts/john-haines-62504a35_goldworm-lab-goldworm-coder-demo-spotlight-vm-activity-7513573796138876928-k42B
-- Space de demostracion Gold_Lab: no disponible como URL directa en la informacion proporcionada (se menciona como "Gold_Lab Space" en la model card)
+- Space Gold_Lab: https://huggingface.co/spaces/Uuuuuuniiiiiii/Gold_Lab
+- Vídeo explicativo: https://youtu.be/Wuh3_bJSxyY
+- Podcast: https://youtu.be/ijVZXPYTsXU
+- Proyecto de terceros mencionado (spotlight-vm): https://huggingface.co/percepta-ai/spotlight-vm
+- Dataset TinyStories: https://huggingface.co/datasets/roneneldan/TinyStories
+- Dataset WikiText: https://huggingface.co/datasets/wikitext

@@ -2,82 +2,86 @@
 
 ## Resumen
 
-Laguna-S-2.1 es un modelo de lenguaje de tipo Mixture-of-Experts (MoE) desarrollado por Poolside AI, disponible en formato GGUF gracias a la conversión automática de ggml-org. Con 117.560 millones de parámetros totales y 8.000 millones activos por token, está diseñado específicamente para tareas de codificación agéntica y trabajo de larga duración (long-horizon tasks). Se posiciona en la familia Laguna entre los modelos XS 2.1 (33B-A3B) y M.1 (225B-A15B), compartiendo la misma receta de arquitectura basada en un router de selección por token con gating softplus.
+Laguna-S-2.1-GGUF es la distribucion en formato GGUF del modelo Laguna-S-2.1 desarrollado por poolside, publicada por ggml-org. Se trata de un modelo de generacion de texto de gran tamano, con 117.561.977.600 parametros totales segun los pesos en safetensors del modelo base, orientado a tareas conversacionales y de generacion. La version GGUF esta pensada para su ejecucion en llama.cpp y en el ecosistema de herramientas de ggml, incluyendo el cliente Llama.
 
-La versión GGUF publicada por ggml-org permite ejecutar el modelo en entornos locales mediante llama.cpp, llama.app u otras herramientas compatibles con el formato GGUF. El modelo base original está disponible en poolside/Laguna-S-2.1 con licencia openmdw-1.1, que permite uso comercial. Su relevancia actual radica en ser una alternativa gratuita y de código abierto para tareas de programación asistida, con especial énfasis en la validación automática de código generado.
+El repositorio pesa 192,7 GB y contiene pesos cuantizados, lo que permite desplegar el modelo en entornos donde el formato original no seria viable. La licencia es OpenMDW-1.1, una licencia abierta especifica para modelos. El modelo se publico en agosto de 2026 y se actualizo por ultima vez en octubre de 2026.
 
-## Especificaciones técnicas
+La informacion disponible sobre arquitectura interna, datos de entrenamiento, contexto maximo, idiomas y benchmarks es muy limitada: la model card del repositorio GGUF es practicamente un stub que solo indica el modelo origen y las instrucciones de ejecucion. Por tanto, esta ficha distingue explicitamente entre los datos verificables del repositorio y los apartados en los que no hay informacion publicada.
+
+## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Mixture-of-Experts (MoE) con router token-choice y gating softplus |
-| Parametros totales | 117.561.977.600 (aprox. 118B) |
-| Parametros activos | 8.000 millones (8B) |
+| Arquitectura | no disponible |
+| Parametros totales | 117.561.977.600 (117,6 mil millones) |
+| Parametros activos | no disponible |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | GGUF (varias cuantizaciones disponibles en el repo) |
+| Tipos de cuantizacion | cuantizaciones GGUF (el repositorio esta etiquetado como quantized; no se detallan los niveles concretos en la informacion disponible) |
 | Idiomas soportados | no disponible |
-| Licencia | openmdw-1.1 |
-| Formato de pesos | GGUF |
+| Licencia | OpenMDW-1.1 |
+| Formato de pesos | GGUF (modelo base original en safetensors, segun los metadatos de parametros) |
 
 ## Arquitectura y entrenamiento
 
-Laguna-S-2.1 es un modelo de tipo Mixture-of-Experts (MoE) con un total de 118 mil millones de parámetros, de los cuales solo 8 mil millones se activan por token procesado. La arquitectura emplea un router de selección por token con gating basado en softplus, una técnica que suaviza la asignación de expertos y mejora la estabilidad del entrenamiento en comparación con gating lineal. Este diseño permite un equilibrio entre capacidad total del modelo y eficiencia computacional en inferencia.
+No se ha publicado informacion sobre la arquitectura interna del modelo en los materiales disponibles. El repositorio GGUF no incluye detalles sobre si se trata de un transformer denso, un modelo de mezcla de expertos (MoE), una arquitectura hibrida o cualquier otra variante. Tampoco se documentan el numero de capas, la dimension oculta, el mecanismo de atencion ni innovaciones tecnicas como decodificacion especulativa o atencion lineal.
 
-El modelo pertenece a la serie Laguna de Poolside AI, que comparte una receta común de entrenamiento y arquitectura. Aunque no se han publicado los detalles del dataset de entrenamiento ni el número de tokens procesados, la familia Laguna está orientada a tareas de codificación y razonamiento agéntico, lo que sugiere un énfasis en datos de programación, documentación técnica y razonamiento multi-paso. No se dispone de información sobre técnicas de alineación como RLHF o DPO en la documentación proporcionada.
+Respecto al entrenamiento, no hay datos sobre el volumen de tokens, la composicion del corpus, el uso de RLHF, DPO u otras tecnicas de alineacion. La unica informacion verificable es que el modelo base es poolside/Laguna-S-2.1 y que la conversion a GGUF se ha realizado de forma automatica mediante la herramienta ggml-org/convert. La model card menciona un TODO pendiente de anadir DFlash, lo que sugiere trabajo en curso sobre el soporte de tecnicas de decodificacion en el ecosistema ggml, pero no aporta detalles tecnicos.
 
 ## Capacidades
 
-- Generación de código en múltiples lenguajes de programación, con especial énfasis en tareas de codificación agéntica.
-- Razonamiento multi-paso y ejecución de tareas de larga duración (long horizon work), útil para agentes autónomos.
-- Capacidad de validación de código: el modelo puede probar su propio código generado, según la información pública de Poolside AI.
-- Soporte para tool calling y function calling, adecuado para integración en pipelines de agentes.
-- Capacidades multilingües no documentadas; se asume soporte preferente de inglés y posiblemente otros idiomas, pero no hay confirmación oficial.
-- Formato GGUF compatible con llama.cpp, lo que permite ejecución local en CPU, GPU y plataformas edge.
+- Generacion de texto conversacional: el pipeline declarado es text-generation y el repositorio incluye la etiqueta conversational.
+- Ejecucion local mediante llama.cpp y el cliente Llama, con un comando de servidor (`llama serve -hf ggml-org/Laguna-S-2.1-GGUF`).
+- Compatibilidad con endpoints: el repositorio incluye la etiqueta endpoints_compatible, lo que indica que puede servirse a traves de una API compatible con el formato de endpoints habitual.
+- Capacidades de razonamiento, codigo, matematicas, vision o audio: no disponibles en la informacion proporcionada.
+- Soporte de tool calling o function calling: no disponible.
+- Soporte de agentes y razonamiento multi-paso: no disponible.
+- Capacidades multilingues: no disponibles; el campo de idiomas no esta informado.
+- Modo thinking u otras capacidades especiales: no disponible.
 
 ## Casos de uso
 
-- **Asistente de programación en producción**: el modelo puede integrarse en entornos de desarrollo integrado (IDE) para sugerir código, refactorizar funciones y generar documentación técnica. Su naturaleza MoE con 8B activos permite respuestas rápidas en comparación con modelos densos de tamaño similar.
-- **Agentes autónomos de codificación**: gracias a su capacidad de razonamiento multi-paso y validación de código, es adecuado para agentes que deben completar tareas de programación de forma autónoma, como la corrección de bugs o la implementación de funcionalidades completas.
-- **Integración en pipelines de CI/CD**: el modelo puede generar y revisar código en pipelines de integración continua, automatizando la creación de tests unitarios o la revisión de pull requests.
-- **Generación de documentación técnica**: puede generar documentación a partir de código fuente, explicaciones de API y comentarios de funciones, reduciendo la carga de trabajo de los desarrolladores.
-- **Prototipado rápido de aplicaciones**: permite generar esqueletos de aplicaciones, scripts de automatización y ejemplos de uso de bibliotecas, acelerando el ciclo de desarrollo.
-- **Chat conversacional técnico**: puede utilizarse como chatbot de soporte para desarrolladores, respondiendo preguntas sobre APIs, frameworks o problemas de programación con contexto largo.
+- Despliegue local de un modelo conversacional de gran tamano: gracias al formato GGUF y a la integracion con llama.cpp, el modelo puede ejecutarse en estaciones de trabajo con suficiente memoria, sin depender de APIs externas. Es adecuado para equipos que necesitan confidencialidad de datos.
+- Servicio de inferencia autoalojado con API compatible: la etiqueta endpoints_compatible permite exponer el modelo como servicio HTTP y conectarlo a clientes existentes que hablen el protocolo de endpoints, facilitando su integracion en aplicaciones ya construidas.
+- Experimentacion e investigacion sobre modelos de ~117 mil millones de parametros: el repositorio GGUF permite probar tecnicas de cuantizacion, medir latencia y comparar calidad frente a los pesos originales en safetensors.
+- Prototipado de asistentes conversacionales: con el pipeline text-generation y la etiqueta conversational, el modelo puede usarse para construir prototipos de chat multi-turno, siempre que se valide su calidad y comportamiento en el dominio concreto.
+- Evaluacion comparativa de cuantizaciones: al existir el modelo base en safetensors y la version GGUF, es posible comparar la salida del modelo original con las versiones cuantizadas para decidir el equilibrio entre calidad y requisitos de memoria.
+- Integracion en pipelines de generacion de texto por lotes: mediante llama.cpp o el servidor de Llama, el modelo puede procesar lotes de peticiones en entornos controlados donde el throughput sea prioritario frente a la latencia interactiva.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La documentación de Poolside AI menciona que el modelo está diseñado para codificación agéntica y tareas de larga duración, pero no se incluyen números de MMLU, HumanEval, GSM8K ni otros estándares en la información proporcionada. No se inventan datos.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- **VRAM estimada para inferencia**: para un modelo de 118B parámetros en formato GGUF, se estima que una cuantización de 4 bits requiere aproximadamente 60-70 GB de VRAM, mientras que una cuantización de 8 bits podría necesitar más de 120 GB. Los valores exactos dependen de la cuantización y de la longitud de contexto configurada.
-- **GPU recomendadas**: se requieren GPUs con gran memoria, como NVIDIA A100 (80 GB), H100 (80 GB) o múltiples RTX 4090 (24 GB cada una) en configuración multi-GPU. No es adecuado para GPUs de consumo con menos de 24 GB de VRAM.
-- **Compatibilidad con consumer GPU**: no es viable en GPUs de consumo estándar (8-16 GB) debido al tamaño del modelo, incluso cuantizado. Solo es posible con GPUs de alta gama o en entornos cloud.
-- **Opciones de despliegue**: el formato GGUF permite usar llama.cpp, llama.app, Ollama, LM Studio o vLLM (con adaptadores). La herramienta `llama serve` de llama.app es la vía recomendada por ggml-org.
-- **Latencia y throughput**: no disponible. Se espera que la inferencia sea más rápida que en modelos densos de 118B gracias a los 8B activos por token, pero el rendimiento depende del hardware y la cuantización.
+- VRAM estimada: no disponible de forma oficial. Como referencia dimensional, un modelo de 117,6 mil millones de parametros en FP16 requiere aproximadamente 235 GB de memoria solo para los pesos; en cuantizaciones de 8 bits rondaria los 118 GB y en 4 bits los 59 GB, sin contar overhead de contexto y activaciones. Estas cifras son estimaciones aritmeticas a partir del numero de parametros, no datos publicados por el autor.
+- GPU recomendadas: no disponibles en la informacion proporcionada. Por el tamano del modelo, el despliegue en FP16 requeriria configuraciones multi-GPU de clase A100/H100; las cuantizaciones bajas podrian permitir configuraciones mas ajustadas, pero no hay datos oficiales.
+- Compatibilidad con GPU de consumo: no confirmada. Un modelo de este tamano no cabe en una unica GPU de consumo en precision completa; las cuantizaciones agresivas y el offloading a CPU mediante llama.cpp son las vias plausibles, pero no hay datos publicados de rendimiento.
+- Opciones de despliegue: llama.cpp y el cliente Llama (comando `llama serve`), ademas de cualquier runtime compatible con GGUF. El soporte de vLLM, TGI u Ollama no esta confirmado en la informacion disponible.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros totales | Parametros activos | Contexto | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| **Laguna-S-2.1** | 118B | 8B | no disponible | openmdw-1.1 | GGUF, open weights |
-| **Laguna XS 2.1** | 33B | 3B | no disponible | openmdw-1.1 | open weights |
-| **Laguna M.1** | 225B | 15B | no disponible | openmdw-1.1 | open weights |
+No disponible. La informacion proporcionada no incluye datos de rendimiento, contexto ni arquitectura que permitan una comparacion rigurosa con alternativas de la misma categoria. Como referencia estructural, el modelo base poolside/Laguna-S-2.1 es la unica variante directamente comparable, al tratarse del mismo modelo en formato safetensors.
 
-No hay datos de benchmarks comparativos disponibles en la información proporcionada. La familia Laguna comparte arquitectura MoE y licencia, diferenciándose principalmente en el tamaño total y activo. No se dispone de comparaciones con modelos externos como Mixtral o DeepSeek en la documentación actual.
+| Modelo | Parametros | Contexto | Licencia | Formato |
+|---|---|---|---|---|
+| Laguna-S-2.1-GGUF (este) | 117,6 mil millones | no disponible | OpenMDW-1.1 | GGUF |
+| poolside/Laguna-S-2.1 | 117,6 mil millones | no disponible | OpenMDW-1.1 | safetensors |
+| Alternativas de mismo tamano | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
 
-- **Sesgos conocidos**: no se han documentado sesgos específicos en la información pública. Como modelo entrenado con datos de código, puede reflejar sesgos presentes en repositorios públicos de software.
-- **Riesgo de alucinación**: los modelos de lenguaje pueden generar código incorrecto o inventar APIs inexistentes. Se recomienda validar siempre la salida en entornos de producción.
-- **Limitaciones de contexto**: la longitud de contexto no está documentada en la información proporcionada; se recomienda verificar la configuración en el modelo base de poolside.
-- **Restricciones de licencia**: la licencia openmdw-1.1 permite uso comercial, pero se debe revisar los términos exactos para asegurar el cumplimiento en proyectos propietarios.
-- **Caveat de producción**: al ser un modelo de 118B parámetros, la latencia y el costo de despliegue son significativos. La cuantización GGUF reduce los requisitos pero puede degradar ligeramente la calidad de las respuestas.
+- La model card del repositorio GGUF es minima y no documenta sesgos, datos de entrenamiento ni evaluaciones de seguridad; no es posible evaluar sesgos conocidos con la informacion disponible.
+- Riesgo de alucinacion: no cuantificado por el autor; al no haber benchmarks publicados, no se puede estimar su fiabilidad en tareas factuales.
+- Longitud de contexto e idiomas no documentados: planificar aplicaciones que dependan de ventanas largas o de cobertura multilingue requiere validacion empirica previa.
+- La licencia OpenMDW-1.1 debe revisarse antes de uso comercial; la informacion disponible no detalla las condiciones concretas de explotacion.
+- El repositorio esta etiquetado como conversion automatica mediante ggml-org/convert; conviene verificar la fidelidad de las cuantizaciones frente al modelo original antes de usarlas en produccion.
+- El modelo base esta alojado en el repositorio de poolside; los terminos y la documentacion completa del modelo original deben consultarse alli.
+- El tamano del repositorio (192,7 GB) implica requisitos de almacenamiento y ancho de banda considerables para su descarga y despliegue.
 
 ## Enlaces
 
-- [Modelo GGUF en Hugging Face](https://huggingface.co/ggml-org/Laguna-S-2.1-GGUF)
-- [Modelo base de Poolside AI](https://huggingface.co/poolside/Laguna-S-2.1)
-- [Versión GGUF en ModelScope](https://www.modelscope.cn/models/unsloth/Laguna-S-2.1-GGUF)
-- [Ficha en interfaze.ai](https://interfaze.ai/models/unslothlaguna-s-21-gguf)
-- [Repositorio de conversión ggml-org](https://github.com/ggml-org/convert)
-- [Artículo en GitHub sobre Laguna S 2.1](https://github.com/network-tocoder/Laguna-S-2.1-The-Free-Coding-AI-That-Tests-Its-Own-Code)
+- Repositorio GGUF: https://huggingface.co/ggml-org/Laguna-S-2.1-GGUF
+- Modelo base: https://huggingface.co/poolside/Laguna-S-2.1
+- Herramienta de conversion: https://github.com/ggml-org/convert
+- Cliente Llama: https://llama.app

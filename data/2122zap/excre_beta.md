@@ -2,52 +2,49 @@
 
 ## Resumen
 
-`excre_beta` es un modelo alojado en Hugging Face por el usuario `2122zap`, publicado bajo licencia OpenRAIL. El repositorio ocupa aproximadamente 0,5 GB, lo que sugiere un modelo de pequeno tamano (probablemente en el rango de 0,5 a 1,5 mil millones de parametros en funcion de la cuantizacion empleada), pero no se dispone de informacion publica sobre su arquitectura, entrenamiento o capacidades. La model card del autor esta practicamente vacia: solo contiene la declaracion de licencia, sin descripcion, sin datos de entrenamiento y sin ejemplos de uso.
+`2122zap/excre_beta` es un LoRA de imagen a vídeo entrenado sobre el modelo base MiniMaxAI/MiniMax-H3, desarrollado por el usuario 2122zap y publicado en Hugging Face bajo licencia OpenRAIL. Su función es incorporar un concepto concreto (la acción de excretar, en imagen real y en animación 2D, con audio) al modelo base, de modo que este pueda generar clips coherentes con ese concepto a partir de una imagen inicial y un prompt estructurado. No es un modelo autónomo: requiere MiniMax-H3 como base y actúa como adaptador de bajo rango.
 
-El modelo no registra descargas ni likes en el momento de la consulta, y no tiene pipeline declarado, lo que indica que se trata de un artefacto en fase muy temprana o de un experimento personal sin documentacion asociada. No es posible verificar que tarea resuelve ni que calidad ofrece, por lo que cualquier evaluacion seria requeriria descargar los pesos y ejecutar pruebas propias.
+El artefacto es un LoRA plano en `.safetensors` de 2,6 GB, con rango 16, alpha 16, 416 tensores y 208 módulos LoRA, guardado en FP16. Se entrenó sobre la partición completa `fl2va` del modelo base (incluida la rama de audio), con 99 clips de 12,3 minutos en total, 24 fps y resolución de entrenamiento de 384 px. La model card está marcada como `not-for-all-audiences` por el contenido explícito.
 
-Dada la ausencia total de especificaciones, esta ficha se limita a documentar los pocos metadatos disponibles y a marcar explicitamente como "no disponible" todo aquello que el autor no ha publicado. No debe interpretarse como una recomendacion de uso.
+Su relevancia es acotada: sirve como ejemplo de ajuste fino de un modelo de vídeo con audio mediante LoRA y de cómo se estructura un dataset de captions por capas y palabras clave ordenadas. Para evaluación técnica general resulta poco útil, ya que su dominio es muy específico y su licencia y contenido limitan el uso en producción.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible |
-| Parametros totales | no disponible (el repo ocupa 0,5 GB, lo que orienta hacia un modelo pequeno, pero no se confirma) |
-| Parametros activos | no disponible (no se confirma que sea MoE) |
+| Arquitectura | LoRA (adaptador de bajo rango) sobre MiniMax-H3, que incluye transformer de difusión y rama de audio |
+| Parametros totales | no disponible (el LoRA tiene 416 tensores, 208 módulos; rango 16, alpha 16) |
+| Parametros activos | no aplica (no es MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible |
-| Idiomas soportados | no disponible |
+| Tipos de cuantizacion | el LoRA se distribuye en FP16; el base se entrenó con transformer en 8 bits (ConvRot) y text encoder NVFP4 |
+| Idiomas soportados | no disponible (los prompts de entrenamiento están en inglés) |
 | Licencia | openrail |
-| Formato de pesos | no disponible (no se especifica safetensors, GGUF ni otros) |
+| Formato de pesos | `.safetensors` (LoRA plano, FP16) |
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura del modelo en la model card ni en los metadatos de Hugging Face. Se desconoce si se trata de un transformer denso, un modelo MoE, una arquitectura hibrida o cualquier otra variante. Tampoco hay datos sobre el numero de tokens de entrenamiento, la composicion del dataset, el uso de RLHF, DPO u otras tecnicas de alineamiento, ni sobre innovaciones tecnicas especificas.
+El adaptador es un LoRA de rango 16 y alpha 16 aplicado sobre MiniMax-H3, un modelo de generación de vídeo con audio. El entrenamiento usó la partición completa `fl2va` del modelo base, de modo que se ajustan tanto la rama visual como la de sonido. La configuración fue: 1000 pasos, learning rate 5e-5, AdamW de 8 bits, batch size 1, resolución de 384 px, precisión bf16 con guardados en FP16 cada 200 pasos, peso de pérdida de audio 1 y audio normalizado. Se empleó el adaptador de entrenamiento publicado de MiniMax-H3 (v3) y la herramienta ostris/ai-toolkit sobre una NVIDIA RTX PRO 6000 Blackwell de 96 GB, con unos 6,3 segundos por paso y algo más de dos horas de ejecución total.
 
-El unico indicio indirecto es el tamano del repositorio (0,5 GB). Si los pesos estuvieran en safetensors de precision completa (FP32), esto equivaldria a unos 125 millones de parametros; en FP16, a unos 250 millones; en cuantizacion de 4 bits, a alrededor de 1000 millones. Sin embargo, esta estimacion es puramente especulativa y no debe tomarse como dato tecnico.
+El dataset consta de 99 clips (12,3 minutos, entre 2,3 y 11,5 segundos, mediana 7,3 s), a 24 fps, con longitudes ajustadas a la rejilla de 17n+5 fotogramas y audio conservado. La composición es 54 clips de animación 2D (con palabra de timing) y 45 de imagen real; las variantes base se reparten en `soft` 34, `poop` 33 y `diarrhea` 32, y los modificadores en `fart` 33, `gassy` 28, `shart` 21 y `hyper` 17. Cada caption se construye por capas: palabra disparadora, palabras clave en orden fijo (variante base, modificadores, vista, iluminación), descripción de la escena sin nombrar el acto, una línea de sonido y, en clips animados, la frase de timing. En la v3 se aclararon los clips oscuros con curva gamma (brillo medio de 126 a 143), se garantizó que cada caption contuviera exactamente una variante base y una palabra de iluminación, y se revisaron las etiquetas de iluminación contra el color medio de los fotogramas.
 
 ## Capacidades
 
-- No se ha documentado ninguna capacidad especifica del modelo en la informacion disponible.
-- No se confirma soporte de generacion de texto, razonamiento, codigo, matematicas ni vision.
-- No se confirma soporte de tool calling ni function calling.
-- No se confirma soporte de agentes ni de razonamiento multi-paso.
-- No se confirman capacidades multilingues.
-- No se confirma la existencia de modo "thinking", entrada de audio o cualquier otra capacidad especial.
+- Generación de vídeo a partir de una imagen inicial (image-to-video), no de texto a vídeo.
+- Generación de audio asociado al clip, ya que la rama de sonido del modelo base se entrena.
+- Representación de dos estilos: imagen real y animación 2D, con control de timing mediante `animated on ones`, `on twos` y `on threes`.
+- Control de encuadre mediante palabras de vista (`toilet view`, `front view`, `top view`, `side view`, `bottom view`).
+- Control de tonalidad de color mediante palabras de iluminación (`cool`, `neutral`, `warm`, `very warm`).
+- Condicionamiento por prompt estructurado con orden fijo de palabras clave.
+- No soporta tool calling, function calling, agentes ni razonamiento multi-paso: es un adaptador generativo de vídeo.
 
 ## Casos de uso
 
-No es posible recomendar casos de uso concretos sin conocer las capacidades reales del modelo. Cualquier aplicacion practica requeriria primero una evaluacion empitica de los pesos. A modo de orientacion generica para modelos de este posible tamano, podrian explorarse escenarios como los siguientes, siempre tras validacion:
-
-- Clasificacion de texto o analisis de sentimiento en dominios acotados, si el modelo resulta ser un encoder o un modelo pequeno ajustado.
-- Generacion de texto auxiliar en entornos con recursos muy limitados, como dispositivos de borde, si el formato de pesos lo permite.
-- Prototipado rapido de pipelines de NLP en fase de experimentacion interna.
-- Fine-tuning adicional sobre datos propios, si la licencia OpenRAIL y el formato de pesos lo permiten.
-- Tareas de completado de texto en herramientas de desarrollo, previa medicion de latencia y calidad.
-- Experimentos academicos de comparacion con modelos de referencia de tamano similar.
-
-En todos los casos, la ausencia de documentacion obliga a realizar una evaluacion propia antes de cualquier uso en produccion.
+- Investigación sobre ajuste fino de modelos de vídeo con audio: el LoRA documenta con detalle la configuración de entrenamiento (rango, pasos, precisión, hardware) y sirve como referencia reproducible para experimentos con MiniMax-H3.
+- Estudio de estructuración de datasets de captions: el esquema por capas con orden fijo de palabras clave es un ejemplo concreto de cómo mejorar la adherencia al prompt en modelos de difusión de vídeo.
+- Pruebas de control de estilo de animación: las palabras de timing permiten experimentar con la cadencia de animación 2D generada, útil para investigación en generación de animación.
+- Evaluación de condicionamiento por imagen inicial: permite medir cómo la primera imagen ancla la generación y qué deriva se produce sin ella.
+- Experimentos de coherencia audiovisual: al entrenarse la rama de audio, sirve para estudiar la sincronización entre sonido y evento generado.
+- Docencia y divulgación sobre LoRAs de vídeo: como caso de estudio de un adaptador de dominio muy específico con licencia OpenRAIL y restricciones de contenido.
 
 ## Benchmarks y rendimiento
 
@@ -55,27 +52,37 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible. Como referencia puramente orientativa, un modelo de ~0,5 GB de pesos podria caber en GPUs consumer con 4-8 GB de VRAM en precision reducida, pero esto depende del formato real de los pesos y del contexto, que se desconocen.
-- GPU recomendadas: no disponible.
-- Compatibilidad con GPU consumer: no confirmada.
-- Opciones de despliegue (vLLM, llama.cpp, Ollama, TGI): no disponible; no se confirma que el formato de pesos sea compatible con ninguno de estos runners.
-- Latencia y throughput: no disponible.
+- VRAM estimada para inferencia: no disponible para el LoRA; depende del modelo base MiniMax-H3, que no se detalla en la información proporcionada.
+- GPU de entrenamiento documentada: NVIDIA RTX PRO 6000 Blackwell de 96 GB (una unidad).
+- GPU recomendadas para inferencia: no disponible.
+- Compatibilidad con GPU de consumo: no disponible; el tamaño del modelo base condiciona la viabilidad.
+- Opciones de despliegue: no disponible; el LoRA es un `.safetensors` que debe cargarse sobre MiniMax-H3 con la librería `minimax-h3`.
+- Latencia y throughput: no disponible; el entrenamiento reporta 6,3 s por paso, dato no extrapolable a inferencia.
 
 ## Comparativa con modelos similares
 
-No disponible. No se conocen modelos comparables porque se desconoce la categoria, el tamano y la tarea del modelo.
+| Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| 2122zap/excre_beta | LoRA image-to-video sobre MiniMax-H3 | no disponible (416 tensores) | no disponible | openrail | Hugging Face, 539 descargas |
+| MiniMaxAI/MiniMax-H3 | Modelo base de vídeo con audio | no disponible | no disponible | no disponible | Hugging Face (referenciado) |
+| Alternativas de LoRA image-to-video | no disponible | no disponible | no disponible | no disponible | no disponible |
+
+No se dispone de datos de rendimiento comparables entre estos modelos en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de model card: no hay descripcion, datos de entrenamiento ni evaluacion, lo que impide auditar sesgos o calidad.
-- Riesgo elevado de alucinacion y comportamiento impredecible al no existir informacion sobre alineamiento o ajuste fino.
-- Se desconoce la cobertura linguistica; no se puede asumir soporte del castellano.
-- Licencia OpenRAIL: permite uso comercial con restricciones de uso responsable, pero conviene revisar los terminos exactos antes de integrarlo en productos.
-- Cero descargas y cero likes en el momento de la consulta: no hay evidencia de uso ni de validacion por parte de la comunidad.
-- El nombre del repositorio y la falta de documentacion sugieren un experimento personal; no tratarlo como modelo de referencia.
-- No se confirma que los pesos esten en un formato estandar interoperable; verificar antes de planificar el despliegue.
+- Contenido explícito: la model card está marcada como `not-for-all-adversaries` (en realidad `not-for-all-audiences`), con temática escatológica y adulta; no es apta para público general.
+- Licencia OpenRAIL: impone restricciones de uso, incluida la prohibición de usos dañinos; conviene revisar los términos completos antes de cualquier despliegue.
+- Dependencia del modelo base: no funciona de forma autónoma; requiere MiniMax-H3 y la librería `minimax-h3`.
+- Entrenado para image-to-video: sin imagen inicial, los resultados pueden desviarse, según advierte el autor.
+- Disparo poco fiable: el autor indica que la palabra disparadora por sí sola no activa el evento de forma consistente; funcionan mejor prompts que imitan el estilo de los captions.
+- Brillo variable: depende del modelo base, la imagen inicial, la velocidad de generación y el sampler.
+- Sesgos: no documentados; el dataset es reducido (99 clips) y de dominio muy concreto, con riesgo de sobreajuste.
+- Alucinación: no aplica en el sentido textual, pero sí riesgo de generar contenido incoherente o no solicitado en escenas fuera de distribución.
+- Idiomas: los captions de entrenamiento están en inglés; no se documenta soporte multilingüe.
 
 ## Enlaces
 
 - Hugging Face: https://huggingface.co/2122zap/excre_beta
-- No se han encontrado papers, blogs, repositorios adicionales ni demos en la informacion disponible.
+- Modelo base: https://huggingface.co/MiniMaxAI/MiniMax-H3
+- Herramienta de entrenamiento: https://github.com/ostris/ai-toolkit

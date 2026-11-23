@@ -2,101 +2,104 @@
 
 ## Resumen
 
-AliceAI-Foundation-80B-A3B es un modelo de lenguaje de tipo Mixture-of-Experts (MoE) con 80 000 millones de parámetros totales y aproximadamente 3000 millones activos por token, desarrollado originalmente por Yandex. La versión aquí documentada es un repack en BF16 safetensors y una colección de cuantizaciones GGUF publicada por AMAImedia bajo la marca NOESIS, con licencia Apache-2.0 y pesos derivados del checkpoint base oficial `yandex/AliceAI-Foundation-80B-A3B-Base`.
+AliceAI-Foundation-80B-A3B-NOESIS-BF16-GGUF es un repack y conjunto de cuantizaciones GGUF del modelo base `yandex/AliceAI-Foundation-80B-A3B-Base`, publicado por la organizacion AMAImedia en el marco de su plataforma NOESIS de doblaje automatico multilingue. El modelo original lo desarrolla Yandex y emplea una arquitectura hibrida poco habitual (`model_type: alice_ai`) que combina capas de Kimi Delta Attention, atencion con compuerta (gated attention), mezcla de expertos y Attention Residuals. Con 81.286.433.408 parametros totales y unos 3B activos por token, se situa en la categoria de modelos MoE de gran tamano y activacion dispersa.
 
-La arquitectura es híbrida: combina capas de Kimi Delta Attention (KDA), atención con compuerta (gated attention), capas MoE con 512 expertos y residuales de atención, además de una cabeza Multi-Token Prediction (MTP) publicada por separado. Con un contexto de 262 144 tokens y un vocabulario SentencePiece de 129 024 entradas, está orientado a generación de texto conversacional en ruso e inglés.
+La relevancia de este repositorio es practica: el autor ha consolidado los 49 shards originales de Yandex en cuatro ficheros safetensors de menos de 50 GB, verificados tensor a tensor (1307 tensores, SHA256, cero discrepancias), y ha generado una escalera de cuantizaciones GGUF desde F16 hasta Q2_K, incluida la cabeza MTP (multi-token prediction) en formato separado. Con 262.144 tokens de contexto y licencia Apache-2.0, el modelo resulta atractivo para cargas de trabajo de contexto largo en ruso e ingles.
 
-Su relevancia actual radica en que ofrece una relación parámetros-activos muy agresiva (3B activos sobre 80B totales) para despliegues con presupuesto de cómputo limitado, y en que AMAImedia ha publicado cuantizaciones GGUF verificadas tensor a tensor. La advertencia principal es que, a fecha de septiembre de 2026, llama.cpp upstream no dispone de grafo de inferencia para `alice_ai`, por lo que los GGUF requieren un runtime compatible con esta arquitectura.
+La advertencia principal es de compatibilidad: al cierre del periodo documentado, llama.cpp upstream no dispone de grafo de inferencia para `alice_ai`, por lo que los GGUF requieren un runtime consciente de la arquitectura (Transformers 5.16.1 con `flash-linear-attention==0.5.0`, o una imagen vLLM adaptada). `llama-cli` estandar no es aplicable todavia.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Híbrida: Kimi Delta Attention (KDA) + gated attention + MoE + Attention Residuals |
-| Parametros totales | 81 286 433 408 (≈80B) |
-| Parametros activos | ≈3B por token (MoE top-10 + 1 shared) |
-| Longitud de contexto | 262 144 tokens |
-| Tipos de cuantizacion | F16, Q8_0, Q6_K, Q4_K_M, Q2_K (GGUF); BF16 en safetensors |
-| Idiomas soportados | Ruso (ru), inglés (en) |
+| Arquitectura | Hibrida `alice_ai`: Kimi Delta Attention + gated attention + MoE + Attention Residuals |
+| Parametros totales | 81.286.433.408 (80B) |
+| Parametros activos | ~3B por token |
+| Longitud de contexto | 262.144 tokens |
+| Tipos de cuantizacion | F16, Q8_0, Q6_K, Q4_K_M (recomendada), Q2_K (experimental); BF16 en safetensors |
+| Idiomas soportados | Ruso (ru), ingles (en) |
 | Licencia | Apache-2.0 |
-| Formato de pesos | safetensors (BF16, 4 shards ≤50 GB) y GGUF |
-
-Datos adicionales de arquitectura: hidden size 2048, 48 capas organizadas como 12 bloques de la forma 3 × (KDA → MoE) seguidos de 1 × (Gated Attention → MoE). KDA usa 32 cabezas Q y 32 cabezas KV con dimensión de cabeza 128 y kernel de convolución 4; la gated attention usa 16 cabezas Q y 2 KV con dimensión 256. El MoE tiene 512 expertos con FFN de tamaño 512. La cabeza MTP consta de 1 capa publicada aparte (`mtp.safetensors`, 20 tensores, 3,3 GB).
+| Formato de pesos | safetensors (BF16, 4 shards ≤50 GB) y GGUF (6 variantes) |
+| Hidden size | 2048 |
+| Vocabulario | 129.024 tokens (SentencePiece, `tokenizer.model`) |
+| Capas | 48, con patron 12 × (3 × (KDA → MoE) → 1 × (Gated Attention → MoE)) |
+| KDA | 32 cabeceras Q / 32 KV, head dim 128, kernel de convolucion 4 |
+| Gated attention | 16 cabeceras Q / 2 KV, head dim 256 |
+| MoE | 512 expertos, top-10 + 1 compartido, FFN de experto 512 |
+| MTP | 1 capa, publicada aparte (`mtp.safetensors`, 3,30 GB) |
+| Tamano del repo | 555,8 GB |
 
 ## Arquitectura y entrenamiento
 
-El modelo base emplea una arquitectura híbrida que sustituye parte de la atención estándar por Kimi Delta Attention, un mecanismo de atención lineal con estado recurrente, combinado con capas de gated attention convencional y bloques MoE intercalados. Los residuales de atención (Attention Residuals) conectan las salidas de atención a través de los bloques. El resultado es un modelo con huella de memoria de 80B pero coste de cómputo por token comparable a un modelo denso de 3B, lo que reduce drásticamente los requisitos de FLOPs en inferencia.
+La arquitectura `alice_ai` no es un transformer denso convencional. Intercala bloques de Kimi Delta Attention (una atencion lineal con estado recurrente y convolucion local de kernel 4) con bloques de atencion con compuerta, y cada uno de ellos va seguido de una capa MoE. El patron documentado es 12 repeticiones de tres bloques KDA→MoE seguidos de un bloque Gated Attention→MoE, lo que da las 48 capas totales. El componente MoE emplea 512 expertos con enrutamiento top-10 mas un experto compartido, y el FFN de cada experto tiene dimension 512, coherente con el hidden size de 2048. La inclusion de Attention Residuals y de una cabeza MTP de una capa apunta a un diseno orientado a decodificacion especulativa y a eficiencia en generacion larga.
 
-La información disponible no detalla el volumen de tokens de entrenamiento, la composición del dataset ni si se aplicaron fases de RLHF o DPO; esos datos corresponden a la model card del checkpoint original de Yandex, que no se incluye en la información proporcionada. La innovación técnica destacable es la cabeza MTP (Multi-Token Prediction), que permite decodificación especulativa interna y se distribuye como archivo independiente, tanto en safetensors como en GGUF (`GGUF/AliceAI-Foundation-80B-A3B-MTP-F16.gguf`, 21 tensores, 3,30 GB).
-
-El repack de AMAImedia fusiona los 49 shards originales de Yandex en un flujo único y los redivide en 4 shards de menos de 50 GB. La verificación se hizo tensor a tensor: 1307 tensores con SHA256 individual, 0 discrepancias. Las cuantizaciones GGUF se generaron con el pipeline documentado en el repositorio (`code/`), que incluye descarga, fusión por streaming, conversión y comparación.
+No se dispone en la informacion proporcionada de detalles sobre el volumen de tokens de entrenamiento, la composicion del corpus, ni si se aplicaron fases de RLHF o DPO. El modelo base es de tipo "Base", no instruct, lo que sugiere un entrenamiento principalmente de preentrenamiento sobre datos multilingues ruso-ingles, sin un ajuste conversacional declarado. El repositorio de AMAImedia no aporta informacion adicional sobre el proceso de entrenamiento del modelo original; unicamente documenta el proceso de repack y cuantizacion.
 
 ## Capacidades
 
-- Generación de texto conversacional multi-turno en ruso e inglés.
-- Razonamiento y respuesta a instrucciones en contextos de hasta 262 144 tokens.
-- Predicción multi-token mediante la cabeza MTP, utilizable para decodificación especulativa.
-- Capacidad de operar con un coste de cómputo por token propio de un modelo de 3B activos, lo que facilita el throughput en hardware modesto.
-- Soporte de tool calling y function calling: no disponible en la información proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
-- Capacidades de visión o audio: no disponibles; el pipeline declarado es exclusivamente `text-generation`.
-- Modo thinking explícito: no disponible en la información proporcionada.
+- Generacion de texto autoregresiva en ruso e ingles, con ventana de contexto de 262.144 tokens.
+- Razonamiento y comprension de documentos largos gracias a la atencion hibrida KDA, que reduce el coste computacional del contexto extendido.
+- Prediccion multi-token (MTP) mediante la cabeza publicada aparte, orientada a decodificacion especulativa y a mayor throughput.
+- Capacidad de mezcla de expertos con 512 expertos, lo que permite especializacion interna por dominio sin activar el total de parametros.
+- Soporte de tool calling y function calling: no disponible en la informacion proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
+- Capacidades de vision o audio: no disponibles; el pipeline declarado es exclusivamente `text-generation`.
+- Capacidades multilingues limitadas a los idiomas declarados (ru, en); no se documentan otros.
 
 ## Casos de uso
 
-- Generación de texto en ruso a gran escala: el modelo está entrenado para ruso e inglés y su ventana de 262 144 tokens permite procesar documentos completos, informes o expedientes sin truncamiento, manteniendo coherencia a lo largo de decenas de miles de tokens.
-- Asistentes conversacionales multi-turno: con 3B parámetros activos por token, el coste por respuesta es bajo, lo que permite desplegar un chatbot de calidad 80B en infraestructura con pocas GPU y sostener sesiones largas sin degradación de latencia.
-- Resumen y análisis de documentación técnica extensa: la combinación de contexto largo y bajo cómputo activo lo hace adecuado para pipelines de resumen por chunks grandes, por ejemplo documentación legal o manuales de ingeniería en ruso.
-- Procesamiento por lotes de corpus: al requerir menos FLOPs por token que un denso de 80B, el modelo es viable para tareas de etiquetado, clasificación y reescritura sobre millones de documentos en entornos con presupuesto de GPU acotado.
-- Decodificación especulativa en producción: la cabeza MTP publicada por separado permite integrar un esquema de predicción multi-token en un runtime compatible, reduciendo el número de pasos de decodificación y aumentando el throughput efectivo.
-- Investigación sobre arquitecturas híbridas de atención lineal: la combinación KDA + gated attention + MoE constituye un objeto de estudio útil para medir el comportamiento de atención lineal frente a atención cuadrática en contextos largos.
-- Doblaje y automatización multilingüe: el autor enmarca la publicación dentro de una plataforma de doblaje multilingüe (NOESIS), por lo que el modelo puede emplearse como motor de generación de guiones y adaptación de texto en flujos de localización ruso-inglés.
+- Doblaje automatico y localizacion audiovisual: el modelo se publica dentro de la plataforma NOESIS de doblaje multilingue, donde puede procesar guiones completos de episodios o peliculas en una sola ventana de 262.144 tokens, manteniendo coherencia de nombres, terminologia y estilo entre escenas.
+- Traduccion tecnica ruso-ingles de documentacion extensa: la ventana de contexto permite pasar manuales completos sin troceado, reduciendo perdidas de coherencia terminologica entre secciones.
+- Analisis de contratos y documentos legales: con 262K de contexto se pueden ingerir expedientes enteros y formular preguntas sobre clausulas cruzadas, algo inviable en modelos de 8K-32K sin recuperacion externa.
+- Generacion asistida de codigo y documentacion tecnica: aunque no se documenta un ajuste especifico para codigo, el modelo base puede emplearse en tareas de completado y explicacion de fragmentos, con la salvedad de que requiere validacion humana.
+- Investigacion sobre arquitecturas hibridas de atencion: el repositorio ofrece pesos BF16 verificados y cuantizaciones GGUF de referencia, utiles para reproducir experimentos sobre KDA, gated attention y enrutamiento MoE.
+- Procesamiento por lotes en servidores con multiples GPU: el repack en cuatro shards de menos de 50 GB facilita el despliegue en infraestructura con limites de tamano por fichero y la orquestacion en vLLM adaptado.
+- Fine-tuning sobre dominio especifico: la licencia Apache-2.0 y la disponibilidad de pesos BF16 permiten ajuste supervisado o LoRA sobre corpus propios, aunque el coste de infraestructura es elevado.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia en BF16: el checkpoint completo ocupa aproximadamente 162 GB en BF16 (81,29B parámetros × 2 bytes), por lo que requiere al menos 2 GPU de 80 GB o 4 GPU de 48 GB con paralelismo de tensor.
-- Cuantización Q8_0: aproximadamente 86 GB, viable en 2 × A100 80 GB o 2 × H100 80 GB.
-- Cuantización Q6_K: aproximadamente 66 GB, viable en una H100 80 GB o en 2 × RTX 4090 24 GB con offload parcial.
-- Cuantización Q4_K_M: aproximadamente 46 GB, cabe en una A100 40 GB o en 2 × RTX 4090 24 GB; es la opción recomendada por el autor para uso general.
-- Cuantización Q2_K: aproximadamente 26 GB, experimental, cabe en una RTX 4090 24 GB con margen ajustado o en 2 × RTX 3090 24 GB.
-- GPU recomendadas: H100 80 GB y A100 80 GB para BF16 y Q8_0; A100 40 GB, RTX 4090 y RTX 3090 para Q4_K_M; el hardware de referencia del autor (RTX 3060 Laptop 6 GB, 64 GB DDR5) solo sirve para cuantizaciones de la clase 0,6–35B en RAM, no para este modelo.
-- Opciones de despliegue: Transformers 5.16.1 con `flash-linear-attention==0.5.0`, o una imagen vLLM compatible con AliceAI. Los GGUF requieren un runtime con soporte de `alice_ai`; llama.cpp upstream no dispone de grafo de inferencia para esta arquitectura a fecha de septiembre de 2026.
-- Latencia y throughput estimados: no disponibles en la información proporcionada. El coste activo de 3B parámetros por token sugiere un throughput notablemente superior al de un denso de 80B, pero no se aportan cifras medidas.
+- VRAM estimada para inferencia en BF16/F16: aproximadamente 160 GB solo para pesos, mas cache KV y overhead; requiere multiples GPU de 80 GB (por ejemplo, 4× H100 80GB o 4× A100 80GB).
+- Q8_0: alrededor de 85-90 GB de pesos; viable en 2× H100 80GB o 2× A100 80GB con margen ajustado.
+- Q6_K: aproximadamente 65-70 GB; cabe en una H100 80GB o en 2× RTX 4090 24GB con offload parcial.
+- Q4_K_M (recomendada): alrededor de 45-50 GB; viable en 2× RTX 4090 24GB o 1× A100 80GB con contexto moderado.
+- Q2_K: en torno a 25-30 GB; la unica variante que podria caber en una GPU consumer de 24 GB, con perdida de calidad significativa y marcada como experimental.
+- No cabe en GPU consumer de 8-16 GB en ninguna cuantizacion publicada.
+- Opciones de despliegue: Transformers 5.16.1 con `flash-linear-attention==0.5.0`, o imagen vLLM con soporte AliceAI. llama.cpp, Ollama y TGI no son compatibles con la arquitectura `alice_ai` en la fecha documentada.
+- Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros totales / activos | Contexto | Licencia | Disponibilidad |
+| Modelo | Parametros totales / activos | Contexto | Licencia | Notas |
 |---|---|---|---|---|
-| AliceAI-Foundation-80B-A3B (esta ficha) | 80B / ≈3B | 262 144 | Apache-2.0 | safetensors BF16 + GGUF |
-| Modelos MoE de clase 80B-A3B de otros proveedores | no disponible | no disponible | no disponible | no disponible |
-| Modelos densos de clase 70–80B | ≈70–80B / 70–80B | no disponible | no disponible | no disponible |
+| AliceAI-Foundation-80B-A3B (este) | 80B / ~3B | 262.144 | Apache-2.0 | Arquitectura hibrida KDA + gated attention + MoE; solo ru/en |
+| Modelos MoE de activacion dispersa de la misma clase | no disponible | no disponible | no disponible | No se dispone de datos comparativos verificados en la informacion proporcionada |
+| Alternativas densas de ~70B | no disponible | no disponible | no disponible | No se dispone de datos comparativos verificados en la informacion proporcionada |
 
-No se dispone en la información proporcionada de resultados de benchmarks ni de especificaciones de modelos alternativos que permitan una comparación cuantitativa fiable. La comparación cualitativa relevante es de clase: frente a un modelo denso de 70–80B, este modelo reduce el cómputo por token en más de un orden de magnitud (3B activos frente a 70–80B), a costa de un mayor consumo de memoria total y de la necesidad de un runtime específico para la arquitectura `alice_ai`.
+No se dispone de informacion suficiente para establecer una comparativa cuantitativa fiable con modelos alternativos concretos. Cualquier comparacion de rendimiento requeriria ejecutar los benchmarks sobre el mismo harness, algo que el repositorio no documenta.
 
 ## Limitaciones y advertencias
 
-- Compatibilidad de runtime: los GGUF de este repositorio no funcionan con `llama-cli` estándar; requieren un runtime con soporte de `alice_ai`. Esto limita las opciones de despliegue y complica la integración en stacks existentes.
-- Idiomas: el modelo declara únicamente ruso e inglés; el rendimiento en castellano u otros idiomas no está documentado y no debería asumirse.
-- Sesgos: no se documentan en la información disponible; al estar entrenado principalmente con corpus en ruso e inglés, es previsible que reproduzca sesgos presentes en esas fuentes.
-- Alucinación: no se aportan evaluaciones de fidelidad ni tasas de alucinación; como modelo base sin fase de alineamiento documentada, el riesgo de generar contenido plausible pero incorrecto debe considerarse alto en producción.
-- Licencia: Apache-2.0 permite uso comercial, pero el modelo es un derivado del checkpoint de Yandex; conviene verificar los términos del modelo base original antes de un despliegue comercial.
-- Tamaño del repositorio: 555,8 GB, lo que exige espacio en disco considerable y descargas por partes; el uso de las cuantizaciones GGUF reduce sustancialmente este requisito.
-- Cabeza MTP: se distribuye como archivo aparte; omitirla no impide la inferencia, pero desactiva la decodificación especulativa.
-- Cuantización Q2_K: marcada como experimental por el autor; la degradación de calidad en ese nivel no está cuantificada.
-- Fecha de publicación: la model card indica 2026-09-18 como fecha de lanzamiento y el repositorio se actualizó en noviembre de 2026; el ecosistema de runtimes puede haber cambiado desde entonces.
+- Incompatibilidad con llama.cpp upstream: los GGUF no se ejecutan en `llama-cli` ni en herramientas derivadas sin soporte explicito de `alice_ai`. Verificar el runtime antes de planificar el despliegue.
+- Modelo base, no instruct: no ha sido ajustado para seguir instrucciones ni para conversacion; requiere prompting cuidadoso o fine-tuning previo para uso en produccion.
+- Cobertura linguistica limitada a ruso e ingles; el rendimiento en castellano no esta documentado y probablemente sea deficiente.
+- Riesgo de alucinacion inherente a los modelos de lenguaje de gran tamano, agravado en tareas de traduccion o doblaje donde una terminologia incorrecta se propaga a toda la salida.
+- Cuantizaciones agresivas (Q2_K) marcadas como experimentales por el propio autor; la degradacion de calidad no esta cuantificada.
+- La cabeza MTP se distribuye como fichero separado; omitirla desactiva la decodificacion especulativa y reduce el throughput.
+- Sesgos conocidos: no documentados en la informacion proporcionada; cabe esperar los sesgos del corpus de preentrenamiento de Yandex, no auditados aqui.
+- Licencia Apache-2.0 permisiva para uso comercial, pero el modelo base subyacente y sus condiciones deben verificarse en el repositorio original de Yandex.
+- El repositorio es un repack de terceros, no una publicacion oficial de Yandex; la responsabilidad de validacion recae en el usuario.
+- El autor declara que las cuantizaciones de modelos de 9B o superiores requieren hardware alquilado (H200/Blackwell), lo que sugiere que la validacion se realizo en infraestructura externa y no en su equipo local.
 
 ## Enlaces
 
-- Repositorio Hugging Face de esta versión: https://huggingface.co/AMAImedia/AliceAI-Foundation-80B-A3B-NOESIS-BF16-GGUF
+- Repositorio Hugging Face: https://huggingface.co/AMAImedia/AliceAI-Foundation-80B-A3B-NOESIS-BF16-GGUF
 - Modelo base original: https://huggingface.co/yandex/AliceAI-Foundation-80B-A3B-Base
-- Código del pipeline de repack y cuantización: https://huggingface.co/AMAImedia/AliceAI-Foundation-80B-A3B-BF16-GGUF/tree/main/code
-- Sitio del autor: https://www.amaimedia.com
+- Codigo del pipeline de repack y cuantizacion: https://huggingface.co/AMAImedia/AliceAI-Foundation-80B-A3B-NOESIS-BF16-GGUF/tree/main/code
+- Web de AMAImedia: https://www.amaimedia.com
 - X (Twitter) del autor: https://x.com/AMAImediacom
 - LinkedIn del autor: https://www.linkedin.com/in/ilia-bolotnikov
 - Telegram del autor: https://t.me/djbionicl
-- Donaciones (Boosty): https://boosty.to/amaimediacom
-- Donaciones (DonationAlerts): https://www.donationalerts.com/r/djbionicl

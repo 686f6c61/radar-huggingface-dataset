@@ -79,7 +79,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 451,
+  "downloads_30d": 467,
   "trending_score": 0,
   "parameters": 8030261248,
   "parameters_human": "8.03B",
@@ -100,16 +100,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Outlier-Ai/DeepSeek-R1-Distill-Llama-8B-MLX-4bit · Hugging Face",
-      "url": "https://huggingface.co/Outlier-Ai/DeepSeek-R1-Distill-Llama-8B-MLX-4bit",
-      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
-    },
-    {
-      "title": "Outlier-Ai/DeepSeek-R1-Distill-Llama-8B-MLX-4bit at main",
-      "url": "https://huggingface.co/Outlier-Ai/DeepSeek-R1-Distill-Llama-8B-MLX-4bit/tree/main",
-      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
-    }
-  ]
+  "sources": []
 }

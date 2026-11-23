@@ -47,31 +47,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Qwen3.8-Flash-Next-GSQ-RCO-GGUF-mirror - Hugging Face",
-      "url": "https://huggingface.co/hyukudan/Qwen3.8-Flash-Next-GSQ-RCO-GGUF-mirror",
-      "snippet": "Instructions to use hyukudan/Qwen3.8-Flash-Next-GSQ-RCO-GGUF-mirror with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
-    },
-    {
-      "title": "Qwen3.8 Flash Next Gsq Rco Coder - GGUF Model (2 parts)",
-      "url": "https://local-ai-zone.github.io/models/qwen3-8-flash-next-gsq-rco-coder.html",
-      "snippet": "Download Qwen3.8 Flash Next Gsq Rco Coder GGUF model. 8.27 GB, 851,008 downloads, 419 likes. Split into 2 parts."
-    },
-    {
-      "title": "ISTA-DASLab/Qwen3.8-Flash-Next-GSQ-RCO-GGUF · Hugging Face",
-      "url": "https://huggingface.co/ISTA-DASLab/Qwen3.8-Flash-Next-GSQ-RCO-GGUF",
-      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
-    },
-    {
-      "title": "Qwen3.8-Flash-Next-GSQ-RCO-GGUF: Text-to-Text model — overview, use ...",
-      "url": "https://www.aimodels.fyi/models/huggingFace/qwen3.8-flash-next-gsq-rco-gguf-ista-daslab",
-      "snippet": "Overview Qwen3.8-Flash-Next-GSQ-RCO-GGUF is a set of non-uniform GGUF quantizations of Qwen3.8-Flash-Next, a sparse mixture-of-experts language model with 512 routed experts per layer across 48 layers and 10 active experts per token. The release comes from ISTA-DASLab and includes a BF16 vision encoder and projector for multimodal inference. The most important fact before deployment is that ..."
-    },
-    {
-      "title": "ISTA-DASLab/Qwen3.8-Flash-Next-GSQ-RCO-GGUF",
-      "url": "https://llm-bench.io/models/qwen3-8-flash-next-gsq-rco-gguf",
-      "snippet": "Local LLM benchmarks for ISTA-DASLab/Qwen3.8-Flash-Next-GSQ-RCO-GGUF: 36 tok/s peak across 2 community runs on 1 GPU, with VRAM, context, and quality data by hardware ..."
-    }
-  ]
+  "sources": []
 }

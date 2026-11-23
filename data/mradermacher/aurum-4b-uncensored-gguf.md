@@ -2,85 +2,91 @@
 
 ## Resumen
 
-Aurum-4B-Uncensored-GGUF es una cuantizacion estatica del modelo Aurum-4B-Uncensored, publicada por el usuario mradermacher en Hugging Face. El repositorio no contiene pesos originales en precision completa, sino un conjunto de ficheros GGUF generados a partir del modelo base en formato Hugging Face, lo que permite su ejecucion en entornos de inferencia local como llama.cpp u Ollama.
+Aurum-4B-Uncensored es un modelo de lenguaje de 4.326 millones de parámetros (aproximadamente 4,3B) desarrollado por 2Beyes y distribuido en formato GGUF por mradermacher. Se trata de una variante "uncensored" y "abliterated" del modelo base, derivada de la familia Qwen 3.5 según las etiquetas del repositorio, y orientada a usos donde el modelo original aplica rechazos o restricciones de contenido. El modelo incorpora soporte declarado de tool calling y de MTP (multi-token prediction), lo que lo hace apto para flujos conversacionales y de agentes.
 
-El modelo subyacente es un unico fine-tune de aproximadamente 4.000 millones de parametros, etiquetado como "uncensored" por su autor original (2Beyes), lo que sugiere un ajuste orientado a reducir los rechazos y filtros de seguridad del modelo base. La model card no documenta que modelo preentrenado se uso como punto de partida, ni el dataset de ajuste, ni el proceso de entrenamiento.
+La relevancia de esta ficha reside en que mradermacher publica cuantizaciones estáticas listas para usar con llama.cpp y entornos compatibles con GGUF, cubriendo desde Q2_K (2,1 GB) hasta f16 (8,8 GB). Esto permite desplegar un modelo de 4,3B parámetros en hardware de consumo, algo imposible con los pesos originales en precisión completa. La licencia Apache 2.0 facilita el uso comercial sin las restricciones habituales de otros modelos "uncensored".
 
-La relevancia de esta publicacion es practica: ofrece 13 variantes de cuantizacion (desde Q2_K hasta F16) para que el modelo pueda ejecutarse en hardware de consumo. Sin embargo, la ausencia de informacion sobre arquitectura, licencia, idiomas y rendimiento limita seriamente su evaluacion para uso en produccion.
+No obstante, la información pública disponible es muy limitada: no se especifican la longitud de contexto, los idiomas soportados más allá del inglés, los datos de entrenamiento ni resultados de benchmarks. Esta ficha refleja únicamente lo que consta en la model card y en los metadatos del repositorio, marcando explícitamente como "no disponible" todo aquello que no se ha publicado.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | no disponible (transformer, inferido del formato GGUF y del tamano) |
-| Parametros totales | aproximadamente 4B (por el nombre del modelo; cifra exacta no disponible) |
-| Parametros activos | no aplica (no se indica que sea MoE) |
+| Arquitectura | Transformer (derivada de Qwen 3.5, según etiquetas; detalles no disponibles) |
+| Parámetros totales | 4.326.350.848 (4,3B) |
+| Parámetros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | F16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q4_K_M, Q4_K_S, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K, IQ4_XS |
-| Idiomas soportados | no disponible |
-| Licencia | no disponible |
-| Formato de pesos | GGUF (cuantizaciones estaticas) |
+| Tipos de cuantización | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, f16 (estáticas); variantes i1 (imatrix) en repo separado |
+| Idiomas soportados | en (inglés); no se detallan otros |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (cuantizaciones); safetensors en el modelo base |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion sobre la arquitectura del modelo base Aurum-4B-Uncensored. Por el tamano declarado (4B) y el formato GGUF, se trata con alta probabilidad de un transformer decoder-only, pero el repositorio no confirma la familia arquitectonica ni el modelo preentrenado de partida. Tampoco se documenta la longitud de contexto nativa ni si emplea tecnicas como GQA o attention lineal.
+El modelo base es 2Beyes/Aurum-4B-Uncensored, del que no se publican detalles de arquitectura interna más allá de la etiqueta "qwen3.5", que sugiere una arquitectura transformer derivada de la familia Qwen 3.5. El repositorio de mradermacher es una conversión a GGUF de esos pesos, no un reentrenamiento: las cuantizaciones son estáticas (quantize_version 2, output_tensor_quantised 1, convert_type hf), es decir, se ha aplicado cuantización post-entrenamiento sobre los pesos en formato Hugging Face.
 
-Respecto al entrenamiento, la model card de esta cuantizacion no aporta ningun dato: no se especifica el numero de tokens de ajuste, la composicion del dataset, ni si se aplicaron tecnicas de RLHF, DPO o fine-tuning supervisado. La etiqueta "Uncensored" indica un ajuste para reducir la censura del modelo base, pero no hay documentacion tecnica que lo respalde. El repositorio de origen es https://huggingface.co/2Beyes/Aurum-4B-Uncensored, donde podria encontrarse informacion adicional, aunque no se incluye en la informacion proporcionada.
+Las etiquetas "uncensored" y "abliterated" indican que el modelo base ha sido sometido a un proceso de abliteración, una técnica que elimina o atenúa la dirección de rechazo en el espacio de activaciones para reducir las negativas del modelo ante ciertas peticiones. No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset, ni si hubo fases de RLHF o DPO. Tampoco se documentan innovaciones técnicas propias más allá del soporte declarado de tool calling y MTP (multi-token prediction), que en la práctica puede traducirse en una generación más rápida al predecir varios tokens por paso.
 
 ## Capacidades
 
-- Generacion de texto autoregresiva, segun el formato GGUF y el pipeline de llama.cpp.
-- Capacidad de seguir instrucciones y mantener conversacion multi-turno, inferida del ajuste tipo chat del modelo base (no confirmado en la model card).
-- Comportamiento "uncensored": menor probabilidad de rechazo ante peticiones que el modelo base filtraria (caracteristica declarada, no verificada).
-- Soporte de tool calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingues: no disponible.
-- Capacidades especiales (vision, audio, thinking mode): no disponible.
+- Generación de texto conversacional en inglés, orientada a diálogo multi-turno.
+- Tool calling / function calling: la etiqueta "tool-calling" indica soporte para invocar herramientas externas, aunque no se documenta el formato exacto de las plantillas.
+- MTP (multi-token prediction): capacidad declarada que puede acelerar la decodificación.
+- Modo "uncensored"/"abliterated": menor tendencia a rechazar peticiones que el modelo original rechazaría.
+- Compatibilidad con endpoints (etiqueta "endpoints_compatible"), lo que facilita su integración en servicios de inferencia.
+- Capacidades multilingües: solo se declara inglés; no hay evidencia de soporte de otros idiomas.
+- No se documentan capacidades de visión, audio, razonamiento extendido (thinking mode) ni matemáticas avanzadas.
 
 ## Casos de uso
 
-- Prototipado local de asistentes conversacionales: al estar disponible en GGUF y con variantes desde Q2_K, puede ejecutarse en portatiles con GPU modesta para pruebas de concepto de chatbots sin depender de APIs externas.
-- Investigacion sobre alineacion y censura: util para estudiar el efecto de fine-tunes "uncensored" comparando respuestas frente al modelo base, siempre que se documente el origen del ajuste.
-- Generacion creativa de ficcion sin restricciones tematicas: el ajuste uncensored permite explorar narrativas que los modelos alineados suelen rechazar, en entornos controlados y con supervision humana.
-- Experimentacion con cuantizaciones: el repositorio ofrece 13 variantes, lo que permite medir el impacto de la cuantizacion (Q2_K frente a Q8_0) en calidad y velocidad sobre el mismo modelo.
-- Despliegue en edge devices: las variantes Q2_K y Q3_K_S reducen el peso a unos pocos GB, lo que facilita su ejecucion en dispositivos con poca memoria.
-- Base para fine-tuning posterior: al ser un modelo de 4B, puede servir como punto de partida para ajustes especificos en tareas de dominio con recursos limitados.
+- Asistentes conversacionales sin filtros editoriales: el modelo puede mantener diálogos multi-turno en inglés donde se requiere abordar temas que otros modelos rechazan, gracias a su naturaleza abliterated; útil en entornos de investigación sobre seguridad y alineación.
+- Prototipado de agentes con tool calling: la etiqueta "tool-calling" permite integrarlo en pipelines donde el modelo decide qué función invocar (APIs, bases de datos, calculadoras), aunque conviene validar el formato de plantilla antes de producción.
+- Despliegue en hardware de consumo: con cuantizaciones Q4_K_M (2,9 GB) o Q5_K_M (3,3 GB) cabe en GPUs de 8 GB o incluso en CPU con llama.cpp, lo que lo hace adecuado para estaciones de trabajo modestas y pruebas locales.
+- Generación de texto creativo y roleplay: su sesgo reducido de rechazo lo hace apropiado para narrativa, guiones y juegos de rol donde se exploran temas sensibles de forma controlada.
+- Investigación en abliteración y evaluación de sesgos: sirve como objeto de estudio para comparar el comportamiento del modelo base frente a la variante abliterated en tareas de moderación y seguridad.
+- Fine-tuning ligero sobre GGUF: aunque el formato GGUF no es el ideal para entrenamiento, los pesos safetensors del modelo base permiten adaptaciones con LoRA/QLoRA sobre la variante original de 2Beyes.
+- Inferencia en entornos con recursos limitados: las cuantizaciones Q2_K (2,1 GB) y Q3_K_S (2,2 GB) permiten ejecución en dispositivos con poca memoria, a costa de calidad.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: aproximadamente 8-9 GB en F16, 4-5 GB en Q8_0, 2,5-3 GB en Q4_K_M y 1,5-2 GB en Q2_K (estimaciones por el tamano de 4B; no confirmadas por el autor).
-- GPU recomendadas: RTX 3060 12 GB o superior para Q4_K_M y Q5_K_M; RTX 4090 o A100 para F16 y Q8_0 con contexto largo.
-- Cabe en GPU de consumo: si, en tarjetas con 6-8 GB o mas para cuantizaciones Q4 y Q5; las variantes Q2 y Q3 caben en GPUs de 4 GB.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio y cualquier runtime compatible con GGUF. vLLM y TGI no soportan GGUF de forma nativa sin conversion.
-- Latencia y throughput: no disponibles. Dependeran del hardware y de la cuantizacion elegida.
+- VRAM estimada para inferencia (según cuantización): Q2_K ~2,1 GB; Q3_K_S ~2,2 GB; Q3_K_M ~2,4 GB; Q3_K_L ~2,6 GB; IQ4_XS ~2,7 GB; Q4_K_S ~2,7 GB; Q4_K_M ~2,9 GB; Q5_K_S ~3,2 GB; Q5_K_M ~3,3 GB; Q6_K ~3,7 GB; Q8_0 ~4,7 GB; f16 ~8,8 GB. Añadir margen para el contexto KV cache (no documentado).
+- GPU recomendadas: RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4090 24 GB para las cuantizaciones altas; A100/H100 no son necesarias para este tamaño.
+- Cabe en GPU de consumo: sí, desde una GTX 1650 4 GB (con Q2_K) hasta una RTX 4090 (con f16). Las cuantizaciones Q4 recomendadas encajan en GPUs de 8 GB o superiores.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, text-generation-webui, y servidores compatibles con GGUF (llama.cpp server, llama-cpp-python). No se documenta soporte nativo de vLLM o TGI para este formato.
+- Latencia y throughput: no disponibles; dependen del hardware y de si se aprovecha MTP.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+| Modelo | Parámetros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| Aurum-4B-Uncensored-GGUF | ~4B | no disponible | no disponible | GGUF | Cuantizacion de un fine-tune uncensored sin documentacion tecnica |
-| Llama 3.2 3B Instruct | 3,2B | 128K | Llama 3.2 Community License | safetensors, GGUF | Modelo oficial con documentacion completa y benchmarks publicados |
-| Qwen2.5 3B Instruct | 3,1B | 32K | Apache 2.0 | safetensors, GGUF | Alternativa abierta con licencia permisiva y buen rendimiento multilingue |
-| Phi-3.5 Mini Instruct | 3,8B | 128K | MIT | safetensors, GGUF | Modelo pequeno con benchmarks publicados y licencia permisiva |
+| Aurum-4B-Uncensored (este) | 4,3B | no disponible | Apache 2.0 | GGUF, safetensors | Abliterated, tool calling, MTP |
+| Qwen 2.5 3B Instruct | 3B | 32K (según familia) | Apache 2.0 | safetensors, GGUF | Modelo base de referencia, con alineación estándar |
+| Llama 3.2 3B Instruct | 3B | 128K | Llama 3.2 Community | safetensors, GGUF | Multilingüe, alineación estándar |
+| Phi-3.5-mini | 3,8B | 128K | MIT | safetensors, GGUF | Fuerte en razonamiento y código |
 
-La comparativa es aproximada: no se dispone de datos de rendimiento del modelo Aurum que permitan una comparacion cuantitativa.
+La comparación con Qwen y Llama es aproximada, ya que no se dispone de benchmarks del modelo. La principal diferencia es su carácter abliterated, que lo aleja de los modelos alineados convencionales; en el resto de dimensiones (tamaño y licencia) es comparable a la gama 3B-4B.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de documentacion tecnica: no se especifican arquitectura, datos de entrenamiento, contexto ni idiomas, lo que impide evaluar su idoneidad para produccion.
-- Licencia no disponible: no puede confirmarse si el uso comercial esta permitido; debe consultarse el repositorio de origen antes de cualquier despliegue.
-- Riesgo de alucinacion: sin benchmarks ni evaluaciones publicadas, no hay evidencia sobre la fiabilidad factual del modelo.
-- Sesgos desconocidos: al no documentarse el dataset de ajuste, no es posible identificar sesgos sociales, culturales o linguisticos.
-- Etiqueta "uncensored": implica menor filtrado de contenido, lo que puede generar respuestas inapropiadas, daninas o ilegales; requiere supervision y politicas de uso claras.
-- Procedencia incierta: no se indica el modelo base, lo que plantea dudas sobre la licencia heredada y la trazabilidad de los datos de entrenamiento.
-- Sin soporte de pipeline declarado: la model card no especifica tarea ni formato de prompt, por lo que la integracion requiere prueba y error.
-- Repositorio con cero descargas y cero likes: no hay evidencia de uso comunitario ni validacion externa.
+- Ausencia total de benchmarks publicados: no hay evidencia objetiva de calidad en MMLU, HumanEval, GSM8K ni tareas similares.
+- Proceso de abliteración: reduce los rechazos, lo que implica mayor riesgo de generar contenido dañino, ofensivo o inexacto; requiere moderación externa en producción.
+- Riesgo de alucinación: inherente a modelos de este tamaño; no hay evaluaciones que lo cuantifiquen.
+- Idiomas: solo se declara inglés; el rendimiento en castellano u otros idiomas es desconocido y probablemente deficiente.
+- Longitud de contexto no documentada: no se puede planificar su uso en tareas de contexto largo sin verificación empírica.
+- Licencia Apache 2.0: permite uso comercial, pero el autor no ofrece garantías ni soporte; conviene revisar la licencia del modelo base 2Beyes/Aurum-4B-Uncensored por si hubiera condiciones adicionales no reflejadas en la etiqueta.
+- Formato GGUF: no apto para fine-tuning directo; para adaptaciones hay que partir de los safetensors del modelo base.
+- Repositorio con 0 likes y 927 descargas en la fecha de creación (2026-11-19): ecosistema muy pequeño, sin validación comunitaria.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/mradermacher/Aurum-4B-Uncensored-GGUF
-- Modelo de origen: https://huggingface.co/2Beyes/Aurum-4B-Uncensored
+- Repositorio GGUF: https://huggingface.co/mradermacher/Aurum-4B-Uncensored-GGUF
+- Modelo base: https://huggingface.co/2Beyes/Aurum-4B-Uncensored
+- Cuantizaciones imatrix (i1): https://huggingface.co/mradermacher/Aurum-4B-Uncensored-i1-GGUF
+- Página de descargas del autor: https://hf.tst.eu/model#Aurum-4B-Uncensored-GGUF
+- FAQ y solicitudes de cuantización: https://huggingface.co/mradermacher/model_requests
+- Guía de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Comparativa de calidad de cuantizaciones (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9

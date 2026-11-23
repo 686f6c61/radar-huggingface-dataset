@@ -2,100 +2,96 @@
 
 ## Resumen
 
-CyberGuard-3B-GGUF es un repositorio de cuantizaciones estáticas en formato GGUF generadas por mradermacher a partir del modelo base CyberGuard-3B, publicado por FarrukhMunir1. El repositorio no contiene un modelo entrenado desde cero ni una variante arquitectónica propia, sino una colección de ficheros derivados que permiten ejecutar el modelo original en hardware con recursos limitados mediante llama.cpp y ecosistemas compatibles.
+CyberGuard-3B-GGUF es la distribucion en formato GGUF del modelo CyberGuard-3B, un ajuste fino (fine-tune) de caracter conversacional orientado a ciberseguridad. El modelo original fue desarrollado por el usuario FarrukhMunir1 sobre un modelo base de aproximadamente 3.085 millones de parametros (3,08 B), y esta version concreta ha sido cuantizada y publicada por mradermacher, un conocido distribuidor de cuantizaciones GGUF para el ecosistema llama.cpp.
 
-El modelo base, según la información disponible, cuenta con aproximadamente 3.000 millones de parámetros, lo que lo sitúa en la categoría de modelos pequeños orientados a despliegue local. El nombre "CyberGuard" sugiere un enfoque hacia tareas de seguridad, moderación o protección de contenido, aunque la model card del repositorio no documenta explícitamente el dominio de entrenamiento, el dataset ni el pipeline.
+El modelo se entrena mediante QLoRA/LoRA usando las librerias Unsloth, TRL e ironllms, lo que indica un ajuste fino eficiente sobre el modelo base. Su proposito es ofrecer asistencia especializada en dominios de ciberseguridad (analisis de vulnerabilidades, explicacion de conceptos de seguridad, apoyo a tareas de defensa) en un tamano reducido que pueda ejecutarse en hardware de consumo.
 
-La relevancia de este repositorio es práctica: ofrece hasta trece variantes de cuantización (desde Q2_K hasta F16, incluyendo IQ4_XS) que cubren un rango amplio de compromisos entre calidad y consumo de memoria. Esto facilita la evaluación del modelo en entornos sin GPU dedicada, aunque la falta de documentación sobre el modelo base limita seriamente cualquier valoración rigurosa de sus capacidades.
+La relevancia de esta ficha radica en que combina un tamano compacto (3 B de parametros) con cuantizaciones que van desde 1,4 GB (Q2_K) hasta 6,3 GB (f16), lo que permite desplegarlo en GPUs de gama media e incluso en CPU. La licencia Apache 2.0 facilita su uso comercial, si bien la documentacion tecnica publicada por el autor es muy limitada.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (modelo base de ~3B parámetros; arquitectura no documentada en la información proporcionada) |
-| Parametros totales | aproximadamente 3.000 millones (deducido del nombre del modelo) |
-| Parametros activos | no aplica (no se indica que sea MoE) |
+| Arquitectura | Transformer (modelo base no especificado; ajuste fino QLoRA/LoRA) |
+| Parametros totales | 3.085.938.688 (3,08 B) |
+| Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | F16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q4_K_M, Q4_K_S, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K, IQ4_XS |
-| Idiomas soportados | no disponible |
-| Licencia | no disponible |
-| Formato de pesos | GGUF (cuantizaciones estáticas); el modelo base probablemente en safetensors, no confirmado |
-| Version de cuantizacion | quantize_version 2, output_tensor_quantised 1, convert_type hf |
+| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, f16 |
+| Idiomas soportados | en (ingles; no se documentan otros idiomas) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (cuantizaciones); el modelo base original en safetensors |
+| Tamano del repo | 27,9 GB (incluye todas las cuantizaciones) |
+| Modelo base | FarrukhMunir1/CyberGaurd-Demo |
+| Libreria | transformers |
+| Pipeline | no disponible |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información sobre la arquitectura del modelo base CyberGuard-3B en la documentación proporcionada. El nombre y el tamaño sugieren un transformer decoder-only de aproximadamente 3.000 millones de parámetros, patrón habitual en la familia de modelos pequeños para despliegue local, pero no se confirma ni la familia arquitectónica, ni el número de capas, ni las dimensiones de atención.
+La informacion disponible no detalla la arquitectura interna del modelo base sobre el que se construye CyberGuard-3B (no se especifica si es Llama, Qwen, Mistral u otra familia). Los tags de la model card indican que el ajuste se realizo mediante QLoRA y LoRA con las herramientas Unsloth, TRL e ironllms, lo que sugiere un entrenamiento de ajuste fino supervisado (SFT) sobre un modelo preentrenado de aproximadamente 3 B de parametros. No se documenta el volumen de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de RLHF o DPO.
 
-Tampoco se documentan los datos de entrenamiento: número de tokens, composición del corpus, uso de RLHF, DPO u otras técnicas de alineación, ni innovaciones técnicas como decodificación especulativa o atención lineal. Los únicos metadatos técnicos disponibles corresponden al proceso de cuantización realizado por mradermacher (versión de quantize, conversión desde formato Hugging Face y cuantización de tensores de salida), no al entrenamiento del modelo original.
+La innovacion principal de esta publicacion no reside en el modelo en si, sino en la distribucion de cuantizaciones estaticas en formato GGUF para llama.cpp, que abarcan desde Q2_K hasta f16. El autor de la cuantizacion senala que no ha generado cuantizaciones ponderadas/imatrix, por lo que las versiones IQ disponibles (IQ4_XS) son estaticas.
 
 ## Capacidades
 
-- Generación de texto: capacidad esperable en un modelo de ~3B parámetros, sin confirmación documental de calidad o dominio.
-- Posible orientación a seguridad o moderación de contenido, inferida únicamente del nombre "CyberGuard"; no verificada en la información disponible.
-- Soporte de tool calling / function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingües: no disponible.
-- Capacidades especiales (thinking mode, visión, audio): no disponible.
-- Ejecución local mediante llama.cpp y derivados gracias al formato GGUF.
+- Generacion de texto conversacional en ingles, orientada a tematicas de ciberseguridad.
+- Asistencia en explicacion de conceptos de seguridad, analisis de configuraciones y apoyo a tareas defensivas (segun el proposito declarado del ajuste fino).
+- Ejecucion local mediante llama.cpp y derivados (Ollama, LM Studio, etc.) gracias al formato GGUF.
+- Capacidad multilingue limitada: la model card solo declara ingles.
+- No se documenta soporte explicito de tool calling, function calling, agentes ni modos de razonamiento extendido (thinking mode).
+- No se documentan capacidades de vision, audio ni multimodalidad.
 
 ## Casos de uso
 
-- Evaluación local en hardware de consumo: las variantes Q4_K_M e IQ4_XS permiten probar el modelo en equipos con 8-16 GB de RAM o VRAM, útil para validar si el comportamiento del modelo base encaja en un prototipo antes de invertir en infraestructura mayor.
-- Moderación de contenido en pipelines offline: si el modelo base cumple su nombre, podría integrarse como filtro previo o posterior en sistemas de publicación de contenido, ejecutándose en CPU mediante llama.cpp sin depender de APIs externas.
-- Despliegue en entornos air-gapped: el formato GGUF y la ausencia de dependencias de servicios en la nube permiten ejecutar el modelo en redes aisladas, escenario relevante para organizaciones con requisitos de confidencialidad.
-- Prototipado rápido de asistentes conversacionales: con 3B parámetros y cuantización Q4, se puede servir un chatbot básico en una sola GPU consumer o incluso en CPU, adecuado para demos internas.
-- Filtrado de texto en aplicaciones de mensajería: un modelo pequeño puede clasificar o marcar mensajes sospechosos en tiempo casi real si la latencia con cuantización Q4_K_M es suficientemente baja, aunque no hay datos de throughput publicados.
-- Investigación sobre cuantización: el repositorio ofrece un conjunto amplio de variantes del mismo modelo, lo que permite estudiar empíricamente la degradación de calidad entre Q2_K y F16 en tareas concretas.
-- Base para fine-tuning ligero: las variantes F16 o Q8_0 pueden servir como punto de partida para adaptaciones posteriores, aunque la licencia no documentada impide confirmar si el uso comercial está permitido.
+- Asistente local de consultas de ciberseguridad: al ejecutarse con cuantizaciones Q4_K_M (2,0 GB), puede desplegarse en un portatil con GPU integrada para responder dudas sobre conceptos de seguridad sin enviar datos a la nube, lo que reduce la exposicion de informacion sensible.
+- Analisis de configuraciones y politicas de seguridad: el modelo puede revisar fragmentos de configuracion (reglas de firewall, politicas de acceso) y proponer mejoras, aprovechando su ajuste especifico en el dominio.
+- Formacion y concienciacion: generacion de explicaciones didacticas sobre vulnerabilidades comunes (OWASP, CVE) para equipos no tecnicos, con la ventaja de que el contenido no sale del entorno local.
+- Prototipado rapido de chatbots de seguridad: su tamano compacto permite iterar rapidamente en entornos de desarrollo con recursos limitados antes de escalar a modelos mayores.
+- Clasificacion y triaje de alertas: puede emplearse como primer filtro en pipelines de procesamiento de logs o alertas, generando resumenes en lenguaje natural de eventos de seguridad.
+- Educacion y entornos air-gapped: al ser un modelo de 3 B con licencia Apache 2.0, es adecuado para laboratorios de seguridad aislados de internet donde no se pueden usar APIs comerciales.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. No existen datos de MMLU, HumanEval, GSM8K ni de ninguna otra evaluación para CyberGuard-3B ni para sus cuantizaciones en la documentación proporcionada.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM/RAM estimada para inferencia (aproximada, según tamaño de fichero típico para 3B parámetros):
-  - F16: ~6 GB
-  - Q8_0: ~3,5 GB
-  - Q6_K: ~2,7 GB
-  - Q5_K_M: ~2,3 GB
+- VRAM estimada para inferencia (solo pesos, sin overhead de contexto):
+  - Q2_K: ~1,4 GB
   - Q4_K_M: ~2,0 GB
-  - IQ4_XS: ~1,8 GB
-  - Q3_K_M: ~1,6 GB
-  - Q2_K: ~1,2 GB
-- GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM para cuantizaciones Q4 o superiores (RTX 3050, RTX 4060, GTX 1660). Para F16 se recomienda 8 GB o más (RTX 3060 Ti, RTX 4060 Ti, RTX 4070). No se requiere A100 ni H100 para este tamaño.
-- Cabe en GPU consumer: sí, en todas las variantes, incluidas GPUs de gama baja con 4-6 GB de VRAM para cuantizaciones Q4 y Q3.
-- Opciones de despliegue: llama.cpp, Ollama (mediante importación del GGUF), LM Studio, text-generation-webui, y servidores compatibles con GGUF como llama-cpp-python. vLLM y TGI no soportan GGUF de forma nativa para este formato, por lo que requerirían el modelo base en safetensors.
-- Latencia y throughput: no disponibles. No se han publicado mediciones.
+  - Q5_K_M: ~2,3 GB
+  - Q8_0: ~3,4 GB
+  - f16: ~6,3 GB
+- GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM para cuantizaciones Q4; RTX 3060, RTX 4060, RTX 4090 o superiores para mayor velocidad. Tambien puede ejecutarse en CPU.
+- Cabe en GPUs de consumo: si, practicamente en cualquier GPU moderna con 4-8 GB de VRAM segun la cuantizacion elegida.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, y cualquier runtime compatible con GGUF (koboldcpp, text-generation-webui). El modelo original en safetensors puede usarse con transformers.
+- Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| CyberGuard-3B-GGUF | ~3B | no disponible | no disponible | GGUF | Cuantizaciones de un modelo base sin documentación pública |
-| Llama 3.2 3B Instruct | 3,2B | 128K | Llama 3.2 Community License | safetensors, GGUF | Modelo ampliamente documentado, con benchmarks publicados y soporte multilingüe oficial |
-| Qwen2.5 3B Instruct | 3,1B | 32K | Apache 2.0 | safetensors, GGUF | Licencia permisiva, buen rendimiento en código y matemáticas, benchmarks públicos |
-| Phi-3 Mini | 3,8B | 128K | MIT | safetensors, GGUF | Enfoque en razonamiento y código, documentación completa |
+| CyberGuard-3B | 3,08 B | no disponible | Apache 2.0 | GGUF | Ajuste fino en ciberseguridad, solo ingles |
+| Llama 3.2 3B | 3,2 B | 128 K | Llama 3.2 Community | safetensors, GGUF | Base generalista, multilingue |
+| Qwen 2.5 3B | 3,1 B | 32 K | Apache 2.0 | safetensors, GGUF | Base generalista, multilingue, buen rendimiento en codigo |
+| Phi-3 Mini | 3,8 B | 128 K | MIT | safetensors, GGUF | Base generalista, fuerte en razonamiento |
 
-La comparación es estructural: los tres modelos alternativos cuentan con documentación pública, benchmarks y licencias claras, mientras que CyberGuard-3B carece de todos esos elementos en la información disponible. No se puede establecer una comparación de rendimiento sin datos.
+Nota: la comparativa se ofrece como referencia de categoria (modelos de ~3 B); no se dispone de datos de benchmarks de CyberGuard-3B que permitan una comparacion cuantitativa de rendimiento.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de documentación sobre el modelo base: no se conocen dataset, técnica de entrenamiento, evaluación ni dominio real de aplicación.
-- Licencia no disponible: no se puede confirmar si el uso comercial está permitido, lo que desaconseja su integración en productos sin aclaración previa por parte del autor.
-- Idiomas no documentados: no se puede garantizar un comportamiento correcto en castellano ni en ningún otro idioma.
-- Contexto desconocido: imposible planificar aplicaciones que dependan de ventanas largas.
-- Riesgo de alucinación: esperable en modelos de ~3B parámetros, especialmente sin datos de alineación publicados; no hay evaluaciones que lo cuantifiquen.
-- Sesgos: no documentados; un modelo sin model card detallada no permite auditar sesgos de género, raza, idioma o dominio.
-- Nombre potencialmente engañoso: "CyberGuard" sugiere capacidades de seguridad que no están verificadas empíricamente.
-- Repositorio con 0 descargas y 0 likes en el momento de la consulta: sin validación por parte de la comunidad.
-- Las cuantizaciones Q2_K y Q3_K_S pueden degradar notablemente la calidad en modelos pequeños; se recomienda Q4_K_M o superior para uso real.
-- No apto para producción sin una evaluación previa propia del modelo base en las tareas objetivo.
+- Documentacion tecnica muy escasa: no se especifican arquitectura base, contexto, dataset de entrenamiento ni evaluaciones, lo que dificulta valorar su calidad real.
+- Solo declara soporte de ingles; su uso en castellano u otros idiomas puede degradar significativamente la calidad.
+- Riesgo de alucinacion inherente a los modelos de 3 B, especialmente en dominios tecnicos donde la precision es critica (recomendaciones de seguridad, identificacion de CVE).
+- No se documentan sesgos conocidos, pero al ser un ajuste fino sobre un modelo base no identificado, hereda los sesgos de este.
+- Aunque la licencia es Apache 2.0, conviene verificar las condiciones del modelo base original antes de un uso comercial en produccion.
+- No se recomienda como unica fuente de verdad en tareas de seguridad critica; debe usarse como apoyo con supervision humana.
+- Las cuantizaciones de baja calidad (Q2_K, Q3_K_M) pueden degradar notablemente la coherencia; se recomienda Q4_K_M o superior para uso practico.
 
 ## Enlaces
 
-- Repositorio GGUF: https://huggingface.co/mradermacher/CyberGuard-3B-GGUF
-- Modelo base: https://huggingface.co/FarrukhMunir1/CyberGuard-3B
-- Perfil del autor de las cuantizaciones: https://huggingface.co/mradermacher
-- llama.cpp (runtime compatible): https://github.com/ggerganov/llama.cpp
-- Ollama (runtime compatible): https://ollama.com
+- Modelo en Hugging Face: https://huggingface.co/mradermacher/CyberGuard-3B-GGUF
+- Modelo base original: https://huggingface.co/FarrukhMunir1/CyberGaurd-Demo
+- Pagina de resumen del cuantizador: https://hf.tst.eu/model#CyberGuard-3B-GGUF
+- FAQ y solicitudes de cuantizacion: https://huggingface.co/mradermacher/model_requests
+- Referencia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Analisis de tipos de cuantizacion (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9

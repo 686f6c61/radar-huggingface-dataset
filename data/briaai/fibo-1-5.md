@@ -2,78 +2,88 @@
 
 ## Resumen
 
-Fibo-1.5 es un modelo de generación de imágenes texto a imagen desarrollado por BRIA AI, la primera familia de modelos open-source con paradigma JSON-native, es decir, entrenados exclusivamente con capturas estructuradas largas en formato JSON. Este enfoque, denominado VGL (Visual GenAI Language), busca mejorar la controlabilidad, la predecibilidad y el desacoplamiento entre atributos visuales, permitiendo que el modelo interprete instrucciones complejas y estructuradas en lugar de simples descripciones libres.
+Fibo-1.5 es un modelo de generacion de imagenes texto-a-imagen desarrollado por Bria AI, una empresa especializada en modelos generativos con licencia comercial y entrenamiento con datos licenciados. Se trata de una evolucion del modelo FIBO original (briaai/FIBO), del que hereda la arquitectura y sobre el que aplica un ajuste fino. El modelo esta disenado para generar imagenes de alta calidad a partir de descripciones textuales, con un enfasis explicito en el ambito artistico y en el cumplimiento de requisitos de licencia para uso comercial.
 
-La versión 1.5 introduce una destilación de pocos pasos (few-step distillation) que reduce el número de iteraciones de inferencia necesarias, junto con mejoras en el realismo y las texturas de las imágenes generadas. Con aproximadamente 8,29 mil millones de parámetros, el modelo se distribuye a través de la librería diffusers y requiere aceptar condiciones de licencia en Hugging Face (acceso restringido). Está pensado para producción, con soporte de API en plataformas como Bria Platform, Fal.ai y Replicate, así como nodos de ComfyUI e inferencia local.
+El modelo se distribuye a traves de la libreria diffusers con la clase `BriaFiboPipeline` y pesos en formato safetensors, con un total de aproximadamente 8.285 millones de parametros y un repositorio de 42,2 GB. Su acceso esta restringido (gated): es necesario aceptar las condiciones de uso en Hugging Face antes de poder descargarlo. La licencia es la "bria-fibo", una licencia propia de Bria AI que conviene revisar con detalle antes de cualquier uso en produccion.
+
+La relevancia de Fibo-1.5 radica en su propuesta de valor diferencial frente a otros modelos texto-a-imagen: un origen de datos y un marco legal pensados para entornos comerciales, junto con un ajuste especifico hacia la estetica artistica. Para desarrolladores e investigadores que necesitan integrar generacion de imagenes en productos comerciales sin las ambiguedades de licencia de otros modelos abiertos, este modelo resulta una alternativa a considerar, siempre que se acepten sus terminos de acceso.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Modelo de difusion para texto a imagen (no se especifica el tipo exacto de backbone) |
-| Parametros totales | 8.285.836.848 (8,29 B) |
-| Parametros activos | No aplica (modelo denso) |
-| Longitud de contexto | No disponible |
-| Tipos de cuantizacion | No disponible |
-| Idiomas soportados | Ingles (en) |
-| Licencia | bria-fibo (acceso restringido, requiere aceptacion de condiciones) |
-| Formato de pesos | safetensors |
+| Arquitectura | no disponible (modelo de difusion texto-a-imagen, pipeline `BriaFiboPipeline` en diffusers) |
+| Parametros totales | 8.285.836.848 |
+| Parametros activos | no aplica (no es MoE) |
+| Longitud de contexto | no disponible (no aplica a modelos texto-a-imagen; la entrada es un prompt de texto) |
+| Tipos de cuantizacion | no disponible |
+| Idiomas soportados | en (ingles) |
+| Licencia | bria-fibo (licencia propia de Bria AI; acceso restringido con aceptacion de condiciones) |
+| Formato de pesos | safetensors (libreria diffusers) |
 
 ## Arquitectura y entrenamiento
 
-No se han publicado detalles tecnicos sobre la arquitectura interna del modelo (si es un transformer de difusion, un modelo de flujo, etc.) en la informacion disponible. Se sabe que es un modelo de difusion para texto a imagen, integrado en la libreria diffusers mediante el pipeline `BriaFiboPipeline`. El modelo base es `briaai/FIBO`, y Fibo-1.5 es un ajuste fino (finetune) de ese modelo base.
+La informacion disponible no detalla la arquitectura interna del modelo mas alla de que se trata de un modelo de difusion texto-a-imagen implementado en diffusers bajo la clase `BriaFiboPipeline`. El numero de parametros (unos 8.285 millones) y el tamano del repositorio (42,2 GB) son coherentes con un modelo de difusion de escala media-alta, pero no se especifica si emplea un UNet, un transformer de difusion (DiT) o una arquitectura hibrida, ni el tipo de codificador de texto o VAE asociados.
 
-El entrenamiento se realizo exclusivamente con capturas estructuradas largas en formato JSON, siguiendo el paradigma VGL. Esto implica que el modelo aprende a generar imagenes a partir de prompts estructurados que describen atributos de forma desacoplada (por ejemplo, sujeto, fondo, estilo, iluminacion, etc.). La version 1.5 incorpora destilacion de pocos pasos, lo que reduce el numero de pasos de muestreo necesarios para obtener una imagen de calidad, y mejora el realismo y las texturas respecto a la version anterior.
+Fibo-1.5 es un ajuste fino (finetune) del modelo briaai/FIBO, segun los metadatos de Hugging Face. No se dispone de informacion sobre el volumen de tokens o pares imagen-texto utilizados en el entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas de alineacion como RLHF o DPO. Tampoco se documentan innovaciones tecnicas especificas (decodificacion especulativa, atencion lineal u otras) en la informacion proporcionada. Existe una referencia a un paper en arXiv (arxiv:2511.06876) que probablemente contiene estos detalles, pero su contenido no se ha facilitado.
 
 ## Capacidades
 
-- Generacion de imagenes a partir de prompts de texto, con especial enfasis en la adherencia al prompt y la controlabilidad.
-- Expansion automatica de prompts: el modelo puede tomar una idea corta y expandirla a un prompt JSON estructurado y rico antes de generar la imagen.
-- Generacion de prompts estructurados JSON como salida intermedia, lo que permite a los desarrolladores inspeccionar y modificar la descripcion antes de la generacion.
-- Soporte de tres modos de uso: generacion directa, expansion de prompt y generacion, y posiblemente otros modos documentados en la plataforma de BRIA.
-- Integracion con API (Bria Platform, Fal.ai, Replicate), nodos de ComfyUI e inferencia local.
-- Capacidad de desacoplamiento de atributos visuales, lo que facilita la edicion controlada de caracteristicas especificas de la imagen.
-- Multilingue: solo ingles (segun los datos de Hugging Face).
+- Generacion de imagenes a partir de prompts de texto en ingles (pipeline text-to-image).
+- Enfasis en estetica artistica y contenido creativo, segun los tags del modelo ("art").
+- Integracion nativa con la libreria diffusers mediante `BriaFiboPipeline`.
+- Soporte de tool calling / function calling: no disponible (no aplica a un modelo texto-a-imagen).
+- Soporte de agentes y razonamiento multi-paso: no disponible (no aplica).
+- Capacidades multilingues: limitadas al ingles segun los metadatos.
+- Capacidades especiales (thinking mode, vision, audio): no disponible.
 
 ## Casos de uso
 
-- Generacion de imagenes para prototipado de productos: un equipo de diseno puede describir un concepto en lenguaje natural y obtener una imagen de alta fidelidad en pocos pasos, gracias a la destilacion de pocos pasos de Fibo-1.5.
-- Automatizacion de contenido visual para marketing: el modelo puede generar variaciones de una misma escena cambiando atributos especificos (iluminacion, fondo, estilo) mediante prompts JSON estructurados, lo que reduce el trabajo manual de retoque.
-- Integracion en pipelines de generacion de imagenes en produccion: al ser JSON-native, los desarrolladores pueden construir flujos donde el prompt estructurado se genera, valida y modifica programaticamente antes de la inferencia, mejorando la predecibilidad.
-- Creacion de datasets sinteticos para entrenamiento de otros modelos de vision: la capacidad de controlar atributos de forma desacoplada permite generar imagenes etiquetadas con metadatos estructurados, utiles para tareas de clasificacion o segmentacion.
-- Desarrollo de aplicaciones de edicion de imagenes asistida: aunque el modelo es de generacion, su salida JSON puede usarse como entrada para otros modelos de edicion, facilitando la composicion de escenas complejas.
-- Despliegue on-premise con Fibo Lite: para entornos con requisitos de privacidad o latencia, BRIA ofrece una version reducida del modelo (Fibo Lite) que mantiene las mismas capacidades de controlabilidad y generacion estructurada con menor coste computacional.
+- Generacion de ilustraciones para publicaciones y medios: el modelo puede producir imagenes artisticas a partir de descripciones textuales, adecuado para equipos editoriales que necesitan material visual original con un marco de licencia comercial claro.
+- Creacion de assets para marketing y publicidad: permite generar variaciones de imagenes de producto o conceptuales a partir de briefs textuales, integrándose en flujos de trabajo creativos mediante diffusers.
+- Prototipado rapido de conceptos visuales: disenadores pueden explorar direcciones esteticas antes de producir assets finales, gracias a la orientacion artistica del ajuste fino.
+- Generacion de contenido para videojuegos y entretenimiento: util para producir concept art, fondos o ilustraciones de ambientacion, siempre que la licencia bria-fibo lo permita en el contexto del estudio.
+- Integracion en pipelines de automatizacion creativa: al ser compatible con diffusers, puede incorporarse en scripts y servicios que generen imagenes bajo demanda a partir de prompts.
+- Investigacion en generacion de imagenes: sirve como base para experimentos de ajuste fino o evaluacion comparativa frente a otros modelos de difusion, dado su tamano moderado y su disponibilidad en safetensors.
+- Aplicaciones comerciales con requisitos de licencia estrictos: para organizaciones que necesitan un modelo con condiciones de uso explicitas y acceso controlado, el caracter gated y la licencia propia de Bria AI facilitan la trazabilidad legal.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. No se dispone de datos comparativos de MMLU, HumanEval, GSM8K u otras metricas estandar para modelos de generacion de imagenes (como FID, CLIP score, etc.) en las fuentes consultadas.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- No se han publicado requisitos oficiales de VRAM para Fibo-1.5 en la informacion disponible.
-- El tamano del repositorio es de 42,2 GB, lo que sugiere que los pesos se distribuyen en precision fp32 o fp16 (probablemente fp16, dado el uso de safetensors). Para un modelo de 8,29 B de parametros, se estima que la inferencia en fp16 requiere al menos 16 GB de VRAM, y en fp32 alrededor de 33 GB, pero estos valores son estimaciones no confirmadas por BRIA.
-- No se indica si el modelo cabe en GPUs de consumo como RTX 4090 (24 GB) o RTX 3090 (24 GB). Dado el tamano, es probable que quepa en estas tarjetas con cuantizacion, pero no hay datos oficiales.
-- Opciones de despliegue: API gestionada (Bria Platform, Fal.ai, Replicate), nodos de ComfyUI, e inferencia local mediante diffusers. No se menciona soporte explicito para vLLM, llama.cpp u Ollama, ya que es un modelo de difusion, no un LLM.
-- Latencia y throughput: no disponibles.
+- VRAM estimada para inferencia: no disponible de forma oficial. Con 8.285 millones de parametros en precision completa (fp32) el modelo requeriria del orden de 33 GB solo para los pesos, y en fp16 alrededor de 16-17 GB, a lo que habria que sumar la memoria del codificador de texto y del VAE y la necesaria para las activaciones durante la difusion. Estas cifras son estimaciones a partir del recuento de parametros, no datos confirmados.
+- GPU recomendadas: no disponible en la informacion proporcionada. Por el tamano del modelo, GPUs con 24 GB o mas de VRAM (por ejemplo, RTX 4090, A100, H100) serian las candidatas razonables, pero no hay confirmacion oficial.
+- Compatibilidad con GPU de consumo: no confirmada. Es probable que requiera cuantizacion o tecnicas de offloading para caber en GPUs de consumo con menos de 24 GB, pero no se dispone de datos.
+- Opciones de despliegue: diffusers (libreria oficial del modelo, con `BriaFiboPipeline`). Otras opciones como ComfyUI, Automatic1111, vLLM o TGI no estan documentadas en la informacion disponible.
+- Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
 
-No se dispone de informacion suficiente para establecer una comparativa con otros modelos de generacion de imagenes de tamano similar (por ejemplo, SDXL, Flux, etc.) en las fuentes consultadas. La informacion proporcionada no incluye datos de rendimiento ni especificaciones de modelos alternativos.
+No se dispone de datos de rendimiento ni de especificaciones detalladas de Fibo-1.5 que permitan una comparacion rigurosa con alternativas. A continuacion se indican posibles modelos comparables de la misma categoria, pero sin datos verificados de rendimiento para confrontar:
+
+| Modelo | Parametros | Contexto | Licencia | Disponibilidad |
+|---|---|---|---|---|
+| Fibo-1.5 (briaai) | 8.285 M | no aplica | bria-fibo (gated) | Hugging Face, acceso restringido |
+| FIBO (briaai) | no disponible | no aplica | no disponible | Hugging Face |
+| Alternativas texto-a-imagen de proposito general | no disponible | no aplica | no disponible | no disponible |
+
+No es posible establecer una comparativa cuantitativa fiable con la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el modelo requiere aceptar condiciones de licencia en Hugging Face antes de su descarga, lo que puede limitar su uso en entornos automatizados.
-- Licencia bria-fibo: no se especifican los terminos exactos, pero es probable que incluya restricciones de uso comercial o de redistribucion. Es necesario revisar la licencia completa antes de su uso en produccion.
-- Idioma: el modelo solo soporta ingles, lo que limita su aplicacion en entornos multilingues.
-- Riesgo de alucinacion visual: como cualquier modelo de generacion de imagenes, puede producir artefactos o inconsistencias en escenas complejas, especialmente con prompts ambiguos.
-- Sesgos: no se ha publicado informacion sobre sesgos en los datos de entrenamiento ni en las salidas del modelo.
-- Dependencia de prompts estructurados: el rendimiento optimo requiere que los prompts sigan el formato JSON esperado; prompts libres pueden dar resultados suboptimos.
-- Sin informacion sobre cuantizacion: no se documentan formatos de cuantizacion oficiales, lo que puede dificultar el despliegue en hardware con VRAM limitada.
+- Sesgos conocidos: no documentados en la informacion disponible; como todo modelo generativo entrenado con datos a gran escala, es probable que reproduzca sesgos presentes en sus datos de entrenamiento, pero no hay confirmacion oficial.
+- Riesgo de alucinacion: no aplica en el sentido textual, pero el modelo puede generar imagenes que no se correspondan fielmente con el prompt o que contengan artefactos visuales; no se dispone de evaluaciones al respecto.
+- Limitaciones de idioma: el modelo solo declara soporte de ingles, por lo que los prompts en castellano u otros idiomas pueden producir resultados de menor calidad.
+- Restricciones de licencia: la licencia bria-fibo es propia y el acceso esta restringido (gated), requiriendo aceptar condiciones en Hugging Face. Es imprescindible revisar los terminos para uso comercial, redistribucion y atribucion antes de integrar el modelo en produccion.
+- Caveats para produccion: no se dispone de informacion sobre latencia, throughput, estabilidad ni requisitos de hardware oficiales, lo que dificulta la planificacion de capacidad. El caracter gated anade una dependencia de la aprobacion de acceso por parte del proveedor.
+- Ausencia de benchmarks publicos en la informacion disponible, lo que impide validar su calidad frente a alternativas.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/briaai/Fibo-1.5
 - Modelo base FIBO: https://huggingface.co/briaai/FIBO
-- Pagina oficial de Fibo: https://bria.ai/fibo
-- Repositorio GitHub de FIBO: https://github.com/Bria-AI/FIBO
-- Paper (referencia en tags): arxiv:2511.06876
+- Paper de referencia (arXiv): https://arxiv.org/abs/2511.06876
+- Documentacion de diffusers (libreria): https://huggingface.co/docs/diffusers
+- Sitio de Bria AI: no disponible en la informacion proporcionada

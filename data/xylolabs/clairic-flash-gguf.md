@@ -2,101 +2,105 @@
 
 ## Resumen
 
-Clairic Flash GGUF es la versión cuantizada en formato GGUF de Cloudflare/clairic-flash, un modelo multimodal de 9B parámetros desarrollado originalmente por Cloudflare como fine-tune de Qwen3.5-9B para extracción estructurada de información. Xylolabs se encarga de la conversión y cuantización a GGUF para su uso con llama.cpp en CUDA, Metal o CPU, incluyendo el proyector visual en BF16 para entrada de imágenes. El modelo resuelve el problema de convertir un estado (texto e imágenes) y un esquema de campos tipados en respuestas estructuradas, con estimación numérica y forecasting.
+Clairic Flash GGUF es la versión cuantizada en formato GGUF del modelo Cloudflare/clairic-flash, un modelo multimodal de 9B parámetros desarrollado por Cloudflare a partir de un ajuste fino de Qwen3.5-9B. Está diseñado específicamente para extracción estructurada de información: recibe un estado (texto o JSON) y un esquema de campos tipados, y devuelve respuestas estructuradas con valores tipados, listas, nulos, estimaciones y trayectorias de pronóstico, junto con información de confianza y puntuación por campo. La versión GGUF la publica Xylolabs para su uso con llama.cpp, incluyendo el codificador visual para entrada de imágenes.
 
-La arquitectura combina 24 capas de atención lineal Gated DeltaNet con 8 capas de atención completa, sumando 8,95B parámetros en el modelo de lenguaje y 0,46B en el codificador visual. El contexto nativo alcanza 262.144 tokens, con un vocabulario de 248.320 entradas y hidden size de 4.096. La relevancia actual radica en que permite ejecutar un modelo de extracción estructurada multimodal de casi 9B en hardware de consumo mediante cuantización Q4_K_M (5,69 GB), manteniendo un 93,46% de coincidencia top-1 respecto a la referencia f32.
+La relevancia de esta ficha radica en que permite ejecutar localmente un modelo de extracción estructurada multimodal con cuantizaciones que van desde 3,93 GB (Q2_K) hasta 9,53 GB (Q8_0), con métricas de fidelidad respecto a la inferencia en f32 publicadas por el autor de la cuantización. El modelo base está bajo licencia Apache-2.0, lo que facilita su uso comercial, y su enfoque en salida estructurada con esquemas JSON lo hace adecuado para pipelines de extracción de datos donde la consistencia del formato es crítica.
 
-Esta ficha cubre específicamente los archivos GGUF producidos por Xylolabs, no el modelo original de Cloudflare. La cabeza de extracción tipada de Cloudflare (`clair_head.safetensors`) y su runtime Python no están incluidos en estos archivos, por lo que el uso se limita al modelo de lenguaje y al codificador visual.
+Es importante señalar que esta versión GGUF no incluye la cabeza de extracción tipada de Cloudflare ni el bloque de predicción multi-token del checkpoint original, por lo que su comportamiento puede diferir del modelo PyTorch de referencia. El modelo se distribuye con el codificador visual en BF16 y una matriz de importancia (imatrix) para las cuantizaciones tipo IQ.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer híbrido: 24 capas Gated DeltaNet (atención lineal) + 8 capas de atención completa |
-| Parámetros totales | 8.953.803.264 (8,95B en LM + 0,46B en codificador visual) |
-| Parámetros activos | no disponible (no es MoE) |
-| Longitud de contexto | 262.144 tokens |
-| Tipos de cuantización | Q8_0, Q4_K_M |
-| Idiomas soportados | no disponible (la model card menciona inglés y coreano en el conjunto de calibración) |
+| Arquitectura | Transformer multimodal (fine-tune de Qwen3.5-9B) |
+| Parametros totales | 8.953.803.264 (8,95B) |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | 32.768 tokens (configurado en el ejemplo de llama-server) |
+| Tipos de cuantizacion | Q8_0, Q6_K, Q5_K_M, Q4_K_M, Q4_K_S, IQ4_XS, Q3_K_M, IQ3_M, Q2_K |
+| Idiomas soportados | no disponible |
 | Licencia | Apache-2.0 |
-| Formato de pesos | GGUF (llama.cpp), proyector visual en BF16 GGUF |
+| Formato de pesos | GGUF (llama.cpp) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es un fine-tune de Qwen3.5-9B con arquitectura híbrida: 32 capas totales, de las cuales 24 son capas de atención lineal Gated DeltaNet y 8 son capas de atención completa. Emplea 16 cabezas de query y 4 cabezas de KV con dimensión 256, hidden size de 4.096 y vocabulario de 248.320 tokens. El bloque de multi-token-prediction del checkpoint original se omite en la conversión a GGUF porque la configuración de Cloudflare lo desactiva. El codificador visual añade 0,46B parámetros y se distribuye como archivo `mmproj` separado en BF16.
+El modelo base es un fine-tune de Qwen3.5-9B, un transformer multimodal que acepta entradas de texto e imagen. Cloudflare lo ha especializado para la tarea de extracción estructurada: dado un estado (texto o JSON) y un mapeo de nombres de campo a especificaciones, el modelo produce valores tipados, listas, nulos, estimaciones y trayectorias de pronóstico. La salida incluye puntuaciones de confianza para la extracción, probabilidades de nulo y, opcionalmente, cuantiles para las estimaciones. El modelo original se ejecuta en PyTorch y Transformers con helpers de petición en Python; la versión GGUF de Xylolabs elimina la cabeza de extracción tipada de Cloudflare y el bloque de predicción multi-token, conservando el codificador visual.
 
-La cuantización se realizó con `llama-quantize` usando una importance matrix generada con `llama-imatrix` sobre 600 chunks de 4.096 tokens, compuestos por databricks-dolly-15k (inglés), KoAlpaca-v1.1a (coreano), python_code_instructions_18k_alpaca (código), gsm8k (matemáticas), MasterControlAIML/JSON-Unstructured-Structured (JSON guiado por esquema) y paraloq/json_data_extraction (prompts de extracción de campos). La proyección beta/alpha de Gated DeltaNet se mantiene en F16 y las normas, `ssm_a`, `ssm_dt` y kernels conv1d en F32. No se dispone de información sobre el proceso de entrenamiento original (número de tokens, RLHF/DPO) más allá de lo indicado en la model card de Cloudflare.
+No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas de RLHF o DPO en la información proporcionada. La model card de la versión GGUF indica que las cuantizaciones se generaron con llama.cpp (verificado con el build e4b620af1) y que se incluye una imatrix para las cuantizaciones IQ. El modo de pensamiento (thinking) debe desactivarse en tiempo de ejecución, tal como hace el runtime de Cloudflare.
 
 ## Capacidades
 
-- Generación de texto y razonamiento sobre entradas de texto e imagen.
-- Extracción estructurada de campos tipados a partir de un esquema proporcionado.
-- Estimación numérica y forecasting dentro de la respuesta estructurada.
-- Salida JSON guiada por esquema mediante `response_format` con `json_schema` en llama-server o `--json-schema` en llama-cli (llama.cpp lo convierte en gramática).
-- Procesamiento de imágenes a través del proyector visual `mmproj-clairic-flash-BF16.gguf`.
-- Modo thinking configurable (se recomienda desactivado, como hace el runtime de Cloudflare).
-- Soporte multilingüe parcial (inglés y coreano presentes en el conjunto de calibración).
-- Informe de truncación de entrada y uso de tokens en la respuesta (según la descripción de Cloudflare).
-- Compatible con endpoints y con la plantilla de chat Jinja (`--jinja`).
+- Extracción estructurada de información a partir de texto o JSON y un esquema de campos tipados.
+- Generación de valores tipados, listas, nulos, estimaciones numéricas y trayectorias de pronóstico.
+- Puntuación por campo: confianza de extracción, probabilidad de nulo y cuantiles opcionales para estimaciones.
+- Entrada multimodal: soporte de imágenes mediante el codificador visual incluido (mmproj en BF16).
+- Salida estructurada con esquemas JSON: llama.cpp convierte el esquema en una gramática para forzar el formato.
+- Soporte de conversación multi-turno (tag "conversational").
+- Compatible con endpoints (tag "endpoints_compatible").
+- Modo de pensamiento desactivable mediante `--chat-template-kwargs '{"enable_thinking":false}'`.
+- No se dispone de información sobre soporte de tool calling o function calling en la documentación proporcionada.
 
 ## Casos de uso
 
-- Extracción de campos desde documentos escaneados: el modelo recibe una imagen y un esquema de campos tipados y devuelve JSON estructurado, adecuado para digitalización de facturas, formularios o contratos con contexto de hasta 262.144 tokens.
-- Procesamiento de JSON no estructurado: dado un texto libre y un esquema, genera el JSON correspondiente mediante gramática forzada, útil en pipelines ETL que necesitan salida validable.
-- Forecasting y estimación numérica: a partir de un estado descrito en texto o imagen y un esquema de campos numéricos, produce valores estimados con información de scoring por campo.
-- Asistente de atención al cliente con entrada multimodal: gestiona conversaciones multi-turno con imágenes adjuntas (capturas, fotos de producto) gracias a la ventana de contexto extendida.
-- Análisis de código y matemáticas: los conjuntos de calibración incluyen código Python y GSM8K, por lo que el modelo mantiene competencia en estas áreas tras la cuantización.
-- Despliegue en local con llama.cpp: al caber en 5,69 GB en Q4_K_M, permite ejecutar extracción estructurada en estaciones de trabajo sin GPU dedicada o en GPU de consumo.
-- Integración en pipelines de CI/CD: la salida JSON guiada por esquema facilita la validación automática de respuestas en flujos de automatización.
+- Extracción de datos de facturas y recibos: el modelo recibe la imagen del documento y un esquema de campos (importe, fecha, proveedor, impuestos) y devuelve valores tipados con confianza por campo, lo que permite automatizar la digitalización con validación posterior.
+- Procesamiento de formularios escaneados: con entrada de imagen y un esquema JSON, se extraen campos estructurados y se marca la probabilidad de nulo para detectar campos ausentes, facilitando la revisión humana selectiva.
+- Enriquecimiento de registros JSON: dado un estado en JSON y un mapeo de campos, el modelo completa valores faltantes, normaliza formatos y devuelve estimaciones con cuantiles para campos numéricos inciertos.
+- Pronóstico y estimación numérica: el modelo genera trayectorias de pronóstico y cuantiles opcionales, útil en análisis de series temporales ligeras o estimaciones de demanda a partir de datos tabulares.
+- Pipelines de extracción en local con llama.cpp: al ejecutarse con llama-server y `--json-schema`, se integra en servicios que requieren salida validada por gramática sin depender de APIs externas, con cuantizaciones desde 3,93 GB.
+- Análisis de documentos con imágenes en entornos con recursos limitados: la cuantización Q4_K_M (5,69 GB) permite desplegar el modelo en una GPU de consumo manteniendo un 94,72% de acuerdo top-1 respecto a f32.
+- Automatización de atención al cliente con extracción de entidades: a partir de conversaciones multi-turno, se extraen campos estructurados (producto, incidencia, importe) con probabilidades de nulo para derivar casos incompletos.
 
 ## Benchmarks y rendimiento
 
-| Cuantización | Tamaño | PPL | KL medio vs referencia f32 | Top-1 igual vs referencia f32 |
-|---|---|---|---|---|
-| Q8_0 | 9,53 GB | 6,0278 | 0,0072 | 97,94% |
-| Q4_K_M | 5,69 GB | 5,9742 | 0,0468 | 93,46% |
+No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible. La model card de la versión GGUF publica métricas de fidelidad de las cuantizaciones frente a inferencia en f32 sobre pesos BF16, medidas en texto mixto:
 
-Metodología: referencia en transformers con cómputo f32 sobre pesos BF16 de Cloudflare (PPL 6,0590). KL, top-1 y PPL medidos sobre 12 chunks de 4.096 tokens, evaluando las posiciones 2.048 a 4.095 de cada uno (24.564 tokens): 9 chunks de chat en inglés, coreano, código, matemáticas, extracción JSON desde esquema y prompts de extracción de campos de Clairic, más 3 chunks de wikitext-2.
-
-No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible.
+| Cuantizacion | Tamano | KL media | Top-1 |
+|---|---:|---:|---:|
+| Q8_0 | 9,53 GB | 0,0072 | 97,95% |
+| Q6_K | 7,37 GB | 0,0132 | 96,94% |
+| Q5_K_M | 6,50 GB | 0,0203 | 95,98% |
+| Q4_K_M | 5,69 GB | 0,0293 | 94,72% |
+| Q4_K_S | 5,37 GB | 0,0507 | 93,13% |
+| IQ4_XS | 5,27 GB | 0,0562 | 92,61% |
+| Q3_K_M | 4,69 GB | 0,1636 | 87,62% |
+| IQ3_M | 4,48 GB | 0,1510 | 87,25% |
+| Q2_K | 3,93 GB | 0,1670 | 86,37% |
 
 ## Requisitos de hardware
 
-- VRAM estimada: aproximadamente 6 GB para Q4_K_M y 10 GB para Q8_0, más el proyector visual BF16 (~0,9 GB).
-- GPU recomendadas: A100, H100 para despliegues de producción; RTX 4090 para inferencia local de alta velocidad.
-- Cabe en GPU de consumo: sí, Q4_K_M en GPUs con 8 GB o más (RTX 3060 Ti, RTX 4060, RTX 3070); Q8_0 requiere 12 GB o más.
-- Opciones de despliegue: llama.cpp (llama-server, llama-cli), con soporte CUDA, Metal y CPU. Compatible con endpoints.
-- Comando de referencia: `llama-server -m clairic-flash-Q4_K_M.gguf --mmproj mmproj-clairic-flash-BF16.gguf --jinja -ngl 99 -c 32768 --chat-template-kwargs '{"enable_thinking":false}'`.
-- Latencia y throughput: no disponibles.
+- VRAM estimada para inferencia: aproximadamente el tamano del archivo GGUF mas el codificador visual (0,92 GB) y el contexto. Para Q8_0, unos 10,5 GB; para Q4_K_M, unos 6,6 GB; para Q2_K, unos 4,9 GB, con 32.768 tokens de contexto.
+- GPU recomendadas: A100 o H100 para maxima fidelidad (Q8_0) y throughput; RTX 4090 (24 GB) para Q8_0 con contexto completo; RTX 4080/4070 Ti (16 GB) para Q6_K o Q5_K_M; RTX 4060 Ti (16 GB) o RTX 3060 (12 GB) para Q4_K_M.
+- Cabe en GPU de consumo: si, desde Q2_K (3,93 GB) en GPUs de 8 GB, aunque con perdida de fidelidad notable (86,37% top-1); Q4_K_M es el punto de equilibrio recomendado para 12 GB o mas.
+- Opciones de despliegue: llama.cpp (llama-server, llama-cli) con `--mmproj` para vision, `--jinja` y `--chat-template-kwargs '{"enable_thinking":false}'`; compatible con endpoints. No se mencionan otras opciones como vLLM, TGI u Ollama en la informacion disponible.
+- Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Licencia | Formato | Notas |
+| Modelo | Parametros | Contexto | Multimodal | Licencia | Formato |
 |---|---|---|---|---|---|
-| Clairic Flash GGUF (este) | 8,95B + 0,46B visión | 262.144 | Apache-2.0 | GGUF | Fine-tune de Qwen3.5-9B para extracción estructurada |
-| Cloudflare/clairic-flash | 8,95B + 0,46B visión | 262.144 | Apache-2.0 | safetensors | Modelo original con cabeza de extracción tipada y runtime Python |
-| Qwen/Qwen3.5-9B | no disponible | no disponible | no disponible | safetensors | Modelo base del que deriva Clairic Flash |
-| Cloudflare/clairic | no disponible | no disponible | Apache-2.0 | no disponible | Otro modelo de la familia Clairic, según la model card |
+| Clairic Flash GGUF (esta ficha) | 8,95B | 32.768 | Si (imagen) | Apache-2.0 | GGUF |
+| Cloudflare/clairic-flash (original) | 9B | no disponible | Si (imagen) | Apache-2.0 | PyTorch/Transformers |
+| Qwen/Qwen3.5-9B (base) | 9B | no disponible | no disponible | no disponible | safetensors |
+| Cloudflare/clairic (familia) | no disponible | no disponible | no disponible | Apache-2.0 | no disponible |
 
-No se dispone de datos de rendimiento comparativo entre estos modelos en la información proporcionada.
+La comparativa se limita a los modelos citados en la documentacion. No se dispone de datos de rendimiento comparativo entre ellos en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- La cabeza de extracción tipada (`clair_head.safetensors`) y el runtime Python de Cloudflare no están incluidos; estos archivos solo contienen el modelo de lenguaje y el codificador visual.
-- El bloque de multi-token-prediction se omite en la conversión, por lo que el comportamiento puede diferir del checkpoint original en ese aspecto.
-- No se han publicado datos sobre sesgos del modelo.
-- Riesgo de alucinación inherente a modelos generativos; la salida guiada por esquema mitiga pero no elimina errores de contenido.
-- Idiomas soportados no documentados oficialmente; la calibración cubre inglés y coreano, pero no hay garantías para otros idiomas.
-- La licencia Apache-2.0 permite uso comercial, pero Xylolabs no está afiliado ni respaldado por Cloudflare.
-- El uso recomendado es con thinking desactivado, siguiendo el comportamiento del runtime original.
-- No se dispone de información sobre latencia, throughput ni requisitos exactos de VRAM más allá de los tamaños de archivo.
+- Esta version GGUF no incluye la cabeza de extraccion tipada de Cloudflare ni el bloque de prediccion multi-token del checkpoint original, por lo que el comportamiento puede diferir del modelo PyTorch de referencia.
+- El modelo debe ejecutarse con el modo de pensamiento desactivado, tal como hace el runtime de Cloudflare; no hacerlo puede alterar el formato de salida.
+- La salida estructurada dependera del esquema proporcionado; sin `response_format` con `json_schema` o `--json-schema`, no se garantiza el formato.
+- Las cuantizaciones bajas (Q3_K_M, IQ3_M, Q2_K) muestran una fidelidad notablemente inferior (87,62%, 87,25% y 86,37% top-1), con riesgo de degradacion en tareas de extraccion.
+- No se dispone de informacion sobre sesgos conocidos, idiomas soportados ni evaluacion de alucinacion en la documentacion proporcionada.
+- La licencia Apache-2.0 permite uso comercial, pero Xylolabs no esta afiliado ni respaldado por Cloudflare; el archivo NOTICE nombra el modelo fuente y sus titulares de derechos.
+- El modelo esta pensado para extraccion y estimacion, no como modelo de proposito general; su uso fuera de ese dominio no esta validado.
+- La longitud de contexto de 32.768 tokens es la configurada en el ejemplo de llama-server, no necesariamente el maximo del modelo.
 
 ## Enlaces
 
 - Repositorio GGUF: https://huggingface.co/Xylolabs/clairic-flash-GGUF
-- Modelo base original: https://huggingface.co/Cloudflare/clairic-flash
-- Otro modelo de la familia: https://huggingface.co/Cloudflare/clairic
-- Modelo base de Qwen: https://huggingface.co/Qwen/Qwen3.5-9B
-- llama.cpp: https://github.com/ggml-org/llama.cpp
-- Repositorio de herramientas de Xylolabs: https://github.com/XylolabsInc/tensix-bfp-gptq
+- Modelo base: https://huggingface.co/Cloudflare/clairic-flash
+- Modelo Qwen3.5-9B: https://huggingface.co/Qwen/Qwen3.5-9B
+- Familia Clairic: https://huggingface.co/Cloudflare/clairic
 - Licencia: https://huggingface.co/Xylolabs/clairic-flash-GGUF/blob/main/LICENSE
+- llama.cpp: https://github.com/ggml-org/llama.cpp
+- Repositorio Xylolabs: https://github.com/XylolabsInc/tensix-bfp-gptq

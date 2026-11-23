@@ -49,16 +49,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "mradermacher/GLM-4.6V-Flash-9B-MobileWeave-SFT-GGUF · Hugging Face",
-      "url": "https://huggingface.co/mradermacher/GLM-4.6V-Flash-9B-MobileWeave-SFT-GGUF",
-      "snippet": "Instructions to use mradermacher/GLM-4.6V-Flash-9B-MobileWeave-SFT-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
-    },
-    {
-      "title": "mradermacher/VibeWorlder-8B-GGUF · Hugging Face",
-      "url": "https://huggingface.co/mradermacher/VibeWorlder-8B-GGUF",
-      "snippet": "We're on a journey to advance and democratize artificial intelligence through open source and open science."
-    }
-  ]
+  "sources": []
 }

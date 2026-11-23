@@ -2,100 +2,89 @@
 
 ## Resumen
 
-cevher3-test-13 es un modelo de lenguaje de 1.256 millones de parámetros (aproximadamente 1,26 B) desarrollado por el usuario bcckfdn y publicado en Hugging Face bajo licencia Apache 2.0. Se trata de un modelo de la familia Gemma 3, concretamente etiquetado como `gemma3_text`, entrenado desde cero con una arquitectura denominada por el autor como "Gemma3-SWA" (probablemente una variante con atención de ventana deslizante, *sliding window attention*). El modelo está orientado a generación de texto conversacional en turco e inglés.
+cevher3-test-13 es un modelo de lenguaje de tipo decoder-only de 1.256.312.832 parámetros (aproximadamente 1,26 mil millones) desarrollado por el usuario bcckfdn y publicado en Hugging Face bajo licencia Apache 2.0. Está construido sobre la arquitectura Gemma3-SWA (Sliding Window Attention) y está especializado en generación de texto conversacional en turco e inglés. Su tamaño lo sitúa en la categoría de modelos pequeños, aptos para despliegue en hardware de consumo y para tareas de generación de texto con requisitos moderados de cómputo.
 
-El modelo resuelve el caso de uso de generación de texto causal multilingüe (turco e inglés) con una ventana de contexto de 8192 tokens y un vocabulario de 65.536 entradas. Por su tamaño compacto (1,26 B parámetros) es adecuado para despliegue en hardware de consumo y para tareas de ajuste fino ligero, aunque su naturaleza experimental (el nombre incluye "test") y la ausencia de benchmarks publicados limitan su uso en producción sin una evaluación previa.
+El modelo emplea una configuración de 34 capas con dimensión oculta de 1792, 28 cabezas de atención para consultas y 4 para claves/valores (atención agrupada, GQA), un vocabulario de 65.536 tokens y una ventana de contexto de 8192 tokens. Según la model card, fue entrenado sobre 28.705 millones de tokens y alcanzó una pérdida de validación de 2,7804. La inclusión de atención de ventana deslizante (SWA) es la innovación arquitectónica más destacable, ya que reduce el coste computacional en secuencias largas frente a la atención completa.
 
-La relevancia actual del modelo reside en su pertenencia al ecosistema Gemma 3 de Google, lo que permite reutilizar tooling existente (transformers, text-generation-inference, endpoints compatibles) y en su licencia permisiva Apache 2.0, que facilita uso comercial. No obstante, la información disponible es escasa y no se han publicado resultados de evaluación ni detalles sobre la composición del dataset de entrenamiento.
+Su relevancia actual radica en que ofrece una alternativa ligera y de licencia permisiva para experimentación con arquitecturas Gemma3 en entornos con recursos limitados, así como para el desarrollo de asistentes conversacionales en turco, un idioma con menor representación en los grandes modelos multilingües. No obstante, la información pública disponible es escasa y no se han publicado resultados de benchmarks ni detalles sobre la composición del dataset de entrenamiento.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only, variante Gemma3-SWA (atención de ventana deslizante) |
-| Parametros totales | 1.256.312.832 (~1,26 B) |
-| Parametros activos | No aplica (modelo denso, no MoE) |
+| Arquitectura | Transformer decoder-only con Gemma3-SWA (sliding window attention) |
+| Parametros totales | 1.256.312.832 (aprox. 1,26 B) |
+| Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | 8192 tokens |
-| Tipos de cuantizacion | No disponible (pesos en safetensors; se asume compatibilidad con cuantización estándar vía transformers/bitsandbytes, no confirmado) |
-| Idiomas soportados | Turco (tr), inglés (en) |
+| Tipos de cuantizacion | no disponible (pesos en safetensors; no se documentan cuantizaciones oficiales) |
+| Idiomas soportados | turco (tr), inglés (en) |
 | Licencia | Apache 2.0 |
 | Formato de pesos | safetensors |
 
-Datos adicionales de la model card:
-
-| Parametro | Valor |
-|---|---|
-| Capas | 34 |
-| Dimensión oculta (hidden) | 1792 |
-| Cabezas de atención (Q / KV) | 28 / 4 |
-| Vocabulario | 65.536 |
-| Tokens de entrenamiento | 26.051 B (26.051 miles de millones, presumiblemente 26,051 B) |
-| Mejor val loss | 2,7804 |
+Otros datos técnicos declarados en la model card: 34 capas, dimensión oculta 1792, 28 cabezas de consulta y 4 de clave/valor, vocabulario de 65.536 tokens, 28.705 millones de tokens de entrenamiento y mejor pérdida de validación de 2,7804.
 
 ## Arquitectura y entrenamiento
 
-El modelo emplea una arquitectura transformer decoder-only con 34 capas, dimensión oculta de 1792 y 28 cabezas de consulta frente a 4 cabezas de clave/valor (atención con *grouped-query attention*, ratio 7:1). El autor la describe como "Gemma3-SWA", lo que sugiere el uso de atención de ventana deslizante (*sliding window attention*) característica de la familia Gemma 3, combinada con atención global en determinadas capas. El vocabulario es de 65.536 tokens, coherente con el tokenizador de Gemma.
+El modelo sigue una arquitectura transformer decoder-only basada en Gemma3 con atención de ventana deslizante (SWA). Esta variante limita el alcance de la atención a una ventana local en cada capa, lo que reduce el coste cuadrático de la atención completa y permite procesar secuencias de hasta 8192 tokens con menor consumo de memoria y cómputo. La configuración de 34 capas con dimensión oculta de 1792 y atención agrupada (28 cabezas de consulta frente a 4 de clave/valor) es coherente con un modelo de aproximadamente 1,26 mil millones de parámetros y un vocabulario de 65.536 tokens.
 
-Según la model card, el modelo fue entrenado con 26.051 B tokens (interpretado como 26.051 miles de millones de tokens) y alcanzó una pérdida de validación de 2,7804. No se especifica la composición del dataset, si hubo fases de ajuste supervisado (SFT), RLHF o DPO, ni detalles sobre el proceso de tokenización o el preprocesamiento. Tampoco se documentan innovaciones técnicas adicionales como decodificación especulativa o atención lineal más allá de la propia variante SWA.
+Según la model card, el entrenamiento utilizó 28.705 millones de tokens y alcanzó una pérdida de validación de 2,7804. No se especifica la composición del dataset, la proporción entre turco e inglés, ni si se aplicaron técnicas de alineación como RLHF, DPO o ajuste supervisado. Tampoco se documentan innovaciones adicionales como decodificación especulativa o mecanismos de atención lineal más allá de la propia SWA. La información sobre el proceso de entrenamiento es, por tanto, muy limitada.
 
 ## Capacidades
 
-- Generación de texto causal en turco e inglés.
-- Conversación multi-turno (etiqueta `conversational` en los tags del repositorio).
-- Razonamiento básico de lenguaje natural derivado del preentrenamiento; sin datos publicados sobre capacidades específicas de razonamiento matemático o lógico.
-- Compatibilidad con `text-generation-inference` y endpoints compatibles, lo que permite integración en infraestructuras de inferencia estándar.
-- No se documenta soporte de tool calling ni function calling.
-- No se documenta soporte de agentes ni razonamiento multi-paso explícito.
-- No se documenta capacidad de visión, audio ni modo "thinking".
-- Capacidades multilingües limitadas a turco e inglés según la model card.
+- Generación de texto autoregresiva en turco e inglés, orientada a diálogo conversacional según la etiqueta `conversational`.
+- Razonamiento básico y respuesta a instrucciones dentro de los límites propios de un modelo de 1,26 B de parámetros.
+- Soporte de tool calling / function calling: no disponible (no documentado).
+- Soporte de agentes y razonamiento multi-paso: no disponible (no documentado).
+- Capacidades multilingües limitadas a turco e inglés; no se declaran otros idiomas.
+- Capacidad especial de modo thinking, visión o audio: no disponible.
+- Integración con `text-generation-inference` y compatibilidad con endpoints, según las etiquetas del repositorio.
 
 ## Casos de uso
 
-- Generación de texto conversacional en turco: el modelo puede gestionar diálogos multi-turno con hasta 8192 tokens de contexto, adecuado para asistentes de chat en turco donde se requiera una ventana amplia para mantener el historial de conversación.
-- Traducción turco-inglés y viceversa: al estar entrenado en ambos idiomas, puede emplearse para tareas de traducción automática básica, aunque sin benchmarks publicados que garanticen calidad.
-- Generación de contenido en turco: redacción de artículos, resúmenes y textos descriptivos para medios o blogs en turco, aprovechando el vocabulario de 65.536 tokens.
-- Prototipado rápido de aplicaciones de NLP: su tamaño de 1,26 B parámetros permite desplegarlo en una GPU de consumo para pruebas de concepto y experimentación académica.
-- Ajuste fino específico de dominio: al ser un modelo compacto con licencia Apache 2.0, es adecuado como base para *fine-tuning* en tareas concretas (clasificación, extracción de información, resumen) en turco.
-- Investigación sobre arquitecturas Gemma 3: sirve como referencia para estudiar variantes de atención de ventana deslizante en modelos de tamaño medio.
-- Asistencia en entornos con recursos limitados: su tamaño permite inferencia en GPUs de 8-16 GB con cuantización, útil para despliegues en *edge* o en entornos con presupuesto de hardware reducido.
+- Asistente conversacional en turco: el modelo puede gestionar diálogos multi-turno gracias a su ventana de contexto de 8192 tokens, adecuado para chatbots de atención al cliente en mercados de habla turca donde los modelos grandes no siempre cubren bien el idioma.
+- Generación de texto creativo y redacción asistida: útil para borradores de artículos, correos y contenido en turco e inglés, con un coste de inferencia bajo al tratarse de un modelo de 1,26 B.
+- Prototipado rápido de aplicaciones de IA generativa: su tamaño permite ejecutarlo en una sola GPU de consumo, lo que facilita iterar sobre prompts y flujos conversacionales antes de escalar a modelos mayores.
+- Clasificación y etiquetado de texto mediante generación: se puede emplear para tareas de extracción de información o resumen en turco, aprovechando la licencia Apache 2.0 para uso comercial.
+- Investigación sobre arquitecturas Gemma3-SWA: sirve como banco de pruebas para estudiar el comportamiento de la atención de ventana deslizante en modelos pequeños y comparar con variantes de atención completa.
+- Fine-tuning específico de dominio: al ser un modelo pequeño y con licencia permisiva, es una base razonable para ajuste fino supervisado en dominios verticales (legal, sanitario, atención al cliente) en turco.
+- Despliegue en entornos con recursos limitados: puede ejecutarse en CPU o GPU modesta para demos, herramientas internas o aplicaciones de borde donde no es viable un modelo de mayor tamaño.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La model card únicamente reporta una pérdida de validación de 2,7804 y 26.051 B tokens de entrenamiento, sin métricas de evaluación estándar (MMLU, HumanEval, GSM8K, etc.) ni comparaciones con otros modelos.
+No se han publicado resultados de benchmarks en la información disponible. La model card únicamente reporta la pérdida de validación (2,7804) y el número de tokens de entrenamiento (28.705 millones), sin métricas como MMLU, HumanEval, GSM8K ni comparaciones con otros modelos.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia en FP16/BF16: aproximadamente 2,5 GB solo para pesos, más overhead de activaciones y KV cache; en la práctica, entre 4 y 6 GB para contexto moderado.
-- VRAM estimada con cuantización de 8 bits: ~1,3 GB para pesos; con 4 bits: ~0,7 GB para pesos.
-- GPU recomendadas: NVIDIA RTX 3060 (12 GB), RTX 4060 Ti (16 GB), RTX 4090 (24 GB), A100 (40/80 GB) y H100 para despliegues de mayor throughput.
-- Cabe en GPU de consumo: sí, en cualquier GPU con 8 GB o más de VRAM en FP16, y en GPUs de 4-6 GB con cuantización.
-- Opciones de despliegue: transformers (nativo), text-generation-inference (soportado según tags), endpoints compatibles. No se confirma soporte explícito de vLLM, llama.cpp u Ollama en la información disponible.
-- Latencia y throughput estimados: no disponibles.
+- VRAM estimada para inferencia en precisión completa (fp32): aproximadamente 5 GB solo para pesos (1,26 B × 4 bytes), más overhead de activaciones y caché KV.
+- VRAM estimada en fp16/bf16: aproximadamente 2,5 GB para pesos, más activaciones; en la práctica, entre 4 y 6 GB según longitud de contexto.
+- VRAM estimada en cuantización de 8 bits: aproximadamente 1,3 GB para pesos; en 4 bits, alrededor de 0,7 GB.
+- GPU recomendadas: cabe holgadamente en GPUs de consumo como RTX 3060 (12 GB), RTX 4060 Ti (16 GB), RTX 4070, RTX 4090; también en GPUs de datacenter como A100 o H100, aunque estarían sobredimensionadas.
+- Despliegue: compatible con `transformers`, `text-generation-inference` (según etiquetas) y, previsiblemente, con llama.cpp/Ollama si se generan pesos GGUF, aunque no se documenta su disponibilidad oficial.
+- Latencia y throughput: no disponibles; no se han publicado mediciones.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Idiomas | Benchmarks publicados |
+| Modelo | Parametros | Contexto | Idiomas | Licencia | Notas |
 |---|---|---|---|---|---|
-| cevher3-test-13 | ~1,26 B | 8192 | Apache 2.0 | tr, en | No |
-| Gemma 3 1B (Google) | ~1 B | 32.000 (aprox.) | Gemma Terms of Use | Multilingüe | Sí |
-| Llama 3.2 1B | ~1,24 B | 128.000 | Llama 3.2 Community License | Multilingüe | Sí |
-| Qwen2.5 1.5B | ~1,5 B | 32.768 | Apache 2.0 | Multilingüe | Sí |
+| cevher3-test-13 | 1,26 B | 8192 | tr, en | Apache 2.0 | Gemma3-SWA, sin benchmarks publicados |
+| Gemma 2 2B | 2,6 B | 8192 | multilingüe | Gemma license | Modelo oficial de Google, con benchmarks publicados |
+| Qwen2.5 1.5B | 1,5 B | 32.768 | multilingüe | Apache 2.0 | Contexto mayor y amplia documentación |
+| SmolLM2 1.7B | 1,7 B | 8192 | inglés principalmente | Apache 2.0 | Enfocado en eficiencia y despliegue ligero |
 
-Nota: los datos de los modelos comparativos corresponden a conocimiento general de la familia y no se han verificado en la información proporcionada; se incluyen como referencia orientativa. cevher3-test-13 destaca por su licencia Apache 2.0 y su enfoque específico en turco, pero carece de benchmarks y de documentación sobre el dataset, a diferencia de las alternativas citadas.
+La comparación es orientativa: cevher3-test-13 carece de benchmarks públicos, por lo que no es posible establecer una comparación de rendimiento rigurosa con estas alternativas. Su principal diferenciación es el enfoque en turco y la arquitectura Gemma3-SWA, mientras que modelos como Qwen2.5 1.5B ofrecen mayor contexto y documentación más completa.
 
 ## Limitaciones y advertencias
 
-- Modelo experimental: el sufijo "test" en el nombre y la ausencia de benchmarks sugieren que no está validado para producción.
-- Riesgo de alucinación: sin datos de evaluación ni de alineación (RLHF/DPO), el riesgo de generar contenido incorrecto o inventado es elevado.
-- Sesgos conocidos: no documentados; al entrenarse con un dataset no especificado, pueden existir sesgos lingüísticos y culturales no identificados.
-- Limitaciones de idioma: solo se declaran turco e inglés; el rendimiento en otros idiomas no está garantizado.
-- Limitación de contexto: 8192 tokens, inferior a los 32.000-128.000 tokens de modelos comparables de la misma categoría.
-- Restricciones de licencia: Apache 2.0 permite uso comercial, pero el autor no ofrece garantías ni soporte; conviene revisar la procedencia de los datos de entrenamiento (no documentada) por posibles riesgos legales.
-- Falta de documentación sobre el dataset de entrenamiento, lo que dificulta evaluar riesgos de contaminación o de cumplimiento normativo.
-- No se confirma soporte de tool calling ni de agentes, lo que limita su uso en pipelines automatizados complejos.
-- Fecha de creación futura (2026-11-18) en los metadatos, lo que puede indicar un repositorio de prueba o un error de marcado temporal.
+- Ausencia total de benchmarks publicados: no hay evidencia objetiva de su calidad frente a alternativas de tamaño similar.
+- Información de entrenamiento muy limitada: se desconoce la composición del dataset, la proporción de turco e inglés y si hubo alineación (RLHF/DPO), lo que dificulta evaluar sesgos y robustez.
+- Riesgo de alucinación: como todo modelo generativo de pequeño tamaño, es propenso a inventar datos, especialmente en tareas de razonamiento o conocimiento factual.
+- Cobertura lingüística restringida a turco e inglés; no se garantiza un comportamiento adecuado en castellano u otros idiomas.
+- Ventana de contexto de 8192 tokens: suficiente para diálogo, pero limitada para documentos largos o tareas de recuperación extensa.
+- Licencia Apache 2.0: permite uso comercial y modificación, pero el autor no ofrece garantías ni soporte; conviene verificar la procedencia de los datos de entrenamiento antes de un despliegue en producción.
+- El nombre del repositorio ("test-13") sugiere que podría tratarse de una versión experimental o de prueba, lo que desaconseja su uso en producción sin una evaluación previa exhaustiva.
+- No se documenta soporte oficial de tool calling ni de agentes, por lo que no debe asumirse su disponibilidad.
 
 ## Enlaces
 
 - Hugging Face: https://huggingface.co/bcckfdn/cevher3-test-13
-- No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información proporcionada.
+- No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la información disponible.

@@ -2,50 +2,49 @@
 
 ## Resumen
 
-Kloak656 es un modelo de lenguaje de 9.409.813.744 parámetros publicado por el usuario RoseG en Hugging Face bajo licencia Apache 2.0. Según la model card, se trata de un "9B Parameter Legacy Model from The Kloaked Signal", una descripción extremadamente escueta que no aporta detalles sobre el proceso de entrenamiento, los datos utilizados ni las capacidades reales del modelo. El tag `qwen3_5` sugiere que la arquitectura subyacente podría estar basada en la familia Qwen 3.5, aunque no se confirma en la documentación disponible.
+RoseG/Kloak656 es un modelo de lenguaje de 9.409.813.744 parámetros (aproximadamente 9,4 mil millones) publicado por el usuario RoseG en Hugging Face. Se trata de un ajuste fino (finetune) del modelo base Qwen/Qwen3.5-9B-Base, según declara la propia model card y los metadatos del repositorio. La model card lo describe escuetamente como "9B Paramter Legaxy Model from The Kloaked Signal" (sic), sin aportar documentación técnica adicional sobre el proceso de entrenamiento, los datos utilizados ni las capacidades resultantes.
 
-El repositorio contiene pesos en formato safetensors con un tamaño total de 36,7 GB, lo que es coherente con un modelo denso de aproximadamente 9.400 millones de parámetros en precisión de 16 bits (9,4B × 2 bytes ≈ 18,8 GB; el tamaño del repo incluye probablemente múltiples ficheros o versiones). No se han publicado resultados de benchmarks, detalles de arquitectura, longitud de contexto ni información sobre idiomas soportados.
+El modelo se distribuye bajo licencia Apache 2.0, con pesos en formato safetensors compatibles con la librería transformers, y está etiquetado tanto para generación de texto como para image-text-to-text, lo que sugiere que hereda la naturaleza multimodal del Qwen3.5-9B-Base. El repositorio ocupa 36,7 GB y acumula 487 descargas y 1 like en el momento de la consulta, lo que indica una adopción muy limitada y un ecosistema prácticamente inexistente de validación comunitaria.
 
-La relevancia de este modelo es limitada en el momento de redactar esta ficha: cuenta con cero descargas y cero "likes", no tiene pipeline declarado y la model card no ofrece información técnica sustancial. Cualquier evaluación práctica requeriría descargar los pesos y realizar pruebas empíricas.
+Su relevancia es, por tanto, reducida y fundamentalmente exploratoria: se trata de un finetune comunitario sin benchmarks publicados, sin documentación de entrenamiento y sin garantías de calidad. Resulta útil únicamente como punto de partida para experimentación sobre la familia Qwen3.5, nunca como componente de producción sin una evaluación propia y exhaustiva.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (el tag `qwen3_5` sugiere base Qwen 3.5, sin confirmar) |
-| Parametros totales | 9.409.813.744 |
-| Parametros activos | no aplica (no se indica que sea MoE) |
+| Arquitectura | Transformer (heredada de Qwen/Qwen3.5-9B-Base; detalles no disponibles) |
+| Parametros totales | 9.409.813.744 (9,4 B) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible (solo se publican pesos safetensors) |
+| Tipos de cuantizacion | no disponible (pesos publicados en safetensors; no se documentan variantes GGUF/AWQ/GPTQ) |
 | Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors |
+| Formato de pesos | safetensors (librería transformers) |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información sobre la arquitectura interna del modelo. El tag `qwen3_5` en Hugging Face sugiere una posible relación con la familia Qwen 3.5 de Alibaba, lo que implicaría una arquitectura transformer con atención estándar o híbrida, pero esta afirmación no está confirmada por el autor. El número de parámetros (9,4B) es consistente con un modelo denso de tamaño medio, no con una arquitectura Mixture of Experts.
+No se dispone de información publicada sobre la arquitectura interna del modelo más allá de su condición de finetune de Qwen/Qwen3.5-9B-Base, un transformer de aproximadamente 9,4 mil millones de parámetros. El tag image-text-to-text en los metadatos sugiere que el modelo base incorpora capacidades multimodales (entrada de imagen y texto), pero la model card no confirma ni detalla este extremo, ni especifica si el finetune conserva el codificador visual.
 
-No se han publicado datos sobre el corpus de entrenamiento, el número de tokens procesados, la composición del dataset, ni si se aplicaron técnicas de alineación como RLHF, DPO o SFT. La model card se limita a una línea descriptiva ("9B Parameter Legacy Model from The Kloaked Signal") sin aportar información técnica adicional. Tampoco se documentan innovaciones como decodificación especulativa, atención lineal o modos de razonamiento extendido.
+Tampoco se documenta el proceso de entrenamiento: no hay datos sobre el número de tokens utilizados, la composición del dataset de ajuste, la presencia de RLHF, DPO u otras técnicas de alineación, ni sobre innovaciones técnicas como decodificación especulativa o atención lineal. La única información disponible es la referencia al modelo base y la etiqueta "Legaxy Model from The Kloaked Signal", que no aporta detalles técnicos verificables. Cualquier afirmación sobre el entrenamiento sería especulativa y, por tanto, se omite.
 
 ## Capacidades
 
-- No se han documentado capacidades específicas en la información disponible.
-- Por el tamaño y la posible base Qwen 3.5, cabría esperar generación de texto, razonamiento y código, pero no hay confirmación oficial.
-- No se ha confirmado soporte de tool calling ni function calling.
-- No se ha confirmado soporte de agentes ni razonamiento multi-paso.
-- No se ha confirmado capacidad multilingüe ni qué idiomas cubre.
-- No se ha confirmado la existencia de modo "thinking", visión o audio.
+- Generación de texto conversacional, según el tag `conversational` y el pipeline `text-generation`.
+- Procesamiento de entrada imagen-texto (tag `image-text-to-text`), presumiblemente heredado del modelo base Qwen3.5-9B-Base; no confirmado en la documentación.
+- Compatibilidad con endpoints (`endpoints_compatible`), lo que facilita su despliegue en infraestructuras tipo Inference Endpoints.
+- Capacidades de tool calling / function calling: no disponible.
+- Soporte de agentes y razonamiento multi-paso: no disponible.
+- Capacidades multilingües: no disponible (no se listan idiomas).
+- Modo thinking, visión, audio u otras capacidades especiales: no disponible.
 
 ## Casos de uso
 
-Dado que no se dispone de documentación sobre capacidades, contexto ni rendimiento, los siguientes casos son hipotéticos y requerirían validación empírica antes de cualquier uso en producción:
-
-- Evaluación comparativa interna: servir como base para experimentos controlados frente a modelos Qwen 3.5 oficiales, verificando si la herencia arquitectónica se traduce en comportamientos similares.
-- Generación de texto general: si el modelo funciona correctamente, podría emplearse para redacción asistida, resumen o reescritura, aunque sin garantías de calidad al no haber benchmarks.
-- Prototipado de pipelines de inferencia: útil para probar infraestructura (vLLM, TGI, llama.cpp) con un modelo de ~9B parámetros antes de migrar a modelos con soporte documentado.
-- Investigación sobre modelos "legacy": analizar qué se conserva y qué se pierde en modelos derivados o reempaquetados respecto a su base original.
-- Fine-tuning experimental: al estar bajo Apache 2.0, permite ajuste fino para tareas específicas, siempre que se valide primero la calidad del modelo base.
-- Despliegue en entornos con requisitos de licencia permisiva: la licencia Apache 2.0 facilita uso comercial, aunque la falta de documentación obliga a auditorías propias.
+- Experimentación sobre la familia Qwen3.5: el modelo permite probar variantes de ajuste fino sobre una base de 9,4 B de parámetros, útil para investigadores que quieran comparar el efecto de finetunes comunitarios frente al modelo original.
+- Prototipado rápido de chatbots conversacionales: al estar etiquetado como `conversational` y ser compatible con endpoints, puede desplegarse en un entorno de pruebas para validar flujos de diálogo antes de invertir en un modelo con benchmarks publicados.
+- Evaluación comparativa de finetunes: sirve como caso de estudio en pipelines de evaluación automática (perplejidad, win-rate contra el base) para medir cuánto aporta un ajuste comunitario sin documentación.
+- Investigación sobre multimodalidad heredada: si se confirma la capacidad image-text-to-text, podría emplearse en tareas exploratorias de descripción de imágenes o VQA, siempre con validación previa.
+- Generación de texto en entornos de investigación con licencia permisiva: la licencia Apache 2.0 permite uso comercial y modificación, lo que facilita su integración en proyectos académicos o internos que requieran libertad de licencia.
+- Base para nuevos finetunes: al ser un modelo pequeño (9,4 B) y con pesos safetensors, puede servir como punto de partida para ajustes posteriores con LoRA o QLoRA en una sola GPU de 24 GB en cuantización de 4 bits.
 
 ## Benchmarks y rendimiento
 
@@ -53,37 +52,39 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia en FP16: aproximadamente 18,8 GB solo para pesos, más overhead de activaciones y KV cache (típicamente 20-24 GB en total).
-- VRAM estimada en cuantización de 8 bits: ~9,4 GB para pesos, ~12-14 GB en total.
-- VRAM estimada en cuantización de 4 bits: ~4,7 GB para pesos, ~7-8 GB en total.
-- GPU recomendadas: A100 40GB, H100, L40S o RTX 4090 (24 GB) para FP16; RTX 3090/4090 o GPUs con 12-16 GB para cuantización 8 bits.
-- Cabe en GPU de consumo: sí, en RTX 4090 (FP16 ajustado), RTX 3090, y en GPUs de 8-12 GB con cuantización 4 bits.
-- Opciones de despliegue: vLLM, TGI, llama.cpp (requiere conversión a GGUF), Ollama (requiere GGUF), Transformers con safetensors.
-- Latencia y throughput: no disponibles; dependerán del hardware y del backend elegido.
+- VRAM estimada para inferencia en FP16/BF16: aproximadamente 18,8 GB solo para pesos (9,4 B × 2 bytes), más overhead de activaciones y caché KV; se recomienda un mínimo de 24 GB.
+- VRAM estimada en cuantización de 8 bits: aproximadamente 9,4 GB para pesos; viable en GPUs de 16-24 GB.
+- VRAM estimada en cuantización de 4 bits: aproximadamente 4,7 GB para pesos; viable en GPUs consumer de 8-12 GB, aunque no se publican pesos cuantizados oficiales.
+- GPU recomendadas: A100 40/80 GB, H100, L40S para producción en precisión completa; RTX 4090 (24 GB) para FP16; RTX 3090/4080 para 8 bits; RTX 3060 12 GB o similar para 4 bits.
+- Cabe en GPU consumer: sí, en cuantización de 8 o 4 bits; en FP16 requiere al menos 24 GB (RTX 3090/4090).
+- Opciones de despliegue: transformers (nativo), vLLM y TGI para serving de alto rendimiento, llama.cpp/Ollama únicamente si se generan conversiones GGUF (no publicadas).
+- Latencia y throughput estimados: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Disponibilidad | Benchmarks publicados |
+| Modelo | Parámetros | Contexto | Licencia | Benchmarks publicados | Disponibilidad |
 |---|---|---|---|---|---|
-| RoseG/Kloak656 | 9,4B | no disponible | Apache 2.0 | Hugging Face | No |
-| Qwen 2.5 7B | 7,6B | 128K | Apache 2.0 | Hugging Face, Ollama | Sí |
-| Llama 3.1 8B | 8,0B | 128K | Llama 3.1 Community | Hugging Face, Ollama | Sí |
-| Mistral 7B v0.3 | 7,2B | 32K | Apache 2.0 | Hugging Face, Ollama | Sí |
+| RoseG/Kloak656 | 9,4 B | no disponible | Apache 2.0 | no | Hugging Face (487 descargas) |
+| Qwen/Qwen3.5-9B-Base | ~9 B | no disponible | no disponible | no disponible en la información | Hugging Face (modelo base) |
+| Alternativas de ~9 B (p. ej. Gemma 2 9B, Llama 3.1 8B) | 8-9 B | 8K-128K según modelo | licencias específicas | sí, publicados por sus autores | amplia disponibilidad y ecosistema |
 
-La comparativa se basa únicamente en el tamaño de parámetros y la licencia, ya que no hay datos de rendimiento de Kloak656. Los tres modelos alternativos cuentan con documentación extensa, benchmarks publicados y amplio soporte en herramientas de despliegue, ventajas que Kloak656 no ofrece actualmente.
+La comparación con alternativas de la misma categoría es limitada porque no se dispone de datos de contexto, benchmarks ni idiomas del modelo evaluado. Frente al modelo base Qwen3.5-9B-Base, la única diferencia documentada es el ajuste fino comunitario, sin evidencia de mejora medible.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de documentación técnica: no hay información sobre entrenamiento, datos, alineación ni evaluación.
-- Riesgo elevado de alucinación y comportamientos no verificados al no existir benchmarks ni evaluaciones publicadas.
-- Imposibilidad de confirmar la longitud de contexto, los idiomas soportados o las capacidades reales.
-- La model card es una sola línea, lo que impide auditar sesgos, limitaciones o usos previstos.
-- Cero descargas y cero "likes": no hay evidencia de uso comunitario ni validación por terceros.
-- La licencia Apache 2.0 permite uso comercial, pero la falta de garantías técnicas hace recomendable una evaluación exhaustiva antes de cualquier despliegue en producción.
-- El tag `qwen3_5` no confirma que el modelo sea un derivado oficial de Qwen; podría tratarse de un reempaquetado, un fine-tuning o una denominación arbitraria.
-- El tamaño del repositorio (36,7 GB) es superior al esperado para pesos FP16 de 9,4B, lo que podría indicar ficheros duplicados, versiones múltiples o pesos en mayor precisión; conviene inspeccionar el repositorio antes de descargarlo.
+- Ausencia total de documentación técnica: no se describen datos de entrenamiento, hiperparámetros ni metodología, lo que impide evaluar su calidad de forma rigurosa.
+- Sin benchmarks publicados: no hay evidencia de rendimiento en MMLU, HumanEval, GSM8K ni otras tareas estándar.
+- Riesgo elevado de alucinación y comportamientos no alineados: al desconocerse si hubo RLHF/DPO, no puede asumirse ningún nivel de alineación.
+- Sesgos desconocidos: sin información sobre la composición del dataset de ajuste, no es posible caracterizar sesgos de género, raza, idioma o dominio.
+- Idiomas no especificados: no se garantiza soporte multilingüe ni la calidad en castellano.
+- Contexto no documentado: se desconoce la ventana máxima, lo que dificulta planificar casos de uso con documentos largos.
+- Adopción marginal (1 like, 487 descargas): sin validación comunitaria ni reportes de uso en producción.
+- Licencia Apache 2.0: permisiva para uso comercial, pero el usuario asume toda la responsabilidad sobre la calidad y los posibles sesgos del modelo.
+- No recomendado para producción sin evaluación propia exhaustiva y sin comparación contra el modelo base.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/RoseG/Kloak656
-- No se han encontrado papers, blogs, repositorios de código ni demos asociados en la información disponible.
+- Modelo en Hugging Face: https://huggingface.co/RoseG/Kloak656
+- Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B-Base
+- Perfil del autor: https://huggingface.co/RoseG
+- Paper, blog o repositorio adicional: no disponible

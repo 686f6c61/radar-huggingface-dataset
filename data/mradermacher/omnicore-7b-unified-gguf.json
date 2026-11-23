@@ -44,5 +44,11 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": []
+  "sources": [
+    {
+      "title": "Getting Started — Ray 2.60.0",
+      "url": "https://docs.ray.io/en/latest/ray-overview/getting-started.html",
+      "snippet": "Getting Started # Ray is an open source unified framework for scaling AI and Python applications. It provides a simple, universal API …"
+    }
+  ]
 }

@@ -2,49 +2,49 @@
 
 ## Resumen
 
-Qwen3.8-27B-ColdFusion-Heretic-ManusDistill-v1 es un modelo de lenguaje y vision (vision-language model) publicado por el usuario PeetPedro en Hugging Face, distribuido exclusivamente en formato GGUF para su uso con llama.cpp y llama-cpp. El nombre sugiere un linaje derivado de la familia Qwen3 (con un sufijo "3.8" no estandar) sometido a un proceso de ajuste fino o fusion de modelos ("ColdFusion"), una variante "Heretic" (habitualmente asociada a la eliminación de mecanismos de rechazo o censura) y una destilación denominada "ManusDistill". El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, lo que indica que es una publicación reciente y sin validación comunitaria.
+PeetPedro/Qwen3.8-27B-ColdFusion-Heretic-ManusDistill-v1 es un ajuste fino (finetune) del modelo DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU, que a su vez pertenece a la familia Qwen3.8 (arquitectura Qwen3.5, segun los tags del repositorio). El autor publica una variante orientada a la eliminacion de restricciones de alineacion (etiquetada como "heretic" y "uncensored") y a un uso generalista, con pesos distribuidos en formatos MLX, safetensors y GGUF. El modelo cuenta con aproximadamente 27.360 millones de parametros totales segun los pesos en safetensors, lo que lo situa en la categoria de modelos densos de tamano medio-grande.
 
-El dato más fiable disponible es el recuento de parámetros en safetensors: 26.895.998.464 parámetros (aproximadamente 26,9 mil millones), coherente con un modelo denso de la clase 27B. El repositorio ocupa 88,2 GB, lo que encaja con múltiples cuantizaciones GGUF del mismo modelo base más el proyector multimodal (mmproj). La model card es extremadamente escueta: solo documenta el proceso de conversión a GGUF mediante Unsloth y los comandos de uso con `llama-cli` y `llama-mtmd-cli`.
+La relevancia de esta ficha radica en que se trata de un modelo derivado de una cadena de ajustes comunitarios sobre una base Qwen, no de un modelo oficial de Alibaba. El repositorio incorpora tecnicas de entrenamiento en varias etapas ("Cold Fusion", "GAIN Training", "Multi-stage tuning") y una destilacion adicional ("ManusDistill") que el autor no documenta en detalle en la model card disponible. La licencia declarada es Apache 2.0, lo que facilita su uso comercial, aunque conviene verificar las condiciones de la cadena de modelos base.
 
-La relevancia de esta ficha es limitada pero ilustrativa: se trata de un ejemplo de modelo comunitario derivado, sin model card técnica, sin benchmarks y sin licencia declarada, lo que plantea problemas serios para cualquier uso en producción. Se documenta aquí con rigor precisamente para que desarrolladores e investigadores puedan evaluar los riesgos antes de invertir tiempo en su despliegue.
+La informacion publica es escasa: la model card practicamente no incluye datos tecnicos (longitud de contexto, composicion del dataset, resultados de benchmarks) y el repositorio tiene un volumen de 143 GB, coherente con la publicacion de pesos en multiples formatos y precisiones. Esta ficha refleja unicamente lo que puede verificarse a partir de los metadatos y advierte explicitamente de los vacios de informacion.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (presumiblemente transformer denso, derivado de la familia Qwen3; no confirmado en la model card) |
-| Parametros totales | 26.895.998.464 (~26,9 B) |
-| Parametros activos | no aplica (no se indica que sea MoE) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | BF16, Q2_K_L, Q3_K_M, Q4_1, Q4_K_M, Q8_0 (GGUF) |
-| Idiomas soportados | no disponibles |
-| Licencia | no disponible |
-| Formato de pesos | GGUF (llama.cpp); incluye proyector multimodal `mmproj` en BF16 |
+| Arquitectura | Transformer (familia Qwen3.5, segun tags `qwen3_5`, `qwen3_8`, `qwen3_6`); detalles no disponibles |
+| Parametros totales | 27.356.723.952 (~27,36 mil millones) |
+| Parametros activos | No aplica (no se indica que sea MoE) |
+| Longitud de contexto | No disponible |
+| Tipos de cuantizacion | No disponible (el repo incluye GGUF y safetensors, pero no se detallan las variantes) |
+| Idiomas soportados | Ingles (`en`) segun la model card |
+| Licencia | Apache 2.0 |
+| Formato de pesos | MLX, safetensors, GGUF |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información sobre la arquitectura interna más allá de lo que sugiere el nombre del modelo y el tag `vision-language-model`. El recuento de parámetros (26,9 B) y la presencia de un fichero `mmproj` indican un modelo multimodal con un codificador visual acoplado a un LLM de ~27B. El prefijo "Qwen3.8" no corresponde a ninguna nomenclatura oficial conocida de la familia Qwen, y podría tratarse de una etiqueta inventada o de una variante no publicada oficialmente; no hay forma de verificarlo con la información disponible.
+El modelo es un ajuste fino de DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU, que a su vez desciende de la familia Qwen3.8. Los tags indican la presencia de componentes o variantes de las arquitecturas Qwen3.5, Qwen3.6 y Qwen3.8, aunque no se especifica si se trata de un transformer denso estandar o de una arquitectura hibrida. Con 27,36 mil millones de parametros y sin indicacion de mezcla de expertos, lo mas probable es un transformer denso, pero este dato no esta confirmado en la informacion disponible.
 
-Respecto al entrenamiento, la model card no documenta número de tokens, composición del dataset, ni si hubo RLHF, DPO o destilación. Los términos del nombre ("ColdFusion", "Heretic", "ManusDistill") sugieren fusión de modelos, eliminación de alineamiento de seguridad y destilación, respectivamente, pero son interpretaciones del nombre, no datos confirmados. El único proceso documentado es la conversión a GGUF mediante la herramienta de Unsloth. No se menciona ninguna innovación técnica como decodificación especulativa, atención lineal o modos de razonamiento.
+Respecto al entrenamiento, la model card menciona tecnicas como "Cold Fusion", "GAIN Training" y "Multi-stage tuning", ademas de una destilacion identificada como "ManusDistill". No se documenta el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron etapas de RLHF o DPO. Tampoco se detalla el proceso de "abliteracion" o eliminacion de rechazos que justifica la etiqueta "heretic". Toda esta informacion debe considerarse no disponible y no verificable a partir de las fuentes consultadas.
 
 ## Capacidades
 
-- Generación de texto conversacional, según el tag `conversational`.
-- Procesamiento de imagen y texto (vision-language model), a juzgar por el tag y el fichero `mmproj`; el alcance exacto (OCR, VQA, captioning) no está documentado.
-- Uso con plantilla de chat Jinja mediante el flag `--jinja` en llama.cpp.
-- Soporte de tool calling / function calling: no disponible (no documentado).
-- Soporte de agentes y razonamiento multi-paso: no disponible (no documentado).
-- Capacidades multilingües: no disponibles (idiomas no declarados).
-- Modo "thinking", audio u otras capacidades especiales: no disponible.
+- Generacion de texto conversacional y de uso general, segun el pipeline `text-generation` y el tag `all use cases`.
+- Modo "uncensored": el ajuste elimina total o parcialmente las capas de rechazo del modelo base, lo que permite respuestas sobre temas que los modelos alineados suelen declinar.
+- Soporte de conversaciones multiturno (tag `conversational`).
+- Compatibilidad con endpoints de inferencia (tag `endpoints_compatible`).
+- Capacidades multilingues: limitadas al ingles segun la model card; no se declaran otros idiomas.
+- No se documentan capacidades de tool calling, function calling, razonamiento multi-paso, vision, audio ni modo "thinking". No disponible.
 
 ## Casos de uso
 
-- Experimentación local con modelos multimodales en llama.cpp: el modelo se puede cargar con `llama-mtmd-cli` para probar entrada de imagen y texto en un entorno de escritorio, aprovechando las cuantizaciones Q4_K_M o Q8_0 para ajustar el equilibrio entre calidad y memoria.
-- Pruebas de concepto de asistentes conversacionales: dado el tag `conversational` y el soporte de plantilla Jinja, puede emplearse para prototipar diálogos multi-turno, siempre que se valide previamente la calidad y la seguridad de las respuestas.
-- Evaluación comparativa de variantes comunitarias: investigadores interesados en el efecto de fusiones y destilaciones comunitarias pueden usar este modelo como caso de estudio, comparándolo con el Qwen base del que derive.
-- Despliegue en hardware de gama alta para inferencia offline: con 26,9 B de parámetros, la cuantización Q4_K_M (aproximadamente 16-17 GB) permite ejecución en GPUs de 24 GB, útil para entornos sin conectividad.
-- Análisis de imágenes en pipelines locales: el proyector `mmproj` permite incorporar descripción de imágenes en flujos de trabajo que no pueden enviar datos a servicios en la nube, sujeto a validación de calidad.
-- Docencia y formación: sirve como ejemplo práctico de conversión a GGUF con Unsloth y de las limitaciones de los modelos comunitarios sin documentación ni licencia.
+- Generacion creativa sin restricciones de contenido: el ajuste "heretic" permite explorar narrativa, guiones o dialogos sobre temas sensibles que los modelos alineados rechazan; adecuado para entornos controlados de escritura creativa.
+- Prototipado de asistentes conversacionales en ingles: el modelo puede gestionar dialogos multiturno y desplegarse via MLX en hardware Apple o via GGUF en llama.cpp/Ollama.
+- Investigacion sobre alineacion y seguridad: util como caso de estudio de un modelo "abliterado" para comparar comportamientos frente a su base alineada y medir la degradacion de rechazos.
+- Generacion de texto en pipelines de datos sinteticos: su tamano de 27B y su licencia Apache 2.0 permiten generar corpus de entrenamiento o aumentacion de datos en ingles.
+- Despliegue local en Mac con MLX: la publicacion en formato MLX permite ejecutar el modelo en Apple Silicon con memoria unificada, sin depender de GPU NVIDIA.
+- Experimentacion con cuantizaciones GGUF: el repositorio incluye GGUF, lo que facilita probar el modelo en estaciones de trabajo con VRAM limitada mediante llama.cpp.
+- Evaluacion de cadenas de finetuning comunitarias: sirve para estudiar como se propagan sesgos y capacidades a traves de multiples ajustes sucesivos sobre una base Qwen.
 
 ## Benchmarks y rendimiento
 
@@ -52,43 +52,37 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia (según cuantización, aproximada a partir de 26,9 B de parámetros):
-  - Q2_K_L: ~10-11 GB.
-  - Q3_K_M: ~13-14 GB.
-  - Q4_1 / Q4_K_M: ~16-17 GB.
-  - Q8_0: ~28-29 GB.
-  - BF16: ~54 GB (más el proyector mmproj).
-- GPU recomendadas: RTX 4090 (24 GB) para Q4_K_M con margen; A100 40 GB o H100 para Q8_0 y BF16; RTX 3090 (24 GB) también válida para Q4.
-- Cabe en GPU de consumo: sí, en RTX 4090/3090 con cuantizaciones Q4 o inferiores; en GPUs de 16 GB solo con Q2_K_L o Q3_K_M y contexto reducido.
-- Opciones de despliegue: llama.cpp (`llama-cli`, `llama-mtmd-cli`), y por extensión cualquier frontend compatible con GGUF (Ollama, LM Studio, llama-cpp-python). vLLM y TGI no están soportados de forma nativa para GGUF en este repositorio.
-- Latencia y throughput: no disponibles (no documentados).
+- VRAM estimada para inferencia en BF16/FP16: aproximadamente 55 GB solo para pesos (27,36B x 2 bytes), mas overhead de KV cache y activaciones; en la practica se recomienda 64-80 GB.
+- Cuantizacion a 8 bits: alrededor de 28-30 GB de VRAM; viable en una RTX 4090 (24 GB) solo con cuantizaciones de 4 bits o inferiores, o en A100 40/80 GB y H100.
+- Cuantizacion a 4 bits: aproximadamente 14-16 GB de VRAM; cabe en RTX 4090, RTX 3090 y GPUs consumer de 16 GB o mas, con contexto limitado.
+- Apple Silicon: el formato MLX permite ejecucion en Mac con memoria unificada de 32 GB o superior (64 GB recomendado para contexto amplio).
+- Opciones de despliegue: MLX (libreria declarada), llama.cpp y Ollama mediante los GGUF publicados, y potencialmente vLLM o TGI con los safetensors (no confirmado por el autor).
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Licencia | Formato | Disponibilidad |
-|---|---|---|---|---|---|
-| Qwen3.8-27B-ColdFusion-Heretic-ManusDistill-v1 | ~26,9 B | no disponible | no disponible | GGUF | Hugging Face (0 descargas) |
-| Qwen2.5-32B-Instruct (referencia de la familia Qwen) | 32,5 B | 128K (según model card oficial) | Apache 2.0 | safetensors, GGUF | Hugging Face, ampliamente validado |
-| Gemma 2 27B | 27 B | 8K | Gemma License | safetensors, GGUF | Hugging Face, validado |
-| Mistral Small 24B | 24 B | 32K | Apache 2.0 | safetensors, GGUF | Hugging Face, validado |
+| Modelo | Parametros | Contexto | Licencia | Notas |
+|---|---|---|---|---|
+| PeetPedro/Qwen3.8-27B-ColdFusion-Heretic-ManusDistill-v1 | ~27,36B | No disponible | Apache 2.0 | Finetune comunitario "uncensored", formatos MLX/GGUF/safetensors |
+| DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU | No disponible | No disponible | No disponible | Modelo base directo del anterior; misma familia de ajustes |
+| Qwen3 oficial (familia) | Variable | Variable | Apache 2.0 (segun version) | Modelos base alineados de Alibaba; referencia de comparacion |
+| Llama 3.x 27B-30B (rango similar) | ~27-30B | Variable | Licencia comunitaria Llama | Alternativa densa de tamano comparable; contexto y rendimiento no comparados por falta de datos |
 
-La comparación es orientativa: no hay datos de rendimiento del modelo de PeetPedro, por lo que no puede establecerse una comparación cuantitativa. Los tres alternativos cuentan con model card completa, licencia clara y benchmarks publicados, a diferencia de este modelo.
+La comparacion cuantitativa no es posible: no hay benchmarks publicados del modelo ni del base en la informacion disponible.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de model card técnica: no se documentan datos de entrenamiento, arquitectura, contexto ni evaluación, lo que impide cualquier validación rigurosa.
-- Licencia no declarada: no puede asumirse uso comercial; en ausencia de licencia, los derechos de uso son inciertos y su explotación en producción conlleva riesgo legal.
-- El sufijo "Heretic" sugiere la eliminación de mecanismos de rechazo o alineamiento de seguridad, lo que incrementa el riesgo de respuestas dañinas, sesgadas o inapropiadas.
-- Riesgo elevado de alucinación: sin benchmarks ni evaluación, no hay evidencia de fiabilidad factual.
-- Idiomas no declarados: no puede garantizarse un rendimiento correcto en castellano ni en otros idiomas distintos del inglés.
-- El nombre "Qwen3.8" no corresponde a ninguna versión oficial conocida de Qwen, lo que impide verificar el linaje real del modelo.
-- El repositorio tiene 0 descargas y 0 likes, sin validación comunitaria ni reportes de uso.
-- Longitud de contexto desconocida: no es posible planificar aplicaciones que requieran ventanas largas.
-- El tamaño del repositorio (88,2 GB) implica descargas largas y espacio en disco considerable.
-- No se garantiza compatibilidad con vLLM o TGI; el despliegue queda limitado a llama.cpp y derivados.
+- Ausencia total de benchmarks y de documentacion de entrenamiento: no se puede verificar calidad, contexto real ni comportamiento en tareas estandar.
+- Modelo "uncensored"/"heretic": eliminacion deliberada de rechazos de seguridad; puede generar contenido danino, ofensivo o ilegal. No apto para produccion orientada al publico sin filtros externos.
+- Riesgo elevado de alucinacion: al ser un ajuste comunitario sin evaluacion publicada, la fiabilidad factual no esta garantizada.
+- Soporte limitado al ingles segun la model card; el rendimiento en castellano no esta documentado.
+- Cadena de modelos base larga y poco documentada: la licencia Apache 2.0 declarada debe verificarse contra las condiciones de los modelos originales de la cadena (Qwen y ajustes intermedios).
+- Repositorio de 143 GB con multiples formatos: requiere espacio de almacenamiento considerable y seleccion cuidadosa del archivo a descargar.
+- Sin garantias de mantenimiento: 0 likes y 499 descargas en el momento de la consulta; proyecto de autor individual sin soporte.
+- El tag `qwen3_5`/`qwen3_8` sugiere una nomenclatura no oficial; la correspondencia exacta con versiones publicas de Qwen no esta confirmada.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/PeetPedro/Qwen3.8-27B-ColdFusion-Heretic-ManusDistill-v1
-- Unsloth (herramienta de conversión citada): https://github.com/unslothai/unsloth
-- llama.cpp (runtime recomendado por la model card): https://github.com/ggml-org/llama.cpp
+- Modelo en Hugging Face: https://huggingface.co/PeetPedro/Qwen3.8-27B-ColdFusion-Heretic-ManusDistill-v1
+- Modelo base: https://huggingface.co/DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU
+- No se han encontrado papers, blogs, repositorios ni demos adicionales en la informacion disponible.

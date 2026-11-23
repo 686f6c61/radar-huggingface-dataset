@@ -44,31 +44,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Google Meet - Online Video Calls, Meetings and Conferencing",
-      "url": "https://meet.google.com/",
-      "snippet": "Real-time meetings by Google. Using your browser, share your video, desktop, and presentations with teammates and customers."
-    },
-    {
-      "title": "Google Meet: Online Web and Video Conferencing Calls | Google …",
-      "url": "https://workspace.google.com/products/meet/",
-      "snippet": "Anyone with a Google Account can create a video meeting, invite up to 100 participants, and meet for up to 60 minutes per meeting …"
-    },
-    {
-      "title": "Google Meet: audioconferenze e videochiamate online | Google …",
-      "url": "https://workspace.google.com/intl/it/products/meet/",
-      "snippet": "Utilizza Google Meet per audioconferenze e videochiamate online sicure nell'ambito di Google Workspace."
-    },
-    {
-      "title": "Google Meet - App su Google Play",
-      "url": "https://play.google.com/store/apps/details/?id=com.google.android.apps.tachyon&hl=it",
-      "snippet": "Google Meet è un'app per videochiamate di alta qualità progettata per aiutarti a interagire in modo significativo e divertente con amici, …"
-    },
-    {
-      "title": "Partecipa a una riunione - Computer - Guida di Google Meet",
-      "url": "https://support.google.com/meet/answer/9303069?hl=it-it&co=GENIE.Platform%3DDesktop",
-      "snippet": "Puoi partecipare a una riunione video da Google Meet, Google Calendar o Gmail. Per partecipare a una riunione, puoi anche: Tutte …"
-    }
-  ]
+  "sources": []
 }

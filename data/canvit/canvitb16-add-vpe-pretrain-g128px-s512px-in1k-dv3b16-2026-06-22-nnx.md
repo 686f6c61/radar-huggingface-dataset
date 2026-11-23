@@ -2,90 +2,94 @@
 
 ## Resumen
 
-CanViT (Canvas Vision Transformer) es un modelo fundacional de visión activa desarrollado por el equipo canvit (Yohaï-Eliel Berreby, Sabrina Du, Audrey Durand y B. Suresh Krishna), presentado en NeurIPS 2026. A diferencia de los vision transformers convencionales que procesan una imagen completa en una sola pasada, CanViT observa una escena mediante una secuencia de vistazos (glimpses) y acumula la información en un lienzo (canvas) de representación global. Este checkpoint concreto es la conversión al formato canvit-nnx (JAX / Flax NNX) del modelo preentrenado original.
+CanViT (Canvas Vision Transformer) es un modelo fundacional de visión activa desarrollado por el equipo de investigación canvit (Yohaï-Eliel Berreby, Sabrina Du, Audrey Durand y B. Suresh Krishna), presentado en NeurIPS 2026. A diferencia de los vision transformers convencionales que procesan una imagen completa en una sola pasada, CanViT observa una escena mediante una secuencia de "vistazos" (glimpses) y va construyendo y actualizando una representación global de la escena sobre un lienzo (canvas) de tamaño fijo. Esta formulación imita más fielmente la percepción visual biológica y permite un consumo computacional proporcional a la información muestreada, no al área total de la imagen.
 
-El modelo parte de una arquitectura ViT-B/16 con 98.114.176 parámetros, entrenado sobre escenas de 512 px con vistazos de 128 px y un canvas de 32 × 32, y preentrenado sobre ImageNet-1k mediante destilación de DINOv3. Su propósito es servir como extractor de características de imagen con capacidad de memoria espacial acumulativa, lo que lo hace relevante para tareas de exploración visual, robótica y percepción con presupuesto de cómputo limitado por paso.
+Este checkpoint concreto es la conversión al formato de la librería `canvit-nnx` (backend JAX / Flax NNX) del modelo base preentrenado `canvitb16-add-vpe-pretrain-g128px-s512px-in1k-dv3b16-2026-06-22`. El nombre codifica la configuración experimental: backbone ViT-B/16, atención con positional encoding aditivo (add-vpe), vistazos de 128 px sobre escenas de 512 px, preentrenamiento en ImageNet-1k y destilación desde DINOv3 ViT-B/16. Con 98,1 millones de parámetros y 0,8 GB de pesos, es un modelo compacto orientado a extracción de características de imagen.
 
-La relevancia actual reside en que propone un paradigma de visión activa (selección secuencial de dónde mirar) frente al procesamiento denso de imagen completa, con una licencia MIT permisiva y un pipeline de inferencia en JAX/NNX que facilita su integración en stacks de investigación.
+Su relevancia actual radica en que propone una alternativa a la extracción pasiva de features para tareas donde el coste de observar la escena completa es prohibitivo (imágenes de alta resolución, vídeo, robótica) y en que ofrece una implementación lista para JAX/Flax NNX, un ecosistema con menos cobertura de modelos de visión que PyTorch.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Vision Transformer (ViT-B/16) con mecanismo de visión activa y canvas de estado; implementación JAX / Flax NNX |
+| Arquitectura | Vision Transformer (ViT-B/16) con mecanismo de visión activa sobre canvas; backbone de 12 capas, ancho 768, parches de 16 px |
 | Parametros totales | 98.114.176 |
 | Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | no disponible (canvas de 32 × 32 posiciones; escenas de 512 px con vistazos de 128 px) |
-| Tipos de cuantizacion | no disponible |
-| Idiomas soportados | no disponible (modelo de visión, sin procesamiento de lenguaje) |
-| Licencia | MIT |
-| Formato de pesos | safetensors (checkpoint canvit-nnx para JAX / Flax NNX) |
+| Longitud de contexto | no disponible (procesa secuencias de vistazos; canvas de 32 × 32 en la verificación de conversión) |
+| Tipos de cuantizacion | no disponible (pesos en safetensors de precisión nativa; no se documentan variantes GGUF/INT8) |
+| Idiomas soportados | no disponible (modelo de visión, sin cabecera de texto) |
+| Licencia | MIT (modelo); el preentrenamiento usa destilación desde DINOv3, sujeto a la DINOv3 License |
+| Formato de pesos | safetensors (formato nativo `canvit-nnx` para JAX / Flax NNX) |
 
 ## Arquitectura y entrenamiento
 
-CanViT se basa en un backbone ViT-B/16 que procesa vistazos individuales de 128 px extraídos de una escena de 512 px. El modelo mantiene un estado recurrente denominado canvas, una rejilla de 32 × 32 posiciones donde se acumula y actualiza la información de los vistazos sucesivos, permitiendo una representación global de la escena sin procesarla entera de una vez. La variante "add-vpe" incorpora codificación de posición de punto de vista (viewpoint positional encoding), que informa al modelo de la localización espacial de cada vistazo dentro de la escena.
+CanViT se construye sobre un ViT-B/16 (12 capas, dimensión 768, parches de 16 × 16) y añade dos piezas clave: un módulo de muestreo de vistazos que extrae regiones de 128 px de una escena de 512 px en posiciones dictadas por un objeto `Viewpoint`, y un canvas de tamaño fijo (32 × 32 en la configuración verificada) que actúa como memoria de escena y se actualiza de forma recurrente tras cada vistazo. La variante `add-vpe` indica que el positional encoding se inyecta de forma aditiva, y la clase `CanViTForPretraining` expone el estado recurrente (`init_state` / `output.state`) necesario para encadenar observaciones.
 
-El preentrenamiento se realiza por destilación desde DINOv3 sobre ImageNet-1k, lo que transfiere las representaciones auto-supervisadas del modelo profesor. El checkpoint se ha validado en la conversión a 512 px de escena, 128 px de vistazo y canvas de 32 × 32. No se dispone de información sobre el número total de tokens de entrenamiento, la composición exacta del dataset más allá de ImageNet-1k, ni sobre etapas de RLHF/DPO (no aplicables a un modelo puramente visual).
+El preentrenamiento se realizó sobre ImageNet-1k y, según la model card, mediante destilación desde DINOv3 (ViT-B/16). No se especifican en la información disponible el número total de tokens de entrenamiento, la composición exacta del dataset ni si se aplicaron fases de RLHF/DPO (poco habituales en modelos puramente visuales). La innovación técnica destacable es la formulación de visión activa: el coste de inferencia escala con el número y tamaño de los vistazos, no con la resolución completa de la escena, lo que abre la puerta a procesar imágenes de muy alta resolución o flujos de vídeo con presupuesto computacional controlado.
 
 ## Capacidades
 
-- Extracción de características de imagen mediante vistazos secuenciales con memoria espacial acumulativa.
-- Procesamiento de escenas de 512 px a partir de vistazos de 128 px, con control explícito del punto de vista de cada muestra.
-- Representación global de escena en un canvas de 32 × 32 posiciones, útil para tareas que requieren integración de información a lo largo de una exploración.
-- Soporte de inferencia con estado persistente (`init_state`, actualización iterativa de `state`) para flujos de visión activa.
-- Compatibilidad con el ecosistema JAX / Flax NNX a través de la librería `canvit-nnx`.
-- No soporta generación de texto, tool calling, agentes conversacionales ni capacidades multilingües: es un modelo exclusivamente visual.
+- Extracción de características de imagen (`pipeline_tag: image-feature-extraction`) mediante un backbone ViT-B/16 preentrenado por destilación de DINOv3.
+- Percepción activa: muestreo secuencial de vistazos (`sample_at_viewpoint`) con acumulación de información en un canvas recurrente.
+- Representación de escena completa: `Viewpoint.full_scene` permite procesar la escena entera como un único vistazo cuando se desea una línea base pasiva.
+- Estado recurrente persistente entre llamadas (`init_state`, `output.state`), apto para políticas de exploración multi-paso.
+- Compatibilidad con JAX / Flax NNX, incluyendo diferenciación automática y `jax.jit` sobre el grafo del modelo.
+- No dispone de cabecera de texto, tool calling, agentes lingüísticos ni capacidades multimodales de audio o lenguaje; es exclusivamente un modelo visual.
+- Capacidades multilingües: no aplicables (sin procesamiento de lenguaje).
 
 ## Casos de uso
 
-- Exploración visual en robótica: el modelo puede recibir vistazos sucesivos de un entorno y acumular una representación en el canvas, adecuado para agentes que no pueden observar la escena completa de una vez.
-- Percepción con presupuesto computacional limitado: al procesar vistazos de 128 px en lugar de la escena completa de 512 px, permite reducir el coste por paso en pipelines de inferencia en tiempo real.
-- Extracción de features para clasificación o recuperación: el estado del canvas puede usarse como embedding de escena para tareas downstream de image retrieval o clasificación.
-- Investigación en visión activa: sirve como baseline reproducible (formato NNX, licencia MIT) para experimentos sobre políticas de selección de vistazos.
-- Preentrenamiento y fine-tuning en JAX: el checkpoint `CanViTForPretraining` permite inicializar modelos para tareas de destilación o adaptación con el stack Flax NNX.
-- Segmentación y detección con memoria espacial: la representación acumulada en el canvas puede alimentar cabezas de tarea que se beneficien de información integrada de múltiples regiones.
-- Evaluación comparativa de estrategias de atención visual: el control explícito del `Viewpoint` facilita experimentos controlados sobre dónde y cuándo mirar.
+- Extracción de embeddings para búsqueda visual y deduplicación: el modelo genera representaciones densas de 768 dimensiones por escena que pueden indexarse en un motor vectorial para recuperación por similitud; su tamaño de 98 M parámetros permite vectorizar corpus grandes con coste moderado.
+- Procesamiento de imágenes de alta resolución con presupuesto acotado: en lugar de reescalar una imagen de, por ejemplo, 4K a 512 px, se pueden muestrear vistazos de 128 px sobre las regiones de interés y acumularlos en el canvas, preservando detalle fino sin coste cuadrático.
+- Robótica y navegación con visión activa: la API de `Viewpoint` y el estado recurrente permiten que un agente decida dónde mirar en cada paso y mantenga una memoria de la escena, útil en tareas de exploración o manipulación donde la cámara tiene un campo de visión limitado.
+- Clasificación y etiquetado de imágenes por transferencia: al ser un checkpoint de preentrenamiento, se puede congelar el backbone y entrenar una cabeza lineal o un adaptador sobre los features del canvas para tareas downstream con pocos datos etiquetados.
+- Análisis de vídeo con muestreo selectivo de fotogramas y regiones: el estado recurrente permite actualizar la representación de la escena fotograma a fotograma sin recomputar la imagen completa, reduciendo el coste frente a un ViT pasivo por frame.
+- Investigación en percepción activa: el modelo sirve como línea base reproducible en JAX para experimentos sobre políticas de fijación (foveación), comparación con DINOv3 pasivo y estudios de eficiencia muestra-información.
+- Integración en pipelines JAX/TPU: al estar implementado en Flax NNX, encaja en stacks de entrenamiento e inferencia sobre aceleradores TPU y GPU con XLA, algo poco común en modelos de visión publicados solo en PyTorch.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card únicamente indica que la conversión se verificó a 512 px de escena, 128 px de vistazo y canvas de 32 × 32, sin reportar métricas de precisión (ImageNet top-1, kNN, lineal, etc.) ni comparaciones numéricas con DINOv3.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: con 98,1 M de parámetros, los pesos en fp32 ocupan aproximadamente 0,4 GB; en fp16/bf16, unos 0,2 GB. El consumo real depende del tamaño de lote y de la rejilla del canvas.
-- GPU recomendadas: cualquier GPU con soporte JAX/CUDA, incluidas RTX 3090, RTX 4090, A100 y H100; el modelo es lo bastante pequeño para GPUs de gama media.
-- Cabe en GPU consumer: sí, en tarjetas con 4 GB o más de VRAM para inferencia en fp16/bf16.
-- Opciones de despliegue: JAX / Flax NNX mediante la librería `canvit-nnx`; no se documentan integraciones con vLLM, llama.cpp, Ollama o TGI (no aplicables a un modelo visual de este tipo).
-- Latencia y throughput: no disponibles en la información proporcionada.
+- VRAM estimada para inferencia: los pesos en safetensors ocupan aproximadamente 0,4 GB en FP32 (98 M parámetros × 4 bytes) y el repositorio completo pesa 0,8 GB; con estado de canvas y activaciones para batch pequeño, el consumo típico se sitúa por debajo de 2 GB.
+- GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM es suficiente para inferencia en FP32; para entrenamiento o fine-tuning se recomiendan A100, H100 o RTX 4090 por el soporte maduro de XLA.
+- Cabe en GPU de consumo: sí, en GTX 1650/RTX 3050 y superiores; también en iGPU recientes con suficiente memoria compartida, aunque con latencia mayor.
+- Opciones de despliegue: `canvit-nnx` sobre JAX (CPU, GPU CUDA, TPU); no se documentan exportaciones a ONNX, GGUF, vLLM, llama.cpp, Ollama ni TGI, que están orientados a modelos de lenguaje.
+- Latencia y throughput: no disponibles en la información proporcionada; dependerán del número de vistazos por escena, del tamaño de batch y del backend (XLA en GPU o TPU).
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto / entrada | Paradigma | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto / entrada | Preentrenamiento | Licencia | Formato / ecosistema |
 |---|---|---|---|---|---|
-| CanViT (este checkpoint) | 98,1 M | Escena 512 px, vistazos 128 px, canvas 32 × 32 | Visión activa con estado | MIT | Hugging Face (canvit-nnx) |
-| DINOv3 ViT-B/16 | no disponible en la información | Imagen completa | Auto-supervisado denso | DINOv3 License | GitHub facebookresearch/dinov3 |
-| ViT-B/16 estándar | ~86 M | Imagen completa (p. ej. 224 px) | Transformer de visión supervisado | variable según checkpoint | Amplia disponibilidad |
+| CanViT ViT-B/16 (este checkpoint) | 98,1 M | Escenas 512 px, vistazos 128 px, canvas 32 × 32 | Destilación desde DINOv3 sobre ImageNet-1k | MIT (con caveat DINOv3) | safetensors, JAX / Flax NNX |
+| DINOv3 ViT-B/16 | ~86 M (ViT-B) | Imagen completa, resolución variable | Autosupervisado a gran escala (Meta) | DINOv3 License | PyTorch (referencia), pesos originales |
+| DINOv2 ViT-B/14 | ~86 M | Imagen completa, parches 14 px | Autosupervisado (LVD-142M) | Apache 2.0 | PyTorch, safetensors, ONNX |
+| CLIP ViT-B/16 | ~86 M (visual) + texto | Imagen completa 224 px + texto | Contrastivo imagen-texto | MIT (versión OpenAI) | PyTorch, safetensors, ONNX |
 
-La comparación directa con DINOv3 ViT-B/16 es la más relevante, ya que CanViT se destila precisamente de él; sin embargo, no se dispone de métricas comparativas publicadas en la información proporcionada.
+CanViT se distingue de DINOv2/DINOv3 y CLIP por su paradigma de observación secuencial y su estado recurrente, y por estar implementado en JAX/Flax NNX en lugar de PyTorch. En parámetros es comparable a los ViT-B de referencia, pero no se dispone de métricas públicas que permitan comparar su precisión con la de estos modelos.
 
 ## Limitaciones y advertencias
 
-- Modelo exclusivamente visual: no procesa texto ni mantiene conversaciones; no debe evaluarse como un LLM.
-- El preentrenamiento se realiza por destilación de DINOv3, por lo que hereda posibles sesgos de representación del modelo profesor y de ImageNet-1k.
-- La licencia del checkpoint es MIT, pero DINOv3 se distribuye bajo la DINOv3 License; conviene revisar las condiciones de uso derivadas en despliegues comerciales.
-- La ventana de contexto visual está acotada al canvas de 32 × 32 y a escenas de 512 px; no se documenta comportamiento fuera de esa configuración.
-- No hay datos publicados de benchmarks, latencia ni robustez fuera de la configuración validada (512 px / 128 px / canvas 32 × 32).
-- Al ser un checkpoint de preentrenamiento (`CanViTForPretraining`), no incluye cabezas de tarea; requiere fine-tuning o adaptación para aplicaciones concretas.
-- Riesgo de alucinación no aplicable en el sentido generativo, pero sí de representaciones erróneas en regiones no visitadas por los vistazos.
+- No se han publicado métricas de calidad (ImageNet top-1, kNN, transferencia lineal) en la información disponible, por lo que no es posible evaluar su rendimiento frente a DINOv3 o DINOv2 sin ejecutar evaluaciones propias.
+- El preentrenamiento se basa en destilación desde DINOv3, cuyo uso está sujeto a la DINOv3 License; aunque los pesos de CanViT se publican bajo MIT, conviene revisar las condiciones de la licencia del modelo profesor para uso comercial.
+- Es un checkpoint de preentrenamiento sin cabecera de tarea: para clasificación, detección o segmentación requiere entrenar cabezas o adaptadores específicos.
+- Modelo exclusivamente visual: no procesa texto ni audio, y no soporta tool calling ni razonamiento multi-paso en el sentido de los LLM.
+- El rendimiento depende críticamente de la política de muestreo de vistazos; una selección de viewpoints pobre degrada la representación del canvas. La información disponible no documenta políticas de referencia ni su robustez.
+- Riesgo de sesgo heredado del dataset de destilación (ImageNet-1k y las fuentes de DINOv3), con posibles desequilibrios en clases minoritarias y sesgos geográficos o demográficos.
+- La verificación de la conversión se realizó solo en una configuración concreta (512 px / 128 px / 32 × 32); no se garantiza el comportamiento fuera de esos parámetros.
+- El ecosistema JAX/Flax NNX es menos común que PyTorch, lo que puede complicar la integración en stacks existentes y la disponibilidad de herramientas de perfilado y despliegue.
+- No se documentan cuantizaciones oficiales ni exportaciones a formatos de inferencia optimizada (ONNX, TensorRT), lo que limita el despliegue en entornos de producción convencionales.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/canvit/canvitb16-add-vpe-pretrain-g128px-s512px-in1k-dv3b16-2026-06-22-nnx
-- Modelo base: https://huggingface.co/canvit/canvitb16-add-vpe-pretrain-g128px-s512px-in1k-dv3b16-2026-06-22
-- Paper (arXiv): https://arxiv.org/abs/2603.22570
-- OpenReview: https://openreview.net/forum?id=cnV9GA4pKU
+- Modelo en Hugging Face: https://huggingface.co/canvit/canvitb16-add-vpe-pretrain-g128px-s512px-in1k-dv3b16-2026-06-22-nnx
+- Modelo base (formato original): https://huggingface.co/canvit/canvitb16-add-vpe-pretrain-g128px-s512px-in1k-dv3b16-2026-06-22
+- Repositorio de checkpoints: https://huggingface.co/canvit
+- Paper en OpenReview (NeurIPS 2026): https://openreview.net/forum?id=cnV9GA4pKU
+- arXiv: https://arxiv.org/abs/2603.22570
 - Código: https://github.com/m2b3/CanViT
 - Página del proyecto: https://m2b3.github.io/CanViT/
-- Todos los checkpoints: https://huggingface.co/canvit
-- DINOv3: https://github.com/facebookresearch/dinov3
+- DINOv3 (modelo profesor): https://github.com/facebookresearch/dinov3
 - Licencia DINOv3: https://github.com/facebookresearch/dinov3/blob/main/LICENSE.md

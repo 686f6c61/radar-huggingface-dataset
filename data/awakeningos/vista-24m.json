@@ -5,7 +5,7 @@
   "author": "AwakeningOS",
   "url": "https://huggingface.co/AwakeningOS/VISTA-24M",
   "created_at": "2026-09-15T13:08:14.000Z",
-  "updated_at": "2026-09-15T13:09:08.000Z",
+  "updated_at": "2026-11-16T06:38:37.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -31,7 +31,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 21,
+  "downloads_30d": 54,
   "trending_score": 0,
   "parameters": 24281104,
   "parameters_human": "24.3M",

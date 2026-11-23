@@ -80,7 +80,7 @@
     "conversational"
   ],
   "likes": 3,
-  "downloads_30d": 538,
+  "downloads_30d": 529,
   "trending_score": 0,
   "parameters": 34660610688,
   "parameters_human": "34.66B",
@@ -100,21 +100,5 @@
   "renamed_to": "IsValorum/Nex-N2.5-mini-APEX-I-MiniPlus-V1-GGUF",
   "renamed_at": "2026-11-11T02:58:23.321Z",
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Yahoo Mail | Email with smart features and top-notch security",
-      "url": "https://fr.mail.yahoo.com/",
-      "snippet": "Yahoo Mail: Your smarter, faster, free email solution. Organize your inbox, protect your privacy, and tackle tasks efficiently with AI …"
-    },
-    {
-      "title": "Done - Yahoo Mail",
-      "url": "https://fr.mail.yahoo.com/d?reason=invalid_crumb",
-      "snippet": "Il est temps de passer à l’action avec Yahoo Mail. Pour commencer, il vous suffit d’ajouter votre compte Gmail, Outlook, AOL ou …"
-    },
-    {
-      "title": "Connect Your Gmail to Yahoo Mail | Clean Up Your Inbox",
-      "url": "https://fr.mail.yahoo.com/connect/gmail",
-      "snippet": "Connect your Gmail to Yahoo Mail for one-tap unsubscribe, delete by sender, spam protection, and a cleaner inbox without changing …"
-    }
-  ]
+  "sources": []
 }

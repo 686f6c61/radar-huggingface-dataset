@@ -52,11 +52,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Wikipédia, l'encyclopédie libre",
-      "url": "https://fr.wikipedia.org/wiki/Wikip%C3%A9dia:Accueil_principal",
-      "snippet": "Images de qualité sur Wikimédia Commons"
-    }
-  ]
+  "sources": []
 }

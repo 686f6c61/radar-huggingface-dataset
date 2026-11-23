@@ -58,25 +58,25 @@
       "task": "Token Classification (Sequence Labelling)",
       "dataset": "Vietnamese Exam Sequence Labelling Dataset v3",
       "metric": "Validation Macro F1",
-      "value": 86.55
+      "value": 82.93
     },
     {
       "task": "Token Classification (Sequence Labelling)",
       "dataset": "Vietnamese Exam Sequence Labelling Dataset v3",
       "metric": "Validation Precision",
-      "value": 85.84
+      "value": 79.36
     },
     {
       "task": "Token Classification (Sequence Labelling)",
       "dataset": "Vietnamese Exam Sequence Labelling Dataset v3",
       "metric": "Validation Recall",
-      "value": 87.27
+      "value": 86.83
     },
     {
       "task": "Token Classification (Sequence Labelling)",
       "dataset": "Vietnamese Exam Sequence Labelling Dataset v3",
       "metric": "Validation Micro F1",
-      "value": 86.55
+      "value": 82.93
     }
   ],
   "sources": []

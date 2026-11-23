@@ -51,16 +51,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "mradermacher (team mradermacher) - Hugging Face",
-      "url": "https://huggingface.co/mradermacher/models",
-      "snippet": "Feel free to suggest models to quant e.g. at https://huggingface.co/mradermacher/model_requests"
-    },
-    {
-      "title": "Mradermacher - Find Top AI Models on Hugging Face",
-      "url": "https://www.aimodels.fyi/creators/huggingFace/mradermacher",
-      "snippet": "Looking for Mradermacher's top AI models? Browse their full Hugging Face collection of 34 models. Explore AI models and contributions by Mradermacher on Huggingface."
-    }
-  ]
+  "sources": []
 }

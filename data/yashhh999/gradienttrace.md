@@ -2,95 +2,105 @@
 
 ## Resumen
 
-gradientTrace es un clasificador binario de texto generado por IA construido sobre el backbone `microsoft/deberta-v3-large`. Lo publica el usuario Yashhh999 en Hugging Face y su proposito es estimar la probabilidad de que un fragmento de texto haya sido producido por un modelo de lenguaje. La arquitectura subyacente es un transformer encoder DeBERTa-v3-large con 434.013.185 parametros totales, reutilizado como cabecera de clasificacion de secuencias.
+gradientTrace es un clasificador binario de texto generado por IA construido sobre el backbone `microsoft/deberta-v3-large`. Lo publica el usuario Yashhh999 en Hugging Face y su tarea es estimar la probabilidad de que un pasaje de hasta 512 tokens haya sido producido por un modelo de lenguaje. El modelo se entrena con pares prompt-texto humano y prompt-texto de modelo, con aumento de datos sobre texto "humanizado" y particiones disjuntas por generador, de modo que la evaluacion fuera de dominio no comparte generadores con el conjunto de entrenamiento.
 
-El modelo se entrena sobre pares prompt-texto emparejados (texto humano y texto de modelo para el mismo prompt), con aumento de datos mediante "humanizacion" de texto y particiones disjuntas por generador, de modo que el conjunto de evaluacion out-of-distribution no comparte generadores con el de entrenamiento. La model card reporta metricas muy altas en sus propias particiones held-out, con AUROC cercano a 1.0 y TPR a 1 % de FPR en torno a 0.999-1.000.
+La relevancia practica esta en el contexto de deteccion de contenido sintetico: con 434 millones de parametros, hereda la arquitectura DeBERTa-v3-large (transformer con attention disentangled y embeddings de posicion relativos) y se distribuye en formato safetensors compatible con `transformers` y con Text Embeddings Inference. El autor reporta metricas casi perfectas en sus propias particiones de validacion y test, incluida una particion fuera de dominio por generador.
 
-Es relevante porque aborda uno de los problemas practicos mas dificiles de la deteccion de texto IA: la generalizacion a generadores no vistos y el texto parafraseado o humanizado. Aun asi, el propio autor advierte que las puntuaciones son evidencia, no prueba, y que el texto maquina humanizado es el modo de fallo conocido. El modelo esta pensado para pasajes de hasta 512 tokens.
+Conviene leer esas cifras con cautela: proceden de la model card del autor, no de una evaluacion independiente, y el propio autor advierte que el texto parafraseado o humanizado es el modo de fallo conocido. La licencia y los idiomas soportados no estan declarados en la informacion disponible.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer encoder (DeBERTa-v3-large) con cabecera de clasificacion binaria |
+| Arquitectura | Transformer encoder DeBERTa-v3-large (attention disentangled, embeddings de posicion relativos) |
 | Parametros totales | 434.013.185 |
 | Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | 512 tokens |
-| Tipos de cuantizacion | no disponible |
+| Longitud de contexto | 512 tokens (pasajes de hasta 512 tokens segun la model card) |
+| Tipos de cuantizacion | no disponible (pesos en safetensors; no se documentan variantes GGUF/AWQ/GPTQ) |
 | Idiomas soportados | no disponible |
 | Licencia | no disponible |
-| Formato de pesos | safetensors (libreria transformers) |
+| Formato de pesos | safetensors |
+| Pipeline | text-classification |
+| Modelo base | microsoft/deberta-v3-large (finetune) |
+| Tamano del repositorio | 96.7 GB |
+| Descargas | 560 |
+| Fecha de creacion | 2026-10-29 |
+| Ultima actualizacion | 2026-11-03 |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de `microsoft/deberta-v3-large`, un transformer encoder con atencion desacoplada y embeddings de posicion relativos, y anade una cabeza de clasificacion para una tarea binaria: texto humano frente a texto generado por maquina. Con 434 millones de parametros, se situa en el rango de los encoders grandes orientados a clasificacion y no genera texto: solo produce una puntuacion de probabilidad.
+El modelo es un finetune de `microsoft/deberta-v3-large`, un encoder transformer de 434 millones de parametros con attention disentangled y representaciones de posicion relativas, adaptado aqui como cabeza de clasificacion binaria. La salida es una puntuacion de probabilidad de texto generado por maquina para secuencias de hasta 512 tokens. El repositorio incluye `config.json`, `eval_report.json` y `data_manifest.json`, que documentan configuracion y composicion de datos.
 
-El entrenamiento se realizo en una Tesla T4 con precision fp16 y batch efectivo de 64. Los datos consisten en pares prompt-texto donde para cada prompt existe una respuesta humana y una respuesta de modelo, complementados con aumento de texto humanizado. Las particiones de evaluacion son disjuntas por generador (`test_ood_generators`), lo que permite medir la generalizacion a modelos no vistos durante el entrenamiento. La configuracion completa se documenta en `config.json` y en el repositorio gradientTrace. No se detalla en la informacion disponible el numero total de tokens de entrenamiento ni la composicion exacta del dataset, aunque se referencia un `data_manifest.json`.
+El entrenamiento se realizo en una Tesla T4 con precision fp16 y batch efectivo de 64. Los datos son pares prompt-texto humano y prompt-texto de modelo, con aumento de datos sobre texto humanizado y particiones disjuntas por generador (`generator-disjoint splits`), lo que permite medir generalizacion a generadores no vistos. No se documentan en la informacion disponible el numero total de tokens de entrenamiento, la composicion exacta del dataset ni si se aplicaron tecnicas de RLHF o DPO (poco habituales en un clasificador de este tipo).
 
 ## Capacidades
 
 - Clasificacion binaria de texto: estima P(texto generado por maquina) para pasajes de hasta 512 tokens.
-- Deteccion de texto IA con backbone DeBERTa-v3-large afinado.
-- Evaluacion out-of-distribution sobre generadores no vistos durante el entrenamiento.
-- Robustez parcial frente a texto humanizado gracias al aumento de datos con humanizacion.
-- Integracion con la libreria transformers y con text-embeddings-inference segun los tags del repositorio.
-- Compatibilidad declarada con endpoints (`endpoints_compatible`).
-- No soporta generacion de texto, tool calling, agentes, vision ni audio: es exclusivamente un clasificador.
+- Deteccion de texto sintetico con backbone DeBERTa-v3-large afinado sobre pares prompt-respuesta.
+- Robustez declarada frente a generadores no vistos en entrenamiento, gracias a las particiones disjuntas por generador.
+- Aumento con texto humanizado durante el entrenamiento, orientado a detectar reescrituras de salidas de modelo.
+- Integracion con el ecosistema `transformers` (pipeline `text-classification`) y con Text Embeddings Inference.
+- Compatibilidad con endpoints (`endpoints_compatible` segun los tags del repositorio).
+- No se documentan capacidades de generacion, tool calling, agentes, vision, audio ni modo de razonamiento: es exclusivamente un clasificador.
 
 ## Casos de uso
 
-- Moderacion de contenido en plataformas: puntuar publicaciones o comentarios para priorizar revision humana cuando la probabilidad de texto IA sea alta, usando el score como senal adicional y nunca como decision automatica.
-- Filtrado de datos para entrenamiento: descartar o marcar muestras sinteticas en pipelines de curacion de datasets, ya que el modelo opera sobre pasajes de hasta 512 tokens y permite clasificar a escala.
-- Analisis de resenas y opiniones: detectar resenas generadas masivamente en marketplaces o plataformas de opiniones, combinando la puntuacion con heuristicas de comportamiento de la cuenta.
-- Investigacion sobre deteccion de texto IA: usar el modelo como baseline con particiones disjuntas por generador para comparar con otros detectores en condiciones OOD.
-- Verificacion editorial asistida: senalar articulos o envios sospechosos para que un editor humano revise, dado que el autor advierte explicitamente contra el uso como unica base en integridad academica.
-- Pipeline de anonimizacion y calidad documental: clasificar lotes de documentos en la fase de ingesta para separar contenido presumiblemente humano de contenido sintetico antes de procesos posteriores.
-- Evaluacion de robustez de generadores: medir la tasa de deteccion de un generador concreto frente a este detector como parte de la validacion de un sistema de generacion.
+- Moderacion de contenido en plataformas: puntuar publicaciones o comentarios antes de revision humana, usando la salida como senal de priorizacion y no como decision automatica.
+- Triaje en entornos educativos: marcar entregas con alta probabilidad de generacion automatica para que un revisor humano las examine, dado que el autor desaconseja usarlo como unica base para decisiones de integridad academica.
+- Filtrado de datos para entrenamiento: descartar o marcar muestras sospechosas de ser sinteticas en pipelines de curación de corpus, con umbral ajustable sobre la puntuacion.
+- Deteccion de resenas falsas o generadas en masa: clasificar resenas de producto o comentarios de foros en lotes, aprovechando la ventana de 512 tokens para resenas completas.
+- Analisis de procedencia en periodismo y verificacion: aportar una senal adicional de evidencia sobre la autoria de un texto, siempre acompanada de otras comprobaciones.
+- Monitorizacion de contenido generado en soporte al cliente: detectar respuestas de bot no declaradas en canales donde se exige identificacion humana.
+- Investigacion sobre deteccion de texto sintetico: servir como linea base afinada sobre DeBERTa-v3-large para comparar con otros detectores y estudiar el fallo ante texto humanizado.
 
 ## Benchmarks y rendimiento
 
-| Particion | n | AUROC | TPR @ 1 % FPR |
-|---|---|---|---|
-| val | 15216 | 1.0000 | 0.999 |
-| test_indomain | 15181 | 0.9999 | 1.000 |
-| test_ood_generators | 16000 | 1.0000 | 1.000 |
+Resultados reportados por el autor en la model card (evaluacion retenida):
 
-No se han publicado en la informacion disponible comparaciones con otros detectores ni resultados en benchmarks estandar de clasificacion (MMLU, HumanEval, GSM8K no aplican a esta tarea).
+| Particion | n | AUROC | TPR @ 1% FPR |
+|---|---|---|---|
+| val | 15.216 | 1.0000 | 0.999 |
+| test_indomain | 15.181 | 0.9999 | 1.000 |
+| test_ood_generators | 16.000 | 1.0000 | 1.000 |
+
+No se han publicado resultados de benchmarks en la informacion disponible mas alla de esta tabla. Las cifras proceden del autor y no de una evaluacion independiente; un AUROC de 1.0000 debe interpretarse con escepticismo hasta que terceros reproduzcan la evaluacion.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia en fp16: aproximadamente 0,9 GB solo para pesos (434 M de parametros), mas overhead de activaciones y del tokenizador; en la practica, alrededor de 1,5-2,5 GB por instancia segun longitud de secuencia y batch.
-- GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM; A100, H100, L4 o RTX 4090 ofrecen margen amplio y buen throughput en batching.
-- Cabe en GPU de consumo: si, en RTX 3060, RTX 4060, RTX 4090 y similares; tambien es viable en CPU para volumenes moderados.
-- Opciones de despliegue: transformers con `AutoModelForSequenceClassification`, text-embeddings-inference segun los tags, y servidores de inferencia compatibles con endpoints; no se documentan pesos GGUF para llama.cpp u Ollama.
-- Latencia y throughput: no disponibles en la informacion proporcionada; el entrenamiento se realizo en Tesla T4 con fp16, lo que sugiere que la inferencia en fp16 es el modo previsto.
+- VRAM estimada para inferencia en fp16: en torno a 1 GB para los 434 millones de parametros, mas overhead de activaciones y tokenizer; en la practica, holgado en cualquier GPU con 4 GB o mas.
+- VRAM estimada en fp32: aproximadamente 1,7 GB de pesos, tambien asequible en GPU de consumo.
+- GPU recomendadas: cualquier GPU consumer reciente (RTX 3060, RTX 4090) sirve para inferencia; para alto throughput, A100 o H100 con batching grande. El autor entreno en una Tesla T4 en fp16.
+- Cabe en GPU consumer: si, con margen amplio, incluso en GPUs de gama baja.
+- Opciones de despliegue: pipeline `text-classification` de `transformers`, Text Embeddings Inference (tag del repositorio), servidores de inferencia compatibles con endpoints. No se documentan pesos GGUF para llama.cpp u Ollama.
+- Latencia y throughput: no disponibles en la informacion proporcionada. El tamano del encoder y la ventana de 512 tokens permiten batching agresivo, pero no hay cifras publicadas.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| gradientTrace | 434 M | 512 tokens | Deteccion binaria de texto IA | no disponible | Hugging Face (263 descargas) |
-| microsoft/deberta-v3-large | 435 M aprox. | 512 tokens | Encoder base, multiple tareas NLU | MIT | Hugging Face |
-| Detectores de texto IA comerciales | no disponible | variable | Deteccion de texto IA | propietaria | APIs de pago |
+| gradientTrace | 434 M | 512 tokens | Deteccion binaria de texto IA | no disponible | Hugging Face, safetensors |
+| microsoft/deberta-v3-large | 434 M | 512 tokens | Encoder general (base del anterior) | MIT (modelo original) | Hugging Face |
+| Detectores tipo RoBERTa-base afinados | ~125 M | 512 tokens | Deteccion de texto IA | variable segun autor | Hugging Face |
 
-No se dispone en la informacion proporcionada de resultados comparativos con otros detectores open source de texto IA; la comparativa con alternativas de la misma tarea queda como no disponible.
+La comparacion cuantitativa de rendimiento con alternativas no esta disponible: no hay benchmarks publicados de terceros para gradientTrace ni cifras comparables en la informacion proporcionada. Frente a su modelo base, la diferencia es la cabeza de clasificacion y el dataset de deteccion; frente a detectores mas pequenos basados en RoBERTa, el backbone large ofrece mayor capacidad a costa de mas computo.
 
 ## Limitaciones y advertencias
 
-- Las puntuaciones son evidencia, no prueba: se producen falsos positivos en escritura humana atipica.
-- El modo de fallo conocido es el texto maquina parafraseado o humanizado, que puede evadir la deteccion.
-- El autor desaconseja explicitamente su uso como unica base para decisiones de integridad academica o moderacion.
-- Licencia no disponible: no se puede confirmar el uso comercial sin consultar al autor.
-- Idiomas soportados no disponibles: no hay garantia de rendimiento fuera del idioma o idiomas de entrenamiento.
-- Limitado a pasajes de hasta 512 tokens; textos mas largos requieren troceado y agregacion de scores.
-- Las metricas reportadas proceden de particiones propias del autor; no hay validacion independiente publicada.
-- Riesgo de alucinacion no aplica en sentido generativo, pero si de calibracion: scores extremos no equivalen a certeza.
-- El repositorio ocupa 96,6 GB, muy por encima del tamano de los pesos, lo que puede indicar artefactos de entrenamiento o datos adicionales; conviene revisar antes de descargar.
+- Las metricas casi perfectas son autocertificadas por el autor; no consta replicacion independiente.
+- El propio autor senala que el texto parafraseado o humanizado es el modo de fallo conocido: un atacante puede evadir el detector reescribiendo la salida.
+- Se producen falsos positivos en escritura humana atipica; la puntuacion es evidencia, no prueba.
+- El autor desaconseja explicitamente usar el modelo como unica base para decisiones de integridad academica o moderacion.
+- Ventana limitada a 512 tokens: textos mas largos deben trocearse, con posible perdida de senal entre fragmentos.
+- Licencia no declarada: no se puede confirmar si el uso comercial esta permitido; conviene contactar con el autor antes de integrarlo en produccion.
+- Idiomas soportados no declarados; el comportamiento fuera del idioma o idiomas de entrenamiento es incierto.
+- No hay variantes cuantizadas publicadas ni pesos GGUF, lo que limita el despliegue en CPU o en entornos sin `transformers`.
+- El repositorio ocupa 96,7 GB pese a que los pesos suman 434 millones de parametros, lo que sugiere artefactos adicionales (checkpoints, datos o reportes); conviene revisar el contenido antes de descargarlo completo.
+- Sesgos conocidos: no documentados en la informacion disponible.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/Yashhh999/gradientTrace
 - Modelo base: https://huggingface.co/microsoft/deberta-v3-large
-- Repositorio gradientTrace: no disponible como URL en la informacion proporcionada (se referencia en la model card)
-- Informe de evaluacion `eval_report.json`: incluido en el repositorio del modelo
-- Manifiesto de datos `data_manifest.json`: incluido en el repositorio del modelo
+- Repositorio gradientTrace: no disponible (la model card lo menciona sin enlace)
+- Informe de evaluacion (`eval_report.json`) y manifiesto de datos (`data_manifest.json`): incluidos en el repositorio de Hugging Face
+- Paper, blog o demo: no disponibles en la informacion proporcionada

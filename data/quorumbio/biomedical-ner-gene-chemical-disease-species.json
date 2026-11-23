@@ -1,0 +1,146 @@
+{
+  "schema": 2,
+  "id": "quorumbio/biomedical-ner-gene-chemical-disease-species",
+  "slug": "quorumbio-biomedical-ner-gene-chemical-disease-species",
+  "author": "quorumbio",
+  "url": "https://huggingface.co/quorumbio/biomedical-ner-gene-chemical-disease-species",
+  "created_at": "2026-11-23T04:05:59.000Z",
+  "updated_at": "2026-11-23T04:08:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "onnx",
+    "safetensors",
+    "bert",
+    "token-classification",
+    "biomedical",
+    "biomedical-ner",
+    "ner",
+    "gene",
+    "protein",
+    "chemical",
+    "disease",
+    "species",
+    "variant",
+    "cell-line",
+    "bc5cdr",
+    "ncbi-disease",
+    "nlm-gene",
+    "biored",
+    "pubmed",
+    "transformers.js",
+    "en",
+    "dataset:bigbio/bc5cdr",
+    "dataset:ncbi/ncbi_disease",
+    "dataset:bigbio/nlm_gene",
+    "dataset:bigbio/biored",
+    "base_model:microsoft/BiomedNLP-BiomedBERT-base-uncased-abstract-fulltext",
+    "base_model:quantized:microsoft/BiomedNLP-BiomedBERT-base-uncased-abstract-fulltext",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 108901645,
+  "parameters_human": "108.9M",
+  "storage_bytes": 981199823,
+  "storage_human": "981 MB",
+  "context_length": null,
+  "base_model": "microsoft/BiomedNLP-BiomedBERT-base-uncased-abstract-fulltext",
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "Named entity recognition",
+      "dataset": "BC5CDR (Chemical, Disease)",
+      "metric": "Entity F1 (seqeval, own word tokenization, only this corpus's types scored; not comparable to published numbers)",
+      "value": 0.888
+    },
+    {
+      "task": "Named entity recognition",
+      "dataset": "BC5CDR (Chemical, Disease)",
+      "metric": "Entity precision",
+      "value": 0.872
+    },
+    {
+      "task": "Named entity recognition",
+      "dataset": "BC5CDR (Chemical, Disease)",
+      "metric": "Entity recall",
+      "value": 0.905
+    },
+    {
+      "task": "Named entity recognition",
+      "dataset": "NCBI-disease (Disease)",
+      "metric": "Entity F1 (seqeval, own word tokenization, only this corpus's types scored; not comparable to published numbers)",
+      "value": 0.865
+    },
+    {
+      "task": "Named entity recognition",
+      "dataset": "NCBI-disease (Disease)",
+      "metric": "Entity precision",
+      "value": 0.846
+    },
+    {
+      "task": "Named entity recognition",
+      "dataset": "NCBI-disease (Disease)",
+      "metric": "Entity recall",
+      "value": 0.884
+    },
+    {
+      "task": "Named entity recognition",
+      "dataset": "NLM-Gene (Gene)",
+      "metric": "Entity F1 (seqeval, own word tokenization, only this corpus's types scored; not comparable to published numbers)",
+      "value": 0.933
+    },
+    {
+      "task": "Named entity recognition",
+      "dataset": "NLM-Gene (Gene)",
+      "metric": "Entity precision",
+      "value": 0.93
+    },
+    {
+      "task": "Named entity recognition",
+      "dataset": "NLM-Gene (Gene)",
+      "metric": "Entity recall",
+      "value": 0.935
+    },
+    {
+      "task": "Named entity recognition",
+      "dataset": "BioRED (Chemical, Disease, Gene, Species, Variant, CellLine)",
+      "metric": "Entity F1 (seqeval, own word tokenization, only this corpus's types scored; not comparable to published numbers)",
+      "value": 0.898
+    },
+    {
+      "task": "Named entity recognition",
+      "dataset": "BioRED (Chemical, Disease, Gene, Species, Variant, CellLine)",
+      "metric": "Entity precision",
+      "value": 0.892
+    },
+    {
+      "task": "Named entity recognition",
+      "dataset": "BioRED (Chemical, Disease, Gene, Species, Variant, CellLine)",
+      "metric": "Entity recall",
+      "value": 0.905
+    }
+  ],
+  "sources": []
+}

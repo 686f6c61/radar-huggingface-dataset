@@ -2,72 +2,92 @@
 
 ## Resumen
 
-Ornith1.5-9B-3MPER0RR-obliterated es una variante modificada del modelo Ornith-1.5-9B, publicada por el usuario 3MPER0RR en Hugging Face. El modelo original, desarrollado por ornith-ai, forma parte de la familia Ornith-1.5, que introduce un marco de auto-mejora (self-scaffolding) en el que el propio modelo genera tareas de entrenamiento, diseña andamiajes (scaffolds) y produce soluciones para aprendizaje por refuerzo. Esta versión concreta, etiquetada como "obliterated", sugiere una modificación no oficial orientada a eliminar restricciones de contenido o alineación, aunque no se aporta documentación técnica al respecto.
+Ornith1.5-9B-3MPER0RR-obliterated es un ajuste fino (fine-tune) del modelo base ornith-ai/Ornith-1.5-9B, publicado por el usuario 3MPER0RR en Hugging Face. Se trata de una variante "abliterated" (el autor usa el término "obliterated"), una practica habitual en la comunidad open source que consiste en modificar los pesos del modelo para eliminar o atenuar los mecanismos de rechazo aprendidos durante el alineamiento, de modo que el modelo responda a peticiones que el modelo original declinaria.
 
-El modelo tiene 9.409.813.744 parámetros (aproximadamente 9,4 mil millones), un tamaño que lo sitúa en la gama de modelos densos medianos. El tag `qwen3_5` en los metadatos indica que la arquitectura probablemente deriva de la familia Qwen 3.5, aunque no hay confirmación oficial. La licencia es MIT, lo que permite uso comercial y modificación sin restricciones significativas. El repositorio ocupa 18,8 GB, consistente con pesos en formato safetensors en precisión FP16. No se dispone de información sobre la longitud de contexto, idiomas soportados ni cuantizaciones disponibles.
+El modelo conserva la arquitectura del original (etiquetada como qwen3_5 en los metadatos de Hugging Face) y sus 9.409.813.744 parametros reales en safetensors, con un repositorio de 18,8 GB en precision completa. La model card es extremadamente escueta: no documenta el proceso de entrenamiento, los datos utilizados, la composicion del dataset ni los hiperparametros, limitandose a indicar el modelo base, la licencia MIT y una referencia a un aviso de investigacion.
+
+Su relevancia es limitada y de nicho: interesa a quienes investigan el comportamiento de modelos sin alineamiento, la robustez de los filtros de seguridad y los efectos secundarios de las tecnicas de abliteration sobre capacidades generales. No es un modelo recomendado para produccion sin una evaluacion exhaustiva previa.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Basada en Qwen 3.5 (según tag, sin confirmación oficial) |
-| Parametros totales | 9.409.813.744 (9,4B) |
-| Parametros activos | no disponible (modelo denso, no MoE) |
+| Arquitectura | Transformer (etiqueta de Hugging Face: qwen3_5); detalles no disponibles |
+| Parametros totales | 9.409.813.744 |
+| Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible (repo solo contiene safetensors) |
+| Tipos de cuantizacion | no disponible (el repo contiene safetensors; no se publican GGUF ni cuantizaciones oficiales) |
 | Idiomas soportados | no disponible |
 | Licencia | MIT |
 | Formato de pesos | safetensors |
+| Tamano del repositorio | 18,8 GB |
+| Modelo base | ornith-ai/Ornith-1.5-9B |
+| Pipeline | text-generation |
+| Descargas | 556 |
+| Likes | 0 |
 
 ## Arquitectura y entrenamiento
 
-La información disponible no detalla la arquitectura interna de esta variante. El tag `qwen3_5` sugiere que el modelo base es un transformer denso similar a los de la serie Qwen 3.5, probablemente con atención de múltiples cabezas y capas de normalización estándar. El modelo original Ornith-1.5, según el blog de ornith.ai, emplea un marco de auto-mejora: el modelo propone nuevas tareas, genera andamiajes específicos para cada tarea y produce rollouts de soluciones que se utilizan para aprendizaje por refuerzo. Este proceso crea un bucle continuo de auto-entrenamiento. Sin embargo, la variante "obliterated" no incluye documentación sobre su proceso de entrenamiento, datos utilizados o si se aplicaron técnicas como RLHF o DPO. Se desconoce si la modificación afectó a los pesos originales o solo a la capa de salida.
+No se dispone de informacion detallada sobre la arquitectura interna. Los metadatos de Hugging Face etiquetan el modelo como qwen3_5, lo que sugiere que el modelo base ornith-ai/Ornith-1.5-9B deriva de la familia Qwen 3.5, pero no se confirma en la model card ni se detalla el tipo de atencion, la configuracion de capas ni el tokenizador. El numero de parametros (9,41 mil millones) es coherente con un transformer denso de esa escala.
+
+Tampoco se documenta el proceso de ajuste: no hay informacion sobre el numero de tokens de entrenamiento, la composicion del dataset, el uso de RLHF, DPO u otras tecnicas de alineamiento, ni sobre el metodo concreto de abliteration aplicado. La model card menciona "Trials: [40]" y "Status: Tested and saved", lo que apunta a un proceso iterativo de experimentacion por parte del autor, pero sin detalle tecnico. No se puede verificar que el ajuste haya preservado las capacidades del modelo base.
 
 ## Capacidades
 
-No se han documentado capacidades específicas para esta variante. Dado que se basa en un modelo de 9,4B parámetros de la familia Qwen, es razonable esperar que herede capacidades generales de generación de texto, razonamiento, comprensión de código y matemáticas, así como posible soporte multilingüe. Sin embargo, al ser una modificación "obliterated", no hay garantías de que estas capacidades se mantengan intactas. No se dispone de información sobre tool calling, agentes, visión o audio. El modelo no presenta pipeline definido en Hugging Face, lo que indica que no se ha configurado para tareas específicas como generación de texto o chat.
+- Generacion de texto conversacional, segun el pipeline declarado (text-generation, conversational).
+- Al ser un derivado de un modelo de 9B de la familia Qwen 3.5, es probable que herede capacidades de razonamiento, codigo y matematicas, pero no hay documentacion que lo confirme.
+- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible.
+- Capacidades multilingues: no disponibles (el campo de idiomas no esta cumplimentado).
+- Capacidades especiales (modo thinking, vision, audio): no disponibles.
+- Comportamiento esperado: respuestas con menor tasa de rechazo que el modelo base, por el proceso de abliteration.
 
 ## Casos de uso
 
-No existen casos de uso documentados para esta variante concreta. Dado su tamaño y licencia MIT, podría emplearse en escenarios genéricos de generación de texto, pero la falta de documentación y de validación de rendimiento hace recomendable evaluarlo antes de cualquier uso en producción. Posibles aplicaciones teóricas incluyen:
-
-- Prototipado rápido de aplicaciones de lenguaje natural: al ser un modelo de 9,4B con licencia permisiva, puede servir para experimentar con generación de texto, resúmenes o clasificación sin coste de licencia.
-- Investigación en alineación y seguridad: al ser una versión "obliterated", puede utilizarse para estudiar el impacto de eliminar restricciones de contenido en modelos de tamaño medio.
-- Fine-tuning para dominios específicos: su tamaño moderado permite ajustarlo con recursos limitados, por ejemplo para tareas de análisis de sentimiento o extracción de información.
-- Generación de código asistida: si hereda las capacidades de Qwen, podría emplearse para autocompletar código o generar scripts, aunque no hay evidencia de ello.
-- Chatbots experimentales: en entornos de investigación donde no se requiera moderación de contenido, podría servir como base para asistentes conversacionales.
-- Evaluación comparativa de modelos "obliterated": útil para medir diferencias de comportamiento frente a la versión original, un tema de interés en la comunidad de IA abierta.
+- Investigacion sobre alineamiento y seguridad: el modelo sirve como objeto de estudio para medir cuanto rechazo elimina la abliteration y que capacidades se degradan en el proceso, comparandolo con el modelo base en un conjunto fijo de prompts.
+- Red teaming y evaluacion de filtros: util para probar la robustez de clasificadores de contenido y guardrails desplegados en una plataforma, ya que genera respuestas que un modelo alineado bloquearia.
+- Generacion creativa sin restricciones: escritura de ficcion con tematicas sensibles (violencia, terror, drama adulto) donde los modelos alineados suelen suavizar el tono; requiere revision humana del contenido.
+- Analisis de sesgos y comportamiento: estudio de como cambia la distribucion de respuestas al eliminar capas de rechazo, con fines academicos.
+- Prototipado interno de asistentes conversacionales: para equipos que necesitan un modelo de 9B autoalojado con licencia permisiva y control total del contenido, en entornos cerrados.
+- Base para nuevos fine-tunes: al estar en safetensors y con licencia MIT, puede servir como punto de partida para ajustes especificos de dominio, siempre que se valide primero que las capacidades del modelo base se conservan.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El modelo original Ornith-1.5-35B-A3B (versión MoE de 35B con 3B activos) reporta mejoras frente a Qwen 3.6-35B y Gemma 4-31B, pero estos datos no son aplicables a la variante de 9B ni a la modificación "obliterated". No se dispone de puntuaciones en MMLU, HumanEval, GSM8K ni otros conjuntos de referencia para este modelo concreto.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: con 9,4B parámetros en FP16, el modelo requiere aproximadamente 18,8 GB de VRAM solo para los pesos. Con cuantización de 8 bits (si estuviera disponible) bajaría a ~9,4 GB, y con 4 bits a ~4,7 GB, pero no se ofrecen archivos cuantizados en el repositorio.
-- GPU recomendadas: para FP16 se necesita una GPU con al menos 24 GB de VRAM, como RTX 3090, RTX 4090 o A10G. Con cuantización de 4 bits (si se generara) cabría en GPUs de 8 GB como RTX 3060 o RTX 4060.
-- Si cabe en consumer GPU: sí, en GPUs de gama alta (24 GB) sin cuantizar; en GPUs de 12-16 GB solo con cuantización, que no está disponible actualmente.
-- Opciones de despliegue: al no haber archivos GGUF ni configuración para vLLM u Ollama, el despliegue requeriría convertir los pesos a un formato compatible. Se podría usar Transformers de Hugging Face con carga en FP16, o convertir a GGUF con llama.cpp.
-- Latencia y throughput: no disponible. Dependerá del hardware y del backend elegido.
+- VRAM estimada en FP16/BF16: aproximadamente 18,8 GB de pesos, mas overhead de activaciones y cache KV; en la practica se necesitan 20-24 GB o mas segun la longitud de contexto.
+- Cuantizacion a 8 bits: alrededor de 10-11 GB de VRAM, viable en una RTX 4090 (24 GB) con contexto moderado.
+- Cuantizacion a 4 bits: alrededor de 5-6 GB de VRAM, viable en GPUs consumer de 8-12 GB (RTX 3060, 4060 Ti, 4070) con contexto reducido.
+- GPU recomendadas para precision completa: A100 40/80 GB, H100, L40S; tambien funciona en una RTX 4090 con cuantizacion.
+- Opciones de despliegue: vLLM y TGI para safetensors en precision completa o FP8; llama.cpp y Ollama requieren conversion previa a GGUF, que no esta publicada en el repositorio.
+- Latencia y throughput: no disponibles. A modo orientativo, un modelo denso de 9B en una A100 suele ofrecer decenas de tokens por segundo por peticion en decodificacion, pero no hay mediciones publicadas para este modelo concreto.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos de rendimiento para comparar este modelo con alternativas de la misma categoría. Modelos comparables en tamaño serían Llama 3.1 8B, Qwen 2.5 7B o Mistral 7B, pero no hay información sobre cómo se comporta Ornith1.5-9B frente a ellos. La única referencia indirecta es que el Ornith-1.5-35B-A3B supera a Qwen 3.6-35B, pero eso no se puede extrapolar al 9B. Por tanto, la comparativa queda pendiente de evaluación empírica.
+| Modelo | Parametros | Contexto | Licencia | Notas |
+|---|---|---|---|---|
+| Ornith1.5-9B-3MPER0RR-obliterated | 9,41B | no disponible | MIT | Abliterated; sin benchmarks ni documentacion de entrenamiento |
+| ornith-ai/Ornith-1.5-9B (base) | ~9B | no disponible | no disponible en la informacion | Modelo original alineado; referencia para medir el efecto del ajuste |
+| Qwen 3.5 de ~9B (familia de origen segun la etiqueta) | ~9B | no disponible | no disponible | Arquitectura de referencia, con alineamiento estandar |
+
+No se dispone de datos de rendimiento comparativos entre estos modelos en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- Sesgos conocidos: no documentados. Al ser una modificación "obliterated", es probable que se hayan eliminado mecanismos de alineación, lo que puede aumentar la generación de contenido sesgado, ofensivo o perjudicial.
-- Riesgo de alucinacion: alto, como en la mayoría de modelos de este tamaño, y sin garantías de fiabilidad factual.
-- Limitaciones de contexto o idioma: desconocidas. No se especifica la longitud de contexto ni los idiomas soportados.
-- Restricciones de licencia: la licencia MIT permite uso comercial y modificación, pero el autor original (ornith-ai) podría tener términos adicionales en su versión base. Se recomienda revisar la licencia del modelo original.
-- Caveat para produccion: este modelo no tiene documentación, no ha sido validado y no se conocen sus capacidades reales. No es recomendable usarlo en entornos de producción sin una evaluación exhaustiva previa.
-- Origen no oficial: la variante "obliterated" no está respaldada por ornith-ai, y su proceso de modificación es desconocido, lo que introduce riesgos de integridad de los pesos.
+- Ausencia total de documentacion: no hay datos de entrenamiento, evaluacion ni hiperparametros, lo que impide reproducir el ajuste o estimar su calidad.
+- El proceso de abliteration puede degradar capacidades: es frecuente que estos ajustes reduzcan el rendimiento en razonamiento, codigo y seguimiento de instrucciones complejas; no se ha publicado ninguna evaluacion que lo descarte.
+- Riesgo elevado de contenido danino: el modelo esta disenado para reducir los rechazos, por lo que puede generar contenido ofensivo, ilegal o peligroso sin advertencia. No debe exponerse a usuarios finales sin guardrails externos.
+- Alucinacion: sin benchmarks ni evaluacion, no se puede acotar la tasa de alucinacion; se espera similar o peor que el modelo base.
+- Idiomas y contexto no documentados: no se puede garantizar el soporte multilingue ni una ventana de contexto concreta.
+- Licencia MIT: permite uso comercial y modificacion, pero el autor no ofrece ninguna garantia ni asume responsabilidad sobre el comportamiento del modelo; conviene revisar la licencia del modelo base ornith-ai/Ornith-1.5-9B, que no se detalla en la informacion disponible.
+- Modelo de nicho: 556 descargas y 0 likes indican una adopcion muy baja y ninguna validacion por parte de la comunidad.
+- Fecha de creacion en los metadatos (2026-08-31) y actualizacion (2026-11-21): verificar la coherencia temporal antes de citarlo.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/3MPER0RR/Ornith1.5-9B-3MPER0RR-obliterated
-- Modelo original (ornith-ai): https://huggingface.co/ornith-ai/Ornith-1.5-9B
-- Variante OBLITERATUS: https://huggingface.co/OBLITERATUS/Ornith-1.5-9B-OBLITERATED
-- Blog de Ornith-1.5: https://ornith.ai/ornith_1_5.html
-- Página en Ollama: https://ollama.com/library/ornith-1.5
-- Imagen Docker (versión 35B): https://hub.docker.com/r/ai/ornith-1.5
+- Modelo base: https://huggingface.co/ornith-ai/Ornith-1.5-9B
+- Aviso de investigacion del autor: https://huggingface.co/3MPER0RR/Ornith1.5-9B-3MPER0RR-abliterated/blob/main/Disclaimer.md
+- Variante abliterated del mismo autor: https://huggingface.co/3MPER0RR/Ornith1.5-9B-3MPER0RR-abliterated

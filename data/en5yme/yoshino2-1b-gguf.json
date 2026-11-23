@@ -47,16 +47,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "en5yme (en5yme) - Hugging Face",
-      "url": "https://huggingface.co/en5yme",
-      "snippet": "Distillation, MoE, fine-tuning."
-    },
-    {
-      "title": "en5yme (en5yme) - Hugging Face",
-      "url": "https://huggingface.co/en5yme/models",
-      "snippet": "en5yme's models2 Sort: Recently updated en5yme/Yoshino-0.8B-GGUF 0.8B•Updated 3 days ago• 455 • 1"
-    }
-  ]
+  "sources": []
 }

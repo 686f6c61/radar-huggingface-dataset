@@ -2,49 +2,51 @@
 
 ## Resumen
 
-`mradermacher/tin-4b-GGUF` es una colección de cuantizaciones estáticas en formato GGUF del modelo base `cagataydev/tin-4b`, publicada por el usuario mradermacher, conocido en el ecosistema de inferencia local por distribuir versiones cuantizadas de modelos abiertos. El repositorio no contiene un modelo original, sino artefactos derivados listos para su uso con llama.cpp y herramientas compatibles (Ollama, LM Studio, etc.).
+tin-4b-GGUF es la distribucion en formato GGUF del modelo tin-4b, desarrollado originalmente por cagataydev y cuantizado por mradermacher. Se trata de un modelo de lenguaje de aproximadamente 4.200 millones de parametros (4.205.751.296 segun los pesos en safetensors del modelo base), disenado especificamente para despliegue on-device, uso como agente y tool calling. Segun las etiquetas de la model card, el modelo deriva de la familia Qwen 3.5 y ha sido afinado mediante SFT (supervised fine-tuning).
 
-A pesar de la denominación "4b" en el nombre, los pesos en safetensors del modelo base suman 333.514.240 parámetros (aproximadamente 333 millones, no 4 mil millones). Esta discrepancia es relevante: el nombre del repositorio no refleja el tamaño real del modelo, por lo que cualquier estimación de requisitos de hardware debe basarse en la cifra de parámetros reales y no en la etiqueta.
+La relevancia de esta publicacion radica en que ofrece el modelo en una amplia gama de cuantizaciones GGUF (desde Q2_K de 2,0 GB hasta f16 de 8,5 GB), lo que permite ejecutarlo en hardware de consumo con requisitos de VRAM moderados. Ademas, incluye ficheros mmproj (multi-modal supplement), lo que sugiere capacidades multimodales, aunque la informacion disponible no detalla la naturaleza exacta de dichas capacidades.
 
-La información pública disponible es muy limitada: no se especifican licencia, idiomas, pipeline ni detalles de entrenamiento. La model card del repositorio es prácticamente un volcado de metadatos de la herramienta de cuantización, sin documentación sustantiva sobre el modelo subyacente. El repositorio ocupa 1,0 GB e incluye múltiples niveles de cuantización.
+El repositorio acumula 807 descargas y esta publicado bajo licencia Apache 2.0, lo que facilita su uso comercial. La informacion publica disponible es limitada: no se detallan la longitud de contexto, los idiomas completos soportados ni resultados de benchmarks, por lo que varios apartados de esta ficha se marcan como no disponibles.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible |
-| Parametros totales | 333.514.240 (según safetensors del modelo base) |
-| Parametros activos | no disponible (no consta que sea MoE) |
+| Arquitectura | Transformer (derivado de Qwen 3.5, segun etiquetas de la model card) |
+| Parametros totales | 4.205.751.296 (aprox. 4,2 mil millones) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | F16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q4_K_M, Q4_K_S, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K, IQ4_XS |
-| Idiomas soportados | no disponible |
-| Licencia | no disponible |
-| Formato de pesos | GGUF (cuantizaciones estáticas); el modelo base en safetensors |
+| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, f16; ademas mmproj-Q8_0 y mmproj-f16 |
+| Idiomas soportados | en, tr (segun la model card) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (cuantizaciones) y safetensors (modelo base) |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información sobre la arquitectura del modelo base `cagataydev/tin-4b`. Los metadatos del repositorio de cuantización indican únicamente el tipo de conversión (`convert_type: hf`), la versión de la herramienta de cuantización (`quantize_version: 2`) y que los tensores de salida están cuantizados (`output_tensor_quantised: 1`). No hay datos sobre número de tokens de entrenamiento, composición del dataset, uso de RLHF/DPO ni innovaciones técnicas.
+La informacion disponible indica que tin-4b es un transformer derivado de la familia Qwen 3.5 y afinado mediante SFT (supervised fine-tuning). Las etiquetas de la model card mencionan "tin-lang" y "loopl", que probablemente hacen referencia a un lenguaje o formato especifico del modelo, pero no se proporciona documentacion tecnica que explique en que consisten. Tampoco se detalla el numero de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de RLHF o DPO.
 
-El único dato estructural verificable es el recuento de parámetros en safetensors del modelo base: 333.514.240. Con ese tamaño, es plausible que se trate de un transformer pequeño (del orden de cientos de millones de parámetros), pero la arquitectura exacta, el número de capas, la dimensión oculta y el mecanismo de atención no están documentados en la información disponible.
+El modelo base fue desarrollado por cagataydev y esta orientado explicitamente a despliegue on-device, uso como agente, tool calling y generacion de codigo. La presencia de ficheros mmproj en la distribucion GGUF sugiere que el modelo incorpora algun componente multimodal, aunque no se especifica si se trata de vision, audio u otra modalidad. No se dispone de informacion sobre innovaciones tecnicas adicionales como decodificacion especulativa o mecanismos de atencion lineal.
 
 ## Capacidades
 
-- Generación de texto: capacidad esperable de un modelo de lenguaje, aunque no verificada ni documentada.
-- Razonamiento, código y matemáticas: no disponible; no hay benchmarks ni ejemplos que lo confirmen.
-- Tool calling / function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingües: no disponible; no se declaran idiomas.
-- Capacidades especiales (modo thinking, visión, audio): no disponible.
-- Formato de despliegue: compatible con llama.cpp y derivados gracias al formato GGUF.
+- Generacion de texto conversacional (la model card lo marca como "conversational").
+- Tool calling / function calling, segun las etiquetas del modelo.
+- Uso como agente y razonamiento multi-paso (etiqueta "agent").
+- Generacion de codigo (etiqueta "code").
+- Capacidades multimodales parciales: la distribucion incluye ficheros mmproj, aunque no se detalla la modalidad concreta.
+- Soporte de idiomas ingles (en) y turco (tr) segun la model card.
+- Orientado a despliegue on-device (etiqueta "on-device").
+- No se dispone de informacion sobre modo thinking, soporte de audio ni capacidades matematicas especificas.
 
 ## Casos de uso
 
-- Inferencia local en hardware muy limitado: con ~333 M de parámetros, las cuantizaciones Q4_K_M o Q2_K permiten ejecutar el modelo en CPU o en GPUs de gama baja con poca VRAM, útil para pruebas de concepto y entornos sin acelerador.
-- Prototipado de pipelines con llama.cpp: sirve para validar integraciones de carga de GGUF, plantillas de prompt y flujos de generación antes de migrar a modelos mayores.
-- Clasificación o generación de texto corto en dispositivos edge: el tamaño reducido facilita el despliegue en dispositivos con memoria restringida, siempre que la calidad se valide empíricamente.
-- Experimentación académica con cuantización: el repositorio ofrece 12 variantes de cuantización del mismo modelo, lo que permite estudiar el impacto de la precisión en la calidad de salida.
-- Filtrado o etiquetado de texto a gran escala: si el modelo base rinde aceptablemente, su bajo coste computacional permite procesar volúmenes altos en CPU.
-- Base para fine-tuning ligero: al ser un modelo pequeño, es candidato para ajuste fino con recursos modestos, aunque la falta de licencia clara es un obstáculo para uso comercial.
+- Asistentes locales en dispositivos de consumo: con cuantizaciones Q4_K_M de 2,8 GB, el modelo puede ejecutarse en portatiles y equipos de sobremesa sin GPU dedicada de gran capacidad, ofreciendo un asistente conversacional privado sin conexion a la nube.
+- Agentes autonomos con tool calling: las etiquetas "agent" y "tool-calling" indican que el modelo puede invocar funciones externas y encadenar pasos, lo que permite construir automatizaciones que consulten APIs o ejecuten acciones sobre sistemas locales.
+- Generacion de codigo en entornos de desarrollo: su orientacion a codigo y su tamano compacto lo hacen adecuado para autocompletado o generacion de fragmentos dentro de IDE con recursos limitados.
+- Automatizacion de tareas de escritorio: al ejecutarse on-device, puede integrarse en scripts que procesen texto localmente sin enviar datos a servidores externos, util en entornos con requisitos de privacidad.
+- Prototipado rapido de pipelines de IA: la disponibilidad de multiples cuantizaciones GGUF permite probar el modelo en distintas configuraciones de hardware antes de decidir un despliegue definitivo.
+- Aplicaciones multilingues en ingles y turco: para productos dirigidos a esos mercados, el modelo cubre conversacion y tareas de agente en ambos idiomas.
+- Evaluacion de modelos multimodales ligeros: la presencia de ficheros mmproj permite experimentar con entrada multimodal en un modelo de 4B, adecuado para entornos de investigacion con recursos limitados.
 
 ## Benchmarks y rendimiento
 
@@ -52,34 +54,40 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia (según cuantización, para ~333 M de parámetros):
-  - F16: ~0,7 GB de pesos.
-  - Q8_0: ~0,4 GB.
-  - Q4_K_M: ~0,2-0,25 GB.
-  - Q2_K: ~0,15 GB.
-  - A esto hay que sumar el overhead del contexto y del runtime (típicamente varios cientos de MB adicionales).
-- GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM es suficiente; también funciona en CPU.
-- Cabe en GPU de consumo: sí, en prácticamente cualquier GPU moderna (GTX 1050 en adelante, RTX 3050/4060, etc.) e incluso en iGPU con memoria compartida.
-- Opciones de despliegue: llama.cpp, Ollama (importando el GGUF), LM Studio, servidores basados en llama.cpp. No se documenta soporte para vLLM o TGI.
-- Latencia y throughput: no disponible; dependerá del hardware y de la cuantización elegida.
+- VRAM estimada para inferencia (solo pesos, sin overhead de contexto): Q2_K ~2,0 GB; Q3_K_S ~2,2 GB; Q4_K_S ~2,7 GB; Q4_K_M ~2,8 GB; Q5_K_M ~3,2 GB; Q6_K ~3,6 GB; Q8_0 ~4,6 GB; f16 ~8,5 GB.
+- Ficheros mmproj adicionales: 0,5 GB (Q8_0) o 0,8 GB (f16) si se usa la componente multimodal.
+- GPU recomendadas: no disponible de forma explicita; por tamano, el modelo cabe en GPU de consumo con 6-8 GB de VRAM en cuantizaciones Q4-Q5, y en GPUs profesionales (A100, H100) con margen amplio.
+- Cabe en GPU de consumo: si, en tarjetas con al menos 4-6 GB de VRAM para cuantizaciones bajas y medias; la version f16 requiere ~8,5 GB solo para pesos.
+- Opciones de despliegue: llama.cpp y derivados (Ollama, LM Studio) por el formato GGUF; la libreria declarada es transformers, por lo que tambien puede usarse con el modelo base en safetensors.
+- Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
 
-No disponible. No se dispone de información sobre el modelo base ni de benchmarks que permitan compararlo con alternativas de tamaño similar (por ejemplo, modelos de ~300-500 M de parámetros). La falta de datos de arquitectura, licencia y rendimiento impide una comparación rigurosa.
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|
+| tin-4b (este modelo) | ~4,2B | no disponible | Apache 2.0 | GGUF, safetensors | Derivado de Qwen 3.5, orientado a agente y on-device |
+| Qwen 2.5 3B / 4B | ~3-4B | no disponible en esta ficha | Apache 2.0 (segun familia Qwen) | safetensors, GGUF | Alternativa de tamano similar de la familia Qwen |
+| Llama 3.2 3B | ~3B | no disponible en esta ficha | Llama 3.2 Community License | safetensors, GGUF | Modelo compacto de Meta para despliegue local |
+| Phi-3.5-mini | ~3,8B | no disponible en esta ficha | MIT | safetensors, GGUF | Modelo pequeno de Microsoft con enfoque en razonamiento |
+
+Nota: los datos de los modelos comparables no se han verificado en la informacion proporcionada y se incluyen solo como referencia de categoria; se recomienda consultar sus fichas oficiales.
 
 ## Limitaciones y advertencias
 
-- Discrepancia de nombre: el repositorio se llama "tin-4b" pero los pesos suman ~333 M de parámetros; no debe asumirse un modelo de 4 mil millones.
-- Licencia no especificada: no se puede confirmar el uso comercial; hay que consultar el repositorio original `cagataydev/tin-4b` antes de usarlo en producción.
-- Idiomas no declarados: se desconoce si el modelo está entrenado en castellano o en otros idiomas.
-- Sin documentación de entrenamiento ni benchmarks: no hay evidencia pública de calidad, alucinación o sesgos.
-- Riesgo de alucinación: esperable en modelos pequeños, aunque no cuantificado.
-- Contexto desconocido: no se puede planificar el uso con ventanas largas sin verificar la configuración del modelo base.
-- Repositorio con 0 descargas y 0 likes: no hay señal de validación por parte de la comunidad.
-- Las cuantizaciones de baja precisión (Q2_K, Q3_K_S) pueden degradar notablemente la calidad en modelos pequeños.
+- La informacion publica es escasa: no se documentan la longitud de contexto, el dataset de entrenamiento ni los resultados de evaluacion, lo que dificulta estimar su calidad real frente a alternativas.
+- Riesgo de alucinacion inherente a los modelos de 4B, especialmente en tareas de razonamiento complejo o conocimiento factual.
+- Sesgos potenciales no documentados; al no publicarse la composicion del dataset, no es posible evaluar sesgos de genero, etnicos o culturales.
+- Cobertura idiomatica limitada segun la model card: solo se declaran ingles y turco; el rendimiento en castellano no esta garantizado.
+- La componente multimodal (mmproj) no esta documentada en detalle; su funcionamiento y calidad son inciertos.
+- Aunque la licencia es Apache 2.0 (permite uso comercial), conviene verificar las condiciones del modelo base cagataydev/tin-4b y de la familia Qwen 3.5 de la que deriva.
+- El repositorio tiene 0 likes y 807 descargas en el momento de la consulta, lo que indica una adopcion limitada y poca validacion por parte de la comunidad.
+- Las etiquetas "tin-lang" y "loopl" no estan explicadas; si el modelo depende de un formato o lenguaje propio, puede requerir herramientas adicionales no documentadas.
 
 ## Enlaces
 
 - Repositorio GGUF: https://huggingface.co/mradermacher/tin-4b-GGUF
 - Modelo base: https://huggingface.co/cagataydev/tin-4b
-- Hilo de referencia sobre modelos locales (contexto, no específico del modelo): https://www.reddit.com/r/ollama/comments/1idqxto/why_are_all_local_ai_models_so_bad_no_one_talks/
+- Pagina de descargas del cuantizador: https://hf.tst.eu/model#tin-4b-GGUF
+- FAQ y solicitudes de cuantizacion de mradermacher: https://huggingface.co/mradermacher/model_requests
+- README de referencia para uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Analisis de tipos de cuantizacion (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9

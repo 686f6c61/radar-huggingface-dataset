@@ -2,99 +2,96 @@
 
 ## Resumen
 
-`INCModel4/granite-4.1-8b-W4A16-AutoRound` es una version cuantizada a 4 bits del modelo `ibm-granite/granite-4.1-8b` de IBM, generada con la herramienta AutoRound de Intel. La cuantizacion emplea el esquema W4A16 (pesos de 4 bits, activaciones en 16 bits) con tamano de grupo 128 y redondeo simetrico, aplicado sobre las proyecciones de atencion y MLP, mientras que los embeddings de tokens, la `lm_head` y las capas de normalizacion se mantienen en BF16. El objetivo es reducir la huella de memoria del modelo base sin degradar de forma significativa su calidad, algo relevante para el despliegue en infraestructura con VRAM limitada.
+INCModel4/granite-4.1-8b-W4A16-AutoRound es una version cuantizada del modelo IBM Granite 4.1 de 8 mil millones de parametros, publicada por el usuario INCModel4. La cuantizacion se ha realizado con la herramienta AutoRound de Intel, aplicando un esquema W4A16 (pesos de 4 bits, activaciones de 16 bits) con group_size 128 y simetria, tras 1000 iteraciones de ajuste. El objetivo es reducir el espacio en disco y los requisitos de memoria para inferencia manteniendo una recuperacion de rendimiento muy alta respecto al modelo original en BF16.
 
-La relevancia de esta ficha reside en que es una variante de cuantizacion, no un modelo nuevo: hereda la arquitectura, el tokenizador y las capacidades del granite-4.1-8b original, y su interes practico esta en el compromiso entre precision y eficiencia. Segun la model card, la recuperacion media de rendimiento respecto al modelo en BF16 es del 99,07 % en el conjunto de benchmarks evaluados (PIQA, HellaSwag, MMLU y GSM8K), lo que la convierte en una opcion atractiva para servir el modelo con vLLM en GPUs de gama media.
+El modelo base, ibm-granite/granite-4.1-8b, pertenece a la familia Granite de IBM, orientada a generacion de texto y casos de uso empresariales. Esta version cuantizada conserva la licencia Apache 2.0 del original y se distribuye en formato safetensors compatible con transformers y vLLM. Es relevante porque permite desplegar un modelo de 8B en hardware mas modesto con una perdida media de rendimiento inferior al 0,5 % segun la evaluacion publicada por el autor.
 
-El repositorio tiene un tamano de 5,0 GB, lo que es coherente con un modelo cuantizado a 4 bits, aunque el dato de parametros reportado por safetensors (1.477.562.368) no concuerda con el nombre del modelo (8b) ni con el modelo base declarado. Esta discrepancia debe tenerse en cuenta al planificar el despliegue y conviene verificarla contra el repositorio original de IBM.
+La ficha se centra en los datos disponibles en la model card y en los metadatos de Hugging Face. No se dispone de informacion detallada sobre la composicion del dataset de entrenamiento del modelo base ni sobre sus capacidades completas (tool calling, vision, etc.), por lo que esos apartados se marcan como no disponibles cuando corresponde.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer (derivada de ibm-granite/granite-4.1-8b); detalles arquitectonicos del modelo base no disponibles en la informacion proporcionada |
-| Parametros totales | 1.477.562.368 segun safetensors (discrepante con el nombre "8b"; no disponible el dato verificado del modelo base) |
-| Parametros activos | no disponible (no es un modelo MoE segun la informacion disponible) |
-| Longitud de contexto | no disponible (el ejemplo de lm_eval usa max_length=131073, lo que sugiere contexto de 128K, pero no se confirma en la model card) |
-| Tipos de cuantizacion | W4A16, group_size 128, simetrica; atencion y MLP en int4; embeddings, lm_head y normalizacion en BF16 |
+| Arquitectura | Transformer (modelo base Granite 4.1); cuantizacion AutoRound W4A16 |
+| Parametros totales | 1.477.562.368 (segun safetensors del repo cuantizado; el modelo base se denomina 8B) |
+| Parametros activos | no disponible (no es MoE segun la informacion disponible) |
+| Longitud de contexto | no disponible (la configuracion de lm_eval usa max_length 131073, pero no se confirma como contexto oficial) |
+| Tipos de cuantizacion | W4A16 int4, group_size 128, simetrica; atencion y proyecciones MLP cuantizadas; embeddings, lm_head y normalizacion en BF16 |
 | Idiomas soportados | no disponible |
-| Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (compatible con transformers y vLLM) |
+| Licencia | apache-2.0 |
+| Formato de pesos | safetensors (transformers); compatible con vLLM |
 
 ## Arquitectura y entrenamiento
 
-El modelo es una cuantizacion post-entrenamiento del granite-4.1-8b de IBM. La tecnica AutoRound optimiza el redondeo de pesos mediante descenso de gradiente con signo (signed gradient descent), en lugar de aplicar un redondeo naive. En esta variante se ejecutaron 200 iteraciones de ajuste con 128 muestras de calibracion, `seqlen` de 2048 y `group_size` de 128, ignorando la `lm_head` en el proceso de cuantizacion. Las proyecciones de atencion y MLP se almacenan en int4, mientras que los embeddings de tokens, la `lm_head` y las capas de normalizacion permanecen en BF16 para preservar la precision en las partes mas sensibles.
+El modelo es una cuantizacion del checkpoint ibm-granite/granite-4.1-8b. La arquitectura subyacente es un transformer decoder-only de la familia Granite, aunque la model card no detalla el numero de capas, dimensiones ocultas ni el mecanismo de atencion. La cuantizacion se aplica exclusivamente a las proyecciones de atencion y MLP, manteniendo en BF16 los embeddings de tokens, el lm_head y las capas de normalizacion, lo que ayuda a preservar la calidad de la salida.
 
-No se dispone de informacion sobre la composicion del dataset de entrenamiento del modelo base, el numero de tokens utilizados ni si hubo fases de RLHF o DPO. Tampoco se detallan innovaciones arquitectonicas especificas del granite-4.1-8b en la informacion proporcionada. La innovacion tecnica destacable de esta variante es, por tanto, el propio esquema de cuantizacion AutoRound y su receta de calibracion.
+El proceso de cuantizacion se realizo con AutoRound (intel/auto-round), que optimiza el redondeo de pesos mediante descenso de gradiente con signo, segun el paper arXiv:2309.05516. Se usaron 1000 iteraciones de ajuste, 512 muestras de calibracion, seqlen 2048 y group_size 128, ignorando lm_head. No se dispone de informacion sobre el numero de tokens de entrenamiento del modelo base, la composicion del dataset ni si se aplicaron tecnicas de RLHF o DPO.
 
 ## Capacidades
 
-- Generacion de texto conversacional, segun el pipeline `text-generation` y la etiqueta `conversational`.
-- Razonamiento y matematicas: el modelo base obtiene 92,49 en GSM8K en BF16 y 91,28 en la version W4A16, lo que indica capacidad solida para problemas aritmeticos de varios pasos.
-- Conocimiento general y sentido comun: evaluado en MMLU (71,21 en W4A16) y HellaSwag (61,94 en W4A16).
-- Inferencia eficiente en vLLM con soporte de KV cache en tipo automatico y `dtype` bfloat16.
-- Soporte de tool calling / function calling: no confirmado en la informacion proporcionada para esta variante; debe verificarse en la documentacion del modelo base.
-- Capacidades de agente y razonamiento multi-paso: no confirmadas en la informacion proporcionada.
-- Capacidades multilingues: no disponibles.
-- Capacidades especiales (vision, audio, thinking mode): no disponibles en la informacion proporcionada.
+- Generacion de texto conversacional (pipeline text-generation, tag conversational).
+- Razonamiento y matematicas: la evaluacion incluye GSM8K con un 92,36 % en la version cuantizada.
+- Conocimiento general y sentido comun: evaluado con MMLU, PIQA y HellaSwag.
+- Compatibilidad con endpoints: el repo incluye el tag endpoints_compatible.
+- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
+- Capacidades multilingues: no disponible en la informacion proporcionada.
+- Capacidades especiales (vision, audio, thinking mode): no disponible en la informacion proporcionada.
 
 ## Casos de uso
 
-- Despliegue en GPUs de gama media para generacion de texto conversacional: la cuantizacion W4A16 reduce la huella de memoria frente al BF16, permitiendo servir el modelo en entornos con VRAM limitada usando vLLM con `--dtype bfloat16` y KV cache automatica.
-- Asistente de resolucion de problemas matematicos: el rendimiento en GSM8K (91,28 en W4A16) lo hace adecuado para tutoria o verificacion de calculos paso a paso en aplicaciones educativas.
-- Clasificacion y respuesta a preguntas de conocimiento general: con MMLU en 71,21, puede emplearse en sistemas de FAQ o recuperacion aumentada donde se requiera un modelo compacto y con licencia permisiva.
-- Prototipado rapido de aplicaciones de chat: al estar en formato safetensors y ser compatible con transformers y vLLM, se integra facilmente en pipelines de desarrollo sin necesidad de conversion adicional.
-- Evaluacion comparativa de tecnicas de cuantizacion: sirve como referencia para medir la perdida de calidad de AutoRound frente a otros esquemas (GPTQ, AWQ) sobre el mismo modelo base.
-- Inferencia en entornos con restricciones de coste: la licencia Apache 2.0 y el formato abierto permiten su uso comercial y su despliegue en infraestructura propia o en proveedores de inference-as-a-service compatibles con endpoints.
-- Generacion de texto en lote para tareas de anotacion o sintesis de datos: el throughput de vLLM con `num_concurrent=32` en los ejemplos de evaluacion sugiere viabilidad para procesamiento por lotes.
+- Despliegue en servidores con VRAM limitada: al ser una cuantizacion W4A16, reduce el peso de los pesos a aproximadamente 4 bits por parametro en las capas cuantizadas, lo que permite servir el modelo en GPUs con menos memoria que las necesarias para BF16, manteniendo un 99,54 % de recuperacion media segun la evaluacion del autor.
+- Generacion de codigo y asistencia tecnica: el modelo base Granite esta orientado a casos empresariales y la evaluacion incluye GSM8K; puede integrarse en asistentes de programacion o respuesta tecnica, aunque no se confirman capacidades especificas de codigo en la informacion disponible.
+- Razonamiento matematico en produccion: con un 92,36 % en GSM8K (5-shot, segun la configuracion de lm_eval), es adecuado para tareas de resolucion de problemas aritmeticos y explicacion paso a paso.
+- Atencion al cliente automatizada: el tag conversational y el pipeline text-generation permiten construir chatbots multi-turno; la ventana de contexto real debe verificarse en la configuracion del modelo base antes de desplegar.
+- Evaluacion y benchmarking interno: el repo incluye comandos de lm_eval listos para reproducir PIQA, HellaSwag, MMLU y GSM8K, lo que facilita comparar la version cuantizada con el modelo BF16 en un pipeline propio.
+- Prototipado rapido con vLLM: la model card proporciona el comando `vllm serve` con `--dtype bfloat16` y `--kv-cache-dtype auto`, lo que permite levantar un endpoint compatible con la API de OpenAI para pruebas y demos.
+- Investigacion sobre cuantizacion: util para estudiar la degradacion de rendimiento de AutoRound W4A16 frente a BF16 en un modelo de 8B, con resultados publicados de recuperacion por benchmark.
 
 ## Benchmarks y rendimiento
 
-Resultados publicados en la model card, comparando BF16 frente a W4A16:
-
 | Benchmark | BF16 | W4A16 | Recuperacion |
 |---|---:|---:|---:|
-| PIQA | 79,05 | 78,78 | 99,66 % |
-| HellaSwag | 62,84 | 61,94 | 98,57 % |
-| MMLU | 71,68 | 71,21 | 99,35 % |
-| GSM8K | 92,49 | 91,28 | 98,69 % |
-| **Media** | **76,52** | **75,80** | **99,07 %** |
+| PIQA | 79,05 | 78,94 | 99,86 % |
+| HellaSwag | 62,84 | 62,28 | 99,11 % |
+| MMLU | 71,68 | 71,09 | 99,18 % |
+| GSM8K | 92,49 | 92,36 | 99,85 % |
+| Media | 76,52 | 76,17 | 99,54 % |
 
-No se han publicado resultados de benchmarks adicionales (HumanEval, MT-Bench u otros) en la informacion disponible.
+Datos publicados por el autor en la model card. La evaluacion se realizo con lm_eval sobre un endpoint local compatible con la API de completions, con 5-shot para GSM8K y configuracion estandar para el resto.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: el repositorio ocupa 5,0 GB, por lo que los pesos en W4A16 caben en GPUs con 8 GB de VRAM o mas, dejando margen para KV cache y overhead del runtime.
-- GPU recomendadas: para produccion con contexto largo, se recomiendan GPUs con 24 GB o mas (RTX 4090, L40S, A100 40 GB, H100). Para pruebas y contextos cortos, una RTX 3060 de 12 GB o una RTX 4070 de 12 GB pueden ser suficientes.
-- Cabe en GPU de consumo: si, en modelos con 8-12 GB de VRAM para contextos moderados; el contexto de 128K sugerido por los ejemplos de evaluacion incrementaria notablemente el consumo de KV cache.
-- Opciones de despliegue: vLLM 0.33.0 con transformers 5.20.2 segun la model card; no se confirma soporte de llama.cpp, Ollama o TGI en la informacion proporcionada.
-- Latencia y throughput: no disponibles de forma explicita; los ejemplos de evaluacion usan `num_concurrent=32` y `max_gen_toks=2048`, pero no se reportan metricas de latencia ni tokens por segundo.
+- VRAM estimada: el repo ocupa 9,9 GB en disco; en inferencia, los pesos cuantizados a 4 bits en las capas de atencion y MLP reducen el uso de memoria frente a BF16, aunque embeddings y lm_head permanecen en BF16. Una estimacion conservadora situa el modelo en el rango de 6-10 GB de VRAM para los pesos, mas la cache KV.
+- GPU recomendadas: no especificadas por el autor. Por tamano, deberia caber en GPUs consumer con 12-16 GB (RTX 4070 Ti, RTX 4080, RTX 4090) y en GPUs de datacenter (A100, H100) para mayor throughput.
+- Cabe en GPU consumer: probablemente si, en modelos con 12 GB o mas, aunque no hay confirmacion oficial en la informacion disponible.
+- Opciones de despliegue: vLLM 0.33.0 con transformers 5.20.2 (segun la model card). No se mencionan llama.cpp, Ollama ni TGI.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| INCModel4/granite-4.1-8b-W4A16-AutoRound | 1.477.562.368 (safetensors, discrepante) | no disponible | W4A16 AutoRound | Apache 2.0 | Hugging Face |
-| ibm-granite/granite-4.1-8b (BF16) | no disponible | no disponible | ninguna (BF16) | Apache 2.0 | Hugging Face |
-| Otras variantes cuantizadas del mismo modelo base | no disponible | no disponible | no disponible | Apache 2.0 | no disponible |
+| INCModel4/granite-4.1-8b-W4A16-AutoRound | 1.477.562.368 (safetensors del repo cuantizado) | no disponible | apache-2.0 | safetensors | Cuantizacion W4A16 de Granite 4.1 8B |
+| ibm-granite/granite-4.1-8b | 8B (denominacion) | no disponible | apache-2.0 | safetensors | Modelo base en BF16; referencia de calidad |
+| Otras cuantizaciones de Granite 4.1 8B (GPTQ, AWQ) | 8B | no disponible | apache-2.0 | safetensors / GGUF | No se dispone de datos comparativos en la informacion proporcionada |
 
-No se dispone de informacion sobre alternativas comparables de otros desarrolladores en la informacion proporcionada.
+No se han encontrado en la informacion proporcionada comparativas con modelos de otros fabricantes del mismo tamano.
 
 ## Limitaciones y advertencias
 
-- El modelo puede producir salidas factualmente incorrectas; no debe usarse como fuente de verdad sin verificacion.
-- Riesgo de generar contenido soez, sesgado u ofensivo, segun advierte la propia model card; se recomienda realizar pruebas de seguridad antes de cualquier despliegue.
-- La discrepancia entre el numero de parametros reportado por safetensors (1.477.562.368) y el nombre del modelo (8b) es una senal de alarma que debe verificarse contra el repositorio original antes de usarlo en produccion.
-- La cuantizacion W4A16 introduce una perdida de calidad media del 0,93 % en los benchmarks evaluados; en tareas fuera de esa distribucion la degradacion podria ser mayor.
-- No se confirman capacidades de tool calling, agentes o multilinguesmo en esta variante; dependen del modelo base y deben validarse empiricamente.
-- La licencia Apache 2.0 permite uso comercial, pero la model card incluye un descargo de responsabilidad que recomienda consultar a un abogado antes de usos comerciales.
-- El contexto maximo real no esta documentado en la model card; los ejemplos de evaluacion usan `max_length=131073`, pero conviene confirmarlo con el modelo base.
-- La version de vLLM y transformers requerida (0.33.0 y 5.20.2) es especifica y puede no estar disponible en todos los entornos.
+- El autor advierte que el modelo puede producir salidas factualmente incorrectas y no debe usarse como fuente de informacion veraz sin verificacion.
+- Riesgo de generar contenido sesgado, obsceno u ofensivo debido a las limitaciones del modelo base y de los datasets de ajuste.
+- La cuantizacion introduce una degradacion minima pero real: la recuperacion media es del 99,54 %, con HellaSwag como benchmark mas afectado (99,11 %).
+- No se dispone de informacion sobre sesgos especificos, idiomas soportados ni limitaciones de contexto del modelo base en esta ficha.
+- La licencia Apache 2.0 permite uso comercial, pero el autor recomienda consultar a un abogado antes de usar el modelo con fines comerciales y realizar pruebas de seguridad antes del despliegue.
+- El modelo requiere versiones concretas de vLLM (0.33.0) y transformers (5.20.2) segun la model card; otras versiones pueden no ser compatibles con el formato AutoRound.
+- El numero de parametros reportado por safetensors (1.477.562.368) no coincide con la denominacion "8B" del modelo base; conviene verificar la configuracion real antes de dimensionar el hardware.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/INCModel4/granite-4.1-8b-W4A16-AutoRound
+- Hugging Face: https://huggingface.co/INCModel4/granite-4.1-8b-W4A16-AutoRound
 - Modelo base: https://huggingface.co/ibm-granite/granite-4.1-8b
+- Paper AutoRound: https://arxiv.org/abs/2309.05516
 - Repositorio AutoRound: https://github.com/intel/auto-round
 - Intel Neural Compressor: https://github.com/intel/neural-compressor
-- Paper AutoRound (arXiv 2309.05516): https://arxiv.org/abs/2309.05516

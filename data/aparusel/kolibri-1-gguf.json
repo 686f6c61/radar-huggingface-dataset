@@ -53,31 +53,5 @@
   "renamed_to": "aparusel/ds4-kolibri-1-gguf",
   "renamed_at": "2026-11-11T04:31:18.738Z",
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "GitHub - JustVugg/colibri: Run frontier MoE models on hardware you ...",
-      "url": "https://github.com/JustVugg/colibri",
-      "snippet": "Run frontier MoE models on hardware you already own — pure C, zero deps, experts streamed from disk. Tiny engine, immense model. 🐦 - JustVugg/colibri"
-    },
-    {
-      "title": "Aleph Alpha puts Kolibri&#x27;s full weights on Hugging Face under Apache 2.0",
-      "url": "https://startupfortune.com/aleph-alpha-puts-kolibris-full-weights-on-hugging-face-under-apache-20/",
-      "snippet": "Aleph Alpha&#x27;s Kolibri-1, a 78.1 billion parameter sparse model, is now downloadable on Hugging Face under an Apache 2.0 license for developers."
-    },
-    {
-      "title": "colibri - justvugg.github.io",
-      "url": "https://justvugg.github.io/colibri/",
-      "snippet": "Run frontier open models on hardware you already own. Nine families, up to 2.8T parameters, pure C, zero dependencies."
-    },
-    {
-      "title": "Colibrì proof-of-concept gains frontier-level 1.5-TB AI model — novel ...",
-      "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/colibri-proof-of-concept-gains-frontier-level-1-5-tb-ai-model-novel-approach-runs-on-only-25gb-of-ram-and-shows-promise-for-local-ai-setups",
-      "snippet": "Italian engineer Vincenzo (aka JustVugg) seemingly wanted to have his cake and eat it, so he created ColibrÌ to run the 744-billion-parameter 1.5-TB GLM-5.2 model on a modest CPU, a mere 25 GB of ..."
-    },
-    {
-      "title": "Aleph Alpha Kolibri: What Germany&#x27;s &#x27;Sovereign&#x27; Open-Weight AI Model ...",
-      "url": "https://www.online-tech-tips.com/aleph-alpha-kolibri-sovereign-open-weight-ai-model/",
-      "snippet": "Aleph Alpha Kolibri is a new open-weight &#x27;sovereign&#x27; AI model from Germany. Here&#x27;s what it is, how it compares to Claude, GPT, and Gemini, and who should care."
-    }
-  ]
+  "sources": []
 }

@@ -2,80 +2,112 @@
 
 ## Resumen
 
-El modelo `nr-network-known-class-detector` es un clasificador binario desarrollado por NullRabbit para detectar ataques de red y recursos contra nodos blockchain. Está entrenado exclusivamente con reproducciones fieles de ataques públicamente divulgados (CVEs, GHSA y auditorías de seguridad), lo que garantiza que cada clase de ataque tiene una trazabilidad documentada mediante una URL de provenance. El modelo forma parte de un proyecto más amplio de defensa autónoma para redes descentralizadas, con el objetivo de vigilar el exterior del perímetro.
+`nr-network-known-class-detector` es un clasificador binario (ataque frente a benigno) orientado a ataques de red y recursos contra nodos de blockchain. Lo desarrolla NullRabbit en el marco de su trabajo sobre defensa autónoma de redes descentralizadas. No es un modelo de lenguaje ni una red neuronal profunda: se trata de un `HistGradientBoostingClassifier` de scikit-learn con calibración isotónica, empaquetado con joblib, que consume estadísticas agregadas de capturas pcap y de respuestas RPC para emitir una probabilidad calibrada de ataque.
 
-El modelo opera sobre señales de capa de red obtenidas de ventanas de captura cortas (pcap) y estadísticas de respuestas RPC, generando una probabilidad calibrada de ataque. Utiliza un `HistGradientBoostingClassifier` con calibración isotónica, y está diseñado para ser "scoreability-gated": si no hay señal de red suficiente, no emite veredicto. Este corte publicado se entrena únicamente con primitivas de tipo `public-cve-replication`, abarcando 18 cadenas blockchain y 140 primitivas de ataque CVE.
+El modelo se entrena exclusivamente sobre reproducciones fieles de ataques divulgados públicamente: 140 primitivas de ataque derivadas de CVE, GHSA y auditorías de terceros, distribuidas en 18 cadenas y 919 bundles (716 de ataque y 203 benignos). La versión publicada corresponde al corte `public-cve-replication`, de modo que cada ataque del corpus tiene una fuente pública verificable. El objetivo declarado es separar el *uso* malicioso de un mensaje del *uso* legítimo del mismo mensaje, no el tipo de mensaje en sí.
 
-Es relevante porque aborda un problema específico de seguridad en infraestructura descentralizada con un enfoque reproducible y basado en divulgaciones públicas. Sin embargo, el autor advierte explícitamente que es un modelo diagnóstico entrenado en laboratorio, no apto para despliegue directo en producción sin validación adicional.
+Su relevancia es acotada pero específica: cubre un nicho poco atendido por los detectores genéricos de intrusiones, como son los ataques de capa P2P y RPC propios de nodos Bitcoin y de otras cadenas. El autor lo etiqueta explícitamente como herramienta **diagnóstica**, entrenada sobre reproducciones en localnet de laboratorio y no sobre tráfico de producción real.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | HistGradientBoostingClassifier + calibración isotónica (scikit-learn) |
-| Parametros totales | no disponible (modelo basado en árboles, no en redes neuronales) |
-| Parametros activos | no disponible |
-| Longitud de contexto | no aplica (no es modelo de lenguaje) |
-| Tipos de cuantizacion | no disponible (formato joblib de scikit-learn) |
-| Idiomas soportados | no disponible (no es modelo de texto) |
-| Licencia | Apache-2.0 |
-| Formato de pesos | joblib (scikit-learn) |
-
-Nota: el tamaño del repositorio es de 0.2 GB, lo que sugiere que el modelo entrenado ocupa unos pocos cientos de MB, pero no se especifica el número de parámetros.
+| Arquitectura | `HistGradientBoostingClassifier` (scikit-learn) con calibración isotónica; nativo para valores NaN |
+| Parámetros totales | no disponible |
+| Parámetros activos | no aplica (no es MoE) |
+| Longitud de contexto | no aplica; ventana de captura corta (estadísticas de pcap y de respuestas RPC) |
+| Tipos de cuantización | no disponible (modelo serializado con joblib; no se documentan variantes cuantizadas) |
+| Idiomas soportados | no disponible (no procesa texto) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | joblib (serialización de scikit-learn) |
+| Tamaño del repositorio | 0,5 GB |
+| Dataset de entrenamiento | `NullRabbit/nr-bundles-public` |
+| Métricas declaradas | ROC-AUC, F1 |
+| Umbral de decisión | 0,5 (calibrado) |
 
 ## Arquitectura y entrenamiento
 
-El modelo utiliza un `HistGradientBoostingClassifier` de scikit-learn, un algoritmo de gradient boosting sobre histogramas que es eficiente con datos tabulares y maneja valores NaN de forma nativa. Se aplica calibración isotónica para que las salidas sean probabilidades calibradas. Las características de entrada son agregados de estadísticas de paquetes (pcap) y de respuestas RPC (amplificación, request-response, timing). Se eliminan columnas degeneradas mediante un guardián robusto por ajuste. No se incluyen métricas de carga del host porque el entorno de laboratorio contenerizado no permite leerlas.
+El modelo es un gradiente boosting sobre árboles histogramados (`HistGradientBoostingClassifier`) con calibración isotónica posterior, implementado en scikit-learn y serializado con joblib. Las características de entrada combinan agregados de paquetes extraídos del pcap (tasas y tamaños) con agregados de las respuestas RPC (amplificación, patrón petición-respuesta y temporización). Un guardián robusto de columnas elimina, en cada ajuste, las columnas degeneradas. No se incluyen características de carga del host porque el nodo de laboratorio en contenedor es propiedad de root y sus métricas no son legibles. La inferencia está condicionada por *scoreability*: un registro sin señal de red, como un bundle económico o DeFi, devuelve `scoreable=False` sin veredicto.
 
-El entrenamiento se realizó sobre 1424 bundles de ataque y 579 benignos, totalizando 2003 bundles, que corresponden a 140 primitivas de ataque CVE públicas distribuidas en 18 cadenas. Cada ataque reproduce una divulgación pública específica con su URL de provenance. El tráfico benigno utiliza los mismos métodos y mensajes de red que los ataques, pero a escala normal, para que el modelo aprenda a distinguir el uso malicioso del legítimo. No se utilizaron primitivas "originales" (mediciones propias sin CVE) en este corte publicado.
+El corpus de entrenamiento del corte publicado contiene 140 primitivas de ataque de origen público, 18 cadenas, 919 bundles y 142 instancias cadena×primitiva. Los bundles benignos ejercitan los mismos métodos y mensajes de wire que abusan los ataques, pero a escala normal, lo que fuerza al modelo a discriminar el uso malicioso y no la mera presencia del mensaje. Cada primitiva lleva un campo `provenance.public_source` con la URL de la divulgación correspondiente. Las primitivas de tipo `original` (mediciones propias de NullRabbit sobre amplificación RPC reconocida por fabricantes, sin CVE asociado) se excluyen de este corte, de modo que la afirmación de entrenamiento exclusivo con fuentes públicas se cumple de forma literal.
 
 ## Capacidades
 
-- Detección binaria de ataques vs. tráfico benigno en nodos blockchain.
-- Soporte multi-cadena: cubre 18 cadenas blockchain (Bitcoin, Dogecoin, Litecoin, entre otras).
-- Manejo nativo de valores NaN en las características.
-- Inferencia con "scoreability-gating": si no hay señal de red, devuelve `scoreable=False` sin veredicto.
-- Probabilidad calibrada gracias a la calibración isotónica.
-- Basado en reproducciones de CVEs reales, lo que permite trazabilidad de cada clase de ataque.
-- No es un modelo de lenguaje: no genera texto, no tiene capacidades de razonamiento general ni tool calling.
+- Detección binaria de ataque frente a benigno sobre señal de red de un nodo blockchain, con probabilidad calibrada y umbral fijo en 0,5.
+- Cobertura de ataques de capa P2P y RPC en 18 cadenas; el corte publicado se centra en primitivas de Bitcoin derivadas de CVE.
+- Manejo nativo de valores ausentes (NaN) en las características de entrada.
+- Control de aplicabilidad mediante `scoreable`: descarta registros sin señal de red en lugar de forzar un veredicto.
+- Modelo multifamilia único sobre el manifold de características `network-v1`, en lugar de un clasificador por tipo de ataque.
+- No soporta tool calling, function calling, razonamiento multi-paso, agentes ni capacidades multilingües; no procesa texto, visión ni audio.
 
 ## Casos de uso
 
-- Monitorización de nodos blockchain en entornos de laboratorio o testnet: el modelo puede analizar capturas de red en tiempo real para detectar intentos de ataque basados en CVEs conocidos.
-- Investigación en seguridad: permite reproducir ataques públicos y validar la detección en un entorno controlado.
-- Desarrollo de sistemas de defensa autónoma para redes descentralizadas: el modelo forma parte de un pipeline mayor que podría integrarse en sistemas de respuesta automática.
-- Auditoría de seguridad de nodos: se puede utilizar para verificar si un nodo es vulnerable a ciertos patrones de ataque conocidos.
-- Educación y formación en ciberseguridad blockchain: sirve como herramienta didáctica para demostrar ataques reales y su detección.
-- Análisis forense de capturas de red: dado un pcap de un incidente, el modelo puede clasificar si hubo actividad maliciosa conocida.
+- Monitorización perimetral de nodos Bitcoin: alimentar el modelo con agregados de pcap de ventanas cortas para obtener una probabilidad de ataque en tiempo casi real y priorizar alertas de saturación P2P.
+- Detección de inundaciones de mensajes P2P concretas: las primitivas de *getdata flood*, *inv flood*, *headers spam* y *addr overflow flood* permiten reconocer patrones de abuso de métodos legítimos a escala anómala.
+- Protección frente a ataques de propagación de bloques: las primitivas de *compact block stall*, *mutated block* y *blocktxn double fillblock* cubren intentos de retrasar la propagación, útiles en monitorización de salud de red.
+- Vigilancia de endpoints RPC: los agregados de amplificación y temporización de respuestas RPC permiten detectar abuso de la interfaz RPC de un nodo expuesto.
+- Triaje en un SOC especializado en criptoactivos: usar la probabilidad calibrada como señal de priorización antes de la revisión humana, con el umbral de 0,5 como punto de corte operativo.
+- Validación de reglas de firewall y de configuraciones de nodo: ejecutar el detector contra tráfico de laboratorio reproducido para comprobar si una configuración mitiga las clases de ataque conocidas.
+- Investigación y reproducción de CVE: servir de referencia para comparar reproducciones propias de las 140 primitivas públicas con la frontera de decisión aprendida.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La model card menciona métricas `roc_auc` y `f1` en los metadatos, pero no se proporcionan valores concretos.
+La model card declara las métricas ROC-AUC y F1, pero no se han publicado resultados numéricos de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- Al ser un modelo de gradient boosting sobre histogramas, es extremadamente ligero en comparación con redes neuronales.
-- La inferencia se puede ejecutar en CPU sin necesidad de GPU.
-- El tamaño del repositorio es de 0.2 GB, por lo que el modelo cabe fácilmente en memoria RAM de cualquier máquina moderna (menos de 1 GB probablemente).
-- Se puede desplegar en cualquier entorno con Python y scikit-learn instalado.
-- No hay requisitos específicos de VRAM ni de GPU.
-- Opciones de despliegue: integración en servicios Python, uso en pipelines de análisis de tráfico, despliegue en contenedores Docker ligeros.
+- Inferencia en CPU: al ser un modelo de scikit-learn serializado con joblib, no requiere GPU; el repositorio ocupa 0,5 GB.
+- VRAM estimada: no aplica.
+- GPU recomendadas: no aplica; cualquier CPU moderna es suficiente para la inferencia.
+- Cabe en cualquier equipo de consumo; no hay requisito de GPU dedicada.
+- Despliegue: carga directa con `joblib.load` en un proceso Python con scikit-learn; no se documentan integraciones con vLLM, llama.cpp, Ollama ni TGI, que no aplican a este tipo de modelo.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-No se dispone de información sobre modelos comparables en la misma categoría (detectores de ataques blockchain basados en CVEs). No se pueden establecer comparativas fiables sin datos adicionales.
+| Modelo | Tipo | Enfoque | Contexto de aplicación | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| `nr-network-known-class-detector` | Gradient boosting (scikit-learn) | Detección binaria de ataques de red y recursos en nodos blockchain, con primitivas de CVE públicas | Nodos de 18 cadenas, capa P2P y RPC | Apache 2.0 | Hugging Face, 478 descargas |
+| Detectores IDS genéricos (por ejemplo, basados en CICIDS) | Variable (ML clásico o deep learning) | Detección de intrusiones en tráfico IP genérico | Redes empresariales | Variable | Múltiples |
+| Reglas de nodo y mitigaciones del cliente | Basadas en reglas | Límites de recursos y validación de mensajes en el propio nodo | Específicas del cliente | Licencia del cliente | Integradas en el software |
+
+No se dispone de datos de rendimiento comparables entre estas alternativas en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- El modelo es diagnóstico, no está validado para producción: fue entrenado con reproducciones sintéticas de laboratorio, no con tráfico real de producción.
-- No cubre ataques desconocidos (zero-day) ni variantes no publicadas; solo detecta patrones basados en CVEs conocidos.
-- La exclusión de primitivas "originales" limita la cobertura a divulgaciones públicas, dejando fuera ataques no documentados.
-- El tráfico benigno sintético puede no representar la diversidad del tráfico real, lo que podría afectar la tasa de falsos positivos en entornos reales.
-- No hay información sobre sesgos específicos, pero al estar entrenado en un entorno de laboratorio, es probable que no generalice bien a infraestructuras heterogéneas.
-- Licencia Apache-2.0 permite uso comercial, pero el autor no garantiza idoneidad para producción.
-- El modelo no maneja características de carga de host, por lo que ataques que solo se manifiestan a nivel de host podrían no ser detectados.
+- Modelo **diagnóstico**, no una garantía de despliegue: se entrena sobre reproducciones sintéticas en localnet de laboratorio, no sobre tráfico de producción real.
+- Solo cubre ataques conocidos y divulgados públicamente; no detecta clases de ataque ausentes del corpus ni variantes novedosas.
+- El corte publicado se limita a primitivas `public-cve-replication`; las primitivas `original` del corpus completo quedan fuera.
+- No incorpora características de carga del host, lo que limita la detección de ataques cuyo efecto principal es el consumo de CPU, memoria o disco sin firma de red distintiva.
+- Requiere señal de red para emitir veredicto; los registros sin señal devuelven `scoreable=False`.
+- Riesgo de falsos positivos y negativos no cuantificado en la información disponible; no se publican cifras de ROC-AUC ni F1.
+- Sesgos potenciales derivados de la composición del corpus: predominio de primitivas de Bitcoin en el corte publicado y cobertura desigual entre las 18 cadenas.
+- Licencia Apache 2.0: permite uso comercial, pero el autor no ofrece garantías ni compromisos de mantenimiento.
+- El umbral de decisión está fijado en 0,5; no se documenta su sensibilidad ni la calibración por cadena.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/NullRabbit/nr-network-known-class-detector
-- Dataset asociado: https://huggingface.co/datasets/NullRabbit/nr-bundles-public
+- Modelo en Hugging Face: https://huggingface.co/NullRabbit/nr-network-known-class-detector
+- Dataset: https://huggingface.co/datasets/NullRabbit/nr-bundles-public
+- CVE-2018-17144 (Bitcoin Core): https://bitcoincore.org/en/2018/09/20/notice/
+- CVE-2024-55563: https://nvd.nist.gov/vuln/detail/CVE-2024-55563
+- CVE-2024-52919 (Bitcoin Core): https://bitcoincore.org/en/2025/04/28/disclose-cve-2024-52919/
+- CVE-2016-10724: https://nvd.nist.gov/vuln/detail/CVE-2016-10724
+- CVE-2024-35202 (Bitcoin Core): https://bitcoincore.org/en/2024/10/08/disclose-blocktxn-crash/
+- CVE-2013-5700: https://nvd.nist.gov/vuln/detail/CVE-2013-5700
+- CVE-2025-46597 (Bitcoin Core): https://bitcoincore.org/en/2025/10/24/disclose-cve-2025-46597/
+- CVE-2024-52922 (Bitcoin Core): https://bitcoincore.org/en/2024/11/05/cb-stall-hindering-propagation/
+- CVE-2024-52920 (Bitcoin Core): https://bitcoincore.org/en/2024/07/03/disclose-getdata-cpu/
+- CVE-2024-52916 (Bitcoin Core): https://bitcoincore.org/en/2024/07/03/disclose-header-spam/
+- CVE-2019-25220 (Bitcoin Core): https://bitcoincore.org/en/2024/09/18/disclose-headers-oom/
+- CVE-2024-52915 (Bitcoin Core): https://bitcoincore.org/en/2024/07/03/disclose-inv-buffer-blowup/
+- CVE-2024-52913 (Bitcoin Core): https://bitcoincore.org/en/2024/07/03/disclose_already_asked_for/
+- CVE-2025-54605 (Bitcoin Core): https://bitcoincore.org/en/2025/10/24/disclose-cve-2025-54605/
+- CVE-2018-17145 (Invdos): https://invdos.net/
+- CVE-2024-52921 (Bitcoin Core): https://bitcoincore.org/en/2024/10/08/disclose-mutated-blocks-hindering-propagation/
+- CVE-2024-52914 (Bitcoin Core): https://bitcoincore.org/en/2024/07/03/disclose-orphan-dos/
+- CVE-2015-3641 (Bitcoin Core): https://bitcoincore.org/en/2024/07/03/disclose_receive_buffer_oom/
+- CVE-2013-4627: https://nvd.nist.gov/vuln/detail/CVE-2013-4627
+- CVE-2025-46598 (Bitcoin Core): https://bitcoincore.org/en/2025/10/24/disclose-cve-2025-46598/
+- CVE-2025-54604 (Bitcoin Core): https://bitcoincore.org/en/2025/10/24/disclose-cve-2025-54604/
+- CVE-2024-52912 (Bitcoin Core): https://bitcoincore.org/en/2024/07/03/disclose-timestamp-overflow/

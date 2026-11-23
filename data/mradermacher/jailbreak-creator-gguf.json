@@ -47,11 +47,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Uncensored AI in the Wild: Tracking Publicly Available and Locally ...",
-      "url": "https://www.mdpi.com/1999-5903/17/10/477",
-      "snippet": "Unlike LLM jailbreaks, which require expertise to craft and may be patched by providers, uncensored models operate without restrictions by design and are freely ..."
-    }
-  ]
+  "sources": []
 }

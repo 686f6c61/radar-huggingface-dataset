@@ -2,106 +2,109 @@
 
 ## Resumen
 
-Qwen3.8-Flash-Next-W4A16-Merlin es una compilación cuantizada a 4 bits del modelo Qwen3.8-Flash-Next, un mixto de expertos (MoE) de Qwen de 125.000 millones de parámetros con 6.000 millones activos por token y capacidad de visión. La publica el usuario independiente halt95 y su objetivo es hacer viable el contexto completo de 262.144 tokens en cuatro GPU de 24 GB, algo imposible con los pesos originales de 335 GiB. El resultado son 115,3 GiB de checkpoint que se sirven con Merlin, un fork de vLLM 0.33.0 optimizado para arquitecturas Ampere y Ada.
+Qwen3.8-Flash-Next-W4A16-Merlin es una compilación cuantizada a 4 bits del modelo multimodal Qwen3.8-Flash-Next, un mixture-of-experts (MoE) de Qwen con 123.958.298.771 parámetros totales y 6.000 millones activos por token, que incorpora visión. La versión original ocupa 335 GiB; esta build reduce el peso a 115 GiB mediante cuantización selectiva, permitiendo servir el contexto completo de 262.144 tokens en cuatro GPU de 24 GB (RTX 3090 en las mediciones publicadas).
 
-La relevancia de esta ficha está en su enfoque de despliegue: en lugar de recortar contexto o calidad, mueve componentes concretos a formatos de menor precisión (expertos enrutados a INT4, tabla de embeddings n-gram de 51.000 millones de parámetros a FP8 en RAM de host) y mantiene en BF16 la atención, las normas, el torre de visión y el experto compartido. Esto permite ejecutar un modelo de 125B con visión y decodificación especulativa en hardware de consumo profesional como cuatro RTX 3090.
+El trabajo lo firma halt95, autor del motor de inferencia Merlin, un fork de vLLM 0.33.0 optimizado para arquitecturas Ampere y Ada. La relevancia inmediata es económica: un modelo MoE de 125B con visión y ventana de 262K queda al alcance de hardware consumer de gama alta (cuatro RTX 3090), algo que el checkpoint BF16 original no permite. La build combina expertos enrutados INT4 g128 (procedentes de la release AutoRound de Intel), tabla de embeddings n-gram (PLE) de 51B parámetros en FP8 alojada en RAM del host, proyecciones DeltaNet en INT8 por canal y atención, torre de visión, routers y capas compartidas en BF16.
 
-El modelo base es de Qwen y la licencia aplicada es Qwen Community 1.0, con las restricciones que ello implica. La model card reporta cifras medidas de rendimiento en hardware concreto (4× RTX 3090 sin NVLink a 220 W), lo que conviene tratar como referencia de laboratorio y no como garantía en otros entornos.
+Incluye decodificación especulativa mediante cabezas MTP draft cuantizadas INT4, caché KV FP8 E4M3 con escalas estáticas calibradas para 262K y un pool KV de 924.993 tokens en VRAM. El repositorio ocupa 123,8 GB y acumula 1.131 descargas y 23 likes desde su publicación en septiembre de 2026.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Mixto de expertos (MoE) con visión; transformer con capas Gated DeltaNet, MTP y decodificación especulativa |
-| Parametros totales | 123.958.298.771 (≈124B) |
-| Parametros activos | 6B por token |
-| Longitud de contexto | 262.144 tokens |
-| Tipos de cuantizacion | W4A16 (expertos enrutados INT4 g128), INT8 por canal (proyecciones DeltaNet), FP8 (tabla n-gram), BF16 (atención, normas, embeddings, lm_head, experto compartido, routers, torre de visión); KV cache FP8 E4M3 con escalas estáticas calibradas |
-| Idiomas soportados | Inglés (según la model card; no se detallan otros idiomas) |
-| Licencia | qwen-community-1.0 (Qwen Community License 1.0) |
-| Formato de pesos | safetensors (17 shards principales + shards PLE FP8 + shard MTP INT4 + tensores extra) |
+| Arquitectura | Mixture-of-Experts (MoE) con atención híbrida, Gated DeltaNet, QSA indexer, torre de visión y cabezas MTP para decodificación especulativa |
+| Parámetros totales | 123.958.298.771 (123,96B) |
+| Parámetros activos | 6B por token |
+| Longitud de contexto | 262.144 tokens (262K) |
+| Tipos de cuantización | W4A16: expertos enrutados INT4 g128, tabla n-gram (PLE) de 51B en FP8, proyecciones DeltaNet QKV/Z y salida INT8 por canal, resto en BF16; KV cache FP8 E4M3 |
+| Idiomas soportados | Inglés (declarado en la model card; resto no disponible) |
+| Licencia | Qwen Community License 1.0 (`qwen-community-1.0`, etiquetada como `other`) |
+| Formato de pesos | safetensors (17 shards principales + 10 shards PLE FP8 + shard MTP INT4 + tensores extra), `compressed-tensors` |
+| Librería de inferencia | vLLM (fork Merlin 3.0.2.2, basado en vLLM 0.33.0) |
+| Pipeline | image-text-to-text |
+| Tamaño del repositorio | 123,8 GB (checkpoint servible: 115 GiB) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es un MoE de Qwen con 512 expertos enrutados por capa y 6B de parámetros activos por token, e incorpora visión mediante un torre de imágenes. La arquitectura combina atención con capas Gated DeltaNet (proyecciones QKV/Z y salida en INT8 por canal en esta versión), una tabla de embeddings n-gram (PLE) de 51.000 millones de parámetros y cabezas MTP (multi-token prediction) para decodificación especulativa. La model card no detalla el número de tokens de entrenamiento, la composición del dataset ni si hubo RLHF o DPO en el modelo base.
+La arquitectura subyacente es un transformer MoE con 512 expertos enrutados por capa y 6B parámetros activos por token, combinado con capas de atención híbrida: Gated DeltaNet (atención lineal con proyecciones QKV/Z y salida cuantizadas INT8 por canal), un indexador QSA para atención dispersa sobre contexto largo y pesos de residual con compuerta. La torre de visión permanece en BF16, igual que routers, normas, embeddings, `lm_head`, expertos compartidos y capas no-expertas de las cabezas MTP. La tabla de embeddings n-gram (PLE) de 51B parámetros se cuantiza a FP8 y se mantiene en RAM del host en tiempo de servicio, no en VRAM.
 
-La aportación de esta compilación es la cuantización selectiva: los expertos enrutados provienen de la release AutoRound de Intel (INT4 g128), las cabezas MTP se empaquetan en INT4 in situ, la tabla n-gram se guarda en FP8 y se carga en RAM de host en tiempo de servicio, y el resto de componentes críticos para la calidad se mantienen en BF16. El motor Merlin (fork de vLLM 0.33.0) gestiona esta disposición híbrida y mantiene toda la caché KV en VRAM. La model card no especifica detalles del proceso de calibración más allá de las escalas estáticas del KV cache (`qsa_kv_scales_262k.json`).
+No se dispone de información sobre el volumen de tokens de entrenamiento, la composición del dataset ni si se aplicaron RLHF o DPO en el modelo base. La innovación técnica destacable de esta build es la combinación de decodificación especulativa con cabezas MTP draft cuantizadas INT4 (empaquetadas in situ), caché KV FP8 E4M3 con escalas estáticas calibradas para 262K (`qsa_kv_scales_262k.json`) y un motor (Merlin) que gestiona el pool KV íntegramente en VRAM mientras externaliza la tabla n-gram a RAM del host. La plantilla de chat servida por defecto es la versión corregida de Froggeric (v22.5); la plantilla original de Qwen se incluye sin modificar.
 
 ## Capacidades
 
-- Generación de texto y razonamiento con modo "thinking" configurable (la model card menciona esfuerzo medio como valor por defecto del servidor).
-- Procesamiento de imagen y texto (`image-text-to-text`): el pipeline declarado incluye visión.
-- Decodificación especulativa mediante cabezas MTP, que acelera la generación.
-- Contexto largo de hasta 262.144 tokens, con soporte de múltiples sesiones simultáneas de contexto completo (tres sesiones de 262K retenidas a la vez según la model card).
-- Conversación multi-turno y escenarios de agentes: la model card reporta ocho conversaciones de 16K tokens y ocho seguimientos simultáneos de 512 tokens.
-- Soporte de tool calling / function calling: no confirmado explícitamente en la información disponible.
-- Capacidades multilingües: la model card solo declara inglés; no hay datos de otros idiomas.
-- Cuantización W4A16 con KV cache FP8, orientada a despliegue en GPU Ampere (sm86) y perfiles para Ada.
+- Generación de texto conversacional multi-turno con ventana de 262.144 tokens.
+- Comprensión de imagen y texto (pipeline `image-text-to-text`, torre de visión en BF16).
+- Razonamiento con modo "thinking" configurable (la model card cita effort medium como valor por defecto del servidor).
+- Decodificación especulativa mediante cabezas MTP draft INT4, que acelera la generación autoregresiva.
+- Soporte de sesiones concurrentes largas: tres sesiones de 262K simultáneas caben en el pool KV medido.
+- Servicio multiagente: ocho conversaciones de 16K con seguimientos simultáneos de 512 tokens.
+- Idiomas: inglés declarado; cobertura multilingüe adicional no disponible.
+- Tool calling y function calling: no disponible en la información proporcionada.
 
 ## Casos de uso
 
-- Asistencia conversacional de contexto largo: con 262.144 tokens de ventana, el modelo puede mantener conversaciones multi-turno con documentos extensos o historiales completos sin truncar, algo útil en atención al cliente especializada o soporte técnico.
-- Análisis de documentos e imágenes combinados: al ser `image-text-to-text`, permite extraer información de capturas, diagramas o documentos escaneados junto a texto, por ejemplo en revisión de contratos o informes con figuras.
-- Agentes autónomos con múltiples pasos: la model card reporta ocho conversaciones simultáneas de 16K tokens y seguimientos concurrentes, lo que encaja en orquestación de agentes que mantienen estado largo.
-- Procesamiento por lotes de prompts largos: la cifra de prefill de 7.036 tok/s en un prompt de 100K sugiere viabilidad para tareas de resumen o extracción sobre documentos de decenas de miles de tokens.
-- Despliegue en hardware de consumo profesional: al caber en cuatro RTX 3090 de 24 GB, permite montar un servicio de inferencia de un modelo de 125B con visión sin recurrir a A100/H100.
-- Investigación y evaluación de cuantización: sirve como banco de pruebas para estudiar el impacto de INT4/FP8 selectivo en calidad y latencia frente al modelo base en BF16.
-- Generación de código en pipelines: aunque la model card no lo confirma explícitamente, un MoE de 6B activos con contexto largo es adecuado para autocompletado y revisión de código en repositorios grandes; conviene validar la calidad en código antes de producción.
+- Asistentes de documentación técnica con contexto largo: el modelo puede ingerir prompts de hasta 262K tokens (la medición de prefill usa uno de 101.845 tokens) para responder sobre repositorios completos o manuales extensos, manteniendo el pool KV en VRAM.
+- Análisis de imágenes en flujos de trabajo: al ser image-text-to-text, permite extraer información de capturas, diagramas o documentos escaneados y continuar la conversación en texto dentro del mismo contexto.
+- Despliegue multiagente en un solo nodo: ocho conversaciones de 16K con seguimientos simultáneos a 640 tok/s agregados (thinking activado) lo hacen adecuado para orquestadores de agentes que atienden varios usuarios en paralelo.
+- Razonamiento sobre código y especificaciones extensas: con 6B parámetros activos y contexto de 262K, encaja en tareas de revisión de cambios, generación de parches y explicación de arquitecturas a partir de múltiples ficheros concatenados.
+- Servicio de inferencia en hardware consumer: cuatro RTX 3090 de 24 GB bastan para servir el checkpoint a contexto completo, lo que habilita entornos de laboratorio o startups sin clústeres A100/H100.
+- Evaluación comparativa de cuantizaciones: al derivar de la release AutoRound de Intel y de la tabla PLE de RadixArk, sirve como referencia para medir el impacto de W4A16 + FP8 KV frente a BF16 en tareas de calidad.
+- Prototipado de pipelines multimodales con vLLM: el fork Merlin expone perfiles para RTX 4090, tarjetas workstation de 48 GB, A100 y CMP 170HX, facilitando migrar el mismo checkpoint entre GPUs Ampere y Ada.
 
 ## Benchmarks y rendimiento
 
-La model card no incluye resultados de benchmarks de calidad (MMLU, HumanEval, GSM8K) en la información disponible. Sí reporta métricas de rendimiento medidas en 4× RTX 3090 sin NVLink a 220 W con Merlin 3.0.2.1:
+No se han publicado resultados de benchmarks de calidad (MMLU, HumanEval, GSM8K, etc.) en la información disponible. La model card aporta métricas de rendimiento del motor, medidas en 4× RTX 3090 sin NVLink a 220 W, P2P activado, con Merlin 3.0.2.1 (vLLM 0.33.0) y verificadas por muestreo en 3.0.2.2:
 
-| Metrica | Valor reportado |
-|---|---|
-| Decodificacion (1 stream, thinking on, 261.888 tokens de prompt + 128 de salida) | 191,4–200,3 tok/s (mediana de 3 envios) |
-| Prefill (prompt frio de 101.845 tokens) | 7.036 tok/s |
-| Agentes (8 conversaciones de 16K + 8 seguimientos de 512 tokens) | 640 tok/s totales |
-| Pool KV en VRAM | 924.993 tokens |
-| Sesiones de 262K simultaneas | 3 |
-
-No se han publicado resultados de benchmarks de calidad en la información disponible.
+| Métrica | Valor medido | Condiciones |
+|---|---|---|
+| Decode (una stream) | 191,4–200,3 tok/s (mediana de 3 envíos) | 261.888 tokens de prompt + 128 de salida, thinking on (effort medium) |
+| Prefill | 7.036 tok/s | Prompt frío de 101.845 tokens |
+| Agentes concurrentes | 640 tok/s agregados | Ocho conversaciones de 16K + ocho seguimientos de 512 tokens, thinking on |
+| Pool KV en VRAM | 924.993 tokens | FP8, íntegramente en VRAM |
+| Sesiones de 262K simultáneas | 3 | Ejecución 3.0.0, 2026-10-20 |
 
 ## Requisitos de hardware
 
-- VRAM estimada: el checkpoint completo ocupa 115,3 GiB; la model card lo ejecuta en 4× RTX 3090 (96 GB de VRAM) manteniendo la tabla n-gram de 47,7 GiB en RAM de host y el KV cache FP8 en VRAM.
-- GPU recomendadas: RTX 3090 (Ampere, sm86) como plataforma medida; la model card menciona perfiles para RTX 4090, tarjetas de estación de trabajo de 48 GB, A100 y CMP 170HX, con perfiles Ada en prueba o sin probar.
-- ¿Cabe en GPU de consumo? Sí, en cuatro RTX 3090 de 24 GB; no cabe en una sola GPU de consumo.
-- Opciones de despliegue: Merlin 3.0.2.1 (fork de vLLM 0.33.0), que es el motor con el que se publican los pesos y las métricas. No se confirma soporte de llama.cpp, Ollama o TGI en la información disponible.
-- Latencia y throughput: ver tabla de benchmarks; las cifras corresponden a la configuración de cuatro RTX 3090 sin NVLink a 220 W con P2P activado.
+- VRAM estimada: 115 GiB de checkpoint servible repartidos en cuatro GPU de 24 GB; la tabla PLE FP8 de 47,7 GiB se carga en RAM del host, no en VRAM.
+- GPU validadas: 4× RTX 3090 (Ampere, sm86) sin NVLink, a 220 W, con P2P activado y upgrade de host "gpu-unlock".
+- Perfiles adicionales del motor: RTX 4090 y tarjetas workstation de 48 GB (Ada, en pruebas o sin validar), A100 y CMP 170HX (Ampere).
+- Consumer GPU: sí, en RTX 3090 (cuatro unidades). No cabe en una sola GPU consumer de 24 GB por el tamaño del checkpoint, aunque el pool KV y el contexto completo exigen el conjunto de cuatro.
+- Despliegue: Merlin 3.0.2.2 (fork de vLLM 0.33.0) con librería `vllm`; llama.cpp, Ollama y TGI no están indicados como soportados en la información disponible.
+- Latencia y throughput: decode de 191,4–200,3 tok/s a 262K con speculative decoding (la tasa varía según el texto), prefill de 7.036 tok/s en 100K y 640 tok/s agregados para ocho agentes.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Vision | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| Qwen3.8-Flash-Next-W4A16-Merlin (esta ficha) | 124B totales, 6B activos | 262.144 | Sí | qwen-community-1.0 | Hugging Face, requiere Merlin |
-| Qwen/Qwen3.8-Flash-Next (base) | 125B totales, 6B activos | 262.144 | Sí | qwen-community-1.0 | Hugging Face, pesos BF16 (~335 GiB) |
-| Intel/Qwen3.8-Flash-Next-W4A16-AutoRound | 125B totales, 6B activos | No disponible | Sí | qwen-community-1.0 | Hugging Face, cuantización AutoRound de referencia |
-| RadixArk/Qwen3.8-Flash-Next-NVFP4 | 125B totales, 6B activos | No disponible | Sí | no disponible | Hugging Face, formato NVFP4 |
+| Modelo | Parámetros | Activos | Contexto | Cuantización | Licencia | Disponibilidad |
+|---|---|---|---|---|---|---|
+| Qwen3.8-Flash-Next-W4A16-Merlin (esta ficha) | 123,96B | 6B | 262K | W4A16 + FP8 KV | Qwen Community 1.0 | Hugging Face, requiere Merlin/vLLM fork |
+| Qwen/Qwen3.8-Flash-Next (base) | 123,96B | 6B | 262K | BF16 | Qwen Community 1.0 | Hugging Face, 335 GiB |
+| Intel/Qwen3.8-Flash-Next-W4A16-AutoRound | 123,96B | 6B | 262K | W4A16 (AutoRound) | Qwen Community 1.0 | Hugging Face |
+| RadixArk/Qwen3.8-Flash-Next-NVFP4 | 123,96B | 6B | 262K | NVFP4 (tabla PLE) | Qwen Community 1.0 | Hugging Face |
 
-No se dispone de datos de benchmarks comparativos entre estas variantes en la información proporcionada.
+Las tres alternativas comparten el mismo modelo base y tamaño; difieren en el esquema de cuantización, el formato de la tabla PLE y el motor de servicio. No hay datos de benchmarks de calidad publicados para establecer una comparación de rendimiento entre ellas.
 
 ## Limitaciones y advertencias
 
-- La model card solo declara inglés; el rendimiento en castellano u otros idiomas no está documentado y debe validarse empíricamente.
-- Riesgo de alucinación inherente a modelos generativos; no hay evaluaciones de fidelidad publicadas para esta cuantización.
-- La cuantización INT4 de expertos y FP8 de la tabla n-gram puede degradar la calidad respecto al modelo base en BF16; no se aportan métricas de calidad comparativas.
-- Licencia Qwen Community 1.0: revisar las restricciones de uso comercial y las obligaciones de atribución antes de desplegar en producción.
-- Dependencia del motor Merlin (fork de vLLM 0.33.0); no se confirma compatibilidad con vLLM estándar, llama.cpp, Ollama o TGI.
-- Los perfiles para GPU Ada están en prueba o sin probar; las cifras publicadas corresponden exclusivamente a cuatro RTX 3090.
-- El contexto de 262K exige gestionar el pool KV en VRAM (924.993 tokens en la configuración medida); reducirlo afecta al número de sesiones simultáneas.
-- La plantilla de chat servida por defecto es la versión corregida de Froggeric (v22.5), no la plantilla original de Qwen incluida en el repositorio; conviene verificar la coherencia en producción.
-- No hay información sobre sesgos específicos ni sobre el proceso de alineación del modelo base.
+- Idiomas: solo inglés declarado en la model card; el rendimiento en castellano no está documentado.
+- Licencia Qwen Community 1.0: revisar las condiciones antes de uso comercial; la model card la etiqueta como `other`, no como licencia permisiva estándar.
+- Dependencia de un fork: el checkpoint está empaquetado para Merlin 3.0.2.2 (fork de vLLM 0.33.0); no se garantiza compatibilidad con vLLM upstream, llama.cpp, Ollama o TGI.
+- Hardware específico: las mediciones se hicieron en Ampere (sm86) con cuatro RTX 3090; los perfiles Ada están "en pruebas o sin validar", por lo que el rendimiento en RTX 4090 o GPUs de 48 GB no está confirmado.
+- Cuantización agresiva: expertos INT4 g128, DeltaNet INT8 y KV FP8 pueden degradar la calidad frente al BF16 original; no hay benchmarks publicados que cuantifiquen esa pérdida.
+- Riesgo de alucinación: no documentado en la información disponible; aplican las precauciones habituales de un modelo generativo sin datos de evaluación publicados.
+- Sesgos: no documentados en la información disponible.
+- Plantilla de chat: Merlin sirve por defecto la plantilla corregida de Froggeric (v22.5), no la de Qwen; conviene verificar la coherencia con el tokenizador en despliegues propios.
+- Contexto largo: la ventana de 262K exige el pool KV completo en VRAM; reducir el número de sesiones concurrentes o la longitud efectiva afecta directamente al throughput medido.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/halt95/Qwen3.8-Flash-Next-W4A16-Merlin
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
+- Motor Merlin: https://github.com/halt95/merlin-engine
+- Bench card 2026-11-12: https://github.com/halt95/merlin-engine/blob/main/models/flash-next/benchmarks/2026-11-12/BENCH-CARD.md
+- Bench card 3.0.2.2 (2026-11-21): https://github.com/halt95/merlin-engine/blob/main/models/flash-next/benchmarks/2026-11-21/BENCH-CARD.md
 - Release AutoRound de Intel: https://huggingface.co/Intel/Qwen3.8-Flash-Next-W4A16-AutoRound
 - Release NVFP4 de RadixArk: https://huggingface.co/RadixArk/Qwen3.8-Flash-Next-NVFP4
-- Plantilla de chat corregida de Froggeric: https://huggingface.co/froggeric/Qwen-Fixed-Chat-Templates
-- Motor Merlin: https://github.com/halt95/merlin-engine
-- Bench card de Merlin: https://github.com/halt95/merlin-engine/blob/main/models/flash-next/benchmarks/2026-11-12/BENCH-CARD.md
+- Plantillas de chat corregidas de Froggeric: https://huggingface.co/froggeric/Qwen-Fixed-Chat-Templates
+- Discord del proyecto: https://discord.gg/jVDYAwdGzt
+- Ko-fi del autor: https://ko-fi.com/halt95
 - Licencia: https://huggingface.co/halt95/Qwen3.8-Flash-Next-W4A16-Merlin/blob/main/LICENSE
-- Comunidad Discord: https://discord.gg/jVDYAwdGzt
-- Apoyo al autor: https://ko-fi.com/halt95

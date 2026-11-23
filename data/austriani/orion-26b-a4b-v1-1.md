@@ -2,86 +2,88 @@
 
 ## Resumen
 
-Orion-26B-A4B-v1.1 es un modelo de lenguaje publicado en Hugging Face por el usuario Austriani bajo licencia Apache 2.0. El nombre sugiere una arquitectura de mezcla de expertos (MoE) con aproximadamente 26 000 millones de parametros totales y unos 4000 millones de parametros activos por token, siguiendo la convencion de nomenclatura habitual en modelos como Qwen3-30B-A3B o Mixtral. Sin embargo, la model card publicada no incluye documentacion tecnica, descripcion de arquitectura, datos de entrenamiento ni resultados de evaluacion, por lo que estas cifras deben considerarse inferencias a partir del nombre y no datos confirmados.
+Orion-26B-A4B-v1.1 es un modelo de lenguaje multimodal de tipo mixtura de expertos (MoE) desarrollado por TheDrummer y cuantizado por Austriani en formato GGUF para su uso con la librería ik_llama.cpp. El modelo cuenta con 25.233.142.046 parámetros totales (aproximadamente 25,2 mil millones) distribuidos en 128 expertos, con un diseño A4B que implica 4 mil millones de parámetros activos por token. Está construido sobre la arquitectura Gemma 4 y se distribuye bajo licencia Gemma.
 
-La relevancia de este modelo es limitada en el momento de redactar esta ficha: el repositorio registra cero descargas y cero likes, fue creado y actualizado en la misma fecha (19 de noviembre de 2026) y no incluye pipeline declarado, idiomas soportados ni formato de pesos documentado. Se trata, por tanto, de una publicacion sin validacion externa ni trazabilidad tecnica.
+El modelo está especializado en escritura creativa, roleplay y contenido sin censura (uncensored), e incorpora capacidades de razonamiento (thinking mode), visión multimodal y contexto largo. La versión publicada por Austriani es una cuantización con imatrix y calibración v3 orientada a maximizar la calidad bajo compresión, empleando el formato IQK y trellis-quant sobre ik_llama.cpp.
 
-Para un desarrollador o investigador que necesite evaluar el modelo, la ausencia de informacion implica que cualquier uso en produccion requeriria una inspeccion directa de los archivos del repositorio (config.json, tokenizer, pesos) antes de considerar su adopcion. Esta ficha refleja esa situacion y marca explicitamente como "no disponible" todos los datos que el autor no ha hecho publicos.
+La relevancia de esta ficha radica en que se trata de una cuantización comunitaria de un modelo base de TheDrummer, orientada a despliegue local eficiente en hardware de consumo, con soporte para entrada image-text-to-text y un pipeline conversacional. El repositorio acumula 1.838 descargas y un tamaño de 89,9 GB.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (el nombre sugiere MoE, sin confirmar) |
-| Parametros totales | ~26B segun el nombre del modelo (no confirmado) |
-| Parametros activos | ~4B segun el nombre del modelo (no confirmado) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible |
-| Idiomas soportados | no disponible |
-| Licencia | Apache 2.0 |
-| Formato de pesos | no disponible |
+| Arquitectura | Mixture of Experts (MoE) sobre base Gemma 4, 128 expertos |
+| Parametros totales | 25.233.142.046 (aprox. 25,2 B) |
+| Parametros activos | 4 B (designación A4B) |
+| Longitud de contexto | no disponible (etiquetado como long-context) |
+| Tipos de cuantizacion | GGUF cuantizado con imatrix, IQK, trellis-quant, calibración v3 |
+| Idiomas soportados | inglés (en) |
+| Licencia | Gemma |
+| Formato de pesos | GGUF (librería ik_llama.cpp) |
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura del modelo en la model card ni en los metadatos del repositorio. El identificador "26B-A4B" sigue el patron habitual para modelos de mezcla de expertos con parametros totales y activos declarados en el nombre, pero no hay confirmacion de que se trate de un transformer MoE, de cuantos expertos dispone, ni de como se enrutan los tokens.
+El modelo emplea una arquitectura de mixtura de expertos (MoE) con 128 expertos sobre una base Gemma 4, con 25,2 mil millones de parámetros totales y 4 mil millones activos por token (configuración A4B). Esta topología permite un coste computacional de inferencia comparable a un modelo denso de 4 B mientras se dispone de la capacidad representacional de un modelo de 25 B. El pipeline declarado es image-text-to-text, lo que confirma su naturaleza multimodal con entrada de imagen y texto.
 
-Tampoco hay datos sobre el corpus de entrenamiento (numero de tokens, composicion, mezcla de idiomas), sobre si se aplicaron tecnicas de alineacion como RLHF o DPO, ni sobre innovaciones tecnicas especificas (atencion lineal, decodificacion especulativa, modos de razonamiento). Toda esta informacion debe considerarse no disponible hasta que el autor publique documentacion adicional o se inspeccionen los artefactos del repositorio.
+No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas de RLHF o DPO en la información proporcionada. La versión de Austriani es una cuantización del modelo base TheDrummer/Orion-26B-A4B-v1.1, realizada con imatrix y calibración v3, empleando el formato IQK y trellis-quant para ik_llama.cpp, lo que constituye la innovación técnica destacable de esta publicación concreta (optimización de la compresión manteniendo calidad).
 
 ## Capacidades
 
-- Generacion de texto: no confirmada explicitamente, aunque es la funcion esperada de un modelo de lenguaje publicado en Hugging Face.
-- Razonamiento y matematicas: no disponible.
-- Generacion de codigo: no disponible.
-- Tool calling / function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingues: no disponible (no se declaran idiomas en los metadatos).
-- Capacidades especiales (modo thinking, vision, audio): no disponible.
+- Generación de texto y escritura creativa, con especialización declarada en creative-writing y roleplay.
+- Razonamiento en modo thinking (etiqueta thinking).
+- Procesamiento multimodal de imagen y texto (pipeline image-text-to-text, etiqueta vision).
+- Contenido sin censura (uncensored) y material NSFW (not-for-all-adversaries).
+- Soporte de contexto largo (etiqueta long-context; longitud exacta no disponible).
+- Conversación multi-turno (pipeline conversational).
+- Capacidades multilingües limitadas al inglés según la model card.
+- Soporte de tool calling / function calling: no disponible en la información proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
 
 ## Casos de uso
 
-- Evaluacion comparativa interna: el modelo puede descargarse e inspeccionarse para verificar si realmente implementa una arquitectura MoE de 26B/4B y comparar su comportamiento con alternativas documentadas, como paso previo a cualquier adopcion.
-- Prototipado experimental en entornos controlados: dado que la licencia Apache 2.0 permite uso comercial, podria probarse en cuadernos de experimentacion siempre que se valide primero su calidad mediante evaluaciones propias.
-- Fine-tuning sobre dominio especifico: si los pesos son compatibles con frameworks estandar (transformers, PEFT), podria servir como base para ajuste supervisado, aunque la falta de documentacion sobre tokenizer y arquitectura incrementa el riesgo tecnico.
-- Investigacion sobre modelos MoE poco documentados: util como caso de estudio sobre publicaciones sin model card completa y su impacto en la reproducibilidad.
-- Despliegue en infraestructura con GPU consumer: si se confirma el tamano de 4B parametros activos, la inferencia podria ser viable en GPUs de gama alta para consumo, aunque esto requiere verificacion empirica.
-- Pruebas de integracion con pipelines de inferencia (vLLM, llama.cpp): solo tras confirmar el formato de pesos y la compatibilidad del tokenizer con dichos motores.
+- Escritura creativa asistida: el modelo está entrenado específicamente para creative-writing, por lo que puede generar narrativa, diálogos y descripciones con coherencia estilística, aprovechando sus 4 B de parámetros activos para mantener latencia baja en generación larga.
+- Roleplay conversacional: su especialización en roleplay y su pipeline conversacional permiten mantener personajes consistentes en interacciones multi-turno, con soporte de contexto largo para conservar el hilo narrativo.
+- Despliegue local en hardware de consumo: al ser una cuantización GGUF para ik_llama.cpp con 4 B de parámetros activos, puede ejecutarse en GPU de gama alta de consumo y en CPU con suficiente memoria, lo que lo hace adecuado para entornos sin infraestructura cloud.
+- Generación de contenido sin restricciones: para proyectos que requieren texto no filtrado (ficción adulta, guiones, material NSFW), el modelo está explícitamente orientado a contenido uncensored, aunque con las advertencias legales correspondientes.
+- Asistencia multimodal básica: al aceptar entrada image-text-to-text, puede emplearse para describir imágenes, responder preguntas sobre contenido visual o generar texto condicionado por una imagen en aplicaciones de accesibilidad o documentación.
+- Prototipado de asistentes conversacionales: su formato GGUF y compatibilidad con endpoints permiten integrarlo rápidamente en prototipos de chatbot con contexto largo, evaluando calidad antes de migrar a un modelo mayor.
+- Experimentación con cuantización: la publicación sirve como referencia para estudiar el impacto de imatrix y calibración v3 en la calidad de un MoE de 25 B comprimido, útil para investigadores de eficiencia.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible oficialmente. Como referencia teorica, un modelo denso de 26B en FP16 requeriria aproximadamente 52 GB de VRAM; en cuantizacion de 4 bits, unos 13-15 GB. Si se confirma la arquitectura MoE con 4B activos, el calculo de computo se aproximaria al de un modelo de 4B, pero el peso completo seguiria necesitando memoria para todos los expertos.
-- GPU recomendadas: no disponible. Por tamano, un modelo de 26B en FP16 encajaria en A100 80 GB o H100; en cuantizacion 4-bit podria caber en RTX 4090 (24 GB) o RTX 3090.
-- Viabilidad en GPU consumer: no confirmada; depende del formato de pesos publicado, que no se especifica.
-- Opciones de despliegue: no disponible. La compatibilidad con vLLM, llama.cpp, Ollama o TGI no puede verificarse sin conocer la arquitectura y el formato de pesos.
-- Latencia y throughput: no disponible.
+- VRAM estimada para inferencia: no disponible de forma explícita; con 25,2 B de parámetros totales, una cuantización de 4 bits requeriría del orden de 13-15 GB, y una de 2-3 bits del orden de 7-10 GB (estimación orientativa, no confirmada en la información).
+- GPU recomendadas: no disponible en la información proporcionada.
+- ¿Cabe en GPU de consumo? Probablemente sí en GPU de gama alta con suficiente VRAM (p. ej. RTX 4090 con 24 GB) para cuantizaciones de 4 bits, aunque no se confirma en la información.
+- Opciones de despliegue: ik_llama.cpp (librería declarada), con compatibilidad de endpoints; otras opciones como vLLM, Ollama o TGI no se confirman en la información.
+- Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Activos | Contexto | Licencia | Documentacion |
+| Modelo | Parámetros totales | Activos | Contexto | Licencia | Formato |
 |---|---|---|---|---|---|
-| Orion-26B-A4B-v1.1 | ~26B (segun nombre) | ~4B (segun nombre) | no disponible | Apache 2.0 | Practicamente inexistente |
-| Qwen3-30B-A3B | 30B | 3B | 32K+ (segun version) | Apache 2.0 | Completa, con benchmarks |
-| Mixtral 8x7B | 46B | 12B | 32K | Apache 2.0 | Completa, con benchmarks |
-| DeepSeek-V2-Lite | 16B | 2,4B | 32K | Codigo abierto con restricciones | Completa |
+| Orion-26B-A4B-v1.1 (Austriani) | 25,2 B | 4 B | no disponible | Gemma | GGUF (ik_llama.cpp) |
+| TheDrummer/Orion-26B-A4B-v1.1 | 25,2 B (base) | 4 B | no disponible | Gemma | safetensors (base) |
+| Alternativas de la misma categoría | no disponible | no disponible | no disponible | no disponible | no disponible |
 
-La comparativa es orientativa: los tres modelos de referencia cuentan con model cards detalladas, resultados de evaluacion publicados y comunidad activa, mientras que Orion-26B-A4B-v1.1 no ofrece ninguno de estos elementos. Cualquier comparacion de rendimiento con estos modelos resulta imposible con la informacion disponible.
+No se dispone de información sobre otros modelos comparables en la documentación proporcionada; la única comparación fiable es con el modelo base del que deriva esta cuantización.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de documentacion tecnica: no hay model card sustantiva, ni descripcion de arquitectura, ni datos de entrenamiento, lo que impide evaluar sesgos, calidad o idoneidad para produccion.
-- Riesgo elevado de alucinacion y comportamiento impredecible: sin informacion sobre alineacion (RLHF/DPO) ni evaluaciones, no puede asumirse ninguna garantia de calidad.
-- Idiomas no declarados: se desconoce si el modelo esta entrenado en castellano o en otros idiomas, lo que limita su uso multilingue.
-- Contexto desconocido: sin longitud de contexto publicada, no es posible planificar casos de uso con ventanas largas.
-- Formato de pesos no especificado: la integracion con motores de inferencia estandar no esta garantizada.
-- Licencia Apache 2.0: permite uso comercial y modificacion, pero el usuario asume todo el riesgo sobre el comportamiento del modelo, incluidos posibles sesgos no documentados.
-- Repositorio sin traccion: cero descargas y cero likes en la fecha de publicacion, sin evidencia de validacion por parte de la comunidad.
-- Fecha de creacion futura respecto a la mayoria de referencias del ecosistema: conviene verificar la integridad y procedencia de los artefactos antes de su uso.
+- Sesgos conocidos: no disponible en la información proporcionada; al ser un modelo orientado a roleplay y contenido sin censura, es previsible que refleje sesgos de su dataset de entrenamiento, aunque no se documentan.
+- Riesgo de alucinación: inherente a los modelos generativos; no se aportan métricas específicas.
+- Limitaciones de idioma: la model card declara únicamente inglés (en), por lo que el rendimiento en castellano no está garantizado.
+- Restricciones de licencia: licencia Gemma, que impone condiciones de uso comercial y de redistribución; es necesario revisar los términos de la licencia Gemma antes de cualquier uso en producción.
+- Contenido NSFW y uncensored: el modelo está etiquetado como not-for-all-adversaries y orientado a contenido adulto; su uso requiere control de acceso y cumplimiento normativo.
+- Longitud de contexto: etiquetado como long-context pero sin valor numérico confirmado; no debe asumirse una ventana concreta sin verificación.
+- Formato y librería: los pesos son GGUF para ik_llama.cpp, lo que limita su uso directo en otros runtimes sin conversión.
+- Fecha de creación: el repositorio figura creado el 2026-11-19, dato que conviene verificar por posible inconsistencia en los metadatos.
 
 ## Enlaces
 
-- Repositorio en Hugging Face: https://huggingface.co/Austriani/Orion-26B-A4B-v1.1
-- Paper, blog o demo: no disponible
-- Repositorio de codigo: no disponible
+- Hugging Face: https://huggingface.co/Austriani/Orion-26B-A4B-v1.1
+- Modelo base: https://huggingface.co/TheDrummer/Orion-26B-A4B-v1.1
+- No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información proporcionada.

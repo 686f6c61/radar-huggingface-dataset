@@ -2,115 +2,135 @@
 
 ## Resumen
 
-Kimi-K3.1-Pro-DSpark es un modelo borrador (draft model) disenado especificamente para decodificacion especulativa sobre el modelo objetivo Kimi K3.1 Pro. No es un modelo generativo autonomo: recibe los hidden states de cinco capas del modelo objetivo y propone bloques de hasta siete tokens por pasada, que el modelo grande verifica en paralelo. Lo desarrolla RedHatAI en colaboracion con el equipo Speculators de Red Hat AI, empleando la libreria Speculators del proyecto vLLM.
+Kimi-K3.1-Pro-DSpark es un modelo borrador (draft model) disenado especificamente para decodificacion especulativa sobre el modelo objetivo Kimi K3.1 Pro de Moonshot AI. No es un modelo generativo autonomo: recibe los estados ocultos de cinco capas del modelo objetivo y propone bloques de hasta 7 tokens que el modelo grande verifica en paralelo, acelerando la inferencia sin alterar la distribucion de salida. Lo desarrolla RedHatAI en colaboracion con el equipo Speculators de Red Hat AI, utilizando la libreria Speculators del proyecto vLLM.
 
-El checkpoint contiene 2.479.976.577 parametros en BF16 (aproximadamente 5 GB en safetensors) distribuidos en cinco capas decoder densas. Su rasgo arquitectonico mas relevante es que cada capa emplea atencion con ventana deslizante de 2.048 tokens sobre 96 cabezas de consulta y 16 cabezas KV (GQA, dimension de cabeza 64), de modo que el coste de atencion y la cache KV del borrador permanecen constantes aunque el contexto del modelo objetivo crezca hasta 1.048.576 tokens.
+El checkpoint es la version estable que sustituye a Kimi-K3.1-Pro-DSpark-preview. Con 2.479.976.577 parametros en BF16 (aproximadamente 5 GB de pesos), emplea una arquitectura de 5 capas decoder densas con atencion grouped-query y una ventana deslizante de 2.048 tokens en cada capa, lo que mantiene constante el coste de atencion y la cache KV del borrador independientemente de la longitud del contexto. Declara soporte de contexto de hasta 1.048.576 tokens, alineado con la ventana de Kimi K3.1 Pro.
 
-Es relevante ahora porque la decodificacion especulativa es una de las pocas tecnicas que reduce la latencia de inferencia sin alterar la distribucion de salida del modelo grande. Este checkpoint sustituye a Kimi-K3.1-Pro-DSpark-preview y publica tasas de aceptacion por posicion sobre diez benchmarks, lo que permite estimar con detalle la ganancia real de throughput antes de desplegarlo.
+Su relevancia es practica: la decodificacion especulativa es una de las tecnicas mas eficaces para reducir la latencia de generacion en modelos grandes, y este borrador esta optimizado para el modelo Kimi K3.1 Pro con integracion directa en vLLM. En la evaluacion publicada alcanza una longitud de aceptacion agrupada de 3,864 tokens por paso de verificacion, con un 79% de aceptacion en la primera posicion.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder denso, 5 capas, con GQA y sliding-window attention de 2.048 tokens; cabezas Markov (rango 512) y de confianza; embedding y LM head compartidos con el modelo objetivo |
-| Parametros totales | 2.479.976.577 (2,5B) |
+| Arquitectura | Transformer decoder denso, 5 capas, grouped-query attention con ventana deslizante de 2.048 tokens por capa |
+| Parametros totales | 2.479.976.577 (BF16) |
 | Parametros activos | no aplica (no es MoE) |
-| Longitud de contexto | 1.048.576 tokens de contexto del objetivo; cada capa del borrador atiende solo a los ultimos 2.048 |
-| Tipos de cuantizacion | BF16 (unico formato indicado en la model card); no se documentan GGUF, FP8 ni INT4 |
+| Longitud de contexto | 1.048.576 tokens (cada capa atiende solo a los ultimos 2.048) |
+| Tipos de cuantizacion | no disponible (checkpoint publicado en BF16) |
 | Idiomas soportados | no disponible |
 | Licencia | no disponible |
-| Formato de pesos | safetensors, con custom_code |
-
-Otros datos tecnicos: hidden size 7168, FFN 14336, 96 cabezas de consulta y 16 KV con head dim 64; entrada compuesta por hidden states de 5 capas del modelo objetivo; bloque de borrador de 7 tokens por forward pass.
+| Formato de pesos | safetensors (custom_code) |
+| Cabeza de atencion | 96 cabezas de query, 16 cabezas KV, dimension de cabeza 64 |
+| Hidden size / FFN | 7168 / 14336 |
+| Entrada | estados ocultos de 5 capas del modelo objetivo |
+| Bloque de borrador | 7 tokens por forward pass |
+| Cabezas auxiliares | cabeza Markov (rango 512) y cabeza de confianza; embedding y LM head compartidos con el objetivo |
+| Tamano del repo | 5,0 GB |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un borrador ligero de cinco capas densas que no procesa tokens directamente, sino los hidden states extraidos de cinco capas del Kimi K3.1 Pro. Sobre esa representacion aplica atencion grouped-query con ventana deslizante de 2.048 tokens en todas las capas, lo que mantiene fija tanto la complejidad de atencion como el tamano de la cache KV del borrador independientemente de la longitud del contexto del objetivo. La salida se produce mediante dos cabezas: una cabeza Markov de rango 512, que modela dependencias entre tokens consecutivos del bloque propuesto, y una cabeza de confianza que estima la probabilidad de aceptacion. El embedding de entrada y el LM head se comparten con el modelo objetivo, lo que reduce el numero de parametros propios y alinea el espacio de vocabulario.
+El modelo es un borrador ligero de 5 capas densas que no procesa tokens directamente, sino los estados ocultos extraidos de cinco capas del modelo objetivo Kimi K3.1 Pro. Cada capa del borrador aplica grouped-query attention con 96 cabezas de query, 16 cabezas KV y dimension de cabeza 64, con una ventana deslizante fija de 2.048 tokens. Esta decision de diseno mantiene acotado el coste de atencion y el tamano de la cache KV del borrador a medida que crece el contexto, lo que permite mantener la eficiencia de drafting incluso en ventanas de hasta 1M tokens. La red oculta tiene tamano 7168 y FFN de 14336.
 
-Cada forward pass genera un bloque de siete tokens candidatos. En el servidor se configura con `num_speculative_tokens: 7`, `draft_sample_method: probabilistic` y `rejection_sample_method: block`, de forma que el modelo objetivo valida el bloque completo y acepta el prefijo correcto. La model card no detalla el volumen de tokens de entrenamiento, la composicion del dataset ni si se emplearon tecnicas de RLHF o DPO; esa informacion no esta disponible. El checkpoint es un trabajo conjunto con el equipo Speculators de Red Hat AI y se construyo con la libreria Speculators de vLLM.
+Sobre la representacion del borrador se anaden dos cabezas: una cabeza Markov de rango 512, que modela la dependencia entre tokens consecutivos del bloque propuesto, y una cabeza de confianza que estima la probabilidad de aceptacion. El embedding de entrada y la LM head se comparten con el modelo objetivo, lo que reduce parametros y alinea el espacio de vocabulario. El borrador propone 7 tokens por forward pass y se entrena de forma conjunta con el objetivo mediante la libreria Speculators de vLLM. No se dispone de informacion publicada sobre el volumen de tokens de entrenamiento, la composicion del dataset ni el uso de RLHF o DPO.
 
 ## Capacidades
 
-- Decodificacion especulativa: propone bloques de 7 tokens por pasada para acelerar la generacion del modelo objetivo Kimi K3.1 Pro.
-- Prediccion multi-token con cabeza Markov de rango 512, que modela la coherencia interna del bloque propuesto.
-- Estimacion de confianza por token mediante cabeza dedicada, util para decidir la longitud efectiva del bloque.
-- Operacion en contexto largo: mantiene coste de atencion y cache KV constantes gracias a la ventana deslizante de 2.048 tokens, con soporte hasta 1M tokens del objetivo.
-- Integracion nativa con vLLM mediante `--speculative-config` con metodo `dspark`.
-- No genera texto de forma autonoma: requiere el modelo objetivo y sus hidden states intermedios.
-- No se documentan capacidades de tool calling, agentes, vision, audio ni modo thinking propias; dependen integramente del modelo objetivo.
-- Cobertura multilingue: no disponible.
+- Decodificacion especulativa: propone bloques de 7 tokens por paso que Kimi K3.1 Pro verifica en paralelo, acelerando la generacion sin modificar la distribucion del modelo objetivo.
+- Drafting en contexto largo: gracias a la ventana deslizante de 2.048 tokens por capa, mantiene una longitud de aceptacion estable hasta 1M tokens de contexto (3,935 en AA-LCR, 3,516 en BEAM 128K, 3,421 en BEAM 1M).
+- Muestreo probabilistico: soporta `draft_sample_method: probabilistic` y `rejection_sample_method: block` en la configuracion de vLLM.
+- Cabeza de confianza: permite estimar la aceptacion por token, util para verificacion adaptativa (aunque la configuracion de referencia la desactiva con `enable_adaptive_verification: false`).
+- Integracion con vLLM: se sirve como componente del servidor vLLM mediante `--speculative-config` con metodo `dspark`.
+- No es un modelo generativo autonomo: no responde prompts por si mismo ni soporta tool calling, agentes o vision de forma independiente.
 
 ## Casos de uso
 
-- Reduccion de latencia en inferencia de Kimi K3.1 Pro: desplegado junto al modelo objetivo en vLLM, el borrador eleva la longitud de aceptacion agrupada a 3,864 tokens por paso de verificacion, lo que se traduce en menos pasos secuenciales para producir la misma salida.
-- Servicio de razonamiento matematico interactivo: en GSM8K alcanza una longitud de aceptacion de 5,566 con tasa de aceptacion de 0,91 en la primera posicion, adecuado para asistentes que resuelven problemas paso a paso y necesitan baja latencia percibida.
-- Generacion de codigo en produccion: en HumanEval (4,660) y MBPP (4,376) mantiene tasas de aceptacion superiores a 0,80 en la primera posicion, lo que lo hace util en pipelines de autocompletado y generacion de tests donde el tiempo por token es critico.
-- Procesamiento de documentos largos: con entradas de 826K a 1,04M tokens en BEAM 1M conserva una longitud de aceptacion de 3,421, lo que permite resumir o extraer informacion de contratos y expedientes extensos sin que el coste del borrador crezca con el contexto.
-- Analisis de repositorios y tareas de SWE: en SWE-bench Pro registra 3,302 de longitud de aceptacion sobre prompts de hasta 2.048 tokens de salida, adecuado para agentes que editan codigo en multiples pasos.
-- Despliegue en entornos con presupuesto de VRAM ajustado: al ocupar unos 5 GB en BF16 y mantener una cache KV fija de 2.048 tokens por capa, el borrador anade un coste de memoria acotado frente al modelo objetivo.
-- Evaluacion comparativa de tecnicas de decodificacion especulativa: las tasas de aceptacion por posicion publicadas permiten calibrar politicas de muestreo y longitud de bloque en despliegues propios.
+- Aceleracion de inferencia en produccion con Kimi K3.1 Pro: desplegar el par objetivo-borrador en vLLM con tensor parallelism de 8 GPUs para reducir la latencia por token en cargas de chat y generacion de codigo, donde la aceptacion es mas alta (4,660 en HumanEval, 4,376 en MBPP).
+- Razonamiento matematico de alto volumen: en cargas tipo GSM8K la longitud de aceptacion alcanza 5,566, lo que se traduce en una reduccion significativa de pasos de decodificacion en pipelines de resolucion de problemas matematicos.
+- Procesamiento de documentos largos y RAG: con ventana de 1M tokens y aceptacion de 4,289 en la categoria RAG de SpeedBench, es adecuado para resumir o responder sobre corpus extensos manteniendo throughput.
+- Agentes de codificacion sobre repositorios: para tareas tipo SWE-bench Pro (aceptacion 3,302) y generacion de parches, el borrador reduce el coste de los turnos largos de agente sin tocar la calidad del modelo objetivo.
+- Servicio de chat multi-turno: en MT-Bench la aceptacion es 3,393 y en la categoria Humanities de SpeedBench 3,035, suficiente para mejorar la interactividad en asistentes conversacionales.
+- Despliegue con presupuesto de latencia estricto: al mantener fija la cache KV del borrador, se puede servir con contextos largos sin que el coste de drafting crezca linealmente, util en plataformas de inferencia multi-tenant.
+- Evaluacion interna de tecnicas de decodificacion especulativa: sirve como referencia reproducible para comparar metodos de drafting (EAGLE, Medusa, DSpark) sobre un objetivo de gran tamano.
 
 ## Benchmarks y rendimiento
 
-Metrica empleada: longitud de aceptacion = 1 + tokens aceptados / borradores (incluye el token de bonificacion). Cliente con chat completions, temperatura 1,0 y top_p 0,95.
+Resultados de aceptacion publicados por el autor (longitud de aceptacion = 1 + tokens aceptados / borradores, incluyendo el token bonus):
 
-| Benchmark | Prompts | Max tokens | Longitud de aceptacion | Tasa de aceptacion pos. 1-7 |
-|---|---:|---:|---:|---|
-| GSM8K | 1.319 | 1.024 | 5,566 | 0,91 0,82 0,72 0,64 0,56 0,49 0,43 |
-| HumanEval | 164 | 1.024 | 4,660 | 0,86 0,71 0,59 0,49 0,40 0,34 0,28 |
-| MBPP | 974 | 1.024 | 4,376 | 0,84 0,68 0,55 0,44 0,35 0,28 0,23 |
-| MATH-500 | 500 | 2.048 | 4,445 | 0,84 0,69 0,56 0,45 0,37 0,30 0,24 |
-| SPEED-Bench low entropy (entradas de 10K tokens) | 302 | 1.536 | 3,619 | 0,78 0,58 0,42 0,31 0,23 0,17 0,13 |
-| SPEED-Bench coding | 80 | 4.096 | 4,159 | 0,81 0,64 0,50 0,40 0,32 0,27 0,22 |
-| MT-Bench | 80 | 1.024 | 3,393 | 0,76 0,54 0,38 0,27 0,20 0,14 0,11 |
-| SWE-bench Pro | 642 | 2.048 | 3,302 | 0,75 0,53 0,37 0,26 0,18 0,13 0,09 |
-| AIME 2026 | 30 | 4.096 | 3,429 | 0,77 0,56 0,40 0,28 0,20 0,14 0,10 |
-| Agrupado (pooled) | | | 3,864 | 0,79 0,61 0,46 0,35 0,27 0,21 0,17 |
+| Benchmark | Prompts | Max tokens | Longitud de aceptacion | Pos. 1 | Pos. 2 | Pos. 3 | Pos. 4 | Pos. 5 | Pos. 6 | Pos. 7 |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| GSM8K | 1.319 | 1.024 | 5,566 | 91% | 82% | 72% | 64% | 56% | 49% | 43% |
+| HumanEval | 164 | 1.024 | 4,660 | 86% | 71% | 59% | 49% | 40% | 34% | 28% |
+| MBPP | 974 | 1.024 | 4,376 | 84% | 68% | 55% | 44% | 35% | 28% | 23% |
+| MATH-500 | 500 | 2.048 | 4,445 | 84% | 69% | 56% | 45% | 37% | 30% | 24% |
+| SPEED-Bench low entropy | 302 | 1.536 | 3,619 | 78% | 58% | 42% | 31% | 23% | 17% | 13% |
+| SPEED-Bench coding | 80 | 4.096 | 4,159 | 81% | 64% | 50% | 40% | 32% | 27% | 22% |
+| MT-Bench | 80 | 1.024 | 3,393 | 76% | 54% | 38% | 27% | 20% | 14% | 11% |
+| SWE-bench Pro | 642 | 2.048 | 3,302 | 75% | 53% | 37% | 26% | 18% | 13% | 9% |
+| AIME 2026 | 30 | 4.096 | 3,429 | 77% | 56% | 40% | 28% | 20% | 14% | 10% |
+| Pooled | — | — | 3,864 | 79% | 61% | 46% | 35% | 27% | 21% | 17% |
 
-Contexto largo:
+Aceptacion por categoria en SpeedBench (880 conversaciones, 1.138 llamadas al modelo, max 4.096 tokens):
 
-| Benchmark | Prompts | Tokens de prompt | Max tokens | Longitud de aceptacion | Tasa de aceptacion pos. 1-7 |
-|---|---:|---|---:|---:|---|
-| AA-LCR | 100 | 95K de media | 1.024 | 3,935 | 0,81 0,64 0,49 0,37 0,27 0,21 0,15 |
-| BEAM 128K | 400 | 97K-125K | 2.048 | 3,516 | 0,78 0,58 0,41 0,29 0,20 0,14 0,10 |
-| BEAM 1M | 700 | 826K-1,04M | 2.048 | 3,421 | 0,77 0,56 0,40 0,28 0,19 0,13 0,09 |
+| Categoria | Longitud de aceptacion | Aceptacion de borradores |
+|---|---:|---:|
+| Coding | 4,0957 | 44,22% |
+| RAG | 4,2890 | 46,99% |
+| Summarization | 4,1758 | 45,37% |
+| Multilingual | 4,0903 | 44,15% |
+| Reasoning | 3,5954 | 37,08% |
+| QA | 3,4800 | 35,43% |
+| Math | 3,2025 | 31,46% |
+| STEM | 3,1874 | 31,25% |
+| Humanities | 3,0354 | 29,08% |
+| Roleplay | 3,0310 | 29,01% |
+| Writing | 2,8243 | 26,06% |
+| Pooled | 3,2690 | 32,41% |
 
-No se publican resultados de calidad del modelo objetivo (MMLU, exactitud en GSM8K, pass@1 en HumanEval) en la informacion disponible; las cifras anteriores miden unicamente aceptacion de tokens del borrador.
+Aceptacion en contexto largo:
+
+| Benchmark | Prompts | Tokens de prompt | Max tokens | Longitud de aceptacion |
+|---|---:|---|---:|---:|
+| AA-LCR | 100 | 95K de media | 1.024 | 3,935 |
+| BEAM 128K | 400 | 97K–125K | 2.048 | 3,516 |
+| BEAM 1M | 700 | 826K–1.04M | 2.048 | 3,421 |
+
+No se han publicado resultados de benchmarks de calidad del modelo objetivo en la informacion disponible; las metricas anteriores miden unicamente la eficiencia del borrador.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: aproximadamente 5 GB para los pesos en BF16 (tamano del repo: 5,0 GB), mas la cache KV del borrador, que es fija por la ventana de 2.048 tokens y no crece con el contexto.
-- GPU recomendadas: cualquier GPU con al menos 8-10 GB libres para alojar el borrador junto al modelo objetivo; en la practica el limite lo impone Kimi K3.1 Pro, no el borrador. Para el conjunto completo se requieren aceleradores de clase A100/H100 o superiores.
-- Cabe en GPU de consumo: si, el borrador por si solo cabe en RTX 4090 (24 GB), RTX 4080 (16 GB) y RTX 3090 (24 GB); el modelo objetivo determina si el despliegue conjunto es viable.
-- Opciones de despliegue: vLLM con `--speculative-config '{"method":"dspark","model":"...","num_speculative_tokens":7,"draft_sample_method":"probabilistic","rejection_sample_method":"block"}'`. No se documentan soportes para llama.cpp, Ollama ni TGI.
-- Latencia y throughput: no se publican cifras absolutas de tokens por segundo ni de latencia; la mejora debe estimarse a partir de la longitud de aceptacion (3,864 agrupada, hasta 5,566 en GSM8K) y del coste relativo de un forward pass del borrador frente al del objetivo.
+- VRAM del borrador: aproximadamente 5 GB en BF16 para los pesos; la cache KV del borrador es fija gracias a la ventana deslizante de 2.048 tokens por capa (96 cabezas de query, 16 KV, dim 64, 5 capas).
+- VRAM total: el borrador se sirve junto a Kimi K3.1 Pro, que requiere tensor parallelism de 8 GPUs segun la configuracion de referencia de vLLM; el borrador anade una carga marginal sobre ese despliegue.
+- GPUs recomendadas: la configuracion oficial usa `--tensor-parallel-size 8` con `--load-format fastsafetensors` y `--gpu-memory-utilization 0.90`, lo que apunta a nodos de 8 GPUs de clase datacenter (H100, H200, A100 80GB o equivalentes).
+- GPU de consumo: el borrador por si solo cabe en una RTX 4090 (24 GB) en BF16, pero no es funcional sin el modelo objetivo Kimi K3.1 Pro, que no cabe en hardware de consumo.
+- Opciones de despliegue: vLLM con `--speculative-config '{"method":"dspark",...}'` y la variable de entorno `VLLM_KIMI_K3_AUX_ATTN_RES_STREAM=0`; requiere `--trust-remote-code` por el codigo personalizado. No se documenta soporte en llama.cpp, Ollama ni TGI.
+- Parametros de servicio de referencia: `--max-model-len 65536`, `--max-num-seqs 128`, `--max-num-batched-tokens 8192`, `--no-enable-prefix-caching`, `--reasoning-parser kimi_k3`, `--per-request-spec-decode-metrics summary`.
+- Latencia y throughput: no se publican cifras absolutas de tokens por segundo en la informacion disponible; la mejora se expresa como longitud de aceptacion (3,864 agrupada), que se traduce directamente en menos pasos de verificacion por token generado.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos de otros modelos borrador en la informacion proporcionada, por lo que la comparacion cuantitativa no esta disponible. A modo de referencia estructural:
+| Modelo | Tipo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
+|---|---|---|---|---|---|---|
+| Kimi-K3.1-Pro-DSpark (este) | Borrador de decodificacion especulativa | 2,48B | 1.048.576 (ventana 2.048) | DSpark + vLLM Speculators | no disponible | Hugging Face |
+| Kimi-K3.1-Pro-DSpark-preview | Borrador (version previa) | no disponible | no disponible | DSpark | no disponible | Hugging Face (Inferact) |
+| EAGLE-3 (familia) | Borrador de decodificacion especulativa | variable por objetivo | depende del objetivo | EAGLE | no disponible en esta ficha | no disponible |
+| Medusa (familia) | Cabezas de decodificacion especulativa | variable por objetivo | depende del objetivo | Medusa | no disponible en esta ficha | no disponible |
 
-| Modelo | Parametros | Contexto | Tipo | Licencia |
-|---|---:|---|---|---|
-| Kimi-K3.1-Pro-DSpark | 2,5B | 1M (objetivo); 2.048 por capa | Borrador de decodificacion especulativa | no disponible |
-| Kimi-K3.1-Pro-DSpark-preview | no disponible | no disponible | Borrador (version anterior, sustituida) | no disponible |
-| Alternativas de otros equipos | no disponible | no disponible | no disponible | no disponible |
+No se dispone de datos de benchmarks comparativos directos entre este borrador y alternativas sobre el mismo modelo objetivo en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- No es un modelo autonomo: sin Kimi K3.1 Pro y sus hidden states intermedios no puede generar texto; no debe evaluarse como modelo de chat o de razonamiento independiente.
-- La tasa de aceptacion cae de forma marcada con la posicion del token: del 0,79 en la primera posicion al 0,17 en la septima (agrupado), y hasta 0,09 en SWE-bench Pro; el bloque de 7 tokens rara vez se acepta completo.
-- El rendimiento depende del dominio: MT-Bench (3,393) y SWE-bench Pro (3,302) quedan muy por debajo de GSM8K (5,566), por lo que la ganancia de throughput varia segun la carga.
-- En contexto muy largo la aceptacion se degrada: BEAM 1M baja a 3,421 frente a 3,935 de AA-LCR con prompts de 95K.
-- Riesgo de alucinacion: el borrador no introduce contenido propio en la salida final, ya que el modelo objetivo verifica cada token; el riesgo de sesgo o alucinacion recae en el modelo objetivo.
-- Licencia no disponible: no puede confirmarse el uso comercial ni las condiciones de redistribucion; es un caveat bloqueante para produccion hasta verificarlo.
-- Idiomas soportados no disponibles; la cobertura linguistica depende del modelo objetivo.
-- Solo se documenta BF16; no hay pesos cuantizados oficiales, lo que limita opciones de despliegue en hardware con poca memoria.
-- Requiere custom_code y una version de vLLM con soporte del metodo `dspark`; no se garantiza compatibilidad con otros runtimes.
-- El checkpoint sustituye a Kimi-K3.1-Pro-DSpark-preview; configuraciones que apunten al preview deben migrarse.
-- Creado y actualizado el 2026-11-17, con 0 descargas y 0 likes en el momento de la consulta: no hay evidencia de uso en produccion ni validacion independiente.
+- No es un modelo autonomo: solo funciona como borrador acoplado a Kimi K3.1 Pro; no responde prompts ni ejecuta tareas por si mismo.
+- Dependencia de version: esta optimizado para Kimi K3.1 Pro y sustituye a la version preview; cambios en el modelo objetivo o en la libreria Speculators pueden romper la compatibilidad.
+- Requiere codigo personalizado: el uso de `--trust-remote-code` implica ejecutar codigo del repositorio, con el riesgo de seguridad asociado en entornos de produccion.
+- Licencia no disponible: no se puede confirmar si el uso comercial esta permitido; es imprescindible verificar los terminos antes de desplegar.
+- Idiomas no declarados: la aceptacion varia por tarea y dominio (26% en Writing frente a 47% en RAG en SpeedBench), por lo que el beneficio real depende de la carga.
+- Riesgo de alucinacion: el borrador no genera contenido propio, pero una aceptacion baja en dominios de baja entropia (SPEED-Bench low entropy, 3,619) reduce la ganancia y puede aumentar el coste de verificacion si se ajusta mal el numero de tokens especulativos.
+- Configuracion sensible: la eleccion de `num_speculative_tokens`, `draft_sample_method` y `rejection_sample_method` afecta directamente al rendimiento; la configuracion de referencia desactiva la verificacion adaptativa.
+- Sin datos de sesgo: no se publica informacion sobre sesgos, ya que el modelo hereda el comportamiento del objetivo y no se evalua de forma independiente.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/RedHatAI/Kimi-K3.1-Pro-DSpark
-- Checkpoint anterior (preview): https://huggingface.co/Inferact/Kimi-K3.1-Pro-DSpark-preview
+- Modelo en Hugging Face: https://huggingface.co/RedHatAI/Kimi-K3.1-Pro-DSpark
+- Checkpoint previo: https://huggingface.co/Inferact/Kimi-K3.1-Pro-DSpark-preview
 - Libreria Speculators de vLLM: https://github.com/vllm-project/speculators
+- Modelo objetivo: https://huggingface.co/moonshotai/Kimi-K3.1-Pro

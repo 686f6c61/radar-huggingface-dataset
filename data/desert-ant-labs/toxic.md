@@ -2,99 +2,94 @@
 
 ## Resumen
 
-Toxic es un modelo de clasificación de texto desarrollado por Desert Ant Labs, un laboratorio europeo especializado en modelos de IA on-device. Su función principal es la detección de discurso de odio, abuso y amenazas en 23 idiomas europeos, actuando como herramienta de triaje para moderadores humanos. El modelo se distribuye en formatos optimizados para ejecución local en dispositivos móviles, navegadores y sistemas embebidos, sin necesidad de enviar texto a servidores externos.
+Toxic es un modelo de clasificación de texto especializado en detección de discurso de odio, abuso y amenazas, desarrollado por Desert-Ant-Labs. Su particularidad principal es que está disenado para ejecutarse íntegramente en dispositivo (on-device), sin enviar el texto a ningún servidor, lo que permite moderar contenido antes de que se publique preservando la privacidad del usuario. El modelo clasifica el texto en tres cabeceras de contenido (HATEFUL, ABUSIVE, THREAT) y ocho cabeceras de colectivo objetivo (RACE, RELIGION, NATIONAL_ETHNIC_ORIGIN, SEXUAL_ORIENTATION, GENDER, DISABILITY, AGE, OTHER).
 
-El modelo se basa en un encoder transformer de la familia XLM-R (tokenizador SentencePiece-Unigram recortado a 95.552 piezas) con aproximadamente 159,6 millones de parámetros. Emplea una arquitectura multi-cabeza: tres cabezas de contenido (HATEFUL, ABUSIVE, THREAT) y diez cabezas de objetivo que identifican el grupo protegido al que se dirige el discurso. Los pesos cuantizados ocupan entre 80 y 100 MB según el formato, lo que permite su despliegue en hardware de consumo. La licencia es de código disponible (source-available) con restricciones específicas, no es open source estándar.
+La arquitectura es una red de clasificación de texto ligera con una tabla de embeddings compartida (cuantizada a 4 bits) y un grafo de cómputo cuantizado a 8 bits, distribuido en formatos Core ML (Apple) y LiteRT/TFLite (Android, Linux, Windows, Node, navegador). La ventana de contexto es de 128 tokens (aproximadamente 80 palabras), con procesamiento por ventanas solapadas para textos más largos. El modelo soporta 35 idiomas y está en estado beta (versión de pesos v0.2.2).
 
-Su relevancia actual radica en ofrecer una alternativa de moderación de contenido que preserva la privacidad (inferencia 100% local) y que supera en precisión a modelos mucho más grandes en el benchmark Multilingual HateCheck, según los datos publicados por el propio laboratorio.
+Su relevancia actual radica en la combinación de moderación multilingüe, latencia muy baja (2,0 ms por mensaje corto en un iPhone 16 Pro) y despliegue multiplataforma sin dependencia de infraestructura en la nube. La licencia es propietaria de tipo source-available, lo que condiciona su uso comercial.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer encoder (lineaje XLM-R, tokenizador SentencePiece-Unigram recortado a 95.552 piezas) |
-| Parametros totales | ~159,6 millones (estado PyTorch fp32, vocabulario recortado) |
+| Arquitectura | Red de clasificación de texto con tabla de embeddings compartida y grafo de cómputo cuantizado (no se especifica el tipo exacto de transformer o red) |
+| Parametros totales | no disponible |
 | Parametros activos | no aplica (no es MoE) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | int4 blockwise-32 (LiteRT/TFLite), int4 + int4 embedding (ONNX), 4-bit palettized (Core ML), fp32 (PyTorch) |
-| Idiomas soportados | 23: bg, cs, da, de, el, en, es, et, fi, fr, ga, hr, hu, it, lt, lv, nl, pl, pt, ro, sk, sl, sv |
-| Licencia | desert-ant-labs-source-available-1.0 (código disponible, no open source) |
-| Formato de pesos | TFLite (90,6 MB), ONNX (100,2 MB), Core ML mlmodelc (80,2 MB), PyTorch state dict (638,5 MB) |
+| Longitud de contexto | 128 tokens por ventana (aproximadamente 80 palabras); ventanas solapadas para textos más largos |
+| Tipos de cuantizacion | Capas del grafo a 8 bits; tabla de embeddings a 4 bits |
+| Idiomas soportados | 35 (ar, bg, ca, cs, da, de, el, en, es, et, fi, fr, ga, he, hi, hr, hu, id, it, ja, ko, lt, lv, nl, pl, pt, ro, ru, sk, sl, sv, th, tr, uk, vi, zh) |
+| Licencia | desert-ant-labs-source-available (propietaria, source-available) |
+| Formato de pesos | Core ML compilado (.mlmodelc), LiteRT (.tflite), tabla de embeddings binaria (.bin), tokenizador binario (.bin) |
 
 ## Arquitectura y entrenamiento
 
-Toxic es un encoder transformer basado en la arquitectura XLM-R, con un tokenizador SentencePiece-Unigram recortado a 95.552 piezas para reducir el tamaño del vocabulario. El modelo comparte un único encoder para dos capas de salida multi-etiqueta: una capa de contenido con tres cabezas (HATEFUL, ABUSIVE, THREAT) y una capa de objetivo con diez cabezas correspondientes a los motivos de protección de la Directiva marco 2008/913/JHA (raza, color, religión, ascendencia, origen nacional o étnico, orientación sexual, género, discapacidad, edad y otro). Cada cabeza se entrena con supervisión específica y los umbrales de activación se definen por cabeza e idioma.
+No se dispone de información detallada sobre la arquitectura interna más allá de lo descrito en la model card: se trata de un clasificador de texto con múltiples cabeceras de salida (tres de contenido y ocho de colectivo objetivo), una tabla de embeddings compartida entre los dos runtimes (Core ML y LiteRT) y un grafo de cómputo cuantizado. En Apple, el grafo se ejecuta íntegramente en el Neural Engine; en el resto de plataformas se ejecuta mediante LiteRT. El SDK no aplica preprocesado al texto (no convierte a minúsculas, no recorta, no elimina puntuación, emojis ni marcado).
 
-El entrenamiento se basó en anotaciones humanas de severidad, incluyendo los votos de la multitud de civil_comments para las etiquetas `insult` e `identity_attack`, así como equivalentes por corpus. No se menciona el uso de RLHF o DPO. Los pesos enviados se midieron directamente en los artefactos exportados, no extrapolados de un checkpoint de entrenamiento. La arquitectura incluye un mecanismo `disabled_heads` en los metadatos que permite desactivar cabezas que no superen una puerta de calidad, fijando su umbral a un valor inalcanzable en todas las plataformas.
+No se han publicado datos sobre el volumen de entrenamiento, la composición del dataset, ni si se emplearon técnicas de ajuste como RLHF o DPO. Tampoco se documentan innovaciones técnicas adicionales más allá de la cuantización mixta (4 bits en embeddings, 8 bits en capas) y la ejecución en Neural Engine. Los umbrales por defecto de cada cabecera se eligieron sobre un conjunto de validación, según la model card.
 
 ## Capacidades
 
-- Detección de discurso de odio (HATEFUL) según la definición de la UE (incitación pública a la violencia o al odio contra un grupo protegido).
-- Clasificación de lenguaje abusivo e insultante (ABUSIVE), con ordenación por severidad. Es un superconjunto de HATEFUL.
-- Detección de amenazas de violencia hacia personas o grupos (THREAT).
-- Identificación del grupo protegido objetivo entre diez categorías (RACE, COLOUR, RELIGION, DESCENT, NATIONAL_ETHNIC_ORIGIN, SEXUAL_ORIENTATION, GENDER, DISABILITY, AGE, OTHER).
-- Clasificación multi-etiqueta: un texto puede activar varias cabezas simultáneamente.
-- Multilingüe: 23 idiomas europeos, con evaluación en siete de ellos (de, fr, nl, pt, es, it, pl) sobre Multilingual HateCheck real.
-- Inferencia 100% on-device: no envía texto a servidores externos.
-- Compatible con LiteRT/TFLite (Android/Linux), ONNX Runtime Web (navegador) y Core ML (iOS/macOS con CPU y Neural Engine).
+- Clasificación de contenido tóxico en tres categorías: HATEFUL (incitación al odio o violencia contra un grupo), ABUSIVE (lenguaje insultante o degradante) y THREAT (amenaza de violencia).
+- Identificación del colectivo objetivo en textos hateful mediante ocho cabeceras: raza, religión, origen nacional o étnico, orientación sexual, género, discapacidad, edad y otros.
+- Salida de probabilidades por cabecera en el rango 0–1, junto con los umbrales aplicados y las cabeceras activadas.
+- Umbrales configurables por cabecera para ajustar la sensibilidad (subir para marcar menos, bajar para marcar más).
+- Procesamiento de textos largos mediante ventanas solapadas de 128 tokens, asignando al texto la puntuación máxima de cualquiera de sus ventanas.
+- Soporte multilingüe en 35 idiomas.
+- Ejecución on-device en iOS, macOS, tvOS, visionOS, Android, Linux, Windows, navegador y Node.
+- Integración mediante SDK en Swift, Kotlin y JavaScript/TypeScript.
+- No dispone de tool calling, function calling, razonamiento multi-paso ni generación de texto: es exclusivamente un clasificador.
 
 ## Casos de uso
 
-- Moderación de comentarios en redes sociales y foros: el modelo clasifica mensajes entrantes en tiempo real y asigna una prioridad de revisión a los moderadores humanos, indicando si el mensaje es odio, abuso o amenaza y a qué grupo afecta.
-- Filtrado de mensajes abusivos en plataformas de contenido generado por usuarios: puede integrarse en pipelines de publicación para retener mensajes sospechosos hasta su revisión, sin bloquear automáticamente.
-- Moderación en juegos online y comunidades de jugadores: al ejecutarse en el dispositivo, no añade latencia de red y funciona sin conexión, adecuado para chats de voz o texto en tiempo real.
-- Sistemas de atención al cliente: clasifica interacciones de usuarios para detectar lenguaje abusivo o amenazas hacia agentes humanos, permitiendo escalar el caso a supervisión antes de que la conversación continúe.
-- Aplicaciones móviles de mensajería: integración como capa de protección para que los usuarios puedan marcar o bloquear mensajes ofensivos sin depender de servidores centrales.
-- Auditoría de contenido en plataformas europeas: ayuda a cumplir con la normativa de la UE sobre discurso de odio, proporcionando un triaje inicial que un moderador humano debe validar.
-- Herramientas de investigación social: análisis de corpus multilingües para estudiar la prevalencia de discurso de odio por grupo protegido e idioma, usando las cabezas de objetivo para desglosar resultados.
+- Moderación previa a la publicación en redes sociales y foros: el SDK analiza el comentario antes de enviarlo y, si `isToxic` es verdadero, lo retiene para revisión, con una latencia de 2,0 ms en iPhone 16 Pro que permite hacerlo de forma síncrona en la interfaz.
+- Filtrado en aplicaciones de mensajería y chats: al ejecutarse on-device y sin enviar texto a servidores, preserva el cifrado extremo a extremo y la privacidad de las conversaciones, algo crítico en mensajería personal.
+- Moderación en clientes de correo y suites ofimáticas: el modelo puede advertir al redactor antes de enviar un mensaje abusivo, usando la cabecera ABUSIVE y los umbrales configurables para ajustar la sensibilidad por contexto.
+- Protección de menores en plataformas educativas y comunidades infantiles: el despliegue en navegador y en dispositivos móviles permite filtrar contenido en el propio cliente sin infraestructura de moderación centralizada, con soporte para 35 idiomas.
+- Análisis de comentarios en aplicaciones de noticias y medios: el procesamiento por ventanas solapadas permite analizar comentarios de hasta varios cientos de palabras, reteniendo los que superen el umbral en HATEFUL o THREAT.
+- Sistemas de soporte y atención al cliente: el modelo puede clasificar mensajes entrantes de usuarios para derivar los que contengan amenazas o abuso a un flujo de escalado, con la ventaja de que el texto no sale del dispositivo del agente o del cliente.
+- Investigación en ciencias sociales y análisis de discurso: la salida estructurada por cabeceras (contenido y colectivo objetivo) permite cuantificar tipos de toxicidad y colectivos afectados en corpus multilingües, aunque el límite de 128 tokens por ventana exige segmentar documentos largos.
 
 ## Benchmarks y rendimiento
 
-Según la model card, los resultados se midieron sobre los pesos enviados (shipped weights) y se desglosan por nivel de confianza. La métrica principal es macro-F1 sobre Multilingual HateCheck (MHC) real para siete idiomas de la UE.
-
-| Benchmark | Alcance | Resultado |
-|---|---|---|
-| Multilingual HateCheck (7-EU) | de, fr, nl, pt, es, it, pl | macro-F1 0,8470 (pesos enviados) |
-| Multilingual HateCheck (7-EU) | promedio de 3 ejecuciones de entrenamiento | macro-F1 0,834 |
-| textdetox (binario tóxico-vs-limpio) | 5 idiomas | macro-F1 0,724 |
-| offenseval2020 (binario tóxico-vs-limpio) | 3 idiomas | macro-F1 0,658 |
-
-El modelo card especifica que los resultados de textdetox y offenseval2020 provienen de corpus fuera del dominio de desarrollo, sin linaje compartido con los benchmarks de entrenamiento. Para los otros 15 idiomas no cubiertos por MHC real, se utilizaron conjuntos de evaluación sintéticos traducidos y auditados, cuyos números se consideran estimaciones de desarrollo y no son comparables con MHC.
+No se han publicado resultados de benchmarks en la información disponible. La model card únicamente reporta una latencia de 2,0 ms para un mensaje corto en un iPhone 16 Pro, sin métricas de precisión, recall, F1 ni comparaciones con otros modelos.
 
 ## Requisitos de hardware
 
-- Inferencia en CPU: el modelo cuantizado (int4) pesa entre 80 y 100 MB, por lo que puede ejecutarse en CPUs de móviles y ordenadores sin GPU dedicada.
-- GPU recomendada: no necesaria; el modelo está diseñado para edge y móvil. En caso de usar el checkpoint PyTorch (638 MB fp32), una GPU con 2-4 GB de VRAM es suficiente para inferencia.
-- Compatibilidad con hardware de consumo: sí, cualquier smartphone con Android (LiteRT), iPhone con iOS/macOS (Core ML con Neural Engine) y navegadores modernos (ONNX Runtime Web).
-- Opciones de despliegue: LiteRT/TFLite para Android y Linux, Core ML para iOS/macOS, ONNX Runtime Web para navegador, y PyTorch para investigación.
-- Latencia y throughput: no se proporcionan cifras concretas, pero al ser un modelo de ~160 M parámetros cuantizado, se espera latencia de milisegundos en dispositivos móviles modernos.
+- VRAM estimada: no aplica en el sentido habitual; el modelo está pensado para ejecución en CPU, GPU integrada o Neural Engine. El grafo Core ML ocupa 43 MB, el grafo LiteRT 44 MB y la tabla de embeddings 50 MB, con un total aproximado de 137 MB de pesos (el repositorio completo ocupa 1,1 GB).
+- GPU recomendadas: no se especifican; en Apple se ejecuta en el Neural Engine, y en el resto de plataformas mediante LiteRT (CPU/GPU según el runtime).
+- Cabe en cualquier dispositivo consumer moderno: iPhone, iPad, Mac, Apple TV, Vision Pro, dispositivos Android, PC con Linux o Windows y navegadores. No requiere GPU dedicada.
+- Opciones de despliegue: SDK oficial en Swift (Core ML), Kotlin (LiteRT) y JavaScript/TypeScript (LiteRT en navegador y Node). Los pesos se descargan de Hugging Face en el primer uso y se cachean.
+- Latencia: 2,0 ms por mensaje corto en iPhone 16 Pro según la model card. No se publican datos de throughput ni latencia en otras plataformas.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | MHC 7-EU macro-F1 | Licencia | Despliegue |
-|---|---|---|---|---|---|
-| Toxic (desert-ant-labs) | ~159,6 M | no disponible | 0,847 | source-available | On-device (TFLite, ONNX, Core ML) |
-| Shieldstral (Mistral) | 7 B (estimado) | no disponible | 0,79 (según Desert Ant Labs) | Apache 2.0 (Mistral) | Requiere GPU (16 GB VRAM según el sitio del fabricante) |
-| Guard models para móvil | no disponible | no disponible | 0,65 (según Desert Ant Labs) | no disponible | On-device |
+No se dispone de información sobre modelos comparables en la documentación proporcionada. A continuación se indica qué datos faltan para una comparación rigurosa:
 
-La comparativa se basa en los datos publicados por Desert Ant Labs en su sitio web. No se dispone de información oficial de Shieldstral ni de otros modelos de guardia para verificar estos números. Toxic supera en MHC 7-EU a Shieldstral (0,847 vs 0,79) y a los modelos de guardia para móvil (0,65), con un tamaño mucho menor.
+| Modelo | Parametros | Contexto | Idiomas | Licencia | Despliegue on-device |
+|---|---|---|---|---|---|
+| Toxic (desert-ant-labs) | no disponible | 128 tokens/ventana | 35 | source-available propietaria | Sí (Core ML, LiteRT) |
+| Alternativas de clasificación de toxicidad | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
 
-- Es una herramienta de triaje, no un veredicto: sus salidas son señales de escalada para revisión humana, no decisiones autónomas de eliminación de contenido.
-- La cabeza ABUSIVE no indica a quién va dirigido el abuso: no distingue si el objetivo es el lector, una persona nombrada o nadie en particular. Integraciones no deben inferir direccionalidad a partir del nombre o de una puntuación alta.
-- Los modos de fallo están publicados en la model card y deben leerse antes de integrar el modelo en cualquier ruta de aplicación de normas.
-- Los resultados para 15 de los 23 idiomas se basan en conjuntos sintéticos traducidos, no en el benchmark real Multilingual HateCheck; su precisión puede diferir en producción.
-- La licencia desert-ant-labs-source-available-1.0 no es open source estándar; puede imponer restricciones al uso comercial o a la redistribución. Se recomienda revisar los términos en https://license.desertant.com/1.0 antes de su uso.
-- El modelo no es un detector de toxicidad general: está especializado en discurso de odio según la normativa europea, por lo que puede no detectar otras formas de contenido problemático (acoso, desinformación, etc.).
-- No se ha publicado información sobre sesgos demográficos o lingüísticos específicos; se recomienda evaluar el modelo en el dominio y los idiomas de uso antes de desplegarlo.
+- Modelo en estado beta (versión de pesos v0.2.2): la API y el comportamiento pueden cambiar.
+- Ventana de contexto limitada a 128 tokens (unas 80 palabras) por ventana; los textos largos se analizan por ventanas solapadas y se puntúan con el máximo, lo que puede generar falsos positivos por fragmentos aislados.
+- No se han publicado métricas de precisión, recall ni F1, por lo que no es posible evaluar su fiabilidad frente a falsos positivos y negativos.
+- Riesgo de sesgo: al ser un clasificador de toxicidad multilingüe, puede tener un rendimiento desigual entre idiomas y colectivos; no se documenta la composición del dataset ni procesos de mitigación de sesgos.
+- Riesgo de alucinación no aplica en sentido generativo, pero sí de clasificaciones erróneas (falsos positivos y negativos) que pueden afectar a la libertad de expresión o dejar pasar contenido dañino.
+- Licencia propietaria source-available: el uso comercial está sujeto a los términos de https://license.desertant.com/, que no se detallan en la información disponible; es imprescindible revisarlos antes de integrarlo en producción.
+- La descarga de pesos desde Hugging Face en el primer uso requiere conectividad; el modo offline solo funciona tras el cacheo inicial.
+- El SDK no normaliza el texto (no convierte a minúsculas, no elimina emojis ni marcado), por lo que el comportamiento depende del texto tal cual se escribe.
+- No soporta generación de texto, razonamiento ni tool calling: su uso está acotado a clasificación.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/desert-ant-labs/toxic
-- Modelo especializado en inglés: https://huggingface.co/desert-ant-labs/toxic-en
-- Demo interactiva (Space): https://huggingface.co/spaces/desert-ant-labs/toxic-demo
-- Sitio web del modelo: https://desertant.com/models/toxic/
-- Organización en GitHub: https://github.com/Desert-Ant-Labs
-- Sitio web de Desert Ant Labs: https://desertant.com/
-- Licencia: https://license.desertant.com/1.0
+- Pesos v0.2.2: https://huggingface.co/desert-ant-labs/toxic/tree/v0.2.2
+- Demo: https://desertant.com/models/toxic/
+- Repositorio del SDK: https://github.com/Desert-Ant-Labs/desert-ant-core
+- Licencia: https://license.desertant.com/
+- Requisitos Swift: https://github.com/Desert-Ant-Labs/desert-ant-core/blob/main/README.md#swift
+- Requisitos Android: https://github.com/Desert-Ant-Labs/desert-ant-core/blob/main/README.md#android
+- Requisitos JavaScript/TypeScript: https://github.com/Desert-Ant-Labs/desert-ant-core/blob/main/README.md#javascript-and-typescript
+- Descargas y cacheo del modelo: https://github.com/Desert-Ant-Labs/desert-ant-core/blob/main/README.md#model-downloads-and-caching

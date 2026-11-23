@@ -2,95 +2,90 @@
 
 ## Resumen
 
-Llamatron es una cuantización GGUF del modelo NVIDIA-Nemotron-3-Nano-30B-A3B-BF16, publicada por el usuario nootxlm. No se trata de un modelo entrenado desde cero, sino de una copia comprimida del checkpoint original de NVIDIA, orientada a ejecución en hardware de consumo mediante llama.cpp. El modelo base es un transformer de tipo Mixture of Experts (MoE) con aproximadamente 31.580 millones de parámetros totales y un contexto declarado de 1.048.576 tokens.
+Llamatron es una cuantizacion GGUF del modelo NVIDIA Nemotron-3-Nano-30B-A3B-BF16, publicada por el usuario nootxlm. Se trata de una version comprimida del modelo original de NVIDIA, disenada para ejecutarse en hardware de consumo modesto: la model card documenta mediciones sobre una GTX 1650 Max-Q de 4 GB de VRAM y 16 GB de RAM del sistema. El modelo base es un transformer de tipo Mixture of Experts (MoE) con 31.577.940.288 parametros totales, del que solo una fraccion (los expertos activos, segun la nomenclatura "A3B" del nombre) se activa por token.
 
-La relevancia de esta ficha radica en que ilustra el flujo de cuantización guiada por matriz de importancia (imatrix) aplicado a un modelo MoE grande, con atención y memoria mantenidas en 8 bits y el resto reducido a 5 y 4 bits. El autor reporta un tamaño de archivo de 18,7 GB frente a los 63 GB del checkpoint en BF16, y una tasa de generación de 5,7 tokens por segundo frente a 0,6 del modelo completo en la misma máquina.
+La relevancia de esta publicacion reside en su enfoque practico: no se presenta como un modelo nuevo, sino como un artefacto de despliegue optimizado mediante cuantizacion guiada por importancia (imatrix) de llama.cpp, manteniendo las capas de atencion y memoria en 8 bits y redondeando el resto con mayor agresividad. El resultado es un unico fichero de 18.725.978.368 bytes que, segun el autor, es aproximadamente 3,4 veces mas pequeno que el modelo original y alcanza 5,7 tokens por segundo frente a los 0,6 del Nemotron Nano 30B en la misma maquina.
 
-El modelo incorpora un parche de reparación de caché documentado en la discusión 65 del repositorio original de NVIDIA, y el autor afirma que la calidad medida por perplejidad sobre texto retenido es prácticamente idéntica a la de una copia cuantizada sin guía de importancia. Es, por tanto, una opción a considerar para desplegar Nemotron Nano 30B en equipos sin GPU de gran capacidad, asumiendo las limitaciones de una cuantización agresiva.
+La model card describe el modelo como un "agente de decision" orientado a construir herramientas ausentes, con capacidad de razonamiento en modo thinking acotado mediante el parametro `--reasoning-budget` de llama.cpp. La licencia es la NVIDIA Nemotron Open Model License, que impone condiciones especificas para uso comercial.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer Mixture of Experts (MoE), derivada de NVIDIA-Nemotron-3-Nano-30B-A3B |
+| Arquitectura | Transformer Mixture of Experts (MoE), derivada de NVIDIA Nemotron-3-Nano-30B-A3B |
 | Parametros totales | 31.577.940.288 |
-| Parametros activos | no disponible (el nombre del modelo base indica 3B activos, pero no se confirma en la informacion proporcionada) |
-| Longitud de contexto | 1.048.576 tokens (carga verificada por el autor; no se ha ejecutado un benchmark de un millón de tokens) |
-| Tipos de cuantizacion | Mezcla de q8_0 (72 tensores), q5_0 (46 tensores) e iq4_nl (46 tensores); guiada por imatrix |
+| Parametros activos | no disponible (la nomenclatura "A3B" sugiere ~3B activos, no confirmado en la informacion) |
+| Longitud de contexto | no disponible (la model card usa `-c 2048` en el ejemplo de ejecucion) |
+| Tipos de cuantizacion | GGUF con cuantizacion imatrix; capas de atencion y memoria en 8 bits, resto con redondeo mas agresivo |
 | Idiomas soportados | no disponible |
-| Licencia | nvidia-nemotron-open-model-license |
-| Formato de pesos | GGUF (archivo `nemotron-split3b-imatrix.gguf`, 18,7 GB) |
+| Licencia | NVIDIA Nemotron Open Model License |
+| Formato de pesos | GGUF (fichero unico `nemotron-split3b-imatrix.gguf`, 18.725.978.368 bytes) |
 
 ## Arquitectura y entrenamiento
 
-El modelo subyacente es NVIDIA-Nemotron-3-Nano-30B-A3B-BF16, un transformer con arquitectura Mixture of Experts. La información disponible no detalla la composición del dataset de entrenamiento, el número de tokens vistos ni si hubo fases de RLHF o DPO. Lo que sí se documenta es el proceso de cuantización: primero se aplicó un parche de reparación de caché al checkpoint base y se convirtió a GGUF en precisión completa; después se midió una matriz de importancia sobre un texto de calibración de 71.157 bytes de prosa en inglés, dividido en 38 fragmentos, generando 185 entradas de importancia registradas en los metadatos del archivo (`quantize.imatrix.entries_count`, `quantize.imatrix.chunks_count`).
+Llamatron no introduce entrenamiento propio: es una cuantizacion del modelo nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16. La arquitectura subyacente es un transformer con capas de mezcla de expertos (MoE), con 52 capas segun la model card (el comando de ejemplo usa `-ngl 10` para descargar diez de esas 52 capas a la GPU). El proceso de cuantizacion emplea la tecnica imatrix de llama.cpp: primero se mide que pesos resultan mas criticos para el modelo y despues se redondea el resto gastando el error donde el modelo es menos sensible. Las capas responsables de atencion y memoria se preservan en 8 bits, mientras que el resto se comprime con mayor agresividad.
 
-La receta de redondeo mantiene en 8 bits los tensores que soportan la atención y la memoria del modelo, y aplica redondeo más agresivo al resto, con la matriz de importancia como única variable diferencial respecto a una copia cuantizada convencional. El censo de tensores es idéntico entre ambas copias: 72 en q8_0, 46 en q5_0 y 46 en iq4_nl. El autor reporta que el parche de caché, probado sobre el modelo completo de 63 GB, produjo tokens idénticos y redujo el tiempo de generación un 18,6 %. Una innovación destacable es que esta cuantización consigue que el modelo termine su razonamiento dentro de una ventana estándar de 128 tokens, algo que la copia cuantizada sin guía de importancia no lograba.
+La model card menciona que la version incluida incorpora una reparacion de cache documentada en la discusion 65 del repositorio del modelo base en Hugging Face, y que dicha reparacion se valido previamente sobre el modelo completo de 63 GB, obteniendo tokens identicos y una reduccion del 18,6% en tiempo de generacion. No se dispone de informacion sobre el dataset de entrenamiento original, el numero de tokens, ni si hubo fases de RLHF o DPO; esos datos corresponden al modelo base de NVIDIA y no se detallan en la informacion proporcionada.
 
 ## Capacidades
 
-- Generación de texto conversacional y de tipo base, según la etiqueta `text-generation` y el tag `conversational`.
-- Razonamiento con modo de pensamiento: el autor describe que el modelo "termina su pensamiento" dentro de una ventana de 128 tokens antes de responder.
-- Uso de herramientas (tool calling) a nivel de razonamiento escrito: en la prueba del autor, el modelo dedujo el formato de una herramienta inexistente a partir del formato de archivo y la construyó correctamente. Se trata de una sonda de respuesta escrita, no de ejecución real de herramientas.
-- Capacidades multilingües: no disponible; el texto de calibración fue prosa en inglés y no se documentan idiomas soportados.
-- Capacidades de visión: no disponibles en esta copia; el autor indica explícitamente que es solo texto y que la inferencia VLM corresponde a un modelo hermano de visión.
-- Compatibilidad con endpoints: el tag `endpoints_compatible` sugiere integración con infraestructura de inferencia compatible con la API de Hugging Face, aunque no se detalla.
+- Generacion de texto conversacional multi-turno mediante llama-cli.
+- Razonamiento en modo thinking con presupuesto acotado mediante `--reasoning-budget` (requiere llama.cpp con el PR #20297, de marzo de 2026).
+- Construccion de herramientas y codigo a partir de especificaciones: la model card documenta la generacion de un programa Python para parsear un formato de datos propietario y calcular maximo y media.
+- Ejecucion de tareas de tipo agente de decision: identificar una herramienta ausente y construirla.
+- Soporte de tool calling y function calling: no confirmado explicitamente en la informacion disponible.
+- Capacidades multilingues: no disponible.
+- Capacidades de vision o audio: no disponible.
 
 ## Casos de uso
 
-- Despliegue en estaciones de trabajo sin GPU de gran capacidad: con 18,7 GB y la posibilidad de repartir capas entre GPU y CPU (el autor carga diez capas en una GTX 1650 Max-Q de 4 GiB y el resto en el procesador), el modelo puede ejecutarse en equipos modestos donde el checkpoint BF16 de 63 GB no cabría.
-- Asistentes conversacionales de contexto largo: la ventana de 1.048.576 tokens permite mantener historiales de conversación extensos o procesar documentos completos en una sola pasada, aunque el autor advierte que solo se ha verificado la carga, no un benchmark a esa longitud.
-- Razonamiento con herramientas en pipelines de agentes: la capacidad observada de inferir y construir herramientas ausentes a partir de formatos de archivo lo hace adecuado para tareas de automatización donde el agente debe adaptarse a interfaces no documentadas.
-- Prototipado e investigación en local: al ser una cuantización GGUF ejecutable con llama.cpp, sirve para experimentar con un MoE de 30B en máquinas de desarrollo sin necesidad de infraestructura de datacenter.
-- Generación de texto en inglés con requisitos de calidad moderados: la perplejidad medida (4,4819 sobre texto retenido en inglés) es prácticamente idéntica a la de una cuantización convencional del mismo modelo, lo que respalda su uso en tareas de redacción y resumen en ese idioma.
-- Evaluación comparativa de técnicas de cuantización: el archivo documenta metadatos de imatrix y un censo de tensores reproducible, lo que lo convierte en un caso de estudio útil para investigadores que comparen recetas de cuantización guiada frente a redondeo plano.
+- Generacion de scripts de parseo y transformacion de datos: el modelo puede leer una especificacion de formato (por ejemplo, cadenas `t=0;v=21.5|...`) y producir un programa Python que extraiga y calcule metricas, como demuestra el ejemplo trabajado de la model card.
+- Automatizacion de tareas de desarrollo en maquinas sin GPU dedicada: con `-ngl 10 --cpu-moe` el modelo cabe en una GTX 1650 de 4 GB y 16 GB de RAM, lo que permite usarlo como asistente local de codigo en equipos de gama baja.
+- Prototipado de agentes que construyen herramientas ausentes: el modelo esta orientado a generar utilidades cuando no existe una herramienta disponible en el entorno, un patron util en pipelines de automatizacion internos.
+- Asistencia conversacional local con contexto moderado: el ejemplo usa `-c 2048`, adecuado para dialogos de soporte o consultas tecnicas de longitud media.
+- Educacion y experimentacion con modelos MoE cuantizados: sirve para estudiar el comportamiento de un MoE de 31B en hardware de consumo y comparar estrategias de cuantizacion imatrix.
+- Generacion de codigo con razonamiento acotado: el limite de 256 tokens de thinking permite obtener respuestas completas sin que el razonamiento consuma toda la ventana de salida, util en entornos con latencia o presupuesto de tokens restringido.
 
 ## Benchmarks y rendimiento
 
-| Medida | Llamatron | Referencia | Comentario |
-|---|---|---|---|
-| Tamano de archivo | 18,7 GB | Nemotron Nano 30B BF16: 63 GB | Ratio aproximado de 3,4x |
-| Tasa de respuesta en maquina local | 5,7 tokens/s | Nemotron Nano 30B: 0,6 tokens/s | Ratio de 9,5x, misma maquina y misma forma |
-| Pensamiento dentro de ventana de 128 tokens | Termina y responde | Copia cuantizada con parche de cache: se queda a mitad de pensamiento | Prueba cualitativa |
-| Perplejidad (texto retenido, 16 fragmentos de 1.024 tokens) | 4,4819 ± 0,11663 | Copia plana del mismo modelo parcheado, 18,7 GB: 4,4778 ± 0,11706 | Ratio de 1,0009, dentro de la incertidumbre |
-| Contexto completo | Carga a 1.048.576 tokens | no disponible | Solo verificacion de carga, no benchmark |
+No se han publicado resultados de benchmarks en la informacion disponible. La model card unicamente aporta mediciones de velocidad en hardware concreto:
 
-No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) en la informacion disponible.
+| Metrica | Llamatron | Nemotron Nano 30B (referencia) |
+|---|---|---|
+| Throughput en GTX 1650 Max-Q (4 GB VRAM, 16 GB RAM) | 5,7 tokens/s | 0,6 tokens/s |
+| Tamano del artefacto | 18,7 GB | ~63 GB |
+| Reduccion de tiempo de generacion con reparacion de cache | 18,6% (medido sobre el modelo completo) | no disponible |
 
 ## Requisitos de hardware
 
-- VRAM estimada: no disponible de forma exacta; el archivo pesa 18,7 GB, por lo que la inferencia completa en GPU requeriría al menos esa cantidad más overhead. El autor ejecuta con reparto parcial: diez capas en una GPU de 4 GiB y la parte de expertos en CPU.
-- GPU recomendadas: no disponible en la información proporcionada. El autor cita una GTX 1650 Max-Q de 4 GiB como hardware de prueba, lo que confirma que cabe en GPUs de consumo con descarga a CPU.
-- ¿Cabe en GPU de consumo? Sí, con reparto entre GPU y CPU. No se documenta un modelo concreto de GPU de gama alta que lo aloje íntegramente en VRAM.
-- Opciones de despliegue: llama.cpp (formato GGUF, tag `llama-cpp`), y por extensión herramientas compatibles como Ollama o interfaces basadas en llama.cpp. No se mencionan vLLM ni TGI, que no soportan GGUF de forma nativa.
-- Latencia y throughput: 5,7 tokens por segundo en la máquina del autor (GTX 1650 Max-Q más dos portátiles con casi 4 GB), frente a 0,6 tokens por segundo del modelo BF16 en el mismo equipo. No se dispone de cifras en hardware de datacenter.
+- VRAM estimada: el ejemplo medido funciona con 4 GB de VRAM (`-ngl 10` descarga 10 de 52 capas a la GPU) y 16 GB de RAM del sistema, manteniendo los expertos en CPU mediante `--cpu-moe`.
+- GPU recomendadas: GTX 1650 Max-Q (configuracion medida). Con mas VRAM se puede aumentar `-ngl` para descargar mas capas; no se especifican modelos concretos superiores en la informacion.
+- Cabe en GPU de consumo: si, en una GTX 1650 de 4 GB con la configuracion documentada.
+- Opciones de despliegue: llama.cpp (requiere una version con `--reasoning-budget`, PR #20297 de marzo de 2026 o posterior). No se mencionan vLLM, Ollama ni TGI.
+- Latencia y throughput: 5,7 tokens/s medidos en la configuracion indicada; el modelo original rinde 0,6 tokens/s en la misma maquina.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Notas |
 |---|---|---|---|---|---|
-| Llamatron (esta ficha) | 31.577.940.288 | 1.048.576 | GGUF, 18,7 GB | nvidia-nemotron-open-model-license | Cuantizacion imatrix con parche de cache |
-| NVIDIA-Nemotron-3-Nano-30B-A3B-BF16 | 31.577.940.288 | 1.048.576 | BF16, 63 GB | nvidia-nemotron-open-model-license | Modelo original sin cuantizar |
-| Copia cuantizada plana del mismo modelo | 31.577.940.288 | 1.048.576 | GGUF, 18,7 GB | nvidia-nemotron-open-model-license | Misma receta sin guia de importancia; no termina el pensamiento en 128 tokens |
-| Copia de 3 bits del mismo modelo | no disponible | no disponible | GGUF, 14,7 GB | no disponible | Mencionada por el autor como alternativa mas pequena |
-
-No se dispone de datos sobre otros modelos de la misma categoría (MoE de aproximadamente 30B) en la información proporcionada.
+| Llamatron (esta ficha) | 31.577.940.288 | no disponible | GGUF (18,7 GB) | NVIDIA Nemotron Open Model License | Cuantizacion imatrix, 5,7 tok/s en GTX 1650 Max-Q |
+| nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16 | 31.577.940.288 | no disponible | BF16 (~63 GB) | NVIDIA Nemotron Open Model License | Modelo base sin cuantizar, 0,6 tok/s en la misma maquina |
+| Alternativas de 30B cuantizadas en GGUF | no disponible | no disponible | GGUF | no disponible | No se dispone de datos comparativos en la informacion |
 
 ## Limitaciones y advertencias
 
-- La licencia nvidia-nemotron-open-model-license es una licencia propia de NVIDIA; es necesario revisar sus términos antes de cualquier uso comercial, ya que puede imponer restricciones adicionales a las de una licencia open source estándar.
-- La cuantización a 4 y 5 bits introduce pérdida de precisión, aunque la perplejidad medida sea prácticamente idéntica a la de una copia plana; el autor reconoce que la calidad no se ha evaluado con benchmarks de tareas (razonamiento, código, matemáticas).
-- El contexto de 1.048.576 tokens solo se ha verificado como carga, no como ejecución real a esa longitud; el rendimiento y la calidad en ventanas muy largas no están medidos.
-- El texto de calibración fue prosa en inglés, lo que puede sesgar la cuantización hacia ese idioma; no se documentan idiomas soportados ni calidad multilingüe.
-- El modelo puede alucinar: en la prueba del autor, el Nemotron con parche de caché "inventó" el diseño de una herramienta inexistente, mientras que Llamatron acertó; esto indica que el comportamiento ante herramientas ausentes es variable y no garantizado.
-- Es una copia solo de texto; no soporta visión ni audio, y el autor remite a un modelo hermano para VLM.
-- El autor declara que el trabajo lo realizó una sola persona con hardware modesto (GTX 1650 Max-Q y dos portátiles de casi 4 GB), lo que limita la validación independiente de las cifras reportadas.
-- No se han publicado resultados en benchmarks estándar, por lo que la comparación con otros modelos de la misma categoría carece de base cuantitativa más allá de la perplejidad.
+- La cuantizacion agresiva del resto de pesos (fuera de atencion y memoria) puede degradar la calidad respecto al modelo BF16 original; no se aportan evaluaciones de calidad comparativas.
+- El ejemplo de ejecucion usa una ventana de contexto de 2048 tokens; no se confirma la longitud de contexto maxima soportada.
+- El modo thinking requiere `--reasoning-budget`, disponible solo en versiones de llama.cpp posteriores a marzo de 2026 (PR #20297); versiones anteriores fallan con `error: invalid argument`.
+- La licencia NVIDIA Nemotron Open Model License impone condiciones especificas para uso comercial; es necesario revisar el enlace oficial antes de desplegar en produccion.
+- No se dispone de informacion sobre sesgos, tasas de alucinacion ni cobertura idiomatica.
+- El modelo esta orientado a un perfil de "agente de decision" y construccion de herramientas; su comportamiento en otras tareas puede diferir del modelo base.
+- El repositorio tiene 459 descargas y 0 likes en el momento de la consulta, lo que indica una validacion comunitaria limitada.
 
 ## Enlaces
 
 - Hugging Face: https://huggingface.co/nootxlm/Llamatron
 - Modelo base: https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16
-- Discusión del parche de caché: https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16/discussions/65
+- Discusion sobre la reparacion de cache: https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16/discussions/65
 - Licencia: https://www.nvidia.com/en-us/agreements/enterprise-software/nvidia-nemotron-open-model-license/
-- Repositorio de llama.cpp (herramienta de cuantización e inferencia): no disponible en la información proporcionada.
+- llama.cpp PR #20297 (parametro `--reasoning-budget`): no disponible como enlace directo en la informacion

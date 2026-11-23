@@ -2,97 +2,121 @@
 
 ## Resumen
 
-Qwen3.8-27B MoE es un conjunto de checkpoints de investigación publicados por el usuario verysweatydog que documentan la conversión del modelo denso HauhauCS/Qwen3.8-27B en un estudiante disperso por token ("MoE-ificado") orientado a inferencia limitada por ancho de banda, principalmente CPU e iGPU en cuantización Q4. No se trata de un modelo autónomo: cada checkpoint contiene únicamente los tensores que el entrenamiento modificó (640 tensores en bf16, 1,33 GB), y reconstruir el estudiante requiere los pesos del profesor denso en BF16 y el código de construcción incluido en `code/`.
+Qwen3.8-27B sparse student (F2) es una destilación dispersa por token del modelo Qwen3.8-27B, publicada por el usuario verysweatydog. No se trata de un modelo entrenado desde cero, sino de un "student" que conserva las 64 capas del profesor pero, en cada token, lee únicamente una parte de los pesos: proyecciones de atención de bajo rango, un generador de candidatos de 1 bit para la FFN y una LM head con lista corta. El resultado es un modelo de 43.800 millones de parámetros totales que se ejecuta con un GGUF Q4_K_M de 20,9 GB y un parche específico de llama.cpp.
 
-El modelo profesor es un transformer híbrido de 64 capas (48 de Gated DeltaNet y 16 de atención completa), dimensión 5120 y FFN SwiGLU de 17.408 neuronas. El estudiante conserva todos los pesos del profesor pero, por token, lee solo un subconjunto: atención completa con q de rango bajo 512 y o de rango bajo 1536, Gated DeltaNet con q y k de rango 256, cabeza de salida con logits aproximados de rango 256 sobre una lista corta de 8.192 tokens, y una FFN con cascada de selección de neuronas basada en un sketch de 1 bit que reduce de 17.408 candidatas a 6.144 exactas y finalmente a 3.584 activas.
+El interés técnico reside en la estrategia de dispersión: la decodificación usa rutas dispersas (lotes de hasta 8 tokens) mientras que el prefill usa rutas densas, de modo que el ahorro se aplica a la generación. El modelo conserva las 16 capas de atención completa y sustituye las otras 48 por capas Gated DeltaNet con estado de tamaño fijo, lo que reduce el coste de la caché KV. Está pensado para ejecutarse en máquinas de 32 GB, incluidas iGPU mediante Vulkan, y se distribuye con licencia Apache 2.0.
 
-La relevancia es doble: por un lado, demuestra una técnica de destilación con KL forward contra un profesor cacheado (top-128) que mejora sustancialmente a selectores de bajo rango previos (KL 0,240 frente a 0,627); por otro, cuantifica el ahorro de ancho de banda en Q4 (≈6,3 GB por token frente a ≈17 GB del denso). Es material de investigación, no un artefacto listo para producción.
+La relevancia actual es doble: por un lado, demuestra una vía poco habitual de compresión (destilación con selección dinámica de neuronas en la FFN y lista corta en la head); por otro, su naturaleza "uncensored" y la ausencia de ajuste de seguridad lo convierten en un objeto de estudio más que en un modelo listo para producción sin salvaguardas. El modelo base declarado es Qwen/Qwen3.8-27B.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer híbrido: 48 capas Gated DeltaNet + 16 capas de atención completa; estudiante con selección dispersa por token (sketch 1-bit + cascada) |
-| Parametros totales | No disponible (el profesor denso Qwen3.8-27B; el checkpoint almacena 640 tensores, 1,33 GB en bf16) |
-| Parametros activos | 3.584 neuronas FFN activas por token de 17.408 (cascada 6.144 → 3.584); selección de canales z/out de 1.024 de 6.144 |
+| Arquitectura | Transformer híbrido: 16 capas de atención completa + 48 capas Gated DeltaNet (GDN), con FFN SwiGLU dispersa por token |
+| Parametros totales | 43.803.532.800 (43,8 B) |
+| Parametros activos | No disponible (dispersión por token, no MoE clásico; la FFN activa 3584 de 17408 neuronas por token) |
 | Longitud de contexto | No disponible |
-| Tipos de cuantizacion | Q4 (emulación 4-bit RTN, grupo 32, todos los pesos); bf16 en el checkpoint |
+| Tipos de cuantizacion | GGUF Q4_K_M (3,82 BPW); export en safetensors con factores del student; sketch FFN en ggml Q1_0 (grupo 128) |
 | Idiomas soportados | No disponible |
-| Licencia | other (definida por el autor; sin términos detallados en la información disponible) |
-| Formato de pesos | `.pt` (PyTorch, bf16); sin GGUF ni llama.cpp disponible |
+| Licencia | Apache 2.0 |
+| Formato de pesos | safetensors (F2-export) y GGUF (Q4_K_M listo para ejecutar) |
 
 ## Arquitectura y entrenamiento
 
-El profesor es un transformer híbrido de 64 capas: 48 capas de Gated DeltaNet (atención lineal con estado recurrente) y 16 capas de atención completa, con dimensión de modelo 5120 y FFN SwiGLU de 17.408 neuronas. El estudiante mantiene la totalidad de los pesos del profesor y aplica una política de lectura dispersa por token. En atención completa, q se factoriza en rango 512 (incluyendo puerta) y o en rango 1536, mientras que k y v se computan de forma exacta. En Gated DeltaNet, q y k se factorizan en rango 256 y v es exacto; las puertas z y out se seleccionan mediante un predictor z de rango 256 que elige 1.024 de 6.144 canales. La cabeza de salida calcula logits aproximados de rango 256 y logits exactos sobre una lista corta de 8.192 tokens.
+El modelo es un student disperso del profesor Qwen3.8-27B (variante HauhauCS Uncensored-Aggressive, Q6_K_P GGUF). Mantiene las 64 capas, pero reduce el coste por token en cuatro bloques. En atención completa (16 capas), las proyecciones q y o son de bajo rango (q con rango 512 incluyendo la puerta, o con rango 1536), mientras que k y v se mantienen exactas. En las 48 capas Gated DeltaNet, q y k son de bajo rango 256, v es exacta y las proyecciones z y out se restringen a las 1024 mejores de 6144 canales, seleccionadas por un predictor z de rango 256. En la FFN (64 capas, 17408 neuronas), un sketch de 1 bit con grupo 128 aproxima las puertas gate/up de todas las neuronas, se calculan exactas sobre 6144 candidatas y se seleccionan las 3584 mejores según (silu(g)·u)²·‖w_down‖² antes de aplicar down; se fusionó un LoRA r16 en gate/up/down. La LM head (vocabulario de 248k) usa una head de rango 256 que selecciona una lista corta de 8192 tokens y calcula logits exactos solo sobre ella.
 
-La pieza central es la FFN: un sketch de 1 bit de las matrices gate y up completas (signo más escala de mínimos cuadrados ponderada por energía por grupo de 64 pesos) puntúa las 17.408 neuronas; se computan gate/up exactas para las 6.144 mejores candidatas y se retienen las 3.584 con mayor |silu(g)·u|·‖d_i‖, reutilizándolas para la salida de la FFN. Sobre gate/up/down se aplica LoRA de rango 16. Los sketches y selectores son funciones deterministas de los pesos del profesor y de las estadísticas de calibración, por lo que se reconstruyen y no se almacenan.
-
-El entrenamiento consistió en 600 pasos × 2 × 2048 tokens (≈2,5 millones de tokens) del dataset DaoCloud/Qwen3.8-27B-Drafter-SFT (shards 1–3), con KL forward contra un profesor cacheado top-128 sobre tokens de asistente. La calibración usa los shards 0–3 del mismo dataset (semilla 0, 74 × 2048 tokens). El resultado en el panel de desarrollo es KL 0,240 y top-1 del 85,3 % sobre tokens de asistente del shard 63 retenido (13.157 objetivos), frente a KL 0,627 / 76,3 % del estudiante previo con selector de bajo rango r256.
+El entrenamiento consistió en destilación contra los logits del profesor con aproximadamente 12 millones de tokens: 65% texto general de distribución del profesor estilo SFT, respuestas verificadas no-thinking de INTELLECT-3-RL y trazas de razonamiento de DeepMath-hard truncadas a 4k tokens, con descontaminación frente al test de GSM8K. Se ejecutaron 1500 pasos, más que la iteración anterior (F1). El sketch de la FFN se movió a grupo 128 para mapear exactamente sobre ggml Q1_0, y el generador de candidatos se reajustó con escalas por capa y sesgo por neurona. La decodificación usa rutas dispersas y el prefill rutas densas con los mismos pesos.
 
 ## Capacidades
 
-- Generación de texto autoregresiva heredada del profesor denso, sujeta a la aproximación introducida por la selección dispersa de neuronas y la cabeza de salida de rango bajo.
-- Razonamiento matemático básico: 82,8 % (53/64) en los primeros 64 problemas de test de GSM8K en modo greedy y sin thinking, frente al 87,5 % (56/64) del profesor.
-- Aproximación funcional del profesor con top-1 del 85,3 % en tokens de asistente del panel de desarrollo.
-- No se documenta soporte de tool calling, function calling, agentes, visión, audio ni modo thinking en la información disponible.
-- Capacidades multilingües: no disponibles (los idiomas no se especifican).
-- El artefacto no es un modelo autónomo: requiere reconstrucción con los pesos del profesor y el código del repositorio.
+- Generación de texto conversacional multi-turno (pipeline declarado como conversational en los tags).
+- Razonamiento matemático y científico: se reporta un 89,8% en GSM8K (115/128) en modo greedy no-thinking, igualando al profesor.
+- Trazas de razonamiento (thinking): el entrenamiento incluyó trazas de DeepMath-hard truncadas a 4k tokens.
+- Generación de código: no hay evaluación específica publicada, pero el modelo base Qwen3.8-27B es de propósito general.
+- Tool calling y function calling: no disponible en la información proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible explícitamente; el modo thinking está presente en los datos de entrenamiento.
+- Capacidades multilingües: no disponibles (el campo de idiomas no está declarado).
+- Capacidad especial: decodificación dispersa por token con knobs de sparsity ajustables en tiempo de ejecución (ffn_candidates, gdn_gate_k, ffn_active, head_shortlist).
+- Modo uncensored: sin ajuste de seguridad añadido, heredado del profesor.
 
 ## Casos de uso
 
-- Investigación en destilación dispersa: reproducir el pipeline de `code/` (calibración, sketch 1-bit, LoRA r16 y entrenamiento KL) para estudiar cómo varía el KL y el top-1 al cambiar el tamaño de la cascada o el número de pasos, usando el log de resultados del autor como línea base.
-- Estudio de selectores de neuronas FFN: comparar la cascada 1-bit (6.144 → 3.584) con el selector de bajo rango r256 documentado (KL 0,627) para analizar el coste y beneficio del sketch de 1 bit frente a la selección por proyección lineal.
-- Inferencia en CPU e iGPU con restricciones de ancho de banda: el autor estima ≈6,3 GB de pesos leídos por token en Q4 frente a ≈17 GB del denso, lo que hace el estudiante candidato para entornos sin GPU dedicada, aunque requiere un kernel personalizado para la selección por neurona.
-- Análisis de degradación por cuantización: el checkpoint incluye métricas en emulación Q4 (KL 0,277 / top-1 84,5 % en el estudiante frente a KL 0,044 / 93,4 % en el profesor con la misma cuantización), útil para estudiar la sensibilidad del profesor y del estudiante a la cuantización de 4 bits.
-- Evaluación de robustez de estudiantes dispersos: usar GSM8K (64 problemas, greedy, sin thinking) como sonda rápida para medir la brecha de razonamiento entre estudiante y profesor (82,8 % frente a 87,5 %).
-- Docencia y experimentación con arquitecturas híbridas: el profesor combina Gated DeltaNet y atención completa, lo que permite estudiar el comportamiento de la selección dispersa en capas lineales frente a capas de atención completa.
-- Reproducción de artefactos de investigación: cargar `state` en `train.Swap(model, pristine).student_modules()` por clave `"<module index>.<parameter name>"` para validar la reconstrucción del estudiante a partir del checkpoint publicado.
+- Inferencia en hardware de gama consumer: el GGUF Q4_K_M de 20,9 GB más la caché KV cabe en una máquina de 32 GB; solo 16 de las 64 capas mantienen caché KV, lo que abarata el contexto largo en comparación con un transformer denso equivalente.
+- Despliegue en iGPU mediante Vulkan: el autor incluye el parche de llama.cpp con el operador GGML_OP_GATHER_AXPY para CPU y Vulkan, pensado para ejecutar el modelo en iGPU sin GPU dedicada (aunque el autor advierte que no lo ha probado en hardware iGPU real).
+- Investigación en compresión de modelos: el export en safetensors con factores del student y student_config.json permite estudiar y reproducir la destilación dispersa, comparar ablaciones (restaurar proyecciones GDN, atención q/o, head o FFN) y medir KL frente al profesor.
+- Experimentación con decodificación especulativa y selección dinámica de expertos: la FFN con sketch de 1 bit y selección top-3584 por puntuación es un banco de pruebas para técnicas de routing por token.
+- Razonamiento matemático asistido: con un 89,8% en GSM8K en modo no-thinking, es adecuado para prototipos de resolución de problemas aritméticos y de ciencia básica donde no se requiere un modelo mayor.
+- Evaluación de riesgos de modelos sin alineación: al ser uncensored y sin safety tuning, sirve para estudiar comportamientos y sesgos en entornos controlados de investigación, no para exposición directa a usuarios finales.
+- Ajuste fino ligero sobre el student: el LoRA r16 ya fusionado y la estructura de factores permiten adaptaciones posteriores con bajo coste de memoria en GPUs de 24 GB.
 
 ## Benchmarks y rendimiento
 
-| Benchmark | Estudiante | Profesor | Notas |
-|---|---:|---:|---|
-| KL en dev (panel de desarrollo, menor es mejor) | 0,240 | — | Shard 63 retenido, 13.157 objetivos |
-| Top-1 en dev | 85,3 % | — | Mismo panel |
-| KL en dev, emulación Q4 (RTN, grupo 32) | 0,277 | 0,044 | Todos los pesos a 4 bits |
-| Top-1 en dev, emulación Q4 | 84,5 % | 93,4 % | Misma cuantización |
-| GSM8K (primeros 64 problemas, greedy, sin thinking) | 82,8 % (53/64) | 87,5 % (56/64) | — |
+Resultados publicados por el autor. KL se mide frente al profesor BF16 en texto retenido (13k tokens, dominios mixtos); el conjunto de matemáticas tiene 15,5k tokens de INTELLECT-3 math/science más DeepMath.
 
-Historial del panel de desarrollo (KL / top-1): selector de bajo rango r256 con A=2560 (6,3B activos) entrenado, 0,627 / 76,3 %; mismo con A=4096 (7,8B activos), 0,527 / 78,2 %; cascada 1-bit 4096 → 2560 con 300 pasos, 0,290 / 83,7 %; cascada 1-bit 6144 → 3584 con 300 pasos, 0,246 / 85,3 %; cascada 1-bit 6144 → 3584 con 600 pasos (este checkpoint), 0,240 / 85,3 %.
+| Modelo | Dev KL | Dev top-1 | Math KL | Math top-1 |
+|---|---:|---:|---:|---:|
+| F1b (anterior) | 0,2387 | — | 0,2016 | — |
+| F2 (knobs por defecto) | 0,2268 | 85,6% | 0,1648 | 88,4% |
+| F2, candidates 8192 | 0,2125 | 86,2% | 0,1569 | 88,8% |
+| F2, gate k 2048 | 0,2152 | 86,3% | 0,1582 | 88,8% |
+| F2, ambos (+16% bytes/token) | 0,1974 | 86,8% | 0,1461 | 89,1% |
+
+GSM8K (test, primeros 128 problemas, greedy, no-thinking):
+
+| Modelo | 0–63 | 64–127 | Total |
+|---|---:|---:|---:|
+| Profesor | 56 | 59 | 115/128 (89,8%) |
+| F2 | 55 | 60 | 115/128 (89,8%) |
+| F1b | — | — | 107/128 (83,6%) |
+
+KL medido con llama.cpp frente al profesor Q6_K_P, con `llama-perplexity --kl-divergence` a `-c 1024` y 6 chunks:
+
+| Modelo | Ruta | General KL | General top-1 | Math KL | Math top-1 |
+|---|---|---:|---:|---:|---:|
+| Dense Q4_K_P (referencia) | — | 0,015 | 97,3% | 0,003 | 98,8% |
+| F2 Q4_K_M | decodificación dispersa (`-ub 8`) | 0,285 | 87,5% | 0,130 | 90,8% |
+| F2 Q4_K_M | prefill (`-ub 512`) | 0,244 | — | 0,123 | — |
+
+Ablaciones sobre F1 (dev KL 0,239) para localizar el KL restante: restaurar proyecciones GDN del profesor da 0,199 (q/k exactas solas, 0,222; sin gate-select, 0,221); restaurar atención q/o da 0,251 (peor que el student); restaurar la head da 0,235; solo FFN con mixers y head del profesor da 0,205, y una selección FFN oracle top-3584 da 0,208.
 
 ## Requisitos de hardware
 
-- VRAM estimada: no disponible como medida en hardware; el autor solo proporciona una estimación de ancho de banda de pesos leídos por token en Q4 (≈6,3 GB frente a ≈17 GB del profesor denso).
-- GPU recomendadas: no disponibles; el diseño está orientado a inferencia limitada por ancho de banda en CPU e iGPU.
-- Compatibilidad con GPU de consumo: no confirmada; no hay build GGUF ni llama.cpp, y la selección por neurona requiere un kernel personalizado.
-- Opciones de despliegue: no hay soporte de vLLM, llama.cpp, Ollama ni TGI documentado; la única vía descrita es la reconstrucción con el harness de `code/` (`core.py`, `fit.py`, `train.py`, `195_final.py`, `load_example.py`).
-- Latencia y throughput: no disponibles (no medidos en hardware).
+- VRAM estimada: el GGUF Q4_K_M ocupa 20,9 GB y, junto con la caché KV, cabe en una máquina de 32 GB según el autor. Solo 16 de las 64 capas mantienen caché KV; las 48 capas DeltaNet usan estado de tamaño fijo.
+- GPU recomendadas: no se especifican modelos concretos; el autor apunta a Vulkan en GPU e iGPU y a CPU como alternativa. No hay datos de VRAM para A100, H100 o RTX 4090.
+- ¿Cabe en GPU consumer? El tamaño de 20,9 GB sugiere que encaja en GPUs de 24 GB (RTX 3090, RTX 4090) y en máquinas de 32 GB de memoria unificada, siempre que se use el parche de llama.cpp; no hay confirmación del autor en hardware real.
+- Opciones de despliegue: llama.cpp con el parche `llama.cpp-sparse-qwen35.patch` (commit f477f79), compilado con `-DGGML_VULKAN=ON` para Vulkan o sin esa opción para CPU. Se construyen `llama-cli`, `llama-server`, `llama-bench` y `llama-perplexity`. No se mencionan vLLM, TGI ni Ollama.
+- Latencia y throughput: no disponibles. El autor indica que el prefill cuesta aproximadamente lo mismo que el modelo denso y que el ahorro por token se aplica a la generación; los knobs de sparsity permiten aumentar calidad a cambio de aproximadamente un 16% más de bytes leídos por token.
+- Estado de pruebas en Vulkan: todos los operadores nuevos pasan `test-backend-ops` en lavapipe (gather_axpy en f32/f16/q8_0/q4_K/q5_K/q6_K, mul_mat_id con 17408 expertos y top_k), salvo los operadores de head de tamaño vocabulario, limitados por el tope de 128 MB de búfer de lavapipe. El autor no ha ejecutado el modelo en hardware iGPU real.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-27B MoE (este checkpoint) | Denso 27B con 3.584 neuronas FFN activas por token | No disponible | KL 0,240 / top-1 85,3 %; GSM8K 82,8 % | other | Checkpoint de investigación, requiere reconstrucción |
-| HauhauCS/Qwen3.8-27B (profesor) | 27B denso, 64 capas | No disponible | GSM8K 87,5 %; KL Q4 0,044 / top-1 93,4 % | No disponible | Pesos BF16 en HF |
-| Qwen/Qwen3.8-27B | 27B denso | No disponible | Evaluado en MathVision con prompt fijo | No disponible en la información | Pesos en HF |
-| Estudiante previo con selector de bajo rango r256 (A=4096) | 7,8B activos | No disponible | KL 0,527 / top-1 78,2 % | No disponible | Referencia interna del log del autor |
+| Qwen3.8-27B sparse student (F2) | 43,8 B totales, FFN con 3584/17408 neuronas activas por token | No disponible | GSM8K 89,8%; KL 0,2268 (dev) frente al profesor | Apache 2.0 | Hugging Face (GGUF Q4_K_M y safetensors) |
+| Qwen3.8-27B (profesor, HauhauCS Uncensored-Aggressive Q6_K_P) | No disponible en la información | No disponible | GSM8K 89,8%; referencia de KL | No disponible | Referenciado como base_model |
+| F1b (student anterior) | No disponible | No disponible | GSM8K 83,6%; KL 0,2387 (dev) | No disponible | Incluido en el repositorio como referencia |
+| Dense Q4_K_P (referencia de cuantización) | No disponible | No disponible | KL 0,015 general / 0,003 math; top-1 97,3% / 98,8% | No disponible | Referencia interna del autor |
+
+No se dispone de datos de otros modelos de la misma categoría (destilaciones dispersas por token) para una comparación externa; la información proporcionada solo permite comparar con el profesor, la iteración anterior y la referencia densa cuantizada.
 
 ## Limitaciones y advertencias
 
-- No es un modelo autónomo: el checkpoint solo contiene los tensores modificados por el entrenamiento y no puede ejecutarse sin los pesos del profesor y el código de reconstrucción.
-- El código es de grado investigación y las rutas apuntan al volumen del laboratorio original, lo que complica la reproducción fuera de ese entorno.
-- No existe build GGUF ni llama.cpp; la selección por neurona exige un kernel personalizado no publicado.
-- El entrenamiento es muy corto (≈2,5 millones de tokens, 600 pasos), por lo que la cobertura de dominios y la fidelidad al profesor están limitadas al dataset Drafter-SFT.
-- La brecha frente al profesor es medible: KL 0,240 y top-1 85,3 % en dev, y 82,8 % frente a 87,5 % en GSM8K; en Q4 la brecha se amplía (KL 0,277 frente a 0,044; top-1 84,5 % frente a 93,4 %).
-- La estimación de coste en Q4 (≈6,3 GB por token) no está medida en hardware, solo calculada a partir de los pesos leídos.
-- Idiomas soportados no documentados; riesgo de sesgos y alucinaciones heredado del profesor y no evaluado en esta ficha.
-- Licencia "other" sin términos detallados: no se puede confirmar el uso comercial; conviene verificar la licencia del modelo base antes de cualquier despliegue.
-- El checkpoint tiene 0 descargas y 0 likes, y fue creado y actualizado en noviembre de 2026; no hay validación externa de los resultados reportados.
+- Modelo uncensored sin ajuste de seguridad: hereda del profesor la ausencia de safety tuning, por lo que puede generar contenido dañino o inapropiado sin filtros. No es apto para exposición directa a usuarios finales sin salvaguardas externas.
+- Riesgo de alucinación: la destilación contra logits del profesor introduce un KL no nulo (0,2268 en dev con los knobs por defecto); la fidelidad al profesor es buena pero no exacta, y la selección dinámica de neuronas puede degradar respuestas en dominios poco representados en los 12M de tokens de entrenamiento.
+- Idiomas no declarados: el campo de idiomas no está disponible, por lo que no se puede garantizar un rendimiento multilingüe más allá del que herede del modelo base.
+- Longitud de contexto no disponible: no se documenta la ventana máxima; además, solo 16 capas mantienen caché KV, lo que condiciona el comportamiento en contextos largos.
+- Dependencia de un parche específico de llama.cpp: requiere el commit f477f79 y el parche `llama.cpp-sparse-qwen35.patch`; no funciona con llama.cpp estándar ni con otros runtimes (vLLM, TGI, Ollama no están soportados según la información disponible).
+- Estado de validación incompleto en hardware real: el autor no ha probado el modelo en iGPU real; los operadores de head de tamaño vocabulario no se han validado en lavapipe por el límite de 128 MB de búfer.
+- El prefill no se beneficia de la dispersión: el procesamiento de prompts cuesta aproximadamente como el modelo denso, lo que penaliza cargas con prompts largos y generaciones cortas.
+- Licencia Apache 2.0: permite uso comercial, pero la condición uncensored y la falta de evaluación de sesgos hacen recomendable una auditoría previa en producción.
+- Sin datos de benchmarks estándar (MMLU, HumanEval, etc.): solo se publican KL, top-1 y GSM8K, por lo que la comparación con otros modelos de la misma talla es limitada.
 
 ## Enlaces
 
-- Repositorio del modelo: https://huggingface.co/verysweatydog/qwen3.8-27b-moe
-- Modelo base del profesor: https://huggingface.co/HauhauCS/Qwen3.8-27B
-- Modelo Qwen3.8-27B original: https://huggingface.co/Qwen/Qwen3.8-27B
-- Dataset de entrenamiento: DaoCloud/Qwen3.8-27B-Drafter-SFT (referenciado en la model card; sin URL directa en la información disponible)
-- Paper, blog, repositorio de código o demo: no disponibles en la información proporcionada
+- Hugging Face: https://huggingface.co/verysweatydog/qwen3.8-27b-moe
+- Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
+- Repositorio de llama.cpp: https://github.com/ggml-org/llama.cpp
+- Commit de llama.cpp requerido: f477f79 (referenciado en la model card)
+- Parche: `code-f2/llama.cpp-sparse-qwen35.patch` (incluido en el repositorio de Hugging Face)
+- Export del student: `F2-export/` (safetensors y student_config.json, incluido en el repositorio)
+- Student anterior F1: `F1-casc1b-6144-A3584/` y `code/` (incluidos en el repositorio)

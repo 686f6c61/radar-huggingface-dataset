@@ -2,49 +2,50 @@
 
 ## Resumen
 
-Apollyon-24B-i1-GGUF es un repositorio de cuantizaciones en formato GGUF generado por mradermacher a partir del modelo base Apollyon-24B, publicado por el usuario c4tdr0ut en Hugging Face. No se trata de un modelo original, sino de una redistribucion optimizada para inferencia local mediante llama.cpp y herramientas compatibles, con el objetivo de reducir los requisitos de memoria del modelo original.
+Apollyon-24B-i1-GGUF es la distribucion en formato GGUF del modelo Apollyon-24B, un LLM de 23.572 millones de parametros derivado de la familia Mistral y afinado por el usuario c4tdr0ut. El trabajo de cuantizacion lo firma mradermacher, un publicador habitual de versiones GGUF con tecnicas de imatrix, que ofrece aqui una bateria muy amplia de niveles de cuantizacion (desde IQ1_S hasta Q6_K) para facilitar su ejecucion en hardware de consumo.
 
-El repositorio incluye un conjunto amplio de cuantizaciones, desde variantes de muy baja precision (IQ1_S, IQ1_M, IQ2_XXS) hasta cuantizaciones de mayor calidad (Q6_K, Q5_K_M, Q4_K_M). Segun los metadatos de la model card, las cuantizaciones se han generado con weighted/imatrix, lo que suele mejorar la calidad respecto a cuantizaciones naive en los niveles bajos de bits.
+El modelo se presenta con etiquetas que lo situan en la categoria de modelos "abliterated" o "unaligned": segun los tags de la model card, ha pasado por procesos de SFT y DPO que reducen los rechazos y alineamientos restrictivos, y se inspira en el estilo de Grok (x.ai). Esta orientacion lo hace relevante para investigacion sobre comportamiento de modelos, evaluacion de mecanismos de rechazo y experimentacion con modelos conversacionales sin las restricciones tipicas de los asistentes comerciales.
 
-La informacion publica disponible es muy limitada: no se documentan la licencia, los idiomas soportados, la arquitectura ni los datos de entrenamiento del modelo base. El campo de parametros totales en safetensors (5.000.760) resulta inconsistente con la denominacion "24B" del nombre, por lo que debe tratarse con cautela y no permite confirmar el tamano real del modelo.
+La ficha se centra en la version cuantizada publicada por mradermacher, que hereda el modelo base c4tdr0ut/Apollyon-24B. La licencia figura como "other", lo que exige revisar los terminos del modelo base antes de cualquier uso comercial. El repositorio ocupa 253,6 GB e incluye el fichero imatrix para generar cuantizaciones propias.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible |
-| Parametros totales | no disponible (el nombre indica 24B; el campo safetensors reporta 5.000.760, dato inconsistente) |
-| Parametros activos | no disponible |
+| Arquitectura | Transformer (derivada de la familia Mistral, segun tags) |
+| Parametros totales | 23.572.403.200 (~23,6 B) |
+| Parametros activos | no disponible (no es MoE segun los datos disponibles) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Q2_K, Q2_K_S, Q3_K_S, Q3_K_M, Q3_K_L, Q4_0, Q4_1, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, IQ1_S, IQ1_M, IQ2_XXS, IQ2_XS, IQ2_S, IQ2_M, IQ3_XXS, IQ3_XS, IQ3_S, IQ3_M, IQ4_XS, IQ4_NL (small-IQ4_NL) |
-| Idiomas soportados | no disponible |
-| Licencia | no disponible |
-| Formato de pesos | GGUF (cuantizaciones); el modelo base se distribuye presumiblemente en safetensors |
+| Tipos de cuantizacion | IQ1_S, IQ1_M, IQ2_XXS, IQ2_XS, IQ2_S, IQ2_M, Q2_K_S, Q2_K, IQ3_XXS, IQ3_XS, Q3_K_S, IQ3_S, IQ3_M, Q3_K_M, Q3_K_L, IQ4_XS, Q4_0, Q4_K_S, Q4_K_M, Q4_1, Q5_K_S, Q5_K_M, Q6_K (i1/imatrix) |
+| Idiomas soportados | en (segun la model card) |
+| Licencia | other |
+| Formato de pesos | GGUF (con fichero imatrix adicional) |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion sobre la arquitectura del modelo base Apollyon-24B en la documentacion proporcionada. El nombre sugiere un modelo de aproximadamente 24.000 millones de parametros, pero no se confirma si emplea un transformer denso, una arquitectura MoE u otra variante, ni se detallan el numero de tokens de entrenamiento, la composicion del dataset o si se aplicaron tecnicas de alineacion como RLHF o DPO.
+La informacion disponible no detalla la arquitectura interna mas alla de los tags, que apuntan a una base Mistral y a un proceso de ajuste que combina SFT y DPO. El modelo base es c4tdr0ut/Apollyon-24B, y esta version es una cuantizacion del mismo realizada con tecnicas de imatrix (importance matrix), que ponderan la cuantizacion segun la relevancia de los pesos para reducir la perdida de calidad en niveles bajos de bits.
 
-Lo unico documentado en la model card son los metadatos del proceso de cuantizacion: `quantize_version: 2`, `output_tensor_quantised: 1` y `convert_type: hf`, lo que indica que las cuantizaciones se generaron a partir de pesos en formato Hugging Face con la herramienta de cuantizacion de llama.cpp y con matrices de importancia (imatrix) ponderadas. No se documentan innovaciones arquitectonicas ni tecnicas de decodificacion especulativa.
+El pipeline de cuantizacion de mradermacher usa el formato i1 (imatrix) con quantize_version 2 y salida en tensores cuantizados, generando variantes tanto IQ como K-quants. No se especifican en la informacion proporcionada el numero de tokens de entrenamiento, la composicion del dataset ni detalles sobre el proceso de RLHF/DPO mas alla de la mencion generica en los tags.
 
 ## Capacidades
 
-- Generacion de texto: capacidad esperada por tratarse de un modelo de lenguaje, aunque no se detalla en la informacion disponible.
-- Razonamiento y conocimiento general: no documentado.
-- Generacion de codigo y matematicas: no documentado.
-- Tool calling / function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingues: no disponible.
-- Capacidades especiales (vision, audio, thinking mode): no disponible.
+- Generacion de texto conversacional y multi-turno, orientada a chat.
+- Razonamiento y respuesta abierta en ingles (unico idioma declarado).
+- Comportamiento "unaligned"/"abliterated": menor tendencia a rechazar peticiones, segun los tags del autor.
+- Estilo de respuesta inspirado en Grok (x.ai), segun los tags.
+- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
+- Capacidades multimodales (vision, audio): no disponible; no se declaran.
+- Modo "thinking" explicito: no disponible en la informacion proporcionada.
 
 ## Casos de uso
 
-- Inferencia local en equipos de consumo: las cuantizaciones Q4_K_M e IQ4_XS permiten ejecutar un modelo de gran tamano en GPUs con 16-24 GB de VRAM mediante llama.cpp u Ollama, reduciendo el coste frente a la version completa en precision alta.
-- Despliegue en CPU: las variantes Q2_K e IQ2 permiten ejecutar el modelo en servidores sin GPU, a costa de una perdida de calidad notable, util para prototipado y pruebas de concepto.
-- Evaluacion comparativa de cuantizaciones: el repositorio ofrece una bateria amplia de niveles de cuantizacion, lo que facilita medir el impacto de la compresion en la calidad de las respuestas para un mismo modelo base.
-- Experimentacion en entornos con memoria limitada: las variantes IQ1 e IQ2 permiten cargar el modelo en hardware muy restringido, aunque con degradacion significativa de la calidad.
-- Integracion en pipelines de CI/CD para pruebas de regresion: al poder desplegarse con llama.cpp, el modelo puede ejecutarse en contenedores ligeros para validar respuestas en pruebas automatizadas.
-- Uso educativo e investigacion: sirve como ejemplo practico de cuantizacion con imatrix y de comparacion entre esquemas K-quant e I-quant en llama.cpp.
+- Investigacion sobre alineamiento y rechazo: el modelo, etiquetado como "abliterated" y "unaligned", permite estudiar como varia la tasa de rechazo y el comportamiento ante peticiones sensibles en comparacion con modelos alineados, en un entorno controlado de laboratorio.
+- Experimentacion conversacional en local: gracias a las cuantizaciones Q4_K_M (14,4 GB) e IQ4_XS (12,9 GB), puede ejecutarse en una GPU de consumo de 16-24 GB para prototipos de chat sin depender de APIs externas.
+- Evaluacion comparativa de cuantizaciones: el repositorio ofrece mas de 20 variantes, lo que permite medir el impacto de la cuantizacion en perplejidad y calidad de respuesta sobre un mismo modelo base.
+- Generacion de datos sinteticos para investigacion: util para producir corpus de texto en ingles con un estilo conversacional menos filtrado, siempre que se revise el contenido generado.
+- Pruebas de robustez y red teaming: su naturaleza menos restrictiva lo hace adecuado como sujeto de pruebas en ejercicios de seguridad de modelos y evaluacion de riesgos.
+- Despliegue en entornos con recursos limitados: las variantes IQ2/IQ3 (6,6-12,5 GB) permiten ejecutar el modelo en equipos con 8-16 GB de VRAM o RAM para tareas de generacion de texto no criticas.
 
 ## Benchmarks y rendimiento
 
@@ -52,34 +53,42 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: no disponible de forma oficial. Como referencia orientativa para un modelo de ~24B, las cuantizaciones Q4_K_M suelen requerir en torno a 14-16 GB de VRAM, las Q6_K en torno a 20-22 GB y las Q2_K alrededor de 9-10 GB; estas cifras son estimaciones generales y no estan confirmadas para este modelo concreto.
-- GPU recomendadas: no disponible. Para un modelo de este tamano, las opciones habituales serian RTX 4090 (24 GB), RTX 3090 (24 GB), A100 (40/80 GB) y H100 (80 GB), sin confirmacion oficial.
-- Compatibilidad con GPU de consumo: probable en tarjetas de 16-24 GB con cuantizaciones Q4 o inferiores, no confirmado.
-- Opciones de despliegue: llama.cpp, Ollama y otros runners compatibles con GGUF (por ejemplo, LM Studio o text-generation-webui). vLLM y TGI no soportan GGUF de forma nativa en todos los casos.
-- Latencia y throughput: no disponibles.
+- VRAM estimada (solo pesos, sin overhead de contexto): desde ~5,4 GB (IQ1_S) hasta ~19,4 GB (Q6_K); la variante recomendada Q4_K_M ocupa 14,4 GB.
+- GPU recomendadas: para Q4_K_M y superiores, GPU con 16-24 GB de VRAM (RTX 4090, RTX 4080, A10, L4); para Q6_K, 24 GB o mas (RTX 3090/4090, A100 40 GB).
+- Cabe en GPU de consumo: si, en RTX 3060 12 GB con cuantizaciones IQ3/IQ4 ajustadas, y en RTX 4090 con Q4_K_M o Q5_K_M.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio y otros runners compatibles con GGUF; el tag text-generation-inference sugiere compatibilidad con TGI, aunque el formato nativo es GGUF.
+- Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| Apollyon-24B-i1-GGUF | no disponible (nombre: 24B) | no disponible | no disponible | GGUF | Hugging Face |
-| Modelo base Apollyon-24B | no disponible (nombre: 24B) | no disponible | no disponible | safetensors (presumible) | Hugging Face |
-| Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
+| Apollyon-24B-i1-GGUF (este) | ~23,6 B | no disponible | other | GGUF | Cuantizaciones imatrix, orientacion unaligned |
+| c4tdr0ut/Apollyon-24B (base) | ~23,6 B | no disponible | other | safetensors | Modelo original sin cuantizar |
+| Mistral Small 24B (referencia de familia) | ~24 B | no disponible | no disponible | safetensors/GGUF | Base Mistral segun tags; comportamiento alineado estandar |
+| Modelos abliterated de ~24 B | ~24 B | no disponible | variable | GGUF/safetensors | Alternativas de la misma categoria "unaligned" |
 
-No se dispone de informacion suficiente para comparar con alternativas concretas de la misma categoria.
+La comparacion cuantitativa de rendimiento no esta disponible; solo se puede contrastar tamano, formato y licencia.
 
 ## Limitaciones y advertencias
 
-- La licencia no esta documentada en la informacion disponible, por lo que no puede confirmarse el uso comercial; es imprescindible revisar la licencia del modelo base antes de cualquier despliegue en produccion.
-- Los idiomas soportados no estan documentados, lo que impide garantizar un rendimiento adecuado en castellano u otras lenguas.
-- La discrepancia entre el nombre "24B" y el campo de parametros totales (5.000.760) impide confirmar el tamano real del modelo y, por tanto, estimar con precision los requisitos de hardware.
-- Las cuantizaciones de muy baja precision (IQ1, IQ2, Q2_K) degradan de forma notable la calidad de las respuestas y pueden incrementar el riesgo de alucinaciones y errores factuales.
-- No se documentan sesgos conocidos, pero al no conocerse los datos de entrenamiento no puede descartarse la presencia de sesgos en el modelo base.
-- El repositorio no registra descargas ni likes y fue creado y actualizado el mismo dia, lo que sugiere una publicacion reciente y sin validacion comunitaria.
-- No se dispone de informacion sobre la longitud de contexto, lo que limita el diseno de aplicaciones que dependan de ventanas largas.
+- Modelo etiquetado como "unhinged", "unaligned" y "abliterated": puede generar contenido que modelos alineados rechazarian; requiere supervision y filtros propios en produccion.
+- Riesgo de alucinacion no cuantificado: no hay benchmarks publicados que permitan estimarlo.
+- Soporte unicamente en ingles segun la model card; el rendimiento en castellano no esta garantizado.
+- Licencia "other": es imprescindible revisar los terminos del modelo base c4tdr0ut/Apollyon-24B antes de uso comercial.
+- Longitud de contexto no declarada: no se puede planificar su uso en tareas de contexto largo sin verificacion empirica.
+- Las cuantizaciones por debajo de Q4 (especialmente IQ1/IQ2 y Q2_K_S) degradan notablemente la calidad; el propio autor las marca como "for the desperate" o "very low quality".
+- No se declaran capacidades de tool calling ni de agentes; no asumir su disponibilidad en produccion.
+- El repositorio ocupa 253,6 GB; la descarga completa de todas las variantes no es practica para la mayoria de entornos.
 
 ## Enlaces
 
-- Repositorio GGUF: https://huggingface.co/mradermacher/Apollyon-24B-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Apollyon-24B-i1-GGUF
 - Modelo base: https://huggingface.co/c4tdr0ut/Apollyon-24B
-- Perfil del autor de las cuantizaciones: https://huggingface.co/mradermacher
+- Cuantizaciones estaticas: https://huggingface.co/mradermacher/Apollyon-24B-GGUF
+- Pagina de descargas del autor: https://hf.tst.eu/model#Apollyon-24B-i1-GGUF
+- Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Grafico de calidad de cuantizaciones (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png
+- Notas de Artefact2 sobre cuantizacion: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Peticiones de modelos de mradermacher: https://huggingface.co/mradermacher/model_requests
+- nethype GmbH: https://www.nethype.de/

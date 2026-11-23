@@ -2,90 +2,89 @@
 
 ## Resumen
 
-Qwen3.5-4B-Coder es un ajuste fino (fine-tuning) del modelo base unsloth/Qwen3.5-4B, publicado por el usuario reaperdoesntknow en Hugging Face. Se trata de un modelo multimodal de tipo image-text-to-text, es decir, acepta tanto texto como imágenes como entrada y genera texto, con un total de 4.659.865.088 parámetros (aproximadamente 4,66 mil millones) en pesos de 16 bits (FP16). El ajuste se realizó con la librería Unsloth y TRL de Hugging Face, según indica el autor, con una velocidad de entrenamiento declarada de 2x respecto a un pipeline estándar.
+Qwen3.5-4B-Coder es un checkpoint afinado de Qwen3.5 4B publicado por el usuario reaperdoesntknow, construido sobre la base unsloth/Qwen3.5-4B. Se distribuye como pesos Safetensors fragmentados en dos shards para su uso con Transformers y se etiqueta como una entrega orientada a programación, aunque la model card no incluye referencia al dataset de entrenamiento, receta de ajuste ni informe de benchmarks. El nombre del repositorio no debe interpretarse por sí solo como evidencia de una mejora en rendimiento de código.
 
-El modelo hereda la arquitectura qwen3_5 del modelo base y se distribuye bajo licencia Apache 2.0, lo que permite uso comercial sin restricciones adicionales más allá de las de dicha licencia. El sufijo "Coder" en el nombre sugiere una especialización hacia tareas de generación de código, aunque la model card no documenta el dataset de ajuste ni los objetivos concretos del fine-tuning.
+El modelo emplea la arquitectura Qwen3_5ForConditionalGeneration, que combina configuraciones de texto y visión, con 4.659.865.088 parámetros totales según los tensores de Safetensors. El repositorio ocupa 18,7 GB, lo que refleja pesos almacenados en precisión alta (bfloat16 o similar) junto con tokenizer, procesador y plantilla de chat. La licencia registrada es Apache-2.0 y el único idioma declarado en los metadatos es el inglés.
 
-La relevancia de esta ficha es limitada: se trata de un modelo con muy poca tracción (70 descargas, 0 likes en el momento de la consulta), sin benchmarks publicados ni documentación técnica detallada por parte del autor. Resulta útil como ejemplo de ajuste fino ligero sobre Qwen3.5 y como opción de bajo coste para experimentación, pero no debe considerarse un modelo de referencia para producción sin una evaluación propia previa.
+Su relevancia actual es relativa: se trata de un ajuste comunitario de bajo perfil (528 descargas y 1 like en el momento de la consulta) sin evaluación publicada. Resulta útil como material de experimentación local y evaluación de asistentes de código, pero no como un modelo validado para producción. La ausencia de documentación sobre el proceso de entrenamiento limita seriamente cualquier afirmación sobre sus capacidades reales.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | qwen3_5 (transformer multimodal image-text-to-text, según tags del repo) |
-| Parametros totales | 4.659.865.088 (~4,66 B) |
+| Arquitectura | Qwen3_5ForConditionalGeneration (configuración de texto y visión) |
+| Parametros totales | 4.659.865.088 |
 | Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible (el autor publica pesos en FP16; el ecosistema Unsloth/GGUF no está confirmado para este repo) |
-| Idiomas soportados | en (inglés, según model card y tags) |
+| Tipos de cuantizacion | no disponible en este repositorio; existe un repositorio GGUF separado (qwen3.5-4B-Code-GGUF) |
+| Idiomas soportados | en |
 | Licencia | apache-2.0 |
-| Formato de pesos | safetensors (librería transformers) |
+| Formato de pesos | safetensors (dos shards, índice de pesos, tokenizer, procesador y plantilla de chat) |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un fine-tuning del checkpoint unsloth/Qwen3.5-4B, que a su vez pertenece a la familia Qwen3.5 con arquitectura transformer y capacidades multimodales (pipeline image-text-to-text). El autor no detalla la composición del dataset de ajuste, el número de tokens utilizados, ni si se aplicaron técnicas de RLHF, DPO o SFT supervisado. La única información técnica disponible es que el entrenamiento se realizó con Unsloth y la librería TRL de Hugging Face, con una mejora declarada de velocidad de 2x, y que los pesos resultantes se publican en FP16.
+La arquitectura registrada en config.json es Qwen3_5ForConditionalGeneration, una clase condicional de generación que incluye subconfiguraciones de texto y de visión. El dtype de texto configurado es bfloat16, aunque la model card aclara explícitamente que se trata de un valor de configuración y no de una afirmación sobre el dtype de todos los tensores almacenados; la plantilla de exportación original etiquetaba el modelo como FP16. La configuración guardada registra Transformers 5.3.0 como procedencia, no como versión mínima verificada de forma independiente.
 
-No se documentan innovaciones técnicas propias del ajuste (decodificación especulativa, atención lineal, etc.) más allá de las que herede del modelo base Qwen3.5, que no se especifican en la información proporcionada. Tampoco se indica si el ajuste preserva íntegramente las capacidades multimodales del modelo base o si se centró exclusivamente en texto/código.
+En cuanto al entrenamiento, la model card original identifica Unsloth y Hugging Face TRL como herramientas, pero no documenta la composición del dataset, el preprocesamiento, los hiperparámetros, la duración del entrenamiento ni los criterios de selección de checkpoints. No se aporta ninguna evaluación reproducible de código, comparación con líneas base ni evaluación de seguridad. La afirmación genérica de velocidad de entrenamiento de la plantilla original no se considera un resultado medido para esta release.
 
 ## Capacidades
 
-- Generación de texto y, presumiblemente por herencia del modelo base, entrada multimodal de imagen y texto (pipeline image-text-to-text).
-- Especialización declarada en código por el nombre del modelo ("Coder"), aunque no se documenta el alcance ni la evaluación de dicha especialización.
-- Razonamiento y matemáticas: no disponible (no se documenta explícitamente).
-- Soporte de tool calling / function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingües: limitadas al inglés según la model card y los tags.
-- Capacidades especiales (thinking mode, audio, etc.): no disponible.
+- Generación de texto y asistencia a la programación: el repositorio se presenta como una release orientada a código, aunque sin benchmarks que lo respalden.
+- Generación condicional multimodal: la configuración incluye componentes de visión, pero la model card advierte que la presencia de configuración de visión no establece un rendimiento probado en comprensión de imágenes.
+- Conversación multi-turno: se incluye plantilla de chat en el repositorio, pensada para uso conversacional.
+- Compatibilidad con text-generation-inference y Transformers (según tags del repositorio).
+- Soporte de tool calling / function calling: no disponible (no documentado).
+- Soporte de agentes y razonamiento multi-paso: no disponible (no documentado).
+- Capacidades multilingües: limitadas al inglés según los metadatos del repositorio.
+- Modo thinking, audio u otras capacidades especiales: no disponible (no documentado).
 
 ## Casos de uso
 
-- Experimentación con ajuste fino ligero: sirve como punto de partida para desarrolladores que quieran evaluar cómo un fine-tuning de Unsloth sobre Qwen3.5-4B afecta al comportamiento del modelo base en tareas de código, con un coste de cómputo moderado.
-- Asistencia de código en local: con ~4,66 B de parámetros en FP16, puede desplegarse en una GPU de gama alta de consumo (ver sección de hardware) para autocompletado y generación de fragmentos de código en entornos de desarrollo sin conexión a la nube.
-- Prototipado de pipelines multimodales: al ser un modelo image-text-to-text, permite probar flujos que combinen capturas de pantalla o diagramas con texto, por ejemplo para generar documentación a partir de imágenes técnicas.
-- Generación de documentación técnica en inglés: adecuado para redactar READMEs, docstrings y comentarios de código en inglés, dado el soporte de idioma declarado.
-- Base para fine-tunings posteriores: al estar en FP16 y con licencia Apache 2.0, puede reutilizarse como checkpoint intermedio para ajustes específicos de dominio sin restricciones de licencia.
-- Evaluación comparativa de fine-tunings: útil en investigación para medir la degradación o mejora que introduce un ajuste ligero sobre Qwen3.5-4B en tareas de código, siempre que se realice una evaluación propia dado que no hay benchmarks publicados.
+- Experimentación local con asistentes de código: el modelo puede cargarse en Transformers para probar sugerencias de código en un entorno de desarrollo, revisando siempre la salida antes de aplicarla. Es adecuado por su tamaño moderado (4,66 mil millones de parámetros) y su licencia permisiva.
+- Evaluación comparativa de ajustes comunitarios: sirve como punto de partida para medir, con un conjunto de pruebas propio, si el ajuste aporta mejoras frente a la base unsloth/Qwen3.5-4B, dado que no hay benchmarks publicados.
+- Prototipado de pipelines de generación de código en CI/CD: puede integrarse en flujos de revisión automática de parches o generación de tests, con validación humana obligatoria antes de ejecutar cualquier comando generado.
+- Investigación sobre ajuste fino con Unsloth y TRL: el repositorio documenta el uso de estas herramientas, por lo que puede servir como referencia de formato de exportación y estructura de repositorio.
+- Docencia y formación en modelos multimodales: permite ilustrar la estructura de un checkpoint con configuración de texto y visión, así como el manejo de shards de Safetensors y plantillas de chat.
+- Pruebas de despliegue con TGI: los tags incluyen text-generation-inference, por lo que puede utilizarse para validar la puesta en marcha de un endpoint compatible en un entorno controlado.
+- Conversión y cuantización: la existencia de un repositorio GGUF separado permite experimentar con flujos de conversión, aunque la model card no registra la revisión de origen exacta de la conversión.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card indica explícitamente que no se suministra ningún benchmark reproducible de código, comparación con líneas base ni evaluación de seguridad.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia en FP16: aproximadamente 9,3 GB solo para los pesos (4,66 B × 2 bytes), más overhead de activaciones y KV cache; en la práctica se recomienda al menos 12-16 GB de VRAM para contexto moderado.
-- VRAM estimada en cuantización de 8 bits: en torno a 5-6 GB de pesos, más overhead; requiere cuantización propia, ya que el repo no publica versiones GGUF/AWQ/GPTQ.
-- VRAM estimada en cuantización de 4 bits: en torno a 3-4 GB de pesos, más overhead; igualmente requiere cuantización por parte del usuario.
-- GPU recomendadas: A100 40 GB, H100, L40S o RTX 6000 Ada para despliegue holgado en FP16; RTX 4090 (24 GB) y RTX 3090 (24 GB) son suficientes para FP16 con contexto moderado.
-- GPU de consumo: cabe en RTX 4090/3090 en FP16; en GPUs de 8-12 GB (RTX 4070, RTX 3060 12 GB) sería necesario cuantizar.
-- Opciones de despliegue: transformers (nativo), TGI (tag text-generation-inference), vLLM (compatible con arquitecturas transformer estándar, aunque la variante qwen3_5 multimodal puede requerir versión reciente), llama.cpp/Ollama solo si el usuario genera los GGUF correspondientes.
-- Latencia y throughput estimados: no disponible (no se publican mediciones).
+- VRAM estimada para inferencia: no disponible de forma oficial. Como referencia orientativa, un modelo de 4,66 mil millones de parámetros en bfloat16 requiere aproximadamente 9,3 GB solo para los pesos, a lo que hay que sumar caché KV y overhead del runtime; en cuantización de 8 bits bajaría a unos 4,7 GB y en 4 bits a unos 2,3 GB, aunque estos cálculos no están verificados para este checkpoint concreto.
+- GPU recomendadas: no disponible. La model card no afirma haber probado ninguna configuración de hardware.
+- Compatibilidad con GPU de consumo: no verificada. Por tamaño, cabría en GPUs con 12-16 GB de VRAM en precisión reducida, pero no hay confirmación oficial.
+- Opciones de despliegue: Transformers (versión que soporte Qwen3.5 conditional generation), text-generation-inference (según tags), y GGUF mediante el repositorio separado qwen3.5-4B-Code-GGUF.
+- Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Licencia | Multimodal | Benchmarks publicados |
+| Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.5-4B-Coder (este) | ~4,66 B | no disponible | Apache 2.0 | Sí (image-text-to-text) | No |
-| unsloth/Qwen3.5-4B (base) | ~4,66 B | no disponible | Apache 2.0 (según repo base) | Sí | No disponible en la información proporcionada |
-| Qwen2.5-Coder-3B | ~3 B | 32K (típico en la familia) | Apache 2.0 | No | Sí (publicados por el autor original) |
-| Qwen2.5-Coder-7B | ~7 B | 32K (típico en la familia) | Apache 2.0 | No | Sí (publicados por el autor original) |
+| reaperdoesntknow/Qwen3.5-4B-Coder | 4,66 B | no disponible | sin benchmarks publicados | Apache-2.0 | Hugging Face, Safetensors |
+| unsloth/Qwen3.5-4B (base) | no disponible en la información | no disponible | no disponible | no disponible en la información | Hugging Face |
+| reaperdoesntknow/qwen3.5-4B-Code-GGUF | no disponible en la información | no disponible | no disponible | no disponible en la información | Hugging Face, GGUF |
 
-La comparativa con Qwen2.5-Coder se ofrece como referencia de categoría (modelos de código de tamaño similar), pero los datos de contexto y benchmarks de esos modelos no forman parte de la información proporcionada para esta ficha y deben verificarse en sus respectivas model cards.
+No se dispone de datos suficientes para comparar con alternativas de otros desarrolladores de la misma categoría.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de benchmarks: no hay evaluación publicada de MMLU, HumanEval, GSM8K ni de tareas multimodales, por lo que el rendimiento real es desconocido.
-- Documentación mínima: la model card no especifica dataset de ajuste, hiperparámetros, número de tokens ni metodología, lo que impide reproducir el entrenamiento.
-- Riesgo de olvido catastrófico: al ser un fine-tuning sobre un modelo de 4,66 B, es probable que el ajuste haya degradado capacidades del modelo base (razonamiento general, multilingüismo, multimodalidad); no hay datos que lo confirmen o descarten.
-- Idiomas: solo se declara inglés; el uso en castellano no está soportado oficialmente y probablemente degrade la calidad.
-- Alucinación: sin evaluación, no puede descartarse un riesgo elevado de alucinación en código y en texto, especialmente en un modelo de este tamaño.
-- Sesgos: no documentados; se heredan los del modelo base Qwen3.5, que no se detallan.
-- Licencia: Apache 2.0 permite uso comercial, pero el usuario debe verificar las condiciones del modelo base unsloth/Qwen3.5-4B y de la familia Qwen3.5 original.
-- Tracción mínima: 70 descargas y 0 likes indican ausencia de validación por parte de la comunidad; no se recomienda su uso en producción sin una evaluación exhaustiva propia.
-- Contexto desconocido: la longitud de contexto no está documentada, lo que impide planificar casos de uso con ventanas largas.
+- Ausencia total de documentación sobre dataset, hiperparámetros y criterios de selección de checkpoints, lo que impide reproducir el ajuste.
+- Falta de benchmarks y evaluaciones de seguridad: no hay evidencia publicada de mejora en código frente al modelo base.
+- Riesgo de alucinación y de código incorrecto, inseguro o incompatible con las dependencias del usuario; la model card recomienda revisar y probar todo el código generado.
+- No ejecutar comandos o código generados con acceso a secretos o sistemas de producción sin revisión previa.
+- La configuración de visión no implica rendimiento probado en comprensión de imágenes.
+- Idioma limitado al inglés según los metadatos del repositorio.
+- Longitud de contexto no documentada, lo que dificulta planificar cargas con entradas largas.
+- Licencia Apache-2.0 permisiva para uso comercial, pero el autor no ofrece garantías ni soporte; la responsabilidad de validación recae en el usuario.
+- Bajo nivel de adopción (528 descargas, 1 like), lo que reduce la probabilidad de que los fallos hayan sido detectados por la comunidad.
+- La relación exacta entre este checkpoint y el repositorio GGUF no está registrada en la model card.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/reaperdoesntknow/Qwen3.5-4B-Coder
+- Repositorio Hugging Face: https://huggingface.co/reaperdoesntknow/Qwen3.5-4B-Coder
 - Modelo base: https://huggingface.co/unsloth/Qwen3.5-4B
-- Unsloth (repositorio): https://github.com/unslothai/unsloth
-- TRL de Hugging Face: https://github.com/huggingface/trl
+- Repositorio GGUF relacionado: https://huggingface.co/reaperdoesntknow/qwen3.5-4B-Code-GGUF

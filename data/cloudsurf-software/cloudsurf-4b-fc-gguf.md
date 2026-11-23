@@ -2,90 +2,96 @@
 
 ## Resumen
 
-CloudSurf-4B-FC-GGUF es la colección oficial de cuantizaciones GGUF del modelo CloudSurf-4B-FC, desarrollado por CloudSurf Software. Se trata de un modelo de función de llamada (function calling) y uso de herramientas (tool use) basado en Gemma-4, con una arquitectura E4B que activa aproximadamente 4.000 millones de parámetros de un total cercano a 8.000 millones. El modelo original fue afinado con QLoRA y destaca por su rendimiento en el benchmark BFCL V4, superando a modelos de referencia como Nanbeige4-3B y gpt-oss-20b en la misma categoría.
+CloudSurf-4B-FC-GGUF es el conjunto oficial de cuantizaciones GGUF de CloudSurf-4B-FC, un modelo ajustado por CloudSurf Software a partir de Gemma-4 E4B y especializado en function calling y uso de herramientas. El prefijo "4B" hace referencia a los parametros activos (arquitectura de mezcla de expertos), mientras que el total real del checkpoint es de aproximadamente 8.000 millones de parametros, coherente con los 7.518.069.290 registrados en safetensors. Esta publicacion no es un modelo nuevo, sino la conversion a llama.cpp de los pesos BF16 fusionados, pensada para ejecucion local en hardware de consumo.
 
-Esta versión GGUF permite ejecutar el modelo en hardware modesto, con cuantizaciones desde Q3_K_M (4,9 GB) hasta BF16 (15,1 GB), todas validadas con una suite de pruebas de llamadas a herramientas. El modelo soporta además entrada de imágenes mediante un proyector (mmproj), lo que lo convierte en una opción versátil para agentes que necesitan combinar visión y razonamiento con herramientas. Su licencia Apache-2.0 facilita su uso comercial, aunque los pesos base de Gemma-4 están sujetos a los términos de Google.
+La relevancia practica del modelo esta en su enfoque: no compite por conocimiento general, sino por fiabilidad en la generacion de llamadas a herramientas estructuradas, con un formato de tool calling embebido en la plantilla de chat y compatibilidad con el servidor OpenAI de llama.cpp. La ventana de contexto declarada es de clase 131K, aunque el autor recomienda 16.384 tokens como valor por defecto en funcion de la memoria disponible.
 
-La relevancia actual de este modelo radica en su capacidad para ejecutar agentes con tool calling en entornos con recursos limitados, manteniendo un rendimiento competitivo en tareas de función de llamada. El contexto de entrenamiento alcanza la clase de 131K tokens, aunque se recomienda un valor práctico de 16K para la mayoría de los despliegues.
+La licencia es Apache-2.0, heredada del modelo base, con la salvedad de que los pesos originales de Gemma-4 estan sujetos a los terminos de Google. El autor advierte explicitamente de que los resultados de benchmark publicados corresponden a los pesos BF16 y no a estos ficheros cuantizados, que aun no han sido evaluados.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Gemma-4 E4B (effective-4B active; ~8.0B total params) |
-| Parametros totales | 7.518.069.290 |
-| Parametros activos | ~4B (efectivos, segun el autor) |
-| Longitud de contexto | 131K (entrenado/evaluado); 16K recomendado como valor practico |
-| Tipos de cuantizacion | Q3_K_M, Q4_K_M, Q5_K_M, Q6_K, Q8_0, BF16 |
+| Arquitectura | Transformer con mezcla de expertos (MoE), base Gemma-4 E4B |
+| Parametros totales | 7.518.069.290 (aprox. 8,0B) |
+| Parametros activos | 4B |
+| Longitud de contexto | Clase 131K (entrenado y evaluado); 16.384 recomendado por defecto en llama.cpp |
+| Tipos de cuantizacion | Q3_K_M, Q4_K_M, Q5_K_M, Q6_K, Q8_0, BF16; imatrix i1 en repo de terceros |
 | Idiomas soportados | Ingles |
 | Licencia | Apache-2.0 (pesos base Gemma-4 sujetos a terminos de Google) |
-| Formato de pesos | GGUF |
+| Formato de pesos | GGUF (llama.cpp); proyector multimodal mmproj en F16 y Q8_0 |
 
 ## Arquitectura y entrenamiento
 
-El modelo base CloudSurf-4B-FC es un ajuste fino QLoRA sobre Gemma-4, con una arquitectura E4B que activa aproximadamente 4.000 millones de parámetros de un total de 8.000 millones. No se han publicado detalles sobre la composición exacta del dataset de entrenamiento, el número de tokens utilizados ni si se aplicaron técnicas de RLHF o DPO. La información disponible indica que el ajuste se centró en mejorar las capacidades de function calling y tool use, con un rendimiento medido en BFCL V4.
+El modelo parte de Gemma-4 E4B, una arquitectura de mezcla de expertos con 4B de parametros activos y unos 8B totales. Sobre esa base, CloudSurf Software realizo un ajuste fino orientado a function calling y tool use, evaluado con BFCL V4. No se detallan en la informacion disponible el volumen de tokens de entrenamiento, la composicion del dataset ni si se emplearon tecnicas de RLHF o DPO; esos datos se remiten a la model card del modelo base.
 
-La versión GGUF mantiene la arquitectura original y añade un template de chat embebido que permite el renderizado de llamadas a herramientas. El uso de `--jinja` en llama.cpp es obligatorio para que las tool calls se parseen correctamente. El modelo también incluye soporte de visión mediante un proyector (mmproj) que se puede emparejar con cualquier cuantización.
+La innovacion destacable no esta en la arquitectura, sino en la integracion del formato de llamada a herramientas dentro de la plantilla de chat embebida en el GGUF, que llama.cpp interpreta con `--jinja`. El autor verifico cada fichero con una bateria de seis casos contra `llama-server --jinja`: llamada simple, llamada con multiples argumentos, seleccion de herramienta, ida y vuelta con `role:tool`, rechazo cuando ninguna herramienta encaja y llamadas en paralelo. Un fichero que falla cualquier caso no se publica.
 
 ## Capacidades
 
-- Function calling y tool use: soporta llamadas a herramientas con múltiples argumentos, selección de herramientas, round-trip con `role:tool`, llamadas paralelas y rechazo de irrelevancias.
-- Agentes multi-paso: puede integrarse en pipelines de razonamiento encadenado con llamadas a APIs externas.
-- Visión: admite entrada de imágenes mediante el proyector mmproj, heredado de la base Gemma-4.
-- Generación de texto conversacional: mantiene las capacidades de diálogo del modelo base.
-- Multilingüe: solo inglés confirmado; no se especifican otros idiomas.
-- Compatibilidad con OpenAI API: el servidor llama.cpp expone un endpoint compatible con `chat/completions` que devuelve `tool_calls`.
+- Generacion de texto conversacional en ingles, orientada a asistencia con herramientas.
+- Function calling y tool use: llamadas simples, multiargumento, paralelas y seleccion entre varias herramientas.
+- Manejo del ciclo completo de tool calling, incluido el retorno con `role:tool`.
+- Rechazo controlado cuando ninguna herramienta disponible es adecuada para la peticion.
+- Entrada de imagenes mediante el proyector mmproj (capacidad heredada de la base Gemma-4, no del ajuste fino).
+- Contexto largo de clase 131K para conversaciones multi-turno y documentos extensos.
+- Integracion con clientes compatibles con la API de OpenAI a traves de `llama-server`.
 
 ## Casos de uso
 
-- Atención al cliente automatizada: el modelo puede gestionar conversaciones multi-turno con contexto largo (hasta 131K tokens) y realizar llamadas a sistemas de ticketing o bases de conocimiento mediante tool calling.
-- Agentes de automatización de tareas: integración en flujos de trabajo que requieren consultar APIs, actualizar registros o enviar notificaciones, gracias a su soporte de llamadas paralelas.
-- Generación de código asistida: puede invocar herramientas de análisis estático, ejecución de tests o generación de documentación dentro de un IDE o pipeline de CI/CD.
-- Asistentes de productividad: combinación de visión (lectura de capturas de pantalla) y tool calling para crear agentes que gestionan calendarios, correos o tareas.
-- Análisis de datos interactivo: el modelo puede llamar a funciones de consulta SQL o APIs de datos para responder preguntas sobre conjuntos de datos, manteniendo el contexto de la conversación.
-- Despliegue en edge o entornos con recursos limitados: la cuantización Q4_K_M (5,3 GB) permite ejecutar el modelo en GPUs de 8 GB, habilitando agentes con tool use en dispositivos locales.
+- Backend de agentes locales: el modelo genera llamadas estructuradas a funciones y procesa sus resultados en el mismo bucle, lo que permite construir agentes que consultan APIs internas sin salir del equipo.
+- Automatizacion de escritorio y CLI: con Q4_K_M en 5,3 GB cabe en un portatil de 8 GB de RAM y puede decidir que comando o script ejecutar a partir de lenguaje natural.
+- Enrutamiento de peticiones: usar el modelo como clasificador que selecciona la herramienta o el servicio adecuado entre un catalogo definido, aprovechando su capacidad de eleccion y de rechazo.
+- Asistente de operaciones con contexto largo: la ventana de clase 131K permite mantener el historial de incidencias y la documentacion de runbooks en el mismo contexto mientras se invocan herramientas de monitorizacion.
+- Extraccion de datos estructurados: definir una funcion con esquema JSON y dejar que el modelo rellene los argumentos a partir de texto libre, con validacion posterior en el pipeline.
+- Prototipado y evaluacion de pipelines de tool calling: al ser Apache-2.0 y ejecutable con llama.cpp, sirve como banco de pruebas reproducible antes de pasar a un modelo mayor en produccion.
+- Procesamiento de capturas o documentos escaneados combinando el modelo con el proyector mmproj para extraer informacion y encadenarla con llamadas a herramientas.
 
 ## Benchmarks y rendimiento
 
-Los resultados de BFCL V4 se midieron sobre los pesos BF16 del modelo base, no sobre las cuantizaciones GGUF. La evaluación de los quants está pendiente de publicación. Los datos disponibles son:
+Los unicos datos publicados corresponden a BFCL V4 sobre los pesos BF16 del modelo base, no sobre estos ficheros GGUF: media de 55,73 en tres semillas tal como se registro, y 54,91 bajo el marco de equidad ajustado. El autor indica que no ha evaluado las cuantizaciones y que debe asumirse perdida de calidad por debajo de Q8_0, creciente segun baja el ancho de bits.
 
-| Modelo | BFCL V4 (3-seed mean) | Notas |
+| Medicion | Valor | Ambito |
 |---|---|---|
-| CloudSurf-4B-FC (BF16) | 55.73 as-registered / 54.91 matched-variant | Medido en el rig del autor |
-| Stock (Gemma-4 base) | 34.81 | Mismo rig |
-| Nanbeige4-3B | 51.40 | Barra de la clase small-model |
-| gpt-oss-20b | 49.09 | Medido en el mismo rig |
+| BFCL V4 (media 3 semillas, registro) | 55,73 | Pesos BF16 |
+| BFCL V4 (marco de equidad ajustado) | 54,91 | Pesos BF16 |
+| Verificacion de tool calling | 6/6 casos | Todos los ficheros GGUF (2026-08-19) |
 
-No se han publicado resultados de benchmarks para las versiones cuantizadas. Se asume una pérdida de calidad progresiva por debajo de Q8_0, mayor cuanto menor sea el bit-width.
+No se han publicado resultados de benchmarks sobre los ficheros cuantizados en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: Q3_K_M 4,9 GB, Q4_K_M 5,3 GB, Q5_K_M 5,8 GB, Q6_K 6,2 GB, Q8_0 8,0 GB, BF16 15,1 GB.
-- GPU recomendadas: cualquier GPU con al menos 8 GB de VRAM (RTX 3060, RTX 4060, RTX 4090, etc.) para las cuantizaciones Q4-Q6. Para Q8_0 se necesitan 8 GB o más. Para BF16 se recomienda una GPU de 16 GB o más.
-- Cabe en GPU de consumo: sí, las cuantizaciones Q3-Q6 caben en GPUs de 8 GB; Q8_0 requiere 8 GB justos.
-- Opciones de despliegue: llama.cpp (llama-server, llama-cli), LM Studio, Ollama. También es posible usar el servidor OpenAI-compatible para integraciones con clientes estándar.
-- Latencia y throughput: no disponible en la información proporcionada.
+- VRAM/RAM estimada segun fichero: Q3_K_M 4,9 GB, Q4_K_M 5,3 GB, Q5_K_M 5,8 GB, Q6_K 6,2 GB, Q8_0 8,0 GB, BF16 15,1 GB. Sumar 1,0 GB (mmproj F16) o 0,6 GB (mmproj Q8_0) si se usa entrada de imagen.
+- Cabe en GPU de consumo: Q4_K_M en tarjetas de 8 GB, Q6_K al limite de 8 GB, Q8_0 en 12 GB o mas. El BF16 requiere 24 GB para holgura.
+- GPU recomendadas: RTX 3060 Ti / 4060 Ti (8 GB) para Q4_K_M y Q5_K_M; RTX 4070 Ti / 4080 (12-16 GB) para Q6_K y Q8_0; A100 o H100 solo si se necesita contexto muy largo con muchas peticiones concurrentes.
+- Despliegue: llama.cpp (`llama-server`, `llama-cli`), LM Studio y Ollama. El flag `--jinja` es obligatorio para que se aplique la plantilla de tool calling; sin el, las llamadas no se parsean.
+- Contexto y memoria: el autor recomienda `-c 16384` como valor practico y aumentar en funcion de la memoria. No se han publicado datos de latencia ni throughput.
 
 ## Comparativa con modelos similares
 
-No se dispone de especificaciones completas de modelos comparables como Nanbeige4-3B o gpt-oss-20b. La única comparativa disponible es la de rendimiento en BFCL V4, que se muestra en la sección de benchmarks. En cuanto a la versión GGUF, la comparativa directa sería con el modelo base BF16, que presenta las mismas capacidades pero sin pérdida por cuantización. No se han encontrado otros modelos de function calling de tamaño similar con especificaciones públicas comparables.
+| Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| CloudSurf-4B-FC | 4B activos / ~8B totales | Clase 131K | Function calling | Apache-2.0 | GGUF y BF16 en HF |
+| Gemma-4 E4B (base) | 4B activos / ~8B totales | No disponible | Proposito general | Terminos de Gemma | Peso base del ajuste |
+| mradermacher/CloudSurf-4B-FC-i1-GGUF | Mismos pesos | Clase 131K | Function calling, cuantizacion imatrix | Apache-2.0 | GGUF i1 por debajo de Q3 |
+
+No se dispone de datos de benchmark comparativos con otros modelos de la misma categoria en la informacion proporcionada, por lo que la comparacion se limita a parametros, contexto, licencia y disponibilidad.
 
 ## Limitaciones y advertencias
 
-- Los resultados de benchmarks corresponden a los pesos BF16; las cuantizaciones pueden presentar degradación de rendimiento, especialmente por debajo de Q8_0.
-- El modelo solo soporta inglés de forma confirmada; no se garantiza un rendimiento adecuado en otros idiomas.
-- Existe riesgo de alucinación en tareas de razonamiento complejo, como en cualquier modelo de lenguaje.
-- La licencia Apache-2.0 se aplica a los pesos del modelo, pero los pesos base de Gemma-4 están sujetos a los términos de uso de Google, que pueden imponer restricciones adicionales.
-- El contexto de 131K es el máximo teórico; en la práctica, valores como 16K son más seguros para evitar degradación o consumo excesivo de memoria.
-- Se ha observado una entrada de metadata `</s>` en las conversiones GGUF que llama.cpp corrige automáticamente; es benigna pero puede causar confusión en otras herramientas.
-- La evaluación de los quants está pendiente; hasta entonces, no se puede garantizar el mismo nivel de calidad que el modelo BF16.
+- Solo soporta ingles de forma declarada; el rendimiento en castellano no esta documentado.
+- Los benchmarks publicados son de BF16: no hay evaluacion de las cuantizaciones, y el autor avisa de perdida de calidad por debajo de Q8_0.
+- Sin `--jinja`, el servidor usa una plantilla generica y las llamadas a herramientas no se interpretan correctamente.
+- La plantilla de chat debe conservarse tal cual; sustituirla por una generica rompe el formato de tool calling.
+- Riesgo de alucinacion en argumentos de funciones y en la seleccion de herramientas cuando el catalogo es amplio o ambiguo; conviene validar los esquemas en el lado del servidor.
+- La entrada de imagen depende del proyector mmproj y de la base Gemma-4; no forma parte del ajuste fino en tool use.
+- Algunas conversiones GGUF pueden incluir una entrada espuria `</s>` en los metadatos del token de fin; llama.cpp lo detecta y corrige al cargar.
+- Licencia Apache-2.0 para el ajuste, pero los pesos base de Gemma-4 quedan sujetos a los terminos de Google, lo que condiciona el uso comercial en la medida en que estos apliquen.
+- El contexto de clase 131K es costoso en memoria; en GPUs de 8 GB hay que reducirlo de forma significativa.
 
 ## Enlaces
 
-- Repositorio Hugging Face del GGUF: https://huggingface.co/cloudsurf-software/CloudSurf-4B-FC-GGUF
-- Modelo base (BF16): https://huggingface.co/cloudsurf-software/CloudSurf-4B-FC
-- Proyector de visión (mmproj): https://huggingface.co/cloudsurf-software/CloudSurf-4B-FC-GGUF/resolve/main/mmproj-CloudSurf-4B-FC.F16.gguf
-- Manifest de checksums: https://huggingface.co/cloudsurf-software/CloudSurf-4B-FC-GGUF/resolve/main/quant-manifest.json
-- Cuantización comunitaria (imatrix): https://huggingface.co/mradermacher/CloudSurf-4B-FC-i1-GGUF
-- Página del modelo en FriendliAI: https://friendli.ai/models/cloudsurf-software/CloudSurf-4B-FC
-- Organización CloudSurf en GitHub: https://github.com/cloudsurf-software
+- Repositorio GGUF: https://huggingface.co/cloudsurf-software/CloudSurf-4B-FC-GGUF
+- Modelo base: https://huggingface.co/cloudsurf-software/CloudSurf-4B-FC
+- Cuantizaciones imatrix de terceros: https://huggingface.co/mradermacher/CloudSurf-4B-FC-i1-GGUF
+- Manifiesto de checksums: https://huggingface.co/cloudsurf-software/CloudSurf-4B-FC-GGUF/resolve/main/quant-manifest.json

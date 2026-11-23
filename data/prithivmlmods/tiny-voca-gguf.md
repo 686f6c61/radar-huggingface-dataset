@@ -2,102 +2,99 @@
 
 ## Resumen
 
-tiny-voca es un modelo de síntesis de voz (text-to-speech) en inglés, ultraligero y de código abierto, desarrollado originalmente por Muhammed Nazeem (`n4ze3m`). Esta ficha corresponde a la versión cuantizada en GGUF publicada por `prithivMLmods`, que convierte los pesos originales (PyTorch y ONNX) a formatos compatibles con llama.cpp para su despliegue en entornos con recursos muy limitados. El modelo convierte texto a fonemas mediante el fonemizador propio `dizione` y genera audio mono a 24 kHz.
+tiny-voca es un modelo de síntesis de voz (text-to-speech) en inglés de código abierto, publicado bajo licencia Apache-2.0 y desarrollado originalmente por Muhammed Nazeem (`n4ze3m`). Su propuesta central es la ligereza extrema: toda la arquitectura, incluida la generación de forma de onda, cabe en unos 4,54 millones de parámetros (el repositorio cuantizado declara 1.603.456 parámetros en safetensors), lo que se traduce en ficheros de entre 1,07 MB y 6,42 MB según la cuantización. Convierte texto en fonemas mediante el fonemizador propio `dizione` y sintetiza audio mono a 24 kHz.
 
-La relevancia de tiny-voca radica en su escala extrema: el modelo base declara 4,54 millones de parámetros (el repositorio safetensors reporta 1.603.456), lo que permite ejecutarlo en CPU con un consumo de memoria inferior a 10 MB en las cuantizaciones más agresivas. Según la model card, se entrenó desde cero en menos de 8 horas sobre una única RTX 4090, con un coste total de 9,56 dólares, usando 17,6 horas de voz sintética generada por Qwen3-TTS.
+La versión aquí descrita, `prithivMLmods/tiny-voca-GGUF`, es una conversión a formato GGUF del modelo base, con 11 ficheros que cubren desde F32 hasta Q3_K_M, más un fichero de proyección multimodal en BF16. Está pensada para ejecutarse con `llama-tts` sobre llama.cpp, lo que la hace apta para despliegue en cliente (navegador o móvil) y en entornos con recursos muy limitados. El modelo base se entrenó desde cero en menos de 8 horas sobre una única RTX 4090, con un coste declarado de 9,56 dólares y 17,6 horas de voz sintética generada por Qwen3-TTS.
 
-El modelo ofrece dos voces fijas de inglés americano (F2 femenina y M2 masculina) con control de velocidad, desplazamiento de tono y rango de tono. No soporta clonación de voz, streaming ni variación prosódica, lo que lo posiciona como una solución para síntesis embebida y del lado del cliente más que como un sistema TTS de propósito general.
+Su relevancia actual reside en la relación entre inteligibilidad y huella de memoria: el autor reporta una tasa media de error de palabra inferior al 0,8 % y una velocidad de aproximadamente 70 veces el tiempo real con cuatro hilos de CPU. A cambio, ofrece únicamente dos voces fijas de inglés americano (F2 femenina y M2 masculina), sin clonación de voz, sin streaming y sin variación prosódica.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer encoder con sintetizador source-filter (sin vocoder neuronal) |
-| Parametros totales | 1.603.456 (según safetensors); la model card declara 4,54 M para el modelo base |
-| Parametros activos | No aplica (no es MoE) |
-| Longitud de contexto | No disponible |
-| Tipos de cuantizacion | F32, BF16, Q3_K_L, Q3_K_M, Q4_K_M, Q4_K_S, Q5_K_M, Q5_K_S, Q6_K, Q8_0, mmproj-bf16 |
-| Idiomas soportados | Inglés (en), variante americana |
+| Arquitectura | Transformer encoder con sintetizador source-filter (sin vocoder neuronal pesado) |
+| Parametros totales | 1.603.456 (safetensors del repo GGUF); el modelo base declara 4,54 M en su arquitectura completa |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | F32, BF16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q4_K_M, Q4_K_S, Q3_K_L, Q3_K_M, más mmproj-bf16 |
+| Idiomas soportados | inglés (variedad americana, voces F2 y M2) |
 | Licencia | Apache-2.0 |
-| Formato de pesos | GGUF (cuantizado con llama.cpp); el modelo base también en PyTorch y ONNX |
+| Formato de pesos | GGUF (cuantizado con llama.cpp); el modelo base también se distribuye en ONNX |
 
 ## Arquitectura y entrenamiento
 
-tiny-voca emplea una arquitectura de encoder transformer combinada con un sintetizador source-filter rápido en lugar de un vocoder neuronal pesado. El texto se convierte primero a fonemas mediante el fonemizador `dizione`, y el sintetizador genera la forma de onda directamente a 24 kHz en mono. Esta elección de diseño es la que permite el reducido tamaño y la velocidad de inferencia declarada de aproximadamente 70 veces el tiempo real sobre cuatro hilos de CPU.
+tiny-voca emplea un encoder transformer que transforma el texto en fonemas a través del fonemizador `dizione` y, a continuación, un sintetizador de tipo source-filter que genera la forma de onda directamente, evitando el coste computacional de un vocoder neuronal. La salida es audio mono a 24 kHz. El control de síntesis se limita a tres parámetros ajustables: velocidad, desplazamiento de tono (pitch shift) y rango de tono (pitch range).
 
-El entrenamiento se realizó desde cero en menos de 8 horas sobre una única RTX 4090, con un coste de 9,56 dólares, utilizando 17,6 horas de voz sintética generada por Qwen3-TTS y el dataset `n4ze3m/tiny-voca`. La model card no detalla si se aplicaron técnicas de RLHF, DPO ni otras fases de alineación. La versión de esta ficha es una cuantización GGUF del modelo base realizada con llama.cpp, que incluye además un fichero `mmproj-bf16` de proyección multimodal para las capacidades de audio.
+El entrenamiento se realizó desde cero en menos de 8 horas sobre una sola RTX 4090, con un coste declarado de 9,56 dólares, usando 17,6 horas de voz sintética generada por Qwen3-TTS como corpus. No se documentan en la información disponible detalles sobre número de tokens, composición exacta del dataset ni uso de RLHF o DPO. La conversión a GGUF se realizó con llama.cpp y está orientada a la ruta de inferencia `llama-tts`.
 
 ## Capacidades
 
-- Síntesis de voz en inglés americano a 24 kHz en mono.
+- Síntesis de voz a partir de texto en inglés americano, con salida de audio mono a 24 kHz.
 - Dos voces fijas: F2 (femenina) y M2 (masculina).
-- Control ajustable de velocidad, desplazamiento de tono (pitch shift) y rango de tono.
-- Conversión de texto a fonemas mediante el fonemizador `dizione`.
-- Inferencia en CPU con alto rendimiento (aproximadamente 70x tiempo real en 4 hilos).
-- No soporta tool calling ni function calling (no es un modelo de lenguaje).
-- No soporta clonación de voz.
-- No soporta streaming de audio.
-- No soporta variación prosódica.
-- Capacidades multilingües: únicamente inglés.
+- Control de velocidad de habla, desplazamiento de tono y rango de tono.
+- Fonemización mediante el fonemizador propio `dizione`.
+- Ejecución en CPU: aproximadamente 70 veces el tiempo real con cuatro hilos.
+- Compatibilidad con `llama-tts` sobre llama.cpp y disponibilidad de pesos en ONNX para el modelo base.
+- No soporta clonación de voz, streaming ni variación prosódica.
+- No dispone de tool calling, razonamiento multi-paso ni capacidades de agente; es un modelo puramente de TTS.
+- Capacidad multilingüe: no disponible (solo inglés).
 
 ## Casos de uso
 
-- Síntesis de voz en el navegador: al ejecutarse en CPU con un consumo de memoria mínimo (1,07-1,8 MB en cuantizaciones Q3-Q8), el modelo puede desplegarse del lado del cliente mediante WebAssembly para leer contenido web o notificaciones sin enviar texto a un servidor.
-- Aplicaciones móviles de accesibilidad: integración en lectores de pantalla o asistentes de voz para personas con discapacidad visual, aprovechando que el modelo cabe en memoria en dispositivos de gama baja y no requiere GPU.
-- Sistemas embebidos y IoT: generación de avisos hablados en dispositivos con recursos restringidos (Raspberry Pi, microcontroladores con suficiente RAM), donde un TTS convencional no cabría.
-- Prototipado rápido de interfaces de voz: uso en entornos de desarrollo para validar flujos de conversación con audio sintético antes de invertir en un TTS de mayor calidad.
-- Audiolibros y contenido pregrabado de bajo coste: generación por lotes de narraciones en inglés americano con una de las dos voces fijas, ajustando la velocidad para adaptarse al contenido.
-- Pruebas automatizadas de pipelines de audio: generación de locuciones sintéticas deterministas para tests de integración de sistemas de reconocimiento de voz o de procesamiento de audio.
-- Demos educativas de TTS: ejemplo didáctico de arquitectura source-filter y de cuantización GGUF para cursos de procesamiento de voz, dado su reducido tamaño y su licencia permisiva.
+- Lectura de artículos y contenido web en el navegador: el tamaño de 1,07-1,29 MB en Q3/Q4 permite cargar el modelo en el cliente y sintetizar texto sin enviar datos a un servidor, con latencia baja gracias a la inferencia en CPU.
+- Accesibilidad para personas con discapacidad visual: integración en lectores de pantalla o aplicaciones de escritorio que necesiten una voz local, sin dependencia de APIs externas y con coste marginal nulo.
+- Asistentes de voz en dispositivos móviles o embebidos: el reducido consumo de memoria (por debajo de 10 MB incluso en F32) encaja en entornos con RAM limitada donde un vocoder neuronal convencional no cabría.
+- Anuncios y notificaciones en aplicaciones IoT: mensajes cortos y repetitivos donde la velocidad de 70× tiempo real con cuatro hilos permite generar audio bajo demanda sin pregenerar ficheros.
+- Prototipado rápido de interfaces de voz: al ser Apache-2.0 y ejecutarse con llama.cpp, sirve para validar flujos de TTS en un pipeline de desarrollo antes de migrar a un modelo mayor con más voces.
+- Generación de audio para pruebas automatizadas: la API de control de velocidad y tono permite producir variantes de un mismo texto para test de sistemas de reconocimiento de voz o de sincronización labial.
+- Educación y aprendizaje de idiomas: lectura de frases en inglés americano con velocidad ajustable para prácticas de comprensión auditiva.
 
 ## Benchmarks y rendimiento
 
-La model card indica que el modelo base alcanzó el puesto 8 y el 13 en la Open TTS Leaderboard de noviembre de 2026, con un Word Error Rate medio inferior al 0,8 %. No se proporcionan resultados numéricos detallados por benchmark en la información disponible.
+El autor reporta que el modelo base alcanza una tasa media de error de palabra (WER) inferior al 0,8 % y que se situó en las posiciones 8.ª y 13.ª del Open TTS Leaderboard de noviembre de 2026. No se han publicado en la información disponible tablas detalladas de benchmarks comparativos (MMLU, HumanEval, GSM8K u otras métricas estándar), que además no aplican a un modelo de TTS.
 
-| Metrica | Valor |
+| Metrica | Valor reportado |
 |---|---|
-| Open TTS Leaderboard (noviembre 2026) | Puesto 8 y puesto 13 (dos entradas) |
-| Word Error Rate medio | < 0,8 % |
-| Velocidad de inferencia | ~70x tiempo real en 4 hilos de CPU |
+| WER medio | < 0,8 % |
+| Posicion en Open TTS Leaderboard (nov. 2026) | 8.ª y 13.ª |
+| Velocidad de sintesis | ~70× tiempo real con 4 hilos de CPU |
 | Frecuencia de muestreo de salida | 24 kHz mono |
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no requiere GPU; el modelo cabe íntegramente en memoria RAM del sistema.
-- Tamaño en disco según cuantización: Q3_K_M 1,07 MB, Q4_K_M 1,29 MB, Q5_K_M 1,37 MB, Q6_K 1,76 MB, Q8_0 1,8 MB, BF16 3,28 MB, F32 6,42 MB, mmproj-bf16 8,14 MB.
-- GPU recomendadas: no aplica; el modelo está diseñado para CPU. Cualquier GPU moderna puede ejecutarlo, pero no aporta ventaja significativa.
-- Cabe en cualquier GPU de consumo e incluso en dispositivos sin GPU dedicada.
-- Opciones de despliegue: llama.cpp (formato nativo GGUF); el modelo base también en PyTorch y ONNX.
-- Latencia y throughput: aproximadamente 70 veces el tiempo real en 4 hilos de CPU, según la model card.
+- VRAM/RAM estimada: inferior a 10 MB para los pesos en F32 (6,42 MB) y alrededor de 1-2 MB en cuantizaciones Q3/Q4; el fichero mmproj-bf16 añade 8,14 MB.
+- GPU recomendadas: no requiere GPU; el modelo está diseñado para CPU. Cualquier GPU moderna (RTX 4090, A100, H100) puede ejecutarlo, pero no aporta ventaja significativa frente a CPU dado su tamaño.
+- Cabe en cualquier GPU de consumo e incluso en entornos sin GPU; también en navegador y dispositivos móviles.
+- Opciones de despliegue: `llama-tts` sobre llama.cpp (ruta oficial indicada por el autor); el modelo base está disponible en ONNX y PyTorch para otras integraciones.
+- Latencia y throughput: aproximadamente 70× tiempo real con cuatro hilos de CPU, según el autor; no se proporcionan cifras de latencia por petición.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Formato | Notas |
 |---|---|---|---|---|---|---|
-| tiny-voca (esta ficha) | 1,6 M (safetensors) / 4,54 M (model card) | No disponible | Inglés | Apache-2.0 | GGUF, PyTorch, ONNX | Voces fijas F2/M2, sin clonación ni streaming |
-| Piper TTS | No disponible | No disponible | Múltiples | MIT (según proyecto) | ONNX | TTS ligero para CPU, ecosistema maduro |
-| Coqui TTS (modelos pequeños) | Variable | No disponible | Múltiples | MPL-2.0 / según modelo | PyTorch | Framework completo, mayor huella |
-| Kokoro TTS | ~82 M | No disponible | Inglés y otros | Apache-2.0 | PyTorch, ONNX | Mayor calidad, mayor tamaño |
+| tiny-voca (este repo) | 1,6 M (repo GGUF); 4,54 M (base) | no disponible | en | Apache-2.0 | GGUF, ONNX | Voces fijas F2/M2, sin clonación, ~70× tiempo real en CPU |
+| Qwen3-TTS | no disponible | no disponible | no disponible | no disponible | no disponible | Usado como generador del corpus de entrenamiento de tiny-voca; no se dispone de especificaciones en la información proporcionada |
+| Alternativas TTS neuronales de tamano medio | no disponible | no disponible | no disponible | no disponible | no disponible | No se dispone de datos verificables en la información proporcionada |
 
-Los datos de los modelos comparados no provienen de la información proporcionada y deben verificarse en sus respectivas fichas; se incluyen únicamente como referencia de categoría.
+No se dispone de información suficiente para establecer una comparativa cuantitativa con alternativas de la misma categoría; los datos de Qwen3-TTS y de otros sistemas TTS no aparecen en la documentación consultada.
 
 ## Limitaciones y advertencias
 
-- Solo soporta inglés americano; no hay soporte multilingüe.
-- Únicamente dos voces fijas (F2 y M2); no permite clonación ni selección de hablante.
-- No soporta streaming, lo que limita su uso en conversaciones en tiempo real.
-- Ausencia de variación prosódica: la entonación es plana y poco natural en textos largos.
-- Riesgo de pronunciación incorrecta en palabras fuera del vocabulario o nombres propios, al depender del fonemizador `dizione`.
-- El WER inferior al 0,8 % se refiere a inteligibilidad, no a naturalidad percibida; la calidad subjetiva puede ser inferior a la de modelos más grandes.
-- No se detallan sesgos de los datos de entrenamiento (voz sintética generada por Qwen3-TTS), lo que puede introducir artefactos o características del generador original.
-- Licencia Apache-2.0 permite uso comercial, pero se recomienda verificar las condiciones del modelo base `n4ze3m/tiny-voca` y del dataset `n4ze3m/tiny-voca`.
-- El repositorio reporta 0 descargas y 1 like en el momento de la consulta, lo que indica escasa validación por parte de la comunidad.
-- El fichero `mmproj-bf16` (8,14 MB) es mayor que los pesos cuantizados; su necesidad real para el pipeline TTS no está documentada en la model card.
+- Solo admite inglés americano; no hay soporte multilingüe.
+- Únicamente dos voces fijas (F2 y M2); no existe clonación de voz ni selección de hablantes adicionales.
+- No soporta streaming, lo que limita su uso en conversaciones en tiempo real con respuestas largas.
+- Ausencia de variación prosódica más allá de velocidad, pitch shift y rango de tono; la entonación puede resultar plana en textos largos o complejos.
+- Riesgo de alucinación y de pronunciación incorrecta en palabras fuera del dominio, nombres propios, siglas o términos técnicos, dado el reducido corpus de entrenamiento (17,6 horas de voz sintética).
+- Al haberse entrenado con voz sintética generada por Qwen3-TTS, puede heredar artefactos o sesgos acústicos de ese generador.
+- No se documentan evaluaciones de sesgo demográfico ni de robustez frente a entradas adversarias.
+- La licencia Apache-2.0 permite uso comercial, pero el usuario debe verificar las condiciones del modelo base `n4ze3m/tiny-voca` y de los datos sintéticos empleados.
+- El autor recomienda F32 para obtener la mejor calidad; las cuantizaciones Q3 pueden degradar la inteligibilidad.
+- La información sobre el contexto y los detalles del dataset de entrenamiento no está disponible, lo que dificulta evaluar su comportamiento fuera de los casos reportados.
 
 ## Enlaces
 
-- Hugging Face (esta versión GGUF): https://huggingface.co/prithivMLmods/tiny-voca-GGUF
+- Repositorio GGUF: https://huggingface.co/prithivMLmods/tiny-voca-GGUF
 - Modelo base: https://huggingface.co/n4ze3m/tiny-voca
 - Dataset de entrenamiento: https://huggingface.co/datasets/n4ze3m/tiny-voca
 - llama.cpp: https://github.com/ggml-org/llama.cpp
-- Perfil del cuantizador: https://huggingface.co/prithivMLmods
+- Perfil del autor de la cuantización: https://huggingface.co/prithivMLmods

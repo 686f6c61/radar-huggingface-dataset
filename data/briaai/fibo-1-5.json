@@ -48,31 +48,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "briaai/Fibo-1.5 · Hugging Face",
-      "url": "https://huggingface.co/briaai/Fibo-1.5",
-      "snippet": "FIBO model family is the first open-source, JSON-native image generation models trained exclusively on long structured captions. Fibo sets a new standard for controllability, predictability, and disentanglement by implementing the new VGL - Visual GenAI Language paradigm ⚡ Fibo 1.5 — few-step distillation + improved realism and textures for ..."
-    },
-    {
-      "title": "briaai/FIBO · Hugging Face",
-      "url": "https://huggingface.co/briaai/FIBO",
-      "snippet": "Built for production: API endpoints (Bria Platform, Fal.ai, Replicate), ComfyUI nodes, and local inference. 🎨 Work with FIBO in Three Simple Modes Generate: Start with a quick idea. FIBO&#x27;s language model expands your short prompt into a rich, structured JSON prompt, then generates the image. You get both the image and the expanded prompt."
-    },
-    {
-      "title": "Fibo: The 1st JSON-Native T2I Model for Developers - bria.ai",
-      "url": "https://bria.ai/fibo",
-      "snippet": "Looking for On-Prem visual generative AI? Try Fibo Lite, a smaller & faster model - Docker ready for local deployment with all the same benefits as Fibo: controllability, prompt adherence, and structured generation with minimal quality degradation."
-    },
-    {
-      "title": "GitHub - Bria-AI/FIBO: FIBO is a SOTA, first open-source, JSON-native ...",
-      "url": "https://github.com/Bria-AI/FIBO",
-      "snippet": "FIBO is the first open-source, JSON-native text-to-image model trained exclusively on long structured captions. Fibo sets a new standard for controllability, predictability, and disentanglement."
-    },
-    {
-      "title": "BRIA AI - GitHub",
-      "url": "https://github.com/Bria-AI/",
-      "snippet": "Claude Code skills for Bria AI - generate, edit, and transform images with Fibo, RMBG-2.0, and VGL structured prompts Python 64 5"
-    }
-  ]
+  "sources": []
 }

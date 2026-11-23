@@ -2,107 +2,112 @@
 
 ## Resumen
 
-balbal-v2-manas es un modelo de reconocimiento automático de habla (ASR) bilingüe para turco e inglés, desarrollado por erayyapagci. Se trata de un fine-tuning de `nvidia/stt_en_fastconformer_ctc_large`, al que se añaden dos componentes propios: un "looped refiner" (un refinador Transformer de 2 capas que itera 3 veces sobre la distribución CTC) y una memoria acústica product-key de gran capacidad. La decodificación combina CTC con un modelo de lenguaje KenLM de 6-gramas sobre piezas SentencePiece.
+balbal-v2-manas es un modelo de reconocimiento automático del habla (ASR) desarrollado por erayyapagci, especializado en turco e inglés. Se trata de un ajuste fino del modelo `nvidia/stt_en_fastconformer_ctc_large` que incorpora innovaciones propias del autor: un refinador en bucle de 2 capas Transformer, una memoria acústica de product-key y un modelo de lenguaje KenLM de 6-gramos sobre tokens SentencePiece. El resultado es un sistema que funciona íntegramente en CPU y que declara una velocidad de 123× tiempo real con 8 hilos.
 
-El problema que resuelve es la transcripción precisa de habla turca en condiciones difíciles, especialmente llamadas telefónicas, un dominio donde los modelos ASR abiertos suelen rendir mal en turco. En Mu-Bench (llamadas turcas) declara un 8,20 % de WER, y mantiene un rendimiento competitivo en inglés (8,67 % de WER medio en los test sets del Open ASR Leaderboard en inglés). Su rasgo más distintivo es la eficiencia: está diseñado para ejecutarse en CPU, con una velocidad declarada de 123 veces más rápido que el tiempo real con 8 hilos.
+El modelo resuelve el problema del reconocimiento de voz en turco, un idioma con relativamente pocos recursos ASR de calidad, especialmente en dominios conversacionales como llamadas telefónicas. Con 313,3 millones de parámetros totales, de los cuales 192 millones corresponden a la tabla de memoria (de la que solo se leen algunas filas por fotograma), el modelo logra un WER del 8,20% en Mu-Bench turco (llamadas telefónicas) y del 4,06% en FLEURS turco. También mantiene un rendimiento competitivo en inglés, con un WER medio del 8,67% en los conjuntos de test del English Open ASR Leaderboard.
 
-El modelo tiene 313,3 millones de parámetros (192 millones corresponden a la tabla de memoria acústica, de la que solo se leen unas pocas filas por fotograma), se distribuye en formato ONNX y fue entrenado con unas 7.000 horas de audio. Existe una variante hermana más pequeña y rápida, balbal-v2 (45M de parámetros, 236x tiempo real).
+La relevancia actual del modelo radica en su capacidad de ejecutarse en CPU con alta eficiencia, lo que lo hace adecuado para despliegues en dispositivos sin GPU, aplicaciones Android (el autor menciona una app) y entornos de producción con restricciones de hardware. El modelo se distribuye en formato ONNX y con licencia comunitaria propia (balbal-community-license-1.1), lo que condiciona su uso comercial.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | FastConformer-CTC + looped refiner (Transformer 2 capas, 3 pasadas) + memoria acústica product-key + KenLM 6-gramas |
+| Arquitectura | FastConformer-CTC con refinador en bucle (2 capas Transformer, 3 pasadas) y memoria acústica product-key |
 | Parametros totales | 313,3M (192,0M corresponden a la tabla de memoria) |
-| Parametros activos | no disponible (la memoria product-key solo lee unas pocas filas por fotograma; el resto no es MoE) |
-| Longitud de contexto | Audio segmentado en fragmentos de 30 s |
-| Tipos de cuantizacion | no disponible |
-| Idiomas soportados | Turco (tr), inglés (en) |
-| Licencia | balbal-community-license-1.0 (other) |
-| Formato de pesos | ONNX (safetensors no disponible) |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible (audio en fragmentos de 30 s; marcos de 40 ms con subsampling 4x) |
+| Tipos de cuantizacion | no disponible (formato ONNX; se desconoce si incluye variantes cuantizadas) |
+| Idiomas soportados | turco (tr), inglés (en) |
+| Licencia | balbal-community-license-1.1 (licencia comunitaria propia, no comercial estándar) |
+| Formato de pesos | ONNX |
+| Modelo base | nvidia/stt_en_fastconformer_ctc_large |
+| Vocabulario | SentencePiece 2.048 piezas + token CTC blank |
+| Modelo de lenguaje | KenLM de 6-gramos sobre tokens SentencePiece |
+| Entrada de audio | 80 mel, 4x subsampling (marcos de 40 ms) |
+| Salida | Texto con mayúsculas, puntuación y marcas de tiempo por palabra; números en dígitos mediante ITN (se puede desactivar con `--no-itn`) |
 
 ## Arquitectura y entrenamiento
 
-El modelo acústico es un FastConformer-CTC de 18 capas con d_model 512, entradas de 80 filtros mel y subsampling 4x (fotogramas de 40 ms). Sobre la salida del encoder se coloca un refinador en bucle: un Transformer de 2 capas y anchura 256 que se aplica en 3 pasadas, donde cada pasada recibe como entrada la distribución CTC de la pasada anterior. Esto permite refinar iterativamente las hipótesis de transcripción sin aumentar drásticamente el coste de inferencia.
+El modelo se basa en la arquitectura FastConformer-CTC de NVIDIA, con 18 capas de encoder, dimensión de modelo 512 y 80 filtros mel con subsampling 4x (marcos de 40 ms). Sobre la salida del encoder se añade un refinador en bucle de 2 capas Transformer con anchura 256 que realiza 3 pasadas; cada pasada toma como entrada la distribución CTC de la pasada anterior, lo que permite refinar iterativamente las predicciones. Además, se incorpora una memoria acústica de product-key con 1000×1000 subclaves, 8 cabezas, top-32, dimensión de valor 192 y contexto de 3 fotogramas. Esta memoria contiene 192 millones de parámetros, aunque solo se leen unas pocas filas por fotograma, lo que mantiene la eficiencia computacional.
 
-La innovación más notable es la memoria acústica product-key: una tabla de 1.000x1.000 subclaves con 8 cabezas, selección top-32, dimensión de valor 192 y contexto de 3 fotogramas. Con 192 millones de parámetros, constituye la mayor parte del modelo, pero al ser una memoria direccionable por producto de claves, por cada fotograma solo se leen unas pocas filas, lo que mantiene el coste computacional bajo y explica que el modelo sea rápido incluso en CPU. La decodificación final usa un KenLM de 6-gramas sobre un vocabulario SentencePiece de 2.048 piezas más el token CTC blank. Fue entrenado con aproximadamente 7.000 horas de audio; no se ha publicado información sobre la composición exacta del dataset ni sobre el uso de técnicas de alineamiento preferencial.
+El entrenamiento se realizó sobre aproximadamente 7.000 horas de audio, según indica el autor. No se especifica en la información disponible la composición exacta del dataset ni si se aplicaron técnicas de RLHF o DPO (poco habituales en ASR). La decodificación utiliza un modelo de lenguaje KenLM de 6-gramos sobre las piezas SentencePiece, lo que ayuda a mejorar la precisión en la transcripción. El modelo se distribuye en formato ONNX, lo que facilita su despliegue en CPU y en entornos sin GPU. No se detallan innovaciones adicionales como decodificación especulativa o atención lineal más allá del refinador en bucle y la memoria product-key.
 
 ## Capacidades
 
-- Transcripción de habla en turco e inglés, con salida en texto con mayúsculas y puntuación.
-- Marcas de tiempo por palabra (per-word timestamps).
-- Normalización inversa del texto (ITN): los números se emiten como dígitos; se puede desactivar con `--no-itn`.
-- Procesado de audio largo: el audio de más de 30 s se divide automáticamente en fragmentos de 30 s.
-- Inferencia eficiente en CPU (123x tiempo real con 8 hilos según el autor).
-- Distribución en formato ONNX, lo que facilita el despliegue multiplataforma, incluyendo móvil (existe una app Android anunciada).
-- No soporta traducción, diarización de hablantes ni clasificación de idioma automática declaradas en la documentación.
+- Reconocimiento automático del habla en turco e inglés, con salida de texto con mayúsculas, puntuación y marcas de tiempo por palabra.
+- Manejo de audio de hasta 30 segundos por fragmento; audios más largos se dividen en trozos de 30 s.
+- Normalización de texto inversa (ITN) que convierte números hablados a dígitos; se puede desactivar con `--no-itn` para mantener las palabras habladas.
+- Decodificación con KenLM de 6-gramos que mejora la fluidez y precisión de las transcripciones.
+- Ejecución eficiente en CPU: 123× tiempo real con 8 hilos en un AMD Ryzen AI Max+ 395.
+- No se mencionan capacidades de tool calling, function calling, agentes, razonamiento multi-paso, visión ni audio más allá del ASR.
+- Capacidades multilingües limitadas a turco e inglés.
+- No se indica soporte para modo "thinking" ni otras capacidades especiales.
 
 ## Casos de uso
 
-- Transcripción de llamadas telefónicas en turco: el modelo declara 8,20 % WER y 14,89 % sigWER en Mu-Bench tr-TR, un benchmark de llamadas telefónicas, lo que lo hace adecuado para centros de contacto y análisis de conversaciones en turco.
-- Subtitulado y transcripción de contenidos en turco: el 4,06 % WER en FLEURS turco y las marcas de tiempo por palabra permiten generar subtítulos sincronizados para vídeo.
-- Transcripción de reuniones y conferencias en inglés: con 13,31 % WER en AMI (meetings) y 15,61 % en Earnings-22, puede usarse para actas automáticas de reuniones, aunque con margen de mejora en audio difícil.
-- Procesado por lotes de grandes volúmenes de audio en CPU: su velocidad de 123x tiempo real sin necesidad de GPU permite transcribir archivos masivos en servidores convencionales o incluso estaciones de trabajo, reduciendo costes de infraestructura.
-- Aplicaciones móviles offline: el formato ONNX y la eficiencia en CPU permiten integrar transcripción en apps Android sin depender de la nube.
-- Transcripción de charlas y conferencias públicas en inglés: 5,2 % WER en TED-LIUM 3 y 7,82 % en VoxPopuli lo hacen apto para transcribir discursos y contenido de divulgación.
-- Sistemas de voz como interfaz (dictado): la salida con puntuación, mayúsculas e ITN de números produce texto listo para usar sin postprocesado adicional.
+- Transcripción de llamadas telefónicas en turco: el modelo logra un WER del 8,20% en Mu-Bench tr-TR, lo que lo hace adecuado para centros de contacto que necesiten transcribir conversaciones telefónicas con precisión, incluso en entornos con ruido y habla espontánea.
+- Subtitulado y transcripción de reuniones en inglés: con un WER del 13,31% en AMI (meetings) y del 5,20% en TED-LIUM 3, puede emplearse para generar actas o subtítulos de reuniones y charlas, aprovechando su capacidad de procesar audio en fragmentos de 30 s.
+- Aplicaciones móviles de dictado y notas de voz: al ejecutarse en CPU con 123× tiempo real, es viable integrarlo en una app Android (el autor menciona una) para dictado offline sin depender de la nube.
+- Análisis de contenido audiovisual en inglés: con WER del 2,97% en LibriSpeech clean y 6,45% en other, puede transcribir podcasts, entrevistas y vídeos para indexación y búsqueda.
+- Atención al cliente automatizada en turco: la transcripción precisa de llamadas permite alimentar sistemas de análisis de sentimiento o extracción de entidades en centros de soporte, con la ventaja de funcionar en CPU y reducir costes de infraestructura.
+- Investigación lingüística y creación de corpus: el modelo puede transcribir grandes volúmenes de audio turco e inglés para construir corpus anotados, gracias a su velocidad en CPU y a la salida con marcas de tiempo por palabra.
+- Sistemas de accesibilidad: transcripción en tiempo real de conversaciones para personas con discapacidad auditiva, ejecutándose localmente en dispositivos sin GPU.
 
 ## Benchmarks y rendimiento
 
-Resultados declarados por el autor del modelo (no verificados por terceros):
+Los resultados declarados por el autor (no verificados) son los siguientes:
 
-| Dataset | Idioma | Métrica | Valor |
+| Conjunto de datos | Idioma | Métrica | Valor |
 |---|---|---|---|
-| Mu-Bench (tr-TR phone calls) | tr | WER | 8,20 % |
-| Mu-Bench (tr-TR phone calls) | tr | sigWER | 14,89 % |
-| FLEURS (Turkish) | tr | WER | 4,06 % |
-| FLEURS (Turkish) | tr | CER | 1,21 % |
-| LibriSpeech (clean) | en | WER | 2,97 % |
-| LibriSpeech (other) | en | WER | 6,45 % |
-| AMI (Meetings test, ihm) | en | WER | 13,31 % |
-| Earnings-22 | en | WER | 15,61 % |
-| VoxPopuli (en) | en | WER | 7,82 % |
-| GigaSpeech | en | WER | 12,30 % |
-| SPGI Speech | en | WER | 5,73 % |
-| TED-LIUM 3 | en | WER | 5,20 % |
+| Mu-Bench (tr-TR, llamadas telefónicas) | tr | WER | 8,20 |
+| Mu-Bench (tr-TR, llamadas telefónicas) | tr | sigWER | 14,89 |
+| FLEURS (turco) | tr | WER | 4,06 |
+| FLEURS (turco) | tr | CER | 1,21 |
+| LibriSpeech (clean) | en | WER | 2,97 |
+| LibriSpeech (other) | en | WER | 6,45 |
+| AMI (meetings, ihm) | en | WER | 13,31 |
+| Earnings-22 | en | WER | 15,61 |
+| Vox Populi (en) | en | WER | 7,82 |
+| GigaSpeech | en | WER | 12,30 |
+| SPGI Speech | en | WER | 5,73 |
+| TED-LIUM 3 | en | WER | 5,20 |
 
-Según el autor, el WER medio en los test sets del Open ASR Leaderboard en inglés es de 8,67 %. La velocidad en CPU declarada es de 123x tiempo real (segundos de audio por segundo de procesado, batch 1, 8 hilos de un AMD Ryzen AI Max+ 395). FLEURS se puntúa con el normalizador propio (`balbal-normalizer`) y Mu-Bench con su harness oficial y GPT-4.1 como juez, lo que puede dificultar la comparación directa con otros modelos.
+El autor indica un WER medio del 8,67% en los conjuntos de test del English Open ASR Leaderboard. La velocidad en CPU es de 123× tiempo real (segundos de audio por segundo de procesamiento) con batch 1 y 8 hilos en un AMD Ryzen AI Max+ 395. No se han publicado resultados de benchmarks comparativos con otros modelos en la información disponible más allá de la tabla del autor que compara con balbal-v2 (45M de parámetros, 236× tiempo real), pero no se proporcionan los valores de WER de ese modelo en la información disponible.
 
 ## Requisitos de hardware
 
-- El modelo está diseñado para inferencia en CPU: el autor declara 123x tiempo real con 8 hilos de un AMD Ryzen AI Max+ 395, por lo que no requiere GPU.
-- VRAM: no disponible (al ser ONNX para CPU, el requisito relevante es RAM; con 313M de parámetros en ONNX, unos 1-2 GB de RAM deberían ser suficientes, aunque es una estimación).
-- GPU: no necesaria; si se desea acelerar, cualquier GPU moderna compatible con ONNX Runtime debería funcionar, pero no hay datos publicados.
-- Consumer hardware: sí, cabe en equipos de escritorio y portátiles convencionales; el autor también anuncia una app Android.
-- Despliegue: ONNX Runtime; el repositorio de código (Apache 2.0) incluye la inferencia y el ITN. No se menciona soporte para vLLM, llama.cpp, Ollama o TGI (no aplicable a ASR).
-- Latencia y throughput: 123x tiempo real en CPU con 8 hilos según el autor; la variante menor balbal-v2 alcanza 236x.
+- VRAM estimada para inferencia: no disponible (el modelo está diseñado para CPU; en GPU, al tener 313,3M de parámetros, en FP32 ocuparía aproximadamente 1,25 GB, y en FP16 unos 0,63 GB, aunque no se especifican cuantizaciones).
+- GPU recomendadas: no disponible; el modelo se distribuye en ONNX y está optimizado para CPU.
+- ¿Cabe en GPU consumer? Sí, por tamaño (313M de parámetros) cabría en cualquier GPU consumer con al menos 2 GB de VRAM, pero no se proporcionan datos de rendimiento en GPU.
+- Opciones de despliegue: ONNX Runtime (formato principal), con soporte para CPU; el autor menciona una app Android y un demo en navegador. No se mencionan vLLM, llama.cpp, Ollama ni TGI (no aplicables a ASR).
+- Latencia y throughput: 123× tiempo real en CPU con 8 hilos (AMD Ryzen AI Max+ 395), batch 1. No se proporcionan datos de latencia en GPU.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Idiomas | Mu-Bench tr WER | FLEURS tr WER | CPU | Licencia |
+| Modelo | Parámetros | Contexto | WER turco (FLEURS) | WER inglés (LibriSpeech clean) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| balbal-v2-manas | 313M | tr, en | 8,20 % | 4,06 % | 123x tiempo real | balbal-community-license-1.0 |
-| balbal-v2 (hermano menor) | 45M | tr, en | no disponible | no disponible | 236x tiempo real | no disponible |
-| nvidia/stt_en_fastconformer_ctc_large (base) | no disponible | en | no disponible | no disponible | no disponible | CC-BY-4.0 |
+| balbal-v2-manas | 313M | no disponible (fragmentos de 30 s) | 4,06 | 2,97 | balbal-community-license-1.1 | Hugging Face (ONNX) |
+| balbal-v2 | 45M | no disponible | no disponible | no disponible | no disponible | Hugging Face |
+| nvidia/stt_en_fastconformer_ctc_large | no disponible | no disponible | no disponible (solo inglés) | no disponible | no disponible | Hugging Face |
 
-No se han incluido cifras de otros modelos ASR abiertos (Whisper, NVIDIA Canary/Parakeet, Wav2Vec2) porque la model card solo publica la comparativa parcialmente y el resto de datos disponibles se han truncado; las comparaciones del autor indican que los otros modelos abiertos se evalúan con su inferencia por defecto mientras balbal usa decodificación KenLM, lo que introduce diferencias metodológicas.
+No se dispone de datos de benchmarks de los modelos comparables en la información proporcionada, por lo que la comparativa se limita a los datos del autor. No se han encontrado otros modelos ASR turco-inglés comparables en la información disponible.
 
 ## Limitaciones y advertencias
 
-- Licencia balbal-community-license-1.0: es una licencia de tipo "other", no una licencia estándar permisiva; hay que revisar el texto de la LICENSE antes de cualquier uso comercial.
-- Los benchmarks son declarados por el autor y no verificados: FLEURS se puntúa con un normalizador propio y Mu-Bench usa GPT-4.1 como juez, lo que puede inflar o distorsionar la comparación con modelos evaluados con normalizadores estándar.
-- El audio se corta en fragmentos de 30 s, lo que puede provocar errores en límites de corte en habla continua larga.
-- Solo soporta turco e inglés; no hay detección automática de idioma declarada, por lo que hay que seleccionar el idioma explícitamente.
-- No hay información publicada sobre sesgos del modelo, alucinaciones típicas de ASR (alucinación de texto en silencios o ruido) ni comportamiento con acentos no cubiertos por las 7.000 horas de entrenamiento.
-- El rendimiento en llamadas telefónicas turcas (sigWER 14,89 %) indica que casi una de cada siete locuciones contiene al menos un error que cambia el significado: en producción crítica (por ejemplo, cumplimiento normativo o análisis de sentimiento) conviene revisión humana.
-- 0 descargas registradas en Hugging Face en el momento de redactar la ficha: es un modelo muy reciente y con poco uso comunitario, sin auditoría externa.
-- No hay información sobre cuantización, lo que puede limitar el despliegue en dispositivos con recursos muy ajustados.
+- Los resultados de benchmarks son declarados por el autor y no están verificados (`verified: false` en el model-index).
+- El modelo solo soporta turco e inglés; no se indica soporte para otros idiomas.
+- El audio se procesa en fragmentos de 30 segundos, lo que puede afectar a la coherencia en transcripciones de audio muy largo si no se solapan correctamente.
+- La licencia balbal-community-license-1.1 es una licencia comunitaria propia; es necesario revisar sus términos para uso comercial, ya que puede imponer restricciones.
+- No se proporcionan datos sobre sesgos conocidos, riesgo de alucinación (en ASR, errores de sustitución) ni limitaciones específicas de dominio más allá de los benchmarks.
+- El rendimiento en llamadas telefónicas turcas (8,20% WER) es peor que en habla leída (4,06% en FLEURS), lo que indica mayor dificultad en dominios conversacionales ruidosos.
+- No se especifican requisitos de hardware para GPU ni cuantizaciones disponibles, lo que limita la planificación de despliegues en otros entornos.
+- La fecha de creación del repositorio (2026-10-29) es futura respecto a la fecha actual, lo que puede indicar un error en los metadatos o una fecha programada; conviene verificar la disponibilidad real.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/erayyapagci/balbal-v2-manas
 - Modelo base: https://huggingface.co/nvidia/stt_en_fastconformer_ctc_large
-- Variante menor (balbal-v2): https://huggingface.co/erayyapagci/balbal-v2
-- Página oficial del proyecto (benchmarks, demo en navegador y app Android): https://erayy.com/balbal/
-- Página del proyecto en turco: https://erayy.com/tr/balbal/
-- Repositorio de código (Apache 2.0): https://github.com/erayyap/balbal
+- Modelo hermano balbal-v2: https://huggingface.co/erayyapagci/balbal-v2
+- Página del modelo, demo y app Android: https://erayy.com/balbal/
+- Versión en turco: https://erayy.com/tr/balbal/
+- Código (Apache 2.0): https://github.com/erayyap/balbal

@@ -2,109 +2,110 @@
 
 ## Resumen
 
-LFM3-TS es un modelo de lenguaje especializado en la lectura y el razonamiento sobre series temporales, desarrollado por Nardi Xhepi como proyecto independiente y no afiliado a Liquid AI. Se construye a partir de LFM3-1.7B de Liquid AI, al que se antepone un codificador de series temporales y se le ajustan todos los pesos excepto los embeddings de tokens. El modelo recibe una serie unidimensional y una pregunta en lenguaje natural, y responde en texto indicando si hay anomalías, dónde se localizan y qué forma tienen. Con 1.781 millones de parámetros, es una alternativa compacta frente a modelos multimodales de series temporales de mayor tamaño como ChatTS-8B.
+LFM3-TS es un modelo de lenguaje especializado en el dialogo sobre series temporales, desarrollado por Nardi Xhepi como proyecto independiente no afiliado a Liquid AI. Se construye a partir de LFM3-1.7B de Liquid AI, al que se le antepone un codificador de series temporales, siguiendo las ideas y los datos sinteticos de ChatTS (Xie et al., VLDB 2025). El modelo resuelve el problema de interrogar series temporales en lenguaje natural: se le entrega una o varias series y una pregunta, y responde en texto sobre tendencia, estacionalidad, ruido, cambios locales, valores puntuales, relaciones entre series y anomalias.
 
-La relevancia del modelo reside en su eficiencia de representación: cada parche de 8 puntos de la serie se codifica en un único token, de modo que una serie de 512 puntos consume solo 66 tokens de contexto. Esto permite procesar series largas sin agotar la ventana del modelo de lenguaje y abarata la inferencia frente a enfoques que tokenizan cada punto por separado. El modelo está entrenado para series de hasta 2.048 puntos y responde únicamente en inglés.
+Con 1.781.433.088 parametros (1,8 mil millones) y un peso de repositorio de 3,6 GB en safetensors, el modelo esta pensado para series de hasta 2.048 puntos y funciona en ingles. Su relevancia actual radica en que demuestra que un modelo pequeno puede superar a alternativas de mayor tamano en tareas concretas de analisis de series: en deteccion de anomalias sobre series reales de TSB-AD-U alcanza un F1 de 0,65 frente al 0,46 de ChatTS-8B, con muchos menos falsos positivos.
 
-El proyecto se apoya en las ideas y los datos sintéticos de ChatTS (arXiv:2412.03104) y en series reales anotadas de TSB-AD-U. Su licencia es la LFM Open License v1.0, heredada del modelo base, lo que condiciona el uso comercial. La ficha se basa exclusivamente en la model card y en los resultados publicados por el autor; no se ha verificado de forma independiente ninguno de los datos.
+La arquitectura combina un codificador de parches de 8 puntos con el transformer LFM3-1.7B, con un proyector MLP que alinea ambos espacios. Cada serie de 512 puntos consume solo 66 tokens, lo que mantiene el coste de contexto bajo y permite conversaciones multi-turno con varias series simultaneas.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer de lenguaje LFM3 (Liquid AI) con codificador de series temporales antepuesto y proyector MLP |
-| Parametros totales | 1.781.433.088 (1,8 B) |
-| Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | no disponible (entrenado con series de hasta 2.048 puntos, que ocupan 258 tokens) |
-| Tipos de cuantizacion | no disponible |
-| Idiomas soportados | inglés (en) |
-| Licencia | LFM Open License v1.0 (lfm1.0, etiquetada como "other") |
-| Formato de pesos | safetensors (librería transformers, requiere trust_remote_code) |
+| Arquitectura | Transformer LFM3-1.7B con codificador de series temporales antepuesto (parches de 8 puntos, 4 capas feed-forward y 2 de atencion, anchura 1024) y proyector MLP a anchura 2048 |
+| Parametros totales | 1.781.433.088 (1,8 mil millones) |
+| Parametros activos | No aplica (no es MoE) |
+| Longitud de contexto | Series de hasta 2.048 puntos; longitud de contexto del LLM no disponible |
+| Tipos de cuantizacion | No disponible |
+| Idiomas soportados | Ingles |
+| Licencia | LFM Open License v1.0 (lfm1.0, licencia "other") |
+| Formato de pesos | Safetensors (requiere `trust_remote_code=True`) |
 
 ## Arquitectura y entrenamiento
 
-El modelo combina un codificador de series temporales con el transformer LFM3-1.7B. El codificador trabaja con parches de 8 puntos y consta de 4 capas feed-forward y 2 capas de atención con anchura 1024; un proyector MLP lleva su salida a la anchura del modelo de lenguaje (2048). Cada parche se convierte en un token, más 2 tokens adicionales por serie, de forma que una serie de 512 puntos ocupa 66 tokens. La serie se estandariza antes de entrar al codificador, y su desplazamiento y escala se escriben en el prompt como texto, lo que permite que las respuestas den valores reales en lugar de coordenadas normalizadas. Todos los pesos del LFM3 están ajustados excepto los embeddings de tokens.
+El modelo es un transformer denso: el lenguaje base es LFM3-1.7B, del que se ajustan todos los pesos excepto los embeddings de tokens. Delante se situa un codificador de series temporales que divide la serie en parches de 8 puntos, con 4 capas feed-forward y 2 de atencion de anchura 1024, seguido de un proyector MLP que lleva la representacion a la anchura del modelo de lenguaje (2048). Cada parche genera un token, mas dos tokens adicionales por serie, de modo que una serie de 512 puntos cuesta 66 tokens. La serie se estandariza para el codificador y su offset y escala se escriben en el prompt como texto, lo que permite que las respuestas den valores reales.
 
-El entrenamiento consta de tres etapas secuenciales, cada una partiendo de los pesos de la anterior: primero preguntas generadas que solo pueden responderse leyendo la serie; después las mismas preguntas sobre series de hasta 2.048 puntos; y finalmente una mezcla de datos sintéticos de ChatTS (48%), preguntas generadas (19%), chat plano (15%), series reales con anomalías etiquetadas (10%) y series reales con un evento insertado (8%). No se documenta en la información disponible el uso de RLHF o DPO, ni el número total de tokens de entrenamiento.
+El entrenamiento consta de tres etapas, cada una partiendo de los pesos de la anterior: primero preguntas generadas que solo pueden responderse leyendo la serie; despues las mismas preguntas sobre series de hasta 2.048 puntos; y finalmente una mezcla de datos sinteticos de ChatTS (48%), preguntas generadas (19%), chat plano (15%), series reales con anomalias etiquetadas (10%) y series reales con un evento insertado (8%). Los datos de chat plano provienen de databricks-dolly-15k y los sinteticos de ChatTSRepo/ChatTS-Training-Dataset. El recetario de entrenamiento esta publicado en el repositorio de codigo.
 
 ## Capacidades
 
-- Generación de texto en inglés sobre series temporales: descripción, interpretación y respuesta a preguntas en lenguaje natural.
-- Detección de anomalías: indica si existe una anomalía, en qué punto (numeración desde 0) y qué forma tiene.
-- Preguntas y respuestas sobre series temporales (time-series question answering) según el esquema de ChatTS.
-- Manejo de valores ausentes: NaN se interpreta como valor faltante en la serie de entrada.
-- Entrada multimodal: serie numérica unidimensional más pregunta textual.
-- Conversación de un turno mediante el método `model.chat(processor, series, pregunta)`.
-- No se documenta soporte de tool calling, function calling, agentes, multi-step reasoning, visión, audio ni modo de razonamiento explícito.
-- Capacidad multilingüe limitada al inglés según la model card.
+- Dialogo en lenguaje natural sobre series temporales: tendencia (direccion, valor inicial, magnitud del cambio), estacionalidad (existencia, periodo, amplitud), ruido (presencia y nivel) y cambios locales (picos, caidas, cambios de nivel, con posicion y amplitud).
+- Consulta de valores: valor en un punto concreto o minimo y maximo de un tramo, con precision de aproximadamente un cuarto de desviacion estandar el 57% de las veces.
+- Comparacion entre varias series: identificar cuales comparten forma o cambian al mismo tiempo.
+- Deteccion de anomalias: indicar si algo es inusual, donde y como se manifiesta.
+- Manejo de valores perdidos mediante NaN en la entrada.
+- Conversacion multi-turno en ingles.
+- Capacidad de chat general heredada de LFM3-1.7B (15% de la mezcla de entrenamiento es chat plano).
+- No se documenta soporte de tool calling, function calling ni modo de razonamiento explicito.
 
 ## Casos de uso
 
-- Monitorización de métricas de infraestructura: el modelo puede recibir una ventana de 512 puntos de una serie de latencia o CPU y responder si hay un pico anómalo y en qué punto, aprovechando que 512 puntos ocupan solo 66 tokens y permiten encadenar varias ventanas en un mismo contexto.
-- Triaje de alertas en observabilidad: dado un segmento de serie con una alerta disparada, el modelo genera una explicación textual de la forma de la anomalía (pico, caída, cambio de nivel) que puede adjuntarse al ticket, reduciendo el trabajo manual de clasificación.
-- Análisis exploratorio de datos de sensores: un analista puede pasar una serie de temperatura o vibración y preguntar en inglés por eventos concretos, usando el modelo como interfaz conversacional sobre datos que de otro modo requerirían scripts ad hoc.
-- Control de calidad en series financieras o de ventas: detección de valores atípicos en ventanas de hasta 2.048 puntos para marcar revisiones manuales, con la ventaja de que el modelo devuelve el índice del punto sospechoso y no solo una etiqueta binaria.
-- Generación de informes automáticos: integración en un pipeline que, para cada serie de un lote, produce una frase en inglés describiendo el estado de la señal, útil para resúmenes diarios de flotas de sensores.
-- Evaluación comparativa de detectores de anomalías: el modelo puede usarse como línea base conversacional frente a detectores clásicos, ya que su salida textual permite auditar por qué se ha marcado un punto y facilita la revisión humana de falsos positivos.
-- Asistencia en investigación sobre series temporales: reproducción de los experimentos del autor con el benchmark de ChatTS y las ventanas de TSB-AD-U, usando el recetario de entrenamiento publicado en el repositorio de código.
+- Monitorizacion de infraestructura: enviar ventanas de metricas (CPU, latencia, trafico) y preguntar si hay comportamiento anomalo, donde y que forma tiene, aprovechando el F1 de 0,65 y la baja tasa de falsos positivos (28 de 129 ventanas normales) en series reales de TSB-AD-U.
+- Analisis exploratorio de datos de negocio: preguntar por tendencia, estacionalidad y nivel de ruido de una serie de ventas o demanda antes de construir un modelo estadistico, usando series de hasta 2.048 puntos en una sola consulta.
+- Diagnostico de sensores industriales: comparar varias senales simultaneamente para detectar cuales cambian a la vez o comparten forma, util en mantenimiento predictivo.
+- Validacion de pipelines de datos: consultar valores puntuales o extremos de un tramo para comprobar que una serie cargada coincide con lo esperado, con un error mediano de 0,18 desviaciones estandar.
+- Asistente conversacional para analistas: integrar el modelo en una interfaz de chat donde el analista describa la serie en lenguaje natural y reciba respuestas textuales sin escribir codigo.
+- Deteccion de eventos insertados: identificar picos o caidas artificiales en series reales, gracias a la etapa de entrenamiento con eventos insertados (8% de la mezcla final).
+- Prototipado e investigacion: al ser un modelo de 1,8B con recetario publicado, sirve como base para experimentar con codificadores de series y datos sinteticos en entornos academicos.
 
 ## Benchmarks y rendimiento
 
-Resultados publicados por el autor en la model card. El benchmark de ChatTS (conjuntos A y B) se puntúa con el código de evaluación del repositorio de ChatTS; las anomalías se evalúan sobre 234 ventanas de 512 puntos de siete fuentes de TSB-AD-U no vistas en entrenamiento (105 con anomalía etiquetada, 129 sin ella). Una respuesta se considera correcta si dice "yes" y nombra un punto a menos de 16 puntos del tramo etiquetado.
+Comprension general en el benchmark ChatTS (conjuntos A y B), con el codigo de puntuacion del repositorio ChatTS:
 
-| Benchmark | Métrica | LFM3-TS (1,8 B) | ChatTS-8B (8 B) |
-|---|---|---|---|
-| ChatTS set A | categórica | 82,0% | 83,8% |
-| ChatTS set A | numérica | 77,5% | 82,3% |
-| ChatTS set B | categórica | 79,5% | 84,6% |
-| ChatTS set B | numérica | 76,8% | 82,9% |
-| Anomalías TSB-AD-U | precisión | 66% | 40% |
-| Anomalías TSB-AD-U | exhaustividad | 64% | 53% |
-| Anomalías TSB-AD-U | F1 | 0,65 | 0,46 |
-| Anomalías TSB-AD-U | falsas alarmas (de 129) | 28 | 61 |
+| Modelo | Parametros | A categorico | A numerico | B categorico | B numerico |
+|---|---|---|---|---|---|
+| LFM3-TS | 1,8B | 82,0% | 77,5% | 79,5% | 76,8% |
+| ChatTS-8B | 8B | 83,8% | 82,3% | 84,6% | 82,9% |
+| LFM3-1.7B, numeros como texto | 1,7B | 10,4% | 4,0% | 14,2% | 3,0% |
 
-No se han publicado en la información disponible resultados de benchmarks generales de lenguaje (MMLU, HumanEval, GSM8K) para este modelo.
+Deteccion de anomalias en 234 ventanas de 512 puntos de siete fuentes de TSB-AD-U no vistas en entrenamiento (105 con anomalia etiquetada, 129 sin ella):
+
+| Modelo | Parametros | Precision | Recall | F1 | Falsas alarmas |
+|---|---|---|---|---|---|
+| LFM3-TS | 1,8B | 66% | 64% | 0,65 | 28 de 129 |
+| ChatTS-8B | 8B | 40% | 53% | 0,46 | 61 de 129 |
+| LFM3-1.7B, numeros como texto | 1,7B | 1% | 1% | 0,01 | 111 de 129 |
+
+Lectura de valores: el modelo queda dentro de un cuarto de desviacion estandar el 57% de las veces, con error mediano de 0,18 desviaciones estandar.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia en precisión nativa (probablemente bf16/fp16, no confirmado): en torno a 3,6 GB solo para pesos, más overhead de activaciones y del codificador; el tamaño del repo es de 3,6 GB.
-- En cuantización de 8 bits cabría en GPUs consumer con 8 GB; en 4 bits, en GPUs con 6 GB o menos. Estas cifras son estimaciones a partir del número de parámetros, no datos publicados.
-- GPU recomendadas: no disponible en la información proporcionada. Por tamaño, una RTX 4090, L4 o A10 bastarían para inferencia en precisión nativa; A100/H100 no serían necesarias.
-- Cabe en GPU consumer: sí, previsiblemente en cualquier GPU con al menos 8 GB en bf16, aunque el autor no lo documenta.
-- Opciones de despliegue: transformers (versión 5.23 o superior, con `trust_remote_code=True`); no se documenta soporte de vLLM, llama.cpp, Ollama ni TGI, y la naturaleza multimodal de la entrada (serie numérica más texto) dificulta su uso directo en servidores de texto estándar.
+- VRAM estimada para inferencia: no disponible de forma oficial; con 1,78B parametros, en FP16 requiere aproximadamente 3,6 GB solo para pesos, y en cuantizaciones de 8 o 4 bits el requisito baja de forma proporcional (estimacion orientativa, no confirmada por el autor).
+- GPU recomendadas: no documentadas por el autor. Por tamano, cabe en GPUs de consumo con suficiente VRAM (gama RTX 4090, RTX 3090 y similares) en FP16, y en GPUs menores con cuantizacion.
+- Cabe en GPU de consumo: si, por el tamano del modelo, aunque el soporte de cuantizacion no esta documentado.
+- Opciones de despliegue: la via soportada es `transformers>=5.23` con `trust_remote_code=True` (LFM3 se incorporo a transformers en esa version); no se documentan integraciones con vLLM, llama.cpp, Ollama ni TGI.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto de serie | Enfoque | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto de serie | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LFM3-TS | 1,8 B | hasta 2.048 puntos (258 tokens) | Codificador de parches + LFM3 | LFM Open License v1.0 | Hugging Face, código en GitHub |
-| ChatTS-8B | 8 B | no disponible | Modelo multimodal de series temporales basado en LLM | no disponible en la información | Hugging Face y GitHub (NetManAIOps/ChatTS) |
-| LFM3-1.7B | 1,8 B | no disponible | LLM de texto de Liquid AI | LFM Open License v1.0 | Hugging Face |
+| LFM3-TS | 1,8B | hasta 2.048 puntos | LFM3-1.7B + codificador de parches | LFM Open License v1.0 | Hugging Face, transformers |
+| ChatTS-8B | 8B | no disponible | Modelo dedicado a chat sobre series (Xie et al.) | no disponible | repositorio ChatTS en GitHub |
+| LFM3-1.7B (numeros como texto) | 1,7B | limitado por el contexto de texto | LLM generico sin codificador de series | LFM Open License v1.0 | Hugging Face |
 
-Frente a ChatTS-8B, LFM3-TS obtiene resultados algo inferiores en los conjuntos A y B de ChatTS (entre 1,8 y 5,5 puntos porcentuales menos) con una cuarta parte de los parámetros, y supera claramente a ChatTS-8B en detección de anomalías sobre series reales de TSB-AD-U (F1 de 0,65 frente a 0,46, y menos de la mitad de falsas alarmas). No se dispone de datos para comparar con otros modelos de series temporales como TimesFM o Chronos, por lo que esa comparación no está disponible.
+Frente a ChatTS-8B, LFM3-TS es cuatro veces menor y queda ligeramente por debajo en comprension general (77,5% frente a 82,3% en el conjunto A numerico) pero lo supera claramente en deteccion de anomalias sobre series reales (F1 de 0,65 frente a 0,46). Frente a pasar los numeros como texto a LFM3-1.7B, la mejora es de orden de magnitud en todas las tareas.
 
 ## Limitaciones y advertencias
 
-- Solo responde en inglés; no se ha entrenado ni evaluado en castellano ni en otros idiomas.
-- Entrenado con series de hasta 2.048 puntos; no se documenta comportamiento con series más largas.
-- Los resultados de benchmarks proceden únicamente del autor y no han sido verificados de forma independiente; el conjunto de evaluación de anomalías es pequeño (234 ventanas) y la métrica de acierto es laxa (margen de 16 puntos).
-- Riesgo de alucinación: al ser un modelo generativo, puede afirmar la existencia de anomalías inexistentes o inventar índices; las 28 falsas alarmas sobre 129 ventanas limpias lo ilustran.
-- La licencia LFM Open License v1.0 impone condiciones al uso comercial; es necesario revisar el archivo LICENSE y el NOTICE del repositorio antes de desplegarlo en producción.
-- Requiere `trust_remote_code=True` y transformers 5.23 o superior, lo que implica ejecutar código del repositorio y limita la compatibilidad con herramientas de despliegue estándar.
-- Proyecto independiente de un solo autor, sin afiliación a Liquid AI; no hay garantía de mantenimiento ni de soporte.
-- No se documentan sesgos específicos, pero al derivar de LFM3-1.7B y de datos sintéticos de ChatTS puede heredar los sesgos del modelo base y de los datos generados.
-- No se documentan cuantizaciones oficiales ni recetas de despliegue en servidores de inferencia de alto rendimiento.
+- Solo funciona en ingles; no se documenta soporte de otros idiomas.
+- Entrenado con series de hasta 2.048 puntos; no se garantiza comportamiento fuera de ese rango.
+- Proyecto independiente de un solo autor, no afiliado a Liquid AI, con 0 likes y 554 descargas en el momento de la ficha: ecosistema y validacion externa limitados.
+- Riesgo de alucinacion inherente a un modelo de lenguaje: las respuestas sobre valores y posiciones pueden ser incorrectas; la lectura de valores solo es exacta dentro de un cuarto de desviacion estandar el 57% de las veces.
+- La deteccion de anomalias tiene un 34% de falsos positivos sobre ventanas normales (28 de 129), insuficiente para alertas automaticas sin supervision humana.
+- Licencia LFM Open License v1.0: es necesario revisar sus terminos antes de uso comercial, ya que se hereda de LFM3-1.7B y no es una licencia permisiva estandar.
+- Requiere `trust_remote_code=True` y `transformers>=5.23`, lo que implica ejecutar codigo del autor y limita la compatibilidad con stacks de despliegue habituales.
+- No se documentan capacidades de tool calling ni de agentes, lo que dificulta su integracion en pipelines automatizados complejos.
+- Los sesgos concretos del modelo no estan documentados.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/nardi/LFM3-TS
-- Código y receta de entrenamiento: https://github.com/nardi-xhepi/lfm3-ts
-- Blog del autor: https://nardi-xhepi.github.io/blog/posts/lfm3-ts.html
+- Codigo y recetario de entrenamiento: https://github.com/nardi-xhepi/lfm3-ts
+- Entrada de blog del autor: https://nardi-xhepi.github.io/blog/posts/lfm3-ts.html
 - Modelo base LFM3-1.7B: https://huggingface.co/LiquidAI/LFM3-1.7B
-- Paper de ChatTS: https://arxiv.org/abs/2412.03104
-- Repositorio de ChatTS: https://github.com/NetManAIOps/ChatTS
-- Benchmark de ChatTS (Zenodo): https://zenodo.org/records/14349206
+- ChatTS (codigo y datos): https://github.com/NetManAIOps/ChatTS
+- Benchmark ChatTS (conjuntos A y B): https://zenodo.org/records/14349206
 - TSB-AD: https://github.com/TheDatumOrg/TSB-AD
-- Dataset databricks-dolly-15k: https://huggingface.co/datasets/databricks/dolly-15k
-- Hugging Face Transformers: https://github.com/huggingface/transformers
+- Dataset databricks-dolly-15k: https://huggingface.co/datasets/databricks/databricks-dolly-15k
+- Transformers: https://github.com/huggingface/transformers

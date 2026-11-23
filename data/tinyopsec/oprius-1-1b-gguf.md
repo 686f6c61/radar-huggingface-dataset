@@ -2,48 +2,50 @@
 
 ## Resumen
 
-Oprius-1.1B-GGUF es un repositorio de cuantizaciones en formato GGUF del modelo Oprius-1.1B, publicado por el usuario tinyopsec en Hugging Face. El modelo base es TinyLlama/TinyLlama-1.1B-Chat-v1.0, un modelo conversacional de 1.100.048.384 parámetros (1,1 B) basado en la arquitectura LLaMA, que ha sido afinado (fine-tuning) para conversación casual en el derivado `zzzekryo/Oprius-1.1B`. Las cuantizaciones se han producido con llama.cpp y abarcan desde precisión completa F16 (2,2 GB) hasta Q2_K de 2 bits.
+Oprius-1.1B-GGUF es la distribucion en formato GGUF del modelo Oprius-1.1B, un ajuste fino (fine-tuning) del conocido TinyLlama-1.1B-Chat-v1.0 orientado a conversacion casual. El modelo original lo publica el usuario zzzekryo, y esta version cuantizada la mantiene el usuario tinyopsec, que ha generado el conjunto de ficheros GGUF con llama.cpp para su uso en runtimes de inferencia locales. Con 1.100.048.384 parametros (aproximadamente 1,1 mil millones), se situa en la categoria de modelos pequenos, pensados para ejecucion en CPU o en GPUs de consumo con requisitos de memoria muy bajos.
 
-Su relevancia radica en el tamaño extremadamente reducido: al ser un modelo de 1,1 B parámetros con cuantizaciones agresivas, puede ejecutarse en hardware muy modesto, incluso en portátiles sin GPU dedicada, lo que lo hace útil para prototipado, pruebas locales de pipelines de chat y entornos con recursos limitados. Es importante señalar que el propio autor marca el modelo como descontinuado ("deprecated") al estar entrenado con un dataset antiguo, por lo que recomienda evaluarlo antes de cualquier uso.
+La relevancia de esta ficha es practica: se trata de un artefacto de cuantizacion, no de un modelo nuevo, y su interes radica en la disponibilidad de hasta trece variantes de cuantizacion (desde F16 hasta Q2_K) que permiten desplegar un chatbot ligero en entornos con recursos limitados. El autor del modelo base lo ha marcado como obsoleto (deprecated) por haber sido entrenado con un dataset antiguo, lo que condiciona su uso en produccion.
 
-No se dispone de información publicada sobre longitud de contexto, idiomas soportados ni resultados de benchmarks.
+Arquitectura derivada de TinyLlama (transformer decoder-only tipo Llama), ventana de contexto heredada del modelo base y licencia Apache 2.0. No se dispone de informacion detallada sobre el dataset de ajuste fino ni sobre el proceso de entrenamiento en la documentacion proporcionada.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | LLaMA (basada en TinyLlama-1.1B-Chat-v1.0) |
-| Parametros totales | 1.100.048.384 (≈1,1 B) |
-| Parametros activos | no disponible (no consta arquitectura MoE) |
+| Arquitectura | Transformer decoder-only (familia Llama, derivada de TinyLlama-1.1B-Chat-v1.0) |
+| Parametros totales | 1.100.048.384 |
+| Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | F16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q5_0, Q4_K_M, Q4_K_S, Q4_0, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K |
 | Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF |
+| Formato de pesos | GGUF (safetensors en el modelo base) |
 
 ## Arquitectura y entrenamiento
 
-El modelo deriva de TinyLlama-1.1B-Chat-v1.0, un transformer decoder-only con arquitectura tipo LLaMA de 1,1 B parámetros. Sobre esa base, `zzzekryo/Oprius-1.1B` aplicó un fine-tuning orientado a conversación casual; no se ha publicado información sobre el método de ajuste (SFT, DPO, RLHF), el número de tokens del dataset ni su composición.
+El modelo base Oprius-1.1B es un ajuste fino de TinyLlama-1.1B-Chat-v1.0, un transformer decoder-only de la familia Llama con 1,1 mil millones de parametros. Segun la model card, el ajuste se realizo sobre un dataset de conversacion casual, aunque no se especifica el numero de tokens, la composicion del dataset ni si se emplearon tecnicas de RLHF o DPO. Tampoco se documentan innovaciones tecnicas adicionales (decodificacion especulativa, atencion lineal u otras).
 
-El repositorio de tinyopsec no aporta innovaciones técnicas propias: su valor está en la conversión a GGUF mediante llama.cpp, lo que permite inferencia eficiente en CPU y GPU de consumo con 13 niveles de cuantización distintos, desde F16 hasta Q2_K.
+Esta distribucion concreta no introduce cambios arquitectonicos: es una conversion a GGUF realizada con llama.cpp sobre los pesos del modelo base, con cuantizaciones que van desde F16 (2,2 GB) hasta Q2_K. El repositorio ocupa 10,6 GB en total por acumular todas las variantes. El autor del modelo base ha marcado el modelo como obsoleto por haber usado un dataset antiguo, por lo que se recomienda evaluar su comportamiento antes de usarlo.
 
 ## Capacidades
 
-- Generación de texto conversacional, con especialización en chat casual heredada del fine-tuning sobre TinyLlama-1.1B-Chat-v1.0.
-- Compatibilidad con el ecosistema GGUF: llama.cpp, Ollama, LM Studio, koboldcpp y cualquier runtime compatible.
-- Pipeline de text-generation estándar, usable con las librerías habituales de Hugging Face.
-- No se ha documentado soporte de tool calling, capacidades de agentes, visión, audio ni modo de razonamiento extendido.
-- No se ha documentado el alcance multilingüe; al derivar de TinyLlama, es razonable asumir predominio del inglés, aunque no consta oficialmente.
+- Generacion de texto conversacional en ingles (idioma principal del modelo base TinyLlama; el resto de idiomas no esta documentado).
+- Dialogo multi-turno orientado a conversacion casual.
+- No hay evidencia documentada de soporte de tool calling ni function calling.
+- No hay evidencia documentada de capacidades de agente o razonamiento multi-paso.
+- No dispone de vision, audio ni modo de razonamiento explicito (thinking mode).
+- Capacidades de codigo y matematicas no documentadas y, por el tamano y el tipo de ajuste, previsiblemente limitadas.
+- Compatible con cualquier runtime que lea GGUF (llama.cpp, Ollama, LM Studio, koboldcpp).
 
 ## Casos de uso
 
-- Chatbot casual en local: ejecución de un asistente conversacional ligero en un portátil sin GPU, con la variante Q4_K_M recomendada por el autor.
-- Prototipado de pipelines de chat: integración rápida en aplicaciones de prueba para validar flujos de conversación antes de escalar a modelos mayores.
-- Pruebas de infraestructura de inferencia: benchmark de runtimes (llama.cpp, Ollama, koboldcpp) con carga mínima gracias a sus ~0,6-0,7 GB en Q4_K_M.
-- Educación y experimentación: estudio de los efectos de la cuantización comparando las 13 variantes disponibles (F16 a Q2_K) en calidad y velocidad.
-- Sistemas embebidos o de bajos recursos: despliegue en dispositivos con RAM limitada donde modelos mayores no caben.
-- Generación sintética de datos conversacionales de baja exigencia: producción de texto casual en volumen donde la calidad de razonamiento no es crítica.
-- Fallback offline: asistente básico en entornos sin conectividad, previa evaluación de calidad por el usuario.
+- Chatbot local de bajo coste: el modelo puede ejecutarse en CPU o en GPUs de consumo con la cuantizacion Q4_K_M, lo que lo hace adecuado para prototipos de asistente conversacional en un portatil.
+- Pruebas de integracion de pipelines GGUF: util para validar el flujo de despliegue con llama.cpp u Ollama antes de migrar a modelos mayores con la misma interfaz.
+- Generacion de respuestas en aplicaciones de demostracion: su tamano permite tiempos de carga minimos y respuestas rapidas en hardware modesto.
+- Educacion y experimentacion: sirve para estudiar el efecto de distintas cuantizaciones (Q2_K frente a Q8_0) sobre la calidad de salida en un modelo pequeno.
+- Entornos con memoria muy restringida: la variante Q2_K permite ejecutar el modelo en dispositivos con pocos cientos de MB de RAM disponible.
+- Filtrado o generacion de texto auxiliar: puede emplearse para tareas de reescritura o generacion breve donde no se requiera alta precision.
+- Base para nuevos ajustes finos: al estar bajo Apache 2.0, puede servir de punto de partida para fine-tuning en dominios concretos.
 
 ## Benchmarks y rendimiento
 
@@ -51,37 +53,34 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM/RAM estimada: el archivo F16 ocupa 2,2 GB; las variantes cuantizadas son proporcionalmente menores (Q8_0 ≈ 1,2 GB, Q4_K_M ≈ 0,7 GB, Q2_K ≈ 0,5 GB, aproximaciones típicas para un modelo de 1,1 B; el repo completo pesa 10,6 GB).
-- GPU recomendadas: no requiere GPU; cualquier GPU moderna con 2 GB de VRAM o más ejecuta la variante F16 con holgura. No se necesitan A100 ni H100.
-- Consumer GPU: cabe sobradamente en prácticamente cualquier GPU de consumo (RTX 3060, RTX 4060, RTX 4090, etc.) e incluso funciona con solo CPU y 4 GB de RAM en cuantizaciones de 4 bits o inferiores.
-- Despliegue: llama.cpp (comando `llama-cli` documentado en la model card), Ollama, LM Studio, koboldcpp y cualquier runtime compatible con GGUF.
-- Latencia y throughput: no disponible; por su tamaño (1,1 B parámetros) se espera inferencia muy rápida incluso en CPU, pero no hay cifras publicadas.
+- VRAM/RAM estimada segun cuantizacion: F16 aproximadamente 2,2 GB; Q8_0 en torno a 1,2 GB; Q6_K alrededor de 0,9 GB; Q5_K_M cerca de 0,8 GB; Q4_K_M aproximadamente 0,7 GB; Q3_K_M en torno a 0,6 GB; Q2_K cerca de 0,5 GB (estimaciones a partir del tamano de fichero indicado para F16 y de la proporcion tipica de bits por parametro).
+- GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM para F16; para cuantizaciones de 4 bits basta con 1 GB, por lo que cabe en GTX 1050 Ti, GTX 1650, RTX 3050 y superiores. Tambien funciona en CPU.
+- Cabe en GPU de consumo: si, en practicamente cualquier GPU moderna e incluso en Raspberry Pi con la cuantizacion Q2_K.
+- Opciones de despliegue: llama.cpp (llama-cli), Ollama, LM Studio, koboldcpp y cualquier runtime compatible con GGUF. No se documenta soporte de vLLM ni TGI para este artefacto.
+- Latencia y throughput: no disponibles en la informacion proporcionada; por el tamano del modelo se espera una generacion fluida en CPU moderna, pero no hay cifras publicadas.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Formato | Licencia | Notas |
-|---|---|---|---|---|
-| Oprius-1.1B-GGUF | 1,1 B | GGUF (13 cuantizaciones) | Apache 2.0 | Fine-tuning conversacional casual; marcado como deprecated por su autor |
-| TinyLlama-1.1B-Chat-v1.0 | 1,1 B | safetensors / GGUF de terceros | Apache 2.0 | Modelo base original, mejor documentado y con comunidad activa |
-| Qwen2.5-1.5B-Instruct | 1,5 B | safetensors / GGUF | Apache 2.0 (algunas variantes) | Mayor capacidad general, multilingüe, tool calling |
-| Llama-3.2-1B-Instruct | 1,2 B | safetensors / GGUF | Llama 3.2 Community License | Multilingüe oficialmente, mejor rendimiento en benchmarks publicados |
-
-Para uso productivo, las alternativas TinyLlama-Chat, Qwen2.5-1.5B-Instruct y Llama-3.2-1B-Instruct ofrecen mejor documentación y rendimiento; Oprius-1.1B se justifica principalmente por curiosidad o por su ligereza extrema.
+| Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
+|---|---|---|---|---|---|
+| Oprius-1.1B-GGUF | 1,1 B | no disponible | Apache 2.0 | GGUF en HF | Ajuste conversacional, marcado obsoleto por el autor |
+| TinyLlama-1.1B-Chat-v1.0 | 1,1 B | 2.048 tokens (modelo base de referencia) | Apache 2.0 | HF (safetensors y GGUF de terceros) | Modelo original sobre el que se construye Oprius |
+| Qwen2.5-1.5B-Instruct | 1,5 B | 32.768 tokens (modelo de referencia) | Apache 2.0 | HF (multiples formatos) | Alternativa moderna con contexto largo y mejor soporte multilingue |
 
 ## Limitaciones y advertencias
 
-- El propio autor declara el modelo como deprecated (dataset antiguo) y recomienda evaluarlo antes de usarlo: es el aviso más importante de la ficha.
-- No hay benchmarks publicados, por lo que su calidad respecto al modelo base TinyLlama-1.1B-Chat-v1.0 es desconocida; el fine-tuning conversacional casual podría haber degradado capacidades generales.
-- Riesgo de alucinación elevado, típico de modelos de ~1 B parámetros; no apto para tareas que exijan factualidad sin verificación.
-- Alcance de idiomas no documentado; probablemente orientado al inglés por su linaje TinyLlama.
-- Longitud de contexto no especificada; heredará la del modelo base TinyLlama (2.048 tokens según la documentación original), pero no consta en este repo.
-- Sin documentación de tool calling ni agentes: no apto para flujos agénticos.
-- La licencia Apache 2.0 permite uso comercial sin restricciones relevantes.
-- Popularidad muy baja (279 descargas, 0 likes en el momento de la ficha), lo que implica escaso testeo comunitario y sin soporte aparente.
+- El autor del modelo base lo marca como obsoleto por haber sido entrenado con un dataset antiguo; su calidad puede ser inferior a la de modelos mas recientes del mismo tamano.
+- Riesgo alto de alucinacion y de respuestas incoherentes en tareas de razonamiento, codigo o matematicas, dado el reducido tamano del modelo.
+- Idiomas soportados no documentados; el entrenamiento de TinyLlama se centra en ingles, por lo que el rendimiento en castellano es incierto.
+- Longitud de contexto no documentada en esta ficha; conviene consultar la model card del modelo base antes de disenar prompts largos.
+- Licencia Apache 2.0 permite uso comercial, pero al derivar de TinyLlama conviene verificar las condiciones del modelo original.
+- El repositorio acumula trece cuantizaciones (10,6 GB en total); descargar solo el fichero necesario para evitar consumo innecesario de almacenamiento.
+- No hay garantias de soporte ni mantenimiento por parte del autor de la cuantizacion.
 
 ## Enlaces
 
-- Repositorio en Hugging Face: https://huggingface.co/tinyopsec/Oprius-1.1B-GGUF
-- Modelo base: https://huggingface.co/TinyLlama/TinyLlama-1.1B-Chat-v1.0
-- Modelo intermedio del que derivan las cuantizaciones: https://huggingface.co/zzzekryo/Oprius-1.1B
-- llama.cpp (runtime de conversión e inferencia): https://github.com/ggerganov/llama.cpp
+- Modelo en Hugging Face: https://huggingface.co/tinyopsec/Oprius-1.1B-GGUF
+- Modelo base: https://huggingface.co/zzzekryo/Oprius-1.1B
+- TinyLlama-1.1B-Chat-v1.0: https://huggingface.co/TinyLlama/TinyLlama-1.1B-Chat-v1.0
+- llama.cpp: https://github.com/ggerganov/llama.cpp
+- Ollama: https://ollama.com

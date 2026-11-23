@@ -2,94 +2,93 @@
 
 ## Resumen
 
-DeepSeek-V4.1-Flash-1017-Heretic-Sushi-STQ-1.75bpw es una variante experimental de pesos publicada por el usuario sanasol2008 en Hugging Face. No se trata de un modelo entrenado desde cero, sino de una preservacion completa de un root Sushi STQ de 1,75 bits por peso que combina el pack oficial de beamster (DeepSeek-V4.1-Flash-1017-Sushi-STQ-1.75bpw) con 38 matrices de proyeccion de salida de atencion (attn.wo_b, capas 2 a 39) recodificadas a partir del checkpoint pqhaz/DeepSeek-V4.1-Flash-1017-heretic. El resultado es un artefacto de inferencia standalone con licencia MIT y 261.320.630.994 parametros declarados en los safetensors.
+DeepSeek-V4.1-Flash-1017 Heretic Sushi STQ 1.75bpw es una preservación completa y autónoma (full-root) de un checkpoint DeepSeek-V4.1-Flash cuantizado a 1,75 bits por peso mediante el formato STQ (Sushi Trellis Quantization), publicado por el usuario sanasol2008. No es un modelo entrenado desde cero ni un fine-tune: es un artefacto de cuantización que combina el pack oficial STQ de beamster con 38 matrices de proyección de salida de atención (`attn.wo_b`, capas 2 a 39) recodificadas a partir del parche FP8 nativo "Heretic" de pqhaz. El resto de tensores —expertos enrutados, tablas Engram, pesos MTP, tokenizer y configuración— permanecen intactos respecto al STQ oficial.
 
-La relevancia de esta publicacion es fundamentalmente tecnica y de investigacion: documenta un flujo de trabajo de cuantizacion extrema (STQ, trellis-based quantization) sobre un modelo de gran tamano, con scripts de construccion y evidencia numerica preservados en el directorio `provenance/`. El autor advierte explicitamente de que solo se ha validado un smoke test de runtime en macOS con el motor Sushi 1.6.0 y que la calidad general y la KLD del modelo completo permanecen sin verificar.
+El modelo declara 261.320.630.994 parámetros totales según los safetensors y un repositorio de 332,1 GB (309,3 GiB), lo que lo sitúa en la categoría de modelos frontera con arquitectura presumiblemente Mixture-of-Experts (la presencia de "expertos enrutados" y pesos MTP así lo sugiere). La relevancia actual es doble: por un lado, demuestra que es viable distribuir un modelo de este tamaño en un único root autónomo ejecutable en Apple Silicon con 48 GB de memoria unificada; por otro, ilustra las técnicas de cuantización extrema (1,75 bpw) y de ablación selectiva de capas de atención que la comunidad está explorando para reducir requisitos de hardware.
 
-Conviene subrayar que la model card no proporciona informacion sobre la arquitectura interna del modelo base (mas alla de la etiqueta `deepseek_v41`), el dataset de entrenamiento, el contexto nativo ni los idiomas soportados. Los datos de esta ficha se limitan, por tanto, a lo verificable en la informacion disponible.
+Conviene subrayar que la propia model card advierte de que solo se ha validado un "runtime smoke" (carga y generación breve) y que la calidad general, la ablación efectiva y la KLD del modelo completo no están verificadas. Es, por tanto, un artefacto experimental orientado a investigación y pruebas de infraestructura, no a producción.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (etiqueta `deepseek_v41`; pesos organizados como root Sushi STQ) |
+| Arquitectura | no disponible (transformer con expertos enrutados y pesos MTP, inferido de la model card) |
 | Parametros totales | 261.320.630.994 |
 | Parametros activos | no disponible |
-| Longitud de contexto | no disponible en el modelo; el smoke test se ejecuto con ctx 2048 |
-| Tipos de cuantizacion | STQ a 1,75 bits por peso (trellis banks); fp8 en tags; matrices attn.wo_b recodificadas en float32 uncalibrated SPEC1 least-squares |
+| Longitud de contexto | 2048 tokens (contexto probado en el smoke test; máximo no disponible) |
+| Tipos de cuantizacion | STQ 1,75 bpw (trellis); parche FP8 nativo en las 38 capas attn.wo_b |
 | Idiomas soportados | no disponible |
 | Licencia | MIT |
-| Formato de pesos | safetensors (root Sushi STQ); repo de 332,1 GB |
-| Modelo base | beamster/DeepSeek-V4.1-Flash-1017-Sushi-STQ-1.75bpw y pqhaz/DeepSeek-V4.1-Flash-1017-heretic |
-| Motor de inferencia validado | Sushi 1.6.0 (macOS) |
-| Fecha de publicacion | 2026-11-14 |
+| Formato de pesos | safetensors (root completo, no GGUF) |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion sobre la arquitectura interna del modelo base DeepSeek-V4.1-Flash-1017 en la documentacion proporcionada. La model card solo describe el proceso de construccion del artefacto: se parte del root oficial Sushi STQ de 1,75 bpw (commit `89630812557263bb7a7582fb1f30455573511155`) y se sustituyen exclusivamente 38 bancos trellis correspondientes a las proyecciones de salida de atencion (`attn.wo_b`, capas 2 a 39) por versiones recodificadas a partir del checkpoint Heretic (commit `12d58ad0878b5008e80d720251adb969a0069412`). Los expertos enrutados y el resto de tensores permanecen con los pesos STQ oficiales originales; no se ha realizado una recuantizacion completa del checkpoint Heretic.
+El modelo base es DeepSeek-V4.1-Flash-1017, del que no se proporcionan detalles arquitectónicos en la información disponible (número de capas, dimensión oculta, configuración MoE, composición del dataset de entrenamiento ni si hubo RLHF/DPO). La model card menciona explícitamente "expertos enrutados" (routed experts), "tablas Engram" y "pesos MTP" (Multi-Token Prediction), lo que apunta a una arquitectura Mixture-of-Experts con componentes auxiliares de predicción multi-token y módulos Engram, pero no se confirman cifras de parámetros activos ni topología.
 
-La innovacion tecnica documentada es el propio formato STQ (trellis-based quantization) a 1,75 bits por peso, que permite almacenar un modelo de 261.000 millones de parametros en un repo de 332 GB. La recodificacion de las 38 matrices `attn.wo_b` uso codificacion float32 sin calibrar con minimos cuadrados SPEC1, no la receta privada Sashimi; las escalas originales y las cabeceras de tensor se mantuvieron sin cambios. Los scripts de construccion y la evidencia numerica estan preservados en `provenance/`, y existe un `preservation-verification.json` con el inventario de ficheros verificado de forma independiente.
+La innovación técnica de este artefacto es la cuantización: el pack STQ oficial de beamster aplica Trellis Quantization a 1,75 bits por peso, y sobre él se sustituyen 38 matrices `attn.wo_b` (capas 2 a 39) recodificadas desde FP8 mediante mínimos cuadrados sin calibrar en float32 (receta SPEC1, distinta de la "Sashimi" privada). Los bancos trellis de esas 38 matrices son lo único alterado; escalas y cabeceras de tensor originales se conservan. No hay reentrenamiento ni RLHF adicional en este paso: es puramente un proceso de recuantización y preservación.
 
 ## Capacidades
 
-- Generacion de texto: el pipeline declarado es `text-generation`.
-- No se documentan capacidades especificas de razonamiento, codigo o matematicas mas alla de las inherentes al modelo base, que no se detallan en la informacion disponible.
-- Soporte de tool calling / function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingues: no disponible (el campo de idiomas no esta poblado).
-- Vision: el smoke test se ejecuto con `--no-vision`, lo que sugiere que el motor admite un modo vision, pero no se confirma que este artefacto lo soporte correctamente.
-- MTP (multi-token prediction): deshabilitado en el smoke test (`--no-mtp`); no se confirma su funcionamiento.
-- Modo thinking: no disponible.
+- Generación de texto autoregresiva (pipeline `text-generation`).
+- Razonamiento y código: capacidades heredadas del modelo base DeepSeek-V4.1-Flash, no verificadas en este artefacto.
+- Soporte de pesos MTP (Multi-Token Prediction) incluidos en el root, aunque deshabilitados en el smoke test.
+- Tablas Engram incluidas (mecanismo de memoria/contexto del modelo base, función exacta no disponible).
+- Capacidades multilingües: no disponibles (el campo de idiomas está vacío en Hugging Face).
+- Tool calling / function calling: no disponible en la información proporcionada.
+- Modo thinking, visión o audio: no disponible; el smoke test ejecutó con visión deshabilitada.
+- Ablación "Heretic" parcial: solo se han recodificado 38 capas de atención, no se ha realizado una ablación completa del checkpoint.
 
 ## Casos de uso
 
-- Investigacion sobre cuantizacion extrema: el artefacto sirve como referencia reproducible para estudiar el impacto de STQ a 1,75 bpw en un modelo de 261.000 millones de parametros, con scripts y evidencia numerica en `provenance/`.
-- Experimentos de abliteration y modificacion selectiva de pesos: permite analizar el efecto de sustituir unicamente 38 matrices `attn.wo_b` sobre el comportamiento de rechazo, aunque el autor advierte que las pruebas cortas de rechazo no constituyen una evaluacion de seguridad.
-- Reproduccion de pipelines de preservacion de roots: el inventario verificado en `preservation-verification.json` y el uso de commits exactos facilitan replicar el proceso de build en otros checkpoints.
-- Inferencia local en hardware con presupuesto de SSD: el smoke test valido con Sushi 1.6.0, `--ssd-budget-gb 28` y ctx 2048 demuestra un modo de despliegue con offload a disco para entornos macOS con memoria limitada.
-- Benchmarking de motores de inferencia alternativos: util para comparar el rendimiento de Sushi frente a otros runtimes sobre pesos trellis de muy baja precision, midiendo latencia y throughput en un modelo de gran escala.
-- Auditoria de artefactos de terceros: investigadores interesados en verificar la integridad de pesos publicados pueden usar el inventario de ficheros y los commits de referencia para validar la procedencia de cada tensor.
+- Investigación en cuantización extrema: el artefacto permite estudiar el impacto de 1,75 bpw y de la recuantización selectiva de capas de atención sobre la calidad, comparando contra el STQ oficial de beamster y el FP8 de pqhaz.
+- Pruebas de infraestructura en Apple Silicon: sirve para validar el motor Sushi 1.6.0 y presupuestos de peso en SSD (28 GiB) en máquinas con 48 GB de memoria unificada, midiendo latencia real de 1-2 tokens/s en un M3.
+- Reproducibilidad de pipelines de cuantización: los scripts y la evidencia numérica en `provenance/` permiten reproducir la recodificación SPEC1 de las 38 matrices `attn.wo_b` y auditar el manifiesto `preservation-verification.json`.
+- Benchmarking de motores de inferencia: al ser un root completo sin overlay, se puede usar como caso de prueba para validar cargadores que soporten STQ trellis y safetensors de gran tamaño.
+- Estudio de seguridad y alineación: los "short refusal probes" mencionados permiten explorar de forma preliminar el efecto de la ablación parcial sobre comportamientos de rechazo, siempre con la cautela de que no constituyen una evaluación de seguridad.
+- Despliegue experimental en local para prototipos de generación de texto de baja latencia esperada, aceptando el throughput reducido (1-2 tokens/s) y el contexto limitado a 2048 tokens en la configuración probada.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card indica explicitamente que la evaluacion KLD del modelo completo no se ha realizado y que las pruebas de rechazo son limitadas y no constituyen una evaluacion de calidad general ni de seguridad.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card indica explícitamente que la KLD del modelo completo no se ha evaluado y que la calidad general permanece sin verificar. El único dato de rendimiento es empírico: aproximadamente 1-2 tokens/s en un Apple M3 con 48 GB de memoria unificada, presupuesto SSD de 28 GiB para pesos y contexto de 2048 tokens, en pruebas en frío con caché pequeña.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible de forma directa; el smoke test se ejecuto con un presupuesto de SSD de 28 GiB, lo que implica offload de pesos a disco y uso de memoria unificada en macOS.
-- GPU recomendadas: no disponible. El unico entorno validado es macOS con el motor Sushi 1.6.0.
-- Compatibilidad con GPU de consumo: no confirmada. El tamano del repo (332,1 GB) y los 261.000 millones de parametros hacen inviable la carga completa en VRAM de GPUs de consumo sin offload.
-- Opciones de despliegue: Sushi 1.6.0 con `sushi serve --model /path/to/root --ssd-budget-gb 28 --ctx-size 2048 --no-mtp --no-vision`. No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI.
-- Latencia y throughput: no disponibles.
+- VRAM/memoria: el root completo ocupa 332,1 GB (309,3 GiB) en disco; requiere al menos 8 GiB adicionales de espacio libre durante la descarga. El presupuesto de pesos en SSD probado es de 28 GiB, que no equivale a la memoria total del proceso.
+- Memoria unificada: el smoke test se ejecutó en un Apple Silicon con 48 GB de memoria unificada (clase M3).
+- GPU dedicadas: no disponible; no se han probado A100, H100 ni RTX 4090 en la información proporcionada.
+- Consumer GPU: no confirmado. El tamaño del root (309,3 GiB) excede la VRAM de cualquier GPU de consumo actual; el diseño está orientado a streaming desde SSD con el motor Sushi.
+- Despliegue: motor Sushi 1.6.0 para macOS Apple Silicon (binario `sushi-bin-macos-arm64`), modo `serve` en `127.0.0.1`. No se mencionan vLLM, llama.cpp, Ollama ni TGI; el formato STQ trellis no es GGUF.
+- Throughput: 1-2 tokens/s en el M3 de prueba, con caché pequeña y en frío; no son medidas de rendimiento máximo.
+- Ajustes recomendados: no elevar a ciegas los límites de memoria wired de macOS; mantener MTP y visión deshabilitados en la configuración probada.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DeepSeek-V4.1-Flash-1017-Heretic-Sushi-STQ-1.75bpw (este) | 261.320.630.994 | no disponible | STQ 1,75 bpw | MIT | Hugging Face, 0 descargas |
-| beamster/DeepSeek-V4.1-Flash-1017-Sushi-STQ-1.75bpw | no disponible | no disponible | STQ 1,75 bpw | no disponible | Hugging Face (modelo base) |
-| pqhaz/DeepSeek-V4.1-Flash-1017-heretic | no disponible | no disponible | no disponible | no disponible | Hugging Face (modelo base) |
+| DeepSeek-V4.1-Flash-1017 Heretic Sushi STQ 1.75bpw (este) | 261,3 B | 2048 (probado) | STQ 1,75 bpw + FP8 en 38 capas attn.wo_b | MIT | Hugging Face, root completo 332,1 GB |
+| beamster/DeepSeek-V4.1-Flash-1017-Sushi-STQ-1.75bpw | no disponible | no disponible | STQ 1,75 bpw oficial | no disponible | Hugging Face |
+| pqhaz/DeepSeek-V4.1-Flash-1017-heretic | no disponible | no disponible | FP8 nativo | no disponible | Hugging Face |
+| DeepSeek-V4.1-Flash-1017 (base) | no disponible | no disponible | original (probablemente BF16/FP8) | no disponible | no disponible en la búsqueda |
 
-No se dispone de datos de rendimiento ni de especificaciones detalladas de los modelos base como para establecer una comparativa cuantitativa fiable.
+La comparativa se limita a los artefactos citados en la model card; no se dispone de datos de benchmarks ni de parámetros activos de las alternativas para establecer una comparación cuantitativa de rendimiento.
 
 ## Limitaciones y advertencias
 
-- Calidad no verificada: el autor indica que solo se realizo un smoke test de runtime; la calidad general y la KLD del modelo completo permanecen sin evaluar.
-- Abliteration no confirmada: las pruebas cortas de rechazo no demuestran una abliteration exitosa ni constituyen una evaluacion de seguridad.
-- Modificacion parcial: solo se sustituyeron 38 matrices `attn.wo_b`; los expertos enrutados y el resto de tensores conservan los pesos STQ oficiales, por lo que el comportamiento puede diferir del checkpoint Heretic completo.
-- Riesgo de alucinacion: no cuantificado en la informacion disponible.
-- Sesgos conocidos: no documentados.
-- Idiomas y contexto: no disponibles; el smoke test uso ctx 2048, muy por debajo de lo habitual en modelos de esta escala.
-- Restricciones de licencia: licencia MIT declarada, lo que en principio permite uso comercial, pero se deben respetar las licencias de los modelos base y los assets del tokenizer, que la model card indica que se conservan.
-- Uso en produccion: desaconsejado sin una evaluacion de calidad y seguridad previa; el artefacto esta marcado como experimental y con 0 descargas.
-- Compatibilidad de motor: solo validado con Sushi 1.6.0 en macOS; no hay evidencia de funcionamiento en otros runtimes.
+- Calidad no verificada: solo se ha realizado un runtime smoke; no hay evaluación de KLD del modelo completo ni de calidad general.
+- Ablación incompleta: la sustitución "Heretic" afecta únicamente a 38 matrices `attn.wo_b`; no es una recuantización completa del checkpoint Heretic ni una ablación de seguridad validada.
+- Riesgo de alucinación y sesgos: no evaluados en este artefacto; se heredan los del modelo base, que no se documentan.
+- Contexto limitado en la prueba: 2048 tokens; el máximo real del modelo base no se especifica.
+- Idiomas: no declarados; no se puede garantizar soporte multilingüe.
+- Licencia MIT: permite uso comercial, pero el artefacto es experimental y no apto para producción sin validación adicional.
+- Throughput muy bajo en el hardware probado (1-2 tokens/s), lo que descarta aplicaciones interactivas en ese entorno.
+- Requisitos de disco elevados (332,1 GB) y dependencia del motor Sushi 1.6.0, sin soporte documentado en otros runtimes.
+- El downloader de ejemplo reinicia desde cero los archivos grandes fallidos; conviene planificar la descarga con margen de red y disco.
+- Advertencia del autor: los "short refusal probes" no constituyen prueba de ablación exitosa ni evaluación de seguridad.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/sanasol2008/DeepSeek-V4.1-Flash-1017-Heretic-Sushi-STQ-1.75bpw
-- Modelo base (pack STQ oficial): https://huggingface.co/beamster/DeepSeek-V4.1-Flash-1017-Sushi-STQ-1.75bpw
-- Modelo base (checkpoint Heretic): https://huggingface.co/pqhaz/DeepSeek-V4.1-Flash-1017-heretic
-- Commit del pack STQ: `89630812557263bb7a7582fb1f30455573511155`
-- Commit del checkpoint Heretic: `12d58ad0878b5008e80d720251adb969a0069412`
-- Inventario de verificacion: `preservation-verification.json` (en el repositorio del modelo)
-- Scripts y evidencia numerica: directorio `provenance/` (en el repositorio del modelo)
+- Modelo base STQ: https://huggingface.co/beamster/DeepSeek-V4.1-Flash-1017-Sushi-STQ-1.75bpw
+- Parche Heretic FP8: https://huggingface.co/pqhaz/DeepSeek-V4.1-Flash-1017-heretic
+- Motor Sushi (release v1.6.0): https://github.com/beamivalice/sushi/releases/download/v1.6.0
+- Repositorio Sushi: https://github.com/beamivalice/sushi

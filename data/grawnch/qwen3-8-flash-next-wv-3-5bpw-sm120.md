@@ -2,119 +2,114 @@
 
 ## Resumen
 
-Qwen3.8-Flash-Next-WV-3.5bpw-SM120 es un checkpoint cuantizado y preempaquetado del modelo Qwen/Qwen3.8-Flash-Next, publicado por el usuario Grawnch en Hugging Face. Se trata de una variante optimizada especificamente para GPUs NVIDIA con arquitectura Blackwell (sm_120), que combina cuantizacion INT8 con Tensor Cores, compresion Wave-LUT y descomposicion SVD de rango 8 en FP16. El modelo base es un MoE de 180.000 millones de parametros totales con 48 capas hibridas.
+Qwen3.8-Flash-Next-WV-3.5bpw-SM120 es un checkpoint cuantizado a 3.5 bits por peso del modelo Qwen3.8-Flash-Next de Qwen, empaquetado de forma nativa para GPUs Blackwell (arquitectura `sm_120`) por el usuario Grawnch. Se trata de una mezcla de expertos (MoE) de 180.000 millones de parametros totales distribuida en 48 capas hibridas que combinan 36 capas Gated DeltaNet (GDN) con 12 capas Qwen Sparse Attention (QSA), 512 expertos enrutados mas 1 compartido, Hyper-Connections mHC de 4 flujos y una tabla de embeddings por capa N-Gram (PLE) de 28,80 GB que reside en RAM del host.
 
-El modelo resuelve el problema de desplegar un MoE de gran tamano en una unica GPU consumer o de estacion de trabajo con memoria GDDR7, manteniendo una fidelidad de logits alta respecto al modelo en BF16. Segun la model card, el checkpoint ocupa 66,70 GB de VRAM en modo exacto (3,85 bits por peso efectivos) y puede reducirse a 45,25 GB en modo VQ4-Turbo (2,50 bpw), lo que lo hace viable en una RTX PRO 6000 Blackwell de 96 GB.
+El paquete no es un GGUF generico ni un safetensors estandar: es un contenedor de safetensors fragmentados con manifiesto de runtime propio (`sm120_manifest.json`), pensado para cargarse en GPUs Blackwell mediante un runtime especifico del autor. Incluye ademas un drafter de decodificacion especulativa calibrado (DFlash2) y tablas de busqueda para cuantizacion vectorial. La relevancia actual radica en que permite ejecutar un modelo de 180B en una unica GPU de 96 GB con un consumo estatico de VRAM de 67,49 GiB y una capacidad de pool KV de mas de un millon de tokens.
 
-La relevancia actual radica en que demuestra tecnicas de cuantizacion nativa para una arquitectura especifica (sm_120), con decodificacion especulativa integrada (N-Gram y DFlash2) que alcanza hasta 564,8 tok/s en tareas de matematicas, CUDA y JSON. Es un artefacto de investigacion e ingenieria de inferencia mas que un modelo de proposito general listo para produccion sin adaptacion.
+El autor reporta una paridad muy alta con el checkpoint maestro de 3.5 bpw (KLD de 0,001533 en Math/Code, 99,023 % de acuerdo Top-1 y coseno de estados ocultos de 0,999465 en las 48 capas) y un resultado de 30/30 en AIME 2025 a contexto de 128K con decodificacion estricta sin penalizacion de presencia. La licencia declarada es Apache 2.0, heredada del modelo base.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
 | Arquitectura | Transformer hibrido MoE: 36 capas Gated DeltaNet (GDN) + 12 capas Qwen Sparse Attention (QSA), 4-stream mHC Hyper-Connections |
-| Parametros totales | 180B (modelo base) |
-| Parametros activos | 512 expertos enrutados + 1 experto compartido (numero de activos no disponible) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | INT8 Tensor Core (m16n8k32), Wave-LUT SWZ3_G32 / SWZ4_G32, Rank-8 FP16 SVD, Q8-MMA; modos WV-Exact (3,85 bpw) y VQ4-Turbo (2,50 bpw) |
+| Parametros totales | 180 000 millones (180B) |
+| Parametros activos | no disponible (512 expertos enrutados + 1 compartido por capa; el autor no publica el numero de activos) |
+| Longitud de contexto | 128K (131 072 tokens) verificado en evaluacion; pool KV de 1 072 640 tokens |
+| Tipos de cuantizacion | 3.5 bpw (checkpoint principal); familia con variantes de 2.7 bpw y GGUF de 3.5 bpw |
 | Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (8 shards de capas + globals), GGUF (tabla PLE), JSON manifest, PyTorch codebooks |
+| Formato de pesos | safetensors fragmentados (8 shards de capas + globals + indexer + drafter) con manifiesto `sm120_manifest.json`; incluye un GGUF de 28,80 GB para la tabla PLE |
 
 ## Arquitectura y entrenamiento
 
-El modelo base Qwen3.8-Flash-Next emplea una arquitectura hibrida de 48 capas que combina 36 capas Gated DeltaNet (un mecanismo de atencion lineal recurrente) con 12 capas de Qwen Sparse Attention (QSA). Es un Mixture of Experts con 512 expertos enrutados mas un experto compartido, e incorpora Hyper-Connections de 4 flujos (mHC). Ademas, incluye una tabla de embeddings N-Gram Per-Layer (PLE) de 28,80 GB en la capa 1, disenada para residir en RAM del host mediante zero-copy PCIe.
+La arquitectura es un transformer hibrido con dos tipos de capa intercalados: 36 capas Gated DeltaNet, un mecanismo de estado recurrente con compuertas que sustituye a la atencion completa en la mayor parte de la profundidad, y 12 capas de Qwen Sparse Attention con un indexador dedicado que selecciona los Top-2048 tokens relevantes para contextos de 128K. La capa MoE emplea 512 expertos enrutados mas uno compartido, y el modelo incorpora Hyper-Connections mHC de 4 flujos para el flujo residual. La tabla de Per-Layer Embeddings (PLE) de tipo N-Gram ocupa 28,80 GB y se mantiene en RAM del host fijada (pinned), sin consumir VRAM.
 
-El checkpoint de Grawnch no reentrena el modelo: deriva sin perdida (segun el autor) del checkpoint Grawnch/Qwen3.8-Flash-Next-WV-3.5bpw, aplicando un preempaquetado especifico para sm_120. Las innovaciones tecnicas incluyen tensores pre-swizzled para Tensor Cores INT8 de Blackwell, compresion Wave-LUT con grupos de 32, SVD de rango 8 en FP16 para los expertos, y soporte de decodificacion especulativa mediante N-Gram (sin memoria adicional) y DFlash2 (b=8, Tree-16). No se dispone de informacion sobre el dataset de entrenamiento, numero de tokens, ni si hubo RLHF o DPO en el modelo base.
+No se dispone de informacion sobre el volumen de tokens de entrenamiento, la composicion del dataset ni las etapas de alineacion (RLHF/DPO) del modelo base Qwen3.8-Flash-Next. La innovacion tecnica destacable de este checkpoint concreto es el empaquetado: cuantizacion a 3.5 bpw con calibracion especifica para `sm_120`, atencion dispersa con indexador precalculado, decodificacion especulativa mediante un drafter DFlash2 calibrado (241,8 MB) y un runtime con tablas de cuantizacion vectorial (`vq4_codebooks.pt`) y mapas de niveles submodulares. El autor reporta una tasa de aceptacion de tokens especulativos (tau) de 5,14 en el modo de 3.5 bpw.
 
 ## Capacidades
 
-- Generacion de texto y razonamiento de multiples pasos, con modo de pensamiento (`<think>`) evidenciado en las evaluaciones de la model card.
-- Generacion de codigo en C++20, Python y kernels CUDA (vectorizacion con `float4`), segun los benchmarks reportados.
-- Razonamiento matematico avanzado: la model card menciona una prueba diofantina de AIME y tareas de matematicas en las pruebas de throughput.
-- Generacion de JSON estructurado.
-- Soporte de decodificacion especulativa con N-Gram y DFlash2 (aceleracion de inferencia, no capacidad del modelo per se).
+- Generacion de texto y razonamiento de multiples pasos, con modo de pensamiento extenso (la evaluacion AIME usa hasta 124 807 tokens de salida por problema).
+- Razonamiento matematico de competicion: 30/30 en AIME 2025 a 128K de contexto segun el autor.
+- Generacion de codigo: el autor reporta paridad KLD en el dominio Math/Code frente al checkpoint maestro.
+- Contexto largo de 128K tokens con atencion dispersa Top-2048, adecuado para documentos extensos y conversaciones multi-turno largas.
+- Decodificacion especulativa integrada con drafter calibrado (hasta 204 tok/s en single-stream en el modo de 3.5 bpw).
 - Capacidades multilingues: no disponible.
-- Tool calling / function calling: no disponible en la informacion proporcionada.
+- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
 - Soporte de agentes: no disponible en la informacion proporcionada.
-- Vision, audio: no disponible.
+- Capacidades de vision o audio: no disponibles.
 
 ## Casos de uso
 
-- Inferencia de un MoE de 180B en una unica GPU Blackwell: el checkpoint esta preempaquetado para sm_120 y cabe en 66,70 GB (modo exacto) o 45,25 GB (VQ4-Turbo), lo que permite desplegar el modelo en una RTX PRO 6000 sin necesidad de multiples GPUs.
-- Generacion de codigo CUDA de alto rendimiento: los benchmarks reportados incluyen refactorizacion de kernels CUDA con `float4` sosteniendo 405,5 tok/s, lo que lo hace adecuado para asistentes de codigo especializados en GPU programming.
-- Razonamiento matematico interactivo: el modo de pensamiento y la estabilidad en contexto de 2K tokens (413,6 tok/s en una prueba diofantina de 1.700 tokens) lo hacen util para tutoria o resolucion asistida de problemas.
-- Servicio de generacion JSON estructurado a alta velocidad: con DFlash2 alcanza 412-432 tok/s en tareas JSON, adecuado para pipelines de extraccion de datos o APIs que requieran baja latencia.
-- Investigacion en tecnicas de cuantizacion: el repositorio incluye codebooks VQ, manifest de topologia y logs de benchmark, lo que permite reproducir y comparar metodos de compresion (Wave-LUT, SVD, VQ 4D).
-- Evaluacion de decodificacion especulativa: los datos de N-Gram y DFlash2 con tasas de aceptacion ($\tau$ = 7,87-8,05 tokens/ronda) sirven como referencia para estudiar aceleracion de inferencia en MoE.
-- Despliegue en estaciones de trabajo con una sola GPU para prototipado de agentes o asistentes tecnicos, siempre que se valide la calidad del checkpoint cuantizado en el dominio objetivo.
+- Razonamiento matematico y cientifico de alta dificultad: el modelo mantiene cadenas de razonamiento de decenas de miles de tokens sin truncamiento ni bucles en la evaluacion del autor, lo que lo hace adecuado para resolver problemas de competicion, verificacion de demostraciones y generacion de soluciones paso a paso con contexto de 128K.
+- Analisis de documentos extensos: con 128K de contexto y atencion dispersa Top-2048, puede procesar informes, expedientes o bases de codigo completas en una sola pasada, resumiendo y extrayendo informacion estructurada sin fragmentacion.
+- Generacion de codigo en produccion: la paridad KLD reportada en el dominio Math/Code y el soporte de decodificacion especulativa permiten integrarlo en pipelines de generacion y revision de codigo donde se requiere baja latencia por token y coherencia con el modelo completo.
+- Asistentes conversacionales de contexto largo: el pool KV de mas de un millon de tokens y el rendimiento en lote (hasta 1 281 tok/s con B=30 en greedy) permiten servir sesiones multi-turno concurrentes con historial extenso en una unica GPU Blackwell.
+- Evaluacion y benchmarking de modelos cuantizados: el checkpoint incluye logs de paridad (KLD, coseno de capas ocultas, acuerdos Top-1/Top-5) y sirve como referencia reproducible para estudiar el impacto de la cuantizacion a 3.5 bpw en modelos MoE hibridos.
+- Investigacion sobre atencion dispersa y arquitecturas hibridas: al exponer por separado los pesos del indexador QSA y las capas GDN, facilita experimentos sobre seleccion de tokens, degradacion con la longitud de contexto y comparativas entre atencion densa y dispersa.
+- Despliegue en una sola GPU de 96 GB: con 67,49 GiB de VRAM estatica y la tabla PLE en RAM del host, encaja en estaciones de trabajo con RTX PRO 6000 Blackwell para prototipado e inferencia interna sin clúster multi-GPU.
 
 ## Benchmarks y rendimiento
 
-Rendimiento de inferencia en NVIDIA RTX PRO 6000 Blackwell (1,79 TB/s GDDR7), segun la model card:
+| Evaluacion | Politica de decodificacion | Resultado | Tokens medios (max) |
+|---|---|---|---|
+| AIME 2025, 128K, B=30 (v19, paso A) | `presence_penalty = 0.0`, `mask_eos_in_think = False` | 30/30 (100,00 %) | 25 241,3 (89 807) |
+| AIME 2025, 128K, B=30 (v19, paso B) | `presence_penalty = 0.2`, `mask_eos_in_think = True` | 30/30 (100,00 %) | 25 849,6 (124 807) |
+| AIME 2025, 64K, B=30 (v18, referencia) | Estricta sin penalizacion | 22/30 (73,33 %) | 29 638,9 (65 536) |
 
-| Motor / configuracion | VRAM asignada | Modo de especulacion | Decodificacion sostenida (tok/s) | Aceleracion vs llama.cpp |
-|---|---|---|---|---|
-| llama.cpp (baseline) | ~56 GB | Ninguno (M=1) | ~95 | 1,00x |
-| SGLang FP8 oficial (GB300) | ~180 GB | MTP / Eagle | 344-384 | 3,62x-4,04x |
-| WV-SM120 modo 0 (WV-Exact) | 66,70 GB | M=1 greedy | 136,4-143,0 | 1,44x-1,51x |
-| WV-SM120 modo 0 (WV-Exact) | 66,70 GB | N-Gram (0 MB) | 166,3-184,2 | 1,75x-1,94x |
-| WV-SM120 modo 0 (WV-Exact) | 66,70 GB + 1,21 GB DFlash2 | DFlash2 (b=8 / Tree-16) | 412,0-432,1 (Math/CUDA/JSON); 272,1-336,3 (C++20/Py) | 4,34x-4,55x |
-| WV-SM120 modo 1 (VQ4-Turbo) | 45,25 GB + 1,21 GB DFlash2 | DFlash2 (b=8 / Tree-16) | 400,5-564,8 (Math/CUDA/JSON); 305,8-324,5 (C++20/Py) | 4,22x-5,95x |
+| Metrica de paridad / rendimiento | v19 3.5 bpw | v19 2.7 bpw |
+|---|---|---|
+| KLD Math/Code frente a WV-3.5bpw | 0,001533 | 0,039365 |
+| Acuerdo Top-1 / Top-5 | 99,023 % / 100,0 % | no disponible |
+| Coseno de estados ocultos (48 capas) | 0,999465 (min. 0,998659) | 0,994985 |
+| VRAM estatica (b_max=32) | 67,49 GiB | 51,17 GiB |
+| Pool KV | 1 072 640 tokens | 1 763 968 tokens |
+| Greedy B=1 / 16 / 30 | 103,1 / 857,5 / 1 281,3 tok/s | 102,6 / 849,0 / 1 258,9 tok/s |
+| Muestreo B=1 / 16 / 30 | 103,1 / 671,4 / 970,4 tok/s | 102,5 / 673,2 / 982,5 tok/s |
+| Especulativa single-stream B=1 | 204,19 tok/s (tau = 5,14) | 262,17 tok/s (tau = 6,35) |
 
-Evaluacion de fidelidad de logits y perplexidad (vocabulario de 248.320 tokens):
-
-| Suite | PPL BF16 | PPL WV-3.5bpw (ΔPPL) | KLD medio | Top-1 coincidente | CosSim final |
-|---|---|---|---|---|---|
-| Self-Gen Math/Code (`<think>`) | 5,434 | 5,474 (+0,040) | 0,09757 | 88,28% | 0,956945 |
-| External Held-Out (2048) | 11,443 | 10,212 (-1,232) | 0,18083 | 84,12% | 0,948237 |
-| WikiText-2 (4x2048) | 2,148 | 2,399 (+0,251) | 0,31614 | 85,50% | 0,893036 |
-
-Latencia por paso de CUDAGraph en 48 capas (180B):
-
-| Modo | M=1 | M=2 | M=4 | M=8 | M=12 | M=16 |
-|---|---|---|---|---|---|---|
-| Modo 0 (3,85 bpw) | 6,380 ms | 7,736 ms | 9,061 ms | 11,181 ms | 12,953 ms | 14,211 ms |
-| Modo 1 (2,50 bpw) | 6,224 ms | 7,394 ms | 8,399 ms | 10,040 ms | 11,582 ms | 12,718 ms |
-
-No se han publicado resultados de benchmarks academicos (MMLU, HumanEval, GSM8K) en la informacion disponible.
+No se han publicado resultados de benchmarks en la informacion disponible para MMLU, HumanEval, GSM8K ni otras suites estandar.
 
 ## Requisitos de hardware
 
-- VRAM estimada: 66,70 GB en modo 0 (WV-Exact, 3,85 bpw efectivos) y 45,25 GB en modo 1 (VQ4-Turbo, 2,50 bpw). El modo 0 requiere ademas 0 GB de VRAM para la tabla PLE (reside en RAM del host via zero-copy); el modo 1 usa los mismos codebooks en memoria compartida de GPU.
-- GPU recomendadas: NVIDIA RTX PRO 6000 Blackwell (96 GB GDDR7, 1,79 TB/s) es la plataforma validada. Se requiere arquitectura sm_120 (Blackwell) por el preempaquetado INT8 Tensor Core m16n8k32 y los formatos SWZ3_G32/SWZ4_G32.
-- GPU consumer: no cabe en GPUs consumer convencionales (RTX 4090 con 24 GB, RTX 5090 con 32 GB) por el tamano del checkpoint; se necesita una GPU profesional Blackwell con al menos 48 GB para el modo VQ4-Turbo.
-- Opciones de despliegue: el checkpoint esta pensado para un runtime propio de Grawnch con soporte de CUDAGraph, N-Gram y DFlash2; la model card compara contra llama.cpp (baseline) y SGLang (FP8 oficial en GB300). No se documenta soporte directo en vLLM, TGI u Ollama.
-- Latencia y throughput: 6,380 ms por paso a M=1 en modo 0; decodificacion de 136,4-143,0 tok/s (greedy) hasta 564,8 tok/s (VQ4-Turbo con DFlash2) en RTX PRO 6000 Blackwell.
+- VRAM estatica de inferencia: 67,49 GiB para el checkpoint de 3.5 bpw con `b_max = 32`; 51,17 GiB para la variante de 2.7 bpw.
+- RAM del host: 28,80 GB adicionales para la tabla PLE, que no consume VRAM (pinned memory).
+- GPU objetivo: arquitectura Blackwell `sm_120`; el autor valida sobre 1x NVIDIA RTX PRO 6000 Blackwell (101,97 GB GDDR7, 1,79 TB/s). No hay soporte declarado para A100, H100 ni RTX 4090, que no son `sm_120`.
+- Cabe en GPU consumer: no disponible; el requisito de 67,49 GiB de VRAM excede cualquier GPU de consumo actual y el target de arquitectura es profesional Blackwell.
+- Opciones de despliegue: runtime propietario del autor basado en manifiesto `sm120_manifest.json` y safetensors fragmentados; para llama.cpp existe la variante GGUF estandar del mismo autor (`Qwen3.8-Flash-Next-3.5bpw-GGUF`, 55,05 GB, con tipos `Q3_K`/`Q4_0`/`Q2_0`/`Q6_K`). Compatibilidad con vLLM, TGI u Ollama: no disponible.
+- Throughput: 1 281,3 tok/s en greedy con B=30; 970,4 tok/s en muestreo con B=30; 204,19 tok/s en single-stream con decodificacion especulativa.
+- Latencia por token en single-stream greedy: aproximadamente 9,7 ms (103,1 tok/s).
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
-|---|---|---|---|---|---|
-| Qwen3.8-Flash-Next-WV-3.5bpw-SM120 | 180B totales (MoE) | no disponible | Apache 2.0 | Hugging Face (Grawnch) | Preempaquetado para sm_120, 66,70 GB VRAM modo 0 |
-| Qwen3.8-Flash-Next (base) | 180B totales (MoE) | no disponible | Apache 2.0 | Hugging Face (Qwen) | Pesos originales, sin cuantizar |
-| Grawnch/Qwen3.8-Flash-Next-WV-3.5bpw | 180B totales (MoE) | no disponible | Apache 2.0 | Hugging Face (Grawnch) | Checkpoint del que deriva, sin preempaquetado sm_120 |
-| SGLang FP8 oficial (referencia de la model card) | 180B totales (MoE) | no disponible | no disponible | no disponible | Requiere ~180 GB VRAM en GB300 |
+| Modelo | Parametros | Contexto | Formato / cuantizacion | VRAM estatica | Licencia | Notas |
+|---|---|---|---|---|---|---|
+| Qwen3.8-Flash-Next-WV-3.5bpw-SM120 (este) | 180B totales | 128K | safetensors fragmentado, 3.5 bpw, `sm_120` | 67,49 GiB | Apache 2.0 | 30/30 AIME 2025 a 128K; runtime propio |
+| Qwen3.8-Flash-Next-WV-Hybrid-2.7bpw-SM120 | 180B totales | 128K | safetensors fragmentado, 2.7 bpw, `sm_120` | 51,17 GiB | Apache 2.0 | 1,76M tokens KV; KLD 0,039 frente al maestro |
+| Qwen3.8-Flash-Next-WV-3.5bpw | 180B totales | 128K | GGUF en 2 shards, 3.5 bpw | 55,12 GB | Apache 2.0 | Contenedor maestro WV; KLD 0,09757 frente a BF16 |
+| Qwen3.8-Flash-Next-3.5bpw-GGUF | 180B totales | 128K | GGUF estandar llama.cpp, 3.5 bpw | 55,05 GB | Apache 2.0 | Drop-in para llama.cpp con tipos ggml upstream |
 
-No se dispone de datos de benchmarks academicos para comparar rendimiento de calidad con alternativas de la misma categoria.
+No se dispone de datos para comparar con modelos de otros autores de la misma categoria en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- El checkpoint esta especializado para GPUs Blackwell sm_120; no es portable a arquitecturas Ampere, Hopper o Ada sin reconversion.
-- La cuantizacion introduce degradacion medible: en WikiText-2 la perplexidad sube de 2,148 a 2,399 (+0,251) y el KLD medio es 0,31614, con solo 85,50% de coincidencia Top-1. En dominios fuera de matematicas y codigo la fidelidad puede ser menor.
-- El modo VQ4-Turbo (2,50 bpw) reduce aun mas la precision; no se proporcionan metricas de fidelidad para ese modo en la model card.
-- Riesgo de alucinacion: no cuantificado en la informacion disponible; aplican las limitaciones del modelo base.
-- Sesgos conocidos: no disponible.
-- Idiomas soportados: no disponible; no se puede garantizar cobertura multilingue.
-- Restricciones de licencia: Apache 2.0 permite uso comercial, pero el autor no ofrece garantias sobre el checkpoint cuantizado ni sobre el cumplimiento de la licencia del modelo base en todas las jurisdicciones.
-- El repositorio tiene 0 descargas y 0 likes en el momento de la consulta; no hay validacion independiente de los resultados reportados por el autor.
-- El despliegue requiere un runtime especifico con soporte de CUDAGraph, N-Gram y DFlash2; no se documenta integracion con frameworks estandar como vLLM, TGI u Ollama.
-- La tabla PLE de 28,80 GB requiere RAM del host fijada (pinned) y soporte de `cudaHostRegisterMapped` para el zero-copy PCIe; sin ello el rendimiento puede degradarse.
-- No se dispone de informacion sobre tool calling, agentes ni contexto maximo, lo que limita la planificacion de casos de uso en produccion.
+- Dependencia de hardware: el checkpoint esta empaquetado exclusivamente para `sm_120` (Blackwell). No es cargable en A100, H100, RTX 4090 ni GPUs Apple, y requiere el runtime y el manifiesto del autor.
+- Paridad imperfecta: aunque el KLD reportado es bajo (0,001533), no es cero; el acuerdo Top-1 es del 99,023 %, por lo que existe divergencia respecto al modelo sin cuantizar en tareas sensibles.
+- Riesgo de alucinacion: no disponible en la informacion proporcionada; no se han publicado evaluaciones de factualidad ni de sesgo.
+- Sesgos conocidos: no disponible; el autor no documenta evaluaciones de sesgo ni de toxicidad.
+- Idiomas soportados: no disponible; no se confirma cobertura multilingue ni calidad por idioma.
+- Tool calling y uso agentico: no disponible; no se documenta soporte de function calling ni de protocolos de agentes.
+- Restricciones de licencia: Apache 2.0 permite uso comercial, pero conviene verificar las condiciones del modelo base Qwen3.8-Flash-Next, de las que este checkpoint hereda.
+- Naturaleza no oficial: es una cuantizacion de terceros (Grawnch), no una release de Qwen; los resultados de benchmarks proceden unicamente del autor y no han sido replicados de forma independiente.
+- Configuracion de decodificacion sensible: los resultados de AIME dependen de parametros concretos (`temp = 1.0`, `top_p = 0.95`, `top_k = 20`); con `presence_penalty` distinto de cero o enmascarado de EOS cambia el comportamiento, y en la version anterior (v18) se observaron truncamientos y bucles.
+- Requisito de memoria del host: 28,80 GB de RAM pinned para la tabla PLE; sin ellos el modelo no puede ejecutarse aunque haya VRAM suficiente.
+- Madurez del ecosistema: 433 descargas y 0 likes en el momento de la consulta; soporte limitado fuera del runtime del autor.
 
 ## Enlaces
 
-- Hugging Face del checkpoint: https://huggingface.co/Grawnch/Qwen3.8-Flash-Next-WV-3.5bpw-SM120
+- Repositorio Hugging Face: https://huggingface.co/Grawnch/Qwen3.8-Flash-Next-WV-3.5bpw-SM120
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
-- Checkpoint de origen: https://huggingface.co/Grawnch/Qwen3.8-Flash-Next-WV-3.5bpw
-- Paper, blog, repositorio o demo adicionales: no disponible en la informacion proporcionada.
+- Checkpoint maestro WV-3.5bpw: https://huggingface.co/Grawnch/Qwen3.8-Flash-Next-WV-3.5bpw
+- Variante compacta 2.7 bpw: https://huggingface.co/Grawnch/Qwen3.8-Flash-Next-WV-Hybrid-2.7bpw-SM120
+- Variante GGUF estandar para llama.cpp: https://huggingface.co/Grawnch/Qwen3.8-Flash-Next-3.5bpw-GGUF
+- Dataset de evaluacion AIME 2025: https://huggingface.co/MathArena/aime_2025

@@ -58,7 +58,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 535,
+  "downloads_30d": 605,
   "trending_score": 0,
   "parameters": 20914755648,
   "parameters_human": "20.91B",
@@ -79,16 +79,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Outlier-Ai/gpt-oss-20b-MLX-4bit · Hugging Face",
-      "url": "https://huggingface.co/Outlier-Ai/gpt-oss-20b-MLX-4bit",
-      "snippet": "4-bit MLX conversion of gpt-oss-20b for Apple Silicon. Runs natively on M1, M2, M3, and M4 Macs via mlx_lm. Faithful port of the upstream weights — no fine-tuning, no merge ..."
-    },
-    {
-      "title": "Outlier-Ai/Outlier-GPTOSS-20B-MLX-4bit · Hugging Face",
-      "url": "https://huggingface.co/Outlier-Ai/Outlier-GPTOSS-20B-MLX-4bit",
-      "snippet": "🧪 Outlier-optimized MLX 4-bit build of gpt-oss-20b by OpenAI. This is a format conversion. Model weights are unchanged from the original OpenAI release — all credit for capability goes to them. Outlier adds the MLX 4-bit packaging so it runs fast and clean on Apple Silicon, bundled in the ..."
-    }
-  ]
+  "sources": []
 }

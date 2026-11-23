@@ -2,89 +2,98 @@
 
 ## Resumen
 
-pplx-embed-v1-0.6b-ane es una conversión a Core ML del modelo de embeddings de texto `perplexity-ai/pplx-embed-v1-0.6b`, publicada por el usuario junmo-k para su ejecución sobre el Apple Neural Engine (ANE) de los chips Apple Silicon mediante la herramienta ANERun. No se trata de un modelo nuevo, sino de un paquete de artefactos Core ML que permite ejecutar en local en un Mac el modelo de embeddings original de Perplexity AI, con atención bidireccional y pooling por media.
+pplx-embed-v1-0.6b-ane es una conversion a Core ML del modelo de embeddings `perplexity-ai/pplx-embed-v1-0.6b`, publicada por el usuario junmo-k y optimizada para ejecutarse sobre el Apple Neural Engine (ANE) de los chips de Apple Silicon. No se trata de un modelo nuevo entrenado desde cero, sino de un artefacto de despliegue: los pesos originales de Perplexity AI se han convertido al formato Core ML y se han cuantizado a int8 con signo para aprovechar la aceleracion por hardware del Neural Engine en Macs con chip M-series.
 
-El modelo base es un encoder de aproximadamente 0,6 mil millones de parámetros (la cifra exacta no se detalla en la información disponible) derivado de la familia Qwen3, según la etiqueta `bidirectional_pplx_qwen3`. Su función es la extracción de características: convierte texto en vectores densos utilizables para búsqueda semántica, recuperación aumentada (RAG), clustering o clasificación. La conversión soporta entradas de hasta 32.768 tokens, aunque el instalador de ANERun adopta por defecto una ventana de 2.048 tokens.
+El modelo base es un encoder bidireccional de tipo Qwen3 (la etiqueta del repositorio es `bidirectional_pplx_qwen3`) con aproximadamente 0,6 mil millones de parametros, disenado para generar representaciones vectoriales (embeddings) de texto para tareas de recuperacion, busqueda semantica y similitud. Esta version mantiene la funcionalidad de `feature-extraction` del original, pero anade un pipeline de inferencia especifico (`ANERun`) que compila los paquetes Core ML en el Mac de destino.
 
-La relevancia de esta ficha es doble: por un lado, documenta un modelo de embeddings de Perplexity con contexto muy largo; por otro, muestra el patrón de despliegue en hardware de consumo Apple sin GPU dedicada, algo poco habitual en el ecosistema de embeddings de código abierto. La licencia es MIT y el repositorio ocupa 2,4 GB, incluyendo tokenizer, tabla de embeddings en float32, pesos de normalización final y fixtures de autoverificación.
+Su relevancia actual radica en que permite ejecutar un modelo de embeddings de calidad en hardware de consumo Apple sin GPU dedicada, con un consumo energetico bajo y una ventana de contexto que puede alcanzar los 32.768 tokens. La fidelidad respecto al modelo original es alta: la similitud coseno minima medida sobre 22 entradas de prueba es de 0,998850, y en entradas largas de codigo, coreano y Unicode mixto supera 0,999.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer encoder bidireccional (etiqueta `bidirectional_pplx_qwen3`), pooling por media |
-| Parametros totales | ~0,6 B (denominación del modelo; cifra exacta no disponible) |
+| Arquitectura | Encoder transformer bidireccional (bidirectional_pplx_qwen3) |
+| Parametros totales | ~0,6 mil millones (segun nombre del modelo base) |
 | Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | 32.768 tokens (2.048 por defecto en el instalador de ANERun) |
-| Tipos de cuantizacion | no disponible (pesos de embeddings en float32 según la model card) |
-| Idiomas soportados | no disponible |
+| Longitud de contexto | 32.768 tokens (por defecto limitado a 2.048 en ANERun) |
+| Tipos de cuantizacion | int8 con signo (salida cuantizada); pesos convertidos a Core ML |
+| Idiomas soportados | no disponible (la model card menciona pruebas en ingles, coreano y Unicode mixto) |
 | Licencia | MIT |
-| Formato de pesos | Core ML (paquete fuente con `manifest.json`); tabla de embeddings float32 incluida |
+| Formato de pesos | Core ML (paquetes fuente compilados por ANERun); modelo base en safetensors |
 
 ## Arquitectura y entrenamiento
 
-La model card describe un modelo de embeddings con atención bidireccional y mean pooling, pensado para producir un único vector por secuencia de entrada. La etiqueta `bidirectional_pplx_qwen3` sugiere que el modelo base de Perplexity parte de la arquitectura Qwen3 adaptada a atención bidireccional, un patrón habitual en encoders de recuperación que necesitan que cada token atienda a todo el contexto. La conversión a Core ML conserva el tokenizer, la tabla de embeddings en float32, los pesos de normalización final y fixtures de autoverificación; ANERun compila el modelo en el Mac de destino y valida los ficheros contra `manifest.json`.
+El modelo base `pplx-embed-v1-0.6b` es un encoder transformer bidireccional derivado de la familia Qwen3, adaptado por Perplexity AI para generar embeddings de texto. La variante publicada por junmo-k no reentrena el modelo: convierte los pesos originales (en FP32) a Core ML y los cuantiza a int8 para su ejecucion en el Apple Neural Engine. La inferencia produce un vector de embedding cuantizado a int8 con signo, y el instalador de ANERun verifica el manifiesto y compila los paquetes Core ML en el Mac de destino.
 
-No se dispone de información sobre el volumen de tokens de entrenamiento, la composición del dataset, el uso de RLHF/DPO ni innovaciones técnicas adicionales del modelo original más allá de la atención bidireccional y el contexto de 32.768 tokens. Tampoco se detalla el esquema de pooling más allá de la media ni si se aplica normalización L2 a la salida.
+No se dispone de informacion sobre el numero de tokens de entrenamiento, la composicion del dataset ni si el modelo base uso RLHF o DPO; esos datos corresponden a la model card original de Perplexity AI y no se incluyen en la informacion proporcionada. La innovacion tecnica destacable de esta version es la conversion a Core ML con cuantizacion int8 y la integracion con ANERun, que permite ejecutar el modelo en el Neural Engine con una fidelidad de vectores muy alta respecto al original en FP32.
 
 ## Capacidades
 
-- Generación de embeddings de texto para recuperación semántica y búsqueda densa.
-- Extracción de características (`feature-extraction`) con salida vectorial por secuencia.
-- Contexto de hasta 32.768 tokens, adecuado para documentos largos en una sola pasada.
-- Atención bidireccional con mean pooling, orientada a tareas de similitud y ranking.
-- Ejecución en el Apple Neural Engine mediante ANERun, con compilación en el Mac de destino.
-- Verificación de integridad de los artefactos contra `manifest.json` y fixtures de autotest incluidos.
-- No se documentan capacidades de generación de texto, tool calling, agentes, visión, audio ni modo de razonamiento; es un modelo exclusivamente de embeddings.
+- Generacion de embeddings de texto para tareas de recuperacion y similitud semantica.
+- Extraccion de caracteristicas (`feature-extraction`) sobre entradas de hasta 32.768 tokens.
+- Procesamiento de codigo, texto multilingue (incluido coreano) y Unicode mixto con alta fidelidad vectorial.
+- Ejecucion en el Apple Neural Engine de chips M-series mediante Core ML.
+- Salida cuantizada a int8 con signo, apta para indexacion y busqueda vectorial.
+- No se documentan capacidades de generacion de texto, tool calling, agentes, vision ni audio.
 
 ## Casos de uso
 
-- Búsqueda semántica en documentación técnica: indexar manuales y artículos largos aprovechando la ventana de 32.768 tokens para evitar trocear en exceso y preservar contexto entre secciones.
-- RAG sobre bases de conocimiento internas: generar embeddings de fragmentos y consultas para recuperar pasajes relevantes antes de pasarlos a un LLM generador, ejecutando todo el pipeline de recuperación en local en un Mac.
-- Deduplicación y clustering de documentos: calcular similitud coseno entre vectores de artículos, tickets o correos para agrupar contenido redundante sin enviar datos a la nube.
-- Clasificación de texto por similitud a prototipos: usar los embeddings como entrada a un clasificador ligero (kNN o regresión logística) para etiquetar soporte, spam o categorías editoriales.
-- Procesamiento por lotes en portátiles Apple Silicon: desplegar el modelo vía ANERun en un MacBook para tareas de indexación offline sin GPU dedicada, con compilación Core ML en el propio equipo.
-- Filtrado previo en pipelines de moderación o compliance: comparar embeddings de mensajes contra un conjunto de referencia de casos sensibles para priorizar revisión humana.
-- Evaluación de similitud entre versiones de documentos: detectar cambios semánticos entre revisiones de contratos o especificaciones calculando la distancia entre sus vectores.
+- Busqueda semantica en aplicaciones locales para Mac: el modelo genera embeddings de documentos y consultas en el propio dispositivo, sin enviar datos a la nube, gracias a su ejecucion sobre el Neural Engine.
+- Recuperacion aumentada (RAG) en entornos de desarrollo con Apple Silicon: se indexan fragmentos de documentacion o codigo de hasta 32.768 tokens y se recuperan los mas relevantes para alimentar un LLM.
+- Clasificacion y agrupamiento de textos: los vectores int8 permiten calcular similitudes y agrupar documentos por tematica en pipelines de analisis de datos.
+- Deduplicacion de contenido: la alta fidelidad vectorial (similitud coseno > 0,998) permite detectar near-duplicates en corpus grandes con umbrales fiables.
+- Procesamiento de codigo en herramientas de desarrollo: la model card reporta similitud de 0,999585 en entradas de codigo de 32.768 tokens, lo que lo hace adecuado para indexar repositorios y buscar fragmentos por significado.
+- Analisis de texto multilingue en local: las pruebas con coreano y Unicode mixto sugieren utilidad para corpus con varios alfabetos, aunque no se detalla la lista completa de idiomas soportados.
+- Prototipado de sistemas de recomendacion basados en contenido: los embeddings permiten calcular afinidad entre items y perfiles de usuario en un Mac de consumo.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+La model card no incluye benchmarks de recuperacion propios; remite a la model card original para esos datos. Si se documenta la fidelidad de los vectores respecto al modelo original en FP32:
+
+| Entrada de prueba | Similitud coseno respecto al original |
+|---|---:|
+| Minima en las 22 entradas de prueba | 0,998850 |
+| Codigo, 32.768 tokens | 0,999585 |
+| Texto en coreano, 32.768 tokens | 0,999120 |
+| Unicode mixto, 32.768 tokens | 0,999037 |
+
+No se han publicado resultados de benchmarks de recuperacion (MMLU, HumanEval, GSM8K u otros) en la informacion disponible.
 
 ## Requisitos de hardware
 
-- Hardware objetivo: chips Apple Silicon (Apple Neural Engine) mediante ANERun; no se documenta soporte para GPU NVIDIA ni CPU x86.
-- VRAM: no aplica; el modelo se ejecuta en memoria unificada del SoC Apple. El repositorio ocupa 2,4 GB, lo que da una cota superior aproximada del espacio en disco necesario.
-- GPU recomendadas: no disponible; el requisito es un Mac con Apple Silicon y una build de ANERun que soporte `pplx-embed-v1-0.6b`.
-- Cabe en hardware de consumo: sí, en equipos Apple Silicon, al ejecutarse sobre el Neural Engine en lugar de una GPU dedicada.
-- Opciones de despliegue: ANERun (`anerun models install` y `anerun embed`); no se documentan vLLM, llama.cpp, Ollama ni TGI para este paquete Core ML.
-- Latencia y throughput: no disponibles.
-- Nota operativa: el instalador usa 2.048 tokens por defecto; para el contexto completo hay que pasar `--max-tokens 32768` tanto en la instalación como en tiempo de ejecución.
+- Hardware objetivo: Apple Silicon con Neural Engine (probado en un Mac mini M4 con 16 GiB de RAM).
+- VRAM estimada: no aplica; el modelo se ejecuta en el Neural Engine y la memoria unificada del sistema. El repositorio ocupa 2,4 GB.
+- GPU recomendadas: no aplica GPU dedicada; requiere chip M-series con ANE.
+- Cabe en hardware de consumo Apple: si, en Macs con chip M4 y presumiblemente en otras generaciones M-series con Neural Engine.
+- Opciones de despliegue: Core ML mediante ANERun (`anerun models install`, `anerun embed`); no se documentan vLLM, llama.cpp, Ollama ni TGI para esta variante.
+- Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Formato / despliegue | Licencia |
-|---|---|---|---|---|
-| pplx-embed-v1-0.6b-ane (esta ficha) | ~0,6 B | 32.768 tokens | Core ML / ANERun (Apple Silicon) | MIT |
-| perplexity-ai/pplx-embed-v1-0.6b (original) | ~0,6 B | no disponible en la información | Pesos originales (no especificado) | MIT (según la conversión) |
-| Alternativas de embeddings de ~0,6 B | no disponible | no disponible | no disponible | no disponible |
+| Modelo | Parametros | Contexto | Formato / hardware | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| pplx-embed-v1-0.6b-ane | ~0,6 B | 32.768 tokens | Core ML / Apple Neural Engine | MIT | Hugging Face (725 descargas) |
+| perplexity-ai/pplx-embed-v1-0.6b (original) | ~0,6 B | 32.768 tokens (segun model card original) | safetensors / GPU generica | no disponible en la informacion | Hugging Face |
+| Otros modelos de embeddings de ~0,6 B | no disponible | no disponible | no disponible | no disponible | no disponible |
 
-No se dispone de datos de rendimiento ni de especificaciones de modelos comparables en la información proporcionada, por lo que no es posible establecer una comparativa cuantitativa fiable.
+La comparativa se limita al modelo original y su conversion, ya que no se proporcionan datos de alternativas equivalentes en la informacion disponible.
 
 ## Limitaciones y advertencias
 
-- Es una conversión de terceros, no un modelo oficial de Perplexity AI; la fidelidad respecto al original depende del proceso de conversión y de la revisión indicada.
-- Depende de una build de ANERun que soporte explícitamente `pplx-embed-v1-0.6b`; sin ella el paquete no es utilizable.
-- La instalación requiere especificar el SHA de commit completo de 40 caracteres, lo que añade fricción operativa y obliga a fijar revisiones.
-- El contexto por defecto es de 2.048 tokens; usar los 32.768 completos exige configuración explícita y probablemente mayor consumo de memoria.
-- Solo produce embeddings: no genera texto, no soporta tool calling ni razonamiento multi-paso.
-- No se documentan idiomas soportados, sesgos conocidos ni tasas de alucinación (no aplica de forma directa a un encoder, pero sí la calidad de la recuperación).
-- Ejecución limitada al ecosistema Apple Silicon; no hay ruta documentada para NVIDIA, AMD o CPU genérica.
-- Licencia MIT permite uso comercial, pero conviene revisar el aviso de conversión (`NOTICE`) y la licencia del modelo base.
+- Es un artefacto de conversion, no un modelo entrenado de forma independiente; su calidad depende enteramente del modelo base de Perplexity AI.
+- La cuantizacion int8 introduce una desviacion minima pero no nula respecto al FP32 (similitud coseno minima de 0,998850).
+- El contexto por defecto en ANERun esta limitado a 2.048 tokens; para usar los 32.768 tokens hay que pasar `--max-tokens 32768` en la instalacion y en tiempo de ejecucion.
+- Requiere hardware Apple Silicon con Neural Engine y la herramienta ANERun; no es desplegable en GPU NVIDIA ni en entornos sin Core ML.
+- No se documentan los idiomas soportados oficialmente; las pruebas multilingues se limitan a coreano y Unicode mixto.
+- No se han publicado datos sobre sesgos, riesgo de alucinacion (no genera texto) ni limitaciones de contexto especificas mas alla del cap configurable.
+- La licencia MIT permite uso comercial, pero conviene verificar la licencia del modelo base original antes de redistribuir.
+- El modelo tiene 0 likes y 725 descargas, lo que indica una adopcion temprana y poca validacion por parte de la comunidad.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/junmo-k/pplx-embed-v1-0.6b-ane
 - Modelo base original: https://huggingface.co/perplexity-ai/pplx-embed-v1-0.6b
-- Revisión original convertida: https://huggingface.co/perplexity-ai/pplx-embed-v1-0.6b/tree/2c4d510dd4a732063c31a0f70193e35067b51fd8
-- ANERun: https://github.com/junmo-kim/ANERun
+- Revision original convertida: https://huggingface.co/perplexity-ai/pplx-embed-v1-0.6b/tree/2c4d510dd4a732063c31a0f70193e35067b51fd8
+- Herramienta ANERun: https://github.com/junmo-kim/ANERun
+- Licencia: https://huggingface.co/junmo-k/pplx-embed-v1-0.6b-ane/blob/main/LICENSE
+- Aviso de conversion: https://huggingface.co/junmo-k/pplx-embed-v1-0.6b-ane/blob/main/NOTICE

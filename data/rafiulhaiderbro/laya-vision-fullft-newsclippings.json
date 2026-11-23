@@ -1,0 +1,43 @@
+{
+  "schema": 2,
+  "id": "RafiulHaiderbro/laya-vision-fullft-newsclippings",
+  "slug": "rafiulhaiderbro-laya-vision-fullft-newsclippings",
+  "author": "RafiulHaiderbro",
+  "url": "https://huggingface.co/RafiulHaiderbro/laya-vision-fullft-newsclippings",
+  "created_at": "2026-11-23T03:37:40.000Z",
+  "updated_at": "2026-11-23T03:37:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "base_model:thaitea/laya-vision",
+    "base_model:finetune:thaitea/laya-vision",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 201161350,
+  "parameters_human": "201.2M",
+  "storage_bytes": 804696880,
+  "storage_human": "805 MB",
+  "context_length": null,
+  "base_model": "thaitea/laya-vision",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

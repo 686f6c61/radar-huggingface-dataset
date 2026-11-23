@@ -42,16 +42,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "GitHub - agentscope-ai/Piccolo: Piccolo: 4B, 9B and 27B decision models ...",
-      "url": "https://github.com/agentscope-ai/Piccolo",
-      "snippet": "English / 简体中文 · Launch blog 中文 · Model guide · Apache-2.0 Piccolo is a family of 4B, 9B and 27B decision models. Given a state, a question and candidate options, it returns structured decisions and candidate probabilities for tool review, context retention, data workflows and interactive environments."
-    },
-    {
-      "title": "agentscope-ai/Piccolo-4B · Hugging Face",
-      "url": "https://huggingface.co/agentscope-ai/Piccolo-4B",
-      "snippet": "Piccolo-4B Piccolo is a local decision model for structured judgments, including tool review and context compaction in QwenPaw. This repository contains the complete Hugging Face checkpoint of Piccolo-4B selected on October 28, 2026, including the auxiliary tensors referenced by its weight index."
-    }
-  ]
+  "sources": []
 }

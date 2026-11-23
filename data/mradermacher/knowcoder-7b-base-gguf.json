@@ -1,0 +1,48 @@
+{
+  "schema": 2,
+  "id": "mradermacher/KnowCoder-7B-base-GGUF",
+  "slug": "mradermacher-knowcoder-7b-base-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/KnowCoder-7B-base-GGUF",
+  "created_at": "2024-12-23T14:30:52.000Z",
+  "updated_at": "2026-11-23T03:12:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:golaxy/KnowCoder-7B-base",
+    "base_model:quantized:golaxy/KnowCoder-7B-base",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 142,
+  "trending_score": 0,
+  "parameters": 6738415616,
+  "parameters_human": "6.74B",
+  "storage_bytes": 59564792192,
+  "storage_human": "59.6 GB",
+  "context_length": 4096,
+  "base_model": "golaxy/KnowCoder-7B-base",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

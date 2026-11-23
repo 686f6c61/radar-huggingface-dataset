@@ -81,31 +81,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "tinyopsec/granite-4.2-3b-Heretic · Hugging Face",
-      "url": "https://huggingface.co/tinyopsec/granite-4.2-3b-Heretic",
-      "snippet": "Reproducibility The edited model was generated from the Granite 4.2 3B base model using a Heretic-style optimization workflow. For exact reproduction, record and publish:"
-    },
-    {
-      "title": "tinyopsec/granite-4.2-3b-Heretic-GGUF · Hugging Face",
-      "url": "https://huggingface.co/tinyopsec/granite-4.2-3b-Heretic-GGUF",
-      "snippet": "Instructions to use tinyopsec/granite-4.2-3b-Heretic-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
-    },
-    {
-      "title": "granite-4.2-3b-Heretic API & Inference Endpoint | FriendliAI",
-      "url": "https://friendli.ai/models/tinyopsec/granite-4.2-3b-Heretic",
-      "snippet": "Reproducibility The edited model was generated from the Granite 4.2 3B base model using a Heretic-style optimization workflow. For exact reproduction, record and publish:"
-    },
-    {
-      "title": "Granite 4.2 3b Heretic - AI Model Insights & Benchmarks",
-      "url": "https://free2aitools.com/model/tinyopsec/granite-4.2-3b-heretic",
-      "snippet": "Registry entry for model Granite 4.2 3b Heretic; source metadata pending."
-    },
-    {
-      "title": "Granite 4.2 3B Heretic by tinyopsec — VRAM 7.4GB, 128K context | LLM ...",
-      "url": "https://llm-explorer.com/model/tinyopsec%2Fgranite-4.2-3b-Heretic,5FrvyUnKYPi1PQoygNP8cR",
-      "snippet": "Rank the Granite 4.2 3B Heretic capabilities Have you tried this model? Rate its performance — this feedback helps the ML community find the right model for their needs."
-    }
-  ]
+  "sources": []
 }

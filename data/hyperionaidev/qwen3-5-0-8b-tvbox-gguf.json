@@ -48,16 +48,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "unsloth/Qwen3.5-0.8B-GGUF · Hugging Face",
-      "url": "https://huggingface.co/unsloth/Qwen3.5-0.8B-GGUF",
-      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
-    },
-    {
-      "title": "Qwen3.5 0.8b - GGUF Model - local-ai-zone.github.io",
-      "url": "https://local-ai-zone.github.io/models/qwen3-5-0-8b.html",
-      "snippet": "Download Qwen3.5 0.8b GGUF model. 1.68 GB, 326,046 downloads, 249 likes."
-    }
-  ]
+  "sources": []
 }

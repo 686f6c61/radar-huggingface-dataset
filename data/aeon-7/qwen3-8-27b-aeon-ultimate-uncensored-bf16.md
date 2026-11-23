@@ -2,94 +2,103 @@
 
 ## Resumen
 
-Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED-BF16 es un ajuste fino del modelo Qwen/Qwen3.8-27B publicado por el usuario AEON-7 bajo licencia Apache 2.0. Se trata de una variante "abliterated" (con las capas de rechazo eliminadas mediante manipulación de direcciones de activación) que conserva intactos el torreón de visión y la cabeza MTP nativa del modelo base. Con 27.781.427.952 parámetros en precisión BF16 y un repositorio de 55,6 GB, está pensado como maestro de precisión completa desde el que se derivan otras variantes cuantizadas (NVFP4-MIXED, MXFP4-MXFP6-ROCm).
+Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED-BF16 es un ajuste fino del modelo Qwen/Qwen3.8-27B publicado por el usuario AEON-7. Se trata de una versión "abliterated" (eliminación de rechazos) en precisión completa BF16, pensada como maestro de referencia a partir del cual se generan otras variantes cuantizadas del mismo autor (NVFP4-MIXED, MXFP4-MXFP6-ROCm). El modelo conserva sin modificar la torre de visión y la cabeza MTP (multi-token prediction) del modelo base.
 
-El modelo hereda del base Qwen3.8 una arquitectura híbrida con atención lineal (Gated DeltaNet, "GDN"), componentes tipo Mamba, atención híbrida, decodificación especulativa con cabeza MTP y capacidades multimodales (image-text-to-text). El autor lo posiciona como un "Early Access Draft": funciona correctamente en tareas ordinarias, pero en respuestas extremadamente largas pueden aparecer bucles y repeticiones por los huecos que deja la eliminación de las capas de rechazo.
+El modelo resuelve el problema de los rechazos excesivos en asistentes conversacionales: según el autor, se ha editado para mantener coherencia y mejorar las respuestas en lugar de minimizar la divergencia KL a costa de conservar negativas. Está orientado a cargas agénticas, generación de código, razonamiento con modo "thinking", tool calling y conversación multilingüe (inglés, chino y otros idiomas).
 
-Es relevante ahora porque combina el rendimiento de un modelo de 27B con contexto largo, tool calling, razonamiento y visión, en una versión sin filtros de rechazo, algo que interesa a desarrolladores que necesitan respuestas sin sermones en entornos controlados. No obstante, su estado de borrador y las advertencias del propio autor sobre degradación en contexto largo deben tenerse muy en cuenta antes de usarlo en producción.
+Por su tamaño (27.781 millones de parámetros reales según safetensors, repositorio de 55,6 GB en BF16) y su licencia Apache 2.0, se posiciona como una alternativa de precisión completa para despliegues en H200, configuraciones multi-GPU o RTX PRO 6000. La arquitectura declarada en las etiquetas es híbrida: atención lineal tipo Gated DeltaNet, componentes Mamba y decodificación especulativa con el drafter DFlash2 del mismo autor.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer híbrido con atención lineal (Gated DeltaNet), componentes Mamba, atención híbrida y cabeza MTP; multimodal (image-text-to-text) |
-| Parametros totales | 27.781.427.952 (27,78B) |
-| Parametros activos | no disponible (no se indica que sea MoE) |
-| Longitud de contexto | no disponible (etiquetado como long-context, sin cifra concreta) |
-| Tipos de cuantizacion | BF16 (este repo); variantes derivadas: NVFP4-MIXED (ModelOpt NVFP4 + FP8 + BF16), MXFP4-MXFP6 (AMD Quark, OCP MX) |
+| Arquitectura | Transformer híbrido con atención lineal Gated DeltaNet (GDN), componentes Mamba y cabeza MTP; multimodal (image-text-to-text) |
+| Parametros totales | 27.781.427.952 |
+| Parametros activos | no disponible (no se declara como MoE) |
+| Longitud de contexto | no disponible (la model card menciona "long-context" sin cifra) |
+| Tipos de cuantizacion | BF16 (este repositorio); NVFP4/FP8/BF16 en la variante NVFP4-MIXED; MXFP4/MXFP6/BF16 en la variante ROCm |
 | Idiomas soportados | en, zh, multilingual |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (BF16) |
+| Formato de pesos | safetensors (librería transformers) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base Qwen3.8-27B emplea una arquitectura híbrida que combina atención lineal del tipo Gated DeltaNet (GDN) con componentes Mamba y capas de atención estándar, lo que permite manejar contexto largo con menor coste computacional que un transformer denso puro. Incluye una cabeza MTP (Multi-Token Prediction) nativa que habilita decodificación especulativa, y un torreón de visión para entrada image-text-to-text. El ajuste de AEON-7 parte del checkpoint oficial Qwen3.8-27B y aplica técnicas de abliteración (abliterix) orientadas a eliminar las capas de rechazo manteniendo la coherencia, según declara el autor: "abliterated for coherence and better answers, not for a vanity KL of zero". El torreón de visión y la cabeza MTP no se modifican.
+El modelo base Qwen3.8-27B emplea una arquitectura híbrida que combina atención lineal Gated DeltaNet con capas tipo Mamba, además de una cabeza MTP (multi-token prediction) nativa y una torre de visión para entrada image-text-to-text. Las etiquetas del repositorio incluyen referencias a "hybrid-attention", "linear-attention", "gated-deltanet", "mamba" y "speculative-decoding", lo que confirma el diseño mixto orientado a contexto largo y eficiencia en inferencia. La model card indica que la torre de visión y la cabeza MTP son las del modelo base sin modificar.
 
-No se especifican en la información disponible el número de tokens de entrenamiento, la composición del dataset ni si hubo RLHF o DPO en el ajuste. El autor describe el proceso como una "primera pasada" por las capas de rechazo y anuncia una versión GA con una abliteración "más quirúrgica" que preserve la estructura instructiva. Se menciona también un drafter de decodificación especulativa (AEON DFlash2) entrenado específicamente para esta familia, con mejoras medidas de +21% en tok/s a T=0.6 y +35% a T=1.0 sobre el DFlash2 estándar en una DGX Spark, y 3,2× frente a no usar drafter, manteniendo la verificación de cada token por parte del modelo de 27B.
+El proceso de ajuste es una ablación de rechazos ("abliterated") realizada por AEON-7 sobre Qwen/Qwen3.8-27B. El autor describe explícitamente que no persigue KL cercano a cero, sino una "deriva KL coherente" que preserve la calidad de las respuestas; argumenta que minimizar ciegamente la KL mantiene el comportamiento de rechazo. No se detallan en la información disponible el número de tokens de entrenamiento, la composición del dataset ni si hubo RLHF o DPO adicionales. El autor también publica un drafter de decodificación especulativa (AEON DFlash2) entrenado específicamente para esta familia, que acelera la generación manteniendo verificación lossless por parte del modelo de 27B.
 
 ## Capacidades
 
-- Generación de texto conversacional e instructivo en inglés, chino y multilingüe.
-- Razonamiento con modo "thinking" (etiqueta thinking en los tags).
-- Generación de código y asistencia a programación (tags coding, instruct).
-- Capacidades multimodales de visión: entrada image-text-to-text mediante torreón de visión sin modificar.
-- Tool calling y function calling, con compatibilidad con endpoints estilo OpenAI (openai-compatible).
-- Comportamiento agéntico y razonamiento multi-paso (tags agentic, agentic workflows).
-- Contexto largo (long-context) gracias a la atención lineal GDN y componentes Mamba.
-- Decodificación especulativa mediante cabeza MTP nativa y drafter externo DFlash2.
-- Respuestas sin rechazo ni monólogo de seguridad (refusal-removed, uncensored), orientado a entornos donde se requiere cumplimiento directo.
-- Compatibilidad de despliegue con vLLM y transformers; tags específicos para DGX Spark (GB10), RTX 5090, RTX PRO 6000 y H200.
+- Generación de texto conversacional multi-turno en inglés, chino y otros idiomas.
+- Razonamiento con modo "thinking" explícito (etiqueta "reasoning", "thinking").
+- Generación de código y tareas de programación (etiquetas "coding", "instruct").
+- Tool calling y function calling, con soporte declarado para flujos agénticos.
+- Capacidades multimodales de visión: entrada image-text-to-text mediante torre de visión del modelo base.
+- Comportamiento sin rechazos ("refusal-removed", "uncensored", "unfiltered") para consultas que el modelo base rechazaría.
+- Compatibilidad con endpoints OpenAI ("openai-compatible", "endpoints_compatible").
+- Decodificación especulativa mediante el drafter AEON DFlash2 (lossless, verificado por el modelo principal).
+- Soporte de contexto largo (según etiqueta "long-context"; cifra no disponible).
 
 ## Casos de uso
 
-- **Asistencia conversacional sin filtros en entornos controlados**: el modelo mantiene conversaciones multi-turno con contexto largo y responde sin monólogos de seguridad, adecuado para prototipos internos donde el equipo asume la responsabilidad del contenido generado.
-- **Generación de código en pipelines de CI/CD**: gracias al soporte de tool calling y function calling y a su compatibilidad con endpoints OpenAI, puede integrarse en flujos automatizados de revisión, generación de tests o documentación técnica.
-- **Análisis de documentos e imágenes**: el torreón de visión permite procesar capturas, diagramas o documentos escaneados junto con texto, útil para extracción de información en herramientas internas.
-- **Razonamiento multi-paso y agentes autónomos**: la combinación de modo thinking, tool calling y contexto largo lo hace apto para agentes que planifican y ejecutan tareas encadenadas con verificación intermedia.
-- **Investigación sobre alineación y abliteración**: al ser un maestro BF16 de una variante abliterated, sirve como objeto de estudio para comparar comportamiento antes y después de eliminar capas de rechazo, y como base para derivar cuantizaciones.
-- **Despliegue en estaciones de trabajo con GPU de gran memoria**: pensado para H200, RTX PRO 6000 o configuraciones multi-GPU donde se quiere el maestro de precisión completa como teacher para destilación o generación de datos.
-- **Generación de datos sintéticos y evaluación interna**: su naturaleza sin filtros permite generar respuestas variadas para conjuntos de evaluación, con la advertencia de revisar la calidad en respuestas largas por riesgo de bucles.
+- Asistencia conversacional sin filtros en entornos de investigación: el modelo permite estudiar respuestas a preguntas sensibles sin que el sistema derive a negativas, útil para análisis de sesgos y evaluación de alineamiento.
+- Generación de código en producción: al soportar tool calling y function calling, puede integrarse en pipelines de CI/CD para autocompletar código, generar tests o revisar parches, con la ventaja de no bloquear solicitudes legítimas por filtros excesivos.
+- Agentes autónomos multi-paso: las etiquetas "agentic" y "tool-calling" indican idoneidad para orquestación de herramientas; el autor reporta una puntuación de 92 en trabajo agéntico en AEON Bench para la variante NVFP4-MIXED.
+- Procesamiento de documentos con imágenes: la torre de visión permite extraer información de capturas, diagramas o formularios combinados con texto, en flujos de digitalización o atención al cliente.
+- Razonamiento técnico y matemático con modo thinking: útil en asistentes de análisis donde se requiere traza de razonamiento explícita antes de la respuesta final.
+- Despliegue como maestro de destilación o referencia: al ser el BF16 completo del que derivan las variantes cuantizadas del autor, sirve para generar datos sintéticos o validar las versiones NVFP4 y MXFP4.
+- Investigación multilingüe en inglés y chino: adecuado para tareas de traducción, resumen o análisis de corpus en esos idiomas.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El autor únicamente reporta métricas de velocidad del drafter DFlash2 asociado (+21% tok/s a T=0.6, +35% a T=1.0 sobre el DFlash2 estándar en una DGX Spark, y 3,2× frente a no usar drafter), sin tablas de MMLU, HumanEval, GSM8K ni comparaciones de calidad con otros modelos.
+El autor publica resultados en AEON Bench (https://aeon-bench.com/#/board) leídos el 21 de noviembre de 2026, correspondientes a la variante NVFP4-MIXED de este mismo ajuste, no al BF16 aquí descrito:
+
+| Metrica | AEON NVFP4-MIXED | Qwen3.8-27B stock 4-bit (unsloth) |
+|---|---|---|
+| Inteligencia | 89 | 85 |
+| Trabajo agéntico | 92 | 78 |
+| Razonamiento | 77 | 86 |
+
+No se han publicado en la información disponible resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) para este repositorio BF16. El autor también reporta, para el drafter DFlash2 medido en un DGX Spark, +21 % de velocidad frente al DFlash2 estándar a temperatura 0,6, +35 % a temperatura 1,0 y 3,2× frente a no usar drafter.
 
 ## Requisitos de hardware
 
-- **VRAM estimada para BF16**: el repositorio ocupa 55,6 GB, por lo que la inferencia en BF16 requiere al menos ~56-60 GB de VRAM (pesos más caché KV y overhead).
-- **GPU recomendadas para este maestro BF16**: H200 (141 GB), RTX PRO 6000 (96 GB) o configuraciones multi-GPU. El autor menciona H200 y multi-GPU como destino del maestro.
-- **Consumer GPU**: no cabe en RTX 4090 (24 GB) ni en RTX 5090 (32 GB) en BF16. Para esas tarjetas el autor remite a la variante NVFP4-MIXED (~23 GB), que sí está pensada para DGX Spark, RTX 5090 y RTX PRO 6000.
-- **Opciones de despliegue**: vLLM (el autor publica recetas `aeon-vllm-ultimate:latest` para Spark y `aeon-vllm-ultimate-rtx:latest` para RTX en la tarjeta del modelo NVFP4-MIXED), transformers, y endpoints compatibles con OpenAI.
-- **Latencia y throughput**: no disponibles para este BF16; las únicas cifras publicadas son las del drafter DFlash2 en DGX Spark (ver sección de benchmarks).
+- VRAM estimada para BF16: aproximadamente 55,6 GB de pesos, más overhead de activaciones y caché KV; se recomienda al menos 80 GB de VRAM para inferencia cómoda.
+- GPU recomendadas según el autor: H200, configuraciones multi-GPU y RTX PRO 6000 para el maestro BF16.
+- No cabe en GPU de consumo en BF16; para RTX 5090 o DGX Spark el autor dirige a la variante NVFP4-MIXED (~23 GB).
+- Opciones de despliegue: vLLM (recetas del autor para `aeon-vllm-ultimate` y `aeon-vllm-ultimate-rtx`), transformers; compatible con endpoints OpenAI.
+- Decodificación especulativa: drafter AEON DFlash2 (~1,9 GB NVFP4 o ~3,85 GB BF16) verificado en DGX Spark/GB10 y en validación para RTX 5090.
+- Latencia y throughput: no disponibles para el BF16; el autor solo publica cifras relativas del drafter en DGX Spark.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED-BF16 | 27,78B | no disponible (long-context) | Apache 2.0 | Hugging Face, 55.256 descargas | Variante abliterated, estado Early Access Draft |
-| Qwen/Qwen3.8-27B (base) | 27B (no se detalla) | no disponible | Apache 2.0 | Hugging Face oficial | Modelo original con capas de rechazo intactas; referencia de calidad |
-| AEON NVFP4-MIXED (misma familia) | ~27B (cuantizado) | no disponible | Apache 2.0 | Hugging Face | ~23 GB, orientado a DGX Spark, RTX 5090 y RTX PRO 6000 |
-| AEON MXFP4-MXFP6-ROCm (misma familia) | ~27B (cuantizado) | no disponible | Apache 2.0 | Hugging Face (gated) | ~23,7 GB, para AMD ROCm (R9700, MI350/MI355) |
-
-No se dispone de datos de benchmarks que permitan comparar rendimiento con alternativas de otros desarrolladores; la comparativa se limita a la familia Qwen3.8 y sus derivados cuantizados.
+| AEON ULTIMATE BF16 (este) | 27,78 B | no disponible | Apache 2.0 | Hugging Face, abierto | BF16 sin rechazos, visión y MTP intactos |
+| Qwen/Qwen3.8-27B (base) | 27,78 B (presumible) | no disponible | Apache 2.0 (presumible) | Hugging Face | Modelo original con filtros de rechazo |
+| unsloth/Qwen3.8-27B-NVFP4 | 27,78 B (presumible) | no disponible | Apache 2.0 (presumible) | Hugging Face | Cuantización NVFP4 de referencia; 85 inteligencia / 78 agéntico en AEON Bench |
+| AEON NVFP4-MIXED (mismo autor) | 27,78 B (presumible) | no disponible | Apache 2.0 | Hugging Face | ~23 GB, orientado a DGX Spark, RTX 5090 y RTX PRO 6000 |
 
 ## Limitaciones y advertencias
 
-- **Estado de borrador**: el propio autor lo califica como "Early Access Draft", no GA. La abliteración es una primera pasada y puede degradar la coherencia en respuestas muy largas, con aparición de bucles y repeticiones.
-- **Riesgo de alucinación**: no se han publicado evaluaciones de fidelidad factual; al eliminar las capas de rechazo se pierde parte de la estructura que sostenía el razonamiento, lo que puede aumentar respuestas plausibles pero incorrectas.
-- **Sesgos**: no hay información sobre evaluación de sesgos; un modelo sin filtros de rechazo puede reproducir contenido sesgado o inapropiado sin advertencia.
-- **Contexto e idioma**: aunque se etiqueta como long-context, no se especifica la longitud exacta; los idiomas declarados son en, zh y multilingual, sin garantías de calidad en castellano.
-- **Licencia**: Apache 2.0 permite uso comercial, pero el autor advierte que no se debe hacer dequant-edit-requant sobre la retícula NVFP4 de las variantes derivadas; este BF16 es el maestro desde el que se generan.
-- **Producción**: no se recomienda su uso en producción sin validación propia, dado el estado de borrador y la ausencia de benchmarks de calidad publicados.
-- **Dependencia de hardware**: el BF16 no cabe en GPU de consumo; para RTX 5090 o DGX Spark hay que usar las variantes cuantizadas de la misma familia.
+- Modelo "uncensored": elimina rechazos de forma deliberada, por lo que puede producir contenido que el modelo base bloquearía; requiere políticas de uso y moderación externas en producción.
+- Riesgo de alucinación no cuantificado en la información disponible; el autor no publica tasas de error factual para el BF16.
+- El autor reporta que versiones previas mostraban bucles en solicitudes extremadamente largas; atribuye el problema a la configuración de servicio, no al ajuste, y remite a las recetas de la variante NVFP4-MIXED. No hay confirmación independiente.
+- Los benchmarks publicados corresponden a la variante NVFP4-MIXED, no al BF16; no deben extrapolarse sin verificación.
+- Idiomas declarados: inglés, chino y multilingüe sin listado completo; el rendimiento en castellano no está documentado.
+- Longitud de contexto no especificada en la información disponible.
+- La licencia Apache 2.0 permite uso comercial, pero el autor no ofrece garantías sobre el comportamiento del ajuste ni sobre reclamaciones derivadas del contenido generado.
+- El acceso a componentes auxiliares (drafter DFlash2, variante ROCm) está restringido a suscriptores de LotusMake, lo que limita la reproducibilidad completa del ecosistema.
 
 ## Enlaces
 
-- Hugging Face del modelo: https://huggingface.co/AEON-7/Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED-BF16
+- Repositorio Hugging Face: https://huggingface.co/AEON-7/Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED-BF16
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Variante NVFP4-MIXED: https://huggingface.co/AEON-7/Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED-NVFP4-MIXED
 - Variante MXFP4-MXFP6-ROCm: https://huggingface.co/AEON-7/Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED-MXFP4-MXFP6-ROCm
 - Drafter DFlash2: https://huggingface.co/AEON-7/AEON-DFlash2-Qwen3.8-27B
-- Acceso anticipado en LotusMake: https://lotusmake.com/c/aeon-forge
-- Soporte al autor: https://lotusmake.com/support
-- Papers referenciados en los tags: arxiv:2406.11717, arxiv:2503.00555
+- Cuantización de referencia unsloth: https://huggingface.co/unsloth/Qwen3.8-27B-NVFP4
+- AEON Bench: https://aeon-bench.com/#/board
+- LotusMake (acceso anticipado): https://lotusmake.com/c/aeon-forge
+- Paper referenciado (arxiv:2406.11717): https://arxiv.org/abs/2406.11717
+- Paper referenciado (arxiv:2503.00555): https://arxiv.org/abs/2503.00555

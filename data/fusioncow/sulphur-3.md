@@ -2,50 +2,50 @@
 
 ## Resumen
 
-Sulphur-3 es un fine-tune del modelo MiniMax-H3 publicado por el usuario FusionCow en Hugging Face. Se trata de un derivado directo (base_model: MiniMaxAI/MiniMax-H3) sobre el que se ha aplicado un ajuste adicional, aunque la ficha del repositorio no documenta la naturaleza exacta de ese fine-tune ni el dataset empleado. El repositorio tiene 276,5 GB de pesos, lo que sitúa al modelo en la liga de los modelos de gran escala, y acumula 1182 descargas y 691 likes desde su creación el 31 de octubre de 2026.
+Sulphur 3 es un modelo de generación de vídeo derivado de MiniMax H3, desarrollado por FusionCow como un fine-tune sin censura del modelo base de MiniMaxAI. Se distribuye como un checkpoint completo en formato safetensors (`s3.safetensors`) que se ejecuta con la librería `minimax-h3` y el ecosistema ComfyUI, e incluye variantes adicionales como una versión sin el LoRA de RL (`s3_raw`), una variante Ref2VA no entrenada y un fichero corrector opcional. El repositorio ocupa 276,5 GB, lo que refleja el tamaño de los pesos en precisión completa del modelo base.
 
-El interés principal de Sulphur-3 radica en ser una variante comunitaria de MiniMax-H3, un modelo de la familia MiniMax que la comunidad utiliza como base para experimentación. Al estar etiquetado con `minimax-h3` como librería y heredar la arquitectura del modelo original, conserva las capacidades del modelo base, pero el ajuste específico puede alterar el comportamiento en dominios concretos. La ausencia de documentación detallada en la model card limita la evaluación rigurosa de qué aporta exactamente frente al MiniMax-H3 original.
+El modelo resuelve la demanda de generación de vídeo sin los filtros de seguridad del modelo original, un nicho recurrente en la comunidad de modelos abiertos. Su relevancia actual radica en que parte de MiniMax H3, un modelo de vídeo de referencia, y ofrece una alternativa desbloqueada manteniendo la compatibilidad con el pipeline estándar de H3, además de incluir opciones cuantizadas para reducir los requisitos de VRAM.
 
-Es relevante ahora porque los fine-tunes comunitarios de modelos grandes permiten a desarrolladores e investigadores adaptar modelos de frontera a dominios específicos sin partir de cero. No obstante, el acceso está restringido (gated): es necesario aceptar condiciones en Hugging Face antes de descargar los pesos, y la licencia no está especificada en la información disponible, lo que condiciona su uso comercial.
+La información pública disponible es limitada: no se detallan la arquitectura interna, el número de parámetros, la longitud de contexto ni los idiomas soportados. La model card se centra en los ficheros distribuidos, el flujo de uso en ComfyUI y la licencia, sin publicar especificaciones técnicas ni resultados de benchmarks.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (hereda la de MiniMaxAI/MiniMax-H3) |
+| Arquitectura | no disponible (derivado de MiniMax H3, modelo de generación de vídeo) |
 | Parametros totales | no disponible |
 | Parametros activos | no disponible |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible |
+| Tipos de cuantizacion | versiones cuantizadas incluidas en `quantized/` (esquemas concretos no disponibles) |
 | Idiomas soportados | no disponible |
-| Licencia | no disponible |
-| Formato de pesos | no disponible (repo de 276,5 GB, probablemente safetensors) |
+| Licencia | minimax-h3-community-license |
+| Formato de pesos | safetensors (`s3.safetensors`, `s3_raw.safetensors`, `s3_ref2va.safetensors`, `s3_raw_lora.safetensors`, `s3_corrector.safetensors`) |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información sobre la arquitectura interna de Sulphur-3 más allá de que deriva del modelo MiniMaxAI/MiniMax-H3, según las etiquetas del repositorio (`base_model:MiniMaxAI/MiniMax-H3`, `base_model:finetune:MiniMaxAI/MiniMax-H3`). La librería declarada es `minimax-h3`, lo que indica que el modelo se carga con el stack específico de MiniMax. El tamaño del repositorio (276,5 GB) es coherente con pesos en precisión completa o bfloat16 de un modelo de gran escala, pero no se especifica el número de parámetros ni si se trata de una arquitectura densa o MoE.
+Sulphur 3 es un fine-tune del modelo MiniMax H3, un modelo de generación de vídeo. La model card no describe la arquitectura interna (tipo de transformer, mecanismo de atención, compresión temporal o arquitectura del autoencoder de vídeo), por lo que no es posible detallar sus componentes. El checkpoint principal `s3.safetensors` incorpora un LoRA de RL aplicado sobre el modelo base; la variante `s3_raw.safetensors` corresponde al modelo sin ese LoRA, y `s3_raw_lora.safetensors` expone ese mismo ajuste como LoRA independiente.
 
-Tampoco se documentan los datos de entrenamiento del fine-tune: no hay información sobre el número de tokens, la composición del dataset, ni si se emplearon técnicas de RLHF, DPO o SFT. No se han publicado innovaciones técnicas específicas de este derivado en la información proporcionada. Cualquier afirmación sobre el proceso de ajuste sería especulativa y, por tanto, se omite.
+No se especifican en la información disponible el volumen de datos de entrenamiento, la composición del dataset, ni si se emplearon técnicas de RLHF o DPO más allá de la mención al "RL lora". Tampoco se detalla el proceso de eliminación de censura ni las técnicas de alineación aplicadas. El autor incluye un fichero corrector opcional (`s3_corrector.safetensors`) con nodos y workflow de ComfyUI (`S3_ComfyUI.zip`) que, según la model card, también funciona con otros modelos H3, lo que sugiere un mecanismo de post-procesado o corrección de la salida del modelo de vídeo.
 
 ## Capacidades
 
-- Generación de texto y razonamiento: heredadas del modelo base MiniMax-H3, aunque no se detallan en la información disponible.
-- Capacidades multilingües: no disponibles en la ficha del repositorio.
-- Tool calling / function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades especiales (modo thinking, visión, audio): no disponible.
-- Código y matemáticas: no disponible.
-
-No se puede confirmar ninguna capacidad concreta más allá de la generación de texto propia de un modelo de lenguaje, dado que la model card no incluye detalles funcionales.
+- Generación de vídeo a partir de prompts de texto, heredando el pipeline de MiniMax H3.
+- Variante Ref2VA (`s3_ref2va.safetensors`) para generación condicionada por referencia, aunque según el autor no ha sido entrenada.
+- Funcionamiento sin censura: el modelo no aplica los filtros de contenido del modelo base.
+- Integración con ComfyUI mediante nodos y workflow proporcionados para el corrector opcional.
+- Compatibilidad con el ecosistema de la librería `minimax-h3` y con otros checkpoints derivados (el autor recomienda los merges de TenStrip).
+- Soporte de cuantización para reducir requisitos de VRAM (`quantized/`).
+- No se documentan capacidades de tool calling, agentes, razonamiento multi-paso ni multilingüismo.
 
 ## Casos de uso
 
-- Experimentación con fine-tunes comunitarios: investigadores que quieran comparar el comportamiento de Sulphur-3 frente a MiniMax-H3 original en tareas de generación de texto, aprovechando que comparten base y facilitan el análisis diferencial.
-- Investigación sobre adaptación de dominio: si el fine-tune se orientó a un dominio concreto (no documentado), podría emplearse como punto de partida para estudiar cómo el ajuste comunitario modifica las respuestas del modelo base.
-- Evaluación de robustez y sesgos: al ser un derivado no oficial, resulta útil para auditar cómo los fine-tunes comunitarios pueden introducir o amplificar sesgos respecto al modelo original.
-- Reproducción de experimentos: con 1182 descargas, el modelo puede servir para replicar resultados de la comunidad que lo ha adoptado, siempre que se acepten las condiciones de acceso.
-- Desarrollo de pipelines de inferencia a gran escala: el tamaño del repo (276,5 GB) exige infraestructura con GPUs de alta memoria; encaja en entornos de investigación con A100/H100 para pruebas de despliegue con vLLM o TGI, si el stack `minimax-h3` lo permite.
-- Base para nuevos fine-tunes: al ser un modelo ya ajustado, puede emplearse como punto de partida para adaptaciones posteriores, aunque la licencia no especificada introduce incertidumbre legal.
+- Producción de vídeo creativo sin restricciones de contenido: el modelo permite generar clips a partir de prompts que el modelo base rechazaría, útil en proyectos artísticos o de ficción que requieren libertad expresiva.
+- Prototipado rápido en ComfyUI: el workflow incluido en `S3_ComfyUI.zip` permite montar un pipeline de generación de vídeo con el corrector opcional sin desarrollo adicional.
+- Investigación sobre alineación y censura: comparar `s3.safetensors` (con LoRA de RL) frente a `s3_raw.safetensors` permite estudiar el efecto del ajuste por refuerzo en el comportamiento del modelo.
+- Fine-tuning posterior: `s3_raw_lora.safetensors` facilita aplicar el ajuste como LoRA sobre otros derivados de H3, útil para experimentación con merges.
+- Despliegue en hardware limitado: las versiones de `quantized/` permiten ejecutar el modelo en GPUs con menos VRAM que las necesarias para los pesos completos.
+- Generación condicionada por referencia: la variante Ref2VA, aunque no entrenada, sirve como base para experimentos de image-to-video o reference-to-video.
+- Evaluación de modelos de vídeo abiertos: al estar bajo la licencia comunitaria de MiniMax H3, puede emplearse en estudios comparativos de calidad y sesgo en generación de vídeo.
 
 ## Benchmarks y rendimiento
 
@@ -53,34 +53,38 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible con precisión; el repo de 276,5 GB sugiere que los pesos en bfloat16 requieren del orden de 270 GB de VRAM, lo que implica múltiples GPUs de 80 GB (A100/H100) o cuantización agresiva.
-- GPU recomendadas: A100 80 GB, H100 80 GB en configuraciones multi-GPU; no se confirma compatibilidad con RTX 4090 (24 GB) sin cuantización extrema no documentada.
-- ¿Cabe en consumer GPU?: no disponible; con 276,5 GB de pesos, no es viable en una sola GPU de consumo sin cuantización no especificada.
-- Opciones de despliegue: la librería declarada es `minimax-h3`; no se confirma soporte de vLLM, llama.cpp, Ollama o TGI.
+- El repositorio completo ocupa 276,5 GB, lo que da una idea del tamaño de los pesos en precisión completa; la VRAM necesaria para inferencia no está especificada.
+- Las versiones de `quantized/` reducen los requisitos, pero no se detallan los niveles de cuantización ni la VRAM resultante.
+- GPU recomendadas: no disponible.
+- Compatibilidad con GPU de consumo: no disponible; dependerá de la variante cuantizada utilizada.
+- Despliegue: librería `minimax-h3` y ComfyUI (con nodos y workflow para el corrector). No se mencionan vLLM, llama.cpp, Ollama ni TGI.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Acceso | Notas |
-|---|---|---|---|---|---|
-| Sulphur-3 | no disponible | no disponible | no disponible | Gated | Fine-tune comunitario de MiniMax-H3 |
-| MiniMaxAI/MiniMax-H3 | no disponible | no disponible | no disponible | no disponible | Modelo base original |
-| Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | No se dispone de datos comparables |
+| Modelo | Base | Tipo | Licencia | Disponibilidad |
+|---|---|---|---|---|
+| Sulphur 3 | MiniMax H3 | Fine-tune sin censura, generación de vídeo | minimax-h3-community-license | Hugging Face (FusionCow/Sulphur-3) |
+| MiniMax H3 | — | Modelo base de generación de vídeo | minimax-h3-community-license | Hugging Face (MiniMaxAI/MiniMax-H3) |
+| Merges de TenStrip | MiniMax H3 | Merges comunitarios que incluyen Sulphur | no disponible | Hugging Face (TenStrip) |
 
-No se dispone de información suficiente para establecer una comparativa cuantitativa con alternativas de la misma categoría.
+No se dispone de datos de parámetros, contexto ni rendimiento de estos modelos en la información proporcionada, por lo que la comparación cuantitativa no es posible.
 
 ## Limitaciones y advertencias
 
-- Licencia no especificada: no se puede confirmar si el uso comercial está permitido; es imprescindible verificar las condiciones del modelo base MiniMax-H3 y del repositorio antes de usarlo en producción.
-- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face, lo que puede limitar la automatización de descargas y la reproducibilidad.
-- Documentación inexistente: la model card no detalla datos de entrenamiento, arquitectura, idiomas ni capacidades, lo que impide una evaluación rigurosa.
-- Riesgo de alucinación: inherente a los modelos de lenguaje; no hay información específica sobre mitigaciones en este fine-tune.
-- Sesgos conocidos: no documentados; al ser un fine-tune comunitario, podría amplificar sesgos del modelo base o introducir nuevos.
-- Limitaciones de contexto e idioma: no disponibles.
-- Caveat para producción: al no ser un modelo oficial y carecer de benchmarks publicados, no se recomienda su uso en entornos críticos sin una evaluación propia exhaustiva.
+- Modelo sin censura: puede generar contenido violento, sexual o otherwise sensible; no es adecuado para aplicaciones de producción dirigidas al público general sin moderación adicional.
+- Riesgo de alucinación y artefactos visuales inherente a los modelos de generación de vídeo; no se han publicado evaluaciones de calidad.
+- No se documentan sesgos conocidos ni la composición del dataset de entrenamiento, lo que dificulta evaluar riesgos de representación.
+- Idiomas soportados no disponibles; el comportamiento multilingüe de los prompts es incierto.
+- La licencia `minimax-h3-community-license` es una licencia "other" con términos específicos; es imprescindible revisar `LICENSE` antes de cualquier uso comercial, ya que puede imponer restricciones adicionales a las de una licencia open source estándar.
+- La variante Ref2VA no está entrenada según el autor, por lo que su uso en producción no está recomendado.
+- El corrector es opcional y su efecto sobre la calidad no está cuantificado.
+- El tamaño del repositorio (276,5 GB) y la falta de especificaciones de VRAM dificultan planificar el despliegue sin pruebas previas.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/FusionCow/Sulphur-3
+- Modelo en Hugging Face: https://huggingface.co/FusionCow/Sulphur-3
 - Modelo base: https://huggingface.co/MiniMaxAI/MiniMax-H3
-- No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información proporcionada.
+- Perfil del autor en X: https://x.com/FusionCow11
+- Discord del autor: https://discord.gg/C3d56f39Ah
+- Merges recomendados por el autor (TenStrip): https://huggingface.co/TenStrip

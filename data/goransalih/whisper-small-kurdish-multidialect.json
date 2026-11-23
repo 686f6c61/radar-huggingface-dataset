@@ -1,0 +1,41 @@
+{
+  "schema": 2,
+  "id": "GoranSALIH/whisper-small-kurdish-multidialect",
+  "slug": "goransalih-whisper-small-kurdish-multidialect",
+  "author": "GoranSALIH",
+  "url": "https://huggingface.co/GoranSALIH/whisper-small-kurdish-multidialect",
+  "created_at": "2026-11-22T00:40:01.000Z",
+  "updated_at": "2026-11-23T02:11:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "whisper",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 4,
+  "trending_score": 0,
+  "parameters": 241740288,
+  "parameters_human": "241.7M",
+  "storage_bytes": 99620777203,
+  "storage_human": "99.6 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

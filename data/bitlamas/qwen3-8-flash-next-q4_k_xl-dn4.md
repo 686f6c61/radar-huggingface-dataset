@@ -2,94 +2,117 @@
 
 ## Resumen
 
-Qwen3.8-Flash-Next es un modelo de lenguaje experimental de Qwen con arquitectura MoE: un modelo principal de 125.000 millones de parámetros complementado con 51.000 millones de embeddings n-gram, activando 6.000 millones de parámetros por token. Esta ficha cubre la cuantización GGUF Q4_K_XL-DN4 creada por bitlamas, que modifica la cuantización UD-Q4_K_XL de unsloth para reducir el tamaño de 111,3 GB a 102,5 GB, sustituyendo las proyecciones down de los 48 expertos de Q5_1 a IQ4_NL. El objetivo es ejecutar el modelo en hardware con memoria unificada limitada, como el AMD Strix Halo de 128 GB, manteniendo una calidad casi idéntica (perplejidad 2,9165 frente a 2,9117). El modelo admite un contexto de 262.144 tokens y está diseñado para su uso con llama.cpp en Vulkan, con soporte de decodificación especulativa mediante un draft head MTP y un drafter n-gram. Es relevante para quienes necesitan modelos grandes de codificación y oficina en entornos locales con restricciones de memoria.
+Qwen3.8-Flash-Next es un modelo de lenguaje de gran escala desarrollado por el equipo Qwen (Alibaba). Esta ficha documenta la cuantización GGUF publicada por el usuario bitlamas bajo el identificador `bitlamas/Qwen3.8-Flash-Next-Q4_K_XL-DN4`, una versión optimizada específicamente para ejecutarse íntegramente en GPU en equipos AMD Strix Halo (Ryzen AI MAX+ 395 con Radeon 8060S) de 128 GB bajo Windows mediante Vulkan y memoria unificada.
+
+La cuantización parte del archivo UD-Q4_K_XL de unsloth (111,3 GB) y aplica una única modificación: las 48 proyecciones descendentes de expertos (`ffn_down_exps`) pasan de Q5_1 a IQ4_NL, reduciendo el tamaño a 102,5 GB. El objetivo es que el transformer completo quepa en los aproximadamente 80 GiB que un proceso puede reservar en la GPU con asignación dinámica de memoria compartida, manteniendo 262.144 tokens de contexto.
+
+El modelo base cuenta con 176.943.899.520 parámetros según los pesos en safetensors, lo que lo sitúa en la categoría de modelos densos de gran tamaño con arquitectura de atención híbrida (atención estándar más atención lineal y hyper-connections, según los tags y la model card). La relevancia actual radica en demostrar que es posible servir un modelo de esta magnitud con contexto largo en hardware de consumo de gama alta, sin recurrir a múltiples GPU ni a servidores dedicados.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer MoE con atención lineal, hyper-connections, expertos compartidos y tabla n-gram por capas (modelo base Qwen3.8-Flash-Next) |
-| Parametros totales | 176.943.899.520 (≈176,9 mil millones) |
-| Parametros activos | 6.000 millones (activados por token) |
-| Longitud de contexto | 262.144 tokens |
-| Tipos de cuantizacion | Q4_K_XL con proyecciones down en IQ4_NL (este archivo); variantes de referencia: UD-Q4_K_XL, UD-IQ4_XS, Q4_K_M (draft head) |
+| Arquitectura | Transformer con atención híbrida (atención estándar + atención lineal + hyper-connections), según tags del repo |
+| Parametros totales | 176.943.899.520 (dato de safetensors del modelo base) |
+| Parametros activos | no disponible (no se indica que sea MoE en la información disponible; la referencia a "expertos" en las proyecciones sugiere componente MoE, pero no se confirma) |
+| Longitud de contexto | 262.144 tokens (configurado en el comando de ejemplo) |
+| Tipos de cuantizacion | GGUF Q4_K_XL-IQ4NL (mezcla Q8_0 / Q4_K / Q4_K / IQ4_NL); tabla de n-gramas en IQ4_NL |
 | Idiomas soportados | no disponible |
-| Licencia | qwen-community-1.0 |
-| Formato de pesos | GGUF (llama.cpp) |
+| Licencia | qwen-community-1.0 (licencia "other" en Hugging Face) |
+| Formato de pesos | GGUF (4 shards), más cabeza MTP separada en GGUF |
+| Tamano del repo | 204,9 GB |
+| Tamano del archivo cuantizado | 102,5 GB (Q4_K_XL-IQ4NL) |
+| Tabla de n-gramas | 28,8 GB (IQ4_NL), en RAM del sistema |
+| Cabeza MTP (draft) | 2,79 GB (no compartida) o 1,91 GB (compartida, solo builds de unsloth) |
+| Libreria | llama.cpp |
 
 ## Arquitectura y entrenamiento
 
-El modelo base Qwen3.8-Flash-Next, según el repositorio de QwenLM, combina un modelo principal de 125.000 millones de parámetros con 51.000 millones de embeddings n-gram, activando 6.000 millones de parámetros por token. La arquitectura incluye atención lineal, hyper-connections y un experto compartido, además de una tabla n-gram por capas que ocupa 28,8 GB en la cuantización. Según la descripción oficial, el entrenamiento requiere aproximadamente una novena parte del coste de Qwen3.7-Plus y ofrece capacidades superiores en tareas de codificación y oficina. No se han proporcionado detalles sobre la composición del dataset, el número de tokens de entrenamiento ni si se aplicó RLHF o DPO.
+La información disponible no detalla la composición del dataset de entrenamiento, el número de tokens ni si hubo fases de RLHF o DPO. Lo que sí se documenta con precisión es la arquitectura de cuantización: el modelo base presenta atención estándar combinada con atención lineal y hyper-connections, además de un experto compartido y proyecciones de expertos (`ffn_down_exps`, `gate`, `up`). La presencia de una tabla de n-gramas de 28,8 GB tratada por llama.cpp como lookup de capa de entrada sugiere un componente de memoria asociativa o n-gramas integrado en el modelo, poco habitual en transformers convencionales.
 
-La cuantización Q4_K_XL-DN4 parte de la versión UD-Q4_K_XL de unsloth y aplica un cambio: las proyecciones down de los 48 expertos se convierten de Q5_1 a IQ4_NL. La justificación técnica es que estas proyecciones tienen un ancho de 640 valores, que no es múltiplo de 256, por lo que los K-quants o I-quants con bloques de 256 no pueden aplicarse. IQ4_NL, de la familia de 32 bloques a 4,5 bits, permite reducir 8,9 GB sin alterar el resto de tensores. El autor también probó a requantizar con la matriz de importancia publicada por unsloth y no encontró diferencias significativas (KL divergencia 0,0282 sin imatrix frente a 0,0277 con imatrix), por lo que se descartó esa versión.
+La innovación técnica principal de esta publicación es la decisión de cuantizar únicamente las proyecciones descendentes de expertos a IQ4_NL. El razonamiento es concreto: `ffn_down_exps` tiene 640 valores de ancho, que no es múltiplo de 256, por lo que ningún cuantizador K o I de bloque 256 puede aplicarse. Las opciones de bloque 32 son Q5_1 e IQ4_NL, y esta última ahorra 8,9 GB. El autor reporta que la perplejidad resultante (2,9092 ± 0,0362 en wikitext-2) es estadísticamente equivalente a la referencia UD-Q4_K_XL (2,9167 ± 0,0365), con una divergencia KL de 0,0304 y un 94,40 % de coincidencia en el token más probable. El error cuadrático ponderado por imatrix de las 48 proyecciones descendentes frente a los originales BF16 es de 0,00490.
 
 ## Capacidades
 
-- Generación de texto y razonamiento: modelo de lenguaje autoregresivo con capacidad de procesar y generar texto en contextos largos.
-- Codificación y tareas de oficina: según la descripción oficial del modelo base, ofrece capacidades superiores a Qwen3.7-Plus en coding y office tasks.
-- Contexto largo de 262.144 tokens: permite procesar documentos extensos o múltiples fragmentos en una sola pasada.
-- Decodificación especulativa: soporta un draft head MTP (multi-token prediction) y un drafter n-gram, que aceleran la generación en texto nuevo y la edición de texto existente.
-- Ejecución local en hardware con memoria unificada: optimizado para ejecutarse con llama.cpp sobre Vulkan en sistemas como AMD Strix Halo, manteniendo todo el transformer en GPU.
-- Compatibilidad con endpoints: el modelo está etiquetado como `endpoints_compatible` y `conversational`, lo que permite desplegarlo como servicio de chat.
+- Generación de texto conversacional multi-turno, con pipeline declarado `text-generation` y tag `conversational`.
+- Contexto largo: soporta hasta 262.144 tokens en la configuración documentada, adecuado para documentos extensos y conversaciones prolongadas.
+- Decodificación especulativa mediante cabeza MTP (Multi-Token Prediction) exportada por unsloth, con `--spec-type draft-mtp`, que aporta aproximadamente un 50 % de velocidad en texto nuevo.
+- Borrador n-grama (`ngram-mod`) que añade aproximadamente un 13 % de velocidad en tareas de edición.
+- Soporte de visión mediante el proyector `mmproj` de unsloth, ejecutable en CPU con `--no-mmproj-offload`.
+- Compatibilidad con plantillas Jinja (`--jinja`), lo que habilita tool calling y function calling en el servidor llama.cpp.
+- Compatibilidad con endpoints (tag `endpoints_compatible`), lo que facilita su integración en infraestructuras de inferencia existentes.
+- Capacidades multilingües: no disponibles en la información proporcionada.
+- Modo de razonamiento o "thinking": no disponible en la información proporcionada.
 
 ## Casos de uso
 
-- Asistente de código en local: gracias a su capacidad de codificación y a la cuantización de 4 bits, puede ejecutarse en una estación de trabajo con 128 GB de RAM unificada, integrándose en un IDE o en un pipeline de CI/CD para revisión y generación de código.
-- Procesamiento de documentos extensos: con 262.144 tokens de contexto, puede analizar informes, contratos o libros completos sin dividir el texto, útil en el sector legal o editorial.
-- Tareas de oficina y productividad: según el desarrollador, supera a Qwen3.7-Plus en tareas de oficina; puede redactar correos, resúmenes y reportes en un entorno local.
-- Servicio de chat conversacional: el modelo está etiquetado como conversacional y compatible con endpoints; puede desplegarse con llama-server para chatbots internos.
-- Edición y reescritura de texto: el n-gram drafter acelera las ediciones sobre texto existente, lo que lo hace adecuado para herramientas de reescritura o corrección de estilo.
-- Investigación en cuantización de modelos MoE: la modificación de las proyecciones down a IQ4_NL demuestra cómo reducir el tamaño de archivo sin pérdida significativa; sirve como referencia para optimizar cuantizaciones en modelos con expertos.
-- RAG con contexto muy largo: la ventana de 262.144 tokens permite incluir numerosos fragmentos de documentos en el prompt, mejorando la precisión de sistemas de recuperación aumentada en dominios especializados.
+- Asistente conversacional de contexto largo en estación de trabajo local: con 262.144 tokens de ventana, el modelo puede mantener conversaciones sobre repositorios completos o documentación extensa sin truncar, ejecutándose íntegramente en la GPU de un equipo Strix Halo de 128 GB.
+- Análisis de documentación técnica y legal: la ventana de contexto permite ingerir contratos, especificaciones o manuales completos y formular preguntas cruzadas entre secciones, con la ventaja de que los datos no salen del equipo.
+- Generación y revisión de código en local: la compatibilidad con `--jinja` y el formato de chat permiten integrarlo en editores o pipelines mediante la API compatible con OpenAI de `llama-server`, sin depender de servicios en la nube.
+- Procesamiento por lotes de textos largos: la decodificación especulativa con MTP (28,4 tok/s por debajo de 25k de contexto, 20,1 tok/s entre 25k y 50k, 17,0 tok/s entre 50k y 100k) hace viable el resumen y la extracción de información en corpus de tamaño medio en hardware de sobremesa.
+- Evaluación e investigación de cuantizaciones: el repositorio incluye logs crudos de perplejidad, KLD y error de proyecciones, lo que lo convierte en una referencia útil para estudiar el impacto de IQ4_NL frente a Q5_1 en modelos grandes.
+- Prototipado de agentes con herramientas: la combinación de contexto largo, tool calling vía plantilla Jinja y servidor local permite construir agentes multi-paso que consultan APIs o bases de datos sin coste por token.
+- Transcripción y razonamiento sobre imágenes: con el proyector `mmproj` de unsloth, se pueden procesar capturas, diagramas o documentos escaneados junto con texto largo en la misma sesión.
 
 ## Benchmarks y rendimiento
 
-Se han publicado mediciones de calidad de cuantización sobre wikitext-2 (24 bloques de 2048 tokens, con `-b 2048 -ub 1024 -fa on`), comparando este archivo con las variantes de unsloth:
+Los datos publicados por el autor se centran en métricas de calidad de cuantización y velocidad de inferencia, no en benchmarks estándar de capacidad (MMLU, HumanEval, GSM8K). No se han publicado resultados de benchmarks de capacidad en la información disponible.
 
-| Variante | Tamaño | Perplejidad (wikitext-2) | KL divergencia vs UD-Q4_K_XL | Mismo top-1 |
-|---|---|---|---|---|
-| unsloth UD-Q4_K_XL | 111,3 GB | 2,9117 ± 0,0363 | referencia | referencia |
-| este archivo (Q4_K_XL-DN4) | 102,5 GB | 2,9165 ± 0,0363 | 0,028 ± 0,001 | 94,5 % |
-| unsloth UD-IQ4_XS | 93,7 GB | 2,998 ± 0,037 | 0,089 | 90,75 % |
+| Metrica | UD-Q4_K_XL (referencia) | Q4_K_XL-IQ4NL (este repo) | UD-IQ4_XS |
+|---|---|---|---|
+| Tamano | 111,3 GB | 102,5 GB | 93,7 GB |
+| Mezcla (other / gate / up / down) | Q8_0 / Q4_K / Q4_K / Q5_1 | Q8_0 / Q4_K / Q4_K / IQ4_NL | no disponible |
+| Perplejidad (wikitext-2) | 2,9167 ± 0,0365 | 2,9092 ± 0,0362 | 2,998 ± 0,038 |
+| KLD vs UD-Q4_K_XL | — | 0,0304 | 0,089 |
+| Coincidencia de token superior | — | 94,40 % | 90,75 % |
+| Error de proyecciones down vs BF16 | — | 0,00490 | no disponible |
 
-También se evaluó el efecto de la matriz de importancia en la requantización de las proyecciones down:
-
-| Downs requantizados | KL divergencia vs UD-Q4_K_XL | Mismo top-1 |
-|---|---|---|
-| sin imatrix (este archivo) | 0,0282 ± 0,0007 | 94,50 % |
-| con imatrix | 0,0277 ± 0,0007 | 94,60 % |
-
-No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible. La comparación con Qwen3.7-Plus en el repositorio oficial es cualitativa y no incluye cifras.
+| Metrica de velocidad (b11160-mix, int8 coopmat off) | Valor |
+|---|---|
+| Decodificación mediana, contexto < 25k | 28,4 tok/s |
+| Decodificación mediana, contexto 25k–50k | 20,1 tok/s |
+| Decodificación mediana, contexto 50k–100k | 17,0 tok/s |
+| Aceleración con MTP draft | ~50 % en texto nuevo |
+| Aceleración con borrador n-grama | ~13 % en ediciones |
 
 ## Requisitos de hardware
 
-- VRAM estimada: el archivo GGUF pesa 102,5 GB. En la máquina de referencia (AMD Strix Halo con 128 GB unificados y shared memory a 124 GB), el modelo con KV cache q4_0 y draft head Q4_K_M ocupa entre 77,9 y 78,5 GiB en GPU para un contexto de 262.144 tokens.
-- GPU recomendadas: una GPU dedicada con al menos 80 GB de VRAM (por ejemplo, H100 80GB o A100 80GB) podría alojar el modelo con contexto reducido o moviendo capas de expertos a CPU. En GPUs de consumo (RTX 4090 24GB) no cabe.
-- Opciones de despliegue: llama.cpp (llama-server) con Vulkan, usando `-ngl 99`, `-fa on`, `-ctk q4_0 -ctv q4_0`, `-ub 512`, `-lm mmap --lazy-mode on`. El formato GGUF permite su uso con otros frontends de llama.cpp, aunque no se ha probado explícitamente con Ollama o similares.
-- Latencia y throughput: el draft head MTP aporta alrededor de un 50 % más de velocidad en texto nuevo; el n-gram drafter aporta alrededor de un 13 % en ediciones. No se proporcionan valores absolutos de tokens por segundo.
+- VRAM estimada: 78,3–78,6 GiB en GPU con el comando documentado en mainline `b11681`; 78,2 GiB en `b11160-mix` con la cabeza compartida. Requiere asignación dinámica de memoria con el slider de memoria compartida al máximo de 124 GB en Windows.
+- GPU recomendada: AMD Radeon 8060S integrada en Ryzen AI MAX+ 395 (Strix Halo) con 128 GB de memoria unificada. Es el hardware objetivo explícito del autor.
+- No cabe en GPU de consumo convencionales (RTX 4090 de 24 GB, RTX 5090 de 32 GB) sin volcar capas a CPU o paginar, lo que degradaría gravemente el rendimiento.
+- Despliegue: llama.cpp (`llama-server`), con soporte de Vulkan en Windows. El autor cita mainline `b11681` y `b11160-mix`; la cabeza MTP compartida solo funciona en builds de unsloth.
+- Memoria del sistema: la tabla de n-gramas de 28,8 GB permanece en RAM del sistema y se transmite desde el archivo con `-lm mmap --lazy-mode on`; `mlock` no puede fijar una región de ese tamaño en Windows.
+- Ajuste fino de memoria: si el arranque falla, `-ub 256` libera aproximadamente 2,2 GiB.
+- Latencia y throughput: decodificación mediana de 28,4 / 20,1 / 17,0 tok/s según tramos de contexto (ver tabla anterior).
+- Nota sobre calidad de prompt: los builds posteriores a `b11160` leen el prompt mediante una matmul int8 en esta GPU (PR #27952), lo que eleva el KLD de 0,030 a 0,038; la generación no se ve afectada.
 
 ## Comparativa con modelos similares
 
-Las alternativas más directas son las otras cuantizaciones del mismo modelo base, todas con la misma licencia y disponibles en Hugging Face:
+| Modelo | Parametros | Contexto | Tamano GGUF | Perplejidad (wikitext-2) | Licencia | Disponibilidad |
+|---|---|---|---|---|---|---|
+| Q4_K_XL-IQ4NL (este repo) | 176,9 B (base) | 262.144 | 102,5 GB | 2,9092 ± 0,0362 | qwen-community-1.0 | Hugging Face (bitlamas) |
+| UD-Q4_K_XL (unsloth) | 176,9 B (base) | 262.144 (configurable) | 111,3 GB | 2,9167 ± 0,0365 | qwen-community-1.0 | Hugging Face (unsloth) |
+| UD-IQ4_XS (unsloth) | 176,9 B (base) | 262.144 (configurable) | 93,7 GB | 2,998 ± 0,038 | qwen-community-1.0 | Hugging Face (unsloth) |
 
-| Variante | Tamaño | Perplejidad | KL divergencia vs UD-Q4_K_XL | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| unsloth UD-Q4_K_XL | 111,3 GB | 2,9117 | referencia | qwen-community-1.0 | Hugging Face |
-| este archivo (Q4_K_XL-DN4) | 102,5 GB | 2,9165 | 0,028 | qwen-community-1.0 | Hugging Face |
-| unsloth UD-IQ4_XS | 93,7 GB | 2,998 | 0,089 | qwen-community-1.0 | Hugging Face |
-
-El modelo base sin cuantizar no se ha incluido en esta comparativa porque no se dispone de datos de tamaño o rendimiento en la información consultada. Qwen3.7-Plus se menciona como referencia en el repositorio oficial, pero sin cifras de benchmark.
+La comparativa se limita a las cuantizaciones del mismo modelo base documentadas en la información disponible. No se dispone de datos sobre modelos alternativos de otros desarrolladores con los que comparar parámetros, contexto o rendimiento.
 
 ## Limitaciones y advertencias
 
-- Sesgos conocidos: no disponible en la información consultada.
-- Riesgo de alucinación: inherente a los modelos de lenguaje; no se han publicado evaluaciones específicas para esta cuantización.
-- Limitaciones de contexto o idioma: el contexto máximo es 262.144 tokens, pero la KV cache cuantizada a q4_0 introduce una pérdida de calidad medible (KL divergencia de 0,026 frente a una cache f16 a 2048 tokens, y 0,020 a 16k). Los idiomas soportados no se han especificado.
-- Restricciones de licencia: la licencia es qwen-community-1.0, una licencia "other" que debe revisarse en el archivo LICENSE antes de un uso comercial. No se dispone de información sobre sus términos exactos.
-- Caveat para producción: el autor señala que la cuantización de las proyecciones down se hizo sin imatrix, y aunque midió que no hay diferencia significativa, recomienda que una cuantización desde el checkpoint BF16 con imatrix sería el enfoque correcto. Además, en Vulkan, mezclar tipos de KV (claves q4_0 con valores q8_0) saca la atención del camino rápido y reduce el rendimiento de decodificación. El modelo requiere al menos ~78 GiB de VRAM para el contexto completo, lo que limita su despliegue a hardware específico.
+- El repositorio está diseñado para un hardware muy concreto (Strix Halo de 128 GB, Windows, Vulkan). En otras configuraciones el rendimiento o la viabilidad de carga pueden diferir sustancialmente.
+- La cabeza MTP compartida (1,91 GB) solo funciona en builds de unsloth; en mainline falla con `tensor 'token_embd.weight' not found`. Hay que usar la cabeza no compartida (2,79 GB).
+- El rendimiento en lectura de prompt se ve degradado por la matmul int8 de los builds recientes en esta GPU, sin interruptor para desactivarla; afecta al KLD pero no a la generación.
+- La tabla de n-gramas de 28,8 GB debe residir en RAM del sistema; en modo de reserva fija de 96 GB compite con Windows y provoca paginación que degrada todo el escritorio.
+- La licencia qwen-community-1.0 es una licencia comunitaria con condiciones específicas; es necesario revisar el archivo LICENSE antes de cualquier uso comercial.
+- No se dispone de información sobre sesgos, tasas de alucinación ni cobertura idiomática del modelo base en la documentación proporcionada.
+- Los benchmarks publicados miden calidad de cuantización y velocidad, no capacidades cognitivas del modelo; no hay datos de MMLU, HumanEval ni GSM8K.
+- El tamaño del repo (204,9 GB) y la descarga parcial por patrón (`--include "Q4_K_XL-IQ4NL/*"`) requieren planificación de almacenamiento.
 
 ## Enlaces
 
-- Repositorio Hugging Face del modelo cuantizado: https://huggingface.co/bitlamas/Qwen3.8-Flash-Next-Q4_K_XL-DN4
-- Modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
-- Repositorio GitHub del modelo base: https://github.com/QwenLM/Qwen3.8-Flash-Next/
+- Repositorio Hugging Face: https://huggingface.co/bitlamas/Qwen3.8-Flash-Next-Q4_K_XL-DN4
+- Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
+- Cuantizaciones de referencia de unsloth: no disponible (URL no incluida en la información proporcionada)
+- Logs crudos de mediciones: carpeta `logs/` dentro del repositorio
+- PR de llama.cpp con soporte MTP draft (`--spec-type draft-mtp`): PR #29761 (2026-10-01)
+- PR de llama.cpp sobre matmul int8 en GPU AMD: PR #27952
+- Paper, blog o demo oficial: no disponible en la información proporcionada

@@ -2,90 +2,85 @@
 
 ## Resumen
 
-Kandinsky-6.0-Pro-5s-Diffusers es un modelo de generacion de video desarrollado por kandinskylab, publicado en Hugging Face bajo la libreria diffusers. Segun los tags del repositorio, cubre generacion de video a partir de texto (text-to-video), a partir de imagen (image-to-video) y generacion de audio, integrados en un unico pipeline identificado como Kandinsky6TI2VAPipeline. El nombre del repositorio sugiere variantes de duracion corta (5s), aunque no se dispone de documentacion que lo confirme.
+Kandinsky-6.0-Pro-5s-Diffusers es un modelo de generación de vídeo de la familia Kandinsky, desarrollado por el laboratorio kandinskylab y publicado en Hugging Face bajo la librería `diffusers`. El modelo aborda la generación texto-a-vídeo e imagen-a-vídeo con audio integrado, según indican sus etiquetas (`text-to-video`, `image-to-video`, `audio-generation`), y se distribuye a través del pipeline `Kandinsky6TI2VAPipeline`. Está pensado para investigadores y desarrolladores que necesitan sintetizar clips de vídeo de corta duración (la nomenclatura "5s" sugiere clips de 5 segundos) a partir de prompts textuales o imágenes de referencia.
 
-El modelo cuenta con 30.136.326.248 parametros (aproximadamente 30,1 mil millones) en pesos safetensors, con un tamano de repositorio de 223,5 GB, lo que indica la presencia de multiples componentes (probablemente transformer de difusion, VAE, modelo de audio y codificadores de texto) o varias copias en distintas precisiones. Se distribuye bajo licencia MIT, aunque el acceso esta restringido y requiere aceptar condiciones en Hugging Face.
+El modelo cuenta con aproximadamente 30.136 millones de parámetros en formato safetensors, lo que lo sitúa en la gama alta de los modelos generativos de vídeo. El repositorio ocupa 223,5 GB, un tamaño coherente con pesos en precisión alta para un modelo de esta magnitud. Su licencia es MIT, lo que facilita el uso comercial, aunque el acceso está restringido (gated) y requiere aceptar condiciones en Hugging Face antes de descargar los pesos.
 
-Su relevancia actual radica en la convergencia de generacion de video y audio en un solo modelo de gran escala y licencia permisiva, un perfil poco frecuente en el ecosistema abierto. No obstante, la ausencia de documentacion publica, resultados de benchmarks y especificaciones de entrenamiento limita seriamente la evaluacion tecnica objetiva en el momento de redactar esta ficha.
+La relevancia de este lanzamiento radica en la combinación de generación de vídeo con audio en un único pipeline de `diffusers`, lo que simplifica la integración en flujos de trabajo existentes basados en esta librería. No obstante, la información pública disponible es limitada: no se detallan idiomas soportados, benchmarks ni especificaciones de arquitectura más allá de lo inferible de los metadatos.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | No disponible (modelo de difusion para video y audio, segun tags del repositorio; detalles internos no publicados) |
-| Parametros totales | 30.136.326.248 (aproximadamente 30,1 B) |
-| Parametros activos | No aplica (no se ha confirmado que sea MoE) |
-| Longitud de contexto | No disponible |
-| Tipos de cuantizacion | No disponible |
-| Idiomas soportados | No disponible |
+| Arquitectura | no disponible (modelo de difusión para vídeo, pipeline `Kandinsky6TI2VAPipeline`) |
+| Parametros totales | 30.136.326.248 (~30,1 mil millones) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
+| Longitud de contexto | no disponible (no aplica directamente; clips de ~5 s según nomenclatura) |
+| Tipos de cuantizacion | no disponible (pesos publicados en safetensors; no se detallan variantes GGUF/FP8) |
+| Idiomas soportados | no disponible |
 | Licencia | MIT |
-| Formato de pesos | safetensors |
+| Formato de pesos | safetensors (librería `diffusers`) |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion publicada sobre la arquitectura interna del modelo mas alla de lo que indican los tags del repositorio de Hugging Face: se trata de un modelo de difusion orientado a generacion de video (text-to-video e image-to-video) con generacion de audio asociada, empaquetado en el pipeline `Kandinsky6TI2VAPipeline` de la libreria diffusers. El sufijo TI2VA y la presencia simultanea de los tags `video` y `audio-generation` apuntan a un pipeline conjunto de texto-imagen a video con audio, pero no se detalla la composicion de sus bloques (transformer, VAE, decodificador de audio, codificadores de texto) ni el tipo de mecanismo de atencion empleado.
+No se dispone de información detallada sobre la arquitectura interna en los metadatos proporcionados. Por las etiquetas y el pipeline (`Kandinsky6TI2VAPipeline`) se trata de un modelo de difusión para generación de vídeo con soporte de audio, operable en modalidad texto-a-vídeo e imagen-a-vídeo. El número de parámetros (~30,1 mil millones) y el tamaño del repositorio (223,5 GB) indican pesos en precisión alta (probablemente bf16/fp16 junto con componentes auxiliares como VAE, codificadores de texto y módulos de audio).
 
-Tampoco hay informacion disponible sobre el volumen de tokens de entrenamiento, la composicion del dataset, la resolucion y duracion nativas, ni sobre si se aplicaron tecnicas de alineacion como RLHF, DPO o ajuste por preferencia humana en video. El repositorio hace referencia al identificador arXiv:2610.05608, que se incluye en la seccion de enlaces, pero no se ha podido acceder a su contenido en la informacion proporcionada. No se han identificado innovaciones tecnicas documentadas (decodificacion especulativa, atencion lineal, destilacion de pasos, etc.).
+No se han publicado en la información disponible datos sobre el número de tokens de entrenamiento, la composición del dataset, el uso de RLHF/DPO ni innovaciones técnicas específicas (decodificación especulativa, atención lineal, etc.). Cualquier afirmación al respecto sería especulativa.
 
 ## Capacidades
 
-- Generacion de video a partir de texto (text-to-video), segun los tags del repositorio.
-- Generacion de video a partir de imagen (image-to-video), que es el pipeline declarado en la ficha de Hugging Face.
-- Generacion de audio asociada al contenido de video, segun el tag `audio-generation`.
-- Pipeline conjunto texto-imagen a video con audio (`Kandinsky6TI2VAPipeline`), lo que sugiere salidas multimodales sincronizadas.
-- Soporte de tool calling o function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no aplica a un modelo generativo de video.
-- Capacidades multilingues: no disponible (el campo de idiomas no esta cumplimentado en la ficha).
-- Modo de razonamiento explicito (thinking mode): no disponible.
+- Generación de vídeo a partir de texto (text-to-video).
+- Generación de vídeo a partir de una imagen de referencia (image-to-video).
+- Generación de audio asociada al vídeo (etiqueta `audio-generation`), lo que permite producir clips con pista sonora.
+- Integración nativa con la librería `diffusers` mediante el pipeline `Kandinsky6TI2VAPipeline`.
+- Clips de corta duración (la nomenclatura "5s" sugiere 5 segundos).
+- No se documentan en la información disponible capacidades de tool calling, agentes, razonamiento multi-paso ni soporte multilingüe explícito.
 
 ## Casos de uso
 
-- Generacion de spots publicitarios cortos: partiendo de una imagen de producto y un prompt de texto, el modelo puede producir clips breves con audio, adecuados para redes sociales, sin necesidad de rodaje.
-- Previsualizacion de storyboards en produccion audiovisual: convertir ilustraciones o frames clave en animaciones provisionales con locucion o ambiente sonoro para validar secuencias antes de la produccion real.
-- Prototipado de videojuegos y cinemáticas: generar animaciones de personajes o entornos a partir de conceptos artisticos, acelerando la iteracion de arte conceptual.
-- Marketing personalizado a escala: generar variaciones de un mismo anuncio a partir de imagenes de catalogo, con audio adaptado, para test A/B de creatividades.
-- Postproduccion y doblaje visual: animar fotografias fijas con audio sincronizado para crear contenido de archivo o material historico en movimiento.
-- Formacion y simulacion: crear clips explicativos de procedimientos tecnicos a partir de capturas o diagramas, con narracion generada, para cursos internos.
-- Contenido educativo divulgativo: transformar infografias o ilustraciones cientificas en microvideos con narracion para plataformas de aprendizaje.
-- Enriquecimiento de catalogos de comercio electronico: animar imagenes de producto con audio descriptivo para fichas de producto mas atractivas.
+- Prototipado rápido de vídeo publicitario: generar clips de ~5 segundos a partir de un prompt textual para validar conceptos creativos antes de producir con equipos de rodaje, aprovechando la integración con `diffusers`.
+- Animación de imágenes fijas para redes sociales: usar la modalidad image-to-video para dar movimiento a fotografías de producto o ilustraciones y publicar clips cortos con audio generado.
+- Generación de material de previsualización en cine y animación: crear animáticas (previz) con sonido para comunicar ideas de planos al equipo de producción.
+- Creación de contenido para vídeojuegos indie: sintetizar clips de ambiente o transiciones con audio para prototipos, dado que la licencia MIT permite uso comercial.
+- Investigación en generación de vídeo multimodal: emplear el modelo como baseline en experimentos de text-to-video e image-to-video con audio, aprovechando la API de `diffusers` para reproducibilidad.
+- Generación de clips educativos o divulgativos: producir secuencias cortas ilustrativas con narración o ambiente sonoro para materiales formativos, sin depender de bancos de vídeo de pago.
+- Automatización de contenido para marketing: integrar el pipeline en un servicio backend que genere variantes de clips cortos a partir de briefs textuales, con la ventaja de la licencia MIT para despliegue comercial.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- Parametros totales: 30,1 B, con un repositorio de 223,5 GB. Este ultimo dato incluye previsiblemente todos los componentes del pipeline y, posiblemente, varias precisiones, por lo que no equivale a la VRAM necesaria en inferencia.
-- Estimacion orientativa (no confirmada por el autor): los pesos del componente principal en BF16 rondarian los 60 GB, a lo que habria que sumar los pesos del VAE, del modelo de audio y de los codificadores de texto, ademas de las activaciones durante la difusion.
-- GPU recomendadas para servir el modelo completo: no disponible. Por volumen de parametros, es razonable esperar necesidades propias de GPU de datacenter (A100 80 GB, H100 80 GB) o multi-GPU, pero no hay confirmacion oficial.
-- Compatibilidad con GPU de consumo: no disponible. Con cuantizacion agresiva y offloading parcial podria intentarse en tarjetas de gran VRAM (RTX 4090 24 GB o RTX 5090), pero no hay datos que lo confirmen.
-- Opciones de despliegue: la libreria declarada es diffusers. El soporte en vLLM, llama.cpp, Ollama o TGI no esta indicado y, en el caso de modelos de difusion de video, es poco habitual fuera de diffusers o ComfyUI. No disponible.
-- Latencia y throughput: no disponibles.
+- VRAM estimada para inferencia: no disponible de forma oficial. Con ~30,1 mil millones de parámetros, los pesos en bf16/fp16 requieren del orden de 60 GB solo para el modelo principal, a lo que hay que sumar VAE, codificadores de texto y módulos de audio; en la práctica se necesita hardware de gama alta (A100 80 GB, H100 80 GB) o estrategias de offloading.
+- GPU recomendadas: A100 80 GB o H100 80 GB para ejecución completa en GPU; configuraciones multi-GPU para mayor throughput.
+- ¿Cabe en GPU de consumo? No de forma directa con los pesos publicados; requeriría cuantización agresiva u offloading a CPU/RAM, no documentado en la información disponible.
+- Opciones de despliegue: `diffusers` (pipeline `Kandinsky6TI2VAPipeline`) como vía principal; no se documentan integraciones con vLLM, llama.cpp, Ollama ni TGI (herramientas orientadas a LLM, no a difusión).
+- Latencia y throughput estimados: no disponibles.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos verificados de modelos comparables en la informacion proporcionada. La categoria natural de comparacion serian otros modelos abiertos de generacion de video texto/imagen a video con licencia permisiva (por ejemplo, familia Wan, HunyuanVideo o LTX-Video), pero no se han facilitado sus especificaciones, parametros, contexto ni resultados de benchmarks, por lo que no se incluye tabla comparativa para no introducir datos no verificados.
+No se dispone en la información proporcionada de datos de rendimiento ni de especificaciones detalladas de modelos comparables de generación de vídeo con audio. Se indica "no disponible" para evitar comparaciones sin base verificable.
 
-| Modelo | Parametros | Contexto | Licencia | Disponibilidad | Datos de rendimiento |
-|---|---|---|---|---|---|
-| Kandinsky-6.0-Pro-5s-Diffusers | 30,1 B | No aplica / no disponible | MIT | Gated en Hugging Face | No disponible |
-| Alternativas de la misma categoria | No disponible en la informacion proporcionada | No disponible | No disponible | No disponible | No disponible |
+| Modelo | Parametros | Contexto/duracion | Licencia | Disponibilidad |
+|---|---|---|---|---|
+| Kandinsky-6.0-Pro-5s | ~30,1 mil millones | clips ~5 s (segun nomenclatura) | MIT | gated en Hugging Face |
+| Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
 
-- Ausencia total de documentacion tecnica publica: no hay model card detallada, ni arquitectura, ni datos de entrenamiento, ni benchmarks, lo que impide una evaluacion rigurosa previa a su adopcion.
-- Riesgo elevado de alucinacion visual: como todo modelo generativo de video, puede producir artefactos anatomicos, fisicos o temporales, especialmente en movimientos rapidos o escenas con muchas entidades.
-- Riesgo de sincronizacion imperfecta entre audio y video, dado que la generacion de audio es un componente adicional dentro del pipeline.
-- Idiomas soportados no declarados: se desconoce si los prompts funcionan de forma equivalente en castellano u otras lenguas distintas del ingles.
-- Licencia MIT en apariencia permisiva, pero el acceso al repositorio esta restringido (gated), lo que anade una condicion de aceptacion de terminos que puede afectar a la automatizacion de descargas en pipelines de produccion.
-- Tamano de repositorio muy elevado (223,5 GB), lo que encarece el almacenamiento, la transferencia y el versionado en entornos de CI/CD.
-- Sin datos de sesgo ni de composicion del dataset, no es posible evaluar sesgos demograficos, culturales o de representacion en los videos generados.
-- Sin informacion sobre resolucion maxima, duracion real soportada ni relacion de aspecto; el sufijo "5s" sugiere clips de unos 5 segundos, pero no esta confirmado.
-- Uso comercial: la licencia MIT lo permitiria en principio, pero debe verificarse en la model card definitiva si existen clausulas adicionales de uso aceptable asociadas al acceso restringido.
+- Acceso restringido (gated): es necesario aceptar condiciones en Hugging Face antes de descargar los pesos, lo que puede retrasar la adopción en entornos automatizados.
+- Tamaño del repositorio elevado (223,5 GB): requiere almacenamiento considerable y ancho de banda para la descarga.
+- Requisitos de hardware muy altos: ~30,1 mil millones de parámetros implican VRAM de gama profesional; no apto para GPU de consumo sin técnicas no documentadas.
+- Duración limitada de los clips: la nomenclatura "5s" sugiere clips de 5 segundos, insuficientes para casos que requieran secuencias más largas sin composición manual.
+- Idiomas soportados no documentados: se desconoce el rendimiento de los prompts en castellano u otras lenguas distintas del inglés.
+- Riesgo de artefactos y alucinación visual: como todo modelo generativo de vídeo, puede producir incoherencias temporales, deformaciones anatómicas o audio desincronizado; no se han publicado evaluaciones al respecto.
+- Sesgos: no documentados en la información disponible; cabe esperar los sesgos presentes en los datos de entrenamiento, no especificados.
+- Licencia MIT: permite uso comercial, pero conviene revisar las condiciones adicionales del acceso gated y las licencias de componentes auxiliares no detallados.
+- Ausencia de benchmarks publicados: dificulta la comparación objetiva con alternativas y la estimación de calidad en producción.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/kandinskylab/Kandinsky-6.0-Pro-5s-Diffusers
-- Paper referenciado en los tags (arXiv:2610.05608): https://arxiv.org/abs/2610.05608
-- Documentacion de la libreria diffusers: https://huggingface.co/docs/diffusers/index
-- No se han encontrado otros enlaces (repositorios, demos o blogs) en la informacion proporcionada.
+- Hugging Face: https://huggingface.co/kandinskylab/Kandinsky-6.0-Pro-5s-Diffusers
+- Paper referenciado en los tags: arXiv:2610.05608 (no se dispone de URL verificada en la información proporcionada)
+- No se han encontrado en la información disponible otros enlaces a blogs, repositorios o demos.

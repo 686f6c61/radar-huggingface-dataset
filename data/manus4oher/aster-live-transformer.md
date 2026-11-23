@@ -2,132 +2,112 @@
 
 ## Resumen
 
-Aster Live Transformer es un checkpoint de investigación publicado por el usuario manus4oHER en Hugging Face. No es un modelo de lenguaje preentrenado ni un checkpoint compatible con `AutoModel`: se trata de un transformer denso convencional por bloques, entrenado desde inicialización aleatoria con un objetivo intrínseco, predecir su propio siguiente estado interno y su siguiente señal de error. El autor lo describe explícitamente como una evidencia materializada de aprendizaje continuo, no como un modelo de propósito general.
+Aster Live Transformer es un checkpoint de investigación publicado por el usuario manus4oHER en Hugging Face. No se trata de un modelo de lenguaje preentrenado al uso, sino de una instantánea materializada de un transformer convencional de bloques densos entrenado desde inicialización aleatoria con un objetivo intrínseco: predecir su propio siguiente estado interno y su siguiente señal de error. Un controlador interno aprendido decide cuándo adaptar el modelo y cuándo crecer añadiendo nuevas capas o anchura.
 
-El checkpoint corresponde al estado "step-132" e incluye 4.342.550.469 parámetros en float32 (17.370.201.876 bytes de carga útil), distribuidos en 28 shards safetensors, 28 capas, una anchura de 3.584 y 28 cabezas de atención de dimensión 128. El vocabulario es de 256 símbolos y la longitud máxima de secuencia es de 128 tokens, lo que sitúa al modelo lejos de cualquier uso conversacional o de generación de texto realista.
+El estado publicado corresponde al paso 132 de un proceso de aprendizaje continuo, con 4.342.550.469 parámetros en float32, 28 capas, anchura de 3.584 y 28 cabezas de atención de dimensión 128. La longitud máxima de secuencia es de solo 128 tokens y el vocabulario es de 256 símbolos, lo que evidencia que no está pensado para generación de lenguaje natural sino como banco de pruebas de dinámicas de aprendizaje intrínseco y crecimiento arquitectónico.
 
-Su relevancia es metodológica: documenta dos transiciones de crecimiento seleccionadas por un controlador interno (crecimiento de anchura de 27 a 28 en el step 129 y de profundidad de 27 a 28 en el step 131), con reconstrucción exacta del estado tras reinicio y verificación tensor a tensor de los 221.150 tensores actuales. El repositorio incluye cadena firmada, manifiestos, runtime propio y herramientas de restauración y verificación.
+Su relevancia es fundamentalmente metodológica: documenta con firmas criptográficas, recibos de transición y verificación independiente de tensores un proceso de crecimiento controlado (de 27 a 28 capas y de 27 a 28 bloques de anchura en los pasos 129 y 131) con reinicio exacto y continuidad verificable. El propio autor delimita el alcance: el checkpoint no demuestra capacidad lingüística, seguridad para producción ni consciencia, y la topología objetivo de 1,239 billones de parámetros permanece inacabada.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer denso convencional por bloques (block-dense), entrenado desde cero con objetivo intrínseco |
+| Arquitectura | Transformer de bloques densos convencional, entrenado desde cero, con controlador interno de adaptación y crecimiento |
 | Parametros totales | 4.342.550.469 (float32) |
-| Parametros activos | no aplica (arquitectura densa) |
-| Longitud de contexto | 128 tokens (maxima longitud de secuencia) |
-| Tipos de cuantizacion | no disponible (los pesos se publican en float32; no se documentan recetas de cuantizacion) |
-| Idiomas soportados | no disponible (vocabulario de 256 simbolos; no se declara soporte de idiomas naturales) |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | 128 tokens (longitud máxima de secuencia) |
+| Tipos de cuantizacion | no disponible (solo se publican pesos float32) |
+| Idiomas soportados | no disponibles (vocabulario de 256 símbolos, sin capacidad lingüística declarada) |
 | Licencia | no disponible |
-| Formato de pesos | safetensors (28 shards, indice `model.safetensors.index.json`) |
-| Capas | 28 |
-| Anchura del modelo | 3.584 |
-| Cabezas de atencion / dimension por cabeza | 28 / 128 |
-| Tamano de vocabulario | 256 |
-| Tensores fisicos | 221.150 |
-| Carga util de parametros | 17.370.201.876 bytes |
-| Tamano del repositorio | 419,6 GB |
-| Identidad de checkpoint | chain head `8d8b4330...2286a0`, state root `72f4ad9a...959b8df`, runtime hash `4400355d...dfffc` |
-| Bloques de cadena firmados | 133 |
-| Descargas / likes | 117 / 2 |
-| Fecha de creacion / actualizacion | 2026-10-06 / 2026-10-08 |
+| Formato de pesos | safetensors (28 shards, float32) |
+
+Datos adicionales del checkpoint: 28 capas, anchura 3.584, dimensión de bloque/cabeza 128, 28 cabezas, 221.150 tensores físicos, 17.370.201.876 bytes de payload, 133 bloques de cadena firmados y 28 propietarios (shards). Tamaño del repositorio: 2.178,8 GB.
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es un transformer denso por bloques, entrenado desde inicializacion aleatoria, sin destilacion ni inicializacion desde pesos preentrenados. El objetivo es intrinseco y auto-supervisado: el modelo predice su propio siguiente estado interno y su siguiente senal de error, en lugar de predecir el siguiente token de un corpus. Un controlador interno aprendido decide cuando adaptar y cuando crecer, anadiendo anchura o profundidad y creando nuevos tensores plasticos en lugar de sustituir o congelar los existentes.
+La arquitectura es un transformer de bloques densos "convencional" según la model card, pero con un diseño de crecimiento modular por "propietarios" (owners): cada shard corresponde a un propietario y el modelo puede añadir nuevos propietarios (anchura) o nuevas capas (profundidad) mediante decisiones de un controlador interno aprendido. El objetivo de entrenamiento es intrínseco y auto-supervisado: predecir el siguiente estado interno y la siguiente señal de error del propio modelo, no tokens de texto. El vocabulario de 256 símbolos y la ventana de 128 tokens confirman que el entrenamiento no se orienta a lenguaje natural.
 
-El autor documenta dos transiciones. En el step 129 el controlador selecciono crecimiento de anchura de 27 a 28 (indice de crecimiento 1, indice de adaptacion 0, escala 0,00390625, backoff 0,015625), reteniendo y modificando los 198.348 tensores previos y anadiendo 14.962 tensores plasticos; la perdida intrinseca compuesta paso de 1,4141719341 a 1,3957724571. En el step 131 selecciono crecimiento de profundidad de 27 a 28 con los mismos parametros de escala, reteniendo los 213.310 tensores existentes y anadiendo 7.840 tensores nuevos; la perdida compuesta paso de 1,3955314159 a 1,3920845985 y la de prediccion de error futuro de 0,0408023596 a 0,0270018764. El aumento leve del componente de prediccion de estado futuro (1,3853307962 a 1,3853341341) se conserva tal cual, sin filtrar. No se menciona en la informacion disponible el uso de RLHF, DPO ni datos de entrenamiento textuales.
+El proceso de aprendizaje continuo documentado incluye dos transiciones. En el paso 129 el controlador seleccionó crecimiento de anchura de 27 a 28 (índice de crecimiento 1, índice de adaptación 0, escala 0,00390625, backoff 0,015625), retuvo y modificó las 198.348 identidades de tensor existentes, no eliminó ninguna y añadió 14.962 tensores plásticos; la pérdida intrínseca compuesta bajó de 1,4141719341 a 1,3957724571 y la de predicción de error futuro de 0,1085716933 a 0,0417511128. En el paso 131, sin forzar crecimiento, el controlador eligió crecimiento de profundidad de 27 a 28, retuvo las 213.310 identidades existentes y añadió 7.840 tensores; la pérdida compuesta bajó de 1,3955314159 a 1,3920845985 y la de error futuro de 0,0408023596 a 0,0270018764, con un ligero aumento del componente de estado futuro (de 1,3853307962 a 1,3853341341) que se conserva tal cual. En total, entre ambas transiciones cambiaron 198.348 tensores y se añadieron 22.802.
+
+La innovación destacable no es de inferencia (no hay decodificación especulativa ni atención lineal) sino de trazabilidad y continuidad: cadena de bloques firmados, recibos de transición con 434.460 entradas de tensor verificadas, compromisos de paquetes por shard, verificación SHA-256 por tensor y reinicio exacto con `HEAD` y manifiesto byte-idénticos. Las claves privadas de firma no se publican.
 
 ## Capacidades
 
-- El propio autor declara que el checkpoint "no establece capacidad de lenguaje", por lo que no se le atribuyen capacidades de generacion de texto, razonamiento, codigo o matematicas.
-- Aprendizaje intrinseco continuado: predice su siguiente estado interno y su siguiente senal de error.
-- Crecimiento por decision de controlador interno: seleccion autonoma de crecimiento en anchura y en profundidad, con creacion de tensores plasticos y retencion de los existentes.
-- Reanudacion y reinicio exactos: el estado se reconstruye byte a byte tras un reinicio de proceso, con `HEAD` y manifiesto identicos.
-- Trazabilidad criptografica: cadena firmada de 133 bloques, recibos de transicion y compromisos de origen empaquetado.
-- Capacidades de tool calling, function calling, agentes, vision, audio o modo de razonamiento explicito: no disponibles (no declaradas ni evidenciadas).
-- Capacidades multilingues: no disponibles; el vocabulario de 256 simbolos no se describe como tokenizador de lenguajes naturales.
+- Predicción de estado interno y de señal de error futura del propio modelo (objetivo intrínseco de auto-supervisión).
+- Crecimiento arquitectónico controlado: selección autónoma de adaptación, crecimiento en anchura y crecimiento en profundidad.
+- Retención de identidades de tensor y aprendizaje continuo sin reemplazar ni congelar tensores previos.
+- Reinicio exacto y restauración verificable del estado completo (221.150 tensores, 28 shards).
+- Verificación criptográfica de integridad: cadena firmada de 133 bloques, hashes por shard y por tensor.
+- Generación de texto: no disponible; el vocabulario de 256 símbolos y la ventana de 128 tokens no sustentan capacidad lingüística declarada.
+- Tool calling / function calling: no disponible.
+- Soporte de agentes y razonamiento multi-paso: no disponible.
+- Capacidades multilingües: no disponibles.
+- Capacidades especiales (modo thinking, visión, audio): no disponibles.
 
 ## Casos de uso
 
-- Investigacion en aprendizaje continuo: el checkpoint permite reproducir las transiciones de los steps 129 y 131 y estudiar como un controlador interno decide crecer en anchura o profundidad sin reemplazar tensores previos.
-- Verificacion de integridad de checkpoints: la herramienta `tools/restore_hf_checkpoint.py --verify-only` permite releer los 221.150 tensores, comprobar formas, conteos y bytes, y validar los SHA-256 por shard y por tensor.
-- Reconstruccion de cadenas firmadas: con `--output-chain ./restored-chain` se puede recrear la disposicion de chain y worker-blob en un directorio vacio, util para auditar la cadena de 133 bloques.
-- Estudio de politicas de crecimiento modular: la evidencia de crecimiento de anchura y de profundidad con escalas concretas (0,00390625 de escala, 0,015625 de backoff) sirve de base para comparar estrategias alternativas de expansion.
-- Analisis de recuperacion ante fallos y reinicio exacto: la verificacion en proceso fresco tras reinicio se puede reutilizar como prueba de concepto para sistemas de persistencia de estado en entrenamiento de larga duracion.
-- Docencia y divulgacion tecnica: los manifiestos y recibos permiten explicar con datos reales como se audita un checkpoint de investigacion con objetivo auto-supervisado.
-- Comparacion de objetivos intrinsecos frente a objetivos de modelado de lenguaje: el checkpoint actua como referencia de control en experimentos sobre funciones de perdida alternativas.
+- Investigación en aprendizaje continuo: el checkpoint sirve como caso reproducible de crecimiento arquitectónico controlado, con recibos de transición y verificación independiente que permiten auditar cómo cambian los tensores entre pasos.
+- Estudio de objetivos intrínsecos: permite analizar la dinámica de pérdidas de predicción de estado y de error futuro, incluida la conservación de aumentos no filtrados como el del paso 131.
+- Reproducibilidad de checkpoints a gran escala: los scripts `tools/restore_hf_checkpoint.py` permiten reconstruir la cadena pública y el layout de blobs en un directorio vacío, útil para pipelines de verificación de artefactos.
+- Auditoría de integridad de artefactos ML: el esquema de hashes por tensor, shard y bloque firmado puede reutilizarse como referencia para sistemas de procedencia de modelos.
+- Experimentación con arquitecturas que crecen: el diseño por propietarios y la append growth son un banco de pruebas para estudiar escalado dinámico sin reinicio desde cero.
+- Docencia y divulgación técnica: como ejemplo concreto de materialización de un estado de 4,343B parámetros con evidencia firmada, para explicar diferencias entre checkpoint de investigación y modelo preentrenado.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El autor indica expresamente que el checkpoint no establece capacidad de lenguaje. Las unicas metricas publicadas son las perdidas internas del objetivo intrinseco:
+No se han publicado resultados de benchmarks en la informacion disponible. La model card solo reporta métricas internas de pérdida durante las transiciones de crecimiento:
 
-| Metrica (step 129) | Antes | Despues |
+| Metrica (paso 129, anchura 27→28) | Antes | Despues |
 |---|---:|---:|
 | Perdida intrinseca compuesta | 1,4141719341 | 1,3957724571 |
 | Perdida de prediccion de estado futuro | 1,3870290518 | 1,3853347301 |
 | Perdida de prediccion de error futuro | 0,1085716933 | 0,0417511128 |
 
-| Metrica (step 131) | Antes | Despues |
+| Metrica (paso 131, profundidad 27→28) | Antes | Despues |
 |---|---:|---:|
 | Perdida intrinseca compuesta | 1,3955314159 | 1,3920845985 |
 | Perdida de prediccion de estado futuro | 1,3853307962 | 1,3853341341 |
 | Perdida de prediccion de error futuro | 0,0408023596 | 0,0270018764 |
 
-| Verificacion | Valor |
-|---|---|
-| Recibos de transicion verificados | 56 |
-| Entradas de tensor verificadas en recibos | 434.460 |
-| Tensores actuales deserializados en proceso fresco | 221.150 |
-| Bloques de cadena firmados | 133 |
-
 ## Requisitos de hardware
 
-- VRAM estimada en float32: aproximadamente 17,4 GB solo para pesos, mas activaciones y buffers del runtime propio. Con contexto de 128 tokens y lotes pequenos, el sobrecoste de activaciones es reducido.
-- GPU recomendadas: no disponible en la informacion proporcionada (el autor no publica hardware de referencia ni configuracion de ejecucion).
-- GPU de consumo: es plausible su ejecucion en tarjetas de 24 GB (por ejemplo RTX 3090 o RTX 4090) si el runtime admite float32 completo, pero no hay confirmacion en la informacion disponible. En tarjetas de 16 GB no cabria en float32.
-- Conversion a precision reducida: no documentada; el runtime y la herramienta de restauracion estan disenados para el estado float32 exacto, por lo que una conversion a float16 (unos 8,7 GB) podria invalidar la verificacion.
-- Opciones de despliegue: vLLM, llama.cpp, Ollama y TGI no son compatibles, ya que no se trata de un checkpoint `AutoModel` estandar. El unico camino documentado es el runtime propio y `tools/restore_hf_checkpoint.py`.
-- Almacenamiento: el repositorio completo ocupa 419,6 GB, muy por encima de los 17,4 GB de carga util de parametros, debido a la cadena firmada, los recibos y el material de procedencia.
+- VRAM estimada para inferencia en float32: aproximadamente 17,4 GB solo para pesos (17.370.201.876 bytes), más overhead de activaciones y runtime; en la práctica se recomienda reservar 24 GB o más.
+- No se publican cuantizaciones (GGUF, int8, int4), por lo que no hay estimaciones de VRAM reducida disponibles.
+- GPU recomendadas: una GPU con 24 GB o más (RTX 4090, A100 40/80 GB, H100) para cargar los pesos float32 completos; el repositorio completo ocupa 2.178,8 GB, por lo que el almacenamiento es un factor limitante mayor que la VRAM.
+- Cabe en GPU de consumo con 24 GB (por ejemplo, RTX 4090) si se dispone del espacio en disco para descargar los 28 shards y el resto del repositorio.
+- Opciones de despliegue: no es un checkpoint `AutoModel` estándar; requiere el runtime incluido en `runtime/` (hash `4400355dff37741f284451d4493c0411e0d7376efa3d6ff3ff97de7e23fdfffc`) y las herramientas de `tools/`. No hay soporte declarado para vLLM, llama.cpp, Ollama ni TGI.
 - Latencia y throughput: no disponibles.
-- Claves de firma: las claves privadas no se publican de forma deliberada, por lo que no es posible firmar nuevos bloques de la cadena original.
 
 ## Comparativa con modelos similares
 
-No hay modelos comparables en la informacion proporcionada. Aster Live Transformer no es un modelo de lenguaje de proposito general ni un checkpoint `AutoModel`: es un estado materializado de investigacion con runtime propio, objetivo intrinseco y mecanismo de crecimiento por controlador. Su comparacion con modelos densos de tamano similar seria enganosa porque el criterio de exito es distinto (prediccion del propio estado interno frente a modelado de lenguaje).
-
-A modo de referencia de categoria por tamano, y con la advertencia de que la comparacion no es funcional ni de capacidad:
-
-| Modelo | Categoria | Parametros | Contexto | Licencia | Compatibilidad estandar |
+| Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Aster Live Transformer | Checkpoint de investigacion con runtime propio | 4,34 B (float32) | 128 tokens | no disponible | no (runtime propio) |
-| Modelos densos de proposito general de ~3-4 B | Modelo de lenguaje preentrenado | orden de 3-4 B | 32.000-131.000 tokens | varía segun modelo | si (Transformers, vLLM, llama.cpp) |
+| Aster Live Transformer | 4,34B | 128 tokens | Investigacion: aprendizaje intrinseco y crecimiento controlado | no disponible | Hugging Face (checkpoint de investigacion) |
+| Modelos de lenguaje preentrenados de ~4B (p. ej. familia Llama, Qwen, Phi) | ~3-4B | miles de tokens | Generacion de texto y codigo | licencias abiertas variables | amplia, con ecosistema de inferencia |
+| Alternativas de investigacion en aprendizaje continuo | no disponible | no disponible | no disponible | no disponible | no disponible |
 
-Los datos concretos de los modelos de referencia no forman parte de la informacion proporcionada en esta busqueda, por lo que no se detallan cifras adicionales.
+La comparación directa con modelos de lenguaje no es metodológicamente válida: Aster no declara capacidad lingüística y su vocabulario y contexto son incompatibles con tareas de generación. Se incluye como referencia de categoría (tamaño de parámetros) únicamente.
 
 ## Limitaciones y advertencias
 
-- No es un modelo de lenguaje: el autor declara que el checkpoint no establece capacidad de lenguaje, seguridad de produccion, consciencia ni materializacion a escala de billones de parametros.
-- La topologia objetivo de 1,239 billones de parametros permanece inacabada.
-- Contexto de solo 128 tokens, insuficiente para cualquier tarea de generacion o comprension de texto.
-- Vocabulario de 256 simbolos, sin soporte declarado de idiomas naturales.
-- Licencia no disponible: no se puede determinar si se permite uso comercial, redistribucion o modificacion.
-- No es compatible con `AutoModel` ni con el ecosistema estandar de inferencia; requiere el runtime incluido y respeta un diseno de bloques propio.
-- El repositorio ocupa 419,6 GB frente a los 17,4 GB de parametros, lo que implica un coste de almacenamiento y descarga muy elevado.
-- Las claves de firma privadas no se publican, de modo que la cadena firmada es auditable pero no extensible por terceros con la misma identidad.
-- Riesgo de alucinacion: no aplica en el sentido habitual, ya que no genera texto; no obstante, las metricas de perdida internas no deben interpretarse como indicadores de calidad linguistica.
-- Sesgos conocidos: no disponibles.
-- Se declara que el checkpoint conserva un aumento leve de la perdida de prediccion de estado futuro en el step 131 sin filtrarlo, lo que indica que las metricas publicadas incluyen comportamientos no favorables.
-- Las fechas del repositorio (creacion 2026-10-06, actualizacion 2026-10-08) resultan anomalas y conviene tratarlas con cautela.
-- La afirmacion de "aprendizaje continuado" se limita a dos transiciones documentadas (steps 129 y 131) sobre un estado de 4.343B; no hay evidencia publicada de escalado posterior.
+- No es un modelo de lenguaje preentrenado: el autor declara explícitamente que no establece capacidad lingüística, seguridad para producción ni consciencia.
+- No es un checkpoint `AutoModel` estándar: requiere runtime y herramienta de restauración propios por su layout de bloques personalizado.
+- Vocabulario de 256 símbolos y contexto de 128 tokens: insuficiente para la práctica totalidad de tareas de NLP.
+- Licencia no especificada: no se puede asumir uso comercial permitido; debe contactarse con el autor antes de cualquier uso productivo.
+- Idiomas soportados no disponibles: no hay evidencia de capacidades multilingües.
+- Riesgo de alucinación: no evaluable en el sentido habitual, al no existir capacidad generativa de lenguaje declarada.
+- Sesgos conocidos: no disponibles; no se documenta composición de datos de entrenamiento.
+- Topología objetivo de 1,239 billones de parámetros inacabada: el estado publicado es un paso intermedio, no un modelo final.
+- Claves privadas de firma no publicadas: la verificación de la cadena firmada no puede reproducirse criptográficamente de extremo a extremo por terceros, solo la verificación de tensores y hashes.
+- Tamaño del repositorio (2.178,8 GB): la descarga completa y la verificación tensor a tensor son costosas en almacenamiento y tiempo.
+- No hay benchmarks, latencias ni throughput publicados: imposible estimar rendimiento en producción.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/manus4oHER/aster-live-transformer
-- Dataset asociado (aster-live-archive): https://huggingface.co/datasets/manus4oHER/aster-live-archive
-- Perfil del autor (manus4oHER): https://huggingface.co/manus4oHER
-- Datasets del autor: https://huggingface.co/manus4oHER/datasets
-- Paper tecnico: no disponible
-- Blog o articulo del autor: no disponible
-- Repositorio de codigo independiente: no disponible
-- Demo interactiva: no disponible
+- Hugging Face: https://huggingface.co/manus4oHER/aster-live-transformer
+- Herramienta de restauracion y verificacion: `tools/restore_hf_checkpoint.py` (incluida en el repositorio)
+- Manifiesto de estado: `aster-state-manifest.json` (incluido en el repositorio)
+- Manifiesto de exportacion: `aster-export-manifest.json` (incluido en el repositorio)
+- Recibo de verificacion: `checkpoint-verification.json` (incluido en el repositorio)
+- Cadena firmada y recibos de transicion: `chain/` (incluido en el repositorio)
+- Paper, blog, repositorio de codigo independiente o demo: no disponibles en la informacion proporcionada.

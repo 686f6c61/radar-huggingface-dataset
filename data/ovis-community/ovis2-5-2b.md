@@ -2,94 +2,86 @@
 
 ## Resumen
 
-Ovis2.5-2B es un modelo publicado en Hugging Face por la organizacion ovis-community bajo el identificador `ovis-community/Ovis2.5-2B`. Por el nombre se deduce que pertenece a la familia Ovis2.5 y que su tamano es de aproximadamente 2.000 millones de parametros, pero la model card del repositorio esta practicamente vacia: solo contiene la declaracion de licencia `apache-2.0`, sin descripcion, sin detalles de arquitectura y sin resultados de evaluacion.
+Ovis2.5-2B es un modelo multimodal de tipo image-text-to-text desarrollado originalmente por ATH-MaaS y redistribuido por la comunidad ovis-community. Resuelve la tarea de generar texto a partir de entradas combinadas de imagen o vídeo y lenguaje natural, cubriendo tanto image-to-text como video-to-text dentro de un mismo checkpoint. Su relevancia actual radica en que ofrece capacidades multimodales con un coste computacional reducido: 2.570.429.672 parámetros totales y un repositorio de 5,2 GB en safetensors.
 
-El repositorio registra 0 descargas y 0 likes en el momento de la consulta, y las busquedas web realizadas no han devuelto ningun resultado relacionado con el modelo. Todos los resultados obtenidos corresponden a contenidos sin relacion (herramientas de una empresa de lupulo), por lo que no aportan informacion tecnica util.
+La versión publicada por ovis-community es una conversión mantenida por la comunidad para que el modelo funcione con las clases estándar de Transformers (`AutoModelForImageTextToText`, `AutoProcessor`) sin necesidad de `trust_remote_code=True`. Los pesos se copian sin modificar desde la revisión `393c932b2a03e28eb9aaa503e3c4ab3ad384d958` del checkpoint original `ATH-MaaS/Ovis2.5-2B`, mientras que la configuración nativa, el tokenizer y los metadatos del procesador de imagen y vídeo se regeneran para la implementación Ovis2.5 de Transformers.
 
-En consecuencia, esta ficha recoge unicamente los metadatos verificables del repositorio y marca de forma explicita como "no disponible" cualquier dato que no pueda confirmarse. No se han incluido especificaciones inferidas por el nombre del modelo, salvo la estimacion de hardware derivada del recuento de parametros, que se senala como tal.
+El soporte nativo en Transformers se está incorporando mediante el PR huggingface/transformers#47659, por lo que hasta que exista una release que lo incluya es necesario usar un checkout con dicho PR. La licencia es Apache 2.0, lo que facilita su adopción tanto en investigación como en productos comerciales.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible |
-| Parametros totales | no disponible (el nombre del modelo sugiere ~2B, sin confirmar) |
-| Parametros activos | no disponible |
+| Arquitectura | Ovis2.5 (transformer multimodal, image-text-to-text); detalles internos no disponibles |
+| Parametros totales | 2.570.429.672 |
+| Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible |
+| Tipos de cuantizacion | no disponible (pesos publicados en safetensors; no se listan variantes GGUF/AWQ/GPTQ) |
 | Idiomas soportados | no disponible |
-| Licencia | apache-2.0 |
-| Formato de pesos | no disponible |
-
-Metadatos adicionales verificables: autor `ovis-community`, creado el 2026-09-22 y actualizado el 2026-09-22, 0 descargas, 0 likes, pipeline no disponible.
+| Licencia | Apache 2.0 |
+| Formato de pesos | safetensors (shards + weight index) |
 
 ## Arquitectura y entrenamiento
 
-La informacion proporcionada no incluye ningun detalle sobre la arquitectura del modelo. La model card no describe el tipo de red (transformer, MoE, SSM o hibrida), ni el encoder visual en caso de tratarse de un modelo multimodal, ni el modelo de lenguaje base utilizado.
+La información disponible confirma que Ovis2.5-2B emplea la arquitectura Ovis2.5, con un pipeline multimodal image-text-to-text y componentes específicos de procesamiento de imagen y vídeo (image processor y video processor). El repositorio de la comunidad incluye configuración nativa, tokenizer BPE y metadatos de procesador regenerados para la implementación de Transformers, además de los shards de pesos, el índice de pesos, la licencia y el aviso copiados sin cambios desde el checkpoint original.
 
-Tampoco hay datos sobre el proceso de entrenamiento: numero de tokens, composicion del dataset, uso de RLHF, DPO u otras tecnicas de alineacion, ni innovaciones tecnicas destacables. El unico dato fiable es la licencia declarada, Apache 2.0. Cualquier afirmacion adicional sobre arquitectura o entrenamiento seria una invencion y no se incluye.
+No se dispone de datos sobre el número de tokens de entrenamiento, la composición del dataset, ni sobre si se aplicaron técnicas de alineación como RLHF o DPO. Tampoco se documentan innovaciones técnicas específicas (decodificación especulativa, atención lineal, etc.) en la información proporcionada. Para detalles de entrenamiento y uso previsto, la model card remite a la documentación del modelo original.
 
 ## Capacidades
 
-- No disponible. La model card no enumera capacidades y no se ha publicado documentacion asociada en los resultados de busqueda.
-- No se puede confirmar generacion de texto, razonamiento, codigo, matematicas ni vision.
-- No se puede confirmar soporte de tool calling ni de function calling.
-- No se puede confirmar soporte de agentes ni de razonamiento multi-paso.
-- No se puede confirmar cobertura multilingue.
-- No se puede confirmar la existencia de un modo de razonamiento explicito (thinking mode) ni de capacidades de audio.
+- Generación de texto condicionada por imagen (image-to-text) mediante el pipeline `image-text-to-text`.
+- Comprensión y descripción de vídeo (video-to-text), con procesador de vídeo dedicado.
+- Conversación multimodal multi-turno (tag `conversational`).
+- Carga con clases estándar de Transformers (`AutoModelForImageTextToText`, `AutoProcessor`) sin `trust_remote_code=True`.
+- Compatibilidad con endpoints (`endpoints_compatible`).
+- Tool calling / function calling: no disponible en la información proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
+- Cobertura multilingüe: no disponible en la información proporcionada.
+- Capacidades especiales (thinking mode, audio): no disponible en la información proporcionada.
 
 ## Casos de uso
 
-No es posible recomendar casos de uso concretos sin conocer las capacidades reales del modelo. La model card no las documenta y las busquedas web no han devuelto informacion tecnica. Antes de plantear cualquier despliegue en produccion es necesario:
-
-- Verificar el contenido real del repositorio (archivos de pesos, `config.json`, tokenizer y cualquier documentacion adicional) para determinar si es un modelo de lenguaje, un modelo vision-lenguaje o un componente auxiliar.
-- Ejecutar una evaluacion propia sobre las tareas objetivo, dado que no existe ninguna referencia publica de rendimiento.
-- Comprobar la trazabilidad del autor: la organizacion `ovis-community` no acredita en el repositorio ninguna vinculacion con el equipo que publica la familia Ovis original, y el repositorio no tiene descargas ni interacciones.
-
-Hasta que exista esa verificacion, cualquier listado de aplicaciones practicas seria especulativo y no se incluye.
+- Descripción automática de imágenes para accesibilidad: el modelo puede generar texto alternativo a partir de imágenes usando el pipeline image-text-to-text, integrándose en CMS o plataformas de publicación para cumplir requisitos de accesibilidad.
+- Moderación de contenido visual: clasificación y descripción de imágenes subidas por usuarios para detectar contenido no deseado antes de su publicación, aprovechando la entrada multimodal y la salida en lenguaje natural.
+- Análisis de vídeo para resumen de metraje: uso del procesador de vídeo para generar resúmenes o descripciones de clips cortos, útil en archivos audiovisuales y herramientas de edición.
+- Asistencia en atención al cliente con capturas de pantalla: el modelo puede interpretar imágenes enviadas por el usuario (capturas de errores, facturas, productos) y responder en conversación multi-turno.
+- Extracción de información de documentos escaneados: lectura de imágenes de documentos y generación de respuestas estructuradas en texto para pipelines de digitalización.
+- Prototipado rápido en investigación multimodal: al ser un modelo de 2,57B parámetros con licencia Apache 2.0 y carga estándar en Transformers, sirve como base para experimentos de evaluación y ajuste fino sin infraestructura de gran escala.
+- Verificación visual en control de calidad industrial: inspección de imágenes de producto y generación de informes textuales de defectos en líneas de producción.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card no contiene tablas de MMLU, HumanEval, GSM8K ni de ninguna otra evaluacion, y las busquedas web no han devuelto datos al respecto.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-Las siguientes cifras son estimaciones derivadas del tamano nominal de 2.000 millones de parametros y no proceden de documentacion del modelo. Deben tratarse como orientativas.
-
-- VRAM estimada para los pesos en inferencia: aproximadamente 4 GB en FP16/BF16, unos 2 GB en INT8 y alrededor de 1,5 GB en INT4.
-- VRAM total estimada, incluyendo cache KV y overhead del runtime: aproximadamente 5-6 GB en FP16 con contexto corto, 3-4 GB en INT8 y 2-3 GB en INT4. La cifra crece de forma lineal con la longitud de contexto, que se desconoce.
-- Cabe con holgura en GPU de consumo: RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070, RTX 4080 y RTX 4090. En cuantizacion INT4 podria ejecutarse en GPUs con 6-8 GB de VRAM.
-- GPU de datacenter: A100, H100, L40S y L4 son suficientes de sobra; en estos casos el cuello de botella seria el ancho de banda antes que la capacidad de memoria.
-- Opciones de despliegue: no disponible. No se ha confirmado la publicacion de pesos en formato GGUF ni la compatibilidad con vLLM, llama.cpp, Ollama, TGI o SGLang.
-- Latencia y throughput: no disponible. No se han publicado mediciones y no es posible estimarlas sin conocer la arquitectura exacta.
+- VRAM estimada para inferencia: con 2,57B parámetros, en fp16 se requieren aproximadamente 5,1 GB solo para pesos, más overhead de activaciones y caché KV; en cuantización de 8 bits rondaría 2,6 GB y en 4 bits aproximadamente 1,3 GB (estimaciones teóricas, no publicadas por el autor).
+- GPU recomendadas: no disponible en la información proporcionada. Por tamaño, una GPU con 8-16 GB de VRAM debería ser suficiente en fp16, pero no hay validación oficial.
+- Cabe en GPU de consumo: previsiblemente sí en tarjetas con 8 GB o más en fp16 (por ejemplo, RTX 3060 Ti/4060 Ti y superiores), y en 4 bits en GPUs con 4-6 GB; sin confirmación del autor.
+- Opciones de despliegue: Transformers con `AutoModelForImageTextToText` y `AutoProcessor` (requiere un checkout con el PR #47659 hasta que haya release). vLLM, llama.cpp, Ollama o TGI: no disponible en la información proporcionada.
+- Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
 
-No es posible establecer una comparativa fiable porque se desconocen los parametros reales, el contexto, el rendimiento y las capacidades del modelo. A continuacion se enumeran candidatos de categoria similar (modelos pequenos de proposito general o vision-lenguaje) que podrian servir como referencia de evaluacion, sin afirmar sus especificaciones:
+No se dispone de datos de benchmarks ni de especificaciones detalladas (contexto, idiomas, rendimiento) de modelos comparables en la información proporcionada, por lo que la comparación cuantitativa no está disponible.
 
-| Modelo | Parametros | Contexto | Licencia | Notas |
+| Modelo | Parametros | Contexto | Licencia | Formato |
 |---|---|---|---|---|
-| ovis-community/Ovis2.5-2B | no disponible | no disponible | apache-2.0 | Model card vacia, 0 descargas |
-| Qwen2.5-VL-3B | no disponible | no disponible | no disponible | Candidato de comparacion, datos sin verificar |
-| InternVL2.5-1B/2B | no disponible | no disponible | no disponible | Candidato de comparacion, datos sin verificar |
-| SmolVLM-2B | no disponible | no disponible | no disponible | Candidato de comparacion, datos sin verificar |
-
-Las celdas marcadas como "no disponible" reflejan que la informacion no ha podido confirmarse en el material proporcionado.
+| Ovis2.5-2B (ovis-community) | 2,57B | no disponible | Apache 2.0 | safetensors |
+| Alternativas de la misma categoría | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
 
-- Model card practicamente vacia: no hay descripcion, ni detalles de arquitectura, ni guia de uso, ni ejemplos.
-- Trazabilidad no verificada: el repositorio se publica bajo la organizacion `ovis-community`, sin enlaces a papers, repositorios de codigo o demos que acrediten el origen del modelo.
-- Sin validacion de la comunidad: 0 descargas y 0 likes, por lo que no existe retroalimentacion de terceros sobre su funcionamiento.
-- Riesgo de pesos no funcionales o incompletos: al no poder inspeccionar los archivos del repositorio en la informacion disponible, no se puede confirmar que los pesos sean utilizables.
-- Riesgo de suplantacion de nombre: conviene verificar que este repositorio corresponde a la familia Ovis original antes de cualquier uso.
-- Sesgos: no disponible. No se ha publicado ninguna evaluacion de sesgos.
-- Alucinacion: no disponible. Sin benchmarks ni evaluaciones, no se puede acotar la tasa de alucinacion.
-- Limitaciones de contexto e idioma: no disponibles.
-- Restricciones de licencia: la licencia declarada es Apache 2.0, que permite uso comercial, pero esta declaracion es la unica fuente y no va acompanada de ningun otro termino ni de ficheros de licencia verificables en la informacion proporcionada.
-- Advertencia para produccion: no se recomienda su uso en entornos productivos hasta completar una evaluacion independiente y confirmar el origen del modelo.
+- Sesgos conocidos: no documentados en la información disponible; al ser un modelo multimodal, puede heredar sesgos de sus datos de entrenamiento originales.
+- Riesgo de alucinación: no cuantificado; como modelo generativo multimodal, puede producir descripciones inexactas de imágenes o vídeos.
+- Limitaciones de contexto e idioma: la longitud de contexto y los idiomas soportados no están disponibles, lo que impide garantizar su comportamiento en textos largos o en castellano.
+- Licencia: Apache 2.0 permite uso comercial, pero debe conservarse el archivo `LICENSE` y `NOTICE` copiados del checkpoint original y respetarse la atribución a ATH-MaaS.
+- Dependencia de Transformers: hasta que se publique una release con el PR #47659, es necesario usar un checkout específico, lo que añade fricción en producción.
+- Esta es una conversión comunitaria: los pesos no se modifican, pero la configuración y el procesador se regeneran; la model card remite al modelo original para uso previsto y limitaciones.
+- No se han publicado datos de rendimiento, latencia ni requisitos de hardware validados por el autor.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/ovis-community/Ovis2.5-2B
-- Otros enlaces relevantes (papers, blogs, repositorios, demos): no disponible. Las busquedas web realizadas no devolvieron ningun resultado relacionado con el modelo.
+- Hugging Face (versión comunitaria): https://huggingface.co/ovis-community/Ovis2.5-2B
+- Modelo original: https://huggingface.co/ATH-MaaS/Ovis2.5-2B
+- Pull request de soporte nativo en Transformers: https://github.com/huggingface/transformers/pull/47659

@@ -2,114 +2,113 @@
 
 ## Resumen
 
-YolPe es un detector de personas de una sola clase (`person`) desarrollado por el usuario illimax, obtenido mediante fine-tuning del modelo Ultralytics YOLO26s preentrenado en COCO sobre el dataset CrowdHuman. Su objetivo es resolver un problema concreto en vigilancia: en vistas de CCTV en alto y gran angular, las personas lejanas aparecen con cajas de pocos píxeles y los grupos se solapan, lo que provoca que los detectores genéricos pierdan una fracción muy alta de individuos. YolPe mantiene la arquitectura end-to-end de YOLO26 (sin NMS) y la adapta a la detección de multitudes.
+YolPe es un detector de personas de una sola clase (`0: person`) desarrollado por el usuario illimax, orientado a vigilancia CCTV de largo alcance donde las personas aparecen muy pequenas y se solapan en aglomeraciones. Parte de YOLO26s preentrenado en COCO y se afina sobre el dataset CrowdHuman, manteniendo el rendimiento en distancias cortas mientras mejora drasticamente la deteccion de personas lejanas. El modelo es relevante porque resuelve un problema concreto y mal cubierto por los detectores genericos: el conteo fiable de multitudes en planos amplios y elevados, con un coste computacional de variante "small".
 
-El modelo opera a resolución de entrada 1280 (también evaluado a 960) y está pensado para conteo de personas en escenas densas. Según la model card, el recall para personas lejanas (altura de caja inferior a 48 px) sube de 0,225 a 0,798 frente al YOLO26s base, y la altura mínima de persona detectable de forma fiable baja de 128 px a 24 px. Es relevante porque demuestra que un fine-tuning cuidadoso del etiquetado (tratamiento de zonas `ignore` y `mask`) puede mejorar sustancialmente la detección de objetos pequeños sin cambiar de arquitectura.
+La arquitectura es un detector YOLO end-to-end sin NMS, con entrada nativa de 1280 px y capacidad de hasta 1000 detecciones por imagen. Segun la model card, la mejora en recall de largo alcance sobre la base YOLO26s es de 3.5x (de 0.225 a 0.798 en cajas de altura inferior a 48 px) y el tamano minimo de persona detectable baja de 128 px a 24 px. El modelo se desplego en produccion en un servicio real de monitorizacion de aglomeraciones durante el evento AI Future Education Expo 2026, con mas de 3000 usuarios y sin caidas durante dos dias.
 
-El repositorio tiene un tamaño declarado de 0,0 GB, 157 descargas y 0 likes en el momento de la consulta. La licencia del artefacto es AGPL-3.0, pero el dataset de entrenamiento (CrowdHuman) está licenciado solo para investigación no comercial, una restricción que condiciona el uso en producción.
+La licencia es AGPL-3.0, lo que condiciona fuertemente su uso comercial en servicios de red. La model card esta mayoritariamente en coreano y no declara idiomas soportados, algo poco relevante para una tarea puramente visual.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | YOLO26s (Ultralytics), end-to-end sin NMS |
-| Parametros totales | no disponible |
+| Arquitectura | YOLO26s (Ultralytics), detector end-to-end sin NMS |
+| Parametros totales | no disponible (descrito como "6.0x fewer parameters" que YOLO26x) |
 | Parametros activos | no aplica (no es MoE) |
-| Longitud de contexto | no aplica (modelo de visión, no de lenguaje) |
-| Tipos de cuantizacion | no disponible (se menciona exportación a ONNX y TensorRT, sin detallar precisiones) |
-| Idiomas soportados | no disponible (no es un modelo de lenguaje) |
-| Licencia | AGPL-3.0 (artefacto); CrowdHuman restringido a investigación no comercial |
+| Longitud de contexto | no aplica (modelo de vision) |
+| Tipos de cuantizacion | no disponible (exportable a ONNX/TensorRT segun la model card) |
+| Idiomas soportados | no aplica (deteccion de objetos) |
+| Licencia | AGPL-3.0 |
 | Formato de pesos | `.pt` (PyTorch/Ultralytics); exportable a ONNX y TensorRT |
-
-Otros datos relevantes: clase única `0: person` (caja de cuerpo completo, incluyendo partes ocluidas), resolución de entrada 1280 (evaluado también a 960), `max_det` recomendado de 1000, umbral de confianza de referencia 0,35 (F1 máximo en 0,371), versión de Ultralytics 8.4.163.
 
 ## Arquitectura y entrenamiento
 
-YolPe parte de YOLO26s preentrenado en COCO y se fine-tunea sobre CrowdHuman (15.000 imágenes de entrenamiento, 4.370 de validación), con etiquetas de caja completa de persona y recorte de las partes que salen del encuadre. La innovación principal descrita no está en la arquitectura sino en el tratamiento de datos: las regiones `mask` y las personas marcadas como `ignore` en CrowdHuman se eliminan de las etiquetas y se pintan en gris (valor 114) en la imagen, de modo que el modelo no aprenda a tratar multitudes densas y lejanas como fondo vacío. Las partes visibles de personas válidas que se solapan con esas zonas se restauran a sus píxeles originales.
+YolPe es un fine-tuning de YOLO26s preentrenado en COCO, con una unica clase de salida (`person`) y cajas de cuerpo completo que incluyen las partes ocluidas. La inferencia es end-to-end sin supresion de no maximos (NMS), lo que simplifica el despliegue y reduce latencia en escenas con muchas detecciones. La resolucion de entrada es 1280 px (tambien evaluada a 960 px) y el limite de deteccion recomendado es `max_det=1000`, ya que el valor por defecto de 300 trunca el conteo en escenas densas.
 
-La configuración de entrenamiento usa `imgsz=1280`, 50 épocas con paciencia de 10, batch 8, mosaic 1.0 desactivado en las últimas 10 épocas, `scale=0.5`, `fliplr=0.5`, `flipud=0.0` (el punto de vista de cámara es fijo), `hsv_v=0.4` y `max_det=1000`. Se produjo un early stopping en la época 47 y se adoptó el checkpoint de la época 37, la de mayor mAP50-95 en validación. No se menciona uso de RLHF, DPO ni técnicas de destilación; es un fine-tuning supervisado convencional.
+El entrenamiento usa CrowdHuman: 15 000 imagenes de entrenamiento y 4370 de validacion. Se aplico un tratamiento especifico de las regiones `mask` e `ignore` de CrowdHuman: en lugar de eliminar simplemente las etiquetas, esas zonas se pintaron de gris (valor 114) para evitar que el modelo aprendiera a interpretar multitudes densas y lejanas como "ausencia de persona", un detalle que segun el autor es clave para el rendimiento en largo alcance. La configuracion incluye `imgsz=1280`, 50 epocas con paciencia de 10, batch 8, mosaic 1.0 con `close_mosaic=10`, escala y flip horizontal a 0.5, sin flip vertical (camara fija) y `hsv_v=0.4` para variaciones de iluminacion interior. Se aplico early stopping en la epoca 47 y se selecciono el checkpoint de la epoca 37, la de mayor mAP50-95 en validacion. Framework: Ultralytics 8.4.163.
 
 ## Capacidades
 
-- Detección de personas en imágenes, con una única clase de salida (`person`).
-- Detección de personas de pequeño tamaño: altura mínima fiable de 24 px (frente a 128 px del modelo base).
-- Conteo de multitudes en escenas densas y con solapamiento, con `max_det=1000` para no truncar el número de detecciones.
-- Inferencia end-to-end sin NMS, lo que simplifica el post-procesado y el despliegue.
-- Exportación a ONNX y TensorRT (con `max_det` fijado en el grafo).
-- No soporta tool calling, agentes, razonamiento multi-paso, ni capacidades multilingües, de audio o de visión general: es exclusivamente un detector de objetos de una clase.
+- Deteccion de personas en una sola clase, con cajas de cuerpo completo incluyendo partes ocluidas.
+- Deteccion de personas de muy pequeno tamano (hasta 24 px de altura de caja), adecuada para planos CCTV elevados y amplios.
+- Conteo de multitudes densas con hasta 1000 detecciones por imagen mediante `max_det=1000`.
+- Inferencia end-to-end sin NMS, lo que reduce latencia en escenas con solapamiento alto.
+- Exportacion a ONNX y TensorRT (con `max_det` fijado en el grafo).
+- Funcionamiento en CPU: la comparativa de campo se realizo en CPU.
+- No soporta tool calling, agentes, razonamiento multi-paso ni capacidades multilingues; es exclusivamente un modelo de vision para deteccion.
 
 ## Casos de uso
 
-- Conteo de aforo en CCTV: el modelo detecta personas lejanas y solapadas en vistas de cámara alta y gran angular, lo que permite estimar ocupación en recintos con una sola cámara y sin infraestructura adicional.
-- Control de aglomeraciones en espacios públicos: al mejorar el recall en cajas de 16 a 48 px, sirve para alertar cuando la densidad de personas supera un umbral en estaciones, plazas o eventos.
-- Análisis de vídeo de vigilancia existente: al ser un fine-tuning de YOLO26s, se integra en pipelines Ultralytics ya desplegados y exporta a ONNX/TensorRT para GPUs de borde.
-- Detección de intrusos en perímetros largos: la mejora en rango lejano permite cubrir más metros por cámara en pasillos, parkings o recintos industriales.
-- Investigación en visión por computador: el código de conversión de datos y evaluación por distancia está publicado en GitHub, lo que facilita reproducir y comparar experimentos sobre CrowdHuman.
-- Estimación de flujos peatonales: combinado con tracking posterior, el detector alimenta conteos por zona y trayectorias en escenas con alta densidad.
-- Prototipado académico de detección de personas pequeñas: sirve como baseline para estudiar el efecto del tratamiento de regiones `ignore` en datasets de multitudes.
+- Monitorizacion de aforo en recintos feriales y eventos: el modelo actualiza el conteo por zona cada 10 segundos procesando 5 fotogramas por ciclo desde un unico portatil, tal como se hizo en el AI Future Education Expo 2026 con mas de 3000 asistentes.
+- Conteo de personas en CCTV de interior con camaras elevadas: su recall de 0.930 en cajas de 48-128 px y de 0.798 por debajo de 48 px lo hace adecuado para planos generales donde los detectores COCO fallan.
+- Control de densidad en transporte publico (andenes, vestibulos): permite estimar ocupacion en tiempo real sobre streams de 640 px de ancho con hardware modesto.
+- Analitica de flujo peatonal en retail: al detectar personas lejanas y ocluidas, mejora los mapas de calor y las metricas de trafico frente a YOLO estandar.
+- Seguridad perimetral y deteccion de intrusion: la clase unica persona y el alto recall reducen los falsos negativos en zonas alejadas de la camara.
+- Despliegue en edge con privacidad: el servicio de referencia solo publica imagenes con las personas difuminadas y no almacena video original, un patron replicable en cumplimiento de proteccion de datos.
+- Procesamiento por lotes de grabaciones para auditoria de aforo: el modelo puede ejecutarse sobre fotogramas extraidos y exportarse a ONNX/TensorRT para acelerar el pipeline.
 
 ## Benchmarks y rendimiento
 
-Evaluación sobre CrowdHuman val (4.370 imágenes, 99.481 personas), `imgsz=1280`. La recall por distancia se mide con `conf=0.35`, caja visible e IoU 0.5; los índices de detección con `conf=0.371` y caja completa.
+Resultados en CrowdHuman val (4370 imagenes, 99 481 personas), `imgsz=1280`, comparados con YOLO26s COCO filtrado a la clase person.
 
-Personas bien visibles (75 % o más del cuerpo visible, 48.204 personas):
+Recall por distancia (conf 0.35, cajas visibles, IoU 0.5):
 
 | Distancia | Altura de caja | Personas | YOLO26s base | YolPe | Mejora |
 |---|---|---|---|---|---|
-| Lejana | < 48 px | 5.535 | 0,225 | 0,798 | +0,573 |
-| Media | 48–128 px | 14.966 | 0,559 | 0,930 | +0,371 |
-| Cercana | > 128 px | 27.703 | 0,852 | 0,969 | +0,117 |
-| Total | | 48.204 | 0,689 | 0,938 | +0,249 |
+| Largo alcance | < 48 px | 5535 | 0.225 | 0.798 | 3.5x |
+| Medio alcance | 48-128 px | 14 966 | 0.559 | 0.930 | 1.7x |
+| Corto alcance | >= 128 px | 27 703 | 0.852 | 0.969 | 1.14x |
 
-Incluyendo personas ocluidas (99.481 personas):
+Metricas globales:
 
-| Distancia | Personas | YOLO26s base | YolPe | Mejora |
-|---|---|---|---|---|
-| Lejana | 9.151 | 0,163 | 0,605 | +0,442 |
-| Media | 29.321 | 0,380 | 0,661 | +0,281 |
-| Cercana | 61.009 | 0,697 | 0,710 | +0,013 |
-| Total | 99.481 | 0,554 | 0,686 | +0,132 |
+| Metrica | Valor | Condiciones |
+|---|---|---|
+| Precision | 0.900 | conf 0.35 |
+| Recall | 0.914 | conf 0.35 |
+| Precision (max F1) | 0.940 | conf 0.371 |
+| Recall (max F1) | 0.884 | conf 0.371 |
+| mAP50 | 0.946 | conf 0.371 |
+| Tasa de falsos positivos | ~10.0 % | tabla de confusion, CrowdHuman val |
+| Tasa de falsos negativos | ~8.6 % | tabla de confusion, CrowdHuman val |
+| Tamano minimo de persona detectable | 24 px | frente a 128 px de la base |
 
-Métricas de detección de Ultralytics en el punto de máximo F1 (`conf=0.371`, caja completa):
-
-| Precision | Recall | F1 | mAP50 | mAP50-95 |
-|---|---|---|---|---|
-| 0,940 | 0,884 | 0,91 | 0,946 | 0,660 |
-
-A `imgsz=960` (personas bien visibles): recall lejano 0,190 → 0,776; medio 0,547 → 0,933; cercano 0,856 → 0,970; total 0,624 → 0,921. Desglose por tamaño de caja a 1280 (bien visibles): 16–20 px 0,070 → 0,556; 24–32 px 0,143 → 0,762; 48–64 px 0,420 → 0,903; 256 px o más 0,893 → 0,975.
+Comparativa de campo (un fotograma de CCTV real, CPU): YolPe detecto 4x mas personas que YOLO26s base a la misma velocidad, y igualo los resultados de YOLO26x corriendo 6.7x mas rapido con 6.0x menos parametros. Estas cifras son del autor y no se han verificado de forma independiente.
 
 ## Requisitos de hardware
 
-- VRAM estimada: no disponible en la información proporcionada. Como referencia de familia, un YOLO26s a `imgsz=1280` requiere típicamente varios GB de VRAM en FP16, pero no se ha publicado una cifra concreta para este checkpoint.
-- GPU recomendadas: no disponible. La model card solo menciona exportación a ONNX y TensorRT, sin especificar modelos de GPU.
-- GPU de consumo: no confirmado. El tamaño del modelo (variante "s") sugiere que podría caber en GPUs de consumo, pero no hay datos publicados que lo verifiquen.
-- Opciones de despliegue: Ultralytics (PyTorch), exportación a ONNX y TensorRT. No se mencionan vLLM, llama.cpp, Ollama ni TGI, que no aplican a un detector de objetos.
-- Latencia y throughput: no disponibles.
+- VRAM estimada: no disponible de forma explicita. Por el tamano de la variante "s" y la resolucion de 1280 px, se espera un consumo moderado, pero no hay dato publicado.
+- GPU recomendadas: no especificadas en la model card. El despliegue de referencia se ejecuto en CPU sobre un unico portatil.
+- Cabe en GPU de consumo: probablemente si, al tratarse de una variante small, aunque no se confirma en la informacion disponible.
+- Opciones de despliegue: Ultralytics (Python), exportacion a ONNX y TensorRT; no se mencionan vLLM, llama.cpp ni TGI (no aplican a vision).
+- Latencia y throughput: el servicio real proceso 5 fotogramas por ciclo cada 10 segundos por camara, con streams de 640 px de ancho, en un solo portatil y sin interrupciones. No se publican FPS ni latencias absolutas.
 
 ## Comparativa con modelos similares
 
-| Modelo | Clase(s) | Resolución | Recall lejano (<48 px) | Licencia | Disponibilidad |
+| Modelo | Parametros | Entrada | Recall largo alcance | Licencia | Notas |
 |---|---|---|---|---|---|
-| YolPe | `person` | 1280 | 0,798 | AGPL-3.0 (datos: solo investigación) | Hugging Face |
-| YOLO26s (COCO) | 80 clases | 1280 | 0,225 | AGPL-3.0 (Ultralytics) | Ultralytics |
-| YOLO26s fine-tuned en CrowdHuman sin tratamiento de `ignore` | `person` | 1280 | no disponible | depende del dataset | no disponible |
+| YolPe | ~6.0x menos que YOLO26x | 1280 | 0.798 (< 48 px) | AGPL-3.0 | Fine-tuning de YOLO26s en CrowdHuman |
+| YOLO26s (COCO) | Base de YolPe | 1280 | 0.225 (< 48 px) | AGPL-3.0 (Ultralytics) | Detector generico de 80 clases |
+| YOLO26x (COCO) | ~6.0x mas que YolPe | 1280 | no disponible por distancia | AGPL-3.0 (Ultralytics) | Iguala el recall de campo de YolPe pero 6.7x mas lento |
 
-La comparación directa con el modelo base es la única publicada por el autor. No se han encontrado en la información disponible comparativas con otros detectores de personas (por ejemplo, variantes de YOLOv8/v11 fine-tuneadas en CrowdHuman o modelos específicos de crowd counting).
+No se dispone de comparacion con otros detectores especializados en CrowdHuman (por ejemplo variantes de Faster R-CNN o modelos especificos de crowd counting) en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- Las personas muy ocluidas se siguen perdiendo: el recall global incluyendo ocluidas es 0,686 y en rango cercano apenas mejora respecto al base (0,697 → 0,710). En multitudes densas el conteo puede quedar por debajo del real.
-- En cajas grandes (256 px o más) con muchas oclusiones el rendimiento es ligeramente inferior al base (0,795 → 0,747); el autor indica que no ha identificado la causa.
-- Personas de menos de 16 px de altura se detectan con recall igual o inferior a 0,33.
-- Puede clasificar como persona objetos con forma similar (falsos positivos), según la propia model card.
-- Licencia AGPL-3.0 para el artefacto, con la restricción adicional de que CrowdHuman es solo para investigación no comercial: el uso comercial del modelo entrenado con estos datos es jurídicamente arriesgado y requiere revisión legal.
-- No es un modelo de lenguaje: no tiene capacidades de texto, tool calling, agentes ni multilingüismo.
-- En exportación a ONNX/TensorRT, `max_det` queda fijado en el grafo; si no se configura a 1000, las escenas densas se truncan.
-- No se han publicado datos de sesgo demográfico, robustez ante condiciones de iluminación extremas ni evaluación en dominios distintos de CrowdHuman.
+- Entrenado unicamente en CrowdHuman: puede generalizar peor a dominios muy distintos (vision nocturna, infrarrojo, camaras en movimiento) sin reentrenamiento.
+- Una sola clase: no detecta otros objetos ni proporciona atributos (pose, genero, edad); cualquier uso de identificacion no esta soportado.
+- Metricas de la model card calculadas sobre el dataset de validacion, no medidas en campo; el autor lo advierte explicitamente.
+- Tasa de falsos positivos de aproximadamente 10.0 % y de falsos negativos de aproximadamente 8.6 % en CrowdHuman val, lo que exige umbrales ajustados para conteo de aforo critico.
+- Licencia AGPL-3.0: el uso en servicios de red obliga a liberar el codigo fuente derivado; para uso comercial cerrado se requiere licencia alternativa de Ultralytics.
+- En escenas densas es imprescindible fijar `max_det=1000`; el valor por defecto de 300 trunca el conteo.
+- La model card esta en coreano y la documentacion en ingles es limitada; no hay ficha tecnica detallada de parametros ni de cuantizaciones.
+- Riesgo de alucinacion no aplica (modelo de vision), pero si el riesgo de detecciones espurias en texturas y patrones que se parezcan a personas.
+- Uso sujeto a normativa de proteccion de datos: el servicio de referencia difumina a las personas y no almacena video original; replicar ese patron es recomendable.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/illimax/YolPe
-- Código de entrenamiento y evaluación: https://github.com/lkw-k/YolPe
-- Dataset CrowdHuman (paper referenciado, arXiv:1805.00123): https://arxiv.org/abs/1805.00123
-- Ultralytics (framework y YOLO26): https://github.com/ultralytics/ultralytics
+- Demo (Hugging Face Space): https://huggingface.co/spaces/illimax/YolPe
+- Codigo de entrenamiento: https://github.com/lkw-k/YolPe
+- Codigo del servicio de monitorizacion (YOBA): https://github.com/lkw-k/YOBA
+- Dataset CrowdHuman (referencia arXiv:1805.00123): https://arxiv.org/abs/1805.00123
+- Ultralytics (framework): https://github.com/ultralytics/ultralytics

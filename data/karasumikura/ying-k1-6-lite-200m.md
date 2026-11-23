@@ -2,87 +2,90 @@
 
 ## Resumen
 
-Ying-K1.6-Lite-200M es un modelo de lenguaje causal de pequeno tamano (210,2 millones de parametros) desarrollado por el usuario Karasumikura y publicado en Hugging Face bajo licencia Apache 2.0. Se trata de la version afinada por instrucciones del modelo base Ying-K1.6-Lite-200M-base, entrenada durante una epoca sobre un corpus de instrucciones en chino. El modelo esta disenado para generacion de texto y conversacion en chino e ingles, con una ventana de contexto de 8192 tokens.
+Ying K1.6 Lite es un modelo de lenguaje causal de 210,2 millones de parámetros desarrollado por Karasumikura, orientado a generación de texto y diálogo en chino y en inglés. Se trata de la versión "Lite" de la familia Ying, con un enfoque explícito en eficiencia extrema: el modelo completo ocupa menos de 1 GB en bf16 y está diseñado para ejecutarse en hardware modesto, incluido el entrenamiento base en aceleradores nacionales chinos (Moore Threads MTT S4000).
 
-El modelo emplea una arquitectura transformer densa con 16 capas y una dimension oculta de 768, con un vocabulario de 16.006 tokens y pesos en bf16. Su entrenamiento combina una fase de preentrenamiento general (24,07 B tokens), una fase de continuacion en chino sobre Ultra-FineWeb-L3 (1,40 B tokens) y una fase final de ajuste por instrucciones (0,17 B tokens). El resultado es un modelo compacto orientado a tareas de generacion y extraccion de caracteristicas en entornos con recursos limitados.
+El modelo emplea una arquitectura transformer de 16 capas con atención híbrida: 12 capas de ventana deslizante (sliding window de 1024 tokens) y 4 capas de atención global, con una dimensión oculta de 768 y un vocabulario de 16.006 tokens. Soporta un contexto de 8.192 tokens y se distribuye en formato safetensors bajo licencia Apache 2.0, lo que permite uso comercial sin restricciones adicionales.
 
-Su relevancia actual radica en su tamano reducido, que permite ejecucion en CPU y GPUs de consumo, y en su licencia permisiva, lo que lo hace util para prototipado rapido, experimentacion academica y despliegues en el borde. No obstante, al ser un modelo de 200 M de parametros, sus capacidades de razonamiento y conocimiento factual son limitadas en comparacion con modelos de mayor escala.
+La relevancia de este modelo reside en su cadena de entrenamiento documentada con precisión (24,07 B tokens de preentrenamiento general, 1,40 B de continuación en chino y 316 M de instrucciones) y en la transparencia sobre sus límites: el propio autor advierte que la aritmética simple falla y que no se ha aplicado DPO ni alineamiento por preferencias. Es, por tanto, un modelo de interés para investigación en modelos pequeños, experimentación con decodificación y despliegue en entornos con recursos muy limitados, más que para producción de alta fiabilidad.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer causal denso (causal-lm) |
-| Parametros totales | 210.210.560 (210,2 M) |
+| Arquitectura | Transformer causal con atención híbrida (12 capas sliding window de 1024 + 4 capas globales) |
+| Parametros totales | 210.210.560 |
 | Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | 8192 tokens |
-| Tipos de cuantizacion | no disponible (pesos publicados en bf16; no se documentan variantes GGUF/AWQ/GPTQ) |
-| Idiomas soportados | chino (zh) e ingles (en) |
+| Longitud de contexto | 8.192 tokens |
+| Tipos de cuantizacion | no disponible (pesos publicados en bf16; no se documentan GGUF ni otras cuantizaciones) |
+| Idiomas soportados | chino (zh) e inglés (en) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (con custom_code, requiere trust_remote_code=True) |
+| Formato de pesos | safetensors (con `trust_remote_code=True`, código personalizado) |
 
 ## Arquitectura y entrenamiento
 
-Ying-K1.6-Lite-200M es un transformer causal denso con 16 capas, dimension oculta de 768 y un vocabulario de 16.006 tokens. El modelo se distribuye con codigo personalizado (custom_code), por lo que su carga en transformers requiere `trust_remote_code=True`. Los pesos estan en bf16 y el repositorio ocupa aproximadamente 0,4 GB.
+La arquitectura es un transformer decoder-only de 16 capas y 768 dimensiones ocultas, con un esquema de atención mixto: 12 capas usan ventana deslizante de 1024 tokens y 4 capas usan atención global. Este diseño reduce el coste computacional de la atención en secuencias largas manteniendo capacidad de modelar dependencias globales, y es coherente con el contexto declarado de 8.192 tokens. El vocabulario es de 16.006 tokens, deliberadamente compacto para un modelo bilingüe zh/en.
 
-El entrenamiento se estructura en tres fases: un preentrenamiento base sobre un corpus generico mixto de 24,07 B tokens; una continuacion de preentrenamiento en chino sobre Ultra-FineWeb-L3 con 1,40 B tokens; y un ajuste por instrucciones de una epoca sobre un corpus de instrucciones en chino de 0,17 B tokens. La fase de instrucciones empleo secuencias de 8192 tokens, batch de 12, un scheduler WSD (100 pasos de calentamiento, ratio de annealing 0,2), optimizadores muon (5e-3) y adam (1,5e-4), durante 2100 pasos, lo que supone aproximadamente 172 millones de tokens. En el entrenamiento solo se anade el token `<|im_end|>` al final del turno del asistente. No se documenta el uso de RLHF o DPO.
+El entrenamiento se documenta en tres fases: preentrenamiento base sobre un corpus mixto general (mm200_pt2) con 24,07 B tokens, ejecutado en 8 aceleradores Moore Threads MTT S4000; continuación de preentrenamiento en chino sobre Ultra-FineWeb-L3 en la variante `multi_style` con 1,40 B tokens; e instrucción supervisada (SFT) sobre 149.495 conversaciones chinas depuradas, con 316.456.960 tokens y 2 épocas reales (3.220 pasos, loss final 1,73). No se aplicó DPO ni ningún otro método de alineamiento por preferencias. Las fases de continuación y SFT se realizaron en RTX PRO 6000 Blackwell.
 
 ## Capacidades
 
-- Generacion de texto causal en chino e ingles.
-- Conversacion multi-turno mediante un formato de chat explicito con los tokens especiales `<|user|>`, `<|assistant|>` y `<|im_end|>`.
-- Extraccion de caracteristicas (el modelo incluye la etiqueta feature-extraction ademas de text-generation).
-- Capacidad de continuacion de texto y generacion condicionada por prompt.
-- Soporte limitado de instrucciones en chino, derivado del ajuste supervisado sobre corpus de instrucciones.
-- No se documenta soporte de tool calling, function calling, agentes, vision, audio ni modo de razonamiento explicito (thinking mode).
-- Capacidades multilingues limitadas a chino e ingles segun la model card.
+- Generación de texto y diálogo multi-turno en chino e inglés, con formato de chat definido por `<|user|>...<|assistant|>...<|im_end|>`.
+- Extracción de características (`feature-extraction`) además de generación, según los tags del repositorio.
+- Razonamiento básico y respuesta a preguntas generales, limitado por el tamaño del modelo.
+- Soporte de contexto de hasta 8.192 tokens, adecuado para conversaciones y documentos de longitud moderada.
+- No se documenta soporte de tool calling ni function calling.
+- No se documenta soporte de agentes ni razonamiento multi-paso.
+- No dispone de visión, audio ni modo "thinking".
+- Capacidad multilingüe limitada a chino e inglés; no se declaran otros idiomas.
 
 ## Casos de uso
 
-- Prototipado de chatbots en chino: el modelo puede mantener conversaciones multi-turno basicas usando el formato de chat documentado, con contexto de hasta 8192 tokens, adecuado para pruebas de concepto antes de escalar a modelos mayores.
-- Generacion de texto asistida en entornos con recursos limitados: su tamano de 210 M parametros permite ejecutarlo en CPU o en GPUs de gama baja para tareas de redaccion, resumen o continuacion de texto en chino.
-- Extraccion de caracteristicas para pipelines de NLP: al estar etiquetado como feature-extraction, puede emplearse para obtener representaciones de texto en tareas de clasificacion o clustering en chino e ingles.
-- Educacion e investigacion: modelo ligero para experimentos de ajuste fino, ablaciones de entrenamiento o comparativas de tecnicas de instruccion sin requerir infraestructura costosa.
-- Despliegue en el borde (edge): su reducido tamano y licencia Apache 2.0 permiten integrarlo en aplicaciones locales o dispositivos con memoria limitada para generacion de texto offline.
-- Generacion de datos sinteticos en chino: puede utilizarse para producir textos de entrenamiento o aumentacion de datos en dominios especificos, con supervision humana posterior dada su tendencia a la alucinacion.
+- Experimentación en investigación con modelos pequeños: el modelo sirve como banco de pruebas para estudiar el efecto de la ventana deslizante frente a la atención global en modelos de ~200 M de parámetros, con una cadena de entrenamiento documentada paso a paso.
+- Despliegue en entornos con recursos mínimos: con 210 M de parámetros en bf16 (menos de 1 GB de pesos), cabe en CPU y en GPUs de gama baja, lo que permite prototipos de chatbot en dispositivos edge o entornos sin acelerador dedicado.
+- Generación de texto asistida en chino para tareas de redacción breve: resúmenes, reformulación y respuestas conversacionales donde no se requiera precisión factual estricta, ajustando la temperatura a 0,1 según las recomendaciones del autor.
+- Filtrado y clasificación de texto mediante extracción de características: los embeddings del modelo pueden usarse para agrupar o clasificar documentos en pipelines ligeros, aprovechando el tag `feature-extraction`.
+- Base para fine-tuning específico de dominio: al estar bajo Apache 2.0 y con un vocabulario compacto, es un punto de partida económico para ajustar sobre datos propios en chino o inglés.
+- Evaluación de estrategias de decodificación: el modelo card documenta barridos de `temperature`, `top_p`, `repetition_penalty` y `frequency_penalty` con métricas de repetición de 4-gramas, lo que lo hace útil para estudiar el impacto de estos parámetros en modelos pequeños.
+- Demostraciones educativas de entrenamiento y SFT: la documentación de fases, tokens y hardware permite reproducir y explicar el ciclo completo de entrenamiento de un LLM pequeño.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks en la informacion disponible. El autor únicamente reporta métricas internas de entrenamiento (loss final de SFT de 1,73) y de repetición de 4-gramas en pruebas de decodificación, sin comparaciones estandarizadas tipo MMLU, HumanEval o GSM8K.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia en bf16: aproximadamente 0,42 GB solo para pesos (210,2 M parametros x 2 bytes), mas overhead de activaciones y cache KV; en la practica, menos de 2 GB para contextos moderados.
-- En cuantizacion de 8 bits, el peso se reduce a unos 0,21 GB; en 4 bits, a unos 0,11 GB (estimaciones teoricas, no se publican variantes cuantizadas oficiales).
-- GPU recomendadas: cualquier GPU con al menos 2-4 GB de VRAM; cabe holgadamente en RTX 3060, RTX 4060, RTX 4090, A100 y H100.
-- Cabe en GPU de consumo y tambien en CPU para inferencia en bf16/fp32, aunque con mayor latencia.
-- Opciones de despliegue: transformers con `trust_remote_code=True` es la via documentada; no se confirma soporte de vLLM, llama.cpp, Ollama o TGI al no publicarse pesos GGUF ni configuraciones para esos motores.
-- Latencia y throughput estimados: no disponibles.
+- VRAM estimada para inferencia: menos de 1 GB en bf16 para los pesos (210 M de parámetros); en fp32, alrededor de 0,85 GB solo de pesos, más overhead de activaciones y caché KV.
+- GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM; el modelo se entrenó parcialmente en Moore Threads MTT S4000 y RTX PRO 6000 Blackwell, pero para inferencia no requiere hardware de gama alta.
+- Cabe en GPU de consumo: sí, en cualquier GPU consumer moderna (GTX 1650, RTX 3060, RTX 4090) e incluso en CPU.
+- Opciones de despliegue: `transformers` con `trust_remote_code=True` es la vía documentada; no se documentan integraciones con vLLM, llama.cpp, Ollama ni TGI, y no se publican pesos GGUF.
+- Latencia y throughput estimados: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Licencia | Idiomas | Notas |
 |---|---|---|---|---|---|
-| Ying-K1.6-Lite-200M | 210,2 M | 8192 | zh, en | Apache 2.0 | Hugging Face |
-| Qwen2.5-0.5B | 494 M | 32.768 | multilingue | Apache 2.0 | Hugging Face |
-| SmolLM2-135M | 135 M | 8192 | en (principalmente) | Apache 2.0 | Hugging Face |
-| TinyLlama-1.1B | 1,1 B | 2048 | en (principalmente) | Apache 2.0 | Hugging Face |
+| Ying K1.6 Lite 200M | 210 M | 8.192 | Apache 2.0 | zh, en | Atención híbrida sliding/global; SFT sin DPO |
+| Qwen2.5-0.5B | ~500 M | 32.768 | Apache 2.0 | multilingüe | Mayor tamaño y contexto; requiere más VRAM |
+| SmolLM2-135M | 135 M | 8.192 | Apache 2.0 | en (principalmente) | Enfoque en inglés; sin soporte chino declarado |
+| TinyLlama-1.1B | 1,1 B | 2.048 | Apache 2.0 | en (principalmente) | Mayor tamaño, contexto menor, sin chino nativo |
 
-La comparativa se basa en caracteristicas publicas de modelos de tamano similar; no se dispone de datos de rendimiento comparativo para Ying-K1.6-Lite-200M. Frente a SmolLM2-135M, Ying ofrece mayor tamano y soporte nativo de chino, mientras que SmolLM2 esta mas orientado al ingles. Qwen2.5-0.5B supera en parametros y contexto, y TinyLlama-1.1B es significativamente mayor pero con contexto menor.
+Los datos de los modelos comparables corresponden a sus especificaciones públicas habituales; no se dispone de comparaciones de rendimiento directas con Ying K1.6 Lite en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Modelo de 210 M parametros: capacidad limitada de razonamiento, conocimiento factual y coherencia en tareas complejas; propenso a alucinaciones, especialmente en dominios especializados.
-- Sesgos potenciales derivados del corpus de preentrenamiento generico y del corpus de instrucciones en chino; no se documentan evaluaciones de sesgo.
-- Cobertura linguistica limitada a chino e ingles; el rendimiento en otros idiomas no esta garantizado.
-- Requiere `trust_remote_code=True`, lo que implica ejecutar codigo personalizado del autor; conviene revisar el codigo antes de usarlo en produccion.
-- No se documentan variantes cuantizadas oficiales (GGUF, AWQ, GPTQ), lo que puede limitar el despliegue en motores de inferencia optimizados.
-- Licencia Apache 2.0 permite uso comercial, pero el modelo se distribuye sin garantias y sin evaluaciones de seguridad documentadas.
-- El formato de chat es estricto: el turno del usuario no debe cerrarse con `<|im_end|>`; un uso incorrecto degrada la calidad de las respuestas.
+- Aritmética simple: el propio autor advierte que operaciones como 1+1 pueden fallar; es una limitación de capacidad del tamaño de 210 M.
+- Alucinación de identidad y hechos: con temperatura superior a 0,3 el modelo empieza a inventar identidad y datos; a 0,7 llega a autodenominarse "Qwen" o "material genético humano".
+- Sin alineamiento por preferencias: no se aplicó DPO ni RLHF, por lo que no hay garantías de comportamiento alineado ni de rechazo de peticiones problemáticas.
+- Sensibilidad extrema a los parámetros de muestreo: el autor documenta que los valores óptimos no son combinables entre sí y que temperature 0 provoca bucles de repetición.
+- Sesgos: no se documenta ninguna evaluación de sesgos; el corpus de SFT es exclusivamente chino, lo que puede introducir sesgos culturales y lingüísticos.
+- Cobertura de idiomas limitada a chino e inglés; el rendimiento en inglés no está cuantificado.
+- Licencia Apache 2.0: permite uso comercial sin restricciones adicionales, pero el autor no ofrece garantías sobre idoneidad para producción.
+- Requiere `trust_remote_code=True`, lo que implica ejecutar código personalizado del repositorio; conviene auditar dicho código antes de desplegarlo.
+- No hay pesos cuantizados publicados (GGUF, AWQ, GPTQ), lo que limita las opciones de despliegue en herramientas estándar de inferencia.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/Karasumikura/Ying-K1.6-Lite-200M
-- Pesos base: https://huggingface.co/Karasumikura/Ying-K1.6-Lite-200M-base
-- Dataset de continuacion en chino (Ultra-FineWeb-L3): no disponible como enlace directo en la informacion proporcionada
-- Paper, blog o demo: no disponible
+- Corpus Ultra-FineWeb-L3 (referenciado en la model card): no disponible como enlace directo en la información proporcionada
+- Paper o blog técnico del modelo: no disponible
+- Repositorio de código o demo: no disponible

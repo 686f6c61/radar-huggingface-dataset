@@ -2,100 +2,106 @@
 
 ## Resumen
 
-RhymeAI Gemma 4 (E2B / E4B) es una familia de ajustes finos LoRA sobre los modelos Gemma 4 E2B-it y E4B-it de Google (distribuidos por Unsloth), publicados por el usuario Shayde182 para la aplicacion nativa de composicion de canciones RhymeAI / Writers Block. El modelo resuelve una tarea muy concreta: asistir en la escritura de letras dentro de la propia aplicacion, siguiendo un formato de prompt fijo y ejecutandose 100% offline sobre llama.cpp en dispositivos moviles. Se distribuye unicamente en formato GGUF cuantizado, con variantes Q4_K_M de 3,2 GB (E2B) y 5,0 GB (E4B) y adaptadores LoRA en F16 de 48 MB y 70 MB.
+RhymeAI Gemma 4 es una familia de ajustes finos (LoRA/QLoRA) sobre los modelos Gemma 4 de Google, orientada especificamente a la escritura de canciones en una aplicacion nativa de composicion llamada RhymeAI / Writers Block. El autor, Shayde182, publica los pesos en formato GGUF cuantizado (Q4_K_M) para ejecucion totalmente offline mediante llama.cpp en dispositivos de consumo, desde telefonos con 4-8 GB de RAM hasta equipos de escritorio. El repositorio combina tres modelos base distintos: las variantes pequenas Gemma 4 E2B-it y E4B-it (ajustadas con QLoRA) y la variante mayor Gemma 4 12B-it (con 11.907.350.576 parametros reales en safetensors).
 
-La relevancia de esta ficha esta en su naturaleza de artefacto de produccion: no es un modelo generalista, sino un ajuste orientado a cuatro tareas de escritura (sugerencia de siguiente linea con rima, reescritura de pasajes, reescritura de palabra unica y sinonimos). El autor reporta mejoras muy grandes en el cumplimiento de formato y en la tasa de rima correcta respecto a los modelos base, lo que ilustra el impacto de un ajuste LoRA pequeno (r=16) cuando se entrena con datos verificados automaticamente.
+El modelo resuelve un problema muy concreto: hacer que un LLM generico respete el formato exacto de prompt de la aplicacion y produzca sugerencias de letras con rima correcta, reescrituras de pasajes, reescrituras de palabra unica y sinonimos. La relevancia actual reside en su enfoque de despliegue en dispositivo (on-device), sin dependencia de la nube, y en la mejora medida del ajuste fino frente al modelo base: por ejemplo, el porcentaje de respuestas con formato valido en sugerencias pasa del 4 % al 96 % en E2B y del 4 % al 83 % en E4B.
 
-El repositorio tiene 153 descargas y 0 likes en Hugging Face, con licencia Apache 2.0, y fue creado el 8 de julio de 2026 y actualizado el 6 de octubre de 2026. El dato de parametros via safetensors en el repo es 25.337.856, coherente con el tamano de los adaptadores LoRA mas que con el modelo base completo, cuyo recuento no se detalla en la informacion disponible.
+La licencia es Apache 2.0 y los pesos se distribuyen como GGUF, con tamanos de 3,2 GB (E2B), 5,0 GB (E4B) y 7,38 GB (12B v7). El repositorio ocupa 40,8 GB e incluye tambien adaptadores LoRA en F16 de 48 MB y 70 MB.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (modelo base de la familia Gemma 4; variantes internas no detalladas en la informacion disponible) |
-| Parametros totales | 25.337.856 segun safetensors del repo (corresponde a los adaptadores LoRA; el recuento del modelo base no se detalla) |
-| Parametros activos | no disponible (no se indica que los modelos base sean MoE) |
-| Longitud de contexto | 2048 tokens en la configuracion de evaluacion del autor; contexto nativo del modelo base no disponible |
+| Arquitectura | Transformer decoder-only (Gemma 4); ajuste fino QLoRA sobre los modelos base |
+| Parametros totales | 11.907.350.576 (variante 12B); E2B y E4B no disponibles en la informacion |
+| Parametros activos | no disponible (no se indica que sea MoE) |
+| Longitud de contexto | 2048 tokens (contexto usado en la evaluacion de la aplicacion) |
 | Tipos de cuantizacion | Q4_K_M (GGUF); adaptadores LoRA en F16 |
 | Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (Q4_K_M) y adaptadores LoRA GGUF F16 |
+| Formato de pesos | GGUF (llama.cpp); adaptadores LoRA en GGUF F16; safetensors para el recuento de parametros del 12B |
 
 ## Arquitectura y entrenamiento
 
-Los modelos son ajustes finos mediante QLoRA sobre Gemma 4 E2B-it y E4B-it. La configuracion de entrenamiento declarada es r=16, alpha=16, 2 epocas, learning rate 2e-4 con scheduler coseno, batch efectivo de 16 y perdida con mascara sobre el prompt (prompt-masked loss). El conjunto de entrenamiento consta de 4.947 ejemplos sinteticos generados a partir de letras semilla originales y verificados automaticamente por maquina antes del entrenamiento para comprobar la correccion de rima y de formato (comprobacion de rima con el diccionario CMU). El autor afirma que no se usaron letras con copyright ni datos de usuarios.
+Los modelos E2B y E4B son ajustes QLoRA de `unsloth/gemma-4-E2B-it` y `unsloth/gemma-4-E4B-it`, con rango r=16, alpha=16, 2 epocas, learning rate 2e-4 con decaimiento cosine, batch efectivo de 16 y loss enmascarada sobre el prompt. El entrenamiento se realizo con Unsloth sobre una GPU Colab L4 y los pesos se fusionaron y cuantizaron con llama.cpp (`llama-export-lora` + `llama-quantize`, Q4_K_M). El conjunto de datos consta de 4.947 ejemplos sinteticos generados a partir de letras semilla originales y verificados automaticamente en rima y formato con el diccionario CMU antes del entrenamiento; no se usaron letras con copyright ni datos de usuario.
 
-El entrenamiento se realizo con Unsloth sobre una GPU Colab L4; posteriormente los adaptadores se fusionaron y cuantizaron con llama.cpp (`llama-export-lora` + `llama-quantize`, Q4_K_M). El formato de prompt esperado es el crudo de Gemma con marcadores de turno (`<start_of_turn>user\n...` y `<start_of_turn>model\n`) y la cadena de parada `<end_of_turn>`, lo que obliga a respetar exactamente ese esquema para obtener el comportamiento entrenado.
+La variante 12B v7 se basa en `google/gemma-4-12B-it` y emplea el envelope nativo de Gemma 4 con un unico BOS, segun su fichero de ajustes. El formato de prompt de las variantes E2B/E4B usa los marcadores de turno crudos de Gemma (`<start_of_turn>user\n...` / `<start_of_turn>model\n`) con stop string `<end_of_turn>`. El ajuste esta especializado en cuatro tareas: sugerencias de siguiente linea con restriccion de rima, reescritura de pasajes, reescritura de palabra unica y sinonimos.
 
 ## Capacidades
 
-- Generacion de texto creativo orientado a letras de canciones.
-- Sugerencia de siguiente linea con restriccion de rima, siguiendo el formato de la aplicacion.
-- Reescritura de pasajes completos de una letra.
-- Reescritura de una unica palabra dentro de una linea.
-- Generacion de sinonimos.
-- Ejecucion totalmente offline en el dispositivo (on-device) mediante llama.cpp.
-- Soporte de tool calling / function calling: no disponible (no se menciona).
-- Soporte de agentes y razonamiento multi-paso: no disponible (no es un objetivo del ajuste).
-- Capacidades multilingues: no disponible.
-- Capacidades especiales: modo de razonamiento, vision o audio: no disponibles.
+- Generacion de texto conversacional en el formato exacto de la aplicacion de composicion.
+- Sugerencia de siguiente linea sujeta a restricciones de rima (verificada contra diccionario CMU).
+- Reescritura de pasajes completos manteniendo el esquema de rima.
+- Reescritura de palabras individuales y generacion de sinonimos.
+- Ejecucion totalmente offline en dispositivo mediante llama.cpp.
+- Compatibilidad con endpoints (tag `endpoints_compatible`) y uso conversacional.
+- Soporte de adaptadores LoRA separados para reutilizacion sobre los modelos base.
+- No se documentan capacidades de vision, audio, tool calling ni agentes multi-paso.
 
 ## Casos de uso
 
-- Asistente de composicion integrado en app movil: el modelo corre en el telefono mediante llama.cpp (3,2 GB el E2B Q4_K_M y 5,0 GB el E4B Q4_K_M), de modo que la app puede ofrecer asistencia de escritura sin enviar la letra del usuario a ningun servidor.
-- Sugerencia de rimas en tiempo real: el ajuste eleva la tasa de formato correcto del 4% al 96% en el E2B y la tasa de rima del 60% al 92%, lo que lo hace viable como autocompletado de lineas mientras el usuario escribe.
-- Reescritura de estrofas: la tarea de reescritura de pasaje pasa del 0% de formato correcto en el E2B base al 100% en el ajustado, lo que permite ofrecer "reescribe esta estrofa" como funcionalidad fiable.
-- Sustitucion de palabras y busqueda de sinonimos: util para evitar repeticiones o ajustar la metrica; el E4B ajustado alcanza un 78% en la tarea de reescritura de palabra unica.
-- Escritura creativa sin conexion: escenarios sin red (aviones, zonas rurales, festivales) donde el modelo debe funcionar igualmente al estar embebido en la app.
-- Prototipado rapido en escritorio con llama.cpp: los mismos GGUF permiten probar la funcionalidad en un portatil antes de empaquetarla en movil.
-- Educacion musical y talleres de letras: el modelo puede usarse como herramienta de apoyo en ejercicios guiados de rima y reescritura, siempre con supervision humana.
-- Investigacion sobre ajustes LoRA pequenos: el par de adaptadores F16 (48 MB y 70 MB) sirve como caso de estudio reproducible de QLoRA aplicado a una tarea estrecha y verificable.
+- Asistente de composicion integrado en la app Writers Block: el modelo consume el prompt exacto de la aplicacion y devuelve sugerencias de siguiente linea con rima, funcionando sin conexion en telefonos de 4-8 GB de RAM con la variante E2B Q4_K_M de 3,2 GB.
+- Sugerencia de rimas en tiempo real durante la escritura: la tasa de acierto de rima medida sube del 60 % al 92 % en E2B y del 82 % al 84 % en E4B, lo que lo hace util como ayuda interactiva mientras el usuario teclea.
+- Reescritura de estrofas o pasajes: con formato valido del 100 % en E2B y 83 % en E4B en la evaluacion de la aplicacion, permite ofrecer variantes alternativas de un fragmento conservando la metrica y la rima.
+- Sustitucion de palabras y sinonimos: util para resolver repeticiones o mejorar la rima de una palabra concreta, con 1.046/1.080 aciertos en reescritura de palabra unica en E2B v6.
+- Despliegue en dispositivos de gama alta: la variante E4B de 5,0 GB esta pensada para equipos con 10 GB o mas de RAM, ampliando la calidad sin salir del dispositivo.
+- Uso en escritorio o Mac con la variante 12B v7 de 7,38 GB: ofrece opciones de rima con mayor calidad a costa de latencia (2,110 s de media en Mac frente a 0,553 s en E2B), adecuada para flujos de trabajo no interactivos o equipos con mas recursos.
+- Integracion en pipelines de aplicaciones de escritorio mediante llama.cpp: el formato GGUF y los adaptadores LoRA permiten empaquetar el modelo en instaladores nativos sin servidores externos.
 
 ## Benchmarks y rendimiento
 
-Resultados del arnes de evaluacion de 43 casos del autor, con temperatura 0,8, top-k 40, top-p 0,95 y contexto de 2048 tokens:
+Evaluacion con el arnes de 43 casos de la aplicacion (temperatura 0,8 / top-k 40 / top-p 0,95, contexto 2048):
 
-| Tarea | E2B base → ajustado | E4B base → ajustado |
+| Tarea | E2B stock → ajustado | E4B stock → ajustado |
 |---|---|---|
-| Sugerencias — formato correcto | 4% → 96% | 4% → 83% |
-| Sugerencias — rima correcta | 60% → 92% | 82% → 84% |
-| Reescritura de pasaje — formato | 0% → 100% | 33% → 83% |
-| Reescritura de palabra unica | 56% → 22% | 11% → 78% |
+| Sugerencias — formato valido | 4 % → 96 % | 4 % → 83 % |
+| Sugerencias — acierto de rima | 60 % → 92 % | 82 % → 84 % |
+| Reescritura de pasaje — formato | 0 % → 100 % | 33 % → 83 % |
+| Reescritura de palabra unica | 56 % → 22 % | 11 % → 78 % |
 
-No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K u otros) en la informacion disponible.
+Comparativa E2B v6 frente a E2B v2.1 sobre un holdout nuevo de 60 canciones (1.140 prompts × 3 semillas, juez ciego por pares, intervalos de confianza del 95 % agrupados por cancion): preferencia global del juez +16,9 puntos [+9,2, +24,9], impulsada por reescrituras de pasaje (185 victorias / 60 derrotas / 25 empates); sugerencias de siguiente linea aproximadamente iguales (neto +2,2 puntos [−6,2, +11,2]); reescritura de palabra unica 1.046/1.080 frente a 1.052/1.080; reescritura de pasaje 534/540 frente a 525/540; sinonimos y visualizacion de seis lineas iguales.
+
+Variante 12B v7: prueba focalizada de 48 casos SIMPLE/VERSE con 93,75 % de rendimiento diagnostico de opciones acotadas y 30/48 aprobados estrictos, con 9 respuestas con lineas sobrantes frente a 0 en E2B. Latencia media medida en Mac de 2,110 s frente a 0,553 s en E2B. El autor advierte que son resultados de listas permitidas de la aplicacion y NEW_SOUND, no una afirmacion de calidad universal.
 
 ## Requisitos de hardware
 
-- VRAM/RAM estimada para inferencia: E2B Q4_K_M ocupa 3,2 GB y E4B Q4_K_M 5,0 GB de peso en disco; el consumo en ejecucion sera algo superior por el contexto y los buffers de llama.cpp.
-- Perfil objetivo declarado por el autor: telefonos de gama media con 4–8 GB de RAM para el E2B y dispositivos grandes con 10 GB o mas de RAM para el E4B.
-- Cabe en GPU de consumo: si, cualquier GPU con 4–8 GB de VRAM puede ejecutar estas cuantizaciones (por ejemplo, RTX 3060/4060 en adelante), aunque el destino previsto es CPU movil.
-- Opciones de despliegue: llama.cpp (motor principal), y por compatibilidad de formato GGUF, tambien Ollama o bindings basados en llama.cpp. El autor no menciona vLLM ni TGI, que no consumen GGUF de forma nativa.
-- Latencia y throughput estimados: no disponibles (el autor no publica tiempos de generacion).
+- VRAM/RAM estimada: E2B Q4_K_M requiere 3,2 GB de almacenamiento y esta pensado para telefonos con 4-8 GB de RAM; E4B Q4_K_M ocupa 5,0 GB y apunta a dispositivos con 10 GB o mas; la variante 12B v7 Q4_K_M ocupa 7,38 GB.
+- GPU recomendadas: no se especifican GPU concretas en la informacion; el entrenamiento se realizo en una GPU Colab L4.
+- Cabe en GPU de consumo: si, las variantes E2B y E4B en Q4_K_M caben en GPUs de consumo con suficiente VRAM (3,2 GB y 5,0 GB respectivamente); la 12B de 7,38 GB tambien es viable en GPUs de consumo de gama alta.
+- Opciones de despliegue: llama.cpp (herramienta con la que se generaron y cuantizaron los pesos); no se documentan vLLM, TGI, Ollama ni otros motores.
+- Latencia y throughput: latencia media de 2,110 s en Mac para la 12B v7 y 0,553 s para E2B en la misma prueba; throughput no disponible.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos de benchmarks comparables con otros modelos en la informacion proporcionada; la unica comparacion documentada es interna, entre los modelos base y sus versiones ajustadas.
-
-| Version | Peso Q4_K_M | Formato sugerencias | Rima sugerencias | Formato pasaje | Palabra unica |
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| Gemma 4 E2B-rhymeai | 3,2 GB | 96% | 92% | 100% | 22% |
-| Gemma 4 E4B-rhymeai | 5,0 GB | 83% | 84% | 83% | 78% |
+| RhymeAI Gemma 4 E2B (Q4_K_M) | no disponible | 2048 (evaluacion) | Apache 2.0 | GGUF | 3,2 GB; formato de sugerencias 96 %, rima 92 % |
+| RhymeAI Gemma 4 E4B (Q4_K_M) | no disponible | 2048 (evaluacion) | Apache 2.0 | GGUF | 5,0 GB; formato de sugerencias 83 %, reescritura de palabra 78 % |
+| RhymeAI Gemma 4 12B v7 (Q4_K_M) | 11.907.350.576 | no disponible | Apache 2.0 | GGUF | 7,38 GB; 30/48 aprobados estrictos, latencia 2,110 s en Mac |
+| Gemma 4 E2B-it (stock) | no disponible | no disponible | no disponible | no disponible | Base sin ajuste: formato de sugerencias 4 %, rima 60 % |
+| Gemma 4 E4B-it (stock) | no disponible | no disponible | no disponible | no disponible | Base sin ajuste: formato de sugerencias 4 %, rima 82 % |
 
-Como referencia de categoria, cabria comparar con otros asistentes de escritura on-device, pero no hay datos disponibles en la informacion proporcionada.
+La informacion disponible no incluye comparaciones con otros modelos de la misma categoria fuera de los modelos base de Gemma 4.
 
 ## Limitaciones y advertencias
 
-- Sesgos conocidos: no disponibles (el autor no documenta analisis de sesgos).
-- Riesgo de alucinacion: no evaluado; al ser un modelo generativo creativo, puede producir rimas o palabras inventadas o forzadas, especialmente en la variante E2B en la tarea de reescritura de palabra unica (22% de exito, por debajo del 56% del modelo base).
-- Limitaciones de contexto: el arnes de evaluacion usa 2048 tokens de contexto, lo que limita la cantidad de letra que cabe en una sola generacion; el contexto nativo del modelo base no se especifica.
-- Limitaciones de idioma: no se declaran idiomas soportados; el formato de prompt esta en ingles y no hay evidencia de buen rendimiento en castellano u otros idiomas.
-- Restricciones de licencia: la licencia es Apache 2.0, lo que en principio permite uso comercial, pero conviene revisar las condiciones de la licencia del modelo base Gemma 4, ya que los terminos de uso de Google pueden imponer restricciones adicionales.
-- Caveats para produccion: el modelo espera de forma estricta los marcadores de turno de Gemma (`<start_of_turn>` / `<end_of_turn>`); cualquier desviacion del formato entrenado degradara el cumplimiento de formato. Ademas, la evaluacion se basa en un unico arnes de 43 casos del propio autor, sin validacion externa ni comparacion con modelos de referencia.
-- El dato de parametros safetensors (25.337.856) parece corresponder a los adaptadores y no al modelo base, por lo que no debe interpretarse como el tamano real del modelo desplegado.
+- El ajuste esta especializado en cuatro tareas concretas de la aplicacion; fuera de ese formato de prompt el rendimiento no esta garantizado.
+- La evaluacion se realizo con el arnes propio de la aplicacion (43 casos) y con listas permitidas de la aplicacion; el autor advierte que no constituyen una afirmacion de calidad universal ni de nivel humano.
+- En la variante 12B v7 se observaron 9 respuestas con lineas sobrantes en 48 casos, frente a 0 en E2B.
+- La reescritura de palabra unica empeoro en E2B stock frente a ajustado en la evaluacion original (56 % → 22 %), lo que sugiere sensibilidad al formato y a la version del ajuste.
+- Riesgo de alucinacion no cuantificado en la informacion disponible.
+- Sesgos conocidos: no disponibles.
+- Idiomas soportados: no disponibles; el entrenamiento se realizo sobre letras semilla en un idioma no especificado.
+- Restricciones de licencia: Apache 2.0 permite uso comercial, pero conviene verificar las condiciones de los modelos base de Gemma 4 de Google.
+- Los datos de entrenamiento son sinteticos y verificados automaticamente; no se usaron letras con copyright ni datos de usuario, lo que reduce pero no elimina el riesgo de reproduccion de material protegido.
+- El contexto documentado para la evaluacion es de 2048 tokens; usos con prompts mas largos no estan validados.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/Shayde182/rhymeai-gemma-4-gguf
-- Modelo base: https://huggingface.co/unsloth/gemma-4-E2B-it
-- Modelo base: https://huggingface.co/unsloth/gemma-4-E4B-it
-- Paper, blog, repositorio o demo adicionales: no disponibles. La busqueda web realizada no devolvio resultados relacionados con el modelo (los resultados obtenidos versaban sobre el fruto del jacquier y recetas de cocina, sin relacion con esta ficha).
+- Repositorio Hugging Face: https://huggingface.co/Shayde182/rhymeai-gemma-4-gguf
+- Modelo base E2B: https://huggingface.co/unsloth/gemma-4-E2B-it
+- Modelo base E4B: https://huggingface.co/unsloth/gemma-4-E4B-it
+- Modelo base 12B: https://huggingface.co/google/gemma-4-12B-it
+- Ficha y limitaciones de la variante 12B v7: gemma-4-12B-it-rhymeai-v7-model-card.md (referenciado en la model card)
+- Ajustes exactos de la variante 12B v7: gemma-4-12B-it-rhymeai-v7-settings.json (referenciado en la model card)
+- Suma de verificacion SHA-256 de la variante 12B v7: gemma-4-12B-it-rhymeai-v7-Q4_K_M.gguf.sha256 (referenciado en la model card)

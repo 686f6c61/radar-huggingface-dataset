@@ -2,82 +2,96 @@
 
 ## Resumen
 
-Schattenblume-31B es un modelo de lenguaje de gran tamaño con 30.697.345.596 parámetros (~30,7B), resultado de un merge de modelos creado por Nimbz y cuantizado posteriormente a formato GGUF por mradermacher. Según las etiquetas de la model card, se trata de un modelo basado en la arquitectura Gemma (etiqueta `gemma-4`), orientado a tareas de razonamiento, escritura creativa, roleplay, conversación y storytelling, con un comportamiento de "bajo rechazo" (low-refusal) que reduce la censura en las respuestas. También incluye archivos `mmproj` (proyección multimodal), lo que sugiere capacidades de visión adicionales, aunque no se detallan en la documentación.
+Schattenblume-31B-GGUF es la version cuantizada en formato GGUF del modelo Schattenblume-31B, un merge de modelos de 30.697.345.596 parametros (aproximadamente 31B) construido con mergekit y orientado a escritura creativa, roleplay conversacional y generacion de personajes. El trabajo de cuantizacion lo firma mradermacher, un publicador habitual de cuantizaciones GGUF en Hugging Face, mientras que el modelo original es obra de Nimbz. La ficha que nos ocupa corresponde exclusivamente a los pesos cuantizados, no al modelo base.
 
-La relevancia de este modelo radica en su naturaleza de merge: combina las fortalezas de varios modelos base para obtener un equilibrio entre capacidades de razonamiento y creatividad, con una licencia Apache 2.0 que permite uso comercial sin restricciones. La versión GGUF facilita su despliegue local en CPU y GPU mediante herramientas como llama.cpp u Ollama, con múltiples niveles de cuantización para adaptarse a distintos presupuestos de hardware.
+El modelo se presenta como un merge que combina modos de razonamiento y no razonamiento, con etiquetas que apuntan a un sesgo de baja negativa a rechazar peticiones (low-refusal) y a contenido NSFW, ademas de un rendimiento declarado en conversacion y narracion. La arquitectura subyacente se etiqueta como "gemma-4", lo que sugiere una base de la familia Gemma, aunque la model card no detalla la composicion exacta del merge ni los modelos que lo integran.
 
-Al tratarse de una cuantización estática realizada por un tercero, la información disponible se limita a los detalles técnicos de los archivos GGUF. No se han publicado especificaciones sobre el entrenamiento, la arquitectura interna ni los benchmarks del modelo original, por lo que gran parte de los datos técnicos deben considerarse no disponibles.
+Su relevancia practica es acotada pero clara: ofrece un modelo de 31B en cuantizaciones que van desde los 12,0 GB (Q2_K) hasta los 32,7 GB (Q8_0), lo que permite desplegarlo en hardware de consumo de gama alta y en servidores modestos, algo imposible con los pesos completos en safetensors (213,9 GB de repositorio). La licencia Apache 2.0 facilita su uso comercial, aunque el contenido NSFW y la ausencia de benchmarks publicados exigen cautela en entornos productivos.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | No disponible (etiquetado como `gemma-4`, presumiblemente Transformer denso, sin confirmar) |
-| Parametros totales | 30.697.345.596 |
-| Parametros activos | No aplica (modelo denso) |
-| Longitud de contexto | No disponible |
-| Tipos de cuantizacion | GGUF: Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q8_0; además mmproj-Q8_0 y mmproj-f16 |
-| Idiomas soportados | Inglés (etiqueta `en`) |
-| Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (cuantizaciones), safetensors (modelo original en Nimbz/Schattenblume-31B) |
+| Arquitectura | no disponible (etiquetado como "gemma-4" en los tags; merge construido con mergekit) |
+| Parametros totales | 30.697.345.596 (aproximadamente 31B) |
+| Parametros activos | no aplica (no se indica que sea MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, ademas de mmproj-Q8_0 y mmproj-f16 (suplemento multimodal) |
+| Idiomas soportados | en (ingles) |
+| Licencia | apache-2.0 |
+| Formato de pesos | GGUF (cuantizaciones estaticas); el modelo base en safetensors |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información detallada sobre la arquitectura interna del modelo. Las etiquetas indican que es un merge creado con mergekit, combinando múltiples modelos base, y que la arquitectura subyacente corresponde a la familia Gemma (etiqueta `gemma-4`). Sin embargo, no se especifican los componentes del merge, el número de capas, la dimensionalidad del modelo ni el método de fusión utilizado (por ejemplo, SLERP, TIES, etc.).
+La informacion disponible no describe la arquitectura interna del modelo base. Los tags lo etiquetan como "gemma-4" y como "merge" generado con mergekit, lo que indica que Schattenblume-31B es el resultado de fusionar pesos de varios modelos, no un entrenamiento desde cero. No se especifican los modelos componentes del merge, la estrategia de fusion (SLERP, TIES, DARE, model stock, etc.), el numero de tokens de entrenamiento ni si hubo fases de RLHF o DPO.
 
-Tampoco hay datos sobre el proceso de entrenamiento: número de tokens, composición del dataset, uso de RLHF, DPO u otras técnicas de alineación. La etiqueta `low-refusal` sugiere que el modelo ha sido ajustado o seleccionado para minimizar respuestas de rechazo, lo que es habitual en modelos orientados a roleplay y escritura creativa sin restricciones, pero no se confirma el método empleado.
-
-La presencia de archivos `mmproj` indica que el modelo incorpora un proyector multimodal, probablemente para procesar imágenes, aunque no se documenta su funcionamiento ni la arquitectura del codificador visual.
+Tampoco se documentan innovaciones tecnicas como decodificacion especulativa, atencion lineal o modos de pensamiento explicitos. Las etiquetas "reasoning" y "non-reasoning" sugieren que el merge busca conservar capacidades de razonamiento del modelo original junto con modos de respuesta directa, pero la model card no aporta detalles sobre como se activan o alternan. La unica informacion tecnica concreta del repositorio es el proceso de cuantizacion: cuantizaciones estaticas con convert_type hf y output_tensor_quantised, y una variante i1 con cuantizaciones ponderadas/imatrix publicada en un repositorio aparte.
 
 ## Capacidades
 
-- Generación de texto libre con énfasis en escritura creativa, narrativa y storytelling.
-- Razonamiento y resolución de problemas (etiqueta `reasoning`), aunque también se incluye `non-reasoning` como alternativa.
-- Conversación multi-turno y roleplay de personajes (etiquetas `conversational`, `character-rp`).
-- Comportamiento de bajo rechazo (`low-refusal`), lo que reduce las negativas ante solicitudes de contenido sensible o NSFW.
-- Capacidades multimodales parciales (archivos `mmproj`), aunque sin documentación sobre el alcance exacto.
-- Soporte de tool calling y function calling: no disponible.
-- Soporte de agentes y multi-step reasoning: no disponible.
-- Capacidades multilingües: limitadas al inglés, según la etiqueta `en`.
+- Generacion de texto en ingles con enfasis en escritura creativa, narracion y storytelling.
+- Roleplay conversacional y character-RP: mantiene personajes y estilo a lo largo de intercambios multi-turno.
+- Modos de razonamiento y no razonamiento segun los tags del autor, aunque sin documentacion sobre su activacion.
+- Baja negativa a rechazar peticiones (low-refusal), orientada a contenido creativo sin restricciones excesivas.
+- Generacion de contenido NSFW, explicitamente etiquetado por el autor.
+- Soporte multimodal parcial: el repositorio incluye ficheros mmproj (Q8_0 y f16) como suplemento para modelos multimodales, lo que sugiere capacidad de vision si se usa con el runtime adecuado; no se detalla en la model card.
+- Soporte de tool calling / function calling: no disponible.
+- Soporte de agentes y razonamiento multi-paso: no disponible como capacidad documentada.
+- Capacidades multilingues: solo ingles declarado.
 
 ## Casos de uso
 
-- Roleplay y juegos de personajes: el modelo puede mantener conversaciones prolongadas con identidades ficticias, gracias a su orientación a `character-rp` y `storytelling`. Se usaría con un frontend como SillyTavern o KoboldAI, cargando la cuantización Q4_K_M en una GPU de 24 GB.
-- Escritura creativa asistida: generación de borradores de ficción, diálogos y descripciones con un estilo fluido y poco restrictivo. Adecuado para autores que necesitan un asistente que no imponga censura temática.
-- Generación de contenido narrativo para juegos: creación de misiones, diálogos de NPCs y tramas ramificadas en desarrollo de videojuegos independientes.
-- Asistente conversacional con baja censura: para entornos donde se requiere tratar temas delicados sin respuestas evasivas, como investigación sociológica o simulación de entrevistas.
-- Prototipado rápido de aplicaciones de chat: al ser un GGUF, se puede integrar en pipelines locales con llama.cpp u Ollama para pruebas sin depender de APIs externas.
-- Experimentación con modelos merge: útil para desarrolladores que quieran estudiar el comportamiento de un merge de 31B en tareas de razonamiento y creatividad, comparándolo con sus modelos base.
+- Roleplay y personajes conversacionales: el modelo esta etiquetado especificamente para character-RP, de modo que puede mantener la coherencia de un personaje a lo largo de sesiones largas. La cuantizacion Q4_K_M (18,8 GB) es un punto de partida razonable para prototipos en una GPU de 24 GB.
+- Escritura creativa y narrativa: adecuado para generar relatos, dialogos y borradores literarios en ingles, gracias a su orientacion a storytelling y a la baja negativa a rechazar premisas creativas.
+- Generacion de contenido para videojuegos y narrativa interactiva: puede alimentar dialogos ramificados de NPC en prototipos, ejecutandose en local con llama.cpp u Ollama y sin depender de APIs externas.
+- Experimentacion con merges en investigacion: util para estudiar el comportamiento de modelos fusionados con mergekit en tareas creativas, comparando cuantizaciones (Q4_K_S frente a Q8_0) y midiendo el impacto de la cuantizacion en la calidad narrativa.
+- Despliegue local en hardware de consumo: con Q2_K (12,0 GB) o Q3_K_M (15,4 GB) cabe en GPUs de 16-24 GB, lo que permite ejecutar un modelo de 31B en estaciones de trabajo sin acceso a clústeres.
+- Generacion de contenido NSFW controlada: para proyectos que requieran este tipo de material con salvaguardas propias, el modelo declara explicitamente este uso; conviene aislarlo con filtros y politicas de uso en el pipeline.
+- Fine-tuning ligero o adaptacion de estilo: los pesos GGUF no son ideales para entrenamiento, pero el modelo base en safetensors puede servir como punto de partida para LoRA orientados a un estilo narrativo concreto.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. No hay datos sobre MMLU, HumanEval, GSM8K ni otras evaluaciones estándar para este modelo o su versión original.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: la cuantización Q4_K_M ocupa 18,8 GB, por lo que se necesita al menos 20 GB de VRAM para cargar el modelo completo en GPU. La versión Q8_0 requiere unos 32,7 GB.
-- GPU recomendadas: para Q4_K_M o Q4_K_S, una RTX 3090 o RTX 4090 (24 GB) es suficiente. Para Q5_K_M (21,9 GB) o Q8_0, se recomienda una GPU de 32 GB o más, como A100 o RTX 6000 Ada.
-- En CPU: con 32 GB de RAM y cuantización Q4_K_M, es posible ejecutar el modelo con llama.cpp a velocidades de 2-4 tokens/s en un procesador moderno de gama alta.
-- Opciones de despliegue: llama.cpp, Ollama, KoboldCpp, LM Studio, text-generation-webui con backend llama.cpp. También compatible con servidores que aceptan GGUF, como llama-cpp-python.
-- Latencia y throughput: no disponibles de forma fiable. Como referencia orientativa, en una RTX 4090 con Q4_K_M se pueden esperar entre 30 y 50 tokens/s, pero no hay datos verificados.
+- VRAM estimada para inferencia (solo pesos, sin overhead de contexto): Q2_K 12,0 GB; Q3_K_S 13,9 GB; Q3_K_M 15,4 GB; Q3_K_L 16,7 GB; IQ4_XS 17,0 GB; Q4_K_S 17,9 GB; Q4_K_M 18,8 GB; Q5_K_S 21,4 GB; Q5_K_M 21,9 GB; Q6_K 25,3 GB; Q8_0 32,7 GB. Hay que sumar la cache KV, que crece con la longitud de contexto.
+- GPU recomendadas: RTX 4090 (24 GB) para Q4_K_M y Q5_K_M con contexto moderado; RTX 3090 (24 GB) en el mismo rango; A100 40 GB o H100 80 GB para Q8_0 con contexto largo; GPUs de 16 GB (RTX 4080, RTX 4060 Ti 16 GB) solo con Q2_K o Q3_K_S y contexto reducido.
+- Cabe en GPU de consumo: si, en RTX 4090, RTX 3090 y, con cuantizaciones bajas, en GPUs de 16 GB. Las cuantizaciones Q6_K y Q8_0 quedan fuera de las tarjetas de 24 GB si se necesita contexto amplio.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, KoboldCpp y cualquier runtime compatible con GGUF; el repositorio tambien menciona endpoints_compatible. Para los ficheros mmproj se requiere un runtime con soporte multimodal (por ejemplo, llama.cpp con proyeccion de vision).
+- Latencia y throughput estimados: no disponible. Dependen del hardware, de la cuantizacion y de la longitud de contexto; no se han publicado mediciones.
 
 ## Comparativa con modelos similares
 
-No se dispone de información suficiente para establecer una comparativa rigurosa. El modelo es un merge basado en Gemma de 31B, pero no se conocen sus componentes exactos ni sus resultados en benchmarks. Alternativas de tamaño similar (30-32B) como Gemma-2-27B, Qwen-2.5-32B o merges populares como NousHermes-2-32B podrían ser comparables, pero sin datos de rendimiento de Schattenblume-31B no es posible realizar una tabla objetiva. Se recomienda consultar la página del modelo base (Nimbz/Schattenblume-31B) para obtener más detalles si estuvieran disponibles.
+| Modelo | Parametros | Contexto | Formato | Licencia | Notas |
+|---|---|---|---|---|---|
+| Schattenblume-31B-GGUF (este) | 30,7B | no disponible | GGUF (Q2_K a Q8_0) | Apache 2.0 | Merge orientado a roleplay y creatividad, solo ingles, sin benchmarks |
+| Nimbz/Schattenblume-31B | 30,7B | no disponible | safetensors | Apache 2.0 | Modelo base sin cuantizar; mismo comportamiento, requiere mucho mas hardware |
+| Modelos de 30-34B de la familia Gemma (referencia generica) | aproximadamente 27-34B | no disponible | safetensors, GGUF | licencia propia de Gemma | Alternativa generalista; el modelo aqui descrito es un merge derivado, no oficial |
+| Cuantizaciones i1 de mradermacher del mismo modelo | 30,7B | no disponible | GGUF imatrix | Apache 2.0 | Variante con cuantizacion ponderada, habitualmente de mayor calidad a igual tamano |
+
+No se dispone de datos de rendimiento comparativo entre estas opciones en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- No hay información verificada sobre sesgos del modelo; al ser un merge con bajo rechazo, podría generar contenido ofensivo, sexual o dañino sin filtros.
-- Riesgo de alucinación: no se han publicado evaluaciones de fiabilidad factual; el modelo está orientado a creatividad, por lo que la precisión en datos objetivos no está garantizada.
-- Limitaciones de contexto: se desconoce la longitud máxima de contexto soportada; los modelos Gemma suelen manejar 8K tokens, pero no está confirmado.
-- Idioma: solo se declara soporte para inglés; el rendimiento en otros idiomas es desconocido y probablemente deficiente.
-- Restricciones de licencia: Apache 2.0 permite uso comercial sin restricciones, pero el modelo base puede tener condiciones adicionales si los modelos originales del merge usan otras licencias; se debe verificar el modelo original.
-- Para producción: al ser una cuantización estática sin imatrix, la calidad puede ser inferior a cuantizaciones dinámicas; se recomienda usar Q4_K_M o Q8_0 para un equilibrio razonable.
-- Los archivos `mmproj` sugieren multimodalidad, pero no hay documentación sobre cómo usarlos ni qué tareas de visión soportan.
+- Solo soporta ingles; no hay evidencia de capacidades en castellano ni en otros idiomas.
+- No se han publicado benchmarks, por lo que no hay evidencia objetiva de calidad frente a alternativas del mismo tamano.
+- Es un merge con mergekit sin documentacion de los modelos componentes ni de la estrategia de fusion; la reproducibilidad y la trazabilidad son limitadas.
+- La etiqueta low-refusal y la orientacion NSFW implican un riesgo elevado de generar contenido inapropiado; requiere filtros y politicas de uso en cualquier despliegue publico.
+- Riesgo de alucinacion no cuantificado; al ser un modelo orientado a creatividad, la fidelidad factual no es su prioridad.
+- La longitud de contexto no esta documentada; planificar el despliegue con contexto conservador y medir el consumo de cache KV.
+- Aunque la licencia es Apache 2.0, conviene verificar las licencias de los modelos fusionados en el merge original, que pueden imponer restricciones adicionales.
+- El repositorio ocupa 213,9 GB por incluir todas las cuantizaciones; descargar solo el fichero necesario.
+- Las cuantizaciones Q2_K y Q3_K_M degradan la calidad de forma notable segun la propia model card; para produccion se recomienda Q4_K_M o superior.
 
 ## Enlaces
 
-- Modelo GGUF en Hugging Face: https://huggingface.co/mradermacher/Schattenblume-31B-GGUF
-- Modelo base (merge original): https://huggingface.co/Nimbz/Schattenblume-31B
-- Página del autor de la cuantización: https://huggingface.co/mradermacher
-- Guía de uso de GGUF (referencia de TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Schattenblume-31B-GGUF
+- Modelo base: https://huggingface.co/Nimbz/Schattenblume-31B
+- Cuantizaciones imatrix del mismo modelo: https://huggingface.co/mradermacher/Schattenblume-31B-i1-GGUF
+- Pagina de descargas del autor: https://hf.tst.eu/model#Schattenblume-31B-GGUF
+- Peticiones de cuantizacion del autor: https://huggingface.co/mradermacher/model_requests
+- Guia de uso de GGUF (ejemplo de TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Analisis de tipos de cuantizacion de Artefact2: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Grafica comparativa de cuantizaciones de ikawrakow: https://www.nethype.de/huggingface_embed/quantpplgraph.png
+- Empresa del cuantizador: https://www.nethype.de/

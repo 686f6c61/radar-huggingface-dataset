@@ -2,90 +2,89 @@
 
 ## Resumen
 
-El modelo `francesca9805/eus-latn-10mb-after-ppt-Dp-10mb-packed-bfdiso-ckpt500_seed3407` es un ajuste fino de tipo SFT (supervised fine-tuning) publicado por el usuario francesca9805 sobre el checkpoint base `francesca9805/eus-latn-10mb-ppt-Dp-10mb-packed-bfdiso_seed3407`. Se trata de un modelo pequeno, de 39.087.104 parametros totales, construido sobre una arquitectura de tipo GPT-2 (transformer decoder-only, segun la etiqueta `gpt2` del repositorio) y entrenado con la libreria TRL en su version 0.23.0 sobre Transformers 4.56.2.
+El modelo `eus-latn-10mb-after-ppt-Dp-10mb-packed-bfdiso-ckpt500_seed3407`, publicado por el usuario francesca9805, es un ajuste fino (SFT) del checkpoint `eus-latn-10mb-ppt-Dp-10mb-packed-bfdiso_seed3407`, del mismo autor. Se trata de un modelo de generación de texto de arquitectura GPT-2 con 39.087.104 parámetros, entrenado mediante la librería TRL (versión 0.23.0) sobre Transformers 4.56.2. El nombre del repositorio sugiere un trabajo experimental centrado en tokenización y datos empaquetados para euskera en escritura latina (`eus-latn`), con un presupuesto de datos del orden de 10 MB.
 
-El nombre del repositorio sugiere un experimento de tokenizacion y modelado sobre un corpus de aproximadamente 10 MB en euskera ( Euskara) en escritura latina, con empaquetado de secuencias y formateo de tipo BFD (best-fit decreasing) e ISO, partiendo del checkpoint 500 y con semilla 3407. No obstante, esta interpretacion procede unicamente de la nomenclatura del identificador y no esta confirmada en la model card, que no documenta ni los datos de entrenamiento ni el idioma.
+El modelo es relevante únicamente como artefacto de investigación: su tamaño (39 M de parámetros) y su origen (un fine-tune de un checkpoint previo del mismo autor, sin model card sustantiva) indican que no está pensado para uso en producción. No se documentan datos de entrenamiento, composición del corpus, idiomas soportados ni licencia, lo que limita seriamente cualquier evaluación rigurosa. La fecha de creación (octubre de 2026) y el volumen de descargas (512) apuntan a un experimento académico de bajo perfil.
 
-La relevancia de esta ficha es acotada: se trata de un artefacto de investigacion con cero descargas y cero valoraciones en el momento de la consulta, sin licencia declarada de forma explicita y sin resultados de evaluacion publicados. Resulta util como referencia para reproducir experimentos de ajuste fino a muy baja escala con TRL, pero no como modelo listo para produccion.
+La ficha se basa exclusivamente en los metadatos de Hugging Face y en la model card generada automáticamente por TRL. Cualquier dato no presente en esa información se marca como "no disponible".
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | GPT-2 (transformer decoder-only, segun la etiqueta `gpt2` del repositorio) |
-| Parametros totales | 39.087.104 (dato real declarado en safetensors) |
-| Parametros activos | no aplica (no es un modelo MoE) |
+| Arquitectura | GPT-2 (transformer decoder-only, según tag `gpt2`) |
+| Parametros totales | 39.087.104 |
+| Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible |
-| Idiomas soportados | no disponible (la nomenclatura del identificador apunta a euskera en escritura latina, sin confirmacion en la model card) |
-| Licencia | no disponible (la model card incluye la cadena `licence: license` sin especificar terminos) |
+| Tipos de cuantizacion | no disponible (pesos en safetensors; cuantización posible vía herramientas externas) |
+| Idiomas soportados | no disponible (el nombre sugiere euskera en escritura latina) |
+| Licencia | no disponible |
 | Formato de pesos | safetensors |
+| Modelo base | francesca9805/eus-latn-10mb-ppt-Dp-10mb-packed-bfdiso_seed3407 |
+| Framework de entrenamiento | TRL 0.23.0, Transformers 4.56.2, PyTorch 2.11.0 |
+| Tamaño del repo | 3,7 GB |
 
 ## Arquitectura y entrenamiento
 
-La etiqueta `gpt2` del repositorio y la libreria declarada (`transformers`) apuntan a una arquitectura transformer decoder-only de la familia GPT-2, con atencion causal y un total de 39.087.104 parametros. No se especifica en la informacion disponible el numero de capas, la dimension oculta, el numero de cabezas de atencion, la longitud de contexto nativa ni el tamano del vocabulario. Tampoco se detalla si se aplicaron tecnicas de atencion lineal, decodificacion especulativa o alguna variante arquitectonica distinta del transformer estandar.
+La arquitectura es GPT-2, un transformer decoder-only con atención causal estándar. Con 39.087.104 parámetros, encaja en la escala de los GPT-2 pequeños (el GPT-2 original de 124 M es notablemente mayor), lo que sugiere una configuración reducida de capas y dimensión oculta, aunque no se detallan los hiperparámetros exactos. El tag `gpt2` en Hugging Face confirma la familia arquitectónica.
 
-El entrenamiento se realizo mediante SFT (supervised fine-tuning) con TRL 0.23.0, motivo por el cual el repositorio incluye las etiquetas `generated_from_trainer`, `trl` y `sft`. El modelo parte del checkpoint `francesca9805/eus-latn-10mb-ppt-Dp-10mb-packed-bfdiso_seed3407`, al que se aplica un ajuste adicional identificado como "after-ppt" en el nombre. El entorno de ejecucion declarado es PyTorch 2.11.0, Datasets 4.8.4 y Tokenizers 0.22.1. No se documenta el numero de tokens de entrenamiento, la composicion del dataset, la existencia de fases de RLHF o DPO, ni hiperparametros de entrenamiento mas alla del enlace al panel de Weights & Biases.
+El entrenamiento se realizó mediante SFT (supervised fine-tuning) con TRL, partiendo del checkpoint `eus-latn-10mb-ppt-Dp-10mb-packed-bfdiso_seed3407`. El nombre del repositorio indica varias pistas sobre el pipeline: `eus-latn` (euskera, escritura latina), `10mb` (probablemente 10 MB de datos), `packed` (secuencias empaquetadas), `bfdiso` (posiblemente *bf16* con algún esquema de precisión o *bfloat16 isolation*) y `ckpt500` (checkpoint en el paso 500). No se especifica el número de tokens de entrenamiento, la composición del dataset, ni si hubo RLHF o DPO. El run de Weights & Biases enlazado en la model card (`f-padovani-university-of-groningen/new-tokenizers`) sugiere un contexto de investigación sobre tokenizadores en la Universidad de Groningen.
 
 ## Capacidades
 
-- Generacion de texto autoregresiva, segun la tarea declarada en el pipeline (`text-generation`).
-- Uso mediante el pipeline de Hugging Face con formato de mensajes de tipo conversacional (`[{"role": "user", "content": ...}]`), tal como aparece en el ejemplo de la model card.
-- Compatibilidad con text-generation-inference y con endpoints, segun las etiquetas `text-generation-inference` y `endpoints_compatible`.
-- Capacidad multilingue: no disponible.
-- Soporte de tool calling o function calling: no disponible.
-- Soporte de agentes o razonamiento multi-paso: no disponible.
-- Modo de razonamiento explicito (thinking mode), vision o audio: no disponible.
-- Capacidades de codigo o matematicas: no disponible, sin evidencia en la informacion proporcionada.
+- Generación de texto autoregresiva básica, limitada por el tamaño del modelo (39 M de parámetros).
+- Ajuste por instrucciones vía SFT, según el pipeline de TRL empleado.
+- Soporte de chat mediante `pipeline("text-generation")` con mensajes con rol `user`, tal como muestra la model card.
+- Compatibilidad con Text Generation Inference (tag `text-generation-inference`) y `endpoints_compatible`.
+- No se documenta soporte de tool calling, function calling, agentes, razonamiento multi-paso, visión, audio ni modo "thinking".
+- Capacidades multilingües: no disponibles; el nombre sugiere foco en euskera.
 
 ## Casos de uso
 
-- Reproduccion de experimentos academicos de ajuste fino: el modelo sirve como artefacto de referencia para replicar un pipeline de SFT con TRL sobre un corpus de unos 10 MB, comparando el checkpoint resultante con su modelo base.
-- Estudio de tokenizacion de lenguas minorizadas: si se confirma que el identificador hace referencia a euskera en escritura latina, seria util para analizar como un modelo de menos de 40 millones de parametros se comporta en una lengua de bajos recursos.
-- Pruebas de integracion con text-generation-inference: sus etiquetas indican compatibilidad con TGI, por lo que puede emplearse para validar despliegues locales del servidor de inferencia sin coste elevado de hardware.
-- Educacion y divulgacion: al caber en cualquier GPU de consumo e incluso en CPU, permite demostrar de forma practica como funciona un pipeline de generacion de texto de Hugging Face en un aula o taller.
-- Generacion de texto exploratoria de dominio muy acotado: puede utilizarse para comprobar como un ajuste fino de bajo presupuesto altera el estilo o el vocabulario respecto al modelo base, sin expectativa de calidad de produccion.
-- Pruebas de regresion y humo (smoke tests) en infraestructura de despliegue: por su tamano reducido, es adecuado para verificar que un endpoint, un contenedor o una canalizacion de CI/CD carga correctamente pesos safetensors y responde a peticiones de generacion.
+- Experimentación académica con tokenizadores: el modelo sirve como punto de comparación en estudios sobre tokenización del euskera, dado el contexto de investigación que sugiere el run de W&B.
+- Pruebas de pipelines de SFT con TRL: útil como caso de juguete para validar flujos de entrenamiento, logging en W&B y publicación en Hugging Face.
+- Generación de texto de baja latencia en CPU: con 39 M de parámetros, la inferencia es viable en hardware modesto, útil para demos y prototipos.
+- Baseline para fine-tuning posterior: al ser un checkpoint pequeño, puede servir de punto de partida para experimentos de ajuste con recursos limitados.
+- Validación de despliegue con TGI: el tag `text-generation-inference` permite probar integraciones de serving sin coste elevado de GPU.
+- Docencia y formación: ejemplo didáctico de modelo GPT-2 pequeño ajustado con SFT y publicado con metadatos estándar de Hugging Face.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye metricas de MMLU, HumanEval, GSM8K ni de ningun otro conjunto de evaluacion, y la busqueda web realizada no ha devuelto resultados relacionados con el modelo (unicamente paginas de citas sin relacion con el tema).
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: partiendo de 39.087.104 parametros, el peso en precision de 32 bits ocupa aproximadamente 149 MiB y en bfloat16/float16 aproximadamente 75 MiB, sin contar la cache KV ni el overhead del framework.
-- GPU recomendadas: cualquier GPU moderna, incluidas NVIDIA GTX 10xx, RTX 20xx/30xx/40xx, Tesla T4, A100 o H100. El modelo es muy inferior a la capacidad de cualquiera de ellas.
-- Cabe en GPU de consumo: si, en todas. Tambien es viable la inferencia en CPU y potencialmente en dispositivos de borde, dado el reducido numero de parametros.
-- Opciones de despliegue: `transformers` con `pipeline`, Text Generation Inference (etiqueta `text-generation-inference`), y de forma indirecta vLLM, llama.cpp u Ollama previa conversion del peso safetensors al formato correspondiente, conversion que no esta documentada por el autor.
-- Latencia y throughput estimados: no disponible.
-- Nota sobre el repositorio: el tamano del repositorio es de 1,9 GB, muy superior al peso del modelo en precision completa, lo que sugiere la presencia de checkpoints intermedios, estados del optimizador u otros artefactos de entrenamiento.
+- VRAM estimada para inferencia: inferior a 1 GB en fp32 (39 M de parámetros ≈ 156 MB de pesos); en bf16, aproximadamente 78 MB.
+- GPU recomendadas: cualquier GPU consumer moderna (GTX 1060, RTX 3060, RTX 4090) es sobradamente suficiente; también viable en CPU.
+- Cabe en cualquier GPU consumer y en la mayoría de entornos integrados.
+- Opciones de despliegue: `transformers` (pipeline), Text Generation Inference (tag explícito), potencialmente llama.cpp u Ollama si se convierte a GGUF, aunque no se documenta dicha conversión.
+- Latencia y throughput: no disponibles; por el tamaño, se espera latencia muy baja en GPU y aceptable en CPU, pero no hay mediciones publicadas.
 
 ## Comparativa con modelos similares
 
-No se ha identificado en la informacion proporcionada ningun modelo comparable con datos verificables. La model card no ofrece metricas ni referencias a alternativas, y la busqueda web no devolvio resultados pertinentes.
+| Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
+|---|---|---|---|---|
+| eus-latn-10mb-after-ppt-... (este modelo) | 39 M | no disponible | no disponible | Hugging Face |
+| GPT-2 small (OpenAI) | 124 M | 1024 tokens | MIT | Hugging Face, ampliamente disponible |
+| DistilGPT-2 | 82 M | 1024 tokens | Apache 2.0 | Hugging Face |
+| Modelo base del autor (`eus-latn-10mb-ppt-...`) | no disponible | no disponible | no disponible | Hugging Face |
 
-| Modelo | Parametros totales | Contexto | Licencia | Disponibilidad | Datos comparativos |
-|---|---|---|---|---|---|
-| francesca9805/eus-latn-10mb-after-ppt-Dp-10mb-packed-bfdiso-ckpt500_seed3407 | 39.087.104 | no disponible | no disponible | Hugging Face, 0 descargas | no disponible |
-| Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
+La comparación es aproximada: no hay datos de rendimiento del modelo evaluado, y los modelos de referencia (GPT-2 small, DistilGPT-2) tienen licencias y documentación mucho más completas. El modelo base del mismo autor es el comparable más directo, pero carece igualmente de especificaciones públicas.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de evaluacion: no hay benchmarks, ni evaluacion humana, ni metricas de perplejidad publicadas, por lo que no puede afirmarse nada sobre su calidad de generacion.
-- Licencia no especificada: la model card contiene la cadena `licence: license` sin terminos concretos. Esto impide determinar si el uso comercial esta permitido, por lo que no deberia utilizarse en produccion sin aclarar previamente la licencia con el autor.
-- Idiomas no declarados: aunque la nomenclatura sugiere euskera en escritura latina, la model card no confirma el idioma ni el ambito linguistico, lo que impide garantizar un comportamiento correcto fuera de ese supuesto dominio.
-- Riesgo elevado de alucinacion: con menos de 40 millones de parametros y un ajuste sobre un corpus de aproximadamente 10 MB, la capacidad de generar hechos fiables es muy limitada.
-- Sesgos: no documentados. Al no describirse la procedencia del corpus ni la composicion del dataset, no es posible evaluar sesgos de genero, ideologicos o de representacion linguistica.
-- Longitud de contexto desconocida: se desconoce la ventana nativa del modelo, lo que dificulta planificar tareas que requieran contextos largos o conversaciones multi-turno extensas.
-- Ausencia de soporte documentado para tool calling, agentes o razonamiento multi-paso: no hay evidencia de ninguna de estas capacidades.
-- Naturaleza experimental: cero descargas y cero valoraciones, sin documentacion de datos de entrenamiento, hiperparametros ni proceso de evaluacion. Debe tratarse como un artefacto de investigacion y no como un modelo de produccion.
-- Fechas de creacion y actualizacion del repositorio (octubre de 2026) resultan anomales respecto a las versiones de libreria declaradas; conviene verificar la integridad de los artefactos antes de reutilizarlos.
+- Model card mínima: generada automáticamente por TRL, sin información sobre datos, sesgos ni evaluación.
+- Licencia no especificada: no se puede garantizar uso comercial; la model card incluye `licence: license` sin concreción.
+- Idiomas no declarados: aunque el nombre sugiere euskera, no hay confirmación oficial ni cobertura documentada.
+- Riesgo elevado de alucinación y texto incoherente por el tamaño reducido (39 M de parámetros).
+- Sin benchmarks: imposible comparar su calidad con alternativas de forma objetiva.
+- Contexto no documentado: se desconoce la ventana máxima; no apto para tareas de contexto largo.
+- Origen experimental: el nombre (`ckpt500`, `seed3407`, `10mb`) indica un checkpoint intermedio de un experimento, no un modelo final pulido.
+- Sin garantías de soporte ni mantenimiento por parte del autor.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/francesca9805/eus-latn-10mb-after-ppt-Dp-10mb-packed-bfdiso-ckpt500_seed3407
 - Modelo base: https://huggingface.co/francesca9805/eus-latn-10mb-ppt-Dp-10mb-packed-bfdiso_seed3407
-- Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/3eg4qxpz
-- Repositorio de TRL: https://github.com/huggingface/trl
-- Cita de TRL (von Werra et al., 2020): incluida en la model card, sin enlace adicional
-- Resultados relevantes de busqueda web: no se han encontrado enlaces pertinentes al modelo; las consultas devolvieron exclusivamente paginas de citas diarias sin relacion con el contenido de esta ficha.
+- Run de Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/9odfnrk5
+- Repositorio TRL: https://github.com/huggingface/trl

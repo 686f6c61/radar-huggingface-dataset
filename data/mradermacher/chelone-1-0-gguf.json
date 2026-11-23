@@ -1,0 +1,53 @@
+{
+  "schema": 2,
+  "id": "mradermacher/Chelone-1.0-GGUF",
+  "slug": "mradermacher-chelone-1-0-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Chelone-1.0-GGUF",
+  "created_at": "2026-11-23T02:32:02.000Z",
+  "updated_at": "2026-11-23T02:47:05.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "openwist",
+    "lora",
+    "on-device",
+    "tool-use",
+    "en",
+    "base_model:Openwist/Chelone-1.0",
+    "base_model:adapter:Openwist/Chelone-1.0",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1170340608,
+  "parameters_human": "1.17B",
+  "storage_bytes": 10598401280,
+  "storage_human": "10.6 GB",
+  "context_length": 128000,
+  "base_model": "Openwist/Chelone-1.0",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

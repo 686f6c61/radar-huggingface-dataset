@@ -2,52 +2,51 @@
 
 ## Resumen
 
-VoxMel-0.3B es un modelo publicado en Hugging Face por el laboratorio VoxDance-Lab bajo licencia Apache 2.0. El identificador del repositorio indica un modelo de aproximadamente 0,3 mil millones de parametros (300M), lo que lo situa en la categoria de modelos pequenos, adecuados para despliegue en hardware modesto o en entornos con restricciones de latencia y memoria. La fecha de creacion del repositorio es el 10 de noviembre de 2026.
+VoxMel-0.3B es un modelo de síntesis de voz (text-to-speech) de pesos abiertos desarrollado por VoxDance Lab, orientado a la clonación de voz zero-shot en inglés y mandarín. A partir de una grabación de referencia corta y su transcripción, el modelo sintetiza texto nuevo manteniendo la voz de la referencia. Forma parte de una familia de dos checkpoints (0.3B y 0.6B) publicada bajo licencia Apache 2.0.
 
-La model card publicada por el autor no contiene ninguna descripcion tecnica: se limita a declarar la licencia Apache 2.0. No se especifican arquitectura, datos de entrenamiento, idiomas soportados, longitud de contexto ni capacidades. Tampoco consta pipeline de inferencia asignado en Hugging Face, ni descargas o interacciones registradas en el momento de la consulta.
+La innovación principal es que modela directamente espectrogramas Mel sin un tokenizador acústico aprendido. Una transformada de Haar fija y de dos ejes separa el espectrograma en una parte gruesa (Coarse-Mel) y dos residuos (temporal y de frecuencia). El modelo genera las tramas gruesas de forma autorregresiva y reconstruye los detalles en dos pasadas no autorregresivas posteriores, para finalmente renderizar la onda con el vocoder Vocos a 24 kHz.
 
-Por tanto, esta ficha recoge unicamente los datos verificables del repositorio (autor, licencia, tamano inferido del nombre y fechas) y marca explicitamente como "no disponible" todo aquello que el autor no ha publicado. Cualquier evaluacion de rendimiento o idoneidad para produccion requeriria consultar los pesos y la documentacion tecnica, que no estan descritos en la informacion disponible.
+Es relevante porque evita la dependencia de tokenizadores acústicos entrenados y publica pesos y código bajo una licencia permisiva, lo que facilita su integración en pipelines de TTS personalizado. El modelo está pensado para habla de formato corto y su desarrollo continúa hacia generación de formato largo, diálogo multi-hablante y más idiomas.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible |
-| Parametros totales | aproximadamente 0,3B (inferido del nombre del modelo) |
-| Parametros activos | no disponible (no se indica que sea MoE) |
+| Arquitectura | Transformer decoder-only autorregresivo con cabeza de flow matching, más dos etapas no autorregresivas de reconstrucción (residuo temporal y de frecuencia) sobre transformada de Haar fija; vocoder Vocos congelado |
+| Parametros totales | 0.3B |
+| Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible |
-| Idiomas soportados | no disponible |
-| Licencia | Apache 2.0 |
-| Formato de pesos | no disponible |
+| Idiomas soportados | Inglés y mandarín |
+| Licencia | Apache 2.0 (componentes de terceros con sus propias licencias) |
+| Formato de pesos | PyTorch (`model_L_final.pt`); el vocoder Vocos se distribuye por separado |
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura del modelo en la model card ni en los metadatos del repositorio. No consta si se trata de un transformer denso, un modelo MoE, una arquitectura hibrida o cualquier otra variante, ni tampoco el numero exacto de capas, dimensiones ocultas o cabezas de atencion.
+VoxMel emplea un Transformer decoder-only que predice la siguiente trama continua de Coarse-Mel a partir de las entradas de condicionamiento y de las tramas gruesas previas, con una cabeza de flow matching para la generación continua. La representación acústica se obtiene con una transformada de Haar fija e invertible que divide el espectrograma Mel de entrenamiento en frecuencia y tiempo, separando la señal gruesa de dos residuos. Tras la generación autorregresiva, una etapa no autorregresiva predice el residuo temporal y la inversa de Haar en el eje temporal reconstruye el Mel promediado en frecuencia; una segunda etapa predice el residuo de frecuencia y la inversa de Haar en ese eje recupera el espectrograma Mel completo. Finalmente, un vocoder Vocos congelado a 24 kHz convierte el Mel en onda.
 
-Tampoco hay datos sobre el proceso de entrenamiento: numero de tokens, composicion del corpus, tecnicas de alineacion (RLHF, DPO, SFT) o posibles innovaciones tecnicas. Toda esta informacion debe considerarse no disponible hasta que el autor publique documentacion adicional.
+El frontend de texto utiliza el tokenizador de Qwen2.5. La model card no detalla el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas de RLHF o DPO. La invertibilidad garantizada aplica a la transformada de Haar fija; la calidad final del audio depende de las características Mel generadas y del vocoder.
 
 ## Capacidades
 
-- No se documentan capacidades especificas en la model card.
-- No consta soporte de generacion de texto, razonamiento, codigo, matematicas o vision.
-- No consta soporte de tool calling ni function calling.
-- No consta soporte para agentes o razonamiento multi-paso.
-- No consta informacion sobre capacidades multilingues.
-- No consta ningun modo especial (thinking mode, vision, audio u otros).
+- Síntesis de voz a partir de texto (text-to-speech) en inglés y mandarín.
+- Clonación de voz zero-shot: genera habla en la voz de una grabación de referencia corta, usando la transcripción exacta de esa referencia.
+- Modelado directo de espectrogramas Mel sin tokenizador acústico aprendido.
+- Generación autorregresiva de tramas continuas con cabeza de flow matching.
+- Reconstrucción en dos pasadas no autorregresivas (residuo temporal y de frecuencia).
+- Renderizado de audio a 24 kHz mediante vocoder Vocos.
+- Interfaz de demostración local vía Gradio según las instrucciones del repositorio.
+- No se documentan en la información disponible capacidades de tool calling, agentes, visión ni audio de entrada más allá de la referencia de voz.
 
 ## Casos de uso
 
-Dado que no se documentan capacidades ni arquitectura, no es posible recomendar casos de uso concretos con garantias. Los siguientes escenarios son hipoteticos y quedan condicionados a que el modelo resulte ser un modelo de lenguaje funcional tras su evaluacion:
-
-- Prototipado local en hardware de consumo: un modelo de aproximadamente 0,3B parametros podria ejecutarse en CPU o en GPUs de gama baja, lo que permitiria experimentar con pipelines de inferencia sin infraestructura dedicada.
-- Filtrado o clasificacion de texto a pequena escala: si el modelo es un LM causal o un encoder, podria emplearse en tareas de etiquetado simple, siempre que se valide su calidad previamente.
-- Educacion y experimentacion academica: su tamano reducido facilita el estudio de tecnicas de ajuste fino y cuantizacion en entornos docentes.
-- Componente auxiliar en pipelines mayores: podria actuar como modelo de respaldo o de preprocesamiento junto a modelos de mayor tamano.
-- Pruebas de integracion de tooling: util para validar despliegues con vLLM, llama.cpp u Ollama antes de escalar a modelos mayores.
-- Evaluacion comparativa de modelos pequenos: sirve como punto de referencia en estudios de eficiencia entre modelos de menos de 1B parametros.
-
-En todos los casos, la idoneidad real depende de datos que el autor no ha publicado.
+- Clonación de voz para doblaje y localización: con una grabación de referencia corta y su transcripción, el modelo sintetiza guiones nuevos en la voz del hablante, adecuado para inglés y mandarín.
+- Generación de voces para asistentes conversacionales: el modelo produce habla personalizada a partir de texto, integrándose en un backend de TTS para respuestas de un asistente.
+- Prototipado de audiolibros y contenido narrado de formato corto: la evaluación del modelo se centró en habla corta, por lo que encaja en fragmentos breves narrados con una voz de referencia concreta.
+- Accesibilidad y lectura en voz alta: conversión de texto a voz con una voz clonada del usuario o de un locutor autorizado, útil en interfaces de lectura.
+- Investigación en TTS y representaciones acústicas: al modelar Mel directamente sin tokenizador aprendido, sirve como base para experimentar con representaciones wavelet y generación autorregresiva continua.
+- Integración en pipelines de producción con licencia permisiva: la licencia Apache 2.0 permite incorporar el modelo en productos comerciales, siempre que se respeten las licencias de los componentes de terceros (tokenizador Qwen2.5, vocoder Vocos).
+- Demos interactivas y evaluación subjetiva: el repositorio incluye instrucciones para un demo Gradio, útil para comparar voces de referencia con las síntesis generadas.
 
 ## Benchmarks y rendimiento
 
@@ -55,32 +54,38 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible de forma oficial; para un modelo de aproximadamente 0,3B parametros, una estimacion orientativa en FP16 seria de unos 0,6 GB de pesos, y en cuantizacion de 4 bits alrededor de 0,2 GB, aunque estas cifras no estan confirmadas por el autor.
-- GPU recomendadas: no disponible.
-- Compatibilidad con GPU de consumo: previsiblemente si, dado el tamano, pero sin confirmacion oficial.
-- Opciones de despliegue: no disponible; no consta pipeline asignado en Hugging Face ni formatos de pesos publicados.
-- Latencia y throughput estimados: no disponible.
+- VRAM estimada para inferencia: no disponible de forma explícita; con 0.3B parámetros en precisión de 16 bits los pesos ocupan aproximadamente 0.6 GB, a lo que hay que sumar el vocoder Vocos y las activaciones. El repositorio ocupa 3.0 GB.
+- GPU recomendadas: no disponible. Por tamaño, el modelo es susceptible de ejecutarse en GPU de consumo, pero la información no confirma modelos concretos ni requisitos mínimos.
+- ¿Cabe en GPU de consumo? No confirmado en la información disponible; el tamaño de parámetros lo hace plausible, pero no se documentan requisitos oficiales.
+- Opciones de despliegue: paquete Python `voxcore` (clase `VoxMel.from_pretrained`), PyTorch y torchaudio (Python 3.10–3.12), más el vocoder Vocos de 24 kHz; demo local con Gradio. No se documentan integraciones con vLLM, llama.cpp, Ollama ni TGI.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-No es posible establecer una comparativa rigurosa porque no se conocen arquitectura, contexto, rendimiento ni formato de pesos del modelo. La siguiente tabla recoge solo los datos verificables frente a la ausencia de datos de alternativas concretas:
+No se dispone de datos de benchmarks ni de especificaciones de modelos comparables en la información proporcionada. Como referencia interna de la misma familia:
 
-| Modelo | Parametros | Contexto | Licencia | Datos publicados |
-|---|---|---|---|---|
-| VoxMel-0.3B | aproximadamente 0,3B | no disponible | Apache 2.0 | Solo licencia |
-| Alternativas de tamano similar | no disponible | no disponible | no disponible | no disponible |
+| Modelo | Parametros | Idiomas | Licencia | Disponibilidad |
+|---|---:|---|---|---|
+| VoxMel-0.3B | 0.3B | Inglés y mandarín | Apache 2.0 | Pesos en Hugging Face |
+| VoxMel-0.6B | 0.6B | Inglés y mandarín | Apache 2.0 | Pesos en Hugging Face |
+
+La comparación con alternativas de otros desarrolladores no está disponible.
 
 ## Limitaciones y advertencias
 
-- La model card no documenta sesgos conocidos; al no haber informacion sobre los datos de entrenamiento, no es posible evaluar sesgos de genero, etnicos, linguisticos o culturales.
-- El riesgo de alucinacion es desconocido y no puede acotarse sin benchmarks ni evaluaciones publicadas.
-- Se desconoce la longitud de contexto y los idiomas soportados, por lo que no se puede garantizar su uso en tareas multilingues o con contextos largos.
-- La licencia Apache 2.0 permite uso comercial y modificacion, pero el usuario asume toda la responsabilidad sobre el comportamiento del modelo al no existir documentacion tecnica.
-- No consta pipeline de inferencia en Hugging Face, lo que puede indicar que el repositorio no esta listo para uso directo o que los pesos no siguen un formato estandar.
-- El repositorio no registra descargas ni interacciones, por lo que no existe evidencia de uso o validacion por parte de la comunidad.
-- Para produccion, se recomienda encarecidamente obtener y auditar los pesos y la documentacion antes de cualquier despliegue.
+- Evaluado principalmente en habla de formato corto en inglés y mandarín; la generación de formato largo, el diálogo multi-hablante y más idiomas están en desarrollo según el autor.
+- La transcripción de la referencia debe coincidir exactamente con las palabras pronunciadas en la grabación; de lo contrario, la clonación puede degradarse.
+- La calidad del audio depende de las características Mel generadas y del vocoder; la invertibilidad garantizada aplica solo a la transformada de Haar fija.
+- No se documentan sesgos conocidos ni tasas de alucinación en la información disponible.
+- Riesgo de uso indebido de la clonación de voz (suplantación, contenido no consentido); aunque la licencia es permisiva, conviene aplicar controles de consentimiento y verificación en producción.
+- La licencia Apache 2.0 cubre código y pesos de VoxMel, pero los componentes de terceros (tokenizador Qwen2.5, vocoder Vocos) tienen sus propias licencias que deben revisarse para uso comercial.
+- No se documentan requisitos de hardware, cuantizaciones ni latencias, lo que limita la planificación de despliegues en producción.
 
 ## Enlaces
 
-- Repositorio en Hugging Face: https://huggingface.co/VoxDance-Lab/VoxMel-0.3B
-- No se han encontrado otros enlaces (papers, blogs, repositorios de codigo o demos) en la informacion disponible.
+- Modelo en Hugging Face: https://huggingface.co/VoxDance-Lab/VoxMel-0.3B
+- Checkpoint hermano VoxMel-0.6B: https://huggingface.co/VoxDance-Lab/VoxMel-0.6B
+- Demos de audio: https://voxdance.github.io/voxmel-demo/
+- Repositorio GitHub: https://github.com/VoxDance-Lab/VoxMel
+- Informe técnico (arXiv): https://arxiv.org/abs/2611.20254
+- Organización en Hugging Face: https://huggingface.co/VoxDance-Lab

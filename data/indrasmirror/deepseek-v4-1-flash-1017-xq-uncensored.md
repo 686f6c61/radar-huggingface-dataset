@@ -2,115 +2,107 @@
 
 ## Resumen
 
-DeepSeek-V4.1-Flash-1017-XQ-Uncensored es una cuantización mixta y agresiva del modelo base `deepseek-ai/DeepSeek-V4.1-Flash-1017`, publicada por el usuario IndrasMirror bajo licencia MIT. El modelo original es un Mixture-of-Experts (MoE) de 552.000 millones de parámetros con 40 capas y 384 expertos enrutados por capa (top-6 por token), lo que suma 15.360 expertos enrutados con 543,6B de pesos, más un experto compartido, Hyper-Connections, atención dispersa CSA y una memoria n-gram denominada Engram. Esta versión cuantizada comprime el modelo hasta unos 163 GB (build V4) para que pueda ejecutarse en un solo PC de consumo.
+DeepSeek-V4.1-Flash-1017-XQ-Uncensored es una cuantizacion extrema y experimental del modelo MoE DeepSeek-V4.1-Flash-1017, publicada por el usuario IndrasMirror. Se trata de una compilacion mixta que combina expertos ternarios (PTQ1_0), 2-bit (Q2_0), 3-bit (Q3_K) y FP4 nativos (MXFP4), con el objetivo declarado de ejecutar un modelo de gran escala (552B parametros segun la model card; 14.710 millones reportados en safetensors) en una unica estacion de trabajo con una RTX 4090 de 24 GB, 90 GB de RAM y almacenamiento NVMe. No es un GGUF convencional: requiere el motor propietario Xolotl (antes Strata-DSV4.1) para cargar los formatos por experto.
 
-La innovación central es el esquema de cuantización por experto en cuatro niveles: ternario PTQ1_0 (1,75 bits/peso), Q2_0 (2,25 bits/peso), Q3_K (3,44 bits/peso) y MXFP4 nativo sin tocar (4,25 bits/peso), con una media ponderada de 2,25 bits por peso en el conjunto de expertos. Los 1.056 expertos más "calientes" se conservan exactamente como los entrenó DeepSeek, mientras que los expertos fríos se degradan a ternario. La mitad densa (atención, experto compartido, cabeza de salida) se mantiene en Q8_0, re-cuantizable a Q6_K en carga.
+El modelo base, DeepSeek-V4.1-Flash-1017, es un transformer con arquitectura MoE de 40 capas y 384 expertos enrutados por capa (top-6 por token), con un experto compartido, Hyper-Connections, atencion dispersa CSA y una memoria n-gram llamada Engram. La cuantizacion preserva los 1.056 expertos mas calientes en su FP4 nativo (MXFP4, repack sin perdida) y degrada progresivamente el resto, alcanzando una media de 2,25 bits por peso en la mitad de expertos.
 
-El modelo está pensado para ejecutarse con Xolotl (antes Strata-DSV4.1), un motor específico que entiende los formatos por experto y descarga expertos desde NVMe en tiempo de decodificación. No es un GGUF estándar y no funciona en llama.cpp, Ollama ni LM Studio. Con 30.373 descargas y 61 likes en el momento de la consulta, es una propuesta de nicho para entusiastas con hardware de consumo que quieren ejecutar un MoE de escala frontier en local.
+La relevancia de esta ficha es doble: por un lado, documenta una tecnica de cuantizacion mixta por experto poco habitual (tier map con calibracion sobre datos de agentes y codigo); por otro, advierte de que el artefacto no es interoperable con llama.cpp, Ollama ni LM Studio, lo que limita su uso a un ecosistema de inferencia muy concreto. La model card reporta metricas de velocidad y calidad (86,9% top-1, KL 0,306) medidas por el autor, no por terceros.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer MoE con atención dispersa CSA, Hyper-Connections y memoria Engram |
-| Parametros totales | 552B (repo safetensors reporta 14.710.631.010 tensores/parámetros en el archivo de metadatos; el modelo base es de 552B) |
-| Parametros activos | top-6 de 384 expertos enrutados por capa (40 capas, 15.360 expertos enrutados) |
+| Arquitectura | Transformer MoE con atencion dispersa CSA, Hyper-Connections y memoria n-gram Engram (modelo base) |
+| Parametros totales | 552B segun model card; 14.710.631.010 reportados en safetensors |
+| Parametros activos | top-6 de 384 expertos enrutados por capa (40 capas, 15.360 expertos enrutados, 543,6B pesos en expertos) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | PTQ1_0 ternario (1,75 bits), Q2_0 (2,25 bits), Q3_K (3,44 bits), MXFP4 nativo (4,25 bits), densa Q8_0/Q6_K, embeddings/compressor/indexer F16, norms/router/mHC F32 |
+| Tipos de cuantizacion | PTQ1_0 ternario (1,75 bits), Q2_0 (2,25 bits), Q3_K (3,44 bits), MXFP4 nativo (4,25 bits); densa en Q8_0 con re-cuantizacion opcional a Q6_K al cargar |
 | Idiomas soportados | no disponible |
 | Licencia | MIT |
-| Formato de pesos | Binario propio para Xolotl (no GGUF, no safetensors estándar en el build V4) |
+| Formato de pesos | binarios propios por experto (no GGUF estandar); requiere motor Xolotl |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es un transformer MoE de 40 capas con 384 expertos enrutados por capa y enrutamiento top-6 por token, lo que da 15.360 expertos enrutados que contienen 543,6B de pesos, más un experto compartido siempre activo. Incorpora atención dispersa CSA (probablemente "Compressed Sparse Attention"), Hyper-Connections y una memoria n-gram llamada Engram. No se dispone en la información proporcionada de detalles sobre el número de tokens de entrenamiento, la composición del dataset ni si hubo RLHF/DPO en el modelo base.
+El modelo base es un MoE de 40 capas con 384 expertos enrutados por capa y seleccion top-6 por token, lo que suma 15.360 expertos enrutados y 543,6B pesos solo en expertos, mas un experto compartido. Incorpora Hyper-Connections, atencion dispersa CSA y una memoria n-gram Engram. La model card no detalla el volumen de tokens de entrenamiento, la composicion del dataset ni si hubo RLHF o DPO en el modelo original; esa informacion no esta disponible en los datos proporcionados.
 
-La cuantización XQ de IndrasMirror aplica un mapeo de "calor" por experto: los 1.056 expertos más utilizados se mantienen en su MXFP4 nativo (repack lossless), los 1.778 siguientes en Q3_K, y el resto se reparte entre Q2_0 y ternario PTQ1_0. Los bytes liberados por los expertos fríos financian la preservación de los calientes. La calibración se hizo con datos reales de agente y código. El build V4 incluye además un archivo de ranking de expertos (`rank-1017-v4.bin`, 123 KB) que mejora la selección de expertos en decodificación: 86,9% top-1 / KL 0,306 frente a 86,8% / 0,316 del ranking anterior. Existe un modo rápido opcional (`v4-fast/`, 40 GB adicionales) que sustituye los dos formatos de experto más grandes por Q2_K con una matriz de importancia de 120 prompts de código y agente, logrando 33,0 tok/s frente a 26,1 tok/s en una sonda de 8K de prompt (+27%), a costa de una pérdida de calidad (top-1 86,16% vs 87,01%, NLL 0,540 vs 0,512).
+La innovacion de esta publicacion es la cuantizacion por experto con un mapa de niveles (tier map) calibrado sobre datos reales de agentes y codigo. Cada experto recibe un formato distinto segun su "temperatura" de uso: los 1.056 mas calientes se conservan en MXFP4 nativo (repack sin perdida del FP4 de DeepSeek), mientras que el resto se reparte entre Q3_K (12,7% de los pesos), Q2_0 (22,7%) y PTQ1_0 ternario (57,7%). La mitad densa (atencion, experto compartido, cabeza de salida) va en Q8_0, con re-cuantizacion automatica a Q6_K al cargar mediante `STRATA_DENSE_REQUANT=q6_K`, lo que libera unos 1,7 GB de VRAM para mas expertos. Ademas, el autor publica un modo "fast" opcional (`v4-fast/`) que sustituye los dos formatos de experto mas grandes por copias Q2_K construidas con una matriz de importancia derivada de 120 prompts de codigo y agentes, inspirado en la idea "compress-then-correct" de PROMETHEVS.
 
 ## Capacidades
 
-- Generación de texto y razonamiento de escala frontier, heredados del modelo base DeepSeek-V4.1-Flash-1017.
-- Razonamiento multi-paso con "thinking mode" (mencionado en las pruebas del Gauntlet: "thinking on").
-- Codificación y tareas agénticas: el Gauntlet v3-small (6 tareas difíciles, 10 turnos, 2 ejecuciones) resolvió 8/12 tareas en modo normal y en modo rápido.
-- Ejecución local en hardware de consumo: RTX 4090 (24 GB) + 90 GB de RAM + NVMe.
-- Modo rápido opcional con decodificación a 41,1 tok/s en tareas de agente reales (frente a 32,6 tok/s en modo normal).
-- Capacidades multilingües: no disponibles en la información proporcionada.
-- Tool calling / function calling: no disponible explícitamente en la información proporcionada.
-- Visión o audio: no disponible.
+- Generacion de texto y razonamiento de proposito general, heredadas del modelo base DeepSeek-V4.1-Flash-1017.
+- Razonamiento multi-paso con modo "thinking" activado en las pruebas de agente reportadas por el autor (Gauntlet v3-small, 10 turnos).
+- Generacion y edicion de codigo, con tareas de agente evaluadas mediante tests ocultos.
+- Soporte de tool calling y function calling: no confirmado explicitamente en la informacion disponible, aunque el uso en tareas de agente lo sugiere.
+- Capacidades de agente multi-turno: el autor reporta ejecucion de tareas agenticas de codigo con 10 turnos y thinking activo.
+- Variante "uncensored": el autor la etiqueta como tal, sin detallar el proceso de edicion ni las capacidades afectadas.
+- Capacidades multilingues: no disponible.
 
 ## Casos de uso
 
-- Ejecución local de un MoE de escala frontier en un solo PC: con una RTX 4090, 90 GB de RAM y NVMe, el build V4 (163 GB) permite servir un modelo de 552B parámetros con decodificación de 26-33 tok/s, algo impensable con cuantizaciones estándar de 4 bits.
-- Agentes de código autónomos: el Gauntlet v3-small demuestra que el modelo resuelve tareas de codificación multi-turno con thinking activado (8/12 tareas, score 4,99). El modo rápido sube a 41,1 tok/s manteniendo el mismo número de tareas resueltas, lo que lo hace viable para sesiones largas de agente.
-- Asistente de programación en local sin enviar código a la nube: la licencia MIT y la ejecución local permiten integrarlo en entornos con requisitos de privacidad estrictos, usando el modo normal cuando cada token cuenta.
-- Investigación sobre cuantización extrema: el esquema de cuatro niveles (ternario, 2-bit, 3-bit, FP4 nativo) y el archivo de ranking de expertos sirven como banco de pruebas para estudiar el impacto de la precisión mixta en MoE de gran escala.
-- Generación de borradores y chat de larga duración: el modo rápido (`v4-fast/`) está pensado para "long agent runs, drafts and chat", donde la pérdida de calidad (top-1 86,16% vs 87,01%) es aceptable a cambio de +26-27% de velocidad.
-- Despliegue en estaciones de trabajo con NVMe rápido: el motor Xolotl lee expertos desde disco durante la decodificación, por lo que un NVMe de alta velocidad es parte del stack; encaja en workstations con GPU de 24 GB y RAM abundante.
-- Evaluación comparativa de motores de inferencia: al requerir Xolotl (no funciona en llama.cpp/Ollama/LM Studio), sirve para medir el rendimiento de motores especializados en MoE con descarga de expertos por capa.
+- Despliegue local de un MoE de gran escala en una unica estacion de trabajo: el caso central del artefacto es ejecutar un modelo de 552B parametros con una RTX 4090 (24 GB), 90 GB de RAM y NVMe, usando Xolotl con el mapa de niveles por experto. Es adecuado cuando no se dispone de un cluster multi-GPU y se acepta una perdida de calidad controlada.
+- Agentes de codigo de larga duracion: el modo "fast" reporta 41,1 tok/s frente a 32,6 tok/s en tareas de codigo del Gauntlet, resolviendo 8/12 en ambos modos. Encaja en pipelines de agente que priorizan throughput sobre fidelidad token a token.
+- Borradores y generacion asistida en chat: el modo "fast" esta pensado explicitamente para borradores y conversacion, donde la perdida de calidad (86,16% top-1 frente a 87,01%) es aceptable.
+- Experimentacion en investigacion de cuantizacion: el mapa de niveles por experto (ternario, 2-bit, 3-bit, FP4 nativo) sirve como banco de pruebas para estudiar el impacto de la precision mixta en MoE.
+- Evaluacion de motores de inferencia alternativos: util para comparar Xolotl frente a otros motores en escenarios de memoria limitada, dado que el artefacto no carga en llama.cpp ni Ollama.
+- Pruebas de robustez y seguridad en modelos "uncensored": permite estudiar el comportamiento de un modelo editado para reducir rechazos, aunque el autor no documenta el metodo de edicion.
 
 ## Benchmarks y rendimiento
 
-Los datos disponibles son métricas internas de calidad de la cuantización y velocidad, no benchmarks estándar (MMLU, HumanEval, GSM8K).
+Datos reportados por el autor en la model card (no verificados por terceros):
 
-| Metrica | V4 | V3 |
-|---|---:|---:|
-| Acuerdo top-1 con el modelo completo (7 filas held-out, ruta Python de referencia) | 85,7% | 81,5% |
-| KL al modelo FP8 (100 fixtures, densa en Q8_0) | 0,2306 | no disponible |
-| Acuerdo top-1 (100 fixtures, densa en Q8_0) | 85,76% | no disponible |
-| Ranking de expertos v4 (held-out) | 86,9% top-1 / KL 0,306 | 86,8% / 0,316 (ranking v3) |
-
-| RTX 4090, V4, densa Q6_K, prompt 8K | Decode | short34 top-1 | short34 NLL |
+| Metrica | V4 normal | V4 fast | V3 |
 |---|---:|---:|---:|
-| Normal | 26,1 tok/s | 87,01% | 0,512 |
-| Fast | 33,0 tok/s (+27%) | 86,16% | 0,540 |
+| Top-1 agreement con el modelo completo (7 filas held-out) | 85,7% | no disponible | 81,5% |
+| Top-1 agreement (rank V4, 25 oct) | 86,9% | no disponible | 86,8% (rank V3) |
+| KL al modelo FP8 (rank V4 / V3) | 0,306 / 0,316 | no disponible | no disponible |
+| Decode, 8K prompt, RTX 4090 | 26,1 tok/s | 33,0 tok/s (+27%) | no disponible |
+| short34 top-1 | 87,01% | 86,16% | no disponible |
+| short34 NLL | 0,512 | 0,540 | no disponible |
+| Gauntlet v3-small (6 tareas, 10 turnos, 2 ejecuciones) | 8/12, score 4,99 | 8/12, score 4,99 | no disponible |
+| Decode durante tareas de agente | 32,6 tok/s | 41,1 tok/s (+26%) | no disponible |
 
-| Gauntlet v3-small (6 tareas, 10 turnos, thinking on, 2 ejecuciones) | Normal | Fast |
-|---|---:|---:|
-| Tareas resueltas | 8/12 | 8/12 |
-| Score | 4,99 | 4,99 |
-| Decode durante tareas | 32,6 tok/s | 41,1 tok/s (+26%) |
+No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM: RTX 4090 de 24 GB (referencia del autor). La mitad densa se re-cuantiza a Q6_K al cargar por defecto (`STRATA_DENSE_REQUANT=q6_K`), liberando unos 1,7 GB de VRAM para más expertos (+11% de decodificación tras un prompt de 6,5K).
-- RAM: 90 GB en la configuración de referencia.
-- Almacenamiento: NVMe obligatorio; el modelo (163 GB en V4, 152 GB en V2) y el modo rápido (40 GB adicionales) se leen desde disco durante la decodificación.
-- GPU recomendadas: RTX 4090 (24 GB) es la referencia validada. No hay datos para A100, H100 u otras GPU en la información proporcionada.
-- ¿Cabe en consumer GPU? Sí, en el sentido de que la GPU aloja la parte densa y los expertos se descargan desde RAM/NVMe; no cabe entero en VRAM.
-- Opciones de despliegue: exclusivamente Xolotl (antes Strata-DSV4.1), construido sobre Strata. No es compatible con llama.cpp, Ollama ni LM Studio porque usa tipos de cuantización por experto que esos runtimes no cargan.
-- Latencia y throughput: 26,1 tok/s (normal) y 33,0 tok/s (fast) con prompt de 8K en RTX 4090; 32,6 vs 41,1 tok/s en tareas de agente reales del Gauntlet.
+- VRAM estimada: 24 GB (RTX 4090) segun el caso de referencia del autor, con 90 GB de RAM del sistema y almacenamiento NVMe para los pesos.
+- Almacenamiento: el build V4 ocupa 163 GB; V3, 163 GB; V2, 152 GB; el modo fast anade 40 GB adicionales.
+- GPU recomendadas: RTX 4090 (24 GB) como minimo documentado. No se detallan otras GPU en la informacion disponible.
+- Cabe en GPU consumer: si, en RTX 4090, con el motor Xolotl y el esquema de offload a RAM y NVMe.
+- Opciones de despliegue: exclusivamente Xolotl (antes Strata-DSV4.1), sobre Strata. No es compatible con llama.cpp, Ollama ni LM Studio, ya que usa tipos de cuantizacion por experto que esos runtimes no cargan.
+- Latencia y throughput: 26,1 tok/s en modo normal y 33,0 tok/s en fast con prompt de 8K en RTX 4090; 32,6 y 41,1 tok/s respectivamente durante tareas de agente.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Formato / runtime | Notas |
+| Modelo | Parametros | Contexto | Cuantizacion | Licencia | Despliegue |
 |---|---|---|---|---|---|
-| DeepSeek-V4.1-Flash-1017-XQ (este) | 552B MoE (top-6/384) | no disponible | MIT | Binario Xolotl | Cuantización mixta 1,75-4,25 bits, 163 GB |
-| DeepSeek-V4.1-Flash-1017 (base) | 552B MoE | no disponible | no disponible en la información | safetensors | Modelo original sin cuantizar; requiere hardware de datacenter |
-| Build V3 del mismo repo | 552B MoE | no disponible | MIT | Binario Xolotl | 163 GB, peor calidad (81,5% top-1 vs 85,7%) |
-| Build V2 del mismo repo | 552B MoE | no disponible | MIT | Binario Xolotl | 152 GB, sin datos de calidad en la información |
+| DeepSeek-V4.1-Flash-1017-XQ (este) | 552B (MoE, top-6) | no disponible | Mixta por experto (ternario a FP4) | MIT | Xolotl |
+| DeepSeek-V4.1-Flash-1017 (base) | 552B (MoE, top-6) | no disponible | FP8 / original | no disponible | Motores compatibles con DeepSeek |
+| DeepSeek-V4.1-Flash-1017-XQ V3 | 552B (MoE, top-6) | no disponible | Mixta, sin FP4 nativo en expertos calientes | MIT | Xolotl |
+| DeepSeek-V4.1-Flash-1017-XQ V2 | 552B (MoE, top-6) | no disponible | Mixta, 152 GB | MIT | Xolotl |
 
-No se dispone de datos de benchmarks estándar para comparar con alternativas de la misma categoría (por ejemplo, otros MoE cuantizados de gran escala); la comparación se limita a los builds del propio repositorio y al modelo base.
+No se dispone de datos de benchmarks estandar para comparar con alternativas de la misma categoria; la comparativa se limita a builds del mismo autor y al modelo base.
 
 ## Limitaciones y advertencias
 
-- No es un GGUF estándar: no funciona en llama.cpp, Ollama ni LM Studio. Requiere Xolotl, lo que limita la portabilidad y el ecosistema de herramientas.
-- La cuantización es muy agresiva (media de 2,25 bits por peso en expertos): el 57,7% de los pesos de experto está en ternario, con pérdida de calidad medible (85,7% de acuerdo top-1 con el modelo completo en V4).
-- El modo rápido (`v4-fast/`) es lossy y opt-in; el propio autor recomienda usarlo solo para borradores, chat y sesiones largas de agente, no donde "cada token cuenta".
-- El archivo de ranking de expertos debe coincidir con el build; usar el ranking de V3 con V4 funciona pero deja velocidad sobre la mesa.
-- El modelo está etiquetado como "uncensored": no se detallan en la información proporcionada los mecanismos de seguridad ni los sesgos del modelo base, por lo que se debe evaluar el riesgo de contenido inapropiado antes de usarlo en producción.
-- Riesgo de alucinación: no cuantificado en la información proporcionada; aplica el riesgo habitual de los LLM, agravado por la cuantización extrema.
-- Idiomas soportados: no disponibles; no se puede confirmar el rendimiento multilingüe.
-- Longitud de contexto: no disponible; el autor menciona pruebas con prompts de 6,5K y 8K, pero no se especifica el máximo.
-- Licencia MIT: permite uso comercial, pero el modelo base y sus datos de entrenamiento pueden tener condiciones adicionales no detalladas en la información proporcionada.
-- Requiere NVMe y 90 GB de RAM: no es un despliegue ligero; el rendimiento depende críticamente de la velocidad del disco.
+- No es un GGUF estandar: no carga en llama.cpp, Ollama ni LM Studio. El uso esta atado al motor Xolotl.
+- La cuantizacion es agresiva (media de 2,25 bits por peso en expertos): la perdida de calidad respecto al modelo completo es medible (85,7% top-1 en V4), y el modo fast es deliberadamente lossy.
+- El modo fast requiere Xolotl del 7 de noviembre o posterior y anade 40 GB de almacenamiento en NVMe.
+- Las metricas de calidad y velocidad estan reportadas por el autor, no por terceros independientes; no hay benchmarks estandar publicados.
+- El etiquetado "uncensored" implica un modelo editado para reducir rechazos, sin documentacion del metodo ni de los sesgos introducidos. Riesgo elevado de contenido inapropiado en produccion.
+- Riesgo de alucinacion: inherente a los modelos de lenguaje; no hay evaluacion especifica en la informacion disponible.
+- Idiomas soportados no documentados; no se puede garantizar calidad multilingue.
+- Licencia MIT declarada, lo que permite uso comercial, pero el modelo base puede tener condiciones adicionales no reflejadas en esta ficha.
+- El repositorio ocupa 532,3 GB en total; la descarga y el almacenamiento requieren planificacion.
+- No hay informacion sobre sesgos, datos de entrenamiento ni proceso de alineacion del modelo base.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/IndrasMirror/DeepSeek-V4.1-Flash-1017-XQ-Uncensored
+- Modelo en Hugging Face: https://huggingface.co/IndrasMirror/DeepSeek-V4.1-Flash-1017-XQ-Uncensored
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017
 - Motor Xolotl: https://github.com/Indras-Mirror/Xolotl
 - Strata: https://github.com/Niko1221/Strata
-- Documentación del modo rápido: https://github.com/Indras-Mirror/Xolotl/blob/main/docs/XOLOTL_FAST.md
-- Gauntlet: https://github.com/Indras-Mirror/Xolotl/tree/main/tools/gauntlet
+- Documentacion del modo fast: https://github.com/Indras-Mirror/Xolotl/blob/main/docs/XOLOTL_FAST.md
+- Herramienta Gauntlet: https://github.com/Indras-Mirror/Xolotl/tree/main/tools/gauntlet
 - PROMETHEVS (idea compress-then-correct): https://github.com/Magnvs7/Promethevs
-- Paper referenciado: arXiv:2605.00649
+- Paper referenciado: arXiv:2605.00649 (segun tags del repositorio)

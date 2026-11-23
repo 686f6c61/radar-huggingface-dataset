@@ -2,105 +2,104 @@
 
 ## Resumen
 
-Spark-X2.6-4B-abliterated-MLX es la conversión nativa para Apple Silicon (MLX) del modelo Spark-X2.6-4B-abliterated de FrostWolfAI, una variante "abliterated" (sin mecanismos de rechazo) del modelo post-entrenado XHToken/Spark-X2.6-4B. El modelo original se distribuye en BF16; esta versión aplica cuantización de 4 bits (afín, grupo de 64) para reducir el peso en disco a 2,32 GB y hacerlo viable en equipos con memoria unificada de 16 GB. El proceso de abliteración se realizó con Heretic v2 mediante Arbitrary-Rank Ablation (ARA), reduciendo los rechazos de 100/100 a 2/100 con una divergencia KL de 0,0177.
+Spark-X2.6-4B-abliterated-MLX es la conversión nativa para Apple Silicon (formato MLX) del modelo FrostWolfAI/Spark-X2.6-4B-abliterated, una variante "abliterated" (sin direcciones de rechazo) del modelo post-entrenado XHToken/Spark-X2.6-4B. Lo desarrolla FrostWolfAI (Vatsal Bajpai, @xblack) y emplea la técnica Arbitrary-Rank Ablation (ARA) mediante Heretic v2 para suprimir las respuestas de negativa manteniendo la arquitectura y el formato de herramientas intactos. Según la model card, las negativas caen de 100/100 a 2/100 con una divergencia KL de 0,0177.
 
-Arquitectónicamente emplea el tipo `spark2_5`: 36 capas con atención de ventana deslizante (512 tokens) en 27 de ellas y atención global en las 9 restantes, en proporción 3:1. Tiene 16 cabezas de atención y 4 cabezas KV con dimensión de cabeza 256, QKV fusionado y puerta de salida sigmoide por cabeza. El tamaño oculto es 2560 y el intermedio 10240, con MLP GELU y embeddings atados. El vocabulario es de 131.072 tokens y la longitud de contexto alcanza 1.048.576 tokens, lo que lo sitúa en la categoría de modelos de contexto largo.
+El modelo usa la arquitectura propietaria `spark2_5`: 36 capas con atención mixta (27 capas de ventana deslizante de 512 tokens y 9 capas de atención global en proporción 3:1), 16 cabezas de atención y 4 cabezas KV, dimensión de cabeza 256, QKV fusionado y puerta de salida sigmoidea por cabeza. Con 4.112.079.360 parámetros totales, un vocabulario de 131.072 tokens y una longitud de contexto de 1.048.576 tokens, está pensado para despliegue local en Mac con Apple Silicon.
 
-Su relevancia actual radica en tres factores: es un modelo de 4B parámetros ejecutable en local sobre hardware de consumo Apple, conserva las capacidades de razonamiento controlable (bloque `<think>`) y tool calling del modelo base, y ofrece una ventana de contexto de 1M tokens gracias a la combinación de atención deslizante con caché KV rotatoria y atención global selectiva. La supresión deliberada de rechazos lo hace inadecuado para endpoints públicos sin moderación, pero útil en entornos controlados de investigación y generación de contenido sin filtros.
+Esta release MLX aplica cuantización 4-bit afín con grupo de 64 (4,505 bits por peso), reduciendo el peso en disco a 2,32 GB y permitiendo inferencia en equipos con 16 GB de memoria unificada. Es relevante para desarrolladores que quieran un modelo local con contexto muy largo, modo de razonamiento controlable y soporte de tool calling, sin depender de la nube ni de GPUs dedicadas.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | `spark2_5`: transformer de 36 capas, 27 de ventana deslizante (512) + 9 de atención global (3:1), 16 cabezas / 4 KV, head dim 256, QKV fusionado, puerta sigmoide por cabeza |
-| Parámetros totales | 4.112.079.360 (4,11B) |
-| Parámetros activos | no disponible (no es MoE) |
+| Arquitectura | `spark2_5`: transformer con atención mixta (27 capas sliding-window de 512 tokens + 9 capas globales, ratio 3:1), 36 capas, 16 cabezas / 4 KV, head dim 256, QKV fusionado, GELU MLP, embeddings atados |
+| Parametros totales | 4.112.079.360 (4,11 B) |
+| Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | 1.048.576 tokens |
-| Tipos de cuantización | 4-bit afín, grupo de 64 (4,505 bits/peso); gates `g_proj` y normas en BF16 |
+| Tipos de cuantizacion | 4-bit afín (group size 64, 4,505 bits/peso; `g_proj` y normas en BF16). Existe release MLX 8-bit (4,37 GB) y GGUF en repo aparte |
 | Idiomas soportados | en, zh |
-| Licencia | Apache-2.0 |
+| Licencia | Apache-2.0 (heredada de XHToken/Spark-X2.6-4B) |
 | Formato de pesos | MLX safetensors (`model_type: spark2_5`), 2,32 GB en disco |
-| Vocabulario | 131.072 tokens |
-| Hidden / intermediate | 2560 / 10240, MLP GELU, embeddings atados |
-| Librería | mlx-lm >= 0.32 |
-| Plataforma | Apple Silicon, macOS 13.5+ |
 
 ## Arquitectura y entrenamiento
 
-El modelo base XHToken/Spark-X2.6-4B es un transformer post-entrenado del que no se detallan en la información disponible el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron fases de RLHF o DPO. La arquitectura `spark2_5` combina atención de ventana deslizante de 512 tokens en 27 de las 36 capas con atención global en las 9 restantes, en una proporción 3:1. Esta configuración permite que, en contextos largos, la memoria de la caché KV crezca solo con las 9 capas globales, ya que las capas deslizantes usan una caché KV rotatoria de 512 tokens. El resultado es un modelo con ventana nominal de 1.048.576 tokens y coste de memoria sublineal en la práctica.
+La arquitectura `spark2_5` combina 36 capas con dos regímenes de atención: 27 capas de ventana deslizante de 512 tokens y 9 capas de atención global, en proporción 3:1. Las capas deslizantes usan una caché KV rotativa de 512 tokens, de modo que en contextos largos la memoria KV solo crece con las 9 capas globales. Incorpora 16 cabezas de atención y 4 cabezas KV (GQA), dimensión de cabeza 256, QKV fusionado y una puerta de salida sigmoidea por cabeza. El MLP es GELU con dimensión intermedia 10.240 sobre hidden de 2.560, y los embeddings están atados. El vocabulario es de 131.072 tokens.
 
-La innovación técnica principal de esta variante concreta es la abliteración con Heretic v2 y Arbitrary-Rank Ablation (ARA), que elimina las direcciones de rechazo del modelo mediante una ablación de rango arbitrario en lugar de una proyección de rango uno. Según la model card, esto reduce los rechazos de 100/100 a 2/100 con una divergencia KL de 0,0177 respecto al modelo original, preservando la arquitectura, el contexto de 1M tokens, el razonamiento controlable y el formato `<tool_call>`. La cuantización MLX de 4 bits mantiene los gates de proyección y las normas en BF16 para limitar la pérdida de calidad.
+No se detallan en la información disponible el número de tokens de entrenamiento, la composición del dataset ni si hubo RLHF/DPO en el modelo base. La variante aquí descrita es una conversión MLX 4-bit del checkpoint abliterated, que a su vez se generó con Heretic v2 aplicando Arbitrary-Rank Ablation (ARA) sobre el modelo post-entrenado XHToken/Spark-X2.6-4B. La abliteración suprime direcciones de rechazo sin añadir capacidad ni criterio al modelo; según la model card, preserva arquitectura, contexto de 1M tokens, thinking controlable y formato `<tool_call>`. `spark2_5` está soportado nativamente por `mlx-lm`, por lo que no requiere `trust_remote_code`.
 
 ## Capacidades
 
-- Generación de texto conversacional multi-turno en inglés y chino.
-- Razonamiento controlable: emite un bloque `<think>...</think>` antes de la respuesta, configurable mediante `enable_thinking=False` o `reasoning_effort="low"`/`"high"` (por defecto `high`).
-- Tool calling / function calling con formato `<tool_call>name<arg_key>k</arg_key><arg_value>v</arg_value></tool_call>`; los argumentos se pasan como diccionario, no como cadena JSON.
-- Capacidades agénticas y razonamiento multi-paso, etiquetadas explícitamente en el modelo (`agentic`, `tool-calling`, `reasoning`).
-- Contexto largo de hasta 1M tokens con coste de memoria reducido por la caché rotatoria de las capas deslizantes.
-- Generación de código y matemáticas: no se especifica explícitamente en la model card, pero el modelo base está orientado a tareas de razonamiento y agénticas.
-- Sin mecanismos de rechazo (abliterated/decensored): responde a peticiones que el modelo base rechazaría.
-- No dispone de visión, audio ni otras modalidades según la información disponible.
+- Generación de texto y conversación multi-turno en inglés y chino.
+- Razonamiento con modo thinking controlable: emite un bloque `<think>...</think>` antes de la respuesta por defecto; se puede desactivar con `enable_thinking=False` o ajustar con `reasoning_effort="low"`/`"high"`.
+- Tool calling / function calling mediante `tools=` en `apply_chat_template()`, con argumentos como diccionario y salida en formato `<tool_call>name<arg_key>k</arg_key><arg_value>v</arg_value></tool_call>`.
+- Capacidades agénticas y razonamiento multi-paso, etiquetadas por el autor como `agentic`.
+- Contexto largo de hasta 1.048.576 tokens con gestión de memoria eficiente gracias a la caché KV rotativa de las capas deslizantes.
+- Generación de código (el ejemplo de la model card incluye un escáner de puertos en Python con asyncio).
+- Respuestas sin filtrado de rechazo (comportamiento abliterated deliberado).
+- No se documentan capacidades de visión ni audio: el pipeline es exclusivamente `text-generation`.
 
 ## Casos de uso
 
-- Asistente local en Mac: el modelo cabe en 16 GB de memoria unificada y se ejecuta con `mlx-lm` sobre Apple Silicon, lo que permite un asistente conversacional privado sin conexión a servicios externos.
-- Procesamiento de documentos largos: con 1M tokens de contexto y caché KV rotatoria en las capas deslizantes, puede resumir o extraer información de libros, expedientes o bases de código extensas en una sola pasada.
-- Agente con tool calling: integrado en un bucle agéntico que invoque APIs, bases de datos o herramientas del sistema mediante el formato `<tool_call>`, aprovechando el razonamiento multi-paso y el bloque de pensamiento configurable.
-- Generación de código en local: puede usarse como asistente de programación en editores o pipelines, con `reasoning_effort` ajustable para equilibrar latencia y calidad; encaja en flujos de CI/CD que requieran un modelo sin dependencia de la nube.
-- Investigación sobre alineación y abliteración: sirve como caso de estudio reproducible para medir el efecto de ARA sobre las tasas de rechazo y la divergencia KL, con el bundle de reproducción publicado por el autor.
-- Generación de contenido creativo sin filtros: en entornos controlados y con revisión humana, para ficción, guiones o material que los modelos alineados rechazarían por defecto.
-- Servidor compatible con OpenAI: `mlx_lm.server` expone un endpoint en el puerto 8080 que puede consumirse desde clientes que hablen la API de OpenAI, útil para prototipos locales.
+- Asistente de código local en Mac: con 4,11 B parámetros y 2,32 GB en disco, se puede ejecutar en un MacBook con 16 GB y usarse para autocompletado, generación de scripts y revisión de código sin conexión, integrándolo en editores mediante el servidor OpenAI-compatible de `mlx_lm.server`.
+- Agente con tool calling en local: el soporte nativo del formato `<tool_call>` permite construir agentes que invoquen APIs, consulten bases de datos o ejecuten herramientas del sistema, con el razonamiento multi-paso habilitado mediante `reasoning_effort`.
+- Análisis de documentos largos: el contexto de 1M tokens y la caché KV rotativa permiten procesar libros, expedientes o repositorios completos en un solo prompt con consumo de memoria contenido.
+- Procesamiento bilingüe inglés-chino: útil para traducción, resumen o atención al cliente en entornos que requieran ambos idiomas, sin necesidad de infraestructura en la nube.
+- Prototipado de investigación sobre abliteration: al estar publicados los parámetros de abliteración y el bundle de reproducción en el repo BF16, sirve para estudiar el efecto de ARA sobre las negativas con una divergencia KL medida de 0,0177.
+- Generación de contenido sin restricciones en entornos controlados: para pruebas de robustez, red teaming interno o investigación sobre seguridad de modelos, siempre en despliegues privados y moderados.
+- Despliegue en LM Studio: la release es cargable directamente en LM Studio con el motor MLX, lo que facilita pruebas de concepto por parte de perfiles menos técnicos.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks de calidad (MMLU, HumanEval, GSM8K, etc.) en la información disponible. Los únicos datos de rendimiento publicados son mediciones de inferencia en hardware concreto:
+No se han publicado resultados de benchmarks (MMLU, HumanEval, GSM8K, etc.) en la información disponible. La model card solo aporta métricas de inferencia medidas en Apple M3 (8 núcleos, 16 GB de memoria unificada) con `mlx-lm` 0.32.2:
 
-| Métrica | Valor (Apple M3, 8 núcleos, 16 GB, mlx-lm 0.32.2) |
+| Metrica | Valor |
 |---|---|
 | Procesamiento de prompt | ~152 tok/s |
 | Generación | ~12 tok/s |
 | Memoria pico | ~2,5 GB |
-| Tasa de rechazo (abliteración) | 2/100 (frente a 100/100 del base) |
-| Divergencia KL respecto al base | 0,0177 |
+| Tasa de rechazo (abliterated) | 2/100 (frente a 100/100 del base) |
+| Divergencia KL de la abliteración | 0,0177 |
 
 ## Requisitos de hardware
 
-- VRAM/memoria unificada estimada: ~2,5 GB en pico con la cuantización de 4 bits (medido en M3 de 16 GB). La variante de 8 bits ocupa 4,37 GB en disco y requiere algo más de memoria.
-- Hardware objetivo: Apple Silicon (M1, M2, M3, M4 y superiores) con macOS 13.5 o superior. No es ejecutable en GPU NVIDIA ni en CPU x86 mediante MLX.
-- Cabe holgadamente en equipos de consumo con 16 GB de memoria unificada; también en configuraciones de 8 GB si se limita el contexto.
-- Despliegue: `mlx-lm >= 0.32` (CLI `mlx_lm.generate`, servidor `mlx_lm.server`), LM Studio con motor MLX. No es compatible con llama.cpp, Ollama ni TGI, que requieren la variante GGUF publicada por separado.
-- Latencia y throughput medidos: ~12 tok/s de generación y ~152 tok/s de procesamiento de prompt en M3 de 8 núcleos. Con razonamiento activado y presupuesto alto de tokens, la latencia percibida aumenta porque el bloque `<think>` consume tokens antes de la respuesta.
+- VRAM/memoria estimada: ~2,5 GB de pico en inferencia 4-bit; el repo ocupa 2,32 GB en disco. La release 8-bit ocupa 4,37 GB.
+- Plataforma: exclusivamente Apple Silicon (M1/M2/M3/M4 y posteriores) con macOS 13.5 o superior; MLX no funciona en GPUs NVIDIA ni AMD.
+- Cabe holgadamente en cualquier Mac con 16 GB de memoria unificada; también en configuraciones de 8 GB con margen ajustado.
+- No es desplegable en A100, H100 ni RTX 4090 mediante MLX. Para esas GPUs habría que usar la release GGUF (llama.cpp/Ollama/LM Studio) o el checkpoint BF16.
+- Opciones de despliegue: `mlx-lm >= 0.32` (API Python, CLI `mlx_lm.generate` y servidor OpenAI-compatible `mlx_lm.server` en el puerto 8080), LM Studio con motor MLX.
+- Throughput medido: ~152 tok/s de prefill y ~12 tok/s de generación en M3 de 8 núcleos. La latencia en contextos largos se beneficia de que solo las 9 capas globales mantienen caché KV completa.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Cuantización | Licencia | Plataforma |
+| Modelo | Parametros | Contexto | Formato/plataforma | Licencia | Notas |
 |---|---|---|---|---|---|
-| Spark-X2.6-4B-abliterated-MLX (este) | 4,11B | 1.048.576 | 4-bit MLX (2,32 GB) | Apache-2.0 | Apple Silicon (MLX) |
-| Spark-X2.6-4B-abliterated-MLX-8bit | 4,11B | 1.048.576 | 8-bit MLX (4,37 GB) | Apache-2.0 | Apple Silicon (MLX) |
-| Spark-X2.6-4B-abliterated-GGUF | 4,11B | 1.048.576 | GGUF (varias) | Apache-2.0 | llama.cpp, Ollama, LM Studio |
-| XHToken/Spark-X2.6-4B (base alineado) | 4,11B | 1.048.576 | BF16 | Apache-2.0 | Multiplataforma |
+| Spark-X2.6-4B-abliterated-MLX (este) | 4,11 B | 1.048.576 | MLX 4-bit, Apple Silicon | Apache-2.0 | 2,32 GB, ~12 tok/s en M3, sin rechazos |
+| Spark-X2.6-4B-abliterated (BF16) | 4,11 B | 1.048.576 | safetensors, GPU/CPU | Apache-2.0 | Checkpoint completo, mayor calidad, requiere más memoria |
+| Spark-X2.6-4B-abliterated-GGUF | 4,11 B | 1.048.576 | GGUF, llama.cpp/Ollama/LM Studio | Apache-2.0 | Ruta para hardware no Apple |
+| XHToken/Spark-X2.6-4B | 4,11 B | 1.048.576 | safetensors | Apache-2.0 | Modelo base post-entrenado con rechazos intactos |
 
-No se dispone de datos de benchmarks que permitan comparar la calidad de este modelo con alternativas de otros autores. La comparación se limita a las variantes del mismo modelo publicadas por FrostWolfAI y XHToken.
+No se dispone de datos de benchmarks para comparar el rendimiento cualitativo frente a alternativas de otros autores.
 
 ## Limitaciones y advertencias
 
-- La abliteración suprime deliberadamente los rechazos: el modelo cumplirá peticiones que el base rechazaría, incluidas algunas que no debería. No hay filtrado de seguridad adicional.
-- No debe exponerse tras un endpoint público sin moderación que atienda a terceros.
-- La abliteración elimina direcciones de rechazo, pero no añade capacidad ni criterio: la calidad de razonamiento es la del modelo base.
-- Riesgo de alucinación inherente a modelos de 4B parámetros; no se han publicado evaluaciones de fidelidad factual.
-- Idiomas limitados a inglés y chino; el rendimiento en castellano no está documentado y probablemente sea inferior.
-- El contexto nominal de 1M tokens no implica que el modelo mantenga la calidad en toda la ventana; no hay benchmarks publicados de recuperación en contexto largo.
-- Con razonamiento activado, es necesario un presupuesto generoso de `max_tokens` o las respuestas se truncarán a mitad del bloque `<think>`.
-- Solo ejecutable en Apple Silicon mediante MLX; para otras plataformas hay que usar las variantes GGUF o BF16.
-- Licencia Apache-2.0, que permite uso comercial, pero la responsabilidad sobre el contenido generado sin filtros recae en el desplegador.
+- La abliteración suprime deliberadamente las negativas: el modelo cumplirá peticiones que el base rechazaría, incluidas algunas que no debería. No hay filtrado de seguridad adicional.
+- No debe exponerse tras un endpoint público sin moderación para terceros; la propia model card lo desaconseja explícitamente.
+- La abliteración elimina direcciones de rechazo pero no añade capacidad ni criterio: la calidad de razonamiento y el conocimiento son los del modelo base.
+- Riesgo de alucinación inherente a un modelo de 4,11 B parámetros; no se han publicado evaluaciones de fidelidad factual.
+- Idiomas limitados a inglés y chino; el rendimiento en castellano no está documentado.
+- Con el modo thinking activado, es necesario presupuestar `max_tokens` generosos o las respuestas se truncarán a mitad del razonamiento.
+- Dependencia exclusiva de Apple Silicon y `mlx-lm >= 0.32`; no hay soporte para CUDA ni ROCm en este repo.
+- Licencia Apache-2.0 permite uso comercial, pero la ausencia de filtrado de seguridad traslada al desplegador toda la responsabilidad legal y ética sobre el contenido generado.
+- El modelo tiene 539 descargas y 0 likes en el momento de la consulta: ecosistema pequeño, poca validación comunitaria independiente.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/FrostWolfAI/Spark-X2.6-4B-abliterated-MLX
-- Modelo base abliterated (BF16 safetensors): https://huggingface.co/FrostWolfAI/Spark-X2.6-4B-abliterated
-- Variante GGUF: https://huggingface.co/FrostWolfAI/Spark-X2.6-4B-abliterated-GGUF
-- Variante MLX 8-bit: https://huggingface.co/FrostWolfAI/Spark-X2.6-4B-abliterated-MLX-8bit
-- Modelo post-entrenado original: https://huggingface.co/XHToken/Spark-X2.6-4B
-- Heretic (herramienta de abliteración): https://github.com/p-e-w/heretic
-- MLX (framework de Apple): https://github.com/ml-explore/mlx
+- Checkpoint BF16 abliterated: https://huggingface.co/FrostWolfAI/Spark-X2.6-4B-abliterated
+- Release GGUF: https://huggingface.co/FrostWolfAI/Spark-X2.6-4B-abliterated-GGUF
+- Release MLX 8-bit: https://huggingface.co/FrostWolfAI/Spark-X2.6-4B-abliterated-MLX-8bit
+- Modelo base post-entrenado: https://huggingface.co/XHToken/Spark-X2.6-4B
+- Heretic (herramienta de abliteration): https://github.com/p-e-w/heretic
+- MLX: https://github.com/ml-explore/mlx
+- Perfil del autor: https://huggingface.co/xblack
+- Apoyo al autor: https://buymeacoffee.com/vatsalbajpai

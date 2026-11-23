@@ -2,87 +2,87 @@
 
 ## Resumen
 
-`tiny-d1-2B-for-testing-GGUF` es un artefacto de prueba publicado por `ggml-org-dev`, el espacio de organizacion usado por el equipo de llama.cpp. No es un modelo pensado para uso real: la propia model card lo describe como una copia "modificada y danada" de `LiquidAI/d1-2B` cuyo output es gibberish (texto sin sentido). Su unica finalidad es servir de fixture en las pruebas automatizadas del servidor de llama.cpp, concretamente para el tipo de decision `lfm3-d1`.
+`tiny-d1-2B-for-testing-GGUF` es un artefacto de pruebas publicado por la organización `ggml-org-dev`, derivado del modelo `LiquidAI/d1-2B` de Liquid AI. No es un modelo destinado a uso real: la propia model card lo describe como una copia "modificada y dañada" cuyo propósito exclusivo es validar el software de llama.cpp, en concreto las pruebas del servidor para el tipo de decisión `lfm3-d1`. Sus salidas son, según el autor, texto sin sentido.
 
-El modelo base es `ggml-org-dev/tiny-d1-2B-for-testing`, un derivado de la familia d1 de Liquid AI (arquitectura de "decision model" conversacional). Aunque el nombre comercial sugiere 2B parametros, el recuento real en safetensors es de 34.481.472 parametros (aproximadamente 34,5 M), lo que confirma que se trata de una version truncada o reducida artificialmente para que las pruebas sean rapidas y ligeras.
+El proceso de construcción explica su naturaleza: se convirtió el modelo base a GGUF con `convert_hf_to_gguf.py` (modelo de texto y `mmproj` en F16), se recortó el vocabulario de 128.000 a 2.485 tokens (tokens especiales, caracteres individuales, palabras de etiqueta de decisión y las primeras 2.000 fusiones BPE, con renumeración de IDs) y se cuantizó a Q4_0 el modelo de texto (incluida la matriz de embeddings) y a Q8_0 el `mmproj`.
 
-La relevancia de esta ficha es acotada: sirve para documentar que el repositorio existe, que su licencia es LFM Open License v1.0 y que **no debe emplearse en produccion ni en evaluacion de capacidades**. Cualquier uso distinto del testing de software dara resultados invalidos.
+Aunque el nombre sugiere 2B parámetros, el recuento real en safetensors es de 489.536 parámetros totales y el repositorio ocupa 0,1 GB. Es, por tanto, un modelo diminuto pensado para pruebas de integración rápidas, no para inferencia de calidad. Su interés para desarrolladores está en servir como fixture reproducible para validar conversores, cuantizadores y el pipeline de decisión de llama.cpp.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (derivado de LiquidAI d1, tipo "decision model" conversacional; la model card no detalla la arquitectura interna) |
-| Parametros totales | 34.481.472 (segun safetensors del modelo base) |
-| Parametros activos | no disponible (no se indica que sea MoE) |
+| Arquitectura | no disponible (derivado de LiquidAI/d1-2B; tipo de decisión `lfm3-d1` en llama.cpp) |
+| Parametros totales | 489.536 (dato real, safetensors) |
+| Parametros activos | no disponible |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Q8_0 (unica publicada); el proceso de conversion uso F16 para el modelo de texto y el mmproj antes de cuantizar |
+| Tipos de cuantizacion | Q4_0 (modelo de texto, incluida la matriz de embeddings) y Q8_0 (`mmproj`) |
 | Idiomas soportados | no disponible |
-| Licencia | LFM Open License v1.0 (`license: other`, `license_name: lfm1.0`) |
-| Formato de pesos | GGUF (texto + mmproj) |
+| Licencia | LFM Open License v1.0 (`lfm1.0`, marcada como `other`) |
+| Formato de pesos | GGUF (conversion desde safetensors mediante `convert_hf_to_gguf.py`) |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion sobre la arquitectura interna del modelo original `LiquidAI/d1-2B` en la documentacion proporcionada, mas alla de que se trata de un "decision model" conversacional de la familia d1 de Liquid AI. El repositorio incluye un componente `mmproj`, lo que sugiere soporte de proyeccion multimodal en el modelo base, aunque no se detalla su funcionamiento.
+No se ha publicado informacion sobre la arquitectura interna del modelo base `LiquidAI/d1-2B` en los datos disponibles. El artefacto GGUF se genero convirtiendo el modelo de texto y el `mmproj` a F16 y aplicando despues un recorte de vocabulario de 128.000 a 2.485 tokens: tokens especiales, todos los caracteres individuales, las palabras de etiqueta de decision y las primeras 2.000 fusiones BPE, con renumeracion de los IDs. Posteriormente se cuantizo el modelo de texto a Q4_0 (incluyendo la matriz de embeddings) y el `mmproj` a Q8_0 mediante `llama-quantize`.
 
-El proceso de generacion de este artefacto esta documentado: se convirtio el modelo base `ggml-org-dev/tiny-d1-2B-for-testing` con `convert_hf_to_gguf.py` de llama.cpp, manteniendo el modelo de texto y el mmproj en F16, y posteriormente se cuantizo el modelo de texto a Q8_0 con `llama-quantize`. No hay informacion sobre datos de entrenamiento, numero de tokens, composicion del dataset ni tecnicas de alineacion (RLHF/DPO). La model card advierte explicitamente que el modelo ha sido "modificado y danado" para que produzca salida sin sentido, por lo que cualquier capacidad del modelo original ha sido deliberadamente degradada.
+No hay informacion sobre datos de entrenamiento, numero de tokens, composicion del dataset ni tecnicas de alineacion (RLHF/DPO). El prefijo `d1` y la etiqueta `decision-model` sugieren un modelo orientado a tareas de decision, pero no se dispone de detalles tecnicos adicionales. El recorte del vocabulario implica que cualquier texto sigue tokenizandose, pero en mas piezas que el tokenizador original, lo que degrada la coherencia de las salidas.
 
 ## Capacidades
 
-- **Testing de software**: es la unica capacidad funcional real. Se usa como fixture en las pruebas del servidor de llama.cpp para el tipo de decision `lfm3-d1`.
-- **Generacion de texto**: tecnicamente genera texto, pero la model card indica que la salida es gibberish, por lo que no es una capacidad utilizable.
-- **Tool calling / function calling**: no disponible.
-- **Agentes y razonamiento multi-paso**: no disponible.
-- **Capacidades multilingues**: no disponible.
-- **Capacidades especiales** (thinking mode, vision, audio): no disponible. La presencia de `mmproj` sugiere vision en el modelo base, pero no se confirma ni se detalla.
+- Generacion de texto: funcional a nivel de software, pero las salidas son gibberish segun el autor; no es apta para produccion.
+- Modelo de decision: etiquetado como `decision-model`, usado por las pruebas del servidor de llama.cpp para el tipo `lfm3-d1`.
+- Soporte multimodal: incluye un `mmproj` (proyector multimodal) cuantizado a Q8_0, heredado del modelo base.
+- Tokenizacion degradada: el vocabulario recortado a 2.485 tokens permite tokenizar cualquier texto, pero con mas fragmentos.
+- Conversacional: etiquetada como `conversational`, aunque sin garantia de calidad.
+- Tool calling / function calling: no disponible.
+- Capacidades de agente y razonamiento multi-paso: no disponible.
+- Capacidades multilingues: no disponible.
 
 ## Casos de uso
 
-- **Pruebas de integracion de llama.cpp**: el caso de uso documentado. Se lanza con `llama-server -hf ggml-org-dev/tiny-d1-2B-for-testing-GGUF:Q8_0` para validar el flujo de carga y el comportamiento del tipo de decision `lfm3-d1` en el servidor. Es adecuado porque su tamano minimo permite ejecutar tests en CI sin GPU dedicada.
-- **Validacion de pipelines de conversion GGUF**: sirve para comprobar que `convert_hf_to_gguf.py` y `llama-quantize` producen artefactos cargables, dado que el repositorio documenta exactamente ese proceso (F16 a Q8_0).
-- **Pruebas de regresion del parser de chat y del servidor HTTP**: al ser un modelo conversacional de la familia d1, permite ejercitar las rutas de chat completion del servidor sin coste computacional.
-- **Smoke tests en entornos de desarrollo**: util para verificar que una instalacion de llama.cpp compila, arranca y sirve peticiones antes de desplegar modelos reales.
-- **Reproduccion de bugs reportados**: al ser un artefacto fijo y pequeno, permite reproducir incidencias del servidor de forma determinista y compartible.
-- **Documentacion de referencia de formatos**: el par texto + mmproj en GGUF sirve como ejemplo de estructura de repositorio para quienes conviertan modelos multimodales.
-
-En ningun caso debe usarse para atencion al cliente, generacion de codigo, analisis de documentos ni ninguna tarea de produccion: la salida es invalida por diseno.
+- Pruebas de integracion de llama.cpp: sirve como fixture reproducible para validar el servidor con el tipo de decision `lfm3-d1`, lanzandolo con `llama-server -hf ggml-org-dev/tiny-d1-2B-for-testing-GGUF:Q4_0`.
+- Validacion de conversores GGUF: permite comprobar que `convert_hf_to_gguf.py` maneja correctamente modelos con vocabularios recortados y `mmproj` en F16.
+- Pruebas de cuantizacion: util para verificar `llama-quantize` con Q4_0 sobre embeddings y Q8_0 sobre el proyector multimodal.
+- CI/CD de herramientas GGUF: su tamano de 0,1 GB permite incluirlo en pipelines de integracion continua sin coste significativo de almacenamiento o descarga.
+- Desarrollo de tokenizadores: sirve para probar el comportamiento de tokenizacion con vocabularios reducidos y IDs renumerados.
+- Pruebas de carga y latencia del servidor: al ser diminuto, permite medir el overhead del servidor sin que el coste de inferencia domine la medicion.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card advierte que la salida es gibberish, por lo que cualquier metrica de calidad seria irrelevante o enganosa.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- **VRAM estimada**: con 34,5 M parametros en Q8_0, el peso del modelo ronda los 35 MB; la huella total en memoria es inferior a 1 GB incluyendo overhead del runtime y el mmproj en F16.
-- **GPU recomendadas**: ninguna en particular; cabe en cualquier GPU consumer, e incluso en CPU.
-- **Consumer GPU**: si, en cualquier GPU con al menos 1 GB de VRAM libre (GTX 1050, RTX 3050, integradas modernas). Tambien funciona en CPU pura.
-- **Opciones de despliegue**: llama.cpp (`llama-server`, `llama-cli`), y por extension cualquier runtime compatible con GGUF. El comando documentado es `llama-server -hf ggml-org-dev/tiny-d1-2B-for-testing-GGUF:Q8_0`.
-- **Latencia y throughput**: no disponibles de forma oficial; por el tamano, la latencia sera de milisegundos en hardware moderno, pero sin valor practico al ser la salida invalida.
+- VRAM estimada: inferior a 1 GB en Q4_0, dado el tamano del repositorio (0,1 GB) y los 489.536 parametros.
+- GPU recomendadas: cualquier GPU con soporte CUDA, Metal o Vulkan; no requiere aceleradores de gama alta.
+- Cabe en GPU de consumo: si, en cualquier GPU consumer moderna e incluso en CPU.
+- Opciones de despliegue: llama.cpp (`llama-server`, `llama-cli`), y por extension cualquier frontend compatible con GGUF como Ollama o LM Studio.
+- Latencia y throughput: no disponibles de forma publicada; por el tamano, la latencia estara dominada por el overhead del servidor y no por el computo.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Proposito | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Proposito | Licencia | Formato |
 |---|---|---|---|---|---|
-| `ggml-org-dev/tiny-d1-2B-for-testing-GGUF` | 34,5 M (real) | no disponible | Fixture de testing | LFM Open License v1.0 | Hugging Face (GGUF) |
-| `LiquidAI/d1-2B` | no disponible en la informacion | no disponible | Modelo conversacional real | LFM Open License v1.0 | Hugging Face |
-| `ggml-org-dev/tiny-d1-2B-for-testing` | 34,5 M (real) | no disponible | Version safetensors del fixture | LFM Open License v1.0 | Hugging Face |
+| tiny-d1-2B-for-testing-GGUF | 489.536 | no disponible | Pruebas de software (fixture) | LFM Open License v1.0 | GGUF |
+| LiquidAI/d1-2B | no disponible | no disponible | Modelo de decision real | LFM Open License v1.0 | safetensors (presumiblemente) |
+| ggml-org-dev/tiny-d1-2B-for-testing | no disponible | no disponible | Version previa a la conversion GGUF | LFM Open License v1.0 | safetensors |
 
-No se dispone de datos de rendimiento para comparar; la unica comparacion significativa es que este artefacto es una version deliberadamente degradada del modelo Liquid AI d1-2B, y que su version safetensors es el origen de la conversion GGUF.
+No se dispone de datos de rendimiento para comparar con alternativas; la comparativa se limita a proposito, formato y licencia.
 
 ## Limitaciones y advertencias
 
-- **Salida invalida por diseno**: la model card afirma explicitamente que el output es gibberish. No es un defecto corregible; es el proposito del artefacto.
-- **No apto para produccion**: no debe desplegarse en ninguna aplicacion de usuario final, evaluacion de calidad ni benchmark.
-- **Sesgos**: no evaluables, dado que la salida carece de contenido semantico.
-- **Riesgo de alucinacion**: total, al no producir texto coherente.
-- **Limitaciones de contexto e idioma**: no documentadas; al ser un modelo truncado, no representan las del modelo original.
-- **Licencia**: LFM Open License v1.0. Aunque permite uso comercial en el modelo original, este artefacto derivado conserva la licencia pero carece de utilidad comercial. Conviene revisar el fichero `LICENSE` del repositorio para los terminos exactos.
-- **Nombre enganoso**: el sufijo "2B" no refleja el tamano real (34,5 M). Cualquiera que lo descargue esperando un modelo de 2B parametros se llevara una sorpresa.
-- **Caveat de integridad**: al ser una copia "danada", no debe usarse para validar la calidad del modelo Liquid AI d1-2B ni para inferir sus capacidades.
+- Salidas sin sentido: el autor advierte explicitamente de que la salida es gibberish; no debe usarse para nada distinto de pruebas de software.
+- Tokenizador alterado: el vocabulario recortado a 2.485 tokens y la renumeracion de IDs rompen la compatibilidad con el tokenizador original del modelo base.
+- Modelo danado por diseno: es una copia "modificada y danada" de `LiquidAI/d1-2B`; no refleja el comportamiento del original.
+- Licencia: LFM Open License v1.0 con restricciones; revisar el archivo `LICENSE` antes de cualquier redistribucion, incluso como fixture.
+- Sin datos de sesgos, alucinacion o idiomas: no disponibles, y en cualquier caso irrelevantes dado que no es un modelo de produccion.
+- No apto para produccion: no usar en atencion al cliente, generacion de codigo ni ningun flujo real.
+- Nombre enganoso: el sufijo "2B" no corresponde al recuento real de parametros (489.536).
 
 ## Enlaces
 
-- Repositorio Hugging Face (GGUF): https://huggingface.co/ggml-org-dev/tiny-d1-2B-for-testing-GGUF
+- Repositorio Hugging Face: https://huggingface.co/ggml-org-dev/tiny-d1-2B-for-testing-GGUF
 - Modelo base (safetensors): https://huggingface.co/ggml-org-dev/tiny-d1-2B-for-testing
 - Modelo original de Liquid AI: https://huggingface.co/LiquidAI/d1-2B
+- Licencia LFM Open License v1.0: https://huggingface.co/ggml-org-dev/tiny-d1-2B-for-testing-GGUF/blob/main/LICENSE
 - Repositorio de llama.cpp: https://github.com/ggml-org/llama.cpp

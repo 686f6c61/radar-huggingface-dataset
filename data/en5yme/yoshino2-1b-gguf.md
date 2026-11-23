@@ -2,93 +2,97 @@
 
 ## Resumen
 
-Yoshino2 1B es un modelo de razonamiento de pequeno tamano (1.080.632.832 parametros) desarrollado por el usuario en5yme y publicado en Hugging Face. Se trata de un fine-tune de MiniCPM5 1B, el modelo de OpenBMB, al que se le ha destilado el estilo de razonamiento de Nemotron Lightning 30B A3B (un modelo MoE de 30B parametros totales y 3B activos) mediante un conjunto de datos sintetico. El objetivo declarado es mejorar la capacidad de razonamiento del modelo base y llevar inteligencia de mayor escala a dispositivos de borde (edge).
+Yoshino2 1B es un modelo de razonamiento de pequeno tamano (1.080.632.832 parametros) desarrollado por el usuario en5yme, distribuido en formato GGUF y publicado bajo licencia MIT. Se trata de un ajuste fino (fine-tune) del modelo MiniCPM5 1B de OpenBMB, sobre el que se ha aplicado un proceso de destilacion del estilo de razonamiento del modelo profesor Nemotron 3.5 Lightning 30B A3B. El objetivo declarado del autor es mejorar las capacidades de razonamiento del modelo base y acercar la inteligencia de modelos de gran escala a dispositivos de borde (edge).
 
-La version aqui descrita es la cuantizacion GGUF del modelo original `en5yme/Yoshino2-1B`, publicada el 7 de noviembre de 2026. El repositorio ocupa 8,3 GB, lo que sugiere que incluye multiples niveles de cuantizacion ademas de los pesos en precision completa. El modelo esta etiquetado como compatible con endpoints, conversacional y orientado a razonamiento y destilacion.
+El modelo se presenta como un experimento a pequena escala, no como un modelo de produccion listo para uso industrial. Su relevancia actual radica en la tendencia de destilar modelos grandes en arquitecturas pequenas para despliegue local, aunque sus benchmarks muestran mejoras marginales respecto al modelo base. La ficha se centra en la version GGUF, que facilita la inferencia en hardware de consumo.
 
-Es relevante ahora porque ejemplifica una tendencia creciente: la destilacion de modelos grandes (30B MoE) hacia arquitecturas pequenas (1B) para su despliegue en hardware de consumo y entornos de borde. No obstante, el propio autor advierte que no es un modelo de frontera listo para produccion, sino un experimento a pequena escala destinado a uso experimental y personal.
+No se dispone de informacion sobre la longitud de contexto soportada ni sobre la composicion detallada del dataset de entrenamiento mas alla de los pares Q/A sinteticos generados. El modelo esta etiquetado exclusivamente para ingles.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer (derivada de MiniCPM5 1B, de OpenBMB) |
-| Parametros totales | 1.080.632.832 (aprox. 1,08B) |
-| Parametros activos | No aplica (no es MoE) |
-| Longitud de contexto | No disponible |
-| Tipos de cuantizacion | GGUF (niveles concretos no especificados en la informacion disponible) |
+| Arquitectura | Transformer (fine-tune de MiniCPM5 1B de OpenBMB) |
+| Parametros totales | 1.080.632.832 |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | GGUF (cuantizaciones multiples, no se detallan en la informacion disponible) |
 | Idiomas soportados | Ingles (en) |
-| Licencia | MIT (para el fine-tune); el modelo base conserva Apache 2.0 |
-| Formato de pesos | GGUF (repo GGUF); el modelo original en `en5yme/Yoshino2-1B` presumiblemente en safetensors (no confirmado) |
+| Licencia | MIT (fine-tune); el modelo base retiene Apache 2.0 |
+| Formato de pesos | GGUF |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de la arquitectura MiniCPM5 1B de OpenBMB, un transformer denso de aproximadamente 1,08B parametros. Sobre esa base se aplico un proceso de destilacion del estilo de razonamiento de Nemotron Lightning 30B A3B, un modelo MoE de 30B parametros totales y 3B activos. El resultado, segun el autor, es que el modelo ha adoptado el estilo de razonamiento y de salida del profesor, con mejoras en los benchmarks respecto al base.
+El modelo parte de la arquitectura MiniCPM5 1B de OpenBMB, un transformer denso de aproximadamente 1.080 millones de parametros. Sobre esta base se aplico un ajuste fino supervisado (SFT) mediante Unsloth, con 3 epocas de LoRA, sobre un dataset sintetico de 10.817 pares pregunta/respuesta de aproximadamente 135 megabytes. El dataset fue generado con un mecanismo de auto-prompt y un framework de destilacion propio del autor, e incluye tanto muestras de un solo turno como muestras de contexto profundo de 4 prompts.
 
-El entrenamiento se realizo con un dataset sintetico de 10.817 pares pregunta/respuesta (aproximadamente 135 MB), generado mediante un mecanismo de auto-prompt y un framework de destilacion propio. El dataset incluye tanto muestras one-shot como muestras de contexto profundo con 4 prompts. Sobre ese CSV se aplico SFT con Unsloth, 3 epochs de LoRA. No se documentan datos sobre RLHF, DPO ni detalles adicionales de la composicion del dataset.
+La innovacion principal es la destilacion del estilo de razonamiento del modelo profesor Nemotron 3.5 Lightning 30B A3B en una arquitectura mucho mas pequena. Segun el autor, el modelo resultante adopta el estilo de razonamiento y salida del profesor. No se documenta el uso de RLHF o DPO, ni se detalla la composicion del dataset mas alla de su caracter sintetico y su origen en el dataset `en5yme/Nemotron-3.5-Lightning-30B-A3B-Distill`.
 
 ## Capacidades
 
-- Generacion de texto conversacional y razonamiento general, con estilo de salida heredado del modelo profesor.
-- Razonamiento multi-paso orientado a tareas de tipo reasoning (el modelo esta etiquetado como `reasoning`).
-- Capacidades multilingues limitadas al ingles segun los metadatos (`language: en`).
-- Compatibilidad con endpoints de inferencia (`endpoints_compatible` en los tags).
-- No se documenta soporte de tool calling, function calling, vision, audio ni modos de pensamiento explicitos en la informacion disponible.
+- Generacion de texto conversacional en ingles.
+- Razonamiento de estilo destilado (thinking/reasoning style) heredado del modelo profesor.
+- Capacidades de razonamiento general orientadas a dispositivos de borde.
+- Soporte de conversaciones de un solo turno y de contexto profundo de hasta 4 prompts en el entrenamiento.
+- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
+- Capacidades multilingues: limitadas al ingles segun las etiquetas del modelo.
+- Capacidades especiales (vision, audio): no disponibles.
 
 ## Casos de uso
 
-- Prototipado de asistentes conversacionales en dispositivos de borde: el modelo, con ~1,08B parametros, puede ejecutarse en hardware modesto y servir como base para experimentar con dialogos multi-turno en ingles.
-- Investigacion en destilacion de razonamiento: util para estudiar como el estilo de un modelo MoE grande (Nemotron Lightning 30B A3B) se transfiere a una arquitectura densa pequena mediante SFT con LoRA.
-- Evaluacion de pipelines GGUF: sirve como banco de pruebas para medir latencia y calidad de cuantizaciones GGUF en entornos de consumo.
-- Generacion de texto experimental offline: al ser un modelo pequeno en formato GGUF, puede integrarse en aplicaciones locales que requieran generacion de texto sin conexion.
-- Educacion y demos de razonamiento: adecuado para demostrar tecnicas de razonamiento paso a paso en entornos academicos o talleres.
-- Base para fine-tunes posteriores: dado su tamano reducido y licencia MIT, puede servir como punto de partida para ajustes especificos en ingles.
+- Razonamiento local en dispositivos de borde: el modelo, con 1.080 millones de parametros y formato GGUF, puede ejecutarse en equipos de consumo para tareas de razonamiento ligero sin conexion, gracias a su reducido tamano.
+- Prototipado de asistentes conversacionales en ingles: su naturaleza conversacional y su estilo de razonamiento destilado permiten construir chatbots experimentales para pruebas internas.
+- Investigacion sobre destilacion de razonamiento: sirve como caso de estudio para investigadores que quieran analizar como se transfiere el estilo de razonamiento de un modelo profesor de 30B a uno de 1B mediante SFT con LoRA.
+- Generacion de respuestas con razonamiento explicito en entornos con recursos limitados: adecuado para entornos donde no es posible desplegar modelos grandes, aunque con calidad limitada.
+- Educacion y experimentacion con modelos pequenos: util para docentes y estudiantes que quieran estudiar el comportamiento de modelos destilados en hardware modesto.
+- Evaluacion comparativa de tecnicas de ajuste fino: el modelo y su base permiten comparar el impacto de la destilacion en benchmarks reducidos (tinyArc, tinyHellaSwag, tinyMMLU, tinyTruthfulQA).
 
 ## Benchmarks y rendimiento
 
-Resultados publicados por el autor (tareas `tiny`, metrica acc_norm salvo donde se indica):
+Los datos publicados por el autor comparan Yoshino2 1B con su modelo base MiniCPM5 1B en tareas reducidas (tiny benchmarks). No se han publicado resultados en benchmarks estandar como MMLU, HumanEval o GSM8K.
 
-| Tarea | Yoshino2 1B | MiniCPM5 1B |
-|---|---|---|
-| tinyArc (25-shot) | 0,4221 | 0,4278 |
-| tinyHellaSwag (10-shot) | 0,5092 | 0,5038 |
-| tinyMMLU (0-shot) | 0,5143 | 0,4897 |
-| tinyTruthfulQA (0-shot, acc) | 0,4362 | 0,4199 |
+| Tarea | Version | Filtro | n-shot | Metrica | Yoshino2 1B | MiniCPM5 1B |
+|---|---|---|---|---|---|---|
+| tinyArc | 0 | none | 25 | acc_norm | 0.4221 | 0.4278 |
+| tinyHellaSwag | 0 | none | 10 | acc_norm | 0.5092 | 0.5038 |
+| tinyMMLU | 0 | none | 0 | acc_norm | 0.5143 | 0.4897 |
+| tinyTruthfulQA | 0 | none | 0 | acc | 0.4362 | 0.4199 |
 
-El fine-tune mejora en HellaSwag, MMLU y TruthfulQA, y empeora ligeramente en ARC respecto al base. No se publican resultados en benchmarks estandar de mayor tamano (MMLU completo, HumanEval, GSM8K) en la informacion disponible.
+Las mejoras respecto al modelo base son marginales: ligero descenso en tinyArc (-0.0057), y ligeras mejoras en tinyHellaSwag (+0.0054), tinyMMLU (+0.0246) y tinyTruthfulQA (+0.0163). No se reportan errores estandar (Stderr N/A).
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible de forma detallada; con ~1,08B parametros, las cuantizaciones GGUF tipicas (Q4, Q5, Q8) ocuparian del orden de 0,6 a 1,2 GB, aunque los niveles concretos del repo no se especifican.
-- GPU recomendadas: no disponibles en la informacion proporcionada; por tamano, el modelo es apto para GPUs de consumo.
-- Cabe en GPU de consumo: si, por el tamano del modelo (~1B), es esperable que quepa en GPUs consumer, aunque no se confirman modelos concretos.
-- Opciones de despliegue: llama.cpp y Ollama por el formato GGUF; el tag `endpoints_compatible` sugiere despliegue via endpoints de Hugging Face. No se confirma compatibilidad con vLLM ni TGI.
-- Latencia y throughput: no disponibles.
+- VRAM estimada para inferencia: al tratarse de un modelo de 1.080 millones de parametros en GGUF, las cuantizaciones de 4 bits requeriran aproximadamente 0,7-1 GB de VRAM, y las de 8 bits alrededor de 1,2-1,5 GB (estimacion orientativa; no se detallan las cuantizaciones exactas en la informacion disponible).
+- GPU recomendadas: cualquier GPU de consumo moderna (RTX 3060, RTX 4060, RTX 4090) puede ejecutar el modelo con holgura; tambien es viable en CPU.
+- Cabe en GPU de consumo: si, en practicamente cualquier GPU de consumo con al menos 2 GB de VRAM, y en CPU mediante llama.cpp.
+- Opciones de despliegue: llama.cpp, Ollama, y otros runners compatibles con GGUF. No se confirma soporte de vLLM o TGI en la informacion disponible.
+- Latencia y throughput estimados: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+| Modelo | Parametros | Contexto | Licencia | Formato | Rendimiento (tinyMMLU) |
 |---|---|---|---|---|---|
-| Yoshino2 1B (este) | ~1,08B | no disponible | MIT (fine-tune) / Apache 2.0 (base) | GGUF | Destilado de Nemotron Lightning 30B A3B |
-| MiniCPM5 1B | ~1B | no disponible | Apache 2.0 | no disponible | Modelo base de OpenBMB |
-| Yoshino-0.8B | ~0,8B | no disponible | no disponible | GGUF | Otro modelo del mismo autor, menor tamano |
+| Yoshino2 1B | 1.080.632.832 | no disponible | MIT (fine-tune) | GGUF | 0.5143 |
+| MiniCPM5 1B (base) | ~1B | no disponible | Apache 2.0 | no disponible | 0.4897 |
+| Nemotron 3.5 Lightning 30B A3B (profesor) | 30B (A3B MoE) | no disponible | no disponible | no disponible | no disponible |
 
-No se dispone de datos de rendimiento comparables mas alla de los benchmarks tiny recogidos en la seccion anterior. Para alternativas de la misma categoria (modelos densos de ~1B para razonamiento), la informacion disponible no permite una comparacion cuantitativa adicional.
+La comparativa se limita al modelo base y al profesor, ya que no se dispone de datos de otros modelos de 1B comparables en la informacion proporcionada. El modelo profesor es un MoE de 30B con 3B de parametros activos, segun su denominacion, pero no se detallan sus especificaciones completas.
 
 ## Limitaciones y advertencias
 
-- El autor declara explicitamente que no es un modelo de frontera listo para produccion, sino un experimento a pequena escala para uso experimental y personal.
-- Solo soporta ingles; no hay capacidades multilingues documentadas.
-- Riesgo de alucinacion inherente a modelos pequenos destilados; los resultados en tinyTruthfulQA (0,4362) indican margen de mejora en veracidad.
-- Los benchmarks publicados son de tareas `tiny` con pocas muestras, por lo que su validez es limitada y no reflejan rendimiento en tareas reales de mayor complejidad.
-- Ambiguedad de licencia: el fine-tune se publica bajo MIT, pero el modelo base (MiniCPM5 1B) conserva Apache 2.0; el autor senala que el repositorio original del base carecia de archivo de licencia, lo que puede generar incertidumbre en el cumplimiento downstream.
-- No se documentan sesgos conocidos ni detalles de contexto maximo; conviene validar el comportamiento en produccion antes de cualquier uso real.
-- El repo GGUF ocupa 8,3 GB, lo que implica varias cuantizaciones; el nivel concreto a usar debe verificarse en el repositorio.
+- El autor indica explicitamente que el modelo no es un modelo de produccion listo para uso industrial; es un experimento a pequena escala para uso personal y experimental.
+- Las mejoras en benchmarks respecto al modelo base son marginales y en una tarea (tinyArc) el rendimiento es ligeramente inferior.
+- Solo soporta ingles, lo que limita su uso en entornos multilingues.
+- Riesgo de alucinacion inherente a modelos pequenos y a la destilacion de un profesor de mayor tamano; no se han publicado evaluaciones de fidelidad.
+- La licencia del fine-tune es MIT, pero el modelo base retiene Apache 2.0; el autor advierte que el repositorio no incluye el archivo de licencia del modelo base y que cualquier duda sobre licenciamiento downstream debe consultarse con el autor.
+- No se dispone de informacion sobre la longitud de contexto, lo que impide garantizar conversaciones de contexto largo.
+- No se detallan sesgos conocidos ni evaluaciones de seguridad.
+- El dataset de entrenamiento es sintetico y generado automaticamente, lo que puede introducir artefactos o sesgos del mecanismo de auto-prompt.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/en5yme/Yoshino2-1B-GGUF
-- Modelo base del fine-tune: https://huggingface.co/en5yme/Yoshino2-1B
-- Perfil del autor: https://huggingface.co/en5yme
-- Modelos del autor: https://huggingface.co/en5yme/models
-- Dataset de destilacion: https://huggingface.co/datasets/en5yme/Nemotron-Lightning-30B-A3B-Distill
+- Hugging Face: https://huggingface.co/en5yme/Yoshino2-1B-GGUF
+- Modelo base (fine-tune): https://huggingface.co/en5yme/Yoshino2-1B
+- Dataset de destilacion: https://huggingface.co/datasets/en5yme/Nemotron-3.5-Lightning-30B-A3B-Distill
+- MiniCPM5 1B de OpenBMB: no disponible en la informacion proporcionada
+- Nemotron 3.5 Lightning 30B A3B: no disponible en la informacion proporcionada

@@ -1,101 +1,92 @@
 # dimitarpg13/semsimula-ladder-live-code-d384-l8-none-norc-sr2-k2-r6
 
 ## Resumen
+semsimula-ladder-live-code-d384-l8-none-norc-sr2-k2-r6 es un modelo de lenguaje de investigación desarrollado por dimitarpg13 dentro de la familia semsimula, una línea de trabajo que explora modelos de lenguaje conservativos (energy-based) basados en mecánica lagrangiana en lugar de la atención transformer. El modelo se entrena sobre código Python (CodeParrot clean) y forma parte de un estudio escalonado (ladder study) pre-registrado que mide el efecto de la profundidad, el número de pozos del potencial y el rango de las actualizaciones de precisión sobre la perplejidad de validación.
 
-K2-L8-R6-CODE es un modelo de lenguaje de investigación desarrollado por el autor independiente dimitarpg13 dentro de la familia "semsimula", una línea de modelos conservativos (energy-based) que sustituyen la atención por una dinámica de flujo de segundo orden amortiguado sobre un potencial escalar aprendido. Este checkpoint concreto forma parte del estudio "ladder" sobre código Python, en el que se mantiene fijo el tiempo total de integración T = L · Δt = 8 y se reparte en más pasos de menor duración, con el objetivo de medir si la profundidad efectiva ayuda frente a un GPT-2 emparejado en parámetros fuera de los embeddings.
+La arquitectura es deliberadamente no-transformer y sin atención: cada capa avanza el estado de los tokens un paso Δt de un flujo de segundo orden amortiguado en un potencial escalar aprendido, con integración BAOAB y geometría riemanniana. Este modelo concreto tiene 8 capas, 2 pozos en el banco V_θ y rango 6 en las actualizaciones de precisión de cada pozo, con 53.115.091 parámetros totales (14,5M fuera de los embeddings).
 
-El modelo tiene 8 capas, dos "pozos" (wells) en el banco de potencial V_θ y actualizaciones de precisión a rango 6 en lugar de 4, con 53.115.091 parámetros totales (14,5 M fuera de los embeddings, frente a los 14,2 M del GPT-2 emparejado). Entrena sobre CodeParrot con un presupuesto exacto de 315.392.000 tokens y alcanza una perplejidad de validación asentada de 5,54, lo que supone una mejora del 2,2% respecto a la variante de rango 4 y deja al modelo un 11,8% por detrás del GPT-2 emparejado.
-
-Su relevancia es fundamentalmente metodológica: es un experimento pre-registrado de ablación de mecanismo que compara variantes con presupuesto de tokens idéntico y evaluaciones emparejadas paso a paso, y explora una arquitectura sin atención con memoria constante en inferencia. No está pensado para uso en producción.
+Es relevante como pieza de un experimento controlado: el autor mantiene fijo el tiempo total de integración T = L · Δt = 8 y compara variantes con presupuesto de tokens idéntico (315.392.000 tokens), lo que permite aislar el efecto de cada decisión de diseño. No es un modelo pensado para producción, sino para estudiar si los modelos conservativos pueden acercarse a un GPT-2 emparejado en perplejidad sobre código.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | No transformer, sin atención; modelo de lenguaje conservativo con potencial escalar aprendido y flujo de segundo orden amortiguado (BAOAB, potencial gaussiano anisotrópico, espacio de Fock) |
+| Arquitectura | No-transformer, sin atención; modelo de lenguaje conservativo con potencial escalar, flujo lagrangiano de segundo orden amortiguado, integrador BAOAB, geometría riemanniana (métrica de Jacobi) |
 | Parametros totales | 53.115.091 |
-| Parametros activos | No aplica (no es MoE) |
-| Longitud de contexto | No disponible (entrenado y evaluado con bloques de 512 tokens) |
-| Tipos de cuantizacion | No disponible |
-| Idiomas soportados | Inglés (en) |
-| Licencia | CC-BY-4.0 |
-| Formato de pesos | PyTorch (librería pytorch); no se especifica safetensors ni GGUF |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible (evaluado a bloque 512) |
+| Tipos de cuantizacion | no disponible |
+| Idiomas soportados | en |
+| Licencia | cc-by-4.0 |
+| Formato de pesos | pytorch (checkpoint PyTorch; no se indica safetensors ni GGUF) |
 
 ## Arquitectura y entrenamiento
+El modelo sustituye la atención por un flujo físico: cada una de las 8 capas avanza el estado de los tokens un paso Δt de un flujo de segundo orden amortiguado en un potencial escalar aprendido V_θ, integrado con el esquema BAOAB. El banco de potenciales contiene 2 pozos con potencial gaussiano anisótropo, y cada pozo actualiza su precisión a rango 6 (frente a rango 4 en la variante K2-L8-CODE). La formulación es totalmente conservativa, con geometría riemanniana y geodésicas de Jacobi, y la inferencia es de memoria constante al no requerir atención. El tiempo total de integración se mantiene fijo en T = L · Δt = 8, repartido en 8 pasos más cortos.
 
-El modelo pertenece a la generación 3 de la familia semsimula y se describe como "fully-conservative": cada capa avanza los estados de los tokens un paso Δt de un flujo de segundo orden amortiguado en un potencial escalar aprendido V_θ. El integrador es BAOAB con un potencial gaussiano anisotrópico y actualizaciones de precisión por pozo, lo que introduce una interpretación geométrica riemanniana (geodésicas, métrica de Jacobi). La arquitectura es explícitamente no-transformer y sin atención, con memoria constante en inferencia, y el estudio se enmarca en un formalismo de espacio de Fock con dos pozos ("wells") en el banco de potencial. En esta variante cada pozo actualiza su precisión a rango 6 en lugar de 4, lo que añade 2.950.656 parámetros respecto a K2-L8-CODE.
-
-El entrenamiento usa exactamente 315.392.000 tokens (19.250 pasos × 32 × 512) sobre CodeParrot clean (Python), con un schedule WSD a lo largo de 16.250 pasos seguido de 3.000 pasos a la tasa de aprendizaje mínima, desde el paso 0 con semilla 0 y sobre los mismos batches que las variantes SO-CODE, L4-CODE, L8-CODE y K2-L8-CODE, de modo que las evaluaciones son emparejadas paso a paso. La ejecución duró 19,5 horas en una sesión (3,65 s por paso), con pico de memoria de 37,1 GB en entrenamiento y 55,4 GB en evaluación, sin normas de gradiente no finitas en los 385 pasos registrados y con el monitor de fuga SCAF limpio en las 4 auditorías. No se menciona RLHF ni DPO.
+El entrenamiento usa exactamente 315.392.000 tokens (19.250 pasos × 32 × 512) sobre CodeParrot clean, con un schedule WSD durante 16.250 pasos seguido de 3.000 pasos a la tasa de aprendizaje mínima, desde el paso 0 con semilla 0 y los mismos batches que las variantes SO-CODE, L4-CODE, L8-CODE y K2-L8-CODE, de modo que las evaluaciones quedan emparejadas paso a paso. La ejecución duró 19,5 h en una sesión (3,65 s por paso), con pico de 37,1 GB de memoria en entrenamiento y 55,4 GB en evaluación, sin normas de gradiente no finitas en 385 pasos registrados y con el monitor de fugas SCAF limpio en las 4 auditorías. No se documenta RLHF ni DPO.
 
 ## Capacidades
-
-- Generación de texto autorregresiva en inglés, orientada experimentalmente a código Python.
-- Modelado de lenguaje con perplejidad medida sobre CodeParrot clean (validación).
-- Inferencia con memoria constante gracias a la ausencia de atención.
-- Participación multi-direccional en las actualizaciones de precisión: el ratio de participación medido es 4,87 de 6 direcciones, lo que indica uso efectivo de las seis direcciones.
-- No se documenta soporte de tool calling, function calling, agentes, visión, audio ni modo "thinking".
-- Capacidad multilingüe: no disponible; la model card solo declara inglés.
+- Generación de texto autoregresiva sobre código Python, con perplejidad de validación de 5,54 a bloque 512.
+- Modelado de lenguaje condicionado por un potencial escalar aprendido; no emplea atención ni mecanismos de atención lineal.
+- Inferencia de memoria constante (constant-memory inference), propiedad derivada de la ausencia de atención.
+- Tool calling / function calling: no disponible.
+- Soporte de agentes y razonamiento multi-paso: no disponible.
+- Capacidades multilingües: solo inglés (en), según la model card.
+- Capacidades especiales: ninguna declarada (sin visión, audio ni modo thinking).
 
 ## Casos de uso
-
-- Investigación en arquitecturas sin atención: sirve como punto de comparación controlado frente a variantes de 2, 4 y 8 capas y frente a GPT-2 emparejado en parámetros fuera de los embeddings, con evaluaciones emparejadas paso a paso.
-- Ablación de mecanismo pre-registrada: el checkpoint materializa una predicción concreta (R6-1: el rango 6 ayuda) y permite reproducir el análisis de diferencias emparejadas en log-perplejidad sobre los pasos 16.000–19.000.
-- Estudio de modelos de lenguaje conservativos: útil para examinar cómo un potencial escalar aprendido y un integrador BAOAB distribuyen el presupuesto de integración en pasos más cortos.
-- Análisis de eficiencia de parámetros: con 14,5 M de parámetros fuera de los embeddings recupera el 41% de la ganancia de la variante de ocho pozos con un noveno de sus parámetros, lo que lo hace adecuado para estudiar rendimientos decrecientes.
-- Reproducibilidad de entrenamiento: el registro de salud de la ejecución (normas de gradiente, picos de memoria, auditorías SCAF) permite validar pipelines de entrenamiento de modelos de investigación.
-- Docencia y divulgación: ejemplo concreto de modelo energy-based con geometría riemanniana aplicado a código, con métricas y decisiones de diseño documentadas.
+- Investigación sobre arquitecturas alternativas al transformer: sirve como punto de comparación controlado frente a un GPT-2 emparejado en parámetros fuera de los embeddings (14,5M frente a 14,2M) para medir la brecha de perplejidad en código.
+- Estudios de ablación de profundidad: al compartir batches y presupuesto de tokens con las variantes de 2, 4 y 8 capas, permite analizar el efecto de repartir un tiempo de integración fijo en más pasos.
+- Experimentos de mecánica lagrangiana aplicada al aprendizaje: el modelo materializa un flujo de segundo orden con integrador BAOAB y potencial gaussiano anisótropo, útil para validar simulaciones físicas en el espacio de estados de tokens.
+- Evaluación de eficiencia de memoria en inferencia: su naturaleza sin atención y de memoria constante lo hace adecuado para estudiar despliegues con requisitos de memoria acotada, aunque no se publican cifras de latencia ni throughput.
+- Reproducción de estudios pre-registrados: las llamadas R6-1 a R6-5 y sus resultados permiten replicar el protocolo de validación emparejada paso a paso sobre CodeParrot.
+- Docencia e investigación sobre modelos energy-based: como ejemplo didáctico de modelo de lenguaje conservativo con geometría riemanniana y geodésicas de Jacobi.
 
 ## Benchmarks y rendimiento
 
-| Modelo | Capas | Pozos | Rango | Parámetros | Perplejidad asentada | Frente a K2-L8-CODE |
+| Modelo | Capas | Pozos | Rango | Parámetros | Perplejidad (asentada) | Frente a este modelo |
 |---|---:|---:|---:|---:|---:|---:|
 | SO-CODE | 2 | 8 | 4 | 76.572.109 | 6,00 | +5,8% |
 | L4-CODE | 4 | 8 | 4 | 76.625.361 | 5,48 | −3,2% |
 | L8-CODE | 8 | 8 | 4 | 76.731.865 | 5,35 | −5,5% |
 | K2-L8-CODE | 8 | 2 | 4 | 50.164.435 | 5,67 | — |
-| K2-L8-R6-CODE (este modelo) | 8 | 2 | 6 | 53.115.091 | 5,54 | −2,2% |
-| GPT-2 emparejado (no en el Hub) | 8 | — | — | — | 4,96 | −12,5% |
+| **K2-L8-R6-CODE (este modelo)** | 8 | 2 | 6 | 53.115.091 | **5,54** | **−2,2%** |
+| GPT-2 emparejado (no en el Hub) | 8 | — | — | no disponible | 4,96 | −12,5% |
 
-La perplejidad de validación se mide en bloque de 512 sobre los primeros 2 M de tokens de los ficheros de validación de CodeParrot (split a nivel de fichero). El valor asentado de 5,54 es la media de las log-perplejidades de las evaluaciones en los pasos 18.000, 18.500 y 19.000 (5,44, 5,55 y 5,64); el mejor valor es 5,44 en el paso 18.000. La model card indica que estos resultados no están verificados (`verified: false`).
+La perplejidad asentada de este modelo es la media de las log-perplejidades de las evaluaciones en los pasos 18.000, 18.500 y 19.000 (5,44, 5,55 y 5,64); el mejor valor es 5,44 en el paso 18.000. Se mide sobre los primeros 2M tokens de los ficheros de validación de CodeParrot, con split a nivel de fichero. Datos declarados por el autor y no verificados.
 
 ## Requisitos de hardware
-
-- VRAM estimada para inferencia: no disponible en la información proporcionada; el tamaño del repositorio es de 0,2 GB.
-- VRAM en entrenamiento: pico de 37,1 GB; en evaluación, 55,4 GB.
-- GPU recomendadas: no se especifican modelos concretos; los picos de memoria de entrenamiento y evaluación son compatibles con GPU de 40 GB y 80 GB (A100, H100).
-- ¿Cabe en GPU de consumo? No disponible; con 53 M de parámetros el peso en FP32 rondaría los 0,2 GB, pero no se documentan requisitos ni formato de inferencia.
-- Opciones de despliegue: solo se declara PyTorch; no se documenta soporte de vLLM, llama.cpp, Ollama ni TGI.
-- Latencia y throughput: no disponibles; el único dato de rendimiento es 3,65 s por paso de entrenamiento.
+- VRAM estimada para inferencia: no disponible; el repositorio ocupa 0,2 GB y el entrenamiento alcanzó un pico de 37,1 GB y la evaluación 55,4 GB.
+- GPU recomendadas: no disponible; el autor no especifica el hardware empleado.
+- Compatibilidad con GPU de consumo: no disponible; el tamaño del checkpoint (0,2 GB) sugiere que cabría en GPUs de consumo, pero no se confirma.
+- Opciones de despliegue: no disponible; la librería declarada es PyTorch y no se documenta soporte para vLLM, llama.cpp, Ollama ni TGI.
+- Latencia y throughput: no disponible; solo se reporta el coste de entrenamiento (3,65 s por paso).
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Perplejidad (CodeParrot val, bloque 512) | Licencia | Disponibilidad |
+| Modelo | Parámetros | Contexto | Perplejidad (CodeParrot) | Licencia | Disponibilidad |
 |---|---:|---|---:|---|---|
-| K2-L8-R6-CODE | 53.115.091 | No disponible | 5,54 | CC-BY-4.0 | Hugging Face |
-| K2-L8-CODE | 50.164.435 | No disponible | 5,67 | No disponible | Hugging Face |
-| L8-CODE | 76.731.865 | No disponible | 5,35 | No disponible | Hugging Face |
-| GPT-2 emparejado (14,2 M fuera de embeddings) | No disponible | No disponible | 4,96 | No disponible | No en el Hub |
-
-La comparación se limita a las variantes de la misma colección y al GPT-2 emparejado; no se dispone de datos para comparar con modelos de código de propósito general de tamaño similar.
+| K2-L8-R6-CODE (este) | 53.115.091 | no disponible (bloque 512) | 5,54 | cc-by-4.0 | Hugging Face |
+| K2-L8-CODE | 50.164.435 | no disponible (bloque 512) | 5,67 | cc-by-4.0 | Hugging Face |
+| L8-CODE | 76.731.865 | no disponible (bloque 512) | 5,35 | cc-by-4.0 | Hugging Face |
+| GPT-2 emparejado (8 capas) | 14,2M fuera de embeddings | no disponible | 4,96 | no disponible | no disponible (no en el Hub) |
 
 ## Limitaciones y advertencias
-
-- Modelo de investigación: la model card lo enmarca explícitamente en un estudio de ablación, no como un modelo listo para producción.
-- Calidad limitada: con 5,54 de perplejidad, queda un 11,8% por detrás del GPT-2 emparejado en el mismo corpus y presupuesto.
-- Idiomas: solo se declara inglés; no hay evidencia de capacidades multilingües.
-- Contexto: entrenado y evaluado con bloques de 512 tokens; no se documenta una ventana de contexto mayor.
-- Sesgos y alucinación: no se documentan análisis de sesgo ni evaluaciones de factualidad; al ser un modelo pequeño entrenado solo en código Python, el riesgo de generación incorrecta en texto libre es alto.
-- Licencia CC-BY-4.0: permite uso comercial con atribución, pero la ausencia de garantías y de evaluación de seguridad hace desaconsejable su uso en producción.
-- Resultados no verificados: la métrica de perplejidad figura con `verified: false` en el model-index.
-- Sin soporte documentado de tool calling, agentes ni cuantización, lo que limita su integración en pipelines estándar.
+- Modelo de investigación: no está pensado para uso en producción ni para tareas generativas generales.
+- Solo inglés y solo código Python; no se declaran capacidades multilingües ni de otro dominio.
+- Brecha de rendimiento: queda un 11,8% por detrás del GPT-2 emparejado en perplejidad (5,54 frente a 4,96), según los datos del autor.
+- Métricas no verificadas: la perplejidad del model-index figura con `verified: false` y procede del propio autor.
+- Riesgo de alucinación: no evaluado; no se publican pruebas de fidelidad, sesgo ni seguridad.
+- Licencia CC-BY-4.0: permite uso comercial con atribución, pero no se ofrecen garantías ni soporte.
+- Sin datos de cuantización, latencia ni opciones de despliegue estándar, lo que dificulta su integración en pipelines existentes.
+- El contexto máximo no se documenta; las evaluaciones se hacen a bloque 512 y no debe asumirse una ventana mayor.
 
 ## Enlaces
-
 - Modelo en Hugging Face: https://huggingface.co/dimitarpg13/semsimula-ladder-live-code-d384-l8-none-norc-sr2-k2-r6
-- Variante de rango 4 (K2-L8-CODE): https://huggingface.co/dimitarpg13/semsimula-ladder-live-code-d384-l8-none-norc-sr2-k2
-- Variante de ocho pozos (L8-CODE): https://huggingface.co/dimitarpg13/semsimula-ladder-live-code-d384-l8-none-norc-sr2
-- Variante de cuatro capas (L4-CODE): https://huggingface.co/dimitarpg13/semsimula-ladder-live-code-d384-l4-none-norc-sr2
-- Variante de dos capas (SO-CODE): https://huggingface.co/dimitarpg13/semsimula-ladder-live-code-d384-l2-none-norc-sr2
-- Colección "depth on code" (Gen 3): https://huggingface.co/collections/dimitarpg13/semantic-simulation-gen-3-depth-on-code-6ae76925374cab20b1cb7d5e
+- Variante K2-L8-CODE: https://huggingface.co/dimitarpg13/semsimula-ladder-live-code-d384-l8-none-norc-sr2-k2
+- Variante L8-CODE: https://huggingface.co/dimitarpg13/semsimula-ladder-live-code-d384-l8-none-norc-sr2
+- Variante L4-CODE: https://huggingface.co/dimitarpg13/semsimula-ladder-live-code-d384-l4-none-norc-sr2
+- Variante SO-CODE: https://huggingface.co/dimitarpg13/semsimula-ladder-live-code-d384-l2-none-norc-sr2
+- Colección del estudio de profundidad sobre código: https://huggingface.co/collections/dimitarpg13/semantic-simulation-gen-3-depth-on-code-6ae76925374cab20b1cb7d5e
 - Dataset de entrenamiento: https://huggingface.co/datasets/codeparrot/codeparrot-clean-train
 - Dataset de validación: https://huggingface.co/datasets/codeparrot/codeparrot-clean-valid

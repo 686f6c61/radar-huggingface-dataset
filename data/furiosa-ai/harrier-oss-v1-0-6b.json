@@ -238,31 +238,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "furiosa-ai/harrier-oss-v1-0.6b · Hugging Face",
-      "url": "https://huggingface.co/furiosa-ai/harrier-oss-v1-0.6b",
-      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
-    },
-    {
-      "title": "Harrier OSS v1 — FuriosaAI Developer Center 2026.4.0b13 documentation",
-      "url": "https://developer.furiosa.ai/v2026.4.0/en/furiosa_llm/models/harrier-oss-v1.html",
-      "snippet": "Harrier OSS v1 # Harrier OSS v1 is a family of multilingual text-embedding models developed by Microsoft. The 0.6B model uses a dense, decoder-only Qwen3 architecture, but it is trained with Harrier&#x27;s own multilingual, instruction-aware embedding recipe rather than the Qwen3-Embedding training recipe."
-    },
-    {
-      "title": "furiosa-ai/harrier-oss-v1-0.6b at main - Hugging Face",
-      "url": "https://huggingface.co/furiosa-ai/harrier-oss-v1-0.6b/tree/main",
-      "snippet": "Duplicated from microsoft/harrier-oss-v1-.6b furiosa-ai / harrier-oss-v1-.6b like 0 Follow FuriosaAI 165 Feature Extraction Safetensors sentence-transformers Transformers 94 languages furiosa-llm qwen3 furiosa-ai harrier-oss-v1 mteb text-embeddings-inference License:mit Model card FilesFiles and versions xet Community Deploy Copy to bucket ..."
-    },
-    {
-      "title": "harrier-oss-v1-0.6b · Model · OpenOdia",
-      "url": "https://openodia.com/r/model/furiosa-ai/harrier-oss-v1-0.6b",
-      "snippet": "Model by furiosa-ai, listed in the OpenOdia directory."
-    },
-    {
-      "title": "harrier-oss-v1-0.6b · Model · Inferix",
-      "url": "https://inferix.co/models/microsoft/harrier-oss-v1-0.6b",
-      "snippet": "Model Parameters Embedding Dimension Max Tokens MTEB v2 Score harrier oss v1 270m 270M 640 32,768 66.5 harrier oss v1 0.6b 0.6B 1,024 32,768 69.0 harrier oss v1 27b 27B 5,376 32,768 74.3 Training All models are trained with contrastive learning objectives on a large scale mixture of multilingual datasets covering diverse tasks."
-    }
-  ]
+  "sources": []
 }

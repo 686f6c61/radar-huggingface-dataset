@@ -54,11 +54,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Why Are All Local AI Models So Bad? No One Talks About This!",
-      "url": "https://www.reddit.com/r/ollama/comments/1idqxto/why_are_all_local_ai_models_so_bad_no_one_talks/",
-      "snippet": "30.01.2025 ... ... model work close to the online Chat-gpt 3 or 4 ? I see those has ... I tried the \"14b uncensored Q8_0.gguf\" version by mradermacher in ..."
-    }
-  ]
+  "sources": []
 }

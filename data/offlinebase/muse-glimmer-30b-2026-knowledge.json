@@ -31,7 +31,7 @@
     "endpoints_compatible",
     "region:us"
   ],
-  "likes": 2,
+  "likes": 4,
   "downloads_30d": 444,
   "trending_score": 0,
   "parameters": 29776626688,
@@ -52,5 +52,16 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": []
+  "sources": [
+    {
+      "title": "Top Cross-Chain Bridge Aggregators to Check Fees Instantly in 2026",
+      "url": "https://coinbrain.com/blog/top-cross-chain-bridge-aggregators-to-check-fees-instantly",
+      "snippet": "Oct 28, 2025 · To check cross-chain bridging fees, users generally have two primary options: standalone bridge interfaces or bridge …Read more"
+    },
+    {
+      "title": "DeFi Aggregators Compared (2026) — Best DEX & Bridge Aggregator ...",
+      "url": "https://aggregator.ink/",
+      "snippet": "Independent comparison of DeFi aggregators: best DEX aggregator (1inch, CoW Swap, Matcha, KyberSwap) and best bridge …Read more"
+    }
+  ]
 }

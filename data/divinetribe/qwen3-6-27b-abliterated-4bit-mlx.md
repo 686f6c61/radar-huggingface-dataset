@@ -2,51 +2,52 @@
 
 ## Resumen
 
-Qwen3.6-27B-abliterated-4bit-mlx es una conversión a 4 bits en formato MLX del modelo huihui-ai/Huihui-Qwen3.6-27B-abliterated, publicada por el usuario divinetribe. Se trata de una variante "abliterated" de Qwen3.6 27B, es decir, un ajuste que suprime la dirección de rechazo aprendida por el modelo base para que no se niegue a peticiones benignas pero delicadas. El trabajo de abliteración corresponde a huihui-ai; divinetribe solo realiza la conversión y cuantización para Apple Silicon.
+Qwen3.6-27B-abliterated-4bit-mlx es una cuantización de 4 bits en formato MLX del modelo huihui-ai/Huihui-Qwen3.6-27B-abliterated, una versión "abliterated" (con la dirección de rechazo suprimida) de Qwen3.6 de 27B. Lo publica el usuario divinetribe, que se limita a realizar la conversión y cuantización para Apple Silicon; el trabajo de abliteración original corresponde a huihui-ai. El modelo base es de la familia Qwen3.6 (arquitectura identificada como `qwen3_5`), con 26.895.993.856 parámetros reales según los safetensors del repositorio.
 
-El objetivo del artefacto es permitir la inferencia local en Macs con Apple Silicon mediante la librería mlx-lm, sin dependencia de la nube ni de claves de API. Con un peso de repositorio de 15,2 GB y 26.895.993.856 parámetros reales en safetensors, el modelo está pensado para equipos con 32 GB de memoria unificada, donde encaja con margen para trabajar.
+El problema que resuelve es doble: por un lado, ofrece una variante sin rechazos ante peticiones benignas pero "edgy"; por otro, empaqueta el modelo en ~15,2 GB para que quepa y funcione con comodidad en un Mac de 32 GB de memoria unificada, sin nube ni claves de API. Está pensado para inferencia local en Apple Silicon mediante `mlx-lm` y como modelo intercambiable en la pila claude-code-local.
 
-La relevancia actual reside en la combinación de tres factores: un tamaño de 27B que ofrece capacidad de razonamiento y generación de código superior a modelos de 7-14B, una cuantización de 4 bits con group size 64 que reduce el peso a un rango manejable en hardware de consumo, y un formato nativo MLX optimizado para los chips M-series de Apple. La licencia declarada es Apache 2.0, aunque el autor remite a la licencia upstream de Qwen.
+Es relevante ahora porque la cuantización 4-bit con group size 64 permite ejecutar un modelo de ~27B en hardware de consumo de Apple, un punto de equilibrio habitual para MacBook con 32 GB. La licencia declarada es Apache 2.0, aunque el autor recuerda que se sigue aplicando la licencia upstream de Qwen. El modelo está etiquetado únicamente para inglés.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Qwen3.6 (identificador interno `qwen3_5`), transformer decoder-only |
+| Arquitectura | Qwen3.6 (identificador `qwen3_5`), transformer; detalles de capas y atención no disponibles |
 | Parametros totales | 26.895.993.856 (~26,9B) |
 | Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | 4 bits, group size 64 (MLX) |
-| Idiomas soportados | en (ingles) |
-| Licencia | apache-2.0 (con remision a la licencia upstream de Qwen) |
-| Formato de pesos | safetensors (MLX), libreria mlx |
+| Tipos de cuantizacion | 4-bit MLX, group size 64 (única incluida en el repo) |
+| Idiomas soportados | en (inglés) |
+| Licencia | apache-2.0 (con sujeción a la licencia upstream de Qwen) |
+| Formato de pesos | safetensors en formato MLX (librería `mlx`); no se incluye GGUF |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es la de Qwen3.6, un transformer decoder-only identificado en el repositorio como `qwen3_5`. No se dispone de informacion en la documentacion proporcionada sobre el numero de tokens de entrenamiento, la composicion del dataset, ni si hubo fases de RLHF o DPO en el modelo base. El modelo original fue desarrollado por el equipo Qwen; huihui-ai aplico sobre el una tecnica de abliteracion que elimina la direccion de rechazo en el espacio de activaciones, y divinetribe realizo la conversion a MLX y la cuantizacion a 4 bits con group size 64.
+La información disponible confirma que se trata de un transformer de la familia Qwen3.6 (etiqueta de arquitectura `qwen3_5`) con 26,9B parámetros, convertido a MLX con `mlx-lm` y cuantizado a 4 bits con group size 64. No se detallan el número de capas, la configuración de atención, el tipo de positional encoding ni si incorpora mecanismos híbridos.
 
-La innovacion tecnica destacable de esta publicacion no esta en la arquitectura, sino en el pipeline de despliegue: la conversion con mlx-lm permite ejecutar un modelo de ~27B en memoria unificada de Apple Silicon con un peso de ~15 GB. No se documentan tecnicas como decodificacion especulativa, atencion lineal ni modos de pensamiento extendido en la informacion disponible.
+Respecto al entrenamiento, esta ficha no aporta datos sobre tokens de entrenamiento, composición del dataset ni fases de RLHF/DPO del modelo original; esa información correspondería a la model card de Qwen3.6 y al repositorio de huihui-ai, no incluidos aquí. La innovación técnica destacable de esta variante es la abliteración: la supresión de la dirección de rechazo en el espacio de activaciones, realizada por huihui-ai, que reduce la probabilidad de respuestas de negativa ante peticiones benignas. La cuantización 4-bit MLX es una modificación de pesos, no un reentrenamiento, y el autor advierte explícitamente que no constituye una mejora de capacidades.
 
 ## Capacidades
 
-- Generacion de texto conversacional y continuacion de prompts, segun el pipeline declarado `text-generation`.
-- Razonamiento y generacion de codigo heredados del modelo base Qwen3.6 27B (no se detallan capacidades especificas en la model card).
-- Comportamiento "uncensored": la abliteracion suprime la direccion de rechazo, de modo que el modelo no se niega ante peticiones benignas pero delicadas.
-- Integracion como backend en el stack claude-code-local, que expone una API compatible con Anthropic sobre MLX.
-- Ejecucion 100% local en Apple Silicon, sin conexion a servicios externos.
-- Soporte de tool calling y function calling: no disponible en la informacion proporcionada.
-- Capacidades multimodales (vision, audio): no disponible.
-- Capacidades multilingues: la model card solo declara ingles (`en`).
+- Generación de texto conversacional y de propósito general, heredada del modelo Qwen3.6 subyacente.
+- Razonamiento y respuesta multi-turno, según la naturaleza conversacional declarada en el pipeline.
+- Ejecución local en Apple Silicon mediante `mlx-lm`, sin dependencia de servicios en la nube.
+- Integración como backend de agente en la pila claude-code-local a través de un servidor MLX con API compatible con Anthropic (según el autor).
+- Comportamiento sin rechazos ante peticiones benignas pero controvertidas, gracias a la abliteración.
+- Soporte de tool calling / function calling: no disponible en la información proporcionada.
+- Capacidades multimodales (visión, audio): no disponibles; el pipeline es text-generation.
+- Capacidades multilingües: limitadas al inglés según la etiqueta de idioma del repositorio.
+- Modo thinking explícito: no disponible en la información proporcionada.
 
 ## Casos de uso
 
-- Asistente de codigo en local sobre Mac: el modelo puede integrarse en el stack claude-code-local apuntando la variable `MLX_MODEL` a este repositorio, de modo que un Mac con 32 GB ejecute tareas de generacion y refactorizacion de codigo sin enviar codigo propietario a la nube.
-- Prototipado de agentes en Apple Silicon: al exponerse a traves de un servidor compatible con la API de Anthropic, permite probar flujos de agente multi-paso en local antes de migrarlos a produccion.
-- Desarrollo de aplicaciones con requisitos de privacidad: cualquier pipeline que procese texto sensible (documentacion interna, borradores, datos de clientes) puede ejecutarse sin salida de datos del dispositivo.
-- Investigacion sobre alineacion y abliteracion: el modelo sirve como caso de estudio para comparar el comportamiento de un Qwen3.6 27B original frente a su version abliterated en tareas de rechazo y seguridad.
-- Generacion de texto creativo sin filtros: escritura de ficcion, guiones o contenido editorial donde los rechazos del modelo base resultan obstructivos para el flujo de trabajo.
-- Evaluacion de cuantizacion en MLX: util para medir la degradacion de calidad de un 27B a 4 bits con group size 64 frente al modelo en bf16, en tareas de razonamiento y codigo.
-- Despliegue en entornos sin conectividad: escenarios de campo, laboratorio o aviacion donde no hay acceso a internet pero se requiere un modelo de lenguaje de capacidad media-alta.
+- Asistente de código local en Mac: el modelo se integra en claude-code-local apuntando la variable `MLX_MODEL` a este repositorio, de modo que un Mac de 32 GB ejecuta tareas de agente sobre el sistema de archivos sin enviar código a la nube.
+- Automatización de agentes con verificación en disco: el leaderboard Agent-12 del autor evalúa tareas de agente juzgadas por el sistema de archivos, un escenario donde un modelo de 27B cuantizado a 4 bits ofrece más capacidad que alternativas de 7-8B sin salir del portátil.
+- Prototipado de aplicaciones conversacionales en local: con `mlx-lm` y una sola orden de generación se puede validar un flujo de chat multi-turno antes de decidir si se despliega en servidor.
+- Investigación sobre alineación y rechazos: la variante abliterated permite estudiar cómo cambia el comportamiento del modelo al eliminar la dirección de rechazo, comparándolo con el Qwen3.6 original en las mismas condiciones.
+- Generación de texto creativo sin filtros excesivos: para guiones, ficción o contenido editorial donde los rechazos benignos interrumpen el flujo, manteniendo la coherencia de un modelo de 27B.
+- Evaluación comparativa de cuantizaciones: al ser una conversión 4-bit MLX de un modelo conocido, sirve para medir la pérdida de calidad frente a pesos completos en tareas de razonamiento y generación.
+- Despliegue offline en entornos sin conectividad: al no requerir API ni conexión, encaja en estaciones de trabajo aisladas donde la política impide usar servicios externos.
 
 ## Benchmarks y rendimiento
 
@@ -54,44 +55,40 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM/memoria unificada estimada: ~15 GB de pesos en 4 bits; con overhead de contexto y cache KV, se recomienda un minimo de 24 GB y un objetivo de 32 GB de memoria unificada.
-- Hardware objetivo: Apple Silicon (M1/M2/M3/M4 en configuraciones de 32 GB o superiores). El autor indica explicitamente que encaja en un Mac de 32 GB "con espacio para trabajar".
-- GPU NVIDIA: no es el objetivo del artefacto; el formato MLX no se ejecuta de forma nativa en CUDA. Para A100/H100/RTX 4090 habria que recurrir a otras cuantizaciones (GGUF, AWQ, GPTQ) del modelo base.
-- Despliegue: `mlx-lm` mediante `python -m mlx_lm.generate`. No se documenta soporte de vLLM, TGI, llama.cpp u Ollama para este repositorio concreto.
-- Latencia y throughput: no disponible en la informacion proporcionada.
+- VRAM/memoria unificada: ~15,2 GB de pesos en 4-bit; en la práctica se recomienda un Mac con 32 GB de memoria unificada para dejar margen a la caché KV y al sistema, tal como indica el autor.
+- GPU recomendadas: Apple Silicon (serie M) con 32 GB o más de memoria unificada. El formato MLX no está pensado para GPU NVIDIA; para A100/H100/RTX 4090 habría que usar otra conversión (por ejemplo, GGUF o AWQ), no incluida en este repositorio.
+- ¿Cabe en GPU de consumo? En el ecosistema Apple, sí: es el "sweet spot" declarado para un Mac de 32 GB. En GPUs de consumo NVIDIA de 16 GB no cabe con holgura a 4 bits; en 24 GB (RTX 4090) requeriría cuantizaciones adicionales no publicadas aquí.
+- Opciones de despliegue: `mlx-lm` (generación por línea de comandos y API Python) y el servidor MLX compatible con la API de Anthropic de claude-code-local. No se documentan vLLM, llama.cpp, Ollama ni TGI para este repositorio.
+- Latencia y throughput: no disponibles; no se publican mediciones de tokens por segundo en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Cuantizacion | Licencia | Formato | Notas |
+| Modelo | Parámetros | Contexto | Cuantización | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| divinetribe/Qwen3.6-27B-abliterated-4bit-mlx | ~26,9B | no disponible | 4 bits MLX (gs 64) | apache-2.0 | safetensors MLX | Objetivo Apple Silicon, uncensored |
-| huihui-ai/Huihui-Qwen3.6-27B-abliterated | ~27B (no confirmado) | no disponible | bf16/fp16 (presumible) | no disponible | safetensors | Modelo base del que deriva esta publicacion |
-| Qwen3.6 27B original (upstream) | ~27B (no confirmado) | no disponible | varias | licencia Qwen | safetensors, GGUF | Version con rechazos intactos |
+| divinetribe/Qwen3.6-27B-abliterated-4bit-mlx | ~26,9B | no disponible | 4-bit MLX, group 64 | safetensors MLX | apache-2.0 | Hugging Face, ~487 descargas |
+| huihui-ai/Huihui-Qwen3.6-27B-abliterated | ~27B (según nombre) | no disponible | pesos completos | safetensors | no disponible en esta ficha | Hugging Face (modelo base) |
+| Qwen3.6 27B original | ~27B (según nombre) | no disponible | pesos completos | safetensors | licencia Qwen (según autor) | Hugging Face |
 
-No se dispone de datos de rendimiento comparativo entre estas variantes en la informacion proporcionada.
+La comparación se limita a las variantes del mismo modelo base porque la información proporcionada no incluye datos de rendimiento ni especificaciones de alternativas de otros fabricantes. No se dispone de cifras de benchmarks que permitan contrastar calidad entre estas versiones.
 
 ## Limitaciones y advertencias
 
-- La abliteracion no mejora las capacidades del modelo; solo elimina la direccion de rechazo. El autor lo indica de forma explicita.
-- Riesgo elevado de generar contenido inapropiado, ofensivo o inseguro en ausencia de filtros externos; no es apto para exposicion directa a usuarios finales sin moderacion.
-- Sesgos conocidos del modelo base Qwen3.6 no documentados en la informacion disponible; se heredan integramente.
-- Riesgo de alucinacion inherente a los modelos de lenguaje de esta escala; no se han publicado evaluaciones especificas de fidelidad.
-- Idiomas: solo se declara ingles; el rendimiento en castellano no esta verificado ni documentado.
-- Longitud de contexto no especificada; no se puede garantizar el comportamiento en conversaciones o documentos largos.
-- Restricciones de licencia: la model card declara apache-2.0 pero remite a la licencia upstream de Qwen, que puede imponer condiciones adicionales para uso comercial. Conviene verificar la licencia del modelo base antes de desplegar en produccion.
-- El formato MLX limita el despliegue a hardware Apple Silicon; no es portable a CUDA ni a CPU x86 sin reconversion.
-- La model card incluye estadisticas de descargas y estrellas de GitHub en bloques "live-stats" que no son verificables de forma independiente y no deben tomarse como metricas de calidad.
-- Uso responsable: el autor advierte explicitamente de la necesidad de un uso responsable del modelo.
+- La abliteración elimina la dirección de rechazo, lo que reduce las negativas ante peticiones benignas pero también puede aumentar la probabilidad de contenido inapropiado o dañino; el autor advierte de que no es una mejora de capacidades y pide uso responsable.
+- Riesgo de alucinación inherente a los modelos de lenguaje; no se han publicado evaluaciones específicas de fidelidad para esta cuantización.
+- La cuantización a 4 bits puede degradar la calidad respecto a los pesos completos, especialmente en tareas de razonamiento matemático y código; no se aportan métricas de esa pérdida.
+- Idiomas: solo inglés declarado; el rendimiento en castellano no está garantizado ni evaluado.
+- Longitud de contexto: no disponible, lo que impide planificar cargas con ventanas largas.
+- Licencia: aunque el repositorio declara Apache 2.0, el autor recuerda que se sigue aplicando la licencia upstream de Qwen; conviene verificar los términos del modelo base antes de un uso comercial.
+- Formato exclusivo MLX: no es portable a GPUs NVIDIA ni a servidores x86 convencionales sin una reconversión adicional.
+- Las cifras de estrellas y descargas que aparecen en la model card (3.7k estrellas, 59.7k descargas totales) son datos autodeclarados por el autor y no verificables desde esta ficha.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/divinetribe/Qwen3.6-27B-abliterated-4bit-mlx
-- Modelo base (abliterated): https://huggingface.co/huihui-ai/Huihui-Qwen3.6-27B-abliterated
-- Organizacion huihui-ai: https://huggingface.co/huihui-ai
-- Organizacion divinetribe: https://huggingface.co/divinetribe
-- Coleccion "Abliterated MLX for Apple Silicon": https://huggingface.co/collections/divinetribe/abliterated-mlx-for-apple-silicon-6a222fed584be7ce97633768
+- Modelo base (abliteración): https://huggingface.co/huihui-ai/Huihui-Qwen3.6-27B-abliterated
+- Colección "Abliterated MLX for Apple Silicon": https://huggingface.co/collections/divinetribe/abliterated-mlx-for-apple-silicon-6a222fed584be7ce97633768
 - Repositorio claude-code-local: https://github.com/nicedreamzapp/claude-code-local
-- Perfil GitHub del autor: https://github.com/nicedreamzapp
 - Leaderboard Agent-12: https://nicedreamzapp.github.io/agent12/
-- Libreria MLX: https://github.com/ml-explore/mlx
-- Libreria mlx-lm: no se proporciona URL directa en la informacion disponible.
+- Perfil del autor en GitHub: https://github.com/nicedreamzapp
+- MLX: https://github.com/ml-explore/mlx
+- mlx-lm: no se proporciona URL directa en la información disponible (se instala vía `pip install mlx-lm`)

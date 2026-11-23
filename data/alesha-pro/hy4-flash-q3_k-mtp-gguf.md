@@ -2,114 +2,111 @@
 
 ## Resumen
 
-Hy4-flash es un modelo de lenguaje multimodal de tipo Mixture-of-Experts (MoE) desarrollado por Tencent, con 222.679.844.717 parámetros totales según los pesos en safetensors del modelo base. Esta ficha describe la cuantización GGUF Q3_K publicada por el usuario alesha-pro bajo el paraguas de su proyecto Project Maya, una bifurcación de motores de inferencia orientada a ejecutar modelos de gran tamaño en hardware de consumo. La aportación principal de esta versión es la recuantización de la capa MTP (Multi-Token Prediction) para que el modelo completo, con su contexto de 262.144 tokens y su torre de visión, quepa en configuraciones de 1, 2 o 4 tarjetas RTX 3090.
+Hy4-flash es un modelo de lenguaje de tipo Mixture of Experts (MoE) desarrollado por Tencent, con 222.679.844.717 parametros totales y una longitud de contexto de 262.144 tokens. Esta ficha describe la version cuantizada en GGUF publicada por el usuario alesha-pro bajo el identificador `alesha-pro/Hy4-flash-Q3_K-MTP-GGUF`, que adapta el modelo base `tencent/Hy4-flash` para su ejecucion en tarjetas consumer RTX 3090 mediante un motor de inferencia derivado de Project Maya.
 
-El modelo resuelve el problema de desplegar un MoE de más de 220.000 millones de parámetros en GPUs de 24 GB de VRAM mediante una combinación de cuantización agresiva de los expertos enrutados (Q3_K y Q4_K), cuantización Q8_0 de las matrices de atención y proyecciones, y una política de offloading que mantiene en RAM los expertos que no caben en VRAM, computándolos en CPU. La capa MTP, que en el GGUF original de AngelSlim permanecía en BF16 y ocupaba 7,0 GiB, se recuantiza aquí a Q3_K y Q8_0, reduciéndose a 1,6 GiB, lo que permite mantener el contexto completo de 262.144 tokens en tarjetas de 24 GB.
+La publicacion incluye dos variantes de cuantizacion (Q3_K e IQ2_XXS), la torre de vision en BF16, una tabla Engram separada y un vector de abliteracion que elimina la mayoria de los rechazos del modelo original. El modelo soporta entrada de imagen (pipeline image-text-to-text) y decodificacion especulativa mediante una capa MTP (Multi-Token Prediction) requantizada para encajar en GPUs de 24 GB.
 
-Es relevante ahora porque demuestra que es posible ejecutar un modelo multimodal de escala frontera con decodificación especulativa y contexto largo en hardware consumer, a velocidades de 251 tokens por segundo en 4×RTX 3090 y de 40 a 47 tokens por segundo en una sola RTX 3090, sin alterar la calidad de los pesos del tronco principal. La licencia es la Tencent Hy License, que impone restricciones de uso comercial que deben revisarse antes de cualquier despliegue en producción.
+Su relevancia actual radica en que permite ejecutar un modelo de 222B parametros con contexto completo de 256K en configuraciones de 1, 2 o 4 RTX 3090, algo que el llama.cpp estandar no permite cargar segun el autor. La licencia es la Tencent Hy License v1.0, derivada de Apache 2.0 con condiciones adicionales para grandes proveedores de Model-as-a-Service.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Mixture-of-Experts (MoE) con capa MTP y torre de visión; detalles internos del transformer no disponibles |
-| Parámetros totales | 222.679.844.717 |
-| Parámetros activos | no disponible |
+| Arquitectura | Mixture of Experts (MoE) con capa MTP y torre de vision; detalles internos no disponibles |
+| Parametros totales | 222.679.844.717 |
+| Parametros activos | no disponible |
 | Longitud de contexto | 262.144 tokens |
-| Tipos de cuantización | Q3_K y Q4_K (expertos enrutados), Q8_0 (atención, proyecciones, expertos compartidos), BF16 (cabeza de salida), F32 (indexer.proj), capa MTP en Q3_K y Q8_0, Engram table a 8 bits |
-| Idiomas soportados | no disponible (la model card menciona generación de código y prosa en inglés y ruso para el perfil de enrutamiento) |
-| Licencia | tencent-hy-license (Tencent Hy License) |
-| Formato de pesos | GGUF (2 shards principales, más mmproj y tokenizer) |
+| Tipos de cuantizacion | Q3_K (expertos Q3_K/Q4_K, atencion Q8_0, MTP Q3_K/Q8_0) e IQ2_XXS (expertos IQ2) |
+| Idiomas soportados | no disponible |
+| Licencia | Tencent Hy License v1.0 (derivada de Apache 2.0, con terminos adicionales en la seccion 10 para grandes negocios de Model-as-a-Service) |
+| Formato de pesos | GGUF (multi-parte: `-00001-of-00002` y `-00002-of-00002`), mas `mmproj` BF16 para vision |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es un transformer con mezcla de expertos (MoE) que incorpora una capa de predicción multi-token (MTP) para decodificación especulativa, una torre de visión con proyector multimodal para entrada image-text-to-text, y una tabla Engram de 660 millones de filas de 96 valores almacenada a 8 bits. El modelo base es tencent/Hy4-flash; los detalles sobre el número de tokens de entrenamiento, la composición del dataset y si hubo RLHF o DPO no están disponibles en la información proporcionada.
+El modelo base es un transformer MoE de Tencent con 222.679.844.717 parametros totales, segun los datos de safetensors del repositorio. La publicacion cuantizada incorpora una capa MTP (Multi-Token Prediction) en el bloque `blk.42` con 21 tensores, requantizada de BF16 a Q3_K/Q8_0/F32 para que quepa junto al contexto de 256K en tarjetas de 24 GB. Tambien incluye una tabla Engram almacenada como archivo GGUF independiente de 63,4 GB, que en configuraciones de una sola GPU puede residir en NVMe.
 
-La innovación técnica destacable de esta publicación no reside en el entrenamiento sino en la ingeniería de despliegue: la recuantización de los 21 tensores del bloque `blk.42` (la capa MTP) desde BF16 hasta Q3_K y Q8_0 mediante `ggml_quantize_chunk` sin matriz de importancia, la conversión de la torre de visión a BF16 mediante el conversor del parche de llama.cpp de AngelSlim, y un perfil de enrutamiento (`routing-profile.txt`) que registra la frecuencia de selección de cada experto enrutado durante generación de código y prosa en inglés y ruso, usado como estado inicial del calentamiento de expertos en los modos de 2 y 1 tarjeta. El motor necesario es la rama `hy4-flash` de Project Maya; llama.cpp estándar no carga este modelo. La decodificación especulativa con MTP alcanza una tasa de aceptación del 82% al 93% de los primeros borradores, y como el modelo principal verifica cada token propuesto, los borradores no alteran la salida, solo la velocidad.
+No se dispone de informacion sobre el numero de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de RLHF o DPO en la informacion proporcionada. La innovacion tecnica destacable de esta publicacion es la ingenieria de cuantizacion: el trunk Q3_K combina expertos en Q3_K/Q4_K con atencion en Q8_0, la variante IQ2_XXS copia byte a byte los 123 tensores de expertos enrutados de las capas 1 a 41 desde el archivo IQ2 de AtomicChat, y el vector de abliteracion (`Hy4-flash-refusal-directions.bin`) contiene direcciones de rechazo por capa y por cada uno de los cuatro flujos de hiperconexion, proyectadas fuera del flujo residual durante la inferencia.
 
 ## Capacidades
 
-- Generación de texto conversacional multi-turno con contexto de hasta 262.144 tokens.
-- Entrada de imágenes y texto (pipeline image-text-to-text) mediante torre de visión y proyector multimodal en BF16.
-- Generación de código, incluyendo sesiones de agente de programación (la model card reporta una sesión de agente de código con una media de 223 tokens por segundo sobre unos 50.000 tokens generados en 4 GPU).
-- Decodificación especulativa mediante capa MTP con verificación por el modelo principal.
-- Capacidades multilingües: la model card menciona inglés y ruso en el contexto del perfil de enrutamiento; el conjunto completo de idiomas soportados no está disponible.
-- Soporte de tool calling y function calling: no disponible en la información proporcionada.
-- Soporte de agentes y razonamiento multi-paso: la model card menciona sesiones de agente de código, pero no detalla mecanismos específicos de agentes.
-- Modo thinking: no disponible en la información proporcionada.
+- Generacion de texto conversacional multi-turno con ventana de 262.144 tokens.
+- Entrada de imagen: pipeline image-text-to-text con torre de vision en BF16 (`mmproj-Hy4-flash-bf16.gguf`).
+- Decodificacion especulativa mediante capa MTP (Multi-Token Prediction).
+- Modo "thinking" (razonamiento) segun los datos de evaluacion de rechazos del autor.
+- Variante "uncensored": el vector de abliteracion reduce los rechazos (de 139 a 32 en AdvBench 64 + JailbreakBench 82 con thinking off; de 22 a 3 en AdvBench 24 con thinking on).
+- API compatible con OpenAI Chat en `/v1` a traves del servidor de Project Maya.
+- Soporte de tool calling y function calling: no disponible en la informacion proporcionada.
+- Capacidades multilingues: no disponible en la informacion proporcionada.
 
 ## Casos de uso
 
-- Asistente de código en local con contexto largo: el modelo puede mantener sesiones de agente de programación con decenas de miles de tokens generados a una media de 223 tokens por segundo en 4×RTX 3090, lo que permite integrarlo en flujos de trabajo de desarrollo sin depender de APIs externas.
-- Análisis de documentos extensos con imágenes: gracias al contexto de 262.144 tokens y a la torre de visión, se pueden procesar manuales técnicos, informes con figuras o capturas de pantalla y formular preguntas sobre su contenido en una sola pasada.
-- Atención al cliente automatizada multi-turno: el contexto largo permite conservar el historial completo de una conversación prolongada sin truncamiento, manteniendo coherencia en interacciones de soporte técnico.
-- Procesamiento de repositorios de código completos: con 262.144 tokens de contexto se puede cargar un repositorio mediano y realizar tareas de revisión, refactorización o generación de tests con visión global del proyecto.
-- Despliegue en estaciones de trabajo con una sola GPU: el modo de 1 tarjeta mantiene los mismos pesos y calidad que el de 4 tarjetas, con 40 a 47 tokens por segundo, adecuado para prototipado y uso individual en una RTX 3090.
-- Investigación en decodificación especulativa: la capa MTP recuantizada y el perfil de enrutamiento proporcionan un banco de pruebas reproducible para estudiar el equilibrio entre offloading de expertos, velocidad de decodificación y aceptación de borradores.
-- Transcripción y descripción de imágenes en pipelines locales: el pipeline image-text-to-text permite generar descripciones o extraer información de imágenes dentro de flujos que no pueden enviar datos a servicios en la nube.
+- Atencion al cliente automatizada: el modelo puede gestionar conversaciones multi-turno con contexto muy largo (262.144 tokens) gracias a su ventana, adecuado para historiales extensos de soporte o bases de conocimiento inyectadas en el prompt.
+- Procesamiento de documentos extensos con imagen: al aceptar entrada image-text-to-text, permite extraer y razonar sobre informacion de capturas, formularios o diagramas junto con texto largo en una sola pasada.
+- Analisis de repositorios y codigo: con 256K de contexto puede ingerir arboles de proyecto completos o varios archivos grandes para tareas de revision, resumen o generacion de parches.
+- Despliegue en laboratorio con hardware consumer: la configuracion de 2x RTX 3090 con Q3_K (70-104 tok/s de decodificacion, 1225 tok/s de prefill) permite servir el modelo en entornos de investigacion sin GPUs de datacenter.
+- Investigacion sobre alineacion y rechazos: la variante uncensored con vector de abliteracion medible (KL mediana 0,014, 85,7% de coincidencia de token top en texto largo) sirve para estudiar el comportamiento de rechazo y sus efectos en la distribucion de salida.
+- Prototipado de asistentes multimodales: la combinacion de vision, contexto largo y API compatible con OpenAI facilita integrar el modelo en prototipos de agentes que necesiten razonar sobre imagenes y texto sin reentrenar.
+- Evaluacion de cuantizaciones: los archivos Q3_K e IQ2_XXS con metricas de coincidencia de token top (88,3% y 88,5% en 2 y 1 GPU; 74-76% para IQ2) permiten comparar el impacto de la cuantizacion en la calidad de salida.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks de tareas (MMLU, HumanEval, GSM8K, etc.) en la información disponible. La model card indica explícitamente que el autor no ejecutó benchmarks de tareas y remite a las puntuaciones de AngelSlim para su archivo Q3_K, que según ellos quedan a menos de 0,5 puntos de BF16 en sus propias suites.
+No se han publicado resultados de benchmarks de tareas (MMLU, HumanEval, GSM8K, etc.) en la informacion disponible. El autor indica explicitamente que no dispone de benchmarks de tareas propios. Los unicos datos de rendimiento publicados son de inferencia y de fidelidad de cuantizacion:
 
-Rendimiento de inferencia medido (4×RTX 3090 a 300 W, PCIe 3.0 x16, EPYC 7642, 512 GB DDR4 en 8 canales, contexto 262.144, caché KV Q8, MTP):
+| Metrica | Q3_K, 4x RTX 3090 | Q3_K, 2x RTX 3090 | IQ2, 2x RTX 3090 | Q3_K, 1x RTX 3090 | IQ2, 1x RTX 3090 (Engram en NVMe) |
+|---|---:|---:|---:|---:|---:|
+| Decodificacion (tok/s) | 176-251 | 70-104 | 95-123 | 37-54 | 54-68 |
+| Prefill (tok/s) | 2947 | 1225 | 1999 | 1510 | 1184-1199 |
+| RAM | ~60 GiB | 137 GiB | no disponible | 137 GiB (78 GiB con Engram en NVMe) | 45 GiB |
 
-| Métrica | 4 GPU | 2 GPU | 1 GPU |
-|---|---:|---:|---:|
-| Expertos enrutados en VRAM | todos | 43% | 15% |
-| Decode, prompt corto de código, 600 tokens | 251 tok/s | 70 tok/s | 40 tok/s |
-| Decode tras prompt de 57K | 176–221 tok/s | 81–104 tok/s | 40–47 tok/s |
-| Decode con 255K–261K tokens en contexto | 159–197 tok/s | 61 tok/s | no medido |
-| Sesión de agente de código, media sobre ~50K tokens | 223 tok/s | 74 tok/s | no medido |
-| Prefill, prompt de 57K | 2947 tok/s | 1225 tok/s | 415 tok/s |
-| Llenado de 255K tokens de contexto | 2880 tok/s | 1239 tok/s (206 s) | no medido |
-
-Calidad en 2 tarjetas frente a 4 tarjetas (512 posiciones con teacher forcing sobre un texto largo):
-
-| Ejecución | Mismo token top-1 | KL mediana |
-|---|---:|---:|
-| 4 GPU con expertos repartidos en otro orden (ruido del test) | 88,3% | 0,0054 |
-| 2 GPU, carril CPU | 88,3% | 0,0047 |
-| 2 GPU, carril CPU, chunk de prefill 4096 | 87,9% | 0,0051 |
+| Metrica de fidelidad | Valor |
+|---|---|
+| Coincidencia de token top, 2 tarjetas vs 4 tarjetas | 88,3% |
+| Coincidencia de token top, 1 tarjeta vs 4 tarjetas | 88,5% |
+| Coincidencia de token top, expertos IQ2 | 74-76% |
+| Coincidencia de token top en texto largo, uncensored vs stock | 85,7% (dos ejecuciones stock coinciden en 88,3%) |
+| KL mediana, uncensored vs stock | 0,014 |
 
 ## Requisitos de hardware
 
-- VRAM: los pesos principales ocupan 86,2 GB (shard 1) más 63,4 GB (tabla Engram) más 1,04 GB (proyector de visión). En 4×RTX 3090 caben todos los expertos enrutados en VRAM. En 2 tarjetas caben el 43% de los expertos y en 1 tarjeta el 15%, con el resto en RAM y computado en CPU.
-- RAM: los modos de 2 y 1 tarjeta fijan 73 GiB para los expertos enrutados y mapean los 59 GiB de la tabla Engram. Los 3 modos necesitan la tabla Engram en RAM o en page cache.
-- GPUs recomendadas: 4×RTX 3090 para máximo rendimiento (251 tok/s); 2×RTX 3090 para 70–104 tok/s; 1×RTX 3090 para 40–47 tok/s. No se reportan pruebas en A100, H100 ni otras GPUs.
-- Cabe en GPU consumer: sí, en RTX 3090 de 24 GB, en configuraciones de 1, 2 o 4 tarjetas, con offloading de expertos a RAM.
-- Opciones de despliegue: exclusivamente la rama `hy4-flash` de Project Maya (https://github.com/alesha-pro/project-maya/tree/hy4-flash). llama.cpp estándar no carga este modelo. El repositorio incluye configuraciones de servidor para 4, 2 y 1 tarjeta en `configs/`.
-- Latencia y throughput: ver tabla de benchmarks. La velocidad de decodificación en 2 y 1 tarjeta depende de cuántos expertos seleccionados estén ya en VRAM; el motor mueve expertos entre VRAM y RAM durante la generación, por lo que los primeros cientos de tokens sobre un tema nuevo se sitúan en el extremo bajo del rango y una sesión larga en el alto.
+- VRAM/RAM estimada: Q3_K requiere aproximadamente 60 GiB de RAM en 4x RTX 3090; 137 GiB en 2x o 1x RTX 3090; la configuracion de 1 tarjeta con Engram en NVMe baja a 45 GiB con IQ2.
+- Tamano en disco: conjunto Q3_K de 150 GB (86,2 GB trunk + 63,4 GB Engram); conjunto IQ2_XXS de 115 GB (51,1 GB trunk + 63,4 GB Engram); torre de vision 1,04 GB.
+- GPU recomendadas: RTX 3090 (arquitectura 86) es el objetivo declarado; no se documentan otras GPUs en la informacion disponible.
+- Cabe en consumer GPU: si, en 1, 2 o 4 RTX 3090 de 24 GB segun configuracion.
+- Opciones de despliegue: exclusivamente el motor `maya-hy4f` de la rama `hy4-flash` de Project Maya (clonar, compilar con CUDA y lanzar `python -m serve.server --engine maya`). El autor afirma que llama.cpp estandar no carga el modelo.
+- Latencia y throughput: ver tabla de benchmarks (176-251 tok/s de decodificacion en 4 tarjetas; 37-54 tok/s en 1 tarjeta con Q3_K; prefill de 2947 tok/s en 4 tarjetas).
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros totales | Contexto | Licencia | Formato / disponibilidad | Notas |
+No se dispone de datos de benchmarks de tareas que permitan una comparacion de rendimiento con alternativas. Comparativa estructural con las variantes del mismo modelo base:
+
+| Modelo | Parametros | Contexto | Formato | Licencia | Hardware objetivo |
 |---|---|---|---|---|---|
-| Hy4-flash Q3_K MTP (esta ficha) | 222.679.844.717 | 262.144 | Tencent Hy License | GGUF, motor Project Maya rama hy4-flash | MTP recuantizado, visión, offloading de expertos a RAM |
-| tencent/Hy4-flash (modelo base) | 222.679.844.717 | no disponible | Tencent Hy License | safetensors en Hugging Face | Pesos originales sin cuantizar; requiere hardware de datacenter |
-| AngelSlim/Hy4-flash-GGUF | no disponible | no disponible | no disponible | GGUF, llama.cpp con parche de AngelSlim | Punto de partida de esta cuantización; capa MTP en BF16 (7,0 GiB) |
-| Otros MoE de escala similar | no disponible | no disponible | no disponible | no disponible | No se dispone de datos comparables en la información proporcionada |
+| alesha-pro/Hy4-flash-Q3_K-MTP-GGUF (Q3_K) | 222,7B | 262.144 | GGUF multi-parte | Tencent Hy License v1.0 | 1-4x RTX 3090 |
+| alesha-pro/Hy4-flash-Q3_K-MTP-GGUF (IQ2_XXS) | 222,7B | 262.144 | GGUF multi-parte | Tencent Hy License v1.0 | 1-2x RTX 3090 |
+| tencent/Hy4-flash (base) | 222,7B | 262.144 | safetensors | Tencent Hy License v1.0 | datacenter |
+| AngelSlim/Hy4-flash-GGUF | 222,7B | 262.144 | GGUF | Tencent Hy License v1.0 | no disponible |
+| AtomicChat/Hy4-flash-GGUF | 222,7B | 262.144 | GGUF | Tencent Hy License v1.0 | no disponible |
 
 ## Limitaciones y advertencias
 
-- Licencia Tencent Hy License: impone restricciones que deben revisarse antes de cualquier uso comercial; la model card cita la sección 4 de la licencia como motivo del aviso de cambios en los pesos.
-- Dependencia de un motor no estándar: llama.cpp estándar no carga este modelo; es obligatorio usar la rama `hy4-flash` de Project Maya, lo que limita la portabilidad y el soporte comunitario.
-- Requisito de RAM elevado: los 3 modos necesitan la tabla Engram (59 GiB) en RAM o page cache, y los modos de 2 y 1 tarjeta fijan además 73 GiB para expertos enrutados.
-- Rendimiento variable en 2 y 1 tarjeta: la velocidad depende del acierto del perfil de enrutamiento y del tema; los primeros cientos de tokens sobre temas nuevos son más lentos.
-- Sin benchmarks de tareas publicados por el autor de la cuantización: la calidad se infiere de la afirmación de AngelSlim de estar a menos de 0,5 puntos de BF16 en sus suites, no verificada de forma independiente en esta ficha.
-- Riesgo de alucinación: no cuantificado en la información disponible; aplicable el riesgo habitual de los modelos de lenguaje de gran escala.
-- Sesgos conocidos: no documentados en la información proporcionada.
-- Idiomas: el conjunto completo de idiomas soportados no está disponible; el perfil de enrutamiento solo cubre inglés y ruso.
-- Tool calling y modo thinking: no confirmados en la información disponible; no asumir su disponibilidad en producción sin verificación.
-- Repositorio con 0 descargas y 0 likes en el momento de la consulta: ecosistema de usuarios muy reducido, lo que implica poca validación comunitaria y soporte limitado ante problemas.
+- La abliteracion elimina la mayoria de los rechazos, no todos: quedan 32 rechazos en AdvBench 64 + JailbreakBench 82 y 3 en AdvBench 24 con thinking on. No es un modelo alineado para produccion orientada al publico general.
+- La abliteracion altera la distribucion de salida: 85,7% de coincidencia de token top frente al stock en texto largo (dos ejecuciones stock coinciden en 88,3%), con KL mediana de 0,014.
+- La cuantizacion IQ2_XXS se aleja mas del modelo base: 74-76% de coincidencia de token top frente al 88,3-88,5% de Q3_K.
+- El autor no aporta benchmarks de tareas, por lo que no hay evidencia publicada sobre la degradacion en razonamiento, codigo o matematicas.
+- El modelo solo carga con el motor Project Maya de la rama `hy4-flash`; llama.cpp estandar no lo soporta, lo que limita la portabilidad y el soporte comunitario.
+- La licencia Tencent Hy v1.0 incluye terminos adicionales en la seccion 10 para grandes negocios de Model-as-a-Service; es necesario revisar el archivo LICENSE antes de un uso comercial a escala.
+- No se dispone de informacion sobre sesgos, idiomas soportados ni tasas de alucinacion.
+- El contexto de 262.144 tokens requiere configuraciones de memoria muy elevadas (137 GiB de RAM en 1-2 tarjetas con Q3_K), lo que puede provocar swap y caidas de rendimiento si no se planifica.
+- El repositorio ocupa 201,7 GB; la descarga y el almacenamiento deben dimensionarse en consecuencia.
 
 ## Enlaces
 
-- Repositorio Hugging Face de esta cuantización: https://huggingface.co/alesha-pro/Hy4-flash-Q3_K-MTP-GGUF
-- Modelo base en Hugging Face: https://huggingface.co/tencent/Hy4-flash
-- GGUF original de AngelSlim: https://huggingface.co/AngelSlim/Hy4-flash-GGUF
-- Motor Project Maya (rama hy4-flash): https://github.com/alesha-pro/project-maya/tree/hy4-flash
-- Instrucciones de ejecución: https://github.com/alesha-pro/project-maya/blob/hy4-flash/docs/HY4-FLASH.md
-- Project Maya original: https://github.com/mw00/project-maya
-- Motor Strata: https://github.com/Niko1221/Strata
+- Repositorio Hugging Face: https://huggingface.co/alesha-pro/Hy4-flash-Q3_K-MTP-GGUF
+- Modelo base: https://huggingface.co/tencent/Hy4-flash
+- Motor Project Maya (rama `hy4-flash`): https://github.com/alesha-pro/project-maya/tree/hy4-flash
+- Documentacion de Hy4-flash en Project Maya: https://github.com/alesha-pro/project-maya/blob/hy4-flash/docs/HY4-FLASH.md
+- Project Maya original (mw00 y Peasant Smith): https://github.com/mw00/project-maya
+- Strata (Niko1221): https://github.com/Niko1221/Strata
 - llama.cpp y ggml: https://github.com/ggml-org/llama.cpp
+- Cuantizacion Q3_K original: https://huggingface.co/AngelSlim/Hy4-flash-GGUF
+- Expertos IQ2 originales: https://huggingface.co/AtomicChat/Hy4-flash-GGUF

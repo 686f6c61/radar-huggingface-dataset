@@ -2,99 +2,106 @@
 
 ## Resumen
 
-Piccolo-27B es un modelo de decisión local desarrollado por agentscope-ai, derivado por ajuste fino del modelo base Qwen/Qwen3.5-27B. No es un modelo conversacional al uso: está diseñado para emitir juicios estructurados sobre estados y preguntas concretas, principalmente la revisión de invocaciones de herramientas (tool review) y la compactación de contexto dentro de QwenPaw, el entorno de agentes del mismo equipo. Su salida no es texto explicativo, sino distribuciones de probabilidad sobre respuestas candidatas de un solo token.
+Piccolo-27B es un modelo de decisión especializado en la revisión de herramientas (tool review) y la selección de contexto dentro de sistemas de agentes. Lo desarrolla AgentScope, el equipo detrás del framework homónimo de agentes, y parte como fine-tuning del modelo base Qwen/Qwen3.5-27B. A diferencia de un modelo generativo convencional, aquí el modelo se emplea para puntuar candidatos (herramientas, fragmentos de contexto) y emitir decisiones, y el repositorio se publica con pipeline de `text-classification` y atención bidireccional.
 
-Con 27.781.427.952 parámetros (aproximadamente 27,8 mil millones), el modelo hereda la arquitectura híbrida de Qwen3.5, que combina capas de atención completa con capas de atención lineal. La innovación clave es el uso de atención bidireccional en el prompt durante las capas de atención completa, lo que permite evaluar cada consulta como un bloque completo en lugar de forma causal. Esto lo aleja del uso típico de un modelo de chat y exige un runtime adaptado.
+El modelo resuelve un problema muy concreto en arquitecturas agénticas: decidir qué herramienta invocar y qué contexto incluir en cada paso, tarea que suele resolverse con heurísticas o con un LLM generativo de propósito general. Piccolo-27B se entrena específicamente para esa función de scoring, lo que permite integrarlo como componente de decisión dentro de pipelines de agentes como QwenPaw.
 
-Su relevancia actual reside en que aborda un problema práctico de los sistemas de agentes: decidir de forma fiable si una acción es destructiva, si conviene compactar el contexto o si una herramienta debe aprobarse. Publicado bajo licencia Apache 2.0 y con variantes cuantizadas en GGUF, está pensado para ejecutarse localmente, aunque su integración requiere adaptaciones específicas de atención y puntuación de candidatos que no están disponibles en los runtimes causales estándar.
+Con 27.781.427.952 parámetros (unos 27,8 mil millones), pesos en safetensors (55,6 GB de repositorio), licencia Apache 2.0 e idiomas inglés y chino, es relevante ahora porque ofrece una alternativa abierta y desplegable localmente frente a soluciones cerradas de orquestación de agentes. No obstante, la información publicada sobre arquitectura interna, datos de entrenamiento y contexto es escasa.
 
 ## Especificaciones técnicas
 
 | Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer híbrido (atención completa + atención lineal) derivado de Qwen3.5, con atención bidireccional en el prompt en las capas de atención completa |
-| Parámetros totales | 27.781.427.952 |
+| Arquitectura | Transformer derivado de Qwen/Qwen3.5-27B con atención bidireccional (según tags y model card) |
+| Parámetros totales | 27.781.427.952 (27,8 B) |
 | Parámetros activos | no disponible (no se indica que sea MoE) |
-| Longitud de contexto | no disponible (el layout repetido se usa solo si el presupuesto de tokens de una pasada es como máximo 3.000) |
-| Tipos de cuantización | BF16 (repo principal y repo BF16), Q8_0, Q4_K_M (repos separados) |
-| Idiomas soportados | en, zh |
+| Longitud de contexto | no disponible |
+| Tipos de cuantización | no disponible |
+| Idiomas soportados | inglés (en), chino (zh) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (repo principal); GGUF (BF16, Q8_0, Q4_K_M) |
+| Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
 
-Piccolo-27B parte de Qwen3.5-27B, un transformer híbrido que intercala capas de atención completa con capas de atención lineal. Sobre esa base, el ajuste fino introduce atención bidireccional en el prompt únicamente en las capas de atención completa, mientras que las capas lineales conservan su cómputo original. La entrada se organiza con el layout denominado flex_twice y con el modo de pensamiento desactivado. Cada pregunta se evalúa como un prompt completo y las probabilidades de las respuestas candidatas se obtienen de los logits de respuesta de un solo token a temperatura 1.0.
+Piccolo-27B se construye sobre Qwen/Qwen3.5-27B mediante fine-tuning. La model card y los tags indican el uso de atención bidireccional, lo que encaja con su función de scoring de candidatos: en lugar de generar texto autorregresivamente, el modelo evalúa secuencias completas para producir una puntuación o decisión. El repositorio incluye una implementación de referencia (`piccolo_inference.py`) que implementa esa atención bidireccional y el scoring de candidatos, lo que confirma que el modo de uso previsto no es la generación estándar de `transformers`.
 
-El modelo no genera texto explicativo ni JSON de probabilidades: su contrato de inferencia es la puntuación de candidatos. El repositorio incluye `piccolo_inference.py` y `piccolo_layout.py` como referencia, y advierte explícitamente de que la reutilización de caché de prefijo y el chunked prefill requieren compatibilidad con el prompt bidireccional, algo que la referencia no implementa. El layout repetido solo se emplea cuando el presupuesto total de tokens de la petición en una pasada es de 3.000 como máximo y cada fila repetida cabe en el límite de contexto. No se detallan en la información disponible el número de tokens de entrenamiento ni la composición del dataset.
+No se han publicado detalles sobre el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron técnicas de RLHF, DPO u otras. Tampoco se documentan innovaciones adicionales como decodificación especulativa o atención lineal. La información disponible se limita a los tags (`decision-model`, `bidirectional-attention`, `agentscope`, `qwenpaw`) y a la descripción funcional: revisión de herramientas y selección de contexto.
 
 ## Capacidades
 
-- Clasificación y juicio estructurado: evalúa estados y preguntas con tipos de respuesta definidos (por ejemplo, `noul`) y devuelve probabilidades sobre candidatos de un solo token.
-- Revisión de herramientas (tool review): determina si una operación propuesta por un agente es destructiva, sobrescribe datos o requiere aprobación.
-- Compactación de contexto: decide cuándo y cómo resumir o compactar el contexto en el flujo de QwenPaw.
-- Procesamiento de entrada multimodal de tipo image-text-to-text, según los tags del repositorio (no se detallan las capacidades de visión en la model card).
-- Soporte bilingüe inglés y chino.
-- Integración con el ecosistema agentscope y QwenPaw mediante un endpoint nativo de puntuación de candidatos (`/v1/systemone`).
-- No está pensado para generación de texto libre ni para conversación causal estándar.
+- Puntuación y selección de herramientas (tool review): evalúa candidatos de herramientas y decide cuál es la adecuada para una tarea.
+- Selección de contexto: identifica y puntúa fragmentos de contexto relevantes para un paso de agente.
+- Clasificación y decisión: pipeline declarado como `text-classification`, orientado a emitir decisiones discretas o puntuaciones.
+- Atención bidireccional: procesa la secuencia completa para el scoring, en lugar de generación autorregresiva.
+- Soporte multilingüe limitado a inglés y chino.
+- Integración con el ecosistema AgentScope y con el stack QwenPaw para despliegue local.
+- Capacidad de imagen-texto a texto: el tag `image-text-to-text` sugiere entrada multimodal, aunque no se detalla su alcance.
+- No se documenta soporte explícito de tool calling generativo, agentes multi-paso ni modo thinking; su rol es precisamente el de componente de decisión dentro de esos flujos.
 
 ## Casos de uso
 
-- Revisión de seguridad de acciones de agentes: antes de ejecutar una herramienta que pueda borrar o sobrescribir datos, el modelo puntúa la probabilidad de que la operación sea destructiva y permite activar una confirmación humana. Es adecuado porque su salida es una probabilidad calibrada sobre una pregunta binaria concreta, no una respuesta conversacional.
-- Compactación de contexto en agentes de larga duración: en QwenPaw, el modelo decide cuándo el contexto debe resumirse y qué contenido conservar, manteniendo una ruta de recuperación del contenido original. Su formato de pregunta-respuesta encaja con esta decisión puntual.
-- Puerta de aprobación en pipelines de automatización: integrado como paso previo a la ejecución de comandos en un flujo de CI/CD o de operaciones, filtra acciones de riesgo y deriva el resto a revisión humana.
-- Moderación de invocaciones de herramientas en asistentes corporativos: clasifica llamadas a APIs internas según criterios definidos por el equipo (por ejemplo, acceso a datos sensibles) y devuelve una puntuación que el orquestador usa como umbral.
-- Enrutamiento de decisiones en sistemas multiagente: el modelo actúa como árbitro local que puntúa opciones discretas planteadas por otros agentes, sin necesidad de una llamada a un LLM generativo externo.
-- Evaluación offline de políticas de agentes: se usa para medir, sobre un conjunto de estados y preguntas, la distribución de respuestas del modelo y comparar políticas de aprobación antes de desplegarlas.
-- Despliegue local con requisitos de privacidad: al ejecutarse en local con pesos Apache 2.0 y variantes GGUF, permite mantener los estados y las preguntas dentro de la infraestructura propia.
+- Orquestación de agentes con selección de herramientas: Piccolo-27B puntúa el conjunto de herramientas disponibles y elige la más adecuada en cada paso, reduciendo errores de invocación frente a heurísticas basadas en reglas o embeddings.
+- Filtrado de contexto en pipelines RAG: dado un conjunto de fragmentos recuperados, el modelo selecciona los más relevantes antes de pasarlos al LLM generador, lo que reduce tokens de entrada y mejora la precisión.
+- Enrutamiento de peticiones en atención al cliente: clasifica la intención y decide qué flujo o herramienta interna debe atender cada consulta, con soporte para inglés y chino.
+- Control de calidad de invocaciones: actúa como revisor previo que valida si una llamada a herramienta es coherente con la tarea antes de ejecutarla, evitando acciones erróneas en producción.
+- Despliegue local en stacks QwenPaw: según la guía oficial, se integra localmente para revisión de herramientas y selección de contexto, útil cuando no se quiere depender de APIs externas.
+- Investigación en sistemas agénticos: sirve como componente de decisión reproducible y de pesos abiertos para experimentar con arquitecturas de agentes y comparar estrategias de selección.
+- Moderación de contexto en asistentes multimodales: el tag `image-text-to-text` permite plantear su uso en la selección de contexto cuando la entrada incluye imágenes, aunque este extremo no está documentado en detalle.
 
 ## Benchmarks y rendimiento
 
-Resultados publicados en la model card para los pesos completos del checkpoint:
+Resultados publicados en la model card para el checkpoint completo:
 
 | Benchmark | Resultado |
 |---|---:|
-| HarnessJevBench Hard ↑ | 82,03 % |
-| DataJevBench ↑ | 82,40 % |
+| HarnessJevBench Hard ↑ | 84,41 % |
+| DataJevBench ↑ | 82,60 % |
 | JevBench Public ↑ | 92,21 % |
-| Decision Index Public ↑ | 68,29 |
+| Decision Index Public ↑ | 68,59 |
 
-La model card indica que esta actualización no volvió a ejecutar la inferencia de benchmarks y que los artefactos cuantizados tienen regresiones numéricas separadas, no medidas como puntuaciones de benchmark. No se han publicado comparaciones con otros modelos en la información disponible.
+No se han publicado comparaciones con otros modelos en la información disponible, ni resultados de benchmarks estándar como MMLU, HumanEval o GSM8K, que además no encajan con la naturaleza de modelo de decisión.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible de forma explícita. Como referencia de orden de magnitud, 27,8 mil millones de parámetros en BF16 requieren aproximadamente 55,6 GB solo para los pesos, a los que hay que sumar memoria para activaciones y el layout de prompt.
-- Variantes cuantizadas: Q8_0 (repo separado) y Q4_K_M (repo separado) reducen el requisito de memoria, aunque la model card advierte de que sus errores numéricos requieren validación propia.
-- GPU recomendadas: no se especifican en la información disponible. Por tamaño, un despliegue en BF16 exige GPUs de 80 GB (A100, H100) o reparto multi-GPU con Accelerate; las variantes cuantizadas podrían caber en GPUs de consumo de gama alta, pero no hay datos publicados que lo confirmen.
-- Despliegue: el repositorio proporciona `piccolo_inference.py` con dependencias en `requirements.txt` (incluida Accelerate). La ruta GGUF requiere un runtime llama.cpp con el layout de entrada de Piccolo, manejo de prompt bidireccional y puntuación nativa de candidatos en `/v1/systemone`; el PR de integración es el QwenPaw Draft PR #8463. Las Chat Completions causales estándar y Ollama sin adaptar no son implementaciones equivalentes.
+- VRAM estimada para inferencia en precisión original (BF16/FP16): aproximadamente 55-56 GB solo para pesos, más overhead de activaciones y KV cache; se recomienda GPU de 80 GB.
+- GPU recomendadas: A100 80 GB, H100 80 GB o H200 para el checkpoint completo sin cuantizar.
+- GPU de consumo: no cabe en RTX 4090 (24 GB) ni en RTX 3090 en precisión completa; requeriría cuantización, que no está documentada por el autor.
+- Opciones de despliegue: la model card solo documenta la implementación de referencia incluida (`piccolo_inference.py`) con `transformers` y CUDA. No se confirma soporte de vLLM, llama.cpp, Ollama o TGI, y la atención bidireccional y el scoring de candidatos probablemente requieran adaptaciones.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos de comparación con modelos de decisión comparables en la información proporcionada. Como referencia estructural, el modelo base es Qwen/Qwen3.5-27B (27,8 mil millones de parámetros, licencia y contexto no detallados aquí), del que Piccolo-27B hereda la arquitectura pero no el comportamiento causal de chat. No se han encontrado alternativas de la misma categoría (modelos de decisión para revisión de herramientas) con datos públicos en la información disponible.
+No se dispone de datos de rendimiento de alternativas en la información proporcionada, por lo que la comparación se limita a características estructurales.
+
+| Modelo | Parámetros | Contexto | Licencia | Enfoque |
+|---|---|---|---|---|
+| Piccolo-27B | 27,8 B | no disponible | Apache 2.0 | Modelo de decisión (tool review y selección de contexto) |
+| Qwen/Qwen3.5-27B (base) | 27 B (aprox.) | no disponible | según modelo base | LLM generativo de propósito general |
+| Modelos de orquestación cerrados | no disponible | no disponible | propietaria | Enrutamiento y selección de herramientas vía API |
+
+No se identifican en la información disponible otros modelos abiertos de decisión comparables en tamaño y función.
 
 ## Limitaciones y advertencias
 
-- No debe ejecutarse como un modelo de chat causal ordinario: una carga correcta de los pesos no garantiza que la máscara de atención y las probabilidades de decisión sean correctas.
-- La reutilización de caché de prefijo y el chunked prefill requieren compatibilidad con el prompt bidireccional; la implementación de referencia no las usa.
-- El layout repetido solo es válido si el presupuesto de tokens de la petición en una pasada es de 3.000 como máximo y cada fila repetida cabe en el contexto.
-- Las probabilidades de candidatos describen la distribución del modelo y no son una garantía empírica de corrección; no se declaran umbrales de aprobación calibrados.
-- La revisión de herramientas debe mantener una confirmación humana de respaldo y la compactación de contexto debe conservar una ruta de recuperación del contenido original.
-- Los artefactos cuantizados presentan regresiones numéricas propias que requieren validación separada; sus puntuaciones de benchmark no están remedidas.
-- Los requisitos de recursos, el error de cuantización, la latencia y la calidad por tarea dependen del artefacto y del runtime, y necesitan validación independiente.
-- Idiomas soportados limitados a inglés y chino.
-- No se detallan sesgos conocidos ni tasas de alucinación en la información disponible; al no generar texto libre, el riesgo principal es una puntuación de decisión incorrecta, no una respuesta inventada.
-- La licencia Apache 2.0 permite uso comercial, pero la implementación de layout incluye código FlexDM con licencia MIT cuyo aviso debe conservarse según `THIRD_PARTY_LICENSES.md`.
+- La documentación técnica es escasa: no se detallan datos de entrenamiento, longitud de contexto ni proceso de alineación, lo que dificulta evaluar sesgos y robustez.
+- Es un modelo de decisión, no un LLM generativo: no debe esperarse generación de texto libre de calidad; su uso previsto es el scoring y la clasificación.
+- Riesgo de alucinación en las decisiones: al puntuar candidatos puede seleccionar herramientas o contextos incorrectos si la entrada se sale de la distribución de entrenamiento.
+- Idiomas limitados a inglés y chino; el rendimiento en castellano no está documentado y probablemente sea deficiente.
+- La atención bidireccional y el scoring de candidatos requieren la implementación de referencia; el soporte en motores de inferencia estándar (vLLM, TGI, llama.cpp) no está confirmado.
+- Aunque la licencia es Apache 2.0, conviene revisar los avisos de terceros (`THIRD_PARTY_LICENSES.md`) y las condiciones del modelo base Qwen3.5-27B.
+- El modelo tiene pocas descargas (561) y un solo like en el momento de la consulta, señal de adopción temprana y escasa validación externa.
+- El tag `image-text-to-text` no está respaldado por documentación sobre el tratamiento de imágenes; no asumir capacidades multimodales sin verificación.
 
 ## Enlaces
 
-- [Hugging Face: agentscope-ai/Piccolo-27B](https://huggingface.co/agentscope-ai/Piccolo-27B)
-- [Repositorio GitHub del proyecto Piccolo](https://github.com/agentscope-ai/Piccolo)
-- [Decision Playground](https://decisionplayground.agentscope.io/)
-- [Modelo base Qwen/Qwen3.5-27B](https://huggingface.co/Qwen/Qwen3.5-27B)
-- [Variante BF16 GGUF: Piccolo-27B-BF16](https://huggingface.co/agentscope-ai/Piccolo-27B-BF16)
-- [Variante Q8_0: Piccolo-27B-Q8_0](https://huggingface.co/agentscope-ai/Piccolo-27B-Q8_0)
-- [Variante Q4_K_M: Piccolo-27B-Q4_K_M](https://huggingface.co/agentscope-ai/Piccolo-27B-Q4_K_M)
-- [Guía de configuración local de QwenPaw](https://github.com/Xinji-Mai/QwenPaw/blob/beea37749185553a6897e546eae6b7954717da5b/docs/local-piccolo.md)
-- [QwenPaw Draft PR #8463](https://github.com/agentscope-ai/QwenPaw/pull/8463)
-- [Evaluación y snapshots del release](https://github.com/agentscope-ai/Piccolo/blob/0d1b3d4544766a55d137b979e8c87141bf182059/evaluation/README.md)
-- [ModelScope (próximamente)](https://modelscope.cn/models/agentscope-ai/Piccolo-27B)
+- Hugging Face: https://huggingface.co/agentscope-ai/Piccolo-27B
+- Repositorio del proyecto: https://github.com/agentscope-ai/Piccolo
+- Ejemplo de inferencia: https://github.com/agentscope-ai/Piccolo/tree/main/inference
+- Guía de QwenPaw: https://github.com/agentscope-ai/Piccolo/blob/main/docs/QWENPAW.md
+- Resultados de evaluación: https://github.com/agentscope-ai/Piccolo/tree/main/evaluation
+- ModelScope: https://www.modelscope.cn/models/AgentScope/Piccolo-27B
+- Colección ModelScope QwenPaw Flash: https://www.modelscope.cn/collections/AgentScope/QwenPaw-Flash
+- Decision Playground: https://decisionplayground.agentscope.io/
+- Modelo base: https://huggingface.co/Qwen/Qwen3.5-27B
+- Licencia: https://huggingface.co/agentscope-ai/Piccolo-27B/resolve/main/LICENSE
+- Avisos de terceros: https://huggingface.co/agentscope-ai/Piccolo-27B/resolve/main/THIRD_PARTY_LICENSES.md

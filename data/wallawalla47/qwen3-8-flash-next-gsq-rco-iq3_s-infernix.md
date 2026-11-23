@@ -2,101 +2,98 @@
 
 ## Resumen
 
-Qwen3.8-Flash-Next-GSQ-RCO-IQ3_S-Infernix es un artefacto de inferencia publicado por wallawalla47 que empaqueta el modelo Qwen3.8-Flash-Next, en su cuantizacion IQ3_S generada por ISTA-DASLab con el metodo GSQ y la asignacion de bits por tensor de RCO, para el motor propietario Infernix (C++/CUDA). El modelo subyacente es un transformer disperso de tipo MoE con 48 capas y 512 expertos enrutados por capa (top-10), lo que suma 24.576 expertos enrutados, y incorpora vision, decodificacion especulativa MTP y una tabla PLE de n-gramas de 320.001.536 filas.
+Qwen3.8-Flash-Next-GSQ-RCO-IQ3_S-Infernix es un artefacto de inferencia derivado de Qwen3.8-Flash-Next, un modelo de lenguaje multimodal de tipo Mixture-of-Experts (MoE) desarrollado originalmente por el equipo Qwen (Alibaba). Este paquete concreto lo publica el usuario wallawalla47 y consiste en una cuantización IQ3_S del GGUF de ISTA-DASLab, empaquetada en el formato propietario `.infernix` para el motor C++/CUDA Infernix, diseñado para ejecutar el modelo en una única GPU consumer RTX 5090 de 32 GB.
 
-La relevancia de esta ficha no esta en el modelo base sino en la receta de despliegue: Infernix consigue ejecutar un MoE multimodal de gran tamano en una unica RTX 5090 de 32 GB manteniendo los 46,9 GiB de expertos en RAM del host con cache en VRAM, computo parcial en CPU y lectura de la tabla n-gramas desde NVMe. Los pesos GGUF se conservan bit a bit y el motor opera con activaciones BF16 en aritmetica entera exacta, de modo que la suma ponderada de pesos y activaciones se redondea una sola vez y produce los mismos bits con independencia de donde se ejecute el experto (VRAM, PCIe o CPU) y del tamano de batch.
+La relevancia del artefacto no está en el modelo base sino en la técnica de despliegue: los 24.576 expertos enrutados (46,9 GiB) residen en RAM del host fijada (pinned), con una caché de VRAM para los expertos calientes, cómputo parcial en CPU de los fallos de caché y una tabla n-gram PLE leída desde NVMe en bloques aleatorios de 4 KiB. Esto permite servir un MoE de gran tamaño en hardware de gama alta de consumo, algo que con llama.cpp convencional requeriría más memoria o mayor degradación.
 
-El artefacto esta marcado explicitamente como trabajo de aficionado (hobby) generado en gran parte con IA, con licencia Qwen Community 1.0, y su utilidad practica depende de disponer del motor Infernix, de una GPU Blackwell y de almacenamiento NVMe rapido; no es un modelo que pueda cargarse con llama.cpp, vLLM u Ollama.
+El modelo es multimodal (image-text-to-text), conversacional y soporta decodificación especulativa mediante un drafter MTP propio o el drafter DFlash2 de Inco AI. La licencia es la Qwen Community License 1.0, con componentes Apache 2.0 del GGUF original de ISTA-DASLab.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer MoE disperso con vision, MTP (multi-token prediction) y tabla PLE de n-gramas; 48 capas, 512 expertos enrutados por capa (top-10) |
-| Parametros totales | no disponible (el repo ocupa 85,9 GB e incluye pesos, tabla n-gramas y metadatos) |
-| Parametros activos | no disponible (top-10 de 512 expertos enrutados por capa) |
+| Arquitectura | Transformer MoE con 48 capas y 512 expertos enrutados por capa (top-10); incluye MTP drafter y vision |
+| Parametros totales | no disponible (el repo ocupa 85,9 GB en cuantización IQ3_S) |
+| Parametros activos | 10 de 512 expertos enrutados por capa (top-10) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | IQ3_S (GSQ con asignacion de bits por tensor de RCO); tabla PLE en IQ4_NL (4,5 bits por valor); variantes de tabla en FP8 y BF16 |
+| Tipos de cuantizacion | IQ3_S (GSQ con asignación de bits por tensor de RCO); tabla n-gram PLE en IQ4_NL en este repo, con alternativas FP8, BF16, BF16 P12 y NVFP4 |
 | Idiomas soportados | no disponible |
-| Licencia | Qwen Community License 1.0 (etiquetada como `other`); el GGUF base de ISTA-DASLab se distribuye ademas bajo Apache 2.0 |
-| Formato de pesos | `.infernix` (formato propio del motor Infernix, dividido en dos partes); `.ngram` para la tabla PLE; `config.json` solo como metadato para el conteo de descargas |
+| Licencia | Qwen Community License 1.0 (componentes Apache 2.0 del GGUF de ISTA-DASLab) |
+| Formato de pesos | `.infernix` (dos partes: 32.000.000.000 y 24.755.219.968 bytes) más volumen `.ngram` de 29.127.258.112 bytes |
 
 ## Arquitectura y entrenamiento
 
-El modelo subyacente es un transformer MoE con 48 capas y 512 expertos enrutados por capa, activando los 10 primeros por token (24.576 expertos enrutados en total, 46,9 GiB en IQ3_S). Incorpora una cabeza de vision que lo situa en la pipeline `image-text-to-text`, un cabecero MTP para decodificacion especulativa nativa y una tabla PLE de n-gramas de 320.001.536 filas que no forma parte de los ficheros del modelo, sino que se distribuye como volumen independiente leido en bloques aleatorios de 4 KiB. No se dispone de informacion sobre volumen de tokens de entrenamiento, composicion del dataset ni etapas de RLHF o DPO; la model card del artefacto no documenta el entrenamiento del modelo original.
+El modelo base es un transformer MoE con 48 capas y 512 expertos enrutados por capa, de los cuales se activan los 10 mejores por token (top-10). Incorpora un cabezal MTP (Multi-Token Prediction) que actúa como drafter para decodificación especulativa y capacidades de visión, lo que lo sitúa en la categoría image-text-to-text. La cuantización aplicada es IQ3_S mediante GSQ con asignación de bits por tensor de RCO, partiendo del GGUF de ISTA-DASLab.
 
-La innovacion tecnica relevante esta en el motor y en la cuantizacion. GSQ con la asignacion de bits por tensor de RCO produce el IQ3_S, mientras que Infernix conserva cada tensor GGUF bit a bit y calcula con activaciones BF16 en aritmetica entera exacta: cada salida es la suma exacta de pesos GGUF por activaciones, redondeada una sola vez, garantizando identidad de bits entre expertos ejecutados en VRAM, PCIe o CPU y en cualquier ancho de batch. La comparacion implicita con llama.cpp es que este ultimo redondea las activaciones a 8 bits, por lo que sus logits difieren ligeramente. El reparto de recursos coloca los expertos en RAM fijada del host con una cache de los calientes en VRAM, calculo parcial de los fallos de cada capa en CPU y la tabla n-gramas en NVMe o RAM.
+La innovación técnica del artefacto es el motor Infernix: mantiene todos los tensores GGUF bit a bit y los computa con activaciones BF16 en aritmética entera exacta, de modo que cada salida es la suma exacta de pesos GGUF por activaciones, redondeada una sola vez. Esto garantiza que el resultado tenga los mismos bits independientemente de si el experto se ejecuta en VRAM, PCIe o CPU, y a cualquier tamaño de batch. Como contraste, la model card señala que llama.cpp redondea las activaciones a 8 bits, lo que produce logits ligeramente distintos. No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni las etapas de RLHF/DPO del modelo base.
 
 ## Capacidades
 
-- Generacion de texto conversacional multi-turno, con pipeline declarada `image-text-to-text`.
-- Procesamiento de imagen y texto combinados (multimodal), segun la pipeline y la mencion explicita de vision en la model card.
-- Razonamiento de tipo Mixture-of-Experts con enrutamiento top-10 sobre 512 expertos por capa.
-- Decodificacion especulativa mediante el cabecero MTP propio del modelo.
-- Decodificacion especulativa alternativa con el drafter DFlash2 de Inco AI, empaquetado para Infernix, que acelera la decodificacion entre un 8 y un 11 % frente al MTP nativo, y hasta un 26 % en codigo muestreado.
-- Soporte de tool calling y function calling: no disponible en la informacion proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
-- Capacidades multilingues: no disponible; la model card no declara idiomas.
-- Modo thinking explicito: no disponible en la informacion proporcionada.
+- Generación de texto conversacional multi-turno.
+- Procesamiento de imagen y texto (pipeline image-text-to-text).
+- Razonamiento multi-paso mediante decodificación especulativa con drafter MTP o DFlash2.
+- Decodificación especulativa: el drafter DFlash2 (776 MB) decodifica entre un 8 % y un 11 % más rápido que el MTP propio con `--draft-tokens auto`, y hasta un 26 % en código con muestreo.
+- Ejecución de MoE de gran tamaño en una sola RTX 5090 mediante offload de expertos a RAM del host y cómputo parcial en CPU.
+- Gestión de la tabla n-gram PLE de 320.001.536 filas como volumen externo leído desde NVMe.
+- Soporte de cuantizaciones alternativas de la tabla n-gram (FP8, BF16, BF16 P12, NVFP4, IQ4_NL) intercambiables entre modelos Qwen3.8-Flash-Next.
+- No se documenta soporte explícito de tool calling ni de function calling en la información disponible.
 
 ## Casos de uso
 
-- Despliegue de un MoE multimodal grande en una unica GPU de consumo: Infernix permite ejecutar el modelo en una RTX 5090 de 32 GB manteniendo los 46,9 GiB de expertos en RAM del host y una cache en VRAM, lo que hace viable teoricamente un modelo de esta escala en una estacion de trabajo single-GPU.
-- Experimentacion con cuantizacion IQ3_S y asignacion de bits por tensor: util para investigadores que quieran medir el efecto de GSQ-RCO sobre perplejidad y calidad frente a otras recetas, con la ventaja de que Infernix preserva los tensores GGUF bit a bit.
-- Servicio conversacional con vision en local: la pipeline `image-text-to-text` y el modo conversacional permiten montar un asistente que recibe imagenes y texto sin depender de APIs en la nube, siempre que se acepte el rendimiento de un motor con offload a host.
-- Aceleracion de inferencia mediante decodificacion especulativa: el drafter DFlash2 (776 MB) permite comparar en produccion el rendimiento del MTP nativo frente a un drafter externo, con ganancias medidas del 8-11 % y del 26 % en codigo muestreado.
-- Investigacion sobre tablas PLE de n-gramas: el volumen de 320.001.536 filas admite tres formatos (FP8 recomendado, BF16 sin cuantizar e IQ4_NL de 4,5 bits por valor) y cualquier volumen sirve a cualquier modelo Flash-Next, lo que facilita estudios sobre el impacto de la precision de la tabla en la perplejidad.
-- Reproducibilidad de inferencia en hardware heterogeneo: la aritmetica entera exacta con redondeo unico permite obtener los mismos bits con expertos repartidos entre VRAM, PCIe y CPU, util para auditar resultados entre maquinas distintas.
-- Evaluacion de motores alternativos: sirve como banco de pruebas para comparar Infernix con llama.cpp en terminos de logits, dado que este ultimo redondea activaciones a 8 bits.
+- Despliegue de un MoE multimodal en una estación de trabajo con una RTX 5090: el reparto entre VRAM (expertos calientes), RAM fijada (24.576 expertos, 46,9 GiB) y CPU permite servir el modelo sin clúster multi-GPU, adecuado para laboratorios con hardware de consumo de gama alta.
+- Investigación en decodificación especulativa: la integración con el drafter DFlash2 y el MTP propio permite medir ganancias de throughput (8-11 % general, 26 % en código muestreado) sobre un modelo real de 48 capas.
+- Evaluación de cuantizaciones GSQ/RCO: al conservar los tensores GGUF bit a bit y computar en aritmética entera exacta, sirve para comparar fidelidad numérica frente a llama.cpp en experimentos de reproducibilidad.
+- Procesamiento de documentos con imagen y texto: el pipeline image-text-to-text permite tareas de descripción, extracción y diálogo sobre imágenes en entornos con una sola GPU.
+- Benchmarking de motores de inferencia: la paridad de bits entre VRAM, PCIe y CPU facilita comparaciones controladas de latencia y throughput entre backends.
+- Pruebas de almacenamiento NVMe para tablas de embeddings: el volumen n-gram de 29 GB leído en bloques aleatorios de 4 KiB es un caso de estrés realista para evaluar IOPS y latencia de disco en pipelines de inferencia.
+- Experimentación con licencia Qwen Community 1.0: útil para prototipos y trabajos de investigación que requieran un modelo multimodal con licencia comunitaria.
 
 ## Benchmarks y rendimiento
 
-La model card reporta unicamente una medida de perplejidad comparando la tabla n-gramas empleada con la tabla BF16:
-
-| Metrica | Tabla IQ4_NL (usada en este artefacto) | Tabla BF16 |
-|---|---:|---:|
-| Perplejidad | 3,5223 | 3,5198 |
-
-No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K, etc.) en la informacion disponible. La tabla FP8 recomendada no ha sido medida sobre este modelo.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card únicamente reporta métricas relativas de decodificación especulativa: el drafter DFlash2 es un 8-11 % más rápido que el MTP propio con `--draft-tokens auto`, y hasta un 26 % en código con muestreo.
 
 ## Requisitos de hardware
 
-- VRAM: 32 GB en una RTX 5090 para el modelo, con los 46,9 GiB de expertos enrutados en RAM fijada del host y cache de expertos calientes en VRAM; el artefacto ocupa 85,9 GB en disco entre las dos partes del modelo y la tabla n-gramas.
-- GPU recomendada: RTX 5090 (Blackwell, 32 GB), unica configuracion mencionada explicitamente. Otras GPU Blackwell podrian servir, pero no estan documentadas.
-- GPU de consumo: si, la RTX 5090 es el objetivo declarado del artefacto.
-- RAM del sistema: la tabla IQ4_NL ocupa 27,1 GiB y solo cabe en RAM en una maquina de 96 GB junto al resto; en caso contrario debe residir en NVMe.
-- Almacenamiento: NVMe recomendado para el volumen n-gramas, leido en bloques aleatorios de 4 KiB mediante `--ngram-volume`.
-- Opciones de despliegue: exclusivamente el motor Infernix (C++/CUDA), con `infernix-serve`; no compatible con llama.cpp, vLLM, TGI ni Ollama. Se requiere una build cuyo `--help` liste `--draft-model` para usar el drafter DFlash2; las builds desde 2026-10-31 localizan el drafter en la carpeta del modelo sin `--spec`.
-- Latencia y throughput: no disponibles como cifras absolutas; solo se documentan ganancias relativas del drafter DFlash2 (8-11 % mas rapido que el MTP nativo; 26 % en codigo muestreado).
+- VRAM: 32 GB en una RTX 5090; los expertos enrutados (46,9 GiB) residen en RAM del host fijada y una caché de VRAM mantiene los calientes.
+- RAM del sistema: la model card menciona una máquina de 96 GB capaz de mantener en RAM la tabla n-gram IQ4_NL de 29 GB; sin ella, el volumen n-gram debe residir en NVMe.
+- Almacenamiento: NVMe recomendado para el volumen `.ngram` (lectura en bloques aleatorios de 4 KiB); el repo completo ocupa 85,9 GB.
+- GPU recomendadas: RTX 5090 (32 GB, arquitectura Blackwell) como objetivo declarado; no se documentan otras GPU compatibles.
+- Cabe en GPU consumer: sí, en RTX 5090 con el esquema de offload descrito; no se garantiza en GPU con menos VRAM.
+- Opciones de despliegue: motor Infernix (`infernix-serve`), con soporte de `--spec dflash2`, `--draft-model`, `--draft-tokens auto` y `--ngram-volume`. No se documenta compatibilidad con vLLM, llama.cpp, Ollama ni TGI.
+- Latencia y throughput: no disponibles; solo se reportan las ganancias relativas del drafter DFlash2.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Formato / motor | Licencia | Notas |
+| Modelo | Parametros | Contexto | Formato | Licencia | Hardware objetivo |
 |---|---|---|---|---|---|
-| Qwen3.8-Flash-Next-GSQ-RCO-IQ3_S-Infernix (este) | MoE 48 capas, 512 expertos/capa top-10; totales no disponibles | no disponible | `.infernix`, motor Infernix | Qwen Community 1.0 | Vision, MTP, tabla PLE externa; pensado para una RTX 5090 |
-| ISTA-DASLab/Qwen3.8-Flash-Next-GSQ-RCO-GGUF (base) | mismos pesos MoE | no disponible | GGUF | Apache 2.0 (segun la model card) | Misma cuantizacion IQ3_S; ejecutable con motores GGUF convencionales |
-| Wallawalla47/Qwen3.8-Flash-Next-NVIDIA-NVFP4-Infernix | mismos pesos MoE | no disponible | `.infernix` + tabla n-gramas FP8 | Qwen Community 1.0 | Variante NVFP4 para Infernix; su tabla FP8 es la recomendada |
-| Wallawalla47/Qwen3.8-Flash-Next-FP8-Infernix | mismos pesos MoE | no disponible | `.infernix` + tabla BF16 | Qwen Community 1.0 | Variante FP8; aloja la tabla BF16 sin cuantizar |
+| Qwen3.8-Flash-Next-GSQ-RCO-IQ3_S-Infernix | MoE, 48 capas, 512 expertos (top-10) | no disponible | `.infernix` + `.ngram` | Qwen Community 1.0 | 1x RTX 5090 (32 GB) + RAM host |
+| Qwen3.8-Flash-Next-GSQ-RCO-GGUF (ISTA-DASLab) | MoE, 48 capas, 512 expertos (top-10) | no disponible | GGUF (IQ3_S) | Apache 2.0 (según la card) | no disponible |
+| Qwen3.8-Flash-Next-NVIDIA-NVFP4-Infernix | MoE, 48 capas, 512 expertos (top-10) | no disponible | `.infernix` + `.ngram` FP8 | Qwen Community 1.0 | 1x RTX 5090 (32 GB) |
+| Qwen3.8-Flash-Next-FP8-Infernix | MoE, 48 capas, 512 expertos (top-10) | no disponible | `.infernix` + `.ngram` BF16/P12 | Qwen Community 1.0 | 1x RTX 5090 (32 GB) |
+
+No se dispone de datos de rendimiento comparativo entre estas variantes en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Artefacto declarado como trabajo de aficionado y generado en gran parte con IA; el propio autor advierte que puede ser incompleto o inexacto.
-- No es un modelo autonomo: requiere el motor Infernix, no lee `config.json` y no funciona con llama.cpp, vLLM, TGI ni Ollama.
-- La tabla PLE de n-gramas no esta incluida en los ficheros del modelo; hay que descargar un volumen aparte (IQ4_NL en este repo, FP8 recomendado o BF16) y pasarlo con `--ngram-volume`.
-- Dependencia de hardware Blackwell y de NVMe: el rendimiento se degrada si la tabla no cabe en RAM (27,1 GiB para IQ4_NL, 52,4 GB para FP8, 109,2 GB para BF16).
-- Diferencias de logits frente a llama.cpp por el redondeo de activaciones a 8 bits de este ultimo; los resultados no son intercambiables bit a bit entre motores.
-- Licencia Qwen Community 1.0 con posibles restricciones para uso comercial; el GGUF base añade Apache 2.0, pero la licencia del artefacto derivado debe verificarse antes de produccion.
-- Idiomas soportados no declarados; no hay garantia documentada de cobertura multilingue.
-- No hay datos publicados sobre sesgos, tasas de alucinacion, tool calling ni comportamiento agentico.
-- Perplejidad medida solo con la tabla IQ4_NL en RAM; la tabla FP8 recomendada no ha sido evaluada sobre este modelo.
+- La model card declara explícitamente que el artefacto, la receta de conversión, el motor y buena parte de la documentación fueron generados con IA (mayoritariamente Claude Opus 5.5) y que es trabajo de hobby, probablemente incompleto o no del todo exacto.
+- El formato `.infernix` es propietario del motor Infernix; no es cargable por llama.cpp, vLLM, Ollama ni TGI, lo que limita la portabilidad.
+- Requiere mantener las dos partes del modelo en un mismo directorio y pasar la parte 1 a Infernix, como con un GGUF dividido.
+- El volumen n-gram PLE no está incluido en los ficheros del modelo: debe descargarse por separado y colocarse en NVMe o en RAM si cabe; sin él, el modelo no funciona correctamente.
+- La decodificación con DFlash2 requiere una build de Infernix cuyo `--help` liste `--draft-model`; builds desde 2026-10-31 lo localizan automáticamente sin `--spec`.
+- La licencia Qwen Community 1.0 impone restricciones que deben revisarse antes de uso comercial; los componentes del GGUF original están bajo Apache 2.0.
+- No se documentan idiomas soportados, longitud de contexto ni sesgos conocidos del modelo base.
+- Riesgo de alucinación inherente a los modelos de lenguaje; no se han publicado evaluaciones de fidelidad en la información disponible.
+- El rendimiento depende críticamente del ancho de banda de PCIe, la RAM del host y la velocidad del NVMe; configuraciones por debajo de las recomendadas degradarán la latencia de forma significativa.
+- El repositorio tiene 1.105 descargas y 1 like, lo que indica una adopción muy limitada y escasa validación comunitaria.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/wallawalla47/Qwen3.8-Flash-Next-GSQ-RCO-IQ3_S-Infernix
 - Modelo base GGUF: https://huggingface.co/ISTA-DASLab/Qwen3.8-Flash-Next-GSQ-RCO-GGUF
+- Drafter DFlash2 para Infernix: https://huggingface.co/Wallawalla47/Qwen3.8-Flash-Next-DFlash2-Infernix
+- Drafter DFlash2 original (Inco AI): https://huggingface.co/incoai/Qwen3.8-Flash-Next-DFlash2
 - Motor Infernix: https://github.com/Wallawalla47/Infernix
-- Drafter DFlash2 empaquetado: https://huggingface.co/Wallawalla47/Qwen3.8-Flash-Next-DFlash2-Infernix
-- Drafter DFlash2 original: https://huggingface.co/incoai/Qwen3.8-Flash-Next-DFlash2
-- Variante NVFP4 (tabla n-gramas FP8): https://huggingface.co/Wallawalla47/Qwen3.8-Flash-Next-NVIDIA-NVFP4-Infernix
-- Variante NVFP4 Dense8 (copia de la tabla FP8): https://huggingface.co/Wallawalla47/Qwen3.8-Flash-Next-NVIDIA-NVFP4-Dense8-Infernix
-- Variante FP8 (tabla n-gramas BF16): https://huggingface.co/Wallawalla47/Qwen3.8-Flash-Next-FP8-Infernix
+- Tabla n-gram FP8 recomendada: https://huggingface.co/Wallawalla47/Qwen3.8-Flash-Next-NVIDIA-NVFP4-Infernix/blob/main/Qwen3.8-Flash-Next-NVIDIA-NVFP4-Infernix.ngram
+- Tabla n-gram BF16: https://huggingface.co/Wallawalla47/Qwen3.8-Flash-Next-FP8-Infernix/blob/main/Qwen3.8-Flash-Next-BF16.ngram
+- Tabla n-gram BF16 P12: https://huggingface.co/Wallawalla47/Qwen3.8-Flash-Next-FP8-Infernix/blob/main/Qwen3.8-Flash-Next-BF16-P12.ngram
+- Tabla n-gram NVFP4: https://huggingface.co/Wallawalla47/Qwen3.8-Flash-Next-NVIDIA-FP4-Local-Infernix/blob/main/Qwen3.8-Flash-Next-NVIDIA-FP4-Local-Infernix.ngram

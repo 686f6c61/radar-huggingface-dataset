@@ -2,75 +2,85 @@
 
 ## Resumen
 
-Hippotes/Krea-2-Experiments es un repositorio experimental creado por el usuario Hippotes que parte de los modelos Krea-2-Turbo y Krea-2-Raw de Krea, un sistema de generación de imágenes por difusión. El repositorio contiene dos aportaciones principales: una versión pre-release del modelo Turbo que, según el autor, produce salidas idénticas a la versión oficial pero con un elemento oculto a descubrir, y un parche denominado "Refiner Neutering" que cancela la acción de los bloques `txtfusion.refiner_blocks` del modelo, con un efecto similar a un bypass del proyector o al nodo Conditioning Multiply, pero sin la saturación de color ni las texturas sobrecocidas que estos producen.
+Krea-2-Experiments es un repositorio de experimentos comunitarios sobre la familia de modelos de generacion de imagenes Krea 2, publicado por el usuario Hippotes en Hugging Face. No se trata de un modelo entrenado desde cero, sino de una coleccion de parches y variantes derivadas de los pesos oficiales de Krea 2 (concretamente de las variantes Krea-2-Raw y Krea-2-Turbo), empaquetadas en formato safetensors y consumibles mediante diffusers y ComfyUI. El repositorio ocupa 74,5 GB y acumula 437 descargas y 8 likes en el momento de la consulta.
 
-El proyecto está orientado a la comunidad de ComfyUI y diffusers, y se distribuye bajo la licencia comunitaria krea-2-community-license. El repositorio ocupa 73.2 GB, lo que sugiere pesos de gran tamaño, aunque no se especifican detalles arquitectónicos ni de parámetros. Es relevante para quienes trabajan con Krea-2 y buscan alternativas de control fino sobre el estilo de generación, así como para quienes quieran explorar variantes no oficiales del modelo.
+El interes principal del repositorio reside en dos artefactos documentados en la model card. El primero es una version pre-release del modelo Turbo que, segun el autor, produce exactamente las mismas salidas que la version oficialmente publicada, pero con "algo oculto dentro por descubrir", lo que sugiere la inclusion de un mensaje o marca esteganografica embebida en los pesos o en el comportamiento generativo. El segundo es un parche denominado "Refiner Neutering", que anula la accion de los bloques `txtfusion.refiner_blocks` del modelo base.
+
+La relevancia de este repositorio es acotada pero concreta: sirve como material de experimentacion para quienes trabajan con la arquitectura Krea 2 y quieren modificar el comportamiento del refinador de texto sin recurrir a tecnicas alternativas como las LoRA de bypass del proyector `txtfusion.projector` o el nodo Conditioning Multiply de ComfyUI, que segun el autor introducen saturacion de color o texturas "sobrecocidas". No es un modelo apto para produccion directa, sino un banco de pruebas.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (modelo de difusion derivado de Krea-2) |
+| Arquitectura | no disponible (modelo de difusion derivado de Krea 2; pesos en safetensors para diffusers) |
 | Parametros totales | no disponible |
-| Parametros activos | no aplica (no es un modelo MoE) |
-| Longitud de contexto | no disponible (no aplica, es generacion de imagenes) |
-| Tipos de cuantizacion | no disponible (el tag indica "quantized" pero no se detalla el formato) |
+| Parametros activos | no aplica (no es MoE) |
+| Longitud de contexto | no aplica (modelo de generacion de imagenes) |
+| Tipos de cuantizacion | no disponible (el repo incluye safetensors; el modelo base figura como `base_model:quantized`) |
 | Idiomas soportados | no disponible |
-| Licencia | krea-2-community-license (ver enlace en la seccion de enlaces) |
-| Formato de pesos | safetensors, diffusers |
+| Licencia | krea-2-community-license (license: other) |
+| Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion tecnica detallada sobre la arquitectura interna del modelo. Al tratarse de un experimento sobre Krea-2, se asume que hereda la arquitectura del modelo base, probablemente un transformer de difusion, pero este dato no se confirma en la documentacion proporcionada. Tampoco hay datos sobre el entrenamiento, el numero de tokens o el dataset utilizado.
+No se dispone de informacion detallada sobre la arquitectura interna de Krea 2 en la documentacion proporcionada. Por los nombres de los componentes citados en la model card (`txtfusion.refiner_blocks`, `txtfusion.projector`) se deduce que el modelo incorpora un modulo de fusion de texto con bloques refinadores y un proyector, tipico de pipelines de difusion texto-a-imagen con etapas de refinamiento de la condicion textual. El repositorio no documenta el numero de parametros, la composicion del dataset de entrenamiento ni si se emplearon tecnicas de RLHF o DPO, algo esperable en un modelo de generacion de imagenes.
 
-La unica innovacion documentada es el parche "Refiner Neutering", que actua sobre los bloques `txtfusion.refiner_blocks` del modelo. Segun el autor, este parche se carga como un LoRA y debe usarse siempre con fuerza 1. Su efecto es cancelar la influencia de dichos bloques, lo que produce resultados visualmente diferentes a los del modelo base, evitando la saturacion de color y las texturas excesivamente procesadas.
+En cuanto al entrenamiento propio de este repositorio, no existe: los artefactos son parches y variantes derivadas de los pesos oficiales. El autor describe dos intervenciones. La primera es una version pre-release del modelo Turbo con comportamiento identico al oficial pero con contenido oculto, sin especificar el mecanismo de insercion ni el tipo de contenido. La segunda es el parche "Refiner Neutering", que cancela la accion de los bloques `txtfusion.refiner_blocks`; debe cargarse como LoRA y aplicarse siempre a fuerza 1. El autor indica que el efecto es similar al de una LoRA de bypass del proyector `txtfusion.projector` o al nodo Conditioning Multiply, pero sin la saturacion de color ni las texturas excesivamente procesadas que producen esas alternativas.
 
 ## Capacidades
 
-- Generacion de imagenes a partir de texto, heredada de los modelos base Krea-2-Turbo y Krea-2-Raw.
-- Compatibilidad con ComfyUI mediante el uso de safetensors y la libreria diffusers.
-- Parche "Refiner Neutering" que permite modificar el estilo de salida, reduciendo la saturacion de color y las texturas sobrecocidas.
-- Version pre-release de Turbo que, segun el autor, reproduce exactamente las salidas de la version oficial, con un elemento adicional oculto que el usuario debe descubrir.
-- Soporte para cargar el modelo como LoRA en flujos de ComfyUI, lo que facilita la experimentacion sin reemplazar el modelo base.
+- Generacion de imagenes texto-a-imagen heredada del modelo base Krea 2, en sus variantes Raw y Turbo.
+- Aplicacion de parches de comportamiento sobre el modelo base: anulacion del refinador de texto mediante el parche "Refiner Neutering".
+- Carga como LoRA en pipelines diffusers y en flujos de ComfyUI.
+- Compatibilidad con el ecosistema diffusers (libreria declarada en la model card).
+- Descubrimiento de contenido oculto en la variante pre-release del modelo Turbo, segun la descripcion del autor.
+- No se documentan capacidades de tool calling, agentes, razonamiento multi-paso, vision ni audio, por tratarse de un modelo de generacion de imagenes.
 
 ## Casos de uso
 
-- Experimentacion artistica con estilos de generacion: el parche Refiner Neutering permite obtener resultados con una paleta de color mas natural y texturas menos procesadas, util para ilustradores que buscan un acabado mas organico.
-- Comparacion de variantes de modelo: la version pre-release de Turbo, al producir salidas identicas a la oficial, sirve para auditar diferencias sutiles o para investigar el "elemento oculto" que menciona el autor.
-- Integracion en pipelines de ComfyUI: al cargarse como LoRA, se puede combinar con otros nodos y modelos para ajustar el comportamiento del generador sin modificar el checkpoint base.
-- Pruebas de control de calidad en entornos de produccion: dado que el parche modifica la salida sin cambiar la arquitectura, puede usarse para evaluar si la eliminacion de los bloques refiner mejora la coherencia visual en dominios especificos.
-- Investigacion sobre mecanismos de refiner en modelos de difusion: el parche ofrece una forma directa de estudiar el impacto de los bloques `txtfusion.refiner_blocks` en el resultado final.
-- Creacion de contenido para videojuegos o concept art: la reduccion de saturacion y texturas puede facilitar la generacion de assets mas limpios y faciles de postprocesar.
+- Investigacion sobre el refinador de texto: el parche "Refiner Neutering" permite aislar el efecto de los bloques `txtfusion.refiner_blocks` en la generacion final, comparando salidas con y sin refinador para entender su contribucion al resultado.
+- Analisis forense de modelos: la variante pre-release de Turbo, que produce salidas identicas al oficial pero con contenido oculto, sirve para estudiar tecnicas de marcado o esteganografia en pesos de modelos de difusion.
+- Ajuste de estilo sin saturacion: el autor indica que el parche produce un efecto similar a las LoRA de bypass del proyector o al nodo Conditioning Multiply pero sin saturacion de color ni texturas sobrecocidas, lo que lo hace util para pipelines que buscan control de condicionamiento con resultados mas naturales.
+- Prototipado en ComfyUI: al estar etiquetado para ComfyUI, el repositorio permite experimentar con los parches dentro de flujos de trabajo nodales ya existentes sin reentrenar nada.
+- Comparativa de tecnicas de condicionamiento: permite contrastar tres enfoques (parche de refinador, LoRA de bypass del proyector, Conditioning Multiply) sobre el mismo modelo base para evaluar diferencias cualitativas.
+- Desarrollo de herramientas de auditoria de modelos: el caso del contenido oculto en la variante Turbo es un ejemplo practico para construir detectores de modificaciones no documentadas en pesos publicados.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. No hay datos objetivos sobre calidad de imagen, FID, CLIP score ni comparaciones cuantitativas con otros modelos.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- El tamano del repositorio es de 73.2 GB, lo que sugiere que los pesos completos del modelo requieren una cantidad considerable de almacenamiento y VRAM.
-- No se especifican requisitos minimos de VRAM ni GPUs recomendadas en la documentacion proporcionada.
-- Dado el tamano, es probable que se necesiten GPUs con al menos 24 GB de VRAM para inferencia con precision completa, y posiblemente mas para cargar el modelo completo en memoria.
-- Para uso con ComfyUI, se recomienda verificar los requisitos del modelo base Krea-2, aunque no se dispone de esa informacion en este repositorio.
-- No se mencionan opciones de despliegue como vLLM, TGI u Ollama, ya que no es un modelo de lenguaje.
+- VRAM estimada para inferencia: no disponible. El repositorio ocupa 74,5 GB, lo que sugiere pesos de gran tamano; la VRAM necesaria dependera de la variante y del formato de carga efectivo, no documentados.
+- GPU recomendadas: no disponible.
+- Compatibilidad con GPU de consumo: no disponible; el tamano del repositorio hace improbable que la totalidad de los pesos quepa en GPU de consumo sin cuantizacion adicional, pero no hay datos confirmados.
+- Opciones de despliegue: diffusers (libreria declarada) y ComfyUI (etiqueta del repositorio). No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI, que ademas no aplican a modelos de difusion.
+- Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
 
-No se dispone de informacion suficiente para establecer una comparativa con otros modelos. El repositorio es un experimento derivado de Krea-2, y no se conocen alternativas directas con caracteristicas equivalentes (mismo tamano, misma licencia y mismo enfoque experimental). Se recomienda consultar la documentacion de Krea-2 para obtener una referencia de modelos comparables.
+| Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| Hippotes/Krea-2-Experiments | no disponible | no aplica | no disponible | krea-2-community-license | Hugging Face (437 descargas) |
+| krea/Krea-2-Raw | no disponible | no aplica | no disponible | krea-2-community-license | Hugging Face (modelo base) |
+| krea/Krea-2-Turbo | no disponible | no aplica | no disponible | krea-2-community-license | Hugging Face (modelo base) |
+
+No se dispone de datos de rendimiento ni de especificaciones detalladas de los modelos base en la informacion proporcionada, por lo que la comparativa se limita a la relacion de dependencia entre este repositorio y sus modelos base. No se identifican en la informacion otros modelos de la misma categoria con datos verificables para comparar.
 
 ## Limitaciones y advertencias
 
-- Modelo experimental: no es una version oficial de Krea y puede contener comportamientos imprevistos o inestables.
-- Licencia restrictiva: la krea-2-community-license puede limitar el uso comercial o la redistribucion. Es imprescindible revisar el PDF de la licencia antes de cualquier uso.
-- Falta de documentacion tecnica: no se especifican parametros, arquitectura ni datos de entrenamiento, lo que dificulta la evaluacion rigurosa.
-- Riesgo de sobreajuste o artefactos: al tratarse de un experimento, la calidad de salida puede variar significativamente respecto al modelo base.
-- El parche "Refiner Neutering" debe usarse con fuerza 1 segun el autor; usarlo con otros valores puede producir resultados no deseados.
-- No hay garantias de soporte ni mantenimiento por parte del autor.
-- El modelo pre-release de Turbo contiene un "elemento oculto" no documentado; su presencia podria afectar a la reproducibilidad de los resultados.
+- El repositorio es experimental y no esta pensado para uso en produccion; el propio autor lo describe como "experimentos con Krea 2".
+- La variante pre-release de Turbo contiene contenido oculto no especificado; no debe desplegarse en entornos donde se requiera trazabilidad completa del comportamiento del modelo.
+- El parche "Refiner Neutering" debe aplicarse siempre a fuerza 1 segun el autor; otros valores no estan documentados y podrian producir resultados impredecibles.
+- Las observaciones sobre el efecto del parche se basan en pruebas limitadas del autor ("from my limited testing"), no en una evaluacion sistematica.
+- La licencia krea-2-community-license es de tipo "other" y remite a un PDF; deben revisarse sus terminos antes de cualquier uso comercial, ya que las restricciones concretas no se detallan en la informacion disponible.
+- No se documentan sesgos conocidos ni tasas de alucinacion; en modelos de generacion de imagenes el riesgo relevante es la generacion de contenido inapropiado o no fiel al prompt, no cuantificado aqui.
+- No hay informacion sobre idiomas soportados ni sobre limitaciones de contexto (no aplica en el sentido de LLM, pero no se documenta el manejo de prompts multilingues).
+- El elevado tamano del repositorio (74,5 GB) implica requisitos de almacenamiento y transferencia considerables.
 
 ## Enlaces
 
 - Repositorio en Hugging Face: https://huggingface.co/Hippotes/Krea-2-Experiments
-- Licencia krea-2-community-license: https://huggingface.co/krea/Krea-2-Turbo/blob/main/LICENSE.pdf
-- Modelo base Krea-2-Turbo: https://huggingface.co/krea/Krea-2-Turbo
 - Modelo base Krea-2-Raw: https://huggingface.co/krea/Krea-2-Raw
+- Modelo base Krea-2-Turbo: https://huggingface.co/krea/Krea-2-Turbo
+- Licencia krea-2-community-license (PDF): https://huggingface.co/krea/Krea-2-Turbo/blob/main/LICENSE.pdf

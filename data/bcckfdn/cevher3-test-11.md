@@ -2,86 +2,88 @@
 
 ## Resumen
 
-cevher3 (publicado como `bcckfdn/cevher3-test-11`) es un modelo de lenguaje de 1.256 millones de parámetros desarrollado por el usuario bcckfdn. Se trata de un modelo de tipo decoder-only basado en la arquitectura Gemma3 con atención de ventana deslizante (SWA, *sliding window attention*), entrenado específicamente para turco e inglés. El modelo está pensado para generación de texto conversacional y se distribuye bajo licencia Apache 2.0, lo que permite uso comercial sin restricciones adicionales.
+cevher3-test-11 es un modelo de lenguaje de tipo decoder-only publicado por el usuario bcckfdn en Hugging Face. Se presenta como un modelo de 1.256.312.832 parámetros (aproximadamente 1,26 mil millones) entrenado con la arquitectura que el autor denomina "Gemma3-SWA", lo que sugiere una variante de la familia Gemma 3 con atención de ventana deslizante (sliding window attention). Está orientado a generación de texto conversacional y declara soporte para turco (tr) e inglés (en).
 
-El modelo cuenta con 34 capas, dimensión oculta de 1792, 28 cabezas de atención para consultas y 4 para claves/valores, un vocabulario de 65.536 tokens y una ventana de contexto de 8192 tokens. Fue entrenado sobre 20.644 millones de tokens (20,6 B) y alcanzó una pérdida de validación de 2,8047. Su tamaño compacto lo hace adecuado para despliegue en hardware de consumo, aunque su especialización en turco limita su utilidad generalista.
+El modelo se distribuye bajo licencia Apache 2.0, con pesos en formato safetensors y compatibilidad con la librería transformers y con text-generation-inference. Su contexto declarado es de 8192 tokens, un vocabulario de 65.536 entradas y 34 capas con dimensión oculta de 1792. El entrenamiento declarado asciende a 23.200 millones de tokens (23,2 B), con una pérdida de validación de 2,8047.
 
-La relevancia de este modelo radica en su enfoque en el idioma turco, un ámbito con menos representación en la oferta de modelos abiertos de gran calidad, y en su compatibilidad con el ecosistema transformers y text-generation-inference. No obstante, la ausencia de benchmarks publicados y el bajo número de descargas (0 en el momento de la consulta) indican que se trata de una publicación reciente y sin validación externa conocida.
+Por su tamaño y configuración, se posiciona en la franja de modelos pequeños aptos para inferencia en hardware de consumo, aunque la información pública es muy limitada: el repositorio no incluye resultados de benchmarks, detalles de composición del dataset ni documentación sobre alineación. La ficha refleja únicamente lo declarado por el autor y marca explícitamente como "no disponible" todo aquello que no consta.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only con atención de ventana deslizante (Gemma3-SWA) |
-| Parametros totales | 1.256.312.832 |
-| Parametros activos | no disponible (no es MoE) |
+| Arquitectura | Transformer decoder-only, variante "Gemma3-SWA" (atención de ventana deslizante) |
+| Parametros totales | 1.256.312.832 (1,26 B) |
+| Parametros activos | no disponible (no es un modelo MoE según la información publicada) |
 | Longitud de contexto | 8192 tokens |
-| Tipos de cuantizacion | no disponible (pesos en safetensors; cuantizaciones GGUF/AWQ no publicadas) |
+| Tipos de cuantizacion | no disponible (el repo publica safetensors; no se declaran variantes GGUF/AWQ/GPTQ) |
 | Idiomas soportados | turco (tr), inglés (en) |
 | Licencia | Apache 2.0 |
 | Formato de pesos | safetensors |
 
+Datos adicionales declarados por el autor: 34 capas, dimensión oculta 1792, 28 cabezas de atención para Q y 4 para KV (GQA), vocabulario de 65.536 tokens, 23.200 millones de tokens de entrenamiento y mejor pérdida de validación de 2,8047.
+
 ## Arquitectura y entrenamiento
 
-El modelo sigue una arquitectura transformer decoder-only con 34 capas, dimensión oculta de 1792 y un esquema de atención con 28 cabezas de consulta y 4 cabezas de clave/valor (GQA, *grouped-query attention*). Incorpora atención de ventana deslizante (SWA) al estilo de Gemma3, lo que reduce el coste computacional en secuencias largas al limitar el alcance de la atención a una ventana local en determinadas capas. El vocabulario es de 65.536 tokens y la longitud máxima de contexto es de 8192 tokens.
+La arquitectura es un transformer decoder-only con atención de ventana deslizante, etiquetada por el autor como "Gemma3-SWA". La configuración declarada (34 capas, hidden 1792, 28 cabezas Q y 4 cabezas KV) corresponde a un modelo de aproximadamente 1,26 B de parámetros con atención agrupada por consultas (GQA), lo que reduce el coste de memoria del KV cache frente a atención multi-cabeza completa. El contexto máximo es de 8192 tokens y el vocabulario de 65.536 entradas.
 
-El entrenamiento se realizó sobre 20.644 millones de tokens (20,6 B), con una pérdida de validación final de 2,8047. No se especifican en la información disponible la composición del dataset, la proporción entre turco e inglés, ni si se aplicaron técnicas de alineación como RLHF, DPO o SFT. Tampoco se documentan innovaciones adicionales como decodificación especulativa o mecanismos de atención lineal más allá de la propia SWA.
+El entrenamiento declarado suma 23.200 millones de tokens, con una pérdida de validación final de 2,8047. No se especifica la composición del dataset, la proporción de turco frente a inglés, ni si se aplicaron fases de instrucción, RLHF o DPO. Tampoco se documentan innovaciones adicionales como decodificación especulativa o atención lineal más allá de la ventana deslizante implícita en el nombre de la arquitectura. Toda esta información debe considerarse no disponible.
 
 ## Capacidades
 
-- Generación de texto en turco e inglés con soporte conversacional multi-turno.
-- Razonamiento básico y generación de texto general, limitado por su tamaño de 1,25 B de parámetros.
-- Soporte de tool calling / function calling: no disponible en la información proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
-- Capacidades multilingües limitadas a turco e inglés.
-- Capacidades especiales (modo thinking, visión, audio): no disponibles.
-- Compatible con text-generation-inference y endpoints compatibles según los tags del repositorio.
+- Generación de texto autoregresiva en turco e inglés, según los idiomas declarados en la model card.
+- Orientación conversacional: la etiqueta "conversational" figura entre los tags del repositorio.
+- Compatibilidad con text-generation-inference y con endpoints compatibles, lo que facilita su despliegue como servicio de generación.
+- Integración directa con transformers mediante `AutoModelForCausalLM` y `AutoTokenizer`.
+- Soporte de tool calling / function calling: no disponible (no se declara).
+- Soporte de agentes y razonamiento multi-paso: no disponible (no se declara).
+- Capacidades de visión, audio o modo "thinking": no disponible (no se declaran).
+- Capacidades matemáticas o de código específicas: no disponible (no se declaran ni se aportan benchmarks).
 
 ## Casos de uso
 
-- Asistentes conversacionales en turco: el modelo puede gestionar diálogos multi-turno en turco con una ventana de 8192 tokens, adecuada para conversaciones de atención al cliente de extensión media sin perder el hilo contextual.
-- Generación de contenido editorial en turco: redacción de artículos, descripciones de producto o correos electrónicos, aprovechando su especialización en el idioma y su licencia Apache 2.0 para uso comercial.
-- Traducción asistida turco-inglés: aunque no es un modelo de traducción dedicado, su entrenamiento bilingüe permite tareas de reformulación y traducción de textos de dominio general.
-- Prototipado rápido y experimentación: su tamaño de 1,25 B permite ejecutarlo en GPU de consumo para pruebas de concepto de aplicaciones de PLN en turco sin infraestructura dedicada.
-- Clasificación y etiquetado de texto: fine-tuning sobre el modelo base para tareas de análisis de sentimiento, categorización de tickets o extracción de entidades en corpus turcos.
-- Chatbots de soporte interno: despliegue en entornos con requisitos de latencia baja y coste reducido, gracias a su tamaño compacto y compatibilidad con TGI y transformers.
-- Generación aumentada por recuperación (RAG): uso como generador en pipelines RAG para dominios en turco, con contexto de 8192 tokens para incorporar documentos recuperados.
+- Generación de texto conversacional en turco: el modelo puede emplearse como base para asistentes de chat en dicho idioma, aprovechando su vocabulario de 65.536 tokens y su contexto de 8192 tokens para mantener conversaciones multi-turno de longitud moderada.
+- Clasificación y etiquetado de texto en turco e inglés: al ser un modelo causal pequeño, puede adaptarse mediante fine-tuning supervisado para tareas de clasificación, análisis de sentimiento o detección de intención en pipelines de procesamiento de lenguaje natural.
+- Resumen de documentos cortos: con 8192 tokens de contexto puede procesar artículos, correos o informes de extensión media y generar resúmenes, siempre que se valide la calidad con datos propios dado que no hay benchmarks publicados.
+- Prototipado rápido y experimentación académica: su tamaño de 1,26 B permite ejecutarlo en una sola GPU de consumo, lo que lo hace adecuado para pruebas de concepto, ablaciones y docencia sin necesidad de infraestructura dedicada.
+- Generación aumentada por recuperación (RAG) en dominios acotados: integrado con un motor de búsqueda vectorial, puede responder preguntas sobre una base documental en turco o inglés, usando el contexto recuperado dentro de la ventana de 8192 tokens.
+- Despliegue en entornos con recursos limitados: gracias a su tamaño, puede servirse con text-generation-inference o transformers en una GPU de gama media para aplicaciones internas de baja concurrencia, como asistentes de documentación o chatbots de soporte.
+- Fine-tuning para dominios específicos: al publicarse bajo Apache 2.0, puede ajustarse con datos propios (legal, sanitario, atención al cliente) sin restricciones de licencia para uso comercial.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card únicamente reporta la pérdida de validación (2,8047) y el número de tokens de entrenamiento (20.644 M), sin métricas estándar como MMLU, HumanEval o GSM8K.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card únicamente reporta la pérdida de validación del entrenamiento (2,8047) y el volumen de tokens (23.200 millones), sin métricas como MMLU, HumanEval, GSM8K ni comparaciones con otros modelos.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia en FP16/BF16: aproximadamente 2,5 GB para los pesos (1,25 B de parámetros × 2 bytes), más overhead de activaciones y caché KV.
-- VRAM estimada en cuantización de 8 bits: alrededor de 1,3-1,5 GB; en 4 bits: alrededor de 0,7-1 GB (estimaciones teóricas, no verificadas con cuantizaciones publicadas).
-- GPU recomendadas: cualquier GPU con al menos 4-6 GB de VRAM para FP16; RTX 3060, RTX 4060, RTX 4090, A100 o H100 son suficientes y sobredimensionadas para este tamaño.
-- Cabe en GPU de consumo: sí, en tarjetas con 6 GB o más de VRAM en precisión completa; en cuantización 4 bits podría caber en GPUs con 4 GB.
-- Opciones de despliegue: transformers (soporte nativo), text-generation-inference (TGI) según los tags, y potencialmente llama.cpp/Ollama si se generan cuantizaciones GGUF (no publicadas).
-- Latencia y throughput: no disponibles en la información proporcionada.
+- VRAM estimada para inferencia en fp16/bf16: aproximadamente 2,5 GB solo para pesos (1,26 B × 2 bytes), más el KV cache y activaciones; en la práctica, entre 4 y 6 GB para contexto moderado.
+- VRAM estimada en cuantización de 8 bits: en torno a 1,3-1,5 GB para pesos, más overhead; en 4 bits, aproximadamente 0,7-1 GB para pesos.
+- GPU recomendadas: A100, H100 o L40S para servicio de alta concurrencia; RTX 4090, RTX 3090 o RTX A6000 para desarrollo y despliegue de baja latencia.
+- Cabe en GPU de consumo: sí, previsiblemente en RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070 y superiores; también en GPUs con 8 GB si se cuantiza.
+- Opciones de despliegue: transformers (referencia declarada), text-generation-inference (tag incluido) y endpoints compatibles. No se declaran variantes GGUF, por lo que llama.cpp u Ollama requerirían conversión previa.
+- Latencia y throughput estimados: no disponibles; no se han publicado mediciones.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Idiomas | Licencia | Benchmarks publicados |
+| Modelo | Parametros | Contexto | Idiomas | Licencia | Benchmarks publicados |
 |---|---|---|---|---|---|
-| cevher3 (bcckfdn/cevher3-test-11) | 1,25 B | 8192 | tr, en | Apache 2.0 | No |
-| Gemma 2 2B | 2,6 B | 8192 | Multilingüe | Gemma Terms | Sí |
-| Qwen2.5 1.5B | 1,5 B | 32768 | Multilingüe | Apache 2.0 | Sí |
-| SmolLM2 1.7B | 1,7 B | 8192 | Inglés principalmente | Apache 2.0 | Sí |
+| cevher3-test-11 | 1,26 B | 8192 | tr, en | Apache 2.0 | no disponibles |
+| Gemma 3 1B (referencia de familia) | ~1 B | no disponible en esta ficha | multilingüe | Gemma Terms | sí, publicados por Google |
+| Llama 3.2 1B | 1,24 B | 128k | multilingüe | Llama Community License | sí, publicados por Meta |
+| Qwen2.5 1.5B | 1,54 B | 32k | multilingüe | Apache 2.0 | sí, publicados por Alibaba |
 
-La comparativa se basa en características públicas de modelos de tamaño similar; no se dispone de datos de rendimiento de cevher3 que permitan una comparación cuantitativa. cevher3 destaca por su especialización en turco, mientras que los alternativos tienen cobertura multilingüe más amplia y benchmarks publicados.
+La comparación se ofrece a título orientativo por rango de tamaño; no se dispone de datos de rendimiento de cevher3-test-11 que permitan una comparación cuantitativa con estas alternativas.
 
 ## Limitaciones y advertencias
 
-- No se han publicado evaluaciones de sesgos; al estar entrenado predominantemente en turco e inglés, puede reflejar sesgos culturales y lingüísticos de esos corpus.
-- Riesgo de alucinación inherente a modelos de 1,25 B de parámetros, especialmente en tareas de razonamiento complejo o conocimiento factual.
-- Contexto limitado a 8192 tokens, inferior al de modelos contemporáneos con ventanas de 32K o más.
-- Cobertura lingüística restringida a turco e inglés; no se garantiza un rendimiento aceptable en castellano u otros idiomas.
-- La licencia Apache 2.0 permite uso comercial, pero el autor no ofrece garantías ni soporte; el modelo se publica como "test" y sin validación externa.
-- Ausencia de benchmarks y de documentación sobre el dataset de entrenamiento dificulta evaluar su calidad y adecuación a dominios específicos.
-- El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, lo que sugiere falta de validación por parte de la comunidad.
+- No se han publicado benchmarks, por lo que el rendimiento real en tareas estándar es desconocido y debe validarse empíricamente antes de usarlo en producción.
+- La model card no documenta la composición del dataset de entrenamiento, lo que impide evaluar sesgos, contaminación de datos o cobertura lingüística real.
+- Riesgo de alucinación inherente a los modelos generativos de este tamaño; sin datos de alineación (RLHF/DPO) declarados, la fiabilidad factual puede ser baja.
+- El soporte idiomático se limita a turco e inglés según la declaración del autor; el rendimiento en otros idiomas no está garantizado.
+- El contexto de 8192 tokens es moderado; documentos más largos requerirán truncado o estrategias de recuperación.
+- Aunque la licencia es Apache 2.0 y permite uso comercial, el nombre del repositorio ("test") y la ausencia de documentación sugieren que se trata de una publicación experimental, no de un modelo validado para producción.
+- No se ofrecen pesos cuantizados oficiales; cualquier cuantización corre a cargo del usuario y puede degradar la calidad.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/bcckfdn/cevher3-test-11
-- No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la información disponible.
+- Modelo en Hugging Face: https://huggingface.co/bcckfdn/cevher3-test-11

@@ -2,101 +2,107 @@
 
 ## Resumen
 
-Esta ficha describe `infosave/MiniCPM-V-4.7-35B-A3B-cmf`, un paquete de cuantizacion en formato CMF que contiene unicamente el *backbone* de texto del modelo multimodal OpenBMB MiniCPM-V 4.7 35B-A3B. Lo publica el usuario `infosave` y esta pensado para ejecutarse con el runtime `cortiq`, que empaqueta en un unico archivo mapeado en memoria los pesos cuantizados, el tokenizer y la plantilla de chat. No es una version completa de MiniCPM-V: aunque el nombre conserve la "V", este release no incluye torre de vision, merger/proyector, inyeccion de tokens visuales ni la ruta canvas M-RoPE, por lo que solo procesa texto.
+MiniCPM-V-4.7-35B-A3B-cmf es una cuantización del backbone de texto del modelo multimodal MiniCPM-V 4.7 35B-A3B de OpenBMB, empaquetada en formato CMF (un contenedor memory-mapped que agrupa pesos cuantizados, tokenizer y plantilla de chat) para su uso con el runtime `cortiq`. El autor del artefacto es el usuario `infosave`, no OpenBMB, y se distribuye bajo licencia Apache 2.0. Es importante subrayar que este release es **solo de texto**: no incluye la torre de visión, el proyector visual, la inyección de tokens visuales ni la ruta M-RoPE de canvas, por lo que no procesa imágenes ni vídeo a pesar del nombre heredado del modelo base.
 
-El backbone de lenguaje retenido es un transformer hibrido de tipo Mixture-of-Experts con 40 capas: 30 capas de atencion lineal Gated DeltaNet y 10 capas de atencion completa, con 256 expertos enrutados (top 8) mas un experto compartido. El checkpoint de origen esta publicado en BF16 y estos dos archivos son cuantizaciones directas de ese backbone de texto. El modelo base pertenece a la familia MiniCPM-V de OpenBMB y combina comprension de imagen y video con generacion de texto, pero esa parte multimodal queda fuera de esta publicacion.
+El backbone lingüístico retenido es un transformer híbrido tipo MoE con arquitectura estilo Qwen3.5: 40 capas, de las cuales 30 son de atención lineal Gated DeltaNet y 10 de atención completa, con 256 expertos enrutados (top-8) más un experto compartido. El checkpoint fuente está publicado en BF16 y este repositorio ofrece dos cuantizaciones directas del mismo, con perfiles `q4tp` (aproximadamente 19,4 GB) y `q8_2f` (aproximadamente 35,0 GB).
 
-La relevancia de este release es de caracter practico: ofrece un perfil compacto (`q4tp`) y uno de mayor fidelidad (`q8_2f`) para desplegar el backbone de texto en hardware con memoria unificada, en particular Apple Silicon mediante Metal. La propia model card advierte que el nombre "35B-A3B" no implica que el banco completo de expertos quepa en 3 GB, y que no se reclama ninguna cifra de perplexity, calidad o tokens por segundo.
+Su relevancia práctica radica en que permite ejecutar un MoE de gran tamaño en hardware de consumo o en estaciones de trabajo con 24 GB de VRAM mediante un formato optimizado y un runtime específico, con velocidades de decodificación reportadas de 108-116 tok/s en una RTX A5000 bajo CUDA. No obstante, el ecosistema de despliegue es propietario del formato CMF y limitado al runtime `cortiq`, lo que reduce su portabilidad frente a GGUF o safetensors.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer hibrido MoE (estilo Qwen3.5): 40 capas, 30 de atencion lineal Gated DeltaNet y 10 de atencion completa; 256 expertos enrutados (top 8) mas un experto compartido |
-| Parametros totales | ~35B segun la nomenclatura del modelo base ("35B-A3B"); no confirmado de forma explicita en la informacion disponible |
-| Parametros activos | ~3B segun la nomenclatura del modelo base ("A3B"); no confirmado de forma explicita en la informacion disponible |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | `q4tp` (matrices de expertos enrutados y compartidos) y `q8_2f` (matrices 2-D de lenguaje ordinarias); controles en F16 (router MoE, gate del experto compartido, `in_proj_a`/`in_proj_b` de Gated DeltaNet, convolucion y tensores escalares/norma) |
+| Arquitectura | Transformer híbrido MoE estilo Qwen3.5: 40 capas (30 Gated DeltaNet de atención lineal + 10 de atención completa), 256 expertos enrutados top-8 + experto compartido |
+| Parametros totales | 35B (denominación del modelo base) |
+| Parametros activos | 3B (denominación A3B del modelo base) |
+| Longitud de contexto | no disponible (el benchmark usa `--ctx 4096`, pero no se declara el máximo) |
+| Tipos de cuantizacion | `q4tp` (matrices de expertos en 4 bits, esqueleto siempre activo en `q8_2f`, controles sensibles en F16) y `q8_2f` (matrices 2-D en 8 bits, controles en F16) |
 | Idiomas soportados | no disponible |
-| Licencia | apache-2.0 |
-| Formato de pesos | CMF (archivo unico mapeado en memoria para el runtime `cortiq`) |
-| Tamano de archivos | `q4tp`: 19.372.423.311 bytes; `q8_2f`: 34.994.075.791 bytes |
-| Modelo base | openbmb/MiniCPM-V-4.7-35B-A3B |
-| Relacion con el base | Cuantizacion (base_model_relation: quantized) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | CMF (contenedor memory-mapped para el runtime `cortiq`) |
 
 ## Arquitectura y entrenamiento
 
-El backbone conservado es un modelo MoE hibrido de 40 capas que combina dos mecanismos de atencion. La mayor parte de la profundidad (30 capas) usa atencion lineal Gated DeltaNet, mientras que 10 capas mantienen atencion completa. La capa MoE dispone de 256 expertos enrutados con seleccion top 8 y un experto compartido siempre activo. Esta mezcla persigue reducir el coste de atencion en secuencias largas manteniendo capacidad de modelado a traves de las capas de atencion completa y del banco de expertos.
+El modelo base es un transformer híbrido que combina 30 capas de atención lineal Gated DeltaNet con 10 capas de atención completa, una configuración que busca reducir el coste computacional y de memoria del estado KV en secuencias largas manteniendo capacidad de atención global en una fracción de las capas. La capa MoE emplea 256 expertos enrutados con activación top-8 más un experto compartido, lo que da lugar a la denominación 35B-A3B (35 mil millones de parámetros totales, 3 mil millones activos por token).
 
-El checkpoint de origen esta publicado en BF16 y estos dos CMF son cuantizaciones directas de ese backbone de texto, no un reentrenamiento. La model card indica que, aunque la configuracion del modelo base anuncia una capa MTP (Multi-Token Prediction), el checkpoint no incluye tensores fisicos `mtp.*`, por lo que este release carece de cabeza MTP o de decodificacion especulativa. No se detallan en la informacion disponible el numero de tokens de entrenamiento, la composicion del dataset ni si hubo etapas de RLHF o DPO.
-
-La parte de empaquetado es especifica: CMF agrupa pesos, tokenizer y plantilla de chat en un unico archivo, y la politica de precision mantiene en F16 determinadas rutas sensibles (router, gates, proyecciones recurrentes de Gated DeltaNet, convoluciones y normas) fuera del cuerpo de bajo bit, lo que da lugar a un archivo `q4tp` con dtypes mixtos por tensor.
+El checkpoint fuente se publica en BF16 y este repositorio contiene cuantizaciones directas del backbone de texto, sin reentrenamiento ni ajuste adicional. La política de precisión mixta mantiene en F16 el router MoE, la puerta del experto compartido, las proyecciones `in_proj_a` e `in_proj_b` de Gated DeltaNet, las convoluciones y los tensores escalares y de normalización, mientras que el cuerpo de matrices se cuantiza a 4 u 8 bits según el perfil. Aunque la configuración del modelo base anuncia una capa MTP (multi-token prediction), el checkpoint no incluye tensores `mtp.*` físicos, por lo que este release carece de cabeza especulativa. No se dispone de información sobre el volumen de tokens de entrenamiento, la composición del dataset ni las etapas de RLHF o DPO aplicadas al modelo original.
 
 ## Capacidades
 
-- Generacion de texto y chat de texto a traves del tokenizer y la plantilla embebidos en el archivo CMF.
-- Razonamiento y generacion de lenguaje general, heredados del backbone de lenguaje del modelo base.
-- Ejecucion en hardware Apple Silicon mediante el backend Metal de `cortiq` (perfil `q4tp` recomendado para una primera evaluacion).
-- Verificacion de integridad del artefacto mediante `cortiq verify` y checksums SHA-256 publicados.
-- Inspeccion de dtypes por tensor con `cortiq info` (util por el perfil de precision mixta).
-- No soporta comprension de imagenes ni de video: no incluye torre de vision, merger/proyector, inyeccion de tokens visuales ni ruta canvas M-RoPE.
-- Los tokens de relleno visual (`<|image_pad|>`, `<|video_pad|>`) no habilitan vision en este runtime; para el modelo solo son texto.
-- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
-- Capacidades de agente o razonamiento multi-paso: no disponible en la informacion proporcionada.
-- Capacidades multilingues: no disponible en la informacion proporcionada.
+- Generación de texto y razonamiento de propósito general, heredados del backbone lingüístico del modelo base.
+- Conversación multi-turno con plantilla de chat incluida en el propio contenedor CMF.
+- Razonamiento sobre código y matemáticas, presumiblemente por herencia del modelo base (no verificado en este release).
+- Soporte de tool calling y function calling: no disponible en la información proporcionada.
+- Capacidades de agente y razonamiento multi-paso: no disponible en la información proporcionada.
+- Capacidades multilingües: no disponible en la información proporcionada.
+- **Sin capacidades de visión**: este release no acepta imágenes ni vídeo; los tokens `<|image_pad|>` y `<|video_pad|>` no están operativos.
+- **Sin modo thinking ni cabeza especulativa MTP**: el checkpoint no incluye tensores `mtp.*`.
 
 ## Casos de uso
 
-- Generacion de texto en local sobre Apple Silicon: el perfil `q4tp` (19,37 GB) permite desplegar el backbone en un Mac con memoria unificada suficiente, usando `cortiq run` con prompts de texto y un limite de tokens configurable.
-- Chat de texto con plantilla propia: al incluir el tokenizer y la plantilla de chat en el mismo archivo CMF, se puede levantar un asistente conversacional de texto sin gestionar ficheros auxiliares.
-- Procesamiento de documentos de texto y resumen: el modelo recibe texto plano, por lo que encaja en tareas de resumen, reescritura o extraccion sobre corpus textuales.
-- Evaluacion comparativa de cuantizaciones: comparar `q4tp` frente a `q8_2f` sobre el mismo conjunto de prompts permite medir el compromiso entre fidelidad y uso de memoria en el hardware objetivo.
-- Integracion en un runtime mapeado en memoria: al ser un unico archivo CMF, se puede cargar con `mmap` para reducir picos de memoria al iniciar el proceso.
-- Verificacion de cadena de suministro de pesos: los hashes SHA-256 y `cortiq verify` permiten auditar que el artefacto desplegado es exactamente el publicado, algo util en pipelines internos.
-- Laboratorio de investigacion sobre arquitecturas hibridas MoE + atencion lineal: sirve como sujeto de pruebas para estudiar el comportamiento de Gated DeltaNet y del enrutado top 8 en inferencia cuantizada.
-- Despliegue de texto en maquinas con mas memoria unificada: el perfil `q8_2f` (34,99 GB) es la opcion cuando prima la fidelidad sobre el almacenamiento y la memoria.
+- **Inferencia de texto en estaciones de trabajo con 24 GB de VRAM**: el perfil `q4tp` (19,4 GB) cabe en tarjetas como la RTX A5000 o la RTX 4090 y decodifica a 108-116 tok/s bajo CUDA, lo que permite servir un MoE de 35B en hardware de gama profesional sin clúster.
+- **Generación de texto por lotes en pipelines internos**: con `cortiq run` y prompts largos (2.395 tok/s de prefill en A5000 con 4.096 tokens), es adecuado para tareas de resumen, extracción o clasificación sobre documentos extensos donde el coste por token importa.
+- **Prototipado de aplicaciones conversacionales**: la plantilla de chat va incluida en el propio archivo CMF, lo que simplifica el despliegue de un chatbot multi-turno sin gestionar artefactos separados de tokenizer y template.
+- **Evaluación de modelos MoE de gran tamaño en macOS**: el perfil `q4tp` está pensado para evaluarse primero en Apple Silicon con Metal, usando memoria unificada en lugar de VRAM dedicada, con la advertencia de que el rendimiento depende del equipo y de la compilación de `cortiq`.
+- **Referencia de alta fidelidad para validación**: el perfil `q8_2f` (35,0 GB) sirve como referencia cuando la fidelidad numérica prima sobre el almacenamiento, útil para comparar salidas frente a la cuantización de 4 bits en tareas sensibles.
+- **Investigación sobre cuantización mixta en MoE**: la preservación en F16 de router, puertas y rutas recurrentes de Gated DeltaNet convierte este release en un caso de estudio práctico sobre qué tensores conviene mantener en alta precisión al cuantizar modelos híbridos.
+- **Despliegue con aceleración Vulkan en GPUs de consumo**: la ruta opcional de cola MoE dinámica permite repartir expertos residentes en GPU y completar los fríos en CPU, con un rendimiento medido de aproximadamente 24 tok/s en una RTX 4090.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card indica de forma explicita que "no perplexity, quality, or tokens-per-second figure is claimed here", es decir, no se reclama ninguna cifra de perplexity, calidad ni tokens por segundo para estos artefactos.
+No se han publicado resultados de benchmarks de calidad (MMLU, HumanEval, GSM8K u otros) en la información disponible. Los únicos datos numéricos son mediciones de rendimiento del runtime `cortiq`:
+
+| Medición | CUDA (RTX A5000 24 GB) | Vulkan (misma tarjeta) |
+|---|---:|---:|
+| Decodificación | 108-116 tok/s | 87-90 tok/s |
+| Prefill de 4.096 tokens | 2.395 tok/s | 768 tok/s |
+| Latencia del primer token (prompt 4.096) | 1,71 s | 5,33 s |
+
+| Medición (RTX 4090, Vulkan, cola MoE dinámica) | Valor |
+|---|---:|
+| Decodificación (512 tokens greedy) | 23,8 / 24,3 / 23,8 tok/s |
+| Latencia del primer token | 18,1 / 17,9 / 17,9 s |
+| Puerta de regresión (16 tokens) | 16/16 argmax coincidentes, max abs(delta logit) 4,005e-05 |
+
+Estas cifras son mediciones de una sola máquina y el propio autor advierte que no constituyen garantías universales de rendimiento ni resultados de perplejidad o calidad.
 
 ## Requisitos de hardware
 
-- Espacio en disco: 19,37 GB para `q4tp` y 34,99 GB para `q8_2f` (tamanos exactos en bytes indicados en la tabla de especificaciones).
-- Memoria: segun la model card, el nombre "35B-A3B" no implica que el banco completo de expertos quepa en 3 GB; hay que prever el archivo CMF completo, los buffers del runtime, el estado de contexto/KV y el margen de memoria unificada del sistema.
-- GPU/plataforma recomendada en la informacion disponible: Apple Silicon con backend Metal (variable `CMF_GPU=1` para `cortiq`). No se mencionan modelos concretos como A100, H100 o RTX 4090.
-- Comportamiento en GPU de consumo (por ejemplo, RTX 4090): no disponible en la informacion proporcionada.
-- VRAM estimada de inferencia por cuantizacion: no disponible mas alla del tamano de archivo; el propio autor advierte que hay que sumar buffers y KV cache de las capas de atencion completa.
-- Opciones de despliegue: runtime `cortiq` (libreria declarada del repo). No se indican vLLM, llama.cpp, Ollama ni TGI como opciones compatibles.
-- Latencia y throughput: no disponibles; el autor subraya que una prueba de humo en CPU o una conversion de archivo correcta no equivalen a un resultado de rendimiento en Metal, y recomienda medir en la maquina objetivo.
+- **VRAM estimada**: el perfil `q4tp` ocupa 19.372.423.311 bytes (aproximadamente 19,4 GB) y el `q8_2f` 34.994.075.791 bytes (aproximadamente 35,0 GB); a ello hay que sumar buffers del runtime, estado KV y contexto.
+- **GPU recomendadas**: RTX A5000 de 24 GB (medición CUDA de referencia) y RTX 4090 (medición Vulkan con cola MoE dinámica). El perfil `q4tp` está diseñado para caber en 24 GB de VRAM.
+- **GPU de consumo**: sí, el perfil `q4tp` cabe en tarjetas de 24 GB como la RTX 4090; el `q8_2f` requiere más de 35 GB y no cabe en GPUs de consumo actuales.
+- **Apple Silicon**: soportado vía Metal con memoria unificada; el propio autor advierte que el ajuste y el rendimiento dependen del Mac, la memoria libre, la longitud de contexto y la compilación de `cortiq`. No se aportan cifras de tok/s en Metal.
+- **Opciones de despliegue**: exclusivamente el runtime `cortiq` (versión 0.8.96 para las mediciones CUDA; 0.8.19 o superior para la ruta Vulkan dinámica). No hay soporte declarado para vLLM, llama.cpp, Ollama ni TGI, ya que el formato CMF es específico de `cortiq`.
+- **Latencia y throughput**: ver la tabla de benchmarks; en A5000 con CUDA, 108-116 tok/s de decodificación y 2.395 tok/s de prefill a 4.096 tokens.
 
 ## Comparativa con modelos similares
 
-| Modelo | Tipo | Parametros | Contexto | Formato | Licencia | Notas |
-|---|---|---|---|---|---|---|
-| infosave/MiniCPM-V-4.7-35B-A3B-cmf (`q4tp`) | Backbone de texto cuantizado | ~35B totales / ~3B activos (segun nomenclatura) | no disponible | CMF | apache-2.0 | Solo texto; 19,37 GB; perfil compacto para Metal |
-| infosave/MiniCPM-V-4.7-35B-A3B-cmf (`q8_2f`) | Backbone de texto cuantizado | ~35B totales / ~3B activos (segun nomenclatura) | no disponible | CMF | apache-2.0 | Solo texto; 34,99 GB; mayor fidelidad |
-| openbmb/MiniCPM-V-4.7-35B-A3B | Modelo multimodal completo | ~35B totales / ~3B activos (segun nomenclatura) | no disponible | no disponible | apache-2.0 | Incluye vision y video; requiere un runtime que soporte su processor, torre de vision y canvas M-RoPE |
+No se dispone de datos de benchmarks del modelo base ni de alternativas en la información proporcionada, por lo que la comparación se limita a características estructurales verificables:
 
-No se dispone en la informacion proporcionada de otros modelos comparables de la misma categoria con datos verificables de rendimiento, tamano de contexto o licencia, por lo que la comparativa se limita a los artefactos de este repositorio y a su modelo base.
+| Modelo | Parámetros | Contexto | Formato | Licencia | Runtime |
+|---|---|---|---|---|---|
+| MiniCPM-V-4.7-35B-A3B-cmf (este release) | 35B totales / 3B activos | no disponible | CMF | Apache 2.0 | `cortiq` |
+| openbmb/MiniCPM-V-4.7-35B-A3B (modelo base) | 35B totales / 3B activos | no disponible | safetensors (BF16) | Apache 2.0 (según este repo) | Transformers y otros |
+| Alternativas de tamaño similar | no disponible | no disponible | no disponible | no disponible | no disponible |
+
+La diferencia principal frente al modelo base es la eliminación de la torre de visión y la cuantización mixta; frente a otras alternativas de la misma categoría no hay datos suficientes para establecer una comparación de rendimiento.
 
 ## Limitaciones y advertencias
 
-- Ambito solo texto: este release no procesa imagenes ni video pese a pertenecer a la familia MiniCPM-V. No incluye torre de vision, merger/proyector, inyeccion de tokens visuales ni ruta canvas M-RoPE.
-- Los tokens `<|image_pad|>` y `<|video_pad|>` no habilitan vision en este runtime: para el modelo son texto plano.
-- Para usar la capacidad visual del modelo base hay que emplear una implementacion que soporte explicitamente su processor, torre de vision, inyeccion de tokens visuales y canvas M-RoPE.
-- Ausencia de cabeza MTP: la configuracion anuncia una capa MTP, pero el checkpoint no contiene tensores `mtp.*`, de modo que no hay decodificacion especulativa asociada.
-- Sin cifras de calidad: no se publican perplexity, benchmarks ni tokens por segundo, por lo que el rendimiento real debe medirse en el hardware objetivo.
-- Perfil de precision mixta: el archivo `q4tp` combina distintos dtypes por tensor (controles en F16); hay que inspeccionarlos con `cortiq info` antes de asumir un unico formato.
-- Memoria: el banco completo de expertos no cabe en 3 GB; hay que prever el archivo CMF entero, buffers del runtime, estado de contexto/KV y margen de memoria unificada del sistema.
-- Contexto largo: las capas de atencion completa generan KV cache adicional que debe sumarse al coste de los pesos.
-- Licencia: el artefacto declara apache-2.0 y deriva del release Apache-2.0 de OpenBMB; la model card remite a la model card upstream para la licencia, el uso y la informacion de seguridad completos del modelo multimodal.
-- Idiomas soportados: no disponibles en la informacion proporcionada, por lo que la cobertura linguistica no puede evaluarse con los datos actuales.
-- Sesgos conocidos y riesgo de alucinacion: no disponibles en la informacion proporcionada; al ser un backbone de texto cuantizado hereda sin evaluacion publica las caracteristicas del modelo base.
-- Compatibilidad de runtime: los artefactos estan empaquetados para `cortiq` (formato CMF) y no se documentan otras rutas de despliegue.
+- **No es multimodal**: a pesar del nombre MiniCPM-V, este release no procesa imágenes ni vídeo. Enviar contenido visual o tokens `<|image_pad|>` / `<|video_pad|>` no activa visión.
+- **Ecosistema cerrado**: el formato CMF solo es compatible con el runtime `cortiq`, lo que limita la portabilidad y obliga a depender de un único proyecto para el despliegue.
+- **Sin cabeza especulativa**: el checkpoint no incluye tensores MTP, por lo que no se puede aprovechar la decodificación especulativa anunciada en la configuración del modelo base.
+- **Riesgo de alucinación**: no se han publicado evaluaciones de calidad ni de fidelidad de la cuantización frente al modelo en BF16, más allá de la puerta de regresión de 16 tokens en la ruta Vulkan.
+- **Sesgos**: no disponible; el autor no documenta sesgos conocidos del modelo base ni de esta cuantización.
+- **Idiomas**: no disponible; no se declaran los idiomas soportados.
+- **Contexto máximo**: no disponible; las mediciones usan 4.096 tokens, pero no se especifica la ventana máxima del modelo.
+- **Licencia**: Apache 2.0, lo que en principio permite uso comercial, pero conviene verificar las condiciones del modelo base de OpenBMB antes de producción.
+- **Rendimiento no garantizado**: las cifras de tok/s son mediciones de una sola máquina y el autor advierte explícitamente que no son comparables entre backends ni extrapolables a otros equipos, drivers o longitudes de contexto.
+- **Memoria**: el nombre "35B-A3B" no implica que el banco completo de expertos quepa en 3 GB; hay que planificar el tamaño completo del archivo CMF, los buffers del runtime y el estado KV.
+- **Madurez**: el repositorio tiene 513 descargas y 1 like, con creación en octubre de 2026, lo que indica una adopción muy limitada y escasa validación comunitaria.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/infosave/MiniCPM-V-4.7-35B-A3B-cmf
 - Modelo base: https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B
-- Proyecto CMF (formato y herramienta): https://github.com/infosave2007/cmf
+- Repositorio del runtime CMF: https://github.com/infosave2007/cmf

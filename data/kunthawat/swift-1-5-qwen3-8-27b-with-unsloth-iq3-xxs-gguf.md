@@ -2,113 +2,105 @@
 
 ## Resumen
 
-Swift-1.5-Qwen3.8-27B-with-Unsloth-IQ3_XXS-GGUF es una cuantizacion GGUF de la comunidad, publicada por el usuario kunthawat, a partir del checkpoint BF16 ukisai/Swift-1.5-Qwen3.8-27b. Swift 1.5 es la adaptacion de UkisAI sobre Qwen3.8-27B, un modelo hibrido de razonamiento orientado a codigo agentico y chat, con soporte multimodal mediante un proyector de vision y pesos de prediccion multi-token (MTP) que habilitan decodificacion especulativa. Esta build aplica una mezcla de cuantizacion tensor a tensor reconstruida a partir de la referencia publica UD-IQ3_XXS de Unsloth, conservando los pesos MTP originales de Swift 1.5 y sin recuantizar de GGUF a GGUF.
+Swift 1.5 Qwen3.8-27B es un modelo multimodal (image-text-to-text) derivado de la familia Qwen3.8, publicado por el usuario ukisai y cuantizado por kunthawat en formato GGUF con un esquema mixto IQ3_XXS. El checkpoint base es un ajuste de la arquitectura Qwen3.8-27B con pesos MTP (multi-token prediction) propios de Swift, orientado a sesiones largas de asistente, trabajo de marketing y revision de imagenes y documentos. Esta version concreta es una cuantizacion de inferencia lista para usar, pensada para ejecutarse en una unica GPU consumer de 16 GB.
 
-El objetivo declarado por el autor es ofrecer un perfil de inferencia listo para usar en una unica GPU de 16 GB (RTX 5060 Ti), cubriendo sesiones largas de asistente, trabajo de marketing y web, y revision de imagenes y documentos a traves de Hermes y llama.cpp. Los dos archivos del repositorio (pesos GGUF y proyector de vision F16) suman aproximadamente 11,05 GiB y el modelo declara un contexto arquitectonico de 262.144 tokens.
+El artefacto incluye dos ficheros: el modelo principal en GGUF IQ3_XXS (10,18 GiB) y un proyector de vision F16 separado (0,864 GiB), que debe cargarse junto al modelo para procesar imagenes. La longitud de contexto declarada en los metadatos es de 262.144 tokens, aunque el autor advierte explicitamente que ese valor es un limite arquitectonico y no una garantia de que una peticion de 262K quepa en 16 GB de VRAM. El perfil de servicio recomendado es una peticion simultanea, 100K de contexto configurado, cache K/V en Q4_0 y MTP-2.
 
-Es relevante porque reune tres elementos poco habituales en un paquete GGUF de comunidad: vision, cuantizacion mixta IQ3_XXS y MTP para decodificacion especulativa, todo ejecutable en hardware de consumo con llama.cpp. El repositorio es de septiembre de 2026, acumula 5 descargas y 0 "likes", y la unica evidencia publica de rendimiento es una ejecucion local de GPQA Diamond realizada por el propio autor, no una evaluacion independiente.
+La relevancia de esta ficha es doble: por un lado, documenta un caso real de cuantizacion mixta tensor a tensor sobre una arquitectura multimodal con decodificacion especulativa; por otro, sirve como referencia de que esperar (y que no esperar) de un modelo de 27B comprimido a ~3 bits en hardware consumer. El autor publica mediciones locales de GPQA Diamond junto con los hashes SHA-256 de los ficheros, lo que permite verificar la integridad del artefacto.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer derivado de Qwen3.8-27B (modelo hibrido de razonamiento); incluye proyector de vision y cabezas MTP. Detalle interno de capas: no disponible |
-| Parametros totales | 460.730.096 segun los metadatos de safetensors del repositorio; el nombre del modelo y el tamano del repo (11,9 GB) indican ~27.000 millones. Dato inconsistente |
-| Parametros activos | no disponible (no se indica que sea un modelo MoE) |
-| Longitud de contexto | 262.144 tokens en los metadatos del modelo (limite arquitectonico, no garantia de que una peticion de 262K quepa en 16 GB) |
-| Tipos de cuantizacion | IQ3_XXS con mezcla tensor a tensor; 866 tensores, 15 de ellos MTP. Existen tambien variantes IQ3_S-mtp e INT4 en repositorios de UkisAI |
+| Arquitectura | Transformer multimodal (Qwen3.8) con pesos MTP para decodificacion especulativa; proyector de vision separado |
+| Parametros totales | 460.730.096 segun safetensors del repo; el nombre comercial indica 27B (no disponible el desglose oficial) |
+| Parametros activos | no disponible |
+| Longitud de contexto | 262.144 tokens (metadato arquitectonico); perfil practico recomendado de 100K |
+| Tipos de cuantizacion | IQ3_XXS mixta tensor a tensor (referencia publica UD-IQ3_XXS); proyector de vision en F16; cache K/V en Q4_0 en el perfil probado |
 | Idiomas soportados | no disponible |
-| Licencia | swift-open-license-v1.0-apache-2.0 (license: other) |
-| Formato de pesos | GGUF (pesos del modelo + mmproj F16 separado para entrada de imagen) |
+| Licencia | swift-open-license-v1.0-apache-2.0 (etiquetada como `other` en Hugging Face) |
+| Formato de pesos | GGUF (866 tensores, 15 de ellos MTP) |
+| Tamano del repo | 11,9 GB (10,18 GiB modelo + 0,864 GiB proyector) |
+| Libreria | gguf (llama.cpp) |
 
 ## Arquitectura y entrenamiento
 
-El modelo subyacente, Qwen3.8-27B, se describe como un modelo abierto hibrido de razonamiento ("thinking") para codigo agentico y chat. Swift 1.5 es una derivada de UkisAI orientada a eficiencia de razonamiento: segun la documentacion del autor, usa un 58,5% menos de tokens de pensamiento que el modelo base y obtiene una puntuacion un 0,35% superior, lo que se traduce en una aceleracion de 9,18x en varias tareas. Segun UkisAI, tanto Qwen3.8-27B como Swift 1.5 se evaluan con los mismos protocolos guardados y los resultados son agregados de cinco repeticiones.
+El modelo base es un transformer de la familia Qwen3.8 con capacidad multimodal: el procesamiento de imagen se delega a un proyector de vision independiente que se carga como fichero GGUF aparte (`mmproj-Swift-1.5-Qwen3.8-27B-F16.gguf`). Sobre esa base, el checkpoint Swift incorpora pesos MTP (multi-token prediction), que permiten decodificacion especulativa con borradores internos; la cuantizacion conserva los 15 tensores MTP originales del checkpoint Swift y no copia pesos MTP del Qwen de referencia.
 
-Esta ficha concreta no es un fine-tune nuevo, sino una cuantizacion de inferencia. El autor conserva los pesos MTP ya presentes en el checkpoint Swift 1.5 (15 tensores MTP) y no copia pesos MTP del Qwen de serie. La cuantizacion se reconstruye a partir de la referencia publica UD-IQ3_XXS del repositorio de Unsloth, usando su importance matrix publica, pero no reproduce ni reclama la receta privada Dynamic V3 de Unsloth. El proyector de vision de Qwen3.8 es un archivo independiente que debe cargarse junto al GGUF para aceptar imagenes. Los datos exactos de entrenamiento (numero de tokens, composicion del dataset, uso de RLHF/DPO) no estan disponibles en la informacion proporcionada.
-
-La innovacion tecnica destacable es la combinacion de decodificacion especulativa por MTP (perfil MTP-2) con una cuantizacion mixta de tipo IQ3_XXS, en un paquete que incluye vision y cabe en una GPU de 16 GB.
+La cuantizacion no es un fine-tune ni una re-cuantizacion GGUF-a-GGUF. El autor parte de los pesos BF16 de Swift 1.5 y aplica un esquema mixto tensor a tensor reconstruido a partir de la referencia publica `UD-IQ3_XXS` del repositorio GGUF de Unsloth para Qwen3.8-27B, usando la importance matrix publica de Unsloth. El autor declara explicitamente que no reproduce la receta privada Dynamic V3 de Unsloth ni es un modelo oficial de Unsloth. Los nombres, formas y tipos de cuantizacion de los 866 tensores se compararon contra el mapa de referencia con cero diferencias. No se dispone de informacion sobre el volumen de tokens de entrenamiento, la composicion del dataset ni si hubo RLHF o DPO en el checkpoint base.
 
 ## Capacidades
 
-- Generacion de texto y razonamiento en modo hibrido "thinking", con presupuesto de razonamiento configurable (el autor uso 12.288 tokens en su ejecucion de GPQA).
-- Codigo y flujos agenticos, segun la descripcion del modelo base Qwen3.8-27B.
-- Razonamiento cientifico de nivel avanzado: la ejecucion publicada sobre GPQA Diamond (198 preguntas de nivel posgrado) obtuvo un 70,71% en puntuacion flexible.
-- Multimodalidad de imagen a texto: el repositorio incluye el proyector de vision mmproj en F16 y la pipeline declarada es image-text-to-text.
-- Revision de imagenes y documentos: el autor reporta uso con imagenes grandes o multiples en flujos Hermes sin OOM en 16 GB (reporte de uso propio, no un test de estres reproducible).
-- Decodificacion especulativa mediante MTP (perfil MTP-2 probado) para acelerar la generacion.
-- Plantilla de chat embebida en el modelo; el autor dispone ademas de una plantilla Qwen-Sharp propia que no se incluye en el repositorio.
-- Soporte de tool calling / function calling: no documentado explicitamente en la informacion disponible.
-- Idiomas soportados: no disponible.
+- Generacion de texto y razonamiento de multiples pasos, con soporte de un presupuesto de razonamiento configurable (el autor uso 12.288 tokens en su prueba de GPQA).
+- Comprension de imagen y texto combinados (pipeline `image-text-to-text`): revision de imagenes y documentos a traves del proyector de vision F16.
+- Decodificacion especulativa mediante pesos MTP, que acelera la generacion al proponer varios tokens por paso.
+- Conversaciones multi-turno de contexto largo, con un limite arquitectonico de 262.144 tokens y un perfil practico probado de 100K.
+- Uso como asistente de sesiones largas en escritorio (perfil declarado por el autor: flujos de trabajo con Hermes y llama.cpp).
+- Soporte de tool calling y function calling: no disponible en la informacion proporcionada.
+- Capacidades de codigo y matematicas: no documentadas de forma especifica; la unica evaluacion publicada es GPQA (ciencia de nivel graduado).
+- Capacidades de audio: no disponibles.
 
 ## Casos de uso
 
-- Asistente local en una GPU de consumo: con ~11,05 GiB de pesos en IQ3_XXS y proyector F16, el modelo cabe en una RTX 5060 Ti de 16 GB junto con una cache K/V Q4_0, lo que permite desplegar un asistente multimodal sin depender de la nube.
-- Revision de imagenes y documentos: la carga del proyector de vision permite enviar capturas, diagramas o documentos escaneados y obtener descripciones o analisis en texto; el autor valida un caso de una imagen a 4K de contexto.
-- Razonamiento tecnico y cientifico: los 198 items de GPQA Diamond se responden con un presupuesto de razonamiento de 12.288 tokens, un perfil adecuado para preguntas de nivel posgrado en fisica, quimica y biologia.
-- Sesiones largas de asistente: con un contexto configurado de 100K tokens y una sola ranura activa, el modelo mantiene hilos conversacionales extensos sin perder el historial reciente, a costa de consumir casi toda la VRAM disponible (14.630 MiB de 16.311 MiB medidos).
-- Generacion de codigo en pipelines locales: al ser un derivado de un modelo orientado a codigo agentico, encaja en tareas de autocompletado, refactorizacion y generacion de tests dentro de un servidor llama.cpp accesible en localhost.
-- Redaccion de marketing y contenido web: el autor usa el modelo para trabajo de marketing y sitios web; es un caso de uso declarado por el propietario, no un benchmark estandarizado.
-- Despliegue con decodificacion especulativa: activando MTP-2 se obtiene una generacion media de 49,47 tok/s en una RTX 5060 Ti, una cifra util para asistentes interactivos en hardware de gama media.
-- Entornos con restricciones de conectividad: al ser un GGUF servido por llama.cpp en localhost, permite trabajar con datos sensibles sin salida a Internet.
+- Revision de imagenes y documentos en local: cargando el proyector F16 junto al GGUF, el modelo puede describir y analizar capturas, diagramas o paginas escaneadas sin salir de la maquina, lo que encaja con flujos de trabajo con requisitos de privacidad.
+- Asistente de escritorio para sesiones largas: con 100K de contexto configurado y cache K/V en Q4_0, permite mantener conversaciones prolongadas con historial extenso en una sola RTX 5060 Ti de 16 GB.
+- Investigacion y divulgacion cientifica asistida: la evaluacion publicada en GPQA Diamond (70,71% flexible, 16,16% estricto) sugiere utilidad como apoyo en preguntas de nivel graduado, siempre con verificacion humana dada la diferencia entre ambas metricas.
+- Redaccion de marketing y contenido web: el autor declara este uso como perfil principal; el modelo puede generar borradores de copy, variantes de mensajes y estructura de paginas en sesiones iterativas con contexto largo.
+- Prototipado de pipelines multimodales: sirve como banco de pruebas para integrar vision y decodificacion especulativa MTP en llama.cpp antes de escalar a modelos mayores o a infraestructura con GPU de datacenter.
+- Despliegue en entornos con GPU unica y VRAM limitada: al ocupar unos 11,05 GiB en disco y un pico medido de 14.630 MiB de VRAM con proyector cargado y sin imagenes, es adecuado para estaciones de trabajo con una sola GPU consumer.
+- Evaluacion comparativa de cuantizaciones: los hashes SHA-256 y el registro de benchmark permiten reproducir la medicion y comparar el efecto de IQ3_XXS frente a otras cuantizaciones del mismo checkpoint base.
 
 ## Benchmarks y rendimiento
 
-El unico resultado de benchmarks disponible es una ejecucion local del autor sobre GPQA Diamond, con semilla unica, llama.cpp b10909, contexto configurado de 100.000 tokens, una ranura activa, cache K/V y de borrador en Q4_0, MTP-2 y proyector de vision cargado en CUDA1. Las peticiones no contenian imagenes.
+El autor publica una unica ejecucion local de GPQA Diamond (198 preguntas, llama.cpp b10909, contexto configurado de 100K, una ranura activa, cache K/V y de borrador en Q4_0, MTP-2, proyector de vision cargado en CUDA1, sin imagenes en las peticiones). Se trata de una sola semilla en una sola maquina y no de una clasificacion independiente de calidad.
 
 | Metrica | Resultado |
 |---|---|
-| GPQA Diamond (puntuacion flexible) | 140/198 (70,71%) |
-| GPQA Diamond (puntuacion estricta) | 32/198 (16,16%) |
+| GPQA flexible | 140/198 (70,71%) |
+| GPQA estricto | 32/198 (16,16%) |
 | Procesamiento medio de prompt | 428,47 tok/s |
 | Generacion media | 49,47 tok/s |
 | Tiempo medio por pregunta | 92,33 s |
 | Pico de VRAM muestreado | 14.630 MiB de 16.311 MiB |
 
-Notas: una respuesta no se pudo parsear y otra alcanzo el limite de salida. La ejecucion uso la plantilla de chat Qwen-Sharp del autor, no incluida en el repositorio, por lo que los resultados pueden diferir con la plantilla embebida. No se han publicado resultados de MMLU, HumanEval, GSM8K ni otros benchmarks en la informacion disponible.
+Una respuesta no se pudo parsear y otra alcanzo el limite de salida. No se han publicado resultados de MMLU, HumanEval, GSM8K ni de otros benchmarks en la informacion disponible, por lo que no se incluye comparativa numerica con modelos similares.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: ~11,05 GiB solo para pesos (10,18 GiB del GGUF principal + 0,864 GiB del proyector F16). Con contexto de 100K y cache K/V Q4_0, el autor midio un pico de 14.630 MiB en una GPU de 16 GB.
-- GPU recomendadas: RTX 5060 Ti 16 GB (perfil validado por el autor), RTX 4080/4090 24 GB, RTX 5090, A100 y H100 para contextos mas largos o concurrencia.
-- Cabe en GPU de consumo: si, en cualquier tarjeta con al menos 16 GB de VRAM si se mantiene una unica ranura y se limita el contexto. En GPUs de 12 GB o menos no cabria el perfil probado.
-- Opciones de despliegue: llama.cpp (build b10909 o superior, con soporte de Qwen3.8/Qwen3.5 GGUF, proyectores de vision y MTP), servidor `llama serve` accesible en localhost, y en general cualquier runtime compatible con GGUF (Ollama, LM Studio). El soporte de GGUF en vLLM y TGI es limitado; no esta confirmado en la informacion disponible.
-- Latencia y throughput: 428,47 tok/s de procesamiento de prompt y 49,47 tok/s de generacion en una RTX 5060 Ti 16 GB con MTP-2 y contexto de 100K. No hay mediciones en otras GPUs.
-- Configuracion de muestreo sugerida por el autor: temperatura 1, top-k 20, top-p 0,95, min-p 0, penalizacion de presencia 0, penalizacion de repeticion 1.
+- VRAM estimada: unos 11,05 GiB de pesos (modelo + proyector) mas cache K/V y margen de trabajo; el pico medido en la prueba del autor fue de 14.630 MiB de 16.311 MiB con contexto de 100K configurado y sin imagenes.
+- GPU recomendadas: RTX 5060 Ti 16 GB (unica GPU validada por el autor); por capacidad de VRAM, cualquier GPU con 16 GB o mas deberia poder alojar el perfil probado, aunque no hay validacion publicada en A100, H100 ni RTX 4090.
+- Cabe en GPU consumer: si, en tarjetas de 16 GB como la RTX 5060 Ti; en tarjetas de 12 GB el margen es insuficiente para el perfil de 100K y habria que reducir contexto o cache.
+- Opciones de despliegue: llama.cpp (version b10909 o superior, con soporte de Qwen3.8/Qwen3.5 GGUF, proyectores de vision y MTP); el autor menciona Hermes como frontend. No hay informacion sobre soporte en vLLM, Ollama o TGI.
+- Latencia y throughput: medias de 428,47 tok/s en procesamiento de prompt y 49,47 tok/s en generacion, con una sola peticion activa y MTP-2. El throughput agregado con concurrencia no esta documentado.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Formato / cuantizacion | Licencia | Notas |
 |---|---|---|---|---|---|
-| kunthawat/swift-1.5-qwen3.8-27b-with-unsloth-iq3-xxs-gguf (esta ficha) | ~27B (nombre); 460.730.096 en metadatos de safetensors | 262.144 tokens (metadatos) | GPQA flexible 70,71% en una ejecucion local de una semilla | swift-open-license-v1.0-apache-2.0 | GGUF, 11,9 GB, 5 descargas |
-| ukisai/Swift-1.5-Qwen3.8-27b (checkpoint BF16 de origen) | 27B | no disponible en la informacion | Segun UkisAI, usa un 58,5% menos de tokens de pensamiento que el base y puntua un 0,35% mas, con 9,18x de aceleracion en varias tareas | swift-open-license-v1.0-apache-2.0 | Pesos completos en Hugging Face |
-| Qwen3.8-27B (modelo base) | 27B | no disponible en la informacion | Referencia de comparacion en las evaluaciones de UkisAI, con protocolos identicos y agregados de cinco repeticiones; puntuaciones concretas no disponibles | no disponible en la informacion | Repositorio GGUF de Unsloth |
-| ukisai/Swift-1.5-Qwen3.8-27b-INT4 | 27B | no disponible | Comparado con Qwen3.8-27B bajo el mismo protocolo; puntuaciones concretas no disponibles | swift-open-license-v1.0-apache-2.0 | Pesos INT4 en Hugging Face |
+| Swift 1.5 Qwen3.8-27B IQ3_XXS (este) | 27B nominales (460,7M en safetensors del repo) | 262.144 tokens (100K perfil practico) | GGUF IQ3_XXS + proyector F16 | swift-open-license-v1.0-apache-2.0 | Vision, MTP, medicion GPQA local |
+| ukisai/Swift-1.5-Qwen3.8-27b (base) | 27B nominales | no disponible | BF16 safetensors | no disponible | Checkpoint de origen, sin cuantizar |
+| unsloth/Qwen3.8-27B-GGUF (referencia de cuantizacion) | 27B nominales | no disponible | GGUF UD-IQ3_XXS | no disponible | Referencia publica de esquema e importance matrix; sin pesos MTP de Swift |
 
-No hay datos publicos de benchmarks comparativos entre esta cuantizacion concreta y alternativas de la misma categoria. Las cifras de UkisAI corresponden a Swift 1.5 como modelo, no a esta build IQ3_XXS.
+No se dispone de datos de rendimiento comparables entre estas tres variantes en la informacion proporcionada, por lo que la comparativa se limita a parametros, formato y licencia.
 
 ## Limitaciones y advertencias
 
-- Evidencia muy limitada: 5 descargas, 0 "likes" y una unica ejecucion de benchmark realizada por el propio autor, con una sola semilla. No es una evaluacion independiente.
-- Resultado estricto bajo en GPQA: 16,16% frente al 70,71% flexible, lo que indica problemas de formato o de cumplimiento estricto en las respuestas y sugiere que una respuesta de cada 198 no se pudo parsear y otra alcanzo el limite de salida.
-- Discrepancia en el recuento de parametros: los metadatos de safetensors declaran 460.730.096 parametros, incompatible con la denominacion "27B" y con el tamano del repositorio. Conviene verificar el modelo antes de integrarlo en produccion.
-- Riesgo de alucinacion: no se documenta ningun mecanismo especifico de mitigacion; como modelo de razonamiento generativo, es susceptible a errores factuales, especialmente en tareas sin verificacion externa.
-- Memoria: el autor advierte que ninguna cuantizacion puede garantizar que un numero arbitrario de imagenes a resolucion completa junto con un prompt de longitud maxima quepa en la GPU. El numero de imagenes, la resolucion, la longitud del prompt, el presupuesto de salida y otros procesos de la GPU afectan al consumo.
-- La prueba de vision publica es mas estrecha que el uso declarado: solo se verifico un caso de una imagen a 4K de contexto; la ejecucion de 100K en GPQA cargo el proyector pero no envio imagenes.
-- Plantilla de chat: el autor uso su plantilla Qwen-Sharp, no incluida en el repositorio. Los resultados con la plantilla embebida pueden diferir.
-- Idiomas soportados: no disponibles.
-- Licencia: swift-open-license-v1.0-apache-2.0, marcada como `license: other`. No es una licencia Apache 2.0 estandar, por lo que conviene revisar el archivo LICENSE antes de un uso comercial.
-- Nomenclatura: "with Unsloth IQ3_XXS" hace referencia a las referencias publicas de cuantizacion empleadas, no implica que sea un modelo oficial de Unsloth.
-- Uso en produccion: el perfil probado es de una sola peticion simultanea. No hay datos de concurrencia, throughput agregado ni estabilidad en despliegues multi-ranura.
+- El dato de parametros es contradictorio: el nombre comercial indica 27B, mientras que el campo de safetensors del repo declara 460.730.096 parametros. Conviene verificar el conteo real antes de planificar capacidad.
+- El contexto de 262.144 tokens es un limite arquitectonico en metadatos; el autor advierte que no implica que una peticion de esa longitud quepa en 16 GB. El perfil probado usa 100K.
+- El resultado de GPQA estricto (16,16%) es muy inferior al flexible (70,71%), lo que indica problemas de formato y adherencia a instrucciones estrictas; en produccion esto puede traducirse en salidas dificiles de parsear.
+- La prueba de imagenes es limitada: solo un smoke test con una imagen a 4K de contexto; la ejecucion de GPQA cargo el proyector pero no envio imagenes. El numero de imagenes, su resolucion y la longitud del prompt afectan al consumo de VRAM de forma no cuantificada.
+- El benchmark es una unica semilla en una unica maquina, con una plantilla de chat propia del autor (Qwen-Sharp) que no se incluye en el repositorio; los resultados no son reproducibles de forma exacta con la plantilla embebida.
+- La licencia se etiqueta como `other` con nombre swift-open-license-v1.0-apache-2.0; no se detallan en la informacion disponible las restricciones concretas para uso comercial, por lo que debe revisarse el fichero LICENSE antes de desplegar.
+- No es un modelo oficial de Unsloth pese al nombre; el autor lo aclara y no reclama la receta privada Dynamic V3.
+- No hay informacion sobre sesgos, idiomas soportados ni tasas de alucinacion medidas; el riesgo de alucinacion debe asumirse como el de cualquier modelo de esta escala sin evaluacion especifica.
+- El rendimiento con concurrencia (varias peticiones simultaneas) no esta documentado; el perfil probado es de una sola ranura.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/kunthawat/swift-1.5-qwen3.8-27b-with-unsloth-iq3-xxs-gguf
-- Modelo base (checkpoint BF16): https://huggingface.co/ukisai/Swift-1.5-Qwen3.8-27b
-- Repositorio GGUF de referencia de Unsloth (Qwen3.8-27B): https://huggingface.co/unsloth/Qwen3.8-27B-GGUF
-- Pagina de Unsloth sobre Qwen3.8-27B: https://unsloth.ai/models/qwen3.8-27b
-- Pagina de UkisAI con la comparativa Qwen3.8-27B / Swift 1.0 / Swift 1.5: https://ukisai.com/swift-1-5-27b
-- Catalogo de modelos de UkisAI: https://ukisai.com/models
-- Swift-1.5-Qwen3.8-27b-INT4: https://huggingface.co/ukisai/Swift-1.5-Qwen3.8-27b-INT4
-- Swift-1.5-Qwen3.8-27B-GSQ-RCO-GGUF: https://huggingface.co/ukisai/Swift-1.5-Qwen3.8-27B-GSQ-RCO-GGUF
-- Archivo IQ3_S-mtp dentro del repositorio GSQ-RCO: https://huggingface.co/ukisai/Swift-1.5-Qwen3.8-27B-GSQ-RCO-GGUF/blob/main/Swift-1.5-Qwen3.8-27B-GSQ-RCO-IQ3_S-mtp.gguf
+- Repositorio Hugging Face: https://huggingface.co/kunthawat/swift-1.5-qwen3.8-27b-with-unsloth-iq3-xxs-gguf
+- Modelo base: https://huggingface.co/ukisai/Swift-1.5-Qwen3.8-27b/tree/bc7a1e10b689648585a3ef41494c8d84cf77271a
+- Repositorio de referencia de cuantizacion de Unsloth: https://huggingface.co/unsloth/Qwen3.8-27B-GGUF
+- Registro de benchmark del autor: `gpqa-benchmark.json` (incluido en el repositorio)
+- Resultados de smoke test del autor: `smoke-test-results.json` (incluido en el repositorio)
+- Registro de sanitizacion de metadatos: `metadata-sanitization.json` (incluido en el repositorio)
+- Licencia: `LICENSE` (incluido en el repositorio)

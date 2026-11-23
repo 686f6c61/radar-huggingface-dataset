@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`buiduyet/buiduyet11` es un repositorio de modelo publicado en Hugging Face por el usuario `buiduyet`. La informacion publica disponible es minima: la model card se limita a declarar la licencia Apache 2.0 y no incluye descripcion, arquitectura, tamano, datos de entrenamiento ni ejemplos de uso. El repositorio no declara pipeline de inferencia ni idiomas soportados.
+`buiduyet/buiduyet11` es un repositorio de pesos publicado en Hugging Face por el usuario `buiduyet` bajo licencia Apache 2.0. El repositorio contiene exclusivamente ficheros en formato GGUF, lo que indica que se distribuye como pesos cuantizados listos para inferencia con llama.cpp u otros motores compatibles, no como pesos completos en safetensors. El tamano total del repositorio es de 18,2 GB.
 
-En el momento de la consulta el repositorio acumula 0 descargas y 1 like, y no registra actualizaciones desde su creacion. Esto indica que se trata de un artefacto practicamente sin adopcion ni documentacion tecnica asociada.
+La model card publicada no aporta informacion tecnica: se limita a declarar la licencia Apache 2.0, sin descripcion del modelo, arquitectura, datos de entrenamiento ni capacidades. No se declara pipeline, no se listan idiomas soportados y no hay resultados de evaluacion. El repositorio registra 545 descargas y 1 like en el momento de la consulta.
 
-Dado que no se ha publicado informacion sobre arquitectura, parametros, contexto o entrenamiento, esta ficha recoge unicamente los metadatos verificables del repositorio y marca de forma explicita todos los apartados tecnicos como "no disponible". No se debe asumir ninguna capacidad concreta del modelo sin inspeccionar los ficheros de pesos y la configuracion del repositorio.
+Por tanto, esta ficha solo puede documentar de forma fidedigna los metadatos disponibles (formato, licencia, tamano y estado del repositorio). Cualquier dato sobre parametros, contexto, arquitectura o rendimiento debe considerarse no disponible y no debe inferirse a partir del nombre del repositorio ni del tamano de los ficheros.
 
 ## Especificaciones tecnicas
 
@@ -14,38 +14,43 @@ Dado que no se ha publicado informacion sobre arquitectura, parametros, contexto
 |---|---|
 | Arquitectura | no disponible |
 | Parametros totales | no disponible |
-| Parametros activos | no disponible (no se ha confirmado que sea MoE) |
+| Parametros activos | no disponible |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible |
+| Tipos de cuantizacion | no disponible (el repositorio contiene ficheros GGUF, pero no se detallan las variantes) |
 | Idiomas soportados | no disponible |
-| Licencia | apache-2.0 |
-| Formato de pesos | no disponible |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF |
+| Tamano del repositorio | 18,2 GB |
+| Pipeline declarado | no disponible |
+| Fecha de creacion | 2026-10-03 |
+| Ultima actualizacion | 2026-10-30 |
+| Descargas | 545 |
+| Likes | 1 |
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura del modelo. La model card no describe si se trata de un transformer denso, un modelo de mezcla de expertos (MoE), una arquitectura de espacio de estados (SSM) o un modelo hibrido, ni tampoco el numero de parametros, la longitud de contexto o el tokenizador empleado.
+No disponible. La model card no describe la arquitectura (transformer, MoE, SSM u otra), no indica el numero de parametros, no detalla el corpus de entrenamiento ni menciona fases de ajuste como SFT, RLHF o DPO. Tampoco se documentan innovaciones tecnicas como atencion lineal, decodificacion especulativa o modos de razonamiento extendido.
 
-Tampoco hay datos sobre el proceso de entrenamiento: numero de tokens, composicion del dataset, uso de ajuste supervisado, RLHF, DPO u otras tecnicas de alineacion. Cualquier afirmacion al respecto seria especulativa y no debe utilizarse para evaluar el modelo.
+El unico dato estructural verificable es el formato de distribucion: ficheros GGUF, el formato binario usado por llama.cpp para pesos cuantizados con metadatos de tokenizador y arquitectura embebidos. El tamano agregado del repositorio (18,2 GB) sugiere pesos de gran volumen, pero sin el desglose de ficheros no es posible determinar el numero de parametros ni el nivel de cuantizacion de cada variante.
 
 ## Capacidades
 
-- No se ha documentado ninguna capacidad en la informacion disponible.
-- No hay confirmacion de generacion de texto, razonamiento, codigo o matematicas.
-- No hay confirmacion de soporte de tool calling o function calling.
-- No hay confirmacion de soporte para agentes o razonamiento multi-paso.
-- No hay confirmacion de capacidades multilingues.
-- No hay confirmacion de capacidades especiales (modo thinking, vision, audio).
+- No disponible. La model card no declara capacidades de generacion de texto, razonamiento, codigo, matematicas, vision o audio.
+- No se documenta soporte de tool calling ni function calling.
+- No se documenta soporte de agentes ni razonamiento multi-paso.
+- No se declaran capacidades multilingues ni idiomas cubiertos.
+- No se declara modo de pensamiento (thinking mode) ni capacidades multimodales.
 
 ## Casos de uso
 
-Los siguientes escenarios son plantillas genericas condicionadas a que una inspeccion directa del repositorio confirme que el modelo es un LLM de proposito general. No deben considerarse casos de uso validados, ya que no existe documentacion que los respalde:
+- Evaluacion local con llama.cpp: al distribuirse en GGUF, el modelo puede cargarse en llama.cpp para pruebas de inferencia en local, siempre que se verifique previamente la arquitectura embebida en los metadatos del fichero.
+- Despliegue en entornos con requisitos de licencia permisiva: la licencia Apache 2.0 permite uso comercial y modificacion sin obligacion de compartir derivados, lo que facilita su integracion en productos propietarios una vez validado el comportamiento del modelo.
+- Pruebas de compatibilidad de tooling: util para verificar pipelines de conversion, cuantizacion y carga de GGUF en herramientas como Ollama o servidores compatibles con la API de llama.cpp.
+- Experimentacion academica con modelos de licencia abierta: sirve como base para comparativas de cuantizacion o para estudiar el impacto del formato GGUF en latencia y memoria.
+- Prototipado interno sin garantias de produccion: adecuado para demos y pruebas de concepto donde el equipo asume la ausencia de documentacion y realiza su propia evaluacion.
+- Analisis de procedencia de modelos: el repositorio es un caso de estudio sobre publicaciones sin model card tecnica, util para equipos que disenan politicas de adopcion de modelos en funcion de la trazabilidad disponible.
 
-- Verificacion de artefactos en formato abierto: descargar los pesos y comprobar si son compatibles con `transformers`, `llama.cpp` u otros runners antes de plantear cualquier integracion.
-- Prototipado interno no critico: usar el modelo en un entorno de pruebas aislado para evaluar su comportamiento real, dado que no hay benchmarks publicados.
-- Evaluacion comparativa propia: someterlo a un conjunto de tareas propio (por ejemplo, generacion de texto o respuesta a preguntas) y comparar con un modelo de referencia de tamano conocido.
-- Analisis de pesos y configuracion: inspeccionar `config.json`, `tokenizer_config.json` y los ficheros de pesos para determinar arquitectura, vocabulario y contexto reales.
-- Estudio de licencias en repositorios de terceros: utilizar el repositorio como caso de analisis de publicaciones con licencia Apache 2.0 pero sin documentacion tecnica.
-- Base para fine-tuning experimental: solo si la arquitectura y el tamano resultan adecuados tras la inspeccion, y asumiendo el coste de validar el modelo desde cero.
+En todos los casos, el uso en produccion exige una evaluacion propia previa, dado que no hay informacion publicada sobre calidad, sesgos o comportamiento.
 
 ## Benchmarks y rendimiento
 
@@ -53,27 +58,29 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible, al desconocerse el numero de parametros y el formato de pesos.
-- GPU recomendadas: no disponible por el mismo motivo.
-- Compatibilidad con GPU de consumo: no disponible; no se puede determinar sin conocer el tamano del modelo.
-- Opciones de despliegue: no disponibles; se desconoce si los pesos son compatibles con vLLM, llama.cpp, Ollama, TGI u otros motores.
-- Latencia y throughput: no disponible.
+- VRAM estimada: no disponible. Depende del numero de parametros y de la cuantizacion de cada fichero GGUF, datos que no se detallan.
+- GPU recomendadas: no disponible.
+- Compatibilidad con GPU de consumo: no determinable sin conocer el tamano del modelo y las variantes de cuantizacion.
+- Opciones de despliegue: llama.cpp y cualquier runtime compatible con GGUF (por ejemplo, Ollama o servidores basados en llama.cpp). No se confirma compatibilidad con vLLM o TGI, que requieren pesos en safetensors o formatos propios.
+- Latencia y throughput: no disponibles.
+
+Como referencia orientativa y no atribuible a este modelo, el repositorio ocupa 18,2 GB en total; si ese volumen correspondiera a una unica variante de pesos, el modelo no cabria en GPU de consumo con 24 GB de VRAM en precision completa, pero esta inferencia no puede confirmarse con los datos publicados.
 
 ## Comparativa con modelos similares
 
-No disponible. No se puede establecer una comparativa fiable porque se desconocen el tamano, la arquitectura y el rendimiento del modelo, y no se ha identificado ninguna categoria funcional a la que pertenezca.
+No disponible. La ausencia de datos sobre parametros, contexto, arquitectura y rendimiento impide establecer una comparacion fundamentada con alternativas de la misma categoria. Cualquier comparacion seria especulativa.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de documentacion tecnica: no hay model card, paper, blog ni repositorio de codigo asociado.
-- Imposibilidad de verificar capacidades, calidad o seguridad del modelo sin inspeccionar y ejecutar los pesos.
-- Riesgo de sesgos y alucinacion: no evaluable, ya que no se ha publicado informacion sobre datos de entrenamiento ni alineacion.
-- Idiomas soportados desconocidos, por lo que no se puede garantizar un comportamiento correcto en castellano ni en ningun otro idioma.
-- Adopcion nula: 0 descargas y 1 like en el momento de la consulta, lo que implica ausencia de validacion por parte de la comunidad.
-- Licencia Apache 2.0: permite uso comercial y modificacion, pero el autor no ofrece garantias ni asume responsabilidad sobre el contenido o los pesos publicados.
-- Antes de cualquier uso en produccion, es imprescindible auditar los ficheros del repositorio por posibles problemas de seguridad, licencias de terceros o pesos corruptos.
+- Ausencia total de model card tecnica: no hay informacion sobre arquitectura, entrenamiento, datos ni evaluacion, lo que impide auditar el modelo.
+- Riesgo de alucinacion y sesgos: no evaluables sin documentacion ni resultados de benchmarks.
+- Idiomas y contexto: no declarados; no puede asumirse cobertura multilingue ni una ventana de contexto concreta.
+- Procedencia incierta: el nombre del repositorio y del autor no aportan informacion verificable sobre el origen de los pesos ni sobre si derivan de otro modelo base.
+- Licencia: Apache 2.0 permite uso comercial, pero el publicador no ofrece garantias sobre la cadena de derechos de los pesos subyacentes; conviene verificar la procedencia antes de un uso comercial.
+- Formato: al ser GGUF, la integracion con stacks de servido de alto rendimiento basados en safetensors (vLLM, TGI) no esta garantizada.
+- Advertencia para produccion: no se recomienda su adopcion en sistemas productivos sin una evaluacion interna completa de calidad, seguridad y comportamiento.
 
 ## Enlaces
 
 - Repositorio en Hugging Face: https://huggingface.co/buiduyet/buiduyet11
-- No se han encontrado papers, blogs, repositorios de codigo ni demos asociados en la informacion disponible.
+- No se han encontrado en la busqueda web papers, blogs, repositorios de codigo ni demos adicionales asociados a este modelo.

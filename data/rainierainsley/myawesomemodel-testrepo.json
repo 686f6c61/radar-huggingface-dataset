@@ -39,31 +39,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "RainierAinsley/MyAwesomeModel-TestRepo · Hugging Face",
-      "url": "https://huggingface.co/RainierAinsley/MyAwesomeModel-TestRepo",
-      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
-    },
-    {
-      "title": "RainierAinsley (RainierAinsley) - Hugging Face",
-      "url": "https://huggingface.co/RainierAinsley/models",
-      "snippet": "RainierAinsley&#x27;s models1 Sort: Recently updated RainierAinsley/MyAwesomeModel-TestRepo Feature Extraction •Updated about 7 hours ago"
-    },
-    {
-      "title": "MyAwesomeModel-TestRepo: Model Details, Context & Pricing | Essa Mamdani",
-      "url": "https://essamamdani.com/ai-models/hf-timesup-eval-myawesomemodel-testrepo",
-      "snippet": "Model card indexed from Hugging Face. Specs: sourced from Hugging Face. Compare MyAwesomeModel-TestRepo&#x27;s parameters, context window, pricing and benchmarks aga"
-    },
-    {
-      "title": "MyAwesomeModel TestRepo (未知) — MMLU 30 | Deploy Guide & Hardware Fit ...",
-      "url": "https://openmodelmap.com/model/dongbobo/MyAwesomeModel-TestRepo",
-      "snippet": "MyAwesomeModel TestRepo by dongbobo. Scores: MMLU 30, . 未知 open-source AI model. MyAwesomeModel-TestRepo is an embedding model based on BERT by dongbobo, licensed under MIT and desi"
-    },
-    {
-      "title": "MyAwesomeModel-TestRepo: Model Details, Context & Pricing | Essa Mamdani",
-      "url": "https://essamamdani.com/ai-models/hf-rsibench-myawesomemodel-testrepo",
-      "snippet": "Model card indexed from Hugging Face for feature-extraction. Specs: built for embeddings, sourced from Hugging Face. Compare MyAwesomeModel-TestRepo&#x27;s parameter"
-    }
-  ]
+  "sources": []
 }

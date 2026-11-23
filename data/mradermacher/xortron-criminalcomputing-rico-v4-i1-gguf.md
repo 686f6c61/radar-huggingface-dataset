@@ -2,87 +2,100 @@
 
 ## Resumen
 
-`mradermacher/XORTRON-CriminalComputing-RICO-v4-i1-GGUF` es un repositorio de cuantizaciones en formato GGUF generado por el usuario mradermacher a partir del modelo `darkc0de/XORTRON-CriminalComputing-RICO-v4`. No se trata, por tanto, de un modelo entrenado desde cero ni de un fine-tune original, sino de una redistribucion optimizada para inferencia local con llama.cpp y derivados (Ollama, LM Studio, kobold.cpp). El sufijo `i1` indica que las cuantizaciones se han calculado con matriz de importancia (imatrix), una tecnica que pondera el error de cuantizacion segun la relevancia de cada peso en un corpus de calibracion y que suele producir quants de baja precision con menos degradacion que los quants estandar equivalentes.
+XORTRON-CriminalComputing-RICO-v4-i1-GGUF es una coleccion de cuantizaciones GGUF generadas por mradermacher a partir del modelo darkc0de/XORTRON-CriminalComputing-RICO-v4, un merge de aproximadamente 27.320 millones de parametros construido con mergekit. El modelo base se presenta explicitamente como un experimento sin censura ("abliterated", "heretic", "uncensored") afinado sobre el dataset darkc0de/XORTRON-RESTRICTED-RESEARCH-SFT, y su model card lo etiqueta como material "not-for-all-audiences" y "toxic". No es, por tanto, un modelo de proposito general, sino una pieza de investigacion sobre alineamiento y comportamiento de modelos.
 
-El modelo base pertenece a la familia XORTRON de darkc0de. El nombre (`CriminalComputing-RICO`) apunta a un fine-tune orientado a dominio legal/penal estadounidense (RICO es la ley federal de organizaciones corruptas e influenciadas por el crimen organizado) o a simulacion de escenarios delictivos, pero no se dispone de informacion verificada sobre el dataset de entrenamiento, el procedimiento de ajuste ni la licencia. Los metadatos del repositorio no incluyen `pipeline`, idiomas, licencia ni model card descriptiva mas alla de los comentarios tecnicos del proceso de cuantizacion.
+El repositorio que nos ocupa no contiene pesos originales en safetensors, sino 15 ficheros GGUF cuantizados con imatrix (metodo i1) mas el fichero imatrix auxiliar, con tamanos que van de 11,0 GB (i1-Q2_K) a 22,5 GB (i1-Q6_K). Esta pensado para ejecucion local con llama.cpp y derivados (Ollama, LM Studio, KoboldCpp) en hardware de consumo, no para despliegue en produccion.
 
-La relevancia de esta ficha es limitada y debe interpretarse con cautela: el repositorio acumula 0 descargas y 0 likes, tiene un tamano declarado de 0,0 GB y el dato de parametros totales reportado (3.391.984) es anomalo para un modelo de lenguaje conversacional, por lo que probablemente procede de un error de metadatos. Se documenta aqui lo estrictamente verificable desde la informacion disponible.
+Su relevancia es fundamentalmente metodologica: sirve como ejemplo de cuantizacion con imatrix sobre un merge de ~27B y como caso de estudio de los riesgos de publicar variantes "abliterated" sin licencia declarada, sin idiomas declarados y sin evaluacion publica. Cualquier uso serio debe tratarse como entorno aislado y con supervision humana.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible |
-| Parametros totales | 3.391.984 (segun metadatos safetensors del repositorio; cifra no verificada y probablemente erronea para un LLM conversacional) |
-| Parametros activos | no disponible (no se ha confirmado que sea un modelo MoE) |
+| Arquitectura | no disponible (modelo base descrito como merge generado con mergekit; no se detalla la arquitectura interna) |
+| Parametros totales | 27.320.697.856 (~27,3B) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Q2_K, Q2_K_S, IQ2_XXS, IQ2_XS, IQ2_S, IQ2_M, IQ1_S, IQ1_M, Q3_K_S, Q3_K_M, Q3_K_L, IQ3_XXS, IQ3_XS, IQ3_S, IQ3_M, Q4_0, Q4_1, Q4_K_S, Q4_K_M, IQ4_XS, small-IQ4_NL, Q5_K_S, Q5_K_M, Q6_K (todas con ponderacion imatrix) |
-| Idiomas soportados | no disponible |
+| Tipos de cuantizacion | i1-Q2_K, i1-Q3_K_S, i1-IQ3_S, i1-IQ3_M, i1-Q3_K_M, i1-Q3_K_L, i1-IQ4_XS, i1-Q4_0, i1-Q4_K_S, i1-Q4_K_M, i1-Q4_1, i1-Q5_K_S, i1-Q5_K_M, i1-Q6_K; fichero imatrix incluido |
+| Idiomas soportados | en (declarado en la model card del modelo base) |
 | Licencia | no disponible |
-| Formato de pesos | GGUF (unico formato publicado en este repositorio) |
+| Formato de pesos | GGUF (cuantizaciones i1 con imatrix); existen cuantizaciones estaticas en el repo hermano XORTRON-CriminalComputing-RICO-v4-GGUF |
+| Tamano del repositorio | 218,6 GB |
+| Dataset de afinado | darkc0de/XORTRON-RESTRICTED-RESEARCH-SFT |
+| Etiquetas destacadas | merge, mergekit, unsloth, uncensored, harmful, heretic, abliterated, toxic, experimental, not-for-all-audiences |
+| Fecha de creacion / actualizacion | 2026-09-25 / 2026-11-20 |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion sobre la arquitectura del modelo base: la model card del repositorio de cuantizacion no incluye ni el tipo de transformer, ni el numero de capas, ni la dimension de embeddings, ni el mecanismo de atencion. Tampoco se documenta si emplea atencion completa, atencion lineal, capas recurrentes o una combinacion hibrida, ni si incorpora mezcla de expertos.
+No se dispone de informacion detallada sobre la arquitectura interna del modelo base. La model card indica que se trata de un merge construido con mergekit y que el afinado se realizo sobre darkc0de/XORTRON-RESTRICTED-RESEARCH-SFT; las etiquetas incluyen "unsloth", lo que sugiere que el SFT se hizo con esa libreria, aunque no se especifica el numero de tokens, la composicion del dataset ni si hubo etapas de RLHF o DPO. Tampoco se documenta la ventana de contexto nativa ni la tokenizer.
 
-Respecto al entrenamiento, la informacion disponible se limita a los metadatos del proceso de cuantizacion realizados por mradermacher: `quantize_version: 2`, `output_tensor_quantised: 1`, `convert_type: hf` y la etiqueta interna `nicoboss`. Se sabe que las cuantizaciones son "weighted/imatrix", es decir, calibradas con una matriz de importancia, pero se desconoce el corpus de calibracion utilizado, el numero de tokens de entrenamiento del modelo original, la composicion del dataset, la posible aplicacion de RLHF, DPO o cualquier otra fase de alineamiento. El campo `vocab_type` aparece vacio en los metadatos, por lo que no puede confirmarse el tokenizador ni el vocabulario del modelo base.
+La innovacion tecnica relevante de este repositorio es la cuantizacion: mradermacher aplica cuantizacion ponderada con imatrix (sufijo i1), que calibra los errores de cuantizacion con una matriz de importancia derivada de datos de calibracion. El autor incluye en la model card sus recomendaciones habituales: IQ3_XXS sobre Q2_K, IQ3_XS sobre Q3_K_S, IQ3_S por encima de la familia Q3_K, e IQ3_M por encima de Q3_K_L; para uso general senala i1-Q4_K_S como relacion optima tamano/velocidad/calidad e i1-Q4_K_M como opcion rapida recomendada. El resto de decisiones de entrenamiento (datos, filtros, mitigaciones) no esta documentado.
 
 ## Capacidades
 
-- Generacion de texto conversacional: no confirmada de forma explicita en la informacion disponible; el repositorio no incluye ejemplos de uso ni evaluaciones.
-- Razonamiento y matemáticas: no disponible.
-- Generacion de codigo: no disponible.
-- Soporte de tool calling / function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingues: no disponible; no se declara ninguna lista de idiomas.
-- Capacidades especiales (modo thinking, vision, audio, contexto largo): no disponible.
-- El unico aspecto tecnico confirmado es la capacidad de ejecutarse en runtimes compatibles con GGUF, incluidas todas las variantes de cuantizacion publicadas (desde IQ1_S hasta Q6_K).
+- Generacion de texto conversacional en ingles, segun la etiqueta "conversational" y el pipeline declarado.
+- Afinado orientado a respuestas sin rechazo ("abliterated", "heretic"), lo que en la practica implica menor tendencia a declinar peticiones, incluido contenido sensible.
+- Capacidad declarada de manejar contenido toxico o danino como objeto de estudio ("harmful", "toxic"), segun la propia clasificacion del autor.
+- Soporte de inferencia via llama.cpp y ecosistema GGUF (Ollama, LM Studio, KoboldCpp, text-generation-webui).
+- Compatibilidad con endpoints (etiqueta "endpoints_compatible"), es decir, puede servirse detras de una API compatible con TGI/transformers.
+- No se documentan capacidades de tool calling, function calling, agentes, vision, audio ni modo de razonamiento explicito.
+- Capacidades multilingues: solo ingles declarado; el resto de idiomas no esta verificado.
 
 ## Casos de uso
 
-Debido a la ausencia de informacion sobre el modelo base, su licencia y sus capacidades, no es posible recomendar casos de uso en produccion con garantias. Los escenarios siguientes son los unicos planteables con criterio tecnico a partir de lo que si esta confirmado (formato GGUF e imatrix quants):
-
-- Inferencia local en hardware modesto: el abanico de cuantizaciones publicadas (desde IQ1_S/IQ2_XXS hasta Q6_K) permite ajustar el modelo al presupuesto de memoria disponible, lo que lo hace util para experimentar en equipos sin GPU dedicada o con VRAM limitada mediante llama.cpp.
-- Evaluacion exploratoria de un fine-tune especializado: el nombre del modelo apunta a un dominio concreto (computacion criminal / RICO); el repositorio serviria para inspeccionar cualitativamente el comportamiento de ese fine-tune antes de decidir si merece un estudio mas profundo.
-- Pruebas de robustez de cuantizacion: dado que se publican 24 variantes del mismo modelo, resulta un caso util para medir la degradacion de perplejidad entre niveles de cuantizacion (por ejemplo Q2_K frente a Q4_K_M frente a Q6_K) con una unica base de referencia.
-- Integracion en entornos de investigacion sobre alineamiento y seguridad: si el modelo base carece de filtros de contenido, podria emplearse como objeto de estudio en trabajos sobre generacion de contenido nocivo, siempre bajo condiciones controladas y con revision etica previa.
-- Despliegue en Ollama o LM Studio para pruebas de interfaz: el formato GGUF es directamente compatible con estos runners, lo que permite validar rapidamente el comportamiento conversacional sin infraestructura adicional.
-- Reproducibilidad del pipeline de cuantizacion: el repositorio documenta las etiquetas de configuracion (`quantize_version`, `output_tensor_quantised`, `convert_type`), lo que permite replicar el procedimiento sobre otros modelos con llama.cpp.
-
-No se recomienda ningun caso de uso en produccion comercial: la licencia es desconocida, por lo que el uso comercial queda sin cobertura legal clara.
+- Investigacion sobre alineamiento y rechazo: el modelo permite estudiar como varia la tasa de rechazo y la calidad de respuesta tras un proceso de "abliteration", comparandolo con el modelo base sin modificar en un entorno controlado.
+- Red teaming y evaluacion de seguridad: util para construir baterias de prompts adversarios y medir la robustez de filtros y clasificadores propios, dado que el modelo esta disenado para no auto-censurarse.
+- Analisis de contenido toxico en corpus: usar el modelo como generador de ejemplos etiquetados para entrenar o validar clasificadores de toxicidad, siempre con revision humana y sin exposicion publica.
+- Pruebas de cuantizacion: el conjunto de 14 cuantizaciones i1 permite medir la degradacion de perplejidad y calidad conversacional entre Q2_K y Q6_K sobre un mismo merge de ~27B, un caso util para calibrar pipelines de cuantizacion.
+- Docencia en seguridad de IA: escenario de laboratorio para mostrar los efectos de merges sin evaluacion y de la publicacion de modelos sin licencia ni documentacion.
+- Inferencia local en hardware de consumo: con i1-Q4_K_M (16,9 GB) o i1-IQ4_XS (15,4 GB) puede ejecutarse en una GPU de 24 GB o en CPU con RAM suficiente, lo que facilita experimentos sin infraestructura de datacenter.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El repositorio no incluye evaluaciones de MMLU, HumanEval, GSM8K, MT-Bench ni ninguna otra métrica, ni comparaciones con modelos de referencia. Tampoco se dispone de mediciones de perplejidad para las distintas cuantizaciones publicadas.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye MMLU, HumanEval, GSM8K ni ninguna otra metrica de calidad, y tampoco se aportan mediciones de perplejidad de las cuantizaciones mas alla de las recomendaciones cualitativas del autor.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible con fiabilidad. El unico dato de parametros proporcionado (3.391.984) implicaria un modelo de aproximadamente 3,4 millones de parametros, que cabria en unos pocos megabytes de memoria y se ejecutaria en CPU sin necesidad de GPU; sin embargo, esa cifra es incompatible con el nombre y la naturaleza del modelo y con el hecho de que se publique un espectro de 24 cuantizaciones, por lo que debe considerarse no fiable.
-- GPU recomendadas: no disponible. No hay informacion que permita asociar el modelo a un rango de GPUs (A100, H100, RTX 4090, etc.).
-- Compatibilidad con GPU de consumo: no confirmada. Si el modelo base resultase ser de la clase 7B-12B, habitual en la familia XORTRON, quedaria dentro de las GPU de consumo con 8-16 GB de VRAM en cuantizaciones Q4_K_M o inferiores; si resultase mayor, no cabria. No se dispone de datos para confirmarlo.
-- Opciones de despliegue: el formato GGUF es compatible con llama.cpp, Ollama, LM Studio, kobold.cpp, llama-cpp-python y text-generation-webui (loader llama.cpp). No es compatible directamente con vLLM ni con TGI, que requieren safetensors; para esos runners habria que usar el modelo base `darkc0de/XORTRON-CriminalComputing-RICO-v4`.
-- Latencia y throughput estimados: no disponible. No se han publicado mediciones de tokens por segundo ni de tiempo hasta el primer token para ninguna configuracion de hardware.
+- VRAM estimada: aproximadamente el tamano del fichero GGUF mas overhead de contexto y cache KV. Rangos: ~11-13 GB para i1-Q2_K e i1-IQ3_*; ~15-17 GB para i1-IQ4_XS, i1-Q4_0, i1-Q4_K_S e i1-Q4_K_M; ~19-23 GB para i1-Q5_K_* e i1-Q6_K.
+- GPU recomendadas: RTX 3090/4090 (24 GB) para i1-Q4_K_M e i1-Q5_K_M; A100 40/80 GB o H100 para i1-Q6_K con contexto largo; GPUs de 16 GB solo admiten cuantizaciones Q2/Q3 o descarga parcial de capas.
+- Cabe en GPU de consumo: si, en RTX 3090/4090 con cuantizaciones Q4 y Q5; en GPUs de 16 GB (RTX 4060 Ti, 4070 Ti Super) con Q3 o con offload parcial a CPU.
+- Despliegue: llama.cpp, Ollama, LM Studio, KoboldCpp, text-generation-webui; tambien puede servirse mediante endpoints compatibles. No se recomienda vLLM ni TGI para GGUF.
+- Latencia y throughput: no disponibles; no se han publicado mediciones.
 
 ## Comparativa con modelos similares
 
-No disponible. Con la informacion proporcionada no es posible identificar modelos comparables: se desconoce el numero real de parametros, la longitud de contexto, el rendimiento y la licencia del modelo, que son precisamente los ejes de comparacion necesarios. El unico elemento de referencia conocido es el propio modelo base `darkc0de/XORTRON-CriminalComputing-RICO-v4`, del que este repositorio es una derivacion en GGUF, y el ecosistema habitual de cuantizadores alternativos (TheBloke, bartowski) para el que no se ha verificado si existe una version equivalente de este modelo concreto.
+No se dispone de datos de rendimiento del modelo, por lo que la comparativa se limita a caracteristicas estructurales. Las alternativas indicadas son ejemplos de la misma categoria (modelos de ~27-32B cuantizados en GGUF para uso local), no necesariamente equivalentes en comportamiento.
+
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|
+| XORTRON-CriminalComputing-RICO-v4-i1-GGUF | ~27,3B | no disponible | no disponible | GGUF i1 (14 cuantizaciones) | Merge sin censura, sin benchmarks, etiquetado como toxico/experimental |
+| Modelos de ~27-32B de proposito general con GGUF | ~27-32B | variable segun familia | habitualmente licencias permisivas o de comunidad | GGUF | Suelen incluir model card con benchmarks y contexto declarado; no verificable en esta ficha sin datos concretos |
+| Variantes "abliterated" de modelos abiertos | variable | variable | variable | safetensors y GGUF | Misma categoria de experimento de desalineamiento; habitualmente con documentacion metodologica mas detallada |
+
+No se dispone de informacion suficiente para comparar calidad, contexto o rendimiento con alternativas concretas.
 
 ## Limitaciones y advertencias
 
-- Sesgos conocidos: no disponible. No hay informacion sobre el dataset de entrenamiento ni sobre el proceso de alineamiento del modelo base.
-- Riesgo de alucinacion: no evaluado. No existen benchmarks ni pruebas publicadas.
-- Limitaciones de contexto e idioma: se desconoce la ventana de contexto y los idiomas soportados. El nombre del modelo sugiere un enfoque en ingles y en terminologia legal estadounidense, pero es una inferencia no confirmada.
-- Restricciones de licencia: la licencia es desconocida, lo que impide cualquier uso comercial o redistribucion con seguridad juridica. Se debe consultar el repositorio del modelo base antes de cualquier uso.
-- Contenido potencialmente sensible: el identificador `CriminalComputing-RICO` sugiere un fine-tune orientado a escenarios delictivos o a derecho penal. Si el modelo base carece de alineamiento de seguridad, podria generar contenido nocivo, instrucciones ilegales o asesoramiento legal no fiable. No se ha verificado ninguna de estas posibilidades.
-- Ausencia de validacion por la comunidad: 0 descargas y 0 likes en el momento de la consulta. No hay evidencia de uso, revision por pares ni pruebas independientes.
-- Metadatos no fiables: el recuento de parametros declarado (3.391.984), el tamano de repositorio (0,0 GB) y la fecha de creacion (2026-09-25) son inconsistentes o anómalos, lo que obliga a tratar toda la metadata del repositorio con escepticismo.
-- Nombre de tensor de salida cuantizado: la etiqueta `output_tensor_quantised: 1` indica que la capa de salida tambien esta cuantizada, lo que en algunos modelos degrada mas la calidad que cuantizar solo las capas internas.
-- No apto para produccion sin validacion previa: cualquier despliegue real exige verificar primero el modelo base, su licencia y su comportamiento.
+- El autor etiqueta el modelo como "toxic", "harmful", "uncensored", "heretic", "abliterated" y "not-for-all-audiences": esta disenado para reducir rechazos y puede generar contenido danino, ilegal o gravemente ofensivo.
+- Ausencia total de licencia declarada: no hay permiso explicito de uso comercial ni de redistribucion; el uso en produccion es juridicamente arriesgado.
+- Sin benchmarks ni evaluacion publica: no hay evidencia de calidad, seguridad ni robustez frente a prompt injection.
+- Sin idiomas declarados mas alla del ingles; el comportamiento en castellano no esta verificado.
+- Sin contexto declarado: no se puede planificar su uso en tareas de contexto largo sin medirlo empiricamente.
+- Riesgo elevado de alucinacion y de respuestas confiadas pero incorrectas, agravado por la falta de evaluacion.
+- Sesgos desconocidos: no se documenta composicion del dataset de SFT ni filtros aplicados, por lo que los sesgos no son auditables.
+- El proceso de merge con mergekit puede producir degradaciones no triviales de coherencia que solo se detectan con evaluacion.
+- No apto para atencion al cliente, entornos educativos abiertos ni cualquier despliegue expuesto a usuarios sin moderacion y supervision humana.
+- El repositorio ocupa 218,6 GB; descargar cuantizaciones individuales, no el repo completo, en entornos con almacenamiento limitado.
 
 ## Enlaces
 
-- Repositorio GGUF en Hugging Face: https://huggingface.co/mradermacher/XORTRON-CriminalComputing-RICO-v4-i1-GGUF
-- Modelo base (referenciado en la model card): https://huggingface.co/darkc0de/XORTRON-CriminalComputing-RICO-v4
-- Perfil del autor de las cuantizaciones: https://huggingface.co/mradermacher
-- Repositorio de llama.cpp (runtime compatible con GGUF): https://github.com/ggml-org/llama.cpp
-- No se han encontrado en la informacion disponible papers, blogs, demos ni repositorios adicionales asociados a este modelo.
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/XORTRON-CriminalComputing-RICO-v4-i1-GGUF
+- Modelo base: https://huggingface.co/darkc0de/XORTRON-CriminalComputing-RICO-v4
+- Dataset de SFT: https://huggingface.co/datasets/darkc0de/XORTRON-RESTRICTED-RESEARCH-SFT
+- Cuantizaciones estaticas: https://huggingface.co/mradermacher/XORTRON-CriminalComputing-RICO-v4-GGUF
+- Pagina de descargas del autor: https://hf.tst.eu/model#XORTRON-CriminalComputing-RICO-v4-i1-GGUF
+- Preguntas frecuentes y solicitudes de cuantizacion: https://huggingface.co/mradermacher/model_requests
+- Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Grafico comparativo de tipos de cuantizacion (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png
+- Notas de Artefact2 sobre cuantizacion: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- nethype GmbH: https://www.nethype.de/

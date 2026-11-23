@@ -50,31 +50,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "GitHub CLI | Take GitHub to the command line",
-      "url": "https://cli.github.com/",
-      "snippet": "Sep 5, 2026 · Take GitHub to the command line GitHub CLI brings GitHub to your terminal. Free and open source."
-    },
-    {
-      "title": "GitHub - deepseek-ai/deepseek-harness: DeepSeek Harness: …",
-      "url": "https://github.com/deepseek-ai/deepseek-harness",
-      "snippet": "Aug 14, 2026 · DeepSeek Harness: Everything is a Plugin. Contribute to deepseek-ai/deepseek-harness development by creating an …"
-    },
-    {
-      "title": "GitHub - ruvnet/ruflo: The original agent harness. Deploy intelligent ...",
-      "url": "https://github.com/ruvnet/ruflo",
-      "snippet": "🌊 The original agent harness. Deploy intelligent multi-player swarms, coordinate autonomous workflows, and build conversational AI …"
-    },
-    {
-      "title": "Models and pricing for GitHub Copilot - GitHub Docs",
-      "url": "https://docs.github.com/en/copilot/reference/copilot-billing/models-and-pricing",
-      "snippet": "See per-token pricing for the models available in GitHub Copilot and reference rates for additional usage across plans."
-    },
-    {
-      "title": "在MAC下面有什么好用的终端工具？ - 知乎",
-      "url": "https://www.zhihu.com/question/21865155",
-      "snippet": "Anthropic官方 推荐Ghostty作为Claude Code的首选终端，官方推荐理由是： 性能极致：超级快，GPU加速，渲染速度比iTerm2快3-5 …"
-    }
-  ]
+  "sources": []
 }

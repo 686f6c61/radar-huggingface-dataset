@@ -1,0 +1,40 @@
+{
+  "schema": 2,
+  "id": "SZLHOLDINGS/salad-lora-mistral7b-quant-v1",
+  "slug": "szlholdings-salad-lora-mistral7b-quant-v1",
+  "author": "SZLHOLDINGS",
+  "url": "https://huggingface.co/SZLHOLDINGS/salad-lora-mistral7b-quant-v1",
+  "created_at": "2026-11-16T07:30:53.000Z",
+  "updated_at": "2026-11-23T00:14:50.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1678322400,
+  "storage_human": "1.7 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

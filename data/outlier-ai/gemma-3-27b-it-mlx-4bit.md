@@ -2,94 +2,98 @@
 
 ## Resumen
 
-`Outlier-Ai/gemma-3-27b-it-MLX-4bit` es una conversion a 4 bits en formato MLX del modelo `google/gemma-3-27b-it`, publicada por el equipo de Outlier (desarrolladores de una aplicacion macOS de inferencia local). No es un modelo entrenado desde cero, sino una cuantizacion del Gemma 3 27B instructivo de Google, empaquetada especificamente para ejecutarse sobre Apple Silicon mediante el framework MLX y el backend Metal.
+`Outlier-Ai/gemma-3-27b-it-MLX-4bit` es una conversion a 4 bits en formato MLX del modelo `google/gemma-3-27b-it`, publicada por el equipo de Outlier. El modelo original es un transformer decoder-only de Google con 27.009.346.304 parametros (27B), afinado para instrucciones y conversacion, y esta disenado para generacion de texto, razonamiento, codigo y uso de herramientas. Esta version concreta no es un modelo nuevo: es una cuantizacion pensada para ejecucion local sobre Apple Silicon mediante el framework MLX y Metal.
 
-El modelo base es un transformer denso de 27.009.346.304 parametros (dato real extraido de los safetensors del repositorio), orientado a generacion de texto, conversacion, razonamiento y uso de herramientas. La cuantizacion a 4 bits reduce el peso del repositorio a aproximadamente 15,2 GB, lo que lo hace viable en equipos con memoria unificada de 24-32 GB o superior, algo imposible con los pesos originales en bf16.
+La relevancia de esta ficha esta en el empaquetado: reduce el peso del modelo a un repositorio de 15,2 GB con pesos safetensors en 4 bits, lo que permite ejecutar un modelo de 27B en Macs con memoria unificada suficiente, sin nube ni claves de API. La model card esta orientada a la aplicacion macOS de Outlier, que actua como frontend de inferencia local, aunque el modelo tambien puede cargarse directamente con `mlx-lm`.
 
-Su relevancia actual radica en la combinacion de tres factores: un modelo de 27B con capacidades de function calling y soporte para 14 idiomas europeos (incluido el castellano), una licencia Gemma que permite uso comercial bajo condiciones, y un formato optimizado para inferencia local privada en Mac, sin dependencia de la nube ni de claves de API. Es una pieza pensada para desarrolladores que quieren desplegar un asistente de calidad media-alta en hardware de escritorio Apple.
+El modelo hereda del original la licencia Gemma y una cobertura declarada de 14 idiomas (entre ellos el castellano). No se documentan en la informacion disponible datos de entrenamiento, benchmarks propios ni modificaciones de pesos mas alla de la cuantizacion; cualquier afirmacion sobre calidad debe remitirse al modelo base de Google.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer denso (Gemma 3, modelo base `google/gemma-3-27b-it`) |
-| Parametros totales | 27.009.346.304 |
-| Parametros activos | no aplica (modelo denso, no MoE) |
-| Longitud de contexto | no disponible en la informacion proporcionada (heredada del modelo base Gemma 3 27B) |
-| Tipos de cuantizacion | 4 bits (MLX), unica variante publicada en este repositorio |
+| Arquitectura | Transformer decoder-only (arquitectura original de Gemma 3, no detallada en la informacion disponible) |
+| Parametros totales | 27.009.346.304 (27B) |
+| Parametros activos | no disponible (no es un modelo MoE segun la informacion disponible) |
+| Longitud de contexto | no disponible en la informacion proporcionada (heredada del modelo base) |
+| Tipos de cuantizacion | 4-bit (unica variante publicada en este repositorio) |
 | Idiomas soportados | en, de, fr, es, it, pt, nl, pl, ro, cs, hu, sv, da, fi |
-| Licencia | gemma (heredada del modelo base de Google) |
-| Formato de pesos | safetensors en formato MLX (libreria `mlx`) |
+| Licencia | gemma |
+| Formato de pesos | safetensors (MLX), repositorio de 15,2 GB |
+| Libreria de inferencia | mlx / mlx-lm |
+| Modelo base | google/gemma-3-27b-it |
+| Relacion con el base | quantized |
+| Hardware objetivo | Apple Silicon (M1, M2, M3, M4), Metal |
+| Pipeline | text-generation |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura corresponde integramente al modelo base `google/gemma-3-27b-it`: un transformer denso de aproximadamente 27.000 millones de parametros, sin mezcla de expertos. Esta ficha no dispone de informacion detallada sobre el numero de tokens de entrenamiento, la composicion del corpus ni las etapas de alineacion (RLHF/DPO) aplicadas por Google; esos datos deben consultarse en la model card oficial de `google/gemma-3-27b-it`.
+Esta publicacion es una conversion de cuantizacion, no un reentrenamiento. La arquitectura subyacente es la del modelo `google/gemma-3-27b-it`, un transformer decoder-only de 27B parametros afinado para instrucciones; la informacion proporcionada no detalla el numero de capas, dimensiones ocultas, mecanismo de atencion ni si incorpora componentes adicionales. Tampoco se especifican los datos de entrenamiento del modelo original (numero de tokens, composicion del corpus, fases de RLHF o DPO), por lo que esos datos deben consultarse en la model card de Google.
 
-La aportacion de Outlier-Ai se limita a la cuantizacion: los pesos se han convertido a 4 bits en el formato nativo de MLX, con pesos almacenados en safetensors y metadatos adaptados a la libreria `mlx` / `mlx-lm`. El resultado es un artefacto de 15,2 GB que conserva la interfaz de chat instructiva del modelo original. No se documentan en la informacion disponible innovaciones adicionales como decodificacion especulativa, atencion lineal o variantes hibridas; se trata de una conversion estandar de pesos.
+La unica transformacion documentada es la cuantizacion a 4 bits en formato MLX, que reduce el peso de los pesos para permitir inferencia en memoria unificada de Apple Silicon. La model card indica explicitamente que las cifras mencionadas provienen de experimentos internos y no de pruebas de release, y que este modelo no se distribuye dentro de la aplicacion Outlier. No se documentan innovaciones tecnicas adicionales (decodificacion especulativa, atencion lineal, etc.) en la informacion disponible.
 
 ## Capacidades
 
-- Generacion de texto y conversacion multi-turno en modo instructivo (`-it`), con plantilla de chat heredada del modelo base.
-- Razonamiento y conocimiento general: el modelo card incluye ejemplos de explicacion de conceptos tecnicos (por ejemplo, modelos mixture-of-experts) y resumenes comparativos.
-- Soporte de function calling y tool use: el repositorio esta etiquetado explicitamente con `function-calling` y `tool-use`.
-- Capacidades multilingues en 14 idiomas europeos: ingles, aleman, frances, espanol, italiano, portugues, neerlandes, polaco, rumano, checo, hungaro, sueco, danes y finlandes.
-- Ejecucion local y offline: disenado para inferencia on-device en macOS sobre Apple Silicon, sin nube ni claves de API.
-- Integracion con `mlx-lm` para scripts de generacion por linea de comandos y uso programatico.
-- Capacidades de vision y audio: no disponibles en la informacion proporcionada para esta conversion (la model card no las menciona; debe verificarse contra el modelo base).
+- Generacion de texto conversacional multi-turno, con formato de chat instruct.
+- Razonamiento y conocimiento general, heredados del modelo base Gemma 3 27B instruct.
+- Soporte declarado de function calling y tool use (tags `function-calling` y `tool-use`).
+- Capacidades multilingues en 14 idiomas, incluido el castellano.
+- Ejecucion completamente local y offline sobre Apple Silicon, sin llamadas a servicios externos.
+- Integracion con `mlx-lm` para generacion por linea de comandos y uso programatico.
+- Compatibilidad con la aplicacion macOS Outlier como frontend de inferencia.
+- Capacidades multimodales, modo thinking o audio: no disponibles en la informacion proporcionada.
 
 ## Casos de uso
 
-- Asistente de desarrollo local en Mac: un desarrollador puede cargar el modelo con `mlx-lm` y usarlo como copiloto de codigo y explicaciones tecnicas sin enviar codigo propietario a servicios externos, gracias a los 15,2 GB de pesos que caben en equipos con memoria unificada de 32 GB o mas.
-- Atencion al cliente con datos sensibles: el modelo puede gestionar conversaciones multi-turno en castellano y otros idiomas europeos dentro de una infraestructura on-premise, evitando el envio de datos personales a terceros y cumpliendo requisitos de privacidad.
-- Automatizacion de agentes con tool calling: al estar etiquetado para function calling, puede integrarse en flujos donde el modelo decide que herramienta invocar (consulta a base de datos, API interna, calculadora) y compone la respuesta final.
-- Procesamiento de documentacion multilingue: resumen y reescritura de documentos en los 14 idiomas soportados, util en empresas con operaciones en varios paises europeos que necesitan traduccion y sintesis sin coste por token.
-- Prototipado rapido de productos de IA: investigadores y equipos de producto pueden validar ideas de asistentes conversacionales en un Mac antes de invertir en infraestructura GPU en la nube, usando el mismo modelo base que luego desplegaran a mayor escala.
-- Educacion y experimentacion: estudiantes pueden ejecutar un modelo de 27B en su portatil Apple Silicon para estudiar comportamiento de LLMs, tecnicas de cuantizacion y evaluacion de respuestas sin depender de creditos de API.
-- Generacion de texto asistida en entornos sin conectividad: escenarios de campo, auditoria o entornos air-gapped donde no hay acceso a internet pero se necesita un modelo de calidad media-alta.
+- Asistente conversacional privado en escritorio: ejecutar el modelo con `mlx-lm` o la app Outlier para mantener conversaciones multi-turno sin enviar datos a la nube, adecuado para entornos con requisitos de confidencialidad.
+- Prototipado de agentes con tool calling en local: usar el soporte declarado de function calling para conectar el modelo a scripts locales, APIs internas o automatizaciones sin depender de un proveedor externo.
+- Analisis y resumen de documentos sensibles: procesar contratos, informes o notas internas en un Mac Studio o MacBook Pro con memoria unificada suficiente, manteniendo el contenido fuera de servicios de terceros.
+- Desarrollo y revision de codigo en local: emplear el modelo como asistente de programacion dentro del editor o en scripts, aprovechando la ventana de contexto del modelo base (a confirmar en su model card).
+- Traduccion y redaccion multilingue: cubrir combinaciones entre los 14 idiomas declarados, util para equipos que trabajan con documentacion en varias lenguas europeas.
+- Educacion y experimentacion con modelos grandes en hardware de consumo: servir como banco de pruebas para estudiar el impacto de la cuantizacion 4-bit frente al modelo original en tareas de razonamiento.
+- Despliegue en estaciones de trabajo sin GPU dedicada: aprovechar Metal y la memoria unificada de los chips M-series para inferencia de un modelo de 27B alli donde no hay acceso a CUDA.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card de esta conversion no incluye tablas de MMLU, HumanEval, GSM8K ni metricas de latencia o throughput. Cualquier cifra de rendimiento del modelo base debe consultarse en la documentacion oficial de `google/gemma-3-27b-it`, teniendo en cuenta que la cuantizacion a 4 bits puede introducir degradacion respecto a los pesos originales.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye metricas de MMLU, HumanEval, GSM8K ni comparaciones cuantitativas con el modelo base o con otras cuantizaciones.
 
 ## Requisitos de hardware
 
-- Memoria: el repositorio ocupa 15,2 GB; se recomienda un Mac con al menos 24 GB de memoria unificada, y 32 GB o mas para trabajar con contextos largos y margen para el sistema.
-- GPU recomendadas: Apple Silicon de las familias M1, M2, M3 y M4 (etiquetas del repositorio), incluyendo MacBook Air, MacBook Pro, Mac mini y Mac Studio. No esta pensado para GPUs NVIDIA ni AMD; el formato MLX es exclusivo del ecosistema Apple.
-- Cabe en GPU de consumo: si, en el sentido de que cabe en Macs de consumo con memoria unificada suficiente; no aplica a GPUs discretas convencionales por el formato.
-- Opciones de despliegue: `mlx-lm` (recomendado por el autor, con comando `python -m mlx_lm.generate`), la aplicacion Outlier para macOS, y cualquier herramienta que consuma modelos MLX. No es compatible directamente con vLLM, llama.cpp, Ollama o TGI sin conversion adicional a otro formato.
+- VRAM/memoria estimada: el repositorio pesa 15,2 GB en safetensors 4-bit; se recomienda al menos 18-20 GB de memoria unificada libre para cargar pesos y trabajar con contexto, y 24 GB o mas para margenes comodos.
+- Hardware objetivo: Apple Silicon (M1, M2, M3, M4) con Metal; segun los tags, MacBook Air, MacBook Pro, Mac mini y Mac Studio.
+- Viabilidad en consumer: si, en configuraciones de Mac con 24 GB o 32 GB de memoria unificada en adelante; los modelos con 16 GB son marginales para un 27B en 4 bits.
+- Despliegue: `mlx-lm` (CLI y API Python) y la aplicacion macOS Outlier; no esta pensado para vLLM, TGI ni llama.cpp, que no consumen pesos MLX de forma nativa.
 - Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Formato / hardware | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Formato | Licencia | Notas |
 |---|---|---|---|---|---|
-| Outlier-Ai/gemma-3-27b-it-MLX-4bit | 27,0B | no disponible | MLX 4 bits, Apple Silicon | gemma | Hugging Face, 1.169 descargas |
-| google/gemma-3-27b-it (original) | 27,0B | no disponible | safetensors bf16, GPU convencional | gemma | Hugging Face (oficial) |
-| Outlier-Ai/Outlier-Core-27B-MLX-4bit | 27B (aproximado) | no disponible | MLX 4 bits, Apple Silicon | no disponible | Hugging Face, 55 descargas |
-| Outlier-Ai/Qwen3-Coder-30B-A3B-Instruct-MLX-4bit | 30B (MoE, 3B activos) | no disponible | MLX 4 bits, Apple Silicon | no disponible | Hugging Face, 1.598 descargas |
-
-La comparativa con modelos de otros ecosistemas (por ejemplo, variantes GGUF para llama.cpp u Ollama) no esta disponible en la informacion proporcionada; la eleccion entre MLX y GGUF depende del hardware y del stack de despliegue, no solo del modelo.
+| Outlier-Ai/gemma-3-27b-it-MLX-4bit | 27B | no disponible | MLX safetensors 4-bit | gemma | Conversion comunitaria para Apple Silicon |
+| google/gemma-3-27b-it | 27B | no disponible | safetensors (original) | gemma | Modelo base oficial de Google, requiere mas memoria |
+| Outlier-Ai/Outlier-Core-27B-MLX-4bit | 27B | no disponible | MLX safetensors 4-bit | no disponible | Conversion del mismo autor distribuida en la app Outlier |
+| Outlier-Ai/Qwen3-Coder-30B-A3B-Instruct-MLX-4bit | 30B (MoE, activos no disponibles) | no disponible | MLX safetensors 4-bit | no disponible | Alternativa orientada a codigo y tool calling en MLX |
 
 ## Limitaciones y advertencias
 
-- Degradacion por cuantizacion: la conversion a 4 bits puede reducir la calidad en tareas de razonamiento complejo, matematicas y generacion de codigo respecto al modelo original en bf16; no se han publicado evaluaciones que cuantifiquen esta perdida.
-- Sesgos: no se documentan en la informacion disponible analisis de sesgos de esta conversion; deben asumirse los del modelo base Gemma 3, que Google documenta en su model card.
-- Alucinacion: como cualquier LLM, puede generar afirmaciones plausibles pero falsas; en produccion conviene anadir verificacion externa y fuentes.
-- Limitaciones de contexto e idioma: la longitud de contexto no se especifica en esta ficha; el soporte linguistico se limita a los 14 idiomas listados y el rendimiento en idiomas fuera de esa lista no esta garantizado.
-- Restricciones de licencia: hereda la licencia Gemma de Google, que impone condiciones de uso (incluida una politica de uso aceptable y obligaciones de atribucion); el uso comercial esta permitido bajo esas condiciones, pero debe revisarse la licencia completa antes de desplegar.
-- Dependencia de plataforma: el formato MLX solo funciona en Apple Silicon con macOS; no es portable a Linux, Windows ni GPUs NVIDIA sin reconversion.
-- Naturaleza del artefacto: es una conversion de terceros, no una publicacion oficial de Google; el autor advierte que las cifras de sus experimentos internos no son tests de release.
-- Contexto de marketing: la model card incluye promocion de la aplicacion Outlier y precios de una oferta; esa informacion no debe interpretarse como especificacion tecnica del modelo.
+- La cuantizacion 4-bit puede degradar la calidad respecto al modelo original de 27B, especialmente en tareas de razonamiento largo o generacion de codigo; no se aportan mediciones de esa perdida.
+- Solo funciona en el ecosistema MLX/Apple Silicon; no es portable a CUDA, ROCm ni CPU generica sin reconversion.
+- La licencia es la Gemma License, con terminos y restricciones de uso que deben revisarse antes de un despliegue comercial; la model card remite a la licencia del modelo base.
+- Riesgo de alucinacion inherente a los modelos de lenguaje; no se documentan mitigaciones especificas en esta conversion.
+- Sesgos: no se documentan evaluaciones de sesgo en la informacion disponible; se heredan los del modelo base.
+- La model card mezcla contenido promocional de la aplicacion Outlier con la ficha tecnica; las cifras citadas como "experimentos internos" no constituyen validacion independiente.
+- No se especifican la longitud de contexto efectiva ni el comportamiento del modelo con prompts muy largos tras la cuantizacion.
+- El modelo no se distribuye dentro de la aplicacion Outlier, segun indica el propio autor.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/Outlier-Ai/gemma-3-27b-it-MLX-4bit
+- Modelo en Hugging Face: https://huggingface.co/Outlier-Ai/gemma-3-27b-it-MLX-4bit
 - Modelo base: https://huggingface.co/google/gemma-3-27b-it
-- Aplicacion Outlier para macOS: https://outlier.host/
-- Conversion relacionada gemma-3-4b-it MLX 4-bit: https://huggingface.co/Outlier-Ai/gemma-3-4b-it-MLX-4bit
-- Conversion relacionada DeepSeek-R1-Distill-Qwen-7B MLX 4-bit: https://huggingface.co/Outlier-Ai/DeepSeek-R1-Distill-Qwen-7B-MLX-4bit
-- Conversion relacionada Qwen3-Coder-30B-A3B-Instruct MLX 4-bit: https://huggingface.co/Outlier-Ai/Qwen3-Coder-30B-A3B-Instruct-MLX-4bit
-- Conversion relacionada Outlier-Core-27B MLX 4-bit: https://huggingface.co/Outlier-Ai/Outlier-Core-27B-MLX-4bit
-- Conversion relacionada Outlier-Nano-4B MLX 4-bit: https://huggingface.co/Outlier-Ai/Outlier-Nano-4B-MLX-4bit
-- Libreria MLX: https://github.com/ml-explore/mlx
-- Libreria mlx-lm: https://github.com/ml-explore/mlx-lm
+- Aplicacion Outlier: https://outlier.host/
+- Otras conversiones del autor:
+  - https://huggingface.co/Outlier-Ai/gemma-3-4b-it-MLX-4bit
+  - https://huggingface.co/Outlier-Ai/DeepSeek-R1-Distill-Qwen-7B-MLX-4bit
+  - https://huggingface.co/Outlier-Ai/Qwen3-Coder-30B-A3B-Instruct-MLX-4bit
+  - https://huggingface.co/Outlier-Ai/Outlier-Core-27B-MLX-4bit
+  - https://huggingface.co/Outlier-Ai/Outlier-Nano-4B-MLX-4bit
+- Libreria de inferencia: https://github.com/ml-explore/mlx-lm

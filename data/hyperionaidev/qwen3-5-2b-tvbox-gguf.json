@@ -48,16 +48,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Qwen/Qwen3.5-2B · Hugging Face",
-      "url": "https://huggingface.co/Qwen/Qwen3.5-2B",
-      "snippet": "Image-Text-to-Text model with 2B parameters, built with Transformers. Download, explore files and run it on Hugging Face."
-    },
-    {
-      "title": "DevQuasar/Qwen.Qwen3.5-2B-GGUF · Hugging Face",
-      "url": "https://huggingface.co/DevQuasar/Qwen.Qwen3.5-2B-GGUF",
-      "snippet": "Quantized version of: Qwen/Qwen3.5-2B 'Make knowledge free for everyone' Made with"
-    }
-  ]
+  "sources": []
 }

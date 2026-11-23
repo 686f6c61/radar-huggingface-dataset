@@ -2,111 +2,97 @@
 
 ## Resumen
 
-clef-Pollard es una familia de cuantizaciones GGUF del modelo Cloudflare/clef, publicada por PollardWeights. No se trata de un modelo nuevo entrenado desde cero: es el mismo conjunto de pesos de ~27.000 millones de parametros reorganizado en una "escalera" de cuantizaciones de asignacion medida (measured-allocation), en la que el numero de bits por tensor se decide segun la sensibilidad por capa en lugar de aplicar una compresion uniforme. El resultado va desde 9,44 GB (IQ2_XXS) hasta 22,19 GB (Q6_K), frente a los 54,05 GB del f16 original, lo que supone una reduccion de hasta el 83 % (5,7 veces menos).
+clef-Pollard es una cuantizacion GGUF del modelo Cloudflare/clef, publicada por PollardWeights. El modelo base es un modelo de decision multimodal (texto e imagen) de aproximadamente 27.000 millones de parametros con arquitectura propia denominada `clef`, que combina atencion lineal Gated DeltaNet en 48 de sus 64 capas con atencion clasica. A diferencia de un modelo generativo, clef responde preguntas tipadas (eleccion entre opciones, puntuacion o si/no) devolviendo una probabilidad por opcion, y se sirve a traves del endpoint `/v1/systemone` de llama-server en lugar de los endpoints de chat o completions.
 
-El modelo base es un modelo de decision, no un generador de texto conversacional: responde preguntas tipadas (eleccion entre opciones, puntuacion y si/no) devolviendo una probabilidad por opcion. Por eso se sirve exclusivamente en el endpoint `/v1/systemone` de llama-server y no en `/chat/completions`. Ademas es multimodal: acepta texto e imagen, siempre que se le pase el proyector `mmproj-clef-BF16.gguf` con `--mmproj`.
+PollardWeights aplica una asignacion de bits medida por capa (measured allocation) a partir de un perfil de sensibilidad derivado de una imatrix calculada sobre el corpus Calib 3.0, en lugar de una cuantizacion uniforme. El resultado es una escalera de cuatro cuantizaciones que van de 9,44 GB (IQ2_XXS) a 22,19 GB (Q6_K), frente a los 54,05 GB del modelo en f16, con una reduccion de tamano de hasta el 83 % en el escalon mas agresivo.
 
-Su relevancia practica es doble. Por un lado, permite ejecutar un modelo de 27B con arquitectura hibrida de atencion lineal en hardware de consumo (a partir de ~11,4 GB de RAM/VRAM con el rung IQ2_XXS) manteniendo, segun las mediciones del autor, un 100 % de coincidencia con la referencia Q8_0 en las decisiones evaluadas. Por otro, es un ejemplo de cuantizacion orientada a la tarea: la fidelidad se mide en deriva de probabilidades (KL por opcion) y no en perplejidad, que no aplica a un modelo de decision. La licencia Apache-2.0 del modelo base se mantiene.
+La relevancia de esta publicacion es doble: por un lado, permite ejecutar un modelo de 27B en equipos de consumo con 12-24 GB de RAM o VRAM; por otro, introduce una metodologia de evaluacion especifica para modelos de decision (fidelidad de decision frente a Q8_0, divergencia KL por opcion y deriva de probabilidad media) en lugar de las metricas habituales de perplexidad, que no aplican a un modelo que emite probabilidades y no texto.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | `clef` (hibrida, con 64 capas, de las cuales 48 son capas de atencion lineal Gated DeltaNet) |
-| Parametros totales | ~27,0B |
+| Arquitectura | `clef` (transformer hibrido con 48 capas de atencion lineal Gated DeltaNet sobre 64 capas totales) |
+| Parametros totales | ~27.024.054.788 (~27,0B) |
 | Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | IQ2_XXS (9,44 GB), IQ3_S (13,25 GB), IQ4_XS (16,19 GB), Q6_K (22,19 GB); rungs de referencia citados: f16 (54,05 GB), Q8_0 (~28,65 GB), Q4_K_M (~15,67 GB) |
-| Idiomas soportados | en (ingles) |
-| Licencia | apache-2.0 |
-| Formato de pesos | GGUF (K-quants e i-quants estandar) |
-| Repositorio | PollardWeights/clef-Pollard |
-| Modelo base | Cloudflare/clef (relacion: quantized) |
-| Entrada | texto e imagen (vision requiere `mmproj-clef-BF16.gguf`) |
-| Cabecera de decision | tensor `dec.*` fijado a Q6_K en todos los rungs |
-| Calibracion imatrix | si (corpus Calib 3.0, 1937 chunks, calculado sobre una copia Q8_0) |
+| Tipos de cuantizacion | IQ2_XXS, IQ3_S, IQ4_XS, Q6_K (K-quants estandar con asignacion medida por capa); el modelo base en f16 y Q8_0 se citan como referencia |
+| Idiomas soportados | ingles (`en`) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (llama.cpp); proyector multimodal en `mmproj-clef-BF16.gguf` |
+| Entrada soportada | texto e imagen |
+| Imatrix | si (corpus Calib 3.0, 1937 chunks, calculada sobre copia Q8_0) |
+| Cabecera de decision | `dec.*` fijada en Q6_K en todos los escalones |
+| Tamano del repo | 62,0 GB |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura corresponde al modelo base Cloudflare/clef, identificada internamente como `clef` y ya implementada en llama.cpp. Consta de 64 capas, 48 de las cuales son capas de atencion lineal Gated DeltaNet, lo que la situa en la categoria de modelos hibridos entre atencion completa y atencion lineal. El repositorio no documenta el numero de tokens de entrenamiento, la composicion del dataset ni si hubo fases de RLHF o DPO: esos datos pertenecen a la model card del modelo base y no estan disponibles en la informacion proporcionada.
+El modelo base Cloudflare/clef emplea una arquitectura hibrida de 64 capas en la que 48 capas usan atencion lineal Gated DeltaNet y el resto atencion clasica, segun los datos de construccion de la cuantizacion. Es un modelo multimodal con soporte de texto e imagen: el proyector de vision se distribuye por separado como `mmproj-clef-BF16.gguf` y fija `clip.vision.image_min_pixels = 65536`, de modo que las imagenes pequenas reciben el mismo numero de tokens que en el procesador original.
 
-Lo que si documenta este repositorio es el proceso de cuantizacion. PollardWeights deriva un perfil de sensibilidad por tensor combinando la imatrix con los pesos f16, tensor a tensor, mediante la herramienta `pollard-probe --from-imatrix`, y cubre las 64 capas, incluidas las 48 de atencion lineal. A partir de ese perfil asigna bits por capa en lugar de aplicar una tasa uniforme. Los dos artefactos generados se publican junto al modelo: `clef-Pollard.sensitivity.json` (perfil de sensibilidad) y `clef-Pollard.imatrix`. Una decision tecnica destacable es mantener la cabecera de decision (`dec.*`) en Q6_K en todos los rungs: reconstruir el rung IQ2_XXS con la cabecera en BF16 dio una KL por opcion de 0,00377 frente a 0,00385 con la cabecera en Q6_K, es decir, practicamente identica, lo que indica que la deriva restante proviene del cuerpo del modelo y no de la cabeza. El proyector de vision no se cuantiza (`mmproj-clef-BF16.gguf`) y conserva `clip.vision.image_min_pixels = 65536` del procesador original.
+La innovacion principal de esta publicacion no esta en el entrenamiento del modelo base, sino en el proceso de cuantizacion. PollardWeights deriva un perfil de sensibilidad tensor a tensor a partir de la imatrix mediante `pollard-probe --from-imatrix`, cubriendo las 64 capas, y asigna precision de forma no uniforme segun esa sensibilidad. El perfil se publica como `clef-Pollard.sensitivity.json` y la imatrix como `clef-Pollard.imatrix`. La cabecera de decision se mantiene en Q6_K en todos los escalones; el autor verifico que subirla a BF16 en el escalon IQ2_XXS apenas cambia la divergencia KL por opcion (0,00377 frente a 0,00385), por lo que la deriva restante procede del cuerpo del modelo. No se dispone de informacion sobre el volumen de tokens de entrenamiento, la composicion del dataset ni el uso de RLHF o DPO en el modelo base.
 
 ## Capacidades
 
-- Clasificacion y decision tipada: responde preguntas de tipo `choice` (elegir entre criterios), `score` (puntuacion) y `noul` (si/no) devolviendo una probabilidad por opcion.
-- Salida estructurada: la respuesta es un conjunto de probabilidades por pregunta y opcion, adecuada para consumo programatico directo.
-- Enrutado y triaje: el ejemplo de la model card enruta un mensaje de cliente hacia los equipos `billing`, `shipping` o `technical`.
-- Vision: acepta imagenes ademas de texto, siempre que se cargue el proyector `mmproj-clef-BF16.gguf` con `--mmproj`.
-- Multilingue: no, el modelo declara unicamente ingles (`en`).
-- Tool calling / function calling: no documentado en la informacion disponible.
-- Modo agente o razonamiento multi-paso: no documentado; el modelo no expone endpoint de chat ni de completions.
-- Modo "thinking": no documentado.
+- Clasificacion y decision estructurada: responde preguntas tipadas de tres clases (`choice` para elegir entre opciones con criterios, `score` para puntuar y `noul`/si-no) devolviendo una probabilidad por opcion.
+- Salida estructurada con probabilidades calibradas, apta para enrutamiento, triaje y scoring automatico.
+- Procesamiento multimodal de texto e imagen mediante el proyector `mmproj-clef-BF16.gguf` pasado con `--mmproj`.
+- Evaluacion de estado conversacional: el campo `state` admite texto libre, como mensajes de cliente, sobre el que se formulan multiples preguntas en una sola llamada.
+- Capacidad multilingue limitada al ingles segun la model card.
+- No soporta chat ni completions: el modelo se sirve exclusivamente en `/v1/systemone`, por lo que no genera texto libre.
+- No se documenta soporte de tool calling, function calling ni razonamiento multi-paso agentico.
 
 ## Casos de uso
 
-- Enrutado de tickets de soporte: el modelo recibe el mensaje del cliente como estado y devuelve, en una sola llamada, una distribucion de probabilidad sobre a que equipo corresponde el caso (facturacion, envio, tecnico). Es adecuado porque la salida es probabilistica y permite fijar umbrales de confianza o escalar a revision humana cuando la distribucion es plana.
-- Clasificacion de urgencia y sentimiento: combinando preguntas de tipo `score` (urgencia) y `noul` (cliente enfadado), se pueden derivar colas de atencion priorizadas sin necesidad de un pipeline de NLP separado.
-- Moderacion y politica de contenido: baterias de preguntas si/no sobre un texto o una imagen para decidir si un contenido cumple una politica, con la probabilidad asociada como senal de confianza.
-- Triaje de imagenes en soporte tecnico: con el proyector multimodal cargado, se puede preguntar si una captura de pantalla o una foto de un producto muestra un error concreto, y usar la probabilidad para decidir si hace falta un agente humano.
-- Enrutado de consultas en un sistema RAG: dado un estado con la pregunta del usuario y el catalogo de indices disponibles, decidir a que indice o herramienta dirigir la consulta antes de recuperar documentos.
-- Etiquetado de datos a escala: al ser un modelo de decision con salida tipada, puede usarse para pre-etiquetar grandes volumenes de texto o pares texto-imagen con probabilidades por clase, que despues se revisan por muestreo.
-- Validacion de formularios y extraccion guiada: formular preguntas de tipo `choice` sobre campos ambiguos de un documento y usar las probabilidades para decidir si el valor extraido es fiable.
-- Despliegue en edge o en portatil: con el rung IQ2_XXS (9,44 GB) cabe en equipos con ~11,4 GB de RAM/VRAM, lo que permite ejecutar el triaje localmente sin enviar datos a un servicio externo.
+- Enrutamiento de tickets de soporte: se envia el mensaje del cliente en `state` y una pregunta `choice` con criterios `billing`, `shipping` y `technical`; el modelo devuelve la probabilidad de cada cola y permite asignar el ticket con umbral de confianza configurable.
+- Deteccion de urgencia y sentimiento: preguntas `score` para urgencia y `noul` para enfado del cliente sobre el mismo estado, lo que permite priorizar la cola de atencion sin un pipeline separado de NLP.
+- Triaje de correo y formularios: clasificacion de mensajes entrantes en categorias predefinidas con probabilidades, util para descartar casos ambiguos y derivarlos a revision humana cuando la opcion ganadora no supera un umbral.
+- Moderacion y cumplimiento: preguntas si/no sobre presencia de contenido prohibido o datos sensibles en texto e imagenes, aprovechando la entrada multimodal con el proyector de vision.
+- Despliegue en hardware de consumo: el escalon IQ2_XXS (9,44 GB) permite servir el modelo en equipos con unos 11,4 GB de RAM o VRAM, lo que habilita prototipos locales de clasificacion sin GPU de datacenter.
+- Evaluacion de calidad de cuantizaciones: el conjunto de escalones y las metricas de fidelidad de decision publicadas sirven como referencia para comparar tecnicas de cuantizacion en modelos que emiten probabilidades en lugar de texto.
+- Clasificacion de documentos con imagen: extraccion de decisiones sobre capturas, facturas o formularios escaneados pasando la imagen junto al estado textual.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks clasicos (MMLU, HumanEval, GSM8K) en la informacion disponible; el autor indica explicitamente que la perplejidad no aplica a un modelo de decision. La medicion publicada es la fidelidad de decision frente a la referencia Q8_0, sobre 20 preguntas tipadas servidas a traves de `/v1/systemone` y leidas con la herramienta pollard-decision.
+No se han publicado resultados de benchmarks en la informacion disponible. El autor indica explicitamente que la perplexidad no aplica a un modelo de decision y publica en su lugar una tabla de fidelidad de decision frente a Q8_0 sobre 20 preguntas tipadas servidas por `/v1/systemone`:
 
-| Fichero | Tamano | Coincide con Q8_0 | KL por opcion vs Q8_0 | Deriva media de probabilidad | Precision |
+| Archivo | Tamano | Coincide con Q8_0 | KL por opcion vs Q8_0 | Deriva de probabilidad media | Precision |
 |---|---:|---:|---:|---:|---:|
 | `clef-Pollard-Q6_K.gguf` | 22,19 GB | 100 % | 2,9e-05 | 0,0003 | 100 % |
 | `clef-Pollard-IQ4_XS.gguf` | 16,19 GB | 100 % | 9,5e-05 | 0,0007 | 100 % |
 | `clef-Pollard-IQ3_S.gguf` | 13,25 GB | 100 % | 0,00049 | 0,0014 | 100 % |
 | `clef-Pollard-IQ2_XXS.gguf` | 9,44 GB | 100 % | 0,0038 | 0,0066 | 100 % |
 
-"Coincide" significa que el rung elige la misma opcion que el Q8_0; la KL por opcion mide cuanto se han desplazado sus probabilidades respecto al Q8_0 (0 = identicas) y es el valor que separa unos rungs de otros. Nota metodologica del autor: la referencia es Q8_0 porque el f16 de 54 GB no cabe en RAM + VRAM de la maquina de compilacion.
+La referencia Q8_0 se usa porque el f16 de 54 GB no cabe en la maquina de compilacion junto con el contexto de servicio. La metrica que separa los escalones es la divergencia KL por opcion; la coincidencia de opcion elegida se mantiene en el 100 % en todos los escalones.
 
 ## Requisitos de hardware
 
-- VRAM/RAM estimada segun rung (cifras del autor, con margen para contexto): ~24,2 GB para Q6_K (22,19 GB), ~18,2 GB para IQ4_XS (16,19 GB), ~15,3 GB para IQ3_S (13,25 GB) y ~11,4 GB para IQ2_XXS (9,44 GB).
-- GPU recomendadas: no disponible de forma explicita. Por capacidad de memoria, el rung IQ2_XXS es el unico que encaja con holgura en GPUs de consumo de 12-16 GB; IQ4_XS y Q6_K requieren GPUs de 24 GB o mas (RTX 3090/4090, A100, H100). Los modelos mayores del rung se pueden servir en configuracion mixta CPU+GPU.
-- Caben en GPU de consumo: IQ2_XXS (9,44 GB) e IQ3_S (13,25 GB) en tarjetas de 12-16 GB; IQ4_XS en 24 GB. El Q6_K queda al limite en 24 GB.
-- Opciones de despliegue: llama.cpp (llama-server) es la via documentada. Ollama y LM Studio funcionaran cuando publiquen un runtime que incluya la arquitectura `clef`. No hay soporte anunciado para vLLM ni TGI.
-- Vision: requiere descargar aparte `mmproj-clef-BF16.gguf` y pasarlo con `--mmproj`; el proyector no esta cuantizado y ocupa poco.
-- Latencia y throughput: no disponible.
-- Requisito de version: hace falta una compilacion reciente de llama.cpp. Una version anterior rechazara los ficheros con el error `unknown model architecture`.
+- VRAM/RAM estimada segun escalon: Q6_K requiere unos 24,2 GB, IQ4_XS unos 18,2 GB, IQ3_S unos 15,3 GB e IQ2_XXS unos 11,4 GB, en todos los casos con margen para contexto.
+- El escalon IQ2_XXS (9,44 GB) es el unico que encaja con holgura en GPUs de consumo de 12 GB; IQ3_S e IQ4_XS encajan en GPUs de 16-24 GB; Q6_K requiere 24 GB o mas, o bien CPU con RAM suficiente.
+- No se especifican modelos concretos de GPU (A100, H100, RTX 4090); la unica referencia es el presupuesto de memoria indicado por el autor.
+- Despliegue mediante llama.cpp con una version reciente que incluya la arquitectura `clef`; versiones antiguas rechazan los archivos con `unknown model architecture`. Ollama y LM Studio funcionaran cuando incorporen un runtime con dicha arquitectura.
+- Ejemplo de servicio: `llama-server -m clef-Pollard-IQ2_XXS.gguf --mmproj mmproj-clef-BF16.gguf -ngl 99`.
+- No se publican datos de latencia ni throughput.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Formato / tamano | Licencia | Notas |
-|---|---|---|---|---|---|
-| PollardWeights/clef-Pollard (IQ2_XXS) | ~27,0B | no disponible | GGUF, 9,44 GB | apache-2.0 | Cuantizacion de asignacion medida, con vision via mmproj |
-| PollardWeights/clef-Pollard (Q6_K) | ~27,0B | no disponible | GGUF, 22,19 GB | apache-2.0 | Mayor fidelidad de decision (KL 2,9e-05 vs Q8_0) |
-| Cloudflare/clef (original, f16) | ~27,0B | no disponible | Pesos originales, 54,05 GB | apache-2.0 | Modelo base sin cuantizar; tambien disponible como Q8_0 (~28,65 GB) |
-| Cloudflare/clef-flash | no disponible | no disponible | Pesos en Hugging Face | apache-2.0 | Variante mas ligera del mismo autor; sin datos de contexto ni de benchmarks en la informacion disponible |
-
-El modelo tambien esta disponible como servicio gestionado en Cloudflare Workers AI con el identificador `@cf/cloudflare/clef`, a 0,24 USD por millon de tokens de entrada, segun la informacion de la busqueda web. Para alternativas de la misma categoria (modelos de decision o clasificadores de ~27B) no hay datos de benchmarks comparativos en la informacion disponible.
+No disponible. La informacion proporcionada no incluye modelos comparables de la misma categoria (modelos de decision con salida de probabilidades) ni datos de rendimiento frente a alternativas. Como referencia interna de la propia publicacion, el modelo base Cloudflare/clef en f16 ocupa 54,05 GB y su version Q8_0 unos 28,65 GB, frente a los 9,44-22,19 GB de los escalones Pollard.
 
 ## Limitaciones y advertencias
 
-- No es un modelo conversacional: solo se sirve en `/v1/systemone`. No expone chat ni completions, por lo que no se puede usar como generador de texto con las interfaces habituales.
-- Compatibilidad estricta: requiere una compilacion de llama.cpp que incluya la arquitectura `clef`. Versiones anteriores devuelven `unknown model architecture`.
-- Idioma: solo ingles declarado. El rendimiento en castellano u otros idiomas no esta medido ni garantizado.
-- Riesgo de deriva en cuantizaciones agresivas: el rung IQ2_XXS presenta una KL por opcion de 0,0038 frente al Q8_0, unas dos ordenes de magnitud peor que IQ3_S (0,00049). En aplicaciones con umbrales de decision ajustados, esa deriva puede cambiar la opcion elegida aunque en la muestra publicada la coincidencia sea del 100 %.
-- Base de evaluacion reducida: la fidelidad de decision se ha medido sobre 20 preguntas tipadas, un tamano de muestra pequeno que conviene ampliar con un conjunto propio antes de llevar el modelo a produccion.
-- Alucinacion en la salida probabilistica: al devolver probabilidades por opcion, una pregunta mal formulada o un estado ambiguo puede producir una distribucion aparentemente segura pero incorrecta. Conviene calibrar umbrales y derivar a revision humana.
-- Vision dependiente del proyector: sin `mmproj-clef-BF16.gguf` no hay capacidad multimodal, y el proyector no esta cuantizado, por lo que su fichero debe descargarse aparte.
-- Sesgos: no disponible. No hay informacion sobre sesgos demograficos, de dominio o de idioma en la documentacion proporcionada.
-- Licencia: Apache-2.0, por lo que el uso comercial esta permitido siempre que se conserve el aviso de licencia y se cumplan las condiciones del modelo base Cloudflare/clef. Conviene revisar la model card del modelo base por si anade terminos adicionales.
-- Contexto: la longitud de contexto soportada no esta documentada en este repositorio, dato critico para planificar despliegues con conversaciones o documentos largos.
+- Modelo solo en ingles; no se declara soporte de otros idiomas.
+- No es un modelo generativo: no responde en los endpoints de chat o completions, solo en `/v1/systemone`. Integrarlo en un producto requiere adaptar el cliente a ese contrato.
+- La evaluacion de fidelidad se basa en 20 preguntas tipadas, una muestra muy reducida; los valores de KL y deriva de probabilidad no garantizan el mismo comportamiento en dominios distintos.
+- El escalon IQ2_XXS presenta una divergencia KL por opcion de 0,0038, dos ordenes de magnitud superior a Q6_K (2,9e-05); en produccion conviene usar el escalon de mayor tamano que permita el presupuesto de memoria.
+- La cabecera de decision se mantiene en Q6_K en todos los escalones; el autor documenta que el cuerpo del modelo es la fuente principal de la deriva restante.
+- Requiere una version reciente de llama.cpp con soporte de la arquitectura `clef`; no funciona con builds antiguos ni con runtimes que no la hayan incorporado.
+- La vision exige descargar y pasar el proyector `mmproj-clef-BF16.gguf`; sin el, la entrada de imagen no esta disponible.
+- Riesgo de alucinacion y sesgos: no se documentan en la informacion disponible. Al tratarse de un modelo que emite probabilidades, el riesgo principal es de calibracion (confianza alta en decisiones incorrectas) mas que de texto inventado.
+- Licencia Apache 2.0, que permite uso comercial, pero las condiciones del modelo base Cloudflare/clef deben verificarse por separado.
+- No se dispone de informacion sobre longitud de contexto, por lo que el tamano maximo de `state` y del numero de preguntas por llamada debe validarse empiricamente.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/PollardWeights/clef-Pollard
-- Modelo base en Hugging Face: https://huggingface.co/Cloudflare/clef
-- Herramienta Pollard Weights: https://github.com/WestWaters/pollard-weights
-- Herramienta pollard-decision: https://github.com/WestWaters/pollard-weights (referenciada en la model card para la lectura de decisiones)
-- Pagina de modelos de PollardWeights: https://huggingface.co/PollardWeights/models
-- Cobertura de Cloudflare Clef: http://ai-tldr.dev/releases/cloudflare-clef/
-- Ejemplo de otro build de PollardWeights: https://huggingface.co/PollardWeights/Qwen2.5-1.5B-Instruct-Pollard
+- Modelo en Hugging Face: https://huggingface.co/PollardWeights/clef-Pollard
+- Modelo base: https://huggingface.co/Cloudflare/clef
+- Repositorio de Pollard Weights: https://github.com/WestWaters/pollard-weights
+- Herramienta de evaluacion de decisiones pollard-decision: https://github.com/WestWaters/pollard-weights

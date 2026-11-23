@@ -52,16 +52,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "turintech/Nemotron-3.5-Bolt-E4B-Artemis-GGUF at main",
-      "url": "https://huggingface.co/turintech/Nemotron-3.5-Bolt-E4B-Artemis-GGUF/tree/main",
-      "snippet": "Instructions to use turintech/Nemotron-3.5-Bolt-E4B-Artemis-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Notebooks Google Colab Kaggle Local AppsSettings llama.cpp How to use turintech/Nemotron-3.5-Bolt-E4B-Artemis-GGUF with llama.cpp: Install (macOS, Linux)"
-    },
-    {
-      "title": "README.md · turintech/Nemotron-3.5-Bolt-E4B-Artemis-GGUF at main",
-      "url": "https://huggingface.co/turintech/Nemotron-3.5-Bolt-E4B-Artemis-GGUF/blob/main/README.md",
-      "snippet": "Faster generation with NVIDIA's DFlash drafter NVIDIA publishes a DFlash drafter for this model, Nemotron-3.5-Bolt-E4B-DFlash-BF16.gguf (737 MB) in nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-4GB-DFlash (revision 0949a2e, OpenMDW-1.1). It is not in this repository. It proposes the next tokens for the main file to check and does not run on its own."
-    }
-  ]
+  "sources": []
 }

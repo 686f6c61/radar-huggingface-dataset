@@ -2,74 +2,105 @@
 
 ## Resumen
 
-Salience-27B-R5 es un modelo de lenguaje multimodal de 27 000 millones de parámetros desarrollado por vectionlabs, diseñado para tareas de razonamiento, generación de código, uso de herramientas y comprensión de imágenes. Esta ficha corresponde a la versión cuantizada en formato GGUF publicada por mradermacher, que facilita su ejecución en entornos con recursos limitados mediante diferentes niveles de cuantización. El modelo se distribuye bajo licencia Apache 2.0 y está orientado principalmente al inglés, aunque su arquitectura multimodal le permite procesar entradas de texto e imagen.
+Salience-27B-R5 es un modelo multimodal de lenguaje y visión desarrollado por Vection Labs, distribuido aquí como cuantizaciones GGUF estáticas por mradermacher. Con 27.320.697.856 parámetros totales (aproximadamente 27,3 mil millones), está diseñado específicamente para tareas de razonamiento eficiente, ingeniería de software y uso agéntico de herramientas, incluyendo interacción con terminales. La model card lo etiqueta explícitamente con términos como "thinking-efficiency", "agentic", "swe" y "tool-use", lo que indica que su entrenamiento está orientado a reducir la verbosidad del razonamiento sin sacrificar precisión en tareas complejas.
 
-La relevancia de este modelo radica en su combinación de capacidades avanzadas (razonamiento eficiente, agente, terminal, tool-use) con un tamaño de 27B, lo que lo sitúa en un punto intermedio entre modelos pequeños y grandes. La versión GGUF permite desplegarlo en GPUs de consumo mediante herramientas como llama.cpp u Ollama, con opciones de cuantización desde Q2_K (11 GB) hasta Q8_0 (29,1 GB). No se dispone de información detallada sobre su arquitectura interna ni sobre los datos de entrenamiento en la documentación pública consultada.
+El modelo base es vectionlabs/Salience-27B-R5, y esta versión GGUF facilita su despliegue en entornos con recursos limitados mediante cuantizaciones que van desde Q2_K (11,0 GB) hasta Q8_0 (29,1 GB), además de un proyector multimodal separado (mmproj) en Q8_0 y f16 para habilitar las capacidades de visión. La licencia Apache 2.0 permite uso comercial sin restricciones significativas, lo que lo hace atractivo para integración en productos.
 
-## Especificaciones técnicas
+Su relevancia actual radica en la combinación de tres factores: tamaño medio (27B) que cabe en GPUs de gama alta de consumo con cuantización agresiva, soporte multimodal nativo y un enfoque explícito en eficiencia de razonamiento y flujos agénticos, un área donde los modelos de la familia Qwen3 (a la que parece estar vinculado por la etiqueta "qwen3.8") han marcado tendencia.
+
+## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (se infiere transformer multimodal, posiblemente basado en Qwen, sin confirmar) |
+| Arquitectura | Transformer multimodal (vision-language); detalles específicos no disponibles |
 | Parametros totales | 27.320.697.856 (27,3B) |
-| Parametros activos | no disponible (no se especifica si es MoE) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, mmproj-f16, mmproj-Q8_0 |
-| Idiomas soportados | ingles (en) |
-| Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (con proyecto multimodal mmproj para vision) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
+| Longitud de contexto | no disponible (etiqueta "long-context" sin cifra concreta) |
+| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0; mmproj en Q8_0 y f16 |
+| Idiomas soportados | en (inglés) |
+| Licencia | apache-2.0 |
+| Formato de pesos | GGUF (safetensors en el modelo base) |
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado información detallada sobre la arquitectura interna del modelo original (vectionlabs/Salience-27B-R5) en la documentación disponible. Los metadatos indican que es un modelo multimodal (vision-language) con capacidades de razonamiento y uso de herramientas, y el tag "qwen3.8" sugiere una posible relación con la familia Qwen, aunque no se confirma. Tampoco se dispone de datos sobre el proceso de entrenamiento, el número de tokens utilizados o si se aplicaron técnicas como RLHF o DPO. La cuantización GGUF realizada por mradermacher es una conversión estática de los pesos originales, sin entrenamiento adicional, y no incluye pesos con imatrix.
+No se dispone de información detallada sobre la arquitectura interna en la información proporcionada. La model card del repositorio GGUF es una ficha de cuantización generada por mradermacher y no incluye descripción arquitectónica del modelo original. Los tags indican que se trata de un transformer multimodal con capacidades de visión y lenguaje, y la etiqueta "qwen3.8" sugiere una posible relación con la familia Qwen3, aunque no se confirma ni se detalla en la documentación disponible.
+
+Tampoco se especifican el número de tokens de entrenamiento, la composición del dataset, ni si se emplearon técnicas de RLHF, DPO u otras etapas de alineación. Los tags "thinking" y "efficient-reasoning" apuntan a un entrenamiento orientado a modos de razonamiento explícito con control de verbosidad, pero no hay datos técnicos publicados en la información consultada. Para obtener detalles sobre el proceso de entrenamiento habría que consultar el repositorio del modelo base (vectionlabs/Salience-27B-R5).
 
 ## Capacidades
 
-- Generacion de texto y razonamiento: el modelo puede resolver tareas de logica, matematicas y razonamiento multi-paso, segun los tags "reasoning" y "thinking".
-- Comprension de imagenes (vision-language): incluye un proyecto multimodal (mmproj) que permite procesar entradas visuales junto con texto.
-- Generacion de codigo y software engineering: los tags "code", "software-engineering" y "swe" indican que esta optimizado para tareas de programacion, incluyendo reparacion de bugs y desarrollo de software.
-- Uso de herramientas (tool-use) y modo agente: soporta llamadas a funciones y flujos agente, lo que permite integrarlo en pipelines automatizados.
-- Interaccion con terminal: el tag "terminal" sugiere que puede ejecutar comandos y manejar entornos de linea de comandos.
-- Contexto largo: el tag "long-context" indica capacidad para manejar ventanas de contexto extensas, aunque no se especifica el valor exacto.
-- Eficiencia de razonamiento: el tag "thinking-efficiency" apunta a un modo de razonamiento optimizado que reduce el coste computacional en tareas complejas.
+- Generación de texto y razonamiento con modo "thinking" explícito, orientado a eficiencia (menos tokens de razonamiento para el mismo resultado).
+- Capacidades multimodales de visión y lenguaje (requiere cargar el fichero mmproj junto con el GGUF principal).
+- Generación y comprensión de código, con énfasis en ingeniería de software (tag "swe").
+- Uso de herramientas y function calling (tag "tool-use").
+- Operación agéntica multi-paso, incluyendo interacción con terminal (tag "terminal").
+- Soporte de contexto largo (tag "long-context", sin cifra publicada).
+- Capacidades conversacionales multi-turno.
+- Idiomas: inglés únicamente según la model card.
 
 ## Casos de uso
 
-- Asistente de desarrollo de software: el modelo puede ayudar a escribir, revisar y depurar codigo en multiples lenguajes. Su soporte para tool-use permite conectarlo a editores o entornos CI/CD para automatizar tareas como generar tests o corregir errores.
-- Agente de automatizacion de terminal: gracias a su capacidad para interactuar con terminales, puede ejecutar comandos, gestionar archivos y orquestar scripts en entornos locales o remotos, siendo util para administracion de sistemas.
-- Analisis de documentos con imagen: al ser multimodal, puede procesar capturas de pantalla, diagramas o graficos junto con texto, facilitando la extraccion de informacion de documentos tecnicos o informes.
-- Soporte tecnico automatizado: con su razonamiento multi-paso y contexto largo, puede mantener conversaciones complejas con usuarios, resolver dudas sobre productos o guiar en procedimientos de configuracion.
-- Generacion de documentacion tecnica: puede redactar manuales, guias de API o comentarios de codigo a partir de especificaciones o codigo fuente, mejorando la productividad en equipos de desarrollo.
-- Investigacion y analisis de datos: su capacidad de razonamiento y procesamiento de texto largo permite resumir articulos cientificos, extraer conclusiones de datasets textuales o generar hipotesis a partir de informacion proporcionada.
+- Asistente de ingeniería de software en terminal: el modelo puede interpretar comandos, analizar salidas de shell y proponer correcciones en flujos agénticos, gracias a sus capacidades de tool-use y terminal documentadas en los tags.
+- Automatización de revisión de código en CI/CD: integrado mediante tool calling, puede analizar diffs, ejecutar comprobaciones y generar parches, con la ventaja de un razonamiento más compacto que reduce coste por iteración.
+- Agente de resolución de incidencias (SWE-bench style): para pipelines que requieren leer repositorios, localizar bugs y proponer parches verificables, aprovechando el contexto largo y el modo thinking.
+- Análisis de documentación técnica con imágenes: al ser vision-language, puede procesar diagramas de arquitectura, capturas de pantalla de errores o esquemas junto con texto explicativo.
+- Asistencia en pares para desarrollo local: desplegado con llama.cpp u Ollama en una estación de trabajo con GPU de consumo (Q4_K_M, 16,9 GB), ofrece un copiloto privado sin dependencia de API externa.
+- Extracción estructurada de información de capturas y documentos: combinando visión y generación de texto para convertir imágenes de formularios o tablas en JSON estructurado.
+- Prototipado de agentes autónomos de investigación: para tareas de múltiples pasos que requieren planificación, uso de herramientas y síntesis final, con la ventaja de la eficiencia de razonamiento.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. No se dispone de datos sobre MMLU, HumanEval, GSM8K u otras metricas estandar para este modelo ni para sus cuantizaciones.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: depende de la cuantizacion. Para Q4_K_M (16,9 GB) se necesitan aproximadamente 18-20 GB de VRAM; para Q5_K_M (19,6 GB) unos 22 GB; para Q8_0 (29,1 GB) unos 32 GB. Las versiones Q2_K (11 GB) pueden caber en GPUs con 12-16 GB.
-- GPU recomendadas: RTX 3090/4090 (24 GB) para cuantizaciones hasta Q5_K_M; A100 o H100 para Q8_0 o mayor precision. GPUs con 16 GB (RTX 4080, 4070 Ti) pueden ejecutar Q4_K_S o inferiores.
-- Compatibilidad con consumer GPU: si, las cuantizaciones Q2_K a Q5_K_M son adecuadas para GPUs de consumo con 16-24 GB de VRAM.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, text-generation-webui, o servidores compatibles con GGUF (por ejemplo, llama-cpp-python).
-- Latencia y throughput: no se han publicado mediciones especificas. En una RTX 4090, un modelo de 27B en Q4_K_M suele generar entre 20 y 40 tokens por segundo, aunque depende de la implementacion y el contexto.
+- VRAM estimada para inferencia (peso de los pesos, sin contar KV cache):
+  - Q2_K: ~11,0 GB
+  - Q3_K_S: ~12,4 GB; Q3_K_M: ~13,6 GB; Q3_K_L: ~14,7 GB
+  - IQ4_XS: ~15,5 GB; Q4_K_S: ~15,9 GB; Q4_K_M: ~16,9 GB
+  - Q5_K_S: ~19,1 GB; Q5_K_M: ~19,6 GB
+  - Q6_K: ~22,5 GB
+  - Q8_0: ~29,1 GB
+  - Añadir ~0,7 GB (mmproj Q8_0) o ~1,0 GB (mmproj f16) si se usa visión.
+- GPU recomendadas:
+  - RTX 4090 (24 GB): Q4_K_M y Q5_K_M caben con margen; Q6_K ajustado; Q8_0 no cabe en una sola GPU.
+  - RTX 3090 (24 GB): similar a la 4090 en capacidad, con menor throughput.
+  - A100 40 GB / H100 80 GB: Q8_0 y f16 sin problemas, con contexto largo.
+  - GPUs de 16 GB (RTX 4080, 4070 Ti Super): Q2_K a Q3_K_M con contexto moderado.
+- Cabe en GPU de consumo: sí, desde 12 GB (Q2_K) hasta 24 GB (Q5_K_M/Q6_K).
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, y servidores compatibles con GGUF; los tags indican "endpoints_compatible". Para el modelo base en safetensors: vLLM, TGI, transformers.
+- Latencia y throughput: no disponible en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos comparativos publicados con otros modelos de tamano similar (por ejemplo, Qwen 2.5 32B, Yi 34B o Llama 3.1 70B). La informacion disponible no incluye benchmarks que permitan una comparacion objetiva. Se recomienda consultar la pagina del modelo base (vectionlabs/Salience-27B-R5) para posibles actualizaciones.
+| Modelo | Parámetros | Contexto | Multimodal | Licencia | Formato disponible |
+|---|---|---|---|---|---|
+| Salience-27B-R5 (este) | 27,3B | no disponible (tag long-context) | Sí (visión) | Apache 2.0 | GGUF, safetensors (base) |
+| Qwen2.5-32B-Instruct | 32,5B | 128K (según documentación pública de Qwen) | No | Apache 2.0 (variante 32B) | GGUF, safetensors |
+| Gemma 3 27B | 27B | 128K (según documentación pública de Google) | Sí (visión) | Gemma Terms of Use | GGUF, safetensors |
+| Mistral Small 3.1 24B | 24B | 128K (según documentación pública de Mistral) | Sí (visión) | Apache 2.0 | GGUF, safetensors |
+
+Nota: los datos de los modelos comparativos provienen de documentación pública general y no de la información proporcionada en esta ficha; verifíquense en sus repositorios oficiales. Para Salience-27B-R5 no se dispone de cifras de contexto ni de benchmarks que permitan una comparación cuantitativa rigurosa.
 
 ## Limitaciones y advertencias
 
-- Idioma: el modelo esta entrenado principalmente en ingles; su rendimiento en otros idiomas puede ser limitado o no estar soportado.
-- Sesgos: al no disponer de detalles sobre el dataset de entrenamiento, no se pueden evaluar sesgos especificos. Como cualquier LLM, puede reflejar sesgos presentes en los datos.
-- Riesgo de alucinacion: en tareas de razonamiento o generacion de codigo, puede producir respuestas incorrectas o inventar informacion, especialmente en contextos ambiguos.
-- Contexto largo: aunque el tag indica soporte para contexto largo, no se especifica el limite exacto; puede degradarse con ventanas muy extensas.
-- Cuantizacion: las versiones con menor precision (Q2_K, Q3_K) pueden sufrir perdida de calidad en tareas complejas. Se recomienda usar Q4_K_M o superior para uso en produccion.
-- Licencia: Apache 2.0 permite uso comercial, pero es necesario verificar que la implementacion del modelo base cumple con la misma licencia y no tiene restricciones adicionales.
+- Idioma: la model card declara únicamente inglés; el rendimiento en castellano no está documentado y probablemente sea inferior.
+- No hay benchmarks publicados en la información disponible, por lo que no se puede verificar su calidad frente a alternativas.
+- Riesgo de alucinación inherente a modelos de 27B sin datos de evaluación publicados; en tareas agénticas con terminal el riesgo de comandos destructivos es real y requiere sandboxing.
+- El modo "thinking" puede incrementar la latencia y el consumo de tokens si no se controla; la etiqueta "thinking-efficiency" sugiere mitigación, pero no hay métricas.
+- Contexto máximo no especificado: planificar despliegues con margen de seguridad y validar empíricamente.
+- Las cuantizaciones Q2_K y Q3_K_M degradan la calidad (la propia model card marca Q3_K_M como "lower quality"); para producción se recomienda Q4_K_M o superior.
+- El uso de visión requiere cargar el mmproj por separado; olvidarlo deshabilita la multimodalidad silenciosamente en algunos frontends.
+- Licencia Apache 2.0 permite uso comercial, pero conviene revisar las condiciones del modelo base vectionlabs/Salience-27B-R5 por si añade cláusulas adicionales.
+- Repositorio con 0 likes y 484 descargas en el momento de la consulta: comunidad pequeña, menor soporte y validación independiente.
 
 ## Enlaces
 
-- Repositorio GGUF en Hugging Face: https://huggingface.co/mradermacher/Salience-27B-R5-GGUF
-- Modelo base (vectionlabs/Salience-27B-R5): https://huggingface.co/vectionlabs/Salience-27B-R5
-- Cuantizacion alternativa por bartowski: https://huggingface.co/bartowski/vectionlabs_Salience-27B-R5-GGUF
-- Version anterior del modelo (R4): https://huggingface.co/mradermacher/Salience-27B-R4-GGUF
+- Repositorio GGUF: https://huggingface.co/mradermacher/Salience-27B-R5-GGUF
+- Modelo base: https://huggingface.co/vectionlabs/Salience-27B-R5
+- Cuantizaciones con imatrix: https://huggingface.co/mradermacher/Salience-27B-R5-i1-GGUF
+- Página de descargas del autor: https://hf.tst.eu/model#Salience-27B-R5-GGUF
+- FAQ y solicitudes de cuantización: https://huggingface.co/mradermacher/model_requests
+- Guía de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Comparativa de tipos de cuantización (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- nethype GmbH: https://www.nethype.de/

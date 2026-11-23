@@ -62,16 +62,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "besktech/ru-jev · Hugging Face",
-      "url": "https://huggingface.co/besktech/ru-jev",
-      "snippet": "Zero-Shot Classification model with 0.3B parameters. Download, explore files and run it on Hugging Face."
-    },
-    {
-      "title": "besktech/ru-jev at main - Hugging Face",
-      "url": "https://huggingface.co/besktech/ru-jev/tree/main",
-      "snippet": "Instructions to use besktech/ru-jev with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use besktech/ru-jev with Transformers: # Use a pipeline as a high-level helper from transformers import pipeline pipe = pipeline (\"zero-shot-classification\", model=\"besktech/ru-jev\")"
-    }
-  ]
+  "sources": []
 }

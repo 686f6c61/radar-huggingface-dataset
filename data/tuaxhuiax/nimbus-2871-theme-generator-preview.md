@@ -2,81 +2,82 @@
 
 ## Resumen
 
-`nimbus-2871-theme-generator-preview` es un artefacto publicado en Hugging Face por el usuario TUaxhuiax, etiquetado como `design-system` y `theme-generation`, y descrito por su autor como una compilación temprana del adaptador de temas utilizado en demostraciones internas. Forma parte, segun la model card, del tren de publicaciones del Nimbus Design Kit y esta mantenido por el equipo de design systems. No se trata, por tanto, de un modelo de lenguaje generalista, sino de un componente orientado a la generacion o adaptacion de temas dentro de un sistema de diseno.
+Sonora ENVCLF v2.1.0 es un clasificador de sonidos ambientales de tipo compacto desarrollado por Sonora Labs y publicado en Hugging Face bajo el identificador `TUaxhuiax/nimbus-2871-theme-generator-preview`. Se trata de un ajuste fino (*fine-tuning*) del codificador de audio Aurora (`sonora/aurora-audio-encoder`) orientado a la clasificación de eventos sonoros en 10 clases de sonidos cotidianos, con una frecuencia de muestreo de 16 kHz. Su propósito declarado es la monitorización acústica en dispositivo (*on-device*) en edificios inteligentes y espacios públicos.
 
-La informacion publica disponible es minima: la model card apenas ocupa cinco lineas y no incluye arquitectura, numero de parametros, longitud de contexto, idiomas, formato de pesos ni datos de entrenamiento. El repositorio no declara etiqueta de pipeline (`pipeline_tag` no disponible) y, en el momento de la consulta, acumula 0 descargas y 0 likes, con fecha de creacion y ultima actualizacion del 25 de octubre de 2026 (segundos de diferencia entre ambas).
+El modelo se distribuye como un *release candidate* con etiqueta `v2.1.0` (identificador de release `s7-3318`) y está pensado para tareas de etiquetado de escenas acústicas, paneles de conteo de eventos sonoros y alertas de mantenimiento de edificios. La model card indica que no es adecuado para vigilancia crítica para la seguridad ni para la identificación de hablantes individuales, y que se espera que todo el audio se procese localmente en el dispositivo.
 
-Su relevancia ahora es limitada y de ambito interno: el propio autor advierte de que la compilacion es de previsualizacion y no debe usarse en produccion. Cualquier evaluacion tecnica seria requiere contactar con el equipo mantenedor o esperar a una version estable con documentacion completa.
+La relevancia actual del modelo radica en su enfoque hacia la clasificación de audio de bajo coste computacional y despliegue local, un nicho en crecimiento dentro del IoT acústico y la monitorización de entornos. No obstante, la información pública disponible es muy limitada: no se especifican el número de parámetros, la longitud de contexto de audio ni los resultados numéricos de los benchmarks, y el tamaño del repositorio figura como 0.0 GB.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible |
+| Arquitectura | Codificador de audio Aurora con cabeza de clasificación (fine-tuning); detalles internos no disponibles |
 | Parametros totales | no disponible |
-| Parametros activos | no disponible (no se indica que sea un modelo MoE) |
-| Longitud de contexto | no disponible |
+| Parametros activos | no aplica (no es MoE) |
+| Longitud de contexto | no disponible (audio a 16 kHz; duración de ventana no especificada) |
 | Tipos de cuantizacion | no disponible |
-| Idiomas soportados | no disponible (el repositorio no declara idiomas) |
-| Licencia | MIT |
-| Formato de pesos | no disponible |
+| Idiomas soportados | en (inglés; el modelo clasifica audio, no texto) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura del artefacto. La model card no menciona si se trata de un transformer, un modelo de difusion, un adaptador (LoRA/QLoRA), un fichero de configuracion de design tokens o un componente de otro tipo. Tampoco se indica el numero de parametros, la ventana de contexto ni el formato de serializacion de los pesos, y el repositorio no declara `pipeline_tag`, lo que impide inferir la familia de modelo a partir de los metadatos.
+El modelo se construye mediante *fine-tuning* del codificador de audio Aurora (`sonora/aurora-audio-encoder`) al que se añade una cabeza de clasificación para 10 clases de sonidos ambientales. La model card incluye referencias a diagramas de arquitectura (`diagrams/architecture.svg`) y a curvas de entrenamiento a lo largo de 12 épocas (pérdida de entrenamiento y precisión de validación), lo que indica un proceso de ajuste supervisado sobre el conjunto de datos `sonora/esc-clean-v3`.
 
-Respecto al entrenamiento, no hay datos sobre volumen de tokens, composicion del corpus, procesos de alineacion (RLHF, DPO u otros) ni innovaciones tecnicas. Las unicas etiquetas declaradas (`design-system`, `theme-generation`) y la descripcion ("adaptador de temas") sugieren un uso orientado a la generacion de paletas, tokens o variantes de tema dentro del Nimbus Design Kit, pero se trata de una inferencia a partir del nombre y las etiquetas, no de informacion confirmada por el autor.
+No se especifican en la información disponible el número de tokens de audio, la composición detallada del dataset, ni si se emplearon técnicas de RLHF, DPO u otras optimizaciones posteriores al entrenamiento. Tampoco se detallan innovaciones técnicas como decodificación especulativa o atención lineal. La información sobre el proceso de entrenamiento se limita a las curvas y a las tablas de evaluación por clase referenciadas en la model card.
 
 ## Capacidades
 
-- Generacion o adaptacion de temas dentro de un sistema de diseno, segun la descripcion del autor ("theme adapter"); el alcance exacto no esta documentado.
-- Generacion de texto: no confirmada.
-- Razonamiento, matematicas y generacion de codigo: no confirmados.
-- Tool calling / function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingues: no disponible; el repositorio no declara idiomas.
-- Vision, audio u otras modalidades: no disponible.
-- Modo "thinking" o decodificacion especulativa: no disponible.
+- Clasificación de audio ambiental en 10 clases de sonidos cotidianos a 16 kHz.
+- Etiquetado de escenas acústicas (*acoustic scene tagging*).
+- Conteo de eventos sonoros para paneles y cuadros de mando.
+- Generación de alertas de mantenimiento de edificios a partir de eventos acústicos.
+- Procesamiento en dispositivo (*on-device*), adecuado para despliegues de borde.
+- No se documenta soporte de *tool calling*, agentes, razonamiento multi-paso ni capacidades multimodales de texto.
+- No se documentan capacidades multilingües más allá de la etiqueta `en` del repositorio.
 
 ## Casos de uso
 
-- Evaluacion interna de sistemas de diseno: el artefacto esta pensado, segun su autor, para demostraciones internas del Nimbus Design Kit, de modo que el caso de uso documentado es la validacion del adaptador de temas antes de una release estable.
-- Generacion de variantes de tema en prototipos: si el adaptador produce paletas o tokens a partir de una especificacion, encajaria en flujos de prototipado de UI; requiere validacion manual porque no hay documentacion de API ni de formato de entrada/salida.
-- Pruebas de integracion en pipelines de diseno: al estar publicado como artefacto versionado en Hugging Face, puede incorporarse a un pipeline de CI que descargue la revision concreta y compruebe que el adaptador carga correctamente.
-- Benchmarking de alternativas de theming: util como referencia base (aunque sea preliminar) frente a generadores de temas propios, siempre que se documenten las metricas internamente.
-- Investigacion sobre artefactos de design system: sirve como ejemplo de publicacion de componentes no-LLM en Hugging Face, con licencia MIT y trazabilidad por fecha de commit.
-- Formacion y docencia: como caso practico de model card incompleta y de por que los metadatos (`pipeline_tag`, idiomas, formato) son necesarios antes de desplegar.
-- Uso en produccion: descartado explicitamente por el autor en la propia model card.
+- Monitorización acústica en edificios inteligentes: el modelo clasifica eventos sonoros cotidianos en tiempo real sobre audio a 16 kHz, lo que permite detectar patrones anómalos (por ejemplo, ruidos de maquinaria) y activar alertas de mantenimiento sin enviar audio a la nube.
+- Paneles de conteo de eventos sonoros: al etiquetar eventos por clase, se pueden agregar recuentos por franja horaria y construir cuadros de mando de ocupación o actividad en espacios públicos.
+- Alertas de mantenimiento predictivo: la detección de clases asociadas a fallos (ruidos anómalos de equipos) permite programar intervenciones antes de que el fallo sea crítico, siempre que las clases relevantes estén bien representadas en el corpus.
+- Etiquetado de escenas acústicas para anotación de datasets: el modelo puede preetiquetar grabaciones de campo y reducir el esfuerzo manual de anotación en proyectos de investigación acústica.
+- Procesamiento de borde en dispositivos de bajo consumo: al ser un modelo compacto y procesar audio localmente, encaja en pasarelas IoT o dispositivos empotrados con requisitos de privacidad estrictos.
+- Investigación en clasificación de sonidos ambientales: sirve como línea base ajustada sobre Aurora para comparar arquitecturas o estrategias de *fine-tuning* en el corpus `sonora/esc-clean-v3`.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye metricas de calidad de tema generado, cobertura de tokens, tiempo de inferencia ni comparaciones con otros sistemas de design tokens.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card referencia tablas de evaluación por clase (`tables/eval_tables.md`) y una matriz de confusión, pero no se incluyen cifras numéricas de precisión, recall, F1 ni comparaciones con otros modelos en la información proporcionada.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible; se desconoce el tamano del modelo y el formato de pesos.
+- VRAM estimada para inferencia: no disponible (no se especifica el número de parámetros).
 - GPU recomendadas: no disponible.
-- Viabilidad en GPU de consumo (RTX 4090, 3090, etc.): no disponible; no puede determinarse sin conocer parametros y cuantizacion.
-- Opciones de despliegue (vLLM, llama.cpp, Ollama, TGI): no disponible; el repositorio no declara `pipeline_tag` ni formato de pesos, por lo que no se puede confirmar compatibilidad con ningun runtime concreto.
-- Latencia y throughput: no disponibles.
+- Compatibilidad con GPU de consumo: no confirmada; al tratarse de un modelo descrito como "compacto" para despliegue en dispositivo, es plausible que quepa en GPU de consumo, pero no hay datos que lo confirmen.
+- Opciones de despliegue: el repositorio usa la librería `transformers`; no se documentan integraciones con vLLM, llama.cpp, Ollama o TGI.
+- Latencia y throughput estimados: no disponibles.
 
 ## Comparativa con modelos similares
 
-No disponible. La busqueda web realizada no ha devuelto ningun modelo, repositorio o publicacion comparable en la categoria de generacion de temas para sistemas de diseno; los resultados obtenidos corresponden a generadores de imagenes por texto y a herramientas sin relacion con este artefacto. Tampoco se dispone de datos de parametros, contexto o rendimiento del propio modelo que permitan una comparacion cuantitativa.
+No disponible. La información proporcionada no incluye modelos comparables de la misma categoría (clasificación de sonidos ambientales) ni datos de rendimiento que permitan una comparación rigurosa.
 
 ## Limitaciones y advertencias
 
-- Estado de previsualizacion: el autor indica literalmente que "this preview build is not for production use"; no debe desplegarse en entornos productivos.
-- Documentacion insuficiente: sin arquitectura, parametros, contexto, idiomas ni formato de pesos, es imposible evaluar riesgo tecnico o coste de inferencia.
-- Ausencia de validacion externa: 0 descargas y 0 likes en el momento de la consulta implican que no hay evidencia de uso ni de resultados reproducidos por terceros.
-- Licencia: MIT permite uso comercial y modificacion, pero esa permisividad no anula la advertencia del autor sobre el caracter no productivo de esta compilacion; conviene revisar la version estable antes de integrarla.
-- Sesgos conocidos: no disponible; no se documenta composicion del dataset ni proceso de evaluacion de sesgos.
-- Riesgo de alucinacion: no disponible; depende de la naturaleza del artefacto, que no se especifica.
-- Limitaciones de contexto o idioma: no disponibles.
-- Trazabilidad: el repositorio se actualizo un segundo despues de su creacion (25/10/2026, 01:51:23 y 01:51:24 UTC), lo que sugiere una publicacion automatizada o un unico commit sin historial de iteraciones.
-- Mantenimiento: la model card atribuye el mantenimiento al "design-systems team" sin identificar la organizacion ni un canal de soporte.
+- El rendimiento se degrada en grabaciones con reverberación intensa.
+- El rendimiento es inferior en clases infrarrepresentadas en el corpus de entrenamiento.
+- La clase "ruido de fondo" es una clase comodín y no debe interpretarse como una detección positiva.
+- No es adecuado para vigilancia crítica para la seguridad.
+- No debe emplearse para identificar hablantes individuales.
+- Se espera que todo el audio se procese en el dispositivo; el uso en la nube no está documentado.
+- Riesgo de alucinación y sesgos: no documentados en la información disponible.
+- Licencia Apache 2.0: permite uso comercial, pero se recomienda revisar el texto completo de la licencia en el repositorio.
+- El repositorio figura como *release candidate* (`v2.1.0`, release `s7-3318`), por lo que la API y los pesos podrían cambiar.
+- El tamaño del repositorio aparece como 0.0 GB, lo que puede indicar que los pesos no están efectivamente alojados o que la métrica no se ha actualizado.
 
 ## Enlaces
 
 - Hugging Face: https://huggingface.co/TUaxhuiax/nimbus-2871-theme-generator-preview
-- Paper, blog, repositorio de codigo o demo: no disponibles en la informacion proporcionada. La busqueda web no devolvio enlaces relacionados con este modelo ni con el Nimbus Design Kit.
+- Modelo base: https://huggingface.co/sonora/aurora-audio-encoder
+- Dataset: https://huggingface.co/datasets/sonora/esc-clean-v3
+- Licencia Apache 2.0: https://www.apache.org/licenses/LICENSE-2.0

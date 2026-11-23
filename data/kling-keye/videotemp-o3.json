@@ -1,0 +1,50 @@
+{
+  "schema": 2,
+  "id": "Kling-Keye/VideoTemp-o3",
+  "slug": "kling-keye-videotemp-o3",
+  "author": "Kling-Keye",
+  "url": "https://huggingface.co/Kling-Keye/VideoTemp-o3",
+  "created_at": "2026-11-23T04:12:07.000Z",
+  "updated_at": "2026-11-23T04:12:08.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "video-text-to-text",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen2_5_vl",
+    "video-text-to-text",
+    "en",
+    "dataset:Kwai-Keye/VideoTemp-o3",
+    "arxiv:2602.07801",
+    "base_model:Qwen/Qwen2.5-VL-7B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-VL-7B-Instruct",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8292166656,
+  "parameters_human": "8.29B",
+  "storage_bytes": 16595836440,
+  "storage_human": "16.6 GB",
+  "context_length": null,
+  "base_model": "Qwen/Qwen2.5-VL-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

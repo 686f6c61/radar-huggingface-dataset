@@ -2,82 +2,87 @@
 
 ## Resumen
 
-El modelo `mahesh27/mms-300m-xsampa-doreco` es un checkpoint de reconocimiento automático de voz (ASR) basado en la arquitectura wav2vec2, derivado del modelo Massively Multilingual Speech (MMS-300M) de Meta. Ha sido adaptado por el usuario mahesh27 para transcribir audio en notación X-SAMPA, un alfabeto fonético codificado en ASCII, utilizando como base de entrenamiento el corpus DoReCo (Language DOcumentation REference COrpus), que recopila grabaciones de campo de lenguas minoritarias y en peligro de extinción.
+`mms-300m-xsampa-doreco` es un modelo de reconocimiento automatico del habla (ASR) especializado en la transcripcion fonetica en alfabeto X-SAMPA, desarrollado por el autor de Hugging Face `mahesh27`. Se trata de un fine-tuning de `facebook/mms-300m` (la familia Massively Multilingual Speech de Meta), que a su vez parte de una arquitectura Wav2Vec2. El modelo no transcribe texto ortografico, sino secuencias de fonemas en notacion X-SAMPA para 45 lenguas cubiertas por el corpus DoReCo (Documentation of Languages and Dialects of the World).
 
-El modelo cuenta con 316.639.564 parámetros y se distribuye bajo licencia Apache 2.0 en formato safetensors. Su relevancia radica en que aborda un nicho concreto: la transcripción fonética de lenguas con pocos recursos documentales, un ámbito donde los ASR comerciales no suelen ofrecer cobertura. Al emplear X-SAMPA como vocabulario de salida, facilita la labor de lingüistas y documentalistas que necesitan transcripciones fonéticas precisas sin depender de ortografías normalizadas.
+Su relevancia practica esta en el alineamiento forzado (forced alignment) y la evaluacion fonetica: al emitir fonemas en lugar de grafemas, permite segmentar audio a nivel de fonema y palabra mediante CTC, y calcular metricas de error fonetico comparables entre lenguas con ortografias muy dispares. El modelo tiene 316.639.564 parametros y un repositorio de 1,5 GB en formato safetensors.
 
-El repositorio no incluye una model card detallada más allá de la licencia, por lo que gran parte de la información técnica debe inferirse del modelo base MMS-300M y de las características del corpus DoReCo. El modelo se publicó en agosto de 2026 y no registra descargas ni valoraciones en el momento de la consulta.
+La ficha se basa exclusivamente en la informacion disponible en Hugging Face y en la model card del autor; los datos no publicados se marcan como no disponibles.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Wav2Vec2 (transformer encoder convolucional) |
+| Arquitectura | Wav2Vec2 (encoder convolucional + transformer, CTC) |
 | Parametros totales | 316.639.564 |
-| Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | no disponible (depende de la configuracion de extraccion de features) |
-| Tipos de cuantizacion | no disponible (solo safetensors en el repo) |
-| Idiomas soportados | 53 lenguas del corpus DoReCo (lista completa no publicada en el repo) |
+| Parametros activos | no aplica (modelo denso, no MoE) |
+| Longitud de contexto | no disponible (modelo de audio; ventana de entrada tipica de Wav2Vec2, no declarada por el autor) |
+| Tipos de cuantizacion | no disponible (pesos en safetensors; no se documentan variantes GGUF/ONNX) |
+| Idiomas soportados | 45 lenguas del corpus DoReCo (listado concreto no disponible) |
 | Licencia | Apache 2.0 |
 | Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
 
-El modelo se basa en la arquitectura wav2vec2, un encoder transformer con una etapa convolucional previa que procesa audio crudo a 16 kHz. El checkpoint original MMS-300M fue preentrenado de forma autosupervisada con el objetivo de contraste wav2vec2 sobre aproximadamente 500.000 horas de audio en más de 1.400 lenguas. Sobre esa base, el autor del repositorio ha realizado un ajuste fino (fine-tuning) supervisado para la tarea de transcripción fonética en notación X-SAMPA, utilizando los datos del corpus DoReCo.
+El modelo es un Wav2Vec2 de 300M de parametros (familia `facebook/mms-300m`) con cabeza CTC adaptada a un vocabulario de salida en X-SAMPA. La cadena de entrenamiento declarada es en dos etapas: primero un fine-tuning intermedio sobre FLEURS con salida en IPA (`mahesh27/mms-300m-ipa-fleurs`) y despues un ajuste sobre el corpus DoReCo con salida en X-SAMPA. No se detallan en la informacion disponible el numero de horas de audio, la composicion exacta del dataset, ni si se aplicaron tecnicas de aumento de datos o regularizacion especificas.
 
-El corpus DoReCo reúne grabaciones de campo de 53 lenguas, muchas de ellas minoritarias o en peligro de extinción, con anotaciones lingüísticas de alta calidad. El vocabulario de salida del modelo está restringido a símbolos X-SAMPA, lo que permite representar fonemas de cualquier lengua sin depender de un sistema ortográfico concreto. No se dispone de información sobre el número exacto de horas de entrenamiento, la estrategia de aumentación de datos ni si se aplicaron técnicas adicionales como decodificación con beam search o language model externo.
+La innovacion principal no es arquitectonica sino de representacion: sustituir la salida ortografica por un inventario fonetico comun (X-SAMPA) permite entrenar un unico cabezal para lenguas con sistemas de escritura heterogeneos y facilita el alineamiento mediante `ctc-segmentation`, siguiendo el ejemplo de uso de Wav2Vec2. El trabajo asociado se publica en Findings of EMNLP 2026 (Akavarapu, Daniel y Jager), centrado en metricas de alineamiento forzado a nivel de fonema y palabra con representaciones auto-supervisadas del habla.
 
 ## Capacidades
 
-- Transcripción fonética de audio en notación X-SAMPA, orientada a lenguas con documentación escasa.
-- Procesamiento de audio muestreado a 16 kHz, requisito estándar de los modelos wav2vec2.
-- Cobertura multilingüe restringida a las 53 lenguas representadas en DoReCo, con posible generalización limitada a lenguas fuera del corpus.
-- No se ha documentado soporte para tool calling, generación de texto libre ni razonamiento multi-paso, ya que es un modelo puramente de reconocimiento de voz.
-- No incluye capacidades de visión ni de síntesis de voz.
+- Reconocimiento automatico del habla con salida en fonemas X-SAMPA (no texto ortografico).
+- Alineamiento forzado audio-texto a nivel de fonema y de palabra mediante CTC.
+- Cobertura de 45 lenguas del corpus DoReCo, incluidas lenguas con poca o nula tradicion escrita estandarizada.
+- Extraccion de representaciones acusticas intermedias (uso como encoder para tareas descendentes).
+- Segmentacion temporal de audio a partir de las probabilidades CTC.
+- No se documenta soporte de tool calling, agentes, vision, audio generativo ni modo de razonamiento.
 
 ## Casos de uso
 
-- Documentación lingüística de campo: los investigadores pueden transcribir automáticamente grabaciones de hablantes nativos de lenguas minoritarias a notación fonética X-SAMPA, reduciendo horas de trabajo manual de anotación.
-- Creación de corpus fonéticos: el modelo permite generar transcripciones fonéticas alineadas con el audio para construir o ampliar corpus de entrenamiento de otros sistemas de procesamiento de voz.
-- Estudios de fonología comparada: al unificar la salida en X-SAMPA, facilita la comparación sistemática de inventarios fonéticos entre lenguas del corpus DoReCo.
-- Archivado y preservación digital: instituciones que digitalizan archivos sonoros de lenguas en peligro pueden usar el modelo para generar transcripciones fonéticas que acompañen a las grabaciones originales.
-- Evaluación de inteligibilidad y dialectología: los lingüistas pueden analizar variaciones fonéticas entre hablantes o regiones a partir de las transcripciones automáticas.
-- Desarrollo de ASR para lenguas de bajos recursos: las transcripciones generadas pueden servir como pseudo-etiquetas para entrenar otros modelos con vocabularios ortográficos o fonéticos más amplios.
+- Alineamiento forzado en documentacion linguistica: dado un audio de campo y su transcripcion, el modelo produce probabilidades CTC que `ctc-segmentation` convierte en fronteras de fonema y palabra, lo que acelera la anotacion en proyectos de documentacion de lenguas minoritarias.
+- Evaluacion de sistemas de sintesis de voz: comparar la salida fonetica del modelo sobre audio sintetizado frente a audio de referencia permite medir inteligibilidad a nivel de fonema con una metrica independiente del idioma.
+- Analisis fonetico cuantitativo: extraer secuencias X-SAMPA de un corpus para estudiar inventarios, alofonia o variacion dialectal sin depender de la ortografia de cada lengua.
+- Investigacion en ASR multilingue de bajos recursos: usar las representaciones del encoder como inicializacion o como extractor de caracteristicas en lenguas con pocos datos etiquetados.
+- Deteccion de errores de pronunciacion: alineando la secuencia esperada con la producida por el modelo se pueden localizar desviaciones foneticas concretas en aprendizaje de lenguas o logopedia.
+- Validacion de pipelines de audio: servir como componente de control en pruebas de regresion de sistemas de reconocimiento, comparando distancias foneticas entre versiones.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. No se dispone de métricas como WER (Word Error Rate) o PER (Phoneme Error Rate) sobre conjuntos de evaluación estándar, ni comparaciones con otros modelos de transcripción fonética.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card unicamente referencia el articulo de EMNLP 2026 sobre metricas de alineamiento; no se incluyen cifras de PER (phoneme error rate), WER ni comparaciones numericas en la informacion proporcionada.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: con 316 millones de parámetros en precisión fp32, el modelo requiere aproximadamente 1,3 GB de VRAM. Con cuantización a int8, podría reducirse a unos 350-400 MB, aunque no se ofrecen pesos cuantizados en el repositorio.
-- GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM es suficiente para inferencia en lotes pequeños. Una NVIDIA GTX 1650 o superior podría ejecutar el modelo sin problemas. Para fine-tuning adicional, se recomienda una GPU con 8-12 GB de VRAM (RTX 3060, RTX 3080, A10).
-- Compatibilidad con GPU de consumo: sí, el modelo cabe en GPUs de consumo desde 4 GB de VRAM.
-- Opciones de despliegue: al ser un modelo wav2vec2 estándar, puede ejecutarse con Hugging Face Transformers, así como con librerías de inferencia optimizada como vLLM (aunque no es el caso de uso típico) o mediante ONNX Runtime si se exporta el modelo. También es compatible con pipelines de Hugging Face para ASR.
-- Latencia y throughput: no se dispone de datos medidos. Como referencia orientativa, un modelo wav2vec2 de 300M parámetros en una GPU moderna procesa audio en tiempo real o más rápido (factor de 5-10x sobre la duración del audio) con batch size 1.
+- VRAM estimada para inferencia en fp32: aproximadamente 1,3 GB solo para pesos (316,6 M de parametros), con picos adicionales por activaciones y buffers de atencion.
+- VRAM estimada en fp16/bf16: aproximadamente 0,7 GB para pesos; el modelo cabe holgadamente en cualquier GPU consumer con 4 GB o mas.
+- GPU recomendadas: RTX 3060/4060 o superiores para uso interactivo; A100/H100 no son necesarias salvo para procesar grandes volumenes en lote.
+- Despliegue: `transformers` con `Wav2Vec2ForCTC`, `pipeline("automatic-speech-recognition")`, o servidores tipo TGI/vLLM para Wav2Vec2 segun soporte de la version; `ctc-segmentation` para el alineamiento.
+- Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Salida | Idiomas | Licencia |
-|---|---|---|---|---|---|
-| mahesh27/mms-300m-xsampa-doreco | 316M | no disponible | X-SAMPA | 53 (DoReCo) | Apache 2.0 |
-| facebook/mms-300m | 300M | 20 s aprox. | vocabulario por idioma | 1.400+ | CC-BY-NC 4.0 (no comercial) |
-| facebook/mms-300m-1130-forced-aligner | 300M | no disponible | CTC alignments | 158 | CC-BY-NC 4.0 |
+| Modelo | Parametros | Contexto/salida | Licencia | Disponibilidad |
+|---|---|---|---|---|
+| `mahesh27/mms-300m-xsampa-doreco` | 316,6 M | Fonemas X-SAMPA, 45 lenguas DoReCo | Apache 2.0 | Hugging Face, 688 descargas |
+| `facebook/mms-300m` | ~300 M | Texto ortografico, 1000+ lenguas | CC-BY-NC 4.0 | Hugging Face |
+| `mahesh27/mms-300m-ipa-fleurs` | ~300 M | Fonemas IPA, FLEURS | no disponible | Hugging Face |
+| `facebook/wav2vec2-xlsr-53-espeak-cv-ft` | ~300 M | Fonemas tipo eSpeak, ingles | Apache 2.0 | Hugging Face |
 
-El modelo de mahesh27 se diferencia del MMS-300M original en dos aspectos clave: la salida está restringida a X-SAMPA (frente a vocabularios ortográficos por idioma) y la licencia es Apache 2.0, lo que permite uso comercial sin restricciones. Frente al forced aligner de Meta, este modelo no está diseñado para alineación forzada sino para transcripción directa, aunque ambos comparten base arquitectónica.
+La diferencia clave frente a `facebook/mms-300m` es la salida fonetica y la licencia Apache 2.0, que permite uso comercial sin las restricciones no comerciales del modelo original de Meta. Frente a `wav2vec2-xlsr-53-espeak-cv-ft`, la cobertura es multilingue (45 lenguas) en lugar de centrada en ingles. No se dispone de comparaciones de rendimiento numericas entre estos modelos en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- La cobertura lingüística está limitada a las 53 lenguas del corpus DoReCo; el rendimiento en lenguas fuera de ese conjunto probablemente sea deficiente o nulo.
-- No se ha publicado información sobre la cantidad de datos de entrenamiento, la división de validación ni las métricas de calidad, lo que impide evaluar su fiabilidad de forma objetiva.
-- El modelo no incluye un mecanismo de corrección ortográfica ni un modelo de lenguaje externo, por lo que las transcripciones pueden contener errores fonéticos que requieran revisión manual.
-- Al ser un modelo de transcripción fonética, no genera texto legible para usuarios no especializados; su uso requiere conocimientos de X-SAMPA.
-- El repositorio no ofrece pesos cuantizados ni documentación de uso, lo que puede dificultar su adopción en entornos de producción.
-- No se han realizado evaluaciones de sesgo o robustez ante ruido, acentos o condiciones acústicas adversas.
+- La salida es fonetica (X-SAMPA), no texto legible; requiere un paso de conversion o interpretacion posterior.
+- El inventario de fonemas y el rendimiento estan acotados a las 45 lenguas de DoReCo; el comportamiento fuera de ese conjunto no esta documentado.
+- No se publican cifras de error (PER/WER) ni detalles de evaluacion, por lo que la calidad real por lengua es desconocida.
+- Riesgo de alucinacion fonetica en audio con ruido, solapamiento de hablantes o code-switching: el decodificado CTC puede producir secuencias plausibles pero incorrectas.
+- Sesgos derivados del corpus de entrenamiento (dominios de documentacion linguistica, condiciones de grabacion de campo) que pueden no generalizar a audio telefonico o de estudio.
+- Licencia Apache 2.0 permite uso comercial, pero el modelo base `facebook/mms-300m` esta bajo CC-BY-NC 4.0; conviene revisar la compatibilidad de licencias antes de un despliegue comercial.
+- No se documentan limitaciones especificas de contexto ni de longitud de audio; en Wav2Vec2 el audio largo debe trocearse en ventanas.
+- La model card no incluye informacion sobre sesgos demograficos ni evaluacion de equidad entre hablantes.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/mahesh27/mms-300m-xsampa-doreco
-- Modelo base MMS-300M: https://huggingface.co/facebook/mms-300m
-- Corpus DoReCo: https://doreco.huma-num.fr/
-- Proyecto MMS de Meta: https://huggingface.co/facebook/mms-300m/blob/main/README.md
+- Modelo en Hugging Face: https://huggingface.co/mahesh27/mms-300m-xsampa-doreco
+- Modelo base: https://huggingface.co/facebook/mms-300m
+- Modelo intermedio IPA/FLEURS: https://huggingface.co/mahesh27/mms-300m-ipa-fleurs
+- Herramienta de segmentacion CTC: https://github.com/lumaku/ctc-segmentation
+- Articulo citado (Findings of EMNLP 2026): https://aclanthology.org/2026.findings-emnlp.279/

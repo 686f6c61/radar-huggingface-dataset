@@ -2,105 +2,102 @@
 
 ## Resumen
 
-CaPtain-4B es un agente robótico de tipo *code-as-policy* desarrollado por YijiaFan a partir de Qwen3.5-4B, al que se le ha aplicado un post-entrenamiento en dos fases: fine-tuning supervisado (SFT) y aprendizaje por refuerzo (RL). A diferencia de los modelos VLA (Vision-Language-Action) clásicos, no genera acciones ni objetivos articulares directamente: en cada paso escribe código Python que se ejecuta en un entorno de pruebas (*harness*) con una API robótica de 22 capacidades de bajo nivel, lee los recibos de sus propias llamadas y decide por sí mismo cuándo la tarea está completa.
+CaPtain-4B es un modelo de lenguaje y visión (VLM) afinado a partir de Qwen3.5-4B por YijiaFan, presentado como el modelo final del pipeline "CaPtain: A Pipeline for Post-Training Code-as-Policy Robot Agents". No es un modelo de acción directa (VLA): es un agente que escribe código Python para controlar un robot a través de un arnés externo denominado CaPtain-Harness, lee los recibos de sus propias llamadas al robot y decide por sí mismo cuándo la tarea ha terminado.
 
-El modelo resuelve el problema de llevar tareas robóticas de manipulación a modelos de lenguaje pequeños: en lugar de aprender una política motora de extremo a extremo, delega el control en código verificable y apoya la percepción en servicios externos (SAM 3 y Molmo2-8B). Esto permite que un modelo de unos 5.000 millones de parámetros alcance tasas de éxito del 73,8 % en LIBERO y del 78,5 % en LIBERO-PRO, frente al 0 % del modelo base sin entrenar.
+El modelo parte de la arquitectura Qwen3_5ForConditionalGeneration (transformer multimodal con torre de visión) y ha pasado por un proceso de ajuste supervisado (SFT) seguido de aprendizaje por refuerzo (RL). Durante el SFT la torre de visión se mantuvo congelada. El `lm_head` está desvinculado del embeddings de entrada. Los pesos se distribuyen en bf16 safetensors con un total de 5.174.964.736 parámetros, y el repositorio ocupa 10,4 GB.
 
-Es relevante porque demuestra un pipeline completo y reproducible (datos SFT, artefactos de RL, harness y código de evaluación) para convertir un VLM genérico en un agente encarnado. Los pesos se distribuyen en bf16 safetensors con la arquitectura `Qwen3_5ForConditionalGeneration`, licencia Apache 2.0 y soporte de razonamiento con plantilla de chat estándar de Qwen3.5.
+Su relevancia actual reside en que propone un paradigma distinto para la robótica encarnada: en lugar de predecir acciones o posiciones articulares, el modelo genera programas Python que invocan 22 capacidades de bajo nivel (percepción, medición geométrica, movimiento protegido a nivel de cinemática inversa) más una función `finish()`. El modelo solo funciona correctamente dentro de su arnés específico; fuera de él se comporta como un VLM pequeño convencional sin capacidad robótica.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Qwen3_5ForConditionalGeneration (VLM multimodal, lm_head sin atar) |
-| Parametros totales | 5.174.964.736 (dato real de safetensors) |
-| Parametros activos | no disponible (no se indica si es MoE) |
-| Longitud de contexto | 81.920 tokens (81920 en el despliegue con vLLM); ventana efectiva de 64k con compactacion del harness |
-| Tipos de cuantizacion | bf16 (no se publican versiones cuantizadas) |
-| Idiomas soportados | Ingles (en) |
-| Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (bf16), ~10,4 GB de repositorio |
+| Arquitectura | Qwen3_5ForConditionalGeneration (transformer multimodal con torre de visión) |
+| Parametros totales | 5.174.964.736 |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | 81.920 tokens en el servidor vLLM configurado; ventana de 64k tokens con compactación del arnés durante la evaluación |
+| Tipos de cuantizacion | no disponible (pesos publicados en bf16 safetensors) |
+| Idiomas soportados | en (inglés) |
+| Licencia | apache-2.0 |
+| Formato de pesos | safetensors (bf16) |
 
 ## Arquitectura y entrenamiento
 
-CaPtain-4B parte de Qwen3.5-4B, un modelo multimodal imagen-texto-a-texto basado en la familia Qwen3.5. Durante el SFT la torre de vision se mantuvo congelada, de modo que el entrenamiento se centra en las capacidades de razonamiento y generacion de codigo. El modelo conserva el tokenizador, el procesador y la plantilla de chat de Qwen3.5-4B, incluyendo razonamiento con `<think>` y llamadas a herramientas en formato XML.
+El modelo se construye sobre Qwen3.5-4B, un transformer multimodal con torre de visión. La innovación principal no está en la arquitectura base sino en el paradigma de entrenamiento: el modelo aprende a escribir código Python como política (code-as-policy) en lugar de predecir acciones directamente. El proceso de post-entrenamiento consta de dos fases: un ajuste supervisado (SFT) sobre el dataset `YijiaFan/CaPtain-SFT-Data`, que inicializa el modelo y sirve como referencia KL, y una fase posterior de aprendizaje por refuerzo (RL) cuyos puntos de partida, warm start del crítico, configuraciones y entradas de evaluación están publicados en `YijiaFan/CaPtain-artifacts`.
 
-El entrenamiento consto de dos etapas documentadas: primero un fine-tuning supervisado con el dataset `YijiaFan/CaPtain-SFT-Data`, inicializado desde el checkpoint `YijiaFan/CaPtain-4B-SFT` (que tambien sirve como referencia KL), y despues aprendizaje por refuerzo con puntos de partida y warm start del critico distribuidos en `YijiaFan/CaPtain-artifacts`. El modelo fue entrenado sobre la plantilla de peticion exacta del harness: prompt de sistema con `TASK.md`, esquema de la herramienta `python` (contrato `python-runtime/v1`), recibos de una linea por cada llamada robotica y notas de compactacion de contexto. No se ha publicado el numero de tokens de entrenamiento ni la composicion detallada del dataset.
-
-Un detalle de diseno importante: la percepcion no la realiza el propio modelo, sino servicios del harness (`segment` y `mark_point` con SAM 3 y Molmo2-8B, con posiciones obtenidas por retroproyeccion de profundidad). El modelo invoca estas herramientas pero no las sustituye. Tampoco ve poses de objetos, contactos ni el predicado de exito, que permanecen en el host.
+Durante el SFT la torre de visión permaneció congelada. El modelo utiliza la plantilla de chat estándar de Qwen3.5, con razonamiento en `<think>` y llamadas a herramientas en XML, pero espera contenido específico del arnés: el prompt de sistema y el contexto de entorno que envía el arnés, el archivo `TASK.md` incrustado en el prompt de sistema, el esquema de la herramienta `python` (contrato `python-runtime/v1`), los recibos de llamadas al robot, las notas de compactación de contexto y la colocación de imágenes. El modelo no ve posiciones de objetos, contactos ni el predicado de éxito; estos permanecen en el host. La percepción se ejecuta como servicios externos: las herramientas `segment` y `mark_point` del arnés llaman a SAM 3 y Molmo2-8B, y las posiciones provienen de retroproyección de profundidad.
 
 ## Capacidades
 
-- Generacion de codigo Python orientado a control robotico: escribe programas para una sesion persistente y aislada de Python 3.11 con 22 capacidades de bajo nivel (percepcion, medicion geometrica, movimiento custodiado a nivel de IK) mas `finish()`, sin macros de agarre o colocacion.
-- Razonamiento multi-paso: usa el modo de razonamiento de Qwen3.5 (`<think>`) antes de emitir llamadas a herramientas.
-- Tool calling nativo: llamadas a herramientas en formato XML (parser `qwen3_xml`), con la herramienta unica `python` y llamadas indirectas a los servicios de percepcion.
-- Interpretacion de imagenes de camara: recibe imagenes de camara junto con su propio codigo, su salida y los recibos de las llamadas.
-- Decision autonomia de terminacion: el propio agente decide cuando la tarea esta completa llamando a `finish()`.
-- Ciclo agente de largo horizonte: hasta 60 peticiones al modelo, 1.080 segundos de tiempo de pared y 150 acciones fisicas por episodio.
-- No es un VLA: fuera del harness CaPtain-Harness se comporta como un VLM pequeno ordinario, sin capacidad robotica.
+- Generación de código Python como política robótica: escribe programas para una sesión persistente y aislada de Python 3.11 con 22 capacidades de bajo nivel (percepción, medición geométrica, movimiento protegido a nivel de cinemática inversa) más `finish()`.
+- Lectura e interpretación de recibos: procesa una línea de texto de recibo por cada llamada al robot y adapta su comportamiento en consecuencia.
+- Decisión autónoma de finalización: determina por sí mismo cuándo la tarea ha terminado e invoca `finish()`.
+- Razonamiento multimodal: procesa imágenes de cámara junto con su propio código y salida.
+- Modo de razonamiento (`<think>`) con llamadas a herramientas en XML.
+- Soporte de tool calling mediante el parser `qwen3_xml` en vLLM.
+- Capacidades multilingües: limitadas al inglés según la model card.
+- No es un VLA: no emite acciones ni objetivos articulares directamente.
 
 ## Casos de uso
 
-- Evaluacion en benchmarks de manipulacion (LIBERO y derivados): el caso de uso principal; el modelo ejecuta episodios completos de manipulacion en simulacion, puntuados mediante el predicado oculto del host y la llamada autonoma a `finish()`.
-- Investigacion en agentes encarnados code-as-policy: el pipeline completo (datos SFT, artefactos de RL, configs y listas de tareas) esta publicado, lo que permite reproducir el post-entrenamiento o extenderlo a nuevos dominios.
-- Control de robots con APIs de bajo nivel: en un robot real o simulado con una API comparable (percepcion, medicion geometrica, movimiento custodiado), el modelo puede escribir y ejecutar programas de manipulacion paso a paso leyendo los recibos de cada llamada.
-- Orquestacion de servicios de percepcion: el modelo puede coordinar SAM 3 y Molmo2-8B como servicios, decidiendo cuando segmentar escenas o marcar puntos de interes y combinando los resultados con retroproyeccion de profundidad.
-- Estudio de RL sobre agentes de codigo: los artefactos de RL (starts, warm start del critico, configs) permiten analizar como el aprendizaje por refuerzo mejora un agente SFT (del 55,4 % al 73,8 % en LIBERO).
-- Baseline para comparacion de politicas de codigo: al publicarse el protocolo de evaluacion exacto (muestreo, presupuestos y estados iniciales), sirve como punto de referencia reproducible frente a VLAs y otros agentes.
+- Manipulación robótica en simulación LIBERO: el modelo controla un robot en los entornos LIBERO escribiendo código Python que invoca percepción, medición y movimiento, leyendo los recibos de cada llamada para decidir el siguiente paso. Es adecuado porque ha sido entrenado específicamente sobre la plantilla de petición del arnés y evalúa con éxito del 73,8 % en estados oficiales retenidos.
+- Evaluación de generalización en benchmarks de robótica: permite medir la transferencia a LIBERO-PRO, LIBERO-Plus y LIBERO-MAX, nunca vistos en entrenamiento, con tasas de éxito del 78,5 % y 68,6 % en las variantes Pos+Task de LIBERO-PRO.
+- Investigación en code-as-policy: sirve como referencia reproducible para estudiar cómo un agente que escribe código puede sustituir a un VLA tradicional, con pipeline de SFT y RL publicado en GitHub.
+- Desarrollo de agentes encarnados con percepción como servicio: el modelo demuestra cómo delegar segmentación (SAM 3) y marcado de puntos (Molmo2-8B) a servicios externos mientras el LLM orquesta las llamadas.
+- Automatización de tareas de pick-and-place sin macros: al no existir macros de agarre o colocación, el modelo debe componer primitivas de bajo nivel, lo que resulta útil para estudiar la composición de habilidades.
+- Experimentación con aprendizaje por refuerzo sobre agentes de código: los artefactos de RL publicados permiten reproducir el entrenamiento y analizar la mejora respecto al modelo SFT (del 55,4 % al 73,8 % en LIBERO).
 
 ## Benchmarks y rendimiento
 
-Todos los valores son tasas de exito (%) en simulacion, con muestreo T = 1.0, top_p = 1.0, thinking activado, y presupuestos de 60 peticiones, 1.080 s y 150 acciones fisicas por episodio. *Host* = el predicado de exito oculto del benchmark se cumple; *Strict* = exito de host mas llamada autonoma a `finish()`.
-
-**Familia LIBERO** (host / strict):
+Todas las cifras son tasas de éxito (%) en simulación bajo el protocolo del autor: muestreo T = 1,0, top_p = 1,0, thinking activado, presupuestos de 60 peticiones al modelo, 1.080 s de tiempo real y 150 acciones físicas por episodio, ventana de contexto de 64k tokens con compactación del arnés. "Host" indica que el predicado de éxito oculto del benchmark se cumple al final del episodio; "Strict" indica éxito del host y que el agente además llamó a `finish()` por sí mismo.
 
 | Benchmark | Episodios | Qwen3.5-4B | CaPtain-4B-SFT | CaPtain-4B |
 |---|:-:|:-:|:-:|:-:|
-| LIBERO, estados oficiales retenidos 11-16 | 240 | 0,0 / 0,0 | 55,4 / 52,1 | **73,8 / 67,5** |
-| LIBERO-PRO Pos+Task, media de 6 celdas | 600 | 0,3 / 0,2 | 59,5 / 56,7 | **78,5 / 71,5** |
-| LIBERO-PRO Pos+Task, media de 8 celdas | 800 | 0,2 / 0,1 | 49,2 / 45,1 | **68,6 / 58,9** |
-| LIBERO-Plus, 7 categorias | 700 | 0,0 / 0,0 | no disponible (tabla truncada en la model card) | no disponible (tabla truncada en la model card) |
+| LIBERO, estados oficiales retenidos 11–16 | 240 | 0,0 / 0,0 | 55,4 / 52,1 | 73,8 / 67,5 |
+| LIBERO-PRO Pos+Task, media de 6 celdas | 600 | 0,3 / 0,2 | 59,5 / 56,7 | 78,5 / 71,5 |
+| LIBERO-PRO Pos+Task, media de 8 celdas | 800 | 0,2 / 0,1 | 49,2 / 45,1 | 68,6 / 58,9 |
 
-Los resultados de LIBERO-MAX y de los benchmarks de transferencia no estan disponibles en la informacion proporcionada (la model card esta truncada). No se han publicado benchmarks estandar de NLU/codigo (MMLU, HumanEval, GSM8K) para este modelo.
+Los resultados de LIBERO-Plus y LIBERO-MAX no están completos en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM para inferencia: unos 10,4 GB solo de pesos en bf16; con KV cache para 81.920 tokens de contexto y hasta 12 imagenes por peticion, se recomienda una GPU con 24 GB o mas (con `--max-num-seqs 16` y prefix caching, mas si se sirve en paralelo).
-- GPU recomendadas: una RTX 4090 o A100/H100 para despliegue comodo con vLLM; no hay cifras oficiales de VRAM minima.
-- Consumer GPU: plausible en una RTX 4090 (24 GB) para un unico usuario con contexto limitado; no hay confirmacion oficial.
-- Despliegue: vLLM 0.29 como endpoint compatible con OpenAI (flags documentados: `--dtype bfloat16 --max-model-len 81920 --enable-prefix-caching --limit-mm-per-prompt '{"image":12}' --max-num-seqs 16 --reasoning-parser qwen3 --enable-auto-tool-choice --tool-call-parser qwen3_xml`). No se mencionan soportes para llama.cpp, Ollama o TGI, y al ser un modelo `Qwen3_5ForConditionalGeneration` en bf16 sin versiones GGUF, no cabe esperar compatibilidad inmediata con llama.cpp.
-- Servicios adicionales: el harness requiere levantar SAM 3 (puerto 8114) y Molmo2-8B (puerto 8122), lo que anade requisitos de VRAM significativos a la infraestructura total.
-- Latencia y throughput: no disponible.
+- VRAM estimada para inferencia: no disponible de forma explícita; con 5.174.964.736 parámetros en bf16 se requieren aproximadamente 10,4 GB solo para los pesos, más memoria para el contexto (hasta 81.920 tokens en vLLM) y las imágenes (hasta 12 por prompt).
+- GPU recomendadas: no disponible en la información proporcionada.
+- ¿Cabe en GPU de consumo? No confirmado; el tamaño de pesos en bf16 (≈10,4 GB) sugiere que podría caber en GPUs con 16 GB o más, pero no hay confirmación del autor.
+- Opciones de despliegue: vLLM 0.29 con endpoint compatible con OpenAI, usando los flags `--dtype bfloat16 --max-model-len 81920 --enable-prefix-caching --limit-mm-per-prompt '{"image":12}' --max-num-seqs 16 --reasoning-parser qwen3 --enable-auto-tool-choice --tool-call-parser qwen3_xml`. El arnés envuelve este comando como `services/serve_policy.sh`.
+- Servicios adicionales requeridos: SAM 3 en el puerto 8114 y Molmo2-8B en el puerto 8122, más un entorno Python 3.11 aislado para el sandbox del agente.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Enfoque | Parametros base | Contexto | Licencia | Disponibilidad |
+| Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| CaPtain-4B | Code-as-policy (SFT + RL sobre VLM) | 5,17 B | 81.920 tokens | Apache 2.0 | Pesos, datos, harness y pipeline publicados |
-| Qwen3.5-4B (base) | VLM generalista | ~4 B | no disponible | no disponible | Publico en Hugging Face |
-| CaPtain-4B-SFT | Variante solo SFT del mismo pipeline | 5,17 B | 81.920 tokens | Apache 2.0 | Publico en Hugging Face |
+| CaPtain-4B | 5.174.964.736 | 81.920 (vLLM) / 64k con compactación | Code-as-policy sobre Qwen3.5-4B con SFT + RL | apache-2.0 | Hugging Face, requiere CaPtain-Harness |
+| Qwen3.5-4B (base) | no disponible | no disponible | VLM generalista | no disponible | Hugging Face |
+| CaPtain-4B-SFT | no disponible | no disponible | Solo SFT, inicialización y referencia KL | no disponible | Hugging Face |
 
-Frente a VLAs clasicos de manipulacion (por ejemplo OpenVLA o RT-2) no hay numeros comparativos publicados en la informacion disponible; la unica comparacion documentada es interna: el modelo base sin entrenar obtiene 0 % en LIBERO, la variante SFT 55,4 % y la variante final con RL 73,8 %.
+La comparación principal es con su propio modelo base Qwen3.5-4B, que obtiene 0,0 % de éxito en LIBERO frente al 73,8 % de CaPtain-4B, y con la versión intermedia CaPtain-4B-SFT, que alcanza el 55,4 %. No se dispone de comparación con otros agentes robóticos de la misma categoría en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Dependencia total del harness: el modelo solo funciona bien dentro de CaPtain-Harness, con su plantilla de peticion exacta. Los propios autores advierten de no escribir prompts a mano ni modificar el texto visible por el modelo (TASK.md, descripciones de herramientas, recibos) al evaluarlo. Fuera del harness es un VLM pequeno sin capacidad robotica.
-- Dominio acotado: entrenado y evaluado en manipulacion en simulacion (familia LIBERO); no hay evidencia de transferencia a robots reales en la informacion disponible.
-- Percepcion delegada: el rendimiento depende de servicios externos (SAM 3, Molmo2-8B, retroproyeccion de profundidad); fallos en esos servicios degradan el agente.
-- Informacion oculta: el modelo no ve poses de objetos, contactos ni el predicado de exito, lo que limita su capacidad de autocorreccion en casos ambiguos.
-- Idioma: entrenado en ingles; no hay soporte documentado para otros idiomas, incluido el castellano.
-- Riesgo de alucinacion y sesgos: hereda los de Qwen3.5-4B; no hay evaluaciones especificas de sesgo publicadas.
-- Licencia: Apache 2.0 permite uso comercial, pero los modelos y servicios auxiliares (SAM 3, Molmo2-8B) pueden tener licencias propias que conviene verificar.
-- Consumo de recursos por episodio: hasta 60 peticiones al modelo y 1.080 segundos por episodio, un coste notable para despliegues a escala.
+- El modelo solo funciona correctamente dentro de CaPtain-Harness. Fuera de él se comporta como un VLM pequeño ordinario sin capacidad robótica.
+- No debe escribirse el prompt a mano: el modelo espera la plantilla exacta del arnés (prompt de sistema, `TASK.md`, esquema de la herramienta `python`, recibos, notas de compactación y colocación de imágenes).
+- No debe modificarse el texto visible para el modelo (TASK.md, descripciones de herramientas, recibos, plantilla de petición) al evaluarlo, ya que altera los resultados.
+- Idioma limitado al inglés según la model card.
+- Riesgo de alucinación: no cuantificado en la información disponible.
+- Sesgos conocidos: no documentados en la información disponible.
+- Restricciones de licencia: apache-2.0 permite uso comercial, pero el modelo depende de servicios externos (SAM 3, Molmo2-8B) cuyas licencias no se detallan.
+- El modelo no ve posiciones de objetos, contactos ni el predicado de éxito; estos permanecen en el host, lo que limita su aplicabilidad fuera del arnés.
+- Los resultados reportados son en simulación (LIBERO y variantes); no hay datos de transferencia a robot real en la información disponible.
+- La torre de visión se mantuvo congelada durante el SFT, lo que puede limitar la adaptación de la percepción a dominios nuevos.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/YijiaFan/CaPtain-4B
-- Variante SFT: https://huggingface.co/YijiaFan/CaPtain-4B-SFT
-- Datos SFT: https://huggingface.co/datasets/YijiaFan/CaPtain-SFT-Data
-- Artefactos de RL y configs: https://huggingface.co/datasets/YijiaFan/CaPtain-artifacts
-- Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
-- Pagina del proyecto: https://waltstephen.github.io/captain/
-- Codigo del pipeline (SFT, RL): https://github.com/waltstephen/CaPtain
-- Harness (necesario para ejecutar el modelo): https://github.com/waltstephen/CaPtain-Harness
-- Paper: *CaPtain: A Pipeline for Post-Training Code-as-Policy Robot Agents* (enlace directo no disponible)
+- Paper: https://arxiv.org/pdf/2610.40799
+- Página del proyecto: https://waltstephen.github.io/captain/
+- Código del pipeline (SFT, RL): https://github.com/waltstephen/CaPtain
+- Arnés (requerido para ejecutar el modelo): https://github.com/waltstephen/CaPtain-Harness
+- Modelo SFT (inicialización y referencia KL): https://huggingface.co/YijiaFan/CaPtain-4B-SFT
+- Dataset SFT: https://huggingface.co/datasets/YijiaFan/CaPtain-SFT-Data
+- Artefactos RL (puntos de partida, warm start del crítico, configuraciones, entradas de evaluación): https://huggingface.co/datasets/YijiaFan/CaPtain-artifacts

@@ -46,31 +46,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "francesca9805/tam-100mb-after-wc-uniform-newlex-after-ckpt500-packed ...",
-      "url": "https://huggingface.co/francesca9805/tam-100mb-after-wc-uniform-newlex-after-ckpt500-packed-bfdiso_seed455",
-      "snippet": "Instructions to use francesca9805/tam-100mb-after-wc-uniform-newlex-after-ckpt500-packed-bfdiso_seed455 with libraries, inference providers, notebooks, and local apps."
-    },
-    {
-      "title": "francesca9805/ppt-wc-uniform-newlex-tam-after-100mb-packed-bfd_seed3407 ...",
-      "url": "https://huggingface.co/francesca9805/ppt-wc-uniform-newlex-tam-after-100mb-packed-bfd_seed3407",
-      "snippet": "Model Card for ppt-wc-uniform-newlex-tam-after-100mb-packed-bfd_seed3407 This model is a fine-tuned version of goldfish-models/eng_latn_100mb. It has been trained using TRL."
-    },
-    {
-      "title": "Ppt Wc Uniform Newlex Tam After 100mb Packed Bfd Seed455 - AI Model ...",
-      "url": "https://free2aitools.com/model/francesca9805/ppt-wc-uniform-newlex-tam-after-100mb-packed-bfd_seed455",
-      "snippet": "Registry entry for model Ppt Wc Uniform Newlex Tam After 100mb Packed Bfd Seed455; source metadata pending."
-    },
-    {
-      "title": "Chinese AI model investigated after researcher says it provided ... - MSN",
-      "url": "https://www.msn.com/en-us/technology/artificial-intelligence/chinese-ai-model-investigated-after-researcher-says-it-provided-instructions-for-bioweapons-assassinations/ar-AA2dnJQy",
-      "snippet": "Researcher Peter Garrigan says Moonshot AI&#x27;s Kimi model was manipulated into providing instructions for biological weapons and assassination plans."
-    },
-    {
-      "title": "ppt-wc-uniform-newlex-tam-after-100mb-packed-bfd_seed455",
-      "url": "https://friendli.ai/models/francesca9805/ppt-wc-uniform-newlex-tam-after-100mb-packed-bfd_seed455",
-      "snippet": "Deploy ppt-wc-uniform-newlex-tam-after-100mb-packed-bfd_seed455 with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
-    }
-  ]
+  "sources": []
 }

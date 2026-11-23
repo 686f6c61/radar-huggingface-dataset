@@ -46,31 +46,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "hypaai/hypa-tiny-keys-tokenizer · Hugging Face",
-      "url": "https://huggingface.co/hypaai/hypa-tiny-keys-tokenizer",
-      "snippet": "Instructions to use hypaai/hypa-tiny-keys-tokenizer with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use hypaai/hypa-tiny-keys-tokenizer with Transformers:"
-    },
-    {
-      "title": "hypaai/hypa-tiny-keys-2026-09-20_10-34-16 · Hugging Face",
-      "url": "https://huggingface.co/hypaai/hypa-tiny-keys-2026-09-20_10-34-16",
-      "snippet": "Instructions to use hypaai/hypa-tiny-keys-2026-09-20_10-34-16 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use hypaai/hypa-tiny-keys-2026-09-20_10-34-16 with Transformers:"
-    },
-    {
-      "title": "hypa-tiny-keys-2026-09-20_10-34-16 - friendli.ai",
-      "url": "https://friendli.ai/models/hypaai/hypa-tiny-keys-2026-09-20_10-34-16",
-      "snippet": "Deploy hypa-tiny-keys-2026-09-20_10-34-16 with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
-    },
-    {
-      "title": "hypa-tiny-keys API & Inference Endpoint | FriendliAI",
-      "url": "https://friendli.ai/models/hypaai/hypa-tiny-keys",
-      "snippet": "Deploy hypa-tiny-keys with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
-    },
-    {
-      "title": "GitHub - ClawLabsAI/free-ai-models: Daily-updated list of free AI ...",
-      "url": "https://github.com/ClawLabsAI/free-ai-models",
-      "snippet": "Daily-updated list of free AI models (free LLM APIs), ranked by quality with live status. Plus one OpenAI-compatible endpoint that routes to the best one. - ClawLabsAI/free-ai-models"
-    }
-  ]
+  "sources": []
 }

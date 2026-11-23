@@ -2,103 +2,106 @@
 
 ## Resumen
 
-`btbtyler09/shrew-ocr-preview-GGUF` es una conversión a formato GGUF del modelo `shrew-ocr-preview`, un modelo de visión-lenguaje (image-text-to-text) especializado en OCR de documentos y extracción estructurada de información. Desarrollado por Tyler Brooker (btbtyler09), el modelo toma una imagen de una página de documento y produce un objeto JSON con metadatos, un resumen, fragmentos semánticos listos para RAG, y figuras/tablas con bounding boxes y representación HTML. Está pensado para pipelines de digitalización documental, indexación semántica y automatización de procesos basados en documentos.
+shrew-ocr-preview-GGUF es la conversión a formato GGUF del modelo shrew-ocr-preview, un modelo de visión-lenguaje especializado en inteligencia documental y extracción estructurada. Lo desarrolla btbtyler09 y está pensado para una tarea muy concreta: recibir la imagen de una página y devolver JSON estructurado conforme a un esquema, en lugar de texto libre. Esta versión GGUF (v0.5) está empaquetada para llama.cpp con soporte nativo de Granite4Vision, lo que permite desplegarla en servidores locales sin depender de frameworks de inferencia más pesados.
 
-El modelo se basa en `ibm-granite/granite-vision-4.1-4b` (Apache 2.0) y todo el fine-tuning se concentra en el modelo de lenguaje; la torre de visión permanece inalterada. Con aproximadamente 3,4 mil millones de parámetros y una ventana de contexto de 32 000 tokens, ofrece una alternativa ligera y desplegable en hardware de consumo para tareas de inteligencia documental. Esta versión GGUF permite ejecutarlo con llama.cpp/llama-server, lo que facilita su integración en entornos locales o con recursos limitados.
+El modelo base tiene 3.402.839.040 parámetros (aproximadamente 3,4 mil millones) y una ventana de contexto de 32.768 tokens por ranura. Solo se cuantiza el modelo de lenguaje; la torre de visión se mantiene en f16 dentro del fichero mmproj, lo que preserva la calidad de la codificación visual. La licencia es Apache 2.0 y el único idioma declarado es el inglés, aunque el modelo procesa documentos en otros alfabetos con distinto grado de acierto.
 
-La relevancia actual del modelo radica en su enfoque práctico: combina OCR, comprensión semántica y salida estructurada en un solo paso, evitando pipelines fragmentados. Al ser una vista previa (preview), los pesos se actualizan bajo el mismo nombre, por lo que se recomienda fijar un commit para reproducibilidad.
+Su relevancia actual radica en el encaje con pipelines de RAG y automatización documental: la salida JSON validable contra esquema simplifica la integración en sistemas de extracción de datos, y el tamaño contenido permite ejecutarlo en GPUs de gama media de 12 GB. La conversión incluye f16, Q8_0 y un mmproj f16 separado, con validaciones publicadas sobre páginas retenidas.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Granite Vision 4.1 4B (vision-language transformer) |
-| Parametros totales | 3 402 839 040 (~3,4 B) |
-| Parametros activos | no aplicable (no es MoE) |
-| Longitud de contexto | 32 000 tokens |
-| Tipos de cuantizacion | Q8_0 y f16 (modelo de lenguaje); mmproj f16 (torre de vision) |
-| Idiomas soportados | ingles (en) |
+| Arquitectura | Vision-lenguaje basada en Granite4Vision (torre de visión + modelo de lenguaje); detalles completos de la arquitectura no disponibles |
+| Parametros totales | 3.402.839.040 |
+| Parametros activos | no disponible (no se indica que sea MoE) |
+| Longitud de contexto | 32.768 tokens por ranura (contrato completo); configuraciones medidas hasta 65.536 con 2 ranuras |
+| Tipos de cuantizacion | f16 (LM), Q8_0 (LM); mmproj en f16 |
+| Idiomas soportados | en (inglés); otros alfabetos con evaluación parcial o no realizada |
 | Licencia | Apache 2.0 |
 | Formato de pesos | GGUF (llama.cpp) |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un fine-tuning del checkpoint `ibm-granite/granite-vision-4.1-4b`, un transformer multimodal de IBM con aproximadamente 4 000 millones de parámetros. La arquitectura combina un codificador de visión (vision tower) con un modelo de lenguaje; en este fine-tuning, solo se actualizan los pesos del modelo de lenguaje, mientras que la torre de visión se mantiene con los pesos originales del modelo base. El resultado es un modelo que acepta una imagen de página y genera texto estructurado en formato JSON.
+El modelo es un vision-lenguaje con una torre de visión y proyectores que alimentan un modelo de lenguaje; la conversión GGUF emplea el soporte nativo de Granite4Vision en llama.cpp (b10453 en la validación de v0.5). Solo el modelo de lenguaje se cuantiza, mientras que la torre de visión y los proyectores se distribuyen en un mmproj f16 de 1,16 GB. En v0.5 tanto la torre de visión como los proyectores cambiaron respecto a v0.4.1, por lo que el mmproj es nuevo además de los ficheros del LM.
 
-No se dispone de información pública sobre el dataset de entrenamiento, el número de tokens utilizados ni el proceso de alineación (RLHF, DPO, etc.). La model card solo indica que se trata de un fine-tuning del modelo base y que existe una versión LoRA (`shrew-ocr-preview-lora`, r=256, bf16) para composición o entrenamiento continuado. La conversión a GGUF se realizó con llama.cpp release b10453, que incluye soporte nativo para Granite4Vision.
+No se detallan en la información disponible el número de tokens de entrenamiento, la composición exacta del dataset ni si hubo RLHF o DPO. La model card del modelo base menciona que la mezcla de entrenamiento incluye renders sintéticos de documentos. La innovación principal no es arquitectónica sino de contrato de salida: el modelo devuelve JSON estructurado validable contra un esquema, con detección de localización (bounding boxes) generada por etiquetas del propio modelo. La receta de conversión de v0.4 reconstruyó sus tres ficheros publicados byte a byte, lo que indica un proceso reproducible.
 
 ## Capacidades
 
-- OCR de documentos: convierte una imagen de página en texto estructurado con metadatos, resumen y fragmentos semánticos.
-- Extracción estructurada: genera un objeto JSON con campos predefinidos (esquema de salida documentado en la model card del modelo original).
-- RAG-ready: produce chunks semánticos listos para indexar en bases vectoriales o pipelines de recuperación aumentada.
-- Detección de figuras y tablas: emite bounding boxes y representación HTML de tablas y figuras presentes en la página.
-- Procesamiento de imágenes: acepta imágenes de páginas de documentos como entrada (pipeline `image-text-to-text`).
-- Generación de texto estructurado: salida en JSON, adecuada para integración programática.
-- Multilingüe: no, solo inglés (según los metadatos de Hugging Face).
-- Tool calling / agentes: no documentado en la información disponible.
+- Extracción estructurada de documentos: entrada de imagen de página, salida JSON conforme a esquema.
+- OCR y reconocimiento de texto en documentos impresos, con precisión medida de 0,935 en el conjunto de validación de 50 páginas.
+- Detección de tablas y figuras, con localización mediante bounding boxes (no exactas a nivel de píxel).
+- Comprensión de layout documental: páginas densas, manuales y documentos de varias columnas.
+- Procesamiento de documentos en inglés; chino denso con precisión inferior a la impresión latina; cirílico y árabe no evaluados y tratados como no soportados.
+- Evaluación limitada de escritura manuscrita (comprobación separada de 300 páginas, sin puntuación publicada).
+- Integración en pipelines de RAG mediante salida estructurada y servidor compatible (shrew-server ≥ 0.5.0).
+- Una página por petición: sin estado entre páginas, el ensamblado de documentos multipágina se hace aguas abajo.
+- No se documentan en la información disponible capacidades de tool calling, agentes ni modo thinking.
 
 ## Casos de uso
 
-- Digitalización de documentos para RAG: el modelo extrae fragmentos semánticos de cada página, que pueden indexarse en una base vectorial para búsqueda semántica sobre archivos escaneados o PDFs. Su salida JSON facilita la ingesta directa en pipelines de LangChain o LlamaIndex.
-- Extracción de metadatos de documentos: identifica automáticamente título, autor, fecha y otros campos de metadatos a partir de la imagen, útil para catalogación de bibliotecas digitales o gestión documental.
-- Conversión de tablas a HTML estructurado: las tablas detectadas se devuelven con bounding boxes y HTML, lo que permite reconstruir tablas editables o integrarlas en aplicaciones web sin intervención manual.
-- Automatización de procesos de facturas y formularios: la salida JSON permite extraer campos clave (importes, fechas, números de referencia) de facturas o formularios escaneados, alimentando sistemas ERP o CRM.
-- Análisis de figuras y diagramas: al devolver bounding boxes de figuras, el modelo puede integrarse en herramientas de anotación o en sistemas que necesiten localizar visualmente elementos dentro de un documento.
-- Accesibilidad documental: convierte documentos escaneados en texto estructurado y resúmenes, facilitando su lectura por lectores de pantalla o su transformación a formatos accesibles.
-- Búsqueda semántica en archivos históricos: al generar resúmenes y chunks semánticos, permite buscar por contenido (no solo por texto OCR) en colecciones de documentos antiguos o escaneados.
+- Digitalización de facturas y albaranes: el modelo recibe la imagen de la página y devuelve JSON con los campos del esquema definido, lo que permite cargar datos directamente en un ERP sin postprocesado de texto libre.
+- Ingesta documental para RAG: la salida estructurada y validable contra esquema facilita trocear y etiquetar documentos antes de indexarlos, con detección de tablas y figuras para preservar su contexto.
+- Extracción de tablas financieras: el modelo localiza tablas y devuelve su contenido estructurado; conviene tener en cuenta que v0.5 divide tablas grandes en tiras apiladas con más frecuencia que v0.4.x.
+- Automatización de back office con GPU de gama media: con Q8_0 y mmproj f16 cabe en GPUs de 12 GB a contexto completo, con un rendimiento medido de aproximadamente 2,8 páginas por minuto en una RTX 3060 y 1 ranura.
+- Procesamiento por lotes de archivos escaneados: con 2 ranuras y cuantización KV q8_0 se alcanzan aproximadamente 5,7 páginas por minuto (el doble) sin pérdida de fidelidad medida (delta emparejado 0,0000).
+- Despliegue local sin dependencia de la nube: la combinación de llama.cpp más shrew-server permite montar el pipeline completo en infraestructura propia, con imagen Docker `ocr-cuda` para evitar configuración manual.
+- Verificación de contratos de extracción en CI: la salida JSON validable contra esquema y el guard de fallo detectable permiten integrar comprobaciones automáticas de calidad sobre páginas de referencia.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, etc.) en la información disponible. El autor proporciona datos de validación propia sobre extracción de documentos, que se resumen a continuación.
+Los datos publicados corresponden a la conversión GGUF (mayoritariamente v0.2 a v0.4); no se ejecutaron benchmarks de calidad ni de paridad sobre los ficheros v0.5.
 
-| Metrica | Q8_0 (GGUF) | GPTQ-8bit (referencia) | f16 (GGUF) |
-|---|---|---|---|
-| First-pass ok (50 paginas) | 44/50 | 43/50 | 9/10 (spot-check) |
-| Precision de extraccion | 0,935 | 0,937 | 0,942 |
-| Delta de fidelidad de tablas (mediana) | 0,000 | — | — |
-| Throughput (RTX 3060, single-stream) | ~30 s/pagina | ~28 s/pagina | — |
+| Prueba | Configuración | Resultado |
+|---|---|---|
+| Primera pasada, puerta de 50 páginas | Q8_0, `-c 32768 -np 1`, RTX 3060 12 GB | 44/50; precisión 0,935 |
+| Primera pasada, puerta de 50 páginas | Q8_0, `-c 65536 -np 2`, KV q8_0 | 46/50; precisión 0,939 |
+| Paridad Q8_0 frente a GPTQ-8bit | 50 páginas | Primera pasada 44/50 frente a 43/50; precisión 0,935 frente a 0,937; delta de fidelidad de tablas mediana 0,000 |
+| Smoke de servidor | Q8_0, 24 páginas (4 documentos), 1 ranura `-c 32768` | 24/24 primera pasada, 0 reintentos, 244 s |
+| Manual denso | Q8_0, RTX 3060, 7,4 GB VRAM | 3/3 primera pasada, 7 fragmentos, 54 s |
+| Comprobación de arranque v0.5 | Q8_0 + mmproj, CPU llama-server, 3 páginas | Todas terminaron con `stop` y JSON válido con las claves del esquema |
+| Servidor v0.5 | Q8_0 + mmproj, build HIP de llama.cpp b10453, 32.768 contexto, 1 ranura | 8/8 páginas válidas en primera pasada (4 B1, 2 B2, 2 B3) |
 
-Estos datos provienen de la model card del autor y se obtuvieron en una RTX 3060 de 12 GB. La validación de Q8_0 se realizó sobre 50 páginas comparando con el variante GPTQ-8bit en páginas idénticas. No hay resultados de benchmarks académicos independientes.
+Las cifras de OmniDocBench y localización de la model card principal corresponden a bf16 y no se midieron sobre estos ficheros GGUF. No hay resultados de MMLU, HumanEval ni GSM8K en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: el archivo Q8_0 del LM ocupa 3,6 GB y el mmproj f16 1,16 GB; en la práctica, la model card indica que funciona en GPUs de 12 GB con contexto completo de 32k (probado en RTX 3060). El archivo f16 (6,8 GB) requiere al menos 16 GB de VRAM para el contrato completo de 32k.
-- GPU recomendadas: RTX 3060 12 GB (probada por el autor), cualquier GPU con 12 GB o más de VRAM (RTX 4070, 4080, A100, etc.). Para el f16, se necesitan 16 GB o más.
-- Compatibilidad con GPU de consumo: sí, la versión Q8_0 cabe en GPUs de 12 GB como la RTX 3060, RTX 4070, etc.
-- Opciones de despliegue: llama-server (llama.cpp) con `--mmproj`, o contenedor Docker oficial `btbtyler09/shrew-ocr-cuda:v0.2.1` que incluye los archivos Q8_0.
-- Latencia y throughput: ~30 s por página en RTX 3060 (single-stream), ~2,8 páginas/min con un slot, ~5,7 páginas/min con dos slots y cuantización de KV cache (q8_0). En GPUs más potentes el rendimiento puede escalar.
-- Nota importante: para multi-slot, el contexto total (`-c`) debe ser N × 32768 (contexto completo por slot). En 12 GB, se requiere cuantización de KV cache (`--cache-type-k q8_0 --cache-type-v q8_0`) para evitar crashes.
+- VRAM estimada: Q8_0 requiere una GPU de clase 12 GB para el contrato completo (32k de contexto, 1 ranura); f16 requiere al menos 16 GB de VRAM a contexto completo y provoca OOM en CUDA con 12 GB en páginas de tiles grandes.
+- Tamaño de ficheros: Q8_0 3,6 GB, f16 6,8 GB, mmproj f16 1,16 GB (obligatorio junto a cualquiera de los dos LM).
+- GPU recomendadas: RTX 3060 12 GB validada para Q8_0; para f16 se necesita una tarjeta de 16 GB o superior (no se especifican modelos concretos en la información disponible).
+- Cabe en GPU de consumo: sí, Q8_0 en 12 GB; con 2 ranuras y KV q8_0 también en 12 GB (medido en RTX 3060).
+- Despliegue: llama.cpp (llama-server b10453 validado), shrew-server ≥ 0.5.0, imagen Docker `ocr-cuda`; no se documenta soporte de vLLM, Ollama ni TGI para estos ficheros GGUF.
+- Throughput medido: aproximadamente 2,8 páginas por minuto con 1 ranura y aproximadamente 5,7 con 2 ranuras y KV q8_0. El contexto debe fijarse en N × 32.768 para N ranuras; una ranura con menos de 32k completos provoca caída (exit 139) en páginas densas.
+- En llama.cpp, llama-server b10453 no envía uso de tokens en fragmentos en streaming, por lo que el corte por desbordamiento del servidor es el límite de 60.000 caracteres en lugar del corte por tokens de salida.
 
 ## Comparativa con modelos similares
 
-No se dispone de información sobre modelos directamente comparables en la misma categoría (OCR de documentos con extracción estructurada). El modelo base, `ibm-granite/granite-vision-4.1-4b`, es el punto de partida; las alternativas típicas en OCR (Tesseract, PaddleOCR) no generan salida JSON estructurada ni chunks semánticos. Otros modelos multimodales como LLaVA o Qwen-VL podrían adaptarse, pero no hay datos comparativos publicados.
+| Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| shrew-ocr-preview-GGUF | 3,4 mil millones | 32.768 por ranura | OCR con salida JSON estructurada | Apache 2.0 | GGUF para llama.cpp |
+| shrew-ocr-preview (base, bf16) | 3,4 mil millones | 32.768 | OCR con salida JSON estructurada | Apache 2.0 | Pesos bf16 en Hugging Face |
+| Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
-| Modelo | Parametros | Contexto | Salida | Licencia |
-|---|---|---|---|---|
-| shrew-ocr-preview (GGUF) | 3,4 B | 32k | JSON estructurado + bboxes + HTML | Apache 2.0 |
-| ibm-granite/granite-vision-4.1-4b | ~4 B | 32k | Texto generico | Apache 2.0 |
-| LLaVA (variantes) | 7B-34B | 4k-32k | Texto generico | Apache 2.0 / LLaMA |
-
-La comparativa es limitada porque no hay benchmarks estandarizados que permitan una evaluación objetiva frente a estos modelos.
+La información proporcionada no incluye otros modelos de OCR estructurado con los que establecer una comparación cuantitativa fiable; los únicos puntos de referencia son las versiones GPTQ-8bit del propio modelo base, con paridad de primera pasada y precisión prácticamente idénticas.
 
 ## Limitaciones y advertencias
 
-- Solo inglés: los metadatos indican `en` como único idioma soportado; el modelo no está entrenado para otros idiomas.
-- Vista previa (preview): los pesos se actualizan en el mismo nombre de repositorio; se recomienda fijar un commit (`revision=`) para reproducibilidad en producción.
-- Riesgo de alucinación: al ser un modelo generativo, puede producir campos o bounding boxes incorrectos en documentos ambiguos o de baja calidad; la validación del autor muestra una precisión de extracción de ~0,94, pero no es perfecta.
-- Requisito de contexto completo: en despliegues multi-slot, cada slot necesita los 32k tokens completos; si se reduce el contexto por slot, el modelo puede fallar (exit 139) en páginas densas.
-- Limitaciones de VRAM: en GPUs de 12 GB, la versión f16 no es viable con contexto completo; la cuantización Q8_0 es la opción recomendada. La cuantización de KV cache es obligatoria para multi-slot en 12 GB.
-- Sin soporte de tool calling ni agentes: no se documenta capacidad de function calling, lo que limita su uso en flujos agénticos complejos.
-- Sin información sobre sesgos: no hay análisis de sesgos o comportamientos discriminatorios publicados.
-- Licencia Apache 2.0: permite uso comercial, pero el modelo base (Granite Vision) también es Apache 2.0, sin restricciones adicionales conocidas.
+- Páginas densas de gran formato, escaneos densos de baja resolución y páginas que la torre de visión no resuelve pueden entrar en bucle o detenerse antes de tiempo; el guard del servidor hace detectables estos fallos, pero no los evita.
+- v0.5 divide tablas grandes (y ocasionalmente figuras) en tiras apiladas con más frecuencia que v0.4.x, presenta más falsos positivos lejanos en figuras y tablas y tiene menor recall de figuras; el efecto de la corrección de bucles no es estadísticamente significativo en páginas retenidas.
+- La recuperación, la fiabilidad, el orden de lectura en periódicos de gran formato y los envolventes de servicio no se volvieron a medir para v0.5.
+- Precisión de caracteres en chino denso inferior a la impresión latina; cirílico y árabe no evaluados y tratados como no soportados; escritura manuscrita con evaluación limitada y sin puntuación publicada.
+- Las bounding boxes provienen de etiquetas generadas por el modelo: deben ampliarse hacia fuera al recortar, ya que los bordes no son exactos a nivel de píxel.
+- Una página por petición, sin estado entre páginas; los documentos multipágina deben ensamblarse aguas abajo.
+- Decodificación obligatoria con temperatura 0,4 y presence_penalty 0,3; nunca greedy.
+- No se ejecutaron benchmarks de calidad ni de paridad sobre los ficheros v0.5; las cifras de OmniDocBench y localización son de bf16.
+- Riesgo de alucinación en campos del esquema no presentes en la página: no se documenta en la información disponible una evaluación específica de este riesgo.
+- Licencia Apache 2.0 permite uso comercial; no se documentan restricciones adicionales, aunque la mezcla de entrenamiento incluye renders sintéticos de documentos (ver atribución en la model card principal).
 
 ## Enlaces
 
-- Repositorio GGUF: https://huggingface.co/btbtyler09/shrew-ocr-preview-GGUF
-- Modelo original (bf16): https://huggingface.co/btbtyler09/shrew-ocr-preview
-- Variante GPTQ-8bit: https://huggingface.co/btbtyler09/shrew-ocr-preview-GPTQ-8bit
-- Adaptador LoRA: https://huggingface.co/btbtyler09/shrew-ocr-preview-lora
-- Modelo base: https://huggingface.co/ibm-granite/granite-vision-4.1-4b
-- Repositorio de servidor de referencia: https://github.com/btbtyler09/shrew-server
-- Imagen Docker: https://hub.docker.com/u/btbtyler09 (imagen `btbtyler09/shrew-ocr-cuda:v0.2.1`)
+- Modelo GGUF en Hugging Face: https://huggingface.co/btbtyler09/shrew-ocr-preview-GGUF
+- Modelo base: https://huggingface.co/btbtyler09/shrew-ocr-preview
+- Servidor shrew-server: https://github.com/btbtyler09/shrew-server
+- Changelog y benchmarks del modelo base: https://huggingface.co/btbtyler09/shrew-ocr-preview#changelog
+- llama.cpp: https://github.com/ggml-org/llama.cpp

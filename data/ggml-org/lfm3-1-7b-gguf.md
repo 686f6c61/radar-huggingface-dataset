@@ -2,87 +2,90 @@
 
 ## Resumen
 
-LFM3-1.7B-GGUF es la conversión a formato GGUF del modelo LFM3-1.7B desarrollado por LiquidAI, publicada por el equipo de ggml-org (los mantenedores de llama.cpp). Se trata de un modelo de generación de texto de 1.728.801.600 parámetros (aproximadamente 1,7 mil millones) orientado a conversación y despliegue en entornos de inferencia local mediante llama.cpp y herramientas compatibles.
+LFM3-1.7B-GGUF es la conversión a formato GGUF del modelo LFM3-1.7B desarrollado por Liquid AI. Se trata de un modelo de generación de texto de 1.728.801.600 parámetros (aproximadamente 1,7 mil millones), pensado para ejecutarse en hardware de consumo mediante llama.cpp y otros motores compatibles con GGUF. La conversión la mantiene el repositorio ggml-org, que publica builds cuantizados de modelos relevantes para el ecosistema llama.cpp.
 
-El modelo base pertenece a la familia LFM3 de LiquidAI, sucesora de las arquitecturas LFM anteriores. La conversión a GGUF permite ejecutar el modelo en CPU, GPU o configuraciones híbridas con cuantizaciones de 8 y 4 bits, lo que lo hace adecuado para hardware de consumo y despliegues edge. El repositorio incluye cuantizaciones Q8_0 y Q4_K_M idénticas a las publicadas por LiquidAI, además de una variante Q4_0 entrenada con Quantization-Aware Distillation (QAD) para recuperar la precisión perdida por la cuantización agresiva.
+El modelo base, LiquidAI/LFM3-1.7B, es un transformer de la familia LFM (Liquid Foundation Models) de Liquid AI. Esta ficha se centra en la versión GGUF, que es la que se distribuye en este repositorio con cuantizaciones Q8_0 y Q4_K_M idénticas a las que publica el propio Liquid AI, además de una variante Q4_0 obtenida mediante destilación con conciencia de cuantización (QAD) para recuperar la precisión perdida por la cuantización agresiva.
 
-La relevancia de esta publicación radica en que facilita el acceso al modelo en el ecosistema llama.cpp con una build específica que añade soporte para la arquitectura LFM3 (PR #31252). La licencia es LFM1.0 (lfm1.0), que conviene revisar con detalle antes de cualquier uso comercial.
+Su relevancia actual radica en que permite desplegar un modelo de 1,7B parámetros en entornos con recursos limitados (portátiles, estaciones de trabajo sin GPU dedicada, dispositivos de borde) usando el ecosistema llama.cpp, con soporte para servidores compatibles con la API de OpenAI a través de `llama serve`. La licencia es LFM1.0, que impone restricciones específicas de uso comercial que conviene revisar antes de integrarlo en producto.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (modelo base LiquidAI LFM3; arquitectura concreta no especificada en la informacion proporcionada) |
+| Arquitectura | Transformer (familia LFM de Liquid AI; detalles internos no disponibles en la información proporcionada) |
 | Parametros totales | 1.728.801.600 |
-| Parametros activos | no aplica (no se indica que sea MoE) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Q8_0, Q4_K_M, Q4_0 (QAD, publicada por LiquidAI) |
-| Idiomas soportados | no disponible |
-| Licencia | LFM1.0 (lfm1.0) |
-| Formato de pesos | GGUF (repo de 6,4 GB; modelo base en safetensors) |
+| Parametros activos | No aplica (no es MoE según la información disponible) |
+| Longitud de contexto | No disponible |
+| Tipos de cuantizacion | Q8_0, Q4_K_M, Q4_0 (QAD) |
+| Idiomas soportados | No disponible |
+| Licencia | LFM1.0 (license_name: lfm1.0, license: other) |
+| Formato de pesos | GGUF |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información detallada sobre la arquitectura interna del modelo base LFM3-1.7B en la documentación proporcionada. El modelo procede de LiquidAI y cuenta con 1.728.801.600 parámetros, lo que lo sitúa en la categoría de modelos pequeños para generación de texto y uso conversacional. La model card del repositorio GGUF no incluye detalles sobre el tipo de transformer, mecanismos de atención, composición del dataset de entrenamiento, número de tokens vistos ni si se aplicaron técnicas de alineación como RLHF o DPO.
+La información disponible no detalla la arquitectura interna del modelo base más allá de que se trata de un transformer de la familia LFM de Liquid AI. No se especifican en la documentación proporcionada el número de capas, la dimensión oculta, el mecanismo de atención (si es atención completa, lineal o híbrida), ni innovaciones concretas como decodificación especulativa o atención lineal. El modelo base tiene 1.728.801.600 parámetros y se distribuye bajo la licencia LFM1.0.
 
-La innovación técnica destacable de esta publicación es el proceso de conversión y cuantización. Las variantes Q8_0 y Q4_K_M replican exactamente las cuantizaciones de LiquidAI, mientras que la Q4_0 se ha producido mediante Quantization-Aware Distillation (QAD), un procedimiento de entrenamiento que busca recuperar la precisión perdida tras cuantizar a 4 bits con el esquema Q4_0. Además, el modelo requiere una build de llama.cpp que incluya soporte para LFM3 (PR #31252 del repositorio ggml-org/llama.cpp), lo que implica que la arquitectura no está cubierta por versiones anteriores del runtime.
+Respecto al entrenamiento, la model card del repositorio GGUF no incluye información sobre el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron técnicas de RLHF, DPO o similares. Sí se menciona que Liquid AI publica una variante Q4_0 entrenada mediante Quantization-Aware Distillation (QAD) para recuperar la precisión perdida por la cuantización Q4_0, lo que indica que el equipo del modelo base trabajó explícitamente en la robustez frente a cuantización. Las cuantizaciones Q8_0 y Q4_K_M de este repositorio usan exactamente la misma configuración que las publicadas por Liquid AI.
 
 ## Capacidades
 
-- Generación de texto conversacional: el pipeline declarado es text-generation y el tag conversational, orientado a diálogo multi-turno.
-- Conversión y despliegue local: formato GGUF compatible con llama.cpp, llama.app y herramientas del ecosistema ggml.
-- Cuantización flexible: variantes Q8_0, Q4_K_M y Q4_0 (QAD) para distintos compromisos entre tamaño y precisión.
-- Compatibilidad con endpoints: el repositorio incluye el tag endpoints_compatible.
-- Capacidades de tool calling, function calling, agentes, razonamiento multi-paso, matemáticas, código, visión o audio: no disponibles en la información proporcionada.
-- Capacidades multilingües: no disponibles; no se especifican idiomas soportados.
+- Generación de texto conversacional: el pipeline declarado es text-generation y el tag `conversational` sugiere uso en diálogo multi-turno.
+- Ejecución local mediante llama.cpp: requiere una build con soporte para LFM3 (PR #31252 del repositorio ggml-org/llama.cpp).
+- Servidor compatible con la API de OpenAI: el comando `llama serve -hf ggml-org/LFM3-1.7B-GGUF` levanta un endpoint compatible con clientes que hablan el protocolo de OpenAI.
+- Cuantizaciones optimizadas: Q8_0 y Q4_K_M idénticas a las de Liquid AI, más Q4_0 QAD para reducir el tamaño manteniendo precisión.
+- Tool calling / function calling: no disponible en la información proporcionada.
+- Capacidades de agente y razonamiento multi-paso: no disponible en la información proporcionada.
+- Capacidades multilingües: no disponible en la información proporcionada.
+- Capacidades especiales (thinking mode, visión, audio): no disponible en la información proporcionada.
 
 ## Casos de uso
 
-- Asistente conversacional local: el modelo puede desplegarse con `llama serve -hf ggml-org/LFM3-1.7B-GGUF` para gestionar diálogos multi-turno en estaciones de trabajo sin conexión, aprovechando su tamaño reducido y las cuantizaciones de 4 bits.
-- Prototipado rápido de chatbots: gracias a su formato GGUF y a la integración con llama.app, permite validar flujos conversacionales en local antes de escalar a modelos mayores.
-- Inferencia en dispositivos edge: con 1,7 mil millones de parámetros y cuantización Q4_K_M, puede ejecutarse en equipos con recursos limitados de memoria, como mini-PC o portátiles sin GPU dedicada.
-- Evaluación comparativa de cuantizaciones: las variantes Q8_0, Q4_K_M y Q4_0 (QAD) permiten medir en producción la degradación de calidad frente al ahorro de memoria, útil para calibrar despliegues.
-- Integración en pipelines de generación de texto por lotes: mediante llama.cpp se puede automatizar la producción de resúmenes, clasificaciones o respuestas plantilla en entornos con CPU.
-- Entornos educativos y de investigación: su licencia y tamaño lo hacen manejable para experimentos de ajuste fino o evaluación de técnicas de cuantización en laboratorios con hardware modesto.
-- Servicio ligero de atención al cliente: para volúmenes moderados y dominios acotados, un modelo de 1,7B cuantizado puede cubrir respuestas frecuentes con latencia baja en hardware de consumo.
+- Asistente conversacional local en portátil: con 1,7B parámetros y cuantización Q4_K_M, el modelo cabe en memoria RAM de un portátil moderno y puede ejecutarse con llama.cpp sin GPU dedicada, ofreciendo un asistente privado que no envía datos a la nube.
+- Prototipado rápido de aplicaciones de chat: el comando `llama serve` expone un endpoint compatible con la API de OpenAI, lo que permite conectar frameworks como LangChain o LlamaIndex sin adaptar el código de integración.
+- Despliegue en dispositivos de borde: el tamaño reducido del GGUF Q4_0 QAD permite ejecutar el modelo en dispositivos con poca memoria, útil para asistentes embebidos o aplicaciones de escritorio.
+- Generación de texto en pipelines de CI: al ser un binario ligero y determinista en formato GGUF, se puede usar para tareas de generación de texto en tests automatizados o generación de documentación sin depender de APIs externas.
+- Filtrado y clasificación de texto ligero: modelos de 1,7B son adecuados para tareas de etiquetado, resumen corto o reescritura donde la latencia importa más que la profundidad de razonamiento.
+- Evaluación comparativa de cuantizaciones: el repositorio incluye Q8_0, Q4_K_M y Q4_0 QAD, lo que permite medir en un mismo modelo el impacto de la cuantización en calidad y velocidad para elegir el equilibrio adecuado en producción.
+- Experimentación académica con modelos pequeños: útil como baseline en investigación sobre eficiencia, destilación o cuantización, dado su tamaño manejable y su disponibilidad en formato abierto.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible de forma oficial. Como referencia orientativa por tamaño de pesos, Q8_0 ocuparía del orden de 1,8-2 GB y Q4_K_M del orden de 1-1,2 GB, aunque estas cifras no están confirmadas en la información proporcionada.
-- GPU recomendadas: no disponibles. Por tamaño, el modelo es apto para GPUs de consumo, pero no se especifican modelos concretos (A100, H100, RTX 4090, etc.).
-- Cabe en GPU de consumo: previsiblemente sí, dado el tamaño de 1,7B y las cuantizaciones de 4 bits, aunque no se confirma en la documentación.
-- Opciones de despliegue: llama.cpp (requiere build con soporte LFM3, PR #31252), llama.app (`llama serve -hf ggml-org/LFM3-1.7B-GGUF`). Compatibilidad con vLLM, Ollama o TGI no confirmada.
-- Latencia y throughput: no disponibles.
+- VRAM estimada para inferencia: no disponible de forma explícita; como referencia orientativa, un modelo de 1,7B parámetros en Q8_0 ocupa aproximadamente 1,8-2 GB de pesos, en Q4_K_M alrededor de 1-1,2 GB y en Q4_0 algo menos. Estas cifras son estimaciones basadas en el número de parámetros y no en datos publicados por el autor.
+- GPU recomendadas: no disponible en la información proporcionada. Por tamaño, cualquier GPU consumer con 4 GB o más de VRAM debería poder alojar las cuantizaciones Q4 y Q8, pero no se confirma en la documentación.
+- ¿Cabe en GPU consumer? Sí, por tamaño es probable que quepa en GPUs consumer con al menos 4 GB de VRAM, aunque no se especifica en la información disponible.
+- Opciones de despliegue: llama.cpp (requiere build con soporte LFM3), llama.app mediante `llama serve`, y cualquier runtime compatible con GGUF (Ollama, LM Studio, etc., aunque no se confirman explícitamente en la model card).
+- Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+| Modelo | Parámetros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| LFM3-1.7B-GGUF (este) | 1.728.801.600 | no disponible | LFM1.0 | GGUF | Conversión oficial de ggml-org, cuantizaciones Q8_0/Q4_K_M/Q4_0 QAD |
-| LiquidAI/LFM3-1.7B | 1.728.801.600 | no disponible | LFM1.0 | safetensors | Modelo base original del que deriva esta conversión |
-| LiquidAI/LFM3-1.7B-GGUF | 1.728.801.600 | no disponible | LFM1.0 | GGUF | Cuantizaciones publicadas por LiquidAI, incluye Q4_0 QAD |
+| LFM3-1.7B-GGUF (este) | 1.728.801.600 | No disponible | LFM1.0 | GGUF | Hugging Face (ggml-org) |
+| LiquidAI/LFM3-1.7B | 1.728.801.600 | No disponible | LFM1.0 | Safetensors (formato original) | Hugging Face (LiquidAI) |
+| LiquidAI/LFM3-1.7B-GGUF | 1.728.801.600 | No disponible | LFM1.0 | GGUF | Hugging Face (LiquidAI) |
 
-No se dispone de información sobre otros modelos comparables de la misma categoría (1-2B parámetros) en la documentación proporcionada.
+La comparativa con modelos de otras familias (por ejemplo, Qwen2.5-1.5B, Llama-3.2-1B o Gemma-2-2B) no está disponible en la información proporcionada. Respecto a las alternativas de la misma familia, la diferencia entre este repositorio y el de Liquid AI es que ggml-org mantiene la conversión automática mediante su herramienta de conversión, mientras que Liquid AI publica las cuantizaciones Q8_0 y Q4_K_M originales y la variante Q4_0 QAD.
 
 ## Limitaciones y advertencias
 
-- Sesgos conocidos: no disponibles en la información proporcionada; al ser un modelo conversacional, es previsible que herede sesgos de sus datos de entrenamiento, pero no se documentan.
-- Riesgo de alucinación: no cuantificado; los modelos de 1,7B suelen presentar mayor propensión a errores factuales que modelos mayores, aunque no hay datos específicos para este modelo.
-- Limitaciones de contexto e idioma: la longitud de contexto y los idiomas soportados no están documentados, lo que impide garantizar su comportamiento en contextos largos o en castellano.
-- Restricciones de licencia: la licencia LFM1.0 (lfm1.0) es de tipo "other"; es imprescindible revisar el texto completo en el enlace de licencia antes de cualquier uso comercial.
-- Dependencia de build específica: requiere una versión de llama.cpp con soporte LFM3 (PR #31252); versiones anteriores no cargarán el modelo.
-- Conversión automática: la model card indica que el modelo se ha convertido automáticamente con ggml-org/convert, sin validación manual exhaustiva documentada.
-- Model card incompleta: el README incluye un apartado "TODOs - add info", por lo que faltan detalles técnicos y de evaluación.
+- Licencia LFM1.0: es una licencia "other" con nombre propio; es imprescindible revisar el texto completo en el enlace de licencia antes de cualquier uso comercial, ya que puede incluir restricciones de escala o de atribución.
+- Tamaño reducido: con 1,7B parámetros, el modelo tiene una capacidad limitada de razonamiento complejo y conocimiento factual en comparación con modelos de mayor tamaño; es esperable un mayor riesgo de alucinación en preguntas de dominio específico.
+- Idiomas: no se especifican los idiomas soportados en la información disponible; no se debe asumir un rendimiento multilingüe equilibrado.
+- Contexto: no se especifica la longitud de contexto, por lo que no se puede garantizar el manejo de conversaciones o documentos largos.
+- Compatibilidad de runtime: requiere una build de llama.cpp con soporte LFM3 (PR #31252); versiones anteriores no cargarán el modelo.
+- Conversión automática: la model card indica que el modelo se convirtió automáticamente con ggml-org/convert, lo que introduce un paso adicional de verificación frente a los pesos originales de Liquid AI.
+- Cuantización Q4_0: la variante Q4_0 estándar pierde precisión frente a Q8_0; la versión QAD de Liquid AI está pensada para mitigarlo, pero no se han publicado métricas de esa recuperación en la información disponible.
+- Sin datos de benchmarks: no hay evidencia publicada en este repositorio sobre MMLU, HumanEval, GSM8K u otras métricas, lo que dificulta comparar su calidad real frente a alternativas.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/ggml-org/LFM3-1.7B-GGUF
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-1.7B
-- Cuantizaciones oficiales de LiquidAI: https://huggingface.co/LiquidAI/LFM3-1.7B-GGUF
+- GGUF oficial de Liquid AI: https://huggingface.co/LiquidAI/LFM3-1.7B-GGUF
 - Licencia LFM1.0: https://huggingface.co/LiquidAI/LFM3-1.7B/blob/main/LICENSE
 - PR de soporte LFM3 en llama.cpp: https://github.com/ggml-org/llama.cpp/pull/31252
 - Herramienta de conversión: https://github.com/ggml-org/convert

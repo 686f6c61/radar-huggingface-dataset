@@ -2,89 +2,103 @@
 
 ## Resumen
 
-ArchResidenceBD Model Fleet es una colección de cuatro modelos cuantizados en formato GGUF, desarrollada por el usuario sazid63 como componente central del proyecto ArchResidenceBD, un "ingeniero civil de IA" especializado en edificación residencial en Bangladesh. La flota no es un modelo único, sino un sistema multi-modelo: un modelo de chat para entrevistas y explicaciones basado en Qwen3-4B-Instruct-2507, un modelo de reparación de scripts CAD basado en Qwen2.5-Coder-3B-Instruct, y dos modelos auxiliares de Qwen (Embedding 0.6B y Reranker 0.6B) para construir un pipeline RAG completo.
+ArchResidenceBD Model Fleet es una coleccion de modelos cuantizados en formato GGUF publicada por el usuario sazid63 bajo licencia Apache 2.0, orientada a flujos de trabajo de ingenieria civil residencial en Bangladesh. No se trata de un unico modelo entrenado desde cero, sino de un conjunto de cuatro artefactos derivados de modelos base de Alibaba (Qwen3-4B-Instruct-2507, Qwen2.5-Coder-3B-Instruct, Qwen3-Embedding-0.6B y Qwen3-Reranker-0.6B), empaquetados para inferencia local con llama.cpp.
 
-La relevancia de esta ficha reside en que ilustra un patrón de despliegue cada vez más común: dominios verticales muy específicos (normativa constructiva residencial de Bangladesh) que combinan un LLM conversacional con recuperación de información aumentada (RAG) y un modelo de reparación de código, todo ejecutable localmente con llama.cpp. Los cuatro modelos son derivados de la familia Qwen con licencia Apache-2.0, lo que permite uso comercial sin restricciones. El parámetro total del repositorio safetensors es de 4.022.468.096 parámetros, correspondiente al modelo principal de 4B, y el tamaño total del repositorio es de 7,9 GB.
+El repositorio suma aproximadamente 4.022 millones de parametros en total (segun los pesos safetensors declarados) y ocupa 7,9 GB. La flota cubre cuatro roles complementarios: un modelo conversacional para entrevistas y razonamiento estructurado, un modelo de reparacion de scripts CAD, un modelo de embeddings para recuperacion documental y un reranker para reordenar resultados. La ventana de contexto configurada en los ejemplos de uso es de 8192 tokens.
+
+Su relevancia es acotada y de nicho: demuestra un patron de despliegue de bajo coste (modelos de 0,6 a 4 mil millones de parametros, cuantizacion Q4_K_M y Q8_0) para asistentes verticales de dominio, ejecutables en hardware de consumo. No obstante, la documentacion publica es escasa y no incluye datos de entrenamiento, evaluacion ni limites de contexto oficiales mas alla de los ejemplos de linea de comandos.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Flota multi-modelo: chat (Qwen3-4B-Instruct-2507), reparación de código (Qwen2.5-Coder-3B-Instruct), embedding (Qwen3-Embedding-0.6B) y reranker (Qwen3-Reranker-0.6B) |
-| Parametros totales | 4.022.468.096 (modelo principal, dato safetensors); el resto de modelos: 3B y 0,6B según componente |
+| Arquitectura | Transformer (modelos base Qwen3 y Qwen2.5; sin detalles de adaptacion publicados) |
+| Parametros totales | 4.022.468.096 (suma agregada de la flota, segun safetensors) |
 | Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | 8192 tokens (según los comandos de ejemplo con `-c 8192`); límite nativo del modelo base no disponible |
+| Longitud de contexto | 8192 tokens (valor usado en los ejemplos de llama-server; no se declara maximo oficial) |
 | Tipos de cuantizacion | Q4_K_M (chat y repair), Q8_0 (embedding y reranker) |
-| Idiomas soportados | no disponible |
-| Licencia | Apache-2.0 |
-| Formato de pesos | GGUF (compatible con llama.cpp); endpoints_compatible |
+| Idiomas soportados | no disponible (la model card no declara lista de idiomas) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (runtime llama.cpp) |
+
+Desglose por artefacto:
+
+| Artefacto | Rol | Base | Cuantizacion | Tamano |
+|---|---|---|---|---|
+| `archie-chat-v0-Q4_K_M.gguf` | Chat | Qwen3-4B-Instruct-2507 | Q4_K_M | 2,33 GB |
+| `archres-repair-v0-Q4_K_M.gguf` | Reparacion | Qwen2.5-Coder-3B-Instruct | Q4_K_M | 1,80 GB |
+| `Qwen3-Embedding-0.6B-Q8_0.gguf` | Embeddings | Qwen3-Embedding-0.6B | Q8_0 | 0,60 GB |
+| `Qwen3-Reranker-0.6B-Q8_0.gguf` | Reranking | Qwen3-Reranker-0.6B | Q8_0 | 0,60 GB |
 
 ## Arquitectura y entrenamiento
 
-La flota se compone de cuatro modelos independientes que trabajan de forma coordinada. El modelo conversacional (archie-chat-v0) parte de Qwen3-4B-Instruct-2507, un transformer denso de 4 mil millones de parámetros de la familia Qwen3 de Alibaba, ajustado para la tarea de entrevista al usuario, parseo de requisitos y explicación de decisiones de diseño civil. El modelo de reparación (archres-repair-v0) parte de Qwen2.5-Coder-3B-Instruct, especializado en código, y está destinado a corregir scripts CAD generados o modificados durante el flujo de trabajo. Los dos modelos de 0,6B (Qwen3-Embedding y Qwen3-Reranker, ambos en Q8_0) forman la capa de recuperación: el embedding genera vectores para búsqueda semántica y el reranker reordena los candidatos recuperados.
+La informacion disponible no describe ninguna arquitectura propia ni un proceso de entrenamiento especifico. Los cuatro artefactos son derivados de modelos base de la familia Qwen: dos modelos generativos (Qwen3-4B-Instruct-2507 y Qwen2.5-Coder-3B-Instruct) y dos modelos auxiliares de recuperacion (Qwen3-Embedding-0.6B y Qwen3-Reranker-0.6B). Todos se distribuyen exclusivamente en GGUF, lo que implica que han pasado por un proceso de conversion y cuantizacion para llama.cpp, pero la model card no documenta si hubo ajuste fino adicional, que datos se usaron ni que metodologia de alineacion (RLHF, DPO u otra) se aplico.
 
-No se han publicado detalles sobre el proceso de fine-tuning: número de tokens de entrenamiento, composición del dataset (se presume que incluye normativa y práctica constructiva residencial de Bangladesh), uso de RLHF/DPO ni método de destilación. Tampoco se detalla el tamaño exacto de los ajustes (LoRA vs. full fine-tune). Todos los pesos se distribuyen cuantizados en GGUF para inferencia con llama.cpp, con desactivación total de offload a CPU (`-ngl 99` para los modelos generativos y `-ngl 0` con pooling especial para embedding y reranking).
+No se declara numero de tokens de entrenamiento, composicion del dataset, ni innovaciones tecnicas como decodificacion especulativa o atencion lineal. Cualquier afirmacion sobre el entrenamiento de estos pesos mas alla de su modelo base seria especulativa. El unico indicio de especializacion es el etiquetado del repositorio (architecture, civil-engineering, bangladesh) y la descripcion de roles en la tabla de modelos, que sugiere un uso previsto vertical sin que se detalle el proceso de adaptacion.
 
 ## Capacidades
 
-- Generación de texto conversacional multi-turno orientada a entrevistas de requisitos de edificación residencial (modelo archie-chat-v0).
-- Parseo y estructuración de requisitos de usuario en formato interpretable por el sistema ArchResidenceBD.
-- Explicación de decisiones de diseño y normativa civil al usuario final.
-- Reparación de scripts CAD generados por el sistema, con un modelo especializado en código (Qwen2.5-Coder-3B).
-- Recuperación semántica de documentos mediante embeddings (Qwen3-Embedding-0.6B en Q8_0, con pooling "last").
-- Reordenamiento de resultados de recuperación (reranking) para mejorar la precisión del RAG.
-- Despliegue completo como servidores OpenAI-compatibles vía `llama-server` de llama.cpp.
-- No hay evidencia de capacidades de visión, audio ni tool calling nativo en la model card.
+- Generacion de texto conversacional y razonamiento estructurado mediante `archie-chat-v0` (basado en Qwen3-4B-Instruct-2507), orientado a entrevistas de proyecto y explicaciones.
+- Reparacion y depuracion de scripts relacionados con CAD mediante `archres-repair-v0` (basado en Qwen2.5-Coder-3B-Instruct), enfocado a resolucion de problemas tecnicos.
+- Generacion de embeddings para recuperacion documental con `Qwen3-Embedding-0.6B`.
+- Reranking de resultados recuperados con `Qwen3-Reranker-0.6B`, para mejorar la precision del pipeline de busqueda contextual.
+- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible como capacidad declarada; el rol de chat sugiere razonamiento estructurado, pero sin detalle.
+- Capacidades multilingues: no disponible; la model card no declara idiomas soportados.
+- Capacidades especiales (modo thinking, vision, audio): no disponible.
 
 ## Casos de uso
 
-- Asistente de entrevistas para proyectos residenciales: archie-chat-v0 guía conversaciones multi-turno para recopilar requisitos de una vivienda (número de plantas, dimensiones de parcela, presupuesto), aprovechando una ventana de contexto de 8192 tokens suficiente para este tipo de diálogo.
-- Generación de documentación normativa: el modelo de chat puede explicar requisitos del código de construcción de Bangladesh en lenguaje natural, apoyándose en el RAG para citar pasajes relevantes.
-- Pipeline RAG sobre normativa constructiva: la combinación de Qwen3-Embedding-0.6B (búsqueda vectorial) y Qwen3-Reranker-0.6B (reordenamiento) permite consultar grandes corpus de documentos técnicos con alta precisión de recuperación en hardware modesto.
-- Reparación automática de scripts CAD: cuando el sistema genera código CAD con errores de sintaxis o semántica, archres-repair-v0 lo corrige antes de ejecutarlo, reduciendo la intervención manual.
-- Despliegue local en entornos sin conexión: al ser GGUF cuantizado, toda la flota puede ejecutarse en una estación de trabajo local, útil en despachos de arquitectura con datos de clientes sensibles.
-- Prototipado de sistemas verticales multi-modelo: la estructura chat + repair + embed + rerank sirve como plantilla reproducible para otros dominios verticales de bajo recurso.
-- Educación técnica: el modelo conversacional puede servir como tutor para estudiantes de ingeniería civil en Bangladesh, respondiendo preguntas sobre diseño residencial con contexto recuperado.
+- Asistente de entrevistas de proyecto residencial: `archie-chat-v0` puede mantener conversaciones multi-turno para recoger requisitos de una vivienda (superficie, numero de plantas, materiales) y estructurar la informacion, usando una ventana de 8192 tokens configurable en llama-server.
+- Reparacion de scripts CAD: `archres-repair-v0`, derivado de un modelo de codigo, se usaria para diagnosticar y corregir scripts de automatizacion CAD que fallen, dentro de un flujo de soporte tecnico interno.
+- Busqueda documental sobre normativa y planos: el par embedding + reranker permite indexar documentacion tecnica, recuperar fragmentos relevantes por similitud y reordenarlos antes de pasarlos al modelo de chat.
+- Pipeline RAG de dominio: combinando los cuatro artefactos se puede montar un asistente que recupere contexto (embedding), lo reordene (reranker) y genere una respuesta (chat), todo en local con llama.cpp.
+- Despliegue en hardware de consumo: al ser modelos de 0,6 a 4 mil millones de parametros en Q4_K_M y Q8_0, permiten prototipos de asistente vertical en estaciones de trabajo sin GPU de datacenter.
+- Soporte a investigacion de diseno residencial especifico de Bangladesh: el etiquetado del repositorio sugiere uso en flujos practicos de investigacion y diseno adaptados al contexto local, aunque no se documenta el corpus de especializacion.
+- Generacion de explicaciones tecnicas: `archie-chat-v0` puede redactar explicaciones de decisiones de diseno o de pasos de calculo a partir de la conversacion, como apoyo a la documentacion de proyecto.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye métricas de MMLU, HumanEval, GSM8K ni evaluaciones específicas del dominio (precisión de reparación de scripts CAD, calidad de recuperación del RAG, etc.).
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia del modelo de chat (Q4_K_M, 2,33 GB): aproximadamente 2,5-3 GB con contexto de 8192 tokens; cabe holgadamente en GPUs de 4-6 GB.
-- VRAM estimada para el modelo de reparación (Q4_K_M, 1,80 GB): aproximadamente 2-2,5 GB con contexto de 8192 tokens.
-- VRAM estimada para embedding y reranker (Q8_0, 0,60 GB cada uno): menos de 1 GB por modelo.
-- Toda la flota completa cabe en una GPU de 8 GB si se ejecutan los cuatro servicios simultáneamente, o incluso en CPU dado que los comandos de ejemplo usan `-ngl 0` para los modelos de embedding/reranking.
-- GPUs recomendadas: cualquier GPU consumer moderna (RTX 3060 de 12 GB, RTX 4060 Ti, RTX 4090) es más que suficiente; no se requieren A100 ni H100.
-- Despliegue: llama.cpp (vía `llama-server`, método documentado en la model card). La compatibilidad con Ollama, LM Studio o vLLM es plausible al ser GGUF/safetensors de la familia Qwen, pero no está documentada explícitamente.
-- Latencia y throughput: no disponibles. Dado el tamaño (3-4B en Q4_K_M), se espera generación fluida en GPU consumer y velocidad aceptable en CPU moderno.
+- VRAM estimada para inferencia: el modelo de chat Q4_K_M ocupa 2,33 GB en disco y el de reparacion 1,80 GB; con overhead de contexto (8192 tokens) el consumo real de VRAM es superior al tamano del fichero, aunque no se publican cifras medidas.
+- Embedding y reranker en Q8_0: 0,60 GB cada uno; los ejemplos de la model card los ejecutan con `-ngl 0`, es decir, en CPU.
+- GPU recomendadas: no disponible en la informacion proporcionada. Por tamano, los modelos generativos de 3-4 mil millones de parametros en Q4_K_M son compatibles con GPU de consumo de 8 GB o mas, pero esto es una estimacion por tamano, no un dato publicado.
+- Cabe en GPU de consumo: previsiblemente si para los cuatro artefactos por separado, dado que ninguno supera 2,33 GB en disco; no confirmado por el autor.
+- Opciones de despliegue: llama.cpp mediante `llama-server`, con flags documentados: `-ngl 99 -c 8192` para chat y repair, `--embeddings --pooling last` para el modelo de embeddings, y `--reranking` para el reranker.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Formato | Licencia | Enfoque |
+| Modelo | Parametros | Contexto | Formato | Licencia | Notas |
 |---|---|---|---|---|---|
-| ArchResidenceBD (archie-chat-v0) | 4B (Qwen3-4B-Instruct-2507) | 8192 (config de ejemplo) | GGUF Q4_K_M | Apache-2.0 | Dominio vertical: ingeniería civil residencial en Bangladesh, con RAG |
-| Qwen3-4B-Instruct-2507 (base) | 4B | hasta 262.144 (según ficha oficial de Qwen) | Safetensors/GGUF | Apache-2.0 | Uso general, chat y razonamiento |
-| Qwen2.5-Coder-3B-Instruct | 3B | 32.768 (según ficha oficial) | Safetensors/GGUF | Apache-2.0 | Código y reparación de scripts |
-| Phi-3.5-mini-instruct | 3,8B | 128.000 | Safetensors/GGUF | MIT | Uso general, alternativa de tamaño similar |
+| ArchResidenceBD Model Fleet (este) | ~4,02 B agregados en 4 artefactos | 8192 (configurado) | GGUF | Apache 2.0 | Flota vertical para ingenieria civil en Bangladesh |
+| Qwen3-4B-Instruct-2507 | 4 B | no disponible en esta ficha | safetensors/GGUF | Apache 2.0 (modelo base) | Base del artefacto de chat; sin especializacion de dominio |
+| Qwen2.5-Coder-3B-Instruct | 3 B | no disponible en esta ficha | safetensors/GGUF | Apache 2.0 (modelo base) | Base del artefacto de reparacion; orientado a codigo |
+| Qwen3-Embedding-0.6B / Reranker-0.6B | 0,6 B cada uno | no disponible en esta ficha | safetensors/GGUF | Apache 2.0 (modelos base) | Bases de los artefactos de recuperacion |
 
-Nota: los datos de contexto de los modelos base (Qwen3, Qwen2.5-Coder, Phi-3.5) proceden de sus fichas oficiales y se incluyen como referencia; para la flota de ArchResidenceBD solo está documentado el contexto de 8192 usado en los ejemplos de despliegue.
+La comparativa relevante es contra los propios modelos base: esta flota no aporta un modelo nuevo de mayor capacidad, sino un empaquetado cuantizado y etiquetado por dominio sobre pesos Qwen. Frente a los originales, la diferencia practica es el formato GGUF listo para llama.cpp y la seleccion de roles, no un salto de rendimiento documentado.
 
 ## Limitaciones y advertencias
 
-- Contexto de 8192 tokens en los ejemplos de despliegue, notablemente inferior al soportado por los modelos base Qwen3/Qwen2.5-Coder; puede ser insuficiente para documentos normativos largos sin chunking en el RAG.
-- No hay benchmarks publicados ni evaluaciones de calidad: el rendimiento real en tareas de ingeniería civil no está verificado por terceros.
-- Riesgo de alucinación elevado en datos técnicos críticos (dimensiones, cargas, normativa): cualquier salida con implicaciones estructurales o de seguridad debe ser validada por un ingeniero civil colegiado. El propio proyecto se posiciona como asistente, no como sustituto de un profesional.
-- Idiomas soportados no documentados; dado el dominio (Bangladesh), es probable que el ajuste favorezca inglés y/o bengalí, con rendimiento desconocido en castellano.
-- Sesgos: no documentados. Al tratarse de fine-tunes de la familia Qwen, heredan los sesgos de los datos de preentrenamiento originales.
-- Licencia Apache-2.0 sin restricciones de uso comercial, pero conviene revisar las condiciones de los modelos base Qwen, que son también Apache-2.0.
-- Proyecto de autor individual con 215 descargas y 0 likes en el momento de la ficha: madurez, mantenimiento y auditoría comunitaria limitados. Se recomienda cautela antes de uso en producción.
-- No hay evidencia de soporte nativo de tool calling, agentes multi-paso, visión ni audio.
+- Ausencia de evaluacion: no hay benchmarks, ni datos de entrenamiento, ni comparativas publicadas; no es posible verificar la calidad frente a los modelos base.
+- Especializacion no demostrada: el etiquetado de dominio (architecture, civil-engineering, bangladesh) no viene acompanado de documentacion sobre el corpus de adaptacion, por lo que no se puede confirmar que los pesos esten realmente ajustados al dominio.
+- Riesgo de alucinacion: al ser modelos generativos de 3-4 mil millones de parametros, son propensos a errores factuales, especialmente en calculos estructurales o normativa, donde un fallo tiene consecuencias graves.
+- Contexto limitado: la configuracion de ejemplo usa 8192 tokens; no se declara un maximo oficial y ventanas mayores pueden degradar el rendimiento.
+- Idiomas no declarados: no se especifica soporte de bengali, ingles ni otros idiomas; el uso multilingue no esta garantizado.
+- Licencia: Apache 2.0 permite uso comercial, pero conviene verificar las condiciones de los modelos base Qwen subyacentes antes de redistribuir en produccion.
+- Madurez: repositorio con 0 likes y 497 descargas, version v0 de los artefactos de chat y repair; tratar como prototipo, no como componente estable de produccion.
+- Sin soporte de tool calling ni agentes declarado: no se debe asumir capacidad de function calling sin validacion propia.
+- Uso en ingenieria civil: cualquier salida debe ser revisada por un profesional cualificado; el modelo no sustituye la verificacion normativa ni el calculo estructural certificado.
 
 ## Enlaces
 
 - Repositorio en Hugging Face: https://huggingface.co/sazid63/archresidencebd-models
-- Repositorio del proyecto ArchResidenceBD en GitHub: https://github.com/sazid63/ArchResidenceBD
-- Fichas oficiales de los modelos base (referencia): Qwen3-4B-Instruct-2507, Qwen2.5-Coder-3B-Instruct, Qwen3-Embedding-0.6B y Qwen3-Reranker-0.6B en Hugging Face (colección de Qwen).
-- Paper, blog o demo: no disponibles.
+- Modelo base del chat: Qwen3-4B-Instruct-2507 (familia Qwen, Alibaba)
+- Modelo base de reparacion: Qwen2.5-Coder-3B-Instruct (familia Qwen, Alibaba)
+- Modelo base de embeddings: Qwen3-Embedding-0.6B
+- Modelo base de reranking: Qwen3-Reranker-0.6B
+- Runtime de inferencia: llama.cpp (https://github.com/ggml-org/llama.cpp)
+- Papers, blogs, repos o demos adicionales: no disponibles en la informacion proporcionada.

@@ -2,89 +2,104 @@
 
 ## Resumen
 
-PhoneLLM Alpha 1 es un modelo de lenguaje abierto desarrollado por el equipo de Daily y Pipecat, especializado en agentes de voz y conversaciones telefónicas. Se trata de un ajuste fino completo (full-parameter fine-tune) del modelo NVIDIA Nemotron 3 Nano 30B-A3B, entrenado con el framework NVIDIA NeMo. Su objetivo principal es resolver dos problemas habituales en los agentes de voz: la latencia excesiva provocada por los tokens de razonamiento y la imprecisión en la invocación de herramientas en conversaciones largas y multiturno.
+PhoneLLM Alpha 1 es un modelo de lenguaje de pesos abiertos desarrollado por Daily / el equipo de Pipecat, especializado en casos de uso de agentes de voz para telefonía. Se trata de un ajuste fino de parámetros completos (full-parameter SFT) sobre NVIDIA Nemotron 3 Nano 30B-A3B, un modelo de mezcla de expertos (MoE) con 30.000 millones de parámetros totales y 3.500 millones activos, entrenado con el framework NVIDIA NeMo.
 
-El modelo emplea una arquitectura híbrida Mamba-Transformer de mezcla de expertos (MoE) con 31.577.937.344 parámetros totales, de los cuales solo 3.500 millones están activos por token, lo que permite una inferencia rápida y económica. Dispone de una ventana de contexto de 262.144 tokens, lo que le permite manejar conversaciones telefónicas extensas sin perder información relevante. Según sus desarrolladores, PhoneLLM alcanza un rendimiento comparable al de GPT 5.6 Terra en el benchmark PhoneBench v1, pero con un coste un 94 % inferior y una latencia P95 de tiempo hasta el primer token 1.300 ms menor.
+El modelo aborda un hueco concreto en el ecosistema: los modelos frontera actuales están optimizados para razonar con tokens de pensamiento habilitados, lo que introduce una latencia elevada entre la consulta del usuario y la respuesta del agente. Además, muchos modelos, tanto grandes como pequeños, fallan al invocar herramientas en conversaciones multiturno largas cuando el modo de razonamiento está desactivado, llegando a afirmar que han realizado una acción sin haberla ejecutado. PhoneLLM se entrena específicamente para llamar a las herramientas correctas en el momento adecuado sin necesidad de pensamiento explícito.
 
-La relevancia de este lanzamiento radica en la tendencia hacia modelos pequeños y especializados que superan a los modelos frontera en tareas concretas, ofreciendo ventajas en precisión, velocidad, coste y privacidad de datos. PhoneLLM está diseñado para integrarse en pipelines de agentes de voz mediante frameworks como Pipecat, y se distribuye bajo licencia BSD 2-Clause, sin restricciones comerciales.
+La relevancia del lanzamiento radica en su combinación de precisión en el benchmark propietario PhoneBench v1, baja latencia y bajo coste por minuto, junto con una licencia BSD 2-Clause sin restricciones comerciales. El modelo se publica con una longitud de contexto de 262.144 tokens y una cuantización oficial NVFP4 para GPUs NVIDIA Blackwell.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Híbrida Mamba-Transformer, mixture-of-experts (MoE) |
-| Parametros totales | 31.577.937.344 (30B declarados) |
-| Parametros activos | 3.500 millones (3.5B) |
+| Arquitectura | Híbrida Mamba-Transformer con mezcla de expertos (MoE) |
+| Parametros totales | 31.577.937.344 (aproximadamente 30B) |
+| Parametros activos | 3.5B |
 | Longitud de contexto | 262.144 tokens |
-| Tipos de cuantizacion | No disponible (solo bfloat16 safetensors) |
-| Idiomas soportados | Inglés |
-| Licencia | BSD 2-Clause (derivado de NVIDIA Nemotron Open Model License) |
-| Formato de pesos | safetensors (bfloat16) |
+| Tipos de cuantizacion | BF16 (original); NVFP4 (checkpoint oficial para GPUs Blackwell) |
+| Idiomas soportados | Inglés (en) |
+| Licencia | BSD 2-Clause; obra derivada de NVIDIA Nemotron Open Model License |
+| Formato de pesos | safetensors (bfloat16), con código personalizado (`trust_remote_code=True`) |
+| Modelo base | nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16 |
+| Libreria | transformers |
+| Tamano del repositorio | 63.2 GB |
+| Ajustes de inferencia recomendados | `temperature=0`, thinking desactivado (`chat_template_kwargs: {"enable_thinking": false}`) |
+| Servido recomendado | vLLM o SGLang (recetas Nemotron 3 Nano) |
 
 ## Arquitectura y entrenamiento
 
-PhoneLLM Alpha 1 hereda la arquitectura híbrida Mamba-Transformer de su modelo base, NVIDIA Nemotron 3 Nano 30B-A3B. Se trata de un modelo de mezcla de expertos con 30.000 millones de parámetros totales y 3.500 millones activos por token, lo que reduce significativamente el coste computacional en inferencia. La combinación de capas Mamba (modelos de espacio de estado) con capas Transformer permite capturar dependencias de largo alcance de forma eficiente, manteniendo una alta calidad de generación.
+PhoneLLM Alpha 1 hereda la arquitectura del modelo base Nemotron 3 Nano 30B-A3B: un transformer híbrido con capas Mamba y mecanismos de atención, organizado como mezcla de expertos con 30B parámetros totales y 3.5B activos por token. Esta configuración permite una inferencia de alta velocidad a bajo coste, ya que solo se computa una fracción de los parámetros en cada paso.
 
-El entrenamiento consistió en un ajuste fino supervisado completo (full-parameter SFT) utilizando el framework NVIDIA NeMo. No se han publicado detalles sobre el volumen de datos de entrenamiento, la composición del dataset ni el uso de técnicas como RLHF o DPO. La innovación principal del modelo reside en su entrenamiento específico para invocar herramientas con precisión en conversaciones multiturno, sin necesidad de activar el modo de razonamiento (thinking). Según la documentación, muchos modelos fallan al confirmar acciones sin ejecutarlas realmente; PhoneLLM está calibrado para llamar a las herramientas correctas en el momento adecuado, incluso con `temperature=0` y el razonamiento desactivado.
+El entrenamiento consistió en un ajuste fino supervisado de parámetros completos (full-parameter SFT) utilizando el framework NVIDIA NeMo, partiendo de los pesos BF16 del modelo base. No se especifica en la información disponible el volumen de tokens de entrenamiento ni la composición exacta del dataset, aunque el material del autor indica que el equipo de Pipecat entrena modelos con trazas de agentes en producción y datos propietarios de clientes empresariales. Tampoco se detalla si se aplicaron etapas de RLHF o DPO. La innovación principal no es arquitectónica sino de especialización: el modelo se optimiza para invocar herramientas con precisión en conversaciones multiturno sin modo de razonamiento activado, un comportamiento que el modelo base no logra de forma fiable.
 
 ## Capacidades
 
-- Generación de texto conversacional optimizada para diálogos telefónicos naturales y fluidos.
-- Tool calling y function calling preciso en conversaciones largas y multiturno, sin depender de tokens de razonamiento.
-- Soporte para agentes y flujos de trabajo multi-paso, con capacidad de mantener el contexto durante toda la interacción.
-- Manejo de ventanas de contexto muy amplias (262.144 tokens), adecuado para historiales de llamadas extensos.
-- Integración nativa con el framework Pipecat para orquestación de agentes de voz (entrada de transcripción, salida de TTS).
-- Inferencia de baja latencia gracias a la arquitectura MoE con solo 3.5B parámetros activos.
-- Capacidad multilingüe limitada al inglés; no se menciona soporte para otros idiomas.
+- Generación de texto conversacional orientada a diálogos telefónicos multiturno.
+- Invocación de herramientas (tool calling / function calling) sin necesidad de tokens de pensamiento, entrenado explícitamente para llamar a la herramienta correcta en el momento correcto.
+- Soporte de agentes y razonamiento multi-paso dentro de flujos de atención al cliente (consulta, verificación, ejecución de acción, confirmación).
+- Manejo de contexto largo gracias a una ventana de 262.144 tokens, adecuada para conversaciones extensas con historial acumulado.
+- Capacidad de desactivar el modo de pensamiento (`enable_thinking: false`) para minimizar la latencia de respuesta.
+- Estilo de habla adaptado a interacción telefónica, según la evaluación de estilo de PhoneBench.
+- Soporte multilingüe limitado al inglés.
 
 ## Casos de uso
 
-- Atención al cliente telefónica en servicios financieros: el modelo puede gestionar consultas sobre saldos, movimientos o productos bancarios, invocando APIs de backend para verificar datos en tiempo real y respondiendo con un tono conversacional adecuado.
-- Gestión de citas y reservas en hostelería y salud: PhoneLLM puede confirmar, modificar o cancelar reservas mediante tool calling, manteniendo el contexto de la conversación durante toda la llamada.
-- Agentes de llamadas salientes para recordatorios y cobros: gracias a su baja latencia y precisión en la invocación de herramientas, puede realizar llamadas proactivas para recordar pagos, citas o renovaciones, ejecutando acciones en sistemas externos.
-- Soporte técnico de primer nivel: con su ventana de contexto de 262K tokens, puede manejar conversaciones largas con clientes que describen problemas complejos, consultando bases de conocimiento y escalando a agentes humanos cuando sea necesario.
-- Automatización de encuestas y sondeos telefónicos: el modelo puede guiar cuestionarios estructurados, registrar respuestas mediante tool calls y adaptar las preguntas según las respuestas anteriores.
-- Asistentes virtuales integrados en centralitas: combinado con reconocimiento de voz y síntesis de texto, PhoneLLM puede actuar como recepcionista automática, derivando llamadas, tomando mensajes o proporcionando información corporativa.
-- Pruebas y simulación de conversaciones: los desarrolladores pueden usar PhoneLLM para generar diálogos de prueba realistas y validar flujos de agentes antes de desplegarlos en producción.
+- Atención al cliente entrante en servicios financieros: el modelo gestiona conversaciones multiturno con identificación del cliente, consulta de saldo o estado de operaciones y derivación a un humano, apoyándose en la ventana de 262.144 tokens para mantener el historial completo de la llamada.
+- Agentes de voz salientes para recordatorios y confirmación de citas en salud: el modelo ejecuta la llamada, verifica la identidad, confirma o reprograma la cita mediante tool calling y registra el resultado, sin afirmar acciones que no haya ejecutado realmente.
+- Reservas en retail y hostelería: gestión de reservas de mesa o pedidos con verificación de disponibilidad a través de herramientas, un escenario donde el fallo típico de los modelos generales es confirmar una reserva sin haberla realizado.
+- Integración en pipelines de Pipecat con STT y TTS: el modelo actúa como capa de razonamiento y decisión entre la transcripción y la síntesis de voz, con latencia de primer token reducida para mantener la naturalidad de la conversación.
+- Automatización de soporte telefónico de primer nivel: clasificación de la intención del llamante, recuperación de información mediante herramientas y escalado a agentes humanos cuando la consulta excede el ámbito definido.
+- Despliegue en infraestructura propia por motivos de privacidad: al ser pesos abiertos con licencia BSD 2-Clause, permite procesar datos de llamadas sensibles sin enviarlos a APIs de terceros, con la cuantización NVFP4 para reducir coste en GPUs Blackwell.
+- Evaluación y ajuste continuo de agentes de voz: el modelo sirve como referencia base para comparar latencia, coste por minuto y precisión de tool calling frente a modelos generales usando PhoneBench v1.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+El autor publica resultados en PhoneBench v1, su benchmark propietario de idoneidad para agentes telefónicos. Las cifras son medias sobre diez ejecuciones completas de PhoneBench a temperatura cero y con thinking desactivado.
 
-Los desarrolladores presentan PhoneBench v1, un benchmark propio que evalúa la idoneidad de los modelos para agentes telefónicos, midiendo precisión, estilo de habla, latencia y coste por minuto. Según la model card, PhoneLLM Alpha 1 obtiene una precisión comparable o superior a la mayoría de los modelos utilizados en producción para agentes de voz, con menor latencia y coste. Se menciona explícitamente que PhoneLLM rinde al nivel de GPT 5.6 Terra, siendo un 94 % más barato y 1.300 ms más rápido en el percentil 95 del tiempo hasta el primer token. No se proporcionan cifras numéricas detalladas de otros benchmarks estándar como MMLU, HumanEval o GSM8K.
+| Pesos | KV cache | PhoneBench media | Delta vs. BF16 |
+|---|---|---:|---:|
+| BF16 | BF16 | 72.055800 | — |
+| NVFP4 | FP8 | 71.512482 | -0.543318 |
+| NVFP4 | BF16 | 72.019090 | -0.036711 |
+
+El autor afirma que PhoneLLM rinde a la par de GPT 5.6 Terra en PhoneBench, con un 94% menos de coste y 1.300 ms menos de P95 time-to-first-token. No se han publicado en la información disponible resultados de benchmarks estándar como MMLU, HumanEval o GSM8K, ni la tabla completa del leaderboard de PhoneBench con las puntuaciones del resto de modelos comparados.
 
 ## Requisitos de hardware
 
-- El repositorio ocupa 63.2 GB en formato bfloat16 safetensors, por lo que se necesitan aproximadamente 63 GB de VRAM para cargar el modelo completo sin cuantización.
-- Con 3.5B parámetros activos, el modelo puede ejecutarse en GPUs de consumo si se aplica cuantización (aunque no se especifican tipos de cuantización disponibles). Una RTX 4090 con 24 GB podría ser suficiente con cuantización a 4 bits, pero no hay datos oficiales al respecto.
-- Para despliegue en producción se recomienda vLLM o SGLang, siguiendo las recetas de NVIDIA para Nemotron 3 Nano. Es necesario activar `trust_remote_code=True` en transformers.
-- No se han publicado datos de latencia o throughput específicos más allá de la comparación con GPT 5.6 Terra en PhoneBench.
-- El modelo está diseñado para entornos de baja latencia; se recomienda usar GPUs con alta memoria de ancho de banda como A100, H100 o L40S para servir múltiples conversaciones concurrentes.
+- VRAM estimada para inferencia en BF16: aproximadamente 63 GB solo para pesos, más la caché KV; requiere GPUs de 80 GB o múltiples GPUs.
+- Cuantización NVFP4: reduce el peso de los pesos a aproximadamente una cuarta parte del BF16; el checkpoint oficial está probado con una receta nativa de vLLM para una única NVIDIA B200.
+- GPUs recomendadas: NVIDIA B200 para NVFP4 con receta validada; A100/H100 de 80 GB para BF16 con vLLM o SGLang.
+- No cabe en GPUs de consumo convencionales en BF16; la viabilidad en GPUs consumer no está documentada en la información disponible.
+- Opciones de despliegue: vLLM y SGLang con las recetas de Nemotron 3 Nano y `trust_remote_code=True`; no se mencionan llama.cpp, Ollama ni TGI en la documentación del autor.
+- Latencia y throughput: el autor reporta una mejora de 1.300 ms en P95 time-to-first-token frente a GPT 5.6 Terra, pero no publica cifras absolutas de latencia ni de tokens por segundo en la información disponible.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Activos | Contexto | Licencia | Uso principal |
+| Modelo | Parametros | Activos | Contexto | Licencia | Enfoque |
 |---|---|---|---|---|---|
-| PhoneLLM Alpha 1 | 31.58B | 3.5B | 262K | BSD 2-Clause | Agentes de voz telefónicos |
-| NVIDIA Nemotron 3 Nano 30B-A3B | 30B | 3.5B | 262K | NVIDIA Open Model | Modelo base generalista |
-| GPT 5.6 Terra | No disponible | No disponible | No disponible | Propietaria | Modelo frontera generalista |
+| PhoneLLM Alpha 1 | ~30B | 3.5B | 262.144 | BSD 2-Clause | Agentes de voz telefónicos con tool calling |
+| NVIDIA Nemotron 3 Nano 30B-A3B | ~30B | 3.5B | no disponible en la información | NVIDIA Nemotron Open Model License | Modelo base generalista |
+| GPT 5.6 Terra | no disponible | no disponible | no disponible | Propietaria | Modelo frontera generalista; referencia de comparación del autor en PhoneBench |
 
-La comparación directa con GPT 5.6 Terra se basa en los datos de PhoneBench v1 publicados por los desarrolladores: PhoneLLM ofrece precisión comparable con un coste un 94 % inferior y una latencia P95 1.300 ms menor. Frente a su modelo base, PhoneLLM incorpora un ajuste específico para tool calling en conversaciones telefónicas, lo que mejora la fiabilidad en escenarios de agente sin necesidad de activar el razonamiento. No se dispone de datos para comparar con otros modelos de código abierto especializados en voz.
+La comparación cuantitativa con GPT 5.6 Terra se limita a las afirmaciones del autor: paridad de precisión en PhoneBench, 94% menos coste y 1.300 ms menos de P95 time-to-first-token. No se dispone de datos de benchmarks estándar para establecer comparaciones adicionales con otras alternativas.
 
 ## Limitaciones y advertencias
 
-- El modelo solo soporta inglés; no hay soporte multilingüe documentado.
-- Al ser un ajuste fino de un modelo NVIDIA, la licencia original de Nemotron puede imponer condiciones adicionales, aunque la model card indica que la licencia BSD 2-Clause no tiene restricciones comerciales. Se recomienda revisar ambos términos de licencia antes de su uso en producción.
-- No se han publicado evaluaciones sobre sesgos, alucinaciones o comportamientos no deseados en dominios específicos.
-- El modelo requiere `trust_remote_code=True` en transformers, lo que implica ejecutar código personalizado del repositorio; se debe auditar el código antes de su uso en entornos sensibles.
-- La precisión en tool calling está optimizada para conversaciones telefónicas; su rendimiento en otras tareas generales no ha sido evaluado públicamente.
-- No se proporcionan datos sobre el dataset de entrenamiento, por lo que no es posible evaluar posibles sesgos de contenido o cobertura temática.
-- El modelo está pensado para integrarse con frameworks como Pipecat; su uso fuera de ese ecosistema puede requerir adaptaciones adicionales.
+- Idioma: el modelo solo declara soporte de inglés; su uso en castellano u otros idiomas no está validado.
+- Especialización estrecha: está entrenado para agentes telefónicos; su rendimiento en tareas generales de razonamiento, código o matemáticas no se documenta y probablemente sea inferior al del modelo base sin ajustar.
+- Riesgo de alucinación: aunque el entrenamiento busca reducir las confirmaciones falsas de acciones, persiste el riesgo de que el modelo afirme haber ejecutado una herramienta sin hacerlo; se recomienda validación externa de las llamadas a herramientas en producción.
+- Licencia: BSD 2-Clause permite uso comercial, pero al ser obra derivada de un trabajo bajo NVIDIA Nemotron Open Model License, deben respetarse las condiciones adicionales recogidas en `LICENSE_NVIDIA.txt`.
+- Configuración sensible: el autor recomienda `temperature=0` y thinking desactivado; desviarse de estos ajustes puede degradar la precisión de tool calling y el estilo conversacional.
+- Requiere `trust_remote_code=True` y código personalizado, lo que implica revisar el código remoto antes de desplegar en entornos de producción.
+- Estado alpha: la versión se denomina Alpha 1, lo que sugiere que la API, los pesos o el comportamiento pueden cambiar en futuras iteraciones.
+- Sesgos: no se documentan en la información disponible análisis específicos de sesgos del modelo.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/pipecat-ai/phonellm-alpha-1
+- Modelo en Hugging Face: https://huggingface.co/pipecat-ai/phonellm-alpha-1
+- Checkpoint oficial NVFP4: https://huggingface.co/pipecat-ai/phonellm-alpha-1-nvfp4
 - Modelo base NVIDIA Nemotron 3 Nano 30B-A3B: https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16
-- Pipecat (framework oficial): https://www.pipecat.ai/
-- Documentación de Pipecat: https://docs.pipecat.ai/
-- Repositorio de Pipecat en GitHub: https://github.com/pipecat-ai/pipecat
+- Pipecat (framework y equipo): https://www.pipecat.ai/
+- Daily: https://www.daily.co/
+- Paquete Pipecat en PyPI: https://pypi.org/project/pipecat-ai/
+- Documentación de NVIDIA NeMo Framework: https://docs.nvidia.com/nemo-framework/index.html

@@ -2,116 +2,108 @@
 
 ## Resumen
 
-`riccardoroselli/qwen3.5-2b-gym-grpo-GGUF` es la distribucion en formato GGUF del modelo `riccardoroselli/qwen3.5-2b-gym-grpo`, un fine-tuning de Qwen3.5-2B orientado a una tarea muy concreta: convertir una peticion de entrenamiento de gimnasio en texto libre a un JSON estructurado con ejercicios, series y repeticiones. Lo desarrolla Riccardo Roselli (usuario `riccardoroselli`) y esta pensado para su uso en llama.cpp, LM Studio y aplicaciones compatibles con GGUF, incluyendo la aplicacion GymLeader del propio autor.
+`riccardoroselli/qwen3.5-2b-gym-grpo-GGUF` es la distribucion en formato GGUF de un ajuste fino del modelo base Qwen/Qwen3.5-2B, especializado en la generacion de rutinas de gimnasio en JSON. El autor, riccardoroselli, parte de un modelo de 1.942.653.248 parametros (aproximadamente 1,94 mil millones) y lo somete a un proceso de SFT con LoRA seguido de GRPO (Group Relative Policy Optimization) para forzar la salida estructurada. El resultado es un modelo de tarea unica que transforma peticiones en lenguaje natural sobre entrenamientos de gimnasio en objetos JSON con nombres de ejercicios extraidos de un catalogo externo.
 
-El modelo parte de Qwen/Qwen3.5-2B (1.942.653.248 parametros segun los safetensors del modelo base) y se entrena en dos fases: primero SFT con LoRA y despues GRPO (Group Relative Policy Optimization) para reforzar el cumplimiento estricto del esquema JSON, la seleccion de ejercicios dentro de un catalogo cerrado y el rechazo de peticiones imposibles. La salida esperada es `{"workout": [{"name", "sets", "reps"}, ...]}` o `{"error": "..."}` cuando no hay suficientes ejercicios que encajen con la peticion.
+La relevancia de esta publicacion no reside en capacidades generales de razonamiento o generacion de texto, sino en la demostracion de un pipeline completo de ajuste fino con RL aplicado a un dominio cerrado y verificable. El modelo incluye un template de chat que inyecta automaticamente el mensaje de sistema de entrenamiento y desactiva el modo thinking, ademas de fijar temperatura 0 por defecto, de modo que una peticion de chat estandar reproduce exactamente el prompt de evaluacion. Se distribuyen unicamente dos cuantizaciones: Q8_0 (recomendada) y BF16 (referencia), ambas publicadas con hashes SHA256 verificables.
 
-Su relevancia es la de un ejemplo de modelo pequeno, especializado y cuantizado para despliegue local en CPU o Apple Silicon, con una plantilla de chat que fija el system prompt de entrenamiento y desactiva el modo thinking. El autor publica mediciones propias de velocidad y de calidad sobre 300 peticiones de test, e indica explicitamente que la cuantizacion Q4_K_M no se publica porque degrada de forma notable el comportamiento aprendido con GRPO.
+El modelo esta pensado para integrarse en aplicaciones de fitness, como demuestra la imagen Docker del proyecto GymLeader, que ejecuta el sistema completo con guardas y verificador de reintentos sobre CPU. No es un chatbot: la model card insiste en una peticion por chat nueva, sin saludos ni seguimientos, y advierte de que la cuantizacion Q4_K_M no se publica porque degrada severamente las metricas obtenidas tras el GRPO.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (heredada de Qwen3.5-2B); no se detalla en la informacion disponible |
-| Parametros totales | 1.942.653.248 |
-| Parametros activos | no disponible (no se indica que sea MoE) |
-| Longitud de contexto | no disponible en la model card; el ejemplo de despliegue usa `-c 4096` |
-| Tipos de cuantizacion | Q8_0 (8.5 bits por peso) y BF16 (16 bits por peso); Q4_K_M medido pero no publicado |
-| Idiomas soportados | en |
-| Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (tambien existen safetensors en el modelo base `riccardoroselli/qwen3.5-2b-gym-grpo`) |
+| Arquitectura | Transformer decoder-only (derivada de Qwen/Qwen3.5-2B), ajustada con SFT (LoRA) y GRPO |
+| Parametros totales | 1.942.653.248 (aproximadamente 1,94 mil millones) |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible en la informacion proporcionada; los ejemplos de despliegue usan `-c 4096` |
+| Tipos de cuantizacion | Q8_0 (8,5 bits por peso) y BF16 (16 bits por peso); Q4_K_M medido pero no publicado |
+| Idiomas soportados | en (ingles) |
+| Licencia | apache-2.0 |
+| Formato de pesos | GGUF (llama.cpp); safetensors disponible en el modelo base `riccardoroselli/qwen3.5-2b-gym-grpo` para MLX |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura subyacente es la de Qwen3.5-2B, un transformer decoder-only de aproximadamente 1,94 mil millones de parametros. Sobre esa base, el autor aplica un ajuste en dos etapas: SFT con LoRA sobre peticiones de entrenamiento de gimnasio y, a continuacion, GRPO con una funcion de recompensa en el rango [0, 1] que premia que los nombres de ejercicio pertenezcan al catalogo de ejercicios de referencia, que no haya duplicados, que se rechacen las peticiones imposibles y que el JSON sea correcto en su conjunto. No se especifican en la informacion disponible el numero de tokens de entrenamiento ni la composicion exacta del dataset.
+El modelo parte de la arquitectura transformer decoder-only de Qwen/Qwen3.5-2B, con aproximadamente 1,94 mil millones de parametros. Sobre esa base, el autor aplica un ajuste fino supervisado (SFT) mediante LoRA, seguido de un entrenamiento con GRPO, una variante de optimizacion por politica relativa de grupo que refuerza las respuestas que cumplen el formato y las restricciones del dominio. El objetivo del entrenamiento es producir exclusivamente un objeto JSON con la forma `{"workout": [{"name", "sets", "reps"}, ...]}` o, cuando no hay suficientes ejercicios que cumplan la peticion, `{"error": "..."}`. Los nombres de ejercicios deben provenir del catalogo del repositorio `hasaneyldrm/exercises-dataset`.
 
-La innovacion practica del artefacto GGUF esta en la plantilla de chat: anade automaticamente el system message de entrenamiento cuando la conversacion no trae uno, fuerza el modo thinking a desactivado y establece temperatura 0 por defecto. El modelo nunca vio bloques de razonamiento durante el entrenamiento, de modo que la plantilla garantiza que una peticion de chat corriente reproduzca el mismo prompt con el que se entreno y evaluo. El autor advierte que un system message propio del usuario sustituye al de entrenamiento y no fue evaluado.
+La innovacion tecnica principal no esta en la arquitectura sino en el empaquetado para inferencia: los ficheros GGUF incluyen un template de chat que anade el mensaje de sistema de entrenamiento cuando la conversacion no trae uno y que desactiva siempre el modo thinking. Ademas, la temperatura por defecto del fichero es 0 (decodificacion greedy). El modelo nunca vio bloques de razonamiento durante el entrenamiento, por lo que el template los suprime de forma explicita. El autor documenta que la cuantizacion Q4_K_M fue medida y descartada: degradaba la metrica `all_correct` a 0,25 frente a 0,54 en BF16, y la presencia de nombres validos del catalogo caia al 82 % frente al 95 %. No se dispone de informacion sobre el numero de tokens de entrenamiento ni sobre la composicion exacta del dataset.
 
 ## Capacidades
 
-- Generacion de JSON estructurado a partir de una peticion en lenguaje natural sobre rutinas de gimnasio.
-- Seleccion de ejercicios restringida a un catalogo cerrado (dataset `hasaneyldrm/exercises-dataset`).
-- Control de parametros de la rutina: dificultad, material (peso libre, etc.) y numero de ejercicios.
-- Rechazo explicito de peticiones imposibles mediante `{"error": "..."}`.
-- Evitacion de ejercicios duplicados en la rutina generada.
-- Generacion de texto conversacional basica heredada del modelo base (pipeline `text-generation`).
-- Modo thinking desactivado de forma forzada por la plantilla de chat.
-- Soporte de tool calling, function calling, agentes y vision: no disponible en la informacion proporcionada.
-- Capacidades multilingues: solo ingles declarado.
+- Generacion de rutinas de gimnasio en JSON estructurado a partir de una peticion en lenguaje natural (tipo de entrenamiento, dificultad, equipamiento y numero de ejercicios).
+- Salida con esquema fijo: `{"workout": [{"name", "sets", "reps"}, ...]}` o `{"error": "..."}` cuando la peticion no puede satisfacerse con el catalogo disponible.
+- Seleccion de nombres de ejercicios restringida al catalogo externo `hasaneyldrm/exercises-dataset`.
+- Gestion de peticiones imposibles o inconsistentes devolviendo un objeto de error controlado.
+- Modo thinking desactivado de forma forzada por el template: no genera bloques de razonamiento.
+- Capacidad multilingue limitada al ingles (`language: [en]`); no se documenta soporte de otros idiomas.
+- No se documenta soporte de tool calling, function calling ni comportamiento agentico multi-paso.
+- No se documenta vision, audio ni otras modalidades.
 
 ## Casos de uso
 
-- Generacion automatica de rutinas en una app de fitness: el modelo transforma la peticion del usuario ("chest workout, medium difficulty, free weights, 4 exercises") en un JSON que la aplicacion puede renderizar directamente, sin necesidad de un parser complejo.
-- Backend de la aplicacion GymLeader: el autor publica una imagen Docker (`ghcr.io/riccardoroselli/gymleader:v1.0`) que descarga el Q8_0, verifica su sha256 y ejecuta el sistema completo con guard y reintentos del verificador.
-- Despliegue local en portatil: con 2,08 GB para Q8_0 y 43,2 tok/s de generacion en un Apple M4 MacBook Air, es viable ejecutarlo en un equipo de consumo sin GPU dedicada.
-- Prototipado de asistentes de entrenamiento en LM Studio: la plantilla de chat y la temperatura 0 por defecto permiten obtener respuestas reproducibles con una configuracion minima.
-- Servicio HTTP interno con llama-server: el ejemplo con `-ngl all -c 4096 -np 1` y la API `/v1/chat/completions` permite integrarlo en un backend que reciba peticiones de usuario y devuelva JSON validado.
-- Generacion de datos sinteticos de rutinas: al estar restringido a un catalogo cerrado y rechazar peticiones imposibles, sirve para producir ejemplos estructurados que alimenten otros sistemas o bases de datos.
-- Evaluacion de tecnicas de RL: el par SFT/GRPO y las metricas publicadas (all_correct, reward) lo convierten en un caso de estudio reproducible para comparar SFT frente a GRPO en tareas de salida estructurada.
+- Generacion automatica de rutinas en una app de fitness: la aplicacion envia la peticion del usuario ("chest workout, medium difficulty, free weights, 4 exercises") al endpoint de chat y recibe un JSON listo para renderizar en la interfaz, sin necesidad de parseo adicional.
+- Backend de un planificador de entrenamientos semanal: encadenando varias peticiones (una por dia o grupo muscular) se construye un plan completo, validando cada respuesta contra el catalogo de ejercicios.
+- Filtrado y validacion en pipelines de contenido: el objeto `{"error": "..."}` permite discriminar peticiones no cubiertas por el catalogo sin recurrir a un segundo modelo.
+- Despliegue local en escritorio o portatil: con el fichero Q8_0 (unos 2 GB) y llama.cpp o LM Studio, el modelo cabe en equipos consumer y funciona sin GPU dedicada, lo que facilita prototipos y demos offline.
+- Integracion en el sistema GymLeader: la imagen Docker `ghcr.io/riccardoroselli/gymleader:v1.0` ejecuta el modelo con guardas y verificador de reintentos sobre CPU, descargando y verificando por SHA256 el fichero Q8_0 en el primer arranque.
+- Servicio HTTP interno con llama-server: el binario expone `/v1/chat/completions` compatible con OpenAI, lo que permite integrarlo en aplicaciones existentes que ya consumen esa API.
+- Evaluacion de pipelines de RL para dominios cerrados: el par SFT+GRPO y las metricas publicadas (`all_correct`, presencia en catalogo) sirven como referencia reproducible para experimentos similares en otros dominios verificables.
+- Generacion de datos sinteticos de entrenamiento: las rutinas JSON producidas pueden usarse como corpus estructurado para otros sistemas de recomendacion de ejercicios.
 
 ## Benchmarks y rendimiento
 
-Resultados publicados por el autor sobre 300 peticiones de test (combinaciones y formulaciones no vistas en entrenamiento, 16 de ellas imposibles), decodificacion greedy, thinking desactivado, evaluadas con el verificador del proyecto (`src/verifier.py`). `all_correct` exige que pasen todas las comprobaciones; `reward` es la recompensa de GRPO en [0, 1].
+La model card publica resultados sobre 300 peticiones de test (combinaciones y formulaciones no vistas en entrenamiento, 16 de ellas imposibles), con decodificacion greedy, thinking desactivado y puntuadas por el verificador del proyecto. Se comparan las dos cuantizaciones publicadas:
 
-| Modelo | Nombres en catalogo | Sin duplicados | Imposibles rechazadas | all_correct | reward |
-|---|---|---|---|---|---|
-| Qwen3.5-2B, zero-shot | – | – | 0/16 | 0.00 | 0.000 |
-| Qwen3.5-2B, 3 ejemplos en el prompt | 0.161 | 0.943 | 0/16 | 0.00 | 0.415 |
-| SFT (`gym-sft`) | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | no disponible |
-| Q8_0 (este repo) | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | no disponible |
-| BF16 (referencia) | 0.95 | no disponible | no disponible | 0.54 | no disponible |
-| Q4_K_M (medido, no publicado) | 0.82 | no disponible | no disponible | 0.25 | no disponible |
+| Metrica | Q8_0 | BF16 | Q4_K_M (no publicado) |
+|---|---|---|---|
+| all_correct | no disponible en el extracto | 0,54 | 0,25 |
+| Nombres presentes en el catalogo | no disponible en el extracto | 0,95 | 0,82 |
 
-Rendimiento de inferencia medido con `llama-bench` (llama.cpp b12360) en un Apple M4 MacBook Air, Metal, todas las capas en GPU, 3 repeticiones:
+Rendimiento de inferencia medido con `llama-bench` (llama.cpp b12360) en un Apple M4 MacBook Air con Metal, todas las capas en GPU y 3 repeticiones:
 
-| Fichero | Generacion (tg128) | Lectura de prompt (pp512) |
+| Fichero | Escritura (tg128) | Lectura de prompt (pp512) |
 |---|---|---|
 | Q8_0 | 43,2 tok/s | 918 tok/s |
 | BF16 | 25,5 tok/s | 958 tok/s |
 
-El autor indica que el fichero Q8_0 dio exactamente la respuesta evaluada en las 300 peticiones de test a traves de la API de chat de llama-server (llama.cpp b12360, Metal), sin system message enviado.
+El autor indica que estas cifras variaran en otro hardware y seran inferiores en CPU. No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM/almacenamiento para inferencia: 2.076.675.008 bytes (~2,08 GB) para Q8_0 y 3.897.387.968 bytes (~3,90 GB) para BF16.
-- GPU recomendadas: no se especifican modelos concretos; el autor valida en Apple M4 MacBook Air con Metal y todas las capas en GPU.
-- Cabe en GPU de consumo: si, por el tamano del fichero (Q8_0 de ~2,08 GB y BF16 de ~3,90 GB), aunque no se publican mediciones en GPU dedicadas.
-- Opciones de despliegue: llama.cpp (`llama-server`), LM Studio (probado con la version 0.4.28, motor llama.cpp b12270), MLX en Apple Silicon usando el modelo safetensors, y la imagen Docker de GymLeader (linux/amd64 y linux/arm64, CPU).
-- Latencia y throughput: 43,2 tok/s de generacion y 918 tok/s de lectura de prompt con Q8_0; 25,5 tok/s y 958 tok/s con BF16, en Apple M4 MacBook Air. El autor advierte que las cifras variaran en otro hardware y seran menores en CPU.
-- Parametros de despliegue de referencia: `-ngl all -c 4096 -np 1`.
+- VRAM estimada: aproximadamente 2 GB para Q8_0 y aproximadamente 4 GB para BF16, segun el tamano de los ficheros (2.076.675.008 bytes y 3.897.387.968 bytes respectivamente).
+- GPU recomendadas: no se especifican modelos concretos; las mediciones publicadas usan una Apple M4 MacBook Air con Metal. Cualquier GPU consumer con al menos 4 GB de VRAM deberia poder cargar el fichero Q8_0.
+- Cabe en GPU consumer: si, con el fichero Q8_0 en practicamente cualquier GPU consumer moderna; el BF16 requiere algo mas de margen.
+- Opciones de despliegue: llama.cpp (`llama-server`), LM Studio (probado con la version 0.4.28 y motor llama.cpp b12270), la imagen Docker de GymLeader (CPU, linux/amd64 y linux/arm64) y MLX en Apple Silicon usando el modelo safetensors base.
+- Latencia y throughput: 43,2 tok/s de generacion y 918 tok/s de procesamiento de prompt con Q8_0 en M4; 25,5 tok/s y 958 tok/s con BF16. En CPU el rendimiento sera inferior.
+- Parametros de servidor sugeridos en la model card: `-ngl all -c 4096 -np 1`.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Enfoque | Licencia | Formato |
+| Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| qwen3.5-2b-gym-grpo-GGUF (este) | 1,94 B | no disponible | Fine-tuning SFT + GRPO para JSON de rutinas | Apache 2.0 | GGUF |
-| qwen3.5-2b-gym-sft | no disponible | no disponible | Solo SFT, misma tarea | no disponible en la informacion proporcionada | no disponible |
-| Qwen3.5-2B (base) | 1,94 B | no disponible | Modelo generalista | no disponible en la informacion proporcionada | safetensors y otros |
-| Qwen3.5-2B con 3 ejemplos en el prompt | 1,94 B | no disponible | Prompting few-shot sin fine-tuning | no disponible | no disponible |
+| riccardoroselli/qwen3.5-2b-gym-grpo-GGUF | 1,94 mil millones | no disponible | Generacion de rutinas de gimnasio en JSON (SFT+GRPO) | apache-2.0 | GGUF en Hugging Face; safetensors en el modelo base |
+| Qwen/Qwen3.5-2B (base) | aproximadamente 2 mil millones | no disponible | Modelo generalista de texto | no disponible en la informacion proporcionada | Hugging Face |
+| riccardoroselli/qwen3.5-2b-gym-grpo (safetensors) | 1,94 mil millones | no disponible | Mismo ajuste fino, formato safetensors para MLX | apache-2.0 | Hugging Face |
 
-La comparacion cuantitativa disponible se limita a la tabla de resultados del propio autor: frente al Qwen3.5-2B zero-shot (all_correct 0,00; reward 0,000) y al Qwen3.5-2B con tres ejemplos en el prompt (all_correct 0,00; reward 0,415), el modelo ajustado con GRPO alcanza all_correct 0,54 en BF16. No se dispone de datos de otros modelos comparables de la misma categoria en la informacion proporcionada.
+No se dispone de datos de benchmarks estandar para establecer una comparacion cuantitativa con alternativas de la misma categoria. La comparacion relevante es frente a su modelo base y frente a la version safetensors del mismo ajuste, que comparten pesos pero difieren en formato y en el ecosistema de despliegue.
 
 ## Limitaciones y advertencias
 
-- Modelo altamente especializado: fuera de la generacion de rutinas de gimnasio en JSON, su utilidad es limitada y no se han evaluado otras tareas.
-- Solo declara ingles como idioma; no hay evaluacion en castellano ni en otros idiomas.
-- La cuantizacion Q4_K_M degrada el comportamiento de forma significativa (all_correct 0,25 frente a 0,54 en BF16; nombres en catalogo 0,82 frente a 0,95) y por eso no se publica.
-- La temperatura debe fijarse a 0 para reproducir el comportamiento evaluado; LM Studio no lee la temperatura por defecto del fichero y hay que configurarla a mano.
-- Un system message propio del usuario sustituye al de entrenamiento y no fue evaluado, por lo que puede alterar el formato de salida.
-- Las penalizaciones por repeticion deben permanecer desactivadas, como en todas las evaluaciones del autor.
-- El modelo nunca vio bloques de razonamiento en entrenamiento; el thinking debe permanecer desactivado.
-- Riesgo de alucinacion en nombres de ejercicios fuera del catalogo: aunque GRPO lo penaliza, la garantia no es absoluta (0,95 de nombres en catalogo en BF16, no 1,0).
-- El autor no documenta sesgos especificos ni evaluaciones de seguridad.
-- Las cifras de rendimiento proceden de un unico equipo (Apple M4 MacBook Air) y no son extrapolables a otras plataformas.
-- El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, sin validacion externa por parte de la comunidad.
+- Modelo de tarea unica: no es un chatbot. La model card exige una peticion por chat nueva, sin saludos ni seguimientos; usarlo como asistente conversacional producira resultados fuera de distribucion.
+- Solo ingles: el unico idioma declarado es `en`; las peticiones en castellano no estan evaluadas.
+- Riesgo de alucinacion controlado pero presente: el modelo puede devolver nombres de ejercicios fuera del catalogo o combinaciones no validas; el proyecto GymLeader mitiga esto con un verificador y reintentos, pero el modelo por si solo no garantiza la validez.
+- La cuantizacion Q4_K_M no se publica por perdida de calidad: `all_correct` cae de 0,54 a 0,25 y la presencia en catalogo del 95 % al 82 %. No se recomienda generar cuantizaciones mas agresivas sin reevaluar.
+- El template de chat inyecta un mensaje de sistema de entrenamiento; si el usuario envia uno propio, lo reemplaza y ese escenario no fue evaluado.
+- Temperatura 0 obligatoria para reproducir los resultados; LM Studio no lee la temperatura por defecto del fichero y hay que fijarla manualmente.
+- Las penalizaciones por repeticion deben permanecer desactivadas, como en todas las evaluaciones publicadas.
+- El contexto maximo no esta documentado; los ejemplos de despliegue usan 4096 tokens, pero no se confirma cual es el limite real del modelo.
+- Licencia apache-2.0: permite uso comercial, pero el autor no ofrece garantias sobre el comportamiento en dominios distintos al de fitness.
+- El rendimiento medido corresponde a Apple Silicon con Metal; en CPU y en otras GPU las cifras seran distintas y potencialmente mucho menores.
 
 ## Enlaces
 
 - Modelo GGUF en Hugging Face: https://huggingface.co/riccardoroselli/qwen3.5-2b-gym-grpo-GGUF
-- Modelo base (safetensors): https://huggingface.co/riccardoroselli/qwen3.5-2b-gym-grpo
-- Modelo SFT: https://huggingface.co/riccardoroselli/qwen3.5-2b-gym-sft
-- Repositorio del proyecto y verificador: https://github.com/riccardoroselli/SFT-Gym-Workout-Program
-- Verificador: https://github.com/riccardoroselli/SFT-Gym-Workout-Program/blob/main/src/verifier.py
+- Modelo base en safetensors (para MLX): https://huggingface.co/riccardoroselli/qwen3.5-2b-gym-grpo
+- Revision concreta de los ficheros: https://huggingface.co/riccardoroselli/qwen3.5-2b-gym-grpo-GGUF/tree/bbb1d3cf7f9113ec518b56c95a74702bbd83ba9b
 - Catalogo de ejercicios: https://github.com/hasaneyldrm/exercises-dataset
-- Imagen Docker de GymLeader: https://ghcr.io/riccardoroselli/gymleader
-- Revision de los ficheros: https://huggingface.co/riccardoroselli/qwen3.5-2b-gym-grpo-GGUF/tree/bbb1d3cf7f9113ec518b56c95a74702bbd83ba9b
+- Imagen Docker del sistema GymLeader: ghcr.io/riccardoroselli/gymleader:v1.0
+- Modelo base original: Qwen/Qwen3.5-2B (referenciado en la model card; no se proporciona URL directa en la informacion disponible)

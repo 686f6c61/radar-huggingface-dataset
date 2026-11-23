@@ -2,108 +2,106 @@
 
 ## Resumen
 
-d3-ultra-NVFP4 es la variante cuantizada en NVFP4 de d3-ultra, un modelo de decisión multimodal de 26.090 millones de parámetros (incluido un codificador de visión de 0,46B) desarrollado por vllm-sr dentro de la familia Decision 3.0. A diferencia de un LLM generativo convencional, el modelo no produce texto libre: recibe una entrada (texto o JSON, opcionalmente con imágenes y vídeos) junto con un conjunto de preguntas tipadas y devuelve, para cada una, una probabilidad sobre las respuestas posibles. Los tipos de decisión soportados son elección entre opciones, sí/no, puntuación en escala, caja delimitadora (Box) y seguimiento (Track).
+d3-ultra-NVFP4 es la versión cuantizada en NVFP4 de d3-ultra, un modelo de decisión multimodal de 26.090 millones de parámetros (incluido un codificador de visión de 0,46B) desarrollado por el autor vllm-sr dentro de la familia Decision 3.0. No es un modelo generativo al uso: recibe una entrada (texto, JSON, imágenes o vídeos) y un conjunto de preguntas tipadas, y devuelve una probabilidad para cada respuesta posible. Soporta cinco tipos de decisión: elección entre opciones, sí/no, puntuación en escala, caja delimitadora (Box) y seguimiento (Track).
 
-La relevancia de esta variante concreta es la eficiencia en hardware Blackwell: aplica cuantización W4A4 con formato NVFP4 (E2M1) sobre las proyecciones del decodificador, reduciendo el peso en disco de 52,2 GB a 17,2 GB y aproximadamente duplicando la velocidad de inferencia (32,5 ms frente a 63,4 ms de mediana por pregunta de texto en una RTX PRO 6000 Blackwell). El coste es una pérdida acotada de precisión: 70,63 frente a 71,57 en el índice de decisión público y 74,60 frente a 75,36 en la suite de visión.
+La relevancia de esta variante concreta es la eficiencia: mantiene el comportamiento del modelo original con un coste de almacenamiento de 17,2 GB frente a los 52,2 GB de d3-ultra, y aproximadamente la mitad de latencia (32,5 ms frente a 63,4 ms de mediana para una pregunta de texto sobre una NVIDIA RTX PRO 6000 Blackwell). Es, por tanto, una opción para desplegar un modelo de decisión multimodal de 26B en hardware Blackwell con FP4 tensor cores.
 
-El modelo está pensado para cargas de clasificación y enrutamiento de alta concurrencia donde la latencia y la huella de memoria importan más que la generación abierta de texto. Su licencia Apache-2.0 y su integración con `transformers` y `compressed-tensors` facilitan el despliegue en producción, aunque requiere GPUs con tensor cores FP4.
+La cuantización combina suavizado AWQ con redondeo GPTQ contra activaciones ya cuantizadas en NVFP4, aplicada a 400 proyecciones del decodificador. El modelo base es d3-ultra en la revisión `52ba9e7a`, y la licencia es Apache-2.0.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer híbrido con capas de atención lineal Gated DeltaNet y decodificador multimodal; runtime propio `d3q` sobre `transformers` |
-| Parametros totales | 26.090 millones (26,09B), incluidos 0,46B del codificador de visión |
-| Parametros activos | No aplica (no es MoE) |
-| Longitud de contexto | No disponible |
-| Tipos de cuantizacion | NVFP4 W4A4 (`nvfp4-pack-quantized` de compressed-tensors): pesos y activaciones FP4 (E2M1) en bloques de 16 con escalas E4M3 y escala global FP32 por tensor; derivada de AWQ smoothing + redondeo GPTQ. 400 proyecciones cuantizadas; `in_proj_a`/`in_proj_b` de Gated DeltaNet, torre de visión, embeddings y readout se mantienen en su precisión original |
-| Idiomas soportados | No disponible |
+| Arquitectura | Transformer multimodal con capas de atención lineal tipo Gated DeltaNet (según referencias a `in_proj_a`/`in_proj_b` en la model card); codificador de visión de 0,46B |
+| Parametros totales | 26.085.330.160 (26,09B) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | NVFP4 W4A4 (`nvfp4-pack-quantized` de compressed-tensors): pesos y activaciones FP4 (E2M1) en bloques de 16 con escalas E4M3 y escala global FP32 por tensor; 400 proyecciones cuantizadas |
+| Idiomas soportados | no disponible |
 | Licencia | Apache-2.0 |
-| Formato de pesos | safetensors (con pesos FP4 empaquetados), `compressed-tensors`, `custom_code`; requiere `transformers==5.17.0` |
+| Formato de pesos | safetensors (compressed-tensors), con código custom (`d3q.load`, `d3_runtime.py`) |
 
 ## Arquitectura y entrenamiento
 
-d3-ultra-NVFP4 es una cuantización del modelo base vllm-sr/d3-ultra (revisión `52ba9e7a`), no un modelo entrenado desde cero. La arquitectura subyacente combina un decodificador con capas de atención lineal Gated DeltaNet (con kernels opcionales de `flash-linear-attention`) y un codificador de visión que procesa imágenes y vídeos. El modelo se comporta como un "system one": lee la entrada una sola vez por petición y responde simultáneamente a todas las preguntas asociadas, devolviendo distribuciones de probabilidad en lugar de secuencias de tokens.
+El modelo es un transformer multimodal con capas de atención lineal (Gated DeltaNet) en el decodificador y una torre de visión separada de 0,46B de parámetros. El pipeline declarado es `zero-shot-classification` y la arquitectura interna se etiqueta como `qwen3_5` en los tags de Hugging Face. El modelo no genera texto libre: emite probabilidades por respuesta a preguntas tipadas (Choice, Yes/No, Score, Box, Track), leyendo la entrada una sola vez por petición y resolviendo todas las preguntas en esa misma pasada.
 
-La cuantización se aplica únicamente a las proyecciones del decodificador (400 proyecciones) mediante un pipeline de AWQ smoothing —que pliega escalas sensibles a la activación en las normas previas y en `up_proj`— seguido de redondeo GPTQ contra activaciones ya cuantizadas en NVFP4. La calibración usó 175 peticiones (unos 190.000 tokens) intercaladas y mayoritariamente provenientes de los datos de entrenamiento del propio d3-ultra: 80 peticiones de texto y JSON (de 1 a 32 preguntas, hasta 170 opciones), 30 imágenes fijas (2 con imágenes como opciones), 38 peticiones Box (6 con objetivos ausentes), 9 vídeos, 9 tracks y 9 preguntas Box sobre un instante de vídeo. Ninguna proviene de los conjuntos de test evaluados.
-
-No se dispone de información sobre el volumen total de tokens de entrenamiento del modelo base, la composición del dataset ni si se aplicaron fases de RLHF o DPO.
+La cuantización se aplica solo al decodificador: 400 proyecciones pasan a NVFP4 mediante suavizado AWQ (escalas conscientes de activación plegadas en las normas previas y en `up_proj`) seguido de redondeo GPTQ contra las activaciones ya cuantizadas. Quedan sin cuantizar las proyecciones `in_proj_a` e `in_proj_b` del Gated DeltaNet, la torre de visión, los embeddings y la cabeza de lectura, salvo donde se plegaron las escalas. La calibración usó las primeras 512 de las 832 peticiones de calibración de d3-ultra-INT4: 316 prompts de texto del primer shard de entrenamiento de `tasksource-jev-typed-decisions`, 153 peticiones Box y 43 de imágenes en opciones; sin peticiones de vídeo y sin imágenes de los splits de desarrollo y test. No se detallan en la información disponible los datos de entrenamiento originales de d3-ultra (número de tokens, composición, RLHF/DPO).
 
 ## Capacidades
 
-- Clasificación zero-shot y decisión tipada: elección entre opciones múltiples, sí/no, puntuación en escala, caja delimitadora y seguimiento de objetos.
-- Procesamiento multimodal de texto, JSON, imágenes y vídeos, con varias imágenes o vídeos por petición.
-- Imágenes dentro de preguntas y opciones (por ejemplo, comparar una foto con varias opciones gráficas mediante marcadores como `<building>` y `<a>`).
-- Detección de objetos y localización espacial mediante decisiones de tipo Box.
-- Seguimiento de objetos en vídeo (Track), con métricas AUC reportadas.
-- Respuesta a múltiples preguntas en una sola lectura de la entrada (hasta 32 preguntas y 170 opciones en los datos de calibración).
-- Salida de probabilidades calibradas por respuesta, apta para umbrales y enrutamiento.
-- Soporte de tool calling / function calling: no disponible en la información proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no disponible; el diseño es explícitamente de un solo paso ("system one").
-- Capacidades multilingües: no disponible.
-- Modo thinking, audio: no disponibles.
+- Clasificación zero-shot con probabilidad por respuesta: elección entre opciones, sí/no y puntuación en escala.
+- Detección de objetos y localización espacial mediante preguntas de tipo Box, con precisión medida a IoU 0,5.
+- Seguimiento de objetos en vídeo (Track), con métrica de éxito AUC.
+- Procesamiento multimodal de imágenes y vídeos, con varias imágenes por petición.
+- Imágenes dentro de las preguntas y de las opciones (por ejemplo, comparar una foto con varios grabados candidatos).
+- Entrada de texto libre o JSON estructurado.
+- Resolución de múltiples preguntas heterogéneas en una sola lectura de la entrada.
+- Modelo de decisión "system-one": respuesta directa sin cadena de razonamiento explícita.
+- No se documentan en la información disponible capacidades de generación de texto libre, tool calling ni agentes multi-paso.
 
 ## Casos de uso
 
-- Enrutamiento de tickets de soporte: el modelo recibe el texto del ticket como `state` y devuelve en una sola llamada la probabilidad de que corresponda a facturación o a soporte técnico, además de si es urgente. Es adecuado porque evita generar texto y ofrece directamente la distribución de probabilidad necesaria para un clasificador de producción.
-- Moderación y verificación de contenido: preguntas de tipo sí/no sobre textos o JSON permiten obtener una probabilidad de incumplimiento por ítem, con latencia de decenas de milisegundos por petición, lo que facilita aplicar umbrales y derivar casos dudosos a revisión humana.
-- Análisis documental con imágenes: procesar recibos, facturas o formularios escaneados y responder simultáneamente a varias preguntas de extracción y validación. Conviene tener en cuenta que la precisión de Box en recibos cae a 0,790 frente a 0,955 del modelo completo, por lo que para localización precisa en recibos es preferible d3-ultra-FP8.
-- Detección y localización de objetos en imágenes: dada una imagen y varias etiquetas, el modelo devuelve cajas delimitadoras con su probabilidad asociada en una sola pasada, útil en pipelines de etiquetado asistido o control de calidad visual.
-- Seguimiento de objetos en vídeo: con decisiones de tipo Track, se puede monitorizar la presencia y posición de objetos a lo largo de un clip; la métrica de éxito de seguimiento (AUC 0,760/0,769) se mantiene a menos de 1,5 puntos del modelo sin cuantizar.
-- Cuestionarios y evaluación visual: comparar una imagen de referencia con varias opciones gráficas (por ejemplo, identificar el grabado que representa el mismo edificio que una foto) usando marcadores de activo en las opciones.
-- Clasificación a gran escala con presupuesto de memoria ajustado: al ocupar 17,2 GB de pesos en lugar de 52,2 GB, permite mayor densidad de instancias por GPU en clústeres Blackwell y aproximadamente el doble de throughput por instancia.
+- Enrutado de tickets en atención al cliente: se pasa el texto del ticket como `state` y una pregunta Choice con las colas disponibles (facturación, soporte técnico) más una pregunta Yes/No de urgencia; el modelo devuelve probabilidades que permiten aplicar umbrales y derivar a revisión humana los casos ambiguos.
+- Moderación y verificación de contenido visual: preguntas Yes/No sobre imágenes (por ejemplo, presencia de un objeto o de una marca) con la probabilidad asociada como señal para el pipeline de moderación.
+- Anotación asistida de datasets: preguntas Box para preetiquetar objetos en imágenes y Track para secuencias de vídeo, con probabilidad por caja para priorizar la revisión manual.
+- Control de calidad en líneas de inspección: preguntas Box y Yes/No sobre imágenes de producto para detectar defectos o elementos ausentes, aprovechando la latencia reducida en GPU Blackwell para inspección en línea.
+- Búsqueda y recuperación multimodal: puntuaciones de relevancia (Score) entre una consulta y candidatos, incluidos candidatos con imagen, para reordenar resultados de un motor de búsqueda.
+- Evaluación de tareas visuales tipo examen: preguntas Choice cuyas opciones contienen imágenes (comparar una foto con varios grabados), útil en herramientas educativas o de evaluación de modelos.
+- Filtrado previo en pipelines de vídeo: Track para seguir un objeto a lo largo de un clip y decidir qué fragmentos requieren análisis más costoso con un modelo mayor.
 
 ## Benchmarks y rendimiento
 
-| Benchmark | d3-ultra-NVFP4 | d3-ultra (referencia) | Diferencia |
-|---|---|---|---|
-| Jev Decision Index 0.3 (suite pública) | 70,63 | 71,57 | −0,94 |
-| Suite pública de visión | 74,60 | 75,36 | −0,76 |
-| Box accuracy a IoU 0,5 | 0,844 | 0,872 | −0,028 |
-| Box accuracy en recibos | 0,790 | 0,955 | −0,165 |
-| Imágenes en preguntas y opciones | 0,947 | 0,952 | −0,005 |
-| Tracking success AUC | 0,760 / 0,769 | 0,775 / 0,783 | −0,015 / −0,014 |
-| Coincidencia con la respuesta top de d3-ultra (texto, 272.229 preguntas) | 96,7 % | — | — |
-| Coincidencia con la respuesta top de d3-ultra (visión, 12.210 preguntas) | 93,3 % | — | — |
-| Latencia mediana por pregunta de texto (RTX PRO 6000 Blackwell) | 32,5 ms | 63,4 ms | ~2× más rápido |
+| Benchmark | d3-ultra-NVFP4 | d3-ultra |
+|---|---|---|
+| Jev Decision Index 0.3 (suite pública) | 70,74 | 71,57 |
+| Suite pública de visión | 74,45 | 75,36 |
+| Box accuracy a IoU 0,5 | 0,854 | 0,872 |
+| Box en recibos | 0,870 | 0,955 |
+| Imágenes en preguntas y opciones | 0,949 | 0,952 |
+| Tracking success AUC | 0,761 / 0,768 | 0,775 / 0,783 |
+| Coincidencia con la respuesta top de d3-ultra (texto) | 97,0% de 272.229 preguntas | referencia |
+| Coincidencia con la respuesta top de d3-ultra (visión) | 93,5% de 12.210 preguntas | referencia |
+| Latencia mediana, una pregunta de texto, RTX PRO 6000 | 32,5 ms | 63,4 ms |
 
-Desglose por categoría del índice de texto: lenguaje, recuperación y herramientas quedan a menos de 0,3 puntos; artes −1,4; conocimiento −2,8 (59,5 frente a 62,3). No se han publicado resultados de benchmarks estándar tipo MMLU, HumanEval o GSM8K en la información disponible.
+Desglose del índice de texto: lenguaje, recuperación y herramientas dentro de 0,7 puntos; artes −1,3; conocimiento −2,6 (59,7 frente a 62,3). No se han publicado en la información disponible resultados de MMLU, HumanEval, GSM8K ni benchmarks generativos equivalentes.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: los pesos ocupan 17,2 GB; con activaciones y caché de trabajo conviene prever un margen adicional, aunque no se especifica una cifra oficial.
-- GPU recomendadas: NVIDIA Blackwell con tensor cores FP4. La medición oficial se realizó en una NVIDIA RTX PRO 6000 Blackwell. No es compatible con generaciones anteriores (Ampere, Hopper) al requerir soporte FP4 nativo.
-- Cabe en GPU de consumo: no disponible; no se confirma compatibilidad con GeForce RTX 50xx en la información proporcionada.
-- Opciones de despliegue: el modelo se carga mediante el runtime propio `d3q` (`load_d3`) sobre `transformers==5.17.0`, `compressed-tensors>=0.19` y `torch>=2.11`; opcionalmente `flash-linear-attention` para kernels rápidos de atención lineal. No se documenta soporte de vLLM, llama.cpp, Ollama ni TGI.
-- Latencia y throughput: 32,5 ms de mediana por pregunta de texto individual en una RTX PRO 6000 Blackwell, frente a 63,4 ms del modelo sin cuantizar.
+- Requiere FP4 tensor cores: NVIDIA Blackwell. Medido en una NVIDIA RTX PRO 6000 Blackwell.
+- Pesos en disco: 17,2 GB (frente a 52,2 GB de d3-ultra); la VRAM necesaria para inferencia no se detalla en la información disponible, aunque debe cubrir pesos, activaciones y el runtime.
+- GPU recomendadas: NVIDIA RTX PRO 6000 Blackwell (única configuración medida); otras GPU Blackwell compatibles con NVFP4 no están verificadas en la información disponible.
+- No es ejecutable en GPU consumer sin soporte FP4 nativo (por ejemplo, generaciones anteriores a Blackwell); no se documenta compatibilidad con llama.cpp, Ollama ni otros runtimes fuera del runtime propio.
+- Despliegue mediante el runtime del autor: `load_d3(path, device="cuda:0")` del módulo `d3q.load`, con transformers 5.17.0, compressed-tensors ≥0.19, torch ≥2.11 y, opcionalmente, flash-linear-attention para kernels rápidos de atención lineal.
+- Latencia medida: 32,5 ms de mediana por pregunta de texto en una RTX PRO 6000. El throughput agregado no está disponible.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Cuantización | Pesos en disco | Licencia | Índice de decisión | Visión |
+| Modelo | Parámetros | Pesos en disco | Contexto | Índice de decisión | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| d3-ultra-NVFP4 | 26,09B | NVFP4 W4A4 | 17,2 GB | Apache-2.0 | 70,63 | 74,60 |
-| d3-ultra | 26,09B | Sin cuantizar | 52,2 GB | Apache-2.0 | 71,57 | 75,36 |
-| d3-ultra-FP8 | 26,09B | FP8 | No disponible | Apache-2.0 | No disponible | No disponible |
+| d3-ultra-NVFP4 | 26,09B | 17,2 GB | no disponible | 70,74 (texto) / 74,45 (visión) | Apache-2.0 | Hugging Face, runtime propio |
+| d3-ultra | 26,09B | 52,2 GB | no disponible | 71,57 (texto) / 75,36 (visión) | Apache-2.0 (según modelo base) | Hugging Face |
+| d3-ultra-FP8 | 26,09B | no disponible | no disponible | no disponible | Apache-2.0 (según modelo base) | Hugging Face |
+| d3-ultra-INT4 | 26,09B | no disponible | no disponible | no disponible | Apache-2.0 (según modelo base) | Hugging Face |
 
-No se dispone de información sobre modelos de decisión multimodales comparables de otros desarrolladores en la documentación proporcionada.
+No se dispone de datos para comparar con modelos de decisión de otros autores.
 
 ## Limitaciones y advertencias
 
-- Pérdida de precisión en localización de objetos: Box accuracy cae 2,8 puntos globalmente y de forma acusada en recibos (0,790 frente a 0,955). Para ese caso de uso concreto, el autor recomienda d3-ultra-FP8.
-- Degradación en conocimiento: −2,8 puntos en la categoría de conocimiento del índice de texto (59,5 frente a 62,3).
-- Dependencia de hardware: requiere tensor cores FP4 (Blackwell); no funciona en GPUs Ampere ni Hopper.
-- No es un modelo generativo: no produce texto libre ni razonamiento multi-paso; solo devuelve probabilidades sobre preguntas predefinidas. No apto para agentes conversacionales ni generación de código.
-- Idiomas soportados no documentados: no se puede garantizar cobertura multilingüe más allá de lo observado en las evaluaciones.
-- Longitud de contexto no documentada: limita la planificación de cargas con entradas largas.
-- Riesgo de alucinación: al emitir probabilidades, un umbral mal calibrado puede producir decisiones erróneas con alta confianza; se recomienda validar la calibración sobre datos propios.
+- Pérdida de precisión respecto al modelo original: −1,8 puntos en Box a IoU 0,5, concentrada en recibos (0,870 frente a 0,955), y −2,6 puntos en conocimiento dentro del índice de texto. El autor recomienda d3-ultra-FP8 si esos casos son críticos.
+- Dependencia de hardware: solo funciona en GPU NVIDIA Blackwell con soporte FP4; no hay alternativa documentada para otras GPU.
+- Runtime no estándar: requiere el código propio del modelo (`d3q.load`, `d3_runtime.py`) y versiones concretas de transformers, torch y compressed-tensors; no se documenta integración con vLLM, TGI ni llama.cpp pese al nombre del autor.
+- Modelo de decisión, no generativo: no produce texto libre ni razonamiento encadenado; no apto para tareas de generación, agentes o tool calling.
+- Idiomas soportados no documentados; el rendimiento fuera del inglés no está verificado.
+- Longitud de contexto no documentada; no se puede planificar su uso en entradas largas sin medirla.
+- Calibración sin peticiones de vídeo: el comportamiento en tareas de vídeo puede desviarse más de lo medido en otras modalidades.
+- Riesgo de calibración deficiente de probabilidades: al ser un modelo que emite probabilidades, conviene validar los umbrales de decisión en el dominio de producción.
 - Sesgos: no se documentan análisis de sesgo en la información disponible.
-- Licencia Apache-2.0: permite uso comercial sin restricciones adicionales conocidas, pero conviene verificar la licencia del modelo base d3-ultra y de los pesos originales.
-- Runtime no estándar: la carga requiere código propio (`d3q`) y versiones muy específicas de `transformers` (5.17.0) y `torch` (>=2.11), lo que puede complicar la integración en stacks existentes.
+- Licencia Apache-2.0 permite uso comercial, pero las dependencias (compressed-tensors, transformers, flash-linear-attention) tienen sus propias licencias que deben verificarse.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/vllm-sr/d3-ultra-NVFP4
 - Modelo base: https://huggingface.co/vllm-sr/d3-ultra
 - Variante FP8: https://huggingface.co/vllm-sr/d3-ultra-FP8
-- Repositorio de compressed-tensors: no disponible en la información proporcionada
-- Paper, blog o demo oficiales: no disponibles en la información proporcionada
+- Variante INT4: https://huggingface.co/vllm-sr/d3-ultra-INT4
+- Dataset de calibración: https://huggingface.co/datasets/tasksource/tasksource-jev-typed-decisions

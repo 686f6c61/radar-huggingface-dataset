@@ -2,104 +2,99 @@
 
 ## Resumen
 
-Caphlon-Model es una construcción ligera en formato GGUF del modelo Qwen 3.8 27B, publicada por el usuario ssuasd en Hugging Face el 25 de octubre de 2026. No se trata de una destilación ni de un modelo estudiante: se conserva la topología completa de 27B del modelo base, pero se reduce drásticamente la huella en disco y memoria eliminando redundancia de representación mediante dos técnicas: reducción de la tabla de merges del vocabulario a un objetivo de 100k tokens y poda de capas alineada con los intervalos híbridos de atención, todo ello sobre una cuantización base Unsloth Dynamic IQ2_S.
+Caphlon-Model es una familia de builds GGUF ultraligeros derivados de Qwen 3.8 27B, publicada por el usuario ssuasd en Hugging Face. El objetivo declarado es ofrecer las versiones ejecutables mas pequenas del modelo base sin recurrir a destilacion hacia una red estudiante menor: se mantiene la topologia hibrida de 64 capas (Gated-Delta-Net combinada con atencion completa) y se comprime el artefacto mediante cuantizacion ternaria en super-bloques, poda de vocabulario BPE y reduccion calibrada del ancho de las capas FFN.
 
-El resultado es un archivo GGUF de 6,87 GiB que promete calidad de razonamiento cercana al modelo de 27B original con un tamaño apto para portátiles. La arquitectura híbrida del base (mayoría de capas gated-delta-net de estado recurrente de tamaño fijo, minoría de capas de atención completa) permite que la caché KV solo exista en las capas de atención completa, manteniendo el consumo de memoria bajo y escalando el contexto de forma barata.
+La familia consta de dos builds. Caphlon-2 es el buque insignia: un fichero de 4,52 GiB en formato PTQ1_SB (1,65 bits por peso) que conserva las 64 capas y 23.298.072.064 parametros activos, pensado para ejecutarse en GPU de 6 GB de VRAM o portatiles con 8 GB de RAM. Caphlon-1 es el build heredado de 6,87 GiB en IQ2_S, compatible con llama.cpp estandar, con poda de 4 capas y vocabulario reducido a 100.000 tokens.
 
-Es relevante para usuarios que ejecutan modelos localmente en hardware modesto: cabe en 8 GB de VRAM con contexto de 8K, o incluso solo en CPU con 8 GB de RAM vía mmap, y además incorpora decodificación especulativa por n-gramas modificada que multiplica el throughput en tareas de edición de ficheros por 2,34×.
+El modelo resulta relevante para desarrolladores que necesitan razonamiento de nivel 27B en hardware de consumo muy limitado, a costa de un formato de cuantizacion no estandar que requiere un fork parcheado de llama.cpp para el build PTQ1_SB.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Hibrida de 60 capas: gated-delta-net (mayoria) + atencion completa (minoria) |
-| Parametros totales | 23.862.632.800 (dato real de safetensors) |
-| Parametros activos | no disponible |
-| Longitud de contexto | Hasta 32K probado |
-| Tipos de cuantizacion | IQ2_S (Unsloth Dynamic) |
-| Idiomas soportados | Ingles |
-| Licencia | Apache-2.0 (heredada de Qwen 3.8 27B) |
-| Formato de pesos | GGUF (llama.cpp), compatible con endpoints |
+| Arquitectura | Transformer hibrido: Gated-Delta-Net + atencion completa (64 capas en Caphlon-2, 60 en Caphlon-1) |
+| Parametros totales | 23.298.072.064 (23,30B) en Caphlon-2; aproximadamente 24,8B en Caphlon-1 |
+| Parametros activos | No aplica (no es MoE); 23,30B activos en Caphlon-2 |
+| Longitud de contexto | No disponible |
+| Tipos de cuantizacion | PTQ1_SB (GGML tipo 144, 1,65 bpw, ternaria en super-bloques de 1.024) e IQ2_S (2,31 bpw) |
+| Idiomas soportados | Ingles y turco (segun model card); el tag de Hugging Face solo lista ingles |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (851 tensores en Caphlon-2) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base, Qwen 3.8 27B, emplea una arquitectura hibrida de 60 capas en la que la mayoria de capas usan gated-delta-net (una red recurrente con estado de tamano fijo) y una minoria usa atencion completa tradicional. Esta combinacion permite que la memoria de contexto crezca de forma barata: la caché KV solo se almacena en las capas de atencion completa, mientras que las capas recurrentes mantienen un estado de tamano constante. El modelo base incluye modo de razonamiento interno (thinking), que puede desactivarse mediante el chat template (`enable_thinking: false`).
+Caphlon-2 parte de Qwen 3.8 27B y del intermedio Ternary-Bonsai-2-27B (PTQ1_0, 5,54 GiB) de PrismML y UkisAI. Sobre esa base se aplican cuatro transformaciones: cirugia del vocabulario BPE con poda de la tabla de merges de 111.104 a 84.352 tokens (83.982 merges), remapeando los tokens de control y de pensamiento; poda adaptativa del ancho FFN calibrada por regresion ridge de influencia de bloque, reduciendo la dimension intermedia de 17.408 a 15.456 alineada a fronteras de super-bloque de 256 elementos; cuantizacion ternaria PTQ1_SB con super-bloque Hadamard H1024 de 1.024 elementos (205 B de trits empaquetados en base 3, 2 B de super-escala FP16 y 4 B de sub-escalas de 4 bits empaquetadas 8x128); y una intervencion en tiempo de inferencia (ITI) mediante un vector de calibracion de 1,2 MiB.
 
-Caphlon-Model no reentrena ni destila: aplica tres transformaciones sobre una cuantizacion Unsloth Dynamic IQ2_S del base. Primero, reduce la tabla de merges del vocabulario a un objetivo de 100k tokens mediante seleccion que preserva el cierre (ahorro de 649 MiB). Segundo, elimina las capas 12 a 15 (4 capas alineadas con el intervalo hibrido, ahorro de 302 MiB). Tercero, mantiene los pesos en IQ2_S sin cuantizacion adicional para no degradar la calidad. No hay informacion sobre datos de entrenamiento propios, RLHF ni DPO, ya que se trata de una derivacion directa del modelo base.
+Caphlon-1 parte de Unsloth Dynamic IQ2_S sobre Qwen 3.8 27B, con reduccion de vocabulario a 100.000 tokens y poda de 4 capas del intervalo hibrido (60 capas resultantes). No se dispone de informacion sobre el volumen de tokens de entrenamiento ni sobre si hubo RLHF o DPO; el proceso descrito es exclusivamente de post-entrenamiento por cuantizacion y poda, sin reentrenamiento de pesos.
 
 ## Capacidades
 
-- Generacion de texto en ingles con calidad de razonamiento cercana al modelo base de 27B, segun las metricas de retencion publicadas (92,9% en MMLU, 96,7% en HumanEval).
-- Generacion de codigo: resuelve 29 de 30 problemas de HumanEval en evaluacion pass@1 con thinking desactivado.
-- Modo de razonamiento interno (thinking) heredado de Qwen 3.8, activable o desactivable via chat template; desactivado por defecto en las evaluaciones para ahorrar presupuesto de tokens.
-- Decodificacion especulativa mediante n-gramas modificados (`ngram-mod`), que acelera el throughput en tareas de edicion de ficheros hasta 29,7 tok/s frente a 12,7 tok/s del base.
-- Contexto de hasta 32K tokens probado, con coste de memoria contenido gracias a la arquitectura hibrida.
-- Compatibilidad con el ecosistema llama.cpp, incluyendo servidor OpenAI-compatible (`llama-server`) y plantillas de chat Jinja.
-
-No hay informacion disponible sobre tool calling, function calling, capacidades de vision, audio ni soporte de agentes.
+- Generacion de texto conversacional y razonamiento de multiples pasos, con modo de pensamiento (tokens `<think>` y `</think>` remapeados en el vocabulario).
+- Razonamiento cientifico y de nivel avanzado, medido en GPQA-Diamond.
+- Generacion de codigo, con resultados reportados en HumanEval pass@1 para Caphlon-1.
+- Abstención calibrada ante preguntas sin respuesta (recall de abstención del 100% en el benchmark Halu-270 con el vector ITI).
+- Capacidades multilingues limitadas a ingles y turco segun la model card.
+- Compatibilidad con endpoints (tag `endpoints_compatible`) y despliegue en llama.cpp y Ollama.
+- Soporte de tool calling y function calling: no disponible en la informacion proporcionada.
+- Capacidades de vision o audio: no disponibles.
 
 ## Casos de uso
 
-- Ejecucion local en portatiles con GPU de gama media: con 8 GB de VRAM se puede servir el modelo con contexto de 8K y offload completo a GPU, ideal para asistentes privados sin enviar datos a la nube.
-- Inferencia solo en CPU en maquinas modestas: con 8 GB de RAM y mmap el modelo es utilizable sin GPU, adecuado para entornos de desarrollo restringidos o servidores pequeños.
-- Edicion y refactorizacion de codigo en local: la decodificacion especulativa `ngram-mod` esta optimizada para tareas de edicion de ficheros, alcanzando 29,7 tok/s, lo que la hace practica para herramientas de edicion asistida por LLM.
-- Chat conversacional local: mediante `llama-server` con plantilla Jinja se obtiene un endpoint compatible con OpenAI para integrar en clientes de chat como Open WebUI o similares.
-- Procesamiento de documentos de longitud media: el contexto de 32K (con 12 GB de VRAM recomendados) permite resumir o analizar documentos largos en local.
-- Experimentacion con poda de capas y reduccion de vocabulario: al ser un proyecto documentado con metricas de degradacion publicadas (perplejidad, MMLU, HumanEval), sirve como referencia reproducible para tecnicas de compresion de modelos.
-- Despliegue en Apple Silicon: con 16 GB de memoria unificada como minimo y 24 GB o mas recomendados, funciona en MacBooks recientes.
+- Razonamiento cientifico en portatiles: el build Caphlon-2 con 4,52 GiB permite ejecutar un modelo de 23,30B parametros en un Mac con Apple Silicon de 8 GB de RAM unificada, adecuado para consultas de fisica, quimica o biologia con moderacion de alucinacion gracias al vector ITI.
+- Asistente local con abstención: en dominios donde una respuesta incorrecta es costosa (soporte tecnico interno, consultas normativas), el recall de abstención del 100% en preguntas sin respuesta permite desviar a un humano en lugar de inventar.
+- Generacion de codigo en entornos con GPU de 6 GB: Caphlon-2 cabe en una GTX 1660 o RTX 3050 de 6 GB, permitiendo autocompletado y generacion de funciones en un IDE local sin enviar codigo a la nube.
+- Despliegue en dispositivos edge con llama.cpp: el build Caphlon-1 en IQ2_S funciona con llama.cpp estandar sin parches, lo que simplifica la integracion en contenedores y pipelines existentes.
+- Prototipado rapido de agentes conversacionales: la ventana de contexto no esta documentada, por lo que el uso recomendado es en conversaciones de turnos cortos y tareas de un solo paso.
+- Evaluacion comparativa de tecnicas de cuantizacion: investigadores pueden usar ambos builds para medir la degradacion de GPQA, HumanEval y perplejidad frente al BF16 base, con cifras de retencion publicadas (89,7% en GPQA, 92,9% en MMLU para Caphlon-1).
 
 ## Benchmarks y rendimiento
 
-Datos medidos el 25 de octubre de 2026 en una Tesla T4 (16 GB) con llama.cpp, temperatura 0 y thinking desactivado, comparando con el quant base (Unsloth Dynamic IQ2_S sin poda ni reduccion de vocabulario):
+| Modelo / build | Formato | Tamano | GPQA-Diamond (60) | Mini-40 Truth & Abstain | Halu-270 | Perplejidad held-out (4x512 EN/TR) |
+|---|---|---|---|---|---|---|
+| Caphlon-2 | PTQ1_SB 1,65 bpw | 4,52 GiB | 48/60 (80,0%) | 32/40 (80,0%); abstención 100%; falso rechazo 2,86% | 232/270 (85,93%); Brier 0,1147 | 7,8551 / 6,8792 |
+| Caphlon-2 + ITI | PTQ1_SB 1,65 bpw | 4,52 GiB | 48/60 (80,0%) | 34/40 (85,0%); abstención 100% | 236/270 (87,41%); Brier no disponible en el extracto | No disponible |
+| Caphlon-1 | IQ2_S 2,31 bpw | 6,87 GiB | No disponible | No disponible | No disponible | No disponible |
 
-| Test | Caphlon-Model | Base quant | Resultado |
-|---|---|---|---|
-| Perplejidad en ingles (`wiki.test.raw`, 512 ctx x 40 chunks) | 6,6088 | 6,3638 | +3,85% (degradacion) |
-| HumanEval, 30 problemas, pass@1 | 29/30 (96,7%) | 30/30 (100%) | −1 problema |
-| MMLU, subconjunto de 502 preguntas | 344/502 | 370/502 | 92,9% retenido |
-| Throughput edicion de ficheros (`--spec-type ngram-mod`) | 29,7 tok/s | 12,7 tok/s | 2,34x |
-| Throughput prosa libre | 12,4 tok/s | 12,7 tok/s | practicamente igual |
-
-No se han publicado comparaciones con otros modelos de la categoria (solo con su quant base inmediato).
+Datos adicionales reportados: retencion del 89,7% en GPQA frente a BF16 (89,2% de referencia), 96,7% (29/30) en HumanEval pass@1 y 92,9% de retencion en MMLU para Caphlon-1. Las mediciones se realizaron en NVIDIA A100-SXM4-80GB, dos Tesla T4 de 16 GB y Apple M2 con Metal.
 
 ## Requisitos de hardware
 
-- VRAM estimada: 8 GB minimo para offload completo a GPU con contexto de 8K; 12 GB recomendados para contexto de 32K. El fichero pesa 6,87 GiB en disco.
-- GPU recomendadas: probado en Tesla T4 (16 GB). Cabe en GPUs de consumo con 8-12 GB de VRAM, como RTX 3060 12GB, RTX 4070 o RTX 4090 (esta ultima con amplio margen).
-- CPUs: ejecutable solo en CPU con 8 GB de RAM (mmap) como minimo; 16 GB recomendados.
-- Apple Silicon: 16 GB de memoria unificada como minimo, 24 GB o mas recomendados.
-- Despliegue: llama.cpp (formato nativo GGUF), incluyendo `llama-server` con flash-attention, decodificacion especulativa `ngram-mod` y plantilla Jinja. Ollama y otros runtimes GGUF deberian ser compatibles en principio, aunque no hay confirmacion del autor. No hay informacion sobre vLLM o TGI (GGUF no es su formato nativo).
-- Throughput medido: 29,7 tok/s en edicion de ficheros con especulacion ngram-mod y 12,4 tok/s en prosa libre, ambos en Tesla T4.
-- Opcional: cuantizar la caché KV con `--cache-type-k q8_0 --cache-type-v q4_0` ahorra 152 MB cuando el contexto es el limite, aunque la salida greedy deja de ser identica byte a byte.
+- VRAM para Caphlon-2: aproximadamente 4,52 GiB de pesos mas overhead de contexto y cache KV; el autor indica que funciona en GPU de 6 GB de VRAM.
+- RAM para Caphlon-2: 8 GB en portatiles Apple Silicon M1/M2/M3/M4 o equipos x86 con AVX2.
+- VRAM para Caphlon-1: aproximadamente 6,87 GiB de pesos; requiere GPU de 8 GB o mas para contexto adicional.
+- GPU recomendadas: cualquier GPU consumer con 6-8 GB (RTX 3050, GTX 1660, RTX 4060); para throughput alto, A100-SXM4-80GB o Tesla T4.
+- Cabe en GPU consumer: si, en modelos de 6 GB o mas para Caphlon-2.
+- Despliegue: Caphlon-2 requiere el fork PrismML-Eng/llama.cpp (commit 6447906) con el parche `prismll_ptq1_sb_cuda_metal.patch`; Caphlon-1 funciona con llama.cpp estandar y Ollama.
+- Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-| | Caphlon-Model | Qwen 3.8 27B (base) | Unsloth Dynamic IQ2_S (quant base) |
-|---|---|---|---|
-| Parametros | 23,86B (tras poda) | 27B | 27B |
-| Tamano | 6,87 GiB (GGUF IQ2_S) | no disponible | no disponible |
-| Contexto | hasta 32K probado | no disponible | no disponible |
-| Perplejidad (wiki.test.raw) | 6,6088 | no disponible | 6,3638 |
-| HumanEval pass@1 (30 problemas) | 96,7% | no disponible | 100% |
-| MMLU (502 preguntas) | 344/502 | no disponible | 370/502 |
-| Licencia | Apache-2.0 | Apache-2.0 | no disponible |
-
-No hay datos publicados comparando con otros modelos ligeros de la categoria de 7-27B cuantizados en IQ2_S (por ejemplo, otros builds de llama.cpp de tamano similar), por lo que la comparativa se limita a su quant base inmediato.
+| Modelo | Parametros | Contexto | Formato / tamano | Licencia | Notas |
+|---|---|---|---|---|---|
+| Caphlon-2 | 23,30B | No disponible | PTQ1_SB, 4,52 GiB | Apache 2.0 | Requiere fork de llama.cpp |
+| Caphlon-1 | ~24,8B | No disponible | IQ2_S, 6,87 GiB | Apache 2.0 | llama.cpp estandar |
+| Ternary-Bonsai-2-27B (PrismML) | 27B (nominal) | No disponible | PTQ1_0, 5,54 GiB | No disponible | Intermedio upstream de Caphlon-2 |
+| Qwen 3.8 27B (BF16) | 27B (nominal) | No disponible | BF16 | No disponible | Referencia de calidad; GPQA 89,2% |
 
 ## Limitaciones y advertencias
 
-- Soporte de idiomas limitado al ingles segun la model card; no hay garantia de rendimiento en castellano ni otros idiomas, y la reduccion del vocabulario a 100k merges puede degradar especialmente los idiomas no ingleses.
-- La perplejidad empeora un 3,85% respecto al quant base, y MMLU retiene un 92,9%: la poda y reduccion de vocabulario tienen un coste medible de calidad, aunque modesto.
-- La evaluacion de HumanEval y MMLU se hizo sobre subconjuntos pequeños (30 y 502 preguntas respectivamente), por lo que los resultados tienen margen de error considerable y no son comparables directamente con benchmarks estandar completos.
-- Al ser una derivacion no oficial con poda de capas, pueden existir modos de fallo no cubiertos por las metricas publicadas (regresiones en tareas largas, razonamiento multi-paso o thinking mode).
-- El modo thinking consume presupuesto de tokens si no se desactiva explicitamente via `chat_template_kwargs: {"enable_thinking": false}`.
-- La cuantizacion IQ2_S es agresiva (2-2,5 bits efectivos), lo que incrementa el riesgo de alucinaciones y errores factuales frente a cuantizaciones mas altas; no hay datos publicados sobre tasas de alucinacion.
-- Licencia: los pesos derivan de Qwen 3.8 27B bajo Apache-2.0, que permite uso comercial conservando los avisos. "Caphlon" es una marca de proyecto: se puede redistribuir el modelo, pero no presentarlo como oficial o respaldado por el proyecto.
-- Proyecto comunitario con 266 descargas y 2 likes en el momento de la ficha: traccion y auditoria comunitaria muy limitadas; verificar el SHA-256 publicado (`8487b4e4...3d63bc0`) antes de usar en produccion.
+- La cuantizacion ternaria a 1,65 bpw introduce degradacion medible: retencion del 89,7% en GPQA y del 92,9% en MMLU, con perplejidad held-out de 7,86 en ingles.
+- El build Caphlon-2 no funciona con llama.cpp estandar: exige un fork parcheado y el tipo GGML 144, lo que limita su integracion en toolchains existentes.
+- La poda de vocabulario y de capas altera el tokenizador respecto al modelo base; prompts y plantillas calibradas para Qwen 3.8 pueden comportarse de forma distinta.
+- Soporte idiomatico limitado a ingles y turco segun la model card; el rendimiento en castellano no esta documentado.
+- La longitud de contexto no se especifica, por lo que no debe asumirse la ventana nativa de Qwen 3.8 27B.
+- Riesgo de alucinacion residual: la tasa reportada es del 10,37-11,85% en Halu-270 incluso con ITI, y el falso rechazo se situa en el 2,48-2,86%.
+- No hay informacion publica sobre sesgos demograficos o culturales especificos de estos builds.
+- La licencia Apache 2.0 permite uso comercial, pero el cumplimiento debe verificarse tambien respecto a los modelos base e intermedios de la cadena.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/ssuasd/Caphlon-Model
-- GitHub: https://github.com/demiralpdev/Caphlon-Model
-- Pagina del proyecto: https://demiralpdev.github.io/Caphlon-Model/
-- Modelo base: https://huggingface.co/Qwen (Qwen/Qwen3.8-27B)
+- Modelo en Hugging Face: https://huggingface.co/ssuasd/Caphlon-Model
+- Demostracion interactiva: https://caphlon.dev
+- Modelo base Qwen 3.8 27B: https://huggingface.co/Qwen
+- Intermedio Ternary-Bonsai-2-27B: https://huggingface.co/prism-ml/Ternary-Bonsai-2-27B-gguf
+- Intermedio Swift-Bonsai-2-GGUF: https://huggingface.co/ukisai/Swift-Bonsai-2-GGUF
+- Fork de llama.cpp requerido: https://github.com/PrismML-Eng/llama.cpp/tree/6447906bf96c1a023980d3453fb59daa6af3bb23
+- Metadatos PTQ1_SB: metadata/Caphlon-2-27B-PTQ1_SB.meta.json (en el repositorio)
+- Vector ITI: metadata/iti_mean.gguf (en el repositorio)
+- Parche CUDA/Metal: patches/prismll_ptq1_sb_cuda_metal.patch (en el repositorio)

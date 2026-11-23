@@ -2,102 +2,92 @@
 
 ## Resumen
 
-ThinCtx-Qwen3.5-4B-GGUF es una publicacion de cuantizaciones estáticas en formato GGUF generada por mradermacher a partir del modelo base thinletter/ThinCtx-Qwen3.5-4B. El repositorio no aporta model card descriptiva: unicamente incluye metadatos internos del proceso de conversion (quantize_version 2, convert_type hf, output_tensor_quantised 1) y la lista de cuantizaciones producidas. No se documentan arquitectura, licencia, idiomas ni pipeline de uso.
+ThinCtx-Qwen3.5-4B-GGUF es la versión cuantizada en formato GGUF del modelo moravianai/ThinCtx-Qwen3.5-4B, un modelo de lenguaje de aproximadamente 4.200 millones de parámetros derivado de la familia Qwen3.5 y especializado en contexto largo (long-context). La cuantización la ha realizado mradermacher, un autor conocido en el ecosistema por publicar conversiones GGUF de modelos populares para su uso con llama.cpp y herramientas compatibles. Este repositorio concreto ofrece 12 variantes de cuantización estática, desde Q2_K (2,0 GB) hasta f16 (8,5 GB), lo que permite desplegar el modelo en hardware muy diverso, incluidos equipos de consumo.
 
-El nombre del modelo base sugiere dos cosas que no se pueden confirmar con la informacion disponible: por un lado, una base de la familia Qwen 3.5 con aproximadamente 4000 millones de parametros; por otro, el prefijo "ThinCtx" apunta a una variante de contexto reducido o "adelgazado", presumiblemente un ajuste o recorte de la ventana de contexto respecto al modelo original. Ninguna de las dos hipotesis viene respaldada por documentacion en los repositorios consultados.
+El modelo base incorpora la etiqueta "thinctx" y "long-context", lo que indica que su entrenamiento o ajuste está orientado a manejar ventanas de contexto extensas con un coste computacional reducido. Está etiquetado como multilingüe, con soporte declarado de inglés, checo y alemán, lo que sugiere un sesgo hacia lenguas centroeuropeas además del inglés. Su licencia es PolyForm Small Business 1.0.0, una licencia de código disponible que permite uso gratuito a pequeñas empresas, uso personal, investigación no comercial y evaluación, pero que exige licencia comercial para organizaciones grandes en producción.
 
-La relevancia actual de esta publicacion es practica y limitada: se trata de artefactos GGUF listos para inferencia en CPU o GPU de gama consumer mediante llama.cpp y derivados, con 12 niveles de cuantizacion que cubren desde f16 hasta Q2_K. Para un evaluador, el interes esta en la disponibilidad de formatos ligeros de un modelo de 4B, no en caracteristicas tecnicas documentadas, que en este momento no existen.
+La relevancia de esta ficha radica en que combina tres factores poco frecuentes en un mismo paquete: un tamaño de 4B que cabe en GPUs de consumo, una orientación explícita a contexto largo y una licencia con gating comercial. El repositorio acumula 454 descargas y un tamaño total de 38,9 GB, coherente con la suma de todas las cuantizaciones publicadas.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (el nombre sugiere transformer denso de la familia Qwen 3.5, sin confirmar) |
-| Parametros totales | no disponible (el nombre indica 4B, sin confirmar en documentacion) |
-| Parametros activos | no disponible (no se especifica si es MoE; por nomenclatura parece denso) |
-| Longitud de contexto | no disponible (el prefijo "ThinCtx" sugiere contexto reducido, sin cifra publicada) |
-| Tipos de cuantizacion | x-f16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q4_K_M, Q4_K_S, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K, IQ4_XS |
-| Idiomas soportados | no disponible |
-| Licencia | no disponible |
-| Formato de pesos | GGUF (cuantizaciones estáticas); el modelo base se distribuye presumiblemente en safetensors, no confirmado |
+| Arquitectura | Transformer (derivada de Qwen3.5); detalles específicos no disponibles |
+| Parametros totales | 4.205.751.296 (aprox. 4,2 B) |
+| Parametros activos | No aplica (no es MoE, según la información disponible) |
+| Longitud de contexto | No disponible (etiquetado como "long-context") |
+| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, f16 |
+| Idiomas soportados | Multilingüe; declarados: en, cs, de |
+| Licencia | PolyForm Small Business 1.0.0 (license: other) |
+| Formato de pesos | GGUF (cuantizaciones estáticas); pesos originales en safetensors en el modelo base |
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura en ninguno de los dos repositorios. El repositorio de mradermacher solo declara que se trata de cuantizaciones estaticas ("static quants") del modelo thinletter/ThinCtx-Qwen3.5-4B, con convert_type hf, lo que indica que la conversion partio de pesos en formato Hugging Face. Los metadatos quantize_version 2 y output_tensor_quantised 1 corresponden al pipeline de cuantizacion de llama.cpp, no a decisiones de arquitectura del modelo.
+No se dispone de información detallada sobre la arquitectura interna del modelo base en la documentación proporcionada. Por la nomenclatura (Qwen3.5) y el tamaño (4,2 B de parámetros), se trata de un transformer decoder-only de la familia Qwen, pero no se especifican número de capas, dimensión oculta, cabezas de atención ni mecanismos de atención concretos (atención lineal, sliding window, etc.). La etiqueta "ThinCtx" sugiere una optimización para contexto largo, posiblemente mediante técnicas de compresión o gestión eficiente del KV cache, pero no se detalla el método.
 
-Tampoco hay datos sobre volumen de entrenamiento, composicion del dataset, uso de RLHF o DPO, ni sobre innovaciones tecnicas como decodificacion especulativa o atencion lineal. Cualquier afirmacion al respecto seria especulacion. El unico dato tecnico verificable es el conjunto de cuantizaciones generadas y que estas son estaticas, es decir, calculadas en el momento de la publicacion y no en tiempo de ejecucion.
+Tampoco se documentan el número de tokens de entrenamiento, la composición del dataset, ni si hubo fases de RLHF, DPO o ajuste por instrucciones. La model card del repositorio cuantizado es una plantilla estándar de mradermacher que remite al modelo base para los detalles, y no incluye información sobre el proceso de entrenamiento. Cualquier afirmación sobre innovaciones técnicas (decodificación especulativa, atención lineal, etc.) sería especulativa y no se incluye aquí.
 
 ## Capacidades
 
-- Generacion de texto: no confirmada explicitamente, aunque es la funcion esperada de un modelo de lenguaje de esta familia.
-- Razonamiento, codigo y matematicas: no disponible.
-- Tool calling o function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingues: no disponible (no se declara lista de idiomas).
-- Capacidades especiales (modo thinking, vision, audio): no disponible.
-- Modo de inferencia: al ser un GGUF, la compatibilidad depende del runtime (llama.cpp y derivados) y no del modelo en si.
+- Generación de texto conversacional: el modelo está etiquetado como "conversational" y orientado a diálogo multi-turno.
+- Manejo de contexto largo: la etiqueta "long-context" y el nombre "ThinCtx" indican capacidad para procesar entradas extensas, aunque la longitud exacta no está disponible.
+- Multilingüismo: soporte declarado de inglés, checo y alemán, además de la etiqueta genérica "multilingual".
+- Razonamiento y generación de código: no confirmado explícitamente en la documentación disponible; al derivar de Qwen3.5 es plausible, pero no se afirma en la información proporcionada.
+- Tool calling / function calling: no disponible en la información proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
+- Capacidades especiales (thinking mode, visión, audio): no disponible en la información proporcionada.
 
 ## Casos de uso
 
-Ninguno de los casos siguientes esta respaldado por documentacion de capacidades del modelo; se plantean como escenarios plausibles para un modelo denso de ~4B en GGUF y deben validarse empiricamente antes de llevarlos a produccion.
-
-- Inferencia local en portatil o equipo sin GPU dedicada: las cuantizaciones Q4_K_M o Q3_K_M permiten ejecutar el modelo en CPU con llama.cpp, util para prototipado offline y procesamiento de texto sin conexion.
-- Clasificacion y etiquetado de texto a escala: tareas de baja latencia y vocabulario controlado (categorizacion de tickets, moderacion, extraccion de campos) donde un modelo de 4B suele ser suficiente y el coste por token es minimo.
-- Resumen de documentos cortos: siempre que la ventana de contexto real lo permita, que es precisamente el dato no publicado y que el nombre "ThinCtx" pone en duda.
-- Asistente de autocompletado en editores: integracion via API local compatible con llama.cpp para sugerencias de codigo o texto, con la advertencia de que no hay evidencia de rendimiento en generacion de codigo.
-- Pipeline de anonimizacion o preprocesado previo a un modelo mayor: uso como filtro economico que reduce el volumen enviado a un modelo de frontera.
-- Experimentacion academica con cuantizacion: comparar la degradacion de calidad entre f16 y Q2_K en un mismo modelo resulta util para estudiar el impacto de la cuantizacion extrema.
-- Despliegue en entornos aislados (edge, industrial, sanitario): al ejecutarse en local con llama.cpp, evita el envio de datos a servicios externos, siempre que la licencia lo permita, cosa que aqui no esta declarada.
+- Procesamiento de documentos largos en local: con cuantizaciones Q4_K_M (2,8 GB) o Q5_K_M (3,2 GB), el modelo puede ejecutarse en una GPU de consumo de 8 GB y resumir o extraer información de contratos, informes o artículos extensos, aprovechando su orientación a contexto largo.
+- Asistente conversacional multilingüe en inglés, checo y alemán: adecuado para atención al cliente o soporte interno en empresas centroeuropeas, con despliegue en servidores modestos o estaciones de trabajo.
+- Prototipado rápido con llama.cpp u Ollama: la disponibilidad de 12 cuantizaciones permite iterar desde un Q2_K (2,0 GB) en portátiles hasta Q8_0 (4,6 GB) en GPUs dedicadas, sin necesidad de infraestructura cloud.
+- Evaluación y research no comercial: la licencia permite evaluación por cualquiera y uso en investigación no comercial, lo que facilita benchmarks comparativos y experimentos académicos con contexto largo.
+- Despliegue en pequeñas empresas: la licencia PolyForm Small Business permite uso comercial gratuito a pequeñas organizaciones, lo que habilita chatbots internos, clasificación de documentos o generación de borradores sin coste de licencia.
+- Fine-tuning ligero sobre el modelo base: al existir pesos safetensors en el modelo original y GGUF para inferencia, se puede ajustar el modelo base y luego cuantizar de nuevo para despliegue en producción con recursos limitados.
+- Análisis de conversaciones o logs extensos: la ventana de contexto larga permite ingerir transcripts completos de reuniones o tickets de soporte y generar resúmenes estructurados en una sola pasada.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El repositorio no incluye evaluaciones de MMLU, HumanEval, GSM8K ni de ningun otro conjunto, y no se aportan curvas de perplejidad por nivel de cuantizacion.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-Las cifras de VRAM son estimaciones derivadas del tamano tipico de cada nivel de cuantizacion para un modelo de ~4B parametros, no datos publicados por el autor.
-
-- VRAM estimada en inferencia (solo pesos, sin cache KV):
-  - f16: ~8 GB
-  - Q8_0: ~4,3 GB
-  - Q6_K: ~3,4 GB
-  - Q5_K_M: ~2,9 GB
-  - Q4_K_M: ~2,5 GB
-  - Q3_K_M: ~2,1 GB
-  - Q2_K: ~1,7 GB
-- La cache KV anade consumo adicional proporcional a la longitud de contexto, que no esta documentada; en modelos de esta escala suele ser de cientos de MB a varios GB.
-- GPU recomendadas: cualquier GPU con 8 GB o mas de VRAM (RTX 3060 Ti, RTX 4060, RTX 3070) para cuantizaciones Q4 y Q5; RTX 4090 o A100 no aportan ventaja significativa por VRAM, solo por velocidad.
-- Cabe en GPU consumer: si, en la practica totalidad de tarjetas con 6 GB o mas usando Q4_K_M o inferior; las cuantizaciones Q2_K y Q3_K permiten incluso 4 GB de VRAM.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, koboldcpp, llama-cpp-python, text-generation-webui. Para vLLM o TGI seria preferible partir del modelo base en safetensors, no de este repositorio GGUF.
-- Latencia y throughput: no disponibles. No se publican mediciones de tokens por segundo ni de tiempo hasta el primer token.
+- VRAM estimada para inferencia (solo pesos, sin KV cache): Q2_K ≈ 2,0 GB; Q3_K_M ≈ 2,4 GB; Q4_K_M ≈ 2,8 GB; Q5_K_M ≈ 3,2 GB; Q6_K ≈ 3,6 GB; Q8_0 ≈ 4,6 GB; f16 ≈ 8,5 GB.
+- GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM para Q4_K_M (p. ej., GTX 1650, RTX 3050); 6-8 GB para Q5/Q6 (RTX 3060, RTX 4060); 8-12 GB para Q8_0 o f16 (RTX 3080, RTX 4070, RTX 4090); A100/H100 solo si se necesita alto throughput concurrente o contextos muy largos.
+- Cabe en GPU de consumo: sí, en todas las cuantizaciones hasta Q8_0; f16 requiere 8,5 GB y cabe en RTX 3060 de 12 GB, RTX 4070 Ti o superiores.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, text-generation-webui y cualquier runtime compatible con GGUF. El repositorio declara "endpoints_compatible", lo que sugiere compatibilidad con endpoints tipo OpenAI a través de servidores GGUF.
+- Latencia y throughput estimados: no disponibles; dependerán de la GPU, la cuantización y la longitud de contexto. El KV cache para contexto largo puede consumir VRAM adicional significativa no cuantificada en la información disponible.
 
 ## Comparativa con modelos similares
 
-No es posible establecer una comparativa rigurosa porque no se dispone de parametros, contexto, licencia ni rendimiento del modelo objeto de la ficha. La tabla siguiente solo enumera alternativas habituales en el segmento de ~4B ejecutables en local; las filas del modelo analizado quedan sin datos.
-
-| Modelo | Parametros | Contexto | Licencia | Formato local | Datos de rendimiento |
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| ThinCtx-Qwen3.5-4B (este) | no disponible | no disponible | no disponible | GGUF | no disponible |
-| Qwen3-4B | no disponible en esta ficha | no disponible en esta ficha | no disponible en esta ficha | safetensors y GGUF de terceros | no disponible en esta ficha |
-| Llama 3.2 3B | no disponible en esta ficha | no disponible en esta ficha | no disponible en esta ficha | safetensors y GGUF | no disponible en esta ficha |
-| Gemma 3 4B | no disponible en esta ficha | no disponible en esta ficha | no disponible en esta ficha | safetensors y GGUF | no disponible en esta ficha |
+| ThinCtx-Qwen3.5-4B-GGUF (este) | 4,2 B | No disponible (long-context) | PolyForm Small Business 1.0.0 | GGUF (12 quants) | Multilingüe en/cs/de; gating comercial |
+| Qwen2.5-3B / Qwen3-4B (referencia de familia) | 3-4 B | 32K-128K según versión | Apache 2.0 (versiones estándar) | safetensors, GGUF | Licencia más permisiva; datos de benchmark públicos |
+| Llama 3.2 3B | 3,2 B | 128K | Llama 3.2 Community License | safetensors, GGUF | Multilingüe amplio; ecosistema maduro |
+| Phi-3.5-mini | 3,8 B | 128K | MIT | safetensors, GGUF | Fuerte en razonamiento y código; licencia permisiva |
 
-La unica conclusion defendible con la informacion disponible es que este repositorio compite en el mismo nicho de cuantizaciones GGUF de terceros que los publicados por otros cuantizadores para modelos de tamano similar, sin ningun dato que permita situarlo por encima o por debajo.
+La comparación es orientativa: no se dispone de benchmarks del modelo ThinCtx que permitan una comparación cuantitativa de rendimiento. Las alternativas citadas son modelos de tamaño similar ampliamente documentados, pero sus cifras de contexto y licencia corresponden a sus versiones estándar y pueden variar.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de model card: no hay informacion sobre arquitectura, entrenamiento, licencia ni uso previsto, lo que impide un analisis de riesgos serio.
-- Licencia no declarada: no se puede asumir uso comercial permitido. En ausencia de licencia explicita, lo prudente es tratar el modelo como no apto para produccion.
-- Sesgos conocidos: no disponibles, pero al no documentarse el dataset de entrenamiento no hay forma de evaluar sesgos de genero, raza, idioma o ideologia.
-- Riesgo de alucinacion: inherente a cualquier modelo de lenguaje de esta escala y no cuantificado aqui; en tareas facticas requerira verificacion externa.
-- Contexto potencialmente limitado: el nombre "ThinCtx" sugiere una ventana reducida respecto al modelo original, lo que restringiria resumen de documentos largos y conversaciones multi-turno extensas. Es una hipotesis sin confirmar, pero relevante a la hora de planificar.
-- Cuantizaciones agresivas: Q2_K y Q3_K degradan de forma notable la calidad en modelos de 4B; para uso real conviene Q4_K_M o superior, con el consiguiente aumento de VRAM.
-- Idiomas no declarados: no se puede garantizar un rendimiento aceptable en castellano ni en ningun otro idioma concreto.
-- Repositorio con 0 descargas y 0 likes: sin comunidad que haya validado los artefactos; no hay garantia de que las cuantizaciones se hayan probado mas alla de su generacion.
-- Fechas de creacion y actualizacion muy proximas (14 de octubre de 2026, con dos segundos de diferencia): publicacion automatizada, sin mantenimiento posterior documentado.
+- Licencia restrictiva para grandes organizaciones: PolyForm Small Business 1.0.0 solo permite uso comercial gratuito a pequeñas empresas; organizaciones grandes en producción deben contactar con info@moravian.ai para obtener licencia comercial.
+- Gating en Hugging Face: el acceso al modelo base requiere aceptar condiciones y proporcionar nombre, empresa y correo electrónico, lo que añade fricción para uso corporativo.
+- Sesgos conocidos: no documentados en la información disponible; al derivar de Qwen3.5 y estar ajustado con datos multilingües (en/cs/de), es probable un sesgo hacia esas lenguas y culturas.
+- Riesgo de alucinación: no cuantificado; como todo modelo de 4B, la tasa de alucinación será mayor que en modelos de mayor tamaño, especialmente en tareas de razonamiento complejo.
+- Limitaciones de idioma: solo se declaran inglés, checo y alemán; el rendimiento en castellano no está garantizado ni documentado.
+- Limitaciones de contexto: la longitud exacta de contexto no está disponible; el uso de contexto largo incrementa el consumo de VRAM por KV cache, lo que puede reducir el número de secuencias concurrentes.
+- Caveat de producción: las cuantizaciones Q2_K y Q3_K_S degradan la calidad de forma notable; para producción se recomienda Q4_K_M o superior. La cuantización IQ4_XS (2,6 GB) puede ofrecer mejor relación calidad/tamaño que Q4_K_S según las notas del autor.
+- Falta de benchmarks: no hay datos publicados de MMLU, HumanEval, GSM8K ni evaluaciones de contexto largo, lo que impide validar afirmaciones de rendimiento antes de desplegar.
 
 ## Enlaces
 
-- Repositorio GGUF: https://huggingface.co/mradermacher/ThinCtx-Qwen3.5-4B-GGUF
-- Modelo base: https://huggingface.co/thinletter/ThinCtx-Qwen3.5-4B
-- Papers, blogs, repositorios o demos adicionales: no disponible (no se encontraron en la informacion proporcionada).
+- Repositorio Hugging Face (GGUF): https://huggingface.co/mradermacher/ThinCtx-Qwen3.5-4B-GGUF
+- Modelo base: https://huggingface.co/moravianai/ThinCtx-Qwen3.5-4B
+- Cuantizaciones imatrix/weighted: https://huggingface.co/mradermacher/ThinCtx-Qwen3.5-4B-i1-GGUF
+- Página de resumen del autor para este modelo: https://hf.tst.eu/model#ThinCtx-Qwen3.5-4B-GGUF
+- Guía de uso de GGUF (README de TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Gráfico comparativo de cuantizaciones (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png
+- Notas de Artefact2 sobre cuantizaciones: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Solicitudes de cuantización del autor: https://huggingface.co/mradermacher/model_requests

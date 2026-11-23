@@ -2,90 +2,91 @@
 
 ## Resumen
 
-ÇABA Innovation-Adaptive Full-Covariance Kalman Cache v3.2 es un modelo de lenguaje causal experimental de aproximadamente 100 millones de parámetros entrenables, publicado por el usuario Efe2898 en Hugging Face. Su interés no radica en la calidad lingüística —el propio autor declara explícitamente que no reclama una calidad de lenguaje validada— sino en la propuesta arquitectónica: sustituye o complementa la atención estándar por una caché asociativa basada en un filtro de Kalman de covarianza completa, con un grafo disperso de transiciones de tokens aprendido solo en entrenamiento y una softmax global atada de soporte completo.
+ÇABA Innovation-Adaptive Full-Covariance Kalman Cache v3.2 es un modelo de lenguaje causal experimental de aproximadamente 100 millones de parámetros, publicado por el usuario Efe2898 en Hugging Face. No es un transformer convencional: sustituye parte del mecanismo de atención por un estado recurrente basado en un filtro de Kalman de covarianza completa, combinado con un grafo disperso de transiciones entre tokens y una convolución causal en profundidad de tamaño K=8. El modelo se presenta explícitamente como experimental y el propio autor declara que no reclama calidad lingüística validada.
 
-La arquitectura combina una convolución depthwise causal de profundidad K=8, un grafo de transición de tokens con K=32 y un estado recurrente que mantiene una covarianza P en el espacio de claves junto con un mapa asociativo W. El ruido de proceso dirigido por claves permite que observaciones sorprendentes revisen la dirección de clave correspondiente, lo que constituye una innovación interesante frente a las cachés KV tradicionales de tamaño creciente con el prompt.
+El interés técnico reside en su propuesta de caché asociativa: el estado recurrente almacena una matriz de covarianza P sobre el espacio de claves y un mapa asociativo W, de modo que las observaciones "sorprendentes" pueden revisar la dirección de clave correspondiente mediante ruido de proceso dirigido por clave. Ambos estados bayesianos son de tamaño fijo respecto a la longitud del prompt y se mantienen en FP32, lo que abre la puerta a contextos largos con memoria acotada.
 
-El modelo está entrenado exclusivamente con datos en turco (peso `{"tr": 1.0}`), usa el tokenizador de `vngrs-ai/Kumru-2B-Base` y una longitud de secuencia de 256 tokens. Es un artefacto de investigación con 0 descargas y 0 likes en el momento de la consulta, orientado a quien quiera estudiar mecanismos de memoria asociativa bayesiana en transformers pequeños.
+El modelo está entrenado únicamente con datos en turco (peso 1.0 para el idioma `tr`), usa el tokenizador de `vngrs-ai/Kumru-2B-Base` y una longitud de secuencia de 256 tokens. Su relevancia es fundamentalmente como banco de pruebas de arquitecturas recurrentes alternativas a la atención, no como modelo listo para producción.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer causal con caché asociativa Kalman de covarianza completa, convolución depthwise causal K=8 y grafo disperso de transiciones de tokens |
+| Arquitectura | Causal LM híbrida: grafo disperso de transición de tokens + convolución causal depthwise K=8 + caché asociativa Kalman de covarianza completa (innovation-adaptive) |
 | Parametros totales | 102.003.561 (safetensors); 100.397.929 entrenables según model card |
 | Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | 256 tokens (longitud de secuencia de entrenamiento) |
-| Tipos de cuantizacion | no disponible |
-| Idiomas soportados | turco (peso de entrenamiento `tr: 1.0`); no se declaran otros |
+| Tipos de cuantizacion | no disponible (pesos en safetensors; estados de caché en FP32) |
+| Idiomas soportados | Turco (`tr`, peso 1.0 en entrenamiento); resto no disponible |
 | Licencia | other |
-| Formato de pesos | safetensors (repo de 1,9 GB) |
+| Formato de pesos | safetensors (librería transformers, requiere `trust_remote_code=True`) |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un transformer causal con varias desviaciones respecto al diseño estándar. Incorpora un grafo disperso de transiciones de tokens aprendido únicamente durante el entrenamiento (K=32, con cobertura de candidatos en held-out de 0,50739), una softmax global atada de soporte completo y una convolución depthwise causal con profundidad K=8. El componente distintivo es la caché asociativa Kalman: el estado recurrente almacena una covarianza P de covarianza completa en el espacio de claves y un mapa asociativo W, de modo que el ruido de proceso dirigido por claves permite revisar la dirección de clave correspondiente ante observaciones inesperadas. La caché de inferencia (`past_key_values`) guarda la tupla `(conv_state, covariance_state, weight_state)`, con ambos estados bayesianos en FP32 y de tamaño fijo respecto a la longitud del prompt.
+La arquitectura combina cuatro componentes: un grafo disperso de transiciones entre tokens construido solo en entrenamiento (K=32, cobertura de candidatos en held-out de 0,50739), un softmax global atado de soporte completo, una convolución causal depthwise de K=8 y una caché asociativa Kalman con covarianza completa. El estado recurrente guarda una matriz de covarianza P sobre el espacio de claves y un mapa asociativo W; el ruido de proceso dirigido por clave permite que las observaciones inesperadas revisen la dirección de clave coincidente. La caché de inferencia (`past_key_values`) almacena la tupla `(conv_state, covariance_state, weight_state)`, con los dos estados bayesianos en FP32 y de tamaño fijo independientemente de la longitud del prompt.
 
-La tabla de embeddings de tokens está factorizada a 1.024 dimensiones, con el puente de entrada atado de forma transpuesta para la ruta de salida y la cabeza de vocabulario atada a la tabla de tokens. La rama de memoria tiene además un objetivo auxiliar de siguiente token. Durante el entrenamiento se aplica un 10% de dropout residual en la ruta local (exento el primer token válido) para forzar a la ruta principal a usar el historial recuperado; la validación reporta NLL solo-memoria y NLL de la ruta principal con el residual de memoria ablacionado, de forma que la contribución de la memoria es medible en lugar de asumida. El tokenizador es `vngrs-ai/Kumru-2B-Base` (commit `55711ea224e4bf5d4e11a4baf79130ae73785ece`) y los datos tokenizados proceden de `Efe2898/tokenized` (commit `6cb993aa63064cd89b511bb164e8c6e5512902ed`). No se documentan volúmenes de tokens, composición del dataset ni fases de RLHF o DPO.
+La tabla de embeddings de tokens está factorizada a 1.024 dimensiones, con el puente de entrada atado de forma transpuesta para la salida y la cabeza de vocabulario atada a la tabla de tokens. La rama de memoria tiene además un objetivo auxiliar de siguiente token. Durante el entrenamiento se aplica un dropout residual del 10% en la ruta local para forzar a la ruta principal a usar el historial recuperado (el primer token válido está exento). La validación reporta NLL solo de memoria y NLL de la ruta principal con el residual de memoria ablacionado, de modo que la contribución de la memoria es medible. El autor indica que el cuaderno de verificación comprueba las ecuaciones del filtro de Kalman de covarianza completa, el comportamiento de recuerdo/conflicto, la igualdad entre prefijo completo e incremental, los dtypes de caché en precisión mixta, la identidad de padding, la causalidad y la ruta real de generación de Transformers antes del entrenamiento. No se especifica el número total de tokens de entrenamiento ni la composición del dataset más allá de la fuente tokenizada.
 
 ## Capacidades
 
-- Generación de texto causal autorregresiva en turco, con longitud de contexto limitada a 256 tokens.
-- Memoria asociativa de tamaño fijo respecto al prompt: el estado Kalman no crece con la longitud de entrada, a diferencia de una caché KV convencional.
-- Recuperación de historial mediante la ruta de memoria, con un objetivo auxiliar de siguiente token y medición explícita de la contribución de memoria en validación.
-- Revisión de asociaciones ante observaciones sorprendentes gracias al ruido de proceso dirigido por claves.
-- Soporte de tool calling / function calling: no disponible.
+- Generación de texto causal autorregresiva en turco, con el tokenizador de Kumru-2B-Base.
+- Memoria asociativa de tamaño fijo: la caché `(conv_state, covariance_state, weight_state)` no crece con la longitud del prompt, lo que permite reutilizar estado entre pasos de generación.
+- Recuperación de historial mediante la rama de memoria, con objetivo auxiliar de siguiente token y validación ablacionada de su contribución.
+- Revisión adaptativa de claves: el ruido de proceso dirigido por clave permite corregir asociaciones ante observaciones inesperadas.
+- Integración con la API estándar de Transformers (`AutoModelForCausalLM`) mediante código remoto.
+- Tool calling / function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingües: no disponibles más allá del turco.
-- Capacidades especiales (modo thinking, visión, audio): no disponibles.
-- El autor no reclama calidad de lenguaje validada; el modelo se presenta como experimental.
+- Capacidades multilingües: no disponibles (solo turco en entrenamiento).
+- Vision, audio o thinking mode: no disponible.
 
 ## Casos de uso
 
-- Investigación sobre memorias asociativas en transformers: el modelo sirve como banco de pruebas reproducible para estudiar si una caché Kalman de covarianza completa aporta ventaja medible frente a la caché KV estándar, gracias a la validación con NLL solo-memoria y NLL con memoria ablacionada.
-- Estudio de eficiencia de estado recurrente: al mantener estados bayesianos FP32 de tamaño fijo respecto al prompt, es adecuado para experimentos sobre coste de memoria en inferencia con prompts largos dentro del límite de 256 tokens.
-- Reproducción de experimentos de grafos de transición de tokens: el grafo disperso K=32 y la cobertura held-out publicada permiten analizar cómo las transiciones aprendidas solo en entrenamiento afectan a la generación.
-- Docencia y formación en arquitecturas híbridas: el repositorio incluye el código del modelo y los scripts de entrenamiento (`configuration_caba.py`, `modeling_caba.py`, `training/`), lo que facilita su uso en cursos avanzados de arquitecturas de lenguaje.
-- Validación de ecuaciones de Kalman en implementaciones de transformers: el notebook del autor comprueba ecuaciones de covarianza completa, comportamiento de recall/conflicto, igualdad prefijo completo/incremental, dtypes de caché en precisión mixta, identidad de padding, causalidad y la ruta real de generación de Transformers.
-- Prototipado de modelos pequeños en turco: con ~100M parámetros y tokenizador de Kumru-2B, puede emplearse como base para experimentos de generación en turco donde el objetivo sea la arquitectura y no la calidad final del texto.
-- Análisis de ablación de memoria en pipelines de evaluación propios: la separación entre ruta principal y ruta de memoria permite diseñar comparativas controladas de contribución de contexto recuperado.
+- Investigación en arquitecturas recurrentes alternativas a la atención: el modelo sirve como referencia reproducible para estudiar si una caché Kalman de covarianza completa puede sustituir parte del mecanismo de atención en secuencias cortas, con scripts de entrenamiento y verificación incluidos en el repositorio.
+- Experimentos de memoria asociativa de tamaño fijo: útil para medir cómo evoluciona el estado `(covariance_state, weight_state)` a lo largo de una generación y comparar la NLL de la ruta principal con y sin residual de memoria, tal como reporta la validación del autor.
+- Reproducción de resultados y auditoría de código: el repositorio incluye `configuration_caba.py`, `modeling_caba.py` y el directorio `training/`, lo que permite revisar las ecuaciones del filtro y reejecutar el pipeline antes de habilitar `trust_remote_code=True`.
+- Prototipado de sistemas de recuperación de historial en conversación: la rama de memoria con objetivo auxiliar y dropout residual del 10% está diseñada para forzar el uso del historial recuperado, un escenario relevante para diálogo multi-turno con estado acotado.
+- Docencia y divulgación técnica: como ejemplo didáctico de fusión entre filtros de Kalman, grafos de transición de tokens y transformers, con un tamaño de 100M parámetros manejable en una sola GPU.
+- Pruebas de integración con Transformers: validar que la ruta real de generación (`generate`) funciona con una caché personalizada de dtypes mixtos y padding, útil para quienes desarrollan `past_key_values` no estándar.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card solo reporta métricas internas de validación (NLL de memoria y NLL de ruta principal con memoria ablacionada), sin valores numéricos concretos, y una cobertura de candidatos en held-out de 0,50739 para el grafo de transiciones.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: con 102M parámetros en FP32, los pesos ocupan aproximadamente 0,41 GB; en FP16/BF16, unos 0,20 GB. A ello hay que sumar los estados de caché Kalman en FP32 (covarianza y pesos) y las activaciones, no cuantificadas en la información disponible.
-- GPU recomendadas: cualquier GPU con al menos 2-4 GB de VRAM es suficiente para los pesos; no se especifican requisitos oficiales.
-- Cabe en GPU de consumo: sí, previsiblemente en GTX 1650, RTX 3060, RTX 4060 y superiores; no confirmado por el autor.
-- Opciones de despliegue: `transformers` con `trust_remote_code=True` es la vía documentada. No se confirma compatibilidad con vLLM, llama.cpp, Ollama o TGI, y el código personalizado y la caché no estándar probablemente requieran adaptaciones.
+- VRAM estimada para inferencia: los pesos en FP32 ocupan aproximadamente 0,4 GB (102M parámetros × 4 bytes); en FP16/BF16 bajaría a unos 0,2 GB. Los estados de caché bayesianos son FP32 y de tamaño fijo, por lo que su coste no depende de la longitud del prompt pero no se ha publicado su dimensión exacta.
+- GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM debería bastar para los pesos; el repositorio ocupa 8,0 GB en total, lo que sugiere que incluye artefactos adicionales (scripts, datos tokenizados o checkpoints) que no forman parte del modelo en inferencia.
+- Cabe en GPU de consumo: sí, previsiblemente en GTX 1660, RTX 3060, RTX 4060 y superiores, dado el tamaño del modelo.
+- Opciones de despliegue: Transformers con `trust_remote_code=True` es la vía documentada. No se ha confirmado compatibilidad con vLLM, llama.cpp, Ollama o TGI, y al tratarse de una arquitectura con `custom_code` y caché no estándar es probable que estos motores no la soporten sin adaptación.
 - Latencia y throughput estimados: no disponibles.
 
 ## Comparativa con modelos similares
 
+No se dispone de datos de benchmarks ni de modelos comparables directos en la información proporcionada. La siguiente tabla compara únicamente especificaciones estructurales con alternativas de tamaño similar del ecosistema abierto, marcando como no disponible cualquier dato no confirmado para este modelo.
+
 | Modelo | Parametros | Contexto | Arquitectura | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ÇABA Kalman Cache v3.2 100M TR | 102M | 256 | Transformer causal + caché Kalman asociativa | other | Hugging Face, 0 descargas |
-| Modelos causales pequeños tipo GPT-2 small | ~124M | 1.024 | Transformer causal estándar | MIT (GPT-2) | Amplia |
-| Modelos tipo Llama pequeños (~100-150M) | ~100-150M | variable | Transformer causal estándar | variable | Variable |
+| ÇABA Kalman Cache v3.2 100M | 102M | 256 | Híbrida Kalman + grafo de tokens + conv causal | other | Hugging Face, requiere `trust_remote_code` |
+| Modelos transformer densos ~100M (categoría) | ~100M | variable, típicamente 2K-8K | Transformer decoder estándar | variable | Amplia |
+| Modelos recurrentes/SSM pequeños (categoría) | ~100M-1B | variable | SSM o híbridos recurrentes | variable | Limitada |
 
-No se dispone de comparativas de rendimiento publicadas frente a alternativas; la comparación anterior es estructural y de disponibilidad, no de calidad. No disponible para datos de benchmarks.
+No se han publicado comparaciones de rendimiento con alternativas concretas en la información disponible.
 
 ## Limitaciones y advertencias
 
-- El autor declara explícitamente que el modelo es experimental y no reclama calidad de lenguaje validada; no debe usarse en producción sin evaluación propia.
-- Contexto muy limitado: 256 tokens de longitud de secuencia de entrenamiento, insuficiente para la mayoría de aplicaciones conversacionales reales.
-- Entrenado solo en turco (`tr: 1.0`); no hay evidencia de competencia en otros idiomas.
-- Licencia "other" sin términos detallados en la información disponible; es necesario revisar el repositorio antes de cualquier uso comercial.
-- Requiere `trust_remote_code=True` y código personalizado (`modeling_caba.py`, `configuration_caba.py`); el autor recomienda revisar el código antes de habilitarlo.
-- La caché de inferencia no es estándar, lo que puede romper la compatibilidad con herramientas de despliegue y optimización habituales.
-- Riesgo de alucinación y sesgos: no evaluado ni documentado; al ser un modelo de 100M entrenado en un corpus no descrito, el riesgo es alto y desconocido.
-- Sin descargas ni likes en el momento de la consulta: no hay validación comunitaria ni reportes de terceros.
-- Los estados bayesianos en FP32 implican un coste de memoria fijo adicional que debe tenerse en cuenta en despliegues con muchas peticiones concurrentes.
+- Modelo explícitamente experimental: el autor declara que no reclama calidad lingüística validada.
+- Entrenado solo en turco (peso 1.0); no hay evidencia de capacidades en castellano ni en otros idiomas.
+- Longitud de contexto de 256 tokens, muy inferior a los estándares actuales; no apto para documentos largos ni conversaciones extensas sin trabajo adicional.
+- Requiere `trust_remote_code=True`, lo que implica ejecutar código del autor; la propia model card recomienda revisar `configuration_caba.py`, `modeling_caba.py` y `training/` antes de habilitarlo.
+- Licencia "other": no se especifican términos de uso comercial; debe consultarse el repositorio antes de cualquier despliegue productivo.
+- Riesgo de alucinación y sesgos: no evaluados ni documentados; al ser un modelo de 100M entrenado en un único idioma, es esperable un conocimiento factual muy limitado.
+- Sin soporte documentado de tool calling, agentes, visión o audio.
+- Compatibilidad limitada con motores de inferencia estándar (vLLM, llama.cpp, Ollama, TGI) debido a la caché personalizada y al código remoto.
+- El repositorio ocupa 8,0 GB, muy por encima del tamaño de los pesos, por lo que conviene revisar qué artefactos adicionales se descargan.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/Efe2898/caba-kalman-associative-cache-v3-2-100m-tr
-- Tokenizador: https://huggingface.co/vngrs-ai/Kumru-2B-Base
+- Modelo en Hugging Face: https://huggingface.co/Efe2898/caba-kalman-associative-cache-v3-2-100m-tr
+- Tokenizador base: https://huggingface.co/vngrs-ai/Kumru-2B-Base
 - Dataset tokenizado: https://huggingface.co/datasets/Efe2898/tokenized
 - Paper, blog, repositorio o demo adicionales: no disponibles en la información proporcionada.

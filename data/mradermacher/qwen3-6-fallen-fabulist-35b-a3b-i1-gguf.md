@@ -2,89 +2,91 @@
 
 ## Resumen
 
-Qwen3.6-Fallen-Fabulist-35B-A3B-i1-GGUF es una cuantización en formato GGUF del modelo Cyclone-Labs/Qwen3.6-Fallen-Fabulist-35B-A3B, publicada por el usuario mradermacher, especializado en la generación de cuantizaciones con imatrix. El modelo subyacente es un merge (fusión) de modelos de la familia Qwen3.6, construido con mergekit, con un total de 35.505.251.456 parámetros (aproximadamente 35,5 mil millones) y una designación "A3B" que sugiere una arquitectura de mezcla de expertos (MoE) con unos 3 mil millones de parámetros activos por token, aunque este dato no se confirma explícitamente en la información disponible.
+Qwen3.6-Fallen-Fabulist-35B-A3B-i1-GGUF es una cuantización en formato GGUF del modelo Cyclone-Labs/Qwen3.6-Fallen-Fabulist-35B-A3B, un merge de modelos construido con mergekit y publicado por Cyclone-Labs. Esta versión concreta la distribuye mradermacher, especialista en cuantizaciones GGUF con imatrix, e incluye un conjunto amplio de variantes que van desde i1-Q2_K (13,3 GB) hasta i1-Q6_K (29,3 GB), lo que permite ejecutar un modelo de 35.505.251.456 parámetros en hardware de consumo.
 
-La relevancia de esta ficha radica en que el repositorio ofrece una vía práctica para ejecutar en local un modelo de gran tamaño mediante cuantizaciones GGUF de baja precisión, incluyendo la variante i1-Q2_K de 13,3 GB. El modelo está orientado a conversación y etiquetado como "conversational", con licencia Apache 2.0 y soporte declarado únicamente para inglés.
+El modelo base tiene 35.505.251.456 parámetros totales y, por su nombre (A3B), adopta una arquitectura de mezcla de expertos (MoE) con aproximadamente 3.000 millones de parámetros activos por token, lo que reduce el coste computacional de inferencia frente a un modelo denso del mismo tamaño. La model card del cuantizador lo describe explícitamente como un modelo de visión, con ficheros mmproj disponibles en el repositorio estático. La licencia es Apache 2.0 y el idioma declarado es únicamente inglés.
 
-No obstante, la información publicada es muy limitada: no se detallan la arquitectura exacta, el contexto máximo, los datos de entrenamiento ni resultados de benchmarks. Esta ficha refleja fielmente lo disponible y marca como "no disponible" todo aquello que no consta en la documentación.
+La relevancia de esta ficha radica en que permite desplegar localmente un modelo multimodal de 35B con activación dispersa mediante llama.cpp y derivados, sin depender de infraestructura en la nube. Las cuantizaciones con imatrix están calibradas para preservar la calidad en rangos bajos de bits, y el autor recomienda variantes IQ sobre las Q equivalentes en tamaño.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (modelo base descrito como merge mediante mergekit; designación "A3B" sugiere MoE, no confirmado) |
-| Parámetros totales | 35.505.251.456 (≈35,5 B) |
-| Parámetros activos | no disponible (la designación "A3B" sugiere ≈3 B activos, no confirmado) |
+| Arquitectura | Mezcla de expertos (MoE), derivada de la familia Qwen3.6; detalles de capas y atención no disponibles |
+| Parametros totales | 35.505.251.456 |
+| Parametros activos | ~3.000 millones (según la designación A3B del nombre; no confirmado en la información proporcionada) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantización | i1-Q2_K (13,3 GB); el autor lista además IQ3_M, Q4_K_S, IQ3_XXS, Q3_K_M, small-IQ4_NL, Q4_K_M, IQ2_M, Q6_K, IQ4_XS, Q2_K_S, IQ1_M, Q3_K_S, IQ2_XXS, Q3_K_L, IQ2_XS, Q5_K_S, IQ2_S, IQ1_S, Q5_K_M, Q4_0, IQ3_XS, Q4_1, IQ3_S (disponibilidad efectiva no verificada en el repo) |
+| Tipos de cuantizacion | i1-Q2_K, i1-IQ3_XS, i1-IQ3_XXS, i1-IQ3_S, i1-IQ3_M, i1-Q3_K_S, i1-Q3_K_M, i1-Q3_K_L, i1-IQ4_XS, i1-Q4_0, i1-Q4_K_S, i1-Q4_K_M, i1-Q4_1, i1-Q5_K_S, i1-Q5_K_M, i1-Q6_K, además de fichero imatrix |
 | Idiomas soportados | en (inglés) |
-| Licencia | apache-2.0 |
-| Formato de pesos | GGUF (transformers, gguf); incluye fichero imatrix de 0,5 GB |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (safetensors en el modelo base) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base Cyclone-Labs/Qwen3.6-Fallen-Fabulist-35B-A3B es, según las etiquetas del repositorio, el resultado de una fusión de modelos realizada con mergekit. La nomenclatura "Qwen3.6" indica su pertenencia a la familia Qwen3.6, y "Fallen-Fabulist" es el nombre del merge. El sufijo "A3B" es la convención habitual para indicar arquitecturas de mezcla de expertos con parámetros activos reducidos, pero la información proporcionada no confirma la arquitectura interna, el número de expertos, la estrategia de enrutamiento ni si se trata de un transformer denso o MoE.
+El modelo base es un merge de modelos generado con mergekit, según las etiquetas de la model card. La designación A3B en el nombre indica una arquitectura de mezcla de expertos con aproximadamente 3.000 millones de parámetros activos por token sobre un total de 35.505.251.456, patrón habitual en la familia Qwen3.6. La model card del cuantizador identifica el modelo como multimodal (visión), con ficheros mmproj separados en el repositorio estático.
 
-No se dispone de datos sobre el número de tokens de entrenamiento, la composición del dataset, el uso de RLHF/DPO ni innovaciones técnicas como decodificación especulativa o atención lineal. La cuantización i1 de mradermacher emplea ficheros imatrix (matriz de importancia) para mejorar la calidad de las cuantizaciones de baja precisión, y el autor indica que las cuantizaciones IQ suelen ser preferibles a las no-IQ de tamaño similar.
+No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron fases de RLHF o DPO en el modelo base. El proceso de esta ficha es exclusivamente de cuantización: mradermacher aplica imatrix (matriz de importancia) calculada sobre el modelo original para generar variantes GGUF de 2 a 6 bits, con el objetivo de minimizar la degradación de perplejidad en cuantizaciones agresivas. No se documentan innovaciones de arquitectura adicionales más allá de la propia MoE.
 
 ## Capacidades
 
-- Generación de texto conversacional: el modelo está etiquetado como "conversational" y orientado a diálogo multi-turno.
-- Razonamiento y generación de código: no confirmado explícitamente en la documentación; la familia Qwen suele incluir estas capacidades, pero no consta para este merge concreto.
-- Soporte de tool calling / function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingües: limitadas al inglés según la etiqueta de idioma declarada.
-- Capacidades especiales (modo thinking, visión, audio): no disponible.
-- Ejecución local mediante GGUF: compatible con el ecosistema llama.cpp y derivados.
+- Generación de texto conversacional en inglés, con etiqueta `conversational` en el repositorio.
+- Procesamiento de imágenes: el autor clasifica el modelo como modelo de visión y publica ficheros mmproj para el proyector multimodal.
+- Razonamiento y generación de código: capacidades heredadas de la familia Qwen3.6, no verificadas de forma independiente en la información disponible.
+- Soporte de tool calling y function calling: no disponible en la información proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
+- Capacidades multilingües: limitadas al inglés según el campo `language` de la model card.
+- Modo thinking explícito: no disponible en la información proporcionada.
 
 ## Casos de uso
 
-- Despliegue local en estaciones de trabajo: la cuantización i1-Q2_K de 13,3 GB permite ejecutar el modelo en equipos con GPU de consumo de gama alta o incluso en CPU con suficiente RAM, sin depender de servicios en la nube.
-- Prototipado de asistentes conversacionales en inglés: el modelo está etiquetado como conversacional y puede emplearse para validar flujos de diálogo antes de pasar a producción.
-- Experimentación con fusiones de modelos: útil para investigadores que quieran evaluar el comportamiento de un merge de la familia Qwen3.6 frente al modelo original.
-- Evaluación de cuantizaciones imatrix: el repositorio sirve para comparar la calidad de la cuantización i1-Q2_K frente a cuantizaciones estáticas del mismo modelo.
-- Generación de texto en pipelines sin conexión: entornos con requisitos de privacidad o air-gapped donde no se permite el envío de datos a APIs externas.
-- Investigación sobre eficiencia de inferencia: la designación A3B (si se confirma MoE) permitiría estudiar el equilibrio entre tamaño total y parámetros activos en hardware limitado.
+- Asistente conversacional local en inglés: el modelo puede desplegarse con llama.cpp u Ollama en una estación de trabajo con GPU de consumo, usando la variante i1-Q4_K_M (21,8 GB) para equilibrar calidad y velocidad en conversaciones multi-turno.
+- Análisis de documentos con imágenes: gracias al proyector multimodal (mmproj), puede emplearse para describir capturas, diagramas o páginas escaneadas en pipelines de extracción de información, cargando el modelo con la variante IQ4_XS (19,3 GB) más el fichero mmproj.
+- Prototipado de agentes conversacionales: la licencia Apache 2.0 permite integrar el modelo en productos comerciales sin restricciones de atribución, usando el servidor compatible con la API de OpenAI que ofrece llama.cpp.
+- Generación de texto creativo y narrativo: el nombre "Fallen-Fabulist" sugiere un ajuste orientado a narrativa; puede usarse para redacción de ficción o guiones con la variante i1-Q5_K_M (25,4 GB) para preservar matices estilísticos.
+- Evaluación de merges de modelos: investigadores pueden comparar el comportamiento de este merge frente a sus modelos progenitores usando las distintas cuantizaciones como proxy de calidad en entornos con VRAM limitada.
+- Despliegue en entornos sin conectividad: al ser GGUF y ejecutable con llama.cpp, el modelo funciona íntegramente en local, lo que lo hace adecuado para entornos con requisitos de privacidad o aislamiento de red.
+- Investigación sobre cuantización: el fichero imatrix (0,5 GB) publicado permite reproducir o generar cuantizaciones propias con calibración de importancia, útil para estudiar la degradación por bits.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: la cuantización i1-Q2_K ocupa 13,3 GB en disco; con overhead de contexto y caché KV, se recomienda al menos 16 GB de VRAM para GPU o RAM equivalente en CPU.
-- GPU recomendadas: no disponible de forma específica; por tamaño, una RTX 4090 (24 GB) o una RTX 3090 (24 GB) permitirían cargar la cuantización Q2_K con margen; GPUs de 16 GB podrían requerir offloading parcial.
-- ¿Cabe en GPU de consumo? Sí, la variante i1-Q2_K de 13,3 GB cabe en GPUs de 16 GB o más; cuantizaciones mayores (Q4, Q5, Q6) requerirían más memoria.
-- Opciones de despliegue: llama.cpp, Ollama, y servidores compatibles con GGUF; el repositorio declara compatibilidad con endpoints.
-- Latencia y throughput estimados: no disponible.
+- VRAM estimada para inferencia: entre 13,3 GB (i1-Q2_K) y 29,3 GB (i1-Q6_K) solo para los pesos; añadir overhead de contexto KV cache, que depende de la longitud de contexto no documentada.
+- GPU recomendadas: para i1-Q4_K_M (21,8 GB) se requiere una GPU de 24 GB como RTX 3090 o RTX 4090; para i1-Q6_K (29,3 GB) se necesita una RTX 5090 de 32 GB o una A100/H100 de 40 GB o más.
+- Cabe en GPU de consumo: sí, en RTX 3090/4090 con cuantizaciones de 2 a 5 bits; las variantes Q6_K requieren 32 GB o más.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio y cualquier runtime compatible con GGUF; el repositorio incluye la etiqueta `endpoints_compatible`.
+- Latencia y throughput: no disponibles. Al ser MoE con ~3B activos, el throughput esperado es sustancialmente mayor que el de un modelo denso de 35B, pero no se aportan cifras medidas.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Licencia | Formato | Disponibilidad |
+| Modelo | Parámetros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| Qwen3.6-Fallen-Fabulist-35B-A3B (este, i1-GGUF) | 35,5 B | no disponible | apache-2.0 | GGUF | Hugging Face (mradermacher) |
-| Qwen3.6-Fallen-Fabulist-35B-A3B (base) | 35,5 B | no disponible | apache-2.0 | safetensors (presumible) | Hugging Face (Cyclone-Labs) |
-| Qwen3.6-Fallen-Fabulist-35B-A3B-GGUF (cuantizaciones estáticas) | 35,5 B | no disponible | apache-2.0 | GGUF | Hugging Face (mradermacher) |
+| Qwen3.6-Fallen-Fabulist-35B-A3B (esta ficha) | 35,5B totales / ~3B activos | no disponible | Apache 2.0 | GGUF, safetensors | Merge con capacidades de visión |
+| Qwen3.6-Fallen-Fabulist-35B-A3B (estático) | 35,5B totales / ~3B activos | no disponible | Apache 2.0 | GGUF | Cuantizaciones sin imatrix, mismo modelo base |
+| Modelo base Cyclone-Labs/Qwen3.6-Fallen-Fabulist-35B-A3B | 35,5B totales / ~3B activos | no disponible | Apache 2.0 | safetensors | Pesos originales sin cuantizar |
 
-No se dispone de datos de rendimiento para comparar con alternativas de la misma categoría; la comparativa se limita a las variantes del mismo modelo.
+No se dispone de información sobre otros modelos comparables de la misma familia o tamaño en la documentación proporcionada.
 
 ## Limitaciones y advertencias
 
-- Información muy escasa: no se documentan arquitectura, contexto, entrenamiento ni benchmarks, lo que dificulta evaluar su idoneidad para producción.
-- Idioma: solo se declara inglés; el rendimiento en castellano no está garantizado.
-- Riesgo de alucinación: inherente a los modelos generativos; no hay evaluaciones publicadas que lo cuantifiquen.
-- Sesgos: no documentados; al ser un merge de modelos Qwen, podría heredar sesgos de los modelos originales, pero no consta información al respecto.
-- Licencia Apache 2.0: permite uso comercial, pero el modelo base es un merge y conviene verificar las licencias de los modelos fusionados.
-- Cuantización de baja precisión: la variante i1-Q2_K puede degradar la calidad respecto al modelo original; el autor recomienda IQ3_XXS sobre Q2_K en términos de calidad.
-- Fecha de creación futura (2026-11-20): dato atípico que conviene verificar antes de confiar en el repositorio.
-- Sin descargas ni likes: repositorio sin validación comunitaria, lo que aumenta el riesgo de problemas no documentados.
+- Idioma: el modelo solo declara soporte de inglés; su uso en castellano u otros idiomas puede degradar la calidad de forma significativa.
+- Alucinación: no se han publicado evaluaciones de fidelidad factual; al ser un merge de modelos, el comportamiento puede ser inconsistente entre dominios.
+- Licencia: Apache 2.0 permite uso comercial, pero las licencias de los modelos progenitores del merge no se detallan en la información disponible y podrían imponer condiciones adicionales.
+- Cuantizaciones de baja precisión: las variantes por debajo de Q4 (Q2_K, IQ3_XXS, IQ3_XS) degradan la calidad; el propio autor recomienda IQ3_XXS sobre Q2_K y IQ3_S sobre Q3_K_M.
+- Longitud de contexto desconocida: no se documenta la ventana de contexto, lo que impide planificar el consumo de KV cache en producción.
+- Capacidades multimodales: los ficheros mmproj están en el repositorio estático, no en este; es necesario descargarlos por separado para usar la visión.
+- Sin datos de benchmarks: no hay métricas publicadas que permitan validar el rendimiento frente a alternativas.
+- Fecha de creación del repositorio: 2026-11-20, según los metadatos de Hugging Face.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/mradermacher/Qwen3.6-Fallen-Fabulist-35B-A3B-i1-GGUF
+- Repositorio Hugging Face (esta cuantización): https://huggingface.co/mradermacher/Qwen3.6-Fallen-Fabulist-35B-A3B-i1-GGUF
+- Repositorio de cuantizaciones estáticas: https://huggingface.co/mradermacher/Qwen3.6-Fallen-Fabulist-35B-A3B-GGUF
 - Modelo base: https://huggingface.co/Cyclone-Labs/Qwen3.6-Fallen-Fabulist-35B-A3B
-- Cuantizaciones estáticas: https://huggingface.co/mradermacher/Qwen3.6-Fallen-Fabulist-35B-A3B-GGUF
-- Página de descargas del autor: https://hf.tst.eu/model#Qwen3.6-Fallen-Fabulist-35B-A3B-i1-GGUF
-- Guía de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
-- Comparativa de tipos de cuantización (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
-- Solicitudes de cuantización: https://huggingface.co/mradermacher/model_requests
+- Página de descargas del cuantizador: https://hf.tst.eu/model#Qwen3.6-Fallen-Fabulist-35B-A3B-i1-GGUF
+- Preguntas frecuentes y solicitudes de cuantización: https://huggingface.co/mradermacher/model_requests
+- Guía de uso de GGUF (README de TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Análisis de tipos de cuantización de Artefact2: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Gráfica comparativa de perplejidad por cuantización: https://www.nethype.de/huggingface_embed/quantpplgraph.png

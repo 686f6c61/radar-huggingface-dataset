@@ -2,129 +2,122 @@
 
 ## Resumen
 
-relweave-1.7b-base es un modelo especializado en extraccion de entidades y relaciones tipadas a partir de texto en ingles, con salida directa a un grafo de conocimiento en JSON Graph Format v2. Lo desarrolla el usuario chrullis y se publica bajo licencia Apache 2.0. No es un modelo de proposito general: es un componente de un pipeline de extraccion de informacion que responde en un formato de lineas propio y que esta pensado para consumirse a traves de la libreria relweave.
+relweave-1.7b-base es un modelo especializado en extraccion de entidades y relaciones tipadas a partir de texto en ingles para construir grafos de conocimiento. Lo desarrolla el autor chrullis y se distribuye bajo licencia Apache 2.0. No es un modelo de chat generalista: es un componente de un pipeline de extraccion de informacion que devuelve entidades (con todas sus menciones, incluidos pronombres y descripciones como "the company") y relaciones tipadas entre ellas, siguiendo un esquema de negocio fijo de 6 tipos de entidad y 21 tipos de relacion (empresas, personas, lugares, propiedad, filiales, ejecutivos, consejeros, adquisiciones, entre otros).
 
-Tecnicamente parte de Qwen3-1.7B en su version cuantizada a 4 bits (`unsloth/qwen3-1.7b-unsloth-bnb-4bit`) y anade dos adaptadores LoRA que trabajan en conjunto: un `generator/` que escribe entidades y relaciones como texto bajo decodificacion restringida por gramatica, y un `head/` de clasificacion por pares que puntua cada par de entidades para eliminar relaciones inventadas por el generador y anadir las que este omitted. Los pesos del repositorio raiz son el generador con el LoRA ya fusionado, con 1.720.574.976 parametros totales (aproximadamente 1,72 mil millones) y un repositorio de 3,7 GB.
+Tecnicamente es la variante pequena de relweave-4b-base, entrenada con los mismos datos y receta: dos adaptadores LoRA sobre Qwen3-1.7B en cuantizacion de 4 bits. El primero, `generator`, escribe las entidades y relaciones como texto bajo decodificacion restringida; el segundo, `head`, es una cabeza de clasificacion por pares que puntua cada par de entidades y corrige al generador eliminando relaciones inventadas y anadiendo las omitidas. Ademas incluye un `tagger` que etiqueta todos los nombres en una pasada sobre los estados ocultos de la cabeza de pares.
 
-Su relevancia esta en el nicho: sigue un esquema fijo de negocio con 6 tipos de entidad y 21 tipos de relacion (empresas, personas, lugares, propiedad, filiales, ejecutivos, consejeros, adquisiciones, etc.) y ofrece un F1 estricto de relaciones tipadas de 0,722 en test, con 0,798 de precision y 0,659 de recall. Es la variante pequena de relweave-4b-base, pensada para entornos con poca VRAM o requisitos de velocidad altos: sobre una RTX 3070 Ti de 8 GB procesa unas 96 chunks por minuto con vLLM, frente a las 42 chunks por minuto del 4B.
+El modelo tiene 1.720.574.976 parametros y un repositorio de 3,9 GB. Su relevancia actual reside en que ofrece extraccion de grafos de conocimiento de calidad cercana a la variante de 4B (F1 estricto de 0,716 en test frente a 0,783) con un coste de inferencia mucho menor: unos 96 chunks por minuto en vLLM sobre una RTX 3070 Ti de 8 GB, frente a 42 del modelo de 4B.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (Qwen3), con dos adaptadores LoRA: generador con decodificacion restringida y cabeza de clasificacion por pares |
-| Parametros totales | 1.720.574.976 (aproximadamente 1,72 B) |
-| Parametros activos | no aplica (modelo denso, no MoE) |
-| Longitud de contexto | no disponible; los ejemplos oficiales de despliegue usan `--max-model-len 4096` y `--max-model-len 3072` en GPU de 8 GB |
-| Tipos de cuantizacion | entrenamiento sobre base en 4 bits (bnb-4bit); pesos del generador en el repositorio raiz con LoRA fusionado, servidos en bf16 en vLLM (3,3 GB en memoria). Sin versiones GGUF, AWQ o GPTQ documentadas |
-| Idiomas soportados | ingles (en) |
+| Arquitectura | Transformer decoder-only (Qwen3) con dos adaptadores LoRA (generator + pair head) y un tagger BERT-style |
+| Parametros totales | 1.720.574.976 |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | 4096 tokens (`--max-model-len 4096` en vLLM); 3072 en configuracion de 8 GB |
+| Tipos de cuantizacion | Base en 4 bits (bnb-4bit); pesos del generador en bf16 para vLLM; fp8 disponible en la variante 4B |
+| Idiomas soportados | Ingles (en) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors; adaptadores LoRA (PEFT) y modelo raiz con LoRA fusionado |
+| Formato de pesos | safetensors |
+| Modelo base | unsloth/qwen3-1.7b-unsloth-bnb-4bit |
+| Libreria | relweave |
+| Pipeline | text-generation |
 
 ## Arquitectura y entrenamiento
 
-El modelo se construye sobre Qwen3-1.7B (arquitectura transformer decoder-only) partiendo de una version ya cuantizada a 4 bits, sobre la que se entrenan dos adaptadores LoRA con PEFT. El primero, `generator/`, produce las entidades y relaciones en el formato de lineas de relweave bajo una gramatica de decodificacion por chunk; el segundo, `head/`, es una cabeza de clasificacion de pares que puntua todos los pares de entidades y corrige la salida del generador en ambas direcciones (elimina relaciones inventadas y recupera las omitidas). La union de ambos componentes es la que alcanza el F1 reportado.
+El modelo se construye sobre Qwen3-1.7B cuantizado en 4 bits y se especializa mediante dos adaptadores LoRA que trabajan de forma conjunta. El `generator` produce entidades y relaciones en un formato de lineas fijo bajo decodificacion restringida por una gramatica por chunk que la libreria relweave envia con cada peticion. El `head` es una cabeza de clasificacion por pares que puntua cada par de entidades; sus puntuaciones eliminan relaciones que el generador invento y anaden las que omitio. El `tagger` etiqueta todos los nombres en una sola pasada sobre los estados ocultos de la cabeza de pares (estilo BERT, sin lista de terminacion anticipada), de modo que los nombres que el generador deja fuera en listas largas y celdas de tabla llegan igualmente a la cabeza de pares. El tagger se ejecuta junto con la cabeza, por lo que funciona aunque el generador se sirva con vLLM.
 
-El esquema se define una sola vez como clases Python en `bench/ontology/business.py`, y de esas clases se derivan los prompts, las gramaticas de decodificacion, la validacion de etiquetas y el scoring. El conjunto de datos de entrenamiento es `chrullis/relweave-business-data`, y el modelo hermano relweave-4b-base se entreno "con los mismos datos y receta", segun la model card. No se especifican en la informacion disponible el numero de tokens de entrenamiento, la composicion detallada del dataset ni si hubo fases de RLHF o DPO.
-
-La innovacion destacable es el diseno en dos etapas con decodificacion restringida: el generador nunca puede emitir etiquetas fuera del esquema, y la cabeza de pares actua como verificador aprendido. La cabeza se ejecuta siempre en local porque necesita los estados ocultos del modelo, que vLLM no devuelve. Ademas, la evaluacion se hizo sobre pasajes de Wikipedia en ingles sobre empresas nordicas y europeas, con conjuntos de validacion y test que no comparten documentos, entidades ni hechos con los datos de entrenamiento.
+El entrenamiento utiliza el dataset `chrullis/relweave-business-data`. La cabeza de pares fue reentrenada el 2026-10-18 con la receta completa de la cabeza del modelo de 4B: su LoRA crece a partir de este generador, una pasada sobre el pool de verificacion y despues el pool completo; la cabeza anterior se habia saltado dos de esas pasadas. La evaluacion se realizo sobre pasajes de Wikipedia en ingles sobre empresas nordicas y europeas, con conjuntos que no comparten documentos con el entrenamiento y filtrados por personas, empresas y hechos compartidos, aunque persiste cierto solapamiento (el 14% de los nombres de persona y empresa del test tambien aparecen en las etiquetas de entrenamiento). No se detalla en la informacion disponible el numero de tokens de entrenamiento ni la composicion completa del dataset, ni si hubo RLHF o DPO.
 
 ## Capacidades
 
-- Extraccion de entidades tipadas con todas sus menciones, incluyendo pronombres y descripciones como "the company" (correferencia dentro del documento).
-- Extraccion de relaciones tipadas y dirigidas entre entidades, con un esquema fijo de 6 tipos de entidad y 21 tipos de relacion; la model card solo detalla en el extracto disponible el tipo de entidad (PERSON, ORG, OBJECT, PLACE, COORDINATE, EVENT) y la relacion EMPLOYED_BY, el resto no esta disponible en la informacion proporcionada.
-- Generacion de grafos en JSON Graph Format v2 con nodos, aristas, spans de mencion y evidencia.
-- Segmentacion de documentos largos y fusion de entidades entre chunks, realizada por la libreria relweave.
-- Decodificacion restringida por gramatica, que limita la salida al esquema de negocio definido.
-- Verificacion de relaciones mediante cabeza de clasificacion por pares.
-- Servible mediante vLLM con API compatible con OpenAI a traves de `generator_url`.
-- No soporta tool calling ni function calling segun la informacion disponible.
-- No es un modelo conversacional: la propia model card indica que el endpoint es un componente y no un modelo de chat, y que solo responde en el formato de lineas de relweave cuando se le promptea como fue entrenado.
+- Extraccion de entidades tipadas en ingles, con todas sus menciones, incluidos pronombres y descripciones definidas como "the company".
+- Extraccion de relaciones tipadas y dirigidas segun un esquema fijo de negocio de 6 tipos de entidad y 21 tipos de relacion (propiedad, filiales, ejecutivos, consejeros, adquisiciones, entre otras).
+- Etiquetado de nombres en una sola pasada (tagger) que recupera nombres omitidos por el generador en listas largas y celdas de tabla.
+- Correccion de relaciones mediante una cabeza de clasificacion por pares que elimina falsos positivos del generador y recupera falsos negativos.
+- Salida en JSON Graph Format v2 con nodos, aristas, spans de mencion y evidencia.
+- Procesamiento de documentos largos mediante chunking y fusion de entidades entre chunks a traves de la libreria relweave.
+- Servicio del generador mediante vLLM con API compatible con OpenAI, sin necesidad de `--enable-lora` (los LoRA del generador estan fusionados en los pesos de la raiz del repositorio).
+- No soporta tool calling, function calling, agentes multi-step, vision, audio ni modo thinking: es un componente de extraccion, no un modelo conversacional.
 
 ## Casos de uso
 
-- Construccion de grafos de conocimiento sobre informes corporativos: el modelo lee un informe, extrae empresas, personas, cargos y operaciones societarias y devuelve un grafo JSON con evidencia, lo que permite cargarlo directamente en una base de grafos para consultas posteriores.
-- Analisis de operaciones societarias (M&A): con los tipos de relacion de propiedad, filiales y adquisiciones, se pueden reconstruir cadenas de control y matrices de participacion a partir de prensa economica o notas de prensa.
-- Enriquecimiento de bases de datos de CRM o inteligencia de mercado: a partir de articulos y notas, el sistema genera nodos de organizacion y persona con sus relaciones, lo que alimenta fichas de cuentas y mapas de decisores.
-- Pipeline de vigilancia de medios (media monitoring): procesar lotes de noticias en ingles sobre empresas nordicas y europeas y emitir alertas cuando aparece una relacion nueva relevante (un nombramiento, una venta, una adquisicion).
-- Construccion de corpus anotados para entrenar otros modelos: al devolver spans de mencion y evidencia, la salida sirve como preanotacion revisable por humanos en tareas de NER y relation extraction.
-- Indexacion semantica para busqueda sobre documentos internos: transformar informes tecnicos o financieros en grafos permite responder consultas del tipo "que filiales dependen de X" sin recuperacion por similitud de texto.
-- Despliegue en hardware modesto para prototipos: al caber en una GPU de 8 GB junto con la cabeza de pares y procesar unas 96 chunks por minuto, es apto para pruebas de concepto y entornos de desarrollo sin aceleradores de gama alta.
-- Auditoria de documentacion contractual o regulatoria en ingles: extraer partes, roles y eventos con fechas ayuda a construir resumenes estructurados y trazables de documentos largos, siempre con revision humana.
+- Construccion de grafos de conocimiento corporativos: el modelo lee informes anuales, notas de prensa y comunicados y devuelve las entidades (empresas, personas, lugares) y las relaciones tipadas entre ellas, listas para cargar en una base de datos de grafos gracias a la salida en JSON Graph Format v2.
+- Enriquecimiento de bases de datos de clientes B2B: a partir de descripciones libres de empresas, extrae relaciones de propiedad, filiales y cargos ejecutivos para completar fichas CRM con evidencia y spans de mencion.
+- Analisis de documentos legales y judiciales: procesa opiniones judiciales y contratos en ingles para identificar partes, relaciones de propiedad y adquisiciones, con la ventaja de que el chunking y la fusion de entidades de relweave permiten manejar documentos de longitud arbitraria.
+- Monitorizacion de noticias financieras: ejecutado en vLLM a unos 96 chunks por minuto en una RTX 3070 Ti, permite procesar flujos continuos de noticias y detectar cambios de propiedad, nombramientos de ejecutivos y adquisiciones casi en tiempo real.
+- Extraccion de tablas y listas largas: el tagger recupera nombres que el generador omite en listas extensas y celdas de tabla, lo que lo hace adecuado para digitalizar tablas de participadas o consejos de administracion.
+- Deduplicacion y resolucion de entidades entre documentos: la fusion de entidades entre chunks de relweave y las menciones con pronombres y descripciones permiten consolidar referencias a la misma entidad a lo largo de un corpus.
+- Investigacion en extraccion de informacion: sirve como linea base reproducible (generador + cabeza de pares + tagger) para experimentos de relation extraction y coreference sobre dominios de negocio.
 
 ## Benchmarks y rendimiento
 
-F1 estricto de relaciones tipadas (una relacion solo cuenta si tiene el tipo correcto, la direccion correcta y ambas entidades correctas), sobre pasajes de Wikipedia en ingles sobre empresas nordicas y europeas. Los conjuntos de validacion y test no comparten documentos, entidades ni hechos con los datos de entrenamiento.
+Resultados publicados por el autor. F1 estricto de relacion tipada (una relacion cuenta solo con el tipo, la direccion y ambas entidades correctas) sobre pasajes retenidos de Wikipedia en ingles sobre empresas nordicas y europeas.
 
 | Sistema | Validacion | Test |
 |---|---|---|
-| relweave-1.7b-base (generador + cabeza de pares, union) | 0,737 | 0,722 |
-| Generador solo (relweave-1.7b-base) | 0,622 | 0,626 |
-| relweave-4b-base, para comparacion | 0,781 | 0,783 |
+| relweave-1.7b-base (generador + cabeza de pares, union) | 0,733 | 0,716 |
+| Generador solo | 0,622 | 0,626 |
+| relweave-4b-base (comparacion) | 0,781 | 0,783 |
 
-Metricas adicionales reportadas:
+En test, precision 0,781 y recall 0,661; el 1.7B queda 0,067 por debajo del 4B (intervalo de confianza del 95%: 0,030 a 0,108).
 
-| Metrica | Valor |
+Documentos largos no vistos (26 documentos de noticias, notas de prensa y opiniones judiciales, juzgados por dos jueces de lenguaje, hechos contados una vez):
+
+| Sistema | F1 agrupado |
 |---|---|
-| Precision en test (1.7b, sistema completo) | 0,798 |
-| Recall en test (1.7b, sistema completo) | 0,659 |
-| F1 sobre 377 chunks (validacion + test + test nuevo), 1.7b | 0,732 |
-| F1 sobre 377 chunks (validacion + test + test nuevo), 4b | 0,780 |
-| Diferencia 1.7b frente a 4b (377 chunks) | -0,048 (intervalo de confianza del 95 %: 0,030 a 0,067) |
-| F1 en test nuevo de 64 chunks, sistema completo con generador en vLLM | 0,749 |
-| F1 en test nuevo de 64 chunks, sistema completo con backend transformers | 0,736 |
+| relweave-1.7b-base con cabeza nueva y tagger | 0,574 |
+| relweave-1.7b-base con cabeza anterior | 0,515 |
+| relweave-4b-base | 0,597 |
 
-Rendimiento del generador en una RTX 3070 Ti (8 GB), sobre 64 chunks de test de unas 200 palabras:
+La mejora de la cabeza nueva frente a la anterior es de +0,059 (IC 95%: -0,002 a +0,124). En los chunks retenidos ambas cabezas no difieren (0,716 frente a 0,722). El recall agrupado cuenta solo hechos encontrados por algun sistema del pool, por lo que estos F1 son inferiores a los de chunk y deben compararse entre si, no con la tabla anterior.
 
-| Modelo y backend | Throughput | Pesos en memoria vLLM |
-|---|---|---|
-| relweave-1.7b-base, vLLM (bf16) | aproximadamente 96 chunks/min | 3,3 GB (bf16) |
-| relweave-1.7b-base, transformers | aproximadamente 6 chunks/min | no aplica |
-| relweave-4b-base, vLLM (fp8) | aproximadamente 42 chunks/min | 4,2 GB (fp8) |
-| relweave-4b-base, transformers | aproximadamente 4,5 chunks/min | no aplica |
+Rendimiento de inferencia en una RTX 3070 Ti (8 GB), 64 chunks de test de unas 200 palabras:
+
+| Modelo | Generador en vLLM | Generador con transformers | Pesos en memoria (vLLM) |
+|---|---|---|---|
+| relweave-4b-base | unos 42 chunks/min (fp8) | unos 4,5 chunks/min | 4,2 GB (fp8) |
+| relweave-1.7b-base | unos 96 chunks/min (bf16) | unos 6 chunks/min | 3,3 GB (bf16) |
 
 ## Requisitos de hardware
 
-- Se requiere una GPU CUDA, segun la model card; el modelo base esta en 4 bits y el 1.7B consume menos memoria que el 4B.
-- La cabeza de pares se ejecuta siempre en local y necesita unos 3 GB de VRAM libres, ya que requiere los estados ocultos del modelo.
-- En una tarjeta de 8 GB el servidor de 1.7B y la cabeza de pares caben juntos con los siguientes ajustes: `--gpu-memory-utilization 0.52 --max-model-len 3072 --max-num-batched-tokens 1024 --enforce-eager`.
-- GPU medida por el autor: RTX 3070 Ti de 8 GB. No se documentan otras GPU recomendadas (A100, H100, RTX 4090, etc.) en la informacion disponible.
-- Cabe en GPU de consumo segun los datos del autor: si, en una GPU de 8 GB junto con la cabeza de pares.
-- Opciones de despliegue: vLLM (`vllm serve chrullis/relweave-1.7b-base --max-model-len 4096`) o el contenedor oficial `vllm/vllm-openai`; la libreria relweave tambien puede usar el backend de transformers. Probado con vLLM 0.31.
-- Detalle de despliegue: los pesos del repositorio raiz ya llevan el LoRA fusionado, por lo que vLLM no necesita `--enable-lora` ni argumentos de adaptador. El endpoint debe invocarse a traves de relweave con `generator_url`, que ademas ejecuta la cabeza de pares y fusiona entidades entre chunks.
-- Sin CUDA toolkit instalado, hay que arrancar vLLM con `VLLM_USE_FLASHINFER_SAMPLER=0`.
-- Latencia y throughput medidos: aproximadamente 96 chunks/min en vLLM con bf16 y aproximadamente 6 chunks/min con el backend de transformers, sobre chunks de unas 200 palabras.
+- Se requiere una GPU CUDA; el modelo base esta en 4 bits.
+- La cabeza de pares se ejecuta siempre en local dentro de relweave (necesita los estados ocultos del modelo, que vLLM no devuelve) y requiere unos 3 GB libres de VRAM.
+- En una tarjeta de 8 GB caben juntos el servidor del 1.7B y la cabeza de pares con `--gpu-memory-utilization 0.52 --max-model-len 3072 --max-num-batched-tokens 1024 --enforce-eager`.
+- Pesos del generador en vLLM: 3,3 GB en bf16.
+- Despliegue recomendado: vLLM 0.31 o superior (`vllm serve chrullis/relweave-1.7b-base --max-model-len 4096`) o el contenedor oficial `vllm/vllm-openai`. Sin CUDA toolkit instalado, arrancar con `VLLM_USE_FLASHINFER_SAMPLER=0`.
+- Backend alternativo: transformers (unas 6 chunks/min en la RTX 3070 Ti, frente a 96 con vLLM).
+- Throughput estimado: unos 96 chunks/min en vLLM sobre RTX 3070 Ti con chunks de unas 200 palabras. No se han publicado datos de latencia por peticion ni de GPU de datacenter (A100, H100).
+- No se documenta soporte para llama.cpp, Ollama ni TGI; la libreria relweave esta disenada en torno a vLLM y transformers.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | F1 estricto (validacion / test) | Throughput en RTX 3070 Ti 8 GB | Licencia | Disponibilidad |
-|---|---|---|---|---|---|---|
-| relweave-1.7b-base | 1,72 B | no disponible (ejemplos a 4096) | 0,737 / 0,722 | aproximadamente 96 chunks/min (vLLM, bf16); 6 chunks/min (transformers) | Apache 2.0 | Hugging Face, repositorio de 3,7 GB |
-| relweave-4b-base | no disponible en la informacion proporcionada | no disponible | 0,781 / 0,783 | aproximadamente 42 chunks/min (vLLM, fp8); 4,5 chunks/min (transformers) | Apache 2.0 (segun el modelo hermano listado con la misma receta) | Hugging Face |
-| Otros sistemas de extraccion de relaciones tipadas | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
+| Modelo | Parametros | Contexto | F1 test (estricto) | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| relweave-1.7b-base | 1,72 B | 4096 | 0,716 | Apache 2.0 | Hugging Face, via relweave |
+| relweave-4b-base | no disponible en la informacion | no disponible | 0,783 | no disponible en la informacion | Hugging Face, via relweave |
+| Modelos genericos de extraccion (p. ej. LLM grandes con prompting) | variable | variable | no disponible | variable | no disponible |
 
-El autor recomienda explicitamente usar el 4B salvo que la memoria o la velocidad lo impidan: la diferencia agregada sobre 377 chunks es de 0,048 puntos de F1 a favor del 4B, con un intervalo de confianza del 95 % de 0,030 a 0,067.
+La unica comparacion directa publicada es con relweave-4b-base, entrenado con los mismos datos y receta. El 1.7B sacrifica 0,067 de F1 en test y 0,023 en documentos largos no vistos a cambio de mas del doble de throughput en vLLM y menor huella de memoria. No se dispone de datos de benchmarks frente a otros sistemas de extraccion de relaciones en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- Solo soporta ingles; no hay capacidades multilingues documentadas.
-- El esquema es fijo: 6 tipos de entidad y 21 tipos de relacion de ambito empresarial. El modelo no puede extraer relaciones fuera de ese esquema.
-- No es un modelo conversacional ni un asistente: solo responde correctamente cuando se le promptea como fue entrenado y bajo la gramatica por chunk que envia relweave. Usarlo como endpoint de chat directo produce resultados invalidos.
-- Riesgo de alucinacion en las relaciones: el propio diseno incorpora una cabeza de pares precisamente para eliminar las relaciones que el generador inventa, lo que confirma que ese error existe y que el generador por si solo no es fiable (F1 de 0,622 en validacion frente a 0,737 del sistema completo).
-- El recall en test es de 0,659, es decir, aproximadamente un tercio de las relaciones correctas no se recuperan; conviene planificar revision humana en flujos criticos.
-- La evaluacion se limita a pasajes de Wikipedia sobre empresas nordicas y europeas; el rendimiento en otros dominios, generos o registros no esta documentado.
-- No se documentan sesgos especificos, composicion del dataset de entrenamiento ni tokens de entrenamiento, lo que dificulta evaluar cobertura y sesgos por tipo de entidad.
-- La cabeza de pares no puede servirse en vLLM y necesita estados ocultos, de modo que siempre exige ejecucion local en GPU, lo que complica despliegues puramente remotos o serverless.
-- Requiere GPU CUDA; no se documenta soporte para CPU ni para aceleradores no NVIDIA.
-- El modelo tiene 0 descargas y 0 likes en el momento de la consulta, y fue creado y actualizado el 7 de octubre de 2026: no hay historial de uso ni validacion independiente por parte de terceros.
-- Aunque la licencia del modelo es Apache 2.0, conviene verificar las condiciones del dataset `chrullis/relweave-business-data` y del modelo base antes de un uso comercial.
-- La busqueda web realizada no devolvio resultados relevantes sobre este modelo (unicamente resultados de spam sin relacion); no hay papers, demos ni articulos independientes disponibles.
+- Solo soporta ingles; no se ha entrenado ni evaluado en otros idiomas.
+- El esquema es fijo: 6 tipos de entidad y 21 tipos de relacion de negocio. No es configurable ni extensible sin reentrenamiento.
+- No es un modelo de chat: solo responde en el formato de lineas de relweave cuando se le pide como fue entrenado y se decodifica bajo la gramatica por chunk que envia la libreria. Llamarlo directamente sin relweave produce salidas no utilizables.
+- Riesgo de alucinacion en relaciones: el generador solo alcanza F1 0,626 sin la cabeza de pares; la correccion depende de que la cabeza se ejecute en local con acceso a los estados ocultos.
+- El conjunto de test presenta solapamiento residual con el entrenamiento (14% de nombres de persona y empresa), lo que puede inflar ligeramente las metricas.
+- En documentos largos no vistos el F1 agrupado baja a 0,574, con un intervalo de confianza que incluye el cero en la mejora de la cabeza nueva (-0,002 a +0,124): la ventaja no es concluyente estadisticamente.
+- Requiere GPU CUDA; no hay soporte documentado para CPU, llama.cpp u Ollama.
+- La licencia Apache 2.0 permite uso comercial, pero el modelo base Qwen3 y el dataset deben verificarse por separado; no se detalla en la informacion disponible la licencia de relweave-4b-base ni del dataset `chrullis/relweave-business-data`.
+- La version de PyPI de la libreria relweave aun no esta publicada; la instalacion es via `pip install git+https://github.com/memlocator/relweave`.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/chrullis/relweave-1.7b-base
-- Variante mayor, relweave-4b-base: https://huggingface.co/chrullis/relweave-4b-base
+- Variante mayor: https://huggingface.co/chrullis/relweave-4b-base
+- Repositorio de la libreria: https://github.com/memlocator/relweave
 - Dataset de entrenamiento: https://huggingface.co/datasets/chrullis/relweave-business-data
-- Modelo base utilizado: https://huggingface.co/unsloth/qwen3-1.7b-unsloth-bnb-4bit
-- Repositorio de la libreria relweave: https://github.com/memlocator/relweave
-- Papers, blogs o demos adicionales: no disponible (la busqueda web no devolvio resultados relevantes)
+- Modelo base: https://huggingface.co/unsloth/qwen3-1.7b-unsloth-bnb-4bit
+- Contenedor oficial de vLLM: `vllm/vllm-openai` (Docker Hub)

@@ -2,97 +2,89 @@
 
 ## Resumen
 
-Cascade-9B-Instruct es un modelo de lenguaje denso, decoder-only, presentado por el autor TUaxhuiax bajo el identificador de repositorio `TUaxhuiax/filesystem-terminal-huggingface-2301-b5687d`. Segun la model card, se trata de un modelo afinado para seguir instrucciones, razonamiento de formato largo y uso estructurado de herramientas, con 9.100 millones de parametros y una ventana de contexto de 32.768 tokens. Los pesos se distribuyen en dos shards que el runtime debe cargar conjuntamente.
+Sonora ENVCLF v2.1.0 es un clasificador de sonidos ambientales compacto desarrollado por Sonora Labs (publicado en Hugging Face bajo el identificador `TUaxhuiax/filesystem-terminal-huggingface-2301-b5687d`). Se trata de un ajuste fino del codificador de audio Aurora (`sonora/aurora-audio-encoder`) orientado a reconocer diez clases de sonidos cotidianos a una frecuencia de muestreo de 16 kHz, con el objetivo declarado de monitorizacion acustica en dispositivo (on-device) para edificios inteligentes y espacios publicos.
 
-La informacion disponible procede exclusivamente de la model card del autor y de los metadatos del repositorio en Hugging Face. El repositorio figura con un tamano de 0.0 GB y cero descargas, lo que resulta incoherente con un modelo de 9.1B parametros: los pesos reales no estan presentes en el repositorio o no son accesibles publicamente. Esta discrepancia debe tenerse en cuenta antes de cualquier evaluacion practica.
+El modelo resuelve el problema del etiquetado automatico de escenas acusticas y el conteo de eventos sonoros, tareas habituales en domotica, mantenimiento predictivo de instalaciones y paneles de monitorizacion ambiental. Su propuesta de valor es la ligereza: el repositorio ocupa 0,0 GB y los pesos se distribuyen en formato safetensors, lo que sugiere un modelo pequeno pensado para inferencia en el borde (edge computing) sin depender de GPU de datacenter.
 
-El modelo se publica bajo licencia MIT, lo que permite redistribucion y uso comercial segun los terminos de dicha licencia. La relevancia potencial radica en su ventana de contexto y en las cifras de benchmarks declaradas, pero la ausencia de pesos verificables y de documentacion tecnica detallada limita seriamente su reproducibilidad.
+La relevancia actual del modelo es limitada pero concreta: cubre un nicho (clasificacion de audio ambiental en ingles, licencia Apache 2.0 permisiva) donde las alternativas suelen ser modelos de audio de proposito general mucho mas pesados. La model card es escasa en datos cuantitativos: no publica cifras de parametros, contexto de audio ni resultados numericos de benchmarks, y remite a figuras y tablas externas que no estan disponibles en la informacion proporcionada.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only denso, pre-norm, con grouped-query attention y rotary positional embeddings (RoPE) |
-| Parametros totales | 9.1B |
-| Parametros activos | no aplica (modelo denso) |
-| Longitud de contexto | 32.768 tokens |
+| Arquitectura | Codificador de audio Aurora (`sonora/aurora-audio-encoder`) con cabeza de clasificacion |
+| Parametros totales | no disponible |
+| Parametros activos | no aplica (no es MoE) |
+| Longitud de contexto | no disponible (audio de entrada a 16 kHz; duracion de ventana no especificada) |
 | Tipos de cuantizacion | no disponible |
-| Idiomas soportados | no disponible |
-| Licencia | MIT |
-| Formato de pesos | no disponible (la model card indica dos shards; no se especifica safetensors ni GGUF) |
+| Idiomas soportados | en (ingles) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | safetensors |
+| Tarea | audio-classification (10 clases de sonido ambiental) |
+| Frecuencia de muestreo | 16 kHz |
+| Dataset de entrenamiento | `sonora/esc-clean-v3` |
+| Metrica declarada | accuracy, F1 |
+| Libreria | transformers |
+| Version | v2.1.0 (release candidate `s7-3318`) |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura descrita es un transformer decoder-only estandar con normalizacion pre-norm, atencion con grouped-query attention y embeddings posicionales rotatorios. No se documenta el numero de capas, la dimension oculta, el numero de cabezas de atencion ni la configuracion exacta de los grupos de query, por lo que no es posible reconstruir el modelo a partir de la informacion publicada.
+La informacion disponible indica que el modelo parte del codificador de audio Aurora y anade una cabeza de clasificacion para diez clases de sonido ambiental. La model card incluye referencias a diagramas de arquitectura (`diagrams/architecture.svg`) y curvas de entrenamiento a lo largo de 12 epocas (perdida de entrenamiento y exactitud de validacion), pero los valores numericos de esas curvas no se han publicado en la informacion accesible. No se especifica el tipo exacto de codificador (transformer, CNN o hibrido), el numero de parametros ni la composicion detallada del corpus de entrenamiento.
 
-En cuanto al entrenamiento, la model card menciona una etapa final con schedule de decaimiento coseno y una tasa de aprendizaje maxima de 2e-5, con la perdida estabilizandose tras aproximadamente 42.000 pasos. La fecha de corte de los datos de entrenamiento es el 30 de abril de 2026. No se especifica el volumen de tokens, la composicion del dataset, ni si se aplicaron tecnicas de RLHF, DPO o similar. Tampoco se detallan innovaciones tecnicas adicionales como decodificacion especulativa o atencion lineal.
+El ajuste fino se realizo sobre el dataset `sonora/esc-clean-v3`, presumiblemente una version depurada de un corpus de escenas acusticas. No hay evidencia en la informacion proporcionada de que se hayan aplicado tecnicas de RLHF, DPO ni decodificacion especulativa; se trata de un clasificador supervisado convencional, no de un modelo generativo. Tampoco se documentan innovaciones tecnicas destacables mas alla del propio codificador base.
 
 ## Capacidades
 
-- Generacion de texto y seguimiento de instrucciones, segun la model card.
-- Razonamiento de formato largo (long-form reasoning).
-- Uso estructurado de herramientas (structured tool use), segun la descripcion del autor.
-- Generacion de codigo, con un resultado declarado de 72.6 en HumanEval.
-- Razonamiento matematico, con un resultado declarado de 89.1 en GSM8K.
-- Capacidades multilingues: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible de forma explicita; el uso de herramientas estructuradas sugiere cierta aptitud, pero no se documenta.
-- Modo de pensamiento (thinking mode), vision o audio: no disponible.
+- Clasificacion de audio ambiental en diez clases de sonidos cotidianos (las clases concretas no se enumeran en la informacion disponible).
+- Procesamiento de audio a 16 kHz, adecuado para captura de microfonos de bajo coste y dispositivos embebidos.
+- Etiquetado de escenas acusticas (acoustic scene tagging).
+- Conteo de eventos sonoros para paneles de monitorizacion.
+- Generacion de alertas de mantenimiento de edificios a partir de sonidos detectados.
+- Inferencia on-device: el modelo esta disenado para ejecutarse localmente, sin enviar audio a la nube.
+- No soporta tool calling, function calling, agentes ni razonamiento multi-paso: es un clasificador, no un modelo de lenguaje.
+- No tiene capacidades multimodales mas alla del audio de entrada ni modo "thinking".
 
 ## Casos de uso
 
-- Asistentes internos de investigacion: el modelo se declara destinado a cargas de trabajo internas de asistente y evaluacion, con una ventana de 32.768 tokens que permite mantener contexto de documentos tecnicos extensos en una sola conversacion.
-- Generacion de codigo en pipelines de desarrollo: el resultado declarado de 72.6 en HumanEval y el soporte de uso estructurado de herramientas lo hacen candidato para tareas de autocompletado, refactorizacion y generacion de tests, siempre que se verifiquen los pesos.
-- Razonamiento matematico asistido: con 89.1 en GSM8K, puede emplearse en herramientas de resolucion de problemas aritmeticos de varios pasos y en la generacion de explicaciones paso a paso.
-- Evaluacion comparativa de modelos: su licencia MIT y su tamano de 9.1B lo convierten en un candidato para experimentos de benchmarking frente a modelos de la misma escala, aunque la falta de pesos accesibles bloquea esta aplicacion en la practica.
-- Prototipado de agentes con tool calling: la mencion a uso estructurado de herramientas permite disenar flujos de agente que invoquen APIs externas, con la salvedad de que no se documenta el formato exacto de las llamadas.
-- Procesamiento de documentacion larga: la ventana de 32.768 tokens admite resumen y extraccion de informacion sobre contratos, manuales o articulos tecnicos de extension media.
-- Fine-tuning interno: al ser un modelo denso de 9.1B con licencia permisiva, podria servir como base para ajuste supervisado en dominios verticales, condicionado a la disponibilidad efectiva de los pesos.
+- Monitorizacion acustica de edificios inteligentes: el modelo etiqueta en tiempo real los sonidos captados por microfonos distribuidos y alimenta un panel central con el conteo de eventos por clase, aprovechando su diseno on-device para evitar transmitir audio sensible.
+- Mantenimiento predictivo de instalaciones: la deteccion de clases asociadas a fallos (por ejemplo, ruidos de maquinaria o alarmas) permite generar alertas tempranas sin inspeccion humana continua.
+- Domotica y automatizacion del hogar: integrado en un asistente local, el clasificador puede disparar rutinas (subir persianas ante sonidos de manana, activar ventilacion ante ruidos concretos) con baja latencia y sin conexion.
+- Analitica de espacios publicos: conteo agregado y anonimo de eventos sonoros en estaciones, aeropuertos o bibliotecas para estudios de ocupacion y confort acustico.
+- Etiquetado de datasets de audio: uso como pre-etiquetador para acelerar la anotacion manual de grandes corpus de sonidos ambientales, con revision humana posterior.
+- Investigacion en clasificacion de audio: modelo base ligero y con licencia permisiva para experimentar con tecnicas de aumento de datos, destilacion o ajuste a nuevas clases.
+- Filtrado previo en pipelines de voz: descartar segmentos de audio que no contienen voz antes de pasarlos a un sistema de reconocimiento del habla, reduciendo coste computacional.
 
 ## Benchmarks y rendimiento
 
-| Benchmark | Cascade-9B-Instruct | Release anterior |
-|---|---|---|
-| MMLU | 78.4 | 75.9 |
-| GSM8K | 89.1 | 85.3 |
-| HumanEval | 72.6 | 69.8 |
-| IFEval | 84.2 | 81.0 |
-
-Los datos proceden de la tabla incluida en la model card. No se especifica la version del release anterior ni la metodologia de evaluacion (zero-shot, few-shot, configuracion de muestreo), por lo que las cifras no son directamente comparables con resultados publicados de otros modelos sin una replicacion independiente.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card declara el uso de las metricas accuracy y F1 y remite a tablas de evaluacion por clase (`tables/eval_tables.md`) y a una matriz de confusion (`figures/eval/confusion_matrix.png`), pero ninguno de esos valores numericos aparece en la informacion proporcionada.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia en FP16/BF16: aproximadamente 18-19 GB solo para los pesos, mas overhead de activaciones y cache KV; en la practica se recomienda un minimo de 24 GB.
-- VRAM estimada en cuantizacion de 8 bits: en torno a 10-11 GB para los pesos.
-- VRAM estimada en cuantizacion de 4 bits: en torno a 5-6 GB para los pesos, con degradacion de calidad no documentada.
-- GPU recomendadas: A100 40/80 GB, H100, L40S o RTX 4090 (24 GB) para FP16 con contexto moderado.
-- GPU de consumo: cabe en RTX 4090 y RTX 3090 en FP16 con contexto limitado; en cuantizacion de 4 u 8 bits podria caber en GPUs de 12-16 GB, aunque no se han publicado mediciones.
-- Opciones de despliegue: al estar etiquetado con `transformers` y `endpoints_compatible`, el despliegue natural es mediante la libreria Transformers y endpoints compatibles; no se confirma soporte de vLLM, llama.cpp, Ollama o TGI, ni la existencia de pesos en GGUF.
-- Latencia y throughput: no disponible.
+- VRAM estimada para inferencia: no disponible con precision; el tamano del repositorio (0,0 GB) sugiere un modelo de pocos millones de parametros que cabria holgadamente en cualquier GPU consumer.
+- GPU recomendadas: no especificadas por el autor. Por el perfil del modelo (clasificador de audio a 16 kHz), es probable que funcione en CPU y en GPUs de gama baja, pero no hay datos oficiales.
+- Cabe en GPU consumer: muy probablemente si, dado el tamano del repositorio, aunque no se confirma en la informacion disponible.
+- Opciones de despliegue: al usar la libreria `transformers` y pesos safetensors, es compatible con pipelines de Hugging Face y con servidores de inferencia que soporten transformers. No se documenta soporte de llama.cpp, Ollama, vLLM ni TGI (herramientas orientadas a modelos de lenguaje, no a clasificadores de audio).
+- Latencia y throughput estimados: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Disponibilidad de pesos |
-|---|---|---|---|---|
-| Cascade-9B-Instruct | 9.1B | 32.768 | MIT | No verificada (repo de 0.0 GB) |
-| Alternativas de la misma escala | no disponible | no disponible | no disponible | no disponible |
-
-No se dispone de informacion suficiente para establecer una comparativa fiable con modelos alternativos de la misma categoria, dado que la model card no identifica modelos de referencia ni se han podido verificar los pesos del modelo.
+No disponible. La informacion proporcionada no incluye modelos comparables de la misma categoria (clasificadores de sonido ambiental ligeros) ni datos de rendimiento que permitan una comparacion rigurosa. El unico punto de referencia interno es el codificador base `sonora/aurora-audio-encoder`, del que tampoco se ofrecen especificaciones en esta ficha.
 
 ## Limitaciones y advertencias
 
-- El repositorio figura con un tamano de 0.0 GB y cero descargas, lo que sugiere que los pesos no estan publicados o no son accesibles; sin pesos verificables no es posible reproducir ningun resultado.
-- Las cifras de benchmarks proceden unicamente de la model card y no han sido validadas de forma independiente; no se documenta la metodologia de evaluacion.
-- No se especifican los idiomas soportados ni el comportamiento multilingue.
-- No se detalla la composicion del dataset de entrenamiento, por lo que no es posible evaluar sesgos conocidos ni riesgos de contaminacion de benchmarks.
-- Riesgo de alucinacion inherente a los modelos generativos; el autor recomienda revision humana en decisiones medicas, legales o de seguridad critica.
-- La licencia MIT permite uso comercial y redistribucion, pero el usuario asume la responsabilidad sobre el cumplimiento normativo en aplicaciones reguladas.
-- La fecha de corte de entrenamiento (30 de abril de 2026) implica que el modelo no conoce eventos posteriores.
-- No se documenta el formato de pesos, el tokenizador ni la plantilla de chat, lo que complica la integracion en produccion.
-- La model card incluye referencias a rutas de ficheros de ejemplo que el propio autor aclara que no forman parte de la release, lo que refuerza la necesidad de verificar el contenido real del repositorio.
+- El rendimiento cae en grabaciones con reverberacion intensa, segun reconoce el propio autor.
+- Las clases infrarrepresentadas en el corpus de entrenamiento presentan peor exactitud.
+- La clase "ruido de fondo" es un cajon de sastre y no debe interpretarse como una deteccion positiva.
+- El modelo no es apto para vigilancia critica para la seguridad ni para identificar hablantes individuales; el autor exige procesamiento on-device del audio.
+- Solo soporta ingles como idioma declarado, lo que limita su uso en entornos castellanoparlantes sin reentrenamiento o validacion adicional.
+- Riesgo de alucinacion no aplica en sentido estricto (no es generativo), pero si existe riesgo de falsos positivos y falsos negativos en la clasificacion, especialmente en entornos ruidosos.
+- La model card es muy incompleta: no publica numero de parametros, clases exactas, cifras de benchmarks ni detalles del dataset, lo que dificulta evaluar su calidad antes de desplegarlo.
+- Licencia Apache 2.0: permite uso comercial y modificacion con atribucion, pero conviene revisar el texto completo de la licencia y la del modelo base Aurora.
+- El identificador del repositorio (`filesystem-terminal-huggingface-2301-b5687d`) y la fecha de creacion (2026) resultan atipicos; conviene verificar la procedencia y autenticidad del artefacto antes de usarlo en produccion.
 
 ## Enlaces
 
-- Repositorio en Hugging Face: https://huggingface.co/TUaxhuiax/filesystem-terminal-huggingface-2301-b5687d
-- Documentacion referenciada en la model card: https://docs.cascade-intel.example/cascade-9b (dominio de ejemplo, no verificado)
-- Repositorio relacionado del mismo autor: https://huggingface.co/TUaxhuiax/filesystem_terminal_huggingface_7597-release-c7d2e91a
-- Dataset relacionado del mismo autor: https://huggingface.co/datasets/TUaxhuiax/huggingface_terminal_filesystem_321_a7f3c9d2-orion
+- Modelo en Hugging Face: https://huggingface.co/TUaxhuiax/filesystem-terminal-huggingface-2301-b5687d
+- Modelo base: https://huggingface.co/sonora/aurora-audio-encoder
+- Dataset de entrenamiento: https://huggingface.co/datasets/sonora/esc-clean-v3
+- Informe tecnico de Sonora Labs sobre la familia ENVCLF: citado en la model card, sin URL disponible en la informacion proporcionada.

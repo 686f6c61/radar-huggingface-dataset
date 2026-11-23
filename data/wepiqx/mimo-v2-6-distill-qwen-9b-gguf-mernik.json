@@ -50,31 +50,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Google",
-      "url": "https://www.google.it/",
-      "snippet": "Search the world's information, including webpages, images, videos and more. Google has many special features to help you find …"
-    },
-    {
-      "title": "Google",
-      "url": "https://www.google.com/?hl=it-it",
-      "snippet": "Pubblicità Informazioni su Google Google.com in English © 2026 - Privacy - Termini"
-    },
-    {
-      "title": "Accedi - Account Google",
-      "url": "https://accounts.google.com/login?hl=it",
-      "snippet": "Non si tratta del tuo computer? Utilizza una finestra di navigazione privata per accedere. Scopri di più sull'utilizzo della modalità …"
-    },
-    {
-      "title": "Google",
-      "url": "https://www.google.com.nf/webhp?gl=nf&hl=en&gws_rd=cr&pws=0",
-      "snippet": "Advertising Business Solutions About Google Google.com © 2026 - Privacy - Terms"
-    },
-    {
-      "title": "Google",
-      "url": "http://www.google.gp/webhp?hl=it",
-      "snippet": "Google offerto in: English Pubblicità Informazioni su Google Google.com"
-    }
-  ]
+  "sources": []
 }

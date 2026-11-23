@@ -48,16 +48,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Phonon-2.5 English · Fermion Research",
-      "url": "https://www.fermionresearch.com/models/phonon-2-5-english/",
-      "snippet": "Phonon-2.5 English downloads, benchmarks and runtimes. A 158 MB open speech recognition model for English at 4.82 % average word error on the seven Open ASR ..."
-    },
-    {
-      "title": "FermionResearch/Phonon-2.5-English · Hugging Face",
-      "url": "https://huggingface.co/FermionResearch/Phonon-2.5-English",
-      "snippet": "Phonon-2.5 English is an open speech recognition model for English in a 157.6 MB download. Across the Open ASR Leaderboard's seven English sets it averages 4.82 % word error, against 4.94 % for Underdog Bark 3.0, the other low-bit model of this size, and 5.21 % for Phonon-2. It is better than Phonon-2 on all seven sets. The same file runs on Apple silicon and on Linux and Windows CPUs, with no ..."
-    }
-  ]
+  "sources": []
 }

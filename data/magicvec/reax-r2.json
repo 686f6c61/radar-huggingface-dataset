@@ -1,0 +1,51 @@
+{
+  "schema": 2,
+  "id": "magicvec/reax-r2",
+  "slug": "magicvec-reax-r2",
+  "author": "magicvec",
+  "url": "https://huggingface.co/magicvec/reax-r2",
+  "created_at": "2026-11-22T23:25:31.000Z",
+  "updated_at": "2026-11-22T23:27:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gemma4",
+    "decision-model",
+    "base_model:MachinePulseAI/karpo-decision-31B",
+    "base_model:finetune:MachinePulseAI/karpo-decision-31B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 31273088876,
+  "parameters_human": "31.27B",
+  "storage_bytes": 62583982530,
+  "storage_human": "62.6 GB",
+  "context_length": null,
+  "base_model": "MachinePulseAI/karpo-decision-31B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "REAX - Subnet Alpha",
+      "url": "http://go/v1/AfwELG0qJHTTawN6RAGIhxZjYIBOYXuK02ToLJlngXZS8eHPcHO9HsRl79werm5h-H4NXX_BpGRDHGhJg4dJuRzMvXH5zUYnqwmVLtDD2LI-jK32AjKgztc5Fw66EZSBHRw0JkbaJqAf7pQqSb0lOhK3nHXCFSILdjQkaLQSWay5Z2tpZI1z_r4a0-3h7xGR287TlVUJ",
+      "snippet": "Admission of contracted EU operators for regulated (GDPR, EU AI Act) traffic. A fine-tuning service that produces custom fine-tuned decision models, with miners competing to produce better ones (not yet specified). ... REAX publishes a project roadmap at reax.dev/roadmap."
+    }
+  ]
+}

@@ -56,31 +56,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Chatroom2000 – Kostenloser Chat ohne Anmeldung",
-      "url": "https://www.chatroom2000.de/",
-      "snippet": "CHAT, FLIRT, DATE Mit deinem eigenem Fotoprofil und vielen kostenlosen Extras wie Gewinnspiele, Quiz, usw."
-    },
-    {
-      "title": "Chat Login – Chatroom2000",
-      "url": "https://www.chatroom2000.de/chat-login/",
-      "snippet": "Ohne Anmeldung kannst du direkt loschatten. Die Bedienung ist sehr einfach und übersichtlich. Dieses Portal ist auch für Chat …"
-    },
-    {
-      "title": "Free Chat Now - Free Chat",
-      "url": "https://www.freechatnow.com/chat/free",
-      "snippet": "Free chat is the core of Free Chat Now – one of the longest-running places to meet potential new friends and talk with people …"
-    },
-    {
-      "title": "Free Chat Now - Adult Chat",
-      "url": "https://www.freechatnow.com/chat/adult?username=guest",
-      "snippet": "A room for chat of an adult, sexual nature. Trade sexy pictures and stories, flirt, sext, or just watch. 18+ ONLY."
-    },
-    {
-      "title": "Free Chat Now - Roleplay Chat",
-      "url": "https://www.freechatnow.com/chat/roleplay",
-      "snippet": "Online roleplay chat lets you break free from who you are in your day-to-day life and step into any role you wish. You could be the …"
-    }
-  ]
+  "sources": []
 }

@@ -2,107 +2,103 @@
 
 ## Resumen
 
-Qwen3.5-2B for Fluent Books (v3) es un ajuste fino mediante LoRA del modelo base Qwen/Qwen3.5-2B, desarrollado por el usuario lazarenkod para la aplicación de lectura Fluent Books, un lector de inglés dirigido a hablantes nativos de ruso. El modelo está fusionado con el base, cuantizado a Q4_K_M con matriz de importancia (imatrix) y distribuido como un único archivo GGUF para ejecución en llama.cpp dentro de la propia aplicación. Con 1.942.653.248 parámetros totales, está pensado para inferencia en dispositivo, no para servidores de alta concurrencia.
+Qwen3.5-2B for Fluent Books (v3) es un ajuste fino mediante LoRA del modelo base Qwen/Qwen3.5-2B, desarrollado por el usuario lazarenkod para la aplicación de lectura Fluent Books, un lector de inglés dirigido a hablantes nativos de ruso. El modelo se distribuye unicamente como archivo GGUF cuantizado en Q4_K_M con matriz de importancia (imatrix), pensado para ejecutarse en llama.cpp dentro de la propia aplicación, que descarga un unico archivo de 1.312.164.544 bytes.
 
-El modelo no es un traductor general, sino un asistente de lectura especializado: traduce frases del inglés al ruso, elige el sentido correcto de una palabra dentro de su contexto, explica palabras y puntos gramaticales, extrae el sujeto y el verbo principal de oraciones largas y verifica si una expresión inglesa se usa realmente en una frase. Su relevancia radica en que demuestra cómo un modelo de 2B parámetros, ajustado con datos cuidadosamente filtrados y evaluado con jueces ciegos, puede igualar o superar a traductores comerciales del sistema (Apple Translation) en tareas concretas de lectura asistida.
+El modelo no es un asistente generalista: está especializado en tareas concretas de apoyo a la lectura en inglés para rusohablantes, como la traducción de frases EN→RU, la selección del sentido diccionarial de una palabra según su contexto (salida JSON con `ru` y `sense`), explicaciones breves en ruso de palabras o puntos gramaticales, la extracción del sujeto y verbo principal de una oración larga, y una comprobación binaria (0/1) de si una expresión inglesa se usa realmente en una frase.
 
-La versión v3 mantiene el mismo tamaño y los mismos prompts que v2, pero amplía el conjunto de entrenamiento a 49.936 ejemplos e incorpora casos difíciles adicionales (expresiones, trampas gramaticales, pares alineados de traducciones humanas de dominio público). La licencia es Apache 2.0, heredada del modelo base de Alibaba Cloud.
+Su relevancia radica en que demuestra un flujo de trabajo de ajuste fino muy específico sobre un modelo pequeño (1.942.653.248 parámetros reales) con datos sintéticos generados por agentes Claude Sonnet 5.5 y verificados por modelos Gemma 4, logrando mejoras medibles frente a la versión anterior (v2), el modelo base y el traductor del sistema Apple en tareas de trampas gramaticales y elección de sentido. La licencia es Apache 2.0, heredada del modelo base.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer (modelo base Qwen/Qwen3.5-2B), ajuste fino LoRA fusionado |
-| Parámetros totales | 1.942.653.248 |
-| Parámetros activos | no disponible (no es MoE) |
+| Arquitectura | Transformer (derivada de Qwen/Qwen3.5-2B), ajuste fino LoRA fusionado y cuantizado |
+| Parametros totales | 1.942.653.248 |
+| Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantización | Q4_K_M con matriz de importancia (imatrix); el repo contiene únicamente el GGUF Q4_K_M |
-| Idiomas soportados | inglés (en) y ruso (ru) |
+| Tipos de cuantizacion | Q4_K_M (con importance matrix); unico archivo publicado |
+| Idiomas soportados | en, ru |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (archivo `qwen3.5-2b-ft-v3.Q4_K_M.gguf`, 1.312.164.544 bytes) |
+| Formato de pesos | GGUF (`qwen3.5-2b-ft-v3.Q4_K_M.gguf`) |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de la arquitectura transformer de Qwen3.5-2B y se ajusta con LoRA de rango 32 aplicado a todas las capas lineales, con escala 20, durante 2 épocas (12.484 pasos), tasa de aprendizaje 1e-5, batch de 8 y cálculo de pérdida únicamente sobre la respuesta. El entrenamiento se realizó con MLX en un Mac. Posteriormente, el adaptador se fusiona con el modelo base y se cuantiza a Q4_K_M con imatrix.
+El modelo parte de Qwen/Qwen3.5-2B, un transformer de aproximadamente 1.940 millones de parámetros, sobre el que se aplicó un ajuste fino LoRA con rango 32 en todas las capas lineales, escala 20, durante 2 épocas (12.484 pasos), con tasa de aprendizaje 1e-5, batch de 8 y cálculo de pérdida solo sobre la respuesta. El entrenamiento se realizó con MLX en un Mac. Posteriormente, el adaptador se fusionó con el modelo base y se cuantizó a Q4_K_M usando una matriz de importancia.
 
-El conjunto de entrenamiento consta de 49.936 ejemplos distribuidos en varias tareas: 13.752 frases ordinarias inglés→ruso extraídas de novelas de dominio público de Project Gutenberg con traducciones generadas por agentes Claude Sonnet 5.5; 1.974 casos de género, 1.644 de «you» dirigido a varias personas y 3.466 de nombres que también son palabras comunes; 7.352 expresiones reales y 1.982 falsas (incluidos contextos de unas 680 expresiones y phrasal verbs añadidos en v3); 2.160 trampas de traducción por tipo (pasiva, modal perfecto, inversión, escisión, cláusula de participio, sujeto gerundio, modismos, falsos amigos); 6.292 pares alineados de traducciones humanas de dominio público (Twain/Engelhardt, Swift/Frankovsky, Wells/Pimenova, Wells/Morozov, Haggard/Bekertova, London/Vershina) alineados con LaBSE y confianza ≥ 0,70; 7.851 ejemplos de elección de sentido léxico basados en el acuerdo de Gemma 4 26B-A4B y 31B con probabilidad ≥ 0,9; 962 explicaciones de palabras, 728 de gramática y 590 esqueletos de oración generados por Claude Sonnet 5.5; y 1.183 comprobaciones de expresión (0/1) basadas en el acuerdo de los mismos modelos Gemma.
+El conjunto de entrenamiento consta de 49.936 ejemplos, compuesto por frases de novelas de dominio público (Project Gutenberg) traducidas por agentes Claude Sonnet 5.5, casos difíciles de género, tratamiento de «you» a varios interlocutores y nombres que son palabras comunes, expresiones reales y falsas (incluidos contextos de unas 680 expresiones y phrasal verbs añadidos para la v3), trampas de traducción clasificadas por tipo (pasiva, modal perfecto, inversión, cleft, cláusula de participio, sujeto gerundio, modismos, falsos amigos), pares de frases alineadas de traducciones humanas de dominio público (Twain/Engelhardt, Swift/Frankovsky, Wells/Pimenova, Wells/Morozov, Haggard/Bekertova, London/Vershina) alineadas con LaBSE a confianza ≥ 0,70, elección de sentido diccionarial (respuestas en las que Gemma 4 26B-A4B y 31B coinciden con probabilidad ≥ 0,9), explicaciones de palabras y gramática, esqueleto oracional y comprobación de expresiones (0/1). Se excluyeron frases de libros de texto y de los conjuntos de evaluación (verificado por coincidencia exacta y solapamiento de 8 palabras), así como «The Picture of Dorian Gray» y los libros reservados del test de expresiones. Se eliminaron filas de traducción rechazadas por dos jueces independientes (unas 980 en v2 y 1.421 más en v3, de las cuales 1.092 eran pares humanos rechazados por alineación laxa o renderización libre).
 
-El formato de prompt es ChatML con un bloque de pensamiento vacío tras la etiqueta del asistente (`<think>\n\n</think>\n\n`), exactamente como lo envía la aplicación. Se excluyeron oraciones de libros de texto y de los conjuntos de evaluación (verificado por coincidencia exacta y por solapamiento de 8 palabras), así como «The Picture of Dorian Gray» y las oraciones de todos los conjuntos gold. Se eliminaron filas de traducción rechazadas por dos jueces independientes (unas 980 en v2 y 1.421 más en v3, de las cuales 1.092 eran pares humanos rechazados por alineación laxa o traducción libre).
+El formato de prompt es ChatML con un bloque de pensamiento vacío tras la etiqueta del asistente (`<think>\n\n</think>\n\n`), exactamente como lo envía la aplicación. El modelo está entrenado sobre los prompts propios de la app y funciona mejor con ellos.
 
 ## Capacidades
 
-- Traducción de frases del inglés al ruso, optimizada para oraciones de novelas.
-- Elección del sentido correcto de una palabra dentro de su contexto, con salida JSON `{"ru": "...", "sense": N}`.
-- Explicación breve en ruso de una palabra o de un punto gramatical dentro de su oración.
-- Extracción del sujeto y el verbo principal de oraciones largas.
-- Comprobación binaria (0/1) de si una expresión inglesa se usa realmente en una oración.
-- Manejo de casos difíciles: género, «you» dirigido a varias personas, nombres que también son palabras comunes, pasivas, modales perfectos, inversiones, escisiones, cláusulas de participio, sujetos gerundio, modismos y falsos amigos.
-- Capacidad conversacional básica heredada del modelo base (tag `conversational`), aunque el ajuste está orientado a las tareas de la aplicación.
-- Soporte de tool calling / function calling: no disponible en la información proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
-- Capacidades de visión o audio: no disponibles.
+- Traducción de frases inglés→ruso en el dominio de novelas y textos literarios.
+- Elección del sentido diccionarial de una palabra según su contexto, con salida JSON `{"ru": "...", "sense": N}`.
+- Explicación breve en ruso de una palabra o de un punto gramatical dentro de su frase.
+- Extracción del sujeto y el verbo principal de una oración larga (esqueleto oracional).
+- Comprobación binaria (0/1) de si una expresión inglesa se usa realmente en una frase, con probabilidad calibrada (AUC 0,81).
+- Manejo de casos difíciles: género, «you» dirigido a varios interlocutores, nombres que son palabras comunes, pasiva, modal perfecto, inversión, cleft, cláusula de participio, sujeto gerundio, modismos y falsos amigos.
+- Soporte de tool calling / function calling: no disponible.
+- Soporte de agentes y razonamiento multi-paso: no disponible (el bloque de pensamiento se envía vacío).
+- Capacidades multilingües: limitadas a en→ru según la model card; no evaluado para otras lenguas.
+- Capacidades especiales: modo de pensamiento desactivado por diseño (bloque `<think>` vacío); sin visión ni audio.
 
 ## Casos de uso
 
-- Asistente de lectura integrado en aplicación móvil: el modelo traduce frases de novelas inglesas al ruso en el dispositivo mediante llama.cpp, sin conexión a servidores, gracias a su tamaño de 2B parámetros y su cuantización Q4_K_M de 1,3 GB.
-- Diccionario contextual: dado un término ambiguo en una oración, devuelve el sentido correcto en ruso con la estructura JSON `{"ru": "...", "sense": N}`, útil para lectores que necesitan desambiguación léxica precisa.
-- Explicación gramatical para estudiantes: genera explicaciones breves en ruso de puntos gramaticales dentro de una oración concreta, lo que permite a un lector no experto entender construcciones como pasivas o modales perfectos.
-- Análisis sintáctico ligero: extrae sujeto y verbo principal de oraciones largas para ayudar a lectores a descomponer estructuras complejas de la prosa literaria inglesa.
-- Verificación de expresiones y phrasal verbs: comprueba si una expresión inglesa se usa realmente en una oración concreta (salida 0/1), útil para ejercicios de comprensión o para validar ejemplos generados.
-- Detección de falsos amigos y trampas de traducción: el ajuste específico en pasivas, inversiones, escisiones e idioms lo hace adecuado para herramientas de aprendizaje que señalan errores típicos de traductores rusohablantes.
-- Procesamiento por lotes de frases de dominio público: al estar entrenado con textos de Project Gutenberg, puede emplearse para pretraducir corpus literarios de dominio público antes de una revisión humana.
+- Asistente de lectura integrado en la app Fluent Books: el modelo traduce al ruso frases de novelas inglesas mientras el usuario lee, aprovechando que está entrenado con los prompts exactos de la aplicación y se distribuye como un único GGUF de 1,3 GB descargable en el dispositivo.
+- Traducción literaria EN→RU de dominio público: adecuado para procesar pasajes de novelas de Gutenberg con estructuras complejas (pasiva, cleft, inversión), donde supera a v2 en el conjunto de 223 trampas extendidas (74,4 % frente a 68,4 %).
+- Desambiguación léxica contextual: dado un término polisémico en una frase, el modelo devuelve el sentido diccionarial correcto en JSON, útil para glosarios automáticos o para mostrar definiciones al lector; logra 377 aciertos de 462 frente a 360 de v2.
+- Generación de explicaciones gramaticales breves en ruso: el modelo describe un punto gramatical concreto dentro de su oración, y los jueces lo prefieren al modelo base en 33 de 34 comparaciones.
+- Análisis sintáctico ligero: extracción de sujeto y verbo principal de oraciones largas para resaltar la estructura en interfaces de lectura o para alimentar herramientas de estudio de idiomas.
+- Detección de uso real de expresiones y phrasal verbs: clasificación 0/1 con umbral recomendado de ~0,70, útil para ejercicios de vocabulario o para marcar expresiones en un texto; AUC de 0,81 frente a 0,65 del base y 0,78 de v2.
+- Traducción asistida en un pipeline de preprocesado: al ser un GGUF pequeño ejecutable en llama.cpp, puede integrarse en un servicio local que traduzca lotes de frases de novelas antes de pasarlas a un revisor humano, con chrF++ de 35,8 frente a traducción humana de referencia.
 
 ## Benchmarks y rendimiento
 
-Evaluación con jueces ciegos sobre conjuntos propios del autor (2 de noviembre de 2026):
-
-| Métrica | v2 | Este modelo (v3) | Gemma 4 E2B | Apple Translation |
+| Metrica | v2 | Este modelo (v3) | Gemma 4 E2B | Apple Translation |
 |---|---|---|---|---|
-| 223 trampas extendidas (pasiva, escisión, sujeto gerundio, modismos…), porcentaje de comprobaciones superadas, dos jueces, conjunto ciego | 68,4 % | 74,4 % | 77,1 % | 69,7 % |
-| chrF++ frente a traducción humana de 1.000 frases de una novela no vista en entrenamiento | 35,3 | 35,8 | 36,3 | 36,7 |
-| Elección de sentido léxico, de 462 | 360 | 377 | 360 | – |
+| 223 trampas extendidas (pasiva, cleft, sujeto gerundio, modismos…), % de comprobaciones superadas, dos jueces, conjunto ciego | 68,4 % | 74,4 % | 77,1 % | 69,7 % |
+| chrF++ frente a traducción humana de 1.000 frases de una novela (fuera del entrenamiento) | 35,3 | 35,8 | 36,3 | 36,7 |
+| Elección de sentido diccionarial, de 462 | 360 | 377 | 360 | – |
 | Traducción de expresiones, de 100 | 78 | 78 | 81 | 76 |
 | Comparación por pares con Apple en 138 frases (modelo : Apple : empate) | 40 : 44 : 54 | 46 : 46 : 46 | 43 : 24 : 71 | – |
 | Frases trampa (género, «you», nombres), de 120 | 105 | 103 (género 36, «you» 39, nombres 28) | 105 | 111 |
 
-Los jueces prefieren las explicaciones de palabras y gramática de este modelo frente al modelo base (41 : 5 y 33 : 1), y el esqueleto de oración se encuentra igual de bien que con el base. El autor advierte que las filas primera a cuarta se juzgaron en una sola sesión sobre un conjunto ciego, mientras que las dos últimas provienen de sesiones distintas con jueces diferentes, por lo que diferencias de una o dos frases sobre 120 no deben interpretarse como cambios reales.
+Los jueces prefieren las explicaciones de palabras y gramática de este modelo frente al base (41 : 5 y 33 : 1); el esqueleto oracional se encuentra igual de bien que con el base. Las cifras de las primeras filas se juzgaron en una sesión sobre un conjunto ciego; las dos últimas provienen de sesiones distintas con jueces distintos, por lo que diferencias de una o dos frases sobre 120 no deben interpretarse como cambios reales.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: aproximadamente 1,5-2 GB con la cuantización Q4_K_M (archivo de 1,31 GB más overhead de contexto y caché KV).
-- GPU recomendadas: cualquier GPU consumer con al menos 4 GB de VRAM; RTX 3060, RTX 4060, RTX 4090, así como Apple Silicon mediante Metal. Para servidores, A100 o H100 no son necesarias y estarían infrautilizadas.
-- Cabe en GPU consumer: sí, en prácticamente cualquier GPU dedicada moderna e incluso en iGPU con memoria unificada suficiente.
-- Opciones de despliegue: llama.cpp (formato nativo del repo), Ollama y otros frontends compatibles con GGUF. vLLM y TGI no están indicados para este artefacto, ya que solo se distribuye el GGUF cuantizado.
-- Latencia y throughput: no disponibles en la información proporcionada.
+- VRAM estimada para inferencia: el archivo Q4_K_M ocupa 1.312.164.544 bytes (~1,22 GiB); en llama.cpp con overhead de contexto, se estima un uso de VRAM en torno a 1,5–2 GB, aunque el autor no publica cifras exactas.
+- GPU recomendadas: no disponible en la información proporcionada. Por tamaño, cualquier GPU con ≥ 2 GB de VRAM libre debería poder cargarlo en Q4_K_M.
+- Cabe en GPU de consumo: sí, por tamaño (1,2 GiB de pesos) en tarjetas tipo GTX 1650, RTX 3050, RTX 4060 o superiores; no hay confirmación del autor sobre modelos concretos.
+- Opciones de despliegue: llama.cpp (librería declarada) y cualquier runtime compatible con GGUF (Ollama, LM Studio, etc.); no se mencionan vLLM ni TGI.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| Qwen3.5-2B for Fluent Books (v3) | 1,94 B | no disponible | Traducción EN→RU y asistencia de lectura | Apache 2.0 | GGUF en Hugging Face |
-| Qwen/Qwen3.5-2B (base) | 2 B (aprox.) | no disponible | Modelo generalista | Apache 2.0 (según el ajuste) | Hugging Face |
-| Gemma 4 E2B | no disponible | no disponible | Modelo generalista de Google | no disponible | no disponible |
-| Apple Translation | propietario | no disponible | Traducción del sistema | propietaria | integrado en macOS/iOS |
-
-En las evaluaciones del autor, este modelo supera ligeramente a Apple Translation en trampas extendidas (74,4 % frente a 69,7 %) y queda por debajo en chrF++ (35,8 frente a 36,7) y en frases trampa (103 frente a 111 de 120). Frente a Gemma 4 E2B, queda por debajo en trampas extendidas (74,4 % frente a 77,1 %) y chrF++ (35,8 frente a 36,3), pero por encima en elección de sentido léxico (377 frente a 360 de 462). No se dispone de datos comparativos adicionales sobre contexto, latencia o licencia de los modelos alternativos.
+| lazarenkod/qwen3.5-2b-fluent-books (v3) | 1.942.653.248 | no disponible | Apache 2.0 | GGUF Q4_K_M | Especializado en traducción EN→RU literaria y tareas de lectura |
+| Qwen/Qwen3.5-2B (base) | ~1.940 M | no disponible | Apache 2.0 | safetensors (y GGUF derivados) | Modelo generalista; peor en elección de sentido (360/462) y en AUC de expresiones (0,65) |
+| Gemma 4 E2B | no disponible | no disponible | no disponible | no disponible | Mejor en trampas extendidas (77,1 %) y expresiones (81/100), pero peor en comparación por pares con Apple (43 : 24 : 71) |
+| Apple Translation | propietario | no disponible | propietaria | integrado en el sistema | Mejor en frases trampa (111/120) y chrF++ (36,7), pero sin acceso como modelo local |
 
 ## Limitaciones y advertencias
 
-- Los nombres que también son palabras comunes (Hope, Pluto, Slightly) se traducen peor que con Apple Translation: 28 de 40 en el conjunto del autor, frente a un objetivo de 33.
-- En oraciones con «you» es más débil que Apple Translation.
-- A veces quedan letras latinas sin traducir: 13 de 1.000 frases, frente a 1 en Apple.
-- La comprobación 0/1 de expresiones tiene la probabilidad de «1» desplazada hacia arriba; debe usarse un umbral de aproximadamente 0,70 en lugar de 0,15 (precisión balanceada de 0,74 sobre 865 usos etiquetados; la curva es plana entre 0,60 y 0,80). AUC de 0,81 frente a 0,65 del base y 0,78 de v2.
-- Evaluado únicamente con frases de novelas en inglés→ruso; no está pensado para otros idiomas, documentos largos ni usos críticos de seguridad.
+- Los nombres que también son palabras comunes (Hope, Pluto, Slightly) se traducen peor que con el traductor de Apple: 28 de 40 en el conjunto del autor, frente a un objetivo de 33.
+- En frases con «you» es más débil que el traductor de Apple.
+- A veces quedan letras latinas sin traducir: 13 de 1.000 frases (Apple: 1).
+- La comprobación 0/1 de expresiones tiene la probabilidad de «1» desplazada hacia arriba; debe usarse un umbral de ~0,70 en lugar de 0,15 (precisión balanceada 0,74 sobre 865 usos etiquetados; la curva es plana entre 0,60 y 0,80).
+- Evaluado únicamente con frases de novelas en inglés→ruso; no para otros idiomas, documentos largos ni usos críticos para la seguridad.
 - Los conjuntos de evaluación y los jueces son propios del autor, y la mayoría de los jueces son modelos de lenguaje, lo que introduce sesgo de evaluación.
-- Riesgo de alucinación en explicaciones gramaticales y de vocabulario: no disponible en la información proporcionada.
-- Sesgos conocidos más allá de los casos documentados: no disponibles.
-- Licencia Apache 2.0, que permite uso comercial con atribución; el copyright del modelo base pertenece a Alibaba Cloud.
-- El modelo está entrenado con los prompts específicos de la aplicación Fluent Books; su rendimiento fuera de ese formato de prompt puede degradarse.
+- Licencia Apache 2.0 permite uso comercial, pero los derechos del modelo base pertenecen a Alibaba Cloud; conviene revisar el archivo `LICENSE` del repositorio.
+- Riesgo de alucinación y sesgos: no documentados explícitamente en la model card; al ser un ajuste fino sobre datos sintéticos, puede heredar sesgos de los generadores (Claude Sonnet 5.5, Gemma 4) y del corpus de Gutenberg.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/lazarenkod/qwen3.5-2b-fluent-books
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B
-- Ficha en Free2AITools: https://free2aitools.com/model/lazarenkod/qwen3.5-2b-fluent-books
-- Proyecto Gutenberg (fuente de textos de entrenamiento): https://www.gutenberg.org
-- Wikisource en ruso (fuente de traducciones alineadas): https://ru.wikisource.org
+- Repositorio de Project Gutenberg (fuente de textos): https://www.gutenberg.org
+- Wikisource en ruso (traducciones alineadas): https://ru.wikisource.org
+- llama.cpp (runtime declarado): https://github.com/ggml-org/llama.cpp
+- MLX (framework de entrenamiento): https://github.com/ml-explore/mlx
+- LaBSE (alineación de frases): https://huggingface.co/sentence-transformers/LaBSE

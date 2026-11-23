@@ -2,99 +2,96 @@
 
 ## Resumen
 
-`multilingual-punctuation-truecase-small` es un modelo de clasificación de tokens desarrollado por Horizon-Labs que restaura de forma conjunta la puntuación y las mayúsculas en texto que ha perdido ambas cosas, típicamente la salida de un sistema de reconocimiento automático del habla (ASR), subtítulos o mensajes de chat. Para cada palabra predice el signo que la sigue (`.`, `,`, `?`, `:`, `-` o ninguno) y su capitalización (`lower`, `Capitalized` o `UPPER`), en una sola pasada y sobre 88 idiomas.
+Horizon-Labs/multilingual-punctuation-truecase-small es un modelo de clasificación de tokens (token-classification) de 140,6 millones de parámetros que restaura de forma conjunta la puntuación y las mayúsculas en texto que carece de ambas, típicamente la salida en minúsculas y sin signos de un sistema de reconocimiento automático del habla (ASR), subtítulos o mensajes de chat. Para cada palabra predice el signo que la sigue (`.` `,` `?` `:` `-` o ninguno) y su capitalización (minúscula, inicial mayúscula o mayúsculas sostenidas) en una sola pasada. Lo desarrolla Horizon-Labs y se distribuye con licencia Apache-2.0.
 
-El modelo se construye sobre `jhu-clsp/mmBERT-small`, un encoder ModernBERT multilingüe, y cuenta con 140.648.466 parámetros. Se distribuye con pesos en safetensors y ONNX (incluida una versión cuantizada int8 de 268 MB para CPU y navegador vía transformers.js), bajo licencia Apache-2.0. Es relevante porque cubre un paso de post-procesado clásico en pipelines de transcripción con un único modelo multilingüe compacto, sin necesidad de segmentación de palabras en chino o japonés y con soporte de signos específicos por script (`।` en hindi y bengalí, `، ؟` en árabe, `። ፣` en amharés).
+El modelo se construye sobre jhu-clsp/mmBERT-small, un encoder de la familia ModernBERT multilingüe, y está entrenado sobre 88 idiomas. Se publica en formato safetensors para transformers y también en ONNX, incluyendo una variante cuantizada int8 (`onnx/model_quantized.onnx`, 268 MB) pensada para CPU y para ejecución en el navegador mediante transformers.js. La model card indica que esta variante int8 predice la misma etiqueta que fp32 en el 99,91 % de los tokens sobre texto de validación en minúsculas.
 
-Existe una variante mayor, `multilingual-punctuation-truecase-base` (307M), con mayor precisión, y una variante específica solo de puntuación (`punctuation-restoration-small`) para texto que ya conserva mayúsculas.
+Su relevancia práctica está en el postprocesado de transcripciones: convierte una cadena plana como "my name is anna i live in berlin" en "My name is Anna. I live in Berlin.", mejorando la legibilidad de pipelines de ASR sin necesidad de un modelo generativo grande. Existe una versión mayor y más precisa, multilingual-punctuation-truecase-base (307M), para quien priorice calidad sobre latencia y tamaño.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer encoder (ModernBERT, base `jhu-clsp/mmBERT-small`), token classification con 18 etiquetas `<mark>\|<case>` |
+| Arquitectura | Transformer encoder (ModernBERT / mmBERT-small), token-classification con 18 etiquetas `<mark>|<case>` |
 | Parametros totales | 140.648.466 |
 | Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | no disponible (procesa textos largos en fragmentos solapados mediante el helper `truecase.py`) |
-| Tipos de cuantizacion | ONNX int8 (embeddings, 268 MB); fp32; `q8` en transformers.js |
+| Longitud de contexto | no disponible (la model card indica procesamiento en fragmentos solapados para textos largos, sin cifra de ventana) |
+| Tipos de cuantizacion | ONNX int8 (embeddings int8, 268 MB); pesos safetensors fp32/fp16 según repo |
 | Idiomas soportados | 88 idiomas (af, am, ar, az, be, bg, bn, bs, ca, ckb, cs, cy, da, de, el, en, eo, es, et, eu, fa, fi, fo, fr, ga, gl, gu, ha, he, hi, hr, hu, hy, id, is, it, ja, jv, ka, kk, kn, ko, ky, lb, lt, lv, mk, ml, mn, mr, ms, mt, ne, nl, no, or, pa, pl, ps, pt, ro, ru, rw, sd, si, sk, sl, so, sq, sr, su, sv, sw, ta, te, tg, tl, tr, tt, ug, uk, ur, uz, vi, xh, yo, zh, zu) |
-| Licencia | Apache-2.0 |
-| Formato de pesos | safetensors, ONNX (incluye `model_quantized.onnx`) |
+| Licencia | apache-2.0 |
+| Formato de pesos | safetensors, ONNX (incluye `model_quantized.onnx` int8) |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un encoder transformer ModernBERT de la familia mmBERT, concretamente la variante *small* de `jhu-clsp/mmBERT-small`, adaptado a clasificación de tokens con una cabeza que emite 18 etiquetas combinando el signo de puntuación posterior y la clase de capitalización de cada palabra. La etiqueta asignada a una palabra es la de su último token, lo que simplifica la decodificación a nivel de palabra sin necesidad de segmentación explícita en idiomas sin espacios.
+El modelo es un encoder transformer de la familia ModernBERT, derivado de jhu-clsp/mmBERT-small, configurado como clasificador de tokens con 18 etiquetas que combinan el signo de puntuación posterior (`0`, `.`, `,`, `?`, `:`, `-`) y la clase de capitalización (`lower`, `Cap`, `UPPER`). La etiqueta de cada palabra se toma del último token de la palabra, de modo que el modelo funciona con el pipeline estándar de token-classification de transformers y con transformers.js. El script auxiliar `truecase.py` convierte las etiquetas en texto final y gestiona textos largos mediante fragmentos solapados.
 
-El entrenamiento se realizó sobre los datasets `HuggingFaceFW/fineweb-2` y `HuggingFaceFW/fineweb`, cubriendo 88 idiomas. La model card no detalla el número de tokens de entrenamiento, la composición exacta del dataset ni si se aplicaron técnicas de RLHF o DPO (no procede en un modelo de clasificación). Como innovación destacable, el modelo escribe signos específicos por script (`，。？：` en chino y japonés, `।` en hindi y bengalí, `، ؟` en árabe, `;` para preguntas en griego y `። ፣` en amharés) y la versión int8 reproduce la etiqueta fp32 en el 99,91 % de los tokens sobre texto de validación en minúsculas.
+El entrenamiento emplea los datasets HuggingFaceFW/fineweb-2 y HuggingFaceFW/fineweb, según los metadatos del repositorio. La model card no detalla el número exacto de tokens de entrenamiento ni si hubo fases de ajuste fino específicas (RLHF/DPO no aplican a una tarea de etiquetado). Como innovación destacable, el modelo emite signos específicos por escritura: `，。？：` en chino y japonés sin necesidad de segmentación de palabras, `।` en hindi y bengalí, `، ؟` en escritura árabe, `;` para interrogación en griego y `። ፣` en amárico.
 
 ## Capacidades
 
-- Restauración conjunta de puntuación y mayúsculas en una sola pasada, con 18 etiquetas `<mark>|<case>`.
-- Predicción de cinco signos (`.`, `,`, `?`, `:`, `-`) o ausencia de signo.
-- Clasificación de capitalización en tres clases: minúscula, inicial mayúscula y todo mayúsculas.
-- Soporte multilingüe de 88 idiomas de entrenamiento, con signos adaptados a chino, japonés, hindi, bengalí, árabe, griego y amharés.
-- Funcionamiento sin segmentación de palabras en idiomas sin espacios (chino, japonés).
-- Integración con el pipeline `token-classification` de transformers y con transformers.js (dtype `q8`).
-- Helper `truecase.py` para convertir etiquetas a texto y procesar textos largos en fragmentos solapados.
-- Inferencia en CPU y en navegador mediante los ficheros ONNX incluidos.
-- No soporta tool calling, agentes, visión, audio ni modo de razonamiento: es un modelo discriminativo de etiquetado.
+- Restauración conjunta de puntuación y mayúsculas en una sola pasada sobre texto en minúsculas.
+- Predicción de cinco signos de puntuación (`. , ? : -`) más la ausencia de signo, con variantes específicas por escritura (chino, japonés, hindi, bengalí, árabe, griego, amárico).
+- Clasificación de capitalización en tres clases: minúscula, inicial mayúscula y mayúsculas sostenidas.
+- Cobertura multilingüe de 88 idiomas de entrenamiento y evaluación adicional sobre las 199 lenguas de FLORES-200.
+- Ejecución en CPU y en navegador mediante ONNX int8 y transformers.js.
+- Integración directa con el pipeline `token-classification` de transformers y con el helper `truecase.py` para textos largos.
+- No soporta tool calling, razonamiento multi-paso ni generación de texto: es un modelo discriminativo de etiquetado.
 
 ## Casos de uso
 
-- Post-procesado de transcripciones ASR: el modelo recibe la salida en minúsculas y sin puntuación de un sistema de reconocimiento del habla y devuelve texto con puntuación y mayúsculas, mejorando la legibilidad de subtítulos y actas.
-- Generación de subtítulos para vídeo: integrado en un pipeline ASR → truecasing, produce subtítulos con puntuación correcta y nombres propios capitalizados en 88 idiomas, adecuado para plataformas multilingües.
-- Normalización de mensajes de chat y foros: convierte texto escrito en minúsculas y sin puntuar en texto legible antes de almacenarlo o mostrarlo, con un coste computacional bajo (268 MB en int8).
-- Preprocesado para otros modelos de NLP: al restaurar puntuación y mayúsculas se mejora la calidad de entrada para sistemas de traducción automática, resumen o análisis sintáctico que dependen de la segmentación oracional.
-- Procesamiento en el navegador: gracias a transformers.js y a los pesos ONNX cuantizados, puede ejecutarse del lado del cliente en aplicaciones web de dictado o accesibilidad sin enviar datos a un servidor.
-- Indexación y búsqueda de archivos de audio: restaurar puntuación en transcripciones masivas facilita la segmentación en frases y la búsqueda por oraciones en archivos de reuniones o podcasts.
-- Limpieza de corpus históricos o de baja calidad: normaliza texto en minúsculas procedente de fuentes diversas antes de alimentar pipelines de análisis o entrenamiento.
+- Postprocesado de transcripciones ASR: el modelo recibe la salida en minúsculas y sin puntuar de un motor de reconocimiento del habla y devuelve texto con mayúsculas y signos, mejorando la legibilidad de actas, subtítulos y notas de reuniones.
+- Generación de subtítulos para vídeo: en pipelines de subtitulado automático (TED, YouTube, formación corporativa) restaura la puntuación de los segmentos transcritos antes de publicarlos, con latencia baja gracias al tamaño de 140M.
+- Normalización de mensajes de chat y soporte: convierte mensajes de usuario en minúsculas y sin puntuar en texto legible antes de almacenarlos, indexarlos o mostrarlos en paneles de atención al cliente.
+- Enriquecimiento de corpus para búsqueda y NLP: añade puntuación y mayúsculas a corpus de dominio público (por ejemplo, fineweb) antes de pasarlos a modelos de recuperación o de análisis, ya que los modelos de sentence embeddings se benefician de texto bien puntuado.
+- Preprocesado para traducción automática: al restaurar la puntuación de la fuente se mejora la segmentación de frases y la calidad de sistemas de traducción que dependen de límites oracionales.
+- Despliegue en el navegador o en el borde: la variante ONNX int8 de 268 MB permite ejecutar la restauración en el cliente (transformers.js) para aplicaciones de dictado o accesibilidad sin enviar texto a un servidor.
+- Limpieza de datos para entrenamiento de LLM: normalización de transcripciones y textos sin mayúsculas antes de incorporarlos a un dataset de instrucciones o de continuación de texto.
 
 ## Benchmarks y rendimiento
 
-Evaluación sobre texto en minúsculas con `. , ? : ; ! -` eliminados; métricas promediadas por idioma.
+La model card publica resultados de evaluación sobre Europarl, TED talks y FLORES-200. La métrica Casing F1 se calcula solo sobre palabras que deberían llevar mayúscula inicial o mayúsculas sostenidas; la comparación incluye la versión base (307M) del mismo autor.
 
-| Modelo | Casing F1 Europarl (12 idiomas) | Casing F1 TED (25 idiomas) | Casing F1 FLORES (88 idiomas) | Casing F1 FLORES (199 idiomas) |
+| Modelo | Europarl, 12 idiomas (Casing F1) | TED talks, 25 idiomas (Casing F1) | FLORES, 88 idiomas (Casing F1) | FLORES, 199 idiomas (Casing F1) |
 |---|---|---|---|---|
 | Este modelo (140M) | 0,887 | 0,805 | 0,883 | 0,784 |
-| multilingual-punctuation-truecase-base (307M) | 0,897 | 0,800 | no disponible | no disponible |
+| multilingual-punctuation-truecase-base (307M) | 0,897 | 0,800 (dato truncado en la información disponible) | no disponible | no disponible |
 
-La model card no incluye resultados completos de Punctuation F1 ni de Casing accuracy en la información proporcionada; solo se dispone de la comparativa parcial de Casing F1 mostrada arriba. Tampoco se han publicado resultados de MMLU, HumanEval o GSM8K, que no aplican a este tipo de modelo.
+No se han publicado en la información disponible resultados completos de Punctuation F1 ni de Casing accuracy, ni comparaciones con modelos de terceros.
 
 ## Requisitos de hardware
 
-- VRAM estimada: menos de 1 GB en fp32 para 140M de parámetros; aproximadamente 268 MB en la versión ONNX int8.
-- GPU recomendadas: cualquier GPU con al menos 1-2 GB de memoria; funciona correctamente en CPU, que es el escenario principal dada la naturaleza del modelo.
-- Cabe en cualquier GPU de consumo (RTX 3060, RTX 4090, GTX 1650) e incluso en dispositivos de gama baja; también en el navegador vía transformers.js.
-- Opciones de despliegue: pipeline `token-classification` de transformers, ONNX Runtime, transformers.js, y el helper `truecase.py`. No se documenta soporte específico para vLLM, TGI o llama.cpp, que no son adecuados para un encoder de clasificación.
-- Latencia y throughput: no disponibles en la información proporcionada. El tamaño reducido y la cuantización int8 sugieren inferencia en CPU en milisegundos por fragmento, pero no se aportan cifras oficiales.
+- VRAM estimada para inferencia: inferior a 1 GB en fp32 (140,6M parámetros, aproximadamente 0,56 GB de pesos) y alrededor de 0,3 GB en la variante ONNX int8 de 268 MB.
+- GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM; funciona en tarjetas de consumo como RTX 3060, RTX 4060 o superiores, y también en CPU.
+- Cabe en GPU de consumo: sí, en todas las GPU modernas de consumo e incluso en dispositivos de borde con la variante int8.
+- Opciones de despliegue: transformers (pipeline `token-classification`), ONNX Runtime, transformers.js en el navegador, y servidores de inferencia compatibles con endpoints de Hugging Face.
+- Latencia y throughput: no se han publicado cifras concretas en la información disponible; por el tamaño del modelo y la cuantización int8 se espera baja latencia en CPU, pero no se aportan números.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Idiomas | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (`multilingual-punctuation-truecase-small`) | 140M | 88 | Puntuación + mayúsculas | Apache-2.0 | Hugging Face, ONNX, transformers.js |
-| `multilingual-punctuation-truecase-base` | 307M | 88 | Puntuación + mayúsculas | Apache-2.0 (según model card del autor) | Hugging Face |
-| `punctuation-restoration-small` | no disponible | multilingüe | Solo puntuación (texto ya con mayúsculas) | Apache-2.0 (según model card del autor) | Hugging Face |
+| multilingual-punctuation-truecase-small (este modelo) | 140M | 88 | Puntuación + mayúsculas conjuntas | Apache-2.0 | Hugging Face, ONNX, transformers.js |
+| multilingual-punctuation-truecase-base | 307M | 88 (según model card) | Puntuación + mayúsculas conjuntas | no disponible en la información | Hugging Face |
+| punctuation-restoration-small (Horizon-Labs) | no disponible | multilingüe | Solo puntuación (texto ya con mayúsculas) | no disponible en la información | Hugging Face |
 
-La variante *base* (307M) obtiene un Casing F1 ligeramente superior en Europarl (0,897 frente a 0,887) y ligeramente inferior en TED (0,800 frente a 0,805), con un coste computacional mayor. `punctuation-restoration-small` cubre un caso de uso distinto: texto que ya conserva mayúsculas y solo necesita puntuación. No se dispone de datos de otros modelos comparables de terceros en la información proporcionada.
+La diferencia principal frente a punctuation-restoration-small es que este modelo asume entrada en minúsculas y reescribe la capitalización, mientras que aquel se usa cuando el texto ya tiene mayúsculas y solo falta puntuación. La versión base ofrece mayor precisión (0,897 frente a 0,887 en Europarl) a costa de duplicar el tamaño.
 
 ## Limitaciones y advertencias
 
-- El modelo asume entrada en minúsculas: internamente pasa el texto a minúsculas y no aprovecha las mayúsculas existentes. Para texto ya capitalizado debe usarse la variante de solo puntuación.
-- Solo predice cinco signos (`.`, `,`, `?`, `:`, `-`); no restaura `;`, `!`, comillas, paréntesis ni otros signos, aunque la evaluación elimina también `;` y `!` del texto de entrada.
-- Riesgo de alucinación de puntuación y mayúsculas: puede insertar signos o capitalizar palabras incorrectamente, especialmente en nombres propios poco frecuentes o en idiomas con pocos datos.
-- Cobertura desigual entre los 88 idiomas: el rendimiento en FLORES cae de 0,883 (idiomas de entrenamiento) a 0,784 al evaluar sobre los 199 idiomas de FLORES, y los 111 idiomas no entrenados no están soportados de forma fiable.
-- En idiomas sin distinción de mayúsculas (chino, japonés, árabe), la métrica de casing solo evalúa las palabras en escritura latina, por lo que el rendimiento real en esos idiomas queda parcialmente sin medir.
-- No se documentan sesgos específicos ni evaluaciones de sesgo en la model card; como modelo entrenado sobre FineWeb y FineWeb-2, puede heredar sesgos de esos corpus web.
-- Licencia Apache-2.0: permite uso comercial, pero se recomienda conservar el aviso de licencia y citar el modelo base `jhu-clsp/mmBERT-small`.
-- En producción conviene validar la salida en el dominio objetivo, ya que el estilo de entrenamiento (texto web y traducido) puede diferir del texto ASR real.
+- La entrada se convierte a minúsculas antes de la inferencia: el modelo no aprovecha las mayúsculas existentes y puede alterar la capitalización original de un texto ya cased.
+- Es un modelo discriminativo de etiquetado; no genera texto libre ni razona, por lo que errores de segmentación o de tokenización afectan directamente a la salida.
+- Riesgo de alucinación bajo en el sentido generativo, pero puede insertar puntuación o mayúsculas incorrectas en nombres propios, siglas o límites de frase ambiguos.
+- La cobertura de 88 idiomas de entrenamiento no garantiza calidad homogénea; en las 111 lenguas adicionales de FLORES-200 el rendimiento cae (Casing F1 de 0,784 frente a 0,883 en las lenguas entrenadas).
+- En escrituras sin mayúsculas (chino, japonés, árabe) la métrica de casing solo evalúa las palabras en alfabeto latino, por lo que la evaluación de capitalización es limitada en esos idiomas.
+- La licencia Apache-2.0 permite uso comercial, pero se recomienda validar el modelo sobre el dominio concreto antes de producción.
+- No se han publicado cifras de latencia, throughput ni consumo de memoria en producción en la información disponible.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/Horizon-Labs/multilingual-punctuation-truecase-small
 - Demo en el navegador (Space): https://huggingface.co/spaces/Horizon-Labs/multilingual-punctuation-truecase
-- Variante base (307M): https://huggingface.co/Horizon-Labs/multilingual-punctuation-truecase-base
-- Variante de solo puntuación: https://huggingface.co/Horizon-Labs/punctuation-restoration-small
+- Versión base (307M): https://huggingface.co/Horizon-Labs/multilingual-punctuation-truecase-base
+- Modelo solo de puntuación: https://huggingface.co/Horizon-Labs/punctuation-restoration-small
 - Modelo base mmBERT-small: https://huggingface.co/jhu-clsp/mmBERT-small
-- Dataset FineWeb-2: https://huggingface.co/datasets/HuggingFaceFW/fineweb-2
-- Dataset FineWeb: https://huggingface.co/datasets/HuggingFaceFW/fineweb
+- Dataset fineweb-2: https://huggingface.co/datasets/HuggingFaceFW/fineweb-2
+- Dataset fineweb: https://huggingface.co/datasets/HuggingFaceFW/fineweb

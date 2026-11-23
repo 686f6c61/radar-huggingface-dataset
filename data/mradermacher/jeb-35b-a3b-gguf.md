@@ -2,100 +2,92 @@
 
 ## Resumen
 
-mradermacher/jeb-35b-a3b-GGUF es un repositorio de cuantizaciones estáticas en formato GGUF generado por el usuario mradermacher a partir del modelo base szybkie-ai/jeb-35b-a3b. No se trata por tanto de un modelo entrenado por el autor del repositorio, sino de una conversión y cuantización de pesos ya existentes, orientada a su ejecución en llama.cpp y herramientas compatibles (Ollama, LM Studio, text-generation-webui, etc.). La model card es mínima: se limita a indicar que son cuantizaciones estáticas del modelo base y no aporta información sobre arquitectura, datos de entrenamiento, licencia o idiomas.
+jeb-35b-a3b es un modelo de decisión (decision-model) desarrollado originalmente por szybkie-ai y cuantizado a formato GGUF por mradermacher. Con 35.505.251.456 parámetros totales y una nomenclatura que sugiere una arquitectura de mezcla de expertos (MoE) con aproximadamente 3.000 millones de parámetros activos, el modelo está orientado a tareas de calibración, razonamiento de "sistema uno" y generación de salida estructurada. Su licencia Apache 2.0 facilita su adopción tanto en investigación como en entornos comerciales.
 
-La información disponible sobre el modelo presenta una contradicción relevante que conviene señalar antes de cualquier evaluación. Por un lado, el nombre del repositorio sigue la convención habitual de los modelos de mezcla de expertos (MoE) con "35b" como parámetros totales y "a3b" como parámetros activos, lo que sugeriría un modelo de aproximadamente 35 000 millones de parámetros totales y 3000 millones activos por token. Por otro, los metadatos de Hugging Face asociados a safetensors indican un total de 446 571 248 parámetros (unos 447 millones), y el tamaño completo del repositorio es de solo 1,5 GB, cifra incompatible con las 13 cuantizaciones anunciadas de un modelo de 35 000 millones de parámetros. No hay información pública en la búsqueda realizada que permita resolver esta discrepancia.
+La relevancia de esta ficha radica en que el repositorio cuantizado ofrece un conjunto completo de cuantizaciones estáticas (desde Q2_K hasta Q8_0, además de variantes IQ4_XS y ficheros mmproj multimodales), lo que permite desplegar un modelo de 35.000 millones de parámetros en hardware de consumo con la calidad controlada por el usuario. El autor declara soporte para inglés y polaco, y etiquetas que apuntan a casos de uso conversacionales y de salida estructurada.
 
-El interés práctico del repositorio es limitado pero claro: ofrece un conjunto amplio de cuantizaciones (desde Q2_K hasta F16, incluyendo IQ4_XS y variantes Q3/Q4/Q5/Q6/Q8) listas para descargar y ejecutar con llama.cpp. Sin embargo, la ausencia de licencia declarada, de benchmarks y de documentación del modelo base hace que no sea recomendable utilizarlo en producción sin una verificación previa del recuento real de parámetros, del modelo original y de las condiciones de uso.
+No obstante, la información pública disponible es limitada: no se detallan la longitud de contexto, la composición del dataset de entrenamiento ni resultados de benchmarks. Esta ficha refleja exclusivamente los datos verificables del repositorio y de la model card, señalando explícitamente los campos no disponibles.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | no disponible (no se documenta en la model card; el sufijo "a3b" del nombre sugiere mezcla de expertos, sin confirmar) |
-| Parametros totales | discrepancia: los metadatos de safetensors indican 446 571 248 parametros; el nombre del repositorio sugiere ~35 000 millones |
-| Parametros activos | no disponible (no confirmado; el nombre "a3b" apuntaria a ~3000 millones activos) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | x-f16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q4_K_M, Q4_K_S, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K, IQ4_XS |
-| Idiomas soportados | no disponible |
-| Licencia | no disponible |
-| Formato de pesos | GGUF (conversion desde pesos Hugging Face safetensors; convert_type: hf, quantize_version: 2, output_tensor_quantised: 1) |
+| Arquitectura | No disponible (la nomenclatura "a3b" sugiere MoE con ~3B activos, no confirmado en la documentación) |
+| Parámetros totales | 35.505.251.456 |
+| Parámetros activos | No disponible (posiblemente ~3.000 millones por la nomenclatura, sin confirmar) |
+| Longitud de contexto | No disponible |
+| Tipos de cuantización | f16 (implícito), Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q4_K_M, Q4_K_S, IQ4_XS, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K; mmproj en Q8_0 y f16 |
+| Idiomas soportados | Inglés (en) y polaco (pl) según la model card |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (cuantizaciones estáticas); modelo base en transformers/safetensors |
 
 ## Arquitectura y entrenamiento
 
-No hay informacion en la model card ni en los resultados de busqueda disponible sobre la arquitectura del modelo base szybkie-ai/jeb-35b-a3b. El repositorio no incluye detalles sobre tipo de red (transformer denso, mezcla de expertos, SSM o hibrida), numero de capas, dimension de embedding, mecanismo de atencion ni estrategia de decodificacion. Tampoco se documenta el proceso de entrenamiento: no hay datos sobre numero de tokens, composicion del dataset, fases de ajuste (SFT, RLHF, DPO) ni innovaciones tecnicas asociadas.
+La model card no proporciona detalles sobre la arquitectura interna más allá de las etiquetas `decision-model`, `calibration`, `system-one` y `structured-output`. El sufijo "a3b" en el nombre y el recuento de 35.500 millones de parámetros totales son compatibles con una arquitectura de mezcla de expertos (MoE) con aproximadamente 3.000 millones de parámetros activos por token, patrón habitual en modelos como Qwen3-30B-A3B o similares; sin embargo, esta interpretación no está confirmada por la documentación del autor. Tampoco se especifica si se trata de un transformer denso, MoE o una arquitectura híbrida.
 
-Lo unico verificable tecnicamente es el proceso de cuantizacion aplicado por mradermacher, resumido en los metadatos de la model card: conversion desde formato Hugging Face (convert_type: hf), cuantizacion estatica de los tensores de salida (output_tensor_quantised: 1) y version 2 del pipeline de cuantizacion (quantize_version: 2). Se ofrecen 13 variantes de cuantizacion, desde F16 sin perdida adicional hasta Q2_K e IQ4_XS con compresion agresiva.
+Respecto al entrenamiento, no se dispone de información sobre el número de tokens, la composición del dataset, ni si se aplicaron técnicas de RLHF, DPO o calibración posterior. Las etiquetas del repositorio sugieren un enfoque en decisiones calibradas y salidas estructuradas, lo que podría implicar un ajuste específico para tareas de clasificación, enrutamiento o generación de JSON, pero no hay evidencia documental que lo confirme. La cuantización ha sido realizada por mradermacher mediante cuantizaciones estáticas (sin imatrix ponderada, según indica el propio autor), partiendo del modelo base szybkie-ai/jeb-35b-a3b.
 
 ## Capacidades
 
-- No se documentan capacidades especificas en la informacion disponible. La model card no describe tareas soportadas, modos de razonamiento, soporte de tool calling ni capacidades multimodales.
-- Generacion de texto: capacidad implicita en cualquier modelo de lenguaje cuantizado en GGUF, pero sin confirmacion documental.
-- Soporte de tool calling / function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingues: no disponible (no se declara lista de idiomas).
-- Capacidades especiales (modo thinking, vision, audio): no disponible.
-- Formato de ejecucion: al estar en GGUF, es compatible con el ecosistema llama.cpp (Ollama, LM Studio, llama-cpp-python, text-generation-webui, koboldcpp), lo que constituye la capacidad operativa mas relevante del repositorio.
+- Generación de texto conversacional, según la etiqueta `conversational` del repositorio.
+- Modelo de decisión (`decision-model`) orientado a tareas de clasificación o enrutamiento.
+- Calibración (`calibration`) de puntuaciones o probabilidades de decisión.
+- Razonamiento de "sistema uno" (`system-one`), es decir, respuestas rápidas e intuitivas frente a deliberación extendida.
+- Generación de salida estructurada (`structured-output`), útil para JSON, esquemas o formatos parseables.
+- Soporte multimodal: el repositorio incluye ficheros `mmproj` (Q8_0 y f16), lo que indica capacidad de procesamiento de visión o entrada multimodal en el modelo base.
+- Soporte multilingüe limitado a inglés y polaco según la model card.
+- Compatibilidad con endpoints (`endpoints_compatible`), lo que facilita su integración en infraestructuras de inferencia estándar.
 
 ## Casos de uso
 
-- Ejecucion local en CPU sin GPU: gracias a las cuantizaciones Q4_K_M y Q2_K, el modelo puede desplegarse en llama.cpp sobre un portatil o servidor sin acelerador, siempre que se confirme primero el recuento real de parametros y la memoria requerida.
-- Prototipado rapido de aplicaciones de generacion de texto: descargar una cuantizacion Q4_K_M y levantarla con Ollama permite tener un endpoint HTTP local en minutos, util para validar una interfaz o un pipeline antes de comprometerse con una infraestructura mayor.
-- Despliegue en dispositivos con memoria limitada o edge: si se confirma el recuento de 447 millones de parametros, las variantes Q4_K_S o Q2_K ocuparian unos cientos de megabytes y podrian ejecutarse en mini-PC, Raspberry Pi de gama alta o telefonos, algo imposible con un modelo de 35 000 millones de parametros.
-- Evaluacion comparativa de cuantizaciones: el repositorio ofrece 13 variantes del mismo modelo, lo que permite medir la degradacion de calidad y la ganancia de velocidad entre Q2_K, Q3_K_S, Q4_K_M, Q6_K y F16 sobre el mismo conjunto de prompts, un caso de uso metodologico directo.
-- Integracion en pipelines de CI para pruebas de humo: al ser un artefacto pequeno y autoconenido, puede incluirse en un contenedor de test que verifique que la aplicacion arranca, carga el modelo y devuelve respuestas coherentes antes de desplegar el modelo definitivo.
-- Fine-tuning sobre el modelo base en formato Hugging Face: el repositorio enlaza al modelo original szybkie-ai/jeb-35b-a3b, de modo que el flujo realista es adaptar el modelo base en safetensors y usar este repositorio solo para la fase de inferencia cuantizada.
-- Generacion de embeddings o clasificacion ligera: si el modelo base resulta ser de ~447 millones de parametros, es viable usarlo como encoder para tareas de clasificacion, etiquetado o reranking en lugar de para generacion abierta, con coste de inferencia muy bajo.
+- Enrutamiento de consultas en sistemas de atención al cliente: el modelo puede clasificar y dirigir tickets o mensajes entrantes a la cola o agente adecuado, aprovechando su naturaleza de decision-model y su calibración para asignar confianza a cada decisión.
+- Generación de JSON en pipelines de automatización: gracias a la etiqueta `structured-output`, puede producir respuestas parseables para integraciones con APIs, formularios o sistemas de extracción de datos.
+- Moderación de contenido y clasificación de toxicidad: su capacidad de decisión calibrada permite umbrales ajustables y puntuaciones de confianza para revisión humana.
+- Asistentes conversacionales en inglés y polaco: el soporte declarado de ambos idiomas lo hace adecuado para mercados centroeuropeos, con despliegue local mediante GGUF.
+- Procesamiento de documentos con componente visual: los ficheros `mmproj` permiten incorporar entrada multimodal en flujos de extracción de información de imágenes o capturas.
+- Despliegue en hardware de consumo para prototipado: las cuantizaciones Q4_K_S (20,5 GB) y Q4_K_M (21,8 GB) permiten ejecutar el modelo en GPUs de 24 GB o en configuraciones CPU+GPU, facilitando pruebas de concepto sin infraestructura de datacenter.
+- Clasificación de intenciones en agentes de voz o chatbots: el modo "sistema uno" prioriza latencia baja, adecuado para decisiones rápidas en bucles de interacción.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card del repositorio no incluye metricas de MMLU, HumanEval, GSM8K, MT-Bench ni ninguna otra evaluacion, y la busqueda web realizada no ha devuelto documentacion tecnica sobre el modelo base szybkie-ai/jeb-35b-a3b.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-Las estimaciones siguientes se ofrecen para los dos escenarios compatibles con los datos disponibles y deben tratarse como calculos de orden de magnitud, no como mediciones.
-
-- Escenario A, si el modelo tiene ~447 millones de parametros (segun los metadatos de safetensors):
-  - F16: aproximadamente 0,9 GB de pesos.
-  - Q8_0: aproximadamente 0,5 GB.
-  - Q4_K_M: aproximadamente 0,3 GB.
-  - Cabe en cualquier GPU consumer, incluso en iGPU y en telefonos de gama alta; la inferencia en CPU es perfectamente viable.
-  - Despliegue: llama.cpp, Ollama, LM Studio, llama-cpp-python; vLLM es posible pero sobredimensionado para este tamano.
-- Escenario B, si el modelo tiene realmente 35 000 millones de parametros totales con 3000 millones activos (MoE):
-  - F16: aproximadamente 70 GB de pesos, mas cache KV.
-  - Q8_0: aproximadamente 37 GB.
-  - Q4_K_M: aproximadamente 20-21 GB.
-  - Q2_K: aproximadamente 12-13 GB.
-  - GPU recomendadas: A100 80 GB, H100 80 GB o 2x A100 40 GB para F16 y Q8_0; 1x A100 40 GB o 1x RTX 4090 24 GB para Q4_K_M; 1x RTX 3090/4090 24 GB con offload parcial de capas a CPU para Q5_K_M y Q6_K.
-  - Al ser (presuntamente) MoE con ~3000 millones de parametros activos, la decodificacion seria notablemente rapida en relacion con el tamano total, con throughput alto en GPU y aceptable en configuraciones hibridas CPU+GPU.
-- Latencia y throughput: no disponibles en la informacion proporcionada para ningun escenario.
-- Opciones de despliegue confirmadas por el formato: llama.cpp y todo su ecosistema (Ollama, LM Studio, text-generation-webui, koboldcpp, llama-cpp-python). vLLM y TGI requieren convertir los GGUF a safetensors o usar los pesos originales de Hugging Face; no estan soportados de forma nativa a partir de este repositorio.
+- VRAM estimada para inferencia según cuantización: Q2_K ~13,3 GB; Q3_K_S ~15,6 GB; Q3_K_M ~17,3 GB; Q3_K_L ~18,7 GB; IQ4_XS ~19,5 GB; Q4_K_S ~20,5 GB; Q4_K_M ~21,8 GB; Q5_K_S ~24,7 GB; Q5_K_M ~25,4 GB; Q6_K ~29,3 GB; Q8_0 ~37,9 GB. Los ficheros mmproj añaden 0,7 GB (Q8_0) o 1,0 GB (f16).
+- GPU recomendadas: para Q8_0 o Q6_K, GPUs de 40-48 GB (A100 40GB, A6000 48GB, L40S 48GB); para Q4_K_M, una RTX 4090 (24 GB) o RTX 3090 (24 GB) es suficiente; para Q2_K-Q3_K, GPUs de 16-20 GB como RTX 4080 o A4000.
+- Cabe en GPU de consumo: sí, en RTX 4090/3090 con cuantizaciones Q4 o inferiores; en GPUs de 16 GB con Q3_K_S o Q2_K, con posible offload parcial a CPU.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio y servidores compatibles con GGUF; el repositorio indica `endpoints_compatible`, lo que sugiere integración con infraestructuras de inferencia estándar. vLLM y TGI no están confirmados para este formato GGUF concreto.
+- Latencia y throughput: no disponibles. Al tratarse de un modelo de ~35B totales con posible activación de ~3B (si es MoE), el throughput podría ser notablemente superior al de un denso de 35B, pero no hay datos publicados que lo confirmen.
 
 ## Comparativa con modelos similares
 
-No es posible establecer una comparativa rigurosa. El modelo base szybkie-ai/jeb-35b-a3b no esta documentado en la informacion disponible y los dos recuentos de parametros manejados (447 millones frente a ~35 000 millones) pertenecen a categorias completamente distintas, con alternativas de referencia diferentes en cada caso.
+| Modelo | Parámetros totales | Activos | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|---|
+| jeb-35b-a3b (este) | 35,5B | No disponible (~3B por nomenclatura) | No disponible | Apache 2.0 | GGUF | Decision-model, calibración, system-one, multimodal (mmproj) |
+| Qwen3-30B-A3B | 30,5B | ~3,3B | 32K-128K (según variante) | Apache 2.0 | safetensors, GGUF | MoE generalista, multilingüe amplio |
+| Mixtral 8x7B | 46,7B | ~12,9B | 32K | Apache 2.0 | safetensors, GGUF | MoE generalista, sin modo decisión específico |
+| Llama 3.1 8B | 8B | 8B (denso) | 128K | Llama 3.1 Community | safetensors, GGUF | Denso, menor huella, multilingüe |
 
-| Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| mradermacher/jeb-35b-a3b-GGUF | discrepancia: 446 571 248 segun safetensors; "35b-a3b" segun el nombre | no disponible | no disponible | no disponible | GGUF en Hugging Face |
-| Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
+La comparación es aproximada: no hay benchmarks públicos de jeb-35b-a3b que permitan contrastar calidad frente a estas alternativas. La principal diferencia cualitativa es su orientación explícita a decisiones calibradas y salida estructurada, frente al enfoque generalista de los modelos citados.
 
 ## Limitaciones y advertencias
 
-- Discrepancia critica de parametros: los metadatos indican 446 571 248 parametros y el repositorio ocupa 1,5 GB, mientras que el nombre sugiere 35 000 millones. Antes de dimensionar infraestructura hay que descargar una cuantizacion y verificar el recuento real de tensores y el tamano del archivo.
-- Licencia no disponible: ni la model card ni los metadatos de Hugging Face declaran licencia. En la practica esto equivale a ausencia de permiso explicito, por lo que el uso comercial es juridicamente arriesgado hasta que el autor del modelo base lo aclare.
-- Trazabilidad limitada: el repositorio es una cuantizacion de terceros, de modo que cualquier problema de sesgo, calidad o seguridad proviene del modelo base szybkie-ai/jeb-35b-a3b, del que no hay documentacion publica localizada.
-- Riesgo de alucinacion: inherente a cualquier modelo de lenguaje generativo y no evaluado aqui; no hay benchmarks que permitan estimar la tasa de error.
-- Perdida por cuantizacion: las variantes Q2_K, Q3_K_S e IQ4_XS degradan la calidad de forma perceptible en modelos pequenos; conviene validar la tarea concreta antes de elegir una cuantizacion agresiva.
-- Idioma: no se declara ninguna lista de idiomas soportados; no hay garantia de un rendimiento correcto en castellano.
-- Contexto: se desconoce la longitud de contexto soportada y si las cuantizaciones conservan la ventana completa del modelo original.
-- Popularidad nula: cero descargas y cero valoraciones en el momento de la consulta, lo que implica ausencia de validacion por parte de la comunidad.
-- Fecha de creacion inusual: los metadatos indican 2026-09-21, una fecha futura respecto al momento habitual de consulta, lo que puede reflejar un error de metadatos o un repositorio de prueba.
-- Model card practicamente vacia: no incluye instrucciones de uso, plantilla de chat ni parametros de muestreo recomendados, por lo que habra que probar configuraciones a ciegas.
+- No se han publicado datos sobre sesgos; al entrenarse presuntamente en inglés y polaco, el rendimiento en castellano y otros idiomas no está garantizado.
+- Riesgo de alucinación inherente a los modelos generativos; la calibración declarada no elimina este riesgo en tareas abiertas.
+- Longitud de contexto desconocida: no se puede garantizar el rendimiento en conversaciones largas o documentos extensos.
+- Las cuantizaciones son estáticas y no ponderadas con imatrix, según indica el autor; las variantes de baja precisión (Q2_K, Q3_K_S) pueden degradar notablemente la calidad.
+- La licencia Apache 2.0 permite uso comercial, pero el modelo base podría tener condiciones adicionales no reflejadas en la model card del cuantizador; conviene verificar el repositorio original szybkie-ai/jeb-35b-a3b.
+- El soporte multimodal depende de los ficheros mmproj y del runtime utilizado; no todos los backends GGUF gestionan visión de forma homogénea.
+- Ausencia de benchmarks verificables impide comparar su rendimiento real con alternativas establecidas.
+- El repositorio tiene un número muy bajo de descargas (517) y cero likes en el momento de la consulta, lo que sugiere poca validación comunitaria.
 
 ## Enlaces
 
-- Repositorio GGUF en Hugging Face: https://huggingface.co/mradermacher/jeb-35b-a3b-GGUF
-- Modelo base referenciado en la model card: https://huggingface.co/szybkie-ai/jeb-35b-a3b
-- Perfil del autor de las cuantizaciones: https://huggingface.co/mradermacher
-- La busqueda web realizada no ha devuelto enlaces relevantes (papers, blogs, repos o demos) sobre este modelo; los resultados obtenidos corresponden a servicios de medicion de velocidad de banda ancha y no guardan relacion con el modelo.
+- Repositorio Hugging Face (cuantizado): https://huggingface.co/mradermacher/jeb-35b-a3b-GGUF
+- Modelo base original: https://huggingface.co/szybkie-ai/jeb-35b-a3b
+- Página de descargas del cuantizador: https://hf.tst.eu/model#jeb-35b-a3b-GGUF
+- Guía de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Análisis de tipos de cuantización (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Solicitudes de cuantización de mradermacher: https://huggingface.co/mradermacher/model_requests
+- nethype GmbH: https://www.nethype.de/

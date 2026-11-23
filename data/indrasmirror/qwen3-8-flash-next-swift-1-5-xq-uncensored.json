@@ -5,9 +5,9 @@
   "author": "IndrasMirror",
   "url": "https://huggingface.co/IndrasMirror/Qwen3.8-Flash-Next-Swift-1.5-XQ-Uncensored",
   "created_at": "2026-10-29T05:57:58.000Z",
-  "updated_at": "2026-10-31T18:58:52.000Z",
-  "license": "apache-2.0",
-  "license_family": "oss",
+  "updated_at": "2026-11-22T23:29:52.000Z",
+  "license": "indras-mirror-xq-license-1.2",
+  "license_family": "unknown",
   "pipeline_tag": "text-generation",
   "library": null,
   "languages": [
@@ -34,7 +34,7 @@
     "code",
     "base_model:ukisai/Swift1.5-Qwen3.8-Flash-Next",
     "base_model:quantized:ukisai/Swift1.5-Qwen3.8-Flash-Next",
-    "license:apache-2.0",
+    "license:other",
     "endpoints_compatible",
     "region:us",
     "imatrix",
@@ -61,5 +61,11 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": []
+  "sources": [
+    {
+      "title": "React (software) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/React_(software)",
+      "snippet": "React can be used to develop single-page, mobile, or server-rendered applications with frameworks like Next.js and React Router."
+    }
+  ]
 }

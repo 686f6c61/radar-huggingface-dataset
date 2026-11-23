@@ -51,31 +51,5 @@
       "value": 0.3685
     }
   ],
-  "sources": [
-    {
-      "title": "Shell Explorer — Block Explorer for Shell Chain",
-      "url": "https://explorer.shell.org/",
-      "snippet": "Block explorer for Shell Chain, a post-quantum secure PQVM blockchain with Ethereum tooling-compatible RPC."
-    },
-    {
-      "title": "Welcome to Open-Shell | Classic Shell Reborn.",
-      "url": "https://open-shell.github.io/Open-Shell-Menu/",
-      "snippet": "Welcome to Open-Shell | Classic Shell Reborn. Classic Shell Reborn. A collection of utilities bringing back classic features to …"
-    },
-    {
-      "title": "Метод Shell.Explore (Shldisp.h) - Win32 apps | Microsoft Learn",
-      "url": "https://learn.microsoft.com/ru-ru/windows/win32/shell/shell-explore",
-      "snippet": "Jun 13, 2023 · Примеры В следующем примере показано использование explore . Для JScript, VBScript и Visual Basic …"
-    },
-    {
-      "title": "ShellExView - Shell Extension Manager For Windows",
-      "url": "https://www.nirsoft.net/utils/shexview.html",
-      "snippet": "The ShellExView utility displays the details of shell extensions installed on your computer, and allows you to easily disable and …"
-    },
-    {
-      "title": "Open Shell — классическое меню пуск Windows 10 и замена Classic Shell",
-      "url": "https://remontka.pro/open-shell-menu/",
-      "snippet": "Oct 18, 2019 · Классическое меню Пуск для Windows 10 из Windows 7 в бесплатной программе Open-Shell Menu. Установка и …"
-    }
-  ]
+  "sources": []
 }

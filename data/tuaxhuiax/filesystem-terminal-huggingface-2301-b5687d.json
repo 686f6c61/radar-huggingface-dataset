@@ -44,16 +44,5 @@
   "renamed_to": "TUaxhuiax/filesystem_terminal_huggingface_5007_sonora_release_k7x2",
   "renamed_at": "2026-11-11T03:59:08.492Z",
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "filesystem_terminal_huggingface_7597-release-c7d2e91a",
-      "url": "https://huggingface.co/TUaxhuiax/filesystem_terminal_huggingface_7597-release-c7d2e91a",
-      "snippet": "Text Classification model. Download, explore files and run it on Hugging Face."
-    },
-    {
-      "title": "huggingface_terminal_filesystem_321_a7f3c9d2-orion",
-      "url": "https://huggingface.co/datasets/TUaxhuiax/huggingface_terminal_filesystem_321_a7f3c9d2-orion",
-      "snippet": "Dataset. Explore, preview and download it on Hugging Face."
-    }
-  ]
+  "sources": []
 }

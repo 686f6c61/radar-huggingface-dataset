@@ -2,86 +2,108 @@
 
 ## Resumen
 
-Valen-Decision-1.5-2B es un modelo de lenguaje de 2.220.085.357 parámetros publicado por el equipo Valen-Team en Hugging Face. Se distribuye en formato safetensors bajo licencia Apache 2.0 y utiliza un código de arquitectura personalizado identificado con la etiqueta `valen_qwen`, lo que sugiere una base derivada de la familia Qwen con modificaciones propias del equipo. El repositorio ocupa 4,5 GB, coherente con un modelo de algo más de 2 000 millones de parámetros en precisión de 16 bits.
+Valen-Decision-1.5-2B es un modelo de decisión multimodal desarrollado por Valen-Team, un fine-tune del modelo base Qwen/Qwen3.5-2B. A diferencia de los modelos generativos convencionales, su propósito no es producir texto libre, sino responder preguntas estructuradas sobre una entrada (texto, imagen o vídeo) devolviendo probabilidades para predicados, elecciones y puntuaciones, además de cajas delimitadoras (bounding boxes) para preguntas de localización. Está pensado para tareas de clasificación, enrutamiento y verificación en producción.
 
-La información pública disponible es mínima: la model card únicamente declara la licencia y no incluye detalles sobre arquitectura, datos de entrenamiento, idiomas, contexto ni capacidades. El nombre "Decision" y el sufijo "1.5" apuntan a una posible especialización en toma de decisiones o agentes, y a una revisión de versión respecto a un modelo anterior, pero ninguno de estos extremos está confirmado en la documentación.
+El modelo incorpora dos innovaciones técnicas destacables: atención bidireccional por bloques (block-bidirectional attention) y una cabeza de grounding de bounding boxes, de modo que una sola pasada hacia delante devuelve tanto probabilidades como coordenadas. Con 2.220.085.357 parámetros (aproximadamente 2,2B), se distribuye bajo licencia Apache 2.0 y está disponible en tres formatos: pesos nativos para Transformers, ONNX y GGUF para el runtime Valen llama.cpp 0.2.0.
 
-Por su tamaño, el modelo se sitúa en la franja de los pequeños modelos desplegables en hardware de consumo, lo que lo hace relevante para escenarios de inferencia local y prototipado rápido, siempre que el usuario asuma la ausencia de documentación técnica y valide su comportamiento empíricamente antes de usarlo en producción.
+La familia Valen-Decision-1.5 se publica en cinco tamaños (0.8B, 2B, 4B, 9B y 27B), donde los modelos mayores obtienen mejores puntuaciones en el llamado Decision Index. Este modelo de 2B ocupa la franja intermedia-baja y resulta relevante ahora por su enfoque en salidas tipadas y estructuradas, orientado a integrarse en pipelines de decisión automatizados más que en asistentes conversacionales.
 
 ## Especificaciones técnicas
 
 | Parámetro | Valor |
 |---|---|
-| Arquitectura | no disponible (etiqueta `valen_qwen`, código personalizado) |
-| Parámetros totales | 2.220.085.357 |
-| Parámetros activos | no disponible (no se indica que sea MoE) |
+| Arquitectura | Transformer derivado de Qwen3.5 con atención bidireccional por bloques y cabeza de grounding de bounding boxes |
+| Parámetros totales | 2.220.085.357 (≈2,2B) |
+| Parámetros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantización | no disponible |
+| Tipos de cuantización | BF16 (backbone) y FP32 (cabezas de decisión y grounding) en pesos nativos; GGUF para runtime Valen llama.cpp 0.2.0; ONNX |
 | Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors |
+| Formato de pesos | safetensors (nativo), ONNX, GGUF |
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado información sobre la arquitectura interna del modelo. La etiqueta `valen_qwen` y la presencia de `custom_code` en el repositorio indican que el modelo requiere cargar código personalizado del autor (probablemente mediante `trust_remote_code=True`) y que su implementación deriva o está inspirada en la familia Qwen, sin que se especifique la variante base ni las modificaciones aplicadas.
+El modelo parte del backbone Qwen/Qwen3.5-2B, un transformer de aproximadamente 2,2B parámetros, y le añade dos componentes específicos: atención bidireccional por bloques y una cabeza de grounding de bounding boxes. La atención bidireccional por bloques permite que ciertas representaciones atiendan en ambas direcciones dentro de bloques definidos, algo útil para tareas de clasificación y verificación donde la decisión depende del conjunto de la entrada y no de una generación autoregresiva. La cabeza de grounding produce coordenadas de caja para cada pregunta de tipo bbox. Los pesos nativos almacenan el backbone en BF16 y las cabezas de decisión y grounding en FP32.
 
-Tampoco hay datos sobre el corpus de entrenamiento, el número de tokens procesados, la composición del dataset ni si se aplicaron técnicas de alineación como RLHF, DPO o instrucción supervisada. Cualquier afirmación sobre estas cuestiones sería especulativa y no debe asumirse.
+El modelo se presenta como fine-tune del base Qwen3.5-2B, pero la model card indica explícitamente que los datos de entrenamiento de Valen-Decision-1.5 no son públicos. No se documenta el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas de RLHF o DPO. El autor publica el código de entrenamiento en su repositorio de GitHub, lo que permite reentrenar o ajustar el modelo sobre datos propios.
 
 ## Capacidades
 
-- Generación de texto: capacidad esperable por tratarse de un modelo de lenguaje, aunque no confirmada en la documentación.
-- Razonamiento y matemáticas: no disponible.
-- Generación de código: no disponible.
-- Tool calling / function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible (el nombre "Decision" sugiere afinidad con este uso, sin confirmación).
-- Capacidades multilingües: no disponible.
-- Capacidades especiales (modo thinking, visión, audio): no disponible.
+- Clasificación de mensajes de cliente mediante preguntas de tipo predicado (presencia de un concepto) y de elección (selección entre opciones).
+- Verificación de imágenes contra requisitos definidos, devolviendo probabilidades por pregunta.
+- Identificación de acciones en vídeos.
+- Localización visual mediante preguntas de tipo bbox, con salida de cajas delimitadoras en la misma pasada.
+- Salida estructurada y tipada: probabilidades para predicados, elecciones y puntuaciones, más cajas para preguntas de grounding.
+- Soporte de dos formatos de API de decisión: SystemOne (usado por Jev) y Decisions (usado por OpenAI).
+- Interfaz de predicción mediante `model.predict()` con preguntas definidas por el usuario.
+- Capacidad multimodal de entrada imagen-texto (pipeline image-text-to-text).
+- No se documenta soporte de tool calling genérico, razonamiento multi-paso libre ni modo thinking.
 
 ## Casos de uso
 
-- Prototipado local de asistentes conversacionales: con 2 200 millones de parámetros, el modelo puede ejecutarse en una GPU de consumo de gama media-alta y servir como banco de pruebas para flujos de chat antes de migrar a modelos mayores.
-- Evaluación comparativa interna: útil como línea base de modelos pequeños en experimentos de investigación donde se necesite un checkpoint adicional de ~2B con licencia permisiva.
-- Fine-tuning específico de dominio: la licencia Apache 2.0 y el formato safetensors facilitan el ajuste fino supervisado sobre datos propios para tareas acotadas (clasificación de intenciones, extracción de entidades, resumen corto).
-- Despliegue en entornos con recursos limitados: al caber en una única GPU de consumo, puede integrarse en servicios de inferencia de baja concurrencia o en dispositivos con aceleración gráfica moderada.
-- Experimentación con código personalizado: el repositorio incluye `custom_code`, lo que permite estudiar o adaptar la implementación del autor en pipelines de investigación.
-- Base para destilación o merging: su tamaño lo hace manejable como componente en técnicas de fusión de modelos o como alumno en procesos de destilación desde modelos mayores.
+- Enrutamiento de tickets de soporte: el modelo recibe el texto del mensaje y una batería de preguntas de elección (categoría, urgencia, idioma) y devuelve probabilidades que permiten asignar el ticket al equipo adecuado. El Cookbook oficial incluye un tutorial específico de ticket routing.
+- Cribado de imágenes de producto: se envían imágenes de catálogo junto con preguntas de predicado (fondo blanco, producto centrado, sin texto superpuesto) y el modelo devuelve la probabilidad de cumplimiento de cada requisito, tal como se describe en el tutorial product screening.
+- Etiquetado de vídeo: identificación de acciones presentes en fragmentos de vídeo mediante preguntas de predicado y elección, útil para indexación y moderación de contenido.
+- Verificación de contenidos generados: comprobación automática de si una imagen o texto cumple una política antes de publicarse, usando las probabilidades como umbral de aceptación.
+- Moderación y control de calidad: clasificación de mensajes o imágenes contra criterios definidos, con la probabilidad como señal calibrable para decidir revisión humana.
+- Extracción de regiones de interés: uso de preguntas bbox para localizar objetos concretos en una imagen y alimentar pipelines posteriores de recorte, OCR o análisis.
+- Integración en producción sin GPU: gracias a las variantes ONNX y GGUF y al runtime Valen llama.cpp, puede desplegarse en entornos con recursos limitados o en el borde.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible.
+No se han publicado resultados de benchmarks en la información disponible. La model card menciona un "Decision Index" como métrica propia de la familia, con mejores puntuaciones en los tamaños mayores, pero no se proporcionan valores numéricos para este modelo de 2B.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: aproximadamente 4,5 GB en FP16 (2,22 B de parámetros × 2 bytes), en torno a 2,3-2,5 GB en cuantización de 8 bits y 1,2-1,5 GB en cuantización de 4 bits (estimaciones teóricas; no confirmadas por el autor).
-- GPU recomendadas: cualquier GPU con al menos 6-8 GB de VRAM para FP16 con margen para el contexto; RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070, RTX 4080, RTX 4090, A100 o H100 para despliegues de mayor concurrencia.
-- Cabe en GPU de consumo: sí, previsiblemente en modelos con 6 GB o más de VRAM en FP16 y en GPUs de 4 GB con cuantización.
-- Opciones de despliegue: al requerir `custom_code`, es necesario verificar compatibilidad con vLLM, TGI o llama.cpp; la vía más segura es `transformers` con `trust_remote_code=True`. La conversión a GGUF para Ollama o llama.cpp no está documentada y dependería de que la arquitectura personalizada sea convertible.
-- Latencia y throughput: no disponible.
+- VRAM estimada para inferencia en BF16: en torno a 4,5 GB solo para pesos (el repositorio ocupa 4,5 GB), más overhead de activaciones y del runtime; se recomienda al menos 8 GB de VRAM para trabajar con holgura.
+- En FP32 las cabezas de decisión y grounding añaden una carga pequeña adicional, ya contemplada en el tamaño del repositorio.
+- GPU recomendadas: cualquier GPU con 8 GB o más, como RTX 3070/4070 o superiores; A100 y H100 para despliegues de mayor concurrencia.
+- Cabe en GPU de consumo: sí, en tarjetas con 8 GB o más de VRAM.
+- Opciones de despliegue: Transformers con `trust_remote_code=True`, ONNX Runtime y el runtime Valen llama.cpp 0.2.0 con pesos GGUF.
+- Latencia y throughput: no disponibles. El modelo requiere `attn_implementation="sdpa"` y desactivar TF32 en cuDNN según la guía de inicio rápido del autor.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Licencia | Documentación | Disponibilidad |
+| Modelo | Parámetros | Contexto | Enfoque | Licencia | Formatos |
 |---|---|---|---|---|---|
-| Valen-Decision-1.5-2B | 2,22 B | no disponible | Apache 2.0 | mínima (solo licencia) | Hugging Face |
-| Qwen2.5-1.5B | 1,54 B | 32 768 tokens (versión estándar) | Apache 2.0 | extensa | Hugging Face, ecosistema amplio |
-| Gemma 2 2B | 2,6 B | 8 192 tokens | Gemma Terms | extensa | Hugging Face |
-| SmolLM2-1.7B | 1,7 B | 8 192 tokens | Apache 2.0 | extensa | Hugging Face |
+| Valen-Decision-1.5-2B | 2,2B | no disponible | Decisión estructurada multimodal con grounding | Apache 2.0 | safetensors, ONNX, GGUF |
+| Valen-Decision-1.5-0.8B | 0,8B | no disponible | Decisión estructurada multimodal | Apache 2.0 | safetensors, ONNX, GGUF |
+| Valen-Decision-1.5-4B | 4B | no disponible | Decisión estructurada multimodal | Apache 2.0 | safetensors, ONNX, GGUF |
+| Qwen/Qwen3.5-2B | ≈2B | no disponible | Generación de texto multimodal | no disponible en esta ficha | no disponible en esta ficha |
 
-La comparación se ofrece a título orientativo por rango de tamaño; no hay datos de rendimiento del modelo Valen que permitan una comparación cuantitativa.
+Los tamaños 0.8B, 4B, 9B y 27B de la misma familia son las alternativas más directas: los mayores obtienen mejor Decision Index a cambio de más memoria y cómputo. El modelo base Qwen3.5-2B es el punto de partida del fine-tune, pero no es un sustituto funcional, ya que no ofrece salidas de decisión tipadas ni grounding. No se dispone de datos de benchmarks para comparar rendimiento numérico entre estas opciones.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de model card técnica: no hay información sobre datos de entrenamiento, idiomas, contexto o alineación, lo que impide evaluar sesgos y riesgos de forma rigurosa.
-- Riesgo de alucinación: inherente a los modelos de lenguaje de este tamaño y no cuantificado por el autor.
-- Sesgos conocidos: no disponibles; al desconocerse el corpus, no puede descartarse la presencia de sesgos de género, idioma o dominio.
-- Limitaciones de contexto e idioma: no documentadas; el rendimiento fuera del inglés (o del idioma dominante del entrenamiento) es incierto.
-- Dependencia de código personalizado: requiere `trust_remote_code=True`, lo que implica ejecutar código del autor; conviene auditar el repositorio antes de usarlo en entornos sensibles.
-- Licencia Apache 2.0: permite uso comercial y modificación, pero no exime de responsabilidad sobre el comportamiento del modelo.
-- Advertencia para producción: sin benchmarks ni documentación, no se recomienda su uso en sistemas críticos sin una evaluación empírica previa y exhaustiva.
-- Métricas de comunidad nulas (0 descargas, 0 likes en el momento de la consulta): no hay evidencia de validación por terceros.
+- El modelo no es un generador de texto libre: está diseñado para responder preguntas estructuradas y no debe esperarse de él conversación abierta ni razonamiento multi-paso.
+- Los datos de entrenamiento no son públicos, lo que impide auditar la composición del dataset y los posibles sesgos adquiridos.
+- No se documentan los idiomas soportados; conviene validar el comportamiento en castellano antes de usarlo en producción.
+- No se publican resultados de benchmarks ni métricas de calibración, por lo que los umbrales de probabilidad deben calibrarse empíricamente sobre datos propios.
+- Riesgo de alucinación en las probabilidades: al ser salidas de un modelo neuronal, pueden ser excesivamente confiadas en entradas fuera de distribución.
+- La longitud de contexto no está documentada, lo que limita la planificación de entradas largas.
+- Requiere `trust_remote_code=True` y ejecución de código personalizado del autor, lo que implica revisar el código antes de desplegarlo en entornos sensibles.
+- La licencia Apache 2.0 permite uso comercial, pero conviene verificar las condiciones del modelo base Qwen3.5-2B y de los assets y demos del repositorio.
+- El modelo se apoya en el runtime propietario Valen llama.cpp 0.2.0 para los pesos GGUF, lo que añade una dependencia específica del ecosistema del autor.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/Valen-Team/Valen-Decision-1.5-2B
-- Perfil del autor: https://huggingface.co/Valen-Team
-- Paper, blog o repositorio adicional: no disponible
+- Variante ONNX: https://huggingface.co/Valen-Team/Valen-Decision-1.5-2B-ONNX
+- Variante GGUF: https://huggingface.co/Valen-Team/Valen-Decision-1.5-2B-GGUF
+- Modelo 0.8B: https://huggingface.co/Valen-Team/Valen-Decision-1.5-0.8B
+- Modelo 4B: https://huggingface.co/Valen-Team/Valen-Decision-1.5-4B
+- Modelo 9B: https://huggingface.co/Valen-Team/Valen-Decision-1.5-9B
+- Modelo 27B: https://huggingface.co/Valen-Team/Valen-Decision-1.5-27B
+- Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B
+- Repositorio de código y entrenamiento: https://github.com/Valen-Team/Valen
+- Demo web y API gratuita: https://valen-team.github.io/
+- Space de playground: https://huggingface.co/spaces/Valen-Team/Valen-API
+- Cookbook: https://valen-team.github.io/cookbook/
+- Documentación de Transformers: https://valen-team.github.io/docs/valen/quickstart/
+- Documentación de la API: https://valen-team.github.io/docs/valen/api/
+- Tutorial de ticket routing: https://valen-team.github.io/cookbook/ticket-routing/
+- Tutorial de cribado de productos: https://valen-team.github.io/cookbook/product-screening/
+- Tutorial de etiquetado de vídeo: https://valen-team.github.io/cookbook/video-tagging/
+- Demostración en vídeo: https://raw.githubusercontent.com/Valen-Team/Valen/main/assets/demos/valen-decision-1.5-demo.mp4
+- Formato SystemOne de Jev: https://docs.typesafe.ai/api/system-one
+- Formato Decisions de OpenAI: https://developers.openai.com/api/docs/guides/decisions

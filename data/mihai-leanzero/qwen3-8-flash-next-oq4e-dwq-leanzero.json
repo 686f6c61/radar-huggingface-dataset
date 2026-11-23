@@ -28,7 +28,7 @@
     "region:us"
   ],
   "likes": 1,
-  "downloads_30d": 491,
+  "downloads_30d": 509,
   "trending_score": 0,
   "parameters": 179999981459,
   "parameters_human": "180.00B",
@@ -49,11 +49,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Shib Events and Ticketing Engine: Revolutionizing Event Ticketing",
-      "url": "https://news.shib.io/2025/04/17/shib-events-and-ticketing-engine-revolutionizing-event-ticketing/",
-      "snippet": "Apr 17, 2025 · Digital events are booming, but are your tickets legit? A next-gen ticketing engine powered by NFTs ensures secure, …"
-    }
-  ]
+  "sources": []
 }

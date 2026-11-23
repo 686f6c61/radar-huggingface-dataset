@@ -2,115 +2,113 @@
 
 ## Resumen
 
-Este repositorio contiene una cuantización en formato GGUF del modelo multimodal `inclusionAI/Ling-3.0-flash-VL`, publicada por el usuario `kingjones777` y orientada específicamente al hardware AMD Strix Halo (iGPU gfx1151, Radeon 8060S, Ryzen AI Max+ 395). El modelo base es un transformer de mezcla de expertos (MoE) de 124 000 millones de parámetros totales con unos 5500 millones activos por token, de tipo vision-language nativo, y esta versión lo cuantiza al formato propietario ROCmFP4 (en torno a 4,38-4,70 bits por peso) para que quepa en la memoria unificada de un equipo de sobremesa.
+Ling-3.0-flash-VL-MTP-ROCmFP4-GGUF es una cuantización comunitaria del modelo multimodal inclusionAI/Ling-3.0-flash-VL, publicada por el usuario kingjones777. El modelo base es un transformer de tipo Mixture-of-Experts (MoE) con 124.414.211.552 parámetros totales y aproximadamente 5.500 millones de parámetros activos por token, diseñado para tareas de imagen-texto-a-texto (image-text-to-text). Esta distribución concreta no proviene del autor original, sino que ha sido empaquetada en formato GGUF para su ejecución en llama.cpp sobre hardware AMD.
 
-La particularidad técnica del trabajo es que añade un cabezal de predicción multi-token (MTP) que el modelo original no trae: lo injerta desde el modelo hermano de solo texto, `inclusionAI/Ling-3.0-flash`, aprovechando que todas las dimensiones de texto coinciden entre ambos checkpoints. Además, incorpora un parche de servidor que permite usar MTP y visión simultáneamente, combinación que en llama.cpp estándar provoca un aborto del proceso al procesar la primera imagen.
+La particularidad de esta ficha es que no se trata de una conversión convencional: el autor ha injertado una cabeza de predicción multi-token (MTP, multi-token prediction) procedente del modelo hermano de texto inclusionAI/Ling-3.0-flash, y ha corregido el servidor para que la decodificación especulativa MTP y el procesamiento de imágenes funcionen simultáneamente, algo que en llama.cpp estándar provoca un aborto duro del servidor. El resultado es un conjunto de tres cuantizaciones ROCmFP4 (STRIX_LEAN, FAST y COHERENT) más un fichero sin MTP y un proyector multimodal BF16.
 
-Su relevancia ahora es doble: por un lado demuestra que se puede servir un modelo multimodal de más de 120 000 millones de parámetros en un mini-PC con 128 GiB de memoria unificada a velocidades utilizables; por otro, documenta con medidas reales que las etiquetas de calidad de las cuantizaciones son dependientes del modelo (la variante de mayor bit-width resulta peor que las demás). El repositorio declara licencia MIT y, en el momento de la consulta, no registra descargas ni valoraciones.
+El objetivo declarado es el despliegue local en AMD Strix Halo (gfx1151), en concreto en un Ryzen AI Max+ 395 con GPU Radeon 8060S y 128 GiB de memoria unificada. Con licencia MIT y un tamaño de repositorio de 275,6 GB, el modelo resulta relevante para quienes necesitan un modelo multimodal de gran escala en hardware de consumo profesional AMD, con métricas de rendimiento medidas sobre los ficheros publicados y no estimadas.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer MoE multimodal (vision-language) con atención MLA, más cabezal MTP para decodificación especulativa; modelo base Ling-3.0-flash-VL cuantizado a ROCmFP4 |
-| Parámetros totales | 127 486 405 600 (~127,5B) según los pesos safetensors del modelo base; la model card indica 124B totales |
-| Parámetros activos | ~5,5B por token (MoE con 512 expertos) |
-| Longitud de contexto | No disponible (el ejemplo de servidor de la model card usa `-c 8192`) |
-| Tipos de cuantización | ROCmFP4 en tres niveles: STRIX_LEAN (4,38 bpw), FAST, COHERENT (4,70 bpw); proyector visual en BF16 |
-| Idiomas soportados | No disponible (la model card no declara lista de idiomas; las pruebas de perplejidad se hacen sobre wikitext-2 en inglés) |
-| Licencia | MIT (declarada en el repositorio del quant; verificar la licencia del modelo base) |
-| Formato de pesos | GGUF (llama.cpp); ficheros principales + un `mmproj` BF16 para visión |
-| Tamaño del repositorio | 209,1 GB |
-| Backends soportados | ROCm0 y Vulkan0 en llama.cpp |
+| Arquitectura | Transformer Mixture-of-Experts (MoE) multimodal, con cabeza MTP injertada (nextn = 1) |
+| Parametros totales | 124.414.211.552 |
+| Parametros activos | Aproximadamente 5.500 millones (5.5B active, segun la model card) |
+| Longitud de contexto | No disponible (los ejemplos de servidor usan `-c 8192`) |
+| Tipos de cuantizacion | ROCmFP4 (4.38 bpw en STRIX_LEAN, 4.70 bpw en COHERENT); proyector multimodal en BF16 |
+| Idiomas soportados | No disponible |
+| Licencia | MIT |
+| Formato de pesos | GGUF (llama.cpp), mas `mmproj` BF16 para vision |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es una arquitectura MoE con 512 expertos, 42 bloques, dimensión oculta de 2560, 32 cabezales de atención, vocabulario de 157 184 tokens, `rope_theta` de 6e6, `layer_group_size` 6, `first_k_dense_replace` 2 y atención de tipo MLA (`kv_lora_rank` 512, `qk_nope_head_dim` 128, `qk_rope_head_dim` 64, `v_head_dim` 128). La torre de visión emplea M-RoPE (posiciones 2D) y un `image_token_id` de 157 157. No se dispone de información sobre el dataset de entrenamiento, el número de tokens, la composición de datos ni si hubo fases de RLHF o DPO; estos datos no aparecen en la información proporcionada.
+El modelo base es un transformer MoE multimodal con 42 bloques y 512 expertos, según los parámetros de configuración citados en la model card: vocabulario de 157.184 tokens, dimensión oculta de 2560, `kv_lora_rank` de 512, `qk_nope_head_dim` de 128, `qk_rope_head_dim` de 64, `v_head_dim` de 128, 32 cabezas de atención, `rope_theta` de 6e6, `layer_group_size` de 6 y `first_k_dense_replace` de 2. La presencia de `kv_lora_rank` y de las dimensiones separadas nope/rope apunta a un mecanismo de atención de tipo MLA (Multi-head Latent Attention) con RoPE parcial, habitual en arquitecturas MoE recientes. La ruta de visión emplea M-RoPE, lo que hace que las posiciones asociadas a imágenes no sean consecutivas.
 
-La innovación de esta publicación es el injerto del cabezal MTP. El modelo VL se distribuye sin cabezal de predicción multi-token, mientras que su hermano de texto lo lleva como bloque 42; como todas las dimensiones de texto coinciden (vocabulario, oculto, capas, expertos y rangos de MLA), el trasplante es exacto: se añaden 1553 tensores donantes (5,72 GiB en BF16) como un shard extra sobre una copia con enlaces duros del checkpoint VL, se fija `num_nextn_predict_layers: 1` en `text_config` y se convierte. El resultado son 938 tensores y 43 bloques (`nextn = 1`) frente a 917 y 42 sin el injerto, y se verificó que todos los ficheros publicados conservan `blk.42.*` tras la cuantización. Adicionalmente, los ficheros se construyeron para un servidor corregido que avanza el drafter a través de las posiciones de imagen usando el `image_token_id` del propio modelo y los estados ocultos pre-normalización del modelo objetivo, replicando las posiciones 2D de M-RoPE, y que degrada a «sin draft» en lugar de abortar cuando eso no es posible.
+La innovación principal de esta publicación no está en el entrenamiento, sino en la modificación del checkpoint. Ling-3.0-flash-VL se distribuye sin cabeza MTP; su hermano de texto la incluye como bloque 42. Como todas las dimensiones de texto coinciden entre ambos checkpoints (vocabulario, oculto, capas, expertos, dimensiones de atención y `rope_theta`), la única diferencia es `num_nextn_predict_layers`, que constituye precisamente la cabeza. El autor transfiere 1553 tensores donantes (5,72 GiB en BF16) como un shard adicional sobre una copia hard-linked del checkpoint VL, fija `num_nextn_predict_layers: 1` en `text_config` y convierte el resultado. El modelo final tiene 938 tensores, 43 bloques y `nextn = 1`, frente a 917 tensores y 42 bloques sin el injerto; se verificó que todos los ficheros publicados conservan `blk.42.*` tras la cuantización.
+
+No se dispone de información sobre el volumen de tokens de entrenamiento, la composición del dataset ni las etapas de RLHF o DPO del modelo base en la información proporcionada.
 
 ## Capacidades
 
-- Generación de texto conversacional y multimodal (pipeline `image-text-to-text`): acepta imágenes junto a texto mediante el fichero `mmproj` BF16.
-- Razonamiento y generación de código y matemáticas: no se aportan evaluaciones específicas en la información disponible.
-- Decodificación especulativa mediante cabezal MTP injertado, con ganancia medida de +12,9 % en decodificación con `--spec-draft-n-max 1`.
-- Soporte de plantilla de chat Jinja (`--jinja`), lo que habilita el formateo de turnos y flujos de tipo agente.
-- Orientación a cargas agénticas y de herramientas: la model card recomienda el backend ROCm0 precisamente para «prompts largos y trabajo agéntico/de herramientas», aunque no se documenta un formato de function calling concreto.
-- Visión y MTP simultáneos: capacidad habilitada solo con el servidor parcheado que acompaña a esta publicación.
-- Capacidades multilingües: no disponibles.
+- Generación de texto conversacional multi-turno, con pipeline declarado `image-text-to-text` y etiqueta `conversational`.
+- Comprensión de imágenes: requiere el fichero `mmproj-Ling-3.0-flash-VL-BF16.gguf` (878.174.144 bytes) para procesar entradas visuales.
+- Decodificación especulativa mediante cabeza MTP, con aceptación de borrador medida de 0,722 en la primera posición.
+- Uso conjunto de visión y MTP: los ficheros incorporan una corrección de servidor que permite servir imágenes y decodificación especulativa a la vez, cosa que llama.cpp estándar no soporta (aborta el proceso).
+- Razonamiento de tipo agéntico y trabajo con prompts largos, favorecido por el buen rendimiento de prefill en el backend ROCm0 (560,5 tok/s en STRIX_LEAN).
+- Compatibilidad con endpoints (`endpoints_compatible` en las etiquetas), lo que facilita su integración tras una API compatible con OpenAI.
+- Capacidades multilingües: no disponibles en la información proporcionada.
+- Soporte explícito de tool calling y function calling: no disponible en la documentación; la model card menciona cargas de trabajo "agentic/tool" como escenario de uso, pero no detalla mecanismos de llamada a herramientas.
 
 ## Casos de uso
 
-- Asistente multimodal local en un equipo Strix Halo: el modelo puede mantener conversaciones multi-turno con imágenes adjuntas (capturas, diagramas, fotos de pizarra) sin depender de la nube, con 68-72 GB de pesos residentes en memoria unificada y unos 35-40 tok/s de decodificación.
-- Automatización de soporte técnico con captura de pantalla: el pipeline `image-text-to-text` permite enviar una captura de un error junto al texto del usuario y obtener una explicación o pasos de resolución, aprovechando la ventana configurable (`-c 8192` en el ejemplo).
-- Transcripción y análisis documental con visión: indexación de documentos escaneados o formularios donde el modelo extrae y resume el contenido visual junto con el textual.
-- Agentes de múltiples pasos con llamada a herramientas: el soporte de plantilla Jinja y el modo `--parallel 1` permiten integrarlo en un bucle agéntico donde el prefill rápido de ROCm0 (560,5 tok/s) reduce la latencia de los turnos con contexto largo.
-- Servicio de chat de baja concurrencia en hardware de escritorio: con decodificación de 38-40 tok/s en Vulkan0, es viable para un usuario o unos pocos simultáneos en un despliegue autoalojado.
-- Banco de pruebas de cuantización e investigación en AMD: el repositorio incluye tres niveles con perplejidad y throughput medidos, lo que lo convierte en un material útil para estudiar el impacto de ROCmFP4 y del MTP en gfx1151.
+- Asistente multimodal local en estación de trabajo AMD: con 128 GiB de memoria unificada en un Ryzen AI Max+ 395, el fichero STRIX_LEAN (68,1 GB) y el proyector BF16 caben holgadamente, permitiendo describir imágenes, responder sobre capturas o extraer información de documentos escaneados sin salir del equipo.
+- Procesamiento por lotes de documentos con imagen: el backend ROCm0 ofrece 560,5 tok/s de prefill en STRIX_LEAN, por lo que conviene para ingerir prompts largos con contenido visual y generar respuestas cortas, como resúmenes de facturas o clasificación de formularios.
+- Chat interactivo de larga duración: el backend Vulkan0 alcanza 38,04 tok/s de decodificación en STRIX_LEAN y 40,43 tok/s en FAST, adecuado para conversaciones donde prima la velocidad de generación sobre la de prefill.
+- Agentes con prompts extensos: la combinación de MTP con `--spec-draft-n-max 1` eleva la decodificación un 12,9 % (de 33,29 a 37,58 tok/s) con una aceptación de borrador de 0,722, lo que compensa parcialmente el coste de prefill del 7,4 % y mejora los turnos agénticos cortos.
+- Evaluación e investigación de cuantizaciones de bajo bit-width: los tres niveles publicados (4,38 bpw y 4,70 bpw) con perplejidad medida sobre wikitext-2 permiten estudiar el compromiso entre bits por peso y calidad en un MoE de 124B, incluyendo el hallazgo de que el nivel de mayor bit-width no es el de mejor perplejidad.
+- Servicio con API compatible: gracias a la etiqueta `endpoints_compatible`, puede desplegarse tras una interfaz tipo OpenAI para prototipos de producto que requieran entrada de imagen y texto.
+- Reproducción de decodificación especulativa en hardware AMD: útil para ingenieros que quieran validar el injerto de cabezas MTP y la corrección del servidor en gfx1151 antes de adoptar el patrón en otros modelos.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, etc.) en la información disponible. Los únicos datos medidos por el autor son perplejidad sobre wikitext-2 y throughput de prefill/decodificación.
+Perplejidad sobre wikitext-2 (`wiki.test.raw`, 20 fragmentos, `-c 2048 -b 2048`, ROCm0, ajustes idénticos por nivel):
 
-Perplejidad y velocidad por nivel de cuantización (PPL: wikitext-2 `wiki.test.raw`, 20 chunks, `-c 2048 -b 2048`, ROCm0; PP/TG: prompt de 659 tokens generando 128, MTP `n-max 1`):
-
-| Fichero | Tamaño (bytes) | PPL ↓ | ROCm0 PP / TG (tok/s) | Vulkan0 PP / TG (tok/s) |
+| Fichero | Tamano (bytes) | PPL | ROCm0 PP / TG (tok/s) | Vulkan0 PP / TG (tok/s) |
 |---|---:|---:|---:|---:|
-| STRIX_LEAN | 68 136 568 224 | 9,2579 ±0,208 | 560,5 / 35,03 | 413,4 / 38,04 |
-| FAST | 67 934 440 864 | 9,4640 ±0,213 | 541,8 / 36,33 | 402,7 / 40,43 |
-| COHERENT | 72 123 718 560 | 10,0590 ±0,233 | 506,1 / 34,46 | 404,6 / 38,14 |
-| mmproj BF16 | 878 174 144 | — | — | — |
+| STRIX_LEAN | 68.136.568.224 | 9,2579 ±0,208 | 560,5 / 35,03 | 413,4 / 38,04 |
+| FAST | 67.934.440.864 | 9,4640 ±0,213 | 541,8 / 36,33 | 402,7 / 40,43 |
+| COHERENT | 72.123.718.560 | 10,0590 ±0,233 | 506,1 / 34,46 | 404,6 / 38,14 |
+| Q4_0 sin MTP | 66.492.905.984 | No disponible | No disponible | No disponible |
 
-Efecto del ajuste MTP (STRIX_LEAN, ROCm0, prompt de 337 tokens, 160 generados):
+PP/TG medidos sobre un prompt de 659 tokens generando 128 tokens, MTP con `n-max 1`, equipo en reposo.
 
-| Ajuste MTP | Decodificación (tok/s) | Diferencia | Aceptación del draft |
-|---|---:|---:|---|
+Efecto de la configuración MTP sobre STRIX_LEAN en ROCm0 (prompt de 337 tokens, 160 tokens generados):
+
+| Ajuste MTP | Decodificacion (tok/s) | Variacion | Aceptacion del borrador |
+|---|---:|---:|---:|
 | Desactivado | 33,29 | — | — |
 | `--spec-draft-n-max 1` | 37,58 | +12,9 % | 0,722 |
-| `--spec-draft-n-max 2` | 31,92 | −4,1 % | 0,475 (0,724; 0,241) |
-| `--spec-draft-n-max 3` | 30,62 | −8,0 % | 0,369 (0,660; 0,340; 0,094) |
+| `--spec-draft-n-max 2` | 31,92 | −4,1 % | 0,475 (0,724 / 0,241) |
+| `--spec-draft-n-max 3` | 30,62 | −8,0 % | 0,369 (0,660 / 0,340 / 0,094) |
 
-Coste del MTP en prefill: 576,7 → 534,3 tok/s (−7,4 %). Comparativa de backend: ROCm0 gana en prefill entre un 25 % y un 35 %; Vulkan0 gana en decodificación entre un 9 % y un 11 %.
+El coste en prefill del MTP es de 576,7 a 534,3 tok/s (−7,4 %) en la misma medición. No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible.
 
 ## Requisitos de hardware
 
-- Memoria necesaria: entre 67,9 GB y 72,1 GB para los pesos, más 0,88 GB del proyector visual BF16.
-- Equipo de referencia: Ryzen AI Max+ 395 (Radeon 8060S, gfx1151) con 128 GiB de memoria unificada, donde el modelo cabe holgadamente.
-- GPU de consumo: no cabe en una RTX 4090 (24 GB) ni en configuraciones de 48 GB; requeriría offload a RAM del sistema, con la penalización de velocidad correspondiente.
-- GPU de centro de datos: cabría en memoria en una A100 80 GB o H100 80 GB, pero el formato ROCmFP4 y el rendimiento medido están atados a llama.cpp sobre gfx1151, por lo que no hay datos de rendimiento en esas tarjetas.
-- Opciones de despliegue: `llama.cpp` / `llama-server` con los backends ROCm0 o Vulkan0; el uso conjunto de MTP y visión exige el servidor parcheado que acompaña a la publicación, ya que la versión estándar de llama.cpp aborta al cargar ambos.
-- Latencia y throughput medidos: prefill de 560,5 tok/s y decodificación de 35,03 tok/s con STRIX_LEAN en ROCm0; 413,4 y 38,04 tok/s respectivamente en Vulkan0. La model card advierte que un solo hilo de CPU ocupado altera de forma medible estas cifras.
+- Memoria: el fichero STRIX_LEAN ocupa 68,1 GB y el proyector multimodal 0,88 GB; el conjunto requiere aproximadamente 69 GB, más overhead de contexto KV. COHERENT sube a 72,1 GB.
+- Hardware de referencia: Ryzen AI Max+ 395 con GPU Radeon 8060S (gfx1151) y 128 GiB de memoria unificada, sobre el que se midieron todas las cifras.
+- GPU discretas: no se han publicado mediciones para A100, H100 ni RTX 4090. Por tamaño, el modelo no cabe en una RTX 4090 de 24 GB en estas cuantizaciones; en A100/H100 de 80 GB cabría el fichero STRIX_LEAN pero no hay datos de rendimiento.
+- Cabe en GPU de consumo: solo en el caso de memoria unificada grande (Strix Halo con 128 GiB). No cabe en GPUs de consumo con VRAM dedicada convencional.
+- Despliegue: llama.cpp con `llama-server`, backends ROCm0 y Vulkan0. Se requieren los flags `--spec-type draft-mtp --spec-draft-n-max 1 --spec-draft-n-min 0 --spec-draft-p-min 0.0` para MTP, `--mmproj` para visión, `-ngl 999 -fa on --jinja --parallel 1`, y un servidor corregido que avance el borrador por las posiciones de imagen usando `image_token_id` 157157. El fichero sin MTP sirve para runtimes que no soportan `draft-mtp`.
+- Rendimiento medido: prefill de 506,1 a 560,5 tok/s en ROCm0 y de 402,7 a 413,4 tok/s en Vulkan0; decodificación de 34,46 a 36,33 tok/s en ROCm0 y de 38,04 a 40,43 tok/s en Vulkan0. ROCm0 gana prefill un 25-35 %; Vulkan0 gana decodificación un 9-11 %.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos de terceros comparables en la información proporcionada. La comparación posible se limita a las variantes vinculadas a este mismo linaje:
-
-| Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Licencia | Formato / disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Este quant (STRIX_LEAN) | 127,5B totales / ~5,5B activos | No disponible | PPL 9,26; 560,5 PP / 35,03 TG en ROCm0 | MIT (declarada en el repo) | GGUF, 68,1 GB |
-| Este quant (FAST) | Idem | No disponible | PPL 9,46; 541,8 PP / 36,33 TG | MIT | GGUF, 67,9 GB |
-| Este quant (COHERENT) | Idem | No disponible | PPL 10,06; 506,1 PP / 34,46 TG | MIT | GGUF, 72,1 GB |
-| `inclusionAI/Ling-3.0-flash-VL` (base) | 124B / ~5,5B activos | No disponible | No disponible | No disponible en la información aportada | Pesos originales (BF16) |
-| `inclusionAI/Ling-3.0-flash` (solo texto) | Dimensiones de texto idénticas al VL | No disponible | No disponible | No disponible en la información aportada | Incluye el cabezal MTP donante |
+| Ling-3.0-flash-VL-MTP-ROCmFP4 (esta ficha) | 124,4B totales / ~5,5B activos | No disponible | MIT | GGUF ROCmFP4, 426 descargas | MTP injertado, visión y MTP simultáneos, optimizado para gfx1151 |
+| inclusionAI/Ling-3.0-flash-VL (base) | 124,4B totales / ~5,5B activos | No disponible | No disponible en la informacion | Pesos originales | Sin cabeza MTP; vision y MTP no coexisten en llama.cpp estandar |
+| inclusionAI/Ling-3.0-flash (hermano de texto) | No disponible | No disponible | No disponible en la informacion | Pesos originales | Donante de la cabeza MTP (bloque 42); sin torre de vision |
+
+No se dispone de datos de benchmarks comparativos con modelos de la misma categoría en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Es una cuantización de comunidad: 0 descargas y 0 valoraciones en el momento de la consulta, sin proceso de validación independiente.
-- El funcionamiento conjunto de MTP y visión depende de un servidor parcheado; con llama.cpp estándar el proceso cae con `GGML_ABORT` al procesar la primera imagen.
-- La variante COHERENT es peor que STRIX_LEAN en perplejidad (0,80 puntos, unas 3,5σ respecto a su margen de error) y más lenta, pese a ser la de mayor tamaño y bit-width; no debe asumirse como la opción de mayor calidad.
-- El formato ROCmFP4 y las cifras de rendimiento están medidos sobre gfx1151 (Strix Halo); la portabilidad a otras GPU AMD o a NVIDIA no está documentada.
-- La única métrica de calidad publicada es perplejidad sobre wikitext-2 en inglés; no hay evaluaciones de razonamiento, código, matemáticas, visión o seguridad.
-- No se declaran idiomas soportados, por lo que el comportamiento multilingüe es desconocido.
-- No hay información sobre sesgos, datos de entrenamiento ni fases de alineación.
-- Riesgo de alucinación inherente a los modelos generativos; no se aportan tasas de error ni evaluaciones de fidelidad.
-- Restricciones de licencia: el repositorio declara MIT, pero es responsabilidad del usuario verificar la licencia del modelo base antes de un uso comercial.
-- El MTP penaliza el prefill un 7,4 %, por lo que es desaconsejable en cargas de lotes con prompts muy largos.
-- La model card está truncada en la sección de visión; las mediciones de MTP con imágenes no llegan a mostrarse.
+- La cuantización ROCmFP4 está orientada específicamente a AMD Strix Halo (gfx1151); en otras GPU o backends el rendimiento y la corrección pueden diferir y no están documentados.
+- El uso conjunto de MTP y visión requiere un servidor parcheado; con llama.cpp estándar el servidor aborta al procesar la primera imagen. Si no se dispone de esa corrección, hay que usar el fichero sin MTP.
+- `--spec-draft-n-max` debe fijarse en 1: con valores de 2 o 3 el rendimiento cae por debajo de no usar MTP (aceptación de 0,241 y 0,094 en las posiciones segunda y tercera).
+- El nivel COHERENT, pese a ser el mayor y de mayor bit-width, obtiene peor perplejidad (10,0590 frente a 9,2579) y es más lento; no debe asumirse que sea la opción de calidad.
+- Los números de rendimiento se midieron en un equipo en reposo; una sola hebra de CPU ocupada altera de forma medible los resultados.
+- Riesgo de alucinación y sesgos: no documentados en la información proporcionada.
+- Idiomas soportados: no disponibles; no se puede garantizar un comportamiento adecuado en castellano sin evaluación previa.
+- Longitud de contexto: no disponible; los ejemplos de servidor usan 8192 tokens, pero no se confirma el máximo del modelo.
+- Licencia MIT, que permite uso comercial, pero la licencia del modelo base y de los pesos donantes no se detalla en la información disponible; conviene verificar la cadena de licencias antes de producción.
+- El repositorio ocupa 275,6 GB, lo que exige espacio de almacenamiento considerable aunque solo se descargue un fichero.
+- No hay resultados publicados de MMLU, HumanEval, GSM8K ni evaluaciones multimodales estándar, por lo que la calidad en tareas concretas no está cuantificada.
 
 ## Enlaces
 
-- Repositorio Hugging Face del quant: https://huggingface.co/kingjones777/Ling-3.0-flash-VL-MTP-ROCmFP4-GGUF
+- Modelo en Hugging Face: https://huggingface.co/kingjones777/Ling-3.0-flash-VL-MTP-ROCmFP4-GGUF
 - Modelo base: https://huggingface.co/inclusionAI/Ling-3.0-flash-VL
-- Modelo hermano de texto (donante del cabezal MTP): https://huggingface.co/inclusionAI/Ling-3.0-flash
-
-No se han encontrado en la búsqueda web otros enlaces relevantes (papers, blogs o repositorios) asociados a este modelo.
+- Hermano de texto (donante de la cabeza MTP): https://huggingface.co/inclusionAI/Ling-3.0-flash

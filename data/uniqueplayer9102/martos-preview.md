@@ -2,83 +2,89 @@
 
 ## Resumen
 
-Martos-Preview es un modelo de lenguaje de aproximadamente 2,07 mil millones de parámetros desarrollado por el usuario uniqueplayer9102 como experimento de fine-tuning orientado a roleplay y escritura creativa conversacional. Se construye a partir de Qwen/Qwen3-1.7B mediante una técnica de expansión de bloques inspirada en LLaMA Pro: en lugar de reentrenar todos los pesos del modelo base, se clonan siete bloques transformer y se insertan en la red, congelando el modelo original y entrenando únicamente las proyecciones de los bloques nuevos.
+Martos-Preview es un ajuste fino experimental de Qwen3-1.7B orientado a roleplay y escritura creativa conversacional, publicado por el usuario uniqueplayer9102 en Hugging Face. El modelo aplica una expansión de bloques al estilo LLaMA Pro: en lugar de reentrenar los pesos originales, clona siete bloques transformer y los inserta en la red, congelando el modelo base y entrenando únicamente las proyecciones de los bloques nuevos. El resultado es un transformer denso de 35 capas y 2.072.926.976 parámetros (aproximadamente 2,07B), partiendo de las 28 capas del Qwen3-1.7B original.
 
-El resultado es un transformer denso de 35 capas (frente a las 28 del base) con 2.072.926.976 parámetros. La expansión se valida mediante una comprobación de identidad: las proyecciones de salida de atención y de bajada del MLP de cada bloque clonado se inicializan a cero, de modo que el modelo expandido es funcionalmente equivalente al original antes del entrenamiento. El modelo se publica como un checkpoint Transformers FP16 fusionado, sin necesidad de código personalizado para inferencia.
+La relevancia del modelo es doble. Por un lado, sirve como demostración práctica de la técnica de expansión de bloques con un presupuesto de cómputo muy reducido: todo el entrenamiento se realizó en una única GPU Tesla T4 durante 1400 pasos. Por otro, es un ejemplo de ajuste fino especializado en personajes y conversación multi-turno, con una plantilla de chat basada en la de Qwen3 y soporte para tarjetas de personaje detalladas en el mensaje de sistema.
 
-Es relevante como caso práctico de la técnica de block expansion aplicada a un modelo pequeño y como ejemplo de fine-tuning orientado a personajes con recursos muy limitados (una única GPU Tesla T4). El autor lo etiqueta explícitamente como "Preview" por su carácter experimental y no por la existencia de checkpoints posteriores de esta misma ejecución.
+El proyecto se declara explícitamente como un experimento de hobby y no como un modelo listo para producción. El autor indica que esta ejecución ha terminado en el paso 1400 de 1400 y que no hay más checkpoints previstos para esta variante, aunque anuncia un modelo futuro separado basado en Qwen3.5-2B y entrenado en una RTX 4090 con un conjunto de datos mucho mayor.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer denso (Qwen3) con 35 capas tras expansión de bloques estilo LLaMA Pro |
-| Parámetros totales | 2.072.926.976 (~2,07B) |
-| Parámetros activos | No aplica (modelo denso, no MoE) |
-| Longitud de contexto | 4.096 tokens (ventana de entrenamiento; el modelo base Qwen3-1.7B soporta contextos mayores, pero no se especifica el contexto efectivo tras el fine-tuning) |
-| Tipos de cuantización | No disponible (el repo publica pesos en FP16; no se documentan cuantizaciones GGUF/AWQ/GPTQ) |
-| Idiomas soportados | Inglés (en) |
+| Arquitectura | Transformer denso (Qwen3) con expansión de bloques al estilo LLaMA Pro; 35 capas |
+| Parametros totales | 2.072.926.976 (~2,07B) |
+| Parametros activos | No aplica (modelo denso, no MoE) |
+| Longitud de contexto | 4.096 tokens (ventana de entrenamiento); el contexto nativo de Qwen3-1.7B no se detalla en la información disponible |
+| Tipos de cuantizacion | No disponible (el repositorio publica pesos en FP16; no se documentan variantes GGUF, AWQ ni GPTQ) |
+| Idiomas soportados | Inglés (`en`) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | Safetensors (Transformers, FP16 fusionado) |
+| Formato de pesos | Safetensors (modelo Transformers fusionado en FP16, sin código personalizado) |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de Qwen3-1.7B, un transformer denso de 28 capas. Sobre él se aplica una expansión de bloques inspirada en LLaMA Pro: se clona un bloque transformer después de cada una de las capas `[3, 7, 11, 15, 19, 23, 27]`, dando lugar a 35 capas. Las proyecciones de salida de atención y de bajada del MLP de cada clon se inicializan a cero, de forma que las ramas nuevas no contribuyen inicialmente al flujo residual y el modelo expandido reproduce los logits del original dentro de la tolerancia numérica FP16. Antes de entrenar se ejecuta una comprobación de identidad que rechaza la construcción si la diferencia máxima de logits excede la tolerancia.
+El modelo parte de Qwen3-1.7B, un transformer denso de 28 capas. Sobre esa base se clona un bloque transformer después de cada una de las capas `[3, 7, 11, 15, 19, 23, 27]`, lo que da lugar a siete bloques nuevos que ocupan las posiciones finales `[4, 9, 14, 19, 24, 29, 34]` de la red expandida de 35 capas. Para preservar la equivalencia funcional inicial, se ponen a cero la proyección de salida de atención y la proyección down del MLP de cada bloque clonado: como esas ramas contribuyen inicialmente con cero al flujo residual, el modelo de 35 capas arranca siendo funcionalmente equivalente al de 28 dentro de la tolerancia numérica de FP16. Antes de entrenar se compara la diferencia máxima de logits entre ambos modelos y se rechaza la construcción si supera la tolerancia de comprobación de identidad.
 
-Durante el entrenamiento se congela el modelo original y se entrenan directamente las matrices de proyección de los siete bloques insertados, sin módulos LoRA ni adaptadores: aproximadamente 352M parámetros entrenables. La ventana de entrenamiento es de 4.096 tokens y la pérdida se calcula únicamente sobre los tokens del asistente. El schedule comprende 1.400 pasos con AdamW de 8 bits, learning rate 2e-4, 50 pasos de warmup y acumulación de gradiente de 16, ejecutado en una sola GPU Tesla T4. Al finalizar, los bloques entrenados se fusionan en un modelo Qwen3 estándar de 35 capas.
+El entrenamiento congela el modelo original y ajusta únicamente las matrices de proyección de los siete bloques insertados, aproximadamente 352M parámetros entrenables, sin módulos LoRA ni adaptadores. La ventana de entrenamiento es de 4.096 tokens y la pérdida se calcula solo sobre los tokens del asistente. El calendario consta de 1400 pasos con AdamW de 8 bits, tasa de aprendizaje 2e-4, 50 pasos de calentamiento y acumulación de gradiente de 16, todo ello en una única Tesla T4. Al finalizar, los bloques entrenados se fusionan en un modelo Qwen3 ordinario de 35 capas, de modo que la inferencia no requiere código personalizado.
 
 ## Capacidades
 
-- Generación de texto conversacional y creativo, con especialización en roleplay e interpretación de personajes mediante character cards en el mensaje de sistema.
-- Mantenimiento de personajes consistentes a lo largo de conversaciones multi-turno, incluyendo formato de acciones narrativas entre asteriscos.
-- Escritura creativa y narrativa inmersiva en inglés.
-- Soporte del chat template estándar de Qwen3, con la opción `enable_thinking=False` para respuestas directas en personaje.
-- Hereda la tokenización y el formato conversacional de Qwen3-1.7B.
-- No se documenta soporte de tool calling, function calling, agentes, visión, audio ni otras capacidades especiales.
-- Capacidad multilingüe limitada al inglés según la model card.
+- Generación de texto conversacional multi-turno con mantenimiento de personaje a lo largo de la conversación.
+- Roleplay y escritura creativa: interpretación de personajes definidos mediante tarjetas en el mensaje de sistema, con acciones narrativas entre asteriscos.
+- Seguimiento de instrucciones de formato y estilo dentro de la tarjeta de personaje (identidad, personalidad, escenario, forma de hablar).
+- Plantilla de chat compatible con la de Qwen3, incluyendo el parámetro `enable_thinking`; en los ejemplos se usa con el modo de razonamiento desactivado.
+- Capacidades heredadas del modelo base Qwen3-1.7B (conocimiento general y generación de texto), aunque el ajuste está orientado a conversación creativa.
+- Soporte de tool calling / function calling: no documentado en la información disponible.
+- Soporte de agentes y razonamiento multi-paso: no documentado; el modo thinking se desactiva en los ejemplos de uso.
+- Capacidades multilingües: limitadas al inglés según la etiqueta de idioma del repositorio.
+- Capacidades de visión o audio: no disponibles.
 
 ## Casos de uso
 
-- Roleplay conversacional con personajes definidos: el modelo acepta una character card en el mensaje de sistema (identidad, personalidad, forma de hablar, escenario) y mantiene la coherencia del personaje en turnos alternos de usuario y asistente. Es su caso de uso principal y el objetivo declarado del entrenamiento.
-- Prototipado de chatbots de personaje para juegos o experiencias interactivas: al ser un modelo de ~2B en FP16, puede desplegarse en hardware modesto para iterar rápidamente sobre cartas de personaje y ajustar tono y comportamiento antes de escalar a un modelo mayor.
-- Escritura creativa asistida: generación de diálogos y escenas narrativas con formato de acciones entre asteriscos, útil para guionización o ficción interactiva.
-- Investigación sobre block expansion: sirve como referencia reproducible de la técnica LLaMA Pro aplicada a Qwen3, con un pipeline documentado (clonado de bloques, inicialización a cero, verificación de identidad, congelación del base y entrenamiento solo de proyecciones).
-- Experimentación educativa con fine-tuning en hardware consumer: el entrenamiento completo cabe en una Tesla T4, lo que lo hace adecuado para demostraciones de fine-tuning con recursos limitados.
-- Base para experimentos de expansión posteriores: el autor planea un modelo híbrido (thinking y no-thinking) como continuación separada, por lo que este checkpoint puede servir de punto de partida conceptual para trabajos similares.
+- Roleplay conversacional con personajes: el modelo acepta una tarjeta de personaje en el mensaje de sistema y mantiene la coherencia de identidad, tono y escenario a lo largo de turnos alternos de usuario y asistente, gracias a su ventana de 4.096 tokens.
+- Prototipado de chatbots de personaje para juegos o narrativa interactiva: permite validar guiones, voces y dinámicas de diálogo antes de invertir en modelos mayores, con un coste de inferencia bajo por sus ~2,07B de parámetros.
+- Generación de diálogo creativo para escritura asistida: útil para explorar escenas, réplicas y dinámicas entre personajes en borradores de ficción, con acciones narrativas delimitadas por asteriscos.
+- Investigación sobre expansión de bloques: sirve como referencia reproducible de la técnica LLaMA Pro aplicada a Qwen3, con pesos fusionados y sin código personalizado, para estudiar el efecto de añadir capacidad congelando el modelo base.
+- Experimentos académicos de ajuste fino con recursos limitados: el entrenamiento completo cupo en una sola Tesla T4, lo que lo convierte en un caso práctico para estudiar recetas de bajo presupuesto (AdamW 8-bit, acumulación de gradiente, pérdida solo en tokens del asistente).
+- Demos y entornos de evaluación de personajes: al requerir solo Transformers y pesos FP16, puede desplegarse en notebooks o entornos con GPU modesta para comparar tarjetas de personaje y ajustar prompts de sistema.
+- Base para futuros ajustes especializados: su licencia Apache 2.0 y su formato estándar de Transformers permiten reutilizarlo como punto de partida para otros ajustes de conversación.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La model card indica que los benchmarks se añadirán a la página una vez ejecutados.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card indica que los benchmarks se añadirán a la página después de ejecutarse, pero en el momento de la consulta no hay datos de MMLU, HumanEval, GSM8K ni de evaluaciones específicas de roleplay.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia en FP16: en torno a 4,2 GB solo para pesos (tamaño del repo), más overhead de activaciones y caché KV; con contexto de 4.096 tokens conviene reservar aproximadamente 5-6 GB.
-- Cabe en GPUs consumer: una RTX 3060 de 12 GB, RTX 4060 Ti de 16 GB o RTX 4090 de 24 GB lo ejecutan con holgura en FP16. En GPUs de 8 GB puede requerir cuantización o contextos más cortos.
-- El entrenamiento original se realizó en una única Tesla T4 (16 GB), lo que da una idea del perfil de memoria del modelo.
-- Opciones de despliegue: Transformers (formato publicado), text-generation-inference (etiqueta `text-generation-inference` en el repo) y endpoints compatibles. No se documentan pesos GGUF para llama.cpp u Ollama; sería necesario convertirlos.
-- Latencia y throughput: no disponibles en la información proporcionada.
+- VRAM estimada para inferencia en FP16: en torno a 4,2 GB solo para pesos (tamaño del repositorio), más overhead de activaciones y caché KV; en la práctica se recomienda al menos 6-8 GB de VRAM para contextos moderados.
+- Cuantización: no se publican variantes GGUF, AWQ ni GPTQ, por lo que el despliegue documentado es en FP16 con Transformers.
+- GPU recomendadas: cualquier GPU con 8 GB o más de VRAM para FP16; el propio autor entrenó en una Tesla T4 (16 GB). Una RTX 4090, A100 o H100 ofrecerán mayor margen de contexto y throughput, pero no son necesarias para inferencia básica.
+- ¿Cabe en GPU de consumo? Sí, previsiblemente en tarjetas con 8 GB o más (por ejemplo, RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070 en adelante), aunque no se documentan pruebas concretas.
+- Opciones de despliegue: Transformers con `AutoModelForCausalLM` y `device_map="auto"` es la vía documentada; el repositorio incluye configuración, tokenizer, configuración de generación y plantilla de chat. No se documenta soporte verificado de vLLM, llama.cpp, Ollama ni TGI, aunque la etiqueta `text-generation-inference` aparece en los metadatos del repositorio.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Especialización | Licencia | Disponibilidad |
+| Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Martos-Preview | ~2,07B (35 capas) | 4.096 tokens (entrenamiento) | Roleplay / escritura creativa en inglés | Apache 2.0 | Hugging Face (repo propio) |
-| Qwen/Qwen3-1.7B (base) | ~1,7B (28 capas) | No especificado en la información disponible | Propósito general, multilingüe | Apache 2.0 | Hugging Face |
-| Alternativas de roleplay de ~2B | No disponible | No disponible | No disponible | No disponible | No disponible |
+| Martos-Preview | ~2,07B (35 capas) | 4.096 tokens de entrenamiento | Roleplay y escritura creativa (expansión LLaMA Pro sobre Qwen3-1.7B) | Apache 2.0 | Hugging Face, pesos FP16 |
+| Qwen3-1.7B (base) | ~1,7B (28 capas) | No disponible en la información proporcionada | Modelo generalista de texto | Apache 2.0 | Hugging Face |
+| Modelos de roleplay de ~2B | No disponible | No disponible | Conversación de personajes | Variable | Variable |
 
-La comparación directa con otros modelos de roleplay del mismo tamaño no está disponible en la información proporcionada. El único punto de referencia documentado es el modelo base Qwen3-1.7B, del que Martos-Preview hereda arquitectura y tokenizador, añadiendo siete capas y aproximadamente 352M parámetros entrenables orientados a conversación de personaje.
+La comparación cuantitativa con alternativas de la misma categoría no está disponible en la información proporcionada: no se han publicado benchmarks de Martos-Preview ni se detallan métricas de otros modelos de roleplay de tamaño similar.
 
 ## Limitaciones y advertencias
 
-- Modelo experimental ("Preview"): el autor lo describe como un proyecto hobby y una demostración del proceso de entrenamiento, no como un modelo listo para producción.
-- Entrenado únicamente en inglés; el rendimiento en castellano u otros idiomas no está garantizado.
-- Ventana de entrenamiento de 4.096 tokens: las conversaciones muy largas pueden degradar la coherencia aunque el base soporte contextos mayores.
-- El modo thinking está desactivado en los ejemplos porque el razonamiento visible perjudica la inmersión en roleplay; no se documenta un modo híbrido en este checkpoint.
-- Riesgo de alucinación inherente a un modelo de ~2B, especialmente en conversaciones largas o con cartas de personaje ambiguas.
-- La etiqueta `not-for-all-audiences` indica que el fine-tuning puede producir contenido para adultos; requiere moderación si se despliega en entornos públicos.
-- Sin datos de benchmarks publicados, por lo que no es posible evaluar su calidad objetiva frente a alternativas.
-- Licencia Apache 2.0: permite uso comercial, pero el autor no ofrece garantías ni soporte; conviene verificar las obligaciones de atribución del modelo base Qwen3.
-- Sin pesos cuantizados oficiales; el despliegue en hardware limitado exige conversión propia.
+- Modelo experimental de hobby: el autor lo describe como una demostración del proceso de entrenamiento, no como un modelo listo para producción.
+- Ejecución cerrada: el entrenamiento terminó en el paso 1400 de 1400 y no se prevén más checkpoints de esta variante.
+- Sin benchmarks publicados: no hay evidencia cuantitativa de calidad, razonamiento ni seguimiento de instrucciones.
+- Idiomas: solo se declara inglés; el rendimiento en castellano u otros idiomas no está evaluado y probablemente sea deficiente.
+- Contexto limitado: la ventana de entrenamiento es de 4.096 tokens, lo que restringe conversaciones muy largas o tarjetas de personaje extensas.
+- Riesgo de alucinación: como todo modelo generativo de ~2B, puede inventar detalles, romper el personaje o contradecir información previa de la conversación.
+- Sesgos: no se documenta ninguna evaluación de sesgos; el ajuste sobre datos de roleplay puede amplificar estereotipos presentes en los datos de entrenamiento.
+- Contenido para adultos: la etiqueta `not-for-all-audiences` indica que el modelo puede generar contenido no apto para todo público; requiere moderación en despliegues abiertos.
+- Modo thinking desactivado en los ejemplos: el razonamiento visible puede perjudicar la inmersión en roleplay, y el modelo no está entrenado específicamente como híbrido de thinking y no-thinking (eso se anuncia para una versión futura).
+- Licencia Apache 2.0: permite uso comercial, pero el autor no ofrece garantías ni soporte; conviene verificar la procedencia y calidad de los datos de ajuste antes de usarlo en producción.
+- Sin soporte documentado de tool calling ni de agentes: no debe asumirse su uso en pipelines que requieran function calling.
 
 ## Enlaces
 

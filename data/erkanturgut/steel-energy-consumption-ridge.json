@@ -1,0 +1,63 @@
+{
+  "schema": 2,
+  "id": "erkanturgut/steel-energy-consumption-ridge",
+  "slug": "erkanturgut-steel-energy-consumption-ridge",
+  "author": "erkanturgut",
+  "url": "https://huggingface.co/erkanturgut/steel-energy-consumption-ridge",
+  "created_at": "2026-11-22T23:09:46.000Z",
+  "updated_at": "2026-11-22T23:09:47.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "tabular-regression",
+  "library": "sklearn",
+  "languages": [],
+  "tags": [
+    "sklearn",
+    "tabular-regression",
+    "ridge-regression",
+    "energy",
+    "industrial",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5202,
+  "storage_human": "5202 B",
+  "context_length": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "Tabular Regression",
+      "dataset": "Steel Industry Energy Consumption (UCI 851)",
+      "metric": "R² (test)",
+      "value": 0.9799
+    },
+    {
+      "task": "Tabular Regression",
+      "dataset": "Steel Industry Energy Consumption (UCI 851)",
+      "metric": "RMSE kWh (test)",
+      "value": 4.7856
+    },
+    {
+      "task": "Tabular Regression",
+      "dataset": "Steel Industry Energy Consumption (UCI 851)",
+      "metric": "MAE kWh (test)",
+      "value": 3.071
+    }
+  ],
+  "sources": []
+}

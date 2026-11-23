@@ -2,95 +2,88 @@
 
 ## Resumen
 
-SZL ReceiptAgent Qwen3.5 0.8B v2 es un adaptador LoRA (PEFT) de pequeño tamaño, desarrollado por SZLHOLDINGS, que se monta sobre el modelo base Qwen/Qwen3.5-0.8B. Su propósito es redactar recibos de gobernanza estructurados (drafts en JSON) y rechazar solicitudes que intenten fabricar evidencia, aprobación, ejecución o valores medidos. No es un agente autónomo ni un oráculo de hechos: está diseñado para operar detrás de un controlador validador externo que valida cada borrador contra un esquema JSON, exige aprobación humana y ejecuta acciones fuera de los pesos.
+szl-receiptagent-qwen35-0.8b-v2 es un ajuste fino (fine-tune) del modelo Qwen/Qwen3.5-0.8B, publicado por la organizacion SZLHOLDINGS dentro de lo que el autor denomina su "estate" de IA gobernada. El modelo se distribuye como adaptador PEFT (la libreria declarada es `peft`) sobre el modelo base de Qwen, con licencia Apache 2.0 y pesos en formato safetensors. El repositorio ocupa 3,5 GB y acumula 457 descargas en el momento de la consulta.
 
-El modelo se entrenó con Unsloth sobre una GPU RTX 5050 Laptop, con solo 64 pasos de optimizador y 37 filas de entrenamiento, lo que lo convierte en un adaptador extremadamente ligero y rápido de reentrenar. La propuesta explícita es que el bucle de recepción de gobernanza pueda ejecutarse cada noche a bajo coste. Incluye un sistema de evidencia criptográfica (recibos firmados con Ed25519) que encadena el entrenamiento, la evaluación y la publicación, aunque no sustituye una evaluación independiente.
+El nombre del artefacto ("receiptagent") sugiere un uso orientado a agentes que generan o verifican comprobantes y recibos, aunque la model card no describe explicitamente la tarea de entrenamiento ni la composicion del dataset. La model card es fundamentalmente un documento de gobernanza: enfatiza trazabilidad, ficheros de "recibo" (receipts) y la distincion entre datos medidos, reportados y desconocidos, en lugar de detallar arquitectura o capacidades.
 
-La relevancia actual radica en su enfoque de "proposal-only" (solo propuesta): el modelo nunca autoriza ni ejecuta, solo genera borradores que un sistema externo debe validar. Esto lo hace adecuado para entornos donde la trazabilidad y el control de integridad son críticos, como auditoría, cumplimiento o gobernanza interna, sin asumir riesgos de autonomía.
+La relevancia de este modelo es limitada y muy especifica: se trata de un ajuste fino pequeno (0,8B parametros) sobre una base reciente de Qwen, con documentacion tecnica practicamente inexistente. Resulta util como ejemplo de practicas de publicacion centradas en auditoria, pero no como modelo de proposito general. Cualquier evaluacion de sus capacidades reales debe considerarse no disponible a partir de la informacion publicada.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Adaptador LoRA sobre Qwen3.5-0.8B (transformer decoder-only) |
-| Parametros totales | 863.808.576 (base + adaptador); adaptador LoRA: 10.822.656 |
-| Parametros activos | No aplica (no es MoE; todos los parametros del base son activos) |
-| Longitud de contexto | No disponible (depende del modelo base Qwen3.5-0.8B) |
-| Tipos de cuantizacion | 4-bit (usado en la inferencia de prueba); otros no especificados |
-| Idiomas soportados | Ingles (dominante en evaluacion); otros no especificados |
-| Licencia | Apache-2.0 |
-| Formato de pesos | safetensors (adaptador PEFT/LoRA) |
+| Arquitectura | Transformer decoder-only (heredada de Qwen/Qwen3.5-0.8B); detalles no disponibles |
+| Parametros totales | 0,8B (modelo base); numero de parametros del adaptador no disponible |
+| Parametros activos | no disponible (no se indica que sea MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | no disponible (pesos en safetensors; no se listan variantes GGUF/AWQ/GPTQ) |
+| Idiomas soportados | no disponible |
+| Licencia | apache-2.0 |
+| Formato de pesos | safetensors (adaptador PEFT sobre el modelo base) |
 
 ## Arquitectura y entrenamiento
 
-El adaptador se construye sobre Qwen3.5-0.8B, un modelo transformer decoder-only de 0.8B parametros. El entrenamiento se realizo con la libreria Unsloth (FastLanguageModel) usando PEFT/LoRA. Se emplearon 64 pasos de optimizador con 37 filas de entrenamiento admitidas, alcanzando una perdida final de 0.9143. El pico de memoria reservada durante el entrenamiento fue de 1.671.430.144 bytes (~1,56 GB) en una NVIDIA GeForce RTX 5050 Laptop GPU.
+No se dispone de informacion tecnica sobre la arquitectura interna ni sobre el proceso de entrenamiento. El modelo se presenta como un artefacto entrenado dentro de la "governed factory" de SZLHOLDINGS y se distribuye mediante la libreria `peft`, lo que indica que se trata de un adaptador (probablemente LoRA u otra variante de ajuste eficiente) que debe combinarse con el modelo base Qwen/Qwen3.5-0.8B para su uso. La model card no especifica el rango del adaptador, los modulos objetivo ni la estrategia de fusion.
 
-El curriculo de entrenamiento es sintetico y estrecho, disenado especificamente para la tarea de generacion de recibos de gobernanza. Se excluyo deliberadamente el corpus A11oy Brain de los gradientes por cuestiones de derechos y procedencia. No se menciona el uso de RLHF, DPO ni otras tecnicas de alineacion por preferencias. La innovacion principal no esta en la arquitectura, sino en el proceso de gobernanza: el adaptador viene acompanado de un sistema de recibos firmados criptograficamente que documentan el entrenamiento, la evaluacion y la publicacion, permitiendo verificar la integridad del ciclo de vida del modelo.
+Respecto a los datos de entrenamiento, la model card indica explicitamente que las afirmaciones de entrenamiento y evaluacion "viven en sus ficheros de recibo" y que cualquier cosa no registrada alli es desconocida. El escaneo de recibos de la tranche 4 (2026-11-22) clasifica el repositorio como `RECEIPT_FILES_NO_DONE`: existen ficheros con nombre de recibo (`training_receipt.signed.json`, `eval_receipt.signed.json`, `publication_receipt.signed.json`, `curriculum/receiptagent.schema.json`, entre otros), pero no hay un `DONE.json` estricto con `status=MEASURED` y `eval_rc=0`. En consecuencia, la evidencia de evaluacion se marca como UNKNOWN. No se documentan tecnicas como RLHF, DPO, decodificacion especulativa ni atencion lineal.
 
 ## Capacidades
 
-- Generacion de borradores de recibos de gobernanza estructurados en JSON, cumpliendo un esquema predefinido.
-- Rechazo de solicitudes que intenten fabricar evidencia, aprobacion, ejecucion o valores medidos (comportamiento adversarial).
-- Operacion como adaptador "proposal-only": no autoriza, no ejecuta, no recupera informacion externa.
-- Integracion con un controlador validador externo que valida cada borrador contra el esquema JSON y exige aprobacion humana.
-- Compatible con el ecosistema Unsloth y PEFT, permitiendo cargar el adaptador sobre el base Qwen3.5-0.8B.
-- No se reportan capacidades de tool calling, agentes, vision, audio ni razonamiento multi-paso mas alla de la generacion de texto.
+- Generacion de texto: el pipeline declarado es `text-generation`, por lo que la capacidad basica de generacion esta presente por herencia del modelo base.
+- Ajuste orientado a agentes de recibos: el nombre del artefacto y el fichero `curriculum/receiptagent.schema.json` apuntan a un entrenamiento especifico para tareas de agente relacionadas con recibos o comprobantes, aunque la model card no describe el comportamiento resultante.
+- Capacidades del modelo base (Qwen3.5-0.8B): no verificadas en este ajuste; no se dispone de evaluacion que confirme que se conservan.
+- Tool calling / function calling: no disponible.
+- Soporte de agentes y razonamiento multi-paso: no disponible como capacidad verificada.
+- Capacidades multilingues: no disponible (el campo de idiomas no esta poblado).
+- Capacidades especiales (modo thinking, vision, audio): no disponible.
 
 ## Casos de uso
 
-- Generacion nocturna de recibos de gobernanza: el adaptador puede ejecutarse cada noche para redactar borradores de registros de acciones aprobadas, con un coste computacional minimo (menos de 1 GB de VRAM en inferencia), lo que permite auditorias diarias sin infraestructura pesada.
-- Control de cumplimiento normativo: integrado en un pipeline que valida cada draft contra el esquema JSON, el modelo ayuda a documentar procesos internos de aprobacion y ejecucion, garantizando que no se inventen valores o evidencias.
-- Rechazo de solicitudes fraudulentas: en un sistema de gestion de peticiones, el adaptador puede identificar y rechazar solicitudes que pretendan fabricar aprobaciones o resultados medidos, actuando como primera linea de defensa antes de la validacion humana.
-- Registro de acciones en entornos regulados: combinado con un controlador que ejecuta acciones fuera de los pesos, el modelo genera la documentacion textual de cada paso, manteniendo una cadena de custodia verificable.
-- Verificacion de integridad de procesos: gracias a los recibos firmados con Ed25519, el modelo permite auditar que el adaptador cargado es exactamente el que fue entrenado y evaluado, util en entornos con requisitos de trazabilidad.
-- Prototipado rapido de agentes de gobernanza: al ser un adaptador de 0.8B, se puede reentrenar en menos de una hora (entre cafe y comida, como dice la documentacion), lo que facilita iterar sobre el curriculo y las politicas de rechazo.
+- Extraccion estructurada de datos de recibos y comprobantes: dado el nombre y el esquema de curriculum incluido, el uso previsto mas plausible es convertir texto de recibos en JSON estructurado; requeriria validacion propia porque no hay evaluacion publicada.
+- Clasificacion de gastos en flujos de contabilidad: un modelo de 0,8B puede desplegarse en local para etiquetar lineas de gasto antes de enviarlas a un sistema contable, con coste de inferencia muy bajo.
+- Preprocesado en pipelines de documentos: uso como primer paso para normalizar y resumir documentos financieros antes de un modelo mayor, aprovechando su tamano reducido para alto throughput.
+- Prototipado de agentes con trazabilidad: util en entornos donde se exige registrar cada decision y su procedencia, dado el enfasis del autor en recibos y auditoria.
+- Despliegue en el borde o en CPU: con 0,8B parametros y cuantizacion de 4 bits, es viable en portatiles y dispositivos con recursos limitados para tareas acotadas de extraccion.
+- Experimentacion academica sobre gobernanza de modelos: sirve como caso de estudio de publicacion con recibos firmados y distincion explicita entre datos medidos y desconocidos.
+- Filtrado previo en atencion al cliente financiera: clasificacion de consultas sobre recibos antes de escalar a un modelo mayor, siempre que se valide su precision con un conjunto propio.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K, etc.) en la informacion disponible. La unica evaluacion reportada es una prueba de aceptacion con datos reservados (held-out) preregistrados:
-
-| Gate | Resultado |
-|---|---:|
-| Borradores validos segun contrato JSON | 5 / 5 |
-| Rechazos adversariales | 6 / 6 |
-
-Estos son conteos de aceptacion medidos para una pequena compuerta preregistrada. No constituyen un benchmark amplio, no establecen precision factual y no hacen al adaptador elegible para autonomia. La evaluacion se realizo recargando el adaptador guardado en la misma GPU y evaluando contra archivos reservados con digest fijo.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card declara explicitamente que no se afirma ninguna cifra de benchmark mas alla de lo que una auditoria fechada haya medido, y el escaneo de recibos clasifica la evidencia de evaluacion como UNKNOWN (sin `DONE.json` estricto).
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: aproximadamente 1 GB (pico reservado de 1.004.535.808 bytes en la prueba con RTX 5050 Laptop GPU, cargando el base en 4-bit).
-- VRAM estimada para entrenamiento: aproximadamente 1,6 GB (pico reservado de 1.671.430.144 bytes).
-- GPU recomendadas: cualquier GPU consumer con al menos 2 GB de VRAM; la prueba se realizo en una NVIDIA GeForce RTX 5050 Laptop GPU.
-- Cabe en GPUs consumer de gama baja (GTX 1650, RTX 3050, etc.) siempre que el base se cargue en 4-bit.
-- Opciones de despliegue: al ser un adaptador PEFT, se puede cargar con la libreria `peft` sobre el base Qwen3.5-0.8B, o mediante Unsloth. Tambien es posible servirlo con vLLM o TGI si se fusiona el adaptador con el base, aunque no se documenta explicitamente. Para entornos locales, llama.cpp u Ollama podrian usarse tras fusionar.
-- Latencia y throughput: en la prueba de inferencia se generaron 28 tokens en 16,274 segundos (~1,7 tokens/s) en una RTX 5050 Laptop GPU. Este dato es una unica medicion de referencia, no un benchmark de rendimiento.
+- VRAM estimada para inferencia: el modelo base de 0,8B en FP16 requiere aproximadamente 1,6 GB solo para pesos; en cuantizacion de 4 bits, alrededor de 0,5 GB. El adaptador PEFT anade una cantidad no especificada (el repositorio ocupa 3,5 GB, lo que sugiere que puede incluir artefactos adicionales o pesos en mayor precision).
+- GPU recomendadas: cualquier GPU consumer moderna es suficiente; una RTX 3060 de 12 GB o una RTX 4090 permiten amplio margen para contexto largo y lotes grandes.
+- Compatibilidad con GPU consumer: si, practicamente cualquier GPU con 4 GB o mas de VRAM, e incluso CPU con llama.cpp si se convierte a GGUF (no se distribuye en ese formato).
+- Opciones de despliegue: al ser un adaptador PEFT, requiere cargar el modelo base con `transformers` y `peft`; para servir en produccion se puede fusionar el adaptador y exportar a vLLM o TGI. No hay pesos GGUF ni Ollama publicados.
+- Latencia y throughput: no disponibles; no se han publicado mediciones.
 
 ## Comparativa con modelos similares
 
-No se dispone de modelos directamente comparables en la informacion proporcionada. El adaptador es una pieza especifica para gobernanza sobre Qwen3.5-0.8B. Como referencia, se puede comparar con el propio modelo base:
+| Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
+|---|---|---|---|---|---|
+| szl-receiptagent-qwen35-0.8b-v2 | 0,8B (base) | no disponible | Apache 2.0 | Hugging Face, adaptador PEFT | Sin benchmarks publicados; documentacion centrada en gobernanza |
+| Qwen/Qwen3.5-0.8B | 0,8B | no disponible en esta ficha | no disponible en esta ficha | Hugging Face | Modelo base; capacidades generales no verificadas aqui |
+| Alternativas de ~1B para extraccion estructurada | no disponible | no disponible | no disponible | no disponible | No se dispone de datos comparativos verificados en la informacion proporcionada |
 
-| Modelo | Parametros | Contexto | Licencia | Uso |
-|---|---|---|---|---|
-| Qwen/Qwen3.5-0.8B (base) | 0.8B | No disponible | Apache-2.0 | Generacion general de texto |
-| SZL ReceiptAgent v2 (adaptador) | 10,8M (adaptador) + 0.8B (base) | No disponible | Apache-2.0 | Generacion de recibos de gobernanza y rechazo adversarial |
-
-No se han encontrado otros adaptadores LoRA publicos con la misma finalidad especifica de recibos de gobernanza con evidencia criptografica.
+No se dispone de datos de rendimiento que permitan una comparacion cuantitativa con alternativas de la misma categoria.
 
 ## Limitaciones y advertencias
 
-- Curriculo sintetico estrecho: el entrenamiento se baso en solo 37 filas, lo que limita la generalizacion a casos fuera del dominio.
-- Conjunto de validacion pequeno: la evaluacion se limito a 5 borradores y 6 rechazos, sin cobertura amplia de escenarios.
-- Comportamiento solo de propuesta: el modelo no puede autorizar, ejecutar ni recuperar informacion; depende completamente de un controlador validador externo.
-- Sin evaluacion independiente de terceros: los resultados reportados son auto-declarados por el autor.
-- Sin recuperacion de verdad (ground-truth retrieval): el modelo no verifica hechos contra fuentes externas, por lo que puede generar contenido plausible pero incorrecto si se usa fuera de su curriculo.
-- Dominante en ingles: la evaluacion se realizo principalmente en ingles; el rendimiento en otros idiomas no esta verificado.
-- El controlador validador es obligatorio: sin el, el adaptador no es seguro para produccion, ya que no garantiza la validez de los borradores generados.
-- Riesgo de alucinacion: como cualquier modelo de lenguaje, puede inventar datos si se le pide fuera de su tarea especifica, aunque el entrenamiento incluye rechazo adversarial para mitigarlo.
+- Ausencia total de evaluacion publicada: no hay benchmarks, ni resultados de validacion, ni descripcion de la tarea de entrenamiento; no es posible afirmar que el ajuste mejora al modelo base en ninguna tarea.
+- Riesgo de alucinacion: inherente a los modelos de 0,8B en tareas de extraccion estructurada; sin evaluacion, el riesgo no esta cuantificado.
+- Idiomas no declarados: no se puede asumir soporte de castellano ni de ningun otro idioma concreto.
+- Dependencia del modelo base: el adaptador requiere Qwen/Qwen3.5-0.8B; los terminos y limitaciones del modelo base se aplican en cascada.
+- Documentacion de gobernanza sin evidencia estricta: el escaneo de recibos clasifica el repositorio como `RECEIPT_FILES_NO_DONE`, es decir, hay ficheros con nombre de recibo pero no un `DONE.json` que cumpla el estandar estricto; las afirmaciones del autor no estan verificadas por una auditoria completa.
+- Sesgos: no documentados; no disponibles.
+- Licencia Apache 2.0: permite uso comercial, pero el usuario debe verificar por separado la licencia del modelo base y de los datos de entrenamiento, no detallados.
+- Repositorio de 3,5 GB para un adaptador de un modelo de 0,8B: conviene inspeccionar el contenido antes de descargarlo, ya que puede incluir artefactos no esenciales.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/SZLHOLDINGS/szl-receiptagent-qwen35-0.8b-v2
-- Repositorio GitHub (szl-forge): https://github.com/szl-holdings/szl-forge/tree/main/frontier/qwen35-receiptagent-v2
-- README del repositorio: https://github.com/szl-holdings/szl-forge/blob/main/frontier/qwen35-receiptagent-v2/README.md
-- Pagina de inferencia en FriendliAI: https://friendli.ai/models/SZLHOLDINGS/szl-receiptagent-qwen35-0.8b-v2
-- Modelo base Qwen3.5-0.8B: https://huggingface.co/Qwen/Qwen3.5-0.8B
+- Organizacion SZLHOLDINGS: https://huggingface.co/SZLHOLDINGS
+- Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
+- Repositorio de la organizacion en GitHub (referenciado en la model card): https://github.com/szl-holdings
+- Herramienta de generacion de fichas del autor: https://github.com/szl-holdings/estate-cards

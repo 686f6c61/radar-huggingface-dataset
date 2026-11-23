@@ -2,104 +2,93 @@
 
 ## Resumen
 
-El modelo `luisastellet/qwen-metaphor-unke-camada-6-zero-um` es un checkpoint de generacion de texto publicado en Hugging Face por el usuario luisastellet y etiquetado con la arquitectura `qwen3`. Segun los pesos en formato safetensors, cuenta con 596.049.920 parametros (aproximadamente 596 millones), lo que lo situa en la gama de modelos pequenos, cercana en tamano a los modelos de ~0,6B de la familia Qwen3. El repositorio ocupa 2,4 GB y esta marcado como compatible con `transformers`, `text-generation-inference` y `endpoints_compatible`.
+El modelo `luisastellet/qwen-metaphor-unke-camada-6-zero-um` es un checkpoint de la familia Qwen3 publicado en Hugging Face por el usuario luisastellet. Se trata de un modelo de generación de texto de aproximadamente 596 millones de parámetros (596.049.920 según los pesos en safetensors), lo que lo sitúa en la franja de modelos pequeños dentro del ecosistema Qwen3. El identificador sugiere una intervención específica sobre una capa ("camada-6") y un proceso de "unke" (posiblemente *unlearning* o edición de conocimiento), aunque la model card no documenta el procedimiento.
 
-La model card incluida en el repositorio es una plantilla autogenerada por Hugging Face en la que practicamente todos los campos aparecen como `[More Information Needed]`. No se declara autor del entrenamiento, datos utilizados, licencia, idiomas soportados, ni resultados de evaluacion. La unica informacion tecnica verificable es la arquitectura de pesos, el numero de parametros, la libreria y las etiquetas del repositorio.
+La relevancia de esta ficha es limitada pero concreta: se trata de un artefacto experimental derivado de Qwen3, con 441 descargas y sin likes, cuya documentación es prácticamente inexistente (la model card es la plantilla autogenerada por Hugging Face sin rellenar). Esto lo convierte en un caso típico de checkpoint de investigación o de experimento personal que debe evaluarse con cautela antes de cualquier uso en producción.
 
-El nombre del repositorio (`qwen-metaphor-unke-camada-6-zero-um`) sugiere un artefacto derivado o experimental, posiblemente relacionado con experimentos sobre metaforas y con una referencia a una "capa 6" (camada en portugues), ademas de un indicador "zero-um"; sin embargo, esta interpretacion es una hipotesis basada en el nombre y no esta confirmada por ninguna documentacion del autor. Con cero descargas y cero likes en el momento de la consulta, se trata de un modelo sin adopcion publica conocida ni validacion externa.
+El modelo se publica con la librería `transformers`, formato safetensors, licencia no declarada y sin idiomas especificados. La etiqueta `qwen3` en los metadatos es la única pista fiable sobre su linaje arquitectónico.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (etiquetado como `qwen3`; detalles exactos no disponibles) |
+| Arquitectura | Transformer decoder-only (familia Qwen3, según tags) |
 | Parametros totales | 596.049.920 |
 | Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible (solo se publican pesos safetensors; no se documentan variantes GGUF/AWQ/GPTQ) |
+| Tipos de cuantizacion | no disponible en el repo (solo safetensors; cuantización GGUF/AWQ/BnB no publicada) |
 | Idiomas soportados | no disponible |
 | Licencia | no disponible |
-| Formato de pesos | safetensors |
-| Libreria | transformers |
+| Formato de pesos | safetensors (librería transformers) |
+| Tamaño del repo | 9,5 GB |
 | Pipeline | text-generation |
-| Tamano del repositorio | 2,4 GB |
-| Fecha de creacion | 2026-10-15 |
-| Fecha de actualizacion | 2026-10-15 |
-| Descargas / likes | 0 / 0 |
+| Compatibilidad | text-generation-inference, endpoints_compatible |
 
 ## Arquitectura y entrenamiento
 
-La unica informacion arquitectonica verificable es que los pesos estan en formato safetensors, que el modelo se carga con la libreria `transformers` y que el repositorio esta etiquetado como `qwen3`. El recuento de parametros (596.049.920) es coherente con un transformer decoder-only de aproximadamente 0,6B de parametros, del orden de magnitud de los modelos pequenos de la familia Qwen3. No se dispone de informacion sobre numero de capas, dimension oculta, numero de cabezas de atencion, tipo de atencion, uso de atencion lineal o hibrida, ni sobre la presencia de modulos MoE.
+La arquitectura se infiere únicamente de los tags del repositorio (`qwen3`), que apuntan a un transformer decoder-only de la familia Qwen3. Con unos 596 millones de parámetros, el tamaño es coherente con un modelo pequeño tipo Qwen3-0.6B, si bien no se puede confirmar que sea exactamente esa variante porque la model card no lo especifica ni incluye la configuración (`config.json` no se ha proporcionado en la información disponible).
 
-No hay datos sobre el proceso de entrenamiento: se desconoce el volumen de tokens, la composicion del dataset, si hubo preentrenamiento desde cero, fine-tuning supervisado, RLHF, DPO u otras tecnicas de alineamiento. Tampoco se documenta ninguna innovacion tecnica especifica (decodificacion especulativa, atencion lineal, modos de razonamiento explicito, etc.). La model card del autor es una plantilla sin rellenar, por lo que cualquier afirmacion sobre el entrenamiento seria especulativa y no se incluye aqui.
+No hay información sobre el dataset de entrenamiento, el número de tokens procesados, la composición de los datos, ni sobre si se aplicaron técnicas de RLHF, DPO o SFT. El nombre del repositorio ("metaphor", "camada-6", "zero-um") sugiere una intervención quirúrgica sobre una capa concreta, probablemente un experimento de edición de pesos o de *unlearning*, pero el autor no documenta el método. Tampoco se describen innovaciones técnicas como decodificación especulativa o atención lineal.
 
 ## Capacidades
 
-- Generacion de texto autoregresiva: la etiqueta `text-generation` y la clase de pipeline confirman la capacidad basica de continuar y generar texto.
-- Conversacion: la etiqueta `conversational` indica que el modelo esta orientado a dialogos multi-turno, aunque no se documenta el formato de prompt ni la plantilla de chat.
-- Razonamiento, codigo y matematicas: no disponible. No hay benchmarks ni documentacion que confirmen estas capacidades.
-- Tool calling / function calling: no disponible. No se documenta soporte de llamadas a herramientas ni esquemas JSON.
-- Capacidades de agente y razonamiento multi-paso: no disponible.
-- Capacidades multilingues: no disponible. No se declara lista de idiomas.
-- Vision, audio o modalidades adicionales: no disponible. No hay indicios de soporte multimodal.
-- Modo de pensamiento explicito (`thinking`): no disponible.
+- Generación de texto autoregresiva (pipeline `text-generation`).
+- Conversación multi-turno (tag `conversational`).
+- Compatibilidad con Text Generation Inference (TGI) y con endpoints compatibles de Hugging Face.
+- Capacidades multilingües: no documentadas; no se puede asumir el multilingüismo de Qwen3 sin verificación.
+- Tool calling / function calling: no documentado.
+- Razonamiento multi-paso y modo *thinking*: no documentado.
+- Visión, audio u otras modalidades: no documentado.
 
 ## Casos de uso
 
-Los siguientes escenarios son usos potenciales derivados del tamano del modelo y de sus etiquetas, no capacidades confirmadas por el autor. Se indican como hipotesis de trabajo.
-
-- Prototipado rapido en local: con 596M de parametros y pesos safetensors de 2,4 GB, el modelo se puede cargar en una GPU de gama media o incluso en CPU para validar pipelines de generacion de texto antes de escalar a modelos mayores.
-- Experimentos de investigacion sobre metaforas y figuras retoricas: el nombre del repositorio sugiere un artefacto orientado a este tipo de tarea; se podria usar como punto de partida para estudios de generacion o clasificacion de metaforas, siempre verificando primero la calidad real de las salidas.
-- Despliegue en entornos con recursos limitados: su tamano permite servir el modelo en dispositivos edge, contenedores pequenos o instancias CPU, donde un modelo de 7B o superior no seria viable.
-- Generacion de texto auxiliar de bajo coste: borradores, resumenes cortos o reescritura de frases en aplicaciones donde la latencia y el coste por token son criticos.
-- Base para fine-tuning especifico de dominio: al ser un modelo pequeno, es economico ajustarlo con LoRA o QLoRA sobre datos propios para tareas concretas (clasificacion, extraccion, generacion controlada).
-- Evaluacion comparativa de tecnicas de ajuste: util como sujeto de prueba en experimentos de ablacion (por ejemplo, comparar capas o configuraciones de entrenamiento), dado el indicador "camada-6" del nombre.
-- Educacion y demostraciones: adecuado para ensenar conceptos de transformers y despliegue de modelos en cursos o talleres, por su reducido requisito de hardware.
+- Experimentación en investigación sobre edición de modelos: el checkpoint parece resultado de una intervención sobre una capa concreta, por lo que puede servir para reproducir o comparar técnicas de modificación de pesos frente al modelo base Qwen3.
+- Pruebas de *unlearning* y análisis de olvido catastrófico: útil para estudiar cómo una modificación localizada afecta al comportamiento general del modelo.
+- Prototipado rápido en local: con ~596 M de parámetros, cabe en GPUs de consumo y permite iterar sin infraestructura dedicada.
+- Evaluación comparativa frente al Qwen3 original: sirve como referencia para medir el impacto de la intervención en benchmarks estándar.
+- Generación de texto conversacional de bajo coste: para demos y pruebas de integración con TGI o endpoints compatibles.
+- Docencia y divulgación: ejemplo práctico de cómo se publica un checkpoint derivado y de la importancia de documentar la model card.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-Las cifras de VRAM son estimaciones tecnicas calculadas a partir del numero de parametros (596M) y de los formatos de cuantizacion habituales; no proceden de documentacion del autor.
-
-- VRAM en FP16/BF16: aproximadamente 1,2 GB solo para pesos, mas overhead de activaciones y cache KV (estimado en torno a 1,5-2 GB en total para contextos cortos).
-- VRAM en INT8: aproximadamente 0,6 GB para pesos.
-- VRAM en INT4: aproximadamente 0,3-0,4 GB para pesos.
-- GPU recomendadas: cualquier GPU con 4 GB o mas de VRAM es suficiente; RTX 3060, RTX 4060, RTX 4090, A100 y H100 funcionan sin problema, aunque las GPU de gama alta estaran infrautilizadas.
-- Cabe en GPU de consumo: si, en practicamente cualquier GPU de consumo moderna (GTX 1650 4 GB en adelante) e incluso en CPU con suficiente RAM.
-- Opciones de despliegue: `transformers` (confirmado por la libreria del repositorio), `text-generation-inference` (etiqueta presente), y en principio tambien vLLM, llama.cpp u Ollama si se convierte a GGUF, aunque no se publican pesos GGUF en el repositorio.
-- Latencia y throughput: no disponibles. No se han publicado mediciones. Dado el tamano, se espera una latencia baja en GPU moderna, pero no se aportan cifras.
+- VRAM estimada en fp16/bf16: aproximadamente 1,2 GB solo para pesos (596 M × 2 bytes), más overhead de activaciones y KV cache.
+- VRAM estimada en fp32: aproximadamente 2,4 GB para pesos.
+- VRAM estimada en cuantización 8 bits: aproximadamente 0,6 GB; en 4 bits, aproximadamente 0,3 GB (estimaciones teóricas; no hay GGUF publicado).
+- GPU recomendadas: cualquier GPU con al menos 4-6 GB de VRAM para fp16 con contexto moderado (RTX 3060, RTX 4060, RTX 4090); para producción, A10G, L4 o A100/H100 si se necesita alto throughput.
+- Cabe en GPU de consumo: sí, con holgura en RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4090 24 GB.
+- Opciones de despliegue: `transformers` (nativo), Text Generation Inference (TGI, tag `text-generation-inference`), endpoints compatibles de Hugging Face. No hay evidencia de GGUF para llama.cpp/Ollama ni de formatos AWQ/GPTQ.
+- Latencia y throughput: no disponibles; no se han publicado mediciones.
 
 ## Comparativa con modelos similares
 
-Los datos del modelo analizado no estan publicados, por lo que la comparacion se limita a los parametros estructurales. Las cifras de los modelos de referencia corresponden a sus especificaciones publicas habituales y pueden variar segun la version.
-
-| Modelo | Parametros | Contexto | Licencia | Disponibilidad |
+| Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| qwen-metaphor-unke-camada-6-zero-um | 596.049.920 | no disponible | no disponible | Hugging Face, 0 descargas |
-| Qwen3-0.6B | ~0,6B | no disponible aqui | Apache 2.0 (segun su repositorio) | Ampliamente disponible |
-| Qwen2.5-0.5B | ~0,5B | no disponible aqui | Apache 2.0 (segun su repositorio) | Ampliamente disponible |
-| SmolLM2-360M | ~0,36B | no disponible aqui | Apache 2.0 (segun su repositorio) | Ampliamente disponible |
+| luisastellet/qwen-metaphor-unke-camada-6-zero-um | ~596 M | no disponible | no disponible | Hugging Face (441 descargas) |
+| Qwen3-0.6B (modelo base probable) | ~600 M | no disponible en esta ficha | Apache 2.0 (según familia Qwen3) | Hugging Face, ampliamente adoptado |
+| Qwen2.5-0.5B | ~500 M | 32 768 tokens (según ficha oficial de Qwen2.5) | Apache 2.0 | Hugging Face, GGUF, Ollama |
+| SmolLM2-360M | ~360 M | 8 192 tokens (según ficha oficial) | Apache 2.0 | Hugging Face, GGUF |
 
-No se dispone de datos de rendimiento comparado para el modelo analizado, por lo que no es posible establecer una comparacion cuantitativa con estas alternativas.
+La comparación con el modelo base Qwen3-0.6B es la más pertinente, pero no se dispone de datos de rendimiento del checkpoint derivado que permitan cuantificar diferencias. Las cifras de contexto y licencia de los modelos comparables provienen de sus fichas oficiales y deben verificarse en la fuente.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de documentacion: la model card es una plantilla autogenerada sin contenido real; se desconocen datos de entrenamiento, sesgos, idiomas e intencion de uso.
-- Licencia no declarada: al no especificarse licencia, el uso comercial y la redistribucion quedan en un limbo legal. No se debe asumir que hereda la licencia de la familia Qwen3, ya que el repositorio no la declara.
-- Riesgo de alucinacion: los modelos de ~0,6B tienen una capacidad limitada de conocimiento factual y una tasa de alucinacion tipicamente alta; no se ha publicado ninguna evaluacion al respecto para este checkpoint.
-- Sesgos desconocidos: no hay informacion sobre la procedencia de los datos ni sobre sesgos de genero, raza, idioma o ideologia.
-- Limitaciones de contexto e idioma: se desconoce la ventana de contexto real y los idiomas soportados; no se debe asumir cobertura multilingue.
-- Sin validacion externa: cero descargas y cero likes indican que el modelo no ha sido probado por la comunidad; no hay informes independientes de calidad.
-- Posible artefacto experimental: el nombre sugiere una ablacion o experimento (referencia a "capa 6" y "zero-um"), por lo que podria no ser un modelo final listo para produccion.
-- Sin cuantizaciones publicadas: solo hay pesos safetensors; desplegarlo en formatos GGUF o cuantizados requiere conversion manual.
-- Recomendacion para produccion: no usar este checkpoint en sistemas criticos sin una evaluacion propia previa sobre datos representativos del caso de uso.
+- Model card autogenerada y sin rellenar: no hay información sobre datos de entrenamiento, sesgos, evaluación ni uso previsto.
+- Licencia no declarada: no se puede asumir uso comercial permitido; hay que contactar con el autor o verificar la licencia del modelo base.
+- Idiomas no especificados: no se puede garantizar calidad en castellano ni en otros idiomas sin evaluación empírica.
+- Riesgo de alucinación: inherente a los modelos generativos pequeños; sin benchmarks no se puede acotar su magnitud.
+- Posible degradación por la intervención: al tratarse de un checkpoint modificado ("unke", "camada-6"), es esperable que el rendimiento difiera del Qwen3 original, pero no hay datos que lo cuantifiquen.
+- Sin cuantizaciones publicadas: el despliegue en entornos con poca VRAM requiere generar GGUF/AWQ por cuenta propia.
+- Repositorio de un solo autor sin historial de mantenimiento: riesgo de abandono y falta de soporte.
+- Advertencia de producción: no recomendado para sistemas en producción sin una evaluación previa exhaustiva y sin claridad sobre la licencia.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/luisastellet/qwen-metaphor-unke-camada-6-zero-um
-- Paper citado en las etiquetas (Lacoste et al., 2019, sobre emisiones de carbono): https://arxiv.org/abs/1910.09700
-- Calculadora de impacto de machine learning referenciada en la model card: https://mlco2.github.io/impact
-- Repositorio, paper o demo propios del autor: no disponible
+- Hugging Face: https://huggingface.co/luisastellet/qwen-metaphor-unke-camada-6-zero-um
+- Paper citado en los tags (Lacoste et al., 2019, impacto ambiental): https://arxiv.org/abs/1910.09700
+- Calculadora de impacto ML: https://mlco2.github.io/impact#compute
+- Familia Qwen3 (referencia del linaje): no disponible en la información proporcionada
+- Repositorio, paper o demo del autor: no disponible en la información proporcionada

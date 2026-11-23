@@ -2,124 +2,101 @@
 
 ## Resumen
 
-DeepSeek-V4.1-Flash-1017-ds4m1 es una cuantización del modelo DeepSeek-V4.1-Flash-1017 de DeepSeek, publicada por el usuario ivp5. No es un modelo nuevo entrenado desde cero, sino una redistribución de los pesos del modelo base pensada para ejecutarse íntegramente en un único Apple M1 Max con 64 GB de memoria unificada, algo que el modelo original no permite por su tamaño. El autor mantiene intactos los tensores no enrutados (atención, capas densas, router y cabeza) y comprime únicamente los expertos enrutados del MoE a 2 bits, además de las tablas Engram a IQ4_NL.
+DeepSeek-V4.1-Flash-1017-ds4m1 es una cuantizacion GGUF orientada a Apple Silicon del modelo base deepseek-ai/DeepSeek-V4.1-Flash-1017, publicada por el usuario ivp5. El objetivo declarado por el autor es ejecutar el modelo completo —los 384 expertos enrutados, las tablas Engram, el modo thinking y las llamadas a herramientas— en un unico Apple M1 Max de 64 GB, transmitiendo los expertos desde el SSD a una cache de 38 GiB mientras el resto de los pesos permanece en memoria. El repositorio ocupa 496,7 GB y se distribuye bajo licencia MIT.
 
-La relevancia de esta ficha reside en que demuestra una vía práctica para servir un modelo MoE de gran escala en hardware de consumo de gama alta (Apple Silicon), con un motor propio (`ds4-m1`) que combina Metal, Neural Engine y streaming de expertos desde SSD. El autor reporta 48,4 tok/s de decodificación y 342,6 tok/s de prefill, con una fidelidad medida frente al modelo oficial (KL 0,118 y top-1 del 90,5% sobre cuatro sesiones de agente).
+La relevancia de esta ficha no reside en el modelo base, del que apenas hay datos publicos en la informacion disponible, sino en la ingenieria de despliegue: el autor publica mediciones de decodificacion (41,1 tok/s a 1.045 MHz), prefill (312,5 tok/s) y resolucion de tareas de agente de programacion (15 de 15, 595 tokens y 17,9 s por tarea) sobre hardware de consumo. El motor empleado es ds4-m1, una bifurcacion de ds4 de antirez con parches para Metal, Neural Engine, streaming desde SSD y un drafter especulativo entrenado.
 
-La información disponible sobre el modelo base es escasa: solo se dispone de una descripción genérica de DeepSeek-V4.1-Flash-1017 como actualización menor de DeepSeek-V4.1-Flash con mejoras en razonamiento, código, tareas agénticas y visión. No se han publicado en la información proporcionada los parámetros totales, la longitud de contexto ni la composición del dataset de entrenamiento del modelo original.
+Se trata, por tanto, de un artefacto de inferencia experimental y muy especializado, no de un checkpoint listo para produccion general. La model card esta centrada en el rendimiento del motor y en la fidelidad de la cuantizacion frente al modelo oficial, no en las capacidades del modelo base.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer MoE (mezcla de expertos) con tablas Engram; detalles completos del modelo base no disponibles |
-| Parametros totales | no disponible (el autor no publica el recuento del modelo base; el artefacto cuantizado ocupa 287 GB en disco) |
-| Parametros activos | no disponible |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Expertos enrutados a 2 bits (gate/up y down); tablas Engram en IQ4_NL; copias densas GPTQ a 4 bits; cabeza GPTQ a 2 bits; tensores pequeños en I8 |
+| Arquitectura | MoE (mezcla de expertos) con tablas Engram; detalles del transformer no disponibles |
+| Parametros totales | no disponible |
+| Parametros activos | no disponible (se mencionan 384 expertos enrutados) |
+| Longitud de contexto | no disponible (se citan pruebas con ventanas de 17k tokens en modelos comparables) |
+| Tipos de cuantizacion | 4 bits en matrices densas de atencion; expertos enrutados comprimidos (bpw exacto no disponible); comparativas con SAGE 1,55 bpw y UD-IQ2_XXS |
 | Idiomas soportados | no disponible |
-| Licencia | MIT (igual que el modelo base) |
-| Formato de pesos | GGUF (tensores no enrutados) más tres ficheros binarios propietarios del motor: `experts_gate_up_bs64.bin`, `experts_down_g32.bin`, `engram_iq4nl.bin` |
+| Licencia | MIT |
+| Formato de pesos | GGUF, mas ficheros binarios propios del motor (`*_trained.bin`) |
+| Tamano del repositorio | 496,7 GB (292 GB para agente y CLI; 445 GB con los ficheros del servidor) |
+| Modelo base | deepseek-ai/DeepSeek-V4.1-Flash-1017 |
+| Motor de inferencia | ds4-m1 (ds4 + Metal + Neural Engine + streaming SSD + drafter especulativo) |
 
 ## Arquitectura y entrenamiento
 
-El modelo subyacente es un transformer con mezcla de expertos (MoE) que, según la model card, contiene 40 capas con 384 expertos enrutados por capa, además de dos tablas Engram (una innovación de DeepSeek cuya función exacta no se detalla en la información disponible). Esta cuantización no modifica la arquitectura: conserva la atención, las capas densas, el router y la cabeza de salida en los pesos oficiales, y solo recomprime los expertos enrutados y las tablas Engram. El artefacto se distribuye en cuatro ficheros: un GGUF de 23,2 GB con todos los tensores no enrutados, dos binarios con los expertos (99,1 GB para gate+up y 53,8 GB para down) y un binario de 110,6 GB con las tablas Engram en IQ4_NL.
+El modelo base es una arquitectura MoE con 384 expertos enrutados y tablas Engram, segun la descripcion del autor. No se dispone de informacion sobre el numero total de parametros, la composicion del dataset de entrenamiento, el numero de tokens vistos ni si se aplicaron tecnicas de RLHF o DPO; la model card no cubre esos aspectos del modelo original.
 
-No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni si el modelo base utilizó RLHF o DPO. La model card del cuantizador tampoco documenta el proceso de calibración de los expertos más allá de indicar la precisión (2 bits) y el esquema de agrupación (`bs64` para gate/up, `g32` para down). La innovación técnica destacable de esta publicación es el motor `ds4-m1`, un fork de `ds4` de antirez con parches para Metal, Neural Engine y streaming de expertos desde SSD, que incluye además un drafter especulativo entrenado y una caché de 38 GiB para los expertos enrutados. El motor mantiene en memoria todo lo que no son expertos y va trayendo los expertos desde el SSD según los solicita el router.
+La innovacion tecnica documentada pertenece al proceso de cuantizacion y al motor. Los expertos enrutados se transmiten bajo demanda desde el SSD hacia una cache de 38 GiB, mientras el resto de los pesos —matrices de atencion, embeddings y tablas Engram— reside permanentemente en memoria unificada. En la revision del 19 de noviembre de 2026 se corrigieron tres defectos: una ventana de atencion obsoleta en pasos de prefill de 130-144 filas (las filas mas alla de 128 atendian sobre una ventana desplazada 128 posiciones), matrices densas de atencion almacenadas a rango completo y 4 bits en lugar de rango reducido (5,14 GB frente a 3,03 GB), y una restriccion de esquema en las llamadas a herramientas que impide repetir un parametro ya escrito. Ademas, se reentrenaron los expertos enrutados de 20 capas contra las salidas del modelo oficial y se fijo el ancho del indice de atencion en 512.
 
 ## Capacidades
 
-- Generación de texto y razonamiento: el modelo base se describe como una actualización con mejoras en razonamiento, aunque no se aportan cifras concretas en la información disponible.
-- Generación de código: el cuantizador reporta 15/15 tareas de agente de programación resueltas (módulos Python con suites de pytest), con 822 tokens y 20,1 segundos por solución.
-- Tareas agénticas multi-paso: el modelo base se describe con mejoras en tareas agénticas y el cuantizador lo evalúa sobre sesiones de agente reales.
-- Modo thinking: la model card distingue explícitamente entre tokens de "thinking" y de "answer" al medir la fidelidad, lo que confirma que el modelo conserva el modo de razonamiento extendido.
-- Tool calling / function calling: la model card menciona que el cuantizado conserva "thinking and tool calls".
-- Visión: la descripción del modelo base en ModelScope y Fireworks indica mejoras en benchmarks visuales, por lo que se asume capacidad multimodal, aunque no se detalla en la información disponible.
-- Capacidades multilingües: no disponible.
-- Capacidades de audio: no disponible.
+- Generacion de texto y razonamiento en modo thinking, segun la model card ("thinking and tool calls").
+- Llamadas a herramientas (tool calling) con validacion de esquema por parametro.
+- Uso como agente de programacion: resolucion de tareas de correccion de bugs y tareas de codigo en un unico proceso.
+- Ejecucion completa del modelo, incluidos los 384 expertos enrutados, sin poda de expertos.
+- Capacidades multilingues: no disponibles en la informacion proporcionada.
+- Vision, audio u otras modalidades: no disponibles.
 
 ## Casos de uso
 
-- Desarrollo de agentes de código en local sobre Apple Silicon: el modelo resuelve tareas de programación con suites de pruebas (15/15 en la suite del autor) a 48 tok/s, suficiente para iterar sobre módulos Python sin depender de APIs externas.
-- Prototipado de asistentes con razonamiento extendido en un portátil o estación de trabajo M1 Max: el modo thinking permite tareas de análisis multi-paso manteniendo todo el cómputo en local.
-- Evaluación de cuantizaciones y motores de inferencia: la model card publica métricas de fidelidad (KL, top-1, top-5) frente a referencias Q8_0 y frente a otras cuantizaciones (SAGE REXL3, Unsloth UD-IQ2_XXS), lo que lo convierte en un banco de pruebas útil para investigar compresión de MoE.
-- Investigación sobre streaming de expertos desde SSD: el motor `ds4-m1` y los binarios de expertos separados permiten estudiar el impacto del ancho de banda de disco y de la caché en la latencia de decodificación.
-- Automatización de tareas de refactorización y generación de tests en pipelines locales: el soporte de tool calls y el modo agéntico permiten encadenar edición de ficheros, ejecución de tests y corrección de errores.
-- Despliegue de un asistente privado sin conexión: al ejecutarse íntegramente en local con licencia MIT, es adecuado para entornos con requisitos de confidencialidad donde no se permite enviar datos a servicios en la nube.
-- Experimentación con decodificación especulativa: el drafter entrenado incluido en el GGUF permite medir la ganancia de la decodificación especulativa en hardware Apple.
+- Agente de programacion local en un portatil Apple Silicon: el modelo resuelve tareas de correccion de bugs de extremo a extremo en un solo proceso, con 595 tokens y 17,9 s por tarea en las mediciones del autor, lo que permite iterar sobre repositorios pequenos sin depender de la nube.
+- Desarrollo asistido por IA en entornos con requisitos de privacidad: al ejecutarse integramente en un M1 Max de 64 GB, el codigo y las llamadas a herramientas no salen de la maquina.
+- Evaluacion de cuantizaciones para investigacion: el repositorio incluye comparativas de divergencia KL y top-1 frente al modelo oficial y frente a alternativas como SAGE 1,55 bpw y UD-IQ2_XXS, utiles para estudiar el impacto de la compresion en modelos MoE.
+- Pruebas de motores de inferencia alternativos: sirve como banco de pruebas para ds4-m1, Metal, Neural Engine y decodificacion especulativa sobre hardware de consumo.
+- Despliegue de un servidor de inferencia local: el autor menciona `ds4-server` con su propia configuracion y ficheros de expertos, orientado a exponer el modelo como servicio en la misma maquina.
+- Experimentacion con tool calling restringido por esquema: el mecanismo que cierra una llamada cuando todos los parametros del esquema estan escritos es adecuado para estudiar fiabilidad de agentes en pipelines locales.
+- Reproduccion de resultados de agente: las tareas de coding-agent y los conjuntos wiki1100 y e2e_eval documentados permiten replicar las mediciones de fidelidad.
 
 ## Benchmarks y rendimiento
 
-Rendimiento del motor en un Apple M1 Max de 64 GB (datos del autor):
+| Metrica | ds4m1 (19-11-2026) | ds4m1 (08-11-2026) | SAGE 1,55 bpw (EXL3/REXL3) | Unsloth UD-IQ2_XXS |
+|---|---|---|---|---|
+| Tareas de coding-agent resueltas | 15/15 | 15/15 | no disponible | no disponible |
+| Tokens por tarea resuelta | 595 | 822 | no disponible | no disponible |
+| Segundos por tarea resuelta | 17,9 | 20,1 | no disponible | no disponible |
+| Decodificacion | 41,1 tok/s a 1.045 MHz (39,3/GHz) | 48,4 tok/s a 1.061 MHz (45,6/GHz) | no disponible | no disponible |
+| Prefill | 312,5 tok/s a 1.045 MHz (299,0/GHz) | 342,6 tok/s a 1.061 MHz (322,9/GHz) | no disponible | no disponible |
+| KL vs oficial, expertos enrutados (8 sesiones de agente) | 0,047 · top-1 92,8% | no disponible | REXL3: 0,091 · top-1 89,9% | no disponible |
+| KL vs oficial, expertos enrutados, wiki1100 | 0,324 · top-1 85,1% | no disponible | REXL3: 0,380 · top-1 83,9% | no disponible |
+| KL vs oficial, modelo completo, wiki1100 | 0,833 · top-1 73,6% | no disponible | EXL3: 0,088 · top-1 88,2% | 0,203 · top-1 90,5% |
+| KL vs referencia Q8_0, modelo completo (4 sesiones) | 0,105 · top-1 90,7% | no disponible | no disponible | no disponible |
 
-| Carga de trabajo | Decodificación | Prefill | Reloj de GPU |
-|---|---:|---:|---:|
-| 16 tareas de agente de código seguidas (~7 min) | 48,4 tok/s | 342,6 tok/s | 1.061 MHz |
-| Las mismas, tareas 5-15 en una segunda ejecución | 48,6 tok/s | 342,2 tok/s | 1.073 MHz |
-
-Fidelidad de los expertos enrutados frente a SAGE REXL3 1.55 bpw (modelo oficial FP8/FP4 como profesor, 11.263 posiciones de 8 sesiones de agente):
-
-| Expertos enrutados | KL medio | KL p50 | KL p90 | Top-1 |
-|---|---:|---:|---:|---:|
-| ds4m1 (2 bits gate/up + 2 bits down) | 0,0467 | 0,00337 | 0,132 | 92,8% |
-| SAGE REXL3 1.55 bpw | 0,0906 | 0,00333 | 0,271 | 89,9% |
-
-Fidelidad del modelo completo frente a la referencia Q8_0 GGUF (cuatro sesiones de agente de código, con separación entre tokens de thinking y de respuesta):
-
-| Sesión | Posiciones | KL medio | KL p50 | Top-1 | Top-5 | Thinking KL / top-1 | Answer KL / top-1 |
-|---|---:|---:|---:|---:|---:|---|---|
-| calc | 818 | 0,118 | 0,00088 | 89,9% | 69,8% | 0,212 / 81,8% | 0,039 / 96,6% |
-| textutil | 536 | 0,053 | 0,00006 | 97,4% | 63,8% | 0,255 / 86,7% | 0,020 / 99,1% |
-| roman (thinking largo) | 1.254 | 0,147 | 0,01430 | 88,4% | 72,2% | 0,181 / 85,3% | 0,082 / 94,6% |
-| matrix (thinking largo) | 777 | 0,116 | 0,00083 | 89,6% | 70,1% | 0,198 / 82,2% | 0,046 / 95,9% |
-| **agregado** | **3.385** | **0,118** | | **90,5%** | **69,8%** | | |
-
-Tokens y tiempo por solución correcta:
-
-| Conjunto de tareas | Resueltas | Tokens por solución | Segundos por solución |
-|---|---:|---:|---:|
-| 15 tareas de agente de código (módulos Python con pytest) | 15 / 15 | 822 | 20,1 |
-| Suite difícil: MMLU-Pro 30, OlympiadBench 10, LiveBench 5, NIST Juliet 5 | en ejecución | | |
-
-El autor indica explícitamente que no ha reejecutado las suites de benchmarks de DeepSeek (HLE, Terminal-Bench, SWE, etc.) porque cada una tarda días a 48 tok/s. No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible.
+En 10 tareas nuevas de correccion de bugs (tres de modulos mas dificiles), el autor reporta 10 de 10 resueltas a 108,6 s y 2.369 tokens por solucion, sin parada por bucle. Las cifras a 1.296 MHz son estimaciones del autor (aproximadamente 48 tok/s de decodificacion y 378 tok/s de prefill), no mediciones directas.
 
 ## Requisitos de hardware
 
-- VRAM/memoria unificada: el motor reserva unos 53 GiB en un M1 Max de 64 GB; el autor recomienda cerrar otras aplicaciones grandes. La caché de expertos ocupa 38 GiB y el resto de tensores permanece en memoria.
-- Almacenamiento: 287 GB de descarga en cuatro ficheros; el primer arranque descomprime 13 GB de tensores pequeños en `~/Library/Caches/ds4m1/` (configurable con `DS4M1_CACHE`).
-- GPU recomendadas: Apple M1 Max con 64 GB como plataforma de referencia. No se documenta soporte para GPU NVIDIA, AMD ni para otros tamaños de memoria unificada en la información disponible.
-- GPU de consumo: no cabe en GPUs de consumo convencionales (RTX 4090, 24 GB) por el tamaño del artefacto; la viabilidad depende del streaming desde SSD y de la memoria unificada de Apple Silicon.
-- Opciones de despliegue: exclusivamente el motor `ds4-m1` (fork de `ds4` de antirez con parches de Metal, Neural Engine y streaming de SSD), invocado como `./ds4-agent -m ds4m1/DeepSeek-V4.1-Flash-1017-ds4m1.gguf`. No se documenta compatibilidad con llama.cpp, vLLM, Ollama ni TGI.
-- Latencia y throughput: 48,4 tok/s de decodificación y 342,6 tok/s de prefill en M1 Max de 64 GB; 20,1 segundos por solución en la suite de 15 tareas de código.
-- Muestreo recomendado por el autor: temperature 1,0, top-p 1,0, min-p 0,2. Los resultados varían entre ejecuciones porque el router prefiere expertos ya presentes en la caché.
+- VRAM/RAM estimada: el autor reporta ejecucion en un Apple M1 Max con 64 GB de memoria unificada; los expertos se transmiten desde SSD a una cache de 38 GiB.
+- Espacio en disco: 292 GB para agente y CLI, 445 GB con los ficheros del servidor, sobre un repositorio de 496,7 GB.
+- GPU recomendadas: Apple Silicon M1 Max de 64 GB segun las mediciones publicadas; no hay datos para A100, H100 o RTX 4090.
+- GPU de consumo: si, en Apple Silicon de 64 GB; no disponible para GPUs discretas de consumo.
+- Opciones de despliegue: motor propietario ds4-m1 (ds4 con parches Metal, Neural Engine y streaming SSD); llama.cpp se menciona solo como entorno de la alternativa UD-IQ2_XXS, no como opcion documentada para este repositorio.
+- Latencia y throughput: 41,1 tok/s de decodificacion y 312,5 tok/s de prefill a 1.045 MHz; 17,9 s y 595 tokens por tarea de coding-agent resuelta.
 
 ## Comparativa con modelos similares
 
-| Modelo | Plataforma | Descarga | Decodificación | Prefill | Fidelidad (KL / top-1) | Licencia |
-|---|---|---|---:|---:|---|---|
-| ds4m1 (esta ficha) | M1 Max 64 GB | 287 GB | 48,4 tok/s | 342,6 tok/s | 0,047 / 92,8% (expertos, mismo test) | MIT |
-| vcruz305 SAGE 1.55 bpw (EXL3/REXL3) | GPU clase 128 GB (108,5 GiB residentes) | 320 GB | no indicado | no indicado | REXL3: 0,091 / 89,9% (expertos, mismo test); EXL3: 0,088 wiki1100, 0,098 e2e_eval; REXL3: 0,051 e2e_eval | no disponible |
-| Unsloth UD-IQ2_XXS (GGUF) | llama.cpp | 300,5 GB | no indicado | no indicado | 0,203 wiki1100, 0,142 long17k; top-1 90,5% wiki1100, 91,2% long17k | no disponible |
+| Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| ds4m1 (este repositorio) | no disponible (384 expertos) | no disponible | 41,1 tok/s decod.; KL 0,047 en expertos enrutados; 15/15 tareas | MIT | GGUF + binarios, 496,7 GB |
+| vcruz305 SAGE 1,55 bpw (EXL3/REXL3) | mismo modelo base | no disponible | Requiere GPU de clase 128 GB (108,5 GiB residentes); KL 0,088 en EXL3 sobre su propia porcion | no disponible | 320 GB |
+| Unsloth UD-IQ2_XXS (GGUF) | mismo modelo base | no disponible | 300,5 GB de pesos; KL 0,203 en wiki1100, top-1 90,5% | no disponible | GGUF via llama.cpp |
 
-La comparación de la fila "mismo test" sustituye únicamente los expertos enrutados, manteniendo atención, capas densas, router y cabeza en los pesos oficiales, por lo que mide directamente la calidad del codec de expertos. No se dispone de comparativas frente a otros modelos de la misma categoría (por ejemplo, otros MoE de gran escala servidos en hardware de consumo) en la información proporcionada.
+Las tres alternativas cuantizan el mismo modelo base DeepSeek-V4.1-Flash-1017. La comparativa directa de fidelidad no es homogenea: cada artefacto reporta KL sobre su propia porcion de evaluacion, y el autor advierte de esa limitacion en su tabla.
 
 ## Limitaciones y advertencias
 
-- El artefacto no es un modelo autónomo estándar: requiere el motor `ds4-m1` y tres ficheros binarios propietarios además del GGUF; no funciona con llama.cpp, vLLM, Ollama ni TGI.
-- El tamaño de descarga (287 GB) y la caché en disco (38 GiB de expertos más 13 GB de tensores pequeños) imponen requisitos de almacenamiento considerables.
-- La fidelidad es menor que la del modelo oficial: KL agregado de 0,118 y top-1 del 90,5% frente a Q8_0 en cuatro sesiones de agente, con degradación mayor en tokens de thinking (KL de hasta 0,255) que en tokens de respuesta.
-- Los resultados varían entre ejecuciones porque el router prioriza expertos ya cacheados; el autor lo advierte explícitamente y recomienda no interpretar una única ejecución como representativa.
-- No se han reejecutado las suites de benchmarks oficiales de DeepSeek (HLE, Terminal-Bench, SWE); la suite difícil (MMLU-Pro, OlympiadBench, LiveBench, NIST Juliet) figura como "en ejecución" en la model card.
-- El autor no documenta sesgos conocidos, riesgos de alucinación específicos ni limitaciones de idioma del modelo base en la información disponible.
-- El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, por lo que no existe validación independiente de las cifras reportadas.
-- La licencia MIT se hereda del modelo base, pero el autor pide citar a DeepSeek; conviene verificar los términos del modelo original antes de un uso comercial.
-- El modelo base se describe como una actualización menor de DeepSeek-V4.1-Flash, sin que se detallen en la información disponible los cambios concretos ni las métricas de las mejoras anunciadas.
+- Tendencia a repetir lineas: cuando una respuesta ya contiene dos veces la misma linea y la peticion no especifica cuantas se quieren, el modelo tiende a escribirla de nuevo. El autor atribuye este comportamiento al modelo oficial (primera opcion en 19 de 20 documentos de prueba) y reporta que esta build continuo un bucle sembrado en 5 de 8 muestras; el detector de bucles del agente corta el turno.
+- Fidelidad limitada en el modelo completo: KL 0,833 y top-1 73,6% frente al oficial en wiki1100, peor que las alternativas EXL3 e IQ2_XXS en sus respectivas porciones.
+- Dependencia de hardware y motor propietario: el rendimiento documentado corresponde a un M1 Max de 64 GB con ds4-m1; no hay datos para otras GPUs ni para motores estandar.
+- Requisitos de almacenamiento elevados: 292-445 GB de descarga y transmision continua de expertos desde SSD, lo que puede degradar la latencia con almacenamiento lento.
+- Idiomas, sesgos y riesgos de alucinacion del modelo base: no disponibles en la informacion proporcionada.
+- Licencia MIT declarada para el artefacto de cuantizacion; deben verificarse las condiciones del modelo base deepseek-ai/DeepSeek-V4.1-Flash-1017 antes de uso comercial.
+- Artefacto experimental: la model card documenta correcciones de defectos del motor en cada revision, por lo que conviene fijar una revision concreta en produccion.
 
 ## Enlaces
 
-- Repositorio Hugging Face de esta cuantización: https://huggingface.co/ivp5/DeepSeek-V4.1-Flash-1017-ds4m1
-- Modelo base en Hugging Face: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017
-- Modelo base en ModelScope: https://modelscope.ai/models/deepseek-ai/DeepSeek-V4.1-Flash-1017
-- Ficha del modelo base en Fireworks AI: https://fireworks.ai/models/deepseek-ai/deepseek-v4p1-flash-1017
+- Repositorio Hugging Face: https://huggingface.co/ivp5/DeepSeek-V4.1-Flash-1017-ds4m1
+- Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017
 - Motor ds4-m1: https://github.com/ivp5/ds4-m1
-- Motor ds4 original de antirez: https://github.com/antirez/ds4
+- Motor ds4 original (antirez): https://github.com/antirez/ds4

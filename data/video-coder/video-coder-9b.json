@@ -47,12 +47,17 @@
     },
     {
       "title": "Google Videos",
-      "url": "https://www.google.fr/videohp",
+      "url": "https://www.google.com/videohp",
       "snippet": "Search millions of videos from across the web."
     },
     {
+      "title": "Vidéo libre de droit, Vidéo 4k Gratuite, Banque Vidéo Gratuite - Pexels",
+      "url": "https://www.pexels.com/fr-fr/videos/",
+      "snippet": "Les vidéos Pexels vous permettent de trouver facilement des vidéos gratuites pour votre site Web, une vidéo promotionnelle ou tout …"
+    },
+    {
       "title": "Google Vidéos",
-      "url": "https://www.google.fr/videohp?hl=fr",
+      "url": "https://www.google.com/videohp?hl=fr",
       "snippet": "Rechercher des millions de vidéos sur le Web"
     }
   ]

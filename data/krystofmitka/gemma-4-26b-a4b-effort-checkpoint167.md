@@ -2,97 +2,101 @@
 
 ## Resumen
 
-Gemma 4 26B A4B effort-checkpoint167 es un ajuste fino (fine-tune) del modelo multimodal google/gemma-4-26B-A4B-it de Google DeepMind, publicado por el usuario krystofmitka. Se trata de un checkpoint intermedio, concretamente el paso 167 de un entrenamiento que estaba planificado para 500 pasos y que quedó pausado. El modelo incorpora un adaptador LoRA de GRPO fusionado sobre los pesos de un calentamiento supervisado (supervised warm-up), por lo que se distribuye como un único conjunto de pesos BF16 completamente fusionado, sin necesidad de cargar el adaptador por separado.
+`krystofmitka/gemma-4-26B-A4B-effort-checkpoint167` es un fine-tune del modelo multimodal `google/gemma-4-26B-A4B-it` de Google DeepMind, publicado por el usuario krystofmitka. Se trata del checkpoint completamente fusionado (BF16) del paso de entrenamiento 167 de un ajuste fino condicionado por esfuerzo de razonamiento, que combina un calentamiento supervisado con un adaptador LoRA entrenado mediante GRPO ya integrado en los pesos. El resultado es un único conjunto de pesos que soporta cuatro niveles de esfuerzo de razonamiento (25, 50, 75 y 100) seleccionables en tiempo de inferencia mediante una línea concreta en el system prompt.
 
-La innovación principal es el control de esfuerzo de razonamiento (effort control): un mismo conjunto de pesos soporta cuatro niveles de esfuerzo (25, 50, 75 y 100) que se seleccionan mediante una línea concreta en el system prompt. Estos valores expresan preferencias de razonamiento aprendidas, no límites duros de tokens. El modelo mantiene la arquitectura MoE del modelo base, con aproximadamente 25.800 millones de parámetros totales y unos 4.000 millones activos por token (de ahí la denominación A4B), y soporta entradas de imagen y texto con una ventana de contexto de 262.144 tokens.
+El modelo hereda la arquitectura multimodal de Gemma 4 con aproximadamente 25.800 millones de parámetros totales y una ventana de contexto de 262.144 tokens, según la configuración usada en la evaluación del autor. Su propuesta diferencial es el control explícito del presupuesto de razonamiento: el usuario puede pedir respuestas más concisas o más elaboradas sin cambiar de modelo, algo relevante para aplicaciones que necesitan equilibrar latencia, coste y precisión.
 
-Es relevante ahora porque explora una vía práctica para controlar el coste computacional del razonamiento en modelos abiertos multimodales: en lugar de entrenar variantes separadas para cada nivel de esfuerzo, un solo checkpoint permite ajustar la profundidad del razonamiento en tiempo de inferencia. No obstante, la evaluación publicada es preliminar y limitada a GPQA-Diamond, por lo que sus resultados no deben interpretarse como una validación general de capacidades.
+Es relevante ahora porque demuestra una vía práctica para añadir control de esfuerzo a modelos de razonamiento de gran tamano mediante RL (GRPO), y porque el autor publica de forma transparente metadatos de procedencia, manifiestos de pesos y resultados preliminares. No obstante, el entrenamiento quedó pausado en el paso 167 (no en el paso 500 previsto) y la evaluación completa de doce benchmarks se detuvo, por lo que las conclusiones sobre preservación de capacidades generales son limitadas.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer multimodal MoE (hereda la de google/gemma-4-26B-A4B-it) |
-| Parametros totales | 25.805.933.872 |
-| Parametros activos | Aproximadamente 4.000 millones (denominacion A4B del modelo base) |
-| Longitud de contexto | 262.144 tokens (segun la configuracion de evaluacion y el ejemplo de vLLM) |
-| Tipos de cuantizacion | No disponible (el checkpoint publicado es BF16; no se documentan cuantizaciones oficiales) |
-| Idiomas soportados | No disponible |
+| Arquitectura | Transformer multimodal (image-text-to-text) basada en Gemma 4, con mezcla de expertos (MoE) segun el sufijo A4B del modelo base |
+| Parametros totales | 25.805.933.872 (aproximadamente 25,8 mil millones) |
+| Parametros activos | no disponible (el nombre A4B sugiere aproximadamente 4 mil millones activos, pero no se confirma en la informacion proporcionada) |
+| Longitud de contexto | 262.144 tokens (usada en la evaluacion y configurada en el ejemplo de vLLM) |
+| Tipos de cuantizacion | no disponible (se publican pesos en BF16; no se detallan cuantizaciones oficiales) |
+| Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 (con license_link a la licencia de Gemma 4 de Google) |
-| Formato de pesos | Safetensors (BF16, fusionados; tamano del repo 51,6 GB) |
+| Formato de pesos | safetensors (BF16, fusionados; repositorio de 51,6 GB) |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de google/gemma-4-26B-A4B-it, un transformer multimodal de tipo mixture-of-experts con unos 25.800 millones de parámetros totales y aproximadamente 4.000 millones activos por token. Procesa entradas de imagen y texto (pipeline image-text-to-text) y conserva el procesador, tokenizador, chat template y configuración originales del modelo base, empaquetados junto con los pesos fusionados exactos usados en la evaluación del checkpoint 167.
+El modelo parte de `google/gemma-4-26B-A4B-it`, un transformer multimodal de Gemma 4 con capacidad de procesar imagen y texto (pipeline `image-text-to-text`). El sufijo A4B del nombre del modelo base indica una configuracion de mezcla de expertos con aproximadamente 4 mil millones de parametros activos, aunque la informacion proporcionada no detalla el numero exacto de expertos ni la topologia de enrutamiento. El checkpoint publicado contiene los pesos en BF16 completamente fusionados, de modo que no requiere cargar un adaptador LoRA por separado.
 
-El entrenamiento consistió en un calentamiento supervisado seguido de un ajuste con GRPO (Group Relative Policy Optimization), cuyo adaptador LoRA se fusionó en los pesos en el paso 167. El objetivo era aprender una condicionamiento por esfuerzo de razonamiento: los cuatro niveles (25, 50, 75 y 100) se activan mediante la primera línea del system prompt («Reasoning Effort: N (range 1–100; higher values request more thorough reasoning)») y requieren mantener el modo thinking activado. El entrenamiento quedó pausado en el paso 167 y no alcanzó el checkpoint de 500 pasos previsto; el autor documenta la identidad del checkpoint, la revisión del modelo original, el SHA-256 del adaptador y el alcance de la evaluación en checkpoint_metadata.json y weights_manifest.json.
+El entrenamiento consistio en un calentamiento supervisado seguido de un ajuste fino con GRPO (Group Relative Policy Optimization), una tecnica de aprendizaje por refuerzo, cuyo adaptador LoRA del paso 167 se fusiono en los pesos base. La innovacion principal es la condicionalidad por esfuerzo: el modelo aprende a asociar la linea `Reasoning Effort: N (range 1–100; ...)` del system prompt con distintos niveles de profundidad de razonamiento, entrenandose especificamente para los valores 25, 50, 75 y 100. Segun el autor, estos valores expresan preferencias de razonamiento aprendidas y no limites duros de tokens. El entrenamiento quedo pausado en el paso 167, no en el paso 500 planificado, y el autor documenta la identidad del checkpoint, la revision del modelo original, el SHA-256 del adaptador y el manifiesto de pesos en `checkpoint_metadata.json` y `weights_manifest.json`.
 
 ## Capacidades
 
-- Generación de texto y razonamiento multimodal (imagen y texto) heredados del modelo base Gemma 4.
-- Razonamiento con modo thinking explícito, con canal de pensamiento separado de la respuesta final.
-- Control de esfuerzo de razonamiento en cuatro niveles entrenados (25, 50, 75 y 100) mediante system prompt.
-- Razonamiento matemático y resolución de problemas paso a paso (el ejemplo de la model card resuelve una ecuación lineal con explicación).
-- Respuestas conversacionales multi-turno con chat template compatible con Transformers y vLLM.
-- Soporte de contexto largo de hasta 262.144 tokens en la configuración de evaluación.
-- No se documenta soporte explícito de tool calling, function calling ni uso como agente multi-paso en la información disponible.
+- Generacion de texto y razonamiento multimodal: procesa entradas de imagen y texto (pipeline `image-text-to-text`) y produce respuestas con canal de pensamiento (`thinking`) y respuesta final.
+- Razonamiento con esfuerzo controlable: cuatro niveles de esfuerzo (25, 50, 75, 100) seleccionables mediante el system prompt, que modulan la extension del razonamiento.
+- Modo thinking: requiere `enable_thinking=True`; la respuesta decodificada incluye el canal de pensamiento y la respuesta final.
+- Razonamiento matematico y resolucion de problemas: el ejemplo oficial resuelve una ecuacion lineal con explicacion.
+- Respuesta a preguntas de conocimiento avanzado: evaluado en GPQA-Diamond (preguntas de nivel doctoral en ciencias).
+- Conversacional multi-turno: chat template de Gemma 4 incluido en el repositorio.
+- Capacidades multilingues: no disponible en la informacion proporcionada.
+- Tool calling / function calling: no disponible en la informacion proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no documentado explicitamente; el modo thinking y el contexto de 262.144 tokens lo permiten tecnicamente, pero no se confirma como capacidad entrenada.
 
 ## Casos de uso
 
-- Razonamiento matemático con coste ajustable: para problemas simples se selecciona effort 25 (media de 4.726 tokens de pensamiento en GPQA-Diamond) y para problemas complejos effort 75 u 100, permitiendo equilibrar precisión y coste en un mismo despliegue.
-- Análisis de documentos e imágenes combinados: la entrada image-text-to-text permite procesar capturas, diagramas o páginas escaneadas junto con preguntas de texto en un único flujo conversacional.
-- Asistentes de investigación con contexto largo: la ventana de 262.144 tokens permite cargar artículos completos o expedientes extensos y formular preguntas sobre ellos sin trocear el contenido.
-- Despliegue en producción con vLLM: el autor documenta el servicio mediante `vllm serve` con `--max-model-len 262144`, lo que facilita integrarlo en infraestructuras de inferencia existentes con API compatible con chat completions.
-- Evaluación comparativa de estrategias de razonamiento: al soportar cuatro niveles de esfuerzo con los mismos pesos, sirve para estudiar en investigación la relación entre tokens de pensamiento y precisión sin cambiar de modelo.
-- Generación de explicaciones didácticas: el modo thinking produce un canal de razonamiento separado que puede mostrarse o auditarse por separado de la respuesta final en aplicaciones educativas.
-- Prototipado de asistentes conversacionales multimodales: el chat template y el procesador originales permiten integrarlo con Transformers 5.20.2 y PyTorch 2.14.0 en entornos de experimentación.
+- Razonamiento cientifico con presupuesto controlado: en preguntas de nivel doctoral (tipo GPQA), el usuario puede fijar esfuerzo 25 para respuestas rapidas o 75 para mayor precision, ajustando el coste computacional al caso concreto.
+- Atencion al cliente automatizada: con 262.144 tokens de contexto, el modelo puede gestionar conversaciones multi-turno largas e incorporar imagenes (capturas, productos) en la misma sesion.
+- Tutoria educativa adaptativa: el nivel de esfuerzo permite ofrecer explicaciones breves (esfuerzo 25) o desarrollos detallados paso a paso (esfuerzo 75 o 100) segun el perfil del estudiante.
+- Asistentes de documentacion tecnica con imagenes: al ser image-text-to-text, puede interpretar diagramas, capturas de pantalla o esquemas y generar explicaciones textuales a partir de ellos.
+- Procesamiento de documentos extensos: la ventana de 262.144 tokens permite analizar informes, contratos o articulos largos en una sola pasada, solicitando razonamiento profundo solo en las secciones criticas.
+- Investigacion sobre control de razonamiento en RL: el checkpoint, con metadatos de procedencia y manifiesto de pesos, sirve como referencia reproducible para estudiar como GRPO modula la longitud y calidad del razonamiento.
+- Despliegue en produccion con vLLM: el autor proporciona comandos de servicio y cuerpos de peticion de ejemplo para los cuatro niveles, lo que facilita integrarlo en pipelines de inferencia existentes.
 
 ## Benchmarks y rendimiento
 
-Resultados preliminares de una única pasada sobre GPQA-Diamond (198 preguntas respondidas por configuración), con temperatura 1.0, top-p 0.95, top-k 64, máximo de 65.536 tokens de salida, contexto de 262.144 tokens, vLLM y EvalScope 1.14.1. Ninguna respuesta fue truncada. No hay agregados multi-semilla ni intervalos de confianza.
+Resultados preliminares de una sola pasada en GPQA-Diamond (198 preguntas, todas respondidas en cada ajuste; sin intervalos de confianza multi-semilla). Muestreo: temperatura 1,0, top-p 0,95, top-k 64; salida maxima 65.536 tokens; contexto 262.144 tokens; vLLM y EvalScope 1.14.1. Ninguna respuesta fue truncada.
 
-| Configuracion | Precision | Media tokens de pensamiento | Media tokens de salida |
+| Ajuste | Precision | Media de tokens de pensamiento | Media de tokens de salida |
 |---|---:|---:|---:|
 | Gemma 4 original | 79,80% | 11.040 | 11.822 |
 | Checkpoint 167, sin linea de esfuerzo | 80,81% | 8.849 | 9.580 |
-| Checkpoint 167, effort 25 | 81,31% | 4.726 | 5.238 |
-| Checkpoint 167, effort 50 | 76,26% | 6.147 | 6.781 |
-| Checkpoint 167, effort 75 | 81,82% | 8.131 | 8.852 |
-| Checkpoint 167, effort 100 | 79,29% | 8.362 | 9.092 |
+| Checkpoint 167, esfuerzo 25 | 81,31% | 4.726 | 5.238 |
+| Checkpoint 167, esfuerzo 50 | 76,26% | 6.147 | 6.781 |
+| Checkpoint 167, esfuerzo 75 | 81,82% | 8.131 | 8.852 |
+| Checkpoint 167, esfuerzo 100 | 79,29% | 8.362 | 9.092 |
 
-La evaluación de doce benchmarks se detuvo a petición del propietario: la pasada de MMLU-Pro quedó incompleta y los otros diez benchmarks no se iniciaron. Por tanto, estos resultados no demuestran preservación general de capacidades ni ganancias de precisión. Un experimento posterior con effort 10 también se detuvo antes de completarse y no es una configuración soportada en esta versión.
+La evaluacion de doce benchmarks se detuvo a peticion del propietario: la pasada de MMLU-Pro quedo incompleta y los otros diez benchmarks no se iniciaron. Por tanto, estos datos no demuestran preservacion general de capacidades ni ganancias de precision. Un experimento posterior con esfuerzo 10 tambien se detuvo y no es un ajuste soportado en esta release.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: aproximadamente 52 GB solo para los pesos BF16, más memoria adicional para el contexto y el estado de inferencia; con contexto de 262.144 tokens el consumo de KV cache es considerable.
-- GPU recomendadas: el autor menciona una evaluación en B300 con backends Triton de atención y MoE; para BF16 se requieren GPUs con al menos 80 GB (A100 80 GB, H100 80 GB) o configuraciones multi-GPU con `device_map="auto"`.
-- No cabe en GPUs de consumo en BF16 (RTX 4090 con 24 GB, RTX 3090 con 24 GB); se necesitaría cuantización, que no está documentada oficialmente para este checkpoint.
-- Opciones de despliegue: Transformers (versión con soporte de Gemma 4; el autor usó 5.20.2 con PyTorch 2.14.0) y vLLM con soporte de Gemma 4 mediante `vllm serve`.
-- Latencia y throughput: no disponibles.
+- VRAM estimada para inferencia: el repositorio ocupa 51,6 GB en BF16, por lo que se necesitan aproximadamente 52 GB solo para pesos, mas memoria de inferencia (KV cache y activaciones); en la practica, mas de 60 GB en BF16.
+- GPU recomendadas: el autor menciona una evaluacion en B300 con backends Triton de atencion y MoE; para BF16 se requieren GPUs de centro de datos con 80 GB o mas (H100, H200, B200, B300) o configuraciones multi-GPU con `device_map="auto"`.
+- Cabe en GPU de consumo: no en BF16; no se proporcionan pesos cuantizados oficiales, por lo que no se confirma su viabilidad en RTX 4090 (24 GB) u otras GPU consumer sin cuantizacion propia.
+- Opciones de despliegue: Transformers (probado con la version 5.20.2 y PyTorch 2.14.0, requiere soporte de Gemma 4), vLLM (con soporte de Gemma 4, `--max-model-len 262144`), y EvalScope 1.14.1 para evaluacion. No se documentan llama.cpp, Ollama ni TGI.
+- Latencia y throughput estimados: no disponibles; solo se conocen las medias de tokens generados por ajuste en GPQA-Diamond (entre 5.238 y 11.822 tokens de salida), que dan una idea del coste relativo.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros totales | Contexto | Licencia | Notas |
 |---|---|---|---|---|
-| krystofmitka/gemma-4-26B-A4B-effort-checkpoint167 | 25,8 B (MoE, ~4 B activos) | 262.144 | Apache 2.0 | Fine-tune GRPO con control de esfuerzo; checkpoint intermedio (paso 167 de 500) |
-| google/gemma-4-26B-A4B-it | 25,8 B (MoE, ~4 B activos) | No disponible en la informacion | Apache 2.0 | Modelo base original; 79,80% en GPQA-Diamond segun la evaluacion del autor del fine-tune |
-| Otros fine-tunes de razonamiento sobre Gemma 4 | No disponible | No disponible | No disponible | No se dispone de datos comparativos en la informacion proporcionada |
+| krystofmitka/gemma-4-26B-A4B-effort-checkpoint167 | 25,8 mil millones | 262.144 | Apache 2.0 | Fine-tune con control de esfuerzo (25/50/75/100); evaluacion parcial |
+| google/gemma-4-26B-A4B-it | 25,8 mil millones (mismo base) | no disponible en la informacion | Apache 2.0 | Modelo base original; 79,80% en GPQA-Diamond segun la tabla del autor |
+| Otras alternativas de tamano y categoria similares | no disponible | no disponible | no disponible | No se proporcionan datos comparativos de otros modelos en la informacion disponible |
 
 ## Limitaciones y advertencias
 
-- Checkpoint intermedio: el entrenamiento se pausó en el paso 167 de los 500 planificados; el autor indica explícitamente que esta no es la versión final prevista.
-- Evaluación muy limitada: solo GPQA-Diamond con una única pasada y sin intervalos de confianza; la evaluación de doce benchmarks quedó incompleta. No hay evidencia de preservación general de capacidades.
-- Resultados inconsistentes entre niveles: effort 50 obtiene 76,26%, por debajo del modelo original (79,80%), lo que sugiere que no todos los niveles entrenados mejoran el rendimiento de forma fiable.
-- Valores de esfuerzo fuera de 25, 50, 75 y 100 no están validados para esta versión.
-- El modo thinking debe permanecer activado (`enable_thinking=True`); desactivarlo puede alterar el comportamiento esperado.
-- Riesgo de alucinación y sesgos: no documentados específicamente para este fine-tune; se heredan los del modelo base, no descritos en la información disponible.
-- Idiomas soportados: no disponibles; no se documenta cobertura multilingüe específica.
-- Licencia Apache 2.0, pero con license_link a la licencia de Gemma 4 de Google; conviene revisar LICENSE, NOTICE y BASE_MODEL_CARD.md antes de uso comercial.
-- Requiere hardware de gama alta (aproximadamente 52 GB en BF16) y versiones específicas de Transformers, PyTorch y vLLM con soporte de Gemma 4.
-- Los benchmarks del model card original describen el modelo base, no este fine-tune.
+- Entrenamiento incompleto: el checkpoint corresponde al paso 167, no al paso 500 planificado; el autor indica que el entrenamiento sigue pausado.
+- Evaluacion parcial: solo hay resultados preliminares de una pasada en GPQA-Diamond; MMLU-Pro quedo incompleto y diez benchmarks no se iniciaron, por lo que no se puede afirmar preservacion general de capacidades.
+- Sin intervalos de confianza: los resultados son de una sola semilla y el propio autor advierte que no son agregados multi-semilla.
+- Niveles de esfuerzo no validados fuera de 25, 50, 75 y 100; valores como 10 no estan soportados en esta release.
+- El esfuerzo 50 obtuvo peor precision (76,26%) que el modelo original y que los demas ajustes, lo que sugiere un comportamiento no monotono que conviene validar en el caso de uso concreto.
+- Riesgo de alucinacion: no se documenta una evaluacion especifica de factualidad; al ser un modelo de razonamiento generativo, persiste el riesgo habitual.
+- Sesgos conocidos: no disponibles en la informacion proporcionada.
+- Idiomas soportados: no disponibles; no se confirma cobertura multilingue mas alla del modelo base.
+- Licencia: Apache 2.0 con enlace a la licencia de Gemma 4 de Google; conviene revisar `LICENSE`, `NOTICE` y `BASE_MODEL_CARD.md` antes de uso comercial, ya que los pesos fueron modificados respecto al original.
+- Requisitos de memoria elevados en BF16 (mas de 60 GB en la practica) y ausencia de cuantizaciones oficiales, lo que limita el despliegue en hardware consumer.
+- Los benchmarks del modelo original en su model card no describen este fine-tune.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/krystofmitka/gemma-4-26B-A4B-effort-checkpoint167
+- Hugging Face: https://huggingface.co/krystofmitka/gemma-4-26B-A4B-effort-checkpoint167
 - Modelo base: https://huggingface.co/google/gemma-4-26B-A4B-it
 - Licencia de Gemma 4: https://ai.google.dev/gemma/docs/gemma_4_license
+- Repositorio del autor (archivos incluidos): `effort_presets.json`, `examples/effort_25.json`, `examples/effort_50.json`, `examples/effort_75.json`, `examples/effort_100.json`, `checkpoint_metadata.json`, `weights_manifest.json`, `LICENSE`, `NOTICE`, `BASE_MODEL_CARD.md`

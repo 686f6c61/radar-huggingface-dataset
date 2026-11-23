@@ -2,91 +2,93 @@
 
 ## Resumen
 
-Qwen3.8-Flash-Next-TR3-G-GGUF es una cuantización experimental del modelo Qwen3.8-Flash-Next, publicado por el usuario Ternii (editor: Wai Chung) bajo el esquema propietario TR Quantisation. Se trata de un transformer de tipo mixture-of-experts (MoE) de aproximadamente 180.000 millones de parámetros totales, de los cuales unos 6.000 millones se activan por token según el desglose de Qwen, más 51.000 millones correspondientes a una tabla de embeddings n-gram y 4.000 millones de una cabeza MTP. El modelo base lo desarrolla el equipo Qwen y se distribuye bajo la licencia Qwen Community 1.0.
+Qwen3.8-Flash-Next-TR3-G-GGUF es una cuantización experimental del modelo Qwen3.8-Flash-Next de Qwen, publicada por el usuario Ternii (Wai Chung) bajo el esquema denominado TR Quantisation. Se trata de un transformer de tipo Mixture-of-Experts de aproximadamente 180.000 millones de parámetros totales (125B con 6B activados según el desglose de Qwen, más 51B de tabla de embeddings n-gram y 4B de MTP), empaquetado en formato GGUF para su ejecución en llama.cpp sobre Apple Silicon. La particularidad técnica es que las capas lineales y los expertos enrutados se almacenan a 3 trits por peso (27 niveles, con una escala de 16 bits por grupo de 128 pesos), mientras que la tabla de embeddings n-gram se redondea a valores de 3 trits y se guarda en un contenedor Q5_0.
 
-La particularidad de esta ficha es el método de compresión: los pesos de las capas lineales y de los expertos enrutados se almacenan a 3 trits por peso (27 niveles, con una escala de 16 bits por grupo de 128 pesos), la tabla de embeddings n-gram se redondea a valores de 3 trits y se guarda en un contenedor Q5_0, y los pesos de hiperconexión se mantienen a 8 bits. Todo ello se empaqueta en formato GGUF para llama.cpp, sin reentrenamiento.
+El modelo base resuelve generación de texto conversacional y razonamiento, y esta variante busca hacer viable su inferencia en Macs de memoria unificada limitada manteniendo los expertos en el SSD detrás de una caché fija, en lugar de requerir la VRAM completa. Es relevante ahora porque demuestra una vía de cuantización extrema (ternaria) sobre arquitecturas MoE de gran tamaño, aunque con un coste importante en portabilidad: requiere un fork parcheado de llama.cpp que introduce el tipo de tensor `TQ27_128`, inexistente en el upstream, por lo que las compilaciones estándar, LM Studio y Ollama no pueden cargarlo.
 
-El resultado es un artefacto de 114,3 GB que, según el autor, puede ejecutarse en Macs desde 16 GB de RAM manteniendo los expertos en el SSD tras una caché fija. Es importante subrayar que requiere un fork parcheado de llama.cpp: el tipo de tensor `TQ27_128` no existe en la versión upstream, por lo que las compilaciones estándar, LM Studio y Ollama no pueden cargarlo. Además, solo soporta Metal (Apple Silicon); CUDA no está contemplado.
+La información disponible es limitada: el autor solo documenta el idioma inglés, no publica benchmarks de precisión frente al modelo base y advierte que las velocidades medidas se obtuvieron emulando tamaños de memoria en un único Apple M5 Max de 128 GB, sin haber probado equipos reales de 16, 24, 32, 48 o 64 GB.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer mixture-of-experts (MoE) con tabla de embeddings n-gram e hiperconexiones |
-| Parametros totales | 176.943.899.520 (~180B; desglose: ~125B con 6B activados, 51B de embeddings n-gram, 4B de MTP) |
-| Parametros activos | ~6B por token (según desglose del autor) |
-| Longitud de contexto | 4.096 tokens en los ejemplos de ejecución del autor (no se especifica el máximo del modelo base) |
-| Tipos de cuantizacion | TR3-G: 3 trits por peso (27 niveles) en capas lineales y expertos enrutados, escala de 16 bits por grupo de 128 pesos; embeddings n-gram en Q5_0; hiperconexiones a 8 bits |
+| Arquitectura | Transformer Mixture-of-Experts (MoE) con tabla de embeddings n-gram y cabeza MTP |
+| Parametros totales | 176.943.899.520 (~180B; desglose del autor: 125B con 6B activados + 51B n-gram + 4B MTP) |
+| Parametros activos | 6B (según el desglose de Qwen para el modelo base) |
+| Longitud de contexto | No disponible como especificación oficial; los ejemplos y mediciones usan 4096 tokens |
+| Tipos de cuantizacion | TR3-G: 3 trits por peso (27 niveles, escala de 16 bits por grupo de 128 pesos) en capas lineales y expertos enrutados; embeddings n-gram a 3 trits en contenedor Q5_0; pesos de hiperconexión a 8 bits |
 | Idiomas soportados | Inglés (según la model card y los tags) |
-| Licencia | Qwen Community License 1.0 |
-| Formato de pesos | GGUF (10 shards), tipo de tensor propietario `TQ27_128` |
+| Licencia | qwen-community-1.0 (Qwen Community License 1.0) |
+| Formato de pesos | GGUF (10 shards; tipo de tensor propietario `TQ27_128`) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es un transformer MoE con atención estándar y mecanismo de mezcla de expertos, complementado por una tabla de embeddings n-gram de gran tamaño (51B parámetros) y una cabeza MTP (multi-token prediction) de 4B. Esta cuantización no reentrena el modelo: parte de los pesos BF16 de Qwen y aplica calibración GPTQ para obtener los códigos de 3 trits, que luego se empaquetan en GGUF. Los datasets listados en los tags (OpenCodeInstruct, hendrycks_math, gsm8k, oasst2) corresponden presumiblemente al material de calibración, no a un entrenamiento adicional.
+El modelo base Qwen3.8-Flash-Next es un transformer de mezcla de expertos con aproximadamente 180B de parámetros totales, de los cuales 6B se activan por token según el desglose de Qwen. Incluye una tabla de embeddings n-gram de 51B parámetros y una cabeza MTP (multi-token prediction) de 4B. Esta variante TR3-G elimina la cabeza MTP y el codificador de visión: es un modelo exclusivamente de texto. La cuantización no implica reentrenamiento: se parte de los pesos BF16 de Qwen y se aplica TR Quantisation con calibración GPTQ (el sufijo -G), reduciendo las capas lineales y los expertos enrutados a 3 trits con una escala de 16 bits por cada grupo de 128 pesos.
 
-La innovación técnica principal es el esquema TR Quantisation, que reduce cada peso lineal a 27 niveles discretos y mantiene los expertos enrutados en SSD mediante una caché configurable (`LLAMA_MOE_CACHE_MIB`). El runtime es un patch series sobre llama.cpp en el commit `ff5a233`, con fusions de decodificación específicas para este modelo (`GGML_METAL_OPT_GDNPREP` y `GGML_METAL_OPT_NGATED`). No se dispone de información sobre el número de tokens de entrenamiento del modelo base ni sobre si se aplicó RLHF o DPO en su desarrollo original.
+El autor indica que el modelo se construyó desde los pesos BF16 de Qwen y no deriva de ningún checkpoint de NVIDIA. No se documentan en la información disponible el número de tokens de entrenamiento, la composición del dataset ni si hubo RLHF o DPO en el modelo base; los datasets listados en la model card (nvidia/OpenCodeInstruct, EleutherAI/hendrycks_math, openai/gsm8k, OpenAssistant/oasst2) aparecen como metadatos del repositorio, no como datos de entrenamiento de esta cuantización. La innovación técnica destacable es el esquema de cuantización ternaria con caché de expertos en SSD y dos fusiones de decodificación específicas para Metal (`GGML_METAL_OPT_GDNPREP` y `GGML_METAL_OPT_NGATED`).
 
 ## Capacidades
 
-- Generación de texto conversacional en inglés, con modo "thinking" activado por defecto en llama.cpp con `--jinja`.
-- Razonamiento matemático: los ejemplos de velocidad del autor usan preguntas de GSM8K, lo que sugiere competencia en aritmética de varios pasos.
-- Generación de código: el dataset de calibración OpenCodeInstruct apunta a este dominio, aunque no se documentan benchmarks específicos.
-- Razonamiento multi-paso: la presencia de una cabeza MTP en el modelo base indica soporte para predicción de múltiples tokens, aunque esta cuantización no incluye dicha cabeza ("no MTP head").
+- Generación de texto conversacional multi-turno en inglés.
+- Razonamiento con modo "thinking" activado por defecto con `--jinja`; se puede desactivar con `--reasoning off`, con `"chat_template_kwargs": {"enable_thinking": false}` o aumentando `max_tokens`.
+- Capacidad de razonamiento matemático y resolución de problemas tipo GSM8K, usada por el autor en sus pruebas de velocidad.
+- Generación de código, inferida de los datasets listados en los metadatos del repositorio (no verificada en la model card).
+- No incluye visión: el codificador visual ha sido eliminado.
+- No incluye cabeza MTP: la predicción multi-token del modelo base no está disponible.
+- Soporte de tool calling y function calling: no disponible en la información proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no documentado en la información proporcionada.
 - Capacidades multilingües: limitadas al inglés según la model card.
-- Sin visión ni audio: es un modelo exclusivamente de texto ("no vision encoder").
 
 ## Casos de uso
 
-- Experimentación con cuantización extrema en Apple Silicon: investigadores que quieran evaluar el impacto de 3 trits por peso en un MoE de ~180B pueden ejecutar este GGUF en un Mac de 32-64 GB con el fork parcheado, algo imposible con los pesos BF16.
-- Inferencia local de un MoE grande en hardware de consumo: con una caché de expertos de 13.501 MiB, el autor reporta 10,3 tokens/s en un M5 Max emulando 32-48 GB, lo que permite prototipado interactivo sin GPU dedicada.
-- Evaluación de calidad de cuantizaciones ternarias: comparar las respuestas de TR3-G frente al modelo base o a la variante TR2.57-G (vLLM) para medir la degradación introducida por la compresión.
-- Docencia y demostraciones de arquitecturas MoE: el desglose de parámetros (125B + 51B + 4B) y la separación de expertos en SSD ofrecen un caso práctico para explicar enrutamiento y gestión de memoria.
-- Procesamiento por lotes de preguntas cortas en local: con `enable_thinking: false` y contexto de 4k, el servidor puede responder consultas de tipo GSM8K a velocidad moderada en un Mac de gama alta.
-- Investigación sobre decodificación especulativa y fusions Metal: el patch series incluye optimizaciones (`GGML_METAL_OPT_GDNPREP`, `GGML_METAL_OPT_NGATED`) que pueden servir de base para estudiar el rendimiento de kernels Metal en MoE cuantizados.
+- Inferencia local en Apple Silicon con memoria unificada limitada: el modelo mantiene los expertos en el SSD detrás de una caché configurable (`LLAMA_MOE_CACHE_MIB`), lo que permite ejecutarlo en Macs desde 16 GB con el ajuste de caché de 5900 MiB, a costa de velocidades bajas en los equipos más pequeños.
+- Experimentación con cuantización ternaria: útil para investigadores que quieran evaluar el impacto de 3 trits por peso en un MoE de ~180B frente a cuantizaciones de 4 u 8 bits, usando el fork `tritq-vllm` y el tipo de tensor `TQ27_128`.
+- Servicio de chat de un solo usuario en local: el autor mide con `-np 1` y una sola secuencia, por lo que el escenario realista es un servidor `llama-server` monousuario con contexto de 4096 tokens.
+- Pruebas de razonamiento matemático en local: el autor emplea preguntas de GSM8K con thinking desactivado y hasta 512 tokens de respuesta para medir velocidad de decodificación.
+- Validación de pipelines de cuantización: el repo sirve como referencia para probar la cadena GPTQ + TR Quantisation + empaquetado GGUF sobre pesos BF16 de Qwen.
+- Evaluación de latencia y throughput en Metal: útil para medir el rendimiento de decodificación con fusiones específicas (`GGML_METAL_OPT_GDNPREP`, `GGML_METAL_OPT_NGATED`) en un M5 Max.
+- No es adecuado para despliegues en producción multiusuario ni en GPU CUDA: el runtime solo soporta Metal y el autor no ha validado el binario Linux arm64 con este modelo.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks de calidad (MMLU, HumanEval, GSM8K) en la información disponible. El autor solo reporta métricas de velocidad y memoria en un Apple M5 Max de 128 GB, emulando tamaños menores mediante el límite de caché:
+No se han publicado resultados de benchmarks de precisión (MMLU, HumanEval, GSM8K, etc.) en la información disponible. El autor solo reporta mediciones de velocidad de decodificación (tokens/s) y memoria cableada en un Apple M5 Max de 128 GB emulando tamaños menores mediante el límite de caché de expertos, sin probar equipos reales de 16, 24, 32, 48 o 64 GB. Los valores concretos de tokens/s no se incluyen en el extracto disponible de la model card.
 
-| Memoria del Mac | Caché de expertos (MiB) | Velocidad servidor (tokens/s, GSM8K) | Velocidad replay (tokens/s) | Memoria wired añadida (estable / pico) |
-|---|---|---|---|---|
-| 64 GB o más | 35.000 | 24,6 (una ejecución) | no ejecutado | 40,3 GB (42,3) |
-| 32-48 GB | 13.501 | 10,3 (10,32 / 10,40) | 13,75 (una pasada) | 18,0-18,3 GB (20,1) |
-| 24 GB | 6.750 | no disponible en el extracto | no disponible | no disponible |
-| 16 GB | 5.900 | no disponible en el extracto | no disponible | no disponible |
+## Requisitos de hardware
 
-El autor advierte que ninguna Mac real de 16, 24, 32, 48 o 64 GB ha ejecutado el modelo: todas las cifras provienen de emulación por límite de caché en una máquina de 128 GB, por lo que un equipo más pequeño leerá el SSD con más frecuencia y obtendrá velocidades inferiores.
+- VRAM/memoria: el repo ocupa 117,6 GB en disco (10 shards GGUF). El autor propone tamaños de caché de expertos de 35000 MiB (64 GB o más), 13501 MiB (32-48 GB), 6750 MiB (24 GB) y 5900 MiB (16 GB) mediante `LLAMA_MOE_CACHE_MIB`.
+- GPU recomendadas: Apple Silicon con Metal; el autor midió en un Apple M5 Max de 128 GB. No hay soporte CUDA.
+- ¿Cabe en GPU de consumo? Solo en Macs con memoria unificada, y con los expertos en SSD; no se ha validado en ninguna GPU discreta.
+- Opciones de despliegue: exclusivamente el fork parcheado de llama.cpp del autor (`github.com/ternii-ai/tritq-vllm/tree/main/runtime/llama.cpp`), con binarios precompilados `llama.cpp-tr-b11721` para macOS arm64. No funciona en llama.cpp upstream, LM Studio ni Ollama.
+- Latencia y throughput: no disponibles en cifras en la información proporcionada; el autor advierte que serán menores en Macs reales de menor tamaño por lectura más frecuente del SSD y chips y discos más lentos.
+- Nota de memoria del servidor: con `--cache-ram` activado (por defecto hasta 8 GiB), el footprint del servidor creció unos 235 MiB por petición hasta llenar la caché; con una caché de expertos de 38.254 MiB el proceso alcanzó 50,0 GB en el Mac de 128 GB. El autor recomienda `--cache-ram 0`.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Ternii/Qwen3.8-Flash-Next-TR3-G-GGUF | ~180B totales, ~6B activos | 4.096 en ejemplos | 3 trits (TR3-G), GGUF | Qwen Community 1.0 | Requiere fork de llama.cpp, solo Metal |
-| Ternii/Qwen3.8-Flash-Next-TR2.57-G | ~180B totales, ~6B activos | no disponible | 2,57 trits, formato vLLM | Qwen Community 1.0 | vLLM (no compatible con el runtime Mac) |
-| agentionai/Qwen3.8-Flash-Next-Gyro-Coder-GGUF | 125B MoE | no disponible | GGUF (19,9 GiB en GPU) | no disponible | RTX 3090, 4090, 7900 XTX |
-| agentionai/Qwen3.8-Flash-Next-Gyro-GGUF | 125B MoE | no disponible | GGUF | no disponible | no disponible |
+| Ternii/Qwen3.8-Flash-Next-TR3-G-GGUF | ~180B totales, 6B activos | No disponible (ejemplos a 4096) | 3 trits (TR3-G) | qwen-community-1.0 | GGUF con fork de llama.cpp; solo Metal |
+| Ternii/Qwen3.8-Flash-Next-TR2.57-G | No disponible | No disponible | 2 trits en expertos menos usados | qwen-community-1.0 | Orientado a vLLM; el runtime Mac no lo soporta aún |
+| Qwen/Qwen3.8-Flash-Next (base) | ~180B totales, 6B activos | No disponible | BF16 | qwen-community-1.0 | Pesos originales de Qwen |
+
+El autor advierte explícitamente que TR3-G y TR2.57-G no son el mismo fichero y que los resultados no son transferibles entre ambos. No se dispone de datos de benchmarks para establecer comparaciones de rendimiento con alternativas.
 
 ## Limitaciones y advertencias
 
-- Requiere un fork parcheado de llama.cpp: el tipo `TQ27_128` no existe en upstream, por lo que LM Studio, Ollama y compilaciones estándar no pueden cargarlo.
-- Solo soporta Metal (Apple Silicon); CUDA no está implementado.
-- Estado experimental: ninguna Mac real de 16, 24, 32, 48 o 64 GB ha ejecutado el modelo; las velocidades publicadas son emulaciones.
-- Los resultados no son transferibles a la variante TR2.57-G para vLLM, que usa 2 trits en expertos poco usados y un runtime distinto.
-- El modo thinking está activado por defecto con `--jinja`; sin desactivarlo, las respuestas cortas pueden truncarse o alargarse innecesariamente.
-- La caché de prompt de llama-server (`--cache-ram`) debe desactivarse (`--cache-ram 0`) para evitar crecimiento de memoria de ~235 MiB por petición hasta 8 GiB; el coste es reprocesar prefijos repetidos.
-- Solo inglés: no se documentan capacidades multilingües.
-- Sin cabeza MTP ni codificador de visión en esta cuantización.
-- Riesgo de alucinación inherente al modelo base, agravado potencialmente por la cuantización ternaria; no se han publicado evaluaciones de calidad que lo cuantifiquen.
-- La licencia Qwen Community 1.0 puede imponer restricciones al uso comercial; debe revisarse el archivo LICENSE del repositorio.
-- El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, lo que indica ausencia de validación comunitaria.
+- Modelo marcado como experimental por el propio autor; no hay validación en equipos reales de 16, 24, 32, 48 o 64 GB, solo emulación en un M5 Max de 128 GB.
+- Requiere un fork parcheado de llama.cpp con el tipo de tensor `TQ27_128`; no carga en compilaciones estándar, LM Studio ni Ollama.
+- Solo soporta Metal (Apple Silicon); CUDA no está soportado y el binario Linux arm64 del release no fue probado con este modelo.
+- Solo inglés; sin capacidades de visión ni cabeza MTP.
+- No se han publicado evaluaciones de precisión frente al modelo base, por lo que se desconoce la degradación introducida por la cuantización a 3 trits.
+- Riesgo de alucinación inherente a los modelos de lenguaje; no cuantificado en la información disponible.
+- Sesgos conocidos: no documentados en la información proporcionada.
+- El rendimiento en Macs pequeños será inferior al reportado por lectura más frecuente del SSD y hardware más lento.
+- El servidor puede consumir hasta 8 GiB adicionales si se deja activada la caché de prompts (`--cache-ram`); el autor recomienda desactivarla, con el coste de reprocesar prefijos repetidos.
+- Licencia Qwen Community License 1.0: es necesario revisar sus términos para uso comercial; la model card la etiqueta como "other" con nombre `qwen-community-1.0`.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/Ternii/Qwen3.8-Flash-Next-TR3-G-GGUF
+- Modelo en Hugging Face: https://huggingface.co/Ternii/Qwen3.8-Flash-Next-TR3-G-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
-- Runtime parcheado: https://github.com/ternii-ai/tritq-vllm/tree/main/runtime/llama.cpp
-- Repositorio del proyecto: https://github.com/ternii-ai/tritq-vllm
-- Variante vLLM TR2.57-G: https://huggingface.co/Ternii/Qwen3.8-Flash-Next-TR2.57-G
-- Cuantización alternativa Gyro-Coder: https://huggingface.co/agentionai/Qwen3.8-Flash-Next-Gyro-Coder-GGUF
-- Cuantización alternativa Gyro: https://huggingface.co/agentionai/Qwen3.8-Flash-Next-Gyro-GGUF
+- Runtime parcheado (fork de llama.cpp): https://github.com/ternii-ai/tritq-vllm/tree/main/runtime/llama.cpp
+- Binarios precompilados: https://github.com/ternii-ai/tritq-vllm/releases/tag/llama.cpp-tr-b11721
+- Repositorio tritq-vllm: https://github.com/ternii-ai/tritq-vllm

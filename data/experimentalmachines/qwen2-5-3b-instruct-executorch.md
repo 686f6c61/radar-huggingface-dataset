@@ -2,105 +2,92 @@
 
 ## Resumen
 
-Este repositorio no es un modelo entrenado desde cero, sino un conjunto de exportaciones a ExecuTorch de Qwen/Qwen2.5-3B-Instruct (revision `aa8e72537993`), publicadas por el usuario experimentalmachines para ejecucion en dispositivo (on-device) sobre Android y cualquier runtime ExecuTorch 1.4.0. El objetivo es claro: convertir un modelo de 3.000 millones de parametros en artefactos `.pte` cuantizados que quepan en la memoria de un telefono moderno, sin depender de servidores ni de conexion de red. Se distribuyen cuatro ficheros XNNPACK para CPU arm64, uno por cada ventana de contexto (2k, 4k, 8k y 16k tokens), con un peso de entre 2,05 GB y 2,08 GB cada uno.
+Qwen2.5-3B-Instruct-ExecuTorch es una exportación del modelo Qwen2.5-3B-Instruct de Alibaba Qwen, preparada por el usuario experimentalmachines para inferencia en dispositivo (on-device) mediante el runtime ExecuTorch 1.5.1. El objetivo no es ofrecer un modelo nuevo, sino empaquetar un transformer denso de 3.000 millones de parámetros en formato `.pte` ejecutable en dispositivos Android arm64, con dos backends alternativos: XNNPACK sobre CPU y Vulkan sobre GPU. El repositorio incluye diez ficheros que cubren ventanas de contexto fijas de 2k, 4k, 8k, 16k y 32k tokens.
 
-La relevancia practica esta en el formato: la ventana de contexto esta fijada dentro de cada fichero, porque el runtime reserva la cache KV completa en el momento de la carga. Eso obliga a elegir de antemano el compromiso entre contexto disponible y memoria consumida, con un coste de 73.728 bytes por token en fp32 (150,99 MB para 2.048 tokens y 1,21 GB para 16.384 tokens). El autor incluye en cada carpeta un `config.json` con un campo `fits_phone_budget` que estima el encaje contra un presupuesto de 5 GB.
+La relevancia de esta ficha es práctica: demuestra cómo llevar un modelo de instrucciones de tamaño medio a un teléfono móvil con cuantización de pesos a 4 bits y activaciones dinámicas de 8 bits, manteniendo la ventana de contexto completa que el usuario elija. El coste es que la ventana queda fijada en tiempo de exportación y la caché KV se reserva entera al cargar el modelo, por lo que la elección del fichero condiciona el consumo de memoria del dispositivo.
 
-El modelo subyacente es un transformer decoder-only de la familia Qwen2.5 en su variante Instruct, con licencia qwen-research. El repo acumula 0 descargas y 0 likes en el momento de la consulta, y la busqueda web realizada no devolvio ningun material relacionado con el modelo (los resultados obtenidos eran irrelevantes). Todos los datos de rendimiento mas alla del smoke test incluido estan, por tanto, sin publicar.
+El modelo base, Qwen2.5-3B-Instruct, es un transformer decoder-only con licencia qwen-research, orientado a generación de texto, razonamiento e instrucciones en múltiples idiomas. Esta exportación hereda esas capacidades pero no añade ninguna mejora de calidad: es una conversión de formato y precisión.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (modelo base Qwen2.5-3B-Instruct); artefacto de despliegue exportado con ExecuTorch 1.4.0 `export_llm` |
-| Parametros totales | 3.000 millones nominales (segun el nombre del modelo base); desglose exacto no disponible |
-| Parametros activos | No aplica: no es un modelo de mezcla de expertos (MoE) |
-| Longitud de contexto | 2.048, 4.096, 8.192 o 16.384 tokens, fijada en cada fichero `.pte`. La model card indica que se exporto de 2k a 32k, pero solo se tabulan ficheros hasta 16k |
-| Tipos de cuantizacion | 8da4w: activaciones int8 dinamicas, pesos de 4 bits en grupos de 32, embeddings int8 per-channel |
-| Idiomas soportados | No disponible en la informacion proporcionada (heredado del modelo base) |
-| Licencia | qwen-research (licencia de investigacion, derivada de Qwen/Qwen2.5-3B-Instruct) |
-| Formato de pesos | `.pte` (ExecuTorch); tokenizer en `tokenizer.json` copiado sin cambios del repo original |
-| Backend | XNNPACK con operadores extendidos, CPU arm64 |
-| Tamano del repo | 8,3 GB |
-| Tamano por fichero | 2,05 GB (2k), 2,06 GB (4k), 2,07 GB (8k), 2,08 GB (16k) |
-| Cache KV | fp32, 73.728 bytes por token, reservada completa al cargar |
-| Chunk de prefill | 2.048 |
-| Libreria | executorch |
+| Arquitectura | Transformer decoder-only denso (Qwen2.5) |
+| Parámetros totales | 3.000 millones (modelo base) |
+| Parámetros activos | no aplica (no es MoE) |
+| Longitud de contexto | 2.048, 4.096, 8.192, 16.384 o 32.768 tokens, según el fichero `.pte` elegido |
+| Tipos de cuantización | Pesos a 4 bits en grupos de 32 (GPTQ), activaciones dinámicas a 8 bits, embeddings int8 por canal, caché KV en fp32 |
+| Idiomas soportados | no disponible en la información proporcionada |
+| Licencia | qwen-research (heredada del modelo base) |
+| Formato de pesos | `.pte` (ExecuTorch 1.5.1); tokenizer en `tokenizer.json` |
 
 ## Arquitectura y entrenamiento
 
-El repositorio no documenta entrenamiento alguno: es una exportacion cuantizada, relacionada con el modelo base mediante `base_model_relation: quantized`. No hay informacion sobre el numero de tokens de entrenamiento, la composicion del dataset ni fases de RLHF o DPO, porque ese detalle pertenece a la model card original de Qwen2.5-3B-Instruct y no se reproduce aqui. Todos esos datos deben considerarse "no disponibles" en el material proporcionado.
+La arquitectura subyacente es la del Qwen2.5-3B-Instruct original: un transformer decoder-only denso con atención causal estándar y 3.000 millones de parámetros. Esta exportación no modifica la topología, solo el grafo y la precisión numérica. El proceso de conversión usa `export_llm` de ExecuTorch 1.5.1 con prefill en fragmentos de 2.048 tokens, pesos cuantizados a 4 bits en grupos de 32 mediante GPTQ, activaciones dinámicas de 8 bits y embeddings int8 por canal. La caché KV se mantiene en fp32, lo que explica su coste de 73.728 bytes por token.
 
-La innovacion tecnica relevante esta en el pipeline de exportacion. Se uso la herramienta `export_llm` de ExecuTorch 1.4.0 con cuantizacion 8da4w (activaciones de 8 bits dinamicas y pesos de 4 bits agrupados de 32 en 32), embeddings int8 per-channel, backend XNNPACK con operadores extendidos, chunk de prefill de 2.048 tokens y cache KV en fp32. La consecuencia arquitectonica mas importante es que la ventana de contexto queda congelada en el grafo: no es un parametro ajustable en tiempo de ejecucion, sino una decision de compilacion. El tokenizador se copia sin modificar desde el repositorio fuente, lo que garantiza compatibilidad exacta de vocabulario con Qwen2.5-3B-Instruct. Cada fichero va acompanado de un `export-report-<ventana>.json` con el registro completo de la exportacion y de un `config.json` con los metadatos que reporta el propio `.pte`.
+Los detalles de entrenamiento del modelo base (número de tokens, composición del dataset, fases de RLHF o DPO) no se incluyen en la información proporcionada. La model card solo documenta el proceso de exportación y las métricas de memoria, no el preentrenamiento ni el ajuste de instrucciones del original.
 
 ## Capacidades
 
-- Generacion de texto conversacional en ingles y otros idiomas del modelo base, aunque la lista concreta de idiomas no consta en la informacion disponible.
-- Instrucciones y formato de chat: al ser la variante Instruct del modelo base, conserva el comportamiento de asistente, modulado por la cuantizacion de 4 bits.
-- Inferencia completamente local y offline en dispositivos Android arm64, sin llamadas a red.
-- Integracion con la aplicacion Android openweights o con cualquier runtime ExecuTorch 1.4.0 que acepte ficheros `.pte`.
-- Seleccion de ventana de contexto en tiempo de despliegue: se elige el fichero de 2k, 4k, 8k o 16k segun la memoria disponible en el dispositivo.
-- Capacidades multivariante por backend: todos los ficheros comparten el mismo backend XNNPACK, por lo que el comportamiento funcional es equivalente y solo cambia el presupuesto de memoria.
-- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
-- Capacidades de vision, audio o modo de pensamiento explicito: no disponibles; el pipeline declarado es unicamente `text-generation`.
+- Generación de texto e instrucciones en el formato conversacional de Qwen2.5-Instruct.
+- Razonamiento y respuesta a preguntas de propósito general, heredados del modelo base.
+- Generación de código y matemáticas a nivel del modelo base de 3B.
+- Ejecución local en Android arm64 sin conexión a red, mediante ExecuTorch.
+- Dos rutas de cómputo: XNNPACK en CPU (cualquier arm64) y Vulkan en GPU (cualquier arm64 con soporte Vulkan).
+- Ventana de contexto seleccionable entre 2k y 32k tokens en el momento de elegir el fichero.
+- Soporte de tool calling, agentes o modos de pensamiento: no disponible en la información proporcionada para esta exportación.
 
 ## Casos de uso
 
-- Asistentes conversacionales offline en Android: el fichero de 4k (2,06 GB) permite mantener un historial de conversacion de varios turnos sin conexion, con coste de memoria acotado y predecible.
-- Clasificacion y extraccion de informacion en campo: aplicaciones de inspeccion, reparto o trabajo de campo donde no hay cobertura; el modelo local puede resumir notas o extraer campos estructurados de texto dictado.
-- Resumen de documentos cortos en el propio dispositivo: con la variante de 8k se pueden procesar articulos o informes de varias paginas sin enviar datos a un tercero, lo que simplifica el cumplimiento de normativa de privacidad.
-- Procesamiento de datos sensibles sujetos a RGPD: al no salir la informacion del terminal, se elimina la transferencia a servidores externos y se reduce la superficie de riesgo en el tratamiento de datos personales.
-- Prototipado e investigacion en IA on-device: el repositorio sirve como referencia reproducible de un pipeline `export_llm` completo, con informes de exportacion y metadatos por ventana, util para comparar configuraciones de cuantizacion.
-- Aplicaciones educativas o de accesibilidad sin coste de inferencia recurrente: el modelo se ejecuta con recursos del propio dispositivo, lo que evita facturas por token y funciona en entornos con conectividad intermitente.
-- Demos y pruebas de concepto de LLM embebido: el smoke test incluido (respuesta "Paris") permite verificar rapidamente que el runtime y el fichero `.pte` cargan correctamente antes de integrar en una aplicacion mayor.
-- No se recomienda su uso como backend de servidor: para eso existe el modelo original en safetensors, con mayor precision y contexto configurable.
+- Asistentes de texto sin conexión en Android: el modelo se integra mediante la app openweights o cualquier runtime ExecuTorch 1.5.1, y responde a peticiones conversacionales sin enviar datos a la nube. La variante de 2k tokens (2,05 GB) es la más adecuada para dispositivos con poca memoria.
+- Procesamiento de documentos largos en el propio teléfono: con la variante de 32k tokens se pueden resumir o extraer datos de contratos, correos o informes sin salir del dispositivo, a costa de reservar 2,4 GB solo para la caché KV.
+- Clasificación y etiquetado de texto en campo: aplicaciones de inspección, logística o trabajo de campo donde no hay conectividad pueden usar la variante de 4k sobre XNNPACK para categorizar incidencias o generar informes breves.
+- Privacidad en el sector sanitario o legal: al ejecutarse localmente, el modelo permite redactar borradores o resumir notas sensibles sin que el contenido abandone el dispositivo, cumpliendo requisitos de minimización de datos.
+- Prototipado rápido de funciones de IA en apps Android: los desarrolladores pueden validar flujos de chat o resumen con un fichero `.pte` de 2 GB antes de invertir en infraestructura de servidor.
+- Demostraciones y pruebas de concepto en ferias o entornos aislados: el modelo funciona en un teléfono arm64 estándar sin dependencias de red, lo que simplifica la puesta en escena.
+- Evaluación comparativa de backends: el repositorio ofrece los mismos pesos en XNNPACK y Vulkan, lo que permite medir latencia y consumo energético de CPU frente a GPU en el mismo dispositivo.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El unico dato de validacion aportado es un smoke test superado en las cuatro variantes, que devuelve la respuesta "Paris" a una pregunta no especificada en la model card. No hay cifras de MMLU, HumanEval, GSM8K, latencia ni throughput.
+No se han publicado resultados de benchmarks en la información disponible. La model card únicamente documenta una prueba de humo (smoke test) que devuelve "Paris" para los cinco ficheros XNNPACK; los ficheros Vulkan solo han sido verificados estructuralmente porque el entorno de exportación no disponía de runtime NPU en el host. No hay datos de MMLU, HumanEval, GSM8K ni de latencia o throughput.
 
 ## Requisitos de hardware
 
-- Destino principal: CPU arm64 en dispositivos Android. No se trata de un artefacto pensado para GPU de escritorio o servidor.
-- Tamano de pesos: 2,05 GB (2k), 2,06 GB (4k), 2,07 GB (8k) y 2,08 GB (16k). El incremento entre ventanas es minimo porque el peso de los parametros es identico.
-- Cache KV adicional, reservada integra al cargar: 150,99 MB (2k), 301,99 MB (4k), 603,98 MB (8k) y 1,21 GB (16k), calculada a 73.728 bytes por token en fp32.
-- Presupuesto orientativo del autor: `fits_phone_budget` en cada `config.json` evalua el encaje contra un presupuesto de 5 GB. Con ese limite, la variante de 4k deja un margen amplio y la de 16k es la mas ajustada.
-- GPU recomendadas: no disponible. El repositorio no incluye artefactos para CUDA, Metal ni Vulkan.
-- Encaje en GPU de consumo: no aplica a estos ficheros `.pte`; para ejecucion en RTX 4090 o similar habria que usar el modelo base en otro formato, no contemplado aqui.
-- Opciones de despliegue: aplicacion Android openweights, o cualquier runtime ExecuTorch 1.4.0 con backend XNNPACK. No se mencionan vLLM, llama.cpp, Ollama ni TGI, y los ficheros `.pte` no son compatibles con ellos.
-- Latencia y throughput: no disponibles. Dependeran del SoC arm64 concreto, del numero de hilos asignados y de la ventana elegida, ya que la cache KV reservada afecta a la presion de memoria y al comportamiento del asignador.
+- Tamaño de los ficheros: 2,05-2,12 GB en XNNPACK (CPU) y 2,63-2,73 GB en Vulkan (GPU), según la ventana.
+- Memoria adicional por caché KV en fp32: 73.728 bytes por token, reservados íntegros al cargar. Eso supone 150,9 MB a 2k, 302 MB a 4k, 604 MB a 8k, 1,21 GB a 16k y 2,42 GB a 32k.
+- Presupuesto de referencia del autor: 5 GB por dispositivo, con un campo `fits_phone_budget` en cada `config.json` que estima si el fichero cabe.
+- Plataforma: cualquier dispositivo Android arm64; la ruta Vulkan requiere soporte Vulkan en la GPU del dispositivo.
+- GPU de escritorio, A100, H100 o RTX 4090: no aplica, este paquete está pensado para móvil. Para servidor conviene usar el modelo base en safetensors con vLLM, TGI o llama.cpp.
+- Opciones de despliegue: runtime ExecuTorch 1.5.1 o la app openweights en Android.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
+| Modelo | Parámetros | Contexto | Formato / despliegue | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| experimentalmachines/Qwen2.5-3B-Instruct-ExecuTorch | 3.000 M (nominales) | 2k / 4k / 8k / 16k fijos por fichero | `.pte` (ExecuTorch, 8da4w) | qwen-research | Publicado, 0 descargas, 0 likes |
-| Qwen/Qwen2.5-3B-Instruct (modelo base) | 3.000 M | No disponible en el material proporcionado | safetensors | qwen-research | Repositorio de referencia del que deriva este |
-| Otras exportaciones ExecuTorch de la misma categoria | No disponible | No disponible | No disponible | No disponible | No disponible en la informacion proporcionada |
-| Alternativas de ~3B para movil (por ejemplo, familias Llama o Gemma en formato similar) | No disponible | No disponible | No disponible | No disponible | No se dispone de datos verificables en la busqueda realizada |
+| Qwen2.5-3B-Instruct-ExecuTorch (esta ficha) | 3B | 2k-32k fijo por fichero | `.pte`, ExecuTorch en Android arm64 | qwen-research | Hugging Face, 497 descargas |
+| Qwen/Qwen2.5-3B-Instruct (base) | 3B | 32.768 tokens (según modelo base) | safetensors, vLLM/TGI/llama.cpp | qwen-research | Hugging Face |
+| Qwen2.5-1.5B-Instruct | 1,5B | no disponible | safetensors y GGUF | qwen-research | Hugging Face |
+| Llama 3.2 3B Instruct | 3B | no disponible | safetensors y GGUF | Llama 3.2 Community License | Hugging Face |
 
-La busqueda web asociada no devolvio ningun resultado relevante, por lo que no es posible construir una comparativa cuantitativa con alternativas. La unica comparacion defendible es contra el propio modelo base, del que este repositorio es una derivada cuantizada: pierde precision numerica y flexibilidad de contexto, y gana portabilidad a Android.
+La comparación con alternativas on-device de otros autores no está disponible en la información proporcionada; los datos de contexto y licencia de los modelos de la tabla distintos del base se indican como no disponibles para no inventar cifras.
 
 ## Limitaciones y advertencias
 
-- La cuantizacion 8da4w (pesos de 4 bits en grupos de 32) degrada la calidad respecto al modelo base en fp16/bf16. No se han publicado mediciones de esa degradacion.
-- La ventana de contexto esta fijada en compilacion. No se puede ampliar en tiempo de ejecucion: si se necesita mas contexto hay que cargar otro fichero `.pte`, con el coste de memoria correspondiente.
-- La cache KV se reserva completa al cargar, incluso si la conversacion es corta. En la variante de 16k esto supone 1,21 GB retenidos de forma permanente durante la sesion.
-- Riesgo de alucinacion: inherente a un modelo instruct de 3.000 millones de parametros, y presumiblemente agravado por la cuantizacion agresiva de pesos. No hay evaluaciones publicadas que lo cuantifiquen.
-- Sesgos conocidos: no disponibles. La model card no incluye ninguna seccion de sesgos, evaluaciones de seguridad ni limitaciones de idioma.
-- Idiomas soportados: no disponibles. No se puede confirmar el soporte de castellano ni de otras lenguas distintas del ingles a partir de la informacion proporcionada.
-- Restriccion de licencia: la licencia qwen-research es una licencia de investigacion. El uso comercial requiere revisar los terminos enlazados en el repositorio y, en su caso, obtener una licencia aparte de Qwen. No se debe asumir uso comercial libre.
-- Los ficheros originales de licencia se incluyen sin modificar, por lo que las obligaciones de atribucion del modelo base siguen vigentes.
-- El repositorio tiene 0 descargas y 0 likes, y fue creado con una diferencia de unos ocho minutos entre creacion y ultima actualizacion. No hay evidencia de uso en produccion ni de validacion por terceros.
-- No hay soporte declarado para tool calling, agentes, vision ni audio. Cualquier uso de ese tipo requeriria verificacion propia.
-- Los resultados de la busqueda web recibida no guardan relacion con el modelo y no aportan informacion adicional; no deben usarse como fuente.
+- La ventana de contexto está fijada en el fichero: no se puede ampliar en tiempo de ejecución. Hay que elegir el `.pte` con la ventana máxima que el dispositivo pueda sostener.
+- La caché KV se asigna entera al cargar, incluso si la conversación es corta; con 32k tokens son 2,42 GB adicionales a los 2,12 GB del fichero XNNPACK.
+- La cuantización a 4 bits de pesos y 8 bits de activaciones introduce degradación respecto al modelo base en tareas sensibles a precisión numérica; no se han publicado evaluaciones de calidad tras la cuantización.
+- Los ficheros Vulkan solo han pasado una verificación estructural, no una prueba funcional; su comportamiento en dispositivos reales no está validado por el autor.
+- La licencia qwen-research impone restricciones al uso comercial; conviene revisar el fichero LICENSE del modelo base antes de integrarlo en un producto.
+- Riesgo de alucinación y sesgos: no hay documentación específica en esta exportación; se heredan los del modelo base Qwen2.5-3B-Instruct.
+- Idiomas soportados: no documentados en esta ficha; el modelo base es multilingüe, pero la exportación no declara una lista cerrada.
+- El repositorio ocupa 55,7 GB porque incluye todas las variantes; para producción conviene descargar solo el fichero necesario.
+- No hay soporte declarado de tool calling, agentes ni modos de razonamiento extendido en esta exportación.
 
 ## Enlaces
 
-- Repositorio en Hugging Face: https://huggingface.co/experimentalmachines/Qwen2.5-3B-Instruct-ExecuTorch
+- Repositorio Hugging Face: https://huggingface.co/experimentalmachines/Qwen2.5-3B-Instruct-ExecuTorch
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
-- Licencia del modelo base (qwen-research): https://huggingface.co/Qwen/Qwen2.5-3B-Instruct/blob/main/LICENSE
-- Aplicacion Android openweights: https://github.com/alpharomercoma/openweights
-- Registro de la exportacion (run 1): https://github.com/ExperimentalMachines/executorch-model-exporter/actions/runs/34749025946
-- Papers, blogs o demos adicionales: no disponibles en la informacion proporcionada.
+- Licencia del modelo base: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct/blob/main/LICENSE
+- App openweights: https://github.com/alpharomercoma/openweights
+- ExecuTorch: no se proporciona enlace en la información disponible.

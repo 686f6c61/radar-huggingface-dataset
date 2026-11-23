@@ -1,121 +1,102 @@
 # mradermacher/Kronumos-GGUF
 
 ## Resumen
+Kronumos es un modelo de lenguaje de 7.615.616.512 parámetros (aproximadamente 7,6 mil millones) orientado a tareas de ingeniería de software autónoma: corrección de bugs, auto-reparación de código y operación de agentes basados en Model Context Protocol (MCP). Está construido sobre una base Qwen2 según las etiquetas de la model card, y el autor original del modelo es NadevA23 (repo `NadevA23/Kronumos`); la ficha que nos ocupa es la versión cuantizada en GGUF publicada por mradermacher.
 
-Kronumos-GGUF es un repositorio de cuantizaciones estáticas en formato GGUF generado por mradermacher a partir del modelo base NadevA23/Kronumos. No se trata de un modelo entrenado desde cero, sino de una conversión y cuantización posterior pensada para ejecución en CPU y GPU de gama de consumo mediante llama.cpp y sus derivados. El recuento real de parámetros del modelo base, según los metadatos de safetensors, es de 7.615.616.512 parámetros, lo que lo sitúa en la categoría de los modelos densos de aproximadamente 7-8 mil millones de parámetros.
+La relevancia de esta publicación es fundamentalmente práctica: mradermacher ofrece un conjunto completo de cuantizaciones estáticas (de Q2_K a f16, más IQ4_XS) que permiten ejecutar el modelo en hardware de consumo mediante llama.cpp y derivados, algo imposible con los pesos originales en safetensors. El repositorio ocupa 68,1 GB en total por acumular todas las variantes, aunque cada archivo individual va de 3,1 GB (Q2_K) a 15,3 GB (f16).
 
-La relevancia de este tipo de repositorios es práctica: permiten desplegar un modelo de ese tamaño en hardware modesto (desde Q2_K, en torno a 3 GB, hasta Q8_0, en torno a 8 GB) sin necesidad de infraestructura de servidor. El repositorio incluye doce niveles de cuantización distintos, desde IQ4_XS hasta f16, cubriendo el espectro habitual de compromisos entre calidad y consumo de memoria.
+La información pública disponible es escasa: no hay datos de benchmarks, no se detalla la longitud de contexto ni la composición del dataset de entrenamiento, y la model card del cuantizador se limita a listar los archivos generados. Las etiquetas del modelo (`dual-brain`, `rust-subcortex`, `tokenectomy`, `self-healing`, `sre`) sugieren un enfoque especializado en agentes de operaciones y reparación de código, pero no hay documentación técnica que las respalde en la información proporcionada.
 
-La información pública disponible es muy limitada. La model card del repositorio se reduce a los metadatos de la herramienta de cuantización y a la referencia al modelo original. No se documentan arquitectura concreta, longitud de contexto, idiomas soportados, licencia ni datos de entrenamiento, por lo que buena parte de las especificaciones de esta ficha quedan marcadas como no disponibles.
+## Especificaciones técnicas
 
-## Especificaciones tecnicas
-
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | no disponible (no confirmada en la informacion proporcionada) |
-| Parametros totales | 7.615.616.512 (dato de safetensors del modelo base) |
-| Parametros activos | no disponible (no se ha confirmado que sea MoE) |
+| Arquitectura | Transformer decoder-only, base Qwen2 (según etiqueta `qwen2`) |
+| Parámetros totales | 7.615.616.512 (≈7,6 B) |
+| Parámetros activos | no disponible (no consta que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | f16 (x-f16), Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q4_K_M, Q4_K_S, IQ4_XS, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K |
-| Idiomas soportados | no disponible |
-| Licencia | no disponible |
-| Formato de pesos | GGUF (cuantizaciones estaticas); el modelo base se distribuye en safetensors |
+| Tipos de cuantización | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, f16 |
+| Idiomas soportados | inglés (etiqueta `en`; la model card no detalla otros) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (cuantizaciones estáticas); el modelo base en safetensors |
 | Modelo base | NadevA23/Kronumos |
-| Herramienta de cuantizacion | llama.cpp (quantize_version: 2, output_tensor_quantised: 1, convert_type: hf) |
-| Tamano del repositorio | 63,9 GB (suma de todos los ficheros de cuantizacion) |
-| Fecha de creacion (metadatos) | 2026-09-24 |
-| Descargas / likes | 0 / 0 |
+| Cuantizador | mradermacher (método estático, `quantize_version: 2`, `output_tensor_quantised: 1`) |
+| Tamaño del repo | 68,1 GB (todas las variantes) |
+| Descargas | 449 |
+| Fecha de creación | 2026-09-24 |
 
 ## Arquitectura y entrenamiento
+La arquitectura es un transformer decoder-only derivado de Qwen2, según la etiqueta `qwen2` de la model card y el tag `unsloth`, que indica que el ajuste fino se realizó con la librería Unsloth (típicamente LoRA/QLoRA de bajo rango sobre un modelo base). El tamaño de 7,6 B parámetros encaja con la familia Qwen2-7B, aunque no se confirma explícitamente en la documentación disponible.
 
-No se dispone de informacion sobre la arquitectura del modelo base en los datos proporcionados. El unico dato estructural fiable es el recuento de parametros (7.615.616.512), coherente con un transformer denso de la familia de 7-8B, pero esto es una inferencia por tamano y no una confirmacion documentada. Tampoco se especifica si emplea atencion con ventana deslizante, atencion lineal, mezcla de expertos u otro esquema.
-
-Respecto al entrenamiento, no hay datos sobre numero de tokens, composicion del dataset, fases de ajuste (SFT, RLHF, DPO) ni tecnicas de alineacion. La model card del repositorio de cuantizacion indica unicamente que se trata de cuantizaciones estaticas del modelo NadevA23/Kronumos, con metadatos que revelan el uso del cuantizador de llama.cpp en su version 2 y que los tensores de salida tambien fueron cuantizados (output_tensor_quantised: 1), un ajuste que en la practica implica que la capa de salida y los embeddings comparten el mismo esquema de cuantizacion que el resto del modelo.
-
-La unica innovacion tecnica atribuible a este repositorio es, por tanto, el propio proceso de cuantizacion: la disponibilidad de doce variantes permite ajustar el equilibrio entre perplejidad y huella de memoria sin reentrenar nada. Las cuantizaciones K-quant (Q2_K a Q6_K) y la variante IQ4_XS (de la familia I-quant) ofrecen distintos compromisos, siendo IQ4_XS y Q4_K_M las opciones habitualmente mas equilibradas en modelos de este tamano.
+No hay información sobre el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron fases de RLHF o DPO. Las etiquetas `dual-brain` y `rust-subcortex` apuntan a una posible arquitectura o pipeline de dos componentes (posiblemente un modelo principal más un submódulo especializado en Rust), pero no hay documentación técnica que lo verifique. Tampoco se detalla ninguna innovación de inferencia como decodificación especulativa o atención lineal. El proceso de cuantización sí está documentado: cuantizaciones estáticas con `quantize_version: 2` y cuantización de tensores de salida, generadas a partir del repo original en formato Hugging Face.
 
 ## Capacidades
-
-La informacion disponible no permite verificar capacidades concretas. El unico indicio es la etiqueta `conversational` del repositorio, que sugiere un ajuste orientado a dialogo. A partir de ahi, y sin datos de evaluacion, solo cabe enumerar lo que seria esperable en un modelo denso de ~7,6B con ajuste conversacional, marcandolo explicitamente como no confirmado:
-
-- Generacion de texto y dialogo multiturno: la etiqueta `conversational` apunta a este uso, pero no hay confirmacion documentada.
-- Razonamiento y matematicas: no disponible.
-- Generacion de codigo: no disponible.
-- Soporte de tool calling / function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingues: no disponible (no se declara lista de idiomas).
-- Capacidades especiales (modo thinking, vision, audio): no disponible.
-- Modo de ajuste: no disponible; no se documenta plantilla de prompt ni tokens especiales de chat. Este punto es critico en la practica, ya que un GGUF sin plantilla de chat correctamente configurada produce respuestas degradadas.
+- Generación de texto conversacional en inglés, con especialización declarada en código.
+- Corrección de bugs y reparación automática de código (`bug-fix`, `self-healing`).
+- Operación como agente autónomo (`autonomous-agent`) con soporte declarado de Model Context Protocol (MCP) para tool calling y conexión a servidores de herramientas.
+- Orientación a tareas de SRE (Site Reliability Engineering) según la etiqueta `sre`.
+- Posible especialización en Rust mediante el componente etiquetado como `rust-subcortex` (no documentado).
+- Capacidades multilingües: solo se declara inglés; no hay evidencia de soporte de castellano u otros idiomas.
+- No se declaran capacidades de visión, audio ni modo de razonamiento extendido (thinking mode).
 
 ## Casos de uso
-
-Los siguientes casos de uso son escenarios plausibles para un modelo denso de ~7,6B cuantizado en GGUF de caracter conversacional. Deben validarse empiricamente antes de llevarlos a produccion, ya que no hay benchmarks ni documentacion de capacidades.
-
-- Asistente conversacional autoalojado: desplegado con Ollama o llama.cpp en una estacion de trabajo, el modelo puede atender conversaciones multiturno sin enviar datos a terceros. Es adecuado cuando la privacidad del contenido es un requisito y no se necesita razonamiento complejo.
-- Prototipado rapido en portatil: las variantes Q3_K_M o Q4_K_M caben en GPU integradas o en GPU de consumo con 6-8 GB de VRAM, lo que permite iterar sobre prompts y flujos de chat sin acceso a servidores.
-- Clasificacion y etiquetado de texto: tareas de extraccion de entidades, categorizacion de tickets o resumen de documentos cortos pueden resolverse por lotes con llama.cpp, aprovechando el bajo coste por token de la inferencia local.
-- Generacion de borradores de documentacion tecnica: redaccion asistida de README, notas de version o comentarios de codigo, con revision humana obligatoria dado el riesgo de alucinacion inherente a modelos de este tamano.
-- Backend de bajo coste para aplicaciones de escritorio: integrado mediante llama-cpp-python en una aplicacion nativa, el modelo puede ofrecer funciones de autocompletado de texto o reformulacion sin dependencia de APIs externas.
-- Evaluacion y experimentacion en investigacion: como punto de comparacion cuantizado frente a otros modelos de ~7B, resulta util para estudiar el impacto de la cuantizacion en la calidad de salida (por ejemplo, comparando Q2_K con Q8_0 sobre el mismo conjunto de prompts).
-- Filtrado previo en pipelines mayores: usado como modelo de triaje para descartar o marcar entradas antes de pasarlas a un modelo mayor, reduciendo el coste total de inferencia.
+- Reparación automática de bugs en pipelines de CI: el modelo puede recibir un fallo de test y un fragmento de código para proponer un parche, aprovechando su ajuste específico en `bug-fix` y `self-healing`.
+- Agente de operaciones (SRE) conectado por MCP: integrado en un orquestador que expone herramientas de monitorización, logs y reinicio de servicios mediante Model Context Protocol.
+- Asistente de refactorización en Rust: si el componente `rust-subcortex` funciona como se sugiere en las etiquetas, podría usarse para tareas acotadas de análisis y corrección de código Rust.
+- Automatización de triaje de incidencias: clasificación y priorización de tickets técnicos con propuesta de causa raíz, en despliegues locales con cuantización Q4_K_M (4,8 GB).
+- Copiloto de código en estaciones de trabajo sin GPU dedicada: la variante Q4_K_S (4,6 GB) permite ejecución en CPU con llama.cpp para autocompletado y explicación de código.
+- Entornos air-gapped: al ser Apache 2.0 y distribuirse en GGUF, puede desplegarse en infraestructura aislada sin dependencia de APIs externas, útil en entornos regulados.
+- Prototipado de agentes multi-paso: su orientación a `autonomous-agent` lo hace adecuado para experimentar con bucles de razonamiento y uso de herramientas en investigación aplicada.
 
 ## Benchmarks y rendimiento
-
-No se han publicado resultados de benchmarks en la informacion disponible. La model card del repositorio de cuantizacion no incluye tablas de MMLU, HumanEval, GSM8K ni ninguna otra metrica, y tampoco se aportan datos de perplexity por nivel de cuantizacion.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-Las cifras de VRAM siguientes son estimaciones calculadas a partir del recuento de parametros (7.615.616.512) y del tamano tipico por parametro de cada esquema de cuantizacion. No son datos publicados por el autor y deben tratarse como orientativas.
+| Cuantización | Tamaño | VRAM mínima estimada | Hardware típico |
+|---|---|---|---|
+| Q2_K | 3,1 GB | ~4 GB | GTX 1650, iGPU con 8 GB compartidos |
+| Q3_K_M | 3,9 GB | ~5 GB | RTX 3050 6 GB |
+| IQ4_XS | 4,4 GB | ~6 GB | RTX 3060 6 GB / 4060 |
+| Q4_K_M | 4,8 GB | ~6-7 GB | RTX 3060 12 GB, RTX 4060 Ti |
+| Q5_K_M | 5,5 GB | ~7-8 GB | RTX 3070, RTX 4060 Ti 16 GB |
+| Q6_K | 6,4 GB | ~8-9 GB | RTX 4070, RTX 3080 |
+| Q8_0 | 8,2 GB | ~10-11 GB | RTX 3080 12 GB, RTX 4080 |
+| f16 | 15,3 GB | ~17-18 GB | RTX 4090, A100 40 GB, H100 |
 
-- VRAM estimada para los pesos, por cuantizacion:
-  - Q2_K: ~2,9 GB
-  - Q3_K_S: ~3,4 GB
-  - Q3_K_M: ~3,8 GB
-  - Q3_K_L: ~4,1 GB
-  - IQ4_XS: ~4,1 GB
-  - Q4_K_S: ~4,4 GB
-  - Q4_K_M: ~4,7 GB
-  - Q5_K_S: ~5,2 GB
-  - Q5_K_M: ~5,4 GB
-  - Q6_K: ~6,3 GB
-  - Q8_0: ~8,1 GB
-  - f16: ~15,2 GB
-- Anadir entre 1 y 3 GB adicionales de VRAM para el contexto (KV cache) segun la longitud de contexto configurada y el numero de capas; el valor exacto depende de una arquitectura que no se ha documentado.
-- GPU de consumo compatibles: RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070 / 4070 Ti, RTX 4080, RTX 4090 24 GB y equivalentes de AMD. Cualquiera de ellas ejecuta sin problemas las variantes Q4 y Q5 completas en VRAM.
-- GPU de gama baja o iGPU: las variantes Q2_K y Q3_K caben en tarjetas con 4-6 GB de VRAM, y la ejecucion hibrida CPU+GPU es viable con llama.cpp.
-- GPU de centro de datos (A100 40/80 GB, H100, L40S, A6000): sobredimensionadas para un modelo de este tamano, pero utiles si se sirven muchas peticiones concurrentes o si se usa la variante f16 con contexto largo.
-- Opciones de despliegue: llama.cpp (CLI y servidor), Ollama, LM Studio, llama-cpp-python, text-generation-webui y cualquier runtime compatible con GGUF. El repositorio incluye la etiqueta `endpoints_compatible`, lo que indica compatibilidad con despliegues de tipo text-generation-inference en Hugging Face. La integracion con vLLM es limitada para GGUF y no esta documentada para este repositorio.
-- Latencia y throughput: no disponible. No se han publicado mediciones.
+- VRAM estimada: además del peso del archivo, hay que sumar el KV cache, que depende de la longitud de contexto (no documentada). Para contextos largos, reservar 2-4 GB adicionales.
+- GPU recomendadas: A100/H100 para despliegues de alta concurrencia en f16; RTX 4090 para f16 o Q8_0 en local; RTX 3060 12 GB o 4060 Ti 16 GB como punto óptimo calidad/precio en Q4_K_M y Q5_K_M.
+- Cabe en GPU de consumo: sí, desde Q2_K en adelante; Q4_K_M es la opción recomendada por el autor para velocidad.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, llama-cpp-python y servidores compatibles con la API de OpenAI (el tag `endpoints_compatible` lo indica). vLLM y TGI no soportan GGUF de forma nativa en todas sus versiones; para esos motores habría que usar el modelo base en safetensors.
+- Latencia y throughput: no disponibles. Como referencia cualitativa, el autor marca Q4_K_S y Q4_K_M como "fast, recommended" y Q8_0 como "fast, best quality".
 
 ## Comparativa con modelos similares
 
-El modelo carece de datos publicos de rendimiento, licencia y contexto, por lo que la comparacion solo puede establecerse en terminos de categoria y formato. La tabla siguiente usa especificaciones publicas ampliamente documentadas de modelos alternativos de tamano similar, a modo de referencia de mercado.
-
-| Modelo | Parametros | Contexto | Licencia | Formatos | Rendimiento |
+| Modelo | Parámetros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| Kronumos-GGUF (mradermacher) | 7,62B | no disponible | no disponible | GGUF (12 cuantizaciones) | no disponible |
-| Llama 3.1 8B Instruct | 8,03B | 128.000 tokens | Llama 3.1 Community License | safetensors, GGUF (comunidad) | ampliamente evaluado en benchmarks publicos |
-| Qwen2.5 7B Instruct | 7,61B | 131.072 tokens | Apache 2.0 | safetensors, GGUF (comunidad) | ampliamente evaluado en benchmarks publicos |
-| Mistral 7B Instruct v0.3 | 7,25B | 32.000 tokens | Apache 2.0 | safetensors, GGUF (comunidad) | ampliamente evaluado en benchmarks publicos |
+| Kronumos (esta ficha) | 7,6 B | no disponible | Apache 2.0 | GGUF, safetensors | Especializado en bug-fix, agentes MCP y SRE |
+| Qwen2-7B-Instruct | 7,6 B | 32.768 tokens (según documentación pública de Qwen2) | Apache 2.0 | safetensors, GGUF | Base generalista; Kronumos deriva de esta familia según sus etiquetas |
+| Mistral-7B-Instruct v0.3 | 7,2 B | 32.768 tokens | Apache 2.0 | safetensors, GGUF | Alternativa generalista con buen soporte de tool calling |
+| CodeLlama-7B-Instruct | 6,7 B | 16.384 tokens | Llama 2 (uso comercial con restricciones) | safetensors, GGUF | Especializado en código, sin enfoque de agentes MCP |
 
-Nota: la coincidencia casi exacta entre el recuento de parametros de Kronumos (7.615.616.512) y el de Qwen2.5-7B (7,61B) es llamativa, pero no constituye prueba de que Kronumos sea un ajuste derivado de Qwen2.5. No hay informacion que lo confirme o desmienta.
+La comparación con Qwen2-7B-Instruct y Mistral-7B-Instruct se basa en características públicas de esos modelos; no hay benchmarks de Kronumos que permitan comparar rendimiento real. La ventaja diferencial de Kronumos es su ajuste declarado para agentes MCP y reparación de código, y su licencia Apache 2.0 sin restricciones comerciales.
 
 ## Limitaciones y advertencias
-
-- Ausencia total de documentacion: no se declara arquitectura, contexto, idiomas, licencia ni datos de entrenamiento. Cualquier uso en produccion exige una evaluacion propia previa.
-- Licencia no disponible: sin una licencia explicita, no puede asumirse permiso para uso comercial. Ademas, la licencia del modelo base NadevA23/Kronumos es igualmente desconocida, y una cuantizacion no puede otorgar derechos mas amplios que el modelo original. Es imprescindible contactar con el autor del modelo base antes de cualquier explotacion comercial.
-- Riesgo de alucinacion: los modelos densos de ~7-8B presentan tasas de alucinacion notablemente superiores a los de mayor tamano. En tareas factuales o de resumen sin contexto verificable, requiere supervision humana.
-- Degradacion por cuantizacion agresiva: las variantes Q2_K y Q3_K_S reducen la huella de memoria de forma drastica a costa de perplejidad y coherencia. Para uso conversacional se recomienda Q4_K_M o superior; IQ4_XS es una alternativa de compromiso.
-- Tensores de salida cuantizados: el metadato `output_tensor_quantised: 1` indica que la capa de salida tambien esta cuantizada, lo que en algunos modelos incrementa ligeramente la degradacion de calidad respecto a dejar esa capa en precision superior.
-- Plantilla de chat desconocida: sin informacion sobre el formato de prompt, el modelo puede responder de forma degradada si el runtime aplica una plantilla generica incorrecta. Verificar el formato esperado antes del despliegue.
-- Idiomas no declarados: no hay garantia de rendimiento en castellano ni en ningun otro idioma distinto del que se uso en el ajuste, presumiblemente el ingles dado el tag `region:us`.
-- Modelo sin traccion: cero descargas y cero likes en el momento de la consulta. No hay comunidad, reportes de uso ni validacion independiente que respalden su calidad.
-- Fechas de metadatos anomales: la fecha de creacion indicada (2026-09-24) es posterior a la fecha actual en la mayoria de contextos, lo que sugiere un error de marca temporal o una carga programada. No afecta al contenido, pero conviene tenerlo en cuenta al citar el repositorio.
+- Ausencia total de benchmarks publicados: no hay evidencia cuantitativa de que supere a su modelo base en las tareas que declara.
+- Documentación muy escasa: no se especifican contexto, dataset, método de ajuste ni composición del entrenamiento, lo que dificulta evaluar su calidad y reproducibilidad.
+- Idioma: solo se declara inglés; el rendimiento en castellano es desconocido y probablemente deficiente.
+- Riesgo de alucinación: como todo modelo de 7 B sin datos de evaluación, puede generar parches de código plausibles pero incorrectos; en producción requiere tests automáticos que validen cada propuesta.
+- Las etiquetas `dual-brain` y `rust-subcortex` no están documentadas; no debe asumirse que exista un componente separado funcional hasta verificarlo con los pesos originales.
+- Licencia Apache 2.0: permite uso comercial sin restricciones adicionales, pero el usuario debe verificar que el modelo base `NadevA23/Kronumos` mantenga la misma licencia (la model card así lo indica).
+- Las cuantizaciones de baja precisión (Q2_K, Q3_K_M) degradan la calidad; el autor marca Q3_K_M como "lower quality" y Q4_K_S/M como el punto de equilibrio recomendado.
+- Fecha de creación futura (2026-09-24) en los metadatos: conviene verificar la procedencia y autenticidad del repositorio antes de desplegarlo.
 
 ## Enlaces
-
 - Repositorio GGUF: https://huggingface.co/mradermacher/Kronumos-GGUF
 - Modelo base: https://huggingface.co/NadevA23/Kronumos
-- Perfil del cuantizador: https://huggingface.co/mradermacher
-
-No se han encontrado en la busqueda web papers, blogs, repositorios adicionales ni demos asociados a este modelo.
+- Cuantizaciones ponderadas/imatrix: https://huggingface.co/mradermacher/Kronumos-i1-GGUF
+- Página de descargas del cuantizador: https://hf.tst.eu/model#Kronumos-GGUF
+- Guía de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Comparativa de tipos de cuantización (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Solicitudes de cuantización: https://huggingface.co/mradermacher/model_requests
+- nethype GmbH (patrocinador del cuantizador): https://www.nethype.de/

@@ -5,7 +5,7 @@
   "author": "Ainvest-World",
   "url": "https://huggingface.co/Ainvest-World/Ainvest-Decision-31b-v2.0",
   "created_at": "2026-11-11T04:41:49.000Z",
-  "updated_at": "2026-11-11T05:32:52.000Z",
+  "updated_at": "2026-11-22T06:45:05.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -31,7 +31,7 @@
     "region:us"
   ],
   "likes": 1,
-  "downloads_30d": 90,
+  "downloads_30d": 93,
   "trending_score": 0,
   "parameters": 31273086512,
   "parameters_human": "31.27B",

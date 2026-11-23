@@ -2,128 +2,109 @@
 
 ## Resumen
 
-Este repositorio contiene una cuantizacion EXL3 (ExLlamaV3) del modelo ukisai/Swift-1.5-Qwen3.8-27b, publicado por el usuario tiktits. Swift 1.5 es la segunda generacion del ajuste de UkisAI sobre Qwen/Qwen3.8-27B, entrenado con Group Sequence Policy Optimization (GSPO, RL) y On-Policy Distillation (OPD) sobre entornos agenticos multi-turno e ingenieria de software. El objetivo declarado del ajuste es reducir el "sobrepensamiento" (thinking tokens) manteniendo la precision del modelo base, y esta version concreta anade una abliteracion del rechazo (uncensored) y conserva intactas las capacidades multimodales (vision) y la cabeza MTP.
+Swift-1.5-Qwen3.8-27B-Uncensored-EXL3-3.75bpw es una cuantización EXL3 (ExLlamaV3) del modelo ukisai/Swift-1.5-Qwen3.8-27b, publicado por el usuario tiktits. El modelo base es un ajuste fino de Qwen/Qwen3.8-27B realizado por UkisAI mediante GSPO (Group Sequence Policy Optimization) y destilación on-policy (OPD), orientado a un razonamiento más eficiente en tokens y a la persistencia en tareas agénticas multi-turno. Sobre esa base se aplicó una abliteración (eliminación de la dirección de rechazo) y después una cuantización estructurada personalizada.
 
-La variante aqui descrita esta cuantizada con una asignacion estructurada denominada SC_3.75bpw_H5_V6_MTP4: 3,75 bits por peso en el backbone de texto, 5,00 bpw en lm_head, 6,00 bpw en la torre de vision, 4,00 bpw en la cabeza MTP y embeddings en BF16. El resultado ocupa 14,52 GiB en dos shards de safetensors y esta disenado explicitamente para ejecutarse al completo en una unica GPU de 24 GB (RTX 3090 / 4090) con 131.072 tokens de contexto, apoyandose en decodificacion especulativa por difusion de bloques DFlash2 para alcanzar entre 135 y 155 tokens por segundo.
+La ficha del autor describe el modelo como multimodal completo (torre de visión más cabeza MTP) y diseñado para ejecutarse íntegramente en una GPU de 24 GB (RTX 3090/4090) con contexto de 131.072 tokens, caché KV cuantizada a 4 bits y decodificación especulativa por difusión de bloques DFlash2. La cuantización conserva la torre de visión a 6 bits y la cabeza MTP a 4 bits, mientras que el tronco de texto se comprime a 3,75 bits por peso.
 
-Es relevante ahora porque combina tres tendencias concretas: cuantizacion de muy baja precision con preservacion selectiva de componentes criticos (vision y MTP), modelos "abliterated" sin alineacion de rechazo, y despliegue local en hardware de consumo. Conviene senalar que el repositorio es muy reciente (creado el 25 de septiembre de 2026) y no registra descargas ni interacciones en el momento de redactar esta ficha.
+Es relevante porque combina tres tendencias actuales: modelos de razonamiento con "thinking" eficiente, despliegue local de contexto largo en hardware de consumo y versiones sin censura (abliterated) para investigación sobre alineación y robustez. Conviene señalar que las cifras de benchmarks publicadas corresponden al modelo base en BF16 y no han sido re-medidas sobre esta cuantización.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer hibrido con atencion lineal Gated DeltaNet (48 capas) + atencion completa GQA (16 capas), 64 capas en total; torre de vision ViT de 27 bloques con patch merger espacial; cabeza de prediccion multi-token (MTP) |
-| Parametros totales | 7.795.021.184 (7,8 B) segun los metadatos de safetensors del repositorio; la nomenclatura comercial del modelo es "27B" |
-| Parametros activos | No aplica: la informacion disponible no describe el modelo como MoE |
+| Arquitectura | Híbrida: 48 capas de atención lineal Gated DeltaNet + 16 capas de atención completa GQA (tronco de 64 capas); torre de visión ViT de 27 bloques con patch merger; cabeza MTP |
+| Parametros totales | 27B según la model card (el contador de Hugging Face muestra 7.795.021.184 porque cuenta las palabras empaquetadas de 16 bits de EXL3) |
+| Parametros activos | No aplica (no es MoE) |
 | Longitud de contexto | 131.072 tokens |
-| Tipos de cuantizacion | EXL3 (ExLlamaV3) con asignacion SC_3.75bpw_H5_V6_MTP4: backbone de texto a 3,75 bpw (SQNR 36,14 dB), lm_head a 5,00 bpw (SQNR 36,27 dB, cos_err 0,000142), torre de vision a 6,00 bpw, cabeza MTP a 4,00 bpw, embeddings a 16,00 bpw (BF16). No se publican variantes GGUF ni AWQ/GPTQ en este repositorio |
-| Idiomas soportados | No disponible en la informacion proporcionada (la evaluacion incluye C-Eval, lo que sugiere soporte de chino, pero la model card no detalla el conjunto de idiomas) |
-| Licencia | swift-open-license-1.0 (campo `license: other`); texto en el enlace indicado en la model card |
-| Formato de pesos | safetensors (2 shards, 14,52 GiB / 14.868,18 MB); requiere la libreria exllamav3 para su carga |
-| Etiqueta de cuantizacion | SC_3.75bpw_H5_V6_MTP4 |
-| Tamano del repositorio | 15,6 GB |
-| Pipeline declarado | image-text-to-text |
-| Modelos base | ukisai/Swift-1.5-Qwen3.8-27b, Qwen/Qwen3.8-27B, ajgazin/Swift-Qwen3.8-27B-Uncensored-MTP, orcarouter/Qwen3.8-27B-Uncensored |
+| Tipos de cuantizacion | EXL3 3,75 bpw en el tronco de texto; LM head a 5,00 bpw; torre de visión a 6,00 bpw; cabeza MTP a 4,00 bpw; embeddings en BF16 (16,00 bpw); caché KV cuantizada a 4 bits |
+| Idiomas soportados | No disponible |
+| Licencia | swift-open-license-1.0 (etiquetada como "other" en Hugging Face) |
+| Formato de pesos | safetensors (EXL3, 2 shards, 14,52 GiB) |
 
 ## Arquitectura y entrenamiento
 
-El backbone es un transformer hibrido de 64 capas: 48 capas emplean atencion lineal Gated DeltaNet y 16 capas mantienen atencion completa con GQA. Sobre ese backbone se anaden dos componentes preservados en esta cuantizacion: una torre de vision de 27 bloques ViT con patch merger espacial (cuantizada a 6,00 bpw para mantener la entrada de imagen y video) y una cabeza de prediccion multi-token MTP (a 4,00 bpw) que habilita decodificacion especulativa. Los embeddings de tokens se mantienen en BF16 y ExLlamaV3 los fija en memoria del sistema, de modo que no consumen VRAM ni anaden latencia de dequantizacion.
+El tronco de texto es un transformer híbrido de 64 capas que alterna 48 capas de atención lineal Gated DeltaNet con 16 capas de atención completa GQA, una configuración orientada a reducir el coste de contexto largo. Sobre ese tronco se añaden una torre de visión ViT de 27 bloques con patch merger espacial (entrada imagen/vídeo) y una cabeza de predicción multi-token (MTP) que habilita decodificación especulativa. El modelo base Qwen3.8-27B fue ajustado por UkisAI con GSPO (RL) y destilación on-policy sobre entornos agénticos y de ingeniería de software multi-turno, con el objetivo explícito de distinguir entre bucles de sobre-razonamiento patológicos y persistencia legítima en tareas largas.
 
-El entrenamiento del modelo fuente Swift 1.5 combina GSPO (optimizacion de politica por secuencias de grupo, aprendizaje por refuerzo) y On-Policy Distillation sobre entornos agenticos multi-turno y de ingenieria de software (dataset ukisai/Qwen3.8-27B-multi-turn-agent-sft). Segun la documentacion del autor, la mejora respecto a Swift 1.0 consiste en distinguir entre bucles patologicos de sobrepensamiento en un solo turno y persistencia legitima en tareas multi-turno, evitando que el modelo abandone prematuramente tareas CLI o agenticas. Ademas, Swift incorpora un componente de transferencia derivado de ThinkingCap-Qwen3.6-27B de BottleCap AI.
-
-Sobre esa base, este checkpoint aplica una abliteracion del rechazo antes de cuantizar: una ortogonalizacion rank-1 en float32 siguiendo a Arditi et al. (2024), con una direccion de rechazo unitaria r de dimension 5120 extraida en la capa 38 a partir de la diferencia media del residual stream, aplicada a las 131 tensores que escriben en el residual stream, incluida la cabeza MTP. Todos los scripts, vectores de rechazo y utilidades de cuantizacion se incluyen en el directorio `abliteration/` del repositorio.
+La cadena de producción de esta versión concreta aplica, antes de cuantizar, una abliteración de rango 1 en float32 (vector `r.pt`) sobre los 131 tensores que escriben en el residual, incluida la cabeza MTP. Después se aplica una asignación EXL3 estructurada (`SC_3.75bpw_H5_V6_MTP4`) con métricas de calidad por bloque: SQNR de 36,14 dB en la última capa del tronco, SQNR de 36,27 dB y error coseno de 0,000142 en el LM head. Los embeddings se mantienen en BF16 y ExLlamaV3 los fija en RAM del sistema para evitar coste de VRAM y latencia de desquantización.
 
 ## Capacidades
 
-- Generacion de texto conversacional multi-turno con contexto de hasta 131.072 tokens.
-- Razonamiento explicito con modo "thinking" y control del esfuerzo de razonamiento (el modelo base Qwen3.8 expone el parametro reasoning_effort con niveles tipo xhigh, medium y low; Swift 1.5 mantiene el ahorro de tokens de pensamiento en todos los niveles segun UkisAI).
-- Razonamiento matematico de competicion y cientifico de nivel doctorado (resultados reportados en AIME 2026, HMMT Nov 2025 y GPQA-Diamond para el modelo fuente).
-- Codigo y tareas de ingenieria de software, incluyendo resolucion de problemas y uso de herramientas en terminal (Terminal-Bench 2.1, LiveCodeBench v6).
-- Capacidades agenticas multi-paso y persistencia en tareas de CLI, que es el eje del entrenamiento GSPO/OPD de Swift 1.5.
-- Multimodal: entrada de imagen y video a traves de la torre de vision ViT conservada a 6,00 bpw (pipeline image-text-to-text; ERQA reportado para el modelo fuente).
-- Seguimiento estricto de instrucciones (IFBench reportado para el modelo fuente).
-- Decodificacion especulativa mediante cabeza MTP a 4,00 bpw y compatibilidad declarada con DFlash2 (decodificacion especulativa por difusion de bloques) de z-lab.
-- Ausencia deliberada de rechazo: la abliteracion elimina el mecanismo de negativa aprendido, por lo que el modelo responde a peticiones que el modelo base rechazaria.
-- Soporte de tool calling / function calling: no se detalla explicitamente en la informacion disponible, aunque el entrenamiento agentico del modelo fuente lo hace plausible; no confirmado en la model card.
+- Generación de texto y razonamiento con modo "thinking" eficiente en tokens (la familia Swift 1.5 reduce el consumo de tokens de razonamiento entre un 18 % y un 58 % según el benchmark).
+- Codificación de software: el modelo base reporta LiveCodeBench v6 al 81,71 % y Terminal-Bench 2.1 al 72,13 %.
+- Matemáticas de competición: AIME 2026 al 96,00 % y HMMT Nov 2025 al 97,33 % en el modelo base BF16.
+- Multimodal imagen-texto: pipeline `image-text-to-text` con torre de visión preservada a 6 bits; soporta entrada de imagen y vídeo según la model card.
+- Persistencia agéntica multi-turno: entrenado sobre entornos CLI y agénticos, con tolerancia a tareas de varios pasos.
+- Decodificación especulativa mediante cabeza MTP y DFlash2 (difusión de bloques), con velocidades declaradas de 135-155 tok/s.
+- Capacidad de seguir instrucciones estrictas (IFBench al 72,07 % en el modelo base).
+- Sin censura por abliteración: se elimina la dirección de rechazo en todos los tensores residuales, incluida la cabeza MTP.
+- Soporte de tool calling y function calling: no disponible de forma explícita en la información proporcionada.
 
 ## Casos de uso
 
-- Agentes de terminal y automatizacion de CLI: el modelo fuente reporta 72,13% en Terminal-Bench 2.1 con 43.733 tokens, y el ajuste esta orientado a mantener la persistencia en tareas multi-paso. Se usaria como motor de un agente que ejecuta comandos, interpreta salidas y corrige errores en secuencia.
-- Asistencia de codigo en produccion: con 81,71% en LiveCodeBench v6 y una reduccion declarada del 46,3% en tokens de pensamiento respecto al base, es adecuado para generacion y revision de codigo donde el coste por token importa.
-- Razonamiento cientifico y matematico asistido: 88,59% en GPQA-Diamond y 96,00% en AIME 2026 con menos tokens que el base; util para tutoria avanzada o verificacion de derivaciones, siempre con supervision humana.
-- Analisis de documentos con imagen: la torre de vision a 6 bpw permite procesar capturas, diagramas, graficos y paginas escaneadas dentro del mismo contexto de 131.072 tokens, por ejemplo para extraer datos de informes tecnicos o tickets con adjuntos.
-- Despliegue local con privacidad de datos: al caber en 14,52 GiB y estar disenado para una sola GPU de 24 GB, permite procesar informacion sensible sin salir de la infraestructura propia (juridico, sanitario, industrial).
-- Red-teaming e investigacion en seguridad y alineacion: al ser una variante abliterated con el pipeline de ortogonalizacion reproducible incluido, sirve para estudiar como se comporta un modelo sin direccion de rechazo y para evaluar mecanismos de mitigacion externos.
-- Extraccion estructurada con instrucciones estrictas: 72,07% en IFBench sugiere buen cumplimiento de formatos y restricciones, util en pipelines de parseo de datos no estructurados hacia JSON o formularios.
-- Escritura creativa sin filtros editoriales: la ausencia de rechazo permite generar ficcion o contenido con tematicas que los modelos alineados bloquean; requiere revision humana y cumplimiento normativo antes de cualquier publicacion.
+- Asistente de código en local: con 131.072 tokens de contexto y buen rendimiento en LiveCodeBench, se puede cargar un repositorio mediano completo y mantener conversaciones de refactorización multi-archivo en una sola RTX 4090.
+- Agente CLI autónomo: el ajuste sobre Terminal-Bench y entornos multi-turno lo hace adecuado para tareas de shell, instalación de dependencias y depuración iterativa donde el modelo debe persistir en lugar de abandonar.
+- Análisis de documentos con imágenes: la torre de visión a 6 bits permite procesar capturas, diagramas y páginas escaneadas junto con texto largo en el mismo contexto.
+- Investigación sobre alineación y robustez: la versión abliterated sirve para estudiar la dirección de rechazo, medir la degradación de seguridad tras la ortogonalización y comparar con el modelo base alineado.
+- Razonamiento matemático y científico asistido: GPQA-Diamond al 88,59 % y AIME al 96,00 % en BF16 lo sitúan como candidato para tutoría técnica o verificación de derivaciones.
+- Despliegue en estación de trabajo con una sola GPU: 14,52 GiB de pesos más caché KV a 4 bits permiten servir el modelo con contexto muy largo sin infraestructura multi-GPU.
+- Generación aumentada por recuperación (RAG) de corpus extensos: la ventana de 131k tokens reduce la necesidad de fragmentación agresiva y permite incluir muchos pasajes recuperados por consulta.
 
 ## Benchmarks y rendimiento
 
-Los siguientes resultados corresponden al modelo fuente ukisai/Swift-1.5-Qwen3.8-27b (27B) y a sus comparaciones publicadas en la model card del repositorio. No se han medido especificamente sobre este checkpoint EXL3 de 3,75 bpw, por lo que deben tomarse como referencia del modelo base sin cuantizar. El numero entre parentesis indica los tokens de pensamiento reportados.
+Los datos publicados corresponden al modelo base ukisai/Swift-1.5-Qwen3.8-27b en BF16 (medias de 5 semillas), no a esta cuantización abliterated a 3,75 bpw.
 
-| Benchmark | Categoria | Qwen3.8-27B base | Swift 1.0 (27B) | Swift 1.5 (27B) |
+| Benchmark | Categoria | Qwen3.8-27B base | Swift 1.0 | Swift 1.5 |
 |---|---|---|---|---|
-| Terminal-Bench 2.1 | Agentico / CLI | 69,21% (52.265 t) | 65,84% (27.272 t) | 72,13% (43.733 t) |
-| LiveCodeBench v6 | Codigo dificil | 76,76% (11.184 t) | 81,55% (8.615 t) | 81,71% (8.448 t) |
-| GPQA-Diamond | Ciencia nivel doctorado | 88,28% (15.014 t) | 88,28% (8.855 t) | 88,59% (8.717 t) |
-| AIME 2026 | Matematicas de olimpiada | 98,67% (22.014 t) | 94,00% (16.143 t) | 96,00% (13.203 t) |
-| HMMT Nov 2025 | Matematicas de olimpiada | 99,33% (22.032 t) | 96,00% (15.189 t) | 97,33% (14.957 t) |
-| C-Eval | Conocimiento general | 90,00% (1.492 t) | 90,62% (804 t) | 90,92% (819 t) |
-| IFBench | Instrucciones estrictas | 73,53% (8.052 t) | 71,80% (4.657 t) | 72,07% (4.955 t) |
-| ERQA | Vision multimodal | 67,45% (4.137 t) | 66,30% (2.045 t) | 65,40% (1.906 t) |
+| Terminal-Bench 2.1 | Agéntico / CLI | 69,21 % | 65,84 % | 72,13 % |
+| LiveCodeBench v6 | Código difícil | 76,76 % | 81,55 % | 81,71 % |
+| GPQA-Diamond | Ciencia PhD | 88,28 % | 88,28 % | 88,59 % |
+| AIME 2026 | Matemáticas olimpiada | 98,67 % | 94,00 % | 96,00 % |
+| HMMT Nov 2025 | Matemáticas olimpiada | 99,33 % | 96,00 % | 97,33 % |
+| C-Eval | Conocimiento general | 90,00 % | 90,62 % | 90,92 % |
+| IFBench | Instrucciones estrictas | 73,53 % | 71,80 % | 72,07 % |
+| ERQA | Visión multimodal | 67,45 % | 66,30 % | 65,40 % |
 
-Como datos de cuantizacion, la model card reporta SQNR de 36,14 dB en la ultima capa del backbone y de 36,27 dB en lm_head, con un error de coseno de 0,000142. Para el rendimiento de inferencia se declaran entre 135 y 155 tokens por segundo en una GPU de 24 GB con decodificacion especulativa DFlash2. No se han publicado resultados de benchmarks medidos sobre esta cuantizacion EXL3 en la informacion disponible.
+No se han publicado resultados de benchmarks medidos sobre esta cuantización EXL3 abliterated en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para los pesos: 14,52 GiB (14.868,18 MB) en dos shards; el resto del presupuesto de VRAM se destina a cache KV.
-- GPU objetivo declarada: una unica GPU de 24 GB, concretamente RTX 3090 o RTX 4090, con contexto completo de 131.072 tokens.
-- Cabe en GPU de consumo: si, en tarjetas de 24 GB o mas. No hay datos publicados para GPUs de 16 GB o menos.
-- GPUs profesionales: A100, H100 u otras con 40-80 GB pueden ejecutarlo con margen amplio para cache KV y lotes mayores, aunque el checkpoint esta optimizado para el caso de 24 GB.
-- Embeddings de tokens: se fijan en memoria del sistema (BF16), con 0,00 GiB de coste en VRAM y sin latencia de dequantizacion segun ExLlamaV3.
-- Opciones de despliegue: ExLlamaV3 (exllamav3) es la libreria obligatoria por el formato EXL3. Se declara compatibilidad con DFlash2 (z-lab/Qwen3.8-27B-DFlash2) para decodificacion especulativa por difusion de bloques. No se proporcionan pesos GGUF, por lo que llama.cpp y Ollama no son compatibles directamente con este repositorio; vLLM y TGI tampoco soportan EXL3 en la informacion disponible.
-- Latencia y throughput estimados: 135-155 tokens/s en 24 GB con DFlash2 habilitado, segun la model card. No se detallan valores de latencia por token ni rendimiento sin decodificacion especulativa.
-- Almacenamiento: el repositorio ocupa 15,6 GB.
+- VRAM estimada para inferencia: 14,52 GiB de pesos EXL3 más caché KV a 4 bits; el autor indica que cabe entero en 24 GB a 131.072 tokens de contexto.
+- GPU recomendadas: RTX 3090 o RTX 4090 (24 GB) como objetivo declarado; A100 y H100 funcionan pero desaprovechan el diseño orientado a consumo.
+- Cabe en GPU de consumo: sí, en RTX 3090 y RTX 4090 de 24 GB según la model card; en GPUs de 16 GB no hay margen para contexto largo con caché KV a 4 bits.
+- Opciones de despliegue: ExLlamaV3 (librería nativa del formato EXL3). No se indica compatibilidad con vLLM, llama.cpp, Ollama o TGI, ya que EXL3 es un formato específico de ExLlamaV3.
+- Decodificación especulativa: requiere el modelo Qwen3.8-27B-DFlash2 de z-lab para el modo de difusión de bloques.
+- Latencia y throughput: 135-155 tok/s declarados por el autor con DFlash2 y caché KV a 4 bits en una GPU de 24 GB.
 
 ## Comparativa con modelos similares
 
-La comparacion mas directa es dentro de la propia linea de derivacion, ya que los cuatro checkpoints comparten origen. No se dispone de datos de parametros, contexto o licencia para todos ellos en la informacion proporcionada.
-
-| Modelo | Rol | Formato / cuantizacion | Licencia | Datos de rendimiento |
-|---|---|---|---|---|
-| Base Qwen/Qwen3.8-27B | Modelo fundacional | No disponible | No disponible | Terminal-Bench 2.1: 69,21%; LiveCodeBench v6: 76,76%; GPQA-D: 88,28%; AIME 2026: 98,67% |
-| ukisai/Swift-1.5-Qwen3.8-27b | Ajuste GSPO + OPD, multimodal, alineado | No disponible | No disponible | Terminal-Bench 2.1: 72,13%; LiveCodeBench v6: 81,71%; GPQA-D: 88,59%; AIME 2026: 96,00%; ERQA: 65,40% |
-| ukisai/Swift-Qwen3.8-27b (Swift 1.0) | Generacion anterior del ajuste | No disponible | No disponible | Terminal-Bench 2.1: 65,84%; LiveCodeBench v6: 81,55%; GPQA-D: 88,28%; AIME 2026: 94,00% |
-| orcarouter/Qwen3.8-27B-Uncensored | Variante uncensored (fuente del vector de rechazo) | No disponible | No disponible | No disponible |
-| ajgazin/Swift-Qwen3.8-27B-Uncensored-MTP | Variante uncensored con MTP (fuente del vector de rechazo) | No disponible | No disponible | No disponible |
-| tiktits/Swift-1.5-Qwen3.8-27B-Uncensored-EXL3-3.75bpw (este repositorio) | Cuantizacion EXL3 3,75 bpw + abliteration | EXL3, safetensors, 14,52 GiB | swift-open-license-1.0 | No medido; hereda la referencia de Swift 1.5 |
+| Modelo | Parametros | Contexto | Formato / cuantización | Licencia | Notas |
+|---|---|---|---|---|---|
+| tiktits/Swift-1.5-Qwen3.8-27B-Uncensored-EXL3-3.75bpw | 27B | 131.072 | EXL3 3,75 bpw | swift-open-license-1.0 | Abliterated, multimodal, MTP; objetivo 24 GB |
+| ukisai/Swift-1.5-Qwen3.8-27b | 27B | No disponible en la información | BF16 | swift-open-license-1.0 | Modelo base alineado; benchmarks de referencia |
+| Qwen/Qwen3.8-27B | 27B | No disponible en la información | BF16 y otros | No disponible en la información | Base original sin ajuste GSPO/OPD |
+| ajgazin/Swift-Qwen3.8-27B-Uncensored-MTP | 27B | No disponible en la información | No disponible en la información | No disponible en la información | Variante uncensored con MTP; fuente del vector de abliteración |
 
 ## Limitaciones y advertencias
 
-- Modelo abliterated sin alineacion de rechazo: la direccion de rechazo se ha eliminado deliberadamente de 131 tensores. Esto implica que el modelo puede generar contenido danino, ilegal o gravemente inapropiado sin negarse. No debe exponerse a usuarios finales sin filtros externos y supervision.
-- Riesgo de alucinacion: es un modelo de 27B con razonamiento largo; en tareas de conocimiento factual puede inventar datos con alta confianza. La reduccion de tokens de pensamiento respecto al base puede agravar este riesgo en tareas que requieren verificacion extensa.
-- Degradacion por cuantizacion: el backbone esta a 3,75 bpw. Aunque se reporta SQNR de 36,14 dB en la ultima capa, no hay evaluaciones publicadas del impacto real de esta cuantizacion sobre los benchmarks del modelo fuente, especialmente en tareas sensibles a la precision numerica.
-- Caida en vision: el ERQA reportado ya baja de 67,45% (base) a 65,40% (Swift 1.5) antes de cuantizar. La torre de vision a 6,00 bpw puede anadir perdida adicional no medida.
-- Discrepancia de parametros: los metadatos de safetensors indican 7.795.021.184 parametros, mientras que la nomenclatura comercial del modelo es "27B". Conviene verificar esta cifra contra el modelo fuente antes de planificar recursos.
-- Idiomas: el conjunto de idiomas soportados no esta documentado en este repositorio. La presencia de C-Eval sugiere chino e ingles, pero no hay confirmacion para otras lenguas, incluido el castellano.
-- Licencia: swift-open-license-1.0 con campo `license: other`. No se detallan en la informacion proporcionada las condiciones de uso comercial, redistribucion ni las obligaciones derivadas de los modelos base (Qwen, UkisAI y las variantes uncensored). Es imprescindible revisar el texto completo de la licencia antes de cualquier uso en produccion.
-- Compatibilidad de despliegue limitada: al ser EXL3, queda restringido a ExLlamaV3. No hay pesos GGUF, por lo que las herramientas mas extendidas (llama.cpp, Ollama) no pueden ejecutarlo y el ecosistema de servidores es mas reducido.
-- Proyecto sin validacion de la comunidad: 0 descargas y 0 "likes" en el momento de redactar la ficha, con una antiguedad de minutos. No hay informes independientes de calidad, estabilidad ni reproducibilidad de la cuantizacion.
-- Coste energetico y de contexto: mantener 131.072 tokens de contexto en una GPU de 24 GB exige una gestion cuidadosa de la cache KV; contextos largos reducen el espacio disponible y pueden degradar el throughput declarado.
-- Contenido de la model card: parte del texto de metodologia aparece truncado en la informacion disponible, por lo que los detalles completos del pipeline de abliteration (normas, capas exactas, hiperparametros adicionales) deben consultarse en el repositorio original.
+- Las cifras de benchmarks proceden del modelo base en BF16 y no se han re-medido sobre esta cuantización; la pérdida por 3,75 bpw y por abliteración puede degradar tareas sensibles.
+- La abliteración elimina la dirección de rechazo, lo que reduce las barreras de seguridad y aumenta el riesgo de generar contenido dañino, ilegal o sesgado; no es apta para aplicaciones orientadas al público sin filtros externos.
+- Riesgo de alucinación inherente a los modelos de razonamiento con modo thinking; la reducción de tokens de razonamiento puede recortar la verificación en tareas ambiguas.
+- La licencia swift-open-license-1.0 está etiquetada como "other"; es necesario revisar el texto completo antes de cualquier uso comercial.
+- El formato EXL3 solo es compatible con ExLlamaV3, lo que limita las opciones de servido y la portabilidad frente a GGUF o safetensors estándar.
+- El contador de parámetros de Hugging Face (7,795 mil millones) es incorrecto según el autor; no debe usarse para dimensionar infraestructura.
+- Los idiomas soportados no están documentados en la información disponible; el rendimiento multilingüe no está verificado.
+- El rendimiento declarado de 135-155 tok/s depende de DFlash2, caché KV a 4 bits y una GPU de 24 GB concretos; no es extrapolable a otros entornos.
+- El modelo base está entrenado para persistir en tareas largas, lo que puede traducirse en respuestas más largas de lo deseado en casos simples.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/tiktits/Swift-1.5-Qwen3.8-27B-Uncensored-EXL3-3.75bpw
-- Modelo fuente Swift 1.5: https://huggingface.co/ukisai/Swift-1.5-Qwen3.8-27b
-- Modelo base Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
+- Hugging Face: https://huggingface.co/tiktits/Swift-1.5-Qwen3.8-27B-Uncensored-EXL3-3.75bpw
+- Modelo base: https://huggingface.co/ukisai/Swift-1.5-Qwen3.8-27b
+- Licencia: https://huggingface.co/ukisai/Swift-1.5-Qwen3.8-27b/blob/main/LICENSE
+- Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
+- DFlash2 especulativo: https://huggingface.co/z-lab/Qwen3.8-27B-DFlash2
+- Fuente del vector de abliteración: https://huggingface.co/ajgazin/Swift-Qwen3.8-27B-Uncensored-MTP
+- Variante uncensored alternativa: https://huggingface.co/orcarouter/Qwen3.8-27B-Uncensored
 - Swift 1.0: https://huggingface.co/ukisai/Swift-Qwen3.8-27b
-- Variante uncensored con MTP (fuente del vector de rechazo): https://huggingface.co/ajgazin/Swift-Qwen3.8-27B-Uncensored-MTP
-- Variante uncensored (fuente del vector de rechazo): https://huggingface.co/orcarouter/Qwen3.8-27B-Uncensored
-- Modelo de decodificacion especulativa DFlash2: https://huggingface.co/z-lab/Qwen3.8-27B-DFlash2
-- Dataset de entrenamiento agentico multi-turno: https://huggingface.co/datasets/ukisai/Qwen3.8-27B-multi-turn-agent-sft
-- Licencia del modelo: https://huggingface.co/ukisai/Swift-1.5-Qwen3.8-27b/blob/main/LICENSE
-- Paper de referencia sobre abliteration (Arditi et al., 2024): https://arxiv.org/abs/2406.11717
-- Anuncio de UkisAI sobre Swift: https://ukisai.com/news/introducing-swift
-- Guia de ejecucion local de Qwen3.8-27B: https://linas.substack.com/p/qwen3-8-27b-local-guide
-- Repositorio no oficial de variante uncensored para uso local: https://github.com/Wassimyounes01/qwen38-uncensored
+- Dataset agéntico multi-turno: https://huggingface.co/datasets/ukisai/Qwen3.8-27B-multi-turn-agent-sft
+- Paper referenciado (arXiv:2406.11717): https://arxiv.org/abs/2406.11717

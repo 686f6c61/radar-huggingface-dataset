@@ -5,13 +5,14 @@
   "author": "LeonardoDiasRR",
   "url": "https://huggingface.co/LeonardoDiasRR/detectorr-multi-models",
   "created_at": "2026-11-16T08:43:30.000Z",
-  "updated_at": "2026-11-17T00:02:19.000Z",
+  "updated_at": "2026-11-22T14:30:19.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
   "library": null,
   "languages": [],
   "tags": [
+    "onnx",
     "region:us"
   ],
   "likes": 0,
@@ -19,11 +20,13 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 204565295,
-  "storage_human": "205 MB",
+  "storage_bytes": 235589817,
+  "storage_human": "236 MB",
   "context_length": null,
   "base_model": null,
-  "formats": [],
+  "formats": [
+    "onnx"
+  ],
   "is_conversational": false,
   "gated": false,
   "disabled": false,

@@ -2,53 +2,48 @@
 
 ## Resumen
 
-CasualSwarms (publicado por el autor bajo el nombre SAGI V3.1 / Swarm-8 V3.1) es un modelo de lenguaje causal de tipo decoder-only orientado a generación de texto, desarrollado por el usuario de Hugging Face `reaperdoesntknow`. El modelo se presenta como una propuesta experimental que combina una arquitectura transformer con dinámicas de "inteligencia de enjambre": varios agentes internos que colaboran mediante enrutamiento diferenciable, mecanismos de confianza y memoria compartida. La model card describe capas adicionales de autoevaluación (predictor de rendimiento, analizador de carencias de habilidad, detector de errores en tiempo real y detector de límites de capacidad).
+CasualSwarms (publicado por el autor bajo el nombre SAGI V3.1 / Swarm-8 V3.1) es un modelo de lenguaje causal para generación de texto desarrollado por el usuario de Hugging Face `reaperdoesntknow`. Se presenta como una implementación que combina una arquitectura transformer con dinámicas de "inteligencia de enjambre" (swarm intelligence), en la que varios agentes internos colaboran mediante enrutamiento diferenciable, mecanismos de confianza y memoria compartida. El modelo tiene 170.330.979 parámetros totales (aproximadamente 170 millones) y se distribuye en formato safetensors con un tamaño de repositorio de 0,7 GB.
 
-El dato objetivo y verificable es su tamaño: 170.330.979 parámetros totales según los pesos en safetensors, con un repositorio de 0,7 GB y pesos en fp32. Se distribuye bajo licencia Apache 2.0, está etiquetado únicamente para inglés y su pipeline es `text-generation` con la librería `transformers`. El autor declara entrenamiento sobre datasets como TinyStories, GSM8K, General-Knowledge, DeepCoder-Preview-Dataset y KnowLogic.
+La propuesta del autor es ambiciosa en su descripción: el modelo afirma incorporar capas de autoevaluación, detección de errores en tiempo real, un "núcleo AGI" con memoria jerárquica y modelo causal del mundo, y un núcleo de enjambre con 20 agentes vectorizados. Sin embargo, estas afirmaciones proceden exclusivamente de la model card del autor y no están respaldadas por documentación técnica verificable, benchmarks publicados ni un artículo de investigación asociado. El tamaño real del modelo (170 millones de parámetros) es incompatible con las capacidades que la model card sugiere.
 
-Es relevante ahora por su carácter de experimento abierto: propone una arquitectura "de enjambre" con capas de metacognición sobre un modelo de escala pequeña (170 M de parámetros), lo que permite inspeccionar y reproducir el diseño en hardware modesto. Conviene tratar las afirmaciones de "AGI" y "self-aware" de la model card como mercadotecnia del autor, no como capacidades demostradas: no se han publicado benchmarks ni evaluaciones independientes en la información disponible.
+El modelo es relevante únicamente como objeto de estudio de la brecha entre las afirmaciones de una model card y las especificaciones técnicas verificables. Está etiquetado para inglés, licencia Apache 2.0, y declara entrenamiento sobre datasets como TinyStories, GSM8K, General-Knowledge, DeepCoder-Preview-Dataset y KnowLogic.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer causal (decoder-only) con capas propietarias de "swarm" y autoevaluación según la model card; detalles internos no verificables |
+| Arquitectura | Transformer causal con componentes descritos como "swarm" (enrutamiento diferenciable, agentes vectorizados); no verificable |
 | Parametros totales | 170.330.979 |
 | Parametros activos | no disponible (no se declara como MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible (pesos publicados en fp32; el repositorio no incluye variantes GGUF/AWQ/GPTQ) |
-| Idiomas soportados | Inglés (`en`) |
+| Tipos de cuantizacion | no disponible (repo en fp32 según tags; safetensors) |
+| Idiomas soportados | inglés (en) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (librería `transformers`) |
+| Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
 
-La model card describe una arquitectura por capas: un "Swarm Core" con 20 agentes vectorizados, enrutamiento diferenciable, gestión dinámica de recursos y activación basada en confianza; un "AGI Core" con memoria jerárquica, modelo causal del mundo, meta-aprendizaje, biblioteca de conceptos, motor de reflexión, razonador de incertidumbre y auto-juego adversarial; y una "Self-Assessment Layer" con predictor de rendimiento, analizador de carencias de habilidad (24 habilidades declaradas), generador de currículo automático, detector de errores en tiempo real y detector de límites de capacidad. Esta descripción proviene exclusivamente del autor y no está respaldada por un paper, código de entrenamiento publicado ni evaluaciones externas en la información disponible.
+Según la model card, el modelo combina un transformer causal con un "Swarm Core" de 20 agentes vectorizados, enrutamiento diferenciable, gestión dinámica de recursos y activación basada en confianza. Sobre esa base se describe un "AGI Core" con memoria jerárquica, modelo causal del mundo, meta-aprendizaje, biblioteca de conceptos, motor de reflexión, razonador de incertidumbre y auto-juego adversarial. La versión V3.1 añade una "capa de autoevaluación" con predictor de rendimiento, analizador de brechas de habilidad (24 skills), generador de currículo automático, detector de errores en tiempo real y detector de límites de capacidad.
 
-En cuanto a datos, la model card lista los datasets TinyStories, GSM8K, General-Knowledge, DeepCoder-Preview-Dataset y KnowLogic, pero no especifica número de tokens, composición exacta, proporciones ni si hubo etapas de RLHF, DPO o ajuste por instrucciones. No se documentan innovaciones verificables como decodificación especulativa o atención lineal; las "innovaciones" declaradas son las capas de enjambre y autoevaluación descritas en el diagrama de la model card.
+No se especifica el número de tokens de entrenamiento, la composición exacta del dataset, ni si se aplicaron técnicas de RLHF, DPO o ajuste por instrucciones. Los datasets declarados son `roneneldan/TinyStories`, `openai/gsm8k`, `MuskumPillerum/General-Knowledge`, `agentica-org/DeepCoder-Preview-Dataset` y `tangyuhang/KnowLogic`. No hay información sobre tokenizador, configuración de atención, ni innovaciones técnicas verificables más allá de las afirmaciones de la model card.
 
 ## Capacidades
 
-- Generación de texto causal en inglés, con pipeline `text-generation` estándar de `transformers`.
-- Razonamiento y matemáticas básicas: el autor declara entrenamiento sobre GSM8K, aunque no se aportan métricas de exactitud.
-- Generación de código: se lista DeepCoder-Preview-Dataset como fuente de entrenamiento, sin resultados publicados en HumanEval ni similares.
-- Conocimiento general: se cita el dataset General-Knowledge, sin evaluación de MMLU ni TriviaQA.
-- Capacidades declaradas de "agente" y multi-step reasoning mediante el Swarm Core (20 agentes vectorizados) y el enrutamiento diferenciable, según la model card; no verificadas externamente.
-- Capas declaradas de autoevaluación: detección de errores, verificación de coherencia y detección de alucinaciones, sin evidencia empírica publicada.
-- Soporte de tool calling / function calling: no disponible (no se documenta).
-- Capacidades multimodales (visión, audio): no disponibles.
-- Modo "thinking" explícito: no disponible.
-- Multilingüismo: limitado a inglés según la etiqueta de idioma.
+- Generación de texto causal en inglés (pipeline `text-generation`).
+- Etiquetas declaradas que sugieren orientación a agentes y razonamiento multi-paso, sin evidencia técnica publicada.
+- Soporte de tool calling / function calling: no disponible (no documentado).
+- Capacidades multilingües: limitadas al inglés según la etiqueta de idioma.
+- Capacidades especiales (thinking mode, visión, audio): no disponibles.
+- Las capacidades de "autoevaluación", "detección de alucinaciones" y "razonamiento causal" que menciona la model card no están respaldadas por benchmarks ni demos verificables.
 
 ## Casos de uso
 
-- Experimentación académica con arquitecturas de enjambre: el modelo sirve como banco de pruebas reproducible (170 M de parámetros, 0,7 GB, fp32) para estudiar enrutamiento diferenciable y mecanismos de confianza en un transformer pequeño, sin necesidad de clústeres de GPU.
-- Prototipado rápido en CPU: al ser un modelo de 170 M de parámetros en fp32, puede ejecutarse en portátiles y entornos sin GPU para validar pipelines de `transformers` antes de escalar a modelos mayores.
-- Generación de texto creativo en inglés: adecuado para demos de escritura asistida y generación de narrativa breve, dado el uso declarado de TinyStories en el entrenamiento.
-- Investigación sobre metacognición en LLM: las capas declaradas de autoevaluación (predictor de rendimiento, detector de errores) permiten diseñar experimentos sobre autoestima del modelo y calibración, comparando comportamiento declarado frente a mediciones reales.
-- Educación y docencia: útil para explicar en clase la anatomía de un transformer causal pequeño, la tokenización y el ciclo de inferencia, con un repositorio ligero y licencia permisiva.
-- Fine-tuning ligero y pruebas de concepto: con Apache 2.0 y 170 M de parámetros, es viable ajustarlo en una sola GPU consumer para tareas de dominio específico en inglés, como clasificación o generación controlada.
-- Evaluación de robustez y detección de alucinaciones: sirve como caso de estudio para medir hasta qué punto las capas declaradas de "detección de alucinaciones" reducen errores frente a un transformer base de tamaño comparable.
+- Experimentación académica sobre arquitecturas híbridas transformer-swarm: el modelo puede servir para estudiar cómo se implementan mecanismos de enrutamiento y agentes internos en un modelo pequeño de 170 M de parámetros, aunque sin garantías de que las afirmaciones de la model card se correspondan con el comportamiento real.
+- Generación de texto creativo breve en inglés: dado su tamaño reducido y su posible entrenamiento con TinyStories, encaja en la generación de narrativas cortas y simples, no en tareas de razonamiento complejo.
+- Prototipado de pipelines de agentes en local: al ser un modelo pequeño en fp32 (0,7 GB), puede desplegarse en CPU para pruebas de integración de frameworks de agentes, sin esperar calidad de producción.
+- Evaluación de robustez y detección de alucinaciones: útil como caso de estudio para medir la brecha entre afirmaciones de model card y comportamiento observado en tareas de coherencia y lógica.
+- Docencia sobre evaluación de modelos: sirve para ilustrar cómo verificar specs reales (parámetros, tamaño, licencia) frente a descripciones infladas.
+- Filtrado y clasificación de texto simple en inglés: con ajuste fino adicional podría usarse para tareas ligeras de etiquetado, aunque no está entrenado específicamente para ello.
 
 ## Benchmarks y rendimiento
 
@@ -56,35 +51,33 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia en fp32: aproximadamente 0,7 GB solo para pesos; con activaciones y overhead de `transformers`, alrededor de 1-2 GB.
-- VRAM estimada en fp16/bf16: alrededor de 0,35 GB para pesos; en int8, unos 0,17 GB; en int4, unos 0,09 GB (estimaciones teóricas, no hay variantes cuantizadas publicadas).
-- GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM; una RTX 3060, RTX 4060 o superior es más que suficiente. También funciona en CPU.
-- Cabe holgadamente en GPU consumer: GTX 1650, RTX 3050, RTX 4060, Apple Silicon (M1/M2/M3) y en CPU en solitario.
-- Opciones de despliegue: `transformers` (librería declarada), y previsiblemente `vLLM`, `TGI`, `llama.cpp` u `Ollama` si se convierten los pesos a GGUF, aunque el repositorio no publica dichas variantes.
-- Latencia y throughput: no disponibles; por el tamaño, se espera inferencia en tiempo real en CPU y muy rápida en GPU, pero no hay mediciones publicadas.
+- VRAM estimada para inferencia en fp32: aproximadamente 0,7 GB para los pesos, más overhead de activaciones y KV cache (dependiente del contexto, no disponible).
+- En cuantización a 8 bits: ~0,2 GB; a 4 bits: ~0,1 GB (estimación a partir de los 170 M de parámetros; no hay GGUF publicado).
+- GPU recomendadas: cualquier GPU consumer moderna (RTX 3060, RTX 4090) e incluso CPU; el modelo cabe holgadamente en 4-8 GB de VRAM.
+- Cabe en GPU consumer: sí, en cualquier GPU con al menos 2 GB de VRAM.
+- Opciones de despliegue: `transformers` (formato nativo safetensors); vLLM, llama.cpp, Ollama y TGI no tienen soporte confirmado para este checkpoint concreto.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Licencia | Idiomas | Notas |
-|---|---|---|---|---|---|
-| CasualSwarms (SAGI V3.1) | 170 M | no disponible | Apache 2.0 | en | Capas declaradas de enjambre y autoevaluación; sin benchmarks publicados |
-| GPT-2 small | 124 M | 1.024 tokens | MIT | en | Referencia clásica de transformer pequeño; benchmarks públicos |
-| TinyLlama 1.1B | 1.100 M | 2.048 tokens | Apache 2.0 | en, zh | Mayor escala; benchmarks publicados |
-| Qwen2.5-0.5B | 494 M | 32.768 tokens | Apache 2.0 | multilingüe | Contexto largo y benchmarks publicados |
+| Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
+|---|---|---|---|---|
+| CasualSwarms (SAGI V3.1) | 170 M | no disponible | Apache 2.0 | Hugging Face |
+| GPT-2 small | 124 M | 1.024 tokens | MIT | Hugging Face |
+| TinyLlama-1.1B | 1,1 B | 2.048 tokens | Apache 2.0 | Hugging Face |
+| Qwen2.5-0.5B | 494 M | 32.768 tokens | Apache 2.0 | Hugging Face |
 
-La comparación es orientativa: CasualSwarms se sitúa en la franja de transformers pequeños (por debajo de 1 B de parámetros), pero carece de evaluaciones que permitan situarlo frente a GPT-2 small o Qwen2.5-0.5B en MMLU, HumanEval o GSM8K.
+La comparación se limita a parámetros, contexto y licencia; no hay datos de rendimiento publicados para CasualSwarms que permitan comparar calidad.
 
 ## Limitaciones y advertencias
 
-- Las afirmaciones de "AGI", "self-aware" y "self-assessment" de la model card no están respaldadas por benchmarks ni evaluaciones independientes; deben tratarse como declaraciones del autor.
-- No se documenta la longitud de contexto, lo que impide planificar su uso en tareas de contexto largo.
-- Modelo entrenado únicamente en inglés; no se garantiza calidad en castellano ni en otros idiomas.
-- Riesgo elevado de alucinación: a 170 M de parámetros, la capacidad de conocimiento factual es limitada y el autor no publica métricas de veracidad.
-- Sesgos: al entrenar sobre datasets como TinyStories (narrativa infantil sintética) y General-Knowledge, es probable que herede sesgos de esas fuentes; no se documenta ninguna mitigación.
-- Licencia Apache 2.0 permite uso comercial, pero al no haber evaluación de calidad, el uso en producción sin validación propia es arriesgado.
-- No se publican variantes cuantizadas (GGUF, AWQ, GPTQ) ni scripts de conversión; el despliegue en `llama.cpp` u `Ollama` requeriría trabajo adicional.
-- No hay paper, repositorio de código de entrenamiento ni informe técnico que permita reproducir el modelo.
-- El nombre "SAGI V3.1" y la versión "Swarm-8 V3.1" sugieren iteraciones previas, pero no se enlazan versiones anteriores en la información disponible.
+- La model card describe capacidades de "AGI", "autoconciencia" y "detección de alucinaciones" que no están respaldadas por benchmarks, papers ni demos; deben tratarse como afirmaciones no verificadas.
+- Con 170 M de parámetros, el modelo no puede sostener razonamiento complejo, matemáticas avanzadas ni código de producción, independientemente de lo que declare la model card.
+- Riesgo elevado de alucinación y de incoherencia en contextos largos; no hay información sobre la longitud de contexto soportada.
+- Solo inglés; no hay soporte multilingüe declarado.
+- Licencia Apache 2.0 permite uso comercial, pero la ausencia de documentación técnica y de evaluación hace desaconsejable su uso en producción sin una validación exhaustiva propia.
+- Los datasets declarados incluyen conjuntos de naturaleza muy diversa (TinyStories, GSM8K, código); no se especifica la proporción ni el proceso de mezcla, lo que impide reproducir el entrenamiento.
+- No hay tokenizador, configuración de generación ni instrucciones de uso documentadas más allá de la etiqueta `transformers`.
 
 ## Enlaces
 

@@ -2,84 +2,91 @@
 
 ## Resumen
 
-El modelo `software-mansion/react-native-executorch-lraspp` es un modelo de segmentación semántica basado en la arquitectura LRASPP (Lightweight R-ASPP) de PyTorch, exportado al formato `.pte` para el runtime ExecuTorch de Meta. Lo publica Software Mansion, el equipo responsable de la librería `react-native-executorch`, que permite ejecutar modelos de IA en dispositivos móviles mediante React Native. El objetivo es proporcionar un modelo de segmentación de imágenes listo para usar en aplicaciones móviles, sin necesidad de conexión a red ni de infraestructura en la nube.
+LRASPP (Lite R-ASPP) con backbone MobileNetV3-Large es un modelo de segmentación semántica ligero, originalmente publicado en TorchVision, que en este repositorio se distribuye exportado a ExecuTorch en formato `.pte` para su ejecución en dispositivo (on-device) a través de la librería React Native ExecuTorch de Software Mansion. No se trata de un modelo nuevo entrenado por el autor del repo, sino de un artefacto de despliegue: múltiples variantes compiladas del mismo modelo upstream para distintos backends de aceleración (Core ML, XNNPACK y Qualcomm QNN).
 
-La arquitectura LRASPP es una variante ligera de DeepLab, diseñada para ejecución eficiente en dispositivos con recursos limitados. Aunque no se especifican los parámetros exactos del modelo en la información disponible, la versión típica con backbone MobileNetV3-Large ronda los 3-4 millones de parámetros. El modelo se distribuye únicamente en formato `.pte` (ExecuTorch), compatible con la versión 1.1.0 de ExecuTorch. Su relevancia actual radica en la creciente demanda de modelos de visión por computadora que puedan ejecutarse en tiempo real en móviles, especialmente para aplicaciones de realidad aumentada, edición de imagen y accesibilidad.
+El modelo resuelve el problema de segmentación semántica densa (asignar una clase a cada píxel) en entornos móviles y de borde, con un coste computacional muy bajo. Su relevancia actual radica en que permite integrar segmentación de imágenes en aplicaciones React Native sin salir del dispositivo, evitando latencia de red y problemas de privacidad. La arquitectura combina un extractor de características MobileNetV3-Large con un cabezal LR-ASPP (Lite Reduced Atrous Spatial Pyramid Pooling), diseñado específicamente para minimizar parámetros y cómputo.
 
-## Especificaciones técnicas
+El repositorio ocupa aproximadamente 0,1 GB e incluye pesos compilados con precisiones fp16, fp32, int8 y a8w8, además de un directorio `mlx` con notas sobre un backend que no llegó a publicarse. Los ficheros están compilados para el runtime ExecuTorch v1.4.1 y no ofrecen garantía de compatibilidad hacia adelante.
+
+## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | LRASPP (Lightweight R-ASN) con backbone MobileNetV2 (típico) |
-| Parametros totales | no disponible (estimación típica: ~3,2 M para MobileNetV2-Large) |
-| Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | no disponible (modelo de visión, no texto) |
-| Tipos de cuantizacion | no disponible (se exporta a XNNPACK, cuantización probablemente dinámica o estática, pero no se documenta) |
-| Idiomas soportados | no disponible (modelo de visión, no lingüístico) |
-| Licencia | MIT |
-| Formato de pesos | `.pte` (ExecuTorch, compatible con XNNPACK) |
+| Arquitectura | MobileNetV3-Large + cabezal LR-ASPP (segmentación semántica) |
+| Parametros totales | no disponible (repo de 0,1 GB con múltiples variantes compiladas) |
+| Parametros activos | no aplica (no es MoE) |
+| Longitud de contexto | no aplica (modelo de visión, entrada de imagen 520x520) |
+| Tipos de cuantizacion | fp16 (Core ML), fp32 (XNNPACK), int8 (XNNPACK), a8w8 (QNN) |
+| Idiomas soportados | no disponible (no es un modelo de lenguaje) |
+| Licencia | BSD-3-Clause |
+| Formato de pesos | ExecuTorch `.pte` (compilado por backend: coreml, xnnpack, qnn) |
 
 ## Arquitectura y entrenamiento
 
-El modelo LRASPP es una arquitectura de segmentación semántica desarrollada por el equipo de PyTorch Vision. Utiliza una estructura de dos ramas: una rama de bajo nivel que procesa características de alta resolución y una rama de alto nivel que utiliza un módulo de atención espacial para refinar las predicciones. El backbone típico es MobileNetV2, que extrae características a múltiples resoluciones. El entrenamiento se realiza sobre datasets de segmentación como COCO o PASCAL VOC, pero no se dispone de detalles específicos del proceso de entrenamiento de esta exportación concreta.
+El modelo upstream LRASPP de TorchVision emplea MobileNetV3-Large como backbone para extracción de características y un cabezal LR-ASPP que agrega contexto multiescala mediante convoluciones dilatadas y pooling global, con un diseño deliberadamente reducido en parámetros y operaciones para inferencia en dispositivos con recursos limitados. La resolución de entrada observada en las variantes QNN es de 520x520 píxeles.
 
-La exportación a ExecuTorch se realizó con la versión 1.1.0 del runtime. El formato `.pte` es el binario ejecutable que ExecuTorch utiliza para ejecutar modelos en dispositivos. No se documentan técnicas especiales de entrenamiento (como RLHF o DPO) porque se trata de un modelo de visión por computadora, no de un LLM.
+Este repositorio no documenta el proceso de entrenamiento: no se indica número de tokens ni de imágenes, composición del dataset, ni si hubo ajuste fino, RLHF o DPO. La información disponible se limita al proceso de exportación a ExecuTorch. Las variantes QNN incorporan un binario de contexto HTP compilado para una versión concreta de Hexagon (v69, v73, v75, v79, v81), lo que obliga a publicar un fichero por versión y a que el runtime seleccione el correspondiente al SoC del dispositivo. En estas variantes la salida es un índice de clase por píxel con forma `(1, 520, 520)` en int32, en lugar de los logits `(1, 21, 520, 520)` de las variantes Core ML y XNNPACK. El backend MLX fue exportado pero no publicado; el motivo se documenta en `mlx/NOTES.md`.
 
 ## Capacidades
 
-- Segmentación semántica de imágenes: clasifica cada píxel en una categoría (persona, coche, fondo, etc.).
-- Ejecución en dispositivo móvil en tiempo real gracias a la optimización para XNNPACK.
-- Compatible con el framework React Native ExecuTorch, que ofrece una API declarativa para cargar y ejecutar el modelo.
-- Soporte para inferencia local sin conexión, lo que garantiza privacidad y baja latencia.
-- No es un modelo de generación de texto ni de razonamiento; no soporta tool calling ni agentes.
-- No tiene capacidades multilingües, ya que no procesa texto.
+- Segmentación semántica densa por píxel sobre imágenes de entrada de 520x520.
+- Salida de 21 clases (deducible de la forma de logits `(1, 21, 520, 520)`), coherente con el conjunto VOC.
+- Ejecución completamente on-device en React Native mediante React Native ExecuTorch.
+- Aceleración por hardware según backend: Core ML (Apple, fp16), XNNPACK (CPU, fp32/int8) y QNN (HTP de Qualcomm, a8w8).
+- Selección automática del binario QNN adecuado según la versión de Hexagon del dispositivo.
+- No soporta tool calling, agentes, razonamiento multi-paso ni generación de texto: es exclusivamente un modelo de visión.
+- No dispone de capacidades multilingües ni de modo de razonamiento extendido.
 
 ## Casos de uso
 
-- **Edición de fondo en aplicaciones de fotografía**: el modelo puede segmentar el sujeto (persona, objeto) para reemplazar o difuminar el fondo. Se ejecuta en el móvil con el modelo `.pte` cargado a través de `react-native-executorch`.
-- **Realidad aumentada**: en aplicaciones de AR, la segmentación permite colocar objetos virtuales sobre superficies o personas de forma realista. El modelo es ligero y puede ejecutarse a 30 FPS en dispositivos móviles modernos.
-- **Accesibilidad visual**: para personas con discapacidad visual, se puede usar para detectar objetos en el entorno y describirlos mediante voz. El modelo funciona sin conexión, lo que es crucial en entornos urbanos.
-- **Análisis de imágenes médicas**: segmentación de tejidos o estructuras en imágenes de endoscopia o ecografía. El modelo se puede integrar en apps de salud que funcionen en dispositivos de bajo coste.
-- **Videollamadas con fondo virtual**: aplicaciones de videoconferencia móviles pueden usar el modelo para separar a la persona del fondo y reemplazar este último. La baja latencia es clave.
-- **Sistemas de vigilancia doméstica**: detección de personas u objetos en imágenes de cámaras de seguridad locales, sin necesidad de enviar datos a la nube.
+- Segmentación en tiempo real en apps móviles React Native: integración directa mediante el pipeline de segmentación de React Native ExecuTorch, con inferencia local y sin llamadas a servidor.
+- Eliminación o sustitución de fondo en aplicaciones de fotografía: el mapa de clases por píxel permite aislar regiones (persona, fondo) para composición o recorte.
+- Realidad aumentada en el dispositivo: segmentación de la escena para superponer elementos virtuales respetando la silueta de objetos reales, con latencia baja al no depender de la red.
+- Asistencia a personas con discapacidad visual: descripción de la escena basada en el mapa de segmentación, ejecutada localmente para preservar la privacidad de las imágenes capturadas.
+- Preprocesado en pipelines de visión por computador: generación de máscaras semánticas como paso previo a tareas de detección o clasificación en el propio terminal.
+- Aplicaciones de campo sin conectividad: inspección o etiquetado de imágenes en entornos sin red, aprovechando los backends XNNPACK (CPU) o QNN (NPU) según el hardware disponible.
+- Prototipado y evaluación de modelos de segmentación en móvil: comparación de precisión y latencia entre variantes fp32, int8 y a8w8 sin necesidad de infraestructura de servidor.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. No se proporcionan métricas como mIoU, precisión o FPS en el repositorio ni en la documentación de la librería.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- El modelo está diseñado para ejecutarse en dispositivos móviles (Android e iOS) mediante ExecuTorch.
-- VRAM estimada: no disponible, pero al ser un modelo ligero de segmentación, típicamente requiere menos de 1 GB de memoria en el dispositivo.
-- GPU recomendada: no se requiere GPU externa; se ejecuta en el hardware del móvil (CPU o GPU integrada). Para desarrollo, cualquier máquina con capacidad de ejecutar el emulador es suficiente.
-- Compatibilidad: funciona con React Native ExecuTorch, que requiere iOS 12.0+ y Android API 21+. No se recomienda para GPU de escritorio.
-- Opciones de despliegue: se integra mediante `react-native-executorch` (npm). No se dispone de soporte para vLLM, llama.cpp u otros servidores de inferencia, ya que es un modelo móvil.
-- Latencia: no se proporcionan datos concretos, pero la arquitectura ligera permite inferencia en tiempo real en dispositivos modernos.
+- Almacenamiento: los ficheros `.pte` publicados ocupan 6,6 MB (Core ML fp16), 12,3 MB (XNNPACK fp32) y 3,4 MB (XNNPACK int8); las variantes QNN no exponen su tamano en la informacion disponible.
+- VRAM estimada para inferencia: no disponible; el modelo está orientado a memoria unificada de dispositivos móviles, no a GPU de escritorio.
+- GPU recomendadas: no aplica en el sentido convencional; los backends objetivo son Core ML (Apple Silicon/ANE), XNNPACK (CPU ARM) y QNN (Hexagon HTP en Snapdragon 8 Gen 1, 8 Gen 2, 8 Gen 3, 8 Elite y 8 Elite Gen 5).
+- Cabe en GPU consumer: no es el escenario de despliegue previsto; el modelo está pensado para ejecutarse en teléfonos.
+- Opciones de despliegue: runtime ExecuTorch v1.4.1, a través de React Native ExecuTorch o de un runtime ExecuTorch propio; no se distribuyen pesos en safetensors ni GGUF, por lo que no es desplegable con vLLM, llama.cpp, Ollama ni TGI.
+- Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Formato | Licencia | Uso |
+| Modelo | Arquitectura | Parametros | Contexto/entrada | Licencia | Formato |
 |---|---|---|---|---|---|
-| LRASPP (este) | ~3,2 M (típico) | no aplica | `.pte` | MIT | Móvil (React Native) |
-| MobileNetV2 + DeepLabV3 | ~5,4 M | no aplica | TensorFlow Lite / PyTorch | Apache 2.0 | Móvil |
-| UNet MobileNetV2 | ~4,3 M | no aplica | TFLite | Apache 2.0 | Móvil |
+| LRASPP (este repo) | MobileNetV3-Large + LR-ASPP | no disponible | imagen 520x520 | BSD-3-Clause | ExecuTorch `.pte` |
+| DeepLabV3 MobileNetV3 (TorchVision) | MobileNetV3 + DeepLabV3 | no disponible | imagen variable | BSD-3-Clause | PyTorch |
+| FCN ResNet50 (TorchVision) | ResNet50 + FCN | no disponible | imagen variable | BSD-3-Clause | PyTorch |
+| SegFormer (Hugging Face) | Transformer jerárquico | no disponible | imagen variable | Apache-2.0 / otras según variante | safetensors |
 
-No se dispone de una comparación directa en términos de precisión porque no hay benchmarks publicados. La principal diferencia es el formato `.pte` de ExecuTorch, que no es compatible con otros runtimes. Los modelos alternativos suelen estar en TensorFlow Lite o Core ML, lo que puede ser más común en entornos de desarrollo móvil.
+La comparación cuantitativa de rendimiento entre estos modelos no está disponible en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- No se ha publicado información sobre el dataset de entrenamiento ni las clases de segmentación soportadas, por lo que la precisión y cobertura de categorías son desconocidas.
-- El modelo se exportó con ExecuTorch 1.1.0; no se garantiza compatibilidad con versiones anteriores del runtime. Si se utiliza fuera de React Native ExecuTorch, hay que asegurar la misma versión de ExecuTorch.
-- Al ser un modelo de visión, no tiene capacidad de razonamiento ni de lenguaje; no se puede usar para tareas de texto.
-- La licencia MIT permite uso comercial, pero no se proporcionan garantías sobre el rendimiento en casos de uso específicos.
-- El tamaño del repositorio en Hugging Face es de 0.0 GB, lo que sugiere que los archivos `.pte` no se han subido correctamente o están en un repositorio externo; hay que verificar la integridad de los archivos antes de usarlo en producción.
+- Modelo de segmentación semántica: no genera texto, no razona y no admite instrucciones; cualquier uso fuera de visión es inviable.
+- Sesgos: no documentados en la información disponible; al derivar del conjunto de entrenamiento upstream (probablemente VOC), puede presentar sesgo hacia las 20 clases de objetos de dicho conjunto y peor rendimiento en dominios no cubiertos.
+- Riesgo de error en píxeles ambiguos u objetos no representados en las clases de entrenamiento; la salida es una etiqueta por píxel sin puntuación de confianza en las variantes QNN.
+- Compatibilidad estricta: los ficheros están compilados para ExecuTorch v1.4.1 y no hay garantía de compatibilidad hacia adelante; un runtime más antiguo puede fallar al cargarlos.
+- Las variantes QNN están atadas a una versión concreta de Hexagon; usar el fichero equivocado impedirá la ejecución en el dispositivo.
+- El backend MLX no está publicado; no hay soporte para ese entorno en este repositorio.
+- Licencia BSD-3-Clause: permite uso comercial con atribución y sin endoso; conviene revisar los términos del modelo upstream de TorchVision.
+- No se documentan límites de idioma ni de contexto porque no aplican, pero tampoco se documentan métricas de calidad (mIoU) para las variantes cuantizadas, lo que dificulta evaluar la pérdida de precisión respecto a fp32.
 
 ## Enlaces
 
-- [Hugging Face: software-mansion/react-native-executorch-lraspp](https://huggingface.co/software-mansion/react-native-executorch-lraspp)
-- [Documentación de LRASPP en PyTorch](https://docs.pytorch.org/vision/main/models/lraspp.html)
-- [Repositorio de React Native ExecuTorch (GitHub)](https://github.com/software-mansion/react-native-executorch)
-- [Documentación oficial de ExecuTorch](https://pytorch.org/executorch/stable/index.html)
-- [Guía de inicio rápido de React Native ExecuTorch](https://docs.swmansion.com/react-native-executorch/docs/fundamentals/getting-started)
-- [Página oficial de React Native ExecuTorch](https://executorch.swmansion.com/)
-- [Paquete npm react-native-executorch](https://www.npmjs.com/package/react-native-executorch)
+- Repositorio Hugging Face: https://huggingface.co/software-mansion/react-native-executorch-lraspp
+- Modelo upstream LRASPP en TorchVision: https://docs.pytorch.org/vision/main/models/lraspp.html
+- Librería React Native ExecuTorch (npm): https://www.npmjs.com/package/react-native-executorch
+- Documentación de descarga de modelos: https://docs.swmansion.com/react-native-executorch/docs/fundamentals/downloading-models
+- Nota de compatibilidad de ExecuTorch: https://github.com/pytorch/executorch/blob/main/runtime/COMPATIBILITY.md
+- Notas del backend MLX no publicado: https://huggingface.co/software-mansion/react-native-executorch-lraspp/blob/main/mlx/NOTES.md

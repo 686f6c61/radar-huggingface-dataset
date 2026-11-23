@@ -49,29 +49,9 @@
   "benchmarks": [],
   "sources": [
     {
-      "title": "Swift 1.5 Qwen3.8-27B | UkisAI",
-      "url": "https://ukisai.com/swift-1-5-27b",
-      "snippet": "The results below compare Qwen3.8-27B, the foundation base model, Swift 1.0, the first UkisAI adaptation, and Swift 1.5. All three use the same saved evaluation protocols, and every score is a final five-repeat aggregate."
-    },
-    {
-      "title": "Swift-1.5-Qwen3.8-27B-GSQ-RCO-IQ3_S-mtp.gguf - Hugging Face",
-      "url": "https://huggingface.co/ukisai/Swift-1.5-Qwen3.8-27B-GSQ-RCO-GGUF/blob/main/Swift-1.5-Qwen3.8-27B-GSQ-RCO-IQ3_S-mtp.gguf",
-      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
-    },
-    {
-      "title": "ukisai/Swift-1.5-Qwen3.8-27b-INT4 · Hugging Face",
-      "url": "https://huggingface.co/ukisai/Swift-1.5-Qwen3.8-27b-INT4",
-      "snippet": "The external results below compare Qwen3.8-27B, the foundation base model, and Swift 1.5. Both models use the same saved evaluation protocols, and all scores are reported as final aggregate percentages."
-    },
-    {
-      "title": "Qwen3.8-27B - unsloth.ai",
-      "url": "https://unsloth.ai/models/qwen3.8-27b",
-      "snippet": "Qwen3.8-27B is a hybrid thinking open model for agentic coding and chat. Run Qwen3.8-27B locally via Unsloth Dynamic GGUFs and Unsloth Desktop."
-    },
-    {
-      "title": "Models - UkisAI",
-      "url": "https://ukisai.com/models",
-      "snippet": "Swift 1.5 Qwen3.8-27B is UkisAI&#x27;s reasoning-efficient derivative of Qwen3.8-27B. It uses 58.5% fewer thinking tokens while scoring 0.35% higher than the base, for a 9.18× speed-up on several tasks."
+      "title": "How To Boost Facebook Posts (Step-By-Step Walkthrough for …",
+      "url": "https://www.youtube.com/watch?v=lsts_6WJK-Y",
+      "snippet": "Apr 22, 2025 · Want to get more eyes on your content without spending hours setting up complex ads? 📈In this video, we’ll walk you …Read more"
     }
   ]
 }

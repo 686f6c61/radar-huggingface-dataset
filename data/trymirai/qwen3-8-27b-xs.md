@@ -2,83 +2,97 @@
 
 ## Resumen
 
-Qwen3.8-27B-XS es una versión cuantizada y recomprimida del modelo base Qwen/Qwen3.8-27B, publicada por el usuario trymirai bajo el identificador trymirai/Qwen3.8-27B-XS. Se distribuye en formato safetensors y emplea la librería uzu como runtime de carga, con un peso total declarado en safetensors de 6.532.738.832 parámetros, lo que supone una reducción sustancial respecto a los 27B nominales del modelo original. El repositorio ocupa 21,7 GB y está etiquetado con cuantizaciones de 2-bit y 8-bit, lo que sugiere una mezcla de precisión por capas o bloques.
+Qwen3.8-27B-XS es una cuantizacion extrema del modelo Qwen/Qwen3.8-27B desarrollada por Mirai Labs (publicada bajo el identificador `trymirai`). No es un modelo entrenado desde cero, sino un checkpoint comprimido a aproximadamente 2 bits por peso que conserva 6.532.738.832 parametros almacenados en safetensors, lo que reduce el repositorio a 22,3 GB frente al modelo base de 27B. El objetivo declarado es habilitar inferencia local eficiente en Apple silicon, un nicho donde el ancho de banda de memoria es el cuello de botella y las cuantizaciones de 4 bits convencionales resultan demasiado grandes para equipos de consumo.
 
-El modelo se presenta como un checkpoint de generación de texto derivado del Qwen3.8-27B, con licencia Apache 2.0 y acceso restringido (gated) en Hugging Face. La ficha del repositorio no documenta idiomas soportados, composición del dataset de entrenamiento ni resultados de evaluación, y el autor no publica información sobre el proceso de cuantización más allá de las etiquetas. Esto limita la caracterización técnica a lo que puede inferirse del modelo base y de los metadatos disponibles.
+La tecnica empleada es una cuantizacion con trellis y codigos de tipo QTIP (8, 7 o 6 bits de transicion por grupo de cuatro pesos, elegidos por matriz segun coste medido), rotaciones aleatorias con estructura de Kronecker para mitigar valores atipicos, un embedding de entrada con codigo de retículo D4 de 2 bits y una cabeza de salida en enteros de 4 bits con tamano de grupo 64. Sobre esa base se aplicaron dos rondas de destilacion consciente de cuantizacion y una ronda de contexto largo que reentrena solo las escalas de fila y de normalizacion.
 
-Su relevancia actual radica en el interés por reducir el coste de despliegue de modelos de gran tamaño mediante cuantización agresiva y runtimes especializados. No obstante, la ausencia de documentación sobre la metodología de compresión, la falta de benchmarks y la naturaleza no oficial del checkpoint respecto al equipo de Qwen exigen cautela antes de considerarlo para producción.
+Su relevancia actual radica en que demuestra que un modelo de la clase 27B puede comprimirse hasta ~2 bits por peso manteniendo una divergencia KL de 0,1611 y un 86,83% de acuerdo top-1 con el profesor, medidos sobre 20 conversaciones y 14.456 tokens de continuacion generados por el docente. Es, sin embargo, un artefacto muy especializado: depende de la libreria `uzu` y del runtime `mirai`, y solo soporta inferencia en Apple silicon.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (derivado de Qwen/Qwen3.8-27B; arquitectura del base no documentada en la información proporcionada) |
-| Parámetros totales | 6.532.738.832 (según safetensors del checkpoint cuantizado) |
-| Parámetros activos | no disponible |
-| Longitud de contexto | no disponible |
-| Tipos de cuantización | 2-bit y 8-bit (según tags del repositorio) |
+| Arquitectura | Transformer (heredada de Qwen/Qwen3.8-27B); cuantizacion con trellis QTIP y rotaciones de Kronecker |
+| Parametros totales | 6.532.738.832 (pesos almacenados en safetensors tras cuantizacion) |
+| Parametros activos | no disponible |
+| Longitud de contexto | no disponible (el modelo base Qwen3.8-27B define el contexto; no se especifica en la model card) |
+| Tipos de cuantizacion | ~2 bits por peso: trellis con 8, 7 o 6 bits de transicion por grupo de 4 pesos; embedding de entrada con retículo D4 de 2 bits; cabeza de salida INT4 con grupo 64 |
 | Idiomas soportados | no disponible |
-| Licencia | Apache 2.0 |
-| Formato de pesos | safetensors |
+| Licencia | Apache 2.0 (con enlace a la licencia del modelo base Qwen) |
+| Formato de pesos | safetensors (libreria `uzu`) |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información sobre la arquitectura interna del modelo base Qwen/Qwen3.8-27B en la documentación proporcionada, más allá de su naturaleza como modelo de generación de texto. El checkpoint Qwen3.8-27B-XS es una derivación cuantizada: el recuento de parámetros en safetensors (6.532.738.832) indica que el autor ha aplicado una compresión que reduce el número efectivo de pesos almacenados respecto al modelo original de 27B, probablemente mediante una combinación de cuantización de 2 bits y 8 bits por bloques o capas.
+El checkpoint parte de la arquitectura del modelo base Qwen/Qwen3.8-27B, un transformer denso de 27B parametros. La intervencion de Mirai Labs no modifica la topologia de la red, sino que reemplaza la representacion de los pesos: cada matriz se cuantiza con un esquema trellis de tipo QTIP en el que se eligen 8, 7 o 6 bits de transicion por grupo de cuatro pesos en funcion del coste medido, lo que arroja una media de aproximadamente 2 bits por peso. Para reducir los valores atipicos que degradan la cuantizacion de baja profundidad se aplican rotaciones aleatorias con estructura de Kronecker. El embedding de entrada usa un codigo de retículo D4 de 2 bits y la cabeza de salida se mantiene en enteros de 4 bits con grupo de 64.
 
-No hay datos publicados sobre el número de tokens de entrenamiento, la composición del dataset, ni si el modelo base incorporó RLHF, DPO u otras técnicas de alineamiento. Tampoco se documenta ninguna innovación técnica específica del proceso de cuantización (por ejemplo, calibración, mixed-precision selectiva o destilación). El runtime asociado es la librería uzu, que el autor declara como dependencia de carga, pero no se detalla su funcionamiento ni su compatibilidad con otros backends.
+El proceso de ajuste consta de tres fases documentadas: una calibracion sobre un conjunto con texto de razonamiento y de agentes, dos rondas de destilacion consciente de cuantizacion (quantization-aware distillation) contra el modelo profesor, y una ronda final de contexto largo en la que solo se reentrenan las escalas de fila y de normalizacion usando sesiones largas de agente generadas por el propio modelo. La evaluacion se realizo con la herramienta `romakl` sobre su conjunto por defecto (20 conversaciones, 14.456 tokens de continuacion del profesor), obteniendo KL 0,1611306 y acuerdo top-1 del 86,83%. Los pesos de vision, MTP y speculator quedan excluidos del computo de tamano, por lo que el checkpoint no incorpora esas capacidades multimodales.
 
 ## Capacidades
 
-- Generación de texto: el pipeline declarado es text-generation, por lo que el modelo está orientado a completar y producir texto.
-- Razonamiento y código: no hay documentación específica; las capacidades heredadas del modelo base no están verificadas en este checkpoint.
-- Tool calling / function calling: no disponible en la información proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingües: no disponibles; el repositorio no declara idiomas.
-- Capacidades especiales (modo thinking, visión, audio): no disponibles.
+- Generacion de texto y continuacion de conversaciones multi-turno, heredadas del modelo base Qwen3.8-27B.
+- Razonamiento y texto de tipo agente: el conjunto de calibracion incluyo explicitamente texto de razonamiento y de agentes, y la ronda de contexto largo se entreno sobre sesiones de agente.
+- Capacidades de codigo y matematicas: no verificadas de forma independiente en la informacion disponible; se asumen por herencia del modelo base, sin datos propios.
+- Tool calling / function calling: no disponible de forma explicita en la model card; depende de las capacidades del modelo base.
+- Soporte de agentes y razonamiento multi-paso: si, en la medida en que el modelo base lo soporte y el contexto lo permita; el ajuste se oriento a este uso.
+- Capacidades multilingues: no disponibles; la model card no declara lista de idiomas.
+- Vision, audio y modo thinking: no disponibles en este checkpoint (los pesos de vision y MTP se excluyen del empaquetado).
 
 ## Casos de uso
 
-- Despliegue en entornos con VRAM limitada: al reducir el checkpoint a 6.532.738.832 parámetros en safetensors y 21,7 GB de repositorio, el modelo puede intentar ejecutarse en GPUs de consumo alto (por ejemplo, 24 GB) donde un 27B en FP16 no cabría; requiere validar la calidad tras la cuantización de 2 bits.
-- Prototipado rápido de generación de texto: útil para experimentar con la API de Hugging Face y el runtime uzu antes de comprometerse con un modelo mayor, siempre que se acepten las condiciones de acceso restringido.
-- Evaluación de técnicas de cuantización: el checkpoint sirve como caso de estudio para investigar el impacto de mezclar 2-bit y 8-bit en la calidad de salida de un modelo de 27B.
-- Investigación sobre runtimes alternativos: permite probar la librería uzu frente a vLLM, llama.cpp o TGI en tareas de generación de texto.
-- Pruebas de integración en pipelines de CI: con 21,7 GB de descarga, puede incorporarse a tests automatizados de carga y generación en entornos con almacenamiento suficiente.
-- Experimentación académica con licencia permisiva: al ser Apache 2.0, facilita su uso en proyectos de investigación que requieran redistribución, sujeto a las condiciones de acceso del repositorio.
+- Inferencia local en Mac con Apple silicon: el caso de uso principal y unico soportado oficialmente. Un Mac con memoria unificada suficiente puede cargar los 22,3 GB del repositorio y ejecutar el modelo mediante `brew install mirai` y `mirai --model trymirai/Qwen3.8-27B-XS`, sin GPU dedicada.
+- Asistente de codigo en el portatil del desarrollador: al caber en memoria unificada de un equipo de gama alta, permite autocompletado y explicacion de codigo sin enviar el contexto a la nube, con la salvedad de que la calidad cae respecto al modelo de 27B original.
+- Procesamiento por lotes de texto en local: clasificacion, resumen y extraccion de entidades sobre corpus que no pueden salir de la maquina, aprovechando el bajo coste de memoria del checkpoint cuantizado.
+- Prototipado de agentes con tool calling: el ajuste incluyo texto de agente y sesiones largas, por lo que sirve para validar flujos multi-paso en local antes de escalar a un modelo mayor en servidor.
+- Educacion e investigacion sobre cuantizacion extrema: el checkpoint es un caso de estudio reproducible de destilacion consciente de cuantizacion a ~2 bits, con metrica KL y acuerdo top-1 publicadas.
+- Evaluacion comparativa de runtimes: util para medir el rendimiento de `uzu`/`mirai` frente a otras pilas de inferencia en Apple silicon con un modelo de calidad conocida.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible.
+| Metrica | Valor | Contexto |
+|---|---|---|
+| Divergencia KL vs. profesor | 0,1611306 | Conjunto `romakl` por defecto: 20 conversaciones, 14.456 tokens |
+| Acuerdo top-1 con el profesor | 86,83% | Mismo conjunto |
+| Tamano de pesos | 6.532.738.832 parametros / 22,3 GB de repositorio | Excluye vision, MTP y speculator |
+
+No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible de forma oficial; el repositorio pesa 21,7 GB, por lo que se necesita al menos esa cantidad de memoria (o descarga en disco con offloading) para cargar los pesos completos.
-- GPU recomendadas: no documentadas por el autor. Por tamaño de checkpoint, GPUs con 24 GB o más (RTX 3090/4090, A6000, A100 40/80 GB, H100) son candidatas razonables, pero sin validación oficial.
-- ¿Cabe en GPU de consumo? Potencialmente en GPUs de 24 GB si el runtime uzu y la cuantización de 2 bits reducen la huella efectiva; no confirmado.
-- Opciones de despliegue: la librería declarada es uzu; no se documenta compatibilidad con vLLM, llama.cpp, Ollama o TGI.
-- Latencia y throughput: no disponibles.
+- VRAM/memoria estimada: al menos 22,3 GB para cargar el repositorio completo; en la practica se recomienda disponer de 24-32 GB de memoria unificada para margen de contexto y cache KV.
+- GPU recomendadas: no aplica en el soporte oficial; el runtime `mirai` solo funciona en Apple silicon (serie M). No se documenta soporte para A100, H100 ni RTX 4090.
+- Cabe en GPU de consumo: no hay soporte documentado para GPUs NVIDIA o AMD de consumo; en Apple silicon, encaja en equipos con 32 GB o mas de memoria unificada.
+- Opciones de despliegue: `mirai` CLI (via Homebrew) y la libreria `uzu`; compilacion desde fuente segun la guia del repositorio `trymirai/uzu`. No se documenta compatibilidad con vLLM, llama.cpp, Ollama ni TGI.
+- Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Licencia | Formato | Disponibilidad |
+| Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| trymirai/Qwen3.8-27B-XS | 6.532.738.832 (checkpoint cuantizado) | no disponible | Apache 2.0 | safetensors | Gated en HF |
-| Qwen/Qwen3.8-27B (base) | 27B (nominal) | no disponible | no disponible en la información | no disponible | no disponible |
-| Alternativas de 7B cuantizadas | ~7B | variable | variable | GGUF/safetensors | no disponible |
+| Qwen3.8-27B-XS (este) | 6.532.738.832 almacenados (~2 bits/peso) | no disponible | Trellis QTIP ~2 bits | Apache 2.0 | Hugging Face, solo Apple silicon via `uzu`/`mirai` |
+| Qwen/Qwen3.8-27B (base) | 27B | definido por el modelo base | FP16/BF16 original | Apache 2.0 | Hugging Face, multiplataforma |
+| Bonsai 2 (packings evaluados por Mirai) | no disponible | no disponible | 2 bits | no disponible | runtime Prism (llama.cpp fork) |
+| Otras cuantizaciones de 2 bits del mismo base | no disponible | no disponible | 2 bits | segun autor | no disponible |
 
-No se dispone de datos de rendimiento ni de modelos comparables documentados en la información proporcionada para establecer una comparación cuantitativa fiable.
+La model card menciona tres empaquetados Bonsai 2 evaluados por separado con el runtime Prism, pero no aporta sus cifras de KL ni de acuerdo top-1 en el texto disponible, por lo que no es posible una comparacion numerica directa.
 
 ## Limitaciones y advertencias
 
-- La cuantización a 2 bits puede degradar de forma significativa la coherencia, el razonamiento y la fidelidad factual; no hay evaluaciones publicadas que cuantifiquen esta pérdida.
-- Riesgo elevado de alucinación y de errores gramaticales por la compresión agresiva; se recomienda validación humana en cualquier uso productivo.
-- No se declaran idiomas soportados, por lo que el rendimiento multilingüe es incierto.
-- El acceso es restringido (gated): es necesario aceptar condiciones en Hugging Face antes de descargar los pesos.
-- La licencia Apache 2.0 del checkpoint no garantiza que el modelo base Qwen3.8-27B tenga la misma licencia; conviene verificar los términos del modelo original antes de uso comercial.
-- El checkpoint no es oficial del equipo de Qwen; el autor es un tercero (trymirai) y no hay garantías de mantenimiento, soporte ni reproducibilidad.
-- La dependencia de la librería uzu limita la portabilidad frente a ecosistemas más extendidos como transformers, vLLM o llama.cpp.
-- No hay información sobre sesgos conocidos ni sobre el proceso de alineamiento del modelo base.
+- Dependencia de plataforma: solo se soporta inferencia en Apple silicon mediante `mirai`/`uzu`; no hay soporte documentado para CUDA, ROCm ni otras pilas.
+- Perdida de calidad medible: 86,83% de acuerdo top-1 con el profesor implica que aproximadamente 1 de cada 7 tokens generados difiere del modelo original; en tareas de codigo o matematicas precisas el impacto puede ser mayor.
+- Idiomas no declarados: la model card no especifica la lista de idiomas soportados, por lo que el rendimiento multilingue no esta garantizado.
+- Capacidades multimodales ausentes: los pesos de vision y MTP se excluyen del empaquetado, de modo que este checkpoint es exclusivamente de texto.
+- Riesgo de alucinacion: inherente al modelo base y potencialmente amplificado por la cuantizacion agresiva a ~2 bits; no se han publicado evaluaciones de factualidad.
+- Sesgos: no documentados en la informacion disponible; se heredan los del corpus de entrenamiento de Qwen3.8-27B.
+- Licencia: Apache 2.0 permite uso comercial, pero el enlace de licencia apunta a la del modelo base Qwen, cuyos terminos deben respetarse adicionalmente.
+- Madurez: 536 descargas y 3 likes en el momento de la consulta; proyecto reciente (creado en octubre de 2026) sin adopcion amplia, lo que desaconseja su uso en produccion critica sin validacion propia.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/trymirai/Qwen3.8-27B-XS
+- Modelo en Hugging Face: https://huggingface.co/trymirai/Qwen3.8-27B-XS
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
+- Model card del base: https://huggingface.co/Qwen/Qwen3.8-27B/blob/main/README.md
+- Licencia del base: https://huggingface.co/Qwen/Qwen3.8-27B/blob/main/LICENSE
+- Blog de cuantizacion de Mirai: https://trymirai.com/blog/quantization
+- Repositorio `uzu` (guia de ejecucion): https://github.com/trymirai/uzu/blob/how-to/docs/how-to-run-uzu.md
+- Herramienta de evaluacion `romakl`: https://github.com/trymirai/romakl/tree/bfb79f548a80b6af7d9f4d4e35d0db99b97708e8
+- Runtime Prism (fork de llama.cpp): https://github.com/PrismML-Eng/llama.cpp/tree/3f035ba664f8f08c3d9432b6421f8f1a0da1f37a

@@ -19,7 +19,7 @@
     "region:us"
   ],
   "likes": 1,
-  "downloads_30d": 1996,
+  "downloads_30d": 1991,
   "trending_score": 0,
   "parameters": 1543714304,
   "parameters_human": "1.54B",
@@ -38,31 +38,6 @@
   "removal_pattern": null,
   "renamed_to": null,
   "renamed_at": null,
-  "benchmarks": [
-    {
-      "task": "Retrieval-plan proposal (held-out)",
-      "dataset": "SZL Khipu held-out eval",
-      "metric": "Plan validity (11/11)",
-      "value": 1
-    },
-    {
-      "task": "Retrieval-plan proposal (held-out)",
-      "dataset": "SZL Khipu held-out eval",
-      "metric": "Grounding correct (4/5)",
-      "value": 0.8
-    },
-    {
-      "task": "Retrieval-plan proposal (held-out)",
-      "dataset": "SZL Khipu held-out eval",
-      "metric": "Abstention correct (2/6)",
-      "value": 0.333
-    },
-    {
-      "task": "Retrieval-plan proposal (held-out)",
-      "dataset": "SZL Khipu held-out eval",
-      "metric": "Hallucinated citations",
-      "value": 0
-    }
-  ],
+  "benchmarks": [],
   "sources": []
 }

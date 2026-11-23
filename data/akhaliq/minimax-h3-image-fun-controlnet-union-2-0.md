@@ -2,92 +2,93 @@
 
 ## Resumen
 
-MiniMax-H3-Image-Fun-Controlnet-Union-2.0 es un empaquetado experimental publicado por el usuario akhaliq que combina dos modelos upstream en un unico repositorio de Hugging Face: el modelo base de generacion y edicion de imagen MiniMax-H3-Image (desarrollado por MiniMax) y la rama ControlNet union MiniMax-H3-Fun-Controlnet-Union-2.0 (desarrollada por alibaba-pai sobre el codigo de VideoX-Fun). El objetivo es facilitar la experimentacion con control estructural sobre el modelo de imagen, algo que en el ecosistema original se planteo para el transformer de video.
+MiniMax-H3-Image-Fun-Controlnet-Union-2.0 es un repositorio empaquetado publicado por el usuario akhaliq que combina el modelo base MiniMaxAI/MiniMax-H3-Image con la rama de control alibaba-pai/MiniMax-H3-Fun-Controlnet-Union-2.0. Se trata de una integración orientada a diffusers que expone 8 condiciones de control union (canny, gray, HED y otras) más inpainting sobre el stack de MiniMax-H3. El repositorio incluye scripts reproducibles, muestras y un flujo de trabajo para ComfyUI.
 
-El modelo base es un transformer de difusion (DiT) de 50 capas con tamano oculto 5376, acompanado de un VAE de imagen, un text encoder, tokenizer, processor y scheduler. La rama ControlNet anade una proyeccion de entrada (`control_proj_in`) y 10 bloques de control (`control_blocks`) que inyectan skips con compuerta cero en las capas 0, 5, 10, ..., 45 del transformer en tiempo de ejecucion, con un peso aproximado de 13,6 GB. Soporta ocho condiciones de control (Canny, Depth, HED, MLSD, Pose, Scribble, Layout, Gray) mas inpainting.
+La relevancia del repositorio no reside en un modelo nuevo, sino en la validación técnica de una combinación concreta: el autor documenta que la rama de control, entrenada sobre el modelo de vídeo MiniMax-H3, funciona correctamente con el stack de vídeo (las 9 demos oficiales reproducidas a 40 pasos, guidance_scale=1.0, control_context_scale=1.0, seed 43, 704×1280 y 24 fps), pero no logra dirigir el DiT de imagen destilado de 6 pasos. Esta distinción es importante para quien evalúe el modelo: el control espacial denso fiable se obtiene con canny sobre el stack de vídeo, mientras que el control de pose con esqueletos solo aproxima clases posturales gruesas.
 
-La relevancia de este repositorio es acotada y muy especifica: no es un modelo nuevo ni un checkpoint afinado, sino una conveniencia de empaquetado para quien quiera probar el ControlNet de video sobre el modelo de imagen. El propio autor advierte de que la rama de control esta fuera de distribucion respecto al checkpoint de imagen y de que los resultados pueden ser degradados o inexistentes hasta que se adapte o afine. Es, por tanto, material de investigacion, no un artefacto listo para produccion.
+El repositorio ocupa 82,8 GB y acumula 465 descargas y 22 likes en el momento de la consulta. La licencia es la MiniMax-H3 Community License Agreement, que conviene revisar antes de cualquier uso comercial.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer de difusion (DiT) de 50 capas con hidden size 5376, mas VAE de imagen y text encoder; rama ControlNet union con 10 bloques de control |
-| Parametros totales | no disponible (el repositorio no publica el recuento; la rama de control pesa aproximadamente 13,6 GB en safetensors) |
+| Arquitectura | DiT (diffusion transformer) para imagen y vídeo, con rama ControlNet-Union-2.0 (8 condiciones union + inpainting) |
+| Parametros totales | no disponible |
 | Parametros activos | no aplica (no es MoE) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible (la model card solo menciona ejecucion en `bfloat16`) |
+| Longitud de contexto | no disponible (no aplica en el sentido de LLM; ventana temporal de vídeo no especificada) |
+| Tipos de cuantizacion | no disponible (pesos en safetensors; el autor no documenta cuantizaciones) |
 | Idiomas soportados | no disponible |
-| Licencia | MiniMax-H3 Community License Agreement (`other`); se aplican los terminos de ambos upstream |
-| Formato de pesos | safetensors (`transformer/`, `transformer_diffusers/`, `vae/`, `vae_diffusers/`, `pdd_fused_heads.safetensors`, `MiniMax-H3-Fun-Controlnet-Union-2.0.safetensors`) |
+| Licencia | minimax-h3-community-license-agreement (license: other) |
+| Formato de pesos | safetensors (librería diffusers) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base MiniMax-H3-Image es un transformer de difusion con 50 capas y dimension oculta de 5376, disenado para text-to-image y edicion de imagen. El repositorio incluye dos disposiciones de pesos: la nativa (`transformer/`, `vae/`) y la variante para diffusers (`transformer_diffusers/`, `vae_diffusers/`), ademas de text encoder, tokenizer, processor, scheduler y un fichero `pdd_fused_heads.safetensors`. Se expone a traves de `MiniMaxH3ImagePipeline` (variante nativa) y `MiniMaxH3ImageModularPipeline` (variante diffusers).
+El modelo base MiniMax-H3-Image es un DiT destilado con PDD (progressive distillation) que genera imágenes en 6 pasos. La rama de control es un ControlNet-Union-2.0 entrenado sobre el modelo de vídeo MiniMax-H3, con 8 condiciones union más inpainting. El repositorio fusiona ambos componentes y documenta que el cableado en tiempo de ejecución es matemáticamente exacto: la salida con escala 0 es bit-idéntica al modelo base.
 
-La rama ControlNet union fue entrenada por los autores de VideoX-Fun contra el transformer de video de MiniMax-H3, no contra el modelo de imagen. Es una rama residual paralela que inyecta skips con compuerta cero en 10 de las 50 capas del transformer (0, 5, 10, ..., 45) en tiempo de ejecucion, por lo que no puede plegarse en los pesos base. La compatibilidad de formas se debe a que ambas arquitecturas comparten hidden size 5376 y 50 capas. En la receta original las senales de control son videos a 24 fps con recuentos de frames de la forma `17n + 5`; para control sobre imagen individual hay que tratar la imagen como un video de 1 o 5 frames y validar empiricamente. La guia esta destilada para `guidance_scale = 1.0` y es necesario usar el fichero `minimax_h3_control_inpaint_post_norm.yaml` de VideoX-Fun, ya que la configuracion v1 descoloca silenciosamente la mitad de los bloques de control.
-
-No se dispone de informacion sobre el numero de tokens de entrenamiento, la composicion del dataset ni si hubo RLHF, DPO u otras etapas de alineacion, ni para el modelo base ni para la rama de control.
+Sin embargo, el autor verifica que los bloques de control entrenados sobre vídeo colapsan la señal espacial en la trayectoria destilada del modelo de imagen: perturban pero no dirigen. Como trabajo futuro se propone un fine-tuning de la rama de control sobre el DiT de H3-Image con el DiT congelado y arranque con puerta a cero, con la maquinaria disponible en el directorio `merge/`. No se documentan en la información disponible el número de tokens de entrenamiento, la composición del dataset ni el uso de RLHF o DPO, que no aplican a un modelo de difusión de este tipo.
 
 ## Capacidades
 
-- Generacion de imagen a partir de texto (text-to-image) mediante el pipeline MiniMax-H3-Image.
-- Edicion de imagen (image-to-image, image-editing) con el modelo base.
-- Control estructural condicionado por ocho modalidades: Canny, Depth, HED, MLSD, Pose, Scribble, Layout y Gray.
-- Inpainting mediante la rama de control union.
-- Inyeccion de control en tiempo de ejecucion sobre 10 capas del transformer, sin modificar los pesos base.
-- Carga mediante la libreria diffusers (`DiffusionPipeline.from_pretrained` en `bfloat16`).
-- Soporte de tool calling, agentes, razonamiento multi-step, vision, audio o thinking mode: no disponible (no es un modelo de lenguaje; es un modelo generativo de imagen).
+- Generación de imagen texto-a-imagen y imagen-a-imagen mediante el pipeline de diffusers.
+- Control espacial denso sobre el stack de vídeo con condición canny, gray y HED, validado como la vía fiable para control de imagen fija.
+- Control de pose con esqueletos sobre imagen fija de forma parcial: dirige clases posturales gruesas (sentado, arrodillado) pero ignora movimientos como las estocadas.
+- Inpainting como condición adicional dentro del paquete union.
+- Generación de vídeo con el modelo MiniMax-H3 subyacente, con las 9 demos oficiales reproducidas a 40 pasos, guidance_scale=1.0, control_context_scale=1.0, seed 43, resolución 704×1280 y 24 fps.
+- Receta de fotogramas repetidos que convierte el stack de vídeo en un controlnet de imagen fija.
+- Edición multi-referencia mediante el modelo H3-Image con referencias tipo `<Picture 1>`, descrita por el autor como genuinamente potente.
+- Flujo de trabajo para ComfyUI incluido en el repositorio.
+- Soporte de tool calling, agentes, razonamiento o capacidades multilingües: no disponible (no es un modelo de lenguaje).
 
 ## Casos de uso
 
-- Experimentacion con ControlNet de video sobre un modelo de imagen: el caso de uso central del repositorio; permite evaluar si la rama de control entrenada para el transformer de video transfiere senal util al checkpoint de imagen, con resultados a documentar en la seccion de discusiones del repo.
-- Edicion de imagen guiada por estructura en laboratorio: usar Canny o Depth como condicion para preservar la geometria de una imagen de entrada y observar como responde el modelo base ante condiciones fuera de distribucion.
-- Inpainting controlado en prototipos de investigacion: combinar la rama union con la configuracion `minimax_h3_control_inpaint_post_norm.yaml` para rellenar regiones enmascaradas y medir la calidad frente al modelo base sin control.
-- Control de pose en generacion de figuras humanas: emplear la condicion Pose para imponer esqueletos y evaluar la fidelidad anatomica del pipeline experimental.
-- Control de layout en composicion de escenas: usar la condicion Layout para fijar la disposicion espacial de objetos y comparar con la generacion libre del modelo base.
-- Base para fine-tuning de la rama de control: el empaquetado facilita adaptar los 10 bloques de control al checkpoint de imagen, que es precisamente la limitacion senalada por el autor.
-- Docencia y divulgacion tecnica: ilustrar como se acopla una rama ControlNet residual con compuerta cero a un DiT y por que la compatibilidad de formas no garantiza calidad de control.
+- Control de composición en imagen fija con canny: usar el stack de vídeo con 22 fotogramas repetidos de un mapa canny, 40 pasos y guidance_scale=1.0 para transferir la geometría exacta de una pose o silueta a una imagen nueva con identidad y vestuario dictados por el prompt.
+- Transferencia de pose extrema a personajes: el showcase del autor demuestra que, con escala de control 1.0 en la primera fila y 0.6 en las siguientes, el modelo reproduce ángulos exactos de brazos y piernas que los baselines de referencia solo aproximan.
+- Edición multi-referencia con H3-Image: emplear referencias `<Picture 1>` para tareas de edición de imagen donde la identidad y el vestuario deben mantenerse, aprovechando la fortaleza documentada de esta vía.
+- Reproducción de pipelines de vídeo controlado: reutilizar los scripts de `merge/card_repro_job.py` para generar vídeo a 704×1280 y 24 fps con condiciones de control, útil para prototipado de efectos visuales.
+- Integración en ComfyUI: desplegar el flujo incluido para experimentar con las 8 condiciones union sin escribir código de inferencia.
+- Investigación sobre adaptación de ramas de control: el repositorio sirve como caso de estudio documentado de por qué una rama entrenada en vídeo no transfiere directamente a un DiT de imagen destilado, con evidencia en `assets/diag*` y `assets/image-dit-official/`.
+- Inpainting controlado: usar la condición de inpainting del paquete union para rellenar regiones manteniendo coherencia con el resto de la escena.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye metricas cuantitativas (FID, CLIP score, SSIM ni comparativas con otros modelos) y advierte explicitamente de que el control puede ser degradado o ausente hasta que la rama se adapte o afine.
+No se han publicado resultados de benchmarks en la informacion disponible. El autor aporta evidencia cualitativa mediante rejillas comparativas (pose, esqueleto, variantes de escala de control) y la reproducción de las 9 demos oficiales, pero no cifras de métricas como FID, CLIP score o SSIM.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible de forma oficial. Como referencia de orden de magnitud, la rama de control sola pesa aproximadamente 13,6 GB en safetensors y el repositorio incluye ademas el transformer completo, el VAE y el text encoder; en `bfloat16` el conjunto requiere previsiblemente varias decenas de GB, aunque no se publica una cifra concreta.
-- GPU recomendadas: no disponible. Por el volumen de pesos, el uso en GPU de datacenter (A100, H100) es el escenario plausible; no hay confirmacion oficial.
-- Cabe en GPU de consumo: no disponible. No se documenta ejecucion en RTX 4090 ni en tarjetas de 24 GB o menos.
-- Opciones de despliegue: diffusers (`DiffusionPipeline.from_pretrained` con `torch_dtype="bfloat16"`) y el codigo de VideoX-Fun con la configuracion `minimax_h3_control_inpaint_post_norm.yaml`. No se mencionan vLLM, llama.cpp, Ollama ni TGI (no aplican a un modelo de difusion de imagen).
-- Latencia y throughput estimados: no disponible.
+- VRAM estimada para inferencia: no disponible de forma explícita; el repositorio pesa 82,8 GB, por lo que la carga completa de pesos en precisión nativa excede con holgura cualquier GPU de consumo.
+- GPU recomendadas: el autor reporta la reproducción de las 9 demos oficiales en una sola H200 con una única carga de modelo.
+- GPU de consumo: no se documenta que quepa en tarjetas consumer; el tamaño del repositorio sugiere que requiere aceleradores de datacenter o estrategias de offload no descritas.
+- Opciones de despliegue: diffusers (librería declarada) y ComfyUI (flujo incluido). No se mencionan vLLM, llama.cpp, Ollama ni TGI, que no aplican a un modelo de difusión.
+- Latencia y throughput: no disponibles; solo se documentan los ajustes de inferencia (40 pasos, guidance_scale=1.0, seed 43) sin tiempos medidos.
 
 ## Comparativa con modelos similares
 
-| Modelo | Tipo | Parametros | Contexto | Licencia | Estado |
+| Modelo | Tipo | Contexto / resolución | Control | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| akhaliq/MiniMax-H3-Image-Fun-Controlnet-Union-2.0 | DiT de imagen + ControlNet union (empaquetado experimental) | no disponible | no disponible | MiniMax-H3 Community License | Repositorio de comunidad, no oficial |
-| MiniMaxAI/MiniMax-H3-Image | DiT de imagen (modelo base) | no disponible | no disponible | MiniMax-H3 Community License | Modelo oficial de MiniMax |
-| alibaba-pai/MiniMax-H3-Fun-Controlnet-Union-2.0 | Rama ControlNet union para MiniMax-H3 | no disponible (aprox. 13,6 GB) | no disponible | MiniMax-H3 Community License | Modelo oficial de alibaba-pai / VideoX-Fun |
+| akhaliq/MiniMax-H3-Image-Fun-Controlnet-Union-2.0 | DiT imagen + rama control sobre vídeo | 704×1280 documentado en vídeo | 8 condiciones union + inpainting | MiniMax-H3 Community License | Hugging Face, 465 descargas |
+| MiniMaxAI/MiniMax-H3-Image | DiT imagen destilado 6 pasos | no disponible | sin rama de control | MiniMax-H3 Community License | Hugging Face (modelo base) |
+| alibaba-pai/MiniMax-H3-Fun-Controlnet-Union-2.0 | Rama ControlNet-Union-2.0 | no disponible | 8 condiciones union + inpainting | no disponible en la información proporcionada | Hugging Face (modelo base) |
 
-No se dispone de datos de rendimiento comparativo entre estas variantes ni con alternativas de otros laboratorios, por lo que no es posible establecer una comparativa cuantitativa.
+Los tres elementos comparados pertenecen a la misma familia y comparten licencia o procedencia; no se dispone de datos de rendimiento cuantitativos para establecer una comparación numérica con alternativas de otros desarrolladores.
 
 ## Limitaciones y advertencias
 
-- La rama de control esta fuera de distribucion respecto al checkpoint de imagen: el autor advierte de control degradado o ausente hasta que se adapte o afine.
-- La rama fue entrenada contra el transformer de video, no contra el de imagen; la compatibilidad de formas (hidden 5376, 50 capas) no garantiza calidad de control.
-- Las senales de control originales son videos a 24 fps con recuentos de frames `17n + 5`; el uso sobre imagen individual exige tratarla como video de 1 o 5 frames y validar empiricamente.
-- La guia esta destilada para `guidance_scale = 1.0`; usar otro valor puede degradar el resultado.
-- Es obligatorio cargar la configuracion `minimax_h3_control_inpaint_post_norm.yaml` de VideoX-Fun; la configuracion v1 descoloca silenciosamente la mitad de los bloques de control.
-- El empaquetado es no oficial y no esta respaldado por MiniMax ni por los autores de VideoX-Fun.
-- Licencia MiniMax-H3 Community License Agreement: hay que revisar los terminos de uso comercial en `LICENSE` (modelo base) y `LICENSE.controlnet` (rama de control) antes de cualquier despliegue productivo.
-- No hay informacion sobre sesgos, riesgo de alucinacion visual, idiomas soportados ni limites de contexto.
-- El repositorio registra 0 descargas y 0 likes en el momento de la consulta, sin validacion comunitaria documentada.
-- No apto para produccion en su estado actual: es material de investigacion para experimentar con el acoplamiento ControlNet.
+- La rama de control no dirige el DiT de imagen destilado de 6 pasos: perturba la salida pero no la controla, según la verificación del propio autor.
+- El control de pose con esqueletos sobre imagen fija es parcial: funciona para posturas gruesas (sentado, arrodillado) pero ignora movimientos como las estocadas.
+- El control espacial denso fiable en imagen fija requiere la receta de fotogramas repetidos con canny sobre el stack de vídeo, no una llamada directa al modelo de imagen.
+- El repositorio pesa 82,8 GB, lo que limita su despliegue a entornos con almacenamiento y memoria abundantes.
+- La licencia MiniMax-H3 Community License Agreement impone condiciones específicas; debe revisarse el archivo LICENSE antes de cualquier uso comercial.
+- No se documentan idiomas soportados ni sesgos conocidos en la información disponible.
+- Riesgo de alucinación visual y de deriva de identidad cuando se usa escala de control alta; el autor recomienda 0.6 para que identidad y vestuario sigan al prompt.
+- No se han publicado benchmarks cuantitativos, por lo que la evaluación del rendimiento depende de evidencia cualitativa.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/akhaliq/MiniMax-H3-Image-Fun-Controlnet-Union-2.0
-- Modelo base MiniMax-H3-Image: https://huggingface.co/MiniMaxAI/MiniMax-H3-Image
-- ControlNet union upstream: https://huggingface.co/alibaba-pai/MiniMax-H3-Fun-Controlnet-Union-2.0
-- Codigo VideoX-Fun: https://github.com/aigc-apps/VideoX-Fun
-- Demo Space (creacion via ML Intern): https://hf.co/chat?mode=ml-intern&prompt=Build%20a%20demo%20Space%20for%20akhaliq%2FMiniMax-H3-Image-Fun-Controlnet-Union-2.0
+- Repositorio en Hugging Face: https://huggingface.co/akhaliq/MiniMax-H3-Image-Fun-Controlnet-Union-2.0
+- Modelo base de imagen: https://huggingface.co/MiniMaxAI/MiniMax-H3-Image
+- Rama de control original: https://huggingface.co/alibaba-pai/MiniMax-H3-Fun-Controlnet-Union-2.0
+- Assets de la rama de control original: https://huggingface.co/alibaba-pai/MiniMax-H3-Fun-Controlnet-Union-2.0/tree/main/asset
+- Evidencia de diagnóstico en el repositorio: `assets/diag*` y `assets/image-dit-official/`
+- Muestras y variantes: `assets/showcase2/`, `assets/showcase2/variants/`, `assets/showcase3/`
+- Script de reproducción: `merge/card_repro_job.py` y maquinaria de fine-tuning en `merge/`
+- ML Intern (herramienta citada en la model card): https://hf.co/chat?mode=ml-intern

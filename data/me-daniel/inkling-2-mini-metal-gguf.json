@@ -5,7 +5,7 @@
   "author": "Me-Daniel",
   "url": "https://huggingface.co/Me-Daniel/Inkling-2-Mini-Metal-GGUF",
   "created_at": "2026-11-21T21:07:51.000Z",
-  "updated_at": "2026-11-22T00:22:23.000Z",
+  "updated_at": "2026-11-22T07:39:59.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -25,7 +25,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 108,
   "trending_score": 0,
   "parameters": 26070385152,
   "parameters_human": "26.07B",

@@ -2,51 +2,49 @@
 
 ## Resumen
 
-P-Image-OSS es un modelo de difusión para generación y edición de imágenes desarrollado por PrunaAI, obtenido mediante un ajuste fino (finetune) del modelo base MiniMaxAI/MiniMax-H3. Está publicado en Hugging Face bajo la librería `diffusers` y la etiqueta de pipeline `text-to-image`, e incorpora además capacidades declaradas de `image-to-image`, `image-editing` y `prompt-upsampling`. Con 33.122.992.896 parámetros totales según los pesos en safetensors y un repositorio de 186,8 GB, se sitúa en la categoría de modelos de imagen de gran escala.
+P-Image-OSS es un modelo de difusion para generacion y edicion de imagenes desarrollado por PrunaAI, obtenido mediante fine-tuning del modelo MiniMaxAI/MiniMax-H3. Se publica bajo la libreria diffusers y esta orientado a tareas de text-to-image e image-to-image, incluyendo edicion de imagenes y ampliacion de prompts (prompt upsampling). El modelo cuenta con aproximadamente 33.100 millones de parametros (33.122.992.896 segun los pesos en safetensors) y un repositorio de 186,8 GB, lo que lo situa en la categoria de modelos de difusion de gran escala.
 
-El modelo resuelve tareas de síntesis y manipulación de imágenes a partir de descripciones textuales, apoyándose en la arquitectura y el conocimiento del modelo fundacional MiniMax-H3. Su interés actual radica en que PrunaAI lo distribuye como un artefacto abierto (OSS) compatible con el ecosistema `diffusers` y con la variante `modular-diffusers`, lo que facilita su integración en pipelines de generación de imágenes ya existentes.
+Su relevancia actual radica en que parte de un modelo base reciente (MiniMax-H3) y lo adapta bajo el paraguas de la licencia comunitaria de MiniMax, con soporte nativo para el ecosistema diffusers y la variante modular-diffusers. La model card esta mayoritariamente compuesta por elementos de marca y enlaces de la organizacion, sin detallar la composicion del dataset de entrenamiento ni resultados de benchmarks.
 
-La licencia es la MiniMax-H3 Community License Agreement, un acuerdo propio del modelo base que condiciona el uso comercial. El modelo solo declara soporte para inglés (`en`), dato relevante para planificar su uso en producción en entornos castellanohablantes. En el momento de la ficha acumula 2.894 descargas y 379 likes.
+La informacion publica disponible es limitada en cuanto a arquitectura interna, datos de entrenamiento y evaluacion cuantitativa; esta ficha recoge exclusivamente los datos verificables de la model card y de los metadatos de Hugging Face, indicando de forma explicita cuando un dato no esta disponible.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (modelo de difusión basado en MiniMax-H3; detalles de la arquitectura interna no publicados en la información disponible) |
+| Arquitectura | Modelo de difusion (text-to-image / image-to-image) basado en MiniMaxAI/MiniMax-H3; detalles internos no disponibles |
 | Parametros totales | 33.122.992.896 |
 | Parametros activos | no disponible (no se indica que sea MoE) |
-| Longitud de contexto | no disponible (no aplica de forma directa a un modelo de difusión texto-imagen; no se especifica longitud de prompt) |
+| Longitud de contexto | no disponible (modelo de imagen, no de texto) |
 | Tipos de cuantizacion | no disponible |
-| Idiomas soportados | en (inglés) |
+| Idiomas soportados | en (ingles) |
 | Licencia | minimax-h3-community-license-agreement (license: other) |
 | Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un finetune del modelo base MiniMaxAI/MiniMax-H3, del que hereda la arquitectura subyacente. La información disponible no detalla la arquitectura interna (tipo de backbone, mecanismo de atención, componentes del pipeline de difusión) ni el volumen o composición de los datos de entrenamiento empleados en el ajuste fino. Tampoco se especifica si se aplicaron técnicas de alineación como RLHF o DPO, algo poco habitual en modelos de generación de imágenes.
+El modelo se presenta como un fine-tune de MiniMaxAI/MiniMax-H3, integrado en la libreria diffusers y compatible con la variante modular-diffusers. La model card no especifica la arquitectura interna del backbone de difusion (tipo de UNet o transformer de difusion, mecanismo de atencion, scheduler empleado) ni el numero de pasos de entrenamiento o la composicion del dataset utilizado en el fine-tuning.
 
-Los rasgos técnicos que sí se pueden afirmar con la información proporcionada son: se distribuye en formato safetensors, es compatible con `diffusers` y con `modular-diffusers`, y expone funcionalidades de generación texto-imagen, imagen-imagen, edición de imágenes y upsampling de prompts. El tamaño del repositorio (186,8 GB) y el recuento de parámetros (unos 33,1 mil millones) indican un modelo de gran huella, con requisitos de almacenamiento y memoria considerables. No se dispone de información sobre innovaciones técnicas específicas del ajuste realizado por PrunaAI.
+No se dispone de informacion sobre el volumen de tokens o pares imagen-texto empleados, ni sobre si se aplicaron tecnicas de preferencia (RLHF, DPO) o de destilacion. Tampoco se documentan innovaciones tecnicas especificas mas alla de las capacidades declaradas en los tags: generacion texto-imagen, imagen-imagen, edicion y prompt upsampling.
 
 ## Capacidades
 
-- Generación de imágenes a partir de texto (text-to-image) en inglés.
-- Generación y transformación imagen a imagen (image-to-image).
-- Edición de imágenes guiada por instrucciones o prompts.
-- Upsampling de prompts: refinado o expansión automática de la descripción textual antes de la generación.
-- Integración con el ecosistema `diffusers` y con la variante `modular-diffusers`.
-- Soporte multilingüe limitado al inglés según la model card.
-- No se declaran capacidades de tool calling, function calling, agentes ni razonamiento multi-paso, al no ser un modelo de lenguaje.
-- No se declaran capacidades de visión, audio o modo "thinking" más allá de las tareas de imagen descritas.
+- Generacion de imagenes a partir de descripciones textuales (text-to-image).
+- Transformacion de imagenes de entrada guiada por texto (image-to-image).
+- Edicion de imagenes existentes mediante instrucciones en lenguaje natural.
+- Ampliacion o enriquecimiento de prompts (prompt upsampling) para mejorar la especificidad de las descripciones.
+- Soporte en el ecosistema diffusers, incluida la integracion con modular-diffusers.
+- Idioma de prompting soportado: ingles.
+- No se documentan capacidades de tool calling, agentes, razonamiento multi-paso, vision de entrada para comprension, audio ni modo thinking.
 
 ## Casos de uso
 
-- Generación de ilustraciones para marketing y contenidos: el modelo produce imágenes a partir de descripciones textuales en inglés, adecuado para crear material visual de campañas o blogs de forma iterativa.
-- Edición de imágenes en flujos de diseño: mediante image-to-image y edición guiada por prompt, permite modificar composiciones existentes sin rehacerlas desde cero.
-- Prototipado rápido de conceptos visuales: útil para equipos de producto que necesitan variaciones de una idea antes de encargar arte final.
-- Upsampling de prompts para usuarios no expertos: la funcionalidad de prompt-upsampling ayuda a transformar descripciones breves en prompts más ricos, reduciendo la curva de aprendizaje.
-- Integración en pipelines `diffusers` existentes: al ser compatible con la librería, se puede incorporar en infraestructuras de generación de imágenes ya desplegadas sin reescribir el código de orquestación.
-- Creación de variaciones de imágenes de catálogo: a partir de una imagen base (image-to-image) se pueden generar variantes de estilo o composición para pruebas A/B de material visual.
-- Investigación en ajuste fino de modelos de difusión: al ser un finetune documentado sobre MiniMax-H3, sirve como referencia para estudiar el efecto del ajuste en modelos de imagen de gran escala.
+- Generacion de ilustraciones para articulos y blogs: el modelo puede producir imagenes a partir de prompts en ingles, adecuado para equipos editoriales que necesitan material visual rapido sin disenador.
+- Creacion de assets para interfaces y prototipos: util para generar variaciones de iconos, fondos o mockups a partir de descripciones, integrable en flujos de diseno con diffusers.
+- Edicion de fotografias de producto: mediante image-to-image se pueden aplicar cambios guiados por texto (fondo, iluminacion, estilo) manteniendo la estructura de la imagen original.
+- Generacion de material para campanas de marketing: el prompt upsampling permite partir de una idea breve y obtener descripciones mas ricas que produzcan resultados mas controlados.
+- Iteracion creativa en estudios de diseno: el flujo text-to-image e image-to-image permite explorar variaciones de estilo sobre una misma base visual.
+- Prototipado de conceptos en investigacion de vision por computador: sirve como generador de datos sinteticos o como baseline de edicion para experimentos con modelos de difusion de gran escala.
 
 ## Benchmarks y rendimiento
 
@@ -54,31 +52,31 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible de forma explícita; con 33,1 mil millones de parámetros, los pesos en precisión completa superan los 60 GB, por lo que la inferencia requiere GPUs de gran memoria o cuantización.
-- GPU recomendadas: no especificadas por el autor; por tamaño, se orienta a GPUs de centro de datos tipo A100 o H100 con memoria suficiente, aunque el dato exacto no está publicado.
-- Compatibilidad con GPU de consumo: no confirmada; el tamaño del modelo y del repositorio (186,8 GB) hacen improbable su ejecución en GPUs de consumo sin cuantización agresiva, dato no disponible.
-- Opciones de despliegue: `diffusers` y `modular-diffusers` son las vías declaradas; no se confirma soporte de vLLM, llama.cpp, Ollama o TGI (herramientas orientadas a modelos de lenguaje).
-- Latencia y throughput estimados: no disponibles.
+- VRAM estimada para inferencia: no disponible de forma oficial. Con 33.100 millones de parametros, la inferencia en precision completa requiere hardware de clase centro de datos; las estimaciones concretas por cuantizacion no estan documentadas.
+- GPU recomendadas: no disponible en la model card. Por el tamano del modelo, se orienta a GPUs profesionales (A100, H100) o multiples GPU; no se confirma su viabilidad en GPUs de consumo.
+- Compatibilidad con GPU de consumo: no confirmada; el tamano del repositorio (186,8 GB) y el numero de parametros sugieren que no cabe en GPUs de consumo sin cuantizacion agresiva, opcion no documentada.
+- Opciones de despliegue: diffusers y modular-diffusers (segun los tags). No se mencionan vLLM, llama.cpp, Ollama ni TGI, que ademas no aplican a modelos de difusion.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Disponibilidad |
-|---|---|---|---|---|
-| PrunaAI/P-Image-OSS | 33.122.992.896 | no disponible | minimax-h3-community-license-agreement | Hugging Face, diffusers |
-| MiniMaxAI/MiniMax-H3 (base) | no disponible | no disponible | no disponible | Hugging Face |
-| Alternativas de generación texto-imagen de gran escala | no disponible | no disponible | no disponible | no disponible |
+| Modelo | Parametros | Tipo | Licencia | Contexto / idioma | Disponibilidad |
+|---|---|---|---|---|---|
+| PrunaAI/P-Image-OSS | 33.122.992.896 | Difusion text-to-image / image-to-image | minimax-h3-community-license-agreement | en | Hugging Face, diffusers |
+| MiniMaxAI/MiniMax-H3 (modelo base) | no disponible | Difusion (base del fine-tune) | no disponible en esta ficha | no disponible | Hugging Face |
+| Alternativas de difusion de gran escala | no disponible | Difusion | no disponible | no disponible | no disponible |
 
-No se dispone de datos de benchmarks ni de especificaciones detalladas de modelos alternativos en la información proporcionada, por lo que no es posible establecer una comparación cuantitativa rigurosa.
+No se dispone de datos de benchmarks ni de especificaciones detalladas de modelos comparables en la informacion proporcionada, por lo que la comparacion cuantitativa no es posible.
 
 ## Limitaciones y advertencias
 
-- Sesgos conocidos: no documentados en la información disponible; los modelos de difusión entrenados con datos web suelen heredar sesgos de representación, pero no se confirma para este modelo.
-- Riesgo de alucinación visual: no cuantificado; como todo modelo generativo de imágenes, puede producir contenido inexacto o no solicitado.
-- Limitación de idioma: solo se declara soporte de inglés, lo que limita su uso directo con prompts en castellano.
-- Restricciones de licencia: la MiniMax-H3 Community License Agreement condiciona el uso comercial; es necesario revisar el archivo LICENSE antes de desplegarlo en producción.
-- Huella de recursos: 33,1 mil millones de parámetros y un repositorio de 186,8 GB implican requisitos altos de almacenamiento y memoria.
-- Falta de documentación técnica: no se publican detalles de arquitectura, datos de entrenamiento ni benchmarks, lo que dificulta evaluar su calidad frente a alternativas.
-- Dependencia del modelo base: al ser un finetune de MiniMax-H3, sus limitaciones y obligaciones de licencia se heredan del modelo original.
+- Solo se declara soporte de ingles; los prompts en otros idiomas pueden degradar la calidad del resultado.
+- Riesgo de alucinacion visual: como todo modelo generativo, puede producir elementos incoherentes, texto ilegible o detalles anatomicos incorrectos.
+- Sesgos conocidos: no documentados en la model card; cabe esperar los sesgos presentes en los datos de entrenamiento del modelo base.
+- La licencia es la minimax-h3-community-license-agreement, que no es una licencia de codigo abierto estandar; es necesario revisar sus terminos antes de cualquier uso comercial.
+- No se documentan limitaciones de contexto, resolucion de salida, numero de pasos de muestreo ni restricciones de uso aceptable mas alla de la licencia.
+- El modelo es un fine-tune de un tercero; los riesgos y limitaciones del modelo base MiniMax-H3 se heredan y no se detallan aqui.
+- La model card carece de informacion sobre evaluacion de calidad, seguridad o filtros de contenido.
 
 ## Enlaces
 
@@ -89,3 +87,4 @@ No se dispone de datos de benchmarks ni de especificaciones detalladas de modelo
 - LinkedIn de PrunaAI: https://www.linkedin.com/company/pruna-ai
 - Discord de PrunaAI: https://discord.com/invite/JFQmtFKCjd
 - Panel de PrunaAI: https://dashboard.pruna.ai/login
+- Licencia (archivo LICENSE en el repositorio del modelo): https://huggingface.co/PrunaAI/P-Image-OSS/blob/main/LICENSE

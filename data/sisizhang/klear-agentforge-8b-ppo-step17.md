@@ -2,99 +2,95 @@
 
 ## Resumen
 
-Klear-AgentForge-8B-PPO-step17 (publicado en el repositorio `sisizhang/klear-agentforge-8b-ppo-step17`) es un ajuste fino de un modelo de 8B parámetros derivado de `Kwai-Klear/Klear-AgentForge-8B-SFT`, que a su vez parte de la familia Qwen3. Lo desarrolla el usuario `sisizhang` dentro del ecosistema del proyecto Klear-AgentForge de Kuaishou (Kwai-Klear), y aplica aprendizaje por refuerzo con PPO y recompensa de proceso sobre un modelo previamente entrenado con SFT para tareas de agente de código.
+Klear-AgentForge-8B-PPO-Step17 es un modelo de lenguaje de 8.190.735.360 parametros (~8,2 mil millones) derivado de Qwen3-8B, publicado por el usuario sisizhang en Hugging Face. Se trata de un ajuste fino por aprendizaje por refuerzo (RL) sobre el checkpoint supervisado Kwai-Klear/Klear-AgentForge-8B-SFT, usando PPO (Proximal Policy Optimization) con una recompensa de proceso (process reward) proporcionada por un modelo critic separado. El objetivo declarado es mejorar el comportamiento de un agente de codigo en tareas de resolucion de problemas de software de horizonte largo, concretamente dentro del entorno mini-swe-agent-plus.
 
-El modelo está especializado en tareas de ingeniería de software de largo horizonte: resolver issues sobre repositorios reales mediante interacción multi-paso con un entorno tipo `mini-swe-agent-plus`. No es un modelo de propósito general, sino un actor de política entrenado para el bucle de un agente de código que edita ficheros, ejecuta comandos y verifica resultados dentro de un sandbox tipo Harbor.
+El modelo resuelve un problema muy concreto: el paso de un modelo SFT (supervised fine-tuning) a un agente RL capaz de encadenar acciones de exploracion, edicion y verificacion de codigo de forma mas robusta. Segun la model card, sobre 500 tareas de SWE-bench el modelo SFT reproducido obtiene 39,8% (199/500) y este checkpoint RL alcanza 42,8% (214/500), una mejora de 3,0 puntos porcentuales. Es relevante porque publica pesos de inferencia fusionados (merged), configuracion, tokenizer y chat template, junto con el dataset de tareas y el modelo critic, lo que facilita la reproducibilidad de un pipeline PPO completo para agentes de codigo.
 
-Su relevancia radica en que es un artefacto de investigación reproducible: publica los pesos fusionados del paso 17 de PPO, el dataset de tareas, el checkpoint del crítico y las métricas de evaluación sobre una derivación de SWE-bench Verified de 490 preguntas. La licencia MIT y el formato safetensors facilitan su inspección y experimentación, aunque el modelo por sí solo no incluye el entorno de ejecución ni el verificador.
+La arquitectura subyacente es la de Qwen3-8B (transformer causal denso), aunque la model card no detalla la configuracion interna. El repositorio ocupa 16,4 GB en safetensors, tiene licencia MIT y esta etiquetado para ingles y chino, con 469 descargas en el momento de la consulta.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (derivada de Qwen3, según el proyecto Klear-AgentForge; detalles exactos de capas y atención no disponibles) |
-| Parametros totales | 8B (según el nombre del modelo; desglose exacto no disponible) |
-| Parametros activos | No aplica (no es MoE según la información disponible) |
-| Longitud de contexto | No disponible |
-| Tipos de cuantizacion | No disponible (pesos publicados en safetensors sin indicar variantes GGUF/AWQ/GPTQ) |
-| Idiomas soportados | Inglés (`en`) |
+| Arquitectura | Transformer causal denso (base Qwen3-8B); detalles de capas y atencion no disponibles |
+| Parametros totales | 8.190.735.360 (~8,2 mil millones) |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible en la informacion proporcionada (heredada de Qwen3-8B, valor exacto no confirmado) |
+| Tipos de cuantizacion | no disponible en la informacion proporcionada (pesos publicados en safetensors; cuantizaciones GGUF/AWQ no listadas) |
+| Idiomas soportados | Ingles (en) y chino (zh) |
 | Licencia | MIT |
-| Formato de pesos | safetensors (incluye configuración, generation config, tokenizer y chat template) |
+| Formato de pesos | safetensors (transformers); repo de 16,4 GB |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un transformer decoder-only de 8B parámetros. Parte de la base `Kwai-Klear/Klear-AgentForge-8B-SFT`, que según el proyecto Klear-AgentForge es una variante agéntica construida sobre Qwen3 mediante post-entrenamiento sistemático. Sobre esa base se aplicó PPO (Proximal Policy Optimization) con recompensa de proceso, entrenando al modelo como actor de una política de agente de código. El checkpoint publicado corresponde al paso global 17 de una ejecución de 120 pasos (`swesmith-v9-ppo-120step-20261103-v6/global_step_17`), fusionado con la base para producir un modelo de inferencia autónomo.
+El modelo parte de Kwai-Klear/Klear-AgentForge-8B-SFT, un ajuste supervisado construido sobre Qwen3-8B. Sobre ese checkpoint se aplica PPO con recompensa de proceso: un modelo critic independiente (sisizhang/klear-agentforge-8b-critic-v9-epoch2-5) proporciona senales de recompensa por paso, en lugar de depender unicamente de una recompensa final de tarea. El entrenamiento se realizo sobre el dataset sisizhang/swesmith-critic-ppo-tasks, orientado a tareas tipo SWE-bench dentro del entorno mini-swe-agent-plus. El checkpoint publicado corresponde al step 17, seleccionado como mejor punto de la trayectoria RL, y se distribuye como pesos fusionados listos para inferencia.
 
-El entrenamiento se realizó sobre el dataset `sisizhang/swesmith-critic-ppo-tasks`, orientado a tareas de tipo SWE-smith, es decir, resolución de issues en repositorios de código. El repositorio no incluye el crítico, el optimizador ni el estado de continuación de PPO; el crítico se publica por separado en `sisizhang/klear-agentforge-8b-critic-v9-epoch2-5`. La innovación principal es el uso de recompensa de proceso dentro de PPO sobre un modelo ya ajustado con SFT, lo que permite optimizar trayectorias intermedias del agente y no solo el resultado final. No se especifican en la información disponible el número de tokens de entrenamiento, la composición exacta del dataset ni detalles de la función de recompensa.
+No se detallan en la model card el numero de tokens de entrenamiento, la composicion exacta del dataset, hiperparametros de PPO (learning rate, KL penalty, clipping), ni si hubo etapas adicionales de DPO o RLHF. La innovacion tecnica destacable es el uso de recompensa de proceso con un critic dedicado para tareas de agente de codigo de horizonte largo, lo que permite optimizar trayectorias multi-paso en lugar de solo el resultado final. No se menciona decodificacion especulativa, atencion lineal ni otras optimizaciones de inferencia.
 
 ## Capacidades
 
-- Generación de texto y razonamiento orientado a tareas de ingeniería de software.
-- Edición de código y resolución de issues en repositorios reales mediante interacción multi-paso.
-- Ejecución de comandos y uso de herramientas dentro de un bucle de agente (requiere el entorno `mini-swe-agent-plus` y el sandbox Harbor).
-- Razonamiento multi-paso y planificación de trayectorias largas de agente.
-- Formato de chat y plantilla de conversación incluidos en el repositorio.
-- Capacidad multilingüe limitada al inglés según la model card.
-- No se documentan capacidades de visión, audio, tool calling genérico ni modo "thinking" explícito.
+- Generacion de texto y razonamiento general, heredados de la base Qwen3-8B.
+- Agente de codigo: resolucion de tareas de software de horizonte largo (exploracion de repositorio, edicion de ficheros, ejecucion de comandos y verificacion) dentro de mini-swe-agent-plus.
+- Razonamiento multi-paso y planificacion de acciones encadenadas, optimizado explicitamente mediante PPO con recompensa de proceso.
+- Generacion y modificacion de codigo en el contexto de tareas de reparacion de bugs estilo SWE-bench.
+- Capacidades multilingues limitadas a ingles y chino segun las etiquetas del modelo.
+- No se documenta soporte explicito de tool calling / function calling generico, ni vision, audio o modo thinking separado en la informacion proporcionada.
 
 ## Casos de uso
 
-- Resolución automática de issues en repositorios: el modelo puede recibir un problema descrito en lenguaje natural y una base de código, y generar una secuencia de ediciones y comandos para intentar resolverlo, integrándose en un pipeline tipo SWE-bench.
-- Agente de código en entornos sandbox: dentro de un sandbox Harbor con `mini-swe-agent-plus`, el modelo actúa como política que decide qué ficheros leer, qué parches aplicar y qué comandos ejecutar, verificando resultados paso a paso.
-- Investigación en RL para agentes: sirve como artefacto reproducible para estudiar el efecto de PPO con recompensa de proceso sobre un modelo SFT, comparando el paso 17 con el paso 34 y con la base SFT.
-- Evaluación comparativa de agentes de código: puede usarse como baseline en derivaciones de SWE-bench Verified para medir la mejora de técnicas de RL frente a SFT.
-- Generación de parches y refactorizaciones acotadas: en tareas de mantenimiento de código donde se requiere modificar varios ficheros de forma coherente y comprobar que las pruebas pasan.
-- Automatización de tareas de depuración: el modelo puede inspeccionar trazas, proponer hipótesis y aplicar cambios iterativos dentro de un entorno controlado, siempre que se disponga del verificador externo.
+- Reparacion automatica de bugs en repositorios: el modelo esta entrenado para tareas SWE-bench y puede recibir un issue, explorar el codigo, localizar la causa y proponer un parche, aprovechando su entrenamiento RL sobre trayectorias de agente.
+- Agente de CI/CD para triaje de fallos: integrado en un pipeline, puede analizar logs de tests fallidos, inspeccionar el codigo afectado y generar candidatos de parche para revision humana.
+- Asistente de mantenimiento de dependencias: dado un repositorio y una actualizacion de libreria, el modelo puede localizar usos incompatibles y proponer cambios de codigo paso a paso.
+- Automatizacion de tareas de refactorizacion acotadas: con instrucciones claras y acceso a herramientas de ficheros, puede aplicar cambios multi-fichero y verificar el resultado ejecutando tests.
+- Generacion de parches para revision humana en equipos de desarrollo: el modelo produce diffs candidatos que un ingeniero valida antes de fusionar, reduciendo el tiempo de triaje inicial.
+- Investigacion en RL para agentes: sirve como referencia reproducible de un pipeline PPO con recompensa de proceso, junto con el dataset de tareas y el modelo critic publicados, para experimentos de RL aplicado a codigo.
+- Evaluacion comparativa de agentes de codigo: util como baseline RL frente al checkpoint SFT original en benchmarks tipo SWE-bench dentro de mini-swe-agent-plus.
 
 ## Benchmarks y rendimiento
 
-| Evaluación | Configuración | Resultado |
-|---|---|---|
-| SWE-bench Verified derivado (490 preguntas) | Evaluación original del step 17 + 30 preguntas de补测, configuraciones heterogéneas | 212/490 = 43,3% (3 inválidas) |
-| SWE-bench Verified derivado (500 denominador) | Valor de presentación del proyecto, no es una evaluación uniforme de 500 preguntas | 214/500 = 42,8% |
-| SWE-bench Verified derivado (490 preguntas) | Re-evaluación completa del step 17 con configuración unificada | 201/490 = 41,0% |
-| SWE-bench Verified derivado (490 preguntas) | Step 34 con la misma configuración unificada | 190/490 = 38,8% |
-| SWE-bench Verified derivado (490 preguntas) | SFT base, evaluación única | 197/490 = 40,2% |
+Resultados declarados en la model card sobre 500 tareas de SWE-bench:
 
-No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K, etc.) en la información disponible. El autor advierte que las diferencias entre configuraciones impiden atribuir de forma aislada la mejora al PPO.
+| Modelo | SWE-bench (500 tareas) | Aciertos |
+|---|---|---|
+| Klear-AgentForge-8B-SFT (reproducido) | 39,8% | 199/500 |
+| Klear-AgentForge-8B-PPO-Step17 (este modelo) | 42,8% | 214/500 |
+| Mejora | +3,0 pp | +15 tareas |
+
+No se han publicado en la informacion disponible resultados de MMLU, HumanEval, GSM8K u otros benchmarks generales para este checkpoint.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible de forma oficial. Para un modelo de 8B en FP16 se requieren aproximadamente 16 GB de VRAM; en cuantización de 8 bits, unos 8-9 GB; en 4 bits, unos 5-6 GB. Estas cifras son estimaciones genéricas para 8B y no están confirmadas por el autor.
-- GPU recomendadas: no especificadas. Por tamaño, cabría en una RTX 4090 (24 GB) en FP16, y en GPUs de datacenter como A100 o H100 para despliegues concurrentes.
-- Cabe en GPU de consumo: sí, previsiblemente en RTX 4090, 3090 o similares con 24 GB en FP16; en GPUs de 8-12 GB requeriría cuantización, no publicada oficialmente.
-- Opciones de despliegue: transformers (librería declarada); vLLM, llama.cpp, Ollama o TGI no están confirmados por el autor. Al no publicarse GGUF, llama.cpp y Ollama requerirían conversión previa.
-- Latencia y throughput: no disponibles.
+- VRAM estimada para inferencia: los pesos en safetensors ocupan aproximadamente 16,4 GB en bf16/fp16, por lo que se necesita al menos ~17-18 GB de VRAM para cargar el modelo completo en precision original, mas overhead de contexto y KV cache.
+- GPU recomendadas: A100 40/80 GB, H100, L40S o RTX 6000 Ada para despliegue en bf16 con contexto amplio. Para inferencia en una sola GPU consumer, se requiere cuantizacion (por ejemplo 8 bits o 4 bits) para ajustarse a 24 GB o menos.
+- GPU consumer: tecnicamente viable en RTX 4090 (24 GB) solo con cuantizacion; en GPUs de 16 GB o menos seria necesario cuantizar agresivamente y reducir contexto. No se confirman pesos GGUF preconvertidos en el repositorio.
+- Opciones de despliegue: transformers (libreria declarada), text-generation-inference (tag text-generation-inference) y endpoints compatibles. vLLM, llama.cpp y Ollama no estan confirmados en la informacion proporcionada.
+- Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Especialización | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | SWE-bench (500) | Licencia | Notas |
 |---|---|---|---|---|---|
-| Klear-AgentForge-8B-PPO-step17 | 8B | No disponible | Agente de código con PPO | MIT | Hugging Face |
-| Klear-AgentForge-8B-SFT (base) | 8B | No disponible | Agente de código con SFT | No disponible en la información | Hugging Face (acceso con consentimiento) |
-| Klear-AgentForge-8B (familia Qwen3) | 8B | No disponible | Agente de código | Apache-2.0 | Hugging Face |
-| Qwen3-8B (base genérica) | 8B | No disponible | Propósito general | Apache-2.0 | Hugging Face |
+| Klear-AgentForge-8B-PPO-Step17 | ~8,2 mil millones | no disponible | 42,8% | MIT | Checkpoint RL con recompensa de proceso |
+| Klear-AgentForge-8B-SFT (base) | ~8,2 mil millones | no disponible | 39,8% | no disponible en la informacion | Checkpoint SFT previo al RL |
+| Qwen3-8B (base original) | ~8,2 mil millones | no disponible | no disponible | no disponible en la informacion | Modelo generalista sin entrenamiento de agente |
 
-La comparación con la base SFT es la más directa: en la re-evaluación unificada, el step 17 obtiene 201/490 frente a 197/490 del SFT, una diferencia de 4 preguntas que el autor no atribuye de forma concluyente al PPO. No se dispone de datos comparativos con otros agentes de código de la misma categoría en la información proporcionada.
+No se dispone de datos de benchmarks comparables de otros agentes de codigo de tamano similar en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- El modelo por sí solo no incluye el sandbox Harbor, la ejecución de herramientas, las imágenes de tarea ni el verificador; sin ese entorno no puede resolver tareas de agente de forma autónoma.
-- Las métricas publicadas mezclan configuraciones distintas (límites de rollout, runtime, reintentos), por lo que las comparaciones entre step 17, step 34 y SFT no son concluyentes.
-- El valor de 42,8% sobre 500 preguntas no corresponde a una evaluación uniforme completa de 500 preguntas; el autor lo advierte explícitamente.
-- Riesgo de alucinación en la generación de parches y comandos: el modelo puede proponer cambios incorrectos o comandos no válidos, que deben validarse con el verificador.
-- Idiomas: solo inglés declarado; el rendimiento en castellano no está evaluado.
-- Sesgos: no documentados en la información disponible.
-- Licencia MIT permite uso comercial, pero la base `Kwai-Klear/Klear-AgentForge-8B-SFT` exige aceptar condiciones de acceso en su página de Hugging Face; deben revisarse los términos de la base y de Qwen3.
-- Contexto máximo no documentado; tareas de repositorios grandes pueden exceder la ventana efectiva.
-- Modelo de investigación con 0 descargas y 0 likes en el momento de la consulta; no hay evidencia de uso en producción.
+- El modelo esta especializado en tareas de agente de codigo dentro de mini-swe-agent-plus; su rendimiento fuera de ese entorno y en tareas generales no esta documentado.
+- Solo se declaran ingles y chino como idiomas; no hay evidencia de buen rendimiento en castellano ni en otros idiomas.
+- Riesgo de alucinacion inherente a modelos de 8B, especialmente en la generacion de parches de codigo que pueden no compilar o no pasar tests; requiere verificacion automatizada y revision humana.
+- La mejora RL es modesta (+3,0 pp sobre 500 tareas), lo que implica que el checkpoint SFT sigue siendo un baseline competitivo; el RL no corrige todos los fallos del modelo base.
+- Sesgos conocidos: no documentados en la model card; se heredan los sesgos del corpus de entrenamiento de Qwen3-8B y del dataset de tareas, no auditados.
+- Licencia MIT: permite uso comercial, pero el autor no ofrece garantias sobre calidad, seguridad o idoneidad para produccion.
+- El checkpoint corresponde al step 17 de una trayectoria RL; no se documentan criterios de seleccion mas alla del rendimiento en SWE-bench, ni estabilidad fuera de distribucion.
+- El modelo critic y el dataset de entrenamiento se publican por separado; la reproducibilidad completa del pipeline depende de ambos recursos.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/sisizhang/klear-agentforge-8b-ppo-step17
 - Modelo base SFT: https://huggingface.co/Kwai-Klear/Klear-AgentForge-8B-SFT
-- Modelo Klear-AgentForge-8B: https://huggingface.co/Kwai-Klear/Klear-AgentForge-8B
-- Repositorio GitHub del proyecto: https://github.com/Kwai-Klear/Klear-AgentForge
 - Dataset de tareas PPO: https://huggingface.co/datasets/sisizhang/swesmith-critic-ppo-tasks
-- Checkpoint del crítico: https://huggingface.co/sisizhang/klear-agentforge-8b-critic-v9-epoch2-5
+- Modelo critic: https://huggingface.co/sisizhang/klear-agentforge-8b-critic-v9-epoch2-5
 - Space del proyecto: https://huggingface.co/spaces/sisizhang/harbor-agent-ppo

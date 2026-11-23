@@ -2,51 +2,51 @@
 
 ## Resumen
 
-Qwopus3.5-4B-Coder-UNCENSORED-heretic-i1-GGUF es una cuantizacion GGUF realizada por mradermacher sobre el modelo xtools-at/Qwopus3.5-4B-Coder-UNCENSORED-heretic, una variante "abliterated" y sin censura de un modelo coder de la familia Qwen3.5. El modelo base combina tecnicas de ajuste fino supervisado (SFT) con LoRA sobre trazas de razonamiento y agentes, incluyendo datasets derivados de Claude Opus 4.6 y 4.7, y emplea una arquitectura orientada a generacion de codigo con soporte de chain-of-thought, tool calling y multi-token prediction (MTP) para decodificacion especulativa.
+Qwopus3.5-4B-Coder-UNCENSORED-heretic-i1-GGUF es la version cuantizada en formato GGUF, generada con imatrix, del modelo xtools-at/Qwopus3.5-4B-Coder-UNCENSORED-heretic. El trabajo de cuantizacion lo firma mradermacher, un conocido publicador de cuantizaciones GGUF, y el resultado esta pensado para ejecucion local en CPU/GPU con llama.cpp y derivados. El modelo base es un fine-tuning tipo LoRA/SFT sobre una arquitectura de la familia Qwen 3.5, con 4.326.350.848 parametros totales (aproximadamente 4,3 mil millones).
 
-El repositorio aqui documentado contiene unicamente el fichero imatrix (0,1 GB) para crear cuantizaciones propias con llama.cpp; las cuantizaciones estaticas e i1 completas se publican en repositorios hermanos del mismo autor. El modelo esta pensado para desarrolladores que necesitan un coder ligero (entorno a 4B parametros segun la nomenclatura, aunque el dato de safetensors del repo indica 1.797.272 parametros, probablemente un artefacto de la publicacion del imatrix) desplegable en hardware de consumo, con capacidades de razonamiento multi-paso y uso de herramientas.
+La propuesta del modelo es un asistente de codigo y agente conversacional con modo de razonamiento explicito (chain-of-thought), soporte de tool calling y function calling, y una orientacion deliberada a la ausencia de filtros de rechazo (etiquetas "uncensored", "decensored", "abliterated", "heretic"). Se ha entrenado con trazas de razonamiento de agentes (datasets de trazas de Claude Opus y de trazas de agente de Hermes) y declara capacidades de multi-token prediction y speculative decoding, ademas de estar marcado como modelo de vision en la model card del cuantizador.
 
-La relevancia actual reside en su caracter "uncensored/abliterated", que elimina las capas de rechazo del modelo original para escenarios de investigacion, y en su soporte de decodificacion especulativa mediante MTP, que reduce latencia en inferencia local. La licencia Apache 2.0 facilita el uso comercial, aunque el caracter abliterated plantea caveats eticos y de responsabilidad.
+Es relevante por su tamano contenido: un modelo de 4B con contexto de agente, tool use y modo thinking cabe en GPUs de consumo y en equipos con poca VRAM usando las cuantizaciones i1 de 2-4 GB. La licencia Apache 2.0 facilita su uso comercial, aunque la ausencia de benchmarks publicados obliga a evaluarlo empiricamente antes de llevarlo a produccion.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (familia Qwen3.5), con soporte de MTP y decodificacion especulativa |
-| Parametros totales | 1.797.272 (dato de safetensors del repo; la nomenclatura del modelo indica 4B, discrepancia no aclarada en la informacion disponible) |
+| Arquitectura | Transformer de la familia Qwen 3.5 (fine-tuning LoRA/SFT sobre base Qwen 3.5, segun tags) |
+| Parametros totales | 4.326.350.848 (aproximadamente 4,3B) |
 | Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | imatrix (fichero publicado); cuantizaciones i1 Q2_K, IQ3_M, Q4_K_S, IQ3_XXS, Q3_K_M, small-IQ4_NL, Q4_K_M, IQ2_M, Q6_K, IQ4_XS, Q2_K_S, IQ1_M, Q3_K_S, IQ2_XXS, Q3_K_L, IQ2_XS, Q5_K_S, IQ2_S, IQ1_S, Q5_K_M, Q4_0, IQ3_XS, Q4_1, IQ3_S (segun metadatos) |
+| Tipos de cuantizacion | i1-Q2_K, i1-Q3_K_S, i1-IQ3_S, i1-IQ3_M, i1-Q3_K_M, i1-Q3_K_L, i1-IQ4_XS, i1-Q4_0, i1-Q4_K_S, i1-IQ4_NL, i1-Q4_K_M, i1-Q4_1, i1-Q5_K_S, i1-Q5_K_M, i1-Q6_K; fichero imatrix incluido |
 | Idiomas soportados | en, zh, es, ru, ja |
-| Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (imatrix); safetensors en el modelo base |
+| Licencia | apache-2.0 |
+| Formato de pesos | GGUF (cuantizaciones i1 con imatrix); pesos originales en safetensors en el modelo base |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es un transformer decoder-only de la familia Qwen3.5, afinado mediante SFT con LoRA sobre un conjunto de datasets de trazas de razonamiento y agentes: Jackrong/Claude-opus-4.6-TraceInversion-9000x, Jackrong/Claude-opus-4.7-TraceInversion-5000x y lambda/hermes-agent-reasoning-traces. Esta composicion orienta el ajuste hacia chain-of-thought, uso de herramientas y razonamiento multi-paso, con un sesgo claro hacia tareas de codigo. El tag "heretic" y "abliterated" indica que se ha aplicado una tecnica de ablacion de direcciones de rechazo para eliminar el comportamiento de censura del modelo original.
+El modelo base es un transformer de la familia Qwen 3.5, afinado mediante LoRA y SFT sobre el modelo xtools-at/Qwopus3.5-4B-Coder-UNCENSORED-heretic. Los tags indican el uso de Unsloth para el entrenamiento y la inclusion de datasets de trazas de razonamiento: Jackrong/Claude-opus-4.6-TraceInversion-9000x, Jackrong/Claude-opus-4.7-TraceInversion-5000x y lambda/hermes-agent-reasoning-traces. Esto sugiere un entrenamiento orientado a imitar cadenas de razonamiento de agentes y a reforzar el uso de herramientas.
 
-La innovacion tecnica destacable es el soporte de multi-token prediction (MTP) y decodificacion especulativa, que permite generar varios tokens por paso y acelerar la inferencia. El repositorio documentado es una cuantizacion con imatrix, un proceso que usa una matriz de importancia calculada sobre datos de calibracion para preservar mejor la calidad en cuantizaciones de baja precision. No se especifican en la informacion disponible el numero de tokens de entrenamiento, la composicion exacta del dataset ni si hubo fases de RLHF o DPO adicionales.
+Entre las innovaciones declaradas estan el multi-token prediction (MTP) y la decodificacion especulativa, que pueden acelerar la generacion en entornos compatibles. El proceso de "abliteration"/"decensoring" (etiquetas heretic, uncensored, decensored) implica una modificacion de los pesos orientada a eliminar el comportamiento de rechazo aprendido, lo que afecta a la distribucion de respuestas en temas sensibles. No se dispone de informacion sobre el numero exacto de tokens de entrenamiento, la composicion completa del dataset ni la existencia de fases de RLHF o DPO. La cuantizacion i1 de mradermacher emplea ficheros imatrix para mejorar la calidad de las cuantizaciones de baja tasa de bits.
 
 ## Capacidades
 
-- Generacion de texto y codigo en multiples lenguajes de programacion (orientacion coder).
-- Razonamiento explicito con chain-of-thought (thinking mode).
-- Tool calling y function calling para integracion en pipelines.
-- Soporte de agentes y razonamiento multi-paso.
+- Generacion de texto y codigo, con especializacion declarada en tareas de programacion (tag "coder").
+- Razonamiento explicito con chain-of-thought (modo thinking).
+- Tool calling y function calling para integracion en pipelines de agentes.
+- Razonamiento multi-paso orientado a agentes, entrenado con trazas de agente de Hermes.
 - Capacidades multilingues en ingles, chino, espanol, ruso y japones.
-- Decodificacion especulativa mediante MTP para acelerar inferencia.
-- Capacidad de vision segun la model card ("This is a vision model"), con ficheros mmproj en el repositorio estatico.
-- Comportamiento sin censura (abliterated) para escenarios de investigacion.
+- Marcado como modelo de vision en la model card del cuantizador (los ficheros mmproj, si existen, estarian en el repositorio estatico).
+- Multi-token prediction y soporte de decodificacion especulativa segun los tags del autor.
+- Comportamiento sin filtros de rechazo (uncensored/abliterated), lo que cambia la gestion de peticiones sensibles.
 
 ## Casos de uso
 
-- Asistente de codigo en local: el modelo puede autocompletar y generar funciones en un IDE o CLI sin conexion, aprovechando su orientacion coder y su despliegue en GGUF con llama.cpp u Ollama en hardware de consumo.
-- Agente de refactorizacion automatizada: con soporte de tool calling y razonamiento multi-paso, puede encadenar lecturas de ficheros, ediciones y ejecucion de tests en un bucle agentico.
-- Generacion de tests unitarios: el thinking mode permite razonar sobre casos limite antes de emitir el codigo de test, util en pipelines de CI/CD.
-- Traduccion tecnica y documentacion multilingue: cubre en, zh, es, ru y ja, adecuado para equipos distribuidos que documentan APIs o guias en varios idiomas.
-- Investigacion sobre alineacion y censura: al ser abliterated, sirve para estudiar diferencias de comportamiento respecto al modelo original en tareas de refusal.
-- Prototipado rapido de chatbots tecnicos: su contexto y capacidades de razonamiento permiten conversaciones multi-turno sobre codigo y arquitectura de software.
-- Extraccion de informacion estructurada de documentacion tecnica: combinado con function calling, puede mapear texto libre a esquemas JSON en tareas de ingestion.
+- Asistencia de programacion en local: el modelo puede autocompletar y explicar codigo en un portatil con GPU de consumo usando la cuantizacion i1-Q4_K_M (2,9 GB), lo que permite entornos de desarrollo sin conexion y sin enviar codigo a servicios externos.
+- Agente de automatizacion con tool calling: su entrenamiento con trazas de agente y su soporte de function calling permiten construir agentes que invocan APIs, consultan bases de datos o ejecutan comandos en flujos multi-paso.
+- Razonamiento con cadena de pensamiento para depuracion: el modo thinking explicito facilita tareas de analisis de errores, explicacion de stack traces y propuesta de parches razonados.
+- Procesamiento multilingue en espanol, chino, ruso y japones: util para equipos que necesitan un unico modelo local que cubra documentacion tecnica y conversacion en varios idiomas.
+- Prototipado de asistentes conversacionales sin restricciones de contenido: en entornos de investigacion sobre seguridad, el comportamiento "abliterated" permite estudiar respuestas sin filtros, con las precauciones eticas correspondientes.
+- Despliegue en edge y entornos con VRAM limitada: las cuantizaciones de 2,1-3,7 GB permiten ejecutar el modelo en GPUs de 4-8 GB o incluso en CPU con llama.cpp, lo que habilita asistentes locales en dispositivos modestos.
+- Generacion de codigo en pipelines de CI/CD: integrable via llama.cpp o servidores compatibles con OpenAI para tareas de revision de parches, generacion de tests o resumen de cambios.
 
 ## Benchmarks y rendimiento
 
@@ -54,43 +54,44 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: no disponible con precision; para un modelo de aproximadamente 4B parametros, una cuantizacion Q4_K_M requeriria del orden de 2,5-3 GB, pero este dato no esta confirmado en la informacion proporcionada.
-- GPU recomendadas: no disponible en la informacion; por tamano, seria desplegable en GPUs de consumo como RTX 3060/4060/4090, pero sin confirmacion del autor.
-- Cabe en consumer GPU: probablemente si, segun el tamano nominal de 4B, aunque no confirmado.
-- Opciones de despliegue: llama.cpp (formato GGUF), Ollama, y cualquier runtime compatible con GGUF; el modelo base usa transformers y text-generation-inference.
-- Latencia y throughput: no disponibles; el soporte de MTP y decodificacion especulativa deberia reducirlos respecto a decodificacion autoregresiva estandar, sin cifras publicadas.
+- VRAM estimada para inferencia: entre 2,1 GB (i1-Q2_K) y 3,7 GB (i1-Q6_K) solo para los pesos; anadir overhead de contexto KV cache (dependiente de la longitud de contexto, no disponible).
+- GPU recomendadas: cualquier GPU con 6-8 GB o mas de VRAM para cuantizaciones medias; RTX 3060, RTX 4060, RTX 4090, A100 y H100 son validas, aunque el modelo es pequeno y no aprovecha GPUs de gama alta.
+- Cabe en GPU de consumo: si, en practicamente todas las GPU modernas con 6 GB o mas; las cuantizaciones Q4 caben incluso en GPUs de 4 GB.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, servidores compatibles con la API de OpenAI (text-generation-inference figura entre los tags), y cualquier runtime que consuma GGUF.
+- Latencia y throughput estimados: no disponible. El soporte de multi-token prediction y decodificacion especulativa puede mejorar el throughput en runtimes que lo implementen, pero no se aportan cifras.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Notas |
-|---|---|---|---|---|
-| Qwopus3.5-4B-Coder-UNCENSORED-heretic (este) | 4B nominal (1.797.272 segun safetensors) | no disponible | Apache 2.0 | Coder abliterated con MTP y tool calling |
-| Qwen2.5-Coder-3B / 7B | 3B / 7B | 32K (tipico en la familia) | Apache 2.0 | Coder oficial de Alibaba, sin abliteration |
-| DeepSeek-Coder-V2-Lite | 16B MoE (2,4B activos) | 128K | DeepSeek License | Coder MoE, contexto mayor |
-| CodeLlama-7B | 7B | 16K | Llama 2 License | Coder de Meta, licencia mas restrictiva |
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|
+| Qwopus3.5-4B-Coder-UNCENSORED-heretic-i1-GGUF | 4,3B | no disponible | Apache 2.0 | GGUF i1 | Fine-tuning de codigo/agente sin filtros, cuantizado con imatrix |
+| Modelo base xtools-at/Qwopus3.5-4B-Coder-UNCENSORED-heretic | 4,3B | no disponible | Apache 2.0 | safetensors | Mismo modelo sin cuantizar; referencia para comparar perdida por cuantizacion |
+| Cuantizaciones estaticas mradermacher/Qwopus3.5-4B-Coder-UNCENSORED-heretic-GGUF | 4,3B | no disponible | Apache 2.0 | GGUF estatico | Alternativa sin imatrix, con ficheros mmproj para vision |
+| Qwen 3.5 base (familia) | variable | no disponible | no disponible | safetensors | Arquitectura de origen; el fine-tuning anade capacidades de agente y codigo |
 
-Los datos de comparativa de modelos alternativos son orientativos y no proceden de la informacion proporcionada para este modelo; los campos de contexto y parametros de este modelo no estan confirmados.
+No se dispone de datos de rendimiento comparativo entre estas variantes en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- El caracter abliterated/uncensored elimina los mecanismos de rechazo, lo que incrementa el riesgo de generar contenido danino, sesgado o ilegal; no es adecuado para produccion orientada a usuarios finales sin filtros adicionales.
-- Riesgo de alucinacion elevado en tareas de codigo y razonamiento, especialmente en cuantizaciones de baja precision (Q2, IQ2, IQ1).
-- La discrepancia entre el tamano nominal (4B) y el dato de safetensors (1.797.272) no esta aclarada y debe verificarse antes de planificar recursos.
-- El repositorio documentado solo contiene el fichero imatrix; las cuantizaciones completas estan en repositorios hermanos, lo que puede confundir en la descarga.
-- No se especifican la longitud de contexto ni los datos de entrenamiento, lo que limita la evaluacion de su idoneidad para tareas de contexto largo.
-- Aunque la licencia es Apache 2.0, el uso comercial de un modelo abliterated puede acarrear responsabilidad legal y reputacional segun la jurisdiccion.
-- Soporte de vision anunciado pero con ficheros mmproj en el repositorio estatico, no en este; verificar disponibilidad antes de asumir capacidades multimodales.
-- Cero descargas y cero likes en el momento de la consulta: ecosistema de validacion practicamente inexistente.
+- Ausencia total de benchmarks publicados: no hay evidencia cuantitativa de calidad en codigo, razonamiento o tool calling; es imprescindible evaluar empiricamente antes de produccion.
+- El proceso de "abliteration"/"decensoring" elimina filtros de rechazo, lo que puede producir respuestas inapropiadas, inseguras o daninas en temas sensibles; no es adecuado para aplicaciones de cara al publico sin moderacion adicional.
+- Riesgo de alucinacion inherente a un modelo de 4B, especialmente en tareas de razonamiento largo o generacion de codigo complejo.
+- Longitud de contexto no documentada: no se puede planificar el uso en conversaciones o repositorios de contexto largo sin verificacion previa.
+- Soporte multilingue declarado para cinco idiomas, pero sin evaluacion publicada de calidad por idioma; el espanol figura entre los idiomas soportados, aunque el entrenamiento parece predominantemente en ingles y chino.
+- La licencia Apache 2.0 permite uso comercial, pero el modelo base y los datasets de trazas pueden tener condiciones adicionales que conviene revisar.
+- La cuantizacion introduce perdida de calidad, especialmente en las variantes de 2-3 bits; para produccion se recomienda i1-Q4_K_M o superior.
+- El modelo esta marcado como de vision, pero los ficheros mmproj no estan en este repositorio, sino en el estatico; verificar su disponibilidad antes de asumir capacidades multimodales.
+- El origen de los datos de entrenamiento (trazas de modelos comerciales) plantea dudas sobre las condiciones de uso de dichos datos que el usuario final deberia considerar.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/mradermacher/Qwopus3.5-4B-Coder-UNCENSORED-heretic-i1-GGUF
+- Repositorio Hugging Face (cuantizaciones i1): https://huggingface.co/mradermacher/Qwopus3.5-4B-Coder-UNCENSORED-heretic-i1-GGUF
+- Repositorio de cuantizaciones estaticas: https://huggingface.co/mradermacher/Qwopus3.5-4B-Coder-UNCENSORED-heretic-GGUF
 - Modelo base: https://huggingface.co/xtools-at/Qwopus3.5-4B-Coder-UNCENSORED-heretic
-- Cuantizaciones estaticas: https://huggingface.co/mradermacher/Qwopus3.5-4B-Coder-UNCENSORED-heretic-GGUF
-- Pagina de descargas del autor: https://hf.tst.eu/model#Qwopus3.5-4B-Coder-UNCENSORED-heretic-i1-GGUF
+- Pagina de overview del cuantizador: https://hf.tst.eu/model#Qwopus3.5-4B-Coder-UNCENSORED-heretic-i1-GGUF
+- README de referencia para uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Analisis de tipos de cuantizacion (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Peticiones de cuantizacion de mradermacher: https://huggingface.co/mradermacher/model_requests
 - Dataset Jackrong/Claude-opus-4.6-TraceInversion-9000x: https://huggingface.co/datasets/Jackrong/Claude-opus-4.6-TraceInversion-9000x
 - Dataset Jackrong/Claude-opus-4.7-TraceInversion-5000x: https://huggingface.co/datasets/Jackrong/Claude-opus-4.7-TraceInversion-5000x
 - Dataset lambda/hermes-agent-reasoning-traces: https://huggingface.co/datasets/lambda/hermes-agent-reasoning-traces
-- Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
-- Analisis de tipos de cuantizacion (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
-- Solicitudes de cuantizacion: https://huggingface.co/mradermacher/model_requests

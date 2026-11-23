@@ -2,49 +2,48 @@
 
 ## Resumen
 
-ZHUOZA/Qwen3.8-Flash-Next-Uncensored-NVFP4-MTP-GGUF es un repositorio de pesos cuantizados alojado en Hugging Face por el usuario ZHUOZA. Por el nombre se deduce que se trata de una variante "uncensored" (con los mecanismos de rechazo o alineamiento de seguridad relajados o eliminados) del modelo Qwen3.8-Flash-Next, publicado en formato GGUF y con pesos cuantizados en NVFP4, además de incluir MTP (multi-token prediction, probablemente módulos de decodificación especulativa). La licencia declarada remite a la Qwen Community License 1.0 del modelo base.
+ZHUOZA/Qwen3.8-Flash-Next-Uncensored-NVFP4-MTP-GGUF es una cuantización en formato GGUF de un modelo de la familia Qwen, publicada por el usuario ZHUOZA en Hugging Face. El nombre del repositorio indica que se trata de una variante "uncensored" (sin los ajustes de alineamiento habituales) de un supuesto Qwen3.8-Flash-Next, con pesos cuantizados en NVFP4 para los expertos y en BF16, Q4_K_M o MXFP4 para el módulo MTP (multi-token prediction). El dato real de safetensors confirma 179.551.124.096 parámetros totales, lo que lo sitúa en la categoría de modelos de gran tamaño, presumiblemente con arquitectura MoE dado el uso del término "experts".
 
-La información disponible es mínima: el repositorio no incluye model card descriptiva (el README solo contiene metadatos de licencia), no registra descargas ni interacciones, y no se han publicado especificaciones técnicas, datos de entrenamiento ni resultados de benchmarks. Todos los detalles sobre arquitectura, tamaño o contexto deben considerarse no disponibles en esta ficha, salvo lo que se puede inferir del propio identificador del repositorio.
+La relevancia de esta ficha es doble: por un lado, documenta una cuantización de un modelo que no cuenta con model card detallada ni resultados de benchmarks publicados en la información disponible; por otro, sirve como advertencia sobre la proliferación de repositorios derivados con nombres que no se corresponden necesariamente con lanzamientos oficiales verificables. La licencia declarada es qwen-community-1.0, aunque el campo license del repo figura como "other".
 
-Por tanto, esta ficha documenta lo que se puede verificar del repositorio y marca explícitamente como "no disponible" cualquier dato del que no se tenga constancia, incluyendo parámetros, contexto, idiomas o rendimiento. Es relevante ahora únicamente como artefacto de despliegue local para quien ya conozca el modelo base Qwen3.8-Flash-Next y busque una variante GGUF sin filtros de alineamiento.
+No se dispone de información sobre el contexto, los idiomas soportados, el pipeline ni la composición del dataset de entrenamiento. Todo lo que sigue se limita a los datos verificables del repositorio y a inferencias marcadas explícitamente como tales.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (por el nombre, derivada de Qwen3.8-Flash-Next; presumiblemente transformer con MTP) |
-| Parámetros totales | no disponible |
-| Parámetros activos | no disponible |
+| Arquitectura | MoE (inferido del término "Experts" en la model card); detalles no disponibles |
+| Parametros totales | 179.551.124.096 (179,55 mil millones) |
+| Parametros activos | no disponible |
 | Longitud de contexto | no disponible |
-| Tipos de cuantización | NVFP4 (según el nombre del repositorio); GGUF como formato de contenedor |
+| Tipos de cuantizacion | NVFP4 (expertos), BF16 / Q4_K_M / MXFP4 (MTP), BF16 (PLE) |
 | Idiomas soportados | no disponible |
-| Licencia | qwen-community-1.0 (Qwen Community License 1.0, con enlace al modelo base) |
-| Formato de pesos | GGUF (con cuantización NVFP4 y componentes MTP) |
+| Licencia | qwen-community-1.0 (campo license: other) |
+| Formato de pesos | GGUF |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información sobre la arquitectura interna, el número de tokens de entrenamiento, la composición del dataset ni si hubo fases de RLHF, DPO u otras técnicas de alineamiento. El nombre del repositorio sugiere que el modelo base es Qwen3.8-Flash-Next y que esta variante incorpora MTP (multi-token prediction), una técnica habitual para acelerar la decodificación mediante predicción de varios tokens por paso, pero no hay documentación que lo confirme.
-
-Tampoco hay información sobre el proceso de cuantización: no se especifica el tamaño de bloque de NVFP4, ni si la cuantización se aplicó a todos los pesos o solo a parte de ellos, ni qué herramienta se utilizó para generar los ficheros GGUF. La etiqueta "Uncensored" indica una modificación del comportamiento de rechazo respecto al modelo base, pero no se documenta el método (fine-tuning, abliteration u otro).
+La model card únicamente aporta una tabla de tres filas que indica la precisión de cada componente: los expertos están cuantizados en NVFP4, el módulo MTP (multi-token prediction) se ofrece en BF16, Q4_K_M o MXFP4, y el componente PLE (probablemente "parallel linear expert" o similar) en BF16. Esto confirma una arquitectura de mezcla de expertos con decodificación especulativa mediante predicción multi-token, pero no se especifica el número de expertos, el tamaño por experto, la dimensión oculta, el número de capas ni la longitud de contexto nativa. Tampoco hay información sobre el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron técnicas de RLHF, DPO o similares. El sufijo "Uncensored" sugiere que el autor ha eliminado o reducido el alineamiento de seguridad del modelo base, pero no se documenta el método empleado. No hay información sobre innovaciones técnicas adicionales más allá del propio esquema de cuantización NVFP4 combinado con MTP.
 
 ## Capacidades
 
-- Generación de texto: presumiblemente heredada del modelo base Qwen3.8-Flash-Next, aunque no se documenta explícitamente.
-- Razonamiento y código: no disponible; no hay información específica en el repositorio.
+- Generación de texto conversacional: el tag "conversational" indica que el modelo está orientado a diálogo multi-turno.
+- Razonamiento y código: no confirmado explícitamente en la información disponible, pero plausible dado el tamaño y la familia del modelo base.
 - Tool calling / function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingües: no disponible (no se listan idiomas).
-- Capacidades especiales: se infiere soporte de MTP para decodificación especulativa por el nombre del repositorio, pero no está documentado.
-- Comportamiento "uncensored": se espera una menor tasa de rechazos ante peticiones que el modelo base rechazaría, sin que haya evaluación publicada al respecto.
+- Capacidades multilingües: no disponible; el campo de idiomas no está relleno.
+- Modo "thinking" o razonamiento extendido: no disponible.
+- Visión o audio: no disponible.
+- Decodificación especulativa mediante MTP: sí, confirmado por la presencia del módulo MTP en la model card.
 
 ## Casos de uso
 
-- Despliegue local en formato GGUF: el repositorio está pensado para su carga en runtimes compatibles con GGUF (llama.cpp, Ollama, LM Studio), lo que permite ejecutar el modelo en hardware de consumo sin depender de infraestructura en la nube.
-- Experimentación con cuantización NVFP4: útil para quienes quieran evaluar el rendimiento y la fidelidad de NVFP4 frente a otras cuantizaciones (Q4_K_M, Q5_K_M, etc.) en el mismo modelo.
-- Pruebas de decodificación especulativa con MTP: si los módulos MTP están correctamente integrados, sirve para medir aceleraciones de throughput en runtimes que soporten multi-token prediction.
-- Investigación sobre alineamiento y censura: la variante "uncensored" permite estudiar diferencias de comportamiento respecto al modelo base en tareas de evaluación de seguridad, siempre que se respeten los términos de la licencia.
-- Generación de texto creativo sin filtros: para prototipos de escritura o roleplay donde el desarrollador asume la responsabilidad del contenido generado.
-- Base para fine-tuning posterior: al estar en GGUF, no es el formato ideal para reentrenamiento, pero puede servir como referencia de comportamiento para comparar con adaptaciones propias.
+- Despliegue en entornos con GPU de memoria limitada: la cuantización NVFP4 de los expertos reduce el peso respecto a BF16, lo que permite servir un modelo de ~180 mil millones de parámetros en configuraciones de hardware más modestas que las necesarias para el modelo original en precisión completa. Adecuado para laboratorios que quieran experimentar con modelos grandes sin un clúster dedicado.
+- Investigación sobre alineamiento y seguridad: al tratarse de una variante "uncensored", es útil para estudiar el comportamiento de modelos sin salvaguardas y para evaluar la eficacia de los mecanismos de moderación externos. No recomendado para producción orientada a usuarios finales.
+- Generación de texto creativo sin restricciones: el modelo puede emplearse en tareas de escritura creativa o roleplay donde los filtros de seguridad del modelo base resultan limitativos, siempre que el uso cumpla con la licencia y la legislación aplicable.
+- Evaluación comparativa de cuantizaciones: el repositorio ofrece varias precisiones para el módulo MTP (BF16, Q4_K_M, MXFP4), lo que permite estudiar el impacto de la cuantización en la calidad de la decodificación especulativa.
+- Experimentación con decodificación especulativa: el módulo MTP permite investigar técnicas de aceleración de inferencia y medir su efecto en latencia y throughput en un modelo de gran tamaño.
+- Pruebas de integración con llama.cpp u otros runners GGUF: útil para validar la compatibilidad de pesos NVFP4 y MTP en herramientas de inferencia locales.
 
 ## Benchmarks y rendimiento
 
@@ -52,35 +51,34 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: no disponible; depende del tamaño del modelo base, que no se especifica. La cuantización NVFP4 reduce el peso por parámetro a aproximadamente 4 bits, por lo que un modelo de N mil millones de parámetros ocuparía del orden de N/2 GB, pero no se puede concretar sin conocer N.
-- GPU recomendadas: no disponible.
-- Compatibilidad con GPU de consumo: no disponible; presumiblemente sí si el tamaño del modelo base es reducido, pero no hay confirmación.
-- Opciones de despliegue: llama.cpp, Ollama y LM Studio por el formato GGUF; vLLM y TGI solo si soportan la cuantización NVFP4 y los módulos MTP, lo cual no está documentado.
-- Latencia y throughput: no disponible.
+- VRAM estimada para inferencia: no disponible con precisión; el tamaño del repo es de 189,0 GB, lo que da una orientación del espacio en disco necesario. Para carga en memoria se requerirá un volumen similar o superior, dependiendo del backend y de si se descargan todos los shards.
+- GPU recomendadas: no disponibles. Por el tamaño del modelo, se necesitarán múltiples GPU de alta gama (A100 80 GB, H100 80 GB) o configuraciones con memoria unificada; no se confirma compatibilidad con GPU de consumo.
+- ¿Cabe en GPU de consumo? No disponible; con 179,55 mil millones de parámetros y 189 GB de repo, es improbable que quepa en una sola GPU de consumo (RTX 4090 con 24 GB) sin offloading agresivo a CPU/RAM.
+- Opciones de despliegue: llama.cpp y derivados (Ollama, LM Studio) por el formato GGUF; vLLM y TGI no se confirman para NVFP4 en esta información.
+- Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| ZHUOZA/Qwen3.8-Flash-Next-Uncensored-NVFP4-MTP-GGUF | no disponible | no disponible | qwen-community-1.0 | GGUF (NVFP4) | Hugging Face, 0 descargas |
-| Qwen3.8-Flash-Next (modelo base) | no disponible | no disponible | qwen-community-1.0 | no disponible | Hugging Face (referenciado en la licencia) |
-| Otras variantes GGUF de Qwen | no disponible | no disponible | qwen-community-1.0 | GGUF | Hugging Face |
+| ZHUOZA/Qwen3.8-Flash-Next-Uncensored-NVFP4-MTP-GGUF | 179,55 mil millones | no disponible | qwen-community-1.0 | GGUF | Hugging Face |
+| Modelo base Qwen3.8-Flash-Next (referenciado en license_link) | no disponible | no disponible | qwen-community-1.0 | no disponible | Hugging Face (Qwen) |
+| Otras cuantizaciones GGUF de la misma familia | no disponible | no disponible | no disponible | GGUF | no disponible |
 
-No se dispone de datos suficientes para establecer una comparativa cuantitativa con alternativas de la misma categoría.
+No se dispone de información suficiente para comparar con alternativas de la misma categoría en parámetros, contexto o rendimiento.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de documentación: no hay model card, ni especificaciones, ni evaluación; no es recomendable para producción sin una validación previa exhaustiva.
-- Riesgo de alucinación: desconocido, pero al no haber benchmarks ni evaluación de fidelidad, debe asumirse un riesgo no cuantificado.
-- Comportamiento "uncensored": la eliminación de mecanismos de rechazo puede producir contenido dañino, ofensivo o legalmente problemático; el desarrollador asume la responsabilidad del uso.
-- Licencia Qwen Community License 1.0: impone condiciones específicas para uso comercial y redistribución; es necesario revisar el texto completo antes de cualquier despliegue comercial.
-- Idiomas no documentados: no se puede garantizar un rendimiento aceptable fuera del inglés o del chino sin pruebas propias.
-- Cuantización NVFP4: puede degradar la calidad respecto a los pesos originales en precisión completa; no hay evaluación publicada del impacto.
-- MTP: si los módulos de predicción multi-token no están bien integrados en el runtime, pueden producir salidas incorrectas o inestabilidad.
-- Repositorio sin actividad: 0 descargas y 0 likes en el momento de la consulta, lo que reduce la confianza en la reproducibilidad y el mantenimiento.
+- Ausencia de model card detallada: no se documentan datos de entrenamiento, contexto, idiomas ni evaluación, lo que impide validar el comportamiento del modelo.
+- Variante "uncensored": la eliminación de salvaguardas implica riesgo elevado de generar contenido inapropiado, sesgado o dañino; no apta para producción orientada a usuarios finales sin moderación externa.
+- Riesgo de alucinación: no cuantificado; al no haber benchmarks, no puede estimarse su fiabilidad.
+- Licencia: qwen-community-1.0 con campo license "other"; es necesario revisar los términos del enlace de licencia del modelo base antes de cualquier uso comercial.
+- Idiomas: no confirmados; no puede garantizarse un rendimiento adecuado en castellano.
+- Compatibilidad de cuantización: NVFP4 y MTP pueden no estar soportados por todos los runners GGUF, lo que limita las opciones de despliegue.
+- Repositorio derivado: el autor ZHUOZA no es el desarrollador original de la familia Qwen; la calidad de la cuantización no está verificada por el equipo oficial.
+- Fecha de creación futura (2026-11-05): conviene verificar la autenticidad y procedencia del repositorio antes de su uso.
 
 ## Enlaces
 
-- Repositorio en Hugging Face: https://huggingface.co/ZHUOZA/Qwen3.8-Flash-Next-Uncensored-NVFP4-MTP-GGUF
+- Hugging Face: https://huggingface.co/ZHUOZA/Qwen3.8-Flash-Next-Uncensored-NVFP4-MTP-GGUF
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next/blob/main/LICENSE
-- Modelo base (referenciado): https://huggingface.co/Qwen/Qwen3.8-Flash-Next

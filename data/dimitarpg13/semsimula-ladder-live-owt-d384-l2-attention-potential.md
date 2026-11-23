@@ -2,112 +2,110 @@
 
 ## Resumen
 
-`semsimula-ladder-live-owt-d384-l2-attention-potential` es un modelo de lenguaje de investigación desarrollado por el autor independiente dimitarpg13 dentro de la familia SemSimula, un programa experimental que explora arquitecturas alternativas a los transformers basadas en mecánica lagrangiana y modelos de energía. Este modelo concreto es el brazo `attention_potential` de la generación 3 (Gen 3) de la escalera de ablación, con L=2, y constituye una variante de un modelo de lenguaje conservativo en el que todos los caminos de gradiente están activos ("live gradients") durante el entrenamiento.
+`semsimula-ladder-live-owt-d384-l2-attention-potential` es un modelo de lenguaje de investigación desarrollado por el usuario independiente dimitarpg13 dentro del programa "SemSimula", una línea de trabajo que explora modelos de lenguaje basados en principios físicos (mecánica lagrangiana, campos de potencial escalar y modelos basados en energía) en lugar de la atención estándar de los transformers. Este ejemplar concreto pertenece a la "Generación 3" del estudio y es el brazo `attention_potential` con L=2: incorpora un campo de intercambio conservativo (una interacción de tipo atención formulada como potencial) sobre un modelo base sin intercambio, con todas las rutas de gradiente activas durante el entrenamiento.
 
-El modelo resuelve un problema puramente de investigación: medir qué aporta un campo de intercambio conservativo (una interacción tipo atención escrita como potencial) sobre un modelo base sin intercambio, manteniendo idéntico presupuesto de entrenamiento, corpus y tokenizador. Con 77,4 millones de parámetros y una ventana de contexto fijada en bloques de 512 tokens, se entrena sobre OpenWebText con un presupuesto exacto de 532.480.000 tokens (32.500 pasos × 32 × 512), lo que permite comparaciones controladas entre brazos de la escalera.
+El modelo tiene 77,4 M de parámetros, se entrena sobre OpenWebText con un presupuesto fijo de 532.480.000 tokens y emplea una arquitectura no-transformer y libre de atención (attention-free) denominada Fock-PARFLM, con registros virtuales y un "canal inverso". Su relevancia es fundamentalmente metodológica: forma parte de un estudio de ablación pre-registrado que compara brazos con presupuesto de tokens idéntico, lo que permite aislar el efecto de mecanismos concretos (campo de intercambio, convención de gradientes, enrutamiento) frente a un GPT-2 emparejado.
 
-Su relevancia es metodológica más que práctica: la model card documenta de forma explícita y pre-registrada que el campo de intercambio conservativo no aporta mejora medible (el modelo es un 2,1 % peor que su gemelo sin el campo), y publica el resultado negativo junto con el análisis de salud del entrenamiento. Es un ejemplo de ciencia abierta con pre-registro y resultados negativos, útil para investigadores que estudian arquitecturas no-transformer y modelos basados en energía.
+El resultado principal es negativo y honesto: el campo de intercambio conservativo, tal como se entrena aquí, no aporta mejora medible (el modelo es un 2,1 % peor que su gemelo sin campo). La contribución real es la mejora del 33 % en perplejidad respecto a su gemelo de Generación 2, atribuible únicamente al cambio en la convención de gradientes. Es, por tanto, un artefacto de investigación, no un modelo listo para producción.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Fock-PARFLM (no-transformer, sin atención clásica, modelo de lenguaje conservativo con potencial escalar y campo de intercambio tipo atención) |
+| Arquitectura | Fock-PARFLM (no-transformer, attention-free, modelo basado en energía con campo de potencial escalar y campo de intercambio conservativo) |
 | Parametros totales | 77,4 M |
 | Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | bloques de 512 tokens (entrenamiento y evaluación) |
+| Longitud de contexto | no disponible (entrenado con bloques de 512 tokens) |
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | inglés (en) |
 | Licencia | CC-BY-4.0 |
-| Formato de pesos | no disponible (librería pytorch; repo de 0,6 GB) |
+| Formato de pesos | PyTorch (librería `pytorch`); no se especifica safetensors ni GGUF |
 
 ## Arquitectura y entrenamiento
 
-El modelo pertenece a la familia Fock-PARFLM, una arquitectura no-transformer y "attention-free" que formula la interacción entre tokens como un campo de intercambio conservativo expresado mediante un potencial escalar, en lugar de la atención por producto escalar convencional. La variante `attention_potential` añade ese campo de intercambio sobre el modelo base sin intercambio, con mecanismos de "virtual registers", "reverse channel" y espacio de Fock. La generación 3 se distingue de la generación 2 en que todos los caminos de gradiente aplicables están activos (`relax_grad_path`, `vphi_grad_path` y `xi_grad_path` en `'live'`), de modo que la pérdida propaga gradiente hacia tokens anteriores a través de Vφ, de ξ y de las fuentes y el enrutado del campo de intercambio; en Gen 2 esos tres caminos estaban desconectados (detached).
+La arquitectura Fock-PARFLM se describe en la model card como un modelo de lenguaje conservativo basado en un potencial escalar, inspirado en la mecánica lagrangiana y en los modelos basados en energía. No utiliza atención en el sentido convencional: la interacción entre tokens se formula como un campo de intercambio conservativo (la fuerza es el gradiente de un potencial), complementado con "registros virtuales" y un "canal inverso". El modelo pertenece a la familia PARFLM con espacio de Fock y se etiqueta explícitamente como no-transformer y attention-free. La variante aquí descrita tiene L=2 y añade el campo de intercambio conservativo sobre el modelo base sin intercambio, manteniendo exactamente el mismo forward que su gemelo de Generación 2.
 
-El entrenamiento usa OpenWebText con un presupuesto fijo de 532.480.000 tokens (32.500 pasos, batch 32, bloque 512), idéntico al de todos los brazos Gen 2 y al GPT-2 emparejado de la comparativa, con tasa de aprendizaje constante seguida de decaimiento. La model card no documenta uso de RLHF ni DPO. El run se describe como saludable: 0 activaciones del watchdog, 0 picos, 1,4 % de clip-hit (9 de 650 pasos registrados, norma máxima 1,14, entre los pasos 20.000 y 27.500), norma de gradiente global que sube de 0,43 a 0,91 en la fase de LR constante y baja a 0,75 en el decaimiento, y 1,68 s/paso en una sesión de Colab. El resultado se pre-registró (punto 51, banda 46–56) antes del run.
+El entrenamiento usa OpenWebText con un presupuesto fijo y comparable entre todos los brazos del estudio: 32.500 pasos × 32 de batch × 512 tokens = 532.480.000 tokens, con el mismo corpus, tokenizador y lotes de validación que el resto de brazos de Gen 2 y el GPT-2 emparejado. La innovación de esta Generación 3 es que todas las rutas de gradiente relevantes (`relax_grad_path`, `vphi_grad_path`, `xi_grad_path`) están "vivas": el gradiente de la pérdida llega a los tokens anteriores a través de Vφ, de ξ y de las fuentes y el enrutamiento del campo de intercambio, mientras que en Gen 2 esas tres rutas estaban desconectadas (detached). La model card indica que el entrenamiento se realizó en una única sesión de Colab, a 1,68 s/paso, sin activaciones del watchdog ni picos, con un 1,4 % de pasos con clipping (9 de 650 registrados, norma máxima 1,14, entre los pasos 20.000 y 27.500).
 
 ## Capacidades
 
-- Generación de texto autorregresiva en inglés, con pipeline `text-generation`.
-- Modelado de lenguaje a nivel de token sobre bloques de 512 tokens.
-- Razonamiento multi-paso implícito en la formulación de espacio de Fock con registros virtuales (capacidad de investigación, no validada de forma independiente).
+- Generación de texto autoregresiva en inglés, con decodificación a nivel de token sobre un vocabulario derivado de OpenWebText.
+- Modelado de lenguaje y estimación de probabilidad (perplejidad) sobre texto en inglés.
+- Razonamiento de corto alcance dentro de la ventana de 512 tokens usada en entrenamiento; no hay evidencia de capacidades de razonamiento de largo alcance.
 - No se documenta soporte de tool calling ni function calling.
-- No se documenta soporte de agentes.
-- No se documenta capacidad multilingüe: solo inglés.
-- No se documenta visión, audio ni modo "thinking".
-- No se documenta decodificación especulativa ni otras optimizaciones de inferencia.
+- No se documenta soporte de agentes ni razonamiento multi-paso.
+- Capacidad multilingüe: únicamente inglés; no hay evidencia de transferencia a otros idiomas.
+- No dispone de modo "thinking", visión, audio ni otras modalidades.
+- Su valor práctico es como objeto de estudio: permite reproducir y auditar un experimento de ablación de mecanismos con presupuesto de tokens controlado.
 
 ## Casos de uso
 
-- Investigación en arquitecturas no-transformer: servir como brazo de ablación controlado para estudiar el efecto de un campo de intercambio conservativo frente a un modelo sin intercambio con idéntico presupuesto de tokens y corpus.
-- Reproducción de resultados negativos: el modelo permite replicar el hallazgo de que el campo de intercambio no aporta mejora medible, algo útil en publicaciones sobre modelos basados en energía y mecánica lagrangiana.
-- Estudio de convenciones de gradiente: comparar Gen 2 (fuentes detached) frente a Gen 3 (todo live) para aislar el efecto de la propagación de gradiente a través de Vφ, ξ y el campo de intercambio (33,0 % de mejora en perplejidad atribuida solo a la convención de gradiente).
-- Experimentos de modelado de lenguaje a pequeña escala: con 77,4 M de parámetros y bloques de 512, es viable entrenar y evaluar variantes en una única GPU de consumo o en una sesión de Colab (1,68 s/paso documentado).
-- Docencia y divulgación: ejemplo reproducible de pre-registro, bandas de aceptación y análisis de salud de entrenamiento en un contexto académico.
-- Base para extensiones con enrutado normalizado: la variante `-rfqk` con enrutado QK-normalizado parte de este mismo diseño y sirve como punto de comparación para estudiar el efecto del enrutado.
-- No se recomienda su uso en producción para atención al cliente, generación de código ni tareas de usuario final: su perplejidad (54,21) y su tamaño lo sitúan como artefacto de investigación.
+- Investigación en arquitecturas alternativas al transformer: sirve como punto de partida reproducible para estudiar modelos basados en energía y campos de potencial conservativos, ya que el código y la configuración del experimento están asociados al repositorio del autor.
+- Ablación controlada de mecanismos: al compartir corpus, tokenizador, presupuesto de tokens y lotes de validación con otros brazos del estudio, permite aislar el efecto de un mecanismo concreto (aquí, el campo de intercambio) frente a un GPT-2 emparejado.
+- Estudio de convenciones de gradiente: el modelo documenta una mejora del 33 % en perplejidad atribuible solo a hacer "vivas" las rutas de gradiente, lo que lo convierte en un caso de estudio útil sobre cómo la propagación de gradientes afecta al entrenamiento de modelos con rutas intermedias.
+- Reproducción de experimentos pre-registrados: la model card incluye la predicción pre-registrada (punto 51, banda 46–56) y el resultado real (54,21, dentro de la banda), lo que facilita la verificación independiente de la metodología.
+- Docencia y formación: como ejemplo didáctico de modelado de lenguaje a pequeña escala (77 M de parámetros) con un presupuesto de cómputo modesto (una sesión de Colab), es adecuado para ilustrar el ciclo completo de entrenamiento y evaluación.
+- Evaluación de perplejidad comparada: puede usarse como referencia en estudios que comparen perplejidad en OpenWebText con arquitecturas no-transformer de tamaño similar, siempre que se respete el mismo protocolo de evaluación (bloque de 512, media de las tres últimas evaluaciones de 500 pasos).
 
 ## Benchmarks y rendimiento
 
-Datos declarados por el autor (no verificados de forma independiente). Perplejidad de validación en OpenWebText, bloque 512, media de las tres últimas evaluaciones de 500 pasos ("settled"):
+Resultados declarados por el autor en la model card (no verificados de forma independiente). Todos los modelos comparten presupuesto de 532.480.000 tokens.
 
-| Modelo | PPL settled | vs GPT-2 | Parámetros |
+| Modelo | Perplejidad (validación, bloque 512, asentada) | Parámetros | Relación vs GPT-2 |
 |---|---:|---:|---:|
-| Este modelo (L=2) | 54,21 | 1,088× | 77,4 M |
-| Sin intercambio, Fock activo, live, L=4 (Gen 3) | 50,10 | 1,006× | 76,8 M |
-| Sin intercambio, Fock activo, live, L=2 (Gen 3) | 53,12 | 1,066× | 76,8 M |
-| Solo conservativo, live, L=2 (Gen 3) | 57,76 | 1,160× | 76,6 M |
-| `attention_potential` con enrutado endurecido, live, L=2 (Gen 3) | 52,90 | 1,062× | 77,4 M |
-| `attention_potential`, solo campo de intercambio live (Gen 2, sonda padre) | 61,11 | 1,227× | 77,4 M |
-| Brazo `attention` (Gen 2, L=2) | 63,51 | 1,275× | 77,4 M |
-| Brazo `attention_potential` con todo detached (Gen 2, L=2) | 80,90 | 1,624× | 77,4 M |
-| `gpt2-matched` (L=8) | 49,81 | 1,000× | 33,7 M |
+| Este modelo (L=2, attention_potential, Gen 3) | 54,21 | 77,4 M | 1,088× |
+| Sin intercambio, Fock activo, L=4 (Gen 3) | 50,10 | 76,8 M | 1,006× |
+| Sin intercambio, Fock activo, L=2 (Gen 3) | 53,12 | 76,8 M | 1,066× |
+| Solo conservativo, sin canal inverso (Gen 3, L=2) | 57,76 | 76,6 M | 1,160× |
+| attention_potential con enrutamiento endurecido (Gen 3, L=2) | 52,90 | 77,4 M | 1,062× |
+| attention_potential, solo campo de intercambio vivo (Gen 2, L=2) | 61,11 | 77,4 M | 1,227× |
+| Brazo attention (Gen 2, L=2) | 63,51 | 77,4 M | 1,275× |
+| attention_potential con todo detached (Gen 2, L=2) | 80,90 | 77,4 M | 1,624× |
+| GPT-2 emparejado (L=8) | 49,81 | 33,7 M | 1,000× |
 
-Detalles adicionales reportados: evaluaciones individuales 54,17 / 54,35 / 54,12; mejor 52,44 en el paso 31.000; final 54,12. En el paso 3.000: 118,14 frente a 133,74 de la sonda padre (−11,7 %) y 123,59 del modelo L=2 sin intercambio live en el mismo paso. Pre-registro: punto 51, banda 46–56; resultado 54,21, dentro de banda, pero la línea clave (superar al modelo L=2 sin intercambio en más del 2 %, es decir, ~52,1 o menos) no se cumple: es un 2,1 % peor. La métrica ω·dt mediana en la banda L=2 [3,3, 4,2] dio 2,07, un fallo.
+Detalles adicionales aportados por el autor: la perplejidad asentada es la media de las tres últimas evaluaciones (54,17; 54,35; 54,12), con mejor valor 52,44 en el paso 31.000 y valor final 54,12. En el paso 3.000 el modelo registraba 118,14 frente a 133,74 de su sonda padre (−11,7 %) y 123,59 del modelo L=2 sin intercambio con gradientes vivos. La predicción pre-registrada (punto 51, banda 46–56) se cumplió, pero la línea clave (superar en más del 2 % al modelo L=2 sin intercambio, es decir, ~52,1 o menos) no se cumplió: el modelo es un 2,1 % peor. La métrica ω·dt mediana quedó en 2,07, fuera de la banda esperada [3,3; 4,2].
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible en la información proporcionada. Con 77,4 M de parámetros, una estimación razonable en fp32 sería de ~0,3 GB de pesos más overhead de activaciones; no se documenta oficialmente.
-- GPU recomendadas: no se especifican. El entrenamiento se realizó en una única sesión de Colab (1,68 s/paso), lo que sugiere que cabe en GPUs de consumo tipo T4 o superiores.
-- Cabe en GPU de consumo: probablemente sí, dado el tamaño (77,4 M de parámetros), aunque no se confirma en la model card.
-- Opciones de despliegue: no se documentan (ni vLLM, ni llama.cpp, ni Ollama, ni TGI). La librería es PyTorch y el código de referencia es `model_parf_multixi.py`, no incluido en el repo de pesos.
-- Latencia y throughput: no disponibles para inferencia; solo se reporta 1,68 s/paso durante el entrenamiento.
+- VRAM estimada para inferencia: con 77,4 M de parámetros, en fp32 ocupa aproximadamente 0,31 GB de pesos; en fp16 unos 0,15 GB. El repositorio completo pesa 0,6 GB.
+- GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM es suficiente; el autor entrenó en una sesión de Colab (GPU consumer de gama media), lo que da una idea del perfil de cómputo.
+- Cabe holgadamente en GPU consumer: RTX 3060, RTX 4060, RTX 4090, e incluso en CPU para inferencia de baja carga.
+- Opciones de despliegue: al ser un modelo PyTorch con arquitectura personalizada (no-transformer, attention-free), no es compatible directamente con vLLM, TGI, llama.cpp ni Ollama; requiere cargar el código del autor (`model_parf_multixi.py` y dependencias del proyecto) en PyTorch.
+- Latencia y throughput: el autor reporta 1,68 s/paso durante el entrenamiento en Colab; no se publican cifras de latencia de inferencia ni de throughput.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | PPL OpenWebText (bloque 512) | Licencia | Disponibilidad |
+| Modelo | Parámetros | Contexto | Perplejidad (OpenWebText) | Licencia | Disponibilidad |
 |---|---:|---|---:|---|---|
-| Este modelo (Gen 3, L=2) | 77,4 M | 512 | 54,21 | CC-BY-4.0 | Hugging Face |
-| `semsimula-ladder-live-owt-d384-l2-none` (Gen 3, L=2) | 76,8 M | 512 | 53,12 | CC-BY-4.0 | Hugging Face |
-| `semsimula-ladder-live-owt-d384-l2-attention-potential-rfqk` (Gen 3, L=2) | 77,4 M | 512 | 52,90 | CC-BY-4.0 | Hugging Face |
-| `semsimula-ladder-owt-d384-l2-gpt2-matched` (L=8) | 33,7 M | 512 | 49,81 | no disponible | Hugging Face |
+| Este modelo (Gen 3, L=2) | 77,4 M | 512 (entrenamiento) | 54,21 | CC-BY-4.0 | Hugging Face |
+| Sin intercambio, Fock activo, L=2 (Gen 3) | 76,8 M | 512 (entrenamiento) | 53,12 | CC-BY-4.0 | Hugging Face |
+| attention_potential con enrutamiento endurecido (Gen 3, L=2) | 77,4 M | 512 (entrenamiento) | 52,90 | CC-BY-4.0 | Hugging Face |
+| GPT-2 emparejado (L=8) | 33,7 M | 512 (entrenamiento) | 49,81 | no disponible en la información | Hugging Face (brazo del estudio) |
 
-La comparativa relevante es interna a la escalera SemSimula, ya que no se han identificado modelos externos equivalentes en esta categoría (no-transformer, conservativo, basado en energía) con los que contrastar. Frente al GPT-2 emparejado en presupuesto de tokens, este modelo es 1,088× peor en perplejidad con más del doble de parámetros.
+La comparación con GPT-2 estándar (124 M) no se ha publicado en la información disponible; el único GPT-2 de referencia es el emparejado por presupuesto de tokens del propio estudio, con 33,7 M de parámetros.
 
 ## Limitaciones y advertencias
 
-- El propio autor documenta que el campo de intercambio conservativo "no aporta nada medible": el modelo es un 2,1 % peor que su gemelo sin el campo, y la variante con enrutado corregido solo mejora un 0,4 % sobre ese gemelo, dentro del ruido de evaluación.
-- El coste de la conservatividad no está medido en este trabajo; requiere reentrenar el brazo `attention` no conservativo con gradientes live.
-- Modelo de investigación: no está pensado para uso en producción ni para tareas de usuario final. No se documentan evaluaciones en MMLU, HumanEval, GSM8K ni otras tareas estándar.
-- Solo inglés; sin capacidades multilingües documentadas.
-- Contexto limitado a bloques de 512 tokens, insuficiente para conversaciones multi-turno largas o documentos extensos.
-- Riesgo de alucinación no evaluado; con perplejidad de 54,21 en OpenWebText, la calidad de generación es baja en términos absolutos.
-- No se documentan sesgos específicos, pero al entrenarse solo con OpenWebText hereda los sesgos de ese corpus (texto web en inglés).
-- Licencia CC-BY-4.0: permite uso comercial con atribución, pero al ser un artefacto de investigación sin validación de calidad, su uso comercial no es recomendable.
-- No se documentan formatos de cuantización ni herramientas de despliegue estándar, lo que dificulta su integración en stacks de producción.
-- Los resultados de benchmarks son declarados por el autor y no están verificados de forma independiente (`verified: false`).
+- El campo de intercambio conservativo no aporta mejora medible: el modelo es un 2,1 % peor que su gemelo sin campo, y la versión con enrutamiento endurecido solo mejora un 0,4 % (dentro del ruido de evaluación).
+- El precio de la conservatividad no se ha medido: requiere reentrenar el brazo `attention` no conservativo con gradientes vivos.
+- El modelo es un artefacto de investigación: no está pensado ni validado para uso en producción, y su arquitectura personalizada no es compatible con los runtimes de inferencia habituales.
+- Entrenado únicamente en inglés y sobre OpenWebText, un corpus de texto web con sesgos conocidos (tópicos, registro, demografía de los enlaces); se esperan sesgos heredados del corpus.
+- Riesgo de alucinación alto por tamaño (77 M) y por el dominio de entrenamiento; no se han publicado evaluaciones de factualidad.
+- Ventana de contexto de 512 tokens en entrenamiento; no se documenta capacidad de extrapolación a contextos mayores.
+- La licencia CC-BY-4.0 permite uso comercial con atribución, pero el modelo no ofrece garantías de calidad para tales fines.
+- Los resultados de perplejidad son declarados por el autor y no están verificados de forma independiente (`verified: false` en la model-index).
+- El entrenamiento se realizó en una sola sesión de Colab; no se documenta reproducibilidad multi-semilla.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/dimitarpg13/semsimula-ladder-live-owt-d384-l2-attention-potential
-- Colección Gen 3 (live gradients): https://huggingface.co/collections/dimitarpg13/semantic-simulation-gen-3-cfc-baoab-live-gradients-6abf371ea3c83f127057020c
-- Gemelo Gen 2 del mismo brazo: https://huggingface.co/dimitarpg13/semsimula-ladder-owt-d384-l2-attention-potential
-- Modelo sin intercambio, L=4 (Gen 3): https://huggingface.co/dimitarpg13/semsimula-ladder-live-owt-d384-l4-none
+- Colección Generación 3 (live gradients): https://huggingface.co/collections/dimitarpg13/semantic-simulation-gen-3-cfc-baoab-live-gradients-6abf371ea3c83f127057020c
+- Gemelo Gen 2 (attention_potential): https://huggingface.co/dimitarpg13/semsimula-ladder-owt-d384-l2-attention-potential
+- Sonda padre (Gen 2, solo campo de intercambio vivo): https://huggingface.co/dimitarpg13/semsimula-ladder-owt-d384-l2-attention-potential-rglive
+- Brazo attention (Gen 2): https://huggingface.co/dimitarpg13/semsimula-ladder-owt-d384-l2-attention
 - Modelo sin intercambio, L=2 (Gen 3): https://huggingface.co/dimitarpg13/semsimula-ladder-live-owt-d384-l2-none
-- Solo conservativo, live (Gen 3, L=2): https://huggingface.co/dimitarpg13/semsimula-ladder-live-owt-d384-l2-none-norc
-- `attention_potential` con enrutado endurecido (Gen 3, L=2): https://huggingface.co/dimitarpg13/semsimula-ladder-live-owt-d384-l2-attention-potential-rfqk
-- Sonda padre Gen 2 (solo campo de intercambio live): https://huggingface.co/dimitarpg13/semsimula-ladder-owt-d384-l2-attention-potential-rglive
-- Brazo `attention` (Gen 2, L=2): https://huggingface.co/dimitarpg13/semsimula-ladder-owt-d384-l2-attention
-- GPT-2 emparejado en presupuesto: https://huggingface.co/dimitarpg13/semsimula-ladder-owt-d384-l2-gpt2-matched
+- Modelo sin intercambio, L=4 (Gen 3): https://huggingface.co/dimitarpg13/semsimula-ladder-live-owt-d384-l4-none
+- Solo conservativo, sin canal inverso (Gen 3, L=2): https://huggingface.co/dimitarpg13/semsimula-ladder-live-owt-d384-l2-none-norc
+- attention_potential con enrutamiento endurecido (Gen 3, L=2): https://huggingface.co/dimitarpg13/semsimula-ladder-live-owt-d384-l2-attention-potential-rfqk
+- GPT-2 emparejado (L=8): https://huggingface.co/dimitarpg13/semsimula-ladder-owt-d384-l2-gpt2-matched
 - Dataset OpenWebText: https://huggingface.co/datasets/Skylion007/openwebtext

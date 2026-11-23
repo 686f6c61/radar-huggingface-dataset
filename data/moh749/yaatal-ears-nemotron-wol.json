@@ -29,7 +29,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 513,
+  "downloads_30d": 552,
   "trending_score": 0,
   "parameters": 648268960,
   "parameters_human": "648.3M",
@@ -49,16 +49,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "MOH749/yaatal-ears-nemotron-wol-onnx · Hugging Face",
-      "url": "https://huggingface.co/MOH749/yaatal-ears-nemotron-wol-onnx",
-      "snippet": "Automatic Speech Recognition model. Download, explore files and run it on Hugging Face."
-    },
-    {
-      "title": "MOH749 (Mouhamed NDIAYE) - Hugging Face",
-      "url": "https://huggingface.co/MOH749",
-      "snippet": "MOH749/yaatal-ears-nemotron-wol Automatic Speech Recognition •Updated 9 days ago• 73"
-    }
-  ]
+  "sources": []
 }

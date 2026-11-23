@@ -2,88 +2,91 @@
 
 ## Resumen
 
-Qwen3.8-27B-RFT-v1-mlx-4bit es una cuantizacion en 4 bits (4,5 bits por peso) del modelo Qwen3.8-27B-RFT-v1, publicada por el usuario ghostrider0470. El modelo base es un ajuste fino (RFT, presumiblemente rejection fine-tuning o reinforcement fine-tuning) sobre la familia Qwen3.5, con 26.895.993.856 parametros totales (aproximadamente 27B). Esta version esta especificamente empaquetada para Apple Silicon mediante la libreria MLX, con conversion realizada con mlx-lm 0.32.2.
+Qwen3.8-27B-RFT-v1-mlx-4bit es una compilacion cuantizada en formato MLX de 4 bits del modelo Qwen3.8-27B-RFT-v1, un ajuste fino supervisado (RFT) del Qwen3.8-27B original desarrollado por el equipo Qwen de Alibaba Cloud. La conversion y publicacion corre a cargo de Horizon Tech d.o.o. (Sarajevo, Bosnia y Herzegovina), bajo la autoria de Hamza Abdagic, y esta optimizada especificamente para inferencia en Apple Silicon mediante la libreria mlx-lm.
 
-La relevancia de esta publicacion es acotada pero practica: permite ejecutar un modelo de ~27B en equipos Mac con memoria unificada de 48 GB, con un consumo medido de aproximadamente 15,6 GB de memoria pico y una velocidad de generacion de unos 31 tokens por segundo en un prompt corto de prueba. Es una build unicamente de texto: la torre de vision del modelo base no forma parte de esta cuantizacion.
+El modelo conserva los 26.895.993.856 parametros del checkpoint original (aproximadamente 27B), pero los almacena con una precision efectiva de 4,5 bits por peso, lo que reduce el peso en disco y en memoria de los 52 GB del modelo en bfloat16 a unos 14 GB. Es un modelo exclusivamente de texto: la torre de vision y la cabeza MTP (multi-token prediction) del modelo base no se incluyen porque mlx-lm no las utiliza.
 
-No se dispone de informacion publicada sobre el proceso de entrenamiento del modelo base, la composicion del dataset, el contexto maximo soportado ni los idiomas cubiertos. La licencia es Apache 2.0, heredada del modelo base. El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, y fue creado el 11 de noviembre de 2026.
+Su relevancia practica radica en que permite ejecutar un modelo de clase 27B en equipos Apple con memoria unificada moderada (el autor reporta 15,6 GB de pico de memoria y unos 31 tokens por segundo en un Mac de 48 GB), algo inviable con el checkpoint completo en bfloat16. La licencia Apache 2.0 facilita su adopcion tanto en investigacion como en productos comerciales.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer (familia Qwen3.5, segun tag `qwen3_5`); detalles no disponibles |
+| Arquitectura | Transformer (derivada de Qwen3.8-27B; detalles de atencion no disponibles) |
 | Parametros totales | 26.895.993.856 (~27B) |
 | Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | 4-bit (4,5 bits por peso) en formato MLX |
+| Tipos de cuantizacion | MLX 4-bit (4,5 bits por peso); el modelo base ofrece bfloat16 y NVFP4 |
 | Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (MLX, libreria `mlx`) |
+| Formato de pesos | MLX safetensors (4-bit); repo de 15,2 GB |
 
 ## Arquitectura y entrenamiento
 
-El modelo base pertenece a la familia Qwen3.5, segun la etiqueta `qwen3_5` del repositorio, lo que sugiere una arquitectura transformer decoder-only con las innovaciones propias de esa generacion de Qwen. Sin embargo, no se proporciona informacion sobre el numero de capas, dimensiones ocultas, mecanismo de atencion (estandar, GQA o lineal), ni sobre si incorpora componentes MoE. El sufijo "RFT" en el nombre del modelo base sugiere un ajuste fino por refuerzo o por rechazo de candidatos, pero no se documenta el metodo, los datos ni el proceso.
+La informacion disponible no detalla la arquitectura interna del modelo base Qwen/Qwen3.8-27B (tipo de atencion, uso de MoE, atencion lineal o hibrida, etc.), por lo que no es posible confirmar mas alla de que se trata de un transformer de unos 27B parametros. El checkpoint aqui descrito es una cuantizacion, no un reentrenamiento: la unica transformacion aplicada es la conversion a 4 bits con mlx-lm 0.32.2.
 
-La informacion disponible sobre entrenamiento es practicamente nula: no se indica el numero de tokens de preentrenamiento, la composicion del corpus, ni si hubo fases de RLHF o DPO. La unica innovacion tecnica documentada es la propia cuantizacion: conversion a 4,5 bits por peso con mlx-lm 0.32.2, orientada a inferencia eficiente en Apple Silicon mediante memoria unificada. El autor indica explicitamente que no se ha comparado el rendimiento de la version cuantizada contra el modelo sin cuantizar.
+El modelo del que deriva, Qwen3.8-27B-RFT-v1, es un ajuste fino del Qwen3.8-27B de Alibaba Cloud mediante RFT (rejection fine-tuning u otra variante de refinamiento supervisado; la model card no especifica la metodologia exacta ni el volumen o composicion de los datos de entrenamiento). Tampoco se documentan fases de RLHF o DPO, ni innovaciones tecnicas como decodificacion especulativa. La model card menciona que el modelo original incluye una torre de vision y una cabeza MTP, ambas eliminadas en esta build MLX.
 
 ## Capacidades
 
-- Generacion de texto conversacional, segun el pipeline `text-generation` y la etiqueta `conversational`.
-- Capacidad de razonamiento y codigo: no documentada explicitamente, pero plausible por la familia Qwen3.5; no confirmada en la informacion disponible.
-- Soporte de tool calling / function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingues: no disponibles (el campo de idiomas no esta relleno).
-- Vision: no incluida en esta build (la torre de vision se excluye explicitamente).
-- Modo thinking: no disponible.
-- Audio: no disponible.
+- Generacion de texto y conversacion multi-turno (pipeline text-generation, etiqueta conversational).
+- Razonamiento y respuesta a instrucciones heredados del ajuste RFT sobre Qwen3.8-27B.
+- Capacidades de codigo y matematicas: no confirmadas explicitamente en la informacion disponible, aunque plausibles en un modelo Qwen de esta familia; deben validarse empiricamente.
+- Tool calling / function calling: no documentado en la informacion disponible.
+- Soporte de agentes y razonamiento multi-paso: no documentado.
+- Capacidades multilingues: no documentadas (idiomas no disponibles).
+- Vision: no incluida en esta build (la torre de vision se elimina en la conversion).
+- Modo thinking: no documentado.
 
 ## Casos de uso
 
-- Prototipado local en Mac: desarrolladores con un Mac de 48 GB de memoria unificada pueden ejecutar el modelo con `mlx_lm.chat` para experimentar con generacion de texto conversacional sin depender de la nube, con un consumo pico medido de 15,6 GB.
-- Asistente de escritura offline: al ejecutarse localmente, el modelo es adecuado para tareas de redaccion y reescritura de texto en entornos sin conexion o con requisitos de privacidad, siempre que se valide la calidad en el idioma objetivo.
-- Generacion de texto por lotes en equipos Apple: con ~31 tokens/s medidos en un prompt corto, es viable para procesar volumenes moderados de texto en un Mac Studio o MacBook Pro de gama alta.
-- Evaluacion comparativa de cuantizaciones: util como referencia para medir el impacto de la cuantizacion 4-bit MLX frente al modelo base, aunque el autor no haya publicado esa comparacion.
-- Base para ajuste fino ligero en MLX: al estar en formato MLX y con licencia Apache 2.0, puede servir como punto de partida para experimentos de fine-tuning o LoRA en Apple Silicon, sujeto a la memoria disponible.
-- Demos y pruebas de concepto conversacionales: integrable en aplicaciones de chat locales mediante la API de mlx-lm, sin coste de inferencia por token.
+- Asistente conversacional local en Mac: el modelo puede ejecutarse integramente en un equipo Apple Silicon con mlx-lm y unos 15,6 GB de memoria pico, lo que permite prototipar chatbots privados sin enviar datos a la nube.
+- Desarrollo y depuracion offline: al caber en memoria unificada de 16-24 GB, sirve para generar y revisar codigo en entornos sin conexion o con requisitos de confidencialidad.
+- Evaluacion de modelos de 27B en hardware de consumo: util como banco de pruebas para comparar el comportamiento del ajuste RFT frente al Qwen3.8-27B original antes de desplegar la version bfloat16 en servidores.
+- Generacion de documentacion tecnica y resumenes: la ventana de contexto no esta documentada, por lo que conviene limitar las entradas hasta verificar su longitud real; adecuado para tareas de redaccion asistida en local.
+- Fine-tuning posterior y experimentacion: al ser Apache 2.0 y estar en safetensors MLX, puede servir como punto de partida para adaptaciones (LoRA/QLoRA) en Apple Silicon, aunque para entrenamiento serio es preferible el checkpoint bfloat16 de 52 GB.
+- Pipelines de texto por lotes en estaciones de trabajo Mac: con ~31 tokens/s medidos en un Mac de 48 GB, es viable para procesamiento batch de moderado volumen (clasificacion, extraccion, reescritura) sin GPU dedicada.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El autor solo reporta metricas de inferencia medidas en un Mac de 48 GB: aproximadamente 31 tokens por segundo de generacion y 15,6 GB de memoria pico, sobre un prompt corto de prueba. No se ha comparado con el modelo sin cuantizar.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card indica explicitamente que la build cuantizada no se ha comparado con el modelo sin cuantizar. El unico dato de rendimiento es empirico: aproximadamente 31 tokens por segundo de generacion y 15,6 GB de memoria pico en un Mac de 48 GB con un prompt corto.
 
 ## Requisitos de hardware
 
-- VRAM/memoria estimada: ~15,6 GB de memoria pico medida en un Mac de 48 GB; el repo ocupa 15,2 GB.
-- GPU recomendadas: Apple Silicon con memoria unificada; el autor reporta mediciones en un Mac de 48 GB. No se documentan pruebas en GPU NVIDIA.
-- Cabe en consumer GPU: no confirmado para NVIDIA; en Apple Silicon requiere un equipo con al menos ~16-20 GB de memoria unificada disponible, aunque no se ha verificado en configuraciones menores de 48 GB.
-- Opciones de despliegue: `mlx-lm` (version 0.32.2 usada para la conversion) mediante `mlx_lm.chat`. No se indica compatibilidad con vLLM, llama.cpp, Ollama o TGI, ya que el formato es MLX.
-- Latencia y throughput: ~31 tokens/s de generacion en un Mac de 48 GB con prompt corto; no se reportan metricas de prefill ni de latencia de primer token.
+- VRAM/memoria: unos 14 GB de pesos; el autor mide 15,6 GB de pico de memoria durante la inferencia.
+- Hardware objetivo: Apple Silicon (M1/M2/M3/M4 y variantes Pro/Max/Ultra) con memoria unificada de al menos 16 GB; 24 GB o mas recomendable para contexto largo.
+- GPU NVIDIA: no aplicable a esta build; para CUDA existe la version NVFP4 (20 GB) o el bfloat16 (52 GB) para vLLM/SGLang.
+- Despliegue: mlx-lm (`mlx_lm.chat --model ghostrider0470/Qwen3.8-27B-RFT-v1-mlx-4bit`); no es compatible con vLLM, llama.cpp, Ollama ni TGI en su formato actual.
+- Throughput: ~31 tokens/s en un Mac de 48 GB (dato del autor, prompt corto). Latencia por token no desglosada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Formato | Licencia | Notas |
+| Modelo | Parametros | Formato / tamano | Contexto | Licencia | Plataforma |
 |---|---|---|---|---|---|
-| Qwen3.8-27B-RFT-v1-mlx-4bit | ~27B | no disponible | MLX 4-bit | Apache 2.0 | Build solo texto para Apple Silicon; ~31 tok/s en Mac de 48 GB |
-| Qwen3.8-27B-RFT-v1 (base) | ~27B | no disponible | safetensors | Apache 2.0 | Modelo sin cuantizar; incluye torre de vision; sin benchmarks publicados |
-| Otros modelos Qwen3.5 de ~27B | no disponible | no disponible | no disponible | no disponible | No se dispone de datos verificables en la informacion proporcionada |
+| Qwen3.8-27B-RFT-v1-mlx-4bit (este) | ~27B | MLX 4-bit, 14 GB | no disponible | Apache 2.0 | Apple Silicon |
+| Qwen3.8-27B-RFT-v1 | ~27B | bfloat16, 52 GB | no disponible | Apache 2.0 | Transformers, vLLM, SGLang |
+| Qwen3.8-27B-RFT-v1-NVFP4 | ~27B | NVFP4, 20 GB | no disponible | Apache 2.0 | vLLM en NVIDIA con FP4 |
+| Qwen/Qwen3.8-27B (base) | ~27B | bfloat16 | no disponible | Apache 2.0 (segun modelo base) | Multiples |
 
-No se dispone de informacion suficiente para establecer una comparativa rigurosa con alternativas de la misma categoria.
+No se dispone de datos de rendimiento comparativo entre estas variantes; la unica diferencia documentada es el formato, el tamano y la plataforma de ejecucion.
 
 ## Limitaciones y advertencias
 
-- Modelo unicamente de texto: la torre de vision del modelo base no esta incluida, por lo que no puede procesar imagenes.
-- Sin benchmarks publicados: no hay evidencia de calidad en MMLU, HumanEval, GSM8K ni otras tareas; el autor no compara con el modelo sin cuantizar.
-- Cuantizacion 4-bit: la perdida de calidad frente al modelo base no ha sido medida ni documentada.
-- Idiomas no declarados: no se puede garantizar un rendimiento adecuado en castellano ni en otros idiomas sin evaluacion previa.
-- Contexto desconocido: se desconoce la ventana de contexto maxima, lo que impide planificar casos de uso con documentos largos.
-- Repositorio sin traccion: 0 descargas y 0 likes; no hay evidencia de uso comunitario ni de validacion independiente.
-- Procedencia del modelo base incierta: el modelo base lo publica el mismo usuario (ghostrider0470) y no se documenta el proceso RFT, los datos ni la evaluacion.
-- Licencia Apache 2.0: permite uso comercial, pero al ser una build derivada de un modelo base del mismo autor, conviene verificar la licencia y condiciones del modelo base antes de producción.
-- Riesgo de alucinacion: no evaluado; aplicable el riesgo habitual de los modelos generativos sin datos de calibracion.
+- Modelo solo de texto: no procesa imagenes aunque el modelo base incluya torre de vision.
+- Cuantizacion a 4 bits sin evaluacion publicada frente al original: posible degradacion de calidad no medida; el autor no ha comparado con el modelo sin cuantizar.
+- Longitud de contexto e idiomas no documentados: no planificar produccion con ventanas largas o requisitos multilingues sin validacion previa.
+- Riesgo de alucinacion inherente a los modelos generativos de esta escala; no se documentan mitigaciones especificas.
+- Sesgos: no se documenta ninguna evaluacion de sesgo o seguridad del ajuste RFT.
+- Licencia Apache 2.0 permite uso comercial, pero conviene verificar las condiciones del modelo base Qwen3.8-27B de Alibaba Cloud por si imponen requisitos adicionales.
+- Dependencia de mlx-lm (version 0.32.2 en la conversion): cambios de version pueden afectar la compatibilidad de los pesos.
+- Repositorio de autor individual (ghostrider0470) con solo 511 descargas y 1 like en el momento de la consulta: trazabilidad y mantenimiento limitados; tratar como build comunitaria, no como release oficial de Qwen.
 
 ## Enlaces
 
-- Hugging Face (esta build): https://huggingface.co/ghostrider0470/Qwen3.8-27B-RFT-v1-mlx-4bit
-- Modelo base: https://huggingface.co/ghostrider0470/Qwen3.8-27B-RFT-v1
-- Libreria MLX LM: https://github.com/ml-explore/mlx-lm
-- Documentacion de MLX: https://ml-explore.github.io/mlx/
+- Hugging Face (este modelo): https://huggingface.co/ghostrider0470/Qwen3.8-27B-RFT-v1-mlx-4bit
+- Modelo base del ajuste: https://huggingface.co/ghostrider0470/Qwen3.8-27B-RFT-v1
+- Version NVFP4: https://huggingface.co/ghostrider0470/Qwen3.8-27B-RFT-v1-NVFP4
+- Modelo original de Qwen: https://huggingface.co/Qwen/Qwen3.8-27B
+- Horizon Tech d.o.o.: https://horizon-tech.io
+- ORCID del autor: https://orcid.org/0009-0002-4078-4922
+- Contacto: hamza.abdagic@horizon-tech.io

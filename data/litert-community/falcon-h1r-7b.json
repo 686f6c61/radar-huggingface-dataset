@@ -46,16 +46,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "litert-community/Falcon-H1R-7B · Hugging Face",
-      "url": "https://huggingface.co/litert-community/Falcon-H1R-7B",
-      "snippet": "litert-community / Falcon-H1R-7B Like 0 Follow LiteRT Community (FKA TFLite) 9.78k Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month -"
-    },
-    {
-      "title": "Falcon H1r 7b - AI Model Insights & Benchmarks",
-      "url": "https://free2aitools.com/model/litert-community/falcon-h1r-7b",
-      "snippet": "Registry entry for model Falcon H1r 7b; source metadata pending."
-    }
-  ]
+  "sources": []
 }

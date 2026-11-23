@@ -2,96 +2,102 @@
 
 ## Resumen
 
-AX-Qwen3.8-27B-MLX-AXQ-MXFP4-MTP es un checkpoint cuantizado en precision mixta mediante AXQuant (AXQ) publicado por AutomatosX para Apple Silicon, derivado directamente del modelo BF16 Qwen/Qwen3.8-27B. El resultado es un artefacto en formato MLX Safetensors de 17,41 GB que conserva la torre de vision y la cabeza de prediccion multi-token (MTP) en BF16, mientras que la ruta de lenguaje se cuantiza con una clase de presupuesto MXFP4 y una clase de precision base de 6 bits, con un BPW real medido de 4,8441 en el modelo principal y 5,0147 contando la MTP.
+AX-Qwen3.8-27B-MLX-AXQ-MXFP4-MTP es un checkpoint cuantizado en formato MLX Safetensors del modelo denso Qwen/Qwen3.8-27B, publicado por AutomatosX bajo el marco de cuantización mixta AXQuant (AXQ). El paquete está diseñado específicamente para Apple Silicon y conserva en BF16 tanto la torre de visión como la cabeza de predicción multi-token (MTP), mientras que la ruta principal del lenguaje se cuantiza con una precisión media medida de 4,8441 bits por peso (BPW) en el modelo principal y 5,0147 BPW si se incluye la MTP. El resultado es un artefacto de 17,41 GB que ocupa aproximadamente 17,45 GB en disco.
 
-El modelo base emplea la arquitectura Qwen3_5ForConditionalGeneration, densa (no MoE), con 26.895.993.856 parametros reales en safetensors (27,36B logicos segun la model card) y una longitud de contexto configurada de 262.144 tokens. Su relevancia practica esta en permitir ejecutar un modelo de ~27B con vision y decodificacion especulativa MTP en hardware de Apple con memoria unificada, sin necesidad de GPUs dedicadas.
+El modelo base es una arquitectura `Qwen3_5ForConditionalGeneration` de tipo denso (no MoE) con 27.360 millones de parámetros lógicos y una longitud de contexto configurada de 262.144 tokens. La relevancia de este checkpoint radica en que permite ejecutar un modelo multimodal de 27B en hardware Apple Silicon con un presupuesto de almacenamiento contenido, manteniendo la cabeza MTP para decodificación especulativa en runtimes que la soportan (oMLX y MTPLX).
 
-Es importante subrayar que el propio autor lo etiqueta como evidencia de desarrollo: el paquete incluye registros de conversion e integridad de artefactos, pero no publica evidencia medida de calidad, contexto largo, velocidad de kernels ni exactitud de la MTP. La etiqueta de producto AXQ no debe interpretarse como una afirmacion de rendimiento, y la ejecucion nativa en AX Engine no esta establecida.
+Es importante subrayar que el autor clasifica explícitamente este paquete como evidencia de desarrollo, no como un lanzamiento AXQuant certificado: no se publican mediciones de calidad, de contexto largo, de velocidad de kernels ni de exactitud de la MTP. La etiqueta de producto AXQ no debe interpretarse como una afirmación de rendimiento.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Qwen3_5ForConditionalGeneration (dense, transformer + vision tower + cabeza MTP) |
-| Parametros totales | 26.895.993.856 (safetensors); 27,36B logicos segun la model card |
-| Parametros activos | no aplica (modelo denso) |
-| Longitud de contexto | 262.144 tokens configurados; limite practico segun memoria unificada |
-| Tipos de cuantizacion | AXQuant (AXQ) mixed-precision, clase de presupuesto MXFP4, clase de precision base 6bit; 4,8441 BPW medidos en el modelo principal, 5,0147 BPW total con MTP |
-| Idiomas soportados | no disponible |
+| Arquitectura | Transformer denso (`Qwen3_5ForConditionalGeneration`), con torre de visión y cabeza MTP |
+| Parametros totales | 27.356.723.952 (27,36B lógicos) |
+| Parametros activos | No aplica (modelo denso, no MoE) |
+| Longitud de contexto | 262.144 tokens configurados; el límite práctico depende de la memoria unificada |
+| Tipos de cuantizacion | Cuantización mixta AXQuant 1.9.0; clase de presupuesto Hub MXFP4, clase de precisión base AXQ 6bit; BPW medido 4,8441 (principal) y 5,0147 (total con MTP); MTP y visión preservados en BF16 |
+| Idiomas soportados | No disponible |
 | Licencia | Apache 2.0 |
 | Formato de pesos | MLX Safetensors (no incluye pesos PyTorch ni GGUF) |
-
-Datos adicionales: cuantizador AXQuant 1.9.0; BPW planificado ajustado a almacenamiento 5,6720; tamano de pesos safetensors 17,41 GB; descarga completa aproximada 17,45 GB; MTP presente (True); vision presente (True); audio presente (False); runtime MLX principal MLX-LM; ejecucion nativa AX Engine no establecida; MLX 0.32.1 y MLX-LM 0.31.3 registrados en la conversion; AX Engine 7.5.7 registrado.
+| Tamano de pesos | 17,41 GB (descarga completa aproximada: 17,45 GB) |
+| Cuantizador | AXQuant 1.9.0 |
+| Runtime principal | MLX-LM (registrado con MLX 0.32.1 y MLX-LM 0.31.3) |
+| MTP presente | Sí (`mtp.safetensors`) |
+| Visión presente | Sí |
+| Audio presente | No |
+| Descargas en el Hub | 549 |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es un transformer denso de la familia Qwen3.8 (arquitectura declarada `Qwen3_5ForConditionalGeneration`), con una unica ruta de lenguaje optimizada para cuantizacion y componentes adicionales conservados en mayor precision: la cabeza de prediccion multi-token (MTP) y la torre de vision permanecen en BF16, ya sea dentro del checkpoint o en sidecars vinculados (`mtp.safetensors`, `vision.safetensors`). No se dispone de informacion sobre el numero de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de RLHF o DPO; esos datos no aparecen en la informacion proporcionada.
+El modelo subyacente es un transformer denso de la familia Qwen3.8, con 27,36B de parámetros y una arquitectura de generación condicional que integra una torre de visión para entrada multimodal. La revisión de origen utilizada para la conversión es `1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0` del repositorio Qwen/Qwen3.8-27B. No se dispone de información sobre el volumen de tokens de entrenamiento, la composición del dataset ni las etapas de alineación (RLHF, DPO u otras) en la documentación proporcionada.
 
-En cuanto al proceso de cuantizacion, AXQuant aplica precision mixta por tensor: los tensores protegidos mantienen mayor precision (6 bits, 8 bits o BF16) mientras que otros bajan hasta 4 bits como base, de modo que el nombre de la clase de presupuesto (MXFP4) describe un objetivo de almacenamiento y no una precision uniforme. La documentacion del autor advierte explicitamente que un plan mixto etiquetado como 6bit puede retener 4bit como base y que los suelos de proteccion pueden elevar un pack marcado como 4bit por encima de un presupuesto de 6bit en modelos pequenos o muy protegidos. La innovacion tecnica principal que anuncia el paquete es la preservacion de la cabeza MTP para decodificacion especulativa, consumible mediante runtimes conscientes del sidecar (oMLX desde 0.6.3rc2 o MTPLX), aunque el propio autor no reclama evidencia de velocidad.
+La innovación técnica de este checkpoint no reside en el entrenamiento, sino en el proceso de cuantización: AXQuant aplica un plan de precisión mixta donde los tensores protegidos se mantienen en 6 bits, 8 bits o BF16 para alcanzar un presupuesto de almacenamiento determinado, mientras que la base puede permanecer en 4 bits. El autor advierte que los nombres de los paquetes (4bit, 6bit) describen una clase de presupuesto de almacenamiento, no una precisión uniforme, y que el BPW medido es el dato autoritativo. Además, el paquete conserva la cabeza MTP en un sidecar separado para permitir decodificación especulativa multi-token en runtimes compatibles, y la torre de visión también se preserva en BF16.
 
 ## Capacidades
 
-- Generacion de texto y conversacion multilingue en la ruta de lenguaje (idiomas concretos no disponibles).
-- Vision: se declara presencia de torre de vision en el checkpoint, aunque MLX-LM puede ignorarla y no se reclama calidad vision-lenguaje certificada.
-- Prediccion multi-token (MTP): cabeza empaquetada en `mtp.safetensors` para decodificacion especulativa en runtimes compatibles (oMLX, MTPLX).
-- Contexto largo: ventana configurada de 262.144 tokens, sujeta a la memoria unificada disponible.
-- Tool calling / function calling: no disponible en la informacion proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
-- Modo thinking o razonamiento explicito: no disponible; MTPLX muestra una opcion `--reasoning off`, lo que sugiere soporte de razonamiento controlable, pero no se detalla.
-- Capacidades de audio: descartadas explicitamente (Audio present: False).
+- Generación de texto conversacional y continuaciones de contexto largo, con hasta 262.144 tokens configurados.
+- Procesamiento de visión: el checkpoint incluye torre de visión, aunque la calidad visión-lenguaje no está validada por el autor.
+- Predicción multi-token (MTP) para decodificación especulativa, disponible mediante sidecar `mtp.safetensors` en runtimes compatibles (oMLX 0.6.3rc2 o superior, MTPLX).
+- Ejecución nativa en Apple Silicon mediante MLX-LM para la ruta de texto/backbone.
+- Compatibilidad declarada con el contrato de ejecución `qwen3-next-mtp` en MTPLX.
+- Soporte de tool calling y function calling: no disponible en la documentación proporcionada.
+- Capacidades de agente y razonamiento multi-paso: no disponibles en la documentación proporcionada.
+- Capacidades multilingües: no disponibles en la documentación proporcionada.
+- Modo de razonamiento (thinking): MTPLX expone un flag `--reasoning off`, lo que sugiere soporte de razonamiento en el modelo base, pero no se detalla su comportamiento.
+- Audio: no soportado.
 
 ## Casos de uso
 
-- Inferencia local en Mac para desarrollo: permite ejecutar un modelo de ~27B cuantizado a 17,45 GB en Apple Silicon con memoria unificada, util para probar prompts y flujos sin GPU dedicada.
-- Asistentes de codigo en portatil: con 262.144 tokens de contexto configurados y decodificacion MTP en oMLX/MTPLX, se puede trabajar sobre repositorios grandes manteniendo latencia de generacion reducida (siempre que la memoria lo permita).
-- Analisis de documentos largos: la ventana de 262k tokens facilita resumir o consultar contratos, informes o transcripciones extensas, aunque el limite practico depende de la RAM unificada del equipo.
-- Prototipado multimodal en local: la torre de vision en BF16 permite experimentar con tareas imagen-texto en runtimes que carguen el sidecar `vision.safetensors`, no en MLX-LM estandar.
-- Evaluacion comparativa de cuantizacion: sirve como referencia para medir la perdida de calidad frente al modelo base BF16 y frente a los siblings de 4bit y 6bit dentro del catalogo AXQ.
-- Investigacion sobre decodificacion especulativa: la inclusion de la cabeza MTP hace del paquete un banco de pruebas para estudiar aceleracion por prediccion multi-token en MTPLX.
-- Despliegue en entornos sin CUDA: como alternativa a stacks basados en NVIDIA para equipos que solo disponen de hardware Apple.
+- Inferencia local en Mac con Apple Silicon: el paquete está diseñado para MLX-LM y permite ejecutar un modelo de 27B en memoria unificada de Apple, con un peso en disco de 17,45 GB que cabe en equipos con 32 GB o más de RAM unificada.
+- Prototipado de asistentes conversacionales de contexto largo: los 262.144 tokens configurados permiten manejar documentos extensos, historiales de conversación largos o bases de código completas en una sola ventana, siempre que la memoria unificada lo permita.
+- Evaluación de decodificación especulativa: la presencia de la cabeza MTP en un sidecar permite a investigadores probar aceleración de generación con MTPLX u oMLX y comparar latencias frente a la decodificación estándar de MLX-LM.
+- Experimentación multimodal en local: al conservar la torre de visión en BF16, el checkpoint sirve para probar pipelines de imagen-texto en entornos Apple, aunque el autor no certifica la calidad de estas salidas.
+- Despliegue en flujos de trabajo de desarrollo con MLX: el comando `mlx_lm.generate` permite integrar el modelo en scripts de generación de texto y pruebas de prompts sin necesidad de GPUs NVIDIA.
+- Investigación sobre cuantización mixta: el paquete incluye `runtime_audit.json` y `axquant_runtime.json` con hallazgos de formato físico y enlaces de configuración, lo que lo convierte en material útil para estudiar el comportamiento de AXQuant en arquitecturas densas con visión y MTP.
+- Reproducibilidad de conversiones: el autor recomienda fijar el commit del Hub en despliegues reproducibles, lo que facilita la auditoría de artefactos en entornos de investigación.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card indica expresamente que el paquete no publica evidencia medida de calidad, contexto largo, velocidad de kernels ni velocidad de MTP, y que la etiqueta AXQ no constituye una afirmacion de benchmark.
+No se han publicado resultados de benchmarks en la informacion disponible. El autor indica explícitamente que el paquete no publica evidencia medida de calidad, contexto largo, velocidad de kernels ni velocidad de MTP, y que la etiqueta AXQ no constituye una afirmación de benchmark.
 
 ## Requisitos de hardware
 
-- VRAM / memoria unificada: el peso en safetensors ocupa 17,41 GB y la descarga completa ronda los 17,45 GB; hay que anadir el espacio para la cache KV, que crece con la longitud de contexto y puede volverse muy exigente cerca de los 262.144 tokens. Cifra exacta de memoria total: no disponible.
-- Hardware objetivo: Apple Silicon con memoria unificada (la libreria declarada es MLX). No se mencionan GPU NVIDIA ni AMD.
-- GPU consumer: no aplica en el sentido tradicional; el modelo esta pensado para Mac. No se proporcionan datos de ejecucion en RTX 4090 u otras GPUs.
-- Opciones de despliegue: MLX-LM para inferencia de texto/backbone; oMLX 0.6.3rc2 o superior para importar el sidecar MTP y activar Lightning MTP; MTPLX para consumir directamente `mtp.safetensors` con el contrato `qwen3-next-mtp`. AX Engine nativo no esta establecido por falta de `model-manifest.json` validado.
-- Latencia y throughput: no disponibles; el autor no publica mediciones de velocidad ni reclama certificacion alguna.
+- VRAM/RAM unificada estimada: el peso en disco es de 17,41 GB; para inferencia se necesita memoria unificada suficiente para pesos más caché KV. Con contexto de 262.144 tokens, el consumo de caché KV puede ser elevado y depende de la implementación.
+- GPU recomendadas: Apple Silicon con memoria unificada. No se especifican modelos concretos de chip (M1, M2, M3, M4) en la documentación.
+- Cabe en GPU consumer: el formato MLX está orientado a Apple Silicon, no a GPUs NVIDIA consumer como la RTX 4090. No se proporcionan datos para estas.
+- Opciones de despliegue: MLX-LM (ruta de texto/backbone), oMLX 0.6.3rc2 o superior (con importación de sidecar MTP y modo Lightning MTP), MTPLX (consumo directo del sidecar con perfil `stable` y profundidad 1). AX Engine no está validado: no se incluye `model-manifest.json` nativo.
+- Latencia y throughput: no disponibles. El autor no publica mediciones de velocidad.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Formato / precision | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Formato | Licencia | Notas |
 |---|---|---|---|---|---|
-| AX-Qwen3.8-27B-MLX-AXQ-MXFP4-MTP | 26,9B reales (27,36B logicos) | 262.144 tokens | MLX Safetensors, 4,8441 BPW principal / 5,0147 total | Apache 2.0 | Hugging Face (846 descargas) |
-| AX-Qwen3.8-27B-MLX-AXQ-4bit-MTP (sibling) | mismo base | 262.144 tokens (por base) | MLX Safetensors, presupuesto AXQ menor | Apache 2.0 | Hugging Face |
-| AX-Qwen3.8-27B-MLX-AXQ-6bit-MTP (sibling) | mismo base | 262.144 tokens (por base) | MLX Safetensors, presupuesto cercano a 6 BPW | Apache 2.0 | Hugging Face |
-| Qwen/Qwen3.8-27B (base) | 27,36B logicos | 262.144 tokens (por base) | BF16 (formato original del autor) | Apache 2.0 | Hugging Face |
+| AX-Qwen3.8-27B-MLX-AXQ-MXFP4-MTP | 27,36B | 262.144 | MLX Safetensors (AXQ mixto, 4,8441 BPW principal) | Apache 2.0 | Checkpoint de desarrollo, sin benchmarks publicados; visión y MTP en BF16 |
+| AX-Qwen3.8-27B-MLX-AXQ-4bit-MTP (hermano) | 27,36B | 262.144 | MLX Safetensors | Apache 2.0 | Presupuesto AXQ menor; BPW exacto no disponible en esta ficha |
+| AX-Qwen3.8-27B-MLX-AXQ-6bit-MTP (hermano) | 27,36B | 262.144 | MLX Safetensors | Apache 2.0 | Precisión media mayor cerca del presupuesto de 6 BPW; BPW exacto no disponible en esta ficha |
+| Qwen/Qwen3.8-27B (modelo base) | 27,36B | 262.144 | BF16 (formato original no detallado) | Apache 2.0 | Fuente de la conversión; sin cuantizar |
 
-No se dispone de datos de rendimiento de los siblings ni del modelo base en la informacion proporcionada, por lo que la comparacion se limita a parametros, contexto, formato y licencia. No se conocen otros modelos comparables fuera del catalogo de AutomatosX con datos verificables en esta ficha.
+No se dispone de datos de rendimiento comparativo entre estos modelos en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Evidencia de desarrollo, no release certificado: el autor indica que no hay mediciones de calidad, contexto largo, velocidad de kernels ni exactitud o velocidad de MTP.
-- MLX-LM no carga los sidecars: la compatibilidad estandar cubre solo texto/backbone; puede ignorar los metadatos AXQuant y los archivos `vision.safetensors` y `mtp.safetensors`, de modo que ejecutar con MLX-LM no garantiza aceleracion MTP ni calidad vision-lenguaje.
-- AX Engine no establecido: el paquete no incluye un `model-manifest.json` valido; los campos de AX Engine en `axquant_runtime.json` describen un contrato de compatibilidad previsto, no evidencia observada.
-- Discrepancia de parametros: 26.895.993.856 reales en safetensors frente a 27,36B logicos declarados en la model card; conviene verificar la cifra para planificacion de recursos.
-- Nomenclatura de cuantizacion potencialmente confusa: el pack se llama MXFP4 pero su clase de precision base es 6bit, porque AXQ es un presupuesto de almacenamiento y no una precision uniforme.
-- Riesgo de alucinacion: no disponible en la informacion proporcionada.
-- Sesgos conocidos: no disponible en la informacion proporcionada.
-- Idiomas soportados: no disponibles; no se puede garantizar cobertura multilingue concreta.
-- Requisito de hardware restrictivo: al ser un checkpoint MLX, el uso queda limitado a Apple Silicon; no hay pesos PyTorch ni GGUF para otros stacks.
-- Reproducibilidad: el autor recomienda fijar el commit del Hub en despliegues reproducibles en lugar de depender de `main`.
-- Licencia Apache 2.0: permite uso comercial, pero conviene revisar las condiciones del modelo base Qwen/Qwen3.8-27B y de los sidecars si se redistribuyen.
+- El autor clasifica el paquete como evidencia de desarrollo, no como lanzamiento certificado: no hay evidencia publicada de calidad, contexto largo, velocidad de kernels ni exactitud de MTP.
+- La etiqueta AXQ describe una clase de presupuesto de almacenamiento, no una precisión uniforme; el BPW medido es el dato autoritativo y puede diferir del nombre del paquete.
+- MLX-LM estándar puede ignorar los metadatos de runtime de AXQuant y los sidecars opcionales (`vision.safetensors`, `mtp.safetensors`), por lo que el comando de ejemplo no garantiza aceleración MTP ni calidad visión-lenguaje.
+- AX Engine no está establecido: no se incluye un `model-manifest.json` nativo validado y los campos de AX Engine en `axquant_runtime.json` describen un contrato de compatibilidad, no evidencia observada.
+- El uso del sidecar MTP requiere runtimes específicos (oMLX 0.6.3rc2 o superior, MTPLX) y descargar el repositorio completo en un directorio local escribible.
+- El límite práctico de contexto depende de la memoria unificada del equipo; los 262.144 tokens configurados no garantizan su uso efectivo.
+- No se dispone de información sobre sesgos, riesgo de alucinación, rendimiento por idioma ni capacidades multilingües.
+- Licencia Apache 2.0: permite uso comercial, pero el autor no certifica el rendimiento ni la calidad del artefacto cuantizado para producción.
+- El repositorio no contiene pesos PyTorch ni GGUF, lo que limita su uso a ecosistemas MLX/Apple Silicon.
+- Se recomienda fijar el commit del Hub en despliegues reproducibles en lugar de depender de `main`.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/AutomatosX/AX-Qwen3.8-27B-MLX-AXQ-MXFP4-MTP
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B/tree/1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0
-- Sibling 4bit: https://huggingface.co/AutomatosX/AX-Qwen3.8-27B-MLX-AXQ-4bit-MTP
-- Sibling 6bit: https://huggingface.co/AutomatosX/AX-Qwen3.8-27B-MLX-AXQ-6bit-MTP
+- Hermano 4bit: https://huggingface.co/AutomatosX/AX-Qwen3.8-27B-MLX-AXQ-4bit-MTP
+- Hermano 6bit: https://huggingface.co/AutomatosX/AX-Qwen3.8-27B-MLX-AXQ-6bit-MTP
 - Colecciones de AutomatosX: https://huggingface.co/AutomatosX/collections
-- Indice completo del catalogo MLX: https://huggingface.co/collections/AutomatosX/automatosx-mlx-model-catalog
+- Índice completo del catálogo: https://huggingface.co/collections/AutomatosX/automatosx-mlx-model-catalog

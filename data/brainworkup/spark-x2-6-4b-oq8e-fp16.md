@@ -2,79 +2,83 @@
 
 ## Resumen
 
-Spark-X2.6-4B-oQ8e-fp16 es una cuantización comunitaria en formato MLX del modelo Spark-X2.6-4B, publicado por el usuario brainworkup (cuantización preparada por xunlinkx) a partir del checkpoint original de XHToken/Spark-X2.6-4B, el modelo base de la familia SparkLLM. Se trata de una versión en 8 bits (oQ8e) destinada a la inferencia local en ordenadores Apple Silicon mediante el framework MLX, que resuelve el problema de ejecutar un modelo de 4 mil millones de parámetros con la máxima precisión posible tras la cuantización sin necesidad de GPU dedicada.
+Spark-X2.6-4B-oQ8e-fp16 es una cuantizacion comunitaria en formato MLX del modelo XHToken/Spark-X2.6-4B, desarrollado por el equipo SparkLLM de XHToken. La publica el usuario brainworkup (atribuida a xunlinkx) mediante el pipeline de cuantizacion oMLX, con el objetivo de permitir la inferencia local del modelo en Macs con Apple Silicon. No se trata de un modelo nuevo, sino de una distribucion de pesos cuantizados que conserva la arquitectura `spark2_5` y el tokenizer del checkpoint original.
 
-La variante `-fp16` indica que el checkpoint original en BF16 se convirtió a FP16 antes de aplicar la cuantización afín de 8 bits con group size 64 y calibración mejorada del pipeline oMLX (128 muestras de 512 tokens). Es la variante de mayor precisión del conjunto publicado por el autor, a costa de un mayor tamaño de descarga (4,4 GB) y consumo de memoria respecto a las versiones en 4 y 5 bits. El modelo hereda la licencia Apache-2.0 del checkpoint original, lo que permite su uso comercial sin restricciones adicionales. No se dispone de información detallada sobre la arquitectura interna, la longitud de contexto ni los datos de entrenamiento del modelo base en la documentación proporcionada.
+El modelo base cuenta con 4.112.079.360 parametros (aproximadamente 4,1 mil millones) y esta pensado para generacion de texto y uso conversacional. Esta variante concreta aplica cuantizacion afina uniforme de 8 bits sobre las capas lineales, con group size 64, partiendo de una conversion previa del checkpoint original BF16 a FP16. El repositorio ocupa 4,4 GB y esta etiquetado con licencia Apache-2.0, heredada del modelo upstream.
 
-## Especificaciones técnicas
+Su relevancia es practica: ofrece la variante de mayor precision del conjunto de cuantizaciones publicadas por este autor (frente a las versiones de 4 y 5 bits), lo que la hace adecuada para quienes priorizan fidelidad numerica sobre huella de memoria en equipos Apple Silicon. La informacion publica disponible es limitada: la model card remite al repositorio upstream para detalles de arquitectura, entrenamiento y limitaciones, y no incluye resultados de benchmarks.
 
-| Parámetro | Valor |
+## Especificaciones tecnicas
+
+| Parametro | Valor |
 |---|---|
-| Arquitectura | `spark2_5` (detalles internos no disponibles) |
-| Parámetros totales | 4.112.079.360 |
-| Parámetros activos | no disponible (no consta si es MoE) |
+| Arquitectura | `spark2_5` (transformer; detalles internos no disponibles) |
+| Parametros totales | 4.112.079.360 |
+| Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantización | 8 bits afín (oQ8e), group size 64, origen FP16 |
+| Tipos de cuantizacion | 8 bits afina uniforme en capas lineales, group size 64; origen FP16 (convertido desde BF16) |
 | Idiomas soportados | no disponible |
 | Licencia | Apache-2.0 |
-| Formato de pesos | safetensors (formato MLX) |
+| Formato de pesos | safetensors en formato MLX (libreria `mlx`) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base Spark-X2.6-4B utiliza la arquitectura `spark2_5`, sobre la que la documentación disponible no aporta detalles técnicos (número de capas, dimensiones, mecanismos de atención o tipo de tokenizer). La model card del original menciona configuraciones de chat-template y "thinking-budget", lo que sugiere soporte de razonamiento con presupuesto ajustable, aunque estos detalles dependen del runtime empleado y no están documentados en la información disponible.
+La arquitectura declarada es `spark2_5`, la del modelo upstream XHToken/Spark-X2.6-4B. La model card de esta cuantizacion no describe la estructura interna (tipo de atencion, capas, activaciones ni si incorpora componentes MoE), por lo que esos detalles deben consultarse en la model card y el repositorio oficiales del modelo base. Tampoco se documentan aqui el volumen de tokens de entrenamiento, la composicion del dataset ni si hubo etapas de RLHF o DPO.
 
-En cuanto a esta versión concretamente, el checkpoint original en BF16 se convirtió a FP16 antes de la cuantización para maximizar la compatibilidad entre generaciones de Apple Silicon (M1 a M6). La cuantización se realizó con el pipeline oMLX, que aplica calibración mejorada sobre 128 muestras con longitud de secuencia de 512 tokens, cuantización afín uniforme de 8 bits para las capas lineales y group size 64. No se dispone de datos sobre el corpus de entrenamiento, número de tokens ni etapas de alineamiento (RLHF/DPO) del modelo base.
+La innovacion tecnica de este repositorio es exclusivamente el proceso de cuantizacion: se convirtio el checkpoint BF16 original a FP16 y se aplico cuantizacion afina de 8 bits con calibracion mejorada de oMLX (128 muestras, secuencias de 512 tokens), group size 64. La eleccion de FP16 como fuente busca compatibilidad amplia entre generaciones de Apple Silicon (M1 a M6). El autor realizo una comprobacion de humo de carga y generacion de 16 tokens con un pico de memoria de 4,530 GB reportado por MLX, sin que ello constituya un benchmark de calidad.
 
 ## Capacidades
 
-- Generación de texto conversacional (pipeline `text-generation`).
-- Posible soporte de razonamiento con configuración de "thinking-budget" según la model card del modelo base, sujeto al runtime.
-- Ejecución local en Apple Silicon mediante MLX y MLX-LM.
-- No hay información disponible sobre capacidades de código, matemáticas, visión, audio, tool calling ni soporte multilingüe explícito.
+- Generacion de texto y uso conversacional, segun el pipeline declarado (`text-generation`, `conversational`).
+- Soporte de modo de razonamiento ("thinking") y plantilla de chat: la model card menciona ajustes de "thinking-budget" y chat-template soportados por el runtime, remitiendo al modelo upstream para el detalle.
+- Parametros de muestreo recomendados por el autor upstream: temperatura 1.0 y top-p 0.95.
+- Capacidades multilingues: no disponibles en la informacion proporcionada.
+- Soporte de tool calling, function calling, agentes, vision o audio: no disponible en la informacion proporcionada.
 
 ## Casos de uso
 
-- Asistente conversacional local en Mac: el modelo puede ejecutarse íntegramente en la memoria unificada de Apple Silicon, con un pico de memoria de 4,53 GB medido en la validación, lo que lo hace viable incluso en equipos con 8 GB de RAM.
-- Prototipado de aplicaciones de chat con privacidad: al correr todo en local mediante MLX-LM, no se envían datos a servicios externos, adecuado para prototipos con datos sensibles.
-- Comparación de precisiones de cuantización: al ser la variante de 8 bits de mayor precisión del conjunto, sirve como referencia de calidad frente a las versiones en 4 y 5 bits del mismo autor.
-- Desarrollo y pruebas sobre hardware Apple: la compatibilidad con MLX desde M1 hasta M6 permite integrarlo en flujos de desarrollo sin GPU NVIDIA.
-- Integración en pipelines de inferencia con oMLX: el `config.json` incluye los metadatos de cuantización, facilitando su carga en runtimes compatibles con la arquitectura `spark2_5`.
-- Generación de respuestas cortas y consultas de conocimiento general: la validación incluida demuestra generación básica (ejemplo de pregunta geográfica) con muestreo a temperature 1.0 y top-p 0.95.
+- Inferencia local en Mac Apple Silicon: el formato MLX y la cuantizacion de 8 bits permiten ejecutar el modelo en equipos M1-M6 sin GPU dedicada, usando oMLX o MLX-LM con soporte para la arquitectura `spark2_5`.
+- Prototipado de asistentes conversacionales en local: el pipeline conversacional y la plantilla de chat permiten montar un chatbot de escritorio con datos que no salen del equipo.
+- Evaluacion de fidelidad frente a cuantizaciones mas agresivas: al ser la variante de mayor precision del conjunto (frente a 4 y 5 bits), sirve para comparar la degradacion introducida por cuantizaciones inferiores sobre el mismo modelo base.
+- Desarrollo y depuracion de integraciones MLX: util para validar que una instalacion de oMLX o MLX-LM carga correctamente la arquitectura Spark y su metadata de cuantizacion antes de desplegar variantes mas ligeras.
+- Generacion de texto asistida en flujos de trabajo de investigacion: con temperatura 1.0 y top-p 0.95 se puede usar para redaccion exploratoria y generacion de borradores en local.
+- Pruebas de razonamiento con presupuesto de "thinking": si el runtime lo soporta, permite experimentar con distintos presupuestos de razonamiento en un modelo de ~4B sin coste de API.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La única medición incluida es una comprobación básica de carga y generación (smoke check) de 16 tokens, con un pico de memoria de 4,530 GB reportado por MLX; no constituye una comparación de calidad.
+No se han publicado resultados de benchmarks en la informacion disponible. La unica metrica reportada es una comprobacion de humo: generacion de 16 tokens con un pico de memoria de 4,530 GB medido por MLX, que no constituye una evaluacion de calidad ni de rendimiento comparativo.
 
 ## Requisitos de hardware
 
-- VRAM/memoria estimada: pico de 4,53 GB medido por MLX en generación corta; el consumo aumenta con la longitud de contexto y la sobrecarga del runtime. El repositorio ocupa 4,4 GB.
-- Hardware objetivo: Macs con Apple Silicon (generaciones M1 a M6) usando MLX; no requiere GPU dedicada.
-- Cabe en consumer hardware: sí, cualquier Mac con memoria unificada suficiente (recomendable 8 GB o más).
-- Opciones de despliegue: oMLX (recomendado por el autor) y MLX-LM (`mlx_lm.generate`). No consta soporte verificado en vLLM, llama.cpp, Ollama ni TGI.
-- Latencia y throughput: no disponible.
+- VRAM/memoria unificada estimada: el autor reporta 4,530 GB de pico en una generacion corta; el requisito crece con la longitud de contexto y el overhead del runtime. El repositorio pesa 4,4 GB.
+- Hardware objetivo: Macs con Apple Silicon, generaciones M1 a M6, mediante MLX.
+- GPU dedicadas (A100, H100, RTX 4090): no es el objetivo de esta variante; no se documenta soporte CUDA para este repositorio concreto.
+- Opciones de despliegue: oMLX (recomendado por el autor) y MLX-LM con soporte para la arquitectura Spark. Ejemplo de invocacion con `mlx_lm.generate`.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Cuantización | Formato | Licencia | Contexto |
+| Modelo | Parametros | Contexto | Formato | Licencia | Notas |
 |---|---|---|---|---|---|
-| Spark-X2.6-4B-oQ8e-fp16 (este) | 4,11 B | 8 bits (oQ8e, group 64) | MLX/safetensors | Apache-2.0 | no disponible |
-| XHToken/Spark-X2.6-4B (base) | 4,11 B | BF16 (sin cuantizar) | no disponible | Apache-2.0 | no disponible |
-| Variantes 4-bit y 5-bit del mismo autor | 4,11 B | 4 y 5 bits | MLX/safetensors | Apache-2.0 | no disponible |
+| Spark-X2.6-4B-oQ8e-fp16 (este) | 4,11B | no disponible | MLX safetensors 8-bit | Apache-2.0 | Cuantizacion comunitaria, objetivo Apple Silicon |
+| XHToken/Spark-X2.6-4B (upstream) | 4,11B | no disponible | BF16 | Apache-2.0 | Modelo original; referencia de calidad |
+| Otras variantes del mismo autor (4-bit, 5-bit) | 4,11B | no disponible | MLX | Apache-2.0 | Menor huella de memoria, mayor perdida de precision |
 
-Frente a las variantes de 4 y 5 bits, esta versión de 8 bits ofrece la mayor fidelidad al checkpoint original a cambio de un mayor tamaño de descarga y consumo de memoria. No se han incluido modelos de otras familias por falta de datos comparables (contexto, benchmarks) en la información disponible.
+No se dispone de datos de rendimiento para establecer comparaciones cuantitativas con modelos de otras familias del mismo tamano.
 
 ## Limitaciones y advertencias
 
-- Es una cuantización comunitaria de xunlinkx, no un lanzamiento oficial de XHToken ni está respaldada por los autores originales.
-- No hay benchmarks de calidad publicados; la única validación es un smoke check de 16 tokens, por lo que no se puede garantizar la ausencia de degradación por cuantización.
-- La documentación no especifica idiomas soportados, longitud de contexto ni capacidades exactas; conviene consultar la model card del modelo base antes de uso en producción.
-- Riesgo de alucinación típico de LLM: no evaluado en la información disponible.
-- La carga requiere un runtime con soporte de la arquitectura `spark2_5` (oMLX reciente o MLX-LM compatible); no funcionará en herramientas que no la soporten.
-- Los requisitos de memoria crecen con la longitud de contexto; la cifra de 4,53 GB corresponde solo a generación corta.
+- Cuantizacion no oficial: es un trabajo comunitario de xunlinkx/brainworkup, no respaldado por XHToken; puede introducir degradacion respecto al checkpoint BF16 original.
+- Perdida de precision por cuantizacion de 8 bits: aunque es la variante mas fiel del conjunto, no equivale al modelo completo.
+- Informacion incompleta: no se documentan contexto maximo, idiomas, sesgos conocidos ni riesgos de alucinacion en esta model card; deben consultarse en el modelo upstream.
+- Dependencia de runtime: requiere versiones recientes de oMLX o MLX-LM con soporte para `spark2_5`; sin ellas el modelo no carga.
+- Alcance de hardware restringido: orientado a Apple Silicon; no se garantiza funcionamiento en otras plataformas con este repositorio.
+- Licencia Apache-2.0: permite uso comercial, pero conviene verificar la licencia y condiciones del modelo upstream y citar la atribucion correspondiente.
+- Validacion minima: la unica prueba publicada es una generacion de 16 tokens; no hay evidencia de calidad en tareas largas o complejas.
 
 ## Enlaces
 
-- Repositorio del modelo: https://huggingface.co/brainworkup/Spark-X2.6-4B-oQ8e-fp16
+- Repositorio de esta cuantizacion: https://huggingface.co/brainworkup/Spark-X2.6-4B-oQ8e-fp16
 - Modelo base: https://huggingface.co/XHToken/Spark-X2.6-4B
-- Licencia del modelo base: https://huggingface.co/XHToken/Spark-X2.6-4B/blob/main/LICENSE
+- Licencia upstream: https://huggingface.co/XHToken/Spark-X2.6-4B/blob/main/LICENSE
 - Proyecto oficial Spark-X2.6: https://github.com/XHToken/Spark-X2.6

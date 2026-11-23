@@ -40,7 +40,7 @@
     "region:us"
   ],
   "likes": 6,
-  "downloads_30d": 499,
+  "downloads_30d": 500,
   "trending_score": 0,
   "parameters": 15606149872,
   "parameters_human": "15.61B",
@@ -61,22 +61,82 @@
   "renamed_at": null,
   "benchmarks": [
     {
+      "task": "Terminal-Bench 2.1 (89 Docker CLI Tasks)",
+      "dataset": "Terminal-Bench 2.1",
+      "metric": "Tasks Resolved (%)",
+      "value": 56.2
+    },
+    {
+      "task": "LiveCodeBench v6 (175 Problems)",
+      "dataset": "livecodebench/code_generation_lite",
+      "metric": "pass@1 (%)",
+      "value": 72
+    },
+    {
+      "task": "LiveCodeBench v6 (175 Problems)",
+      "dataset": "livecodebench/code_generation_lite",
+      "metric": "Hard Problems pass@1 (%)",
+      "value": 48.75
+    },
+    {
       "task": "BullshitBench v2 (100 Traps)",
       "dataset": "BullshitBench v2",
-      "metric": "Mean Score (out of 2.0)",
-      "value": 1.96
+      "metric": "Mean Score (out of 2.0, Global Rank",
+      "value": 1.93
     },
     {
       "task": "BullshitBench v2 (100 Traps)",
       "dataset": "BullshitBench v2",
       "metric": "Green Pushback Rate (%)",
-      "value": 98
+      "value": 96
+    },
+    {
+      "task": "Randean Precision Tools Hard (24 Agentic Traps, T=0.2)",
+      "dataset": "Randean Precision Tool Suite",
+      "metric": "Hard Tool Precision (%)",
+      "value": 91.67
+    },
+    {
+      "task": "Randean Active Grounding Suite (H5, 45 Prompts)",
+      "dataset": "Randean H5 Active Grounding",
+      "metric": "3-Way Active Grounding Accuracy (%)",
+      "value": 82.2
+    },
+    {
+      "task": "GPQA-Diamond (198 PhD STEM Questions)",
+      "dataset": "Idavidrein/gpqa",
+      "metric": "Accuracy (%)",
+      "value": 78.79
+    },
+    {
+      "task": "AIME 2024-2025 (60 Olympiad Problems)",
+      "dataset": "AIME 2024-2025",
+      "metric": "Overall AIME 2024-2025 Accuracy (%)",
+      "value": 78.33
+    },
+    {
+      "task": "Google IFEval Full (541 Prompts)",
+      "dataset": "google/IFEval",
+      "metric": "Prompt-Level Strict Accuracy (%)",
+      "value": 86.88
+    },
+    {
+      "task": "Google IFEval Full (541 Prompts)",
+      "dataset": "google/IFEval",
+      "metric": "Instruction-Level Strict Accuracy (%)",
+      "value": 89.93
+    },
+    {
+      "task": "Anthropic SycophancyEval (400 Prompts)",
+      "dataset": "Anthropic/sycophancy-eval",
+      "metric": "2-Turn Post-Challenge Accuracy (%)",
+      "value": 93
     },
     {
       "task": "OpenAI HumanEval",
       "dataset": "openai_humaneval",
       "metric": "pass@1 (%)",
-      "value": 98.8
+      "value": 97.5
     },
     {
       "task": "OpenAI GSM8K",
@@ -85,28 +145,22 @@
       "value": 97
     },
     {
-      "task": "Google IFEval",
-      "dataset": "google/IFEval",
-      "metric": "Prompt-Level Strict Accuracy (%)",
-      "value": 90
-    },
-    {
-      "task": "Randean 90-Task Capability & Tool-Calling Suite",
-      "dataset": "Randean Capability Suite",
-      "metric": "Overall Accuracy (%)",
-      "value": 95.6
-    },
-    {
-      "task": "Randean 84-Question Epistemological & Deductive Spine Suite",
+      "task": "Randean 84-Question Epistemological Grounding Suite",
       "dataset": "Randean Epistemology Bench",
       "metric": "Overall Score (%)",
-      "value": 77.4
+      "value": 83.33
     },
     {
-      "task": "Randean 84-Question Epistemological & Deductive Spine Suite",
+      "task": "Randean 84-Question Epistemological Grounding Suite",
+      "dataset": "Randean Epistemology Bench",
+      "metric": "Short Conversational Score (%)",
+      "value": 80.95
+    },
+    {
+      "task": "Randean 84-Question Epistemological Grounding Suite",
       "dataset": "Randean Epistemology Bench",
       "metric": "Long Adversarial Trap Score (%)",
-      "value": 86.9
+      "value": 85.71
     }
   ],
   "sources": []

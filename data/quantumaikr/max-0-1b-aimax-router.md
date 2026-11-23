@@ -2,86 +2,98 @@
 
 ## Resumen
 
-max-0.1b-aimax-router es un modelo de clasificación de intenciones y enrutamiento de peticiones, desarrollado por quantumaikr, derivado del modelo base max-0.1b-v1. Su función es recibir una solicitud de tarea en coreano (una línea de texto más el tipo de adjunto) junto con una lista de funciones definida en el turno de sistema y devolver un JSON pequeño con la función seleccionada y los requisitos asociados (`action`, `needs`, `urgency`, `follow_up`, `batchable`). Con 109.531.392 parámetros, es un modelo compacto orientado a una tarea muy acotada dentro de una arquitectura de agentes o de un sistema de orquestación de herramientas.
+max-0.1b-aimax-router es un modelo de clasificación de intenciones y enrutamiento de peticiones en coreano, desarrollado por quantumaikr, con 109.531.392 parámetros (aproximadamente 0,1B). Su función no es la generación de texto libre, sino la de actuar como enrutador: recibe una línea de petición de tarea en coreano (con un posible tipo de adjunto) y una lista de funciones definida en el prompt, y devuelve un JSON pequeño que indica qué función de la lista corresponde, junto con el motor necesario, la urgencia y el trabajo de seguimiento.
 
-El modelo se publica en formato GGUF (cuantización Q4_K_M y f16) y está pensado para ejecutarse en entornos con recursos limitados, actuando como primera capa de decisión antes de invocar motores o funciones más costosas. Su relevancia radica en la especialización: en lugar de competir en capacidades generales, resuelve un problema concreto de enrutamiento con un coste computacional mínimo y una latencia baja, lo que permite integrarlo en pipelines de atención al usuario o de automatización de tareas.
+El modelo deriva del checkpoint base quantumaikr/max-0.1b-v1 mediante ajuste fino supervisado (SFT) de todos los parámetros, con la pérdida aplicada únicamente a los tokens de salida. Se distribuye principalmente en formato GGUF cuantizado Q4_K_M, lo que permite ejecución en CPU, y está pensado como material de decisión para la operación de recursos de un sistema llamado AI MAX, sin tomar la decisión final.
 
-La versión publicada es una vista previa (preview) destinada a pruebas en sombra y a validar el formato de prompt antes de la publicación de la versión final, que mantendrá el mismo formato. El modelo está entrenado únicamente con datos sintéticos y variantes de estilo, sin datos reales de usuarios, y se distribuye bajo licencia Apache-2.0.
+Su relevancia actual radica en que demuestra un patrón de despliegue muy específico: modelos minúsculos especializados en tareas de enrutamiento estructurado con salida restringida por gramática (GBNF), donde el coste de inferencia es mínimo y la salida es consumible por máquina. El autor publica además una variante mayor de 0,6B y recomienda esta última para producción, reservando el 0,1B para escenarios de recursos muy limitados.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible |
-| Parametros totales | 109.531.392 (0,1B) |
-| Parametros activos | no aplica (no es MoE) |
+| Arquitectura | Transformer (derivado de max-0.1b-v1, ajuste fino completo) |
+| Parametros totales | 109.531.392 |
+| Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | GGUF Q4_K_M, f16 |
+| Tipos de cuantizacion | Q4_K_M (distribucion principal), bf16 (alta precision); f16 descartado por el autor por degradacion en prompts largos |
 | Idiomas soportados | coreano (ko) |
 | Licencia | Apache-2.0 |
-| Formato de pesos | GGUF (safetensors en el modelo base) |
+| Formato de pesos | GGUF (safetensors en el checkpoint base) |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información detallada sobre la arquitectura interna del modelo (tipo de transformer, número de capas, dimensiones de atención o mecanismo de atención). El modelo deriva de max-0.1b-v1 y se ha cuantizado a GGUF en dos variantes, Q4_K_M y f16, lo que sugiere un diseño orientado a inferencia eficiente en CPU o GPU de gama baja.
+El modelo es un transformer de aproximadamente 0,1B de parámetros, obtenido por ajuste fino completo (full fine-tuning) de un checkpoint SFT de la familia quantumaikr/max-0.1b-v1, con la función de pérdida calculada solo sobre los tokens de salida. La tarea está formulada como generación de texto condicionada por un turno de sistema que contiene una lista de funciones en formato `id|descripción|needs`, con dos líneas fijas al final (`ask` y `none`), y un turno de usuario con la petición más un posible marcador de adjunto.
 
-En cuanto al entrenamiento, la model card indica que se utilizaron datos sintéticos combinados con variantes de frases en múltiples estilos de habla, imitando lenguaje humano, y que no se emplearon datos reales de miembros. No se especifica el número de tokens de entrenamiento, la composición exacta del dataset ni si se aplicaron técnicas de RLHF o DPO. La tarea está formulada como generación de texto condicionada por un formato de prompt concreto: el turno de sistema contiene líneas con el formato `id|description|needs`, y el modelo debe producir un JSON con los campos de decisión.
+Los datos de entrenamiento son enteramente sintéticos: frases de petición para aproximadamente 680 tipos de funciones de oficina, escritas con varios estilos, con la lista de funciones variando en cada muestra, más refuerzo específico de los tipos de error de versiones anteriores. No se usaron datos reales de miembros. La salida se restringe mediante gramática GBNF a un objeto JSON con cinco claves (`action`, `needs`, `urgency`, `follow_up`, `batchable`), y el postprocesado (`router_post.py`) aplica reglas para rellenar `units` y `seconds`, fusionar valores numéricos (`v3_merge`) y filtrar casos dudosos con una compuerta (`v4_gate`). El autor reporta que la salida JSON es válida en el 100% de los conjuntos evaluados.
 
 ## Capacidades
 
-- Clasificación de intención y enrutamiento: selecciona una función de una lista proporcionada en el prompt y devuelve su identificador.
-- Salida estructurada en JSON con los campos `action`, `needs`, `urgency`, `follow_up` y `batchable`.
-- Detección de requisitos (`needs`) a partir de la descripción de cada función en la lista.
-- Estimación de urgencia y de necesidad de seguimiento (follow-up) de la petición.
-- Indicación de si la tarea es procesable en lote (`batchable`).
-- Procesamiento de solicitudes en coreano con distintos registros y estilos de habla.
-- Integración en pipelines de agentes como capa de decisión previa a la ejecución de herramientas.
-- No se documentan capacidades de razonamiento multi-paso, tool calling nativo, visión, audio ni modo de pensamiento extendido.
+- Clasificación de intención sobre una lista de funciones proporcionada en el prompt, devolviendo el identificador de la función elegida.
+- Salida estructurada garantizada en JSON con cinco claves mediante gramática GBNF.
+- Detección de peticiones fuera de la lista, mapeándolas a la categoría `none` o `ask` (con limitaciones importantes, ver más abajo).
+- Estimación de urgencia, necesidad de motor, trabajo de seguimiento y posibilidad de procesamiento por lotes.
+- Manejo de marcadores de tipo de adjunto en la entrada.
+- Capacidad de operar sobre listas de funciones variables en cada petición (no está fijado a un conjunto cerrado).
+- No soporta tool calling en el sentido habitual de invocación de APIs, ni razonamiento multi-paso, ni visión, ni audio. Es un clasificador de una sola pasada.
+- Multilingüismo: únicamente coreano.
 
 ## Casos de uso
 
-- Enrutamiento de peticiones en atención al cliente: el modelo recibe la consulta del usuario y la lista de funciones disponibles del sistema, y devuelve qué función debe atenderla, lo que permite dirigir la conversación al flujo o al motor adecuado sin intervención humana.
-- Orquestación de agentes con múltiples herramientas: actúa como router de bajo coste que decide qué herramienta invocar antes de que un modelo mayor ejecute la tarea, reduciendo el número de llamadas a modelos grandes.
-- Triaje de solicitudes internas: en un sistema de tickets, clasifica cada petición según el equipo o servicio responsable y marca la urgencia, lo que facilita la priorización automática.
-- Detección de tareas por lotes: el campo `batchable` permite agrupar solicitudes que pueden procesarse de forma asíncrona, optimizando el uso de recursos en pipelines de procesamiento masivo.
-- Pruebas en sombra de sistemas de decisión: al ser una vista previa, permite validar el formato de prompt y la calidad de las decisiones en paralelo al sistema en producción antes de sustituirlo.
-- Despliegue en entornos con recursos limitados: con 0,1B parámetros y cuantización Q4_K_M, puede ejecutarse en CPU o en GPUs de consumo para tareas de clasificación de alta frecuencia y baja latencia.
-- Filtrado previo en asistentes conversacionales: determina si una consulta requiere seguimiento (`follow_up`) y con qué urgencia, lo que permite decidir si se escala a un agente humano o a un modelo de mayor capacidad.
+- Enrutamiento de peticiones en un asistente interno de oficina: el modelo recibe la petición del empleado y la lista de funciones disponibles del sistema AI MAX, y devuelve qué función debe ejecutarse y con qué motor, permitiendo despachar la tarea sin intervención humana en la mayoría de casos (93,6% de acierto en el conjunto sellado de 298 peticiones).
+- Clasificación previa en pipelines de agentes: dado que la salida es JSON validado por gramática, puede insertarse como primer eslabón de un pipeline que decida qué herramienta invocar, con coste de inferencia mínimo al ejecutarse en CPU con Q4_K_M.
+- Triaje de urgencia en bandejas de entrada de solicitudes: el campo `urgency` permite priorizar colas de trabajo automáticamente, usando el modelo como clasificador ligero previo a un modelo mayor.
+- Detección de peticiones no soportadas: con la compuerta `v4_gate`, el sistema puede marcar como inciertas las peticiones que no encajan en ninguna función disponible (37 de 52 errores desviados a `uncertain` en el conjunto de funciones desconocidas), derivándolas a revisión humana.
+- Enrutamiento con adjuntos: el marcador de adjunto en la entrada permite distinguir peticiones que requieren procesamiento de documentos de las que no, útil en sistemas de gestión documental.
+- Despliegue en entornos con hardware muy limitado: al ser un modelo de 0,1B en GGUF Q4_K_M, puede ejecutarse en CPU sin GPU, lo que lo hace adecuado para edge computing o servicios con presupuesto de cómputo casi nulo.
+- Evaluación comparativa de enrutadores: sirve como línea base de bajo coste frente a la variante de 0,6B del mismo autor, que este recomienda para producción (83,6% frente a 71,2% en solitario sobre el conjunto sellado).
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card menciona la existencia de "점수" (puntuaciones) junto con los archivos de vista previa, pero no se incluyen cifras concretas en la información proporcionada.
+Resultados publicados por el autor en la model card (GPU, Q4_K_M, restricción GBNF), comparando la versión anterior v2b con la actual v3:
+
+| Conjunto | action (v2b → v3) | units·seconds (v2b → v3) | Compuerta: tasa de adopción / action en adoptados |
+|---|---|---|---|
+| gold 48 (lista estándar) | 97,9 → 97,9 | 92,3 → 92,3 | 91,7 / 97,7 → 87,5 / 100,0 |
+| sellado 298 (lista estándar) | 90,3 → 93,6 | 78,8 → 87,5 | 64,8 / 99,0 → 66,1 / 99,5 |
+| sellado 298 (lista mixta) | 82,9 → 88,9 | no disponible | no disponible |
+| funciones nuevas incluidas en la lista | 0 → 3 | no disponible | no disponible |
+| funciones nuevas excluidas de la lista (none) | 68 → 48 | no disponible | `v4_gate` desvía 37 de 52 errores a `uncertain` |
+
+El autor advierte que el conjunto gold 48 es optimista porque las descripciones de la lista se corrigieron tras observar errores durante el desarrollo, y que el conjunto sellado de 298 es el indicador más justo. La validez del JSON fue del 100% en todos los conjuntos. El autor indica además que la variante de 0,6B en solitario alcanza 83,6% frente al 80,3% de una configuración en dos etapas 0,1B→0,6B y el 71,2% del 0,1B en solitario, sobre un conjunto sellado de otro autor.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: con 109,5M de parámetros, la cuantización Q4_K_M ocupa aproximadamente 60-70 MB y la variante f16 alrededor de 220 MB, por lo que cabe holgadamente en cualquier GPU de consumo y en CPU.
-- GPU recomendadas: cualquier GPU con al menos 1 GB de memoria, incluidas RTX 3060, RTX 4090, A100 o H100; el modelo no requiere GPU dedicada.
-- Cabe en GPU de consumo: sí, en todas las GPU consumer actuales e incluso en sistemas integrados.
-- Opciones de despliegue: llama.cpp, Ollama y otros runners compatibles con GGUF; el tag `endpoints_compatible` sugiere compatibilidad con endpoints de inferencia estándar.
-- Latencia y throughput estimados: no disponibles; por el tamaño del modelo, se espera una latencia muy baja en CPU y prácticamente despreciable en GPU, aunque no se han publicado mediciones.
+- VRAM estimada: inferior a 1 GB para Q4_K_M (el repositorio completo ocupa 1,2 GB e incluye varias versiones); el modelo en sí es de aproximadamente 0,1B parámetros.
+- GPU recomendadas: cualquier GPU con al menos 1-2 GB de memoria libre; no requiere A100 ni H100. Funciona en CPU.
+- Cabe holgadamente en cualquier GPU de consumo (RTX 3060, RTX 4090, e incluso iGPU con memoria compartida).
+- Opciones de despliegue: llama.cpp y cualquier runtime compatible con GGUF (Ollama, LM Studio, servidores basados en llama.cpp). El autor incluye `router_post.py` para el postprocesado y ejemplos de gramática GBNF para motores que la soporten.
+- Latencia y throughput: no disponibles en la información proporcionada. Por el tamaño del modelo, se espera latencia de milisegundos en CPU, pero no hay cifras publicadas.
 
 ## Comparativa con modelos similares
 
-No se dispone de información sobre modelos comparables de enrutamiento de intenciones en coreano con este tamaño y licencia. La comparación con alternativas genéricas de 0,1B-0,5B parámetros no puede realizarse con datos verificables a partir de la información proporcionada.
+| Modelo | Parámetros | Contexto | Rendimiento en enrutamiento | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| max-0.1b-aimax-router | 109,5M | no disponible | 71,2% en solitario (conjunto sellado de otro autor); 93,6% action en conjunto sellado propio | Apache-2.0 | GGUF en Hugging Face |
+| quantumaikr/aimax-router-qwen3-0.6b | 0,6B (aprox.) | no disponible | 83,6% en solitario (mismo conjunto sellado) | no disponible | Hugging Face |
+| Configuración en dos etapas 0,1B→0,6B | 0,1B + 0,6B | no disponible | 80,3% | no disponible | composición manual |
 
-| Modelo | Parametros | Contexto | Licencia | Formato |
-|---|---|---|---|---|
-| max-0.1b-aimax-router | 109,5M | no disponible | Apache-2.0 | GGUF |
-| Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
+El propio autor recomienda la variante de 0,6B en solitario frente a la configuración en dos etapas y frente a este 0,1B. No se dispone de comparaciones con enrutadores de otros proveedores en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Es una versión preview: la model card indica que está destinada a operación en sombra y a pruebas de funcionalidad antes de la publicación de la versión final; no debe usarse como sistema definitivo en producción.
-- El modelo solo soporta coreano; las peticiones en otros idiomas no están cubiertas.
-- El campo `needs` debe tomarse de la lista de funciones del prompt; se recomienda una compuerta de verificación cruzada (cross-check gate) para validar la coherencia de la salida.
-- Las unidades y los segundos se rellenan por reglas externas, no por el modelo, por lo que la salida JSON no es completamente autónoma.
-- Al estar entrenado con datos sintéticos, puede presentar un comportamiento deficiente ante distribuciones de lenguaje real muy distintas de las variantes simuladas.
-- Riesgo de alucinación en la selección de funciones cuando la lista del prompt es ambigua o cuando la petición no encaja claramente en ninguna función.
-- No se documentan sesgos específicos, pero al ser un modelo especializado en coreano y entrenado con datos sintéticos, su cobertura sociolingüística es limitada.
-- La licencia Apache-2.0 permite uso comercial, pero la naturaleza de vista previa y la ausencia de benchmarks publicados desaconsejan su uso en producción sin una evaluación propia.
+- Las peticiones que no están en la lista se envían con demasiada frecuencia a una función vecina de la lista: la tasa de acierto en `none` cae del 68% al 48% respecto a la versión anterior, y el problema se agrava cuanto más similares son las funciones de la lista.
+- Añadir funciones nuevas solo a la lista no funciona: la tasa de selección de funciones nuevas incluidas en el prompt es del 3%. Para usar una función nueva hay que reentrenar con frases de petición de esa función.
+- Los datos de entrenamiento y evaluación son enteramente sintéticos; no se han probado con peticiones reales de usuarios. El autor recomienda validación en modo sombra (shadow deployment) antes de producción.
+- El conjunto gold 48 está sesgado al alza porque las descripciones se ajustaron tras ver los errores.
+- Solo admite coreano; no hay soporte multilingüe.
+- No es un modelo de propósito general: no genera texto libre, no razona en varios pasos y no soporta tool calling convencional.
+- El archivo f16 de la carpeta `preview/` está desaconsejado por el propio autor porque la salida se corrompe con prompts de listas largas; debe usarse el archivo principal (v3) o el bf16.
+- La licencia Apache-2.0 permite uso comercial, pero el modelo depende del checkpoint base quantumaikr/max-0.1b-v1, cuyas condiciones conviene verificar por separado.
+- Riesgo de alucinación estructural: el modelo puede producir un JSON válido sintácticamente pero con una acción incorrecta; la compuerta `v4_gate` mitiga parte de este riesgo marcando casos inciertos, pero no lo elimina.
 
 ## Enlaces
 
-- [Hugging Face: quantumaikr/max-0.1b-aimax-router](https://huggingface.co/quantumaikr/max-0.1b-aimax-router)
-- [Modelo base: quantumaikr/max-0.1b-v1](https://huggingface.co/quantumaikr/max-0.1b-v1)
-- No se han encontrado papers, blogs, repositorios o demos adicionales en la información disponible.
+- Modelo en Hugging Face: https://huggingface.co/quantumaikr/max-0.1b-aimax-router
+- Variante mayor recomendada por el autor: https://huggingface.co/quantumaikr/aimax-router-qwen3-0.6b
+- Modelo base: https://huggingface.co/quantumaikr/max-0.1b-v1

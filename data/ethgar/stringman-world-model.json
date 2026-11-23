@@ -37,8 +37,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "edgarmoreau/stringman-world-model",
+  "renamed_at": "2026-11-23T03:16:01.056Z",
   "benchmarks": [],
   "sources": []
 }

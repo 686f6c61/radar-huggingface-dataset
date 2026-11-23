@@ -50,31 +50,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "ibm-granite/granite-4.2-8b-GGUF · Hugging Face",
-      "url": "https://huggingface.co/ibm-granite/granite-4.2-8b-GGUF",
-      "snippet": "ibm-granite / granite-4.2-8b-GGUF like 3 Follow IBM Granite 5.23k GGUF llama.cpp language granite-4.2 conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
-    },
-    {
-      "title": "richardyoung/granite-4.2-3b-heretic-GGUF · Hugging Face",
-      "url": "https://huggingface.co/richardyoung/granite-4.2-3b-heretic-GGUF",
-      "snippet": "richardyoung / granite-4.2-3b-heretic-GGUF Like 0 GGUF llama.cpp ollama uncensored abliterated conversational Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
-    },
-    {
-      "title": "Granite 4.2 - IBM",
-      "url": "https://www.ibm.com/granite/docs/models/granite4-2",
-      "snippet": "Granite 4.2 Dense reasoning language model family in 3B, 8B, and 30B sizes with built-in chain-of-thought thinking, flexible thinking modes, and reasoning-augmented tool calling."
-    },
-    {
-      "title": "GitHub - ibm-granite/granite-4.2-language-models · GitHub",
-      "url": "https://github.com/ibm-granite/granite-4.2-language-models",
-      "snippet": "The Granite 4.2 familiy features dense decoder-only architectures in three sizes — 3B, 8B, and 30B, with quantized variants per model size. The Granite 4.2 dense models are post-trained on top of Granite 4.1 base models. Please refer to the Granite 4.1 blog for details on the pre-training phase."
-    },
-    {
-      "title": "Granite 4.2 8B Heretic by Dingdust — VRAM 17.6GB, 128K context | LLM ...",
-      "url": "https://llm-explorer.com/model/Dingdust%2Fgranite-4.2-8b-heretic,5dXCziy23LzWACUoM3hYY1",
-      "snippet": "Rank the Granite 4.2 8B Heretic capabilities Have you tried this model? Rate its performance — this feedback helps the ML community find the right model for their needs."
-    }
-  ]
+  "sources": []
 }

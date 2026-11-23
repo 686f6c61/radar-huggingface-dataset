@@ -2,99 +2,110 @@
 
 ## Resumen
 
-Himel3-1.7B-graft es un ajuste fino (finetune) experimental del modelo LFM3-1.7B de Liquid AI, desarrollado por Philiaxis. Se distribuye en formato MLX bfloat16 para Apple Silicon y cuenta con 1.728.801.536 parámetros totales (aproximadamente 3,46 GB de pesos). El checkpoint incorpora dos modificaciones sobre el modelo base: un ajuste de identidad mediante LoRA para que el modelo responda con su propio nombre y desarrollador, y una técnica denominada "BOS graft", consistente en una actualización rank-1 en forma cerrada aplicada a las proyecciones K/V de las capas 2, 4, 6 y 8.
+Himel3-1.7B-graft es un ajuste fino experimental del modelo LFM3-1.7B de Liquid AI, desarrollado por Philiaxis. Se trata de un checkpoint de 1.728.801.536 parametros (aproximadamente 1.7 mil millones) orientado a generacion de texto conversacional, distribuido en formato MLX bfloat16 para ejecucion en Apple Silicon. El modelo deriva del LFM3-1.7B original y anade dos modificaciones: un ajuste de identidad (LoRA) para que el modelo responda con su propio nombre y desarrollador, y una tecnica denominada "BOS graft" que introduce actualizaciones de rango 1 en forma cerrada sobre las proyecciones K/V de las capas 2, 4, 6 y 8.
 
-El problema que aborda es el comportamiento del modelo cuando se omite el turno de sistema: el graft busca mejorar la respuesta en ese escenario sin necesidad de un mensaje de sistema explícito. La evaluación publicada se limita a MGSM (aritmética) en japonés e inglés, con 250 preguntas por idioma, donde el modelo alcanza un 78,4 % en japonés y un 94,4 % en inglés.
+El objetivo declarado del checkpoint es estudiar el comportamiento del modelo cuando se omite el turno de sistema, comparando el rendimiento con y sin mensaje de sistema en tareas aritmeticas multilingues (MGSM). El modelo soporta japones e ingles, y su relevancia actual radica en que explora tecnicas de edicion de pesos (rank-1 updates) aplicadas a un modelo compacto, con evaluacion empirica publicada mediante pruebas de McNemar.
 
-Es relevante ahora como experimento abierto y reproducible sobre modelos pequeños orientados a razonamiento, aunque su alcance es acotado: un único benchmark, licencia derivada de LFM Open License v1.0 y soporte únicamente para japonés e inglés.
+La licencia es LFM Open License v1.0 (lfm1.0), derivada de la licencia del modelo base de Liquid AI, con condiciones especificas para uso comercial recogidas en la clausula 5. El repositorio ocupa 3.5 GB y las descargas registradas ascienden a 516 en el momento de la ficha.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (derivada de LiquidAI/LFM3-1.7B; el modelo base emplea arquitectura LFM, sin detalle en la informacion proporcionada) |
-| Parametros totales | 1.728.801.536 |
+| Arquitectura | Transformer (derivada de LFM3-1.7B de Liquid AI); pesos en formato MLX |
+| Parametros totales | 1.728.801.536 (~1.7B) |
 | Parametros activos | no disponible (no se indica que sea MoE) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | bf16 (MLX bfloat16); no se documentan otras cuantizaciones |
+| Longitud de contexto | no disponible (la evaluacion uso hasta 8.192 tokens de salida, pero no se especifica la ventana de contexto del modelo) |
+| Tipos de cuantizacion | bfloat16 (unica distribucion publicada); otras cuantizaciones no disponibles |
 | Idiomas soportados | japones (ja), ingles (en) |
-| Licencia | LFM Open License v1.0 (license: other) |
-| Formato de pesos | safetensors con disposicion de tensores MLX |
+| Licencia | LFM Open License v1.0 (lfm1.0) |
+| Formato de pesos | safetensors (MLX bfloat16) |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un finetune del LFM3-1.7B de Liquid AI. No se detalla en la informacion proporcionada la arquitectura interna del base (tipo de transformer, atencion, composicion del dataset de preentrenamiento ni numero de tokens). Lo que si se documenta es el proceso de ajuste: se aplica un LoRA de identidad (para que el modelo se identifique como Himel3 de Philiaxis) y un "BOS graft", que consiste en una actualizacion rank-1 en forma cerrada sobre las proyecciones clave/valor de las capas 2, 4, 6 y 8, con el objetivo de modificar el comportamiento cuando no se proporciona turno de sistema.
+El modelo parte de LFM3-1.7B de Liquid AI y se distribuye con pesos en bfloat16 para el ecosistema MLX (Apple Silicon). Sobre esa base se aplican dos intervenciones: (1) un ajuste fino de identidad mediante LoRA, orientado a que el modelo responda con su nombre y desarrollador; y (2) el "BOS graft", una actualizacion de rango 1 en forma cerrada aplicada a las proyecciones clave/valor (K/V) de las capas 2, 4, 6 y 8, cuyo proposito es modificar el comportamiento del modelo cuando no se proporciona un turno de sistema.
 
-No se indica si hubo RLHF, DPO ni otras fases de alineamiento adicionales. La innovacion tecnica destacable es precisamente el BOS graft como mecanismo de bajo coste para inyectar comportamiento condicionado al inicio de secuencia, evaluado de forma controlada con prueba exacta de McNemar.
+No se especifica en la informacion disponible el volumen de tokens de entrenamiento, la composicion del dataset, ni si se emplearon tecnicas de RLHF o DPO. La evaluacion publicada se limita a MGSM (aritmetica) en japones e ingles, con 250 preguntas por idioma, temperature 0.6, top-p 0.95 y un maximo de 8.192 tokens de salida, activando thinking cuando el modelo lo soporta. El autor advierte que MGSM no mide capacidades de contexto largo, uso de herramientas ni conocimiento general.
 
 ## Capacidades
 
 - Generacion de texto conversacional en japones e ingles.
-- Razonamiento aritmetico (evaluado con MGSM).
-- Modo de pensamiento activable mediante `--enable-thinking` en la CLI de MLX-VLM.
-- Respuesta de identidad propia (nombre del modelo y desarrollador) gracias al LoRA de identidad.
-- Ejecucion en Apple Silicon mediante MLX.
+- Razonamiento aritmetico (evaluado via MGSM).
+- Modo thinking (se activa con `--enable-thinking` en la invocacion de ejemplo).
+- Ajuste de identidad: responde con el nombre del modelo y su desarrollador.
+- Comportamiento diferenciado con y sin mensaje de sistema (objeto del experimento BOS graft).
 - Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
 - Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
-- Capacidades de vision o audio: no disponibles.
+- Capacidades de vision o audio: no disponibles (el pipeline declarado es text-generation).
 
 ## Casos de uso
 
-- Evaluacion de investigacion sobre condicionamiento de inicio de secuencia: el checkpoint permite reproducir el experimento de BOS graft y comparar su efecto frente al uso de mensajes de sistema, con el codigo y los resultados publicados en el informe de Philiaxis.
-- Razonamiento aritmetico en japones e ingles: adecuado para prototipos de resolucion de problemas matematicos de enunciado, dado su rendimiento medido en MGSM (78,4 % / 94,4 %).
-- Desarrollo y pruebas en Apple Silicon: al distribuirse en MLX bfloat16, se puede ejecutar localmente en equipos Mac con `mlx-vlm`, lo que facilita iteracion sin GPU dedicada.
-- Asistente conversacional ligero en japones: para aplicaciones de chat de baja latencia en hardware de consumo, con la advertencia de que el contexto y las capacidades generales no estan documentadas.
-- Base para experimentos de identidad de modelo: el LoRA de identidad sirve como referencia para estudiar como se inyecta personalidad o marca en modelos pequenos.
-- Comparacion de tecnicas de ajuste: util como punto de control en estudios que comparen LoRA, grafting y prompting de sistema sobre un mismo modelo base.
+- Evaluacion de tecnicas de edicion de pesos: el checkpoint permite reproducir el experimento BOS graft y comparar el efecto de las actualizaciones rank-1 en las proyecciones K/V frente al modelo base, usando MGSM como banco de pruebas.
+- Investigacion sobre el papel del turno de sistema: sirve para estudiar como varia el rendimiento aritmetico en japones e ingles cuando se omite el mensaje de sistema, con datos de diferencias pareadas y pruebas de McNemar publicadas.
+- Despliegue local en Apple Silicon: al distribuirse en MLX bfloat16, puede ejecutarse en equipos Mac con MLX-VLM 0.7.11 y Transformers 5.22.2, sin necesidad de GPU dedicada.
+- Asistente conversacional bilingue de proposito acotado: adecuado para prototipos de conversacion japones-ingles donde el volumen de parametros (1.7B) y el formato MLX facilitan iteracion rapida en local.
+- Generacion de texto con identidad controlada: util en demos donde se requiere que el modelo se identifique con su nombre y desarrollador de forma consistente.
+- Banco de comparacion para modelos pequenos: dado que el autor publica resultados frente a Qwen3-1.7B y Gemma 4 E2B-it/E4B-it en MGSM japones, puede emplearse como referencia en estudios comparativos de modelos de ~1-2B.
 
 ## Benchmarks y rendimiento
 
-Evaluacion en MGSM (250 preguntas por idioma, temperature 0,6, top-p 0,95, maximo 8.192 tokens de salida; sin mensaje de sistema salvo donde se indica):
+Resultados en MGSM (250 preguntas por idioma, temperature 0.6, top-p 0.95, maximo 8.192 tokens de salida):
 
 | Modelo y condicion | Japones | Ingles |
 |---|---:|---:|
-| Himel3-1.7B | 77,6 % | 92,8 % |
-| Himel3-1.7B-graft | 78,4 % | 94,4 % |
-| LFM3-1.7B | 75,6 % | 93,6 % |
-| LFM3-1.7B + system | 84,0 % | 94,8 % |
-| LFM3-1.7B + BOS graft | 80,0 % | 94,0 % |
+| Himel3-1.7B | 77.6% | 92.8% |
+| Himel3-1.7B + system | 84.4% | 94.0% |
+| Himel3-1.7B-graft | 78.4% | 94.4% |
+| Himel3-1.7B-graft + system | 82.4% | 94.4% |
+| LFM3-1.7B | 75.6% | 93.6% |
+| LFM3-1.7B + system | 84.0% | 94.8% |
+| LFM3-1.7B + BOS graft | 80.0% | 94.0% |
 
-La diferencia del graft en Himel3 para japones es de +0,8 puntos (prueba exacta de McNemar, p = 0,864), es decir, no significativa. En el modelo base, el graft aporto +4,4 puntos y el mensaje de sistema +8,4 puntos en japones. No se han publicado resultados de otros benchmarks (MMLU, HumanEval, GSM8K) en la informacion disponible.
+Diferencias reportadas por el autor:
+- Graft + system frente a sin system en japones: +4.0 puntos (McNemar exacto, p = 0.0987).
+- Graft frente a la version estandar en japones: +0.8 puntos sin system (p = 0.864) y -2.0 puntos con system (p = 0.405).
+- Version estandar + system supero a Qwen3-1.7B (72.8%, p = 0.0000154) y Gemma 4 E2B-it (78.0%, p = 0.00904) en las 250 preguntas japonesas.
+- En las 125 preguntas comunes con Gemma 4 E4B-it: version estandar + system 82.4% frente a 79.2% de E4B (p = 0.454).
+
+No se han publicado resultados de otros benchmarks (MMLU, HumanEval, GSM8K, etc.) en la informacion disponible.
 
 ## Requisitos de hardware
 
-- Pesos en bf16 de aproximadamente 3,46 GB; el repositorio ocupa 3,5 GB.
-- VRAM/unified memory estimada: alrededor de 4 GB para los pesos, mas overhead de activaciones y cache KV (no cuantificado en la informacion disponible).
-- Disenado para Apple Silicon (MLX); no se documenta despliegue en GPU NVIDIA.
-- Cabe en equipos Mac con memoria unificada de 8 GB o superior, en funcion del contexto utilizado.
-- Opciones de despliegue: `mlx-vlm` 0.7.11 con Transformers 5.22.2 (probado por el autor). No se mencionan vLLM, llama.cpp, Ollama ni TGI.
+- VRAM estimada: pesos en bfloat16 de ~1.7B parametros equivalen a aproximadamente 3.46 GB de descarga; en memoria unificada de Apple Silicon se requiere espacio para pesos mas overhead de MLX.
+- GPU recomendadas: el formato es MLX, orientado a Apple Silicon (chips de la familia M). No se documenta soporte para A100, H100 o RTX 4090 en la informacion disponible.
+- Cabe en consumer GPU: no se confirma; el formato MLX esta pensado para Mac. No hay datos sobre ejecucion en GPU NVIDIA consumer.
+- Opciones de despliegue: MLX-VLM 0.7.11 con Transformers 5.22.2 (combinacion verificada por el autor). vLLM, llama.cpp, Ollama o TGI no estan documentados para este checkpoint.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | MGSM ja / en | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| Himel3-1.7B-graft | 1,73 B | no disponible | 78,4 % / 94,4 % | LFM Open License v1.0 | MLX (HF) |
-| LFM3-1.7B (base) | ~1,7 B | no disponible | 75,6 % / 93,6 % | LFM Open License v1.0 | HF |
-| LFM3-1.7B + system | ~1,7 B | no disponible | 84,0 % / 94,8 % | LFM Open License v1.0 | HF |
+| Modelo | Parametros | Contexto | MGSM japones (+ system) | Licencia | Formato |
+|---|---:|---|---:|---|---|
+| Himel3-1.7B-graft | ~1.7B | no disponible | 82.4% | LFM Open License v1.0 | MLX bfloat16 |
+| LiquidAI LFM3-1.7B | ~1.7B | no disponible | 84.0% | LFM Open License v1.0 | no disponible en esta ficha |
+| Qwen3-1.7B | ~1.7B | no disponible | 72.8% | no disponible en esta ficha | no disponible en esta ficha |
+| Gemma 4 E2B-it | ~2B (E2B) | no disponible | 78.0% | no disponible en esta ficha | no disponible en esta ficha |
+| Gemma 4 E4B-it | ~4B (E4B) | no disponible | 79.2% (125 preguntas comunes) | no disponible en esta ficha | no disponible en esta ficha |
 
-No se dispone de datos de otros modelos comparables de la misma categoria en la informacion proporcionada.
+Los datos de MGSM japones para Qwen3-1.7B y Gemma 4 proceden del informe del autor; el resto de campos no se detalla en la informacion disponible.
 
 ## Limitaciones y advertencias
 
-- Evaluacion limitada a MGSM (aritmetica); no mide contexto largo, uso de herramientas ni conocimiento general.
-- El beneficio del graft en Himel3 no es estadisticamente significativo (p = 0,864).
-- En preguntas en japones el razonamiento puede derivar al ingles, y en cadenas largas se puede alcanzar el limite de tokens de salida.
-- Solo soporta japones e ingles; no hay evidencia de rendimiento en castellano.
-- Licencia LFM Open License v1.0: las condiciones de uso comercial dependen de la clausula 5; es necesario revisar el archivo LICENSE y NOTICE.md.
-- Al ser un checkpoint experimental con LoRA de identidad, puede presentar sesgos o comportamientos no documentados; riesgo de alucinacion no cuantificado.
-- Distribucion exclusiva en MLX bfloat16, lo que limita su uso fuera del ecosistema Apple Silicon sin conversion adicional.
-- Modelo con 0 descargas y 0 likes en el momento de la consulta: sin validacion comunitaria.
+- Checkpoint experimental: el BOS graft es una modificacion de investigacion; su comportamiento fuera de las condiciones evaluadas (MGSM con y sin system) no esta caracterizado.
+- Evaluacion limitada a aritmetica (MGSM): no hay datos sobre contexto largo, uso de herramientas ni conocimiento general, por lo que no debe extrapolarse el rendimiento a otras tareas.
+- Cambio de idioma en el razonamiento: el autor advierte que, incluso en preguntas en japones, el razonamiento puede producirse en ingles.
+- Limite de salida: en razonamientos largos el modelo puede alcanzar el tope de tokens de salida (8.192 en la evaluacion).
+- Idiomas: solo japones e ingles declarados; no se documenta soporte para castellano ni otros idiomas.
+- Licencia: LFM Open License v1.0; las condiciones para uso comercial se recogen en la clausula 5, que debe consultarse antes de desplegar en produccion. Es un derivado de LFM3-1.7B de Liquid AI, Inc.
+- Formato: distribucion exclusiva en MLX bfloat16, lo que limita el despliegue a entornos Apple Silicon salvo conversion manual no documentada.
+- Sesgos y alucinaciones: no se publica informacion especifica sobre sesgos conocidos ni tasas de alucinacion en la informacion disponible.
+- Diferencias no significativas: varias comparaciones reportadas (graft frente a estandar, +4.0 puntos con system) no alcanzan significacion estadistica al nivel 0.05 (p = 0.405 y p = 0.0987), por lo que las mejoras deben interpretarse con cautela.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/Philiaxis/Himel3-1.7B-graft
+- Modelo relacionado (version estandar): https://huggingface.co/Philiaxis/Himel3-1.7B
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-1.7B
 - Informe experimental de Himel3: https://himel.philiaxis.com/himel3/
-- Licencia (en el repositorio): LICENSE
-- Notas de cambios y atribucion: NOTICE.md
+- Licencia (LFM Open License v1.0): LICENSE (incluido en el repositorio del modelo)
+- NOTICE.md (cambios por archivo y licencias del codigo de referencia): incluido en el repositorio del modelo

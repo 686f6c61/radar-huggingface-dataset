@@ -2,107 +2,93 @@
 
 ## Resumen
 
-Olmo-3.1-32B-Instruct-ARA-heretic es una variante "descensurada" del modelo allenai/Olmo-3.1-32B-Instruct, publicada por el usuario richardyoung. Se ha generado aplicando Heretic v2.0.0, una herramienta de ablación de direcciones latentes (Arbitrary-Rank Ablation, ARA) que elimina parcialmente el comportamiento de rechazo del modelo original sin reentrenar los pesos. El resultado es un modelo de 32.233.522.176 parámetros (32B densos, no MoE) que conserva la arquitectura transformer del original pero reduce drásticamente las negativas a peticiones que el modelo base rechazaría.
+Olmo-3.1-32B-Instruct-ARA-heretic es una variante "abliterated" (decensored) del modelo allenai/Olmo-3.1-32B-Instruct, publicada por el usuario richardyoung en Hugging Face. El modelo parte de la arquitectura y los pesos del Olmo 3.1 de 32 000 millones de parametros desarrollado por el Allen Institute for AI (Ai2), y le aplica una tecnica de modificacion de pesos orientada a eliminar o atenuar los comportamientos de rechazo y censura aprendidos durante el alineamiento. El resultado es un modelo de generacion de texto conversacional pensado para escenarios donde se requiere una respuesta sin filtros de seguridad predefinidos.
 
-La relevancia de esta ficha es doble. Por un lado, documenta una técnica de modificación de comportamiento (ablación de direcciones en el espacio de activaciones) que es reproducible mediante los parámetros ARA publicados. Por otro, sirve como caso de estudio de los riesgos de distribuir variantes sin alineación de seguridad: el autor reporta una reducción de rechazos de 100/100 a 48/100 en su conjunto de evaluación, con una divergencia KL de 0.0526 respecto al original. El modelo base Olmo 3.1 pertenece a la familia Olmo 3 de AI2, diseñada para investigación abierta con datos, código y checkpoints públicos.
+La ficha tecnica disponible es limitada: la model card publica apenas expone metadatos (tags, licencia, modelo base y dataset de referencia) y no incluye detalles sobre el procedimiento exacto de abliteration, los datos de entrenamiento adicionales ni resultados de evaluacion. El repositorio ocupa 64,5 GB en formato safetensors y declara 32 233 522 176 parametros reales. El acceso esta restringido (gated) y requiere aceptar condiciones en Hugging Face.
 
-La licencia declarada es Apache 2.0, heredada del modelo base, y el único idioma declarado es inglés. El repositorio ocupa 64,5 GB en formato safetensors y requiere transformers 4.57.0 o superior. No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) para esta variante en la información disponible.
+Su relevancia actual radica en dos factores: por un lado, permite estudiar el comportamiento de un modelo de 32B tras eliminar el alineamiento de seguridad, algo de interes para investigacion en robustez y evaluacion de riesgos; por otro, ofrece a desarrolladores una alternativa sin rechazos para tareas creativas o de generacion de contenido donde los filtros convencionales resultan limitantes, siempre asumiendo las implicaciones eticas y legales de su uso.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer denso (familia Olmo 3, sin mezcla de expertos) |
-| Parametros totales | 32.233.522.176 |
-| Parametros activos | no aplica (modelo denso) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible en la informacion (el modelo base documenta carga en 8 bits con bitsandbytes y float16) |
-| Idiomas soportados | en (ingles) |
-| Licencia | apache-2.0 |
-| Formato de pesos | safetensors |
-| Modelo base | allenai/Olmo-3.1-32B-Instruct |
-| Herramienta de modificacion | Heretic v2.0.0 (Arbitrary-Rank Ablation) |
+| Arquitectura | Transformer decoder-only (base: Olmo 3.1 de Ai2); detalles de atencion y capas no disponibles |
+| Parametros totales | 32 233 522 176 |
+| Parametros activos | No aplica (modelo denso, no MoE) |
+| Longitud de contexto | No disponible en la informacion proporcionada |
+| Tipos de cuantizacion | No disponible (solo se publican pesos safetensors en el repo) |
+| Idiomas soportados | Ingles (segun la model card; el modelo base podria soportar mas, pero no se declara) |
+| Licencia | Apache 2.0 (segun tags; el acceso esta gated) |
+| Formato de pesos | Safetensors |
 | Tamano del repositorio | 64,5 GB |
-| Libreria | transformers (>= 4.57.0 para el modelo base) |
-| Dataset de post-entrenamiento del base | allenai/Dolci-Instruct-RL |
+| Modelo base | allenai/Olmo-3.1-32B-Instruct |
+| Dataset de referencia | allenai/Dolci-Instruct-RL |
+| Acceso | Restringido (gated), requiere aceptar condiciones |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura subyacente es la del modelo allenai/Olmo-3.1-32B-Instruct: un transformer denso de 32B parámetros perteneciente a la familia Olmo 3 de AI2, preentrenado sobre el dataset Dolma 3 y post-entrenado sobre los datasets Dolci. El pipeline de post-entrenamiento del modelo base incluye SFT, DPO y una fase final de RLVR (reinforcement learning with verifiable rewards), según la tabla de etapas publicada en la model card original. No se dispone del número exacto de tokens de preentrenamiento ni de la composición detallada del dataset en la información proporcionada.
+El modelo hereda la arquitectura del Olmo 3.1-32B-Instruct de Ai2, un transformer decoder-only denso de 32 000 millones de parametros. No se dispone de informacion detallada en la model card sobre el numero de capas, dimensiones ocultas, mecanismo de atencion ni estrategia de posicionamiento. Tampoco se especifica la longitud de contexto nativa del modelo base en la informacion proporcionada.
 
-La modificación de esta variante no implica reentrenamiento. Se aplica Arbitrary-Rank Ablation (ARA) mediante Heretic v2.0.0, que identifica y sustrae direcciones en el espacio de activaciones asociadas al comportamiento de rechazo, operando sobre las capas 16 a 34 del modelo. Los hiperparámetros publicados son: `preserve_good_behavior_weight` 0.5741, `steer_bad_behavior_weight` 0.0004, `overcorrect_relative_weight` 0.7661 y `neighbor_count` 11. El autor indica que el proceso es reproducible y proporciona un directorio `reproduce` con instrucciones. La divergencia KL medida respecto al modelo original es de 0.0526, lo que cuantifica cuánto se ha desplazado la distribución de salida.
+El proceso de "heretic" o abliteration consiste en identificar las direcciones en el espacio de activaciones asociadas a comportamientos de rechazo y proyectarlas fuera de los pesos del modelo, de modo que se preserva la capacidad generativa general mientras se eliminan las respuestas de negativa. La model card no documenta la metodologia exacta aplicada (que capas se modifican, que conjunto de prompts de calibracion se usa, ni el grado de intervencion). Tampoco se indica si hubo un fine-tuning adicional sobre el dataset Dolci-Instruct-RL mencionado en los tags, ni si se realizo RLHF o DPO posterior. La etiqueta "reproducible" sugiere que el autor pretende documentar el procedimiento, pero los detalles no estan disponibles en la informacion consultada.
 
 ## Capacidades
 
-- Generación de texto conversacional en inglés, heredada del modelo Instruct base.
-- Razonamiento y matemáticas: el modelo base Olmo 3.1 32B está entrenado para tareas de razonamiento, aunque esta variante no documenta benchmarks propios.
-- Generación de código: capacidad presente en el modelo base, sin datos específicos para esta variante.
-- Comportamiento descensurado: reducción de rechazos de 100/100 a 48/100 en el conjunto de evaluación del autor, según la model card.
-- Modo instructivo (no es un modelo "Think"): esta variante deriva de la rama Instruct, no de la rama Think de cadena de pensamiento larga.
-- Soporte de tool calling y function calling: no documentado explícitamente para esta variante; debe verificarse contra el modelo base.
-- Capacidades de agente y razonamiento multi-paso: no documentadas para esta variante.
-- Capacidades multilingües: limitadas al inglés según el campo `language` de la model card.
-- Capacidades de visión o audio: no disponibles.
+- Generacion de texto conversacional multi-turno en ingles.
+- Razonamiento general y respuesta a instrucciones, heredado del Olmo 3.1-32B-Instruct.
+- Generacion de codigo y matematicas (capacidad del modelo base, no verificada en esta variante).
+- Respuestas sin rechazo ante solicitudes que el modelo base rechazaria por politicas de seguridad.
+- Soporte de tool calling / function calling: no confirmado en la informacion disponible.
+- Capacidades de agente y razonamiento multi-paso: no confirmadas.
+- Capacidades multilingues: solo se declara ingles.
+- Capacidades de vision o audio: no disponibles.
+- Modo "thinking" explicito: no disponible.
 
 ## Casos de uso
 
-- Investigación sobre alineación y seguridad: el modelo permite estudiar empíricamente el efecto de la ablación de direcciones de rechazo, comparando su distribución de salidas con la del modelo original mediante la divergencia KL reportada (0.0526).
-- Reproducción de experimentos de ablación: gracias a los parámetros ARA publicados y al directorio `reproduce`, un equipo puede regenerar la variante y validar la metodología de Heretic v2.0.0 sobre el mismo checkpoint base.
-- Evaluación de robustez de filtros de contenido: sirve como entrada adversaria para probar clasificadores de seguridad y sistemas de moderación, ya que genera respuestas que el modelo base rechazaría.
-- Generación de texto creativo sin restricciones de estilo: para proyectos de ficción o guiones donde el modelo base aplicaría negativas por contenido sensible, con la debida revisión humana posterior.
-- Red teaming interno: un equipo de seguridad puede usar la variante para identificar categorías de peticiones problemáticas y calibrar sus propias políticas antes de desplegar modelos en producción.
-- Estudio de degradación de capacidades: comparar el rendimiento del modelo original y esta variante en tareas estándar para medir el coste de la ablación en calidad general, usando la divergencia KL como métrica de referencia.
-- Docencia sobre técnicas de modificación de modelos: ejemplo práctico de cómo una intervención en el espacio de activaciones altera el comportamiento sin reentrenar, adecuado para cursos de interpretabilidad.
+- Investigacion en seguridad y alineamiento: comparar las respuestas del modelo heretic con las del Olmo 3.1-32B-Instruct original permite medir el efecto de la abliteration sobre tasas de rechazo, calidad y sesgos, usando el mismo prompt set en ambos modelos.
+- Generacion creativa sin restricciones: escritura de ficcion, guiones o narrativa que aborde temas sensibles (violencia, conflicto, temas adultos) donde los filtros del modelo base interrumpen la generacion. El tamano de 32B permite mantener coherencia en textos largos.
+- Red teaming de sistemas: emplear el modelo como generador adversario para producir prompts y respuestas que pongan a prueba clasificadores de seguridad o filtros de moderacion en pipelines de produccion.
+- Analisis de contenido sensible: resumir o clasificar documentos con lenguaje explicito (informes forenses, transcripciones, literatura) donde un modelo censurado podria negarse o degradar la respuesta.
+- Prototipado de asistentes especializados: construir asistentes de dominio (legal, medico, seguridad) que requieran discutir escenarios crudos sin que el modelo derive la conversacion hacia advertencias genericas.
+- Evaluacion comparativa de modelos abliterated: usar esta variante como referencia en estudios que comparan distintas tecnicas de decensoring (abliteration, DPO inverso, fine-tuning con datos sin filtro) sobre una misma base de 32B.
 
 ## Benchmarks y rendimiento
 
-La model card solo publica métricas del proceso de ablación, no benchmarks estándar de capacidad. Se reproducen a continuación los datos disponibles:
-
-| Metrica | Esta variante | Modelo original (allenai/Olmo-3.1-32B-Instruct) |
-|---|---|---|
-| Rechazos (conjunto de evaluación del autor) | 48/100 | 100/100 |
-| Divergencia KL respecto al original | 0.0526 | 0 (por definición) |
-
-No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, etc.) para esta variante en la información disponible.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia en float16/BF16: aproximadamente 64 GB solo para pesos, más overhead de activaciones y caché KV; en la práctica se requieren 2 GPU de 48 GB o una GPU de 80 GB.
-- VRAM estimada en cuantización de 8 bits: alrededor de 32 GB para pesos, lo que encaja en una A100 40 GB o H100 40/80 GB; el modelo base documenta carga con `load_in_8bit=True` mediante bitsandbytes.
-- Cuantizaciones de 4 bits (si se generan con herramientas externas): aproximadamente 16-20 GB, lo que podría caber en una RTX 4090 de 24 GB, aunque no se han publicado versiones GGUF ni AWQ/GPTQ en el repositorio.
-- GPU recomendadas: A100 80 GB, H100 80 GB, o configuraciones multi-GPU con 2x A100 40 GB o 2x RTX 4090 para FP16.
-- Cabe en GPU de consumo: solo con cuantización agresiva (4 bits) y no está verificada la calidad resultante; no hay artefactos publicados para llama.cpp u Ollama.
-- Opciones de despliegue: transformers (librería declarada), con posibilidad de vLLM o TGI al ser un modelo compatible con la arquitectura estándar de transformers, aunque no se documenta soporte explícito.
-- Latencia y throughput: no disponibles en la información proporcionada.
+- VRAM estimada para inferencia en FP16/BF16: aproximadamente 64 GB solo para pesos, mas overhead de KV cache; se recomienda un minimo de 80 GB.
+- VRAM estimada en cuantizacion de 8 bits: en torno a 32-36 GB, viable en una A100 40GB o H100.
+- VRAM estimada en cuantizacion de 4 bits: en torno a 18-22 GB, viable en una RTX 4090 (24 GB) con contexto moderado.
+- GPU recomendadas: A100 80GB, H100 80GB para precision completa; A100 40GB o L40S para 8 bits; RTX 4090 o RTX 3090 para 4 bits.
+- Cabe en GPU de consumo: si, en RTX 4090/3090 con cuantizacion de 4 bits y contexto limitado; no en FP16.
+- Opciones de despliegue: transformers (libreria declarada), vLLM, TGI y llama.cpp/Ollama previa conversion a GGUF (no se publican pesos GGUF en el repo, habria que convertirlos).
+- Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Notas |
-|---|---|---|---|---|
-| richardyoung/Olmo-3.1-32B-Instruct-ARA-heretic | 32,2B | no disponible | apache-2.0 | Variante descensurada con ARA; 48/100 rechazos; KL 0.0526 |
-| allenai/Olmo-3.1-32B-Instruct | 32B | no disponible en la informacion | apache-2.0 | Modelo original alineado; 100/100 rechazos en el mismo conjunto |
-| allenai/Olmo-3.1-32B-Think | 32B | no disponible en la informacion | apache-2.0 | Variante con cadena de pensamiento larga para razonamiento |
-| allenai/Olmo-3-7B-Instruct | 7B | no disponible en la informacion | apache-2.0 | Alternativa de menor tamano de la misma familia |
+| Modelo | Parametros | Contexto | Licencia | Acceso | Notas |
+|---|---|---|---|---|---|
+| richardyoung/Olmo-3.1-32B-Instruct-ARA-heretic | 32,2B | No disponible | Apache 2.0 | Gated | Variante abliterated del Olmo 3.1 |
+| allenai/Olmo-3.1-32B-Instruct | 32,2B | No disponible | Apache 2.0 | Abierto (modelo base) | Version alineada y con filtros de seguridad |
+| Otras variantes heretic/abliterated de 32B | Depende del modelo base | Depende | Depende | Variable | Existen variantes sobre Llama, Qwen y Mistral, pero no se dispone de datos comparativos en la informacion proporcionada |
 
-No se dispone de datos de benchmarks comparativos entre estas variantes en la información proporcionada, por lo que la comparación se limita a parámetros, licencia y comportamiento de rechazo documentado.
+No se dispone de resultados de benchmarks que permitan comparar rendimiento entre estas opciones.
 
 ## Limitaciones y advertencias
 
-- La reducción de rechazos implica que el modelo puede generar contenido dañino, ilegal o inseguro que el modelo base bloquearía; no debe desplegarse en aplicaciones orientadas al público sin filtros externos robustos.
-- La ablación puede degradar capacidades generales; la divergencia KL de 0.0526 indica un cambio medible en la distribución de salidas, pero no se han publicado evaluaciones de calidad en tareas estándar.
-- Riesgo de alucinación: inherente a los modelos de 32B; no hay datos específicos para esta variante.
-- Solo se declara inglés como idioma soportado; el rendimiento en castellano u otros idiomas no está verificado y probablemente sea inferior.
-- La longitud de contexto no está documentada en esta ficha; debe consultarse la model card del modelo base antes de usarlo en tareas de contexto largo.
-- Licencia Apache 2.0: permite uso comercial, pero el usuario asume la responsabilidad legal y ética del contenido generado; la licencia no exime de cumplir normativas de moderación de contenido.
-- El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, lo que indica ausencia de validación comunitaria.
-- No se han publicado artefactos GGUF, AWQ ni GPTQ; el despliegue en hardware de consumo requiere cuantización manual.
-- La model card del autor es una modificación de la del modelo base; parte de la documentación (instalación, fine-tuning, checkpoints) se refiere al modelo original y no necesariamente aplica a esta variante.
+- La abliteration suele degradar ligeramente la coherencia y la calidad general del modelo en tareas benignas; no se han publicado evaluaciones que cuantifiquen esa perdida en esta variante.
+- Riesgo elevado de alucinacion y de generar contenido danino, ilegal o sexualmente explicito; no apto para produccion sin moderacion externa.
+- Solo se declara soporte de ingles; el rendimiento en castellano no esta verificado.
+- La model card no documenta la metodologia de abliteration ni los datos usados, lo que dificulta la reproducibilidad y la auditoria.
+- Licencia Apache 2.0 declarada en los tags, pero el acceso es gated y el autor puede imponer condiciones adicionales al aceptar el acceso; conviene revisar los terminos antes de uso comercial.
+- El modelo base Olmo 3.1 puede tener sus propios sesgos y limitaciones de contexto; esta variante no los corrige y puede amplificarlos al eliminar rechazos.
+- Uso en produccion desaconsejado sin un clasificador de salida y politicas de uso claras; la ausencia de filtros internos traslada toda la responsabilidad al operador.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/richardyoung/Olmo-3.1-32B-Instruct-ARA-heretic
 - Modelo base: https://huggingface.co/allenai/Olmo-3.1-32B-Instruct
-- Heretic (herramienta de ablación): https://heretic-project.org
-- Repositorio de reproducción: https://huggingface.co/richardyoung/Olmo-3.1-32B-Instruct-ARA-heretic/tree/main/reproduce
-- Dataset Dolci-Instruct-RL: https://huggingface.co/datasets/allenai/Dolci-Instruct-RL
-- Articulo referenciado (arxiv:2512.13961): https://arxiv.org/abs/2512.13961
+- Dataset de referencia: https://huggingface.co/datasets/allenai/Dolci-Instruct-RL
+- Paper referenciado en tags (arXiv 2512.13961): https://arxiv.org/abs/2512.13961

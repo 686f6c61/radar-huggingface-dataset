@@ -2,87 +2,89 @@
 
 ## Resumen
 
-MiniCPM5-2B-Heretic-ARA-ik_llama.cpp es una cuantizacion en formato GGUF del modelo dalatexcoder/MiniCPM5-2B-heretic-ara, publicada por el usuario Austriani. Se trata de un modelo de lenguaje pequeno (SLM) de aproximadamente 2.000 millones de parametros, derivado de la familia MiniCPM y sometido a un proceso de "abliteration" (eliminacion de rechazos) que da lugar a una variante sin censura (uncensored/heretic) orientada a generacion de texto, codigo y razonamiento con cadena de pensamiento (CoT).
+MiniCPM5-2B-Heretic-ARA-ik_llama.cpp es una cuantización GGUF del modelo dalatexcoder/MiniCPM5-2B-heretic-ara, publicada por el usuario Austriani. Se trata de un derivado de la familia MiniCPM5 de 2B parámetros (2.516.756.480 parámetros reales según los safetensors del modelo base) que ha sido sometido a un proceso de "abliteration" o "heretic" para eliminar los mecanismos de rechazo y moderación del modelo original, orientándolo a usos sin censura.
 
-La relevancia de esta publicacion es fundamentalmente practica: ofrece pesos cuantizados en IQ4_KS con imatrix, optimizados para el fork ik_llama.cpp, lo que permite ejecutar el modelo en CPU con requisitos de memoria reducidos. El autor indica que ha generado el BF16 de referencia y que las cuantizaciones estan "baked" correctamente, aunque advierte de un problema notable de repetitividad incluso en Q8_0 y BF16.
+Esta versión concreta no es un modelo nuevo, sino un empaquetado en formato GGUF optimizado para el motor ik_llama.cpp, con cuantizaciones de tipo IQ (IQ4_K, IQ4_KS, IQ4_KS_R4, IQ4_KT, IQ5_K) generadas mediante imatrix. El objetivo es ofrecer una inferencia eficiente en CPU y en dispositivos de borde (edge-ai, on-device) manteniendo las capacidades de generación de texto, código, matemáticas, razonamiento y tool calling del modelo base.
 
-Se trata de un modelo de nicho, con cero descargas y cero likes en el momento de la consulta, sin model card tecnica detallada, sin idiomas declarados y sin resultados de benchmarks. La informacion disponible sobre arquitectura, datos de entrenamiento y rendimiento es muy limitada, por lo que esta ficha se limita a lo verificable a partir de los metadatos y la model card.
+Es relevante para quienes necesitan desplegar un modelo pequeño, sin moderación y con soporte de agentes en hardware limitado, aunque debe tenerse en cuenta que se trata de un derivado no oficial con implicaciones éticas y de licencia que se detallan más abajo.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (familia MiniCPM, transformer, sin confirmar) |
-| Parametros totales | aproximadamente 2B (segun nombre y tag "2B") |
-| Parametros activos | no aplica (no se indica que sea MoE) |
+| Arquitectura | no disponible (familia MiniCPM5, transformer; detalles no especificados en la información disponible) |
+| Parametros totales | 2.516.756.480 |
+| Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | IQ4_KS con imatrix (variante _R4); el autor menciona tambien Q8_0 y BF16 |
-| Idiomas soportados | no disponible |
+| Tipos de cuantizacion | IQ4_K, IQ4_KS, IQ4_KS_R4, IQ4_KT, IQ5_K (GGUF con imatrix) |
+| Idiomas soportados | en, zh |
 | Licencia | apache-2.0 |
-| Formato de pesos | GGUF (para ik_llama.cpp); BF16 generado por el autor |
+| Formato de pesos | GGUF (para ik_llama.cpp) |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion detallada sobre la arquitectura interna del modelo en la informacion proporcionada. Por el nombre y los tags se infiere que deriva de MiniCPM5-2B, un transformer de aproximadamente 2.000 millones de parametros, pero no se confirma ni el numero de capas, ni la dimension oculta, ni el mecanismo de atencion, ni la longitud de contexto nativa.
+No se dispone de información detallada sobre la arquitectura interna del modelo base en la documentación proporcionada. Por la familia a la que pertenece (MiniCPM5) y los tags, se trata de un transformer de aproximadamente 2.500 millones de parámetros, orientado a generación de texto con capacidades declaradas de código, matemáticas, razonamiento, tool calling y uso agéntico. No se especifican el número de tokens de entrenamiento, la composición del dataset ni si hubo fases de RLHF o DPO.
 
-El modelo base dalatexcoder/MiniCPM5-2B-heretic-ara incorpora tecnicas de "abliteration" (eliminacion de la direccion de rechazo en el espacio de activaciones) y un ajuste orientado a razonamiento con CoT y codigo, segun los tags. No se especifican el volumen de tokens de entrenamiento, la composicion del dataset, ni si hubo RLHF, DPO o fine-tuning supervisado. La publicacion de Austriani se limita a la conversion y cuantizacion: el autor afirma haber generado el BF16 de referencia y las cuantizaciones IQ4_KS con imatrix para ik_llama.cpp, sin aportar detalles adicionales sobre el proceso.
+El proceso "heretic/abliterated" aplicado por el autor del modelo base consiste en una modificación de los pesos orientada a suprimir el comportamiento de rechazo, técnica habitual en la comunidad para obtener modelos sin censura. La versión de Austriani añade una capa de cuantización: los pesos originales se han convertido a GGUF con cuantizaciones IQ de 4 y 5 bits, calibradas mediante una matriz de importancia (imatrix) para preservar la calidad en bits bajos. El resultado está optimizado específicamente para el motor ik_llama.cpp, una bifurcación de llama.cpp con mejoras de rendimiento en CPU.
 
 ## Capacidades
 
-- Generacion de texto general en un modelo de 2B, con calidad limitada por el tamano.
-- Generacion de codigo: los tags "coding" y "code" indican ajuste especifico para tareas de programacion.
-- Razonamiento con cadena de pensamiento (CoT), segun el tag "reasoning" y "CoT".
-- Modo sin censura (abliterated/heretic): el modelo no aplica rechazos ante contenido sensible, incluido NSFW.
-- Ejecucion en CPU: cuantizacion IQ4_KS optimizada para ik_llama.cpp, pensada para entornos sin GPU.
-- No se documenta soporte de tool calling, function calling, agentes multi-paso, vision, audio ni capacidades multilingues explicitas.
+- Generación de texto conversacional multi-turno (pipeline text-generation, tag conversational).
+- Razonamiento y resolución de problemas (tag reasoning).
+- Generación y asistencia de código (tag code).
+- Matemáticas (tag math).
+- Tool calling y function calling (tags tool-calling, function-calling).
+- Uso agéntico y razonamiento multi-paso (tag agentic).
+- Capacidades multilingües limitadas a inglés y chino (en, zh).
+- Orientación a despliegue en borde y on-device (edge-ai, on-device).
+- Modelo "uncensored"/"abliterated": sin mecanismos de rechazo entrenados.
 
 ## Casos de uso
 
-- Inferencia en CPU sin GPU: la cuantizacion IQ4_KS con imatrix esta disenada para ik_llama.cpp, de modo que el modelo puede ejecutarse en portatiles o servidores sin acelerador, con un consumo de memoria en torno a 1,5-2 GB para los pesos.
-- Prototipado rapido de asistentes de codigo: el ajuste orientado a codigo permite autocompletar fragmentos y explicar funciones en entornos de desarrollo locales, aunque la calidad sera inferior a la de modelos mayores.
-- Experimentacion con modelos abliterated: util para investigadores que estudian el efecto de la eliminacion de rechazos en modelos pequenos y su impacto en la coherencia.
-- Generacion de texto creativo sin filtros: el caracter uncensored permite explorar narrativa o roleplay sin restricciones de contenido, con la advertencia de repetitividad del autor.
-- Educacion e investigacion sobre cuantizacion: sirve como caso de estudio de cuantizacion IQ4_KS con imatrix y su efecto en la calidad frente a Q8_0 y BF16.
-- Despliegue en dispositivos con memoria muy limitada: al tratarse de un modelo de 2B en 4 bits, encaja en Raspberry Pi de gama alta, mini-PC o contenedores con poca RAM, siempre que se acepte la degradacion de calidad.
+- Asistente conversacional local en dispositivos de borde: con ~2,5B parámetros y cuantización IQ4, puede ejecutarse en CPU o en GPUs de consumo, gestionando conversaciones multi-turno sin conexión a servicios externos.
+- Generación de código en entornos con recursos limitados: el soporte de tool calling permite integrarlo en asistentes de edición que invocan funciones del sistema, aunque la ventana de contexto no está documentada.
+- Automatización de tareas agénticas simples: su naturaleza agentic y de function calling lo hace apto para pipelines de múltiples pasos donde el modelo decide qué herramienta invocar.
+- Prototipado de investigación sobre alineación y seguridad: al ser un modelo abliterated, sirve para estudiar el comportamiento de modelos sin moderación en entornos controlados.
+- Procesamiento de texto en inglés y chino: útil para tareas bilingües de resumen, extracción o traducción aproximada entre ambos idiomas.
+- Inferencia en CPU con ik_llama.cpp: las cuantizaciones IQ con imatrix están pensadas para maximizar throughput en CPU, lo que permite desplegarlo en servidores sin GPU.
+- Educación y experimentación con cuantizaciones GGUF: sirve como caso de estudio de cómo afectan IQ4_K frente a IQ5_K a la calidad y al tamaño en disco.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM/RAM estimada: en torno a 1,5-2 GB para los pesos IQ4_KS; anadir el espacio de contexto y el overhead del runtime (tipicamente 0,5-1 GB adicionales).
-- GPU recomendadas: no requiere GPU; cualquier GPU consumer con 4 GB o mas (GTX 1650, RTX 3050, RTX 4060) puede alojarlo con holgura.
-- Cabe en GPU consumer: si, en practicamente cualquier GPU con 4 GB o mas, y en CPU.
-- Opciones de despliegue: ik_llama.cpp (objetivo principal de esta cuantizacion); llama.cpp y Ollama como alternativas compatibles con GGUF, aunque la cuantizacion IQ4_KS_R4 esta pensada para ik_llama.cpp.
-- Latencia y throughput: no disponibles.
+- VRAM/RAM estimada: con cuantización IQ4_K, un modelo de 2,5B parámetros ocupa aproximadamente 1,5-2 GB de pesos; IQ5_K se sitúa en torno a 2-2,5 GB. Añadir margen para el contexto y el runtime (estimación basada en el tamaño de parámetros, no en datos publicados).
+- GPU recomendadas: cualquier GPU con 4 GB o más de VRAM puede alojarlo (RTX 3050, RTX 4060, GTX 1660, etc.). Para mayor throughput, RTX 4090, A100 o H100, aunque el modelo está claramente orientado a hardware modesto.
+- Cabe en GPU de consumo: sí, en la práctica totalidad de GPUs consumer modernas con 4 GB o más.
+- Opciones de despliegue: ik_llama.cpp (motor objetivo de esta publicación), llama.cpp, Ollama (previa conversión/importación del GGUF) y otros runtimes compatibles con GGUF. No se indica soporte nativo para vLLM o TGI con este formato.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| MiniCPM5-2B-Heretic-ARA-ik_llama.cpp | ~2B | no disponible | Apache 2.0 | GGUF IQ4_KS | Variante abliterated, sin benchmarks |
-| MiniCPM5-2B (base) | ~2B | no disponible | no disponible | safetensors | Modelo original de la familia, con censura |
-| Qwen2.5-1.5B-Instruct | 1,5B | 32k | Apache 2.0 | safetensors, GGUF | Alternativa pequena con benchmarks publicados |
-| Llama-3.2-1B-Instruct | 1,2B | 128k | Llama 3.2 Community | safetensors, GGUF | Alternativa pequena con contexto largo |
+| MiniCPM5-2B-Heretic-ARA (este) | ~2,5B | no disponible | apache-2.0 | GGUF (ik_llama.cpp) | Abliterated, cuantizado IQ4/IQ5 |
+| Modelo base dalatexcoder/MiniCPM5-2B-heretic-ara | ~2,5B | no disponible | apache-2.0 | safetensors (original) | Sin cuantizar, misma base heretic |
+| MiniCPM5-2B original (familia MiniCPM) | ~2,5B | no disponible | no disponible | no disponible | Con moderación; referencia de la familia |
 
-La comparacion es orientativa: no hay datos de rendimiento del modelo de Austriani que permitan una confrontacion cuantitativa con las alternativas.
+No se dispone de datos de rendimiento comparativo entre estas variantes en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Repetitividad: el propio autor advierte de que el modelo puede ser "super repetitivo" incluso en Q8_0 y BF16, y recomienda usar samplers anti-repeticion agresivos.
-- Sin benchmarks ni evaluacion: no hay datos objetivos de calidad, por lo que no es recomendable para produccion sin validacion previa.
-- Modelo abliterated: la eliminacion de rechazos puede degradar la coherencia y aumentar la probabilidad de salidas incoherentes o inseguras; no apto para aplicaciones con requisitos de moderacion.
-- Contenido NSFW: el modelo esta etiquetado como no apto para todas las audiencias; requiere control de acceso en despliegues publicos.
-- Idiomas no declarados: se desconoce el soporte multilingue real; probablemente este optimizado para ingles y chino, pero no se confirma.
-- Contexto desconocido: al no documentarse la longitud de contexto, no se debe asumir una ventana larga.
-- Licencia Apache 2.0: permite uso comercial, pero el modelo base y los datos de entrenamiento pueden imponer condiciones adicionales no documentadas.
-- Popularidad nula: cero descargas y cero likes; no hay comunidad que haya validado la cuantizacion.
-- Dependencia de ik_llama.cpp: la cuantizacion IQ4_KS_R4 puede no cargar correctamente en versiones estandar de llama.cpp.
+- Modelo "abliterated"/"heretic": se ha eliminado el comportamiento de rechazo, por lo que puede generar contenido dañino, ofensivo o inapropiado. Etiquetado como "not-for-all-audiences".
+- Riesgo elevado de alucinación y de respuestas incorrectas, especialmente en razonamiento complejo, dado el tamaño reducido (2,5B).
+- Idiomas limitados a inglés y chino; el rendimiento en castellano no está garantizado ni documentado.
+- Longitud de contexto no documentada: no se puede planificar su uso en tareas de contexto largo sin verificación empírica.
+- Licencia apache-2.0 declarada, pero al ser un derivado no oficial conviene verificar la cadena de licencias del modelo base antes de uso comercial.
+- Cuantizaciones IQ4 de baja precisión pueden degradar la calidad frente a los pesos originales en safetensors.
+- Optimizado para ik_llama.cpp; el comportamiento en otros runtimes GGUF puede variar.
+- Modelo con pocas descargas (539) y un único "like": escasa validación comunitaria.
 
 ## Enlaces
 
 - Hugging Face: https://huggingface.co/Austriani/MiniCPM5-2B-Heretic-ARA-ik_llama.cpp
 - Modelo base: https://huggingface.co/dalatexcoder/MiniCPM5-2B-heretic-ara
-- Repositorio ik_llama.cpp: no disponible en la informacion proporcionada
-- Paper o blog del modelo: no disponible en la informacion proporcionada
+- ik_llama.cpp (motor objetivo): no disponible en la información proporcionada
+- Paper, blog o demo adicionales: no disponibles en la información proporcionada

@@ -51,31 +51,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Flüge zu deinem Wunschziel finden und buchen | Eurowings",
-      "url": "https://www.eurowings.com/de/buchen/fluege.html",
-      "snippet": "Egal ob Prämienflug, Gruppenbuchung oder Charter: Bei uns findest du eine riesige Auswahl günstiger Flüge, die dich bequem an …"
-    },
-    {
-      "title": "Empfehlungen und Informationen zu Reisen mit Eurowings",
-      "url": "https://www.eurowings.com/de.html",
-      "snippet": "Buche deinen Flug und informiere dich über günstige Hotels und Mietwagen sowie weitere attraktive Angebote für deine nächste …"
-    },
-    {
-      "title": "Städtereisen 2026 – Kultur, Shopping & Erholung - Eurowings",
-      "url": "https://holidays.eurowings.com/de-de/staedtereisen",
-      "snippet": "Sep 22, 2026 · Entdecke die schönsten Städte mit Eurowings Holidays. Buche jetzt deine Städtereise und sichere dir günstige …"
-    },
-    {
-      "title": "Newsroom Eurowings",
-      "url": "https://newscloud.eurowings.com/",
-      "snippet": "Newsroom Eurowings In unserer Datenschutzerklärung finden Sie ausführliche Informationen darüber, wie Ihre Daten verarbeitet …"
-    },
-    {
-      "title": "Eurowings Holidays Agenturbetreuung | Eurowings Holidays",
-      "url": "https://holidays.eurowings.com/de-de/agenturbetreuung",
-      "snippet": "Herzlich Willkommen bei der Eurowings Holidays Agenturbetreuung. Hier findest Du alle wichtigen Informationen über Eurowings …"
-    }
-  ]
+  "sources": []
 }

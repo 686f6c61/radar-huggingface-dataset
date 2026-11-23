@@ -2,93 +2,90 @@
 
 ## Resumen
 
-AsemLLM es un modelo de lenguaje neuronal a nivel de palabra desarrollado por el usuario asemqaffaf y publicado en Hugging Face bajo licencia Apache-2.0. Se trata de un modelo de juguete (toy model) de 152.903 parámetros entrenado desde cero íntegramente en Erlang, sin emplear ningún framework de deep learning: los gradientes se calculan en paralelo mediante procesos worker supervisados. El repositorio contiene los pesos entrenados, el vocabulario y un pequeño cargador de referencia en numpy.
+AsemLLM es un experimento educativo de modelado de lenguaje a muy pequeña escala publicado por el desarrollador independiente asemqaffaf. Se trata de dos modelos de juguete entrenados desde cero íntegramente en Erlang, sin frameworks de deep learning, con procesos supervisados que calculan gradientes en paralelo. El repositorio aloja los pesos del modelo MLP (152.903 parámetros, ventana de 5 tokens) y del modelo transformer (279.007 parámetros, ventana de 32 tokens), ambos con un vocabulario de nivel palabra de 1.631 tokens en inglés. El objetivo no es competir con modelos de producción, sino servir como material didáctico reproducible: el autor advierte explícitamente que los modelos aprenden el estilo de su corpus de diálogo breve y no comprenden las preguntas.
 
-La arquitectura no es un transformer, sino un modelo de lenguaje de tipo MLP con embeddings al estilo Bengio, con una ventana de contexto de solo 5 tokens, tamaño de embedding de 24 y capa oculta de 64 con activación tanh. El vocabulario es de 1.631 tokens a nivel de palabra. El modelo fue entrenado sobre aproximadamente 34.904 tokens de diálogos sintéticos breves con formato `User:` / `Assistant:` generados por un modelo de instrucciones local de 4B parámetros.
+La relevancia es, por tanto, pedagógica y de ingeniería. Demuestra que es posible implementar entrenamiento e inferencia de un transformer y de un perceptrón multicapa tipo Bengio en un lenguaje funcional sin librerías numéricas, con paridad numérica verificada a ~1e-7 en logits frente a una implementación de referencia en numpy. El repositorio también documenta experimentos posteriores (en Common Lisp, no publicados como pesos) con modelos de hasta 10,52 M de parámetros sobre FineWeb-Edu, con resultados negativos o parciales que el autor reporta con honestidad.
 
-Su relevancia es exclusivamente educativa: sirve para ilustrar cómo funciona un modelo de lenguaje a pequeña escala y cómo implementar entrenamiento con paralelismo de datos en Erlang. El propio autor advierte que no comprende preguntas y que sus respuestas suelen ser irrelevantes respecto al prompt, por lo que no es apto para ninguna aplicación real.
+Con 152.903 parámetros en la variante principal y un tamaño de repositorio inferior a 0,1 GB, AsemLLM no es un candidato para aplicaciones reales de generación de texto. Es un banco de pruebas para estudiar arquitecturas, tokenización y flujos de entrenamiento en Erlang, y un ejemplo de documentación transparente sobre limitaciones.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | MLP con embeddings (estilo Bengio), no transformer |
-| Parametros totales | 152.903 |
+| Arquitectura | MLP estilo Bengio (embedding -> capa oculta tanh -> softmax) en la raíz; transformer decoder GPT-style en `transformer/` |
+| Parametros totales | 152.903 (MLP); 279.007 (transformer) |
 | Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | 5 tokens |
-| Tipos de cuantizacion | no disponible (pesos en float32) |
+| Longitud de contexto | 5 tokens (MLP); 32 tokens (transformer) |
+| Tipos de cuantizacion | no disponible; pesos en float32 safetensors |
 | Idiomas soportados | inglés (en) |
-| Licencia | Apache-2.0 |
+| Licencia | Apache 2.0 |
 | Formato de pesos | safetensors (float32) |
 
 ## Arquitectura y entrenamiento
 
-El modelo implementa una arquitectura de lenguaje neuronal clásica: `logits = W2 · tanh(W1 · concat(embedding[last 5 tokens]) + b1) + b2`. Toma los embeddings de los últimos 5 tokens, los concatena y los pasa por una capa oculta de 64 unidades con activación tanh, seguida de una proyección a la distribución sobre el vocabulario de 1.631 tokens. El vocabulario es a nivel de palabra e incluye palabras con su espacio inicial, puntuación y salto de línea, con `<unk>` como id 0. Los pesos almacenados son `embedding`, `w1`, `b1`, `w2` y `b2`.
+La variante principal es un perceptrón multicapa de una sola capa oculta con activación tanh y salida softmax, siguiendo el esquema clásico de Bengio et al. para modelos de lenguaje neuronales. La variante secundaria es un decoder transformer estilo GPT con atención, de 279.007 parámetros y ventana de 32 tokens. Ambas comparten un tokenizador de nivel palabra que incluye el espacio inicial, signos de puntuación y saltos de línea; el vocabulario de 1.631 tokens recoge los tokens vistos al menos dos veces, con `<unk>` en el id 0.
 
-El entrenamiento se realizó en Erlang con 10 procesos worker en paralelo sobre un Apple M1 Pro, en aproximadamente 13 minutos. Se usó el optimizador Adam con learning rate 0.005 con decaimiento lineal hasta el 10%, batch de 128, recorte de gradiente en 5 y 3.000 pasos, conservando el checkpoint con mejor pérdida de validación. Los datos de entrenamiento consisten en unos 34.904 tokens (138 KB) de conversaciones sintéticas breves sobre temas cotidianos (cocina, jardinería, viajes, estudio, aficiones), escritas por un modelo de instrucciones local de 4B parámetros, sin scraping web ni datos personales. El 10% final del texto se reservó como conjunto de validación. No se emplearon técnicas de RLHF ni DPO.
+El entrenamiento se realizó íntegramente en Erlang mediante procesos trabajadores supervisados que calculan gradientes en paralelo, sin framework de deep learning. El corpus es un conjunto de diálogos cortos con formato `User:` / `Assistant:`. No se documentan en la información disponible el número exacto de tokens de entrenamiento, la composición detallada del dataset ni si hubo etapas de RLHF o DPO. La implementación de referencia en numpy (`asemllm.py`) se verificó contra el código Erlang con una discrepancia de ~1e-7 en logits. El repositorio de GitHub incluye además un servidor con KV-cache por sesión de conversación, un port a Common Lisp (SBCL) y un backend nativo en C.
 
 ## Capacidades
 
-- Generación de texto a nivel de palabra en inglés con formato de diálogo `User:` / `Assistant:`.
-- Reproducción del estilo de las conversaciones sintéticas de entrenamiento (tono conversacional breve).
-- Generación condicionada por los últimos 5 tokens de contexto.
-- Muestreo con temperatura y semilla configurables mediante el cargador de referencia (`temperature`, `seed`).
-- No dispone de tool calling ni function calling.
-- No soporta razonamiento multi-paso ni comportamiento de agente.
-- No tiene capacidades multilingües más allá del inglés.
-- No dispone de modo de razonamiento (thinking), visión ni audio.
+- Generación de texto a nivel palabra en inglés, limitada a continuaciones de estilo diálogo breve.
+- Aprendizaje de estilo superficial: produce inglés fluido en apariencia dentro del formato `User:` / `Assistant:`.
+- No responde preguntas de forma fiable: el propio autor indica que las respuestas suelen ser irrelevantes respecto a la pregunta.
+- Sin soporte de tool calling ni function calling.
+- Sin capacidades de agente ni razonamiento multi-paso.
+- Sin capacidades de visión, audio ni modo de pensamiento.
+- Multilingüismo nulo: solo inglés.
+- Interfaz de chat por línea de comandos y API Python (`AsemLLM.chat`) con temperatura y semilla configurables.
 
 ## Casos de uso
 
-- Docencia sobre fundamentos de modelos de lenguaje: permite mostrar de forma tangible la diferencia entre un modelo n-grama y una red neuronal pequeña, comparando perplejidades (unigrama 171, bigrama 53, AsemLLM 42).
-- Ejemplo de entrenamiento desde cero sin frameworks: el código en Erlang ilustra paralelismo de datos con procesos worker supervisados y cálculo manual de gradientes.
-- Demostración de tokenización a nivel de palabra: útil para explicar vocabularios, tokens `<unk>` y el tratamiento de puntuación y espacios.
-- Práctica de carga de pesos en safetensors: el cargador en numpy sirve como ejercicio introductorio para leer tensores y ejecutar un forward pass manual.
-- Ilustración de sobreajuste: con solo 138 KB de texto, la pérdida de entrenamiento baja a ~1.3 mientras la de validación se estanca en 3.73, un caso claro de memorización de frases.
-- Estudio de las limitaciones de los datos sintéticos: el modelo hereda la repetitividad y los errores del modelo de 4B que generó el corpus, lo que permite analizar sesgos de destilación sintética.
-- Prototipado de infraestructura de serving en Erlang: el modelo se sirve íntegramente en Erlang, por lo que puede usarse como banco de pruebas de arquitecturas de servicio ligeras.
+- Docencia de fundamentos de NLP: sirve para mostrar de forma tangible cómo un MLP y un transformer calculan la siguiente palabra, con código legible y pesos inspeccionables.
+- Estudio de tokenización a nivel palabra: el `vocab.json` de 1.631 tokens permite analizar el efecto del espacio inicial y del manejo de `<unk>` en corpus pequeños.
+- Referencia de paridad numérica: `asemllm.py` actúa como oráculo numpy para verificar implementaciones propias de forward pass con tolerancia de ~1e-7 en logits.
+- Ejemplo de concurrencia en Erlang: el repositorio de GitHub documenta procesos supervisados para cálculo de gradientes y sesiones de chat con KV-cache, útil como material de formación en sistemas concurrentes.
+- Pruebas de infraestructura de serving minimalista: el servidor JSON y la interfaz web del repositorio permiten experimentar con APIs de chat sin dependencias pesadas.
+- Benchmark de juguete para pipelines de evaluación: sus fallos predecibles (respuestas irrelevantes) permiten validar que un harness de evaluación detecta salidas incorrectas antes de usarlo con modelos reales.
 
 ## Benchmarks y rendimiento
 
-Evaluación sobre el conjunto de validación (último 10% del texto), entropía cruzada por token (menor es mejor):
-
-| Modelo | Loss | Perplejidad |
-|---|---|---|
-| Unigrama (frecuencias de palabra) | 5.14 | 171 |
-| Bigrama (palabra anterior) | 3.98 | 53 |
-| AsemLLM | 3.73 | 42 |
-
-No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, etc.) en la información disponible.
+No se han publicado resultados de benchmarks en la información disponible para los pesos de este repositorio. El autor sí reporta, como contexto de sus experimentos posteriores en Common Lisp (no publicados aquí), perplejidades de test de 112,4, 87,8 y 80,8 para transformers de 1,16 M, 2,90 M y 10,52 M de parámetros sobre FineWeb-Edu (29,9 M tokens), y una precisión del 25,6-28,9 % en un conjunto de 90 preguntas con cuatro opciones (azar = 25 %). Estos datos no corresponden a los modelos de este repositorio y no deben atribuírseles.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: inferior a 1 MB para los pesos en float32 (152.903 parámetros × 4 bytes ≈ 0,6 MB), más el vocabulario y el cargador.
-- GPU recomendadas: no requiere GPU; el modelo se ejecuta en CPU sin problema.
-- Cabe en cualquier GPU consumer e incluso en dispositivos de muy bajos recursos; también se ejecuta en CPU.
-- Opciones de despliegue: no es compatible con vLLM, llama.cpp, Ollama, LM Studio ni `transformers`, ya que usa una arquitectura propia. El despliegue se realiza mediante el script `asemllm.py` incluido en el repositorio (requiere numpy, safetensors y huggingface_hub) o a través del servidor en Erlang del autor.
-- Latencia y throughput: no disponibles en la información proporcionada; por el tamaño del modelo se espera que sean muy bajos en CPU.
+- VRAM estimada: inferior a 10 MB para ambos modelos en float32; cabe en cualquier GPU consumer, e incluso en CPU sin dificultad.
+- GPU recomendadas: ninguna en particular; el modelo es demasiado pequeño para aprovechar aceleración por GPU. Cualquier RTX o iGPU es suficiente.
+- Cabe en GPU consumer: sí, en todas; también en Raspberry Pi y entornos embebidos.
+- Opciones de despliegue: no es compatible con vLLM, llama.cpp, Ollama, LM Studio ni `transformers`, al usar arquitecturas personalizadas. El despliegue se realiza con `asemllm.py` (numpy + safetensors) o con el servidor Erlang del repositorio de GitHub.
+- Latencia y throughput: no disponibles de forma medida; por el tamaño (152.903 parámetros y ventana de 5 tokens) la inferencia es prácticamente instantánea en CPU.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
-|---|---|---|---|---|
-| AsemLLM | 152.903 | 5 tokens | Apache-2.0 | Hugging Face (repo propio) |
-| GPT-2 small | ~124 M | 1.024 tokens | MIT | Hugging Face, transformers |
-| TinyStories-1M | ~1 M | 512 tokens | MIT | Hugging Face, transformers |
+| Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
+|---|---|---|---|---|---|
+| AsemLLM (MLP) | 152.903 | 5 tokens | Apache 2.0 | Hugging Face + GitHub | Educativo, Erlang, nivel palabra |
+| AsemLLM (transformer) | 279.007 | 32 tokens | Apache 2.0 | Hugging Face + GitHub | Educativo, Erlang, nivel palabra |
+| nanoGPT (Karpathy) | configurable (típ. 10-124 M) | configurable | MIT | GitHub | Referencia educativa en PyTorch, no pesos publicados aquí |
+| makemore (Karpathy) | configurable (pequeño) | variable | MIT | GitHub | Serie educativa de modelos de caracteres |
 
-La comparativa se limita a modelos pequeños de referencia; no se dispone de datos de rendimiento comparables entre ellos en la información proporcionada. AsemLLM es entre dos y tres órdenes de magnitud menor en parámetros que las alternativas citadas y no es compatible con el ecosistema estándar de inferencia.
+No se dispone de comparativas con modelos de producción porque AsemLLM no pertenece a esa categoría; la comparación relevante es con material didáctico de propósito similar.
 
 ## Limitaciones y advertencias
 
-- Contexto extremadamente corto (5 tokens): las respuestas suelen no guardar relación con la pregunta.
-- Entrenado con solo 138 KB de texto: memoriza frases y generaliza mal (pérdida de validación estancada en 3.73 frente a 1.3 de entrenamiento).
-- Solo inglés y vocabulario centrado en ASCII; no cubre otros idiomas ni caracteres no ASCII de forma robusta.
-- Sin entrenamiento de seguridad: las salidas reflejan el texto sintético de entrenamiento y pueden contener afirmaciones falsas expresadas con seguridad.
-- Hereda la repetitividad y los errores del modelo de 4B que generó el corpus.
-- No es compatible con `transformers`, llama.cpp, Ollama ni LM Studio; requiere el cargador propio.
-- No apto para ninguna aplicación real; el propio autor lo describe como un modelo de juguete con fines educativos.
-- Licencia Apache-2.0: permite uso comercial, pero las limitaciones técnicas hacen inviable cualquier uso en producción.
+- Los modelos son de juguete: no comprenden preguntas y sus respuestas suelen ser irrelevantes, según advierte el propio autor.
+- Riesgo alto de afirmaciones falsas con tono seguro; no deben usarse para tareas que requieran respuestas correctas.
+- Ventana de contexto extremadamente corta (5 y 32 tokens), insuficiente para diálogo real.
+- Solo inglés y vocabulario de nivel palabra con `<unk>` para términos no vistos.
+- Sesgos no evaluados; el corpus de entrenamiento es pequeño y no se documenta su composición.
+- Licencia Apache 2.0 permite uso comercial, pero el valor práctico del modelo en producción es nulo.
+- Incompatibilidad con el ecosistema estándar (`transformers`, llama.cpp, Ollama, LM Studio) por arquitecturas personalizadas.
+- Los experimentos posteriores del autor reportan resultados negativos o parciales; no deben interpretarse como capacidades de estos pesos.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/asemqaffaf/AsemLLM
+- Hugging Face: https://huggingface.co/asemqaffaf/AsemLLM
+- Repositorio GitHub (entrenamiento, serving, UI web): https://github.com/asemqaffaf/AsemLLms
+- Resultados etapa 1: https://github.com/asemqaffaf/AsemLLms/blob/main/docs/results-stage1.md
+- Resultados etapa 2: https://github.com/asemqaffaf/AsemLLms/blob/main/docs/results-stage2.md
+- Análisis R7: https://github.com/asemqaffaf/AsemLLms/blob/main/docs/results-stage2-r7.md
+- Informe final etapa 2: https://github.com/asemqaffaf/AsemLLms/blob/main/docs/results/stage2/mission-20261111/FINAL_REPORT.md

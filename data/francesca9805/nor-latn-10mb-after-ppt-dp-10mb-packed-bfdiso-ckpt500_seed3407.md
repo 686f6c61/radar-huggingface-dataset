@@ -2,51 +2,56 @@
 
 ## Resumen
 
-El modelo `nor-latn-10mb-after-ppt-Dp-10mb-packed-bfdiso-ckpt500_seed3407` es un modelo de generacion de texto de 39.087.104 parametros (aproximadamente 39 millones) desarrollado por el usuario francesca9805 y publicado en Hugging Face. Se trata de un ajuste fino (SFT) mediante la libreria TRL sobre el modelo base `francesca9805/nor-latn-10mb-ppt-Dp-10mb-packed-bfdiso_seed3407`, que a su vez forma parte de una familia de experimentos con identificadores muy similares (distintas semillas, variantes de idioma y de preprocesado de datos). La etiqueta `gpt2` en los metadatos indica que la arquitectura subyacente es un transformer decoder-only de tipo GPT-2.
+El modelo `nor-latn-10mb-after-ppt-Dp-10mb-packed-bfdiso-ckpt500_seed3407` es un ajuste fino (SFT) de un modelo base noruego (nor-latn) desarrollado por el usuario `francesca9805`, presumiblemente en el contexto de investigación de la Universidad de Groningen (según el enlace de Weights & Biases). Se trata de un modelo de generación de texto de arquitectura GPT-2 con 39.087.104 parámetros totales, lo que lo sitúa en la categoría de modelos pequeños (aproximadamente 39 millones de parámetros), muy por debajo de los modelos actuales de propósito general.
 
-El nombre del modelo revela su naturaleza experimental: `nor-latn` sugiere noruego en escritura latina, `10mb` apunta a un corpus de entrenamiento de 10 MB, `packed` indica empaquetado de secuencias y `ckpt500` hace referencia al checkpoint numero 500. Por tanto, no es un modelo orientado a produccion, sino un artefacto de investigacion para estudiar el comportamiento de modelos pequenos entrenados con presupuestos de datos muy reducidos.
+El modelo ha sido entrenado mediante Supervised Fine-Tuning (SFT) usando la librería TRL (versión 0.23.0), partiendo de un checkpoint intermedio del modelo base `nor-latn-10mb-ppt-Dp-10mb-packed-bfdiso_seed3407`. El nombre sugiere un entrenamiento sobre un corpus de 10 MB de texto en noruego con escritura latina (nor-latn), empaquetado ("packed") y con un checkpoint en el paso 500 y semilla 3407. Es relevante únicamente en el ámbito de la investigación lingüística o de experimentación con modelos pequeños para lenguas de bajos recursos.
 
-Su relevancia actual es acotada y de perfil academico: sirve como punto de comparacion en estudios de tokenizacion, empaquetado de secuencias y ajuste supervisado con TRL, y como caso extremo de modelo que cabe en cualquier dispositivo. No se ha publicado informacion sobre licencia, idiomas soportados ni resultados de evaluacion.
+No se dispone de información pública sobre la licencia, los idiomas exactos soportados ni los datos de entrenamiento más allá de lo que sugiere el nombre del modelo. La model card es una plantilla autogenerada por TRL sin detalles adicionales.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only estilo GPT-2 (etiqueta `gpt2`) |
+| Arquitectura | GPT-2 (transformer decoder-only) |
 | Parametros totales | 39.087.104 |
-| Parametros activos | No aplica (no es MoE) |
-| Longitud de contexto | No disponible (los modelos GPT-2 suelen emplear 1024 tokens) |
-| Tipos de cuantizacion | No disponible; pesos originales en safetensors (probablemente bf16/fp32) |
-| Idiomas soportados | No disponible en los metadatos; el identificador sugiere noruego en escritura latina (`nor-latn`) |
-| Licencia | No disponible (el README incluye un campo `licence: license` sin contenido) |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | no disponible |
+| Idiomas soportados | no disponible (el nombre sugiere noruego, nor-latn) |
+| Licencia | no disponible |
 | Formato de pesos | safetensors |
+| Libreria | transformers |
+| Framework de entrenamiento | TRL 0.23.0, Transformers 4.56.2, PyTorch 2.11.0 |
+| Metodo de entrenamiento | SFT (Supervised Fine-Tuning) |
+| Modelo base | francesca9805/nor-latn-10mb-ppt-Dp-10mb-packed-bfdiso_seed3407 |
+| Tamano del repositorio | 9,1 GB |
+| Descargas | 495 |
+| Fecha de creacion | 2026-10-08 |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es un transformer decoder-only de tipo GPT-2, segun la etiqueta `gpt2` de los metadatos de Hugging Face. Con 39 millones de parametros, es sustancialmente mas pequeno que GPT-2 small (124 M), lo que sugiere una configuracion personalizada con menos capas o dimensiones reducidas, aunque no se dispone de los hiperparametros concretos (numero de capas, dimension del modelo, cabezas de atencion). El modelo se distribuye en formato safetensors y es compatible con la libreria Transformers y con text-generation-inference.
+La arquitectura es GPT-2, un transformer decoder-only con atención causal estándar. Con 39 millones de parámetros, se corresponde con la configuración pequeña de GPT-2 (aunque ligeramente por debajo de los 124M de la versión estándar, lo que sugiere una configuración personalizada con menos capas o menor dimensión oculta). No se dispone de información sobre el número de capas, cabezas de atención ni dimensión del embedding.
 
-El entrenamiento se realizo mediante SFT (supervised fine-tuning) con la libreria TRL en su version 0.23.0, sobre Transformers 4.56.2, PyTorch 2.11.0, Datasets 4.8.4 y Tokenizers 0.22.1. El modelo base fue `francesca9805/nor-latn-10mb-ppt-Dp-10mb-packed-bfdiso_seed3407`, y existe un registro publico del entrenamiento en Weights & Biases (proyecto `new-tokenizers`, ejecucion `jhyfavv6`). El identificador indica que se uso un corpus de 10 MB, secuencias empaquetadas y un checkpoint intermedio (el numero 500). No se especifican la composicion exacta del dataset, el numero de tokens de entrenamiento, ni si se aplicaron tecnicas posteriores como RLHF o DPO.
+El entrenamiento se realizó mediante SFT con TRL sobre el modelo base `nor-latn-10mb-ppt-Dp-10mb-packed-bfdiso_seed3407`. El nombre del modelo indica que se partió de un corpus de 10 MB de texto noruego en escritura latina, empaquetado en secuencias, con un checkpoint en el paso 500 y semilla 3407. No se especifica el número total de tokens de entrenamiento, la composición del dataset, ni si se aplicaron técnicas de RLHF o DPO. El run de entrenamiento está disponible en Weights & Biases bajo el proyecto `new-tokenizers` del usuario `f-padovani-university-of-groningen`.
 
 ## Capacidades
 
-- Generacion de texto autoregresiva basica, heredada de la arquitectura GPT-2.
-- Ajuste supervisado orientado a seguir instrucciones conversacionales simples, segun el ejemplo de uso de la model card (formato de mensajes con rol `user`).
-- Generacion de texto en noruego (inferido del identificador `nor-latn`), si bien no se confirma oficialmente.
-- Compatibilidad con el pipeline `text-generation` de Transformers y con text-generation-inference.
-- No se documenta soporte de tool calling ni function calling.
-- No se documenta soporte de agentes ni de razonamiento multi-paso.
-- No se documenta capacidad multilingue explicita mas alla del posible noruego.
-- No se documentan capacidades de vision, audio ni modo de razonamiento extendido.
+- Generación de texto autoregresiva básica, limitada por el tamaño del modelo (39M de parámetros).
+- Entrenado presumiblemente para texto en noruego (nor-latn), aunque no se confirma oficialmente.
+- Soporte de chat mediante plantilla de mensajes (`[{"role": "user", "content": ...}]`) según el ejemplo de la model card.
+- No se ha documentado soporte de tool calling ni function calling.
+- No se ha documentado soporte de agentes ni razonamiento multi-paso.
+- No se ha documentado capacidad multilingüe más allá del posible noruego.
+- No dispone de modo thinking, visión ni audio.
 
 ## Casos de uso
 
-- Investigacion sobre tokenizacion: el sufijo `new-tokenizers` del proyecto de W&B indica que esta familia de modelos se uso para evaluar el impacto de distintos tokenizadores; este checkpoint sirve como punto de comparacion en estudios de vocabulario y segmentacion.
-- Experimentos de ajuste con TRL: permite reproducir y auditar un flujo de SFT minimo (modelo de 39 M, dataset reducido) como referencia para validar configuraciones de entrenamiento.
-- Ablaciones sobre empaquetado de secuencias: la etiqueta `packed` sugiere que el modelo se entreno con secuencias empaquetadas, de modo que es util para comparar este regimen frente a alternativas sin empaquetar.
-- Analisis de modelos de 10 MB de datos: sirve para estudiar que tipo de estructura linguistica se aprende con un presupuesto de datos extremadamente bajo y cuantificar el olvido o la degradacion respecto al modelo base.
-- Prototipado en dispositivos con recursos minimos: con 39 M de parametros, cabe en CPU, microcontroladores de gama alta o GPUs integradas, lo que permite pruebas de concepto de generacion de texto local sin infraestructura dedicada.
-- Docencia y demostraciones: su tamano permite ejecutar inferencia en un portatil y explicar de forma practica el funcionamiento de un transformer generativo y de un pipeline de SFT.
-- Destilacion y modelos de profesor-alumno: puede emplearse como alumno en experimentos de destilacion de conocimiento desde modelos mayores.
+- Investigación lingüística sobre modelos pequeños para noruego: el modelo puede utilizarse como baseline para estudiar el comportamiento de modelos de 39M de parámetros entrenados con SFT sobre corpus de 10 MB, comparando con el modelo base sin ajuste.
+- Experimentación con tokenizadores: dado el contexto del proyecto de Weights & Biases (`new-tokenizers`), el modelo es adecuado para evaluar el impacto de distintos tokenizadores en la generación de texto noruego.
+- Generación de texto de relleno o completado simple en noruego: para tareas de autocompletado muy básicas donde la calidad no sea crítica y el coste computacional sea mínimo.
+- Reproducción de experimentos académicos: permite replicar el pipeline de SFT con TRL sobre un corpus pequeño y verificar resultados.
+- Enseñanza de pipelines de fine-tuning: sirve como ejemplo didáctico de cómo ajustar un modelo GPT-2 pequeño con TRL y SFT.
+- Pruebas de infraestructura de despliegue: por su reducido tamaño, es útil para validar pipelines de despliegue (vLLM, TGI, etc.) antes de escalar a modelos mayores.
 
 ## Benchmarks y rendimiento
 
@@ -54,43 +59,38 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: aproximadamente 0,16 GB en fp32, 0,08 GB en bf16/fp16 y 0,04 GB en int8. La ficha de LLM Explorer para un modelo de esta misma familia (39,1 M de parametros) indica un consumo de VRAM del orden de 0,1 GB.
-- GPU recomendadas: cualquiera con al menos 1 GB de VRAM; por ejemplo GTX 1050 Ti, RTX 3050, RTX 4090, A100 o H100, aunque en estas ultimas el modelo no aprovechara la capacidad de computo.
-- Compatibilidad con GPU de consumo: si, cabe holgadamente en cualquier GPU de consumo e incluso en CPU o en dispositivos tipo Raspberry Pi.
-- Opciones de despliegue: pipeline `text-generation` de Transformers, text-generation-inference (TGI), servidores compatibles con la API de Hugging Face Endpoints y, previa conversion, llama.cpp u Ollama mediante GGUF.
-- Latencia y throughput estimados: no disponibles. Dado el tamano del modelo, la generacion en CPU deberia ser de decenas de tokens por segundo y en GPU de cientos, pero se trata de una estimacion no confirmada por el autor.
-- Nota sobre el repositorio: el repo ocupa 4,8 GB pese a que los pesos del modelo son de decenas de MB, lo que indica que probablemente contiene multiples checkpoints, estados del optimizador u otros artefactos de entrenamiento.
+- VRAM estimada para inferencia en fp32: aproximadamente 156 MB solo para pesos (39M × 4 bytes), más overhead de activaciones y KV cache.
+- VRAM estimada en fp16/bf16: aproximadamente 78 MB para pesos.
+- Cabe holgadamente en cualquier GPU consumer, incluidas GTX 1050, RTX 3050, RTX 4090, así como en CPU.
+- GPU recomendadas: cualquier GPU con al menos 1 GB de VRAM es suficiente; no requiere A100 ni H100.
+- Opciones de despliegue: transformers (pipeline), text-generation-inference (según tags), llama.cpp (previa conversión a GGUF), Ollama (previa conversión), vLLM (compatible con arquitectura GPT-2).
+- Latencia y throughput: no disponibles, pero por el tamaño se espera un throughput muy alto y latencia de milisegundos en GPU moderna.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| nor-latn-10mb-after-ppt-Dp-10mb-packed-bfdiso-ckpt500_seed3407 | 39,1 M | No disponible | No disponible | Hugging Face |
-| GPT-2 small | 124 M | 1024 tokens | MIT | Hugging Face, muy extendido |
-| DistilGPT-2 | 82 M | 1024 tokens | Apache 2.0 | Hugging Face |
-| SmolLM-135M | 135 M | 2048 tokens | Apache 2.0 | Hugging Face |
+| nor-latn-10mb-after-ppt-Dp-10mb-packed-bfdiso-ckpt500_seed3407 | 39M | no disponible | no disponible | Hugging Face |
+| GPT-2 small (OpenAI) | 124M | 1024 tokens | MIT | Hugging Face |
+| DistilGPT-2 | 82M | 1024 tokens | Apache 2.0 | Hugging Face |
+| NorGPT-3B (si existe) | no disponible | no disponible | no disponible | no disponible |
 
-Los datos de los modelos comparativos proceden de sus fichas publicas y se incluyen como referencia general del segmento de modelos pequenos. No se dispone de resultados de rendimiento del modelo evaluado, por lo que la comparacion se limita a parametros, contexto, licencia y disponibilidad; en el resto de dimensiones debe considerarse "no disponible".
+No se dispone de información sobre modelos comparables específicos para noruego de tamaño similar en la información proporcionada. La comparativa con GPT-2 small y DistilGPT-2 es orientativa por arquitectura y orden de magnitud, no por rendimiento en noruego.
 
 ## Limitaciones y advertencias
 
-- No hay informacion publicada sobre sesgos del modelo; dado el corpus reducido (10 MB) y probablemente monolingue, es esperable que presente sesgos derivados de esa fuente concreta.
-- Riesgo elevado de alucinacion y de generacion incoherente: con 39 M de parametros y un volumen de entrenamiento muy bajo, la calidad del texto generado sera limitada.
-- Contexto limitado: no se ha confirmado la ventana de contexto, y el empaquetado de secuencias no implica una ampliacion de la misma.
-- Cobertura idiomatica restringida: el nombre sugiere noruego, pero no hay confirmacion oficial ni datos sobre otros idiomas.
-- Licencia no disponible: no se puede asumir uso comercial libre. El README incluye un campo `licence: license` sin especificar, lo que impide determinar las condiciones de redistribucion.
-- Naturaleza experimental: se trata de un checkpoint intermedio (`ckpt500`) dentro de una linea de investigacion, no de un modelo final optimizado.
-- Ausencia de evaluacion: no hay benchmarks publicados, por lo que no es posible estimar su rendimiento relativo frente a alternativas.
-- No apto para produccion sin validacion previa: carece de documentacion sobre seguridad, filtrado de contenido o comportamiento en dominios sensibles.
+- Modelo muy pequeño (39M de parámetros): capacidad limitada de razonamiento, coherencia a largo plazo y conocimiento factual.
+- Riesgo elevado de alucinación y generación de texto incoherente, especialmente fuera del dominio de entrenamiento.
+- No se dispone de información sobre la licencia, lo que impide confirmar si el uso comercial está permitido; se debe contactar con el autor antes de cualquier uso en producción.
+- El corpus de entrenamiento es de solo 10 MB, lo que limita severamente la cobertura lingüística y temática.
+- No se han documentado los idiomas soportados oficialmente; el nombre sugiere noruego, pero no está confirmado.
+- No se ha documentado la longitud de contexto, lo que impide planificar tareas que requieran ventanas largas.
+- La model card es una plantilla autogenerada sin información sobre sesgos, datos de entrenamiento ni evaluación.
+- No apto para tareas de producción que requieran fiabilidad, precisión factual o cumplimiento normativo.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/francesca9805/nor-latn-10mb-after-ppt-Dp-10mb-packed-bfdiso-ckpt500_seed3407
-- Modelo base: https://huggingface.co/francesca9805/nor-latn-10mb-ppt-Dp-10mb-packed-bfdiso_seed3407
-- Variante con semilla 455: https://huggingface.co/francesca9805/nor-latn-10mb-ppt-Dp-10mb-packed-bfdiso_seed455
-- Variante `shuff-dyck` con semilla 10: https://huggingface.co/francesca9805/nor-latn-10mb-after-ppt-shuff-dyck-10mb-packed-ckpt500_seed10
-- Variante en ingles (`eng-latn`) con semilla 10, ficha en LLM Explorer: https://llm-explorer.com/model/francesca9805%2Feng-latn-10mb-ppt-Dp-10mb-packed-bfdiso_seed10,4XryJvTiaaPJ6AdvKdFeci
-- Ficha del modelo base en Free2AITools: https://free2aitools.com/model/francesca9805/nor-latn-10mb-ppt-dp-10mb-packed-bfdiso_seed3407
-- Ficha del modelo base en FriendliAI: https://friendli.ai/models/francesca9805/nor-latn-10mb-ppt-Dp-10mb-packed-bfdiso_seed3407
-- Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/jhyfavv6
-- Repositorio de TRL: https://github.com/huggingface/trl
+- [Hugging Face: francesca9805/nor-latn-10mb-after-ppt-Dp-10mb-packed-bfdiso-ckpt500_seed3407](https://huggingface.co/francesca9805/nor-latn-10mb-after-ppt-Dp-10mb-packed-bfdiso-ckpt500_seed3407)
+- [Modelo base: francesca9805/nor-latn-10mb-ppt-Dp-10mb-packed-bfdiso_seed3407](https://huggingface.co/francesca9805/nor-latn-10mb-ppt-Dp-10mb-packed-bfdiso_seed3407)
+- [Run de entrenamiento en Weights & Biases](https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/h220kiyq)
+- [Repositorio TRL](https://github.com/huggingface/trl)

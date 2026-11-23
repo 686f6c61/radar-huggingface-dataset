@@ -1,91 +1,94 @@
 # mrfakename/Ling-3.1-flash-1019-abliterated
 
 ## Resumen
-Ling-3.1-flash-1019-abliterated es una variante del modelo inclusionAI/Ling-3.1-flash-1019 en la que se ha eliminado el comportamiento de rechazo mediante ablación direccional. Lo publica el usuario mrfakename en Hugging Face y conserva exactamente el mismo formato, los mismos ficheros y el mismo diseño en FP8 que el original, por lo que carga en cualquier infraestructura donde cargue el modelo base. Con 572.120.680.768 parámetros totales y un repositorio de 573,8 GB, es un modelo de gran escala orientado a despliegues de alta capacidad.
 
-La arquitectura declarada es `bailing_hybrid`, con código personalizado (`custom_code`) y una capa MTP (multi-token prediction) en la posición 72. El proceso de ablación se aplicó sobre un subespacio de rechazo de rango 4, medido de forma independiente para prompts en inglés en modo chat, prompts en inglés en modo think y prompts sensibles a China. La edición se proyectó fuera de las escrituras del flujo residual en las capas 16 a 71, concretamente en `attention.o_proj` y `mlp.shared_experts.down_proj` (y `mlp.down_proj` en las cuatro capas densas), con una intensidad distinta por capa obtenida mediante búsqueda multiobjetivo.
+Ling-3.1-flash-1019-abliterated es una variante del modelo inclusionAI/Ling-3.1-flash-1019 en la que se ha eliminado el comportamiento de rechazo (refusal) mediante ablación direccional. Lo publica mrfakename, un contribuidor conocido de la comunidad open source, y mantiene intactos los ficheros, el formato y el layout FP8 del modelo original, por lo que se carga en cualquier entorno donde funcione el modelo base. El modelo base pertenece a la familia Ling de inclusionAI (Ant Group), con arquitectura híbrida `bailing_hybrid` y aproximadamente 572.000 millones de parámetros totales.
 
-Su relevancia es doble: por un lado, documenta con detalle técnico poco habitual cómo se distribuye el comportamiento de rechazo en un modelo grande, con direcciones distintas según familia de prompts y modo de razonamiento; por otro, ofrece una versión sin rechazos manteniendo la licencia MIT del modelo base, lo que facilita su uso en investigación sobre alineación, evaluación de sesgos y análisis de robustez.
+La relevancia de esta versión radica en el análisis técnico que acompaña a la publicación: el autor demuestra que los rechazos de Ling-3.1 no residen en una única dirección del espacio residual, sino en un subespacio de rango 4 distribuido en distintas capas según el tipo de prompt (inglés en modo chat, inglés en modo think y prompts sensibles a China). La edición se aplica únicamente a las escrituras al residual stream de las capas 16 a 71, con una intensidad por capa obtenida mediante búsqueda multiobjetivo.
 
-## Especificaciones tecnicas
+El resultado es un modelo sin rechazos en la práctica (3/100 en chat y 7/100 en think mode, frente a 98/100 del original) con una divergencia mínima en prompts inocuos (KL de primer token de 0,1504). La licencia es MIT, heredada del modelo base.
 
-| Parametro | Valor |
+## Especificaciones técnicas
+
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | bailing_hybrid (transformer híbrido con capa MTP en la posición 72 y cuatro capas densas) |
-| Parametros totales | 572.120.680.768 |
-| Parametros activos | no disponible |
+| Arquitectura | `bailing_hybrid` (híbrida, con capas densas y MoE; incluye capa MTP en la posición 72) |
+| Parámetros totales | 572.120.680.768 (572,1 mil millones) |
+| Parámetros activos | no disponible |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | FP8 (pesos originales), GGUF Q8_0 (usado en las evaluaciones del autor) |
-| Idiomas soportados | no disponible (la model card solo documenta evaluaciones en inglés y en prompts sensibles a China) |
+| Tipos de cuantización | FP8 (layout original del modelo base); GGUF Q8_0 disponible para evaluación |
+| Idiomas soportados | no disponible (la model card menciona prompts en inglés y en chino) |
 | Licencia | MIT |
 | Formato de pesos | safetensors y GGUF |
 
 ## Arquitectura y entrenamiento
-El modelo base es un transformer híbrido identificado como `bailing_hybrid`, con expertos enrutados, embeddings y una capa MTP que se mantienen bit a bit idénticos al original tras la edición. La ablación se realizó midiendo direcciones de rechazo como diferencia de medias entre prompts rechazados y prompts inocuos, proyectando fuera la media de los prompts inocuos, en cada una de las 145 posiciones del flujo residual. El subespacio eliminado son los cuatro primeros vectores singulares del conjunto de direcciones medidas en las capas 26 a 71.
 
-Las intensidades por capa se obtuvieron con una búsqueda multiobjetivo que minimiza los rechazos y maximiza la fidelidad respecto al original, medida como KL del primer token en prompts inocuos. La primera ronda de 80 ensayos solo puntuó el modo chat y su ganador seguía rechazando 18 de 100 prompts en modo think, porque su kernel no llegaba a la capa 68, donde se concentra el rechazo en ese modo. Una segunda ronda de 20 ensayos, inicializada desde el frente de Pareto anterior, puntuó conjuntamente chat, think y el conjunto sensible a China. Los tensores editados se recuantizaron a FP8 con sus escalas de bloque originales y redondeo estocástico para que la eliminación no se deshiciera por el redondeo. No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni el uso de RLHF o DPO en el modelo base.
+El modelo base Ling-3.1-flash-1019 emplea la arquitectura `bailing_hybrid`, que combina capas densas con capas de mezcla de expertos (MoE). La model card de esta versión ablacionada menciona explícitamente cuatro capas densas, expertos enrutados (`mlp.shared_experts`), una capa MTP (multi-token prediction) en la posición 72 y 72 capas en el residual stream sobre las que se midieron las direcciones de rechazo. No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni el proceso de alineación (RLHF/DPO) del modelo original en la información proporcionada.
+
+La innovación técnica de esta ficha es el procedimiento de ablación. El autor midió las direcciones de rechazo por separado para prompts en inglés en modo chat, en inglés en modo think y para prompts sensibles a China, en cada una de las 72 capas, como diferencia de medias entre prompts rechazados e inocuos con la media de los inocuos proyectada fuera. Con las 276 direcciones medidas se calculó un subespacio de rechazo de rango 4 (los cuatro primeros vectores singulares sobre las capas 26 a 71) que se proyectó fuera de las escrituras al residual stream de las capas 16 a 71, afectando a `attention.o_proj` y `mlp.shared_experts.down_proj` (o `mlp.down_proj` en las capas densas). La intensidad por capa se obtuvo con una búsqueda multiobjetivo (80 ensayos iniciales solo en chat, más 20 ensayos warm-started desde el frente de Pareto que puntuaron chat, think y prompts sensibles a China conjuntamente). Los tensores editados se recuantizaron a FP8 con sus escalas de bloque originales usando redondeo estocástico. Los expertos enrutados, los embeddings y la capa MTP quedan bit-idénticos al original.
 
 ## Capacidades
-- Generación de texto y razonamiento en dos modos diferenciados: chat y think (razonamiento extendido antes de responder).
-- Respuesta a prompts en inglés y a prompts sensibles a China, con eliminación de rechazos y de reformulaciones alineadas con la narrativa oficial en la mayoría de los casos evaluados.
-- Razonamiento multi paso en modo think, con cadenas de razonamiento que en el modelo original podían revertir un rechazo inicial.
-- Capacidad de predicción multi-token gracias a la capa MTP 72, conservada intacta.
-- Soporte de tool calling / function calling: no disponible en la información proporcionada.
-- Capacidades de agente: no disponible en la información proporcionada.
-- Capacidades multilingües: no disponible en la información proporcionada.
-- Capacidades de visión o audio: no disponible en la información proporcionada.
+
+- Generación de texto y razonamiento en modo chat y en modo think (razonamiento explícito antes de responder).
+- Respuesta a prompts en inglés y en chino, incluidos temas políticamente sensibles que el modelo original rechazaba o reformulaba con la narrativa oficial.
+- Capacidad de razonamiento multi-paso en modo think, con cadenas de razonamiento que en el modelo original podían revertir un rechazo inicial.
+- No se dispone de información sobre soporte de tool calling, function calling, agentes, visión, audio ni otras capacidades especiales en la información proporcionada.
+- El comportamiento de rechazo se ha reducido drásticamente: 3/100 en chat y 7/100 en think mode en la evaluación del autor, frente a 98/100 del original.
 
 ## Casos de uso
-- Investigación sobre alineación y rechazo: el modelo permite comparar directamente el comportamiento del original y el abliterado sobre el mismo prompt, con la misma arquitectura y cuantización, para estudiar cómo se distribuye el rechazo en las capas 52-54 (chat en inglés), 68-69 (think en inglés) y 27-30 (prompts sensibles a China).
-- Evaluación de sesgos y robustez de clasificadores: las reformulaciones alineadas con la narrativa oficial del modelo original, que un clasificador de rechazo puntúa como cumplimiento, sirven para construir conjuntos de prueba que distingan rechazo explícito de reformulación.
-- Análisis de cadenas de razonamiento: el modo think permite examinar cómo un modelo puede razonar hasta revertir una negativa inicial, un fenómeno documentado en el modelo original con la pregunta sobre el 3-4 de junio de 1989.
-- Generación de contenido sin restricciones temáticas en entornos de investigación controlados: útil para estudiar qué información factual maneja el modelo cuando se elimina la capa de rechazo, manteniendo la licencia MIT para uso interno.
-- Despliegue en infraestructura existente: al conservar el formato FP8 y los mismos ficheros que el original, puede sustituir al modelo base en pipelines ya montados sin cambios de integración.
-- Estudio de la fidelidad tras edición: el valor de KL del primer token en prompts inocuos (0,1504) permite calibrar cuánto se desvía el modelo editado del original en tareas no relacionadas con el rechazo.
-- Reproducción metodológica: la descripción del proceso (medición por capas, subespacio de rango 4, búsqueda multiobjetivo en dos rondas) sirve como referencia para aplicar ablación direccional a otros modelos híbridos de gran tamaño.
+
+- Investigación sobre alineación y seguridad: el modelo sirve para estudiar cómo se distribuyen las direcciones de rechazo en un transformer híbrido grande y cómo responde el modelo cuando se eliminan, con métricas de divergencia (KL de primer token) publicadas para prompts inocuos.
+- Evaluación de robustez de clasificadores de rechazo: al reducir los rechazos a 3/100 en chat, permite probar si los clasificadores de compliance detectan correctamente respuestas que antes se bloqueaban.
+- Análisis de sesgo geopolítico: la comparación entre el modelo original y el ablacionado sobre prompts sensibles a China (Tiananmen, Xinjiang, Tibet, Hong Kong) documenta los patrones de rechazo, compliance y reformulación del modelo base.
+- Generación de texto sin restricciones de contenido en entornos de investigación controlados, donde se necesita estudiar el comportamiento del modelo sin la capa de refusal.
+- Estudio del modo think: el modelo conserva la capacidad de razonamiento extendido, útil para analizar cómo el razonamiento interno interactúa con las políticas de rechazo (el original a veces se razonaba fuera del rechazo).
+- Base para experimentos de edición de modelos: el procedimiento de ablación por subespacio de rango 4 con búsqueda multiobjetivo por capa es replicable y sirve como referencia metodológica para otros modelos MoE grandes.
 
 ## Benchmarks y rendimiento
+
 Resultados publicados por el autor sobre GGUF Q8_0 con decodificación greedy:
 
-| Metrica | Original | Abliterated |
+| Métrica | Original | Ablacionado |
 |---|---|---|
-| Rechazos, chat en inglés | 98/100 | 3/100 |
-| Rechazos, modo think (juzgado sobre la respuesta) | 98/100 | 7/100 |
-| Prompts sensibles a China, chat (rechazo o reformulación) | 14/40 | 0/40 |
-| Prompts sensibles a China, modo think (rechazo o reformulación) | 9/40 | 3/40 |
-| KL del primer token en 100 prompts inocuos | — | 0,1504 |
+| Rechazos en chat (100 prompts) | 98/100 | 3/100 |
+| Rechazos en think mode, juzgado sobre la respuesta (100 prompts) | 98/100 | 7/100 |
+| Prompts sensibles a China en chat (40 prompts) | 14/40 | 0/40 |
+| Prompts sensibles a China en think mode (40 prompts) | 9/40 | 3/40 |
+| KL de primer token en 100 prompts inocuos | — | 0,1504 |
 
-No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible.
+Las columnas de prompts sensibles a China contabilizan rechazo o reformulación alineada con el estado. Los prompts de evaluación están reservados respecto a los usados para medir las direcciones, con 384 tokens generados (1152 en think mode). No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, etc.) en la información disponible.
 
 ## Requisitos de hardware
-- VRAM estimada para inferencia: con 572.120.680.768 parámetros en FP8, el peso de los pesos ronda los 572 GB, por lo que se necesita un nodo multi-GPU con al menos 8 GPU de 80 GB (A100 o H100) para cargar el modelo completo en FP8.
-- GPU recomendadas: H100 80 GB o A100 80 GB en configuraciones de 8 o más unidades; el modelo no cabe en una sola GPU comercial.
-- GPU de consumo: no cabe en ninguna GPU de consumo (RTX 4090, 3090, etc.) ni siquiera con cuantizaciones agresivas, dado el tamaño del repositorio (573,8 GB).
-- Opciones de despliegue: el autor valida el modelo sobre GGUF Q8_0, por lo que llama.cpp es una vía soportada; vLLM, TGI u Ollama no están confirmados en la información disponible. El código personalizado (`custom_code`) exige cargar la implementación incluida en el repositorio.
-- Latencia y throughput: no disponible.
+
+- El repositorio ocupa 573,8 GB, lo que refleja el tamaño del modelo en FP8 (572,1 mil millones de parámetros).
+- VRAM estimada: en FP8, aproximadamente 572 GB solo para pesos, más overhead de activaciones y KV cache; se necesitan múltiples GPU de 80 GB (por ejemplo, 8× H100 80 GB) como mínimo para inferencia en FP8.
+- En cuantizaciones GGUF más agresivas (Q4, Q3) el modelo podría reducirse a rangos de 300-350 GB, todavía fuera del alcance de GPU de consumo individuales.
+- No cabe en GPU de consumo (RTX 4090, 24 GB) ni en configuraciones multi-GPU de consumo razonables.
+- Opciones de despliegue: el autor distribuye GGUF (Q8_0 evaluado) compatible con llama.cpp; el formato safetensors con `custom_code` requiere cargar el código de la arquitectura `bailing_hybrid` del modelo base. No se dispone de información sobre soporte en vLLM, TGI u Ollama.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros totales | Contexto | Rechazos en chat | Licencia | Formato |
+| Modelo | Parámetros | Contexto | Rechazos (chat) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Ling-3.1-flash-1019-abliterated | 572,1 B | no disponible | 3/100 | MIT | safetensors, GGUF |
-| inclusionAI/Ling-3.1-flash-1019 (base) | 572,1 B | no disponible | 98/100 | MIT | safetensors, GGUF |
-| DeepSeek-V4.1-Flash | no disponible | no disponible | no disponible | no disponible | no disponible |
+| Ling-3.1-flash-1019-abliterated | 572,1 mil millones | no disponible | 3/100 | MIT | Hugging Face (safetensors, GGUF) |
+| inclusionAI/Ling-3.1-flash-1019 (original) | 572,1 mil millones | no disponible | 98/100 | MIT | Hugging Face |
+| DeepSeek-V4.1-Flash (mencionado en la model card) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
-El autor menciona DeepSeek-V4.1-Flash únicamente como referencia metodológica: en ese modelo la medición de la dirección de rechazo necesitó dos vectores, frente a los 276 medidos en Ling-3.1. No se aportan datos de rendimiento general ni de contexto para ninguno de los tres.
+El autor compara el procedimiento de ablación con el aplicado a DeepSeek-V4.1-Flash, que según la model card necesitó dos vectores singulares frente a los cuatro de Ling-3.1. No se dispone de datos de rendimiento estándar para comparar con otras alternativas.
 
 ## Limitaciones y advertencias
-- La eliminación de rechazos no es completa: persisten 3 de 100 rechazos en chat, 7 de 100 en modo think y 3 de 40 respuestas sensibles a China que siguen devolviendo la línea oficial.
-- El modo think en prompts sensibles a China razona más tiempo que el original: solo 30 de 40 completaron el razonamiento dentro del presupuesto evaluado.
-- La edición se validó con prompts reservados distintos de los usados para medir las direcciones, pero el conjunto de evaluación es limitado (100 prompts en inglés y 40 sensibles a China), lo que reduce la garantía de generalización.
-- El valor de KL del primer token (0,1504) incluye un pequeño ruido de base procedente de la inferencia por lotes, por lo que la fidelidad real puede ser ligeramente distinta.
-- Riesgo de alucinación: no evaluado en la información disponible; la eliminación del rechazo puede aumentar la probabilidad de que el modelo responda con confianza a preguntas sobre las que antes se negaba.
-- Sesgos conocidos: el modelo base presenta un comportamiento diferenciado ante temas sensibles para China, con rechazos, cumplimiento y reformulación según el caso; la ablación reduce los rechazos, pero no se documenta si corrige el sesgo de reformulación en todos los casos.
-- Idiomas: no se documenta el soporte multilingüe ni evaluaciones fuera del inglés y de los prompts sensibles a China.
-- Licencia MIT: permite uso comercial, pero el modelo base y el proceso de ablación deben citarse adecuadamente; conviene revisar las condiciones del modelo original inclusionAI/Ling-3.1-flash-1019.
-- Requisito de infraestructura: 573,8 GB de repositorio y más de 570 GB de pesos en FP8 hacen inviable el despliegue en hardware de consumo y encarecen cualquier experimento.
-- Uso responsable: un modelo sin rechazos puede generar contenido dañino o desinformación; su uso en producción exige filtros externos y supervisión.
+
+- La eliminación del rechazo no elimina los sesgos subyacentes del modelo; puede generar contenido que el modelo original bloqueaba, incluyendo material sobre temas políticamente sensibles.
+- Riesgo de alucinación: no evaluado en la información disponible; la ablación no aborda la veracidad factual.
+- El modelo conserva el sesgo de reformulación del original en algunos casos: en think mode sobre prompts sensibles a China quedan 3/40 rechazos, y el autor documenta que el original reformulaba con la narrativa oficial en lugar de rechazar.
+- La evaluación se realizó sobre GGUF Q8_0; el comportamiento en FP8 puede diferir ligeramente, aunque el autor recuantizó con redondeo estocástico para preservar la edición.
+- Licencia MIT, que permite uso comercial, pero el uso de un modelo sin rechazos en producción conlleva responsabilidad legal y reputacional sobre el contenido generado.
+- El tamaño (573,8 GB en FP8) lo hace inviable para despliegues de consumo; requiere infraestructura multi-GPU.
+- No se dispone de información sobre el contexto máximo, los idiomas soportados formalmente ni el rendimiento en benchmarks estándar.
 
 ## Enlaces
+
 - Modelo en Hugging Face: https://huggingface.co/mrfakename/Ling-3.1-flash-1019-abliterated
 - Modelo base: https://huggingface.co/inclusionAI/Ling-3.1-flash-1019
+- Discord del autor: https://discord.com/invite/foss

@@ -2,85 +2,107 @@
 
 ## Resumen
 
-WorldReward-qwen35-9b-GGUF es una cuantización en formato GGUF del modelo WorldReward-qwen35-9b, desarrollado originalmente por CodeGoat24 y cuantizado por mradermacher. El modelo base se presenta como un reward model y world model orientado a la generación de vídeo con control de cámara, según los tags publicados en su ficha de Hugging Face. Aunque la información pública sobre el modelo original es muy escasa, el nombre sugiere una arquitectura derivada de la familia Qwen 3.5 con aproximadamente 9 000 millones de parámetros.
+WorldReward-qwen35-9b es un modelo de recompensa (reward model) orientado a la evaluacion de modelos del mundo (world models) y a la generacion de video con control de camara. Lo desarrolla CodeGoat24 y esta construido sobre una base de la familia Qwen, con un total de 8.953.803.264 parametros (aproximadamente 9 mil millones). La version aqui descrita es una cuantizacion GGUF estatica publicada por mradermacher, que permite ejecutar el modelo en hardware de consumo mediante llama.cpp y herramientas compatibles.
 
-Esta versión GGUF ofrece múltiples niveles de cuantización (desde Q2_K hasta f16) y además incluye proyectores multimodales (mmproj) en Q8_0 y f16, lo que indica que el modelo base probablemente acepta entradas visuales además de texto. Es relevante porque permite ejecutar un modelo de este tipo en hardware de consumo con cuantizaciones ligeras, aunque no hay documentación oficial sobre sus capacidades exactas ni su rendimiento.
+El modelo resuelve un problema concreto: proporcionar una senal de recompensa util para evaluar y guiar trayectorias de camara y coherencia espacio-temporal en pipelines de generacion de video. Los tags de la model card (reward-model, world-model, video-generation, camera-control) indican que esta pensado como componente de evaluacion dentro de sistemas de world modeling, no como un modelo generativo de proposito general.
 
-La licencia es Apache 2.0, lo que facilita su uso comercial, y el idioma declarado es el inglés. Sin embargo, la ausencia de benchmarks y especificaciones detalladas limita la evaluación objetiva de su calidad.
+Esta ficha cubre la variante GGUF publicada por mradermacher, que ofrece 13 cuantizaciones distintas (desde Q2_K de 3,9 GB hasta f16 de 18,0 GB) mas dos ficheros mmproj para el componente multimodal. La licencia Apache 2.0 y el soporte de transformers lo hacen adecuado para integracion en pipelines de investigacion, aunque la informacion publica sobre su entrenamiento y rendimiento es muy limitada.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (nombre sugiere derivado de Qwen3.5-9B, no confirmado) |
-| Parametros totales | 8 953 803 264 (8,95 B) |
-| Parametros activos | no disponible (no se indica si es MoE) |
+| Arquitectura | no disponible (modelo base derivado de Qwen, sin detalle de capas publicada) |
+| Parametros totales | 8.953.803.264 (aproximadamente 9B) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, f16, mmproj-Q8_0, mmproj-f16 |
-| Idiomas soportados | en |
-| Licencia | apache-2.0 |
-| Formato de pesos | GGUF (con proyectores multimodales adicionales) |
+| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, f16; mas mmproj-Q8_0 y mmproj-f16 |
+| Idiomas soportados | ingles (en) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (cuantizaciones estaticas); el modelo base esta en transformers/safetensors |
+| Tamano del repo | 83,0 GB |
+| Modelo base | CodeGoat24/WorldReward-qwen35-9b |
+| Cuantizador | mradermacher |
+| Descargas | 522 |
+| Compatibilidad de endpoints | endpoints_compatible |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información pública sobre la arquitectura interna del modelo base WorldReward-qwen35-9b. Los tags de Hugging Face indican que se trata de un reward model y world model, lo que sugiere una arquitectura de transformer multimodal capaz de procesar tanto texto como imágenes o vídeo. El nombre "qwen35" apunta a una posible base en la familia Qwen 3.5, pero no hay confirmación oficial.
+No se ha publicado informacion detallada sobre la arquitectura interna en la model card proporcionada. El identificador del modelo base (WorldReward-qwen35-9b) sugiere una base de la familia Qwen, pero no se especifican el numero de capas, la dimension oculta, el mecanismo de atencion ni si emplea alguna variante como attention lineal o decodificacion especulativa. Tampoco se detalla el proceso de entrenamiento: no hay datos sobre el numero de tokens, la composicion del dataset, ni si se aplicaron tecnicas de RLHF, DPO u otras variantes de ajuste por preferencias.
 
-Tampoco se han publicado detalles sobre el proceso de entrenamiento, el volumen de datos, el número de tokens utilizados ni si se aplicaron técnicas como RLHF o DPO. La cuantización GGUF realizada por mradermacher es estática (sin imatrix) y no modifica la arquitectura, solo reduce la precisión de los pesos para facilitar la inferencia en hardware con menos memoria.
+Lo que si puede inferirse de los tags es el proposito: el modelo esta disenado como reward model para world models y generacion de video con control de camara. Esto implica que su entrenamiento probablemente se centro en pares de trayectorias o secuencias con etiquetas de calidad, pero se desconoce el volumen y la naturaleza exacta de esos datos. La presencia de ficheros mmproj en la cuantizacion GGUF confirma que el modelo original incorpora un componente multimodal (vision), necesario para procesar frames de video como entrada.
+
+La cuantizacion de mradermacher es estatica (quantize_version 2, output_tensor_quantised 1, convert_type hf) y se ofrece tambien una variante con imatrix en el repositorio i1-GGUF, que suele preservar mejor la calidad en cuantizaciones bajas.
 
 ## Capacidades
 
-- Generación de texto: presumiblemente sí, al ser un modelo de lenguaje, aunque no hay ejemplos públicos.
-- Reward model: según los tags, el modelo puede puntuar o evaluar salidas, probablemente en el contexto de generación de vídeo.
-- World model: orientado a modelar dinámicas del mundo, posiblemente para simulación o planificación.
-- Generación de vídeo con control de cámara: es la función principal declarada, pero no se especifica si genera vídeo directamente o solo evalúa/guía la generación.
-- Soporte multimodal: la presencia de ficheros mmproj indica que el modelo acepta entradas visuales (imágenes o vídeo) además de texto.
-- Capacidades multilingües: solo se declara inglés.
-- Tool calling, agentes, razonamiento avanzado: no hay información al respecto.
+- Evaluacion de recompensa: emite una puntuacion de calidad para trayectorias o secuencias, orientada a world models y generacion de video.
+- Control de camara: los tags indican capacidad para modelar y evaluar movimientos de camara en secuencias generadas.
+- Procesamiento multimodal: los ficheros mmproj permiten procesar entradas visuales (frames) junto con texto.
+- Generacion de texto conversacional: el tag conversational sugiere uso en formato de dialogo, aunque su funcion principal es la evaluacion.
+- Razonamiento sobre coherencia espacio-temporal: implicito en su rol de reward model para video, no confirmado con benchmarks.
+- Soporte multilingue: limitado a ingles segun la model card.
+- Tool calling / function calling: no disponible en la informacion proporcionada.
+- Modo thinking o razonamiento extendido: no disponible en la informacion proporcionada.
+- Capacidades de audio: no disponibles.
 
 ## Casos de uso
 
-Dada la falta de documentación, los casos de uso son hipotéticos basados en los tags y el propósito declarado:
-
-- Evaluación de calidad de generación de vídeo: como reward model, podría emplearse para puntuar la coherencia y el realismo de vídeos generados por otros modelos, integrándose en pipelines de entrenamiento con aprendizaje por refuerzo.
-- Control de cámara en generación de vídeo: el modelo podría recibir una secuencia de imágenes y devolver acciones de cámara (pan, tilt, zoom) para guiar una generación posterior.
-- Simulación de entornos para agentes: como world model, podría predecir el siguiente estado de una escena a partir de una acción, útil en robótica o videojuegos.
-- Filtrado de datos para datasets de vídeo: usando sus capacidades de reward, se podrían seleccionar automáticamente los clips más adecuados para entrenar otros modelos.
-- Investigación en modelos multimodales: su arquitectura de 9B y su licencia abierta permiten estudiar la interacción entre lenguaje y vídeo sin grandes recursos.
-- Prototipado rápido en entornos académicos: las cuantizaciones ligeras (Q4_K_M, 5.7 GB) permiten experimentar en GPUs de consumo como la RTX 3090 o 4090.
+- Evaluacion de pipelines de generacion de video: el modelo actua como juez de recompensa para puntuar la calidad de secuencias generadas, permitiendo comparar variantes de un generador o filtrar salidas antes de publicacion.
+- Control de trayectorias de camara en sintesis de video: integrado en un bucle de optimizacion, la senal de recompensa guia la seleccion de movimientos de camara coherentes con la escena.
+- Investigacion en world models: sirve como componente de evaluacion para medir la consistencia fisica y temporal de simulaciones generadas, un paso previo habitual en el desarrollo de modelos del mundo.
+- Filtrado de datasets de video sintetico: dado un lote de clips generados, el modelo puntua cada uno y permite descartar los de baja calidad antes de usarlos como datos de entrenamiento.
+- Ajuste por refuerzo de generadores de video: la senal de recompensa puede emplearse en RLHF o variantes para optimizar un generador de video con control de camara.
+- Despliegue en hardware de consumo para prototipado: con la cuantizacion Q4_K_M (5,7 GB) puede ejecutarse en una GPU consumer de 8-12 GB, lo que facilita iterar en local antes de escalar a infraestructura mayor.
+- Evaluacion comparativa de modelos de video: permite construir rankings automatizados entre distintos generadores usando una metrica aprendida en lugar de metricas heuristicas.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. No existe ninguna tabla de rendimiento (MMLU, HumanEval, GSM8K, etc.) ni comparaciones con otros modelos en la model card o en el repositorio.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-Los tamaños de archivo de las cuantizaciones permiten estimar la VRAM necesaria para cargar el modelo completo en memoria (el peso del archivo más overhead de inferencia):
-
-- Q2_K (3,9 GB): puede ejecutarse en GPUs con 6 GB de VRAM (p. ej., RTX 2060, GTX 1660 Ti) usando llama.cpp con offloading parcial.
-- Q4_K_M (5,7 GB): recomendado para GPUs de 8 GB o más (RTX 3070, RTX 4060, etc.).
-- Q5_K_M (6,6 GB): requiere al menos 8-10 GB de VRAM.
-- Q8_0 (9,6 GB): necesita 12 GB o más (RTX 3080, RTX 4070 Ti, etc.).
-- f16 (18 GB): requiere GPUs de 24 GB (RTX 3090, RTX 4090, A5000) o inferencia en CPU con mucha RAM.
-
-Los proyectores multimodales (mmproj) añaden entre 0,7 y 1,0 GB adicionales si se usan con entradas visuales.
-
-Opciones de despliegue: al ser GGUF, es compatible con llama.cpp, Ollama, LM Studio y otros motores que soporten este formato. No se menciona compatibilidad con vLLM o TGI en la documentación, aunque podrían funcionar si se convierte a safetensors.
+- VRAM estimada para inferencia segun cuantizacion (pesos + overhead de contexto y mmproj):
+  - Q2_K: aproximadamente 4-5 GB.
+  - Q3_K_S / Q3_K_M / Q3_K_L: aproximadamente 5-6 GB.
+  - IQ4_XS / Q4_K_S / Q4_K_M: aproximadamente 6-7 GB.
+  - Q5_K_S / Q5_K_M: aproximadamente 7-8 GB.
+  - Q6_K: aproximadamente 8-9 GB.
+  - Q8_0: aproximadamente 10-11 GB.
+  - f16: aproximadamente 18-19 GB.
+  - Anadir 0,7-1,0 GB si se carga el fichero mmproj para el componente multimodal.
+- GPU recomendadas: RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070, RTX 4080, RTX 4090 para cuantizaciones medias y altas; A100 o H100 para f16 y despliegues de alto throughput.
+- Cabe en GPU consumer: si, desde Q2_K hasta Q8_0 en tarjetas de 8-12 GB; f16 requiere 24 GB o mas.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio y cualquier runtime compatible con GGUF; el modelo base en transformers puede servirse con vLLM o TGI si se dispone de los pesos originales.
+- Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-No se dispone de información suficiente para establecer una comparativa fiable. No hay datos sobre modelos equivalentes en la misma categoría (reward models para vídeo con control de cámara) ni sobre el rendimiento relativo de WorldReward-qwen35-9b frente a alternativas. Se recomienda consultar la página del modelo base para futuras actualizaciones.
+No se dispone de informacion publica sobre modelos comparables de recompensa especificos para world models y control de camara en video. Como referencia de categoria (reward models de ~9B en formato GGUF), podrian considerarse alternativas genericas, pero no se han publicado datos que permitan una comparacion rigurosa de rendimiento.
+
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|
+| WorldReward-qwen35-9b (este) | 8,95B | no disponible | Apache 2.0 | GGUF, safetensors | Reward model para video y control de camara |
+| Alternativas de reward model de ~7-9B | no disponible | no disponible | no disponible | no disponible | No se dispone de datos comparativos publicados |
 
 ## Limitaciones y advertencias
 
-- La falta de documentación técnica impide conocer sesgos, limitaciones de contexto o riesgos de alucinación específicos.
-- Al ser una cuantización estática, la calidad puede degradarse respecto al modelo original, especialmente en los niveles más bajos (Q2_K, Q3_K_*).
-- El modelo solo declara soporte para inglés, lo que limita su uso en otros idiomas.
-- Aunque la licencia Apache 2.0 permite uso comercial, no hay garantías sobre el comportamiento del modelo en producción sin una evaluación previa.
-- Los proyectores multimodales son necesarios para entradas visuales; sin ellos, el modelo podría no funcionar correctamente en tareas de vídeo.
-- No se han publicado resultados de benchmarks, por lo que la calidad real es desconocida.
+- Informacion de entrenamiento ausente: no se conocen datos, tokens ni metodo de ajuste, lo que dificulta evaluar su robustez fuera de su dominio previsto.
+- Idioma: solo se declara soporte de ingles; el rendimiento en castellano no esta verificado.
+- Riesgo de alucinacion: como modelo basado en lenguaje, puede producir puntuaciones o justificaciones inconsistentes si se usa fuera de su tarea de recompensa.
+- Sesgos: no documentados por el autor; al ser un reward model, puede heredar sesgos de los datos de preferencia usados en su entrenamiento.
+- Licencia: Apache 2.0 permite uso comercial, pero conviene verificar las condiciones del modelo base CodeGoat24/WorldReward-qwen35-9b y de la familia Qwen subyacente.
+- Cuantizaciones bajas: Q2_K y Q3_K_M pueden degradar la calidad de la senal de recompensa; para evaluacion fiable se recomienda Q5_K_M o superior.
+- Contexto: se desconoce la longitud de contexto, lo que limita planificar el procesamiento de secuencias de video largas.
+- Uso en produccion: sin benchmarks publicados, no se recomienda como unico criterio de evaluacion sin validacion propia en el dominio objetivo.
 
 ## Enlaces
 
 - Repositorio GGUF: https://huggingface.co/mradermacher/WorldReward-qwen35-9b-GGUF
 - Modelo base: https://huggingface.co/CodeGoat24/WorldReward-qwen35-9b
-- Página de ayuda para GGUF de mradermacher: https://huggingface.co/mradermacher/model_requests
+- Cuantizaciones con imatrix: https://huggingface.co/mradermacher/WorldReward-qwen35-9b-i1-GGUF
+- Pagina de descargas del cuantizador: https://hf.tst.eu/model#WorldReward-qwen35-9b-GGUF
+- Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Grafico comparativo de cuantizaciones: https://www.nethype.de/huggingface_embed/quantpplgraph.png
+- Notas de Artefact2 sobre cuantizaciones: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Peticiones de modelos del cuantizador: https://huggingface.co/mradermacher/model_requests

@@ -2,115 +2,110 @@
 
 ## Resumen
 
-TinyJev-4B es un modelo de decision de tipo "system one" desarrollado por AnkitAI (repositorio de ankit-aglawe). No es un modelo generativo: recibe un estado (un ticket, un registro, una linea de log) junto con una serie de preguntas tipadas y devuelve valores tipados —una probabilidad por opcion— en lugar de texto libre. Se apoya en el backbone Qwen3-4B-Base, al que anade una cabeza de decision propia (head.safetensors), y comparte cabeza y datos de entrenamiento con su version pequena, TinyJev 0.6B.
+TinyJev-4B es un modelo de decisión tipada ("typed decisions") desarrollado por AnkitAI, afinado a partir de Qwen/Qwen3.5-4B. No es un modelo generativo al uso: recibe un texto de estado y un conjunto de preguntas con opciones predefinidas, y devuelve únicamente una probabilidad por cada opción, sin producir prosa. Está diseñado específicamente para la API de decisión de Ollama (`/v1/systemone`, disponible desde Ollama 0.35.1), lo que lo convierte en una pieza pensada para integrarse en pipelines de clasificación y enrutamiento automatizado.
 
-El modelo resuelve el problema de tomar decisiones estructuradas y calibradas dentro de pipelines de agentes sin pagar el coste de un LLM generativo. Con 4.022.468.096 parametros (4,0B), un peso de 8 GB en fp16 (4,5 GB a 8 bits) y una latencia de unos 628 ms por decision en un M1 base, ofrece una confianza calibrada (ECE 0,022) que permite fijar umbrales de automatizacion con significado estadistico.
+El modelo parte de una arquitectura transformer densa de 4.539.265.536 parámetros (4,5B), con una ventana de contexto de 16k tokens que permite procesar documentos completos —contratos, políticas, hilos de correo— en una sola petición. Según la model card, se entrenó con LoRA r8/alpha 16 sobre todas las capas lineales del modelo de lenguaje, fusionada posteriormente en los pesos finales, usando el conjunto público Tev1 de Together AI más 1.269 preguntas sobre NDAs de ContractNLI.
 
-Es relevante ahora porque propone una via alternativa al enrutamiento y juicio mediante LLM: mismo formato de peticion (System One), API en Python, servidor HTTP local, endpoints compatibles y licencia MIT, con una tasa de acierto declarada de 474 sobre 500 decisiones nunca vistas, muy cerca de modelos en la nube mucho mas grandes.
+Su relevancia actual radica en que cubre un nicho poco atendido: modelos pequeños, desplegables en local vía Ollama, especializados en clasificación con opciones cerradas y contexto largo. Frente a alternativas como Tev1 4B (ventana de 2k) o Nimble 9B (8k), TinyJev 4B ofrece 16k de contexto con un tamaño de 4,5B, lo que lo hace viable en hardware de consumo. La licencia es Apache 2.0 y los pesos están disponibles en safetensors y GGUF.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Backbone transformer Qwen3-4B-Base mas cabeza de decision (decision head) propia, inferencia en un unico forward pass |
-| Parametros totales | 4.022.468.096 (4,0B) |
-| Longitud de contexto | no disponible en la informacion proporcionada |
-| Tipos de cuantizacion | fp16 (por defecto) y 8 bits (`quantize=8`, misma ponderacion en la mitad de memoria); sin datos de GGUF ni de otros formatos |
-| Idiomas soportados | en (ingles) |
-| Licencia | MIT |
-| Formato de pesos | safetensors (disposicion estandar de transformers; la cabeza va en head.safetensors) |
+| Arquitectura | Transformer denso (base Qwen3.5-4B), afinado con LoRA fusionada |
+| Parametros totales | 4.539.265.536 (4,5B) |
+| Parametros activos | No aplica (no es MoE) |
+| Longitud de contexto | 16.384 tokens (16k) |
+| Tipos de cuantizacion | Q8_0 (4,5 GB) y Q4_K_M (2,7 GB) publicados; GGUF disponible |
+| Idiomas soportados | Ingles (`en`) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | safetensors (transformers) y GGUF (Ollama) |
 
 ## Arquitectura y entrenamiento
 
-TinyJev-4B parte del backbone Qwen3-4B-Base y le superpone una cabeza de decision que transforma los estados ocultos en respuestas calibradas. El modelo no decodifica texto: recibe un estado y un conjunto de preguntas tipadas y puntua las opciones ofrecidas, devolviendo una probabilidad para cada una. Admite tres tipos de pregunta: `Choice` (elegir una opcion de una lista, con probabilidad por opcion), `Noul` (medir si una afirmacion es verdadera) y `Score` (situar un estado en una escala ordenada).
+TinyJev-4B se construye sobre Qwen3.5-4B, un transformer denso de 4,5B parámetros. El ajuste se realizó con LoRA de rango 8 y alpha 16 aplicada a todas las capas lineales del modelo de lenguaje, y los adaptadores se fusionaron en los pesos finales, de modo que el artefacto distribuido no requiere cargar LoRA por separado. La cabeza de salida no genera texto libre: Ollama puntúa cada pregunta con un único forward pass y aplica softmax sobre las letras de las opciones, de manera que las probabilidades devueltas son las propias del modelo.
 
-Comparte cabeza y datos de entrenamiento con TinyJev 0.6B; el conjunto de datos citado es jaredpalmer/kev-suites. La evaluacion se realiza sobre 500 casos nunca vistos procedentes de 25 dominios (suite OpenDecision, Original Choice 500), con los mismos 500 inputs para todos los modelos comparados. La innovacion principal es la calibracion de la confianza (ECE 0,022; Brier 0,071), que permite usar umbrales de confianza como criterio operativo de automatizacion.
+El entrenamiento usó el conjunto público Tev1 de Together AI (37.840 decisiones, licencia MIT), re-renderizado byte a byte con el prompt exacto que construye Ollama, más 1.269 preguntas de documentos largos procedentes de NDAs del split de entrenamiento de ContractNLI (mediana de 2,3k tokens, máximo de 11,8k). La función de pérdida se aplicó sobre la letra de respuesta única, con learning rate 5e-5, schedule coseno, una época y una única A100 durante aproximadamente dos horas. Se excluyeron explícitamente todos los ítems de JevBench y OpenDecision, y una comprobación de 13-gramas contra ambos conjuntos no detectó solapamiento.
 
 ## Capacidades
 
-- Toma de decisiones tipada: devuelve valores estructurados (probabilidades) en lugar de texto generado, por lo que no puede responder con nada distinto de las opciones ofrecidas.
-- `Choice`: selecciona una opcion de una lista y asigna una probabilidad a cada alternativa.
-- `Noul`: evalua si una afirmacion es verdadera (comprobaciones si/no en formato de declaracion).
-- `Score`: situa un estado sobre una escala ordenada.
-- Confianza calibrada (ECE 0,022), apta para fijar umbrales de automatizacion (por ejemplo, confianza >= 0,85).
-- Integracion como API de Python (`tinyjev.load(...)`, `agent.predict(...)`), servidor HTTP local y endpoint compatible con System One (`POST /v1/systemone`).
-- Soporte de ejecucion via MLX (Apple Silicon) y via Torch (resto de plataformas).
-- Capacidades multilingues: limitadas al ingles (unico idioma declarado).
-- No se documentan tool calling generativo, razonamiento multi-paso ni capacidades de vision o audio, dado que el modelo no genera texto.
+- Clasificación con opciones cerradas: devuelve una probabilidad por cada opción ofrecida en la pregunta, sin generar texto libre.
+- Tipos de pregunta soportados: `choice` (selección entre criterios con descripción) y `noul` (sí/no), según el ejemplo de la model card.
+- Procesamiento de documentos largos: ventana de 16k tokens que permite introducir contratos, políticas o hilos de correo completos en una sola petición.
+- Enrutamiento y triaje: asignación de equipos o categorías según criterios definidos por el desarrollador.
+- Detección de contradicciones en contratos: distingue entre "lo dice", "dice lo contrario" y "no se pronuncia" sobre cláusulas concretas.
+- Integración con Ollama: endpoint `/v1/systemone` y paquete Python `tinyjev` (`tinyjev.load("TinyJev-4B").predict({...})`).
+- Soporte de despliegue local sin conexión: descarga directa de los GGUF y el `Modelfile` del repositorio.
+- Capacidad multimodal declarada en los tags (`image-text-to-text`), aunque la model card no documenta uso de visión ni entrenamiento con imágenes.
+- No se documenta soporte de tool calling, agentes multi-paso ni modo de razonamiento extendido.
 
 ## Casos de uso
 
-- Enrutamiento de tickets de soporte: con una pregunta `Choice` se asigna el ticket al equipo adecuado (devoluciones, envios, facturacion) a partir del texto del cliente, devolviendo una probabilidad por equipo que permite automatizar solo los casos de alta confianza.
-- Triaje y clasificacion de logs: dado un registro o linea de log como estado, se puntua su categoria o severidad con probabilidades, integrable en pipelines de observabilidad.
-- Compuerta de escalado automatico: usando el umbral de confianza (gate a 0,85 cubre el 87% de la cola con un 99,1% de acierto), el modelo decide por si mismo la mayoria de casos y deriva el resto a una persona o a un modelo mayor.
-- Verificacion de afirmaciones sobre documentacion: con preguntas `Noul` se comprueba si un texto soporta o no una afirmacion concreta, util en validacion de respuestas y control de calidad de contenidos.
-- Puntuacion en escalas ordenadas: mediante `Score` se situa un estado (por ejemplo, urgencia de un caso o calidad de una respuesta) en una escala definida por el usuario.
-- Agentes autonomos y orquestacion: al exponer un endpoint compatible con System One, el modelo encaja como componente de juicio rapido dentro de harness de agentes, wrappers de navegador y SDK existentes en el ecosistema.
-- Procesamiento por lotes en local: con licencia MIT y pesos de 4,5 GB a 8 bits, permite ejecutar clasificacion y decisiones masivas sin dependencia de la nube ni coste por token.
+- Triaje de tickets de soporte: el modelo recibe el texto del ticket y una pregunta `choice` con criterios (devoluciones, envíos, facturación) y devuelve la probabilidad de cada equipo. El ejemplo de la model card lo ilustra con un caso de zapatos tardíos y cargos duplicados. Es adecuado porque elimina la generación de prosa y reduce la latencia a un forward pass por pregunta.
+- Enrutamiento de correo entrante: clasificación de hilos de correo completos en categorías operativas gracias a la ventana de 16k, que permite incluir el hilo entero sin truncar.
+- Análisis de contratos y NDAs: verificación de si un contrato dice, contradice o guarda silencio sobre cláusulas concretas. En la evaluación con 60 NDAs no vistas, TinyJev alcanza 0,806 frente a 0,406 de Tev1 tal como se distribuye en Ollama, precisamente por su ventana mayor.
+- Moderación y escalado a humano: pregunta `noul` para decidir si un caso requiere atención humana urgente, integrada en un flujo donde el modelo solo puntúa y el código decide el umbral.
+- Automatización de formularios y encuestas: asignación de respuestas abiertas a categorías predefinidas con probabilidades calibradas, útil para agregación estadística posterior.
+- Control de agentes en entornos simulados: la demo de Jev Grand Prix muestra el modelo eligiendo la trazada y los pedales en cada decisión, con el código encargado de la conducción. Es un patrón aplicable a cualquier bucle donde el modelo solo selecciona entre acciones discretas.
+- Filtrado previo en pipelines RAG: decidir si un documento recuperado responde a una pregunta concreta antes de invocar un modelo generativo mayor, ahorrando coste y latencia.
 
 ## Benchmarks y rendimiento
 
-Resultados sobre OpenDecision Original Choice 500 (25 dominios no incluidos en entrenamiento, mismos 500 inputs para todos los modelos):
+Resultados medidos a través de `/v1/systemone` de Ollama 0.35.1, con los mismos inputs y pesos Q8_0:
 
-| Modelo | Correctas / 500 | Gestionadas en solitario (confianza >= 0,85) |
-|---|---:|---|
-| Claude Opus 5.5 (nube, probabilidades autoinformadas) | 496 | 477 al 100,0% |
-| TinyJev-4B (fp16) | 474 | 437 al 99,1% |
-| TinyJev-4B con `quantize=8` | 473 | 437 al 99,1% |
-| Kev-0.8B (logits crudos) | 463 | 186 al 100,0% |
-| TinyJev-0.6B | 440 | 296 al 98,0% |
-| Qwen3-0.6B sin cabeza (logits de letras) | 354 | no disponible |
+| Modelo | JevBench publico (231) | OpenDecision 500 | Contratos: 60 NDAs no vistas (180 preguntas) |
+|---|---:|---:|---:|
+| TinyJev 4B v2 | 0,766 | 490 | 0,806 |
+| Tev1 4B, tal como se distribuye (ventana 2k) | 0,688 | 487 | 0,406 |
+| Tev1 4B, ventana ampliada a 16k | 0,762 | 487 | 0,728 |
+| Qwen3.5-4B sin afinado | 0,693 | 479 | no disponible |
 
-Metricas adicionales de TinyJev-4B: 353/375 en dev, 121/125 en holdout, intervalo de confianza del 95% 0,928–0,966, ECE 0,022, Brier 0,071, cobertura al 2% de error del 92%, y 0,762 en transfer-v4 dev de Kev (frente a 0,625 del 0.6B y 0,790 de Kev-4B, un fine-tune completo).
+En decisiones cortas, TinyJev v2 está a la par de Tev1 con ventana de 16k: 177 frente a 176 de los 231 ítems de JevBench, y 490 frente a 487 en OpenDecision. La ventaja aparece en documentos largos. En los 19 ítems de política larga de JevBench, Tev1 sigue ganando por 8 a 6. En la columna de contratos, Tev1 tal como se distribuye rechaza 26 de los 60 NDAs por exceder su ventana, y esas preguntas cuentan como fallo; el 46% de las preguntas son contradicciones ("dice lo contrario"), planteadas primero.
 
-Comparativa interna de la familia (fp16, latencia en M1 base de 16 GB via MLX, un forward pass por caso):
-
-| Modelo | Parametros | Peso | OD-500 | Gate 0,85 | ms/caso |
-|---|---:|---:|---:|---|---:|
-| TinyJev 0.6B | 596M | 1,2 GB | 440 (88,0%) | 59% al 98,0% | 85 |
-| TinyJev 4B | 4,0B | 8,0 GB | 474 (94,8%) | 87% al 99,1% | 628 |
+Debilidad conocida y medida: razonamiento multi-paso con fechas y números. Obtiene 1 de los 15 ítems temporales difíciles de JevBench, igual que Tev1.
 
 ## Requisitos de hardware
 
-- Memoria en fp16: aproximadamente 8 GB de pesos (dato declarado por el autor), mas el overhead del runtime.
-- Memoria a 8 bits (`quantize=8`): aproximadamente 4,5 GB.
-- Mediciones de referencia del autor: latencia de 628 ms por decision en un M1 base de 16 GB (fp16) y de 845 ms con `quantize=8`.
-- Viabilidad en GPU de consumo: con 8 GB en fp16 y 4,5 GB a 8 bits, es estimable que quepa en GPUs de consumo con 12 GB o mas de VRAM (por ejemplo, RTX 3060 12 GB, RTX 4070 Ti, RTX 4090), aunque el autor solo reporta mediciones en Apple M1 base; no hay cifras oficiales para GPU dedicadas.
-- Opciones de despliegue documentadas: API de Python de tinyjev, servidor HTTP local y endpoint compatible con System One (`tinyjev serve`), con extras de instalacion `tinyjev[mlx]` (Apple Silicon) y `tinyjev[torch]` (resto de plataformas). Las etiquetas del repositorio incluyen text-embeddings-inference y endpoints_compatible.
-- Soporte de vLLM, llama.cpp, Ollama o TGI: no disponible en la informacion proporcionada.
-- Throughput: no disponible; solo se documenta latencia por caso en un unico equipo de referencia.
+- VRAM estimada: aproximadamente 4,5 GB con cuantización Q8_0 y 2,7 GB con Q4_K_M, más el overhead del contexto (hasta 16k tokens).
+- GPU recomendadas: cualquier GPU con 8 GB o más de VRAM para Q8_0 con contexto largo; A100 o H100 para servir varias peticiones concurrentes.
+- GPU de consumo: cabe en RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070, RTX 4090 y en Apple Silicon con memoria unificada suficiente.
+- Despliegue: Ollama 0.35.1 o superior mediante `/v1/systemone`, o `ollama create tinyjev -f Modelfile` con los GGUF del repositorio. El paquete Python `tinyjev` actúa como cliente del Ollama local. No se documenta soporte para vLLM, TGI o llama.cpp directo.
+- Latencia: aproximadamente 1,8 s por pregunta con un prompt de 700 tokens en un M1 Mac mini a Q8_0. La demo de Jev Grand Prix reporta unos 5 s por decisión en el mismo hardware.
+- Throughput: no disponible.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Enfoque | OD-500 | Confianza calibrada | Licencia / disponibilidad |
-|---|---:|---|---:|---|---|
-| TinyJev-4B | 4,0B | Decision tipada, sin generacion | 474 | ECE 0,022 | MIT, pesos abiertos en Hugging Face |
-| TinyJev-0.6B | 596M | Decision tipada, sin generacion | 440 | ECE 0,071 | MIT, pesos abiertos en Hugging Face |
-| Kev-0.8B | 0,8B | Decision a partir de logits crudos | 463 | no disponible (gestiona 186 al 100,0%) | no disponible |
-| Claude Opus 5.5 | no disponible | LLM generativo en la nube con probabilidades autoinformadas | 496 | no disponible | Propietario, servicio en la nube |
-| Qwen3-0.6B sin cabeza | 0,6B | Backbone leido mediante logits de letras | 354 | no disponible | no disponible |
+| Modelo | Parametros | Contexto | JevBench (231) | OpenDecision 500 | Licencia | Disponibilidad |
+|---|---|---:|---:|---:|---|---|
+| TinyJev 4B v2 | 4,5B | 16k | 0,766 | 490 | Apache 2.0 | Hugging Face, Ollama (`parable/tinyjev`) |
+| Tev1 4B | 4B | 2k (16k si se amplía) | 0,688 (0,762 a 16k) | 487 | no disponible en la información | Ollama |
+| Tev1 0.8B | 0,8B | 2k | no disponible | no disponible | no disponible en la información | Ollama |
+| Nimble 9B | 9B | 8k | no disponible | no disponible | no disponible en la información | Ollama |
+| Qwen3.5-4B sin afinado | 4,5B | no disponible | 0,693 | 479 | no disponible en la información | Hugging Face |
+
+TinyJev 4B se posiciona como la opción de mayor contexto entre los modelos de decisión de lanzamiento de Ollama, con un tamaño intermedio entre Tev1 0.8B y Nimble 9B. Su ventaja medible se concentra en documentos largos; en decisiones cortas empata con Tev1 ampliado a 16k.
 
 ## Limitaciones y advertencias
 
-- No genera texto: solo puntua las opciones proporcionadas, por lo que no sirve como modelo de proposito general ni para tareas generativas.
-- Debilidad medida en comprobaciones si/no en formato de declaracion: obtiene 18 sobre 21 en una lista de verificacion sobre un correo de soporte (el 0.6B obtiene 14) y un 81% en negativos dificiles (afirmaciones sobre un tema que el texto menciona pero no respalda). El autor senala que los datos de entrenamiento para ese caso son el siguiente experimento.
-- Idioma: unicamente ingles declarado, sin soporte multilingue documentado.
-- Riesgo de error en la decision: aunque no alucina texto, puede asignar una probabilidad incorrecta o una etiqueta erronea; conviene usar el umbral de confianza para derivar los casos dudosos.
-- Cobertura parcial: incluso con gate a 0,85, un 13% de la cola no se responde en solitario y requiere a una persona u otro modelo.
-- Licencia MIT declarada en la model card; no se detalla en la informacion proporcionada la interaccion con la licencia del backbone Qwen3-4B-Base, dato a revisar antes de un uso comercial en produccion.
-- Contexto maximo no disponible: la informacion proporcionada no especifica la longitud de contexto efectiva del modelo.
-- Repositorio con 0 descargas y 0 likes, creado el 25 de septiembre de 2026: se trata de una publicacion muy reciente y sin adopcion registrada, por lo que la validacion externa es limitada.
-- Las cifras de latencia proceden de un unico equipo de referencia (M1 base de 16 GB) y no deben extrapolarse directamente a otros entornos.
+- Solo inglés: la model card declara únicamente `en`; no hay evidencia de rendimiento en castellano u otros idiomas.
+- Razonamiento temporal y numérico débil: 1 de 15 ítems temporales difíciles de JevBench, el mismo resultado que Tev1.
+- No genera texto: cualquier caso de uso que requiera explicaciones, resúmenes o prosa necesita otro modelo.
+- Dependencia de Ollama 0.35.1 o superior: el formato de prompt está entrenado byte a byte para esa API, por lo que usarlo fuera de ella puede degradar el rendimiento.
+- Riesgo de calibración: las probabilidades dependen del softmax sobre letras de opción; con muchas opciones o criterios ambiguos la distribución puede volverse difusa.
+- Sesgos: no se documentan evaluaciones de sesgo; al derivar de Qwen3.5-4B y de datos de decisiones en inglés, puede heredar sesgos del modelo base y del conjunto Tev1.
+- Alucinación: al no generar texto libre, el riesgo de invención es bajo, pero puede asignar alta probabilidad a una opción incorrecta en documentos ambiguos o con cláusulas contradictorias.
+- Licencia Apache 2.0: permite uso comercial, pero conviene verificar las licencias del modelo base Qwen3.5-4B y del conjunto de datos Tev1 (MIT) en la cadena de derivación.
+- El tag `image-text-to-text` no está respaldado por documentación de entrenamiento multimodal; no debe asumirse capacidad de visión en producción.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/AnkitAI/TinyJev-4B
-- TinyJev 0.6B en Hugging Face: https://huggingface.co/AnkitAI/TinyJev-0.6B
 - Repositorio GitHub: https://github.com/ankit-aglawe/tinyjev
-- Paquete en PyPI: https://pypi.org/project/tinyjev/
-- Benchmarks OpenDecision: https://github.com/ankit-aglawe/tinyjev/tree/main/benchmarks/opendecision
-- Ejemplos: https://github.com/ankit-aglawe/tinyjev/tree/main/examples
-- Entrada de Wikipedia sobre Jev: https://en.wikipedia.org/wiki/Jev_(AI_model)
-- Articulo de 4SAPI sobre Jev AI: https://blog.4sapi.com/blog/jev-ai-tiny-judgment-model
-- Repositorio Lucyfer1718/tinyjev-v0: https://huggingface.co/Lucyfer1718/tinyjev-v0
-- TinyJev 0.6B en Hugging Face (referencia adicional): https://huggingface.co/AnkitAI/tinyjev-0.6b
+- Paquete PyPI: https://pypi.org/project/tinyjev/
+- Modelo en Ollama: https://ollama.com/parable/tinyjev
+- Conjunto de entrenamiento Tev1: https://github.com/togethercomputer/tev1
+- JevBench: https://github.com/fstandhartinger/jevbench
+- Benchmark OpenDecision: https://github.com/ankit-aglawe/tinyjev/tree/main/benchmarks/opendecision
+- ContractNLI: https://stanfordnlp.github.io/contract-nli/
+- Demo Jev Grand Prix: https://github.com/enoyola/jev-grand-prix
+- Modelo base Qwen3.5-4B: https://huggingface.co/Qwen/Qwen3.5-4B

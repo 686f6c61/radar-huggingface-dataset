@@ -5,7 +5,7 @@
   "author": "3MPER0RR",
   "url": "https://huggingface.co/3MPER0RR/Qwen3.8-27B-3MPER0RR-abliterated-BF16-DeepSeek-V4-Flash",
   "created_at": "2026-11-21T12:28:03.000Z",
-  "updated_at": "2026-11-22T00:42:37.000Z",
+  "updated_at": "2026-11-22T11:04:55.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -21,8 +21,8 @@
     "distill",
     "text-generation",
     "dataset:Jackrong/DeepSeek-V4-Distill-8000x",
-    "base_model:3MPER0RR/Qwen3.8-27B-3MPER0RR-abliterated",
-    "base_model:finetune:3MPER0RR/Qwen3.8-27B-3MPER0RR-abliterated",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:finetune:Qwen/Qwen3.8-27B",
     "license:apache-2.0",
     "region:us"
   ],
@@ -34,7 +34,7 @@
   "storage_bytes": 54733596093,
   "storage_human": "54.7 GB",
   "context_length": null,
-  "base_model": "3MPER0RR/Qwen3.8-27B-3MPER0RR-abliterated",
+  "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "safetensors"
   ],

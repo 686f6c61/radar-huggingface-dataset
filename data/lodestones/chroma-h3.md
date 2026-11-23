@@ -2,47 +2,56 @@
 
 ## Resumen
 
-Chroma-h3 es un ajuste fino (fine-tune) de generación de imágenes ("stills") sobre MiniMax-H3, el modelo de difusión de vídeo de MiniMaxAI. Su creador, el usuario lodestones, ha tomado el DiT (Diffusion Transformer) de H3 y lo ha ejecutado con una única trama latente, entrenándolo sobre pares texto-imagen para convertir un modelo pensado originalmente para vídeo en un generador de imágenes fijas. El problema que resuelve es doble: aprovechar la arquitectura de vídeo de H3 para imágenes de alta calidad y, al mismo tiempo, mantener la compatibilidad total con el pipeline base, de modo que el mismo modelo sirva tanto para imágenes como para vídeo.
+chroma-h3 es un ajuste fino (fine-tune) de MiniMaxAI/MiniMax-H3 orientado a la generacion de imagenes fijas ("stills"). Lo desarrolla el usuario lodestones y parte del transformer DiT de video de H3, que se ejecuta con un unico frame latente y se entrena sobre pares texto-imagen. El resultado es un modelo de text-to-image de gran tamano que reutiliza toda la infraestructura del pipeline original de H3, incluido su codificador de texto Qwen3-VL y sus VAE de video y audio.
 
-El repositorio se distribuye en dos formatos: la versión "root", que es el pipeline completo de H3 en diffusers con el fine-tune ya fusionado en el transformer en bf16 (33,12 mil millones de parámetros en safetensors, 152,4 GB de tamaño de repo), y dos LoRA: una con el fine-tune puro (fp32, rank 256) y otra experimental de pocos pasos (few-step) destilada con DMD, que permite muestrear en 4 u 8 pasos con CFG 1. Requiere el codificador de texto Qwen3-VL y los VAE de vídeo/audio del modelo base, que permanecen sin cambios. Es relevante porque demuestra un flujo de trabajo eficiente de transferencia vídeo→imagen mediante LoRA sobre los FFN del transformer, sin tocar atención ni embeddings.
+El modelo se distribuye de tres formas complementarias: el pipeline completo de diffusers con el fine-tune fusionado en `transformer/` (bf16), una LoRA de rango 256 sobre el transformer base de H3, y dos variantes destiladas para generacion en pocos pasos (DMD). Con 33.122.992.896 parametros y un repositorio de 170,1 GB, es un modelo de escala grande pensado para entornos con GPU de datacenter, no para consumo.
+
+Su relevancia radica en que demuestra como adaptar un modelo de video a imagen fija manteniendo coherencia con el ecosistema diffusers, y en que ofrece rutas de inferencia rapida (4 u 8 pasos con CFG 1) mediante destilacion DMD, lo que reduce drasticamente el coste de muestreo frente a los ~30 pasos Euler con CFG 3 que requiere el fine-tune sin destilar.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | DiT (Diffusion Transformer) de vídeo (MiniMax-H3) usado con una única trama latente |
-| Parametros totales | 33.122.992.896 (según safetensors del repo) |
-| Parametros activos | no disponible (no consta que sea MoE; el fine-tune es un LoRA sobre el transformer completo) |
+| Arquitectura | DiT (Diffusion Transformer) de video de MiniMax-H3, ejecutado con 1 frame latente para imagen |
+| Parametros totales | 33.122.992.896 |
+| Parametros activos | no disponible (no consta que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | bf16 (versión fusionada), fp32 (LoRAs) |
-| Idiomas soportados | no disponible (el codificador de texto es Qwen3-VL; idiomas concretos no especificados) |
-| Licencia | minimax-h3-community-license-agreement (other) |
-| Formato de pesos | safetensors (diffusers) |
+| Tipos de cuantizacion | no disponible (pesos publicados en bf16 y LoRA en fp32) |
+| Idiomas soportados | no disponible |
+| Licencia | minimax-h3-community-license-agreement |
+| Formato de pesos | safetensors (diffusers), LoRA safetensors |
+| Modelo base | MiniMaxAI/MiniMax-H3 |
+| Tamano del repositorio | 170,1 GB |
+| Resolucion de generacion | ~1 MP (buckets de aspecto alrededor de 1024^2) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es el DiT de MiniMax-H3, un transformer de difusión orientado a vídeo que incluye un token-refiner y VAEs de vídeo y audio. Chroma-h3 lo reutiliza en modo imagen: se genera una única trama latente a aproximadamente 1 megapíxel, y la porción de AdaLN correspondiente al audio se omite durante el entrenamiento (el modelo fusionado la conserva intacta). El fine-tune se implementó como un LoRA de rank 256 y alpha 256 aplicado exclusivamente a las capas lineales feed-forward de todos los bloques del transformer y de los bloques del token-refiner; la atención, AdaLN y los embeddings permanecen congelados. El regex de objetivos es `(transformer_blocks|token_refiner\.refiner_blocks)\.\d+\.ff\.net\.(0\.proj|2)`.
+El modelo hereda la arquitectura del transformer de difusion de MiniMax-H3, un DiT disenado originalmente para generacion de video y audio. chroma-h3 lo ejecuta con un unico frame latente, de modo que la tarea efectiva pasa a ser text-to-image. El pipeline completo conserva sin cambios el codificador de texto Qwen3-VL, el tokenizer, el processor, los VAE de video y audio y el scheduler; solo se modifica el transformer, en el que se fusiona el fine-tune en bf16.
 
-El entrenamiento consistió en 13.605 actualizaciones con un batch global de 48 imágenes (una pasada completa sobre el dataset), con learning rate 0,0001 y flow matching con timestep shift 3,0. Se usaron buckets de relación de aspecto en torno a 1024² y un dropout de prompt vacío del 10%. Los captions mezclan de forma equilibrada etiquetas estilo booru, resúmenes cortos y estilo Midjourney, captions largos y scene graphs. Adicionalmente, existe una versión experimental de pocos pasos: una LoRA de rank 384 (FFN de bloques), 128 (atención de bloques, solo student) y 256 (FFN del token-refiner) que contiene el fine-tune más un student destilado mediante DMD (data-space) a CFG 3, entrenado 8.700 de 12.000 pasos. Esta versión permite muestrear con Euler plano a CFG 1 en 4 u 8 pasos, y aunque se entrenó solo con imágenes, transfiere a vídeo con movimiento coherente.
+El entrenamiento se realizo como LoRA de rango 256 y alpha 256 aplicada exclusivamente a las capas feed-forward lineales de todos los bloques del transformer y de los bloques del token-refiner; atencion, AdaLN y embeddings quedaron intactos. Se ejecutaron 13.605 actualizaciones con batch global de 48 imagenes (una pasada sobre los datos), learning rate 0,0001, flow matching con shift de timestep 3,0, buckets de relacion de aspecto alrededor de 1024^2 y 10% de dropout de prompt vacio. Durante el entrenamiento se elimina la porcion de AdaLN de audio (modo imagen), aunque el modelo fusionado la conserva sin cambios. Las captiones mezclan de forma equilibrada tags estilo booru, resumenes cortos y estilo Midjourney, captiones largas y scene graphs.
+
+Sobre este fine-tune se destilaron dos variantes DMD (12000 actualizaciones, CFG 3, solo stills): un estudiante de espacio de datos de rango 128 para aplicar sobre el transformer fusionado, y una LoRA unica de rango 384 en las FFN de bloque (fine-tune + estudiante), 128 en atencion de bloque y 256 en las FFN del token-refiner, pensada para el transformer base sin fusionar.
 
 ## Capacidades
 
-- Generacion de texto a imagen (imágenes fijas de ~1 MP) a partir de prompts de texto, aprovechando el codificador multimodal Qwen3-VL.
-- Compatibilidad con generación de vídeo: al derivar del pipeline completo de H3, la LoRA few-step transfiere a vídeo con 4 u 8 pasos y movimiento coherente.
-- Dos modos de inferencia: muestreo de calidad con CFG ~3 y ~30 pasos Euler (shift 3), o muestreo rápido few-step con CFG 1 y 4/8 pasos mediante la LoRA DMD.
-- Uso flexible como modelo fusionado o como LoRA sobre el transformer base de H3.
-- Entrenamiento con captions heterogéneos (booru tags, captions largos, scene graphs), lo que debería dar tolerancia a distintos estilos de prompt.
-- No hay soporte de tool calling, agentes ni razonamiento: es un modelo de difusión, no un LLM.
+- Generacion de imagenes a partir de texto (text-to-image) a ~1 MP con buckets de relacion de aspecto alrededor de 1024^2.
+- Generacion de un unico frame latente a partir de la maquinaria de video DiT de H3.
+- Inferencia de alta calidad con CFG ~3, prompt negativo vacio y ~30 pasos Euler con shift 3.
+- Inferencia rapida mediante las LoRA DMD: Euler simple con CFG 1 en 4 u 8 pasos (shift 3 para stills, shift 12 para video).
+- Transferencia parcial a video: la LoRA `lora_vspace_dmd8` conserva coherencia de movimiento en 4 u 8 pasos segun la model card.
+- Compatibilidad con el ecosistema diffusers mediante `MiniMaxH3ModularPipeline`.
+- Soporte de captiones heterogeneas (tags booru, resumenes, captiones largas, scene graphs) gracias a la composicion del dataset de entrenamiento.
+- No consta soporte de tool calling, agentes ni modos de razonamiento; es un modelo generativo de imagen.
 
 ## Casos de uso
 
-- Generacion de ilustraciones a partir de texto: el modelo produce imágenes de ~1 MP con CFG ~3 y 30 pasos, adecuado para arte conceptual y assets visuales.
-- Prototipado rapido de imagenes: la LoRA few-step (DMD) genera en 4 u 8 pasos con CFG 1, ideal para explorar composiciones antes de un pase de calidad.
-- Generacion hibrida imagen-video: al compartir el pipeline de H3, se puede alternar entre stills y vídeo en la misma infraestructura, con la LoRA few-step transfiriendo a vídeo.
-- Integracion en diffusers: el pipeline `MiniMaxH3ModularPipeline` permite incorporar el modelo en aplicaciones Python existentes basadas en la librería diffusers.
-- Ajuste fino adicional: la disponibilidad del LoRA separado (rank 256 sobre los FFN) sirve como punto de partida para community fine-tunes sobre el mismo base.
-- Investigacion en destilacion de difusion: el componente DMD (student a CFG 3, Euler plano) es un caso de estudio práctico de destilación de pocos pasos sobre DiT de vídeo.
-- Estilizacion con captions tipo booru: el mix de captions de entrenamiento lo hace adecuado para flujos de trabajo con etiquetado por tags habitual en comunidades de generación de imágenes.
+- Generacion de ilustraciones para prototipado de producto: el modelo produce imagenes de ~1 MP a partir de prompts descriptivos, adecuado para iterar conceptos visuales antes de encargar arte final.
+- Creacion de assets para videojuegos y entornos 3D: los buckets de aspecto alrededor de 1024^2 permiten generar texturas y conceptos en relaciones de aspecto variadas sin recorte.
+- Generacion por lotes en pipelines automatizados: con la LoRA DMD de 4 u 8 pasos y CFG 1 se reduce el coste por imagen, lo que facilita lotes grandes en servidores con GPU de datacenter.
+- Exploracion artistica con captiones estilo booru o Midjourney: el entrenamiento mixto de captiones permite usar tanto tags cortos como descripciones largas y scene graphs.
+- Generacion de frames base para produccion de video: al compartir el pipeline de H3, el modelo fusionado sirve como punto de partida para flujos que luego emplean la variante de video.
+- Investigacion sobre adaptacion de modelos de video a imagen: el repositorio documenta el proceso LoRA, la fusion y la destilacion DMD, util para reproducir o extender la tecnica.
+- Fine-tuning posterior sobre dominios concretos: la LoRA de rango 256 sobre las FFN ofrece un punto de partida ligero frente a reentrenar el transformer completo.
 
 ## Benchmarks y rendimiento
 
@@ -50,37 +59,34 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: con 33,12 mil millones de parámetros en bf16 solo para el transformer, se necesitan más de 62 GB solo para los pesos; a esto hay que sumar el codificador de texto Qwen3-VL y los VAEs de vídeo/audio. Una estimación realista de inferencia es de 80 GB o más, no disponible con precisión en la documentación.
-- GPU recomendadas: A100 u H100 de 80 GB, o equivalentes con suficiente VRAM. No cabe en GPUs de consumo estándar (RTX 4090 de 24 GB es insuficiente para el modelo fusionado completo).
-- Opciones de despliegue: librería diffusers (pipeline `MiniMaxH3ModularPipeline`). No consta soporte específico para llama.cpp, Ollama, vLLM o TGI, que son herramientas para LLMs y no aplican directamente a un pipeline de difusión.
-- Latencia y throughput: con la LoRA few-step se consiguen 4 u 8 pasos de muestreo; con el modelo fusionado, ~30 pasos Euler a shift 3. Tiempos concretos no disponibles.
-- Offloading: dado el tamaño del repo (152,4 GB), probablemente sea necesario cargar componentes secuencialmente o usar offloading a CPU/disco; no hay instrucciones publicadas al respecto.
+- VRAM estimada para inferencia: no disponible de forma explicita; con 33.122.992.896 parametros en bf16, solo los pesos del transformer superan los 60 GB, por lo que la inferencia completa no cabe en GPU de consumo.
+- GPU recomendadas: no disponibles en la informacion; por el volumen de pesos, el pipeline fusionado requiere GPU de datacenter (A100, H100 o superiores) o descarga por capas.
+- GPU de consumo: no cabe el pipeline completo; las LoRA DMD por si solas no reducen el tamano del transformer base.
+- Opciones de despliegue: diffusers con `MiniMaxH3ModularPipeline`; no se documentan integraciones con vLLM, llama.cpp, Ollama ni TGI (no aplicables a un modelo de difusion).
+- Latencia y throughput: no disponibles; la model card solo indica el numero de pasos de muestreo (30 pasos con CFG 3 frente a 4 u 8 pasos con CFG 1 en las variantes DMD).
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Modalidad | Cuantizacion | Licencia | Notas |
-|---|---|---|---|---|---|
-| chroma-h3 (este) | 33,12 B (transformer, bf16) | Texto a imagen (y vídeo vía base H3) | bf16 / fp32 (LoRA) | minimax-h3-community-license-agreement | Fine-tune LoRA de vídeo a imagen, opción few-step DMD |
-| MiniMaxAI/MiniMax-H3 (base) | no disponible | Texto a vídeo e imagen | no disponible | minimax-h3-community-license-agreement | Modelo base del que deriva; pipeline completo sin modificar |
-| FLUX.1-dev | 12 B | Texto a imagen | bf16 | Licencia no comercial (Black Forest Labs) | DiT de referencia en texto a imagen, sin modo vídeo |
-| Stable Diffusion 3.5 Large | 8 B | Texto a imagen | bf16 | Stability AI Community License | DiT con MMDiT, más ligero y accesible en consumer GPUs |
+No se dispone de datos de rendimiento ni de especificaciones de modelos comparables en la informacion proporcionada. La unica referencia directa es el modelo base:
 
-Comparativa orientativa por categoría (DiT de texto a imagen); los datos de los modelos alternativos corresponden a conocimiento general y no a la información proporcionada en esta ficha.
+| Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| chroma-h3 | 33.122.992.896 | no disponible | text-to-image (fine-tune de H3) | minimax-h3-community-license-agreement | Hugging Face (lodestones/chroma-h3) |
+| MiniMax-H3 (base) | no disponible | no disponible | video (y audio) | minimax-h3-community-license-agreement | Hugging Face (MiniMaxAI/MiniMax-H3) |
 
 ## Limitaciones y advertencias
 
-- La LoRA few-step es experimental: el student DMD está entrenado solo hasta el paso 8.700 de 12.000, por lo que su calidad puede no ser definitiva.
-- La LoRA few-step debe aplicarse sobre el transformer base de MiniMax-H3, no sobre el modelo fusionado de este repo; aplicarlas juntas duplicaría el fine-tune.
-- El modelo fusionado ya no está destilado de guidance: requiere CFG ~3 con negative prompt vacío y ~30 pasos, lo que aumenta el coste de inferencia frente a modelos guidance-distilled.
-- La generación de imágenes está limitada a ~1 MP con buckets de relación de aspecto en torno a 1024²; resoluciones muy distintas no están cubiertas por el entrenamiento.
-- El fine-tune se entrenó solo con imágenes; su comportamiento en vídeo no está garantizado salvo por la transferencia observada de la LoRA few-step.
-- Sesgos: el dataset no está documentado públicamente en detalle, pero el uso de booru tags sugiere datos de origen comunitario con los sesgos típicos de esas colecciones.
-- Riesgo de alucinación visual y falta de fidelidad factual propia de modelos de difusión; no hay evaluaciones publicadas.
-- Licencia: minimax-h3-community-license-agreement, una licencia "other" cuyo texto debe revisarse antes de cualquier uso comercial; no se puede asumir permisividad sin leer el acuerdo.
-- Descargas y adopción muy bajas en el momento de la ficha (0 descargas, 2 likes), por lo que hay poca validación comunitaria y soporte limitado.
+- Licencia `minimax-h3-community-license-agreement`: es una licencia "other" con terminos propios; debe revisarse el archivo LICENSE antes de cualquier uso comercial.
+- El fine-tune deja de comportarse como modelo destilado por guidance: sin CFG (~3) y ~30 pasos Euler la calidad cae; usar los valores indicados es obligatorio para resultados correctos.
+- Las LoRA DMD estan destiladas solo sobre stills; la transferencia a video se menciona en la model card pero no se cuantifica.
+- El estudiante DMD de rango 128 debe aplicarse sobre el transformer fusionado de este repositorio, no sobre el base; la LoRA `lora_vspace_dmd8` debe aplicarse sobre el transformer base, no sobre el fusionado. Confundir ambas rutas produce resultados incorrectos.
+- El repositorio ocupa 170,1 GB, lo que exige almacenamiento y ancho de banda considerables para descarga y despliegue.
+- No se documentan sesgos conocidos, tasas de alucinacion visual ni cobertura idiomatica; los idiomas soportados figuran como no disponibles.
+- La resolucion de trabajo es ~1 MP; no se documenta soporte para resoluciones superiores.
+- No hay datos publicados de benchmarks que permitan validar la calidad frente a alternativas.
 
 ## Enlaces
 
-- Repositorio en Hugging Face: https://huggingface.co/lodestones/chroma-h3
+- Modelo en Hugging Face: https://huggingface.co/lodestones/chroma-h3
 - Modelo base: https://huggingface.co/MiniMaxAI/MiniMax-H3
-- Licencia: enlace LICENSE en el repositorio (minimax-h3-community-license-agreement)
+- Licencia: LICENSE (incluida en el repositorio)

@@ -2,94 +2,106 @@
 
 ## Resumen
 
-Hy4-flash Mixed-Quant GGUF es una conversión de cuantización mixta, publicada por el usuario independiente Baekpica, del modelo multimodal `tencent/Hy4-flash` (variante instruct) de Tencent. No se trata de un modelo nuevo, sino de un artefacto derivado cuyo objetivo es hacer viable la inferencia del modelo original en una única máquina NVIDIA DGX Spark con 128 GB de memoria unificada, manteniendo el contexto nativo de 1.048.576 tokens.
+Hy4-flash Mixed-Quant GGUF es una conversión de cuantización mixta del modelo multimodal `tencent/Hy4-flash` (variante instruct), publicada por el usuario independiente Baekpica. No se trata de un modelo nuevo, sino de una redistribución de pesos en formato GGUF optimizada para ejecutar un modelo de gran tamaño en hardware con memoria limitada, concretamente en una NVIDIA DGX Spark. El artefacto principal ("trunk") ocupa 98,91 GiB con una media de 5,4744 bits efectivos por peso en la receta MQ-Q5, y 96,79 GiB con 5,3569 bits en la receta MQ-Q5-Q8.
 
-El modelo base es un transformer multimodal de tipo LatentMoE con 42 capas, hidden de 3.072 y cuatro flujos residuales iHC. De sus 155,21B parámetros en el tronco, 148,58B corresponden a matrices de expertos enrutados (512 expertos, top-16, espacio latente de 1.536), mientras que los 6,63B restantes se ejecutan en cada token. Incluye además una torre de visión SigLIP2-So400m, un drafter DFly2 de 5 capas para decodificación especulativa y cuatro memorias Engram de n-gramas.
+El modelo base es un transformer multimodal con arquitectura MoE de tipo LatentMoE: 42 capas, dimensión oculta de 3.072, 512 expertos enrutados con top-16 y enrutamiento sigmoide, atención MLA con puerta (12 capas dispersas con IndexPool y 30 capas de ventana deslizante de 512 tokens), un torre de visión SigLIP2-So400m y memorias n-grama Engram (bigrama y trigrama) en cuatro capas. Declara una longitud de contexto de 1.048.576 tokens.
 
-La relevancia de esta ficha es doble: por un lado documenta una técnica de cuantización mixta guiada por jerarquía de memoria (tronco residente de 98,79 GiB a 5,47 BPW efectivos, tablas Engram en SSD, embeddings leídos por filas); por otro, advierte de que el artefacto es un borrador: los pesos aún no estaban publicados en el repositorio en el momento de la creación de la model card y requiere un runtime dedicado (ds4-dfm-rs) que todavía no soporta la familia Hy4.
+La relevancia de esta publicación es de ingeniería: demuestra una estrategia de jerarquía de memoria (trunk en VRAM, tablas Engram y embeddings en SSD, torre de visión mapeada bajo demanda) que permite servir un modelo de escala muy superior a la memoria del dispositivo. Los ficheros no son cargables por llama.cpp, vLLM ni SGLang sin modificaciones, ya que dependen del host Rust `ds4-dfm-rs`.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer multimodal LatentMoE con atención MLA (gated), 42 capas, 4 flujos residuales iHC, torre de visión SigLIP2 y drafter DFly2 |
-| Parametros totales | 155,21B en el tronco (148,58B en expertos enrutados) |
-| Parametros activos | 6,63B por token fuera de expertos; los expertos activan top-16 de 512 por capa |
+| Arquitectura | Transformer MoE (LatentMoE) multimodal con atención MLA, memorias Engram y torre SigLIP2 |
+| Parametros totales | 845.686.433 (dato de safetensors del repo; no coherente con la escala descrita del modelo base, probablemente parcial) |
+| Parametros activos | top-16 de 512 expertos enrutados (por capa) |
 | Longitud de contexto | 1.048.576 tokens |
-| Tipos de cuantizacion | Mixta: Q8_0 (proyecciones de atención y drafter), Q5_K / Q4_K (expertos enrutados), BF16 (torre de visión, capa 0 y tensores que Tencent mantiene en BF16), FP8 para tablas Engram en SSD; 5,47 BPW efectivos |
+| Tipos de cuantizacion | Mixta: Q5_K / Q4_K en expertos enrutados, Q8_0 en proyecciones de atención y proyecciones densas, BF16 en routers y capas no cuantizadas; FP8 E4M3 en tablas Engram |
 | Idiomas soportados | no disponible |
-| Licencia | tencent-hy-license (license: other) |
-| Formato de pesos | GGUF (layout propio, requiere loader dedicado Hy4) |
+| Licencia | tencent-hy-license (other) |
+| Formato de pesos | GGUF (múltiples shards; trunk + `dfly2-bf16.gguf` / `dfly2-q8_0.gguf`) |
 
 ## Arquitectura y entrenamiento
 
-El tronco consta de 42 capas con hidden 3.072: la capa 0 es un FFN denso y las capas 1-41 son LatentMoE con 512 expertos enrutados, top-16, routing sigmoide y un experto compartido; los expertos operan en un espacio latente de 1.536 dimensiones entre dos proyecciones compartidas. La atención es MLA con compuerta, combinando 12 capas dispersas (IndexPool selecciona hasta 512 grupos de cuatro tokens) y 30 capas de ventana deslizante de 512 tokens. Cuatro memorias Engram (bigramas y trigramas) en las capas 1, 11, 21 y 31 aportan 16 cabezas hash de 96 dimensiones por capa, con 660.006.416 filas en total. La torre de visión deriva de SigLIP2-So400m (27 capas, patch 16, merge 2×2, M-RoPE intercalado) y el drafter DFly2 de 5 capas comparte caché KV y selección de índice con las capas 25, 29, 33, 37 y 41.
+El backbone consta de 42 capas con dimensión oculta 3.072 y 4 flujos residuales iHC. La capa 0 es un FFN denso y las capas 1 a 41 son LatentMoE: 512 expertos enrutados, top-16, enrutamiento sigmoide, un experto compartido y ejecución de expertos en un espacio latente de 1.536 dimensiones entre dos proyecciones compartidas. La atención es MLA con puerta, combinando 12 capas dispersas (IndexPool selecciona hasta 512 grupos de cuatro tokens) y 30 capas de ventana deslizante de 512 tokens. Incorpora memorias Engram de bigramas y trigramas en las capas 1, 11, 21 y 31 (16 cabezas hash × 96 dimensiones por capa, 660.006.416 filas en total) y una torre de visión SigLIP2-So400m con proyector.
 
-No se dispone de información sobre el volumen de tokens de entrenamiento, la composición del dataset ni el proceso de alineación (RLHF/DPO) del modelo base en la información proporcionada. La contribución técnica de este artefacto es la receta de cuantización: sigue el mapa de precisión de la release FP8 de Tencent (todo tensor que Tencent mantiene en BF16 permanece sin cuantizar; los tensores E4M3 se almacenan en Q8_0 o Q5_K/Q4_K según el presupuesto), sin matriz de importancia y de forma determinista desde el checkpoint BF16 fijado en la revisión `d88c9dfd`. Las tablas Engram (118 GiB en BF16) se mueven a SSD en los valores FP8 exactos a los que redondea el forward de referencia (61,4 GiB), el embedding de tokens se lee fila a fila desde disco y la torre de visión solo se mapea al recibir una imagen.
+La conversión sigue un mapa de precisión derivado de la release FP8 oficial de Tencent: los tensores que Tencent mantiene en BF16 no se cuantizan, los expertos enrutados (95,7% de los parámetros del trunk) pasan a Q5_K/Q4_K y tres proyecciones de atención por capa a Q8_0. La receta MQ-Q5-Q8 desvía de esa regla para ganar velocidad: proyecciones densas y cabeza de salida en Q8_0 (error L2 relativo de 0,53–0,66%) y routers en BF16. No se usa matriz de importancia; la conversión es determinista desde el checkpoint BF16 fijado. Las tablas Engram (118 GiB) se trasladan a SSD en FP8 exacto (61,4 GiB, con verificación fila a fila), el embedding de tokens se lee fila a fila desde SSD y la torre de visión se mapea solo cuando llega una imagen. Se conserva el drafter DFly2 de 5 capas para decodificación especulativa. No se dispone de información sobre el dataset de entrenamiento original ni sobre fases de RLHF/DPO del modelo base.
 
 ## Capacidades
 
-- Generación de texto y razonamiento en modalidad instruct (el artefacto deriva de la variante instruct del modelo base).
-- Procesamiento de imagen y texto (`image-text-to-text`): la torre SigLIP2 y el proyector se conservan en BF16.
-- Contexto largo nativo de 1.048.576 tokens, con caché KV latente en FP8 que ocupa 8,28 GiB a plena longitud.
-- Decodificación especulativa mediante el drafter DFly2 de 5 capas, conservado en el artefacto (con copia BF16 adicional).
-- Memoria de n-gramas Engram (bigramas y trigramas) en cuatro capas, conservada íntegra.
-- Soporte de tool calling, function calling y flujos de agente: no disponible en la información proporcionada.
+- Generación de texto y razonamiento de propósito general (modelo instruct).
+- Procesamiento multimodal imagen-texto: entrada de imágenes mediante torre SigLIP2 y proyector.
+- Procesamiento de vídeo MP4 según el host de servicio `ds4-dfm-rs`.
+- Soporte de tool calling / function calling, indicado en la model card del host.
+- Recuperación de contexto muy largo: se validó una petición de 1.048.542 tokens que recuperó una referencia plantada.
+- Decodificación especulativa mediante drafter DFly2 (versiones BF16 y Q8_0).
+- Memorias Engram n-grama para recuperación léxica asociativa.
 - Capacidades multilingües: no disponible.
-- Modo thinking, audio u otras capacidades especiales: no disponible.
 
 ## Casos de uso
 
-- Inferencia de contexto largo en una sola máquina: el diseño encaja el contexto nativo de 1M tokens en una DGX Spark de 128 GB (tronco 98,79 GiB + KV 8,28 GiB + drafter ≈ 108 GiB), lo que permite analizar documentos o repositorios completos sin fragmentación.
-- Análisis de documentos extensos con imágenes: al conservar la torre SigLIP2 en BF16 y el contexto de 1M, el modelo puede procesar informes con figuras, planos o capturas junto al texto completo en una única pasada.
-- Investigación en cuantización mixta: el artefacto sirve como referencia reproducible de una receta guiada por jerarquía de memoria (tronco en VRAM, Engram en SSD, embeddings por filas), útil para estudiar el compromiso entre BPW y fidelidad.
-- Despliegue en hardware de borde con memoria unificada: pensado para DGX Spark, permite experimentar con un MoE de 155B en un equipo de sobremesa en lugar de un clúster multi-GPU.
-- Evaluación de decodificación especulativa: el drafter DFly2 incluido permite medir ganancias de throughput en un runtime que soporte el layout Hy4.
-- Validación de fidelidad de cuantización: la model card prevé publicar KL teacher-forced contra el BF16 original y el error de reconstrucción por capa, lo que facilita auditar el impacto de la cuantización antes de adoptarla.
-- Desarrollo de runtimes: dado que el layout exige un loader dedicado, el artefacto es material de partida para implementar y probar el soporte de la familia Hy4 en ds4-dfm-rs.
+- Procesamiento de documentos extensos: el contexto declarado de 1.048.576 tokens permite ingerir libros completos, expedientes o bases de código en una sola petición y formular preguntas sobre ellos, con recuperación verificada a esa escala.
+- Análisis de imágenes en flujos documentales: la torre SigLIP2 permite extraer información de capturas, diagramas o páginas escaneadas junto con texto, mapeando la torre solo cuando llega una imagen para no ocupar memoria residente.
+- Servicio de vídeo con descripción y preguntas: el host `ds4-dfm-rs` acepta MP4 y permite resumir o interrogar contenido audiovisual, adecuado para indexación de archivos multimedia.
+- Agentes con tool calling: la integración de llamadas a funciones permite construir agentes que consulten APIs o bases de datos y encadenen varios pasos, aprovechando el contexto largo para mantener el estado de la conversación.
+- Inferencia en hardware de memoria unificada limitada: el diseño de trunk en VRAM más Engram y embeddings en SSD hace viable ejecutar un modelo de esta escala en una DGX Spark, un escenario que de otro modo requeriría un clúster multi-GPU.
+- Investigación en cuantización mixta: las dos recetas publicadas (MQ-Q5 y MQ-Q5-Q8) y sus informes permiten reproducir y comparar el impacto de distintos mapas de precisión sobre la perplejidad y la velocidad de decodificación.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La model card indica que las métricas propias (lista de tiers por capa, error de reconstrucción y KL teacher-forced frente al BF16 original) están pendientes de medición en el momento de su redacción.
+No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible. Los únicos datos de rendimiento son de servicio en DGX Spark con el host `ds4-dfm-rs`:
+
+| Metrica | MQ-Q5-Q8 | MQ-Q5 |
+|---|---|---|
+| Prefill (media, barrido 2K–64K) | 1.170,10 tokens/s | 1.187,23 tokens/s |
+| Decode (media, barrido 2K–64K) | 20,97 tokens/s | 19,49 tokens/s |
+| Bytes leídos por token en decodificación | 11,17 GB | 13,45 GB |
+| Tamano del trunk | 96,79 GiB | 98,91 GiB |
+| Bits efectivos por peso | 5,3569 | 5,4744 |
+
+Además, el backend CUDA ds4 reportó 103,10 y 102,61 GiB de asignaciones base en dispositivo con proyecciones Q8 alineadas habilitadas, y la caché latente FP8 más las claves de índice se estiman en 8,28 GiB para un historial completo.
 
 ## Requisitos de hardware
 
-- VRAM/memoria: tronco residente de 98,79 GiB a 5,47 BPW efectivos; caché KV latente FP8 de 8,28 GiB para el contexto completo de 1M; tronco + KV + drafter en torno a 108 GiB.
-- Almacenamiento: tablas Engram en SSD con 61,4 GiB en FP8; el embedding de tokens se lee desde disco fila a fila.
-- GPU objetivo: NVIDIA DGX Spark con 128 GB de memoria unificada. No se documenta soporte para A100, H100 ni RTX 4090.
-- GPU de consumo: no disponible; el tamaño del tronco excede la VRAM de cualquier GPU de consumo actual.
-- Despliegue: exclusivamente mediante ds4-dfm-rs (runtime Rust, continuación de DwarfStar); la compatibilidad con llama.cpp, vLLM, SGLang u otros runtimes GGUF no está implicada y el layout requiere un loader Hy4 dedicado, que aún no existe.
-- Latencia y throughput: no disponibles.
+- VRAM estimada: el trunk requiere del orden de 97–99 GiB de memoria; con asignaciones base se observaron 102,6–103,1 GiB en DGX Spark con memoria unificada.
+- Almacenamiento: el repo completo ocupa 280,5 GB; las tablas Engram en SSD suman 61,4 GiB y el embedding de tokens se lee desde disco.
+- GPU recomendadas: NVIDIA DGX Spark (hardware validado). No hay datos de funcionamiento en A100, H100 ni RTX 4090.
+- GPU de consumo: no cabe en ninguna GPU de consumo actual (24 GB o menos); el modelo excede ampliamente esa VRAM incluso con cuantización agresiva.
+- Despliegue: exclusivamente mediante `ds4-dfm-rs` (host Rust, PR #159). No es cargable por llama.cpp, vLLM, SGLang, Ollama ni TGI tal cual, porque las tablas Engram y el embedding viven fuera del trunk.
+- Latencia y throughput: 1.170,10 tokens/s de prefill y 20,97 tokens/s de decode en DGX Spark con MQ-Q5-Q8.
+- Nota: el drafter `dfly2-q8_0.gguf` es el predeterminado; `dfly2-bf16.gguf` solo si se desea precisión de origen.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Modalidad | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Formato / despliegue | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Hy4-flash Mixed-Quant GGUF (este artefacto) | 155,21B tronco (6,63B activos fuera de expertos) | 1.048.576 | Imagen-texto | tencent-hy-license | Pesos pendientes de publicación; runtime dedicado no disponible |
-| tencent/Hy4-flash (base) | 155,21B tronco | 1.048.576 | Imagen-texto | tencent-hy-license | Publicado en BF16 |
-| tencent/Hy4-flash-FP8 (base) | 155,21B tronco | 1.048.576 | Imagen-texto | tencent-hy-license | Publicado en FP8 E4M3 con escalas por bloques 128×128 |
+| Hy4-flash Mixed-Quant GGUF (este) | MoE top-16 de 512 expertos, 42 capas | 1.048.576 | GGUF mixto, solo `ds4-dfm-rs` | tencent-hy-license | Hugging Face, 468 descargas |
+| tencent/Hy4-flash (base) | Misma arquitectura | 1.048.576 | Safetensors BF16 | tencent-hy-license | Hugging Face (oficial) |
+| tencent/Hy4-flash-FP8 | Misma arquitectura | 1.048.576 | FP8 E4M3 | tencent-hy-license | Hugging Face (oficial) |
+| AngelSlim/Hy4-flash-GGUF | Misma arquitectura | 1.048.576 | GGUF estándar (layout upstream) | tencent-hy-license | Hugging Face |
 
-No se dispone de datos de benchmarks para establecer una comparación de rendimiento con alternativas de la misma categoría.
+La comparativa se limita a variantes del mismo modelo base, ya que no se dispone de datos de benchmarks que permitan contrastarlo con modelos de otras familias.
 
 ## Limitaciones y advertencias
 
-- El artefacto es un borrador: en la fecha de la model card los pesos no estaban en el repositorio y estaban en proceso de conversión y verificación.
-- No es servible hoy: ds4-dfm-rs no soporta todavía la familia Hy4 y ese trabajo comenzará tras la publicación de los ficheros.
-- No hay compatibilidad implicada con llama.cpp, vLLM, SGLang ni otros runtimes GGUF; el layout exige un loader dedicado.
-- Requiere hardware específico (DGX Spark de 128 GB) y almacenamiento SSD para las tablas Engram; no cabe en GPU de consumo.
-- La licencia tencent-hy-license es de tipo "other": deben revisarse sus términos antes de cualquier uso comercial.
-- Idiomas soportados no documentados en la información disponible.
-- Sesgos conocidos y riesgo de alucinación del modelo base: no disponibles en la información proporcionada.
-- Las métricas de fidelidad de la cuantización (KL teacher-forced, error de reconstrucción) están pendientes, por lo que no puede cuantificarse aún la degradación frente al BF16 original.
-- El repositorio registra 0 descargas y 0 likes, sin validación comunitaria.
+- Incompatibilidad de despliegue: los ficheros no se cargan en llama.cpp, vLLM ni SGLang sin modificaciones; requieren el host `ds4-dfm-rs`.
+- El dato de parámetros totales del repo (845.686.433) no es coherente con la arquitectura descrita (512 expertos, 42 capas) y probablemente refleja solo una parte de los tensores; no debe usarse para estimar el tamaño real.
+- Licencia `tencent-hy-license`: es necesario revisar sus términos antes de cualquier uso comercial, ya que no es una licencia permisiva estándar.
+- Riesgo de alucinación inherente a los modelos de lenguaje; no hay evaluación publicada de fidelidad factual.
+- Idiomas soportados no documentados; no se garantiza un rendimiento adecuado en castellano.
+- El rendimiento medido corresponde únicamente a DGX Spark; no hay datos de latencia o throughput en otras GPUs.
+- El diseño depende de SSD para Engram y embeddings: el rendimiento puede degradarse con almacenamiento lento o bajo contención de E/S.
+- La cuantización mixta introduce error (L2 relativo de 0,53–0,66% en las proyecciones densas de la receta Q8); la receta MQ-Q5 se ofrece como referencia de precisión de origen.
+- Publicación de un autor independiente con 0 likes y 468 descargas; no es una release oficial de Tencent.
 
 ## Enlaces
 
-- Repositorio Hugging Face del artefacto: https://huggingface.co/Baekpica/Hy4-flash-Mixed-Quant-GGUF
+- Modelo en Hugging Face: https://huggingface.co/Baekpica/Hy4-flash-Mixed-Quant-GGUF
 - Modelo base: https://huggingface.co/tencent/Hy4-flash
-- Revisión fijada del modelo base: https://huggingface.co/tencent/Hy4-flash/tree/d88c9dfd96ba4f2e6b92adba0b8e8f1c8696f959
-- Release FP8 del modelo base: https://huggingface.co/tencent/Hy4-flash-FP8
-- Revisión FP8 de referencia: https://huggingface.co/tencent/Hy4-flash-FP8/tree/003107fa248f5892064ab1c43af0a7003dd68c9b
+- Release FP8 oficial: https://huggingface.co/tencent/Hy4-flash-FP8
 - Licencia: https://huggingface.co/tencent/Hy4-flash/blob/d88c9dfd96ba4f2e6b92adba0b8e8f1c8696f959/LICENSE
-- Runtime ds4-dfm-rs: https://github.com/Baekpica/ds4-dfm-rs
-- Patrocinio del autor: https://github.com/sponsors/Baekpica
+- Host de inferencia: https://github.com/Baekpica/ds4-dfm-rs/pull/159
+- PR de llama.cpp con el layout GGUF de la arquitectura: https://github.com/ggml-org/llama.cpp/pull/32517
+- GGUF alternativo: https://huggingface.co/AngelSlim/Hy4-flash-GGUF
+- Apoyo al autor: https://www.buymeacoffee.com/baekpica
+- Patrocinio: https://github.com/sponsors/Baekpica

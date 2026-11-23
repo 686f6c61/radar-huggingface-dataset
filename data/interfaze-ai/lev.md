@@ -2,117 +2,98 @@
 
 ## Resumen
 
-lev es un adaptador LoRA sobre el modelo base Qwen/Qwen3.5-4B, desarrollado por interfaze-ai, que resuelve tareas de decisión y clasificación en un único forward pass. En lugar de generar texto, lee las respuestas directamente de los logits ya calculados y devuelve probabilidades calibradas sobre exactamente las opciones que el usuario proporciona. Es decir, no produce tokens de salida (0 output tokens), no hay JSON que parsear ni reintentos por formato inválido.
+Lev es un adaptador LoRA sobre el modelo base Qwen3.5-4B desarrollado por Interfaze-ai, disenado especificamente para realizar juicios de decision tipados ("system-one") sobre un contexto dado en un unico forward pass. En lugar de generar texto libre, el modelo lee las respuestas directamente de los logits ya calculados y devuelve probabilidades calibradas sobre exactamente las opciones que se le proporcionan. Esto elimina la necesidad de parsear JSON, reintentos o validacion de formato de salida.
 
-El modelo está diseñado para las decisiones repetitivas y de alto volumen dentro de un producto: enrutamiento (routing), moderación, detección de intención, triaje (triage), evaluación automática y verificación de salidas de otros LLM. Habla el protocolo `/v1/systemone` de TypeSafe, de modo que el código escrito para el SDK de TypeSafe funciona contra lev cambiando únicamente la URL base.
+El modelo resuelve el problema de las llamadas de juicio de alto volumen dentro de un producto: enrutamiento, moderacion, deteccion de intencion, triaje, calificacion y verificacion de salida de otros LLM. Al no generar tokens de salida (0 output tokens), el coste computacional se reduce al prefill del contexto mas las preguntas, y la garantia estructural de que la respuesta pertenece al conjunto de opciones enviado elimina una clase entera de errores de formato.
 
-Con 4B parámetros y un adaptador de aproximadamente 200 MB (repositorio de 0,2 GB), lev reporta un 68,9% de media sobre los 13 subconjuntos de S1Bench. En los seis subconjuntos que completó el tablero público de S1Bench, el modelo se sitúa a la altura de reflex-4b y por detrás solo de Jev y de tres modelos abiertos de 26B-35B. La licencia es Apache-2.0 y el único idioma declarado es el inglés.
+Con 4B parametros en el modelo base y un adaptador de aproximadamente 170 MB (mas una cabeza Mode B de 15 MB), lev se posiciona como una alternativa ligera y calibrada a modelos de clasificacion generativos mucho mayores. Su relevancia actual radica en que demuestra que un adaptador pequeno sobre un modelo de 4B puede competir con modelos de 26B o mas en tareas de decision calibrada, y que el protocolo `/v1/systemone` permite integrarlo como sustituto directo en codigo escrito para el SDK de TypeSafe.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Adaptador LoRA (PEFT) sobre un transformer Qwen/Qwen3.5-4B; inferencia por lectura de logits, sin decodificacion autoregresiva |
-| Parametros totales | 4B en el modelo base (Qwen3.5-4B); adaptador LoRA de ~200 MB |
-| Parametros activos | No aplica (no es un modelo MoE) |
+| Arquitectura | LoRA sobre transformer Qwen3.5-4B (adaptador PEFT) |
+| Parametros totales | 4B (modelo base) + adaptador LoRA (~170 MB) + cabeza Mode B (~15 MB) |
+| Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | en (ingles) |
 | Licencia | apache-2.0 |
-| Formato de pesos | safetensors (formato PEFT/LoRA, libreria `peft`) |
-| Pipeline declarado | zero-shot-classification |
-| Relacion con el modelo base | adapter (`base_model_relation: adapter`) |
-| Salida | 0 tokens de salida; devuelve `choice`, `noul` (p(yes)), `score`, `probabilities` y `confidence` |
-| API compatible | `/v1/systemone` de TypeSafe |
-| Descargas / likes | 41 descargas, 46 likes |
-| Tamano del repositorio | 0,2 GB (el modelo base, ~8 GB, se descarga aparte) |
+| Formato de pesos | safetensors (PEFT/LoRA) |
 
 ## Arquitectura y entrenamiento
 
-lev no es un modelo generativo al uso, sino un adaptador LoRA acoplado a Qwen/Qwen3.5-4B. La innovación central es que el modelo no emite tokens: recibe un estado (texto, un ticket, un correo o JSON) junto con un conjunto de preguntas tipadas y lee cada respuesta directamente de los logits que ya ha computado en un único forward pass. El espacio de respuesta queda restringido estructuralmente al conjunto de opciones que envía el usuario, de modo que el modelo no puede devolver una etiqueta fuera de esas opciones.
+Lev es un adaptador LoRA entrenado sobre Qwen3.5-4B. El modelo no genera tokens: en un unico forward pass procesa el estado (texto, ticket, email o JSON) junto con un conjunto de preguntas tipadas y lee las respuestas de los logits correspondientes a los tokens de opcion. Soporta tres tipos de pregunta: `noul` (si/no, devuelve p(yes)), `choice` (seleccion entre opciones con nombre y descripcion, devuelve opcion, probabilidades y confianza) y `score` (2-10 niveles ordenados, devuelve nivel esperado, probabilidades y confianza).
 
-Soporta tres tipos de pregunta: `noul` (pregunta sí/no, que devuelve p(yes)), `choice` (instrucciones más un conjunto de opciones con nombre y descripción o `null`, que devuelve la opción elegida, el vector de probabilidades y la confianza) y `score` (instrucciones más entre 2 y 10 niveles ordenados, que devuelve un nivel esperado, las probabilidades y la confianza). Todas las preguntas comparten un mismo forward pass, por lo que formular tres preguntas cuesta aproximadamente lo mismo que formular una. El repositorio incluye un fichero `lev_release.json` que especifica el modelo base y el formato de prompt con el que se entrenó el adaptador, además de la calibración y la cabeza correspondiente.
-
-El entrenamiento se realizó, según la model card, con una única GPU H100. No se detalla en la información disponible el número de tokens, la composición del dataset ni si se emplearon técnicas de RLHF o DPO. La calibración de probabilidades viene incluida en el checkpoint, lo que permite aplicar umbrales de decisión sobre ellas.
+El entrenamiento incluye una calibracion de probabilidades que se aplica automaticamente al cargar el modelo, junto con una cabeza Mode B. El repositorio incluye `lev_release.json`, que especifica el modelo base, el formato de prompt con el que se entreno el adaptador y la fuerza con la que aplicarlo, de modo que no hay configuracion manual. No se dispone de informacion sobre el numero de tokens de entrenamiento, la composicion del dataset ni el uso de RLHF/DPO en la informacion proporcionada.
 
 ## Capacidades
 
-- Clasificación zero-shot restringida a un conjunto de opciones definido por el usuario.
-- Preguntas booleanas con probabilidad calibrada de "sí" (tipo `noul`).
-- Elección entre opciones con nombre y descripción (tipo `choice`), devolviendo `choice`, `probabilities` y `confidence`.
-- Puntuación ordinal sobre 2-10 niveles ordenados (tipo `score`), devolviendo un valor esperado continuo dentro de la escala (por ejemplo, 1,57 entre "mildly annoyed" y "annoyed").
-- Múltiples preguntas tipadas resueltas en un único forward pass sobre el mismo estado.
-- Probabilidades calibradas utilizables como puerta de decisión (por ejemplo, actuar de forma automática por encima de 0,9 y derivar a una persona por debajo).
-- Garantía estructural de que la salida pertenece siempre al conjunto de opciones enviado.
-- Sin tokens de salida, sin parseo de JSON y sin reintentos por formato.
-- Servidor HTTP compatible con el protocolo `/v1/systemone` de TypeSafe, por lo que el SDK de TypeSafe funciona cambiando la URL base.
-- No se documentan en la información disponible capacidades de tool calling, agentes multi-paso, visión, audio ni modo "thinking".
+- Clasificacion zero-shot con opciones definidas por el usuario, sin generacion de texto.
+- Preguntas booleanas (`noul`) con probabilidad calibrada de "si".
+- Preguntas de eleccion (`choice`) con distribucion de probabilidad sobre opciones nombradas.
+- Preguntas de puntuacion (`score`) sobre 2-10 niveles ordenados, con nivel esperado y confianza.
+- Multiples preguntas en un unico forward pass (el coste de tres preguntas es aproximadamente el de una).
+- Garantia estructural: la respuesta siempre pertenece al conjunto de opciones enviado (no puede inventar etiquetas).
+- Probabilidades calibradas que permiten umbrales de automatizacion (por ejemplo, actuar por encima de 0.9 y derivar a humano por debajo).
+- Compatibilidad con el protocolo `/v1/systemone` de TypeSafe, lo que permite reutilizar codigo del SDK cambiando la URL base.
+- Soporte de contexto en formato texto, ticket, email o JSON.
+- Solo ingles.
 
 ## Casos de uso
 
-- Enrutamiento de tickets de soporte: el modelo recibe el texto del ticket y una pregunta de tipo `choice` con las colas disponibles (facturación, cancelaciones, seguimiento de pedidos, otros) y devuelve una distribución de probabilidad sobre esas colas. Al compartir un único forward pass, se pueden añadir preguntas simultáneas de urgencia e idioma sin coste adicional apreciable.
-- Moderación de contenido: con una pregunta tipo `choice` o `score` se puede clasificar un mensaje en categorías de política y obtener un nivel de gravedad calibrado, usando el umbral de confianza para derivar los casos dudosos a revisión humana.
-- Detección de intención en asistentes conversacionales: se define el conjunto de intenciones soportadas y el modelo devuelve la más probable junto con su confianza, restringiendo estructuralmente la salida a intenciones conocidas por el sistema.
-- Triaje y priorización: una pregunta `noul` del estilo "¿necesita una persona en la próxima hora?" permite ordenar una cola de trabajo a partir de la probabilidad devuelta, sin necesidad de parsear texto generado.
-- Evaluación automática (grading) y LLM-as-judge: se puede puntuar una respuesta generada por otro modelo sobre una escala ordinal (`score`) o comprobar si cumple un criterio (`noul`), obteniendo probabilidades calibradas sobre las que fijar umbrales de aceptación.
-- Verificación de salidas de LLM en pipelines de producción: el modelo actúa como comprobador determinista de que una respuesta generada satisface un conjunto de criterios, con una salida acotada y sin riesgo de formato inválido.
-- Clasificación de correos o leads en un CRM: se envía el cuerpo del correo como estado y varias preguntas tipadas (sector, intención de compra, necesidad de seguimiento) para poblar campos estructurados del CRM en una sola pasada.
-- Guardarraíles para agentes: antes de ejecutar una acción, el agente consulta a lev si la acción cumple una política (`noul`) o en qué categoría cae (`choice`), y decide si ejecutar, pedir confirmación o bloquear.
+- Enrutamiento de tickets de soporte: dado un ticket, preguntar por la intencion (`choice` entre refund, cancel, track, other) y por urgencia (`noul`), todo en un forward pass, para dirigirlo al equipo correcto.
+- Moderacion de contenido: clasificar mensajes o publicaciones contra politicas definidas como opciones, con probabilidades calibradas para decidir bloqueo automatico frente a revision humana.
+- Deteccion de intencion en asistentes conversacionales: extraer la intencion del usuario de un turno concreto con opciones predefinidas, sin generacion ni parseo.
+- Triaje de correos entrantes: puntuar frustracion o prioridad en una escala ordenada (`score`) y decidir si requiere respuesta humana en la siguiente hora.
+- Verificacion de salida de LLM: comprobar si una respuesta generada cumple criterios booleanos o de eleccion antes de mostrarla al usuario, actuando como filtro en pipeline.
+- Calificacion de respuestas en evaluacion de modelos: asignar niveles ordenados a respuestas generadas para ranking automatico con probabilidades calibradas.
+- Clasificacion de formularios o JSON estructurado: usar el estado JSON directamente para preguntas de eleccion sobre campos o categorias.
+- Gate de automatizacion en produccion: usar la confianza calibrada para decidir entre accion automatica y escalado a humano en flujos de alto volumen.
 
 ## Benchmarks y rendimiento
 
-La model card reporta una media del **68,9% en los 13 subconjuntos de S1Bench**. En los seis subconjuntos que completó el tablero público de S1Bench, el modelo se sitúa a la altura de reflex-4b y por detrás únicamente de Jev y de tres modelos abiertos de 26B-35B.
+Segun la model card, lev obtiene un 74,3% en los 13 subconjuntos de S1Bench. En los seis subconjuntos que el tablero publico de S1Bench tiene completos, queda por detras solo de Jev y de dos modelos abiertos de 26B o mas, y por delante de reflex-4b y de un modelo de 35B. No se detallan resultados por subconjunto ni metricas adicionales (MMLU, HumanEval, GSM8K) en la informacion disponible.
 
-No se han publicado en la información disponible los resultados desglosados por subconjunto de S1Bench, ni cifras de MMLU, HumanEval, GSM8K u otros benchmarks estándar.
-
-| Metrica | Resultado | Notas |
+| Benchmark | Resultado | Notas |
 |---|---|---|
-| S1Bench (media de 13 subconjuntos) | 68,9% | Dato reportado en la model card |
-| S1Bench (subconjuntos publicos) | no disponible | Solo se indica que esta a la altura de reflex-4b |
-| MMLU / HumanEval / GSM8K | no disponible | No reportados |
+| S1Bench (13 subconjuntos) | 74,3% | Media global segun model card |
+| S1Bench (6 subconjuntos publicos) | no disponible por subconjunto | Por detras de Jev y dos modelos de 26B+; por delante de reflex-4b y un modelo de 35B |
 
 ## Requisitos de hardware
 
-- Modelo base Qwen/Qwen3.5-4B de aproximadamente 8 GB de descarga, más el adaptador de unos 200 MB.
-- VRAM estimada para inferencia en precisión completa (bf16/fp16): del orden de 10-12 GB contando pesos y memoria de activaciones y caché; en cuantización de 4 bits la estimación baja a unos 3-5 GB. Estas cifras son estimaciones derivadas de los 4B de parámetros, no datos publicados por el autor.
-- Cabe en GPU de consumo: con 24 GB (RTX 3090, RTX 4090) hay margen sobrado en bf16; con 12-16 GB (RTX 4070 Ti, RTX 4080) es viable en bf16 ajustado o en cuantización.
-- GPU de datacenter: A100 y H100 son aptas; el entrenamiento del adaptador se realizó, según la model card, en una única H100.
-- Despliegue: el paquete oficial `lev` incluye un servidor HTTP (`lev serve --checkpoint interfaze-ai/lev --host 0.0.0.0 --port 8000`) compatible con `/v1/systemone`. Requiere Python 3.12 o superior y, para uso en tiempo real, una GPU CUDA. Depende de torch, transformers y peft.
-- No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI en la información disponible; el modelo necesita la cabeza y el formato de prompt específicos del adaptador.
-- Latencia y throughput: no disponibles para este checkpoint. La plataforma Interfaze declara 50 peticiones por segundo en su servicio, pero ese dato corresponde al servicio alojado, no necesariamente a este adaptador autohospedado.
+- VRAM estimada para inferencia: el modelo base Qwen3.5-4B pesa 9,3 GB en pesos; el adaptador anade unos 205 MB (170 MB adaptador + 15 MB cabeza + tokenizer). En precision completa se requiere aproximadamente 10 GB de VRAM; con cuantizacion no disponible en la informacion.
+- GPU recomendadas: la model card menciona entrenamiento e inferencia en una H100. Para inferencia, una GPU con al menos 10-12 GB de VRAM deberia ser suficiente en precision completa, aunque no se confirma oficialmente.
+- Cabe en consumer GPU: probablemente en RTX 4090 (24 GB) y posiblemente en RTX 3090/4080; no confirmado para GPUs de 8 GB sin cuantizacion.
+- Opciones de despliegue: el paquete `lev[serve]` instala torch, transformers, peft y un servidor HTTP propio compatible con `/v1/systemone`. Requiere Python 3.12 o superior y, para uso en tiempo real, una GPU CUDA. No se mencionan vLLM, llama.cpp, Ollama ni TGI.
+- Latencia y throughput: no disponibles. La model card indica que multiples preguntas comparten un unico forward pass y que no hay tokens de salida, lo que reduce coste frente a modelos generativos, pero no se aportan cifras.
 
 ## Comparativa con modelos similares
 
-La información disponible solo permite una comparación parcial, basada en los modelos citados en la propia model card (reflex-4b, Jev y tres modelos abiertos de 26B-35B) y en la ausencia de un benchmark común desglosado.
-
-| Modelo | Parametros | Contexto | S1Bench | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | S1Bench (6 subconjuntos) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| lev | 4B (LoRA sobre Qwen3.5-4B) | no disponible | 68,9% de media en 13 subconjuntos | apache-2.0 | Hugging Face (interfaze-ai/lev) |
-| reflex-4b | ~4B (por nomenclatura) | no disponible | similar a lev en los seis subconjuntos publicos | no disponible | no disponible |
-| Jev | no disponible | no disponible | por encima de lev | no disponible | no disponible |
-| Modelos abiertos de 26B-35B (sin especificar) | 26B-35B | no disponible | por encima de lev | no disponible | no disponible |
+| lev | 4B + LoRA | no disponible | 74,3% global; por detras de Jev y dos modelos 26B+ | apache-2.0 | Hugging Face + GitHub |
+| Jev | no disponible | no disponible | Por delante de lev | no disponible | no disponible |
+| reflex-4b | 4B (aproximado por nombre) | no disponible | Por detras de lev | no disponible | no disponible |
+| Modelo de 35B (sin identificar) | 35B | no disponible | Por detras de lev | no disponible | no disponible |
 
-Enfoques alternativos de la misma categoria serian clasificadores discriminativos dedicados (por ejemplo, encoders tipo BERT o DeBERTa afinados) o el uso de un LLM generativo con salida JSON restringida. lev se diferencia de ambos por combinar la flexibilidad de un LLM con la salida acotada de un clasificador y con 0 tokens de salida, pero no se dispone de cifras comparativas publicadas frente a esas alternativas en la información disponible.
+No se dispone de datos suficientes para una comparativa detallada de contexto, rendimiento por tarea o licencia de los modelos alternativos mencionados en la model card.
 
 ## Limitaciones y advertencias
 
-- La garantía de que la etiqueta devuelta pertenece al conjunto de opciones es estructural, no de corrección: el modelo puede aun así elegir la opción equivocada.
-- Solo declara soporte de inglés (`en`); el rendimiento en otros idiomas no está documentado y no debería asumirse.
-- No se detalla la longitud de contexto soportada, lo que limita la planificación de casos con entradas largas.
-- Al ser un adaptador PEFT, requiere el modelo base Qwen/Qwen3.5-4B y el formato de prompt con el que fue entrenado; no es un modelo autónomo.
-- La calibración de las probabilidades viene incluida en el checkpoint, pero no se documentan métricas de calibración (ECE u otras) que permitan auditar su fiabilidad fuera de la distribución de entrenamiento.
-- Riesgo de sesgo y de alucinación de etiqueta no evaluado en la información disponible; al restringirse el espacio de salida, el modo de fallo típico es una clasificación incorrecta o una confianza mal calibrada, no una salida inventada.
-- Licencia Apache-2.0: permite uso comercial, pero conviene verificar las condiciones del modelo base Qwen/Qwen3.5-4B, que se distribuye por separado.
-- Etiquetado de inferencia: la model card marca `inference: false`, lo que indica que no está pensado para el pipeline de inferencia estándar de Hugging Face, sino para su propio runtime.
-- Entrenado por el autor con una única H100; no se publican detalles del dataset, de los tokens de entrenamiento ni de posibles sesgos inducidos por los datos.
-- El repositorio tiene un volumen muy bajo de descargas (41), por lo que la validación por parte de la comunidad es todavía escasa.
+- Solo soporta ingles; no hay capacidades multilingues declaradas.
+- La garantia de que la respuesta pertenece al conjunto de opciones es estructural, no de correccion: el modelo puede elegir la opcion equivocada.
+- No genera texto: no sirve para tareas generativas, resumen, traduccion ni dialogo abierto.
+- No se dispone de informacion sobre sesgos conocidos, riesgo de alucinacion en el sentido generativo (no aplica al no generar texto) ni limitaciones de contexto.
+- Requiere Python 3.12 o superior y, para uso en tiempo real, GPU CUDA; no se documenta soporte CPU.
+- La licencia apache-2.0 permite uso comercial, pero debe verificarse la licencia del modelo base Qwen3.5-4B, que no se detalla en la informacion proporcionada.
+- La calibracion de probabilidades es un componente clave para usar umbrales; no se documenta su robustez fuera de la distribucion de entrenamiento.
+- El modelo esta marcado con `inference: false` en la model card, lo que puede indicar que la inferencia requiere el paquete `lev` y no funciona con pipelines estandar de transformers.
+- No se dispone de informacion sobre latencia, throughput ni comportamiento en produccion a gran escala.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/interfaze-ai/lev
-- Repositorio en GitHub (InterfazeAI): https://github.com/InterfazeAI/lev
-- Repositorio en GitHub citado en la model card (Abhinavexists): https://github.com/Abhinavexists/lev
-- Blog de presentacion: https://interfaze.ai/blog/jev-now-open-source-lev
-- Sitio web de Interfaze: https://interfaze.ai
-- Organizacion en Hugging Face: https://huggingface.co/interfaze-ai
-- Copia alternativa del modelo: https://huggingface.co/nassimjp/lev
+- Hugging Face: https://huggingface.co/interfaze-ai/lev
+- GitHub: https://github.com/Abhinavexists/lev
+- Blog: https://interfaze.ai/blog/jev-now-open-source-lev
+- Sitio del autor: https://interfaze.ai

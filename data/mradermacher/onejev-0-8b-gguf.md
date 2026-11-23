@@ -2,104 +2,96 @@
 
 ## Resumen
 
-OneJev-0.8B-GGUF es una recopilación de cuantizaciones en formato GGUF del modelo OmniJev/OneJev-0.8B, publicada por el usuario mradermacher, conocido en Hugging Face por generar versiones cuantizadas de modelos abiertos para su uso con llama.cpp y herramientas compatibles. El repositorio no contiene un modelo entrenado desde cero, sino conversiones del modelo base a distintos niveles de precisión (de Q2_K a f16), junto con dos ficheros `mmproj` que acompañan a la parte multimodal. El modelo base tiene 1.006.672.704 parámetros (aproximadamente 1,0 B) y se distribuye bajo licencia Apache-2.0.
+OneJev-0.8B es un modelo de decisión ("system-one") de aproximadamente 1.000 millones de parámetros, desarrollado por OmniJev y publicado en Hugging Face bajo licencia Apache 2.0. La versión aquí descrita es una cuantización GGUF estática realizada por mradermacher a partir del modelo original OmniJev/OneJev-0.8B. El modelo está etiquetado como multimodal, orientado a agentes de interfaz gráfica (GUI agents) y vídeo, y entrenado sobre el dataset OmniJev/OneJev-Data.
 
-Según las etiquetas declaradas en el repositorio, el modelo se orienta a tareas de decisión (`decision-model`, `calibration`, `system-one`), con capacidades multimodales (`multimodal`, `video`) y uso como agente sobre interfaces gráficas (`gui-agent`). El idioma declarado es únicamente el inglés (`en`). La model card del repositorio cuantizado no incluye información sobre arquitectura, datos de entrenamiento, longitud de contexto ni procedimiento de alineación, por lo que esos datos se marcan como no disponibles en esta ficha.
+La propuesta del modelo no es la generación de texto generalista, sino la toma de decisiones calibrada: sus etiquetas incluyen "decision-model" y "calibration", lo que sugiere un uso como componente de evaluación o selección dentro de pipelines más amplios (por ejemplo, decidir entre varias acciones candidatas de un agente). El tamaño reducido y las cuantizaciones disponibles (desde Q2_K de 0,6 GB hasta f16 de 2,1 GB) lo hacen desplegable en hardware muy modesto.
 
-La relevancia práctica de esta ficha radica en que ofrece una vía de despliegue local muy ligera: los ficheros cuantizados ocupan entre 0,6 GB (Q2_K) y 0,9 GB (Q6_K), lo que permite ejecutar el modelo en hardware de gama baja, incluida CPU, y en GPUs de consumo con muy poca VRAM. Al mismo tiempo, conviene advertir de que el repositorio tiene 0 descargas y 0 likes en el momento de la consulta y de que la documentación publicada es mínima, lo que limita la evaluación previa a un despliegue en producción.
+La relevancia actual radica en la combinación de tres factores: licencia permisiva para uso comercial, un tamaño que cabe en cualquier GPU de consumo e incluso en CPU, y soporte multimodal mediante los ficheros mmproj que acompañan a las cuantizaciones. No obstante, la información pública disponible sobre arquitectura interna, contexto y datos de entrenamiento es muy limitada, como se detalla a continuación.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (la model card del repositorio cuantizado no la describe); la presencia de ficheros `mmproj` indica que el modelo base incorpora un proyector multimodal para entrada de imagenes o video |
-| Parametros totales | 1.006.672.704 (~1,0 B) |
-| Parametros activos | no aplica / no disponible (no se indica que sea un modelo MoE) |
+| Arquitectura | no disponible (modelo transformer multimodal; detalles internos no publicados) |
+| Parametros totales | 1.006.672.704 (dato real de safetensors) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | mmproj-Q8_0, mmproj-f16, Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, f16 |
-| Idiomas soportados | en (ingles) |
+| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, f16; además mmproj-Q8_0 y mmproj-f16 |
+| Idiomas soportados | en (inglés) |
 | Licencia | apache-2.0 |
-| Formato de pesos | GGUF (el modelo base se distribuye en safetensors via transformers) |
-
-Datos adicionales del repositorio: tamano total del repo 9,9 GB, biblioteca declarada `transformers`, pipeline no disponible, creado el 27 de septiembre de 2026 y actualizado el mismo dia. No se ofrecen cuantizaciones ponderadas ni con imatrix en el momento de la publicacion.
+| Formato de pesos | GGUF (cuantizaciones estáticas); el modelo base en transformers se distribuye en safetensors |
+| Tamano del repo | 9,9 GB |
+| Modelo base | OmniJev/OneJev-0.8B |
+| Dataset de entrenamiento | OmniJev/OneJev-Data |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion sobre la arquitectura interna del modelo base OmniJev/OneJev-0.8B: la model card del repositorio cuantizado no describe el tipo de red (transformer, MoE, SSM o hibrida), la composicion del dataset de entrenamiento, el numero de tokens vistos ni si hubo fases de RLHF, DPO u otro tipo de alineacion. Tampoco se documenta la longitud de contexto nativa ni la estrategia de atencion.
+No se han publicado detalles sobre la arquitectura interna del modelo en la información disponible. Las etiquetas del repositorio indican que se trata de un modelo multimodal (con soporte de imagen y vídeo, a juzgar por las etiquetas "multimodal" y "video") y orientado a agentes de GUI. La presencia de ficheros mmproj en las cuantizaciones GGUF confirma la existencia de un proyector multimodal separado del cuerpo del modelo, un patrón habitual en arquitecturas tipo LLaVA o Qwen-VL, aunque no se especifica cuál se emplea aquí.
 
-Lo unico verificable a partir de los ficheros publicados es que el repositorio incluye dos variantes del proyector multimodal (`OneJev-0.8B.mmproj-Q8_0.gguf`, de 0,2 GB, y `OneJev-0.8B.mmproj-f16.gguf`, de 0,3 GB), lo que es coherente con las etiquetas `multimodal` y `video` del modelo y con el flujo habitual de llama.cpp para modelos con entrada de imagen o video. El proceso de cuantizacion aplicado por mradermacher es estatico (`quantize_version: 2`, `output_tensor_quantised: 1`, `convert_type: hf`), sin ficheros de imatrix asociados. No se documenta ninguna innovacion tecnica adicional (decodificacion especulativa, atencion lineal, destilacion u otras).
+Tampoco se detalla el volumen de tokens de entrenamiento, la composición del dataset OmniJev/OneJev-Data ni si se aplicaron fases de RLHF, DPO o ajuste por preferencias. Las etiquetas "system-one", "decision-model" y "calibration" sugieren un entrenamiento específico para producir decisiones o puntuaciones calibradas, probablemente en el contexto de selección de acciones de un agente, pero no hay documentación técnica que lo confirme. No se dispone de información sobre innovaciones como decodificación especulativa, atención lineal o mecanismos híbridos.
 
 ## Capacidades
 
-- Generacion de texto conversacional en ingles, segun la etiqueta `conversational` del repositorio.
-- Orientacion a modelado de decisiones (`decision-model`) y a la produccion de salidas con calibracion (`calibration`), segun las etiquetas declaradas.
-- Capacidades multimodales: el repositorio incluye proyectores `mmproj`, lo que habilita el procesamiento de entradas visuales en runtime compatibles con llama.cpp.
-- Procesamiento de video, segun la etiqueta `video`.
-- Uso como agente sobre interfaces graficas (`gui-agent`), etiqueta que sugiere aplicaciones de automatizacion de escritorio o navegacion.
-- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
-- Soporte de agentes multi-paso y razonamiento encadenado: no disponible en la informacion proporcionada (la etiqueta `gui-agent` apunta a uso agentico, pero no se detalla el mecanismo).
-- Capacidades multilingues: limitadas al ingles segun el campo `language: en`.
-- Modo de razonamiento explicito (_thinking mode_), audio u otras capacidades especiales: no disponible en la informacion proporcionada.
+- Toma de decisiones calibrada: el modelo está etiquetado como "decision-model" y "calibration", lo que apunta a su uso para puntuar o seleccionar opciones en lugar de generar texto libre.
+- Procesamiento multimodal: soporte de entradas visuales mediante el proyector mmproj incluido en las cuantizaciones.
+- Comprensión de vídeo: la etiqueta "video" indica capacidad de procesar secuencias de vídeo, aunque no se especifican resolución, número de fotogramas ni formato de entrada.
+- Agentes de interfaz gráfica (GUI agents): diseñado para interpretar pantallas y decidir acciones sobre interfaces de usuario.
+- Conversación: el repositorio está marcado como "conversational" y "endpoints_compatible", lo que indica compatibilidad con plantillas de chat e infraestructura de endpoints de Hugging Face.
+- Capacidades multilingües: limitadas al inglés según el campo `language`.
+- Tool calling / function calling: no disponible en la información proporcionada.
+- Razonamiento multi-paso autónomo: no disponible en la información proporcionada.
+- Modo "thinking" explícito: no disponible en la información proporcionada.
 
 ## Casos de uso
 
-- Automatizacion de interfaces graficas: con la etiqueta `gui-agent`, el modelo puede emplearse como componente de decision de un agente que interpreta capturas de pantalla y decide la siguiente accion sobre una aplicacion de escritorio o web, ejecutandose en local gracias a su tamano reducido.
-- Analisis de video en el borde: al incluir proyectores `mmproj` y la etiqueta `video`, es viable integrarlo en un pipeline que reciba fotogramas y genere descripciones o decisiones, con coste de VRAM muy bajo en comparacion con modelos multimodales de mayor tamano.
-- Clasificacion o puntuacion con calibracion: las etiquetas `decision-model` y `calibration` apuntan a su uso como modulo que asigna una decision acompanada de una medida de confianza, por ejemplo en encaminamiento de peticiones o filtrado previo.
-- Despliegue en dispositivos con recursos limitados: las cuantizaciones Q4_K_S y Q4_K_M (0,7 GB y 0,8 GB respectivamente) permiten ejecutar inferencia en CPU, en mini-PC o en GPUs de gama de entrada, sin necesidad de aceleradores dedicados.
-- Prototipado rapido y pruebas de concepto: dado que hay 14 ficheros GGUF con distintos niveles de precision, es posible comparar el impacto de la cuantizacion en la calidad de salida antes de comprometerse con una version concreta.
-- Aplicaciones de investigacion sobre modelos pequenos: sirve como punto de partida para experimentos de destilacion, evaluacion de calibracion o comparativas de eficiencia frente a otros modelos de ~1 B.
-- Preprocesado o enrutado dentro de un sistema mayor: por su baja latencia esperable y su tamano, puede actuar como primer filtro que decida si una consulta requiere un modelo de mayor capacidad.
-- Demo local desconectada de red: al no requerir API externa, encaja en entornos con requisitos de privacidad donde los datos no pueden salir de la maquina.
+- Automatización de pruebas de interfaz gráfica: el modelo puede actuar como componente de decisión que, dada una captura de pantalla, elige la siguiente acción del agente (clic, escritura, scroll). Su tamaño de 1B permite ejecutarlo en la misma máquina que corre el entorno de pruebas sin necesidad de GPU dedicada.
+- Evaluación de políticas de agentes en producción: al ser un modelo de decisión calibrada, puede emplearse como árbitro que puntúa las acciones propuestas por un agente mayor y descarta las de baja confianza antes de ejecutarlas.
+- Enrutamiento y selección en pipelines RAG: usar el modelo como clasificador de decisión para elegir entre varias fuentes de recuperación o herramientas, aprovechando su baja latencia (cuantización Q4_K_S de 0,7 GB).
+- Análisis de grabaciones de vídeo en local: con el proyector mmproj y una cuantización Q5_K_M (0,9 GB), puede desplegarse en portátiles para tareas de clasificación o decisión sobre secuencias de vídeo sin enviar datos a la nube.
+- Prototipado rápido en CPU: las cuantizaciones Q2_K y Q3_K_S (0,6 GB) permiten ejecutar el modelo en llama.cpp sobre CPU, útil para validar ideas de agentes antes de invertir en infraestructura.
+- Investigación en calibración de modelos: al estar publicado con licencia Apache 2.0 y pesos abiertos, sirve como banco de pruebas para estudiar cómo se comporta la calibración de decisiones en modelos de menos de 1B parámetros.
+- Integración en asistentes de escritorio: un agente local que observe la pantalla y decida acciones puntuales puede beneficiarse de un modelo que cabe en 1 GB de VRAM y no requiere conexión externa.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. Ni la model card del repositorio cuantizado ni los resultados de busqueda web consultados incluyen valores de MMLU, HumanEval, GSM8K, MMBench o cualquier otra metrica para OneJev-0.8B ni para sus cuantizaciones GGUF.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia (pesos): de 0,6 GB (Q2_K, Q3_K_S) a 0,7 GB (Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S), 0,8 GB (Q4_K_M, Q5_K_S), 0,9 GB (Q5_K_M, Q6_K), 1,2 GB (Q8_0) y 2,1 GB (f16). A estas cifras hay que sumar la cache KV y el proyector multimodal (0,2 GB en Q8_0 o 0,3 GB en f16) si se usan entradas visuales.
-- GPU recomendadas: cualquier GPU con 4 GB o mas de VRAM es suficiente para las cuantizaciones Q4 y Q5. Se pueden citar como referencia RTX 3050, RTX 3060, RTX 4060, GTX 1650 o superiores; tambien es viable en GPUs integradas con memoria compartida.
-- Cabe en GPU de consumo: si. Incluso las cuantizaciones mas grandes (Q8_0, f16) caben holgadamente en GPUs de consumo con 8 GB o mas.
-- Ejecucion en CPU: si, es el escenario natural para estos tamanos. Modelos de ~1 B en Q4 funcionan de forma interactiva en CPU de escritorio moderno y de forma mas lenta en placas tipo Raspberry Pi.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, koboldcpp, llama-cpp-python, text-generation-webui (o cualquier runtime compatible con GGUF). El soporte de GGUF en vLLM existe pero es experimental y no se garantiza para este modelo.
-- Latencia y throughput estimados: no disponible. No se han publicado mediciones y la model card no incluye datos de velocidad.
+- VRAM estimada para inferencia: aproximadamente 0,7-1,0 GB con cuantizaciones Q4_K_S o Q4_K_M; alrededor de 1,5 GB con Q8_0; unos 2,5 GB con f16. Añadir 0,2-0,3 GB si se usa el proyector multimodal mmproj.
+- GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM es suficiente; tarjetas como RTX 3060, RTX 4060, RTX 4090 o superiores ofrecen margen de sobra. También funciona en GPUs integradas y en CPU.
+- Cabe en GPU de consumo: sí, en prácticamente todas las GPU de consumo de los últimos ocho años, e incluso en dispositivos con poca memoria.
+- Opciones de despliegue: llama.cpp (formato GGUF nativo), Ollama, LM Studio, y servidores compatibles con la API de endpoints de Hugging Face. Para el modelo base en safetensors, transformers con aceleración por hardware.
+- Latencia y throughput estimados: no disponibles en la información proporcionada; por el tamaño, se espera una latencia muy baja en GPU y aceptable en CPU, pero no hay cifras publicadas.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos de rendimiento del modelo evaluado, por lo que la comparacion se limita a parametros, licencia y disponibilidad. Los valores de contexto de los modelos alternativos proceden de su documentacion publica general y no han sido verificados en la informacion proporcionada.
-
-| Modelo | Parametros | Contexto | Multimodal | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Multimodal | Licencia | Formato |
 |---|---|---|---|---|---|
-| OneJev-0.8B-GGUF (mradermacher) | ~1,0 B | no disponible | Si (mmproj para imagen/video) | Apache-2.0 | GGUF (14 variantes) + base en safetensors |
-| mradermacher/CLM-0.8B-GGUF | ~0,8 B | no disponible | No indicado | Apache-2.0 | GGUF |
-| Qwen2.5-0.5B / Qwen3-0.6B | 0,5-0,6 B | 32.768 tokens segun documentacion publica | No | Apache-2.0 | safetensors, GGUF en repos de terceros |
-| Llama-3.2-1B | 1,24 B | 128.000 tokens segun documentacion publica | No | Llama 3.2 Community License | safetensors, GGUF en repos de terceros |
+| OneJev-0.8B (este) | ~1,0B | no disponible | Sí (imagen/vídeo) | Apache 2.0 | GGUF, safetensors |
+| Qwen2.5-0.5B / 1.5B | 0,5B / 1,5B | 32K (Qwen2.5) | No | Apache 2.0 | GGUF, safetensors |
+| SmolVLM-500M / 2B | 0,5B / 2B | no disponible | Sí (imagen) | Apache 2.0 | GGUF, safetensors |
+| Llama 3.2 1B | 1,2B | 128K | No | Llama 3.2 Community | GGUF, safetensors |
 
-No se dispone de benchmarks comparativos entre estos modelos dentro de la informacion consultada, por lo que no es posible establecer una jerarquia de calidad.
+La comparación es aproximada: OneJev se posiciona como modelo de decisión multimodal, mientras que los alternativas citadas son modelos generalistas de texto o visión. No hay datos de rendimiento comparables publicados para OneJev, por lo que la elección entre estos modelos debe basarse en la tarea concreta y en validación empírica propia.
 
 ## Limitaciones y advertencias
 
-- Documentacion minima: la model card solo describe el proceso de cuantizacion, no el modelo. No hay informacion sobre dataset, alineacion, contexto ni evaluaciones, lo que impide auditar su comportamiento.
-- Idiomas: el campo `language` declara unicamente ingles. No hay evidencia de soporte para castellano u otros idiomas, por lo que su uso en produccion multilingue no esta justificado con los datos disponibles.
-- Riesgo de alucinacion: inherente a los modelos generativos de este tamano; con ~1 B de parametros la tasa de error factual suele ser alta y no se ha publicado ninguna evaluacion al respecto.
-- Sesgos: no disponible. El autor no documenta analisis de sesgo ni composicion del dataset de entrenamiento.
-- Cuantizaciones agresivas: Q2_K y las variantes Q3 degradan la calidad de forma apreciable (el propio autor marca Q3_K_M como "lower quality"). Para uso real se recomienda Q4_K_M o superior.
-- Ausencia de cuantizaciones ponderadas o con imatrix: el autor indica que no estan disponibles en el momento de la publicacion, lo que limita la relacion calidad/tamano en los niveles bajos.
-- Adopcion nula: el repositorio registra 0 descargas y 0 likes, por lo que no existe validacion por parte de la comunidad ni informes de fallos conocidos.
-- Licencia: Apache-2.0 permite uso comercial y modificacion, pero la licencia se hereda del modelo base OmniJev/OneJev-0.8B; conviene verificar que ese repositorio mantiene la misma licencia y no impone condiciones adicionales.
-- Fecha de publicacion inusual (27 de septiembre de 2026) y actualizacion practicamente inmediata; conviene comprobar que el repositorio sigue activo antes de integrarlo en un pipeline.
-- Uso multimodal: requiere cargar el fichero `mmproj` correspondiente y un runtime con soporte para el; cargar solo el GGUF principal desactiva las capacidades visuales.
-- Produccion: sin benchmarks, sin contexto documentado y sin soporte declarado de tool calling, cualquier despliegue en entornos criticos exigiria una evaluacion propia previa.
+- Idiomas: el modelo solo declara soporte de inglés; su uso en castellano u otros idiomas no está garantizado y probablemente degrade la calidad.
+- Documentación escasa: no hay información pública sobre arquitectura, contexto, datos de entrenamiento ni evaluación, lo que dificulta estimar su comportamiento en producción.
+- Riesgo de alucinación: inherente a los modelos generativos; en un modelo de decisión el riesgo se traduce en decisiones erróneas con alta confianza, especialmente peligroso en agentes que actúan sobre interfaces reales.
+- Sesgos: no se han publicado análisis de sesgos; el dataset OmniJev/OneJev-Data no está descrito en detalle.
+- Licencia: Apache 2.0 permite uso comercial y modificación, pero conviene verificar las condiciones del modelo base original y de los datos de entrenamiento, que no se detallan.
+- Cuantizaciones de baja calidad: Q2_K y Q3_K_S pueden degradar notablemente la calibración, que es precisamente la capacidad central del modelo; para producción se recomienda Q4_K_M o superior.
+- Contexto desconocido: sin la longitud de contexto publicada, no se puede planificar su uso en conversaciones largas o vídeos extensos.
+- Madurez: el repositorio tiene muy pocas descargas y likes, y fue creado recientemente; no hay evidencia de uso en producción ni comunidad establecida.
 
 ## Enlaces
 
 - Repositorio GGUF: https://huggingface.co/mradermacher/OneJev-0.8B-GGUF
 - Modelo base: https://huggingface.co/OmniJev/OneJev-0.8B
-- Pagina de resumen y descargas del autor para este modelo: https://hf.tst.eu/model#OneJev-0.8B-GGUF
-- Perfil del autor en Hugging Face: https://huggingface.co/mradermacher
-- Solicitudes de cuantizacion: https://huggingface.co/mradermacher/model_requests
-- README de referencia sobre uso de GGUF: https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
-- Grafica comparativa de perplejidad entre tipos de cuantizacion: https://www.nethype.de/huggingface_embed/quantpplgraph.png
-- Notas de Artefact2 sobre cuantizaciones: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
-- Web de la empresa del autor: https://www.nethype.de/
+- Dataset de entrenamiento: https://huggingface.co/datasets/OmniJev/OneJev-Data
+- Página de descargas del cuantizador: https://hf.tst.eu/model#OneJev-0.8B-GGUF
+- Guía de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Solicitudes de cuantización de mradermacher: https://huggingface.co/mradermacher/model_requests
+- Análisis de tipos de cuantización (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9

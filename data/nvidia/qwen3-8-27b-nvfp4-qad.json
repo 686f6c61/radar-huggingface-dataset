@@ -31,7 +31,7 @@
     "modelopt",
     "region:us"
   ],
-  "likes": 74,
+  "likes": 77,
   "downloads_30d": 2037,
   "trending_score": 24.5,
   "parameters": 27728983792,
@@ -60,7 +60,7 @@
     },
     {
       "title": "World Leader in Artificial Intelligence Computing | NVIDIA",
-      "url": "https://www.nvidia.com/",
+      "url": "https://www.nvidia.com/en-us/",
       "snippet": "NVIDIA invents the GPU and drives advances in AI, HPC, gaming, creative design, autonomous vehicles, and robotics."
     },
     {
@@ -69,14 +69,9 @@
       "snippet": "Founded in 1993 by Jensen Huang, Chris Malachowsky, and Curtis Priem, Nvidia is among the largest companies by market …"
     },
     {
-      "title": "Nvidia — Wikipédia",
-      "url": "https://fr.wikipedia.org/wiki/Nvidia",
-      "snippet": "Nvidia Corporation est une société multinationale américaine de technologie basée à Santa Clara et immatriculée dans l'État du …"
-    },
-    {
-      "title": "Qwen3.8-27B | NVIDIA NGC",
-      "url": "http://go/v1/AfLfm3TEAyddav6zEAHInQ59b4mRATeisc41Tjurg0qkHooeHoLWpAXo4s0rwxdvpEOOOeW4jBGFrvxViudJvONgGVgLf8mBBTb1Sq5DZDykY7mXx0aPDBUzEH9bkLcifk05qeDxJeJof5jHcP6utqppBOQD-5GfJQQvFeXaG8YAufPTT6hCFQjBqpC46yyPwil80kx3GmEHfeYLSbD38Y4cKEpR2cvmUWjQbsUtQFXlriS7dcGUQkgbXAY",
-      "snippet": "Use the NGC CLI to download: Copied! Model · QwenQwen3.8-27B · Qwen3.8-27B is a 27-billion-parameter dense vision-language model for text, image, and video understanding, coding, multimodal reasoning, long-context processing, tool calling, and agentic tasks."
+      "title": "NVIDIA",
+      "url": "https://www.nvidia.fr/default.htm",
+      "snippet": "Explorez les dernières innovations et produits NVIDIA, leader en technologies graphiques et d'intelligence artificielle."
     }
   ]
 }

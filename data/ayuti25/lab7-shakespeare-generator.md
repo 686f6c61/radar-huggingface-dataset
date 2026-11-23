@@ -2,91 +2,93 @@
 
 ## Resumen
 
-lab7-shakespeare-generator es un ajuste fino (fine-tuning) del modelo SmolLM2-135M de HuggingFaceTB, publicado por el usuario Ayuti25 en Hugging Face. Se trata de un modelo de generacion de texto de tipo decoder-only basado en la arquitectura Llama, con 134.515.008 parametros totales, entrenado para generar texto con estilo shakespeariano segun indica su nombre. El repositorio tiene un tamano de 0,5 GB y los pesos se distribuyen en formato safetensors.
+lab7-shakespeare-generator es un ajuste fino (fine-tuning) del modelo SmolLM2-135M de HuggingFaceTB, publicado por el usuario Ayuti25 en Hugging Face. Se trata de un modelo de generacion de texto de pequeno tamano (134,5 millones de parametros) entrenado con la libreria Transformers y la clase Trainer, cuyo objetivo declarado es la generacion de texto con estilo shakespeariano, aunque la model card no documenta el dataset de entrenamiento ni los usos previstos.
 
-El modelo parte de SmolLM2-135M, un modelo compacto disenado para entornos con recursos limitados, y ha sido reentrenado durante 2 epocas con un learning rate de 0,0005, batch size de 8 y scheduler coseno, alcanzando una perdida de validacion de 3,2402. La model card es practicamente automatica y no documenta el dataset de entrenamiento, los idiomas soportados ni los casos de uso previstos, por lo que la informacion disponible es muy limitada.
+El modelo parte de la arquitectura Llama de SmolLM2, un transformer decoder-only optimizado para eficiencia en dispositivos con recursos limitados. Con 134,5 millones de parametros y un repositorio de 0,5 GB en formato safetensors, esta pensado para experimentacion y prototipado rapido mas que para produccion a gran escala. La licencia Apache 2.0 facilita su reutilizacion comercial, aunque la ausencia de documentacion sobre el dataset y los sesgos limita su fiabilidad en entornos reales.
 
-Su relevancia es escasa en terminos de rendimiento o novedad tecnica: se trata de un experimento de fine-tuning de un modelo pequeno, sin benchmarks publicados (la seccion `model-index` esta vacia) y sin descargas ni interacciones en el momento de la consulta. Resulta util unicamente como ejemplo de ajuste de SmolLM2 para una tarea estilistica concreta o como material didactico.
+Es relevante ahora como ejemplo de fine-tuning accesible: cualquiera con una GPU consumer puede reproducir el entrenamiento (2 epochs, 728 pasos, learning rate 5e-4) y desplegarlo con herramientas como transformers o text-generation-inference. No obstante, su perdida de validacion final (3,2402) y la falta de benchmarks publicados indican que su calidad esta lejos de modelos mas grandes y mejor documentados.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (familia Llama, segun tag `llama`) |
+| Arquitectura | Transformer decoder-only (familia Llama, base SmolLM2-135M) |
 | Parametros totales | 134.515.008 |
-| Parametros activos | no aplica (no es MoE) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible (pesos en safetensors; no se documentan variantes GGUF/AWQ/GPTQ) |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible (heredada de SmolLM2-135M; no documentada en la model card) |
+| Tipos de cuantizacion | no disponible (pesos en safetensors; compatible con cuantizacion estandar de transformers, pero no documentada) |
 | Idiomas soportados | no disponible |
 | Licencia | apache-2.0 |
 | Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un fine-tuning de HuggingFaceTB/SmolLM2-135M, un transformer decoder-only de la familia Llama con 134,5 millones de parametros. No se documenta ninguna modificacion arquitectonica respecto al modelo base: se trata de un ajuste supervisado estandar realizado con la libreria Transformers (version 5.14.1) y PyTorch 2.9.1+cu128. La model card indica que fue generado automaticamente por el Trainer y no aporta detalles sobre la composicion del dataset, el numero de tokens de entrenamiento ni si se aplicaron tecnicas de RLHF, DPO o similares.
+El modelo es un fine-tuning de SmolLM2-135M, un transformer decoder-only de la familia Llama con 134,5 millones de parametros. No se trata de una arquitectura MoE ni hibrida; es un transformer denso estandar. La model card no detalla la composicion del dataset de entrenamiento (se indica "unknown dataset") ni el numero de tokens utilizados, aunque por el numero de pasos (728) y el tamano de batch (8) se puede inferir un corpus de aproximadamente 5.824 muestras por epoch, asumiendo que cada paso consume un batch.
 
-Los hiperparametros documentados son: learning rate de 0,0005, batch size de entrenamiento y evaluacion de 8, optimizador AdamW con betas (0,9; 0,999) y epsilon 1e-08, scheduler coseno con 50 pasos de warmup, semilla 42 y 2 epocas completas (728 pasos). La perdida de entrenamiento descendio de 3,3220 a 2,4518, mientras que la perdida de validacion se estabilizo en torno a 3,24 desde el paso 400, lo que sugiere un sobreajuste temprano al dataset de ajuste. No se documenta ninguna innovacion tecnica adicional (decodificacion especulativa, atencion lineal, etc.).
+El entrenamiento se realizo con la clase Trainer de Transformers 5.14.1 sobre PyTorch 2.9.1+cu128, con optimizador AdamW fused (betas 0,9/0,999, epsilon 1e-8), learning rate 5e-4, scheduler coseno con 50 pasos de warmup, 2 epochs, seed 42 y batch de 8 tanto en entrenamiento como en evaluacion. La perdida de entrenamiento descendio de 3,3220 a 2,4518, mientras que la de validacion se estabilizo en torno a 3,24 tras el primer epoch, lo que sugiere un sobreajuste moderado a partir del paso 400. No se documenta el uso de RLHF, DPO ni ninguna innovacion tecnica adicional (sin decodificacion especulativa ni atencion lineal propia).
 
 ## Capacidades
 
-- Generacion de texto autoregresiva, heredada del modelo base SmolLM2-135M.
-- Generacion de texto con estilo shakespeariano, segun el nombre del modelo (no verificado en la model card).
-- No se documenta soporte de tool calling ni function calling.
-- No se documenta soporte de agentes ni razonamiento multi-paso.
-- Capacidades multilingues: no disponibles (el campo de idiomas no esta informado).
-- No se documentan capacidades especiales (modo thinking, vision, audio).
+- Generacion de texto autoregresiva: el modelo produce texto continuo a partir de un prompt, orientado segun su nombre a estilo shakespeariano, aunque la model card no lo confirma explicitamente.
+- Razonamiento basico y coherencia local: limitada por su tamano (135M), adecuada para frases y parrafos cortos, no para cadenas de razonamiento largas.
+- Generacion de codigo y matematicas: no documentada; el modelo base SmolLM2-135M tiene capacidades limitadas en estas areas y el fine-tuning no las declara.
+- Tool calling / function calling: no disponible; no se menciona soporte en la model card.
+- Soporte de agentes y razonamiento multi-paso: no disponible.
+- Capacidades multilingues: no disponibles; no se especifican idiomas.
+- Capacidades especiales (thinking mode, vision, audio): no disponibles.
 
 ## Casos de uso
 
-- Generacion de texto creativo con estilo isabelino: el modelo puede producir parrafos con registro arcaico ingles para prototipos de narrativa o teatro, dado que su ajuste parece orientado a ese dominio por el nombre del repositorio.
-- Material didactico para practicas de fine-tuning: sirve como ejemplo reproducible de ajuste de SmolLM2-135M con hiperparametros documentados (lr 5e-4, 2 epocas, AdamW) en cursos o laboratorios de NLP.
-- Pruebas de pipelines de inferencia ligeros: al ocupar 0,5 GB en safetensors, puede desplegarse en entornos con recursos minimos para validar integraciones con Transformers o text-generation-inference.
-- Generacion de texto en dispositivos de borde: por su tamano reducido, es viable en CPU o GPUs de gama baja para tareas de generacion corta donde no se requiera alta calidad.
-- Experimentos de comparacion de estilos: permite contrastar la salida del modelo base frente al ajustado para medir el efecto del fine-tuning en el registro linguistico.
-- Base para nuevos ajustes: puede servir como punto de partida para fine-tunings posteriores sobre dominios especificos, dado que su licencia Apache 2.0 lo permite.
+- Prototipado de generacion de texto estilizado: usar el modelo para generar dialogos o parrafos con tono shakespeariano en demos, talleres o ejercicios docentes, aprovechando su bajo coste computacional y su licencia permisiva.
+- Educacion y ensenanza de fine-tuning: servir como ejemplo reproducible de ajuste fino de un modelo pequeno con Trainer, ya que la model card documenta hiperparametros y curvas de perdida.
+- Generacion de texto en dispositivos con recursos limitados: desplegarlo en CPU o GPUs de gama baja (por debajo de 1 GB de VRAM en fp16) para tareas de generacion corta donde no se requiera alta calidad.
+- Filtrado y generacion de contenido creativo offline: integrarlo en herramientas locales de escritura asistida o generacion de prompts, sin dependencia de APIs externas.
+- Base para nuevos fine-tunings: partir de este checkpoint para experimentar con datasets propios de estilo literario o dominio especifico, dado su bajo coste de entrenamiento (728 pasos en 2 epochs).
+- Pruebas de pipelines de despliegue: validar integraciones con transformers, text-generation-inference o endpoints compatibles usando un modelo pequeno antes de escalar a modelos mayores.
 
 ## Benchmarks y rendimiento
 
-El `model-index` del modelo declara una lista de resultados vacia. La unica metrica publicada es la perdida de validacion durante el entrenamiento:
+La model card declara un unico resultado en la seccion de evaluacion: perdida de validacion de 3,2402. El model-index no incluye resultados de benchmarks estandar (MMLU, HumanEval, GSM8K, etc.).
 
 | Metrica | Valor |
 |---|---|
-| Perdida de validacion final (epoca 2, paso 728) | 3,2402 |
-| Perdida de entrenamiento final | 2,4518 |
-| Perdida de validacion minima observada | 3,2052 (paso 300) |
-
-No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K, etc.) en la informacion disponible.
+| Perdida de validacion (final) | 3,2402 |
+| Perdida de entrenamiento (final) | 2,4518 |
+| MMLU | no disponible |
+| HumanEval | no disponible |
+| GSM8K | no disponible |
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia en fp32: aproximadamente 0,54 GB solo para pesos (134,5 M de parametros x 4 bytes), mas overhead de activaciones y KV cache.
-- VRAM estimada en fp16/bf16: aproximadamente 0,27 GB para pesos.
-- Cabe holgadamente en cualquier GPU consumer (GTX 1060 6 GB, RTX 3060, RTX 4090) e incluso en CPU para generacion de baja latencia.
-- Opciones de despliegue: Transformers (libreria nativa del modelo), text-generation-inference (tag `text-generation-inference`), y potencialmente llama.cpp u Ollama si se convierte a GGUF (no se distribuyen pesos GGUF en el repositorio).
-- Latencia y throughput: no disponibles; no se han publicado mediciones.
+- VRAM estimada para inferencia: aproximadamente 0,3 GB en fp16 (270 MB de pesos) y en torno a 0,15 GB en int8; el repositorio completo ocupa 0,5 GB.
+- GPU recomendadas: cualquier GPU consumer moderna (RTX 3060, RTX 4060, RTX 4090) es mas que suficiente; tambien funciona en CPU.
+- Cabe en GPU consumer: si, en practicamente todas las GPU con al menos 1 GB de VRAM, e incluso en Raspberry Pi o moviles con cuantizacion.
+- Opciones de despliegue: transformers (libreria nativa), text-generation-inference (tag endpoints_compatible), llama.cpp/Ollama mediante conversion a GGUF (no incluida en el repo), vLLM (soporte para modelos Llama pequenos).
+- Latencia y throughput estimados: no disponibles en la informacion proporcionada; por el tamano, se espera decodificacion en tiempo real en GPU consumer y varios tokens por segundo en CPU.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Disponibilidad |
-|---|---|---|---|---|
-| lab7-shakespeare-generator | 134,5 M | no disponible | Apache 2.0 | Hugging Face (0 descargas) |
-| HuggingFaceTB/SmolLM2-135M (base) | 135 M | 8.192 tokens (segun documentacion del modelo base) | Apache 2.0 | Hugging Face |
-| SmolLM2-360M | 360 M | 8.192 tokens (segun documentacion del modelo base) | Apache 2.0 | Hugging Face |
-| Qwen2.5-0.5B | 0,5 B | 32.768 tokens (segun documentacion del modelo) | Apache 2.0 | Hugging Face |
+| Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
+|---|---|---|---|---|---|
+| lab7-shakespeare-generator | 134,5 M | no disponible | Apache 2.0 | Hugging Face (556 descargas) | Fine-tuning de SmolLM2-135M, sin benchmarks |
+| HuggingFaceTB/SmolLM2-135M | 135 M | 8.192 tokens (segun documentacion del modelo base) | Apache 2.0 | Hugging Face | Modelo base, con benchmarks publicados por HuggingFace |
+| TinyLlama-1.1B | 1,1 B | 2.048 tokens | Apache 2.0 | Hugging Face | Mayor capacidad, requiere mas VRAM |
+| Qwen2.5-0.5B | 0,5 B | 32.768 tokens | Apache 2.0 | Hugging Face | Contexto mucho mayor y mejor rendimiento general |
 
-No se dispone de datos de rendimiento comparativo para este ajuste concreto, ya que no se han publicado benchmarks. El modelo base SmolLM2-135M y sus variantes cuentan con evaluaciones publicas por parte de HuggingFaceTB, pero no se reproducen aqui al no formar parte de la informacion proporcionada sobre este modelo.
+La comparativa se basa en datos publicos de los modelos alternativos; para el modelo evaluado, los datos de contexto y rendimiento no estan disponibles en la model card.
 
 ## Limitaciones y advertencias
 
-- La model card es automatica y no documenta el dataset de entrenamiento, los idiomas ni los usos previstos, lo que impide evaluar sesgos y cobertura linguistica.
-- La perdida de validacion se estanca a partir del paso 400 mientras la de entrenamiento sigue bajando, lo que indica sobreajuste al conjunto de ajuste y riesgo de baja generalizacion.
-- Riesgo elevado de alucinacion y de generar texto incoherente fuera del dominio shakespeariano, dado el tamano reducido del modelo base (135 M) y la falta de evaluacion.
-- No se documenta la longitud de contexto efectiva del ajuste; debe asumirse la del modelo base, no verificada en esta ficha.
-- Licencia Apache 2.0: permite uso comercial, pero el autor no ofrece garantias ni documentacion sobre el origen de los datos de entrenamiento, lo que traslada al usuario la responsabilidad sobre posibles infracciones de derechos de autor del corpus.
-- Sin descargas ni validacion por parte de la comunidad: no hay evidencia externa de calidad.
-- No apto para tareas que requieran razonamiento complejo, codigo, matematicas o tool calling, capacidades no documentadas ni esperables en un modelo de este tamano.
+- Sesgos conocidos: no documentados; al no especificarse el dataset de entrenamiento, no es posible evaluar sesgos de genero, raza o ideologicos.
+- Riesgo de alucinacion: alto en relacion con su tamano (135M) y con una perdida de validacion de 3,24; no es fiable para datos factuales.
+- Limitaciones de contexto e idioma: la longitud de contexto no esta documentada y los idiomas soportados no se especifican; se desconoce si conserva el contexto de 8.192 tokens de SmolLM2-135M.
+- Restricciones de licencia: Apache 2.0 permite uso comercial, pero el autor no ofrece garantias ni documentacion sobre el dataset, lo que puede implicar riesgos legales si el corpus de entrenamiento contenia material con derechos de autor.
+- Caveats para produccion: la model card esta autogenerada y sin completar ("More information needed"); no hay benchmarks, ni evaluacion de seguridad, ni versionado. No se recomienda su uso en produccion sin una evaluacion previa propia.
+- Sobreajuste: la perdida de validacion se estanca a partir del paso 400 mientras la de entrenamiento sigue bajando, lo que sugiere sobreajuste al dataset de ajuste.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/Ayuti25/lab7-shakespeare-generator
+- Hugging Face: https://huggingface.co/Ayuti25/lab7-shakespeare-generator
 - Modelo base SmolLM2-135M: https://huggingface.co/HuggingFaceTB/SmolLM2-135M
+- Documentacion de Transformers Trainer: https://huggingface.co/docs/transformers/main_classes/trainer
+- Text Generation Inference: https://huggingface.co/docs/text-generation-inference

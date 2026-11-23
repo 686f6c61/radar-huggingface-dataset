@@ -2,119 +2,107 @@
 
 ## Resumen
 
-OpenThai 2.0 es un modelo de visión-lenguaje (VLM) de 27.000 millones de parámetros desarrollado por iApp Technology junto con la Asociación de Empresarios de Inteligencia Artificial de Tailandia (AIEAT). Está construido sobre la base Qwen/Qwen3.8-27B y se ha ajustado específicamente para la lectura de documentos y escritura manual en tailandés, así como para el conocimiento general de Tailandia y el uso de herramientas en entornos agénticos. El modelo se publica bajo licencia Apache 2.0 y está disponible en múltiples formatos, desde pesos completos en bf16 hasta cuantizaciones GGUF para hardware de consumo.
+OpenThai2.0 es un modelo de lenguaje y visión de 27.781 millones de parámetros desarrollado por iApp Technology en colaboración con AIEAT, dentro de la familia OpenThai (anteriormente OpenThaiGPT). Se trata de un ajuste fino del modelo base Qwen/Qwen3.8-27B orientado específicamente a tres áreas: conocimiento factual en tailandés, comprensión de documentos e imágenes (OCR y manuscrito) y uso agéntico de herramientas. El modelo se distribuye con licencia Apache 2.0 y soporta tailandés e inglés.
 
-La relevancia de este lanzamiento radica en que aborda un vacío claro en el ecosistema de modelos abiertos: la comprensión de documentos tailandeses, incluida la escritura a mano, con un nivel de especialización que supera a su modelo base y a alternativas comerciales cerradas. Además, mantiene las capacidades generales de razonamiento y código de Qwen3.8-27B, lo que lo convierte en una opción versátil para aplicaciones multilingües y agénticas. La versión v2.0.1, publicada en agosto de 2026, corrige una regresión en el conocimiento factual tailandés detectada por la comunidad, mejorando los resultados en exámenes nacionales tailandeses y en benchmarks de instrucciones.
+El modelo resuelve el problema de la escasez de modelos abiertos con competencia real en tailandés, un idioma con poca representación en los grandes modelos multilingües. Según la model card, supera a su modelo base y a alternativas como Typhoon 2.5 y Pathumma en pruebas de conocimiento (OpenThaiEval 0.842) e instrucciones en tailandés (IFEval-TH 0.795), y mantiene la inteligencia general del modelo base. La arquitectura es la del Qwen3.8-27B subyacente (transformer denso con capacidades de visión), con un adaptador LoRA de rango 64 que se puede servir sobre el modelo base original.
 
-Con una ventana de contexto de 32.768 tokens, soporte para imágenes y texto, y un rendimiento destacado en benchmarks de OCR y uso de herramientas, OpenThai 2.0 se posiciona como una alternativa sólida para desarrolladores que trabajan con tailandés o con documentos del sudeste asiático.
+La relevancia actual del modelo radica en su enfoque "todo en uno" para el ecosistema tailandés: combina OCR de documentos impresos y manuscritos, conocimiento cerrado del idioma, seguimiento de instrucciones y llamada a herramientas en un único checkpoint. Además, se publica en múltiples formatos (bf16, GGUF, MLX, INT8, NVFP4) y con soporte de decodificación especulativa mediante la cabeza MTP del modelo base.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer vision-language (basado en Qwen3.8-27B) |
-| Parametros totales | 27.781.427.952 |
-| Parametros activos | No aplica (modelo denso, no MoE) |
-| Longitud de contexto | 32.768 tokens (según configuracion vLLM recomendada) |
-| Tipos de cuantizacion | bf16, GGUF Q4_K_M, GGUF Q8_0, GGUF IQ2_M (2-bit con imatrix), MLX 4-bit, INT8 W8A8, NVFP4 |
-| Idiomas soportados | Tailandes (th), ingles (en) |
+| Arquitectura | Transformer denso con visión (basado en Qwen3.8-27B, familia qwen3_5) |
+| Parámetros totales | 27.781.427.952 (27,78 B) |
+| Parámetros activos | No aplica (modelo denso) |
+| Longitud de contexto | 32.768 tokens (configuración de despliegue recomendada con vLLM) |
+| Tipos de cuantización | bf16, GGUF Q4_K_M, GGUF Q8_0, GGUF IQ2_M (2 bits, imatrix), MLX 4-bit, INT8 W8A8, NVFP4 |
+| Idiomas soportados | Tailandés (th), inglés (en) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (bf16), GGUF, MLX, INT8, NVFP4 |
+| Formato de pesos | safetensors (bf16), GGUF, MLX, INT8, NVFP4; adaptador LoRA en `adapter/` |
 
 ## Arquitectura y entrenamiento
 
-OpenThai 2.0 hereda la arquitectura del modelo base Qwen3.8-27B, un transformer denso con componentes de visión que procesa imágenes y texto de forma conjunta. El ajuste fino se ha realizado en dos fases principales. La primera fase se centró en la comprensión de documentos y OCR, con un corpus de documentos tailandeses, escritura a mano y texto de escena. Esta fase provocó una pérdida de conocimiento general tailandés, detectada por la comunidad en la versión v2.0.0. La segunda fase (v2.0.1) reintrodujo ese conocimiento mediante aproximadamente 40.000 pares de preguntas y respuestas verificados extraídos de artículos de Wikipedia relacionados con Tailandia, junto con un conjunto de ejercicios sobre canon literario tailandés (literatura, historia, lenguaje cortesano y métrica). Para preservar las habilidades documentales, se co-entrenó con el corpus completo de escritura a mano y se aplicó una fusión selectiva por aritmética de tareas hacia la versión anterior.
+El modelo parte de Qwen/Qwen3.8-27B, un transformer denso con capacidad de procesamiento de imagen y texto (pipeline `image-text-to-text`). El ajuste se realiza mediante un adaptador LoRA de rango 64 (7 GB) que se puede servir de forma dinámica sobre el modelo base. El checkpoint completo incluye la cabeza de predicción multi-token (MTP) del modelo base (`mtp.*`, `text_config.mtp_num_hidden_layers: 1`), lo que permite decodificación auto-especulativa en vLLM.
 
-El checkpoint incluye además la cabeza de predicción multi-token (MTP) del modelo Qwen3.8, que permite una decodificación más rápida sin alterar las salidas. No se han publicado detalles sobre el uso de RLHF o DPO; la información disponible indica un ajuste supervisado y fusión de pesos.
+Los detalles concretos sobre el volumen de tokens de entrenamiento, la composición del dataset y el uso de RLHF o DPO no están disponibles en la información proporcionada. La model card menciona que la versión v2.0.3 corrigió los datos de entrenamiento de "freerecall" (recuperación libre) en tailandés, que contenían un registro de citas fantasma ("บทความระบุ...") y preguntas de forma única; se limpiaron y se volvieron a entrenar con paráfrasis generadas por el propio modelo. También se añadió en v2.0.2 una barrera de seguridad en tailandés.
+
+Como innovación técnica destacable, el modelo soporta decodificación especulativa con la cabeza MTP: según la model card, se midieron 75,2 tok/s con MTP frente a 50,1 tok/s sin MTP (+50 %, un solo stream, H100, mismas prompts), con salidas idénticas verificadas token a token por el modelo principal.
 
 ## Capacidades
 
-- Lectura y comprensión de documentos tailandeses impresos y escritos a mano, con tasas de error (CER) notablemente reducidas frente al modelo base (una mejora del 60% en escritura a mano según el blog de lanzamiento).
-- OCR de texto de escena en tailandés e inglés, incluido texto en imágenes naturales.
-- Conocimiento factual tailandés: literatura, historia, lenguaje cortesano (ราชาศัพท์), clasificadores (ลักษณนาม) y métrica poética (ฉันทลักษณ์), con mejoras verificadas en la versión v2.0.1.
-- Razonamiento general, generación de código y matemáticas, heredados del modelo base Qwen3.8-27B.
-- Uso de herramientas (tool calling) y razonamiento multi-paso, con resultados superiores a su modelo base y a Typhoon 2.5 en el benchmark BFCL (agentic tool use).
-- Soporte de modo de pensamiento (reasoning) integrado, compatible con el parser de razonamiento de Qwen3.
-- Capacidades multilingües limitadas a tailandés e inglés, con soporte de code-switching entre ambos idiomas.
+- Generación de texto y razonamiento en tailandés e inglés.
+- Comprensión de documentos e imágenes: OCR de texto impreso y manuscrito en tailandés, con un CER de 0,084 en OCR-Eval-104 (versión v2.0.3).
+- Conocimiento factual en tailandés en modo cerrado (closed-book), con una batería de conocimiento tailandés de 21/21 en v2.0.3.
+- Seguimiento de instrucciones en tailandés (IFEval-TH 0,837 en v2.0.3).
+- Generación de código (HumanEval 0,982 según la model card).
+- Llamada a herramientas y uso agéntico (function calling), con resultados que según el autor superan a su modelo base y a Typhoon en BFCL.
+- Capacidad de parafraseo y reformulación en tailandés (batería de paráfrasis 85/104 en v2.0.3).
+- Modo de razonamiento (thinking) y soporte de visión incluidos en la distribución de Ollama.
+- Barrera de seguridad en tailandés (introducida en v2.0.2).
+- Soporte de decodificación especulativa mediante MTP para acelerar la inferencia.
 
 ## Casos de uso
 
-- Digitalización de archivos históricos tailandeses: el modelo puede transcribir documentos manuscritos y textos antiguos con una precisión que supera a los OCR genéricos, facilitando la creación de archivos digitales consultables.
-- Atención al cliente automatizada en tailandés: con su capacidad de comprensión de documentos y conocimiento local, puede gestionar consultas sobre servicios gubernamentales, banca o telecomunicaciones, integrando lectura de formularios o capturas de pantalla.
-- Asistente de estudio para estudiantes tailandeses: responde preguntas sobre literatura, historia y gramática tailandesa, y puede explicar conceptos a partir de imágenes de libros de texto.
-- Extracción de datos de documentos administrativos: facturas, formularios y certificados en tailandés pueden procesarse para extraer campos clave, con la ventaja de manejar tanto texto impreso como manuscrito.
-- Agente de automatización de tareas ofimáticas: combinado con su soporte de tool calling, puede actuar como agente que consulta APIs, envía correos o actualiza bases de datos, todo en tailandés o inglés.
-- Desarrollo de aplicaciones de accesibilidad: lectura en voz alta de documentos manuscritos o impresos para personas con discapacidad visual, con soporte de contexto largo para documentos extensos.
-- Traducción y localización de contenido: sirve como motor de traducción tailandés-inglés con comprensión contextual de documentos, útil para empresas que necesitan procesar material bilingüe.
+- Digitalización de documentos tailandeses: el modelo puede extraer texto de documentos impresos y manuscritos con un CER de 0,084, adecuado para pipelines de archivo, facturación o expedientes administrativos en tailandés.
+- Atención al cliente en tailandés: con 32.768 tokens de contexto y buen seguimiento de instrucciones (IFEval-TH 0,837), puede gestionar conversaciones multi-turno con historial largo e instrucciones de estilo.
+- Asistente de conocimiento local: responde preguntas factuales sobre Tailandia en modo cerrado (batería 21/21), útil para aplicaciones educativas o de consulta sin acceso a internet.
+- Agentes con herramientas: su rendimiento en BFCL permite integrarlo en flujos agénticos que consulten APIs, bases de datos o servicios externos mediante function calling.
+- Generación y revisión de código: con HumanEval 0,982, puede emplearse en asistentes de programación para equipos que trabajen en tailandés e inglés.
+- Despliegue en hardware de consumo: las versiones GGUF Q4_K_M (17 GB) e IQ2_M (9,8 GB) permiten ejecutarlo en GPU de consumo o CPU mediante llama.cpp u Ollama, útil para prototipos y entornos sin infraestructura dedicada.
+- Procesamiento de formularios y documentos escaneados en macOS: la versión MLX 4-bit (unos 16 GB) permite OCR y comprensión de documentos en Apple Silicon con 24 GB o más de memoria unificada.
 
 ## Benchmarks y rendimiento
 
-La model card proporciona resultados medidos en la versión v2.0.1 bajo un protocolo idéntico al de la versión anterior. Se presentan los valores más relevantes:
+| Benchmark | OpenThai2.0 | Qwen3.8-27B (base) | Typhoon 2.5 | Pathumma |
+|---|---|---|---|---|
+| OpenThaiEval (exámenes nacionales tailandeses) | 0,842 | 0,820 | 0,742 | 0,660 |
+| IFEval-TH (seguimiento de instrucciones) | 0,795 (v2.0.3: 0,837) | 0,772 | 0,749 | no disponible |
+| OCR-Eval-104 (CER, menor es mejor) | 0,084 (v2.0.3) | no disponible | no disponible | no disponible |
+| HumanEval | 0,982 (v2.0.3) | no disponible | no disponible | no disponible |
+| Batería de conocimiento tailandés | 21/21 (v2.0.3) | no disponible | no disponible | no disponible |
+| Batería de paráfrasis | 85/104 (v2.0.3) | no disponible | no disponible | no disponible |
 
-| Benchmark | v2.0.0 | v2.0.1 | Cambio |
-|---|---|---|---|
-| OpenThaiEval (examenes nacionales tailandeses) | 0.834 | 0.842 | +0.008 |
-| IFEval (EN) | 0.914 | 0.896 | -0.018 |
-| IFEval-TH | 0.795 | 0.837 | +0.042 |
-| HumanEval | 0.945 | 0.970 | +0.025 |
-| MMLU-Redux | 0.916 | 0.923 | +0.007 |
-| Code-switching TH↔EN | 0.985 | 0.955 | -0.030 |
-| Wikisource TH (CER) | 0.126 | 0.131 | +0.005 |
-| DocBench (CER) | 0.327 | 0.344 | +0.017 |
-| SEA-DocBench-TH (CER) | 0.497 | 0.506 | +0.009 |
-| ThaiOCRBench (CER) | 0.743 | 0.731 | -0.012 |
-| MTVQA-TH scene text (CER) | 0.819 | 0.784 | -0.035 |
-| Thai handwriting, text-disjoint (CER) | 0.261 | 0.241 | -0.020 |
-| OCR-Eval-104 printed (CER) | 0.077 | 0.070 | -0.007 |
-| English document holdout (CER) | 0.333 | 0.333 | 0.000 |
-| Thai handwriting CPE-OPH (CER) | 0.385 | 0.351 | -0.034 |
-| BFCL agentic tool use (overall) | 0.820 | 0.806 | -0.014 |
-| BFCL multi-turn agentic episodes | 0.775 | 0.760 | -0.015 |
-
-Nota: en las métricas CER (Character Error Rate), valores más bajos indican mejor rendimiento. El blog de lanzamiento indica que el modelo "lidera" en BFCL frente a su modelo base y a Typhoon 2.5, aunque no se proporcionan los valores exactos de Typhoon en la información disponible.
+No se han publicado en la información disponible resultados numéricos de BFCL ni de benchmarks generales como MMLU o GSM8K.
 
 ## Requisitos de hardware
 
-- Peso completo en bf16: requiere aproximadamente 56 GB de VRAM, por lo que se recomienda una GPU de 80 GB (A100, H100) o dos GPUs de 48 GB. El comando de ejemplo usa `--gpu-memory-utilization 0.85` con una sola GPU de 80 GB.
-- GGUF Q4_K_M: ~17 GB, ejecutable en GPUs de consumo como RTX 4090 (24 GB) o RTX 3090.
-- GGUF Q8_0: ~29 GB, requiere GPUs con 32 GB o más (p. ej., RTX 4090 con 24 GB no es suficiente; se necesita una A6000 o similar).
-- GGUF IQ2_M (2-bit): ~9.8 GB, cabe en GPUs con 12-16 GB (RTX 4070, 4080). El autor recomienda Q4_K_M cuando sea posible, pero IQ2_M es la opción para hardware limitado.
-- MLX 4-bit: ~16 GB de memoria unificada, adecuado para Apple Silicon con 24 GB o más (M1 Pro/Max, M2 Pro/Max, M3 Pro/Max).
-- INT8 W8A8: ~40 GB, para GPUs de clase 40 GB (A100 40GB, L40S).
-- NVFP4: específico para GPUs NVIDIA Blackwell (B200, etc.).
-- Opciones de despliegue: vLLM (con soporte de parser de razonamiento Qwen3), llama.cpp (para GGUF), Ollama (comando `ollama run openthai/openthai2.0-qwen3.8-27b`), MLX (para Apple Silicon), y transformers estándar.
-- El adaptador LoRA (rank 64, 7 GB) se puede servir sobre el modelo base con LoRA dinámica para ahorrar memoria.
+- VRAM estimada en bf16: aproximadamente 56 GB, según la model card (cabe en una GPU de 80 GB).
+- GPU recomendadas: una GPU de 80 GB (A100 80 GB, H100) para bf16 con vLLM; GPUs de clase 40 GB para INT8 W8A8; NVIDIA Blackwell para NVFP4.
+- GPU de consumo: GGUF Q4_K_M (17 GB) y Q8_0 (29 GB) permiten ejecución en GPU de consumo con suficiente VRAM o en CPU mediante llama.cpp; IQ2_M (9,8 GB) está pensado para entornos con menos memoria.
+- Apple Silicon: MLX 4-bit requiere 24 GB o más de memoria unificada (unos 16 GB de uso); TensorFold requiere 48 GB o más en Apple Silicon o GPU NVIDIA (DGX Spark, RTX 40/50, Hopper, Blackwell).
+- Opciones de despliegue: vLLM (con `--reasoning-parser qwen3` y `--trust-remote-code`), llama.cpp, Ollama (`ollama run openthai/openthai2.0-qwen3.8-27b`), MLX, TensorFold y transformers.
+- Latencia y throughput: 75,2 tok/s con MTP frente a 50,1 tok/s sin MTP (un solo stream, H100, mismas prompts). No se dispone de más datos de latencia o throughput.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Especializacion | BFCL overall |
-|---|---|---|---|---|---|
-| OpenThai 2.0 (v2.0.1) | 27.8B | 32.768 | Apache 2.0 | Tailandes, OCR, agentes | 0.806 |
-| Qwen3.8-27B (base) | 27.8B | 32.768 (aprox.) | Apache 2.0 | General, multilingue | No reportado (inferior segun el autor) |
-| Typhoon 2.5 (tailandes) | No disponible | No disponible | No disponible | Tailandes | Inferior segun el autor |
+| Modelo | Parámetros | Contexto | OpenThaiEval | IFEval-TH | Licencia | Disponibilidad |
+|---|---|---|---|---|---|---|
+| OpenThai2.0 (este modelo) | 27,78 B | 32.768 tokens | 0,842 | 0,795 (0,837 en v2.0.3) | Apache 2.0 | Hugging Face, Ollama, GGUF, MLX, INT8, NVFP4 |
+| Qwen3.8-27B (base) | 27 B (aproximado, no confirmado) | no disponible | 0,820 | 0,772 | no disponible en la información | Hugging Face |
+| Typhoon 2.5 | no disponible | no disponible | 0,742 | 0,749 | no disponible en la información | no disponible en la información |
+| Pathumma | no disponible | no disponible | 0,660 | no disponible | no disponible en la información | no disponible en la información |
 
-La comparación con Typhoon 2.5 se menciona cualitativamente en el blog de lanzamiento, pero no se proporcionan cifras exactas de BFCL ni de otros benchmarks. OpenThai 2.0 supera a su modelo base en tareas de documento y uso de herramientas, mientras que mantiene un rendimiento general comparable. La principal diferencia frente a Qwen3.8-27B es la especialización en tailandés y la mejora en OCR, a costa de una ligera caída en algunos benchmarks generales (p. ej., code-switching).
+Los datos de parámetros, contexto y licencia de los modelos comparados no están disponibles en la información proporcionada; solo se dispone de sus resultados en OpenThaiEval e IFEval-TH según la model card de OpenThai2.0.
 
 ## Limitaciones y advertencias
 
-- Conocimiento general tailandés no completamente restaurado: la versión v2.0.1 solo recupera un conjunto específico de hechos canónicos; en una prueba con 28 hechos retenidos del entrenamiento, el modelo obtiene entre 5 y 9 aciertos, igual que el modelo base. Para tareas de conocimiento abierto, se recomienda usar RAG (recuperación aumentada).
-- Riesgo de alucinación: como cualquier modelo generativo, puede producir respuestas plausibles pero incorrectas, especialmente en temas fuera de su corpus de entrenamiento.
-- Idiomas limitados: solo tailandés e inglés; el rendimiento en otros idiomas no está garantizado y puede degradarse.
-- Sesgos potenciales: al estar entrenado principalmente con datos tailandeses, puede reflejar sesgos culturales o regionales de Tailandia.
-- La cuantización IQ2_M (2-bit) puede degradar la calidad en tareas complejas; el autor recomienda Q4_K_M cuando el hardware lo permita.
-- El modelo no distingue entre hechos enseñados y no enseñados; la mejora en conocimiento canónico no generaliza a otros hechos tailandeses.
-- Para uso en producción, se recomienda validar las salidas en tareas críticas y combinar con sistemas de verificación externa.
+- El modelo está especializado en tailandés e inglés; su rendimiento en otros idiomas no está documentado y probablemente sea inferior.
+- Riesgo de dispersión de hechos numéricos: la model card advierte que algunas cifras todavía se dispersan a temperatura 0,7; recomienda usar temperatura baja para consultas factuales.
+- Riesgo de alucinación en conocimiento cerrado, especialmente en datos factuales; la versión v2.0.3 corrigió parte de este problema, pero persiste de forma residual.
+- La ventana de contexto recomendada en el despliegue con vLLM es de 32.768 tokens; no se especifica si el modelo soporta contextos mayores.
+- El adaptador LoRA (7 GB, rango 64) debe servirse sobre Qwen/Qwen3.8-27B; la versión MLX omite la cabeza MTP porque mlx-vlm no soporta aún el drafter de esta arquitectura.
+- Las versiones INT8-W8A8 y NVFP4 anteriores al 31 de agosto de 2026 no incluían la cabeza MTP y podían decodificar aproximadamente 1,6 veces más lento con `--speculative-config`; es necesario volver a descargarlas o servir sin esa opción.
+- La licencia Apache 2.0 permite uso comercial, pero el modelo base Qwen3.8-27B puede tener sus propias condiciones que conviene verificar.
+- No se han publicado datos sobre sesgos demográficos, culturales o de seguridad más allá de la barrera de seguridad en tailandés introducida en v2.0.2.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/iapp/openthai2.0-qwen3.8-27b
-- Repositorio GGUF: https://huggingface.co/iapp/openthai2.0-qwen3.8-27b-GGUF
-- Repositorio MLX 4-bit: https://huggingface.co/iapp/openthai2.0-qwen3.8-27b-MLX-4bit
-- Repositorio INT8 W8A8: https://huggingface.co/iapp/openthai2.0-qwen3.8-27b-INT8-W8A8
-- Repositorio NVFP4: https://huggingface.co/iapp/openthai2.0-qwen3.8-27b-NVFP4
-- Página de Ollama: https://ollama.com/openthai/openthai2.0-qwen3.8-27b
-- Blog de lanzamiento (iApp): https://iapp.co.th/blog/openthai2p0-launch
-- Página oficial del producto: https://iapp.co.th/openmodels/openthai2p0
-- Anuncio de AIEAT: https://openthai.aieat.or.th/en/openthai2p0
-- Demo gratuita: https://chinda3.iapp.co.th
+- Versión GGUF: https://huggingface.co/iapp/openthai2.0-qwen3.8-27b-GGUF
+- Versión MLX 4-bit: https://huggingface.co/iapp/openthai2.0-qwen3.8-27b-MLX-4bit
+- Versión INT8 W8A8: https://huggingface.co/iapp/openthai2.0-qwen3.8-27b-INT8-W8A8
+- Versión NVFP4: https://huggingface.co/iapp/openthai2.0-qwen3.8-27b-NVFP4
+- Ollama: https://ollama.com/openthai/openthai2.0-qwen3.8-27b
+- Demo: https://chinda3.iapp.co.th
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B

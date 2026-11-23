@@ -2,85 +2,87 @@
 
 ## Resumen
 
-Vertex-0.6-100M-8192-Instruct-v2 es un modelo de lenguaje pequeño (96,75 millones de parámetros) desarrollado por VertexResearch, basado en la arquitectura Qwen3 y orientado a tareas de chat e instrucción. Se distribuye en formato GGUF para su uso con llama.cpp, lo que permite ejecutarlo en entornos muy ligeros, incluso en CPU. Su principal atractivo es combinar una ventana de contexto de 8192 tokens con soporte de tool calling en un paquete de menos de 100M de parámetros, algo poco habitual en modelos tan compactos.
+Vertex 0.6 100M 8192 Instruct v2 es un modelo de lenguaje de muy pequeño tamaño (96.752.192 parámetros, con embeddings atados) desarrollado por VertexResearch. Se trata de un transformer basado en la arquitectura Qwen3, ajustado para instrucciones y conversación, con una ventana de contexto de 8192 tokens y un formato de chat ChatML. Esta ficha corresponde concretamente a la conversión a GGUF del modelo base, pensada para su ejecución con llama.cpp.
 
-El modelo es la versión instruct de la familia Vertex 0.6, cuyo checkpoint base se preentrenó desde cero sobre 10.010 millones de tokens y se extendió a 8192 tokens de contexto mediante una escalera de RoPE en tres etapas. La versión instruct añade formato ChatML y sintaxis de tool calling, aunque el propio autor advierte de limitaciones importantes en coherencia, precisión factual y fiabilidad del uso de herramientas. No está pensado para producción, sino para experimentación, prototipado y entornos con recursos muy limitados.
+El modelo resuelve el nicho de la experimentación y el despliegue en entornos con recursos extremadamente limitados: con menos de 100 millones de parámetros, cabe en cualquier dispositivo y permite probar pipelines de chat y de tool calling sin infraestructura de GPU. Su relevancia es, por tanto, didáctica y de prototipado, no de producción: el propio autor advierte de que no es coherente todavía y de que requiere más ajuste.
 
-La relevancia actual de este modelo radica en su tamaño extremadamente reducido y su capacidad de ejecutarse en hardware básico, lo que lo convierte en un candidato interesante para pruebas educativas, demos de tool calling y aplicaciones embebidas donde la calidad de generación no sea crítica. Su licencia Apache 2.0 facilita su uso y modificación sin restricciones comerciales.
+La versión GGUF incluye pesos en BF16 y F16, además de un espectro amplio de cuantizaciones (Q8_0, Q5_K_M, Q5_K_S, Q4_K_M, Q4_K_S, Q4_1, Q4_0, Q3_K_M, Q3_K_S y Q2_K). Al ser un modelo tan pequeño, la cuantización apenas aporta ganancias de velocidad y su utilidad principal es reducir el espacio en disco.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
 | Arquitectura | Transformer basado en Qwen3 |
-| Parametros totales | 96.752.192 (embeddings atados) |
-| Parametros activos | No aplica (modelo denso) |
+| Parámetros totales | 96.752.192 (embeddings atados) |
+| Parámetros activos | no disponible (no es MoE) |
 | Longitud de contexto | 8192 tokens (RoPE theta 1M) |
-| Tipos de cuantizacion | BF16, F16, Q8_0, Q5_K_M, Q5_K_S, Q4_K_M, Q4_K_S, Q4_1, Q4_0, Q3_K_M, Q3_K_S, Q2_K |
-| Idiomas soportados | Ingles |
+| Tipos de cuantización | BF16, F16, Q8_0, Q5_K_M, Q5_K_S, Q4_K_M, Q4_K_S, Q4_1, Q4_0, Q3_K_M, Q3_K_S, Q2_K |
+| Idiomas soportados | inglés (en) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (conversion del checkpoint safetensors original) |
+| Formato de pesos | GGUF (repo de 1,1 GB) |
 
 ## Arquitectura y entrenamiento
 
-El modelo sigue una arquitectura transformer densa basada en Qwen3, con embeddings atados (tied embeddings) y una ventana de contexto de 8192 tokens mediante RoPE con theta 1M. El checkpoint base de la familia Vertex 0.6 se preentreno desde cero sobre 10.010 millones de tokens a contexto 1024, y posteriormente se extendio a 8192 mediante una escalera de RoPE en tres etapas: 2048 con 350M tokens, 4096 con theta 250K y 300M tokens, y finalmente 8192 con theta 1M y 285M tokens, todo sobre el dataset Ultra-FineWeb.
+El modelo sigue la arquitectura transformer de Qwen3, con embeddings atados (tied embeddings), lo que explica que el recuento de parámetros totales coincida con el de la matriz de entrada y salida. Utiliza RoPE con theta de 1 millón para sostener la ventana de contexto de 8192 tokens, y emplea el formato de chat ChatML con los tokens especiales `<|im_start|>` y `<|im_end|>`. Los tokens de fin de secuencia configurados son `</s>` (id 2) y `<|im_end|>` (id 6).
 
-La version instruct (este modelo) anade el formato de chat ChatML y soporte de tool calling mediante bloques JSON `<tool_call>`, con definiciones de funciones en el prompt de sistema. No se han publicado detalles sobre el metodo de ajuste instructivo (por ejemplo, si se uso SFT, RLHF o DPO), ni sobre la composicion exacta de los datos de entrenamiento de esta fase. El conocimiento del modelo se corta aproximadamente en abril de 2024.
+La información disponible no detalla el volumen de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas de RLHF o DPO. El autor sí indica que se trata de un ajuste de instrucciones y que el corte de conocimiento se sitúa aproximadamente en abril de 2024. El soporte de tool calling se implementa mediante bloques JSON delimitados por `<tool_call>`, con las definiciones de funciones incluidas en el system prompt.
 
 ## Capacidades
 
-- Generacion de texto y chat multi-turno en ingles, con formato ChatML (`<|im_start|>` / `<|im_end|>`).
-- Soporte de tool calling mecanico: puede emitir bloques JSON `<tool_call>` y detenerse limpiamente cuando hay una sola funcion disponible.
-- Razonamiento basico y respuestas a instrucciones simples, aunque con limitaciones en tareas complejas.
-- Ventana de contexto de 8192 tokens, suficiente para dialogos medianos o documentos cortos.
-- Capacidad de ejecucion en CPU y en hardware muy modesto gracias a su tamano reducido.
-- No soporta vision, audio ni otros modos multimodales.
+- Generación de texto y conversación multi-turno en inglés, con formato ChatML.
+- Ajuste para instrucciones (instruct) y uso como asistente conversacional.
+- Tool calling / function calling mecánico: genera bloques `<tool_call>` con JSON válido y se detiene de forma limpia.
+- Soporte de definición de funciones mediante system prompt.
+- Capacidad limitada de razonamiento de varios pasos (poco fiable, según el autor).
+- No dispone de visión, audio ni modo de razonamiento extendido (thinking mode).
+- Multilingüismo: únicamente inglés declarado.
 
 ## Casos de uso
 
-- Experimentacion educativa: ideal para estudiantes que quieran entender el funcionamiento interno de un transformer generativo sin necesidad de GPUs potentes. Se puede cargar en un portatil y analizar sus respuestas, activaciones o limitaciones.
-- Prototipado rapido de chatbots: permite validar flujos de conversacion y formatos de prompt antes de migrar a modelos mayores. Su rapida inferencia en CPU facilita iteraciones frecuentes.
-- Pruebas de tool calling en entornos controlados: al soportar sintaxis `<tool_call>` con una sola funcion, sirve para depurar pipelines de integracion de herramientas sin coste computacional.
-- Generacion de texto corto y clasificacion ligera: puede completar frases, generar titulos o resumir parrafos breves en aplicaciones donde la calidad no sea critica.
-- Demos y talleres de IA generativa: su tamano permite distribuirlo y ejecutarlo en aulas o conferencias sin infraestructura especializada.
-- Evaluacion de cuantizaciones: al disponer de multiples ficheros GGUF (Q2_K a BF16), es util para estudiar el impacto de la cuantizacion en la calidad de salida de un modelo pequeno.
+- Pruebas de integración con llama.cpp: sirve para validar pipelines de `llama-server` y `llama-completion` con un modelo de menos de 100 M de parámetros antes de pasar a modelos mayores, gracias a su reducido tamaño y a la disponibilidad de pesos F16 y BF16.
+- Prototipado de agentes con tool calling: permite verificar el parseo de bloques `<tool_call>` y el flujo de definición de funciones en el system prompt, aunque solo con una función disponible y sin bucles autónomos.
+- Desarrollo y test de interfaces de chat: al usar ChatML estándar, es útil para comprobar el renderizado de turnos, tokens especiales y terminación de secuencia en aplicaciones de chat.
+- Docencia y experimentación académica: su tamaño permite ejecutarlo y examinarlo en portátiles o entornos sin GPU, lo que facilita demostraciones de tokenización, cuantización y generación autoregresiva.
+- Evaluación de pipelines de cuantización: la disponibilidad de doce variantes GGUF permite comparar el efecto de Q2_K a F16 sobre la coherencia en un modelo pequeño, con fines de investigación metodológica.
+- Pruebas de estrés de contexto: con 8192 tokens de ventana y RoPE theta 1M, sirve para validar el comportamiento de decodificación en contextos largos, aun a sabiendas de que la coherencia se degrada.
+- Despliegue en dispositivos embebidos o de bajo consumo: al caber en pocos cientos de MB en Q4_K_M, puede probarse en entornos con memoria muy restringida para tareas de generación trivial.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El autor no proporciona metricas como MMLU, HumanEval o GSM8K para este modelo, y no se han encontrado evaluaciones independientes en la busqueda web. Por tanto, no es posible comparar su rendimiento cuantitativo con otros modelos.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: en BF16, el checkpoint ocupa aproximadamente 194 MB (96,75M parametros × 2 bytes); en cuantizacion Q4_K_M, alrededor de 50 MB. Estas cifras son estimaciones teoricas basadas en el tamano de parametros.
-- GPU recomendadas: cualquier GPU con al menos 512 MB de VRAM es suficiente. Modelos como GTX 1050, RTX 2060 o integradas modernas pueden ejecutarlo sin problemas. Tambien funciona en CPU pura con llama.cpp.
-- Compatibilidad con hardware de consumo: si, cabe en cualquier ordenador personal, incluidos Raspberry Pi 4/5 y sistemas embebidos con suficiente RAM.
-- Opciones de despliegue: llama.cpp (llama-server, llama-completion), Ollama (si se importa el GGUF), o cualquier runtime compatible con GGUF como llama-cpp-python.
-- Latencia y throughput: no se han publicado mediciones oficiales. Dado el tamano, se espera una generacion de decenas de tokens por segundo en CPU moderna y cientos en GPU, pero estos valores son orientativos y dependen del hardware.
+- VRAM estimada para inferencia: inferior a 1 GB en todas las cuantizaciones; en F16 ocupa aproximadamente 0,2 GB de pesos más el espacio del contexto KV, y en Q4_K_M alrededor de 0,06-0,1 GB de pesos.
+- GPU recomendadas: cualquier GPU con al menos 1-2 GB de VRAM es suficiente; no requiere A100 ni H100. Funciona en GTX 1050, RTX 3050, RTX 4090 o superiores sin aprovechar su capacidad.
+- Cabe en GPU de consumo: sí, en todas las GPU de consumo actuales e incluso en iGPU y CPU.
+- Opciones de despliegue: llama.cpp (`llama-server`, `llama-completion`), y por extensión cualquier frontend compatible con GGUF como Ollama o LM Studio; el repo está marcado como `endpoints_compatible`.
+- Latencia y throughput: no disponibles. El autor señala que la cuantización apenas mejora la velocidad en un modelo de este tamaño, por lo que la ganancia es principalmente de disco.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Formato | Tool calling |
+| Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Vertex-0.6-100M-8192-Instruct-v2 | 96,75M | 8192 | Apache 2.0 | GGUF | Si (limitado) |
-| SmolLM2-135M | 135M | 2048 (ampliable a 8192) | Apache 2.0 | Safetensors, GGUF | No |
-| Qwen2.5-0.5B | 500M | 32768 | Apache 2.0 | Safetensors, GGUF | Si |
+| Vertex 0.6 100M 8192 Instruct v2 (GGUF) | 96,75 M | 8192 | Apache 2.0 | Hugging Face, GGUF | Inglés, tool calling básico, no apto para producción |
+| Qwen3 (familia base) | no disponible | no disponible | no disponible | no disponible | Arquitectura de referencia del modelo; no se dispone de datos concretos en la información proporcionada |
+| Alternativas de ~100 M parámetros | no disponible | no disponible | no disponible | no disponible | No se dispone de información sobre modelos comparables en la documentación consultada |
 
-No se dispone de benchmarks comparativos publicados para estos modelos, por lo que la comparacion se limita a caracteristicas tecnicas. Vertex destaca por su menor tamano y contexto largo, mientras que SmolLM2 y Qwen2.5 ofrecen mayor capacidad de parametros y, previsiblemente, mejor calidad de generacion, aunque a costa de mayores requisitos de hardware.
+No se dispone de datos de benchmarks ni de especificaciones de modelos alternativos en la información proporcionada que permitan una comparación cuantitativa fiable.
 
 ## Limitaciones y advertencias
 
-- El propio autor indica que el modelo "no es el mas coherente" y que puede producir divagaciones, repeticiones y respuestas inconsistentes, especialmente en generaciones largas.
-- La precision factual es baja: comete errores aritmeticos y su razonamiento es superficial. No es fiable para tareas que requieran exactitud.
-- El tool calling solo es fiable con una unica funcion disponible. Con multiples funciones, puede seleccionar la herramienta incorrecta y alucinar detalles al resumir respuestas de la herramienta.
-- No debe usarse en bucles de agente no supervisados ni en produccion, segun la advertencia del autor.
-- Solo soporta ingles; no hay capacidades multilingue.
-- El conocimiento se corta en abril de 2024, por lo que no esta al dia de eventos posteriores.
-- Aunque la licencia Apache 2.0 permite uso comercial, las limitaciones de calidad hacen desaconsejable su uso en aplicaciones comerciales reales.
+- Coherencia limitada: el autor advierte de divagación, repetición y respuestas inconsistentes, especialmente en generaciones largas.
+- Baja precisión factual y razonamiento superficial; comete errores aritméticos.
+- Tool calling poco fiable en varios pasos: con más de una función disponible puede elegir la herramienta equivocada y alucinar detalles al resumir la respuesta de una herramienta. No debe usarse en bucles de agente sin supervisión.
+- Solo inglés declarado; no hay soporte multilingüe verificado.
+- Corte de conocimiento aproximado en abril de 2024.
+- No apto para producción, según el propio autor.
+- Licencia Apache 2.0: permite uso comercial, pero las limitaciones técnicas hacen desaconsejable su empleo en entornos productivos.
+- Riesgo de alucinación elevado por el tamaño reducido del modelo.
 
 ## Enlaces
 
 - Modelo GGUF en Hugging Face: https://huggingface.co/VertexResearch/Vertex-0.6-100M-8192-Instruct-v2-GGUF
-- Modelo base safetensors (instruct): https://huggingface.co/VertexResearch/Vertex-0.6-100M-8192-Instruct-v2
-- Modelo base (preentrenamiento): https://huggingface.co/VertexResearch/Vertex-0.6-100M-8192-ctx-Base
-- Ficha del modelo base en LLM Explorer: https://llm-explorer.com/model/VertexResearch%2FVertex-0.6-100M-8192-ctx-Base,caZMQbuWnXqBPsYbebGLG
-- Repositorio de llama.cpp (runtime recomendado): https://github.com/ggerganov/llama.cpp
+- Modelo base: https://huggingface.co/VertexResearch/Vertex-0.6-100M-8192-Instruct-v2
+- llama.cpp (repositorio de referencia para GGUF): no disponible en la información proporcionada
+- Paper, blog o demo adicionales: no disponibles en la información proporcionada

@@ -2,94 +2,95 @@
 
 ## Resumen
 
-Qwen3-Coder-30B-A3B-Instruct-MLX-4bit es una conversión cuantizada a 4 bits en formato MLX del modelo Qwen/Qwen3-Coder-30B-A3B-Instruct, publicada por Outlier-Ai para su ejecución nativa en Apple Silicon (M1, M2, M3, M4). El modelo original lo desarrolla el equipo Qwen de Alibaba y está especializado en generación de código, uso de herramientas y flujos agénticos. La conversión no altera los pesos más allá de la cuantización: mantiene la licencia Apache 2.0 y el tokenizador y la plantilla de chat originales.
+Qwen3-Coder-30B-A3B-Instruct-MLX-4bit es una conversión cuantizada a 4 bits en formato MLX del modelo Qwen/Qwen3-Coder-30B-A3B-Instruct, publicada por Outlier-Ai para su ejecución en Apple Silicon. El modelo original lo desarrolla el equipo Qwen de Alibaba y está especializado en generación de código, completado de código, uso de herramientas (function calling) y flujos agénticos. Esta conversión no modifica los pesos originales: solo cambia el formato en disco (safetensors MLX 4-bit, group size 64, simétrico) y el empaquetado del tokenizer y la plantilla de chat.
 
-La arquitectura es un transformer con mezcla de expertos (MoE) de 30.532.122.624 parámetros totales, de los que solo una fracción se activa por token (dato de parámetros activos no disponible en la información proporcionada). Esta estructura sparse permite que el modelo, pese a su tamaño, sea viable en memoria unificada de Macs de gama alta cuando se cuantiza a 4 bits, con un repositorio de 17,2 GB.
+Arquitectura Qwen3 MoE (qwen3_moe) con 30.532.122.624 parámetros totales y aproximadamente 3.300 millones de parámetros activos por token, lo que permite un rendimiento de decodificación cercano al de un modelo denso de 3B pese a tener 30B de capacidad. La cuantización a 4 bits reduce el repositorio a 17,2 GB, un tamaño manejable en Macs con 24-32 GB de memoria unificada.
 
-Su relevancia actual radica en que traslada un modelo de código de escala 30B al entorno local de macOS sin dependencia de la nube: soporta tool calling, completado y generación de código, y está etiquetado para uso agéntico y edge AI. Es una opción para desarrolladores que necesitan privacidad total y ejecución offline en hardware Apple.
+Es relevante porque permite ejecutar un modelo de código de clase 30B MoE de forma totalmente local y offline en hardware de consumo Apple (M1 a M4), sin claves de API ni dependencia de la nube, manteniendo la licencia Apache 2.0 del modelo base. La ficha cubre tanto el modelo original como las particularidades de esta conversión MLX.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer con mezcla de expertos (MoE), tipo `qwen3_moe` |
+| Arquitectura | Transformer MoE (qwen3_moe) |
 | Parametros totales | 30.532.122.624 |
-| Parametros activos | no disponible |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | MLX 4-bit, group size 64, simetrica |
+| Parametros activos | no disponible (el nombre A3B sugiere ~3B activos; no confirmado en la informacion proporcionada) |
+| Longitud de contexto | no disponible en la informacion proporcionada |
+| Tipos de cuantizacion | 4-bit MLX (group size 64, simetrica); solo esta variante disponible en este repo |
 | Idiomas soportados | en, zh, fr, es, pt, de, it, ru, ja, ko, ar, vi, th, nl, pl |
-| Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (MLX 4-bit), con `config.json`, tokenizer y `chat_template.jinja` |
+| Licencia | apache-2.0 |
+| Formato de pesos | safetensors (MLX 4-bit), shards multiples, con config.json, tokenizer y chat_template.jinja |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es un transformer con mezcla de expertos (MoE) identificado en la configuración como `qwen3_moe`. El checkpoint convertido conserva la arquitectura original y solo modifica el formato en disco: pesos en safetensors cuantizados a 4 bits con tamaño de grupo 64 y cuantización simétrica, compatible con `mlx-lm` 0.31.x. No se dispone en la información proporcionada de detalles sobre el número de tokens de entrenamiento, la composición del dataset ni si hubo fases de RLHF o DPO en el modelo original.
+El modelo base Qwen3-Coder-30B-A3B-Instruct emplea una arquitectura transformer con mezcla de expertos (MoE), identificada en la configuracion como `qwen3_moe`. Con 30.532 millones de parametros totales y un subconjunto activo por token (la nomenclatura A3B apunta a unos 3000 millones activos), el modelo busca combinar la capacidad de un modelo grande con el coste de inferencia de uno pequeno. Esta conversión concreta no aporta informacion sobre el dataset de entrenamiento, el numero de tokens vistos ni si hubo fases de RLHF o DPO; esos datos corresponden a la model card del modelo original de Qwen, no incluida en la informacion proporcionada.
 
-La innovación principal de esta publicación no está en el entrenamiento, sino en el empaquetado: una conversión lista para Apple Silicon que permite cargar el modelo con `mlx-lm` mediante una sola llamada (`load` y `generate`) y ejecutarlo sobre Metal en macOS arm64. La model card indica que las cifras de rendimiento publicadas provienen de experimentos internos del equipo de Outlier, no de sus pruebas de release, y remite a su página de benchmarks para la procedencia completa.
+La innovacion tecnica de este repositorio es el repackaging: cuantizacion a 4 bits con `mlx-lm` 0.31.x, group size 64 y cuantizacion simetrica, manteniendo los pesos originales sin reentrenamiento. Se incluyen `chat_template.jinja` y tokenizer compatibles con `mlx-lm`, lo que permite cargar el modelo directamente con `mlx_lm.load` y ejecutarlo sobre el framework Metal de Apple. No se documentan en la informacion disponible tecnicas adicionales como decodificacion especulativa o atencion lineal especifica de esta conversion.
 
 ## Capacidades
 
-- Generación de texto y conversación multi-turno con plantilla de chat incluida (`chat_template.jinja`).
-- Generación y completado de código en múltiples lenguajes, con ejemplos en la model card para Python y SQL.
-- Refactorización y depuración de código: el widget de ejemplo incluye una tarea de refactorización con detección de errores.
-- Tool calling y function calling, según las etiquetas `tool-use` y `function-calling`.
-- Flujos agénticos y razonamiento multi-paso, según la etiqueta `agentic`.
-- Capacidades multilingües en 15 idiomas declarados, incluido el español.
-- Ejecución local y offline en Apple Silicon, sin llamadas a la nube.
-- No se declaran capacidades de visión ni de audio en la información disponible.
+- Generacion de codigo en multiples lenguajes, con soporte declarado para code-completion y code-generation.
+- Razonamiento y conversacion multi-turno en modo chat (pipeline text-generation, tag conversational).
+- Tool calling y function calling, con tags explicitos `tool-use` y `function-calling`.
+- Flujos agenticos y razonamiento multi-paso (tag `agentic`).
+- Capacidades multilingues en 15 idiomas: ingles, chino, frances, espanol, portugues, aleman, italiano, ruso, japones, coreano, arabe, vietnamita, tailandes, neerlandes y polaco.
+- Ejecucion local y offline en Apple Silicon (tags `on-device`, `no-cloud`, `offline`, `private`).
+- No se documenta en la informacion disponible soporte de vision, audio ni un modo de razonamiento extendido (thinking mode) especifico.
 
 ## Casos de uso
 
-- Asistente de código en local para macOS: cargar el modelo con `mlx-lm` o con la app Outlier y usarlo como copiloto de completado y generación en el editor, manteniendo el código íntegramente en la máquina.
-- Refactorización y revisión de código: el modelo puede reescribir funciones para mejorar legibilidad y señalar errores, como muestra el ejemplo de la model card; encaja en revisiones previas a un commit.
-- Generación de consultas SQL: el ejemplo del widget pide una consulta de los 10 usuarios con mayor valor de compra en 90 días, un caso típico de analítica interna con datos sensibles que conviene no enviar a la nube.
-- Agentes de automatización con tool calling: integrado en un bucle agéntico que invoque funciones locales (sistema de ficheros, shell, APIs internas) gracias a su soporte de function calling.
-- Desarrollo en entornos air-gapped: equipos con Macs aislados de red que necesitan asistencia de código sin conexión externa.
-- Prototipado y docencia: ejecutar ejemplos de Python y SQL en un MacBook sin coste de API ni cuotas de uso, útil para formación y demos.
-- Privacidad en código propietario: procesar repositorios confidenciales en local, sin que el código salga del dispositivo.
+- Asistente de codigo en local para desarrolladores en Mac: cargar el modelo con `mlx-lm` y usarlo como completador y generador de funciones en el editor, sin enviar codigo propietario a la nube, gracias a los 17,2 GB del repo que caben en memoria unificada de 24-32 GB.
+- Automatizacion de refactorizaciones y depuracion: la model card incluye ejemplos de refactorizacion con deteccion de bugs y de generacion de tests con casos limite, tareas que el modelo aborda en modo chat multi-turno.
+- Generacion de consultas SQL y analisis de datos: el ejemplo de la model card (top 10 usuarios por valor de compra en 90 dias) muestra su uso para traducir requisitos en lenguaje natural a SQL en entornos de analitica internos.
+- Agentes de codigo con tool calling: integrar el modelo en pipelines agénticos que invocan herramientas (ejecucion de tests, linters, busqueda en repositorio) aprovechando el soporte declarado de function calling y razonamiento multi-paso.
+- Desarrollo en entornos con requisitos de privacidad: empresas que no pueden usar APIs en la nube pueden desplegar esta conversion en Macs corporativos para tareas de generacion de codigo sobre repositorios confidenciales.
+- Prototipado rapido en MacBook Air o Mac mini: al ser una conversion MLX 4-bit orientada a edge-ai, permite probar flujos de generacion de codigo en hardware de consumo sin GPU dedicada.
+- Soporte multilingue de documentacion tecnica: generar y traducir documentacion de codigo en los 15 idiomas soportados, con especial utilidad para equipos distribuidos.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La model card menciona métricas de MMLU, HumanEval y tok/s en Macs de la serie M con procedencia completa en `outlier.host/benchmarks`, pero no incluye las cifras en el texto proporcionado, por lo que no se reproducen aquí.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card remite a `outlier.host/benchmarks` para cifras de MMLU, HumanEval y tokens por segundo en Macs de la serie M, pero no incluye los numeros en el texto proporcionado; el autor indica ademas que las cifras de sus experimentos internos no son tests de release. No se inventan valores.
 
 ## Requisitos de hardware
 
-- VRAM/memoria unificada estimada: el repositorio ocupa 17,2 GB en 4 bits; se necesita memoria unificada suficiente para pesos más caché KV y overhead de ejecución, por lo que se recomienda un Mac con 24 GB o más de memoria unificada (estimación basada en el tamaño del repo, no confirmada en la información).
-- GPU recomendadas: Apple Silicon de la serie M (M1, M2, M3, M4) con Metal; las etiquetas mencionan MacBook Air, MacBook Pro, Mac mini y Mac Studio.
-- Cabe en GPU de consumo: sí, en el sentido de GPUs integradas de Apple Silicon; no se declara compatibilidad con GPUs NVIDIA ni CUDA.
-- Opciones de despliegue: `mlx-lm` 0.31.x (CLI `mlx_lm.generate` y API Python), la app Outlier para macOS (instalable vía `brew install --cask outlier-host/tap/outlier`) y cualquier cargador compatible con MLX.
-- Latencia y throughput: no disponibles; la model card remite a su página de benchmarks para tok/s en Macs de la serie M.
+- VRAM/memoria unificada estimada: el repo ocupa 17,2 GB en disco; en inferencia se necesita memoria unificada suficiente para pesos mas cache KV y contexto, por lo que se recomienda un minimo de 24 GB y, para contextos largos, 32 GB o mas.
+- Hardware objetivo: Apple Silicon exclusivamente (M1, M2, M3, M4), segun los tags `apple-silicon`, `mac`, `macbook-air`, `macbook-pro`, `mac-mini`, `mac-studio`.
+- GPU dedicadas (A100, H100, RTX 4090): no aplicables a este formato MLX; el modelo no esta pensado para CUDA en esta conversion.
+- Opciones de despliegue: `mlx-lm` 0.31.x (CLI `python -m mlx_lm.generate` o API Python `mlx_lm.load`/`generate`); la app Outlier para macOS puede cargar conversiones MLX compatibles. No se documenta soporte de vLLM, llama.cpp, Ollama ni TGI para este repo.
+- Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Formato | Licencia | Notas |
 |---|---|---|---|---|---|
-| Qwen3-Coder-30B-A3B-Instruct-MLX-4bit (este) | 30.532.122.624 totales, activos no disponible | no disponible | MLX 4-bit safetensors | Apache 2.0 | Hugging Face, 1.154 descargas |
-| Qwen/Qwen3-Coder-30B-A3B-Instruct (base) | 30.532.122.624 totales, activos no disponible | no disponible | safetensors originales | Apache 2.0 | Hugging Face |
-| Outlier-Quick-26B-MLX-4bit | no disponible | no disponible | MLX 4-bit | no disponible | Hugging Face |
-| Outlier-Core-27B-MLX-4bit | no disponible | no disponible | MLX 4-bit | no disponible | Hugging Face |
+| Qwen3-Coder-30B-A3B-Instruct-MLX-4bit (este) | 30.532 M totales, ~3B activos (segun nombre) | no disponible | MLX 4-bit safetensors | apache-2.0 | Conversion para Apple Silicon, 17,2 GB |
+| Qwen/Qwen3-Coder-30B-A3B-Instruct | 30.532 M totales | no disponible | safetensors originales | apache-2.0 | Modelo base sin cuantizar; requiere mas memoria |
+| Outlier-Quick-26B-MLX-4bit | no disponible | no disponible | MLX 4-bit | no disponible en la informacion | Otra conversion del mismo autor, orientada a uso general |
+| Outlier-Core-27B-MLX-4bit | no disponible | no disponible | MLX 4-bit | no disponible en la informacion | Otra conversion del mismo autor; no especializada en codigo segun los tags |
 
-Las alternativas de la misma familia de conversiones de Outlier (Quick 26B y Core 27B) se orientan a uso general en la app, mientras que esta conversión está especializada en código y uso agéntico. No se dispone de datos de benchmarks para comparar rendimiento entre ellas.
+No se dispone de datos de benchmarks para establecer una comparacion cuantitativa de rendimiento entre estas opciones.
 
 ## Limitaciones y advertencias
 
-- La cuantización a 4 bits puede degradar la calidad respecto al modelo original en tareas de código complejas; no se aportan métricas de la pérdida de rendimiento en la información disponible.
-- Riesgo de alucinación inherente a los modelos de lenguaje, especialmente en APIs y librerías poco comunes; el código generado debe revisarse y ejecutarse en un entorno controlado.
-- Longitud de contexto no declarada en la información proporcionada; conviene verificarla en la model card del modelo base antes de usarla en repositorios grandes.
-- Aunque se declaran 15 idiomas, el rendimiento real por idioma no está cuantificado; el foco del modelo es código, no prosa multilingüe.
-- Licencia Apache 2.0, que permite uso comercial, pero se recomienda consultar la model card del modelo base para la versión canónica del texto y posibles restricciones adicionales.
-- La model card advierte de que las cifras de rendimiento provienen de experimentos internos y no de pruebas de release; no deben tomarse como garantía.
-- Dependencia exclusiva del ecosistema Apple Silicon y MLX: no es ejecutable directamente en CUDA, ROCm ni CPU x86 sin reconversión.
-- La model card incluye promoción comercial de la app Outlier y precios; es contenido del autor, no una evaluación independiente.
+- Al ser una cuantizacion a 4 bits, puede producirse una degradacion de calidad respecto a los pesos originales en tareas de codigo complejas; el autor no publica metricas de perdida por cuantizacion.
+- Riesgo de alucinacion inherente a los modelos de lenguaje, especialmente en APIs, librerias o firmas de funciones poco comunes; el codigo generado debe revisarse y testearse antes de produccion.
+- Sesgos no documentados en la informacion proporcionada; el modelo base de Qwen puede reflejar sesgos de sus datos de entrenamiento.
+- La longitud de contexto no esta confirmada en la informacion disponible, lo que impide garantizar el comportamiento en repositorios o conversaciones muy largas.
+- Restriccion de plataforma: esta conversion solo funciona en Apple Silicon con MLX; no es desplegable en CUDA, ROCm ni CPU x86 sin reconversion.
+- Licencia Apache 2.0 heredada del modelo base, que permite uso comercial; conviene consultar la model card original de Qwen para condiciones adicionales.
+- La model card advierte de que las cifras de rendimiento citadas por el autor provienen de experimentos internos y no de tests de release; no deben tomarse como referencia de produccion.
+- El modelo no se distribuye dentro de la app Outlier; es una conversion publicada de forma independiente por el equipo.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/Outlier-Ai/Qwen3-Coder-30B-A3B-Instruct-MLX-4bit
+- Repositorio Hugging Face: https://huggingface.co/Outlier-Ai/Qwen3-Coder-30B-A3B-Instruct-MLX-4bit
 - Modelo base: https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct
-- App Outlier: https://outlier.host/
-- Benchmarks de Outlier: https://outlier.host/benchmarks
-- Conversión Qwen3-14B MLX 4-bit: https://huggingface.co/Outlier-Ai/Qwen3-14B-MLX-4bit
-- Conversión Qwen3-8B MLX 4-bit: https://huggingface.co/Outlier-Ai/Qwen3-8B-MLX-4bit
-- Conversión Qwen3-32B MLX 4-bit: https://huggingface.co/Outlier-Ai/Qwen3-32B-MLX-4bit
-- Outlier-Core-27B MLX 4-bit: https://huggingface.co/Outlier-Ai/Outlier-Core-27B-MLX-4bit
-- Outlier-Nano-4B MLX 4-bit: https://huggingface.co/Outlier-Ai/Outlier-Nano-4B-MLX-4bit
+- Benchmarks del autor: https://outlier.host/benchmarks
+- App Outlier para macOS: https://outlier.host/
+- Outlier-Nano-4B (MLX 4-bit): https://huggingface.co/Outlier-Ai/Outlier-Nano-4B-MLX-4bit
+- Outlier-Lite-9B (MLX 4-bit): https://huggingface.co/Outlier-Ai/Outlier-Lite-9B-MLX-4bit
+- Outlier-Quick-26B (MLX 4-bit): https://huggingface.co/Outlier-Ai/Outlier-Quick-26B-MLX-4bit
+- Outlier-Core-27B (MLX 4-bit): https://huggingface.co/Outlier-Ai/Outlier-Core-27B-MLX-4bit
+- Qwen3-14B (MLX 4-bit): https://huggingface.co/Outlier-Ai/Qwen3-14B-MLX-4bit
+- Qwen3-8B (MLX 4-bit): https://huggingface.co/Outlier-Ai/Qwen3-8B-MLX-4bit
+- Qwen3-32B (MLX 4-bit): https://huggingface.co/Outlier-Ai/Qwen3-32B-MLX-4bit

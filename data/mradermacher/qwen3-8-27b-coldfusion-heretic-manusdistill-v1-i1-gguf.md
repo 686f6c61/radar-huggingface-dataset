@@ -1,85 +1,83 @@
 # mradermacher/Qwen3.8-27B-ColdFusion-Heretic-ManusDistill-v1-i1-GGUF
 
 ## Resumen
+Qwen3.8-27B-ColdFusion-Heretic-ManusDistill-v1-i1-GGUF es una recopilación de cuantizaciones GGUF (con y sin imatrix) del modelo PeetPedro/Qwen3.8-27B-ColdFusion-Heretic-ManusDistill-v1, un fine-tune de la familia Qwen3.8 de aproximadamente 26.900 millones de parámetros. El autor de las cuantizaciones es mradermacher, un perfil habitual en Hugging Face especializado en generar versiones GGUF de modelos abiertos para su uso con llama.cpp y herramientas compatibles.
 
-Qwen3.8-27B-ColdFusion-Heretic-ManusDistill-v1-i1-GGUF es una cuantizacion GGUF del modelo Qwen3.8-27B-ColdFusion-Heretic-ManusDistill-v1, publicada por el usuario mradermacher en Hugging Face. El modelo base es un fine-tune de la familia Qwen3 de 27B parametros (26.895.998.464 parametros reales segun los safetensors del modelo original) realizado por PeetPedro, que combina la base Qwen3 con tecnicas de "abliteration" (eliminacion de rechazos, indicada por el sufijo "Heretic"), un supuesto destilado de "Manus" (agente autonomo) y un ajuste denominado "ColdFusion".
+El modelo base combina varias técnicas de ajuste fino (etiquetadas como "Cold Fusion", "GAIN Training", "Multi-stage tuning" y "heretic") sobre un modelo Qwen de ~27B, con el objetivo declarado de producir un modelo "uncensored" orientado a "all use cases". La model card indica además que se trata de un modelo de visión, con ficheros mmproj disponibles en el repositorio estático del mismo autor.
 
-La relevancia de esta publicacion es practica: ofrece el modelo en formato GGUF con una amplia bateria de cuantizaciones (desde IQ1_M hasta Q6_K), lo que permite ejecutarlo en hardware de consumo mediante llama.cpp u Ollama. El repositorio ocupa 23,9 GB y las cuantizaciones se han generado con imatrix (importance matrix) y pesos ponderados, una tecnica que mejora la calidad de las cuantizaciones de baja precision.
+La relevancia de esta ficha radica en que ofrece una vía práctica para ejecutar un modelo de ~27B en hardware de consumo mediante cuantizaciones que van desde ~7,8 GB (IQ1_S) hasta formatos de mayor calidad, con licencia Apache 2.0. No obstante, la información pública disponible sobre el modelo base es muy limitada: no se documentan benchmarks, composición del dataset de entrenamiento ni detalles de la arquitectura más allá de su linaje Qwen.
 
-No obstante, la informacion disponible es muy limitada: no hay model card descriptiva, no se declaran idiomas, licencia ni pipeline, y no se han publicado resultados de benchmarks. La ficha siguiente refleja exclusivamente los datos verificables del repositorio y del modelo base referenciado.
+## Especificaciones técnicas
 
-## Especificaciones tecnicas
-
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (familia Qwen3, inferida del nombre y del modelo base) |
-| Parametros totales | 26.895.998.464 (~26,9B) |
-| Parametros activos | no disponible (no se indica que sea MoE) |
+| Arquitectura | Transformer (linaje Qwen3.8; detalles no disponibles) |
+| Parámetros totales | 26.895.998.464 (~26,9B) |
+| Parámetros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Q2_K, Q2_K_S, IQ3_M, IQ3_XXS, IQ3_XS, IQ3_S, Q3_K_S, Q3_K_M, Q3_K_L, small-IQ4_NL, IQ4_XS, Q4_0, Q4_1, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, IQ2_XXS, IQ2_XS, IQ2_S, IQ2_M, IQ1_S, IQ1_M |
-| Idiomas soportados | no disponible |
-| Licencia | no disponible |
-| Formato de pesos | GGUF (cuantizado con imatrix y pesos ponderados) |
+| Tipos de cuantización | i1-IQ1_S, i1-IQ1_M, i1-IQ2_XXS, i1-IQ2_XS, i1-IQ2_S, i1-IQ2_M, i1-Q2_K_S, i1-Q2_K, i1-IQ3_XXS, i1-Q3_K_S, i1-IQ3_XS, i1-IQ3_S, i1-IQ3_M, i1-Q3_K_M, i1-Q3_K_L, i1-IQ4_XS, i1-Q4_0, i1-Q4_K_S, i1-Q4_K_M, i1-Q5_K_S, i1-Q5_K_M, i1-Q6_K, i1-IQ4_NL (small), entre otras; también imatrix |
+| Idiomas soportados | en (inglés) según la model card |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (cuantizaciones); modelo base en safetensors |
 
 ## Arquitectura y entrenamiento
+El modelo base es un fine-tune de un modelo Qwen de ~27B parámetros, según se deduce del identificador ("Qwen3.8-27B") y de las etiquetas "qwen3_8" y "qwen3_6". La model card no detalla la arquitectura interna (número de capas, dimensión oculta, mecanismo de atención) ni el número de tokens de entrenamiento. Las etiquetas sugieren un proceso de ajuste en varias etapas ("Multi-stage tuning"), con técnicas denominadas "Cold Fusion" y "GAIN Training", y un paso de "abliteración"/"heretic" orientado a reducir los rechazos del modelo (uncensored).
 
-El modelo subyacente es un fine-tune de Qwen3 de 27B parametros, una arquitectura transformer decoder-only densa (no se declara componente MoE). El nombre del modelo indica tres intervenciones sobre la base: "ColdFusion" (posiblemente una mezcla o fusion de adaptadores), "Heretic" (terminologia habitual para modelos con abliteration, es decir, la eliminacion de direcciones de activacion asociadas a rechazos) y "ManusDistill" (destilado de trazas o comportamiento del agente Manus). No se dispone de informacion sobre el numero de tokens de entrenamiento, la composicion del dataset ni si se emplearon tecnicas de RLHF o DPO.
-
-La innovacion tecnica documentada en este repositorio es la cuantizacion: se han generado 24 variantes GGUF utilizando imatrix (matrices de importancia calculadas a partir de calibracion) y pesos ponderados, lo que segun el autor mejora la fidelidad de las cuantizaciones de baja precision (IQ1, IQ2, IQ3). El repositorio no incluye el modelo en precision completa, solo los GGUF.
+No se documenta si hubo RLHF, DPO u otra fase de alineamiento, ni la composición del dataset. Tampoco se especifican innovaciones técnicas como decodificación especulativa o atención lineal. El autor de las cuantizaciones indica que se han generado cuantizaciones ponderadas con imatrix, lo que mejora la calidad de los formatos de baja precisión respecto a cuantizaciones estáticas.
 
 ## Capacidades
-
-- Generacion de texto conversacional (etiqueta "conversational" en el repositorio).
-- Razonamiento y generacion de codigo, heredados de la base Qwen3 (no verificado en este fine-tune).
-- Capacidades de agente y razonamiento multi-paso, presumiblemente reforzadas por el destilado de Manus (no verificado).
-- Compatibilidad con endpoints (etiqueta "endpoints_compatible"), lo que sugiere uso en Inference Endpoints de Hugging Face.
-- Multilinguismo: no disponible; depende de la base Qwen3, pero no se declara en este repositorio.
-- Modo thinking, vision o audio: no disponible.
+- Generación de texto conversacional multi-turno (etiqueta "conversational").
+- Capacidades de visión: la model card indica explícitamente que es un modelo de visión, con ficheros mmproj en el repositorio estático.
+- Modo "uncensored": el ajuste "heretic" busca reducir las negativas del modelo ante peticiones sensibles.
+- Orientado a "all use cases" según las etiquetas del autor, aunque sin evidencia de benchmarks que lo respalde.
+- Compatibilidad con endpoints (etiqueta "endpoints_compatible").
+- Soporte de tool calling / function calling: no disponible en la información proporcionada.
+- Capacidades de agente y razonamiento multi-paso: no disponible.
+- Multilingüismo: la model card solo declara inglés.
 
 ## Casos de uso
-
-- Despliegue local en hardware de consumo: las cuantizaciones Q4_K_M o IQ4_XS permiten ejecutar un modelo de 27B en GPUs con 16-24 GB de VRAM mediante llama.cpp u Ollama, algo inviable con los pesos en FP16.
-- Experimentacion con modelos sin rechazos: el ajuste "Heretic" esta orientado a escenarios de investigacion sobre alineacion y comportamiento de rechazo, donde se necesita comparar respuestas con y sin abliteration.
-- Prototipado de agentes conversacionales: la etiqueta "conversational" y el destilado de Manus sugieren uso en flujos de agente multi-paso, aunque sin benchmarks que lo confirmen.
-- Evaluacion comparativa de cuantizaciones: el repositorio ofrece 24 variantes, lo que permite medir el impacto de la precision en tareas concretas con un mismo modelo base.
-- Generacion de codigo en local: si hereda las capacidades de Qwen3, puede usarse con llama.cpp como asistente de codigo offline en entornos sin conexion.
-- Investigacion sobre destilacion de agentes: util para estudiar como se transfieren trazas de un agente autonomo (Manus) a un modelo denso de 27B.
+- Asistente conversacional local: con cuantizaciones i1-Q4_K_M (~16,8 GB) el modelo puede ejecutarse en una GPU de consumo de 24 GB, permitiendo conversaciones multi-turno sin depender de la nube.
+- Procesamiento de imágenes con descripción textual: al ser un modelo de visión, puede emplearse para tareas de image captioning o respuesta a preguntas sobre imágenes, cargando el fichero mmproj junto con el GGUF en llama.cpp.
+- Generación de texto creativo sin filtros: el ajuste "heretic" lo hace adecuado para escritura de ficción o guiones donde los modelos alineados suelen rechazar contenido sensible, siempre con revisión humana.
+- Prototipado de aplicaciones con restricciones de privacidad: al ejecutarse en local con llama.cpp u Ollama, los datos no salen del equipo, lo que encaja en entornos con requisitos de confidencialidad.
+- Investigación sobre alineamiento y censura: permite comparar el comportamiento del modelo "heretic" frente a su base alineada en tareas de evaluación de sesgos y rechazos.
+- Despliegue en estaciones de trabajo con una sola GPU: las cuantizaciones IQ3/IQ4 (~12-16 GB) caben en GPUs de 16-24 GB, habilitando inferencia local para equipos de desarrollo sin infraestructura dedicada.
+- Fine-tuning posterior o experimentación: al estar bajo Apache 2.0, puede usarse como base para ajustes adicionales o para investigación académica.
 
 ## Benchmarks y rendimiento
-
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
-
-- VRAM estimada (solo pesos, sin KV cache): IQ1_M ~5-6 GB; IQ2_M ~7-8 GB; Q4_K_M ~16-17 GB; Q6_K ~22-23 GB. Cifras aproximadas calculadas a partir del tamano del repo y del numero de parametros.
-- GPU recomendadas: RTX 4090 (24 GB) para Q4_K_M y Q5_K_M; RTX 3090 (24 GB) equivalente; A100 40/80 GB o H100 para precisiones altas y contextos largos.
-- Cabe en GPU de consumo: si, en RTX 4090/3090 con cuantizaciones Q4-Q5; en GPUs de 12-16 GB solo con IQ2/IQ3 o descarga parcial a CPU.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, llama-cpp-python; vLLM y TGI no soportan GGUF de forma nativa (requieren el modelo en safetensors).
+- VRAM estimada (solo pesos, sin caché KV): desde ~7,8 GB (i1-IQ1_S) hasta ~16,8 GB (i1-Q4_K_M); las cuantizaciones de mayor calidad (Q5/Q6) superan los 18-20 GB.
+- GPU recomendadas: RTX 4090 (24 GB) para cuantizaciones IQ4/Q4_K_M con contexto moderado; A100 40/80 GB o H100 para cuantizaciones altas y contextos largos; RTX 3090 (24 GB) como alternativa de consumo.
+- GPU de consumo: sí, cabe en RTX 4090/3090 con cuantizaciones IQ3-IQ4; en GPUs de 12-16 GB solo con cuantizaciones IQ2/IQ3 y contexto reducido.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio y cualquier runtime compatible con GGUF; también se menciona compatibilidad con MLX y endpoints.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+| Modelo | Parámetros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| Este modelo (GGUF) | ~26,9B | no disponible | no disponible | GGUF | Fine-tune Heretic/Manus, 24 cuantizaciones |
-| Qwen3-32B | 32B | 128K (segun Qwen) | Apache 2.0 (segun Qwen) | safetensors, GGUF | Base oficial, con benchmarks publicados |
-| Qwen3-30B-A3B | 30B totales / 3B activos | 128K (segun Qwen) | Apache 2.0 (segun Qwen) | safetensors, GGUF | Variante MoE, mas eficiente en inferencia |
-| Gemma 3 27B | 27B | 128K (segun Google) | Gemma Terms | safetensors, GGUF | Alternativa densa de tamano similar |
+| Qwen3.8-27B-ColdFusion-Heretic-ManusDistill-v1 (este) | ~26,9B | no disponible | Apache 2.0 | GGUF / safetensors | Fine-tune uncensored con visión |
+| Qwen2.5-32B-Instruct | ~32,8B | 32.768 tokens (ampliable) | Apache 2.0 | safetensors / GGUF | Modelo oficial alineado de Qwen |
+| Gemma 2 27B | ~27B | 8.192 tokens | Gemma license | safetensors / GGUF | Modelo de Google con restricciones de uso |
+| Mistral Small 24B | ~24B | 32.768 tokens | Apache 2.0 | safetensors / GGUF | Alternativa europea de tamaño similar |
 
-Los datos de los modelos comparativos provienen de sus fichas oficiales; los de este modelo son los unicos verificados en el repositorio.
+La comparación es orientativa: no hay benchmarks publicados de este fine-tune que permitan comparar rendimiento real frente a los modelos citados.
 
 ## Limitaciones y advertencias
-
-- Ausencia total de model card: no se documentan datos de entrenamiento, licencia, idiomas ni evaluaciones; el uso en produccion es arriesgado sin validacion propia.
-- Licencia no declarada: no se puede confirmar si el uso comercial esta permitido; el modelo base Qwen3 suele ser Apache 2.0, pero el fine-tune no lo especifica.
-- El ajuste "Heretic" implica abliteration: el modelo puede generar contenido que la base rechazaria, con riesgos de seguridad y de cumplimiento en entornos regulados.
-- Riesgo de alucinacion: inherente a los modelos de 27B y agravado por la falta de benchmarks y de evaluacion del fine-tune.
-- Cuantizaciones IQ1/IQ2 con degradacion notable de calidad; solo recomendables para pruebas, no para produccion.
-- El repositorio tiene 0 descargas y 0 likes: no hay evidencia de uso comunitario ni de validacion externa.
-- Fecha de creacion futura (2026-11-19) en los metadatos: inconsistencia que sugiere datos poco fiables o manipulados.
-- No se declara soporte de tool calling ni de contexto largo; no asumir capacidades de agente sin verificar.
+- Ausencia total de benchmarks: no se puede verificar la calidad del modelo frente a su base ni frente a alternativas.
+- Riesgo de alucinación: inherente a los modelos de ~27B, agravado por la falta de evaluación publicada.
+- El ajuste "uncensored"/"heretic" puede aumentar la probabilidad de generar contenido inapropiado, sesgado o dañino; requiere moderación adicional en producción.
+- Idiomas: solo se declara inglés; el rendimiento en castellano no está verificado.
+- Longitud de contexto no documentada; no se recomienda asumir ventanas largas sin pruebas.
+- Licencia Apache 2.0 permite uso comercial, pero el modelo base y los datos de entrenamiento no están documentados, lo que dificulta evaluar riesgos legales.
+- La model card del cuantizador es genérica y no aporta información sobre el proceso de entrenamiento del modelo base.
+- El repositorio ocupa 305,8 GB, lo que implica descargas parciales por fichero.
 
 ## Enlaces
-
-- Repositorio GGUF: https://huggingface.co/mradermacher/Qwen3.8-27B-ColdFusion-Heretic-ManusDistill-v1-i1-GGUF
-- Modelo base referenciado: https://huggingface.co/PeetPedro/Qwen3.8-27B-ColdFusion-Heretic-ManusDistill-v1
+- Repositorio GGUF (imatrix): https://huggingface.co/mradermacher/Qwen3.8-27B-ColdFusion-Heretic-ManusDistill-v1-i1-GGUF
+- Repositorio GGUF estático: https://huggingface.co/mradermacher/Qwen3.8-27B-ColdFusion-Heretic-ManusDistill-v1-GGUF
+- Modelo base: https://huggingface.co/PeetPedro/Qwen3.8-27B-ColdFusion-Heretic-ManusDistill-v1
+- Página de descargas del cuantizador: https://hf.tst.eu/model#Qwen3.8-27B-ColdFusion-Heretic-ManusDistill-v1-i1-GGUF
+- README de referencia para uso de GGUF: https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF

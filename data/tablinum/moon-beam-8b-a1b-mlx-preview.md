@@ -2,118 +2,123 @@
 
 ## Resumen
 
-Moon-Beam-8B-A1B-MLX-Preview es una cuantizacion en formato MLX del modelo Moon-Beam-8B-A1B-Preview, desarrollado por el usuario tablinum. Se trata de un modelo de mezcla de expertos (MoE) de 8.000 millones de parametros totales con aproximadamente 1.000 millones de parametros activos por token, construido a partir de Ling-3.0-tiny de inclusionAI y complementado con una biblioteca de conocimiento recuperable denominada *engram*. La version MLX esta pensada para ejecutarse en Apple Silicon mediante la libreria mlx-lm.
+Moon-beam 8B A1B (MLX, preview) es un modelo de lenguaje de tipo mixture-of-experts (MoE) publicado por el usuario tablinum en Hugging Face, derivado del modelo base Ling-3.0-tiny de inclusionAI y complementado con una biblioteca de conocimiento recuperable denominada *engram*. Cuenta con 7.893.392.800 parametros totales (8B) y aproximadamente 1B de parametros activos por token, con una ventana de contexto de 131.072 tokens. Esta version concreta es una cuantizacion en formato MLX pensada para ejecucion en Apple Silicon, con expertos en 4 bits y atencion y pesos compartidos en 8 bits.
 
-El modelo resuelve el problema de la generacion de respuestas factuales mediante recuperacion: en lugar de depender unicamente del conocimiento parametrico, esta entrenado para responder a partir de pasajes recuperados que se insertan en el prompt con un formato concreto. Segun la model card, la recuperacion eleva el rendimiento en SimpleQA de 28 a 593 respuestas correctas sobre 1.000, y en EngramBench de 65 a 431 sobre 503.
+El modelo esta disenado para responder a partir de pasajes recuperados de una biblioteca de tablas de conocimiento, en lugar de depender unicamente del conocimiento parametrico. La model card reporta mejoras muy sustanciales al anadir recuperacion: en SimpleQA pasa de 30 a 601 respuestas correctas sobre 1.000, y en EngramBench de 61 a 436 sobre 503. Incorpora modo de razonamiento (*thinking*), soporte de tool calling y capacidades de agente multi-paso.
 
-Esta publicacion es una version *preview* (release candidate, ronda 1b) y requiere la libreria Tablinum-2 para funcionar. La cuantizacion "beam" emplea expertos en 4 bits con atencion y pesos compartidos en 8 bits, ocupando 4,6 GB. El modelo esta etiquetado como preview y su tarjeta indica que sera actualizado cuando este disponible la libreria Tablinum-3.
+Se trata de una version *preview* (release candidate, ronda 1b) entrenada con QLoRA sobre pasajes recuperados, problemas matematicos, llamadas a herramientas y conversaciones multi-turno. La licencia es MIT y el idioma declarado es unicamente el ingles.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Mezcla de expertos (MoE) basada en Ling-3.0-tiny, con integracion de biblioteca de conocimiento recuperable (engram) |
-| Parametros totales | 7.893.392.800 (aproximadamente 8B) |
+| Arquitectura | Mixture-of-experts (MoE) sobre Ling-3.0-tiny; tag `bailing_hybrid` |
+| Parametros totales | 7.893.392.800 (8B) |
 | Parametros activos | Aproximadamente 1B por token |
 | Longitud de contexto | 131.072 tokens |
-| Tipos de cuantizacion | MLX beam (expertos 4 bits, atencion y pesos compartidos 8 bits); tambien disponibles MLX 8-bit, GGUF (Q4_K_M, Q6_K, Q8_0) y BF16 |
-| Idiomas soportados | Ingles (en) |
+| Tipos de cuantizacion | MLX 4-bit (expertos 4-bit, atencion y pesos compartidos 8-bit, mezcla "beam"); disponible tambien MLX 8-bit, GGUF y BF16 |
+| Idiomas soportados | Ingles (`en`) |
 | Licencia | MIT |
-| Formato de pesos | safetensors (MLX); GGUF disponible en otro repositorio |
+| Formato de pesos | safetensors (MLX); GGUF y BF16 en repos separados |
 
 ## Arquitectura y entrenamiento
 
-El modelo es una mezcla de expertos derivada de Ling-3.0-tiny, con 8B parametros totales y aproximadamente 1B activos por token. La innovacion principal es la incorporacion de una biblioteca de conocimiento denominada *engram*, que actua como memoria recuperable: el modelo esta entrenado para responder a partir de pasajes recuperados que se insertan en el prompt en un formato especifico. La ronda 1b se ajusto con QLoRA sobre pasajes recuperados, problemas matematicos, llamadas a herramientas y conversaciones multi-turno.
+El modelo es un transformer de tipo mixture-of-experts construido sobre inclusionAI Ling-3.0-tiny, con unos 8B parametros totales y aproximadamente 1B activos por token. La model card lo etiqueta con el tag `bailing_hybrid`, lo que sugiere una variante hibrida dentro de la familia Ling, aunque no se detalla en la informacion disponible la composicion exacta de capas ni el mecanismo de atencion. La ventana de contexto alcanza los 131.072 tokens.
 
-La cuantizacion MLX "beam" combina expertos en 4 bits con atencion y pesos compartidos en 8 bits, generando un archivo de 4,6 GB. Segun la model card, la concordancia top-1 con BF16 es del 96,75% en tokens mixtos de chat, codigo y matematicas, y del 90,92% en WikiText (KLD 0,0115 / 0,0444). La conversion se realizo con mlx-lm 0.32. No se detalla en la informacion disponible el numero exacto de tokens de entrenamiento ni la composicion completa del dataset.
+El entrenamiento de la ronda 1b se realizo con QLoRA sobre pasajes recuperados, problemas matematicos, llamadas a herramientas y conversaciones multi-turno. El modelo se apoya en una biblioteca de conocimiento externa (*engram*) formada por tablas, y esta entrenado para consumir los pasajes en un formato concreto que proporciona el proxy terrabeam. La cuantizacion MLX 4-bit se convirtio con mlx-lm 0.32 y reporta una concordancia top-1 con BF16 del 96,75% en chat, codigo y matematicas mixtos, y del 90,92% en WikiText (KLD 0,0115 / 0,0444). No se especifica en la informacion disponible el numero total de tokens de entrenamiento ni si hubo fases de RLHF o DPO.
 
 ## Capacidades
 
-- Generacion de texto conversacional en ingles.
-- Razonamiento matematico: puntuacion del 96,2% en GSM8K (400 preguntas) con modo thinking activado.
-- Modo thinking (razonamiento explicito) activable y desactivable.
-- Tool calling / function calling, segun las etiquetas y los datos de entrenamiento (llamadas a herramientas).
-- Razonamiento multi-turno: 94,0% de acierto en primeras preguntas y 93,3% en segundas preguntas de 150 pares con thinking activado.
-- Respuesta aumentada por recuperacion: entrenado para responder a partir de pasajes recuperados insertados en el prompt.
-- Capacidades de conocimiento factual mediadas por recuperacion (SimpleQA, EngramBench, AA-Omniscience).
-- No se documentan capacidades de vision ni audio en la informacion disponible.
+- Generacion de texto conversacional y razonamiento con modo *thinking* activable.
+- Razonamiento matematico: 95,5% en 400 preguntas de GSM8K con thinking activado.
+- Respuesta aumentada por recuperacion (RAG) sobre bibliotecas de tablas de conocimiento, con formato de pasajes especifico.
+- Tool calling y uso de herramientas: el modelo puede invocar `search_library` con sus propias consultas de forma iterativa.
+- Razonamiento multi-paso y comportamiento de agente (evaluado en tau2-bench en dominios de aerolinea, retail y telecom).
+- Memoria de conversaciones anteriores: recupera notas de chats previos emparejadas por palabras distintivas.
+- Soporte de API estilo OpenAI mediante `mlx_lm.server`.
+- Capacidades multilingues: limitadas al ingles segun la metadata del modelo.
 
 ## Casos de uso
 
-- Atencion al cliente automatizada: el modelo puede gestionar conversaciones multi-turno con contexto largo gracias a su ventana de 131.072 tokens, manteniendo coherencia entre turnos (93,3% de acierto en segundas preguntas en las pruebas del autor).
-- Generacion de codigo y asistencia en programacion: admite tool calling y muestra alta concordancia de cuantizacion en tokens de codigo (96,75% top-1 frente a BF16), lo que permite integrarlo en pipelines de desarrollo.
-- Resolucion de problemas matematicos: con un 96,2% en GSM8K en modo thinking, es adecuado para tutoria o verificacion de calculos paso a paso.
-- Sistemas de preguntas y respuestas con recuperacion (RAG): disenado especificamente para responder a partir de pasajes recuperados; con terrabeam como proxy se inyectan pasajes en el formato de entrenamiento, elevando SimpleQA de 28 a 593 aciertos sobre 1.000.
-- Despliegue local en Apple Silicon: la cuantizacion MLX de 4,6 GB permite ejecutar el modelo en equipos Mac con memoria unificada, sirviendo una API compatible con OpenAI mediante mlx_lm.server.
-- Asistentes con memoria a largo plazo: la integracion con terrabeam en modo `--memory long-term` permite mantener contexto recuperado entre peticiones, util para asistentes personales o bases de conocimiento internas.
-- Evaluacion e investigacion de arquitecturas MoE con recuperacion: util para estudiar el impacto de la recuperacion en la precision factual frente al conocimiento parametrico.
+- Agente de atencion al cliente en dominios transaccionales: la model card reporta recompensas medias de 0,71 en airline, 0,80 en retail y 0,62 en telecom en tau2-bench, adecuadas para flujos de soporte con tool calling y contexto largo de 131K tokens.
+- Asistente con base de conocimiento corporativa: desplegando terrabeam como proxy delante del servidor MLX, el modelo responde a partir de pasajes recuperados de tablas internas, con una tasa de acierto del 91,7% en tareas de hechos sobre tablas no vistas durante el entrenamiento.
+- Busqueda documental multi-paso: el modelo formula sus propias consultas a `search_library`, lo que permite resolver preguntas que requieren encadenar dos recuperaciones (63,6% de acierto en preguntas de dos pasos con terrabeam 0.3).
+- Asistencia matematica y de calculo: con thinking activado alcanza 95,5% en GSM8K, util para tutoria o resolucion de problemas aritmeticos en aplicaciones educativas.
+- Chat con memoria persistente: recuperacion de hechos personales mencionados en conversaciones anteriores (89,6% de acierto en tareas de memoria con terrabeam 0.3), apropiado para asistentes personales en dispositivos Apple.
+- Inferencia local en Apple Silicon: la cuantizacion MLX 4-bit ocupa 4,6 GB, lo que permite ejecutar el modelo en portatiles Mac con memoria unificada para prototipado y desarrollo offline.
+- Evaluacion e investigacion de RAG: la separacion entre pesos y arnes de recuperacion (terrabeam) facilita experimentos controlados sobre el impacto de la recuperacion, con metricas publicadas antes y despues.
 
 ## Benchmarks y rendimiento
 
-Resultados preliminares publicados en la model card (fecha 4 de noviembre; protocolo de muestreo: temperatura 1,0, top_p 0,95, top_k 20, hasta 32K tokens nuevos, ventana completa de 131K):
+Resultados reportados en la model card (protocolo de model card: temperatura 1,0, top_p 0,95, top_k 20, hasta 32K tokens nuevos, ventana completa de 131K):
 
-| Test (tamano de muestra) | Thinking on | Thinking off |
+| Benchmark | Thinking on, sin recuperacion | Thinking on, con recuperacion |
 |---|---:|---:|
-| GSM8K (400) | 96,2% | 92,5% |
-| Multi-turno, primera pregunta (150) | 94,0% | 86,7% |
-| Multi-turno, segunda pregunta (150) | 93,3% | 88,7% |
-| MMLU-Pro (700) | 63,9% | 44,0% |
+| GSM8K (400 preguntas) | 95,5% (con thinking) | no disponible |
+| EngramBench (503) | 12,1% | 86,5% |
+| SimpleQA (1000) | 3,0% | 60,1% |
+| AA-Omniscience (200) | 10,5% | 28,0% |
 
-Impacto de la recuperacion (thinking on, cerrado → con recuperacion):
-
-| Test (preguntas) | Thinking on | Thinking off |
+| Benchmark | Thinking off, sin recuperacion | Thinking off, con recuperacion |
 |---|---:|---:|
-| EngramBench (503) | 12,9% → 85,7% | 10,1% → 87,5% |
-| SimpleQA (1000) | 2,8% → 59,3% | 2,6% → 57,5% |
-| AA-Omniscience (200) | 10,0% → 26,5% | 5,0% → 26,5% |
+| EngramBench (503) | 8,5% | 87,9% |
+| SimpleQA (1000) | 3,0% | 58,1% |
+| AA-Omniscience (200) | 7,5% | 27,0% |
 
-Fidelidad de cuantizacion frente a BF16:
+| tau2-bench (agente de soporte) | Recompensa media |
+|---|---:|
+| Airline | 0,71 |
+| Retail | 0,80 |
+| Telecom | 0,62 |
 
-| Build | Tamano de archivo | Concordancia top-1 mixta | Concordancia top-1 WikiText |
-|---|---:|---:|---:|
-| Q4_K_M | 4,94 GB | 97,65% | 92,74% |
-| Q6_K | 7,23 GB | 98,92% | 96,74% |
-| Q8_0 | 8,41 GB | 99,18% | 97,20% |
-| MLX beam | 4,92 GB | 96,75% | 90,92% |
-| MLX 8-bit | 8,87 GB | 99,20% | 97,40% |
+Impacto del arnes terrabeam 0.3 frente a 0.2 sobre 154 tareas de biblioteca retenidas:
 
-Nota: el modelo base Ling sin entrenamiento adicional alcanzo 59,2% en SimpleQA con los mismos pasajes y thinking on, frente al 59,3% de la ronda 1b, lo que sugiere que la mejora principal proviene de la recuperacion. Las cifras marcadas como preliminares estan siendo re-medidas con el protocolo de la model card. No se han publicado resultados de benchmarks en la informacion disponible para comparaciones con modelos de terceros.
+| Tipo de tarea | terrabeam 0.2 | terrabeam 0.3 |
+|---|---:|---:|
+| Hechos (108 tareas) | 59,7% | 91,7% |
+| Preguntas de dos pasos (22) | 9,1% | 63,6% |
+| Memoria de chats anteriores (24) | 64,6% | 89,6% |
+| Todas (correctas / incorrectas) | 53,2% / 14,6% | 83,4% / 12,0% |
+
+Fidelidad de la cuantizacion MLX 4-bit frente a BF16: concordancia top-1 del 96,75% en chat, codigo y matematicas mixtos, y del 90,92% en WikiText (KLD 0,0115 / 0,0444).
 
 ## Requisitos de hardware
 
-- VRAM/memoria estimada: la cuantizacion MLX beam ocupa 4,6 GB (archivo de 4,92 GB); la version MLX 8-bit ocupa 8,87 GB; BF16 requiere aproximadamente el doble del tamano de parametros (unos 16 GB).
-- GPU recomendadas: el formato MLX esta disenado para Apple Silicon (memoria unificada). Para otros entornos, las versiones GGUF (Q4_K_M de 4,94 GB) permiten ejecucion en GPU consumer y CPU.
-- Cabe en GPU consumer: si, en tarjetas con al menos 6-8 GB de VRAM para la cuantizacion de 4 bits (por ejemplo, RTX 3060, RTX 4060, RTX 4090), y en equipos Mac con memoria unificada suficiente.
-- Opciones de despliegue: mlx-lm (generate y server con API compatible con OpenAI), llama.cpp/Ollama para GGUF, y terrabeam como proxy de recuperacion delante del servidor. No se mencionan vLLM ni TGI en la informacion disponible.
-- Latencia y throughput: no disponibles en la informacion proporcionada. La model card indica que la version MLX fue probada en CPU (MLX).
+- VRAM/memoria: la cuantizacion MLX 4-bit ocupa 4,6 GB; el repositorio completo pesa 4,9 GB. La version MLX 8-bit y la BF16 requieren mas memoria (no se detalla la cifra exacta en la informacion disponible).
+- GPU recomendadas: el formato MLX esta pensado para Apple Silicon (CPU/GPU unificadas via MLX). Para otras plataformas existen pesos GGUF y BF16, desplegables en GPUs NVIDIA (A100, H100, RTX 4090) mediante llama.cpp o vLLM, aunque no se publican cifras de VRAM especificas para esos formatos.
+- Cabe en GPU de consumo: si, en equipos Apple Silicon con memoria unificada suficiente para 4,6 GB mas el contexto; en GPUs de consumo tipo RTX 4090 es viable con la cuantizacion GGUF equivalente.
+- Opciones de despliegue: `mlx_lm.generate` y `mlx_lm.server` (API estilo OpenAI) con mlx-lm >= 0.32; proxy terrabeam para inyectar pasajes y activar la herramienta de biblioteca; llama.cpp/Ollama para el formato GGUF; vLLM no esta confirmado para este modelo.
+- Latencia y throughput: no se publican cifras en la informacion disponible.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Activos | Contexto | Licencia | Formato | Notas |
-|---|---|---:|---:|---|---|---|
-| Moon-Beam-8B-A1B (MLX Preview) | ~8B | ~1B | 131.072 | MIT | MLX, GGUF, BF16 | MoE con recuperacion; GSM8K 96,2% (thinking on) |
-| Ling-3.0-tiny (base) | no disponible | no disponible | no disponible | no disponible | no disponible | Base del modelo; 59,2% en SimpleQA con recuperacion |
-| Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible | No se dispone de datos de terceros en la informacion proporcionada |
+| Modelo | Parametros | Activos | Contexto | Licencia | Notas |
+|---|---|---|---|---|---|
+| Moon-beam 8B A1B (MLX, preview) | 8B | ~1B | 131.072 | MIT | MoE con RAG entrenado, thinking y tool calling; solo ingles |
+| Ling-3.0-tiny (inclusionAI) | no disponible | no disponible | no disponible | no disponible | Modelo base del que deriva Moon-beam |
+| Alternativas MoE de ~8B con ~1B activos | no disponible | no disponible | no disponible | no disponible | No se dispone de datos verificados en la informacion proporcionada |
 
-No se dispone de informacion sobre modelos comparables de terceros en la documentacion facilitada; la unica referencia interna es el modelo base Ling-3.0-tiny.
+No se dispone de datos verificados de modelos comparables en la informacion proporcionada mas alla del propio modelo base.
 
 ## Limitaciones y advertencias
 
-- Version preview: los pesos corresponden a un release candidate (ronda 1b) y la model card indica que seran actualizados cuando este lista la libreria Tablinum-3; el sufijo `-Preview` se eliminara entonces.
-- Dependencia de recuperacion: el modelo esta entrenado para responder a partir de pasajes recuperados; sin ellos, el rendimiento factual cae drasticamente (SimpleQA del 59,3% al 2,8%). Requiere terrabeam u otro mecanismo que inyecte pasajes en el formato exacto de entrenamiento.
-- Solo ingles: el unico idioma declarado es `en`; no hay soporte multilingue documentado.
-- Riesgo de alucinacion: aunque la recuperacion reduce errores factuales, el modelo sigue siendo un LLM generativo; las cifras de SimpleQA (59,3%) y AA-Omniscience (26,5%) muestran que una parte sustancial de las respuestas factuales sigue siendo incorrecta.
-- Evaluacion parcial: varias cifras estan marcadas como preliminares y en MMLU-Pro 70 de 700 respuestas con thinking on alcanzaron el limite de 30.000 tokens de salida, lo que puede afectar a la fiabilidad de esa metrica.
-- Licencia MIT: permite uso comercial, pero la model card no detalla restricciones adicionales sobre los datos de entrenamiento ni sobre la biblioteca engram.
-- Hardware: el formato MLX esta orientado a Apple Silicon; en otros entornos debe usarse la version GGUF o BF16.
-- Baja traccion en el repositorio (0 descargas, 0 likes en el momento de la consulta), lo que implica escasa validacion por parte de la comunidad.
+- Version *preview* (release candidate, ronda 1b): los pesos pueden ser sustituidos por una version no-preview; no se garantiza estabilidad de comportamiento.
+- Idioma: solo se declara soporte de ingles; el rendimiento en castellano u otros idiomas no esta evaluado.
+- Dependencia fuerte del arnes de recuperacion: los resultados altos en benchmarks factuales (SimpleQA, EngramBench) se obtienen solo con pasajes recuperados y el formato correcto; sin recuperacion, el rendimiento cae drasticamente (3,0% en SimpleQA, 12,1% en EngramBench con thinking).
+- Sensibilidad al formato: el modelo espera los pasajes en el layout exacto con el que fue entrenado; un proxy o formato distinto degrada la calidad.
+- Riesgo de alucinacion: incluso con recuperacion, la tasa de respuestas incorrectas en tareas de biblioteca es del 12,0% con terrabeam 0.3.
+- Dependencia del razonamiento conservado entre turnos: en tau2 airline, la recompensa cae de 0,711 a 0,045 si se descarta el razonamiento previo del modelo.
+- Licencia MIT: permite uso comercial, pero el modelo base Ling-3.0-tiny puede tener condiciones propias que conviene verificar antes de produccion.
+- Sin datos publicados sobre sesgos, robustez frente a prompt injection ni evaluaciones de seguridad.
+- El repositorio tiene pocas descargas (452) y cero likes en el momento de la consulta, lo que indica adopcion limitada y poca validacion externa.
 
 ## Enlaces
 
-- Repositorio Hugging Face (MLX Preview): https://huggingface.co/tablinum/Moon-Beam-8B-A1B-MLX-Preview
-- Modelo base BF16: https://huggingface.co/tablinum/Moon-Beam-8B-A1B-Preview
+- Modelo en Hugging Face: https://huggingface.co/tablinum/Moon-Beam-8B-A1B-MLX-Preview
+- Modelo base (BF16): https://huggingface.co/tablinum/Moon-Beam-8B-A1B-Preview
 - Version MLX 8-bit: https://huggingface.co/tablinum/Moon-Beam-8B-A1B-MLX-8bit-Preview
 - Version GGUF: https://huggingface.co/tablinum/Moon-Beam-8B-A1B-GGUF-Preview
-- Notas de modelo y evaluacion (stats): https://huggingface.co/tablinum/Moon-Beam-8B-A1B-GGUF-Preview/blob/main/stats/README.md
-- Resultados preliminares de benchmarks (JSON): https://huggingface.co/tablinum/Moon-Beam-8B-A1B-GGUF-Preview/blob/main/stats/benchmarks_preliminary_1104.json
+- Notas de modelo y evaluacion: https://huggingface.co/tablinum/Moon-Beam-8B-A1B-GGUF-Preview/blob/main/stats/README.md
+- Dataset Tablinum-3: https://huggingface.co/datasets/tablinum/tablinum-3
 - Repositorio terrabeam: https://github.com/chadstthomas-svg/terrabeam
+- Release terrabeam 0.3.0: https://github.com/chadstthomas-svg/terrabeam/releases/tag/v0.3.0

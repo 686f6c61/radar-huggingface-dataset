@@ -52,6 +52,13 @@
   "removal_pattern": null,
   "renamed_to": null,
   "renamed_at": null,
-  "benchmarks": [],
+  "benchmarks": [
+    {
+      "task": "Maths",
+      "dataset": "MATH-500",
+      "metric": "MATH-500, 4 samples",
+      "value": 45.2
+    }
+  ],
   "sources": []
 }

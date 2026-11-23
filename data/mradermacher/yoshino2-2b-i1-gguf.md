@@ -2,95 +2,90 @@
 
 ## Resumen
 
-Yoshino2-2B-i1-GGUF es una coleccion de cuantizaciones GGUF del modelo base en5yme/Yoshino2-2B, publicada por mradermacher. El modelo original es un transformer denso de aproximadamente 1.940 millones de parametros (1,942,653,248 segun los pesos en safetensors) orientado a razonamiento y destilacion, entrenado sobre el dataset en5yme/Nemotron-3.5-Lightning-30B-A3B-Distill. La licencia es MIT, lo que permite uso comercial sin restricciones adicionales.
+Yoshino2-2B-i1-GGUF es una colección de cuantizaciones GGUF del modelo Yoshino2-2B, publicada por mradermacher, un conocido creador de cuantizaciones para la comunidad de inferencia local. El modelo base, en5yme/Yoshino2-2B, es un modelo de 1.942.653.248 parámetros (aproximadamente 1,94 mil millones) afinado mediante destilación a partir de Nemotron-3.5-Lightning-30B-A3B, según el dataset de destilación referenciado en la model card. El repositorio se centra en ofrecer versiones cuantizadas con imatrix para ejecución eficiente en hardware de consumo.
 
-El repositorio de mradermacher no entrena ni modifica el modelo, sino que genera cuantizaciones con imatrix (importancia ponderada) para reducir el peso de los pesos y permitir la inferencia en hardware modesto. Los ficheros van desde i1-Q2_K (1,1 GB) hasta i1-Q6_K (1,7 GB), cubriendo el rango tipico de despliegue en CPU y GPU de consumo. El autor indica que se trata de un modelo de vision y que los ficheros mmproj, si existen, se encuentran en el repositorio estatico paralelo (mradermacher/Yoshino2-2B-GGUF).
+La relevancia de esta ficha reside en que permite ejecutar un modelo de razonamiento destilado de un modelo mayor (un MoE de 30B con 3B activos) en equipos modestos, con ficheros que van desde 1,1 GB hasta 1,7 GB según la cuantización. Está etiquetado como modelo conversacional y de razonamiento, con licencia MIT, lo que facilita su uso comercial y su integración en pipelines locales.
 
-La relevancia actual de esta ficha radica en que ofrece una via practica para ejecutar un modelo de 2B especializado en razonamiento en equipos sin GPU dedicada de gama alta, con cuantizaciones de 1 a 2 GB que caben en memoria RAM y en GPUs de consumo con 4-8 GB de VRAM. La informacion publica disponible es limitada: no se detallan la longitud de contexto, la composicion exacta del dataset ni resultados de benchmarks.
+No se dispone de información sobre la longitud de contexto, la arquitectura interna del modelo base ni los detalles del proceso de destilación más allá de las etiquetas y el dataset citado. Esta ficha refleja exclusivamente los datos disponibles en la información proporcionada.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer denso (no se especifica variante concreta) |
-| Parametros totales | 1.942.653.248 (aprox. 1,94 B) |
-| Parametros activos | no disponible (no es MoE) |
+| Arquitectura | no disponible (modelo base transformer, detalles no especificados) |
+| Parametros totales | 1.942.653.248 (~1,94B) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | i1-Q2_K, i1-Q3_K_S, i1-IQ3_S, i1-IQ3_M, i1-Q3_K_M, i1-Q3_K_L, i1-IQ4_XS, i1-Q4_0, i1-Q4_K_S, i1-IQ4_NL, i1-Q4_K_M, i1-Q4_1, i1-Q5_K_S, i1-Q5_K_M, i1-Q6_K, ademas de fichero imatrix |
-| Idiomas soportados | en (ingles) |
+| Tipos de cuantizacion | i1-Q2_K, i1-Q3_K_S, i1-IQ3_S, i1-IQ3_M, i1-Q3_K_M, i1-Q3_K_L, i1-IQ4_XS, i1-Q4_0, i1-Q4_K_S, i1-IQ4_NL, i1-Q4_K_M, i1-Q4_1, i1-Q5_K_S, i1-Q5_K_M, i1-Q6_K (además de fichero imatrix) |
+| Idiomas soportados | en (inglés) |
 | Licencia | MIT |
-| Formato de pesos | GGUF (cuantizaciones i1/imatrix); el modelo base en safetensors |
-| Tamano del repositorio | 18,6 GB (incluye todas las cuantizaciones) |
-| Modelo base | en5yme/Yoshino2-2B |
-| Dataset de destilacion | en5yme/Nemotron-3.5-Lightning-30B-A3B-Distill |
+| Formato de pesos | GGUF (cuantizaciones); el modelo base en safetensors |
 
 ## Arquitectura y entrenamiento
 
-El modelo base Yoshino2-2B es un transformer denso de aproximadamente 1,94 mil millones de parametros. La model card del repositorio cuantizado no documenta la arquitectura interna (numero de capas, dimensiones ocultas, tipo de atencion, uso de RoPE o GQA), por lo que estos detalles no estan disponibles en la informacion proporcionada. Los tags indican que el modelo esta orientado a "distillation" y "reasoning", y el dataset asociado se denomina Nemotron-3.5-Lightning-30B-A3B-Distill, lo que sugiere que el modelo original se entreno mediante destilacion a partir de un modelo mayor (probablemente un MoE de 30B con 3B activos, segun la nomenclatura del dataset).
+No se dispone de información detallada sobre la arquitectura interna del modelo base en5yme/Yoshino2-2B. Por las etiquetas y el dataset asociado (en5yme/Nemotron-3.5-Lightning-30B-A3B-Distill), se trata de un modelo destilado a partir de Nemotron-3.5-Lightning-30B-A3B, un modelo de mezcla de expertos con 30B parámetros totales y 3B activos. El proceso de destilación busca transferir capacidades de razonamiento del modelo profesor al modelo estudiante de ~1,94B parámetros.
 
-No se dispone de informacion sobre el numero de tokens de entrenamiento, la composicion del corpus, ni si se aplicaron tecnicas de RLHF, DPO o ajuste supervisado. Tampoco se documentan innovaciones tecnicas como decodificacion especulativa, atencion lineal o modos de pensamiento explicito. El trabajo de mradermacher se limita a la cuantizacion: genera ficheros GGUF con imatrix, una tecnica que pondera la importancia de cada tensor durante la cuantizacion para preservar mejor la calidad en tasas de bits bajas. El repositorio incluye tanto cuantizaciones estaticas (en el repo paralelo) como estas i1 (imatrix), que suelen ofrecer mejor relacion calidad/tamano que las estaticas equivalentes.
+Las cuantizaciones publicadas por mradermacher emplean el formato i1 (imatrix) de llama.cpp, que utiliza una matriz de importancia calculada a partir de datos de calibración para mejorar la calidad de las cuantizaciones de baja precisión. El repositorio incluye el fichero imatrix (Yoshino2-2B.imatrix.gguf, 0,1 GB) para que otros usuarios puedan generar sus propias cuantizaciones. No se especifican el número de tokens de entrenamiento, la composición del dataset ni si hubo RLHF o DPO.
 
 ## Capacidades
 
-- Generacion de texto conversacional en ingles, segun el tag "conversational" y el pipeline declarado.
-- Razonamiento: el tag "reasoning" y el origen por destilacion de un modelo mayor sugieren capacidad para tareas de razonamiento multi-paso, aunque no se detallan modos de pensamiento explicitos.
-- Destilacion: el modelo se entreno sobre un dataset de destilacion, lo que puede reflejar parte de las capacidades del profesor (Nemotron-3.5-Lightning-30B-A3B).
-- Vision: la model card de mradermacher advierte que "this is a vision model", aunque los ficheros mmproj, si existen, estarian en el repositorio estatico; no se confirma en la informacion disponible que el modelo base tenga torre visual.
-- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no documentado explicitamente; el tag "reasoning" es la unica indicacion.
-- Capacidades multilingues: limitadas al ingles segun el campo language.
-- Capacidades especiales (thinking mode, audio): no disponibles.
+- Generación de texto conversacional en inglés, orientada a diálogo multi-turno.
+- Razonamiento: el modelo está etiquetado explícitamente como "reasoning" y deriva de un proceso de destilación de un modelo mayor con capacidades de razonamiento.
+- Destilación: capacidad heredada del modelo profesor Nemotron-3.5-Lightning-30B-A3B, orientada a tareas de razonamiento y respuesta.
+- Soporte de tool calling / function calling: no disponible en la información proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no confirmado explícitamente; la etiqueta "reasoning" sugiere razonamiento de un solo paso o cadena de pensamiento, pero no hay detalles.
+- Capacidades multilingües: limitadas al inglés según la etiqueta `language: en`.
+- Capacidades especiales (thinking mode, visión, audio): no disponible.
 
 ## Casos de uso
 
-- Asistente conversacional local en ingles: con cuantizaciones de 1,1 a 1,7 GB, el modelo puede ejecutarse en un portatil con 8 GB de RAM mediante llama.cpp u Ollama, ofreciendo respuestas conversacionales sin conexion y sin coste de API.
-- Prototipado de razonamiento en entornos con recursos limitados: la cuantizacion i1-Q4_K_M (1,4 GB) permite experimentar con un modelo afinado para razonamiento en una GPU de consumo de 4-6 GB de VRAM, util para validar pipelines antes de escalar a modelos mayores.
-- Educacion e investigacion sobre destilacion: al estar entrenado sobre un dataset de destilacion de un modelo 30B-A3B, sirve como caso de estudio para analizar como se transfieren capacidades de razonamiento a un modelo denso de 2B.
-- Generacion de texto en aplicaciones embebidas: el reducido tamano de las cuantizaciones Q2/Q3 (1,1-1,3 GB) permite integrar el modelo en dispositivos con poca memoria, como Raspberry Pi 5 con 8 GB o mini-PC, para tareas de generacion de texto de baja latencia.
-- Filtrado y clasificacion de texto: un modelo de 2B puede usarse para tareas auxiliares de etiquetado, resumen o reescritura en ingles dentro de pipelines mas grandes, donde el coste por token importa mas que la calidad maxima.
-- Evaluacion comparativa de cuantizaciones: el repositorio ofrece 15 variantes de cuantizacion del mismo modelo, lo que permite medir empiricamente el impacto de la cuantizacion en perplejidad y calidad de razonamiento en un modelo pequeno.
-- Base para fine-tuning ligero: al ser MIT y de 2B parametros, es un punto de partida asequible para ajuste fino con LoRA en una sola GPU de consumo.
+- Asistente conversacional local: el modelo puede gestionar diálogos multi-turno en inglés en equipos con poca VRAM, gracias a sus cuantizaciones de 1,1-1,7 GB que caben en GPUs de consumo e incluso en CPU.
+- Razonamiento ligero en el borde: al ser un modelo destilado de un modelo de razonamiento mayor, puede emplearse para tareas de razonamiento básico en dispositivos con recursos limitados, como Raspberry Pi o portátiles sin GPU dedicada.
+- Prototipado rápido de aplicaciones de chat: la licencia MIT y el formato GGUF permiten integrar el modelo en aplicaciones locales con llama.cpp u Ollama sin coste de licencia.
+- Educación e investigación: sirve como caso de estudio de destilación de conocimiento desde un MoE de 30B a un modelo denso de ~2B, útil para experimentos académicos sobre eficiencia de modelos.
+- Generación de texto en pipelines offline: adecuado para tareas de generación de texto por lotes en entornos sin conectividad, donde el tamaño reducido del modelo permite ejecutarlo en CPU.
+- Evaluación comparativa de cuantizaciones: el repositorio ofrece 15 cuantizaciones distintas del mismo modelo, lo que permite estudiar el impacto de la cuantización en la calidad de salida con un modelo de referencia pequeño.
+- Despliegue en entornos con restricciones de memoria: con cuantizaciones de 1,1 GB (Q2_K) el modelo puede ejecutarse en sistemas embebidos o contenedores con límites estrictos de RAM.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye tablas de MMLU, HumanEval, GSM8K ni metricas de perplejidad para las distintas cuantizaciones. El unico dato cuantitativo es el tamano de cada fichero GGUF y la recomendacion cualitativa del autor de que las cuantizaciones IQ suelen ser preferibles a las no-IQ de tamano similar.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: aproximadamente 1,1 GB para i1-Q2_K, 1,4 GB para i1-Q4_K_M y 1,7 GB para i1-Q6_K, mas el overhead de contexto y del runtime (tipicamente 0,5-1,5 GB adicionales segun longitud de contexto y backend).
-- GPU recomendadas: cualquier GPU con 4 GB o mas de VRAM puede ejecutar las cuantizaciones Q3/Q4; una RTX 3060, RTX 4060, RTX 4090, A100 o H100 ejecutarian el modelo con holgura, aunque para un modelo de 2B el cuello de botella sera la latencia de memoria, no la potencia de computo.
-- Cabe en GPU de consumo: si, en practicamente todas las GPU consumer modernas con 4 GB o mas (GTX 1650, RTX 3050, RTX 4060, etc.).
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, text-generation-webui y cualquier runtime compatible con GGUF. El tag "endpoints_compatible" sugiere compatibilidad con endpoints tipo OpenAI a traves de servidores de inferencia.
-- Latencia y throughput estimados: no disponibles en la informacion proporcionada; para un modelo de 2B en cuantizacion Q4, en una GPU de consumo se espera un throughput del orden de decenas a centenares de tokens por segundo, pero no se aportan mediciones concretas.
+- VRAM estimada para inferencia: aproximadamente 1,1 GB para i1-Q2_K, 1,3 GB para i1-Q4_K_S, 1,4 GB para i1-Q4_K_M y 1,7 GB para i1-Q6_K, más overhead de contexto y KV cache.
+- GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM (GTX 1050 Ti, GTX 1650, RTX 3050, RTX 4060, etc.). En GPUs de gama alta (RTX 4090, A100, H100) el modelo ocupa una fracción mínima de memoria y queda limitado por el ancho de banda, no por la capacidad.
+- Cabe en GPU de consumo: sí, en prácticamente cualquier GPU de consumo moderna e incluso en iGPU con memoria compartida suficiente.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, text-generation-webui, y cualquier runtime compatible con GGUF. El repositorio está etiquetado como `endpoints_compatible`.
+- Latencia y throughput estimados: no disponibles. Por el tamaño (~1,94B parámetros) se espera un throughput alto en GPU de consumo, pero no se proporcionan cifras.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+| Modelo | Parámetros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| Yoshino2-2B-i1-GGUF | 1,94 B | no disponible | MIT | GGUF | Destilado de Nemotron-3.5-Lightning-30B-A3B, solo ingles |
-| Qwen2.5-1.5B-Instruct (GGUF) | 1,54 B | 32.768 tokens | Apache 2.0 | GGUF, safetensors | Multilingue, ampliamente testeado, ecosistema maduro |
-| Llama-3.2-1B-Instruct (GGUF) | 1,24 B | 131.072 tokens | Llama 3.2 Community | GGUF, safetensors | Multilingue, contexto largo, buena disponibilidad de cuantizaciones |
-| Gemma-2-2B-it (GGUF) | 2,61 B | 8.192 tokens | Gemma Terms | GGUF, safetensors | Multilingue, calidad solida en razonamiento, licencia con restricciones de uso |
+| Yoshino2-2B-i1-GGUF | ~1,94B | no disponible | MIT | GGUF | Destilado de Nemotron-3.5-Lightning-30B-A3B; solo inglés |
+| Modelo base Yoshino2-2B | ~1,94B | no disponible | MIT | safetensors | Mismo modelo sin cuantizar |
+| Nemotron-3.5-Lightning-30B-A3B (profesor) | 30B totales / 3B activos | no disponible | no disponible en la información | no disponible | Modelo de origen de la destilación; mucho mayor |
 
-La comparativa se basa en caracteristicas publicas de modelos de tamano similar; no se dispone de datos de rendimiento de Yoshino2-2B que permitan una comparacion cuantitativa directa. La principal ventaja de Yoshino2-2B frente a las alternativas es la licencia MIT sin restricciones, mientras que sus desventajas son el soporte unicamente en ingles y la falta de documentacion sobre contexto y rendimiento.
+No se dispone de datos de benchmarks ni de otros modelos comparables de la misma categoría en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Sesgos conocidos: no documentados; al entrenarse sobre un dataset de destilacion no descrito, puede heredar sesgos del modelo profesor y del corpus utilizado.
-- Riesgo de alucinacion: no cuantificado; como modelo de 2B, la tasa de alucinacion sera previsiblemente mayor que en modelos de mayor tamano, especialmente en tareas de conocimiento factual.
-- Limitaciones de contexto o idioma: el modelo solo declara soporte de ingles; la longitud de contexto no esta documentada, lo que impide garantizar conversaciones multi-turno largas o procesamiento de documentos extensos.
-- Restricciones de licencia: la licencia MIT permite uso comercial, modificacion y redistribucion sin restricciones adicionales, siempre que se incluya el aviso de copyright. No obstante, el modelo base y el dataset de destilacion podrian tener sus propias condiciones; conviene verificar en5yme/Yoshino2-2B y el dataset Nemotron-3.5-Lightning-30B-A3B-Distill antes de un despliegue comercial.
-- Caveats para produccion: la falta de benchmarks y de documentacion sobre contexto y entrenamiento hace arriesgado desplegar el modelo en produccion sin una evaluacion propia. Las cuantizaciones de 2-3 bits (Q2_K, IQ2, IQ3) degradan la calidad de forma notable y no se recomiendan para tareas de razonamiento. La advertencia sobre vision no esta confirmada con ficheros mmproj en este repositorio, por lo que no debe asumirse capacidad multimodal sin verificar el repositorio estatico.
-- El repositorio tiene 0 likes y unas 1.508 descargas, lo que indica una adopcion limitada y poca validacion por parte de la comunidad.
+- Sesgos conocidos: no documentados en la información disponible; al entrenarse principalmente en inglés, puede presentar sesgos culturales y lingüísticos propios de los datos de entrenamiento.
+- Riesgo de alucinación: presente como en cualquier modelo de lenguaje; el tamaño reducido (~1,94B) y la destilación pueden aumentar la probabilidad de errores factuales frente al modelo profesor.
+- Limitaciones de contexto o idioma: el modelo solo está etiquetado para inglés (`language: en`); no se garantiza un rendimiento adecuado en castellano u otros idiomas. La longitud de contexto no está documentada.
+- Restricciones de licencia: licencia MIT, que permite uso comercial, modificación y redistribución con atribución y sin garantía. No obstante, deben verificarse las condiciones del modelo base y del dataset de destilación, ya que la licencia del modelo profesor (Nemotron) no se detalla en la información disponible.
+- Caveats para producción: no hay benchmarks publicados que permitan estimar la calidad real; el modelo es de tamaño pequeño y puede no ser adecuado para tareas que requieran precisión factual alta o razonamiento complejo. Las cuantizaciones de baja precisión (Q2_K, Q3) degradan la calidad de forma notable.
+- El repositorio tiene 0 likes y 2611 descargas en el momento de la consulta, lo que indica una adopción limitada y poca validación por parte de la comunidad.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/mradermacher/Yoshino2-2B-i1-GGUF
 - Modelo base: https://huggingface.co/en5yme/Yoshino2-2B
-- Dataset de destilacion: https://huggingface.co/datasets/en5yme/Nemotron-3.5-Lightning-30B-A3B-Distill
-- Cuantizaciones estaticas: https://huggingface.co/mradermacher/Yoshino2-2B-GGUF
-- Pagina de descargas del autor: https://hf.tst.eu/model#Yoshino2-2B-i1-GGUF
-- Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
-- Analisis de tipos de cuantizacion (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
-- Solicitudes de cuantizacion del autor: https://huggingface.co/mradermacher/model_requests
-- nethype GmbH: https://www.nethype.de/
+- Dataset de destilación: https://huggingface.co/datasets/en5yme/Nemotron-3.5-Lightning-30B-A3B-Distill
+- Cuantizaciones estáticas: https://huggingface.co/mradermacher/Yoshino2-2B-GGUF
+- Página de descargas del autor: https://hf.tst.eu/model#Yoshino2-2B-i1-GGUF
+- README de referencia para uso de GGUF: https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Gráfica comparativa de cuantizaciones: https://www.nethype.de/huggingface_embed/quantpplgraph.png
+- Notas de Artefact2 sobre cuantizaciones: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- FAQ y solicitudes de modelos: https://huggingface.co/mradermacher/model_requests

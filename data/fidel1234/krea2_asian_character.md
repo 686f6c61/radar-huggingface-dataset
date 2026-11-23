@@ -2,50 +2,56 @@
 
 ## Resumen
 
-Krea2 Asian Character es un adaptador LoRA (Low-Rank Adaptation) para los modelos de generacion de imagen Krea-2 de Krea AI, concretamente para las variantes Krea-2-Raw y Krea-2-Turbo. Lo desarrolla el usuario fidel1234 y su proposito es especializar el modelo base en la generacion de personajes de ascendencia asiatica, con enfasis declarado en personajes japoneses. No es un modelo de lenguaje ni un modelo fundacional: es un complemento de bajo rango que modifica el comportamiento de un diffusion transformer ya entrenado.
+Krea2 Asian Character es un adaptador LoRA (Low-Rank Adaptation) para los modelos de generación de imágenes Krea 2, desarrollado por el usuario fidel1234. Su función es especializar el modelo base en la representación de personajes de etnia asiática, con énfasis en rasgos japoneses, sin necesidad de reentrenar el modelo completo. Se distribuye como un conjunto de ficheros `.safetensors` compatibles tanto con la variante Raw como con la Turbo de Krea 2.
 
-El adaptador se entrena sobre Krea-2-Raw mediante el framework AI-Toolkit y se distribuye en formato safetensors compatible con la libreria diffusers y con ComfyUI. El repositorio ocupa 45,3 GB y acumula mas de un millon de descargas, lo que lo situa entre los LoRA de personaje mas utilizados del ecosistema Krea-2.
+El adaptador se entrenó con AI-Toolkit sobre Krea-2-Raw y emplea un dataset seleccionado manualmente que equilibra primeros planos, planos medios, cuerpo completo y distintos ángulos, lo que permite control flexible de encuadre y perspectiva. Cada fichero LoRA incluye una imagen de muestra con el mismo nombre que el `.safetensors`, y el flujo de trabajo y la palabra de activación están embebidos únicamente en los metadatos de esa imagen, no en el fichero de pesos.
 
-Su relevancia practica radica en que resuelve un sesgo conocido de los modelos de difusion generalistas: la infrarrepresentacion y la escasa coherencia anatomica y cultural en la representacion de rostros y corporalidades asiaticas. Al ser un LoRA, permite obtener esa especializacion sin reentrenar el modelo base, con un coste computacional de inferencia practicamente identico al del checkpoint original.
+El repositorio tiene un tamaño de 51,3 GB, acumula 1.404.319 descargas y 66 likes en el momento de la consulta, y se publica bajo licencia MIT, con la advertencia de que el uso del modelo base subyacente queda sujeto además a la Krea 2 Community License y a su Acceptable Use Policy. Su relevancia práctica radica en que ofrece un ajuste de estilo y demografía concreto sobre un modelo base reciente, con compatibilidad declarada para checkpoints raw y turbo en ComfyUI.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | LoRA (Low-Rank Adaptation) sobre diffusion transformer Krea-2 |
-| Parametros totales | no disponible (pesos del adaptador LoRA, no del modelo base) |
-| Parametros activos | no aplica (no es MoE) |
-| Longitud de contexto | no aplica (modelo de generacion de imagen) |
+| Arquitectura | LoRA (Low-Rank Adaptation) sobre modelo de difusión Krea 2 |
+| Parametros totales | no disponible (adaptador LoRA; el número de parámetros entrenables no se especifica) |
+| Parametros activos | no aplica (no es un modelo MoE) |
+| Longitud de contexto | no aplica (modelo de generación de imágenes) |
 | Tipos de cuantizacion | no disponible |
-| Idiomas soportados | no disponible (el prompt se procesa con el text encoder del modelo base) |
-| Licencia | MIT (sujeta ademas a la Krea 2 Community License y Acceptable Use Policy del modelo base) |
-| Formato de pesos | safetensors |
+| Idiomas soportados | no disponible (no se declaran idiomas; las palabras de activación son en inglés) |
+| Licencia | MIT (sujeta además a la Krea 2 Community License Agreement y Acceptable Use Policy del modelo base) |
+| Formato de pesos | safetensors (ficheros LoRA) |
+| Modelo base | krea/Krea-2-Raw y krea/Krea-2-Turbo |
+| Framework de entrenamiento | AI-Toolkit |
+| Libreria | diffusers |
+| Peso recomendado | 0,8 - 1,0 |
+| Pasos de inferencia recomendados | 20 - 30 |
+| Tamano del repositorio | 51,3 GB |
 
 ## Arquitectura y entrenamiento
 
-El adaptador es un LoRA de bajo rango que se inyecta en las capas del diffusion transformer de Krea-2. No modifica la arquitectura del modelo base: anade matrices de descomposicion de rango reducido que ajustan las proyecciones de atencion y feed-forward durante la generacion. El entrenamiento se realizo con AI-Toolkit sobre Krea-2-Raw, y el autor declara compatibilidad tanto con el checkpoint Raw como con el Turbo.
+El modelo es un adaptador LoRA, es decir, un conjunto de matrices de bajo rango que se inyectan en las capas del modelo de difusión base Krea 2 para modificar su comportamiento sin alterar los pesos originales. Se entrenó sobre Krea-2-Raw utilizando AI-Toolkit y es compatible también con Krea-2-Turbo, lo que permite combinarlo con la variante destilada para inferencia con menos pasos. No se especifican en la información disponible el rango del LoRA, el número de pasos de entrenamiento, el tamaño exacto del dataset ni la composición detallada del mismo más allá de la descripción cualitativa.
 
-El dataset se describe como una seleccion manual ("hand-cherry-picked") con mezcla equilibrada de primeros planos, planos medios, cuerpo completo y distintos angulos, con el objetivo de permitir control flexible de encuadre y perspectiva. No se especifica el numero de imagenes, el numero de pasos de entrenamiento, el rango del LoRA ni la tasa de aprendizaje. El trigger word y el flujo de generacion no estan incrustados en el safetensors, sino en los metadatos de las imagenes de muestra del repositorio.
+La innovación destacable no está en la arquitectura del adaptador, que es estándar, sino en la curaduría del dataset: se declara una mezcla equilibrada de primeros planos, planos medios, cuerpo completo y ángulos diversos, orientada a que el LoRA responda de forma flexible a distintos encuadres y perspectivas. El flujo de generación y la palabra de activación no se almacenan en el `.safetensors`, sino en los metadatos de la imagen de muestra asociada, de modo que arrastrar esa imagen a ComfyUI recupera automáticamente los parámetros y el trigger word.
 
 ## Capacidades
 
-- Generacion de imagenes de personajes asiaticos, con especializacion declarada en personajes japoneses.
-- Control de encuadre: primeros planos, planos medios y cuerpo completo gracias a la composicion del dataset.
-- Control de angulo y perspectiva, segun la mezcla de vistas del conjunto de entrenamiento.
-- Compatibilidad con los dos checkpoints del modelo base: Krea-2-Raw (mayor fidelidad, mas pasos) y Krea-2-Turbo (menos pasos, orientado a velocidad).
-- Integracion en ComfyUI mediante carga del safetensors y recuperacion del workflow desde la imagen de muestra.
-- Compatibilidad con diffusers como libreria de referencia.
-- No soporta tool calling, agentes, razonamiento multi-paso ni procesamiento de audio o video: es exclusivamente un modelo de sintesis de imagen.
+- Generación de imágenes de personajes de etnia asiática, con énfasis en rasgos japoneses, sobre los modelos Krea 2 Raw y Turbo.
+- Control de encuadre y perspectiva: el dataset de entrenamiento cubre primeros planos, planos medios y cuerpo completo, con distintos ángulos.
+- Compatibilidad con checkpoints raw y turbo del modelo base, lo que permite elegir entre calidad máxima y generación rápida.
+- Integración con ComfyUI mediante arrastrar y soltar la imagen de muestra, que carga workflow, parámetros y palabra de activación.
+- Ajuste de intensidad del efecto mediante el peso del LoRA, con rango recomendado de 0,8 a 1,0.
+- No se declaran capacidades de tool calling, agentes, razonamiento multi-paso, visión de entrada, audio ni modo thinking; es un adaptador exclusivamente de generación de imágenes.
+- No se declaran capacidades multilingües específicas.
 
 ## Casos de uso
 
-- Ilustracion de personajes para manga y anime: el LoRA permite generar retratos y figuras de cuerpo completo con rasgos coherentes y encuadres variados, usando pesos entre 0,8 y 1,0 y entre 20 y 30 pasos sobre Krea-2-Raw.
-- Creacion de assets para videojuegos: generacion de retratos de personajes y fichas de diseno con control de plano y angulo, util para preproduccion y prototipado rapido antes de encargar arte final.
-- Prototipado de campanas de marketing dirigidas a publico asiatico: permite iterar conceptos visuales con representaciones culturalmente adecuadas sin depender de bancos de imagenes.
-- Generacion de avatares y contenido para comunidades de rol o narrativa interactiva: la mezcla de encuadres del dataset facilita producir retratos consistentes para fichas de personaje.
-- Flujos de trabajo en ComfyUI para estudios pequenos: al arrastrar la imagen de muestra se recupera el workflow completo, lo que reduce la curva de configuracion para equipos con poca experiencia en difusion.
-- Iteracion rapida en produccion con Krea-2-Turbo: el adaptador funciona sobre el checkpoint Turbo, lo que permite generar variantes en pocos pasos para revisiones de direccion de arte.
-- Fine-tuning posterior o composicion con otros LoRA: al ser un adaptador MIT en safetensors, se puede combinar con otros adaptadores de estilo o de vestuario dentro del mismo pipeline.
+- Ilustración de personajes para cómics y novela gráfica: el LoRA permite generar de forma consistente personajes asiáticos en distintos encuadres (primer plano, plano medio, cuerpo entero), lo que facilita mantener una hoja de personaje coherente a lo largo de varias páginas.
+- Diseño de personajes para videojuegos: con pesos entre 0,8 y 1,0 y 20-30 pasos se pueden producir variaciones de un mismo personaje en distintas poses y ángulos, útiles para fichas de concepto y referencias de modelado.
+- Previsualización de arte conceptual en publicidad: equipos creativos pueden iterar rápidamente sobre casting visual de personajes asiáticos antes de contratar fotografía o ilustración final, usando la variante Turbo para bocetos rápidos y Raw para piezas finales.
+- Generación de avatares y retratos para aplicaciones: el sesgo del dataset hacia primeros planos permite producir retratos con encuadre controlado, adecuados para perfiles, material promocional o contenido editorial.
+- Creación de ilustraciones para merchandising y productos derivados: la licencia MIT permite uso comercial del adaptador, siempre que se respete la licencia del modelo base Krea 2, lo que habilita su incorporación en flujos de producción de láminas, camisetas o artículos similares.
+- Prototipado de storyboards y animáticas: la combinación de planos medios y cuerpo completo con distintos ángulos permite generar secuencias de viñetas con continuidad visual de personaje antes de pasar a producción.
+- Integración en pipelines de ComfyUI para estudio: al arrastrar la imagen de muestra se recuperan workflow y trigger word, lo que reduce el tiempo de configuración al incorporar el LoRA a un estudio o a un equipo de artistas.
 
 ## Benchmarks y rendimiento
 
@@ -53,37 +59,37 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible de forma especifica para el adaptador. El consumo vendra determinado por el checkpoint Krea-2 sobre el que se aplique, no por el LoRA, que anade una sobrecarga marginal.
-- GPU recomendadas: no disponible. Depende del modelo base Krea-2; el adaptador en si no impone requisitos adicionales significativos.
-- Cabe en GPU consumer: no disponible. La viabilidad dependera de la VRAM requerida por Krea-2-Raw o Krea-2-Turbo en la precision y cuantizacion elegidas.
-- Opciones de despliegue: diffusers (libreria declarada) y ComfyUI (compatibilidad declarada con checkpoints raw y turbo). Otras opciones no disponibles.
-- Latencia y throughput: no disponible. El autor recomienda entre 20 y 30 pasos de inferencia y pesos entre 0,8 y 1,0, pero no publica tiempos.
+- VRAM estimada para inferencia: no disponible de forma específica para el LoRA; depende enteramente del checkpoint base Krea 2 (Raw o Turbo) y de la precisión empleada, datos que no se detallan en la información proporcionada.
+- GPU recomendadas: no disponibles en la información proporcionada.
+- Compatibilidad con GPU de consumo: no confirmada en la información disponible; el repositorio ocupa 51,3 GB, lo que sugiere múltiples ficheros LoRA y no un único adaptador, pero no se detalla el peso individual de cada uno.
+- Opciones de despliegue: ComfyUI (raw y turbo), con flujo cargable desde la imagen de muestra; la librería declarada es diffusers, por lo que también es integrable en pipelines basados en dicha librería.
+- Latencia y throughput: no disponibles; los pasos de inferencia recomendados son 20-30.
 
 ## Comparativa con modelos similares
 
-| Modelo | Tipo | Modelo base | Licencia | Contexto de uso | Disponibilidad |
+| Modelo | Tipo | Modelo base | Licencia | Contexto / parámetros | Disponibilidad |
 |---|---|---|---|---|---|
-| Krea2 Asian Character (fidel1234) | LoRA de personaje | Krea-2-Raw / Krea-2-Turbo | MIT + licencia Krea 2 | Personajes asiaticos, sobre todo japoneses | Hugging Face, 1.056.207 descargas |
-| Krea-2-Raw (krea) | Modelo base de difusion | no aplica | Krea 2 Community License | Generacion de imagen generalista | Hugging Face |
-| Krea-2-Turbo (krea) | Modelo base de difusion | no aplica | Krea 2 Community License | Generacion de imagen rapida | Hugging Face |
+| Krea2 Asian Character (fidel1234) | LoRA de personajes asiáticos | Krea-2-Raw / Krea-2-Turbo | MIT (más licencia del base) | No disponible | Hugging Face, 1.404.319 descargas |
+| Krea 2 base (krea/Krea-2-Raw, Krea-2-Turbo) | Modelo de difusión completo | — | Krea 2 Community License | No disponible | Hugging Face |
+| Otros LoRA de personajes para Krea 2 | LoRA | Krea-2 | Variable | No disponible | No disponible en la información proporcionada |
 
-No se dispone de informacion sobre otros LoRA de personaje comparables dentro del ecosistema Krea-2 en la documentacion proporcionada.
+No se dispone de datos de benchmarks ni de especificaciones detalladas de alternativas comparables en la información proporcionada, por lo que la comparación se limita a tipo de artefacto, modelo base y licencia.
 
 ## Limitaciones y advertencias
 
-- Es un adaptador, no un modelo autonomo: sin el checkpoint Krea-2-Raw o Krea-2-Turbo no genera nada.
-- La licencia MIT del adaptador no exime del cumplimiento de la Krea 2 Community License Agreement y la Acceptable Use Policy del modelo base; el uso comercial esta sujeto a ambas.
-- El autor no publica numero de imagenes de entrenamiento, rango del LoRA, hiperparametros ni composicion demografica del dataset, lo que impide evaluar el riesgo de sesgo y de sobreajuste.
-- La especializacion declarada es en personajes japoneses; la representacion de otras poblaciones asiaticas puede ser menos fiable.
-- Riesgo de sobreajuste a los encuadres y angulos concretos del dataset, con posible perdida de variedad fuera de esos patrones.
-- El trigger word y los parametros exactos solo estan en los metadatos de las imagenes de muestra, no en el safetensors; sin esas imagenes el usuario debe inferir la configuracion.
-- El autor advierte explicitamente contra la generacion de contenido enganoso, danino o no consentido de las personas representadas.
-- No hay informacion sobre el comportamiento del adaptador en idiomas distintos del usado en los prompts de entrenamiento.
-- El repositorio ocupa 45,3 GB, lo que implica un coste de almacenamiento y descarga considerable.
+- Sesgo demográfico deliberado: el adaptador está entrenado "mostly for Asian Ethnicity especially Japanese", por lo que su uso fuera de ese dominio puede producir resultados menos fieles o estereotipados.
+- Riesgo de alucinación visual y artefactos propios de los modelos de difusión: anatomía incorrecta, manos deformadas o incoherencias en encuadres complejos, sin que se documenten tasas de fallo.
+- La palabra de activación y el workflow no están en el `.safetensors`, sino en los metadatos de la imagen de muestra; si esa imagen se pierde, se pierde también la configuración de referencia.
+- Licencia MIT para el adaptador, pero el uso del modelo base Krea 2 exige cumplir además la Krea 2 Community License Agreement y la Acceptable Use Policy, lo que puede restringir el uso comercial del conjunto.
+- El autor incluye un descargo sobre uso responsable y consentimiento de las personas representadas; no se documentan mecanismos técnicos de filtrado o seguridad en el propio LoRA.
+- No se declaran idiomas soportados ni evaluación multilingüe de los prompts.
+- El tamaño del repositorio (51,3 GB) y la mención de 200 LoRA en la model card indican un conjunto grande de adaptadores; no se detalla qué fichero corresponde a qué variante o estilo.
+- No se publican benchmarks, métricas de fidelidad ni comparaciones cuantitativas con otros adaptadores, lo que dificulta evaluar su calidad de forma objetiva.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/fidel1234/Krea2_Asian_Character
-- Demo / showcase: https://huggingface.co/spaces/fidel1234/Krea2_Asian_Character_Showcase
+- Repositorio Hugging Face: https://huggingface.co/fidel1234/Krea2_Asian_Character
+- Demo/showcase en Spaces: https://huggingface.co/spaces/fidel1234/Krea2_Asian_Character_Showcase
 - Modelo base Krea-2-Raw: https://huggingface.co/krea/Krea-2-Raw
 - Modelo base Krea-2-Turbo: https://huggingface.co/krea/Krea-2-Turbo
+- Imagen de muestra citada en la model card: https://cdn-uploads.huggingface.co/production/uploads/6976c9f5ed83a19aef9c76ba/lJwLbXGxPGL4xsUmT3Jk6.png

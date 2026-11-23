@@ -1,0 +1,70 @@
+{
+  "schema": 2,
+  "id": "certen/DrC-Qwen3.5-9B-Decision-4bit",
+  "slug": "certen-drc-qwen3-5-9b-decision-4bit",
+  "author": "certen",
+  "url": "https://huggingface.co/certen/DrC-Qwen3.5-9B-Decision-4bit",
+  "created_at": "2026-11-21T18:04:32.000Z",
+  "updated_at": "2026-11-22T23:38:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "neuro-semantic",
+    "neuro-symbolic",
+    "decision-making",
+    "reasoning",
+    "apple-silicon",
+    "text-generation",
+    "conversational",
+    "base_model:mlx-community/Qwen3.5-9B-4bit",
+    "base_model:quantized:mlx-community/Qwen3.5-9B-4bit",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 5058151804,
+  "storage_human": "5.1 GB",
+  "context_length": null,
+  "base_model": "mlx-community/Qwen3.5-9B-4bit",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Certen | The Control Layer of Digital Finance",
+      "url": "https://certen.io/",
+      "snippet": "Certen is the control layer of digital finance: one hierarchy of authorities for the stablecoins and tokenized assets you issue, the …Read more"
+    },
+    {
+      "title": "Certen — AI Compliance Infrastructure for F&B Manufacturing",
+      "url": "https://getcerten.com/",
+      "snippet": "Certen is purpose-built for food & beverage manufacturers — from mid-size plants to multi-facility operations. Whether you produce …Read more"
+    },
+    {
+      "title": "CERTEN Technical Whitepaper v7",
+      "url": "https://certen.io/Public/docs/Certen_Technical_Whitepaper.pdf",
+      "snippet": "CERTEN provides the infrastructure to meet this requirement: declare governance rules once, enforce them cryptographically on …Read more"
+    }
+  ]
+}

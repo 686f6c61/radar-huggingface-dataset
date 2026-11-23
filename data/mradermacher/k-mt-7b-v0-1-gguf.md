@@ -2,114 +2,100 @@
 
 ## Resumen
 
-`mradermacher/K-MT-7B-v0.1-GGUF` es un repositorio de cuantizaciones en formato GGUF del modelo `ThakiCloud/K-MT-7B-v0.1`, un modelo de traducción orientado al par de idiomas coreano-inglés con tratamiento explícito de los honoríficos coreanos. No se trata de un modelo entrenado por el autor del repositorio: mradermacher se limita a convertir y cuantizar los pesos originales publicados por ThakiCloud, de modo que el comportamiento funcional del modelo depende íntegramente del modelo base.
+K-MT-7B-v0.1-GGUF es la distribucion en formato GGUF del modelo K-MT-7B-v0.1, desarrollado originalmente por ThakiCloud y cuantizado por mradermacher. Se trata de un modelo de traduccion automatica de 7.504.568.320 parametros (aproximadamente 7,5 mil millones) especializado en la traduccion entre coreano e ingles, con enfasis particular en la preservacion de honorificos coreanos y en el mantenimiento de capacidades instruccionales. El modelo base esta publicado bajo licencia Apache 2.0.
 
-El modelo base declara 7.504.568.320 parámetros (aproximadamente 7,5 mil millones) y está etiquetado para las tareas de traducción, seguimiento de instrucciones y preservación de capacidades, con soporte únicamente para coreano (ko) e inglés (en). La ficha del modelo base no documenta arquitectura interna, longitud de contexto ni proceso de entrenamiento, por lo que estos datos figuran como no disponibles en esta ficha.
+La relevancia de esta version GGUF radica en que permite ejecutar el modelo en hardware de consumo mediante llama.cpp y herramientas compatibles, algo imposible con los pesos originales en precision completa. El repositorio ofrece un espectro amplio de cuantizaciones, desde Q2_K (3,1 GB) hasta f16 (15,1 GB), lo que facilita el despliegue en desde portatiles con GPU modesta hasta servidores con aceleradores dedicados.
 
-La relevancia de esta publicación es práctica: al ofrecer versiones GGUF desde 3,1 GB (Q2_K) hasta 15,1 GB (f16), permite ejecutar un modelo de traducción coreano-inglés de 7,5B en hardware de consumo mediante llama.cpp u otros motores compatibles con GGUF. El repositorio se publicó el 19 de septiembre de 2026 según los metadatos y, en el momento de la consulta, registra 0 descargas y 0 likes, por lo que no cuenta con validación comunitaria.
+El modelo esta etiquetado para las tareas de traduccion, coreano, honorificos, instruction-following y capability-preservation, y soporta los idiomas coreano (ko) e ingles (en). Su pipeline declarado en Hugging Face es translation. No se dispone de informacion detallada sobre la arquitectura interna, los datos de entrenamiento ni los resultados de benchmarks en la informacion proporcionada.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer (variante concreta no disponible; el modelo base usa la libreria `transformers`) |
-| Parametros totales | 7.504.568.320 (aproximadamente 7,5B) |
-| Parametros activos | No disponible (no se indica que sea un modelo MoE) |
-| Longitud de contexto | No disponible |
-| Tipos de cuantizacion | f16 (16 bpw), Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q4_K_M, Q4_K_S, IQ4_XS, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K |
-| Idiomas soportados | Coreano (ko), ingles (en) |
-| Licencia | Apache-2.0 |
-| Formato de pesos | GGUF (el modelo base se distribuye en formato `transformers`, con pesos safetensors) |
-| Tamano del repositorio | 67,3 GB (incluye todas las cuantizaciones) |
-| Tarea declarada (`pipeline_tag`) | `translation` |
-| Modelo base | `ThakiCloud/K-MT-7B-v0.1` |
-| Fecha de publicacion (metadatos) | 2026-09-19 |
-| Descargas / likes | 0 / 0 |
+| Arquitectura | no disponible (modelo base de tipo transformer, segun library_name transformers) |
+| Parametros totales | 7.504.568.320 |
+| Parametros activos | no aplica (no es MoE segun la informacion disponible) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, f16 |
+| Idiomas soportados | coreano (ko), ingles (en) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (cuantizaciones estaticas); pesos originales del modelo base presumiblemente en safetensors, no confirmado en la informacion disponible |
 
 ## Arquitectura y entrenamiento
 
-La informacion disponible no describe la arquitectura interna del modelo base. Los datos indican que se trata de un modelo de 7.504.568.320 parametros cargable con la libreria `transformers`, especializado en traduccion coreano-ingles, con etiquetas que mencionan honorificos coreanos, seguimiento de instrucciones y preservacion de capacidades (`capability-preservation`). No se especifica si emplea atencion con ventana deslizante, atencion lineal, mezcla de expertos o alguna variante hibrida, ni el numero de capas, cabezas de atencion o dimension oculta.
+No se dispone de informacion detallada sobre la arquitectura interna del modelo base ThakiCloud/K-MT-7B-v0.1 en la documentacion proporcionada. El tag library_name: transformers y el tamano de 7,5 mil millones de parametros sugieren una arquitectura transformer decoder-only, pero no se confirma en la informacion disponible.
 
-Tampoco se documentan el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas de alineacion como RLHF, DPO o SFT. La etiqueta `capability-preservation` sugiere que el ajuste se diseno para no degradar las capacidades generales del modelo de partida, pero no hay detalle tecnico que lo confirme. En cuanto al repositorio aqui descrito, la unica transformacion aplicada es la cuantizacion de los pesos a GGUF en multiples precisiones.
+Tampoco se detallan el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas de RLHF, DPO o ajuste supervisado. Las etiquetas del modelo indican un enfasis en honorificos coreanos, instruction-following y capability-preservation, lo que sugiere un proceso de ajuste orientado a preservar capacidades generales durante la especializacion en traduccion, pero no se aportan detalles tecnicos sobre dicho proceso. La cuantizacion realizada por mradermacher es de tipo estatico (quantize_version: 2, output_tensor_quantised: 1, convert_type: hf) y no incluye cuantizaciones ponderadas con imatrix en el momento de la publicacion.
 
 ## Capacidades
 
-- Traduccion coreano-ingles y ingles-coreano, con tratamiento de los niveles de habla y honorificos propios del coreano.
-- Seguimiento de instrucciones (`instruction-following`), lo que permite formular la traduccion mediante prompts en lenguaje natural.
-- Conversacion multiturno: el repositorio incluye la etiqueta `conversational`.
-- Preservacion de capacidades del modelo base tras el ajuste (`capability-preservation`).
-- Soporte bilingue limitado a coreano e ingles; no se declaran otros idiomas.
-- Soporte de tool calling / function calling: no disponible.
-- Capacidades de agente o razonamiento multi-paso: no disponible.
-- Capacidades de vision o audio: no disponibles (no se mencionan modalidades adicionales).
+- Traduccion automatica entre coreano e ingles, con atencion especial a la preservacion de honorificos coreanos.
+- Seguimiento de instrucciones (instruction-following) en el contexto de tareas de traduccion.
+- Preservacion de capacidades generales (capability-preservation) durante la traduccion, segun las etiquetas del modelo.
+- Generacion de texto conversacional (tag conversational).
+- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
+- Capacidades multilingues limitadas a coreano e ingles.
+- Capacidades especiales (vision, audio, thinking mode): no disponible en la informacion proporcionada.
 
 ## Casos de uso
 
-- Localizacion de documentacion tecnica: traducir manuales, referencias de API y notas de version del coreano al ingles para equipos internacionales, aprovechando la orientacion del modelo a terminologia y registro formal.
-- Subtitulado y localizacion de contenido audiovisual: conversion de guiones y subtitulos coreanos a ingles conservando el nivel de habla (formal, informal) para que el espectador perciba la relacion jerarquica entre personajes.
-- Atencion al cliente bilingue: procesar consultas de usuarios coreanos y generar respuestas en ingles (o viceversa) en flujos de soporte de comercio electronico, con la etiqueta `conversational` como respaldo para interacciones multiturno.
-- Traduccion de correspondencia corporativa: convertir correos y mensajes internos entre coreano e ingles respetando el registro adecuado segun el destinatario (companero, supervisor, cliente), un matiz que los traductores genericos suelen perder.
-- Preprocesado de corpus para entrenamiento: traducir grandes volumenes de texto coreano a ingles para construir datasets bilingues, ejecutando la cuantizacion Q4_K_M en GPU de consumo para abaratar el coste por token.
-- Revision y postedicion humana asistida: generar una primera traduccion automatica y permitir que un revisor humano la refine, usando la cuantizacion Q8_0 cuando la fidelidad del texto sea prioritaria sobre la velocidad.
-- Traduccion de documentacion legal o administrativa: apoyar la conversion de contratos y formularios entre ambos idiomas como borrador previo a validacion profesional, dado el enfasis del modelo en el tratamiento de honorificos y registro formal.
+- Traduccion de documentacion tecnica coreano-ingles: el modelo puede traducir manuales, guias y documentacion de producto manteniendo terminologia consistente, aprovechando su especializacion en el par de idiomas.
+- Localizacion de contenido web y marketing: adecuado para traducir textos comerciales del coreano al ingles y viceversa, con atencion a registros formales e informales propios de los honorificos.
+- Atencion al cliente bilingue: el modelo puede gestionar conversaciones multi-turno en coreano e ingles, manteniendo el tratamiento adecuado segun el nivel de formalidad del interlocutor.
+- Traduccion de comunicaciones corporativas: correos, actas y documentos internos entre equipos coreanos e internacionales, donde el respeto de los honorificos es critico para la comunicacion profesional.
+- Subtitulado y transcripcion traducida: integrable en pipelines de procesamiento de audio-video para generar subtitulos en ingles a partir de contenido coreano, o viceversa.
+- Investigacion en traduccion automatica: util como modelo de referencia de 7B especializado en un par de idiomas con fenomenos morfosintacticos complejos (honorificos), ejecutable en hardware de consumo gracias a las cuantizaciones GGUF.
+- Despliegue en entornos con recursos limitados: las cuantizaciones Q4_K_M (4,7 GB) y Q5_K_M (5,5 GB) permiten ejecutar el modelo en GPUs de consumo o incluso en CPU, facilitando prototipado rapido y pruebas locales.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card del repositorio de cuantizacion no incluye tablas de BLEU, chrF, MMLU, HumanEval, GSM8K ni ninguna otra metrica, y tampoco se aportan evaluaciones comparativas frente a otros sistemas de traduccion. Los unicos datos cuantitativos disponibles son los tamanos de fichero de cada cuantizacion.
-
-| Cuantizacion | Tamano (GB) | Notas del autor |
-|---|---|---|
-| Q2_K | 3,1 | Sin nota |
-| Q3_K_S | 3,5 | Sin nota |
-| Q3_K_M | 3,9 | Calidad inferior |
-| Q3_K_L | 4,2 | Sin nota |
-| IQ4_XS | 4,3 | Los quants IQ suelen preferirse frente a quants no IQ de tamano similar |
-| Q4_K_S | 4,5 | Rapido, recomendado |
-| Q4_K_M | 4,7 | Rapido, recomendado |
-| Q5_K_S | 5,3 | Sin nota |
-| Q5_K_M | 5,5 | Sin nota |
-| Q6_K | 6,3 | Muy buena calidad |
-| Q8_0 | 8,1 | Rapido, mejor calidad |
-| f16 | 15,1 | 16 bpw, excesivo para uso habitual |
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: aproximadamente el tamano del fichero mas el cache KV y el overhead del runtime (del orden de 1 a 2 GB adicionales segun contexto y motor). En la practica: unos 4-5 GB para Q2_K y Q3_K_S, 5-7 GB para Q4_K_S y Q4_K_M, 7-8 GB para Q6_K, 9-10 GB para Q8_0 y 16-17 GB para f16.
-- GPU de consumo: las cuantizaciones Q4_K_M y Q4_K_S caben en tarjetas de 8 GB (RTX 3060 Ti, RTX 4060) y con holgura en 12 GB (RTX 3060 12 GB, RTX 4070). Q6_K y Q8_0 encajan en 12-16 GB (RTX 4070 Ti Super, RTX 4080, RTX 4060 Ti 16 GB). La version f16 requiere 24 GB (RTX 3090, RTX 4090) o reparto entre GPU y CPU.
-- GPU de datacenter: A100 40/80 GB, H100, L40S o cualquier acelerador con 16 GB o mas puede alojar el modelo completo en precision alta y servir varias peticiones concurrentes.
-- Despliegue: llama.cpp es el motor de referencia para estos ficheros, junto con Ollama, LM Studio, `llama-cpp-python` y servidores OpenAI-compatibles sobre llama.cpp. Para servir con vLLM o TGI seria necesario usar los pesos safetensors del modelo base `ThakiCloud/K-MT-7B-v0.1`, no los GGUF.
-- Latencia y throughput estimados: no disponibles. El autor no publica mediciones de tokens por segundo ni de latencia por peticion.
-- Nota sobre cuantizaciones: el autor indica que no ha generado cuantizaciones ponderadas ni con importance matrix (imatrix) para este modelo, solo cuantizaciones estaticas, por lo que la degradacion en los niveles bajos (Q2_K, Q3_K) puede ser mayor que en quants equivalentes con imatrix.
+- VRAM estimada para inferencia segun cuantizacion (pesos + overhead aproximado de contexto y KV cache):
+  - Q2_K (3,1 GB): ~4-5 GB de VRAM.
+  - Q3_K_M (3,9 GB): ~5-6 GB de VRAM.
+  - IQ4_XS (4,3 GB): ~5,5-6,5 GB de VRAM.
+  - Q4_K_M (4,7 GB): ~6-7 GB de VRAM.
+  - Q5_K_M (5,5 GB): ~7-8 GB de VRAM.
+  - Q6_K (6,3 GB): ~8-9 GB de VRAM.
+  - Q8_0 (8,1 GB): ~10-11 GB de VRAM.
+  - f16 (15,1 GB): ~16-18 GB de VRAM.
+- GPU recomendadas: RTX 3060 12 GB o superior para cuantizaciones Q4-Q5; RTX 4090 24 GB para Q8_0 o f16; A100/H100 para despliegues de alta concurrencia con f16.
+- Cabe en GPU de consumo: si, desde una RTX 3060 12 GB (Q4_K_M, Q5_K_M, Q6_K, Q8_0) hasta GPUs de 8 GB con cuantizaciones Q2_K a Q4_K_S. Las cuantizaciones Q2_K y Q3_K_S podrian caber en GPUs de 6 GB con contexto reducido.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, y cualquier runtime compatible con GGUF. El tag endpoints_compatible sugiere compatibilidad con endpoints de Hugging Face. Para vLLM o TGI se requeririan los pesos originales en safetensors del modelo base, no las cuantizaciones GGUF.
+- Latencia y throughput estimados: no disponible en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-La informacion proporcionada no incluye datos de rendimiento ni especificaciones de modelos alternativos de traduccion coreano-ingles de tamano comparable, por lo que no es posible establecer una comparativa cuantitativa fiable. La unica comparacion documentada es entre el repositorio cuantizado y su modelo de origen.
+No se dispone de informacion sobre modelos comparables en la documentacion proporcionada. Se puede senalar que el modelo base ThakiCloud/K-MT-7B-v0.1 es la referencia directa, y que esta version GGUF se distingue por ofrecer cuantizaciones para despliegue en hardware de consumo. Para alternativas de traduccion coreano-ingles de tamano similar no hay datos disponibles.
 
-| Modelo | Parametros | Contexto | Idiomas | Licencia | Formato | Benchmarks |
-|---|---|---|---|---|---|---|
-| mradermacher/K-MT-7B-v0.1-GGUF | 7,5B | No disponible | ko, en | Apache-2.0 | GGUF | No disponible |
-| ThakiCloud/K-MT-7B-v0.1 (base) | 7,5B | No disponible | ko, en | Apache-2.0 | `transformers` / safetensors | No disponible |
-| Alternativas de traduccion ko-en de ~7B | No disponible | No disponible | No disponible | No disponible | No disponible | No disponible |
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|
+| K-MT-7B-v0.1-GGUF (este) | 7,5B | no disponible | Apache 2.0 | GGUF | Cuantizaciones estaticas, 12 variantes |
+| ThakiCloud/K-MT-7B-v0.1 | 7,5B | no disponible | Apache 2.0 | safetensors (presumible) | Modelo base original |
+| Alternativas de traduccion ko-en | no disponible | no disponible | no disponible | no disponible | Sin datos en la informacion disponible |
 
 ## Limitaciones y advertencias
 
-- Cobertura idiomatica restringida: el modelo solo declara coreano e ingles. No debe asumirse calidad en otros idiomas, incluido el espanol.
-- Ausencia total de evaluacion publicada: no hay BLEU, chrF, COMET ni ninguna otra metrica que permita estimar la calidad de traduccion antes de desplegarlo.
-- Riesgo de alucinacion y de omision de contenido: como cualquier modelo generativo, puede inventar terminos, omitir fragmentos o alterar nombres propios, cifras y referencias legales. En dominios sensibles (legal, medico, financiero) se requiere revision humana.
-- Validacion comunitaria nula: 0 descargas y 0 likes en el momento de la consulta, sin issues ni discusiones que documenten comportamiento real en produccion.
-- Cuantizaciones estaticas sin imatrix: el autor advierte de que no hay quants ponderados para este modelo. Los niveles Q2_K y Q3_K pueden degradar notablemente la calidad de traduccion y el manejo de honorificos.
-- Coste de almacenamiento: el repositorio completo ocupa 67,3 GB, ya que incluye doce cuantizaciones; conviene descargar unicamente el fichero necesario.
-- Documentacion insuficiente del modelo base: se desconoce la longitud de contexto, la arquitectura exacta y la composicion del dataset de entrenamiento, lo que dificulta planificar limites de truncado y estrategias de chunking.
-- Licencia Apache-2.0: permite uso comercial y modificacion, pero el usuario debe verificar de forma independiente las condiciones de los datos de entrenamiento y de cualquier dependencia del modelo base, ya que la licencia del repositorio no cubre necesariamente esos elementos.
-- Fecha de publicacion en metadatos poco convencional: el repositorio figura creado el 2026-09-19, dato a tener en cuenta si se compara con el historial de versiones del modelo base.
+- Sesgos conocidos: no se documentan en la informacion disponible; como modelo entrenado principalmente con datos de dos idiomas, puede reflejar sesgos culturales y de genero presentes en los corpus de entrenamiento.
+- Riesgo de alucinacion: inherente a los modelos generativos; en traduccion puede manifestarse como adiciones, omisiones o invencion de contenido no presente en el texto fuente.
+- Limitaciones de contexto o idioma: soporta unicamente coreano e ingles; no se especifica la longitud de contexto, lo que limita la planificacion de documentos largos.
+- Restricciones de licencia: Apache 2.0 permite uso comercial, modificacion y redistribucion con atribucion; no obstante, conviene verificar la licencia del modelo base y de los datos de entrenamiento originales.
+- Las cuantizaciones Q2_K y Q3_K_M pueden degradar la calidad de traduccion de forma notable; se recomienda Q4_K_M o superior para uso en produccion.
+- No se dispone de cuantizaciones ponderadas con imatrix, lo que podria reducir la calidad frente a versiones con importance matrix en tamanos equivalentes.
+- El repositorio ocupa 67,3 GB en total; la descarga selectiva de una sola cuantizacion es posible, pero conviene planificar el almacenamiento.
+- No hay informacion sobre el proceso de alineacion ni sobre evaluaciones de seguridad; se recomienda validacion humana en aplicaciones sensibles.
 
 ## Enlaces
 
-- Repositorio GGUF: https://huggingface.co/mradermacher/K-MT-7B-v0.1-GGUF
+- Repositorio Hugging Face (GGUF): https://huggingface.co/mradermacher/K-MT-7B-v0.1-GGUF
 - Modelo base: https://huggingface.co/ThakiCloud/K-MT-7B-v0.1
-- Pagina de resumen y descargas del autor: https://hf.tst.eu/model#K-MT-7B-v0.1-GGUF
-- README de referencia sobre uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
-- Grafica comparativa de perplejidad entre cuantizaciones (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png
-- Notas de Artefact2 sobre tipos de cuantizacion: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
-- Peticiones de cuantizacion del autor: https://huggingface.co/mradermacher/model_requests
-- Empresa del autor: https://www.nethype.de/
+- Pagina de descargas del autor: https://hf.tst.eu/model#K-MT-7B-v0.1-GGUF
+- Guia de uso de GGUF (README de TheBloke referenciado): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Grafico comparativo de cuantizaciones (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png
+- Notas sobre cuantizaciones (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- FAQ y solicitudes de cuantizacion: https://huggingface.co/mradermacher/model_requests
+- nethype GmbH: https://www.nethype.de/

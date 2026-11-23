@@ -2,99 +2,81 @@
 
 ## Resumen
 
-Este repositorio contiene una cuantización EXL3 a 2,81 bits por peso (bpw) de DeepSeek-V4.1-Flash-1017, el modelo base de DeepSeek, realizada por el usuario OpensourceWTF con la receta de autocuantización (SC) de exllamav3. No se trata de un modelo nuevo, sino de un empaquetado optimizado para su ejecución local: el objetivo declarado del autor es que quepa en Macs con 128 GB de memoria unificada, transmitiendo los expertos enrutados desde el SSD.
+Este repositorio es una cuantización de 2,81 bits por peso (bpw) en formato exllamav3 del modelo DeepSeek-V4.1-Flash-1017, publicada por el usuario OpensourceWTF. El modelo base es `deepseek-ai/DeepSeek-V4.1-Flash-1017`, del que se derivan 102.579.915.602 parámetros totales según los safetensors del autor. El repositorio está marcado como **deprecated** y, según su propia model card, ya no contiene archivos: los pesos se han trasladado a un repositorio de streaming repack.
 
-El modelo base es una arquitectura MoE (mixture of experts) de DeepSeek con soporte de visión, etapas MTP (multi-token prediction) y tablas de n-gramas "Engram", lo que sugiere un modelo híbrido con decodificación especulativa y componentes de atención orientados a eficiencia. La licencia es MIT, tanto del modelo base como de esta cuantización, lo que permite uso comercial sin restricciones relevantes.
+La relevancia de esta ficha es principalmente documental y de trazabilidad: identifica un artefacto de cuantización agresiva (2,81 bpw) orientado a reducir el peso en disco y la VRAM necesaria para servir un modelo de más de 100.000 millones de parámetros en hardware de gama alta. El tamaño del repositorio (419,9 GB) corresponde al conjunto de shards históricos, no a una descarga funcional actual.
 
-Es relevante ahora porque ofrece una de las pocas formas prácticas de ejecutar un modelo de esta escala en hardware de consumidor/prosumer: 384 GiB en disco con los expertos enrutados a 2,8 bpw, con una calidad medida por qbench prácticamente idéntica a cuantizaciones alternativas a 2,9 bpw pero ocupando un 2,7 % menos de espacio.
+No se dispone de información sobre arquitectura interna, contexto, idiomas, pipeline ni datos de entrenamiento en la información proporcionada. Cualquier dato de ese tipo debe consultarse en el repositorio del modelo base, no en esta cuantización.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | MoE (deepseek_v41) con expertos enrutados, experto compartido, torre de visión, etapas MTP y tablas Engram de n-gramas |
-| Parametros totales | no disponible |
-| Parametros activos | no disponible (arquitectura MoE) |
+| Arquitectura | no disponible |
+| Parámetros totales | 102.579.915.602 |
+| Parámetros activos | no disponible |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | EXL3 2,81 bpw: expertos K3 (K2 en capas 23 y 32-39), tensores no-experto K6, tablas Engram en FP8 original (F8_E4M3 con escalas F8_E8M0) |
+| Tipos de cuantización | exllamav3 a 2,81 bpw |
 | Idiomas soportados | no disponible |
 | Licencia | MIT |
-| Formato de pesos | safetensors (formato EXL3, requiere exllamav3) |
+| Formato de pesos | exllamav3 (repo original); repack para streaming en repo sucesor |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura del modelo base es un transformer MoE con 40 capas de expertos enrutados (384 expertos por capa), un experto compartido, mecanismos de hyper-connections y "sinks", un proyector indexador y un compresor de atención. Incluye además tres etapas MTP (multi-token prediction, denominadas DSpark), que habilitan decodificación especulativa de varios tokens por paso, y una torre de visión con su aligner, lo que confirma capacidades multimodales. Las tablas Engram de n-gramas en las capas 1 y 14 (en FP8) constituyen un componente adicional de recuperación/compresión de contexto.
+No se dispone de información sobre la arquitectura del modelo base en la documentación proporcionada. El artefacto aquí descrito es exclusivamente una cuantización: no aporta datos sobre el transformer subyacente, la composición del dataset, el número de tokens de entrenamiento ni si hubo RLHF o DPO.
 
-Sobre el entrenamiento del modelo base (número de tokens, composición del dataset, RLHF/DPO) no hay datos disponibles en la información proporcionada. En cuanto a la cuantización, se generó con exllamav3 y su receta de autocuantización (SC), que eligió las tasas por capa para un objetivo de 2,8 bpw y alcanzó 2,813 bpw; la calibración usó una traza separada de 217 filas y el codebook empleado es MUL1.
+La innovación técnica de este repositorio es la cuantización a 2,81 bpw en formato exllamav3, un nivel de compresión muy agresivo para un modelo de ~102.600 millones de parámetros. Según la model card, los pesos originales se han reempaquetado para streaming en el repositorio sucesor, lo que sugiere una estrategia de carga por capas o shards para reducir el pico de memoria durante la inferencia.
 
 ## Capacidades
 
-- Generación de texto y razonamiento: el conjunto de pruebas de qbench incluye conversaciones generales con razonamiento de esfuerzo medio.
-- Tool calling / function calling: el 30 % de los prompts del conjunto de evaluación incluye uso de herramientas, lo que indica soporte de tool calling en el modelo base.
-- Capacidades de visión: incluye torre de visión y aligner cuantizados a K6 (algunos tensores en BF16).
-- Decodificación especulativa: tres etapas MTP incluidas en el pack, lo que permite generación multi-token.
-- Ejecución con streaming de expertos desde SSD en Apple Silicon (128 GB de memoria unificada), gracias al bajo ancho de bits de los expertos enrutados.
-- Soporte multilingüe: no disponible en la información proporcionada.
+- No se documentan capacidades específicas en la información proporcionada.
+- No consta soporte de tool calling, agentes, visión, audio ni modo de razonamiento explícito.
+- No consta información sobre capacidades multilingües.
+- La única capacidad verificable es la de servir el modelo base cuantizado a 2,81 bpw mediante exllamav3.
 
 ## Casos de uso
 
-- Ejecución local en Mac Studio de 128 GB: el pack está dimensionado explícitamente para transmitir los expertos enrutados desde SSD, permitiendo inferencia local de un MoE de gran escala sin servidores con cientos de GB de VRAM.
-- Asistentes con herramientas en local: dado que el conjunto de evaluación incluye tool calling, es adecuado para agentes locales que invocan funciones (búsqueda, APIs, ejecución de código) manteniendo los datos en el dispositivo.
-- Chatbot multimodal privado: la torre de visión incluida permite construir aplicaciones de chat con entrada de imágenes sin enviar datos a servicios externos.
-- Generación de texto de alta calidad con bajo coste de almacenamiento: a 2,81 bpw con KLD equiparable a packs de 2,9 bpw, es apropiado para escritura creativa, resumen y redacción asistida donde el presupuesto de disco/memoria es limitado.
-- Servidores de inferencia personales con mlx-serve: el autor prepara un repack de streaming para mlx-serve, orientado a servir el modelo por API en hardware Apple Silicon.
-- Experimentación e investigación en cuantización: la documentación detallada de tasas por capa, codebook y métricas KLD lo hace útil como referencia para comparar recetas de cuantización EXL3 frente a EAQ u otras.
+- Despliegue de investigación en hardware limitado: la cuantización a 2,81 bpw permite cargar un modelo de ~102.600 millones de parámetros en configuraciones de VRAM que no admitirían los pesos en FP16, útil para experimentación académica.
+- Evaluación comparativa de cuantizaciones: sirve para medir la degradación de calidad frente a cuantizaciones menos agresivas (4 bpw, 6 bpw) del mismo modelo base.
+- Pruebas de inferencia con exllamav3: validación de la integración del runtime con modelos de gran tamaño en formato cuantizado.
+- Reproducción de artefactos: el historial de commits del repositorio permite recuperar los shards originales para auditoría o replicación.
+- Migración a streaming: el repositorio sucesor permite probar la carga por streaming de pesos cuantizados en entornos con memoria limitada.
+- Benchmarking de latencia y throughput: comparar el rendimiento de 2,81 bpw frente a otras cuantizaciones en la misma GPU.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, etc.) en la información disponible. Sí se han publicado métricas de calidad de la cuantización (qbench de exllamav3, sobre 20 conversaciones retenidas con 7.109 tokens de prompt y 45.434 tokens de completión):
-
-| | PPL | KLD mean | KLD median | KLD p90 |
-|---|---|---|---|---|
-| Release FP8/FP4 (referencia) | 1,7730 | | | |
-| Suelo de ruido | 1,7733 | 0,0023 | 0,0002 | 0,0050 |
-| Este pack (EXL3 2,81 bpw) | 1,8305 | 0,0396 | 0,0051 | 0,0917 |
-| Mia-AiLab EXL3 EAQ v1 2,9 bpw | 1,8306 | 0,0401 | 0,0058 | 0,0893 |
-
-Frente al pack EAQ de 2,9 bpw, la diferencia pareada por fila es de -0,00048 KLD (IC 95 %: -0,0025 a +0,0016), es decir, un empate estadístico ocupando aproximadamente un 2,7 % menos de bytes.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- Tamaño del pack: 384 GiB en disco (308 GB según el tamaño de repo indicado por Hugging Face; la model card cifra 384 GiB con las tablas Engram incluidas). Los expertos enrutados ocupan 189,2 GB y las tablas Engram 202,8 GB.
-- Objetivo de despliegue: Macs con 128 GB de memoria unificada (Apple Silicon), transmitiendo los expertos enrutados desde SSD. No está indicado que quepa en GPUs de consumidor convencionales (una RTX 4090 con 24 GB es insuficiente por varios órdenes de magnitud).
-- GPU/servidor recomendados: no disponible explícitamente; para ejecución en GPU con exllamav3 se necesitaría una configuración multi-GPU con cientos de GB de VRAM o soporte de offload.
-- Software: exllamav3, rama `dev` (commit `ccc4c21` o posterior), que es donde se añadió el soporte de DeepSeek-V4.1 y donde se convirtió el pack. Para Apple Silicon, está previsto un repack de streaming para mlx-serve (pendiente de publicación).
-- Latencia y throughput: no disponible. Al depender del streaming de expertos desde SSD, el rendimiento estará condicionado por la velocidad de lectura del disco.
+- VRAM estimada: a 2,81 bpw, los ~102.600 millones de parámetros ocupan aproximadamente 36 GB solo en pesos; hay que sumar caché KV y overhead del runtime, por lo que se recomienda al menos 48 GB de VRAM.
+- GPU recomendadas: A100 80 GB, H100 80 GB, o configuraciones multi-GPU con RTX 4090 (24 GB) en paralelo.
+- No cabe en una única GPU de consumo de 24 GB sin offloading a CPU o división entre varias GPU.
+- Opciones de despliegue: exllamav3 (formato nativo); el repositorio sucesor está orientado a mlx-serve para streaming.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| | Este pack (EXL3 2,81 bpw) | Mia-AiLab EXL3 EAQ v1 2,9 bpw | Packs anteriores de OpensourceWTF (repack 2,9 / 3,0 bpw, MTPLX q2) |
-|---|---|---|---|
-| Modelo base | DeepSeek-V4.1-Flash-1017 | DeepSeek-V4.1-Flash-1017 | DeepSeek-V4.1-Flash-1017 |
-| Ancho de bits | 2,813 bpw | 2,9 bpw | 2,9 / 3,0 bpw / q2 |
-| PPL (qbench) | 1,8305 | 1,8306 | no disponible |
-| KLD mean | 0,0396 | 0,0401 | no disponible |
-| Licencia | MIT | no disponible | no disponible |
-| Disponibilidad | Publicado en Hugging Face | Publicado en Hugging Face | Sustituidos por este pack |
+| Modelo | Parámetros | Contexto | Cuantización | Licencia | Estado |
+|---|---|---|---|---|---|
+| DeepSeek-V4.1-Flash-1017-exl3-2.81bpw (este) | 102.579.915.602 | no disponible | 2,81 bpw exl3 | MIT | deprecated |
+| DeepSeek-V4.1-Flash-1017-streaming-repack-exl3 (sucesor) | mismo base | no disponible | 2,81 bpw exl3 (streaming) | MIT | activo |
+| Modelo base deepseek-ai/DeepSeek-V4.1-Flash-1017 | no disponible | no disponible | pesos originales | no disponible | activo |
 
-Otros modelos comparables de la misma categoría (MoE grandes cuantizados a ultra-baja precisión): no disponible.
+No se dispone de datos de rendimiento para establecer una comparativa cuantitativa con alternativas de la misma categoría.
 
 ## Limitaciones y advertencias
 
-- Calidad de cuantización: a 2,81 bpw la degradación es medible (KLD mean 0,0396 frente a suelo de ruido de 0,0023); el p90 de KLD (0,0917) indica que algunas generaciones se desviarán más que la mediana. Es una cuantización agresiva, no apta si se necesita fidelidad máxima.
-- Requisitos de almacenamiento: 384 GiB en disco, con los expertos leídos desde SSD en la configuración objetivo; un disco lento penalizará la latencia.
-- Compatibilidad: requiere exllamav3 rama `dev` (commit `ccc4c21` o posterior); no funcionará con versiones estables anteriores ni con otras librerías (llama.cpp, vLLM, Ollama no se mencionan como compatibles).
-- El repack para mlx-serve aún no está publicado, por lo que la ruta Apple Silicon no está operativa según la model card.
-- Datos del modelo base (contexto, idiomas, parámetros, resultados de benchmarks) no disponibles en la información proporcionada: deben verificarse en la ficha del modelo original antes de usar en producción.
-- Riesgo de alucinación y sesgos: inherentes al modelo base; no se documenta nada específico en la información disponible.
-- Licencia: MIT, sin restricciones de uso comercial relevantes.
+- Repositorio marcado como deprecated y sin archivos: no es descargable en su estado actual; los pesos están en el repositorio sucesor.
+- La cuantización a 2,81 bpw es muy agresiva y puede degradar la calidad respecto a los pesos originales; no se han publicado evaluaciones que cuantifiquen esa pérdida.
+- No se dispone de información sobre sesgos, alucinación o limitaciones idiomáticas del modelo base en esta documentación.
+- La licencia MIT se aplica al artefacto de cuantización, pero debe verificarse la licencia del modelo base antes de uso comercial.
+- El tamaño del repo (419,9 GB) refleja el historial de commits, no una descarga útil actual.
+- No hay garantía de soporte ni mantenimiento por parte del autor.
 
 ## Enlaces
 
-- Ficha del pack cuantizado: https://huggingface.co/OpensourceWTF/DeepSeek-V4.1-Flash-1017-exl3-2.81bpw
+- Repositorio Hugging Face (deprecated): https://huggingface.co/OpensourceWTF/DeepSeek-V4.1-Flash-1017-exl3-2.81bpw
+- Repositorio sucesor (streaming repack): https://huggingface.co/OpensourceWTF/DeepSeek-V4.1-Flash-1017-streaming-repack-exl3
+- Rama 2.81bpw del sucesor: https://huggingface.co/OpensourceWTF/DeepSeek-V4.1-Flash-1017-streaming-repack-exl3/tree/2.81bpw
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017
-- exllamav3 (formato EXL3 y pipeline SC): https://github.com/turboderp-org/exllamav3
-- Pack anterior 2,9 bpw: https://huggingface.co/OpensourceWTF/DeepSeek-V4.1-Flash-1017-streaming-repack-exl3-2.9bpw
-- Pack anterior 3,0 bpw: https://huggingface.co/OpensourceWTF/DeepSeek-V4.1-Flash-streaming-repack-exl3-3.0bpw
-- Pack anterior MTPLX q2: https://huggingface.co/OpensourceWTF/DeepSeek-V4.1-Flash-MTPLX-streaming-q2
-- Paper, blog y demo del modelo base: no disponible

@@ -2,76 +2,82 @@
 
 ## Resumen
 
-Sega-DeepSearch-Research es un modelo de generación de texto publicado en Hugging Face por el usuario the123manaic bajo la etiqueta de marca "Segacopter Technology", presentado en su model card como una release de pesos abiertos de "Generación 3.1" dentro de la familia `sega-research`. La model card lo describe como un modelo de arquitectura propietaria `SegaForCausalLM` con un supuesto tamaño de 32B en configuración MoE y orientado a razonamiento profundo y síntesis de información mediante tree-of-thought.
+Sega-DeepSearch-Research es un modelo de generación de texto publicado en Hugging Face por el usuario the123manaic bajo la etiqueta de "Segacopter Technology", identificado internamente como `sega-research` y encuadrado en la "Generation 3.1" de esa familia. La model card lo describe como un modelo de arquitectura propia `SegaForCausalLM`, con un supuesto diseño MoE orientado a investigación y razonamiento profundo ("DeepSearch"), y lo asocia a técnicas de tree-of-thought con verificación especulativa.
 
-La realidad verificable de los artefactos publicados contradice esa descripción: el recuento de parámetros obtenido directamente de los ficheros safetensors es de 1792 parámetros totales, es decir, un modelo de escala trivial, no un MoE de 32B. No hay información disponible sobre datos de entrenamiento, tokenizador funcional, composición del dataset ni proceso de alineación. Las métricas que aparecen en la model card (165 tokens/s, "Epistemic IQ 99.1%", "Token Efficiency 92%") no van acompañadas de metodología, conjuntos de evaluación ni reproducibilidad alguna.
+La información disponible es, sin embargo, muy limitada y en parte contradictoria. La model card declara 32B parámetros totales en formato MoE, pero el recuento real de parámetros publicado en los safetensors del repositorio es de 1792 parámetros, un valor incompatible con cualquier modelo funcional de lenguaje. No se han publicado datos sobre composición del dataset de entrenamiento, número de tokens, proceso de alineación ni idiomas soportados.
 
-El modelo es relevante únicamente como caso de estudio de model cards que declaran capacidades no respaldadas por los pesos publicados. Para cualquier evaluador o desarrollador, la recomendación técnica es tratar esta ficha como documentación de un artefacto no apto para producción hasta que el autor publique pesos coherentes con las especificaciones declaradas y resultados de benchmarks reproducibles.
+Por tanto, esta ficha debe leerse con cautela: el modelo se presenta como un release de pesos abiertos con licencia Apache 2.0, pero la falta de documentación verificable y la discrepancia entre las cifras declaradas y los artefactos reales del repositorio impiden tratarlo como un modelo listo para producción. Es relevante ahora únicamente como objeto de evaluación crítica dentro del ecosistema open source.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | `SegaForCausalLM` (según model card); no verificable en los pesos publicados |
-| Parametros totales | 1792 (recuento real en safetensors); la model card declara 32B, dato no coherente con los ficheros |
-| Parametros activos | no disponible (la model card menciona MoE pero no detalla expertos ni parámetros activos) |
+| Arquitectura | SegaForCausalLM (según model card); no se detalla si es transformer denso, MoE u otra variante |
+| Parametros totales | 1792 (recuento real en safetensors); la model card declara "32B Research MoE" |
+| Parametros activos | no disponible |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible (solo se publican pesos safetensors; no hay GGUF ni cuantizaciones publicadas) |
+| Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no disponible |
-| Licencia | Apache 2.0 |
+| Licencia | apache-2.0 |
 | Formato de pesos | safetensors (librería transformers) |
 
 ## Arquitectura y entrenamiento
 
-La model card declara una arquitectura denominada `SegaForCausalLM` con configuración MoE y un total de 32B parámetros, junto con un esquema de verificación tree-of-thought de 8 pasadas y 16 ramas especulativas. Sin embargo, el recuento real de parámetros en los ficheros safetensors es de 1792, lo que hace técnicamente imposible que el checkpoint publicado implemente la arquitectura descrita. No se especifica en la información disponible el número de tokens de entrenamiento, la composición del dataset, ni si hubo fases de RLHF, DPO o ajuste por preferencias.
+La model card indica que la arquitectura es `SegaForCausalLM` y que se trata de un "32B Research MoE", es decir, un modelo de mezcla de expertos orientado a tareas de investigación. Se mencionan además componentes de razonamiento tipo tree-of-thought con "8 pases / 16 ramas especulativas" y una supuesta eficiencia de tokens del 92%, así como una "Epistemic IQ" del 99,1% y una velocidad de síntesis de 165 tokens por segundo.
 
-Tampoco hay información sobre innovaciones técnicas verificables: ni atención lineal, ni decodificación especulativa implementada, ni detalles del tokenizador. Los términos "nano-banana" y "segacopter" que aparecen en las etiquetas no se explican en la documentación. En ausencia de un `config.json` coherente y de código de modelado publicado, la arquitectura efectiva del checkpoint no puede determinarse a partir de la información disponible.
+No obstante, no se aporta información sobre el número de tokens de entrenamiento, la composición del dataset, la existencia de RLHF, DPO u otras fases de alineación, ni detalles sobre innovaciones de atención o decodificación. El recuento real de parámetros en safetensors (1792) contradice frontalmente la cifra de 32B declarada, lo que impide validar cualquiera de las métricas de rendimiento anunciadas. No hay paper, blog técnico ni repositorio de código asociados en la información disponible.
 
 ## Capacidades
 
-- Generación de texto autoregresiva: es la única capacidad declarada de forma explícita por el pipeline (`text-generation`), aunque no hay evidencia de que el checkpoint publicado produzca salidas coherentes.
-- Razonamiento profundo y síntesis: la model card menciona "DeepSearch" y tree-of-thought con 8 pasadas y 16 ramas especulativas; no hay implementación ni evaluación reproducible de ello en la información disponible.
-- Tool calling / function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: declarado de forma implícita por el nombre y las etiquetas, sin documentación técnica que lo respalde.
+- Generación de texto condicionada por prompt, según el pipeline declarado `text-generation`.
+- Razonamiento y síntesis orientados a investigación, según la descripción del autor (no verificable).
+- Búsqueda profunda ("DeepSearch") y verificación mediante tree-of-thought, según la model card (no verificable).
+- Soporte de tool calling / function calling: no disponible.
+- Soporte de agentes y razonamiento multi-paso: no disponible como capacidad documentada y verificada.
 - Capacidades multilingües: no disponible.
-- Capacidades especiales (thinking mode, visión, audio): no disponible.
+- Capacidades especiales (modo thinking, visión, audio): no disponible.
 
 ## Casos de uso
 
-- Auditoría de model cards: el artefacto sirve como ejemplo práctico para formar a revisores en la detección de discrepancias entre parámetros declarados y parámetros reales en safetensors, un control habitual en pipelines de aprobación de modelos.
-- Pruebas de pipelines de validación de Hugging Face: puede emplearse como caso negativo en tests automatizados que comprueben coherencia entre `config.json`, recuento de tensores y metadatos de la model card antes de promover un modelo a un registro interno.
-- Docencia sobre riesgos de supply chain en IA open source: ilustra cómo una licencia permisiva (Apache 2.0) y etiquetas atractivas no garantizan que el contenido del repositorio sea el anunciado.
-- Investigación sobre evaluación de afirmaciones no verificadas: útil para estudiar cómo se propagan métricas sin metodología ("Epistemic IQ 99.1%") en repositorios públicos.
-- No se recomienda su uso en atención al cliente, generación de código, análisis documental, agentes autónomos ni ninguna aplicación de producción, dado que los pesos publicados no corresponden a las capacidades declaradas.
+- Evaluación crítica de releases open weight: el modelo puede utilizarse como caso de estudio para revisar cómo se documentan (o no) los modelos en Hugging Face y para formar a desarrolladores en la detección de inconsistencias entre model card y artefactos reales.
+- Pruebas de carga del pipeline de transformers: dado su reducido tamaño real en safetensors, sirve para validar flujos de `AutoModelForCausalLM.from_pretrained` y `AutoTokenizer.from_pretrained` en entornos de integración continua.
+- Docencia sobre licencias y trazabilidad: con licencia Apache 2.0 y metadatos incompletos, es un ejemplo útil para discutir qué garantías ofrece una licencia permisiva cuando la documentación técnica no es fiable.
+- Experimentación con tree-of-thought en prototipos: si se implementa externamente el esquema de verificación especulativa descrito, puede servir como banco de pruebas conceptual, aunque el modelo en sí no está validado para ello.
+- Análisis de sesgos en modelos no auditados: útil como muestra para estudiar cómo la ausencia de documentación sobre datos de entrenamiento dificulta cualquier evaluación de sesgos.
+- Integración en pipelines de investigación reproducible: únicamente como ejemplo negativo o de control, nunca como componente de un sistema en producción.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La model card incluye cifras propias (165 tokens/s, "Token Efficiency 92%", "Epistemic IQ 99.1%") sin conjunto de evaluación, sin baseline y sin metodología reproducible, por lo que no se recogen como resultados de benchmark en esta ficha.
+No se han publicado resultados de benchmarks en la información disponible. La model card incluye métricas autoinformadas (165 tokens/s, 92% de eficiencia de tokens, "Epistemic IQ" del 99,1%) que no corresponden a benchmarks estándar (MMLU, HumanEval, GSM8K, etc.) y que no pueden contrastarse con los artefactos del repositorio.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: con 1792 parámetros reales, el checkpoint cabe holgadamente en cualquier GPU consumer e incluso en CPU; en fp32 ocuparía del orden de kilobytes. La cifra de 32B declarada en la model card implicaría, en cambio, decenas de GB en fp16 y no es coherente con los ficheros publicados.
-- GPU recomendadas: no aplica para el checkpoint real; para un hipotético MoE de 32B se requerirían A100 80GB, H100 o configuraciones multi-GPU, dato no verificable.
-- Compatibilidad con GPU consumer: sí para el checkpoint real (cualquier GPU con unos pocos MB de VRAM); la afirmación de 32B no es compatible con GPU consumer de gama única.
-- Opciones de despliegue: transformers con `AutoModelForCausalLM` y `use_safetensors=True`, tal como indica la model card; no hay pesos GGUF publicados para llama.cpp u Ollama, ni confirmación de compatibilidad con vLLM o TGI.
-- Latencia y throughput: no disponible de forma verificable; la cifra de 165 tokens/s de la model card carece de condiciones de medición (hardware, batch, cuantización).
+- VRAM estimada para inferencia: no disponible de forma fiable. Con 1792 parámetros reales en safetensors, la huella sería inferior a unos pocos MB en fp32, pero esta cifra no es coherente con un modelo funcional de lenguaje.
+- GPU recomendadas: no disponible.
+- Compatibilidad con GPU de consumo: no disponible; si se atiende al recuento real de parámetros, cabría en cualquier GPU, pero no hay evidencia de que el modelo genere texto coherente.
+- Opciones de despliegue: transformers con safetensors (según la model card). No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI.
+- Latencia y throughput: la model card declara 165 tokens/s, sin especificar hardware ni condiciones de medición; no verificable.
 
 ## Comparativa con modelos similares
 
-No disponible. No se ha identificado en la información proporcionada un conjunto de modelos comparables de la misma categoría, dado que el artefacto publicado no encaja en ninguna clase estándar (no es un 32B MoE real ni un modelo pequeño funcional documentado). Cualquier comparación con modelos como Qwen, Llama o Mistral de tamaño equivalente resultaría engañosa porque las especificaciones declaradas no se corresponden con los pesos.
+No disponible. La información proporcionada no permite identificar modelos comparables de forma rigurosa, ya que no se especifican tamaño efectivo, contexto ni benchmarks estándar del modelo evaluado.
+
+| Modelo | Parametros | Contexto | Licencia | Disponibilidad |
+|---|---|---|---|---|
+| Sega-DeepSearch-Research | 1792 reales / 32B declarados | no disponible | Apache 2.0 | Hugging Face |
+| Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
 
-- Discrepancia crítica entre parámetros declarados (32B MoE) y parámetros reales en safetensors (1792): el checkpoint no puede implementar la arquitectura descrita.
-- Métricas de la model card sin metodología, baseline ni reproducibilidad; deben tratarse como afirmaciones de marketing no verificadas.
-- Ausencia de información sobre datos de entrenamiento, tokenizador y proceso de alineación, lo que impide evaluar sesgos, toxicidad o calidad lingüística.
-- Riesgo alto de alucinación y de salidas incoherentes si se intenta usar el checkpoint en producción.
-- Idiomas soportados no documentados; no hay garantía de comportamiento correcto en castellano ni en ningún otro idioma.
-- Licencia Apache 2.0: permite uso comercial según los términos de la licencia, pero la licencia no subsana la falta de idoneidad técnica del artefacto.
-- Sin descargas ni likes en el momento de la consulta, lo que indica ausencia de validación por parte de la comunidad.
-- No apto para producción, investigación empírica ni evaluación comparativa hasta que el autor publique pesos coherentes y documentación técnica verificable.
+- Discrepancia crítica entre los 32B declarados en la model card y los 1792 parámetros reales en safetensors; no es posible validar el modelo como un LLM funcional.
+- Ausencia total de información sobre el dataset de entrenamiento, lo que impide evaluar sesgos conocidos.
+- Riesgo elevado de alucinación y de comportamiento errático al no existir documentación sobre alineación (RLHF, DPO) ni evaluaciones reproducibles.
+- Métricas autoinformadas ("Epistemic IQ" del 99,1%, 92% de eficiencia de tokens) sin definición metodológica ni comparación con benchmarks estándar.
+- Idiomas soportados no documentados; no se puede garantizar un comportamiento correcto en castellano ni en ningún otro idioma.
+- Longitud de contexto no disponible, lo que impide planificar su uso en conversaciones multi-turno o documentos largos.
+- La licencia Apache 2.0 permite uso comercial, pero la falta de garantías técnicas y de documentación desaconseja cualquier despliegue en producción.
+- No se han encontrado paper, repositorio de código ni demo asociados que permitan auditar el modelo.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/the123manaic/Sega-DeepSearch-Research
-- No se han encontrado en la información disponible papers, blogs, repositorios de código ni demos adicionales asociados al modelo.
+- Hugging Face: https://huggingface.co/the123manaic/Sega-DeepSearch-Research

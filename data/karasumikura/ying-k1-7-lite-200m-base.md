@@ -2,96 +2,106 @@
 
 ## Resumen
 
-Ying K1.7 Lite 200M base es un modelo de lenguaje denso de 210,2 millones de parámetros entrenado desde cero por el autor independiente Karasumikura, orientado principalmente al chino con soporte secundario de inglés. Se trata de la segunda iteración de la familia Ying K1, con una arquitectura propia denominada MM200 y un entrenamiento de 24,07 mil millones de tokens, un 61 % más que su predecesor Ying K1 Lite 200M. La ventana de contexto de entrenamiento es de 8.192 tokens con atención de ventana deslizante de 1.024.
+Ying K1.7 Lite 200M Base es un modelo de lenguaje causal de pequeno tamano (210,2 millones de parametros) desarrollado por Karasumikura (Wang Yingze). Se trata de los pesos base del modelo Ying K1.7 Lite, obtenidos tras continuar el preentrenamiento en chino sobre la base de la generacion anterior (K1.6). No ha recibido ningun tipo de ajuste por instrucciones (SFT) ni optimizacion por preferencias (DPO), por lo que su proposito es servir como punto de partida para futuros desarrollos y como modelo de extraccion de caracteristicas y generacion de texto por continuacion.
 
-La relevancia de este modelo reside en su naturaleza completamente abierta y reproducible: pesos en safetensors, licencia Apache 2.0, adaptador para `transformers` (`AutoModel` y `AutoTokenizer` funcionales) y un runtime de inferencia propio con soporte de KV cache, decodificación en streaming y CUDA Graph incluido en el repositorio. Frente a K1, corrige deficiencias de interfaz (carga estándar, `generate()` nativo) y añade una segunda fase de preentrenamiento que mejora la perplejidad en inglés aunque la empeora en código y matemáticas.
+El modelo emplea una arquitectura transformer con 16 capas y una dimension oculta de 768, combinando atencion de ventana deslizante (12 capas con ventana de 1024 tokens) y atencion global (4 capas). Utiliza GQA con 12 cabezas de consulta y 4 de clave/valor, atencion con compuerta (gated attention) y normalizacion QK. La longitud de contexto es de 8192 tokens, con una ventana deslizante efectiva de 1024.
 
-Es importante subrayar que este repositorio contiene únicamente los pesos base: no existe ninguna versión con ajuste supervisado (SFT) ni instrucciones para K1.7. El modelo puede continuar texto, pero no sigue instrucciones ni mantiene diálogos; el autor advierte explícitamente que el modelo `Ying-K1-Lite-0.2B` pertenece a la generación anterior y no debe usarse como versión post-entrenada de K1.7.
+Su relevancia actual radica en dos factores: por un lado, es un ejemplo de entrenamiento realizado integramente en hardware no convencional (Moore Threads MTT S4000, RTX PRO 6000 Blackwell y AMD Radeon PRO W7900D), y por otro, demuestra que es posible continuar el preentrenamiento de un modelo de 210M con un presupuesto de datos modesto (2,83 B de tokens en esta iteracion) manteniendo una licencia permisiva Apache-2.0.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer denso MM200 (16 capas, hidden 768, GQA 3:1, gated attention + QK-norm) |
-| Parametros totales | 210.210.560 |
-| Parametros activos | no aplica (modelo denso) |
-| Longitud de contexto | 8.192 tokens de entrenamiento (ventana deslizante de 1.024) |
-| Tipos de cuantizacion | no disponible (entrenado y exportado en bfloat16; fp16 también válido) |
-| Idiomas soportados | chino (principal), inglés |
-| Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (195 tensores, 420,4 MB) |
+| Arquitectura | Transformer causal con atencion hibrida (ventana deslizante + global), GQA 3:1, gated attention y QK-norm |
+| Parametros totales | 210.210.560 (210,2 M) |
+| Parametros activos | No aplica (no es MoE) |
+| Longitud de contexto | 8192 tokens (ventana deslizante de 1024) |
+| Tipos de cuantizacion | No disponible (pesos en bf16; no se documentan cuantizaciones GGUF/AWQ/GPTQ) |
+| Idiomas soportados | Chino (zh) e ingles (en); el chino es el idioma principal |
+| Licencia | Apache-2.0 |
+| Formato de pesos | safetensors (bf16) |
+| Capas / dimension oculta | 16 / 768 |
+| Cabezas de atencion | 12 de consulta / 4 de clave-valor (GQA 3:1) |
+| Dimension por cabeza (head_dim) | 64 |
+| Vocabulario | 16.006 tokens |
+| Normalizacion | RowNorm (centrada en cero), materializada como `weight` estandar en la exportacion |
+| Libreria | transformers (requiere `trust_remote_code=True`) |
 
 ## Arquitectura y entrenamiento
 
-El modelo emplea un transformer denso de 16 capas con dimensión oculta de 768, 12 cabezas de consulta y 4 cabezas KV (GQA con ratio 3:1), dimensión de cabeza 64 y vocabulario de 16.006 tokens. Incorpora gated attention, normalización QK y una normalización RowNorm centrada en cero que se materializa como `weight` estándar durante la exportación. La atención usa ventana deslizante de 1.024 tokens sobre un contexto de entrenamiento de 8.192.
+La arquitectura es un transformer causal de 16 capas con una combinacion de atencion local y global: 12 capas emplean atencion de ventana deslizante con un tamano de ventana de 1024 tokens y 4 capas emplean atencion global. El modelo usa GQA con una relacion 3:1 (12 cabezas de consulta frente a 4 de clave-valor), atencion con compuerta (gated attention) y normalizacion QK. La normalizacion es RowNorm centrada en cero, que se ha materializado como un `weight` estandar durante la exportacion para facilitar la compatibilidad con transformers. El vocabulario es de 16.006 tokens y la precision de los pesos es bf16.
 
-El entrenamiento se realizó en dos fases sobre hardware MUSA (8× MTT S4000): una primera fase de 90.000 pasos con 14,92 mil millones de tokens y una segunda de continuación de 1.205 pasos con 9,14 mil millones de tokens adicionales, sumando 24,07 mil millones. Los datos son mayoritariamente chinos (Ultra-FineWeb-zh entre otras fuentes). La continuación modificó efectivamente los pesos: la comparación tensor a tensor con el checkpoint `base_step90000` muestra una diferencia máxima de 0,70 en `blocks.0.attn.gate_proj`. No se ha aplicado RLHF, DPO ni SFT. La exportación elimina la cabeza MTP y materializa RowNorm.
+El entrenamiento se desarrollo en tres fases. La fase de preentrenamiento base utilizo el corpus general `mm200_pt2` con 24,07 B de tokens sobre 8 GPU Moore Threads MTT S4000. La continuacion de preentrenamiento en chino de la generacion K1.6 uso Ultra-FineWeb-L3 `multi_style` con 1,40 B de tokens sobre RTX PRO 6000 Blackwell. La fase correspondiente a K1.7 (esta version) uso Ultra-FineWeb chino L2 con 2,83 B de tokens sobre AMD Radeon PRO W7900D de 48 GB. En total, el modelo ha visto 28,30 B de tokens.
+
+Los detalles de esta ultima fase son relevantes para interpretar el modelo: se entreno desde el step 14.292 del K1.6 base hasta el step 45.900, con 28.800 pasos, un batch efectivo de 98.304 tokens por paso y una longitud de secuencia de 8192. Se empleo una tasa de aprendizaje constante sin decaimiento (calentamiento de 200 pasos, muon 5e-3 / adam 1,5e-4), autocast en bf16 con pesos maestros y estados del optimizador en fp32, y sin GradScaler. La perdida descendio de 3,085 a aproximadamente 2,60 al final, y el bpc de 2,75 a cerca de 2,55, con un rendimiento de unos 9.700 tokens por segundo. El autor advierte explicitamente que la tasa de aprendizaje constante y la ausencia de una fase de decaimiento hacen que la meseta final sea esperada y no indique convergencia total.
 
 ## Capacidades
 
-- Generación de texto y continuación de secuencias en chino e inglés.
-- Modelado de lenguaje base: no sigue instrucciones ni mantiene formato conversacional sin un SFT previo.
-- Razonamiento incipiente: en pruebas de continuación muestra coherencia sintáctica limitada, sin capacidad demostrada de razonamiento multi-paso.
-- Generación de código y matemáticas: capacidad presente pero degradada respecto a K1 (perplejidad +6,1 % en código y +5,3 % en matemáticas).
-- Soporte de tool calling / function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingües: chino e inglés únicamente.
-- Capacidades especiales: runtime propio con KV cache, decodificación en streaming, decodificación por grafos (CUDA Graph) y tokens especiales de chat preverificados (`<|im_end|>`=15932, `<|user|>`=16001, `<|assistant|>`=16002, todos de un solo token) para uso tras SFT.
+- Generacion de texto por continuacion (modelo base, no ajustado por instrucciones).
+- Extraccion de caracteristicas (etiqueta `feature-extraction` en el repositorio).
+- Modelado de lenguaje causal con contexto de hasta 8192 tokens.
+- Capacidad multilingue limitada a chino e ingles, con claro predominio del chino.
+- Soporte de atencion de ventana deslizante para contextos largos con coste reducido en las capas locales.
+- No dispone de soporte de tool calling ni function calling (no es un modelo instruido).
+- No dispone de modo de razonamiento explicito (thinking mode), vision ni audio.
+- No dispone de capacidades de agente ni de razonamiento multi-paso entrenadas.
+- El formato de dialogo `<|user|>...<|assistant|>...<|im_end|>` esta definido para la futura version SFT, pero el modelo base no garantiza su seguimiento.
 
 ## Casos de uso
 
-- Investigación en preentrenamiento desde cero: el modelo sirve como banco de pruebas reproducible de arquitecturas propias (MM200) con pesos, código de entrenamiento e inferencia disponibles, útil para estudiar el efecto de la continuación de preentrenamiento sobre dominios específicos.
-- Base para ajuste supervisado propio: al ser un modelo base con licencia Apache 2.0 y tokenizador de chat ya definido, un equipo puede aplicar su propio SFT sobre el formato `<|user|>...<|assistant|>...<|im_end|>` y obtener un asistente ligero en chino.
-- Generación de texto en chino en entornos con recursos muy limitados: con 210 M de parámetros y 420 MB en bfloat16, cabe en CPU y en GPUs de gama baja para tareas de continuación de texto, resumen extractivo o generación de titulares.
-- Prototipado de pipelines de inferencia: el runtime incluido (`mm200_runtime.py`) con KV cache, streaming y CUDA Graph permite validar infraestructura de servicio (SSE, buffers, grafos) con un coste computacional mínimo antes de migrar a modelos mayores.
-- Experimentación académica con decodificación especulativa y optimización de kernels: el autor documenta A/B tests de latencia (21,6 ms → 7,2 ms por token con CUDA Graph) y enfoques descartados, lo que lo convierte en un caso de estudio práctico de optimización de inferencia.
-- Filtrado y clasificación de texto en chino: aunque la tarea declarada es `text-generation`, el modelo puede emplearse para puntuar perplejidad o detectar texto anómalo en corpus chinos, dado su bajo coste de ejecución.
+- Investigacion sobre preentrenamiento en chino: el modelo sirve como punto de partida reproducible para estudiar el efecto de continuar el preentrenamiento con corpus chinos de calidad (Ultra-FineWeb L2) sobre una base ya entrenada, con registros detallados de hiperparametros y curvas de perdida.
+- Experimentos de ajuste por instrucciones (SFT): al ser un modelo base de 210M con licencia Apache-2.0, es adecuado para probar recetas de SFT de bajo coste en una sola GPU de consumo, comparando el efecto de distintas mezclas de datos.
+- Extraccion de caracteristicas y embeddings: la etiqueta `feature-extraction` y su dimension oculta de 768 permiten usarlo como codificador ligero para tareas de clasificacion o recuperacion en chino, aunque no se documenta un rendimiento especifico en estas tareas.
+- Generacion de texto por continuacion en chino: con los parametros de muestreo documentados (temperatura 0,7, top_p 0,85, repetition_penalty 1,3, no_repeat_ngram_size 4, frequency_penalty 0,4) puede emplearse para completar textos, generar variaciones estilisticas o aumentar datos de entrenamiento en chino.
+- Destilacion y modelos de referencia: su tamano reducido lo hace util como modelo profesor o alumno en experimentos de destilacion y como linea base en comparaciones de eficiencia frente a modelos mayores.
+- Pruebas de infraestructura y despliegue: al caber en una GPU de consumo y requerir `trust_remote_code`, sirve para validar pipelines de transformers, integracion con vLLM o llama.cpp y flujos de cuantizacion antes de escalar a modelos mayores.
+- Educacion y divulgacion: permite ilustrar el funcionamiento de la atencion hibrida (ventana deslizante y global) y de GQA en un modelo de tamano manejable con codigo abierto.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible. El autor proporciona métricas de perplejidad comparativas entre K1 y K1.7 sobre 8 segmentos por dominio, con inferencia en CPU bfloat16 y NLL por token:
+No se han publicado resultados de benchmarks en la informacion disponible. La model card unicamente reporta metricas de entrenamiento: perdida final de aproximadamente 2,60 (desde 3,085), bpc de aproximadamente 2,55 (desde 2,75) y un rendimiento de unos 9.700 tokens por segundo durante el entrenamiento. Tambien incluye una tabla de tasas de repeticion de 4-gramas segun `frequency_penalty`:
 
-| Dominio | K1 | K1.7 | Cambio | IC 95 % |
+| Version | f=0 | f=0,2 | f=0,4 | f=0,6 |
 |---|---|---|---|---|
-| Código | 1,4818 | 1,5722 | +6,1 % (peor) | ±0,076 (significativo) |
-| Inglés | 1,8846 | 1,8352 | −2,6 % (mejor) | ±0,032 (significativo) |
-| Matemáticas | 2,2728 | 2,3922 | +5,3 % (peor) | ±0,115 (marginal) |
-
-También se documentan métricas de inferencia medidas sobre la arquitectura gemela Ying K1 (210,2 M) en una única T4, pendientes de reverificación en K1.7: latencia de decodificación de 7,2 ms/token tras optimización (frente a 21,6 ms sin ella), throughput de 139,2 tok/s por petición, TTFT de 1,05 s en servicio en streaming y tiempo de respuesta de 1,90 s para 256 tokens.
+| SFT (temp 0,1) | 0,009 | 0,023 | 0,010 | 0,005 |
+| Base (temp 0,7) | 0,082 | 0,088 | 0,066 | 0,027 |
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: aproximadamente 0,42 GB en bfloat16 o fp16 para los pesos; el consumo real depende del tamaño del KV cache y del buffer de contexto (muy reducido por las 16 capas y 4 cabezas KV).
-- GPU recomendadas: cualquier GPU con al menos 1-2 GB de memoria libre; el autor reporta pruebas en NVIDIA T4. Funciona también en CPU en bfloat16.
-- Cabe en GPU de consumo: sí, en cualquier GPU consumer moderna (RTX 3060, RTX 4060, RTX 4090, etc.) e incluso en iGPU con suficiente memoria compartida.
-- Opciones de despliegue: `transformers` estándar con `trust_remote_code=True` (sin KV cache, más lento), runtime propio `mm200_runtime.py` con KV cache y streaming, y exportación a otros formatos no documentada (no hay GGUF ni integración con vLLM, llama.cpp, Ollama o TGI en la información disponible).
-- Latencia y throughput estimados: 7,2 ms/token y 139,2 tok/s por petición en T4 con CUDA Graph (medido en la arquitectura K1, pendiente de reverificación en K1.7); 24,3 ms/token en modo eager para prompts que superan la ventana deslizante.
+- VRAM estimada para inferencia: con pesos en bf16, aproximadamente 0,42 GB solo para los pesos (210,2 M x 2 bytes); en la practica, el uso total con cache KV y overhead de transformers ronda 1-2 GB para contextos moderados. En cuantizacion de 8 bits serian unos 0,21 GB y en 4 bits unos 0,11 GB, aunque no se documentan cuantizaciones oficiales.
+- GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM es suficiente; se ha entrenado en Moore Threads MTT S4000, RTX PRO 6000 Blackwell y AMD Radeon PRO W7900D de 48 GB, pero para inferencia no se requiere hardware de ese nivel.
+- Cabe en GPU de consumo: si, en practicamente cualquier GPU de consumo moderna (RTX 3060, RTX 4060, RTX 4090, etc.) e incluso en iGPU con suficiente memoria compartida.
+- Opciones de despliegue: transformers con `trust_remote_code=True` es la via documentada; no se documenta soporte oficial para vLLM, llama.cpp, Ollama o TGI, por lo que su uso en esos frameworks requeriria conversion y verificacion previas.
+- Latencia y throughput estimados: no disponible para inferencia; el unico dato es el throughput de entrenamiento de aproximadamente 9.700 tokens por segundo en AMD Radeon PRO W7900D.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
+| Modelo | Parametros | Contexto | Idiomas | Licencia | Notas |
 |---|---|---|---|---|---|
-| Ying K1.7 Lite 200M base | 210,2 M | 8.192 | Apache 2.0 | Hugging Face, pesos safetensors | Solo base, sin SFT; chino e inglés |
-| Ying K1 Lite 200M | 210,2 M | 8.192 | Apache 2.0 | Hugging Face | Generación anterior; dispone de SFT en chino; sin `AutoModel` nativo |
-| Qwen2.5-0.5B | 494 M | 32.768 | Apache 2.0 | Hugging Face | Modelo base más grande y con contexto mayor; familia consolidada |
-| SmolLM2-135M | 135 M | 8.192 | Apache 2.0 | Hugging Face | Alternativa en inglés de tamaño similar; no orientada al chino |
+| Ying K1.7 Lite 200M Base | 210,2 M | 8192 (ventana 1024) | zh, en | Apache-2.0 | Modelo base, sin SFT ni DPO; atencion hibrida y GQA 3:1 |
+| Ying K1.6 Lite 200M Base | 210 M (aproximado) | No disponible | zh, en | Apache-2.0 (segun generacion anterior) | Generacion previa; repositorio ahora privado |
+| Ying K1.6 Lite 200M (SFT) | 210 M (aproximado) | No disponible | zh, en | Apache-2.0 (segun generacion anterior) | Version conversacional de la generacion anterior, con SFT |
+| Ying K1.5 Lite 200M Base | 210 M (aproximado) | No disponible | zh, en | No disponible | Generacion anterior, sin datos publicos de rendimiento |
 
-No se dispone de datos de benchmarks comparativos directos entre estos modelos en la información proporcionada; la comparación se limita a parámetros, contexto, licencia y disponibilidad.
+No se dispone de datos de benchmarks que permitan una comparacion cuantitativa con modelos de la misma categoria (por ejemplo, otros modelos base de 200M en chino). La comparativa se limita a la propia familia Ying y a los datos publicados en la model card.
 
 ## Limitaciones y advertencias
 
-- No es un modelo de instrucciones: no sigue órdenes, no mantiene diálogo y no debe usarse como asistente sin un SFT previo. El propio autor lo advierte de forma explícita.
-- Riesgo elevado de alucinación y de continuaciones incoherentes: en las pruebas de continuación el modelo produce errores factuales y de razonamiento (por ejemplo, conclusión incorrecta en un silogismo sobre animales que no temen al agua).
-- Regresión en código y matemáticas respecto a K1 (+6,1 % y +5,3 % de perplejidad), por lo que no es adecuado para tareas técnicas sin ajuste adicional.
-- Cobertura lingüística limitada a chino e inglés; no se documenta rendimiento en otras lenguas.
-- Contexto efectivo reducido por la ventana deslizante de 1.024 tokens pese al contexto de entrenamiento de 8.192.
-- El formato de chat (`<|user|>`, `<|assistant|>`, `<|im_end|>`) no ha sido visto durante el preentrenamiento y solo tendrá efecto tras SFT.
-- Licencia Apache 2.0 permite uso comercial, pero el modelo base sin post-entrenamiento tiene utilidad comercial muy limitada.
-- No hay versiones cuantizadas publicadas ni integración con motores de serving estándar; el despliegue requiere el runtime propio o `trust_remote_code`.
-- El repositorio tiene cero descargas y cero likes en el momento de la consulta, sin validación externa de la comunidad.
+- Es un modelo base sin ajuste por instrucciones: no garantiza el seguimiento de instrucciones y, si se usa en un dialogo, produce continuaciones en lugar de respuestas.
+- No se ha entrenado con DPO ni con RLHF, por lo que no hay alineacion con preferencias humanas.
+- Con 210M de parametros, la capacidad de conocimiento factual y de razonamiento de cadena larga es limitada; es propenso a errores factuales y a alucinaciones.
+- El chino es el idioma principal; el rendimiento en ingles es debil segun el propio autor.
+- Es sensible a los parametros de muestreo: con temperatura 0,7 empieza a inventar identidad y hechos, y con temperatura 0 entra en repeticiones. Los valores documentados son los usados en el sitio del autor, no una recomendacion general.
+- El modelo base presenta una tasa de repeticion de 4-gramas notablemente superior a la version SFT (0,082 frente a 0,009 con los ajustes respectivos).
+- El entrenamiento con tasa de aprendizaje constante y sin decaimiento deja el modelo en una meseta; el autor indica que se necesitaria una fase de decaimiento para aprovechar por completo el corpus.
+- La licencia Apache-2.0 permite uso comercial, pero el modelo no esta validado para produccion y no se ofrecen garantias de calidad.
+- Requiere `trust_remote_code=True`, lo que implica ejecutar codigo del autor; conviene revisar el codigo remoto antes de desplegarlo.
+- No se documentan cuantizaciones oficiales ni soporte en frameworks de inferencia de alto rendimiento, lo que limita su despliegue en produccion.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/Karasumikura/Ying-K1.7-Lite-200M-base
-- Modelo predecesor (K1 Lite 200M): https://huggingface.co/Karasumikura/Ying-K1-Lite-0.2B
-- Repositorio de código, paper o demo adicional: no disponible en la información proporcionada.
+- Repositorio Hugging Face: https://huggingface.co/Karasumikura/Ying-K1.7-Lite-200M-base
+- Sitio del autor: https://yingze.wang
+- Generacion anterior (base, ahora privada): https://huggingface.co/Karasumikura/Ying-K1.6-Lite-200M-base
+- Generacion anterior a esa (base): https://huggingface.co/Karasumikura/Ying-K1.5-Lite-200M-base
+- Version conversacional de la generacion K1.6: https://huggingface.co/Karasumikura/Ying-K1.6-Lite-200M

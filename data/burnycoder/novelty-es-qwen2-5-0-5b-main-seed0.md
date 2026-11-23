@@ -2,98 +2,98 @@
 
 ## Resumen
 
-`BurnyCoder/novelty-es-qwen2.5-0.5b-main-seed0` es un ajuste fino de investigación sobre `Qwen/Qwen2.5-0.5B-Instruct`, publicado por el usuario BurnyCoder dentro de un experimento sobre estrategias evolutivas aplicadas al entrenamiento de modelos de lenguaje. No es un modelo de propósito general: es un artefacto de investigación orientado a una tarea concreta de aritmética combinatoria (el problema "countdown", consistente en combinar números con operaciones para alcanzar un objetivo), y su model card lo declara explícitamente como "research-only arithmetic adaptation, with no evidence of general language improvements".
+Novelty ES pilot: main es un ajuste fino (fine-tuning) del modelo Qwen2.5-0.5B-Instruct desarrollado por el usuario BurnyCoder, orientado a un experimento de investigación sobre estrategias evolutivas (evolution strategies, ES) y búsqueda de novedad aplicadas al entrenamiento de modelos de lenguaje. El modelo no busca ser un asistente generalista, sino servir como artefacto reproducible de un estudio empírico sobre si la novedad como señal de recompensa mejora el rendimiento en tareas aritméticas restringidas, concretamente problemas de tipo *countdown* (construir una expresión aritmética válida a partir de un conjunto de números).
 
-El interés del modelo es metodológico más que de producto. La model card reporta un experimento controlado en el que se compara el modelo original con dos variantes entrenadas mediante estrategias evolutivas: una condición "main" (con un componente de búsqueda de novedad) y una condición "reward_only" (solo recompensa). La hipótesis de mejora direccional no se confirmó en esta semilla: ambas variantes entrenadas obtienen exactamente la misma precisión de test (1,12 %) y superan al modelo original (0,29 %), pero la condición "main" no supera a la de control.
+El modelo base es Qwen2.5-0.5B-Instruct, un transformer decoder-only de aproximadamente 494 millones de parámetros. El ajuste se realizó mediante estrategias evolutivas, sin evidencia de mejoras generales en lenguaje según la propia model card. Los resultados publicados muestran una precisión greedy del 1,12 % en el conjunto de test, frente al 0,29 % del modelo original, pero el autor indica explícitamente que la hipótesis de mejora direccional por novedad no se sostiene en esta semilla, ya que la condición "main" no supera a la condición "reward_only".
 
-Se trata, por tanto, de un modelo de 494 millones de parámetros derivado de la familia Qwen2.5, con licencia Apache 2.0, pensado para reproducir y auditar un resultado experimental. Su relevancia actual es limitada como herramienta, pero resulta útil como ejemplo de publicación de resultados negativos o no concluyentes con preregistro, código y procedencia documentados.
+Es relevante ahora como ejemplo de publicación de artefactos de investigación con trazabilidad de resultados, intervalos de confianza y correcciones documentadas, más que como modelo de producción. Su utilidad práctica es muy limitada fuera del contexto del experimento.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (familia Qwen2), según el modelo base Qwen2.5-0.5B-Instruct |
+| Arquitectura | Transformer decoder-only (derivada de Qwen2) |
 | Parametros totales | 494.032.768 |
-| Parametros activos | no disponible (no es un modelo MoE) |
-| Longitud de contexto | no disponible en la informacion proporcionada (heredada del modelo base Qwen2.5-0.5B-Instruct) |
-| Tipos de cuantizacion | no disponible (el repo solo contiene safetensors en el momento de la consulta) |
-| Idiomas soportados | no disponible (el campo de idiomas de la model card está vacío) |
-| Licencia | apache-2.0 |
+| Parametros activos | no aplica (no es MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | no disponible (pesos en safetensors; cuantizaciones GGUF no publicadas) |
+| Idiomas soportados | no disponibles |
+| Licencia | Apache 2.0 |
 | Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura subyacente es la del modelo base `Qwen/Qwen2.5-0.5B-Instruct`, un transformer decoder-only de la familia Qwen2 con 494 millones de parámetros. El ajuste se realizó mediante estrategias evolutivas (evolution strategies), un enfoque de optimización sin gradientes que perturba los pesos y selecciona variantes según una función de recompensa. La model card indica que el entrenamiento y la evaluación emplean una semilla y configuración registradas, y fija la revisión del modelo base en `7ae557604adf67be50417f59c2c2f167def9a775`.
+El modelo parte de Qwen2.5-0.5B-Instruct (revisión base `7ae557604adf67be50417f59c2c2f167def9a775`), un transformer decoder-only con atención causal estándar. Sobre esa base se aplicó un proceso de ajuste mediante estrategias evolutivas (evolution strategies) con una variante que incorpora una señal de novedad, comparada contra una condición de control basada únicamente en recompensa (reward-only). El entrenamiento se centró en una tarea de *countdown* aritmético con problemas de tres, cuatro y cinco números, y un verificador que acepta sintaxis de expresiones Python restringidas, ya sea desnuda o dentro de una etiqueta de respuesta.
 
-El experimento compara tres condiciones: el modelo original sin ajustar, una condición "main" con búsqueda de novedad y una condición "reward_only" sin ella. La tarea de entrenamiento y evaluación es el problema countdown, en el que el modelo debe producir expresiones aritméticas legales que alcancen un objetivo a partir de un conjunto de números. La model card señala que ambos checkpoints entrenados generan más expresiones legales en problemas de tres y cuatro números, pero que en problemas de cinco números su validez de expresión es inferior a la del modelo original, de modo que la mejora en validez no se transfiere de forma uniforme. No se documentan en la información disponible detalles sobre volumen de tokens, composición del dataset ni uso de RLHF o DPO.
+No se dispone de información sobre el número total de tokens de entrenamiento, la composición del dataset, ni si se aplicaron fases de RLHF o DPO. La model card menciona métricas de tokens de entrenamiento acumulados y horas de pared por fase, pero no las cuantifica en la información disponible. La innovación técnica destacable es metodológica: el uso de búsqueda de novedad como señal auxiliar en ES, con preregistro, intervalos de confianza y correcciones independientes documentadas. No se describen innovaciones arquitectónicas (atención lineal, decodificación especulativa, etc.).
 
 ## Capacidades
 
-- Generación de texto conversacional, heredada del modelo base Qwen2.5-0.5B-Instruct.
-- Resolución de problemas aritméticos de tipo countdown: producir expresiones con los números dados que alcancen un objetivo.
-- Generación de expresiones aritméticas legales (sintácticamente válidas) con tasas superiores al modelo original en problemas de tres y cuatro números.
-- Capacidad de razonamiento aritmético de múltiples pasos, limitada y medida únicamente en el dominio countdown.
-- Soporte de tool calling / function calling: no disponible de forma verificada en la información proporcionada.
-- Soporte de agentes y razonamiento multi-paso general: no disponible de forma verificada.
-- Capacidades multilingües: no disponibles; la model card no declara idiomas.
-- Modo "thinking", visión o audio: no disponibles.
+- Generación de texto conversacional heredada del modelo base Qwen2.5-0.5B-Instruct.
+- Resolución de problemas aritméticos de tipo *countdown*: construir expresiones válidas con un conjunto de números dados.
+- Producción de expresiones legales en sintaxis Python restringida, bare o dentro de una etiqueta de respuesta.
+- Soporte de tool calling: no disponible de forma específica en este ajuste (el modelo base lo soporta, pero no hay evidencia de que se conserve).
+- Soporte de agentes y razonamiento multi-paso: no disponible.
+- Capacidades multilingües: no documentadas; los idiomas soportados figuran como no disponibles.
+- Capacidades especiales: modo de razonamiento extendido, visión o audio no disponibles.
 
 ## Casos de uso
 
-- Reproducción de experimentos de estrategias evolutivas: el checkpoint permite replicar la condición "main" del estudio con la semilla y configuración registradas, comparando su precisión frente a la condición "reward_only" y el modelo original.
-- Auditoría de resultados negativos: útil para investigadores que quieran verificar que la búsqueda de novedad no aporta ventaja sobre la recompensa sola en esta tarea y semilla.
-- Estudio de la validez sintáctica en expresiones aritméticas: el modelo permite analizar por qué la mejora en legalidad de expresiones no se traduce en precisión final, especialmente en problemas de cinco números.
-- Línea base en investigación sobre optimización sin gradientes: sirve como punto de comparación de bajo coste (494 M de parámetros) para probar variantes de evolution strategies antes de escalar a modelos mayores.
-- Docencia sobre metodología experimental: el paquete de model card, preregistro y repositorio constituye un ejemplo de publicación con intervalos de confianza, condiciones de control y limitaciones declaradas.
-- Evaluación de transferencia de habilidades: permite medir si un ajuste orientado a una tarea aritmética concreta degrada o no otras capacidades del modelo base, aunque la model card no reporta evidencias de mejoras generales de lenguaje.
+- Reproducción de experimentos de investigación: sirve como checkpoint de referencia para replicar el estudio de estrategias evolutivas con señal de novedad, comparando las condiciones original, main y reward_only.
+- Evaluación de metodologías de ES en modelos pequeños: útil para investigadores que quieran contrastar sus propios pipelines de optimización evolutiva contra un artefacto publicado con métricas y correcciones documentadas.
+- Estudio de validez de expresiones aritméticas: permite analizar por qué el ajuste mejora la legalidad de expresiones en problemas de tres y cuatro números pero la empeora en los de cinco.
+- Auditoría de trazabilidad científica: el modelo y sus artefactos crudos permiten verificar afirmaciones sobre intervalos de confianza y correcciones independientes.
+- Docencia sobre limitaciones de señales de recompensa: ejemplo práctico de que una mejora en accuracy no implica que la hipótesis causal se confirme.
+- Pruebas de infraestructura de despliegue con modelos pequeños: por su tamaño (≈1 GB en safetensors) puede usarse para validar pipelines de transformers o TGI sin coste elevado.
 
 ## Benchmarks y rendimiento
 
-Los únicos datos publicados en la información disponible corresponden a la tarea countdown del propio experimento:
-
-| Condicion | Precision test | Intervalo 95 % | Precision hard | pass@1 | pass@8 | Estado |
+| Condicion | Test greedy accuracy | Intervalo 95% | Hard greedy accuracy | Original-test pass@1 | Original-test pass@8 | Estado |
 |---|---|---|---|---|---|---|
-| original | 0,29 % | 0,10 % - 0,54 % | 0,10 % | 0,12 % | 0,89 % | complete |
-| main | 1,12 % | 0,68 % - 1,61 % | 0,00 % | 0,27 % | 2,06 % | complete |
-| reward_only | 1,12 % | 0,68 % - 1,61 % | 0,10 % | 0,22 % | 1,67 % | complete |
+| original | 0,29 % | 0,10 % - 0,54 % | 0,10 % | 0,12 % | 0,89 % | completo |
+| main | 1,12 % | 0,68 % - 1,61 % | 0,00 % | 0,27 % | 2,06 % | completo |
+| reward_only | 1,12 % | 0,68 % - 1,61 % | 0,10 % | 0,22 % | 1,67 % | completo |
 
-No se han publicado resultados de benchmarks generales (MMLU, HumanEval, GSM8K u otros) en la información disponible. La model card advierte que los intervalos excluyen la variabilidad entre semillas de entrenamiento.
+Las columnas de accuracy usan una respuesta greedy por problema. "Hard" corresponde al split de cinco números. pass@1, pass@8 y diversidad de muestreo usan el subconjunto fijo del test original. Los intervalos excluyen la variabilidad entre semillas de entrenamiento. No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: con 494 M de parámetros en precisión completa (fp32) se requieren aproximadamente 2 GB solo para los pesos; en fp16 o bf16, alrededor de 1 GB; en cuantización de 8 bits, en torno a 0,5 GB, y en 4 bits, aproximadamente 0,3 GB (estimaciones a partir del recuento de parámetros, sin datos oficiales del autor).
-- GPU recomendadas: cualquier GPU consumer moderna es suficiente; una RTX 3060, RTX 4060 o superior permite ejecutar el modelo con holgura. Para despliegue por lotes, una A100 o H100 no aporta ventajas significativas dado el tamaño del modelo.
-- Cabe en GPU consumer: sí, en prácticamente cualquier GPU con 4 GB o más de VRAM, e incluso en CPU para inferencia de baja concurrencia.
-- Opciones de despliegue: transformers (librería declarada en la model card), text-generation-inference (etiqueta `text-generation-inference` y `endpoints_compatible` en los tags de Hugging Face). No se documentan pesos GGUF en el repositorio, por lo que llama.cpp u Ollama requerirían conversión previa.
-- Latencia y throughput estimados: no disponibles en la información proporcionada.
+- VRAM estimada para inferencia en fp16: aproximadamente 1 GB de pesos más overhead de activaciones y KV cache; en la práctica, menos de 2 GB para contextos cortos.
+- VRAM estimada en cuantización de 8 bits: en torno a 0,5-0,7 GB; en 4 bits, alrededor de 0,3-0,4 GB (estimaciones por tamaño de parámetros, no publicadas por el autor).
+- GPU recomendadas: cualquier GPU consumer moderna (RTX 3060, RTX 4060, RTX 4090) es suficiente; también cabe en CPU para inferencia en lote pequeño.
+- Cabe en GPU consumer: sí, en prácticamente todas las GPU con al menos 4 GB de VRAM.
+- Opciones de despliegue: transformers (librería declarada), text-generation-inference (tag `text-generation-inference`), endpoints compatibles; llama.cpp u Ollama requerirían conversión a GGUF, no publicada.
+- Latencia y throughput estimados: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Rendimiento en countdown (test) | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| novelty-es-qwen2.5-0.5b-main-seed0 | 494 M | no disponible | 1,12 % | Apache 2.0 | Hugging Face |
-| Qwen2.5-0.5B-Instruct (base) | 494 M | no disponible en la informacion | 0,29 % (condición original del estudio) | Apache 2.0 | Hugging Face |
-| Qwen2.5-Coder-0.5B (variante de la familia) | 494 M aprox. | no disponible en la informacion | no evaluado en este estudio | Apache 2.0 | Hugging Face |
+| Novelty ES pilot: main | 494 M | no disponible | Ajuste ES para countdown aritmético | Apache 2.0 | Hugging Face |
+| Qwen2.5-0.5B-Instruct | ≈494 M | 32 768 tokens (según modelo base) | Asistente generalista instruction-tuned | Apache 2.0 | Hugging Face |
+| Modelos de razonamiento aritmético pequeños (p. ej. variantes de Qwen ajustadas a GSM8K) | 0,5-1,5 B | variable | Fine-tuning supervisado en matemáticas | variable | Hugging Face |
 
-La comparación con alternativas de la misma categoría (modelos de ~0,5 B para razonamiento aritmético) no está disponible en la información proporcionada, salvo el propio modelo base. No se han publicado comparaciones con otros ajustes de countdown.
+La comparación con alternativas de la misma categoría (ajustes de investigación para tareas aritméticas) es difícil porque no se han publicado resultados de benchmarks estándar. El modelo base Qwen2.5-0.5B-Instruct es la referencia directa y está disponible públicamente con la misma licencia.
 
 ## Limitaciones y advertencias
 
-- Modelo de investigación: la model card lo declara explícitamente como adaptación aritmética solo para investigación, sin evidencia de mejoras generales de lenguaje.
-- Resultado no concluyente: la hipótesis de mejora direccional no se apoyó en esta semilla; la condición "main" no supera a "reward_only" (ambas con 1,12 % de precisión).
-- Precisión absoluta muy baja: 1,12 % en test y 0,00 % en la categoría "hard", lo que lo hace inadecuado para uso productivo en aritmética.
-- Transferencia limitada: la mejora de validez de expresiones no se mantiene en problemas de cinco números, donde ambos checkpoints entrenados rinden peor que el original.
-- Intervalos de confianza que excluyen la variabilidad entre semillas: los resultados de una sola semilla no deben generalizarse.
-- Idiomas no declarados: la model card no especifica idiomas soportados, pese al sufijo "es" del identificador.
-- Riesgo de alucinación: inherente a un modelo de 0,5 B ajustado en un dominio estrecho; no se han publicado evaluaciones de fidelidad fuera de countdown.
-- Sesgos conocidos: no documentados en la información disponible; se heredan los del modelo base Qwen2.5-0.5B-Instruct.
-- Licencia Apache 2.0: permite uso comercial, pero el autor desaconseja implícitamente el uso fuera de investigación al describirlo como "research-only".
-- Sin pesos cuantizados publicados: el despliegue en llama.cpp u Ollama requiere conversión manual.
+- El propio autor indica que la hipótesis de mejora direccional por novedad no se sostiene en esta semilla: main no supera a reward_only y el intervalo pareado incluye cero.
+- La accuracy absoluta es muy baja (1,12 % greedy en test), lo que limita cualquier uso práctico en producción.
+- La mejora en legalidad de expresiones no se transfiere a los problemas de cinco números, donde ambos checkpoints ajustados rinden peor que el original.
+- No hay evidencia de mejoras generales en lenguaje; es una adaptación aritmética de investigación.
+- Los intervalos excluyen la variabilidad entre semillas de entrenamiento, por lo que la incertidumbre real es mayor.
+- Riesgo de alucinación y sesgos: no documentados específicamente, pero heredados del modelo base y agravados por el ajuste estrecho.
+- Restricciones de licencia: Apache 2.0 permite uso comercial, pero el modelo no está pensado ni validado para ello.
+- En producción: no recomendado; úsese solo como artefacto de investigación reproducible.
+- Los tensores de generación cero y la trayectoria histórica completa de embeddings/archivo no están disponibles.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/BurnyCoder/novelty-es-qwen2.5-0.5b-main-seed0
-- Repositorio del experimento (preregistro, código, procedencia y limitaciones): https://github.com/BurnyCoder/evolutionary-strategies-novelty-search-llm-training
-- Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
-- Modelo Qwen2.5-0.5B: https://huggingface.co/Qwen/Qwen2.5-0.5B
-- Otro modelo del mismo autor: https://huggingface.co/BurnyCoder/qwen2.5-coder-0.5b-swe-rl
+- Dataset de artefactos crudos: https://huggingface.co/datasets/BurnyCoder/novelty-es-pilot-artifacts/tree/949e2dcb385bc2b7088c40444ef879b76596317d
+- Repositorio del proyecto (preregistro, fuente, procedencia y limitaciones): https://github.com/BurnyCoder/evolutionary-strategies-novelty-search-llm-training
+- Revisiones predecesoras (publication.json): https://github.com/BurnyCoder/evolutionary-strategies-novelty-search-llm-training/blob/cf0a402/reports/publication.json
+- Correcciones independientes y lagunas de evidencia: https://github.com/BurnyCoder/evolutionary-strategies-novelty-search-llm-training/blob/main/reports/independent-corrections-2026-11-12.md
+- Modelo base Qwen2.5-0.5B-Instruct: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
+- Configuración de truncación de MiniLM (256 tokens WordPiece): https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/blob/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/sentence_bert_config.json
+- Sintaxis de expresiones Python restringidas: https://docs.python.org/3.12/reference/expressions.html

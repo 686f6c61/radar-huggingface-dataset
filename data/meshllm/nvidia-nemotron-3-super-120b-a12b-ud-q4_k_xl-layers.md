@@ -2,102 +2,97 @@
 
 ## Resumen
 
-Este repositorio no contiene un modelo entrenado de nuevo, sino un paquete de capas en formato GGUF derivado de `unsloth/NVIDIA-Nemotron-3-Super-120B-A12B-GGUF`. Lo publica `meshllm`, el equipo detrás de Mesh LLM, y su función es trocear la distribucion GGUF original (cuantizacion `UD-Q4_K_XL`) en artefactos por capa para poder ejecutar el modelo repartiendo capas entre varias maquinas de un cluster local. El modelo subyacente pertenece a la familia NVIDIA Nemotron 3, con escala de parametros 120B-A12B, es decir, una arquitectura de mezcla de expertos con 120.000 millones de parametros totales y 12.000 millones activos por token.
+Este repositorio no contiene un modelo entrenado desde cero, sino un paquete de capas en formato GGUF derivado de `unsloth/NVIDIA-Nemotron-3-Super-120B-A12B-GGUF`, concretamente de la cuantización `UD-Q4_K_XL`. Lo publica `meshllm` para su uso con Mesh LLM, un runtime de inferencia distribuida que reparte las capas del modelo entre varias máquinas de una red local y expone una API compatible con OpenAI. El modelo subyacente pertenece a la familia NVIDIA Nemotron 3 en su variante Super 120B-A12B, es decir, una arquitectura MoE con aproximadamente 120 mil millones de parámetros totales y 12 mil millones activos por token.
 
-El problema que resuelve es de despliegue, no de calidad: un GGUF de 120B en Q4 ronda los 84,5 GB, un tamano que no cabe en la VRAM de una GPU de consumo ni en muchas configuraciones de servidor de una sola maquina. Al dividir el modelo en 88 capas y servirlo con el runtime `mesh-llm`, el paquete permite agregar memoria y computo de varios hosts y exponer una API compatible con OpenAI (`/v1/chat/completions`) en `localhost:3131`, manteniendo la inferencia en hardware propio.
+La relevancia de este artefacto es práctica: el GGUF original ocupa unos 84,5 GB, lo que impide cargarlo en una sola GPU de consumo, y el paquete de capas permite distribuirlo entre varios hosts sin necesidad de hardware de centro de datos. El repositorio incluye un manifiesto (`model-package.json`) con identidad de origen, checksums SHA-256 y una referencia canónica al fichero GGUF fuente, lo que facilita la verificación de integridad en despliegues reproducibles.
 
-Es relevante ahora porque la inferencia distribuida de modelos abiertos grandes en clusters caseros o de laboratorio se esta consolidando como alternativa a depender de APIs externas por privacidad y coste. Conviene subrayar que este repositorio es un artefacto de empaquetado: no aporta datos de arquitectura, entrenamiento, benchmarks ni idiomas propios, y remite al modelo fuente para todo ello.
+Conviene subrayar que los metadatos del propio repo son incompletos: la tarjeta del autor delega explícitamente los detalles de arquitectura, plantilla de chat, muestreo, licencia y benchmarks a la model card del modelo fuente, y varios campos internos aparecen como "not recorded". Esta ficha distingue en todo momento entre lo que aporta el paquete y lo que corresponde al modelo base.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | No disponible en la informacion proporcionada (modelo fuente de tipo MoE segun la nomenclatura 120B-A12B; no se detalla en la model card) |
-| Parametros totales | 120B segun la nomenclatura del modelo fuente (120B-A12B). El contador de safetensors del repo indica 109.640.064, cifra que no representa el modelo completo al tratarse de un paquete de capas |
-| Parametros activos | 12B (segun la nomenclatura A12B del modelo fuente) |
-| Longitud de contexto | No disponible |
+| Arquitectura | MoE (mezcla de expertos) del modelo base NVIDIA Nemotron 3 Super; detalles finos no disponibles en la informacion proporcionada |
+| Parametros totales | 120B (escala 120B-A12B segun la model card); el campo safetensors del repo indica 109.640.064, cifra no coherente con la escala declarada y probablemente referida a un subconjunto o metadato parcial |
+| Parametros activos | 12B (denominacion A12B) |
+| Longitud de contexto | no disponible |
 | Tipos de cuantizacion | UD-Q4_K_XL (unica variante publicada en este repo) |
-| Idiomas soportados | No disponible |
-| Licencia | `other` (heredada de `unsloth/NVIDIA-Nemotron-3-Super-120B-A12B-GGUF`) |
-| Formato de pesos | GGUF, empaquetado como layer package (artefactos por capa) mas manifiesto `model-package.json` |
-| Numero de capas | 88 |
+| Idiomas soportados | no disponible |
+| Licencia | other (heredada de `unsloth/NVIDIA-Nemotron-3-Super-120B-A12B-GGUF`); terminos concretos no disponibles en la informacion proporcionada |
+| Formato de pesos | GGUF fragmentado en artefactos por capa, mas manifiesto `model-package.json`; 88 capas declaradas |
 | Tamano del repositorio | 84,5 GB |
-| Fichero fuente | `UD-Q4_K_XL/NVIDIA-Nemotron-3-Super-120B-A12B-UD-Q4_K_XL-00001-of-00003.gguf` |
-| Revision del fuente | `036038fb30334a2d56a146c6f0d4871ab5edccbb` |
-| SHA-256 del fuente | `f22083eb6b15acb52905308ab083e8b0cc38897005cc45e8881abd164580aac2` |
+| Runtime | mesh-llm (libreria declarada), API compatible con OpenAI |
+| Revision fuente | `036038fb30334a2d56a146c6f0d4871ab5edccbb` |
+| SHA-256 del GGUF fuente | `f22083eb6b15acb52905308ab083e8b0cc38897005cc45e8881abd164580aac2` |
 | SHA-256 del manifiesto | `61e345feb4d3b4b435ae040bb94c6da9f8a05d94f54cbbdaf5bc7d7b2e781b60` |
-| Runtime | `mesh-llm` (libreria declarada), con endpoint compatible con OpenAI |
-| Descargas / likes | 0 / 0 |
+| ABI de Skippy | no registrado |
+| Descargas / likes | 510 / 0 |
 
 ## Arquitectura y entrenamiento
 
-El paquete no implica entrenamiento alguno: `meshllm` no ha ajustado ni destilado el modelo. Lo que hace es tomar el GGUF cuantizado del repositorio de Unsloth y aplicar un proceso de troceado por capas mediante la herramienta `skippy-model-package write-package`, generando artefactos independientes con checksum SHA-256 calculado y verificado durante la escritura. El trabajo se ejecuto desde el ref `f932c4d1dc12b3e3a670d5f470cedd5cdcc5db39` de `mesh-llm` sobre HF Jobs, y cada artefacto se elimino del espacio de trabajo antes de producir el siguiente.
+El paquete no documenta arquitectura ni entrenamiento propios: es una reempaquetación determinista de un GGUF ya cuantizado. El proceso lo describe el autor como una ejecucion del splitter de HF Jobs de Mesh LLM (ref `f932c4d1dc12b3e3a670d5f470cedd5cdcc5db39`), que escribe cada artefacto, calcula su checksum, lo sube al repositorio y lo elimina del espacio de trabajo antes de generar el siguiente. El resultado conserva la distribucion original del GGUF, dividida en artefactos por capa para permitir inferencia distribuida.
 
-La innovacion tecnica es, por tanto, de formato y de ejecucion: el layer package convierte un unico fichero GGUF en una unidad distribuible que un cluster puede repartir por peers, con el campo `Skippy ABI` como identificador de compatibilidad binaria (marcado como `not recorded` en este paquete). Sobre el modelo de origen, la model card no documenta numero de tokens de entrenamiento, composicion del dataset, ni si hubo RLHF o DPO; la unica informacion disponible es su pertenencia a la familia NVIDIA Nemotron 3 con escala 120B-A12B y la cuantizacion dinamica de Unsloth (`UD-Q4_K_XL`).
+Del modelo base solo se dispone de la denominacion 120B-A12B, que implica una topologia de mezcla de expertos con activacion dispersa, y del nombre de la cuantizacion `UD-Q4_K_XL`, una variante de 4 bits de la familia Unsloth Dynamic. No hay en la informacion proporcionada datos sobre numero de tokens de entrenamiento, composicion del dataset, fases de RLHF o DPO, ni innovaciones tecnicas como decodificacion especulativa o atencion lineal. Cualquier afirmacion al respecto requeriria consultar la model card del modelo fuente.
 
 ## Capacidades
 
-- Generacion de texto conversacional: la pipeline declarada es `text-generation` y el tag `conversational` esta presente en el repositorio.
-- Servicio mediante API compatible con OpenAI: expone `/v1/chat/completions` y `/v1/models` a traves del runtime Mesh LLM en el puerto local 3131.
-- Inferencia distribuida: reparto de las 88 capas entre varios nodos con el flag `--split`.
-- Despliegue local y privado: el modelo se ejecuta en hardware propio del usuario, sin salida de datos a terceros.
-- Integracion con el ecosistema GGUF: al derivar de un GGUF de Unsloth, es compatible con el formato estandar de llama.cpp, aunque el paquete por capas requiere el runtime `mesh-llm`.
-- Tool calling, function calling, agentes, vision, audio, modo de razonamiento explicito, capacidades multilingues y cualquier otra capacidad especial del modelo fuente: no disponibles en la informacion proporcionada. Deben consultarse en la model card de `unsloth/NVIDIA-Nemotron-3-Super-120B-A12B-GGUF`.
+- Generacion de texto conversacional: el pipeline declarado es `text-generation` y la etiqueta `conversational` aparece en los metadatos del repo.
+- Servicio mediante API compatible con OpenAI: expone `/v1/chat/completions` y `/v1/models` a traves del runtime Mesh LLM en el puerto 3131.
+- Inferencia local y privada: el modelo no sale del hardware del usuario, lo que resulta adecuado para datos sensibles.
+- Inferencia distribuida: las 88 capas pueden repartirse entre varios peers de la malla, permitiendo ejecutar un modelo de 120B que no cabe en un solo host.
+- Descubrimiento de estado de la malla: endpoint `/api/status` para comprobar nodos y disponibilidad.
+- Verificabilidad: checksums SHA-256 por artefacto y manifiesto, utiles en pipelines con requisitos de integridad.
+- Capacidades especificas del modelo base (codigo, matematicas, tool calling, agentes, multilingue, modo thinking, vision): no disponibles en la informacion proporcionada; deben consultarse en la model card de `unsloth/NVIDIA-Nemotron-3-Super-120B-A12B-GGUF`.
 
 ## Casos de uso
 
-- Inferencia privada en laboratorio: un grupo de investigacion con varias estaciones de trabajo puede repartir las 88 capas del modelo y ejecutarlo sin enviar prompts ni datos sensibles a una API externa, usando `mesh-llm serve --model ... --split` en cada maquina.
-- Servicio interno compatible con OpenAI: al exponer `/v1/chat/completions`, el modelo se puede conectar como backend de aplicaciones ya escritas contra la API de OpenAI cambiando unicamente la URL base, lo que reduce el trabajo de integracion en herramientas internas de soporte o documentacion.
-- Aprovechamiento de hardware heterogeneo y ya amortizado: un cluster con varias GPU de 24 GB puede sumar memoria para alojar un modelo que no cabe en ninguna de ellas por separado, en lugar de adquirir una GPU de 80 GB.
-- Experimentacion con modelos de escala 120B: permite a equipos sin acceso a nodos de datacenter estudiar el comportamiento de un MoE grande y comparar sus respuestas con las de modelos mas pequenos que si caben en una sola GPU.
-- Procesamiento por lotes nocturno: tareas de resumen, clasificacion o generacion de texto de baja prioridad pueden lanzarse contra el endpoint local aprovechando las horas valle del cluster.
-- Reproducibilidad y auditoria: los SHA-256 del fichero fuente, del manifiesto y de cada artefacto permiten verificar que el paquete desplegado corresponde exactamente a la revision declarada del GGUF de Unsloth.
-- Pruebas de concepto de orquestacion distribuida: sirve como banco de pruebas para evaluar como se comporta la latencia de red al partir un transformer por capas, antes de adoptar el esquema en produccion.
+- Laboratorio de investigacion con varias estaciones de trabajo: desplegar `mesh-llm serve --model ... --split` en cada maquina y agregar la VRAM disponible para servir un modelo de 120B que no cabe en una sola GPU, manteniendo los pesos en la red local.
+- Prototipado de asistentes conversacionales privados: usar el endpoint compatible con OpenAI para integrar el modelo en aplicaciones existentes sin reescribir el cliente, con la ventaja de que ninguna peticion abandona la infraestructura propia.
+- Evaluacion de modelos grandes en entornos con presupuesto limitado: en lugar de alquilar instancias multi-GPU en la nube, repartir las capas entre equipos ya disponibles y medir calidad y latencia reales sobre el caso de uso concreto.
+- Sustitucion de API de terceros en desarrollo: apuntar el SDK de OpenAI al puerto 3131 del nodo Mesh LLM para pruebas de integracion, sin coste por token y con control total sobre la version del modelo.
+- Procesamiento de datos confidenciales: clasificacion, resumen o redaccion asistida sobre documentacion interna en un cluster local, aprovechando la naturaleza privada de la inferencia.
+- Reproducibilidad y auditoria: fijar la revision `036038fb...` y verificar los SHA-256 del GGUF y del manifiesto antes de desplegar, lo que permite demostrar que el binario servido corresponde exactamente al artefacto auditado.
+- Formacion y demostraciones: montar una malla temporal en un aula o taller para mostrar como se sirve un modelo de gran escala de forma distribuida con hardware heterogeneo.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card de este paquete no incluye MMLU, HumanEval, GSM8K ni ninguna otra metrica, y remite explicitamente al modelo fuente para las notas de benchmarks. Tampoco se proporcionan mediciones de latencia, throughput (tokens por segundo) ni escalado con el numero de nodos.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card del paquete remite explicitamente a la del modelo fuente para notas de rendimiento, y no incluye cifras de MMLU, HumanEval, GSM8K ni de latencia o throughput de la malla.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: aproximadamente 84,5 GB solo para los pesos en `UD-Q4_K_XL`, mas el espacio adicional de cache KV y overhead del runtime. Presupuestar del orden de 90-100 GB de VRAM agregada para una ventana de contexto moderada; la cifra exacta depende del contexto y no esta documentada.
-- No cabe en una unica GPU de consumo. Ni una RTX 4090 (24 GB) ni una RTX 5090 podrian alojarlo completas.
-- Configuraciones viables: 2 x H100 80 GB o 2 x A100 80 GB en un solo host; 4 x RTX 4090 (96 GB agregados) o 4 x RTX 3090 repartidas entre varias maquinas con `mesh-llm`.
-- Modo de despliegue recomendado por el autor: `mesh-llm serve --model "meshllm/NVIDIA-Nemotron-3-Super-120B-A12B-UD-Q4_K_XL-layers" --split`, ejecutado en cada maquina que aporte memoria o computo al mesh.
-- Alternativas de despliegue: el GGUF monolitico de `unsloth/NVIDIA-Nemotron-3-Super-120B-A12B-GGUF` puede usarse con llama.cpp u Ollama, aunque en ese caso se pierde el reparto por capas. Soporte en vLLM o TGI: no disponible en la informacion proporcionada.
-- Latencia y throughput: no disponibles. Como advertencia general, la inferencia por capas anade latencia de red entre nodos en cada token generado, por lo que el rendimiento dependera fuertemente de la interconexion (Ethernet frente a InfiniBand o enlaces directos).
+- VRAM estimada: el repositorio ocupa 84,5 GB; en cuantizacion Q4 se necesita un total agregado de memoria en la malla del orden de esa cifra mas overhead de contexto y buffers de computo. La cifra exacta por nodo depende del reparto de capas configurado.
+- No cabe en una GPU de consumo individual: 84,5 GB supera la VRAM de cualquier tarjeta consumer actual (24 GB en RTX 4090, 32 GB en RTX 5090).
+- GPU recomendadas por nodo: RTX 4090 o RTX 5090 para nodos de consumo; A100 40/80 GB o H100 para nodos de centro de datos. La malla puede mezclar clases de hardware.
+- Opciones de despliegue: `mesh-llm serve` con la opcion `--split` en cada maquina contribuyente, mas consulta de estado en `http://localhost:3131/api/status`. El paquete esta pensado para mesh-llm; no se documenta su uso con vLLM, llama.cpp u Ollama en la informacion proporcionada.
+- Latencia y throughput: no disponibles. Al ser inferencia distribuida por capas, la latencia dependera fuertemente de la red entre peers; se recomienda Ethernet conmutada de baja latencia o interconexion dedicada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Formato | Licencia | Notas |
 |---|---|---|---|---|---|
-| `meshllm/NVIDIA-Nemotron-3-Super-120B-A12B-UD-Q4_K_XL-layers` | 120B-A12B (nomenclatura del fuente) | No disponible | UD-Q4_K_XL, por capas | `other` | Publicado, 0 descargas, requiere runtime `mesh-llm` |
-| `unsloth/NVIDIA-Nemotron-3-Super-120B-A12B-GGUF` | 120B-A12B | No disponible | UD-Q4_K_XL y otras variantes | `other` | Publicado, GGUF monolitico, compatible con llama.cpp |
-| Otras alternativas de escala similar | No disponible | No disponible | No disponible | No disponible | No disponible |
+| meshllm/NVIDIA-Nemotron-3-Super-120B-A12B-UD-Q4_K_XL-layers | 120B totales / 12B activos | no disponible | GGUF por capas + manifiesto | other | Paquete para inferencia distribuida con Mesh LLM |
+| unsloth/NVIDIA-Nemotron-3-Super-120B-A12B-GGUF | 120B totales / 12B activos | no disponible | GGUF (3 ficheros) | other | Modelo fuente; requiere un unico host con memoria suficiente |
+| NVIDIA Nemotron 3 Super (pesos originales) | 120B totales / 12B activos | no disponible | no disponible | no disponible | Referencia upstream; datos no disponibles en esta busqueda |
 
-La comparativa se limita al modelo fuente, unico del que se dispone de informacion verificable. No se dispone de datos de rendimiento que permitan contrastar este paquete con otros modelos de parametros comparables.
+No se dispone de datos de benchmarks que permitan comparar el rendimiento con alternativas de la misma categoria; la comparativa se limita a formato, tamano y licencia.
 
 ## Limitaciones y advertencias
 
-- Licencia `other`: no es una licencia abierta estandar. Antes de cualquier uso comercial es obligatorio revisar los terminos del modelo fuente (`unsloth/NVIDIA-Nemotron-3-Super-120B-A12B-GGUF`), que son los que se heredan y que la model card no reproduce.
-- Dependencia de un runtime concreto: el paquete esta pensado para `mesh-llm`. Sin ese runtime no es utilizable directamente, a diferencia del GGUF monolitico del que deriva.
-- Ausencia total de datos de calidad: no hay benchmarks, evaluaciones ni comparativas publicadas para este paquete. Cualquier estimacion de rendimiento es extrapolacion.
-- Idiomas: no se declara ninguna lista de idiomas soportados, por lo que no se puede garantizar un comportamiento correcto en castellano ni en otros idiomas distintos del ingles sin validacion previa.
-- Riesgo de alucinacion: inherente a los modelos generativos de este tipo. Al no haber evaluacion publicada, no se puede acotar su magnitud; se recomienda validacion humana en cualquier flujo critico.
-- Sesgos: no documentados en la informacion disponible, pero el modelo no incluye ninguna declaracion de mitigacion ni auditoria de sesgos accesible desde este repositorio.
-- Metadatos incompletos en el propio paquete: `Activation width`, `Package size` (0 B) y `Skippy ABI` aparecen como `not recorded`, lo que limita la verificacion automatica de compatibilidad.
-- Adopcion nula: 0 descargas y 0 likes en el momento de la consulta, sin historial de uso que permita anticipar problemas en produccion.
-- Sobrecoste de red: en despliegues multi-maquina, la latencia entre nodos se suma a cada token. En topologias con red lenta, el rendimiento puede degradarse de forma severa.
-- El contador de parametros reportado por Hugging Face para el repositorio (109.640.064) no debe interpretarse como el tamano del modelo; corresponde a los artefactos del paquete, no a los pesos completos.
+- El repositorio es un artefacto de empaquetado, no un modelo autonomo: sin el runtime Mesh LLM no es utilizable de forma directa.
+- Los metadatos internos son incompletos: "activation width", "Skippy ABI" y "package size" aparecen como no registrados o con valor 0, lo que puede confundir a herramientas automaticas que los lean.
+- El campo safetensors del repo (109.640.064) no concuerda con la escala 120B-A12B declarada; no debe usarse para estimar requisitos de memoria.
+- La licencia es `other` y los terminos concretos no se detallan en este repo. Antes de cualquier uso comercial es obligatorio revisar la licencia del modelo fuente en `unsloth/NVIDIA-Nemotron-3-Super-120B-A12B-GGUF` y, en su caso, los terminos de NVIDIA.
+- No hay informacion sobre sesgos, riesgo de alucinacion ni calidad multilingue en la informacion proporcionada; deben evaluarse sobre el modelo base.
+- La cuantizacion a 4 bits introduce perdida de calidad respecto a los pesos originales; no se han publicado mediciones de esa degradacion para esta variante.
+- La inferencia distribuida por capas anade dependencia de la red: caidas de nodos o latencias altas degradan el servicio de forma directa, y no se documenta mecanismo de tolerancia a fallos.
+- Al haberse creado en septiembre de 2026 y con solo 510 descargas, la validacion comunitaria es escasa.
 
 ## Enlaces
 
 - Repositorio del paquete: https://huggingface.co/meshllm/NVIDIA-Nemotron-3-Super-120B-A12B-UD-Q4_K_XL-layers
-- Modelo fuente (GGUF de Unsloth): https://huggingface.co/unsloth/NVIDIA-Nemotron-3-Super-120B-A12B-GGUF
-- Sitio web de Mesh LLM: https://www.meshllm.cloud
-- Repositorio de Mesh LLM en GitHub: https://github.com/Mesh-LLM/mesh-llm
-- Especificacion del formato layer package: https://github.com/Mesh-LLM/mesh-llm/blob/main/docs/specs/layer-package-repos.md
+- Modelo fuente (GGUF): https://huggingface.co/unsloth/NVIDIA-Nemotron-3-Super-120B-A12B-GGUF
+- Web de Mesh LLM: https://www.meshllm.cloud
+- Repositorio GitHub de Mesh LLM: https://github.com/Mesh-LLM/mesh-llm
+- Especificacion del formato de paquetes por capas: https://github.com/Mesh-LLM/mesh-llm/blob/main/docs/specs/layer-package-repos.md
 - Catalogo de paquetes: https://huggingface.co/datasets/meshllm/catalog
-- Discord de Mesh LLM: https://discord.gg/rs6fmc63eN
-
-Nota: los resultados de busqueda web disponibles no contienen informacion relacionada con este modelo (corresponden a cobertura electoral de medios estadounidenses), por lo que no se han podido incorporar papers, blogs tecnicos ni demos adicionales.
+- Discord: https://discord.gg/rs6fmc63eN

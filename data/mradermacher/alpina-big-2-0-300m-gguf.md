@@ -2,87 +2,90 @@
 
 ## Resumen
 
-Alpina-Big-2.0-300M es un modelo de lenguaje de tipo base, desarrollado por Convergent-ch, con 299.410.432 parámetros totales. Esta ficha concreta corresponde a la versión cuantizada en formato GGUF publicada por mradermacher, un conocido mantenedor de cuantizaciones estáticas para la comunidad. Se trata de un modelo experimental, orientado al idioma inglés y distribuido bajo licencia Apache 2.0, lo que permite su uso comercial sin restricciones adicionales.
+Alpina-Big-2.0-300M-GGUF es la versión cuantizada en formato GGUF del modelo base Convergent-ch/Alpina-Big-2.0-300M, un transformer de tipo decoder-only con 299.410.432 parámetros (aproximadamente 300 millones). La cuantización la ha realizado mradermacher, un conocido publicador de versiones GGUF de la comunidad, y su objetivo es permitir la ejecución del modelo en hardware modesto mediante llama.cpp y derivados. El modelo base se etiqueta como "experimental" y está entrenado únicamente en inglés.
 
-El modelo se enmarca en la categoría de modelos pequeños (sub-500M de parámetros), un segmento que ha ganado relevancia para despliegues en entornos con recursos limitados, inferencia en CPU y experimentación rápida. La versión GGUF facilita su ejecución mediante llama.cpp y herramientas compatibles, sin necesidad de GPU dedicada.
+El modelo resuelve el problema de desplegar un modelo pequeño de conversación en CPU o GPUs de gama baja sin necesidad de infraestructura de servidor. Con cuantizaciones que van desde 0,2 GB (Q2_K) hasta 0,7 GB (f16), es viable en portátiles, Raspberry Pi de gama alta o entornos con poca memoria. La licencia Apache 2.0 facilita su uso comercial sin restricciones adicionales.
 
-La información pública disponible sobre el modelo base es escasa: no se detallan la longitud de contexto, la composición del dataset de entrenamiento ni los resultados de benchmarks. La model card del repositorio cuantizado se limita a describir el proceso de cuantización y los ficheros generados, sin aportar datos técnicos del modelo original.
+La relevancia de esta ficha radica en que se trata de un modelo de nicho, sin benchmarks publicados ni documentación técnica detallada del autor original, por lo que la evaluación debe hacerse con cautela. La información disponible se limita a metadatos de Hugging Face y a la model card del cuantizador, que no aporta detalles sobre arquitectura interna ni datos de entrenamiento.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible |
+| Arquitectura | Transformer decoder-only (detalles internos no disponibles) |
 | Parametros totales | 299.410.432 |
-| Parametros activos | no aplica (no es MoE) |
+| Parametros activos | no disponible (no es MoE según los metadatos) |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, f16 |
 | Idiomas soportados | en (inglés) |
-| Licencia | Apache 2.0 |
+| Licencia | apache-2.0 |
 | Formato de pesos | GGUF (safetensors en el modelo base) |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información pública sobre la arquitectura interna del modelo base Convergent-ch/Alpina-Big-2.0-300M. Por el nombre y el tamaño (300M de parámetros), se trata presumiblemente de un transformer decoder-only, pero no hay confirmación en la información proporcionada. Tampoco se detallan el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron técnicas de alineación como RLHF o DPO.
+No se dispone de información detallada sobre la arquitectura interna del modelo base Convergent-ch/Alpina-Big-2.0-300M. Los metadatos indican que es un transformer de tipo decoder-only con 299.410.432 parámetros, etiquetado como "experimental" y orientado a uso conversacional. No se especifican el número de capas, la dimensión del modelo, el número de cabezas de atención ni la longitud de contexto soportada.
 
-La contribución de esta ficha es exclusivamente la cuantización estática realizada por mradermacher, que genera 12 variantes GGUF con tamaños entre 0,2 GB (Q2_K) y 0,7 GB (f16). El autor indica que no se han generado cuantizaciones ponderadas con imatrix, solo cuantizaciones estáticas. No se documentan innovaciones técnicas adicionales (atención lineal, decodificación especulativa, etc.).
+Tampoco hay datos públicos sobre el corpus de entrenamiento, el número de tokens procesados, la composición del dataset ni si se aplicaron técnicas de alineación como RLHF, DPO o SFT. El modelo base pertenece a la organización Convergent-ch y su model card original no está reflejada en la información proporcionada. La cuantización realizada por mradermacher es estática (quantize_version 2) y emplea tensores cuantizados por salida, sin mezcla de precisión por capa más allá de los esquemas estándar de llama.cpp.
 
 ## Capacidades
 
-- Generación de texto en inglés, al ser un modelo base sin ajuste conversacional documentado.
-- No se ha confirmado soporte de tool calling ni function calling.
-- No se ha confirmado soporte de agentes ni razonamiento multi-paso.
-- Capacidad multilingüe limitada al inglés según los metadatos.
-- No se documentan capacidades de visión, audio ni modo thinking.
-- El tag "conversational" aparece en los metadatos del repositorio, aunque no se detalla si el modelo base está ajustado para diálogo.
+- Generación de texto conversacional en inglés, según la etiqueta "conversational" de los metadatos.
+- Razonamiento básico y respuesta a instrucciones, limitado por el tamaño de 300M parámetros.
+- No hay evidencia de soporte de tool calling ni function calling en la información disponible.
+- No hay evidencia de capacidades de agente ni razonamiento multi-paso.
+- Multilingüismo limitado al inglés; no se declaran otros idiomas.
+- No se documentan capacidades especiales como thinking mode, visión o audio.
 
 ## Casos de uso
 
-- Experimentación con modelos pequeños en local: gracias a sus 300M de parámetros y a las cuantizaciones de 0,2-0,4 GB, se puede ejecutar en portátiles y equipos sin GPU dedicada mediante llama.cpp, ideal para prototipado rápido.
-- Inferencia en CPU para entornos embebidos: la variante Q4_K_M (0,3 GB) permite desplegar generación de texto en dispositivos con recursos muy limitados, como Raspberry Pi o contenedores ligeros.
-- Fines educativos y de investigación: un modelo de este tamaño es útil para estudiar el comportamiento de transformers pequeños, experimentar con técnicas de cuantización y comparar calidad entre niveles de compresión.
-- Generación de texto auxiliar en pipelines: puede emplearse para tareas simples de completado o reformulación en inglés donde no se requiera alta precisión, integrado en scripts mediante llama-cpp-python.
-- Pruebas de integración de GGUF: sirve como modelo de referencia para validar el funcionamiento de herramientas como Ollama, LM Studio o llama.cpp antes de escalar a modelos mayores.
-- Evaluación comparativa de cuantizaciones: las 12 variantes publicadas permiten medir el impacto de la cuantización en la perplejidad y la calidad de salida sobre un mismo modelo base.
+- Prototipado rápido de chatbots en local: al ocupar entre 0,2 y 0,4 GB en cuantizaciones Q4/Q5, se puede cargar en un portátil con 8 GB de RAM y probar flujos conversacionales sin depender de APIs externas.
+- Aplicaciones embebidas y edge computing: el tamaño reducido permite desplegarlo en dispositivos con recursos limitados (por ejemplo, una Raspberry Pi 5 con 8 GB) usando llama.cpp para tareas de generación de texto breve.
+- Filtrado y clasificación de texto en inglés: puede emplearse como modelo auxiliar para tareas de etiquetado simple o generación de resúmenes cortos donde no se requiera alta precisión.
+- Educación y experimentación: útil para estudiar el comportamiento de modelos pequeños cuantizados y comparar la degradación de calidad entre Q2_K y Q8_0 en un caso real.
+- Generación de texto en pipelines de bajo coste: integrable en scripts de Python mediante llama-cpp-python para tareas de relleno, expansión de plantillas o generación de variaciones de texto.
+- Pruebas de integración de GGUF: sirve como modelo de referencia ligero para validar despliegues con Ollama, LM Studio o llama.cpp antes de migrar a modelos mayores.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible.
+No se han publicado resultados de benchmarks en la información disponible. No hay datos de MMLU, HumanEval, GSM8K ni de ninguna otra evaluación para este modelo o su base.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: entre 0,3 GB (Q2_K) y 1 GB (f16) incluyendo overhead del runtime; las variantes Q4_K_M y Q5_K_M requieren en torno a 0,5-0,7 GB.
-- GPU recomendadas: cualquier GPU consumer con 2 GB o más de VRAM (GTX 1050, RTX 3050, RTX 4090); también funciona en CPU sin GPU.
-- Cabe en cualquier GPU consumer actual e incluso en iGPU y dispositivos de placa única.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, llama-cpp-python, y cualquier runtime compatible con GGUF. No se documenta soporte para vLLM o TGI en la información disponible.
-- Latencia y throughput: no disponibles; por el tamaño del modelo, se espera inferencia en tiempo real en CPU moderna, pero no hay cifras publicadas.
+- VRAM estimada para inferencia: entre 0,3 GB (Q4_K_M) y 0,7 GB (f16) solo para los pesos; hay que añadir el espacio para el contexto KV, que depende de la longitud de contexto no documentada.
+- GPU recomendadas: cualquier GPU con al menos 1-2 GB de VRAM libre, incluidas GTX 1050 Ti, RTX 3050, RTX 4060 o superiores. También funciona en CPU.
+- Cabe en cualquier GPU de consumo actual e incluso en iGPU con memoria compartida.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, llama-cpp-python, text-generation-webui y cualquier runtime compatible con GGUF. Para el modelo base en safetensors, transformers con PyTorch.
+- Latencia y throughput estimados: no disponibles. En CPU moderna se espera una generación de decenas de tokens por segundo dada la baja cantidad de parámetros, pero no hay mediciones publicadas.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| Alpina-Big-2.0-300M (esta ficha) | 299M | no disponible | Apache 2.0 | GGUF, safetensors | Hugging Face |
-| Modelos comparables de ~300M | no disponible | no disponible | no disponible | no disponible | no disponible |
+| Alpina-Big-2.0-300M-GGUF | 299M | no disponible | Apache 2.0 | GGUF | Hugging Face |
+| Qwen2.5-0.5B-Instruct | 494M | 32.768 tokens | Apache 2.0 | safetensors, GGUF | Hugging Face, Ollama |
+| SmolLM2-360M-Instruct | 362M | 8.192 tokens | Apache 2.0 | safetensors, GGUF | Hugging Face, Ollama |
+| TinyLlama-1.1B-Chat | 1.1B | 2.048 tokens | Apache 2.0 | safetensors, GGUF | Hugging Face, Ollama |
 
-No se dispone de información sobre modelos comparables de la misma categoría en la documentación proporcionada.
+La comparación se basa en el tamaño y la categoría (modelos pequeños conversacionales en inglés). No hay datos de rendimiento para Alpina-Big-2.0-300M que permitan una comparación cuantitativa con Qwen2.5-0.5B o SmolLM2-360M, ambos con documentación técnica y benchmarks publicados por sus autores.
 
 ## Limitaciones y advertencias
 
-- Modelo marcado como "experimental" por el propio autor: no se recomienda para producción sin evaluación previa.
-- Información técnica muy limitada: se desconoce la longitud de contexto, el dataset de entrenamiento y el proceso de alineación, lo que dificulta evaluar su fiabilidad.
-- Riesgo elevado de alucinación y de respuestas incoherentes por su reducido tamaño (300M de parámetros).
-- Soporte exclusivo del inglés; no se garantiza un rendimiento aceptable en castellano u otros idiomas.
-- Al ser un modelo base (no ajustado para instrucciones, presumiblemente), puede no seguir instrucciones de forma fiable.
-- Las cuantizaciones de baja precisión (Q2_K, Q3_K_S) degradan notablemente la calidad; se recomienda Q4_K_M o superior para uso real.
-- La licencia Apache 2.0 permite uso comercial, pero la falta de documentación sobre el origen de los datos de entrenamiento impide descartar riesgos relacionados con la procedencia del corpus.
-- No se han publicado evaluaciones de sesgos ni de seguridad.
+- Modelo etiquetado como "experimental" por el autor original; no se garantiza estabilidad ni calidad de las respuestas.
+- Ausencia total de benchmarks publicados: no hay evidencia objetiva de su rendimiento frente a alternativas del mismo tamaño.
+- Sesgos conocidos: no documentados, pero al ser un modelo entrenado en inglés y sin información sobre el corpus, es probable que herede sesgos de los datos de entrenamiento.
+- Riesgo de alucinación elevado por el reducido tamaño (300M parámetros) y la falta de alineación documentada.
+- Limitación idiomática: solo inglés; no se recomienda su uso en castellano ni en otros idiomas.
+- Longitud de contexto desconocida: no se puede planificar su uso en tareas que requieran ventanas largas.
+- Licencia Apache 2.0 permite uso comercial, pero al ser un modelo experimental conviene validar su comportamiento en el dominio de aplicación antes de producción.
+- La cuantización Q2_K y Q3_K_M degradan notablemente la calidad; para uso real se recomienda Q4_K_M o superior.
+- No hay soporte documentado de tool calling, agentes ni funciones avanzadas; no debe asumirse su disponibilidad.
 
 ## Enlaces
 
-- Repositorio Hugging Face (cuantización GGUF): https://huggingface.co/mradermacher/Alpina-Big-2.0-300M-GGUF
+- Repositorio GGUF: https://huggingface.co/mradermacher/Alpina-Big-2.0-300M-GGUF
 - Modelo base: https://huggingface.co/Convergent-ch/Alpina-Big-2.0-300M
-- Página de descargas del autor: https://hf.tst.eu/model#Alpina-Big-2.0-300M-GGUF
-- README de referencia para uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
-- Peticiones de cuantización de mradermacher: https://huggingface.co/mradermacher/model_requests
-- Gráfico comparativo de cuantizaciones (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png
-- Notas sobre cuantizaciones (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Cuantizaciones weighted/imatrix: https://huggingface.co/mradermacher/Alpina-Big-2.0-300M-i1-GGUF
+- Página de descargas del cuantizador: https://hf.tst.eu/model#Alpina-Big-2.0-300M-GGUF
+- Guía de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Comparativa de cuantizaciones (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Peticiones de modelos de mradermacher: https://huggingface.co/mradermacher/model_requests

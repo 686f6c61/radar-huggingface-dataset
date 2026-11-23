@@ -1,0 +1,65 @@
+{
+  "schema": 2,
+  "id": "Bhoidy/nyx-image-26m",
+  "slug": "bhoidy-nyx-image-26m",
+  "author": "Bhoidy",
+  "url": "https://huggingface.co/Bhoidy/nyx-image-26m",
+  "created_at": "2026-11-23T02:36:47.000Z",
+  "updated_at": "2026-11-23T02:40:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "text-to-image",
+    "pixel-art",
+    "discrete-diffusion",
+    "diffusion",
+    "mdlm",
+    "transformer",
+    "safetensors",
+    "edge-ai",
+    "dataset:Angais/pixel-art-atlas-1.4m",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 266768165,
+  "storage_human": "267 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "Pixel Art Generation",
+      "dataset": "Angais/pixel-art-atlas-1.4m",
+      "metric": "CLIP Alignment Score",
+      "value": 0.2611
+    },
+    {
+      "task": "Pixel Art Generation",
+      "dataset": "Angais/pixel-art-atlas-1.4m",
+      "metric": "Parameters",
+      "value": 26335232
+    }
+  ],
+  "sources": []
+}

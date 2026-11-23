@@ -1,0 +1,53 @@
+{
+  "schema": 2,
+  "id": "GaryLeckey/aureon-7b",
+  "slug": "garyleckey-aureon-7b",
+  "author": "GaryLeckey",
+  "url": "https://huggingface.co/GaryLeckey/aureon-7b",
+  "created_at": "2026-11-22T22:07:59.000Z",
+  "updated_at": "2026-11-22T22:09:26.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "aureon",
+    "causal-lm",
+    "from-scratch",
+    "bf16",
+    "en",
+    "license:mit",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6995383808,
+  "parameters_human": "7.00B",
+  "storage_bytes": 13990806664,
+  "storage_human": "14.0 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -52,31 +52,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "interfaze-ai/lev · Hugging Face",
-      "url": "https://huggingface.co/interfaze-ai/lev",
-      "snippet": "Text classification in Interfaze runs on a similar system to lev: the model reads the answer from the set of labels you define."
-    },
-    {
-      "title": "GitHub - InterfazeAI/lev: An open System One decision model · GitHub",
-      "url": "https://github.com/InterfazeAI/lev",
-      "snippet": "Text classification in Interfaze runs on a similar system to lev: the model reads the answer from the set of labels you define."
-    },
-    {
-      "title": "nassimjp/lev · Hugging Face",
-      "url": "https://huggingface.co/nassimjp/lev",
-      "snippet": "Text classification in Interfaze runs on a similar system to lev: the model reads the answer from the set of labels you define."
-    },
-    {
-      "title": "A model built for deterministic tasks - Interfaze",
-      "url": "https://interfaze.ai/",
-      "snippet": "A hybrid Mixture-of-Architecture (MoA) model that combines specialized DNNs/CNNs with a transformer layer to achieve state of the art performance at the highest accuracy and precision while maintaining the flexibility of a traditional LLM. ... You can make 50 requests per second. If you need more, please contact us at support@interfaze.ai"
-    },
-    {
-      "title": "interfaze-ai (Interfaze)",
-      "url": "https://huggingface.co/interfaze-ai",
-      "snippet": "Interfaze is an AI model built on a new architecture that merges specialized DNN/CNN models with LLMs for developer tasks that require deterministic output and high consistency like OCR, scraping, classification, web search and more."
-    }
-  ]
+  "sources": []
 }

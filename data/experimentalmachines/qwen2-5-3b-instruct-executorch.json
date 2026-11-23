@@ -43,31 +43,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Mahjong.fr - Mahjong Gratuit",
-      "url": "https://www.mahjong.fr/",
-      "snippet": "Bienvenue sur Mahjong.fr ! Le site internet pour les vrais amateurs de Mahjong. Nous avons un très grand nombre de games sur …"
-    },
-    {
-      "title": "Mahjong Véritable",
-      "url": "https://www.mahjong.fr/jouer/mahjongv%C3%A9ritable.php",
-      "snippet": "Joué : Vous êtes le joueur numéro Description : Les tuiles de ce jeu magnifique viennent des années 1800 et avec l'aide d'un …"
-    },
-    {
-      "title": "Mahjong Classique",
-      "url": "https://www.mahjong.fr/jouer/mahjongclassique.php",
-      "snippet": "Joué : Vous êtes le joueur numéro 29089042 Description : Dans Mahjong Classique, vous avez la configuration standard de 144 …"
-    },
-    {
-      "title": "Jouer au Mahjong",
-      "url": "https://www.mahjong.fr/joueraumahjong.php",
-      "snippet": "1 de nos jeux de Mahjong aux fonctions limitées, ainsi vous ne.."
-    },
-    {
-      "title": "Mahjong Cartes",
-      "url": "https://www.mahjong.fr/jouer/mahjongcartes.php",
-      "snippet": "Joué : Vous êtes le joueur numéro 26327545 Description : Cette version prend un tour un peu différent, vous retrouvez bien les tuiles …"
-    }
-  ]
+  "sources": []
 }

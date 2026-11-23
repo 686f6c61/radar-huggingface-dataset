@@ -2,107 +2,89 @@
 
 ## Resumen
 
-Este repositorio contiene cuantizaciones GGUF del modelo `MahdiAlikhah/qwen2-vl-2b-abliterated`, un derivado "abliterated" (sin censura, con las direcciones de rechazo ablacionadas) del modelo de visión-lenguaje Qwen2-VL de 2B parámetros. El publicador es mradermacher, un cuantizador conocido en Hugging Face que genera versiones GGUF con imatrix (quants de tipo i1) para su uso en llama.cpp y herramientas compatibles. La ficha corresponde, por tanto, a un artefacto de cuantización y no a un entrenamiento original: no se aportan datos de entrenamiento, dataset ni evaluación propios.
+qwen2-vl-2b-abliterated-i1-GGUF es una coleccion de cuantizaciones GGUF generadas por mradermacher a partir del modelo MahdiAlikhah/qwen2-vl-2b-abliterated, una version "abliterated" (es decir, con las direcciones de rechazo suprimidas mediante la tecnica de abliteration) del modelo vision-lenguaje Qwen2-VL de 2B parametros de Alibaba. El resultado es un modelo multimodal que acepta texto e imagenes y que ha sido modificado para reducir sus negativas a responder determinadas peticiones, orientado a usos de investigacion sobre alineamiento y a escenarios donde se necesita un modelo sin filtros de rechazo.
 
-El valor practico del repositorio es doble. Por un lado, permite ejecutar un modelo multimodal (texto más imagen) de tamano reducido en hardware de consumo mediante cuantizaciones que van desde IQ1_S hasta Q6_K. Por otro, ofrece una variante sin los mecanismos de rechazo del modelo original, orientada a casos de uso donde los filtros de seguridad del modelo base resultan un obstaculo (investigacion sobre alineacion, red teaming, generacion creativa sin restricciones). Esto ultimo conlleva implicaciones eticas y legales que se detallan en la seccion de limitaciones.
+El repositorio contiene exclusivamente pesos en formato GGUF (no safetensors) con cuantizaciones de tipo imatrix/i1, desde IQ1_S (0,5 GB) hasta Q6_K (1,4 GB), lo que permite ejecutar el modelo en hardware muy modesto, incluidas GPU de consumo con 4-6 GB de VRAM o incluso en CPU. El modelo base real cuenta con 1.543.714.304 parametros segun los safetensors del modelo original.
 
-La relevancia actual viene de la combinacion de tres factores: un modelo base multimodal pequeno (etiquetado como 2B), una licencia Apache 2.0 que permite uso comercial, y cuantizaciones de muy bajo bit que lo hacen desplegable en GPUs modestas o incluso en CPU. El contrapeso es que no hay ningun resultado de benchmark publicado para esta variante concreta, y los metadatos de parametros disponibles son inconsistentes con la designacion "2B".
+Su relevancia actual radica en que combina tres caracteristicas poco habituales juntas: tamano muy reducido (2B), capacidad vision-lenguaje y ausencia de censura, todo bajo licencia Apache 2.0, lo que facilita su despliegue local y su uso como componente en pipelines de investigacion sobre seguridad y alineamiento de modelos multimodales.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Vision-lenguaje basada en Qwen2-VL (transformer con encoder de vision y proyector multimodal); detalles completos no disponibles |
-| Parametros totales | 509.124 segun metadatos de safetensors del modelo base (cifra no fiable y en aparente contradiccion con la designacion 2B del nombre); no disponible una cifra verificada |
-| Parametros activos | No aplica (no es un modelo MoE segun la informacion disponible) |
-| Longitud de contexto | No disponible |
-| Tipos de cuantizacion | Q2_K, Q2_K_S, Q3_K_S, Q3_K_M, Q3_K_L, Q4_0, Q4_1, Q4_K_S, Q4_K_M, small-IQ4_NL, Q5_K_S, Q5_K_M, Q6_K, IQ1_S, IQ1_M, IQ2_XXS, IQ2_XS, IQ2_S, IQ2_M, IQ3_XXS, IQ3_XS, IQ3_S, IQ3_M, IQ4_XS, ademas de un fichero imatrix |
-| Idiomas soportados | en (ingles) declarado en la model card |
-| Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (cuantizaciones i1/weighted-imatrix y fichero imatrix; los quants estaticos y los ficheros mmproj estan en el repositorio estatico enlazado) |
-
-Otros metadatos: repositorio de 0,0 GB segun Hugging Face, 0 descargas y 0 likes en el momento de la consulta, fecha de creacion 2 de octubre de 2026 y ultima actualizacion 2 de octubre de 2026 (fechas tal como figuran en la API). Libreria declarada: transformers. Pipeline: no disponible.
+| Arquitectura | Transformer vision-lenguaje (base Qwen2-VL), modificado mediante abliteration |
+| Parametros totales | 1.543.714.304 (1,54B) |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible en la informacion proporcionada (el Qwen2-VL original soporta contexto largo, pero no se confirma en esta ficha) |
+| Tipos de cuantizacion | i1 (imatrix): IQ1_S, IQ1_M, IQ2_XXS, IQ2_XS, IQ2_S, IQ2_M, Q2_K_S, IQ3_XXS, Q2_K, IQ3_XS, Q3_K_S, IQ3_S, IQ3_M, Q3_K_M, Q3_K_L, IQ4_XS, IQ4_NL, Q4_0, Q4_K_S, Q4_K_M, Q4_1, Q5_K_S, Q5_K_M, Q6_K; tambien disponibles quants estaticos en repo separado |
+| Idiomas soportados | en (segun la model card) |
+| Licencia | apache-2.0 |
+| Formato de pesos | GGUF (multiples ficheros por cuantizacion; no hay safetensors en este repo) |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion sobre el proceso de entrenamiento del modelo original ni del derivado abliterated en la documentacion proporcionada. El autor de la cuantizacion no publica detalles de dataset, numero de tokens, composicion de datos ni si hubo fases de RLHF, DPO u otro ajuste por preferencias. Lo unico documentado es el linaje: `mradermacher/qwen2-vl-2b-abliterated-i1-GGUF` deriva de `MahdiAlikhah/qwen2-vl-2b-abliterated`, que a su vez procede de la familia Qwen2-VL.
+El modelo subyacente es Qwen2-VL de 2B parametros, un transformer multimodal que procesa imagenes y texto de forma conjunta mediante un encoder visual y un decoder de lenguaje. Sobre esa base, MahdiAlikhah aplico abliteration, una tecnica que identifica y elimina (o proyecta fuera) las direcciones del espacio de activaciones asociadas al rechazo de peticiones, de modo que el modelo pierde parte de su comportamiento de negativa sin reentrenar desde cero. Los tags "abliterated", "uncensored" y "heretic" confirman este proceso.
 
-La etiqueta "abliterated", junto con los tags `abliterated`, `uncensored` y `heretic`, indica que se aplico una tecnica de ablacion de direcciones de rechazo sobre los pesos del modelo base. Este procedimiento elimina de forma selectiva las direcciones del espacio de activaciones asociadas al comportamiento de negativa, en lugar de reentrenar con datos filtrados. El resultado es un modelo que conserva las capacidades del original pero responde a peticiones que el modelo base rechazaria, con la perdida de calidad tipica de este tipo de intervencion (deterioro variable segun la capa y el parametro ablacionado). No se especifica en la informacion disponible que capas fueron intervenidas ni con que metodologia.
-
-La contribucion concreta de este repositorio es la cuantizacion: mradermacher genera quants con matrices de importancia (imatrix, metodologia de ikawrakow) para reducir la perdi6n de perplejidad respecto a las cuantizaciones estaticas equivalentes. Se ofrecen tanto quants i1 (derivados de la imatrix) como la propia matriz de importancia de 0,1 GB para que terceros generen sus propios quants. Los ficheros del proyector multimodal (mmproj), necesarios para el procesamiento de imagenes, se alojan en el repositorio estatico y no en este.
+mradermacher ha generado las cuantizaciones con el metodo i1 (imatrix), que calcula una matriz de importancia a partir de datos de calibracion para minimizar la perdida de calidad en bits bajos. No se dispone en la informacion proporcionada de detalles sobre el dataset de calibracion, el numero de tokens de entrenamiento del modelo base ni si hubo fases de RLHF o DPO especificas en la version abliterated.
 
 ## Capacidades
 
-- Generacion de texto y comprension de imagenes: al derivar de Qwen2-VL, la familia base es multimodal (texto mas vision), por lo que cabe esperar descripcion de imagenes, respuesta a preguntas visuales y conversacion combinando ambos modos. No hay verificacion publicada para esta variante concreta.
-- Lectura de texto en imagenes (OCR) y comprension de documentos: capacidad documentada en la familia Qwen2-VL; heredable en teoria, no verificada aqui.
-- Generacion de codigo y resolucion de problemas matematicos: capacidades propias de un LLM de 2B, limitadas por el tamano.
-- Conversacion multi-turno: soportada por la arquitectura transformer subyacente; la longitud de contexto util no esta documentada en esta ficha.
-- Respuestas sin filtros de rechazo: es la caracteristica diferencial del modelo abliterated. Responde a peticiones que el modelo base rechazaria por politicas de seguridad.
-- Tool calling / function calling: no disponible en la informacion proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
-- Capacidades multilingues: la model card declara unicamente `en`. Aunque los modelos Qwen suelen tener cobertura multilingue amplia, no hay confirmacion para este derivado.
-- Modo de razonamiento explicito (thinking), audio u otras modalidades: no disponible.
+- Generacion de texto conversacional multi-turno.
+- Comprension de imagenes (vision-lenguaje): descripcion, respuesta a preguntas sobre imagenes y extraccion de informacion visual.
+- Razonamiento basico y respuesta a preguntas generales, limitado por el tamano de 2B parametros.
+- Comportamiento "uncensored": menor probabilidad de rechazar peticiones que el modelo original, por diseno.
+- Soporte de tool calling / function calling: no confirmado en la informacion proporcionada para esta variante.
+- Capacidades de agente y razonamiento multi-paso: no confirmadas en la informacion proporcionada.
+- Capacidades multilingues: la model card declara unicamente ingles; el modelo base Qwen2-VL tiene cobertura multilingue, pero no se garantiza en esta variante.
+- Modo "thinking" o razonamiento extendido: no disponible.
 
 ## Casos de uso
 
-- Investigacion sobre alineacion y seguridad: el modelo permite estudiar que comportamientos cambian cuando se ablacionan las direcciones de rechazo, comparando respuestas con el modelo base original para cuantificar el deterioro de capacidades y la variacion en tasas de negativa.
-- Red teaming y evaluacion de filtros: util como generador adversario controlado y local para probar la robustez de sistemas de moderacion de contenido, sin dependencia de APIs externas ni de registros de terceros.
-- Procesamiento de imagenes en local para prototipado: con los ficheros mmproj del repositorio estatico, se puede montar un pipeline de descripcion de imagenes o extraccion de texto de capturas y documentos en una estacion de trabajo sin GPU dedicada.
-- Asistente de escritorio offline: al caber en cuantizaciones muy bajas, es viable integrarlo en aplicaciones de escritorio con llama.cpp o servidores GGUF locales para tareas de resumen y Q&A sobre capturas de pantalla.
-- Generacion creativa sin restricciones editoriales: escritura de ficcion con tematicas adultas o violentas para proyectos de narrativa donde los filtros del modelo base generan friccion, siempre que el contexto legal y editorial lo permita.
-- Experimentacion educativa con cuantizaciones: la disponibilidad del fichero imatrix y de un abanico de quants de IQ1_S a Q6_K lo convierte en un banco de pruebas para medir el impacto de la cuantizacion en perplejidad y calidad de salida en un modelo multimodal pequeno.
-- Desarrollo de demos multimodales de bajo coste: para charlas, talleres o pruebas de concepto donde se necesita un VLM pequeno, redistribuible bajo Apache 2.0 y ejecutable en portatiles.
+- Investigacion sobre alineamiento y seguridad: comparar el comportamiento del modelo abliterated frente al Qwen2-VL original para estudiar que direcciones de activacion codifican el rechazo y como afecta la supresion a la calidad general.
+- Despliegue local en hardware modesto: con cuantizaciones de 1,0-1,4 GB (Q4_K_M, Q5_K_M, Q6_K) el modelo cabe en GPU de consumo de 4-6 GB o incluso en CPU, lo que permite prototipar aplicaciones vision-lenguaje sin infraestructura dedicada.
+- Procesamiento de imagenes en el borde (edge): analisis de capturas, documentos escaneados o fotos en dispositivos con recursos limitados, usando llama.cpp con el fichero GGUF adecuado.
+- Generacion de descripciones y etiquetado de imagenes a escala: para enriquecer datasets o catalogos con metadatos textuales, aceptando la menor precision de un modelo de 2B.
+- Experimentacion con tecnicas de cuantizacion: el repositorio ofrece mas de 20 variantes i1, lo que permite medir el impacto de IQ1-IQ4 frente a Q5/Q6 en tareas multimodales concretas.
+- Base para fine-tuning o destilacion: al ser Apache 2.0 y de tamano reducido, sirve como punto de partida para adaptaciones especificas de dominio con requisitos de VRAM bajos.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card del repositorio no incluye MMLU, HumanEval, GSM8K, MMMU ni ninguna otra metrica, y la busqueda web realizada no ha devuelto resultados tecnicos relevantes sobre este modelo (los resultados obtenidos eran contenido no relacionado y sin valor tecnico). No se deben asumir cifras del modelo Qwen2-VL-2B original extrapoladas a esta variante abliterated y cuantizada.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-Las cifras de esta seccion son estimaciones derivadas del tamano declarado (2B) y del coste tipico de las cuantizaciones GGUF, no datos medidos publicados por el autor. Deben tratarse como orientativas.
-
-- VRAM estimada del LLM segun cuantizacion (solo pesos de texto): aproximadamente 0,4-0,7 GB en IQ1_S/IQ2_XXS, 0,8-1,0 GB en Q2_K/IQ2_M, 1,0-1,3 GB en Q3_K_M/IQ3_M, 1,2-1,6 GB en Q4_K_S/Q4_K_M/IQ4_XS, 1,4-1,9 GB en Q5_K_M/IQ5, y 1,9-2,5 GB en Q6_K.
-- Proyector multimodal (mmproj): anade un coste adicional que depende de la cuantizacion del encoder de vision, tipicamente en el rango de 0,5 a 1,5 GB. Es imprescindible para tareas de imagen y esta en el repositorio estatico.
-- VRAM total practica: en torno a 2-3 GB en Q4_K_M con mmproj cuantizado, lo que situa el modelo en el rango de GPUs de consumo.
-- GPU recomendadas: cualquier GPU con 4 GB o mas de VRAM (GTX 1650, RTX 3050, RTX 3060, RTX 4060, RTX 4090) es suficiente en cuantizaciones Q4 y superiores; en Q6_K o con mmproj en f16 conviene disponer de 6-8 GB. GPUs de datacenter (A100, H100) no aportan ventaja significativa para un modelo de este tamano y solo tienen sentido para servir muchas peticiones concurrentes.
-- Ejecucion en CPU: viable en todas las cuantizaciones, especialmente IQ1/IQ2/Q3, con velocidades dependientes del numero de nucleos. Tambien es posible la ejecucion parcial con offload de capas a GPU.
-- Opciones de despliegue: llama.cpp y sus derivados (llama-server, Ollama, LM Studio, KoboldCpp) son la via natural para GGUF. vLLM y TGI no consumen GGUF de forma nativa y requeririan los pesos originales en safetensors. El campo `endpoints_compatible` de los tags sugiere compatibilidad con endpoints tipo Hugging Face.
-- Latencia y throughput: no disponibles. No hay mediciones publicadas por el autor.
+- VRAM estimada: aproximadamente 0,5-0,7 GB para IQ1/IQ2, 0,9-1,1 GB para Q3/Q4, 1,2-1,4 GB para Q5/Q6 (tamanos de fichero; la VRAM real anade overhead del runtime y del encoder visual).
+- GPU recomendadas: cualquier GPU con 4 GB o mas de VRAM (RTX 3050, RTX 4060, GTX 1660, etc.); tambien funciona en A100/H100 pero esta sobredimensionado para ellas.
+- Cabe en GPU de consumo: si, en practicamente todas las GPU modernas con 4-6 GB; las cuantizaciones Q4_K_M y Q5_K_M son las recomendadas para equilibrio tamano/calidad.
+- Opciones de despliegue: llama.cpp y sus derivados (Ollama, LM Studio, llama-cpp-python); el tag "endpoints_compatible" sugiere compatibilidad con endpoints tipo OpenAI. vLLM y TGI no estan confirmados para este formato GGUF multimodal.
+- Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-La informacion disponible solo permite comparar a nivel de metadatos; no hay datos de rendimiento para ninguna de las variantes.
-
-| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+| Modelo | Parametros | Contexto | Vision | Licencia | Notas |
 |---|---|---|---|---|---|
-| mradermacher/qwen2-vl-2b-abliterated-i1-GGUF (este) | No disponible (etiquetado 2B) | No disponible | Apache 2.0 | GGUF (i1/imatrix) | Cuantizacion sin censura, 0 descargas al consultar |
-| MahdiAlikhah/qwen2-vl-2b-abliterated | No disponible | No disponible | Apache 2.0 (segun herencia declarada) | safetensors / transformers | Modelo base del que deriva esta cuantizacion |
-| mradermacher/qwen2-vl-2b-abliterated-GGUF | No disponible | No disponible | Apache 2.0 | GGUF estatico | Quants estaticos y ficheros mmproj del mismo modelo |
-| Qwen2-VL-2B (original, no alineado con censura ablacionada) | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Apache 2.0 | safetensors | Referencia de la familia; no comparado numericamente por ausencia de benchmarks |
+| qwen2-vl-2b-abliterated-i1-GGUF (este) | 1,54B | no disponible | Si | Apache 2.0 | GGUF cuantizado, sin censura, solo ingles declarado |
+| Qwen2-VL-2B-Instruct (original) | ~2B | no disponible | Si | Apache 2.0 | Modelo base alineado; rechaza peticiones sensibles |
+| mradermacher/qwen2-vl-2b-abliterated-GGUF (quants estaticos) | 1,54B | no disponible | Si | Apache 2.0 | Misma base, cuantizacion estatica en lugar de imatrix |
+| MahdiAlikhah/qwen2-vl-2b-abliterated (safetensors) | 1,54B | no disponible | Si | Apache 2.0 | Pesos originales sin cuantizar, para transformers |
 
 ## Limitaciones y advertencias
 
-- Ausencia total de evaluacion: no hay benchmarks, ni comparativas con el modelo base, ni mediciones de degradacion tras la ablacion. Cualquier afirmacion sobre su calidad relativa es especulativa.
-- La ablacion de direcciones de rechazo no elimina sesgos: puede reducir negativas explicitas pero no corrige sesgos de representacion, estereotipos ni toxicidad latente. De hecho, puede aumentar la probabilidad de generar contenido danino o ilegal.
-- Riesgo de alucinacion elevado: en un modelo de aproximadamente 2B parametros, la tasa de invencion de hechos, citas y referencias es alta, especialmente en tareas de conocimiento factual y en OCR sobre imagenes de baja calidad.
-- Limitacion idiomatica: la model card declara unicamente ingles. El rendimiento en castellano no esta documentado y probablemente sea inferior; no debe asumirse paridad con el ingles.
-- Longitud de contexto desconocida: no se documenta la ventana de contexto efectiva, lo que dificulta dimensionar casos de uso de contexto largo. Ademas, la cuantizacion agresiva (IQ1/IQ2) degrada la coherencia en secuencias largas.
-- Metadatos de parametros inconsistentes: la cifra de 509.124 registrada para el modelo base no concuerda con la designacion "2B" del nombre. Conviene verificar el tamano real antes de planificar despliegues.
-- Estado del repositorio: 0 descargas y 0 likes, sin historial de uso contrastado. No hay garantia de mantenimiento ni de que los ficheros esten completos, mas alla del fichero imatrix listado en la tabla de la model card.
-- Ficheros mmproj fuera del repositorio: la funcionalidad de vision depende de descargar el proyector desde el repositorio estatico. Si se usa solo este repositorio, el modelo operara como LLM de texto sin capacidad visual.
-- Licencia Apache 2.0: permite uso comercial y redistribucion, pero el usuario asume toda la responsabilidad legal sobre las salidas. Un modelo sin filtros de rechazo puede producir contenido que infrinja normativas de difamacion, propiedad intelectual, proteccion de menores o incitacion al odio, dependiendo de la jurisdiccion y del uso.
-- Fechas de creacion y actualizacion anomales: la API indica octubre de 2026, lo que sugiere un error de metadatos o un reloj mal configurado. No es un indicador fiable de la antiguedad del artefacto.
-- Cadena de responsabilidad difusa: al tratarse de una cuantizacion de un derivado abliterated de un modelo de terceros, hay tres responsables distintos (Qwen, el autor de la ablacion y el cuantizador) y ninguno documenta pruebas de seguridad.
+- La abliteration elimina barreras de rechazo, lo que implica un riesgo elevado de generar contenido nocivo, sesgado o inapropiado; no es apto para aplicaciones de cara al publico sin filtros adicionales.
+- Modelo de solo 2B parametros: menor precision en razonamiento complejo, matematicas y seguimiento de instrucciones largas que modelos mayores.
+- La model card declara unicamente ingles; el rendimiento en castellano no esta garantizado ni evaluado.
+- Riesgo de alucinacion inherente a modelos pequenos, especialmente en tareas de OCR o descripcion detallada de imagenes.
+- La cuantizacion IQ1/IQ2 degrada notablemente la calidad; para produccion se recomienda Q4_K_M o superior.
+- Aunque la licencia es Apache 2.0, el uso comercial de un modelo sin censura puede incumplir politicas de plataformas, terminos de servicio o normativa aplicable; la responsabilidad recae en el desplegador.
+- No hay datos publicados de benchmarks para esta variante, por lo que las afirmaciones de calidad deben validarse empiricamente antes de producción.
+- El repositorio no incluye safetensors; para usar con transformers hay que acudir al modelo base de MahdiAlikhah.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/mradermacher/qwen2-vl-2b-abliterated-i1-GGUF
-- Modelo base (abliterated): https://huggingface.co/MahdiAlikhah/qwen2-vl-2b-abliterated
-- Repositorio de cuantizaciones estaticas y ficheros mmproj: https://huggingface.co/mradermacher/qwen2-vl-2b-abliterated-GGUF
-- Pagina de vision general de cuantizaciones del autor: https://hf.tst.eu/model#qwen2-vl-2b-abliterated-i1-GGUF
-- Solicitudes de cuantizacion y FAQ de mradermacher: https://huggingface.co/mradermacher/model_requests
-- Guia de uso de ficheros GGUF referenciada por el autor: https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
-- Analisis de tipos de cuantizacion de Artefact2: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
-- Grafica comparativa de perplejidad por tipo de quant: https://www.nethype.de/huggingface_embed/quantpplgraph.png
-- Paper o repositorio de Qwen2-VL: no disponible en la informacion proporcionada
-- Resultados de la busqueda web: no se han encontrado enlaces tecnicos relevantes sobre este modelo; los resultados obtenidos correspondian a contenido no relacionado y sin valor para esta ficha.
+- Modelo base (safetensors): https://huggingface.co/MahdiAlikhah/qwen2-vl-2b-abliterated
+- Quants estaticos del mismo modelo: https://huggingface.co/mradermacher/qwen2-vl-2b-abliterated-GGUF
+- Pagina de conveniencia del autor: https://hf.tst.eu/model#qwen2-vl-2b-abliterated-i1-GGUF
+- Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Analisis de tipos de cuantizacion (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Peticiones de cuantizacion de mradermacher: https://huggingface.co/mradermacher/model_requests

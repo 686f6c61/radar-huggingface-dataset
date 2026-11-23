@@ -2,130 +2,104 @@
 
 ## Resumen
 
-`semsimula-ladder-live-owt-d384-l2-attention-potential-rfqk` es un modelo de lenguaje de 77,4 millones de parámetros desarrollado por el usuario `dimitarpg13` dentro de la familia de investigación SemSimula. No es un transformer: se presenta como un Fock-PARFLM, una arquitectura sin atención basada en un potencial escalar y en mecánica lagrangiana (modelo basado en energía), con un campo de intercambio conservativo, registros virtuales y un mecanismo de espacio de Fock. Se entrena desde cero sobre OpenWebText en inglés, con un presupuesto fijo de 532.480.000 tokens (32.500 pasos × batch 32 × bloque 512), idéntico al del resto de modelos de la escalera de ablaciones.
+`semsimula-ladder-live-owt-d384-l2-attention-potential-rfqk` es un modelo de lenguaje de investigación desarrollado por el usuario de Hugging Face `dimitarpg13` dentro de la familia SemSimula, un programa experimental de modelos de lenguaje "conservativos" basados en mecánica lagrangiana y campos de potencial escalar. No es un transformer: se presenta explícitamente como un modelo sin atención clásica ("attention-free", "non-transformer") que sustituye el mecanismo de self-attention por un campo de intercambio conservativo con enrutamiento normalizado por similitud coseno entre queries y keys (QK-normalisation). El modelo tiene 77,4 millones de parámetros, dimensión oculta 384 y 2 capas (L=2), y está entrenado sobre OpenWebText con un presupuesto fijo de 532.480.000 tokens.
 
-Su relevancia no es de producto sino metodológica: forma parte de un estudio pre-registrado de ablación de mecanismos ("ladder study") en el que cada variante cambia un único componente y comparte corpus, tokenizador, presupuesto de tokens y lotes de validación. Esta versión concreta (generación 3) incorpora un endurecimiento del routing del campo de intercambio mediante normalización QK (similitud coseno multiplicada por una escala logarítmica aprendida y recortada por cabeza) y un recorte de gradiente propio de 0,3 para los parámetros del campo.
+La relevancia de esta ficha no es de producto sino de investigación: forma parte de un "ladder study" pre-registrado en el que el autor compara variantes con y sin mecanismos concretos (campo de intercambio, registros virtuales, canales inversos) manteniendo constante el presupuesto de tokens, el corpus y el tokenizador. Este modelo concreto es la "Generación 3" del brazo `attention_potential` con el enrutamiento del campo endurecido mediante QK-normalisation y un recorte de gradiente propio de 0,3. Su resultado declarado es una perplejidad de validación de 52,90 en OpenWebText (bloque 512), aproximadamente 1,062× la de GPT-2 según la propia model card.
 
-El resultado declarado es una perplejidad de validación de 52,90 en OpenWebText a bloque 512, un 6,2 % peor que la variante `gpt2-matched` de la misma escalera (49,81, con 33,7 M de parámetros) y un 0,4 % mejor que la misma arquitectura sin el campo de intercambio, diferencia que el propio autor califica de ruido de evaluación. El modelo es un artefacto de investigación en inglés, sin ajuste por instrucciones, con licencia CC-BY-4.0.
+Se distribuye únicamente en inglés, con licencia CC-BY-4.0, en formato PyTorch (repo de 0,6 GB) y sin pesos GGUF ni cuantizaciones publicadas. Es, por tanto, un artefacto de ablación científica más que un modelo listo para producción.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Fock-PARFLM: no transformer, sin atención, basada en potencial escalar y mecánica lagrangiana (energy-based); L=2 capas, d_model=384, campo de intercambio conservativo con routing QK normalizado |
-| Parámetros totales | 77,4 M |
-| Parámetros activos | No aplica (no es un modelo MoE) |
-| Longitud de contexto | 512 tokens (bloque usado en entrenamiento y evaluación); no se documenta soporte para secuencias mayores |
-| Tipos de cuantización | No disponible; solo se publican pesos PyTorch y no hay GGUF ni cuantizaciones publicadas |
-| Idiomas soportados | Inglés (`en`) |
+| Arquitectura | Fock-PARFLM (conservative language model, sin atención clásica), campo de intercambio con enrutamiento QK-normalizado, L=2, d=384 |
+| Parametros totales | 77,4 M |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible (entrenado con bloques de 512 tokens) |
+| Tipos de cuantizacion | no disponible (solo pesos PyTorch; sin GGUF publicados) |
+| Idiomas soportados | en (inglés) |
 | Licencia | CC-BY-4.0 |
-| Formato de pesos | PyTorch (checkpoint nativo, requiere el código del autor); repositorio de 0,6 GB; no se indica safetensors |
-| Dataset de entrenamiento | Skylion007/openwebtext (split de validación para evaluación) |
-| Tokens de entrenamiento | 532.480.000 (32.500 pasos × 32 × 512) |
-| Tokenizador | No disponible en la información proporcionada |
-| Descargas / likes | 672 descargas, 0 likes |
-| Fechas | Creado el 2026-10-06, actualizado el 2026-10-26 |
+| Formato de pesos | PyTorch (checkpoint nativo; sin safetensors ni GGUF indicados) |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura se describe como un modelo de lenguaje conservativo en espacio de Fock ("Fock-PARFLM") con un campo de intercambio conservativo y un potencial escalar, construido explícitamente al margen del transformer y sin mecanismo de atención estándar. El modelo tiene 2 capas y anchura 384. Incorpora dos rutas de tipo atención: los registros virtuales (register path) y el campo de intercambio; el autor documenta que ambas rutas se sustituyen en gran medida entre sí (sin los registros, el mismo campo aporta una mejora del 6,0 %; con ellos, la aportación queda dentro del ruido). El modelo es causal: el monitor de fuga SCAF se declaró limpio en las siete auditorías (5k a 30k y 32,5k), con perturbación de futuro exactamente 0 y una tasa de fuga (leak tax) de prefijo de −1,4e-4 nats sobre los pesos finales.
+El modelo pertenece a la línea Fock-PARFLM del autor, descrita como un modelo de lenguaje conservativo con potencial escalar y mecánica lagrangiana, con "registros virtuales" en espacio de Fock y un "canal inverso". No emplea self-attention estándar: en su lugar, un campo de intercambio conservativo calcula puntuaciones de enrutamiento como similitud coseno entre queries y keys L2-normalizadas, multiplicadas por una escala logit aprendida por cabeza, σ = min(exp λ, 100), inicializada en 1/0,07. Esta QK-normalisation (etiqueta `rfqk`) añade ocho parámetros nuevos, uno por cabeza, y el campo recibe su propio recorte de gradiente en 0,3 (`rfclip0p3`). Ambos interruptores están desactivados por defecto y el autor afirma que, apagados, el código es bit-idéntico al original (logits, pérdida y todos los gradientes).
 
-El entrenamiento usa exclusivamente OpenWebText en inglés, con un presupuesto de tokens fijado de antemano e idéntico para todas las variantes de la escalera (532,48 M tokens), sin que ningún modelo se entrene más tiempo que otro. No se documenta RLHF, DPO ni ajuste por instrucciones: es un modelo base de predicción del siguiente token. La innovación técnica de esta versión son dos interruptores, desactivados por defecto y verificados como bit-idénticos al código de referencia cuando están apagados: (1) routing QK normalizado, donde queries y keys se normalizan en L2 de modo que cada score es un coseno multiplicado por una escala por cabeza σ = min(exp λ, 100) inicializada en 1/0,07, lo que añade ocho parámetros nuevos; y (2) un recorte de gradiente propio del campo (`RELAX_FIELD_CLIP = 0.3`). La motivación declarada es que las proyecciones de routing del modelo sin endurecer habían crecido entre 5 y 6 veces sin control. El run se ejecutó en una única sesión de Colab a 1,67 s/paso (unas 15 horas para los 32.500 pasos, cálculo derivado), sin watchdog ni picos, con un 1,4 % de pasos afectados por el recorte de gradiente (9 de 650 registrados, norma máxima 1,08, todos entre los pasos 19.700 y 26.000).
+El entrenamiento usa OpenWebText con 32.500 pasos × batch 32 × bloque 512 = 532.480.000 tokens, el mismo presupuesto que el resto de modelos de la tabla comparativa, con el mismo corpus, tokenizador y lotes de validación. La ejecución se realizó en una única sesión de Colab a 1,67 s/paso, con 0 watchdogs, 0 picos y un 1,4 % de pasos con clipping (9 de 650 registrados, norma máxima 1,08, entre los pasos 19.700 y 26.000). La norma global del gradiente subió de 0,44 a 0,87 en la fase de learning rate constante y bajó a 0,71 en la fase de decaimiento. El autor declara dos predicciones pre-registradas antes de la ejecución, ambas falladas: perplejidad asentada ≤ 52,1 (obtenido 52,90) y gradiente del campo plano dentro de ±25 % de su valor en el paso 5.000 (subió ~90 %, de 0,43 a 0,82, impulsado por la proyección de valor W_v, que la QK-normalisation no toca). El monitor de fuga causal SCAF se declara limpio en las siete auditorías (perturbación futura exactamente 0, impuesto de fuga ≤ 1,9e-4 nats), aunque la auditoría del paso 32.500 imprimió sus perplejidades estándar como `nan`.
 
 ## Capacidades
 
-- Generación de texto en inglés mediante predicción autoregresiva del siguiente token; es un modelo base, no ajustado por instrucciones.
-- Modelado de lenguaje y estimación de perplejidad sobre OpenWebText (bloque 512), que es su métrica de referencia.
-- Causalidad estricta verificada: sin acceso a tokens futuros (perturbación de futuro exactamente 0 en siete auditorías y en cinco puntos de corte sobre los pesos finales).
-- Independencia de lote verificada (exactamente 0), relevante para reproducibilidad de experimentos.
-- Soporte de tool calling / function calling: no documentado, no disponible.
-- Soporte de agentes o razonamiento multi-paso: no documentado, no disponible.
-- Capacidades multilingües: no; solo inglés.
-- Visión, audio o modalidades adicionales: no disponibles.
-- Modo "thinking" o razonamiento explícito: no disponible.
-- Capacidad especial de investigación: ablación controlada de mecanismos (campo de intercambio, registros virtuales, mecanismo de Fock) con comparaciones entre variantes a presupuesto de tokens igualado.
+- Generación de texto en inglés a nivel de investigación: el modelo está entrenado exclusivamente sobre OpenWebText y su métrica declarada es perplejidad, no capacidades de tarea.
+- Modelado de lenguaje autorregresivo causal: el autor verifica causalidad con perturbación futura nula en cinco puntos de corte y con independencia de lote exacta.
+- Razonamiento, código, matemáticas o visión: no disponible; no hay evidencia publicada de estas capacidades.
+- Tool calling / function calling: no disponible.
+- Soporte de agentes y razonamiento multi-paso: no disponible.
+- Capacidades multilingües: solo inglés declarado.
+- Capacidades especiales: modo "thinking", visión o audio no disponibles; la particularidad es arquitectónica (campo conservativo, registros virtuales, canal inverso), no funcional.
 
 ## Casos de uso
 
-- Investigación sobre alternativas al transformer: sirve como punto de comparación reproducible frente a arquitecturas sin atención, ya que comparte corpus, tokenizador y presupuesto de tokens con el resto de la escalera SemSimula, lo que permite aislar el efecto de un solo mecanismo.
-- Ablación de componentes en modelos basados en energía: el modelo está diseñado para activar y desactivar rutas (campo de intercambio, normalización QK, registros virtuales) y comparar perplejidad resultante, algo útil para grupos que estudian campos conservativos o formulaciones lagrangianas.
-- Reproducción de estudios pre-registrados: el autor congela predicciones antes del run (por ejemplo, PPL ≤ 52,1 y estabilidad del gradiente del campo), de modo que el modelo sirve como caso práctico de metodología pre-registrada en aprendizaje automático.
-- Docencia y divulgación técnica: con 77,4 M de parámetros y un repositorio de 0,6 GB, se puede cargar y ejecutar en hardware muy modesto para ilustrar el funcionamiento de un LM no transformer y de un potencial escalar aprendido.
-- Análisis de dinámica de entrenamiento: los registros de norma de gradiente global (de 0,44 a 0,87 en la fase de learning rate constante y 0,71 en el decaimiento) y de tasa de recorte permiten estudiar estabilidad de optimización en arquitecturas no convencionales.
-- Verificación de causalidad y fugas de información: el monitor SCAF y las pruebas de perturbación de futuro se pueden reutilizar como banco de pruebas para auditar implementaciones propias.
-- Generación de texto en inglés con requisitos de calidad bajos o experimentales (por ejemplo, material sintético para pruebas de pipelines), siempre teniendo en cuenta la perplejidad de 52,90 y la ausencia de ajuste por instrucciones.
+- Estudio de ablación de mecanismos: el modelo sirve para comparar, con presupuesto de tokens idéntico, el efecto de un campo de intercambio conservativo endurecido frente a variantes sin campo o sin registros; su uso típico es reproducir la tabla de perplejidades del autor.
+- Investigación en arquitecturas no-transformer: como referencia ejecutable de un modelo sin self-attention clásica, útil para experimentos sobre atención alternativa y campos de potencial.
+- Validación de causalidad y fugas de información: el modelo y su monitor SCAF permiten probar metodologías de auditoría de fuga futura en modelos causales.
+- Reproducción de estudios pre-registrados: sirve como caso práctico de pre-registro con predicciones falladas y análisis de desviación del gradiente.
+- Docencia y divulgación sobre entrenamiento a pequeña escala: con 77,4 M de parámetros y 0,6 GB de checkpoint, es viable en entornos educativos para ilustrar presupuestos de cómputo y métricas de perplejidad.
+- Línea base para perplejidad en OpenWebText: puede actuar como punto de comparación (52,90 en bloque 512) frente a modelos pequeños de la misma familia o GPT-2.
 
 ## Benchmarks y rendimiento
 
-Datos declarados por el autor en la model card (`verified: false`). No hay resultados de MMLU, HumanEval, GSM8K ni otras tareas de razonamiento o código en la información disponible.
+Datos declarados por el autor en la model card (no verificados de forma independiente):
 
-| Métrica | Dataset | Valor |
-|---|---|---|
-| Perplejidad de validación (bloque 512, "settled") | OpenWebText, split validation | 52,90 |
-| Evaluaciones individuales del promedio | OpenWebText, split validation | 52,83 / 53,05 / 52,81 |
-| Mejor perplejidad registrada | OpenWebText, split validation | 50,97 (paso 31.000) |
-| Perplejidad final | OpenWebText, split validation | 52,81 |
-| Perplejidad en el paso 3.000 | OpenWebText, split validation | 113,52 |
-| Ruido entre evaluaciones consecutivas | OpenWebText, split validation | ±2 PPL aprox. |
+| Modelo | Perplejidad asentada (OpenWebText, bloque 512) | Frente a este modelo | Frente a GPT-2 | Parámetros |
+|---|---:|---:|---:|---:|
+| **Este modelo** (L=2, campo endurecido) | **52,90** | — | 1,062× | 77,4 M |
+| Sin campo de intercambio, Fock activo, L=4 (Gen 3) | 50,10 | +5,6 % | 1,006× | 76,8 M |
+| Sin campo de intercambio, Fock activo, L=2 (Gen 3) | 53,12 | −0,4 % | 1,066× | 76,8 M |
+| `attention_potential` sin endurecer (Gen 3, L=2) | 54,21 | −2,4 % | 1,088× | 77,4 M |
+| Solo conservativo, gradientes vivos (Gen 3, L=2) | 57,76 | −8,4 % | 1,160× | 76,6 M |
+| Brazo `gpt2-matched` (L=8) | 49,81 | +6,2 % | 1,000× | 33,7 M |
 
-| Comparación interna (misma escalera, mismo presupuesto de tokens) | Perplejidad | Diferencia frente a este modelo | Parámetros |
-|---|---:|---:|---:|
-| Este modelo (L=2, con endurecimiento QK) | 52,90 | — | 77,4 M |
-| `semsimula-ladder-live-owt-d384-l2-none` (L=2, sin campo de intercambio) | 53,12 | −0,4 % | 76,8 M |
-| `semsimula-ladder-live-owt-d384-l4-none` (L=4, sin campo de intercambio) | 50,10 | +5,6 % | 76,8 M |
-| `semsimula-ladder-live-owt-d384-l2-attention-potential` (sin endurecer) | 54,21 | −2,4 % | 77,4 M |
-| `semsimula-ladder-live-owt-d384-l2-none-norc` (solo conservativo) | 57,76 | −8,4 % | 76,6 M |
-| `semsimula-ladder-owt-d384-l2-gpt2-matched` (L=8, referencia igualada a GPT-2) | 49,81 | +6,2 % | 33,7 M |
-
-El autor normaliza frente a GPT-2 con un factor de 1,062× para este modelo, pero no publica el valor absoluto de perplejidad de GPT-2 en la información disponible. Dos predicciones pre-registradas fallaron: la perplejidad objetivo (≤ 52,1) y la estabilidad del gradiente del campo dentro de ±25 % de su valor en el paso 5.000 (subió aproximadamente un 90 %, de 0,43 a 0,82, impulsado por la proyección de valor W_v, que la normalización QK no toca).
+Detalles adicionales declarados: la perplejidad asentada es la media de las tres últimas evaluaciones (52,83; 53,05; 52,81), con mejor valor 50,97 en el paso 31.000 y valor final 52,81; las evaluaciones consecutivas cerca del final difieren en ±2 PPL. En el paso 3.000 el modelo marcaba 113,52 frente a 118,14 del modelo sin endurecer (−3,9 %) y 123,59 del modelo L=2 sin campo con gradientes vivos. La variante con este campo pero sin lectura de registros (`...-rfqk-norc`) asienta en 54,27, un 6,0 % por debajo del modelo solo conservativo. El autor concluye que el campo endurecido no aporta mejora medible (0,4 %, dentro del ruido) y que el campo y la ruta de registros se sustituyen mutuamente en gran medida.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia (cálculo derivado del número de parámetros, no publicado por el autor): ~0,31 GB en fp32, ~0,16 GB en fp16/bf16, ~0,08 GB en int8 y ~0,04 GB en int4 para los pesos; a bloque 512 y lote pequeño, las activaciones añaden unos pocos cientos de MB.
-- GPU recomendadas: cualquier GPU con 2-4 GB de VRAM es suficiente (GTX 1650, RTX 3050/3060/4060, T4). No se requiere A100 ni H100; el modelo se entrenó en una única sesión de Colab.
-- Cabe en GPU de consumo: sí, en prácticamente cualquier GPU dedicada reciente e incluso en CPU para inferencia puntual.
-- Opciones de despliegue: al no ser un transformer con arquitectura estándar, no hay soporte nativo en vLLM, llama.cpp, Ollama ni TGI; el despliegue requiere cargar los pesos con PyTorch y el código del autor (`library_name: pytorch`).
-- Latencia y throughput de inferencia: no disponibles. El único dato de rendimiento es de entrenamiento: 1,67 s/paso con lote 32 × 512 en una sesión de Colab.
-- Almacenamiento: repositorio de 0,6 GB.
+- VRAM estimada para inferencia: con 77,4 M de parámetros, unos 0,31 GB en fp32, ~0,15 GB en fp16/bf16 y ~0,08 GB en int8; el repo completo ocupa 0,6 GB.
+- GPU recomendadas: cualquier GPU con al menos 1-2 GB de VRAM es suficiente; no requiere A100 ni H100. Una RTX 4090, RTX 3090 o incluso una GTX 1650 son sobradas.
+- Cabe en GPU de consumo: sí, en prácticamente cualquier GPU moderna e incluso en CPU para inferencia puntual.
+- Opciones de despliegue: al ser un modelo PyTorch con arquitectura propia y no-transformer, no hay soporte declarado en vLLM, llama.cpp, Ollama ni TGI; el despliegue requiere el código del autor en PyTorch.
+- Latencia y throughput: no disponibles; el único dato de cómputo es 1,67 s/paso durante el entrenamiento en una sesión de Colab, no extrapolable a inferencia.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos de terceros en la información proporcionada; la comparación se limita a las variantes de la misma escalera de ablaciones, que son los modelos realmente comparables por corpus, tokenizador y presupuesto.
+| Modelo | Parámetros | Contexto | Perplejidad OpenWebText | Licencia | Disponibilidad |
+|---|---:|---|---:|---|---|
+| Este modelo (SemSimula, L=2 endurecido) | 77,4 M | no disponible (bloques de 512) | 52,90 | CC-BY-4.0 | Hugging Face, PyTorch |
+| SemSimula `gpt2-matched` (L=8) | 33,7 M | no disponible | 49,81 | no disponible | Hugging Face |
+| SemSimula sin campo de intercambio (L=4) | 76,8 M | no disponible | 50,10 | no disponible | Hugging Face |
+| GPT-2 (referencia citada por el autor) | ~124 M | 1.024 | 1,000× relativo (referencia) | MIT | Amplia |
 
-| Modelo | Parámetros | Contexto | Perplejidad (OWT, bloque 512) | Licencia | Disponibilidad |
-|---|---:|---:|---:|---|---|
-| Este modelo (L=2, QK normalizado) | 77,4 M | 512 | 52,90 | CC-BY-4.0 | Hugging Face, PyTorch |
-| `...-l2-attention-potential` (sin endurecer) | 77,4 M | 512 | 54,21 | CC-BY-4.0 | Hugging Face, PyTorch |
-| `...-l2-none` (sin campo de intercambio) | 76,8 M | 512 | 53,12 | CC-BY-4.0 | Hugging Face, PyTorch |
-| `...-l4-none` (L=4) | 76,8 M | 512 | 50,10 | CC-BY-4.0 | Hugging Face, PyTorch |
-| `...-l2-none-norc` (solo conservativo) | 76,6 M | 512 | 57,76 | CC-BY-4.0 | Hugging Face, PyTorch |
-| `...-l2-gpt2-matched` (L=8) | 33,7 M | 512 | 49,81 | CC-BY-4.0 | Hugging Face, PyTorch |
-
-Frente a GPT-2 solo se dispone del factor de normalización publicado por el autor (1,062× para este modelo, 1,000× para la variante `gpt2-matched`); no se incluye el valor absoluto de GPT-2 en la información disponible.
+La comparación con GPT-2 procede de la propia model card, que expresa los resultados como múltiplo de la perplejidad de GPT-2 (1,062× en este modelo). No se dispone de comparaciones con otros modelos pequeños de la misma categoría fuera de la familia SemSimula.
 
 ## Limitaciones y advertencias
 
-- Es un artefacto de investigación, no un modelo de producción: no está ajustado por instrucciones ni alineado, y no se documenta RLHF, DPO ni filtrado de seguridad.
-- Calidad de texto limitada: una perplejidad de 52,90 en OpenWebText a bloque 512 implica una capacidad predictiva muy por debajo de modelos actuales del mismo orden de parámetros.
-- Contexto corto: 512 tokens, sin evidencia de generalización a secuencias mayores.
-- Monolingüe: solo inglés; no hay soporte declarado de castellano ni de otros idiomas.
-- El propio autor concluye que el campo de intercambio endurecido "no añade nada medible" (0,4 % de mejora, dentro del ruido), por lo que no debe esperarse una ventaja funcional de esta variante frente a las vecinas.
-- Las dos predicciones pre-registradas fallaron, lo que indica que el comportamiento del entrenamiento no se ajusta por completo al modelo teórico esperado.
-- Benchmarks autoinformados y marcados como `verified: false`; solo existe perplejidad, sin evaluaciones de razonamiento, código, matemáticas ni sesgos.
-- Riesgo de alucinación y de texto incoherente: es un modelo base pequeño entrenado sobre web; no hay evaluación de fidelidad factual.
-- Reproducibilidad dependiente del código: al no haber safetensors ni soporte en frameworks estándar, cargar los pesos exige el código del autor y su versión concreta.
-- Licencia CC-BY-4.0: permite uso comercial con atribución obligatoria; conviene revisar los términos de OpenWebText como corpus de origen.
-- No hay informe de sesgos, filtros de contenido ni análisis de toxicidad.
+- Modelo de investigación, no de producción: sin soporte en runtimes estándar (vLLM, llama.cpp, Ollama, TGI) y con arquitectura propietaria que exige el código del autor.
+- Solo inglés: no hay capacidades multilingües declaradas.
+- Perplejidad de 52,90 en OpenWebText, ligeramente peor que GPT-2 (1,062×) y que el brazo `gpt2-matched` de la propia familia (49,81), lo que limita su utilidad como generador de texto de calidad.
+- Riesgo de alucinación: no evaluado; no hay benchmarks de tareas (MMLU, HumanEval, GSM8K) que permitan estimarlo.
+- Sesgos: no documentados; el corpus OpenWebText hereda los sesgos de los enlaces de Reddit de los que se extrae.
+- Dos predicciones pre-registradas falladas y una auditoría con perplejidades `nan` en el paso 32.500, lo que exige cautela al interpretar la reproducibilidad.
+- El propio autor reconoce que el campo endurecido no aporta mejora medible (0,4 %, dentro del ruido de ±2 PPL), por lo que el valor del modelo es metodológico, no de rendimiento.
+- Licencia CC-BY-4.0: permite uso comercial con atribución, pero al ser un artefacto de investigación no se recomienda su uso en producción sin validación adicional.
+- Longitud de contexto real no documentada; el entrenamiento usa bloques de 512 y el autor señala que acortar la entrada cambia los logits (hasta 0,05 de diferencia), lo que apunta a comportamiento dependiente de la longitud.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/dimitarpg13/semsimula-ladder-live-owt-d384-l2-attention-potential-rfqk
-- Modelo sin endurecer (L=2, `attention_potential`): https://huggingface.co/dimitarpg13/semsimula-ladder-live-owt-d384-l2-attention-potential
-- Variante sin campo de intercambio (L=2): https://huggingface.co/dimitarpg13/semsimula-ladder-live-owt-d384-l2-none
-- Variante sin campo de intercambio (L=4): https://huggingface.co/dimitarpg13/semsimula-ladder-live-owt-d384-l4-none
+- Modelo sin endurecer (base de esta variante): https://huggingface.co/dimitarpg13/semsimula-ladder-live-owt-d384-l2-attention-potential
+- Variante sin campo de intercambio, L=2: https://huggingface.co/dimitarpg13/semsimula-ladder-live-owt-d384-l2-none
+- Variante sin campo de intercambio, L=4: https://huggingface.co/dimitarpg13/semsimula-ladder-live-owt-d384-l4-none
 - Variante solo conservativa: https://huggingface.co/dimitarpg13/semsimula-ladder-live-owt-d384-l2-none-norc
-- Variante con el campo y sin lectura de registros: https://huggingface.co/dimitarpg13/semsimula-ladder-live-owt-d384-l2-attention-potential-rfqk-norc
-- Referencia igualada a GPT-2 (L=8): https://huggingface.co/dimitarpg13/semsimula-ladder-owt-d384-l2-gpt2-matched
-- Colección Gen 3 (escalera de gradientes vivos): https://huggingface.co/collections/dimitarpg13/semantic-simulation-gen-3-cfc-baoab-live-gradients-6abf371ea3c83f127057020c
+- Variante con campo pero sin registros: https://huggingface.co/dimitarpg13/semsimula-ladder-live-owt-d384-l2-attention-potential-rfqk-norc
+- Brazo `gpt2-matched`: https://huggingface.co/dimitarpg13/semsimula-ladder-owt-d384-l2-gpt2-matched
+- Colección Gen 3 (live-gradient ladder): https://huggingface.co/collections/dimitarpg13/semantic-simulation-gen-3-cfc-baoab-live-gradients-6abf371ea3c83f127057020c
 - Dataset OpenWebText: https://huggingface.co/datasets/Skylion007/openwebtext
-- Paper, blog, repositorio o demo adicionales: no disponibles en la información proporcionada.

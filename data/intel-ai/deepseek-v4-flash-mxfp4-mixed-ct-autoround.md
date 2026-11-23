@@ -2,109 +2,102 @@
 
 ## Resumen
 
-DeepSeek-V4-Flash-MXFP4-Mixed-CT-AutoRound es una version cuantizada del modelo DeepSeek-V4-Flash publicada por intel-ai (Intel) mediante la herramienta AutoRound y el formato llm_compressor. Se trata de un modelo de tipo mezcla de expertos (MoE) de aproximadamente 291.000 millones de parametros, cuantizado de forma mixta: los expertos MoE en MXFP4 (4 bits) y las capas lineales en MXFP8 (8 bits), con cache KV en FP8.
+DeepSeek-V4-Flash-MXFP4-Mixed-CT-AutoRound es una version cuantizada del modelo base deepseek-ai/DeepSeek-V4-Flash, publicada por el equipo intel-ai dentro del ecosistema de herramientas de compresion de Intel. El modelo aplica una receta de cuantizacion mixta en formato MXFP4 (Microscaling FP4) sobre los expertos enrutados y las capas lineales, manteniendo en BF16 el router, los embeddings y la cabeza de salida (lm_head). La generacion se ha realizado con AutoRound, la libreria de Intel basada en redondeo por descenso de gradiente con signo, en modo RTN y con exportacion al formato compressed-tensors compatible con vLLM.
 
-El objetivo es reducir el coste de memoria y de computo del modelo base (el repositorio ocupa 159,8 GB) manteniendo un rendimiento casi identico al de otras variantes cuantizadas del mismo modelo, como muestran los benchmarks publicados. Es relevante para despliegues en produccion con vLLM, donde el ahorro de VRAM y el uso de kernels FP4 permiten servir un modelo de gran tamano en un numero reducido de GPU de 80 GB.
+La relevancia de esta ficha esta en que permite ejecutar un modelo de aproximadamente 291.000 millones de parametros con pesos de 4 bits en lugar de BF16, reduciendo drasticamente el espacio en disco (repo de 159,8 GB) y los requisitos de memoria frente al modelo original. Los resultados de evaluacion publicados por el autor muestran una recuperacion media del 100,13 % respecto al modelo base en seis benchmarks, lo que indica una perdida practicamente nula de calidad en las tareas medidas. La licencia Apache 2.0 y la compatibilidad con vLLM 0.29.0 lo convierten en una opcion atractiva para despliegues de inferencia de gran escala en infraestructura Intel.
 
-El modelo esta pensado para generacion de texto y razonamiento, con un modo de razonamiento ("thinking") activable desde la plantilla de chat y un modo Think Max que recomienda una ventana de contexto de al menos 384K tokens. La licencia declarada es MIT, aunque el autor remite a la licencia del modelo original.
+La informacion disponible no detalla la arquitectura interna del modelo base (mas alla de la etiqueta deepseek_v4 y la presencia de expertos enrutados), ni los idiomas soportados, ni el proceso de entrenamiento original. Esta ficha recoge exclusivamente los datos verificables de la model card y de los metadatos de Hugging Face.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer con mezcla de expertos (MoE); cuantizacion mixta MXFP4/MXFP8 |
-| Parametros totales | 290.944.616.402 (~291 B) |
+| Arquitectura | transformer con expertos enrutados (MoE), etiqueta deepseek_v4; detalles internos no disponibles |
+| Parametros totales | 290.944.616.402 (aprox. 291 mil millones) |
 | Parametros activos | no disponible |
-| Longitud de contexto | al menos 384.000 tokens en modo Think Max (recomendado); maximo no disponible |
-| Tipos de cuantizacion | MXFP4 (expertos MoE), MXFP8 (capas lineales), KV-cache FP8 |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | MXFP4 para expertos enrutados y capas lineales; MXFP8 para el resto segun la receta; router, embeddings y lm_head en BF16 |
 | Idiomas soportados | no disponible |
-| Licencia | MIT |
-| Formato de pesos | safetensors (formato llm_compressor / compressed-tensors, 8-bit) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | safetensors con compressed-tensors (formato llm_compressor) |
 
 ## Arquitectura y entrenamiento
 
-La informacion proporcionada no incluye detalles sobre el entrenamiento del modelo base DeepSeek-V4-Flash (numero de tokens, composicion del dataset, fases de RLHF/DPO, etc.), por lo que esos datos se consideran no disponibles. Lo que si se detalla es el proceso de cuantizacion: el modelo se genera con Intel AutoRound, un metodo de redondeo de pesos guiado por descenso de gradiente con signo (paper arXiv:2309.05516), aplicando un esquema mixto. Concretamente, los expertos de la capa MoE se cuantizan a MXFP4 (4 bits) y las capas lineales a MXFP8 (8 bits), ignorando determinadas capas como `compressor` e `indexer.weights_proj`. El resultado se exporta en formato llm_compressor compatible con compressed-tensors.
+El modelo base DeepSeek-V4-Flash es un transformer con mezcla de expertos (MoE), a juzgar por la descripcion de la receta de cuantizacion, que distingue explicitamente entre "expertos enrutados" y "capas lineales". La cuantizacion aplicada por intel-ai sigue un esquema mixto: los expertos enrutados del bloque MLP se comprimen a 4 bits en formato MXFP4 (bits: 4, data_type: mx_fp), mientras que el resto de capas lineales se exporta con el esquema MXFP8. El router, los embeddings y la lm_head se conservan en BF16 para preservar la precision del enrutamiento y de la proyeccion final. La tecnica de generacion es AutoRound en modo RTN (round-to-nearest), con exportacion al formato llm_compressor de compressed-tensors.
 
-Segun la model card, el modelo base de referencia corresponde a una variante "W4A8 MXFP4 MoE, block FP8 Linear" y esta version es "W4A4 MXFP4 MoE, MXFP8 Linear", es decir, con activaciones tambien en 4 bits para los expertos. No se indica en la informacion disponible si se emplearon tecnicas adicionales como decodificacion especulativa o atencion lineal, ni se detallan innovaciones de atencion mas alla del uso de un cache de indices FP4 (`attention_config.use_fp4_indexer_cache=True`) en la configuracion de vLLM.
+No se dispone de informacion sobre el numero de tokens de entrenamiento del modelo base, la composicion del dataset, ni si se aplicaron tecnicas de RLHF, DPO o decodificacion especulativa. La model card solo documenta el proceso de cuantizacion y remite al modelo original para los detalles de entrenamiento. La innovacion tecnica destacable de esta publicacion es la receta de cuantizacion mixta MXFP4/MXFP8 con AutoRound, que permite comprimir un modelo de 291 mil millones de parametros manteniendo una recuperacion de calidad superior al 99 % en los benchmarks evaluados.
 
 ## Capacidades
 
-- Generacion de texto y razonamiento en modo "thinking", activable mediante `chat_template_kwargs.enable_thinking`.
-- Modo de razonamiento extendido Think Max, con recomendacion de contexto de al menos 384K tokens.
-- Razonamiento matematico: los benchmarks publicados cubren math_500 (0,9472), gsm8k (0,9671) y aime26 (0,6087).
-- Razonamiento cientifico y de conocimiento: gpqa_diamond (0,7192), mmlu (0,9020), mmlu_pro (0,8258), piqa (0,9287), hellaswag (0,8650).
-- Servicio mediante API compatible con el endpoint OpenAI de chat completions (`/v1/chat/completions`).
-- Soporte de tool calling / function calling: no confirmado en la informacion disponible.
-- Soporte de agentes y razonamiento multi-paso: no confirmado explicitamente en la informacion disponible.
-- Capacidades multilingues: no disponible (el campo de idiomas no esta informado).
-- Capacidades de vision, audio o multimodalidad: no disponible.
+- Generacion de texto: el pipeline declarado es text-generation, con soporte para transformers y vLLM.
+- Razonamiento matematico: los benchmarks AIME26 (96,33 %) y GSM8K (96,71 %) indican capacidad de resolucion de problemas matematicos de competicion y de aritmetica multi-paso.
+- Razonamiento cientifico: GPQA Diamond con 87,98 % sugiere buen rendimiento en preguntas de nivel experto en fisica, quimica y biologia.
+- Conocimiento general: MMLU con 90,20 % y HellaSwag con 86,50 % reflejan una base amplia de conocimiento y comprension de sentido comun.
+- Razonamiento fisico: PIQA con 92,87 % muestra comprension de situaciones fisicas cotidianas.
+- Tool calling / function calling: no disponible en la informacion proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
+- Capacidades multilingues: no disponible; los idiomas no estan declarados en los metadatos.
+- Capacidades especiales (vision, audio, thinking mode): no disponible en la informacion proporcionada.
 
 ## Casos de uso
 
-- Razonamiento matematico asistido: resolucion de problemas de competicion y calculo simbolico, aprovechando los resultados en aime26, math_500 y gsm8k, con el modo thinking activado para cadenas de razonamiento largas.
-- Analisis de documentos extensos: procesamiento de contratos, informes o bases de conocimiento de cientos de miles de tokens en una sola pasada, gracias a la ventana recomendada de 384K tokens en modo Think Max.
-- Generacion y revision de codigo en pipelines de desarrollo: uso a traves de un endpoint compatible con OpenAI para tareas de autocompletado, refactorizacion y explicacion de codigo (capacidad inferida, sin benchmark de codigo publicado).
-- Question answering cientifico y tecnico: respuestas de alta precision en dominios especializados segun gpqa_diamond (0,7192) y mmlu_pro (0,8258), adecuado para asistentes de investigacion.
-- Atencion al cliente automatizada: conversaciones multi-turno con contexto muy largo, desplegando el modelo en vLLM y exponiendo el endpoint de chat completions.
-- Evaluacion y sintesis de informacion: resumen y comparacion de multiples fuentes largas en un unico contexto, apoyandose en la ventana extendida.
-- Inferencia en infraestructura con aceleradores Intel: aprovechando el ecosistema AutoRound / Neural Compressor para optimizar el despliegue en hardware Intel.
-- Prototipado de aplicaciones de razonamiento: al ser una variante cuantizada de menor huella, sirve para validar aplicaciones que requieren un modelo de ~291B antes de pasar a la version completa.
+- Razonamiento matematico asistido: el modelo puede resolver problemas de nivel de competicion (AIME26 al 96,33 %) y aritmetica escolar (GSM8K al 96,71 %), por lo que encaja en tutores automaticos de matematicas y sistemas de verificacion de soluciones paso a paso.
+- Evaluacion cientifica automatizada: con GPQA Diamond al 87,98 %, es adecuado para generar y validar respuestas de nivel experto en dominios cientificos, por ejemplo en plataformas de formacion o de revision de material tecnico.
+- Inferencia de gran escala con vLLM: la compatibilidad declarada con vLLM 0.29.0 y el formato compressed-tensors permiten desplegar el modelo con `vllm serve` y servir peticiones concurrentes con pesos de 4 bits, reduciendo la huella de memoria frente al modelo en BF16.
+- Despliegue en infraestructura Intel: al estar publicado por intel-ai y generado con AutoRound, el modelo esta pensado para entornos con aceleracion Intel (Gaudi, Xeon con AMX), donde la cuantizacion MXFP4 aprovecha las instrucciones nativas de bajo precision.
+- Sustitucion de modelos BF16 en produccion: la recuperacion media del 100,13 % en los seis benchmarks permite reemplazar el modelo base por esta version cuantizada en pipelines existentes sin recalibrar los umbrales de calidad, siempre que la integracion con vLLM este validada.
+- Generacion de texto generalista a bajo coste: con MMLU al 90,20 % y HellaSwag al 86,50 %, sirve para resumir, redactar y responder preguntas en aplicaciones de productividad donde el coste por token es critico.
+- Investigacion en cuantizacion: el modelo sirve como referencia reproducible para estudiar la receta MXFP4/MXFP8 de AutoRound, ya que la model card incluye el comando exacto de generacion y el commit de la libreria.
 
 ## Benchmarks y rendimiento
 
-Resultados publicados en la model card. Los valores se expresan como proporcion (0-1). La primera fila corresponde al modelo de referencia con el que se compara la publicacion.
+Resultados publicados en la model card, evaluados con EvalScope. AIME26 usa 30 preguntas con 10 repeticiones (300 predicciones); GPQA Diamond usa 198 preguntas con 5 repeticiones (990 predicciones). Los valores son porcentajes.
 
-| Benchmark | DeepSeek-V4-Flash (W4A8 MXFP4 MoE, block FP8 Linear) | Este modelo (W4A4 MXFP4 MoE, MXFP8 Linear) |
-|---|---|---|
-| aime26 | 0,6097 | 0,6087 |
-| gpqa_diamond | 0,7212 | 0,7192 |
-| math_500 | 0,9556 | 0,9472 |
-| mmlu | 0,9043 | 0,9020 |
-| piqa | 0,9289 | 0,9287 |
-| hellaswag | 0,8632 | 0,8650 |
-| gsm8k | 0,9684 | 0,9671 |
-| mmlu_pro | 0,8289 | 0,8258 |
+| Benchmark | Modelo base | MXFP4 | Recuperacion |
+|---|---:|---:|---:|
+| AIME26 | 96,00 | 96,33 | 100,34 % |
+| GPQA Diamond | 87,37 | 87,98 | 100,70 % |
+| GSM8K | 96,84 | 96,71 | 99,87 % |
+| MMLU | 90,43 | 90,20 | 99,75 % |
+| PIQA | 92,89 | 92,87 | 99,98 % |
+| HellaSwag | 86,32 | 86,50 | 100,21 % |
+| Media | 91,64 | 91,77 | 100,13 % |
 
-No se han publicado en la informacion disponible benchmarks de codigo (por ejemplo HumanEval) ni datos de latencia o throughput.
+No se han publicado resultados de benchmarks adicionales (por ejemplo HumanEval o tareas de codigo) en la informacion disponible.
 
 ## Requisitos de hardware
 
-Estimaciones basadas en el tamano del repositorio (159,8 GB) y en la configuracion de despliegue facilitada por el autor; no son cifras oficiales.
-
-- VRAM estimada para inferencia: el repositorio de pesos ocupa 159,8 GB, por lo que se necesitan del orden de 160 GB solo para los pesos, mas la cache KV en FP8.
-- GPU recomendadas: la configuracion de vLLM del autor usa `tensor-parallel-size 2`, lo que apunta a un minimo de 2 GPU de 80 GB (H100 80 GB o A100 80 GB). Para contexto largo (384K tokens) y lotes mayores, probablemente se requieran 4 o mas GPU de 80 GB.
-- GPU de consumo: no cabe de forma practica en GPU de consumo (24 GB o menos), dado el tamano de pesos y la necesidad de paralelismo tensorial.
-- Opciones de despliegue: vLLM es la via soportada explicitamente (requiere el PR https://github.com/vllm-project/vllm/pull/45645), con flags `--trust-remote-code`, `--kv-cache-dtype fp8`, `--block-size 256`, `--tensor-parallel-size 2`, `--attention_config.use_fp4_indexer_cache=True`, `--no-enable-flashinfer-autotune` y `--enforce-eager`. Otros motores (llama.cpp, Ollama, TGI) no se mencionan en la informacion disponible.
-- Parametros de muestreo recomendados: `temperature = 1.0`, `top_p = 1.0`.
-- Latencia y throughput: no disponibles en la informacion proporcionada.
+- VRAM estimada para inferencia: con 291 mil millones de parametros y pesos mayoritariamente de 4 bits, el peso del modelo ocupa aproximadamente 145-150 GB; a esto hay que sumar la cache KV, los pesos BF16 del router, embeddings y lm_head, y el overhead del runtime de vLLM.
+- GPU recomendadas: no disponibles de forma explicita en la model card; por volumen de memoria, el despliegue requiere GPUs de centro de datos con 80 GB o mas por dispositivo (A100 80 GB, H100 80 GB, Intel Gaudi) y, previsiblemente, configuraciones multi-GPU.
+- Compatibilidad con GPU de consumo: no disponible; el tamano del modelo (159,8 GB de repo) excede la VRAM de cualquier GPU de consumo actual en una sola tarjeta.
+- Opciones de despliegue: vLLM 0.29.0 (con el commit indicado en la model card) es el runtime documentado; llama.cpp, Ollama y TGI no estan mencionados en la informacion disponible.
+- Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros totales | Contexto | Licencia | Cuantizacion |
-|---|---|---|---|---|
-| Este modelo (intel-ai/DeepSeek-V4-Flash-MXFP4-Mixed-CT-AutoRound) | ~291 B | al menos 384K (Think Max) | MIT | W4A4 MXFP4 MoE, MXFP8 Linear |
-| DeepSeek-V4-Flash (variante de referencia en la model card) | no disponible | no disponible | no disponible | W4A8 MXFP4 MoE, block FP8 Linear |
-| deepseek-ai/DeepSeek-V4-Flash (modelo base) | no disponible | no disponible | no disponible | pesos completos |
-
-No se dispone en la informacion proporcionada de datos sobre otras alternativas comparables de terceros (por ejemplo, otras familias MoE cuantizadas) ni de sus especificaciones, por lo que la comparativa se limita a las variantes del propio modelo DeepSeek-V4-Flash.
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+|---|---:|---|---|---|---|
+| DeepSeek-V4-Flash-MXFP4-Mixed-CT-AutoRound | 291 mil millones | no disponible | Apache 2.0 | safetensors (compressed-tensors) | Version cuantizada MXFP4/MXFP8 de Intel |
+| deepseek-ai/DeepSeek-V4-Flash (modelo base) | 291 mil millones | no disponible | Apache 2.0 | safetensors BF16 | Referencia de calidad; mayor huella de memoria |
+| Otros modelos comparables | no disponible | no disponible | no disponible | no disponible | No se dispone de datos de alternativas en la informacion proporcionada |
 
 ## Limitaciones y advertencias
 
-- Alucinacion: el autor advierte explicitamente de que el modelo puede producir salidas factualmente incorrectas y no debe usarse como fuente fiable de informacion.
-- Sesgos y contenido ofensivo: la model card indica que, por las limitaciones del modelo preentrenado y de los datasets de ajuste, puede generar contenido obsceno, sesgado u ofensivo. Recomienda realizar pruebas de seguridad antes de desplegar cualquier aplicacion.
-- Idiomas soportados: no disponibles; no se puede garantizar un rendimiento multilingue concreto.
-- Licencia: declarada como MIT, pero el autor remite a la licencia del modelo original y senala que la licencia no constituye asesoramiento legal, recomendando consultar a un abogado antes de un uso comercial.
-- Divergencia de identificadores: el identificador del repositorio es `intel-ai/...`, mientras que la model card y el comando de ejemplo de vLLM referencian `INCModel/DeepSeek-V4-Flash-MXFP4-Mixed-CT-AutoRound`. Conviene verificar la ruta correcta antes de desplegar.
-- Requisitos de despliegue: depende de un PR especifico de vLLM (45645) y de flags concretos; no es un despliegue estandar inmediato.
-- Datos incompletos: se desconoce el numero de parametros activos, el contexto maximo real, los idiomas y el detalle de entrenamiento del modelo base. El repositorio registra 0 descargas y 0 "likes" en el momento de la consulta, por lo que cuenta con poca validacion de la comunidad.
-- Recomendacion de contexto: para el modo Think Max se aconseja una ventana de al menos 384K tokens, lo que incrementa notablemente el consumo de memoria de la cache KV.
+- Riesgo de alucinacion: la propia model card advierte que el modelo puede producir salidas factualmente incorrectas y no debe usarse como fuente de informacion veraz sin verificacion.
+- Sesgos y contenido ofensivo: la model card reconoce que, por las limitaciones del modelo preentrenado y de los datasets de ajuste, pueden generarse salidas obscenas, sesgadas u ofensivas; se recomienda realizar pruebas de seguridad antes de desplegar.
+- Idiomas: no se declaran idiomas soportados, por lo que no hay garantia documentada de calidad multilingue.
+- Contexto: la longitud de contexto no esta especificada en la informacion disponible.
+- Restricciones de licencia: la licencia es Apache 2.0, pero la model card indica que el modelo sigue la licencia del modelo original y que la licencia no constituye asesoramiento legal; para uso comercial conviene consultar a un abogado.
+- Requisitos de runtime: el despliegue depende de vLLM 0.29.0 y de un commit concreto del repositorio de vLLM; otras versiones o runtimes no estan validados en la model card.
+- Precision del enrutamiento: el router se mantiene en BF16, pero los expertos en MXFP4 pueden introducir variaciones en tareas no cubiertas por los seis benchmarks evaluados; los resultados de recuperacion solo estan documentados para esas seis tareas.
+- Reproducibilidad: la generacion requiere el commit especifico de AutoRound indicado en la model card; diferencias de version pueden alterar los pesos resultantes.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/intel-ai/DeepSeek-V4-Flash-MXFP4-Mixed-CT-AutoRound
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash
-- Repositorio Intel AutoRound: https://github.com/intel/auto-round
-- PR de AutoRound para la generacion del modelo: https://github.com/intel/auto-round/pull/1921
-- PR de vLLM con soporte de despliegue: https://github.com/vllm-project/vllm/pull/45645
-- Paper de AutoRound (arXiv:2309.05516): https://arxiv.org/abs/2309.05516
+- Repositorio AutoRound: https://github.com/intel/auto-round
 - Intel Neural Compressor: https://github.com/intel/neural-compressor
+- Paper de AutoRound: https://arxiv.org/abs/2309.05516
+- Receta de precision del modelo: https://reimagined-adventure-1v3zeqp.pages.github.io/model-recipes/deepseek-v4-flash/accuracy-result/
+- Commit de vLLM usado en las instrucciones: https://github.com/vllm-project/vllm/commit/1b6e277ac010fb3361369162c42d39b06d612e24

@@ -23,7 +23,7 @@
     "region:us"
   ],
   "likes": 12,
-  "downloads_30d": 465,
+  "downloads_30d": 467,
   "trending_score": 0,
   "parameters": 26085330160,
   "parameters_human": "26.09B",
@@ -43,11 +43,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "stupid-zwl/JDI-Decision-V1 · Hugging Face",
-      "url": "https://huggingface.co/stupid-zwl/JDI-Decision-V1",
-      "snippet": "JDI-Decision-V1 is a multimodal decision system from JD.com, based on Qwen3.8-27B with D3 decision-architecture adaptations. It provides structured choices and probabilities for text and images. Its internal modules include a vision encoder, a frozen PaddleOCR v5 text recognition component from ..."
-    }
-  ]
+  "sources": []
 }

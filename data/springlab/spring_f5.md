@@ -2,82 +2,92 @@
 
 ## Resumen
 
-SPRING_F5 es un modelo de síntesis de voz (text-to-speech) multilingüe desarrollado por SPRINGLab, que parte del modelo base F5-TTS y lo ajusta para cubrir 23 idiomas indios y el inglés. El objetivo principal es ofrecer voces naturales y de alta calidad para lenguas con poca representación en los sistemas TTS comerciales, además de soportar code-mixing, es decir, la mezcla de idiomas dentro de una misma frase, algo habitual en la conversación cotidiana en la India.
+SPRING_F5 es un modelo de síntesis de voz (text-to-speech) multilingüe desarrollado por SPRING Lab (IIT Madras) a partir de F5-TTS, un modelo de TTS no autorregresivo basado en flow matching. La contribución principal es la extensión del modelo base para cubrir 23 lenguas de la India más el inglés, con especial énfasis en escenarios de code-mixing (alternancia de lenguas dentro de una misma frase), habituales en hablantes reales de telugu, tamil o hindi que intercalan términos ingleses.
 
-El modelo se entrena sobre aproximadamente 3.220 horas de audio procedente de los datasets Rasa, IndicTTS e IndicVoices-R, y emplea la arquitectura F5-TTS con alrededor de 330 millones de parámetros. Su relevancia actual radica en que llena un vacío importante en el ecosistema TTS de código abierto para lenguas indias, con una licencia Apache 2.0 que permite su uso comercial sin restricciones. El repositorio incluye ejemplos de audio generados en telugu, tamil, hindi e inglés, demostrando su capacidad para producir habla fluida incluso en escenarios de code-mixing.
+El modelo se entrenó con aproximadamente 3.220 horas de audio de alta calidad procedente de los corpus Rasa, IndicTTS e IndicVoices-R, empleando 2 GPU NVIDIA H200 durante unas dos semanas. Mantiene la configuración base de F5-TTS, con alrededor de 330 millones de parámetros, y se distribuye con licencia Apache 2.0, lo que facilita su uso comercial.
 
-## Especificaciones tecnicas
+Su relevancia actual radica en dos factores: la cobertura amplia de lenguas indias de bajos recursos (incluyendo idiomas como santali, bodo, dogri o maithili, poco representados en sistemas TTS comerciales) y la publicación de un benchmark específico de TTS cross-lingual para lenguas indias en AACL-IJCNLP 2026, junto con estrategias de estimación de duración en tiempo de inferencia.
 
-| Parametro | Valor |
+## Especificaciones técnicas
+
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | F5-TTS (flow matching con backbone transformer) |
-| Parametros totales | ~330 millones |
-| Parametros activos | No aplica (no es MoE) |
-| Longitud de contexto | No disponible |
-| Tipos de cuantizacion | No disponible |
-| Idiomas soportados | 24: as, bn, bo, gu, hi, kn, ks, kok, mai, ml, mni, mr, ne, or, pa, sa, sat, sd, ta, te, ur, doi, raj, en |
+| Arquitectura | F5-TTS (flow matching no autorregresivo con DiT; configuración base) |
+| Parámetros totales | ~330 M |
+| Parámetros activos | no aplica (no es MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantización | no disponible |
+| Idiomas soportados | 24: assamés, bengalí, bodo, guyaratí, hindi, canarés, cachemirí, konkani, maithili, malabar/malayalam, manipurí, maratí, nepalí, odia, panyabí, sánscrito, santali, sindhi, tamil, telugu, urdú, dogri, rayastaní e inglés |
 | Licencia | Apache 2.0 |
-| Formato de pesos | Safetensors (presumiblemente, al usar transformers) |
+| Formato de pesos | safetensors (repo de 5,4 GB, librería `transformers` con `trust_remote_code=True`) |
 
 ## Arquitectura y entrenamiento
 
-SPRING_F5 se basa en F5-TTS, un modelo de síntesis de voz que utiliza flow matching sobre un backbone transformer. F5-TTS fue originalmente diseñado para generar habla de alta fidelidad a partir de texto y una referencia de audio, y SPRING_F5 extiende esta arquitectura a un conjunto mucho más amplio de idiomas. El modelo tiene aproximadamente 330 millones de parámetros, siguiendo la configuración base del trabajo original de F5-TTS.
+SPRING_F5 hereda la arquitectura de F5-TTS: un modelo de difusión por flow matching con un backbone transformer (DiT) que predice mel-espectrogramas a partir de texto y de un audio de referencia, sin componente autorregresivo. La inferencia requiere un `ref_audio_path` y su `ref_text` correspondiente (zero-shot voice cloning), junto con un identificador de lengua (`lang`) que se usa para la conversión de números a palabras en la lengua objetivo. La frecuencia de muestreo de salida es de 24 kHz.
 
-El entrenamiento se realizó durante aproximadamente dos semanas en dos GPUs NVIDIA H200, utilizando un total de 3.220 horas de audio de alta calidad. Las fuentes de datos incluyen los datasets Rasa, IndicTTS e IndicVoices-R, todos ellos orientados a lenguas indias. No se menciona el uso de técnicas como RLHF o DPO en el ajuste; el proceso es un fine-tuning supervisado estándar sobre el modelo base. La innovación principal del modelo reside en su capacidad para manejar code-mixing y la conversión de números a palabras en idiomas indios, lo que mejora la naturalidad en contextos reales de uso.
+El entrenamiento partió de los pesos de `SWivid/F5-TTS` y se afinó con unas 3.220 horas de habla de Rasa, IndicTTS e IndicVoices-R, en 2 × NVIDIA H200 durante aproximadamente dos semanas (recursos cedidos por C-DAC). La model card no detalla la composición exacta por lengua ni si se aplicaron etapas de RLHF o DPO; para un modelo TTS, el ajuste se realiza sobre pares texto-audio y no sobre preferencias humanas, por lo que no se documenta alineamiento por preferencias. La innovación destacable es la estrategia de estimación de duración en tiempo de inferencia descrita en el artículo asociado, orientada a mejorar la naturalidad y reducir pausas innecesarias en enunciados code-mixed.
 
 ## Capacidades
 
-- Generación de voz multilingüe en 24 idiomas, incluyendo 23 lenguas indias (asamés, bengalí, bodo, guyaratí, hindi, canarés, cachemir, konkani, maithili, malayalam, manipuri, maratí, nepalí, oriya, punyabí, sánscrito, santali, sindhi, tamil, telugu, urdu, dogri, rayastaní) y el inglés.
-- Soporte de code-mixing: puede generar habla que mezcla naturalmente un idioma indio con palabras o frases en inglés dentro de la misma oración, sin pausas artificiales.
-- Conversión de números a palabras en idiomas indios mediante un identificador de idioma (`lang`), lo que evita la lectura literal de cifras.
-- Salida de audio a 24 kHz de frecuencia de muestreo, con normalización de amplitud integrada en el flujo de ejemplo.
-- Capacidad de transferencia de voz: el usuario puede proporcionar un audio de referencia para controlar las características vocales del habla generada.
-- Integración sencilla con la librería transformers mediante `AutoModel` y `trust_remote_code`.
+- Síntesis de voz multilingüe en 23 lenguas indias más inglés, con un único modelo.
+- Clonación de voz zero-shot a partir de un clip de referencia y su transcripción.
+- Manejo de code-mixing intra-frase (p. ej. telugu con términos ingleses) sin pausas artificiales.
+- Normalización de números a palabras en la lengua indicada mediante el parámetro `lang`.
+- Salida de audio a 24 kHz en formato array de numpy, guardable con `soundfile`.
+- Integración con la API de `transformers` (`AutoModel.from_pretrained` con código remoto).
+- No soporta tool calling, agentes, visión ni audio de entrada más allá del prompt de referencia; es exclusivamente un modelo TTS.
 
 ## Casos de uso
 
-- Atención al cliente automatizada en idiomas regionales: el modelo puede gestionar conversaciones de voz en lenguas como tamil, telugu o hindi, con soporte de code-mixing para términos técnicos en inglés, lo que mejora la experiencia de usuarios en sectores como banca o telecomunicaciones.
-- Audiolibros y contenido educativo: permite generar narraciones naturales en 24 idiomas, facilitando la producción de material educativo accesible en lenguas con poca oferta de voces sintéticas.
-- Asistentes de voz multilingües: puede integrarse en asistentes personales o dispositivos IoT para responder en el idioma local del usuario, incluyendo la mezcla de idiomas típica de la conversación informal.
-- Accesibilidad para personas con discapacidad visual: la síntesis de voz en lenguas indias permite convertir texto escrito (noticias, documentos, mensajes) en audio comprensible para usuarios que dependen de lectores de pantalla.
-- Localización de contenido multimedia: doblaje automático de vídeos, podcasts o anuncios a múltiples idiomas indios, reduciendo costes de producción frente a la grabación con actores humanos.
-- Sistemas de navegación y avisos públicos: generación de anuncios de voz en estaciones de tren, aeropuertos o transporte público en el idioma local, con la posibilidad de mezclar inglés para términos técnicos.
+- Audiolibros y contenido editorial en lenguas indias: el modelo permite narrar textos largos en hindi, tamil, bengalú u odia con una voz de referencia consistente, cubriendo idiomas que rara vez tienen voces comerciales de calidad.
+- Asistentes de voz para atención al cliente: con 24 lenguas en un solo checkpoint se puede desplegar un único servicio TTS multi-tenant que seleccione la voz de referencia por cliente y la lengua por petición.
+- Doblaje y localización de vídeo: la clonación zero-shot permite mantener el timbre del hablante original al doblar contenido de una lengua india a otra, útil en plataformas de formación y medios regionales.
+- Accesibilidad y lectura de pantalla: lectura en voz alta de interfaces y documentos para usuarios de lenguas de bajos recursos como santali, bodo o maithili, donde los motores TTS comerciales no ofrecen cobertura.
+- Sistemas conversacionales code-mixed: al manejar frases que mezclan inglés con telugu, tamil o hindi sin pausas antinaturales, encaja en agentes de voz para usuarios urbanos bilingües.
+- Generación de datos sintéticos para ASR: producir audio etiquetado en lenguas con pocos datos para aumentar corpus de entrenamiento de reconocimiento de voz.
+- Prototipado de IVR y telephony: al ser un modelo de 330 M parámetros, puede servirse en infraestructura modesta para mensajes pregrabados dinámicos en call centers regionales.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks en la información disponible. La model card referencia el artículo "Cross-Lingual TTS for Indian Languages: A Benchmark and Inference-Time Duration Estimation Strategies" (AACL-IJCNLP 2026), pero no incluye las tablas numéricas de resultados.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: al tratarse de un modelo de ~330 millones de parámetros, la inferencia es ligera; se estima que puede ejecutarse en GPUs con 8-16 GB de VRAM en precisión FP16, aunque no se proporcionan datos oficiales.
-- GPU recomendadas: cualquier GPU consumer moderna (RTX 3060, RTX 4090) o GPUs de datacenter (A100, H200) son suficientes. El entrenamiento se realizó con 2×H200, pero la inferencia no requiere ese nivel.
-- Compatibilidad con consumer GPU: sí, cabe en GPUs de gama media y alta.
-- Opciones de despliegue: se puede utilizar directamente con la librería transformers mediante `AutoModel.from_pretrained` y `trust_remote_code`. No se mencionan integraciones específicas con vLLM, llama.cpp u Ollama, que están orientadas a modelos de lenguaje, no a TTS.
-- Latencia y throughput: no disponible en la información proporcionada.
+- VRAM estimada para inferencia: no disponible de forma explícita; con ~330 M parámetros, los pesos en fp32 ocupan aproximadamente 1,3 GB, por lo que la inferencia cabe holgadamente en GPUs de consumo con 8 GB o más.
+- GPU recomendadas: cualquier GPU con al menos 8 GB de VRAM para fp32; las H200 se usaron solo para entrenamiento.
+- Cabe en GPU de consumo: sí, previsiblemente en RTX 3060/4060 y superiores; no confirmado por el autor.
+- Opciones de despliegue: `transformers` con `trust_remote_code=True`; el repositorio de GitHub del proyecto ofrece instalación vía `pip install git+https://github.com/ArigalaAdarsh/SPRING_F5.git`. No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Idiomas | Contexto | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| SPRING_F5 | ~330M | 24 (23 indios + inglés) | No disponible | Apache 2.0 | Hugging Face |
-| F5-TTS (base) | ~330M | Principalmente inglés y algunos multilingües | No disponible | MIT (según repo original) | GitHub/HuggingFace |
-| VITS | ~30-100M | Varía según checkpoint | No disponible | MIT (checkpoints varios) | Hugging Face |
+| Modelo | Parámetros | Idiomas | Licencia | Notas |
+|---|---|---|---|---|
+| SPRING_F5 | ~330 M | 24 (23 indias + inglés) | Apache 2.0 | Fine-tune de F5-TTS; clonación zero-shot; code-mixing |
+| F5-TTS (SWivid) | ~330 M (base) | Principalmente inglés y chino | CC-BY-NC (según el proyecto original; no confirmado en esta ficha) | Modelo base del que deriva SPRING_F5 |
+| IndicTTS / sistemas TTS de AI4Bharat | no disponible | Lenguas indias | no disponible | Alternativa regional; no se dispone de datos comparativos en esta ficha |
 
-La comparativa se limita a los modelos más cercanos disponibles públicamente. F5-TTS es el modelo base de SPRING_F5 y comparte arquitectura y tamaño, pero no tiene el soporte específico para lenguas indias ni el code-mixing. VITS es un modelo TTS más ligero pero con menos idiomas soportados y sin la capacidad de code-mixing documentada. No se dispone de datos de rendimiento comparativo.
+No se dispone de datos de benchmarks que permitan una comparación cuantitativa con alternativas.
 
 ## Limitaciones y advertencias
 
-- Sesgos conocidos: no se documentan sesgos específicos, pero al entrenarse principalmente con datos de IndicVoices y Rasa, puede haber variaciones en la calidad según el idioma o el acento regional.
-- Riesgo de alucinación: como todo modelo TTS, puede producir pronunciaciones incorrectas o artefactos en palabras poco frecuentes o nombres propios, especialmente en code-mixing.
-- Limitaciones de contexto: no se especifica la longitud máxima de texto que puede procesar de una vez; para textos largos puede ser necesario segmentar la entrada.
-- Restricciones de licencia: la licencia Apache 2.0 permite uso comercial sin restricciones, pero es recomendable revisar las licencias de los datasets de entrenamiento (Rasa, IndicVoices-R) por si imponen condiciones adicionales.
-- Caveat para producción: el modelo requiere un audio de referencia (`ref_audio_path`) para cada generación, lo que añade complejidad al pipeline. Además, el uso de `trust_remote_code=True` implica ejecutar código remoto, lo que debe evaluarse en entornos de seguridad estrictos.
+- No se documentan evaluaciones de sesgo; al entrenarse con corpus de habla indios, puede reproducir sesgos de acento, género o registro presentes en Rasa, IndicTTS e IndicVoices-R.
+- Riesgo de alucinación en TTS: puede producir prosodia incorrecta, pronunciaciones erróneas o artefactos en textos fuera de dominio, especialmente en lenguas con pocos datos como santali, bodo o dogri.
+- Requiere un audio de referencia y su transcripción exacta; una referencia ruidosa o mal transcrita degrada la calidad de la clonación.
+- La conversión de números depende del parámetro `lang`; un identificador incorrecto produce lectura errónea de cifras.
+- No se especifican límites de longitud de texto por inferencia; los textos largos pueden requerir troceado manual.
+- Licencia Apache 2.0 permite uso comercial, pero no se aportan garantías ni se documentan restricciones adicionales sobre las voces clonadas; el uso de la clonación de voz está sujeto a la legislación aplicable y al consentimiento del hablante.
+- El modelo exige `trust_remote_code=True`, lo que implica ejecutar código del repositorio; conviene auditar el código antes de desplegarlo en producción.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/SPRINGLab/SPRING_F5
-- Repositorio GitHub: https://github.com/ArigalaAdarsh/SPRING_F5
-- Modelo base F5-TTS: https://github.com/SWivid/F5-TTS
+- Modelo en Hugging Face: https://huggingface.co/SPRINGLab/SPRING_F5
+- Repositorio de código: https://github.com/ArigalaAdarsh/SPRING_F5
+- Repositorio del benchmark: https://github.com/Cross-Lingual-TTS-for-Indian-Languages/Cross-Lingual-TTS-Indic-Test-Set/
+- Artículo (AACL-IJCNLP 2026): https://aclanthology.org/2026.multilll-1.6.pdf
+- Página de demos: https://cross-lingual-tts-for-indian-languages.github.io/Cross-Lingual-TTS-Demo/
+- SPRING Lab (IIT Madras): https://asr.iitm.ac.in/
+- F5-TTS (modelo base): https://github.com/SWivid/F5-TTS
 - Dataset Rasa: https://huggingface.co/datasets/ai4bharat/Rasa
 - Dataset IndicVoices-R: https://huggingface.co/datasets/ai4bharat/indicvoices_r
-- Dataset IndicVoices: https://huggingface.co/datasets/ai4bharat/IndicVoices
+- Dataset IndicTTS: https://www.iitm.ac.in/donlab/indictts/database

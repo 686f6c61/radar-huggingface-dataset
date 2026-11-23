@@ -1,92 +1,81 @@
 # BaoKhuong/qwen3-asr-1.7b-vimd-full-GGUF
 
 ## Resumen
+El repositorio `BaoKhuong/qwen3-asr-1.7b-vimd-full-GGUF` distribuye conversiones en formato GGUF del checkpoint vietnamita `duclvQ/qwen3-asr-1.7b-vimd-full`, un ajuste fino sobre Qwen3-ASR-1.7B orientado al reconocimiento automatico del habla (ASR) en vietnamita. No se trata de un modelo nuevo ni de un fine-tune adicional: el autor publica unicamente pesos convertidos, en dos familias de GGUF incompatibles entre si segun el runtime de destino.
 
-Qwen3-ASR-1.7B-ViMD-Full GGUF es una distribucion comunitaria de pesos convertidos a formato GGUF del modelo de reconocimiento automatico del habla (ASR) Qwen3-ASR-1.7B, afinado para vietnamita sobre el conjunto de datos ViMD. El trabajo de conversion, empaquetado y publicacion lo firma el usuario BaoKhuong, mientras que el ajuste fino original corresponde a duclvQ y la arquitectura base al equipo Qwen. No se trata, por tanto, de un modelo nuevo, sino de una exportacion de pesos ya entrenados a un formato optimizado para inferencia local.
+El modelo base parte de la familia Qwen3-ASR, con 2.349.243.536 parametros reales (segun safetensors) y una licencia Apache 2.0 que permite uso comercial. La relevancia actual reside en que permite ejecutar un modelo ASR especializado en vietnamita en entornos ligeros mediante `qwen3-asr.cpp` o CrispASR, sin necesidad de un stack de inferencia completo de PyTorch.
 
-El modelo resuelve el problema de transcribir audio en vietnamita con un transformer de aproximadamente 2.038 millones de parametros (unos 2,04 mil millones), derivado de la familia Qwen3-ASR. Su relevancia actual radica en que permite ejecutar un ASR especializado en vietnamita en entornos sin GPU de gran capacidad, gracias a las cuantizaciones Q8_0 y Q4_1, y en que se integra con herramientas de escritorio como Subtitle Edit mediante el runtime qwen3-asr.cpp.
-
-La publicacion se limita a tres variantes GGUF (F16, Q8_0 y Q4_1) convertidas directamente desde el checkpoint BF16 original. La model card advierte explicitamente de que la compatibilidad en tiempo de ejecucion, la precision de transcripcion y las metricas WER/CER de estas exportaciones no han sido verificadas de forma independiente, lo que conviene tener en cuenta antes de usarlas en produccion.
+La ficha se centra en las conversiones GGUF publicadas y en las caracteristicas del checkpoint base que el autor documenta. Cualquier dato no verificado en la model card se marca explicitamente como no disponible.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer ASR de la familia Qwen3-ASR (detalles internos no disponibles en la informacion proporcionada) |
-| Parametros totales | 2.038.052.480 (aprox. 2,04 mil millones) |
+| Arquitectura | Transformer encoder-decoder para ASR (familia Qwen3-ASR); detalles internos de capas y atencion no disponibles en la informacion proporcionada |
+| Parametros totales | 2.349.243.536 (2.349 M) |
 | Parametros activos | No aplica (no es MoE) |
 | Longitud de contexto | No disponible |
-| Tipos de cuantizacion | F16 (FP16), Q8_0 (8 bits), Q4_1 (4 bits) |
-| Idiomas soportados | Vietnamita (vi) |
-| Licencia | Apache-2.0 (segun el repositorio original; revisar la licencia del dataset ViMD antes de uso comercial) |
-| Formato de pesos | GGUF (F16, Q8_0, Q4_1) |
-| Tamano del repositorio | 8,5 GB |
-| Tamano de ficheros | F16: 3,803 GiB; Q8_0: 2,401 GiB; Q4_1: 1,747 GiB |
-| Tensores convertidos | 707 (0 omitidos) |
-| Modelo base | duclvQ/qwen3-asr-1.7b-vimd-full |
-| Herramienta de conversion | predict-woo/qwen3-asr.cpp (convert_hf_to_gguf.py) |
+| Tipos de cuantizacion | F16, Q8_0, Q4_1 (familia qwen3-asr.cpp); F16 y Q8_0 (familia CrispASR) |
+| Idiomas soportados | Vietnamita (`vi`) como idioma declarado; el checkpoint base Qwen3-ASR es multilingue, pero el fine-tune esta orientado a vietnamita |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (dos familias: `qwen3-asr.cpp` y CrispASR); checkpoint original en BF16 en el repo base |
 
 ## Arquitectura y entrenamiento
+La informacion disponible no detalla la arquitectura interna del checkpoint base Qwen3-ASR-1.7B (numero de capas, dimensiones, mecanismo de atencion ni estrategia de entrenamiento). Lo que si se documenta es que el modelo `duclvQ/qwen3-asr-1.7b-vimd-full` es un fine-tune en vietnamita sobre Qwen3-ASR-1.7B, y que las conversiones publicadas en este repositorio derivan de su checkpoint "ViMD Full BF16".
 
-La informacion disponible no detalla la arquitectura interna del modelo base Qwen3-ASR-1.7B mas alla de su pertenencia a la familia Qwen3-ASR y de su naturaleza como sistema de reconocimiento automatico del habla. Se sabe que el checkpoint de origen es un ajuste fino completo (full fine-tuning) en BF16 sobre vietnamita, realizado por duclvQ a partir del modelo base Qwen3-ASR y entrenado con el conjunto de datos ViMD. No se especifican en la informacion proporcionada el numero de tokens de entrenamiento, la composicion exacta del dataset, ni si se aplicaron tecnicas de RLHF o DPO.
-
-La contribucion tecnica de este repositorio es exclusivamente la conversion a GGUF. El proceso se realizo con el script convert_hf_to_gguf.py del proyecto qwen3-asr.cpp, convirtiendo los 707 tensores del checkpoint BF16 sin omitir ninguno. En las variantes Q8_0 y Q4_1, tres tensores de convolucion del codificador de audio se mantuvieron en F16 porque sus formas no eran compatibles con la cuantizacion por bloques seleccionada. El autor indica que estas variantes no son los checkpoints HQQ Q8 y Q4 del repositorio original, sino conversiones propias desde el checkpoint completo. No se documentan innovaciones adicionales como decodificacion especulativa o atencion lineal.
+La parte tecnica mejor documentada es el proceso de conversion a GGUF. Para la familia `qwen3-asr.cpp` se convirtieron 707 tensores con 0 omitidos mediante `predict-woo/qwen3-asr.cpp` y su script `convert_hf_to_gguf.py`; tres tensores de convolucion del encoder de audio permanecen en F16 en las versiones Q8_0 y Q4_1 porque sus formas no eran compatibles con la cuantizacion por bloques. Para la familia CrispASR se generaron 710 entradas de tensor, incluyendo arrays de preprocesado de audio y una proyeccion de salida `output.weight` materializada explicitamente. El analisis del autor sugiere que la ausencia de `output.weight` en la variante `qwen3-asr.cpp` es consistente con weight tying, aunque no lo demuestra numericamente.
 
 ## Capacidades
-
-- Reconocimiento automatico del habla (ASR) en vietnamita, con salida de texto transcrito.
-- Transcripcion de audio orientada a la generacion de subtitulos, con integracion prevista en Subtitle Edit mediante el plugin Qwen3 ASR CPP.
-- Ejecucion en local mediante el runtime qwen3-asr.cpp y otras implementaciones compatibles con GGUF de Qwen3-ASR.
-- Soporte de cuantizacion para despliegue en hardware con recursos limitados (Q8_0 y Q4_1).
-- Capacidades multilingues: limitadas al vietnamita segun la etiqueta de idioma del repositorio.
-- Soporte de tool calling, function calling, agentes, vision o audio mas alla del propio ASR: no disponible en la informacion proporcionada.
+- Reconocimiento automatico del habla (ASR) en vietnamita, tarea principal del modelo.
+- Transcripcion de audio a texto mediante pipelines compatibles con GGUF (qwen3-asr.cpp, CrispASR, Subtitle Edit con integracion Qwen3 ASR CPP).
+- Ejecucion en CPU y en GPU de gama baja mediante backends como Vulkan, segun el smoke test documentado.
+- Soporte de seleccion de idioma en la CLI de CrispASR (`-l vi`), lo que sugiere capacidad de forzar el idioma de decodificacion.
+- Capacidades multilingues del checkpoint base Qwen3-ASR no verificadas en esta conversion; el unico idioma declarado es vietnamita.
+- No se documentan capacidades de tool calling, agentes, vision, audio generativo ni modo thinking.
 
 ## Casos de uso
-
-- Generacion de subtitulos para video: el modelo transcribe audio en vietnamita y puede integrarse en Subtitle Edit a traves del plugin Qwen3 ASR CPP para producir ficheros de subtitulos de forma local, sin depender de servicios en la nube.
-- Transcripcion de reuniones y entrevistas: con la variante Q8_0 (2,401 GiB) se puede ejecutar en equipos de sobremesa para convertir grabaciones en vietnamita a texto revisable, manteniendo los datos en la maquina local.
-- Archivado y busqueda de contenido audiovisual: la transcripcion permite indexar grabaciones en vietnamita y habilitar busqueda por texto sobre el contenido hablado.
-- Prototipado de asistentes de voz en vietnamita: el modelo sirve como componente ASR dentro de un pipeline de voz a texto, combinado con un LLM para tareas posteriores de comprension.
-- Despliegue en entornos con recursos limitados: la variante Q4_1 (1,747 GiB) reduce los requisitos de memoria y permite inferencia en portatiles o mini-PC, a costa de una posible perdida de precision no cuantificada.
-- Evaluacion y comparacion de pipelines ASR: al ofrecer tres niveles de cuantizacion del mismo checkpoint, permite medir el impacto de la cuantizacion en WER/CER antes de fijar una variante para produccion.
-- Investigacion sobre ASR en vietnamita: sirve como punto de partida reproducible en formato GGUF para experimentos con el runtime qwen3-asr.cpp.
+- Transcripcion de reuniones y entrevistas en vietnamita: el modelo puede procesar audio y generar texto plano en un runtime GGUF ligero, adecuado para equipos que no quieren desplegar PyTorch.
+- Generacion de subtitulos: la integracion con Subtitle Edit mediante Qwen3 ASR CPP permite producir subtitulos en vietnamita a partir de videos, con la ventaja de ejecutarse en local.
+- Procesamiento por lotes en servidores sin GPU dedicada: las variantes Q4_1 (1.747 GiB) y Q8_0 (2.401 GiB) permiten ejecutar la transcripcion en CPU, reduciendo coste frente a soluciones cloud.
+- Prototipado rapido de aplicaciones de voz: al estar en GGUF, se puede integrar en scripts y herramientas de linea de comandos sin dependencias pesadas, lo que acelera la validacion de ideas.
+- Despliegue en dispositivos de gama baja o embebidos: el smoke test documentado en una Intel Iris Xe (i5-1135G7) con Vulkan y 4 hilos sugiere viabilidad en portatiles modestos.
+- Investigacion en ASR vietnamita: sirve como checkpoint de referencia cuantizado para comparar calidad de transcripcion entre precisiones (F16, Q8_0, Q4_1) sin necesidad de convertir pesos manualmente.
 
 ## Benchmarks y rendimiento
-
-No se han publicado resultados de benchmarks en la informacion disponible. La model card indica explicitamente que la precision de transcripcion y las metricas WER/CER de estas exportaciones GGUF no han sido evaluadas de forma independiente, y que solo se verificaron la finalizacion de la conversion y las cabeceras de los ficheros GGUF.
+No se han publicado resultados de benchmarks en la informacion disponible. El unico dato de rendimiento es un smoke test cualitativo: la variante CrispASR Q8_0 transcribio un clip de 9,2 segundos en ingles en 8,59 segundos (~1,07x tiempo real) usando CrispASR v0.8.49 en Windows x86_64, backend Vulkan sobre Intel Iris Xe (i5-1135G7) y 4 hilos de CPU. El propio autor indica que esto no constituye un benchmark de GPU/CPU ni una evaluacion de precision en vietnamita.
 
 ## Requisitos de hardware
-
-- VRAM estimada para inferencia: aproximadamente 3,8 GiB para F16, 2,4 GiB para Q8_0 y 1,75 GiB para Q4_1, segun el tamano de los ficheros GGUF; debe anadirse memoria adicional para el estado de inferencia y el procesamiento de audio.
-- GPU recomendadas: no especificadas en la informacion proporcionada. Por el tamano de los pesos, cualquier GPU consumer con al menos 4-6 GB de VRAM libre deberia poder alojar las variantes cuantizadas.
-- Compatibilidad con GPU consumer: si, previsiblemente en tarjetas tipo RTX 3060, RTX 4060 o superiores para Q8_0 y Q4_1; la variante F16 requiere algo mas de margen.
-- Opciones de despliegue: qwen3-asr.cpp, Subtitle Edit con el plugin Qwen3 ASR CPP y otras implementaciones compatibles con GGUF de Qwen3-ASR. No se confirma soporte de vLLM, llama.cpp, Ollama o TGI en la informacion proporcionada.
-- Latencia y throughput: no disponibles.
+- VRAM/RAM estimada segun tamano en disco: F16 ~3,8-4,4 GiB; Q8_0 ~2,3-2,4 GiB; Q4_1 ~1,7 GiB. Son tamanos en disco, no mediciones de memoria en tiempo de ejecucion.
+- GPU recomendadas: no disponibles. El unico backend verificado es Vulkan sobre grafica integrada Intel Iris Xe.
+- Cabe en GPU de consumo: previsiblemente si en tarjetas con 4-6 GB de VRAM para Q4_1/Q8_0, aunque no hay verificacion publicada.
+- Opciones de despliegue: `qwen3-asr.cpp` (incluye integracion con Subtitle Edit) y CrispASR. No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI.
+- Latencia y throughput: solo el dato del smoke test (~1,07x tiempo real en el hardware citado). No hay mediciones de throughput por lote ni de latencia en GPU dedicada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Idiomas | Licencia | Formato | Notas |
-|---|---|---|---|---|---|---|
-| BaoKhuong/qwen3-asr-1.7b-vimd-full-GGUF | 2,04 mil millones | No disponible | Vietnamita | Apache-2.0 | GGUF (F16, Q8_0, Q4_1) | Conversion comunitaria; sin benchmarks publicados |
-| duclvQ/qwen3-asr-1.7b-vimd-full | 2,04 mil millones | No disponible | Vietnamita | Apache-2.0 | BF16 (Hugging Face) | Checkpoint original del ajuste fino; incluye variantes HQQ Q8 y Q4 |
-| Qwen3-ASR-1.7B (base) | 1,7 mil millones (nominal) | No disponible | No disponible | No disponible | No disponible | Modelo base de la familia Qwen3-ASR antes del ajuste en vietnamita |
+| Modelo | Parametros | Contexto | Idiomas | Licencia | Formato |
+|---|---|---|---|---|---|
+| qwen3-asr-1.7b-vimd-full-GGUF (este) | 2.349 M | No disponible | Vietnamita | Apache 2.0 | GGUF (qwen3-asr.cpp, CrispASR) |
+| duclvQ/qwen3-asr-1.7b-vimd-full (base) | 2.349 M | No disponible | Vietnamita | Apache 2.0 | BF16 (Hugging Face) |
+| Qwen3-ASR-1.7B original | 1,7 B (nominal) | No disponible | Multilingue | No disponible en la informacion | No disponible |
 
-La comparacion se limita a los modelos citados en la informacion proporcionada; no se dispone de datos de rendimiento que permitan contrastar calidad de transcripcion entre alternativas.
+No se dispone de datos de benchmarks que permitan comparar calidad de transcripcion entre estos modelos. La comparativa se limita a parametros, licencia y formato.
 
 ## Limitaciones y advertencias
-
-- La model card declara que la compatibilidad en tiempo de ejecucion, la precision de transcripcion y las metricas WER/CER de estas exportaciones GGUF no han sido verificadas de forma independiente.
-- Solo se ha validado la conversion y las cabeceras de los ficheros; no hay garantia documentada de funcionamiento correcto en qwen3-asr.cpp ni en Subtitle Edit.
-- El modelo esta especializado exclusivamente en vietnamita; no se ha documentado soporte para otros idiomas.
-- La licencia Apache-2.0 corresponde al repositorio original, pero el autor recomienda revisar la licencia del dataset ViMD antes de un uso comercial.
-- En Q8_0 y Q4_1, tres tensores de convolucion del codificador de audio se mantienen en F16 por incompatibilidad de formas con la cuantizacion por bloques, lo que puede afectar al comportamiento del codificador.
-- No se dispone de informacion sobre sesgos, riesgo de alucinacion o comportamiento en dominios acusticos dificiles (ruido, acentos, audio telefónico).
-- El repositorio registra 0 descargas y 0 likes en el momento de la consulta, por lo que no existe validacion de la comunidad.
-- No se dispone de informacion sobre latencia, throughput ni requisitos minimos de hardware verificados.
+- Las dos familias GGUF (`qwen3-asr.cpp` y CrispASR) no son intercambiables aunque compartan extension `.gguf`; usar el archivo equivocado con el runtime incorrecto puede fallar.
+- La calidad de transcripcion en vietnamita no ha sido evaluada ni publicada por el autor; el unico smoke test es en ingles.
+- La compatibilidad extremo a extremo y la calidad de transcripcion no estan establecidas de forma independiente para todos los runtimes.
+- El modelo esta especializado en vietnamita; su comportamiento en otros idiomas no esta documentado.
+- Riesgo de alucinacion y errores en audio con ruido, acentos o dominios especializados: no cuantificado en la informacion disponible.
+- La licencia Apache 2.0 permite uso comercial, pero el autor no ofrece garantias sobre el checkpoint base ni sobre las conversiones.
+- Los tamanos en disco no implican menor uso de RAM en tiempo de ejecucion ni mayor velocidad; el autor lo advierte explicitamente.
+- No hay informacion sobre sesgos, contexto maximo ni limitaciones de audio (duracion maxima, sample rate).
 
 ## Enlaces
-
-- Repositorio Hugging Face: https://huggingface.co/BaoKhuong/qwen3-asr-1.7b-vimd-full-GGUF
-- Modelo base (ajuste fino original): https://huggingface.co/duclvQ/qwen3-asr-1.7b-vimd-full
-- Herramienta de conversion qwen3-asr.cpp: https://github.com/predict-woo/qwen3-asr.cpp
+- Repositorio GGUF: https://huggingface.co/BaoKhuong/qwen3-asr-1.7b-vimd-full-GGUF
+- Checkpoint base: https://huggingface.co/duclvQ/qwen3-asr-1.7b-vimd-full
+- Runtime qwen3-asr.cpp: https://github.com/predict-woo/qwen3-asr.cpp
 - Script de conversion: https://github.com/predict-woo/qwen3-asr.cpp/blob/main/scripts/convert_hf_to_gguf.py
+- Runtime CrispASR: https://github.com/CrispStrobe/CrispASR
+- Archivo CrispASR F16: https://huggingface.co/BaoKhuong/qwen3-asr-1.7b-vimd-full-GGUF/blob/main/qwen3-asr-1.7b-vimd-crisp-f16.gguf
+- Archivo CrispASR Q8_0: https://huggingface.co/BaoKhuong/qwen3-asr-1.7b-vimd-full-GGUF/blob/main/qwen3-asr-1.7b-vimd-crisp-q8_0.gguf

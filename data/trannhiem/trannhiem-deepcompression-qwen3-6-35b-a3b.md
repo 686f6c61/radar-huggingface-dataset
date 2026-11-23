@@ -2,114 +2,108 @@
 
 ## Resumen
 
-TranNhiem-DeepCompression-Qwen3.6-35B-A3B es una versión comprimida del modelo vision-language con mezcla de expertos Qwen3.6-35B-A3B, publicada por el usuario trannhiem en Hugging Face. La compresión aplica la receta Collaborative Deep Compression (CDC), que combina dos etapas: poda de expertos enrutados (de 256 a 240 por capa, sin reentrenamiento) y cuantización NVFP4 (pesos y activaciones de 4 bits) únicamente sobre los expertos enrutados. El resto de componentes (atención, experto compartido, router y torre de visión) permanece en bf16.
+TranNhiem-DeepCompression-Qwen3.6-35B-A3B es una versión comprimida del modelo vision-lenguaje Qwen3.6-35B-A3B, un transformer de mezcla de expertos (MoE) desarrollado por Alibaba Qwen. La compresión la firma el usuario trannhiem y aplica una técnica propia denominada Collaborative Deep Compression (CDC), que combina poda de expertos enrutados y cuantización de baja precisión sobre los mismos. El resultado es un modelo que reduce el peso en disco de 67 GB a 22 GB (un 67 % menos) conservando, según el autor, el 99,8 % del rendimiento medio del modelo original sobre ocho benchmarks multimodales.
 
-El resultado es una reducción del peso en disco de 67 GB a 22 GB (21,4 GiB en memoria de GPU frente a 65,5 GiB del original), con un aumento medido del 35% en throughput de peticiones de texto por lotes y un 49% más de capacidad de caché KV bajo el mismo presupuesto de memoria. Según el autor, la degradación frente al modelo original es de aproximadamente medio punto en MMLU y dentro del ruido en el resto de benchmarks evaluados.
+El problema que resuelve es el coste de servir un MoE multimodal de gran tamaño: los expertos enrutados concentran casi todos los parámetros y son, por tanto, el objetivo natural de la compresión. La poda elimina 16 de los 256 expertos enrutados por capa (quedan 240 más uno compartido) sin reentrenamiento, y los expertos restantes se cuantizan a NVFP4 (4 bits en pesos y activaciones). Atención, experto compartido, router y torre de visión permanecen en bf16.
 
-La relevancia de esta ficha es doble: por un lado, documenta una técnica de compresión aplicable a modelos MoE multimodales; por otro, conviene señalar que la model card está marcada explícitamente como borrador (DRAFT) y contiene referencias pendientes (paper sin enlace, GIFs no publicados, mediciones de energía sin completar), lo que limita la verificabilidad de algunas afirmaciones.
+Es relevante ahora por dos motivos: primero, porque demuestra que la poda de expertos guiada por tráfico multimodal real (texto, imagen, multi-imagen y vídeo) transfiere entre arquitecturas y apenas degrada métricas; segundo, porque NVFP4 es el formato nativo de las GPU Blackwell de NVIDIA, de modo que el modelo está pensado para explotar los tensor cores FP4 de esa generación. El modelo cuenta con unos 18 000 millones de parámetros almacenados en safetensors (frente a los 35 000 millones nominales del base, antes de poda y cuantización), y la model card no declara una longitud de contexto explícita.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | MoE vision-language (Qwen3_5MoeForConditionalGeneration), 40 capas decoder con atención híbrida lineal + completa, top-8 routing más un experto compartido, tamaño intermedio de experto 512 |
-| Parametros totales | 17.993.110.896 (según safetensors del repo); el nombre del modelo indica 35B-A3B, discrepancia no aclarada en la model card |
-| Parametros activos | No disponible como cifra exacta; el nombre del modelo base indica "A3B" (aproximadamente 3B activos), sin confirmación numérica en la información proporcionada |
-| Longitud de contexto | No disponible (la model card menciona una prueba de capacidad de caché KV a 32K de contexto, pero no declara la ventana máxima del modelo) |
-| Tipos de cuantizacion | NVFP4 W4A4 en expertos enrutados (NVIDIA ModelOpt); bf16 en atención, experto compartido, router y torre de visión |
-| Idiomas soportados | No disponible |
+| Arquitectura | MoE multimodal (Qwen3_5MoeForConditionalGeneration), 40 capas decodificador con atención híbrida (lineal + completa), routing top-8 más un experto compartido, tamaño intermedio de experto 512 |
+| Parametros totales | 17.993.110.896 (según safetensors del repo comprimido); el base nominal es Qwen3.6-35B-A3B |
+| Parametros activos | no disponible (el base es A3B, es decir, ~3B activos por token, pero la model card no lo detalla para esta versión) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | NVFP4 W4A4 en expertos enrutados (NVIDIA ModelOpt); atención, experto compartido, router y torre de visión en bf16; etiqueta 8-bit en los tags de Hugging Face |
+| Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | Safetensors (librería transformers; tag 8-bit en Hugging Face) |
+| Formato de pesos | safetensors (librería transformers; servicio con vLLM ≥ 0.30.1) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es un transformer MoE multimodal con 40 capas decoder que combinan atención lineal y atención completa, routing top-8 sobre expertos enrutados más un experto compartido, y un tamaño intermedio de experto de 512. Acepta entradas de texto, imagen y vídeo. Sobre esta arquitectura, la compresión CDC aplica dos pilares: poda de expertos y cuantización.
+La arquitectura de partida es un MoE multimodal de Qwen con 40 capas de decodificador que combinan atención lineal y atención completa, routing top-8 sobre expertos enrutados más un experto compartido siempre activo, y un tamaño intermedio de experto de 512. El modelo acepta texto, imagen y vídeo como entrada. Sobre esta base, la compresión aplica dos pilares del pipeline CDC y omite un tercero.
 
-La poda (pilar A) puntúa cada experto enrutado por su contribución efectiva (peso del router multiplicado por el tamaño de su salida, promediado sobre los tokens enrutados a él). La calibración usa 256 conversaciones de texto y 256 conversaciones de imagen, multi-imagen y vídeo. Se eliminan los 16 expertos con menor puntuación por capa, sin reentrenamiento, reteniendo el 95% del peso de routing. La cuantización (pilar C) convierte los expertos enrutados restantes a NVFP4 (pesos y activaciones de 4 bits). El pilar B (clustering de pesos) no se aplicó porque requiere un kernel de tabla de búsqueda que vLLM no incluye. No se menciona en la información disponible ningún proceso de RLHF, DPO ni datos de entrenamiento adicionales: la compresión es post-hoc sobre el modelo base.
+El primer pilar es la poda de expertos enrutados. Cada experto se puntúa por su contribución efectiva: el peso del router multiplicado por el tamaño de su salida, promediado sobre los tokens que se le enrutan. Las puntuaciones se calculan a partir de 256 conversaciones de texto y 256 conversaciones con imagen, multi-imagen y vídeo, de modo que la selección no está sesgada hacia texto. Se eliminan los 16 expertos con menor puntuación de cada capa, sin reentrenamiento; los expertos conservados acumulan el 95 % del peso de routing. El segundo pilar cuantiza los expertos enrutados restantes a NVFP4 (4 bits en pesos y activaciones) mediante NVIDIA ModelOpt, dejando atención, experto compartido, router y torre de visión en bf16. El pilar de clustering de pesos (codebook) se descarta deliberadamente porque requiere un kernel de matriz con tabla de consulta que vLLM no distribuye, lo que impediría servir el modelo a velocidad razonable.
 
 ## Capacidades
 
-- Generación de texto y razonamiento conversacional multi-turno, heredados del modelo base Qwen3.6-35B-A3B.
-- Comprensión de imágenes y multi-imagen (pipeline image-text-to-text).
-- Comprensión de vídeo, con benchmark específico MVBench evaluado.
-- Capacidades OCR y de lectura de documentos (OCRBench evaluado).
-- Razonamiento sobre gráficos y diagramas (ChartQA, AI2D, MMMU, MMStar evaluados).
-- Evaluación con modo "thinking" desactivado en los benchmarks presentados; no se detalla el comportamiento con thinking activado.
-- Soporte de tool calling y function calling: no disponible en la información proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
-- Capacidades multilingües: no disponible en la información proporcionada.
+- Generación de texto y razonamiento conversacional multi-turno, heredados del base Qwen3.6.
+- Comprensión de imagen: descripción, respuesta a preguntas visuales, interpretación de gráficos y tablas (ChartQA) y lectura de texto en imágenes (OCRBench).
+- Comprensión de multi-imagen, útil para comparar o razonar sobre varias imágenes en una misma conversación.
+- Comprensión de vídeo (MVBench), con evaluación específica en la model card.
+- Capacidades de visión-lenguaje evaluadas en MMMU y MMStar, que cubren razonamiento multimodal y conocimiento.
+- Servicio nativo en vLLM ≥ 0.30.1 mediante el kernel MoE NVFP4, con endpoint compatible con la API de Hugging Face (`endpoints_compatible`).
+- Soporte de tool calling, agentes y modo thinking: no disponible en la información proporcionada.
+- Capacidades multilingües: no disponible (los idiomas no están declarados).
 
 ## Casos de uso
 
-- Despliegue de un VLM MoE en una sola GPU Blackwell: la reducción a 21,4 GiB de pesos permite servir el modelo en un B200 o GB200 con tensor-parallel 1, liberando memoria para caché KV y aumentando la concurrencia.
-- Procesamiento por lotes de documentos escaneados con OCR: el modelo mantiene OCRBench dentro del ruido respecto al original y el throughput de peticiones con imagen sube entre un 23% y un 36%, lo que abarata el coste por página en pipelines de digitalización.
-- Análisis de vídeo a escala: aunque el throughput de vídeo se mantiene prácticamente igual (0,79 req/s), la mayor capacidad de caché KV (5,51 M tokens frente a 3,69 M) permite encolar más peticiones concurrentes de vídeo largo sin recargar el modelo.
-- Asistentes conversacionales multimodales con contexto largo: la ganancia del 49% en capacidad de caché KV a 32K de contexto favorece conversaciones multi-turno con historial extenso e imágenes intercaladas.
-- Servicio de inferencia con vLLM en producción: el modelo está pensado para el kernel nativo NVFP4 MoE de vLLM ≥ 0.30.1, lo que simplifica el despliegue estándar sin necesidad de kernels personalizados.
-- Evaluación comparativa de técnicas de compresión: sirve como referencia práctica para investigadores que quieran medir el impacto de poda más cuantización en modelos MoE multimodales, con la cautela de que la model card es un borrador.
-- Prototipado con presupuesto de memoria ajustado: frente a los 65,5 GiB del original, los 21,4 GiB permiten alojar el modelo junto con otros servicios en el mismo nodo, algo inviable con la versión bf16 en una sola GPU.
+- Servicio de VQA en producción sobre GPU Blackwell: el modelo responde preguntas sobre imágenes con pesos NVFP4 y kernel nativo de vLLM, lo que permite desplegar un VLM MoE en una sola GPU profesional en lugar de requerir el base de 67 GB.
+- Extracción de datos de documentos y gráficos: ChartQA y OCRBench se mantienen por encima del 90 % y del 88 % respectivamente, de modo que el modelo sirve para digitalizar tablas, facturas e informes escaneados con pérdida de precisión inferior al 0,5 %.
+- Moderación y análisis de contenido audiovisual: la retención del 100,4 % en MVBench indica que la poda no degrada la comprensión de vídeo, por lo que encaja en pipelines que clasifican o describen clips.
+- Asistentes conversacionales multimodales: el modelo acepta texto e imagen en la misma conversación y conserva el 99,4 % en MMLU, suficiente para atención al cliente que adjunta capturas de pantalla.
+- Despliegue en estaciones de trabajo con RTX PRO 6000 Blackwell o DGX Spark (GB10): 21,4 GiB de pesos en memoria GPU caben en estas tarjetas, lo que habilita prototipado local de un VLM MoE sin clúster.
+- Escalado de throughput en inferencia por lotes: el autor declara un +35 % de throughput en batching y un +49 % de capacidad de caché KV, lo que reduce el coste por petición en servicios de alto volumen.
+- Evaluación comparativa de técnicas de compresión: al publicar el desglose por benchmark y la semilla de calibración, sirve como referencia reproducible para investigar poda de expertos en modelos multimodales.
 
 ## Benchmarks y rendimiento
 
-La model card presenta diferencias en puntos porcentuales frente al modelo bf16 original, medidas ítem a ítem, con thinking desactivado y media ± desviación estándar sobre 3 semillas de calibración de poda. No se aportan valores absolutos de los benchmarks, solo deltas.
+Resultados de precisión (%) medidos por el autor sobre el mismo stack de servicio, con thinking desactivado. La fila de este modelo es la puntuación original más el cambio medio emparejado sobre 3 semillas de calibración de poda.
 
-| Benchmark | Delta vs. bf16 original (puntos porcentuales) |
-|---|---|
-| MMLU | −0,49 ± 0,19 |
-| AI2D | −0,20 ± 0,18 |
-| ChartQA | −0,35 ± 0,40 |
-| MMBench | −0,25 ± 0,22 |
-| MMMU | −0,71 ± 0,77 |
-| MMStar | +0,58 ± 0,32 |
-| OCRBench | −0,27 ± 0,25 |
-| MVBench (vídeo) | +0,31 ± 0,27 |
-
-Métricas de eficiencia medidas en una GPU GB200, tensor-parallel 1, vLLM 0.30.1rc1, utilización de memoria 0,85, media de 3 ejecuciones intercaladas con el modelo bf16 (64 peticiones, 256 tokens generados cada una):
-
-| Métrica | bf16 base | Este modelo | Cambio |
+| Benchmark | Original bf16 | Este modelo | Rendimiento retenido |
 |---|---|---|---|
-| Peticiones de texto por lotes (req/s) | 8,97 | 12,12 | +35% |
-| Peticiones con imagen por lotes (req/s, dos conjuntos) | 19,16 / 12,91 | 26,03 / 15,85 | +36% / +23% |
-| Peticiones de vídeo por lotes (req/s) | 0,79 | 0,79 | ≈ |
-| Decodificación single-stream (tokens/s) | 298 | 313 | +5% |
-| Eficiencia energética (tokens por julio) | 12,8 | pendiente | no disponible |
-| Pesos en memoria de GPU | 65,5 GiB | 21,4 GiB | −67% |
-| Capacidad de caché KV con 32K de contexto | 3,69 M tokens | 5,51 M tokens | +49% |
+| MMLU | 82,15 | 81,66 | 99,4 % |
+| AI2D | 88,12 | 87,92 | 99,8 % |
+| ChartQA | 88,52 | 88,17 | 99,6 % |
+| MMBench | 91,43 | 91,18 | 99,7 % |
+| MMMU | 66,67 | 65,96 | 98,9 % |
+| MMStar | 67,40 | 67,98 | 100,9 % |
+| OCRBench | 90,90 | 90,63 | 99,7 % |
+| MVBench (vídeo) | 74,54 | 74,85 | 100,4 % |
 
-El autor advierte que reevaluar un mismo checkpoint mueve estos benchmarks alrededor de 1 punto, por lo que las diferencias por debajo de esa cifra no se consideran significativas.
+Cambio detallado en puntos porcentuales frente al original (emparejado ítem a ítem, media ± desviación típica sobre 3 semillas): MMLU −0,49 ± 0,19; AI2D −0,20 ± 0,18; ChartQA −0,35 ± 0,40; MMBench −0,25 ± 0,22; MMMU −0,71 ± 0,77; MMStar +0,… (el dato queda truncado en la model card). Los valores por encima del 100 % se sitúan dentro del ruido de evaluación y deben leerse como ausencia de pérdida medible, no como mejora.
+
+Métricas de eficiencia declaradas por el autor: tamaño en disco de 67 GB a 22 GB, pesos en memoria GPU de 65,5 GiB a 21,4 GiB, +35 % de throughput en batching y +49 % de capacidad de caché KV. Todas las cifras se midieron en GB200.
 
 ## Requisitos de hardware
 
-- VRAM para inferencia: 21,4 GiB de pesos en GPU según la medición del autor; el repo ocupa 22,8 GB en disco.
-- GPU recomendadas: NVIDIA Blackwell (B200 / GB200, sm100) para la ruta nativa W4A4 con vLLM ≥ 0.30.1. En generaciones anteriores de GPU no se probó el modelo según la model card.
-- Compatibilidad con GPU de consumo: no confirmada. El requisito de kernel NVFP4 nativo apunta a Blackwell, por lo que no hay datos sobre RTX 4090 u otras GPU consumer.
-- Opciones de despliegue: vLLM ≥ 0.30.1 (ruta nativa NVFP4 MoE). Con versiones anteriores de vLLM, los expertos caen a una ruta más lenta de solo pesos (medida por el autor, sin cifra publicada). No se mencionan llama.cpp, Ollama ni TGI.
-- Latencia y throughput: 313 tokens/s en decodificación single-stream y 12,12 req/s en texto por lotes en una GB200 con tensor-parallel 1; el throughput de vídeo no mejora (0,79 req/s).
+- VRAM estimada: 21,4 GiB de pesos en memoria GPU según el autor (frente a 65,5 GiB del base en bf16). Hay que sumar la caché KV y el overhead del runtime de vLLM.
+- GPU recomendadas: NVIDIA Blackwell. La model card cita GB200 como plataforma de medida, y como objetivo de despliegue RTX PRO 6000 Blackwell, DGX Spark (GB10) y GeForce RTX 50-series.
+- Cabe en GPU de consumo: sí, en la gama RTX 50-series Blackwell, siempre que la VRAM total cubra pesos más caché KV. El autor advierte que las Blackwell de estación de trabajo y consumo usan kernels FP4 distintos de los de B200/GB200 y que su velocidad no se ha probado.
+- GPU pre-Blackwell (Hopper, Ada, Ampere): no tienen tensor cores FP4. El modelo puede cargarse, pero los expertos caen en una ruta de solo pesos más lenta (medida por el autor).
+- Opciones de despliegue: vLLM ≥ 0.30.1 con kernel MoE NVFP4 nativo. Con versiones anteriores de vLLM se activa la ruta de solo pesos, sensiblemente más lenta. La librería declarada es transformers; no se mencionan llama.cpp, Ollama ni TGI para este formato.
+- Latencia y throughput: +35 % de throughput en batching y +49 % de capacidad de caché KV frente al base, medidos en GB200. No se publican valores absolutos de latencia por token.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
+| Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| TranNhiem-DeepCompression-Qwen3.6-35B-A3B | 17.993.110.896 según safetensors (nombre comercial 35B-A3B) | No disponible | Apache 2.0 | Hugging Face, vLLM ≥ 0.30.1 en Blackwell | Compresión CDC: poda a 240 expertos + NVFP4 en expertos enrutados |
-| Qwen3.6-35B-A3B (base) | 35B totales, ~3B activos según nomenclatura | No disponible | Apache 2.0 | Hugging Face | Modelo original bf16, 67 GB en disco y 65,5 GiB en GPU; referencia de los deltas de benchmark |
-| TranNhiem-DeepCompression-Gemma4-26B-A4B-it | No disponible | No disponible | No disponible | Hugging Face (release hermano) | Misma receta CDC aplicada a Gemma-4-26B; la poda se desarrolló primero en este modelo |
-| Otras alternativas de la misma categoría | No disponible | No disponible | No disponible | No disponible | No se han proporcionado datos de otros modelos comparables |
+| TranNhiem-DeepCompression-Qwen3.6-35B-A3B | 17,99 B almacenados (base nominal 35B-A3B) | no disponible | 99,8 % del base en media sobre 8 benchmarks multimodales | Apache 2.0 | Hugging Face, servicio vLLM en Blackwell |
+| Qwen3.6-35B-A3B (base) | 35B-A3B nominal; 65,5 GiB en bf16 | no disponible | Referencia de la tabla anterior (MMLU 82,15; MMMU 66,67) | Apache 2.0 | Hugging Face |
+| TranNhiem-DeepCompression-Gemma4-26B-A4B-it (release hermano) | no disponible | no disponible | no disponible en esta ficha | no disponible | Hugging Face |
+
+El release hermano sobre Gemma4-26B-A4B-it comparte la receta CDC y sirve como segunda referencia de la técnica, pero la información disponible no incluye sus cifras de rendimiento ni su licencia.
 
 ## Limitaciones y advertencias
 
-- La model card está marcada como DRAFT (2026-11-06) e incluye tareas pendientes: enlace al paper sin publicar, GIFs no disponibles, fila de energía sin completar y celdas de capacidad de contexto largo pendientes de medición. La verificabilidad de las afirmaciones es, por tanto, limitada.
-- Existe una discrepancia entre el nombre del modelo (35B-A3B) y el recuento real de parámetros en safetensors (17.993.110.896); la model card no la explica.
-- El formato NVFP4 requiere una GPU NVIDIA Blackwell y vLLM ≥ 0.30.1 para velocidad nativa. En versiones anteriores de vLLM se usa una ruta de solo pesos más lenta, y no se probaron otras generaciones de GPU.
-- La poda de expertos se calibró con 256 conversaciones de texto y 256 multimodales; dominios alejados de esa distribución podrían degradarse más de lo que reflejan los benchmarks publicados.
-- Los benchmarks se midieron con thinking desactivado; no hay datos sobre el comportamiento con el modo de razonamiento activado.
-- El autor indica que reevaluar un checkpoint mueve los benchmarks alrededor de 1 punto, de modo que las diferencias pequeñas no son concluyentes.
-- No se dispone de información sobre sesgos, riesgo de alucinación específico, idiomas soportados ni soporte de tool calling; estas limitaciones del modelo base no se detallan en la información proporcionada.
-- Licencia Apache 2.0, que permite uso comercial, pero conviene verificar la licencia del modelo base Qwen3.6-35B-A3B en su propio repositorio.
+- Dependencia de hardware: NVFP4 solo acelera en Blackwell. En Hopper, Ada o Ampere el modelo funciona por una ruta de solo pesos más lenta, lo que puede anular la ventaja de throughput.
+- Dependencia de software: requiere vLLM ≥ 0.30.1 para el kernel MoE NVFP4. Versiones anteriores degradan el rendimiento medido.
+- Cobertura de hardware no verificada: las cifras se midieron en GB200; el autor no ha probado velocidad ni soporte de kernels en RTX PRO 6000, DGX Spark ni RTX 50-series.
+- La poda elimina expertos sin reentrenamiento. Aunque la retención media es del 99,8 %, MMMU es el benchmark más afectado (−0,71 ± 0,77 puntos) y la desviación típica es amplia, de modo que en dominios de razonamiento multimodal puede haber pérdida perceptible.
+- El pilar de clustering no se aplicó por incompatibilidad con vLLM; no debe esperarse la compresión adicional que aportaría esa etapa.
+- Sesgos conocidos: no disponibles en la información proporcionada. Al derivar de Qwen3.6, hereda los sesgos del base, que la model card no documenta.
+- Riesgo de alucinación: no cuantificado en la información disponible; es un VLM generativo y debe tratarse como tal en producción.
+- Idiomas soportados: no declarados. No se puede garantizar cobertura multilingüe más allá de lo que herede del base.
+- Longitud de contexto: no declarada, lo que impide dimensionar la caché KV con precisión (el autor solo indica que la capacidad de caché KV crece un 49 %).
+- Licencia Apache 2.0: permite uso comercial, pero conviene revisar la licencia del modelo base Qwen3.6-35B-A3B enlazada en la model card por si añade condiciones.
+- Madurez: 512 descargas y 6 likes en el momento de la consulta, con una model card que referencia un paper aún sin enlace público. Tratar como artefacto de investigación, no como release estable.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/trannhiem/TranNhiem-DeepCompression-Qwen3.6-35B-A3B
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
-- Licencia del modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B/blob/main/LICENSE
-- Release hermano (Gemma-4): https://huggingface.co/trannhiem/TranNhiem-DeepCompression-Gemma4-26B-A4B-it
-- Paper "Collaborative Deep Compression for Foundation Models": enlace pendiente de publicación según la model card (no disponible)
+- Licencia del base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B/blob/main/LICENSE
+- Release hermano: https://huggingface.co/trannhiem/TranNhiem-DeepCompression-Gemma4-26B-A4B-it
+- Paper "Collaborative Deep Compression for Foundation Models": enlace no disponible (anunciado como "coming soon" en la model card)

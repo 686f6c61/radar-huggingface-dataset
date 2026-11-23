@@ -1,0 +1,52 @@
+{
+  "schema": 2,
+  "id": "mradermacher/GameDojo-4B-GGUF",
+  "slug": "mradermacher-gamedojo-4b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/GameDojo-4B-GGUF",
+  "created_at": "2026-11-23T04:04:02.000Z",
+  "updated_at": "2026-11-23T04:25:38.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "gamedojo",
+    "game-agent",
+    "computer-use",
+    "en",
+    "dataset:THUSI-Lab/GameDojo",
+    "base_model:THUSI-Lab/GameDojo-4B",
+    "base_model:quantized:THUSI-Lab/GameDojo-4B",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4205751296,
+  "parameters_human": "4.21B",
+  "storage_bytes": 40197937024,
+  "storage_human": "40.2 GB",
+  "context_length": 262144,
+  "base_model": "THUSI-Lab/GameDojo-4B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

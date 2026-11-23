@@ -21,8 +21,8 @@
     "base_model:quantized:Wan-AI/Wan2.1-T2V-1.3B",
     "region:us"
   ],
-  "likes": 74,
-  "downloads_30d": 1355048,
+  "likes": 75,
+  "downloads_30d": 1331877,
   "trending_score": 0,
   "parameters": 4841450496,
   "parameters_human": "4.84B",

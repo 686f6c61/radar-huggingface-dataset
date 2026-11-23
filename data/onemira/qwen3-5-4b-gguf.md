@@ -2,80 +2,100 @@
 
 ## Resumen
 
-Qwen3.5-4B-GGUF es un espejo (mirror) de los pesos cuantizados del modelo Qwen3.5-4B, publicado por el usuario onemira para su uso en el runtime local de OneMira. No se trata de un modelo original, sino de una copia byte a byte del fichero `Qwen3.5-4B-Q4_K_M.gguf` generado por Unsloth a partir del modelo base Qwen/Qwen3.5-4B. El modelo subyacente es un transformer denso de aproximadamente 4.205 millones de parámetros, distribuido bajo licencia Apache-2.0.
+Qwen3.5-4B-GGUF es un espejo (mirror) del modelo Qwen3.5-4B en formato GGUF, concretamente la cuantizacion Q4_K_M generada por Unsloth y redistribuida por el usuario onemira. El modelo original Qwen3.5-4B es un transformer denso de 4.205.751.296 parametros desarrollado por el equipo Qwen (Alibaba), y esta version GGUF esta pensada para inferencia local con llama.cpp. La licencia es Apache-2.0, lo que permite uso comercial sin restricciones adicionales.
 
-La relevancia de este repositorio es acotada: sirve como artefacto fijado (pinned) y verificado por hash SHA-256 para garantizar reproducibilidad en despliegues locales. El interés técnico recae en el modelo base Qwen3.5-4B, no en este mirror, que se limita a empaquetar una cuantización Q4_K_M en formato GGUF para su uso con llama.cpp y runtimes compatibles.
+El repositorio no aporta informacion tecnica propia sobre el modelo base: se limita a fijar una revision concreta del archivo `Qwen3.5-4B-Q4_K_M.gguf` (2740937888 bytes, SHA-256 verificado) para garantizar reproducibilidad binaria. El autor lo mantiene como dependencia del runtime local de OneMira Desktop, donde se usa para generar resumenes de reuniones, decisiones y entradas de wiki en Markdown de forma offline.
 
-La información pública disponible sobre este repositorio es mínima: la model card solo documenta el origen, la revisión upstream, el tamaño del fichero y su hash. No se publican detalles sobre arquitectura interna, datos de entrenamiento, idiomas soportados ni benchmarks.
+Su relevancia practica es doble: por un lado, ofrece un artefacto GGUF verificado por hash para despliegues que requieren integridad byte a byte; por otro, sirve como ejemplo de modelo de 4B parametros cuantizado en Q4_K_M que cabe en hardware de consumo. No se dispone de informacion sobre la arquitectura interna, el contexto o los datos de entrenamiento del modelo base en la documentacion proporcionada.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible |
-| Parámetros totales | 4.205.751.296 |
-| Parámetros activos | no disponible (no se indica que sea MoE) |
+| Arquitectura | no disponible (modelo base Qwen3.5-4B; presumiblemente transformer denso, sin confirmar) |
+| Parametros totales | 4.205.751.296 |
+| Parametros activos | no aplica (no consta como MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantización | Q4_K_M (fichero incluido); otras cuantizaciones no disponibles en este repo |
+| Tipos de cuantizacion | Q4_K_M (unica incluida en este repositorio) |
 | Idiomas soportados | no disponible |
 | Licencia | Apache-2.0 |
-| Formato de pesos | GGUF (fichero `Qwen3.5-4B-Q4_K_M.gguf`, 2.740.937.888 bytes) |
+| Formato de pesos | GGUF (archivo `Qwen3.5-4B-Q4_K_M.gguf`) |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información sobre la arquitectura interna del modelo base Qwen/Qwen3.5-4B en la documentación proporcionada. Por el recuento de parámetros (≈4,2 mil millones) se trata de un modelo de escala pequeña, pero no se confirma si es un transformer denso, híbrido o de otro tipo, ni se detallan mecanismos de atención, capas o vocabulario.
+No se dispone de informacion sobre la arquitectura interna del modelo base Qwen3.5-4B en la documentacion proporcionada. El dato de parametros totales (4.205.751.296) corresponde al modelo en safetensors, lo que confirma que se trata de un modelo denso de aproximadamente 4,2 mil millones de parametros. No se especifica si emplea attention lineal, decodificacion especulativa, mezcla de expertos ni ninguna otra innovacion.
 
-Tampoco se documentan los datos de entrenamiento (número de tokens, composición del corpus, fases de RLHF/DPO) ni innovaciones técnicas como decodificación especulativa o atención lineal. El único dato técnico verificable es el proceso de cuantización: el fichero GGUF en Q4_K_M fue generado por Unsloth (repositorio upstream `unsloth/Qwen3.5-4B-GGUF`, revisión `e87f176479d0855a907a41277aca2f8ee7a09523`) y replicado sin modificaciones por onemira, con hash SHA-256 `00fe7986ff5f6b463e62455821146049db6f9313603938a70800d1fb69ef11a4`.
+Respecto al entrenamiento, no hay datos sobre numero de tokens, composicion del dataset, fases de RLHF, DPO ni tecnicas de alineacion. La unica informacion tecnica verificable es el proceso de cuantizacion: el autor declara un espejo que preserva bytes del archivo generado por Unsloth en la revision `e87f176479d0855a907a41277aca2f8ee7a09523`, con tamano de 2740937888 bytes y SHA-256 `00fe7986ff5f6b463e62455821146049db6f9313603938a70800d1fb69ef11a4`. Esta verificacion por hash es relevante para pipelines que exigen integridad del artefacto.
 
 ## Capacidades
 
-- Generación de texto conversacional: el tag `conversational` sugiere uso en diálogo, aunque no se detallan capacidades específicas.
-- Compatibilidad con llama.cpp: el formato GGUF y el tag `llama-cpp` indican que puede ejecutarse en dicho runtime.
-- Compatibilidad con endpoints: el tag `endpoints_compatible` apunta a integración con APIs de inferencia compatibles.
-- Capacidades de razonamiento, código, matemáticas, visión, tool calling, agentes o multilingüismo: no disponibles en la información proporcionada.
+- Generacion de texto conversacional: el tag `conversational` del repositorio indica uso previsto para dialogos multi-turno.
+- Resumen de contenido: el caso de uso declarado por el autor es la sintesis de reuniones (resumenes, decisiones, tareas de accion, mapas mentales).
+- Generacion de Markdown estructurado: produce entradas de wiki en formato Google OKF v0.2.
+- Ejecucion local offline: compatible con llama.cpp y runtimes derivados (Ollama, LM Studio, etc., por compatibilidad de formato GGUF).
+- Compatibilidad con endpoints: el tag `endpoints_compatible` sugiere que puede servirse mediante APIs compatibles con el formato de Hugging Face Endpoints.
+- Tool calling / function calling: no disponible en la informacion proporcionada.
+- Capacidades de agente y razonamiento multi-paso: no disponible en la informacion proporcionada.
+- Vision, audio o modo thinking: no disponible en la informacion proporcionada.
+- Cobertura multilingue: no disponible; el fabricante del dispositivo menciona 99 idiomas para la transcripcion de voz, pero no se atribuye esa cobertura al modelo de lenguaje.
 
 ## Casos de uso
 
-- Despliegue local de un asistente conversacional: al ser un GGUF Q4_K_M de ~2,7 GB, puede cargarse en llama.cpp u Ollama para prototipos de chat en máquinas con recursos limitados.
-- Reproducibilidad en pipelines de CI: el hash SHA-256 fijado permite verificar la integridad del artefacto antes de desplegarlo en entornos de producción o pruebas.
-- Integración en runtimes embebidos: el tamaño contenido del fichero facilita su inclusión en aplicaciones de escritorio con inferencia local (por ejemplo, el runtime Bundled Local AI de OneMira).
-- Evaluación comparativa de cuantizaciones: sirve como referencia Q4_K_M para medir degradación de calidad frente a otras cuantizaciones del mismo modelo base.
-- Servicio de inferencia ligero en CPU/GPU modesta: adecuado para tareas de generación de texto de baja latencia en hardware consumer.
-- Base para fine-tuning o adaptación: al estar bajo Apache-2.0 y derivar de Qwen/Qwen3.5-4B, puede usarse como punto de partida en flujos que requieran pesos cuantizados.
+- Resumen de reuniones offline: el modelo se integra en OneMira Desktop para generar resumenes estructurados, decisiones y tareas de accion a partir de transcripciones, sin subir audio a la nube. Su tamano de 4B y la cuantizacion Q4_K_M permiten ejecucion en portatiles sin GPU dedicada.
+- Generacion de notas wiki en Markdown: produce entradas en formato Google OKF v0.2 que el usuario puede editar localmente, lo que encaja en flujos de gestion de conocimiento personal.
+- Asistente conversacional embebido: el tag `conversational` y el formato GGUF lo hacen adecuado para chatbots de escritorio con contexto multi-turno gestionado por la aplicacion anfitriona.
+- Despliegue en entornos con requisitos de privacidad: al ejecutarse integramente en local, sirve para sectores (legal, salud, RR. HH.) donde no se permite enviar datos a APIs externas.
+- Prototipado rapido con llama.cpp: desarrolladores que necesitan un modelo de 4B cuantizado para pruebas de integracion, benchmarking de latencia o validacion de pipelines de inferencia local.
+- Distribucion reproducible de artefactos: el hash SHA-256 y la revision fijada permiten usar el modelo como dependencia verificable en sistemas de build o contenedores.
+- Educacion e investigacion: modelo ligero para experimentos de cuantizacion, evaluacion de calidad Q4_K_M frente a FP16 o estudios de degradacion por cuantizacion.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: el fichero Q4_K_M ocupa 2.740.937.888 bytes (≈2,55 GiB); se recomienda al menos 3-4 GiB de VRAM/RAM para cargar el modelo con margen para el contexto.
-- GPU recomendadas: no disponibles en la información proporcionada; por tamaño, cabría en GPUs consumer con ≥4 GiB (por ejemplo, RTX 3050 6 GB, RTX 4060, GTX 1660 Super 6 GB).
-- Cabe en GPU consumer: sí, previsiblemente en modelos con 4-8 GiB de VRAM.
-- Opciones de despliegue: llama.cpp (formato nativo GGUF), Ollama y runtimes compatibles con GGUF; vLLM y TGI no soportan GGUF de forma nativa sin conversión.
-- Latencia y throughput: no disponibles.
+- VRAM estimada para inferencia: aproximadamente 2,7 GB solo para los pesos en Q4_K_M; con overhead de contexto y cache KV, entre 3,5 y 5 GB segun longitud de contexto.
+- GPU recomendadas: cualquier GPU con 6 GB o mas de VRAM (RTX 3060, RTX 4060, RTX 4090, A100, H100). El modelo es sobredimensionado para GPUs de datacenter, que lo ejecutarian con enorme margen.
+- Compatibilidad con GPU de consumo: si, cabe en GTX 1660 (6 GB), RTX 3050, RTX 3060, RTX 4060 y superiores. Tambien puede ejecutarse en CPU con llama.cpp a velocidades aceptables.
+- Opciones de despliegue: llama.cpp (runtime declarado por el autor), Ollama, LM Studio, llama-cpp-python, y servidores compatibles con GGUF. No se confirma soporte de vLLM ni TGI (que priorizan safetensors).
+- Latencia y throughput: no disponible. Como referencia orientativa no verificada, un modelo de 4B en Q4_K_M suele generar entre 15 y 40 tokens/s en GPUs de consumo medias y entre 5 y 15 tokens/s en CPU moderna, pero estos valores no proceden de la documentacion del modelo.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Licencia | Formato | Disponibilidad |
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| onemira/Qwen3.5-4B-GGUF (este) | 4.205.751.296 | no disponible | Apache-2.0 | GGUF Q4_K_M | Hugging Face |
-| Qwen/Qwen3.5-4B (base) | no disponible | no disponible | no disponible | safetensors (presumible) | Hugging Face |
-| unsloth/Qwen3.5-4B-GGUF (upstream) | no disponible | no disponible | no disponible | GGUF (varias) | Hugging Face |
+| Qwen3.5-4B (este, Q4_K_M) | 4,2B | no disponible | Apache-2.0 | GGUF | Espejo verificado por hash |
+| Qwen3.5-4B original (safetensors) | 4,2B | no disponible | Apache-2.0 | safetensors | Modelo base, sin cuantizar |
+| Otros GGUF de Unsloth (misma familia) | 4,2B | no disponible | Apache-2.0 | GGUF | Multiples cuantizaciones (Q2 a Q8) |
+| Alternativas de ~4B (p. ej. Llama 3.2 3B, Phi-3.5-mini) | 3-4B | variable | variable | safetensors/GGUF | No se dispone de datos comparativos verificados en la informacion proporcionada |
 
-No se dispone de datos de rendimiento ni de especificaciones completas de los modelos comparables en la información proporcionada.
+No se dispone de datos de rendimiento que permitan una comparacion cuantitativa fiable con modelos alternativos.
 
 ## Limitaciones y advertencias
 
-- Es un mirror, no un modelo original: cualquier limitación del modelo base Qwen/Qwen3.5-4B se hereda sin cambios.
-- No se documentan sesgos conocidos, riesgos de alucinación ni limitaciones idiomáticas del modelo base en la información disponible.
-- Solo se incluye la cuantización Q4_K_M; no hay otras variantes (Q5, Q8, FP16) en este repositorio.
-- La licencia Apache-2.0 permite uso comercial, pero conviene verificar la licencia del modelo base Qwen/Qwen3.5-4B, que no se detalla aquí.
-- El repositorio tiene 0 descargas y 0 likes, lo que sugiere escasa validación comunitaria; la reproducibilidad depende del hash SHA-256 publicado.
-- No se especifican requisitos de contexto ni límites de tokens; el rendimiento real dependerá de la configuración del runtime (llama.cpp, Ollama, etc.).
+- Ausencia de documentacion tecnica: el repositorio no aporta informacion sobre contexto, idiomas, datos de entrenamiento ni benchmarks, lo que dificulta evaluar su idoneidad para tareas distintas del resumen.
+- Cuantizacion unica: solo se ofrece Q4_K_M; no hay variantes Q5, Q6, Q8 ni FP16 en este repositorio, lo que limita el ajuste fino de la relacion calidad/memoria.
+- Degradacion por cuantizacion: Q4_K_M introduce perdida de precision respecto al modelo original, especialmente en tareas de razonamiento matematico y codigo.
+- Riesgo de alucinacion: inherente a los modelos de lenguaje de este tamano; el autor no documenta tasas de error ni evaluaciones de fidelidad en resumenes.
+- Sesgos: no documentados. Al no conocerse la composicion del dataset de entrenamiento, no es posible evaluar sesgos de genero, etnia o idioma.
+- Restricciones de licencia: Apache-2.0 permite uso comercial, modificacion y redistribucion con atribucion; no obstante, conviene verificar la licencia del modelo base Qwen3.5-4B por si difiere.
+- Dependencia de un unico mantenedor: el espejo lo mantiene un fabricante de hardware (OneMira) para su propio producto; no hay garantia de actualizaciones ni de soporte a largo plazo.
+- Idioma: no se confirma soporte de castellano ni de otros idiomas; el uso en produccion multilingue requeriria validacion previa.
+- Contexto desconocido: sin dato de ventana de contexto, no se puede garantizar el comportamiento en conversaciones largas o documentos extensos.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/onemira/Qwen3.5-4B-GGUF
 - Repositorio upstream (Unsloth): https://huggingface.co/unsloth/Qwen3.5-4B-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
+- Producto OneMira C1: https://onemira.com/products/c1
+- OneMira C1 en Amazon US: https://www.amazon.com/dp/B0HM6YDLJ4
+- Comparativa de grabadoras de voz con IA: https://onemira.com/compare
+- Guia de grabadoras sin suscripcion: https://onemira.com/ai-voice-recorder-without-subscription
+- Dataset TCO de grabadoras de voz: https://huggingface.co/datasets/onemira/ai-voice-recorder-without-subscription-2026
+- Servidor MCP OKF Wiki: https://github.com/onemira-space/okf-wiki-mcp
+- Registro oficial MCP: https://registry.modelcontextprotocol.io/v0.1/servers?search=okf-wiki-mcp
+- Validador OKF Markdown: https://www.npmjs.com/package/okf-markdown
+- Tarjeta de servidor MCP: https://onemira.com/.well-known/mcp/server-card.json
+- Plantillas de actas de reunion: https://onemira.com/meeting-minutes-templates

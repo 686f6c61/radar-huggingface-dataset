@@ -2,117 +2,111 @@
 
 ## Resumen
 
-Este repositorio contiene una conversion a OpenVINO IR en BF16 de `guglxni/Qwen3.5-9B-abliterated-DFlash`, que a su vez es un modelo borrador (draft) de decodificacion especulativa basado en DFlash y entrenado contra una version abliterated de la familia Qwen3.5-9B. No es un modelo autonomo: se acopla a un modelo objetivo Qwen3.5-9B y propone bloques de tokens candidatos que el objetivo verifica. Su autora es el usuario `blaj`, y el repositorio se publica bajo licencia Apache-2.0.
+`blaj/Qwen3.5-9B-abliterated-DFlash-bf16-ov` es la conversion a formato OpenVINO IR (BF16, sin cuantizar y con grafo *stateful*) de un modelo borrador (*draft model*) para decodificacion especulativa DFlash, construido sobre la familia Qwen3.5-9B. No es un modelo autonomo: se acopla a un modelo objetivo (*target*) Qwen3.5-9B y propone tokens candidatos que el objetivo verifica, acelerando la generacion sin alterar la distribucion de salida. Lo publica el usuario `blaj` bajo licencia Apache-2.0.
 
-Tecnicamente es un transformer borrador de 5 capas con block size 16 que consume los hidden states de cinco capas concretas del objetivo (ids `[1, 8, 15, 22, 29]`), concatenados en un tensor de anchura 20480 (5 x 4096). Esa geometria es especifica del objetivo abliterated para el que fue entrenado: emparejarlo con el Qwen3.5-9B original carga y genera correctamente, pero no aporta aceleracion, porque el borrador predice a partir de representaciones que no vio durante el entrenamiento.
+La pieza diferencial es que el borrador deriva de una variante *abliterated* (sin censura, con las direcciones de rechazo suprimidas) tanto del borrador original `z-lab/Qwen3.5-9B-DFlash` como del objetivo `lukey03/Qwen3.5-9B-abliterated`. El modelo consume los *hidden states* de cinco capas concretas del objetivo (1, 8, 15, 22 y 29), concatenados en un tensor de 20480 dimensiones, y emplea una arquitectura `DFlashDraftModel` de 5 capas con decodificacion por difusion de bloques (*block diffusion*).
 
-Su relevancia es doble. Por un lado, demuestra una ruta de conversion practica a OpenVINO IR de una arquitectura con codigo custom (`dflash.py`) que `optimum-cli` no exporta de forma estandar. Por otro, sirve como pieza de infraestructura para desplegar Qwen3.5-9B abliterated sobre hardware Intel (CPU, Arc, NPU) con decodificacion especulativa, un escenario donde las alternativas de aceleracion en formato GGUF o safetensors no son directamente utilizables.
+Su relevancia practica es acotada pero clara: permite obtener aceleraciones de entre 1,80x y 2,26x sobre inferencia en iGPU Intel Arc con OpenVINO Model Server, y sirve como referencia tecnica de como exportar correctamente un borrador DFlash a OpenVINO, un proceso con varias trampas documentadas por el autor.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | `DFlashDraftModel`, transformer borrador de 5 capas con block size 16 para decodificacion especulativa |
+| Arquitectura | `DFlashDraftModel` (5 capas), decodificacion especulativa por difusion de bloques |
 | Parametros totales | no disponible |
-| Parametros activos | no disponible (no es un modelo MoE) |
+| Parametros activos | no aplica (no es MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | BF16 sin cuantizar en este repositorio; existen builds hermanas en int4 e int8 |
+| Tipos de cuantizacion | BF16 (este repo, sin cuantizar); existen builds hermanos int4 e int8 |
 | Idiomas soportados | no disponible |
-| Licencia | apache-2.0 |
-| Formato de pesos | OpenVINO IR (`openvino_model.xml` y pesos asociados); el modelo upstream se distribuye en safetensors |
-| Tarea declarada | text-generation |
-| Modelo objetivo | Qwen3.5-9B abliterated (`lukey03/Qwen3.5-9B-abliterated`) |
-| Capas objetivo usadas | `[1, 8, 15, 22, 29]` (5 capas) |
-| Anchura de `hidden_states` | 20480 (5 capas x 4096) |
-| Anchura de `inputs_embeds` | 4096 |
-| Salida | `last_hidden_state` |
-| Tamano del repositorio | 4,0 GB segun la model card (los metadatos de Hugging Face indican 0,0 GB) |
+| Licencia | Apache-2.0 |
+| Formato de pesos | OpenVINO IR (`openvino_model.xml` + binarios), stateful |
+| Capas objetivo consumidas | `[1, 8, 15, 22, 29]` |
+| Entrada `hidden_states` | `[batch, seq, 20480]` (5 capas x 4096) |
+| Tamano del repo | 12,6 GB en Hugging Face (la model card indica 4,0 GB para el artefacto IR) |
 | Libreria | openvino |
-| Descargas / likes | 0 / 0 en el momento de la consulta |
-| Fecha de creacion | 2026-09-21 |
+| Pipeline | text-generation |
 
 ## Arquitectura y entrenamiento
 
-El modelo implementa un borrador de decodificacion especulativa de tipo DFlash, una variante de decodificacion especulativa con generacion por bloques (block diffusion): en lugar de proponer un unico token por paso, el borrador propone un bloque de 16 tokens candidatos que el modelo objetivo valida en una sola pasada. Para generar esas propuestas, el borrador no parte de la secuencia de tokens, sino de los hidden states intermedios que el objetivo exporta desde las capas 1, 8, 15, 22 y 29, que se concatenan hasta formar un tensor de 20480 dimensiones. A eso se suma un `noise_embedding` que en la conversion se ha mapeado desde `inputs_embeds`. El numero de parametros del borrador, el volumen de datos de entrenamiento, la composicion del dataset y si hubo fases de RLHF o DPO no se detallan en la informacion disponible.
+El modelo es un borrador de decodificacion especulativa basado en DFlash (paper arXiv:2602.06036), una tecnica de *block diffusion* en la que el borrador propone varios tokens por paso en lugar de uno solo, y el modelo objetivo los acepta o rechaza en bloque. La arquitectura `DFlashDraftModel` consta de 5 capas y no procesa tokens de entrada de forma convencional: su senal principal son los *hidden states* intermedios del objetivo, tomados de las capas 1, 8, 15, 22 y 29 y concatenados en un vector de 20480 dimensiones. Esta dependencia es estricta: el objetivo emparejado debe exponer los metadatos `hidden_states_decoder_layers`, o la especulacion devuelve cero tokens aceptados de forma silenciosa.
 
-La innovacion destacable de este repositorio es la propia conversion. El repositorio upstream incluye codigo de modelado custom (`dflash.py`) cuyo `auto_map` apunta a si mismo, lo que impide que `optimum-cli` lo exporte: la comprobacion con entrada ficticia falla porque su `forward` recibe `target_hidden` y no acepta el contrato `hidden_states` / `inputs_embeds` que generan los exportadores. La solucion aplicada consiste en cargar la clase parcheada `Qwen3DFlashDraftModel` de optimum, heredar de ella y anadir un alias de `inputs_embeds` sobre `noise_embedding`, forzando ademas `tie_word_embeddings = False`, `dflash = True` y el `task="text-generation"` (la clase de configuracion interna rechaza la forma `text-generation-with-past` que usa la CLI). El IR resultante se verifico contra el contrato de entrada del borrador upstream: `inputs_embeds [?,?,4096]`, `hidden_states [?,?,20480]` y `last_hidden_state` como salida.
+El entrenamiento se hereda del linaje `z-lab/Qwen3.5-9B-DFlash` (borrador original) y `guglxni/Qwen3.5-9B-abliterated-DFlash` (version abliterated), mas el objetivo `lukey03/Qwen3.5-9B-abliterated`. No se dispone de datos sobre volumen de tokens, composicion del dataset ni si hubo RLHF/DPO en la informacion proporcionada. La conversion a OpenVINO se realizo con `optimum-intel` y NNCF, exportando mediante la clase parcheada `Qwen3DFlashForCausalLM` (no la `Qwen3DFlashDraftModel` base) para obtener un grafo *stateful* con entrada `beam_idx` y una unica salida `last_hidden_state`.
 
 ## Capacidades
 
-- Decodificacion especulativa por bloques: propone bloques de 16 tokens candidatos para que el modelo objetivo los verifique en una sola pasada.
-- Consumo de representaciones internas: lee los hidden states de cinco capas concretas del objetivo (ids `[1, 8, 15, 22, 29]`) y los proyecta a partir de un tensor de 20480 dimensiones.
-- Ejecucion en OpenVINO: el IR esta pensado para OpenVINO Model Server (OVMS) y para el stack de Intel (CPU, Arc, NPU).
-- Integracion mediante `--draft_model_path`: se acopla al objetivo en el arranque de OVMS y registra el mensaje `Draft model strategy: DFlash` seguido de `state: AVAILABLE` cuando el emparejamiento es correcto.
-- Requisito operativo: necesita que el prefix caching este desactivado (`--enable_prefix_caching false`).
-- Generacion de texto autonoma: no la soporta; el modelo no se ejecuta en solitario.
-- Tool calling, capacidades de agente, vision, audio y soporte multilingue: no disponibles en esta ficha; dependerian integramente del modelo objetivo, cuyas capacidades no se documentan en este repositorio.
-- Modo thinking: no disponible.
+- Generacion de tokens candidatos para decodificacion especulativa: no genera texto final por si mismo, sino propuestas que el objetivo verifica.
+- Aceleracion de inferencia del objetivo Qwen3.5-9B-abliterated en entornos Intel (CPU, iGPU Arc, NPU via OpenVINO).
+- Consumo de *hidden states* intermedios de cinco capas del objetivo, con contrato de entrada fijo de 20480 dimensiones.
+- Compatibilidad con OpenVINO Model Server mediante `--draft_model_path` y estrategia `DFlash`.
+- Requiere desactivar el *prefix caching* (`--enable_prefix_caching false`) en el servidor.
+- Variante *abliterated*: el objetivo emparejado no aplica rechazos de contenido, lo que se traslada al comportamiento del conjunto.
+- No soporta tool calling, agentes, vision ni audio por si mismo; esas capacidades dependen exclusivamente del modelo objetivo.
+- Capacidades multilingues: no disponibles en la informacion proporcionada.
 
 ## Casos de uso
 
-- Aceleracion de inferencia de Qwen3.5-9B abliterated en hardware Intel: el caso de uso principal. Se despliega el objetivo junto a este borrador en OVMS con `--draft_model_path` y `--enable_prefix_caching false`, de modo que el objetivo verifique bloques de 16 tokens en lugar de generar token a token.
-- Despliegue on-premise en entornos con GPU Intel Arc: al estar en formato OpenVINO IR, es utilizable en servidores con Arc A770, B580 o similares, donde los drafts en safetensors o GGUF no se integran de forma nativa. El repositorio BF16 ocupa 4,0 GB y se suma al peso del objetivo.
-- Reduccion de coste por token en endpoints de chat: si el emparejamiento es correcto, la verificacion por bloques reduce el numero de pasos de decodificacion del objetivo, lo que se traduce en mas tokens por segundo con el mismo hardware.
-- Investigacion en decodificacion especulativa: sirve como referencia reproducible para estudiar la tasa de aceptacion de un borrador DFlash y su sensibilidad a la geometria de capas objetivo, comparando el comportamiento con `z-lab/Qwen3.5-9B-DFlash`.
-- Validacion de pipelines de conversion a OpenVINO: el codigo de conversion documentado (subclase de `Qwen3DFlashDraftModel` con alias de `inputs_embeds`) es directamente reutilizable para exportar otros drafts con codigo custom que fallen en la comprobacion estandar de `optimum-cli`.
-- Servicio de baja latencia en streaming: en escenarios interactivos donde el usuario percibe el primer token y la velocidad sostenida, el borrador ataca directamente el cuello de botella de la decodificacion autoregresiva del objetivo.
-- Benchmarking interno de drafts: permite medir de forma controlada la degradacion que se produce al emparejar un borrador con un objetivo distinto al de entrenamiento, un error frecuente en despliegues de decodificacion especulativa.
-- Referencia en BF16 sin cuantizar: al no estar cuantizado, sirve como linea base para validar numericamente los builds int4 e int8 de la misma familia antes de pasarlos a produccion.
+- Aceleracion de inferencia en equipos Intel con iGPU Arc: desplegar el objetivo int4 junto a este borrador BF16 en OpenVINO Model Server para obtener 34,7 tok/s frente a 19,3 tok/s sin borrador, un 1,80x de mejora medido en Core Ultra 7 258V.
+- Prototipado en portatiles y mini-PC sin GPU dedicada: el par objetivo+borrador cabe en 30 GB de RAM y se ejecuta en iGPU Arc 130V/140V, lo que permite servir un modelo de 9B en hardware de consumo.
+- Referencia de exportacion para ingenieros de MLOps: la model card documenta el proceso completo de conversion a OpenVINO IR de un borrador DFlash, incluyendo las tres trampas que rompen silenciosamente el export (clase parcheada incorrecta, `use_past_in_inputs` por defecto en `False`, e inferencia de `library_name`).
+- Validacion de pipelines de decodificacion especulativa: usar el script `matrix_bench.py` y el harness descrito para comparar configuraciones de cuantizacion (int4, int8, BF16) con reinicio de servidor entre pruebas.
+- Investigacion sobre *abliteration*: estudiar el efecto de suprimir direcciones de rechazo en un borrador y en su objetivo, y como afecta a la tasa de aceptacion de tokens especulativos.
+- Despliegue de asistentes sin filtros de contenido en entornos controlados: el par abliterated permite generar texto sin rechazos para tareas de redaccion tecnica o creativa donde la censura del modelo base resulta limitante.
+- Benchmarking de hardware Intel: medir el rendimiento de OpenVINO 2026.4.0 sobre distintas generaciones de iGPU y CPU con una carga de trabajo reproducible de 128 tokens nuevos y decodificacion greedy.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks de calidad (MMLU, HumanEval, GSM8K u otros) en la informacion disponible. El unico dato de rendimiento aportado es una medicion de throughput en un emparejamiento incorrecto, que se reproduce tal cual:
+Mediciones del autor en Intel Core Ultra 7 258V (Arc 130V/140V), 30 GB RAM, OpenVINO Model Server 2026.4.0, dispositivo GPU, single-stream, 128 tokens nuevos maximos, decodificacion greedy, media de 3 ejecuciones tras calentamiento. Objetivo: `lukey03/Qwen3.5-9B-abliterated` en int4.
 
-| Emparejamiento | Borrador | Throughput medido |
-|---|---|---|
-| Objetivo Qwen3.5-9B vanilla | Este borrador (abliterated, 5 capas, `[1, 8, 15, 22, 29]`, 20480) | 6,3 tok/s |
-| Objetivo Qwen3.5-9B vanilla | `z-lab/Qwen3.5-9B-DFlash` (6 capas, `[1, 5, 9, 13, 17, 21, 25, 29]`, 32768) | 23,6 tok/s |
+| Borrador | Cuantizacion | tok/s | Aceleracion |
+|---|---|---|---|
+| ninguno (baseline) | — | 19,3 | — |
+| `z-lab/Qwen3.5-9B-DFlash` | int4 | 40,6 | 2,10x |
+| este borrador | int4 | 43,8 | 2,26x |
+| este borrador | int8 | 40,8 | 2,11x |
+| este borrador (repo BF16) | BF16 | 34,7 | 1,80x |
 
-La propia model card advierte que este resultado no mide el rendimiento real del modelo: con el objetivo vanilla, el borrador carga y genera correctamente pero sus propuestas se rechazan porque predice a partir de hidden states que no vio durante el entrenamiento. No se proporciona la cifra de throughput con el objetivo abliterated correcto (`lukey03/Qwen3.5-9B-abliterated`), que es el emparejamiento para el que fue entrenado.
+No se han publicado resultados de benchmarks de calidad (MMLU, HumanEval, GSM8K) en la informacion disponible; al ser un modelo borrador, su metrica relevante es la tasa de aceptacion y el throughput, no el rendimiento en tareas.
 
 ## Requisitos de hardware
 
-- VRAM del borrador: aproximadamente 4,0 GB en BF16, segun el tamano declarado del repositorio. Los builds hermanos en int4 e int8 reducen ese consumo.
-- VRAM total: hay que sumar el modelo objetivo Qwen3.5-9B completo. El presupuesto combinado depende de la cuantizacion elegida para el objetivo, dato no especificado en la informacion disponible.
-- GPU recomendadas: la model card esta orientada a Intel, con etiquetas explicitas de `intel` y `arc`. El stack de OpenVINO cubre CPU Intel, GPU Arc y NPU.
-- Cabe en GPU de consumo: si, al menos el borrador, en tarjetas Intel Arc con 12-16 GB o mas, siempre que el objetivo quepa junto a el o se sirva con cuantizacion. No hay datos publicados para GPUs NVIDIA o AMD en este repositorio.
-- Opciones de despliegue: OpenVINO Model Server (OVMS) es la ruta documentada, con `--model_path` para el objetivo y `--draft_model_path` para este borrador. La conversion se realizo con `optimum-intel` y NNCF.
-- Configuracion obligatoria: `--enable_prefix_caching false`, ya que DFlash requiere que el prefix caching este desactivado.
-- Latencia y throughput: el unico dato disponible es la comparativa de 6,3 frente a 23,6 tok/s en un emparejamiento incorrecto. No hay mediciones publicadas para el emparejamiento correcto ni para distintos backends de OpenVINO.
+- VRAM/RAM: el repo ocupa 12,6 GB en disco; la model card indica 4,0 GB para el artefacto IR. Con el objetivo int4 cargado simultaneamente, el conjunto se ejecuto en un equipo con 30 GB de RAM.
+- GPU recomendadas: iGPU Intel Arc 130V/140V (Core Ultra 7 258V) es el hardware de referencia medido. Cualquier GPU Intel Arc dedicada o iGPU con soporte OpenVINO deberia funcionar, aunque no hay cifras publicadas.
+- CPU: ejecutable en CPU Intel via OpenVINO, sin datos de rendimiento publicados.
+- Cabe en GPU de consumo: si, en iGPU Intel Arc integradas; no se ha validado en RTX 4090 ni otras GPU NVIDIA, ya que el formato es OpenVINO IR y no GGUF ni safetensors nativo.
+- Opciones de despliegue: OpenVINO Model Server (OVMS) 2026.4.0 con `--draft_model_path`; no compatible directamente con vLLM, llama.cpp, Ollama ni TGI en este formato.
+- Throughput medido: 34,7 tok/s en BF16, 43,8 tok/s en int4, 40,8 tok/s en int8, siempre con el objetivo int4 y single-stream.
+- Latencia: no disponible de forma desagregada; el throughput anterior implica aproximadamente 29 ms por token en BF16.
 
 ## Comparativa con modelos similares
 
-| Modelo | Tipo | Capas del borrador | Capas objetivo | Anchura de hidden states | Formato | Licencia |
+| Modelo | Tipo | Parametros | Contexto | Aceleracion medida | Licencia | Formato |
 |---|---|---|---|---|---|---|
-| `blaj/Qwen3.5-9B-abliterated-DFlash-bf16-ov` | Borrador DFlash, conversion OpenVINO | 5 | `[1, 8, 15, 22, 29]` | 20480 | OpenVINO IR BF16 | apache-2.0 |
-| `z-lab/Qwen3.5-9B-DFlash` | Borrador DFlash upstream | 6 | `[1, 5, 9, 13, 17, 21, 25, 29]` | 32768 | no disponible | no disponible |
-| `guglxni/Qwen3.5-9B-abliterated-DFlash` | Borrador DFlash abliterated (origen de esta conversion) | no disponible | no disponible | no disponible | safetensors | Apache-2.0 |
-| `blaj/Qwen3.5-9B-abliterated-DFlash-int4-ov` | Misma pieza en int4 | 5 | `[1, 8, 15, 22, 29]` | 20480 | OpenVINO IR int4 | apache-2.0 |
-| `blaj/Qwen3.5-9B-abliterated-DFlash-int8-ov` | Misma pieza en int8 | 5 | `[1, 8, 15, 22, 29]` | 20480 | OpenVINO IR int8 | apache-2.0 |
+| este repo (BF16) | Borrador DFlash abliterated | no disponible (5 capas) | no disponible | 1,80x | Apache-2.0 | OpenVINO IR |
+| `guglxni/Qwen3.5-9B-abliterated-DFlash` | Borrador DFlash abliterated (origen) | no disponible | no disponible | no disponible | Apache-2.0 | safetensors |
+| `z-lab/Qwen3.5-9B-DFlash` | Borrador DFlash original | no disponible | no disponible | 2,10x (int4) | no disponible | safetensors |
+| `lukey03/Qwen3.5-9B-abliterated` | Objetivo abliterated (no es borrador) | 9B (nominal) | no disponible | — | Apache-2.0 | safetensors |
 
-La comparativa con `lukey03/Qwen3.5-9B-abliterated` (el objetivo) no procede en terminos de parametros, porque es un modelo generativo completo y no un borrador. El dato diferencial frente al draft de z-lab es la geometria de capas: distinta profundidad, distintos ids de capa y distinta anchura de hidden states, lo que hace que los dos borradores no sean intercambiables entre objetivos sin degradar el rendimiento.
+La comparacion relevante es entre borradores: el de `z-lab` alcanza 2,10x en int4 y el de este repo 2,26x en int4, una diferencia de aproximadamente un 8% atribuible a la variante abliterated. En BF16 el rendimiento cae a 1,80x, por debajo de las versiones cuantizadas.
 
 ## Limitaciones y advertencias
 
-- No es un modelo autonomo. No genera texto por si solo: necesita un modelo objetivo Qwen3.5-9B acoplado mediante `--draft_model_path`.
-- Emparejamiento obligatorio. Fue entrenado contra un objetivo abliterated (`lukey03/Qwen3.5-9B-abliterated`). Con el Qwen3.5-9B vanilla la generacion funciona pero el rendimiento se desploma (6,3 tok/s frente a 23,6 tok/s del borrador de z-lab en el mismo objetivo), porque las propuestas se rechazan.
-- Geometria no intercambiable. No se puede sustituir por `z-lab/Qwen3.5-9B-DFlash` sin cambiar tambien el objetivo: los ids de capa y la anchura de hidden states son distintos.
-- Prefix caching desactivado. Es una restriccion operativa obligatoria que limita las optimizaciones habituales de servido en conversaciones con prefijos largos y repetidos.
-- Naturaleza abliterated. El objetivo asociado ha sido sometido a abliteration, es decir, se han eliminado direcciones de rechazo en el espacio de activaciones. Esto reduce las negativas del modelo a peticiones danables y traslada al operador toda la responsabilidad sobre filtrado y moderacion en produccion.
-- Riesgo de alucinacion. No hay evaluaciones publicadas de fidelidad, veracidad o tasas de alucinacion para este borrador ni para el objetivo abliterated asociado.
-- Idiomas y contexto. No se declara lista de idiomas ni longitud de contexto soportada en la informacion disponible.
-- Ausencia de validacion externa. El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, y no se han publicado resultados de benchmarks de calidad.
-- Discrepancia de datos. Los metadatos de Hugging Face indican un tamano de repositorio de 0,0 GB, mientras que la model card declara 4,0 GB. Conviene verificar el peso real de los ficheros antes de planificar el despliegue.
-- Licencia. La tarjeta declara Apache-2.0 tanto para este borrador como para sus modelos base. No se detallan en la informacion disponible las condiciones de licencia de Qwen3.5 upstream, por lo que conviene verificarlas antes de un uso comercial.
+- No es un modelo autonomo: sin un objetivo Qwen3.5-9B compatible y con metadatos `hidden_states_decoder_layers`, la especulacion produce cero tokens aceptados sin emitir error.
+- El objetivo debe emparejarse con las capas exactas `[1, 8, 15, 22, 29]`; un objetivo distinto invalida el borrador.
+- Requiere desactivar el *prefix caching* en OVMS, lo que penaliza cargas con prefijos repetidos.
+- La variante *abliterated* elimina los rechazos de contenido: puede generar material que el modelo base bloquearia. No apta para produccion orientada al publico sin moderacion externa.
+- Riesgo de alucinacion: heredado del objetivo; el borrador no lo mitiga, solo acelera la decodificacion.
+- Solo formato OpenVINO IR: no usable con vLLM, llama.cpp, Ollama ni TGI sin conversion adicional.
+- Sin datos publicados de contexto maximo, idiomas soportados ni numero de parametros.
+- El rendimiento medido corresponde a un unico hardware (Core Ultra 7 258V) y a decodificacion greedy single-stream; no hay datos para batch, sampling ni otras GPUs.
+- La licencia Apache-2.0 permite uso comercial, pero la condicion de modelo derivado de Qwen3.5 conviene verificarla en los repositorios de origen.
+- El repo tiene 428 descargas y 0 likes en el momento de la consulta, con actualizacion en noviembre de 2026; es un artefacto de nicho con escasa validacion comunitaria.
 
 ## Enlaces
 
-- Repositorio en Hugging Face: https://huggingface.co/blaj/Qwen3.5-9B-abliterated-DFlash-bf16-ov
-- Build hermana en int4: https://huggingface.co/blaj/Qwen3.5-9B-abliterated-DFlash-int4-ov
-- Build hermana en int8: https://huggingface.co/blaj/Qwen3.5-9B-abliterated-DFlash-int8-ov
-- Borrador abliterated upstream: https://huggingface.co/guglxni/Qwen3.5-9B-abliterated-DFlash
+- Repositorio Hugging Face: https://huggingface.co/blaj/Qwen3.5-9B-abliterated-DFlash-bf16-ov
+- Borrador abliterated de origen: https://huggingface.co/guglxni/Qwen3.5-9B-abliterated-DFlash
 - Objetivo abliterated: https://huggingface.co/lukey03/Qwen3.5-9B-abliterated
-- Borrador DFlash upstream: https://huggingface.co/z-lab/Qwen3.5-9B-DFlash
-- Paper de DFlash: https://arxiv.org/abs/2602.06036
-
-La busqueda web realizada no devolvio resultados relevantes para este modelo: los unicos resultados obtenidos correspondian a paginas de reserva de vuelos de una aerolinea y no guardan relacion con el contenido de esta ficha.
+- Borrador DFlash original: https://huggingface.co/z-lab/Qwen3.5-9B-DFlash
+- Paper DFlash: https://arxiv.org/abs/2602.06036
+- Guia de conversion a OpenVINO IR: https://devnotes.page/posts/how-to-convert-models-to-openvino-ir/
+- Guia de conversion y ejecucion de DFlash con OpenVINO: https://devnotes.page/posts/how-to-convert-and-run-dflash-models-with-openvino/

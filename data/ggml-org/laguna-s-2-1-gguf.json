@@ -43,31 +43,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "ggml-org/Laguna-S-2.1-GGUF · Hugging Face",
-      "url": "https://huggingface.co/ggml-org/Laguna-S-2.1-GGUF",
-      "snippet": "Laguna-S-2.1-GGUF ... Deploy Copy to bucket new Use this model Notebooks Local Apps Settings"
-    },
-    {
-      "title": "ggml-org/Laguna-S-2.1-GGUF at main - Hugging Face",
-      "url": "https://huggingface.co/ggml-org/Laguna-S-2.1-GGUF/tree/main",
-      "snippet": "Instructions to use ggml-org/Laguna-S-2.1-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Notebooks Google Colab Kaggle Local AppsSettings llama.cpp Install (macOS, Linux)"
-    },
-    {
-      "title": "Laguna-S-2.1-GGUF · Models - modelscope.cn",
-      "url": "https://www.modelscope.cn/models/unsloth/Laguna-S-2.1-GGUF",
-      "snippet": "Use on OpenRouter · Use on Vercel AI Gateway · Release blog post Laguna S 2.1 Laguna S 2.1 is a 118B total parameter Mixture-of-Experts model with 8B activated parameters per token, designed for agentic coding and long-horizon work. It sits between Laguna XS 2.1 (33B-A3B) and Laguna M.1 (225B-A23B) in the Laguna series and shares the family recipe: a token-choice router with softplus gating ..."
-    },
-    {
-      "title": "Laguna S 2.1 GGUF - interfaze.ai",
-      "url": "https://interfaze.ai/models/unslothlaguna-s-21-gguf",
-      "snippet": "Laguna S 2.1 GGUF by unsloth, a text-generation model. Understand and compare features, benchmarks, and capabilities."
-    },
-    {
-      "title": "Laguna S 2.1 — The Free Coding AI That Tests Its Own Code",
-      "url": "https://github.com/network-tocoder/Laguna-S-2.1-The-Free-Coding-AI-That-Tests-Its-Own-Code",
-      "snippet": "Laguna S 2.1 is a free, open-weight coding model from Poolside AI, founded by Jason Warner (former CTO of GitHub, who incubated Copilot)."
-    }
-  ]
+  "sources": []
 }

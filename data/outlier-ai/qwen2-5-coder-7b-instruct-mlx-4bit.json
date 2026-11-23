@@ -89,7 +89,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 489,
+  "downloads_30d": 550,
   "trending_score": 0,
   "parameters": 7615616512,
   "parameters_human": "7.62B",
@@ -110,16 +110,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Outlier-Ai/Qwen2.5-Coder-7B-Instruct-MLX-4bit · Hugging Face",
-      "url": "https://huggingface.co/Outlier-Ai/Qwen2.5-Coder-7B-Instruct-MLX-4bit",
-      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
-    },
-    {
-      "title": "Outlier-Ai/Outlier-Coder-Qwen25-7B-MLX-4bit · Hugging Face",
-      "url": "https://huggingface.co/Outlier-Ai/Outlier-Coder-Qwen25-7B-MLX-4bit",
-      "snippet": "Apple Silicon build of Qwen2.5-Coder-7B-Instruct, quantized to 4-bit via mlx-lm. Part of the Outlier MLX library for Mac. Runs natively on M1, M2, M3, and M4 hardware. No fine-tuning, no merge, no proprietary data. This is a faithful 4-bit Apple Silicon port of the upstream base. Use the upstream ..."
-    }
-  ]
+  "sources": []
 }

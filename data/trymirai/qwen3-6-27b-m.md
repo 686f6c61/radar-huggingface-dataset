@@ -2,92 +2,92 @@
 
 ## Resumen
 
-El modelo `trymirai/Qwen3.6-27B-M` es una cuantización de 4 bits del modelo Qwen3.6-27B, preparada por Mirai Labs específicamente para inferencia local eficiente en Apple silicon. Utiliza una técnica de cuantización entera asimétrica de 4 bits con zero points de 4 bits, escalas en bfloat16 y tamaño de grupo 64, complementada con transformadas de Hadamard aleatorias por bloques para mitigar outliers en activaciones y pesos. El proceso combina post-training quantization con destilación consciente de cuantización, logrando según sus autores un MMLU-Pro dentro de la banda de ruido estocástico del modelo BF16 original.
+Mirai's Qwen3.6-27B Medium Quantization (identificador `trymirai/Qwen3.6-27B-M`) es una cuantizacion de 4 bits del modelo Qwen3.6-27B de Alibaba, desarrollada por Mirai Labs y publicada bajo licencia Apache 2.0. Su objetivo es permitir la inferencia local eficiente del modelo original en hardware Apple silicon, reduciendo el peso del checkpoint manteniendo una divergencia KL baja respecto al modelo de referencia. El autor situa este checkpoint en la frontera de Pareto tamano-KL: no encontro un checkpoint mas pequeno con menor divergencia KL.
 
-El modelo base Qwen3.6-27B es un modelo de lenguaje causal de 27B parámetros con encoder de visión, desarrollado por Alibaba Qwen, que destaca en coding agéntico, razonamiento de nivel repositorio y tareas de visión-lenguaje. Su arquitectura híbrida combina Gated DeltaNet (atención lineal) con Gated Attention (atención completa), con contexto nativo de 262.144 tokens extensible hasta aproximadamente 1.010.000 tokens. La versión cuantizada reduce los parámetros efectivos a 14.085.793.792 (~14B) y el tamaño del repositorio a 14,6 GB, manteniendo la licencia Apache 2.0.
+El modelo base es un transformer de Qwen con 27 mil millones de parametros nominales, aunque el checkpoint cuantizado almacena 14.085.711.872 parametros reales en formato safetensors (repositorio de 77,7 GB). La cuantizacion es de tipo entero asimetrico de 4 bits con zero points de 4 bits, escalas en bfloat16 y tamano de grupo 64, e incorpora transformadas de Hadamard aleatorias de bloque diagonal para reducir los valores atipicos en activaciones y pesos.
 
-La relevancia de este checkpoint radica en que permite ejecutar un modelo de 27B con calidad cercana a la precisión completa en hardware Apple, abriendo la puerta a despliegues locales de agentes de código y razonamiento largo en portátiles. La librería de inferencia es `uzu`, desarrollada por Mirai Labs, y actualmente solo soporta Apple silicon.
+La relevancia actual de esta ficha radica en que ejemplifica una tendencia creciente: checkpoints cuantizados de alta calidad con destilacion consciente de la cuantizacion, orientados a inferencia local en Mac. No obstante, la informacion publica es limitada: no se detallan idiomas soportados, benchmarks numericos ni la mayoria de especificaciones del modelo base, por lo que varios campos se marcan como no disponibles.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Híbrida: Gated DeltaNet (atención lineal) + Gated Attention + FFN, con encoder de visión |
-| Parametros totales | 14.085.793.792 (checkpoint cuantizado 4-bit); 27B en el modelo original |
-| Parametros activos | No aplica (modelo denso) |
-| Longitud de contexto | 262.144 tokens nativos, extensible hasta ~1.010.000 tokens |
-| Tipos de cuantizacion | 4-bit asimétrico con zero points 4-bit, escalas bfloat16, group size 64 |
-| Idiomas soportados | No disponible (el modelo base Qwen3.6 soporta múltiples idiomas, pero no se especifican en la ficha) |
+| Arquitectura | Transformer (hereda la del modelo base Qwen/Qwen3.6-27B; detalles no disponibles) |
+| Parametros totales | 14.085.711.872 (parametros reales del checkpoint cuantizado); el modelo base se denomina 27B |
+| Parametros activos | no disponible (no se indica que sea MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | 4 bits asimetrico con zero points de 4 bits, escalas bfloat16, group size 64; se mencionan tambien tags de 8 bits en el repositorio |
+| Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | Safetensors (librería de inferencia: uzu) |
+| Formato de pesos | safetensors (libreria `uzu`) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base Qwen3.6-27B presenta una arquitectura híbrida innovadora. La capa de lenguaje se organiza en 64 capas con un layout de 16 bloques, cada uno compuesto por 3 sub-bloques de Gated DeltaNet seguidos de FFN, y un sub-bloque final de Gated Attention seguido de FFN. La Gated DeltaNet utiliza 48 cabezas lineales para V y 16 para QK con dimensión de cabeza 128, mientras que la Gated Attention emplea 24 cabezas Q y 4 cabezas KV con dimensión 256 y RoPE de 64 dimensiones. El FFN tiene dimensión intermedia de 17408. El modelo incluye un encoder de visión, lo que lo convierte en multimodal (image-text-to-text). El entrenamiento incluye pre-entrenamiento y post-entrenamiento, con MTP (multi-token prediction) entrenado con multi-steps.
+La arquitectura subyacente es la del modelo Qwen/Qwen3.6-27B, un transformer del que no se proporcionan detalles estructurales en la informacion disponible (numero de capas, dimension oculta, atencion, contexto). El checkpoint publicado es el resultado de un proceso de cuantizacion post-entrenamiento seguido de destilacion consciente de la cuantizacion (quantization-aware distillation), lo que permite recuperar parte de la calidad perdida durante la compresion.
 
-El proceso de cuantización de Mirai Labs aplica una técnica de 4 bits asimétrica con zero points de 4 bits, escalas bfloat16 y group size 64. Se utilizan transformadas de Hadamard aleatorias por bloques diagonales (Block-diagonal Random Hadamard Transforms) para reducir outliers en activaciones y pesos. El checkpoint se preparó mediante post-training quantization seguido de destilación consciente de cuantización. Según la model card, en su configuración de evaluación, la puntuación MMLU-Pro está dentro de la banda de ruido estocástico del modelo BF16 de precisión completa.
+Tecnicamente, la cuantizacion emplea enteros asimetricos de 4 bits con zero points de 4 bits, escalas en bfloat16 y tamano de grupo 64. Para mitigar los valores atipicos en activaciones y pesos se aplican transformadas de Hadamard aleatorias de bloque diagonal (Block-diagonal Random Hadamard Transforms). El autor indica que, en su categoria de tamano y cuantizacion, el checkpoint es comparable al GGUF `Q4_K_M` de Unsloth para el mismo modelo base. No se detallan el volumen de tokens de entrenamiento, la composicion del dataset ni si hubo RLHF o DPO en el modelo original.
 
 ## Capacidades
 
-- Generación de texto y razonamiento complejo de múltiples pasos, con preservación del contexto de razonamiento histórico.
-- Coding agéntico: manejo de flujos de trabajo frontend y razonamiento a nivel de repositorio con alta fluidez y precisión.
-- Razonamiento STEM mejorado y capacidad de inferencia avanzada.
-- Capacidades de visión-lenguaje: inteligencia espacial, localización de objetos, detección, comprensión de video, OCR de documentos y agentes visuales.
-- Soporte de tool calling y function calling (heredado del modelo base Qwen3.6).
-- Capacidades multilingües (el modelo base soporta múltiples idiomas, aunque la ficha no detalla cuáles).
-- Thinking mode / modo de razonamiento (el modelo base Qwen3.6 incluye modos de pensamiento).
+- Generacion de texto: el pipeline declarado es `text-generation`.
+- Razonamiento y conversacion: hereda las capacidades del modelo base Qwen3.6-27B, si bien no se detallan en la informacion disponible.
+- Codigo y matematicas: no se documentan explicitamente para este checkpoint; dependen del modelo base.
+- Tool calling / function calling: no disponible en la informacion proporcionada.
+- Soporte de agentes y razonamiento multi-paso: el conjunto de evaluacion del autor incluye un 45% de datos publicos "agentic", lo que sugiere orientacion a cargas agenticas, aunque no se documentan capacidades concretas.
+- Capacidades multilingues: no disponible.
+- Capacidades especiales (vision, audio, thinking mode): no disponible.
+- Contexto largo: el conjunto de evaluacion incluye un 30% de datos publicos de SFT/contexto largo, pero no se especifica la ventana de contexto soportada.
 
 ## Casos de uso
 
-- Asistente de programación local en macOS: un desarrollador puede ejecutar `mirai --model trymirai/Qwen3.6-27B-M` en su MacBook para obtener ayuda de codificación con contexto de repositorio completo, sin depender de servicios en la nube.
-- Agente de automatización de tareas de frontend: gracias a su capacidad de coding agéntico, puede generar y modificar componentes de interfaz de usuario, gestionar flujos de trabajo de desarrollo web y razonar sobre la estructura de un proyecto.
-- Análisis de documentos extensos: con su contexto nativo de 262K tokens, puede procesar libros técnicos, manuales o codebases completos en una sola pasada, resumiendo y respondiendo preguntas sobre el contenido.
-- Asistente de investigación académica: su capacidad de razonamiento STEM permite resolver problemas matemáticos, explicar conceptos científicos y ayudar en la redacción de artículos técnicos.
-- Procesamiento de documentos con visión: al incluir encoder de visión, puede extraer texto de imágenes (OCR), interpretar diagramas y responder sobre contenido visual, útil en entornos de documentación técnica.
-- Despliegue de chatbots locales con privacidad: empresas que manejan datos sensibles pueden ejecutar el modelo en hardware Apple sin enviar información a servidores externos, manteniendo la confidencialidad.
+- Inferencia local en Mac para desarrollo: el modelo esta pensado para ejecutarse en Apple silicon mediante el CLI `mirai` (instalable con Homebrew), lo que permite probar un modelo de escala 27B en un portatil o equipo de sobremesa Apple sin GPU dedicada.
+- Prototipado de asistentes conversacionales: al ser un checkpoint de generacion de texto, puede usarse para construir prototipos de chat multi-turno en local antes de desplegar en infraestructura cloud.
+- Evaluacion de calidad de cuantizacion: util para investigadores que quieran medir la degradacion respecto al modelo original Qwen3.6-27B en tareas propias, dado el enfoque del autor en la relacion tamano-KL.
+- Flujos agenticos experimentales: el 45% de datos agenticos en la evaluacion sugiere idoneidad para probar pipelines de agentes locales, siempre que se valide el soporte real de tool calling.
+- Privacidad y despliegue offline: al ejecutarse en local, permite procesar texto sensible sin enviar datos a servicios externos, adecuado para entornos con requisitos de confidencialidad.
+- Base para ajuste fino o experimentacion: al estar en safetensors y bajo Apache 2.0, puede servir como punto de partida para experimentos de investigacion sobre modelos cuantizados.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks específicos para la cuantización `trymirai/Qwen3.6-27B-M` en la información disponible. La model card indica únicamente que el MMLU-Pro se encuentra dentro de la banda de ruido estocástico del modelo BF16 completo.
-
-Para el modelo base Qwen3.6-27B, según fuentes web, se reporta un 77,2% en SWE-bench Verified, superando al modelo Qwen3.5-397B-A17B. Sin embargo, no se dispone de una tabla detallada de benchmarks comparativos en la información proporcionada.
+No se han publicado resultados de benchmarks numericos (MMLU, HumanEval, GSM8K, etc.) en la informacion disponible. El autor solo aporta una grafica cualitativa de divergencia KL frente al tamano del checkpoint, indicando que el modelo se situa en la frontera de Pareto tamano-KL, y una descripcion de la mezcla de evaluacion (45% agentico publico, 30% SFT/contexto largo publico, 25% chat privado). No se ofrecen valores concretos de KL ni comparaciones numericas con otros checkpoints.
 
 ## Requisitos de hardware
 
-- Inferencia únicamente en Apple silicon (chips M1, M2, M3, M4 y sucesores). No se soporta GPU NVIDIA o AMD.
-- Tamaño del checkpoint: 14,6 GB, por lo que se recomienda un Mac con al menos 16 GB de memoria unificada para una experiencia fluida. Con 32 GB o más se puede aprovechar el contexto largo.
-- La instalación se realiza mediante Homebrew: `brew install mirai` y posteriormente `mirai --model trymirai/Qwen3.6-27B-M`.
-- Opciones de despliegue: CLI de Mirai (`mirai`), librería `uzu` (se puede compilar desde fuente según la guía de GitHub).
-- No se dispone de datos de latencia o throughput específicos para esta cuantización.
+- VRAM estimada: no disponible de forma explicita. El repositorio ocupa 77,7 GB, aunque el checkpoint cuantizado a 4 bits con 14.085.711.872 parametros reales sugiere un peso en memoria del orden de decenas de GB; el dato exacto no se proporciona.
+- GPU recomendadas: no se indican GPU NVIDIA ni AMD; el autor solo soporta inferencia en Apple silicon.
+- Compatibilidad con consumer GPU: no documentada. El soporte declarado es exclusivamente para Apple silicon (Mac con chip M-series).
+- Opciones de despliegue: CLI `mirai` (Homebrew) y la libreria `uzu`. No se mencionan vLLM, llama.cpp, Ollama ni TGI para este checkpoint.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Licencia | Formato | Notas |
+| Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| trymirai/Qwen3.6-27B-M | 14B (4-bit) | 262K nativo | Apache 2.0 | Safetensors (uzu) | Cuantización de Mirai Labs, solo Apple silicon |
-| unsloth/Qwen3.6-27B-GGUF (Q4_K_M) | ~14B (4-bit) | 262K nativo | Apache 2.0 | GGUF | Cuantización GGUF estándar, ejecutable en llama.cpp, Ollama, etc. |
-| Qwen3.6-27B (BF16) | 27B | 262K nativo | Apache 2.0 | Safetensors (Transformers) | Modelo original de precisión completa, requiere ~54 GB VRAM |
+| trymirai/Qwen3.6-27B-M | 14.085.711.872 reales (base 27B) | no disponible | 4 bits asimetrico, group size 64 | Apache 2.0 | Hugging Face, solo Apple silicon |
+| unsloth/Qwen3.6-27B-GGUF (Q4_K_M) | base 27B | no disponible | GGUF Q4_K_M | Apache 2.0 (heredada) | Hugging Face, ecosistema GGUF |
+| Qwen/Qwen3.6-27B (original) | 27B | no disponible | sin cuantizar (bfloat16) | Apache 2.0 | Hugging Face |
 
-La cuantización de Mirai se posiciona como comparable en calidad a la Q4_K_M de Unsloth, pero con la ventaja de estar optimizada para Apple silicon mediante la librería `uzu`. La principal limitación es que no es compatible con hardware no-Apple, mientras que el formato GGUF tiene un ecosistema más amplio.
+El autor compara explicitamente su checkpoint con el GGUF `Q4_K_M` de Unsloth en la misma categoria de tamano y cuantizacion. No se dispone de datos de rendimiento para establecer comparaciones cuantitativas con alternativas.
 
 ## Limitaciones y advertencias
 
-- Inferencia restringida exclusivamente a Apple silicon. No se puede ejecutar en GPUs NVIDIA, AMD ni en CPUs x86 convencionales.
-- La cuantización de 4 bits puede introducir degradaciones en tareas de precisión numérica o razonamiento matemático de alta exactitud, aunque los autores afirman que MMLU-Pro se mantiene dentro del ruido estocástico.
-- El modelo base es multimodal, pero no se especifica si la cuantización conserva íntegramente las capacidades de visión. Se recomienda verificar el comportamiento en tareas visuales antes de usarlo en producción.
-- No se dispone de información detallada sobre sesgos del modelo ni sobre su comportamiento en idiomas distintos del inglés.
-- La licencia Apache 2.0 permite uso comercial, pero se debe revisar la licencia del modelo base Qwen3.6-27B para confirmar restricciones adicionales (aunque la model card indica que la licencia es Apache 2.0).
-- La documentación de la librería `uzu` es limitada y el ecosistema es joven; puede haber menos soporte comunitario que con GGUF o Transformers.
-- El modelo tiene 0 descargas y 0 likes en Hugging Face, lo que sugiere que es un checkpoint reciente y poco probado por la comunidad.
+- La cuantizacion a 4 bits introduce degradacion respecto al modelo original; el autor la mitiga con destilacion consciente de la cuantizacion, pero no publica metricas de perdida.
+- Soporte exclusivo para Apple silicon: no hay ruta documentada para GPU NVIDIA, AMD ni CPU x86, lo que limita el despliegue en produccion convencional.
+- Idiomas soportados no documentados; no se puede garantizar cobertura multilingue.
+- Longitud de contexto no especificada; riesgoso para aplicaciones que dependan de ventanas largas.
+- Riesgo de alucinacion inherente a los modelos de lenguaje; no se documentan mitigaciones especificas.
+- Sesgos: no se documentan sesgos conocidos en la informacion disponible.
+- Licencia Apache 2.0 permite uso comercial, pero se recomienda verificar la licencia del modelo base y las condiciones de la libreria `uzu`.
+- El repositorio incluye tags de 4 bits y 8 bits, pero la model card solo describe la variante de 4 bits; conviene verificar que artefacto se descarga.
+- El modelo depende de una libreria y CLI propietarios del autor (`uzu`, `mirai`), lo que puede afectar a la portabilidad y al mantenimiento a largo plazo.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/trymirai/Qwen3.6-27B-M
-- Modelo base Qwen3.6-27B: https://huggingface.co/Qwen/Qwen3.6-27B
-- Guía de uso de la librería uzu: https://github.com/trymirai/uzu/blob/how-to/docs/how-to-run-uzu.md
-- Documentación de API de Mirai: https://docs.trymirai.com/
-- Blog de cuantización de Mirai: https://trymirai.com/blog/quantization
-- Repositorio oficial Qwen3.6: https://github.com/QwenLM/Qwen3.6
-- Blog de Qwen3.6-27B: https://qwen.ai/blog?id=qwen3.6-27b
-- Guía completa de Qwen 3.6-27B: https://www.aimadetools.com/blog/qwen-3-6-27b-complete-guide/
-- Guía de Qwen 3.6 local: https://insiderllm.com/guides/qwen-3-6-local-ai-guide/
+- Modelo base: https://huggingface.co/Qwen/Qwen3.6-27B
+- Model card del base: https://huggingface.co/Qwen/Qwen3.6-27B/blob/main/README.md
+- Licencia del base: https://huggingface.co/Qwen/Qwen3.6-27B/blob/main/LICENSE
+- GGUF comparable de Unsloth: https://huggingface.co/unsloth/Qwen3.6-27B-GGUF/blob/main/Qwen3.6-27B-Q4_K_M.gguf
+- Documentacion de ejecucion de uzu: https://github.com/trymirai/uzu/blob/how-to/docs/how-to-run-uzu.md
+- Blog de cuantizacion de Mirai: https://trymirai.com/blog/quantization
+- Pagina del modelo en Mirai: https://trymirai.com/local-models/alibaba-qwen3-6-27b-mirai-mirai-m-4

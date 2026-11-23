@@ -51,31 +51,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "mradermacher/Qwen3.8-Flash-Next-REAM-60Pct-i1-GGUF · Hugging Face",
-      "url": "https://huggingface.co/mradermacher/Qwen3.8-Flash-Next-REAM-60Pct-i1-GGUF",
-      "snippet": "mradermacher / Qwen3.8-Flash-Next-REAM-60Pct-i1-GGUF like 0 Transformers GGUF English qwen ream Merge merged compression mixture-of-experts Mixture of Experts ream-moe imatrix conversational Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
-    },
-    {
-      "title": "Qwen3.8-Flash-Next - GitHub",
-      "url": "https://github.com/QwenLM/Qwen3.8-Flash-Next/",
-      "snippet": "Qwen3.8-Flash-Next upgrades the model systematically along four aspects — attention, residual, embedding and optimization — improving model capability while further optimizing computational efficiency, model capacity and training stability: Attention A GDN + QSA hybrid architecture."
-    },
-    {
-      "title": "mradermacher (team mradermacher) - Hugging Face",
-      "url": "https://huggingface.co/mradermacher",
-      "snippet": "Feel free to suggest models to quant e.g. at https://huggingface.co/mradermacher/model_requests"
-    },
-    {
-      "title": "Qwen3.8 | OpenLM.ai",
-      "url": "https://openlm.ai/qwen3.8/",
-      "snippet": "Qwen3.8-Flash-Next Qwen3.8-Flash-Next is a multimodal MoE model that also serves as an early preview of the architecture used in Qwen4. It plays the same role that Qwen3-Next played for Qwen3.5: the hybrid Gated DeltaNet + Gated Attention design introduced at that time has since been used across the Qwen3.5, Qwen3.6, Qwen3.7 and Qwen3.8 series."
-    },
-    {
-      "title": "GitHub - QwenLM/Qwen3: Qwen3 is the large language model series ...",
-      "url": "https://github.com/QwenLM/Qwen3",
-      "snippet": "Over the past three months, we continued to explore the potential of the Qwen3 families and we are excited to introduce the updated Qwen3-2507 in two variants, Qwen3-Instruct-2507 and Qwen3-Thinking-2507, and three sizes, 235B-A22B, 30B-A3B, and 4B. Qwen3-Instruct-2507 is the updated version of the previous Qwen3 non-thinking mode, featuring the following key enhancements: Significant ..."
-    }
-  ]
+  "sources": []
 }

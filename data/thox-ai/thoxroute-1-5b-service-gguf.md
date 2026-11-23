@@ -2,95 +2,101 @@
 
 ## Resumen
 
-ThoxRoute-1.5B-Service-GGUF es una cuantización Q4_K_M en formato GGUF de un fine-tune de Qwen2.5-1.5B-Instruct, publicada por Thox-ai como modelo de clasificación y enrutado de intenciones ("service router") para nodos de servicio de baja memoria dentro de su stack propietario (MeshStack y ThoxOS). No es un asistente general: su propósito declarado es decidir a qué servicio o ruta debe dirigirse una petición de usuario en despliegues locales.
+ThoxRoute-1.5B-Service-GGUF es un artefacto GGUF publicado por Thox-ai (THOX.ai) construido sobre Qwen/Qwen2.5-1.5B-Instruct. Se presenta como un modelo de enrutamiento de intenciones y preferencias ("service router") destinado a nodos de servicio de baja memoria dentro de la pila propietaria del autor (MeshStack y ThoxOS). No es un asistente general: su propósito declarado es clasificar y dirigir peticiones dentro de una arquitectura de agentes, no mantener conversaciones abiertas con usuarios finales.
 
-El artefacto se distribuye como un único fichero de 1.117.320.704 bytes (~1,04 GiB), con arquitectura `qwen2`, plantilla de chat instruct estándar y contexto de 32.768 tokens según la cabecera GGUF. El modelo base subyacente es Qwen2.5-1.5B-Instruct, con 1.777.088.000 parámetros totales, y la licencia declarada es Apache-2.0.
+El repositorio contiene un único fichero GGUF en cuantización Q4_K_M de 1.117.320.704 bytes (~1,04 GiB), con arquitectura `qwen2`, 32.768 tokens de contexto y 1.777.088.000 parámetros según la cabecera del propio artefacto. La model card es explícita al calificar el artefacto como **UNVALIDATED ARTIFACT**: no se ha cargado, ni evaluado con benchmarks, ni verificado funcionalmente, y el autor advierte que nada de lo publicado constituye evidencia de que el enrutamiento funcione correctamente.
 
-Es relevante ahora por dos motivos contrapuestos: por un lado, ejemplifica la tendencia a publicar modelos pequeños especializados para enrutado y orquestación en el borde; por otro, la propia model card lo etiqueta explícitamente como "UNVALIDATED ARTIFACT", sin validación de runtime, sin benchmarks y con una discrepancia de tamaño no explicada respecto a un repositorio hermano. Es, por tanto, un artefacto a evaluar con cautela antes de cualquier uso en producción.
+La relevancia de esta ficha es fundamentalmente metodológica: ilustra un caso de publicación de pesos con procedencia parcialmente corroborada, licencia resuelta a posteriori (Apache-2.0, determinada el 2026-10-31 por el CTO de THOX.ai) y una discrepancia de tamaño sin explicar respecto a un repositorio hermano. Cualquier evaluador debe tratar el modelo como no validado y asumir que la carga útil real (la plantilla de chat incluida) es la plantilla instruct estándar de Qwen, sin plantilla de enrutamiento propia.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only, familia Qwen2 (`general.architecture = qwen2`) |
-| Parametros totales | 1.777.088.000 (etiqueta de tamaño del GGUF: 1.8B) |
-| Parametros activos | No aplica (modelo denso, no MoE) |
-| Longitud de contexto | 32.768 tokens (según cabecera GGUF) |
+| Arquitectura | Transformer decoder-only, familia Qwen2 (`general.architecture: qwen2`) |
+| Parametros totales | 1.777.088.000 (según cabecera GGUF; etiqueta de tamaño 1.8B) |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | 32.768 tokens |
 | Tipos de cuantizacion | Q4_K_M (único build publicado en el repositorio) |
-| Idiomas soportados | Inglés (`en`) |
-| Licencia | Apache-2.0 |
+| Idiomas soportados | en (inglés, según metadatos del Hub) |
+| Licencia | Apache-2.0 (resuelta el 2026-10-31; ver advertencias) |
 | Formato de pesos | GGUF (`thoxroute-service-q4_K_M.gguf`) |
-
-Datos adicionales del artefacto: SHA-256 `dcb4d041fa2ae90b5c3b713e9bd8e6c4b265388f4f81c804ae7a404737c4c1b2`; tokens especiales BOS `<|endoftext|>` y EOS `<|im_end|>`; nombre interno `general.name = "Service v1 Merged"`; tamaño del repositorio 1,1 GB; 280 descargas y 0 likes en el momento de la consulta.
+| Modelo base | Qwen/Qwen2.5-1.5B-Instruct |
+| Tokens especiales | BOS `<|endoftext|>`, EOS `<|im_end|>` |
+| Plantilla de chat | Plantilla instruct estándar de Qwen, con persona de sistema upstream por defecto; sin plantilla de enrutamiento THOX |
+| Tamano del fichero | 1.117.320.704 bytes (~1,04 GiB) |
+| SHA-256 | `dcb4d041fa2ae90b5c3b713e9bd8e6c4b265388f4f81c804ae7a404737c4c1b2` |
+| Tamano del repositorio | 1,1 GB |
+| Descargas | 443 |
+| Likes | 0 |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es la de Qwen2.5-1.5B-Instruct: un transformer decoder-only denso con atención completa, sin mecanismos híbridos ni atención lineal. El artefacto es una fusión ("merged build", según el campo `general.name`) de un adaptador fine-tuneado sobre ese base, posteriormente cuantizada a Q4_K_M. La cabecera GGUF confirma arquitectura `qwen2` y una etiqueta de tamaño de 1.8B, coherente con el base declarado.
+La arquitectura subyacente es la de Qwen2.5-1.5B-Instruct: un transformer decoder-only con atención causal estándar, sin mezcla de expertos ni mecanismos híbridos SSM. El artefacto es un merge y posterior cuantización Q4_K_M del supuesto fine-tune Thox-ai/ThoxRoute-1.5B; la cabecera GGUF embebida declara `general.name: "Service v1 Merged"`, coherente con un build fusionado destinado a despliegue de servicio. No se documentan innovaciones arquitectónicas propias: no hay decodificación especulativa, atención lineal ni modificación estructural alguna respecto al modelo base.
 
-Sobre el entrenamiento no hay información sustantiva publicada: la model card afirma que el corpus y el procedimiento se describen "as published at release" y que no se reclama ningún entrenamiento más allá de lo que la propia tarjeta documenta, pero no incluye número de tokens, composición del dataset, ni si hubo RLHF, DPO o ajuste supervisado. Tampoco se documenta ninguna innovación técnica de inferencia (decodificación especulativa, atención lineal, etc.). La plantilla de chat embebida es la estándar de Qwen instruct, incluyendo su persona de sistema por defecto, y no incorpora ninguna plantilla de enrutado propia de THOX; si el host no la sobrescribe, el modelo se presentará con su identidad upstream.
+Los datos de entrenamiento no están disponibles. La model card remite a la sección de resumen y evaluación para la descripción del corpus y del procedimiento, pero esa descripción no se incluye en el material proporcionado. No consta número de tokens de entrenamiento, composición del dataset, ni si se aplicó RLHF, DPO o alguna otra fase de alineamiento posterior al fine-tune. Tampoco se publica registro de construcción, log de conversión ni cadena de hashes que vincule el fichero GGUF con el adaptador de origen byte a byte, lo que impide verificar la procedencia de forma criptográfica.
 
 ## Capacidades
 
-- Generación de texto conversacional en inglés, heredada de Qwen2.5-1.5B-Instruct.
-- Clasificación y enrutado de intenciones hacia servicios internos (uso declarado principal: "intent and preference routing").
-- Seguimiento de instrucciones en formato chat mediante la plantilla instruct estándar de Qwen.
-- Manejo de contextos de hasta 32.768 tokens, útil para concatenar historial de conversación y catálogo de rutas en un mismo prompt.
-- Soporte de tool calling / function calling: no documentado explícitamente para este fine-tune; el base Qwen2.5-Instruct lo soporta, pero no hay evidencia publicada de que el ajuste lo preserve.
-- Capacidades de agente y razonamiento multi-paso: no documentadas.
-- Capacidades multilingües: limitadas al inglés según los metadatos del repositorio.
-- Capacidades especiales (modo thinking, visión, audio): no disponibles.
+- Generación de texto conversacional en inglés, heredada del modelo base Qwen2.5-1.5B-Instruct.
+- Clasificación y enrutamiento de intenciones y preferencias dentro de la pila THOX (uso previsto declarado por el autor).
+- Ventana de contexto de 32.768 tokens, suficiente para concatenar historial de conversación y metadatos de enrutamiento en una sola pasada.
+- Inferencia en dispositivo ("on-device") y en nodos de baja memoria, al ocupar ~1,04 GiB en Q4_K_M.
+- Compatibilidad con endpoints (`endpoints_compatible`) y con el ecosistema GGUF: llama.cpp, Ollama.
+- Capacidades de tool calling, function calling, razonamiento multi-paso, visión, audio y modo thinking: no disponibles. El modelo base es un instruct de texto de 1,5B sin estas funciones y la model card no declara ninguna extensión.
+- Capacidades multilingües: no disponibles. El metadato de idioma del Hub declara únicamente `en`.
 
 ## Casos de uso
 
-- Enrutado de peticiones en un nodo de servicio local: el modelo recibe la consulta del usuario y devuelve la etiqueta de servicio o ruta correspondiente; su tamaño de ~1 GB permite ejecutarlo en el mismo nodo que atiende la petición, sin llamadas a un backend remoto.
-- Clasificación de intenciones en asistentes de soporte: con 32.768 tokens de contexto se puede incluir el historial reciente y el catálogo de intenciones en el prompt para desambiguar peticiones como "reset my password" frente a "change my email".
-- Prefiltrado y desvío de tráfico en pasarelas de API: colocado delante de modelos mayores, decide qué peticiones requieren un modelo grande y cuáles puede resolver un servicio ligero, reduciendo coste por token.
-- Despliegue en dispositivos de borde con memoria limitada: la cuantización Q4_K_M (~1,04 GiB) encaja en equipos con 2-4 GB de RAM disponibles, incluyendo SBCs y mini-PC, mediante llama.cpp u Ollama.
-- Enrutado de preferencias de usuario en aplicaciones locales: seleccionar entre motores de búsqueda, fuentes de datos o modos de respuesta según preferencias declaradas previamente en el contexto.
-- Prototipado de pipelines de orquestación multi-servicio: servir como componente de decisión barato en pruebas de integración antes de sustituirlo por un clasificador entrenado con datos propios.
-- Entornos air-gapped o de soberanía de datos: al ser un GGUF autocontenido con licencia Apache-2.0, puede desplegarse sin dependencias externas ni telemetría.
+- Enrutamiento de intenciones en nodos de servicio con memoria restringida: el modelo se cargaría en un nodo MeshStack o ThoxOS para clasificar la petición entrante y derivarla al servicio correspondiente, aprovechando que el fichero Q4_K_M ocupa ~1,04 GiB y cabe en dispositivos con 2 GB de RAM libre. Requiere validación previa por parte del integrador, dado que el artefacto no está validado.
+- Puerta de preprocesado en pipelines de agentes: usar el modelo como primer eslabón que decide qué herramienta o sub-agente invoca el sistema, con el contexto de 32.768 tokens para incluir el historial reciente y el catálogo de servicios.
+- Despliegue local-first en estaciones de trabajo sin GPU: mediante llama.cpp u Ollama en CPU, con latencia de decodificación dominada por el ancho de banda de memoria del equipo; adecuado para volúmenes bajos de peticiones de clasificación.
+- Experimentación con cuantización Q4_K_M sobre Qwen2.5-1.5B: el repositorio sirve como referencia de hasta dónde degrada la cuantización a un modelo de 1,8B en tareas de clasificación corta, siempre que se construya un conjunto de evaluación propio.
+- Servicio de clasificación auxiliar en arquitecturas multi-modelo: colocado delante de un modelo grande, filtra y etiqueta peticiones para reducir el número de llamadas al modelo principal y, con ello, el coste por token.
+- Entorno de pruebas para políticas de guardarraíles: al ser un modelo pequeño y determinista en la forma de plantilla, permite iterar sobre reglas de seguridad y enrutamiento antes de trasladarlas a producción.
+- Verificación de integridad de artefactos en cadena de suministro de modelos: el SHA-256 publicado permite montar un control de integridad en el pipeline de despliegue, aunque la cadena de procedencia respecto al adaptador de origen no esté documentada.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card declara explícitamente el artefacto como "UNVALIDATED ARTIFACT": no ha sido cargado, evaluado ni verificado funcionalmente, y no se aporta ninguna métrica de precisión de enrutado, latencia ni throughput.
+No se han publicado resultados de benchmarks en la información disponible. La model card califica explícitamente el artefacto como no validado: no ha sido cargado, evaluado ni comprobado funcionalmente, y no se aportan métricas de precisión de enrutamiento, latencia ni throughput.
 
 ## Requisitos de hardware
 
-- VRAM/RAM estimada para inferencia: ~1,1 GB solo para los pesos en Q4_K_M; con overhead de contexto y caché KV, entre 1,5 y 3 GB según longitud de contexto (a 32.768 tokens la caché KV crece de forma significativa en un modelo de 28 capas y 2 cabeceras KV).
-- GPU recomendadas: cualquier GPU con ≥4 GB de VRAM; RTX 3060, RTX 4060, RTX 4090, A100 y H100 son sobredimensionadas para este tamaño y funcionarán sin problema.
-- Cabe en GPU de consumo: sí, en prácticamente todas las GPU discretas modernas, y también en CPU.
-- Opciones de despliegue: llama.cpp (`llama-cli`, `llama-server`), Ollama (`ollama run hf.co/Thox-ai/ThoxRoute-1.5B-Service-GGUF`), y cualquier runtime compatible con GGUF. vLLM y TGI no son la vía natural para este formato.
-- Latencia y throughput estimados: no disponibles; no se han publicado mediciones.
+- VRAM/RAM para inferencia: ~1,04 GiB solo para los pesos en Q4_K_M; con overhead de contexto y caché KV para 32.768 tokens, prever entre 1,5 y 3 GB adicionales según el backend y la longitud efectiva de contexto configurada. Para contextos cortos (2.048–4.096 tokens), el consumo total se mantiene por debajo de 2 GB.
+- GPU recomendadas: cualquier GPU con 4 GB o más de VRAM puede alojar el modelo con contexto moderado (GTX 1650 4 GB, RTX 3050, RTX 4060, RTX 4090). Para despliegues de servicio con concurrencia, se recomienda RTX 4090, L4, A10 o A100/H100 si se comparte nodo con otros modelos.
+- Cabe en GPU de consumo: sí, en cualquier tarjeta con 4 GB o más de VRAM. También es viable en CPU pura y en dispositivos de placa única tipo Raspberry Pi 5 con 8 GB, con latencias altas.
+- Opciones de despliegue: llama.cpp (`llama-cli`, `llama-server`), Ollama (`ollama run hf.co/Thox-ai/ThoxRoute-1.5B-Service-GGUF`). vLLM y TGI no soportan GGUF de forma nativa para este formato sin conversión previa a safetensors, que no se publica en este repositorio.
+- Latencia y throughput: no disponibles. No se han publicado mediciones. Como referencia estructural del tamaño, un modelo de 1,8B en Q4_K_M en una GPU moderna decodifica típicamente decenas de tokens por segundo, pero no se aporta ningún dato medido para este artefacto.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Formato | Licencia | Notas |
+| Modelo | Parámetros | Contexto | Formato / cuantización | Licencia | Estado de validación |
 |---|---|---|---|---|---|
-| ThoxRoute-1.5B-Service-GGUF | 1,78B | 32.768 | GGUF Q4_K_M | Apache-2.0 | Fine-tune de enrutado, sin validar, solo inglés |
-| Qwen/Qwen2.5-1.5B-Instruct | 1,54B | 32.768 | safetensors, GGUF | Apache-2.0 | Base upstream, propósito general, multilingüe, ampliamente evaluado |
-| Thox-ai/ThoxRoute-1.5B-GGUF | 1,5B (nominal) | No disponible | GGUF Q4_K_M | Apache-2.0 | Repositorio hermano; su Q4_K_M pesa 986.047.936 B frente a 1.117.320.704 B de este |
-| Thox-ai/ThoxRoute-1.5B | 1,5B (nominal) | No disponible | safetensors (adaptador/merge) | Apache-2.0 | Fuente declarada del GGUF; sin benchmarks publicados |
+| ThoxRoute-1.5B-Service-GGUF | 1,777 M | 32.768 | GGUF Q4_K_M | Apache-2.0 (resuelta a posteriori) | No validado por el autor |
+| Qwen/Qwen2.5-1.5B-Instruct | ~1.500 M | 32.768 | safetensors, GGUF, AWQ | Apache-2.0 | Modelo upstream ampliamente evaluado |
+| Thox-ai/ThoxRoute-1.5B-GGUF | ~1.500 M (nominal) | no disponible | GGUF Q4_K_M (986.047.936 B) | Apache-2.0 | No disponible |
+| Thox-ai/ThoxRoute-1.5B | no disponible | no disponible | no disponible | Apache-2.0 | No disponible |
 
-La comparación relevante es contra el base Qwen2.5-1.5B-Instruct: mismo contexto y licencia, pero el base cuenta con evaluaciones públicas, soporte multilingüe y tool calling documentado, mientras que este artefacto solo añade un ajuste de enrutado no verificado y restringe el idioma al inglés.
+La comparación relevante es contra el modelo base: ThoxRoute-1.5B-Service-GGUF no aporta un contexto mayor ni una arquitectura distinta, sino un fine-tune del que no se publican datos de entrenamiento ni evaluación. Frente a Qwen2.5-1.5B-Instruct, la única ventaja declarada es la especialización en enrutamiento dentro de la pila THOX; sin benchmarks, esa ventaja no es verificable. El repositorio hermano ThoxRoute-1.5B-GGUF presenta un fichero Q4_K_M unos 131 MB menor para la misma cuantización nominal y la misma fuente nominal, discrepancia que el autor reconoce sin explicar.
 
 ## Limitaciones y advertencias
 
-- Artefacto no validado: la model card declara que no se ha cargado, evaluado ni comprobado funcionalmente; no hay evidencia de que enrute correctamente.
-- Sin benchmarks ni métricas de precisión de clasificación; imposible estimar su calidad frente a un clasificador simple o al propio Qwen2.5-1.5B-Instruct sin ajustar.
-- Linaje no verificable byte a byte: no existe registro de build, log de conversión ni cadena de hashes que vincule el fichero al adaptador declarado.
-- Discrepancia de tamaño no explicada: ~131 MB más que el Q4_K_M del repositorio hermano para la misma cuantización nominal y la misma fuente nominal.
-- Plantilla de chat estándar de Qwen: si el host no sobrescribe el system prompt, el modelo se presentará con la identidad upstream en lugar de la de THOX, lo que puede filtrar comportamiento no deseado en producción.
-- No alineado para seguridad ni para exposición pública directa; la propia tarjeta indica que debe desplegarse tras los guardarraíles de THOX y que no es un asistente general.
-- Solo inglés: inadecuado para interacción en castellano sin un paso de traducción previo.
-- Riesgo de alucinación en la etiqueta de ruta: al ser un modelo generativo usado como clasificador, puede producir etiquetas inexistentes si no se restringe la decodificación al conjunto cerrado de rutas.
-- Licencia Apache-2.0 permite uso comercial, pero la determinación de licencia se resolvió por corroboración indirecta (fuente y base Apache-2.0) y así se hace constar en la tarjeta; conviene revisar el texto de licencia incluido en el repositorio.
-- Dependencia de un ecosistema propietario (MeshStack, ThoxOS): el valor práctico fuera de ese stack es incierto y no documentado.
+- Artefacto no validado: el autor declara que no se ha cargado, evaluado ni comprobado funcionalmente. No existe evidencia publicada de que el enrutamiento funcione.
+- Plantilla de chat no especializada: el GGUF embebe la plantilla instruct estándar de Qwen, incluida su persona de sistema upstream por defecto. Si el host no sobrescribe el prompt de sistema, el modelo se presentará con la identidad de Qwen y no como enrutador THOX.
+- Procedencia incompleta: no sobrevive registro de construcción, log de conversión ni cadena de hashes que vincule el fichero con el adaptador ThoxRoute-1.5B. Existe una discrepancia de ~131 MB sin explicar frente al repositorio hermano para la misma cuantización nominal.
+- Licencia resuelta por determinación interna: Apache-2.0 se fijó el 2026-10-31 por decisión del CTO de THOX.ai, apoyándose en la licencia del modelo base y del adaptador de origen, no en una cadena de custodia verificada. Para uso comercial en producción, conviene revisar el texto de licencia del repositorio y documentar la decisión.
+- Sesgos: no documentados. Al derivar de Qwen2.5-1.5B-Instruct, hereda los sesgos del corpus de entrenamiento del modelo base, no caracterizados en esta ficha.
+- Alucinación: riesgo alto en tareas generativas abiertas por el tamaño reducido (1,8B) y por la ausencia de evaluación; el uso previsto es clasificación cerrada, no generación de contenido factual.
+- Idioma: solo inglés declarado. No hay evidencia de calidad en castellano ni en otros idiomas, y el fine-tune de enrutamiento puede haber degradado aún más el multilingüismo del base.
+- Exposición pública: la model card indica explícitamente que no es un asistente general ni está alineado en seguridad para exposición directa al público. Debe desplegarse detrás de guardarraíles.
+- Sin datos de entrenamiento publicados: imposible auditar la composición del corpus, el número de tokens o las fases de alineamiento.
+- Contexto: aunque la cabecera declara 32.768 tokens, no hay medición de rendimiento en contextos largos para este fine-tune.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/Thox-ai/ThoxRoute-1.5B-Service-GGUF
-- Fuente declarada (fine-tune): https://huggingface.co/Thox-ai/ThoxRoute-1.5B
+- Repositorio del adaptador de origen: https://huggingface.co/Thox-ai/ThoxRoute-1.5B
 - Repositorio hermano GGUF: https://huggingface.co/Thox-ai/ThoxRoute-1.5B-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Descarga directa del fichero: https://huggingface.co/Thox-ai/ThoxRoute-1.5B-Service-GGUF/resolve/main/thoxroute-service-q4_K_M.gguf
-- Papers, blogs, repos de código y demos adicionales: no disponibles en la información proporcionada.
+- Ejecución con Ollama: `ollama run hf.co/Thox-ai/ThoxRoute-1.5B-Service-GGUF`
+- Papers, blogs, demos y repositorios adicionales: no disponibles en la información proporcionada.

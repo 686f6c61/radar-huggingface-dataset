@@ -51,34 +51,22 @@
   "renamed_at": null,
   "benchmarks": [
     {
-      "task": "Agreement with the BF16 original",
-      "dataset": "final set: 160 typed-decisions train-split cases, kept out of calibration and the search (cases: 160; decisions: 800)",
-      "metric": "Same answer as BF16, Q5_K_S, protocol a100-620d222-20261025, panel final (higher is closer)",
+      "task": "Agreement with the original",
+      "dataset": "Final set",
+      "metric": "Same answer (%)",
       "value": 97.25
     },
     {
-      "task": "Agreement with the BF16 original",
-      "dataset": "final set: 160 typed-decisions train-split cases, kept out of calibration and the search (cases: 160; decisions: 800)",
-      "metric": "Mean KL to BF16, Q5_K_S, protocol a100-620d222-20261025, panel final (lower is closer)",
-      "value": 0.00349
-    },
-    {
-      "task": "Agreement with the BF16 original",
-      "dataset": "final set: 160 typed-decisions train-split cases, kept out of calibration and the search (cases: 160; decisions: 800)",
-      "metric": "Accuracy, Q5_K_S, protocol a100-620d222-20261025, panel final (against the panel's labels, higher is better)",
-      "value": 72
-    },
-    {
-      "task": "Agreement with the BF16 original",
-      "dataset": "final set: 160 typed-decisions train-split cases, kept out of calibration and the search (cases: 160; decisions: 800)",
-      "metric": "Accuracy change vs BF16, Q5_K_S, protocol a100-620d222-20261025, panel final (0 is the original)",
-      "value": -0.5
-    },
-    {
-      "task": "Agreement with the BF16 original",
-      "dataset": "final set: 160 typed-decisions train-split cases, kept out of calibration and the search (cases: 160; decisions: 800)",
-      "metric": "Confident answers changed vs BF16, Q5_K_S, protocol a100-620d222-20261025, panel final (lower is closer)",
+      "task": "Agreement with the original",
+      "dataset": "Final set",
+      "metric": "Confident changes",
       "value": 0
+    },
+    {
+      "task": "Typed decisions",
+      "dataset": "Final set",
+      "metric": "Accuracy (%)",
+      "value": 72
     }
   ],
   "sources": []

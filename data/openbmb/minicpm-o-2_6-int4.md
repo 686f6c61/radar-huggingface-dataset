@@ -2,88 +2,89 @@
 
 ## Resumen
 
-MiniCPM-o 2.6 int4 es la versión cuantizada en 4 bits (GPTQ) del modelo multimodal MiniCPM-o 2.6, desarrollado por el equipo OpenBMB. Se trata de un modelo de lenguaje grande multimodal (MLLM) de tipo "any-to-any", capaz de procesar y generar texto, imagen, audio y vídeo en una única arquitectura. Su objetivo principal es llevar capacidades de nivel GPT-4o a dispositivos con recursos limitados, como teléfonos móviles o GPUs de consumo, manteniendo un rendimiento competitivo en tareas de visión, habla y streaming multimodal en tiempo real.
+MiniCPM-o-2_6-int4 es la versión cuantizada a 4 bits (GPTQ) de MiniCPM-o 2.6, un modelo multimodal "omni" desarrollado por OpenBMB que procesa y genera texto, imagen, vídeo y audio (voz) en un único modelo de aproximadamente 8.674 millones de parámetros. El modelo base se presenta como un MLLM de nivel GPT-4o capaz de ejecutarse en un teléfono, y esta variante int4 reduce los requisitos de memoria hasta unos 9 GB de VRAM, lo que facilita su despliegue en GPUs de consumo.
 
-La arquitectura combina un LLM base Qwen2.5-7B con encoders especializados: SigLip-400M para visión, Whisper-medium-300M para audio y ChatTTS-200M para síntesis de voz. El modelo completo tiene 8.674.997.028 parámetros, y la versión int4 reduce el uso de memoria a aproximadamente 9 GB de VRAM, lo que permite su ejecución en GPUs de consumo medio. Está licenciado bajo Apache 2.0, lo que facilita su uso comercial y académico. Esta versión cuantizada mantiene las capacidades del modelo original, incluyendo conversación de voz en tiempo real, clonación de voz, OCR, análisis de vídeo y comprensión de múltiples imágenes.
+La relevancia de esta ficha radica en que combina entrada y salida en múltiples modalidades (any-to-any): reconocimiento de voz (ASR), síntesis de voz (TTS), clonación de voz, conversación de voz en tiempo real con streaming en vivo, además de visión, OCR, multi-imagen y vídeo. Está publicada bajo licencia Apache 2.0, lo que permite uso comercial, y se distribuye en formato safetensors con código personalizado (custom_code) para transformers.
+
+Esta variante int4 está pensada para inferencia con menor huella de memoria mediante AutoGPTQ, manteniendo las capacidades del modelo original. El repositorio ocupa 7,6 GB y acumula 421 descargas y 55 likes en el momento de la consulta.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | MLLM end-to-end: Qwen2.5-7B (LLM base) + SigLip-400M (visión) + Whisper-medium-300M (audio) + ChatTTS-200M (TTS) |
+| Arquitectura | no disponible (modelo multimodal omni; tag custom_code) |
 | Parametros totales | 8.674.997.028 |
-| Parametros activos | no disponible (no es MoE) |
+| Parametros activos | no disponible |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | int4 (GPTQ) |
-| Idiomas soportados | multilingue (sin lista especifica publicada) |
-| Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (cuantizado GPTQ) |
+| Tipos de cuantizacion | 4-bit GPTQ (int4) |
+| Idiomas soportados | multilingual |
+| Licencia | apache-2.0 |
+| Formato de pesos | safetensors (cuantizacion GPTQ, requiere AutoGPTQ) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base MiniCPM-o 2.6 se construye de forma end-to-end combinando varios componentes: un LLM Qwen2.5-7B como núcleo de razonamiento, un encoder de visión SigLip-400M, un encoder de audio Whisper-medium-300M y un módulo de síntesis de voz ChatTTS-200M. Esta integración permite procesar entradas multimodales (texto, imagen, audio, vídeo) y generar salidas en cualquiera de estos formatos, incluyendo habla sintetizada con clonación de voz.
+La información disponible no detalla la arquitectura interna del modelo (tipo de transformer, mecanismo de atención, composición exacta del dataset ni número de tokens de entrenamiento). La model card del repositorio int4 es una guía de uso de la cuantización y remite al repositorio del modelo base (openbmb/MiniCPM-o-2_6) para los detalles técnicos. Se sabe que el modelo base se entrenó con, al menos, el dataset openbmb/RLAIF-V-Dataset, que aparece referenciado en los metadatos, y que el modelo es de tipo "omni", es decir, integra codificadores y decodificadores para visión, audio y texto.
 
-La versión int4 se obtiene mediante cuantización GPTQ del modelo original, lo que reduce el peso de los parámetros a 4 bits sin cambios arquitectónicos. El proceso de cuantización se realizó con una implementación personalizada de AutoGPTQ (rama `minicpmo`), y el modelo resultante requiere aproximadamente 9 GB de VRAM para inferencia. No se han publicado detalles sobre el entrenamiento completo, pero el dataset RLAIF-V se menciona como parte del proceso de alineación. La cuantización no altera las capacidades funcionales, aunque puede introducir una ligera degradación en la precisión numérica.
+La innovación destacable de esta variante concreta es la cuantización a 4 bits mediante GPTQ (a través de una rama de AutoGPTQ), que reduce el uso de memoria a unos 9 GB manteniendo el comportamiento del modelo original. La model card indica que se está enviando un PR para soportar oficialmente la inferencia de MiniCPM-o 2.6 en AutoGPTQ y que, por ahora, la inferencia requiere desactivar ExLlama y ExLlamaV2 (`disable_exllama=True`, `disable_exllamav2=True`).
 
 ## Capacidades
 
-- Comprensión y generación de texto, imagen, audio y vídeo en un mismo modelo (any-to-any).
-- Reconocimiento óptico de caracteres (OCR) sobre imágenes y documentos.
-- Análisis de múltiples imágenes y vídeos, con capacidad de razonamiento visual.
-- Conversación de voz en tiempo real (realtime speech conversation) con baja latencia.
-- Transcripción automática de voz (ASR) y síntesis de voz (TTS) con clonación de voz.
-- Streaming multimodal en vivo, procesando entrada de cámara y micrófono simultáneamente.
-- Soporte multilingue, aunque no se especifica la lista exacta de idiomas.
-- Capacidad de actuar como asistente de voz con voces limitadas (modo asistente).
+- Generación de texto y razonamiento multimodal (visión, audio y texto).
+- Procesamiento de imagen: descripción, VQA, OCR y multi-imagen.
+- Procesamiento de vídeo.
+- Audio: reconocimiento automático de voz (ASR) y síntesis de voz (TTS).
+- Clonación de voz.
+- Conversación de voz en tiempo real y streaming en vivo (live streaming, realtime speech conversation).
+- Modelo any-to-any: acepta y produce distintas modalidades.
+- Capacidades multilingües (tag "multilingual").
+- Soporte de tool calling / function calling: no disponible en la información proporcionada.
+- Soporte explícito de agentes y multi-step reasoning: no disponible en la información proporcionada.
+- Modo "thinking": no disponible en la información proporcionada.
 
 ## Casos de uso
 
-- Atención al cliente automatizada: el modelo puede mantener conversaciones de voz multi-turno en tiempo real, interpretando tanto el tono como el contenido del usuario y respondiendo con voz sintetizada, lo que lo hace adecuado para centros de contacto virtuales.
-- Transcripción y traducción simultánea: gracias a su ASR integrado, puede transcribir reuniones o conferencias y generar subtítulos en varios idiomas, con salida de texto o voz.
-- Asistente personal multimodal en dispositivos móviles: al caber en ~9 GB de VRAM, puede ejecutarse en portátiles con GPUs de gama media o en servidores pequeños, ofreciendo asistencia por voz y visión (por ejemplo, describir objetos o leer carteles).
-- Análisis de vídeo en tiempo real: su capacidad de procesar vídeo permite monitorizar cámaras de seguridad o analizar contenido multimedia para moderación o extracción de información.
-- Clonación de voz para doblaje o accesibilidad: el módulo ChatTTS permite generar voces personalizadas, útil para audiolibros, asistentes con voz propia o personas con discapacidad del habla.
-- Generación de descripciones accesibles: puede convertir imágenes o vídeos en descripciones textuales detalladas, facilitando el acceso a contenido visual para personas con discapacidad visual.
-- Prototipado rápido de interfaces de voz: desarrolladores pueden integrar el modelo en aplicaciones de voz para probar asistentes conversacionales sin depender de APIs externas.
+- Asistentes de voz en tiempo real: el modelo soporta conversación de voz con streaming en vivo, lo que permite construir asistentes que escuchan, razonan y responden por audio con baja latencia percibida.
+- Clonación de voz para accesibilidad: la capacidad de clonación de voz y TTS permite generar locuciones personalizadas para usuarios con dificultades del habla.
+- Transcripción y análisis de audio (ASR): útil para pipelines de subtitulado, actas de reuniones o análisis de llamadas, combinando ASR con razonamiento sobre el contenido.
+- Digitalización documental con OCR: el soporte de OCR y multi-imagen permite extraer texto de documentos, facturas o capturas y razonar sobre varias imágenes a la vez.
+- Análisis de vídeo: al procesar vídeo, puede emplearse para resumir contenido audiovisual, describir escenas o extraer información de grabaciones.
+- Despliegue en el borde o en GPUs de consumo: con unos 9 GB de VRAM en int4, es viable para prototipos y aplicaciones en estaciones de trabajo con una sola GPU, reduciendo costes frente al modelo en precisión completa.
+- Atención al cliente multimodal: combinando texto, imagen y audio, puede gestionar conversaciones donde el usuario adjunta capturas o envía mensajes de voz.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks específicos para la versión int4 en la información disponible. El modelo base MiniCPM-o 2.6 se presenta como "nivel GPT-4o" en tareas multimodales, pero no se proporcionan cifras concretas de MMLU, HumanEval u otros tests. Se recomienda consultar el repositorio oficial o el blog técnico para obtener métricas detalladas.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: aproximadamente 9 GB en cuantización int4, según la model card.
-- GPUs compatibles: tarjetas con al menos 9-10 GB de VRAM, como RTX 3080/3090, RTX 4070/4080/4090, A10, A100 (sobra), o GPUs de portátil de gama alta.
-- No se recomienda su uso en GPUs con menos de 8 GB de VRAM, ya que el modelo completo no cabría.
-- Opciones de despliegue: la inferencia se realiza mediante la librería `transformers` con `trust_remote_code=True` y AutoGPTQ (rama `minicpmo`). No se menciona soporte para vLLM, llama.cpp u Ollama en la documentación disponible.
-- Latencia y throughput: no disponibles. Al ser un modelo multimodal con varios encoders, la latencia depende de la tarea (visión, audio, texto) y del hardware. La cuantización int4 reduce el uso de memoria pero puede aumentar ligeramente la latencia frente a la versión de precisión completa.
+- VRAM estimada para inferencia: aproximadamente 9 GB con la versión int4 (según la model card).
+- GPU recomendadas: no se especifican modelos concretos en la información disponible; por el uso de memoria (~9 GB) encaja en GPUs con al menos 12 GB de VRAM.
+- ¿Cabe en GPU de consumo? Sí, según el requisito de ~9 GB, sería viable en tarjetas con 12 GB o más (por ejemplo, gama RTX xx80/xx90 con suficiente VRAM); no se confirman modelos concretos en la información.
+- Opciones de despliegue: AutoGPTQ (rama minicpmo) con `AutoGPTQForCausalLM.from_quantized`, junto con `transformers` y `trust_remote_code=True`. Otras opciones (vLLM, llama.cpp, Ollama, TGI) no están confirmadas en la información disponible.
+- Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Modalidades | Licencia | Cuantizacion |
-|---|---|---|---|---|---|
-| MiniCPM-o 2.6 int4 (este) | 8.67B | no disponible | texto, imagen, audio, vídeo | Apache 2.0 | int4 GPTQ |
-| MiniCPM-o 2.6 (base) | 8.67B | no disponible | texto, imagen, audio, vídeo | Apache 2.0 | bf16/fp16 |
-| MiniCPM-V 2.6 | 8B (aprox.) | no disponible | texto, imagen | Apache 2.0 | bf16/fp16 |
-
-La comparativa se limita a los modelos de la misma familia, ya que no se dispone de datos de otros MLLM comparables en esta información. El int4 es la versión cuantizada del base, con menor huella de memoria. MiniCPM-V 2.6 es el predecesor, sin capacidades de audio/voz.
+No se dispone de datos de benchmarks ni de especificaciones detalladas de modelos comparables en la información proporcionada, por lo que la comparación cuantitativa no está disponible. Como referencia cualitativa, esta variante se posiciona como un MLLM omni (texto, imagen, vídeo, audio) de ~8,7 mil millones de parámetros con licencia Apache 2.0, frente a alternativas omni de mayor tamaño que suelen requerir más VRAM. Los datos concretos de parámetros, contexto y rendimiento de esas alternativas no están disponibles en esta ficha.
 
 ## Limitaciones y advertencias
 
-- La cuantización int4 puede provocar una ligera pérdida de precisión en tareas numéricas o de razonamiento complejo respecto a la versión en bf16.
-- El modelo requiere `trust_remote_code=True` y una rama específica de AutoGPTQ, lo que implica un entorno de instalación no estándar y posibles riesgos de seguridad al ejecutar código remoto.
-- No se especifica la longitud de contexto, por lo que no se puede garantizar un rendimiento óptimo en conversaciones o documentos muy largos.
-- Aunque es multilingue, no se detalla la cobertura idiomática; puede haber sesgos hacia idiomas con más datos de entrenamiento.
-- Como cualquier modelo generativo, existe riesgo de alucinaciones, especialmente en tareas de visión o audio donde los encoders pueden malinterpretar entradas ambiguas.
-- La clonación de voz plantea riesgos de uso indebido (suplantación de identidad); se debe implementar con controles de consentimiento.
-- La licencia Apache 2.0 permite uso comercial, pero el código personalizado (AutoGPTQ) y los pesos del modelo base (Qwen2.5-7B) tienen sus propias licencias; Qwen2.5 está bajo Apache 2.0, así que no hay conflicto conocido.
-- El modelo está pensado para GPUs NVIDIA con soporte CUDA; no se menciona compatibilidad con Apple Silicon o CPUs.
+- La información sobre sesgos conocidos no está disponible en la documentación consultada.
+- Riesgo de alucinación inherente a los modelos generativos; no se cuantifica en la información disponible.
+- Longitud de contexto no especificada, lo que impide garantizar el comportamiento en conversaciones o documentos muy largos.
+- El soporte multilingüe se declara de forma genérica ("multilingual"); no se detalla la cobertura ni la calidad por idioma.
+- La cuantización int4 puede introducir degradación de calidad frente al modelo en precisión completa; no se documenta la magnitud de esa pérdida.
+- Requiere código personalizado (`trust_remote_code=True`) y una rama específica de AutoGPTQ, con ExLlama/ExLlamaV2 desactivados; esto limita la compatibilidad con stacks de inferencia estándar y puede afectar al rendimiento.
+- Licencia Apache 2.0: permite uso comercial, pero conviene revisar las condiciones del modelo base y de los datasets empleados.
+- El repositorio corresponde a una cuantización comunitaria/oficial de OpenBMB; para producción conviene validar la estabilidad de la rama de AutoGPTQ utilizada.
 
 ## Enlaces
 
-- Hugging Face (modelo int4): https://huggingface.co/openbmb/MiniCPM-o-2_6-int4
-- Hugging Face (modelo base): https://huggingface.co/openbmb/MiniCPM-o-2_6
-- GitHub del proyecto: https://github.com/OpenBMB/MiniCPM-o
-- Blog tecnico: https://openbmb.notion.site/MiniCPM-o-2-6-A-GPT-4o-Level-MLLM-for-Vision-Speech-and-Multimodal-Live-Streaming-on-Your-Phone-185ede1b7a558042b5d5e45e6b237da9
+- Hugging Face (esta variante int4): https://huggingface.co/openbmb/MiniCPM-o-2_6-int4
+- Modelo base en Hugging Face: https://huggingface.co/openbmb/MiniCPM-o-2_6
+- Repositorio GitHub: https://github.com/OpenBMB/MiniCPM-o
+- Wiki de MiniCPM (chino): https://openbmb.cn/docs/
 - Demo online: https://minicpm-omni-webdemo-us.modelbest.cn
-- Repositorio AutoGPTQ (rama minicpmo): https://github.com/RanchiZhao/AutoGPTQ
+- Blog técnico: https://openbmb.notion.site/MiniCPM-o-2-6-A-GPT-4o-Level-MLLM-for-Vision-Speech-and-Multimodal-Live-Streaming-on-Your-Phone-185ede1b7a558042b5d5e45e6b237da9
+- Rama de AutoGPTQ para MiniCPM-o: https://github.com/RanchiZhao/AutoGPTQ
+- Dataset RLAIF-V: https://huggingface.co/datasets/openbmb/RLAIF-V-Dataset

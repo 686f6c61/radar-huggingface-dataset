@@ -1,0 +1,48 @@
+{
+  "schema": 2,
+  "id": "SZLHOLDINGS/salad-ring-ouro-l86",
+  "slug": "szlholdings-salad-ring-ouro-l86",
+  "author": "SZLHOLDINGS",
+  "url": "https://huggingface.co/SZLHOLDINGS/salad-ring-ouro-l86",
+  "created_at": "2026-11-19T02:02:38.000Z",
+  "updated_at": "2026-11-23T01:05:51.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "context_length": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DNA Modification, Cloning, Gene Splicing - Britannica",
+      "url": "https://www.britannica.com/science/genetic-engineering/Process-and-techniques",
+      "snippet": "Nov 8, 2026 · Gene editing, based on a technology known as CRISPR-Cas9, allows researchers to customize a living organism’s …Read more"
+    },
+    {
+      "title": "7.12E: Basic Techniques to Manipulate Genetic Material (DNA and RNA)",
+      "url": "https://bio.libretexts.org/Bookshelves/Microbiology/Microbiology_(Boundless)/07:_Microbial_Genetics/7.12:_Tools_of_Genetic_Engineering/7.12E:_Basic_Techniques_to_Manipulate_Genetic_Material_(DNA_and_RNA)",
+      "snippet": "Basic techniques used in genetic material manipulation include extraction, gel electrophoresis, PCR, and blotting methods. …Read more"
+    }
+  ]
+}

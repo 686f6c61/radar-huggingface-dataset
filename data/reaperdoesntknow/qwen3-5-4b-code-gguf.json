@@ -43,11 +43,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Getting started with GitHub Codespaces for machine learning",
-      "url": "https://docs.github.com/en/codespaces/developing-in-a-codespace/getting-started-with-github-codespaces-for-machine-learning",
-      "snippet": "Getting started with GitHub Codespaces for machine learning Learn about working on machine learning projects with GitHub …Read more"
-    }
-  ]
+  "sources": []
 }

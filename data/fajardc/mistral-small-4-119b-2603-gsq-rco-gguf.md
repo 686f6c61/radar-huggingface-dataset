@@ -1,105 +1,92 @@
 # fajardc/Mistral-Small-4-119B-2603-GSQ-RCO-GGUF
 
 ## Resumen
+Mistral-Small-4-119B-2603-GSQ-RCO-GGUF es una cuantización comunitaria en formato GGUF del modelo multimodal `mistralai/Mistral-Small-4-119B-2603`, un Mixture-of-Experts (MoE) de 119 mil millones de parámetros totales y 6,5 mil millones activos por token, desarrollado por Mistral AI. La cuantización la firma `fajardc`, un autor independiente que la realizó en hardware de consumo (Ryzen 9 5900X, 64 GB de RAM, RTX 3090 y RTX 3070 Ti), aplicando los métodos GSQ (Gumbel-Softmax Quantization) y RCO (Riemannian Constrained Optimization) publicados por el DAS Lab del IST Austria.
 
-Mistral-Small-4-119B-2603-GSQ-RCO-GGUF es una cuantización GGUF de precisión mixta del modelo `mistralai/Mistral-Small-4-119B-2603`, un transformer de tipo mezcla de expertos (MoE) de 118.972.826.624 parámetros totales (unos 119B) con 6.500 millones de parámetros activos por token, que acepta texto e imágenes y dispone de modos instruct y razonamiento. La cuantización la firma el usuario `fajardc`, no Mistral AI, y aplica los métodos GSQ (Gumbel-Softmax Quantization) y RCO (Riemannian Constrained Optimization) publicados por el DAS Lab del IST Austria, siguiendo el procedimiento de sus releases GSQ-RCO.
+El resultado es un archivo de precisión mixta de 52,07 GB que promedia 3,501 bits por peso, con cada tensor asignado a un tipo entre IQ2_XS y Q6_K según un presupuesto exacto de tamaño y minimizando la divergencia KL respecto al modelo BF16. El repositorio contiene únicamente el modelo de lenguaje, dividido en dos partes, y no incluye el proyector de visión ni la cabeza de decodificación especulativa.
 
-El resultado es un fichero de 52,08 GB (48,50 GiB) con un presupuesto de 3,502 bits por peso sobre el total del archivo, repartido de forma no uniforme: cada tensor recibe el tipo que RCO le asigna bajo un presupuesto exacto de tamaño, minimizando la divergencia KL de la salida del modelo completo respecto al modelo en BF16. Los tipos van desde IQ2_XS hasta Q6_K, con las proyecciones de atención y el experto compartido mayoritariamente en Q6_K y los expertos enrutados en tipos bajos.
-
-Es relevante porque permite ejecutar un MoE de 119B con 256k tokens de contexto en hardware de consumo, algo impensable en BF16, y porque documenta con métricas de calidad por dominio (KLD, tasa de mismo top-1 y ratio de perplejidad) el coste real de la compresión. La ficha se centra en esta cuantización concreta, no en el modelo base original.
+Su relevancia radica en hacer desplegable en estaciones de trabajo y equipos con GPUs de consumo un modelo MoE de 119B con ventana de contexto de 262.144 tokens, algo inviable en BF16, manteniendo una fidelidad de distribución razonablemente baja (KL de 0,1579 en WikiText-2). Es una pieza pensada para inferencia local con llama.cpp, no una release oficial de Mistral AI ni del IST Austria.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | `mistral4`: transformer MoE de 36 capas con multi-head latent attention (MLA), 128 expertos, 4 activos + 1 compartido |
-| Parametros totales | 118.972.826.624 (~119B) |
-| Parametros activos | ~6.500 millones por token |
+| Arquitectura | `mistral4`: transformer MoE con 36 capas y multi-head latent attention (MLA), 128 expertos, 4 activos + 1 compartido |
+| Parametros totales | 118.972.826.624 (≈119B) |
+| Parametros activos | 6,5B por token |
 | Longitud de contexto | 262.144 tokens (256k) |
-| Tipos de cuantizacion | Precisión mixta no uniforme: IQ2_XS, IQ2_S, IQ3_XXS, IQ3_S, IQ4_XS, Q4_K, Q5_K, Q6_K, Q8_0 y F32; 3,502 bpw medios sobre el archivo completo |
+| Tipos de cuantizacion | Precisión mixta GSQ-RCO, tipos por tensor entre IQ2_XS y Q6_K; media de 3,501 bpw; formato IQ3_S nominal |
 | Idiomas soportados | no disponible |
-| Licencia | apache-2.0 |
-| Formato de pesos | GGUF (dos partes: `...-00001-of-00002.gguf` de 26,96 GB y `...-00002-of-00002.gguf` de 25,12 GB) |
-
-Otros datos de la ficha: tamaño del repositorio 52,1 GB; pipeline `image-text-to-text`; biblioteca `gguf`; conversión realizada a partir del checkpoint original en FP8 con escalas por tensor y por experto.
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (dos partes: 26,88 GB + 25,19 GB) |
 
 ## Arquitectura y entrenamiento
+El modelo base es un transformer MoE de la familia `mistral4` con 36 capas, atención multi-cabeza latente (MLA) y 128 expertos por capa, de los cuales se activan 4 más 1 compartido por token, lo que da 6,5B parámetros activos sobre 119B totales. Esta configuración reduce el coste computacional por token respecto a un modelo denso del mismo tamaño. No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni las etapas de alineación (RLHF/DPO) del modelo original dentro de la información proporcionada.
 
-La arquitectura del modelo base es `mistral4`: 36 capas con multi-head latent attention, 128 expertos enrutados de los que se activan 4 por token más 1 experto compartido, lo que da unos 6,5B de parámetros activos sobre 119B totales. El modelo acepta entradas de texto e imagen y tiene modos instruct y razonamiento. No incorpora cabeza de predicción multi-token (MTP); Mistral publica por separado una cabeza draft EAGLE (`mistralai/Mistral-Small-4-119B-2603-eagle`) para motores que la soporten, y llama.cpp no la carga en el momento de escribir la model card.
-
-El proceso de cuantización parte del checkpoint en FP8 con escalas por tensor y por experto, convertido a GGUF BF16 con `convert_hf_to_gguf.py` de llama.cpp multiplicando cada peso por su escala. Después se cuantiza cada tensor a cada tipo candidato (IQ2_XS, IQ2_S, IQ3_XXS, IQ3_S, IQ4_XS, Q4_K, Q5_K, Q6_K) con `llama-quantize` y la importance matrix de bartowski; GSQ refina los códigos enteros de cada tensor contra las entradas que ese tensor ve realmente, y RCO elige un tipo por tensor bajo un presupuesto exacto de tamaño minimizando la KL de la salida del modelo completo frente a BF16. Las proyecciones de atención (`attn_q_a`, `attn_q_b`, `attn_kv_a_mqa`, `attn_v_b`, `attn_output`) y el experto compartido quedan mayoritariamente en Q6_K; `token_embd` en Q5_K, `output` en Q6_K, normas y router en F32, y `attn_k_b` en Q8_0 fuera de la búsqueda porque sus filas de 64 valores no caben en ningún tipo K-quant o IQ. Los expertos enrutados, que son la mayor parte del archivo, reciben los tipos bajos de forma desigual por profundidad: en las capas 0-8 hay desde IQ2_XS hasta Q6_K; en las capas 9-23 predominan IQ3_XXS con algo de IQ3_S e IQ2_S; en las capas 24-35 se usan IQ3_S e IQ3_XXS. El recuento de tensores por tipo es Q6_K 212, IQ3_XXS 47, IQ3_S 40, IQ4_XS 38, Q8_0 36, Q4_K 26, Q5_K 17, IQ2_S 12, IQ2_XS 6 y F32 181.
+La cuantización aplica dos métodos del DAS Lab del IST Austria. GSQ refina los códigos enteros de cada tensor dentro de un tipo GGUF contra las entradas reales que ese tensor recibe, evaluando cada tipo candidato; RCO selecciona después un tipo por tensor bajo un presupuesto exacto de tamaño, minimizando la divergencia KL de la salida del modelo completo respecto a BF16. Sobre ese procedimiento se añadió un ajuste extremo a extremo de los valores que GSQ y RCO dejan continuos (escalas de bloque, normas y routers) contra la salida del modelo BF16, manteniendo fijos todos los códigos enteros y tipos. El presupuesto final es de 3,50 bits por peso, tomado de las releases IQ3_S de ISTA; el resultado no es un IQ3_S uniforme. El modelo original no incluye cabeza MTP; Mistral publica una cabeza EAGLE separada que llama.cpp no carga en el momento de la publicación.
 
 ## Capacidades
-
-- Generación de texto conversacional e instructiva, con plantilla de chat de Mistral incluida en el fichero.
-- Modo de razonamiento (thinking) disponible en el modelo base; la plantilla embebida corrige el paso del argumento `support_thinking` a `render_content` en la rama de resultados de herramientas, que con la plantilla original falla en el motor de plantillas de llama.cpp con "Not enough arguments provided to 'render_content'".
-- Capacidad de entrada de imagen en el modelo base, pero no incluida en esta cuantización: requiere cargar un proyector de visión (mmproj) GGUF aparte, por ejemplo el `mmproj-mistralai_Mistral-Small-4-119B-2603-bf16.gguf` de bartowski o uno convertido con `convert_hf_to_gguf.py --mmproj`.
-- Soporte de tool calling / function calling a través de la plantilla de chat de Mistral y del motor de plantillas de llama.cpp.
-- Contexto largo de 262.144 tokens, adecuado para conversaciones multi-turno extensas y documentos largos.
-- Capacidades multilingües: no disponible en la información proporcionada.
-- Sin decodificación especulativa integrada: no hay cabeza MTP en el modelo original y llama.cpp no carga la cabeza EAGLE publicada por Mistral.
+- Generación de texto conversacional e instructiva, con modos instruct y reasoning según el modelo base.
+- Procesamiento de imágenes en el modelo original (pipeline `image-text-to-text`), si bien este archivo GGUF no incluye el proyector de visión y requiere un mmproj externo.
+- Tool calling / function calling: la plantilla de chat embebida incluye una rama de resultados de herramienta corregida para el motor de plantillas de llama.cpp.
+- Razonamiento multi-paso y uso como agente, apoyado en la ventana de 262.144 tokens.
+- Capacidades multilingües: no disponibles en la información proporcionada.
+- Modo thinking (`support_thinking`) contemplado en la plantilla de chat corregida.
 
 ## Casos de uso
-
-- Asistencia sobre documentación técnica extensa: con 256k tokens de contexto se puede cargar un repositorio de documentación o varios manuales y hacer preguntas con referencias cruzadas sin trocear el material en fragmentos que pierdan contexto.
-- Análisis y generación de código en local: la cuantización mantiene una tasa de mismo top-1 del 93,25 % y un ratio de perplejidad de 1,011 frente a BF16 en código C++ de llama.cpp, por lo que es adecuada para autocompletado, revisión de parches y generación de tests en un equipo que no quiera enviar código a una API externa.
-- Agentes con tool calling en pipelines de CI/CD: la plantilla de chat corregida permite peticiones con resultados de herramientas sin el error de argumentos faltantes, lo que habilita bucles de agente que invocan compiladores, linters o APIs internas.
-- Atención al cliente automatizada multi-turno: el contexto de 256k y el modo instruct permiten mantener el historial completo de una conversación larga y consultar bases de conocimiento adjuntas en el mismo prompt.
-- Procesamiento de instrucciones y datos estructurados por lotes: el rendimiento en instrucciones retenidas (KLD 0,1170, mismo top-1 90,34 %, ratio de perplejidad 1,024 sobre Open-Platypus) lo hace viable para extracción de campos, resumen y clasificación sobre grandes volúmenes de texto.
-- Investigación sobre cuantización: el repositorio sirve como caso de estudio reproducible de GSQ y RCO con métricas por dominio, útil para comparar el impacto de la precisión mixta frente a cuantizaciones uniformes del mismo presupuesto.
-- Despliegue en estación de trabajo con una sola GPU de 24 GB y RAM de sistema: al ser un MoE con 6,5B activos y 3,502 bpw, el modelo puede residir parcialmente en RAM y descargar a GPU los expertos activos, lo que permite uso interactivo en hardware de consumo.
+- Asistente de código en local: con 6,5B parámetros activos y contexto de 256k, puede mantener repositorios completos en ventana y resolver tareas de refactorización o generación en entornos sin conexión a la nube.
+- Análisis de documentos largos: informes, contratos o expedientes de cientos de miles de tokens que caben en una sola pasada sin técnicas de chunking ni recuperación externa.
+- Despliegue en estación de trabajo con GPU de consumo: el archivo de 52 GB permite inferencia con offloading parcial en equipos con 24 GB de VRAM y RAM abundante, útil para prototipado y evaluación.
+- Agentes con tool calling: la plantilla de chat corregida y el soporte de function calling permiten integrarlo en bucles de agente que consultan APIs o bases de datos.
+- Evaluación de cuantizaciones: sirve como referencia para comparar fidelidad (KL frente a BF16) de distintas estrategias de cuantización en modelos MoE grandes.
+- Generación asistida con imágenes: cargando un mmproj compatible (por ejemplo, el de bartowski en BF16) se habilita el pipeline image-text-to-text para tareas de descripción o extracción de información de capturas y documentos escaneados.
+- Investigación en eficiencia de inferencia: útil para estudiar el comportamiento de MLA y MoE bajo cuantización agresiva en llama.cpp.
 
 ## Benchmarks y rendimiento
+No se han publicado resultados de benchmarks de tareas (MMLU, HumanEval, GSM8K, etc.) en la información disponible. El autor sí reporta divergencia KL media frente al modelo BF16, medida de forma homogénea sobre la revisión actual:
 
-La model card publica métricas de calidad de la cuantización frente al GGUF BF16 del mismo modelo, con 100 fragmentos de 512 tokens por dominio, sobre tres dominios retenidos de la mezcla de calibración de GSQ y RCO:
-
-| Dominio | KLD media | Mismo top-1 | Ratio de perplejidad vs BF16 |
-|---|---|---|---|
-| WikiText-2 test (prosa enciclopédica) | 0,1984 | 82,75 % | 1,054 |
-| Código fuente C++ (llama.cpp) | 0,0709 | 93,25 % | 1,011 |
-| Open-Platypus, filas retenidas (instrucciones) | 0,1170 | 90,34 % | 1,024 |
-
-No se han publicado en la información disponible resultados de benchmarks de tareas (MMLU, HumanEval, GSM8K u otros) para esta cuantización ni para el modelo base.
+| Dominio | Primera release | 2026-11-04 | Actual | Cambio vs. primera |
+|---|---|---|---|---|
+| WikiText-2 test | 0,1983 | 0,1696 | 0,1579 | −6,9 % |
+| Código fuente C++ | 0,0709 | 0,0623 | 0,0570 | −8,5 % |
+| Open-Platypus, filas reservadas | 0,1178 | 0,0964 | 0,0887 | −8,0 % |
 
 ## Requisitos de hardware
-
-- Tamaño en disco y en memoria: 52,08 GB (48,50 GiB) para los dos ficheros GGUF; hay que cargar el primero y llama.cpp localiza el segundo si está en el mismo directorio.
-- VRAM estimada: no disponible de forma oficial; con 3,502 bpw y 6,5B de parámetros activos, un despliegue completo en VRAM exige del orden de 48-52 GB, mientras que un despliegue con descarga parcial de expertos a RAM puede funcionar con 24 GB de VRAM y suficiente RAM de sistema.
-- GPU recomendadas: para carga completa, A100 80 GB, H100 80 GB o dos GPU de 48 GB; para carga parcial, RTX 3090 o RTX 4090 de 24 GB con 64 GB de RAM o más.
-- Cabe en GPU de consumo: sí, en RTX 3090 y RTX 4090 de 24 GB con descarga parcial de expertos a RAM; el autor construyó la cuantización en un equipo con Ryzen 9 5900X, 64 GB de RAM, RTX 3090 y RTX 3070 Ti.
-- Opciones de despliegue: llama.cpp (formato nativo GGUF, con soporte de plantilla de chat y de proyector mmproj para visión); otros motores compatibles con GGUF no están confirmados en la información disponible.
-- Latencia y throughput: no disponible.
+- Tamaño del archivo: 52,07 GB (48,49 GiB) en dos partes; requiere al menos esa cantidad de VRAM o de VRAM + RAM para carga completa.
+- Inferencia totalmente en GPU: necesita GPUs con 48 GB o más (A6000, A100 80GB, H100) o configuraciones multi-GPU.
+- GPU de consumo: no cabe entero en una RTX 4090 (24 GB) ni en una RTX 3090; es viable con offloading parcial a RAM del sistema, con la penalización de latencia correspondiente.
+- Configuración de referencia del autor: RTX 3090 + RTX 3070 Ti (46 GB de VRAM combinada) con 64 GB de RAM y SSD NVMe de 4 TB.
+- Motor de despliegue: llama.cpp; el autor no reporta compatibilidad con vLLM, TGI u Ollama en la información disponible.
+- Decodificación especulativa: no disponible en llama.cpp con la cabeza EAGLE de Mistral según la model card.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Formato / precisión | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| Mistral-Small-4-119B-2603-GSQ-RCO-GGUF (esta ficha) | 119B totales, 6,5B activos | 262.144 | GGUF mixto, 3,502 bpw | apache-2.0 | Hugging Face, 0 descargas |
-| mistralai/Mistral-Small-4-119B-2603 (base) | 119B totales, 6,5B activos | 262.144 | Checkpoint original en FP8 con escalas | apache-2.0 | Hugging Face (modelo oficial) |
-| Cuantización GGUF de bartowski del mismo modelo base | 119B totales, 6,5B activos | 262.144 | GGUF con tipos uniformes y mmproj BF16 | apache-2.0 | Hugging Face |
-| ISTA-DASLab GSQ-RCO (referencia metodológica, otro modelo) | no disponible | no disponible | GGUF GSQ-RCO | no disponible | Hugging Face |
+| Modelo | Parámetros | Contexto | Licencia | Formato / disponibilidad |
+|---|---|---|---|---|
+| Mistral-Small-4-119B-2603-GSQ-RCO-GGUF (este) | 119B totales, 6,5B activos | 262.144 | Apache 2.0 | GGUF en dos partes, 52,07 GB |
+| mistralai/Mistral-Small-4-119B-2603 (base) | 119B totales, 6,5B activos | 262.144 | Apache 2.0 | Pesos originales en BF16, incluye visión |
+| mistralai/Mistral-Small-4-119B-2603-eagle | Cabeza draft EAGLE | no disponible | no disponible | Pesos separados para decodificación especulativa |
+| bartowski/mistralai_Mistral-Small-4-119B-2603-GGUF | Misma base | 262.144 | Apache 2.0 | GGUF con mmproj BF16 incluido |
 
-La comparación con alternativas de otros fabricantes y mismo tamaño no está disponible en la información proporcionada.
+No se dispone de datos de rendimiento comparativo entre estas variantes en la información proporcionada.
 
 ## Limitaciones y advertencias
-
-- No es una release oficial de Mistral AI ni del IST Austria: es una cuantización personal hecha en hardware de escritorio, sin el proceso de validación de un lanzamiento oficial.
-- La visión no está incluida: sin un proyector mmproj cargado aparte, el modelo solo procesa texto.
-- Sin decodificación especulativa en llama.cpp: la cabeza EAGLE de Mistral no se carga en este motor, por lo que no se puede acelerar la generación por esa vía.
-- La plantilla de chat del fichero difiere de la original de Mistral en la rama de resultados de herramientas; si se sustituye por la original, las peticiones con tool result fallan en llama.cpp.
-- Riesgo de alucinación inherente al modelo base; no hay evaluación de factualidad en la información disponible.
-- Sesgos conocidos: no disponible.
-- Idiomas soportados: no disponible; conviene validar el comportamiento en castellano antes de usarlo en producción.
-- Restricciones de licencia: apache-2.0 permite uso comercial, pero esta licencia cubre la cuantización y no necesariamente los términos del modelo base, que deben revisarse por separado.
-- La pérdida de calidad es desigual por dominio: la peor métrica es en prosa enciclopédica (KLD 0,1984, mismo top-1 82,75 %, perplejidad 5,4 % superior a BF16), por lo que tareas de conocimiento general son las más afectadas.
-- El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, sin validación independiente por parte de la comunidad.
+- No es una release oficial de Mistral AI ni del IST Austria; es una cuantización personal realizada en hardware doméstico, sin garantías de soporte.
+- La cuantización a 3,501 bpw introduce degradación respecto a BF16, cuantificada en divergencia KL; no se han publicado evaluaciones de tareas que midan el impacto real.
+- El archivo no incluye el proyector de visión; para uso multimodal hay que cargar un mmproj externo compatible.
+- No incluye cabeza MTP y llama.cpp no carga la cabeza EAGLE de Mistral, por lo que no hay decodificación especulativa disponible.
+- Idiomas soportados no documentados en esta ficha; el comportamiento multilingüe debe validarse empíricamente.
+- Riesgo de alucinación inherente al modelo base, no evaluado en esta cuantización.
+- La plantilla de chat fue modificada respecto a la original de Mistral para corregir un fallo con `support_thinking`; conviene revisarla si se integra en pipelines propios.
+- El repositorio supera los 150 GB, lo que implica requisitos de almacenamiento y ancho de banda considerables para su descarga.
+- La licencia Apache 2.0 permite uso comercial, pero debe verificarse que el modelo base mantiene esa licencia en la versión utilizada.
 
 ## Enlaces
-
-- Repositorio de la cuantización: https://huggingface.co/fajardc/Mistral-Small-4-119B-2603-GSQ-RCO-GGUF
+- Repositorio Hugging Face: https://huggingface.co/fajardc/Mistral-Small-4-119B-2603-GSQ-RCO-GGUF
 - Modelo base: https://huggingface.co/mistralai/Mistral-Small-4-119B-2603
-- Cabeza draft EAGLE de Mistral: https://huggingface.co/mistralai/Mistral-Small-4-119B-2603-eagle
-- Release GSQ-RCO de referencia del ISTA-DASLab: https://huggingface.co/ISTA-DASLab/Qwen3.8-Flash-Next-GSQ-RCO-GGUF
-- Cuantización GGUF de bartowski del mismo modelo base (incluye mmproj): https://huggingface.co/bartowski/mistralai_Mistral-Small-4-119B-2603-GGUF
-- Paper GSQ (referencia arXiv de la model card): arxiv:2604.18556
-- Paper RCO (referencia arXiv de la model card): arxiv:2605.00649
+- Cabeza EAGLE de Mistral: https://huggingface.co/mistralai/Mistral-Small-4-119B-2603-eagle
+- GGUF de referencia con mmproj: https://huggingface.co/bartowski/mistralai_Mistral-Small-4-119B-2603-GGUF
+- Release GSQ-RCO de referencia del ISTA DAS Lab: https://huggingface.co/ISTA-DASLab/Qwen3.8-Flash-Next-GSQ-RCO-GGUF
+- Paper GSQ (arXiv): https://arxiv.org/abs/2405.14852
+- Referencias arXiv citadas en los tags: arxiv:2604.18556, arxiv:2605.00649

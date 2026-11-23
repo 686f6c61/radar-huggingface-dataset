@@ -5,7 +5,7 @@
   "author": "PritRai75",
   "url": "https://huggingface.co/PritRai75/qwen2.5-1.5b-finqa-lora",
   "created_at": "2026-11-22T07:48:52.000Z",
-  "updated_at": "2026-11-22T07:49:06.000Z",
+  "updated_at": "2026-11-22T10:05:14.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

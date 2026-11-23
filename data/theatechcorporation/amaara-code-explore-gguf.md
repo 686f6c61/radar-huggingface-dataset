@@ -2,96 +2,105 @@
 
 ## Resumen
 
-Amaara Code Explore es un modelo de lenguaje de 4.326.350.848 parámetros (aproximadamente 4,3 mil millones) especializado en una tarea muy concreta: la exploración de repositorios de código. Desarrollado por The A Tech Corporation, el modelo actúa como un agente que trabaja sobre un repositorio mediante llamadas a shell y lecturas de ficheros para localizar el código relevante ante un bug o una pregunta, y después se detiene. No edita ficheros: su función es exclusivamente de localización y reconocimiento del código.
+Amaara Code Explore es un modelo de 4.326.350.848 parametros (aproximadamente 4,3 mil millones) especializado en exploracion de repositorios de codigo, desarrollado por The A-Tech Corporation PTY LTD (Regional QLD, Australia). Su funcion concreta es actuar como agente de exploracion: trabaja sobre un repositorio usando shell y lecturas de ficheros para localizar el codigo relevante ante un bug o una pregunta, y se detiene. No edita ficheros de forma fiable; su tarea es encontrar, no parchear.
 
-El repositorio que nos ocupa, `theatechcorporation/amaara-code-explore-GGUF`, contiene los pesos cuantizados del modelo base `theatechcorporation/amaara-code-explore` en formato GGUF, listos para su uso con llama.cpp. Se publican cinco variantes de cuantización, desde F16 (8,1 GB) hasta Q4_K_M (2,6 GB), siendo Q8_0 la configuración sobre la que se midieron las métricas publicadas. La licencia es Apache 2.0.
+Esta ficha cubre la distribucion GGUF del modelo base `theatechcorporation/amaara-code-explore`, publicada para llama.cpp. La arquitectura subyacente es `Qwen3_5ForConditionalGeneration`, multimodal, con una torre de vision heredada del modelo base Qwen3.5-VL que no fue afinada por el autor. El modelo fue entrenado con SFT sobre un corpus exclusivamente textual y posteriormente recibio una pasada de re-anclaje de identidad.
 
-La relevancia de este modelo radica en su enfoque estrecho y medible: en lugar de competir como un asistente de código generalista, se posiciona como un componente especializado dentro de pipelines de agentes, con métricas concretas de recall de ficheros en SWE-bench Lite y un presupuesto de pasos acotado. Es relevante para equipos que construyen sistemas de triaje de bugs o navegación de código donde la precisión de localización importa más que la generación de parches.
+La relevancia actual del modelo radica en su enfoque acotado: en lugar de competir como generador de codigo generalista, se posiciona como un componente especializado de recuperacion de contexto para pipelines agenticos, con una ventana de servicio que puede alcanzar los 262.144 tokens (aunque el entrenamiento se realizo a 8.192). La licencia es propietaria (`a-tech-license`), lo que condiciona su uso comercial.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible |
-| Parametros totales | 4.326.350.848 (aprox. 4,3 mil millones) |
-| Parametros activos | no disponible (no consta que sea MoE) |
-| Longitud de contexto | 262.144 tokens en servicio; entrenado a 8.192 tokens |
-| Tipos de cuantizacion | F16, Q8_0, Q6_K, Q5_K_M, Q4_K_M |
+| Arquitectura | Transformer multimodal (`Qwen3_5ForConditionalGeneration`), con torre de vision |
+| Parametros totales | 4.326.350.848 (aproximadamente 4,3 B) |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | Entrenado a 8.192 tokens; servido hasta 262.144 tokens (con `--parallel 1`) |
+| Tipos de cuantizacion | F16, Q8_0, Q6_K, Q5_K_M, Q4_K_M (GGUF) |
 | Idiomas soportados | no disponible |
-| Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (safetensors en el modelo base) |
+| Licencia | `a-tech-license` (propietaria, enlazada en el repo) |
+| Formato de pesos | GGUF (llama.cpp); safetensors en el modelo base |
+| Tamano del repo | 46,3 GB |
+| Proyector de vision | `mmproj-amaara-code-explore-f16.gguf` (672 MB), obligatorio para entrada de imagen |
+| Descargas | 510 |
+| Fecha de creacion | 2026-11-18 |
+| Fecha de actualizacion | 2026-11-20 |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información sobre la arquitectura interna del modelo (tipo de transformer, atención, posibles innovaciones como decodificación especulativa o atención lineal) en la información proporcionada. El dato disponible es el número de parámetros totales, 4.326.350.848, que sitúa al modelo en la categoría de aproximadamente 4B parámetros.
+El modelo se construye sobre la arquitectura `Qwen3_5ForConditionalGeneration`, un transformer multimodal que incorpora una torre de vision completa (tensores `model.visual.*`: 297 de 738 tensores, 24 bloques, patch de 16, dimension de proyeccion 2560). El entrenamiento del autor consistio en SFT sobre un corpus exclusivamente textual orientado a exploracion de repositorios, seguido de una pasada de re-anclaje de identidad separada del corpus principal (learning rate 5e-5, 370 filas de chat, 2 epocas). El autor justifica la separacion argumentando que, a aproximadamente el 0,4% de la mezcla de entrenamiento, un bloque de ese tamano se olvidaria si se mezclara con el corpus.
 
-Respecto al entrenamiento, la model card indica que el modelo fue entrenado con una longitud de contexto de 8.192 tokens, aunque se sirve con ventanas mucho mayores (hasta 262.144 tokens). El autor advierte explícitamente que esta ventana ampliada «previene la truncación; no garantiza comprensión más allá de la longitud entrenada». No se detallan la composición del dataset, el número de tokens de entrenamiento ni si se aplicaron técnicas de RLHF o DPO. El modelo está orientado a tareas de agente con llamadas a herramientas (shell, lectura de ficheros) y se distribuye con soporte para plantilla Jinja (`--jinja`), lo que sugiere un formato conversacional con tool calling.
+La innovacion tecnica mas destacable no esta en la arquitectura sino en el diseno de la tarea: el modelo esta entrenado para operar con herramientas de shell y lectura de ficheros, localizar el codigo relevante y detenerse. La torre de vision es heredada del base Qwen3.5-VL y no fue afinada por el autor; el corpus SFT es textual, por lo que cualquier capacidad visual medida corresponde al modelo base, no a un resultado de Amaara. No se dispone de informacion sobre el volumen total de tokens de entrenamiento, la composicion del dataset ni el uso de RLHF o DPO.
 
 ## Capacidades
 
-- Exploración de repositorios de código: el modelo navega por un repositorio mediante llamadas a shell y lecturas de ficheros para localizar el código relevante ante un bug o una pregunta.
-- Tool calling / function calling: utiliza herramientas de shell y lectura de ficheros como parte de su flujo de agente.
-- Razonamiento multi-paso acotado: opera con un presupuesto de pasos (60 pasos en la evaluación publicada) y se detiene al localizar el código relevante.
-- Localización de ficheros (gold-file recall): capacidad medida de identificar los ficheros correctos relevantes para una incidencia.
-- No edita código: cero llamadas de edición, escritura o parche en los episodios evaluados; esta es una restricción de diseño, no una carencia.
-- Capacidades multilingües: no disponibles en la información proporcionada.
-- No se documentan capacidades de visión, audio ni modo de pensamiento explícito.
+- Exploracion de repositorios: localiza codigo relevante ante un bug o pregunta mediante shell y lecturas de ficheros, y termina la tarea.
+- Razonamiento agentico multi-paso: ejecuta episodios con presupuesto de pasos (el benchmark uso 60 pasos) y llama a herramientas de forma secuencial.
+- Tool calling / function calling: expone acciones de shell y lectura de ficheros; el JSON de llamadas a herramientas es parte central de su salida.
+- Generacion de codigo: capacidad secundaria; el modelo puede modificar ficheros via `sed -i` y redireccion de shell, pero no es un generador de parches fiable.
+- Modo thinking: soporta razonamiento extendido, aunque el autor recomienda servirlo con `enable_thinking=False` para las tareas de identidad.
+- Vision: acepta entrada de imagen mediante el proyector `mmproj`, con la salvedad de que la calidad visual es la del base Qwen3.5-VL sin afinar.
+- Multilingue: no disponible (no se documentan idiomas soportados).
 
 ## Casos de uso
 
-- Triaje de bugs en repositorios grandes: el modelo recibe la descripción de un bug y explora el repositorio con shell y lecturas para identificar los ficheros implicados, entregando la localización al ingeniero o a un paso posterior del pipeline. Su recall medido del 90% en SWE-bench Lite (10 instancias) y una mediana de 2 llamadas a herramientas lo hacen adecuado para esta fase de localización.
-- Enrutamiento previo a un modelo de edición: en un pipeline de dos etapas, Amaara Code Explore localiza los ficheros y un modelo generador de parches se encarga de la edición. La separación evita que un modelo generalista tenga que navegar repositorios completos.
-- Asistente de navegación de código para desarrolladores: integrado en un IDE o interfaz de chat, responde a preguntas del tipo «¿dónde se gestiona la autenticación?» explorando el repositorio y devolviendo las rutas y fragmentos relevantes.
-- Generación de contexto para revisión de código: dado un diff o una incidencia, el modelo reúne los ficheros y fragmentos relacionados para que un revisor humano o un sistema automático disponga del contexto necesario.
-- Automatización de informes de incidencias: a partir de un ticket, el agente explora el repositorio y adjunta al ticket las rutas de los ficheros candidatos, reduciendo el tiempo de triaje manual.
-- Construcción de índices de código bajo demanda: el modelo puede emplearse para recorrer un repositorio y producir un mapa de qué ficheros son relevantes para cada área funcional, alimentando sistemas de búsqueda o documentación.
-- Despliegue local en estaciones de trabajo: con la cuantización Q4_K_M (2,6 GB) o Q5_K_M (3,0 GB), el modelo cabe en GPUs de consumo y permite exploración de código sin enviar el repositorio a servicios externos, algo relevante para código propietario.
+- Localizacion de codigo para triaje de bugs: dado un informe de error, el modelo explora el repositorio con shell y lecturas para identificar los ficheros relevantes y devuelve la lista. Es adecuado porque su entrenamiento esta centrado exactamente en esa tarea, con 9/10 de recall en ficheros gold en el benchmark del autor.
+- Recuperacion de contexto para agentes mayores: se puede usar como subagente de retrieval que alimenta a un modelo generador de parches con los ficheros correctos, reduciendo el contexto irrelevante. Su ventana de servicio de hasta 262.144 tokens permite manejar repositorios grandes en un solo episodio.
+- Analisis de repositorios desconocidos: para incorporarse a un proyecto nuevo, el modelo puede responder preguntas del tipo "donde se define X" o "que modulo gestiona Y" navegando por el arbol de ficheros.
+- Automatizacion de preguntas sobre bases de codigo en CI: integrado en un pipeline, puede ejecutarse ante un fallo de test para localizar el codigo implicado antes de invocar a un humano o a un generador de parches.
+- Asistencia en revision de codigo: localiza las definiciones y llamadas afectadas por un cambio propuesto, aportando contexto al revisor.
+- Exploracion de documentacion tecnica con imagenes: con el proyector `mmproj`, puede procesar capturas de pantalla o diagramas junto con texto, aunque sin garantias de rendimiento visual superior al base.
+- Servicio de bajo coste en hardware consumer: con cuantizacion Q4_K_M (2,6 GB) cabe en GPU de consumo, lo que permite desplegar el agente de exploracion en estaciones de trabajo sin infraestructura dedicada.
 
 ## Benchmarks y rendimiento
 
-Los únicos datos publicados corresponden a la cuantización Q8_0, evaluados en SWE-bench Lite (dev) con 10 instancias, contexto de 262.144 tokens y un presupuesto de 60 pasos:
+Los datos publicados corresponden a la build anterior a la correccion de identidad; el autor advierte que el benchmark agentico no se ha re-ejecutado sobre los pesos actuales.
+
+SWE-bench Lite (dev), 10 instancias, contexto de 262.144, presupuesto de 60 pasos, cuantizacion Q8_0:
 
 | Metrica | Resultado |
 |---|---|
-| Recall de ficheros gold | 9 / 10 (90%) |
-| Mediana de llamadas a herramientas hasta alcanzarlo | 2 |
-| Llamadas de edicion / escritura / parche | 0 |
-| Episodios enviados (submitted) | 2 / 10 |
+| Recall de fichero gold | 9 / 10 (90%) |
+| Llamadas a herramienta medianas hasta alcanzarlo | 2 |
+| Episodios que modificaron un fichero gold | 7 / 10 |
+| Episodios enviados | 2 / 10 |
 
-No se han publicado resultados de MMLU, HumanEval, GSM8K ni otros benchmarks estándar en la información disponible. Tampoco se han publicado métricas para cuantizaciones inferiores a Q8_0; el autor advierte que el daño por cuantización por debajo de Q8_0 no está medido.
+No se han publicado resultados de MMLU, HumanEval, GSM8K ni otros benchmarks estandar en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia según cuantización: F16 requiere aproximadamente 8,1 GB de pesos; Q8_0 unos 4,3 GB; Q6_K unos 3,4 GB; Q5_K_M unos 3,0 GB; Q4_K_M unos 2,6 GB. A ello hay que sumar la memoria de la caché KV, que con contexto de 262.144 tokens y caché cuantizada a q8_0 (K y V) es significativa y debe dimensionarse aparte.
-- GPU recomendadas: no disponibles en la información proporcionada. Por tamaño de pesos, las cuantizaciones Q4_K_M a Q8_0 caben en GPUs de consumo con 8 GB o más de VRAM; F16 requiere al menos 10-12 GB. Para contexto largo (262k) se necesita VRAM adicional para la caché KV.
-- Cabe en GPU de consumo: sí, al menos las cuantizaciones Q4_K_M, Q5_K_M, Q6_K y Q8_0, siempre que se disponga de VRAM suficiente para la caché KV al contexto configurado.
-- Opciones de despliegue: llama.cpp mediante `llama-server`, con los parámetros indicados por el autor (`-ngl 99 -c 262144 --parallel 1 -ub 512 -b 1024 --jinja --cache-type-k q8_0 --cache-type-v q8_0`). El autor advierte que `--parallel 1` no es opcional a ese contexto, porque `-c` es un pool compartido y con 4 slots por defecto cada petición recibiría solo 65.536 tokens. No se documentan otras opciones de despliegue (vLLM, TGI, Ollama) en la información disponible.
-- Latencia y throughput estimados: no disponibles en la información proporcionada.
+- VRAM estimada para inferencia: aproximadamente 8,1 GB en F16, 4,3 GB en Q8_0, 3,4 GB en Q6_K, 3,0 GB en Q5_K_M y 2,6 GB en Q4_K_M, mas 672 MB del proyector si se usa vision.
+- GPU recomendadas: no disponibles de forma explicita; por tamano, una RTX 4090 (24 GB) o superior permite servir Q8_0 con contexto largo. Para contexto de 262.144 tokens se necesita margen adicional de KV cache.
+- Cabe en GPU consumer: si, en Q4_K_M y Q5_K_M en tarjetas de 8 GB o mas; Q8_0 requiere aproximadamente 6 GB solo para pesos, mas cache.
+- Opciones de despliegue: llama.cpp (`llama-server`), con soporte de `--jinja`, `--mmproj` para vision y tipos de cache `q8_0` para K y V.
+- Configuracion recomendada por el autor: `-ngl 99 -c 262144 --parallel 1 -ub 512 -b 1024 --jinja --cache-type-k q8_0 --cache-type-v q8_0`. La opcion `--parallel 1` es obligatoria a contexto largo porque `-c` es un pool compartido: con 4 slots por defecto, 262.144 se reparten en 65.536 por peticion.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos de benchmarks ni de especificaciones de modelos comparables en la información proporcionada para establecer una comparativa rigurosa. Como referencia categórica, este modelo se sitúa en el segmento de modelos de aproximadamente 4B parámetros especializados en agentes de código, un nicho poco poblado frente a los asistentes de código generalistas de mayor tamaño. No se han publicado comparaciones directas con alternativas en la información disponible.
+No se dispone de datos de benchmarks de modelos comparables en la informacion proporcionada, por lo que la comparativa cuantitativa no esta disponible. Cualitativamente, el modelo se situa en la categoria de agentes de codigo de ~4 B parametros con licencia propietaria y distribucion GGUF, lo que lo diferencia de alternativas de codigo abierto del mismo tamano en terminos de licencia y de enfoque (exploracion frente a generacion).
 
-| Modelo | Parametros | Contexto | Enfoque | Licencia |
+| Modelo | Parametros | Contexto | Licencia | Formato |
 |---|---|---|---|---|
-| Amaara Code Explore (GGUF) | 4,3B | 262.144 en servicio (8.192 entrenado) | Exploración de repositorios, sin edición | Apache 2.0 |
-| Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
+| Amaara Code Explore | 4,3 B | 8.192 entrenamiento / 262.144 servicio | `a-tech-license` (propietaria) | GGUF, safetensors |
+| Alternativas de ~4 B para codigo | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
 
-- El modelo no escribe código: cero llamadas de edición, escritura o parche en los 10 episodios evaluados. No debe usarse para generar parches.
-- El daño por cuantización por debajo de Q8_0 no está medido. El 90% de recall se obtuvo con Q8_0; el autor recomienda medir antes de confiar en Q4_K_M u otras cuantizaciones agresivas, ya que el JSON de tool calls de un agente de código es más frágil que la salida de chat.
-- Entrenado a 8.192 tokens y servido a 262.144: la ventana ampliada evita la truncación pero no garantiza comprensión más allá de la longitud entrenada.
-- Configuración de contexto en llama.cpp: `-c` es un pool compartido entre slots; con el valor por defecto de 4 slots, un ajuste de 262.144 deja 65.536 tokens por petición y los episodios largos fallan con «Context size has been exceeded» aunque el log indique 262k. Es obligatorio usar `--parallel 1` o dimensionar el pool como N x por slot.
-- Los resultados de benchmark proceden de solo 10 instancias de SWE-bench Lite (dev), una muestra muy pequeña; no deben extrapolarse como garantía de rendimiento general.
-- Solo 2 de 10 episodios fueron enviados (submitted), lo que refleja el diseño de exploración sin edición y limita la comparación con métricas de resolución de SWE-bench.
-- Sesgos conocidos: no disponibles en la información proporcionada.
-- Riesgo de alucinación: no cuantificado en la información disponible; como todo modelo generativo, puede producir rutas o referencias inexistentes durante la exploración.
-- Idiomas soportados: no disponibles; la model card está en inglés y no se documenta soporte multilingüe.
-- Licencia Apache 2.0: permite uso comercial, pero conviene verificar las condiciones del modelo base y de los datos de entrenamiento, no detalladas en la información disponible.
+- La licencia `a-tech-license` es propietaria; es necesario revisar el fichero LICENSE del repositorio antes de cualquier uso comercial.
+- El benchmark agentico se midio sobre la build anterior a la correccion de identidad y no se ha re-ejecutado; los numeros de recall deben tratarse como mediciones previas.
+- El dano por cuantizacion por debajo de Q8_0 no esta medido. El JSON de llamadas a herramientas de un agente de codigo es mas fragil bajo cuantizacion agresiva que la salida de chat; hay que medir antes de confiar en Q4_K_M.
+- La edicion de ficheros es tosca: el scaffold del eval solo expone `bash`, y el modelo edita mediante `sed -i` y redireccion de shell. No es un generador de parches fiable.
+- Problema de terminacion: la generacion no siempre se detiene tras la respuesta y puede continuar con turnos sinteticos. Es un comportamiento preexistente del baseline; se debe configurar una secuencia de parada al servir.
+- Con thinking activado, el modelo puede gastar el presupuesto razonando y llegar tarde a la correccion de identidad; se recomienda `enable_thinking=False` o un presupuesto de tokens generoso.
+- La torre de vision no fue afinada por el autor; cualquier rendimiento visual corresponde al base Qwen3.5-VL y no se garantiza que supere al modelo original en tareas visuales.
+- El modelo fue entrenado a 8.192 tokens aunque se sirve con contextos mucho mayores; el comportamiento mas alla de la ventana de entrenamiento no esta garantizado.
+- No se documentan sesgos conocidos ni idiomas soportados; el riesgo de alucinacion en la localizacion de codigo existe y debe validarse en produccion.
+- El modelo base declaro originalmente ser Qwen; la build actual corrige la identidad, pero conviene verificar el comportamiento en despliegues propios.
 
 ## Enlaces
 
-- Repositorio GGUF en Hugging Face: https://huggingface.co/theatechcorporation/amaara-code-explore-GGUF
+- Repositorio GGUF: https://huggingface.co/theatechcorporation/amaara-code-explore-GGUF
 - Modelo base: https://huggingface.co/theatechcorporation/amaara-code-explore
-- No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información proporcionada.
+- Licencia: https://huggingface.co/theatechcorporation/amaara-code-explore-GGUF/blob/main/LICENSE
+- Comunidad del autor (Skool): https://www.skool.com/open-source-ai-builders-club/about

@@ -2,80 +2,83 @@
 
 ## Resumen
 
-Alpina-Large-2.0-Mega-122B es un adaptador LoRA publicado por Convergent-ch (bajo la marca AlpinaAI) sobre el modelo base Qwen/Qwen3.5-122B-A10B, un transformer de tipo Mixture-of-Experts desarrollado por Qwen. El repositorio no contiene los pesos completos de 122B: únicamente aloja el adaptador PEFT (0,1 GB), de modo que el tamaño que aparece en el nombre hace referencia al modelo base, no al número de parámetros entrenados. La adaptación se realizó en 180 pasos de entrenamiento sobre pesos base en BF16.
+Alpina Large 2.0 Mega 122B es un ajuste fino (finetune) experimental publicado por Convergent-ch sobre el modelo base Qwen/Qwen3.5-122B-A10B. Se distribuye como un modelo completamente fusionado en BF16 Safetensors: los pesos originales de Qwen y el adaptador LoRA entrenado por Convergent-ch se han combinado en un único checkpoint de 125.086.497.008 parámetros almacenados. El repositorio ocupa 250,3 GB y requiere Transformers 5.3.0 o superior para cargar la arquitectura `qwen3_5_moe`.
 
-El objetivo declarado es una personalización ligera de identidad y comportamiento conversacional, no una mejora de capacidades generales. El autor es explícito al respecto: las comprobaciones realizadas (3/3 de identidad y 4/4 de código Python sencillo) no constituyen un benchmark ni evidencia de mejora de rendimiento. Se trata, por tanto, de una publicación de investigación con evaluación muy limitada.
+El modelo hereda del base la arquitectura Mixture-of-Experts (MoE) con capacidades multimodales de imagen-a-texto (`image-text-to-text`) y una ventana de contexto que no se explicita en la información disponible. La personalización se realizó con solo 180 pasos de adaptación sobre pesos base en BF16, usando PEFT 0.18.1, torchao 0.16.0 y Transformers 5.3.0, lo que lo convierte en una release de investigación con evaluación muy limitada.
 
-Su relevancia actual es acotada: sirve como ejemplo de flujo de trabajo con PEFT sobre un modelo MoE grande, pero no es un modelo autónomo desplegable. Para usarlo hay que descargar el base de Qwen (122B) y aplicar el adaptador, con los requisitos de memoria que ello implica.
+Su relevancia es acotada: no es un modelo de propósito general validado, sino una demostración de adaptación ligera sobre un MoE grande. El autor advierte explícitamente de que las comprobaciones de identidad (3/3) y de código Python simple (4/4) no constituyen un benchmark ni evidencia de mejora de capacidades. La licencia Apache-2.0 facilita su experimentación, pero la ausencia de métricas publicadas limita su uso en producción.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | LoRA (PEFT) sobre transformer MoE Qwen/Qwen3.5-122B-A10B |
-| Parametros totales | 122B (modelo base; el adaptador no declara recuento propio) |
-| Parametros activos | 10B (según nomenclatura A10B del modelo base) |
+| Arquitectura | Transformer Mixture-of-Experts (MoE) multimodal, clase `Qwen3_5MoeForConditionalGeneration` |
+| Parámetros totales | 125.086.497.008 almacenados (nombre nominal del base: 122B) |
+| Parámetros activos | no disponible (el base se denomina A10B, pero no se confirma el número exacto en la información proporcionada) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible (el adaptador se entrenó con pesos base en BF16) |
-| Idiomas soportados | en |
-| Licencia | apache-2.0 |
-| Formato de pesos | safetensors (adaptador PEFT/LoRA) |
+| Tipos de cuantización | BF16 (release principal); GGUF Q4_K_M publicado por separado para Ollama |
+| Idiomas soportados | inglés (en) |
+| Licencia | Apache-2.0 |
+| Formato de pesos | Safetensors (BF16 fusionado); GGUF Q4_K_M; adaptador LoRA en `adapter/` |
 
 ## Arquitectura y entrenamiento
 
-El adaptador se aplica sobre Qwen3.5-122B-A10B, un transformer con arquitectura Mixture-of-Experts en el que se activan aproximadamente 10B parámetros por token. El adaptador LoRA modifica un subconjunto de capas sin eliminar expertos del modelo base, según indica el autor. El entrenamiento se ejecutó durante 180 pasos de adaptación con Transformers 5.3.0, PEFT 0.18.1, torchao 0.16.0 y pesos base en BF16.
+El modelo es un transformer Mixture-of-Experts multimodal derivado de Qwen3.5-122B-A10B, con soporte de entrada imagen-texto a texto. La release principal contiene todos los parámetros originales y todos los expertos del base, más los deltas LoRA aprendidos aplicados únicamente sobre las capas lineales objetivo. No se ha reentrenado el modelo base desde cero; el adaptador se fusionó sobre los pesos BF16 originales.
 
-Los datos de entrenamiento provienen de prefijos de varios corpus públicos: SmolLM-Corpus (ODC-BY), CodeParrot filtrado por permisividad, Smol-SmolTalk (Apache-2.0) y self-oss-instruct-sc2-exec-filter-50k de BigCode (ODC-BY). No se especifica el número total de tokens ni la composición exacta del dataset, y los conjuntos de datos no se redistribuyen en el repositorio. No se documenta el uso de RLHF, DPO ni otras técnicas de alineación posteriores al ajuste supervisado.
+El entrenamiento consistió en 180 pasos de adaptación con PEFT 0.18.1, torchao 0.16.0 y Transformers 5.3.0, partiendo de pesos base en BF16. Las fuentes de datos incluyen prefijos de SmolLM-Corpus (ODC-BY), CodeParrot filtrado por permisividad, Smol-SmolTalk (Apache-2.0) y self-oss-instruct-sc2-exec-filter-50k (ODC-BY). No se documenta el número total de tokens, la composición exacta del dataset ni si hubo RLHF o DPO. La evaluación se limita a 3/3 comprobaciones de identidad y 4/4 comprobaciones de Python simple, que el autor califica explícitamente como no representativas de una mejora general de capacidades.
 
 ## Capacidades
 
-- Generación de texto conversacional en inglés, heredada del modelo base Qwen3.5-122B-A10B.
-- Personalización de identidad: el adaptador responde con la identidad configurada en el entrenamiento (3/3 comprobaciones superadas según el autor).
-- Ejecución de código Python sencillo: 4/4 comprobaciones básicas superadas, sin que ello implique capacidad de coding evaluada formalmente.
-- Capacidades del modelo base (razonamiento, matemáticas, tool calling, contexto largo) potencialmente presentes, pero no verificadas ni documentadas para esta adaptación.
-- Soporte multilingüe: limitado a inglés según la model card.
-- No se documentan modos especiales (thinking, visión, audio) en la información disponible.
+- Generación de texto conversacional en inglés, con plantilla de chat y soporte de `enable_thinking=False` en el ejemplo de carga.
+- Entrada multimodal imagen-texto a texto, según el pipeline `image-text-to-text` y la clase `Qwen3_5MoeForConditionalGeneration`.
+- Razonamiento y generación de código: el autor reporta 4/4 en comprobaciones de Python simple, sin que esto constituya un benchmark.
+- Soporte de tool calling / function calling: no disponible en la información proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
+- Capacidades multilingües: limitadas al inglés según el campo `language: en`.
+- Modo thinking: la plantilla de chat acepta `enable_thinking=False`, lo que sugiere soporte de un modo de razonamiento, pero no se detalla su comportamiento.
 
 ## Casos de uso
 
-- Investigación sobre adaptación PEFT de modelos MoE grandes: el repositorio sirve como referencia de configuración (versiones de Transformers, PEFT y torchao) para reproducir flujos de ajuste LoRA sobre Qwen3.5-122B-A10B.
-- Experimentos de personalización de identidad: útil para estudiar cómo un adaptador de pocos pasos modifica el comportamiento de autoidentificación del modelo sin reentrenar el base.
-- Pruebas de integración de adaptadores en pipelines propios: permite validar la carga combinada de modelo base más adaptador con la revisión exacta indicada en `adapter_config.json`.
-- Evaluación comparativa de metodologías LoRA: al ser una publicación experimental con evaluación mínima, encaja como punto de partida para diseñar evaluaciones más rigurosas.
-- Docencia y formación técnica: ejemplo práctico de las limitaciones de evaluar adaptadores con comprobaciones triviales frente a benchmarks reales.
-- Prototipado interno en inglés: si se dispone de infraestructura para el base de 122B, puede emplearse para experimentar con respuestas conversacionales ajustadas, siempre con validación adicional.
+- Experimentación con adaptación LoRA sobre MoE grandes: el repositorio conserva el adaptador original en `adapter/`, lo que permite reproducir la fusión y estudiar el efecto de 180 pasos de adaptación sobre un base de 122B.
+- Investigación en eficiencia de finetuning: sirve para analizar cuánto cambia un modelo con un adaptador mínimo y qué comprobaciones básicas de identidad y código se preservan.
+- Pruebas de carga y despliegue de arquitecturas Qwen3.5 MoE: útil para validar pipelines con Transformers 5.3.0 y `device_map="auto"` antes de adoptar el base completo.
+- Evaluación comparativa de releases fusionadas frente a adaptadores PEFT: permite contrastar el checkpoint fusionado con la carga del base más el adaptador en `subfolder="adapter"`.
+- Prototipado de asistentes conversacionales en inglés: el modelo acepta plantilla de chat con rol de sistema y usuario, adecuado para demos internas controladas.
+- Experimentos multimodales imagen-texto: al heredar la clase de generación condicional multimodal, puede usarse para probar entradas de imagen en entornos de investigación, siempre con validación propia.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. El autor indica explícitamente que las comprobaciones realizadas (3/3 de identidad y 4/4 de código Python simple) no constituyen un benchmark ni evidencia de mejora de capacidad general.
+No se han publicado resultados de benchmarks en la información disponible. El autor solo reporta 3/3 comprobaciones de identidad y 4/4 comprobaciones de Python simple, y advierte que no deben interpretarse como evidencia de calidad o de mejora de capacidades generales.
 
 ## Requisitos de hardware
 
-- VRAM estimada: dominada por el modelo base de 122B; el adaptador añade una sobrecarga mínima (repositorio de 0,1 GB).
-- El modelo base en BF16 requiere infraestructura multi-GPU de gama alta; no se dispone de cifras exactas en la información proporcionada.
-- No cabe en GPU de consumo convencionales en precisión completa; requeriría cuantización del base, no documentada para este adaptador.
-- GPU recomendadas: no disponible en la información proporcionada.
-- Despliegue: carga del modelo base original más el adaptador con PEFT. Ollama no puede cargar directamente esta release PEFT; se requiere un modelo completo fusionado compatible.
-- Latencia y throughput: no disponibles.
+- VRAM estimada para inferencia en BF16: el payload completo es de 250,2 GB (233,0 GiB) antes de memoria de runtime, por lo que se necesita un entorno multi-GPU de gran capacidad.
+- GPU recomendadas: no disponible de forma explícita; por tamaño, requiere múltiples aceleradores de clase A100/H100 con suficiente memoria agregada. No cabe en una RTX 4090 en BF16.
+- Consumer GPU: la versión BF16 no es viable en GPUs de consumo. La variante GGUF Q4_K_M, publicada por separado, reduce el requisito y podría ejecutarse en configuraciones de gama alta con suficiente VRAM o RAM, aunque no se especifican cifras.
+- Opciones de despliegue: Transformers 5.3.0 o superior con `device_map="auto"`; GGUF Q4_K_M para Ollama. No se confirma soporte de vLLM, TGI o llama.cpp en la información proporcionada.
+- Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Licencia | Formato | Notas |
+| Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Alpina-Large-2.0-Mega-122B | 122B (10B activos, base) | no disponible | apache-2.0 | safetensors (LoRA) | Adaptador experimental, evaluación mínima |
-| Qwen/Qwen3.5-122B-A10B | 122B (10B activos) | no disponible | no disponible | no disponible | Modelo base completo; capacidades originales sin personalizar |
-| Alternativas de tamaño similar | no disponible | no disponible | no disponible | no disponible | No se dispone de datos comparables en la información proporcionada |
+| Alpina Large 2.0 Mega 122B | 125.086.497.008 almacenados | no disponible | Apache-2.0 | Hugging Face, Safetensors BF16 y GGUF Q4_K_M | Finetune experimental con 180 pasos, evaluación mínima |
+| Qwen/Qwen3.5-122B-A10B (base) | 122B nominales (A10B activos según nombre) | no disponible | no disponible en la información proporcionada | Hugging Face | Modelo original de Qwen; el finetune parte de él |
+| Alternativas de tamaño similar | no disponible | no disponible | no disponible | no disponible | No se han identificado comparables en la información proporcionada |
 
 ## Limitaciones y advertencias
 
-- Evaluación muy limitada: el autor advierte que las comprobaciones de identidad y código no demuestran calidad ni mejoras de capacidad.
-- No es un modelo autónomo: requiere descargar y cargar el base Qwen3.5-122B-A10B con la revisión exacta indicada en `adapter_config.json`.
-- Idioma restringido al inglés según la model card.
-- No se documentan sesgos, riesgos de alucinación ni evaluaciones de seguridad específicas para esta adaptación.
-- Las afirmaciones de identidad no alteran la autoría original del modelo base (Qwen).
-- Incompatibilidad con carga directa en Ollama sin fusionar previamente el adaptador con el base.
-- Los datasets de entrenamiento no se redistribuyen; aplican sus licencias originales (ODC-BY, Apache-2.0).
-- Uso comercial permitido por la licencia apache-2.0, pero sin garantías de calidad dadas las limitaciones de evaluación.
+- Release de investigación con evaluación muy limitada: solo 3/3 comprobaciones de identidad y 4/4 de Python simple, sin benchmarks.
+- Las afirmaciones de identidad describen la personalización y no alteran la autoría original del modelo base de Qwen.
+- No debe inferirse calidad de benchmark a partir de respuestas correctas de nombre o código trivial.
+- Idiomas: solo inglés declarado; no hay evidencia de soporte multilingüe.
+- Longitud de contexto no documentada, lo que impide planificar cargas de contexto largo con garantías.
+- Riesgo de alucinación no cuantificado; al ser un finetune ligero, hereda los sesgos y limitaciones del base Qwen, no documentados aquí.
+- Licencia Apache-2.0 permite uso comercial, pero las licencias y avisos de los datasets de origen (ODC-BY, Apache-2.0) siguen aplicando a los datos fuente, que no se redistribuyen.
+- El adaptador no debe aplicarse de nuevo al cargar el checkpoint fusionado.
+- Requiere Transformers 5.3.0 o compatible más reciente; versiones anteriores pueden no cargar la arquitectura Qwen3.5 MoE.
+- El requisito de memoria está dominado por el modelo base: 250,2 GB de payload en BF16 antes de runtime.
+- No se declara afiliación con Qwen ni con los autores de los datasets.
 
 ## Enlaces
 

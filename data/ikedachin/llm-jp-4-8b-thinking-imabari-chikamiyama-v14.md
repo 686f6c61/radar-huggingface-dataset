@@ -2,51 +2,50 @@
 
 ## Resumen
 
-Chikamiyama v14 (近見山) es un ajuste fino supervisado de parámetros completos del modelo japonés de razonamiento LLM-jp-4-8B-Thinking, desarrollado por el usuario de Hugging Face ikedachin. Su propósito es especializar un modelo de razonamiento de 8.590 millones de parámetros en el dialecto de Imabari (ciudad de la prefectura de Ehime, Japón) y en japonés estándar, manteniendo la capacidad de generar cadenas de razonamiento explícitas antes de la respuesta final.
+Chikamiyama v14 es un ajuste fino por supervisión (SFT) de parámetros completos del modelo japonés de razonamiento LLM-jp-4-8B-Thinking, desarrollado por el usuario ikedachin. Su particularidad es que no se limita al japonés estándar: incorpora canales específicos para el dialecto de Imabari (ciudad de la prefectura de Ehime, Japón), de modo que el modelo puede razonar y responder tanto en japonés estándar como en esa variante dialectal. Está pensado como un experimento de adaptación dialectal sobre una base de razonamiento ya existente, no como un modelo generalista nuevo.
 
-El modelo introduce dos mecanismos de control poco habituales: cuatro canales de generación (`analysis_imabari`, `final_imabari`, `analysis`, `final`) que separan el razonamiento de la respuesta final y permiten elegir entre dialecto local y japonés estándar, y tres niveles de esfuerzo de razonamiento (`low`, `medium`, `high`) que se inyectan como instrucción de sistema a través de la plantilla de chat personalizada. Es relevante ahora porque ejemplifica la adaptación de modelos de razonamiento open source a variedades lingüísticas de bajo recurso, un caso de uso cada vez más demandado en comunidades locales y en investigación sociolingüística computacional.
+El modelo conserva la arquitectura y el tamaño del base: 8.590.200.832 parámetros (aproximadamente 8,6 mil millones), pesos en safetensors y un repositorio de 17,2 GB. Incorpora un chat template propio que separa el razonamiento (`analysis`) de la respuesta final (`final`) y permite seleccionar el idioma de cada canal, además de tres niveles de esfuerzo de razonamiento (low, medium, high) que se traducen en una instrucción de sistema.
 
-Se distribuye en safetensors con precisión bf16, un repositorio de 17,2 GB y licencia compuesta derivada de los términos del modelo base. No se han publicado resultados de benchmarks en la información disponible.
+Es relevante para quienes trabajan en adaptación de modelos a variedades lingüísticas minorizadas o regionales, en evaluación de modelos de razonamiento en japonés y en el estudio de cómo el ajuste fino supervisado afecta al comportamiento de "thinking" de un modelo base. Su licencia es cc-by-sa-4.0 con términos upstream mixtos, lo que condiciona el uso comercial.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (heredada de LLM-jp-4-8B-Thinking) |
+| Arquitectura | Transformer decoder-only (heredada de LLM-jp-4-8B-Thinking; detalles internos del base no disponibles en la información proporcionada) |
 | Parametros totales | 8.590.200.832 |
-| Parametros activos | no disponible (no es MoE según la información disponible) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible (pesos publicados en bf16) |
-| Idiomas soportados | japonés (japonés estándar y dialecto de Imabari) |
-| Licencia | other / mixed-upstream-terms (términos combinados del modelo base) |
-| Formato de pesos | safetensors |
+| Parametros activos | no disponible (no se indica que sea MoE) |
+| Longitud de contexto | no disponible en la información proporcionada |
+| Tipos de cuantizacion | no disponible (pesos publicados en bf16; no se listan cuantizaciones GGUF/AWQ/GPTQ) |
+| Idiomas soportados | ja (japonés estándar y dialecto de Imabari) |
+| Licencia | cc-by-sa-4.0 con `license_name: mixed-upstream-terms` (términos upstream mixtos) |
+| Formato de pesos | safetensors (bf16) |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de LLM-jp-4-8B-Thinking, un transformer decoder-only de 8.590 millones de parámetros orientado a razonamiento en japonés. Sobre esa base se aplicó un ajuste fino supervisado de parámetros completos (full-parameter SFT), sin LoRA ni PEFT, con precisión bf16. El entrenamiento empleó enmascaramiento de pérdida solo en turnos del asistente: los tokens de sistema y usuario se mantienen como contexto, mientras que la pérdida se calcula sobre el razonamiento generado, las respuestas finales y los tokens estructurales del lado del asistente.
+El modelo parte de LLM-jp-4-8B-Thinking y se entrena mediante ajuste fino supervisado de parámetros completos (full-parameter SFT), sin LoRA ni PEFT. Se emplea enmascaramiento de pérdida solo en turnos del asistente: los tokens de sistema y usuario quedan como contexto y la pérdida se calcula sobre el razonamiento, la respuesta final y los tokens estructurales generados por el asistente. El entrenamiento se realizó con TRL 1.13.0, Transformers 5.17.0, PyTorch 2.14.0, Datasets 5.0.1 y Tokenizers 0.23.2.
 
-Los datos de entrenamiento provienen de cuatro conjuntos propios publicados por el autor (`imabari_wiki_qa_v4_reasoning_effort_llmjp4`, `std_lang_wiki_qa_v4_validated_w_reasoning_effort_llmjp4`, `imabari_wiki_qa_v5_difficult_reasoning_effort_llmjp4` y `std_lang_wiki_qa_v5_difficult_reasoning_effort_llmjp4`), construidos como pares de pregunta-respuesta sobre Wikipedia con anotaciones de esfuerzo de razonamiento, más el dataset `llm-jp/AnswerCarefully` para alineamiento de seguridad. La innovación técnica principal es la plantilla de chat personalizada: convierte los argumentos `valid_channels` y `reasoning_effort` en instrucciones de sistema y permite prefijar el canal inicial de generación mediante `<|channel|>`. El autor advierte explícitamente que ambos mecanismos son condicionantes, no restricciones duras: no garantizan longitud de razonamiento ni precisión. El entorno de entrenamiento declarado es TRL 1.13.0, Transformers 5.17.0, PyTorch 2.14.0, Datasets 5.0.1 y Tokenizers 0.23.2.
+La innovación principal es el chat template personalizado, que define cuatro canales: `analysis_imabari` y `final_imabari` para razonamiento y respuesta en dialecto de Imabari, y `analysis` y `final` para japonés estándar, más un canal `commentary`. Los canales disponibles se declaran con el argumento `valid_channels` de `tokenizer.apply_chat_template()`, y el canal inicial puede forzarse con un prefijo de asistente. El parámetro `reasoning_effort` (low/medium/high, por defecto medium) se convierte en una instrucción de sistema del tipo `Reasoning: high`; según el autor, es un mecanismo de condicionamiento y no garantiza longitud ni precisión del razonamiento. Los datos de entrenamiento provienen de cuatro datasets propios de QA con esfuerzo de razonamiento (Imabari y lengua estándar, versiones v4 y v5, incluyendo conjuntos "difficult") y de `llm-jp/AnswerCarefully`. No se especifica el número de tokens de entrenamiento.
 
 ## Capacidades
 
 - Generación de texto conversacional en japonés estándar y en dialecto de Imabari.
-- Razonamiento explícito en canal separado (`analysis`) antes de la respuesta final (`final`), con modo de pensamiento heredado del modelo base.
-- Control de esfuerzo de razonamiento en tres niveles (`low`, `medium`, `high`) mediante instrucción de sistema generada por la plantilla.
-- Cuatro canales de salida combinables: razonamiento y respuesta final, cada uno en dialecto o en estándar.
-- Canal auxiliar `commentary` disponible en la plantilla.
-- Alineamiento de seguridad parcial mediante entrenamiento con `llm-jp/AnswerCarefully`.
-- Soporte de conversación multi-turno con preservación de canal por mensaje del asistente.
-- No se documenta soporte de tool calling, function calling, agentes, visión ni audio en la información disponible.
+- Razonamiento explícito en canal separado (`analysis` / `analysis_imabari`) antes de la respuesta final (`final` / `final_imabari`).
+- Control del esfuerzo de razonamiento en tres niveles: low, medium y high.
+- Selección del idioma del razonamiento y de la respuesta de forma independiente mediante canales.
+- Conversación multi-turno, con la posibilidad de preservar el canal por idioma en mensajes previos del asistente.
+- Alineación de seguridad parcial heredada del uso de `llm-jp/AnswerCarefully` en el entrenamiento.
+- No se documentan en la información disponible capacidades de tool calling, function calling, agentes, visión, audio ni otros idiomas distintos del japonés.
 
 ## Casos de uso
 
-- Asistentes conversacionales locales en Imabari: el modelo puede responder en dialecto de Imabari preservando el razonamiento interno en el canal `analysis_imabari`, útil para servicios municipales o turísticos de la región de Ehime.
-- Investigación sociolingüística computacional: permite comparar, con el mismo modelo y prompt, la calidad del razonamiento en dialecto frente a japonés estándar, aislando el efecto de la variedad lingüística.
-- Educación y preservación del dialecto: generación de material didáctico y ejemplos de conversación en dialecto de Imabari con explicaciones en japonés estándar en el canal `final`.
-- Atención al cliente con control de coste computacional: el nivel `low` reduce tokens de razonamiento para consultas simples, mientras que `high` se reserva para casos complejos, ajustando latencia y consumo.
-- Evaluación de modelos de razonamiento en lenguas de bajo recurso: banco de pruebas para medir hasta qué punto el razonamiento entrenado en estándar se transfiere a una variedad dialectal.
-- Generación de contenido divulgativo sobre la zona: artículos, guiones o fichas sobre Imabari y su patrimonio a partir de los datasets de QA sobre Wikipedia empleados en el entrenamiento.
-- Prototipado de interfaces de chat con canales separados: la plantilla permite construir UIs que muestran el razonamiento plegado y la respuesta final por separado, con selección de idioma y esfuerzo.
+- Atención al cliente local en Imabari: el modelo puede responder en el dialecto local manteniendo el razonamiento en el mismo registro, lo que resulta adecuado para ayuntamientos, comercios y servicios turísticos de la región.
+- Asistente turístico de Ehime: respuestas sobre la zona (incluido el monte Chikami, que da nombre al modelo) en dialecto o en japonés estándar según el perfil del visitante.
+- Normalización dialecto-estándar: usar el canal `analysis_imabari` para interpretar una consulta en dialecto y el canal `final` para devolver la respuesta en japonés estándar, útil en sistemas de accesibilidad lingüística.
+- Investigación en adaptación dialectal: banco de pruebas para medir cuánto dialecto retiene un SFT de parámetros completos sobre un modelo de razonamiento y cómo afecta al rendimiento en japonés estándar.
+- Generación de material divulgativo bilingüe (dialecto/estándar): pares de textos sobre historia y cultura local a partir de los datasets de QA empleados en el entrenamiento.
+- Evaluación de "reasoning effort": comparar en un mismo prompt las salidas low, medium y high para calibrar coste computacional frente a calidad en tareas de razonamiento en japonés.
+- Docencia y preservación del patrimonio lingüístico: ejemplos controlados de razonamiento y respuesta en dialecto para materiales educativos, con revisión humana obligatoria.
 
 ## Benchmarks y rendimiento
 
@@ -54,41 +53,39 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada en bf16: aproximadamente 17,2 GB solo para pesos, más overhead de activaciones y caché KV; en la práctica se recomienda 24 GB o más para contexto moderado.
-- GPU recomendadas: A100 40/80 GB, H100, L40S o RTX 4090 (24 GB) para bf16 con contexto limitado.
-- GPU de consumo: cabe en RTX 4090 y, con cuantización no oficial, potencialmente en GPUs de 16 GB; el autor no publica versiones cuantizadas.
-- Despliegue: Hugging Face Transformers con `device_map="auto"` es la vía documentada; el repositorio incluye la etiqueta `text-generation-inference` y `endpoints_compatible`, por lo que TGI y endpoints compatibles son opciones plausibles. No se documentan instrucciones para vLLM, llama.cpp ni Ollama.
-- Es obligatorio usar el tokenizer distribuido con el modelo, ya que la plantilla de chat personalizada depende de él.
-- Latencia y throughput: no disponibles.
+- VRAM estimada para inferencia en bf16: en torno a 17-18 GB solo para pesos (8,59 mil millones de parámetros a 2 bytes), más overhead de activaciones y caché KV; con contexto largo, prever 24 GB o más.
+- GPU recomendadas: A100 40/80 GB, H100, L40S o RTX 6000 Ada para bf16 sin cuantizar; RTX 4090 (24 GB) puede alojar el modelo en bf16 con contexto moderado.
+- GPU de consumo: cabe en RTX 4090 y, con cuantización a 8 bits o 4 bits, en GPUs de 16 GB o incluso 12 GB, aunque no se publican pesos cuantizados oficiales.
+- Despliegue: Transformers con `device_map="auto"` es la vía documentada; el repositorio incluye la tag `text-generation-inference` y `endpoints_compatible`, por lo que TGI e Inference Endpoints son opciones razonables. Para llama.cpp/Ollama sería necesario convertir los pesos a GGUF, conversión no publicada por el autor.
+- Latencia y throughput: no disponibles. El modo de generación documentado es greedy (`do_sample=False`) con `max_new_tokens=2048`, lo que sugiere respuestas de razonamiento relativamente largas y coste de decodificación proporcional al nivel de esfuerzo.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Idiomas | Licencia | Notas |
 |---|---|---|---|---|---|
-| Chikamiyama v14 | 8,59 B | no disponible | ja (estándar + dialecto Imabari) | mixed-upstream-terms | SFT completo, canales y reasoning effort |
-| llm-jp/llm-jp-4-8b-thinking | 8,59 B | no disponible | ja | según modelo base | Modelo base sin especialización dialectal |
-| Alternativas de 7-8 B en japonés (p. ej. modelos de la familia llm-jp) | ~7-8 B | no disponible | ja | variable | No se dispone de datos comparativos de rendimiento en la información proporcionada |
+| Chikamiyama v14 (este modelo) | 8,59 B | no disponible | ja (estándar + dialecto Imabari) | cc-by-sa-4.0 / mixed-upstream-terms | SFT completo sobre LLM-jp-4-8B-Thinking, canales de dialecto y reasoning effort |
+| llm-jp/llm-jp-4-8b-thinking | no disponible en la información proporcionada | no disponible | ja | no disponible en la información proporcionada | Modelo base; sin canales de dialecto ni control de esfuerzo |
+| Otros ajustes comunitarios de LLM-jp-4-8B | ~8,6 B | no disponible | ja | variable según autor | No se dispone de datos verificables en la información proporcionada |
 
-No se dispone de resultados de benchmarks que permitan una comparación cuantitativa con alternativas.
+No se dispone de datos de benchmarks ni de especificaciones del modelo base más allá de su identificador, por lo que la comparación cuantitativa de rendimiento no está disponible.
 
 ## Limitaciones y advertencias
 
-- El control de canal y de esfuerzo de razonamiento es orientativo: el autor indica que no restringe estrictamente la salida ni garantiza longitud o precisión del razonamiento.
-- El prefijo de canal del asistente fija el canal inicial, pero no asegura que la respuesta final use el canal esperado.
-- Riesgo de alucinación inherente a un modelo de 8 B ajustado con SFT sobre datos de QA de Wikipedia; no se documentan evaluaciones de fidelidad.
-- Cobertura lingüística limitada al japonés; no se garantiza un comportamiento correcto en otros idiomas.
-- Sesgos del dialecto de Imabari y de los datasets de entrenamiento no evaluados; los datos de QA derivan de Wikipedia y pueden arrastrar sesgos de cobertura.
-- Licencia `mixed-upstream-terms`: es necesario revisar los términos del modelo base LLM-jp-4-8B-Thinking antes de cualquier uso comercial.
-- El modelo tiene 0 descargas y 0 likes en el momento de la consulta, y el autor lo describe como el primero de una serie de experimentos; no hay evidencia de uso en producción.
-- Requiere la plantilla de chat y el tokenizer específicos; usar plantillas genéricas puede degradar el formato de canales.
-- No se documentan versiones cuantizadas oficiales, lo que limita el despliegue en hardware modesto.
+- Ámbito lingüístico restringido: solo japonés (estándar y dialecto de Imabari); no se garantiza un comportamiento correcto en otros idiomas.
+- El dialecto de Imabari es una variedad local con pocos datos públicos; es esperable un rendimiento inferior y mayor variabilidad que en japonés estándar.
+- Riesgo de alucinación inherente a un modelo de 8,6 B ajustado con SFT sobre datasets de QA de dominio acotado; las respuestas sobre temas ajenos al entrenamiento pueden ser inexactas.
+- `reasoning_effort` y `valid_channels` son mecanismos de condicionamiento, no restricciones duras: el modelo puede ignorar el canal o el nivel solicitado.
+- El canal inicial se fuerza con un prefijo de asistente, pero no se garantiza el canal de la respuesta final; en multi-turno hay que declarar explícitamente el campo `channel` en mensajes previos.
+- Licencia cc-by-sa-4.0 con términos upstream mixtos: el uso comercial exige revisar las condiciones del modelo base y de los datasets, y la cláusula share-alike puede obligar a licenciar obras derivadas bajo la misma licencia.
+- No se documentan cuantizaciones oficiales, longitud de contexto ni evaluaciones de seguridad más allá del uso de AnswerCarefully; para producción conviene validar ambos aspectos.
+- Modelo de nicho con 576 descargas y 0 likes en el momento de la consulta: soporte comunitario y mantenimiento limitados.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/ikedachin/llm-jp-4-8b-thinking-imabari-chikamiyama-v14
 - Modelo base: https://huggingface.co/llm-jp/llm-jp-4-8b-thinking
-- Dataset de entrenamiento: https://huggingface.co/datasets/ikedachin/imabari_wiki_qa_v4_reasoning_effort_llmjp4
-- Dataset de entrenamiento: https://huggingface.co/datasets/ikedachin/std_lang_wiki_qa_v4_validated_w_reasoning_effort_llmjp4
-- Dataset de entrenamiento: https://huggingface.co/datasets/ikedachin/imabari_wiki_qa_v5_difficult_reasoning_effort_llmjp4
-- Dataset de entrenamiento: https://huggingface.co/datasets/ikedachin/std_lang_wiki_qa_v5_difficult_reasoning_effort_llmjp4
+- Dataset: https://huggingface.co/datasets/ikedachin/imabari_wiki_qa_v4_reasoning_effort_llmjp4
+- Dataset: https://huggingface.co/datasets/ikedachin/std_lang_wiki_qa_v4_validated_w_reasoning_effort_llmjp4
+- Dataset: https://huggingface.co/datasets/ikedachin/imabari_wiki_qa_v5_difficult_reasoning_effort_llmjp4
+- Dataset: https://huggingface.co/datasets/ikedachin/std_lang_wiki_qa_v5_difficult_reasoning_effort_llmjp4
 - Dataset de seguridad: https://huggingface.co/datasets/llm-jp/AnswerCarefully

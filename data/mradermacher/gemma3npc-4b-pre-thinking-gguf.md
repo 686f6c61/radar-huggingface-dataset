@@ -2,48 +2,49 @@
 
 ## Resumen
 
-Gemma3NPC-4B-pre-thinking-GGUF es una coleccion de cuantizaciones estaticas en formato GGUF del modelo Gemma3NPC-4B-pre-thinking, publicado por el usuario chimbiwide. El repositorio lo mantiene mradermacher, conocido en el ecosistema por generar versiones GGUF de modelos open source para su uso con llama.cpp y herramientas compatibles. El modelo base parte de la familia Gemma 3 de Google, en su variante de 4B parametros, y el sufijo "pre-thinking" sugiere un ajuste orientado a razonamiento previo a la respuesta, aunque la model card no aporta detalles sobre el proceso de entrenamiento.
+Gemma3NPC-4B-pre-thinking-GGUF es la distribucion en formato GGUF del modelo chimbiwide/Gemma3NPC-4B-pre-thinking, un ajuste fino de la familia Gemma 3 de Google orientado a la interpretacion de personajes no jugadores (NPC) en juegos de rol. El modelo ha sido cuantizado por mradermacher, un colaborador habitual de la comunidad que publica versiones GGUF de modelos abiertos para su uso con llama.cpp y herramientas compatibles. El repositorio ofrece once variantes de cuantizacion, desde Q2_K hasta f16, con tamanos que van de 1,8 GB a 7,9 GB.
 
-La relevancia de esta publicacion es practica: ofrece el modelo en hasta doce variantes de cuantizacion (desde Q2_K hasta F16) para facilitar su despliegue en hardware con recursos limitados. No obstante, la informacion disponible es muy escasa: no se documentan datos de entrenamiento, licencia, idiomas ni benchmarks, lo que limita cualquier evaluacion rigurosa.
+El modelo base cuenta con 3.880.263.168 parametros (aproximadamente 3,9 mil millones), lo que lo situa en la gama de modelos pequenos ejecutables en hardware de consumo. El ajuste fino se ha realizado sobre el dataset chimbiwide/NPC-RP-Pre-Thinking, un conjunto de datos orientado a roleplay conversacional con un modo de "pre-pensamiento" que sugiere la generacion de un razonamiento previo a la respuesta final del personaje.
 
-Se trata, por tanto, de un artefacto de distribucion mas que de un modelo documentado de forma independiente. Cualquier uso en produccion deberia remitirse al modelo original de chimbiwide y a la licencia de Gemma 3 de Google.
+La relevancia de esta ficha radica en que permite desplegar un modelo especializado en dialogo de personajes en entornos locales sin GPU de datacenter, gracias a las cuantizaciones de 4 y 5 bits que caben en tarjetas graficas de consumo. La licencia Gemma impone condiciones de uso que deben revisarse antes de cualquier despliegue comercial.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer (derivada de Gemma 3, segun el nombre del modelo base); no confirmado en la model card |
-| Parametros totales | 4B (segun el nombre del modelo) |
-| Parametros activos | no disponible (no se indica que sea MoE) |
+| Arquitectura | no disponible (derivada de Gemma 3, transformer decoder-only) |
+| Parametros totales | 3.880.263.168 |
+| Parametros activos | no aplica (no es MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | F16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q4_K_M, Q4_K_S, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K, IQ4_XS |
-| Idiomas soportados | no disponible |
-| Licencia | no disponible |
-| Formato de pesos | GGUF (cuantizaciones estaticas) |
+| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, f16 |
+| Idiomas soportados | en (segun la model card) |
+| Licencia | gemma |
+| Formato de pesos | GGUF (safetensors en el modelo base) |
 
 ## Arquitectura y entrenamiento
 
-La model card no describe la arquitectura interna del modelo base. Por el nombre (Gemma3NPC-4B), se infiere que deriva de Gemma 3 de Google en su variante de 4B parametros, pero no se confirma en la informacion proporcionada. Tampoco se detallan datos de entrenamiento, numero de tokens, composicion del dataset ni si hubo fases de RLHF, DPO o ajuste supervisado. El sufijo "pre-thinking" sugiere un entrenamiento orientado a generar razonamiento antes de la respuesta final, pero no se aporta evidencia tecnica al respecto.
+El modelo base es un ajuste fino de Gemma 3 de 4B parametros, una arquitectura transformer decoder-only. La model card del repositorio cuantizado no detalla la composicion del dataset de entrenamiento mas alla de referenciar chimbiwide/NPC-RP-Pre-Thinking, ni especifica el numero de tokens utilizados, la presencia de RLHF/DPO ni innovaciones tecnicas adicionales. El sufijo "pre-thinking" en el nombre sugiere un entrenamiento orientado a producir un razonamiento intermedio antes de la respuesta del personaje, pero no se documenta el mecanismo exacto en la informacion disponible.
 
-El repositorio en si es un artefacto de cuantizacion generado con la herramienta de mradermacher (se observa `quantize_version: 2` y `convert_type: hf` en los metadatos). Se han producido cuantizaciones estaticas en doce variantes, sin incluir un fichero `mmproj` (proyector multimodal) segun los metadatos, lo que apunta a que la cuantizacion se ha realizado solo sobre el modelo de lenguaje.
+La cuantizacion ha sido realizada por mradermacher con la herramienta de cuantizacion de llama.cpp, segun el flujo habitual del autor. El repositorio incluye tanto cuantizaciones estaticas como, en un repositorio separado, cuantizaciones ponderadas con imatrix (mradermacher/Gemma3NPC-4B-pre-thinking-i1-GGUF), que suelen ofrecer mejor calidad por bit en tamanos bajos.
 
 ## Capacidades
 
-- Generacion de texto y razonamiento: el nombre "pre-thinking" sugiere capacidad de razonamiento previo, aunque no se documenta formalmente.
-- Codigo y matematicas: no confirmado en la informacion disponible.
-- Tool calling / function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingues: no disponible.
-- Capacidades especiales (vision, audio, thinking mode): no disponible; los metadatos indican `skip_mmproj`, por lo que no se incluye proyector multimodal en este repositorio.
+- Generacion de texto conversacional orientada a la interpretacion de personajes (roleplay).
+- Modo de "pre-pensamiento": el modelo esta entrenado para producir un razonamiento previo a la respuesta final del NPC.
+- Dialogo multi-turno con mantenimiento de personaje, segun el dataset de entrenamiento.
+- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no documentado; el "pre-thinking" es el unico indicio de razonamiento estructurado.
+- Capacidades multilingues: la model card declara unicamente ingles (en).
+- Capacidades especiales (vision, audio): no disponibles; el modelo base es de texto.
 
 ## Casos de uso
 
-- Despliegue local en hardware de gama consumer: las cuantizaciones Q4_K_M y Q5_K_M permiten ejecutar un modelo de 4B en GPUs con 6-8 GB de VRAM mediante llama.cpp u Ollama, adecuado para prototipado y pruebas offline.
-- Experimentacion con razonamiento en entornos con recursos limitados: la variante "pre-thinking" puede emplearse para evaluar si el modelo genera cadenas de razonamiento antes de responder, aunque sin benchmarks publicados la validacion debe ser empirica.
-- Integracion en aplicaciones de escritorio o edge: el formato GGUF y las cuantizaciones de baja precision (Q3_K_S, Q2_K) permiten incluir el modelo en aplicaciones locales sin dependencia de la nube.
-- Generacion de texto asistida en pipelines de CI: utilizable como componente de generacion en herramientas internas, siempre que se valide su calidad con pruebas propias.
-- Fine-tuning posterior sobre las cuantizaciones de mayor precision (F16, Q8_0): sirve como base para experimentos de ajuste en entornos con poca memoria.
-- Evaluacion comparativa de cuantizaciones: el repositorio ofrece doce variantes del mismo modelo, lo que facilita medir el impacto de la cuantizacion en calidad y latencia.
+- Interpretacion de NPC en videojuegos: el modelo puede generar dialogos coherentes con la personalidad de un personaje en tiempo real, ejecutandose en local con cuantizaciones Q4_K_M (2,6 GB) en GPUs de consumo, lo que evita la latencia de red y los costes de API en bucles de dialogo frecuentes.
+- Prototipado rapido de sistemas de rol conversacional: investigadores pueden iterar sobre prompts de personaje y evaluar la coherencia del NPC con una cuantizacion Q5_K_M o Q6_K sin necesidad de infraestructura dedicada.
+- Modding de juegos de rol: integracion del GGUF en motores que soportan llama.cpp (por ejemplo, a traves de plugins de dialogos) para sustituir arboles de dialogo estaticos por generacion dinamica.
+- Simulacion de agentes sociales: el modo pre-thinking permite generar trazas de razonamiento del personaje antes de la respuesta, utiles para estudiar comportamiento emergente en entornos multiagente.
+- Educacion y entrenamiento en roleplay: uso como companero de practica en escenarios de interpretacion (entrevistas, simulaciones de ventas) donde el "pre-thinking" ayuda a mantener la coherencia del rol.
+- Investigacion sobre ajuste fino especializado: el par modelo base + dataset publico permite reproducir o extender el entrenamiento para estudiar tecnicas de roleplay con razonamiento previo en modelos de menos de 4B parametros.
 
 ## Benchmarks y rendimiento
 
@@ -51,43 +52,37 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia (aproximada, segun cuantizacion y modelo de 4B):
-  - F16: ~8 GB
-  - Q8_0: ~4,5 GB
-  - Q6_K: ~3,5 GB
-  - Q5_K_M: ~3 GB
-  - Q4_K_M: ~2,5 GB
-  - Q3_K_M: ~2 GB
-  - Q2_K: ~1,5 GB
-- GPU recomendadas: RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4090, A100 o H100 para despliegues con mayor concurrencia; las cuantizaciones bajas caben en GPUs de 4-6 GB.
-- Cabe en GPU consumer: si, en la mayoria de GPUs modernas con 6 GB o mas para Q4_K_M y superiores; Q2_K y Q3_K_S en GPUs de 4 GB.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio y cualquier runtime compatible con GGUF; no se indica soporte para vLLM o TGI en formato GGUF.
-- Latencia y throughput: no disponible.
+- VRAM estimada para inferencia: aproximadamente 2,5-3 GB con Q4_K_M (2,6 GB de pesos mas overhead de contexto); aproximadamente 3,5-4 GB con Q6_K (3,3 GB); aproximadamente 8-9 GB con f16 (7,9 GB).
+- GPUs recomendadas: cualquier GPU con 4 GB o mas de VRAM para cuantizaciones Q4; RTX 3060, RTX 4060, RTX 4090 o superiores para mayor velocidad; A100/H100 no son necesarias para este tamano.
+- Cabe en GPU de consumo: si, en la mayoria de tarjetas modernas desde 4 GB de VRAM con Q4_K_M; tambien puede ejecutarse en CPU con llama.cpp a velocidades inferiores.
+- Opciones de despliegue: llama.cpp, Ollama (importando el GGUF), LM Studio, text-generation-webui y cualquier runtime compatible con GGUF. El repositorio esta etiquetado como endpoints_compatible.
+- Latencia y throughput estimados: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| Gemma3NPC-4B-pre-thinking-GGUF | 4B | no disponible | no disponible | GGUF | Cuantizaciones estaticas de un modelo derivado de Gemma 3 |
-| Gemma 3 4B (Google) | 4B | no disponible en esta ficha | Gemma Terms of Use | safetensors, GGUF | Modelo base oficial, con documentacion y benchmarks publicos |
-| Qwen2.5 3B / 7B | 3B / 7B | 32K (segun version) | Apache 2.0 (la mayoria) | safetensors, GGUF | Alternativa open source con licencia permisiva y amplia documentacion |
-| Llama 3.2 3B | 3B | 128K | Llama 3.2 Community License | safetensors, GGUF | Alternativa de Meta con contexto largo y ecosistema amplio |
+| Gemma3NPC-4B-pre-thinking-GGUF | 3,88B | no disponible | gemma | GGUF | Especializado en NPC/roleplay con pre-thinking |
+| Gemma 3 4B (base) | ~4B | no disponible | gemma | safetensors, GGUF | Modelo generalista del que deriva; sin especializacion en roleplay |
+| Modelos de roleplay de ~3-4B en GGUF | no disponible | no disponible | variable | GGUF | Existen alternativas de la comunidad, pero no se dispone de datos comparativos en la informacion proporcionada |
 
-La comparacion es orientativa: no hay datos de rendimiento del modelo evaluado, por lo que no puede establecerse una comparacion cuantitativa.
+No se dispone de datos de rendimiento comparativo entre estas opciones en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de documentacion: no se detallan datos de entrenamiento, licencia, idiomas ni benchmarks, lo que impide evaluar su idoneidad para produccion.
-- Licencia no disponible: no puede confirmarse si el uso comercial esta permitido; debe verificarse en el modelo original de chimbiwide y en la licencia de Gemma 3.
-- Riesgo de alucinacion: inherente a los modelos de lenguaje; sin evaluacion publicada no puede acotarse su magnitud.
-- Sesgos conocidos: no documentados; los sesgos del modelo base (Gemma 3) pueden heredarse.
-- Limitaciones de contexto e idioma: no disponibles; el contexto maximo no se especifica.
-- Cuantizaciones de baja precision (Q2_K, Q3_K_S) pueden degradar notablemente la calidad; se recomienda Q4_K_M o superior para uso real.
-- El repositorio no incluye proyector multimodal (`skip_mmproj`), por lo que no debe asumirse capacidad de vision aunque el modelo base la tuviera.
-- Sin descargas ni likes en el momento de la consulta: no hay evidencia de uso comunitario ni validacion externa.
+- Sesgos conocidos: no documentados en la model card; al derivar de Gemma 3 y entrenarse en un dataset de roleplay, puede heredar sesgos del corpus base y del dataset de ajuste.
+- Riesgo de alucinacion: presente como en cualquier modelo generativo; en roleplay puede manifestarse como incoherencias de personaje o invencion de hechos dentro de la ficcion.
+- Limitaciones de contexto o idioma: la model card solo declara ingles; el rendimiento en castellano no esta garantizado ni documentado.
+- Restricciones de licencia: la licencia Gemma impone condiciones de uso, incluida la aceptacion de los terminos de Google y restricciones para uso comercial; es obligatorio revisar la licencia antes de desplegar en produccion.
+- Caveat para produccion: el modelo esta pensado para roleplay y dialogo de personajes, no para tareas de razonamiento general, codigo o matematicas; su uso fuera de ese dominio puede dar resultados pobres.
+- El acceso al modelo base en Hugging Face requiere aceptar la licencia de Gemma (gated model).
 
 ## Enlaces
 
 - Repositorio GGUF: https://huggingface.co/mradermacher/Gemma3NPC-4B-pre-thinking-GGUF
-- Modelo original: https://huggingface.co/chimbiwide/Gemma3NPC-4B-pre-thinking
-- Perfil del autor de las cuantizaciones: https://huggingface.co/mradermacher
+- Modelo base: https://huggingface.co/chimbiwide/Gemma3NPC-4B-pre-thinking
+- Dataset de entrenamiento: https://huggingface.co/datasets/chimbiwide/NPC-RP-Pre-Thinking
+- Cuantizaciones imatrix: https://huggingface.co/mradermacher/Gemma3NPC-4B-pre-thinking-i1-GGUF
+- Pagina de descarga del autor: https://hf.tst.eu/model#Gemma3NPC-4B-pre-thinking-GGUF
+- Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Solicitudes de cuantizacion: https://huggingface.co/mradermacher/model_requests

@@ -2,108 +2,102 @@
 
 ## Resumen
 
-Kanso Satori 1.0 3-bit es una cuantización de 3 bits del fine-tune Kanso Satori 1.0 de BuilderHelm AI (antes ZenVoice), un modelo de 4.022.468.096 parámetros construido sobre Qwen3-4B-Instruct-2507 y especializado en una única tarea: limpiar la salida cruda de un sistema de reconocimiento de voz. El modelo recibe texto transcrito sin formato y devuelve el mismo texto con puntuación y mayúsculas restauradas, muletillas y falsos arranques eliminados, y números, importes, fechas, horas, correos y URL en su forma escrita.
+Kanso Satori 1.0 3-bit es una cuantización de 3 bits del modelo de limpieza de dictado Kanso Satori 1.0 de BuilderHelm (anteriormente ZenVoice), un fine-tune de Qwen3-4B-Instruct-2507 especializado en transformar la salida cruda de un sistema de reconocimiento de voz en texto escrito correcto. El modelo toma transcripciones sin puntuación ni mayúsculas, elimina muletillas y falsos arranques, y restaura las formas escritas de números, importes, fechas, horas, correos y URL. No es un modelo de propósito general: está diseñado para una única tarea muy concreta dentro de una aplicación de dictado.
 
-No es un modelo de propósito general: es un formateador de dictado pensado para ejecutarse íntegramente en el dispositivo mediante MLX en Apple Silicon. Esta variante concreta aplica DWQ (distilled weight quantization) a 3 bits con grupo de 64 sobre los pesos bf16, lo que reduce el fichero de 2,26 GB a 1,76 GB y sube la velocidad de decodificación de unos 47 a unos 58 tok/s en un Apple M5, a cambio de perder calidad en dictados de longitud media y en datos fuera de distribución.
+Técnicamente es un transformer denso de 4.022.468.096 parámetros (4B) derivado de la familia Qwen3, cuantizado a 3 bits con DWQ (distilled weight quantization) sobre los pesos bf16 del modelo base. El resultado pesa 1,76 GB frente a los 2,26 GB de la versión de 4 bits, y decodifica a unos 58 tok/s en un Apple M5 (frente a 47 tok/s del 4-bit). Está empaquetado en formato MLX para ejecución local en Apple Silicon.
 
-Su relevancia es práctica: permite meter un modelo de 4B y 1,76 GB en el flujo de una app de dictado on-device con un pico de memoria de 2,17 GB. El propio autor es explícito sobre cuándo NO usarlo: solo si necesitas el modelo de 4B por debajo de 2 GB; en el resto de casos recomienda la build de 4 bits o la variante Lite de 1,7B.
+Su relevancia es acotada: el propio autor lo posiciona como una opción de compromiso para quien quiera el modelo de 4B por debajo de 2 GB. En dictados cortos rinde a la par que el 4-bit, pero en datos held-out y dictados de longitud media empeora, y el modelo Lite de 1,7B es más pequeño y rápido. Es, por tanto, una variante de interés para despliegues con restricciones estrictas de memoria en Mac, no una mejora general sobre las alternativas.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only denso (familia Qwen3), fine-tune para formateo de texto; sin capa MoE |
-| Parametros totales | 4.022.468.096 |
-| Parametros activos | No aplica (modelo denso, no MoE) |
-| Longitud de contexto | No disponible en la model card; el modelo base Qwen3-4B-Instruct-2507 declara 262.144 tokens nativos. El fine-tune se entrenó con muestras de hasta 512 tokens y el autor desaconseja entradas de más de 300 palabras en una sola pasada |
-| Tipos de cuantizacion | 3 bits DWQ con group size 64 (esta build); existen también bf16 y 4 bits DWQ del mismo fine-tune |
-| Idiomas soportados | Inglés (el alcance declarado es "English dictation cleanup"); los metadatos de Hugging Face no listan idiomas |
-| Licencia | Apache-2.0 (heredada del base Qwen3-4B-Instruct-2507) |
-| Formato de pesos | safetensors en formato MLX (librería `mlx`); repositorio de 1,8 GB, pesos de 1,76 GB |
+| Arquitectura | Transformer denso (derivado de Qwen3-4B-Instruct-2507) |
+| Parametros totales | 4.022.468.096 (4B) |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | 3 bits DWQ (group size 64) |
+| Idiomas soportados | inglés (limpieza de dictado en inglés) |
+| Licencia | Apache-2.0 |
+| Formato de pesos | safetensors (MLX); repo de 1,8 GB, pesos de 1,76 GB |
 
 ## Arquitectura y entrenamiento
 
-La base es Qwen3-4B-Instruct-2507, un transformer decoder-only denso de 4,02B parámetros. Sobre él se aplicó un fine-tune específico de formateo de dictado cuyo adaptador se fusionó en los pesos bf16 publicados como `Kanso-Satori-1.0-bf16`. Esta build parte de esos pesos fusionados y los cuantiza a 3 bits con DWQ (destilación de pesos): se entrenó con 1.024 muestras de hasta 512 tokens, learning rate 1e-6, group size 64, tomando como objetivo las top-1.024 logits del modelo bf16 renderizadas en el formato de entrenamiento. No hay adaptador que cargar: es un modelo plano.
+El modelo es un transformer denso de 4B parámetros heredado de Qwen3-4B-Instruct-2507, sobre el que se aplicó un fine-tune para la tarea de limpieza de dictado. El adaptador resultante se fusionó en los pesos bf16 (`Kanso-Satori-1.0-bf16`) y posteriormente se cuantizó a 3 bits mediante DWQ (distilled weight quantization) con group size 64. La destilación se realizó sobre 1.024 muestras de entrenamiento de hasta 512 tokens, con learning rate 1e-6, usando como objetivos los top-1.024 logits del modelo bf16 renderizados en el formato de entrenamiento. El resultado es un modelo plano, sin adaptador que cargar.
 
-Un detalle operativo crítico es la plantilla de chat. El fine-tune v3.2 se entrenó con un bloque de pensamiento vacío (`<think>\n\n</think>\n\n`) al inicio de cada respuesta, y la plantilla incluida en el repositorio termina el prompt de generación con ese bloque. Con la plantilla estándar de Qwen3-4B-Instruct-2507, las builds de 3 bits se desvían y emiten tokens `<tool_call>`. Hay que usar el `chat_template.jinja` empaquetado y decodificación greedy.
+Un detalle técnico crítico es la plantilla de chat: el fine-tune se entrenó con un bloque de pensamiento vacío (`<think>\n\n</think>\n\n`) al inicio de cada respuesta, y el `chat_template.jinja` incluido en el repo termina el prompt de generación con ese bloque. Si se usa la plantilla estándar de Qwen3-4B-Instruct-2507, las builds de 3 bits se desvían hacia tokens `<tool_call>`. El autor recomienda decodificación greedy. No se dispone de información sobre el volumen total de tokens de entrenamiento del fine-tune original ni sobre el uso de RLHF/DPO.
 
 ## Capacidades
 
-- Limpieza de dictado en inglés: restauración de puntuación y mayúsculas sobre transcripción ASR cruda.
-- Eliminación de muletillas, falsos arranques y repeticiones propias del habla espontánea.
-- Restauración de formas escritas de números, importes monetarios, fechas, horas, direcciones de correo y URL (por ejemplo, "two thousand five hundred dollars and fifty cents" pasa a "$2,500.50").
-- Condicionamiento por contexto de aplicación: si se le pasa una línea `app:`, adapta mayúsculas y tono a ese contexto.
-- Ejecución totalmente on-device mediante MLX, sin llamadas de red.
-- No soporta tool calling, function calling, uso de agentes, razonamiento multi-paso, visión, audio ni modo de pensamiento (se fuerza `enable_thinking=False`).
-- Multilingüe: no. El alcance declarado es exclusivamente dictado en inglés.
+- Limpieza de dictado en inglés: restaura puntuación y mayúsculas sobre la salida cruda de un sistema de speech-to-text.
+- Eliminación de muletillas y falsos arranques del habla espontánea.
+- Restauración de formas escritas de números, importes monetarios, fechas, horas, correos electrónicos y URL.
+- Adaptación de capitalización y tono al contexto indicado mediante una línea `app:` en el prompt de sistema.
+- Generación de texto conversacional en el formato de chat de Qwen3 (pipeline `text-generation`).
+- No se documentan capacidades de tool calling, agentes, razonamiento multi-paso, visión ni audio; el modelo es de tarea única.
+- Capacidad multilingüe: no disponible; el alcance declarado es únicamente dictado en inglés.
 
 ## Casos de uso
 
-- Limpieza de dictado en apps de notas de voz: el modelo se inserta justo después del ASR y antes de guardar el texto, con 0,27 s de media por dictado y 2,17 GB de pico de memoria en un M5, lo que permite hacerlo en tiempo real en el propio dispositivo sin enviar audio ni transcripciones a la nube.
-- Procesado por lotes de transcripciones de reuniones: aplicar el modelo frase a frase sobre la salida de un ASR para obtener actas legibles; el autor recomienda trocear en frases alineadas porque las entradas de más de 300 palabras pueden repetirse.
-- Corrección de correos y URL dictados: los casos donde el ASR produce "arroba" o "punto com" se resuelven en una sola pasada gracias a la restauración de formas escritas, útil en apps de CRM o clientes de correo con entrada por voz.
-- Herramienta de accesibilidad para usuarios con movilidad reducida: entrada por voz continua con salida de texto publicable, ejecutada localmente en un Mac con Apple Silicon.
-- Post-proceso en pipelines periodísticos de entrevistas: limpieza de transcripciones automáticas antes de la revisión humana, con la ventaja de que el contenido sensible no sale del equipo.
-- Scripts de CLI y automatización personal: integración vía `mlx_lm` en un pipeline que lea transcripciones en bruto de un directorio y escriba la versión formateada, usando muestreo con temperatura 0 para reproducibilidad.
-- Aplicaciones de subtitulado o chat de voz: normalización de la salida ASR antes de mostrarla en pantalla, con la advertencia de que el modelo no traduce ni reformula el contenido, solo lo formatea.
+- Limpieza de dictado en aplicaciones de voz a texto: el modelo recibe la transcripción cruda del ASR y devuelve texto con puntuación, mayúsculas y números en forma escrita, integrándose en el pipeline de la app ZenVoice con un coste medio de 0,27 s por dictado en Apple M5.
+- Procesamiento local en Mac sin conexión: al ejecutarse vía MLX en Apple Silicon con 2,17 GB de memoria pico, permite limpiar dictados en un portátil sin enviar audio ni texto a la nube.
+- Normalización de importes y fechas en notas de voz: convierte expresiones habladas como "two thousand five hundred dollars and fifty cents" en "$2,500.50", útil para captura de gastos o agendas por voz.
+- Corrección de correos y URL dictados: restaura la forma escrita de direcciones de email y enlaces que el ASR transcribe de forma literal o fragmentada.
+- Preprocesado para pipelines de documentación: limpiar transcripciones de reuniones antes de pasarlas a un modelo mayor de resumen o extracción, reduciendo ruido y muletillas.
+- Despliegue con presupuesto de memoria ajustado: cuando se necesita el modelo de 4B por debajo de 2 GB de pesos en un equipo Apple Silicon, esta build ofrece 1,76 GB con velocidad de decodificación superior a la de 4 bits.
 
 ## Benchmarks y rendimiento
 
-Datos de la model card. Decodificación greedy, Apple M5, MLX 0.32.2.
+Decodificación greedy, Apple M5, MLX 0.32.2. Datos publicados por el autor en la model card.
 
 | Suite | Metrica | v3.2 3-bit DWQ | v3.2 4-bit DWQ | v2.2 Lite (1.7B) |
 |---|---|---|---|---|
 | eval_v500 (500, cortos) | WER / exact | 4,7% / 64,2% | 4,7% / 67,2% | 5,5% / 65,8% |
-| eval_v500 | Punct F1 | 0,838 | 0,859 | 0,863 |
+| eval_v500 (500, cortos) | Punct F1 | 0,838 | 0,859 | 0,863 |
 | Held-out v2.2 (500) | WER / exact | 9,0% / 37,0% | 8,0% / 40,6% | 8,9% / 37,0% |
 | Medios, 50-99 palabras (150) | WER | 15,1% | 10,3% | 11,0% |
-| Runtime app ZenVoice (eval_v500) | WER / exact | 4,0% / 65,4% | 3,9% / 64,6% | 4,0% / 65,4% |
-| Runtime app ZenVoice | Segundos medios por dictado | 0,27 | 0,32 | 0,23 |
-| Runtime app ZenVoice | Memoria pico | 2,17 GB | 2,65 GB | 1,39 GB |
-| Pesos | Tamano | 1,76 GB | 2,26 GB | 1,05 GB |
-
-Lectura de los datos: en dictados cortos la build de 3 bits está dentro del ruido respecto a la de 4 bits (mismo WER, exact 3 puntos peor, Punct F1 0,021 peor). En datos held-out cae al nivel de Lite (1,7B) y en dictados medios es claramente peor que Lite (15,1% frente a 11,0% de WER). No hay resultados publicados de MMLU, HumanEval, GSM8K ni de benchmarks de propósito general, y no tendrían sentido para este modelo.
+| Runtime app ZenVoice (eval_v500) | Model WER / exact | 4,0% / 65,4% | 3,9% / 64,6% | 4,0% / 65,4% |
+| Runtime app ZenVoice (eval_v500) | Media s por dictado | 0,27 | 0,32 | 0,23 |
+| Runtime app ZenVoice (eval_v500) | Memoria pico | 2,17 GB | 2,65 GB | 1,39 GB |
+| Pesos | | 1,76 GB | 2,26 GB | 1,05 GB |
 
 ## Requisitos de hardware
 
-- Inferencia solo vía MLX, es decir, Apple Silicon (M1/M2/M3/M4/M5). No hay pesos GGUF ni compatibilidad declarada con CUDA.
-- VRAM/memoria unificada: 2,17 GB de pico medidos en la app ZenVoice con un M5; el fichero de pesos ocupa 1,76 GB y el repositorio 1,8 GB. Cabe sobradamente en cualquier Mac con 8 GB de memoria unificada.
-- GPU recomendadas: no aplica el catálogo CUDA (A100, H100, RTX 4090) porque no se publican pesos para esas plataformas. El hardware de referencia del autor es un Apple M5.
-- Throughput: unos 58 tok/s de decodificación en un Apple M5 (frente a 47 tok/s de la build de 4 bits, según la model card).
-- Latencia: 0,27 s de media por dictado en el runtime de la app ZenVoice sobre M5 (0,32 s con 4 bits, 0,23 s con Lite).
-- Despliegue: `mlx_lm` con `load` y `generate`, sampler con `temp=0.0`, `max_tokens` en torno a 200 para dictados cortos. vLLM, TGI, llama.cpp y Ollama no están soportados para estos pesos tal cual; requerirían conversión y no está documentada.
-- Requisito de plantilla: cargar el `chat_template.jinja` del repositorio y usar `enable_thinking=False`; con la plantilla estándar de Qwen3 la generación se corrompe.
+- VRAM/memoria unificada estimada: 2,17 GB de memoria pico en runtime según el autor (Apple M5, MLX); pesos de 1,76 GB.
+- Plataforma objetivo: Apple Silicon con MLX; el repo declara la librería `mlx` y no incluye pesos GGUF ni formatos para CUDA.
+- GPU recomendadas: no disponible para CUDA; el modelo está pensado para chips Apple (M-series). No se documenta soporte en A100, H100 ni RTX 4090.
+- Cabe en GPU de consumo: sí, en equipos Apple Silicon con memoria unificada suficiente (el runtime medido usa 2,17 GB); no se documenta para GPU consumer NVIDIA.
+- Opciones de despliegue: `mlx_lm` (load/generate con `make_sampler`); no se documentan vLLM, llama.cpp, Ollama ni TGI.
+- Latencia y throughput: aproximadamente 58 tok/s de decodificación en Apple M5 (frente a 47 tok/s del 4-bit); 0,27 s de media por dictado en el runtime de la app ZenVoice.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Pesos | Contexto | WER eval_v500 / medios | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | WER eval_v500 | Memoria pico | Licencia | Formato |
 |---|---|---|---|---|---|---|
-| Kanso Satori 1.0 3-bit DWQ | 4,02B | 1,76 GB | No disponible (base 262.144) | 4,7% / 15,1% | Apache-2.0 | MLX, on-device |
-| Kanso Satori 1.0 4-bit DWQ | 4,02B | 2,26 GB | No disponible (base 262.144) | 4,7% / 10,3% | Apache-2.0 | MLX, on-device |
-| Kanso Satori 1.0 bf16 | 4,02B | No indicado (referencia del fine-tune) | No disponible (base 262.144) | No publicado en esta ficha | Apache-2.0 | MLX / safetensors |
-| Kanso Lite (v2.2, 1,7B) | ~1,7B | 1,05 GB | No disponible | 5,5% / 11,0% | Apache-2.0 | MLX, on-device |
+| Kanso Satori 1.0 3-bit DWQ | 4B | no disponible | 4,7% | 2,17 GB | Apache-2.0 | safetensors (MLX) |
+| Kanso Satori 1.0 4-bit DWQ | 4B | no disponible | 4,7% | 2,65 GB | Apache-2.0 | safetensors (MLX) |
+| Kanso Satori v2.2 Lite | 1,7B | no disponible | 5,5% | 1,39 GB | Apache-2.0 | safetensors (MLX) |
 
-Frente a alternativas de propósito general del mismo tamaño (por ejemplo, el propio Qwen3-4B-Instruct-2507 sin fine-tune), este modelo no es comparable en benchmarks estándar: no se publican MMLU ni HumanEval, y su ventaja es específica de la tarea de formateo de dictado en inglés. No se dispone de datos de otros formateadores de dictado comparables en la información proporcionada.
+Frente al 4-bit, esta build reduce pesos (1,76 GB frente a 2,26 GB) y memoria pico (2,17 GB frente a 2,65 GB) y decodifica más rápido (58 frente a 47 tok/s), a costa de peor exactitud en held-out (37,0% frente a 40,6%) y peor WER en dictados medios (15,1% frente a 10,3%). Frente al Lite de 1,7B, es más pesado y lento (0,27 s frente a 0,23 s por dictado) y solo mejora ligeramente el WER en dictados cortos (4,7% frente a 5,5%). No se dispone de comparación con modelos de limpieza de dictado de otros fabricantes.
 
 ## Limitaciones y advertencias
 
-- Alcance muy restringido: solo limpieza de dictado en inglés. No es un asistente conversacional ni sirve para código, matemáticas, razonamiento o visión.
-- Entradas de 300+ palabras en una sola pasada pueden repetirse; el autor trocea los dictados largos en fragmentos alineados por frases antes de limpiar.
-- Degradación por la cuantización: en datos held-out cae al nivel de Lite (1,7B) y en dictados medios empeora de forma notable (15,1% de WER frente a 10,3% con 4 bits y 11,0% con Lite).
-- El propio autor no recomienda esta build salvo que se necesite el 4B por debajo de 2 GB; Lite es más pequeño (1,05 GB) y más rápido (0,23 s frente a 0,27 s por dictado).
-- Riesgo de deriva de formato: con la plantilla estándar de Qwen3-4B-Instruct-2507, las builds de 3 bits emiten tokens `<tool_call>` y la salida se rompe. Es obligatorio usar la plantilla incluida.
-- Decodificación greedy obligatoria; no se han caracterizado otros samplers.
-- Riesgo de alteración de contenido: aunque el modelo está instruido para conservar el significado y las palabras del hablante, es un modelo generativo y puede reescribir, omitir o inventar fragmentos, especialmente en audio con ruido o ambigüedad en cifras y nombres propios. En dominios sensibles (sanitario, legal, financiero) requiere revisión humana.
-- Sesgos: no se documentan evaluaciones de sesgo ni de robustez ante acentos o variedades del inglés distintas de las del conjunto de evaluación.
-- Licencia Apache-2.0 permite uso comercial, pero los datos de entrenamiento se limitan a fuentes MIT, Apache-2.0, CC-BY-4.0 y CC0; la lista de atribuciones está en el repositorio de ZenVoice, no en esta ficha.
-- Ecosistema limitado: solo MLX. No hay pesos GGUF, y el soporte en vLLM u Ollama no está documentado.
+- Solo cubre limpieza de dictado en inglés; no se documenta soporte multilingüe.
+- Entradas de una sola pasada de más de 300 palabras pueden repetirse; el autor recomienda trocear los dictados largos en fragmentos alineados por frases.
+- En datos held-out cae al nivel de v2.2 Lite y en dictados medios es peor que Lite, según el propio autor.
+- Riesgo de alucinación o de reescritura no solicitada: el prompt de sistema insiste en mantener el significado y las palabras del hablante, pero es una tarea generativa sujeta a desviaciones.
+- Requiere la plantilla `chat_template.jinja` incluida; con la plantilla estándar de Qwen3-4B-Instruct-2507 las builds de 3 bits se desvían hacia tokens `<tool_call>`.
+- Se recomienda decodificación greedy; no se documenta el comportamiento con muestreo.
+- Licencia Apache-2.0 heredada de Qwen3-4B-Instruct-2507; los datos de entrenamiento proceden solo de fuentes MIT/Apache-2.0/CC-BY-4.0/CC0, con lista de atribución en el repo de ZenVoice.
+- Dependencia de plataforma: empaquetado en MLX, sin formatos GGUF ni soporte CUDA documentado, lo que limita su uso fuera de Apple Silicon.
+- El modelo está diseñado para una tarea única; no debe emplearse como asistente general ni como base para tool calling.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/BuilderHelm/Kanso-Satori-1.0-3bit
-- Modelo base bf16 del fine-tune: https://huggingface.co/BuilderHelm/Kanso-Satori-1.0-bf16
-- Fine-tune de referencia (build de 4 bits): https://huggingface.co/BuilderHelm/Kanso-Satori-1.0
-- Modelo base original y licencia: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507/blob/main/LICENSE
-- Repositorio de ZenVoice con la lista de atribuciones de datos: citado en la model card sin URL disponible.
-- `mlx-lm` (librería usada en el ejemplo de código): referenciada en la model card sin URL disponible.
-- No se han encontrado papers, blogs ni demos adicionales en la información proporcionada.
+- Repositorio Hugging Face: https://huggingface.co/BuilderHelm/Kanso-Satori-1.0-3bit
+- Modelo base bf16: https://huggingface.co/BuilderHelm/Kanso-Satori-1.0-bf16
+- Modelo 4-bit: https://huggingface.co/BuilderHelm/Kanso-Satori-1.0
+- Organización en Hugging Face: https://huggingface.co/BuilderHelm
+- Página de ZenVoice: https://getzenvoice.com
+- Descarga de ZenVoice para Mac: https://getzenvoice.com/download
+- Licencia del modelo base Qwen3-4B-Instruct-2507: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507/blob/main/LICENSE

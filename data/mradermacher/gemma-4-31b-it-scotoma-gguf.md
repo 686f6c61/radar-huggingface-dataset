@@ -2,81 +2,91 @@
 
 ## Resumen
 
-Este repositorio contiene las cuantizaciones GGUF del modelo `ReadyArt/gemma-4-31B-it-scotoma`, una variante ajustada del modelo Gemma 4 31B IT desarrollado por Google DeepMind. El autor, mradermacher, ha convertido los pesos originales a formato GGUF para permitir su ejecución eficiente con herramientas como llama.cpp, Ollama o vLLM, reduciendo los requisitos de VRAM y facilitando el despliegue en hardware de consumo. El modelo base presenta una arquitectura de 31.000 millones de parámetros (30.697.345.596 en safetensors) y, según las especificaciones de Google para Gemma 4, soporta una ventana de contexto de hasta 256K tokens y capacidades multimodales (texto e imagen). Este repositorio ofrece múltiples niveles de cuantización (desde Q2_K hasta Q8_0) además de archivos de proyección multimodal (mmproj) para habilitar la entrada de imágenes. Aunque la model card indica que el idioma principal es el inglés, el modelo base de Google es multilingüe en más de 140 idiomas, aunque esta variante concreta no lo especifica.
+`mradermacher/gemma-4-31B-it-scotoma-GGUF` es una colección de cuantizaciones estáticas en formato GGUF del modelo `ReadyArt/gemma-4-31B-it-scotoma`, un ajuste fino (fine-tune) de la familia Gemma 4 de Google en su variante instruct de 31B. El repositorio lo publica mradermacher, un conocido cuantizador de la comunidad de Hugging Face, y su función es facilitar la ejecución local del modelo base en hardware con recursos limitados mediante llama.cpp y derivados. El modelo cuenta con 30.697.345.596 parámetros totales según los pesos en safetensors del modelo base.
 
-## Especificaciones técnicas
+La relevancia de esta ficha reside en que el repositorio no aporta un modelo nuevo, sino una capa de distribución práctica: convierte un checkpoint de transformers de gran tamaño en ficheros GGUF listos para inferencia en CPU, GPU de consumo y entornos embebidos. Incluye además ficheros `mmproj` (proyección multimodal) en Q8_0 y f16, lo que indica que el modelo base conserva capacidades de visión. La licencia declarada es Apache 2.0, aunque la model card enlaza a la licencia específica de Gemma 4 de Google, un punto que conviene revisar antes de un uso comercial.
+
+El modelo está etiquetado únicamente para inglés (`en`) y su pipeline no está especificado en la información disponible. El repositorio ocupa 213,9 GB en total y acumula 453 descargas y 0 likes en el momento de la consulta, con creación el 23 de agosto de 2026 y última actualización el 10 de octubre de 2026.
+
+## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | No disponible (familia Gemma 4, probablemente Transformer denso) |
-| Parametros totales | 30.697.345.596 |
-| Parametros activos | No aplica (modelo denso) |
-| Longitud de contexto | Hasta 256K tokens (según el modelo base Gemma 4 31B de Google) |
-| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, y archivos mmproj (Q8_0 y f16) |
-| Idiomas soportados | Inglés (según model card) |
-| Licencia | Apache 2.0 (con enlace a licencia específica de Gemma) |
-| Formato de pesos | GGUF (safetensors para el modelo original, no incluido aquí) |
+| Arquitectura | no disponible (modelo base de la familia Gemma 4; detalles no publicados en la informacion disponible) |
+| Parametros totales | 30.697.345.596 (30,7B) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0; mmproj en Q8_0 y f16 |
+| Idiomas soportados | en (ingles) |
+| Licencia | apache-2.0 (con enlace a la licencia de Gemma 4 de Google) |
+| Formato de pesos | GGUF (cuantizaciones estaticas); modelo base en transformers/safetensors |
 
 ## Arquitectura y entrenamiento
 
-La información disponible sobre el entrenamiento de este modelo es limitada. Se trata de una cuantización estática del modelo `ReadyArt/gemma-4-31B-it-scotoma`, que a su vez deriva del modelo oficial `google/gemma-4-31B`. Google describe Gemma 4 como una familia de modelos multimodales que combina arquitecturas densas y de mezcla de expertos (MoE), aunque no se especifica cuál es la configuración exacta para el tamaño de 31B. El modelo original se entrenó con técnicas de alineación (RLHF/DPO) y destaca por su rendimiento en razonamiento, codificación y comprensión visual. Sin embargo, no se dispone de datos concretos sobre el dataset de entrenamiento, el número de tokens o las técnicas específicas de la variante "scotoma". Esta versión GGUF no modifica los pesos originales, solo los convierte a un formato optimizado para inferencia en CPU/GPU con herramientas como llama.cpp.
+La información disponible no detalla la arquitectura interna del modelo base `ReadyArt/gemma-4-31B-it-scotoma` más allá de su pertenencia a la familia Gemma 4 en variante instruct. No se especifican el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron técnicas de RLHF, DPO o ajuste supervisado en el fine-tune. Tampoco se documenta ninguna innovación técnica concreta (atención lineal, decodificación especulativa, mezcla de expertos) en los materiales proporcionados.
+
+Lo que sí es verificable es el proceso de cuantización aplicado por mradermacher: cuantizaciones estáticas con `quantize_version: 2` y `output_tensor_quantised: 1`, conversión desde formato Hugging Face (`convert_type: hf`) y preservación del componente multimodal mediante ficheros `mmproj` separados. El autor indica que existen cuantizaciones ponderadas con imatrix en un repositorio paralelo (`gemma-4-31B-it-scotoma-i1-GGUF`), que suelen ofrecer mejor calidad por bit que las estáticas equivalentes.
 
 ## Capacidades
 
-- Generación de texto y conversación multiturno, gracias a su arquitectura de 31B parámetros.
-- Razonamiento complejo y resolución de problemas matemáticos (capacidades heredadas del modelo base).
-- Codificación de software y soporte de tool calling (probablemente, según las capacidades de Gemma 4).
-- Entrada multimodal: el repositorio incluye archivos `mmproj` que permiten procesar imágenes, lo que habilita usos como descripción visual o análisis de capturas.
-- Soporte para contextos largos: hasta 256K tokens en el modelo base, útil para documentos extensos o conversaciones prolongadas.
-- Compatibilidad con frameworks de inferencia GGUF: llama.cpp, Ollama, LM Studio, etc.
+- Generación de texto conversacional en inglés, al estar basado en una variante instruct.
+- Capacidades multimodales: la presencia de ficheros `mmproj` (Q8_0 y f16) indica soporte de entrada de imágenes en el modelo base.
+- Razonamiento y respuesta a instrucciones, heredados del ajuste instruct de Gemma 4.
+- Ejecución local mediante llama.cpp y compatible con endpoints (etiqueta `endpoints_compatible`).
+- Soporte de tool calling y function calling: no disponible en la información proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
+- Capacidades multilingües: limitadas al inglés según la etiqueta de idioma del repositorio.
+- Modo thinking explícito: no disponible en la información proporcionada.
 
 ## Casos de uso
 
-- Asistente de programación: con su capacidad de razonamiento y generación de código, puede integrarse en entornos de desarrollo como un copiloto local, aprovechando la cuantización Q4_K_M para ejecutarse en una GPU de 24 GB.
-- Análisis de documentos extensos: gracias a la ventana de contexto de 256K tokens, es adecuado para resumir libros técnicos, informes legales o artículos de investigación completos en una sola pasada.
-- Chatbot de atención al cliente: su habilidad para mantener conversaciones coherentes en múltiples turnos lo hace viable para sistemas de soporte automático, especialmente con la cuantización Q5_K_M para calidad de respuesta.
-- Procesamiento de imágenes con texto: al incluir el archivo `mmproj`, puede extraer información de capturas de pantalla, diagramas o documentos escaneados, útil en automatización de tareas de back-office.
-- Generación de contenido técnico: redacción de documentación, tutoriales o respuestas en foros, aprovechando su capacidad de razonamiento y su estilo conversacional.
-- Investigación en IA: al ser un modelo abierto con licencia Apache 2.0, es útil para experimentos de fine-tuning o para probar técnicas de cuantización en modelos de 31B.
+- Despliegue local en estaciones de trabajo con GPU de consumo: la cuantización Q4_K_M (18,8 GB) permite ejecutar un modelo de 30,7B en GPUs con 24 GB de VRAM, como la RTX 4090, usando llama.cpp u Ollama.
+- Inferencia en CPU con requisitos moderados: la cuantización Q2_K (12,0 GB) hace viable la ejecución en servidores sin GPU dedicada, a costa de una pérdida de calidad notable.
+- Procesamiento de documentos con imágenes: los ficheros `mmproj` permiten alimentar el modelo con capturas, diagramas o páginas escaneadas en pipelines de extracción de información.
+- Prototipado rápido de asistentes conversacionales en inglés: el formato GGUF se integra directamente en llama.cpp, Ollama y servidores compatibles con la API de OpenAI, lo que reduce el tiempo de puesta en marcha.
+- Evaluación comparativa de cuantizaciones: el repositorio ofrece once niveles de cuantización, lo que permite medir el compromiso entre tamaño, velocidad y perplejidad en un mismo modelo.
+- Fine-tunes especializados sobre Gemma 4: al tratarse de una cuantización de un ajuste fino concreto (`scotoma`), sirve para validar el comportamiento de esa variante antes de invertir en el checkpoint completo en safetensors.
+- Integración en entornos con memoria unificada: equipos Apple Silicon con 32 GB o más pueden ejecutar Q4_K_M o Q5_K_S mediante llama.cpp con aceleración Metal.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. El modelo base (Gemma 4 31B IT) ha sido evaluado por Google en tareas como MMLU, HumanEval, GSM8K, y otras, pero estos datos no se han replicado para la variante "scotoma" ni para las cuantizaciones GGUF. Se recomienda ejecutar pruebas propias para evaluar la degradación de precisión según el nivel de cuantización.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- La cuantización Q2_K (12.0 GB) puede ejecutarse en una GPU con 12-16 GB de VRAM, como una RTX 3060 12GB o RTX 4070.
-- Las cuantizaciones Q4_K_M (18.8 GB) y Q4_K_S (17.9 GB) requieren al menos 20 GB de VRAM; recomendadas para GPUs como RTX 3090, RTX 4090, o A100.
-- Q8_0 (32.7 GB) necesita más de 40 GB de VRAM, ideal para A100 40GB o H100.
-- El archivo `mmproj` adicional ocupa entre 0.9 y 1.3 GB, a sumar a la VRAM.
-- Para CPU: puede ejecutarse con llama.cpp, pero la velocidad será baja para modelos de 31B; se recomienda al menos 32 GB de RAM.
-- Herramientas de despliegue compatibles: llama.cpp, Ollama, LM Studio, vLLM (con soporte GGUF), y cualquier framework que soporte GGUF.
+- VRAM estimada para inferencia según cuantización: Q2_K ~12,0 GB; Q3_K_S ~13,9 GB; Q3_K_M ~15,4 GB; Q3_K_L ~16,7 GB; IQ4_XS ~17,0 GB; Q4_K_S ~17,9 GB; Q4_K_M ~18,8 GB; Q5_K_S ~21,4 GB; Q5_K_M ~21,9 GB; Q6_K ~25,3 GB; Q8_0 ~32,7 GB. Añadir ~0,9 GB (mmproj Q8_0) o ~1,3 GB (mmproj f16) si se usa la entrada multimodal.
+- GPU recomendadas: RTX 4090 (24 GB) para Q4_K_M o Q5_K_S; A100 40 GB o H100 para Q6_K y Q8_0; A100 80 GB para FP16 si se usa el checkpoint original.
+- GPU de consumo: sí cabe en RTX 3090/4090 (24 GB) con Q4_K_M; en GPUs de 16 GB solo entran Q2_K o Q3_K_S, con calidad reducida.
+- Opciones de despliegue: llama.cpp, Ollama, servidores compatibles con la API de OpenAI (etiqueta `endpoints_compatible`), y vLLM o TGI únicamente con el checkpoint en safetensors del modelo base, no con los GGUF.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Arquitectura | Licencia | Cuantizaciones GGUF |
+| Modelo | Parámetros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| google/gemma-4-31B | 31B | 256K | Densa (presumible) | Apache 2.0 | No oficial (se puede cuantificar) |
-| google/gemma-4-26B-A4B (MoE) | 26B (activos 4B) | 256K | MoE | Apache 2.0 | No disponible |
-| mradermacher/gemma-4-31B-it-scotoma-GGUF | 31B | 256K | Densa (presumible) | Apache 2.0 | Sí (este repo) |
-| meta-llama/Llama-3.1-30B-Instruct | 30B | 128K | Densa | Llama 3 license | Sí |
-
-Nota: los datos de Gemma 4 provienen de la página de Google, no de la model card de este repo. La comparación se basa en el tamaño y el contexto, pero no hay datos de rendimiento.
+| gemma-4-31B-it-scotoma (este repo, GGUF) | 30,7B | no disponible | apache-2.0 | GGUF | Cuantizaciones estáticas de 12,0 a 32,7 GB |
+| gemma-4-31B-it-scotoma-i1-GGUF (mismo autor) | 30,7B | no disponible | apache-2.0 | GGUF | Cuantizaciones con imatrix, mayor calidad por bit |
+| ReadyArt/gemma-4-31B-it-scotoma (modelo base) | 30,7B | no disponible | apache-2.0 | safetensors | Checkpoint original en transformers, requiere más VRAM |
+| Gemma 4 31B IT (modelo oficial de Google) | ~31B | no disponible | licencia Gemma 4 | safetensors | Referencia de la familia; comparación de rendimiento no disponible |
 
 ## Limitaciones y advertencias
 
-- **Sesgos y alucinaciones**: como cualquier modelo de lenguaje, puede generar información falsa o sesgada. No se ha evaluado específicamente esta variante.
-- **Idioma**: la model card indica solo inglés, aunque el modelo base de Google soporta más idiomas; es posible que esta variante tenga un rendimiento inferior en otros idiomas.
-- **Degradación por cuantización**: las cuantizaciones de menor precisión (Q2_K, Q3_K) pueden reducir la calidad de las respuestas, especialmente en tareas de razonamiento complejo.
-- **Licencia**: aunque la licencia es Apache 2.0, Google exige el cumplimiento de su política de uso de Gemma (enlace en la model card). Se recomienda revisar las restricciones antes de usar comercialmente.
-- **Contexto de 256K**: aunque el modelo base lo soporta, la cuantización GGUF puede no conservar el rendimiento completo en contextos muy largos; se recomienda probar con tamaños moderados.
-- **Despliegue en producción**: al ser un modelo de 31B, requiere infraestructura considerable; para entornos con recursos limitados se sugiere usar cuantizaciones Q4_K_M o inferiores.
+- El repositorio solo declara soporte de inglés; el rendimiento en castellano u otros idiomas no está garantizado ni documentado.
+- Las cuantizaciones de baja precisión (Q2_K, Q3_K_S) degradan la calidad de forma apreciable; el autor marca Q3_K_M explícitamente como "lower quality".
+- Riesgo de alucinación inherente a los modelos de lenguaje de 30B; no se han publicado evaluaciones de fidelidad para este fine-tune concreto.
+- Sesgos conocidos: no documentados en la información disponible; deben asumirse los del modelo base Gemma 4 y los del dataset de ajuste `scotoma`.
+- Licencia: aunque la etiqueta indica Apache 2.0, la model card enlaza a la licencia específica de Gemma 4 de Google, que puede imponer restricciones adicionales al uso comercial. Verificar antes de desplegar en producción.
+- El modelo base es un fine-tune de la comunidad (`ReadyArt`), no un modelo oficial de Google; su calidad y mantenimiento dependen del autor original.
+- El repositorio completo ocupa 213,9 GB; conviene descargar solo la cuantización necesaria.
+- No se especifica la longitud de contexto, lo que impide planificar cargas de trabajo con ventanas largas sin verificar el modelo base.
 
 ## Enlaces
 
 - Repositorio GGUF: https://huggingface.co/mradermacher/gemma-4-31B-it-scotoma-GGUF
-- Modelo base original: https://huggingface.co/ReadyArt/gemma-4-31B-it-scotoma
-- Modelo oficial de Google: https://huggingface.co/google/gemma-4-31B
-- Página de cuantizaciones i1 (con imatrix): https://huggingface.co/mradermacher/gemma-4-31B-it-scotoma-i1-GGUF
-- Referencia de Gemma 4 en NVIDIA: https://build.nvidia.com/google/gemma-4-31b-it/modelcard
-- Página de exploración del modelo (LLM Explorer): https://llm-explorer.com/model/ReadyArt%2Fgemma-4-31B-it-scotoma-2,72sD2D41CSiRwu6jn8U3Z3 (aunque corresponde a la versión 2, puede servir de referencia)
+- Cuantizaciones imatrix: https://huggingface.co/mradermacher/gemma-4-31B-it-scotoma-i1-GGUF
+- Modelo base: https://huggingface.co/ReadyArt/gemma-4-31B-it-scotoma
+- Página de resumen del autor: https://hf.tst.eu/model#gemma-4-31B-it-scotoma-GGUF
+- Licencia Gemma 4: https://ai.google.dev/gemma/docs/gemma_4_license
+- Peticiones de cuantización: https://huggingface.co/mradermacher/model_requests
+- Guía de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Análisis de tipos de cuantización (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9

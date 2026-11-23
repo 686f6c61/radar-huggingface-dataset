@@ -2,117 +2,109 @@
 
 ## Resumen
 
-Laya-English-LiteRT es el paquete en inglés del modelo Laya empaquetado para ejecutarse en GPU y NPU de teléfonos Android mediante LiteRT. Lo publica la organización litert-community y deriva directamente de convaiinnovations/laya, cuyo checkpoint inglés se basa en una arquitectura ModernBERT-large. El modelo no genera texto: lee un texto o un estado en JSON y responde a preguntas definidas en tiempo de petición, eligiendo entre varias opciones, puntuando en una escala ordinal o devolviendo una probabilidad de sí/no. Cada pregunta se resuelve con una pasada del grafo principal más una pasada de un grafo auxiliar pequeño, el act-head.
+Laya-English-LiteRT es un paquete de conversión a LiteRT del checkpoint en inglés del modelo Laya, desarrollado originalmente por Convai Innovations y empaquetado por la comunidad litert-community para su ejecución en GPU y NPU de dispositivos Android. Laya es un clasificador de texto basado en ModernBERT-large que responde preguntas definidas en tiempo de petición: selección entre opciones, puntuación en escala ordinal o probabilidad sí/no. El paquete incluye tanto el checkpoint base en inglés como su ajuste fino `typed-decisions`, orientado a cuatro flujos de trabajo concretos.
 
-El problema que resuelve es la inferencia de clasificación y decisión estructurada completamente en el dispositivo, sin enviar datos a un servidor. El paquete incluye dos variantes: el checkpoint inglés propiamente dicho y un fine-tune denominado typed-decisions, orientado a cuatro flujos de trabajo concretos (atención al cliente, procesamiento de facturas, incidentes de seguridad y observabilidad de trazas de agentes). Los pesos se distribuyen como ficheros TFLite con ventanas de 256 o 512 tokens y en dos precisiones: fp16 para producción y fp32 como referencia.
+El problema que resuelve es la inferencia de un modelo de clasificación de 1.024 dimensiones ocultas en hardware móvil sin depender de la nube. Cada pregunta se responde con un pase forward del grafo principal más un pase de un pequeño grafo act-head, con tiempos validados de 66 ms por pregunta en la NPU Hexagon de un Samsung Galaxy S26 y 123 ms en su GPU con FP32 explícito, para una ventana de 256 tokens.
 
-Su relevancia actual está en que ofrece latencias de decenas de milisegundos por pregunta en hardware móvil de gama alta, con una fidelidad numérica verificada frente a la implementación oficial en CPU fp32. En una Samsung Galaxy S26 (SM-S942Q, Android 16) con LiteRT 2.2.0, el grafo inglés tarda 66 ms por pregunta en la NPU Hexagon y 123 ms en la GPU con cómputo FP32 explícito, a una ventana de 256 tokens. El repositorio ocupa 18,0 GB y acumula 294 descargas y 1 like en Hugging Face.
+La relevancia actual radica en que demuestra que un transformer tipo ModernBERT-large puede ejecutarse con latencias de decenas de milisegundos en un teléfono, manteniendo una fidelidad numérica muy alta respecto a la implementación de referencia en CPU: mismo argmax en todas las preguntas de elección y puntuación, y una diferencia máxima de probabilidad de 0,0008 en GPU y 0,0072 en NPU sobre 140 filas en inglés y 100 de typed-decisions.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | ModernBERT-large (encoder transformer); derivado de convaiinnovations/laya |
-| Parametros totales | no disponible |
-| Parametros activos | no aplica (no es un modelo MoE) |
-| Longitud de contexto | 256 o 512 tokens, segun el grafo elegido (variantes s256 y s512) |
-| Tipos de cuantizacion | pesos fp16 (wfp16) y fp32; act-head siempre en fp32 |
-| Idiomas soportados | ingles (en) |
+| Arquitectura | ModernBERT-large (transformer encoder) |
+| Parametros totales | no disponible (checkpoint base `convaiinnovations/laya`; tabla de embeddings de 50.368 x 1.024 en fp16) |
+| Parametros activos | no aplica (no es MoE) |
+| Longitud de contexto | 256 o 512 tokens según variante del grafo |
+| Tipos de cuantizacion | wfp16 (pesos fp16, recomendado) y fp32 (referencia); tabla de embeddings en float16 |
+| Idiomas soportados | inglés (`en`) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | TFLite / LiteRT (.tflite); tabla de embeddings en .bin float16 |
-| Tamano de vocabulario | 50.368 tokens (tabla de embeddings [50368, 1024] float16) |
-| Dimension oculta | 1.024 (segun la forma de la tabla de embeddings) |
-| Libreria de inferencia | LiteRT (litert), validado con LiteRT 2.2.0 CompiledModel |
-| Tamano del repositorio | 18,0 GB |
-| Descargas / likes | 294 / 1 |
+| Formato de pesos | TFLite (`.tflite`) para LiteRT; tabla de embeddings en `.bin` + `.json`; tokenizer en `tokenizer.json` |
 
 ## Arquitectura y entrenamiento
 
-La informacion disponible no detalla el proceso de entrenamiento, el numero de tokens ni la composicion del dataset. Lo que si se especifica es la arquitectura de despliegue: cada checkpoint se compila en varios grafos TFLite independientes. El grafo principal procesa la secuencia de entrada (256 o 512 tokens) y el act-head, un grafo adicional de 1.057.960 bytes, realiza una segunda pasada que produce la respuesta. La tabla de embeddings de tokens ([50368, 1024] en float16, 103.153.664 bytes) se entrega como fichero aparte y la aplicacion realiza la busqueda de filas antes de alimentar el grafo.
+El modelo subyacente es ModernBERT-large, un transformer encoder con 1.024 dimensiones ocultas y una tabla de embeddings de 50.368 tokens. El paquete no entrena un modelo nuevo: convierte el checkpoint `convaiinnovations/laya` (revisión `1c5edc17a7acd8701df6fc341c0d179f1c62c982`) a grafos LiteRT optimizados para GPU y NPU Android. La arquitectura de inferencia se divide en dos grafos: un grafo principal que procesa el texto o estado JSON de entrada y un act-head de 1.057.960 bytes compartido por todas las variantes, que transforma las representaciones en respuestas de elección, escala ordinal o probabilidad.
 
-El paquete incluye el fichero `laya_en_config.json` (745 bytes), que corresponde al `rl_agent_config.json` del checkpoint original y define las temperaturas y los presupuestos del constructor de prompts. Tambien se distribuye `laya_host.py` (22.933 bytes), un host de referencia en Python que implementa el constructor de prompt, la busqueda de embeddings y el decodificador, ademas de `HOST_CONTRACT.md` en el paquete hermano laya-LiteRT, que especifica la secuencia y la decodificacion para portar el modelo. No se mencionan tecnicas como RLHF, DPO, decodificacion especulativa ni atencion lineal en la informacion proporcionada.
+El diseño separa la tabla de embeddings del grafo principal: la aplicación realiza la búsqueda de filas de embedding desde un fichero `token_embeddings_en_fp16.bin` y pasa esas filas al grafo, lo que reduce el tamaño del modelo desplegado a 739.765.104 bytes en la variante wfp16 de 256 tokens. Se ofrecen variantes de ventana de 256 y 512 tokens, en wfp16 y fp32, más el ajuste fino `typed-decisions` con la misma estructura. No se dispone de información sobre el volumen de tokens de entrenamiento, la composición del dataset ni el uso de RLHF o DPO en la información proporcionada.
 
 ## Capacidades
 
-- Clasificacion de texto y clasificacion zero-shot: el modelo responde a preguntas definidas en tiempo de peticion sin reentrenamiento.
-- Seleccion entre opciones: elige una opcion entre varias candidatas (mismo argmax que la implementacion de referencia en las 140 filas de validacion en ingles y las 100 de typed-decisions).
-- Puntuacion ordinal: devuelve una puntuacion en una escala ordenada.
-- Probabilidad binaria: genera una probabilidad de si/no para una pregunta dada.
-- Entrada multimodal de texto: acepta tanto texto libre como un estado en formato JSON.
-- Fine-tune de decisiones tipadas (typed-decisions) para cuatro flujos: atencion al cliente, procesamiento de facturas, incidentes de seguridad y observabilidad de trazas de agentes.
-- Ejecucion en el dispositivo: inferencia en GPU y NPU de Android mediante LiteRT 2.2.0, y en CPU de escritorio a traves de `laya_host.py`.
-- No se documenta soporte de tool calling, function calling, agentes multi-paso, vision, audio ni modo de razonamiento explicito (thinking mode).
+- Clasificación de texto zero-shot: el usuario define las opciones o la pregunta en tiempo de petición, sin reentrenamiento.
+- Selección entre múltiples opciones (argmax sobre las alternativas proporcionadas).
+- Puntuación en escala ordinal (por ejemplo, valorar la gravedad de un incidente en una escala definida).
+- Probabilidad sí/no para preguntas binarias.
+- Procesamiento de texto plano o de estado JSON como entrada.
+- Ajuste fino `typed-decisions` especializado en cuatro flujos: atención al cliente, procesamiento de facturas, incidentes de seguridad y observabilidad de trazas de agentes.
+- Ejecución en GPU y NPU de Android mediante LiteRT `CompiledModel`.
+- No soporta tool calling, agentes multi-paso ni generación de texto libre: es un clasificador, no un modelo generativo.
+- Capacidades multilingües: no disponibles en este paquete (solo inglés); existe un paquete hermano multilingüe.
 
 ## Casos de uso
 
-- Atencion al cliente automatizada: el grafo typed-decisions incluye un flujo especifico de customer service que puede clasificar y enrutar mensajes entrantes en el propio dispositivo, con 73 ms por pregunta en la NPU y 66 ms en el grafo ingles, lo que permite respuestas interactivas sin ida y vuelta al servidor.
-- Procesamiento de facturas: el fine-tune typed-decisions incorpora un flujo de invoice processing para extraer decisiones estructuradas de documentos, manteniendo los datos financieros en el telefono y evitando su envio a la nube.
-- Triaje de incidentes de seguridad: el flujo de security incidents permite clasificar y priorizar alertas localmente, util cuando el contenido analizado es sensible y no debe salir del dispositivo.
-- Observabilidad de trazas de agentes: el cuarto flujo del fine-tune esta pensado para inspeccionar trazas de agentes, lo que permite etiquetar o evaluar pasos de un pipeline de IA en el borde.
-- Clasificacion zero-shot en aplicaciones Android: cualquier app puede formular preguntas nuevas en tiempo de peticion sobre texto del usuario (por ejemplo, categorizar notas o comentarios) sin reentrenar, apoyandose en los grafos de 256 o 512 tokens.
-- Filtrado y moderacion de contenido offline: dado que la inferencia ocurre en GPU o NPU locales con pesos de 0,85 GB por checkpoint, se puede desplegar como filtro previo en aplicaciones que deben funcionar sin conectividad.
-- Encuestas y puntuacion ordinal: el modelo puede asignar puntuaciones en escalas ordenadas (por ejemplo, satisfaccion o nivel de riesgo) con una simple pasada por pregunta.
-- Validacion en escritorio y CI: `laya_host.py` y `fixtures/gate_rows_en_s256.json` (140 filas con respuestas de referencia) permiten reproducir las comprobaciones de fidelidad en CPU fp32 antes de empaquetar la aplicacion movil.
+- Enrutamiento de tickets de atención al cliente: el ajuste fino `typed-decisions` clasifica el mensaje entrante en categorías definidas en tiempo de petición (por ejemplo, facturación, incidencia técnica, cancelación) con una sola pasada de 123 ms en GPU de móvil, lo que permite enrutar en el propio dispositivo sin enviar el texto a un servidor.
+- Procesamiento de facturas en campo: la variante de 512 tokens permite clasificar documentos más largos y responder preguntas como el tipo de gasto o la necesidad de aprobación, ejecutándose en la NPU del teléfono en 73 ms por pregunta.
+- Triaje de incidentes de seguridad: el modelo puntúa en escala ordinal la gravedad de un evento descrito en JSON y decide si requiere escalado, con la ventaja de que los datos sensibles no salen del dispositivo.
+- Observabilidad de trazas de agentes: el ajuste fino evalúa trazas de agentes y clasifica si una ejecución fue correcta, ambigua o fallida, integrándose en pipelines de evaluación locales.
+- Moderación o filtrado en el borde: clasificación sí/no de contenido en aplicaciones Android antes de cualquier llamada de red, con latencia inferior a 130 ms por pregunta.
+- Encuestas y formularios inteligentes: convertir respuestas de texto libre en escalas ordinales o categorías predefinidas directamente en el móvil, sin backend.
+- Clasificación por lotes en escritorio: el host de referencia `laya_host.py` permite validar el comportamiento en CPU de escritorio antes de desplegar en Android.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) en la informacion disponible. Los unicos datos numericos publicados son de validacion funcional, fidelidad y latencia.
+No se han publicado resultados de benchmarks en la información disponible.
 
-| Metrica | Valor |
-|---|---|
-| XNLI ingles (checkpoint ingles) | 0.860 |
-| XNLI ingles (checkpoint multilingue, referencia de la comparativa) | 0.843 |
-| Filas de validacion en ingles | 140 |
-| Filas de validacion typed-decisions | 100 |
-| Coincidencia de argmax frente a laya 0.3.4 fp32 CPU | total en todas las preguntas de eleccion y puntuacion |
-| Diferencia maxima de probabilidad en GPU | 0.0008 |
-| Diferencia maxima de probabilidad en NPU | 0.0072 |
+Los únicos datos de rendimiento proporcionados son de latencia y fidelidad en el dispositivo de validación (Samsung Galaxy S26, SM-S942Q, Android 16, LiteRT 2.2.0), a ventana de 256 tokens:
 
-Latencia medida en Samsung Galaxy S26 (SM-S942Q, Android 16), LiteRT 2.2.0, ventana de 256 tokens, tiempo de grafo por pregunta:
-
-| Grafo | NPU Hexagon | GPU (FP32 explicito) |
+| Metrica | Grafo ingles | Grafo typed-decisions |
 |---|---:|---:|
-| Ingles | 66 ms | 123 ms |
-| typed-decisions | 73 ms | 126 ms |
+| Tiempo por pregunta en NPU Hexagon | 66 ms | 73 ms |
+| Tiempo por pregunta en GPU (FP32 explicito) | 123 ms | 126 ms |
+| Diferencia maxima de probabilidad vs. referencia CPU fp32 | 0,0008 (GPU) / 0,0072 (NPU) | no disponible por separado |
+| Coincidencia de argmax en 140 filas en ingles | 100 % | no disponible |
+| Coincidencia de argmax en 100 filas typed-decisions | no disponible | 100 % |
+
+Como referencia comparativa del paquete hermano multilingüe: 51 ms por pregunta y 0,68 GB en el teléfono, frente a 123 ms y 0,85 GB del paquete en inglés.
 
 ## Requisitos de hardware
 
-- Inferencia en dispositivo movil: validada con LiteRT 2.2.0 `CompiledModel` en una Samsung Galaxy S26 (SM-S942Q, Android 16), tanto en NPU Hexagon como en GPU. Otras GPU y NPU Android no han sido validadas segun la model card.
-- Huella en el telefono: 0,85 GB por checkpoint (ingles y typed-decisions), segun la comparativa publicada.
-- Tamano de los ficheros TFLite: 739.765.104 bytes (s256 wfp16), 740.813.680 bytes (s512 wfp16), 1.478.482.924 bytes (s256 fp32) y 1.479.531.500 bytes (s512 fp32) por cada variante. El act-head anade 1.057.960 bytes y la tabla de embeddings 103.153.664 bytes, con lo que el paquete completo fp32 aproxima los 1,48 GB por grafo mas la tabla.
-- CPU de escritorio: se puede ejecutar mediante `laya_host.py` en CPU, sin requisitos de GPU documentados. Las cifras de latencia publicadas para escritorio solo se presentan como grafo S256 wfp16 sin tiempos concretos.
-- VRAM en GPU de servidor: no disponible, ya que el modelo esta empaquetado para LiteRT en Android y no se documenta despliegue en A100, H100 o RTX 4090.
-- Opciones de despliegue: LiteRT `CompiledModel` (GPU y NPU Android) y el host de referencia en Python. No se documenta soporte de vLLM, llama.cpp, Ollama ni TGI.
-- Throughput y latencia: 66 ms por pregunta (ingles) y 73 ms (typed-decisions) en NPU; 123 ms y 126 ms en GPU. La comparativa entre paquetes anade que la primera pasada incluye una busqueda de tabla de unos 15 a 20 ms en la aplicacion.
+- Tamaño del modelo desplegado: 739.765.104 bytes (0,74 GB) por grafo en wfp16; 1.478.482.924 bytes (1,48 GB) en fp32; más 103.153.664 bytes de tabla de embeddings fp16.
+- VRAM/RAM estimada para inferencia: aproximadamente 0,85 GB en wfp16 (modelo más tabla) y 1,6 GB en fp32, según los tamaños de fichero indicados.
+- Hardware validado: Samsung Galaxy S26 (SM-S942Q) con NPU Hexagon y GPU, Android 16.
+- Otras GPU y NPU Android no han sido validadas según la model card.
+- Cabe en hardware móvil de gama alta con NPU; no se especifican requisitos para GPU de escritorio o de servidor.
+- Opciones de despliegue: LiteRT 2.2.0 `CompiledModel` en Android; `laya_host.py` como host de referencia en Python para CPU de escritorio.
+- Latencia: 66-73 ms por pregunta en NPU y 123-126 ms en GPU a 256 tokens; el paquete multilingüe añade 15-20 ms de búsqueda de tabla en la aplicación.
+- Throughput: no disponible.
 
 ## Comparativa con modelos similares
 
-La model card compara los tres paquetes Laya publicados por litert-community:
+| Modelo | Parametros | Contexto | Idiomas | Licencia | Despliegue | Latencia por pregunta |
+|---|---|---|---|---|---|---|
+| Laya-English-LiteRT | ModernBERT-large (no disponible el conteo exacto) | 256 / 512 tokens | inglés | Apache 2.0 | LiteRT Android (GPU/NPU) | 66-126 ms (S26) |
+| Laya-Multilingual-LiteRT | mmBERT-base | 256 tokens | 100+ idiomas (validado en inglés y japonés) | Apache 2.0 | LiteRT Android (GPU) | 51 ms (S26) |
+| laya-LiteRT | mismos dos checkpoints en forma token-id | 256 / 512 tokens | inglés y multilingüe | Apache 2.0 | LiteRT, entrada de token ids | 54-127 ms (S26) |
+| convaiinnovations/laya (original) | ModernBERT-large | no disponible | inglés | Apache 2.0 | CPU fp32 (referencia) | no disponible |
 
-| Paquete | Modelo base | Huella | Latencia por pregunta | Idiomas | App propia | Licencia |
-|---|---|---:|---:|---|---|---|
-| Laya-English-LiteRT | ModernBERT-large (checkpoint ingles) + fine-tune typed-decisions | 0,85 GB por checkpoint | 123 ms GPU / 66 ms NPU (126 / 73 ms el fine-tune) | en | No | Apache 2.0 |
-| Laya-Multilingual-LiteRT | mmBERT-base | 0,68 GB | 51 ms GPU | 100+ idiomas (validado en ingles y japones) | Si, con tokenizador Kotlin | no disponible en la informacion |
-| laya-LiteRT | mismos dos checkpoints, en forma de token ids | 1,7 GB (ingles) o 1,3 GB (multilingue) en fp32 | 127 ms (ingles) o 54 ms (multilingue) | en / multilingue segun checkpoint | No, incluye `laya_host.py` | no disponible en la informacion |
-
-Comparativa de rendimiento entre checkpoints: el checkpoint ingles obtiene 0.860 en XNLI ingles frente a 0.843 del multilingue, por lo que se recomienda el paquete ingles cuando el texto es exclusivamente en ingles. No se proporcionan comparaciones con modelos externos de la misma categoria.
+La comparativa con clasificadores zero-shot convencionales (por ejemplo, DeBERTa o BART-large MNLI) no está disponible en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Modelo exclusivamente de clasificacion y decision: no genera texto libre ni mantiene conversaciones; solo responde a preguntas definidas en tiempo de peticion.
-- Solo ingles: el paquete esta entrenado y validado unicamente para `en`. Para texto en otros idiomas o mixto se indica el paquete multilingue.
-- Cobertura de hardware limitada: la validacion se restringe a una Samsung Galaxy S26 (SM-S942Q, Android 16) con LiteRT 2.2.0. Otras GPU y NPU Android no han sido validadas, por lo que el rendimiento y la correccion numerica en otros dispositivos no estan garantizados.
-- Deriva numerica en precision reducida: la diferencia maxima de probabilidad frente a la referencia fp32 es de 0.0008 en GPU y 0.0072 en NPU; el argmax coincide en las filas de validacion, pero no se garantiza para entradas fuera de ese conjunto.
-- Requiere integracion adicional: el paquete no incluye aplicacion propia. Es necesario aportar un tokenizador en la app y realizar la busqueda de filas de la tabla de embeddings antes de llamar al grafo.
-- Riesgo de alucinacion: no aplica en el sentido generativo, pero si existe riesgo de clasificacion incorrecta o de puntuaciones mal calibradas fuera de la distribucion de entrenamiento. No se publican datos sobre sesgos.
-- Restricciones de licencia: Apache 2.0, lo que permite uso comercial, pero conviene revisar las condiciones del modelo base convaiinnovations/laya, del que este paquete es un derivado.
-- Sin datos de entrenamiento publicados: no se documentan tokens, composicion del dataset ni tecnicas de alineamiento, lo que dificulta auditar sesgos o dominios cubiertos.
+- Solo soporta inglés; para texto no inglés o mixto debe usarse el paquete multilingüe, que obtiene 0,843 en XNLI inglés frente a 0,860 del checkpoint inglés.
+- Es un clasificador, no un generador: no produce texto libre, no hace tool calling ni razonamiento multi-paso.
+- Ventana de contexto limitada a 256 o 512 tokens; textos más largos requieren truncado o segmentación.
+- Validación restringida a un único dispositivo (Samsung Galaxy S26); el comportamiento en otras GPU y NPU Android no está verificado.
+- La fidelidad numérica respecto a la referencia CPU no es exacta: diferencia máxima de probabilidad de 0,0008 en GPU y 0,0072 en NPU, lo que puede alterar decisiones en casos cerca del umbral.
+- El paquete en inglés no incluye aplicación de ejemplo propia; requiere que la aplicación realice la búsqueda de embeddings y el tokenizado con el `tokenizer.json` incluido.
+- Riesgo de alucinación: no aplica en el sentido generativo, pero el modelo puede asignar alta probabilidad a opciones incorrectas cuando la pregunta es ambigua o el texto de entrada está fuera de distribución.
+- Sesgos: no se documentan sesgos específicos en la información disponible; al ser un modelo entrenado sobre datos en inglés, puede heredar sesgos de ese corpus.
+- Licencia Apache 2.0 permite uso comercial, pero el autor no ofrece garantías sobre el rendimiento en dominios no validados.
+- El repositorio ocupa 18,0 GB, aunque los ficheros individuales necesarios para el despliegue son mucho menores.
 
 ## Enlaces
 
-- Hugging Face (este paquete): https://huggingface.co/litert-community/Laya-English-LiteRT
+- Hugging Face: https://huggingface.co/litert-community/Laya-English-LiteRT
 - Modelo base: https://huggingface.co/convaiinnovations/laya
-- Paquete multilingue: https://huggingface.co/litert-community/Laya-Multilingual-LiteRT
-- Paquete en forma de token ids (incluye `HOST_CONTRACT.md`): https://huggingface.co/litert-community/laya-LiteRT
-- LiteRT (repositorio): https://github.com/google-ai-edge/litert
-- Ejemplo de clasificacion zero-shot en litert-samples: https://github.com/google-ai-edge/litert-samples/tree/main/samples/litert/zero_shot_classification
+- Paquete multilingüe: https://huggingface.co/litert-community/Laya-Multilingual-LiteRT
+- Paquete en forma token-id: https://huggingface.co/litert-community/laya-LiteRT
+- LiteRT (GitHub): https://github.com/google-ai-edge/litert
+- Ejemplo zero-shot classification en litert-samples: https://github.com/google-ai-edge/litert-samples/tree/main/samples/litert/zero_shot_classification

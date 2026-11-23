@@ -2,49 +2,49 @@
 
 ## Resumen
 
-BaseRSI-27B-GGUF es la versión cuantizada en formato GGUF del modelo BaseRSI-27B, publicado por el usuario mradermacher en Hugging Face. Se trata de una conversión estática (generada con llama.cpp) del modelo original alojado en el repositorio beita6969/BaseRSI-27B, cuyo contenido y procedencia no están documentados en la información disponible. El modelo cuenta con 27.320.697.856 parámetros totales según los datos de safetensors del repositorio original.
+BaseRSI-27B-GGUF es la versión cuantizada en formato GGUF del modelo BaseRSI-27B, desarrollado por el usuario beita6969 y convertido a GGUF por mradermacher. Se trata de un modelo de lenguaje de 27.320.697.856 parámetros (aproximadamente 27,3 mil millones) entrenado sobre el dataset BaseRSI-Dataset y publicado bajo licencia Apache 2.0. Su relevancia radica en que permite ejecutar un modelo de gran tamano en hardware de consumo mediante cuantizaciones que van desde Q2_K (11,3 GB) hasta Q8_0 (29,1 GB), ademas de incluir un proyector multimodal (mmproj) que sugiere capacidades de vision.
 
-El interés principal de esta publicación es práctico: ofrece el modelo en múltiples niveles de cuantización (desde Q2_K hasta F16, incluyendo variantes IQ4_XS e intermedias de la familia K) para facilitar su despliegue en hardware con recursos limitados mediante llama.cpp u otros runners compatibles con GGUF. El repositorio tiene un tamaño de 121,0 GB, lo que refleja que contiene todas las variantes de cuantización en un único paquete.
+El modelo se distribuye exclusivamente en formato GGUF, lo que lo hace compatible con llama.cpp, Ollama y otros motores de inferencia optimizados para CPU y GPU. La informacion disponible sobre el modelo base es limitada: no se detallan la longitud de contexto, la composicion del dataset de entrenamiento ni los resultados de benchmarks. El repositorio tiene un tamano total de 192,3 GB e incluye tanto los pesos cuantizados como los ficheros del proyector multimodal.
 
-No se dispone de información sobre la arquitectura interna, el proceso de entrenamiento, los datos utilizados ni los idiomas soportados, ya que la model card del autor de la cuantización se limita a metadatos técnicos del proceso de conversión y no incluye documentación del modelo base. Cualquier evaluación rigurosa del modelo requiere consultar el repositorio original, cuya información tampoco está disponible en el material proporcionado.
+La ficha se centra en los datos verificables de la model card y de los metadatos de Hugging Face, indicando explicitamente cuando un dato no esta disponible. Es importante senalar que el modelo base fue creado por un autor individual (beita6969) y no por un laboratorio consolidado, por lo que la documentacion tecnica es escasa y conviene tratarlo con cautela en entornos de produccion.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible |
-| Parametros totales | 27.320.697.856 |
-| Parametros activos | no disponible (no consta que sea MoE) |
+| Arquitectura | no disponible (transformers; se infiere transformer denso por el tamano y el formato, pero no confirmado) |
+| Parametros totales | 27.320.697.856 (27,3 B) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | F16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q4_K_M, Q4_K_S, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K, IQ4_XS |
-| Idiomas soportados | no disponible |
-| Licencia | no disponible |
-| Formato de pesos | GGUF (cuantizaciones estáticas); safetensors en el modelo original |
+| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0; proyector multimodal mmproj-f16 y mmproj-Q8_0 |
+| Idiomas soportados | en (ingles) segun la model card |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (safetensors en el modelo base) |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información sobre la arquitectura del modelo base: la model card de esta publicación únicamente documenta el proceso de cuantización (convert_type: hf, quantize_version: 2, output_tensor_quantised: 1), sin describir si se trata de un transformer denso, un modelo MoE, un híbrido o cualquier otra variante. Tampoco hay datos sobre el número de tokens de entrenamiento, la composición del dataset, la existencia de fases de RLHF, DPO o ajuste por instrucciones.
+No se dispone de informacion detallada sobre la arquitectura interna del modelo base. Por el numero de parametros (27,3 B) y el uso de la libreria transformers, se trata presumiblemente de un transformer denso, pero la model card no confirma ni el tipo de atencion, ni el numero de capas, ni la dimension oculta. Tampoco se especifica si se emplearon tecnicas como RLHF, DPO o decodificacion especulativa.
 
-La única innovación técnica documentada es la propia cadena de cuantización estática aplicada con llama.cpp, que produce todas las variantes listadas a partir del modelo en formato Hugging Face. El nombre "BaseRSI" sugiere, sin confirmación documental, un posible enfoque de razonamiento o auto-mejora (RSI, por *recursive self-improvement*), pero esta interpretación no puede verificarse con la información disponible.
+El unico dato de entrenamiento disponible es el dataset referenciado: beita6969/BaseRSI-Dataset. No se indica el numero de tokens, la composicion del corpus, ni si hubo fases de ajuste fino supervisado o alineacion. La presencia de ficheros mmproj (proyector multimodal) en la distribucion GGUF sugiere que el modelo base incorpora o soporta entrada de imagenes, aunque no se detalla el codificador visual utilizado ni el proceso de entrenamiento multimodal.
 
 ## Capacidades
 
-- Generación de texto conversacional: el tag `conversational` del repositorio indica que el modelo está orientado a diálogo, aunque no se detallan las capacidades concretas.
-- Compatibilidad con endpoints: el tag `endpoints_compatible` sugiere que puede servirse a través de infraestructura tipo Hugging Face Inference Endpoints con runners compatibles con GGUF.
-- Razonamiento, código, matemáticas: no disponible.
-- Soporte de tool calling / function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingües: no disponible.
-- Capacidades especiales (modo thinking, visión, audio): no disponible.
+- Generacion de texto conversacional: el tag "conversational" en Hugging Face indica que el modelo esta orientado a dialogos multi-turno.
+- Procesamiento multimodal: la presencia de ficheros mmproj-f16 y mmproj-Q8_0 sugiere soporte de entrada de imagenes, aunque no se documenta el alcance ni la calidad de esta capacidad.
+- Idiomas: la model card declara unicamente ingles ("en"); no hay evidencia de soporte multilingue.
+- Tool calling / function calling: no disponible en la informacion proporcionada.
+- Razonamiento multi-paso y agentes: no disponible en la informacion proporcionada.
+- Modo thinking explicito: no disponible en la informacion proporcionada.
+- Capacidades de codigo y matematicas: no documentadas.
 
 ## Casos de uso
 
-- Despliegue en hardware de consumo: las variantes Q4_K_M y Q4_K_S permiten ejecutar un modelo de 27B en GPUs con 16-24 GB de VRAM o en configuraciones CPU+GPU con llama.cpp, algo inviable con el modelo en F16 (aproximadamente 55 GB).
-- Prototipado local de asistentes conversacionales: el tag `conversational` y el formato GGUF permiten integrar el modelo en aplicaciones de chat mediante llama.cpp, Ollama o servidores compatibles con la API de OpenAI.
-- Evaluación comparativa de cuantizaciones: al ofrecer doce variantes en un mismo repositorio, es posible medir la degradación de calidad entre Q2_K, Q4_K_M y Q8_0 sobre las mismas tareas, útil para calibrar el equilibrio calidad/memoria.
-- Inferencia en entornos sin GPU dedicada: las cuantizaciones Q3_K_S y Q2_K, de menor tamaño, permiten ejecución en CPU con RAM moderada para tareas de generación de texto no críticas.
-- Servicio en endpoints gestionados: el tag `endpoints_compatible` facilita el despliegue como API en infraestructura cloud que acepte pesos GGUF.
-- Investigación sobre modelos de 27B: sirve como base para experimentos de ajuste fino o evaluación, siempre que se confirme la licencia del modelo original antes de cualquier uso.
+- Despliegue local en estaciones de trabajo: con cuantizaciones Q4_K_M (17,1 GB) o Q5_K_M (19,7 GB) el modelo puede ejecutarse en GPUs de consumo con 24 GB de VRAM, como la RTX 4090, o en configuraciones CPU+GPU mediante llama.cpp, permitiendo prototipado sin dependencia de la nube.
+- Asistentes conversacionales en ingles: el tag conversacional y el entrenamiento sobre un dataset especifico lo hacen adecuado para chatbots de dominio acotado, siempre que se valide la calidad de las respuestas con pruebas propias.
+- Experimentacion con modelos multimodales: los ficheros mmproj permiten probar entrada de imagenes en llama.cpp, util para prototipos de descripcion de imagenes o respuesta a preguntas visuales, aunque sin garantias de calidad documentada.
+- Investigacion academica sobre cuantizacion: al ofrecer 11 variantes de cuantizacion (desde Q2_K hasta Q8_0), es util para estudiar el impacto de la cuantizacion en la perplejidad y la calidad de generacion.
+- Fine-tuning sobre el modelo base: al estar bajo Apache 2.0, se puede partir del modelo original en safetensors (beita6969/BaseRSI-27B) para ajuste fino con transformers y posteriormente cuantizar a GGUF.
+- Evaluacion comparativa de modelos de 27 B: sirve como punto de comparacion frente a otros modelos de tamano similar en tareas de generacion de texto en ingles, aunque la ausencia de benchmarks publicados limita la comparabilidad directa.
 
 ## Benchmarks y rendimiento
 
@@ -52,35 +52,50 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia (27,3B parámetros): F16 en torno a 55 GB; Q8_0 en torno a 29 GB; Q6_K en torno a 22 GB; Q5_K_M en torno a 19 GB; Q4_K_M en torno a 16-17 GB; Q3_K_M en torno a 13-14 GB; Q2_K en torno a 10-11 GB. Estas cifras son estimaciones por tamaño de pesos y no incluyen el overhead del contexto KV.
-- GPU recomendadas: A100 80 GB o H100 para F16 y Q8_0; RTX 4090 (24 GB) para Q5_K_M y Q4_K_M; RTX 3090/4080 (16-24 GB) para Q4_K_S con contexto moderado.
-- Cabe en GPU de consumo: sí, en RTX 4090, RTX 3090, RTX 4080 y, con cuantizaciones bajas, en GPUs de 12-16 GB (Q3_K_M o Q2_K), a costa de pérdida de calidad.
-- Opciones de despliegue: llama.cpp, Ollama, servidores compatibles con GGUF (por ejemplo, llama-cpp-python o bindings equivalentes); vLLM y TGI no soportan GGUF de forma nativa en todas sus versiones, por lo que requerirían los pesos safetensors originales.
-- Latencia y throughput: no disponibles.
+- VRAM estimada para inferencia (solo pesos, sin overhead de contexto):
+  - Q2_K: ~11,3 GB
+  - Q3_K_M: ~13,8 GB
+  - IQ4_XS: ~15,8 GB
+  - Q4_K_M: ~17,1 GB
+  - Q5_K_M: ~19,7 GB
+  - Q6_K: ~22,5 GB
+  - Q8_0: ~29,1 GB
+  - Proyector multimodal: 0,7 GB (Q8_0) o 1,0 GB (f16) adicionales
+- GPU recomendadas: RTX 4090 (24 GB) para Q4_K_M y Q5_K_M; A100 40 GB o H100 para Q8_0 con contexto amplio; GPUs de 16 GB (RTX 4080, 4060 Ti 16 GB) solo con Q2_K o Q3_K_S y contexto reducido.
+- Cabe en GPU de consumo: si, en RTX 3090/4090 (24 GB) con cuantizaciones Q4_K_M o Q5_K_M; en GPUs de 16 GB con Q2_K/Q3_K_S.
+- Opciones de despliegue: llama.cpp, Ollama, y cualquier runtime compatible con GGUF (koboldcpp, LM Studio). El tag "endpoints_compatible" sugiere compatibilidad con endpoints tipo OpenAI, aunque no se detalla.
+- Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| BaseRSI-27B-GGUF | 27,3B | no disponible | no disponible | GGUF | Doce cuantizaciones estáticas; sin documentación del modelo base |
-| Modelo original beita6969/BaseRSI-27B | 27,3B | no disponible | no disponible | safetensors (presumiblemente) | Fuente de la cuantización; sin información pública en el material disponible |
-| Alternativas de ~27B | no disponible | no disponible | no disponible | no disponible | No se dispone de datos verificables de modelos comparables en la información proporcionada |
+| BaseRSI-27B-GGUF | 27,3 B | no disponible | Apache 2.0 | GGUF | Modelo de autor individual, documentacion escasa |
+| Gemma 2 27B | 27 B | 8.192 tokens | Gemma License | safetensors, GGUF | Modelo de Google con benchmarks publicados |
+| Qwen2.5 32B | 32,5 B | 131.072 tokens | Apache 2.0 | safetensors, GGUF | Modelo de Alibaba con soporte multilingue |
+| Mistral Small 24B | 24 B | 32.768 tokens | Apache 2.0 | safetensors, GGUF | Modelo de Mistral AI con benchmarks publicados |
 
-No es posible establecer una comparativa rigurosa con modelos de la misma categoría porque se desconocen arquitectura, contexto, licencia y rendimiento del modelo base.
+La comparacion se limita a parametros, contexto y licencia, ya que no hay benchmarks publicados para BaseRSI-27B que permitan contrastar rendimiento. Los modelos alternativos citados cuentan con documentacion tecnica y evaluaciones publicas, a diferencia de BaseRSI-27B.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de documentación: no hay información sobre arquitectura, datos de entrenamiento, idiomas ni evaluación, lo que impide validar su calidad antes de usarlo en producción.
-- Licencia desconocida: al no constar la licencia, no se puede confirmar si el uso comercial está permitido; es imprescindible verificarla en el repositorio original antes de cualquier despliegue.
-- Riesgo de alucinación: no cuantificado; sin benchmarks ni evaluación publicada no hay evidencia sobre la fiabilidad factual del modelo.
-- Procedencia incierta: el modelo base está alojado bajo un usuario no verificado (beita6969) sin model card sustantiva, lo que añade riesgo sobre la legitimidad y la composición de los datos de entrenamiento.
-- Sesgos: no documentados; la ausencia de información sobre el dataset impide evaluar sesgos de género, idioma o dominio.
-- Degradación por cuantización: las variantes Q2_K y Q3_K_S pueden degradar notablemente la calidad en tareas de razonamiento; se recomienda Q4_K_M o superior para uso serio.
-- Sin soporte de contexto conocido: no se puede planificar el uso en tareas de contexto largo sin conocer la ventana máxima del modelo original.
-- Repositorio con 0 descargas y 1 like en el momento de la consulta: indica ausencia de validación por parte de la comunidad.
+- Ausencia de benchmarks: no hay resultados publicados de MMLU, HumanEval, GSM8K ni otras evaluaciones, lo que impide estimar su calidad real frente a alternativas.
+- Documentacion tecnica escasa: no se detallan arquitectura, contexto, datos de entrenamiento ni proceso de alineacion; esto dificulta la evaluacion de riesgos.
+- Idioma: solo se declara soporte de ingles; el rendimiento en castellano no esta garantizado ni documentado.
+- Riesgo de alucinacion: sin informacion sobre alineacion (RLHF/DPO) ni evaluaciones de fidelidad, el riesgo de alucinacion es desconocido y potencialmente alto.
+- Sesgos: no se documentan sesgos conocidos ni procesos de mitigacion; al ser un modelo de autor individual sin auditoria publica, conviene realizar evaluaciones propias.
+- Licencia Apache 2.0: permite uso comercial, pero el usuario debe verificar que el dataset de entrenamiento (beita6969/BaseRSI-Dataset) no imponga restricciones adicionales.
+- Proyector multimodal sin documentar: la capacidad de vision no esta descrita; no se debe asumir un rendimiento equiparable a modelos multimodales consolidados.
+- Fecha de creacion futura: el repositorio figura creado el 2026-11-19, lo que puede indicar metadatos anomalos o manipulados; conviene verificar la procedencia antes de usarlo en produccion.
+- Cuantizaciones de baja calidad: Q2_K y Q3_K_S degradan notablemente la calidad; para uso serio se recomienda Q4_K_M o superior.
 
 ## Enlaces
 
 - Repositorio GGUF: https://huggingface.co/mradermacher/BaseRSI-27B-GGUF
-- Modelo original: https://huggingface.co/beita6969/BaseRSI-27B
-- Paper, blog o demo: no disponible
+- Modelo base: https://huggingface.co/beita6969/BaseRSI-27B
+- Dataset de entrenamiento: https://huggingface.co/datasets/beita6969/BaseRSI-Dataset
+- Pagina de descargas del cuantizador: https://hf.tst.eu/model#BaseRSI-27B-GGUF
+- Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Solicitudes de cuantizacion de mradermacher: https://huggingface.co/mradermacher/model_requests
+- Grafico de perplejidad por cuantizacion: https://www.nethype.de/huggingface_embed/quantpplgraph.png
+- Analisis de cuantizaciones de Artefact2: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9

@@ -1,0 +1,92 @@
+{
+  "schema": 2,
+  "id": "benjbritton/spacenet2-building-detector",
+  "slug": "benjbritton-spacenet2-building-detector",
+  "author": "benjbritton",
+  "url": "https://huggingface.co/benjbritton/spacenet2-building-detector",
+  "created_at": "2026-11-22T20:46:30.000Z",
+  "updated_at": "2026-11-22T22:41:28.000Z",
+  "license": "cc-by-sa-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-segmentation",
+  "library": "detectron2",
+  "languages": [],
+  "tags": [
+    "detectron2",
+    "object-detection",
+    "instance-segmentation",
+    "building-detection",
+    "remote-sensing",
+    "satellite-imagery",
+    "geoai",
+    "spacenet",
+    "image-segmentation",
+    "arxiv:1807.01232",
+    "license:cc-by-sa-4.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 361030471,
+  "storage_human": "361 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "Building footprint instance segmentation",
+      "dataset": "SpaceNet 2 validation split (2,118 tiles, four cities)",
+      "metric": "SpaceNet F1, macro over cities (IoU 0.5, score 0.544)",
+      "value": 0.7447
+    },
+    {
+      "task": "Building footprint instance segmentation",
+      "dataset": "SpaceNet 2 validation split (2,118 tiles, four cities)",
+      "metric": "SpaceNet F1, Las Vegas",
+      "value": 0.8941
+    },
+    {
+      "task": "Building footprint instance segmentation",
+      "dataset": "SpaceNet 2 validation split (2,118 tiles, four cities)",
+      "metric": "SpaceNet F1, Paris",
+      "value": 0.7762
+    },
+    {
+      "task": "Building footprint instance segmentation",
+      "dataset": "SpaceNet 2 validation split (2,118 tiles, four cities)",
+      "metric": "SpaceNet F1, Shanghai",
+      "value": 0.6828
+    },
+    {
+      "task": "Building footprint instance segmentation",
+      "dataset": "SpaceNet 2 validation split (2,118 tiles, four cities)",
+      "metric": "SpaceNet F1, Khartoum",
+      "value": 0.6257
+    },
+    {
+      "task": "Building footprint instance segmentation",
+      "dataset": "SpaceNet 2 validation split (2,118 tiles, four cities)",
+      "metric": "segm AP",
+      "value": 49.44
+    },
+    {
+      "task": "Building footprint instance segmentation",
+      "dataset": "SpaceNet 2 validation split (2,118 tiles, four cities)",
+      "metric": "bbox AP",
+      "value": 52.76
+    }
+  ],
+  "sources": []
+}

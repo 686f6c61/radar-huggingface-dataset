@@ -2,117 +2,111 @@
 
 ## Resumen
 
-Llama-3.2-tiny-lm-v2-japanese-500m-sft es un modelo de lenguaje de aproximadamente 476 millones de parámetros especializado en japonés, desarrollado por el usuario nagohachi. Se obtiene mediante poda estructurada de anchura (width pruning) sobre meta-llama/Llama-3.2-3B, seguida de preentrenamiento de recuperación sobre unos 10.000 millones de tokens y un ajuste supervisado final. Es la versión instruction-tuned del modelo base homónimo y el contrapunto por poda al modelo entrenado desde cero tiny-lm-v1-japanese-500m.
+Llama-3.2-tiny-lm-v2-japanese-500m-sft es un modelo de lenguaje de aproximadamente 476 millones de parámetros especializado en japonés, desarrollado por el usuario nagohachi. No se trata de un modelo entrenado desde cero, sino de un derivado de meta-llama/Llama-3.2-3B obtenido mediante poda estructurada de anchura (width pruning), seguido de preentrenamiento de recuperación sobre unos 10.000 millones de tokens y, finalmente, ajuste fino supervisado (SFT) para conversación. Es la variante instruction-tuned del modelo base homónimo y el contrapunto basado en poda del tiny-lm-v1-japanese-500m, que se entrenó desde cero.
 
-El modelo emplea una implementación propia de estilo Llama incluida en el repositorio (requiere `trust_remote_code=True`) y la plantilla de chat de llm-jp-3. Su contexto es de 2048 tokens y su vocabulario de 99.574 entradas, tomado del tokenizador de llm-jp/llm-jp-3-440m. La relevancia actual reside en su tamaño reducido: permite experimentar con ajuste fino, evaluación y despliegue en japonés en hardware muy modesto, sirviendo como banco de pruebas para técnicas de compresión de modelos mayores.
+El modelo resuelve el problema de desplegar un asistente conversacional en japonés con un coste computacional muy reducido, manteniendo parte del conocimiento adquirido por un modelo mucho mayor. Con 476 millones de parámetros y un contexto de 2048 tokens, está pensado para entornos con recursos limitados (CPU, GPU de gama baja, dispositivos edge) donde un modelo de 3B o superior no es viable. Utiliza un tokenizador de llm-jp/llm-jp-3-440m con un vocabulario de 99.574 tokens, adaptado al japonés.
 
-La ficha se basa exclusivamente en la información publicada en la model card y en los metadatos de Hugging Face; los datos no presentes se indican como no disponibles.
+Su relevancia actual radica en que demuestra que la poda estructurada con preentrenamiento de recuperación puede producir modelos pequeños competitivos frente a alternativas entrenadas desde cero con el mismo presupuesto de parámetros. En la evaluación con llm-jp-eval v1.4.1, el modelo base podado supera al tiny-lm-v1 base (0,277 frente a 0,210 de media), aunque la versión SFT rinde por debajo de su propio base en esa métrica concreta.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only estilo Llama (implementación personalizada `scratch_llama`, requiere `trust_remote_code=True`) |
+| Arquitectura | Transformer estilo Llama (implementación custom con `trust_remote_code=True`), podado en anchura desde Llama-3.2-3B |
 | Parametros totales | 476.363.776 (~476M) |
 | Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | 2048 tokens |
-| Tipos de cuantizacion | no disponible (el repo publica safetensors en bfloat16; no se documentan GGUF ni otras cuantizaciones) |
+| Tipos de cuantizacion | no disponible (el repo solo distribuye safetensors en bfloat16; no se documentan GGUF ni otras cuantizaciones) |
 | Idiomas soportados | japonés (ja) |
-| Licencia | Llama 3.2 Community License |
-| Formato de pesos | safetensors (transformers) |
+| Licencia | Llama 3.2 Community License (license: llama3.2) |
+| Formato de pesos | safetensors (librería transformers, requiere código custom) |
 
-Datos adicionales: tamaño del repositorio 1,0 GB; vocabulario de 99.574 tokens; tokenizador llm-jp/llm-jp-3-440m; modelo base meta-llama/Llama-3.2-3B.
+Datos adicionales: vocabulario de 99.574 tokens, tokenizador llm-jp/llm-jp-3-440m, tamaño del repositorio 1,0 GB, 430 descargas y 0 likes en el momento de la consulta.
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es un transformer decoder-only con atención causal de estilo Llama, pero con las dimensiones de anchura reducidas respecto al modelo original de 3B mediante poda estructurada. El resultado conserva el vocabulario y el tokenizador de llm-jp-3-440m, y se distribuye con código propio en el repositorio, por lo que la carga exige `trust_remote_code=True`. El contexto máximo es de 2048 tokens.
+La arquitectura es un transformer decoder-only de estilo Llama, pero no se carga con la implementación estándar de transformers: el repositorio incluye una implementación propia (`scratch_llama`) que exige `trust_remote_code=True`. El modelo se obtuvo podando la anchura de Llama-3.2-3B hasta unos 476M de parámetros y aplicando después un preentrenamiento de recuperación sobre aproximadamente 10.000 millones de tokens, lo que permite recuperar parte de la capacidad perdida durante la poda. El contexto máximo es de 2048 tokens, muy por debajo de los 128K del modelo original, y el tokenizador se sustituye por el de llm-jp-3-440m, más adecuado para japonés.
 
-El proceso de construcción tiene tres fases: poda de anchura sobre Llama-3.2-3B, preentrenamiento de recuperación sobre aproximadamente 10.000 millones de tokens y ajuste supervisado (SFT). Para el SFT se usaron los conjuntos llm-jp/magpie-sft-v1.0 y kanhatakeyama/AutoMultiTurnByCalm3-22B, en total unas 188.000 conversaciones, con filtrado de filas contaminadas con chino y cálculo de pérdida únicamente sobre los turnos del asistente. El entrenamiento se calentó desde el modelo base y se extendió durante unas 2 épocas. No se documentan fases de RLHF ni DPO para esta variante concreta (existe una variante DPO separada en la familia).
+La fase de instrucción (SFT) se realizó sobre los datasets llm-jp/magpie-sft-v1.0 y kanhatakeyama/AutoMultiTurnByCalm3-22B, con unas 188.000 conversaciones tras filtrar las filas contaminadas con chino. El entrenamiento se ejecutó durante aproximadamente 2 épocas, partiendo del modelo base ya recuperado, y la función de pérdida se calculó únicamente sobre los turnos del asistente. La plantilla de chat empleada es la de llm-jp-3 instruct. Existe además una variante posterior afinada con DPO (Llama-3.2-tiny-lm-v2-japanese-500m-dpo), cuyos resultados en llm-jp-eval son prácticamente idénticos a los de esta versión SFT.
 
 ## Capacidades
 
-- Generación de texto conversacional en japonés con plantilla de chat de llm-jp-3.
-- Respuesta a instrucciones de un solo turno y conversaciones multi-turno, dentro del límite de 2048 tokens.
-- Comprensión lectora y respuesta a preguntas en japonés, según la evaluación llm-jp-eval.
-- Traducción automática japonés-inglés e inglés-japonés a nivel básico (puntuaciones MT de 0,665 en llm-jp-eval).
-- Razonamiento lingüístico elemental: evaluación de consistencia (NLI), analogías morfológicas (MR) y corrección (CR).
-- Generación de código limitada: HumanEval-EN 0,153 y HumanEval-JA 0,090, valores bajos que reflejan el tamaño del modelo.
-- No se documenta soporte de tool calling, function calling, agentes, visión, audio ni modo de razonamiento extendido.
+- Generación de texto conversacional en japonés, con formato de chat multi-turno mediante la plantilla de llm-jp-3 instruct.
+- Comprensión lectora, respuesta a preguntas y clasificación de texto en japonés, según las categorías evaluadas en llm-jp-eval (QA, RC, NLI, MC).
+- Generación de resúmenes y traducción japonés-inglés dentro de las tareas de llm-jp-eval (SUM, MT), con rendimiento limitado.
+- Razonamiento matemático elemental y generación de código a nivel básico (categorías MT y HE de la evaluación), sin garantías de calidad en problemas complejos.
+- Respuesta a instrucciones conversacionales gracias al ajuste fino supervisado sobre datos de diálogo.
+- No se documenta soporte de tool calling ni function calling.
+- No se documenta soporte de agentes ni razonamiento multi-paso.
+- No dispone de visión, audio ni modo de razonamiento extendido (thinking).
 
 ## Casos de uso
 
-- Experimentación académica con técnicas de poda: sirve para reproducir y comparar el pipeline poda + preentrenamiento de recuperación + SFT frente al entrenamiento desde cero (tiny-lm-v1), con métricas llm-jp-eval publicadas para ambos.
-- Prototipado de asistentes conversacionales en japonés: permite validar plantillas de chat, flujos multi-turno y prompts antes de migrar a un modelo mayor, gracias a su bajo coste de inferencia.
-- Evaluación de pipelines de ajuste fino: con 476M de parámetros y pesos en bfloat16 (~1 GB), es viable iterar SFT y DPO en una única GPU de consumo.
-- Investigación sobre tokenizadores: al usar el vocabulario de llm-jp-3-440m (99.574 tokens) sobre una arquitectura Llama, permite estudiar el efecto del tokenizador en modelos pequeños en japonés.
-- Generación de texto y resúmenes de dominio general en japonés en entornos con recursos limitados, aceptando la calidad propia de un modelo de 476M.
-- Docencia y formación: sirve para explicar el ciclo completo de compresión, recuperación y alineamiento de un LLM con un presupuesto de cómputo reducido.
-- Traducción asistida de frases cortas japonés-inglés en herramientas internas, con revisión humana obligatoria por la calidad limitada.
+- Asistente conversacional ligero en japonés para aplicaciones móviles o web: con 476M de parámetros y pesos en bfloat16 (aproximadamente 1 GB), puede ejecutarse en CPU o en GPUs integradas, gestionando diálogos de hasta 2048 tokens con la plantilla de chat de llm-jp-3.
+- Clasificación y etiquetado de texto japonés a pequeña escala: tareas de análisis de sentimiento, categorización de tickets o moderación básica, donde el modelo puede desplegarse en lote sobre grandes volúmenes sin coste elevado de inferencia.
+- Respuesta a preguntas sobre documentación interna en japonés: con prompts de contexto corto (hasta 2048 tokens) puede construir sistemas RAG sencillos para manuales, FAQs o bases de conocimiento acotadas.
+- Generación de resúmenes de textos breves en japonés: útil para resumir correos, notas o artículos cortos en flujos internos donde no se requiere máxima calidad.
+- Prototipado e investigación sobre poda de modelos: sirve como referencia reproducible para estudiar el impacto de la poda estructurada y el preentrenamiento de recuperación frente a entrenamiento desde cero (comparación directa con tiny-lm-v1).
+- Entornos con privacidad estricta o sin conectividad: al caber en hardware modesto, permite ejecución local en dispositivos edge o servidores sin GPU, manteniendo los datos en el propio sistema.
+- Filtrado y preprocesamiento de corpus japoneses: generación de pares instrucción-respuesta sintéticos o normalización de texto en pipelines de datos, aprovechando su bajo coste por token.
 
 ## Benchmarks y rendimiento
 
-Resultados publicados en la model card con llm-jp-eval v2.1.5, 100 ejemplos del split de test y decodificación greedy. Los modelos base usan ajuste de 4 ejemplos (4-shot); los modelos SFT/DPO y el baseline instruct se evalúan mediante su plantilla de chat. CR: corrección; EL: evaluación lingüística; FA: fluidez; HE-EN/HE-JA: HumanEval en inglés y japonés; MR: analogías morfológicas; MT: traducción automática; NLI: inferencia de lenguaje natural; QA: respuesta a preguntas; RC: comprensión lectora.
+Resultados publicados por el autor con llm-jp-eval v1.4.1 (100 ejemplos del split dev por dataset, 4-shot, decodificación greedy, sin plantilla de chat). La media corresponde a 10 categorías, excluyendo generación de código.
 
-| Modelo | average | CR | EL | FA | HE-EN | HE-JA | MR | MT | NLI | QA | RC |
+| Modelo | Media | EL | FA | HE | MC | MR | MT | NLI | QA | RC | SUM |
 | :--- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| Llama-3.2-tiny-lm-v2-japanese-500m-base | 0,232 | 0,270 | 0,322 | 0,061 | 0,170 | 0,100 | 0,013 | 0,657 | 0,398 | 0,137 | 0,190 |
-| Llama-3.2-tiny-lm-v2-japanese-500m-sft (este modelo) | 0,224 | 0,320 | 0,229 | 0,058 | 0,153 | 0,090 | 0,017 | 0,665 | 0,405 | 0,112 | 0,190 |
-| Llama-3.2-tiny-lm-v2-japanese-500m-dpo | 0,222 | 0,320 | 0,225 | 0,064 | 0,153 | 0,060 | 0,017 | 0,664 | 0,395 | 0,108 | 0,210 |
-| tiny-lm-v1-japanese-500m-base | 0,198 | 0,223 | 0,130 | 0,035 | 0,207 | 0,130 | 0,007 | 0,504 | 0,483 | 0,072 | 0,190 |
-| tiny-lm-v1-japanese-500m-sft | 0,191 | 0,310 | 0,102 | 0,036 | 0,187 | 0,070 | 0,013 | 0,523 | 0,380 | 0,082 | 0,210 |
-| tiny-lm-v1-japanese-500m-dpo | 0,194 | 0,310 | 0,130 | 0,036 | 0,187 | 0,070 | 0,013 | 0,531 | 0,345 | 0,082 | 0,240 |
-| llm-jp/llm-jp-3-440m | 0,249 | 0,280 | 0,266 | 0,059 | 0,170 | 0,080 | 0,027 | 0,760 | 0,525 | 0,144 | 0,180 |
-| llm-jp/llm-jp-3-440m-instruct3 | 0,254 | 0,317 | 0,289 | 0,066 | 0,223 | 0,110 | 0,017 | 0,744 | 0,520 | 0,155 | 0,100 |
+| Llama-3.2-tiny-lm-v2-japanese-500m-base | 0,277 | 0,277 | 0,059 | 0,230 | 0,303 | 0,050 | 0,571 | 0,464 | 0,332 | 0,431 | 0,058 |
+| **Llama-3.2-tiny-lm-v2-japanese-500m-sft** | **0,249** | **0,240** | **0,059** | **0,195** | **0,317** | **0,030** | **0,595** | **0,342** | **0,245** | **0,364** | **0,107** |
+| Llama-3.2-tiny-lm-v2-japanese-500m-dpo | 0,249 | 0,220 | 0,063 | 0,195 | 0,307 | 0,030 | 0,595 | 0,340 | 0,242 | 0,391 | 0,105 |
+| tiny-lm-v1-japanese-500m-base | 0,210 | 0,075 | 0,035 | 0,215 | 0,300 | 0,010 | 0,451 | 0,528 | 0,229 | 0,208 | 0,051 |
+| tiny-lm-v1-japanese-500m-sft | 0,221 | 0,129 | 0,036 | 0,235 | 0,300 | 0,010 | 0,472 | 0,428 | 0,222 | 0,278 | 0,099 |
+| tiny-lm-v1-japanese-500m-dpo | 0,220 | 0,137 | 0,035 | 0,235 | 0,293 | 0,010 | 0,476 | 0,412 | 0,232 | 0,268 | 0,102 |
+| llm-jp/llm-jp-3-440m | 0,264 | 0,223 | 0,057 | 0,285 | 0,320 | 0,050 | 0,620 | 0,508 | 0,277 | 0,267 | 0,029 |
+| llm-jp/llm-jp-3-440m-instruct3 | 0,274 | 0,296 | 0,060 | 0,240 | 0,313 | 0,050 | 0,646 | 0,444 | 0,229 | 0,384 | 0,073 |
 
-No se han publicado otros resultados de benchmarks (MMLU, GSM8K u otros) en la información disponible.
+Categorías: EL (examen lingüístico), FA (análisis morfológico), HE (humanidades), MC (opción múltiple), MR (razonamiento matemático), MT (traducción), NLI (inferencia en lenguaje natural), QA (preguntas y respuestas), RC (comprensión lectora), SUM (resumen). No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K) en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia en bfloat16: aproximadamente 1 GB para los pesos, más overhead de activaciones y caché KV; en la práctica cabe holgadamente en GPUs con 4-8 GB.
-- En cuantización de 8 bits se situaría en torno a 0,5 GB de pesos; en 4 bits, en torno a 0,25 GB. No se publican ficheros GGUF oficiales, por lo que estas cifras son estimaciones de cálculo, no datos verificados.
-- GPU recomendadas: cualquier GPU consumer moderna (RTX 3060, RTX 4060, RTX 4090) es suficiente; también es viable en CPU para inferencia de baja concurrencia.
-- Cabe en GPU consumer: sí, sin restricciones prácticas por memoria.
-- Opciones de despliegue: transformers con `trust_remote_code=True` (método documentado). No se documenta compatibilidad con vLLM, llama.cpp, Ollama ni TGI; al usar código personalizado, la integración en esos motores requeriría portar la implementación.
+- VRAM estimada para inferencia: aproximadamente 1 GB en bfloat16 o float16 para los 476M de parámetros, más el overhead de activaciones y caché KV (contexto máximo de 2048 tokens). En float32, unos 2 GB.
+- GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM. Funciona holgadamente en RTX 3060, RTX 4060, RTX 4090, A100 y H100; estas dos últimas están sobredimensionadas para el modelo.
+- Cabe en GPU de consumo: sí, en prácticamente cualquier GPU dedicada moderna e incluso en GPUs integradas con memoria compartida suficiente. También es viable en CPU.
+- Opciones de despliegue: transformers con `trust_remote_code=True` es la vía documentada. No se documenta compatibilidad con vLLM, llama.cpp, Ollama ni TGI; al requerir código custom y no distribuir GGUF, el soporte en otros runners no está garantizado.
 - Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Licencia | Idioma | average llm-jp-eval |
-| :--- | ---: | ---: | :--- | :--- | ---: |
-| Llama-3.2-tiny-lm-v2-japanese-500m-sft (este) | 476M | 2048 | Llama 3.2 Community | ja | 0,224 |
-| tiny-lm-v1-japanese-500m-sft | ~500M | no disponible | no disponible | ja | 0,191 |
-| llm-jp/llm-jp-3-440m-instruct3 | 440M | no disponible | no disponible | ja | 0,254 |
-| llm-jp/llm-jp-3-440m (base) | 440M | no disponible | no disponible | ja | 0,249 |
+| Modelo | Parámetros | Contexto | Media llm-jp-eval | Licencia | Disponibilidad |
+| :--- | ---: | ---: | ---: | :--- | :--- |
+| Llama-3.2-tiny-lm-v2-japanese-500m-sft | 476M | 2048 | 0,249 | Llama 3.2 Community | Hugging Face, requiere `trust_remote_code` |
+| tiny-lm-v1-japanese-500m-sft | ~500M | no disponible | 0,221 | no disponible | Hugging Face |
+| llm-jp/llm-jp-3-440m-instruct3 | 440M | no disponible | 0,274 | no disponible | Hugging Face |
 
-El modelo supera a su contraparte entrenada desde cero (tiny-lm-v1-sft, 0,191 frente a 0,224) y queda por debajo del baseline instruct de llm-jp (0,254), con diferencias notables en EL, MT, NLI y QA. Destaca en CR (0,320) y RC (0,190), donde iguala o supera al baseline. La licencia de los modelos llm-jp y tiny-lm-v1 no se detalla en la información disponible.
+Frente al tiny-lm-v1 (entrenado desde cero), este modelo obtiene una media superior en llm-jp-eval (0,249 frente a 0,221) y destaca especialmente en traducción (0,595 frente a 0,472) y examen lingüístico (0,240 frente a 0,129), aunque pierde en NLI (0,342 frente a 0,428). Frente al llm-jp-3-440m-instruct3, queda por debajo en la media global (0,249 frente a 0,274), con peor rendimiento en examen lingüístico, humanidades, razonamiento matemático y traducción, pero mejor en resumen (0,107 frente a 0,073).
 
 ## Limitaciones y advertencias
 
-- Tamaño reducido (476M): calidad limitada en tareas complejas de razonamiento, código y matemáticas; HumanEval-JA de 0,090 y HumanEval-EN de 0,153 son indicativos.
-- Contexto corto de 2048 tokens, insuficiente para documentos largos o conversaciones extensas.
-- Entrenado exclusivamente en japonés; el rendimiento en castellano u otros idiomas no está evaluado y previsiblemente será pobre.
-- Riesgo de alucinación elevado, propio de modelos pequeños con preentrenamiento de recuperación limitado (~10.000 millones de tokens).
-- Sesgos no documentados: no se publica análisis de sesgos ni de toxicidad.
-- El SFT se realizó sobre datos generados (magpie y AutoMultiTurnByCalm3-22B), con filtrado de filas contaminadas con chino; pueden persistir artefactos de los datos sintéticos.
+- Modelo de muy pequeño tamaño (476M): la calidad de razonamiento, matemáticas y código es limitada; los benchmarks muestran valores bajos en HE (0,195), MR (0,030) y QA (0,245).
+- El ajuste SFT reduce la media global de llm-jp-eval respecto al modelo base podado (0,249 frente a 0,277), especialmente en NLI y QA; conviene evaluar ambas variantes según la tarea.
+- Contexto máximo de solo 2048 tokens, insuficiente para documentos largos o conversaciones extensas.
+- Entrenado exclusivamente en japonés: no se garantiza un comportamiento correcto en castellano ni en otros idiomas.
+- Riesgo de alucinación elevado por el tamaño reducido del modelo y por el uso de datos SFT generados automáticamente (magpie y AutoMultiTurnByCalm3-22B).
+- Posibles sesgos heredados de Llama-3.2-3B y de los datasets de instrucciones utilizados; no se documenta ninguna evaluación de sesgos ni de seguridad.
+- Licencia Llama 3.2 Community: uso comercial permitido con condiciones, obligación de atribución ("Built with Llama") y sujeción a la Acceptable Use Policy de Meta. Es un modelo derivado, por lo que se aplican las restricciones de la licencia original.
 - Requiere `trust_remote_code=True`, lo que implica ejecutar código del autor; conviene auditar el repositorio antes de usarlo en producción.
-- Licencia Llama 3.2 Community: uso comercial permitido con condiciones (política de uso aceptable, atribución en NOTICE, obligaciones de nomenclatura para derivados); revisar el texto completo antes de desplegar.
-- No se documenta soporte de tool calling ni de agentes, por lo que no es adecuado como backend de automatizaciones que requieran function calling.
-- Advertencia sobre la fecha de creación del repositorio (2026-07-25): verificar la vigencia de los enlaces y del código antes de integrarlo.
+- No se documentan cuantizaciones GGUF ni soporte en motores de inferencia habituales, lo que limita las opciones de despliegue optimizado.
+- El modelo fue creado en julio de 2026 y actualizado en noviembre de 2026 según los metadatos; su ecosistema y mantenimiento son reducidos (0 likes, 430 descargas).
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/nagohachi/Llama-3.2-tiny-lm-v2-japanese-500m-sft
-- Modelo base de la familia (poda): https://huggingface.co/nagohachi/Llama-3.2-tiny-lm-v2-japanese-500m-base
+- Modelo base podado: https://huggingface.co/nagohachi/Llama-3.2-tiny-lm-v2-japanese-500m-base
 - Variante DPO: https://huggingface.co/nagohachi/Llama-3.2-tiny-lm-v2-japanese-500m-dpo
-- Contraparte entrenada desde cero (base): https://huggingface.co/nagohachi/tiny-lm-v1-japanese-500m-base
-- Contraparte entrenada desde cero (SFT): https://huggingface.co/nagohachi/tiny-lm-v1-japanese-500m-sft
-- Contraparte entrenada desde cero (DPO): https://huggingface.co/nagohachi/tiny-lm-v1-japanese-500m-dpo
+- Contraparte desde cero (SFT): https://huggingface.co/nagohachi/tiny-lm-v1-japanese-500m-sft
 - Modelo original de Meta: https://huggingface.co/meta-llama/Llama-3.2-3B
 - Tokenizador: https://huggingface.co/llm-jp/llm-jp-3-440m
-- Baseline llm-jp-3-440m: https://huggingface.co/llm-jp/llm-jp-3-440m
-- Baseline llm-jp-3-440m-instruct3: https://huggingface.co/llm-jp/llm-jp-3-440m-instruct3
-- Dataset de SFT: https://huggingface.co/datasets/llm-jp/magpie-sft-v1.0
-- Dataset de conversaciones multi-turno: https://huggingface.co/datasets/kanhatakeyama/AutoMultiTurnByCalm3-22B
-- Licencia Llama 3.2 (incluida en el repo): ./LICENSE
-- Política de uso aceptable (incluida en el repo): ./USE_POLICY.md
-- Atribución (incluida en el repo): ./NOTICE
+- Dataset SFT: https://huggingface.co/datasets/llm-jp/magpie-sft-v1.0
+- Dataset de diálogo multi-turno: https://huggingface.co/datasets/kanhatakeyama/AutoMultiTurnByCalm3-22B
+- Herramienta de evaluación llm-jp-eval: https://github.com/llm-jp/llm-jp-eval
+- Blog de LLM-jp con los resultados de referencia: https://llm-jp.github.io/blog/2025/02/05/instruct3.html

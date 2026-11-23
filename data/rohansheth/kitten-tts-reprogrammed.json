@@ -1,0 +1,52 @@
+{
+  "schema": 2,
+  "id": "rohansheth/kitten-tts-reprogrammed",
+  "slug": "rohansheth-kitten-tts-reprogrammed",
+  "author": "rohansheth",
+  "url": "https://huggingface.co/rohansheth/kitten-tts-reprogrammed",
+  "created_at": "2026-11-23T01:20:18.000Z",
+  "updated_at": "2026-11-23T01:44:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "onnx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "safetensors",
+    "text-to-speech",
+    "int8",
+    "kittentts",
+    "model-editing",
+    "en",
+    "base_model:KittenML/kitten-tts-2-pico",
+    "base_model:quantized:KittenML/kitten-tts-2-pico",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 73094323,
+  "storage_human": "73 MB",
+  "context_length": null,
+  "base_model": "KittenML/kitten-tts-2-pico",
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

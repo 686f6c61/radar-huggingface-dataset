@@ -43,31 +43,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Log in to Roblox",
-      "url": "https://www.roblox.com/Login",
-      "snippet": "©2026 Roblox Corporation. Roblox, the Roblox logo and Powering Imagination are among our registered and unregistered …"
-    },
-    {
-      "title": "Roblox",
-      "url": "https://www.roblox.com/",
-      "snippet": "Roblox is ushering in the next generation of entertainment. Imagine, create, and play together with millions of people across an …"
-    },
-    {
-      "title": "Developer Forum | Roblox",
-      "url": "https://devforum.roblox.com/",
-      "snippet": "Chat with other creators, learn about Roblox platform updates, and report issues with the platform."
-    },
-    {
-      "title": "Roblox Creator Hub",
-      "url": "https://create.roblox.com/landing",
-      "snippet": "Make anything you can imagine. Everything you need to start building on Roblox for free; join a global community of Creators and …"
-    },
-    {
-      "title": "Contact Us – Roblox Support",
-      "url": "https://en.help.roblox.com/hc/en-us/articles/208448546-Contact-Us",
-      "snippet": "Roblox Customer Support team assists with Billing and Account issue related questions. Make sure to check our Roblox Help Articles …"
-    }
-  ]
+  "sources": []
 }

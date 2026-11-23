@@ -2,110 +2,98 @@
 
 ## Resumen
 
-`sealior-modernbert-vi-exam-seq-labeling` es un modelo de etiquetado de secuencias (token classification) desarrollado por el usuario `daominhwysi` y publicado en Hugging Face bajo licencia Apache 2.0. Se trata de un fine-tuning del encoder `aisingapore/SEA-LION-ModernBERT-300M` orientado a la extracción estructural de exámenes educativos vietnamitas de secundaria y bachillerato (grados 8 a 12) en asignaturas como matemáticas, física, química, biología, historia, geografía, literatura e inglés.
+sealior-modernbert-vi-exam-seq-labeling es un modelo de etiquetado de secuencias (token classification) desarrollado por el usuario daominhwysi, afinado a partir del encoder multilingüe aisingapore/SEA-LION-ModernBERT-300M. Su propósito es la extracción estructural granular de exámenes educativos vietnamitas de secundaria y bachillerato (grados 8 a 12), cubriendo asignaturas como matemáticas, física, química, biología, historia, geografía, literatura e inglés, tanto en documentos digitales como escaneados.
 
-El modelo resuelve un problema concreto de ingeniería de datos educativos: convertir documentos de examen en bruto (escaneados o digitales) en una representación XML estructurada, identificando etiquetas de pregunta, enunciados, opciones de respuesta, textos de estímulo, cabeceras de sección y explicaciones. Frente a alternativas generativas, emplea etiquetado BIO a nivel de token, lo que garantiza que el texto de salida sea siempre una subcadena exacta de la entrada (la llamada "Zero Character Mutation guarantee"), sin riesgo de alucinación textual.
+El modelo resuelve un problema concreto de ingeniería de datos educativos: convertir exámenes en texto plano a una representación XML estructurada con entidades diferenciadas (enunciado, opciones, estímulos de lectura, secciones, explicaciones) sin alterar un solo carácter del texto original, lo que el autor denomina garantía de mutación de caracteres cero. Frente a aproximaciones generativas, el enfoque discriminativo de etiquetado por token evita la alucinación de contenido y preserva fielmente fórmulas y notación matemática.
 
-Con 312,8 millones de parámetros, una ventana de contexto de hasta 8192 tokens en el encoder base y un entrenamiento con ventanas dinámicas de 768 a 2048 tokens, el modelo se posiciona como una herramienta de producción ligera para pipelines de parseo de exámenes, no como un modelo conversacional. Su relevancia actual radica en la digitalización masiva de bancos de preguntas educativos y en la necesidad de extracción determinista y auditable en dominios regulados.
+Técnicamente se trata de un transformer encoder ModernBERT de 312,8 millones de parámetros con una cabeza de clasificación personalizada, contexto máximo de entrenamiento de 8192 tokens y ventanas dinámicas multiescala. Su relevancia actual radica en la digitalización fiable de bancos de preguntas y en la construcción de pipelines de evaluación educativa reproducibles, con licencia Apache 2.0 que permite uso comercial.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer encoder (ModernBERT) con cabeza `EnhancedBertForTokenClassification` |
-| Parametros totales | 312.862.498 |
-| Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | 8192 tokens en el encoder base; entrenado con ventanas dinamicas de 768, 1024, 1536 y 2048 |
-| Tipos de cuantizacion | no disponible |
-| Idiomas soportados | vietnamita (vi), ingles (en) |
+| Arquitectura | Transformer encoder ModernBERT con cabeza `EnhancedBertForTokenClassification` |
+| Parámetros totales | 312.866.338 |
+| Parámetros activos | no disponible (no es MoE) |
+| Longitud de contexto | 8192 tokens máximo del encoder; entrenamiento con ventanas dinámicas de 768, 1024, 1536 y 2048 |
+| Tipos de cuantización | no disponible |
+| Idiomas soportados | vietnamita (vi), inglés (en) |
 | Licencia | Apache 2.0 |
 | Formato de pesos | safetensors |
-| Etiquetas de entidad | 7 nucleos (QUESTION_LABEL, STEM, OPTION_LABEL, OPTION_TEXT, STIMULUS, SECTION, EXPLANATION) con esquema BIO |
-| Modelo base | aisingapore/SEA-LION-ModernBERT-300M |
-| Dataset de entrenamiento | daominhwysi/sequence-labelling-vi-exam-v3 |
-| Tamano del repositorio | 45,1 GB |
-| Pipeline | token-classification |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de `SEA-LION-ModernBERT-300M`, un encoder ModernBERT multilingue de 300M de parametros con atencion flash sin padding y contexto maximo de 8192 tokens. Sobre el encoder se anade una cabeza de clasificacion denominada `EnhancedBertForTokenClassification`, que incorpora tres componentes diferenciados: un `SigmoidWeightedLayerPooling` que combina las salidas de cuatro capas mediante compuertas sigmoideas en lugar de un softmax competitivo; una convolucion depthwise 1D con `kernel_size=7` para refinar fronteras locales entre entidades; y Multi-Sample Dropout con tasas `[0.05, 0.10, 0.15, 0.20, 0.25]` para regularizar la cabeza.
+El modelo parte del encoder aisingapore/SEA-LION-ModernBERT-300M, un ModernBERT multilingüe con atención flash sin padding y contexto máximo de 8192 tokens. Sobre él se añade una cabeza de clasificación denominada `EnhancedBertForTokenClassification` que incorpora tres componentes diferenciados: un pooling de capas con compuerta sigmoide sobre 4 capas (`SigmoidWeightedLayerPooling`), que sustituye el pooling softmax habitual por una ponderación independiente por capa; un refinamiento convolucional depthwise 1D con `kernel_size=7` para capturar n-gramas de frontera locales; y multi-sample dropout con tasas `[0.05, 0.10, 0.15, 0.20, 0.25]`. El etiquetado sigue el esquema BIO estándar sobre 7 entidades de examen.
 
-El entrenamiento se realizo sobre el dataset `sequence-labelling-vi-exam-v3`, con ventanas dinamicas multi-escala (768, 1024, 1536 y 2048 tokens) y un `LengthGroupedBatchSampler` para agrupar secuencias de longitud similar y mejorar la eficiencia. El checkpoint publicado corresponde a la epoca 6 de 8. No se especifican en la informacion disponible el numero total de tokens de entrenamiento, la composicion exacta del dataset ni si se aplicaron tecnicas de RLHF o DPO (poco probables en un modelo discriminativo de etiquetado).
-
-La innovacion tecnica mas destacable es la garantia de "Zero Character Mutation": al ser un modelo de etiquetado y no de generacion, la reconstruccion XML envuelve directamente subcadenas del texto de entrada, con un 0% de eliminacion, alteracion o insercion de caracteres. Esto lo hace apto para dominios donde la fidelidad literal del texto es un requisito contractual o regulatorio.
+El ajuste fino se realizó sobre el dataset daominhwysi/sequence-labelling-vi-exam-v3, con entrenamiento multiescala mediante `LengthGroupedBatchSampler` y ventanas de 768, 1024, 1536 y 2048 tokens. El checkpoint publicado corresponde a la época 8 de 8. La evaluación se llevó a cabo sobre un conjunto Gold Benchmark aislado de 51 documentos de examen reales y aproximadamente 458 000 tokens. No se dispone de información sobre el número total de tokens de entrenamiento, la composición exacta del corpus ni el uso de RLHF o DPO, que en un modelo discriminativo de este tipo no resultan aplicables.
 
 ## Capacidades
 
-- Etiquetado de secuencias a nivel de token con esquema BIO sobre siete entidades de examen: `QUESTION_LABEL`, `STEM`, `OPTION_LABEL`, `OPTION_TEXT`, `STIMULUS`, `SECTION` y `EXPLANATION`.
-- Extraccion estructural de examenes vietnamitas de grados 8 a 12 en matematicas, fisica, quimica, biologia, historia, geografia, literatura e ingles.
-- Soporte de preguntas cloze o de relleno, donde `QUESTION_LABEL` precede directamente a `OPTION_LABEL` sin `STEM` explicito.
-- Procesamiento de documentos escaneados y digitales, segun declara el autor.
-- Reconstruccion XML determinista con garantia de cero mutacion de caracteres.
-- Capacidad bilingue vietnamita-ingles, incluyendo textos de comprension lectora en ingles dentro de examenes vietnamitas.
-- Manejo de contexto largo (hasta 8192 tokens en el encoder) para passages de estimulo extensos.
-- No soporta tool calling, function calling, agentes ni razonamiento multi-paso: es un modelo discriminativo, no generativo.
+- Etiquetado de secuencias a nivel de token con 7 entidades de examen: `QUESTION_LABEL`, `STEM`, `OPTION_LABEL`, `OPTION_TEXT`, `STIMULUS`, `SECTION` y `EXPLANATION`.
+- Reconstrucción a XML estructurado envolviendo directamente las subcadenas de entrada, con garantía de mutación de caracteres cero (sin borrado, alteración ni alucinación de texto).
+- Soporte de preguntas cloze o de relleno en las que la etiqueta de pregunta precede directamente a la etiqueta de opción sin enunciado explícito.
+- Procesamiento de exámenes de matemáticas, física, química, biología, historia, geografía, literatura e inglés de los grados 8 a 12.
+- Manejo de texto compartido de comprensión lectora, poemas y pasajes estímulo mediante la entidad `STIMULUS`.
+- Extracción de soluciones, claves de respuesta y baremos de puntuación mediante la entidad `EXPLANATION`.
+- Capacidad bilingüe vietnamita-inglés, incluyendo exámenes de inglés con instrucciones en inglés.
+- No soporta tool calling, function calling, razonamiento multi-paso ni modo thinking: es un modelo discriminativo, no generativo.
+- No dispone de capacidades de visión, audio ni generación de texto libre.
 
 ## Casos de uso
 
-- Digitalizacion de bancos de examenes: el modelo convierte PDFs o escaneos de examenes vietnamitas en XML estructurado con preguntas, opciones y estimulos separados, listo para ingesta en bases de datos o sistemas de gestion de aprendizaje (LMS). La garantia de cero mutacion asegura que el texto original no se altere.
-- Construccion de plataformas de practica adaptativa: al extraer `STEM`, `OPTION_TEXT` y `EXPLANATION` por separado, se pueden generar bancos de preguntas con solucionario y etiquetado por asignatura y dificultad, alimentando motores de recomendacion.
-- Evaluacion automatica y correccion: la separacion limpia entre enunciado y opciones permite mapear respuestas de alumnos a opciones canonicas sin ambiguedad, incluso en examenes con formato cloze.
-- Extraccion de passages de comprension lectora: la entidad `STIMULUS` aísla el texto compartido por varias preguntas, lo que facilita la reutilizacion de passages en nuevos examenes o su indexacion semantica.
-- Migracion de examenes legacy: pipelines que necesitan convertir examenes en papel escaneados a formato digital estructurado, con contexto de hasta 2048 tokens por ventana de entrenamiento para cubrir secciones completas.
-- Analisis curricular y auditoria: la entidad `SECTION` y `EXPLANATION` permite reconstruir la estructura de secciones y soluciones, util para detectar cambios curriculares o auditar la cobertura de temario por asignatura.
-- Preprocesamiento para modelos generativos: el XML estructurado sirve como entrada limpia y determinista a un LLM posterior que genere variantes de preguntas o traducciones, reduciendo el riesgo de propagar errores de extraccion.
+- Digitalización de bancos de preguntas: el modelo convierte exámenes en PDF o texto a XML estructurado preservando íntegramente fórmulas LaTeX y notación matemática, lo que permite indexar y reutilizar preguntas en plataformas de evaluación sin revisión manual carácter a carácter.
+- Construcción de pipelines de calificación automática: al separar `STEM`, `OPTION_TEXT` y `EXPLANATION`, es posible emparejar respuestas de alumnos con claves de corrección y baremos de forma programática, reduciendo el trabajo manual en sistemas de corrección.
+- Extracción de corpus para entrenamiento de LLM educativos: la salida estructurada y sin mutación sirve como fuente de datos limpia para ajustar modelos generativos en dominio educativo vietnamita, evitando el ruido típico de la extracción con OCR y parsers heurísticos.
+- Migración de exámenes en papel a formato digital: con soporte para documentos escaneados, el modelo etiqueta secciones, estímulos y opciones de exámenes históricos, facilitando su incorporación a repositorios digitales de centros educativos.
+- Análisis curricular y estadístico: al etiquetar `SECTION` y `QUESTION_LABEL` de forma consistente, se pueden agregar métricas sobre distribución de dificultad, tipos de pregunta y cobertura temática por asignatura y curso.
+- Normalización de exámenes de inglés con texto compartido: la entidad `STIMULUS` permite aislar pasajes de comprensión lectora y vincularlos a sus preguntas asociadas, algo útil en la generación de materiales de práctica adaptativos.
+- Control de calidad editorial: la garantía de mutación cero permite verificar que el texto reconstruido coincide exactamente con el original, sirviendo como paso de validación en pipelines de publicación de exámenes.
 
 ## Benchmarks y rendimiento
 
-Resultados declarados por el autor en la model card (no verificados de forma independiente), sobre el conjunto de validacion del dataset `daominhwysi/sequence-labelling-vi-exam-v3`. El autor menciona ademas una evaluacion sobre un "Gold Benchmark" de 51 documentos reales y aproximadamente 458k tokens, con los mismos valores.
+Resultados declarados por el autor sobre el conjunto Gold Benchmark de 51 documentos reales (aproximadamente 458 000 tokens), con checkpoint de la época 8 de 8. Ninguno de los valores está verificado de forma independiente.
 
-| Metrica | Valor |
+| Métrica | Valor |
 |---|---|
-| Validation Macro F1 | 86,55% |
-| Validation Precision | 85,84% |
-| Validation Recall | 87,27% |
-| Validation Micro F1 | 86,55% |
+| Validation Macro F1 | 82,93 % |
+| Validation Precision | 79,36 % |
+| Validation Recall | 86,83 % |
+| Validation Micro F1 | 82,93 % |
 
-No se han publicado resultados comparativos con otros modelos de etiquetado de examenes en la informacion disponible.
+No se han publicado resultados comparativos con otros modelos de etiquetado de secuencias en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia en fp32: aproximadamente 1,25 GB solo para pesos (312,8M parametros x 4 bytes), mas activaciones y overhead del tokenizer; en la practica, entre 2 y 4 GB con batches pequenos.
-- En fp16/bf16: aproximadamente 0,63 GB para pesos; cabe holgadamente en cualquier GPU consumer con 8 GB o mas.
-- En cuantizacion int8 (si estuviera disponible, no confirmada): alrededor de 0,31 GB para pesos.
-- GPU recomendadas: cualquier GPU con al menos 8 GB de VRAM para inferencia comoda (RTX 3060, RTX 4060, RTX 4090, A100, H100). Para batches grandes con secuencias de 2048 tokens, se recomienda 16 GB o mas.
-- Cabe en GPU consumer: si, en RTX 3060/4060/4070/4080/4090 y equivalentes.
-- Opciones de despliegue: al ser un modelo de `transformers` con cabeza personalizada (`EnhancedBertForTokenClassification`), requiere cargar codigo propio del repositorio; no es directamente compatible con llama.cpp u Ollama (no es un modelo generativo ni GGUF). Puede servirse con Hugging Face `transformers` + FastAPI/TorchServe, o potencialmente con TGI si se exporta correctamente, aunque no se documenta en la informacion disponible.
-- Latencia y throughput: no disponibles en la informacion proporcionada. Por el tamano del encoder, se espera inferencia en decenas de milisegundos por secuencia de 512 tokens en GPU moderna, pero es una estimacion no confirmada.
+- VRAM estimada para inferencia: con 312,8 millones de parámetros, en precisión fp32 se requieren aproximadamente 1,25 GB de pesos, más activaciones; en fp16 o bf16, alrededor de 0,63 GB. El consumo real depende de la longitud de secuencia, que puede llegar a 8192 tokens.
+- GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM es suficiente para secuencias cortas; para lotes grandes o secuencias de 8192 tokens se recomienda una RTX 3090, RTX 4090, A100 o H100.
+- Cabe en GPU de consumo: sí, en tarjetas como RTX 3060, RTX 4060, RTX 4070 o superiores, incluso con cuantización a 8 bits si fuese necesario.
+- Opciones de despliegue: la model card proporciona código de inferencia basado en `transformers` y `torch` con una clase personalizada `EnhancedBertForTokenClassification`; no se documenta compatibilidad con vLLM, llama.cpp, Ollama ni TGI. La exportación a ONNX o el despliegue con TorchServe requeriría trabajo adicional por la cabeza de clasificación personalizada.
+- Latencia y throughput estimados: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos de benchmarks de modelos comparables en la informacion proporcionada. La comparativa se limita a caracteristicas estructurales frente a alternativas plausibles de la misma categoria (etiquetado de secuencias o extraccion de examenes).
-
-| Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
+| Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| sealior-modernbert-vi-exam-seq-labeling | 312,8M | 8192 (encoder base; entrenado hasta 2048) | Token classification de examenes vietnamitas | Apache 2.0 | Hugging Face |
-| aisingapore/SEA-LION-ModernBERT-300M (base) | ~300M | 8192 | Encoder multilingue (no especializado) | no disponible en esta ficha | Hugging Face |
-| BERT-base multilingue | 178M | 512 | Token classification generico | Apache 2.0 | Hugging Face |
-| XLM-RoBERTa-base | 278M | 512 | Token classification multilingue | MIT | Hugging Face |
+| sealior-modernbert-vi-exam-seq-labeling | 312,8 M | 8192 tokens (encoder) | Etiquetado de secuencias de exámenes vietnamitas | Apache 2.0 | Hugging Face |
+| aisingapore/SEA-LION-ModernBERT-300M (base) | ~300 M | 8192 tokens | Encoder multilingüe de propósito general | no disponible en la información | Hugging Face |
+| Modelos BERT/XLM-R afinados para NER educativo | no disponible | típicamente 512 tokens | Etiquetado de secuencias genérico | variable | Hugging Face |
 
-La ventaja diferencial frente a encoders genericos es la cabeza especializada, el contexto de entrenamiento mas largo y el esquema de entidades especifico de examenes; la desventaja es la ausencia de benchmarks publicos contra alternativas y el reducido numero de descargas (128) que sugiere poca validacion externa.
+La comparación con alternativas específicas de parsing de exámenes vietnamitas no está disponible en la información proporcionada. Frente al modelo base, la diferencia principal es la cabeza de clasificación personalizada y el ajuste fino sobre el esquema de 7 entidades, que no existen en el encoder original.
 
 ## Limitaciones y advertencias
 
-- Sesgos conocidos: no documentados en la informacion disponible; al entrenarse sobre examenes vietnamitas de grados 8 a 12, el rendimiento fuera de ese dominio (universidad, formacion profesional, otros paises) es incierto.
-- Riesgo de alucinacion: bajo en el sentido textual (garantia de cero mutacion de caracteres), pero puede asignar etiquetas erroneas a tokens ambiguos, especialmente en fronteras entre `STEM` y `OPTION_TEXT` o en preguntas cloze mal formateadas.
-- Limitaciones de contexto: aunque el encoder soporta 8192 tokens, el entrenamiento uso ventanas de hasta 2048; secuencias mas largas pueden degradar la calidad.
-- Limitaciones de idioma: solo vietnamita e ingles; no se garantiza comportamiento en otros idiomas.
-- Restricciones de licencia: Apache 2.0 permite uso comercial, pero el modelo base `SEA-LION-ModernBERT-300M` puede tener condiciones adicionales que deben verificarse en su propia model card.
-- Caveat de produccion: la cabeza personalizada requiere cargar codigo del repositorio (`model.module.head`, `model.inference.predict`), lo que anade complejidad de despliegue y riesgo de incompatibilidad con versiones futuras de `transformers`.
-- Los resultados de benchmarks son declarados por el autor y no estan verificados de forma independiente (`verified: false` en la model-index).
-- El repositorio pesa 45,1 GB, desproporcionado para 312,8M de parametros, lo que sugiere la presencia de multiples checkpoints o artefactos adicionales; conviene revisar los archivos antes de descargar.
-- El modelo no es generativo: no puede producir texto nuevo, responder preguntas ni mantener conversaciones.
+- El modelo está especializado en exámenes educativos vietnamitas de grados 8 a 12; su rendimiento fuera de ese dominio (documentos administrativos, textos legales, otros idiomas) no está evaluado y probablemente sea deficiente.
+- Los benchmarks declarados no están verificados de forma independiente (`verified: false` en el model-index) y proceden del propio autor sobre un conjunto de 51 documentos, lo que limita la generalización de las cifras.
+- La precisión del 79,36 % implica una tasa no trivial de falsos positivos en la asignación de entidades; en producción conviene incluir validación posterior o revisión humana en puntos críticos.
+- El recall del 86,83 % indica que aproximadamente una de cada siete entidades podría no detectarse, lo que afecta a la completitud de la extracción en pipelines automáticos.
+- Aunque la garantía de mutación cero evita alucinaciones de contenido, el modelo puede asignar etiquetas incorrectas a fragmentos de texto, produciendo una estructura XML errónea sin alterar el texto subyacente.
+- El repositorio ocupa 66,4 GB, lo que sugiere la presencia de múltiples checkpoints o artefactos adicionales; conviene revisar qué ficheros se descargan antes de integrarlo en un pipeline.
+- La licencia Apache 2.0 permite uso comercial, pero el modelo base y el dataset de entrenamiento pueden tener condiciones adicionales que no se detallan en la información disponible.
+- No se documentan sesgos específicos; al tratarse de un modelo entrenado sobre exámenes vietnamitas, puede reflejar sesgos curriculares o de estilo de redacción propios de las fuentes utilizadas.
+- La clase personalizada `EnhancedBertForTokenClassification` requiere cargar código del repositorio, lo que introduce una dependencia de confianza sobre el autor y complica la portabilidad a otros frameworks de inferencia.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/daominhwysi/sealior-modernbert-vi-exam-seq-labeling
-- Modelo base: https://huggingface.co/aisingapore/SEA-LION-ModernBERT-300M
+- Modelo base SEA-LION-ModernBERT-300M: https://huggingface.co/aisingapore/SEA-LION-ModernBERT-300M
 - Dataset de entrenamiento: https://huggingface.co/datasets/daominhwysi/sequence-labelling-vi-exam-v3
-- Perfil del autor: https://huggingface.co/daominhwysi

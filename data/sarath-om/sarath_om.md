@@ -2,92 +2,94 @@
 
 ## Resumen
 
-Sarath OM es un proyecto de IA conversacional publicado en Hugging Face por el desarrollador Rishabh Srivastava (usuario sarath-om), concebido como punto de entrada al proyecto Sarath OM y a su documentación asociada. El repositorio distribuye el modelo en formato GGUF orientado a su uso local mediante Ollama, y se declara bilingüe en hindi e inglés.
+Sarath OM es un modelo de lenguaje de 3.212.749.888 parámetros (aproximadamente 3,2 mil millones) publicado por el usuario sarath-om en Hugging Face, asociado al proyecto Sarath AI que lidera Rishabh Srivastava. Se distribuye principalmente como pesos en formato GGUF dentro del repositorio, con un tamaño total de 2,0 GB, y está pensado para su ejecución local a través de Ollama. El modelo deriva de un checkpoint previo identificado como `sarath-om/sarath_om-1.0` y se presenta como un modelo conversacional de generación de texto con soporte declarado de herramientas (tool calling).
 
-Se trata de un modelo pequeño: los metadatos de safetensors indican aproximadamente 3.213 millones de parámetros (unos 3,2B), y el repositorio pesa alrededor de 2,0 GB, lo que apunta a una distribución cuantizada en GGUF apta para hardware de consumo. La propia model card del autor es notablemente cauta y advierte de que la arquitectura exacta, el modelo base, la metodología de entrenamiento y el rendimiento medido deben verificarse a partir de los archivos publicados, sin asumir entrenamiento desde cero ni un ajuste fino sobre un dataset concreto.
+La relevancia de esta ficha es limitada desde el punto de vista técnico: la model card del autor no documenta arquitectura, composición del dataset de entrenamiento, método de alineación ni resultados de evaluación reproducibles. La información disponible se reduce a metadatos del repositorio, al recuento de parámetros en safetensors y a las cifras publicadas en la ficha de Ollama (ventana de contexto de 128K tokens y tamaño de aproximadamente 2,0 GB). Todo lo demás debe considerarse no verificado.
 
-Su relevancia actual es limitada: con 286 descargas y 1 like en el momento de redactar esta ficha, es un proyecto experimental de bajo alcance, útil principalmente como ejemplo de integración con Ollama o como base de experimentación local, más que como alternativa contrastada a modelos abiertos consolidados.
+Por tanto, esta ficha refleja exclusivamente lo que puede confirmarse a partir de los metadatos y de la documentación del autor, marcando de forma explícita como "no disponible" cualquier dato que no aparezca en las fuentes. Se recomienda tratar el modelo como un candidato a evaluar en pruebas controladas antes de cualquier uso en producción.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (la model card indica "por verificar") |
-| Parametros totales | 3.212.749.888 (~3,2B, segun metadatos safetensors) |
-| Parametros activos | no disponible (no consta que sea MoE) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | GGUF (cuantizaciones concretas no documentadas) |
-| Idiomas soportados | hindi (hi), ingles (en) |
-| Licencia | MIT |
-| Formato de pesos | GGUF (compatible con endpoints de inferencia); tamano del repo: 2,0 GB |
+| Arquitectura | no disponible (la model card indica "verify from repository configuration") |
+| Parametros totales | 3.212.749.888 (recuento en safetensors) |
+| Parametros activos | no disponible (no se declara que sea MoE) |
+| Longitud de contexto | 128K tokens (según la ficha de Ollama; no verificado en la configuración del repositorio) |
+| Tipos de cuantizacion | no disponible (el repositorio contiene pesos GGUF; no se detallan los niveles) |
+| Idiomas soportados | hindi (hi) e inglés (en) |
+| Licencia | MIT (según metadatos del repositorio; la model card remite a verificar el archivo LICENSE y los términos upstream) |
+| Formato de pesos | GGUF (tags del repositorio); el recuento de parámetros procede de safetensors |
 
 ## Arquitectura y entrenamiento
 
-La model card no documenta la arquitectura del modelo: ni la familia de transformer, ni el modelo base del que pudiera derivar, ni el enfoque de entrenamiento o ajuste fino. El propio README del autor insiste en que estos campos deben completarse verificando los archivos del repositorio y aclara que no debe asumirse que el modelo fue entrenado desde cero ni ajustado sobre un dataset particular. Los metadatos del repositorio referencian un modelo base denominado `sarath-om/sarath_om-1.0` y un dataset propio (`sarath-om/Sarath-om`), pero no hay documentacion sobre su composicion, tamano ni proceso de creacion.
+No se dispone de información verificada sobre la arquitectura interna del modelo. La model card no especifica si se trata de un transformer denso, un modelo MoE, una arquitectura híbrida o basada en SSM, ni detalla la configuración de capas, dimensiones ocultas, cabezas de atención o tipo de tokenizador. El recuento de 3.212.749.888 parámetros procede de los metadatos de safetensors del repositorio, no de una declaración del autor.
 
-En cuanto a innovaciones tecnicas (decodificacion especulativa, atencion lineal, RLHF/DPO, etc.), no hay informacion disponible. La unica certeza razonable es que se trata de un modelo de ~3,2B parametros distribuido en GGUF para inferencia local, un tamano tipico de modelos derivados o ajustados de familias abiertas existentes, aunque esta hipotesis no esta confirmada por el autor.
+Tampoco se documentan los datos de entrenamiento: no hay cifras de tokens procesados, composición del corpus, uso de RLHF, DPO u otras técnicas de alineación, ni innovaciones técnicas como decodificación especulativa o atención lineal. El modelo se presenta como derivado de `sarath-om/sarath_om-1.0`, pero la relación exacta entre ambos checkpoints (fine-tuning, destilación, reempaquetado a GGUF) no está descrita. La model card indica explícitamente que los detalles técnicos deben verificarse contra los archivos del repositorio antes de publicarse.
 
 ## Capacidades
 
-- Generacion de texto conversacional: el pipeline etiquetado es "conversational", orientado a dialogo en hindi e ingles.
-- Interaccion en lenguaje natural: la model card menciona procesamiento de informacion en lenguaje natural como area de evaluacion potencial.
-- Soporte de tool calling / function calling: no disponible.
-- Soporte de agentes o razonamiento multi-paso: no disponible.
-- Capacidades multimodales (vision, audio): no disponibles; no hay indicios de soporte multimodal.
-- Modo de razonamiento extendido (thinking mode): no disponible.
-- La propia model card advierte que las areas listadas son usos potenciales a evaluar y no una garantia de que el modelo actual las soporte.
+- Generación de texto conversacional en hindi e inglés, según los idiomas declarados en los metadatos.
+- Soporte de herramientas (tool calling) anunciado en la ficha de Ollama y en las etiquetas del repositorio, sin especificación del protocolo ni del formato de llamada.
+- Integración con endpoints compatibles, según la etiqueta `endpoints_compatible` del repositorio.
+- Ejecución local mediante Ollama con el identificador `sarath-om/sarath-om`.
+- Capacidad de razonamiento multi-paso: no documentada de forma explícita; la model card solo menciona "tool-assisted workflows" como área de evaluación potencial.
+- Visión: no listada para esta variante.
+- Audio: no listado.
+- Modo thinking explícito: no documentado.
 
 ## Casos de uso
 
-- Experimentacion local con Ollama: el modelo se distribuye en GGUF y puede cargarse con `ollama pull sarath-om/sarath-om`, lo que lo hace adecuado como banco de pruebas para aprender a desplegar modelos LLM en local sin coste de API.
-- Prototipado de chatbots basicos: al estar etiquetado como conversacional, puede servir para construir prototipos de dialogo sencillos en hindi e ingles, previa validacion de la calidad de sus respuestas.
-- Proyectos educativos y de investigacion: su tamano reducido (~3,2B) y licencia MIT lo hacen manejable para aulas y laboratorios que necesiten un modelo ligero para estudiar inferencia, cuantizacion y ajuste fino.
-- Integracion en flujos de desarrollo locales: puede acoplarse a herramientas que consuman modelos Ollama (editores, scripts CLI) para tareas de asistencia ligera, siempre verificando la calidad de salida caso por caso.
-- Procesamiento de texto en hindi: al declarar hindi como idioma, puede explorarse para tareas de generacion o resumen en ese idioma, aunque no hay evaluaciones publicadas que respalden su calidad.
-- Base para fine-tuning posterior: un modelo de 3,2B parametros con licencia MIT es un candidato razonable para ajustes finos experimentales con LoRA en hardware de consumo, si se confirma la arquitectura subyacente y su compatibilidad con las herramientas habituales.
+- Asistente conversacional local en hindi e inglés: el modelo puede desplegarse con Ollama en equipos de desarrollo para prototipar chatbots bilingües sin depender de servicios en la nube, gracias a su tamaño de aproximadamente 2,0 GB en GGUF.
+- Pruebas de integración de tool calling: al anunciar soporte de herramientas, sirve para validar pipelines de function calling en aplicaciones propias, siempre validando nombres y argumentos antes de ejecutar acciones.
+- Evaluación comparativa de modelos pequeños: con 3,2 mil millones de parámetros, es un candidato para bancos de pruebas internos frente a otros modelos de su rango en tareas de generación de texto.
+- Generación de texto asistida en entornos con recursos limitados: su tamaño reducido permite ejecución en CPU o GPU de gama media para tareas de redacción, resumen o reformulación.
+- Desarrollo de prototipos con endpoints compatibles: la etiqueta `endpoints_compatible` sugiere su uso tras APIs compatibles con OpenAI, útil para integrar en aplicaciones existentes durante fases de prueba.
+- Docencia y experimentación: adecuado para demostrar flujos de descarga, cuantización y despliegue local con Hugging Face CLI y Ollama en cursos o talleres.
+- Filtrado y clasificación de texto bilingüe: uso como componente en pipelines de procesamiento de lenguaje natural en hindi e inglés, con revisión humana de los resultados.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card del autor reconoce explicitamente que no incluye resultados de evaluacion verificados y que "los resultados de evaluacion no estan documentados todavia". No existen datos de MMLU, HumanEval, GSM8K ni de ninguna otra metrica, por lo que no es posible comparar su rendimiento con otros modelos.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card afirma explícitamente que no se incluyen puntuaciones verificadas de forma independiente y que cualquier evaluación reproducible debería documentar conjuntos de datos, métricas, hardware, revisión del modelo y casos de fallo.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible de forma exacta; con ~3,2B parametros en GGUF, una variante cuantizada a 4 bits ocuparia en torno a 2 GB de pesos, coherente con los 2,0 GB del repositorio, mas overhead de contexto (estimacion orientativa, no dato oficial).
-- GPU recomendadas: no se especifican; por tamano, cualquier GPU de consumo con 4-6 GB de VRAM deberia ser suficiente para las variantes mas cuantizadas (estimacion orientativa).
-- Consumer GPU: es plausible que funcione en GPUs como una RTX 3060 de 6 GB o superior, e incluso parcialmente en CPU dada la eficiencia de llama.cpp/Ollama con modelos de este tamano (estimacion, no verificada por el autor).
-- Opciones de despliegue: Ollama es el canal documentado oficialmente (`ollama pull sarath-om/sarath-om` y `ollama run sarath-om/sarath-om`). La compatibilidad con llama.cpp es probable por el formato GGUF pero no esta documentada. No hay evidencia de que el modelo se cargue directamente con Transformers; la propia model card pide no asumirlo sin verificar los archivos del repositorio.
+- VRAM estimada para inferencia: no disponible de forma oficial. Como referencia orientativa basada en el recuento de parámetros (3,2 mil millones), una cuantización de 4 bits requeriría del orden de 2-3 GB de VRAM, una de 8 bits en torno a 3,5-4 GB y precisión completa (FP16) alrededor de 6,5-7 GB; estas cifras son estimaciones de cálculo, no datos publicados por el autor.
+- GPU recomendadas: no disponibles. Por tamaño, el modelo podría ejecutarse en GPUs de consumo como RTX 3060, RTX 4060 o superiores con cuantización, pero no hay validación oficial.
+- Cabe en GPU de consumo: probablemente sí con cuantización GGUF, aunque no está confirmado por el autor.
+- Opciones de despliegue: Ollama (identificador `sarath-om/sarath-om`) y descarga mediante Hugging Face CLI. No se documentan integraciones con vLLM, TGI, llama.cpp directo ni Transformers.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Disponibilidad |
-|---|---|---|---|---|
-| Sarath OM | ~3,2B | no disponible | MIT | GGUF / Ollama |
-| Llama 3.2 3B Instruct | 3,2B | 128K tokens | Llama 3.2 Community License | GGUF, safetensors, Ollama, vLLM |
-| Qwen2.5 3B Instruct | 3,2B | 32K tokens (128K con YaRN) | Apache 2.0 | GGUF, safetensors, Ollama, vLLM |
-| Phi-3.5 mini | 3,8B | 128K tokens | MIT | GGUF, safetensors, Ollama, vLLM |
+No se dispone de datos de rendimiento verificados de Sarath OM, por lo que la comparación se limita a características estructurales. Se incluyen alternativas de tamaño comparable ampliamente documentadas.
 
-Frente a estas alternativas, Sarath OM carece de benchmarks publicados, de documentacion de contexto y de ecosistema de despliegue verificado, mientras que los modelos comparables ofrecen ventanas de contexto grandes, tool calling y evaluaciones publicadas. Su ventaja diferencial seria la licencia MIT (compartida con Phi-3.5 mini) y el enfoque bilingue hindi-ingles, aunque sin datos de evaluacion que lo respalden.
+| Modelo | Parametros | Contexto | Licencia | Formato | Benchmarks publicos |
+|---|---|---|---|---|---|
+| Sarath OM | 3,21B | 128K (según Ollama, no verificado) | MIT (según metadatos) | GGUF | No disponibles |
+| Llama 3.2 3B | 3,21B | 128K | Llama 3.2 Community License | Safetensors, GGUF | Sí, publicados por Meta |
+| Qwen2.5 3B | 3,09B | 32K (128K en variantes extendidas) | Apache 2.0 (mayoría de variantes) | Safetensors, GGUF | Sí, publicados por Alibaba |
+| Phi-3.5-mini | 3,8B | 128K | MIT | Safetensors, GGUF | Sí, publicados por Microsoft |
+
+La comparación de rendimiento con estas alternativas no puede establecerse con los datos disponibles. La principal diferencia documental es que Sarath OM carece de evaluación pública reproducible, mientras que los modelos citados cuentan con informes técnicos y resultados verificables.
 
 ## Limitaciones y advertencias
 
-- Documentacion incompleta: arquitectura, modelo base, longitud de contexto, cuantizaciones y metodo de entrenamiento no estan documentados; la propia model card del autor pide verificarlos antes de cualquier uso serio.
-- Ausencia total de benchmarks: no hay forma de contrastar la calidad del modelo frente a alternativas antes de probarlo.
-- Riesgo de alucinacion: la model card advierte de que las salidas pueden ser incorrectas, incompletas o inconsistentes, y no debe ser la unica base para decisiones medicas, legales o financieras.
-- Capacidades no garantizadas: los usos listados por el autor son potenciales, no confirmados; hay que probar el modelo con prompts representativos antes de adoptarlo.
-- Sesgos: no se ha evaluado; al incluir hindi e ingles, pueden existir sesgos linguisticos y culturales sin caracterizar.
-- Idiomas: soporte declarado solo para hindi e ingles; el rendimiento en castellano es desconocido y probablemente no haya sido objetivo del entrenamiento.
-- Licencia: MIT permite uso comercial, pero la model card recomienda confirmar la licencia del repositorio y los derechos de distribucion aplicables, especialmente si el modelo deriva de otro con licencia distinta.
-- Advertencia practica de Ollama: si el identificador `sarath-om/sarath-om` no esta publicado bajo ese nombre exacto, la descarga fallara; conviene confirmar la pagina del modelo.
-- Para produccion: no hay evidencia suficiente (evaluaciones, pruebas de robustez, auditorias) para recomendar su uso en entornos productivos; aplicarle supervision humana y salvaguardas es imprescindible.
+- Ausencia total de documentación técnica verificable: arquitectura, datos de entrenamiento y método de alineación no están descritos en la model card.
+- Sin benchmarks publicados ni evaluación independiente; no es posible estimar su calidad relativa frente a alternativas del mismo tamaño.
+- Riesgo de alucinación: la propia model card advierte de que las salidas pueden ser inexactas, incompletas o inconsistentes.
+- Idiomas limitados a hindi e inglés según los metadatos; el rendimiento en castellano no está documentado y no debería asumirse.
+- Tool calling anunciado pero no especificado: deben validarse nombres y argumentos de las herramientas en la aplicación antes de ejecutar cualquier acción.
+- Discrepancia entre la licencia MIT declarada en los metadatos y la advertencia de la model card de verificar el archivo LICENSE y los términos upstream antes de redistribuir o usar comercialmente.
+- El contexto de 128K procede de la ficha de Ollama y no está confirmado en la configuración del repositorio; conviene verificarlo antes de diseñar aplicaciones que dependan de ventanas largas.
+- No debe usarse como única base para decisiones médicas, legales, financieras o de alto impacto.
+- El proyecto parece de alcance reducido (476 descargas y 1 like en el momento de la consulta), con escasa validación por parte de la comunidad.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/sarath-om/sarath_om
-- Pagina de Ollama: https://ollama.com/sarath-om/sarath-om
+- Modelo en Hugging Face: https://huggingface.co/sarath-om/sarath_om
 - Perfil del autor en Hugging Face: https://huggingface.co/sarath-om
+- Listado en Ollama: https://ollama.com/sarath-om/sarath-om
 - Sitio web oficial: https://sarath.openflip.in/
-- GitHub: https://github.com/Sarath-Om
-- LinkedIn: https://www.linkedin.com/company/sarath-ai
-- Dataset asociado: https://huggingface.co/datasets/sarath-om/Sarath-om (referenciado en la model card)
-- Paper: no disponible
+- GitHub del proyecto: https://github.com/Sarath-Om
+- LinkedIn de Sarath AI: https://www.linkedin.com/company/sarath-ai

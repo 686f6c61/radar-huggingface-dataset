@@ -2,87 +2,88 @@
 
 ## Resumen
 
-KODA-35B-GGUF es la versión cuantizada en formato GGUF del modelo KODA-35B, publicado originalmente por Baidu-Baige. El trabajo de cuantización lo realiza mradermacher, un autor habitual en la comunidad de Hugging Face especializado en generar versiones GGUF de modelos recientes. El repositorio contiene pesos estáticos en múltiples niveles de cuantización (desde Q2_K hasta F16, incluyendo variantes IQ), lo que permite ejecutar el modelo en llama.cpp y herramientas compatibles con GGUF.
+KODA-35B-GGUF es la distribucion en formato GGUF del modelo KODA-35B desarrollado por Baidu-Baige, publicada por el usuario mradermacher. Se trata de un modelo de lenguaje de aproximadamente 34.660 millones de parametros (34,66B) orientado a tareas de codigo y conversacion, segun los tags de la model card (`code`, `fine-tuned`, `conversational`). La version original esta disponible en transformers, y esta publicacion ofrece los pesos cuantizados listos para su uso con llama.cpp y ecosistemas compatibles con GGUF.
 
-El modelo base cuenta con 34.660.610.688 parámetros (aproximadamente 34,7 mil millones), según los datos de safetensors del repositorio. Se trata, por tanto, de un modelo de escala media-grande orientado a generación de texto conversacional, aunque la model card del repositorio GGUF no aporta detalles sobre arquitectura, contexto, datos de entrenamiento ni licencia.
+La relevancia de esta ficha radica en que el repositorio GGUF permite ejecutar un modelo de ~35B en hardware de consumo mediante cuantizaciones que van desde Q2_K (13,0 GB) hasta Q8_0 (37,0 GB), incluyendo ademas dos ficheros `mmproj` (multi-modal supplement) que indican soporte de entrada multimodal en el modelo base. La licencia Apache 2.0 facilita su adopcion tanto en entornos de investigacion como comerciales.
 
-La relevancia de esta publicación es práctica: facilita el despliegue local del modelo KODA-35B en hardware de consumo o en servidores sin necesidad de infraestructura de GPU de gran escala, gracias a las cuantizaciones de 2 a 8 bits. No obstante, la información técnica disponible en el repositorio es muy limitada y muchos datos deben consultarse en el modelo original.
+No obstante, la informacion publicada es limitada: no se detallan la longitud de contexto, la composicion del dataset de entrenamiento, los idiomas soportados ni resultados de benchmarks. Esta ficha refleja exclusivamente los datos disponibles y marca explicitamente como "no disponible" todo aquello que no se ha publicado.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible |
-| Parámetros totales | 34.660.610.688 (~34,7 B) |
-| Parámetros activos | no disponible |
+| Arquitectura | no disponible (modelo transformer de la familia KODA-35B; detalles no publicados) |
+| Parametros totales | 34.660.610.688 (~34,66B) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantización | F16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q4_K_M, Q4_K_S, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K, IQ4_XS |
-| Idiomas soportados | no disponible |
-| Licencia | no disponible |
-| Formato de pesos | GGUF (safetensors en el modelo base) |
+| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, mmproj-Q8_0, mmproj-f16 |
+| Idiomas soportados | en (segun la model card) |
+| Licencia | apache-2.0 |
+| Formato de pesos | GGUF (cuantizaciones estaticas); modelo base en transformers/safetensors |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información sobre la arquitectura del modelo base KODA-35B en la información proporcionada. La model card del repositorio GGUF se limita a indicar que se trata de cuantizaciones estáticas del modelo `Baidu-Baige/KODA-35B`, con `convert_type: hf` y `quantize_version: 2`, lo que sugiere una conversión desde pesos Hugging Face (probablemente safetensors) mediante la herramienta de cuantización de llama.cpp.
+No se ha publicado informacion detallada sobre la arquitectura interna del modelo base Baidu-Baige/KODA-35B en la informacion disponible. Los tags del repositorio indican `transformers`, `gguf`, `gpu-kernels`, `cuda`, `code`, `fine-tuned` y `conversational`, lo que sugiere un modelo transformer afinado para codigo y dialogo. El recuento de parametros (34,66B) corresponde a un modelo denso de gran tamano, sin indicios de arquitectura MoE.
 
-Tampoco se detallan los datos de entrenamiento (número de tokens, composición del dataset, uso de RLHF/DPO) ni innovaciones técnicas como decodificación especulativa o atención lineal. Para obtener esta información sería necesario consultar la model card del modelo original en `Baidu-Baige/KODA-35B`, que no forma parte de la información proporcionada.
+Respecto al entrenamiento, no se especifican el numero de tokens, la composicion del dataset, ni si se aplicaron tecnicas de RLHF o DPO. La presencia de ficheros `mmproj` (multi-modal supplement) en la publicacion GGUF sugiere que el modelo base incorpora capacidad de proyeccion multimodal (vision-lenguaje), aunque no se detalla el alcance ni el codificador visual empleado. Tampoco se documentan innovaciones tecnicas como decodificacion especulativa o atencion lineal.
 
 ## Capacidades
 
-- Generación de texto conversacional: el tag `conversational` del repositorio indica que el modelo está orientado a diálogo e instrucciones.
-- Compatibilidad con endpoints: el tag `endpoints_compatible` sugiere que puede servirse mediante la infraestructura de Inference Endpoints de Hugging Face.
-- Ejecución local en llama.cpp: al estar en formato GGUF, es compatible con llama.cpp y con las herramientas que lo integran (Ollama, LM Studio, text-generation-webui, entre otras).
-- Capacidades multilingües: no disponible.
-- Tool calling / function calling: no disponible.
-- Razonamiento multi-paso y agentes: no disponible.
-- Capacidades especiales (visión, audio, thinking mode): no disponible.
+- Generacion de texto y conversacion multi-turno (tag `conversational`).
+- Generacion y asistencia en codigo (tag `code`, `fine-tuned`).
+- Entrada multimodal: la presencia de ficheros `mmproj-Q8_0` y `mmproj-f16` indica soporte de proyeccion vision-lenguaje en el modelo base.
+- Compatibilidad con endpoints (`endpoints_compatible` segun tags).
+- Capacidades de razonamiento, matematicas, tool calling o agentes: no documentadas en la informacion disponible.
+- Capacidades multilingues: la model card solo declara `en`; no se confirman otros idiomas.
 
 ## Casos de uso
 
-- Despliegue local en estación de trabajo: con la cuantización Q4_K_M (aproximadamente 20 GB), el modelo puede ejecutarse en una GPU de consumo de gama alta con 24 GB de VRAM, como la RTX 4090, o en CPU con suficiente RAM. Adecuado para prototipado y pruebas sin depender de la nube.
-- Chat conversacional autoalojado: el tag `conversational` y el formato GGUF permiten montar un asistente de diálogo en local mediante llama.cpp u Ollama, manteniendo los datos dentro de la infraestructura propia.
-- Inferencia en servidores sin GPU dedicada: las cuantizaciones Q2_K y Q3_K_S reducen el peso a aproximadamente 11-15 GB, lo que permite ejecución en CPU con 16-32 GB de RAM, útil para entornos con recursos limitados.
-- Evaluación comparativa de cuantizaciones: el repositorio ofrece 12 variantes de cuantización, lo que facilita medir el impacto de la compresión en calidad y velocidad para elegir el equilibrio adecuado en producción.
-- Integración en pipelines de generación de texto: al ser compatible con la API de llama.cpp y con endpoints, puede integrarse como servicio de generación en aplicaciones backend existentes.
-- Pruebas de concepto en investigación: para investigadores que necesiten un modelo de ~35 B en local sin acceso a clústeres de GPU, las versiones Q4/Q5 permiten experimentar con un modelo de esta escala en hardware asequible.
+- Asistente de programacion en local: con la cuantizacion Q4_K_M (21,3 GB) el modelo puede ejecutarse en una GPU de 24 GB y emplearse como asistente de codigo en el IDE mediante llama.cpp o servidores compatibles, sin depender de APIs externas.
+- Generacion de codigo en pipelines de CI/CD: el modelo puede integrarse en flujos automatizados de revision y generacion de parches gracias a su naturaleza afinada para codigo y su licencia Apache 2.0, que permite uso comercial.
+- Chat conversacional autoalojado: la variante Q5_K_M (24,8 GB) permite desplegar un asistente conversacional en infraestructura propia para equipos que requieren confidencialidad de datos.
+- Procesamiento de documentacion tecnica: con las cuantizaciones Q6_K o Q8_0 (28,6 GB y 37,0 GB respectivamente) se obtiene la maxima fidelidad para tareas de resumen y extraccion sobre documentacion de ingenieria.
+- Analisis de capturas o diagramas tecnicos: los ficheros `mmproj` habilitan el uso del modelo como modelo vision-lenguaje para interpretar imagenes junto a texto, por ejemplo diagramas de arquitectura o capturas de errores.
+- Despliegue en hardware de consumo: la variante Q2_K (13,0 GB) permite ejecutar el modelo en GPUs de 16 GB o en configuraciones con RAM suficiente, habilitando pruebas y prototipado en estaciones de trabajo modestas.
+- Experimentacion e investigacion: al ser una cuantizacion GGUF de un modelo de 35B con licencia permisiva, resulta util para estudiar el impacto de la cuantizacion en la calidad de salida en tareas de codigo.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia (pesos, sin contar overhead de contexto):
-  - F16: ~69 GB (no viable en GPU de consumo).
-  - Q8_0: ~37 GB.
-  - Q6_K: ~28 GB.
-  - Q5_K_M: ~24 GB.
-  - Q4_K_M: ~21 GB.
-  - Q3_K_M: ~16 GB.
-  - Q2_K: ~12 GB.
-- GPU recomendadas:
-  - F16/Q8_0: A100 80 GB, H100 80 GB o múltiples GPU.
-  - Q6_K/Q5_K_M: A100 40 GB, RTX A6000 48 GB, o dos GPU de 24 GB.
-  - Q4_K_M: RTX 4090 24 GB, RTX 3090 24 GB.
-  - Q3_K_M y menores: GPU de 16 GB (RTX 4080, RTX 4060 Ti 16 GB) o ejecución parcial en CPU.
-- ¿Cabe en GPU de consumo? Sí, en cuantizaciones Q4_K_M y menores en GPU de 24 GB; Q3 y Q2 en GPU de 16 GB o mediante offload a CPU.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, text-generation-webui, y servidores compatibles con GGUF. El tag `endpoints_compatible` indica soporte para Hugging Face Inference Endpoints.
-- Latencia y throughput: no disponible.
+- VRAM estimada segun cuantizacion (tamano de fichero, sin overhead de contexto): Q2_K 13,0 GB; Q3_K_S 15,3 GB; Q3_K_M 16,9 GB; Q3_K_L 18,2 GB; IQ4_XS 19,0 GB; Q4_K_S 20,0 GB; Q4_K_M 21,3 GB; Q5_K_S 24,1 GB; Q5_K_M 24,8 GB; Q6_K 28,6 GB; Q8_0 37,0 GB. A estos valores hay que sumar la VRAM del contexto KV y los buffers de ejecucion.
+- GPUs recomendadas: RTX 4090 (24 GB) para Q4_K_M o Q5_K_S; A100 40 GB o H100 para Q6_K y Q8_0; RTX 3090 (24 GB) para Q4_K_M.
+- Cabe en GPU de consumo: si, en RTX 3090/4090 con cuantizaciones Q4 o Q5; en GPUs de 16 GB solo con Q2_K o Q3_K_S y contexto reducido.
+- Opciones de despliegue: llama.cpp, Ollama, y servidores compatibles con GGUF (por ejemplo, llama-cpp-python o servidores de inferencia que acepten GGUF). La model card referencia los README de TheBloke para el uso de ficheros GGUF multiparte.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos de rendimiento del modelo base ni de información suficiente para establecer una comparativa rigurosa con alternativas de la misma categoría. Se indica "no disponible".
+No se dispone de datos de rendimiento ni de especificaciones completas (contexto, benchmarks) del modelo base en la informacion proporcionada, por lo que no es posible establecer una comparativa cuantitativa fiable con alternativas de la misma categoria. A modo orientativo, el modelo se situa en la franja de ~35B parametros densos, donde compiten modelos como Qwen2.5-32B o Gemma-2-27B, pero no se dispone de datos que permitan comparar parametros activos, contexto, rendimiento ni calidad de forma verificable.
+
+| Modelo | Parametros | Contexto | Licencia | Formato GGUF disponible |
+|---|---|---|---|---|
+| KODA-35B (este) | ~34,66B | no disponible | Apache 2.0 | si (esta publicacion) |
+| Alternativas de ~30-35B | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
 
-- La licencia no está especificada en el repositorio GGUF; es imprescindible consultar la licencia del modelo original `Baidu-Baige/KODA-35B` antes de cualquier uso comercial.
-- No se dispone de información sobre sesgos, riesgo de alucinación ni limitaciones idiomáticas del modelo base.
-- Las cuantizaciones de baja precisión (Q2_K, Q3_K_S) pueden degradar notablemente la calidad de las respuestas; para producción se recomienda Q4_K_M o superior.
-- El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, por lo que no hay validación comunitaria de la calidad de las cuantizaciones.
-- La fecha de creación del repositorio (2026-11-19) es posterior a la fecha habitual de referencia; conviene verificar la integridad y procedencia de los pesos.
-- No hay información sobre el contexto máximo soportado, lo que impide planificar tareas de contexto largo con garantías.
+- Informacion incompleta: no se publican contexto, dataset de entrenamiento, idiomas completos ni benchmarks, lo que dificulta evaluar su idoneidad en produccion.
+- Idiomas: la model card solo declara ingles (`en`); el rendimiento en castellano no esta documentado.
+- Riesgo de alucinacion: inherente a los modelos de lenguaje; no se han publicado evaluaciones de factualidad.
+- Sesgos: no se documentan analisis de sesgos ni medidas de mitigacion.
+- Cuantizacion: las cuantizaciones bajas (Q2_K, Q3_K) degradan la calidad; para tareas de codigo se recomienda Q4_K_M o superior.
+- Multimodalidad: los ficheros `mmproj` indican soporte de proyeccion multimodal, pero no se detalla el codificador ni la calidad de la capacidad vision.
+- Licencia: Apache 2.0 permite uso comercial, pero conviene verificar las condiciones del modelo base Baidu-Baige/KODA-35B en su repositorio original.
+- Repositorio de gran tamano (238,6 GB): requiere descarga selectiva del fichero de cuantizacion deseado.
 
 ## Enlaces
 
 - Repositorio GGUF: https://huggingface.co/mradermacher/KODA-35B-GGUF
 - Modelo base: https://huggingface.co/Baidu-Baige/KODA-35B
+- Pagina de descargas del autor: https://hf.tst.eu/model#KODA-35B-GGUF
+- Solicitudes de cuantizacion: https://huggingface.co/mradermacher/model_requests
+- Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Grafica de calidad de cuantizaciones: https://www.nethype.de/huggingface_embed/quantpplgraph.png
+- Notas sobre cuantizaciones (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9

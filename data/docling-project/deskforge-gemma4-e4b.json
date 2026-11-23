@@ -54,31 +54,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Docling — Turn complex documents into structured data your AI can use",
-      "url": "https://docling.ai/",
-      "snippet": "Docling is open-source document intelligence. Preserve layout, reading order, tables, formulas, pictures and provenance in one …"
-    },
-    {
-      "title": "GitHub - docling-project/docling: Get your documents ready for gen AI",
-      "url": "https://github.com/docling-project/docling",
-      "snippet": "What is Docling ? Docling simplifies document processing by parsing diverse formats — including advanced PDF understanding — …"
-    },
-    {
-      "title": "Docling Guides, Tools & Practical Reference | Docling.org",
-      "url": "https://docling.org/",
-      "snippet": "Docling is an open-source document conversion and layout analysis engine created by IBM Research. It parses PDFs, Office files …"
-    },
-    {
-      "title": "Docling - Advanced Document Parsing & OCR Tool",
-      "url": "https://www.docling.cloud/",
-      "snippet": "Docling is a powerful AI-powered document parsing tool that converts PDF, DOCX, PPTX, images and audio to structured text with …"
-    },
-    {
-      "title": "docling · PyPI",
-      "url": "https://pypi.org/project/docling/",
-      "snippet": "Jul 15, 2024 · What is Docling ? Docling simplifies document processing by parsing diverse formats — including advanced PDF …"
-    }
-  ]
+  "sources": []
 }

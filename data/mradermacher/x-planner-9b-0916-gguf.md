@@ -2,110 +2,97 @@
 
 ## Resumen
 
-X-Planner-9B-0916-GGUF es un repositorio de cuantizaciones en formato GGUF publicado por el usuario mradermacher a partir del modelo X-Planner-9B-0916, cuyo repositorio original pertenece a la organización x-square-robot. No se trata, por tanto, de un modelo entrenado desde cero, sino de una conversión de pesos a GGUF y su posterior cuantización en multiples niveles de precision, pensada para su ejecucion en llama.cpp y en herramientas que consumen este formato (Ollama, LM Studio, text-generation-webui, entre otras).
+X-Planner-9B-0916-GGUF es la versión cuantizada en formato GGUF del modelo X-Planner-9B-0916, desarrollado originalmente por x-square-robot. Se trata de un modelo de lenguaje especializado en robótica y IA encarnada (embodied AI), concretamente orientado a la planificación de tareas (task planning) en entornos robóticos. La cuantización ha sido realizada por mradermacher, un conocido creador de versiones GGUF de la comunidad, lo que permite ejecutar el modelo en hardware de consumo mediante llama.cpp y herramientas compatibles.
 
-El dato objetivo disponible es el numero de parametros del modelo convertido: 8.953.803.264 (aproximadamente 8,95 mil millones), lo que situa al modelo en la categoria de 9B. El repositorio ocupa 49,8 GB en total, un tamano coherente con la publicacion simultanea de una version F16 y de hasta once variantes cuantizadas distintas, que van desde Q2_K hasta Q8_0. La model card del autor es puramente tecnica: solo indica la procedencia de los pesos, el tipo de conversion (hf) y la lista de cuantizaciones generadas.
+El modelo base cuenta con 8.953.803.264 parámetros (aproximadamente 9B) y está construido sobre la arquitectura Qwen3.5, según las etiquetas del repositorio. Está diseñado para traducir instrucciones en lenguaje natural en planes de acción ejecutables por robots, lo que lo sitúa en la intersección entre los modelos de lenguaje y los sistemas robóticos. Soporta los idiomas inglés y chino.
 
-La relevancia de esta ficha es fundamentalmente practica: permite saber que existe una via de despliegue local para el modelo base en GPU de consumo, pero tambien deja constancia de que la informacion publica sobre arquitectura, entrenamiento, licencia, idiomas y rendimiento es practicamente inexistente en el momento de redactar este documento. Cualquier evaluacion de capacidades deberia hacerse contra la model card del modelo original, no contra este repositorio de cuantizaciones.
+La relevancia de esta ficha radica en que ofrece una vía práctica para desplegar un modelo de planificación robótica en local, sin depender de infraestructura en la nube. Al estar disponible en múltiples cuantizaciones (desde Q2_K hasta f16), permite ajustar el equilibrio entre calidad y requisitos de memoria según el hardware disponible. La licencia Apache 2.0 facilita su uso comercial y su integración en proyectos de investigación y producción.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible |
-| Parametros totales | 8.953.803.264 (8,95B) |
-| Parametros activos | no aplica (no hay indicios de que sea MoE) |
+| Arquitectura | Transformer (basada en Qwen3.5, según etiquetas del repositorio) |
+| Parametros totales | 8.953.803.264 (~9B) |
+| Parametros activos | no disponible (no es MoE según la información disponible) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | F16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q4_K_M, Q4_K_S, IQ4_XS, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K |
-| Idiomas soportados | no disponible |
-| Licencia | no disponible |
-| Formato de pesos | GGUF (cuantizaciones estaticas derivadas de safetensors) |
-| Modelo base | x-square-robot/X-Planner-9B-0916 |
-| Tamano del repositorio | 49,8 GB |
-| Etiquetas declaradas | gguf, endpoints_compatible, conversational, region:us |
-| Fecha de creacion | 2026-09-17 |
-| Ultima actualizacion | 2026-09-17 |
+| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, f16; además mmproj-Q8_0 y mmproj-f16 (suplemento multimodal) |
+| Idiomas soportados | inglés (en), chino (zh) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (safetensors en el modelo base) |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion sobre la arquitectura del modelo base en la documentacion proporcionada. El unico dato estructural verificable es el numero de parametros (8.953.803.264) y el hecho de que los pesos fueron convertidos desde el formato original en Hugging Face (campo `convert_type: hf`) a GGUF con `quantize_version: 2`, lo que implica una conversion estandar de tensores sin cambios en la topologia de la red. No hay informacion publica en este repositorio sobre si se trata de un transformer denso, un modelo de mezcla de expertos, una arquitectura hibrida o un modelo con atencion lineal.
+La información disponible indica que el modelo base se apoya en la arquitectura Qwen3.5, un transformer decoder-only. El repositorio incluye archivos mmproj (multi-modal projection), lo que sugiere que el modelo incorpora capacidades multimodales, probablemente para procesar entradas visuales junto con texto, algo coherente con su orientación a robótica y planificación de tareas. No se dispone de detalles sobre el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas de RLHF o DPO.
 
-Tampoco se documenta en este repositorio el proceso de entrenamiento: no hay datos sobre numero de tokens, composicion del dataset, fases de ajuste (SFT, RLHF, DPO) ni innovaciones tecnicas asociadas. El unico indicio funcional es la etiqueta `conversational`, que sugiere que el modelo base fue ajustado para dialogos multi-turno, y la etiqueta `endpoints_compatible`, habitual en los repositorios de mradermacher para indicar compatibilidad con infraestructura de inferencia tipo endpoint. Cualquier afirmacion adicional sobre el entrenamiento seria especulacion.
+El modelo está etiquetado como especializado en robótica, embodied AI y task planning, lo que indica un ajuste fino orientado a la generación de planes de acción estructurados para agentes robóticos. No se han publicado en la información proporcionada detalles sobre innovaciones técnicas específicas como decodificación especulativa o atención lineal.
 
 ## Capacidades
 
-La informacion disponible no documenta capacidades concretas del modelo. Los unicos elementos verificables son los siguientes:
-
-- Generacion de texto conversacional: la etiqueta `conversational` del repositorio indica que el modelo base esta orientado a dialogos, aunque no se detalla el formato de plantilla ni el tokenizador.
-- Compatibilidad con endpoints de inferencia: la etiqueta `endpoints_compatible` apunta a que el formato GGUF generado puede servirse en infraestructura de inferencia compatible con text-generation-inference.
-- Despliegue local en llama.cpp: las doce cuantizaciones publicadas permiten ejecucion en CPU y GPU con distintos compromisos de memoria y calidad.
-- Razonamiento y planificacion: el nombre del modelo base ("X-Planner") sugiere un enfoque hacia tareas de planificacion o agentes, pero esta capacidad no esta confirmada en la documentacion disponible.
-- Tool calling / function calling: no disponible.
-- Capacidades de agente multi-paso: no disponible.
-- Capacidades multilingues: no disponible (no se declara ningun idioma).
-- Capacidades multimodales (vision, audio): no disponible.
-- Modo de razonamiento explicito (thinking mode): no disponible.
+- Planificación de tareas robóticas: generación de secuencias de acciones estructuradas a partir de instrucciones en lenguaje natural.
+- Razonamiento multi-paso: capacidad de descomponer tareas complejas en subtareas ejecutables.
+- Procesamiento multimodal: la presencia de archivos mmproj sugiere soporte para entradas visuales junto con texto.
+- Generación de texto conversacional: el pipeline está etiquetado como conversational y el modelo es compatible con endpoints.
+- Soporte multilingüe limitado a inglés y chino.
+- Integración en pipelines de robótica: etiquetado como robotics y embodied-ai, orientado a su uso en sistemas de control de robots.
+- No se ha confirmado en la información disponible soporte explícito de tool calling o function calling.
 
 ## Casos de uso
 
-Los siguientes escenarios son aplicaciones plausibles dado que se trata de un modelo conversacional de 8,95B de parametros distribuido en GGUF con cuantizaciones desde 2 bits hasta 16 bits. Se indican como escenarios de evaluacion, no como capacidades verificadas:
-
-- Prototipado local en estacion de trabajo: descargar la variante Q4_K_M (aproximadamente 5,5 GB) y ejecutarla con llama.cpp u Ollama para evaluar si el modelo responde en castellano antes de invertir en infraestructura. El coste de la prueba es practicamente nulo.
-- Asistente conversacional embebido en aplicaciones de escritorio: la cuantizacion Q4_K_S o IQ4_XS permite integrar el modelo en un producto de escritorio que funcione sin conexion, siempre que el equipo disponga de al menos 6-8 GB de VRAM o de RAM suficiente para inferencia en CPU.
-- Procesamiento por lotes en CPU en servidores sin GPU: las variantes Q3_K_M y Q2_K reducen el modelo a rangos de 3,5-4,5 GB, lo que hace viable su ejecucion en servidores modestos para tareas de generacion de texto no interactivas, asumiendo la perdida de calidad tipica de la cuantizacion agresiva.
-- Comparacion de degradacion por cuantizacion: el repositorio publica doce niveles distintos del mismo modelo, lo que lo convierte en un banco de pruebas util para medir como afecta cada nivel de cuantizacion a las respuestas del modelo en una tarea concreta del dominio propio.
-- Fine-tuning posterior sobre GGUF: aunque no es el flujo mas habitual, el modelo base en safetensors (X-Planner-9B-0916) puede ajustarse y despues cuantizarse de nuevo; este repositorio sirve como referencia de los niveles de cuantizacion estandar del ecosistema.
-- Servicio interno de generacion de texto con vLLM o TGI: si el modelo base esta soportado por estos motores, las cuantizaciones F16 y Q8_0 pueden servirse con mayor precision para un uso interno de bajo trafico.
-- Evaluacion comparativa contra modelos 7B-9B ya conocidos: dado que este modelo no tiene benchmarks publicos en la informacion disponible, un caso de uso legitimo es ejecutarlo en el mismo banco de pruebas interno que se use para otros modelos de tamano similar.
+- Planificación de tareas en robots de servicio: el modelo traduce instrucciones como "recoge la taza de la mesa y llévala a la cocina" en una secuencia de pasos ejecutables por el robot, aprovechando su especialización en task planning.
+- Investigación en embodied AI: sirve como componente de planificación de alto nivel en arquitecturas de agentes robóticos, donde el modelo genera planes que luego ejecutan controladores de bajo nivel.
+- Sistemas de asistencia doméstica: integración en robots domésticos para interpretar comandos en lenguaje natural y generar planes de acción, con la ventaja de poder ejecutarse en local gracias a las cuantizaciones GGUF.
+- Prototipado rápido en robótica: al estar disponible en cuantizaciones ligeras (Q4_K_S, 5,5 GB), permite desplegar el modelo en estaciones de trabajo con GPU de consumo para pruebas de concepto.
+- Educación e investigación académica: su licencia Apache 2.0 y su formato GGUF facilitan su uso en entornos universitarios con hardware limitado, permitiendo experimentar con planificación robótica sin grandes inversiones.
+- Integración en pipelines de automatización industrial: el modelo puede generar planes de tareas para brazos robóticos o sistemas de manipulación, aunque requiere validación adicional en entornos de producción.
+- Despliegue en entornos con requisitos de privacidad: al poder ejecutarse localmente, es adecuado para escenarios donde los datos no pueden salir de la infraestructura propia.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El repositorio de cuantizaciones no incluye ninguna tabla de MMLU, HumanEval, GSM8K, MT-Bench ni evaluaciones equivalentes, y la busqueda web realizada no ha devuelto ningun resultado relacionado con el modelo (los resultados obtenidos corresponden a un centro educativo lituano y no guardan relacion con X-Planner). No se deben asumir cifras de rendimiento a partir del nombre ni del numero de parametros.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-Las siguientes estimaciones de memoria se derivan aritmeticamente del numero de parametros (8,95B) y del coste tipico por peso de cada nivel de cuantizacion; no proceden de mediciones publicadas y deben tratarse como aproximaciones:
-
-- F16: aproximadamente 18 GB solo para pesos. Requiere GPU de 24 GB (RTX 3090, RTX 4090, A10G) o superior, idealmente A100 40 GB o H100 para dejar margen a la cache KV.
-- Q8_0: aproximadamente 9,5 GB de pesos. Cabe en RTX 4080/4090 (16-24 GB) y en A100 40 GB con holgura.
-- Q6_K: aproximadamente 7,4 GB. Cabe en GPU de 12 GB dejando poco margen para contexto largo.
-- Q5_K_M / Q5_K_S: aproximadamente 6,0-6,3 GB. Cabe comodamente en RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070.
-- Q4_K_M / Q4_K_S / IQ4_XS: aproximadamente 4,9-5,5 GB. Es el rango recomendado para GPU de consumo de 8-12 GB y para equipos con 16 GB de RAM en inferencia CPU.
-- Q3_K_L / Q3_K_M / Q3_K_S: aproximadamente 4,1-4,8 GB. Orientadas a equipos con 8 GB de VRAM o menos.
-- Q2_K: aproximadamente 3,5 GB. La cuantizacion mas agresiva publicada; esperable una degradacion notable de la calidad.
-
-Notas adicionales:
-
-- La cache KV depende de la longitud de contexto y del numero de capas, datos que no estan disponibles en este repositorio; en un modelo de ~9B con contexto de 8K-32K puede anadir entre 1 y varios GB adicionales segun el tipo de cuantizacion de la cache.
-- Si el modelo admite offloading parcial de capas, es posible ejecutar cuantizaciones Q4 en GPU de 6-8 GB repartiendo capas entre GPU y CPU.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, text-generation-webui, kobold.cpp y, para las variantes de mayor precision, motores como vLLM o TGI si soportan la arquitectura del modelo base.
-- Latencia y throughput estimados: no disponible.
+- VRAM estimada para inferencia según cuantización:
+  - Q2_K (3,9 GB): ~4-5 GB de VRAM.
+  - Q3_K_S (4,4 GB): ~5 GB de VRAM.
+  - Q4_K_S / Q4_K_M (5,5-5,7 GB): ~6-7 GB de VRAM.
+  - Q5_K_M (6,6 GB): ~7-8 GB de VRAM.
+  - Q6_K (7,5 GB): ~8-9 GB de VRAM.
+  - Q8_0 (9,6 GB): ~10-11 GB de VRAM.
+  - f16 (18,0 GB): ~18-20 GB de VRAM.
+- GPU recomendadas: para cuantizaciones Q4-Q5, una RTX 3060 de 12 GB o RTX 4060 Ti de 16 GB es suficiente. Para Q8_0, se recomienda RTX 4070 Ti Super o RTX 4080. Para f16, se requiere una A100, H100 o RTX 4090 (24 GB).
+- Cabe en GPU de consumo: sí, en cuantizaciones Q2 a Q5 en GPUs con 6-8 GB de VRAM; Q6 y Q8 requieren 10-12 GB.
+- Opciones de despliegue: llama.cpp, Ollama, y cualquier runtime compatible con GGUF. El modelo base es compatible con transformers y endpoints.
+- Latencia y throughput estimados: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-No disponible. La informacion proporcionada no incluye arquitectura, contexto, licencia ni resultados de evaluacion del modelo, y la busqueda web no ha devuelto ninguna fuente util. Sin esos datos no es posible establecer una comparacion rigurosa con alternativas de la franja 7B-9B (por ejemplo, familias tipo Qwen, Llama, Mistral o Gemma en ese rango de parametros), ya que cualquier tabla seria inventada.
-
-| Modelo | Parametros | Contexto | Licencia | Benchmarks | Disponibilidad |
+| Modelo | Parámetros | Contexto | Licencia | Formato | Especialización |
 |---|---|---|---|---|---|
-| X-Planner-9B-0916-GGUF | 8,95B | no disponible | no disponible | no publicados | GGUF en Hugging Face |
-| Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
+| X-Planner-9B-0916-GGUF | ~9B | no disponible | Apache 2.0 | GGUF | Robótica / task planning |
+| Qwen2.5-7B-Instruct | 7B | 128K (típico) | Apache 2.0 | safetensors, GGUF | Propósito general |
+| Llama-3.1-8B-Instruct | 8B | 128K | Llama 3.1 Community | safetensors, GGUF | Propósito general |
+| OpenVLA-7B | 7B | no disponible | MIT | safetensors | Robótica / VLA |
+
+La comparativa con modelos de propósito general como Qwen2.5-7B o Llama-3.1-8B es relevante porque X-Planner-9B está especializado en planificación robótica, lo que puede suponer una ventaja en tareas de embodied AI pero un rendimiento inferior en tareas generales. OpenVLA-7B es un modelo visión-lenguaje-acción también orientado a robótica, aunque con un enfoque diferente (control directo frente a planificación). No se dispone de datos de rendimiento comparativo en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de documentacion: la model card del repositorio no describe arquitectura, contexto, idiomas, plantilla de prompt ni proceso de entrenamiento. Usar el modelo en produccion sin consultar antes el repositorio original es arriesgado.
-- Licencia no declarada: al no indicarse licencia, no puede asumirse permiso para uso comercial. Es imprescindible verificar la licencia del modelo base en x-square-robot/X-Planner-9B-0916 antes de cualquier despliegue productivo.
-- Riesgo de alucinacion: no hay evaluaciones publicadas de fidelidad factual ni de tasas de alucinacion para este modelo. En un modelo de 9B sin datos de evaluacion, este riesgo debe considerarse alto por defecto.
-- Sesgos: no disponible. No se ha publicado ninguna evaluacion de sesgos ni de comportamiento diferencial por idioma o dominio.
-- Degradacion por cuantizacion: las variantes Q3 y Q2_K comprimen los pesos por debajo de 4 bits, lo que suele afectar de forma perceptible a tareas de razonamiento, matematicas y generacion de codigo. Para tareas sensibles a la precision, usar Q5_K_M o superior.
-- Cobertura linguistica incierta: no se declara ningun idioma soportado. No hay garantia de un buen rendimiento en castellano; conviene validarlo con una bateria propia antes de depender de ello.
-- Contexto desconocido: al no documentarse la longitud de contexto, no se puede planificar el uso con documentos largos ni estimar con precision la memoria de la cache KV.
-- Repositorio sin traccion: cero descargas y cero "likes" en el momento de la consulta, lo que reduce la probabilidad de encontrar informes de terceros sobre su comportamiento real.
-- Fechas de publicacion: el repositorio figura creado y actualizado el 2026-09-17, con apenas siete minutos entre ambos eventos, lo que indica una subida automatizada de cuantizaciones sin revision posterior documentada.
-- Trazabilidad de la conversion: los campos de la model card (`quantize_version: 2`, `output_tensor_quantised: 1`, `convert_type: hf`) confirman una conversion estandar, pero no acreditan que el resultado haya sido validado funcionalmente contra el modelo original.
+- Sesgos conocidos: no se han documentado sesgos específicos en la información disponible, pero al estar entrenado principalmente en inglés y chino, puede presentar un rendimiento inferior en otros idiomas.
+- Riesgo de alucinación: como todo modelo de lenguaje, puede generar planes de acción plausibles pero incorrectos o inseguros para un robot real; se requiere validación y salvaguardas en producción.
+- Limitaciones de contexto o idioma: solo se confirman inglés y chino; la longitud de contexto no está disponible, lo que impide evaluar su idoneidad para tareas con historiales largos.
+- Restricciones de licencia: Apache 2.0 permite uso comercial, pero se recomienda revisar los términos del modelo base original por si hubiera condiciones adicionales.
+- Caveat para producción: la cuantización puede degradar la calidad de los planes generados, especialmente en cuantizaciones bajas (Q2_K, Q3_K_S); se recomienda usar Q4_K_M o superior para aplicaciones críticas.
+- El modelo está especializado en planificación robótica; su uso para tareas generales de lenguaje puede no ser óptimo.
+- No se dispone de información sobre el proceso de entrenamiento ni sobre evaluaciones de seguridad en entornos robóticos reales.
 
 ## Enlaces
 
-- Repositorio GGUF en Hugging Face: https://huggingface.co/mradermacher/X-Planner-9B-0916-GGUF
-- Modelo base referenciado en la model card: https://huggingface.co/x-square-robot/X-Planner-9B-0916
-- Perfil del autor de las cuantizaciones: https://huggingface.co/mradermacher
-- Paper, blog tecnico, repositorio de codigo o demo: no disponible. La busqueda web realizada no ha devuelto ningun resultado relacionado con el modelo; los unicos resultados obtenidos corresponden a un centro educativo lituano (Vilniaus Karoliniskiu gimnazija) y no guardan relacion con X-Planner.
+- Repositorio Hugging Face (GGUF): https://huggingface.co/mradermacher/X-Planner-9B-0916-GGUF
+- Modelo base: https://huggingface.co/x-square-robot/X-Planner-9B-0916
+- Página de resumen de cuantizaciones de mradermacher: https://hf.tst.eu/model#X-Planner-9B-0916-GGUF
+- Guía de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Gráfico comparativo de cuantizaciones (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png
+- Reflexiones sobre cuantizaciones (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- FAQ y solicitudes de modelos de mradermacher: https://huggingface.co/mradermacher/model_requests

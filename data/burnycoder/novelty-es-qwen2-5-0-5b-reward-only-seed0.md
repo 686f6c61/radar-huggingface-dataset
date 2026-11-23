@@ -1,98 +1,91 @@
 # BurnyCoder/novelty-es-qwen2.5-0.5b-reward-only-seed0
 
 ## Resumen
+El modelo `BurnyCoder/novelty-es-qwen2.5-0.5b-reward-only-seed0` es un ajuste fino de investigación sobre `Qwen/Qwen2.5-0.5B-Instruct`, publicado por el usuario BurnyCoder. Se trata de una adaptación aritmética orientada a la tarea Countdown, en la que el modelo debe construir expresiones legales con números dados para alcanzar un objetivo. El checkpoint corresponde a la condición de control "reward_only" de un experimento más amplio sobre estrategias evolutivas y búsqueda de novedad.
 
-`BurnyCoder/novelty-es-qwen2.5-0.5b-reward-only-seed0` es un ajuste fino de investigación sobre `Qwen/Qwen2.5-0.5B-Instruct`, publicado por el usuario BurnyCoder. No es un modelo de propósito general: es un artefacto experimental derivado de un estudio sobre búsqueda evolutiva (evolution strategies, ES) aplicada al entrenamiento de modelos de lenguaje, en el que se compara una condición "principal" (con un componente de novedad) frente a una condición de control ("reward_only") que solo optimiza la recompensa de la tarea. Este checkpoint concreto corresponde a la condición de control con la semilla 0.
+El modelo no busca mejorar capacidades generales de lenguaje, sino servir como evidencia empírica en un estudio preregistrado sobre si la novedad (novelty search) aporta una ventaja direccional frente al entrenamiento guiado solo por recompensa. La model card indica explícitamente que la hipótesis de mejora direccional no se sostuvo en esta semilla: la precisión principal no superó la condición reward-only, y el intervalo emparejado incluye cero.
 
-La tarea objetivo es "countdown": un problema aritmético en el que el modelo debe construir una expresión legal que alcance un número objetivo a partir de un conjunto de números dados. El autor reporta explícitamente que la hipótesis de mejora direccional no se sostiene en esta semilla, ya que la condición principal no supera a la de solo recompensa. Ambos checkpoints entrenados mejoran respecto al modelo original en el conjunto de test, pero la comparación principal frente a control es la que determinaría si la novedad aporta beneficio, y aquí no lo hace.
-
-El interés del modelo es, por tanto, metodológico y de reproducibilidad, no de rendimiento. Con 494 millones de parámetros y una licencia Apache 2.0, sirve como evidencia empírica de un experimento preregistrado sobre entrenamiento con ES en modelos pequeños, y como base para quien quiera replicar o extender ese estudio. No debe evaluarse como un modelo apto para producción general.
+Es relevante ahora como artefacto reproducible de investigación: pesos, métricas crudas y correcciones independientes están enlazados públicamente. No debe interpretarse como un modelo de propósito general ni como una mejora del modelo base en lenguaje o razonamiento.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (Qwen2), ajustado mediante evolution strategies sobre Qwen2.5-0.5B-Instruct |
+| Arquitectura | Transformer decoder-only (Qwen2) |
 | Parametros totales | 494.032.768 |
 | Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | no disponible en la informacion proporcionada (el modelo base Qwen2.5-0.5B-Instruct soporta 32.768 tokens, segun la documentacion de Qwen; no confirmado para este checkpoint) |
-| Tipos de cuantizacion | no disponible (pesos en safetensors; no se documentan variantes GGUF/AWQ/GPTQ) |
-| Idiomas soportados | no disponible (no se declaran idiomas en la model card) |
+| Longitud de contexto | no disponible en la información proporcionada |
+| Tipos de cuantizacion | no disponible en la información proporcionada |
+| Idiomas soportados | no disponible en la información proporcionada |
 | Licencia | apache-2.0 |
-| Formato de pesos | safetensors (libreria transformers) |
+| Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
+La arquitectura subyacente es la de Qwen2.5-0.5B-Instruct, un transformer decoder-only de aproximadamente 494 millones de parámetros. El ajuste se realizó mediante estrategias evolutivas (evolution-strategies), no mediante RLHF o DPO clásicos, sobre la tarea Countdown. El checkpoint aquí descrito es la condición "reward_only", es decir, entrenamiento guiado únicamente por recompensa, sin el componente de novedad que caracteriza la condición "main" del estudio.
 
-El modelo parte de `Qwen/Qwen2.5-0.5B-Instruct` (revision base `7ae557604adf67be50417f59c2c2f167def9a775`), un transformer decoder-only de la familia Qwen2 con 494 millones de parámetros. Sobre esa base, el autor aplica un procedimiento de optimización por estrategias evolutivas (evolution strategies) en lugar de un ajuste supervisado o RL clásico con gradientes. El entrenamiento se organiza en dos condiciones: una "principal" que incorpora un término de novedad y una de control ("reward_only") que optimiza únicamente la recompensa de la tarea. Este checkpoint es la condición de control con semilla 0.
-
-La tarea de entrenamiento y evaluación es "countdown": generar expresiones aritméticas legales que alcancen un objetivo usando los números proporcionados. El autor documenta que el experimento está preregistrado, con semilla y configuración registradas, y que los intervalos de confianza reportados excluyen la variabilidad entre semillas de entrenamiento. No se detallan en la información disponible el número de tokens de entrenamiento, la composición del dataset ni si hubo etapas de RLHF o DPO adicionales; la model card remite al repositorio de GitHub para preregistro, procedencia y limitaciones completas.
+La model card documenta detalles metodológicos relevantes: las evaluaciones usan una respuesta greedy por problema; la partición "hard" corresponde a problemas con cinco números; pass@1 y pass@8 se calculan sobre un subconjunto fijo del test original; las horas de pared incluyen sobrecarga y no son medidas de horas de GPU; y el verificador acepta sintaxis restringida de expresiones Python, desnudas o dentro de una etiqueta de respuesta, ignorando el texto circundante cuando hay una etiqueta. El modelo MiniLM usado en el pipeline trunca las respuestas a 256 tokens WordPiece. Las métricas están condicionadas a una semilla de entrenamiento y excluyen la variabilidad entre semillas.
 
 ## Capacidades
-
-- Generación de texto conversacional heredada del modelo base Qwen2.5-0.5B-Instruct.
-- Resolución de problemas aritméticos tipo "countdown": construir expresiones legales que alcancen un número objetivo a partir de un conjunto de números.
-- Producción de expresiones aritméticas con mayor tasa de legalidad que el modelo original en problemas de tres y cuatro números, según los datos del autor.
-- No se documenta soporte de tool calling, function calling ni capacidades de agente.
-- No se documenta modo "thinking", visión, audio ni capacidades multimodales.
-- Capacidades multilingües: no disponibles (no declaradas).
+- Generación de expresiones aritméticas legales para la tarea Countdown (construir una expresión con los números dados para alcanzar un objetivo).
+- Producción de respuestas en formato de etiqueta de respuesta compatible con el verificador del estudio.
+- Generación de texto conversacional heredada del modelo base Qwen2.5-0.5B-Instruct, aunque sin evidencia de mejora general.
+- No hay evidencia de mejoras en lenguaje general, razonamiento general, código, matemáticas fuera de Countdown, tool calling, agentes, visión, audio o modo thinking.
+- Capacidades multilingües: no disponibles en la información proporcionada.
 
 ## Casos de uso
-
-- Reproducción de experimentos de investigación: el checkpoint sirve para replicar la condición de control (`reward_only`, semilla 0) del estudio preregistrado y comparar frente a la condición principal y al modelo original.
-- Estudio de estrategias evolutivas en LLM: permite analizar cómo se comporta la optimización por ES en un modelo pequeño y una tarea aritmética acotada, sin la complejidad de un modelo grande.
-- Análisis de validez de expresiones: útil para estudiar por qué la mejora de legalidad en problemas de tres y cuatro números no se transfiere a los de cinco números, un fenómeno documentado por el autor.
-- Evaluación de metodología de benchmarks: sirve como caso de estudio sobre intervalos de confianza, preregistro y comparación principal frente a control en entrenamiento de LLM.
-- Docencia y divulgación: ejemplo concreto y reproducible de un pipeline de ajuste con ES sobre un modelo de 0,5B, adecuado para cursos de aprendizaje automático.
-- Punto de partida para extensiones: base para quien quiera añadir componentes de novedad, cambiar la semilla o escalar la tarea a otros dominios aritméticos.
-- No se recomienda su uso en atención al cliente, generación de código en producción ni aplicaciones comerciales generales, dado su carácter de investigación y la ausencia de evidencia de mejoras lingüísticas generales.
+- Reproducción de experimentos de investigación: usar el checkpoint como condición de control reward-only para replicar la tabla de precisión greedy y pass@k del estudio, comparándolo con la condición "main" y con el modelo original.
+- Auditoría de metodología evolutiva: analizar cómo las estrategias evolutivas afectan la legalidad de expresiones en problemas de tres, cuatro y cinco números, dado que la model card reporta diferencias de validez entre particiones.
+- Evaluación de verificadores aritméticos: probar el parser restringido de expresiones Python y la lógica de etiquetas de respuesta en pipelines propios.
+- Estudio de transferencia limitada: examinar por qué la mejora de validez no se transfiere uniformemente a los problemas de cinco números, comparando este checkpoint con el original.
+- Docencia e ilustración de intervalos de confianza: usar los intervalos reportados (0,68%-1,61% para main y reward_only) para enseñar interpretación de resultados con incertidumbre y variabilidad de semilla.
+- Base para experimentos de bajo coste: al tener ~494M parámetros y pesos safetensors, permite iterar rápidamente en entornos de investigación con recursos modestos, siempre dentro del alcance aritmético declarado.
 
 ## Benchmarks y rendimiento
 
-Datos reportados por el autor en la model card para la tarea countdown:
-
-| Condicion | Test accuracy | Intervalo 95% | Hard accuracy | pass@1 | pass@8 | Estado |
+| Condición | Precisión greedy en test | Intervalo 95% | Precisión greedy hard | pass@1 test original | pass@8 test original | Estado |
 |---|---|---|---|---|---|---|
-| original | 0,29% | 0,10% - 0,54% | 0,10% | 0,12% | 0,89% | complete |
-| main | 1,12% | 0,68% - 1,61% | 0,00% | 0,27% | 2,06% | complete |
-| reward_only | 1,12% | 0,68% - 1,61% | 0,10% | 0,22% | 1,67% | complete |
+| original | 0,29% | 0,10% - 0,54% | 0,10% | 0,12% | 0,89% | completo |
+| main | 1,12% | 0,68% - 1,61% | 0,00% | 0,27% | 2,06% | completo |
+| reward_only | 1,12% | 0,68% - 1,61% | 0,10% | 0,22% | 1,67% | completo |
 
-El autor señala que ambos checkpoints entrenados superan al modelo original en este conjunto de test, que ambos producen más expresiones legales en problemas de tres y cuatro números, y que ambos tienen menor validez de expresión en problemas de cinco números que el modelo original. La comparación principal frente a control no muestra ventaja de la condición de novedad en esta semilla. Los intervalos excluyen la variabilidad entre semillas de entrenamiento.
+La model card señala que ambos checkpoints entrenados superan al modelo original en este conjunto de test, que ambos producen más expresiones legales en problemas de tres y cuatro números, y que ambos tienen menor validez de expresión en problemas de cinco números que el modelo original. La comparación main frente a control determina si la novedad aporta beneficio; en esta semilla, el intervalo emparejado incluye cero, por lo que no se establece diferencia de rendimiento.
 
 ## Requisitos de hardware
-
-- VRAM estimada para inferencia: aproximadamente 1 GB en fp16 (494M parámetros), alrededor de 0,5 GB en int8 y en torno a 0,3 GB en int4, sin contar overhead de activaciones y contexto.
-- GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM para fp16; RTX 3060, RTX 4060, RTX 4090, A100 o H100 son suficientes y sobradas para este tamaño.
-- Cabe en GPU de consumo: sí, en prácticamente cualquier GPU consumer moderna (GTX 1650 en adelante con cuantización, RTX 3060/4060 sin problemas en fp16).
-- Opciones de despliegue: transformers (librería declarada), text-generation-inference (tag `text-generation-inference` y `endpoints_compatible`). No se documentan variantes GGUF, por lo que llama.cpp u Ollama requerirían conversión previa.
-- Latencia y throughput estimados: no disponibles en la información proporcionada.
+- VRAM estimada para inferencia: no disponible en la información proporcionada; con ~494M parámetros, los requisitos serían moderados, pero no hay cifras publicadas.
+- GPU recomendadas: no disponible en la información proporcionada.
+- Compatibilidad con GPU de consumo: no disponible en la información proporcionada.
+- Opciones de despliegue: la model card y las etiquetas indican compatibilidad con transformers y text-generation-inference (endpoints_compatible); no se detallan vLLM, llama.cpp, Ollama ni TGI más allá de la etiqueta TGI.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Enfoque | Disponibilidad |
+| Modelo | Parámetros | Contexto | Rendimiento en Countdown | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| novelty-es-qwen2.5-0.5b-reward-only-seed0 | 494M | no disponible | apache-2.0 | Ajuste por ES, tarea countdown, condición control | Hugging Face |
-| Qwen/Qwen2.5-0.5B-Instruct | 494M | 32.768 tokens (segun documentacion de Qwen) | apache-2.0 | Modelo base instructivo de proposito general | Hugging Face |
-| BurnyCoder/qwen2.5-coder-0.5b-swe-rl | 0,5B | 32.768 tokens | no disponible en la informacion | RL con GRPO para reparacion de codigo Python | Hugging Face, featherless.ai |
+| novelty-es-qwen2.5-0.5b-reward-only-seed0 | 494.032.768 | no disponible | 1,12% greedy test; pass@1 0,22%; pass@8 1,67% | apache-2.0 | Hugging Face |
+| Qwen/Qwen2.5-0.5B-Instruct (original) | ~0,5B | no disponible en la información proporcionada | 0,29% greedy test; pass@1 0,12%; pass@8 0,89% | apache-2.0 | Hugging Face |
+| Condición "main" del mismo estudio | ~0,5B | no disponible | 1,12% greedy test; pass@1 0,27%; pass@8 2,06% | apache-2.0 | Hugging Face (referenciado en la model card) |
 
-La comparación relevante es frente al modelo base: este checkpoint mejora la accuracy en countdown (1,12% frente a 0,29%) pero no aporta evidencia de mejoras en lenguaje general, según el propio autor. Frente a otros ajustes del mismo autor, como el de código con GRPO, el dominio y la metodología son distintos y no son directamente comparables en rendimiento.
+No se dispone de comparaciones con otros modelos de la misma categoría fuera del estudio.
 
 ## Limitaciones y advertencias
-
-- Modelo de investigación: el autor indica explícitamente que es una adaptación aritmética solo para investigación y que no hay evidencia de mejoras en lenguaje general.
-- La hipótesis principal del estudio no se sostiene en esta semilla: la condición de novedad no supera a la de solo recompensa.
-- Accuracy absoluta muy baja: 1,12% en test para este checkpoint, lo que lo hace inadecuado para uso práctico en la tarea objetivo.
-- La mejora de validez de expresiones no se transfiere a problemas de cinco números, donde el modelo rinde peor que el original.
-- Los intervalos de confianza reportados excluyen la variabilidad entre semillas de entrenamiento, lo que limita la generalización de las conclusiones.
-- Riesgo de alucinación y de expresiones aritméticas inválidas elevado, dado el bajo rendimiento medido.
-- Sesgos conocidos: no documentados en la información disponible.
-- Idiomas soportados: no declarados; no se garantiza un comportamiento multilingüe fiable.
-- Licencia Apache 2.0 permite uso comercial del artefacto, pero su calidad y propósito experimental desaconsejan cualquier despliegue en producción.
-- No se documentan limitaciones de contexto específicas más allá de las heredadas del modelo base.
+- Adaptación aritmética de solo investigación; no hay evidencia de mejoras generales de lenguaje.
+- La hipótesis de mejora direccional no se sostuvo en esta semilla; el intervalo emparejado incluye cero.
+- Las métricas están condicionadas a una semilla de entrenamiento y excluyen la variabilidad entre semillas.
+- La mejora de validez no se transfiere uniformemente: menor validez en problemas de cinco números que el modelo original.
+- Los tensores de generación cero y la trayectoria histórica completa de embeddings/archivo no están disponibles.
+- Los veredictos de auditoría antiguos se conservan como registros históricos, no como prueba independiente.
+- El verificador acepta solo sintaxis restringida de expresiones Python y una única etiqueta de respuesta; el texto circundante se ignora.
+- MiniLM trunca las respuestas a 256 tokens WordPiece, lo que puede afectar evaluaciones basadas en embeddings.
+- Las horas de pared incluyen sobrecarga y no son horas de GPU; en la continuación cubren solo trabajo añadido y el tiempo de control excluye paradas offline y una cola de caída no registrada.
+- Licencia apache-2.0 permite uso comercial, pero el modelo está declarado como adaptación aritmética de investigación; no debe presentarse como modelo generalista.
+- Riesgo de alucinación y sesgos: no disponibles en la información proporcionada.
 
 ## Enlaces
-
-- Modelo en Hugging Face: https://huggingface.co/BurnyCoder/novelty-es-qwen2.5-0.5b-reward-only-seed0
-- Repositorio del estudio (preregistro, código, procedencia y limitaciones): https://github.com/BurnyCoder/evolutionary-strategies-novelty-search-llm-training
+- Hugging Face: https://huggingface.co/BurnyCoder/novelty-es-qwen2.5-0.5b-reward-only-seed0
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
-- Otro ajuste del mismo autor (referencia): https://huggingface.co/BurnyCoder/qwen2.5-coder-0.5b-swe-rl
-- Ficha en featherless.ai del ajuste de código: https://featherless.ai/models/BurnyCoder/qwen2.5-coder-0.5b-swe-rl
+- Artefactos crudos del piloto: https://huggingface.co/datasets/BurnyCoder/novelty-es-pilot-artifacts/tree/949e2dcb385bc2b7088c40444ef879b76596317d
+- Repositorio del estudio: https://github.com/BurnyCoder/evolutionary-strategies-novelty-search-llm-training
+- Revisiones predecesoras: https://github.com/BurnyCoder/evolutionary-strategies-novelty-search-llm-training/blob/cf0a402/reports/publication.json
+- Correcciones independientes y lagunas de evidencia: https://github.com/BurnyCoder/evolutionary-strategies-novelty-search-llm-training/blob/main/reports/independent-corrections-2026-11-12.md
+- MiniLM (configuración de truncado): https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/blob/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/sentence_bert_config.json
+- Sintaxis de expresiones Python: https://docs.python.org/3.12/reference/expressions.html

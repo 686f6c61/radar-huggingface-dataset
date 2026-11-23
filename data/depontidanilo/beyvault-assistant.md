@@ -2,93 +2,81 @@
 
 ## Resumen
 
-beyvault-assistant es un modelo de lenguaje de tamano muy reducido (596.049.920 parametros, ~0,6 B) publicado por el usuario depontidanilo en Hugging Face. No es un modelo de proposito general: se trata de un fine-tune de Qwen/Qwen3-0.6B entrenado con LoRA para una unica tarea dentro de una aplicacion movil, convertir una pregunta corta en un formulario JSON de estructura fija. El propio autor advierte en la model card que fuera de ese formato las respuestas son de baja calidad.
+Beyvault Assistant es un ajuste fino de tipo LoRA sobre Qwen/Qwen3-0.6B, desarrollado por el usuario depontidanilo y publicado en Hugging Face. Su proposito no es la conversacion general: el autor lo describe explicitamente como un modelo de intencion ("assistant intent model") disenado para una unica tarea dentro de una aplicacion movil, convertir una pregunta corta en un formulario JSON de estructura fija. Fuera de ese esquema, el propio autor advierte que las respuestas son pobres.
 
-El modelo se distribuye unicamente en formato GGUF cuantizado en Q4_K_M generado con llama.cpp, con un peso de repositorio de 0,4 GB, lo que lo situa en la categoria de modelos ejecutables en CPU o en dispositivos moviles sin GPU dedicada. La licencia es Apache 2.0, heredada del modelo base, y los pesos publicados corresponden a la fusion (merge) del adaptador LoRA sobre el modelo base antes de la cuantizacion.
+Tecnicamente se trata de un transformer denso de aproximadamente 596 millones de parametros (0,6B), heredado de la arquitectura Qwen3, con los pesos del adaptador LoRA fusionados en el modelo base y posteriormente cuantizados a Q4_K_M mediante llama.cpp. El repositorio ocupa 2,9 GB e incluye artefactos en formato GGUF, lo que lo orienta a inferencia en CPU o en GPUs de gama baja mediante llama.cpp y runtimes compatibles.
 
-Su relevancia es limitada y muy especifica: sirve como ejemplo de destilacion de tareas (task-specific distillation) a un modelo sub-1B para inferencia local, no como alternativa a modelos conversacionales. En el momento de redactar esta ficha el repositorio registra 0 descargas y 0 likes, y no se han publicado resultados de benchmarks, ficha de idiomas ni parametros de contexto para este fine-tune concreto.
+Su relevancia es acotada pero concreta: demuestra un patron habitual en produccion movil, usar un modelo pequeno y especializado para tareas de extraccion o clasificacion estructurada en lugar de un LLM grande. La licencia Apache 2.0 del modelo base y del ajuste facilita su integracion comercial, aunque la ausencia de benchmarks y de documentacion sobre el dataset de entrenamiento limita mucho la evaluacion objetiva.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible en la model card (modelo base Qwen/Qwen3-0.6B, transformer denso) |
-| Parametros totales | 596.049.920 (~0,6 B) |
-| Parametros activos | no aplica (modelo denso, no MoE) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Q4_K_M (GGUF, generado con llama.cpp); no se publican otros niveles |
-| Idiomas soportados | no disponible (la model card no declara lista de idiomas) |
+| Arquitectura | Transformer denso (derivado de Qwen3-0.6B) |
+| Parametros totales | 596.049.920 |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible (heredada de Qwen3-0.6B, sin confirmar en esta ficha) |
+| Tipos de cuantizacion | Q4_K_M (GGUF); resto no disponible |
+| Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (Q4_K_M); tamano de repositorio 0,4 GB |
+| Formato de pesos | GGUF (llama.cpp) |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de Qwen/Qwen3-0.6B, un transformer denso de ~0,6 B de parametros con licencia Apache 2.0. Sobre esa base el autor aplico un ajuste fino con LoRA orientado a una unica tarea de extraccion de intencion: transformar una pregunta breve en un JSON con forma fija. Posteriormente el adaptador se fusiono en los pesos base (merge) y el resultado se cuantizo a Q4_K_M con llama.cpp para su distribucion.
+El modelo parte de Qwen/Qwen3-0.6B, un transformer denso de la familia Qwen3, y se ajusta mediante LoRA para una tarea de transformacion de pregunta a JSON con esquema fijo. El autor indica que el adaptador se fusiona con el modelo base y despues se cuantiza a Q4_K_M con llama.cpp. No se especifica el numero de tokens de entrenamiento, la composicion del dataset, si hubo RLHF o DPO, ni hiperparametros del ajuste.
 
-No se especifican en la informacion disponible el volumen de tokens de entrenamiento, la composicion del dataset, la existencia de fases de RLHF o DPO, ni hiperparametros del ajuste LoRA (rango, alpha, epochs, tasa de aprendizaje). Tampoco se documenta ninguna innovacion tecnica adicional (atencion lineal, decodificacion especulativa, modos de razonamiento) mas alla del propio pipeline de LoRA + merge + cuantizacion. El autor proporciona un hash SHA-256 del artefacto (`ddf51b613b3df7413bdf9e356c62c78bbceeccdcb2336273bb1a879e59af96ee`) para verificacion de integridad de la descarga.
+La unica innovacion tecnica documentada es el propio pipeline de publicacion: LoRA, merge y cuantizacion GGUF, con un sha256 declarado (`ddf51b613b3df7413bdf9e356c62c78bbceeccdcb2336273bb1a879e59af96ee`) para verificar la integridad del artefacto. No hay informacion sobre decodificacion especulativa, atencion lineal ni otras optimizaciones.
 
 ## Capacidades
 
-- Conversion de una pregunta corta en un objeto JSON con estructura fija (tarea principal y practicamente unica).
-- Clasificacion de intencion orientada a enrutado dentro de una aplicacion movil.
-- Generacion de texto conversacional: tecnicamente posible, pero el autor la desaconseja explicitamente por calidad baja.
-- Soporte de tool calling / function calling: no documentado.
-- Soporte de agentes y razonamiento multi-paso: no documentado; el diseno del modelo es de un solo paso.
-- Capacidades multilingues: no declaradas en la model card.
-- Vision, audio, modo thinking: no disponibles.
-- Inferencia local via llama.cpp y compatibilidad declarada con endpoints (tag `endpoints_compatible`).
+- Transformacion de una pregunta corta en un formulario JSON de estructura fija, tarea para la que fue entrenado.
+- Generacion de texto basica heredada del modelo base, aunque el autor advierte de que es deficiente fuera del esquema previsto.
+- No se documenta soporte de tool calling ni de function calling.
+- No se documenta soporte de agentes ni de razonamiento multi-paso.
+- Capacidades multilingues: no disponibles; el autor no especifica idiomas.
+- No se documenta vision, audio ni modo de razonamiento explicito.
 
 ## Casos de uso
 
-- Enrutado de intenciones en una app movil: el modelo recibe la frase corta del usuario y devuelve un JSON con la accion y los parametros, que la app interpreta para navegar a la pantalla o funcion adecuada. Es el caso para el que fue entrenado.
-- Extraccion de campos en formularios: a partir de una pregunta breve se rellena una estructura JSON fija que se valida con un esquema antes de persistirla.
-- Preprocesado local sin conexion: al pesar 0,4 GB en Q4_K_M y caber en CPU, puede ejecutarse en el propio dispositivo para tareas de clasificacion, evitando enviar texto del usuario a un servidor.
-- Filtro de primera etapa en un pipeline mayor: descartar o etiquetar consultas simples antes de derivarlas a un modelo grande, reduciendo coste por peticion en el caso de consultas que encajan en el formulario fijo.
-- Clasificacion por lotes de bajo coste: procesar grandes volumenes de preguntas cortas en CPU para poblar una etiqueta o categoria, siempre que el esquema de salida coincida con el entrenado.
-- Base para un nuevo fine-tune: servir como punto de partida (o como ejemplo de pipeline LoRA + merge + GGUF) para quien quiera replicar la receta en su propio dominio.
-- Prototipado de asistentes con salida estructurada: validar el flujo completo (pregunta, JSON, validacion de esquema, accion) antes de invertir en un modelo mayor.
+- Extraccion de intencion en apps moviles: el modelo recibe una pregunta breve del usuario y devuelve el JSON esperado por la aplicacion, que luego enruta la accion correspondiente. Es su caso de uso principal y el unico validado por el autor.
+- Clasificacion y enrutado de consultas: dentro de un asistente, puede mapear la frase del usuario a una categoria fija del formulario y alimentar un router de acciones.
+- Relleno de formularios asistido: convierte lenguaje natural corto en campos estructurados, reduciendo la necesidad de que el usuario complete manualmente cada campo.
+- Preprocesado local en dispositivos: al ser un modelo de 0,6B en GGUF Q4_K_M, puede ejecutarse en movil o en hardware modesto sin depender de la nube, lo que ayuda a la privacidad de las consultas.
+- Prototipado de pipelines de extraccion estructurada: sirve como linea base barata antes de invertir en un modelo mayor o en un servicio gestionado.
+- Filtrado previo en sistemas mayores: puede actuar como primera etapa que descarta o etiqueta consultas simples antes de enviar las complejas a un LLM de mayor tamano.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye metricas de exactitud en la tarea de extraccion de JSON, ni evaluaciones tipo MMLU, HumanEval o GSM8K, ni comparaciones con el modelo base.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: el artefacto GGUF Q4_K_M ocupa aproximadamente 0,4 GB, por lo que la huella en memoria es del orden de 0,5-0,7 GB incluyendo el contexto y el runtime de llama.cpp. Una conversion a FP16 del mismo modelo de ~0,6 B rondaria los 1,2 GB, aunque no se publica ese formato.
-- GPU recomendadas: no se requieren. Cualquier GPU consumer con 2 GB o mas de VRAM (por ejemplo GTX 1650, RTX 3050, RTX 4060) es sobradamente suficiente; tambien A100/H100 si se busca throughput masivo por lotes.
-- Cabe en GPU consumer: si, con margen amplio, en practicamente cualquier GPU dedicada de los ultimos anos. Tambien es viable en CPU y en dispositivos moviles de gama media-alta.
-- Opciones de despliegue: llama.cpp (formato nativo del artefacto), Ollama y cualquier runtime compatible con GGUF (LM Studio, kobold.cpp). El tag `endpoints_compatible` sugiere compatibilidad con endpoints tipo OpenAI, pero no se detalla la configuracion. vLLM y TGI no estan confirmados para este artefacto GGUF.
-- Latencia y throughput: no disponibles. No se publican mediciones de tokens por segundo ni de latencia por peticion.
+- VRAM estimada: en Q4_K_M, un modelo de 0,6B ocupa del orden de 0,4-0,5 GB de pesos; con overhead de contexto y runtime, cabe holgadamente en menos de 1-2 GB.
+- GPU recomendadas: cualquier GPU consumer reciente con 4 GB o mas; tambien funciona en CPU por su tamano reducido.
+- Cabe en GPU consumer: si, incluidas GTX 1650, RTX 3050, RTX 4060 y similares, asi como en hardware integrado.
+- Opciones de despliegue: llama.cpp y runtimes compatibles con GGUF (Ollama, LM Studio, llama-cpp-python); vLLM y TGI no estan confirmados para este artefacto.
+- Latencia y throughput: no disponibles; no se han publicado mediciones.
 
 ## Comparativa con modelos similares
 
-Los datos de las alternativas provienen de la informacion publica de sus respectivos modelos base y no han sido verificados en la busqueda realizada para esta ficha; se incluyen solo como referencia orientativa.
-
-| Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| beyvault-assistant | 596 M | no disponible | Fine-tune de tarea unica, salida JSON | Apache 2.0 | GGUF Q4_K_M en HF |
-| Qwen/Qwen3-0.6B (base) | ~0,6 B | no disponible en la informacion proporcionada | Modelo generalista | Apache 2.0 | Pesos completos en HF |
-| Qwen2.5-0.5B-Instruct | ~0,5 B | no verificado | Modelo generalista instruido | Apache 2.0 | Multiples formatos en HF |
-| SmolLM2-360M-Instruct | ~0,36 B | no verificado | Modelo generalista instruido | Apache 2.0 | Multiples formatos en HF |
-
-La diferencia clave frente a las alternativas no es de rendimiento bruto, sino de especializacion: beyvault-assistant esta optimizado para un esquema de salida concreto y penaliza el uso general, mientras que los modelos base y los instruct de tamano similar priorizan cobertura conversacional amplia.
+| Beyvault Assistant | 596 M | no disponible | Apache 2.0 | GGUF Q4_K_M | Ajuste especializado en JSON de esquema fijo |
+| Qwen/Qwen3-0.6B | 0,6 B | no disponible en esta ficha | Apache 2.0 | safetensors y GGUF | Modelo base generalista |
+| Modelos de extraccion estructurada de 0,5-1 B | no disponible | no disponible | variable | variable | Categoria comparable, sin datos concretos en la informacion disponible |
 
 ## Limitaciones y advertencias
 
-- Ambito extremadamente narrow: el autor indica explicitamente que no es un modelo de chat general y que da respuestas pobres fuera del formulario JSON para el que fue entrenado.
-- Riesgo alto de alucinacion estructural: al ser un modelo de 0,6 B, puede generar JSON sintacticamente valido pero con claves o valores incorrectos. Es imprescindible validar la salida contra un esquema (por ejemplo JSON Schema o Pydantic) antes de usarla.
-- Sesgos: no documentados. Al derivar de un modelo base pequeno, es previsible que herede sesgos del corpus de Qwen3, pero no hay evaluacion publicada al respecto.
-- Idiomas: no se declara lista de idiomas soportados; el rendimiento fuera del idioma o idiomas de entrenamiento del fine-tune es desconocido.
-- Contexto: la model card no especifica la ventana de contexto efectiva del fine-tune; conviene asumir que el modelo esta pensado para entradas cortas (preguntas breves).
-- Licencia: Apache 2.0 permite uso comercial y modificacion, pero el usuario debe verificar las obligaciones de atribucion y el cumplimiento de la licencia del modelo base Qwen3-0.6B.
-- Ausencia de validacion externa: 0 descargas y 0 likes en el momento de la consulta, sin benchmarks ni evaluaciones de terceros. No se recomienda su adopcion en produccion sin una evaluacion propia sobre el dominio objetivo.
-- Integridad del artefacto: se proporciona un hash SHA-256; conviene verificarlo tras la descarga, especialmente al tratarse de pesos cuantizados de un tercero.
-- Fecha de creacion del repositorio: 2026-10-20, sin actualizaciones posteriores registradas mas alla del mismo dia.
+- El autor advierte explicitamente de que no es un modelo de chat general y de que da respuestas pobres fuera del formulario JSON previsto.
+- No hay informacion sobre sesgos; al derivar de Qwen3-0.6B, puede heredar los del modelo base y los del dataset de ajuste, que no se documenta.
+- Riesgo de alucinacion alto en usos fuera de dominio y posible generacion de JSON invalido o incompleto si la entrada se aleja del formato de entrenamiento.
+- No se especifican idiomas soportados ni longitud de contexto efectiva tras el ajuste y la cuantizacion.
+- Ausencia total de benchmarks, lo que impide comparar su calidad de forma objetiva.
+- La licencia Apache 2.0 permite uso comercial, pero conviene verificar las condiciones del modelo base Qwen3-0.6B y validar el sha256 del artefacto antes de desplegarlo.
+- La cuantizacion Q4_K_M puede degradar la precision en tareas sensibles al formato; en produccion conviene validar la salida JSON con un esquema estricto.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/depontidanilo/beyvault-assistant
-- Modelo base Qwen/Qwen3-0.6B: https://huggingface.co/Qwen/Qwen3-0.6B
-- Repositorio de llama.cpp (runtime del artefacto GGUF): no incluido en la model card
-- Paper, blog o demo del autor: no disponibles
-- La busqueda web realizada no devolvio resultados relevantes sobre este modelo; los unicos resultados obtenidos eran contenido no relacionado y se han descartado.
+- Modelo base Qwen3-0.6B: https://huggingface.co/Qwen/Qwen3-0.6B
+- llama.cpp: https://github.com/ggml-org/llama.cpp

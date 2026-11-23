@@ -2,108 +2,113 @@
 
 ## Resumen
 
-Swift-Qwen3.8-27B-AWQ-INT4 es una version cuantizada a 4 bits (AWQ) del modelo ukisai/Swift-Qwen3.8-27b, publicada por el usuario cyankiwi. Se trata de un derivado de Qwen3.8-27B orientado a la eficiencia de razonamiento: segun la model card, reduce el numero de tokens de "thinking" en un 58,3 % manteniendo una perdida de rendimiento inferior al 1 % y logrando una aceleracion de x1,95 en varias tareas. La cuantizacion AWQ busca reducir el peso en disco y en VRAM para facilitar el despliegue en hardware mas modesto, manteniendo un pipeline multimodal de tipo image-text-to-text.
+Swift-Qwen3.8-27B-AWQ-INT4 es la versión cuantizada a 4 bits (AWQ) del modelo Swift-Qwen3.8-27B, desarrollado por UkisAI como derivado de Qwen3.8-27B. Se trata de un modelo multimodal de tipo image-text-to-text (acepta imágenes y texto), con 27.781 millones de parámetros totales y un enfoque explícito en la eficiencia del razonamiento: según el autor, reduce el consumo de tokens de "pensamiento" en un 58,3 % manteniendo una pérdida de rendimiento inferior al 1 %, lo que se traduce en una aceleración de hasta 1,95x en varias tareas.
 
-El modelo base fue desarrollado por UkisAI y se distribuye bajo la licencia swift-open-license-1.0, con acceso restringido (gated). Cuenta con 27.781.427.952 parametros (27,78 mil millones) y el repositorio ocupa 21,0 GB. La model card declara soporte para diez idiomas (ingles, chino, hindi, arabe, ruso, japones, coreano, neerlandes, frances y espanol) e incluye etiquetas de razonamiento eficiente en tokens, LoRA y compatible con endpoints.
+La relevancia del modelo reside en su propuesta de "reasoning eficiente": en lugar de maximizar la profundidad del razonamiento, penaliza durante el ajuste fino los tokens marcadores que provocan sobrepensamiento (overthinking) en los rollouts de razonamiento de Qwen. El resultado son trazas de razonamiento más cortas, menor coste de inferencia y, según el autor, menos errores derivados de razonar en exceso.
 
-La relevancia de esta ficha radica en que combina dos tendencias actuales: la reduccion del coste de inferencia en modelos de razonamiento (menos tokens generados por respuesta) y la cuantizacion de precisión reducida para servirlos en GPUs de gama alta de consumo o en nodos de inferencia economicos. No obstante, no se dispone de informacion completa sobre la longitud de contexto, la composicion del dataset de entrenamiento ni los resultados detallados de benchmarks de esta version cuantizada concreta.
+Esta variante concreta la publica cyankiwi, que aplica cuantización AWQ INT4 (calibrada con datos de STEM y agentic) sobre el modelo base de UkisAI, reduciendo el repositorio a 21,0 GB. Está pensada para despliegue en producción con `transformers` y `compressed-tensors`, y es compatible con endpoints. La licencia es la swift-open-license-1.0, con acceso restringido (gated).
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer multimodal (pipeline image-text-to-text) derivado de Qwen3.8-27B; no se detalla si emplea MoE o atencion hibrida: no disponible |
-| Parametros totales | 27.781.427.952 (27,78 mil millones) |
-| Parametros activos | no aplica / no disponible (no se indica que sea MoE) |
+| Arquitectura | Transformer multimodal (image-text-to-text), derivada de Qwen3.8-27B; tag de arquitectura `qwen3_5` / `qwen3_8` |
+| Parametros totales | 27.781.427.952 (27,78 B) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | AWQ INT4 (formato compressed-tensors), calibrado con el dataset "STEM and Agentic" de cyankiwi; el modelo base publica tambien GGUF |
-| Idiomas soportados | EN, ZH, HI, AR, RU, JA, KO, NL, FR, ES |
-| Licencia | swift-open-license-1.0 (license: other), con acceso restringido (gated) |
-| Formato de pesos | safetensors (compressed-tensors, AWQ INT4), compatible con transformers |
+| Tipos de cuantizacion | AWQ INT4 (pesos a 4 bits, activaciones con cuantizacion aware); formato `compressed-tensors` |
+| Idiomas soportados | no disponible |
+| Licencia | swift-open-license-1.0 (acceso restringido, `gated: true`) |
+| Formato de pesos | safetensors (compatible con `transformers` y `compressed-tensors`) |
+| Tamano del repositorio | 21,0 GB |
+| Modelo base | ukisai/Swift-Qwen3.8-27b |
+| Version de cuantizacion | cyankiwi 26.05.01 |
+| Dataset de calibracion | cyankiwi/calibration (STEM y agentic) |
+| Pipeline | image-text-to-text |
 
 ## Arquitectura y entrenamiento
 
-El modelo base Qwen3.8-27B es un transformer multimodal que acepta entradas de imagen y texto. Sobre el, UkisAI entreno el derivado Swift mediante un proceso de ajuste fino orientado a penalizar los tokens marcadores de razonamiento que, segun su analisis, disparan el "overthinking" en los rollouts de razonamiento de Qwen. El resultado son trazas de pensamiento mas cortas, con menos errores por sobre-razonamiento segun las pruebas del autor. Ademas, Swift incorpora un componente de transferencia derivado de ThinkingCap-Qwen3.6-27B de BottleCap AI, segun se indica en la model card.
+El modelo base es un transformer multimodal de 27,78 B de parámetros derivado de Qwen3.8-27B. El ajuste propietario de UkisAI (Swift) se basa en identificar tokens marcadores de razonamiento que, según su análisis, disparan el sobrepensamiento en los rollouts de Qwen, y en penalizar su uso durante el ajuste fino. Además, incorpora un componente de transferencia derivado de ThinkingCap-Qwen3.6-27B (BottleCap AI). No se especifican en la información disponible el número de tokens de entrenamiento, la composición del dataset ni si se emplearon RLHF o DPO.
 
-La capa que anade cyankiwi es puramente de cuantizacion: pesos en INT4 con la tecnica AWQ (Activation-aware Weight Quantization), calibrados con un dataset propio de contenido STEM y agentico. La model card de esta version indica la fecha de version 26.05.01 y un tamano de 21,02 GB. No se especifica el numero de tokens de entrenamiento, la composicion exacta del dataset ni si se emplearon tecnicas de RLHF o DPO. Tampoco se documenta si la cuantizacion se aplico unicamente a las capas de lenguaje o tambien al encoder visual, ni el impacto de la cuantizacion sobre las capacidades multimodales.
+La variante aquí descrita es una cuantización AWQ de 4 bits realizada por cyankiwi, calibrada con un dataset propio orientado a STEM y escenarios agénticos. AWQ preserva los canales de pesos más sensibles a la activación, lo que permite reducir el peso del modelo de forma significativa con una degradación controlada. No se detallan innovaciones adicionales de decodificación especulativa ni mecanismos de atención lineal en la información proporcionada.
 
 ## Capacidades
 
-- Generacion de texto conversacional multi-turno en los diez idiomas declarados.
-- Razonamiento con modo de pensamiento ("thinking") optimizado para generar trazas mas cortas y eficientes en tokens.
-- Procesamiento de imagenes ademas de texto (pipeline image-text-to-text), es decir, entrada visual junto con instrucciones en lenguaje natural.
-- Etiquetas declaradas de eficiencia de tokens, razonamiento y "efficient-thinking", orientadas a reducir el coste por respuesta.
-- Conversacion asistida por LoRA (etiqueta lora en los metadatos), lo que sugiere compatibilidad con adaptadores.
-- Compatibilidad declarada con endpoints (tag endpoints_compatible) para despliegue gestionado.
-- Soporte de tool calling y function calling: no confirmado de forma explicita en la informacion disponible.
-- Capacidades de agente y razonamiento multi-paso: la calibracion se realizo con datos "STEM and Agentic", lo que sugiere orientacion a flujos agenticos, pero no se documentan capacidades concretas.
-- Capacidades de audio o vision avanzada mas alla de image-text-to-text: no disponible.
+- Generación de texto y razonamiento con trazas de pensamiento más cortas que el modelo Qwen original (reducción declarada del 58,3 % en tokens de razonamiento).
+- Procesamiento de imágenes y texto (pipeline image-text-to-text): descripción de imágenes, respuesta a preguntas visuales y razonamiento sobre contenido gráfico.
+- Razonamiento eficiente en tokens ("efficient-thinking", "token-efficient"), orientado a reducir latencia y coste por consulta.
+- Capacidades de código y matemáticas implícitas en su origen Qwen y en el calibrado STEM del proceso de cuantización (sin cifras publicadas específicas).
+- Soporte conversacional multi-turno.
+- Integración con `transformers` y `compressed-tensors`; compatible con endpoints.
+- Soporte de tool calling / function calling: no confirmado explícitamente en la información disponible.
+- Capacidades agénticas y de razonamiento multi-paso: el modelo base se asocia a tags de razonamiento y el calibrado incluye datos agentic, pero no se documentan detalles.
+- Capacidades multilingües: no disponibles.
 
 ## Casos de uso
 
-- Razonamiento tecnico con coste controlado: el modelo esta disenado para reducir un 58,3 % los tokens de pensamiento, de modo que tareas de matematicas, logica o analisis en las que el coste se mide por token generado resultan notablemente mas baratas en produccion que con el modelo base sin el ajuste Swift.
-- Asistente de analisis de documentos con imagenes: al aceptar entradas image-text-to-text, puede recibir capturas, diagramas, graficos o paginas escaneadas junto a una pregunta en lenguaje natural y devolver una respuesta razonada.
-- Agentes de automatizacion STEM: la calibracion AWQ se hizo sobre datos STEM y agenticos, por lo que el caso natural es la resolucion de tareas cientificas o de ingenieria dentro de bucles de agente con multiples iteraciones.
-- Atencion al cliente multilingue: con soporte declarado para diez idiomas (incluido el espanol), permite atender conversaciones en varios mercados sin desplegar un modelo distinto por idioma, siempre que se valide la calidad real por idioma.
-- Despliegue en GPUs de consumo para prototipado interno: la cuantizacion INT4 reduce el peso del modelo a un rango que cabe en GPUs de 24 GB, lo que facilita entornos de desarrollo y demos sin depender de clústeres de A100/H100.
-- Generacion asistida de codigo con razonamiento breve: la reduccion de trazas de pensamiento es util en pipelines de CI/CD donde la latencia por invocacion importa; la demo del autor utiliza un prompt de LiveCodeBench v6 como ejemplo.
-- Servicio de inferencia con vLLM o SGLang: al estar en formato compressed-tensors AWQ, es desplegable en motores de serving que soportan cuantizacion INT4, lo que permite mayor throughput por GPU que una version BF16.
+- Asistentes de razonamiento en producción con coste controlado: al generar trazas de pensamiento un 58,3 % más cortas, el modelo reduce el número de tokens de salida por consulta, lo que abarata la inferencia en escenarios de razonamiento complejo (matemáticas, lógica, análisis) sin sacrificar, según el autor, más de un 1 % de rendimiento.
+- Análisis de documentos e imágenes en pipelines STEM: gracias a su naturaleza image-text-to-text y a la calibración en datos STEM, puede emplearse para extraer y razonar sobre figuras, tablas o diagramas técnicos en flujos de investigación e ingeniería.
+- Automatización de soporte técnico especializado: con 27,78 B de parámetros y capacidad conversacional, puede gestionar diálogos multi-turno sobre temas técnicos donde se requiere razonamiento encadenado, beneficiándose del menor consumo de tokens.
+- Generación asistida de código en entornos de desarrollo: su origen Qwen y el calibrado agentic lo hacen adecuado para tareas de completado y revisión de código, aunque no se han publicado métricas específicas de HumanEval o LiveCodeBench para esta variante cuantizada.
+- Despliegue en infraestructura con VRAM limitada: la cuantización AWQ INT4 reduce el peso a 21 GB, lo que permite servir el modelo en una sola GPU de 24 GB (por ejemplo, RTX 4090 o L4) en lugar de requerir hardware de 80 GB para la versión BF16.
+- Evaluación comparativa de eficiencia de razonamiento: útil para investigadores que quieran medir el impacto de la reducción de tokens de pensamiento frente al modelo Qwen3.8-27B original en sus propios benchmarks.
+- Prototipado de agentes multimodales: al combinar entrada de imagen y texto con razonamiento eficiente, sirve para construir agentes que interpretan capturas, diagramas o documentos escaneados y actúan en consecuencia.
 
 ## Benchmarks y rendimiento
 
-La model card del autor incluye una tabla de benchmarks que compara Qwen3.8-27B BF16 con el mismo modelo mas el adaptador Swift, pero el contenido de dicha tabla no esta disponible en la informacion proporcionada (aparece truncado). Los unicos datos agregados disponibles son los siguientes, referidos al adaptador Swift sobre la base BF16 y no a esta version AWQ INT4:
+La model card del autor incluye una tabla de evaluación que compara Qwen3.8-27B en BF16 con el mismo modelo más el adaptador Swift, con columnas de puntuación, tokens de razonamiento y mediana. Sin embargo, los valores numéricos concretos no están disponibles en la información proporcionada (la tabla aparece truncada en el HTML de la model card). El autor declara de forma cualitativa:
 
-| Metrica | Valor declarado |
-|---|---|
-| Reduccion de tokens de pensamiento | 58,3 % menos |
-| Perdida de rendimiento | inferior al 1 % |
-| Aceleracion en varias tareas | x1,95 |
-| Resultados por benchmark (MMLU, HumanEval, GSM8K, LiveCodeBench, etc.) | no disponible |
+- Reducción del 58,3 % en tokens de pensamiento.
+- Pérdida de rendimiento inferior al 1 %.
+- Aceleración de hasta 1,95x en varias tareas.
+- La demo de velocidad utiliza un prompt de muestra de LiveCodeBench v6.
 
-No se han publicado en la informacion disponible resultados de benchmarks especificos de la version cuantizada AWQ INT4 de cyankiwi. Cualquier cifra de rendimiento de la version INT4 deberia medirse localmente, ya que la cuantizacion a 4 bits puede degradar la calidad respecto a BF16.
+No se han publicado resultados numéricos de benchmarks (MMLU, HumanEval, GSM8K, etc.) en la información disponible, ni para el modelo base ni para esta cuantización AWQ INT4.
 
 ## Requisitos de hardware
 
-- VRAM estimada para pesos en INT4: aproximadamente 14-15 GB para los 27,78 mil millones de parametros a 4 bits, mas overhead de runtime, cache KV y activaciones; en la practica se recomienda reservar 16-20 GB.
-- Cabe en GPU de consumo: si, en RTX 4090 (24 GB), RTX 3090 (24 GB) y RTX 5090 (32 GB). En GPUs de 16 GB como la RTX 4080 el margen es muy ajustado y dependera de la longitud de contexto y del soporte multimodal.
-- GPUs profesionales recomendadas: A100 40/80 GB, H100 80 GB, L40S 48 GB o A6000 48 GB para lotes grandes y contextos largos.
-- Despliegue: vLLM o SGLang con soporte compressed-tensors/AWQ; TGI; transformers con las librerias de cuantizacion correspondientes. llama.cpp y Ollama requieren formato GGUF, disponible para el modelo base (ukisai/Swift-Qwen3.8-27B-GGUF) pero no en este repositorio.
-- Latencia y throughput: no disponible. La aceleracion de x1,95 declarada en la model card se refiere al ahorro por generacion de menos tokens de razonamiento, no a una medicion de throughput por GPU.
+- VRAM estimada para inferencia: aproximadamente 21 GB solo para pesos en INT4; con overhead de activaciones y caché KV, se recomienda al menos 24 GB de VRAM para contextos moderados.
+- GPU recomendadas: una sola GPU de 24 GB (RTX 4090, L4, A10G) para despliegue básico; A100 40/80 GB o H100 para mayor concurrencia y contextos largos.
+- Cabe en GPU de consumo: sí, en RTX 4090 (24 GB) y potencialmente en RTX 3090 (24 GB), siempre que el contexto y el batch se mantengan moderados.
+- Opciones de despliegue: `transformers` con `compressed-tensors` (soporte nativo declarado); vLLM y TGI son compatibles con AWQ/compressed-tensors en general, aunque no se confirma explícitamente en la información disponible; llama.cpp/Ollama requerirían una conversión a GGUF (existe una variante GGUF del modelo base de UkisAI, no de esta cuantización).
+- Latencia y throughput: no disponibles. El autor declara una aceleración de 1,95x atribuible a la reducción de tokens de razonamiento, no a la cuantización.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Cuantizacion | Licencia | Notas |
 |---|---|---|---|---|---|
-| cyankiwi/Swift-Qwen3.8-27B-AWQ-INT4 | 27,78 mil millones | no disponible | safetensors AWQ INT4 | swift-open-license-1.0 (gated) | Hugging Face |
-| ukisai/Swift-Qwen3.8-27b (base) | 27B aprox. (no confirmado) | no disponible | safetensors (BF16) | swift-open-license-1.0 | Hugging Face |
-| Qwen3.8-27B BF16 (modelo de referencia de la model card) | 27B aprox. | no disponible | safetensors | no disponible | no disponible |
-| bottlecapai/ThinkingCap-Qwen3.6-27B | no disponible | no disponible | no disponible | no disponible | Hugging Face |
+| cyankiwi/Swift-Qwen3.8-27B-AWQ-INT4 | 27,78 B | no disponible | AWQ INT4 | swift-open-license-1.0 (gated) | Variante cuantizada de Swift; 21 GB |
+| ukisai/Swift-Qwen3.8-27b | 27,78 B | no disponible | BF16 | swift-open-license-1.0 | Modelo base sin cuantizar; mayor VRAM |
+| Qwen3.8-27B (original) | 27 B (aprox.) | no disponible | BF16 y otras | licencia Qwen (no confirmada) | Razonamiento más verboso; sin reducción de tokens |
+| bottlecapai/ThinkingCap-Qwen3.6-27B | 27 B (aprox.) | no disponible | no disponible | no disponible | Fuente del componente de transferencia de Swift |
 
-No se dispone de datos suficientes para comparar rendimiento entre estas alternativas. La comparacion relevante es funcional: la version de cyankiwi ofrece el mismo modelo con menor huella de memoria a cambio de una posible perdida de calidad por la cuantizacion INT4, mientras que el modelo base y su variante GGUF conservan mayor precision o mayor compatibilidad con herramientas de inferencia en CPU.
+No se dispone de datos de rendimiento comparativos numéricos en la información proporcionada, por lo que la comparativa se limita a parámetros, licencia y disponibilidad.
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio esta marcado como gated, por lo que es necesario aceptar las condiciones del autor antes de descargar los pesos.
-- Licencia no estandar: swift-open-license-1.0 es una licencia personalizada con enlace a un texto especifico; es imprescindible revisarla antes de cualquier uso comercial o empresarial, ya que puede incluir restricciones o requerir licencia de empresa ("Enterprise licensing" se menciona en la model card).
-- Perdida por cuantizacion: la cuantizacion AWQ INT4 puede degradar la calidad respecto al modelo en BF16, especialmente en tareas de razonamiento largo, matematicas y codigo. No hay datos publicados del impacto real en esta version.
-- Riesgo de alucinacion: no se documentan tasas de alucinacion ni evaluaciones de fidelidad; como en cualquier modelo de lenguaje, existe riesgo, y la reduccion forzada de tokens de razonamiento podria incrementar la tasa de errores en tareas que requieren cadenas largas de deduccion.
-- Idiomas: la lista de idiomas procede de la model card, pero no se aportan metricas por idioma; la calidad en espanol, hindi, arabe o coreano no esta cuantificada.
-- Longitud de contexto: no disponible, lo que impide planificar despliegues con documentos extensos o conversaciones de muchos turnos.
-- Capacidades agenticas y tool calling: la calibracion se hizo con datos agenticos, pero no se documenta el soporte formal de function calling en esta version cuantizada.
-- Sesgos: no se ha publicado ninguna evaluacion de sesgos, toxicidad o seguridad para este modelo ni para su base.
-- Modelo reciente y con poca traccion: el repositorio registra 0 descargas y 0 "likes" en el momento de la consulta, por lo que no existe validacion independiente de la comunidad.
-- Detalles de entrenamiento incompletos: no se especifican tokens de entrenamiento, composicion del dataset, ni el uso de RLHF/DPO.
+- Acceso restringido: el repositorio está marcado como `gated: true`; es necesario solicitar acceso en Hugging Face.
+- Licencia swift-open-license-1.0: es una licencia "other" con términos propios; es imprescindible revisar el enlace de licencia del modelo base antes de cualquier uso comercial. UkisAI ofrece licencias enterprise por separado.
+- La cuantización AWQ INT4 introduce degradación adicional respecto al modelo BF16; el autor solo reporta la pérdida del adaptador Swift (<1 %), no la pérdida acumulada por la cuantización.
+- Riesgo de alucinación: inherente a los modelos de razonamiento de este tamaño; la reducción de tokens de pensamiento podría aumentar el riesgo en tareas que requieren cadenas de razonamiento largas, aunque el autor afirma observar menos errores de sobrepensamiento.
+- Idiomas soportados no documentados: no se puede garantizar un rendimiento adecuado fuera de los idiomas principales del modelo Qwen subyacente.
+- Longitud de contexto no disponible: no se puede planificar el despliegue para casos de contexto largo sin verificación empírica.
+- Sin benchmarks numéricos publicados para esta variante cuantizada: las afirmaciones de rendimiento del autor (58,3 % menos tokens, <1 % de pérdida, 1,95x) corresponden al adaptador Swift sobre BF16, no a esta cuantización AWQ.
+- Soporte de tool calling no confirmado: verificar antes de integrar en pipelines agénticos.
+- Fecha de creación (2026-09-18) y actualización (2026-10-19): comprobar que la versión de calibración (cyankiwi 26.05.01) coincide con la esperada.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/cyankiwi/Swift-Qwen3.8-27B-AWQ-INT4
 - Modelo base: https://huggingface.co/ukisai/Swift-Qwen3.8-27b
 - Licencia del modelo base: https://huggingface.co/ukisai/Swift-Qwen3.8-27b/blob/main/LICENSE
-- Version GGUF del modelo base: https://huggingface.co/ukisai/Swift-Qwen3.8-27B-GGUF
-- Dataset de calibracion usado por el cuantizador: https://huggingface.co/datasets/cyankiwi/calibration
-- Componente de transferencia: https://huggingface.co/bottlecapai/ThinkingCap-Qwen3.6-27B
-- Web del desarrollador: https://ukisai.com
-- Pagina de producto: https://ukisai.com/products/swift
-- Demo en video del modelo base: https://huggingface.co/ukisai/Swift-Qwen3.8-27b/resolve/main/swift-speed-demo.mp4
-- Contacto del cuantizador: ton@cyan.kiwi
-- Nota: la busqueda web realizada no ha devuelto enlaces relevantes sobre este modelo; los unicos resultados obtenidos corresponden a un curriculum educativo no relacionado.
+- Variante GGUF del modelo base: https://huggingface.co/ukisai/Swift-Qwen3.8-27B-GGUF
+- Dataset de calibración: https://huggingface.co/datasets/cyankiwi/calibration
+- Modelo fuente del componente de transferencia: https://huggingface.co/bottlecapai/ThinkingCap-Qwen3.6-27B
+- Web de cyankiwi: https://cyan.kiwi/
+- Despliegue en endpoints de cyankiwi: https://cyan.kiwi/workspace?prompt=Deploy%20cyankiwi/Swift-Qwen3.8-27B-AWQ-INT4
+- Modelos de cyankiwi en Hugging Face: https://huggingface.co/cyankiwi
+- Modelos de cyankiwi en ModelScope: https://www.modelscope.ai/organization/cyankiwi
+- Web de UkisAI: https://ukisai.com
+- Producto Swift de UkisAI: https://ukisai.com/products/swift
+- X de cyankiwi: https://x.com/cyankiwi_ai
+- Reddit de cyankiwi: https://www.reddit.com/r/cyankiwi/

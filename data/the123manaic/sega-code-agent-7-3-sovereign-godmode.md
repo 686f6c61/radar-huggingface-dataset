@@ -1,69 +1,86 @@
 # the123manaic/Sega-Code-Agent-7.3-Sovereign-Godmode
 
 ## Resumen
-Sega-Code-Agent-7.3-Sovereign-Godmode es un modelo publicado en Hugging Face por el usuario the123manaic bajo el identificador `sega-agent-7.3` y la etiqueta de arquitectura `sega_tot_moe`. La model card lo presenta como un supuesto "compilador autónomo full-stack" de 128B parámetros de la ficticia "Segacopter Technology", con cifras de rendimiento muy llamativas (468 tokens/s, 99,95 % de eficiencia de tokens, "Epistemic IQ" del 99,9999 %).
 
-Sin embargo, los datos reales del repositorio contradicen frontalmente esa descripción: el recuento de parámetros en los ficheros safetensors es de 1.792 parámetros totales, no 128B. Se trata, por tanto, de un artefacto de tamaño trivial, sin descargas ni likes, creado y actualizado el 15 de noviembre de 2026, y cuya model card contiene afirmaciones no verificables. Esta ficha recoge lo que es comprobable y marca explícitamente como no disponible todo lo que no lo es.
+Sega-Code-Agent-7.3-Sovereign-Godmode es un modelo de generación de texto publicado en Hugging Face por el usuario the123manaic bajo el identificador `sega-agent-7.3`, presuntamente desarrollado por "Segacopter Technology". La model card lo presenta como un "compilador autónomo full-stack" de 128B parámetros con arquitectura propietaria `SegaForCausalLM` y un mecanismo de razonamiento basado en tree-of-thought con verificación especulativa. Sin embargo, los metadatos reales del repositorio contradicen frontalmente estas afirmaciones: el recuento de parámetros de los ficheros safetensors es de 1792 parámetros, no 128B.
 
-El interés práctico del modelo es prácticamente nulo para producción: no hay evidencia de entrenamiento real, benchmarks publicados ni datos de idiomas. Se documenta aquí por rigor y para advertir a quien lo encuentre en el Hub de que las métricas declaradas no están respaldadas por los artefactos del repositorio.
+El modelo se distribuye con licencia Apache 2.0 y es compatible con la librería `transformers` y el pipeline `text-generation`. La etiqueta `sega_tot_moe` sugiere una arquitectura de mezcla de expertos con tree-of-thought, pero no se aporta documentación técnica verificable al respecto. Las cifras declaradas en la model card (468 tokens/s, "Epistemic IQ" del 99,9999 %, eficiencia de tokens del 99,95 %) no son métricas estándar ni auditables y deben tratarse con escepticismo.
+
+La relevancia de esta ficha es fundamentalmente crítica: el repositorio presenta una discrepancia severa entre las capacidades declaradas y los artefactos publicados, lo que lo convierte en un caso de estudio sobre la necesidad de verificar pesos y metadatos antes de integrar un modelo en producción. No se dispone de información sobre idiomas soportados, datos de entrenamiento ni resultados de benchmarks.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | `SegaForCausalLM` (según model card); tag `sega_tot_moe`; naturaleza real no verificable |
-| Parametros totales | 1.792 (dato real de safetensors); la model card declara 128B, dato no contrastado |
+| Arquitectura | `SegaForCausalLM` (declarada); etiqueta `sega_tot_moe` sugiere MoE con tree-of-thought, no verificable |
+| Parametros totales | 1792 (según safetensors); la model card declara 128B, dato no coincidente |
 | Parametros activos | no disponible |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible (pesos en safetensors; sin variantes GGUF publicadas) |
+| Tipos de cuantizacion | no disponible (solo se publican pesos safetensors) |
 | Idiomas soportados | no disponible |
-| Licencia | apache-2.0 |
+| Licencia | Apache 2.0 |
 | Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
-La model card declara una arquitectura denominada `SegaForCausalLM` y menciona mecanismos de "Tree-of-Thought Verification" con 40 pasadas y 2.048 ramas especulativas, además de un supuesto motor de decodificación especulativa. No se aporta ninguna descripción técnica verificable de capas, atención, mezcla de expertos ni tokenizador. El tag `sega_tot_moe` sugiere una intención de arquitectura MoE con tree-of-thought, pero no hay evidencia en el repositorio que lo respalde.
 
-No hay información sobre volumen de tokens de entrenamiento, composición del dataset, fases de preentrenamiento, SFT, RLHF o DPO. El recuento real de parámetros (1.792) es incompatible con cualquier modelo de lenguaje funcional, lo que apunta a un repositorio de prueba, una broma o un artefacto mal publicado. Cualquier afirmación sobre entrenamiento debe considerarse no disponible.
+La model card declara una arquitectura propietaria denominada `SegaForCausalLM`, con un supuesto mecanismo de tree-of-thought que realizaría 40 pasadas de verificación sobre 2048 ramas especulativas. La etiqueta `sega_tot_moe` apunta a una mezcla de expertos combinada con razonamiento arbóreo, pero no se proporciona ningún detalle sobre el número de expertos, el enrutamiento, la dimensionalidad de las capas ni la función de activación.
+
+No hay información sobre el volumen de tokens de entrenamiento, la composición del dataset, ni si se aplicaron técnicas de RLHF, DPO o ajuste supervisado. Tampoco se documenta ninguna innovación técnica verificable (decodificación especulativa real, atención lineal, etc.). El recuento de 1792 parámetros en safetensors es incompatible con un modelo de 128B y sugiere que el repositorio contiene pesos truncados, de prueba o corruptos, o que la model card es ficticia.
 
 ## Capacidades
-- Generación de texto: el pipeline declarado es `text-generation`, pero el tamaño real de los pesos hace inviable una generación de texto coherente.
-- Razonamiento y tree-of-thought: mencionados en la model card, sin evidencia verificable.
-- Generación de código y "compilación full-stack": declarada en la model card, sin evidencia verificable.
-- Tool calling / function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: declarado de forma genérica, sin evidencia.
-- Capacidades multilingües: no disponible (no se listan idiomas).
-- Capacidades especiales (visión, audio, thinking mode): no disponible.
+
+- Generación de texto según el pipeline declarado (`text-generation`).
+- Razonamiento y verificación tree-of-thought: declarado en la model card, no verificable con los pesos publicados.
+- Generación de código y "compilación full-stack": declarado, sin evidencia técnica.
+- Soporte de tool calling / function calling: no disponible.
+- Soporte de agentes y razonamiento multi-paso: declarado de forma genérica, sin documentación.
+- Capacidades multilingües: no disponible.
+- Modo thinking, visión o audio: no disponible.
 
 ## Casos de uso
-- Evaluación de integridad del Hub: sirve como caso de estudio para detectar model cards con métricas no respaldadas por los artefactos del repositorio (128B declarados frente a 1.792 parámetros reales).
-- Pruebas de carga de `transformers`: útil para verificar que un pipeline mínimo de `AutoModelForCausalLM` y `AutoTokenizer` funciona con un repositorio safetensors de tamaño trivial, sin coste de cómputo.
-- Docencia sobre verificación de modelos: ejemplo práctico de por qué conviene inspeccionar el recuento de parámetros y los ficheros antes de confiar en una model card.
-- Automatización de auditoría de repositorios: puede integrarse en scripts que comparen metadatos declarados con los tensores reales para marcar discrepancias.
-- Pruebas de CI/CD de herramientas de inferencia: repositorio ligero para validar rutas de descarga, caché y carga sin consumir VRAM significativa.
-- No es adecuado para atención al cliente, generación de código en producción, agentes autónomos ni ninguna tarea que requiera un modelo de lenguaje funcional, dado el tamaño real de los pesos.
+
+- Evaluación crítica de repositorios de Hugging Face: usar este modelo como ejemplo práctico en formación de equipos sobre verificación de metadatos (`safetensors` parameter count) frente a afirmaciones de model cards.
+- Pruebas de integración del pipeline `transformers`: validar que el flujo `AutoTokenizer` + `AutoModelForCausalLM.from_pretrained(..., use_safetensors=True)` funciona sobre un checkpoint mínimo de 1792 parámetros.
+- Docencia sobre licencias abiertas: analizar la diferencia entre una licencia Apache 2.0 declarada y la ausencia de documentación técnica que permita un uso comercial responsable.
+- Investigación sobre desalineación entre model cards y artefactos: medir la brecha entre métricas declaradas (468 tokens/s, "Epistemic IQ") y métricas reproducibles.
+- Test de pipelines de CI que validan repositorios antes de desplegar: comprobar que un chequeo automático de número de parámetros habría bloqueado este modelo.
+- Experimentación con arquitecturas MoE declaradas: inspeccionar la configuración publicada para entender cómo se etiqueta un modelo como `sega_tot_moe` sin pesos coherentes.
 
 ## Benchmarks y rendimiento
-No se han publicado resultados de benchmarks en la información disponible. Las cifras de la model card (468 tokens/s, 99,95 % de eficiencia, "Epistemic IQ" 99,9999 %) no son verificables y no se presentan como resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u otros).
+
+No se han publicado resultados de benchmarks en la informacion disponible. Las cifras de la model card (468 tokens/s, eficiencia del 99,95 %, "Epistemic IQ" del 99,9999 %) no corresponden a métricas estándar (MMLU, HumanEval, GSM8K) y no son reproducibles ni auditables.
 
 ## Requisitos de hardware
-- VRAM estimada para inferencia: inferior a 1 MB con los pesos reales en safetensors; cualquier GPU consumer, e incluso CPU, puede cargar el repositorio.
-- GPU recomendadas: ninguna específica; el tamaño no requiere acelerador dedicado.
-- Cabe en cualquier GPU consumer (RTX 3060, RTX 4090, etc.) y en CPU.
-- Opciones de despliegue: `transformers` con safetensors; no hay variantes GGUF publicadas para llama.cpp u Ollama, ni configuración documentada para vLLM o TGI.
-- Latencia y throughput: no disponible; las cifras declaradas por el autor no son contrastables.
+
+- VRAM estimada para inferencia: inferior a 1 GB con los 1792 parámetros publicados en safetensors (en float32, aproximadamente 7 KB de pesos).
+- GPU recomendadas: cualquier GPU consumer (RTX 3060, RTX 4090) o incluso CPU para los pesos publicados; los requisitos de un supuesto modelo de 128B serían de decenas de GB, pero no existen tales pesos en el repositorio.
+- Cabe en GPU consumer: sí, con los pesos publicados.
+- Opciones de despliegue: `transformers` (declarado), potencialmente llama.cpp u Ollama si se convirtieran los pesos, no documentado.
+- Latencia y throughput estimados: no disponible; la cifra de 468 tokens/s de la model card no es verificable.
 
 ## Comparativa con modelos similares
-No disponible. No hay modelos comparables de la misma categoría identificables a partir de la información proporcionada, y las afirmaciones de la model card (128B, MoE, tree-of-thought) no permiten emparejarlo con alternativas reales de forma fiable.
+
+| Modelo | Parametros | Contexto | Licencia | Disponibilidad |
+|---|---|---|---|---|
+| Sega-Code-Agent-7.3-Sovereign-Godmode | 1792 (declara 128B) | no disponible | Apache 2.0 | Hugging Face, 453 descargas |
+| Qwen2.5-Coder-7B | 7B | 32K | Apache 2.0 | Hugging Face, ampliamente verificado |
+| DeepSeek-Coder-V2-Lite | 16B (2.4B activos, MoE) | 128K | DeepSeek License | Hugging Face, benchmarks publicados |
+| CodeLlama-7B | 7B | 16K | Llama 2 License | Hugging Face, benchmarks publicados |
+
+La comparación es asimétrica: los tres modelos de referencia cuentan con pesos coherentes, benchmarks publicados y documentación técnica; el modelo analizado no permite una comparación funcional por la discrepancia entre parámetros declarados y publicados.
 
 ## Limitaciones y advertencias
-- Discrepancia crítica entre los 128B declarados y los 1.792 parámetros reales en safetensors; las métricas de la model card no están respaldadas por el repositorio.
-- Ausencia total de datos sobre entrenamiento, dataset, tokenizador e idiomas.
-- Riesgo elevado de alucinación y de salidas incoherentes por el tamaño real del modelo.
-- Sin benchmarks publicados ni evaluaciones independientes.
-- Licencia apache-2.0 permite uso comercial según los términos de la licencia, pero la falta de calidad verificable hace desaconsejable cualquier uso en producción.
-- Sin descargas ni likes en el momento de la consulta; sin mantenimiento ni comunidad documentada.
-- No debe citarse como modelo de referencia en comparativas técnicas sin verificación previa de los artefactos.
+
+- Discrepancia crítica entre los 128B parámetros declarados y los 1792 parámetros reales en safetensors: el modelo no puede ejecutar las capacidades descritas.
+- Métricas no estándar y no auditables ("Epistemic IQ", "Token Efficiency") que no deben citarse como evidencia de rendimiento.
+- Ausencia total de información sobre datos de entrenamiento, sesgos y composición del corpus.
+- Riesgo elevado de alucinación y de comportamiento degenerado por el tamaño real del checkpoint.
+- Idiomas soportados no documentados; no se puede garantizar un comportamiento correcto en castellano ni en ningún otro idioma.
+- Licencia Apache 2.0 declarada, pero la falta de documentación técnica impide evaluar restricciones reales para uso comercial en producción.
+- No apto para despliegue en producción sin una auditoría previa de pesos, configuración y comportamiento.
+- Nombre y etiquetas del repositorio ("Sovereign-Godmode", "Segacopter Technology") sugieren un origen no corporativo y sin respaldo de un laboratorio reconocido.
 
 ## Enlaces
-- Repositorio en Hugging Face: https://huggingface.co/the123manaic/Sega-Code-Agent-7.3-Sovereign-Godmode
-- No se han encontrado papers, blogs, repositorios de código ni demos adicionales en la información disponible.
+
+- Modelo en Hugging Face: https://huggingface.co/the123manaic/Sega-Code-Agent-7.3-Sovereign-Godmode
+- Perfil del autor: https://huggingface.co/the123manaic

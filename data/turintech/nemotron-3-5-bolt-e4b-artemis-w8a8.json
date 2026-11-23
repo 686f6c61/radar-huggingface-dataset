@@ -52,16 +52,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "turintech/Nemotron-3.5-Bolt-E4B-Artemis-GGUF · Hugging Face",
-      "url": "https://huggingface.co/turintech/Nemotron-3.5-Bolt-E4B-Artemis-GGUF?local-app=vllm",
-      "snippet": "Quick Links Read the vLLM documentation Nemotron 3.5 Bolt E4B — Artemis Run it Faster generation with NVIDIA's DFlash drafter Run it with Ollama Run it with LM Studio Choose this model Files Additional variants Results How it was tested Recommendation notes How the files were chosen KL on held-out texts Task suite on two AMD Ryzen 9 5900X machines Speed and memory on an RTX 3060 Calibration ..."
-    },
-    {
-      "title": "turintech/Nemotron-3.5-Bolt-E4B-Artemis-GGUF at main",
-      "url": "https://huggingface.co/turintech/Nemotron-3.5-Bolt-E4B-Artemis-GGUF/tree/main",
-      "snippet": "Llamanew LM Studio Jan vLLM How to use turintech/Nemotron-3.5-Bolt-E4B-Artemis-GGUF with vLLM: Install from pip and serve model"
-    }
-  ]
+  "sources": []
 }

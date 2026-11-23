@@ -2,95 +2,94 @@
 
 ## Resumen
 
-Gemma 4 E2B Español compact for Fluent Books es una adaptación del modelo base google/gemma-4-E2B-it de Google, publicada por el usuario lazarenkod, especializada en una única tarea: traducir frases de novelas en español al ruso. No se trata de un modelo conversacional de propósito general, sino de un componente de inferencia en dispositivo (on-device) para la aplicación Fluent Books, un lector que asiste a hablantes de ruso en la lectura de obras en otros idiomas. El modelo se distribuye en formato GGUF cuantizado a IQ4_XS, con una tabla de proyección por capa en Q8_0, y ocupa 967.251.872 bytes (aproximadamente 1 GB).
+Gemma 4 E2B Español compact for Fluent Books (light-2) es un modelo derivado de `google/gemma-4-E2B-it`, publicado por el usuario lazarenkod, especializado en una única tarea: traducir frases de novelas en español al ruso en dispositivos con recursos limitados. No es un modelo conversacional generalista; está ajustado y destilado para responder a la instrucción "traduce esta frase de una novela" y nada más. Se distribuye como GGUF cuantizado en IQ4_XS (con la proyección por capa en Q8_0) y ocupa 967.251.872 bytes.
 
-La relevancia de esta ficha reside en su enfoque de ingeniería: parte de un modelo de 1.814.683.171 parámetros, recorta el vocabulario a 48.000 tokens, aplica un ajuste fino con LoRA sobre 38.336 filas de datos, estrecha las capas feed-forward de las 35 capas a 6.144 neuronas y destila el resultado en un modelo más pequeño. El objetivo es reducir el consumo de memoria hasta unos 1,4 GB en CPU con llama.cpp y un contexto de 2.048 tokens, manteniendo una calidad de traducción aceptable para frases de novela. La licencia es Apache-2.0, heredada del modelo base.
+El modelo parte de Gemma 4 E2B (arquitectura transformer, licencia Apache-2.0) con un vocabulario recortado a 48.000 tokens, ajuste LoRA sobre 38.336 filas y una reducción de las capas feed-forward de las 35 capas a 6.144 neuronas, manteniendo todas las capas. Posteriormente se destiló desde la variante ES2 (el modelo "full") sobre el mismo conjunto de datos, con dos épocas y una pérdida combinada de entropía cruzada y KL contra los logits de ES2. El resultado es un modelo de 1.814.683.171 parámetros totales (según safetensors del modelo base) pensado para ejecutarse en llama.cpp sobre CPU con un consumo de memoria de aproximadamente 1,4 GB con contexto de 2.048 tokens.
 
-El modelo se publicó el 7 de noviembre de 2026 y, en el momento de redactar esta ficha, no registra descargas ni interacciones en Hugging Face. Su interés es fundamentalmente práctico para desarrolladores que necesiten traducción literaria es→ru en dispositivos con recursos limitados, y como caso de estudio de destilación y cuantización agresiva sobre un modelo Gemma 4.
+Su relevancia radica en el enfoque de compresión agresiva para traducción literaria en el dispositivo: frente al modelo completo ES2, sacrifica calidad (70 % frente a 80 % en trampas y expresiones, chrF++ de 39,53 frente a 44,43 en FLORES-200 es→ru) a cambio de reducir requisitos de memoria para dispositivos con menos RAM. La model card reporta métricas propias medidas entre el 6 y el 7 de noviembre de 2026 con dos jueces basados en modelos de lenguaje.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (Gemma 4), con capas feed-forward estrechadas a 6.144 neuronas en las 35 capas |
-| Parametros totales | 1.814.683.171 (modelo base); el artefacto GGUF cuantizado ocupa 967.251.872 bytes |
-| Parametros activos | no disponible (no es un modelo MoE) |
-| Longitud de contexto | 2.048 tokens (contexto usado en las mediciones de memoria); no se especifica el máximo arquitectónico |
-| Tipos de cuantizacion | IQ4_XS con proyección por capa en Q8_0; matriz de importancia (imatrix) generada a partir de los prompts de entrenamiento |
-| Idiomas soportados | es (entrada), ru (salida) |
+| Arquitectura | Transformer (Gemma 4), derivada de google/gemma-4-E2B-it; feed-forward reducida a 6.144 neuronas en las 35 capas |
+| Parametros totales | 1.814.683.171 (dato de safetensors del modelo base) |
+| Parametros activos | no disponible |
+| Longitud de contexto | 2.048 tokens (contexto usado en las mediciones de memoria reportadas) |
+| Tipos de cuantizacion | IQ4_XS con proyeccion por capa en Q8_0 |
+| Idiomas soportados | es, ru |
 | Licencia | Apache-2.0 |
 | Formato de pesos | GGUF (llama.cpp) |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de google/gemma-4-E2B-it, un transformer decoder-only de la familia Gemma 4. El proceso de construcción se documenta en cuatro etapas. Primero, se recorta el vocabulario del modelo base a 48.000 tokens y se aplica un ajuste fino con LoRA sobre 38.336 filas compuestas por frases de novelas españolas de dominio público traducidas por agentes de modelos Gemma y Claude de mayor tamaño, junto con filas de control para trampas, expresiones fijas, colocaciones y nombres propios. El resultado se denomina ES2 en la model card.
+El modelo es un transformer derivado de Gemma 4 E2B, con el vocabulario recortado a 48.000 tokens. Sobre esa base se aplicó un ajuste LoRA con 38.336 filas compuestas por frases de novelas españolas de dominio público traducidas por agentes de Gemma y Claude de mayor tamaño, junto con filas de control para trampas, expresiones fijas, colocaciones y nombres propios. Después se redujeron las capas feed-forward de las 35 capas a 6.144 neuronas, conservando las de mayor activación, y se mantuvieron todas las capas (eliminar capas degradaba expresiones y nombres). Finalmente se destiló desde la variante ES2 sobre el mismo conjunto de 38.336 filas durante dos épocas, con entropía cruzada más divergencia KL contra los logits de ES2.
 
-Segundo, se estrechan las capas feed-forward de las 35 capas hasta 6.144 neuronas, conservando las de mayor activación y manteniendo todas las capas, ya que eliminar capas degradaba las expresiones y los nombres. Tercero, se destila el modelo ES2 sobre las mismas 38.336 filas durante 2 épocas, con una función de pérdida que combina entropía cruzada y divergencia KL respecto a los logits de ES2. Cuarto, se cuantiza a IQ4_XS con una matriz de importancia derivada de los prompts de entrenamiento, manteniendo la proyección por capa en Q8_0.
-
-Los datos de entrenamiento provienen de frases de novelas españolas de dominio público (Project Gutenberg) traducidas por agentes, de Wiktionary y Wikipedia (CC BY-SA) como fuente de frases, formas y frecuencias, y de listas de expresiones y etiquetas de diccionarios y libros de modismos con licencia cuyos textos no se distribuyen en el repositorio. No se documenta el uso de RLHF o DPO.
+La cuantización a IQ4_XS emplea una importance matrix derivada de los prompts de entrenamiento, y la proyección por capa se conserva en Q8_0. Los datos de entrenamiento incluyen frases de novelas de Project Gutenberg, Wiktionary y Wikipedia (CC BY-SA) como fuente de frases, formas y frecuencias, y listas de frases y etiquetas de diccionarios y libros de modismos con licencia de los autores; el texto de esos libros no se distribuye. El modelo usa el formato de turnos de Gemma 4 sin modo thinking.
 
 ## Capacidades
 
-- Traducción de frases sueltas de novelas del español al ruso, con instrucción de sistema y de usuario en formato de turnos de Gemma 4 sin modo thinking.
-- Manejo de expresiones fijas, colocaciones y nombres propios, aunque con pérdida de calidad respecto al modelo completo (70 % frente a 80 % en el conjunto de 454 trampas).
-- Traducción de refranes y proverbios en contexto de novela, con un 34 % de acierto en el conjunto de 143 casos.
-- Capacidad multilingüe limitada al par es→ru; no se documentan otras combinaciones.
-- No soporta tool calling ni function calling.
-- No está diseñado para razonamiento multi-paso ni para uso como agente.
-- No es un modelo conversacional: responde únicamente a la petición de traducir una frase.
-- No dispone de visión, audio ni modo thinking.
+- Traducción de frases de novelas del español al ruso, con salida únicamente de la traducción.
+- Manejo de expresiones fijas, colocaciones y nombres propios dentro de frases literarias (con pérdida respecto al modelo completo).
+- Ejecución en el dispositivo (on-device) en llama.cpp sobre CPU.
+- No es un modelo de chat: responde a la instrucción de traducción de la aplicación y nada más.
+- No soporta tool calling ni function calling (no documentado).
+- No soporta agentes ni razonamiento multi-paso (no documentado).
+- Multilingüe limitado a es y ru.
+- No dispone de modo thinking, visión ni audio (no documentado).
 
 ## Casos de uso
 
-- Asistente de lectura integrado en la aplicación Fluent Books: el modelo traduce frases concretas de una novela española al ruso mientras el usuario lee, con un consumo de memoria de aproximadamente 1,4 GB en CPU y contexto de 2.048 tokens, lo que permite ejecutarlo en dispositivos con menos memoria que el modelo completo.
-- Traducción literaria en dispositivos de gama baja: al ocupar menos de 1 GB en disco y funcionar con llama.cpp en CPU, es adecuado para lectores electrónicos, tablets modestas o portátiles sin GPU dedicada.
-- Procesamiento por lotes de frases de dominio público: permite traducir corpus de novelas españolas de Project Gutenberg al ruso para proyectos de investigación o docencia, aceptando la pérdida de calidad en modismos.
-- Prototipado de pipelines de traducción especializada: sirve como referencia para evaluar el impacto del estrechamiento de capas feed-forward y la destilación en tareas de traducción de frases cortas.
-- Filtrado y pre-traducción en aplicaciones de aprendizaje de idiomas: puede generar una primera versión rusa de una frase para que el usuario la revise, reduciendo la carga de modelos mayores en el servidor.
-- Evaluación comparativa de cuantizaciones: el repositorio documenta el proceso IQ4_XS con imatrix, lo que lo convierte en un caso útil para estudiar el equilibrio entre tamaño y calidad en modelos Gemma 4 pequeños.
+- Traducción de novelas en el dispositivo: la aplicación Fluent Books envía frases sueltas de una novela española y el modelo devuelve la traducción al ruso, con un consumo de unos 1,4 GB en llama.cpp sobre CPU y contexto de 2.048 tokens, adecuado para equipos con menos memoria que el modelo completo.
+- Lectura asistida en lectores de libros electrónicos de gama baja: al caber en dispositivos con poca RAM, permite traducir párrafos mientras se lee sin conexión a servicios en la nube.
+- Aplicaciones de traducción literaria offline: integrado en una app de escritorio o móvil con llama.cpp, ofrece traducción es→ru sin depender de red, útil en entornos sin conectividad.
+- Procesamiento por lotes de corpus literarios: al ser determinista y ligero, puede traducir grandes volúmenes de frases de dominio público en pipelines locales, aceptando la pérdida de calidad frente a ES2 (chrF++ 39,53 frente a 44,43).
+- Prototipado de sistemas de traducción especializados: sirve como base para experimentar con destilación y cuantización en tareas de traducción literaria antes de desplegar el modelo completo.
+- Filtrado y pre-traducción en herramientas de edición: genera una primera versión de cada frase para que un editor humano la revise, aprovechando su bajo coste de memoria y su enfoque en frases de novela.
 
 ## Benchmarks y rendimiento
 
-Los datos proceden de conjuntos propios del autor, medidos los días 6 y 7 de noviembre de 2026, con dos jueces basados en agentes de lenguaje; una traducción se considera correcta solo si ambos jueces la marcan como válida.
-
-| Prueba | light-2 (este modelo) | Modelo completo (ES2) | Apple Translation |
+| Metrica | light-2 | Modelo completo (ES2) | Apple Translation |
 |---|---|---|---|
-| 454 trampas, expresiones, colocaciones y nombres | 316 (70 %) | 364 (80 %) | 267 (59 %) |
+| 454 trampas, expresiones, colocaciones, nombres | 316 (70 %) | 364 (80 %) | 267 (59 %) |
 | 87 expresiones fijas no vistas en entrenamiento | 43 (49 %) | no disponible | 39 (45 %) |
-| 143 refranes en frases de novela | 48 (34 %) | no disponible | 42 (29 %) |
+| 143 refranes en frases de novelas | 48 (34 %) | no disponible | 42 (29 %) |
 | FLORES-200 es→ru, chrF++ (1.012 frases, greedy) | 39,53 | 44,43 | no disponible |
+
+Mediciones propias del autor (6-7 de noviembre de 2026), con dos jueces basados en modelos de lenguaje; una traducción cuenta solo si ambos la marcan como correcta. Memoria: aproximadamente 1,4 GB en llama.cpp sobre CPU con contexto de 2.048 tokens y una frase; en dispositivo con Metal no medido.
 
 ## Requisitos de hardware
 
-- VRAM/RAM estimada: aproximadamente 1,4 GB en llama.cpp sobre CPU con contexto de 2.048 tokens y una frase de entrada.
-- GPU recomendadas: no se especifican; el modelo está pensado para inferencia en CPU y en dispositivos con poca memoria. El rendimiento en Metal no se ha medido.
-- Cabe en GPU de consumo: sí, por tamaño (menos de 1 GB de pesos), aunque no se documentan pruebas en RTX 4090, RTX 3060 u otras.
-- Opciones de despliegue: llama.cpp con una compilación que soporte Gemma 4; el repositorio incluye la etiqueta endpoints_compatible.
+- VRAM/RAM estimada: aproximadamente 1,4 GB en llama.cpp sobre CPU con contexto de 2.048 tokens y una frase.
+- GPU recomendadas: no disponibles; el autor no reporta mediciones en GPU (Metal no medido).
+- Cabe en GPU de consumo: no documentado; el diseño apunta a dispositivos con poca memoria, por lo que es plausible en GPUs de consumo, pero no hay datos publicados.
+- Opciones de despliegue: llama.cpp (compilación que soporte Gemma 4); formato GGUF.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Licencia | Formato | Observaciones |
-|---|---|---|---|---|---|
-| Este modelo (light-2) | 1.814.683.171 (base); GGUF de 967.251.872 bytes | 2.048 tokens usados en pruebas | Apache-2.0 | GGUF IQ4_XS | Destilado y estrechado; 70 % en trampas, chrF++ 39,53 |
-| gemma4-e2b-es-fluent-books (modelo completo, ES2) | no disponible | no disponible | Apache-2.0 | no disponible | 80 % en trampas, chrF++ 44,43; requiere más memoria |
-| Apple Translation | no disponible | no disponible | propietaria | integrado en el sistema | 59 % en trampas, 45 % en expresiones fijas, 29 % en refranes |
-
-No se dispone de datos de otros modelos comparables de traducción es→ru en dispositivo en la información proporcionada.
+| Modelo | Parametros | Contexto | Calidad (trampas/expresiones) | chrF++ FLORES-200 es→ru | Licencia | Disponibilidad |
+|---|---|---|---|---|---|---|
+| gemma4-e2b-es-compact-fluent-books (light-2) | 1.814.683.171 | 2.048 (medido) | 70 % | 39,53 | Apache-2.0 | GGUF en Hugging Face |
+| gemma4-e2b-es-fluent-books (ES2, modelo completo) | no disponible | no disponible | 80 % | 44,43 | Apache-2.0 (heredada) | Hugging Face |
+| Apple Translation | no disponible | no disponible | 59 % | no disponible | propietaria | integrado en Apple |
 
 ## Limitaciones y advertencias
 
-- Los modismos, refranes y nombres que también son palabras comunes se degradan por el estrechamiento de las capas feed-forward a la mitad.
-- El argot, las palabras regionales y las frases largas se traducen mal: en una prueba de 31 frases de argot, el modelo completo acertó aproximadamente una cuarta parte, y este modelo no se midió en ese conjunto.
-- Solo traduce la frase; no permite elegir acepciones ni resolver ambigüedades léxicas.
-- Puede generar letras latinas dentro de una palabra rusa; la aplicación prohíbe los tokens de letras latinas simples en la respuesta, y las mediciones se hicieron con esa restricción.
-- Los conjuntos de evaluación son pequeños y propiedad del autor, y los jueces fueron agentes de modelos de lenguaje, no evaluadores humanos.
-- El modelo no es conversacional y no debe usarse para diálogo general, razonamiento ni generación de código.
-- La licencia Apache-2.0 permite uso comercial, pero el modelo base es de Google y el autor no ofrece garantías sobre el rendimiento en producción.
-- El repositorio no distribuye los textos de los diccionarios y libros de modismos utilizados en el entrenamiento.
+- Los modismos, refranes y nombres que también son palabras comunes se degradan por la reducción a la mitad del ancho feed-forward; un estudiante destilado de un profesor mejor (ES3b) con un tercio de los datos fue peor aún (390 frente a 421 de 684).
+- El argot, las palabras regionales y las frases largas funcionan mal; en una comprobación de 31 frases de argot, el modelo completo acertó aproximadamente una cuarta parte, y para esta variante no se midió.
+- Solo traduce la frase; no elige acepciones de palabras.
+- Puede generar letras latinas dentro de una palabra rusa; la aplicación prohíbe tokens de letras latinas simples en la respuesta (las mediciones usaron la misma prohibición).
+- Los conjuntos de evaluación son pequeños y propios del autor, y los jueces fueron agentes basados en modelos de lenguaje, no evaluadores humanos.
+- No es un modelo de chat ni de propósito general; no debe usarse fuera de la tarea de traducción de frases de novela.
+- Licencia Apache-2.0 heredada del modelo base; verificar las condiciones de los datos de entrenamiento (Wiktionary/Wikipedia CC BY-SA y diccionarios con licencia de los autores) para uso comercial.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/lazarenkod/gemma4-e2b-es-compact-fluent-books
+- Modelo en Hugging Face: https://huggingface.co/lazarenkod/gemma4-e2b-es-compact-fluent-books
 - Modelo completo (ES2): https://huggingface.co/lazarenkod/gemma4-e2b-es-fluent-books
 - Modelo base: https://huggingface.co/google/gemma-4-E2B-it
+- llama.cpp: https://github.com/ggml-org/llama.cpp
+- Project Gutenberg: https://www.gutenberg.org
+- Wiktionary: https://www.wiktionary.org
+- Wikipedia: https://www.wikipedia.org

@@ -2,105 +2,97 @@
 
 ## Resumen
 
-e5-mistral-7b-instruct es un modelo de embeddings densos basado en la arquitectura Mistral-7B-v0.1, fine-tuneado para representación de texto mediante la metodología E5 (contrastive pre-training con supervisión débil e instrucciones). Esta versión concreta es un fork publicado por furiosa-ai del modelo original de intfloat, orientado a tareas de similitud semántica, recuperación de información, clasificación y pipelines de RAG. El modelo genera embeddings de 4096 dimensiones y soporta una ventana de contexto de 4096 tokens.
+`furiosa-ai/e5-mistral-7b-instruct` es un repositorio que empaqueta el modelo de embeddings de texto `intfloat/e5-mistral-7b-instruct` junto con un Furiosa Executable Bundle (FXB) para ejecutarlo sobre aceleradores FuriosaAI RNGD mediante la librería Furiosa-LLM. No se trata de un modelo nuevo: el autor (furiosa-ai) redistribuye los pesos originales en FP16 del modelo de Intel/Intfloat y añade los artefactos necesarios para su despliegue en hardware propietario. El modelo base es un ajuste fino del backbone decoder denso Mistral-7B-v0.1 orientado a generar embeddings de 4.096 dimensiones mediante last-token pooling y normalización L2.
 
-Con 7.110.660.096 parámetros (~7,11B), se sitúa en la gama alta de los modelos de embeddings de código abierto, superando en capacidad a alternativas como bge-m3 o e5-large. Su licencia MIT permite uso comercial sin restricciones, y su compatibilidad con text-embeddings-inference y Hugging Face Inference Endpoints facilita el despliegue en producción. Aunque está etiquetado principalmente para inglés, los benchmarks de MTEB muestran resultados en alemán, español, francés, japonés y chino, lo que indica cierta capacidad multilingüe.
+El problema que resuelve es el de la recuperación semántica y la similitud de textos de alta calidad: E5-Mistral-7B-Instruct es un modelo *instruction-aware*, lo que significa que las consultas se prefijan con una descripción de tarea en el formato `Instruct: ...\nQuery: ...`, mientras que los documentos se indexan sin instrucción. Con 7.110.660.096 parámetros y pesos safetensors, se posiciona en la gama de modelos de embeddings de 7B, un segmento que prioriza calidad de recuperación sobre latencia y coste.
 
-## Especificaciones tecnicas
+La relevancia de esta ficha concreta es operativa: permite ejecutar el modelo sobre RNGD con un único acelerador (tensor-parallel de 8 PEs, es decir, una tarjeta completa) y exponerlo mediante un servidor compatible con la API de OpenAI (`/v1/embeddings`). Está publicado bajo licencia MIT ydeclara soporte únicamente para inglés, aunque el modelo subyacente fue ajustado con datos multilingües.
 
-| Parametro | Valor |
+## Especificaciones técnicas
+
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (Mistral-7B-v0.1) fine-tuneado para embeddings |
-| Parametros totales | 7.110.660.096 (~7,11B) |
-| Parametros activos | No aplica (modelo denso, no MoE) |
-| Longitud de contexto | 4096 tokens |
-| Tipos de cuantizacion | FP16, INT8, INT4 (no documentado oficialmente, pero compatible con cuantizacion estandar) |
-| Idiomas soportados | Ingles (principal), con resultados en aleman, espanol, frances, japones y chino |
+| Arquitectura | Mistral (backbone decoder denso), clase `MistralModel` |
+| Parámetros totales | 7.110.660.096 |
+| Parámetros activos | no aplica (modelo denso, no MoE) |
+| Longitud de contexto | no disponible en la información proporcionada |
+| Tipos de cuantización | ninguno; se usan los pesos FP16 originales del modelo upstream |
+| Idiomas soportados | inglés (declarado); el modelo upstream se ajustó con datos multilingües pero se recomienda para inglés |
 | Licencia | MIT |
-| Formato de pesos | safetensors |
+| Formato de pesos | safetensors (más FXB, Furiosa Executable Bundle, para RNGD) |
+| Dimensión de embedding | 4.096 |
+| Pooling | last-token pooling con normalización L2 |
+| Pipeline | feature-extraction |
+| Hardware soportado | FuriosaAI RNGD (8 PEs por tarjeta, tensor-parallel size 8) |
+| Tamaño del repositorio | 28,8 GB |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de Mistral-7B-v0.1, un transformer decoder-only de 32 capas con attention de ventana deslizante (sliding window attention) y grouped-query attention. Sobre esta base, se aplica el enfoque de entrenamiento E5: primero un pre-entrenamiento contrastivo con datos débilmente supervisados (pares de texto generados automáticamente) y posteriormente un fine-tuning con instrucciones para alinear las representaciones con tareas específicas. El resultado es un modelo que produce embeddings de 4096 dimensiones a partir de la última capa oculta, normalizados para su uso en búsqueda por similitud coseno.
+El modelo es un transformer decoder denso basado en Mistral-7B-v0.1, reutilizado como extractor de representaciones en lugar de como generador autoregresivo. La representación se obtiene tomando el estado oculto del último token y aplicando normalización L2, lo que produce vectores de 4.096 dimensiones cuyo producto escalar equivale a la similitud coseno. El ajuste fino del modelo upstream se realizó sobre datos multilingües supervisados con formato de instrucción, de modo que el modelo aprende a condicionar el embedding de la consulta a una descripción explícita de la tarea de recuperación.
 
-Los detalles exactos del dataset de entrenamiento (número de tokens, composición) no están disponibles en la información publicada. El modelo se distribuye a través de la librería sentence-transformers, lo que simplifica su integración en pipelines de embeddings. Los tags de arXiv referencian los trabajos de E5 (2401.00368), Sentence-BERT (2104.08663) y los fundamentos de Mistral, aunque no se especifica qué proporción de cada técnica se aplicó.
+No se dispone en la información proporcionada de detalles sobre el número de tokens de entrenamiento, la composición exacta del dataset ni la presencia de etapas de RLHF o DPO en el ajuste del modelo base. La innovación técnica relevante en este repositorio no está en el entrenamiento, sino en el empaquetado: el FXB precompilado permite ejecutar el modelo en RNGD sin recompilación, con una estrategia de paralelismo de tensor de 8 PEs que ocupa una tarjeta completa y sin aplicar cuantización, manteniendo los pesos en FP16.
 
 ## Capacidades
 
-- Generación de embeddings densos de 4096 dimensiones para representación semántica de texto.
-- Similitud semántica entre pares de frases o documentos mediante similitud coseno.
-- Recuperación de información (retrieval) con soporte para búsqueda por similitud en colecciones grandes.
-- Clasificación de texto mediante embeddings como características de entrada a clasificadores lineales o redes simples.
-- Soporte de instrucciones (instruction-based prompts): el modelo acepta prefijos de instrucción para adaptar la representación a la tarea.
-- Capacidades multilingües limitadas: aunque el idioma principal es inglés, los benchmarks muestran resultados en alemán, español, francés, japonés y chino.
-- Compatible con pipelines de RAG (retrieval-augmented generation) como componente de recuperación.
-- No es un modelo generativo: no produce texto, solo representaciones vectoriales.
+- Generación de embeddings densos de 4.096 dimensiones para textos y consultas.
+- Recuperación semántica (*retrieval*) instruction-aware: prefijo de tarea en consultas, documentos sin instrucción.
+- Similitud semántica entre pares de textos mediante producto escalar de vectores normalizados.
+- Clasificación y clustering de textos a partir de representaciones vectoriales.
+- Indexación de documentos para motores de búsqueda vectorial.
+- Servicio HTTP compatible con la API de OpenAI (`/v1/embeddings`), lo que facilita la integración con clientes existentes.
+- Uso offline mediante la API Python de Furiosa-LLM (`LLM(...).embed(...)`).
+- No soporta tool calling, agentes, razonamiento multi-paso ni generación de texto: es exclusivamente un modelo de embeddings.
+- Capacidad multilingüe no garantizada: la model card declara únicamente inglés como idioma soportado.
 
 ## Casos de uso
 
-- Recuperación aumentada por generación (RAG): el modelo indexa documentos en una base vectorial y recupera los fragmentos más relevantes para alimentar a un LLM generativo. Su contexto de 4096 tokens permite procesar párrafos completos, y la calidad de los embeddings mejora la precisión de la recuperación frente a modelos más pequeños.
-- Búsqueda semántica en bases de conocimiento: sustituye búsquedas por palabras clave con búsqueda por significado, útil en intranets corporativas, documentación técnica o archivos legales. Los embeddings de 4096 dimensiones capturan matices semánticos que los métodos TF-IDF o BM25 no detectan.
-- Clasificación de documentos y tickets de soporte: los embeddings se usan como características de entrada a un clasificador (por ejemplo, regresión logística o un MLP) para categorizar incidencias, correos o artículos. El fine-tuning con instrucciones mejora la separación entre categorías.
-- Detección de duplicados y near-duplicates: compara embeddings de documentos para identificar contenido duplicado o casi idéntico, útil en gestión de contenidos, detección de plagio o limpieza de datasets.
-- Clustering de textos: agrupa documentos por similitud semántica para organizar grandes colecciones, detectar temas emergentes o segmentar opiniones de clientes. La dimensión de 4096 permite una separación fina entre clusters.
-- Sistemas de recomendación basados en contenido: representa ítems (artículos, productos, vídeos) como embeddings y recomienda elementos similares al que el usuario consume. La calidad de las representaciones mejora la relevancia de las recomendaciones frente a modelos de menor capacidad.
-- Moderación de contenido: clasifica comentarios o publicaciones en categorías de riesgo (spam, toxicidad, off-topic) usando los embeddings como entrada a un clasificador entrenado.
+- Búsqueda semántica en documentación técnica: se indexan los fragmentos con el modelo sin instrucción y se consulta con el prefijo `Instruct: Given a web search query, retrieve relevant passages that answer the query`, obteniendo recuperación por similitud coseno sobre vectores de 4.096 dimensiones.
+- Motor RAG (retrieval-augmented generation): el modelo actúa como retriever en pipelines que alimentan a un LLM generador; su salida normalizada permite usar índices vectoriales con distancia coseno o producto interno sin post-procesado.
+- Deduplicación y clustering de corpus: se generan embeddings de artículos o tickets y se agrupan por similitud para detectar contenido duplicado o temas recurrentes en soporte.
+- Sistemas de recomendación de contenido: se representan ítems y perfiles de usuario en el mismo espacio vectorial para recuperar ítems afines por vecindad.
+- Filtrado y moderación semántica: se compara el embedding de un texto entrante con el de una lista de políticas o ejemplos de referencia para marcar casos próximos.
+- Evaluación de calidad de respuestas: se mide la similitud entre una respuesta generada y una respuesta de referencia para métricas automáticas de fidelidad semántica.
+- Despliegue en infraestructura FuriosaAI: organizaciones con aceleradores RNGD pueden servir el modelo con `furiosa-llm serve` y consumirlo con el cliente OpenAI sin adaptar su código de aplicación.
 
 ## Benchmarks y rendimiento
 
-Resultados declarados por el autor en el model-index (MTEB). Se muestran las métricas principales por tarea:
-
-| Tarea | Dataset | Metrica | Valor |
-|---|---|---|---|
-| STS | C-MTEB/AFQMC | cos_sim_spearman | 38,99 |
-| STS | C-MTEB/ATEC | cos_sim_spearman | 42,84 |
-| Clasificacion | AmazonCounterfactual (en) | accuracy | 78,69 |
-| Clasificacion | AmazonCounterfactual (de) | accuracy | 74,05 |
-| Clasificacion | AmazonPolarity | accuracy | 95,91 |
-| Clasificacion | AmazonReviews (en) | accuracy | 55,79 |
-| Clasificacion | AmazonReviews (es) | accuracy | 50,33 |
-| Clasificacion | AmazonReviews (zh) | accuracy | 46,24 |
-| Recuperacion | ArguAna | ndcg_at_10 | 61,88 |
-| Recuperacion | ArguAna | mrr_at_10 | 53,34 |
-
-No se han publicado comparativas con otros modelos en la información disponible. Los resultados de clasificación multilingüe muestran una degradación progresiva fuera del inglés, coherente con el entrenamiento centrado en este idioma.
+No se han publicado resultados de benchmarks en la información disponible. La model card del repositorio no incluye métricas MTEB ni comparativas numéricas, pese a que las etiquetas del repositorio mencionan `mteb` y `eval-results`.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: ~14,2 GB en FP16, ~7,1 GB en INT8, ~3,6 GB en INT4 (cálculo basado en 7,11B parámetros).
-- GPU recomendadas: A100 40GB, H100 80GB, RTX 4090 24GB, RTX 3090 24GB para FP16 sin cuantización.
-- Consumer GPU: RTX 4090 (24GB) puede ejecutar el modelo en FP16; RTX 3060 12GB o RTX 4060 Ti 16GB pueden ejecutarlo en INT8; GPUs con 8GB o menos requieren INT4.
-- Opciones de despliegue: text-embeddings-inference (compatible según tags), sentence-transformers, Hugging Face Inference Endpoints (endpoints_compatible), y cualquier servidor que soporte safetensors con transformers.
-- Latencia y throughput: no disponible en la información publicada. Como referencia, un modelo de 7B en FP16 en una A100 procesa del orden de cientos de secuencias por segundo en tareas de embedding, pero este dato no está verificado para este modelo concreto.
+- VRAM estimada: el repositorio ocupa 28,8 GB, coherente con pesos FP16 de 7,1B parámetros (aproximadamente 14,2 GB de pesos más artefactos del bundle). No se indica el consumo de memoria en ejecución.
+- GPU/acelerador recomendado: FuriosaAI RNGD, una tarjeta completa (8 PEs) con tensor-parallel size 8.
+- Compatibilidad con GPU de consumo: no disponible en la información proporcionada para el bundle Furiosa; el modelo upstream puede ejecutarse en otros frameworks (Sentence Transformers, Transformers), pero sus requisitos no se detallan aquí.
+- Opciones de despliegue: Furiosa-LLM (`furiosa-llm serve` para servidor compatible con OpenAI; API Python `LLM` para uso offline). El modelo upstream es compatible con Sentence Transformers y Transformers.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Dimension embedding | Licencia | Notas |
+| Modelo | Parámetros | Dimensión de embedding | Contexto | Licencia | Notas |
 |---|---|---|---|---|---|
-| furiosa-ai/e5-mistral-7b-instruct | 7,11B | 4096 | 4096 | MIT | Fork del modelo de intfloat |
-| intfloat/e5-mistral-7b-instruct | 7,11B | 4096 | 4096 | MIT | Modelo original, misma arquitectura y pesos |
-| BAAI/bge-m3 | ~568M | 8192 | 1024 | MIT | Mucho más ligero, contexto doble, multilingüe |
-| intfloat/multilingual-e5-large | ~560M | 512 | 1024 | MIT | Más pequeño, multilingüe, contexto limitado |
+| furiosa-ai/e5-mistral-7b-instruct | 7,1B | 4.096 | no disponible | MIT | Bundle para RNGD con servidor OpenAI-compatible |
+| intfloat/e5-mistral-7b-instruct | 7,1B | 4.096 | no disponible | MIT | Modelo upstream; ejecutable en Sentence Transformers y Transformers |
+| Alternativas de menor tamaño (p. ej. modelos de embeddings de 300M-1B) | no disponible | no disponible | no disponible | no disponible | No se dispone de datos verificados en la información proporcionada |
 
-La comparativa con bge-m3 y e5-large se basa en datos públicos de sus respectivas fichas; no se dispone de benchmarks comparativos directos con este modelo en la información proporcionada. La ventaja principal de e5-mistral-7b-instruct es la mayor capacidad de representación (4096 dimensiones) y la calidad de embeddings para inglés, a costa de un coste computacional significativamente mayor.
+La comparativa con alternativas de la misma categoría no puede completarse con datos verificados a partir de la información disponible.
 
 ## Limitaciones y advertencias
 
-- Sesgo hacia el inglés: los resultados de clasificación en otros idiomas (español, francés, japonés, chino) son notablemente inferiores a los de inglés, lo que limita su uso en entornos multilingües exigentes.
-- Sin capacidad generativa: es un modelo de embeddings puro; no puede generar texto, responder preguntas ni mantener conversaciones.
-- Contexto limitado a 4096 tokens: documentos más largos deben truncarse o dividirse en fragmentos, lo que puede perder información relevante.
-- Riesgo de alucinación no aplica directamente (no genera texto), pero los embeddings pueden producir falsos positivos en búsquedas de similitud si los textos son superficialmente parecidos pero semánticamente distintos.
-- El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, lo que sugiere que es un fork reciente sin validación comunitaria. Se recomienda verificar los pesos frente al modelo original de intfloat antes de usarlo en producción.
-- La fecha de creación (2026-08-31) es posterior a la del modelo original, lo que indica que es una re-publicación; no hay evidencia de que furiosa-ai haya modificado los pesos o el entrenamiento.
-- No se dispone de información sobre el dataset de entrenamiento específico, el número de tokens procesados ni el proceso de alineación (RLHF/DPO), lo que dificulta evaluar su robustez en dominios especializados.
+- El repositorio declara soporte únicamente para inglés; el uso en otros idiomas no está garantizado aunque el ajuste upstream usara datos multilingües.
+- Es un modelo de embeddings, no un generador: no produce texto, no soporta tool calling ni razonamiento multi-paso.
+- El formato de instrucción es obligatorio para consultas (`Instruct: ...\nQuery: ...`); omitirlo o aplicarlo también a los documentos degrada la calidad de recuperación.
+- Riesgo de alucinación no aplica en el sentido generativo, pero sí existe riesgo de recuperación de pasajes semánticamente próximos pero irrelevantes; conviene combinar con re-ranking.
+- El bundle FXB está atado al hardware FuriosaAI RNGD; fuera de esa plataforma debe usarse el modelo upstream con otro runtime.
+- No se han publicado métricas de rendimiento ni evaluaciones MTEB en este repositorio, por lo que no es posible verificar la calidad frente a alternativas con datos propios.
+- La licencia MIT permite uso comercial, pero debe verificarse la procedencia y condiciones de los datos de entrenamiento del modelo upstream para cumplimiento normativo.
+- El repositorio tiene un volumen de descargas bajo (474) y ningún "like", lo que sugiere poca validación comunitaria del bundle.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/furiosa-ai/e5-mistral-7b-instruct
-- Modelo original (intfloat): https://huggingface.co/intfloat/e5-mistral-7b-instruct
-- Ficha en OpenModelMap: https://openmodelmap.com/model/intfloat/e5-mistral-7b-instruct
-- Ficha en cortecs.ai: https://cortecs.ai/detailedServerlessView/e5-mistral-7b-instruct
-- Ficha en aimodels.fyi: https://www.aimodels.fyi/models/huggingFace/e5-mistral-7b-instruct-intfloat
-- Paper E5 (arXiv 2401.00368): https://arxiv.org/abs/2401.00368
-- Paper Sentence-BERT (arXiv 2104.08663): https://arxiv.org/abs/2104.08663
-- Paper E5 original (arXiv 2212.03533): https://arxiv.org/abs/2212.03533
+- Repositorio en Hugging Face: https://huggingface.co/furiosa-ai/e5-mistral-7b-instruct
+- Modelo upstream: https://huggingface.co/intfloat/e5-mistral-7b-instruct
+- Documentación de Furiosa-LLM: https://developer.furiosa.ai/latest/en/furiosa_llm/intro.html
+- Servidor Furiosa-LLM (`furiosa-llm serve`): https://developer.furiosa.ai/latest/en/furiosa_llm/furiosa-llm-serve.html
+- Guía de instalación de Furiosa-LLM: https://developer.furiosa.ai/latest/en/get_started/furiosa_llm.html#installing-furiosa-llm
+- FuriosaAI: https://furiosa.ai
+- Licencia MIT: https://opensource.org/license/mit

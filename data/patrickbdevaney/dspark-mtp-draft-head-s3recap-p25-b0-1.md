@@ -2,112 +2,110 @@
 
 ## Resumen
 
-Este repositorio contiene una cabeza de borrador (draft head) de **DSpark MTP** afinada por `patrickbdevaney` para el checkpoint base [`0xSero/DeepSeek-V4-Flash-0731-REAP`](https://huggingface.co/0xSero/DeepSeek-V4-Flash-0731-REAP), una variante cuantizada en MXFP4 de DeepSeek-V4-Flash. El objetivo es mejorar la tasa de aceptación de la decodificación especulativa en un sistema de inferencia CUDA puro ejecutado sobre un **Jetson AGX Thor** (`sm_110a`). No es un modelo de lenguaje completo, sino un componente de aceleración que se integra dentro del checkpoint base como tres bloques MTP encadenados (`mtp.0/1/2`, capas 40/41/42).
+DSpark MTP draft head `s3recap-p25-b0.1` es una cabeza de borrador (draft head) especializada para decodificación especulativa sobre el checkpoint `0xSero/DeepSeek-V4-Flash-0731-REAP`, una versión podada mediante REAP (160 de 256 expertos enrutados) de `deepseek-ai/DeepSeek-V4-Flash-0731`. No es un modelo de lenguaje autónomo: sustituye la cabeza MTP (multi-token prediction) nativa del checkpoint objetivo para acelerar la generación mediante verificación especulativa greedy.
 
-La cabeza se publica como el mejor resultado de once candidatos medidos en un programa de optimización en curso. Según las mediciones incluidas en el repositorio, alcanza una aceptación media de **3.8413 sobre 5** en la suite de evaluación, lo que supone una mejora del **25.3 %** en tokens por segundo frente a la cabeza stock del checkpoint base (de 22.66 a 28.38 tok/s) y un factor de **1.97×** frente a la decodificación autoregresiva base (14.61 tok/s). La aceleración es **pérdida cero por construcción**: cada token emitido es bit-idéntico al que produciría la decodificación AR.
+El artefacto principal, `mtp_trained.safetensors`, contiene 517.318.215 parámetros en BF16 correspondientes a los 72 tensores no-expertos de los tres bloques MTP encadenados (`mtp.0/1/2`): atención, router gate y bias, shared expert, parámetros de hyper-connection, `main_proj`, Markov head y confidence head. Los expertos enrutados no se incluyen y se heredan sin cambios del modelo objetivo.
 
-La relevancia de esta pieza radica en que demuestra la viabilidad de optimizar cabezas de borrador DSpark para acelerar la generación especulativa en hardware de borde (edge), un área de creciente interés para la inferencia de modelos grandes en dispositivos con recursos limitados. El autor publica el modelo junto con todos los datos de entrenamiento, métricas de evaluación y los quince candidatos descartados en la carpeta `arms/`, para que la comunidad pueda reproducir y extender el trabajo.
+Su relevancia es práctica: en una Jetson AGX Thor con el motor CUDA del autor, la suite congelada de 8 prompts decodifica a 28,38 tok/s con ancho de borrador 5, frente a 14,61 tok/s en decodificación autorregresiva pura en la misma ejecución (1,94x). El repositorio incluye además un archivo de 24 cabezas adicionales del mismo programa de entrenamiento bajo `arms/`, lo que lo convierte en material de referencia para investigación en decodificación especulativa.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | DSpark MTP draft head: 3 bloques MTP encadenados (mtp.0/1/2) sobre el checkpoint base DeepSeek-V4-Flash-0731-REAP |
-| Parametros totales | no disponible (el repositorio contiene 72 tensores `mtp.*`, peso total 16.6 GB) |
-| Parametros activos | no aplica (no es un modelo MoE) |
-| Longitud de contexto | no disponible (depende del checkpoint base) |
-| Tipos de cuantizacion | FP8 (tags del repo); el checkpoint base usa MXFP4 nativo |
-| Idiomas soportados | no disponible (depende del checkpoint base) |
-| Licencia | other (sigue la licencia del checkpoint base `0xSero/DeepSeek-V4-Flash-0731-REAP`) |
-| Formato de pesos | safetensors |
+| Arquitectura | Cabeza MTP (multi-token prediction) de 3 bloques encadenados sobre transformer MoE con decodificación especulativa DSpark; modelo base `deepseek_v4` |
+| Parametros totales | 517.318.215 (solo la cabeza, BF16); el checkpoint objetivo completo no se especifica en la información disponible |
+| Parametros activos | no disponible (el modelo base es MoE con 160 de 256 expertos enrutados tras poda REAP; el número de parámetros activos no se detalla) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | FP8 (el checkpoint objetivo usa formatos del propio checkpoint, con escalas de bloque E8M0 potencia de dos recalculadas); maestro de entrenamiento en BF16 |
+| Idiomas soportados | no disponible |
+| Licencia | MIT |
+| Formato de pesos | safetensors (`mtp_trained.safetensors`, 1.034.643.326 bytes, SHA-256 `42552974a69a…`) |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura sigue el esquema **DSpark** de DeepSeek: un backbone de borrador paralelo combinado con una cabeza secuencial pequeña para reducir el decaimiento de sufijo en la predicción multi-token. En este caso, la cabeza se integra directamente en el checkpoint base como tres bloques MTP (`mtp.0/1/2`, shards 46-48, 6.6 GB) que operan sobre las capas 40/41/42 del modelo. El ancho de bloque de borrador es **5** (`dspark_block_size`), y la aceptación se mide sobre ese ancho.
+La cabeza sustituye los tres bloques MTP encadenados del checkpoint objetivo. Cada bloque incluye atención, router gate y bias, shared expert, parámetros de hyper-connection, `main_proj`, una Markov head y una confidence head. El ancho de borrador es 5, coincidente con el `dspark_block_size` propio del checkpoint. Los tensores se integran en los shards 46–48 del checkpoint mediante `tools/build_trained_head.py`, que recalcula escalas de bloque E8M0 potencia de dos y rechaza cualquier tensor cuyo error de ida y vuelta supere 0,10.
 
-El entrenamiento se realizó sobre un corpus balanceado de **1536 prompts**, con una función de pérdida combinada de **cross-entropy (CE)** y **token-verification (TV)** ponderada con un ancla beta (β=0.1). Se probaron once candidatos en total, de los cuales el presente (`s3recap-p25-b0.1`) es el que obtuvo la mejor puntuación media en la suite de evaluación. El proceso incluyó la corrección de una condición de carrera en el motor de inferencia que afectaba a las cabezas anteriores, y se validó que dicha corrección no había costado rendimiento (resultado negativo limpio en el control `s3recap`). La cabeza se entrenó en el propio hardware objetivo (Jetson AGX Thor) con un servidor CUDA puro, sin dependencias externas.
-
-La innovación clave es que la especulación **no altera la distribución de tokens**: cada token emitido es bit idéntico al que habría producido la decodificación autoregressive, lo que garantiza pérdida cero en la calidad de salida por construcción.
+No se especifican en la información disponible el volumen de tokens de entrenamiento, la composición del dataset ni si se emplearon RLHF o DPO. El historial de entrenamiento por paso está en `train_metrics.json`. La innovación técnica central es la decodificación especulativa con verificación greedy: bajo verificación greedy, la salida es idéntica a la decodificación greedy simple por construcción, y cada ejecución comprueba los primeros 8 tokens especulativos contra decodificación autorregresiva (`LOSSLESS GATE ... PASS`).
 
 ## Capacidades
 
-- **Aceleración de generación especulativa**: permite generar texto de forma especulativa con una tasa de aceptación media de 3.84/5 tokens por bloque, acelerando la inferencia hasta 1.97× frente a la decodificación autoregressive.
-- **Mejora selectiva por categoría**: eleva sustancialmente la aceptación en tareas de razonamiento (de 1.82 a 3.57), explicación (de 1.70 a 3.00) y generación de código (de 1.86 a 2.59) en comparación con la cabeza stock.
-- **Compatibilidad con hardware de borde**: diseñada y validada en Jetson AGX Thor (sm_110a), lo que la hace apta para despliegues en dispositivos de bajo consumo.
-- **Pérdida cero por construcción**: todos los tokens emitidos son bit idénticos a la salida autoregressive, por lo que no altera la calidad del modelo base.
-- **Soporte de decodificación multi-token**: el ancho de bloque de 5 permite proponer múltiples tokens por paso de especulación, reduciendo la latencia de generación.
-- **Distribución de aceptación variable**: la cabeza está optimizada para cargas de trabajo mixtas, pero no para todas las categorías (ver limitaciones).
+- Aceleración de decodificación especulativa sobre el checkpoint `DeepSeek-V4-Flash-0731-REAP`: incrementa el número de tokens comprometidos por forward del modelo objetivo (τ).
+- Verificación sin pérdida: la salida bajo verificación greedy coincide con la decodificación greedy autorregresiva.
+- Rendimiento diferencial por categoría: τ de 4,83 en multi_turn, 4,53 en long_context, 4,18 en code_edit, 4,16 en agentic_format, 3,87 en short_factual, 3,57 en reasoning, 3,00 en explanation y 2,59 en code_gen.
+- No es un modelo generativo autónomo: no soporta por sí mismo tool calling, agentes, visión, audio ni capacidades multilingües; estas dependen del checkpoint objetivo.
+- Compatible con el motor CUDA `deepseek-v4-flash-0731-cuda` (revisión `a608d52d7` en el momento de la promoción), orientado a Jetson AGX Thor (`sm_110a`).
 
 ## Casos de uso
 
-- **Inferencia en dispositivos de borde**: el caso de uso principal es el despliegue en Jetson AGX Thor para aplicaciones de IA generativa en el borde, donde la limitación de VRAM y energía hace crítica la aceleración especulativa. La cabeza permite duplicar el throughput sin perder calidad.
-- **Optimización de pipelines de generación de código**: en entornos de desarrollo asistido por IA, la alta aceptación en `code_gen` y `code_edit` (4.18/5) reduce la latencia de generación de fragmentos de código, mejorando la experiencia de los desarrolladores.
-- **Sistemas de razonamiento y explicación**: con una aceptación de 3.57 y 3.00 en `reasoning` y `explanation`, es adecuada para cargas de trabajo de chat con razonamiento extendido, donde la especulación acelera la producción de pasos intermedios.
-- **Chat multi-turno**: la aceptación de 4.83 en `multi_turn` la hace útil para asistentes conversacionales que mantienen contextos largos, reduciendo la latencia de respuesta.
-- **Investigación en decodificación especulativa**: el repositorio incluye todos los datos de entrenamiento y métricas, lo que lo convierte en un caso de estudio valioso para investigadores que quieran reproducir o extender técnicas de optimización de draft heads.
-- **Servidores de inferencia personalizados**: al estar diseñado para un servidor CUDA puro, se puede integrar en entornos de producción donde no se usan frameworks estándar como vLLM u Ollama, siempre que se adapte el motor.
+- Aceleración de inferencia en edge: desplegar el checkpoint completo `DeepSeek-V4-Flash-0731-REAP-DSpark` en una Jetson AGX Thor para obtener 28,38 tok/s frente a 14,61 tok/s autorregresivos, adecuado para asistentes locales con requisitos de latencia estrictos.
+- Servicio de chat multi-turno: la categoría multi_turn alcanza τ de 4,83 y 34,05 tok/s (2,33x frente a AR), lo que reduce el coste por turno en conversaciones con historial largo.
+- Procesamiento de documentos largos: long_context logra τ de 4,53 y 31,17 tok/s (2,13x), útil para resumen y extracción sobre entradas extensas.
+- Edición de código asistida: code_edit registra τ de 4,18 y 29,80 tok/s (2,04x), apropiado para parcheo y refactorización interactiva donde importa el tiempo hasta el primer token útil.
+- Generación de formatos agénticos: agentic_format obtiene τ de 4,16 y 29,87 tok/s (2,04x), aplicable a pipelines que producen JSON o llamadas a herramientas estructuradas.
+- Investigación en decodificación especulativa: el repositorio incluye 24 cabezas archivadas en `arms/` (unos 1,03 GB cada una) con registros de promoción en `HEAD_REGISTRY.md`, útiles para comparar estrategias de entrenamiento de draft heads.
+- Reconstrucción y validación de checkpoints: `tools/build_trained_head.py` y los SHA-256 registrados en `head_card.json` permiten verificar la integridad de los shards 46–48 en despliegues reproducibles.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, etc.) porque este modelo no es un LLM completo, sino una cabeza de borrador para decodificación especulativa. En su lugar, la model card reporta las siguientes métricas de rendimiento medidas en el Jetson AGX Thor:
+Protocolo: suite congelada de 8 prompts del motor, uno por categoría, con al menos 200 tokens generados, decodificación greedy y ancho de borrador 5. τ es el número de tokens comprometidos por forward del modelo objetivo; el máximo es 6 con ancho 5.
 
-| Metrica | Valor |
-|---|---|
-| Aceptacion media (suite, tau) | 3.8413 / 5 (77 % del techo de ancho) |
-| Throughput medio (tok/s) | 28.3825 |
-| Throughput base autoregressive (tok/s) | 14.61 |
-| Factor de aceleracion vs base | 1.97× |
-| Throughput con cabeza stock (tok/s) | 22.66 |
-| Mejora vs cabeza stock | +25.3 % |
+| Cabeza | τ | tok/s | AR en la misma ejecución | Fuente |
+|---|---:|---:|---:|---|
+| DSpark stock, ancho 5 | 3,2550 | 23,25 | 13,86 | `evidence/run0_tau_blk5.log` |
+| `s3`, ancho 5 (incumbente previo) | 3,6888 | no disponible | no disponible | `docs/HEAD_REGISTRY.md` |
+| **Esta cabeza, ancho 5** | **3,8413** | **28,38** | **14,61** | `eval.log`, `head_card.json` |
 
-Aceptacion por categoria (medida en bloque 5, comparando con la cabeza stock y el candidato `s3`):
+Desglose por prompt de esta cabeza:
 
-| Categoria | Cabeza stock (run-0) | Cabeza s3 | Este modelo |
-|---|---|---|---|
-| long_context | 5.00 | 4.00 | 4.53 |
-| agentic_format | 4.41 | 3.74 | 4.16 |
-| code_edit | 4.08 | 3.85 | 4.18 |
-| multi_turn | 4.06 | 5.21 | 4.83 |
-| short_factual | 3.11 | 3.51 | 3.87 |
-| reasoning | 1.82 | 3.70 | 3.57 |
-| explanation | 1.70 | 2.94 | 3.00 |
-| code_gen | 1.86 | 2.56 | 2.59 |
-| **suite mean** | 3.2550 | 3.6888 | **3.8413** |
+| Categoría | τ | tok/s | vs AR |
+|---|---:|---:|---:|
+| multi_turn | 4,83 | 34,05 | 2,33x |
+| long_context | 4,53 | 31,17 | 2,13x |
+| code_edit | 4,18 | 29,80 | 2,04x |
+| agentic_format | 4,16 | 29,87 | 2,04x |
+| short_factual | 3,87 | 28,83 | 1,97x |
+| reasoning | 3,57 | 28,12 | 1,92x |
+| explanation | 3,00 | 24,14 | 1,65x |
+| code_gen | 2,59 | 21,08 | 1,44x |
+| **Media de la suite** | **3,8413** | **28,38** | **1,94x** |
+
+Frente a la cabeza stock con ancho 5, τ sube en seis categorías y baja en dos: long_context (5,00 a 4,53) y agentic_format (4,41 a 4,16). Según la regla de publicación del proyecto, la cabeza incumple 3 de 6 umbrales por categoría (long_context, agentic_format, reasoning); fue promovida por la media de la suite y el puntero de release no se movió a ella (`HEAD_REGISTRY.md`). No se han publicado resultados de MMLU, HumanEval, GSM8K ni benchmarks de calidad en la información disponible.
 
 ## Requisitos de hardware
 
-- **VRAM estimada**: el repositorio completo pesa 16.6 GB, pero la cabeza en sí (72 tensores `mtp.*`) probablemente ocupa una fracción menor; el valor exacto no está especificado. El checkpoint base en MXFP4 requiere aproximadamente 16 GB en fp8.
-- **GPU recomendada**: probado en NVIDIA Jetson AGX Thor (`sm_110a`). El servidor de inferencia es CUDA puro, por lo que se puede ejecutar en cualquier GPU NVIDIA compatible (RTX 4090, A100, H100, etc.), siempre que el motor lo soporte.
-- **¿Cabe en consumer GPU?**: Sí, la cabeza en sí es ligera y el checkpoint base en MXFP4 cabe en GPUs consumer de 24 GB (RTX 3090/4090). La VRAM total depende del modelo base.
-- **Opciones de despliegue**: el proyecto usa un servidor de inferencia CUDA a medida; no se ha documentado compatibilidad con vLLM, llama.cpp, Ollama o TGI. Para usarlo en producción, es necesario integrarlo en un motor que soporte DSpark MTP.
-- **Latencia y throughput**: 28.38 tok/s en el Jetson AGX Thor, con una mejora de 1.97× frente a la decodificación autoregressive. En GPU más potentes (H100, A100) el throughput será mayor, aunque no hay datos publicados.
+- VRAM estimada para la cabeza: el maestro BF16 ocupa aproximadamente 1,03 GB; los shards instalados 46–48 se re-cuantizan a los formatos del checkpoint objetivo (FP8), por lo que el peso efectivo en memoria es menor que el maestro.
+- VRAM total: dominada por el checkpoint objetivo `DeepSeek-V4-Flash-0731-REAP` (48 shards); la información disponible no detalla su huella exacta.
+- GPU validadas: únicamente Jetson AGX Thor (`sm_110a`) con el motor CUDA del autor. No se ha probado ningún otro runtime.
+- GPU de consumo: no disponible; no se documenta compatibilidad con RTX 4090 u otras GPU consumer.
+- Opciones de despliegue: exclusivamente el motor `deepseek-v4-flash-0731-cuda` (revisión `a608d52d7` en la promoción) y el script `tools/build_trained_head.py` para instalar la cabeza. No se mencionan vLLM, llama.cpp, Ollama ni TGI.
+- Latencia y throughput: 28,38 tok/s de media en la suite (rango 21,08–34,05 tok/s por categoría) y 14,61 tok/s autorregresivos de referencia en el mismo hardware.
 
 ## Comparativa con modelos similares
 
-| Modelo | Tipo | Tamano | Rendimiento (tok/s) | Aceptacion media | Licencia | Disponibilidad |
-|---|---|---|---|---|---|---|
-| **Este modelo** (s3recap-p25-b0.1) | Draft head DSpark MTP | 16.6 GB (repo) | 28.38 (Jetson AGX Thor) | 3.8413/5 | other | Hugging Face |
-| Cabeza stock (run-0) del checkpoint base | Draft head MTP | integrada en base | 22.66 | 3.2550/5 | other | en el checkpoint base |
-| Cabeza `s3` (candidato anterior) | Draft head MTP | integrada en base | 25.1 (estimado) | 3.6888/5 | other | en `arms/` |
+| Cabeza | τ (ancho 5) | tok/s | Estado | Licencia |
+|---|---:|---:|---|---|
+| DSpark stock (nativa del checkpoint) | 3,2550 | 23,25 | Integrada en el checkpoint objetivo | MIT (según repo) |
+| `s3` (incumbente previo) | 3,6888 | no disponible | Archivada en `arms/s3/`; medida a ancho 6 en su repo propio | MIT |
+| `s3recap-p25-b0.1` (esta) | 3,8413 | 28,38 | Promovida por media de suite; puntero de release no movido | MIT |
 
-No se dispone de comparaciones con otros frameworks de decodificación especulativa (EAGLE-3, DFlash, etc.) porque el proyecto no incluye mediciones con ellos. Los datos de la web indican que DSpark en general ofrece 60-85 % de mejora sobre MTP-1 en producción, pero no se aplican directamente a este checkpoint específico.
+No se dispone de comparación con cabezas de borrador de otros proyectos ni con modelos completos alternativos en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- **No es un modelo de lenguaje completo**: es un componente de aceleración que requiere el checkpoint base `0xSero/DeepSeek-V4-Flash-0731-REAP` y un motor de inferencia que soporte DTP MTP.
-- **No pasa la regla de release del proyecto**: la cabeza no supera la barrera de aceptación mínima en las categorías reconstructivas; es corta por 0.27 en `long_context`, 0.05 en `agentic_format` y 0.13 en `reasoning`. Esto significa que para cargas de trabajo dominadas por reconstrucción de contexto largo, la cabeza stock puede ser mejor.
-- **Distribución de aceptación variable**: la aceptación varía hasta 2.7× según la forma de la tarea. El usuario debe seleccionar la cabeza según su carga de trabajo real, no por la media.
-- **Riesgo de alucinación y sesgos**: no hay datos específicos, pero al heredar las propiedades del checkpoint base (DeepSeek-V4-Flash), puede heredar los sesgos del modelo original.
-- **Restricciones de licencia**: la licencia es `other` y sigue la del checkpoint base; hay que verificar los términos del modelo original antes de uso comercial.
-- **Dependencia de un entorno específico**: los resultados medidos son de un único servidor CUDA sobre Jetson AGX Thor; la compatibilidad con otros motores o arquitecturas no está garantizada.
-- **Datos de entrenamiento**: el corpus de 1536 prompts es de tamaño reducido y puede no cubrir todos los dominios; la cabeza puede comportarse peor en tareas fuera de esa distribución.
+- No es un modelo de lenguaje independiente: requiere el checkpoint `0xSero/DeepSeek-V4-Flash-0731-REAP` y no genera texto por sí misma.
+- Incumple 3 de 6 umbrales por categoría del propio proyecto (long_context, agentic_format, reasoning) y el puntero de release no se movió a esta cabeza; la promoción se basó solo en la media de la suite.
+- Solo se ha ejecutado con el motor CUDA del autor sobre Jetson AGX Thor (`sm_110a`); ningún otro runtime ha sido probado, lo que limita la portabilidad.
+- La evaluación se apoya en una suite congelada de 8 prompts, uno por categoría, con al menos 200 tokens generados; es una muestra reducida y no sustituye una evaluación de calidad amplia.
+- No hay datos publicados de sesgos, tasas de alucinación ni rendimiento multilingüe para esta cabeza; esas propiedades dependen del checkpoint objetivo y no se documentan aquí.
+- La licencia MIT se declara en el repositorio, pero el modelo base y el checkpoint objetivo pueden tener condiciones adicionales que deben verificarse antes de uso comercial.
+- El repositorio pesa 24,85 GB, mayoritariamente por las 24 cabezas archivadas en `arms/`; la descarga completa no es necesaria si solo se busca la cabeza promovida.
+- El proceso de instalación exige recalcular escalas E8M0 y rechaza tensores con error de ida y vuelta superior a 0,10; una integración manual incorrecta puede degradar la fidelidad de la decodificación.
 
 ## Enlaces
 
-- **Repositorio Hugging Face**: https://huggingface.co/patrickbdevaney/dspark-mtp-draft-head-s3recap-p25-b0.1
-- **Checkpoint base**: https://huggingface.co/0xSero/DeepSeek-V4-Flash-0731-REAP
-- **Wiki de afinamiento de draft head**: https://github.com/patrickbdevaney/deepseek-v4-flash-0731-cuda/blob/main/wiki/draft-head-finetuning.md
-- **Repo GitHub del proyecto**: https://github.com/patrickbdevaney/dspark-cuda-reap-finetune
-- **Artículo sobre DSpark (MarkTechPost)**: https://www.marktechpost.com/2026/06/27/deepseek-releases-dspark-a-speculative-decoding-framework-that-accelerates-deepseek-v4-per-user-generation-60-85-over-mtp-1/
-- **Liquid AI publica modelos DSpark para LFM2.5**: https://ai.wain.blog/en/liquid-ai-lfm25-dspark-speculative-decoding-ZHUT0dOM/
-- **DeepSeek-V4-Pro-DSpark en Hugging Face**: https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro-DSpark
+- Repositorio Hugging Face: https://huggingface.co/patrickbdevaney/dspark-mtp-draft-head-s3recap-p25-b0.1
+- Checkpoint completo recomendado con la cabeza instalada: https://huggingface.co/patrickbdevaney/DeepSeek-V4-Flash-0731-REAP-DSpark
+- Cabeza previa `s3`: https://huggingface.co/patrickbdevaney/deepseek-v4-flash-0731-REAP-calibrated-draft-head
+- Modelo objetivo (poda REAP): https://huggingface.co/0xSero/DeepSeek-V4-Flash-0731-REAP
+- Modelo original: https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731
+- Motor CUDA: https://github.com/patrickbdevaney/deepseek-v4-flash-0731-cuda

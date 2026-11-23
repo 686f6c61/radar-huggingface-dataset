@@ -2,55 +2,55 @@
 
 ## Resumen
 
-SenseNova-Loop-9B-MLX-4bit es una conversión a formato MLX con cuantización de 4 bits del modelo SenseNova-Loop-9B, desarrollado originalmente por SenseNova (SenseTime). Esta versión, publicada por NetProjects (Internet Projects Ltd), está optimizada para ejecución en Apple Silicon y no tiene afiliación con SenseTime ni SenseNova. El modelo base es un transformer basado en Qwen3.5 con una arquitectura "looped" que ejecuta determinadas capas varias veces por token, lo que incrementa la profundidad efectiva sin aumentar el número de parámetros.
+SenseNova-Loop-9B-MLX-4bit es la conversión a 4 bits (cuantización afín, tamaño de grupo 64) del modelo SenseNova-Loop-9B de SenseNova (SenseTime), publicada por NetProjects para su ejecución en Apple Silicon mediante MLX. El modelo original es un transformer basado en Qwen3.5 con una innovación arquitectónica central: ejecución en bucle (*looped execution*) de un subconjunto de capas con pesos compartidos, junto con un mecanismo de dos flujos residuales (*two-stream mHC*) en las capas intermedias. El resultado son 56 pasadas de capa por token, lo que incrementa la profundidad efectiva sin aumentar el número de parámetros.
 
-El modelo resuelve tareas de generación de texto, razonamiento agéntico, código y análisis de datos, y resulta relevante porque ofrece una ventana de contexto de 512K tokens mediante escalado YaRN, algo poco habitual en modelos de menos de 10.000 millones de parámetros. Con 8.956.949.376 parámetros totales y un peso de 5,1 GB en esta cuantización, es la variante más ligera de la familia MLX publicada por NetProjects, pensada para equipos con memoria unificada limitada.
+Con 8.956.949.376 parámetros totales (aproximadamente 9B) y un contexto configurado de 512K tokens mediante escalado YaRN, el modelo está orientado a tareas agénticas, generación de código, análisis de datos y razonamiento multi-paso. Incluye entrada de imagen a través de una torre de visión separada y una cabeza de predicción multi-token (MTP) que acelera la decodificación aproximadamente 1,7 veces.
 
-La ficha se centra en esta build de 4 bits, que según el autor presenta una fidelidad menor respecto al modelo original en bf16 que las builds de 6 y 8 bits, por lo que conviene valorar el compromiso entre tamaño y calidad numérica.
+Esta build de 4 bits ocupa 5,1 GB de pesos y es la variante más pequeña de la familia MLX publicada por NetProjects. Su fidelidad respecto al modelo original en bf16 es notablemente inferior a la de las builds de 6 y 8 bits: coincide en el token de mayor probabilidad en el 84,4 % de las posiciones y en el texto greedy en solo 2 de 16 prompts. La licencia Apache 2.0 facilita su uso comercial, aunque la fidelidad reducida aconseja evaluar la build de 6 bits para producción.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer basado en Qwen3.5 con ejecución "looped" (56 pasadas de capa por token) y mHC de dos flujos en capas 4-27; atención completa y Gated DeltaNet |
-| Parámetros totales | 8.956.949.376 |
-| Parámetros activos | No aplica (no es MoE) |
-| Longitud de contexto | 512K tokens (escalado YaRN, factor 2 sobre 262.144 posiciones) |
-| Tipos de cuantización | 4 bits afín, group size 64 (esta build); también disponibles 6 bits, 8 bits y bf16 |
+| Arquitectura | Transformer basado en Qwen3.5 con ejecución en bucle (looped transformer) y two-stream mHC; atención completa combinada con Gated DeltaNet |
+| Parametros totales | 8.956.949.376 (~9B) |
+| Parametros activos | No aplica (no es MoE) |
+| Longitud de contexto | 512K tokens (YaRN, factor 2 sobre 262.144 posiciones) |
+| Tipos de cuantizacion | 4 bits afín, group size 64; routers y normas en float32; torre de visión en bfloat16 |
 | Idiomas soportados | No disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (MLX) |
+| Formato de pesos | safetensors (MLX), cuantización 4-bit; pesos auxiliares en float32 (`model.fp32norms.safetensors`) y bfloat16 (`vision.safetensors`) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base SenseNova-Loop-9B es un transformer derivado de Qwen3.5 al que SenseNova añadió dos modificaciones principales. La primera es la ejecución "looped": las capas 0-3 se ejecutan una vez, las capas 4-27 se ejecutan dos veces con pesos compartidos y las capas 28-31 una vez, resultando en 56 pasadas de capa por token. Cada pasada dispone de su propia ranura de caché (KV cache para atención completa, estado convolucional y recurrente para Gated DeltaNet). La segunda es un mecanismo mHC de dos flujos en las capas 4-27, donde el estado oculto se divide en dos flujos residuales enrutados por pequeños routers en float32 (gates pre/post y una matriz de mezcla Sinkhorn 2×2 con 20 iteraciones); los 96 tensores de router permanecen en float32 y no se cuantizan.
+SenseNova-Loop-9B parte de la arquitectura Qwen3.5 y añade dos modificaciones. La primera es la ejecución en bucle: las capas 0–3 se ejecutan una vez, las capas 4–27 se ejecutan dos veces con pesos compartidos y las capas 28–31 se ejecutan una vez, sumando 56 pasadas de capa por token. Cada pasada dispone de su propia ranura de caché (KV cache para atención completa, estado convolucional y recurrente para Gated DeltaNet). La segunda es el mecanismo two-stream mHC en las capas 4–27: el estado oculto se divide en dos flujos residuales enrutados por pequeños routers en float32 (gates pre/post y una matriz de mezcla 2×2 Sinkhorn con 20 iteraciones). Los 96 tensores de router permanecen en float32 y no se cuantizan.
 
-El contexto largo se consigue mediante escalado YaRN con factor 2 sobre 262.144 posiciones, alcanzando los 512K tokens. No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas de RLHF o DPO en la información proporcionada. Esta build de 4 bits, según las mediciones del autor, mantiene el mismo token top en el 84,0% de las posiciones respecto al código PyTorch original en bf16, con una KL de 0,0982 en el último token y texto greedy idéntico en 2 de 16 prompts.
+El contexto largo se consigue con escalado YaRN de rope (factor 2 sobre 262.144 posiciones). El modelo incluye una cabeza de predicción multi-token (MTP) que genera borradores de tokens verificados en una sola pasada, acelerando la decodificación aproximadamente 1,7 veces. No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas de RLHF o DPO en la información proporcionada.
 
 ## Capacidades
 
-- Generación de texto conversacional y razonamiento multi-turno.
-- Modo "thinking" activable mediante `enable_thinking=True` en la plantilla de chat.
-- Razonamiento agéntico y tareas de múltiples pasos (evaluado en AutomationBench, Terminal-Bench 2.1, GAIA).
-- Generación y análisis de código (NL2Repo, Terminal-Bench).
-- Análisis de datos y consultas a bases de datos (AIDABench, BIRD).
-- Procesamiento de contexto largo: el autor verificó que la build de 6 bits localiza un código oculto en un prompt de 64K tokens; no se reporta la misma prueba para la build de 4 bits.
-- Capacidades multilingües: no disponibles en la información proporcionada.
-- Soporte de tool calling y function calling: no confirmado explícitamente en la información disponible, aunque las evaluaciones agénticas sugieren compatibilidad con flujos de herramientas.
+- Generación de texto conversacional con modo de pensamiento (*thinking*) activable mediante `enable_thinking=True`.
+- Razonamiento multi-paso y tareas agénticas, incluyendo ejecución de tareas de terminal y automatización.
+- Generación y análisis de código, con soporte para tareas de tipo NL2Repo.
+- Análisis de datos y consultas sobre bases de datos (evaluado en BIRD y AIDABench).
+- Entrada de imagen: descripción de imágenes, con límite por defecto de aproximadamente 1 megapíxel por imagen (hasta 16,7 MP configurable, con mayor consumo de memoria).
+- Decodificación acelerada mediante la cabeza MTP.
+- Capacidades multilingües: no disponible en la información proporcionada.
+- Soporte de tool calling / function calling: no disponible explícitamente en la información proporcionada.
 
 ## Casos de uso
 
-- Asistentes conversacionales en local sobre Apple Silicon: el modelo puede gestionar conversaciones multi-turno con contexto largo gracias a su ventana de 512K tokens, ejecutándose íntegramente en un Mac con memoria unificada suficiente.
-- Análisis de documentos extensos: con 512K tokens de contexto, es adecuado para resumir o extraer información de contratos, informes o bases de código completas sin fragmentación.
-- Automatización de tareas agénticas de terminal: sus resultados en Terminal-Bench 2.1 (59,55) lo sitúan como candidato para agentes que operan sobre entornos de línea de comandos.
-- Generación de código en flujos de desarrollo: los resultados en NL2Repo (41,36) permiten integrarlo en pipelines de generación y revisión de repositorios, aunque por debajo de alternativas como Qwen3.8-27B (44,60).
-- Consultas en lenguaje natural a bases de datos: con 72,34 en BIRD, puede emplearse como capa de traducción NL2SQL en herramientas de business intelligence.
-- Análisis de datos exploratorio: su puntuación de 65,31 en AIDABench lo hace apto para tareas de interpretación y manipulación de datos asistida.
-- Prototipado y experimentación en investigación: la licencia Apache 2.0 y la disponibilidad de builds en 4, 6, 8 bits y bf16 facilitan probar la arquitectura looped en distintos presupuestos de memoria.
+- Automatización de tareas de terminal y agentes de línea de comandos: el modelo obtiene 59,55 en Terminal-Bench 2.1, lo que lo hace adecuado para agentes que ejecutan comandos y resuelven tareas de sistema en entornos controlados.
+- Análisis de datos sobre bases de datos relacionales: con 72,34 en BIRD y 65,31 en AIDABench, puede emplearse para traducir preguntas en lenguaje natural a consultas SQL y generar informes analíticos.
+- Asistencia en desarrollo de software: su rendimiento en NL2Repo (41,36) permite integrarlo en flujos de generación de repositorios y código a partir de especificaciones.
+- Procesamiento de documentos largos en local: con 512K tokens de contexto y decodificación MTP, es viable resumir o extraer información de documentos extensos en un Mac con Apple Silicon, como demuestra la prueba de encontrar un código oculto en un prompt de 64K tokens.
+- Descripción y análisis de imágenes en dispositivos locales: la torre de visión en bfloat16 permite clasificar, describir o extraer texto de imágenes sin enviar datos a la nube, útil en entornos con requisitos de privacidad.
+- Prototipado e investigación en arquitecturas looped: al incluir el código `sensenova_loop.py` y los pesos en float32 de routers y normas, sirve para experimentar con ejecución en bucle y mHC en hardware de consumo.
+- Asistentes conversacionales con razonamiento explícito: el modo thinking permite separar el razonamiento interno de la respuesta final en aplicaciones de atención al cliente o tutoría.
 
 ## Benchmarks y rendimiento
 
-Los siguientes resultados son los reportados por SenseNova para el modelo original en BF16, no para esta build cuantizada a 4 bits.
+Los datos siguientes son los reportados por SenseNova para el modelo original en BF16, no para esta build cuantizada.
 
 | Benchmark | SenseNova-Loop-9B | SenseNova-Loop-9B-Preview | Qwen3.8-27B |
 |---|---|---|---|
@@ -61,44 +61,50 @@ Los siguientes resultados son los reportados por SenseNova para el modelo origin
 | NL2Repo | 41,36 | No disponible | 44,60 |
 | BIRD | 72,34 | 71,38 | No disponible |
 
-El autor reporta además métricas de fidelidad de esta build de 4 bits respecto al código PyTorch original en bf16: 84,0% de coincidencia en token top, KL de 0,0982 en el último token y texto greedy idéntico en 2 de 16 prompts. Para comparar, la build de 6 bits alcanza 96,7% de coincidencia y KL de 0,0056, y la de 8 bits un 97,6% y KL de 0,0012.
+Fidelidad de esta build de 4 bits respecto al código PyTorch de SenseNova en bf16 (16 prompts, todas las posiciones):
+
+| Build | Tamano | Mismo token top | KL en el último token | Texto greedy idéntico | Imágenes: mismo token top |
+|---|---|---|---|---|---|
+| 6-bit | 7,3 GB | 96,7 % | 0,0056 | 4 / 16 | 98,0 % |
+| 8-bit | 9,5 GB | 98,6 % | 0,0015 | 11 / 16 | 96,7 % |
+| 4-bit (esta build) | 5,1 GB | 84,4 % | 0,1038 | 2 / 16 | 95,4 % |
+| bf16 | 17,9 GB | 99,1 % | 0,0005 | 12 / 16 | Referencia |
 
 ## Requisitos de hardware
 
-- VRAM/memoria unificada: 5,1 GB de pesos en esta cuantización de 4 bits; el consumo total debe sumar la caché KV y los estados de Gated DeltaNet para el contexto utilizado.
-- GPU recomendadas: el formato MLX está diseñado para Apple Silicon; el autor reporta pruebas en un MacBook Pro M5 Max con 128 GB. No se documenta soporte para GPU NVIDIA en esta build.
-- Compatibilidad con GPU de consumo: al ser MLX, requiere chips Apple (M1 en adelante); encaja en equipos con memoria unificada de 16 GB o superior, aunque el contexto largo de 512K exige mucha más memoria.
-- Opciones de despliegue: mlx-lm 0.32 o superior con `trust_remote_code=True`; servidor mediante `mlx_lm.server`. No se documenta compatibilidad con vLLM, llama.cpp, Ollama o TGI en la información disponible.
-- Latencia y throughput: no disponibles en la información proporcionada.
+- VRAM/unified memory estimada: 5,1 GB de pesos en 4 bits; el consumo total en inferencia depende de la longitud de contexto y del número de imágenes. Con contexto largo o imágenes de alta resolución, el uso de memoria crece de forma significativa.
+- Hardware objetivo: Apple Silicon con MLX. Las pruebas de referencia se realizaron en un MacBook Pro M5 Max con 128 GB de memoria unificada.
+- GPU NVIDIA: no disponible; esta build está pensada para MLX y Apple Silicon, no para CUDA.
+- Cabe en hardware de consumo: sí, en equipos Apple Silicon con memoria unificada suficiente; 5,1 GB de pesos permiten su ejecución en configuraciones de 16 GB o más, aunque el contexto de 512K y la entrada de imagen requieren más memoria.
+- Despliegue: `mlx-lm` 0.32 o superior con `trust_remote_code=True`; servidor mediante `mlx_lm.server`. Para imagen y decodificación MTP se requiere el runtime `sensenova-loop-mlx` v0.3.0.
+- Latencia y throughput: no se proporcionan cifras absolutas; la cabeza MTP ofrece aproximadamente 1,7 veces más velocidad de decodificación que la decodificación simple.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Licencia | Formato | Notas |
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| SenseNova-Loop-9B-MLX-4bit (esta build) | 8,96B | 512K | Apache 2.0 | safetensors MLX | 5,1 GB, fidelidad reducida (84,0% top token) |
-| SenseNova-Loop-9B-MLX-6bit | 8,96B | 512K | Apache 2.0 | safetensors MLX | 7,3 GB, 96,7% top token, recomendada por el autor |
-| SenseNova-Loop-9B-MLX-8bit | 8,96B | 512K | Apache 2.0 | safetensors MLX | 9,5 GB, 97,6% top token |
-| SenseNova-Loop-9B-MLX-bf16 | 8,96B | 512K | Apache 2.0 | safetensors MLX | 17,9 GB, 98,6% top token |
-| Qwen3.8-27B | 27B (no confirmado) | No disponible | No disponible | No disponible | Referencia en benchmarks de SenseNova; supera en NL2Repo (44,60 vs 41,36) |
+| SenseNova-Loop-9B-MLX-4bit (esta build) | ~9B | 512K | Apache 2.0 | MLX 4-bit | 5,1 GB; fidelidad reducida respecto a bf16 (84,4 % mismo token top) |
+| SenseNova-Loop-9B-MLX-6bit | ~9B | 512K | Apache 2.0 | MLX 6-bit | 7,3 GB; recomendada por el autor por su mayor fidelidad (96,7 %) |
+| SenseNova-Loop-9B-MLX-8bit | ~9B | 512K | Apache 2.0 | MLX 8-bit | 9,5 GB; fidelidad alta (98,6 %) |
+| SenseNova-Loop-9B (original) | ~9B | 512K | Apache 2.0 | safetensors bf16 | 17,9 GB; referencia de fidelidad |
 
 ## Limitaciones y advertencias
 
-- La cuantización a 4 bits reduce la fidelidad respecto al modelo original: solo el 84,0% de coincidencia en token top y KL de 0,0982, frente al 96,7% y 0,0056 de la build de 6 bits. El propio autor recomienda la build de 6 bits para mayor fidelidad.
-- Solo 2 de 16 prompts generan texto greedy idéntico al modelo original en bf16, lo que puede afectar a tareas sensibles a la reproducibilidad exacta.
-- El formato MLX limita el despliegue a hardware Apple Silicon; no es portable a GPU NVIDIA ni a entornos de servidor x86 convencionales.
-- No se dispone de información sobre sesgos conocidos, tasas de alucinación ni idiomas soportados.
-- La ventana de 512K tokens requiere una gestión cuidadosa de la memoria; con cuantización de 4 bits y contexto máximo, el consumo de caché puede superar ampliamente el tamaño de los pesos.
-- Los benchmarks presentados corresponden al modelo original en BF16, no a esta build cuantizada, por lo que el rendimiento real puede ser inferior.
-- Aunque la licencia es Apache 2.0, el modelo deriva de Qwen3.5 y de SenseNova-Loop-9B; conviene revisar el archivo NOTICE del repositorio para obligaciones de atribución.
-- El modelo no está afiliado a SenseTime ni SenseNova; el soporte y mantenimiento dependen de NetProjects.
+- La fidelidad respecto al modelo original es limitada: solo el 84,4 % de las posiciones coinciden en el token de mayor probabilidad y únicamente 2 de 16 prompts generan texto greedy idéntico al bf16. El autor recomienda la build de 6 bits para un mejor equilibrio.
+- El KL de 0,1038 en el último token indica una divergencia de distribución apreciable frente al modelo original, lo que puede afectar a tareas sensibles a la precisión.
+- Riesgo de alucinación inherente a los modelos de lenguaje; no se han publicado evaluaciones específicas de sesgo en la información disponible.
+- Idiomas soportados no documentados; no se garantiza un rendimiento uniforme fuera de los idiomas evaluados por SenseNova.
+- El contexto de 512K requiere memoria considerable y puede degradar la calidad en extremos muy largos; la prueba de 64K se realizó con la build de 6 bits, no con la de 4 bits.
+- La entrada de imagen está limitada por defecto a aproximadamente 1 megapíxel por imagen; el límite de 16,7 MP exige mucha más memoria.
+- El uso comercial está permitido por la licencia Apache 2.0, pero el modelo no está afiliado a SenseTime/SenseNova y las garantías sobre su comportamiento en producción recaen en el usuario.
+- Requiere `trust_remote_code=True`, lo que implica ejecutar código incluido en el repositorio; conviene auditar `sensenova_loop.py` antes de desplegarlo en entornos sensibles.
 
 ## Enlaces
 
-- Repositorio Hugging Face de esta build: https://huggingface.co/netprojects/SenseNova-Loop-9B-MLX-4bit
-- Modelo base original: https://huggingface.co/sensenova/SenseNova-Loop-9B
-- Build MLX 6 bits: https://huggingface.co/netprojects/SenseNova-Loop-9B-MLX-6bit
-- Build MLX 8 bits: https://huggingface.co/netprojects/SenseNova-Loop-9B-MLX-8bit
-- Build MLX bf16: https://huggingface.co/netprojects/SenseNova-Loop-9B-MLX-bf16
-- Colección de builds MLX de NetProjects: https://huggingface.co/collections/netprojects/netprojects-mlx-builds-6ae3b2683a59a1b4fc4c0c3a
-- Todos los modelos de NetProjects: https://huggingface.co/netprojects
-- Sitio de NetProjects: https://netprojects.com
+- Modelo en Hugging Face: https://huggingface.co/netprojects/SenseNova-Loop-9B-MLX-4bit
+- Modelo base: https://huggingface.co/sensenova/SenseNova-Loop-9B
+- Build de 6 bits: https://huggingface.co/netprojects/SenseNova-Loop-9B-MLX-6bit
+- Build de 8 bits: https://huggingface.co/netprojects/SenseNova-Loop-9B-MLX-8bit
+- Build bf16: https://huggingface.co/netprojects/SenseNova-Loop-9B-MLX-bf16
+- Runtime MLX para visión y MTP: https://github.com/internet-projects/sensenova-loop-mlx/releases/tag/v0.3.0
+- NetProjects: https://netprojects.com

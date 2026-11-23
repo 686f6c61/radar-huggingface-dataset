@@ -1,101 +1,94 @@
 # Rumiii/Llama-3.1-8B-xLAM-Agent
 
 ## Resumen
+Llama-3.1-8B-xLAM-Agent es un ajuste fino supervisado del modelo meta-llama/Llama-3.1-8B-Instruct orientado especificamente al uso de herramientas (function calling). Lo desarrolla el usuario independiente Rumiii y se entrena con QLoRA sobre las primeras 16.000 muestras del dataset Salesforce/xlam-function-calling-60k. El resultado es un modelo de 8.030 millones de parametros (8B densos) que transforma la salida conversacional del Llama base en un array JSON de llamadas a funciones, con una mejora notable en la precision de las llamadas.
 
-Rumiii/Llama-3.1-8B-xLAM-Agent es un modelo publicado en Hugging Face por el usuario Rumiii el 14 de octubre de 2026. Por el nombre del repositorio se deduce que se trata de un ajuste fino (fine-tune) del modelo Llama 3.1 de 8.000 millones de parametros, orientado a tareas de agente y function calling, presumiblemente entrenado con datos del corpus xLAM (Large Action Model) de Salesforce. Esta interpretacion procede unicamente de la nomenclatura del repositorio: la model card no confirma ni el modelo base ni el dataset de entrenamiento.
+El problema que resuelve es concreto: el Llama-3.1-8B-Instruct original no es agentico por si mismo y produce invocaciones de herramientas poco fiables. Tras el ajuste, el autor reporta un aumento de la exactitud estricta del 10,40% al 86,54% y del JSON valido del 76,18% al 99,74% sobre 5.000 muestras de test del mismo dataset. Es relevante para quien necesite un modelo pequeno, desplegable en una sola GPU, para pipelines de agentes y tool calling sin depender de APIs propietarias.
 
-El problema que pretende resolver es el de dotar a un modelo de 8B de parametros de una capacidad fiable de invocacion de herramientas y ejecucion de flujos multi-paso, un nicho donde los modelos genericos de ese tamano suelen fallar en el formateo de llamadas y en el encadenamiento de acciones. Un modelo de ese tamano es desplegable en una sola GPU de consumo, lo que lo hace atractivo para pipelines de agentes con requisitos de coste y latencia ajustados.
-
-La relevancia del repositorio es, a dia de hoy, limitada y debe advertirse: el modelo acumula 0 descargas y 0 likes, la model card esta practicamente vacia (unicamente la declaracion de licencia apache-2.0 y una captura de pantalla) y no se documentan datos de entrenamiento, contexto, idiomas ni evaluaciones. Cualquier evaluacion por parte de terceros requiere verificar primero el contenido real del repositorio de pesos.
+La arquitectura es la del transformer denso de Llama 3.1, con 8B parametros y una ventana de contexto de 128.000 tokens heredada del modelo base. La licencia es la Llama 3.1 Community License, lo que condiciona el uso comercial.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (el nombre sugiere transformer decoder-only derivado de Llama 3.1 8B; no confirmado en la model card) |
-| Parametros totales | no disponible (el nombre indica 8B; no confirmado) |
-| Parametros activos | no aplica (no hay indicios de arquitectura MoE) |
-| Longitud de contexto | no disponible (si el base es Llama 3.1, 128.000 tokens; sin confirmar) |
-| Tipos de cuantizacion | no disponible (no se publican pesos GGUF ni AWQ en la informacion proporcionada) |
-| Idiomas soportados | no disponible (la model card no declara idiomas) |
-| Licencia | apache-2.0 |
-| Formato de pesos | no disponible (no se especifica safetensors, GGUF ni otros) |
-
-Otros metadatos del repositorio: autor Rumiii, region us, creado el 14-10-2026, actualizado el 14-10-2026, 0 descargas, 0 likes, pipeline no disponible.
+| Arquitectura | Transformer denso decoder-only (Llama 3.1) |
+| Parametros totales | 8.030.261.248 |
+| Parametros activos | no aplica (modelo denso) |
+| Longitud de contexto | 128.000 tokens (heredada del modelo base; no verificada en la model card) |
+| Tipos de cuantizacion | no disponible (pesos publicados en 16-bit; admite cuantizacion estandar tipo GGUF/4-bit, no documentada por el autor) |
+| Idiomas soportados | ingles (declarado en la model card; el base soporta mas idiomas, no verificado tras el ajuste) |
+| Licencia | Llama 3.1 Community License |
+| Formato de pesos | safetensors (transformers) |
 
 ## Arquitectura y entrenamiento
+El modelo parte de meta-llama/Llama-3.1-8B-Instruct, un transformer denso decoder-only con atencion por grupos (GQA) y RoPE, y se ajusta con QLoRA: r=32, alpha=64, aplicado a todas las proyecciones de atencion y MLP, 1 epoca, tamano de batch efectivo 16 y learning rate 1e-4. El entrenamiento se ejecuto en una unica Tesla T4 (entorno Kaggle), y los adaptadores se fusionaron posteriormente a 16 bits para publicar los pesos finales.
 
-No se ha publicado informacion sobre la arquitectura ni sobre el proceso de entrenamiento en la model card. El unico dato tecnico disponible es la licencia declarada (apache-2.0) y una imagen incrustada en el README que no aporta especificaciones.
-
-Si se confirma que el modelo base es Llama 3.1 8B, la arquitectura subyacente seria un transformer decoder-only autorregresivo con Grouped Query Attention (GQA), embeddings rotatorios (RoPE) y una ventana de contexto de 128.000 tokens, preentrenado por Meta sobre del orden de 15 billones de tokens y posteriormente alineado mediante SFT y DPO. El ajuste especifico para agentes se habria realizado presumiblemente sobre trazas de function calling del corpus xLAM, que combina llamadas a API reales y sinteticas. Ninguno de estos extremos esta verificado por el autor en el repositorio, por lo que deben tratarse como hipotesis de trabajo y no como hechos.
+Los datos son las primeras 16.000 filas de Salesforce/xlam-function-calling-60k en su orden original, sin barajado ni truncado (la muestra mas larga tiene 2.999 tokens). La perdida se calcula unicamente sobre la respuesta del asistente. No se documenta RLHF ni DPO; es un ajuste supervisado puro sobre datos sinteticos de llamadas a funciones. La innovacion principal no es arquitectonica sino de formato: el modelo aprende a emitir un unico array JSON de llamadas con la estructura `{"name": ..., "parameters": {...}}`, aceptando las herramientas a traves de la plantilla de chat de Llama 3.1.
 
 ## Capacidades
-
-- Generacion de texto: no documentada explicitamente, pero esperable en un modelo derivado de una familia instruct.
-- Function calling / tool calling: es el proposito inferido del nombre del repositorio (xLAM-Agent); no hay ejemplos, esquemas ni plantillas de prompt publicados.
-- Razonamiento multi-paso y uso como agente: inferido del nombre; sin evidencia publicada.
-- Razonamiento y matematicas: no disponible.
-- Capacidades de vision o audio: no disponible; no hay indicios de modalidad adicional.
-- Capacidades multilingues: no disponible; la model card no declara idiomas.
-- Modo de pensamiento explicito (thinking mode): no disponible.
-- Formato de plantilla de chat / tokens especiales de herramienta: no disponible.
+- Generacion de llamadas a funciones en formato JSON estricto, con multiples llamadas agrupadas en un mismo array.
+- Interpretacion de definiciones de herramientas en formato JSON Schema pasadas mediante la plantilla de chat.
+- Tool calling y function calling orientado a agentes de un solo paso y multi-paso.
+- Razonamiento basico y generacion de texto conversacional heredados del Llama-3.1-8B-Instruct.
+- Capacidad multilingue limitada: la model card declara solo ingles para este ajuste.
+- No se documentan capacidades de vision, audio ni modo thinking explicito.
+- No se documenta soporte nativo de agentes con memoria o planificacion autonoma; el autor indica que debe integrarse dentro de flujos agenticos externos.
 
 ## Casos de uso
-
-Dado que no hay documentacion funcional ni evaluaciones, los casos siguientes son escenarios plausibles derivados del proposito inferido del modelo. Deben validarse con pruebas propias antes de cualquier uso en produccion.
-
-- Agente de automatizacion de back-office: el modelo recibiria un catalogo de herramientas (consultas a base de datos, creacion de tickets, envio de correo) y encadenaria llamadas en varios pasos. Un modelo de 8B con ajuste especifico de function calling puede ejecutarse en una sola GPU y mantener el coste por tarea bajo.
-- Orquestacion de APIs en pipelines de integracion: traduccion de lenguaje natural a llamadas estructuradas (JSON) para sistemas internos, con validacion posterior del esquema devuelto.
-- Asistente de operaciones sobre infraestructura: interpretacion de peticiones en lenguaje natural y emision de comandos a herramientas de observabilidad o de gestion de incidencias, siempre con aprobacion humana intermedia.
-- Extraccion estructurada de informacion de documentos: conversion de texto no estructurado en objetos JSON con campos definidos, usando el modelo como extractor con salida validada por esquema.
-- Enrutado de consultas en sistemas multi-agente: clasificacion de la peticion del usuario y seleccion del subagente o herramienta adecuada, una tarea donde el coste de inferencia importa mas que la calidad de redaccion.
-- Agente de navegacion web o RPA asistido: generacion de acciones estructuradas a partir de la descripcion del objetivo del usuario, con un 8B desplegado en local para evitar enviar datos sensibles a APIs externas.
-- Prototipado e investigacion en entornos academicos: al ser un modelo pequeno y con licencia permisiva declarada, sirve como base para experimentos de fine-tuning adicional en tareas de agentes.
+- Orquestacion de agentes con herramientas: el modelo recibe el esquema de funciones disponibles y devuelve el array JSON de llamadas, lo que permite integrarlo como planificador de acciones en frameworks de agentes (LangChain, LlamaIndex, etc.) con validacion posterior de cada llamada.
+- Automatizacion de APIs internas: mapear peticiones en lenguaje natural a llamadas concretas a endpoints REST o funciones Python, aprovechando la alta tasa de JSON valido (99,74% reportada) para reducir errores de parseo en produccion.
+- Asistentes de operaciones y DevOps: traducir instrucciones como "reinicia el servicio X en el entorno Y" a invocaciones estructuradas de herramientas de infraestructura, con validacion previa antes de ejecutar acciones con efectos secundarios.
+- Extraccion estructurada de parametros: usar el modelo para convertir texto libre en argumentos tipados de una funcion, util en pipelines de ingesta de datos y formularios conversacionales.
+- Enrutado de consultas en sistemas multi-herramienta: seleccionar la funcion adecuada entre un conjunto grande (la metrica de function-set accuracy reportada es 99,18%), por ejemplo en un asistente que combina busqueda, calculo y consultas a base de datos.
+- Prototipado rapido en una sola GPU: al ser un 8B en 16 bits, cabe en GPUs de consumo alto o en instancias cloud modestas, lo que permite iterar sobre esquemas de herramientas sin costes elevados.
+- Investigacion sobre function calling: servir como linea base reproducible (QLoRA sobre xLAM) para estudiar tecnicas de ajuste en tool use.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+Evaluacion del autor sobre 5.000 muestras de test del dataset Salesforce xLAM Function Calling, comparando el modelo ajustado con el Llama-3.1-8B-Instruct original:
+
+| Metrica | Llama-3.1-8B-Instruct | Llama-3.1-8B-xLAM-Agent |
+|---|---|---|
+| Exact match estricto | 10,40% | 86,54% |
+| Salida JSON valida | 76,18% | 99,74% |
+| Function-set accuracy | 30,20% | 99,18% |
+| F1 a nivel de argumento | 41,73% | 93,10% |
+
+No se han publicado resultados en benchmarks estandar (MMLU, HumanEval, GSM8K, BFCL) en la informacion disponible. Las cifras anteriores provienen de la model card del autor y no han sido verificadas de forma independiente.
 
 ## Requisitos de hardware
-
-Las cifras siguientes son estimaciones orientativas derivadas del supuesto de 8.000 millones de parametros; no proceden de mediciones del autor ni de documentacion del repositorio.
-
-- VRAM en fp16/BF16: en torno a 16 GB solo para pesos, mas la cache KV (que crece linealmente con la longitud de contexto y el numero de secuencias concurrentes).
-- VRAM en cuantizacion de 8 bits: aproximadamente 8-9 GB de pesos.
-- VRAM en cuantizacion de 4 bits: aproximadamente 5-6 GB de pesos.
-- GPU para fp16 con contexto largo y batching: A100 40/80 GB, H100 80 GB, L40S 48 GB.
-- GPU de consumo: cabe en RTX 4090 (24 GB) en fp16 con contexto moderado, y en RTX 3090, RTX 4080 o RTX 4070 Ti en cuantizacion de 8 o 4 bits.
-- Despliegue: vLLM, TGI, SGLang y TensorRT-LLM para servido con batching; llama.cpp, Ollama y LM Studio para ejecucion local en cuantizacion GGUF (no se confirma la disponibilidad de pesos GGUF publicados por el autor; habria que generarlos).
-- Latencia y throughput: no disponibles. Como referencia generica de la clase 8B en una RTX 4090 con vLLM, cabria esperar del orden de 100-150 tokens por segundo en streaming de una sola secuencia, pero es una estimacion no verificada para este modelo.
+- Inferencia en 16 bits: aproximadamente 16 GB de VRAM para los pesos, mas overhead de activaciones y cache KV; se recomienda al menos 20-24 GB.
+- Cuantizacion 8-bit: en torno a 8-9 GB de VRAM; 4-bit: en torno a 5-6 GB (no documentada por el autor, estimacion estandar para un 8B).
+- GPUs recomendadas: A100 40/80 GB o H100 para despliegue de alta concurrencia; RTX 4090 (24 GB) o RTX 3090 para 16 bits en una sola tarjeta; L4 o T4 para cuantizado.
+- Cabe en GPU de consumo: si, en RTX 4090/3090 a 16 bits y en tarjetas de 8-12 GB con cuantizacion 4/8-bit.
+- Opciones de despliegue: transformers (ejemplo oficial), text-generation-inference (tag `text-generation-inference` en el repo), vLLM y llama.cpp/Ollama mediante conversion a GGUF (no publicada por el autor).
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-La comparativa se plantea contra alternativas de la misma categoria (8B con orientacion a function calling). Los datos de este repositorio son en su mayoria no disponibles, por lo que la tabla es necesariamente incompleta.
-
-| Modelo | Parametros | Contexto | Licencia | Disponibilidad | Evaluaciones publicadas |
+| Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Rumiii/Llama-3.1-8B-xLAM-Agent | no disponible (nombre sugiere 8B) | no disponible | apache-2.0 | Repositorio Hugging Face, 0 descargas | no disponible |
-| Llama-3.1-8B-Instruct (Meta) | 8B | 128.000 tokens | Llama 3.1 Community License | Ampliamente desplegado, ecosistema maduro | Si, publicadas por Meta |
-| xLAM-7B-r (Salesforce) | 7B | 32.768 tokens (segun model card de Salesforce) | CC-BY-NC-4.0 (uso no comercial) | Hugging Face | Si, publicadas por Salesforce |
-| Hermes-3-Llama-3.1-8B (NousResearch) | 8B | 131.072 tokens | Llama 3.1 Community License | Hugging Face, ampliamente usado | Parciales |
+| Llama-3.1-8B-xLAM-Agent | 8B densos | 128.000 (heredado) | Function calling (QLoRA sobre xLAM) | Llama 3.1 Community | Hugging Face |
+| meta-llama/Llama-3.1-8B-Instruct | 8B densos | 128.000 | Chat general, tool calling nativo limitado | Llama 3.1 Community | Hugging Face |
+| Salesforce/xLAM-7b-fc-r | 7B densos | no disponible | Function calling especializado | CC-BY-4.0 (dataset); licencia del modelo segun card | Hugging Face |
+| Qwen2.5-7B-Instruct | 7B densos | 32.768 (128K con RoPE) | Chat general con buen soporte de tool calling | Apache 2.0 | Hugging Face |
 
-Conviene senalar que la licencia declarada apache-2.0 en este repositorio resulta llamativa si el modelo base es Llama 3.1, ya que los terminos de Meta exigen redistribuir las copias y derivados bajo la Llama 3.1 Community License e incluir las condiciones de uso aceptable.
+La comparativa se limita a caracteristicas publicas; no se dispone de resultados cruzados de benchmarks entre estos modelos en la informacion proporcionada.
 
 ## Limitaciones y advertencias
-
-- No hay ninguna evaluacion publicada, ni del autor ni de terceros: no es posible afirmar nada sobre su calidad real en function calling.
-- Model card practicamente vacia: se desconoce el dataset de entrenamiento, el numero de tokens, el metodo de alineacion y la composicion de idiomas. Esto impide auditar sesgos y comportamientos.
-- Riesgo de alucinacion de herramientas: los modelos ajustados para function calling tienden a inventar nombres de funciones o argumentos cuando el esquema no esta bien delimitado; sin ejemplos publicados, no se puede comprobar como maneja este caso.
-- Riesgo de alucinacion factual general: no documentado.
-- Idiomas: no disponibles. Si el ajuste se hizo solo con datos en ingles, el rendimiento en castellano podria degradarse respecto al modelo base.
-- Contexto: no disponible. Si el fine-tuning se realizo solo con secuencias cortas, la capacidad de contexto largo del modelo base puede haberse reducido.
-- Licencia: se declara apache-2.0, pero si el modelo deriva de Llama 3.1, los terminos de la Llama 3.1 Community License se aplican igualmente, incluida la obligacion de incluir la clausula de uso aceptable y de atribucion. La aparente incompatibilidad entre ambas licencias es un riesgo juridico que debe aclararse antes de un uso comercial.
-- Repositorio sin traccion (0 descargas, 0 likes) y con un unico commit de hace menos de una hora respecto a la fecha de actualizacion: no hay garantia de mantenimiento ni de soporte.
-- No se confirma la publicacion de pesos en formato utilizable (safetensors o GGUF) ni la existencia de una plantilla de chat compatible con las herramientas.
-- La fecha de creacion del repositorio (2026) y la ausencia de pipeline declarado sugieren un artefacto experimental o de prueba, no un modelo destinado a produccion.
+- Entrenado sobre datos sinteticos: el autor advierte que las salidas pueden contener argumentos incorrectos; toda llamada debe validarse antes de ejecutarse, especialmente si tiene efectos secundarios.
+- Riesgo de alucinacion de nombres de funciones o parametros no presentes en el esquema; conviene validar contra el JSON Schema.
+- El ajuste se hizo solo sobre las primeras 16.000 muestras del dataset, sin barajado, lo que puede introducir sesgos de distribucion hacia esos tipos de funciones.
+- Idioma: la model card declara solo ingles; el rendimiento en castellano no esta verificado y probablemente sea inferior.
+- No es agentico por si mismo: requiere un orquestador externo que gestione el bucle de llamadas, resultados y memoria.
+- Licencia Llama 3.1 Community: impone restricciones de uso comercial, requisitos de atribucion y clausulas de uso aceptable; revisar antes de produccion.
+- El dataset xLAM esta bajo CC-BY-4.0, con requisito de atribucion (Liu et al., 2024, APIGen, arXiv:2406.18518).
+- Modelo de autor independiente con 491 descargas y 0 likes: no hay validacion externa ni mantenimiento garantizado.
+- No se documentan evaluaciones de seguridad, sesgos ni robustez frente a prompts adversarios.
 
 ## Enlaces
-
-- Repositorio Hugging Face: https://huggingface.co/Rumiii/Llama-3.1-8B-xLAM-Agent
-- Imagen incrustada en la model card: https://cdn-uploads.huggingface.co/production/uploads/66e00ba55e4fd4bfead4a97c/zH9Sn1dDIaWuwLfg1gmRt.png
-- No se han encontrado papers, blogs, repositorios de codigo ni demos asociados a este modelo en la informacion disponible.
+- Hugging Face: https://huggingface.co/Rumiii/Llama-3.1-8B-xLAM-Agent
+- Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
+- Dataset: https://huggingface.co/datasets/Salesforce/xlam-function-calling-60k
+- Paper APIGen (arXiv:2406.18518): https://arxiv.org/abs/2406.18518
+- Licencia Llama 3.1: https://llama.meta.com/llama3_1/license/

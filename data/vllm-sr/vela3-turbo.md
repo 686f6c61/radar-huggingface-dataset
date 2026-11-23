@@ -2,96 +2,102 @@
 
 ## Resumen
 
-vela3-turbo es un modelo de decisión y extracción de 27B desarrollado por vLLM Semantic Router en colaboración con KR Labs, miembro de referencia de la familia Vela 3.0. Se construye sobre vllm-sr/d3-turbo (v1.0, revision `da17b5d0c860f7e5be6e2afebe67228b4bd24d0c`, congelado) al que añade adaptadores LoRA con gating para tareas de extracción de spans. Está diseñado para resolver, en una única llamada `system_one`, tareas de enrutado semántico de LLM, clasificación zero-shot, NER, extracción de relaciones, detección de PII, detección de alucinaciones y señales de seguridad, devolviendo probabilidades y offsets de caracteres sin generar texto libre.
+vela3-turbo es un modelo de decisión y extracción de 26,09B de parámetros publicado por vLLM Semantic Router (vllm-sr) en colaboración con KR Labs, como miembro de referencia de la familia Vela 3.0. Se construye sobre el modelo base d3-turbo v1.0 (revisión `da17b5d0c860f7e5be6e2afebe67228b4bd24d0c`, congelada) y añade adaptadores LoRA con compuertas para resolver tareas de enrutamiento semántico y guardarraíles en una sola llamada `system_one`: clasificación zero-shot, extracción de entidades y relaciones, detección de PII, detección de afirmaciones no respaldadas y señales de router.
 
-Su relevancia actual radica en el auge de los routers semánticos y los guardrails para sistemas LLM en producción: en lugar de usar un LLM generativo grande para clasificar o extraer información, Vela ofrece respuestas deterministas con probabilidades calibradas. Los adaptadores solo se activan para su tarea concreta, de modo que las decisiones ordinarias son bit a bit idénticas a las del modelo base d3-turbo (561 de 561 idénticas en su verificación interna). Se publica bajo licencia Apache-2.0 con un repositorio de 6,2 GB en Hugging Face.
+El modelo no genera texto: devuelve elecciones, sí/no, puntuaciones y spans con offsets de caracteres y probabilidades. Esta orientación lo hace adecuado como componente de infraestructura para sistemas de enrutamiento de LLM y filtros de seguridad, en lugar de como modelo conversacional. Su pipeline declarado en Hugging Face es `zero-shot-classification` y la licencia es Apache-2.0.
 
-## Especificaciones tecnicas
+La relevancia actual reside en que cubre tareas de extracción y clasificación con resultados que el autor sitúa por encima de modelos mayores en los mismos conjuntos de evaluación, manteniendo las decisiones ordinarias bit a bit idénticas al modelo base d3-turbo gracias a que este permanece congelado.
 
-| Parametro | Valor |
+## Especificaciones técnicas
+
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | qwen3_5 (transformer multimodal) con adaptadores LoRA con gating por tarea sobre base congelada |
-| Parametros totales | 26,09B (base con codificador de vision) + 5044 MB de adaptadores y cabeceras |
-| Parametros activos | no disponible (no se indica si es MoE; los adaptadores se activan selectivamente por tarea) |
+| Arquitectura | Transformer multimodal (base d3-turbo) con adaptadores LoRA con compuertas y cabezas de extracción |
+| Parámetros totales | 26,09B (incluye codificador de visión) + 5044 MB de adaptadores y cabezas |
+| Parámetros activos | no disponible (no se declara como MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible |
+| Tipos de cuantización | no disponible |
 | Idiomas soportados | no disponible |
 | Licencia | Apache-2.0 |
-| Formato de pesos | transformers (safetensors), endpoints_compatible, custom_code |
+| Formato de pesos | no disponible (repo de 6,2 GB; `custom_code` en transformers) |
 
 ## Arquitectura y entrenamiento
 
-vela3-turbo sigue una arquitectura de base congelada más adaptadores: d3-turbo (26,09B con codificador de vision, multimodal, acepta texto, JSON, imagenes y videos para sus tipos de pregunta propios) responde todas las decisiones ordinarias (choice, yes/no, score) sin modificacion, garantizando reproducibilidad bit a bit. Sobre esta base se montan adaptadores LoRA con gating, uno por tarea: spans (claims no soportados, datos personales, evidencia), entidades, relaciones y senales de router. Cada adaptador se activa unicamente cuando la pregunta corresponde a su tarea.
+vela3-turbo mantiene congelado el modelo base d3-turbo v1.0 y añade pequeños adaptadores LoRA con compuertas, uno por tarea: spans (afirmaciones no respaldadas, datos personales, evidencia), entidades, relaciones y señales de router. Cada adaptador se activa únicamente para su tipo de pregunta, de modo que las decisiones ordinarias las responde d3-turbo sin adaptadores, bit a bit (561 de 561 idénticas en la comprobación del autor). El modelo base incorpora codificador de visión, por lo que acepta texto, JSON, imágenes y vídeo para los tipos de pregunta propios de d3-turbo.
 
-El entrenamiento reutiliza la receta de vela3-flash portada a d3-turbo: los adaptadores de spans, entidades y router se re-umbralizaron y el de relaciones se reentreno. Las senales de router se entrenaron de forma supervisada sobre datasets publicos usados por Vela 2.0 (AEGIS 2.0, PolyGuardMix y Nemotron-Safety-Guard v3 para seguridad; Global-MMLU para dominio; WildFeedback para feedback; DiffusionDB para modalidad; MASSIVE para intents), y dominio y feedback ademas sobre el train split del router signal suite publico. El resto de datos incluye datasets publicos de NER, relaciones, alucinaciones, evidencia y PII, mas texto web y de documentos etiquetado por un modelo profesor grande. No se entrena con ningun test split ni con items del Decision Index; se advierte de cierto solapamiento entre filas de test del router signal suite y fuentes de entrenamiento publicas.
+Los adaptadores se entrenaron con la receta de vela3-flash y se portaron a d3-turbo: los de spans, entidades y router se reajustaron en umbral, y el de relaciones se reentrenó. Las señales de router se entrenaron de forma supervisada sobre los mismos conjuntos públicos que Vela 2.0 (AEGIS 2.0, PolyGuardMix y Nemotron-Safety-Guard v3 para seguridad; Global-MMLU para dominio; WildFeedback para feedback; DiffusionDB para modalidad; MASSIVE para intenciones), además del split de entrenamiento de la suite pública de señales de router. Otros datos incluyen conjuntos públicos de NER, relaciones, alucinación, evidencia y PII, junto con texto web y de documentos etiquetado por un modelo profesor grande. No se entrena con ningún test split ni con elementos del Decision Index; el autor advierte que algunas filas de test de la suite de señales de router aparecen también en fuentes públicas de entrenamiento, por lo que la tabla de router reporta además las filas sin esa superposición.
 
 ## Capacidades
 
-- Clasificacion zero-shot por nombres de etiquetas, con probabilidad por opcion (tipos `choice`, `yes/no`, `score`).
-- Extraccion de spans exactos con offsets de caracteres: claims no soportados (alucinaciones), datos personales (PII) y evidencia.
-- NER zero-shot a partir de nombres de etiquetas.
-- Extraccion de relaciones end-to-end y con entidad cabeza dada.
-- Senales de router semantico: seguridad de contenido, dominio, feedback, modalidad e intents, para enrutado de LLM.
-- Deteccion de alucinaciones sobre respuestas de RAG.
-- Multimodal: acepta imagenes y videos para los tipos de pregunta propios de d3-turbo.
-- Respuestas estructuradas sin generacion de texto libre, adecuada para pipelines deterministas.
-- No se documenta soporte de tool calling ni de agentes multi-paso.
+- Clasificación zero-shot: 81,4 en la suite de clasificación de 13 conjuntos de GLiFormer.
+- Extracción de relaciones zero-shot: 35,9 end-to-end en el protocolo de GLiFormer (media de 4 conjuntos) y 51,7 en CoNLL04 con entidad cabeza dada.
+- NER zero-shot: 64,6 en OOD-7 (CrossNER + MIT) a partir de nombres de etiqueta.
+- Detección de afirmaciones no respaldadas: 0,900 de example-F1 en el test de LettuceDetect v2.
+- Señales de router: mejor que Vela 2.0 9B en 20 de los 24 ficheros de test de la suite pública, igual en 4 y peor en ninguno (IC del 95% emparejado).
+- Decisiones ordinarias (elección, sí/no, puntuación) respondidas por d3-turbo con adaptadores desactivados.
+- Soporte de entrada multimodal (imágenes y vídeo) para los tipos de pregunta de d3-turbo.
+- Capacidades declaradas por etiquetas: detección de PII, detección de alucinaciones, seguridad de contenido, extracción de relaciones y NER.
+- Soporte de tool calling / function calling: no disponible.
+- Soporte de agentes y razonamiento multi-paso: no disponible.
 
 ## Casos de uso
 
-- Enrutado semantico de LLM en produccion: clasifica cada peticion de usuario por dominio, intent, modalidad y senal de seguridad en una llamada `system_one`, permitiendo dirigir la consulta al modelo o agente adecuado con latencia baja y sin generacion de texto.
-- Guardrails de seguridad: usa las senales entrenadas sobre AEGIS 2.0, PolyGuardMix y Nemotron-Safety-Guard v3 para filtrar contenido inseguro antes de que llegue al LLM principal.
-- Deteccion de alucinaciones en RAG: verifica cada frase de una respuesta generada contra el contexto recuperado y marca los claims no soportados con offsets exactos (0,900 de example-F1 en LettuceDetect v2), util para mostrar advertencias al usuario o regenerar respuestas.
-- Cumplimiento y proteccion de datos (GDPR): detecta y localiza PII en textos y documentos con offsets de caracteres, facilitando la anonimizacion automatica antes de enviar datos a APIs externas.
-- Enriquecimiento de documentos con NER y relaciones zero-shot: extrae entidades y relaciones definiendo las etiquetas en la propia peticion, sin entrenar un modelo por dominio, util en indexacion de corpus empresariales o extraccion de conocimiento.
-- Clasificacion zero-shot de tickets y consultas: categoriza peticiones de soporte en taxonomias definidas en tiempo de ejecucion (por ejemplo billing/tech), con probabilidades por opcion para establecer umbrales de escalamiento.
-- Verificacion de evidencia: localiza los fragmentos del contexto que sostienen o refutan una afirmacion, util en sistemas de fact-checking y auditoria de respuestas.
+- Enrutamiento de peticiones entre LLM: el modelo devuelve una probabilidad por opción para clasificar la consulta (por ejemplo, facturación frente a soporte técnico) y decidir a qué modelo o servicio derivarla, sin generar texto y con coste de latencia bajo.
+- Guardarraíl de seguridad de contenido: las señales de router entrenadas sobre AEGIS 2.0, PolyGuardMix y Nemotron-Safety-Guard v3 permiten clasificar entradas potencialmente dañinas antes de que lleguen al modelo generativo.
+- Detección de PII en pipelines de datos: el adaptador de spans localiza datos personales con offsets de caracteres, útil para anonimizar documentos antes de almacenarlos o enviarlos a terceros.
+- Verificación de respuestas en sistemas RAG: el adaptador de afirmaciones no respaldadas detecta fragmentos sin evidencia en la respuesta generada, con 0,900 de example-F1 en LettuceDetect v2, para activar una revisión o un reintento.
+- Extracción de entidades y relaciones en documentos: NER zero-shot a partir de nombres de etiqueta y extracción de relaciones con entidad cabeza dada, aplicable a construcción de grafos de conocimiento o indexación semántica sin entrenamiento específico por dominio.
+- Clasificación de feedback de usuario: la señal de feedback (entrenada sobre WildFeedback) permite etiquetar opiniones y priorizar colas de atención al cliente.
+- Detección de modalidad de entrada: la señal entrenada sobre DiffusionDB clasifica el tipo de contenido (texto, imagen, vídeo) para enrutar peticiones multimodales al modelo adecuado.
+- Clasificación de intenciones en asistentes: la señal entrenada sobre MASSIVE permite asignar la intención de una consulta en un sistema de diálogo sin un modelo generativo adicional.
 
 ## Benchmarks y rendimiento
 
-| Benchmark | vela3-turbo | Comparativa (reportada) |
-|---|---|---|
-| Clasificacion zero-shot (13 sets, GLiFormer Tab 5) | 81,4 | GPT-5-mini: 79,8; Gemma-4-31B-IT: 79,69 |
-| Relaciones end-to-end (GLiFormer Tab 4, avg de 4) | 35,9 | Qwen3.5-9B prompted: 25,7 |
-| CoNLL04 con entidad cabeza dada | 51,7 | GLiFormer-base: 8,6 (misma harness) |
-| NER zero-shot OOD-7 (CrossNER + MIT) | 64,6 | gliner-multitask-large-v0.5: 62,76 |
-| Claims no soportados, example-F1 (LettuceDetect v2, 10.698 respuestas) | 0,900 | LettuceDetect v2 mmBERT-base: 0,869; Vela 2.0 9B: 0,885 |
-| Senales de router (24 ficheros, CI pareado 95%) | mejor que Vela 2.0 9B en 20, igual en 4, peor en 0 | — |
-| Decisiones ordinarias vs d3-turbo base | 561/561 identicas | — |
-
-No se han publicado resultados de benchmarks tipo MMLU, HumanEval o GSM8K; el modelo no esta orientado a generacion general.
+| Benchmark | vela3-turbo | Referencia comparada | Fuente |
+|---|---|---|---|
+| Suite de clasificación GLiFormer (13 conjuntos) | 81,4 | GPT-5-mini: 79,8; Gemma-4-31B-IT: 79,69 | GLiFormer paper, Tab. 5 |
+| Relaciones end-to-end (protocolo GLiFormer, media de 4) | 35,9 | Qwen3.5-9B con prompting: 25,7 (mejor reportado) | GLiFormer paper, Tab. 4 |
+| CoNLL04 con entidad cabeza dada | 51,7 | GLiFormer-base: 8,6 (ejecución propia, mismo harness) | model card |
+| NER zero-shot OOD-7 (CrossNER + MIT) | 64,6 | gliner-multitask-large-v0.5: 62,76 (mejor reportado) | model card |
+| LettuceDetect v2 (example-F1) | 0,900 | LettuceDetect v2 mmBERT-base: 0,869; Vela 2.0 9B: 0,885 | model card |
+| Suite pública de señales de router (24 ficheros) | Mejor en 20, igual en 4, peor en 0 | Vela 2.0 9B | model card (IC 95% emparejado) |
+| Decisiones ordinarias (561 comprobaciones) | 561/561 idénticas a d3-turbo | d3-turbo v1.0 sin adaptadores | model card |
 
 ## Requisitos de hardware
 
-- VRAM estimada: no disponible. Con 26,09B de parametros en pesos base mas ~5 GB de adaptadores y cabeceras, en FP16/BF16 se requieren en torno a 52-55 GB, es decir, una GPU de datacenter (A100/H100 80 GB) o multiples GPUs consumer con tensor parallelism; con cuantizacion de 4 bits (si se soporta) cabria en torno a 16-18 GB, teoricamente viable en una RTX 4090 de 24 GB, aunque no hay soporte de cuantizacion documentado.
-- GPU recomendadas: no disponible de forma explicita; por tamano, A100 80 GB o H100 son la opcion segura.
-- Consumer GPU: no confirmado; solo seria factible con cuantizacion de 4 bits no documentada oficialmente.
-- Despliegue: libreria transformers con custom_code; compatible con Inference Endpoints de Hugging Face (endpoints_compatible). No se menciona soporte de vLLM, llama.cpp, Ollama o TGI.
-- Latencia y throughput: no disponibles. Al no generar texto y responder con probabilidades y spans, la latencia esperada es la de un forward pass de 27B, inferior a la de un LLM generativo equivalente.
+- VRAM estimada para inferencia: no disponible de forma oficial. El repo ocupa 6,2 GB, lo que sugiere pesos en precisión reducida o cuantización, pero el tamaño real en memoria para 26,09B de parámetros más adaptadores no se detalla en la información proporcionada.
+- GPU recomendadas: no disponible. Por tamaño (26B), un despliegue en FP16 requeriría del orden de 52 GB de VRAM, lo que implica A100 80GB, H100 o múltiples GPU; esta estimación es orientativa y no procede de la documentación del autor.
+- ¿Cabe en GPU de consumo? No disponible. Con cuantización de 4 bits podría situarse en el entorno de 13-16 GB, pero el autor no publica cuantizaciones ni requisitos verificados.
+- Opciones de despliegue: la librería declarada es `transformers` con `custom_code`, por lo que requiere cargar código personalizado del repositorio. Compatibilidad con vLLM, llama.cpp, Ollama o TGI: no disponible.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Tarea principal | Rendimiento destacado | Licencia |
-|---|---|---|---|---|
-| vela3-turbo | 26,09B + adaptadores | Decision, extraccion, router | 81,4 clasificacion zero-shot; 0,900 F1 alucinaciones | Apache-2.0 |
-| Vela 2.0 9B | 9B | Decision, extraccion, router | 0,885 F1 alucinaciones; peor que vela3-turbo en 20/24 ficheros de router | no disponible |
-| vela3-flash | no disponible | Miembro de la misma familia, receta de origen | no disponible | no disponible |
-| gliner-multitask-large-v0.5 | no disponible | NER/clasificacion zero-shot | 62,76 en OOD-7 (frente a 64,6 de vela3-turbo) | no disponible |
-| LettuceDetect v2 mmBERT-base | no disponible | Deteccion de alucinaciones | 0,869 example-F1 (frente a 0,900) | no disponible |
+| Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| vela3-turbo | 26,09B + adaptadores | no disponible | Decisión y extracción (router y guardarraíles) | Apache-2.0 | Hugging Face (vllm-sr) |
+| Vela 2.0 9B | 9B | no disponible | Decisión y señales de router | no disponible | Referenciado en la model card |
+| d3-turbo v1.0 | no disponible (modelo base) | no disponible | Decisiones ordinarias | no disponible | Hugging Face (vllm-sr/d3-turbo) |
+| GLiFormer-base | no disponible | no disponible | NER y relaciones | no disponible | Referenciado en el paper GLiFormer |
+| gliner-multitask-large-v0.5 | no disponible | no disponible | NER zero-shot | no disponible | Referenciado en la model card |
 
 ## Limitaciones y advertencias
 
-- No genera texto: no sirve como chatbot ni como LLM general; su salida son decisiones, probabilidades y spans.
-- Las decisiones ordinarias dependen de d3-turbo v1.0 fijado; el main publico de d3-turbo esta ya en v1.1, por lo que los resultados pueden diferir de versiones mas recientes del base.
-- Existe solapamiento parcial entre filas de test del router signal suite y fuentes de entrenamiento publicas; la propia ficha reporta tambien las filas sin ese solapamiento, conviene revisar ambas cifras.
-- La longitud de contexto, idiomas soportados y cuantizacion no estan documentados, lo que dificulta planificar despliegues con documentos largos o en castellano.
-- No hay datos de sesgo especificos publicados; al entrenar con datasets publicos de seguridad y moderacion, pueden existir sesgos heredados de esos corpus.
-- Riesgo de alucinacion bajo en la deteccion de spans, pero los umbrales incluidos ("shipped thresholds") pueden requerir recalibrado para cada dominio de aplicacion.
-- Licencia Apache-2.0: sin restricciones de uso comercial relevantes, aunque el uso de custom_code exige confiar en el codigo del repositorio al cargarlo con transformers.
+- El modelo no genera texto: solo devuelve elecciones, sí/no, puntuaciones y spans. No es adecuado como modelo conversacional ni para generación libre.
+- Sesgos conocidos: no disponibles de forma explícita; al entrenarse con conjuntos públicos y etiquetado de un modelo profesor, puede heredar sesgos de esas fuentes.
+- Riesgo de alucinación: el modelo está diseñado para detectar afirmaciones no respaldadas, pero sus propias salidas de clasificación y spans pueden contener errores, especialmente en dominios alejados de los datos de entrenamiento.
+- Limitaciones de contexto e idioma: la longitud de contexto y los idiomas soportados no se declaran en la información disponible.
+- Superposición de datos: algunas filas de test de la suite pública de señales de router aparecen en fuentes públicas de entrenamiento, lo que puede inflar las métricas de router; el autor reporta también las filas sin solapamiento.
+- Dependencia del modelo base: las decisiones ordinarias dependen de d3-turbo v1.0 fijado; actualizar a d3-turbo v1.1 requiere revalidar los adaptadores.
+- Requiere `custom_code` en transformers, lo que añade complejidad de despliegue y riesgos de seguridad al cargar código del repositorio.
+- Restricciones de licencia: Apache-2.0 permite uso comercial, pero deben verificarse las licencias de los conjuntos de datos de entrenamiento y del modelo base d3-turbo.
+- Los benchmarks comparados con otros modelos proceden de cifras reportadas por sus autores o ejecuciones propias del autor, no de evaluaciones independientes.
 
 ## Enlaces
 
-- Modelo: https://huggingface.co/vllm-sr/vela3-turbo
-- Modelo base: https://huggingface.co/vllm-sr/d3-turbo
-- Coleccion Vela 3.0: https://huggingface.co/collections/vllm-sr/vela-30-6ad1c430eb1718eb4754edcd
-- GLiFormer paper (Tablas 4 y 5, numeros reportados): no disponible (no se incluye enlace en la model card)
+- Modelo en Hugging Face: https://huggingface.co/vllm-sr/vela3-turbo
+- Modelo base d3-turbo: https://huggingface.co/vllm-sr/d3-turbo
+- Colección Vela 3.0: https://huggingface.co/collections/vllm-sr/vela-30-6ad1c430eb1718eb4754edcd
+- Paper GLiFormer: no disponible (referenciado en la model card sin enlace)
+- Repositorio vLLM Semantic Router: no disponible
+- Demo: no disponible

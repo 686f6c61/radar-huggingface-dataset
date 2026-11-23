@@ -5,7 +5,7 @@
   "author": "Kokasospoperor",
   "url": "https://huggingface.co/Kokasospoperor/dynamic-chunked-48m",
   "created_at": "2026-11-21T21:15:52.000Z",
-  "updated_at": "2026-11-21T21:22:52.000Z",
+  "updated_at": "2026-11-22T06:49:17.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -21,7 +21,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 27,
   "trending_score": 0,
   "parameters": 48230082,
   "parameters_human": "48.2M",

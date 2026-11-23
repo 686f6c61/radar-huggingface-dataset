@@ -5,7 +5,7 @@
   "author": "H3-Tiny",
   "url": "https://huggingface.co/H3-Tiny/MiniMax-H3-Tiny-14B-OKD-Ref2VA-v0.1",
   "created_at": "2026-11-19T12:03:05.000Z",
-  "updated_at": "2026-11-22T11:04:25.000Z",
+  "updated_at": "2026-11-22T12:37:01.000Z",
   "license": "minimax-h3-community-license",
   "license_family": "non-commercial",
   "pipeline_tag": "text-to-video",
@@ -26,7 +26,7 @@
     "license:other",
     "region:us"
   ],
-  "likes": 5,
+  "likes": 6,
   "downloads_30d": 196,
   "trending_score": 0,
   "parameters": 13989119056,

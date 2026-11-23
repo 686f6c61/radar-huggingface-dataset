@@ -46,31 +46,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "francesca9805/nor-100mb-after-wc-uniform-newlex-before-ckpt500-packed ...",
-      "url": "https://huggingface.co/francesca9805/nor-100mb-after-wc-uniform-newlex-before-ckpt500-packed-bfd_seed455_seed455",
-      "snippet": "francesca9805 / nor-100mb-after-wc-uniform-newlex-before-ckpt500-packed-bfd_seed455_seed455 Like 0 Safetensors Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month -"
-    },
-    {
-      "title": "francesca9805/ppt-wc-uniform-newlex-nor-before-100mb-packed-bfd ...",
-      "url": "https://huggingface.co/francesca9805/ppt-wc-uniform-newlex-nor-before-100mb-packed-bfd_seed3407",
-      "snippet": "Model Card for ppt-wc-uniform-newlex-nor-before-100mb-packed-bfd_seed3407 This model is a fine-tuned version of goldfish-models/eng_latn_100mb. It has been trained using TRL."
-    },
-    {
-      "title": "Chinese AI model investigated after researcher says it provided ... - MSN",
-      "url": "https://www.msn.com/en-us/technology/artificial-intelligence/chinese-ai-model-investigated-after-researcher-says-it-provided-instructions-for-bioweapons-assassinations/ar-AA2dnJQy",
-      "snippet": "Researcher Peter Garrigan says Moonshot AI&#x27;s Kimi model was manipulated into providing instructions for biological weapons and assassination plans."
-    },
-    {
-      "title": "ppt-wc-uniform-newlex-swa-after-100mb-packed-bfd_seed10",
-      "url": "https://friendli.ai/models/francesca9805/ppt-wc-uniform-newlex-swa-after-100mb-packed-bfd_seed10",
-      "snippet": "Deploy ppt-wc-uniform-newlex-swa-after-100mb-packed-bfd_seed10 with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
-    },
-    {
-      "title": "ppt-wc-uniform-newlex-nor-before-100mb-packed-bfd_seed455",
-      "url": "https://friendli.ai/models/francesca9805/ppt-wc-uniform-newlex-nor-before-100mb-packed-bfd_seed455",
-      "snippet": "Deploy ppt-wc-uniform-newlex-nor-before-100mb-packed-bfd_seed455 with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
-    }
-  ]
+  "sources": []
 }

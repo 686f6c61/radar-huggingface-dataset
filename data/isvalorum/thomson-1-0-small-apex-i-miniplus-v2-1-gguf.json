@@ -60,7 +60,7 @@
     "imatrix"
   ],
   "likes": 3,
-  "downloads_30d": 417,
+  "downloads_30d": 459,
   "trending_score": 0,
   "parameters": 34660610688,
   "parameters_human": "34.66B",
@@ -80,31 +80,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Labor Day 2026: Facts, Date & Founding | HISTORY",
-      "url": "https://www.history.com/articles/labor-day",
-      "snippet": "Apr 13, 2010 · Labor Day, an annual celebration of workers and their achievements, originated during one of American labor history’s …"
-    },
-    {
-      "title": "Who Founded Labor Day? | HISTORY",
-      "url": "https://www.history.com/articles/who-founded-labor-day",
-      "snippet": "Sep 3, 2026 · These modern-day activities echo the revelry at the first observance of Labor Day nearly 150 years ago. The earliest …"
-    },
-    {
-      "title": "This Day in HISTORY Daily Briefing",
-      "url": "https://www.history.com/this-day-in-history-daily-briefing",
-      "snippet": "Dec 18, 2025 · History happens every day! Check in with your virtual assistant or wherever you get your podcasts to find out about …"
-    },
-    {
-      "title": "V-J Day | HISTORY",
-      "url": "https://www.history.com/articles/v-j-day",
-      "snippet": "Oct 14, 2009 · V-J Day parades are held in several other locations across the United States, including Seymour, Indiana; Moosup, …"
-    },
-    {
-      "title": "What Happened on June 7 | HISTORY",
-      "url": "https://www.history.com/this-day-in-history/june-7",
-      "snippet": "Discover what happened on June 7 with HISTORY&#8217;s summaries of major events, anniversaries, famous births and notable …"
-    }
-  ]
+  "sources": []
 }

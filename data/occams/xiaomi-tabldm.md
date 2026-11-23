@@ -2,87 +2,106 @@
 
 ## Resumen
 
-Xiaomi-TabLDM es un modelo fundacional para datos tabulares, desarrollado por Xiaomi, que aborda tareas de clasificación y regresión mediante aprendizaje en contexto (in-context learning). A diferencia de los modelos tradicionales que requieren entrenamiento específico para cada dataset, TabLDM puede realizar predicciones directamente a partir de un conjunto de ejemplos etiquetados proporcionados como contexto, sin actualizar los pesos del modelo. Este paradigma permite una generalización más flexible y un escalado eficiente de la capacidad del modelo.
+Xiaomi-TabLDM es un modelo fundacional para datos tabulares orientado a clasificacion y regresion mediante aprendizaje en contexto (in-context learning). Lo desarrolla Xiaomi y se distribuye a traves del repositorio de Hugging Face `occams/Xiaomi-TabLDM`. Su propuesta central es que un unico modelo preentrenado puede resolver tareas predictivas sobre un conjunto de datos tabular sin ajuste fino especifico: basta con aportar ejemplos etiquetados como contexto y el modelo produce predicciones en un unico paso hacia delante.
 
-El modelo se presenta como una nueva referencia en el ámbito de los modelos tabulares, superando a los baselines en el benchmark TALENT en clasificación binaria y situándose en posiciones destacadas en TabArena y BCCO. Su entrenamiento se basa en datos sintéticos a gran escala y una estrategia de tres etapas que incorpora componentes como grupos de características de doble flujo, atención residual ligera y mezcla de expertos dispersa (sparse MoE). Aunque la arquitectura exacta no se detalla en la información pública, el repositorio tiene un tamaño de 2,3 GB e incluye los pesos de los checkpoints, que se descargan automáticamente desde Hugging Face.
+El modelo se preentrena exclusivamente con datos sinteticos generados a partir de modelos causales estructurales (SCM), lo que amplia la cobertura y diversidad de los datos tabulares de entrenamiento y facilita el escalado de capacidad. La arquitectura incorpora agrupacion de caracteristicas en doble flujo (dual-stream feature grouping), una variante ligera de Attention Residual y una capa de mezcla de expertos dispersa (sparse MoE), junto con una estrategia de entrenamiento en tres etapas.
 
-TabLDM está diseñado para ser fácil de usar, con una interfaz compatible con scikit-learn y un método `fit` que solo preprocesa el contexto sin entrenar. La inferencia se realiza en una sola pasada hacia adelante, y el uso de caché de KV permite acelerar predicciones repetidas sobre los mismos datos. Está pensado para integrarse en flujos de trabajo de ciencia de datos y aprendizaje automático, especialmente en escenarios donde los datos son escasos o se necesita una adaptación rápida a nuevos dominios.
+Su relevancia actual radica en el rendimiento reportado en benchmarks de regresion tabular: primer puesto en OpenML-CTR23 y segundo puesto en regresion en TALENT, TabArena y BCCO, con un coste computacional notablemente inferior al de los modelos lideres. Ademas, incorpora escalado de computo en tiempo de prueba (test-time scaling) y una interfaz compatible con scikit-learn, lo que reduce la barrera de adopcion en flujos de ciencia de datos convencionales.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | No disponible (se mencionan componentes como atención residual y sparse MoE en el entrenamiento) |
-| Parámetros totales | No disponible |
-| Parámetros activos | No disponible |
-| Longitud de contexto | No disponible |
-| Tipos de cuantización | No disponible |
-| Idiomas soportados | No disponible |
-| Licencia | No disponible |
-| Formato de pesos | No disponible (el repositorio contiene checkpoints, probablemente en formato PyTorch) |
+| Arquitectura | Transformer con sparse Mixture-of-Experts, dual-stream feature grouping y Attention Residual ligera |
+| Parametros totales | no disponible |
+| Parametros activos | no disponible |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | no disponible |
+| Idiomas soportados | no disponible (modelo tabular, no linguistico) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | checkpoints `.ckpt` (PyTorch); tamano del repo 2,8 GB |
+| Libreria | custom (`tabldm`) |
+| Dependencias | torch>=2.2, scikit-learn>=1.3.0, numpy, scipy, einops>=0.7, psutil, tqdm>=4.64.0, huggingface-hub; numba opcional |
+| Descargas en Hugging Face | 432 |
+| Likes | 26 |
+| Fecha de creacion | 2026-08-28 |
+| Ultima actualizacion | 2026-10-13 |
 
 ## Arquitectura y entrenamiento
 
-La información pública no especifica la arquitectura interna de TabLDM en detalle. Según la model card, el entrenamiento se realiza en tres etapas, introduciendo progresivamente grupos de características de doble flujo, una capa de atención residual ligera y una mezcla de expertos dispersa. Estos componentes buscan aprender interacciones entre características más ricas y desarrollar especialización de expertos para distintas tareas tabulares. El preentrenamiento se lleva a cabo con datos sintéticos a gran escala, ampliando la cobertura y diversidad respecto a trabajos anteriores. No se proporcionan datos sobre el número de tokens, la composición exacta del dataset ni el uso de técnicas como RLHF o DPO. El modelo se basa en el paradigma de in-context learning, donde la predicción se realiza sin actualizar los pesos, únicamente procesando el contexto etiquetado.
+Xiaomi-TabLDM es un transformer especializado en datos tabulares que combina varias innovaciones arquitectonicas. La agrupacion de caracteristicas en doble flujo (dual-stream feature grouping) permite procesar las columnas de entrada por grupos con flujos diferenciados, mientras que la Attention Residual ligera reduce el coste de las conexiones residuales convencionales. La capa de mezcla de expertos dispersa (sparse MoE) introduce especializacion por experto, de modo que el modelo aprende interacciones de caracteristicas mas ricas en dominios tabulares diversos. El modelo incorpora ademas una capa de distribucion por cuantiles, con aceleracion JIT opcional mediante numba.
+
+El preentrenamiento se realiza exclusivamente sobre datos sinteticos generados a partir de modelos causales estructurales (SCM), lo que constituye una decision de diseno central: evita depender de corpus tabulares reales y permite controlar la diversidad y la cobertura de los escenarios de entrenamiento. El proceso sigue una estrategia de tres etapas. La model card no especifica el numero de tokens de entrenamiento ni la composicion detallada del dataset, y tampoco menciona si se emplearon tecnicas de RLHF o DPO (poco probables en un modelo tabular). Como innovacion adicional, el modelo soporta escalado de computo en tiempo de prueba: asignar mas computo en inferencia mejora de forma consistente el rendimiento predictivo respecto al modelo base.
 
 ## Capacidades
 
-- Clasificación y regresión sobre datos tabulares mediante aprendizaje en contexto.
-- Predicción directa a partir de ejemplos etiquetados sin entrenamiento específico por tarea.
-- Interfaz compatible con scikit-learn (`TabLDMClassifier` y `TabLDMRegressor`).
-- Soporte para aceleración con caché de KV en inferencias repetidas.
-- Posibilidad de escalado en tiempo de prueba (test-time compute scaling), que mejora la precisión al añadir más cómputo durante la inferencia.
-- No se mencionan capacidades de tool calling, agentes, visión, audio ni multilingüismo.
+- Clasificacion tabular mediante in-context learning, con salida de probabilidades por clase a traves de `predict_proba`.
+- Regresion tabular mediante in-context learning, con predicciones puntuales en un unico paso hacia delante.
+- Prediccion sin ajuste fino: el metodo `fit` no actualiza pesos, solo preprocesa el contexto etiquetado y carga el modelo preentrenado.
+- Escalado de computo en tiempo de prueba (test-time scaling) para mejorar la precision a costa de mas inferencia.
+- Cache de KV para reutilizar las proyecciones del contexto en llamadas repetidas a `predict` sobre los mismos datos de entrenamiento.
+- Interfaz compatible con scikit-learn (`TabLDMClassifier`, `TabLDMRegressor`), integrable en pipelines existentes.
+- Soporte de offloading a CPU y disco para escalar a conjuntos de datos de mayor tamano.
+- No dispone de capacidades de generacion de texto, vision, audio, tool calling ni razonamiento multi-paso en el sentido de los modelos de lenguaje.
 
 ## Casos de uso
 
-- Clasificación binaria en datasets tabulares pequeños o medianos: TabLDM puede aplicarse directamente a problemas como detección de fraude, diagnóstico médico o predicción de abandono, sin necesidad de entrenar un modelo específico. Su rendimiento en TALENT lo sitúa como una opción competitiva frente a métodos tradicionales.
-- Regresión en dominios con pocos datos: gracias a su capacidad de in-context learning, es adecuado para predecir valores continuos en escenarios donde los datos etiquetados son limitados, como estimación de precios o predicción de demanda.
-- Prototipado rápido en ciencia de datos: al no requerir ajuste de hiperparámetros ni entrenamiento, permite evaluar rápidamente la viabilidad de un problema tabular antes de invertir en modelos más complejos.
-- Automatización de pipelines de ML: su interfaz scikit-learn facilita la integración en flujos existentes, por ejemplo en sistemas de recomendación o motores de personalización que operan sobre tablas de características.
-- Benchmarking de modelos: al ser un modelo fundacional, puede usarse como baseline sólido en investigaciones que comparen métodos de aprendizaje automático sobre datos tabulares.
-- Escenarios con restricciones de cómputo: si se usa con CPU o con offloading a disco, puede manejar datasets más grandes, aunque se recomienda GPU para conjuntos extensos.
+- Modelado predictivo rapido en ciencia de datos: un analista puede entrenar un clasificador o regresor sobre un dataset tabular sin busqueda de hiperparametros ni ajuste fino, usando `fit` y `predict` como con cualquier estimador de scikit-learn. Es adecuado porque el modelo generaliza a traves del contexto etiquetado en una sola pasada.
+- Prototipado de modelos de riesgo crediticio o scoring: el modelo permite obtener predicciones de probabilidad por clase sobre datos estructurados de clientes sin entrenamiento especifico, lo que acelera la validacion inicial de hipotesis antes de invertir en un modelo dedicado.
+- Prediccion de demanda y series tabulares agregadas: con la variante de regresion, se pueden estimar magnitudes continuas (ventas, consumo, precios) a partir de variables explicativas tabulares, reutilizando el contexto cacheado para inferencias repetidas sobre el mismo conjunto de entrenamiento.
+- Analisis de datos cientificos y experimentales: datasets de laboratorio, sensores o ensayos con variables mixtas se pueden abordar con el modelo como baseline fuerte antes de desarrollar modelos especificos de dominio, gracias a su preentrenamiento sobre SCM sinteticos diversos.
+- Evaluacion comparativa de pipelines de ML: al ser compatible con scikit-learn, se puede insertar como un estimador mas en frameworks de comparacion (por ejemplo, TabArena o TALENT) para contrastar su rendimiento frente a gradient boosting o redes tabulares dedicadas.
+- Despliegue en entornos con recursos limitados: el soporte de offloading a CPU y disco y el uso de cache KV permiten ejecutar inferencia en maquinas sin GPU dedicada para conjuntos de datos moderados, reduciendo el coste de infraestructura frente a alternativas que requieren entrenamiento completo.
+- Prediccion por lotes en produccion con contexto reutilizado: cuando el conjunto de entrenamiento es estable, la cache de contexto evita recalcular proyecciones en cada llamada, lo que resulta adecuado para tareas de scoring periodico sobre nuevos registros.
 
 ## Benchmarks y rendimiento
 
-La model card reporta resultados cualitativos en varios benchmarks, pero no proporciona métricas numéricas concretas. Se indica que TabLDM:
+La model card reporta resultados en forma de rankings y graficos, sin tablas numericas detalladas de metricas por dataset. Los datos explicitos disponibles son los siguientes:
 
-- Supera a todos los baselines en tareas de clasificación binaria en el benchmark TALENT y ocupa el segundo puesto en la clasificación general.
-- En TabArena, supera a los baselines tradicionales de machine learning, ocupando el tercer puesto general y el segundo en tareas de regresión.
-- En BCCO, muestra un rendimiento competitivo tanto en clasificación como en regresión, con un rango promedio destacado.
-- En OpenML-CTR23, sobre 33 datasets de regresión, obtiene buenos resultados en comparación con otros métodos.
+| Benchmark | Resultado reportado |
+|---|---|
+| OpenML-CTR23 (33 datasets de regresion) | 1.er puesto en ranking medio |
+| TALENT (regresion) | 2.º puesto en ranking medio |
+| TabArena (regresion, Elo) | 2.º Elo mas alto; 82 % menos tiempo de entrenamiento y 68 % menos tiempo de prediccion que TabFM, el primero |
+| BCCO (clasificacion y regresion) | 2.º puesto en regresion; ranking combinado no detallado numericamente |
 
-No se han publicado cifras exactas (por ejemplo, exactitud, RMSE o Elo) en la información disponible. Los autores mencionan que TabLDM supera a TabPFN-3 a escala similar y se acerca a TabFM con muchos menos parámetros totales y activos, pero no se ofrecen datos cuantitativos.
+No se han publicado en la informacion disponible valores numericos de MMLU, HumanEval, GSM8K ni metricas equivalentes, que no aplican a un modelo tabular. Tampoco se detallan las metricas absolutas (RMSE, AUC, accuracy) por dataset.
 
 ## Requisitos de hardware
 
-- No se especifican requisitos mínimos de VRAM en la documentación pública.
-- Se recomienda una GPU para datasets más grandes; la model card sugiere que el uso de CPU es posible, pero puede ser lento.
-- El repositorio incluye opciones de offloading a CPU/disco para escalar a tamaños de datos mayores.
-- No se indican GPUs concretas (A100, H100, RTX 4090, etc.) ni latencias o throughput estimados.
-- La instalación requiere `torch>=2.2`, `scikit-learn>=1.3.0` y otras dependencias típicas de Python.
+- VRAM estimada para inferencia: no disponible de forma explicita. El repositorio de pesos ocupa 2,8 GB, lo que sugiere que el modelo en precision completa o media puede caber en GPUs de consumo con 8-16 GB de VRAM, aunque el consumo real depende del tamano del contexto tabular y del lote.
+- GPU recomendadas: la model card recomienda GPU para conjuntos de datos grandes, sin especificar modelos concretos. No se indican A100, H100 ni RTX 4090 de forma explicita.
+- GPU de consumo: no se confirma compatibilidad con modelos concretos; el requisito practico es disponer de VRAM suficiente para los pesos y el contexto, con opcion de offloading a CPU y disco.
+- Opciones de despliegue: paquete Python propio (`pip install .`) con API compatible con scikit-learn; no se mencionan vLLM, llama.cpp, Ollama ni TGI, que no aplican a este tipo de modelo.
+- Latencia y throughput: no disponibles como cifras absolutas. La model card indica que la cache KV acelera llamadas repetidas a `predict` y que el modelo es mas rapido que TabFM (68 % menos tiempo de prediccion en TabArena regresion).
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| TabLDM (Xiaomi) | No disponible | No disponible | Destacado en TALENT y TabArena | No disponible | Código abierto en Hugging Face |
-| TabPFN-3 | No disponible | No disponible | Inferior a TabLDM a escala similar (según autores) | No disponible | No disponible |
-| TabFM | No disponible | No disponible | Superior en algunos aspectos, pero con más parámetros | No disponible | No disponible |
+| Modelo | Categoria | Parametros | Contexto | Rendimiento reportado | Licencia | Disponibilidad |
+|---|---|---|---|---|---|---|
+| Xiaomi-TabLDM | Fundacional tabular (ICL) | no disponible | no disponible | 1.º en OpenML-CTR23; 2.º en TALENT, TabArena y BCCO (regresion) | Apache 2.0 | Hugging Face (`occams/Xiaomi-TabLDM`) |
+| TabFM | Fundacional tabular (ICL) | no disponible | no disponible | 1.º en TabArena regresion (Elo); mas lento que Xiaomi-TabLDM | no disponible | no disponible |
+| TabPFN | Fundacional tabular (ICL) | no disponible | no disponible | Incluido en las comparativas de TALENT, TabArena y BCCO; posicion no detallada | no disponible | no disponible |
+| Gradient boosting (p. ej. XGBoost, LightGBM) | Modelos tabulares clasicos | no aplica | no aplica | Baseline habitual en los benchmarks citados; posicion no detallada | no disponible | no disponible |
 
-No se dispone de datos verificables sobre estas alternativas en la información pública proporcionada. La comparativa se basa únicamente en las afirmaciones de los autores.
+La informacion proporcionada solo nombra explicitamente a TabFM y menciona los benchmarks TALENT, TabArena y BCCO, sin detallar parametros, contexto ni licencias de los competidores. Los datos de TabPFN y de los gradient boosting no se confirman en la model card.
 
 ## Limitaciones y advertencias
 
-- No se han publicado detalles sobre sesgos o alucinaciones; al ser un modelo tabular, los riesgos de alucinación son diferentes a los de modelos de lenguaje, pero no se documentan.
-- La licencia no está especificada, por lo que se desconoce si permite uso comercial o tiene restricciones.
-- La arquitectura exacta, el número de parámetros y la longitud de contexto no se han hecho públicos, lo que dificulta evaluar sus límites técnicos.
-- El modelo se centra exclusivamente en datos tabulares; no soporta texto, imagen, audio ni otras modalidades.
-- El entrenamiento se basa en datos sintéticos, lo que podría introducir sesgos o limitaciones en dominios muy específicos no representados en la distribución sintética.
-- No se proporcionan instrucciones claras sobre el manejo de missing values, variables categóricas o desequilibrios de clases, aunque la interfaz scikit-learn sugiere cierta compatibilidad.
+- Sesgos conocidos: no documentados en la informacion disponible. Al entrenarse solo con datos sinteticos generados por SCM, el modelo puede no capturar sesgos ni patrones idiosincraticos de datos reales de dominios especificos.
+- Riesgo de alucinacion: no aplica en el sentido linguistico, pero existe riesgo de predicciones poco calibradas fuera de la distribucion cubierta por los SCM sinteticos de entrenamiento.
+- Limitaciones de contexto o idioma: la longitud de contexto tabular no se especifica; el rendimiento puede degradarse con conjuntos de datos muy grandes o con muchas columnas. No es un modelo linguistico, por lo que no soporta tareas de texto.
+- Restricciones de licencia: licencia Apache 2.0, que permite uso comercial con atribucion y sin garantias; conviene revisar los terminos exactos del repositorio y del informe tecnico.
+- Caveats para produccion: `fit` no entrena, solo preprocesa el contexto; el modelo requiere cargar los checkpoints (`clf_default.ckpt`, `reg_default.ckpt`) y no se documentan procesos de calibracion, monitorizacion de deriva ni validacion estadistica. La interfaz es custom y no sigue la API de Hugging Face `transformers`, lo que limita su integracion con ecosistemas estandar de serving.
+- No se documentan requisitos de version de Python, ni resultados de robustez ante valores faltantes, variables categoricas de alta cardinalidad o datasets desbalanceados.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/occams/Xiaomi-TabLDM
-- Technical Report (enlace incompleto en la model card): https://arxiv.org/abs (no se especifica el ID)
-- Repositorio de código (implícito en la instalación): no se proporciona URL directa en la información disponible.
+- Modelo en Hugging Face: https://huggingface.co/occams/Xiaomi-TabLDM
+- Informe tecnico (arXiv): https://arxiv.org/abs/2609.03880
+- README en chino: https://huggingface.co/occams/Xiaomi-TabLDM/blob/main/README_CN.md
+- Figura del framework: https://huggingface.co/occams/Xiaomi-TabLDM/resolve/main/assets/Xiaomi-TabLDM_Framework.png
+- Figura de rendimiento en TALENT: https://huggingface.co/occams/Xiaomi-TabLDM/resolve/main/assets/Xiaomi-TabLDM_TALENT.png
+- Figura de rendimiento en TabArena: https://huggingface.co/occams/Xiaomi-TabLDM/resolve/main/assets/Xiaomi-TabLDM_TabArena.png
+- Figura de rendimiento en BCCO: https://huggingface.co/occams/Xiaomi-TabLDM/resolve/main/assets/Xiaomi-TabLDM_BCCO.png
+- Figura de rendimiento en OpenML-CTR23: https://huggingface.co/occams/Xiaomi-TabLDM/resolve/main/assets/Xiaomi-TabLDM_OpenML-CTR23.png

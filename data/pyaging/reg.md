@@ -2,79 +2,93 @@
 
 ## Resumen
 
-El modelo `pyaging/reg` es un reloj de envejecimiento (aging clock) basado en regresión ridge, desarrollado por el equipo de pyaging como parte del estudio Pasta. Su función es predecir la edad cronológica de muestras humanas a partir de datos de expresión génica multi-tejido, transformados mediante ranking. Se trata de un modelo baseline dentro del catálogo de relojes de la librería pyaging, diseñado para servir como referencia comparativa frente a otros métodos más complejos.
+`pyaging/reg` es un modelo de regresion ridge que predice la edad cronologica humana a partir de datos de expresion genica multi-tejido. Lo desarrolla el equipo de pyaging como parte del estudio Pasta, publicado en *Advanced Science* en 2026, y se distribuye como artefacto de pesos compatible con la libreria `pyaging` para el calculo de relojes de envejecimiento transcriptomicos. No es un modelo de lenguaje ni una red neuronal profunda: es un modelo lineal regularizado sobre caracteristicas de expresion transformadas por rangos.
 
-Este modelo resuelve el problema de estimar la edad biológica a partir de transcriptomas, una tarea clave en la investigación del envejecimiento y sus intervenciones. Su relevancia actual radica en que proporciona un punto de partida sencillo y reproducible para estudios de envejecimiento, integrado en el ecosistema pyaging, que facilita su uso en pipelines de análisis de datos ómicos. Al ser una regresión lineal regularizada, no requiere recursos computacionales significativos y puede ejecutarse en cualquier máquina con CPU.
+Su relevancia es practica para la comunidad de biologia del envejecimiento: proporciona una linea base de regresion de edad cronologica que sirve como referencia contra la que comparar relojes mas complejos (incluido el propio reloj Pasta), y se integra en un ecosistema ya existente de relojes epigeneticos y transcriptomicos con una unica llamada a `predict_age`. El repositorio tiene un tamano practicamente nulo (0.0 GB), lo que es coherente con un modelo de coeficientes lineales de baja dimension y no con pesos de tipo transformer.
+
+La informacion publica disponible es muy limitada: la model card no detalla numero de caracteristicas de entrada, coeficientes, metricas de error ni composicion exacta del dataset de entrenamiento. Esta ficha refleja exclusivamente lo que el autor declara.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Regresión ridge (modelo lineal regularizado L2) |
-| Parametros totales | No disponible (modelo de regresión sobre características de expresión, número de coeficientes no especificado) |
-| Parametros activos | No aplica (no es un modelo MoE) |
-| Longitud de contexto | No aplica (no es un modelo de lenguaje) |
-| Tipos de cuantizacion | No aplica (modelo numérico de regresión, no requiere cuantización) |
-| Idiomas soportados | No aplica (trabaja con datos de expresión génica, no con texto) |
-| Licencia | BSD-3-Clause |
-| Formato de pesos | No disponible (probablemente serialización de modelo de scikit-learn, no especificado) |
+| Arquitectura | Regresion ridge (lineal regularizada L2) sobre expresion genica transformada por rangos |
+| Parametros totales | no disponible (modelo de coeficientes lineales; el autor no publica el numero de caracteristicas) |
+| Parametros activos | no aplica (no es un modelo MoE) |
+| Longitud de contexto | no aplica (entrada tabular de expresion genica, no secuencias de texto) |
+| Tipos de cuantizacion | no disponible (no procede cuantizacion de pesos en el sentido de LLM) |
+| Idiomas soportados | no disponible (no procesa lenguaje natural) |
+| Licencia | MIT para el software de pyaging; los pesos conservan los terminos de los autores originales |
+| Formato de pesos | no disponible; integrado y consumido por la libreria `pyaging` |
+| Especie | Homo sapiens |
+| Tejido | multi-tejido |
+| Tipo de dato de entrada | transcriptomica (expresion genica) |
+| Variable objetivo | edad cronologica |
+| Ano | 2026 |
 
 ## Arquitectura y entrenamiento
 
-El modelo es una regresión ridge, una técnica de regresión lineal con regularización L2. Se entrena sobre datos de expresión génica de múltiples tejidos humanos, transformados mediante ranking (rank-transformed). El objetivo es minimizar el error cuadrático entre la edad cronológica predicha y la real, controlando la complejidad del modelo con el término de penalización L2.
+El modelo es una regresion ridge, es decir, una regresion lineal con penalizacion L2 sobre los coeficientes. La entrada son perfiles de expresion genica humana multi-tejido sometidos a una transformacion por rangos (rank transform), un preprocesado habitual en transcriptomica para reducir el efecto de la escala, la distribucion y los valores atipicos entre muestras y plataformas. La salida es una prediccion escalar de edad cronologica.
 
-No se han publicado detalles sobre el número de muestras de entrenamiento, el número de genes utilizados como características, ni el proceso de validación. El modelo forma parte del estudio Pasta (Salignon et al., 2025), que propone un reloj transcriptómico versátil para mapear determinantes químicos y genéticos del envejecimiento y la rejuvenecimiento. No se indica si se emplearon técnicas de RLHF o DPO, ya que no es un modelo generativo.
+El entrenamiento se enmarca en el estudio Pasta, descrito por los autores como un reloj transcriptomico versatil que mapea determinantes quimicos y geneticos del envejecimiento y del rejuvenecimiento. La model card no especifica el numero de muestras, la composicion del dataset, los tejidos concretos incluidos, el rango de edades cubierto ni el valor de la penalizacion ridge seleccionada. Tampoco se documenta si hubo validacion cruzada, ajuste por covariables (sexo, lote, plataforma) o calibracion posterior. No se describe ninguna innovacion arquitectonica: su valor es el de una linea base interpretable y computacionalmente trivial frente a modelos mas complejos del mismo estudio.
 
 ## Capacidades
 
-- Predicción de edad cronológica a partir de perfiles de expresión génica multi-tejido.
-- Funciona como baseline de referencia dentro del catálogo de relojes de pyaging.
-- Integración sencilla con la librería pyaging mediante la función `predict_age`.
-- Apto para datos de transcriptómica de Homo sapiens.
-- No requiere GPU; puede ejecutarse en CPU con recursos mínimos.
-- No soporta tool calling, agentes, ni capacidades multimodales (no es un LLM).
+- Prediccion de edad cronologica a partir de perfiles de expresion genica humana multi-tejido.
+- Transformacion por rangos de la expresion como paso de preprocesado asociado al modelo.
+- Integracion directa en el flujo de trabajo de `pyaging` mediante `pya.pred.predict_age(adata, ["reg"])` sobre objetos AnnData.
+- Uso como linea base de referencia para comparar relojes transcriptomicos mas elaborados.
+- Ejecucion en CPU con coste computacional minimo, apta para lotes grandes de muestras.
+- No soporta generacion de texto, razonamiento, codigo, vision, audio, tool calling ni agentes: no es un modelo de lenguaje.
+- No dispone de capacidades multilingues ni de modo de razonamiento extendido.
 
 ## Casos de uso
 
-- **Investigación biomédica del envejecimiento**: permite estimar la edad biológica de muestras de tejido a partir de datos de expresión, facilitando estudios sobre la heterogeneidad del envejecimiento entre individuos.
-- **Validación de intervenciones antienvejecimiento**: en experimentos con modelos celulares o animales (aunque el modelo está entrenado en humanos), puede usarse como referencia para comparar el efecto de fármacos o compuestos sobre la edad transcriptómica.
-- **Análisis de datos de transcriptómica pública**: se puede aplicar a conjuntos de datos como GTEx o GEO para generar estimaciones de edad y correlacionarlas con variables clínicas.
-- **Desarrollo de nuevos relojes de envejecimiento**: sirve como baseline para comparar el rendimiento de modelos más complejos (redes neuronales, modelos de supervivencia) en la misma tarea.
-- **Control de calidad en estudios de expresión**: las predicciones de edad pueden usarse para detectar errores en el etiquetado de muestras o inconsistencias en los datos.
-- **Educación y formación en bioinformática**: al ser un modelo sencillo y reproducible, es útil para enseñar conceptos de regresión aplicada a datos ómicos.
+- Linea base en estudios de envejecimiento: usar `reg` como referencia de error (MAE, correlacion) antes de evaluar un reloj transcriptomico nuevo, de modo que cualquier mejora se mida contra un modelo lineal simple y transparente.
+- Analisis secundario de cohortes publicas: aplicar el modelo sobre matrices de expresion ya depositadas en repositorios como GEO para obtener una estimacion de edad cronologica por muestra sin reentrenar nada.
+- Control de calidad de datasets: comparar la edad predicha con la edad declarada en los metadatos para detectar muestras mal etiquetadas, intercambios de ficheros o problemas de normalizacion.
+- Ajuste de covariables en estudios de asociacion: incluir la edad predicha como covariable o residuo en modelos que buscan senales de envejecimiento acelerado o rejuvenecimiento tras intervenciones.
+- Docencia y formacion en bioinformatica: ejemplo minimo y reproducible de un reloj molecular dentro del ecosistema `pyaging`, util para explicar preprocesado, regularizacion y evaluacion de predicciones.
+- Evaluacion comparativa de tejidos: al estar entrenado en multi-tejido, permite estudiar en que tejidos la senal transcriptomica de edad es mas fuerte comparando el error del modelo por tejido.
+- Filtrado previo en pipelines de seleccion de muestras: descartar muestras con edad predicha implausible antes de análisis costosos de secuenciacion o de laboratorio.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. El modelo card no incluye métricas como correlación, error absoluto medio (MAE) o R². Tampoco se comparan sus resultados con otros relojes de envejecimiento conocidos (p. ej., Horvath clock, PhenoAge). Por tanto, no es posible evaluar su rendimiento cuantitativo a partir de los datos proporcionados.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye MAE, correlacion de Pearson o Spearman, R², ni comparaciones numericas con otros relojes transcriptomicos o epigeneticos.
 
 ## Requisitos de hardware
 
-- **VRAM**: No requiere VRAM. Es un modelo de regresión lineal, se ejecuta completamente en CPU.
-- **GPU recomendada**: No se necesita GPU. Cualquier CPU moderna es suficiente.
-- **Compatibilidad con consumer GPU**: No aplica, no usa GPU.
-- **Opciones de despliegue**: Se integra mediante la librería pyaging en Python. No requiere servidores de inferencia como vLLM o TGI; basta con cargar el modelo en memoria (probablemente un archivo pickle o joblib de scikit-learn).
-- **Latencia y throughput**: Inferencia instantánea para una muestra individual (microsegundos). Para miles de muestras, el tiempo total es del orden de segundos, dependiendo de la dimensión de las características.
+- VRAM: no aplica; el modelo es una regresion lineal y se ejecuta en CPU.
+- GPU: no necesaria. Cualquier GPU seria irrelevante para el cuello de botella, que es la carga y el preprocesado de la matriz de expresion.
+- GPU de consumo: no aplica; funciona en cualquier portatil convencional.
+- Memoria RAM: dominada por el tamano de la matriz AnnData de entrada (muestras x genes), no por el modelo.
+- Despliegue: mediante la libreria `pyaging` en Python; no se contemplan vLLM, llama.cpp, Ollama ni TGI, que son servidores de inferencia para modelos de lenguaje.
+- Latencia y throughput: no publicados; por la naturaleza del modelo, la inferencia sobre los coeficientes es despreciable frente al coste de lectura y normalizacion de los datos.
 
 ## Comparativa con modelos similares
 
-No se dispone de información sobre modelos comparables específicos dentro del mismo repositorio. En la literatura existen otros relojes de envejecimiento transcriptómicos, como:
+No disponible. La informacion proporcionada no incluye datos de rendimiento ni especificaciones de otros relojes transcriptomicos que permitan una comparacion cuantitativa fiable. Como referencia cualitativa, el propio estudio Pasta describe un reloj transcriptomico mas elaborado del que `reg` es la linea base, pero no se dispone de sus metricas en esta ficha.
 
-- **Reloj de Horvath**: basado en metilación de ADN, no en expresión génica, por lo que no es directamente comparable.
-- **PhenoAge**: también basado en biomarcadores clínicos, no en transcriptómica.
-- **Otros relojes de expresión**: no se han encontrado en la información proporcionada.
-
-Dado que no hay datos de rendimiento publicados para `pyaging/reg`, no es posible realizar una comparación cuantitativa. Se recomienda consultar el estudio Pasta (enlace abajo) para más detalles sobre su evaluación frente a otros métodos.
+| Modelo | Tipo | Entrada | Variable objetivo | Licencia | Datos comparativos |
+|---|---|---|---|---|---|
+| `pyaging/reg` | Regresion ridge | Transcriptomica multi-tejido | Edad cronologica | MIT (software) / terminos de los autores (pesos) | no disponible |
+| Reloj Pasta (mismo estudio) | no disponible | Transcriptomica multi-tejido | Edad y determinantes de envejecimiento | no disponible | no disponible |
+| Otros relojes de `pyaging` | relojes epigeneticos y transcriptomicos | metilacion / expresion | edad y fenotipos | variable | no disponible |
 
 ## Limitaciones y advertencias
 
-- **Sesgos conocidos**: Al estar entrenado exclusivamente con datos humanos de múltiples tejidos, su aplicabilidad a otras especies o tejidos no contemplados puede ser limitada.
-- **Riesgo de alucinación**: No aplica, no es un modelo generativo.
-- **Limitaciones de contexto**: No maneja contexto secuencial; solo procesa vectores de expresión fijos. La transformación por ranking puede perder información de magnitud absoluta.
-- **Restricciones de licencia**: Licencia BSD-3-Clause, permite uso comercial con atribución. No hay restricciones adicionales conocidas.
-- **Caveat para producción**: Es un modelo baseline; para aplicaciones clínicas o de precisión se recomienda validar en la población y tejido de interés. La precisión predictiva puede ser baja comparada con modelos más complejos, aunque no se dispone de cifras concretas.
+- Ambito restringido a *Homo sapiens* y a datos de transcriptomica multi-tejido; no es aplicable a otras especies, a otros tipos de dato omico ni a texto.
+- Solo predice edad cronologica; no estima edad biologica, mortalidad ni respuesta a intervenciones por si mismo.
+- Sensible al preprocesado: al depender de una transformacion por rangos y de un conjunto concreto de caracteristicas genicas, diferencias en normalizacion, plataforma de secuenciacion o seleccion de genes pueden degradar las predicciones de forma no documentada.
+- Riesgo de extrapolacion: al ser un modelo lineal, las predicciones fuera del rango de edades y tejidos representados en el entrenamiento no estan garantizadas; el autor no publica ese rango.
+- Sin metricas de error publicadas en la model card, no es posible acotar la incertidumbre de las predicciones ni compararlas con alternativas.
+- Licencia: el codigo de `pyaging` es MIT, pero los pesos conservan los terminos de los autores originales; para uso comercial o redistribucion de pesos hay que verificar esas condiciones, que la model card no detalla.
+- No debe usarse con fines clinicos o diagnósticos: es una herramienta de investigacion sin validacion regulatoria declarada.
+- Sesgos poblacionales no documentados: se desconoce la representacion de ancestrias, sexos y grupos de edad en el dataset de entrenamiento.
+- Repositorio sin likes y con 447 descargas en el momento de la consulta: comunidad de usuarios muy reducida, lo que limita el soporte y la validacion independiente.
 
 ## Enlaces
 
-- [Hugging Face: pyaging/reg](https://huggingface.co/pyaging/reg)
-- [pyaging Clock Catalogue (documentación)](https://pyaging.readthedocs.io)
-- [Artículo Pasta (bioRxiv)](https://doi.org/10.1101/2025.06.04.657785)
+- Modelo en Hugging Face: https://huggingface.co/pyaging/reg
+- Catalogo de relojes de pyaging: https://pyaging.readthedocs.io
+- Publicacion: Salignon, J., et al. (2026). Pasta, a versatile transcriptomic clock, maps the chemical and genetic determinants of aging and rejuvenation. Advanced Science, e76740. https://doi.org/10.1002/advs.76740

@@ -2,126 +2,118 @@
 
 ## Resumen
 
-FineCat-NLI v2 Large (`dleemiller/finecat-nli-v2-l`) es un cross-encoder especializado en inferencia de lenguaje natural (NLI) de tres clases —implicación (*entailment*), neutral y contradicción— publicado por el desarrollador independiente dleemiller bajo licencia Apache-2.0. Con 395.834.371 parámetros, es un ajuste fino del encoder `jhu-clsp/ettin-encoder-400m`, de la familia ModernBERT, y se distribuye a través de la librería `sentence-transformers`. Su función es recibir un par (premisa, hipótesis) y devolver probabilidades calibradas sobre las tres relaciones lógicas, lo que lo convierte en una pieza reutilizable para clasificación zero-shot, reranking y verificación de respuestas.
+finecat-nli-v2-l es un cross-encoder de inferencia de lenguaje natural (NLI) desarrollado por dleemiller, afinado a partir del encoder Ettin-400m de JHU CLSP. Su función es recibir un par premisa-hipótesis y devolver probabilidades calibradas de que la premisa implique, contradiga o sea neutral respecto a la hipótesis. Con 395,8 millones de parámetros y ventana de hasta 8.000 tokens, se posiciona como una herramienta versátil para tareas de clasificación zero-shot, detección de alucinaciones y verificación de hechos en pipelines RAG.
 
-La relevancia de este modelo está en su versatilidad: al formular cualquier etiqueta como una hipótesis ("Este texto trata sobre facturación"), el cross-encoder resuelve tareas de enrutamiento, moderación, extracción de información o *grounding* de RAG sin entrenamiento adicional. Frente a los cross-encoders DeBERTa-v3 clásicos, limitados a 512 tokens, este modelo procesa documentos de hasta 8.000 tokens, lo que permite clasificar notas clínicas, contratos o pasajes largos en una sola pasada.
+El modelo emplea una arquitectura ModernBERT (encoder transformer bidireccional) y se distribuye bajo licencia Apache-2.0, lo que facilita su uso comercial. Su relevancia actual radica en que convierte una tarea clásica de NLP en un mecanismo de enrutamiento, moderación y grounding reutilizable: el mismo modelo sirve para triaje de intenciones, etiquetado zero-shot, guardarraíles de contenido y validación de respuestas generadas por LLM, con un throughput declarado de aproximadamente 1.200 pares por segundo.
 
-En la evaluación de 45 conjuntos publicada por el autor, el modelo obtiene una precisión macro media de 0,8204, frente a 0,6803 de `MoritzLaurer/DeBERTa-v3-large-mnli-fever-anli-ling-wanli`, con un rendimiento de 636,71 pares por segundo y un pico de memoria de 1.982 MB en una GPU Blackwell PRO 6000 Max-Q. Es, por tanto, una opción orientada a producción con coste de inferencia bajo, aunque con una comunidad todavía muy reducida (120 descargas y 0 *likes* en el momento de la consulta).
+La ficha se basa en la model card oficial y en el model-index del autor. Los resultados de benchmarks son los declarados por el desarrollador y no han sido verificados de forma independiente.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer encoder bidireccional (cross-encoder), familia ModernBERT (Ettin) |
-| Parámetros totales | 395.834.371 |
-| Parámetros activos | No aplica (modelo denso, no MoE) |
-| Longitud de contexto | Hasta 8.000 tokens por documento (8k según model card); el par premisa-hipótesis se trunca al límite del encoder |
-| Tipos de cuantización | No se publican variantes cuantizadas oficiales; pesos en safetensors (fp32, ~1,6 GB de repositorio) |
-| Idiomas soportados | Inglés (`en`) |
-| Licencia | Apache-2.0 |
-| Formato de pesos | safetensors (compatible con `sentence-transformers` y `transformers`) |
-| Pipeline declarado | `zero-shot-classification` |
-| Etiquetas de salida | 0 = entailment, 1 = neutral, 2 = contradiction |
-| Modelo base | `jhu-clsp/ettin-encoder-400m` |
-| Dataset de entrenamiento | `dleemiller/FineCat-NLI` (2.045.406 ejemplos según metadatos) |
-| Función de pérdida | `DistillationLoss` (destilación) |
-| Throughput declarado | 636,71 muestras/s a batch 32 |
-| Memoria GPU pico declarada | 1.982,06 MB a batch 32 |
+| Arquitectura | ModernBERT (encoder transformer bidireccional), base Ettin-encoder-400m |
+| Parametros totales | 395.834.371 |
+| Parametros activos | no aplica (no es MoE) |
+| Longitud de contexto | hasta 8.000 tokens por documento |
+| Tipos de cuantizacion | no disponible (pesos safetensors en FP32/BF16 según repo) |
+| Idiomas soportados | en (inglés) |
+| Licencia | apache-2.0 |
+| Formato de pesos | safetensors |
+| Pipeline | zero-shot-classification / text-classification (cross-encoder) |
+| Libreria | sentence-transformers |
+| Tamano del repo | 1,6 GB |
+| Throughput declarado | ~1.200 pares/s |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un cross-encoder: concatena premisa e hipótesis en una única secuencia, la procesa con un encoder bidireccional y aplica una cabeza de clasificación de tres salidas sobre la representación agregada. El backbone es `jhu-clsp/ettin-encoder-400m`, un encoder de la familia ModernBERT de ~400 M de parámetros con soporte de contexto largo (hasta 8k tokens), lo que supone la principal diferencia estructural frente a los cross-encoders basados en DeBERTa-v3, limitados a 512 tokens. El repositorio declara los tags `modernbert` y `ettin`, y el tamaño del checkpoint coincide con el de la familia (395,8 M de parámetros reales en safetensors).
+El modelo es un cross-encoder basado en Ettin-encoder-400m, un encoder ModernBERT de JHU CLSP. ModernBERT incorpora atención con RoPE, alternancia de capas de atención global y local, y un preentrenamiento sobre datos de código y texto; Ettin aplica además una receta de datos equilibrada. Sobre esta base, finecat-nli-v2-l se afina para NLI con tres etiquetas (entailment, neutral, contradiction), lo que permite reutilizarlo como clasificador zero-shot evaluando cada etiqueta candidata como hipótesis.
 
-El entrenamiento se realizó sobre `dleemiller/FineCat-NLI`, una compilación de fuentes NLI de alta calidad (los tags del repositorio citan MNLI, SNLI y ANLI) con cribado de calidad y reducción de ejemplos fáciles en el split de entrenamiento, según la descripción pública de la familia FineCat-NLI. La pérdida declarada es `DistillationLoss`, lo que indica un régimen de destilación desde un modelo profesor; el profesor concreto, el número total de tokens vistos y la composición exacta del dataset no se detallan en la información disponible. No se reporta RLHF ni DPO, algo esperable en un encoder discriminativo y no generativo.
+El entrenamiento combina los datasets propios FineCat-NLI y FineCat-NLI-Reason, junto con datos de MNLI, SNLI y ANLI, e incluye destilación de conocimiento según las etiquetas del repo. La model card menciona explícitamente el uso de razonamiento destilado (FineCat-NLI-Reason). No se detallan en la información disponible el número exacto de tokens de entrenamiento, la composición porcentual del dataset ni si se aplicaron RLHF o DPO; estos datos figuran como no disponibles.
 
 ## Capacidades
 
-- Inferencia de lenguaje natural de tres vías con probabilidades calibradas (implicación, neutral, contradicción) sobre pares premisa-hipótesis.
-- Clasificación zero-shot: cualquier conjunto de etiquetas puede expresarse como hipótesis y puntuarse sin reentrenamiento.
-- Reranking de recuperación: puntuación de relevancia consulta-documento en pipelines de búsqueda semántica.
-- Detección de *grounding* en RAG: verificar si un pasaje recuperado implica la respuesta generada (0,81 F1 declarado en RAGTruth).
-- Guardrails y moderación: evaluación de mensajes frente a políticas expresadas como sentencias (92,3 % en CrossingGuard, 94,3 % en insultos de Wikipedia según la model card).
-- Enrutamiento y triaje de peticiones: asignación de intenciones (97,7 % en intenciones de MASSIVE).
-- Extracción de información clínica y de determinantes sociales (98,4 % en SDOH-NLI).
-- Procesamiento de documentos largos de hasta 8k tokens, útil para notas clínicas, contratos o artículos.
-- Capacidades multilingües: no disponibles; el modelo está entrenado y evaluado únicamente en inglés.
-- No es un modelo generativo: no produce texto, no soporta *tool calling* ni razonamiento multi-paso por sí mismo; su papel en un agente es el de verificador o clasificador.
+- Inferencia de lenguaje natural de tres vías (entailment, neutral, contradiction) con probabilidades calibradas.
+- Clasificación zero-shot y etiquetado: cada etiqueta candidata se formula como hipótesis y se puntúa con la probabilidad de entailment.
+- Detección de alucinaciones y grounding en RAG: compara pasajes recuperados con la respuesta generada.
+- Verificación de hechos y fact-checking mediante pares evidencia-afirmación.
+- Guardarraíles y moderación de contenido: evalúa mensajes frente a declaraciones de política.
+- Triaje y enrutamiento de intenciones en atención al cliente.
+- Extracción clínica y de determinantes sociales (SDOH) a partir de notas clínicas.
+- Procesamiento de documentos largos de hasta 8.000 tokens.
+- Soporte de tool calling / function calling: no disponible (es un encoder de clasificación, no un modelo generativo).
+- Soporte de agentes y razonamiento multi-paso: no disponible de forma nativa; puede integrarse como componente de verificación en un agente.
+- Capacidades multilingües: no, solo inglés.
+- Modo thinking, visión o audio: no disponible.
 
 ## Casos de uso
 
-- **Enrutamiento de tickets de soporte**: cada categoría se formula como hipótesis ("Esta solicitud trata sobre facturación") y se compara la probabilidad de implicación entre etiquetas. Con 636 pares/s, un único nodo puede clasificar decenas de miles de tickets por hora sin entrenamiento supervisado específico.
-- **Reranking en pipelines RAG**: tras una recuperación densa o BM25, el cross-encoder reordena los 50-100 candidatos por relevancia real consulta-pasaje, mejorando la precisión del contexto que llega al LLM generador.
-- **Verificación de respuestas y detección de alucinaciones**: se comprueba si el pasaje recuperado implica la afirmación generada; la model card reporta 0,81 F1 en RAGTruth, adecuado como filtro previo a la respuesta final.
-- **Guardrails de contenido en producción**: evaluar mensajes de usuario contra un conjunto de políticas escritas como sentencias, con latencias del orden de 1,57 ms por par a batch 32 en GPU, lo que permite inspección en línea sin cuello de botella.
-- **Etiquetado zero-shot de reseñas y encuestas**: clasificación de opiniones por tema, sentimiento o causa raíz sin anotaciones, útil para analítica de producto sobre volúmenes que cambian de taxonomía con frecuencia.
-- **Extracción de determinantes sociales en notas clínicas**: detección de condiciones como desempleo, aislamiento o falta de vivienda a partir de texto libre; el contexto de 8k permite procesar notas completas en lugar de fragmentos de 512 tokens.
-- **Detección de contradicciones entre documentos**: comparar cláusulas de contratos, versiones de políticas internas o artículos científicos para señalar inconsistencias, aprovechando la ventana extendida.
-- **Curación y filtrado de datasets**: descartar pares duplicados o inconsistentes en corpus de entrenamiento mediante la etiqueta de contradicción o implicación, como paso previo a la construcción de datos sintéticos.
+- Grounding y detección de alucinaciones en RAG: dado un conjunto de pasajes recuperados y la respuesta generada por un LLM, el modelo calcula la probabilidad de entailment de cada pasaje respecto a la afirmación; el autor declara 0,81 de F1 en RAGTruth, lo que permite descartar respuestas no sustentadas antes de mostrarlas al usuario.
+- Enrutamiento y triaje de solicitudes: se formula cada categoría como hipótesis ("El usuario quiere establecer una alarma") y se elige la de mayor probabilidad; el autor reporta 97,7 % en intenciones MASSIVE, adecuado para clasificadores de intención en atención al cliente.
+- Moderación y guardarraíles: se compara el mensaje del usuario con declaraciones de política ("Este mensaje contiene insultos"); el autor declara 92,3 % en CrossingGuard y 94,3 % en insultos de Wikipedia, lo que permite filtrar contenido antes de pasarlo a un modelo generativo.
+- Clasificación zero-shot de reseñas y tickets: sin entrenamiento específico, se etiquetan reseñas como positivas o negativas o se asignan etiquetas temáticas; el autor declara 92,3 % de media en 18 tareas, útil para prototipado rápido de taxonomías.
+- Extracción clínica y de determinantes sociales: a partir de una nota clínica se evalúan afirmaciones como "El paciente está desempleado"; el autor declara 98,4 % en SDOH-NLI, aplicable a codificación y cribado de factores sociales.
+- Verificación de hechos en redacción y periodismo: se contrastan afirmaciones con fuentes documentales de hasta 8.000 tokens para asignar una probabilidad de contradicción o neutralidad, con throughput de ~1.200 pares/s para procesar lotes grandes.
+- Filtrado de candidatos en búsqueda semántica: como reranker cross-encoder, puntúa pares consulta-documento y reordena los resultados de un retriever bi-encoder en pipelines de recuperación de información.
 
 ## Benchmarks y rendimiento
 
-Resultado declarado en el `model-index` de la model card (no verificado por un tercero, `verified: false`):
+Resultados declarados por el autor en el model-index (no verificados de forma independiente):
 
-| Tarea | Dataset | Métrica | Valor |
-|---|---|---|---|
-| Cross-encoder classification | dleemiller FineCat NLI test | Accuracy | 0,8359 |
+| Conjunto de evaluacion | Metrica | Valor |
+|---|---|---|
+| FineCat-NLI (test) | Accuracy | 0,8359 |
+| MultiNLI (validation matched) | Accuracy | 0,9165 |
+| MultiNLI (validation mismatched) | Accuracy | 0,9127 |
+| SNLI (test) | Accuracy | 0,9328 |
+| ANLI round 1 (test) | Accuracy | 0,7740 |
+| ANLI round 2 (test) | Accuracy | 0,6020 |
+| ANLI round 3 (test) | Accuracy | 0,5733 |
+| WANLI (test) | Accuracy | 0,7674 |
+| LingNLI (validation) | Accuracy | 0,8776 |
+| Benchmark de 45 datasets NLI / zero-shot / grounding (macro average) | Macro accuracy | 0,8204 |
 
-Evaluación ampliada publicada por el autor (F1-micro, equivalente a accuracy), medida con batch 32 en una Nvidia Blackwell PRO 6000 Max-Q:
-
-| Modelo | finecat | Media 45 sets | mnli | mnli_m | snli | anli_r1 | anli_r2 | anli_r3 | wanli | lingnli | Throughput (muestras/s) | Memoria pico (MB) |
-|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| `dleemiller/finecat-nli-v2-xl` | **0,8445** | **0,8282** | **0,9202** | 0,9191 | **0,9356** | 0,7860 | 0,6600 | 0,6067 | **0,7710** | **0,8834** | 254,42 | 4.649,37 |
-| `dleemiller/finecat-nli-ultra-l` | 0,8388 | 0,8234 | 0,9127 | 0,9131 | 0,9303 | 0,7910 | 0,6400 | 0,5833 | 0,7694 | 0,8714 | 624,67 | 1.857,54 |
-| `dleemiller/finecat-nli-v2-l` (este modelo) | 0,8359 | 0,8204 | 0,9165 | 0,9127 | 0,9328 | 0,7740 | 0,6020 | 0,5733 | 0,7674 | 0,8776 | 636,71 | 1.982,06 |
-| `MoritzLaurer/DeBERTa-v3-large-mnli-fever-anli-ling-wanli` | 0,8233 | 0,6803 | 0,9121 | 0,9079 | 0,8898 | **0,7960** | **0,6830** | **0,6400** | 0,7700 | 0,8821 | 454,96 | 3.250,44 |
-| `dleemiller/finecat-nli-l` | 0,8227 | 0,7357 | 0,9152 | **0,9265** | 0,9162 | 0,7480 | 0,5700 | 0,5433 | 0,7706 | 0,8742 | 539,04 | 1.838,06 |
-| `tasksource/ModernBERT-large-nli` | 0,7959 | 0,7301 | 0,8983 | 0,9229 | 0,9188 | 0,7260 | 0,5110 | 0,4925 | 0,6978 | 0,8504 | 543,44 | 1.838,06 |
-| `dleemiller/ModernCE-large-nli` | 0,7811 | 0,6859 | 0,9088 | 0,9205 | 0,9273 | 0,6630 | 0,4860 | 0,4408 | 0,6576 | 0,8566 | 540,74 | 1.838,06 |
-| `cross-encoder/nli-deberta-v3-large` | 0,7618 | 0,6014 | 0,9019 | 0,9049 | 0,9220 | 0,5300 | 0,4170 | 0,3758 | 0,6548 | 0,8466 | 448,35 | 3.250,44 |
-
-La media de 45 conjuntos es la accuracy macro sobre los 45 datasets de la evaluación ampliada, cada modelo ejecutado a su contexto máximo (512 tokens para los modelos DeBERTa). Los resultados son declarados por el autor y no han sido replicados de forma independiente.
+La model card cita además resultados de aplicaciones concretas: 97,7 % en intenciones MASSIVE, 0,81 de F1 en RAGTruth, 92,3 % en CrossingGuard, 94,3 % en insultos de Wikipedia, 92,3 % en 18 tareas zero-shot y 98,4 % en SDOH-NLI. El autor declara un throughput de aproximadamente 1.200 pares por segundo.
 
 ## Requisitos de hardware
 
-- **Peso de los parámetros**: ~1,58 GB en fp32 (tamaño real del repositorio, 1,6 GB); ~0,79 GB en fp16/bf16; ~0,40 GB en int8. Los pesos por sí solos caben en cualquier GPU consumer.
-- **Memoria pico medida**: 1.982,06 MB con batch 32 en una Nvidia Blackwell PRO 6000 Max-Q, sobre pares de longitud moderada. Con documentos de 8k tokens las activaciones crecen de forma notable, por lo que conviene presupuestar entre 4 y 8 GB en configuraciones de contexto largo.
-- **GPU recomendadas**: cualquier GPU con 8 GB o más para uso general (RTX 3060 12 GB, RTX 4070, RTX 4090, L4, L40S); A100/H100 no son necesarias salvo para lotes masivos o despliegues multi-cliente.
-- **Cabe en GPU consumer**: sí, sin cuantización y con margen amplio en fp16, incluso en tarjetas de gama media; también es viable en CPU para volúmenes bajos o procesos batch nocturnos.
-- **Opciones de despliegue**: `sentence-transformers` (`CrossEncoder`), `transformers` con `AutoModelForSequenceClassification`, exportación a ONNX Runtime mediante Optimum, Text Embeddings Inference (TEI) para servir cross-encoders, y Triton Inference Server para escalado. vLLM y TGI no aplican al no ser un modelo generativo.
-- **Latencia y throughput**: 636,71 muestras/s a batch 32, es decir, ~1,57 ms por par en la GPU de referencia. El throughput escala casi linealmente con el tamaño de batch hasta saturar la GPU.
+- VRAM estimada para inferencia: en FP32, aproximadamente 1,6 GB de pesos más activaciones; en BF16, alrededor de 0,8 GB de pesos. Con lotes grandes y secuencias de 8.000 tokens, las activaciones pueden elevar el consumo a varios GB.
+- GPU recomendadas: cualquier GPU con al menos 4-6 GB de VRAM para lotes pequeños; A100, H100 o L40S para maximizar throughput con lotes grandes y contexto largo.
+- Cabe en GPU de consumo: sí, en RTX 3060 (12 GB), RTX 4060 Ti (16 GB), RTX 4070, RTX 4080 y RTX 4090, incluso con secuencias largas y lotes moderados.
+- Opciones de despliegue: sentence-transformers (CrossEncoder), Hugging Face Transformers, Text Embedding Inference (TEI) y vLLM no aplica (no es un modelo generativo); llama.cpp y Ollama no soportan de forma nativa este cross-encoder ModernBERT.
+- Latencia y throughput: el autor declara ~1.200 pares/s; la latencia por par depende del hardware y de la longitud de secuencia, y no se detalla en la información disponible.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | FineCat | Media 45 sets | Throughput (muestras/s) | Licencia | Disponibilidad |
-|---|---|---|---|---|---|---|---|
-| `dleemiller/finecat-nli-v2-l` | 395,8 M | 8k tokens | 0,8359 | 0,8204 | 636,71 | Apache-2.0 | Hugging Face, `sentence-transformers` |
-| `dleemiller/finecat-nli-v2-xl` | No disponible | No disponible | 0,8445 | 0,8282 | 254,42 | No disponible | Hugging Face |
-| `dleemiller/finecat-nli-ultra-l` | No disponible | No disponible | 0,8388 | 0,8234 | 624,67 | No disponible | Hugging Face |
-| `MoritzLaurer/DeBERTa-v3-large-mnli-fever-anli-ling-wanli` | No disponible | 512 tokens | 0,8233 | 0,6803 | 454,96 | No disponible | Hugging Face |
-| `tasksource/ModernBERT-large-nli` | No disponible | No disponible (ModernBERT) | 0,7959 | 0,7301 | 543,44 | No disponible | Hugging Face |
+| Modelo | Parametros | Contexto | Skill Index (OpenNLI) | Accuracy media | Licencia |
+|---|---|---|---|---|---|
+| dleemiller/finecat-nli-ultra-l | 378M | no disponible | 58,6 | 0,8213 | no disponible |
+| dleemiller/finecat-nli-v2-l | 395,8M | 8.000 tokens | no disponible | 0,8204 (macro, 45 datasets) | apache-2.0 |
+| jhu-clsp/ettin-encoder-400m (base) | ~400M | no disponible | no disponible | no disponible | no disponible |
 
-Frente a `finecat-nli-v2-xl`, el modelo aquí descrito pierde 0,0086 puntos en FineCat y 0,0078 en la media de 45 conjuntos, pero multiplica por 2,5 el throughput y reduce el pico de memoria de 4.649 MB a 1.982 MB. Frente a los cross-encoders DeBERTa-v3, la mejora en la media de 45 conjuntos es de más de 14 puntos, con menor consumo de memoria y contexto 16 veces mayor, a costa de un rendimiento ligeramente inferior en los subconjuntos adversariales ANLI-r2 y ANLI-r3.
+La model card incluye una comparativa en el leaderboard OpenNLI donde finecat-nli-ultra-l obtiene un Skill Index de 58,6 y una accuracy de 0,8213, con 378M de parámetros y 1.487 pares/s. No se dispone de datos comparativos de modelos de terceros (por ejemplo, DeBERTa-v3-large o BART-large-MNLI) en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- **Solo inglés**: no se ha entrenado ni evaluado en castellano ni en otros idiomas; su uso en producción multilingüe requeriría traducción previa o un modelo específico.
-- **Modelo discriminativo**: no genera texto, no ejecuta *tool calling* ni planificación multi-paso. Cualquier uso agéntico debe delegar la generación en un LLM y usar este modelo como clasificador o verificador.
-- **Rendimiento débil en inferencia adversarial**: ANLI-r2 (0,6020) y ANLI-r3 (0,5733) quedan por debajo de DeBERTa-v3-large (0,6830 y 0,6400), lo que indica menor robustez ante hipótesis deliberadamente engañosas o de composición compleja.
-- **Sesgos heredados del corpus**: al entrenarse sobre MNLI, SNLI y ANLI, arrastra los sesgos de esos datasets (correlaciones superficiales entre premisa e hipótesis, desequilibrios de dominio y de registro). No se documenta ninguna evaluación de sesgo específica.
-- **Riesgo de calibración deficiente fuera de dominio**: las probabilidades solo están calibradas de forma aproximada en la distribución de entrenamiento; en dominios muy distintos (jerga técnica, texto legal, conversación coloquial) conviene validar con un conjunto propio antes de fijar umbrales.
-- **Etiquetas no mutuamente excluyentes**: en clasificación zero-shot, la comparación entre etiquetas se hace sobre la probabilidad de implicación de cada par; varias hipótesis pueden recibir puntuaciones altas simultáneamente, por lo que hace falta un paso de normalización o *argmax* explícito.
-- **Resultados no verificados**: la única entrada del `model-index` está marcada como `verified: false` y la evaluación de 45 conjuntos la publica el propio autor sin replicación independiente.
-- **Adopción muy baja**: 120 descargas y 0 *likes*, sin issues ni discusiones públicas documentadas; no hay garantía de mantenimiento a largo plazo.
-- **Licencia**: el modelo se publica bajo Apache-2.0, permisiva para uso comercial, pero conviene verificar la licencia del modelo base `jhu-clsp/ettin-encoder-400m` y de los datasets de origen (MNLI, SNLI, ANLI) antes de un despliegue comercial.
-- **Contexto largo sin desglose**: aunque soporta 8k tokens, la model card no publica métricas separadas por longitud de entrada, por lo que el rendimiento real en documentos muy largos no está cuantificado.
+- Solo soporta inglés; no se ha validado su comportamiento en castellano ni en otros idiomas.
+- Es un encoder de clasificación, no un modelo generativo: no produce texto, tool calling ni razonamiento multi-paso de forma nativa.
+- Los resultados de benchmarks son declarados por el autor y no han sido verificados de forma independiente; el propio model-index marca las métricas como no verificadas.
+- Riesgo de alucinación no aplica en el sentido generativo, pero el modelo puede asignar alta probabilidad de entailment a hipótesis plausibles pero falsas si la premisa es ambigua; conviene calibrar umbrales por dominio.
+- Rendimiento notablemente inferior en ANLI rounds 2 y 3 (0,602 y 0,5733), lo que indica dificultad con inferencias de múltiples pasos y adversariales.
+- La ventana de 8.000 tokens es menor que la de algunos encoders long-context; documentos más largos requieren truncado o fragmentación.
+- Licencia Apache-2.0 permite uso comercial, pero el modelo base Ettin-encoder-400m debe verificarse por separado; no se detallan restricciones adicionales en la información disponible.
+- No se documentan sesgos específicos ni evaluaciones de robustez fuera de los conjuntos NLI estándar.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/dleemiller/finecat-nli-v2-l
+- Demo en vivo (Space): https://huggingface.co/spaces/dleemiller/finecat-nli
+- Leaderboard OpenNLI: https://huggingface.co/spaces/dleemiller/open-nli-leaderboard
 - Dataset FineCat-NLI: https://huggingface.co/datasets/dleemiller/FineCat-NLI
-- Modelo base Ettin Encoder 400M: https://huggingface.co/jhu-clsp/ettin-encoder-400m
-- Colección FineCat NLI: https://huggingface.co/collections/dleemiller/finecat-nli
-- Modelo predecesor `finecat-nli-l`: https://huggingface.co/dleemiller/finecat-nli-l
-- Ficha en SAVRN: https://savrn.com/models/finecat-nli-l
-- Perfil del autor en SAVRN: https://savrn.com/model-publishers/dleemiller
-- Entrada en Free2AITools: https://free2aitools.com/model/dleemiller/finecat-nli-v2-xl
+- Dataset FineCat-NLI-Reason: https://huggingface.co/datasets/dleemiller/FineCat-NLI-Reason
+- Modelo base Ettin-encoder-400m: https://huggingface.co/jhu-clsp/ettin-encoder-400m
+- Dataset MultiNLI: https://huggingface.co/datasets/nyu-mll/multi_nli
+- Dataset SNLI: https://huggingface.co/datasets/stanfordnlp/snli
+- Dataset ANLI: https://huggingface.co/datasets/facebook/anli
+- Dataset WANLI: https://huggingface.co/datasets/alisawuffles/WANLI
+- Dataset LingNLI: https://huggingface.co/datasets/tasksource/lingnli

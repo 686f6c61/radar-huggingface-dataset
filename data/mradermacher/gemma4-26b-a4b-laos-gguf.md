@@ -2,126 +2,105 @@
 
 ## Resumen
 
-mradermacher/gemma4-26b-a4b-laos-GGUF es un repositorio de cuantizaciones en formato GGUF generado por el usuario mradermacher a partir del modelo Phonepadith/gemma4-26b-a4b-laos. No se trata de un modelo entrenado por el autor del repositorio, sino de una conversion de pesos para hacer viable la inferencia local en hardware de consumo mediante llama.cpp y herramientas compatibles. El modelo cuenta con 25.233.142.046 parametros (unos 25,2 mil millones) y se distribuye bajo licencia apache-2.0.
+`mradermacher/gemma4-26b-a4b-laos-GGUF` es una coleccion de cuantizaciones GGUF del modelo `Phonepadith/gemma4-26b-a4b-laos`, un ajuste fino de la familia Gemma 4 con arquitectura de mezcla de expertos (MoE) y aproximadamente 25.230 millones de parametros totales. El modelo deriva de un checkpoint base de Google (Gemma 4) y ha sido adaptado por Phonepadith, presumiblemente para el idioma lao, y posteriormente cuantizado por mradermacher para su uso en entornos con recursos limitados mediante llama.cpp y herramientas compatibles con GGUF.
 
-El nombre del modelo apunta a la familia Gemma 4 de Google y a una configuracion tipo MoE con aproximadamente 4.000 millones de parametros activos (el sufijo "a4b"), asi como a un ajuste orientado al idioma lao (sufijo "laos"). Ninguno de estos dos extremos se confirma en la informacion disponible: la model card no documenta arquitectura, contexto ni composicion del entrenamiento, y los metadatos declaran unicamente el idioma ingles.
+La relevancia de esta ficha radica en que el repositorio ofrece una bateria completa de cuantizaciones estaticas (desde Q2_K hasta Q8_0, ademas de IQ4_XS y los complementos multimodales mmproj en Q8_0 y f16), lo que permite desplegar un modelo MoE de ~25B en hardware de consumo. No obstante, la informacion publicada es muy escasa: no se detallan la composicion del dataset de entrenamiento, el numero de tokens, el proceso de alineacion ni resultados de benchmarks.
 
-La relevancia de esta ficha es practica: el repositorio incluye 13 cuantizaciones GGUF distintas (desde Q2_K de 10,7 GB hasta Q8_0 de 27,0 GB) mas dos ficheros multimodales mmproj, lo que permite desplegar un modelo de 25B en GPUs de 12 a 24 GB de VRAM. El repositorio no registra descargas ni likes en el momento de la consulta, por lo que se trata de una publicacion reciente y sin validacion comunitaria.
+El repositorio tiene 534 descargas, 0 likes, un tamano total de 184,9 GB y una licencia denominada `aidctech` (distinta de la licencia estandar de Gemma), lo que introduce incertidumbre sobre las condiciones exactas de uso comercial. La fecha de creacion registrada es 2026-09-16 y la de actualizacion 2026-10-27.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (el nombre "a4b" sugiere MoE con ~4B activos, sin confirmar) |
-| Parametros totales | 25.233.142.046 (25,2 mil millones) |
-| Parametros activos | no disponible |
+| Arquitectura | Mezcla de expertos (MoE) derivada de Gemma 4; detalles de capas y atencion no disponibles |
+| Parametros totales | 25.233.142.046 (~25,23 B) |
+| Parametros activos | no disponible (el sufijo "a4b" sugiere ~4 B activos, sin confirmacion oficial) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, mmproj-Q8_0, mmproj-f16 |
-| Idiomas soportados | en (segun metadatos); el nombre del modelo referencia "laos", sin confirmar |
-| Licencia | apache-2.0 |
-| Formato de pesos | GGUF (cuantizado); el modelo base se distribuye presumiblemente en safetensors |
-| Modelo base | Phonepadith/gemma4-26b-a4b-laos |
-| Autor de la cuantizacion | mradermacher |
-| Tamano del repositorio | 184,9 GB |
-| Fecha de creacion | 2026-09-16 |
-| Ultima actualizacion | 2026-09-16 |
-| Descargas / likes | 0 / 0 |
-
-### Cuantizaciones disponibles
-
-| Fichero | Tipo | Tamano (GB) | Notas |
-|---|---|---|---|
-| gemma4-26b-a4b-laos.mmproj-Q8_0.gguf | mmproj-Q8_0 | 0,9 | suplemento multimodal |
-| gemma4-26b-a4b-laos.mmproj-f16.gguf | mmproj-f16 | 1,3 | suplemento multimodal |
-| gemma4-26b-a4b-laos.Q2_K.gguf | Q2_K | 10,7 | calidad reducida |
-| gemma4-26b-a4b-laos.Q3_K_S.gguf | Q3_K_S | 12,3 | |
-| gemma4-26b-a4b-laos.Q3_K_M.gguf | Q3_K_M | 13,4 | calidad inferior |
-| gemma4-26b-a4b-laos.Q3_K_L.gguf | Q3_K_L | 13,9 | |
-| gemma4-26b-a4b-laos.IQ4_XS.gguf | IQ4_XS | 14,2 | |
-| gemma4-26b-a4b-laos.Q4_K_S.gguf | Q4_K_S | 15,6 | rapida, recomendada |
-| gemma4-26b-a4b-laos.Q4_K_M.gguf | Q4_K_M | 16,9 | rapida, recomendada |
-| gemma4-26b-a4b-laos.Q5_K_S.gguf | Q5_K_S | 18,1 | |
-| gemma4-26b-a4b-laos.Q5_K_M.gguf | Q5_K_M | 19,2 | |
-| gemma4-26b-a4b-laos.Q6_K.gguf | Q6_K | 22,7 | calidad muy buena |
-| gemma4-26b-a4b-laos.Q8_0.gguf | Q8_0 | 27,0 | rapida, mejor calidad |
+| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0; mmproj en Q8_0 y f16 |
+| Idiomas soportados | en (segun metadatos); el ajuste "laos" sugiere capacidad adicional en lao, no confirmada en la model card |
+| Licencia | aidctech (licencia personalizada, enlazada como LICENSE en el repo) |
+| Formato de pesos | GGUF (cuantizaciones estaticas); el modelo base se distribuye en safetensors |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion sobre la arquitectura interna del modelo base en la documentacion proporcionada. El identificador "gemma4-26b-a4b" sugiere una arquitectura de mezcla de expertos (MoE) con 26.000 millones de parametros totales y aproximadamente 4.000 millones activos por token, patron habitual en la nomenclatura de modelos sparse, pero la model card del repositorio de cuantizacion no lo confirma ni detalla el numero de expertos, la funcion de enrutamiento o la longitud de contexto nativa.
+El modelo base es un transformer con mezcla de expertos (MoE) de la familia Gemma 4, con 25.233.142.046 parametros totales segun los tensores en safetensors. El nombre del checkpoint (`gemma4-26b-a4b`) sugiere un diseno con aproximadamente 4 mil millones de parametros activos por token, aunque esta cifra no aparece confirmada en la informacion disponible. El repositorio incluye complementos `mmproj` (Q8_0 y f16), lo que indica que el modelo base incorpora un proyector multimodal para entrada de imagenes.
 
-Tampoco hay datos sobre el proceso de entrenamiento: no se indica el volumen de tokens, la composicion del dataset, ni si se aplicaron tecnicas de alineacion como RLHF, DPO o ajuste por instrucciones. El unico indicio relevante es el sufijo "laos" en el nombre, que sugiere un ajuste fino orientado al idioma lao, y la presencia de ficheros mmproj (multi-modal supplement) en el repositorio, que indica que el modelo base incorpora capacidad multimodal (entrada de imagenes) que las cuantizaciones preservan. El proceso aplicado por mradermacher es una conversion estatica a GGUF (quantize_version 2, output_tensor_quantised 1, convert_type hf) sin cuantizacion ponderada ni imatrix.
+No se dispone de informacion sobre el numero de tokens de entrenamiento, la composicion del dataset, el uso de RLHF/DPO ni innovaciones tecnicas especificas (atencion lineal, decodificacion especulativa, etc.). El autor de las cuantizaciones indica que se trata de cuantizaciones estaticas (quantize_version 2, output_tensor_quantised 1) y que no tiene previsto generar cuantizaciones ponderadas/imatrix salvo peticion explicita en la seccion de discusiones de la comunidad.
 
 ## Capacidades
 
-- Generacion de texto conversacional, segun la etiqueta "conversational" del repositorio.
-- Capacidad multimodal: la presencia de los ficheros mmproj-Q8_0 y mmproj-f16 indica soporte de entrada de imagenes junto al texto. El alcance exacto (captioning, VQA, OCR) no esta documentado.
-- Inferencia optimizada para GGUF mediante llama.cpp y runtimes compatibles (Ollama, LM Studio, llama-cpp-python, text-generation-inference con backend GGUF).
-- Compatibilidad declarada con endpoints (etiqueta "endpoints_compatible") y con text-generation-inference.
-- Capacidades multilingues: no disponibles. Los metadatos solo declaran "en"; no se confirma soporte de lao, castellano ni otros idiomas.
-- Soporte de tool calling / function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Modo de razonamiento explicito (thinking mode): no disponible.
-- Capacidades de codigo y matematicas: no disponibles.
+- Generacion de texto conversacional, segun los tags `conversational` y `text-generation-inference`.
+- Procesamiento multimodal de imagenes: la presencia de los ficheros `mmproj-Q8_0.gguf` y `mmproj-f16.gguf` indica soporte de entrada visual en el modelo base.
+- Razonamiento y generacion de codigo: capacidad esperable por herencia de Gemma 4, no documentada explicitamente en la informacion disponible.
+- Capacidades multilingues: los metadatos declaran unicamente `en`; no se confirma el soporte del idioma lao pese al nombre del checkpoint.
+- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
+- Modo de pensamiento (thinking mode): no disponible en la informacion proporcionada.
 
 ## Casos de uso
 
-- Inferencia local en estacion de trabajo con GPU de 24 GB: usando Q4_K_M (16,9 GB) o IQ4_XS (14,2 GB), el modelo cabe en una RTX 3090 o RTX 4090 con margen para cache KV, lo que permite ejecutar un modelo de 25B sin depender de APIs externas ni enviar datos a terceros.
-- Despliegue en portatil con GPU de 12-16 GB: la cuantizacion Q3_K_M (13,4 GB) o Q2_K (10,7 GB) permite cargar el modelo en equipos de gama media, asumiendo una perdida de calidad respecto a Q4 o superior.
-- Procesamiento de documentos con imagenes en local: los ficheros mmproj habilitan flujos multimodales (por ejemplo, extraccion de informacion de capturas o diagramas) sin salida a la nube, adecuado en entornos con requisitos de confidencialidad.
-- Generacion de texto y asistentes conversacionales autoalojados: el modelo puede servir como backend de un chatbot interno en una organizacion que quiera evitar costes por token y mantener el control de los datos.
-- Experimentacion e investigacion en cuantizacion: el repositorio ofrece 11 cuantizaciones del mismo modelo con tamanos de 10,7 a 27,0 GB, lo que permite estudiar la degradacion de perplejidad entre niveles K-quant e IQ-quant sobre un mismo checkpoint.
-- Prototipado de pipelines con llama.cpp: la compatibilidad con GGUF facilita integrar el modelo en scripts Python (llama-cpp-python) o servidores compatibles con la API de OpenAI para pruebas de concepto antes de escalar a un despliegue mayor.
-- Evaluacion comparativa de estrategias de despliegue: al disponer de variantes desde 10,7 GB hasta 27,0 GB, resulta util para medir throughput y latencia reales en distintas GPU y decidir el equilibrio calidad/velocidad para produccion.
-- Servicio de traduccion o generacion en ingles dentro de un backend propio: dado que el unico idioma declarado es "en", su uso en produccion deberia limitarse a ese idioma hasta verificar el comportamiento real en otros.
+- Despliegue local en estaciones de trabajo con GPU de consumo: las cuantizaciones Q4_K_M (16,9 GB) y Q4_K_S (15,6 GB) permiten ejecutar el modelo en GPUs con 24 GB de VRAM, como la RTX 4090, usando llama.cpp u Ollama.
+- Prototipado de asistentes conversacionales en ingles: el tag `conversational` y el formato GGUF facilitan integrar el modelo en aplicaciones de chat mediante llama.cpp o servidores compatibles con la API de OpenAI.
+- Procesamiento de documentos con imagenes: con el complemento `mmproj-f16.gguf` (1,3 GB) se puede realizar OCR o descripcion de imagenes en pipelines locales, siempre que el modelo base confirme la capacidad multimodal.
+- Evaluacion de modelos MoE en entornos de investigacion: el rango completo de cuantizaciones (de Q2_K a Q8_0) permite estudiar la degradacion de calidad frente al tamano, comparando Q4_K_M con Q8_0 en tareas controladas.
+- Inferencia en servidores con multiples GPUs: la variante Q8_0 (27,0 GB) puede servirse con vLLM o TGI si se dispone de dos GPUs de 24 GB o una A100 de 40 GB, aunque la compatibilidad de vLLM con GGUF es limitada.
+- Experimentacion con modelos ajustados a idiomas de bajos recursos: el checkpoint "laos" permite explorar el comportamiento de Gemma 4 en lao, aunque la falta de benchmarks obliga a una validacion manual previa.
+- Fine-tuning ligero sobre la base cuantizada: no recomendado directamente sobre GGUF; seria necesario partir del modelo base en safetensors `Phonepadith/gemma4-26b-a4b-laos`.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card del repositorio de cuantizacion no incluye valores de MMLU, HumanEval, GSM8K ni de ningun otro conjunto de evaluacion, y la busqueda web realizada no ha devuelto informacion relacionada con el modelo.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: entre 11 y 13 GB con Q2_K (10,7 GB de pesos mas cache KV y overhead), entre 14 y 17 GB con IQ4_XS o Q4_K_S, entre 17 y 20 GB con Q4_K_M, entre 20 y 23 GB con Q5_K_M, entre 24 y 27 GB con Q6_K y en torno a 28-32 GB con Q8_0. Los ficheros mmproj anaden 0,9 GB (Q8_0) o 1,3 GB (f16) si se usa la via multimodal.
-- GPU recomendadas por tramo: RTX 4090, RTX 3090, L40S o A6000 (48 GB) para Q4_K_M y superiores; RTX 4080, RTX 4070 Ti Super o A5000 (24 GB) para Q3_K_L e IQ4_XS; RTX 3060 12 GB, RTX 4070 o Tesla T4 para Q2_K y Q3_K_S; A100 40/80 GB o H100 para Q8_0 con contextos largos o varias sesiones concurrentes.
-- Cabe en GPU de consumo: si. Q4_K_M (16,9 GB) entra en GPUs de 24 GB; Q3_K_M (13,4 GB) entra en GPUs de 16 GB; Q2_K (10,7 GB) entra en GPUs de 12 GB, aunque con degradacion de calidad perceptible.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, llama-cpp-python, text-generation-inference con soporte GGUF, y servidores compatibles con la API de OpenAI. El uso de vLLM no es directo con GGUF, salvo conversion previa a safetensors.
-- Latencia y throughput estimados: no disponibles. No se han publicado mediciones de tokens por segundo para ninguna de las cuantizaciones.
-- Nota sobre ejecucion parcial en CPU: las cuantizaciones Q2_K y Q3_K_S permiten escenarios de offload parcial con RAM del sistema, pero reducen drasticamente el throughput.
+- VRAM estimada para inferencia (solo pesos, sin overhead de contexto):
+  - Q2_K: ~10,7 GB
+  - Q3_K_S: ~12,3 GB
+  - Q3_K_M: ~13,4 GB
+  - Q3_K_L: ~13,9 GB
+  - IQ4_XS: ~14,2 GB
+  - Q4_K_S: ~15,6 GB
+  - Q4_K_M: ~16,9 GB
+  - Q5_K_S: ~18,1 GB
+  - Q5_K_M: ~19,2 GB
+  - Q6_K: ~22,7 GB
+  - Q8_0: ~27,0 GB
+  - mmproj Q8_0: ~0,9 GB adicionales; mmproj f16: ~1,3 GB adicionales
+- GPU recomendadas: RTX 4090 (24 GB) para Q4_K_M y Q5_K_M; A100 40 GB o H100 para Q8_0 con contexto amplio; configuraciones multi-GPU para Q8_0 si se requiere ventana de contexto grande.
+- Cabe en GPU de consumo: si, en RTX 3090/4090 (24 GB) con cuantizaciones hasta Q5_K_M; en GPUs de 16 GB solo con Q2_K o Q3_K_S y contexto reducido.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio y cualquier runtime compatible con GGUF; TGI y vLLM tienen soporte parcial o experimental para GGUF, por lo que se recomienda validar la version concreta.
+- Latencia y throughput: no disponibles; al tratarse de un MoE con ~4 B activos (segun el nombre), el throughput esperado seria superior al de un modelo denso de 25 B, pero no hay mediciones publicadas.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos de rendimiento verificables para establecer una comparativa funcional. La tabla siguiente compara unicamente caracteristicas objetivas del modelo base frente a la version cuantizada y sus variantes multimodales.
-
-| Modelo / artefacto | Parametros | Contexto | Licencia | Formato | Disponibilidad |
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| Phonepadith/gemma4-26b-a4b-laos (base) | 25,2 mil millones | no disponible | apache-2.0 | safetensors (presumible) | en Hugging Face |
-| mradermacher/gemma4-26b-a4b-laos-GGUF (este repo) | 25,2 mil millones | no disponible | apache-2.0 | GGUF, 11 cuantizaciones | en Hugging Face |
-| mmproj-Q8_0 / mmproj-f16 (suplemento) | no aplica | no aplica | apache-2.0 | GGUF (proyector multimodal) | en el mismo repo |
-| Otros modelos de ~25-27B comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
+| mradermacher/gemma4-26b-a4b-laos-GGUF | ~25,23 B totales (MoE) | no disponible | aidctech | GGUF | Cuantizaciones estaticas, sin imatrix |
+| Phonepadith/gemma4-26b-a4b-laos | ~25,23 B totales (MoE) | no disponible | no disponible | safetensors | Modelo base del que derivan las cuantizaciones |
+| Gemma 4 base (Google) | no disponible | no disponible | Gemma Terms of Use | safetensors | Modelo original sin ajuste "laos"; referencia de la familia |
+| Mistral Small 3 (24B) | ~24 B densos | 32k (segun version) | Apache 2.0 | safetensors, GGUF | Alternativa densa de tamano comparable, con licencia permisiva |
 
-No se han identificado en la informacion proporcionada modelos alternativos concretos (por ejemplo, otras variantes de la familia Gemma, Llama o Mistral de tamano similar) con datos verificables de parametros, contexto o rendimiento.
+La comparacion con Mistral Small 3 se incluye como referencia de categoria por tamano; no se dispone de datos de rendimiento comparativos entre ambos modelos en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de benchmarks: no hay evidencia publicada de calidad, por lo que no se puede recomendar su uso en produccion sin una evaluacion propia previa.
-- Sesgos conocidos: no disponibles. Al desconocerse la composicion del dataset de entrenamiento, no se puede acotar el sesgo del modelo.
-- Riesgo de alucinacion: no cuantificado. Al no haber evaluaciones publicadas, se debe asumir el riesgo habitual de los modelos generativos y verificar las salidas en aplicaciones criticas.
-- Limitacion idiomatica: los metadatos declaran unicamente "en". El nombre del modelo sugiere un ajuste para lao, pero no hay confirmacion; no hay evidencia de soporte de castellano ni de otros idiomas.
-- Limitacion de contexto: se desconoce la longitud de contexto nativa, lo que impide planificar casos de uso con documentos largos o conversaciones extensas.
-- Cuantizaciones de baja precision: Q2_K y Q3_K_S degradan notablemente la calidad frente a Q4 o superior; la propia model card marca Q3_K_M como "lower quality" y recomienda Q4_K_S y Q4_K_M como opciones rapidas.
-- Cuantizaciones ponderadas no disponibles: el autor indica que no ha publicado variantes weighted/imatrix, que suelen ofrecer mejor relacion calidad/tamano que las estaticas a igual tamano.
-- Licencia: apache-2.0 permite uso comercial, modificacion y redistribucion, siempre que se conserve el aviso de licencia y se indiquen los cambios. Al ser una cuantizacion derivada, conviene verificar tambien los terminos del modelo base Phonepadith/gemma4-26b-a4b-laos.
-- Procedencia de los pesos: se trata de una cuantizacion de terceros; el autor del repositorio no es el entrenador del modelo, por lo que la trazabilidad del entrenamiento depende del repositorio base.
-- Adopcion nula: 0 descargas y 0 likes implican ausencia de validacion por parte de la comunidad en el momento de la consulta.
-- Fechas de publicacion inusuales: la metadata indica creacion y actualizacion el 2026-09-16, dato que se reproduce tal cual figura en la fuente.
+- Ausencia total de benchmarks: no hay datos de MMLU, HumanEval, GSM8K ni evaluaciones multilingues, lo que impide estimar la calidad real del ajuste "laos".
+- Licencia `aidctech` personalizada: no es la licencia estandar de Gemma ni una licencia OSI; es imprescindible revisar el fichero LICENSE del repositorio antes de cualquier uso comercial.
+- Idiomas declarados: solo `en` en los metadatos, pese al nombre "laos"; el soporte real del lao no esta verificado y podria ser limitado o inexistente.
+- Riesgo de alucinacion: inherente a los modelos generativos; sin evaluaciones publicadas no se puede acotar su magnitud.
+- Sesgos conocidos: no documentados en la informacion disponible; se heredan los del modelo base Gemma 4 y los del dataset de ajuste, no descrito.
+- Cuantizaciones estaticas sin imatrix: el autor indica que no hay cuantizaciones ponderadas, lo que puede suponer una perdida de calidad mayor en Q2_K y Q3_K frente a alternativas imatrix.
+- Fecha de creacion futura (2026-09-16): metadato anomalo que sugiere posible error de registro o manipulacion del repositorio; conviene verificar la procedencia antes de usarlo en produccion.
+- Repositorio con 0 likes y 534 descargas: baja validacion comunitaria; no hay evidencia de uso extendido ni reportes de calidad.
+- Compatibilidad de herramientas: al ser un GGUF de un modelo MoE multimodal, el soporte en vLLM, TGI y algunas versiones de llama.cpp puede ser incompleto; validar el runtime antes de desplegar.
 
 ## Enlaces
 
-- Repositorio GGUF: https://huggingface.co/mradermacher/gemma4-26b-a4b-laos-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/gemma4-26b-a4b-laos-GGUF
 - Modelo base: https://huggingface.co/Phonepadith/gemma4-26b-a4b-laos
 - Pagina de descargas del autor: https://hf.tst.eu/model#gemma4-26b-a4b-laos-GGUF
-- Guia de uso de GGUF de TheBloke: https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
-- Solicitudes de cuantizacion del autor: https://huggingface.co/mradermacher/model_requests
-- Grafico comparativo de perplejidad por tipo de cuantizacion: https://www.nethype.de/huggingface_embed/quantpplgraph.png
+- Fichero LICENSE del repositorio: https://huggingface.co/mradermacher/gemma4-26b-a4b-laos-GGUF/blob/main/LICENSE
+- README de referencia para uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Grafico de perplejidad por tipo de cuantizacion (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png
 - Notas de Artefact2 sobre cuantizaciones: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
-- Entidad responsable de la cuantizacion: https://www.nethype.de/
-- Paper, blog o demo oficial del modelo: no disponible
+- Peticiones de modelos de mradermacher: https://huggingface.co/mradermacher/model_requests

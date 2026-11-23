@@ -2,122 +2,117 @@
 
 ## Resumen
 
-Kanso Koi 1.0 es un adaptador LoRA de bajo rango entrenado sobre `mlx-community/Qwen3-1.7B-4bit` para una tarea muy concreta: la limpieza y el formateo de texto dictado. Recibe la salida cruda de un sistema de reconocimiento automático del habla (ASR) y devuelve el texto con puntuación, mayúsculas, eliminación de muletillas y reinicios falsos, normalización inversa de texto (números, importes, fechas, horas, porcentajes, correos, URL y teléfonos) y reparación gramatical que preserva el significado. Lo desarrolla BuilderHelm AI, antes publicado como `imYChaudhary22/Kanso-Koi-1.0` y heredero de la línea ZenPolish (v2.2 Lite en la numeración interna).
+Kanso Koi 1.0 es un modelo de limpieza y formateo de texto dictado, desarrollado por BuilderHelm para su aplicación ZenVoice. No es un modelo de propósito general: es un ajuste fino mediante LoRA sobre `mlx-community/Qwen3-1.7B-4bit` especializado en tomar la salida cruda de un motor de reconocimiento automático del habla (ASR) y devolver texto escrito correctamente puntuado, capitalizado y normalizado. Resuelve un problema muy concreto: las transcripciones de voz a texto llegan sin puntuación, con muletillas, reinicios falsos y números en forma hablada ("dos mil quinientos dólares") que deben convertirse a forma escrita ("$2.500,50" en el formato de destino).
 
-El modelo se distribuye en el formato de despliegue que el autor denomina "ship format": una base Qwen3 de 1.7B parámetros cuantizada a 4 bits (968 MB) más un adaptador LoRA en bf16 (70 MB) que se aplica en vivo, sin fusionar. La decisión no es cosmética: la model card advierte que fusionar el adaptador en los pesos daña de forma medible el comportamiento, en particular la normalización de importes monetarios y el borrado de muletillas.
+El modelo se distribuye como un paquete de dos piezas que deben aplicarse en vivo: una base cuantizada a 4 bits (968 MB) y un adaptador LoRA en bf16 (70 MB). El autor advierte explícitamente de que fusionar el adaptador en los pesos daña el comportamiento, especialmente la normalización inversa de moneda y la eliminación de muletillas. El conjunto suma unos 1.720 millones de parámetros y está pensado para ejecutarse íntegramente en local sobre Apple Silicon mediante MLX.
 
-Su relevancia ahora es práctica: es un componente de postprocesado para dictado que corre íntegramente en el dispositivo vía MLX, con un pico de memoria de 1,19 GB y una velocidad de decodificación de 73 tok/s en un Apple M5. Frente a la versión 2.2 original (base de 6 bits, 1,55 GB), la variante Lite reduce el paquete un 32 %, decodifica un 40 % más rápido y mejora la precisión en el benchmark de 500 dictados del propio autor.
+Su relevancia actual radica en el nicho: demuestra que un modelo de 1,7B con un adaptador pequeño puede superar en tareas de formateo a alternativas más grandes, con un consumo de memoria de 1,19 GB en pico y 73 tokens por segundo en un Apple M5. Es una pieza de infraestructura para productos de dictado, no un modelo conversacional.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer denso (Qwen3-1.7B) con adaptador LoRA; inferencia vía MLX |
-| Parámetros totales | 1.720.574.976 (base) + adaptador LoRA (rango 32, alpha 64) |
-| Parámetros activos | No aplica (no es MoE) |
-| Longitud de contexto | No disponible en la información proporcionada |
-| Tipos de cuantización | Base 4-bit (MLX); adaptador en bf16. La versión 0.9 original usaba base 6-bit y adaptador fp32 |
-| Idiomas soportados | No disponible (no declarado en la model card) |
-| Licencia | Apache-2.0 |
-| Formato de pesos | safetensors (MLX); adaptador en `adapters/` como LoRA separado, no fusionado |
-| Tamaño del paquete | 1,05 GB (base 968 MB + adaptador 70 MB); repo 1,0 GB |
-| Librería | `mlx` (runtime `mlx-lm` / `mlx-swift-lm`) |
-| Pipeline | text-generation |
-| Descargas / likes | 104 / 0 |
+| Arquitectura | Transformer decoder-only (Qwen3) con adaptador LoRA sobre base cuantizada |
+| Parametros totales | 1.720.574.976 |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | Base 4-bit; adaptador en bf16 |
+| Idiomas soportados | no disponible |
+| Licencia | Apache 2.0 |
+| Formato de pesos | safetensors (MLX); base 4-bit + adaptador LoRA en `adapters/` |
 
 ## Arquitectura y entrenamiento
 
-La base es Qwen3-1.7B, un transformer denso de 1,7B parámetros que aquí se usa cuantizado a 4 bits con MLX. Sobre él se entrena un adaptador LoRA de rango 32, alpha 64 y escala 2,0, con dropout 0,05, decaimiento coseno de 1e-4 a 1e-6 sin warmup y 3.500 iteraciones. El adaptador se mantiene siempre como artefacto independiente: la model card es explícita en que debe cargarse con `LoRAContainer` en mlx-swift-lm o con `adapter_path` en mlx-lm, y en que fusionarlo degrada la calidad.
+La base es Qwen3-1.7B, un transformer decoder-only, cuantizado a 4 bits por `mlx-community`. Sobre ella se entrena un adaptador LoRA con rango 32, alpha 64 y escala 2.0, dropout 0.05, decaimiento coseno de 1e-4 a 1e-6 sin warmup, durante 3.500 iteraciones. El corpus de entrenamiento consta de unas 90.000 parejas procedentes de 10 fuentes, entre ellas pares de limpieza de dictado y ASR real, muletillas intraoracionales de DisfluencySpeech, entonación interrogativa de Hansard y datos de dominio financiero (el texto de la model card se corta en "earnin").
 
-El corpus de entrenamiento consta de unas 90.000 parejas procedentes de diez fuentes: pares de limpieza de dictado y ASR real, muletillas en mitad de frase de DisfluencySpeech, entonación interrogativa de Hansard, normalización de importes en transcripciones de llamadas de resultados empresariales, patrones combinados de muletilla e importe de BudgieScribe, minado de exclamaciones de Gutenberg, objetivos expresivos de go_emotions, negativos de paso directo de identidad y el corpus reetiquetado de v2.1. Se aplican políticas de consistencia de etiquetas: borrado de muletillas en mitad de frase, importes monetarios siempre en formato `$`, exclamaciones preservadas y mayúscula al inicio de frase. El pipeline completo está en `training/data_v22/` del repositorio ZenVoice. No se documentan fases de RLHF ni DPO.
+La innovación técnica no está en la arquitectura sino en el empaquetado: el adaptador se aplica en tiempo de inferencia mediante `LoRAContainer` de mlx-swift-lm, y el autor documenta que la fusión de pesos degrada mediblemente la calidad. La versión Lite sustituye la base de 6 bits de la versión original por la base 4-bit limpia sobre la que se entrenó el adaptador, con el adaptador en bf16 en lugar de fp32, lo que reduce el paquete un 32 % y acelera la decodificación cerca de un 40 %.
 
 ## Capacidades
 
-- Limpieza de dictado: restauración de puntuación y mayúsculas sobre transcripción ASR cruda.
-- Eliminación de muletillas, tanto al inicio como en mitad de frase, y de reinicios falsos.
-- Normalización inversa de texto (ITN): números, importes monetarios, fechas, horas, porcentajes, correos electrónicos, URL y números de teléfono.
-- Reparación gramatical que preserva el significado y el vocabulario del hablante.
-- Ajuste de registro y mayúsculas según una línea de contexto `app:` incluida en el prompt de sistema.
-- Salida restringida al texto limpio, sin comentarios ni explicaciones (comportamiento entrenado).
-- Modo no-thinking forzado en el ejemplo de uso (`enable_thinking=False`), decodificación greedy con temperatura 0,0.
-- Tool calling, agentes, visión, audio nativo o razonamiento multi-paso: no documentados; el modelo está especializado en una única tarea de formateo.
+- Limpieza de dictado: restaura puntuación y mayúsculas en texto ASR crudo.
+- Eliminación de muletillas, tanto al inicio como a mitad de frase.
+- Eliminación de reinicios falsos (repeticiones y arranques abortados).
+- Normalización inversa de texto (ITN): números, moneda, fechas, horas, porcentajes, correos electrónicos, URL y teléfonos.
+- Reparación gramatical que preserva el significado original.
+- Adaptación de estilo y mayúsculas según una línea de contexto `app:` proporcionada en el prompt.
+- Generación de texto conversacional básica heredada de la base Qwen3.
+- Modo thinking desactivable (`enable_thinking=False`), necesario para el flujo de formateo.
+- No dispone de tool calling, capacidades de agente, visión ni audio documentadas.
 
 ## Casos de uso
 
-- Postprocesado en aplicaciones de dictado: el modelo se inserta entre el motor ASR y el campo de texto del usuario; con 0,23 s de media por dictado en el pipeline de la app ZenVoice, la latencia es imperceptible en escritura continua.
-- Notas de voz y libretas rápidas en iOS/macOS: al ejecutarse vía MLX con 1,19 GB de pico de memoria, cabe en dispositivos Apple Silicon sin conexión a red ni envío de audio a terceros.
-- Transcripción de reuniones y llamadas: la normalización de importes y fechas está entrenada específicamente con transcripciones de llamadas de resultados, lo que la hace adecuada para actas con cifras económicas.
-- Accesibilidad: usuarios que dependen de entrada por voz obtienen texto con puntuación y mayúsculas correctas, lo que reduce la carga de corrección manual posterior.
-- Higiene de datos para pipelines de ASR a gran escala: se puede aplicar por lotes sobre transcripciones almacenadas para elevar la calidad antes de indexarlas o analizarlas.
-- Corrección de correos y URL dictados: el modelo restaura las formas escritas de direcciones, que son el punto donde más falla la transcripción literal.
-- Componente de una cadena de agentes de voz: como paso determinista previo (temperatura 0,0) antes de enviar el texto a un LLM de mayor tamaño, reduciendo ruido de entrada.
+- Dictado en escritorio: integrado en ZenVoice para Mac, toma la salida del ASR y devuelve texto listo para pegar en un editor, con una latencia media de 0,23 s por dictado en el pipeline de la aplicación.
+- Procesamiento por lotes de transcripciones: limpiar actas de reuniones o entrevistas ya transcritas, corrigiendo puntuación y normalizando cifras antes de archivarlas.
+- Normalización financiera: convertir importes hablados a formato escrito ("dos mil quinientos dólares y cincuenta centavos" a "$2.500,50"), un caso que el autor señala como especialmente sensible a la fusión del adaptador.
+- Corrección de notas clínicas o de campo: pasar dictados rápidos a texto legible preservando la terminología y el significado del hablante, sin reescritura.
+- Entrada de datos en formularios por voz: extraer correos, URL, teléfonos y fechas en su forma escrita canónica para rellenar campos estructurados.
+- Preprocesado para pipelines de NLP: dejar el texto en condiciones antes de pasarlo a un modelo mayor de resumen o análisis, reduciendo ruido y errores de formato.
+- Aplicaciones de accesibilidad: dictado en local sin enviar audio ni transcripciones a la nube, con un pico de memoria de 1,19 GB.
 
 ## Benchmarks y rendimiento
 
-Suite de 500 dictados (`eval_v500`, control de fuga de datos), decodificación greedy, Apple M5, MLX 0.32.2. "Original v2.2" = `Kanso-Koi-0.9` en la revisión `53bd03b`:
+Suite de 500 dictados (`eval_v500`, con control de fuga de datos), decodificación greedy, Apple M5, MLX 0.32.2:
 
-| Métrica | Lite (1.0) | Original v2.2 (0.9) |
+| Metrica | Lite (este modelo) | v2.2 original |
 |---|---|---|
 | WER | 5,5 % | 6,7 % |
 | Exact match | 65,8 % | 53,6 % |
 | Punct F1 | 0,863 | 0,759 |
-| Inicio de frase correcto | 94,4 % | 91,6 % |
-| Tamaño del paquete | 1,05 GB | 1,55 GB |
+| Sentence-start | 94,4 % | 91,6 % |
+| Tamano del paquete | 1,05 GB | 1,55 GB |
 | Memoria pico | 1,19 GB | 1,77 GB |
-| Velocidad de decodificación | 73 tok/s | 51 tok/s |
+| Velocidad de decodificacion | 73 tok/s | 51 tok/s |
 
-Suite de 234 filas con control de fuga, tal como se publicó para v2.2:
+Suite de 234 filas con control de fuga:
 
-| Métrica | v2.2 (Koi) | v3 (Satori 4B) | v2.1 | v2 | Qwen3-1.7B stock |
+| Metrica | v2.2 | v3 (4B) | v2.1 | v2 | Qwen3-1.7B base |
 |---|---|---|---|---|---|
 | WER | 9,9 % | 17,2 % | 12,6 % | 30,5 % | 11,0 % |
 | Exact match | 50,4 % | 41,0 % | 29,9 % | 23,1 % | 5,0 % |
 | Punct F1 | 0,832 | 0,750 | 0,573 | 0,649 | 0,634 |
-| Precisión de mayúsculas | 98,3 % | 95,6 % | 97,0 % | 92,4 % | 96,3 % |
-| Inicio de frase | 90,9 % | 80,7 % | 86,2 % | 62,1 % | 74,9 % |
-| Alucinación | 0,0–7,2 % | 10,8 % | 7,2 % | 23,0 % | 0,9 % |
+| Casing acc | 98,3 % | 95,6 % | 97,0 % | 92,4 % | 96,3 % |
+| Sent-start | 90,9 % | 80,7 % | 86,2 % | 62,1 % | 74,9 % |
+| Alucinacion | 0,0-7,2 % | 10,8 % | 7,2 % | 23,0 % | 0,9 % |
 
-En la misma suite de 234 filas, la versión Lite con adaptador bf16 obtiene WER 9,7 %, exact match 50,4 % y punct F1 0,831.
-
-Runtime de la app ZenVoice (`mlx-swift-lm`, pipeline propio de formateo, `eval_v500`), con el original v2.2 entre paréntesis: WER de salida 4,0 % (4,7 %), exact match 65,4 % (43,2 %), tiempo medio 0,23 s por dictado (0,27 s), memoria pico 1,39 GB (1,94 GB).
+En el pipeline propio de la aplicación (mlx-swift-lm): WER 4,0 %, exact match 65,4 %, 0,23 s de media por dictado y 1,39 GB de memoria pico. La versión Lite con adaptador bf16 obtiene WER 9,7 %, exact match 50,4 % y Punct F1 0,831 en las mismas 234 filas.
 
 ## Requisitos de hardware
 
-- VRAM/memoria unificada: 1,19 GB de pico en el benchmark con MLX; 1,39 GB en el pipeline de la app. El paquete en disco ocupa 1,05 GB (968 MB base + 70 MB adaptador).
-- Hardware objetivo: Apple Silicon. El modelo se publica en formato MLX y no incluye pesos GGUF ni safetensors para CUDA; el benchmark se ejecutó en un Apple M5.
-- GPU consumer: no aplica en el sentido habitual; encaja de sobra en cualquier Mac con Apple Silicon y en iPhone/iPad vía `mlx-swift-lm`. En GPU NVIDIA no hay ruta de despliegue documentada con los artefactos publicados.
-- Opciones de despliegue: `mlx-lm` en Python (`load(path, adapter_path=...)`) y `mlx-swift-lm` con `LoRAContainer` en apps macOS/iOS. vLLM, TGI, llama.cpp u Ollama no están soportados de forma nativa por el formato; requerirían conversión y fusión del adaptador, algo que el autor desaconseja explícitamente por la pérdida de calidad.
-- Rendimiento: 73 tok/s de decodificación en M5 con decodificación greedy; 0,23 s de media por dictado de extremo a extremo en el runtime de la app.
-- Nota operativa: el adaptador debe residir junto a la base y cargarse en tiempo de ejecución. Presupuestar el espacio y el tiempo de carga de ambos artefactos, no solo de la base.
+- VRAM/memoria unificada: 1,19 GB en pico con decodificación MLX; 1,39 GB en el pipeline de la aplicación.
+- GPU recomendadas: Apple Silicon (el autor reporta mediciones en Apple M5); no hay soporte documentado para CUDA.
+- Cabe holgadamente en cualquier Mac con Apple Silicon; no está pensado para GPU de consumo NVIDIA por su dependencia de MLX.
+- Despliegue: `mlx-lm` en Python y `mlx-swift-lm` en la aplicación; no se documenta soporte de vLLM, llama.cpp, Ollama ni TGI.
+- Rendimiento: 73 tok/s de decodificación en M5; 0,23 s de media por dictado en el pipeline de la app.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Cuantización | Contexto | WER (v500) | Exact match (v500) | Paquete | Licencia |
-|---|---|---|---|---|---|---|---|
-| Kanso Koi 1.0 (Lite) | 1,7B + LoRA | 4-bit + bf16 | No disponible | 5,5 % | 65,8 % | 1,05 GB | Apache-2.0 |
-| Kanso Koi 0.9 (v2.2 original) | 1,7B + LoRA | 6-bit + fp32 | No disponible | 6,7 % | 53,6 % | 1,55 GB | Apache-2.0 |
-| Kanso Satori 1.0 (v3, 4B) | 4B (tier superior) | No disponible | No disponible | 17,2 % (suite 234) | 41,0 % (suite 234) | No disponible | Apache-2.0 |
-| Qwen3-1.7B stock | 1,7B | 4-bit | No disponible | 11,0 % (suite 234) | 5,0 % (suite 234) | No disponible | Apache-2.0 |
+| Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| Kanso Koi 1.0 (Lite) | 1,7B | no disponible | Formateo de dictado, MLX | Apache 2.0 | Hugging Face |
+| Kanso Satori 1.0 | 4B (tier superior) | no disponible | Formateo de dictado | Apache 2.0 | Hugging Face |
+| Qwen3-1.7B-4bit base | 1,7B | no disponible | Generacion general | Apache 2.0 | Hugging Face |
+| Kanso Koi 0.9 (v2.2) | 1,7B | no disponible | Formateo de dictado, base 6-bit | Apache 2.0 | Hugging Face |
 
-La comparación relevante es contra el modelo base sin adaptador: el ajuste multiplica por diez el exact match en la suite de 234 filas (50,4 % frente a 5,0 %) y mejora el WER de 11,0 % a 9,9 %, a costa de introducir algo de alucinación (hasta 7,2 % frente al 0,9 % del stock). Frente a Satori 1.0, el tier de 4B, Koi es claramente superior en esta tarea pese a tener menos parámetros, lo que sugiere que el tamaño no compensa la especialización.
+Frente a la base Qwen3-1.7B sin ajustar, la diferencia es sustancial en la tarea objetivo: exact match del 50,4 % frente al 5,0 %, y Punct F1 de 0,832 frente a 0,634. Frente al tier de 4B (Satori), el modelo pequeño gana en esta tarea concreta (WER 9,9 % frente a 17,2 %), lo que sugiere que el ajuste específico pesa más que el tamano. No se dispone de comparaciones con modelos de limpieza de dictado de otros proveedores.
 
 ## Limitaciones y advertencias
 
-- Modelo de tarea única: no es un asistente conversacional ni un generador de propósito general. Usarlo fuera del formateo de dictado producirá resultados degradados.
-- Riesgo de alucinación medido de hasta el 7,2 % en la suite de 234 filas, frente al 0,9 % del Qwen3-1.7B sin ajustar. En producción conviene validar el texto de salida en flujos sensibles (importes, direcciones).
-- No se debe fusionar el adaptador en los pesos base: la model card documenta daño medible en la normalización de importes y en el borrado de muletillas.
-- Idiomas soportados no declarados. Las fuentes de entrenamiento descritas (Hansard, llamadas de resultados, Gutenberg, go_emotions) son corpus en inglés, por lo que el comportamiento en castellano no está documentado ni evaluado.
-- Longitud de contexto no especificada en la información disponible; para dictados largos habrá que trocear la entrada y no hay guía del autor sobre el punto de corte.
-- Dependencia de plataforma: MLX limita el despliegue a Apple Silicon. No hay artefactos GGUF ni ruta oficial para CUDA.
-- Sesgos: no documentados por el autor. El corpus incluye fuentes diversas (Hansard parlamentario, llamadas financieras, Gutenberg), lo que puede arrastrar sesgos de registro y de vocabulario de esos dominios.
-- Licencia Apache-2.0, permisiva para uso comercial, heredada de Qwen3-1.7B. Los datos de entrenamiento son de fuentes MIT, Apache-2.0, CC-BY-4.0 y CC0, con lista de atribuciones en el repositorio ZenVoice; conviene revisarla antes de un despliegue comercial.
-- Trazabilidad de nombres confusa: el repositorio ha cambiado de nombre y de organización varias veces (`zen-polish-…` → `Kanso-Koi-0.9` → `BuilderHelm/Kanso-Koi-1.0`). Fijar la revisión concreta en producción.
+- El adaptador no debe fusionarse en los pesos base: el autor documenta dano medible en la normalización de moneda y en la eliminación de muletillas.
+- Dependencia exclusiva de MLX y Apple Silicon; no hay ruta de despliegue documentada para CUDA ni para runtimes estándar de servidor.
+- Tasa de alucinación no nula: entre 0,0 % y 7,2 % según la suite, lo que exige revisión en contextos sensibles.
+- Modelo de tarea única: no es adecuado como asistente general pese a heredar la base Qwen3.
+- Idiomas soportados no documentados; el entrenamiento se apoya en fuentes en inglés (Hansard, DisfluencySpeech), por lo que el rendimiento en castellano es incierto.
+- Longitud de contexto no especificada; no se recomienda para entradas largas sin validación previa.
+- Licencia Apache 2.0 permite uso comercial, pero el autor no ofrece garantías sobre el comportamiento en dominios distintos del dictado.
+- El texto de la model card está truncado en la sección de entrenamiento, por lo que la composición completa del corpus no es verificable.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/BuilderHelm/Kanso-Koi-1.0
-- Versión anterior (v2.2 original, 6-bit): https://huggingface.co/BuilderHelm/Kanso-Koi-0.9
-- Tier superior de 4B: https://huggingface.co/BuilderHelm/Kanso-Satori-1.0
+- Hugging Face: https://huggingface.co/BuilderHelm/Kanso-Koi-1.0
 - Modelo base: https://huggingface.co/mlx-community/Qwen3-1.7B-4bit
-- Licencia del modelo base: https://huggingface.co/Qwen/Qwen3-1.7B/blob/main/LICENSE
-- Repositorio ZenVoice (pipeline de datos `training/data_v22/` y atribuciones): no disponible como enlace directo en la información proporcionada
+- Tier superior (4B): https://huggingface.co/BuilderHelm/Kanso-Satori-1.0
+- Version anterior (v2.2): https://huggingface.co/BuilderHelm/Kanso-Koi-0.9
+- Perfil del autor: https://huggingface.co/BuilderHelm
+- ZenVoice (producto): https://getzenvoice.com
+- Descarga de ZenVoice para Mac: https://getzenvoice.com/download
+- Licencia Qwen3-1.7B: https://huggingface.co/Qwen/Qwen3-1.7B/blob/main/LICENSE

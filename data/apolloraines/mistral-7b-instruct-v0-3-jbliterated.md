@@ -2,82 +2,97 @@
 
 ## Resumen
 
-Mistral-7B-Instruct-v0.3-Jbliterated es un fine-tune del modelo Mistral-7B-Instruct-v0.3 de Mistral AI, desarrollado por ApolloRaines. El modelo aplica una técnica denominada "Jbliteration" que elimina el comportamiento de rechazo (refusal) del modelo original, de modo que responde a cualquier consulta sin filtros de seguridad ni negativas. Está pensado para usuarios que necesitan un asistente conversacional sin restricciones temáticas, aunque esto conlleva riesgos importantes de uso indebido.
+Mistral-7B-Instruct-v0.3-Jbliterated es un ajuste por modificación directa de pesos (weight surgery) sobre el modelo Mistral-7B-Instruct-v0.3 de Mistral AI, publicado por el usuario ApolloRaines bajo el marco que el autor denomina "jBlaze" o "jbliteration". El objetivo declarado del modelo es eliminar el comportamiento de rechazo (refusal) del modelo base sin reentrenamiento por gradientes ni necesidad de system prompt, orientándolo a investigación de seguridad, análisis defensivo y herramientas de red teaming. Se distribuye con licencia Apache 2.0, heredada del modelo base.
 
-El modelo conserva la arquitectura transformer decoder-only de Mistral-7B, con 7.248 millones de parámetros y una ventana de contexto de 32.768 tokens (la misma que el modelo base). Se distribuye bajo licencia Apache 2.0 y soporta cinco idiomas europeos: inglés, francés, alemán, español e italiano. El repositorio incluye pesos en formato safetensors en bfloat16, con un tamaño total de 55,6 GB (probablemente debido a múltiples shards). No se han publicado benchmarks ni evaluaciones cuantitativas en la model card.
+El modelo conserva la arquitectura transformer decoder-only de Mistral 7B, con 7.248.023.552 parámetros totales (aproximadamente 7,25 mil millones) en precisión bfloat16, y un repositorio de 14,5 GB en formato safetensors. La model card indica que se han modificado todas las capas del transformer y que el modelo mantiene coherencia e instrucciones en los escenarios probados por el autor, con soporte declarado para inglés, francés, alemán, español e italiano.
 
-## Especificaciones tecnicas
+La relevancia del modelo es fundamentalmente metodológica y de seguridad: el autor lo presenta como una demostración de que el rechazo es una disposición aprendida superpuesta a la capacidad, y no una barrera infranqueable, además de servir como caso de estudio sobre los riesgos de los modelos open weights con guardarraíles reducidos. No es un modelo orientado a producción generalista, sino a evaluación de técnicas de edición de pesos y a análisis de robustez de sistemas de seguridad.
+
+## Especificaciones técnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (Mistral-7B) |
+| Arquitectura | Transformer decoder-only (basada en Mistral 7B) |
 | Parametros totales | 7.248.023.552 |
 | Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | 32.768 tokens (heredada del modelo base) |
-| Tipos de cuantizacion | no disponible (solo safetensors en bfloat16 en el repo) |
+| Longitud de contexto | no disponible en la información proporcionada (heredada del modelo base Mistral-7B-Instruct-v0.3) |
+| Tipos de cuantizacion | no disponible; pesos publicados en bfloat16 (el ecosistema admite cuantizaciones derivadas del formato safetensors, no confirmadas por el autor) |
 | Idiomas soportados | en, fr, de, es, it |
-| Licencia | Apache 2.0 |
+| Licencia | apache-2.0 |
 | Formato de pesos | safetensors (bfloat16) |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de Mistral-7B-Instruct-v0.3, un transformer autoregresivo con atención de ventana deslizante (sliding window attention) y 32 capas. La técnica Jbliteration, descrita por el autor como una "descomposición geométrica del subespacio de rechazo", modifica todas las capas transformer para eliminar las representaciones internas asociadas a las respuestas de negativa. Según la model card, la versión v2 mejora el pipeline de procesamiento y garantiza que el modelo trate todas las formulaciones de un mismo tema de forma coherente, sin "cumplimiento falso".
+El modelo parte de Mistral-7B-Instruct-v0.3, un transformer decoder-only de 7,25 mil millones de parámetros con atención de ventana deslizante y mecanismos propios de la familia Mistral 7B. Sobre esa base, el autor aplica un proceso de "cirugía neuronal de precisión" denominado jBlaze, que según la model card modifica todas las capas del transformer mediante edición directa de pesos, sin entrenamiento por gradientes ni RLHF/DPO adicional. La técnica se describe como una versión "precisa" de la abliteración estándar: en lugar de ablacionar una dirección de rechazo y arrastrar capacidad colateral, el método busca aislar la dirección de rechazo y preservar el resto del modelo intacto.
 
-No se especifican los datos de entrenamiento utilizados para el fine-tune, ni el número de tokens, ni si se emplearon técnicas como RLHF o DPO. El autor indica que la modificación se aplica a todas las capas y que el dtype base es bfloat16. No hay información adicional sobre el proceso de entrenamiento en la documentación disponible.
+El autor cita como evidencia de retención de capacidad una medición sobre un modelo distinto, Sharona (Qwen3.5-27B), donde MMLU pasó de un 76,84 % de referencia a un 77,89 % tras seis fases de cirugía y cuantización GPTQ W4A16, es decir, una ganancia de 1,05 puntos porcentuales. Esa cifra no corresponde a este modelo de 7B y el autor no publica MMLU ni otros benchmarks para Mistral-7B-Instruct-v0.3-Jbliterated. La model card no detalla el número de tokens de entrenamiento, la composición del dataset ni innovaciones de decodificación, ya que no hay entrenamiento involucrado en el ajuste.
 
 ## Capacidades
 
-- Generación de texto conversacional y de instrucciones en cinco idiomas (en, fr, de, es, it).
-- Respuesta a consultas sin filtros de seguridad ni rechazo temático (modelo "uncensored").
-- Seguimiento de instrucciones en formato chat mediante la plantilla de Mistral-7B-Instruct-v0.3.
-- Capacidad de razonamiento básico y generación de código, heredadas del modelo base.
-- No se documenta soporte explícito para tool calling, function calling, agentes ni modos de pensamiento extendido.
-- No incluye capacidades multimodales (solo texto).
+- Generación de texto conversacional multi-turno, heredada del modelo base Mistral-7B-Instruct-v0.3.
+- Razonamiento general, código y matemáticas a nivel propio de un modelo de 7B, sin benchmarks publicados para esta variante.
+- Comportamiento de rechazo reducido: el autor declara eliminación del refusal por edición de pesos, sin system prompt.
+- Instrucciones y coherencia mantenidas según las pruebas del autor en los escenarios evaluados.
+- Soporte multilingüe declarado en inglés, francés, alemán, español e italiano.
+- Soporte de tool calling y function calling: no disponible en la información proporcionada para esta variante.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
+- Capacidades de visión, audio o modo thinking: no disponibles.
 
 ## Casos de uso
 
-- Generación creativa sin restricciones: escritura de ficción, poesía o guiones que aborden temas tabú o controvertidos sin que el modelo se niegue a responder.
-- Investigación sobre alineación y seguridad: análisis del comportamiento de modelos "uncensored" y comparación con el modelo base para estudiar el efecto de la eliminación de rechazo.
-- Desarrollo de asistentes de rol (roleplay) en los que el usuario espera respuestas sin limitaciones temáticas.
-- Traducción y redacción multilingüe en entornos donde no se requieren filtros de contenido.
-- Pruebas de estrés de sistemas de moderación: evaluar cómo responde el modelo a prompts malintencionados para diseñar mejores filtros.
-- Experimentación académica sobre representaciones internas y subespacios de negativa en modelos de lenguaje.
+- Investigación de seguridad defensiva: análisis de exploits, malware y artefactos de intrusión, donde el modelo puede examinar código hostil sin bloquear la petición por rechazo, que es el escenario que el autor cita explícitamente como motivación.
+- Red teaming y evaluación de guardarraíles: uso del modelo como referencia de "reduced-refusal" para medir la robustez de filtros, clasificadores y políticas de seguridad en pipelines propios.
+- Estudio de técnicas de edición de pesos: comparación entre abliteración estándar y jbliteration para investigar cómo afecta la cirugía de pesos a la capacidad retenida y a la coherencia del modelo.
+- Reconstrucción de incidentes: procesamiento de grandes volúmenes de eventos y artefactos de ataque en un modelo autoalojado, siguiendo el caso de la brecha de Hugging Face de julio de 2026 citado en la model card, donde un modelo open weights permitió reconstruir más de 17.000 eventos en horas.
+- Evaluación de riesgo de modelos open weights: uso del modelo como caso práctico para documentar qué puede hacer un modelo de 7B con rechazo eliminado y qué controles de despliegue son necesarios.
+- Laboratorio de instrucciones y conversación: pruebas de seguimiento de instrucciones y coherencia en cinco idiomas europeos sobre una base Mistral 7B, en entornos controlados y no expuestos a usuarios finales.
+- Despliegue en hardware limitado: el autor ofrece DeepswapLLM para ejecutar el modelo en GPUs con menos VRAM que la necesaria en precisión completa, lo que permite pruebas en equipos de investigación modestos.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye métricas como MMLU, HumanEval o GSM8K, ni comparaciones con otros modelos. Se recomienda evaluar el modelo de forma independiente antes de usarlo en producción.
+No se han publicado resultados de benchmarks en la información disponible para este modelo. La única cifra citada en la model card (MMLU 77,89 % frente a 76,84 % de referencia) corresponde a Sharona (Qwen3.5-27B) y mide la técnica jBlaze, no a Mistral-7B-Instruct-v0.3-Jbliterated. El autor indica que la tasa de rechazo medida se documenta en la model card, pero el texto proporcionado no incluye la tabla concreta de refusal rate.
+
+| Benchmark | Este modelo | Referencia citada (Sharona, Qwen3.5-27B) |
+|---|---|---|
+| MMLU | no disponible | 77,89 % (frente a 76,84 % del modelo stock) |
+| Tasa de rechazo | no disponible en el texto proporcionado | no disponible |
+| HumanEval | no disponible | no disponible |
+| GSM8K | no disponible | no disponible |
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia en bfloat16: aproximadamente 14-16 GB (para 7B parámetros con pesos en bf16 y overhead de activaciones).
-- GPU recomendadas: NVIDIA RTX 3090/4090 (24 GB), A100 (40/80 GB), H100 (80 GB) o cualquier GPU con al menos 16 GB de VRAM.
-- En consumer GPU: cabe en una RTX 3090 o 4090 con cuantización (por ejemplo, 4 bits) o con el sistema DeepswapLLM que permite ejecutar el modelo en GPUs más pequeñas mediante streaming de capas a RAM/disco.
-- Opciones de despliegue: transformers con device_map="auto", vLLM (si se convierte a formato compatible), llama.cpp/Ollama (si se genera GGUF), o DeepswapLLM para entornos con poca VRAM.
-- Latencia y throughput: no disponibles; dependen del hardware y del backend utilizado.
+- VRAM estimada en bfloat16: aproximadamente 14,5 GB solo para pesos, más overhead de activaciones y KV cache; en la práctica se recomienda 16-24 GB para contexto moderado.
+- VRAM estimada con cuantización de 8 bits: en torno a 8 GB de pesos, más overhead.
+- VRAM estimada con cuantización de 4 bits: en torno a 4-5 GB de pesos, más overhead.
+- GPU recomendadas: A100 40/80 GB, H100 para serving de alta concurrencia; RTX 4090 (24 GB) y RTX 3090 (24 GB) para inferencia en bfloat16 de una sola instancia.
+- GPU de consumo: cabe en RTX 4090 y RTX 3090 en bfloat16; en GPUs de 8-12 GB requiere cuantización o el streaming por capas de DeepswapLLM propuesto por el autor.
+- Opciones de despliegue: transformers con `device_map="auto"` (ejemplo oficial de la model card); vLLM, llama.cpp, Ollama y TGI no están confirmados por el autor para esta variante, aunque el formato safetensors es compatible con el ecosistema transformers.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Notas |
-|---|---|---|---|---|
-| Mistral-7B-Instruct-v0.3 (base) | 7,24 B | 32.768 | Apache 2.0 | Modelo original con filtros de seguridad y rechazo |
-| ApolloRaines/Mistral-7B-Instruct-v0.3-Jbliterated | 7,24 B | 32.768 | Apache 2.0 | Fine-tune sin rechazo, sin benchmarks publicados |
-| Otros modelos "uncensored" (p. ej. Dolphin-Mistral) | no disponible | no disponible | no disponible | No se dispone de datos fiables en la informacion proporcionada |
+| Modelo | Parámetros | Contexto | Licencia | Enfoque | Disponibilidad |
+|---|---|---|---|---|---|
+| Mistral-7B-Instruct-v0.3-Jbliterated | 7,25 B | no disponible | Apache 2.0 | Mistral 7B con rechazo eliminado por edición de pesos | Hugging Face, 447 descargas, 2 likes |
+| mistralai/Mistral-7B-Instruct-v0.3 (base) | 7,25 B | no disponible en esta ficha | Apache 2.0 | Instruct generalista de Mistral AI | Hugging Face, ampliamente distribuido |
+| Otras variantes abliterated de Mistral 7B | ~7,25 B | variable | Apache 2.0 en la mayoría | Abliteración estándar de la dirección de rechazo | Hugging Face, múltiples autores |
 
-La comparativa se limita al modelo base, ya que no hay datos verificables de alternativas similares en la documentación consultada.
+La comparación directa de rendimiento con alternativas no está disponible porque el autor no publica benchmarks de esta variante. La diferencia principal frente al modelo base es el comportamiento de rechazo, no la arquitectura ni el tamaño.
 
 ## Limitaciones y advertencias
 
-- Al eliminar el rechazo, el modelo puede generar contenido dañino, ilegal o éticamente problemático si se le solicita. No debe usarse en aplicaciones orientadas al público sin supervisión humana.
-- No se han realizado evaluaciones de sesgos ni de seguridad; es probable que herede los sesgos del modelo base y que la eliminación del rechazo amplifique respuestas inapropiadas.
-- Riesgo de alucinación: al ser un fine-tune sin ajuste adicional, puede inventar hechos o datos con la misma frecuencia que el modelo base.
-- La documentación no especifica el proceso de entrenamiento ni los datos utilizados, lo que dificulta la reproducibilidad y la auditoría.
-- No hay garantía de que el modelo funcione correctamente en todos los idiomas declarados; la calidad puede variar.
-- La licencia Apache 2.0 permite uso comercial, pero el autor no ofrece soporte ni garantías. El uso indebido puede acarrear responsabilidades legales.
-- El repositorio no incluye cuantizaciones listas para usar; el usuario debe generarlas o usar herramientas externas.
+- Eliminación deliberada del comportamiento de rechazo: el modelo puede generar contenido dañino, y el propio autor advierte que "estos pesos pueden hacer tanto daño como bien".
+- Riesgo de alucinación: no evaluado ni documentado para esta variante; hereda el comportamiento del modelo base sin métricas publicadas.
+- Uso comercial: la licencia Apache 2.0 lo permite, pero el despliegue en producción exige controles de seguridad externos dado que el modelo no incorpora guardarraíles propios.
+- Sesgos: no documentados en la información proporcionada; se heredan los del modelo base Mistral-7B-Instruct-v0.3, sin evaluación específica.
+- Idiomas: solo se declaran en, fr, de, es e it; el rendimiento fuera de esos idiomas no está evaluado.
+- Contexto: la longitud de contexto no se especifica en la información proporcionada para esta variante.
+- Los modelos publicados por el autor se dejan "intencionadamente a fuerza parcial" según la model card, por lo que el comportamiento descargado no representa necesariamente la capacidad máxima de la técnica.
+- La evidencia de retención de capacidad se basa en un modelo distinto (Sharona, Qwen3.5-27B) y no en este modelo de 7B.
+- Modelo de demostración con muy baja adopción (447 descargas, 2 likes) y sin revisión independiente conocida.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/ApolloRaines/Mistral-7B-Instruct-v0.3-Jbliterated
-- Repositorio del modelo (archivos): https://huggingface.co/ApolloRaines/Mistral-7B-Instruct-v0.3-Jbliterated/tree/main
-- Documentación de Mistral-7B-Instruct-v0.3: https://docs.mistral.ai/models/mistral-7b-0-3
-- DeepswapLLM (herramienta de ejecución en GPU pequeñas): https://github.com/apolloraines/DeepswapLLM
+- Hugging Face: https://huggingface.co/ApolloRaines/Mistral-7B-Instruct-v0.3-Jbliterated
+- Modelo base: https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3
+- Repositorio DeepswapLLM: https://github.com/apolloraines/DeepswapLLM

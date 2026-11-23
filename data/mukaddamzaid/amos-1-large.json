@@ -49,31 +49,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "mukaddamzaid/amos-1-large - Hugging Face",
-      "url": "https://huggingface.co/mukaddamzaid/amos-1-large",
-      "snippet": "vor 2 Tagen ... Amos 1 large · Results · Use · Limits · Model tree for mukaddamzaid/amos-1-large · Collection including mukaddamzaid/amos-1-large ..."
-    },
-    {
-      "title": "mukaddamzaid/amos-1-mini - Hugging Face",
-      "url": "https://huggingface.co/mukaddamzaid/amos-1-mini",
-      "snippet": "vor 2 Tagen ... A 0.5B decision model. Give it a case (text, JSON or a photo) and a schema of typed questions; it answers every question in one forward pass, ..."
-    },
-    {
-      "title": "Models - Hugging Face",
-      "url": "https://huggingface.co/models?other=calibration",
-      "snippet": "mukaddamzaid/amos-1-large. Updated about 16 hours ago • 12 • 12 · mukaddamzaid ... sthanika-ai/Sieve-9B-v2. Text Classification • Updated about 12 hours ..."
-    },
-    {
-      "title": "JevBench · 7 systems join the regular draw - Benchmark Heaven",
-      "url": "https://benchmarkheaven.com/jev-models/v1.6.17",
-      "snippet": "vor 2 Tagen ... The most detailed cost–capability analysis in AI. Every model ... Hosted-API rows (Amos 1 large (Scira), Amos 1 medium (Scira), Sage ..."
-    },
-    {
-      "title": "tomaarsen (Tom Aarsen) – Likes - Hugging Face",
-      "url": "https://huggingface.co/tomaarsen/activity/likes",
-      "snippet": "AI & ML interests. NLP: text embeddings, information retrieval, named ... mukaddamzaid/amos-1-large. Updated 1 day ago • 48 • 13 · tardellirs/crivo-150m."
-    }
-  ]
+  "sources": []
 }

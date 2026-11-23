@@ -2,95 +2,97 @@
 
 ## Resumen
 
-OpenAmer-Watch es un ajuste fino mediante LoRA del modelo Qwen3-0.6B, desarrollado por el usuario openamer-max y publicado bajo licencia Apache-2.0. Se trata de la variante mas pequena de la familia OpenAmer, disenada para ejecutarse de forma local y offline en dispositivos de bajos recursos, sin necesidad de cuenta ni servicios en la nube. El modelo base cuenta con 596 millones de parametros y esta especializado en responder preguntas sobre el propio producto OpenAmer (instalacion, plataformas, costes, privacidad y licencia) en aleman y bosnio, con soporte adicional de croata, serbio e ingles.
+OpenAmer-Max-Watch es un modelo de generación de texto de 0,6B parámetros desarrollado por openamer-max, el escalón más pequeño de una familia de modelos diseñada para ejecutarse de forma local y offline. Se construye como un ajuste fino mediante LoRA (r=128) sobre Qwen3-0.6B, con el objetivo declarado de responder con precisión a preguntas sobre el propio producto OpenAmer (instalación, plataformas, costes, privacidad, licencia) y de mantener conversación en alemán y bosnio, además de inglés.
 
-La propuesta tecnica del autor es inusual y honesta: el modelo se entreno con un enfoque iterativo de "trabajo de datos guiado por errores" a lo largo de 15 etapas, generando ejemplos que cubren la habilidad subyacente de cada fallo (mantener el idioma, distinguir polaridad, seguir el formato) en lugar de memorizar las preguntas de evaluacion. El resultado es un modelo que alcanza el 100% en un conjunto congelado de 45 preguntas de producto, pero que rinde ligeramente por debajo de la base sin entrenar en tareas generales (12/20 frente a 13/20), un trade-off que el propio autor documenta de forma explicita.
+La relevancia del modelo no reside en su capacidad general, sino en su enfoque de ingeniería: el autor documenta de forma explícita que el ajuste se realizó con trabajo de datos dirigido por errores, y que el resultado de 45/45 en un conjunto congelado de preguntas de producto se obtiene a costa de un rendimiento ligeramente inferior al de la base sin entrenar en tareas generales (12/20 frente a 13/20). Es, por tanto, un caso interesante de ajuste estrecho y honesto sobre un modelo muy pequeño.
 
-Es relevante ahora porque ejemplifica una tendencia creciente hacia modelos ultra pequenos, especializados y "local-first", empaquetados en GGUF Q8_0 (639 MB) y distribuidos via Ollama, que priorizan el despliegue en dispositivos de consumo y la privacidad frente a la capacidad generalista.
+El modelo se distribuye en formato GGUF (Q8_0, 639 MB) y está pensado para ejecutarse en dispositivos de gama baja, incluidos teléfonos Android mediante Ollama. Su contexto máximo de entrenamiento es de 40.960 tokens, insuficiente para el agente OpenAmer completo, que requiere al menos 64.000.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (base Qwen3-0.6B) con adaptador LoRA |
+| Arquitectura | Transformer decoder-only (base Qwen3-0.6B) con ajuste LoRA |
 | Parametros totales | 596.049.920 |
 | Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | 40.960 tokens (maximo de entrenamiento); mayor acierto medido: 39.322 tokens (96%) |
-| Tipos de cuantizacion | Q8_0 (unico archivo publicado); no hay Q6 en esta etapa |
-| Idiomas soportados | aleman (de), bosnio (bs), croata (hr), serbio (sr), ingles (en) |
+| Longitud de contexto | 40.960 tokens (máximo de entrenamiento); mayor coincidencia medida 39.322 tokens (96 %) |
+| Tipos de cuantizacion | Q8_0 (única publicada en esta etapa); no hay Q6 en esta versión |
+| Idiomas soportados | de, bs, hr, sr, en (alemán, bosnio, croata, serbio, inglés) |
 | Licencia | Apache-2.0 |
 | Formato de pesos | GGUF (openamer-max-watch-q8.gguf, 639 MB); adaptador LoRA r=64 en repo separado |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de Qwen3-0.6B, un transformer decoder-only de 596 millones de parametros, sobre el que se aplica un ajuste fino con LoRA de rango 128 (161 millones de parametros entrenables). El entrenamiento se realizo en 15 etapas, con un reinicio a mitad del proceso que requirio r=128 y tres epocas para consolidar la capacidad objetivo. La estrategia de datos fue iterativa y guiada por errores: por cada caso fallido se generaron ejemplos que cubren la habilidad subyacente (mantener el idioma, distinguir polaridad, cumplir el formato), no la pregunta de evaluacion concreta.
+El modelo parte de Qwen3-0.6B, un transformer decoder-only de 0,6B parámetros, sobre el que se aplica un ajuste LoRA con r=128 y 161 millones de parámetros entrenables, distribuido en 15 etapas de entrenamiento. Según la model card, el proceso se reinició tras esas etapas con r=128 y tres épocas para consolidar el resultado final. El ajuste se centró en datos generados a partir de fallos: para cada caso fallido se crearon ejemplos que cubren la habilidad subyacente (mantener el idioma, distinguir polaridad, seguir formato) en lugar de replicar la pregunta de examen.
 
-El autor documenta de forma transparente el metodo de medicion de contexto: se coloca un hecho a 50% de profundidad, se reserva margen en la ventana y se usa temperatura 0, alcanzando un maximo de 39.322 tokens efectivos sobre los 40.960 de entrenamiento. No se mencionan innovaciones arquitectonicas adicionales (no hay decodificacion especulativa, atencion lineal ni modo de razonamiento extendido). El adaptador se publica por separado como LoRA r=64.
+No se especifican en la información disponible el número total de tokens de entrenamiento, la composición exacta del dataset ni si se emplearon técnicas de RLHF o DPO. El autor sí indica que el conjunto de 45 casos de producto funciona como protección contra regresiones y que la evaluación real de mejora se realiza sobre un conjunto fresco de 20 casos (A2), nunca visto en entrenamiento.
 
 ## Capacidades
 
-- Generacion de texto conversacional en aleman y bosnio, con tolerancia a texto sin diacriticos.
-- Respuesta a preguntas sobre el producto OpenAmer: instalacion, plataformas, costes, privacidad y licencia.
-- Seguimiento estricto de formato: respuestas de una sola palabra, solo el numero, etc.
-- Reconocimiento de limites: responde con honestidad cuando la respuesta no es conocida.
-- Soporte multilingue limitado a de, bs, hr, sr, en.
-- No soporta de forma fiable razonamiento multi-paso, matematicas mas alla de numeros pequenos, conocimiento general del mundo ni generacion de textos largos libres.
-- No se documenta soporte de tool calling, function calling, agentes ni vision.
+- Generación de texto conversacional en alemán, bosnio, croata, serbio e inglés.
+- Respuesta a preguntas sobre OpenAmer: instalación, plataformas, costes, privacidad y licencia.
+- Manejo de texto en bosnio sin diacríticos.
+- Respuestas concisas y seguimiento estricto de formato ("responde con una palabra", "solo el número").
+- Reconocimiento de honestidad ante preguntas cuya respuesta no se conoce.
+- No se documenta soporte de tool calling, function calling, agentes multi-paso, visión, audio ni modo de razonamiento extendido.
+- No se documentan capacidades de matemáticas o razonamiento multietapa más allá de operaciones con números pequeños.
 
 ## Casos de uso
 
-- Asistente de soporte de producto OpenAmer: el modelo responde preguntas frecuentes sobre instalacion, plataformas, costes y licencia con alta precision (45/45 en el conjunto de evaluacion), lo que lo hace adecuado como primera linea de atencion en una app o web.
-- Chatbot local en dispositivos Android: segun el autor, el agente puede ejecutarse en el espacio de usuario Debian del telefono con las mismas herramientas y skills, lo que permite asistencia offline sin enviar datos a la nube.
-- Clasificacion y extraccion con formato estricto: su capacidad de responder "solo la numero" o "una palabra" lo hace util para tareas de etiquetado, extraccion de campos y normalizacion de respuestas en pipelines de datos.
-- Atencion al cliente en aleman y bosnio: cubre conversaciones multi-turno en ambos idiomas (y croata/serbio), con contexto de hasta 40.960 tokens, suficiente para hilos de soporte tipicos.
-- Filtro de privacidad y cumplimiento: al ejecutarse 100% en local, encaja en escenarios donde no se permite enviar consultas a APIs externas (sector publico, sanidad, entornos regulados).
-- Prototipado rapido y demos: con 639 MB en Q8_0 y un solo comando de Ollama, permite validar flujos conversacionales en portatiles y equipos sin GPU dedicada.
-- Base para ajustes adicionales: al ser Apache-2.0 y publicar el adaptador LoRA por separado, sirve como punto de partida para especializaciones verticales de bajo coste.
+- Asistente de soporte de producto OpenAmer: el modelo responde preguntas frecuentes sobre instalación, plataformas y licencia con alta precisión en el conjunto de evaluación congelado (45/45), adecuado para un chatbot de FAQ embebido en la web o en la app.
+- Chat local en dispositivos de gama baja: con 639 MB en Q8_0 y ~1,5 GB de RAM, puede ejecutarse en teléfonos Android mediante Ollama, ofreciendo conversación offline sin cuenta ni nube.
+- Atención en alemán y bosnio para usuarios de la región: cubre ambos idiomas y variantes sin diacríticos, útil para soporte multilingüe en mercados de Europa central y los Balcanes.
+- Generación de respuestas con formato controlado: su capacidad de seguir instrucciones del tipo "responde con una palabra" o "solo la cifra" lo hace útil en pipelines que necesitan salidas estructuradas simples (clasificación, extracción de campos).
+- Filtro de honestidad y abstención: puede emplearse como componente que detecta preguntas sin respuesta conocida y deriva a un humano o a otra fuente, reduciendo alucinaciones en dominios acotados.
+- Prototipado y pruebas de integración: al ser un GGUF pequeño con licencia Apache-2.0, sirve para validar pipelines de inferencia local (Ollama, llama.cpp) antes de escalar a modelos mayores de la familia.
+- Uso educativo y de investigación sobre ajuste fino: el autor documenta el proceso de entrenamiento por etapas y la evaluación con conjuntos frescos, lo que lo convierte en un caso de estudio reproducible de LoRA sobre modelos pequeños.
 
 ## Benchmarks y rendimiento
 
-Datos publicados por el autor en la model card:
-
-| Evaluacion | Esta version (etapa 24) | Version anterior (etapa 9) | Qwen3-0.6B sin entrenar |
+| Evaluación | Esta versión (etapa 24) | Versión anterior (etapa 9) | Qwen3-0.6B sin entrenar |
 |---|---|---|---|
-| Preguntas de producto (45 casos congelados) | 45/45 (100,0%) | 37/45 (82,2%) | 23/45 (51,1%) |
-| Tareas generales (20 casos frescos, nunca vistos) | 12/20 (60%) | 10/20 (50%) | 13/20 (65%) |
+| Preguntas de producto (45 casos congelados) | 45/45 (100,0 %) | 37/45 (82,2 %) | 23/45 (51,1 %) |
+| Tareas generales (20 casos frescos, A2) | 12/20 (60 %) | 10/20 (50 %) | 13/20 (65 %) |
 
-No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) en la informacion disponible.
+No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: aproximadamente 1 GB para el archivo Q8_0 de 639 MB, mas overhead de contexto. Cabe holgadamente en cualquier GPU de consumo.
-- GPU recomendadas: no requiere GPU dedicada; funciona en CPU. Cualquier GPU consumer (GTX 1050 en adelante, RTX 3060/4060, etc.) ofrece margen sobrado.
-- Cabe en GPU consumer: si, en todas las gamas actuales, e incluso en moviles de gama media mediante CPU.
-- Opciones de despliegue: Ollama (`ollama run amersacirovic/openamer-max-watch`), llama.cpp por ser formato GGUF, y cualquier runtime compatible con GGUF. No se documenta soporte de vLLM ni TGI para este formato.
-- Latencia y throughput: no disponibles en la informacion proporcionada.
-- Contexto: 40.960 tokens maximos; insuficiente para el agente OpenAmer, que exige al menos 64.000 tokens.
+- VRAM/RAM estimada para inferencia: ~1,5 GB de RAM en Q8_0 (639 MB de pesos).
+- GPU recomendadas: no se especifican; el modelo está pensado para CPU y ejecución local en dispositivos de gama baja.
+- Cabe en cualquier GPU consumer (RTX 3060, RTX 4090, etc.) e incluso en teléfonos Android mediante Ollama.
+- Opciones de despliegue: Ollama (`ollama run amersacirovic/openamer-max-watch`), llama.cpp y cualquier runtime compatible con GGUF. No se documenta soporte explícito para vLLM o TGI.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+| Modelo | Parámetros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| OpenAmer-Watch | 596 M | 40.960 | Apache-2.0 | GGUF Q8_0 | Especializado en producto OpenAmer; 45/45 en su set; 12/20 en general |
-| Qwen3-0.6B (base) | 596 M | no disponible | Apache-2.0 | safetensors, GGUF | Base sin ajustar; 23/45 en producto, 13/20 en general |
-| Alternativas de ~0,5B de otros proveedores | no disponible | no disponible | no disponible | no disponible | No se dispone de datos comparables en la informacion proporcionada |
+| OpenAmer-Max-Watch | 0,6B | 40.960 | Apache-2.0 | GGUF Q8_0 | Ajuste LoRA especializado en producto OpenAmer; 45/45 en conjunto congelado, 12/20 en general |
+| Qwen3-0.6B (base) | 0,6B | no disponible en la información | Apache-2.0 | safetensors, GGUF | 23/45 en producto, 13/20 en general; mejor base general |
+| OpenAmer-Max-Phone | 3,1B | no disponible | Apache-2.0 (según familia) | GGUF | 43/45 en el mismo conjunto; mayor tamaño y RAM (~3,5 GB) |
+| OpenAmer-Max-Tab | 7,6B | no disponible | Apache-2.0 (según familia) | GGUF | 42/45; ~6 GB de RAM |
 
 ## Limitaciones y advertencias
 
-- Riesgo de sobreajuste al dominio: el 100% en el set de 45 preguntas es un conjunto congelado que actua como proteccion contra regresiones; el rendimiento real en casos frescos es 12/20 (60%), un punto por debajo de la base sin entrenar.
-- Razonamiento limitado: no es fiable en razonamiento multi-paso ni en matematicas mas alla de numeros pequenos.
-- Conocimiento general escaso: a 0,6B no cabe esperar conocimiento del mundo fiable; puede alucinar en preguntas fuera de su dominio.
-- Contexto insuficiente para el agente OpenAmer: el agente exige al menos 64.000 tokens y esta version solo soporta 40.960.
-- Cobertura idiomatica limitada: aunque declara hr y sr, el entrenamiento se centra en de y bs; el rendimiento en croata y serbio no esta medido.
-- Un solo archivo publicado: solo existe Q8_0; no hay Q4, Q5 ni Q6 de esta etapa, lo que limita el despliegue en entornos con restricciones extremas de memoria.
-- Licencia Apache-2.0: permite uso comercial, pero el autor no ofrece garantias ni soporte; conviene validar el comportamiento en el dominio propio antes de produccion.
-- Datos de benchmarks estandar ausentes: no hay MMLU, HumanEval ni GSM8K, por lo que la comparacion con otros modelos es limitada.
+- Razonamiento multietapa y matemáticas limitadas a números pequeños; no apto para tareas de cálculo complejo.
+- Conocimiento del mundo poco fiable por su tamaño (0,6B); el autor lo reconoce explícitamente.
+- No genera textos largos libres con calidad.
+- Contexto máximo de 40.960 tokens, insuficiente para el agente OpenAmer (requiere 64.000); no puede ejecutar ese agente.
+- Rendimiento general ligeramente inferior a la base sin entrenar (12/20 frente a 13/20), como coste del ajuste especializado.
+- Riesgo de alucinación en preguntas fuera del dominio de producto; el modelo incorpora cierta capacidad de abstención, pero no es garantía.
+- Sesgos conocidos: no documentados en la información disponible.
+- Licencia Apache-2.0 permite uso comercial, pero no se documentan restricciones adicionales ni garantías.
+- Solo se publica Q8_0 en esta etapa; no hay Q6 ni otras cuantizaciones de esta versión.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/openamer-max/openamer-max-watch
-- Adaptador LoRA (r=64): https://huggingface.co/openamer-max/openamer-max-watch-adapter
-- Repositorio del agente: https://github.com/openamer-max/openamer
-- Informe de medicion de contexto: https://github.com/openamer-max/models/blob/main/docs/KONTEXT-MESSUNG.md
-- Version Android: https://openamer-max.github.io/android.html
-- Enlace de donaciones (PayPal): https://www.paypal.com/qrcodes/managed/bfb5b6b5-c04c-4836-af60-987dff8cff61
+- Adaptador LoRA: https://huggingface.co/openamer-max/openamer-max-watch-adapter
+- Web del proyecto: https://openamer-max.github.io
+- Página de dispositivos (Gerätepass): https://openamer-max.github.io/geraetepass/
+- Página Android: https://openamer-max.github.io/android.html
+- Código fuente: https://github.com/openamer-max/openamer
+- Informe de medición de contexto: https://github.com/openamer-max/models/blob/main/docs/KONTEXT-MESSUNG.md
+- API de traducción (138 idiomas): https://openamer-max-openamer-translate.hf.space/health
+- Donaciones: https://www.paypal.com/qrcodes/p2pqrc/BVZD4HRJ9G6YG

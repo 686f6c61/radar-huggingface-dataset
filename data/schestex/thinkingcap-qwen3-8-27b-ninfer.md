@@ -2,93 +2,118 @@
 
 ## Resumen
 
-ThinkingCap-Qwen3.8-27B-NInfer es un artefacto de inferencia publicado por el usuario Schestex a partir del modelo bottlecapai/ThinkingCap-Qwen3.8-27B, una variante orientada a razonamiento del supuesto Qwen3.8-27B con 27.000 millones de parámetros. El repositorio no contiene pesos en formato Transformers, GGUF ni safetensors, sino un único artefacto con extensión `.ninfer` concebido para ejecutarse en el runtime propietario NInfer sobre GPU NVIDIA Blackwell.
+ThinkingCap-Qwen3.8-27B-NInfer es una conversión nativa para el runtime NInfer del modelo ThinkingCap Qwen3.8-27B de BottleCap AI, publicada por el usuario Schestex bajo la etiqueta CodeDense. Se distribuye como un artefacto de pesos en formato `.ninfer` con cuantización mixta (Q8 G32 en las matrices de vocabulario y cabeza de lenguaje, no Q8 en su totalidad), un vocabulario público compacto de 122.919 tokens respaldado por 123.136 filas físicas, y una clasificación de vocabulario de propuestas Indexed88 para decodificación especulativa MTP5. El objetivo declarado es servir flujos de trabajo de código y orientados a agentes en inglés y alemán.
 
-Su relevancia es acotada pero concreta: ilustra la tendencia a distribuir modelos empaquetados en formatos nativos de runtime en lugar de checkpoints portables, con soporte explícito de Multi-Token Prediction (MTP) para decodificación especulativa y con requisito de CUDA 13 o superior. El repositorio ocupa 17,1 GB y se publica bajo licencia Apache 2.0, con soporte únicamente de inglés.
+La relevancia de esta ficha no reside en un nuevo modelo base, sino en la ingeniería de despliegue: el autor documenta una reducción progresiva del vocabulario (de 131.206 a 122.919 tokens públicos) acompañada de una mejora medida del throughput de decodificación MTP5 del 13,19 %, y una tasa de aceptación de borradores del 60,02 % en una prueba con prompts de código. Es, por tanto, un artefacto de optimización de inferencia, no un fine-tune de dominio ni una mejora de capacidades.
 
-La información publicada es mínima: no hay pipeline declarado, no hay benchmarks, no se detalla la composición del dataset de entrenamiento ni el número de tokens, y no se especifica la longitud máxima de contexto (el único dato operativo es el ejemplo de CLI, que usa `--max-context 32768`). A fecha de la consulta el repositorio acumula 0 descargas y 1 like, por lo que se trata de una publicación reciente y sin validación comunitaria.
+El modelo base es un transformer denso de 27B parámetros de la familia Qwen3.8. La licencia es Polyform Small Business plus Personal Use Grant, con restricciones relevantes para uso comercial. El repositorio ocupa 214,7 GB y acumula 523 descargas y 5 likes en el momento de la consulta.
 
 ## Especificaciones técnicas
 
 | Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only orientado a razonamiento (variante ThinkingCap sobre Qwen3.8-27B); no se detalla en la información disponible si usa atención completa, híbrida o mezcla de expertos |
-| Parámetros totales | 27.000 millones (27B), según la denominación del modelo |
-| Parámetros activos | No aplica / no disponible: la información no indica que sea un modelo MoE |
-| Longitud de contexto | "Long-context capable" según el autor; el ejemplo de CLI usa `--max-context 32768`. Máximo no especificado |
-| Tipos de cuantización | No disponible; se distribuye un artefacto `.ninfer` ya empaquetado (tamaño de repositorio: 17,1 GB) |
-| Idiomas soportados | Inglés (`en`) |
-| Licencia | Apache 2.0 (el autor indica que se heredan los términos del modelo original ThinkingCap) |
-| Formato de pesos | `.ninfer` (artefacto nativo del runtime NInfer). No es un checkpoint Transformers, ni GGUF, ni safetensors |
+| Arquitectura | Transformer denso (familia Qwen3.8); soporte de decodificación especulativa MTP5 en el runtime NInfer |
+| Parámetros totales | 27B (según el nombre del modelo base; no se detalla en la model card) |
+| Parámetros activos | No aplica (modelo denso, no MoE) |
+| Longitud de contexto | No disponible |
+| Tipos de cuantización | Cuantización mixta NInfer; Q8 G32 en embedding y cabeza de lenguaje (no es un artefacto totalmente Q8) |
+| Idiomas soportados | Inglés (británico y americano) y alemán como foco objetivo; la model card advierte que no es una garantía de soporte exclusivo |
+| Licencia | Polyform Small Business plus Personal Use Grant (`license: other`) |
+| Formato de pesos | `.ninfer` (no es Transformers, ni Safetensors, ni GGUF); requiere runtime NInfer compatible con vocabulario compacto, forma Q8, MTP5 e Indexed88 |
+| Tamaño del artefacto | 15.687.110.660 bytes (~14,61 GiB) |
+| Vocabulario público | 122.919 tokens (123.136 filas físicas con padding) |
+| Ranking de propuestas | `indexed88-122919-r2-88064.i32le`, 88.064 IDs seleccionados |
+| SHA-256 del modelo | `064241b4949628bf2cf2e12152648fede602d70c629d8f2016c3281217bc221d` |
+| SHA-256 del ranking | `1aa39fc62e5db6fb9e915e0ae2593fa5fa2b11e1793c86aca94a87f5a7f7270b` |
+| Release | `codedense-compact122919-q8-en-de-v1.0.0` |
+| Runtime de referencia | `Xtravaganz/ninfer`, fijado por etiqueta de release de GitHub |
 
 ## Arquitectura y entrenamiento
 
-La model card no describe la arquitectura interna del modelo base más allá de identificarlo como una "variante centrada en razonamiento" de Qwen3.8-27B. Se desconoce si se trata de un transformer denso de atención completa, de una arquitectura híbrida con atención lineal o de un MoE, así como el número de capas, cabezas de atención o el uso de GQA. La etiqueta "ThinkingCap" sugiere un ajuste orientado a modos de razonamiento extendido, pero no se documenta el proceso de entrenamiento (número de tokens, composición del corpus, uso de SFT, RLHF o DPO).
+El modelo base es un transformer denso de 27B parámetros de la familia Qwen3.8, sobre el que BottleCap AI construyó ThinkingCap. Esta publicación no entrena el modelo: aplica una conversión de formato y una compresión de vocabulario. El vocabulario público se reduce a 122.919 IDs sobre una matriz física de 123.136 filas, y las matrices de vocabulario y de la cabeza de lenguaje se almacenan en Q8 con granularidad de grupo 32. El resto de pesos usa cuantización mixta propia del formato NInfer.
 
-Lo único técnicamente verificable es el empaquetado: el artefacto `.ninfer` es un formato nativo del runtime NInfer, y el modelo declara soporte de Multi-Token Prediction (MTP), empleado en el ejemplo de invocación mediante `--spec mtp --draft-tokens 3`. Esto implica decodificación especulativa con un cabezal de predicción de varios tokens en lugar de un modelo borrador separado. El requisito de CUDA 13 o superior y la recomendación de GPU Blackwell indican que el artefacto aprovecha rutas de cómputo específicas de esa generación de hardware.
+La innovación central es la decodificación especulativa MTP5 (multi-token prediction con ventana de borrador de hasta cinco tokens) apoyada en una clasificación Indexed88 que restringe el vocabulario de propuestas a 88.064 IDs. Esta clasificación se distribuye como artefacto compañero separado y debe montarse en la ruta que exija el runtime, configurada mediante `NINFER_MTP_INDEXED_RANKING`. El autor documenta una evolución por generaciones (Compact131206-v3, Compact129430-v4, Compact129430-v5-r2, Compact122919-r615) en la que la reducción del 6,32 % del vocabulario público se acompaña de una mejora del 13,19 % en throughput de decodificación MTP5. No se especifican en la información disponible el número de tokens de entrenamiento, la composición del dataset ni si hubo RLHF o DPO.
 
 ## Capacidades
 
-- Generación de texto en inglés con orientación a razonamiento ("thinking"), según la descripción del modelo base.
-- Ventana de contexto larga: el autor la declara como capacidad, con 32.768 tokens configurados en el ejemplo oficial.
-- Decodificación especulativa mediante MTP, con número de tokens borrador configurable (`--draft-tokens`).
-- Control de longitud de salida en inferencia (`--max-new`, 1024 tokens en el ejemplo).
-- Ejecución local en GPU NVIDIA Blackwell con el runtime NInfer.
-- Soporte de tool calling / function calling: no documentado en la información disponible.
-- Soporte de agentes y razonamiento multi-paso: no documentado explícitamente, aunque el enfoque de razonamiento del modelo base es compatible con ese uso.
-- Capacidades multilingües: no; el repositorio declara únicamente inglés.
-- Capacidades de visión, audio o multimodalidad: no disponibles.
+- Generación de texto conversacional y orientada a código, heredadas del modelo base ThinkingCap Qwen3.8-27B.
+- Flujos de trabajo de código en inglés y alemán, según el foco declarado `en-de`.
+- Decodificación especulativa MTP5 con vocabulario de propuestas Indexed88, que acelera la generación en el runtime NInfer.
+- Verificación de integridad de artefactos mediante SHA-256 y FNV64 documentados.
+- Despliegue en contenedor Docker con imagen de runtime verificada localmente.
+- Soporte de tool calling / function calling: no disponible en la información proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
+- Capacidades de visión o audio: no disponibles en la información proporcionada.
+- Modo de razonamiento explícito (thinking mode): no disponible en la información proporcionada.
 
 ## Casos de uso
 
-- Asistente de razonamiento en estación de trabajo local: el modelo está pensado para "high-quality assistant workloads" y se ejecuta localmente sobre GPU Blackwell, lo que permite desplegarlo en entornos con datos sensibles que no pueden salir a la nube.
-- Análisis de documentos extensos en inglés: con 32.768 tokens de contexto configurados en el ejemplo oficial, permite procesar informes, contratos o documentación técnica larga en una sola pasada.
-- Generación de código en entornos aislados (air-gapped): al ejecutarse con el runtime NInfer sobre hardware local, es viable en equipos de desarrollo sin conectividad externa.
-- Investigación en decodificación especulativa: el soporte de MTP con `--spec mtp` y `--draft-tokens` lo convierte en un banco de pruebas para medir la ganancia de latencia de la predicción multi-token frente a la decodificación autorregresiva estándar.
-- Despliegue en clúster HPC con Blackwell: al requerir CUDA 13+ y recomendar hardware Blackwell, encaja en nodos de cómputo actualizados que ya dispongan del runtime NInfer.
-- Evaluación comparativa de formatos de distribución: sirve para contrastar el rendimiento de un artefacto nativo de runtime frente a alternativas portables (GGUF, safetensors) del mismo modelo base.
-- Chat multi-turno en inglés para tareas de productividad: resúmenes, reescritura y respuesta a preguntas sobre texto, siempre dentro del dominio lingüístico declarado.
+- Generación de código asistida en inglés y alemán: el modelo puede integrarse en editores o pipelines de revisión para autocompletar y explicar código, aprovechando el foco bilingüe declarado y el vocabulario compacto orientado a código.
+- Autocompletado de baja latencia en IDE: la decodificación especulativa MTP5 con Indexed88 eleva el throughput de decodificación medido por encima de 100 tok/s en las pruebas del autor, lo que resulta adecuado para sugerencias en línea.
+- Servicio de inferencia autoalojado con runtime NInfer: equipos que ya operan NInfer pueden desplegar el artefacto en Docker y verificar su integridad con los hashes publicados antes de servir tráfico.
+- Evaluación de técnicas de compresión de vocabulario: investigadores pueden reproducir la comparativa entre generaciones Compact131206, Compact129430 y Compact122919 para medir el impacto del vocabulario en la aceptación de borradores.
+- Procesamiento de documentación técnica bilingüe inglés-alemán: resúmenes y transformación de textos técnicos en ambos idiomas, con la advertencia de que el soporte no está garantizado más allá del foco declarado.
+- Investigación sobre decodificación especulativa: el par de artefactos (modelo más ranking Indexed88) permite experimentar con ventanas de borrador MTP0 a MTP5 y medir tasas de aceptación bajo distintas cargas.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La model card no incluye cifras de MMLU, HumanEval, GSM8K ni de ninguna otra evaluación, ni datos de latencia o throughput. Tampoco se documentan mediciones de la ganancia de velocidad asociada al modo MTP.
+Rendimiento de decodificación MTP0–MTP5 sobre GPU1 a 145 W, con CUDA Graph y un corpus de 65.536 tokens:
+
+| Ventana de borrador | Decode (tok/s) | Aceleración vs. MTP0 | Aceptación de borradores |
+|---|---:|---:|---:|
+| MTP0 | 33,68 | 1,00× | No aplica |
+| MTP1 | 48,45 | 1,44× | 59,38 % |
+| MTP2 | 54,31 | 1,61× | 50,79 % |
+| MTP3 | 54,16 | 1,61× | 41,64 % |
+| MTP4 | 50,40 | 1,50× | 28,24 % |
+| MTP5 | 45,64 | 1,35× | 21,95 % |
+
+Evolución del throughput MTP5 por generación de vocabulario compacto:
+
+| Versión | Vocabulario público | Decode (tok/s) | Mejora vs. anterior |
+|---|---:|---:|---:|
+| Compact131206-v3 | 131.206 | 89,85 | Línea base |
+| Compact129430-v4 | 129.430 | 96,85 | +7,79 % |
+| Compact129430-v5-r2 | 129.430 | 99,75 | +2,99 % |
+| Compact122919-r615 | 122.919 | 101,70 | +1,95 % |
+
+Observación con Compact122919 e Indexed88 sobre prompts de código: 1.916 tokens borrador, 1.150 aceptados, aceptación del 60,02 %. El autor advierte que estos resultados y los históricos se obtuvieron bajo cargas distintas y no constituyen una comparación controlada. No se han publicado resultados de benchmarks de calidad (MMLU, HumanEval, GSM8K u otros) en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: el repositorio ocupa 17,1 GB, por lo que los pesos del artefacto requieren al menos ese espacio, más el caché KV y las activaciones. No se especifica la precisión de los pesos empaquetados.
-- GPU recomendadas: NVIDIA Blackwell (arquitectura exigida de forma implícita por el requisito de CUDA 13+ y la recomendación del autor). Ejemplos de esa generación: RTX 5090 (32 GB), RTX PRO 6000 Blackwell (96 GB), B200 (192 GB).
-- GPU compatibles por VRAM: con 17,1 GB de pesos, una GPU de 24 GB (RTX 3090, RTX 4090) es el mínimo práctico, pero con margen muy reducido para caché KV. Una GPU de 32 GB ofrece holgura moderada; 48 GB o más (A6000, L40S) permiten contextos largos sin penalización. El requisito de CUDA 13 puede excluir generaciones anteriores al margen de la VRAM.
-- ¿Cabe en GPU de consumo? Sí, en principio, en modelos con 24 GB o más de VRAM, siempre que el runtime NInfer y CUDA 13 estén disponibles para esa GPU.
-- Opciones de despliegue: exclusivamente el runtime NInfer (`./build/apps/ninfer`). No hay soporte declarado para vLLM, llama.cpp, Ollama, TGI ni transformers.
-- Latencia y throughput: no disponibles.
+- VRAM estimada: el artefacto pesa ~14,61 GiB en cuantización mixta Q8; se requiere al menos esa cifra más el espacio de estados de atención, caché KV y buffers del runtime. La memoria total necesaria no está especificada.
+- GPU recomendadas: no disponibles en la información proporcionada. El benchmark se ejecutó en una GPU identificada solo como "GPU1" a 145 W, sin modelo especificado.
+- GPU de consumo: el tamaño del artefacto (~14,61 GiB) es compatible en términos de capacidad con GPU de 24 GB como la RTX 4090, pero el runtime NInfer y su compatibilidad con CUDA Graph y MTP5 en hardware de consumo no están documentados.
+- Opciones de despliegue: exclusivamente runtime NInfer (`Xtravaganz/ninfer`, fijado por etiqueta de release) en contenedor Docker. No es compatible con vLLM, llama.cpp, Ollama ni TGI, ya que el formato `.ninfer` no es GGUF ni Safetensors.
+- Latencia y throughput: 101,70 tok/s de decodificación MTP5 en la generación Compact122919-r615; máximo histórico medido de 54,31 tok/s en MTP2 con la configuración original.
+- Configuración del runtime: la clasificación Indexed88 debe montarse en la ruta requerida y configurarse con `NINFER_MTP_INDEXED_RANKING` cuando corresponda.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Formato | Licencia | Notas |
+| Modelo | Parámetros | Contexto | Formato | Licencia | Despliegue |
 |---|---|---|---|---|---|
-| ThinkingCap-Qwen3.8-27B-NInfer (este) | 27B | Larga (32.768 en el ejemplo de CLI) | `.ninfer` | Apache 2.0 | Requiere runtime NInfer y CUDA 13+; solo inglés |
-| bottlecapai/ThinkingCap-Qwen3.8-27B (modelo base) | 27B | No disponible | No disponible (checkpoint Transformers, según se deduce del aviso del autor) | No disponible | Punto de partida del artefacto; portable a otros runtimes al no estar empaquetado |
-| Alternativas generalistas de ~27-32B | No disponible | No disponible | No disponible | No disponible | No se dispone de datos verificados en la información proporcionada para establecer una comparación rigurosa |
+| ThinkingCap-Qwen3.8-27B-NInfer (esta ficha) | 27B denso | No disponible | `.ninfer` (Q8 mixto) | Polyform Small Business + Personal Use | Runtime NInfer únicamente |
+| bottlecapai/ThinkingCap-Qwen3.8-27B (base) | 27B denso | No disponible | No disponible | Polyform Small Business + Personal Use | Ecosistema estándar del modelo base |
+| Alternativas de la familia Qwen3.8 de 27B | 27B denso | No disponible | Safetensors, GGUF (según distribución) | No disponible | vLLM, llama.cpp, TGI, Ollama |
 
-No se dispone de información suficiente para comparar rendimiento, contexto o licencia con alternativas de la misma categoría. Cualquier comparación numérica sería especulativa.
+No se dispone de datos de benchmarks de calidad que permitan comparar el rendimiento de esta conversión con el modelo base ni con alternativas de la misma categoría.
 
 ## Limitaciones y advertencias
 
-- Idioma: el repositorio declara soporte exclusivo de inglés; no hay evidencia de capacidades en castellano.
-- Ausencia total de benchmarks: no se puede verificar la calidad del modelo ni compararlo objetivamente con alternativas.
-- Formato no portable: el artefacto `.ninfer` solo funciona con el runtime NInfer. No es cargable en transformers, vLLM, llama.cpp, Ollama ni TGI, lo que impide migrar la inferencia a infraestructura estándar.
-- Dependencia de hardware reciente: el requisito de CUDA 13+ y la recomendación de GPU Blackwell limitan su uso a equipos de última generación.
-- Sin validación comunitaria: 0 descargas y 1 like en el momento de la consulta. Es un artefacto recién publicado y sin verificación independiente.
-- Trazabilidad de licencia: el autor remite a los términos del modelo original ThinkingCap en lugar de fijar los suyos, aunque el repositorio declara Apache 2.0. Conviene verificar la licencia del modelo base antes de un uso comercial.
-- Riesgo de alucinación: inherente a los modelos generativos; no se documentan evaluaciones de fidelidad ni tasas de error.
-- Sesgos: no se publica información sobre composición del dataset, filtrado ni mitigación de sesgos.
-- Máximo de contexto no confirmado: solo se conoce el valor usado en el ejemplo (32.768 tokens); el límite real del modelo no está documentado.
-- Origen de los datos: la búsqueda web realizada no devolvió resultados relevantes sobre este modelo; los enlaces obtenidos eran contenido no relacionado y se han descartado.
+- El artefacto `.ninfer` no es un checkpoint de Transformers, ni Safetensors, ni GGUF: no puede cargarse en vLLM, llama.cpp, Ollama ni TGI.
+- Una compilación arbitraria de NInfer no cargará necesariamente este modelo; se requiere soporte de vocabulario compacto, forma Q8, MTP5 e Indexed88.
+- La etiqueta Docker `ninfer-thinkingcap:compact122919-q8-codedense-en-de-v1` es local; no se distribuye públicamente salvo que el publicador la suba a un registro.
+- El autor declara explícitamente que esta release no es un fine-tune de código a nivel de modelo, no garantiza paridad de precisión con el modelo base y no elimina dominios mediante entrenamiento.
+- `en-de` indica un foco de idioma objetivo, no una garantía de que solo se soporten inglés y alemán.
+- La licencia Polyform Small Business plus Personal Use Grant impone restricciones al uso comercial por parte de empresas que superen el umbral de pequeña empresa; debe revisarse antes de cualquier despliegue en producción.
+- Los resultados de aceptación de borradores proceden de cargas de trabajo distintas y no constituyen una comparación controlada.
+- Riesgo de alucinación y sesgos: no documentados en la información disponible; deben evaluarse sobre el modelo base.
+- La longitud de contexto no está especificada, lo que impide planificar despliegues con requisitos de ventana larga.
+- El repositorio ocupa 214,7 GB, muy por encima del tamaño del artefacto principal, lo que sugiere artefactos adicionales no detallados.
 
 ## Enlaces
 
-- Repositorio Hugging Face del artefacto: https://huggingface.co/Schestex/ThinkingCap-Qwen3.8-27B-NInfer
+- Modelo en Hugging Face: https://huggingface.co/Schestex/ThinkingCap-Qwen3.8-27B-NInfer
 - Modelo base: https://huggingface.co/bottlecapai/ThinkingCap-Qwen3.8-27B
-- Runtime y formato de artefacto NInfer: no se proporciona URL en la información disponible
-- Paper, blog o demo oficial: no disponible
-- Resultados de búsqueda web: no se encontró ninguna fuente relevante sobre este modelo; los resultados devueltos eran contenido no relacionado y no se incluyen
+- Licencia del modelo base: https://huggingface.co/bottlecapai/ThinkingCap-Qwen3.8-27B/blob/main/LICENSE
+- Runtime NInfer: https://github.com/Xtravaganz/ninfer

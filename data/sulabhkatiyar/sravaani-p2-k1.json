@@ -40,16 +40,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "sulabhkatiyar/sravaani-p2-k1 · Hugging Face",
-      "url": "https://huggingface.co/sulabhkatiyar/sravaani-p2-k1",
-      "snippet": "sulabhkatiyar ... sravaani-p2-k1 Like 0 NeMo asr fastconformer tdt indic english License:mit Model card FilesFiles and versions xet Community Deploy Copy to bucket Use this model"
-    },
-    {
-      "title": "sulabhkatiyar (Sulabh Katiyar) – Models - Hugging Face",
-      "url": "https://huggingface.co/sulabhkatiyar/models",
-      "snippet": "Edge Native Speech First AI for India sulabhkatiyar 19 Follow kingmhd1519's profile picturenshmyrevgmail's profile picture 2 followers · 4 following https://sulabhkatiyar.pages.dev/ sulabhkatiyar sulabhkatiyar"
-    }
-  ]
+  "sources": []
 }

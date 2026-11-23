@@ -47,9 +47,14 @@
   "benchmarks": [],
   "sources": [
     {
-      "title": "3 Questions: How AI could optimize the power grid - MIT News",
-      "url": "https://news.mit.edu/2026/3-questions-how-ai-could-optimize-power-grid-0109",
-      "snippet": "Jan 9, 2026 · MIT researchers are working on AI tools to optimize the power grid, which could improve efficiency, increase resilience …"
+      "title": "Python Web Frameworks: Reflex, Streamlit, Dash, Gradio and More",
+      "url": "https://reflex.dev/blog/top-python-web-frameworks/",
+      "snippet": "Jan 9, 2026 · Compare eight Python frameworks for dashboards, pandas apps, chat, model interfaces, internal tools, and APIs, with …"
+    },
+    {
+      "title": "Top 10 Python Frameworks [2025 Updated] - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/blogs/best-python-frameworks/",
+      "snippet": "Jul 23, 2025 · A Python framework is essentially a set of tools and libraries that help you build web applications, websites, or …"
     }
   ]
 }

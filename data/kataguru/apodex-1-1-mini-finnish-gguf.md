@@ -2,102 +2,101 @@
 
 ## Resumen
 
-Apodex-1.1-mini-Finnish-GGUF es una cuantización en formato GGUF del modelo Apodex-1.1-mini, publicada por el usuario kataguru, orientada al uso en finés con soporte de inglés. Se trata de un modelo de arquitectura MoE (mezcla de expertos) de tipo transformer híbrido con 35.505.251.456 parámetros totales (unos 35,5 mil millones) y aproximadamente 3 mil millones de parámetros activos por token, activando 8 de 256 expertos. La model card del autor lo describe como un modelo de 36B MoE con ventana de contexto de 262.144 tokens, capacidades nativas de visión y OCR, y modos de razonamiento autónomo integrados.
+Apodex-1.1-mini-Finnish-GGUF es una cuantización en formato GGUF del modelo multimodal Apodex-1.1-mini, publicada por el usuario kataguru en Hugging Face. El modelo base, desarrollado por apodex, es un transformer de tipo Mixture of Experts (MoE) disperso con 35.505.251.456 parámetros totales y aproximadamente 3.000 millones de parámetros activos por token, diseñado para generación de texto, razonamiento y comprensión de imágenes.
 
-El modelo deriva de la base apodex/Apodex-1.1-mini y lleva la etiqueta de arquitectura qwen3_5_moe, lo que lo sitúa en la familia de MoE de la serie Qwen 3.5. Su rasgo diferencial es la inclusión de una plantilla de chat en finés embebida directamente en los metadatos del GGUF, de modo que no requiere configuración externa para conversar correctamente en ese idioma. Incorpora además un proyector multimodal independiente (mmproj en BF16) que habilita el análisis de imágenes y el reconocimiento de texto en finés.
+La contribución de kataguru se limita a dos elementos: la integración de una plantilla de chat en finlandés (Jinja2) directamente en los metadatos del modelo, y la conversión a GGUF mediante llama.cpp (build b11064). No se han modificado la arquitectura, los pesos preentrenados ni el vocabulario. El resultado es un paquete listo para inferencia local en finlandés e inglés, con soporte de visión nativo mediante un proyector multimodal separado (`mmproj`).
 
-Su relevancia actual radica en dos factores: la eficiencia de inferencia derivada de la activación dispersa de expertos, que permite velocidades de decodificación de 250 a 265 tokens por segundo en una GPU de consumo, y la combinación de contexto largo, visión y razonamiento en un único artefacto desplegable con llama.cpp o LM Studio. El repositorio, de 113,7 GB, no registra descargas ni valoraciones en el momento de la consulta.
+El modelo resulta relevante porque combina una ventana de contexto teórica de 262.144 tokens con un coste computacional por token propio de un modelo de 3B, gracias a su arquitectura MoE con 8 expertos activos de 256 por token. Su licencia Apache 2.0 y su disponibilidad en GGUF lo hacen apto para despliegue en hardware de consumo de gama alta, algo poco habitual en modelos con capacidades multimodales y contexto extendido.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | MoE transformer híbrida (linear attention GDN + full attention), etiquetada como qwen3_5_moe |
-| Parametros totales | 35.505.251.456 (aprox. 35,5 B) |
-| Parametros activos | Aprox. 3 B por token, 8 de 256 expertos |
-| Longitud de contexto | 262.144 tokens |
-| Tipos de cuantizacion | GGUF: Q3_K_M, IQ4_XS, Q4_K_M, Q5_K_M, Q6_K; proyector de visión mmproj en BF16 |
-| Idiomas soportados | Finés (fi), inglés (en) |
+| Arquitectura | Transformer MoE disperso con atención híbrida (30 capas de Linear Attention GDN y 10 capas de Full Attention) |
+| Parametros totales | 35.505.251.456 (aproximadamente 35,5B) |
+| Parametros activos | Aproximadamente 3B por token (8 expertos activos de 256) |
+| Longitud de contexto | 262.144 tokens (máximo arquitectónico teórico) |
+| Tipos de cuantizacion | Q3_K_M, IQ4_XS, Q4_K_M, Q5_K_M, Q6_K (GGUF); proyector de visión en BF16 |
+| Idiomas soportados | Finés (fi) e inglés (en) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (llama.cpp); proyector multimodal GGUF BF16 |
+| Formato de pesos | GGUF (llama.cpp build b11064); proyector multimodal separado en GGUF BF16 |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es un transformer de tipo mezcla de expertos con 40 capas, de las cuales 30 emplean linear attention (denominada GDN en la model card) y 10 emplean full attention. Esta combinación busca reducir el coste computacional del procesamiento de secuencias largas manteniendo la estabilidad del contexto extendido, que llega hasta los 262.144 tokens. El enrutamiento activa 8 expertos de un total de 256 por token, lo que explica que, pese a contar con unos 35,5 B de parámetros totales, el coste de decodificación se aproxime al de un modelo de 3 B.
+El modelo base es un transformer de mezcla de expertos dispersa: de los 256 expertos disponibles, se activan 8 por token, lo que resulta en unos 3.000 millones de parámetros efectivos por paso de inferencia frente a los 35,5B totales. La capa de atención es híbrida, con 30 capas de Linear Attention (denominada GDN en la documentación del autor) y 10 capas de Full Attention, una combinación orientada a reducir el coste de atención en contextos largos manteniendo capacidad de recuperación precisa. La ventana de contexto máxima es de 262.144 tokens, aunque el autor advierte que superar los 32.000 tokens incrementa de forma significativa el consumo de memoria de la KV cache.
 
-La model card no detalla el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron fases de RLHF o DPO. Tampoco especifica qué partes del modelo base fueron entrenadas o ajustadas para el finés. La innovación declarada por el autor es doble: por un lado, una plantilla de chat en finés integrada en los metadatos del GGUF, que evita errores de formato al usar herramientas como LM Studio; por otro, un esquema de razonamiento con modos seleccionables, que activa de forma autónoma un bloque `<think>...</think>` ante consultas matemáticas, lógicas o de arquitectura de sistemas, o bien recurre a modos especializados como `{REASON:spoon}` (un panel simulado de expertos en 6 fases) y `{REASON:einstein}` (ideación creativa desde 10 a 20 perspectivas), con `{REASON:none}` para saltar el razonamiento y minimizar la latencia.
+No se dispone de información sobre el volumen de tokens de entrenamiento, la composición del dataset, ni sobre si se aplicaron técnicas de alineación como RLHF o DPO. El modelo soporta un modo de razonamiento interno mediante la etiqueta `<think>`, con niveles de profundidad configurables a través de directivas como `{REASON:spoon}`, `{REASON:einstein}` y `{REASON:none}`. La publicación de kataguru no introduce cambios arquitectónicos ni de pesos; su aportación es la plantilla de chat en finlandés integrada en los metadatos, que según el autor mejora el tratamiento de los casos gramaticales finlandeses y del lenguaje técnico respecto al prompt base original.
 
 ## Capacidades
 
-- Generación de texto en finés e inglés, con especial énfasis en prosa idiomática, texto técnico y redacción jurídica y contractual.
-- Razonamiento multi-paso con modo de pensamiento activable, incluyendo bloques `<think>` y modos de razonamiento especializados (`spoon`, `einstein`, `none`, `auto`).
-- Resolución de problemas matemáticos y de lógica, como el cálculo de probabilidad sin reemplazo que la model card documenta con resultado exacto.
-- Análisis de imágenes y OCR nativo en finés mediante el proyector `mmproj-Apodex-1.1-mini-Finnish-BF16.gguf`, incluyendo interpretación de diagramas y lectura de texto en imágenes.
-- Análisis técnico en dominios de sistemas: la model card cita como ejemplo el análisis de arquitectura eBPF y filtrado XDP en el núcleo Linux.
-- Conversación multiturno con contexto largo, útil para analizar documentación extensa o bases de código completas.
-- Comportamiento de rechazo ante peticiones de ataques informáticos, según la validación cualitativa reportada por el autor.
-- No se documenta en la información disponible soporte explícito de tool calling o function calling ni de ejecución de agentes con llamadas a herramientas.
+- Generación de texto conversacional en finlandés e inglés, con plantilla de chat integrada en los metadatos del GGUF.
+- Razonamiento explícito mediante cadena de pensamiento interna (`<think>`) con tres niveles de profundidad configurables.
+- Comprensión de imágenes y OCR nativo en finlandés, a través del proyector multimodal `mmproj-Apodex-1.1-mini-Finnish-BF16.gguf`.
+- Procesamiento de documentos escaneados y lectura de texto en imágenes.
+- Generación de código y resolución de problemas matemáticos, aunque con menor fiabilidad que modelos densos de mayor tamaño según las propias notas del autor.
+- Soporte de contexto largo de hasta 262.144 tokens teóricos.
+- Compatibilidad con llama.cpp, LM Studio y endpoints compatibles con la API de OpenAI (según los tags del repositorio).
+- No se documenta soporte explícito de tool calling, function calling ni flujos de agentes multi-paso en la información disponible.
 
 ## Casos de uso
 
-- Atención al cliente en finés: el modelo puede mantener conversaciones multiturno con un historial largo gracias a sus 262.144 tokens de contexto, y la plantilla de chat embebida en el GGUF reduce los errores de formato al desplegarlo en LM Studio o llama.cpp sin configuración adicional.
-- Revisión y traducción de contratos y licencias: la model card documenta la traducción inversa de cláusulas de licencia de software y de propiedad intelectual del inglés al finés con terminología correcta, lo que permite usarlo como apoyo en revisiones legales asistidas.
-- Procesamiento de documentación técnica extensa: con soporte de 262k tokens y velocidades de preprocesado por encima de 6.800 tokens por segundo en RTX 5090, es viable analizar manuales, normativas o bases de código completas en una sola pasada.
-- Digitalización y accesibilidad de documentos escaneados en finés: el proyector de visión y OCR permite extraer texto de imágenes y diagramas y generar resúmenes o traducciones al inglés.
-- Generación de textos creativos y marketing en finés: los modos de razonamiento creativo (`einstein`) producen múltiples perspectivas e ideación conceptual, aprovechables para campañas o narrativa de marca.
-- Tutoría y asistencia educativa en matemáticas y lógica: el modo de pensamiento autónomo genera cadenas de razonamiento visibles que pueden mostrarse al estudiante, con la opción de desactivarlas para respuestas directas de baja latencia.
-- Automatizaciones de baja latencia: con `{REASON:none}` y velocidades de decodificación de hasta 263,5 tok/s en una única GPU de consumo, encaja en pipelines de clasificación, extracción o resumen donde el coste por token es crítico.
-- Análisis de seguridad y sistemas: la model card reporta análisis estructurado de arquitecturas de red y kernel, útil como asistente en tareas de revisión técnica en finés.
+- Atención al cliente en finlandés: el modelo puede mantener conversaciones multi-turno con una plantilla de chat nativa que maneja correctamente los casos gramaticales del finés, adecuado para empresas finlandesas que necesiten un asistente local sin dependencia de la nube.
+- Digitalización de documentos administrativos finlandeses: con el proyector de visión y OCR nativo, permite extraer texto de formularios, facturas y documentos escaneados en finés, ejecutándose en una sola GPU de 24 GB.
+- Análisis de contratos y textos legales largos: la ventana de 262.144 tokens permite procesar expedientes completos, aunque en la práctica conviene limitar el contexto a unos 32.000 tokens para controlar el consumo de KV cache.
+- Asistente de razonamiento técnico en local: con el modo `<think>` configurable, resulta útil para depuración de problemas y explicaciones paso a paso en entornos con requisitos de privacidad, donde no se pueden enviar datos a APIs externas.
+- Generación de código en pipelines internos: puede integrarse en herramientas de desarrollo mediante llama.cpp o endpoints compatibles con la API de OpenAI, aunque el autor advierte que su fiabilidad en programación profunda queda por debajo de modelos densos de 27B.
+- Procesamiento de imágenes con descripción en finlandés: clasificación y descripción de imágenes en aplicaciones de accesibilidad o catalogación, usando el proyector multimodal junto con el modelo principal.
+- Despliegue en estaciones de trabajo con GPU de consumo: las cuantizaciones Q3_K_M (15,98 GiB) e IQ4_XS (18,05 GiB) permiten ejecución local en GPUs de 16 a 24 GB, habilitando prototipado rápido sin infraestructura de servidor.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks estandarizados como MMLU, HumanEval o GSM8K en la informacion disponible. Los únicos datos cuantitativos publicados son mediciones de velocidad con `llama-bench` sobre una NVIDIA GeForce RTX 5090 de 32 GB, con backend CUDA y Flash Attention activado.
+No se han publicado resultados de benchmarks de calidad (MMLU, HumanEval, GSM8K u otros) en la información disponible. El autor únicamente proporciona mediciones de rendimiento de inferencia con `llama-bench` sobre una NVIDIA GeForce RTX 5090 de 32 GB, con backend CUDA y Flash Attention activado:
 
-| Cuantizacion | Tamano de fichero | VRAM requerida | Prompt eval (pp512) | Generacion (tg128) |
+| Cuantizacion | Tamano | VRAM estimada | Prompt eval (pp512) | Generacion (tg128) |
 |---|---|---|---|---|
-| Q3_K_M | 15,98 GiB | Aprox. 16,5 GB | 6.836,6 tok/s | 253,8 tok/s |
-| IQ4_XS | 18,05 GiB | Aprox. 18,6 GB | 6.628,3 tok/s | 263,5 tok/s |
-| Q4_K_M | 20,21 GiB | Aprox. 21,0 GB | 6.586,3 tok/s | 262,6 tok/s |
-| Q5_K_M | 24,10 GiB | Aprox. 25,0 GB | Aprox. 6.400 tok/s | Aprox. 255 tok/s |
-| Q6_K | 28,20 GiB | Aprox. 29,5 GB | Aprox. 6.200 tok/s | Aprox. 250 tok/s |
-| mmproj BF16 | 861 MiB | Aprox. +0,9 GB | No aplica | No aplica |
-
-La model card incluye además una validación cualitativa con seis áreas de prueba (estética literaria en finés, traducción jurídica, arquitectura eBPF y XDP, probabilidad sin reemplazo, OCR sobre imagen sintetizada en finés y rechazo de peticiones de ataque), pero no reporta métricas numéricas comparables con otros modelos.
+| Q3_K_M | 15,98 GiB | ~16,5 GB | 6.836,6 tok/s | 253,8 tok/s |
+| IQ4_XS | 18,05 GiB | ~18,6 GB | 6.628,3 tok/s | 263,5 tok/s |
+| Q4_K_M | 20,21 GiB | ~21,0 GB | 6.586,3 tok/s | 262,6 tok/s |
+| Q5_K_M | 24,10 GiB | ~25,0 GB | ~6.400 tok/s | ~255 tok/s |
+| Q6_K | 28,20 GiB | ~29,5 GB | ~6.200 tok/s | ~250 tok/s |
+| mmproj BF16 | 861 MiB | +0,9 GB | no aplica | no aplica |
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: entre 16,5 GB con Q3_K_M y 29,5 GB con Q6_K, más 0,9 GB adicionales si se activa el proyector de visión.
-- GPU recomendadas: RTX 5090 (hardware de referencia de las mediciones), RTX 4090 y RTX 3090 para cuantizaciones Q4 y Q5; RTX 4080 y RTX 5080 para Q3_K_M.
-- Compatibilidad con GPU de consumo: sí, el modelo cabe en tarjetas de 16 GB o más con cuantizaciones Q3_K_M e IQ4_XS, y en equipos Mac con 16 GB o más de memoria unificada.
-- Opciones de despliegue: llama.cpp, LM Studio y cualquier runtime compatible con GGUF; la model card documenta el uso en LM Studio con la ruta `~/.lmstudio/models/kataguru/Apodex-1.1-mini-Finnish-GGUF/`. No se menciona compatibilidad verificada con vLLM, TGI o Ollama.
-- Latencia y throughput: en RTX 5090, de 253,8 a 263,5 tokens por segundo en generación y de 6.586 a 6.836 tokens por segundo en preprocesado, con Flash Attention activado.
+- VRAM estimada: entre 16,5 GB (Q3_K_M) y 29,5 GB (Q6_K), más 0,9 GB adicionales si se utiliza el proyector de visión.
+- GPU recomendadas: RTX 5090 de 32 GB para las cuantizaciones Q5_K_M y Q6_K; RTX 3090, 4090 o 5090 de 24 GB para Q4_K_M e IQ4_XS; RTX 4080, 5080 o Mac con 16 GB o más para Q3_K_M.
+- Compatibilidad con GPU de consumo: sí, desde una RTX 4080 de 16 GB con la cuantización Q3_K_M. Las cuantizaciones de mayor calidad requieren 24 GB o más.
+- Opciones de despliegue: llama.cpp (build b11064 o superior), LM Studio, y endpoints compatibles con la API de OpenAI según los tags del repositorio. No se documenta soporte de vLLM ni TGI para este formato.
+- Rendimiento medido: 253,8 a 263,5 tokens por segundo en generación y 6.200 a 6.836 tokens por segundo en evaluación de prompt sobre RTX 5090.
+- Advertencia de contexto: superar los 32.000 tokens de contexto incrementa notablemente la memoria necesaria para la KV cache, lo que puede exceder la VRAM disponible en GPUs de 24 GB.
 
 ## Comparativa con modelos similares
 
-No se dispone en la informacion proporcionada de resultados de benchmarks ni de especificaciones verificadas de modelos comparables que permitan una comparación cuantitativa rigurosa.
+No se dispone de datos de benchmarks del modelo base Apodex-1.1-mini ni de la versión de kataguru, por lo que la comparación se limita a características estructurales. El autor menciona en sus notas un modelo denso de 27B denominado "Titan" como referencia de mayor fiabilidad en razonamiento profundo, pero no aporta especificaciones ni resultados del mismo.
 
-| Modelo | Parametros totales | Activos | Contexto | Licencia | Datos de rendimiento |
-|---|---|---|---|---|---|
-| Apodex-1.1-mini-Finnish-GGUF | 35,5 B | Aprox. 3 B | 262.144 | Apache 2.0 | Solo velocidad (llama-bench) |
-| apodex/Apodex-1.1-mini (modelo base) | No disponible | No disponible | No disponible | No disponible | No disponible |
-| Alternativas de la familia qwen3_5_moe | No disponible | No disponible | No disponible | No disponible | No disponible |
+| Modelo | Parametros | Activos | Contexto | Vision | Licencia | Formato |
+|---|---|---|---|---|---|---|
+| Apodex-1.1-mini-Finnish (este) | 35,5B | ~3B | 262.144 | Si (mmproj) | Apache 2.0 | GGUF |
+| Modelo denso 27B ("Titan", citado por el autor) | 27B | 27B | no disponible | no disponible | no disponible | no disponible |
+| Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
-La única referencia directa identificada es el modelo base apodex/Apodex-1.1-mini, del que esta publicacion es una cuantizacion en GGUF con ajuste de idioma finés. Las alternativas del mismo rango de tamano y arquitectura no cuentan con datos verificables en la informacion disponible.
+No se identifican en la información proporcionada otros modelos de la misma categoría (MoE con visión y contexto largo en finlandés) con los que establecer una comparación cuantitativa.
 
 ## Limitaciones y advertencias
 
-- No se han publicado resultados de benchmarks estandarizados, por lo que no es posible validar de forma independiente el rendimiento frente a otros modelos.
-- La evaluacion cualitativa incluida en la model card ha sido realizada por el propio autor, sin protocolos de evaluacion independientes ni conjuntos de prueba publicos.
-- El modelo está especializado en finés e inglés; no se documenta soporte fiable de otros idiomas, incluido el castellano.
-- Riesgo de alucinación inherente a los modelos generativos, no cuantificado en la informacion disponible y especialmente relevante en los casos de uso jurídico y técnico citados.
-- La información sobre el dataset de entrenamiento, el número de tokens y la existencia de fases de RLHF o DPO no está disponible, lo que impide evaluar sesgos conocidos o la composición de los datos.
-- La licencia declarada es Apache 2.0, pero el modelo deriva de apodex/Apodex-1.1-mini y la ficha no aclara las condiciones del modelo base; conviene verificar los términos antes de un uso comercial.
-- El repositorio ocupa 113,7 GB y no registra descargas ni valoraciones, por lo que no existe validación por parte de la comunidad.
-- La compatibilidad de despliegue documentada se limita a llama.cpp y LM Studio; no hay confirmación de funcionamiento en otros servidores de inferencia.
-- La fecha de creación del repositorio indicada en los metadatos (2026-09-21) debe contrastarse, ya que puede deberse a un error de registro.
+- Fiabilidad en razonamiento complejo: al activar solo unos 3B de parámetros por token, el autor reconoce que el modelo queda por debajo de modelos densos de 27B en problemas lógicos de varios pasos y en programación avanzada.
+- Consumo de memoria en contexto largo: aunque la ventana teórica es de 262.144 tokens, superar los 32.000 dispara el uso de KV cache y puede provocar errores de memoria en GPUs de 24 GB.
+- Cobertura lingüística limitada: solo finlandés e inglés; no hay evidencia de rendimiento en castellano ni en otros idiomas.
+- Sesgos: no se documenta ninguna evaluación de sesgos, toxicidad o alineación en la información disponible.
+- Riesgo de alucinación: no se han publicado métricas de fidelidad factual ni evaluaciones de alucinación para el modelo base ni para esta cuantización.
+- Trazabilidad de la cuantización: la publicación la mantiene un usuario individual (kataguru) y no el equipo original de apodex; conviene verificar la integridad de los pesos antes de usos en producción.
+- Soporte de herramientas: no se documenta tool calling ni function calling, lo que limita su uso en pipelines de agentes.
+- Licencia: Apache 2.0 permite uso comercial, pero se recomienda revisar las condiciones del modelo base `apodex/Apodex-1.1-mini` por si existieran términos adicionales no reflejados en esta ficha.
+- Idiomas y prompt: la plantilla de chat en finlandés está integrada en los metadatos; alterarla o sustituirla puede degradar el rendimiento observado por el autor.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/kataguru/Apodex-1.1-mini-Finnish-GGUF
-- Modelo base: apodex/Apodex-1.1-mini (referenciado en la model card, sin URL directa en la informacion disponible)
-- No se han encontrado en la busqueda web articulos, papers, repositorios ni demos relacionados con este modelo.
+- Modelo base: https://huggingface.co/apodex/Apodex-1.1-mini
+- llama.cpp (build b11064): https://github.com/ggml-org/llama.cpp
+- LM Studio: https://lmstudio.ai/

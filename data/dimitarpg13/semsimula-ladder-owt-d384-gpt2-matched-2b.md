@@ -2,116 +2,108 @@
 
 ## Resumen
 
-El modelo semsimula-ladder-owt-d384-gpt2-matched-2b es un transformer decoder-only de tipo GPT-2 con dimensión de modelo d=384, publicado por el autor dimitarpg13 dentro del proyecto de investigación SemSimula. No es un modelo orientado a producción, sino un baseline emparejado ("matched") que sirve de referencia para la familia de modelos Fock de tercera generación entrenados con un presupuesto de 2.000 millones de tokens sobre OpenWebText. Su función es fijar una curva de perplejidad a igualdad de tokens, arquitectura y schedule de learning rate, contra la que se contrastan los modelos del estudio de ablación de mecanismos.
+`semsimula-ladder-owt-d384-gpt2-matched-2b` es un modelo de lenguaje de tipo GPT-2 de pequeno tamano (dimension de modelo 384) entrenado por el autor independiente dimitarpg13 como **linea base de referencia** dentro de un estudio de investigacion denominado "SemSimula", orientado a modelos de lenguaje conservativos con potencial escalar y mecanica lagrangiana. No es un modelo destinado a produccion, sino un punto de comparacion controlado: reproduce la misma arquitectura GPT-2 que la referencia de 0,53B tokens del mismo autor, pero entrenada sobre cuatro veces mas tokens (2,13B) y con un schedule de learning rate WSD (warmup, constante, decay) escalado a 130.000 pasos.
 
-El entrenamiento cubre 2.129.920.000 tokens vistos (130.000 pasos × batch 32 × 512 tokens), lo que equivale a unos 63 tokens por parámetro según la propia model card, con un pool de OpenWebText de 2,0B tokens muestreado con reemplazo (~1,07 pasadas efectivas). La ejecución se completó en una sesión de 10,75 horas sobre una A100-40GB (0,30 s/paso), con 260 evaluaciones y sin picos de pérdida, bajo un protocolo pre-registrado de cuatro hipótesis.
+El modelo se entrena sobre OpenWebText (Skylion007/openwebtext) y su proposito es servir de referencia contra la que se comparan todos los modelos de la familia "Fock" del estudio con presupuesto de 2B tokens. Es, por tanto, material de investigacion reproducible: el autor publica el notebook de Colab, los logs por paso, los checkpoints intermedios y las predicciones pre-registradas antes del entrenamiento. Su metrica principal es la perplejidad de validacion a bloque 512, que alcanza 42,69 (media de las tres ultimas evaluaciones).
 
-Alcanza una perplejidad de validación de 42,69 en OpenWebText (bloque de 512 tokens), lo que supone una mejora del 11,7% frente a la misma arquitectura y schedule entrenada con 0,53B tokens (48,37) y del 14,3% frente a la referencia publicada de 0,53B con schedule coseno (49,81). La mayor parte de la ganancia final procede de la fase de decaimiento del learning rate.
+La relevancia actual es metodologica mas que de capacidad: documenta de forma exhaustiva como cambia la perplejidad con el presupuesto de tokens y con la fase del schedule de learning rate, y demuestra que casi toda la ganancia final de un entrenamiento WSD se concentra en la fase de decay (0,371 nats en este caso). Es util para investigadores que quieran reproducir estudios de ablacion de mecanismos con presupuesto controlado, no para aplicaciones de texto reales.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only tipo GPT-2, d=384; número de capas no declarado explícitamente para este modelo (la referencia de la que deriva usa el identificador `l2`, lo que sugiere 2 capas) |
-| Parametros totales | ~34 millones (derivado de la model card: 2,13B tokens ÷ 63 tokens por parámetro) |
-| Parametros activos | no aplica (modelo denso, no es MoE) |
-| Longitud de contexto | no disponible; entrenamiento y evaluación con bloques de 512 tokens |
-| Tipos de cuantizacion | no disponible |
-| Idiomas soportados | inglés (`en`) |
+| Arquitectura | Transformer decoder-only estilo GPT-2 (dimension de modelo d=384) |
+| Parametros totales | no disponible (no declarado en la model card; el tag indica "gpt2" y d384) |
+| Parametros activos | no aplica (no es MoE) |
+| Longitud de contexto | no disponible (entrenado y evaluado a bloques de 512 tokens) |
+| Tipos de cuantizacion | no disponible (pesos distribuidos en `.pt` de PyTorch, no hay GGUF publicado) |
+| Idiomas soportados | ingles (en) |
 | Licencia | CC-BY-4.0 |
-| Formato de pesos | PyTorch (`.pt`); checkpoints con estado del optimizador eliminado |
+| Formato de pesos | PyTorch `.pt` (`checkpoints/gpt2_baseline_best.pt`, `checkpoints/gpt2_baseline_step25000.pt`) |
+| Tokens de entrenamiento | 2.129.920.000 (130.000 pasos x 32 x 512) |
+| Dataset | Skylion007/openwebtext (pool de ~2,0B tokens) |
+| Schedule de learning rate | WSD: warmup lineal 5%, constante hasta el 65%, cosine decay hasta 6e-05; pico 1,2e-03 |
+| Hardware de entrenamiento | 1x A100-40GB, 10,75 h, 0,30 s por paso |
 
 ## Arquitectura y entrenamiento
 
-Se trata de un transformer decoder-only con la arquitectura GPT-2 a escala reducida (d=384). La model card indica que es "el mismo GPT-2" que la referencia de 0,53B tokens, cuyo identificador incluye `l2`. El modelo se define en la celda 3 del notebook self-contained `colab_matched_gpt2_baseline_openwebtext.ipynb` y se distribuye como pesos PyTorch (`.pt`), no como safetensors ni GGUF. No se detalla en la información proporcionada el número de cabezas de atención ni la composición exacta de los bloques.
+El modelo es un transformer decoder-only con la arquitectura GPT-2 y dimension de modelo 384, definido integramente en la celda 3 del notebook publicado (`code/colab_matched_gpt2_baseline_openwebtext.ipynb`). No incorpora mecanismos del estudio SemSimula (potencial escalar, formulacion lagrangiana ni dinamica conservativa): es precisamente el control "vanilla" contra el que se miden esos mecanismos. El entrenamiento usa batches de 32 secuencias de 512 tokens, con ventanas aleatorias extraidas con reemplazo del pool de OpenWebText, de modo que el modelo ve el corpus aproximadamente 1,07 veces de media.
 
-El entrenamiento usa OpenWebText (pool de 2,0B tokens, ventanas aleatorias de 512 con reemplazo, ~1,07 pasadas efectivas), 130.000 pasos con batch 32 × 512 y un schedule WSD: warmup lineal del 5% (hasta el paso 6.500), learning rate pico de 1,2e-3 mantenido hasta el 65% (paso 84.500) y decaimiento coseno hasta 6e-05. No se reporta RLHF, DPO ni ajuste por instrucciones: es un modelo de lenguaje base. Como innovación metodológica, todo el protocolo está pre-registrado (cuatro llamadas), y se documenta la "decay gain" (ln de la perplejidad al final de la fase constante dividida por la perplejidad settled), que resultó de 0,371 nats frente a los 0,338 anticipados, incumpliendo una de las cuatro hipótesis.
+El schedule de learning rate es el elemento central del diseno experimental: warmup lineal hasta el paso 6.500, pico constante de 1,2e-03 hasta el paso 84.500 y decay coseno hasta 6e-05 en el paso 130.000. El autor pre-registro cuatro predicciones antes de la ejecucion: ausencia de picos de loss (cumplida, mayor subida entre evaluaciones de +0,013 nats), perplejidad final entre 41,0 y 45,5 (cumplida, 42,69), al menos un 5% mejor que el mismo modelo a 0,53B tokens (cumplida, -11,7% frente a 48,37) y una ganancia de decay menor que a 0,53B tokens (fallada: 0,371 nats frente a 0,338). La curva de entrenamiento muestra que la fase constante apenas mejora la perplejidad (de 64,97 a 61,84 entre 0,53B y 1,38B tokens, un 4,8%) y que casi toda la ganancia final procede del decay.
 
 ## Capacidades
 
-- Generación de texto autoregresiva en inglés (modelo base, sin ajuste por instrucciones).
-- Modelado de lenguaje y evaluación de perplejidad sobre OpenWebText con bloques de 512 tokens.
-- Punto de referencia (baseline) para comparaciones controladas en estudios de ablación de mecanismos.
-- Reproducibilidad de un protocolo pre-registrado con checkpoints intermedios (paso 25.000 y paso 130.000) y log completo por paso y por evaluación.
-- No se documentan capacidades de tool calling, function calling, agentes, razonamiento multi-paso, visión, audio ni modo de razonamiento extendido.
-- Capacidad multilingüe: no disponible; el modelo está declarado únicamente para inglés.
+- Generacion de texto autoregresiva en ingles, con la calidad propia de un GPT-2 pequeno entrenado sobre 2,13B tokens de OpenWebText.
+- Modelado de lenguaje y calculo de perplejidad sobre corpus de dominio general (web en ingles).
+- Reproduccion exacta de experimentos: checkpoints intermedios, log por paso y notebook autocontenido.
+- Reanudacion de entrenamiento bit a bit desde checkpoints rodantes cada 2.500 pasos (probado en un modelo pequeno).
+- No dispone de tool calling, function calling ni soporte de agentes.
+- No dispone de modo de razonamiento explicito (thinking mode), vision ni audio.
+- Multilingue: no; solo ingles.
+- No esta ajustado con RLHF ni DPO; no hay alineacion de instrucciones.
 
 ## Casos de uso
 
-- Investigación sobre eficiencia de entrenamiento: usar la curva de perplejidad a 0,53B y 2,13B tokens para medir cómo escala la pérdida con el presupuesto de cómputo en arquitecturas pequeñas (d=384).
-- Estudio de schedules de learning rate: comparar directamente WSD (pico 1,2e-3) frente a coseno (pico 6e-04) a igualdad de 0,53B tokens, usando las cifras 48,37 y 49,81 respectivamente.
-- Ablación de mecanismos: servir de baseline contra el que se contrastan los modelos de la familia Fock de 2B tokens en la colección SemSimula Gen 3.
-- Reproducibilidad de resultados pre-registrados: re-ejecutar el notebook publicado (`colab_matched_gpt2_baseline_openwebtext.ipynb`) y verificar la perplejidad settled de 42,69 dentro del rango pre-registrado [41,0; 45,5].
-- Docencia y divulgación: ejemplo autocontenido y de bajo coste (~0,3 GB de repo, 10,75 h en A100) para ilustrar el efecto del decaimiento del learning rate en modelos GPT-2 pequeños.
-- Referencia para comparaciones de perplejidad en OpenWebText: cualquier investigador que entrene un modelo con d=384 y 2B tokens sobre este corpus puede contrastar directamente contra 42,69.
-- Análisis de la "decay gain": estudiar por qué a mayor presupuesto de tokens la fase constante deja más margen al decaimiento (0,371 nats frente a 0,338 a 0,53B), fenómeno relevante para diseñar schedules en modelos de mayor escala.
+- Referencia de ablacion en investigacion: sirve como linea base controlada para medir el efecto de mecanismos alternativos (modelos conservativos, potenciales escalares) con el mismo presupuesto de 2B tokens y el mismo schedule; cualquier mejora de los modelos Fock debe compararse contra la perplejidad 42,69 de este modelo.
+- Estudio del schedule WSD: la curva publicada (92,99 en el paso 6.500, 61,84 al final de la fase constante, 42,68 al final) permite analizar cuanto de la ganancia final aporta el decay en funcion del presupuesto de tokens.
+- Reproduccion de experimentos de scaling de tokens: con 0,53B y 2,13B tokens del mismo modelo y schedule, se puede estudiar la relacion entre tokens vistos y perplejidad (48,37 frente a 42,69) en un rango de computo asequible en una sola A100.
+- Docencia y formacion: el notebook autocontenido y el log completo permiten ilustrar un ciclo de entrenamiento GPT-2 de principio a fin, incluyendo pre-registro de hipotesis y evaluacion de resultados.
+- Generacion de texto de dominio general en ingles para pruebas de pipelines: util como modelo de sustitucion barato en tests de infraestructura de inferencia (tokenizacion, batching, streaming) sin coste de modelos grandes.
+- Analisis de corpus OpenWebText: el modelo puede emplearse para calcular perplejidades relativas de subconjuntos del corpus y detectar dominios o estilos infrarepresentados.
 
 ## Benchmarks y rendimiento
 
-Resultados declarados por el autor en la model card (no verificados, `verified: false`):
+Datos declarados por el autor en la model card (no verificados de forma independiente):
 
-| Modelo | Tokens | PPL validación (bloque 512) | Mejora de este modelo frente a él |
+| Metrica | Dataset | Split | Valor |
+|---|---|---|---|
+| Perplejidad de validacion (bloque 512, media de las 3 ultimas evaluaciones de 500 pasos) | OpenWebText | validation | 42,69 |
+
+Comparaciones internas declaradas por el autor:
+
+| Modelo | Tokens | Perplejidad | Diferencia relativa |
 |---|---:|---:|---:|
-| **Este modelo** (WSD, pico 1,2e-3) | 2,13B | **42,69** | — |
-| Mismo modelo, mismo schedule, 0,53B tokens (W2) | 0,53B | 48,37 | −11,7% |
-| Referencia publicada 0,53B (coseno, pico 6e-04) | 0,53B | 49,81 | −14,3% |
+| Este modelo (WSD, pico 1,2e-03) | 2,13B | 42,69 | - |
+| Mismo modelo, mismo schedule, 0,53B tokens (W2) | 0,53B | 48,37 | -11,7% |
+| Referencia publicada a 0,53B (cosine, pico 6e-04) | 0,53B | 49,81 | -14,3% |
 
-Curva de entrenamiento (selección de la model card):
-
-| Paso | Tokens | PPL validación | Fase |
-|---:|---:|---:|---|
-| 6.500 | 0,11B | 92,99 | fin de warmup |
-| 21.000 | 0,34B | 68,01 | constante |
-| 32.500 | 0,53B | 64,97 | constante |
-| 50.000 | 0,82B | 63,17 | constante |
-| 84.500 | 1,38B | 61,84 | fin de la fase constante |
-| 100.000 | 1,64B | 57,66 | decaimiento |
-| 120.000 | 1,97B | 45,92 | decaimiento |
-| 130.000 | 2,13B | 42,68 | fin |
-
-Notas: "settled PPL" es la media de las tres últimas evaluaciones (42,68; 42,70; 42,68). La fase constante apenas mejora un 4,8% entre 0,53B y 1,38B tokens; prácticamente toda la ganancia final (0,371 nats) se produce en el decaimiento. No se han publicado resultados de MMLU, HumanEval, GSM8K ni otros benchmarks estándar en la información disponible.
+No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) en la informacion disponible.
 
 ## Requisitos de hardware
 
-- Entrenamiento: una única A100-40GB, 10,75 horas, 0,30 s por paso, en una sesión de Colab ininterrumpida.
-- VRAM de inferencia: no disponible de forma explícita; por el tamaño declarado del repo (0,3 GB, incluyendo varios checkpoints) y los ~34M de parámetros derivados, el modelo cabe holgadamente en cualquier GPU consumer moderna (por ejemplo, RTX 3060 en adelante).
-- GPU recomendadas: cualquier GPU con al menos unos pocos GB de VRAM para inferencia; A100-40GB para reproducir el entrenamiento.
-- Cabe en GPU consumer: sí, con margen amplio.
-- Opciones de despliegue: los pesos se distribuyen como `.pt` de PyTorch y el modelo se define en la celda 3 del notebook, por lo que el despliegue directo requiere cargar el checkpoint con PyTorch. No se documenta compatibilidad con vLLM, llama.cpp, Ollama o TGI; al no publicarse en safetensors ni GGUF, sería necesaria una conversión previa.
-- Latencia y throughput de inferencia: no disponibles en la información proporcionada. Sí se conoce el coste de entrenamiento (0,30 s/paso con batch 32 × 512).
+- VRAM estimada para inferencia: no disponible de forma explicita. Con d=384 y arquitectura GPT-2, el modelo es muy pequeno (el repositorio completo, incluidos checkpoints y logs, ocupa 0,3 GB), por lo que la inferencia en FP32 cabe holgadamente en cualquier GPU consumer.
+- GPU recomendadas: cualquier GPU con al menos unos pocos GB de VRAM; el entrenamiento se realizo en una A100-40GB (10,75 h a 0,30 s por paso), pero la inferencia no requiere ese hardware.
+- Cabe en GPU consumer: si, practicamente en cualquier RTX o equivalente; tambien en CPU para generacion no interactiva.
+- Opciones de despliegue: los pesos se distribuyen como `.pt` de PyTorch, por lo que el despliegue requiere cargar el modelo desde el notebook o el codigo del autor. No hay versiones GGUF publicadas para llama.cpp u Ollama, ni configuracion lista para vLLM o TGI; seria necesario exportar los pesos a safetensors y definir un `config.json` compatible con Hugging Face Transformers.
+- Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Tokens | PPL (OWT, bloque 512) | Licencia | Disponibilidad |
-|---|---:|---:|---|---|
-| semsimula-ladder-owt-d384-gpt2-matched-2b (este modelo) | 2,13B | 42,69 | CC-BY-4.0 | Hugging Face |
-| semsimula-ladder-owt-d384-l2-gpt2-matched (W2) | 0,53B | 48,37 | no disponible | Hugging Face |
-| Referencia publicada 0,53B (coseno, pico 6e-04) | 0,53B | 49,81 | no disponible | Hugging Face |
-| semsimula-ladder-owt-d384-l2-attention | no disponible | no disponible | no disponible | Hugging Face |
-| semsimula-ladder-owt-d384-l2-attention-potential | no disponible | no disponible | no disponible | Hugging Face |
+| Modelo | Parametros | Contexto | Perplejidad (OpenWebText val, bloque 512) | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| semsimula-ladder-owt-d384-gpt2-matched-2b | no disponible (d=384, GPT-2) | no disponible (entrenado a 512) | 42,69 | CC-BY-4.0 | Pesos `.pt` en Hugging Face |
+| semsimula-ladder-owt-d384-l2-gpt2-matched (mismo autor) | no disponible (d=384, GPT-2) | no disponible | 49,81 (cosine, 0,53B tokens) | no disponible en la informacion | Pesos en Hugging Face |
+| GPT-2 small (referencia de arquitectura) | 124M | 1.024 | no disponible en esta ficha | MIT (upstream) | Ampliamente disponible en safetensors/GGUF |
 
-No se especifican en la información proporcionada comparaciones con modelos externos al proyecto (por ejemplo, GPT-2 small de OpenAI o alternativas de ~34M de parámetros). Las variantes `attention` y `attention-potential` forman parte del mismo ladder de ablación de mecanismos, pero sus perplejidades no se detallan en los resultados disponibles.
+La comparacion con GPT-2 small es solo arquitectonica: no se dispone de perplejidades comparables bajo el mismo protocolo de evaluacion en la informacion proporcionada, por lo que no se establece una comparacion de rendimiento directa.
 
 ## Limitaciones y advertencias
 
-- Modelo base de investigación: no está ajustado por instrucciones ni alineado, por lo que no es apto para uso conversacional directo en producción.
-- Solo declara inglés; no se garantiza calidad en otros idiomas.
-- Entrenado sobre OpenWebText (texto web sin curación fina): hereda los sesgos, toxicidad y errores factuales del corpus.
-- Ventana efectiva de entrenamiento y evaluación de 512 tokens; usos que requieran contextos más largos quedan fuera del régimen validado.
-- Riesgo de alucinación alto por tratarse de un modelo base sin RLHF ni DPO.
-- Resultados no verificados de forma independiente (`verified: false` en el model-index); todas las cifras proceden del propio autor.
-- Una de las cuatro hipótesis pre-registradas no se cumplió (la decay gain resultó 0,371 nats, superior a los 0,338 anticipados), lo que conviene tener en cuenta al interpretar el diseño metodológico.
-- Licencia CC-BY-4.0: permite uso comercial con atribución; conviene revisar los términos exactos antes de redistribuir derivados.
-- La fecha de creación registrada en Hugging Face es 2026-10-19, dato tal cual aparece en el repositorio.
-- No hay información sobre cuantizaciones publicadas ni sobre conversión a formatos de despliegue estándar (GGUF, safetensors).
+- Modelo de investigacion sin alineacion: no ha pasado por RLHF ni DPO, por lo que puede generar contenido toxico, sesgado o factualmente incorrecto sin filtros.
+- Riesgo alto de alucinacion: es un GPT-2 pequeno entrenado sobre 2,13B tokens; su conocimiento factual es limitado y su coherencia en textos largos, baja.
+- Solo ingles: no soporta castellano ni otros idiomas de forma fiable.
+- Contexto limitado: entrenado y evaluado a bloques de 512 tokens; no se declara una longitud de contexto mayor.
+- No apto para produccion: carece de tool calling, modo de razonamiento y formatos de despliegue estandar (GGUF, safetensors con config de Transformers).
+- Licencia CC-BY-4.0: permite uso comercial con atribucion, pero el modelo no esta pensado para ello y su calidad no lo justifica.
+- Perplejidad no verificada: el unico resultado declarado (42,69) figura como `verified: false` en el model-index; no hay evaluacion independiente.
+- Pesos en `.pt`: requieren el codigo del autor o una conversion manual para integrarse en stacks estandar; no hay garantia de compatibilidad con versiones futuras de PyTorch.
+- El nombre y los tags del modelo pueden inducir a confusion: aunque incluye etiquetas como "conservative-language-model" o "lagrangian-mechanics", este checkpoint concreto es la linea base GPT-2 estandar, no un modelo con mecanica lagrangiana.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/dimitarpg13/semsimula-ladder-owt-d384-gpt2-matched-2b
-- Referencia 0,53B (W2): https://huggingface.co/dimitarpg13/semsimula-ladder-owt-d384-l2-gpt2-matched
-- Variante `attention`: https://huggingface.co/dimitarpg13/semsimula-ladder-owt-d384-l2-attention
-- Colección Gen 3 (2B tokens): https://huggingface.co/collections/dimitarpg13/semantic-simulation-gen-3-2b-training-tokens-6ad56f3d2a560dd121e59b60
-- Colección Gen 3 (ladder 0,53B): https://huggingface.co/collections/dimitarpg13/semantic-simulation-gen-3-cfc-baoab-live-gradients-6abf371ea3c83f127057020c
-- Repositorio del paper (artefactos de reproducibilidad): https://github.com/dimitarpg13/semsimula-paper
-- Protocolo `Depth_Ladder_and_Matched_Baseline_Protocol.md`: https://github.com/dimitarpg13/semsimula-paper/blob/main/ (ruta exacta truncada en la información disponible)
-- Registro en free2aitools (variante attention-potential): https://free2aitools.com/model/dimitarpg13/semsimula-ladder-owt-d384-l2-attention-potential
+- Referencia a 0,53B tokens del mismo autor: https://huggingface.co/dimitarpg13/semsimula-ladder-owt-d384-l2-gpt2-matched
+- Coleccion Gen 3 (2B tokens): https://huggingface.co/collections/dimitarpg13/semantic-simulation-gen-3-2b-training-tokens-6ad56f3d2a560dd121e59b60
+- Coleccion Gen 3 (ladder de 0,53B tokens): https://huggingface.co/collections/dimitarpg13/semantic-simulation-gen-3-cfc-baoab-live-gradients-6abf371ea3c83f127057020c
+- Repositorio del paper (nota de pre-registro Matched_GPT2_Baselines.md): https://github.com/dimitarpg13/semsimula-paper
+- Dataset: https://huggingface.co/datasets/Skylion007/openwebtext

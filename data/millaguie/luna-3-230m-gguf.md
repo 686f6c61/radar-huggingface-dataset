@@ -2,107 +2,104 @@
 
 ## Resumen
 
-Luna-3-230m-GGUF es un repositorio de cuantizaciones en formato GGUF del modelo base Aobangaming/Luna-3-230m, publicado por el usuario millaguie. El modelo base es un transformer denso de 228.829.440 parámetros (aproximadamente 230M) con 12 capas, dimensión oculta de 768, 12 cabezas de atención sin GQA, vocabulario de 93.615 tokens y una longitud de contexto de 8.126 tokens. El repositorio no aporta un modelo nuevo, sino el soporte de arquitectura necesario para que estos pesos puedan ejecutarse en llama.cpp.
+Luna-3-230m-GGUF es una colección de cuantizaciones en formato GGUF del modelo base Aobangaming/Luna-3-230m, publicada por el usuario millaguie. El modelo original es un transformer denso de 230 millones de parámetros (228.829.440 exactos) con 12 capas, dimensión de 768 y 12 cabezas de atención sin GQA, entrenado con una arquitectura propietaria denominada "lightning" que no forma parte del árbol upstream de llama.cpp. El repositorio resuelve un problema concreto: los GGUF del autor original existían pero ningún binario de llama.cpp podía cargarlos, porque la arquitectura "lightning" no estaba registrada en `src/llama-arch.cpp`.
 
-El problema que resuelve este repositorio es concreto: el autor original ya publicaba ficheros GGUF bien construidos (171 tensores, nombres canónicos de llama.cpp, `rope.freq_base` y épsilon de RMS correctos), pero la arquitectura `lightning` no existe en `src/llama-arch.cpp` de llama.cpp, por lo que ninguna build estándar podía cargarlos. Este repositorio añade el parche `lightning-port.patch` que implementa dicha arquitectura, verificada contra la implementación de referencia del autor antes de publicar cualquier métrica.
+La aportación de este repositorio es doble. Por un lado, proporciona un parche (`lightning-port.patch`) que añade el soporte de arquitectura necesario para compilar llama.cpp con capacidad de cargar estos pesos. Por otro, publica dos cuantizaciones verificadas (Q8_0 y Q4_K_M) junto con una metodología de validación explícita en cinco fases que compara los logits del port contra la implementación de referencia en `transformers`. El repositorio incluye además una advertencia relevante: el fork del autor original (`AobanZu/lightning.cpp`) todavía no tokeniza de forma idéntica al modelo original, con 11 de 17 casos divergentes en `paridad-tok.txt`.
 
-La relevancia actual es doble: por un lado, demuestra un caso práctico de portado de arquitecturas no upstream a llama.cpp con verificación rigurosa (tokenizador, logits, KLD); por otro, advierte de una trampa metodológica al interpretar la columna `PPL(Q)/PPL(base)` de `llama-perplexity` en modelos de alta entropía, donde la divergencia real puede ser exactamente cero y la columna mostrar una diferencia aparente del 5,9 %.
+El modelo es relevante ahora por dos motivos. Primero, porque demuestra un patrón habitual en el ecosistema open source: pesos publicados sin soporte de runtime, y la comunidad rellenando ese hueco. Segundo, porque documenta con rigor metodológico un fenómeno poco discutido: cómo la métrica `Mean PPL(Q)/PPL(base)` de `llama-perplexity` puede reportar divergencias espurias del 5,9 % en modelos de alta entropía, incluso cuando la KLD es exactamente cero.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer denso (`lightning`), 12 capas, 768 de dimensión, 12 cabezas sin GQA |
-| Parámetros totales | 228.829.440 |
-| Parámetros activos | No aplica (modelo denso) |
+| Arquitectura | Transformer denso ("lightning"), 12 capas, 768 de dimensión, 12 cabezas sin GQA |
+| Parametros totales | 228.829.440 |
+| Parametros activos | No aplica (modelo denso, no MoE) |
 | Longitud de contexto | 8.126 tokens |
-| Tipos de cuantización | BF16 (referencia), Q8_0, Q4_K_M |
+| Tipos de cuantizacion | BF16 (referencia), Q8_0, Q4_K_M |
 | Idiomas soportados | No disponible |
 | Licencia | MIT |
-| Formato de pesos | GGUF (llama.cpp); BF16 de referencia en el mismo repositorio |
+| Formato de pesos | GGUF (los originales en safetensors en el repo base) |
 | Vocabulario | 93.615 tokens |
 | Longitud feed-forward | 4 × d_model (3.072) |
-| Base RoPE | 10.000 |
-| Épsilon RMS | 1e-6 |
-| Activación | GELU exacta (`approximate="none"`), no aproximación tanh |
-| Tamaño del repositorio | 0,9 GB |
+| RoPE base | 10.000 |
+| RMS epsilon | 1e-6 |
+| Función de activación | GELU exacta (`approximate="none"`), no aproximación tanh |
+| Tamaño del repo | 0,9 GB |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es un transformer denso de 12 capas con anchura 768 y 12 cabezas de atención sin grouped-query attention, es decir, una arquitectura convencional en su forma. Tres detalles resultan críticos para el portado: el uso de GELU exacta en lugar de la aproximación tanh (un error aquí es invisible en el texto generado, según el propio autor); doce tensores muertos (`final_norm` por bloque, nunca usados en `forward` y comentados como `# remove later lol` en el código original) que el conversor elimina; y `add_prefix_space` activado en el pre-tokenizador ByteLevel del tokenizador, a diferencia del de GPT-2, lo que hace que declarar `tokenizer.ggml.pre = gpt-2` produzca una tokenización distinta a la del modelo original.
+El modelo es un transformer denso de 230M parámetros con una forma convencional: 12 bloques, anchura 768, 12 cabezas de atención sin grouped-query attention, vocabulario de 93.615 tokens y contexto de 8.126 tokens. Tres detalles de implementación son relevantes para cualquier port: usa GELU exacta en lugar de la aproximación tanh (un error aquí es invisible en el texto generado pero medible en logits), cada bloque construye un tensor `final_norm` que su `forward` nunca utiliza (comentado como `# remove later lol` en el código del autor, y descartado por el conversor), y el tokenizador aplica `add_prefix_space` en su pre-tokenizador ByteLevel, a diferencia del de GPT-2.
 
-Tres hiperparámetros no están en `config.json` y se tomaron del código del autor: longitud feed-forward de 4 × d_model, base RoPE de 10.000 y épsilon RMS de 1e-6. No se dispone de información sobre el dataset de entrenamiento, el número de tokens, la composición de los datos ni si hubo RLHF o DPO. El repositorio no documenta innovaciones de decodificación especulativa ni atención lineal; la única innovación relevante es el propio soporte de arquitectura añadido a llama.cpp, junto con dos correcciones en el tokenizador de llama.cpp (registro del hash del pre-tokenizador y soporte de `add_space_prefix` en la rama BPE de `llama_vocab::tokenize`, que antes solo aplicaba la rama SPM).
+Tres hiperparámetros no están presentes en `config.json` y se han derivado del código del autor, no por inferencia: la longitud feed-forward es `4 * d_model`, la base RoPE es 10.000 y el epsilon de RMS es 1e-6. No se dispone de información sobre el corpus de entrenamiento, el número de tokens procesados ni si hubo fases de RLHF, DPO o ajuste por instrucciones. El modelo base se distribuye con licencia MIT.
 
 ## Capacidades
 
-- Generación de texto conversacional: el modelo está etiquetado como `conversational` y produce texto gramatical a aproximadamente 310 tokens por segundo en CPU.
-- Generación de texto base: pipeline `text-generation`.
-- Compatibilidad con endpoints: etiqueta `endpoints_compatible`.
-- No se documenta soporte de tool calling ni function calling.
-- No se documenta soporte de agentes ni razonamiento multi-paso.
-- No se documenta capacidad multilingüe; los idiomas figuran como no disponibles.
-- No se documenta visión, audio ni modo thinking.
-- Capacidad de ejecución en llama.cpp únicamente con el parche de arquitectura incluido.
+- Generación de texto conversacional: el pipeline declarado es `text-generation` y los tags incluyen `conversational`, con un formato de prompt sugerido del tipo `User: ...\nAssistant:`.
+- Generación de texto en CPU: el modelo completo en BF16 ocupa 461 MB y cabe entero en RAM, lo que permite inferencia sin GPU.
+- Cuantización con pérdida controlada: Q8_0 mantiene un 98,816 % de coincidencia en top-1 y Q4_K_M un 91,153 %, con KLD medias de 0,000227 y 0,012842 respectivamente.
+- Compatibilidad con endpoints: el tag `endpoints_compatible` sugiere integración con infraestructura de inferencia estándar una vez aplicado el parche de arquitectura.
+- No se dispone de información sobre soporte de tool calling, function calling, capacidades de agente, razonamiento multi-paso, visión, audio ni modo thinking.
+- Capacidades multilingües: no disponibles en la información proporcionada.
 
 ## Casos de uso
 
-- Experimentación con arquitecturas no upstream en llama.cpp: el repositorio sirve como referencia completa de cómo portar una arquitectura nueva (`lightning`) aplicando el parche `lightning-port.patch` y validando contra la implementación de referencia en `transformers`.
-- Validación de pipelines de cuantización: los ficheros Q8_0 y Q4_K_M con métricas KLD publicadas (0,000227 y 0,012842 de media respectivamente) permiten probar herramientas de evaluación de cuantizaciones sobre un modelo pequeño que cabe entero en RAM.
-- Pruebas de tokenizadores: el caso de `add_prefix_space` y la comparación de 8 casos entre Hugging Face y llama.cpp constituyen un banco de pruebas reproducible para validar conversiones de tokenizador BPE.
-- Desarrollo y depuración de infraestructura de inferencia: con 461 MB en BF16 y 8.126 tokens de contexto, el modelo se ejecuta íntegro en CPU sin división de capas, lo que elimina variables en pruebas de determinismo y comparación de logits.
-- Docencia y formación en portado de modelos: el repositorio documenta cinco puertas de verificación (conversión, tokenizador, anclaje de logits, controles negativos y métricas) aplicables como metodología.
-- Evaluación de modelos pequeños en entornos con recursos limitados: al caber en RAM consumer, permite experimentar con generación de texto conversacional sin GPU.
-- Investigación sobre métricas de perplejidad: el análisis del sesgo de `PPL(base)` derivado de ficheros de log-probabilidad cuantizados a `uint16` es un caso de estudio sobre interpretación de resultados de `llama-perplexity`.
+- Experimentación educativa con arquitecturas transformer: el modelo es lo bastante pequeño (230M parámetros, 461 MB en BF16) para inspeccionar el grafo completo, comparar logits contra `transformers` y estudiar el efecto de la cuantización sin necesidad de infraestructura dedicada.
+- Validación de ports de llama.cpp: el repositorio sirve como caso de referencia para quien necesite añadir una arquitectura nueva a llama.cpp, con una metodología de cinco fases (conversión, paridad de tokenizador, anclaje de logits, controles negativos y medición de cuantización) que puede replicarse.
+- Inferencia en dispositivos con recursos muy limitados: con Q4_K_M (155 MB) el modelo puede ejecutarse en CPU en entornos embebidos, Raspberry Pi o contenedores con poca memoria, siempre que se compile el llama.cpp parcheado.
+- Generación de texto de bajo coste en pipelines por lotes: para tareas donde la calidad de un modelo de 230M sea suficiente, el throughput de aproximadamente 310 t/s en CPU permite procesar volúmenes moderados sin GPU.
+- Investigación sobre cuantización: las métricas publicadas (KLD, coincidencia top-1, suelo instrumental de 0,000000) permiten estudiar el comportamiento de Q8_0 y Q4_K_M en modelos de alta perplejidad y comparar con otras técnicas de cuantización.
+- Docencia sobre tokenizadores: la discrepancia documentada entre el pre-tokenizador de Luna y el de GPT-2 (por `add_prefix_space`) constituye un caso práctico para explicar cómo pequeñas diferencias en el pre-tokenizador alteran los IDs y, por tanto, la inferencia.
 
 ## Benchmarks y rendimiento
 
-| Fichero | Bytes | KLD media | KLD mediana | Same top |
-|---|---|---|---|---|
-| BF16 (referencia) | 461.378.496 | — | — | — |
-| Q8_0 | 246.946.688 | 0,000227 | 0,000204 | 98,816 % |
-| Q4_K_M | 155.680.736 | 0,012842 | 0,011214 | 91,153 % |
+| Metrica | BF16 (referencia) | Q8_0 | Q4_K_M |
+|---|---|---|---|
+| Tamano en bytes | 461.378.496 | 246.946.688 | 155.680.736 |
+| KLD media | — | 0,000227 | 0,012842 |
+| KLD mediana | — | 0,000204 | 0,011214 |
+| Coincidencia top-1 | — | 98,816 % | 91,153 % |
+| Perplejidad wikitext-2 | 9.780,30 ± 295,33 | no reportada | no reportada |
 
-Medición sobre wikitext-2 test, 100 fragmentos de 512 tokens, con `-fa on --seed 0 -ngl 0`, todo en CPU. El suelo del instrumento es exactamente 0,000000 con same-top del 100,000 % y una Δp máxima del 0,004 %, lo que confirma que las cifras anteriores corresponden al cuantizador y no al ruido de medición.
-
-La perplejidad absoluta del BF16 de referencia es 9.780,30 ± 295,33 sobre wikitext-2, valor que el autor atribuye al modelo (entrenado sobre otra distribución y evaluado sobre prosa de Wikipedia en inglés), no al portado. La comparación con `transformers` reproduce dentro de tolerancia con un factor de 285× de margen. El autor advierte además que la columna `Mean PPL(Q)/PPL(base)` de `llama-perplexity` marca 1,058983 incluso en la ejecución de suelo con KLD exactamente cero, por el sesgo de aproximadamente 0,057 nats introducido por el fichero de log-probabilidades cuantizado a `uint16` sobre un rango recortado.
+Medición sobre wikitext-2 test, 100 fragmentos de 512 tokens, con `-fa on --seed 0 -ngl 0`, todo en CPU. El suelo instrumental es exactamente 0,000000 con coincidencia top-1 del 100,000 % y una Δp máxima del 0,004 %, lo que confirma que las cifras de cuantización reflejan únicamente al cuantizador.
 
 No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM/RAM estimada: BF16 requiere unos 461 MB; Q8_0 unos 247 MB; Q4_K_M unos 156 MB. El modelo completo cabe en RAM sin división de capas.
-- GPU recomendadas: no se especifican; las pruebas publicadas se ejecutaron íntegramente en CPU (`-ngl 0`). Cualquier GPU consumer con más de 1 GB de VRAM puede alojarlo, aunque no hay datos de rendimiento en GPU.
-- Cabe en cualquier GPU consumer y en sistemas integrados con al menos 1 GB de memoria disponible.
-- Opciones de despliegue: llama.cpp con el parche `lightning-port.patch` aplicado y compilado. Una build estándar falla con `unknown model architecture: 'lightning'`. No se documenta compatibilidad con vLLM, TGI, Ollama ni otros motores.
-- Rendimiento: aproximadamente 310 tokens por segundo en CPU para generación de texto, según el autor.
-- Requisito de compilación: es imprescindible aplicar el parche incluido en el repositorio antes de cargar los ficheros.
+- VRAM estimada: no requiere GPU. El modelo completo en BF16 ocupa 461 MB y cabe entero en RAM; Q8_0 ocupa 247 MB y Q4_K_M 156 MB.
+- GPU recomendadas: ninguna en particular; cualquier GPU con al menos 1 GB de VRAM podría alojar el modelo, aunque el repositorio solo documenta ejecución en CPU (`-ngl 0`).
+- Cabe en cualquier GPU de consumo: RTX 4090, RTX 3060, GTX 1650 o incluso iGPU con memoria compartida suficiente.
+- Opciones de despliegue: llama.cpp con el parche `lightning-port.patch` aplicado y compilado. No es compatible con builds upstream de llama.cpp (`unknown model architecture: 'lightning'`), ni con el fork `AobanZu/lightning.cpp` en su estado actual (falla con `unknown pre-tokenizer type: 'lightning'`). Ollama, vLLM y TGI no están documentados como soportados.
+- Throughput: aproximadamente 310 tokens por segundo en CPU según la model card.
+- Latencia: no disponible de forma desagregada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Licencia | Formato | Notas |
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| Luna-3-230m (este repo, GGUF) | 228.829.440 | 8.126 | MIT | GGUF | Requiere llama.cpp parcheado |
-| Aobangaming/Luna-3-230m | 228.829.440 | 8.126 | MIT | Pesos originales (transformers) | Modelo base de referencia |
-| Modelos de ~230M tipo GPT-2 small | ~124M–350M | Variable | Variable | Safetensors, GGUF | No disponible comparación directa de rendimiento en la información proporcionada |
+| Luna-3-230m | 228,8M | 8.126 | MIT | GGUF (parcheado) | Requiere llama.cpp con parche; perplejidad wikitext-2 de 9.780 |
+| GPT-2 small | 124M | 1.024 | MIT | safetensors, GGUF | Soporte upstream en llama.cpp; perplejidad wikitext-2 en torno a 30 |
+| TinyLlama-1.1B | 1.100M | 2.048 | Apache 2.0 | safetensors, GGUF | Soporte upstream; mayor calidad pero 5× más parámetros |
+| SmolLM-135M | 135M | 2.048 | Apache 2.0 | safetensors, GGUF | Soporte upstream; contexto mayor |
 
-No se dispone de datos de benchmarks comparativos con alternativas de la misma categoría en la información proporcionada. La comparación más directa posible es contra el propio modelo base Aobangaming/Luna-3-230m, del que este repositorio es una cuantización verificada.
+La comparación con GPT-2 small es la más directa por tamaño y licencia, pero conviene señalar que la perplejidad de Luna en wikitext-2 (9.780) es dos órdenes de magnitud superior a la de GPT-2 small, lo que sugiere que el modelo no fue entrenado sobre prosa de Wikipedia en inglés y que las métricas absolutas de perplejidad no son comparables entre ambos.
 
 ## Limitaciones y advertencias
 
-- Requiere una build parcheada de llama.cpp: sin `lightning-port.patch` aplicado, la carga falla con `unknown model architecture: 'lightning'`.
-- Perplejidad absoluta muy alta (9.780,30 ± 295,33 en wikitext-2), lo que refleja un modelo entrenado sobre una distribución distinta a la prosa de Wikipedia en inglés; no debe interpretarse como fallo del portado.
-- La columna `PPL(Q)/PPL(base)` de `llama-perplexity` no es fiable en este modelo por el sesgo del fichero de log-probabilidades cuantizado; el autor recomienda leer la KLD e ignorar esa columna.
-- Idiomas soportados no documentados; no hay garantía de calidad multilingüe.
-- Sin información sobre sesgos conocidos ni sobre tasas de alucinación.
-- Sin documentación de entrenamiento (datos, tokens, alineación), lo que impide evaluar procedencia y sesgos de los datos.
-- Ausencia de soporte documentado de tool calling, agentes o razonamiento multi-paso, lo que limita su uso en pipelines de producción complejos.
-- Contexto de 8.126 tokens, adecuado para conversaciones cortas pero insuficiente para documentos largos o análisis de repositorios.
-- Licencia MIT: permite uso comercial, pero al ser una cuantización de un modelo de terceros conviene verificar la licencia y procedencia del modelo base antes de desplegarlo en producción.
-- El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, sin validación comunitaria adicional.
+- Requiere un llama.cpp parcheado: los binarios oficiales fallan con `unknown model architecture: 'lightning'`. Sin compilar el parche, los pesos son inutilizables.
+- El fork del autor original (`AobanZu/lightning.cpp`, commit `c71a1c4`) carga y genera, pero no tokeniza igual que el modelo original: 11 de 17 casos de `paridad-tok.txt` producen IDs distintos a `transformers`.
+- Perplejidad muy alta en wikitext-2 (9.780,30 ± 295,33), lo que indica que el modelo no está especializado en prosa enciclopédica en inglés y que su calidad general es limitada.
+- La métrica `Mean PPL(Q)/PPL(base)` de `llama-perplexity` no es fiable en este modelo: reporta una divergencia del 5,9 % incluso cuando la KLD es exactamente cero, por un sesgo de aproximadamente 0,057 nats derivado de la cuantización a `uint16` del archivo de log-probabilidades. Debe leerse la KLD, no esa columna.
+- Idiomas soportados no documentados: no se puede garantizar un rendimiento aceptable en castellano ni en ningún otro idioma distinto del inglés sin evaluación previa.
+- No hay información sobre sesgos, alineación, RLHF o filtrado de datos de entrenamiento.
+- Riesgo de alucinación: no cuantificado, pero esperable en un modelo de 230M parámetros sin ajuste por instrucciones documentado.
+- Licencia MIT: permite uso comercial, modificación y redistribución, pero el parche de arquitectura debe aplicarse por separado y el modelo base conserva su propia licencia MIT.
+- El repositorio tiene 448 descargas y 0 likes, lo que sugiere una adopción muy limitada y poca validación comunitaria independiente.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/millaguie/Luna-3-230m-GGUF
+- Repositorio GGUF: https://huggingface.co/millaguie/Luna-3-230m-GGUF
 - Modelo base: https://huggingface.co/Aobangaming/Luna-3-230m
-- Parche de arquitectura: `lightning-port.patch` (incluido en el repositorio)
-- llama.cpp: no se proporciona enlace en la información disponible
+- GGUF del autor original: https://huggingface.co/Aobangaming/Luna-3-230m-GGUF
+- Fork de llama.cpp del autor: https://github.com/AobanZu/lightning.cpp

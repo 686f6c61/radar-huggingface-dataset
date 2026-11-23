@@ -2,88 +2,92 @@
 
 ## Resumen
 
-Seedreamstyle-H3-6K es un adaptador LoRA de estilo fotografico entrenado sobre el modelo de generacion de imagenes MiniMax H3 Image. Lo desarrolla el usuario Nebsh y su objetivo es trasladar a H3 el aspecto cinematografico de Seedream 5.5 (contraste, iluminacion practica y grano fotografico) en escenas con personas: retratos, conversaciones, distintas edades y entornos con luz natural o artificial. No es un modelo base, sino un complemento que se carga junto al checkpoint de MiniMax H3 Image.
+Seedreamstyle-H3-6K es un adaptador LoRA de estilo fotografico para el modelo de generacion de imagenes MiniMax H3 Image, desarrollado por el usuario independiente Nebsh. No se trata de un modelo base, sino de un ajuste fino ligero (rank 16) que se aplica sobre MiniMaxAI/MiniMax-H3-Image para reproducir el aspecto visual cinematografico caracteristico de Seedream 5.5, un modelo de imagen cerrado que el autor cita como su referencia favorita en cuanto a equilibrio de contraste, iluminacion y grano fotografico.
 
-El adaptador se entreno hasta el paso global 6.000, con un rango LoRA de 16 y alpha 16, sobre un dataset de continuacion congelado de 1.134 pares imagen/caption a aproximadamente 1 megapixel y con buckets por relacion de aspecto. El repositorio ocupa 0,3 GB y contiene un unico archivo safetensors, ademas de la galeria comparativa de veinte escenas.
+El LoRA esta orientado a escenas humanas: retratos, conversaciones, personas de edades variadas, iluminacion practica y planos de entorno. Se distribuye como un unico archivo safetensors de aproximadamente 1,8 GB dentro de un repositorio que tambien incluye checkpoints intermedios (de 2.000 a 6.000 pasos de entrenamiento) y una galeria comparativa de veinte escenas frente al modelo de referencia Seedream 5.5. La version recomendada por el autor es la de 6.000 pasos totales.
 
-Es relevante para quien ya trabaja con MiniMax H3 Image en ComfyUI y quiere un acabado fotografico concreto sin cambiar de modelo base. La licencia es la MiniMax H3 Image Community License Agreement, no una licencia abierta estandar, lo que condiciona el uso comercial y la redistribucion.
+Su relevancia actual reside en que demuestra como un adaptador ligero y entrenado de forma independiente puede aproximar el estilo de un modelo propietario sobre una base abierta, con un flujo de trabajo reproducible en ComfyUI y una receta de inferencia concreta (LCM, 6 pasos, CFG 1). El modelo solo declara soporte de ingles en los prompts.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
 | Arquitectura | LoRA (adaptador de bajo rango) sobre el modelo de difusion MiniMax H3 Image |
-| Parametros totales | no disponible (repo de 0,3 GB; rango LoRA 16, alpha 16) |
+| Parametros totales | no disponible (el adaptador ocupa 1,8 GB en safetensors; el modelo base no se detalla) |
 | Parametros activos | no aplica (no es MoE) |
-| Longitud de contexto | no disponible (modelo text-to-image) |
-| Tipos de cuantizacion | no disponible; probado con checkpoint `minimax_h3_image_pruned_int8_convrot.safetensors` |
-| Idiomas soportados | en (prompts en ingles) |
+| Longitud de contexto | no aplica (modelo text-to-image; no hay ventana de contexto de texto) |
+| Tipos de cuantizacion | no disponible para el LoRA; el checkpoint base probado es `minimax_h3_image_pruned_int8_convrot.safetensors` (int8) |
+| Idiomas soportados | en (ingles) |
 | Licencia | minimax-h3-image-community-license-agreement (etiquetada como "other") |
-| Formato de pesos | safetensors (`Seedreamstyle_H3_Resume_6K.safetensors`) |
+| Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
 
-Se trata de un LoRA, no de un transformer completo: un conjunto de matrices de bajo rango que se inyectan en las capas del modelo base MiniMax H3 Image. El rango y el alpha son ambos 16, lo que da una capacidad de adaptacion moderada, adecuada para un ajuste de estilo y no para reaprender contenido. El entrenamiento se realizo con el optimizador Automagic3, learning rate 0,00028, EMA 0,98, batch 1 y acumulacion 1.
+El adaptador es un LoRA de rango 16 con alpha 16, pensado para inyectarse en las capas del modelo base MiniMax H3 Image a traves del nodo LoRA Loader de ComfyUI en modo "Model Only". El entrenamiento se realizo en dos fases: una primera etapa de 2.000 pasos sobre un dataset original de 43 imagenes, seguida de una continuacion hasta los 6.000 pasos totales (4.000 pasos adicionales) sobre un dataset ampliado y congelado de 1.134 pares imagen-caption que incluye las 43 originales. La resolucion objetivo de entrenamiento fue de aproximadamente 1 megapixel, con buckets por relacion de aspecto.
 
-El entrenamiento alcanzo el paso global 6.000, con una fase de continuacion de 2.000 a 6.000 (4.000 pasos adicionales) sobre un dataset congelado de 1.134 pares imagen/caption, incluidos los 43 originales. La resolucion objetivo fue de aproximadamente 1 megapixel con buckets por relacion de aspecto. Las imagenes de referencia del dataset fueron aportadas por dos colaboradores (47 y alrededor de 100 imagenes). No se documentan tecnicas como RLHF, DPO ni decodificacion especulativa, ya que el objeto es un adaptador de estilo para generacion de imagen.
+Los hiperparametros documentados son: optimizador Automagic3, learning rate 0,00028, EMA 0,98, batch size 1 con acumulacion 1. El disparador textual es `seedreamstyle.` al inicio del prompt. La receta de inferencia recomendada por el autor es LCM con 6 pasos, CFG 1 y scheduler simple, usando fuerza de LoRA 1.0. Las comparaciones de la galeria emplean el nodo `MiniMaxH3PromptWeight` de KJ en modo "text with empty image" activo sobre el 0-25% del proceso. No se documentan innovaciones arquitectonicas propias mas alla del ajuste de estilo.
 
 ## Capacidades
 
-- Aplicacion de un estilo fotografico cinematografico tipo Seedream 5.5 sobre generaciones de MiniMax H3 Image.
-- Renderizado de retratos y escenas con personas: parejas, conversaciones, distintas edades, planos de cintura para arriba y escenas ambientales.
-- Iluminacion practica y mixta: luz de ventana, lamparas de mesa, neon, luz de tormenta.
-- Textura de piel natural y grano fotografico contenido.
-- Control mediante trigger word `seedreamstyle.` al inicio del prompt.
-- Compatible con el flujo de ComfyUI (LoRA Loader, modo Model Only) y con el nodo `MiniMaxH3PromptWeight` de KJ.
-- No dispone de tool calling, agentes, razonamiento multi-paso ni capacidades de audio o video: es exclusivamente text-to-image.
+- Generacion de imagenes fotorrealistas con estetica cinematografica a partir de prompts de texto en ingles.
+- Reproduccion de un estilo fotografico concreto: contraste equilibrado, iluminacion practica (logica de fuentes de luz en escena) y grano fotografico contenido.
+- Especializado en escenas humanas: retratos, planos de conversacion, personas de distintas edades y planos medios o de cuerpo entero.
+- Escenas de entorno e interiores con iluminacion mixta (por ejemplo, luz natural fria combinada con lamparas calidas).
+- Aplicacion como adaptador de estilo sobre MiniMax H3 Image; no funciona de forma autonoma sin el modelo base.
+- Soporte de control de semilla numerica y de pesos de prompt por region temporal (via MiniMaxH3PromptWeight).
+- No dispone de tool calling, function calling, capacidades de agente ni razonamiento multi-paso: es un modelo puramente text-to-image.
+- Capacidad multilingue limitada al ingles en los prompts.
 
 ## Casos de uso
 
-- Retrato editorial: usar el trigger `seedreamstyle.` con una descripcion de plano y luz para obtener retratos con grano y contraste de aspecto cinematografico, utiles en publicaciones y portfolios.
-- Storytelling visual de escenas cotidianas: generar conversaciones en interiores (veranda, cocina, sala de espera) con iluminacion mixta coherente, aprovechando el entrenamiento sobre escenas con personas.
-- Previsualizacion de iluminacion para fotografia o cine: generar referencias de luz practica (lampara calida frente a luz fria de ventana) antes de un rodaje.
-- Contenido para redes y campanas: producir imagenes de estilo fotografico con semilla fija y receta LCM (6 pasos, CFG 1, scheduler simple) para iterar rapido en ComfyUI.
-- Comparacion de estilos en investigacion: usar la galeria de veinte escenas y el manifiesto de comparacion para evaluar la deriva de estilo entre 2.000 y 6.000 pasos frente a Seedream 5.5.
-- Generacion de variantes con control de semilla: mantener descripciones y semillas numericas para reproducir composiciones y medir el efecto del adaptador frente al modelo base sin LoRA.
+- Retrato editorial y fotografia de moda: el LoRA aporta textura de piel natural, grano contenido y una iluminacion cinematografica adecuada para maquetas de editoriales o pruebas de concepto visuales antes de una sesion real.
+- Storyboarding y previsualizacion cinematografica: permite generar planos de conversacion (por ejemplo, dos personas en un plano medio) con coherencia de iluminacion de escena, util para equipos de direccion de arte que necesitan referencias rapidas.
+- Ilustracion de narrativa y ficcion: escenas de interiores y exteriores con luz atmosferica (tormenta, lluvia, luz de tarde) para acompañar relatos, articulos o guiones.
+- Prototipado de campanas publicitarias: generar variaciones de una misma escena con semilla fija para evaluar como responde la estetica antes de contratar produccion fotografica.
+- Generacion de material para videojuegos o entornos narrativos: conceptos de personajes y ambientes con un tono fotografico realista coherente entre imagenes.
+- Experimentacion e investigacion sobre transferencia de estilo: sirve como caso de estudio reproducible de como un LoRA de rango 16 aproxima el look de un modelo propietario, con checkpoints intermedios para analizar la evolucion del estilo a lo largo del entrenamiento.
+- Uso en pipelines de ComfyUI: integrable en flujos automatizados de generacion por lotes con LCM a 6 pasos para producir volumen de imagenes con bajo coste computacional por muestra.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks cuantitativos (FID, CLIP score, etc.) en la informacion disponible. La model card incluye una galeria comparativa cualitativa de veinte escenas con cuatro variantes por tablero (sin LoRA, LoRA 2.000 pasos, LoRA 6.000 pasos y Seedream 5.5), generadas a 8448 x 4736 (~40 MP) para H3 y 2736 x 1536 (2K nativo) para Seedream 5.5. El propio autor advierte que la comparacion evalua apariencia e interpretacion del prompt, no detalle a resolucion emparejada.
+No se han publicado resultados de benchmarks cuantitativos (FID, CLIP score, evaluaciones humanas con metricas) en la informacion disponible. El autor presenta una galeria comparativa cualitativa de veinte escenas frente a Seedream 5.5, con semillas y ajustes identicos, pero sin metricas numericas. Las imagenes H3 se generaron a 8448 x 4736 (aproximadamente 40 MP) y las referencias de Seedream 5.5 a 2736 x 1536 (2K nativo); el propio autor advierte que no se trata de una comparacion a resolucion igualada.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible de forma especifica para el LoRA; depende del checkpoint base MiniMax H3 Image. El adaptador anade una sobrecarga minima (repo de 0,3 GB).
-- GPU recomendadas: no disponible en la informacion proporcionada.
-- Compatibilidad con GPU de consumo: no disponible; el checkpoint probado es una version int8 podada, lo que sugiere que el autor busco reducir requisitos, pero no se documentan cifras.
-- Opciones de despliegue: ComfyUI con LoRA Loader (Model Only), checkpoint `minimax_h3_image_pruned_int8_convrot.safetensors`, receta LCM con 6 pasos, CFG 1 y scheduler simple.
-- Latencia y throughput: no disponibles.
+- El adaptador pesa aproximadamente 1,8 GB en safetensors y se suma a los requisitos del modelo base MiniMax H3 Image, que no se detallan en la informacion disponible.
+- VRAM estimada para inferencia: no disponible de forma explicita; depende del checkpoint base. El checkpoint probado es una version podada en int8 (`minimax_h3_image_pruned_int8_convrot.safetensors`), lo que reduce los requisitos frente a los pesos completos.
+- GPU recomendadas: no disponibles en la informacion proporcionada.
+- Compatibilidad con GPU de consumo: no confirmada en la documentacion; la generacion a 40 MP reportada sugiere requisitos de memoria elevados.
+- Opciones de despliegue: ComfyUI (flujo documentado, con LoRA Loader en modo Model Only y el nodo MiniMaxH3PromptWeight de KJ). Otras opciones como vLLM, llama.cpp, Ollama o TGI no aplican a un modelo de difusion de imagen.
+- Latencia y throughput: no disponibles; la receta LCM con 6 pasos y CFG 1 esta pensada para reducir el coste de muestreo frente a configuraciones de mas pasos.
 
 ## Comparativa con modelos similares
 
-| Modelo | Tipo | Base | Estilo objetivo | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| Seedreamstyle-H3-6K | LoRA de estilo | MiniMax H3 Image | Fotografico cinematografico tipo Seedream 5.5 | MiniMax H3 Image Community License | Hugging Face (Nebsh) |
-| MiniMax H3 Image (sin LoRA) | Modelo base text-to-image | — | Generico | MiniMax H3 Image Community License | Hugging Face (MiniMaxAI) |
-| Seedream 5.5 | Modelo cerrado text-to-image | — | Fotografico cinematografico | Propietaria | Comfy Cloud |
-
-No se dispone de datos de rendimiento cuantitativos para establecer una comparacion numerica entre estas opciones.
+| Modelo | Tipo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
+|---|---|---|---|---|---|---|
+| Seedreamstyle-H3-6K | LoRA de estilo sobre MiniMax H3 Image | rank 16, 1,8 GB | no aplica | Comparacion cualitativa con Seedream 5.5; sin metricas | minimax-h3-image-community-license-agreement | Hugging Face, 5.434 descargas, 126 likes |
+| Seedream 5.5 | Modelo de imagen cerrado | no disponible | no aplica | Referencia de estilo del autor | propietaria | Solo servicio (Comfy Cloud en los ejemplos) |
+| MiniMax H3 Image (base) | Modelo de difusion text-to-image | no disponible | no aplica | Base sobre la que se aplica el LoRA | minimax-h3-image-community-license-agreement | Hugging Face (MiniMaxAI) |
+| Otros LoRA de estilo para H3 | Adaptadores de bajo rango | no disponible | no aplica | no disponible | variable | Hugging Face |
 
 ## Limitaciones y advertencias
 
-- Es un adaptador de estilo, no un modelo autonomo: requiere el checkpoint base MiniMax H3 Image y no funciona por si solo.
-- Solo soporta prompts en ingles segun la metadata del repositorio.
-- Entrenado sobre un dataset relativamente pequeno (1.134 pares), lo que puede limitar la generalizacion a escenas muy distintas de las de entrenamiento.
-- La galeria incluye regeneraciones posteriores en las escenas 10, 14 y 15 (cambios de descripcion de sujeto y cierre de ventanas), lo que indica sensibilidad a la formulacion del prompt y posibles sesgos en la representacion de personas.
-- Riesgo de alucinacion visual: el LoRA puede introducir elementos de estilo no solicitados o alterar detalles de la escena.
-- Licencia MiniMax H3 Image Community License Agreement: no es una licencia open source estandar; es necesario revisar sus terminos antes de cualquier uso comercial o redistribucion.
-- El autor advierte que las comparaciones con Seedream 5.5 no son un benchmark de detalle a resolucion emparejada y que semillas identicas entre modelos no implican composiciones identicas.
-- Repositorio con 0 descargas y 0 likes en el momento de la consulta: sin validacion comunitaria.
+- Solo funciona como adaptador sobre MiniMax H3 Image; no es un modelo autonomo y requiere descargar el base por separado.
+- Prompts unicamente en ingles segun la model card; el rendimiento en otros idiomas no esta documentado.
+- Especializado en escenas humanas y estetica fotografica concreta; puede no responder bien a otros dominios (ilustracion, anime, objetos tecnicos, texto en imagen).
+- Riesgo de sesgos heredados del dataset de entrenamiento (1.134 pares imagen-caption, en parte donados por terceros) y del modelo base, sin documentacion sobre diversidad demografica.
+- Riesgo de alucinacion visual: como modelo generativo, puede producir detalles anatomicos o de iluminacion fisicamente inconsistentes, especialmente en planos complejos.
+- La licencia es la "minimax-h3-image-community-license-agreement", etiquetada como "other"; es imprescindible revisar sus terminos antes de cualquier uso comercial, ya que puede imponer restricciones adicionales.
+- El autor advierte que la comparacion con Seedream 5.5 no es una prueba a resolucion igualada (40 MP frente a 2K nativo) y que semillas identicas entre modelos distintos no implican composiciones equivalentes.
+- Los checkpoints intermedios (2.500 a 5.500 pasos) no han sido evaluados de forma separada; solo se comparan 2K y 6K en la galeria.
+- El repositorio incluye imagenes de ejemplo generadas por IA que no deben tomarse como fotografia real.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/Nebsh/Seedreamstyle-H3-6K
+- Modelo en Hugging Face: https://huggingface.co/Nebsh/Seedreamstyle-H3-6K
 - Modelo base: https://huggingface.co/MiniMaxAI/MiniMax-H3-Image
-- Galeria independiente: Gallery.html (incluida en el repositorio)
-- Descarga de la galeria: Comparison_Gallery.zip (incluida en el repositorio)
-- Manifiesto de comparacion: comparison_manifest.json (incluido en el repositorio)
-- Publicacion de la comunidad: Discord_post.txt (incluido en el repositorio)
+- Checkpoint recomendado: https://huggingface.co/Nebsh/Seedreamstyle-H3-6K/blob/main/Seedreamstyle_H3_Resume_6K.safetensors
+- Galeria comparativa: https://huggingface.co/Nebsh/Seedreamstyle-H3-6K/blob/main/Gallery.html
+- Manifiesto de comparacion: https://huggingface.co/Nebsh/Seedreamstyle-H3-6K/blob/main/comparison_manifest.json
+- Manifiesto de checkpoints (tamaños y SHA-256): https://huggingface.co/Nebsh/Seedreamstyle-H3-6K/blob/main/checkpoints/manifest.json
+- Licencia: https://huggingface.co/Nebsh/Seedreamstyle-H3-6K/blob/main/LICENSE

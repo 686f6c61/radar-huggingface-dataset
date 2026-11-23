@@ -2,102 +2,103 @@
 
 ## Resumen
 
-Akal-1B es un modelo de lenguaje derivado de Google Gemma-3-1B-IT, publicado por Muhammad Luqni Baehaqi bajo la iniciativa Akal LM. Se distribuye exclusivamente en formato GGUF Q4_K_M, cuantizado con una matriz de importancia (imatrix) calibrada especificamente para indonesio, con el objetivo de ofrecer inferencia rapida en CPU sobre hardware de bajos recursos (portatiles de oficina, mini-PC industriales, terminales punto de venta e IoT sin GPU dedicada).
+Akal-1B es una cuantización GGUF optimizada del modelo Gemma-3-1B-IT de Google DeepMind, desarrollada por Muhammad Luqni Baehaqi bajo la organización Akal LM Initiative. Su objetivo es ofrecer inferencia de un LLM conversacional en hardware de bajos recursos sin GPU dedicada, como portátiles de empresa, mini-PC industriales, terminales punto de venta o pasarelas IoT. El modelo parte de los 999.885.952 parámetros del Gemma-3-1B-IT original y se distribuye en formato GGUF Q4_K_M con un peso aproximado de 762 MB.
 
-El modelo mantiene la arquitectura original de Gemma 3 con 1.000 millones de parametros y una ventana de contexto que el autor limita a 2.048 tokens en los ejemplos de uso. La propuesta de valor no es la capacidad bruta, sino la eficiencia: el autor reporta 21,0-28,4 tokens/s de decodificacion y un consumo de RAM pico inferior a 938 MB en un Intel Core i5-8250U, con una perplejidad de 11,20 en indonesio frente a 11,66 del Gemma-3-1B-IT original cuantizado de la misma forma.
+La innovación principal es el uso de una matriz de importancia (imatrix) específica para indonesio durante la cuantización, lo que según el autor permite preservar mejor la fidelidad conversacional y de razonamiento en ese idioma. Se distribuye junto a un ecosistema de modelos complementarios para RAG y decodificación especulativa: Akal-Embed-GGUF, Akal-Rerank-GGUF y Akal-Nano-270M-GGUF.
 
-Es relevante ahora porque cubre un nicho concreto: despliegue on-device en CPU sin GPU, con calibracion linguistica para indonesio. No obstante, el repositorio tiene 0 descargas y 0 likes en el momento de la consulta, y el propio autor es el unico evaluador de los benchmarks publicados, por lo que los datos deben tratarse como no verificados de forma independiente.
+El modelo está orientado explícitamente a entornos de borde con CPU, con objetivos declarados de menos de 300 ms hasta el primer token y entre 21 y 28 tokens por segundo en CPUs de portátiles y mini-PC convencionales. Soporta indonesio e inglés, y su licencia es la Gemma de Google, con las restricciones que ello implica para uso comercial.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (Gemma 3), derivado de google/gemma-3-1b-it |
-| Parametros totales | 1.000 millones (1.00B) |
-| Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | 2.048 tokens (configurado en los ejemplos del autor); ventana nativa de Gemma 3 no indicada en la informacion disponible |
-| Tipos de cuantizacion | GGUF Q4_K_M con imatrix de indonesio (unico formato publicado) |
+| Arquitectura | Transformer decoder-only (Gemma 3), cuantizado a GGUF |
+| Parametros totales | 999.885.952 (1,00B) |
+| Parametros activos | no aplica (modelo denso, no MoE) |
+| Longitud de contexto | no disponible en la informacion proporcionada |
+| Tipos de cuantizacion | Q4_K_M (cuantizacion principal publicada); otras variantes no disponibles |
 | Idiomas soportados | indonesio (id), ingles (en) |
-| Licencia | Gemma License (Google) |
-| Formato de pesos | GGUF (fichero akal-1b-q4_k_m.gguf, 762 MB) |
+| Licencia | Gemma (Google) |
+| Formato de pesos | GGUF (llama.cpp) |
+| Tamano del repo | 7,3 GB |
+| Tamano del modelo cuantizado | ~762 MB (Q4_K_M) |
+| Modelo base | google/gemma-3-1b-it |
+| Libreria | gguf |
+| Pipeline | text-generation |
 
 ## Arquitectura y entrenamiento
 
-Akal-1B no es un modelo entrenado desde cero: es un ajuste de cuantizacion del modelo instructivo google/gemma-3-1b-it. La innovacion declarada consiste en el uso de una matriz de importancia (imatrix) calibrada con un corpus de dominio indonesio (`imatrix_id.dat`, 1,4 MB) para guiar la cuantizacion Q4_K_M en llama.cpp, de modo que los pesos mas sensibles para ese idioma conserven mayor precision. El autor reporta una perplejidad en indonesio de 11,20 frente a 11,66 del Gemma-3-1B-IT cuantizado con Q4_K_M estandar, una mejora modesta pero medible segun sus datos.
+Akal-1B no es un modelo entrenado desde cero, sino una cuantización del Gemma-3-1B-IT de Google. La arquitectura subyacente es la de Gemma 3 en su variante de 1B parámetros, un transformer decoder-only con atención multi-cabeza estándar. El proceso de compresión aplicado es una cuantización de bloques a Q4_K_M mediante llama.cpp, guiada por una importance matrix (imatrix) construida específicamente sobre corpus en indonesio. El autor afirma que esta imatrix permite preservar la fidelidad conversacional y de razonamiento en indonesio mejor que una cuantización genérica, y que el resultado ofrece hasta un 300% más de throughput y un 70% menos de huella de RAM frente a runtimes comunitarios no vectorizados.
 
-No se dispone de informacion sobre el volumen de tokens de calibracion, la composicion exacta del corpus de imatrix ni si hubo etapas adicionales de ajuste fino supervisado, RLHF o DPO mas alla del modelo base. Tampoco se detalla si se aplicaron tecnicas de decodificacion especulativa o atencion lineal; el modelo hereda las caracteristicas del Gemma 3 original. El autor publica un preprint (`Akal_Edge_LLM_Research_Paper.pdf`, CC-BY 4.0) con la metodologia y el analisis de ablacion, pero no se ha verificado de forma independiente.
+No se dispone de información sobre el volumen de tokens de entrenamiento original de Gemma-3-1B-IT, la composición del dataset ni si hubo fases de RLHF o DPO, más allá de lo que publique la documentación oficial de Google para el modelo base. Tampoco se detalla en la información proporcionada el proceso exacto de construcción de la imatrix (tamaño del corpus, composición, metodología de ponderación). El autor publica dos preprints académicos (Vol. 1 sobre el LLM de borde y Vol. 3 sobre cirugía en el espacio de pesos, decodificación especulativa y reranking) que presumiblemente contienen estos detalles, pero su contenido no está disponible en la información consultada.
 
 ## Capacidades
 
-- Generacion de texto conversacional en indonesio e ingles, heredada de Gemma-3-1B-IT.
-- Razonamiento basico y respuesta a instrucciones de complejidad baja o media, acorde a un modelo de 1B parametros.
-- Generacion de codigo y matematicas simples (capacidad del modelo base, no evaluada especificamente en la informacion disponible).
-- Inferencia en CPU pura mediante llama.cpp, Ollama y llama-cpp-python, sin necesidad de GPU.
-- Ejecucion en dispositivos edge con menos de 1 GB de RAM pico segun el autor.
-- Capacidades multilingues limitadas a indonesio e ingles; el resto de idiomas del modelo base no se declaran soportados.
-- No se documenta soporte de tool calling, function calling, agentes multi-paso, vision, audio ni modo thinking en la informacion disponible.
+- Generación de texto conversacional en indonesio e inglés, con corrección gramatical y reformulación de registro informal a formal.
+- Razonamiento básico y respuesta a preguntas de conocimiento general, limitado por su tamaño de 1B parámetros.
+- Resumen y pulido de textos cortos: memorandos, correos, notas de campo.
+- Clasificación de texto y extracción de entidades estructuradas (nombres, identificadores de pedido, esquemas JSON simples).
+- Enrutamiento de intenciones en sistemas de atención al cliente o microservicios.
+- Integración en pipelines RAG locales junto a modelos de embedding y reranking del mismo autor (Akal-Embed, Akal-Rerank).
+- Escritura de scripts cortos (menos de 30 líneas según el autor) y explicación de sintaxis de programación básica.
+- Compatibilidad con endpoints (tag `endpoints_compatible` en Hugging Face).
+- Decodificación especulativa mediante el modelo borrador Akal-Nano-270M-GGUF del mismo ecosistema.
+- No se documenta soporte explícito de tool calling, function calling ni modo de razonamiento extendido (thinking mode) en la información disponible.
 
 ## Casos de uso
 
-- Atencion al cliente en indonesio sobre terminales de punto de venta: el modelo cabe en menos de 1 GB de RAM, lo que permite desplegarlo en cajas registradoras o mostradores sin GPU para responder consultas frecuentes y guiones de venta con baja latencia (TTFT de ~294-448 ms segun el autor).
-- Asistentes de oficina en portatiles de gama baja: con 762 MB en disco y menos de 950 MB de RAM pico, puede integrarse en aplicaciones de escritorio para redaccion de correos, resumenes y respuestas guiadas en indonesio e ingles.
-- Procesamiento de lenguaje natural en gateways IoT industriales: al no requerir GPU ni swap, es viable en pasarelas con 1,5 GB de RAM libre para clasificacion de incidencias, extraccion de entidades o generacion de alertas en texto.
-- Prototipado rapido y demos offline: su formato GGUF y su integracion con Ollama permiten levantar un chatbot local en minutos sin infraestructura cloud, util para validar flujos conversacionales antes de escalar a modelos mayores.
-- Educacion y tutoria en indonesio: el modelo puede generar explicaciones y ejercicios en dicho idioma, con la ventaja de la calibracion imatrix que preserva calidad linguistica en ese dominio frente a cuantizaciones genericas.
-- Sustitucion de envoltorios PyTorch en CPU: el autor reporta hasta 3 veces mas throughput (21-28 tok/s) frente a alternativas como WiTi4Bit (6,9-9,2 tok/s), lo que lo hace adecuado para pipelines de generacion por lotes en servidores sin acelerador.
-- Filtrado y moderacion de contenido en tiempo real en entornos con recursos limitados, aprovechando el bajo consumo de memoria y la velocidad de decodificacion.
+- Asistentes de borde sin conexión: el modelo se ejecuta íntegramente en CPU con menos de 950 MB de RAM, lo que permite desplegarlo en terminales de fábrica, quioscos de venta o sistemas de inventario de almacén sin conectividad fiable a internet.
+- RAG local sobre documentación interna: combinado con Akal-Embed (119 MB) y Akal-Rerank, permite responder preguntas sobre procedimientos operativos, manuales internos o catálogos de producto sin enviar datos a la nube, lo que facilita el cumplimiento de normativas de privacidad.
+- Clasificación y enrutamiento de tickets de soporte: el modelo puede clasificar consultas entrantes y dirigirlas al microservicio o cola correspondiente, con la ventaja de ejecutarse en la misma máquina que el backend sin coste de API.
+- Extracción de entidades en formularios y pedidos: conversión de texto libre en JSON estructurado con nombres, identificadores y campos simples, adecuado para digitalización de documentación en pymes.
+- Corrección y formalización de textos en indonesio: normalización de comunicaciones internas, notas de campo y correos hacia un registro más formal, aprovechando la imatrix específica de ese idioma.
+- Agentes de voz interactivos de baja latencia: con objetivos de menos de 300 ms hasta el primer token y 21-28 tokens/s en CPU, puede servir como backend conversacional de altavoces inteligentes o sistemas de atención telefónica local.
+- Resumen de actas y memorandos en entornos de oficina: condensación de documentos cortos directamente en el portátil del empleado, sin depender de servicios en la nube.
 
 ## Benchmarks y rendimiento
 
-Datos publicados por el autor sobre Intel Core i5-8250U (4 nucleos / 8 hilos, 7,5 GB RAM, Ubuntu x86_64, 4 hilos). No verificados de forma independiente.
-
-| Modelo | Formato / runtime | Tamano | Prefill (pp512) | Decode (tg128) | TTFT (ms) | RAM pico (RSS) | PPL indonesio |
-|---|---|---|---|---|---|---|---|
-| Akal-1B | GGUF Q4_K_M (imatrix) | 762 MB | 62-100 tok/s | 21,0-28,4 tok/s | ~294-448 | < 938 MB | 11,20 |
-| Gemma-3-1B-IT (base) | GGUF Q4_K_M (llama.cpp) | 768 MB | 84-100 tok/s | 21,7-28,1 tok/s | ~386-450 | < 940 MB | 11,66 |
-| WiTi4Bit (Pokdartik) | Q4M (PyTorch CPU int4mm) | 595 MB | 18-25 tok/s | 6,9-9,2 tok/s | ~1.250-1.820 | 3.192 MB | 24,57-28,93 |
-| Meta Llama-3.2-1B-Instruct | GGUF Q4_K_M (llama.cpp) | 771 MB | 115-118 tok/s | 27,4 tok/s | ~480 | < 920 MB | 9,26 |
-| Alibaba Qwen2.5-1.5B-Instruct | GGUF Q4_K_M (llama.cpp) | 1.120 MB | 68-78 tok/s | 20,0 tok/s | ~690 | 1.120 MB | 7,43 |
-
-Observaciones: la mejora de Akal-1B frente al Gemma-3-1B-IT base en velocidad es marginal (practicamente identica en decodificacion), y la ventaja principal es la perplejidad en indonesio (11,20 frente a 11,66). Frente a Llama-3.2-1B y Qwen2.5-1.5B, Akal-1B muestra peor perplejidad en indonesio en el caso de Llama (9,26) y muy superior en el de Qwen (7,43), aunque el autor no reporta comparaciones en otros benchmarks estandar (MMLU, HumanEval, GSM8K) en la informacion disponible.
+No se han publicado resultados de benchmarks en la información disponible. El autor menciona en la model card comparaciones empíricas frente a Sahabat-AI 8B/9B, SEA-LION v3 8B, Merak-7B, Meta Llama-3.2-1B y Alibaba Qwen2.5-1.5B, y remite al preprint Akal_Edge_LLM_Research_Paper.pdf para los datos, pero las cifras concretas no están incluidas en la información proporcionada. Los únicos datos de rendimiento declarados son los objetivos de inferencia en CPU: menos de 300 ms de TTFT y 21-28 tokens/s.
 
 ## Requisitos de hardware
 
-- VRAM estimada: no aplica para inferencia en CPU; en GPU, el fichero Q4_K_M de 762 MB requiere aproximadamente 1-1,5 GB de VRAM considerando overhead de contexto.
-- GPU recomendadas: cualquier GPU consumer con al menos 2 GB de VRAM (GTX 1050, RTX 3050, etc.); no se han publicado pruebas en GPU en la informacion disponible.
-- Cabe en GPU consumer: si, en practicamente cualquier GPU moderna; el caso de uso principal es CPU.
-- CPU objetivo: Intel Core i5-8250U o equivalente (4 nucleos / 8 hilos), con 1,5 GB de RAM libre; el autor valida con 4 hilos.
-- Opciones de despliegue: llama.cpp (CLI), Ollama (via Modelfile), llama-cpp-python. No se documenta soporte de vLLM ni TGI.
-- Latencia y throughput: TTFT de ~294-448 ms, decodificacion de 21,0-28,4 tok/s y prefill de 62-100 tok/s en el hardware de referencia del autor.
+- RAM estimada para inferencia: menos de 950 MB con la cuantización Q4_K_M publicada (~762 MB de pesos).
+- VRAM: no requiere GPU; el modelo está diseñado para inferencia exclusiva en CPU.
+- GPU recomendadas: no aplica; cualquier GPU con suficiente VRAM podría ejecutarlo, pero no es el objetivo del proyecto.
+- Cabe en cualquier portátil, mini-PC o dispositivo de borde con al menos 1 GB de RAM disponible.
+- Opciones de despliegue: llama.cpp como runtime principal; al estar en formato GGUF es compatible con Ollama y otros frontends basados en llama.cpp. No se documenta soporte de vLLM ni TGI en la información disponible.
+- Latencia y throughput declarados por el autor: TTFT inferior a 300 ms y 21-28 tokens/s en CPUs de portátiles y mini-PC convencionales, con hasta un 300% más de throughput que runtimes comunitarios no vectorizados.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | PPL indonesio | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| Akal-1B | 1,00B | 2.048 (config. autor) | 11,20 | Gemma License | GGUF Q4_K_M |
-| Gemma-3-1B-IT | 1,00B | no disponible | 11,66 | Gemma License | Multiples formatos |
-| Llama-3.2-1B-Instruct | 1,23B | no disponible | 9,26 | Llama 3.2 Community | Multiples formatos |
-| Qwen2.5-1.5B-Instruct | 1,54B | no disponible | 7,43 | Apache 2.0 | Multiples formatos |
+| Modelo | Parametros | Contexto | Idiomas | Licencia | Formato | Notas |
+|---|---|---|---|---|---|---|
+| Akal-1B-GGUF | 1,00B | no disponible | id, en | Gemma | GGUF Q4_K_M | Cuantización con imatrix en indonesio, orientado a CPU |
+| google/gemma-3-1b-it | 1,00B | no disponible | multilingue | Gemma | safetensors | Modelo base original; requiere más recursos y no está optimizado para CPU |
+| Meta Llama-3.2-1B | 1,2B | no disponible | multilingue | Llama 3.2 | safetensors, GGUF | Alternativa de tamaño similar citada por el autor; sin imatrix específica de indonesio |
+| Alibaba Qwen2.5-1.5B | 1,5B | no disponible | multilingue | Apache 2.0 | safetensors, GGUF | Alternativa algo mayor citada por el autor; licencia más permisiva |
 
-Akal-1B se posiciona como una variante especializada en indonesio y CPU del Gemma-3-1B-IT. Su ventaja frente al base es la perplejidad en indonesio y el empaquetado GGUF listo para edge; su desventaja es que Llama-3.2-1B y Qwen2.5-1.5B obtienen mejor perplejidad en indonesio segun los propios datos del autor, aunque con mayor tamano en el caso de Qwen. La licencia Gemma es mas restrictiva que Apache 2.0 para uso comercial.
+No se dispone de datos de rendimiento comparativo en la información proporcionada para establecer diferencias cuantitativas entre estos modelos.
 
 ## Limitaciones y advertencias
 
-- Modelo de 1B parametros: capacidad de razonamiento, matematicas y codigo limitada en comparacion con modelos de mayor tamano; no apto para tareas complejas de agente o multi-paso.
-- Sesgos: al derivar de Gemma 3, hereda los sesgos del modelo base de Google, no evaluados ni mitigados especificamente en esta version.
-- Riesgo de alucinacion: elevado en un modelo de este tamano, especialmente fuera de los dominios de calibracion (indonesio e ingles).
-- Idiomas: solo se declaran indonesio e ingles; el rendimiento en castellano u otros idiomas no esta garantizado ni evaluado.
-- Contexto limitado a 2.048 tokens en la configuracion recomendada, insuficiente para documentos largos o conversaciones multi-turno extensas.
-- Licencia Gemma: impone restricciones de uso comercial y obligaciones de atribucion; revisar los terminos antes de desplegar en produccion.
-- Benchmarks no verificados: todos los datos de rendimiento proceden del autor, con 0 descargas y 0 likes en el repositorio; no hay evaluacion independiente.
-- Unico formato publicado (GGUF Q4_K_M): no hay versiones en safetensors ni otras cuantizaciones (Q5, Q8, FP16) en la informacion disponible.
-- Repositorio con tamano de 0,0 GB reportado por Hugging Face, lo que puede indicar problemas de carga de los ficheros o de sincronizacion de LFS; conviene verificar la integridad antes de descargar.
+- Con 1B parámetros, el conocimiento paramétrico del mundo es limitado; sin RAG es propenso a respuestas imprecisas o desactualizadas en preguntas de cultura general.
+- No es adecuado para ingeniería de software autónoma multiarchivo, refactorización de repositorios ni depuración de lógica asíncrona compleja.
+- No es apto para razonamiento matemático de varios pasos, pruebas formales ni lógica simbólica profunda sin herramientas externas de cálculo.
+- Riesgo de alucinación inherente a modelos de este tamaño, especialmente fuera de los dominios cubiertos por la imatrix (indonesio) o sin contexto RAG.
+- La imatrix está optimizada para indonesio; el rendimiento en inglés puede degradarse más que en una cuantización genérica, aunque no se aportan datos que lo confirmen.
+- Licencia Gemma de Google: impone restricciones de uso comercial y obligaciones de atribución; conviene revisar los términos completos antes de un despliegue en producción.
+- La longitud de contexto no está documentada en la información disponible, lo que dificulta planificar conversaciones multi-turno largas o RAG con muchos fragmentos.
+- No se documenta soporte de tool calling ni function calling, lo que limita su uso en pipelines de agentes que requieran invocación estructurada de herramientas.
+- El repo ocupa 7,3 GB, probablemente por incluir múltiples cuantizaciones y los preprints; conviene descargar solo el archivo Q4_K_M necesario.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/akal-lm/Akal-1B-GGUF
 - Modelo base: https://huggingface.co/google/gemma-3-1b-it
-- Perfil del autor: https://huggingface.co/luqni
-- Organizacion Akal LM: https://huggingface.co/akal-lm
+- Modelo de embedding complementario: https://huggingface.co/akal-lm/Akal-Embed-GGUF
+- Reranker complementario: https://huggingface.co/akal-lm/Akal-Rerank-GGUF
+- Modelo borrador para decodificación especulativa: https://huggingface.co/akal-lm/Akal-Nano-270M-GGUF
+- Preprint Vol. 1 (Edge LLM): https://huggingface.co/akal-lm/Akal-1B-GGUF/resolve/main/Akal_Edge_LLM_Research_Paper.pdf
+- Preprint Vol. 3 (arquitectura y decodificación especulativa): https://huggingface.co/akal-lm/Akal-1B-GGUF/resolve/main/Akal_Vol3_Architecture_Research_Paper.pdf
 - Repositorio llama.cpp: https://github.com/ggml-org/llama.cpp
-- Preprint: `Akal_Edge_LLM_Research_Paper.pdf` incluido en el repositorio del modelo (CC-BY 4.0)
+- Perfil del autor: https://huggingface.co/luqni

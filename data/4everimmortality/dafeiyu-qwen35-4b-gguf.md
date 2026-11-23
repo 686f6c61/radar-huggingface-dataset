@@ -2,85 +2,86 @@
 
 ## Resumen
 
-Dafeiyu V2 es un ajuste fino (fine-tune) del modelo base Qwen/Qwen3.5-4B, desarrollado por el usuario 4everImmortality, orientado a la interpretación de un personaje (roleplay) de VTuber/anime llamado "Dafeiyu" (大肥鱼), una chica ballena de pelo azul con personalidad tsundere. El modelo se distribuye exclusivamente en formato GGUF cuantizado a Q4_K_M, empaquetado para su uso directo con llama.cpp y Ollama, lo que lo hace desplegable en hardware de consumo y en dispositivos de borde.
+Dafeiyu Qwen3.5-4B GGUF es una cuantización en formato GGUF de un ajuste fino de tipo DoRA sobre el modelo base Qwen/Qwen3.5-4B, publicada por el usuario 4everImmortality. El modelo está orientado a la personificación de un personaje ("大肥鱼", literalmente "gran pez gordo") para roleplay, conversación y contenido relacionado con anime y VTuber. El autor lo describe explícitamente como un experimento histórico de su estudio (Tuber Studio), sustituido en producción por una variante de 9B.
 
-El fine-tune se realizó mediante DoRA (Weight-Decomposed LoRA), una variante de LoRA que descompone los pesos en magnitud y dirección para mejorar la estabilidad del ajuste. La model card destaca la conversión con `--no-mtp` para evitar desalineaciones de tensores provocadas por la capa draft de MTP (multi-token prediction) del modelo base, y declara un contexto nativo de 262.144 tokens heredado de Qwen 3.5.
+El artefacto publicado es un único fichero de pesos en cuantización Q4_K_M, sin adaptador DoRA separado, pensado para cargarse con versiones de llama.cpp compatibles con la arquitectura Qwen3.5 y con la plantilla de chat nativa del modelo base. El modelo base cuenta con 4.205.751.296 parámetros, y el repositorio ocupa 5,4 GB.
 
-El modelo es relevante para un nicho muy concreto: aplicaciones de chat con personaje, VTubing, asistentes con personalidad y despliegues locales de bajo coste. No está pensado como modelo de propósito general ni para tareas de razonamiento o código; su valor está en la fidelidad de la persona y en la facilidad de ejecución en local. Los idiomas declarados son chino (zh) e inglés (en).
+Su relevancia es acotada: se trata de un modelo de personaje de nicho, con 478 descargas y sin resultados de benchmarks publicados. Resulta útil como ejemplo de pipeline de ajuste DoRA y cuantización GGUF para角色 conversacionales, pero no está pensado como modelo de propósito general ni como base para tareas de razonamiento o código.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (derivada de Qwen 3.5 4B); ajuste fino DoRA |
-| Parametros totales | 4B (según modelo base Qwen/Qwen3.5-4B) |
-| Parametros activos | no disponible (no es MoE según la información disponible) |
-| Longitud de contexto | 262.144 tokens (256K), según la model card |
-| Tipos de cuantizacion | Q4_K_M (única publicada en este repositorio) |
-| Idiomas soportados | Chino (zh), inglés (en) |
-| Licencia | other (no especificada en detalle; hereda del modelo base) |
-| Formato de pesos | GGUF (archivo `dafeiyu_qwen35_4b_nomtp_q4_k_m.gguf`) |
+| Arquitectura | Transformer decoder-only (heredada de Qwen/Qwen3.5-4B); ajuste fino DoRA |
+| Parametros totales | 4.205.751.296 |
+| Parametros activos | no disponible (no es un modelo MoE según la información disponible) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | Q4_K_M (único fichero publicado: `dafeiyu_qwen35_4b_nomtp_q4_k_m.gguf`) |
+| Idiomas soportados | chino (zh), inglés (en) |
+| Licencia | other (licencia personalizada del autor; ver limitaciones) |
+| Formato de pesos | GGUF |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de Qwen/Qwen3.5-4B, un transformer decoder-only de 4.000 millones de parámetros. Sobre esa base se aplicó un ajuste fino supervisado con DoRA (Weight-Decomposed LoRA), técnica que descompone cada matriz de pesos en un componente de magnitud y otro de dirección, aplicando la actualización de bajo rango sobre la dirección. La model card no detalla el volumen de datos de entrenamiento, la composición del dataset, ni si hubo etapas de RLHF o DPO; esa información no está disponible.
+El modelo parte de Qwen/Qwen3.5-4B, un transformer decoder-only de 4.205.751.296 parámetros. Sobre esa base, el autor aplicó un ajuste fino con la técnica DoRA (Weight-Decomposed Low-Rank Adaptation), orientado a dotar al modelo de una personalidad de personaje concreta ("大肥鱼") para interacción conversacional. El nombre del fichero incluye el sufijo `nomtp`, que sugiere que los pesos publicados excluyen las cabezas de predicción multi-token del modelo base, aunque la información disponible no detalla el alcance exacto de esa modificación.
 
-La innovación técnica documentada por el autor es la conversión a GGUF con la opción `--no-mtp`, que elimina la capa draft de multi-token prediction del modelo base. Según la model card, esto evita errores de desalineación de tensores al cargar el modelo en llama.cpp y Ollama, de modo que el GGUF funciona sin pasos adicionales de reparación. El contexto nativo de 256K se hereda del modelo base. No se documentan técnicas adicionales como decodificación especulativa, atención lineal o arquitecturas híbridas.
+No se han publicado datos sobre el volumen de tokens de entrenamiento, la composición del dataset de ajuste, ni si se emplearon técnicas de RLHF o DPO. Tampoco se documenta ninguna innovación arquitectónica propia: el interés técnico del artefacto reside en el pipeline de ajuste DoRA seguido de cuantización a Q4_K_M para su uso en llama.cpp y Ollama.
 
 ## Capacidades
 
-- Generación de texto conversacional con una persona definida de forma explícita (ballena VTuber tsundere, aficionada al arroz blanco caliente).
-- Interpretación de personaje (roleplay) con estilo de lenguaje coloquial y "cero sabor a IA mecánica", según la model card.
-- Conversaciones multi-turno con contexto largo gracias a la ventana de 262.144 tokens.
-- Comprensión y generación en chino e inglés.
-- Ejecución local en llama.cpp y Ollama mediante GGUF.
-- No se documenta soporte de tool calling, function calling, agentes, razonamiento multi-paso, visión, audio ni modo "thinking".
+- Generación de texto conversacional en chino e inglés, con una persona de personaje definida por el ajuste DoRA.
+- Roleplay multi-turno orientado a escenarios de anime y VTuber.
+- Uso de la plantilla de chat nativa de Qwen3.5 a través de llama.cpp.
+- Compatibilidad declarada con endpoints y con el ecosistema Ollama/llama.cpp.
+- Soporte de tool calling y function calling: no disponible en la información proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no documentado; no es el objetivo del ajuste.
+- Capacidades de visión, audio o modo thinking: no disponibles en la información proporcionada.
 
 ## Casos de uso
 
-- Chatbot de personaje para comunidades de VTubing: el modelo mantiene la persona de Dafeiyu en conversaciones multi-turno y puede integrarse en un bot de Discord o Telegram mediante Ollama, con el system prompt de la model card para fijar el carácter.
-- Asistente de streaming en directo: como copiloto de chat para un VTuber real, generando respuestas en chino o inglés con el tono tsundere definido, ejecutándose en local para evitar latencia de red y costes de API.
-- Roleplay y ficción interactiva: sesiones largas de juego de rol donde el contexto de 256K permite conservar el historial completo de la partida sin truncar.
-- Despliegue en dispositivos de borde: la cuantización Q4_K_M y los 4B de parámetros permiten descarga completa en GPU en placas como Jetson AGX Orin, según la model card, para asistentes de voz o kioscos interactivos sin conexión.
-- Prototipado de personajes con personalidad: base para equipos que quieran evaluar pipelines de fine-tune DoRA + GGUF antes de invertir en un modelo mayor.
-- Aplicaciones educativas o de entretenimiento en chino: práctica de conversación informal con un personaje consistente, útil para demostraciones de IA conversacional con identidad propia.
+- Roleplay de personaje en aplicaciones de chat: el ajuste DoRA está entrenado para mantener una persona concreta, por lo que encaja en productos de conversación con personajes donde la coherencia de voz y estilo prima sobre la precisión factual.
+- Integración en un bot de VTuber: el modelo puede generar respuestas en directo dentro de un pipeline con llama.cpp u Ollama, con un coste de inferencia bajo gracias a los 4B parámetros en Q4_K_M.
+- Prototipado rápido en local: al ser un único fichero GGUF de 5,4 GB, permite montar un entorno de pruebas conversacional con Ollama en cuestión de minutos y sin GPU dedicada de gama alta.
+- Generación de diálogos para contenido derivado (fan fiction, guiones de streams): el sesgo de personaje del ajuste resulta adecuado para producir texto con un registro consistente en chino e inglés.
+- Evaluación de pipelines de ajuste DoRA: sirve como referencia práctica de cómo un adaptador DoRA sobre un modelo de 4B se empaqueta y cuantiza a GGUF para despliegue.
+- Base para nuevos ajustes de personaje: al estar publicado en GGUF y no en safetensors, su uso como punto de partida para reentrenamiento es limitado; resulta más apropiado como destino final de un pipeline que como origen.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: aproximadamente 2,5-3 GB para el GGUF Q4_K_M de un modelo de 4B (estimación basada en el tamaño típico de Q4_K_M, no confirmada en la model card).
-- GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM para descarga completa; el autor cita explícitamente Jetson AGX Orin como dispositivo de borde validado.
-- Cabe en GPU de consumo: sí, previsiblemente en RTX 3060 12 GB, RTX 4060, RTX 4090 y similares; también en iGPU con memoria unificada suficiente.
-- Opciones de despliegue: llama.cpp y Ollama (documentados por el autor); vLLM y TGI no están confirmados para este GGUF, aunque podrían requerir el modelo en safetensors.
-- Latencia y throughput: no disponibles.
+- VRAM estimada para inferencia en Q4_K_M: aproximadamente 2,5-3 GB de pesos más overhead de contexto y caché KV; en la práctica, entre 3 y 5 GB según la longitud de contexto configurada.
+- GPU recomendadas: cualquier GPU con 6 GB o más de VRAM para contexto moderado; tarjetas como RTX 3060, RTX 4060, RTX 4090 o superiores ofrecen margen amplio. En entornos de servidor, A100 o H100 no son necesarias para este tamaño.
+- Cabe en GPU de consumo: sí, en la mayoría de tarjetas con 6 GB o más; también puede ejecutarse en CPU con llama.cpp, a velocidades menores.
+- Opciones de despliegue: llama.cpp (versión compatible con Qwen3.5), Ollama, y cualquier runtime que acepte GGUF. vLLM y TGI no se documentan para este artefacto.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Formato | Licencia | Enfoque |
+| Modelo | Parámetros | Contexto | Formato | Licencia | Orientación |
 |---|---|---|---|---|---|
-| Dafeiyu V2 (este) | 4B | 262.144 | GGUF Q4_K_M | other | Roleplay VTuber zh/en |
-| Qwen/Qwen3.5-4B (base) | 4B | 262.144 | safetensors, GGUF | según Qwen | Propósito general |
-| Fine-tunes de personaje sobre bases de 3-8B | 3-8B | variable | GGUF, safetensors | variable | Roleplay |
+| dafeiyu-qwen35-4b-gguf | 4.205.751.296 | no disponible | GGUF (Q4_K_M) | other | Roleplay de personaje |
+| Qwen/Qwen3.5-4B (base) | 4.205.751.296 | no disponible | safetensors | según Qwen | Propósito general |
+| dafeiyu-qwen35-9b-gguf | no disponible | no disponible | GGUF | other | Roleplay de personaje (versión en producción) |
 
-La comparación con alternativas concretas de la misma categoría (fine-tunes de personaje) no está disponible en la información proporcionada. Frente a su modelo base, la diferencia principal es la persona fijada y el empaquetado GGUF listo para Ollama; el resto de capacidades se heredan de Qwen 3.5 4B.
+La comparación con otras familias de modelos de 4B orientados a roleplay no está disponible en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Sesgos conocidos: no documentados; al ser un fine-tune de personaje, puede reproducir estereotipos propios del rol tsundere y del material de entrenamiento no especificado.
-- Riesgo de alucinación: alto en tareas factuales, ya que el ajuste está orientado a la persona y no se documenta entrenamiento en veracidad.
-- Limitaciones de idioma: solo chino e inglés declarados; el rendimiento en castellano no está garantizado.
-- Licencia "other": no se detallan los términos; es imprescindible revisar la licencia del modelo base Qwen 3.5 4B antes de cualquier uso comercial, y la model card no aclara restricciones adicionales del fine-tune.
-- Solo se publica Q4_K_M: no hay versiones en mayor precisión ni safetensors del fine-tune, lo que limita el reajuste o la conversión a otros formatos.
-- Sin benchmarks ni métricas de calidad: no hay evidencia publicada de fidelidad de la persona ni de degradación por cuantización.
-- Cero descargas y likes en el momento de la ficha: modelo sin validación comunitaria.
-- El contexto de 256K es una cifra heredada del modelo base; no se confirma que el fine-tune conserve el rendimiento en contextos extremos.
+- Modelo de personaje de nicho: el ajuste DoRA prioriza el estilo y la persona sobre la precisión factual, lo que incrementa el riesgo de alucinación en consultas informativas.
+- Idiomas limitados a chino e inglés; no hay evidencia de calidad en castellano ni en otras lenguas.
+- Longitud de contexto no documentada: no debe asumirse la ventana del modelo base sin verificarla en el runtime.
+- Licencia "other": es una licencia personalizada cuyo texto no se detalla en la información disponible; antes de un uso comercial es imprescindible revisar los términos del autor y, en su caso, las condiciones del modelo base Qwen.
+- El propio autor lo etiqueta como experimento histórico y remite a la variante de 9B para producción, lo que sugiere que esta versión no recibe mantenimiento.
+- Solo se publica un fichero Q4_K_M; no hay otras cuantizaciones ni pesos en safetensors, lo que limita el reentrenamiento y el ajuste posterior.
+- Sin benchmarks ni evaluación independiente: no hay datos objetivos de calidad conversacional ni de seguridad.
+- Riesgo de sesgos heredados del dataset de ajuste y del modelo base, no documentados por el autor.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/4everImmortality/dafeiyu-qwen35-4b-gguf
+- Modelo en Hugging Face: https://huggingface.co/4everImmortality/dafeiyu-qwen35-4b-gguf
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
-- Ollama: https://ollama.com
-- llama.cpp: https://github.com/ggml-org/llama.cpp
+- Versión en producción (9B GGUF): https://huggingface.co/4everImmortality/dafeiyu-qwen35-9b-gguf
+- Fichero de pesos: https://huggingface.co/4everImmortality/dafeiyu-qwen35-4b-gguf/blob/main/dafeiyu_qwen35_4b_nomtp_q4_k_m.gguf

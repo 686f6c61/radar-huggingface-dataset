@@ -39,16 +39,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Fine-tuned Models for ibm-granite/granite-speech-5.0-2b",
-      "url": "https://huggingface.co/models?other=base_model%3Afinetune%3Aibm-granite%2Fgranite-speech-5.0-2b",
-      "snippet": "cstr/crispasr-granite5-validation-public. Updated in about 14 hours. System theme. Company. TOS Privacy About Careers. Website. Models Datasets Spaces Pricing Docs."
-    },
-    {
-      "title": "Models compatible with the GGUF library - Hugging Face",
-      "url": "https://huggingface.co/models?library=gguf&p=0&sort=created",
-      "snippet": "cstr/crispasr-granite5-validation-public. 2B • Updated in about 15 hours · cliecy/DeepSeek-V4.1-Flash-1017-V3-304-IQ1S-GGUF. Text Generation • 635B • Updated in ..."
-    }
-  ]
+  "sources": []
 }

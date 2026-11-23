@@ -1,0 +1,49 @@
+{
+  "schema": 2,
+  "id": "rumezhak/microduck-hill-daily-2026-11-23",
+  "slug": "rumezhak-microduck-hill-daily-2026-11-23",
+  "author": "rumezhak",
+  "url": "https://huggingface.co/rumezhak/microduck-hill-daily-2026-11-23",
+  "created_at": "2026-11-22T22:39:24.000Z",
+  "updated_at": "2026-11-22T22:39:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "microduck",
+  "languages": [],
+  "tags": [
+    "microduck",
+    "onnx",
+    "robotics",
+    "reinforcement-learning",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 887860,
+  "storage_human": "887860 B",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "250+ Instagram Notes Ideas (Funny, Inspirational, & More)",
+      "url": "https://www.wikihow.com/Instagram-Notes-Ideas",
+      "snippet": "Oct 9, 2026 · The Notes feature on Instagram lets you say whatever’s on your mind—whether it’s a motivational quote, a funny joke, …Read more"
+    }
+  ]
+}

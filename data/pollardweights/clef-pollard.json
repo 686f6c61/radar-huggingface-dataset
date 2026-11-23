@@ -36,7 +36,7 @@
     "conversational"
   ],
   "likes": 1,
-  "downloads_30d": 481,
+  "downloads_30d": 549,
   "trending_score": 0,
   "parameters": 27024054788,
   "parameters_human": "27.02B",
@@ -56,31 +56,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "PollardWeights (Pollard Weights) - Hugging Face",
-      "url": "https://huggingface.co/PollardWeights/models",
-      "snippet": "Memory-fit quantization · role-aware GGUF builds · running frontier LLMs on small hardware · MoE expert placement"
-    },
-    {
-      "title": "Clef — Cloudflare&#x27;s open decision models answer… | AI/TLDR",
-      "url": "http://ai-tldr.dev/releases/cloudflare-clef/",
-      "snippet": "Clef is listed on Workers AI as @cf/cloudflare/clef at $0.24 per million input tokens, according to Cloudflare&#x27;s model page. The weights for Clef and Clef-flash are also free to download from Hugging Face under the Apache-2.0 license, so teams can run the models on their own GPUs instead of paying for hosted inference."
-    },
-    {
-      "title": "PollardWeights/Qwen2.5-1.5B-Instruct-Pollard · Hugging Face",
-      "url": "https://huggingface.co/PollardWeights/Qwen2.5-1.5B-Instruct-Pollard",
-      "snippet": "PollardWeights / Qwen2.5-1.5B-Instruct-Pollard like 0 Follow Pollard Weights 1 Text Generation GGUF English pollard-weights memory-fit quantization llama.cpp role-aware conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
-    },
-    {
-      "title": "LLM Leaderboard: AI Model Rankings & Pricing | llmboard.ai",
-      "url": "https://www.llmboard.ai/",
-      "snippet": "LLM Leaderboard rankings and benchmark intelligence LLM Leaderboard Use the LLM Leaderboard to compare the best AI models across capability, price, speed and LLM benchmarks. Find the best LLM for coding, reasoning, math and everyday work with ranking data in one place."
-    },
-    {
-      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
-      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
-      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
-    }
-  ]
+  "sources": []
 }

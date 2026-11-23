@@ -5,7 +5,7 @@
   "author": "LTM-Lab",
   "url": "https://huggingface.co/LTM-Lab/Qwen3.5-0.8B-v17",
   "created_at": "2026-11-20T11:06:11.000Z",
-  "updated_at": "2026-11-20T11:37:18.000Z",
+  "updated_at": "2026-11-22T07:19:38.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -26,7 +26,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 29,
+  "downloads_30d": 33,
   "trending_score": 0,
   "parameters": 873438784,
   "parameters_human": "873.4M",

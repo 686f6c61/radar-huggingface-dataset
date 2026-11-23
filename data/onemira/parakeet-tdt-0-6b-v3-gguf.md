@@ -2,51 +2,49 @@
 
 ## Resumen
 
-El repositorio `onemira/parakeet-tdt-0.6b-v3-gguf` es un espejo (mirror) byte a byte del artefacto GGUF Q8_0 oficial de NVIDIA correspondiente al modelo de reconocimiento automatico del habla (ASR) `nvidia/parakeet-tdt-0.6b-v3`. No se trata de un modelo original: los pesos son identicos al checkpoint publicado por NVIDIA, con un unico fichero `parakeet-tdt-0.6b-v3.q8_0.gguf` de 713.975.456 bytes y SHA-256 verificado. El mantenimiento corre a cargo de OneMira, que lo distribuye para su grabadora de voz C1 y su aplicacion de escritorio con transcripcion local.
+`onemira/parakeet-tdt-0.6b-v3-gguf` es un espejo (mirror) byte a byte del artefacto GGUF Q8 oficial de NVIDIA para Parakeet-TDT-0.6B-v3, un modelo de reconocimiento automatico del habla (ASR) basado en la arquitectura TDT (Token-and-Duration Transducer) de NVIDIA NeMo. El repositorio no contiene el checkpoint de entrenamiento completo, sino unicamente el fichero `parakeet-tdt-0.6b-v3.q8_0.gguf` (713.975.456 bytes) listo para ejecutarse con el runtime NeMo-Speech.cpp.
 
-El modelo base es un sistema ASR de NVIDIA basado en la arquitectura Parakeet con decodificacion TDT (Token-and-Duration Transducer) y aproximadamente 637 millones de parametros. Esta orientado a transcripcion de voz en ingles (la model card upstream no detalla composicion multilingue en la informacion disponible) y se ejecuta mediante el runtime NeMo-Speech.cpp, no mediante llama.cpp ni vLLM, ya que no es un modelo de lenguaje generativo sino un modelo acustico de transcripcion.
+El modelo resuelve transcripcion de voz en local (on-device) para 25 lenguas europeas, pensado para ejecutarse en CPU y Apple Silicon sin subir audio a servidores en la nube. Es relevante por su tamano contenido (637 millones de parametros) y su empaquetado GGUF Q8_0, que permite despliegue offline en entornos de escritorio y dispositivos con recursos limitados.
 
-Su relevancia practica reside en que permite transcripcion local en hardware de consumo sin dependencia de la nube: el fichero GGUF Q8_0 ocupa 0,7 GB, lo que lo hace apto para portatiles y equipos de escritorio. La licencia CC-BY-4.0 permite uso comercial con atribucion, lo que facilita su integracion en productos de terceros.
+Este repositorio concreto es un mirror mantenido por OneMira para su producto de grabadora con IA; la autoria original y la licencia pertenecen a NVIDIA. No implica aval de NVIDIA sobre OneMira.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Parakeet con decodificacion TDT (Token-and-Duration Transducer) |
+| Arquitectura | TDT (Token-and-Duration Transducer), familia NeMo de NVIDIA |
 | Parametros totales | 637.329.158 |
 | Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Q8_0 (unico fichero incluido en el repo) |
-| Idiomas soportados | no disponible en la informacion proporcionada |
-| Licencia | CC-BY-4.0 |
-| Formato de pesos | GGUF (`parakeet-tdt-0.6b-v3.q8_0.gguf`, 713.975.456 bytes) |
+| Tipos de cuantizacion | Q8_0 (unico fichero incluido) |
+| Idiomas soportados | 25 lenguas europeas (segun model card del mirror; listado no disponible) |
+| Licencia | CC BY 4.0 |
+| Formato de pesos | GGUF (`parakeet-tdt-0.6b-v3.q8_0.gguf`) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base emplea la arquitectura Parakeet de NVIDIA con un decodificador TDT (Token-and-Duration Transducer), un esquema que predice conjuntamente tokens y duraciones para mejorar la alineacion temporal y la eficiencia de decodificacion en tareas de reconocimiento del habla. El artefacto distribuido en este repositorio es unicamente la version cuantizada a Q8_0 del checkpoint upstream, identificado por la revision `541d1f99c6b0c3cd0b11a95167540bb8edefd82b`.
+El modelo es un transducer TDT (Token-and-Duration Transducer) de NVIDIA NeMo, una variante de los RNN-Transducer en la que el decoder predice conjuntamente tokens y duraciones, lo que permite decodificacion no autoregresiva mas eficiente que un CTC o un transducer clasico. El tamano es de aproximadamente 0,6 mil millones de parametros (637.329.158 reales en safetensors del modelo base).
 
-No se dispone en la informacion proporcionada de detalles sobre el volumen de datos de entrenamiento, la composicion del dataset, el uso de RLHF/DPO ni innovaciones adicionales del checkpoint original. La model card del espejo remite a la model card upstream (`UPSTREAM_MODEL_CARD.md`) para esos datos, pero su contenido no se ha facilitado. La inferencia debe realizarse con el runtime NeMo-Speech.cpp, segun indica el autor del espejo.
+No se dispone en la informacion proporcionada de detalles sobre el numero de tokens de entrenamiento, composicion del dataset, ni si hubo etapas de ajuste fino con RLHF/DPO (no aplica habitualmente en ASR). El artefacto publicado es unicamente una cuantizacion Q8_0 del checkpoint oficial; no se reentrena ni se modifica el modelo. El runtime recomendado es NeMo-Speech.cpp, que carga el GGUF y ejecuta inferencia en CPU/Apple Silicon.
 
 ## Capacidades
 
-- Reconocimiento automatico del habla (transcripcion de audio a texto) como tarea principal del pipeline.
-- Decodificacion TDT con prediccion conjunta de tokens y duraciones, orientada a transcripcion con alineacion temporal.
-- Ejecucion local en dispositivo (`on-device`) mediante el runtime NeMo-Speech.cpp y el formato GGUF.
-- Integracion con sistemas de diarizacion de hablantes en el ecosistema de producto de OneMira (la model card menciona separacion de hablantes en su aplicacion, aunque no se detalla si este artefacto concreto la implementa).
-- Soporte de tool calling / function calling: no disponible (no es un modelo generativo de proposito general).
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingues: no disponible en la informacion proporcionada.
-- Capacidades especiales (thinking mode, vision, audio generativo): no disponible; el modelo es exclusivamente de entrada de audio y salida de texto.
+- Reconocimiento automatico del habla (ASR) en streaming y en modo por lotes.
+- Transcripcion multilingue en 25 lenguas europeas (segun la model card del mirror).
+- Ejecucion local on-device en CPU y Apple Silicon mediante NeMo-Speech.cpp.
+- Funcionamiento offline tras la descarga inicial del modelo, sin subida obligatoria de audio a la nube.
+- Integracion como etapa de pipeline de ASR en aplicaciones de escritorio (por ejemplo, OneMira Desktop).
+- No se documentan capacidades de tool calling, agentes, vision ni audio mas alla de ASR en la informacion disponible.
 
 ## Casos de uso
 
-- Transcripcion local de reuniones presenciales: el modelo, al ejecutarse con NeMo-Speech.cpp sobre GGUF Q8_0, permite transcribir audio capturado en el dispositivo sin enviar datos a la nube, lo que resulta adecuado para entornos con requisitos de privacidad.
-- Grabadoras de voz con procesamiento en el dispositivo: integrado en productos como la grabadora OneMira C1, el modelo procesa el audio en el ordenador del usuario (Mac o Windows) sin suscripcion ni limites de minutos.
-- Notas y actas automaticas: combinado con un sistema de resumen posterior, la transcripcion sirve de base para generar resumenes, decisiones y elementos de accion en herramientas de productividad.
-- Integracion en flujos MCP: a traves del servidor MCP de OneMira, la transcripcion puede exponerse a asistentes como Claude Desktop, Cursor o ChatGPT para consulta y procesamiento del contexto de reuniones.
-- Subtitulado y transcripcion de llamadas: al ser un modelo ASR compacto (0,7 GB en Q8_0), puede desplegarse en portatiles para transcribir llamadas o grabaciones de forma continua con baja huella de memoria.
-- Prototipado de pipelines ASR en investigacion: el fichero GGUF con hash verificado permite reproducir exactamente los resultados del checkpoint oficial de NVIDIA en experimentos de evaluacion de ASR sin depender del formato original de NeMo.
-- Aplicaciones de accesibilidad: transcripcion en tiempo real de conversaciones para personas con dificultades auditivas, ejecutandose completamente en local.
+- Transcripcion de reuniones en local: el modelo procesa audio en streaming sobre CPU/Apple Silicon, permitiendo actas y resumenes sin enviar el audio a servicios cloud y sin limite de minutos.
+- Notas de voz en dispositivos de grabacion dedicados: al ejecutarse en un runtime C++ ligero, puede integrarse en firmware o software de escritorio de grabadoras con IA (caso de OneMira C1) para transcribir in situ.
+- Subtitulado offline de contenido multimedia: al soportar 25 lenguas europeas, sirve para generar subtitulos en herramientas de edicion sin conexion.
+- Cumplimiento y privacidad en entornos regulados: sectores como sanidad, legal o administracion publica pueden transcribir entrevistas sin que el audio salga del dispositivo.
+- Prototipado de pipelines ASR: el GGUF Q8_0 se carga con NeMo-Speech.cpp para experimentar con transcripcion en entornos sin GPU.
+- Transcripcion en dispositivos con recursos limitados: el tamano de 0,6 B de parametros y el fichero de ~714 MB lo hacen viable en portatiles y mini-PC sin GPU dedicada.
+- Investigacion en ASR multilingue: sirve como linea base reproducible (hash SHA-256 fijado) para comparar con otros modelos transducers.
 
 ## Benchmarks y rendimiento
 
@@ -54,40 +52,49 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: el fichero Q8_0 ocupa 0,7 GB, por lo que la huella de memoria es del orden de 1 GB o inferior, aunque no se dispone de una cifra oficial de VRAM en la informacion proporcionada.
-- GPU recomendadas: no disponible en la informacion proporcionada; al ser un modelo de 637 millones de parametros en Q8_0, es razonable esperar que funcione en GPU de consumo, pero no se confirma en la documentacion facilitada.
-- Compatibilidad con GPU de consumo: probable por tamano, pero no confirmada explicitamente; la model card menciona ejecucion en Mac y Windows mediante la aplicacion de escritorio de OneMira.
-- Opciones de despliegue: runtime NeMo-Speech.cpp (indicado por el autor). No se menciona soporte de vLLM, llama.cpp, Ollama ni TGI, que no son aplicables a este tipo de modelo ASR.
+- VRAM estimada para inferencia: no disponible; el artefacto esta pensado para CPU, por lo que no requiere GPU.
+- Tamano en disco del fichero GGUF: 713.975.456 bytes (~714 MB).
+- GPU recomendadas: no aplica para el runtime objetivo (NeMo-Speech.cpp en CPU/Apple Silicon); no se documentan requisitos de GPU.
+- Cabe en GPU consumer: si, en cualquier GPU con al menos ~1 GB de memoria libre si se porta a un runtime GPU, aunque el uso previsto es CPU.
+- Opciones de despliegue: NeMo-Speech.cpp (runtime indicado por el autor). Otros runtimes GGUF no estan documentados para este modelo.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Formato | Licencia | Notas |
+| Modelo | Parametros | Contexto | Idiomas | Licencia | Formato |
 |---|---|---|---|---|---|
-| onemira/parakeet-tdt-0.6b-v3-gguf | 637 M | no disponible | GGUF Q8_0 | CC-BY-4.0 | Espejo del checkpoint oficial de NVIDIA |
-| nvidia/parakeet-tdt-0.6b-v3 | 637 M | no disponible | checkpoint NeMo | CC-BY-4.0 | Modelo original upstream |
-| Alternativas ASR de tamano similar | no disponible | no disponible | no disponible | no disponible | No se dispone de datos comparativos en la informacion proporcionada |
+| onemira/parakeet-tdt-0.6b-v3-gguf | 637 M | no disponible | 25 lenguas europeas | CC BY 4.0 | GGUF Q8_0 |
+| nvidia/parakeet-tdt-0.6b-v3 (original) | 637 M | no disponible | 25 lenguas europeas | CC BY 4.0 | safetensors / NeMo |
+| Whisper large-v3 | no disponible en esta ficha | no disponible | multilingue | no disponible en esta ficha | safetensors, GGUF (comunitario) |
+| Whisper small | no disponible en esta ficha | no disponible | multilingue | no disponible en esta ficha | safetensors, GGUF (comunitario) |
+
+La comparativa con Whisper se incluye por categoria (ASR multilingue) pero los datos concretos de esos modelos no se han verificado en la informacion proporcionada; consultese sus fichas oficiales.
 
 ## Limitaciones y advertencias
 
-- Es un espejo, no un modelo original: la autoria y responsabilidad del comportamiento del modelo corresponden a NVIDIA; OneMira no implica respaldo por parte de NVIDIA.
-- Solo se distribuye la cuantizacion Q8_0; no hay otras cuantizaciones en el repositorio.
-- El repositorio contiene unicamente el artefacto GGUF, no el checkpoint completo de entrenamiento ni el codigo de la aplicacion OneMira.
-- Requiere el runtime NeMo-Speech.cpp; no es compatible con los runners habituales de modelos de lenguaje (llama.cpp, vLLM, TGI, Ollama).
-- Idiomas soportados no confirmados en la informacion disponible; no debe asumirse cobertura multilingue sin verificar la model card upstream.
-- Riesgo de alucinacion y errores de transcripcion inherente a los modelos ASR, especialmente en audio con ruido, acentos o vocabulario especializado; no se dispone de tasas de error (WER) publicadas en la informacion facilitada.
-- Sesgos conocidos: no disponibles en la informacion proporcionada.
-- Licencia CC-BY-4.0: permite uso comercial con atribucion; es necesario conservar el aviso de atribucion (`NOTICE.txt`) y la licencia (`LICENSE.html`) incluidos en el repositorio.
-- La model card incluye contenido promocional del producto OneMira; debe tratarse como material comercial y no como especificacion tecnica del modelo.
+- Es un mirror, no un modelo original: la autoria y responsabilidad de calidad recaen en NVIDIA; OneMira no avala ni modifica los pesos.
+- Solo se publica la cuantizacion Q8_0; no hay variantes Q4, Q5 ni FP16 en este repositorio.
+- El runtime previsto es NeMo-Speech.cpp; otros motores GGUF (llama.cpp, Ollama) no estan documentados como compatibles.
+- Cobertura limitada a 25 lenguas europeas; no se garantiza rendimiento fuera de ese conjunto.
+- No se documentan sesgos especificos, tasas de alucinacion ni comportamiento en audio ruidoso o con acentos no representados.
+- La licencia CC BY 4.0 permite uso comercial con atribucion; debe conservarse el aviso de autoria de NVIDIA y el NOTICE del repositorio.
+- El repositorio incluye material promocional de OneMira (producto C1); conviene separar la informacion tecnica del modelo de la promocion comercial.
+- El modelo no es un LLM: no soporta generacion de texto, razonamiento, codigo ni tool calling.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/onemira/parakeet-tdt-0.6b-v3-gguf
+- Repositorio del mirror: https://huggingface.co/onemira/parakeet-tdt-0.6b-v3-gguf
 - Modelo original de NVIDIA: https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3/tree/541d1f99c6b0c3cd0b11a95167540bb8edefd82b
-- Model card upstream (referenciada): `UPSTREAM_MODEL_CARD.md` en el repositorio
-- Copia de licencia: `LICENSE.html` en el repositorio
-- Atribucion: `NOTICE.txt` en el repositorio
-- Servidor MCP de OneMira: https://github.com/onemira-space/onemira-mcp
+- Model card upstream (copia en el repo): UPSTREAM_MODEL_CARD.md
+- Licencia (copia en el repo): LICENSE.html
+- Atribucion (copia en el repo): NOTICE.txt
 - Producto OneMira C1: https://onemira.com/products/c1
-- Dataset de benchmark de grabadoras de voz 2026: https://huggingface.co/datasets/onemira/ai-voice-recorder-without-subscription-2026
-- Pagina de grabadora sin suscripcion: https://onemira.com/ai-voice-recorder-without-subscription
+- OneMira C1 en Amazon US: https://www.amazon.com/dp/B0HM6YDLJ4
+- Comparativas OneMira: https://onemira.com/compare
+- Guia de grabadora sin suscripcion: https://onemira.com/ai-voice-recorder-without-subscription
+- Dataset TCO de grabadoras: https://huggingface.co/datasets/onemira/ai-voice-recorder-without-subscription-2026
+- OKF Wiki MCP Server: https://github.com/onemira-space/okf-wiki-mcp
+- Registro MCP oficial: https://registry.modelcontextprotocol.io/v0.1/servers?search=okf-wiki-mcp
+- Validador OKF Markdown: https://www.npmjs.com/package/okf-markdown
+- MCP Server Card: https://onemira.com/.well-known/mcp/server-card.json
+- Plantillas de actas de reunion: https://onemira.com/meeting-minutes-templates

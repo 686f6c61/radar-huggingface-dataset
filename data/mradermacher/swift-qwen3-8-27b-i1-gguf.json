@@ -49,31 +49,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "WhatsApp Web",
-      "url": "https://web.whatsapp.com/",
-      "snippet": "Log in to WhatsApp Web for simple, reliable and private messaging on your desktop. Send and receive messages and files with …"
-    },
-    {
-      "title": "WhatsApp | Безпечні, надійні й конфіденційні повідомлення та …",
-      "url": "https://www.whatsapp.com/?lang=uk",
-      "snippet": "WhatsApp Business допомагає охоплювати клієнтів з усього світу й дарувати їм найприємніші враження. Демонструйте свої …"
-    },
-    {
-      "title": "HOUSAB - WhatsApp",
-      "url": "https://wa.me/",
-      "snippet": "Hosted by WhatsApp 2026 © WhatsApp LLC Privacy & Terms"
-    },
-    {
-      "title": "WhatsApp | Бесплатный защищенный сервис для …",
-      "url": "https://www.whatsapp.com/?lang=ru",
-      "snippet": "Записывайте голосовые сообщения, чтобы поделиться новостями или просто сказать \"Привет!\". С помощью WhatsApp …"
-    },
-    {
-      "title": "Скачайте WhatsApp",
-      "url": "https://www.whatsapp.com/download?lang=ru",
-      "snippet": "Используйте WhatsApp в браузере. Только начали использовать WhatsApp? Скачайте WhatsApp на мобильное устройство, …"
-    }
-  ]
+  "sources": []
 }

@@ -2,109 +2,115 @@
 
 ## Resumen
 
-JiRackDeltaNet 70B es un modelo de lenguaje híbrido de 69.930 millones de parámetros desarrollado por CMSManhattan (Konstantin Grabko). Se trata de un decodificador que combina 96 capas de Gated DeltaNet (atención lineal) con 32 capas de atención completa con puerta, siguiendo el diseño de Qwen 3.5 pero reimplementado en el código propio JiRack del autor. El modelo parte de una base Qwen (licencia Apache 2.0), sobre la que se modificó la arquitectura y se aplicó un ajuste fino supervisado (SFT) con datos propios de chat, razonamiento, código, matemáticas y tool calling.
+JiRackDeltaNet 70B es un modelo de lenguaje híbrido de 69.930 millones de parámetros publicado por CMSManhattan (Konstantin Grabko) bajo una licencia propietaria denominada `jirack-proprietary`. Se trata de una adaptación de la arquitectura híbrida Gated DeltaNet / atención completa de Qwen, reconstruida en código propio (JiRack) y afinada sobre datos propios no publicados que cubren chat, razonamiento, código, matemáticas y tool calling. La versión disponible es una *beta release*.
 
-La propuesta diferencial es doble. Por un lado, la arquitectura híbrida lineal/atención completa reduce el coste computacional en contextos largos, y el vocabulario de 248.320 tokens (tokenizador de Qwen 3.5) permite un empaquetado eficiente del texto. Por otro, el autor publica cuantizaciones agresivas —FP8 con escalas de bloque de 128×128 y GGUF Q3_K_M, Q4_K_M y Q6_K— que llevan un modelo de ~70B a 33,89 GB en su versión más pequeña, haciéndolo viable en CPU y en GPUs de consumo alto.
+La arquitectura combina 128 capas de decodificador: 96 capas de Gated DeltaNet (atención lineal) y 32 capas de atención completa con compuerta, intercalando una capa de atención completa cada cuatro. Emplea el tokenizador y la plantilla de chat de Qwen con un vocabulario de 248.320 entradas, e incluye una cabeza MTP (multi-token prediction) de una capa. El modelo se distribuye en bf16, en una copia FP8 con cuantización por bloques de 128 × 128 y en tres cuantizaciones GGUF (Q3_K_M, Q4_K_M, Q6_K).
 
-El modelo se encuentra en estado beta (primer SFT). El tool calling funciona con solidez (109/117 en la prueba interna del autor, 93,2 %), pero el modelo tiende a invocar la herramienta en lugar de pedir aclaración cuando falta un argumento obligatorio (7/15 en esa categoría). No hay resultados publicados de GSM8K ni HumanEval.
+Su relevancia actual reside en la propuesta de eficiencia: pesos ternarios (1.58-bit) entre sus etiquetas, despliegue en CPU mediante llama.cpp y una copia FP8 de 73 GB que cabe en una única GPU de 96 GB. El soporte declarado de tool calling (109/117 en la prueba interna del autor) y el tokenizador orientado a robótica lo posicionan para flujos agénticos, aunque la falta de benchmarks estándar (GSM8K, HumanEval, MMLU) limita la evaluación objetiva.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Decodificador híbrido, 128 capas: 96 Gated DeltaNet (atención lineal) + 32 de atención completa con puerta (cada 4.ª capa es atención completa) |
-| Parámetros totales | 69.934.845.440 (~69,93B) |
-| Parámetros activos | No aplica (no es MoE) |
-| Longitud de contexto | No disponible (los ejemplos de despliegue usan `-c 8192`, pero no se especifica el máximo entrenado) |
-| Tipos de cuantización | bf16 (raíz del repo), FP8 e4m3 con escalas de bloque 128×128 (`sft_final_fp8/`), GGUF Q3_K_M, Q4_K_M y Q6_K (`gguf/`) |
+| Arquitectura | Decodificador híbrido: 128 capas (96 Gated DeltaNet de atención lineal + 32 de atención completa con compuerta, una cada 4 capas) |
+| Parametros totales | 69.934.845.440 (69,93B) |
+| Parametros activos | No aplica (no es MoE) |
+| Longitud de contexto | No disponible (los ejemplos de despliegue usan `-c 8192` en llama.cpp) |
+| Tipos de cuantizacion | bf16, FP8 e4m3 con escalas por bloque 128 × 128, GGUF Q3_K_M, Q4_K_M, Q6_K; etiquetado como ternario / 1.58-bit |
 | Idiomas soportados | en, zh, ja, ko, fr, es, pt, de, it, ru, ar, vi, th |
-| Licencia | other (derivada de Qwen, Apache 2.0; condiciones concretas no detalladas en la información disponible) |
-| Formato de pesos | safetensors (bf16 y FP8), GGUF |
+| Licencia | `jirack-proprietary` (license: other) |
+| Formato de pesos | safetensors (bf16 en la raíz, FP8 en `sft_final_fp8/`), GGUF en `gguf/` |
 
-Otras especificaciones: dimensión oculta 5120; FFN 26624 con SwiGLU; atención completa con 24 cabezas de consulta y 4 de clave/valor, dimensión de cabeza 256, puerta de salida, RoPE parcial al 25 %, secciones mRoPE intercaladas [11, 11, 10] y RoPE theta 1e7; Gated DeltaNet con 16 cabezas de clave, 48 de valor, dimensión de cabeza 128 y convolución causal de kernel 4; vocabulario de 248.320 tokens con embeddings de entrada y salida no atados; cabeza MTP (predicción multi-token) de una capa.
+Otros datos técnicos: dimensión oculta 5120, FFN 26624 con SwiGLU; atención completa con 24 cabezas y 4 cabezas KV, dimensión de cabeza 256, compuerta de salida, RoPE parcial al 25 %, secciones mRoPE intercaladas [11, 11, 10] y RoPE theta 1e7; Gated DeltaNet con 16 cabezas de clave, 48 de valor, dimensión de cabeza 128 y convolución causal de kernel 4; vocabulario de 248.320 entradas con embeddings de entrada y salida no atados; cabeza MTP de 1 capa. Tamaño del repositorio: 347 GB.
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es un decodificador híbrido de 128 capas que alterna bloques de Gated DeltaNet —una forma de atención lineal con estado recurrente y convolución causal— con bloques de atención completa con puerta cada cuatro capas. Esta mezcla busca conservar la calidad de la atención completa en las capas críticas mientras reduce el coste de memoria y cómputo del resto, algo relevante en contextos largos. La atención completa incorpora RoPE parcial (25 % de las dimensiones), secciones mRoPE intercaladas [11, 11, 10] y theta de 1e7, lo que apunta a un uso previsto con secuencias largas y posiblemente multimodales en fases posteriores. El modelo incluye además una cabeza MTP de una capa, útil para decodificación especulativa o entrenamiento con predicción multi-token.
+El modelo es un transformer de decodificador híbrido que sustituye la mayoría de las capas de atención cuadrática por capas Gated DeltaNet de atención lineal, manteniendo atención completa con compuerta cada cuatro capas. Esta combinación busca reducir el coste de atención en secuencias largas conservando capacidad de recuperación exacta en las capas de atención completa. La atención completa usa 24 cabezas con solo 4 cabezas KV (GQA), dimensión de cabeza 256, compuerta de salida y RoPE parcial con secciones mRoPE intercaladas, lo que sugiere soporte de posiciones multidimensionales. La cabeza MTP de una capa añade predicción multi-token, habitual en entrenamiento especulativo o de eficiencia.
 
-El entrenamiento parte de un modelo Qwen (Apache 2.0) cuya arquitectura y pesos fueron modificados en el código JiRack del autor y posteriormente ajustados con SFT sobre datos propios de chat, razonamiento, código, matemáticas y tool calling. La receta de entrenamiento y el dataset no se publican. El autor describe una técnica de expansión de modelos ("model expansion") basada en ensanchar el FFN de cada capa y duplicar bloques con proyecciones de salida inicializadas a cero, congelando los bloques originales durante el ajuste para mitigar el olvido catastrófico; no se especifica si esta técnica concreta se aplicó a esta versión. No se documentan fases de RLHF o DPO.
+Según la model card, el modelo parte de un modelo Qwen (Apache 2.0) cuya arquitectura y pesos fueron modificados en el código JiRack del autor y posteriormente afinados sobre datos propios de chat, razonamiento, código, matemáticas y tool calling. La receta de entrenamiento y el conjunto de datos no se publican, por lo que no hay información verificable sobre número de tokens, composición del corpus ni uso de RLHF o DPO. Tampoco se detalla el proceso que produce los pesos ternarios mencionados en las etiquetas. El código de inferencia es un único archivo PyTorch (`JiRackDeltaNet_70b.py`) con nombres de parámetros compatibles con el state dict de la arquitectura híbrida de Qwen, y no requiere una clase de modelo de `transformers`.
 
 ## Capacidades
 
-- Generación de texto conversacional en 13 idiomas (en, zh, ja, ko, fr, es, pt, de, it, ru, ar, vi, th).
-- Razonamiento y resolución de problemas aritméticos sencillos en varios pasos (el ejemplo de la model card resuelve correctamente un problema de cambio).
-- Generación de código: el autor lo describe como un modelo "bueno para código y agentes", aunque no aporta métricas de HumanEval.
-- Tool calling / function calling compatible con la API de OpenAI: 38/38 en llamadas simples, 19/19 en llamadas paralelas, 20/20 en seguimiento a partir de un resultado de herramienta y 25/25 en casos donde no se necesita herramienta.
-- Razonamiento multi-paso y uso en agentes, con modo de razonamiento desactivable (`--reasoning off` en llama.cpp).
-- Tokenizador con vocabulario orientado a robótica, según el autor, para la próxima actualización del modelo.
-- Cabeza MTP para predicción multi-token (potencial decodificación especulativa).
-- Capacidad de pedir aclaración ante argumentos faltantes: parcial (7/15), es la principal carencia declarada.
+- Generación de texto conversacional multi-turno en 13 idiomas declarados (inglés, chino, japonés, coreano, francés, español, portugués, alemán, italiano, ruso, árabe, vietnamita y tailandés).
+- Razonamiento aritmético básico verificable: el ejemplo de la model card resuelve correctamente un problema de cambio (7 × 3 = 21; 50 − 21 = 29) en modo greedy y con razonamiento desactivado.
+- Tool calling / function calling compatible con la interfaz OpenAI: herramientas en bloque `<tools>` y llamadas con `<tool_call><function=…><parameter=…>`.
+- Llamadas paralelas a herramientas (19/19 en la prueba interna) y respuestas de seguimiento a partir del resultado de una herramienta (20/20).
+- Decisión de no invocar herramienta cuando no es necesaria (25/25 en la prueba interna).
+- Modo de razonamiento conmutable mediante `/think` en los scripts de chat y `--reasoning off` en llama.cpp.
+- Capacidades agénticas y de enrutamiento (etiquetas `routing`, `tool-call`, `web-ui`).
+- Tokenizador orientado a robótica para la próxima actualización del modelo, según el autor.
+- No se declaran capacidades de visión, audio ni otras modalidades.
 
 ## Casos de uso
 
-- Automatización de atención al cliente con tool calling: el modelo puede encadenar consultas a APIs internas (estado de pedido, devoluciones) y responder a partir del resultado; su 20/20 en seguimiento lo hace adecuado para flujos multi-turno con herramientas, aunque conviene añadir una capa de validación de argumentos por la debilidad en pedir aclaraciones.
-- Despliegue en CPU sin GPU: la cuantización Q3_K_M (33,89 GB) corre en `llama-server` a 5,17 tokens/s de generación y 20,1 tokens/s de procesamiento de prompt en un GH200 Grace con 64 hilos, lo que permite servir un modelo de ~70B en infraestructura sin acelerador.
-- Servicio en una única GPU de 96 GB: la copia FP8 (73 GB) cabe en una GPU de 96 GB con un error relativo medio de pesos del 2,65 %, útil para entornos con una sola A100/H100 de 80-96 GB donde no se puede repartir el modelo.
-- Asistente de código en pipelines de CI/CD: integrado mediante la API compatible con OpenAI de `llama-server`, puede generar parches, explicar errores de compilación o redactar mensajes de commit, con la ventaja de que el vocabulario de 248.320 tokens reduce el número de tokens por fragmento de código.
-- Agentes de automatización de escritorio o RPA: la combinación de tool calling fiable en llamadas simples y paralelas con un modelo pequeño en disco (Q4_K_M, 42,65 GB) permite orquestar acciones sobre herramientas externas en máquinas con recursos limitados.
-- Prototipado de robótica e integración con el tokenizador específico del autor: aunque el tokenizador de robótica se anuncia para la próxima versión, el modelo actual sirve como banco de pruebas para pipelines de instrucciones y llamadas a funciones en entornos de control.
-- Evaluación de arquitecturas híbridas lineal/atención: investigadores pueden usar el código de una sola pieza (`JiRackDeltaNet_70b.py`) con nombres de parámetros compatibles con `Qwen3_5ForCausalLM` para experimentar con atención lineal sin reescribir el cargador.
+- Automatización de atención al cliente con herramientas: el modelo puede gestionar conversaciones multi-turno y encadenar llamadas a funciones (consultar pedidos, calcular importes) gracias a su soporte de tool calling compatible con OpenAI; conviene validar el comportamiento ante argumentos ausentes, donde falla 8 de 15 casos.
+- Enrutamiento de peticiones en una web o backend: las etiquetas `routing` y `web-ui` y la prueba de "no tool needed" (25/25) lo hacen adecuado para clasificar intenciones y decidir si se invoca una herramienta o se responde directamente.
+- Despliegue en CPU sin GPU: las cuantizaciones GGUF Q3_K_M (33,89 GB) y Q4_K_M (42,65 GB) permiten servir el modelo con `llama-server` en servidores con suficiente RAM; en un GH200 Grace con 64 hilos se midieron 5,17 y 5,04 tokens/s de generación respectivamente.
+- Servicio en una única GPU de 96 GB: la copia FP8 (73 GB) cabe en una GPU de 96 GB con un error relativo medio de pesos del 2,65 %, útil para prototipos de agentes con tool calling en un solo nodo.
+- Asistencia de código y matemáticas en pipelines internos: el autor lo describe como buen modelo de código y agentes, aunque sin resultados publicados de HumanEval ni GSM8K; se recomienda evaluarlo con un conjunto propio antes de integrarlo en CI/CD.
+- Investigación sobre arquitecturas híbridas de atención lineal: al incluir código PyTorch de un solo archivo con nombres compatibles con Qwen, sirve para estudiar el comportamiento de Gated DeltaNet a escala 70B y comparar con atención completa.
+- Prototipado multilingüe: cubre 13 idiomas declarados, lo que permite probar asistentes en mercados europeos y asiáticos, con la salvedad de que no se han publicado evaluaciones por idioma.
 
 ## Benchmarks y rendimiento
 
-| Prueba | Resultado |
+Los únicos resultados publicados son la prueba interna de tool calling del autor (117 casos, GGUF Q3_K_M, temperatura 0, razonamiento desactivado):
+
+| Categoria | Q3_K_M |
 |---|---|
-| Tool calling, total (117 casos, GGUF Q3_K_M) | 109/117 (93,2 %) |
-| Llamada simple (un tool, todos los argumentos) | 38/38 |
+| Llamada única (una herramienta, todos los argumentos dados) | 38/38 |
 | Llamadas paralelas | 19/19 |
-| Seguimiento a partir de resultado de tool | 20/20 |
-| Sin necesidad de tool | 25/25 |
-| Aclaración de argumento faltante | 7/15 |
-| GSM8K | No medido |
-| HumanEval | No medido |
-| MMLU | No disponible |
+| Seguimiento (respuesta a partir del resultado de una herramienta) | 20/20 |
+| Sin herramienta necesaria | 25/25 |
+| Aclarar un argumento ausente | 7/15 |
+| Total | 109/117 (93,2 %) |
 
 Rendimiento de inferencia en CPU (GH200 Grace, 64 hilos, `llama-bench`):
 
-| Cuantización | Tamaño | Prompt (tokens/s) | Generación (tokens/s) |
+| Cuantizacion | Tamano | Prompt (tokens/s) | Generacion (tokens/s) |
 |---|---|---|---|
 | Q3_K_M | 33,89 GB | 20,1 | 5,17 |
 | Q4_K_M | 42,65 GB | 50,2 | 5,04 |
 | Q6_K | 57,40 GB (2 partes) | 45,3 | 4,11 |
 
+No se han publicado resultados de MMLU, GSM8K ni HumanEval en la información disponible; el autor indica que se añadirán en una versión futura.
+
 ## Requisitos de hardware
 
-- VRAM estimada: bf16 requiere ~140 GB (no cabe en una GPU única de 80 GB); FP8 requiere ~73 GB y cabe en una GPU de 96 GB; GGUF Q6_K ocupa 57,40 GB, Q4_K_M 42,65 GB y Q3_K_M 33,89 GB.
-- GPU recomendadas: H100 o A100 de 80 GB para FP8 con reparto en dos tarjetas o una GPU de 96 GB (H100 NVL, H200) para FP8 en una sola; para bf16 se necesitan al menos dos A100/H100 de 80 GB.
-- GPU de consumo: Q3_K_M (33,89 GB) y Q4_K_M (42,65 GB) no caben en GPUs de 24 GB; encajan en configuraciones de 48 GB (RTX 6000 Ada, A6000) y, con holgura, en 64 GB. En 24 GB habría que recurrir a offload parcial a RAM, con la consiguiente caída de velocidad.
-- Despliegue: `llama-server` de llama.cpp con `--jinja --reasoning off` para los GGUF; el repositorio incluye además pesos safetensors compatibles con el cargador de Qwen 3.5, por lo que debería poder servirse con vLLM o TGI, aunque la información disponible no documenta recetas para estos motores. El autor menciona soporte de Ollama en las etiquetas.
-- Latencia y throughput: en CPU, 4,11-5,17 tokens/s de generación y 20,1-50,2 tokens/s de prompt según cuantización. No se publican cifras de throughput en GPU.
+- bf16: 140 GB de pesos; requiere al menos 2 × 80 GB según las instrucciones del autor (`chat_jirack.py` reparte los 128 bloques entre todas las GPU visibles).
+- FP8: 73 GB; cabe en una única GPU de 96 GB (por ejemplo, H100 96 GB o H200) y se ejecuta con `sft_final_fp8/chat_fp8.py`, que descomprime por capa.
+- GGUF Q6_K: 57,40 GB; viable en GPU de 80 GB o en CPU con RAM suficiente.
+- GGUF Q4_K_M: 42,65 GB; cabe en una RTX 4090 de 24 GB solo parcialmente (offload parcial), por lo que en la práctica requiere CPU o varias GPU.
+- GGUF Q3_K_M: 33,89 GB; no cabe en GPU de consumo de 24 GB; sí en CPU con 64 GB de RAM o más.
+- Despliegue: `llama-server` de llama.cpp con `--jinja --reasoning off` para GGUF; scripts PyTorch propios para bf16 y FP8; etiqueta `ollama` en el repositorio; compatible con clientes OpenAI (`endpoints_compatible`).
+- Los scripts de chat de referencia no usan KV cache y recalculan la secuencia completa en cada token, con una velocidad de aproximadamente 1 token/s según la model card; no son adecuados para producción sin optimización.
+- Throughput medido solo en CPU (ver tabla de benchmarks); no hay datos publicados de latencia o throughput en GPU.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Tool calling | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| JiRackDeltaNet 70B | 69,93B | No disponible | 109/117 (prueba propia) | other (base Qwen Apache 2.0) | Hugging Face, GGUF, FP8 |
-| Qwen 3.5 (base arquitectónica) | No disponible | No disponible | No disponible | Apache 2.0 | Hugging Face |
-| Qwen2.5 72B | 72,7B | 131.072 tokens | No medido en esta ficha | Apache 2.0 | Hugging Face, GGUF, AWQ |
-| Llama 3.3 70B | 70,6B | 128.000 tokens | No medido en esta ficha | Llama 3.3 Community License | Hugging Face, GGUF |
+| JiRackDeltaNet 70B | 69,93B | No disponible | `jirack-proprietary` | HF, GGUF, FP8 | Híbrido DeltaNet; 93,2 % en test interno de tool calling |
+| Qwen (modelo base citado) | No disponible | No disponible | Apache 2.0 | HF | Origen arquitectónico declarado por el autor; sin datos concretos de la variante usada |
+| Alternativas de ~70B con tool calling | No disponible | No disponible | No disponible | No disponible | No se dispone de datos verificables en la información proporcionada |
 
-La comparación con Qwen2.5 72B y Llama 3.3 70B es orientativa por tamaño y categoría; no hay benchmarks públicos de JiRackDeltaNet 70B (MMLU, GSM8K, HumanEval) que permitan una comparación de calidad. La ventaja diferencial del modelo es la disponibilidad de cuantizaciones muy agresivas (Q3_K_M a 33,89 GB) y una arquitectura híbrida que reduce el coste de atención, frente a los transformers densos convencionales.
+La model card no incluye comparaciones con modelos de la misma categoría ni cifras de benchmarks estándar que permitan una comparación cuantitativa fiable.
 
 ## Limitaciones y advertencias
 
-- Estado beta: es el primer SFT publicado; el autor advierte que la próxima versión añadirá ajuste fino en preguntas de aclaración.
-- Debilidad en aclaraciones: cuando falta un argumento obligatorio, el modelo invoca la herramienta en lugar de preguntar (8 de los 15 casos fallidos, 7/15 correctos). En producción conviene validar argumentos antes de ejecutar la herramienta.
-- Sin benchmarks de calidad general: no hay resultados de GSM8K, HumanEval ni MMLU, por lo que no se puede evaluar su rendimiento frente a modelos establecidos.
-- Licencia "other": derivada de Qwen (Apache 2.0), pero las condiciones concretas de uso comercial no se detallan en la información disponible; hay que revisar el texto de la licencia antes de desplegarlo en producto.
-- Receta y datos de entrenamiento no publicados: no se puede auditar la composición del dataset ni el proceso de ajuste.
-- Contexto máximo no especificado: los ejemplos usan 8192 tokens, pero se desconoce la ventana entrenada; no asumir contextos largos sin verificación.
-- Riesgo de alucinación: inherente a los modelos de lenguaje; el modo de razonamiento desactivable puede aumentar la tasa de respuestas directas incorrectas en problemas complejos.
-- Idiomas: aunque declara 13 idiomas, no hay evaluación por idioma; el rendimiento en español, árabe o tailandés no está verificado.
-- Sesgos: no documentados por el autor; al ser un ajuste sobre base Qwen con datos propios no publicados, los sesgos heredados y los introducidos no son auditables.
+- Versión beta: el propio autor advierte de que el modelo tiende a invocar la herramienta en lugar de pedir aclaración cuando falta un argumento (8 de 15 fallos en esa categoría).
+- Ausencia de benchmarks estándar (MMLU, GSM8K, HumanEval) impide verificar las afirmaciones sobre código, matemáticas y razonamiento.
+- Licencia propietaria `jirack-proprietary`: es necesario revisar el archivo `LICENSE` antes de cualquier uso comercial; no es una licencia open source.
+- Receta de entrenamiento y datos no publicados: no es posible auditar la composición del corpus, el filtrado ni posibles sesgos.
+- Riesgo de alucinación no cuantificado; no hay evaluaciones de veracidad ni de robustez.
+- Longitud de contexto no especificada; los ejemplos de despliegue usan 8192 tokens, lo que limita el uso con documentos largos.
+- Rendimiento multilingüe declarado pero no evaluado por idioma.
+- Los scripts de referencia no implementan KV cache y son lentos (~1 token/s); para producción hay que usar llama.cpp u otra pila optimizada.
+- El etiquetado como ternario / 1.58-bit no se detalla en la model card: no se especifica qué pesos son ternarios ni cómo se generan.
+- Despliegue en bf16 requiere al menos 2 × 80 GB de VRAM; la copia FP8 exige una GPU de 96 GB, lo que restringe el hardware disponible.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/CMSManhattan/JiRackDeltaNet_70b
-- Demo (Space): https://huggingface.co/spaces/CMSManhattan/JiRackDeltaNet-70B-demo
+- Demo de chat: https://huggingface.co/spaces/CMSManhattan/JiRackDeltaNet-70B-demo
 - Instrucciones de GGUF: https://huggingface.co/CMSManhattan/JiRackDeltaNet_70b/blob/main/gguf/README.md
+- Licencia: https://huggingface.co/CMSManhattan/JiRackDeltaNet_70b/blob/main/LICENSE

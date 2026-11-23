@@ -2,86 +2,88 @@
 
 ## Resumen
 
-Climb-1.2-Photon es un modelo de lenguaje de 752 millones de parámetros (aproximadamente 0,75 mil millones) especializado en tareas de terminal Linux, shell bash y operaciones de línea de comandos (CLI). Desarrollado originalmente por Climb-Ai y distribuido en formato GGUF por mradermacher, el modelo se presenta como un asistente tipo copilot para entornos de terminal, orientado a la generación y comprensión de comandos y flujos de trabajo en sistemas Unix.
+Climb-1.2-Photon es un modelo de lenguaje especializado en tareas de terminal, CLI y automatizacion de sistemas Linux, desarrollado originalmente por Climb-Ai. Esta ficha describe la version cuantizada en formato GGUF publicada por mradermacher, que permite ejecutar el modelo en hardware de consumo mediante llama.cpp y herramientas compatibles. El modelo base se distribuye bajo licencia Apache 2.0 y esta etiquetado con la arquitectura `qwen3_5`, lo que sugiere una derivacion de la familia Qwen 3.5, aunque no se detalla la arquitectura exacta en la informacion disponible.
 
-La ficha que nos ocupa corresponde a la versión cuantizada en GGUF del modelo base `Climb-Ai/Climb-1.2-Photon`, publicada por mradermacher el 20 de noviembre de 2026. El repositorio incluye un conjunto de cuantizaciones estáticas que van desde Q2_K (0,5 GB) hasta f16 (1,6 GB), lo que facilita su despliegue en hardware modesto y su integración en herramientas de inferencia local como llama.cpp u Ollama.
+Con 752.393.024 parametros (aproximadamente 0,75 mil millones), se trata de un modelo compacto orientado a tareas de copiloto de terminal: generacion de comandos bash, interpretacion de salidas de shell y asistencia en flujos de trabajo de linea de comandos. Su reducido tamano lo hace adecuado para ejecucion local en CPU o GPU de gama baja, con latencias muy contenidas. Los idiomas declarados son ruso (ru) e ingles (en), lo que limita su uso directo en castellano sin un ajuste adicional.
 
-El modelo está etiquetado con el tag `qwen3_5`, lo que sugiere que su arquitectura deriva de la familia Qwen 3.5, aunque no se dispone de confirmación oficial en la información proporcionada. Su licencia Apache 2.0 y su reducido tamaño lo hacen relevante para desarrolladores que necesitan un asistente de terminal ligero, ejecutable en CPU o en GPUs de consumo, sin depender de servicios en la nube.
+La relevancia de esta publicacion radica en la disponibilidad de cuantizaciones estaticas (desde Q2_K hasta f16) que reducen el peso del modelo a entre 0,5 GB y 1,6 GB, facilitando su despliegue en entornos con recursos limitados. El repositorio acumula 912 descargas y fue creado el 20 de noviembre de 2026, con una actualizacion el mismo dia.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer (derivada de Qwen 3.5, segun el tag `qwen3_5`; no confirmado oficialmente) |
-| Parametros totales | 752.393.024 |
-| Parametros activos | no disponible (no es MoE) |
+| Arquitectura | transformer (etiqueta `qwen3_5`, derivada de Qwen 3.5; detalles no disponibles) |
+| Parametros totales | 752.393.024 (~0,75 B) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, Q4_K_S, IQ4_XS, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, f16 |
 | Idiomas soportados | ruso (ru), ingles (en) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (cuantizaciones); el modelo base en safetensors |
+| Formato de pesos | GGUF (version cuantizada); safetensors en el modelo base |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información detallada sobre la arquitectura interna del modelo en la información proporcionada. El tag `qwen3_5` sugiere que el modelo base podría estar construido sobre la arquitectura de la familia Qwen 3.5, pero no se confirma en la model card. El tamaño de 752 millones de parámetros es coherente con un transformer decoder-only de escala pequeña, adecuado para inferencia en dispositivos con recursos limitados.
+La informacion disponible no detalla la arquitectura interna del modelo base mas alla de la etiqueta `qwen3_5`, que apunta a una familia de transformers de Qwen. Con 752 millones de parametros, el modelo se situa en la gama de modelos pequenos optimizados para inferencia local. No se especifican el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas de RLHF, DPO o ajuste supervisado. Tampoco se documentan innovaciones tecnicas como decodificacion especulativa o atencion lineal.
 
-Tampoco se dispone de datos sobre el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron técnicas de RLHF, DPO o ajuste fino supervisado. Las etiquetas del repositorio (`linux`, `bash`, `terminal`, `cli`, `copilot`) indican que el modelo fue entrenado o ajustado específicamente para tareas de línea de comandos, pero no se detalla la metodología. No se han identificado innovaciones técnicas destacables (decodificación especulativa, atención lineal, etc.) en la información disponible.
+La version aqui descrita es una cuantizacion estatica generada por mradermacher a partir de `Climb-Ai/Climb-1.2-Photon`, con `quantize_version: 2` y `output_tensor_quantised: 1`. El autor indica que las cuantizaciones ponderadas/imatrix estan disponibles en un repositorio separado (`Climb-1.2-Photon-i1-GGUF`). No se proporcionan detalles sobre el proceso de entrenamiento del modelo original.
 
 ## Capacidades
 
-- Generación de comandos de terminal Linux y bash: el modelo está especializado en producir comandos y secuencias de comandos para entornos Unix.
-- Asistencia tipo copilot en CLI: puede sugerir comandos, explicar su funcionamiento y ayudar en flujos de trabajo de terminal.
-- Comprensión de instrucciones en inglés y ruso: los idiomas declarados son `en` y `ru`.
-- Conversación multi-turno: la etiqueta `conversational` indica soporte para diálogo.
-- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` sugiere que puede desplegarse en infraestructuras de inferencia compatibles con la API de Hugging Face.
-- No se dispone de información sobre soporte de tool calling, function calling, agentes, razonamiento multi-paso, matemáticas, código general, visión o audio.
+- Generacion de texto y comandos de terminal orientados a Linux y bash.
+- Asistencia en tareas de CLI: construccion de comandos, interpretacion de errores y explicacion de salidas de shell.
+- Etiquetado como modelo de tipo "copilot", lo que sugiere uso como asistente interactivo en linea de comandos.
+- Soporte multilingue limitado a ruso e ingles.
+- Compatibilidad con endpoints (tag `endpoints_compatible`) para despliegue como servicio.
+- Naturaleza conversacional (tag `conversational`).
+- No se documenta soporte explicito de tool calling, function calling, agentes multi-paso, vision, audio ni modo de razonamiento extendido.
 
 ## Casos de uso
 
-- Asistente de terminal para desarrolladores: el modelo puede generar y explicar comandos bash y utilidades de Linux, integrándose en herramientas de línea de comandos para sugerir comandos según la intención del usuario. Su tamaño reducido permite ejecutarlo localmente sin latencia de red.
-- Automatización de scripts de administración de sistemas: puede ayudar a redactar scripts de shell para tareas repetitivas (gestión de ficheros, permisos, procesos), adecuado por su especialización en bash y CLI.
-- Copilot en editores y terminales integrados: al ser compatible con endpoints y estar en formato GGUF, puede desplegarse como servicio local que alimente extensiones de editor o terminales inteligentes.
-- Formación y documentación técnica: puede explicar comandos y flujos de terminal a usuarios noveles, aprovechando su entrenamiento orientado a CLI.
-- Soporte en entornos con recursos limitados: al caber en cuantizaciones de 0,5 a 0,9 GB, puede ejecutarse en CPUs y GPUs de gama baja, lo que lo hace apto para dispositivos embebidos o estaciones de trabajo modestas.
-- Procesamiento de texto bilingüe inglés-ruso en contextos técnicos: útil para equipos que operan en ambos idiomas en tareas de administración de sistemas.
+- Asistente de terminal para desarrolladores: el modelo puede generar comandos bash a partir de descripciones en lenguaje natural, adecuado por su entrenamiento especifico en Linux y CLI y su reducido tamano para ejecucion local.
+- Explicacion de errores de shell: dado un mensaje de error de bash, el modelo puede interpretar la causa y proponer una correccion, gracias a su enfoque en tareas de terminal.
+- Automatizacion de scripts: generacion y revision de scripts de shell en pipelines de integracion, con la ventaja de ejecutarse en el mismo entorno sin dependencias externas.
+- Copiloto embebido en editores o IDEs ligeros: al ocupar entre 0,5 y 1,6 GB segun cuantizacion, puede integrarse en estaciones de trabajo con recursos limitados.
+- Formacion y documentacion tecnica: generacion de ejemplos de comandos y explicaciones de utilidades de linea de comandos para manuales internos.
+- Despliegue en entornos aislados o air-gapped: al ser un modelo pequeno en GGUF, puede ejecutarse en maquinas sin GPU dedicada y sin conexion a servicios en la nube, lo que encaja en entornos de seguridad restringida.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: entre 0,5 GB (Q2_K) y 1,6 GB (f16) según la cuantización; en la práctica, se recomienda al menos 1 GB de VRAM o RAM para las cuantizaciones Q4_K_M y superiores.
-- GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM puede ejecutar las cuantizaciones más pequeñas; GPUs de consumo como RTX 3060, RTX 4060 o superiores son suficientes. Para f16, se recomienda al menos 2 GB de VRAM.
-- Cabe en GPU de consumo: sí, en la práctica totalidad de GPUs de consumo actuales, e incluso en CPU.
-- Opciones de despliegue: llama.cpp, Ollama, y cualquier runtime compatible con GGUF; también puede desplegarse vía endpoints compatibles con la API de Hugging Face.
-- Latencia y throughput estimados: no disponibles.
+- VRAM estimada: entre 0,5 GB (Q2_K) y 1,6 GB (f16) solo para los pesos; anadir overhead de contexto y runtime de llama.cpp (tipicamente 0,5-1 GB adicionales).
+- Cabe holgadamente en cualquier GPU de consumo: RTX 3060, RTX 4060, RTX 4090, e incluso en iGPU con memoria unificada.
+- Ejecutable en CPU sin GPU dedicada, dado el reducido tamano del modelo.
+- Opciones de despliegue: llama.cpp, Ollama (mediante importacion de GGUF), y servidores compatibles con endpoints; el tag `endpoints_compatible` sugiere soporte en plataformas de inferencia gestionada.
+- Latencia y throughput: no disponibles en la informacion proporcionada; por el tamano del modelo, se espera una latencia muy baja en hardware moderno, pero no se aportan cifras concretas.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Licencia | Formato | Disponibilidad |
+| Modelo | Parametros | Contexto | Idiomas | Licencia | Formato |
 |---|---|---|---|---|---|
-| Climb-1.2-Photon (este) | 752 M | no disponible | Apache 2.0 | GGUF, safetensors | Hugging Face |
-| Qwen2.5-Coder-0.5B | 494 M | 32 K (típico en la familia) | Apache 2.0 | safetensors, GGUF | Hugging Face |
-| Qwen2.5-Coder-1.5B | 1,5 B | 32 K (típico en la familia) | Apache 2.0 | safetensors, GGUF | Hugging Face |
-| StarCoder2-3B | 3 B | 16 K | BigCode OpenRAIL-M | safetensors, GGUF | Hugging Face |
+| Climb-1.2-Photon (GGUF) | ~0,75 B | no disponible | ru, en | Apache 2.0 | GGUF |
+| Qwen2.5-Coder-0.5B | ~0,5 B | 32 K (segun documentacion publica de Qwen) | multilingue | Apache 2.0 | safetensors, GGUF |
+| Qwen2.5-Coder-1.5B | ~1,5 B | 32 K (segun documentacion publica de Qwen) | multilingue | Apache 2.0 | safetensors, GGUF |
 
-Nota: los datos de contexto y rendimiento de los modelos comparables no se han verificado en la información proporcionada y se indican a título orientativo según el conocimiento general de esas familias; no se dispone de benchmarks comparativos directos con Climb-1.2-Photon.
+La comparativa se limita a modelos de la misma familia y rango de tamano; no se dispone de datos de rendimiento del modelo evaluado para contrastar benchmarks. La ventaja principal de Climb-1.2-Photon frente a alternativas genericas es su especializacion en terminal y CLI, mientras que su desventaja es la falta de soporte declarado de castellano y la ausencia de datos publicos de evaluacion.
 
 ## Limitaciones y advertencias
 
-- Sesgos conocidos: no se dispone de información sobre sesgos específicos; al ser un modelo pequeño entrenado para CLI, puede reflejar sesgos presentes en sus datos de entrenamiento, no documentados.
-- Riesgo de alucinación: como todo modelo de lenguaje, puede generar comandos incorrectos o peligrosos; se recomienda revisar siempre los comandos sugeridos antes de ejecutarlos, especialmente en entornos de producción.
-- Limitaciones de contexto e idioma: solo se declaran inglés y ruso; no se garantiza un rendimiento adecuado en castellano u otros idiomas. La longitud de contexto no está documentada.
-- Restricciones de licencia: Apache 2.0 permite uso comercial, modificación y redistribución, con obligación de incluir el aviso de licencia y la atribución correspondiente.
-- Caveats para producción: el modelo tiene 0 descargas y 0 likes en el momento de la ficha, lo que indica una adopción muy limitada; no hay benchmarks publicados ni documentación sobre robustez en producción. La cuantización Q2_K y Q3_K_M pueden degradar la calidad; se recomienda Q4_K_M o superior para uso real.
+- Idiomas limitados a ruso e ingles: no se declara soporte de castellano, por lo que su uso en espanol puede degradar la calidad.
+- Riesgo de alucinacion en la generacion de comandos: un comando bash incorrecto puede ser destructivo; se recomienda supervision humana antes de ejecutar salidas en produccion.
+- No se documentan sesgos conocidos, pero al no publicarse la composicion del dataset de entrenamiento no puede evaluarse su impacto.
+- Longitud de contexto no disponible: limita la planificacion de casos de uso con conversaciones o ficheros largos.
+- Licencia Apache 2.0 permite uso comercial, pero el modelo base y sus derivados deben verificarse por separado; esta ficha cubre solo la cuantizacion de mradermacher.
+- Modelo de ~0,75 B de parametros: capacidad de razonamiento y conocimiento general limitados en comparacion con modelos de mayor tamano; adecuado para tareas acotadas de terminal, no para razonamiento complejo.
+- Sin benchmarks publicados: no es posible validar su rendimiento frente a alternativas antes de desplegarlo.
 
 ## Enlaces
 
 - Repositorio GGUF: https://huggingface.co/mradermacher/Climb-1.2-Photon-GGUF
 - Modelo base: https://huggingface.co/Climb-Ai/Climb-1.2-Photon
-- Página de descargas del cuantizador: https://hf.tst.eu/model#Climb-1.2-Photon-GGUF
-- Guía de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
-- Gráfico comparativo de cuantizaciones (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png
-- Notas sobre cuantizaciones (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
-- FAQ y solicitudes de cuantización: https://huggingface.co/mradermacher/model_requests
+- Cuantizaciones ponderadas/imatrix: https://huggingface.co/mradermacher/Climb-1.2-Photon-i1-GGUF
+- Pagina de descargas del autor: https://hf.tst.eu/model#Climb-1.2-Photon-GGUF
+- Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Solicitudes de cuantizacion: https://huggingface.co/mradermacher/model_requests
+- Analisis de tipos de cuantizacion (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9

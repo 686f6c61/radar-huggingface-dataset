@@ -57,16 +57,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Mixtral-8x22B-Instruct-v0.1-topo-cbp-GGUF - Hugging Face",
-      "url": "https://huggingface.co/frankmorales2020/mixtral-8x22b-instruct-v0.1-topo-cbp-GGUF",
-      "snippet": "frankmorales2020 / mixtral-8x22b-instruct-v0.1-topo-cbp-GGUF Like 0 Text Generation GGUF English Mixture of Experts llama.cpp continual-learning zero-drift topo-cbp somala arithmetic-spectral-theory edge-ai ollama topological-governance continual-backpropagation stability-plasticity open-science License:apache-2.0 Model card FilesFiles and ..."
-    },
-    {
-      "title": "frankmorales2020/Mixtral-8x22B-topo-cbp · Hugging Face",
-      "url": "https://huggingface.co/frankmorales2020/Mixtral-8x22B-topo-cbp",
-      "snippet": "Mixtral-8x22B Topo-CBP Governed Checkpoint Trained via Topological Continual Backpropagation (Topo-CBP) on trainable embedding and head layers (model.embed_tokens.weight, lm_head.weight)."
-    }
-  ]
+  "sources": []
 }

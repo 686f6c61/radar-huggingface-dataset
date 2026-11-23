@@ -25,7 +25,7 @@
     "region:us"
   ],
   "likes": 83,
-  "downloads_30d": 545,
+  "downloads_30d": 386,
   "trending_score": 7,
   "parameters": 8190735360,
   "parameters_human": "8.19B",
@@ -45,31 +45,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Neutrino-1 8B · Fermion Research",
-      "url": "https://www.fermionresearch.com/models/neutrino-8b/",
-      "snippet": "Neutrino-1 8B is a local 8.19B-parameter model for chat, tool calling, and OpenAI-compatible applications. The fermion runtime serves it on CUDA, Apple silicon, and x86 from the same 3.88 GB artifact, with streaming and a persistent KV session enabled by default."
-    },
-    {
-      "title": "FermionResearch/Neutrino-8B · Hugging Face",
-      "url": "https://huggingface.co/FermionResearch/Neutrino-8B",
-      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
-    },
-    {
-      "title": "FermionResearch/Neutrino-8B at main - Hugging Face",
-      "url": "https://huggingface.co/FermionResearch/Neutrino-8B/tree/main",
-      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
-    },
-    {
-      "title": "Introducing the Neutrino-1 models · Fermion Research",
-      "url": "https://www.fermionresearch.com/research/neutrino-8b/",
-      "snippet": "The release contains Neutrino-1 8B, Neutrino-1 0.6B, and Neutrino-1 .6B-Chat. The 8B is the general-purpose model for knowledge, instruction following, and tool use. The 0.6B can run independently or serve as its draft model, while .6B-Chat is post-trained for conversational use. Neutrino-1 8B has 8,190,735,360 parameters, yet its compressed download is 2.56 GB and its serving artifact ..."
-    },
-    {
-      "title": "Neutrino-8B by FermionResearch | AI Market Cap",
-      "url": "https://aimarketcap.tech/models/fermionresearch-neutrino-8b",
-      "snippet": "Explore Neutrino-8B by FermionResearch — benchmark coverage where available, pricing, and comparisons on AI Market Cap."
-    }
-  ]
+  "sources": []
 }

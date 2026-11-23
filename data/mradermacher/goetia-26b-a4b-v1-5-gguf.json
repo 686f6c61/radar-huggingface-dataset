@@ -71,31 +71,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "cztenis.cz",
-      "url": "https://www.cztenis.cz/",
-      "snippet": "We would like to show you a description here but the site won’t allow us."
-    },
-    {
-      "title": "Český tenisový svaz",
-      "url": "https://old.cztenis.cz/",
-      "snippet": "České tenistky, které plnily roli čtvrtých nasazených, ve finále porazily za necelou hodinu a půl tchajwansko-čínskou dvojici En Šuo …"
-    },
-    {
-      "title": "Český tenisový svaz",
-      "url": "https://old.cztenis.cz/cts",
-      "snippet": "MEMORANDUM Z JEDNÁNÍ VV ČTS – 7. 1. 2026."
-    },
-    {
-      "title": "cesky-tenis.cz",
-      "url": "https://cesky-tenis.cz/",
-      "snippet": "We would like to show you a description here but the site won’t allow us."
-    },
-    {
-      "title": "Český Tenis :: Hlavní stránka",
-      "url": "https://my.cesky-tenis.cz/",
-      "snippet": "Tento portál je centrální platformou pro tenisové trenéry v České republice. Slouží jako místo, kde se trenéři vzdělávají, sdílejí …"
-    }
-  ]
+  "sources": []
 }

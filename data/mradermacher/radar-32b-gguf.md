@@ -2,87 +2,98 @@
 
 ## Resumen
 
-RaDaR-32B-GGUF es una cuantización en formato GGUF del modelo RaDaR-32B, creada por mradermacher a partir del modelo base sczzz/RaDaR-32B. El modelo base es un transformer de 32.763 millones de parámetros, con licencia Apache-2.0 y etiquetado como "medical" en el repositorio. Esta versión cuantizada permite ejecutar el modelo en hardware de consumo o en servidores con menos VRAM, gracias a los pesos en formato GGUF compatibles con llama.cpp, Ollama y otras herramientas de inferencia local.
+RaDaR-32B-GGUF es la versión cuantizada en formato GGUF del modelo RaDaR-32B, desarrollado originalmente por el usuario sczzz y convertido a GGUF por mradermacher. Se trata de un modelo de lenguaje de 32.763.876.352 parámetros (aproximadamente 32,8 mil millones) orientado al dominio médico, según indica la etiqueta `medical` de su model card. La cuantización permite ejecutar el modelo en hardware de consumo mediante llama.cpp y herramientas compatibles, algo inviable con los pesos originales en precisión completa.
 
-La cuantización estática ofrecida incluye seis niveles de precisión (Q2_K, Q3_K_S, Q3_K_M, Q4_K_S, Q6_K y Q8_0), lo que permite ajustar el equilibrio entre calidad y uso de memoria. La información disponible no detalla la arquitectura interna del modelo base, el tamaño del contexto, los datos de entrenamiento ni los benchmarks, por lo que gran parte de las especificaciones técnicas quedan sin confirmar. Su relevancia actual radica en facilitar el despliegue de un modelo de 32B en entornos con recursos limitados, especialmente en el ámbito médico, aunque no se aportan evidencias de su rendimiento en tareas clínicas.
+El modelo base está construido sobre una arquitectura transformer (la model card no detalla variantes como MoE o SSM) y se distribuye bajo licencia Apache 2.0, lo que facilita su uso comercial. El repositorio incluye once cuantizaciones estáticas que van desde Q2_K (12,4 GB) hasta Q8_0 (34,9 GB), cubriendo un rango amplio de compromisos entre calidad y requisitos de memoria.
 
-## Especificaciones tecnicas
+La relevancia de esta ficha radica en que ofrece una vía práctica para desplegar un modelo de 32B especializado en medicina en entornos con recursos limitados. No obstante, la información pública disponible es escasa: no se documentan datos de entrenamiento, benchmarks ni longitud de contexto, lo que limita la evaluación rigurosa del modelo antes de su adopción en producción.
 
-| Parametro | Valor |
+## Especificaciones técnicas
+
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | No disponible (modelo base transformer, sin detalles) |
-| Parametros totales | 32.763.876.352 (del modelo base safetensors) |
-| Parametros activos | No es MoE, no aplica |
+| Arquitectura | Transformer (detalle no disponible) |
+| Parámetros totales | 32.763.876.352 |
+| Parámetros activos | No aplica (no es MoE según la información disponible) |
 | Longitud de contexto | No disponible |
-| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q4_K_S, Q6_K, Q8_0 |
-| Idiomas soportados | en (inglés, según model card) |
-| Licencia | Apache-2.0 |
-| Formato de pesos | GGUF |
+| Tipos de cuantización | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0 |
+| Idiomas soportados | Inglés (en) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (quantizaciones estáticas); el modelo base en safetensors |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información sobre la arquitectura interna del modelo base RaDaR-32B. La model card de la cuantización solo indica que es un modelo de 32B parámetros con licencia Apache-2.0 y etiqueta "medical". El autor de la cuantización (mradermacher) no proporciona detalles sobre el número de tokens de entrenamiento, la composición del dataset, técnicas de alineación (RLHF, DPO) ni innovaciones arquitectónicas.
+La información disponible no especifica la arquitectura interna del modelo base sczzz/RaDaR-32B más allá de tratarse de un transformer de 32,8 mil millones de parámetros. No se documentan el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron técnicas de alineación como RLHF o DPO. La única indicación sobre el dominio es la etiqueta `medical`, que sugiere un ajuste orientado a tareas clínicas o biomédicas, pero sin detalles sobre el corpus utilizado.
 
-La cuantización GGUF es estática, es decir, se ha convertido directamente desde los pesos originales sin entrenamiento adicional ni calibración con imatrix. Esto significa que la calidad final depende de la precisión de la cuantización elegida, pero no se ha realizado ningún ajuste fino posterior.
+Las cuantizaciones de mradermacher son estáticas, es decir, generadas sin imatrix ni pesos ponderados, según indica el propio autor en la model card ("weighted/imatrix quants seem not to be available"). Esto implica que las versiones de baja precisión (especialmente Q2_K y Q3_K_S) pueden degradar la calidad de forma más acusada que sus equivalentes con imatrix. El autor recomienda Q4_K_S y Q4_K_M como opciones rápidas y Q8_0 como la de mejor calidad.
 
 ## Capacidades
 
-No hay información sobre las capacidades específicas del modelo base en la documentación proporcionada. La etiqueta "medical" sugiere que podría estar orientado a tareas de dominio clínico, pero no se confirman habilidades concretas como:
-
-- Generación de texto, razonamiento, código o matemáticas
-- Soporte de tool calling o function calling
-- Capacidades de agente o razonamiento multi-paso
-- Capacidades multilingües más allá del inglés
-- Modos de pensamiento, visión o audio
-
-En ausencia de datos verificados, no es posible afirmar ninguna capacidad concreta.
+- Generación de texto conversacional en inglés, con etiqueta `conversational` en el repositorio.
+- Especialización declarada en dominio médico (tag `medical`), aunque sin documentación sobre el alcance exacto de dicha especialización.
+- Compatibilidad con endpoints (tag `endpoints_compatible`), lo que permite su despliegue mediante infraestructura de inferencia estándar.
+- Ejecución en llama.cpp y derivados gracias al formato GGUF.
+- Capacidades de tool calling, agentes o razonamiento multi-paso: no disponible en la información proporcionada.
+- Soporte multilingüe: limitado al inglés según la model card.
+- Capacidades de visión o audio: no disponible.
 
 ## Casos de uso
 
-No se han documentado casos de uso específicos en la model card. Sin embargo, al tratarse de una cuantización GGUF de un modelo de 32B, podría emplearse en entornos locales que requieran ejecución con recursos limitados. A continuación se enumeran escenarios genéricos sin confirmar:
-
-- Despliegue en herramientas de inferencia local (llama.cpp, Ollama, LM Studio) para pruebas de concepto con modelos de 32B.
-- Uso en servidores CPU-only para tareas de procesamiento de texto en inglés, siempre que el modelo base tenga las capacidades necesarias.
-- Integración en aplicaciones de código abierto mediante APIs compatibles con GGUF (por ejemplo, llama-cpp-python).
-- Investigación en el ámbito médico si el modelo base demuestra habilidades clínicas, aunque no hay evidencia documentada.
-- Evaluación comparativa de cuantizaciones para decidir el equilibrio entre tamaño y calidad en entornos de producción.
-
-Debido a la falta de información sobre el modelo base, estos casos son hipotéticos y no respaldados por datos oficiales.
+- Asistencia clínica documental: el modelo puede redactar resúmenes de historiales o notas clínicas en inglés, aprovechando su ajuste al dominio médico. Su tamaño de 32B permite una comprensión contextual superior a modelos de 7B-13B, aunque la ausencia de benchmarks publicados obliga a validar la calidad con datos propios.
+- Triaje conversacional: integrado en un chatbot de primer contacto para clasificar síntomas y derivar a especialistas, desplegado en local con la cuantización Q4_K_M (20 GB) para preservar la privacidad de datos de pacientes.
+- Extracción de entidades biomédicas: procesamiento de informes para identificar fármacos, diagnósticos y códigos CIE mediante prompts estructurados, ejecutable en servidores con una única GPU de 24 GB usando Q4_K_S.
+- Educación médica: generación de explicaciones y casos de estudio para estudiantes, con la ventaja de poder ejecutarse en estaciones de trabajo con GPU de consumo (RTX 4090 con Q4_K_M).
+- Investigación en NLP clínico: uso como modelo base para experimentos de ajuste fino o evaluación de sesgos en texto médico, gracias a la licencia Apache 2.0 que permite modificación y redistribución.
+- Despliegue en entornos con requisitos de soberanía del dato: al ser un GGUF ejecutable con llama.cpp sin dependencia de APIs externas, encaja en hospitales o laboratorios que no pueden enviar información a servicios en la nube.
+- Prototipado rápido de aplicaciones sanitarias: la variedad de cuantizaciones permite empezar con Q2_K (12,4 GB) en hardware modesto y escalar a Q8_0 (34,9 GB) cuando la calidad sea crítica.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. No hay datos sobre MMLU, HumanEval, GSM8K ni otras métricas para este modelo o su versión base.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-Los tamaños de archivo de los GGUF proporcionados permiten estimar la VRAM necesaria para inferencia en GPU. La siguiente tabla resume la memoria aproximada (sin considerar contexto adicional):
-
-| Tipo de cuantizacion | Tamano del archivo | VRAM estimada (GPU) |
-|---|---|---|
-| Q2_K | 12.4 GB | ~13 GB (por ejemplo, RTX 3090 24GB) |
-| Q3_K_S | 14.5 GB | ~15 GB (por ejemplo, RTX 3090 24GB) |
-| Q3_K_M | 16.0 GB | ~17 GB (por ejemplo, RTX 4090 24GB) |
-| Q4_K_S | 18.9 GB | ~20 GB (por ejemplo, RTX 4090 24GB) |
-| Q6_K | 27.0 GB | ~28 GB (por ejemplo, A100 40GB) |
-| Q8_0 | 34.9 GB | ~36 GB (por ejemplo, A100 80GB) |
-
-Estas cifras son orientativas y pueden variar según el contexto y la implementación. En CPU, se puede ejecutar con memoria RAM suficiente (al menos el tamaño del archivo + overhead), pero la velocidad será menor. Herramientas compatibles: llama.cpp, Ollama, LM Studio, llamafile, y cualquier otra que soporte GGUF.
+- VRAM estimada para inferencia (pesos + overhead de contexto, aproximada):
+  - Q2_K: ~13-14 GB
+  - Q3_K_M: ~17-18 GB
+  - Q4_K_S / Q4_K_M: ~20-22 GB
+  - Q5_K_M: ~24-26 GB
+  - Q6_K: ~28-30 GB
+  - Q8_0: ~36-38 GB
+- GPU recomendadas:
+  - Q4_K_M: RTX 4090 (24 GB), RTX 3090 (24 GB), A10G (24 GB).
+  - Q5_K_M / Q6_K: A100 40 GB, L40S (48 GB).
+  - Q8_0: A100 80 GB o dos GPU de 24 GB con reparto de capas.
+- Cabe en GPU de consumo: sí, desde Q2_K hasta Q4_K_M en tarjetas de 24 GB; Q5_K_M puede requerir reducir la ventana de contexto o usar offloading parcial a CPU.
+- Opciones de despliegue: llama.cpp, Ollama (mediante importación del GGUF), LM Studio, text-generation-webui y servidores compatibles con la API de OpenAI a través de llama.cpp server. vLLM y TGI no soportan GGUF de forma nativa para este modelo sin conversión.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-No se dispone de información suficiente para comparar este modelo con alternativas de la misma categoría. No se conocen modelos comparables en la documentación proporcionada.
+| Modelo | Parámetros | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|
+| RaDaR-32B-GGUF | 32,8B | No disponible | Apache 2.0 | GGUF | Especializado en dominio médico (tag), solo inglés |
+| Modelos médicos de 32B comparables | No disponible | No disponible | No disponible | No disponible | No se dispone de información sobre alternativas directas en la documentación consultada |
+| Modelos generalistas de ~32B (p. ej., Qwen2.5-32B, Yi-34B) | ~32-34B | 32K-128K (según modelo) | Apache 2.0 / otras | GGUF, safetensors | No especializados en medicina; contexto documentado |
+
+La comparación cuantitativa con alternativas no es posible con los datos disponibles: no se han publicado benchmarks del modelo ni se documentan sus características de contexto. La elección frente a modelos generalistas de tamaño similar debería basarse en validación empírica sobre el corpus clínico concreto de cada organización.
 
 ## Limitaciones y advertencias
 
-- No hay información verificada sobre sesgos, alucinaciones o riesgos específicos del modelo base.
-- La cuantización reduce la precisión numérica, lo que puede degradar la calidad de las respuestas, especialmente en cuantizaciones bajas (Q2_K, Q3_K).
-- La licencia Apache-2.0 permite uso comercial, pero no hay garantías sobre la exactitud médica o la seguridad en aplicaciones clínicas.
-- El modelo solo declara soporte para inglés, por lo que su uso en otros idiomas puede ser limitado o errático.
-- Al no conocer el contexto máximo, no se puede garantizar un rendimiento adecuado en conversaciones de largo recorrido.
-- No se ha confirmado que el modelo tenga capacidades específicas médicas más allá de la etiqueta del repositorio.
+- Ausencia total de benchmarks publicados: no hay evidencia cuantitativa de calidad en tareas médicas ni generales.
+- Riesgo elevado de alucinación en dominio sanitario: un modelo sin documentación de alineación ni evaluación clínica no debe usarse para decisiones diagnósticas o terapéuticas sin supervisión humana.
+- Idiomas: solo inglés; no se garantiza un rendimiento aceptable en castellano.
+- Longitud de contexto desconocida: limita el diseño de aplicaciones con documentos largos.
+- Cuantizaciones estáticas sin imatrix: las versiones Q2_K y Q3_K_S pueden presentar degradación notable; se recomienda Q4_K_M o superior para uso serio.
+- Licencia Apache 2.0 permite uso comercial, pero la responsabilidad regulatoria (por ejemplo, normativa de dispositivos médicos) recae en el desplegador.
+- El modelo base sczzz/RaDaR-32B tiene escasa documentación pública, lo que dificulta auditar su procedencia de datos y posibles sesgos.
+- El repositorio ocupa 224 GB, lo que exige planificación de almacenamiento y ancho de banda para la descarga de todas las cuantizaciones.
 
 ## Enlaces
 
-- [Repositorio Hugging Face del modelo cuantizado](https://huggingface.co/mradermacher/RaDaR-32B-GGUF)
-- [Modelo base sczzz/RaDaR-32B](https://huggingface.co/sczzz/RaDaR-32B)
-- [Página de descarga y visor de archivos](https://hf.tst.eu/model#RaDaR-32B-GGUF)
+- Repositorio GGUF: https://huggingface.co/mradermacher/RaDaR-32B-GGUF
+- Modelo base: https://huggingface.co/sczzz/RaDaR-32B
+- Página de descargas del cuantizador: https://hf.tst.eu/model#RaDaR-32B-GGUF
+- README de referencia para uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- FAQ y solicitudes de cuantización de mradermacher: https://huggingface.co/mradermacher/model_requests
+- Análisis de tipos de cuantización (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9

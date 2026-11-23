@@ -2,119 +2,108 @@
 
 ## Resumen
 
-Ornith-1.5-9B es un modelo de lenguaje denso de 9B parámetros desarrollado por Ornith AI (publicado originalmente en `ornith-ai/Ornith-1.5-9B`) y convertido al formato LiteRT-LM (`.litertlm`) por la comunidad `litert-community` para su ejecución en dispositivos edge mediante el runtime LiteRT-LM de Google. El modelo parte de Qwen3.5-9B como base y aplica un post-entrenamiento orientado a razonamiento y codificación agéntica, con especial énfasis en tareas de terminal y resolución de issues de software. La conversión aquí descrita contiene únicamente el decodificador de texto (8.953.803.264 de los 9.653.104.368 parámetros del release original), sin la torre de visión ni la cabeza de multi-token prediction.
+Ornith-1.5-9B es un modelo de lenguaje denso de 9B parámetros desarrollado por Ornith AI, derivado de Qwen/Qwen3.5-9B mediante post-entrenamiento. La versión aquí descrita es la conversión al formato LiteRT-LM (`.litertlm`) realizada por la comunidad `litert-community`, pensada para ejecución on-device y en el edge con el runtime LiteRT-LM de Google AI Edge. El modelo base se presenta como un paso hacia la construcción de modelos fundacionales mediante auto-mejora de extremo a extremo, donde el propio modelo genera tareas de entrenamiento, descubre estrategias y mejora su política mediante aprendizaje por refuerzo.
 
-La relevancia de esta ficha radica en que ofrece un modelo de razonamiento de 9B en formato optimizado para on-device (int8 y Mixed INT4), con un contexto de 4.096 tokens en estos ficheros frente a los 262.144 del modelo original. Es una opción interesante para desarrolladores que necesitan desplegar inferencia local en Mac o dispositivos móviles con un modelo de calidad cercana a la de los modelos de referencia en tareas de código, aunque con limitaciones claras de contexto y de plataforma.
+La arquitectura es la híbrida de Qwen3.5: 32 capas, de las cuales 24 son GatedDeltaNet (atención lineal) y 8 son atención completa (una de cada cuatro), con tamaño oculto 4096, 16 cabezas de atención con 4 KV heads de 256 dimensiones y vocabulario de 248.320 tokens con embeddings no atados. El checkpoint upstream es multimodal e incluye una cabeza de predicción multi-token (MTP), pero estos ficheros contienen únicamente el decodificador de texto (8.953.803.264 de los 9.653.104.368 parámetros totales).
 
-La arquitectura es la híbrida de Qwen3.5: 32 capas, de las cuales 24 usan GatedDeltaNet (atención lineal) y 8 usan atención completa, con un vocabulario de 248.320 tokens. El modelo se distribuye bajo licencia MIT y está pensado para despliegue en una sola GPU o en hardware de consumo.
+La conversión es relevante porque permite desplegar un modelo de razonamiento y coding agéntico de 9B en hardware de consumo y móvil, con ficheros de 6,02 GB (INT4 mixto) y 9,17 GB (INT8). El contexto nativo del modelo es de 262.144 tokens, aunque estos ficheros LiteRT-LM están limitados a 4.096 tokens.
 
 ## Especificaciones técnicas
 
 | Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer híbrido (GatedDeltaNet + atención completa), base Qwen3.5-9B |
-| Parámetros totales | 8.953.803.264 (solo decodificador de texto); 9.653.104.368 en el release original completo |
+| Arquitectura | Transformer híbrido Qwen3.5: 32 capas (24 GatedDeltaNet de atención lineal + 8 de atención completa) |
+| Parámetros totales | 9.653.104.368 (release upstream); 8.953.803.264 en estos ficheros (solo decodificador de texto) |
 | Parámetros activos | No aplica (modelo denso) |
-| Longitud de contexto | 4.096 tokens en estos ficheros; 262.144 en el modelo original |
-| Tipos de cuantización | int8 dinámica (9,20 GB) y Mixed INT4 blockwise-32 (6,06 GB) |
+| Longitud de contexto | 262.144 tokens en el modelo base; 4.096 tokens en estos ficheros LiteRT-LM |
+| Tipos de cuantización | INT8 dinámico; INT4 mixto (blockwise-32 en pesos fully connected, INT8 en embedding y lm_head, proyecciones GatedDeltaNet en float) |
 | Idiomas soportados | No disponible |
 | Licencia | MIT |
-| Formato de pesos | `.litertlm` (LiteRT-LM); el modelo base en safetensors/bf16 |
+| Formato de pesos | `.litertlm` (LiteRT-LM); pesos cuantizados en sección TFLiteWeights desde 2026-11-09 |
 
 ## Arquitectura y entrenamiento
 
-El modelo emplea la arquitectura híbrida de Qwen3.5: 32 capas, 24 de ellas con GatedDeltaNet (atención lineal con estado recurrente de tamaño constante) y 8 con atención completa (una de cada cuatro), tamaño oculto de 4096, 16 cabezas de atención con 4 cabezas KV de 256 dimensiones, y atención lineal con 16 cabezas de clave y 32 de valor de 128 dimensiones. El vocabulario es de 248.320 tokens con embeddings no atados. Solo las 8 capas de atención completa mantienen una caché KV creciente (presupuesto de 4.096 tokens en estos ficheros); las 24 capas lineales mantienen un estado convolucional y recurrente de tamaño fijo, lo que reduce el coste de memoria en contextos largos.
+El modelo sigue la arquitectura híbrida de Qwen3.5: 32 capas con tamaño oculto 4096, 16 cabezas de atención con 4 KV heads de 256 dimensiones, y atención lineal con 16 cabezas de clave y 32 de valor de 128 dimensiones. Las 24 capas de GatedDeltaNet mantienen un estado convolucional y recurrente de tamaño constante, mientras que solo las 8 capas de atención completa conservan una caché KV creciente (presupuesto de 4096 tokens en estos ficheros). El vocabulario es de 248.320 tokens con embeddings no atados. El checkpoint upstream incluye torre de visión y cabeza MTP, ausentes en esta conversión, que carga solo el decodificador de texto equivalente a `Qwen3_5ForCausalLM`.
 
-El entrenamiento parte de Qwen3.5-9B y aplica el post-entrenamiento de Ornith-1.5, que según el autor extiende Ornith-1.0 mediante generación automática de tareas de entrenamiento, descubrimiento de estrategias de resolución y mejora de la política mediante reinforcement learning ("self-improvement" de extremo a extremo). El checkpoint original es multimodal e incluye una cabeza de multi-token prediction; la conversión LiteRT-LM conserva solo el decodificador de texto. El modelo es de razonamiento y su turno del asistente abre con un bloque `<think>` por defecto, pero estas conversiones lo ejecutan con el pensamiento desactivado: la plantilla de chat escribe el bloque `<think>\n\n</think>` vacío en cada turno, de forma que las respuestas son únicamente la respuesta final.
+El entrenamiento de Ornith-1.5 extiende Ornith-1.0 (post-entrenado sobre Qwen3.5 y Gemma4) mediante auto-mejora: el modelo genera sus propias tareas de entrenamiento, descubre estrategias de resolución y mejora la política con aprendizaje por refuerzo. No se especifican en la información disponible el número de tokens de entrenamiento ni la composición del dataset. La conversión se realizó con litert-torch (commit 115a1360 con el parche híbrido de Qwen3.5) y se probó con litert-lm 0.18.0 y 0.19.x. Los ficheros se ejecutan con el modo de razonamiento desactivado: la plantilla de chat escribe el bloque `<think>\n\n</think>` vacío, equivalente byte a byte a la plantilla de Ornith con `enable_thinking=False`.
 
 ## Capacidades
 
-- Generación de texto y razonamiento en modo "thinking off" en estas conversiones (el modo con pensamiento no está disponible en los ficheros LiteRT-LM).
-- Codificación agéntica: tareas de terminal (Terminal-Bench 2.1) y resolución de issues de software (SWE-bench Verified).
-- Razonamiento matemático y aritmético (evaluado en GSM8K).
-- Soporte de tool calling / function calling: la plantilla de chat del bundle reproduce byte a byte las renderizaciones de Ornith con `enable_thinking=False` en conversaciones sin herramientas; el soporte con herramientas no está verificado en estos ficheros.
-- Capacidades multilingües: no disponibles (no se especifican idiomas).
-- Capacidad multimodal: el checkpoint original es multimodal, pero la torre de visión no está incluida en estos ficheros.
-- Ejecución on-device en GPU y CPU mediante LiteRT-LM.
+- Generación de texto y razonamiento: modelo de razonamiento con bloque `<think>` en el turno del asistente por defecto (desactivado en estos ficheros).
+- Codificación agéntica: etiquetado explícito como `agentic-coding`, orientado a tareas de ingeniería de software.
+- Razonamiento multi-paso y agentes: diseñado para resolución de tareas complejas con múltiples pasos.
+- Capacidades multilingües: no disponibles en la información proporcionada.
+- Tool calling / function calling: no confirmado explícitamente en la información disponible.
+- Modo thinking: soportado en el modelo base; desactivado en esta conversión LiteRT-LM.
+- Visión: el checkpoint upstream es multimodal, pero la torre de visión no está incluida en estos ficheros.
+- Predicción multi-token (MTP): presente en el release upstream, ausente en esta conversión.
 
 ## Casos de uso
 
-- Asistente de codificación local en estación de trabajo: el modelo puede integrarse en un IDE o CLI para autocompletar y resolver tareas de código, aprovechando su rendimiento en SWE-bench Verified (70,6 reportado por el proveedor) y su ejecución en una sola GPU de consumo.
-- Automatización de tareas de terminal: con Terminal-Bench 2.1 de 46,2 (reportado), es adecuado para agentes que ejecutan comandos y resuelven incidencias en entornos de shell, siempre que la tarea quepa en 4.096 tokens de contexto.
-- Inferencia en Mac con GPU: el fichero Mixed INT4 decodifica a 45,6 tok/s en un Mac Studio M4 Max, lo que permite usarlo como asistente interactivo local sin conexión.
-- Despliegue en dispositivos móviles Android de gama alta: el fichero int8 se probó en litert-lm 0.18.0; el motor GPU no compila en Galaxy S26 y el Pixel 8a no se llegó a ejecutar, por lo que el despliegue móvil requiere validación previa.
-- Razonamiento matemático en local: con 95 (int8) y 92 (Mixed INT4) en GSM8K, sirve para resolver problemas aritméticos en aplicaciones educativas o de cálculo sin depender de la nube.
-- Prototipado de agentes de código en CI/CD: al ser un modelo denso de 9B con licencia MIT, puede desplegarse en pipelines internos para revisión de parches o generación de tests, con la limitación del contexto de 4.096 tokens.
-- Evaluación comparativa de runtimes: útil para equipos que comparan LiteRT-LM frente a vLLM o llama.cpp en hardware edge, dado que el autor publica tasas de prefill y decodificación por plataforma.
+- Asistente de código en el IDE: el modelo puede integrarse en editores y entornos de desarrollo para autocompletado y generación de funciones, con temperatura recomendada de 0.6 y sin penalización de presencia para código preciso.
+- Agente de resolución de incidencias en repositorios: con SWE-bench Verified reportado en 70,6, es adecuado para pipelines que reciben un issue y generan un parche, ejecutándose localmente en una estación de trabajo con GPU.
+- Automatización de tareas de terminal: con Terminal-Bench 2.1 reportado en 46,2, puede emplearse en agentes que operan sobre shell y herramientas CLI en entornos controlados.
+- Inferencia on-device en portátiles: el fichero INT4 mixto de 6,02 GB cabe en GPUs de consumo y decodifica a 45,6 tok/s en la GPU de un Mac Studio M4 Max, lo que permite asistentes locales sin conexión.
+- Despliegue en dispositivos móviles y edge: el formato LiteRT-LM y las variantes INT8/INT4 están pensados para el runtime de Google AI Edge en teléfonos y hardware embebido.
+- Procesamiento por lotes en CPU: el fichero `Ornith-1.5-9B_int8.litertlm` de 9,17 GB es la opción recomendada para CPU en LiteRT-LM 0.19.x, útil para tareas de generación offline en servidores sin GPU.
+- Prototipado de agentes de razonamiento con contexto moderado: los 4.096 tokens de contexto de estos ficheros limitan su uso a conversaciones y tareas acotadas, adecuadas para asistentes de consulta técnica.
 
 ## Benchmarks y rendimiento
 
-Datos reportados por el proveedor (no ejecutados por el autor de la conversión):
+Resultados reportados por el proveedor (Ornith), promediados sobre cinco ejecuciones; no ejecutados en esta conversión:
 
 | Benchmark | Ornith-1.5-9B | Ornith-1.0-9B | Qwen3.5-9B |
 |---|---|---|---|
 | Terminal-Bench 2.1 (Terminus-2) | 46,2 | 43,1 | 21,3 |
 | SWE-bench Verified | 70,6 | 69,4 | 53,2 |
 
-Precisión en GSM8K (thinking off, 2.048 tokens de salida, Mac GPU):
+Rendimiento de la conversión LiteRT-LM:
 
-| Fichero | GSM8K |
+| Métrica | Valor |
 |---|---|
-| bf16 en transformers | 94 |
-| int8 `.litertlm` | 95 |
-| Mixed INT4 `.litertlm` | 92 |
-
-Rendimiento (prefill de 1.024 tokens + 256 tokens decodificados, contexto 2.048):
-
-| Métrica | Mac M4 Max | Galaxy S26 | Pixel 8a |
-|---|---|---|---|
-| Mixed INT4 GPU (s) | 7,28 | motor GPU no compila | no ejecutado |
-| int8 GPU (s) | 8,16 | no ejecutado | no ejecutado |
-| int8 CPU (s) | 21,47 | no ejecutado | no ejecutado |
-| Mixed INT4 CPU (s) | 32,37 | no ejecutado | no ejecutado |
-
-Decodificación en Mac M4 Max: 45,6 tok/s (Mixed INT4, GPU) frente a 39,6 tok/s (int8, GPU). En CPU, el fichero int8 es más rápido en prefill (234 tok/s frente a 68 tok/s del INT4 blockwise).
+| Decodificación (Mixed INT4, GPU Mac Studio M4 Max, litert-lm 0.18.0) | 45,6 tok/s |
+| Prefill (Mixed INT4 GPU composite v0190 vs. mixed_int4, litert-lm 0.19.2) | +27,6 % |
+| Decodificación (Mixed INT4 GPU composite v0190 vs. mixed_int4, litert-lm 0.19.2) | +24,5 % |
 
 ## Requisitos de hardware
 
-- VRAM estimada: el fichero int8 ocupa 9,20 GB y el Mixed INT4 6,06 GB; a ello hay que sumar la caché KV de las 8 capas de atención completa (presupuesto de 4.096 tokens) y el estado recurrente de las 24 capas lineales.
-- GPU recomendadas: Mac Studio M4 Max (probado); GPU de consumo con al menos 10-12 GB de VRAM para int8 y 7-8 GB para Mixed INT4.
-- Compatibilidad con GPU de consumo: el Mixed INT4 (6,06 GB) cabe en tarjetas de 8 GB; el int8 requiere 10-12 GB.
-- Despliegue: runtime LiteRT-LM 0.18.0 (probado) y 0.17.1 (verificado con `run` simple en CPU de Mac). No se mencionan vLLM, llama.cpp, Ollama ni TGI para estos ficheros.
-- Latencia y throughput: 45,6 tok/s (Mixed INT4, GPU, Mac M4 Max); 39,6 tok/s (int8, GPU); prefill de 1.024 tokens + 256 decodificados en 7,28 s (Mixed INT4 GPU) y 8,16 s (int8 GPU). En CPU, 21,47 s (int8) y 32,37 s (Mixed INT4).
-- Limitación iOS: cada fichero es una única sección TFLite de 8,57 GiB (int8) y 5,64 GiB (Mixed INT4), por encima del límite de ~2 GiB por sección descrito en la ficha de Ministral-3-3B-Instruct-2512, por lo que no está medido en iOS.
+- VRAM estimada: aproximadamente 6,02 GB para el fichero INT4 mixto y 9,17 GB para el INT8, más overhead de activaciones y estado recurrente.
+- GPU recomendadas: Mac Studio M4 Max (probado, 45,6 tok/s en decodificación); GPUs de consumo con al menos 8 GB de VRAM para el fichero INT4.
+- Cabe en GPU de consumo: sí, el fichero INT4 mixto de 6,02 GB es apto para GPUs consumer de gama media-alta.
+- Opciones de despliegue: LiteRT-LM 0.18.0 y 0.19.x; los ficheros `gpu_composite_v0190` requieren `min_runtime_version` 0.19.0.
+- Latencia y throughput: 45,6 tok/s en decodificación GPU sobre Mac Studio M4 Max con litert-lm 0.18.0; el estado en teléfono se remite a la sección Performance de la model card, no detallada aquí.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Licencia | Formato edge | Notas |
-|---|---|---|---|---|---|
-| Ornith-1.5-9B (esta conversión) | 9B denso (8,95B texto) | 4.096 (262.144 original) | MIT | `.litertlm` int8 / Mixed INT4 | SWE-bench Verified 70,6; Terminal-Bench 2.1 46,2 |
-| Ornith-1.0-9B | 9B denso | No disponible | MIT (según modelo base) | `.litertlm` (conversión existente) | SWE-bench Verified 69,4; Terminal-Bench 2.1 43,1 |
-| Qwen3.5-9B | 9B denso | 262.144 | No disponible en la información | Conversiones LiteRT-LM de 4B, 2B y 0,8B disponibles; 9B no listada | SWE-bench Verified 53,2; Terminal-Bench 2.1 21,3 |
-| Qwen3.5-4B (litert-community) | 4B denso | No disponible | No disponible | `.litertlm` | Conversión oficial de la comunidad LiteRT-LM |
+| Modelo | Parámetros | Contexto | Licencia | Formato / disponibilidad |
+|---|---|---|---|---|
+| Ornith-1.5-9B (esta conversión) | 8,95B (texto) | 4.096 (ficheros LiteRT-LM) | MIT | `.litertlm` |
+| Ornith-1.0-9B | No disponible | No disponible | No disponible | Conversión LiteRT-LM disponible |
+| Qwen3.5-9B | 9B (aproximado) | No disponible | No disponible | Checkpoint upstream en Hugging Face |
+| Qwen3.5-4B / 2B / 0.8B | 4B / 2B / 0.8B | No disponible | No disponible | Conversiones LiteRT-LM disponibles |
+
+En benchmarks de coding agéntico, Ornith-1.5-9B supera a Ornith-1.0-9B en Terminal-Bench 2.1 (46,2 frente a 43,1) y SWE-bench Verified (70,6 frente a 69,4), y a Qwen3.5-9B de forma notable (21,3 y 53,2 respectivamente), según datos del proveedor.
 
 ## Limitaciones y advertencias
 
-- Contexto reducido a 4.096 tokens en estos ficheros frente a los 262.144 del modelo original; no apto para tareas que requieran contexto largo.
-- Modo de pensamiento desactivado de forma fija: la plantilla escribe siempre el bloque `<think>` vacío y no hay interruptor para activarlo, lo que puede reducir el rendimiento en tareas de razonamiento complejo frente al modelo original.
-- Solo decodificador de texto: sin torre de visión ni cabeza de multi-token prediction; no es multimodal en este formato.
-- El soporte de tool calling con herramientas no está verificado en estos ficheros; la plantilla reproduce el comportamiento sin herramientas.
-- Sin datos de idiomas soportados; no se puede garantizar calidad multilingüe.
-- Despliegue móvil no validado: el motor GPU no compila en Galaxy S26 y no se ejecutó en Pixel 8a; en iOS los ficheros superan el límite de sección TFLite.
-- Los benchmarks de Terminal-Bench y SWE-bench son reportados por el proveedor y no han sido reproducidos por el autor de la conversión.
-- Riesgo de alucinación inherente a modelos de 9B; no se documentan sesgos específicos.
-- Licencia MIT permite uso comercial, pero conviene verificar las condiciones del modelo base Qwen3.5-9B y del post-entrenamiento de Ornith AI.
-- La variante "Ornith-1.5-9B-Mobile" mencionada en el README no tiene repositorio público en el momento de la conversión.
+- Contexto reducido: estos ficheros limitan la ventana a 4.096 tokens frente a los 262.144 del modelo base, lo que restringe tareas de contexto largo.
+- Sin capacidades multimodales: la torre de visión y la cabeza MTP del release upstream no están incluidas.
+- Razonamiento desactivado: la plantilla de chat fuerza `enable_thinking=False`, por lo que no se obtiene el bloque de razonamiento completo del modelo base.
+- Benchmarks no verificados: los resultados de Terminal-Bench 2.1 y SWE-bench Verified son reportados por el proveedor y no se ejecutaron en esta conversión.
+- Idiomas no documentados: no se especifican los idiomas soportados, lo que dificulta evaluar su cobertura multilingüe.
+- Riesgo de alucinación: no cuantificado en la información disponible; aplicable el riesgo habitual de los modelos generativos.
+- Sesgos: no documentados en la información proporcionada.
+- Compatibilidad de runtime: los ficheros `gpu_composite_v0190` requieren LiteRT-LM 0.19.0 o superior; en la GPU de 0.18.1 devuelven `!!!…`.
+- Variante Mobile: el README menciona un "Ornith-1.5-9B-Mobile" cuantizado sin repositorio público en el momento de la redacción; estos ficheros no son esa variante.
+- Licencia MIT: permite uso comercial, pero conviene verificar las condiciones del modelo base upstream.
 
 ## Enlaces
 
 - Hugging Face (esta conversión): https://huggingface.co/litert-community/Ornith-1.5-9B
 - Modelo base: https://huggingface.co/ornith-ai/Ornith-1.5-9B
-- Modelo original Qwen3.5-9B: https://huggingface.co/Qwen/Qwen3.5-9B
-- Runtime LiteRT-LM: https://github.com/google-ai-edge/LiteRT-LM
-- Conversión previa Ornith-1.0-9B: https://huggingface.co/litert-community/Ornith-1.0-9B
+- Qwen3.5-9B: https://huggingface.co/Qwen/Qwen3.5-9B
+- LiteRT-LM (runtime): https://github.com/google-ai-edge/LiteRT-LM
+- Conversión Ornith-1.0-9B: https://huggingface.co/litert-community/Ornith-1.0-9B
 - Conversión Qwen3.5-4B: https://huggingface.co/litert-community/Qwen3.5-4B
 - Conversión Qwen3.5-2B: https://huggingface.co/litert-community/Qwen3.5-2B
 - Conversión Qwen3.5-0.8B: https://huggingface.co/litert-community/Qwen3.5-0.8B
-- Script de verificación de calidad: https://github.com/john-rocky/hf-to-litertlm/blob/main/scripts/verify_quality.py
-- Ficha de Ministral-3-3B-Instruct-2512 (límite de sección TFLite): https://huggingface.co/litert-community/Ministral-3-3B-Instruct-2512

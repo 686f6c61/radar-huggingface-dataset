@@ -48,31 +48,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Lot Lookup - Yakima Chief Hops",
-      "url": "https://tools.yakimachief.com/lookup",
-      "snippet": "Effortlessly search and verify the details of specific hop lots with Yakima Chief Hops' (YCH) Lot Lookup tool. Access comprehensive …"
-    },
-    {
-      "title": "Yakima Chief Hops Launches New Website | Press Release | www ...",
-      "url": "https://www.yakimachief.com/about-us/news/yakima-chief-hops-launches-new-website",
-      "snippet": "Aug 5, 2026 · Yakima Chief Hops launches a redesigned website with Shop-By-Lot, easier online ordering and tools for brewers in …"
-    },
-    {
-      "title": "Careers at Yakima Chief Hops | Employment Opportunities | www ...",
-      "url": "https://www.yakimachief.com/about-us/careers",
-      "snippet": "Discover rewarding careers at Yakima Chief Hops, where you’ll thrive in a values-driven, fun, and supportive workplace."
-    },
-    {
-      "title": "Efficiency Calculator",
-      "url": "https://tools.yakimachief.com/calculators/efficiency",
-      "snippet": "Input your brewhouse values into this handy calculator to see how Cryo Hops®, DynaBoost™, and HyperBoost™ can impact your …"
-    },
-    {
-      "title": "Yakima Chief - Grower Portal | Login",
-      "url": "https://grower.yakimachief.com/",
-      "snippet": "YCH HOPS Grower Portal Grower Portal Please sign in to continue. Forgot password?"
-    }
-  ]
+  "sources": []
 }

@@ -2,99 +2,112 @@
 
 ## Resumen
 
-Karpo Decision 4B es un modelo de decisión de la familia Karpo Decision, desarrollado por MachinePulseAI. A diferencia de un modelo generativo convencional, no produce texto: dado un estado (una página web, un documento, una conversación, cualquier texto o JSON, y opcionalmente una captura de pantalla) y un conjunto de preguntas tipadas sobre ese estado, devuelve una probabilidad para cada opción de cada pregunta en un único forward pass. Se trata de un fine-tuning de Qwen/Qwen3.5-4B al que se le ha añadido una cabeza de lectura lineal sobre códigos de opción.
+Karpo Decision 4B es un modelo de decisión desarrollado por MachinePulseAI, afinado a partir de Qwen/Qwen3.5-4B. A diferencia de un modelo generativo convencional, no produce texto: dado un estado (una página web, un documento, una conversación o cualquier texto o JSON) y un conjunto de preguntas tipadas sobre ese estado, devuelve una probabilidad para cada opción de cada pregunta en una sola pasada hacia delante. El modelo implementa una lectura lineal (readout) sobre las opciones en lugar de decodificación autoregresiva.
 
-El modelo resuelve el problema de la toma de decisiones estructurada y determinista en pipelines automatizados: en lugar de generar texto libre que luego hay que parsear, devuelve directamente distribuciones de probabilidad sobre opciones predefinidas, con tipos de pregunta `choice` (hasta 255 opciones), `noul` (verdadero/falso) y `score` (un nivel en una escala). Esto lo hace adecuado para sistemas de agentes, moderación, enrutamiento y clasificación de alto rendimiento donde la latencia y la consistencia importan.
+Con 4.539.265.536 parámetros en bf16 más un readout de 255 × 2.560 en fp32, el modelo maneja tres tipos de pregunta: `choice` (hasta 255 opciones), `noul` (verdadero o falso) y `score` (un nivel en una escala). Soporta entradas de texto o JSON y una captura de pantalla en `state.viewport_screenshot`, con una longitud de contexto de 32.768 tokens por secuencia.
 
-Con 4.539.265.536 parámetros en bf16 (más una matriz de lectura de 255 × 2.560 en fp32), una ventana de contexto de 32.768 tokens por secuencia y soporte de entrada multimodal (texto/JSON más captura de pantalla), el modelo se posiciona como la variante compacta de una familia que abarca desde 0,85B hasta 31,3B parámetros. Es relevante ahora porque ofrece una alternativa de inferencia sin decodificación generativa, lo que reduce latencia y elimina el riesgo de respuestas fuera del conjunto de opciones permitido.
+Su relevancia radica en el enfoque: al eliminar la generación de texto, la respuesta siempre es una de las opciones proporcionadas, lo que reduce el riesgo de alucinación en tareas de clasificación y decisión estructurada. Forma parte de la familia Karpo Decision, que abarca modelos desde 0,8B hasta 31B, y se distribuye bajo licencia Apache-2.0 con interfaces de API Python y servidor HTTP en el formato System One.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer híbrido (atención completa + atención lineal) con cabeza de lectura lineal, fine-tuned desde Qwen/Qwen3.5-4B |
-| Parametros totales | 4.539.265.536 (4,5B en bf16) + matriz de lectura 255 × 2.560 en fp32 |
-| Parametros activos | No aplica (no es MoE) |
-| Longitud de contexto | 32.768 tokens por secuencia; peticiones más largas se dividen por preguntas, cada parte con el estado completo |
-| Tipos de cuantizacion | No disponible (los pesos se distribuyen en bf16; el repo ocupa 9,1 GB) |
-| Idiomas soportados | No disponible |
-| Licencia | MachinePulse Community License (uso comercial permitido con atribución; uso comercial en producción por entidades con ingresos anuales superiores a 10 M USD requiere acuerdo comercial) |
-| Formato de pesos | safetensors (librería transformers) |
+| Arquitectura | Transformer híbrido (atención completa + atención lineal) sobre Qwen3.5-4B, con readout lineal |
+| Parametros totales | 4.539.265.536 (4,5B en bf16) + readout 255 × 2.560 en fp32 |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | 32.768 tokens por secuencia |
+| Tipos de cuantizacion | no disponible |
+| Idiomas soportados | no disponible |
+| Licencia | Apache-2.0 |
+| Formato de pesos | safetensors |
+| Tamano del repo | 9,1 GB |
+| Modelo base | Qwen/Qwen3.5-4B |
+| Pipeline | text-classification |
+| Tipos de pregunta | choice (hasta 255 opciones), noul (true/false), score (nivel en escala) |
+| Entradas | texto o JSON, y captura de pantalla en state.viewport_screenshot |
+| Interfaces | API Python y servidor HTTP (POST /v1/systemone, GET /healthz) |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de Qwen/Qwen3.5-4B y se somete a un fine-tuning con una relación de modelo base declarada como `finetune`. La innovación principal es la sustitución de la generación autoregresiva por una cabeza de lectura lineal: cada opción de cada pregunta se etiqueta con un código de opción, y en el punto de lectura que cierra cada pregunta una lectura lineal puntúa 255 códigos de opción; una softmax restringida a las opciones de esa pregunta concreta produce las probabilidades. Nada se decodifica, de modo que la respuesta siempre es una de las opciones permitidas.
+El modelo se basa en Qwen3.5-4B y emplea una arquitectura transformer híbrida: las capas de atención completa leen la secuencia completa en ambas direcciones, mientras que las capas de atención lineal la leen en orden, de modo que las preguntas se sitúan antes del estado. La innovación principal es el mecanismo de decisión: cada opción se etiqueta con un código de opción y, en el punto de lectura que cierra cada pregunta, un readout lineal puntúa 255 códigos de opción; una softmax sobre las opciones de esa pregunta concreta produce las probabilidades. No se decodifica nada, por lo que la respuesta es siempre una de las opciones disponibles.
 
-La arquitectura combina capas de atención completa, que leen la secuencia en ambas direcciones, con capas de atención lineal, que la leen en orden, de forma que las preguntas se sitúan antes del estado en la secuencia. Una petición se codifica como una única secuencia que contiene la lista de preguntas, el estado y, a continuación, cada pregunta de nuevo con sus opciones y su punto de lectura, lo que permite responder muchas preguntas en un solo forward pass. El diseño de disposición "lista de preguntas primero" sigue los trabajos FlexDM y jev-brain. No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni si se emplearon técnicas de RLHF o DPO.
+Una solicitud consiste en un estado y cualquier número de preguntas, codificadas como una única secuencia: primero la lista de preguntas, después el estado y luego cada pregunta de nuevo con sus opciones y un punto de lectura. El diseño de lista de preguntas primero sigue a FlexDM y jev-brain. No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni si se emplearon técnicas de RLHF o DPO.
 
 ## Capacidades
 
-- Clasificación y decisión estructurada mediante preguntas tipadas: `choice` (hasta 255 opciones), `noul` (verdadero/falso) y `score` (nivel en una escala).
-- Entrada de texto o JSON como estado, con soporte opcional de captura de pantalla en `state.viewport_screenshot` (entrada image-text-to-text).
-- Respuesta en un único forward pass para múltiples preguntas sobre el mismo estado, sin generación de texto.
-- Salida con probabilidades por opción, opción elegida y nivel de confianza.
-- Procesamiento de estados largos mediante división por preguntas cuando se supera la ventana de 32.768 tokens.
-- Interfaz de servidor HTTP en el formato System One (`POST /v1/systemone`, `GET /healthz`).
-- No se documentan capacidades de tool calling, razonamiento multi-paso generativo ni modos de pensamiento, al no ser un modelo generativo.
+- Decisión estructurada: devuelve probabilidades sobre opciones predefinidas en lugar de generar texto libre.
+- Preguntas de tipo `choice` con hasta 255 opciones por pregunta.
+- Preguntas de tipo `noul` (verdadero/falso) con probabilidad de verdadero.
+- Preguntas de tipo `score` para evaluar un nivel en una escala.
+- Procesamiento de múltiples preguntas en una sola pasada hacia delante.
+- Entrada de texto o JSON como estado.
+- Soporte de captura de pantalla como parte del estado (image-text-to-text).
+- Contexto largo de 32.768 tokens por secuencia, con división automática de solicitudes largas por preguntas.
+- Interfaz de servidor HTTP compatible con el formato System One.
+- No soporta generación de texto, tool calling ni razonamiento multi-paso en el sentido generativo; su función es la clasificación y decisión.
 
 ## Casos de uso
 
-- Atención al cliente automatizada: el modelo puede evaluar el estado de una conversación o de un pedido y decidir entre opciones como reembolsar, rechazar o escalar a un supervisor, devolviendo probabilidades y confianza para cada acción, como se muestra en el ejemplo de la model card con una solicitud de devolución fuera de plazo.
-- Enrutamiento y triaje de tickets: dado el texto de una incidencia, preguntas de tipo `choice` permiten asignar categoría, prioridad y equipo responsable en un solo forward pass, reduciendo la latencia frente a un modelo generativo.
-- Moderación de contenido: preguntas `noul` (¿viola la política?) y `score` (nivel de gravedad en una escala) permiten obtener una decisión determinista y acotada al conjunto de opciones, sin riesgo de respuestas fuera de formato.
-- Automatización de agentes web: con una captura de pantalla en `state.viewport_screenshot` y el DOM o texto de la página como estado, el modelo puede decidir la siguiente acción entre un conjunto acotado de opciones (hacer clic, rellenar, navegar, detenerse).
-- Validación de documentos y cumplimiento normativo: dado un contrato o documento JSON, preguntas booleanas y de escala permiten verificar cláusulas y asignar niveles de riesgo de forma consistente y auditable.
-- Sistemas de decisión de bajas exigencias de latencia: al no decodificar texto, el coste por petición se limita a un forward pass, lo que resulta adecuado para pipelines de alto volumen con GPU única.
-- Clasificación multilingüe de textos o JSON estructurados: siempre que el estado se presente como texto, el modelo puede evaluar preguntas tipadas sobre él; no obstante, no se documentan los idiomas soportados.
+- Moderación de contenido con categorías predefinidas: dado un texto y una pregunta `choice` con las categorías de política, el modelo devuelve la probabilidad de cada una sin generar explicaciones, lo que facilita umbrales de decisión auditables.
+- Enrutamiento de tickets de soporte: con un estado que contenga la conversación y una pregunta `choice` con los equipos disponibles, el modelo asigna el ticket al equipo más probable en una sola pasada.
+- Evaluación de elegibilidad en políticas de devolución: como en el ejemplo de la model card, dado el pedido y la política, responde a preguntas `noul` (¿es elegible?) y `choice` (¿qué acción tomar?) con confianza asociada.
+- Clasificación de documentos con capturas de pantalla: al aceptar una imagen en `viewport_screenshot`, puede decidir sobre el contenido visual de una página web o interfaz junto con el texto del estado.
+- Puntuación de calidad o riesgo: mediante preguntas `score`, evalúa un nivel en una escala (por ejemplo, gravedad de una incidencia) con probabilidades por nivel.
+- Automatización de flujos de decisión en agentes: al no generar texto, encaja como componente de decisión determinista en pipelines donde se requiere que la salida sea siempre una opción válida, reduciendo el riesgo de respuestas fuera de formato.
+- Análisis de conversaciones multi-turno: con 32.768 tokens de contexto, puede procesar historiales largos y responder preguntas estructuradas sobre ellos.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+La model card menciona el Decision Index 0.3 public suite y que el modelo mayor de la familia (karpo-decision-31B) alcanza el puesto #1 con una puntuación Full de 73,9 en tests privados (edición 0.4.1, tablero del 12 de noviembre de 2026, 300 entradas) y un índice público de 75,0. Sin embargo, no se proporcionan resultados numéricos específicos para karpo-decision-4B en la información disponible.
 
-La model card menciona que el modelo mayor de la familia, karpo-decision-31B, ocupa el puesto #1 del Decision Index con una puntuación Full de 73,9 en las pruebas privadas de los mantenedores (edición 0.4.1, tablero del 12 de noviembre de 2026, 300 entradas) y un índice público de 75,0. No se proporcionan resultados específicos para karpo-decision-4B.
+No se han publicado resultados de benchmarks específicos de karpo-decision-4B en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: los pesos en bf16 ocupan 9,1 GB; las peticiones largas requieren memoria adicional. No se especifica una cifra exacta de VRAM total recomendada.
-- GPU recomendadas: una GPU con al menos 16 GB de VRAM para cubrir pesos y estados; no se detallan modelos concretos (A100, H100, RTX 4090) en la información disponible.
-- Compatibilidad con GPU de consumo: probable en tarjetas con 16 GB o más (por ejemplo, RTX 4090 o RTX 4080), aunque no se confirma oficialmente.
-- Opciones de despliegue: API de Python (`karpo_decision.decider.Decider`) y servidor HTTP propio mediante `torchrun` (`karpo_decision.serve.server`). No se mencionan vLLM, llama.cpp, Ollama ni TGI; cargar el checkpoint como modelo de chat convencional no reproduce sus respuestas.
-- Requisitos de software: Python 3.12 o superior, una GPU, y el extra `qwen` del paquete `karpo-decision`.
+- VRAM estimada para inferencia: los pesos ocupan 9,1 GB en bf16; solicitudes largas requieren más memoria.
+- GPU recomendadas: se requiere una GPU; no se especifican modelos concretos en la información disponible.
+- No se confirma si cabe en GPU de consumo; con 9,1 GB de pesos en bf16, sería ajustado en GPUs de 12 GB y holgado en 16 GB o más, pero no hay dato oficial.
+- Opciones de despliegue: API Python (`karpo_decision.decider.Decider`) y servidor HTTP propio (`torchrun ... -m karpo_decision.serve.server`). No se menciona soporte para vLLM, llama.cpp, Ollama ni TGI.
+- Requisitos de software: Python 3.12 o superior y el extra `qwen` del paquete `karpo-decision`.
 - Latencia y throughput: no disponibles.
+- Nota importante: cargar el checkpoint como un modelo de chat convencional no reproduce sus respuestas.
 
 ## Comparativa con modelos similares
 
-| Modelo | Base | Parametros | Contexto | Enfoque | Licencia |
+| Modelo | Base | Parámetros | Contexto | Licencia | Enfoque |
 |---|---|---|---|---|---|
-| karpo-decision-4B | Qwen3.5 4B | 4,5B | 32.768 tokens | Decisión por lectura lineal | MachinePulse Community |
-| karpo-decision-2B | Qwen3.5 2B | 2,2B | No disponible | Decisión por lectura lineal | MachinePulse Community |
-| karpo-decision-9B | Qwen3.5 9B | 8,4B | No disponible | Decisión por lectura lineal | MachinePulse Community |
-| karpo-decision-31B | Gemma 4 31B | 31,3B | No disponible | Decisión por lectura lineal | MachinePulse Community |
+| karpo-decision-4B | Qwen3.5 4B | 4,5B | 32.768 | Apache-2.0 | Decisión por readout |
+| karpo-decision-2B | Qwen3.5 2B | 2,2B | no disponible | Apache-2.0 | Decisión por readout |
+| karpo-decision-9B | Qwen3.5 9B | 8,4B | no disponible | Apache-2.0 | Decisión por readout |
+| karpo-decision-12B | Gemma 4 12B | 12,0B | no disponible | Apache-2.0 | Decisión por readout |
+| karpo-decision-31B | Gemma 4 31B | 31,3B | no disponible | Apache-2.0 | Decisión por readout |
 
-No se dispone de información sobre modelos de decisión comparables de otros desarrolladores ni de resultados de benchmarks que permitan una comparación cuantitativa con alternativas de la misma categoría.
+No se dispone de datos de rendimiento comparativo entre estos modelos en la información proporcionada, salvo la mención de que el 31B lidera el Decision Index. No se han identificado en la información disponible modelos de decisión comparables de otros autores.
 
 ## Limitaciones y advertencias
 
-- No es un modelo generativo: no produce texto libre y no debe cargarse como un modelo de chat convencional, ya que sus respuestas no se reproducen de esa forma.
-- La respuesta está restringida al conjunto de opciones proporcionado; preguntas mal formuladas o con opciones ambiguas degradan la calidad de la decisión.
-- Riesgo de sesgos y alucinación no documentado; al no generar texto, el riesgo de alucinación se traslada a la calibración de las probabilidades, sobre la que no hay información publicada.
-- Idiomas soportados no disponibles; no se garantiza un rendimiento multilingüe equilibrado.
-- Licencia MachinePulse Community: el uso comercial está permitido, pero los productos y servicios ofrecidos a terceros deben mostrar "Powered by karpo-decision (MachinePulse)"; el uso en producción con fines comerciales por entidades con ingresos anuales, junto con sus filiales, superiores a 10 M USD requiere un acuerdo comercial.
-- El repo tiene 0 descargas y 0 likes en el momento de la consulta, y fue creado el 12 de noviembre de 2026; se trata de un modelo reciente con escasa validación externa.
-- No se documentan requisitos de memoria para peticiones largas más allá de que "las peticiones largas ocupan más" que los 9,1 GB de pesos.
+- No es un modelo generativo: no produce texto libre ni responde a instrucciones abiertas; solo devuelve probabilidades sobre opciones predefinidas.
+- Cargar el checkpoint como un modelo de chat convencional no reproduce sus respuestas; requiere el código de inferencia específico.
+- La respuesta está restringida a las opciones proporcionadas; si las opciones son incorrectas o incompletas, la decisión será incorrecta.
+- No se dispone de información sobre sesgos conocidos, riesgo de alucinación en el sentido generativo, ni limitaciones idiomáticas.
+- Los idiomas soportados no están documentados.
+- No se especifican restricciones adicionales de licencia para uso comercial más allá de Apache-2.0.
+- El modelo tiene 452 descargas y 0 likes en el momento de la consulta, lo que indica una adopción limitada y poca validación comunitaria.
+- No se documentan resultados de benchmarks específicos para esta variante de 4B.
+- La fecha de creación (noviembre de 2026) y las referencias a Qwen3.5 y Gemma 4 indican que se apoya en modelos base recientes; conviene verificar su disponibilidad y estabilidad.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/MachinePulseAI/karpo-decision-4B
-- Licencia: https://huggingface.co/MachinePulseAI/karpo-decision-4B/blob/main/LICENSE
+- Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Repositorio de inferencia: https://github.com/machinepulse-ai/karpo-decision
-- Modelo hermano karpo-decision-31B: https://huggingface.co/MachinePulseAI/karpo-decision-31B
-- Modelo hermano karpo-decision-12B: https://huggingface.co/MachinePulseAI/karpo-decision-12B
-- Modelo hermano karpo-decision-9B: https://huggingface.co/MachinePulseAI/karpo-decision-9B
-- Modelo hermano karpo-decision-2B: https://huggingface.co/MachinePulseAI/karpo-decision-2B
-- Modelo hermano karpo-decision-0.8B: https://huggingface.co/MachinePulseAI/karpo-decision-0.8B
+- Modelo karpo-decision-31B: https://huggingface.co/MachinePulseAI/karpo-decision-31B
+- Modelo karpo-decision-12B: https://huggingface.co/MachinePulseAI/karpo-decision-12B
+- Modelo karpo-decision-9B: https://huggingface.co/MachinePulseAI/karpo-decision-9B
+- Modelo karpo-decision-2B: https://huggingface.co/MachinePulseAI/karpo-decision-2B
+- Modelo karpo-decision-0.8B: https://huggingface.co/MachinePulseAI/karpo-decision-0.8B
 - Decision Index (space): https://huggingface.co/spaces/multimodalart/jev-decision-index
 - Kit Decision Index: https://github.com/apolinario/decision-index
 - FlexDM: https://github.com/1000luca/FlexDM
 - jev-brain: https://github.com/wcole3/jev-brain
-- Modelo base Qwen/Qwen3.5-4B: https://huggingface.co/Qwen/Qwen3.5-4B
+- Licencia: https://huggingface.co/MachinePulseAI/karpo-decision-4B/blob/main/LICENSE

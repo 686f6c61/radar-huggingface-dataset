@@ -2,92 +2,81 @@
 
 ## Resumen
 
-GLM-5.3-Flash-oQ8e-mtp es una cuantización de 8 bits del modelo GLM-5.3-Flash, publicada por el usuario dfp-official en Hugging Face. Por el identificador y por el campo model_type ("glm5_next") que aparece en la model card, se trata de una conversión del modelo base GLM-5.3-Flash a formato MLX safetensors, no de un entrenamiento propio del autor. La model card del modelo base no forma parte de la información disponible, por lo que no se pueden confirmar detalles de arquitectura, datos de entrenamiento ni idiomas.
+GLM-5.3-Flash-oQ8e-mtp es una cuantización de 8 bits del modelo GLM-5.3-Flash, publicada por el usuario dfp-official en Hugging Face. Se trata de una conversión de pesos al formato MLX safetensors realizada con la herramienta oQ (oMLX v0.7.1.dev1), que aplica cuantización de precisión mixta con un tamano de grupo de 64. El modelo base pertenece a la familia GLM-5 Next (identificador de arquitectura `glm5_next`), aunque la model card no documenta quien es el desarrollador original ni las características del modelo sin cuantizar.
 
-El dato más relevante es su tamaño: 321.323.031.390 parámetros reales, medidos sobre los ficheros safetensors, lo que lo sitúa en la categoría de modelos de más de 300.000 millones de parámetros. El repositorio ocupa 342,2 GB, coherente con un almacenamiento de 8 bits más escalas y sesgos de cuantización. El pipeline, la licencia y los idiomas no están declarados en la ficha de Hugging Face.
+El dato más relevante es su escala: 321.323.031.390 parámetros totales según los safetensors del repositorio, lo que lo situa en la categoría de modelos de más de 300.000 millones de parámetros. El repositorio ocupa 678,1 GB, coherente con una cuantización de 8 bits de un modelo de ese tamano. El sufijo `mtp` del nombre sugiere multi-token prediction, una técnica de decodificación especulativa, aunque la model card no lo confirma explícitamente.
 
-La cuantización se ha realizado con oQ (oMLX v0.7.0.dev2), una herramienta de cuantización de precisión mixta, con 8 bits y tamaño de grupo 64. El modelo está pensado para ejecutarse exclusivamente con MLX, es decir, sobre Apple Silicon. El autor indica que esta versión sustituye a una anterior, subida el 15 de septiembre de 2026, y pide volver a descargar los pesos si se obtuvo la versión previa.
+La ficha es relevante para desarrolladores que trabajen en el ecosistema Apple Silicon con MLX y necesiten ejecutar un modelo de gran escala en local o en hardware de Apple. No obstante, la información publicada es muy escasa: no hay datos sobre contexto, licencia, idiomas, datos de entrenamiento ni benchmarks, por lo que muchas especificaciones deben marcarse como no disponibles.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (model_type declarado: glm5_next; no se detalla transformer, MoE, SSM ni híbrida) |
-| Parametros totales | 321.323.031.390 (≈321,3 mil millones) |
+| Arquitectura | glm5_next (transformer, detalles no disponibles) |
+| Parametros totales | 321.323.031.390 |
 | Parametros activos | no disponible |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | 8 bits, precisión mixta (oQ / oMLX v0.7.0.dev2), tamaño de grupo 64 |
+| Tipos de cuantizacion | 8 bits, precision mixta (oQ), group size 64 |
 | Idiomas soportados | no disponible |
 | Licencia | no disponible |
-| Formato de pesos | MLX safetensors (librería: mlx) |
+| Formato de pesos | MLX safetensors |
+| Libreria | mlx |
+| Tamano del repositorio | 678,1 GB |
+| Fecha de cuantizacion | 2026-10-13 (version actual) |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información sobre la arquitectura interna del modelo base en los datos proporcionados. El único dato estructural es el campo model_type: "glm5_next", que indica la familia de modelos a la que pertenece el checkpoint original. El repositorio no incluye documentación sobre número de capas, tipo de atención, uso de mezcla de expertos, ventana de contexto, tokenizador ni estrategia de entrenamiento (número de tokens, composición del dataset, RLHF, DPO u otras técnicas de alineamiento).
+La model card solo indica que el tipo de modelo es `glm5_next` y que se ha cuantizado con oQ (oMLX v0.7.1.dev1) en precisión mixta de 8 bits con grupo de 64. No se documenta la arquitectura interna del modelo base (si es un transformer denso, un MoE o una arquitectura híbrida), ni el número de tokens de entrenamiento, la composición del dataset, ni si hubo etapas de RLHF, DPO o similares. El sufijo `mtp` del nombre apunta a multi-token prediction, pero no hay confirmación en la documentación.
 
-Lo que sí está documentado es el proceso de cuantización posterior al entrenamiento. Se aplicó oQ, la herramienta de cuantización de precisión mixta del proyecto oMLX (versión v0.7.0.dev2), con un esquema de 8 bits y tamaño de grupo 64. La precisión mixta implica que distintas capas o tensores pueden haberse cuantizado con criterios diferentes, pero la model card no detalla qué componentes quedaron en mayor o menor precisión, ni si las capas de atención, el enrutador de expertos o los embeddings recibieron tratamiento específico. El sufijo "mtp" del nombre no está explicado en la documentación disponible.
+Tampoco se detalla qué capas o módulos reciben mayor precisión dentro del esquema de precisión mixta de oQ. La única innovación técnica documentada es el propio proceso de cuantización: oQ permite asignar bits de forma selectiva por capa, lo que en teoría reduce la degradación respecto a una cuantización uniforme de 8 bits, aunque no se aportan métricas de perplejidad ni de calidad.
 
 ## Capacidades
 
-- No se dispone de una descripción de capacidades por parte del autor. Los tags del repositorio (mlx, safetensors, glm5_next, oq, quantized, 8-bit) son metadatos de formato y cuantización, no declaraciones funcionales.
-- Generación de texto: esperable en un modelo de esta familia, pero no confirmada en la información proporcionada.
-- Razonamiento, código, matemáticas y capacidades multilingües: no disponible.
-- Soporte de tool calling / function calling: no disponible.
+- Generación de texto: capacidad esperable por tratarse de un modelo de lenguaje de gran escala, aunque no se documenta explícitamente.
+- Razonamiento y matemáticas: no disponible en la información proporcionada.
+- Generación de código: no disponible en la información proporcionada.
+- Tool calling / function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multimodales (visión, audio): no disponible.
-- Modo de pensamiento explícito (thinking): no disponible.
-- Al ser una cuantización de 8 bits, se mantiene el conjunto de capacidades del modelo base, pero su calidad concreta no está evaluada en la ficha.
+- Capacidades multilingües: no disponible.
+- Modo thinking, visión o audio: no disponible.
+- Multi-token prediction: el sufijo `mtp` del nombre lo sugiere, pero no está confirmado en la model card.
 
 ## Casos de uso
 
-- Ejecución local en hardware Apple de gama alta: el formato MLX y el tamaño del repositorio sugieren su uso en un Mac Studio con memoria unificada muy grande, para inferencia offline de un modelo de más de 300.000 millones de parámetros sin depender de servicios en la nube.
-- Experimentación con cuantización de precisión mixta: el modelo sirve como caso de estudio para comparar el esquema oQ de 8 bits y grupo 64 frente a otras cuantizaciones del mismo modelo base, midiendo la degradación de calidad.
-- Evaluación comparativa de formatos: útil para medir la diferencia entre un checkpoint en MLX safetensors y alternativas en GGUF u otros formatos de cara a elegir el backend de despliegue.
-- Generación de texto de propósito general en local: si el modelo base hereda el comportamiento habitual de la familia GLM, podría emplearse para redacción, resumen y reescritura, aunque no hay evaluación publicada que lo confirme.
-- Procesamiento por lotes sin requisitos de baja latencia: dado el volumen de pesos, tiene sentido en trabajos por lotes nocturnos donde el rendimiento por token importa menos que el coste por token.
-- Investigación sobre ajuste fino ligero: al estar en 8 bits y con escalas separadas, es un punto de partida razonable para estudiar LoRA u otros adaptadores sobre pesos cuantizados en MLX.
-- Docencia y divulgación: ilustra las dimensiones reales de un modelo de 321.000 millones de parámetros y el coste de memoria asociado a una cuantización de 8 bits.
+- Inferencia local en Apple Silicon: el formato MLX safetensors está disenado para ejecutarse con la librería MLX en chips Apple M-series, por lo que el caso natural es desplegar el modelo en un Mac con memoria unificada amplia (por encima de 512 GB para 8 bits).
+- Investigación sobre cuantización de precisión mixta: el modelo sirve como referencia para comparar la calidad de oQ frente a otras técnicas de cuantización en modelos de más de 300.000 millones de parámetros.
+- Evaluación de modelos de gran escala en entornos sin GPU NVIDIA: al estar en formato MLX, permite experimentar con un modelo de esta magnitud sin depender de CUDA ni de clústeres con A100/H100.
+- Reproducción de experimentos de decodificación especulativa: si se confirma que `mtp` implica multi-token prediction, sería útil para estudiar el impacto de esta técnica en latencia y throughput.
+- Fine-tuning o adaptación posterior en MLX: el formato safetensors permite cargar los pesos en MLX para tareas de ajuste ligero, siempre que el hardware lo permita.
+- Benchmarking de memoria y rendimiento en hardware Apple: útil para medir el rendimiento real de un modelo de 321.000 millones de parámetros cuantizado a 8 bits en memoria unificada.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La model card únicamente documenta el proceso de cuantización y no incluye MMLU, HumanEval, GSM8K, MT-Bench ni ninguna otra métrica de calidad, ni del modelo cuantizado ni del modelo base.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- Peso de los parámetros en 8 bits: aproximadamente 321,3 GB (1 byte por parámetro), más escalas y sesgos de cuantización. Con un tamaño de grupo de 64 y escalas en punto flotante de 16 bits, el sobrecoste estimado es de unos 20 GB adicionales, lo que da un total cercano a 341 GB, coherente con los 342,2 GB que ocupa el repositorio.
-- Memoria total necesaria: por encima de 342 GB solo para los pesos, más la caché KV, cuyo tamaño depende de la configuración del modelo base, no publicada. En la práctica se necesita un equipo con al menos 384 GB de memoria unificada y, de forma realista, 512 GB para trabajar con contexto apreciable.
-- GPU recomendadas: ninguna GPU convencional sirve como destino directo, porque el formato MLX no se ejecuta sobre CUDA. Una RTX 4090 (24 GB) o una A100 de 80 GB quedan muy lejos de los 342 GB requeridos. Sería necesario repartir el modelo entre al menos cinco aceleradores de 80 GB si se convirtiera a otro formato, algo no documentado.
-- Cabe en GPU de consumo: no. Tampoco cabe en una sola GPU de centro de datos.
-- Hardware viable: Apple Silicon con memoria unificada muy grande, como un Mac Studio con 512 GB. Cualquier configuración por debajo de esos 342 GB obliga a descarga en disco o a ejecución parcial, con una degradación severa de la velocidad.
-- Opciones de despliegue: mlx / mlx-lm y el ecosistema oMLX, que es el que produce este formato. vLLM, TGI, llama.cpp y Ollama no cargan safetensors de MLX directamente; requerirían una conversión previa a GGUF o a otro formato, no descrita en el repositorio.
-- Latencia y throughput: no disponibles. Como estimación aritmética orientativa, con un ancho de banda de memoria en torno a 800 GB/s en el Mac Studio de gama más alta, el límite superior teórico por lectura de pesos sería de aproximadamente 2,3 tokens por segundo, sin contar la caché KV ni el sobrecoste de atención. Es una cota optimista, no una medición.
+- VRAM/memoria estimada: con 321.323.031.390 parámetros a 8 bits, el peso de los pesos ronda los 321 GB, más overhead de cuantización (group size 64) y memoria para el contexto KV cache, lo que en la práctica exige más de 350-400 GB de memoria disponible.
+- GPU recomendadas: no aplica directamente, ya que el formato es MLX y está orientado a Apple Silicon; para ejecutarlo se necesita un Mac con memoria unificada muy alta (Mac Studio M3 Ultra con 512 GB o superior, o configuraciones equivalentes).
+- Cabe en consumer GPU: no, un modelo de este tamano no cabe en GPUs de consumo como RTX 4090 (24 GB) ni en configuraciones multi-GPU convencionales sin offloading extremo.
+- Opciones de despliegue: MLX (librería nativa), oMLX; no se documenta soporte para vLLM, llama.cpp, Ollama o TGI con este formato.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos sobre modelos comparables en la información proporcionada. No hay cifras de parámetros, contexto, rendimiento, licencia ni disponibilidad de alternativas de la misma categoría o del modelo base sin cuantizar, por lo que no es posible construir una comparativa con datos verificables.
-
-| Modelo | Parametros | Contexto | Formato | Licencia | Rendimiento publicado |
-|---|---|---|---|---|---|
-| GLM-5.3-Flash-oQ8e-mtp | 321,3 mil millones | no disponible | MLX safetensors, 8 bits | no disponible | no disponible |
-| Modelo base GLM-5.3-Flash | no disponible | no disponible | no disponible | no disponible | no disponible |
-| Alternativas de la misma categoría | no disponible | no disponible | no disponible | no disponible | no disponible |
+No disponible. La información proporcionada no incluye modelos comparables de la misma familia ni datos de rendimiento que permitan una comparación rigurosa.
 
 ## Limitaciones y advertencias
 
-- Licencia no declarada: sin licencia explícita no se puede confirmar si el uso comercial está permitido. Conviene contactar con el autor o consultar la licencia del modelo base antes de cualquier uso en producción.
-- Cuantización irreversible: la conversión a 8 bits con precisión mixta puede degradar ligeramente la calidad frente al modelo base. No hay evaluación publicada que cuantifique esa pérdida.
-- Detalles de cuantización incompletos: se indica 8 bits y grupo 64, pero no qué capas quedaron en menor precisión ni si hay componentes excluidos de la cuantización.
-- Repositorio sin validación comunitaria: cero descargas y cero "me gusta" en el momento de la consulta. Es un artefacto no verificado por terceros.
-- Sustitución de pesos: el autor indica que esta versión reemplaza a una anterior subida el mismo día. Quien haya descargado la versión previa debe volver a descargarla. Esto implica que los pesos pueden cambiar sin un versionado estable.
-- Dependencia de plataforma: el formato MLX limita la ejecución a Apple Silicon. No es portable a CUDA ni a aceleradores de otros fabricantes sin conversión previa.
-- Requisitos de memoria extremos: 342,2 GB de repositorio implican hardware poco común y excluyen cualquier uso en estaciones de trabajo convencionales.
-- Idiomas no declarados: no se puede confirmar el soporte ni la calidad en castellano ni en otras lenguas.
-- Riesgo de alucinación: inherente a los modelos generativos de gran tamaño; sin benchmarks ni model card del modelo base, no es posible acotar su magnitud.
-- Ausencia de información sobre contexto: se desconoce la ventana máxima, lo que impide planificar cargas con documentos largos o conversaciones multi-turno prolongadas.
-- Sufijo "mtp" sin documentar: no se explica en la ficha si implica decodificación multi-token, un módulo adicional u otra característica, y esa ambigüedad dificulta anticipar el comportamiento en inferencia.
+- La model card no especifica la licencia, por lo que no se puede confirmar si el uso comercial está permitido; es imprescindible contactar con el autor o consultar el modelo base antes de usarlo en producción.
+- No hay información sobre sesgos, riesgo de alucinación ni evaluación de seguridad.
+- No se documentan los idiomas soportados ni la longitud de contexto, lo que impide planificar su uso en tareas que requieran ventanas largas o multilingüismo.
+- El repositorio fue actualizado el 2026-10-13 reemplazando una versión anterior; si se descargó antes de esa fecha, es necesario volver a descargar los pesos.
+- El modelo está cuantizado a 8 bits con precisión mixta, lo que puede introducir degradación respecto al modelo original, aunque no se aportan métricas que lo cuantifiquen.
+- El formato MLX limita su uso a hardware Apple Silicon; no es directamente portable a GPUs NVIDIA sin conversión adicional.
+- El tamano del repositorio (678,1 GB) implica requisitos de almacenamiento y ancho de banda considerables para la descarga.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/dfp-official/GLM-5.3-Flash-oQ8e-mtp
-- Herramienta de cuantización oQ / oMLX: https://github.com/jundot/omlx
-- No se han encontrado otros enlaces relevantes (papers, blogs, repositorios o demos) en la búsqueda web realizada. Los resultados obtenidos corresponden a contenidos no relacionados con el modelo.
+- Hugging Face: https://huggingface.co/dfp-official/GLM-5.3-Flash-oQ8e-mtp
+- Repositorio de oQ (oMLX): https://github.com/jundot/omlx

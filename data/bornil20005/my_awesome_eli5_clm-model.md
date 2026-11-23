@@ -2,107 +2,102 @@
 
 ## Resumen
 
-`bornil20005/my_awesome_eli5_clm-model` es un modelo de generación de texto publicado en Hugging Face por el usuario bornil20005. Se trata de un ajuste fino (*fine-tuning*) del modelo base `distilbert/distilgpt2`, la versión destilada de GPT-2 con 81.912.576 parámetros (unos 82 millones). El modelo se ha entrenado con la librería Transformers mediante la clase `Trainer`, que ha generado automáticamente la model card, y está pensado para la tarea de *causal language modeling* (predicción del siguiente token).
+`my_awesome_eli5_clm-model` es un ajuste fino supervisado del modelo `distilbert/distilgpt2`, publicado por el usuario bornil20005 en Hugging Face. Se trata de un modelo de lenguaje causal de pequeño tamaño (81.912.576 parámetros) orientado a generación de texto, derivado de la arquitectura GPT-2 destilada de OpenAI y distribuida por Hugging Face bajo el identificador `distilgpt2`. El nombre sugiere un ajuste sobre el corpus ELI5 (Explain Like I'm 5), aunque la model card no confirma explícitamente el dataset empleado.
 
-El nombre del repositorio sugiere un ajuste sobre el dataset ELI5 (explicaciones divulgativas en inglés), pero la propia model card declara explícitamente que el entrenamiento se realizó "on an unknown dataset" y que la descripción, los usos previstos y los datos de entrenamiento están marcados como "More information needed". Por tanto, no hay información verificable sobre la composición de los datos, el idioma o el dominio de especialización.
+El modelo se generó automáticamente con la librería `Trainer` de Transformers, sin que el autor haya completado la documentación posterior (descripción, usos previstos, datos de entrenamiento y limitaciones figuran como "More information needed"). Esto lo convierte en un artefacto de experimentación más que en un modelo listo para producción: el valor práctico está en su reproducibilidad y en servir como ejemplo de pipeline de ajuste fino de un modelo causal pequeño.
 
-Su relevancia es limitada: es un experimento de entrenamiento con 0 descargas y 0 *likes*, sin benchmarks publicados y con una pérdida de validación final de 3,7765 (perplejidad aproximada de 43,7). Resulta útil como ejemplo reproducible de un pipeline de ajuste fino sobre un modelo pequeño, como punto de partida para *fine-tuning* posterior o como material didáctico, pero no como modelo listo para producción.
+Por su tamaño reducido y su licencia Apache 2.0, resulta relevante para entornos con recursos limitados, prototipado rápido y experimentación educativa. No obstante, la ausencia de benchmarks, de idiomas declarados y de documentación sobre el dataset limita seriamente su uso en aplicaciones reales sin una evaluación previa por parte del integrador.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only causal (GPT-2), procedente de distilgpt2 |
-| Parametros totales | 81.912.576 (dato real de safetensors) |
-| Parametros activos | no aplica (arquitectura densa, no MoE) |
-| Longitud de contexto | no disponible en la informacion proporcionada (el modelo base distilgpt2 usa 1.024 tokens) |
-| Tipos de cuantizacion | no disponible; al ser safetensors en precision original, admite conversion a fp16, int8 y 4-bit mediante herramientas externas |
-| Idiomas soportados | no disponible (la model card no declara idiomas; el modelo base esta entrenado mayoritariamente en ingles) |
+| Arquitectura | Transformer decoder-only (GPT-2 destilado, base `distilgpt2`) |
+| Parametros totales | 81.912.576 |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible (el modelo base `distilgpt2` soporta 1.024 tokens; no confirmado en la model card) |
+| Tipos de cuantizacion | no disponible (pesos en safetensors; compatible con cuantizacion estandar de transformers/GGUF, no documentada por el autor) |
+| Idiomas soportados | no disponible |
 | Licencia | apache-2.0 |
-| Formato de pesos | safetensors (tag del repositorio); el repositorio ocupa 2,6 GB, lo que sugiere la presencia de checkpoints u optimizador ademas de los pesos finales |
-
-Otros datos tecnicos: pipeline `text-generation`, libreria `transformers`, etiquetas `text-generation-inference` y `endpoints_compatible` (compatible con el despliegue gestionado de Hugging Face). Repositorio creado el 22 de septiembre de 2026 y actualizado el mismo dia.
+| Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es la de distilgpt2: un transformer *decoder-only* con atención causal, resultado de destilar GPT-2 (124 millones de parametros) hasta unos 82 millones, con 6 capas, dimension oculta de 768 y 12 cabezas de atención. No se trata de un MoE, ni de un modelo híbrido SSM/attention, ni incorpora mecanismos de decodificación especulativa o atención lineal. El ajuste fino no modifica la arquitectura, solo los pesos.
+El modelo es un ajuste fino de `distilgpt2`, un transformer decoder-only de tipo GPT-2 destilado mediante knowledge distillation a partir de GPT-2. La arquitectura conserva el esquema clásico de GPT-2: atención multi-cabeza con enmascaramiento causal, normalización previa a la atención y a la MLP, y embeddings posicionales aprendidos. Con 81,9 millones de parámetros, se sitúa en la gama baja de los modelos de generación de texto.
 
-El entrenamiento se realizó con los siguientes hiperparámetros: tasa de aprendizaje 2e-05, tamaño de lote de entrenamiento y evaluación de 8, 3 épocas completas, semilla 42, optimizador `ADAMW_TORCH_FUSED` con betas (0,9, 0,999) y epsilon 1e-08, y planificador de tasa de aprendizaje lineal. La evolución de la pérdida fue la siguiente: 3,9191 en la época 1 (paso 1320, validación 3,7891), 3,8359 en la época 2 (paso 2640, validación 3,7780) y 3,7863 en la época 3 (paso 3960, validación 3,7765). No hay evidencia de RLHF, DPO ni ajuste por instrucciones: es un ajuste de lenguaje causal puro sobre un dataset no identificado.
-
-Las versiones de framework empleadas fueron Transformers 5.16.1, PyTorch 2.11.0+cu128, Datasets 4.8.5 y Tokenizers 0.23.1. No se documenta ninguna innovación técnica adicional.
+El entrenamiento se realizó con el `Trainer` de Transformers durante 3 épocas, con un learning rate de 2e-05, batch size de 8 (tanto en entrenamiento como en evaluación), semilla 42, optimizador AdamW con betas (0,9; 0,999) y epsilon 1e-08, y un scheduler lineal. La pérdida de entrenamiento descendió de 3,9258 (época 1) a 3,7847 (época 3), mientras que la pérdida de validación pasó de 3,7949 a 3,7813, lo que indica una convergencia estable y sin señales claras de sobreajuste en el rango observado. El dataset de entrenamiento no está especificado en la model card ("unknown dataset"); el nombre del modelo sugiere ELI5, pero no hay confirmación. Las versiones de framework empleadas fueron Transformers 5.20.1, PyTorch 2.11.0+cu130, Datasets 4.8.5 y Tokenizers 0.23.3. No se documenta el uso de RLHF, DPO ni ninguna innovación técnica adicional.
 
 ## Capacidades
 
-- Generación de texto en modo *causal language modeling*: completar secuencias a partir de un prefijo.
-- Continuación de texto libre con coherencia local a corto plazo, propia de un modelo de 82 millones de parametros.
-- Capacidad limitada de *few-shot prompting* heredada de GPT-2, sin garantías de estabilidad.
-- No dispone de modo de razonamiento explícito (*thinking mode*), ni de capacidad de visión, audio o multimodalidad.
-- No se ha entrenado para *tool calling* ni *function calling*; no hay evidencia de soporte de plantillas de herramientas.
-- No hay soporte documentado para agentes ni razonamiento multi-paso.
-- Capacidades multilingües: no documentadas. El modelo base está entrenado mayoritariamente en inglés, por lo que el rendimiento fuera de ese idioma es previsiblemente bajo.
-- Capacidad de seguir instrucciones: no verificada y poco probable, dado que no hay fase de ajuste por instrucciones ni de alineación.
+- Generación de texto causal autoregresiva, heredada de la arquitectura GPT-2.
+- Ajuste orientado (presuntamente) a respuestas explicativas sencillas, por el nombre ELI5, aunque no verificado.
+- Soporte de tool calling / function calling: no disponible.
+- Soporte de agentes y razonamiento multi-paso: no disponible.
+- Capacidades multilingües: no declaradas; el modelo base `distilgpt2` está entrenado mayoritariamente en inglés.
+- Capacidades especiales (thinking mode, visión, audio): no disponibles.
+- Generación condicionada por prompt con `pipeline("text-generation")` de Transformers.
+- Compatible con text-generation-inference y endpoints según los tags del repositorio.
 
 ## Casos de uso
 
-- Material didáctico para pipelines de *fine-tuning*: sirve como ejemplo completo de ajuste de un modelo GPT-2 pequeño con la API `Trainer`, incluyendo hiperparámetros y curva de pérdida, para cursos o tutoriales de NLP.
-- Prototipado rápido de generación de texto en inglés: permite validar un *endpoint* de generación con un modelo de 82 millones de parametros que cabe en cualquier GPU, antes de invertir en modelos mayores.
-- Base para un segundo ajuste fino (*continued pretraining* o *fine-tuning* sobre dominio propio): al ser Apache-2.0 y estar en safetensors, se puede reentrenar sin restricciones legales sobre corpus específicos como documentación técnica o correos internos.
-- Pruebas de integración de infraestructura: etiquetado como `text-generation-inference` y `endpoints_compatible`, es adecuado para verificar el funcionamiento de un despliegue con TGI o Inference Endpoints sin consumir recursos de GPU significativos.
-- Experimentos de investigación sobre destilación y modelos pequeños: útil como punto de comparación frente a distilgpt2 sin ajustar, para medir el efecto de 3 épocas de ajuste sobre la pérdida.
-- Generación de texto creativo de baja exigencia en entornos controlados: por ejemplo, sugerencias de nombres o frases cortas donde el coste computacional es el criterio dominante y la calidad no es crítica.
-- Evaluación de técnicas de decodificación (temperatura, top-k, top-p, beam search): su tamaño reducido permite barrer configuraciones de muestreo en minutos sobre CPU o una GPU de gama media.
+- Prototipado educativo de pipelines de ajuste fino: sirve como ejemplo reproducible de cómo ajustar `distilgpt2` con `Trainer` y evaluar la pérdida de validación en tres épocas.
+- Generación de texto exploratoria en entornos con recursos muy limitados: sus 81,9 M de parámetros permiten inferencia en CPU o en GPU de gama baja para pruebas de concepto.
+- Generación de explicaciones breves en inglés (si el ajuste ELI5 se confirma): útil para experimentos de divulgación automatizada, siempre con revisión humana.
+- Base para nuevos ajustes finos: al estar bajo Apache 2.0 y en safetensors, puede reentrenarse sobre dominios específicos con datasets propios.
+- Evaluación comparativa de modelos pequeños: referencia para medir el impacto de un ajuste corto (3 épocas, LR 2e-05) frente al modelo base.
+- Integración en demos de Hugging Face Spaces o endpoints compatibles: los tags `endpoints_compatible` y `text-generation-inference` facilitan el despliegue rápido en pruebas.
+- Generación de texto auxiliar en tareas de completado de frases o borradores, sin garantías de calidad ni de fidelidad factual.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El campo `model-index` de la model card contiene un array de resultados vacío, por lo que no hay datos de MMLU, HumanEval, GSM8K ni de ninguna otra tarea estandarizada.
+La model card declara un `model-index` sin resultados (`results: []`). El único dato cuantitativo publicado es la pérdida de evaluación:
 
-El único dato de rendimiento declarado por el autor es la pérdida de evaluación, que se reproduce a continuación:
+| Metrica | Valor |
+|---|---|
+| Loss de evaluacion (epoca 3) | 3,7813 |
+| Loss de entrenamiento (epoca 3) | 3,7847 |
+| Loss de validacion (epoca 1) | 3,7949 |
+| Loss de validacion (epoca 2) | 3,7831 |
 
-| Epoca | Paso | Perdida de entrenamiento | Perdida de validacion |
-|---|---|---|---|
-| 1.0 | 1320 | 3,9191 | 3,7891 |
-| 2.0 | 2640 | 3,8359 | 3,7780 |
-| 3.0 | 3960 | 3,7863 | 3,7765 |
-
-La pérdida de validación final de 3,7765 equivale a una perplejidad de aproximadamente 43,7 (calculada como e^3,7765). La mejora entre la primera y la última época es de solo 0,0126 puntos de pérdida de validación, lo que indica que el ajuste aporta una ganancia muy marginal respecto al modelo base.
+No se han publicado resultados de benchmarks (MMLU, HumanEval, GSM8K, etc.) en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: aproximadamente 330 MB en fp32, 165 MB en fp16/bf16, 85 MB en int8 y 45 MB en 4-bit, solo para los pesos (sin contar caché KV ni overhead del runtime).
-- GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM. El modelo es funcionalmente viable en NVIDIA T4, RTX 3060, RTX 4090, A100 y H100, aunque en estas dos últimas estaría muy infrautilizado.
-- Cabe sobradamente en GPU de consumo: cualquier tarjeta desde una GTX 1050 Ti o una iGPU moderna con memoria compartida puede ejecutarlo; también es viable en CPU para inferencia interactiva.
-- Opciones de despliegue: transformers (PyTorch), Text Generation Inference (TGI) por la etiqueta `text-generation-inference`, Hugging Face Inference Endpoints (`endpoints_compatible`), y llama.cpp u Ollama previa conversión manual a GGUF, ya que no se publica ningún GGUF oficial. También es compatible con vLLM, aunque el modelo es demasiado pequeño para aprovechar su *batching* continuo.
-- Latencia y rendimiento: no disponibles. No se han publicado medidas de *throughput* ni de latencia. Por el tamaño, se espera una latencia por token inferior a 10 ms en una RTX 4090 y decenas de milisegundos por token en CPU.
-- El repositorio ocupa 2,6 GB, muy por encima de los ~330 MB de los pesos en fp32, lo que apunta a que contiene checkpoints intermedios o estados del optimizador; conviene descargar solo los ficheros necesarios.
+- VRAM estimada para inferencia en fp32: aproximadamente 330 MB solo para pesos (81,9 M × 4 bytes), más overhead de activaciones y caché KV.
+- VRAM estimada en fp16/bf16: aproximadamente 165 MB para pesos.
+- Cuantización a 8 bits: aproximadamente 82 MB; a 4 bits: aproximadamente 41 MB (estimaciones teóricas, no documentadas por el autor).
+- GPU recomendadas: cualquier GPU consumer moderna es suficiente; una RTX 3060, RTX 4060 o incluso una GTX 1650 pueden ejecutar el modelo con holgura. Para lotes grandes, A100 o H100 no aportan ventaja significativa por el tamaño reducido.
+- Cabe en GPU consumer: sí, en prácticamente cualquier GPU con al menos 1 GB de VRAM; también en CPU.
+- Opciones de despliegue: `transformers` (pipeline de text-generation), text-generation-inference (según tags), y potencialmente llama.cpp/Ollama si se convierte a GGUF (no documentado por el autor).
+- Latencia y throughput: no disponibles en la información proporcionada; por el tamaño, se espera latencia de milisegundos por token en GPU moderna, pero no hay mediciones publicadas.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| my_awesome_eli5_clm-model | 81,9 M | no disponible (base: 1.024) | Apache-2.0 | Hugging Face, safetensors | Ajuste fino sin dataset declarado; sin benchmarks publicados |
-| distilgpt2 (modelo base) | 82 M | 1.024 tokens | Apache-2.0 | Hugging Face, safetensors | Modelo destilado de GPT-2, ampliamente usado como referencia; sin ajuste especifico |
-| GPT-2 (original) | 124 M | 1.024 tokens | MIT | Hugging Face, safetensors | Mayor numero de parametros y mejor calidad base; licencia MIT |
-| GPT-2 medium | 355 M | 1.024 tokens | MIT | Hugging Face, safetensors | Alternativa de mayor capacidad dentro de la misma familia, con coste de inferencia mas alto |
-| TinyLlama-1.1B | 1.100 M | 2.048 tokens | Apache-2.0 | Hugging Face, safetensors y GGUF | Alternativa moderna de mayor tamano, con ajuste por instrucciones y multilingüismo parcial |
+| `bornil20005/my_awesome_eli5_clm-model` | 81,9 M | no disponible (base: 1.024) | Apache 2.0 | Hugging Face | Ajuste fino sin documentar |
+| `distilbert/distilgpt2` (modelo base) | 82 M | 1.024 | Apache 2.0 | Hugging Face | Modelo destilado de GPT-2, ampliamente usado |
+| `openai-community/gpt2` | 124 M | 1.024 | MIT | Hugging Face | Modelo original de OpenAI |
+| `openai-community/gpt2-medium` | 355 M | 1.024 | MIT | Hugging Face | Versión media de GPT-2 |
 
-No se dispone de comparativas de rendimiento medidas entre estos modelos y el modelo descrito, ya que no se han publicado benchmarks. La comparación se limita a parametros, contexto y licencia.
+La comparación se limita a parámetros, contexto y licencia porque no hay benchmarks publicados para el modelo ajustado. Frente a `distilgpt2`, el ajuste añade un entrenamiento adicional de 3 épocas con pérdida de validación de 3,7813, pero sin datos que permitan afirmar una mejora en tareas downstream.
 
 ## Limitaciones y advertencias
 
-- Sesgos conocidos: no documentados. Al derivar de GPT-2, es previsible que herede sesgos de genero, raza y religion presentes en los corpus web utilizados en el entrenamiento original, pero no hay evaluación específica.
-- Riesgo de alucinacion: alto. Es un modelo de lenguaje causal de 82 millones de parametros sin ajuste por instrucciones ni mecanismos de verificación factual; no debe usarse para generar información que se presente como factual sin revisión humana.
-- Datos de entrenamiento desconocidos: la model card indica explícitamente que el dataset es desconocido. Esto impide auditar la procedencia de los datos, evaluar riesgo de contaminación o verificar cumplimiento normativo.
-- Limitaciones de contexto: no se declara la longitud de contexto soportada. Al derivar de distilgpt2, el límite práctico es de 1.024 tokens, insuficiente para tareas de contexto largo.
-- Limitaciones de idioma: no se declaran idiomas soportados y no hay evidencia de entrenamiento en castellano. El uso en español produciría resultados de baja calidad.
-- Ausencia de benchmarks: no hay ninguna métrica publicada más allá de la pérdida de validación, lo que impide comparar su calidad con alternativas de forma objetiva.
-- Licencia: Apache-2.0 permite uso comercial, modificación y redistribución, siempre que se conserve el aviso de licencia y se indique los cambios realizados. No hay restricciones adicionales por parte del autor.
-- Madurez del artefacto: 0 descargas, 0 *likes*, model card autogenerada y sin revisar, con secciones marcadas como "More information needed". No debe considerarse un modelo mantenido ni soportado.
-- Advertencia para produccion: no se recomienda su uso en sistemas en produccion que requieran fiabilidad, seguimiento de instrucciones o cobertura multilingüe. Para esos casos conviene seleccionar un modelo con ajuste por instrucciones y benchmarks publicados.
-- Fecha de creacion: el repositorio figura creado el 22 de septiembre de 2026, posterior a la mayoria de modelos de referencia de su categoria; el artefacto no aporta ninguna innovación técnica asociada.
+- Documentación incompleta: la model card deja sin especificar el dataset, los usos previstos y las limitaciones; el integrador debe evaluar el modelo por su cuenta.
+- Riesgo elevado de alucinación: al derivar de GPT-2 destilado, no tiene alineación ni RLHF que mitiguen la generación de contenido falso.
+- Idiomas: no se declaran idiomas soportados; el modelo base está dominado por inglés, por lo que el rendimiento en castellano es incierto y probablemente deficiente.
+- Contexto limitado: aunque no se confirma, el modelo base `distilgpt2` tiene 1.024 tokens de ventana, insuficiente para conversaciones largas o documentos extensos.
+- Sesgos: hereda los sesgos de GPT-2 y de `distilgpt2`, incluyendo sesgos de género, raza y estereotipos presentes en los datos de entrenamiento originales.
+- Licencia Apache 2.0: permite uso comercial, pero el autor no ofrece garantías ni soporte; la responsabilidad recae en el integrador.
+- Sin benchmarks: no hay evidencia publicada de calidad en tareas concretas; no debe desplegarse en producción sin una evaluación previa.
+- Fecha de creación futura (2026-09-22) en los metadatos: conviene verificar la integridad y procedencia del repositorio.
+- Tamaño del repo de 7,9 GB: desproporcionado para 81,9 M de parámetros, probablemente por artefactos de entrenamiento; revisar antes de descargar.
 
 ## Enlaces
 
-- Pagina del modelo en Hugging Face: https://huggingface.co/bornil20005/my_awesome_eli5_clm-model
-- Modelo base distilgpt2: https://huggingface.co/distilbert/distilgpt2
-
-Nota sobre la busqueda web: los resultados devueltos (Universitat Graz, REWI Universitat Graz, Universidad de Halle, ORF.at y el plan de desarrollo 2025-2030 de la Universitat Graz) no guardan ninguna relacion con el modelo descrito. No se han encontrado papers, blogs, repositorios ni demos relevantes para este modelo.
+- Modelo en Hugging Face: https://huggingface.co/bornil20005/my_awesome_eli5_clm-model
+- Modelo base `distilgpt2`: https://huggingface.co/distilbert/distilgpt2
+- Documentación de Transformers (pipeline text-generation): https://huggingface.co/docs/transformers/main/en/main_classes/pipelines#transformers.TextGenerationPipeline
+- Documentación de text-generation-inference: https://huggingface.co/docs/text-generation-inference
+- Repositorio de Transformers: https://github.com/huggingface/transformers

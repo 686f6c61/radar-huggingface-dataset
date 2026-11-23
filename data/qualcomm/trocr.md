@@ -2,118 +2,115 @@
 
 ## Resumen
 
-TrOCR (Transformer-based Optical Character Recognition) es un modelo de reconocimiento óptico de caracteres de extremo a extremo que combina un encoder de imágenes basado en transformer con un decoder de texto que genera la transcripción a nivel de wordpiece. Qualcomm publica en este repositorio una versión del modelo optimizada, compilada y pre-exportada para ejecutarse sobre la NPU de sus chipsets (Snapdragon, Dragonwing, QCS y SA). El checkpoint de partida es la implementación `microsoft/trocr-small-handwritten`, de la que Qualcomm no modifica la arquitectura, sino el empaquetado y la optimización para inferencia en dispositivo.
+TrOCR es un modelo de reconocimiento óptico de caracteres (OCR) de extremo a extremo que combina un encoder de imágenes basado en transformer con un decoder de texto autorregresivo. Esta ficha describe la variante publicada por Qualcomm en Hugging Face (`qualcomm/TrOCR`), que no es un modelo entrenado desde cero por Qualcomm, sino una exportación optimizada del checkpoint `microsoft/trocr-small-handwritten` para su despliegue en dispositivos con aceleración NPU de Qualcomm (Snapdragon y Dragonwing). El modelo original procede del paper "TrOCR: Transformer-based Optical Character Recognition with Pre-trained Models" (arXiv:2109.10282).
 
-El modelo resuelve la transcripción de texto manuscrito a partir de una imagen de entrada fijada en 320x320 píxeles. Su tamaño es reducido: 23,0 millones de parámetros en el encoder y 38,3 millones en el decoder, lo que suma aproximadamente 61,3 millones de parámetros y unos 234 MB de pesos en precisión float (87,8 MB el encoder y 146 MB el decoder). Esta ligereza es precisamente lo que permite desplegarlo en telefonía móvil y plataformas embebidas con latencias de milisegundos.
+La relevancia de esta publicación es práctica: ofrece artefactos listos para producción en formato ONNX, QNN_DLC y TFLITE, compilados y perfilados con Qualcomm AI Hub Workbench, con latencias medidas en el rango de 1,2 a 2,8 ms por paso de decoder en NPU según el chipset. Esto lo convierte en una opción para OCR on-device en móviles, tablets, plataformas industriales y automoción, donde no se puede depender de la nube.
 
-Su relevancia actual reside en el enfoque de despliegue en el borde (edge): Qualcomm ofrece artefactos listos para producción en formato ONNX, QNN_DLC y TFLITE, compilados con QAIRT 2.45, además de la librería AI Hub Models para exportar configuraciones personalizadas. El repositorio acumula 1.803 descargas y 16 likes, con licencia MIT.
+El modelo es pequeño (61,3 M de parámetros en total, repartidos entre 23,0 M del encoder y 38,3 M del decoder) y está especializado en texto manuscrito. No es un modelo de lenguaje general: su tarea es image-to-text a nivel de wordpiece sobre una imagen de entrada de 320x320.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Encoder-decoder transformer (encoder de imagen tipo ViT + decoder de texto autorregresivo con generación a nivel de wordpiece) |
-| Parametros totales | 61,3 M (23,0 M encoder + 38,3 M decoder) |
-| Parametros activos | No aplica (no es un modelo MoE) |
-| Longitud de contexto | No disponible |
-| Tipos de cuantizacion | Los assets pre-exportados estan en precision float; no se documentan otras precisiones en la informacion disponible |
-| Idiomas soportados | No disponible (no declarado en la model card) |
+| Arquitectura | Encoder de imágenes transformer + decoder de texto transformer (image-to-text) |
+| Parametros totales | 61,3 M (encoder 23,0 M + decoder 38,3 M) |
+| Parametros activos | No aplica (no es MoE) |
+| Longitud de contexto | No disponible (depende del número de tokens de texto del decoder; no especificado en la model card) |
+| Tipos de cuantizacion | Los artefactos publicados son en precisión float; no se documentan variantes cuantizadas en la información disponible |
+| Idiomas soportados | No disponible (el checkpoint base es trocr-small-handwritten, orientado a texto manuscrito en inglés; no se detalla en la model card) |
 | Licencia | MIT |
-| Formato de pesos | PyTorch (libreria declarada); artefactos pre-exportados en ONNX, QNN_DLC y TFLITE |
+| Formato de pesos | ONNX, QNN_DLC, TFLITE (artefactos pre-exportados); pesos PyTorch en el repositorio |
 | Resolucion de entrada | 320x320 |
-| Tamano de pesos (float) | Encoder 87,8 MB; decoder 146 MB |
+| Tamano del decoder (float) | 146 MB |
+| Tamano del encoder (float) | 87,8 MB |
+| Runtime / SDK | QAIRT 2.51, ONNX Runtime 1.30.0 |
+| Unidad de computo principal | NPU |
 | Tamano del repositorio | 16,7 GB |
-| Checkpoint base | microsoft/trocr-small-handwritten |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura sigue el diseno TrOCR descrito en el articulo arXiv:2109.10282: un encoder de vision transformer que procesa la imagen y un decoder transformer autorregresivo que genera la secuencia de texto objetivo en unidades wordpiece. Se trata de un esquema encoder-decoder clasico de reconocimiento de texto, no de un modelo multimodal generalista: la salida esta restringida a la transcripcion del contenido textual presente en la imagen.
+TrOCR sigue un esquema encoder-decoder de tipo transformer. El encoder procesa la imagen de entrada (320x320) y extrae representaciones visuales; el decoder genera la secuencia de texto a nivel de wordpiece de forma autorregresiva. Esta variante concreta parte del checkpoint `microsoft/trocr-small-handwritten`, por lo que hereda el entrenamiento del modelo original de Microsoft Research descrito en arXiv:2109.10282, que emplea un encoder de imágenes preentrenado y un decoder de texto preentrenado, con ajuste fino posterior sobre datos de reconocimiento de texto.
 
-Qualcomm no documenta en la informacion proporcionada el proceso de entrenamiento (numero de tokens, composicion del dataset, uso de RLHF/DPO u otras fases de ajuste). El trabajo de Qualcomm se centra en la optimizacion para hardware: compilacion y perfilado mediante Qualcomm AI Hub Workbench, exportacion a ONNX, QNN_DLC y TFLITE, y soporte para reexportar con pesos ajustados (fine-tuned), formas de entrada personalizadas y configuraciones de dispositivo y runtime especificas. Los detalles de entrenamiento del checkpoint original `trocr-small-handwritten` no estan incluidos en la informacion disponible.
+La aportación de Qualcomm no es el entrenamiento, sino la exportación y optimización: los pesos se compilan con Qualcomm AI Hub Workbench para ejecutarse en la NPU de chipsets Snapdragon y Dragonwing, con artefactos en ONNX, QNN_DLC y TFLITE. La model card no detalla el número de tokens de entrenamiento, la composición del dataset ni si hubo RLHF o DPO; esos datos corresponden al paper original y no se reproducen aquí por no estar en la información proporcionada.
 
 ## Capacidades
 
-- Reconocimiento optico de caracteres (OCR) de extremo a extremo sobre imagenes de texto manuscrito.
-- Generacion de texto a nivel de wordpiece condicionada por la imagen de entrada (pipeline image-to-text).
-- Inferencia optimizada sobre la NPU de chipsets Qualcomm, con el decoder y el encoder como componentes separados.
-- Exportacion a multiples runtimes: ONNX (ONNX Runtime 1.27.1), QNN_DLC (QAIRT 2.45) y TFLITE.
-- Soporte de reexportacion con pesos personalizados y formas de entrada a medida mediante la libreria AI Hub Models.
-- No se documentan capacidades de tool calling, function calling, agentes, razonamiento multi-paso, vision general, audio ni modo de razonamiento (thinking mode) en la informacion disponible.
+- Reconocimiento de texto en imágenes (image-to-text) de extremo a extremo, con salida a nivel de wordpiece.
+- Especialización en texto manuscrito, según el checkpoint base (`trocr-small-handwritten`).
+- Procesamiento de imágenes de entrada de 320x320 píxeles.
+- Ejecución on-device en NPU de Qualcomm con latencias de milisegundos por paso de decoder.
+- Exportación con configuraciones personalizadas (pesos ajustados, formas de entrada, dispositivo y runtime) mediante la librería Qualcomm AI Hub Models.
+- No se documentan en la información disponible capacidades de tool calling, agentes, razonamiento multi-paso, visión general, audio ni modo thinking.
 
 ## Casos de uso
 
-- Digitalizacion de documentos manuscritos: transcripcion de notas, cartas y apuntes a texto editable, ejecutandose localmente en el dispositivo sin enviar la imagen a un servidor, gracias a los ~234 MB de pesos en float.
-- Procesamiento de formularios sobre movil: lectura de campos manuscritos en aplicaciones Android (el modelo esta etiquetado con `android`) con latencias de decoder de 1-3 ms en NPU.
-- Accesibilidad: conversion de texto manuscrito capturado con la camara en voz o texto para personas con dificultades de lectura, aprovechando que la inferencia ocurre en el propio terminal.
-- Archivo y catalogacion de documentos historicos: transcripcion por lotes de fondos manuscritos escaneados, procesando cada imagen a 320x320 con un coste computacional muy bajo.
-- Automatizacion de flujos de digitalizacion en logistica y banca: lectura de albaranes, cheques o formularios manuscritos integrada en pipelines de captura documental.
-- Reconocimiento embebido en dispositivos sin conectividad: escenarios de campo o entornos aislados donde no hay acceso a la nube y se requiere OCR local sobre hardware Snapdragon o Dragonwing.
-- Preprocesado en sistemas de vision para automocion y plataformas SA: lectura de matriculas o rotulacion manuscrita sobre los chipsets SA8775P, SA8650P, SA8255P, SA8295P y SA7255P listados en la tabla de rendimiento.
-- Firma y validacion de documentos: extraccion del texto manuscrito para su verificacion posterior en aplicaciones de gestion documental.
+- Digitalización de notas manuscritas en aplicaciones móviles: el modelo reconoce texto manuscrito en imágenes de 320x320 y se ejecuta en la NPU del Snapdragon con latencias de ~1,2-2,4 ms por paso de decoder, lo que permite captura y transcripción en tiempo real sin conexión.
+- Escaneo de documentos en tablets y portátiles con Snapdragon X Elite / X2 Elite: los artefactos ONNX y QNN_DLC permiten integrar OCR local en aplicaciones de productividad, con tiempos de inferencia medidos de ~1,7-2,2 ms por paso de decoder.
+- Procesamiento de formularios y albaranes en dispositivos industriales (Dragonwing IQ-8275, IQ-9075, QCS8550): OCR on-device en entornos sin conectividad fiable, con latencias de ~2,0-2,6 ms por paso de decoder.
+- Automoción y cabina (SA8295P, SA8650P, SA8775P, SA8255P): lectura de matrículas, señalética o documentos en el vehículo con ejecución local en NPU y sin enviar imágenes a la nube.
+- Accesibilidad: transcripción de texto manuscrito capturado con la cámara del móvil para personas con dificultades de lectura, aprovechando la baja latencia y el consumo reducido de la NPU.
+- Pipelines de digitalización por lotes en el borde: uso de la librería de exportación para ajustar formas de entrada y pesos, y despliegue en flotas de dispositivos Qualcomm con el mismo artefacto compilado.
+- Prototipado e integración en apps Android: el formato TFLITE y ONNX facilita la incorporación en aplicaciones Android existentes que ya usan NNAPI o QNN.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks de precision (por ejemplo CER, WER, MMLU, HumanEval o GSM8K) en la informacion disponible. La model card si incluye una tabla de rendimiento de inferencia para el componente decoder, medida sobre NPU en distintos chipsets:
+La model card no publica métricas de calidad de OCR (CER, WER, exact match) ni comparaciones con otros modelos en MMLU, HumanEval o GSM8K, que no aplican a esta tarea. Lo que sí se publica es el rendimiento de inferencia por dispositivo, medido con Qualcomm AI Hub Workbench. Se reproduce una selección representativa:
 
-| Chipset | Runtime | Precision | Tiempo de inferencia (ms) | Memoria pico (MB) | Unidad de computo |
-|---|---|---|---|---|---|
-| Snapdragon X2 Elite | ONNX | float | 1,245 | 7 - 7 | NPU |
-| Snapdragon X Elite | ONNX | float | 2,093 | 68 - 68 | NPU |
-| Snapdragon 8 Gen 3 Mobile | ONNX | float | 1,471 | 0 - 284 | NPU |
-| Snapdragon 8 Gen 1 Mobile | ONNX | float | 2,738 | 1 - 220 | NPU |
-| Snapdragon 8 Elite Mobile | ONNX | float | 1,281 | 0 - 192 | NPU |
-| Snapdragon 8 Elite Gen 5 Mobile | ONNX | float | 1,186 | 1 - 178 | NPU |
-| Dragonwing IQ-8275 | ONNX | float | 2,796 | 7 - 17 | NPU |
-| Dragonwing QCS8550 (Proxy) | ONNX | float | 2,124 | 1 - 3 | NPU |
-| Snapdragon X2 Elite | QNN_DLC | float | 1,513 | 7 - 7 | NPU |
-| Snapdragon 8 Elite Gen 5 Mobile | QNN_DLC | float | 1,166 | 1 - 173 | NPU |
-| SA8775P | QNN_DLC | float | 2,892 | 5 - 106 | NPU |
-| SA8295P | QNN_DLC | float | 2,618 | 0 - 38 | NPU |
-| SA7255P | QNN_DLC | float | 4,175 | 5 - 105 | NPU |
-| Snapdragon 8 Gen 3 Mobile | TFLITE | float | 1,378 | 0 - 279 | NPU |
-| Snapdragon 8 Gen 1 Mobile | TFLITE | float | 2,438 | 0 - 218 | NPU |
+| Runtime | Chipset | Tiempo de inferencia (decoder) | Memoria pico | Unidad |
+|---|---|---|---|---|
+| ONNX | Snapdragon 8 Elite Gen 6 Mobile | 1,231 ms | 0-109 MB | NPU |
+| ONNX | Snapdragon 8 Elite Gen 5 For Galaxy | 1,29 ms | 2-181 MB | NPU |
+| ONNX | Snapdragon 8 Gen 3 Mobile | 1,479 ms | 0-283 MB | NPU |
+| ONNX | Snapdragon 8 Gen 1 Mobile | 2,356 ms | 1-224 MB | NPU |
+| ONNX | Snapdragon X Elite | 2,008 ms | 67-67 MB | NPU |
+| ONNX | Dragonwing IQ-8275 | 2,545 ms | 7-18 MB | NPU |
+| QNN_DLC | Snapdragon 8 Elite Gen 6 Mobile | 1,279 ms | 1-106 MB | NPU |
+| QNN_DLC | Snapdragon 8 Gen 3 Mobile | 1,466 ms | 0-280 MB | NPU |
+| QNN_DLC | Dragonwing IQ-9075 | 2,371 ms | 7-16 MB | NPU |
+| QNN_DLC | SA8295P | 2,562 ms | 6-53 MB | NPU |
 
-Todos los valores de la tabla original corresponden al decoder; la model card no incluye tiempos del encoder.
+No se han publicado resultados de benchmarks de calidad (precisión de reconocimiento) en la información disponible.
 
 ## Requisitos de hardware
 
-- Los pesos en precision float ocupan aproximadamente 234 MB (encoder 87,8 MB + decoder 146 MB), lo que hace viable la inferencia en memoria de dispositivo movil.
-- El modelo esta disenado para ejecutarse en la NPU de chipsets Qualcomm, no en GPU de escritorio: toda la tabla de rendimiento se midio sobre NPU.
-- Chipsets soportados segun la model card: Snapdragon X2 Elite, X Elite, 8 Gen 3, 8 Gen 1, 8 Elite, 8 Elite Gen 5, Dragonwing IQ-8275, Dragonwing IQ-9075, Dragonwing IQ-X7181, Dragonwing QCS8550 (Proxy), Dragonwing Q-8750, QCS8450, QCS8450 y las plataformas SA8775P, SA8650P, SA8255P, SA8295P y SA7255P.
-- Si cabe en hardware de consumo: si, en telefonos y portatiles con los Snapdragon indicados. No se documentan requisitos de VRAM para GPU de escritorio ni compatibilidad con A100, H100 o RTX 4090.
-- Opciones de despliegue: ONNX Runtime 1.27.1, QNN_DLC mediante QAIRT 2.45, TFLite, y la libreria Qualcomm AI Hub Models. No se documenta soporte de vLLM, llama.cpp, Ollama ni TGI.
-- Latencia: entre aproximadamente 1,17 ms y 2,9 ms por paso de decoder en los chipsets medidos, con el minimo en Snapdragon 8 Elite Gen 5 bajo QNN_DLC (1,166 ms) y maximos en plataformas SA y Dragonwing. No se proporciona throughput agregado ni latencia de extremo a extremo incluido el encoder.
+- VRAM estimada: el modelo completo en float ocupa aproximadamente 234 MB (146 MB decoder + 87,8 MB encoder); no requiere GPU dedicada para ejecución en CPU/NPU.
+- GPU recomendadas: no aplica como requisito principal; el objetivo es la NPU de Qualcomm. Para ejecución en servidor con ONNX Runtime puede usarse cualquier GPU convencional, pero no se documentan métricas.
+- Cabe en cualquier dispositivo Qualcomm listado: Snapdragon 8 Gen 1/3/Elite/Elite Gen 5/Gen 6, Snapdragon X Elite/X2 Elite, Dragonwing IQ-8275/IQ-9075/IQ-X7181/Q-8750, QCS8450/QCS8550, SA8295P/SA8650P/SA8775P/SA8255P.
+- Opciones de despliegue: ONNX Runtime 1.30.0, QAIRT 2.51 (QNN_DLC), TFLITE; exportación personalizada con la librería Qualcomm AI Hub Models.
+- Latencia y throughput: 1,23-2,8 ms por paso de decoder en NPU según chipset y runtime; memoria pico entre 0 y 283 MB según dispositivo.
+- No se documentan requisitos para vLLM, llama.cpp, Ollama o TGI, que no aplican a este tipo de modelo.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto / entrada | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| qualcomm/TrOCR | 61,3 M (23,0 M encoder + 38,3 M decoder) | Entrada 320x320 | MIT | Hugging Face + assets ONNX/QNN_DLC/TFLITE optimizados para NPU Qualcomm | Version optimizada del checkpoint small-handwritten |
-| microsoft/trocr-small-handwritten | No disponible en la informacion proporcionada (es el checkpoint base) | No disponible | No disponible | Hugging Face | Checkpoint de origen del que parte la version de Qualcomm |
-| OCR tradicional (por ejemplo, motores no neuronales) | No disponible | No disponible | No disponible | No disponible | Referencia de categoria, sin datos comparables en la informacion disponible |
+| qualcomm/TrOCR (esta ficha) | 61,3 M | Imagen 320x320 | MIT | Hugging Face + Qualcomm AI Hub | Optimizado para NPU Qualcomm |
+| microsoft/trocr-small-handwritten | 61,3 M (mismo checkpoint base) | Imagen 320x320 | MIT | Hugging Face | Pesos originales PyTorch, sin optimización on-device |
+| microsoft/trocr-base-handwritten | No disponible en la información | Imagen 384x384 (según paper original) | MIT | Hugging Face | Variante de mayor tamaño del mismo paper |
+| microsoft/trocr-large-handwritten | No disponible en la información | Imagen 384x384 (según paper original) | MIT | Hugging Face | Variante de mayor tamaño del mismo paper |
 
-No se dispone de datos de precision que permitan comparar el rendimiento cualitativo frente a alternativas; la informacion proporcionada solo describe el rendimiento de inferencia en hardware Qualcomm.
+La comparativa se limita a variantes de la misma familia TrOCR; no se dispone de datos de otros modelos OCR en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Modelo especializado exclusivamente en OCR; no es un modelo de lenguaje general y no puede usarse para generacion de texto libre, codigo o razonamiento.
-- Orientado a texto manuscrito segun el checkpoint base (`trocr-small-handwritten`); su comportamiento sobre texto impreso u otros dominios no esta documentado en la informacion disponible.
-- Idiomas soportados no declarados, por lo que no puede garantizarse el rendimiento multilingue.
-- Riesgo de alucinacion en el decoder: al ser un modelo autorregresivo puede generar transcripciones plausibles pero incorrectas, especialmente con imagenes borrosas, rotadas o de baja calidad.
-- Entrada fija a 320x320: imagenes con texto muy pequeno o denso pueden degradarse al redimensionarse.
-- Los assets publicados estan en precision float; no se documentan variantes cuantizadas, lo que limita el ahorro adicional de memoria mas alla de lo indicado.
-- El uso de los dispositivos alojados de Qualcomm AI Hub requiere registro; consultar las condiciones del servicio para pruebas en hardware remoto.
-- La licencia MIT permite uso comercial, pero se recomienda verificar las condiciones del checkpoint original de Microsoft.
-- No se publican metricas de precision (CER/WER), por lo que la calidad real de transcripcion no puede evaluarse con la informacion disponible.
-- El repositorio ocupa 16,7 GB debido a los multiples artefactos exportados; el peso real del modelo es de unos 234 MB.
+- El modelo está especializado en texto manuscrito (checkpoint `trocr-small-handwritten`); su rendimiento en texto impreso, tablas complejas, fórmulas o documentos multi-columna no está documentado.
+- No se detallan los idiomas soportados; el checkpoint base está orientado a texto manuscrito en inglés, por lo que el uso en castellano u otros idiomas requiere validación empírica.
+- Riesgo de alucinación y errores de transcripción inherente a los modelos generativos de OCR; no se publican métricas de CER/WER que permitan acotar el error.
+- La entrada está fijada a 320x320 píxeles; imágenes de mayor resolución requieren redimensionado, lo que puede degradar la legibilidad de texto pequeño.
+- Los artefactos publicados son en precisión float; no se documentan variantes cuantizadas ni su impacto en calidad.
+- Licencia MIT: permite uso comercial, pero se recomienda revisar las condiciones del checkpoint base de Microsoft y del paper original.
+- El repositorio ocupa 16,7 GB, lo que incluye múltiples artefactos; conviene descargar solo el runtime necesario para el dispositivo objetivo.
+- La model card no documenta sesgos, evaluación de robustez ni comportamiento en dominios distintos al manuscrito.
 
 ## Enlaces
 
-- Hugging Face del modelo: https://huggingface.co/qualcomm/TrOCR
-- Checkpoint base: https://huggingface.co/microsoft/trocr-small-handwritten
-- Repositorio GitHub (AI Hub Models): https://github.com/qualcomm/ai-hub-models/blob/v0.62.0/src/qai_hub_models/models/trocr
-- Pagina del modelo en Qualcomm AI Hub: https://aihub.qualcomm.com/models/trocr
+- Hugging Face: https://huggingface.co/qualcomm/TrOCR
+- Modelo base: https://huggingface.co/microsoft/trocr-small-handwritten
+- Paper: https://arxiv.org/abs/2109.10282
+- Qualcomm AI Hub (modelo): https://aihub.qualcomm.com/models/trocr
 - Qualcomm AI Hub Workbench: https://workbench.aihub.qualcomm.com
-- Articulo TrOCR (arXiv:2109.10282): https://arxiv.org/abs/2109.10282
-- Sitio corporativo de Qualcomm: https://www.qualcomm.com/
-- Informacion sobre Qualcomm (Wikipedia): https://en.wikipedia.org/wiki/Qualcomm
+- Librería Qualcomm AI Hub Models: https://github.com/qualcomm/ai-hub-models/blob/v0.67.0/src/qai_hub_models/models/trocr
+- Descarga ONNX float: https://qaihub-public-assets.s3.us-west-2.amazonaws.com/qai-hub-models/models/trocr/releases/v0.67.0/trocr-onnx-float.zip
+- Descarga QNN_DLC float: https://qaihub-public-assets.s3.us-west-2.amazonaws.com/qai-hub-models/models/trocr/releases/v0.67.0/trocr-qnn_dlc-float.zip
+- Descarga TFLITE float: https://qaihub-public-assets.s3.us-west-2.amazonaws.com/qai-hub-models/models/trocr/releases/v0.67.0/trocr-tflite-float.zip
+- Qualcomm (empresa): https://www.qualcomm.com/
