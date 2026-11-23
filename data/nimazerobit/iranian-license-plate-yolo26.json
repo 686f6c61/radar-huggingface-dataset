@@ -1,0 +1,52 @@
+{
+  "schema": 2,
+  "id": "nimazerobit/iranian-license-plate-yolo26",
+  "slug": "nimazerobit-iranian-license-plate-yolo26",
+  "author": "nimazerobit",
+  "url": "https://huggingface.co/nimazerobit/iranian-license-plate-yolo26",
+  "created_at": "2026-11-23T11:53:48.000Z",
+  "updated_at": "2026-11-23T12:14:03.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "ultralytics",
+  "languages": [
+    "fa"
+  ],
+  "tags": [
+    "ultralytics",
+    "onnx",
+    "yolo",
+    "object-detection",
+    "license-plate-detection",
+    "alpr",
+    "anpr",
+    "ocr",
+    "iranian-license-plate",
+    "fa",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 73886885,
+  "storage_human": "74 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

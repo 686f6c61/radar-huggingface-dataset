@@ -1,0 +1,51 @@
+{
+  "schema": 2,
+  "id": "MahdiAlikhah/albert-base-v2-persian-sentiment-sentipers-3class",
+  "slug": "mahdialikhah-albert-base-v2-persian-sentiment-sentipers-3class",
+  "author": "MahdiAlikhah",
+  "url": "https://huggingface.co/MahdiAlikhah/albert-base-v2-persian-sentiment-sentipers-3class",
+  "created_at": "2026-09-07T09:12:17.000Z",
+  "updated_at": "2026-11-23T09:51:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "fa"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "albert",
+    "text-classification",
+    "fa",
+    "arxiv:1910.09700",
+    "base_model:shekar-ai/albert-base-v2-persian-zwnj-naab-mlm",
+    "base_model:finetune:shekar-ai/albert-base-v2-persian-zwnj-naab-mlm",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 296,
+  "trending_score": 0,
+  "parameters": 11942403,
+  "parameters_human": "11.9M",
+  "storage_bytes": 48458375,
+  "storage_human": "48 MB",
+  "context_length": null,
+  "base_model": "shekar-ai/albert-base-v2-persian-zwnj-naab-mlm",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

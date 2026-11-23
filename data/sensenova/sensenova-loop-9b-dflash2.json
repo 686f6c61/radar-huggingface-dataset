@@ -1,0 +1,51 @@
+{
+  "schema": 2,
+  "id": "sensenova/SenseNova-Loop-9B-DFlash2",
+  "slug": "sensenova-sensenova-loop-9b-dflash2",
+  "author": "sensenova",
+  "url": "https://huggingface.co/sensenova/SenseNova-Loop-9B-DFlash2",
+  "created_at": "2026-11-20T08:03:24.000Z",
+  "updated_at": "2026-11-23T06:40:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "dflash2",
+    "speculative-decoding",
+    "draft-model",
+    "sensenova-loop",
+    "en",
+    "zh",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 967264768,
+  "parameters_human": "967.3M",
+  "storage_bytes": 1934538456,
+  "storage_human": "1.9 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -5,7 +5,7 @@
   "author": "aramkris",
   "url": "https://huggingface.co/aramkris/tinystories-arm-124m-chat-dpo",
   "created_at": "2026-11-17T04:58:52.000Z",
-  "updated_at": "2026-11-17T11:45:21.000Z",
+  "updated_at": "2026-11-23T04:25:06.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

@@ -2,103 +2,92 @@
 
 ## Resumen
 
-Qwenx86-4B-compact es una variante experimental del modelo Qwen3.5-4B de Alibaba Qwen en la que se ha compilado un ordenador x86-64 de 64 bits dentro de los propios pesos del modelo. Lo desarrolla Quazim0t0 como evolución de su proyecto previo Qwenputer (basado en un núcleo RISC-V RV32), y se apoya en el trabajo de divagr1925 sobre el circuito RV32 original. El resultado es un checkpoint de aproximadamente 9 GB que cabe en una GPU de 16 GB y en el que el modelo invoca el ordenador mediante sus propias llamadas de herramienta (`<tool_call>`), ejecutando el hardware dentro de las capas adicionales del transformer.
+Qwenx86-4B-compact es una variante experimental del modelo Qwen3.5-4B de Alibaba, publicada por el usuario Quazim0t0 en Hugging Face. Su particularidad es que incorpora una "computadora x86 de 64 bits compilada dentro de los pesos": se anaden 13 capas transformer delante de las capas originales de Qwen cuyos pesos no han sido aprendidos, sino calculados por un compilador. El modelo base invoca esta computadora mediante sus propias llamadas de herramienta (`<tool_call>`) y la computadora embebida las ejecuta.
 
-La innovación central es que las 13 capas que se añaden por delante de las capas nativas de Qwen no contienen pesos aprendidos: todos sus pesos los calcula un compilador (chipformer). El circuito implementa un núcleo x86-64 con 64 KB de RAM, 256 KB de ROM de código y 128 KB de datos de solo lectura, todo alojado en el estado de Gated DeltaNet del modelo. Sobre ese hardware se han grabado como firmware seis herramientas (calculadora racional exacta, MicroPython, un compilador de C llamado qcc, un almacén de notas, un índice de constantes científicas y un índice de documentación de Python), de modo que las respuestas a esas herramientas las produce el ordenador en los pesos y no el host.
+La propuesta es un ejercicio de "computer-in-weights": en lugar de aprender capacidades aritmeticas o de ejecucion mediante entrenamiento, se compila un circuito (un nucleo x86 derivado del nucleo RV32 de Qwenputer) a capas del transformer. Las herramientas de calculadora, interprete de Python, compilador de C, almacen de notas, busqueda de fisica/quimica y documentacion de Python son "firmware" incluido en el checkpoint, no pesos aprendidos.
 
-Es relevante ahora porque demuestra un enfoque poco habitual: en lugar de emular una CPU mediante prompting o código externo, integra la máquina en la arquitectura del modelo y la expone a través del mecanismo estándar de tool calling. El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, y la model card está redactada en inglés.
+La version "compact" ocupa aproximadamente 9 GB de memoria GPU, lo que permite ejecutarla en una GPU de 16 GB. El repositorio incluye ademas las versiones v2 (memoria Qwenx86: sistema de ficheros, almacen de 1.000 hechos, recuerdo literal de 50.000 tokens, imagenes JPEG, indice de busqueda, aritmetica exacta de 64 bits), v3 (uso autonomo de la memoria por parte de Qwen) y v4 (Qwenx86 OS, programas propios en los pesos y modo de razonamiento `--think`).
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer Qwen3.5-4B con 13 capas adicionales de circuito x86-64 compilado (sin pesos aprendidos) y estado Gated DeltaNet |
-| Parametros totales | no disponible (modelo base de 4B más capas de circuito compilado) |
-| Parametros activos | no aplica (no es MoE) |
+| Arquitectura | Transformer (Qwen3.5) con 13 capas adicionales compiladas que implementan un nucleo x86-64; las capas anadidas no tienen pesos aprendidos |
+| Parametros totales | no disponible (modelo base Qwen3.5-4B; el checkpoint compact ocupa ~9 GB) |
+| Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible (checkpoint compacto de ~9 GB pensado para GPU de 16 GB) |
+| Tipos de cuantizacion | no disponible (checkpoint "compact" pensado para ~9 GB de VRAM) |
 | Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (estados de arranque en `model/boot/*.safetensors`) |
+| Formato de pesos | safetensors (repo de 9,3 GB; incluye `model/boot/ostools.safetensors` en v4) |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de Qwen3.5-4B y le antepone 13 capas de circuito. Estas capas no se entrenan: sus pesos se generan mediante un compilador (chipformer) que traduce el circuito del núcleo a operaciones compatibles con las capas de Qwen3.5. El núcleo es un fork del RV32 de Qwenputer al que se le añadieron micro-operaciones de flags x86 (FADD, FSUB, FAND, FOR, FXOR, FINC, FDEC) y saltos condicionales con la tabla de condiciones de x86 (JCC), además de un traductor de x86-64 a las operaciones de 32 bits del núcleo (valores de 64 bits como mitades de registro/RAM, flags reconstruidos por instrucción, puertos de puente y un despacho de retorno compartido). La memoria creció de 32 KB a 64 KB de RAM al pasar de 11 a 13 capas.
+El modelo parte de Qwen3.5-4B y le antepone 13 capas transformer cuyos pesos no se aprenden: se generan mediante un compilador que traduce un circuito de CPU a operaciones compatibles con las capas de Qwen3.5. El nucleo x86 es un fork del nucleo RV32 de Qwenputer (rv/core.py, disenado por divagr1925), al que se anaden micro-operaciones de flags x86 (FADD, FSUB, FAND, FOR, FXOR, FINC, FDEC), saltos condicionales con la tabla de condiciones x86 (JCC) y un traductor de x86-64 a las operaciones de 32 bits del nucleo. El mapa de memoria incluye 64 KB de RAM (el circuito crecio de 11 a 13 capas) y datos de solo lectura conectados a la ruta x86.
 
-El conjunto de instrucciones cubierto incluye ALU de 8/16/32/64 bits (con ADC/SBB), desplazamientos, rotaciones, MUL/IMUL/DIV/IDIV, MOVZX/MOVSX, SETcc/CMOVcc, BT/BTS/BTR/BTC, BSF/BSR, operaciones de cadena con REP, llamadas y retornos. El autor declara una verificación lockstep contra Unicorn en 2.000 casos, comprobando todos los registros y flags tras cada instrucción. Además, el firmware x86vm (no incluido como herramienta en esta release) decodifica bytes x86-64 en tiempo de ejecución, emula SSE en software (bit a bit idéntico en 3.200 operaciones aleatorias) y gestiona interrupciones (IDT, INT n, IRETQ, STI/CLI, HLT, temporizador). El bucle de conversación ejecuta las capas del chip por token, con un cargador compacto para 16 GB y verificación por bloques de hasta 256 tokens de máquina por pasada.
+El firmware (calculadora, compilador C `qcc`, notas, almacenes de ciencia y documentacion de Python, y una maquina x86 que decodifica bytes crudos con SSE e interrupciones) se integra en el checkpoint. El modelo base invoca la computadora mediante llamadas de herramienta y esta las ejecuta dentro de los pesos; las versiones v2, v3 y v4 anaden memoria persistente, uso autonomo de esa memoria por parte del modelo y un panel de control web (Qwenx86 OS). No se especifican en la informacion disponible el numero de tokens de entrenamiento ni la composicion del dataset, ya que las capas anadidas no se entrenan.
 
 ## Capacidades
 
-- Generación de texto y razonamiento heredados de Qwen3.5-4B.
-- Invocación de herramientas mediante `<tool_call>`, resuelta por el ordenador compilado en los pesos.
-- Calculadora racional exacta (`calc`) con suma, resta, multiplicación, división, paréntesis y decimales.
-- Ejecución de expresiones y programas en MicroPython (`python`), con programas largos divididos en partes `#more`.
-- Compilación y ejecución de C (`c`) mediante qcc: int, char, unsigned, long, punteros, arrays, funciones, recursión, if/while/for y printf, con programas largos en partes `//more`.
-- Almacén de notas en RAM de la máquina (`notes_put`, `notes_search`, `notes_get`) sin enrutado en el host.
-- Consulta de constantes científicas (`science`): 647 constantes CODATA, conversiones de unidades y tabla periódica (NIST / scipy.constants) con índice invertido en datos de solo lectura.
-- Consulta de documentación de Python (`python_doc`): 1.003 firmas de API y docstrings comprimidas con gramática (204 KB a 110 KB).
-- Soporte de tool calling y de agentes de varios pasos a través del bucle de conversación.
-- Capacidades multilingües: no disponible.
+- Generacion de texto y razonamiento heredados de Qwen3.5-4B.
+- Ejecucion de codigo x86-64 dentro de los pesos, invocada mediante tool calling.
+- Calculadora aritmetica exacta y compilador de C (`qcc`) embebidos como firmware.
+- Interprete de Python y consulta de documentacion de Python como herramientas internas.
+- Almacen de notas y busqueda de hechos de fisica/quimica.
+- Memoria Qwenx86 (v2): sistema de ficheros, almacen de 1.000 hechos, recuerdo literal de 50.000 tokens, imagenes JPEG, cabezas programables, indice de busqueda, aritmetica exacta de 64 bits y snapshots de estado.
+- Uso autonomo de la memoria (v3): el modelo decide cuando guardar, leer, buscar, listar y borrar notas escribiendo sus propias llamadas de herramienta.
+- Programas propios del OS en los pesos (v4): `checksum` (SHA-256, CRC32, base64), `compare` (comparacion de textos y diferencias) y `ledger` (totales monetarios exactos).
+- Modo de razonamiento (`--think`) que hace razonar al modelo antes de cada llamada de herramienta y tras cada resultado.
+- Soporte de agentes y razonamiento multi-paso a traves de la cadena de llamadas de herramienta.
 
 ## Casos de uso
 
-- Cálculo numérico exacto en pipelines de agentes: usar `calc` para operaciones con racionales y decimales donde el redondeo en coma flotante es inaceptable, con la ventaja de que el cálculo se ejecuta en el circuito del modelo y no en el host.
-- Ejecución de código Python en línea dentro de un agente: el firmware MicroPython permite evaluar expresiones y programas cortos sin salir del checkpoint, útil para prototipado y verificación rápida de resultados.
-- Compilación y prueba de fragmentos de C: qcc permite compilar y ejecutar código C con punteros, arrays y recursión, lo que sirve para validar algoritmos o ejemplos docentes dentro de la propia conversación.
-- Memoria persistente entre turnos: `notes_put`, `notes_search` y `notes_get` almacenan y recuperan información en la RAM de la máquina, adecuado para agentes que necesitan recordar estado sin infraestructura externa.
-- Asistencia científica con recuperación exacta: el índice `science` con 647 constantes CODATA y la tabla periódica permite responder consultas de física y química con recuperación exacta (647/647) y retrieval@1 del 98,0 %.
-- Ayuda a programación con documentación de referencia: `python_doc` ofrece 1.003 firmas de API con recall exacto (1.003/1.003), útil para responder dudas de API dentro de un asistente de código.
-- Investigación en interpretabilidad y cómputo en pesos: sirve como banco de pruebas para estudiar cómo un circuito compilado interactúa con las capas aprendidas de un transformer y para reproducir la verificación lockstep del núcleo.
-- Demostración educativa de arquitectura de computadores: el espacio Qwenx86 Debugger permite recorrer llamadas reales, registros y flags x86, código en el contador de programa, RAM y salida de máquina.
+- Verificacion de ejecucion de codigo: usar el modelo para compilar y ejecutar fragmentos de C o x86-64 dentro de los pesos, obteniendo resultados deterministas sin depender de un interprete externo.
+- Calculo aritmetico exacto en produccion: la calculadora y la aritmetica de 64 bits embebidas permiten obtener resultados sin errores de redondeo en flujos donde la alucinacion numerica es critica.
+- Agentes con memoria persistente: gracias a la memoria Qwenx86 (v2/v3), el modelo puede guardar y recuperar notas, hechos y textos largos de hasta 50.000 tokens de forma literal, util para asistentes de investigacion o documentacion.
+- Depuracion interactiva: el espacio Qwenx86 Debugger permite recorrer llamadas de herramienta registradas, registros y flags x86, codigo en el contador de programa, RAM y salida de maquina, util para ensenanza de arquitectura de computadores.
+- Auditoria y checksum en pipelines: los programas `checksum` y `compare` (v4) permiten calcular SHA-256, CRC32 o base64 y comparar textos dentro del propio modelo, integrable en validaciones de integridad.
+- Contabilidad exacta: el programa `ledger` calcula totales monetarios exactos, adecuado para conciliaciones donde los errores de coma flotante son inaceptables.
+- Panel de control y chat con herramientas: Qwenx86 OS ofrece una interfaz web con ventana por herramienta, editor de notas que escribe de vuelta en la computadora embebida y lector de especificaciones que verifica la lectura palabra por palabra.
 
 ## Benchmarks y rendimiento
 
-| Prueba | Resultado |
-|---|---|
-| GSM8K (primeras 28 preguntas de test), con `calc` | 26/28 |
-| GSM8K (primeras 28 preguntas de test), Qwen sin herramienta | 23/28 |
-| Verificación lockstep del núcleo x86 vs Unicorn | 2.000/2.000 casos |
-| SSE en software vs unidad SSE real | 3.200 operaciones bit a bit idénticas |
-| Recuperación exacta `science` | 647/647 |
-| Retrieval@1 `science` | 98,0 % |
-| Recuperación exacta `python_doc` | 1.003/1.003 |
-| Ejecución de hello en x86vm | 1,44 M tokens, 0 errores |
-
-No se han publicado resultados de MMLU, HumanEval ni otros benchmarks estándar en la información disponible.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: aproximadamente 9 GB para el checkpoint compacto, diseñado para caber en una GPU de 16 GB.
-- GPU recomendadas: no disponibles de forma explícita; por el tamaño, encaja en tarjetas de 16 GB o más.
-- Cabe en GPU de consumo: sí, según el autor, en GPUs de 16 GB (por ejemplo, la clase RTX 4080/4090 de 16-24 GB); no se detallan modelos concretos.
-- Opciones de despliegue: el autor proporciona un cargador compacto para 16 GB y verificación por bloques de hasta 256 tokens de máquina por pasada; no se mencionan vLLM, llama.cpp, Ollama ni TGI.
+- VRAM estimada: aproximadamente 9 GB para el checkpoint compact, lo que permite ejecutarlo en una GPU de 16 GB.
+- GPU recomendadas: el autor cita una RTX 5060 Ti para el arranque de Qwenx86 OS; cualquier GPU con 16 GB o mas de VRAM deberia ser suficiente para el checkpoint compact. Para el modelo base Qwen3.5-4B sin compilar, se requieren menos recursos.
+- Cabe en GPU de consumo: si, en tarjetas con 16 GB (por ejemplo, RTX 4060 Ti 16 GB, RTX 4070 Ti Super, RTX 5060 Ti 16 GB, RTX 4080/4090).
+- Opciones de despliegue: el repositorio incluye el cargador compact para 16 GB, `qwenx86.mixed`, `qwenx86.serve` y `qwenx86_os serve --allow-gpu`; requiere PyTorch con CUDA. No se mencionan vLLM, llama.cpp, Ollama ni TGI en la informacion disponible.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Herramientas en pesos | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwenx86-4B-compact | 4B base + 13 capas de circuito | no disponible | Sí (calc, python, c, notes, science, python_doc) | Apache 2.0 | Hugging Face, 0 descargas |
-| Qwen3.5-4B (base) | 4B | no disponible | No | Apache 2.0 (según modelo base) | Hugging Face |
-| Qwenputer (proyecto previo del autor) | no disponible | no disponible | Sí, sobre núcleo RISC-V RV32 | MIT (componentes compartidos) | Repositorio del autor |
+| Qwenx86-4B-compact | base Qwen3.5-4B + 13 capas compiladas | no disponible | Computadora x86 en los pesos, tool calling | Apache 2.0 | Hugging Face (421 descargas, 57 likes) |
+| Qwen3.5-4B (base) | 4B | no disponible | LLM generalista | Apache 2.0 (segun modelo base) | Hugging Face |
+| Modelos "computer-in-weights" previos del autor (neural-n64, neural-x86-doom, neural-riscv) | no disponible | no disponible | Emulacion exacta de CPU en redes neuronales | no disponible | Proyectos del autor |
 
-No se dispone de datos de benchmarks comparativos con otras alternativas en la información proporcionada.
+No se dispone de datos de rendimiento comparativo entre estas alternativas en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- Proyecto experimental con 0 descargas y 0 likes; no hay evidencia de uso en producción.
-- El núcleo cubre el subconjunto de instrucciones enteras usado por C compilado con MSVC; no se documenta soporte completo de x86-64 ni de coma flotante hardware (SSE se emula en software y x86vm no se incluye como herramienta en esta release).
-- El firmware x86vm no se distribuye como herramienta en esta versión.
-- La emulación SSE y las interrupciones se describen en el árbol de desarrollo, no como parte del paquete entregado.
-- No se documentan sesgos, riesgos de alucinación ni comportamiento multilingüe; al heredar Qwen3.5-4B, arrastra los sesgos y limitaciones del modelo base.
-- Longitud de contexto no disponible; el rendimiento en conversaciones largas no está caracterizado.
-- La licencia Apache 2.0 permite uso comercial, pero la naturaleza experimental y la falta de benchmarks estándar desaconsejan su uso en producción sin evaluación propia.
-- El estado de la máquina vive en el estado Gated DeltaNet; no se documenta el comportamiento ante entradas adversarias que intenten corromper registros o memoria.
+- Modelo experimental de investigacion: el enfoque "computer-in-weights" no es un LLM convencional y su comportamiento depende de la correcta compilacion de las capas anadidas.
+- Las capas compiladas no tienen pesos aprendidos; cualquier fallo en el compilador o en el cargador puede producir resultados incorrectos en las herramientas.
+- No se especifican los idiomas soportados, por lo que el rendimiento multilingue es incierto.
+- No se dispone de datos sobre sesgos, tasas de alucinacion ni evaluaciones de seguridad.
+- La longitud de contexto no esta documentada; el recuerdo literal de 50.000 tokens corresponde a la memoria Qwenx86 (v2), no necesariamente a la ventana de atencion del modelo.
+- El uso comercial esta permitido por la licencia Apache 2.0, pero la naturaleza experimental y la falta de benchmarks desaconsejan su uso en produccion sin validacion previa.
+- El checkpoint compact esta pensado para ~9 GB de VRAM; por debajo de 16 GB puede requerir cuantizacion no documentada.
+- Las versiones v1 a v3 y v4 conviven en el mismo repositorio; es necesario seleccionar la carpeta correcta para evitar cargar pesos o codigo no deseados.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/Quazim0t0/Qwenx86-4B-compact
-- Espacio de demostración Qwenx86 Debugger: https://huggingface.co/spaces/Quazim0t0/Qwenx86-Debugger
-- Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
-- Proyecto previo Qwenputer: no disponible (referenciado en la model card sin URL)
-- Repositorio de divagr1925 (circuito RV32): no disponible (referenciado en la model card sin URL)
+- Espacio de demostracion Qwenx86 Debugger: https://huggingface.co/spaces/Quazim0t0/Qwenx86-Debugger
+- Modelo base Qwen3.5-4B: https://huggingface.co/Qwen/Qwen3.5-4B
+- DOI: https://doi.org/10.57967/hf/11453
+- Guia completa v4: https://huggingface.co/Quazim0t0/Qwenx86-4B-compact/blob/main/v4/README.md
+- Visor de arquitectura: https://hfviewer.com/Quazim0t0/Qwenx86-4B-compact

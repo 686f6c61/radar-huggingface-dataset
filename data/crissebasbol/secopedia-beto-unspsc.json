@@ -5,7 +5,7 @@
   "author": "crissebasbol",
   "url": "https://huggingface.co/crissebasbol/secopedia-beto-unspsc",
   "created_at": "2026-11-17T03:10:31.000Z",
-  "updated_at": "2026-11-17T03:11:03.000Z",
+  "updated_at": "2026-11-23T00:03:45.000Z",
   "license": "cc-by-sa-4.0",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
@@ -15,6 +15,7 @@
   ],
   "tags": [
     "transformers",
+    "joblib",
     "safetensors",
     "bert",
     "text-classification",
@@ -31,12 +32,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 25,
+  "downloads_30d": 27,
   "trending_score": 0,
   "parameters": 109873181,
   "parameters_human": "109.9M",
-  "storage_bytes": 439516260,
-  "storage_human": "440 MB",
+  "storage_bytes": 535737912,
+  "storage_human": "536 MB",
   "context_length": null,
   "base_model": "dccuchile/bert-base-spanish-wwm-uncased",
   "formats": [

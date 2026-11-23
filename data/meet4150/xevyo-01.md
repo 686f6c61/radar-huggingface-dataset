@@ -1,103 +1,90 @@
 # meet4150/xevyo-01
 
 ## Resumen
+xevyo-01 es un modelo especializado en planificación de turnos conversacionales (turn planner) desarrollado por el equipo Xevyo para su asistente de salud y propósito general. No responde al usuario directamente: lee un turno de chat y devuelve un objeto JSON con el plan de acción que un segundo modelo ejecutará después. Es un fine-tune de Qwen/Qwen3.5-9B (Apache 2.0) mediante LoRA supervisado fusionado en los pesos base.
 
-xevyo-01 es un modelo especializado en planificación de turnos conversacionales, desarrollado por el equipo de Xevyo como un fine-tune de Qwen/Qwen3.5-9B. No es un modelo generativo de respuestas: su función es leer un turno de chat y devolver un objeto JSON que describe qué debe hacer el asistente antes de que otro modelo redacte la respuesta final. El plan cubre nivel de seguridad, necesidad de imagen o documento, reescritura de la pregunta para eliminar dependencias del historial, búsqueda web con consultas concretas, consultas de medicamentos, calculadora, comandos de memoria, ruta de dominio, herramientas a invocar y notas de estilo.
+El modelo resuelve un problema de orquestación: decide el nivel de seguridad, si hace falta imagen, documento o respuesta de chat, reescribe la pregunta para que sea autónoma, determina si hay que buscar en la web y con qué consultas, activa herramientas de cálculo o consulta de fármacos, gestiona comandos de memoria, selecciona la ruta y las herramientas a invocar, y añade notas de estilo. Todo ello en un único objeto JSON con formato `xv01.1` que la capa de respuesta consume.
 
-El modelo se construyó mediante fine-tuning supervisado con LoRA (posteriormente fusionado en los pesos base) sobre Qwen3.5-9B, una arquitectura transformer con capacidades multimodales heredadas del modelo original. El checkpoint contiene 9.653.104.368 parámetros en bfloat16 (19,7 GB en el repositorio) e incluye los pesos de visión del modelo base, aunque el propio modelo se sirve en modo solo-texto mediante `--language-model-only`. La longitud de contexto operativa recomendada es de 8.192 tokens.
-
-Su relevancia radica en el patrón de orquestación: separar la planificación (estructurada, determinista, con esquema JSON validable) de la generación de respuestas (a cargo de un modelo distinto). Esto permite auditar decisiones del asistente, imponer políticas de seguridad antes de responder y encadenar herramientas sin que el modelo generativo tenga que razonar sobre su propia orquestación. El modelo está pensado para el asistente sanitario y general de Xevyo, con soporte para inglés, hinglish, hindi (devanagari) y español.
+Esta es la ronda 4 (19 de noviembre de 2026), con la ronda 3 aún disponible como revisión `r3`. El checkpoint pesa 19,3 GB en bfloat16 (9,04 B parámetros usados, más los pesos de visión del modelo base no utilizados). El contexto de entrenamiento cubre los últimos 8 mensajes, o hasta 24 mensajes dentro de 12.000 caracteres en la variante "agent".
 
 ## Especificaciones técnicas
 
 | Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer (base Qwen3.5-9B), fine-tune LoRA fusionado |
+| Arquitectura | Transformer (derivada de Qwen3.5, con capas de atención híbrida; solo 8 de 32 capas mantienen caché por token) |
 | Parámetros totales | 9.653.104.368 (9,04 B usados en bfloat16) |
-| Parámetros activos | No aplica (no es MoE) |
-| Longitud de contexto | 8.192 tokens (configuración recomendada en vLLM) |
-| Tipos de cuantización | No disponible (el autor solo publica bfloat16; el modelo base admite cuantizaciones estándar) |
+| Parámetros activos | no disponible (no es MoE) |
+| Longitud de contexto | Últimos 8 mensajes, o hasta 24 mensajes dentro de 12.000 caracteres (ambas variantes entrenadas); servido con `--max-model-len 8192` |
+| Tipos de cuantización | no disponible (entrenado y servido en bfloat16) |
 | Idiomas soportados | Inglés, hinglish, hindi (devanagari), español |
 | Licencia | Apache 2.0 |
-| Formato de pesos | Safetensors (repositorio de 19,7 GB) |
+| Formato de pesos | safetensors (transformers) |
 
 ## Arquitectura y entrenamiento
+xevyo-01 parte de Qwen/Qwen3.5-9B en la revisión `c202236235762e1c871ad0ccb60c8ee5ba337b9a`. La arquitectura es la del modelo base: un transformer con atención híbrida en el que solo 8 de las 32 capas conservan caché por token, lo que abarata los prompts largos. El checkpoint incluye los pesos de visión del modelo base aunque el uso principal sea texto; el servidor se lanza con `--language-model-only`.
 
-El modelo parte de Qwen/Qwen3.5-9B (revisión `c202236235762e1c871ad0ccb60c8ee5ba337b9a`), un transformer de 9.000 millones de parámetros con pesos de visión heredados que xevyo-01 conserva en el checkpoint pero no utiliza en inferencia (se sirve con `--language-model-only`). El fine-tune se realizó con LoRA supervisado y se fusionó en los pesos base, de modo que el artefacto final es un modelo denso estándar sin adaptadores separados.
-
-La innovación técnica principal no está en la arquitectura sino en el contrato de salida: el modelo genera un único objeto JSON conforme al esquema `xv01.1` (`prompt/turn_plan.schema.json`), con campos que solo se emiten cuando difieren de su valor por defecto, lo que produce planes típicos de unos 40 tokens. El entrenamiento se apoya en un formato de prompt exacto y rígido (bloque `RECENT CHAT` + `TURN` + `MESSAGE`) que el autor advierte que debe respetarse para no degradar la precisión. La decodificación estructurada se fuerza con `--reasoning-parser qwen3` y un esquema JSON específico para vLLM (`prompt/turn_plan.vllm.schema.json`). No se han publicado detalles sobre el volumen de tokens de entrenamiento, la composición del dataset ni si hubo etapas de RLHF o DPO.
+El ajuste se realizó mediante LoRA supervisado (SFT) fusionado en los pesos base. El modelo aprende un formato de prompt exacto (system prompt con lista de directivas y catálogo de herramientas, más un bloque de usuario con historial reciente, flags de adjuntos, memoria, sesión, locale y mensaje) y produce un JSON con el esquema `xv01.1`. Los campos que quedan en su valor por defecto se omiten, por lo que la mayoría de planes rondan los 40 tokens. El repositorio incluye el código de renderizado, validación, reglas duras, esquema de servicio, entrenamiento y puntuación en `code/`.
 
 ## Capacidades
-
-- Planificación de turnos conversacionales con salida JSON estructurada y validable contra esquema.
-- Clasificación de seguridad con cuatro niveles: `none`, `medication_risk`, `possible_emergency`, `possible_crisis`.
-- Detección de intención multimodal: acciones de imagen `none`, `generate`, `edit`, `analyze`, con prompt, texto visible e instrucción.
-- Clasificación de tipo de petición: `chat` o `document`, con formatos `pdf`, `docx`, `xlsx`, `pptx`.
-- Generación de preguntas de aclaración (`clarify`) cuando la petición es ambigua.
-- Reescritura de la pregunta a formato autónomo (`standalone_question`) eliminando dependencias del historial.
-- Planificación de búsqueda web con 1-3 consultas concretas (`search_queries`).
+- Planificación de turnos conversacionales: devuelve un único objeto JSON por turno con el esquema `xv01.1`.
+- Clasificación de seguridad: `none`, `medication_risk`, `possible_emergency`, `possible_crisis`.
+- Decisión sobre imagen: `none`, `generate`, `edit`, `analyze`, con prompt, texto visible e instrucción.
+- Distinción entre respuesta de chat y generación de documento (`pdf`, `docx`, `xlsx`, `pptx`).
+- Reformulación autónoma de la pregunta (`standalone_question`) para eliminar dependencia del historial.
+- Planificación de búsqueda web con 1-3 consultas.
 - Selección de herramientas de datos: `calc`, `bmi`, `dose`, `barcode`, `usda`, `food`.
-- Consulta de medicamentos (`drug.names`, `drug.wants_research`).
-- Gestión de memoria: `remember`, `forget`, `recall`, con tipo y contenido.
-- Enrutamiento de dominio: `general`, `medical`, `coding`, `personal_memory`, `prompt_authoring`.
-- Planificación de profundidad: `quick`, `normal`, `deep`, `research`.
+- Búsqueda de fármacos (`names`, `wants_research`).
+- Comandos de memoria: recordar, olvidar, recuperar, con tipo y contenido.
+- Enrutado por dominio (`general`, `medical`, `coding`, `personal_memory`, `prompt_authoring`) y profundidad (`quick`, `normal`, `deep`, `research`).
 - Emisión ordenada de llamadas a herramientas con argumentos, restringidas al catálogo ofrecido en el prompt.
-- Aplicación de directivas de estilo y seguridad mediante identificadores (`directives`).
-- Soporte multilingüe en inglés, hinglish, hindi y español.
-- No genera respuestas al usuario: su única salida es el plan JSON.
+- Directivas de estilo o seguridad para el modelo que redacta la respuesta.
+- Multilingüe en inglés, hinglish, hindi y español.
+- No genera respuestas al usuario: su salida es siempre un plan.
 
 ## Casos de uso
-
-- Orquestación de asistentes sanitarios: el modelo clasifica cada turno como `medical` o `general`, detecta `medication_risk` o `possible_emergency` y activa directivas de seguridad antes de que el modelo generativo responda, lo que permite bloquear o matizar respuestas potencialmente peligrosas.
-- Enrutamiento previo a búsqueda web: ante preguntas que requieren información actualizada, emite entre una y tres consultas concretas en `search_queries`, evitando que el modelo generativo formule búsquedas inconsistentes o redundantes.
-- Gestión de memoria conversacional: interpreta comandos como "recuerda que soy alérgico a la penicilina" y los traduce a `memory.action=remember` con `memory_type` y `content`, lo que permite persistir hechos del usuario de forma estructurada y auditable.
-- Atención al cliente con derivación a herramientas: cuando el usuario pide un cálculo de IMC, una dosis o información nutricional, el plan incluye la herramienta adecuada (`bmi`, `dose`, `usda`, `food`) con argumentos ya extraídos, lo que reduce errores de extracción en el modelo generativo.
-- Procesamiento de documentos adjuntos: clasifica la petición como `document` con formato `pdf`, `docx`, `xlsx` o `pptx`, lo que permite enrutar el turno a un pipeline de extracción distinto del de chat.
-- Reescritura de preguntas de seguimiento: convierte "¿y su capitán?" en una pregunta autónoma ("¿Quién fue el capitán de Australia en la final del Mundial de Críquet masculino de 2023?") que puede enviarse a un buscador sin arrastrar el historial.
-- Moderación y triaje en chats de salud mental: la clasificación `possible_crisis` permite activar protocolos de derivación antes de generar cualquier respuesta, con independencia del modelo que redacte.
-- Generación y edición de imágenes asistidas: decide si el turno requiere `generate`, `edit` o `analyze` y prepara el prompt y la instrucción para el modelo de imagen, separando la decisión de la ejecución.
+- Orquestación de un asistente de salud: el modelo clasifica el turno como `medication_risk` o `possible_emergency` antes de que se genere cualquier respuesta, activando directivas de seguridad adecuadas; es adecuado porque la decisión se toma en una llamada de ~0,38 s de mediana.
+- Enrutado de consultas médicas a herramientas de cálculo: ante preguntas de dosis o IMC, emite `data_tool: dose` o `bmi` con los argumentos necesarios, evitando que el modelo generador improvise cálculos.
+- Reformulación de preguntas de seguimiento: convierte "¿y su capitán?" en "¿Quién fue el capitán de Australia en la final del Mundial de Críquet masculino de 2023?" para que un motor de búsqueda o un modelo sin historial pueda responder.
+- Planificación de búsqueda web: decide `needs_search` y emite hasta 3 consultas concretas, lo que permite desacoplar la recuperación de información de la generación de la respuesta.
+- Gestión de memoria de usuario: detecta peticiones de recordar, olvidar o recuperar información personal y las estructura con tipo y contenido, integrándose en un almacén de memoria externo.
+- Generación de documentos: identifica cuándo el usuario quiere un PDF, DOCX, XLSX o PPTX y lo marca como `request_kind: document` con `doc_format`, activando el pipeline de generación de documentos.
+- Atención al cliente multilingüe: soporta inglés, hinglish, hindi y español, con contexto de hasta 24 mensajes en 12.000 caracteres en la ventana "agent", suficiente para conversaciones multi-turno con historial extenso.
+- Enrutado de dominio en pipelines de agentes: clasifica el turno en `general`, `medical`, `coding`, `personal_memory` o `prompt_authoring` con profundidad `quick`/`normal`/`deep`/`research`, lo que permite seleccionar el modelo o la cadena de herramientas adecuada.
 
 ## Benchmarks y rendimiento
-
-No se han publicado resultados de benchmarks en la información disponible. El autor únicamente reporta métricas de latencia: 0,40 s de mediana y 0,62 s de percentil 90 por plan en una fracción de H100 con vLLM, con aproximadamente 1.600 tokens de prompt.
+No se han publicado resultados de benchmarks en la información disponible. La model card únicamente reporta métricas de latencia: 0,38 s de mediana y 0,60 s de p90 por plan en una porción de una H100 con vLLM y ~1.600 tokens de prompt.
 
 ## Requisitos de hardware
-
-- VRAM estimada para inferencia en bfloat16: aproximadamente 19-20 GB solo para pesos, más overhead de caché KV; una GPU de 24 GB o más es suficiente según el autor.
-- GPU recomendadas: H100 (referencia de latencia del autor), A100 40/80 GB, L40S, RTX 4090 (24 GB, al límite).
-- Cabe en GPU de consumo: sí, en RTX 4090 (24 GB) en bfloat16 con contexto moderado; en GPUs de 16 GB requeriría cuantización, no publicada por el autor.
-- Opciones de despliegue: vLLM >= 0.17.0 con `--language-model-only`, `--enable-prefix-caching`, `--mamba-cache-mode align` y `--reasoning-parser qwen3`; el servidor es compatible con la API de OpenAI. No se documentan despliegues con llama.cpp, Ollama ni TGI.
-- Latencia y throughput: 0,40 s mediana y 0,62 s p90 por plan en una fracción de H100 con vLLM y ~1.600 tokens de prompt. Solo 8 de las 32 capas mantienen caché por token, lo que abarata los prompts largos.
+- VRAM estimada para inferencia: aproximadamente 20 GB en bfloat16 (pesos de 19,3 GB más overhead de caché y activaciones); una GPU de 24 GB o más es suficiente según el autor.
+- GPU recomendadas: H100 (referencia de latencia reportada), A100 40/80 GB, L40S, RTX 4090 (24 GB) para uso individual.
+- Cabe en GPU de consumo: sí, en RTX 4090 (24 GB) o GPUs con al menos 24 GB en bfloat16; no se documentan cuantizaciones alternativas.
+- Opciones de despliegue: vLLM >= 0.17.0 (recomendado, servidor compatible con OpenAI) con flags `--dtype bfloat16 --max-model-len 8192 --language-model-only --enable-prefix-caching --mamba-cache-mode align --reasoning-parser qwen3 --generation-config vllm`. No se documentan despliegues con llama.cpp, Ollama ni TGI.
+- Latencia y throughput: 0,38 s de mediana y 0,60 s de p90 por plan en una porción de H100 con vLLM y ~1.600 tokens de prompt. Solo 8 de 32 capas mantienen caché por token, lo que reduce el coste de prompts largos.
 
 ## Comparativa con modelos similares
 
-No se dispone de información sobre modelos comparables de planificación de turnos con salida JSON estructurada. La comparación más directa es con el modelo base del que deriva:
+| Modelo | Parámetros | Contexto | Función | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| xevyo-01 | 9,04 B usados (9,65 B totales) | 8 mensajes / 24 mensajes en 12.000 caracteres | Planificador de turnos (JSON) | Apache 2.0 | Hugging Face |
+| Qwen/Qwen3.5-9B | 9 B (aprox.) | no disponible en la información proporcionada | Modelo generativo generalista | Apache 2.0 | Hugging Face |
+| Alternativas de planificación/orquestación | no disponible | no disponible | no disponible | no disponible | no disponible |
 
-| Modelo | Parámetros | Contexto | Función | Licencia |
-|---|---|---|---|---|
-| xevyo-01 | 9,04 B | 8.192 | Planificador JSON de turnos | Apache 2.0 |
-| Qwen/Qwen3.5-9B | 9 B | No disponible | Modelo generativo generalista multimodal | Apache 2.0 |
-| Alternativas de planificación | No disponible | No disponible | No disponible | No disponible |
+No se dispone de datos de benchmarks ni de otros planificadores comparables en la información proporcionada.
 
 ## Limitaciones y advertencias
-
-- El modelo no responde al usuario: cualquier uso que espere texto conversacional directo fallará por diseño.
-- La precisión depende críticamente de respetar el formato exacto de prompt (`prompt/system_prompt.txt`, bloque `RECENT CHAT`/`TURN`/`MESSAGE`, límites de 500/600/2.000 caracteres y recorte a 1.500 + 500). Desviarse del formato degrada la calidad del plan.
-- Los planes solo pueden invocar herramientas presentes en el catálogo ofrecido en el prompt; herramientas no listadas no serán seleccionadas.
-- Riesgo de alucinación en campos como `standalone_question` o `search_queries`: el plan puede contener reformulaciones o consultas que no reflejen fielmente la intención original, por lo que conviene validarlas contra el esquema y, en producción, contra políticas adicionales.
-- La clasificación de seguridad (`possible_emergency`, `possible_crisis`) es un componente de triaje, no un sustituto de revisión humana ni de protocolos clínicos.
-- Idiomas limitados a inglés, hinglish, hindi y español; el rendimiento en otras lenguas no está documentado.
-- El checkpoint incluye pesos de visión no utilizados, lo que infla el tamaño del repositorio (19,7 GB) sin aportar capacidad multimodal en el modo de despliegue recomendado.
-- Licencia Apache 2.0 permite uso comercial, pero el autor no documenta garantías ni evaluación independiente; el modelo tiene 0 descargas y 0 likes en el momento de la ficha, sin validación comunitaria.
-- No se han publicado datos sobre sesgos, composición del dataset de entrenamiento ni evaluaciones de robustez.
+- El modelo no responde al usuario: cualquier uso que espere texto dirigido al usuario final fallará; su salida es exclusivamente un plan JSON.
+- La precisión depende críticamente de reproducir el formato exacto de prompt (system prompt con `{directive_list}` y `{tool_catalogue}` sustituidos, y bloque de usuario con el formato documentado); desviarse de él degrada el rendimiento.
+- Las llamadas a herramientas solo pueden referirse a herramientas ofrecidas en el prompt con `"plannable": true`; el modelo no inventa herramientas fuera del catálogo, pero el integrador debe validar la salida.
+- El contexto de entrenamiento está limitado a 8 mensajes (o 24 dentro de 12.000 caracteres en la ventana "agent"); historiales más largos quedan fuera del régimen entrenado.
+- Idiomas soportados limitados a inglés, hinglish, hindi y español; no se documenta cobertura de otras lenguas.
+- Riesgo de alucinación en los campos del plan (por ejemplo, consultas de búsqueda o reformulaciones) no cuantificado en la información disponible.
+- Sesgos conocidos: no documentados en la información proporcionada.
+- Licencia Apache 2.0 permite uso comercial, pero el modelo base Qwen3.5-9B también es Apache 2.0 según la información disponible; conviene verificar los términos del modelo base y de los datos de entrenamiento del fine-tune.
+- El checkpoint incluye pesos de visión no utilizados; servir con `--language-model-only` para evitar consumo innecesario de memoria.
+- No se documentan cuantizaciones oficiales (GGUF, AWQ, GPTQ); el despliegue en hardware limitado requeriría cuantización no validada por el autor.
 
 ## Enlaces
-
 - Modelo en Hugging Face: https://huggingface.co/meet4150/xevyo-01
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
-- Esquema del plan (`prompt/turn_plan.schema.json`): https://huggingface.co/meet4150/xevyo-01/blob/main/prompt/turn_plan.schema.json
-- Esquema para vLLM (`prompt/turn_plan.vllm.schema.json`): https://huggingface.co/meet4150/xevyo-01/blob/main/prompt/turn_plan.vllm.schema.json
-- Prompt de sistema (`prompt/system_prompt.txt`): https://huggingface.co/meet4150/xevyo-01/blob/main/prompt/system_prompt.txt
-- Directivas (`prompt/directives.json`): https://huggingface.co/meet4150/xevyo-01/blob/main/prompt/directives.json
-- Catálogo de herramientas (`prompt/tools.json`): https://huggingface.co/meet4150/xevyo-01/blob/main/prompt/tools.json
-- Ejemplos (`examples/examples.jsonl`, `examples/rendered_request.json`): https://huggingface.co/meet4150/xevyo-01/tree/main/examples
+- Repositorio del modelo (código en `code/`, esquema en `prompt/turn_plan.schema.json`, ejemplos en `examples/examples.jsonl`): https://huggingface.co/meet4150/xevyo-01/tree/main
+- Revisión r3 (ronda 3): https://huggingface.co/meet4150/xevyo-01/tree/r3

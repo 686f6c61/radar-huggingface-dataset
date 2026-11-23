@@ -35,7 +35,7 @@
     "region:us"
   ],
   "likes": 2,
-  "downloads_30d": 418,
+  "downloads_30d": 416,
   "trending_score": 0,
   "parameters": 187931804131,
   "parameters_human": "187.93B",
@@ -55,5 +55,11 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": []
+  "sources": [
+    {
+      "title": "How early can we enter Ball arena? : r/ColoradoAvalanche - Reddit",
+      "url": "https://www.reddit.com/r/ColoradoAvalanche/comments/11pxhn6/how_early_can_we_enter_ball_arena/",
+      "snippet": "Mar 13, 2023 · How early can I get into Ball Arena? I am going to the games next Monday, I got club level tickets so I wasn’t sure if …Read more"
+    }
+  ]
 }

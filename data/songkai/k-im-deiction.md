@@ -2,112 +2,102 @@
 
 ## Resumen
 
-K-IM-Deiction es un modelo de clasificación de texto desarrollado por Songkai (usuario de Hugging Face) que actúa como clasificador de decisiones estructuradas para mensajes de chat de grupo. Se construye sobre el backbone Qwen/Qwen3.5-0.8B mediante un ajuste fino con LoRA, y su función no es generar texto, sino emitir siete juicios calibrados en una sola pasada hacia delante: categoría de 7 clases, sentimiento, puntuaciones de importancia, urgencia e intensidad, probabilidad de requerir atención y probabilidad de contener una tarea pendiente.
+K-IM-Deiction es un modelo especializado de clasificación de texto desarrollado por Songkai, afinado a partir de Qwen/Qwen3.5-0.8B. Su función no es generar texto, sino emitir siete juicios estructurados y calibrados sobre ventanas de mensajes de chat de grupo empresarial en chino: categoría de 7 clases, sentimiento, puntuaciones de importancia, urgencia e intensidad, probabilidad de requerir atención y probabilidad de contener una tarea pendiente. El modelo se publica en dos formas intercambiables dentro del mismo repositorio: los pesos ya fusionados con el backbone (standalone) y un adaptador LoRA de 102,4 MB para cargar sobre el modelo base.
 
-El modelo responde a un problema de economía de la atención: los chats de grupo empresarial generan más mensajes de los que cualquier persona puede leer, y el recurso escaso no es la información sino la atención. En lugar de invocar un modelo grande para leer cada ventana de mensajes (a ~1.5k tokens por ventana), este especialista de 0.8B realiza los juicios rutinarios en unos 40 ms sobre hardware local, de modo que solo las ventanas marcadas requieren una revisión más profunda.
+La propuesta de valor es económica y operativa: en lugar de enviar cada ventana de mensaje a un modelo grande a ~1.500 tokens por ventana, un especialista de 0,8B destilado de un profesor mayor realiza los juicios rutinarios en una sola pasada hacia adelante con una latencia mediana de 40,6 ms por ventana en una RTX 4090 D (batch 1, ≤512 tokens). Solo las ventanas marcadas por el modelo pasan a revisión humana o a un modelo grande, lo que reduce el coste marginal del cribado a prácticamente cero.
 
-El repositorio se distribuye en dos formas intercambiables: los pesos fusionados en la raíz (listos para ejecutar sin descargar el modelo base ni configurar PEFT) y un adaptador LoRA en la carpeta `adapter/` (102.4 MB) para cargar sobre el backbone Qwen3.5-0.8B propio. Ambas formas comparten las siete cabezas de decisión y los ficheros de calibración, y producen los mismos juicios.
+La versión actual es la V4, promovida el 10 de noviembre de 2026, que introduce señales de relevancia como entrada del modelo mediante una cabecera de señales estructurada y un vector de 16 dimensiones proyectado hacia las siete cabeceras. La V2 previa se conserva intacta en la carpeta `v2/`. El modelo se posiciona explícitamente como capa de juicio, no de decisión: las acciones (mostrar, crear tarea, escalar) corresponden al sistema que lo rodea.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (Qwen3.5) con cabezas de clasificación múltiple; ajuste fino mediante LoRA fusionado |
-| Parametros totales | 852.985.920 (~0.85B) |
-| Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | no disponible (evaluado con ventanas de ≤512 tokens) |
-| Tipos de cuantizacion | no disponible (pesos en bf16; adaptador LoRA de 102.4 MB) |
+| Arquitectura | Transformer decoder-only (Qwen3.5) con siete cabeceras de clasificación y proyección de vector de señales de 16 dimensiones |
+| Parámetros totales | 852.985.920 |
+| Parámetros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible (ventanas de ≤512 tokens en la evaluación) |
+| Tipos de cuantización | no disponible |
 | Idiomas soportados | chino (zh) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (pesos fusionados en la raíz + adaptador LoRA en `adapter/`) |
+| Formato de pesos | safetensors (pesos fusionados y adaptador LoRA) |
 | Modelo base | Qwen/Qwen3.5-0.8B |
-| Tamano del repositorio | 1.83 GB (1.71 GB pesos fusionados + 0.10 GB adaptador) |
+| Tamaño del paquete raíz | 1,83 GB (pesos standalone 1,71 GB + adaptador LoRA 0,10 GB) |
 | Pipeline | text-classification |
-| Fecha de creacion | 2026-11-05 |
+| Latencia mediana | 40,6 ms por ventana (RTX 4090 D, batch 1, ≤512 tokens) |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte del backbone Qwen3.5-0.8B, un transformer decoder-only de aproximadamente 853 millones de parámetros, sobre el que se aplica un ajuste fino con LoRA. La innovación estructural es la sustitución de la generación de texto por siete cabezas de decisión que se evalúan en una única pasada hacia delante: una cabeza de clasificación de 7 categorías, una de sentimiento, tres de regresión (importancia, urgencia, intensidad) y dos binarias (needs-attention y has-todo). El repositorio incluye además ficheros de calibración que ajustan las probabilidades de salida.
+El modelo parte del backbone Qwen3.5-0.8B, un transformer decoder-only de 853 millones de parámetros. Sobre la representación pooled del estado oculto se añaden siete cabeceras de juicio que se ejecutan en una única pasada hacia adelante. La innovación principal de la V4 respecto a la V3.1 es la incorporación de señales de relevancia como entrada: cada ventana lleva una cabecera de señales estructurada como primera línea de texto, y un vector de 16 dimensiones se proyecta y se alimenta a las siete cabeceras junto al estado oculto pooled. Esto permite que la cabecera de needs-attention aprenda qué es relevante para el usuario concreto, no solo qué parece importante en abstracto.
 
-El autor describe el modelo como un especialista destilado de un profesor de mayor tamaño, etiquetado bajo una especificación de etiquetado completa (la misma que se usa en el prompt del baseline DeepSeek de la evaluación). No se especifican en la información disponible el número de tokens de entrenamiento, la composición exacta del dataset ni si hubo etapas de RLHF o DPO. El dominio de entrenamiento es el chat de grupo empresarial chino. La forma fusionada se verificó contra la forma de adaptador sobre 16 ventanas de validación: la mayor diferencia absoluta en los logits de las siete cabezas fue de 0.037 (redondeo bf16), por lo que ambas formas son equivalentes en salida dentro de la precisión bf16.
+El modelo se describe como destilado de un profesor de mayor tamaño, aunque la model card no detalla el número de tokens de entrenamiento ni la composición exacta del dataset. La evaluación se realizó sobre un conjunto ciego congelado de 498 ventanas con anotación dorada de calibre estrecho. No se especifica si se emplearon RLHF, DPO u otras técnicas de alineación. El repositorio incluye ficheros de calibración junto a las cabeceras, lo que sugiere un post-procesado de calibración de las probabilidades emitidas.
 
 ## Capacidades
 
-- Clasificación de categoría en 7 clases (help / task / decision / info / discussion, entre otras según la especificación de etiquetado del autor).
-- Análisis de sentimiento con una precisión del 89.1% en el conjunto de validación.
-- Puntuaciones de importancia, urgencia e intensidad (regresión calibrada).
-- Probabilidad calibrada de needs-attention (AUC 0.801, ECE 0.065).
-- Probabilidad calibrada de has-todo, es decir, de que la ventana contenga una tarea pendiente (AUC 0.965, ECE 0.034).
-- Emisión de los siete juicios en una sola pasada hacia delante, sin generación de texto.
-- Procesamiento de ventanas de mensajes con contexto reciente más el mensaje objetivo.
-- Ejecución totalmente local, sin llamadas a API externas.
-- No soporta tool calling, function calling, razonamiento multi-paso, visión, audio ni generación de texto; es un modelo de clasificación, no un modelo generativo de propósito general.
+- Clasificación en 7 categorías de ventanas de mensajes de chat de grupo (help, task, decision, info, discussion y otras).
+- Análisis de sentimiento con puntuación calibrada.
+- Puntuaciones de importancia, urgencia e intensidad por ventana.
+- Probabilidad calibrada de needs-attention (requiere atención humana).
+- Probabilidad calibrada de has-todo (contiene una tarea pendiente).
+- Procesamiento de ventanas con contexto reciente más el mensaje objetivo y una cabecera de señales estructurada.
+- Siete juicios emitidos en una sola pasada hacia adelante.
+- No genera texto: es exclusivamente un modelo de juicio y clasificación.
+- No soporta tool calling ni function calling.
+- No soporta razonamiento multi-paso ni comportamiento agéntico.
+- Multilingüe limitado al chino; no cubre otros idiomas.
+- No procesa adjuntos, imágenes, enlaces ni documentos citados: entran solo como tokens de marcador de posición.
 
 ## Casos de uso
 
-- Triaje de atención en IM empresarial: ordenar las ventanas entrantes de cada persona por la probabilidad calibrada de needs-attention y mostrar solo las primeras de cada día, funcionando como un presupuesto de atención en lugar de un flujo continuo de notificaciones no leídas.
-- Minería de tareas pendientes: las ventanas con alta probabilidad de has-todo se convierten en candidatos a lista de tareas con un responsable y una fecha límite a confirmar, evitando que las acciones se diluyan en el historial del chat.
-- Enrutado y archivado: la cabeza de categoría clasifica las ventanas en flujos de ayuda, tarea, decisión, información y discusión para paneles, resúmenes y recuperación.
-- Colas de prioridad: el producto importancia × urgencia ordena listas de seguimiento y comprobaciones de escalado.
-- Monitorización del sentimiento del equipo: el sentimiento y la intensidad se agregan en un pulso diario, de modo que los picos de intensidad negativa son visibles sin leer los chats en bruto.
-- Prefiltro delante de modelos grandes: en un pipeline con LLM, este modelo criba cada ventana con un coste marginal cercano a cero y solo las ventanas marcadas se envían a un modelo grande para lectura profunda o redacción de respuestas.
-- Despliegue en local o en el borde: al ejecutarse íntegramente en la red propia, es apto para entornos donde el contenido de los chats no puede salir de la infraestructura.
+- Triaje de atención en IM empresarial: el modelo puntúa cada ventana entrante con su probabilidad de needs-attention y el sistema muestra solo las primeras N por persona y día según un presupuesto de atención, sustituyendo el flujo continuo de notificaciones no leídas.
+- Minería de tareas pendientes: las ventanas con alta probabilidad de has-todo se convierten en candidatos a lista de tareas con propietario y fecha límite a confirmar, evitando que las acciones se diluyan en el historial del chat.
+- Enrutado y archivado: la cabecera de categoría clasifica las ventanas en flujos de ayuda, tarea, decisión, información o discusión para paneles, resúmenes diarios y recuperación.
+- Colas de prioridad: la combinación de importancia por urgencia ordena listas de seguimiento y comprobaciones de escalado en operaciones y soporte.
+- Monitorización de sentimiento de equipo: el sentimiento y la intensidad se agregan en un pulso diario, de modo que los picos de intensidad negativa son visibles sin leer los chats en bruto.
+- Prefiltro delante de modelos grandes: en un pipeline con LLM, este modelo criba cada ventana a coste marginal casi nulo y solo las ventanas marcadas se envían a un modelo grande para lectura profunda o redacción de respuestas.
+- Despliegue en local o en el borde: al ejecutarse íntegramente en hardware propio sin llamadas a API, encaja en entornos donde el contenido de los chats no puede salir de la red corporativa.
 
 ## Benchmarks y rendimiento
 
-Resultados medidos sobre un conjunto de validación congelado de 258 ventanas, en la forma de adaptador (base + LoRA):
-
-| Metrica | Valor |
+| Elemento | Valor |
 |---|---|
-| Latencia mediana por ventana | 40.3 ms (p90 44.9 ms; RTX 4090 D, batch 1, ≤512 tokens, 7 cabezas en una pasada) |
-| Category macro-F1 (7 clases) | 0.637 |
-| Category macro-F1 (clases con soporte ≥10) | 0.744 |
-| needs-attention AUC | 0.801 |
-| needs-attention ECE | 0.065 (calibrado) |
-| has-todo AUC | 0.965 |
-| has-todo ECE | 0.034 (calibrado) |
-| Sentiment accuracy | 89.1% |
-| Importance dentro de ±1 | 100% |
-| Urgency dentro de ±1 | 99.6% |
+| Conjunto de evaluación | 498 ventanas ciegas congeladas, anotación dorada de calibre estrecho |
+| Forma evaluada | adaptador LoRA |
+| Latencia mediana | 40,6 ms por ventana (RTX 4090 D, batch 1, ≤512 tokens) |
+| Tamaño del paquete raíz | 1,83 GB (standalone 1,71 GB + LoRA 0,10 GB) |
 
-Comparación con baseline de modelo grande (DeepSeek `deepseek-chat` vía API, zero-shot, temperatura 0, mismo conjunto de 258 ventanas y mismas etiquetas de referencia):
-
-| Metrica | K-IM-Deiction (0.8B) | DeepSeek zero-shot | Diferencia |
-|---|---|---|---|
-| Cumplimiento de formato de salida | 100% (cabezas estructuradas, por construcción) | 100.0% (258/258 JSON valido) | Empate |
-| Category macro-F1 (7 clases) | 0.637 | no disponible (dato truncado en la información) | no disponible |
+No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible. La model card menciona una comparativa cuantitativa del ahorro frente a enviar todas las ventanas a un modelo grande, pero los datos concretos de esa comparación no están incluidos en la información proporcionada.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: aproximadamente 1.7 GB en bf16 para los pesos fusionados, más el overhead de activaciones y del runtime; cabe holgadamente en GPUs de consumo.
-- GPU recomendadas: RTX 4090 D (medición de referencia del autor, 40.3 ms de latencia mediana); cualquier GPU consumer con ≥4 GB de VRAM debería poder ejecutarlo en bf16.
-- Cabe en GPU consumer: sí, en tarjetas de gama media y alta con al menos 4 GB de VRAM.
-- Opciones de despliegue: el modelo es un clasificador con cabezas personalizadas, por lo que requiere cargar los pesos y los ficheros de calibración del repositorio; no se documentan integraciones con vLLM, llama.cpp, Ollama o TGI en la información disponible.
-- Latencia y throughput: 40.3 ms de mediana y 44.9 ms de p90 por ventana en RTX 4090 D con batch 1 y ventanas de ≤512 tokens; el throughput escala con el tamaño de batch, aunque no se publican cifras concretas.
+- VRAM estimada para inferencia: no disponible de forma explícita; con 853 millones de parámetros en safetensors, los pesos en precisión completa ocupan aproximadamente 1,71 GB, por lo que en fp16 cabría en torno a 2 GB más overhead de activaciones y cabeceras.
+- GPU recomendadas: RTX 4090 D es la GPU de referencia en la que se midió la latencia de 40,6 ms por ventana; cualquier GPU consumer con al menos 4-6 GB de VRAM debería poder ejecutar el modelo.
+- Cabe en GPU consumer: sí, dado el tamaño de 0,8B de parámetros y el paquete de 1,83 GB.
+- Opciones de despliegue: el repositorio incluye una edición MLX en la carpeta `mlx/` para la V4 y en `v2/mlx/` para la V2, lo que apunta a despliegue en hardware Apple. No se confirman en la información disponible integraciones con vLLM, llama.cpp, Ollama o TGI.
+- Latencia y throughput: latencia mediana de 40,6 ms por ventana en RTX 4090 D con batch 1 y ventanas de hasta 512 tokens; el throughput agregado no está disponible.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
+| Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| K-IM-Deiction | ~0.85B | no disponible (evaluado ≤512 tokens) | Clasificación de decisiones en chat de grupo (7 cabezas) | Apache 2.0 | Hugging Face |
-| Qwen/Qwen3.5-0.8B (base) | ~0.8B | no disponible | Generación de texto general | no disponible en la información | Hugging Face |
-| DeepSeek (`deepseek-chat` API) | no disponible | no disponible | Generación de texto general; usado como baseline zero-shot para los mismos juicios | propietaria (API) | API |
+| K-IM-Deiction (este) | 853 M | no disponible | Clasificación y juicio de mensajes de chat (zh) | Apache 2.0 | Hugging Face |
+| Qwen/Qwen3.5-0.8B (base) | 0,8 B | no disponible | Generación de texto general | no disponible en la información | Hugging Face |
+| Modelos grandes de propósito general (p. ej. clase 7B-70B) | 7-70 B | variable | Lectura y generación abierta | variable | Hugging Face / APIs |
 
-No se dispone de datos de benchmarks de los modelos alternativos en la información proporcionada, por lo que la comparación cuantitativa se limita a la tabla de la sección anterior.
+La comparación relevante es frente al modelo base y frente a modelos grandes de propósito general usados como cribadores. Frente al base, K-IM-Deiction añade siete cabeceras de juicio calibradas y una latencia de 40,6 ms por ventana, a cambio de renunciar a la generación de texto. Frente a un modelo grande, el ahorro es de coste y latencia por ventana, pero el especialista no puede resumir ni redactar respuestas. No se dispone de datos de benchmarks comparativos directos con alternativas de la misma categoría de triaje de mensajes.
 
 ## Limitaciones y advertencias
 
-- El modelo emite juicios, no texto: no sirve para comprensión lectora abierta, resumen ni redacción de respuestas; debe combinarse con un modelo grande para esas tareas.
-- Dominio limitado al chat de grupo empresarial chino; no se garantiza su comportamiento en otros idiomas, plataformas o culturas de chat.
-- No puede juzgar contenido que no ve: adjuntos, imágenes, enlaces y documentos citados entran solo como tokens de relleno en el texto de la ventana.
-- La probabilidad de needs-attention es un juicio destilado y parcialmente subjetivo que opera cerca de su techo de ruido de etiquetas; debe usarse para ordenar y filtrar, manteniendo a humanos o a un modelo grande sobre la minoría marcada.
-- No debe ser el único árbitro de decisiones consecuentes.
-- La categoría macro-F1 de 0.637 en 7 clases es moderada; el rendimiento mejora en clases con soporte suficiente (0.744).
-- Riesgo de sesgos y de alucinación no documentado en la información disponible.
-- Licencia Apache 2.0, que permite uso comercial con las obligaciones habituales de atribución y aviso de licencia.
+- Dominio restringido: entrenado para chat de grupo empresarial en chino; no se recomienda para otros idiomas, plataformas o culturas de chat.
+- No es un modelo generativo: no sirve para comprensión lectora abierta, resumen ni redacción de respuestas; debe combinarse con un modelo grande para esas tareas.
+- Contenido invisible: adjuntos, imágenes, enlaces y documentos citados entran solo como tokens de marcador de posición, por lo que el modelo no puede juzgarlos.
+- La probabilidad de needs-attention es un juicio destilado y parcialmente subjetivo que opera cerca de su techo de ruido de etiquetas; debe usarse para ordenar y filtrar, manteniendo humanos o un modelo grande sobre la minoría marcada.
+- No debe ser el árbitro único de decisiones consecuentes: el modelo emite juicios, no decisiones; la lógica de acción debe residir en reglas deterministas, umbrales y personas.
+- Riesgo de alucinación: no aplica en el sentido generativo, pero las puntuaciones calibradas pueden desviarse en distribuciones de chat distintas de las de entrenamiento.
+- Sesgos conocidos: no documentados en la información disponible; al estar entrenado en un dominio empresarial chino concreto, puede heredar sesgos de ese corpus.
+- Licencia Apache 2.0: permite uso comercial, pero el modelo base Qwen3.5-0.8B puede tener sus propias condiciones que conviene verificar.
+- En producción, la calibración de las probabilidades debe validarse sobre datos propios antes de fijar umbrales de automatización.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/Songkai/K-IM-Deiction
-- Perfil del autor: https://huggingface.co/Songkai
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B

@@ -5,7 +5,7 @@
   "author": "masahiroid",
   "url": "https://huggingface.co/masahiroid/llm-jp-4.1-8b-thinking-gguf",
   "created_at": "2026-10-02T04:19:44.000Z",
-  "updated_at": "2026-11-22T03:17:16.000Z",
+  "updated_at": "2026-11-22T09:23:35.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -30,7 +30,7 @@
     "conversational"
   ],
   "likes": 1,
-  "downloads_30d": 121,
+  "downloads_30d": 134,
   "trending_score": 0,
   "parameters": 8590200832,
   "parameters_human": "8.59B",

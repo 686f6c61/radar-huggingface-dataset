@@ -29,7 +29,7 @@
     "region:us"
   ],
   "likes": 1,
-  "downloads_30d": 413,
+  "downloads_30d": 416,
   "trending_score": 0,
   "parameters": 852985920,
   "parameters_human": "853.0M",
@@ -49,11 +49,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Songkai (Song) - Hugging Face",
-      "url": "https://huggingface.co/Songkai",
-      "snippet": "User profile of Song on Hugging Face Recent Activity updated a modelabout 10 hours ago Songkai/kai-skill-lora published a modelabout 10 hours ago Songkai/kai-skill-lora liked a model2 months ago unsloth/Qwen3.8-27B-GGUF View all activity"
-    }
-  ]
+  "sources": []
 }

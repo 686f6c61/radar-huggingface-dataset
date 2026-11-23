@@ -2,91 +2,89 @@
 
 ## Resumen
 
-nano-edge-tts es un decodificador de síntesis de voz desarrollado por drmhse que sustituye la etapa de generación de forma de onda de Kokoro-82M (hexgrad) por dos redes neuronales de muy baja complejidad que no operan a la frecuencia de muestreo de audio. El modelo conserva intacta la parte textual de Kokoro (pronunciación, temporización, tono y todas las voces), de modo que se comporta como un reemplazo directo del decodificador original dentro del pipeline de Kokoro. Su relevancia radica en que reduce los parámetros del decodificador de 53,3 M a 1,75 M y acelera la síntesis entre 11 y 33 veces en CPU de un solo hilo, manteniendo una calidad de audio cercana a la del modelo original.
+nano-edge-tts es un decodificador de síntesis de voz desarrollado por drmhse que sustituye el decodificador de waveform de Kokoro-82M por dos redes convolucionales muy pequeñas (1,75 millones de parámetros en total) que operan a 80 y 160 tramas por segundo en lugar de a la frecuencia de muestreo de audio. El modelo conserva intacta la parte de texto de Kokoro (pronunciación, timing, pitch y todas las voces), de modo que se integra como un reemplazo directo del decodificador original dentro del pipeline de Kokoro.
 
-La arquitectura se apoya en un esquema harmonic-plus-noise: una red *mapper* (0,96 M de parámetros, 80 tramas/s) transforma las entradas del decodificador de Kokoro en una descripción de 512 canales del sonido, y una red *renderer* (0,79 M de parámetros, 160 tramas/s) predice, por trama, una ganancia y una rotación de fase para cada una de las 301 bandas de frecuencia de un tren de pulsos, además de una ganancia para cada una de las 61 bandas de ruido blanco en cinco subpasos. Dos STFT inversas convierten el resultado en audio a 24 kHz. El modelo completo suma 30,2 M de parámetros y pesa 7,0 MB en disco para el decodificador.
+El problema que resuelve es el coste computacional del decodificado neural a frecuencia de audio en TTS ligeros: Kokoro-82M dedica 53,3 millones de parámetros a su decodificador y consume entre 1,4 y 1,7 GB de memoria pico en el pipeline completo. nano-edge-tts reduce el decodificador a 1,75 M de parámetros (7 MB en disco) y baja la memoria pico a 0,75 GB, manteniendo una calidad de voz cercana a la del modelo original según las métricas publicadas por el autor.
 
-El modelo es relevante para despliegues en el extremo (*edge*), entornos con CPU limitada y aplicaciones en tiempo real donde el coste computacional del vocoder neuronal tradicional resulta prohibitivo. Está publicado con licencia Apache 2.0 y solo soporta inglés (americano y británico) a través de las voces de Kokoro.
+La relevancia actual está en el despliegue en el borde: con un factor de tiempo real de 0,0042 en el decodificador (33 veces más rápido que Kokoro en un hilo de CPU) y 0,0127 en el pipeline completo de fonemas a audio sobre un Apple M4, el modelo habilita TTS de calidad aceptable en dispositivos sin GPU dedicada. La licencia Apache 2.0 y el formato safetensors facilitan su integración comercial.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Harmonic-plus-noise con dos redes ConvNeXt (mapper y renderer) y sintetizador de pulsos y ruido sin parámetros; decodificador de Kokoro-82M |
-| Parametros totales | 30,2 M (modelo completo); 1,75 M (decodificador: 0,96 M mapper + 0,79 M renderer) |
+| Arquitectura | Decodificador harmonic-plus-noise con dos redes ConvNeXt (mapper y renderer) sobre excitación de tren de pulsos y ruido blanco; síntesis final mediante dos STFT inversas |
+| Parametros totales | 30,2 M en el pipeline completo (1.749.643 en el decodificador) |
 | Parametros activos | No aplica (no es MoE) |
-| Longitud de contexto | No disponible (modelo TTS, no procesa contexto textual extenso) |
-| Tipos de cuantizacion | No disponible |
-| Idiomas soportados | Inglés (americano y británico) |
+| Longitud de contexto | No disponible (modelo TTS; la longitud se mide en fonemas por utterance) |
+| Tipos de cuantizacion | No disponible (pesos en safetensors; el autor no documenta cuantizaciones) |
+| Idiomas soportados | Inglés (americano y británico, códigos `a` y `b` de Kokoro) |
 | Licencia | Apache 2.0 |
 | Formato de pesos | safetensors (`nano-edge-tts.safetensors` + `config.json`) |
 
 ## Arquitectura y entrenamiento
 
-El decodificador sustituye la red neuronal de Kokoro que operaba a frecuencia de audio por dos redes que trabajan a 80 y 160 tramas por segundo. El *mapper* emplea seis bloques ConvNeXt para convertir las entradas del decodificador de Kokoro en una representación de 512 canales. El *renderer* usa cuatro bloques ConvNeXt para producir, por trama, ganancias y rotaciones de fase sobre 301 bins de un tren de pulsos (ventana de 25 ms, que separa armónicos) y ganancias sobre 61 bins de ruido blanco en cinco subpasos (ventana de 5 ms, que preserva ataques de consonantes). El sintetizador final no tiene parámetros: el tren de pulsos a la frecuencia fundamental predicha porta los armónicos y el ruido aporta respiración y consonantes; dos STFT inversas generan la forma de onda a 24 kHz.
+El decodificador se compone de tres bloques. El *mapper* (0,96 M de parámetros, 80 tramas/s) usa seis bloques ConvNeXt para transformar las entradas del decodificador de Kokoro en una descripción de 512 canales del sonido. El *renderer* (0,79 M de parámetros, 160 tramas/s) emplea cuatro bloques ConvNeXt y produce, por trama, una ganancia y una rotación de fase para cada una de las 301 bandas de frecuencia de un tren de pulsos, más una ganancia para cada una de las 61 bandas de ruido blanco en cinco subpasos. El *sintetizador* no tiene parámetros: el tren de pulsos a la frecuencia fundamental predicha porta todos los armónicos y el ruido aporta respiración y consonantes; los pulsos usan ventana de 25 ms (separa armónicos) y el ruido ventana de 5 ms (mantiene ataques de consonantes nítidos). Dos STFT inversas convierten el resultado en audio a 24 kHz.
 
-El entrenamiento se basa en destilación de conocimiento del decodificador de Kokoro, con pérdidas espectrales contra el audio de Kokoro y pérdidas de forma de onda con discriminadores. La model card menciona explícitamente resultados negativos: dos intentos de eliminar por entrenamiento un defecto audible (sonidos sonoros entre 1 y 4 kHz demasiado puros, percibidos como un tono mecánico tenue) no funcionaron. No se especifican en la información disponible el número de tokens, la composición del dataset ni si hubo RLHF o DPO, dado que es un modelo TTS y no un LLM.
+El entrenamiento se basa en destilación de conocimiento del decodificador de Kokoro: pérdidas espectrales contra el audio de Kokoro, pérdidas de waveform y discriminadores. El autor documenta en el paper dos intentos de eliminar mediante entrenamiento un defecto audible (sonidos sonoros entre 1 y 4 kHz percibidos como un tono metálico tenue) que no funcionaron, y recoge estos resultados negativos de forma explícita.
 
 ## Capacidades
 
-- Síntesis de voz en inglés americano y británico mediante las voces de Kokoro (`af_heart`, `af_bella`, `am_michael`, `am_fenrir`, `bf_emma`, `bm_george`, entre otras).
-- Reemplazo directo del decodificador de Kokoro: `load()` devuelve un `KModel` con el decodificador sustituido, compatible con `KPipeline`.
-- Uso aislado del decodificador mediante `load_decoder()`, con la misma firma de llamada que el de Kokoro: `decoder(asr, F0, N, style) -> waveform`.
-- Generación de audio a 24 kHz.
-- Inferencia en CPU de un solo hilo con factor de tiempo real de 0,0042 para el decodificador y 0,0127 para el pipeline completo.
-- No soporta tool calling, agentes, razonamiento multi-paso, visión ni audio de entrada: es exclusivamente un modelo de text-to-speech.
+- Síntesis de voz (text-to-speech) en inglés americano y británico a 24 kHz.
+- Reutiliza todas las voces de Kokoro-82M sin reentrenarlas (af_heart, af_bella, am_michael, am_fenrir, bf_emma, bm_george, entre otras).
+- Pronunciación, timing y pitch gestionados por la parte de texto de Kokoro, sin cambios.
+- API compatible con `KModel` de Kokoro: `load()` devuelve el modelo completo con el decodificador sustituido y `load_decoder()` devuelve solo el decodificador con la firma `decoder(asr, F0, N, style) -> waveform`.
+- Inferencia sin red neuronal a frecuencia de audio: las redes corren a 80 y 160 tramas/s.
+- Ejecución en CPU con un solo hilo a velocidad superior al tiempo real.
+- No soporta tool calling, agentes, visión, audio de entrada ni razonamiento multi-step; es un modelo exclusivamente de TTS.
 
 ## Casos de uso
 
-- Síntesis de voz en dispositivos de borde: el decodificador de 1,75 M de parámetros y 7 MB en disco permite generar voz en microcontroladores o SBCs con CPU limitada, donde un vocoder neuronal convencional no cabría o no alcanzaría tiempo real.
-- Lectura de notificaciones y accesibilidad en aplicaciones móviles: el pipeline completo corre en 0,75 GB de memoria pico y un solo hilo de CPU, adecuado para lectores de pantalla y asistentes sin conexión.
-- Generación de audiolibros y contenido pregrabado por lotes: el factor de tiempo real de 0,0127 en CPU permite procesar grandes volúmenes de texto en servidores sin GPU, con calidad UTMOS de 4,327.
-- Integración en pipelines existentes de Kokoro: al ser un reemplazo del decodificador, cualquier aplicación que ya use `KPipeline` puede adoptarlo cambiando únicamente la carga del modelo, sin reentrenar ni rediseñar el flujo.
-- Sistemas de respuesta de voz interactiva (IVR) en tiempo real: la baja latencia del decodificador (33 veces más rápido que Kokoro en un hilo de CPU) reduce el tiempo hasta el primer audio en entornos con recursos restringidos.
-- Prototipado e investigación en vocoders eficientes: el código del decodificador cabe en un solo archivo (`nano_edge_tts.py`) que solo requiere PyTorch, lo que facilita experimentos de destilación y arquitecturas harmonic-plus-noise.
+- **Lectura de textos en dispositivos de borde sin GPU**: el pipeline completo corre a factor de tiempo real 0,0127 en un hilo de CPU (Apple M4), por lo que puede sintetizar voz en Raspberry Pi, móviles o navegadores con WebAssembly sin acelerador.
+- **Asistentes de voz locales y offline**: al ocupar 0,75 GB de memoria pico y 7 MB de pesos de decodificador, cabe en dispositivos con RAM limitada y permite privacidad total sin enviar texto a la nube.
+- **Audiolibros y contenido largo**: la velocidad de decodificado (33 veces la de Kokoro) reduce el coste de generar horas de audio en servidores sin GPU, con calidad UTMOS de 4,327 sobre 28 clips de validación.
+- **Sistemas de accesibilidad**: integración en lectores de pantalla y aplicaciones de asistencia para personas con discapacidad visual, donde la latencia baja y el consumo de memoria importan más que la fidelidad absoluta.
+- **Prototipado e investigación en TTS**: al ser un reemplazo directo de `KModel`, sirve para experimentar con decodificadores ligeros manteniendo el front-end de Kokoro y sus voces.
+- **Generación de voz en pipelines de CI/CD o pruebas automatizadas**: el bajo coste permite generar locuciones de prueba en cada build sin depender de servicios externos.
+- **Sistemas embebidos con restricciones de cómputo**: el decodificador de 7 MB en disco y 1,75 M de parámetros encaja en firmware o contenedores mínimos donde Kokoro-82M no cabría.
 
 ## Benchmarks y rendimiento
 
-| Métrica | Kokoro-82M | nano-edge-tts |
+Datos publicados por el autor en la model card y el paper:
+
+| Metrica | Kokoro-82M | nano-edge-tts |
 |---|---:|---:|
 | Parámetros del decodificador | 53,3 M | 1,75 M |
 | Parámetros del modelo completo | 81,8 M | 30,2 M |
-| Peso del decodificador en disco | 213 MB | 7,0 MB |
-| Velocidad del decodificador, un hilo de CPU (RTF) | 0,1378 | 0,0042 (33× más rápido) |
-| Fonemas a audio, un hilo de CPU (RTF) | 0,1411 | 0,0127 (11× más rápido) |
-| Memoria pico del pipeline completo | 1,4 a 1,7 GB | 0,75 GB |
+| Pesos del decodificador en disco | 213 MB | 7,0 MB |
+| Factor de tiempo real del decodificador, 1 hilo CPU | 0,1378 | 0,0042 (33× más rápido) |
+| Factor de tiempo real de fonemas a audio, 1 hilo CPU | 0,1411 | 0,0127 (11× más rápido) |
+| Memoria pico del pipeline completo | 1,4–1,7 GB | 0,75 GB |
 | Errores de palabra con Whisper small.en, 240 frases | 235 (4,63 %) | 238 (4,69 %) |
 | UTMOS, 28 clips de validación | 4,383 | 4,327 |
 
-Las mediciones de velocidad se realizaron en PyTorch sobre un Apple M4: 240 frases de validación para el decodificador y seis frases (55 s de audio) para el pipeline completo. Los resultados en bruto están en el directorio `results/` del repositorio.
-
-## Requisitos de hardware
-
-- VRAM estimada: no aplica para inferencia en CPU; el pipeline completo usa 0,75 GB de memoria pico. No se proporcionan requisitos de VRAM para GPU.
-- GPU recomendadas: no disponibles; el modelo está diseñado para CPU y no se documentan requisitos de GPU.
-- Cabe en GPU de consumo: no se especifica, pero por tamaño (30,2 M de parámetros totales) cabría en cualquier GPU de consumo; la información disponible no lo confirma.
-- Opciones de despliegue: PyTorch con la librería `kokoro==0.9.4`, `safetensors` y `soundfile`; el decodificador se carga con `load()` o `load_decoder()`. No se documentan integraciones con vLLM, llama.cpp, Ollama ni TGI.
-- Latencia y throughput: RTF de 0,0042 para el decodificador y 0,0127 para el pipeline completo en un hilo de CPU (Apple M4), es decir, 33× y 11× más rápido que Kokoro respectivamente.
+Mediciones realizadas en PyTorch sobre Apple M4; los números brutos están en el directorio `results/` del repositorio. En pruebas A/B ciegas con un solo oyente (el autor), un checkpoint anterior se percibió igual que Kokoro en 9 de 12 pares.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| nano-edge-tts | 30,2 M (1,75 M decodificador) | No aplica | UTMOS 4,327; RTF 0,0127 (CPU, 1 hilo) | Apache 2.0 | Hugging Face |
-| Kokoro-82M | 81,8 M (53,3 M decodificador) | No aplica | UTMOS 4,383; RTF 0,1411 (CPU, 1 hilo) | Apache 2.0 | Hugging Face |
-| Alternativas de TTS en el borde | No disponible | No disponible | No disponible | No disponible | No disponible |
+| Modelo | Parámetros | Contexto/idiomas | Licencia | Disponibilidad |
+|---|---|---|---|---|
+| nano-edge-tts | 30,2 M (1,75 M decodificador) | Inglés (US/UK) | Apache 2.0 | Hugging Face |
+| Kokoro-82M | 81,8 M (53,3 M decodificador) | Inglés y otros según pipeline | Apache 2.0 | Hugging Face |
+| Piper | No disponible en la información proporcionada | Multilingüe | No disponible en la información proporcionada | No disponible en la información proporcionada |
+| VITS (variantes ligeras) | No disponible en la información proporcionada | Multilingüe | No disponible en la información proporcionada | No disponible en la información proporcionada |
 
-La información proporcionada solo permite comparar con Kokoro-82M, el modelo base. No se dispone de datos de otros vocoders o modelos TTS comparables en la documentación consultada.
+La comparación directa solo puede establecerse con Kokoro-82M, su modelo base, del que hereda el front-end de texto y las voces. Frente a Piper o variantes de VITS no se dispone de datos verificables en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Solo soporta inglés (americano y británico); no hay soporte multilingüe.
-- Defecto audible conocido: en algunas frases, los sonidos sonoros entre 1 y 4 kHz suenan demasiado puros y se perciben como un tono mecánico tenue; dos intentos de eliminarlo mediante entrenamiento no funcionaron.
-- La evaluación de calidad subjetiva se realizó con un único oyente (el autor) en pruebas A/B ciegas, lo que limita la generalización de los resultados perceptuales.
-- Riesgo de alucinación no aplica en el sentido de los LLM, pero el modelo puede producir pronunciaciones o prosodia incorrectas en textos fuera de distribución.
-- Licencia Apache 2.0: permite uso comercial, pero se recomienda revisar las condiciones de las voces de Kokoro, que se descargan de su repositorio en el primer uso.
-- Dependencia de la librería `kokoro==0.9.4` y de los pesos y voces de Kokoro, descargados desde su repositorio; no es un modelo autónomo.
-- No se documentan requisitos de VRAM ni comportamiento en GPU; las métricas de velocidad se limitan a CPU (Apple M4).
+- Solo soporta inglés (americano y británico); no hay soporte multilingüe documentado.
+- Defecto audible conocido: en algunas frases, los sonidos sonoros entre 1 y 4 kHz suenan demasiado puros, percibidos como un tono metálico tenue; el autor documenta dos intentos fallidos de eliminarlo mediante entrenamiento.
+- La evaluación subjetiva se limita a un único oyente (el propio autor) sobre 12 pares, por lo que la equivalencia perceptual con Kokoro no está validada de forma independiente.
+- Los benchmarks de calidad (UTMOS, WER con Whisper) se calculan sobre 28 y 240 clips de validación respectivamente, un conjunto pequeño.
+- Depende de las voces y los pesos de Kokoro-82M, que se descargan del repositorio de hexgrad en el primer uso; la licencia Apache 2.0 se aplica al decodificador, pero conviene verificar la del modelo base para uso comercial.
+- No es un modelo de lenguaje: no genera texto, no razona, no soporta tool calling ni agentes.
+- El formato de pesos es safetensors con código Python propio (`nano_edge_tts.py`); no se documentan exportaciones a GGUF, ONNX ni integraciones con vLLM, llama.cpp u Ollama.
+- El repositorio tiene 0,0 GB de tamaño reportado y 407 descargas en el momento de la consulta, lo que indica adopción todavía limitada.
 
 ## Enlaces
 

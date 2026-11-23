@@ -1,0 +1,69 @@
+{
+  "schema": 2,
+  "id": "Hansda/tiny-dictation-en",
+  "slug": "hansda-tiny-dictation-en",
+  "author": "Hansda",
+  "url": "https://huggingface.co/Hansda/tiny-dictation-en",
+  "created_at": "2026-11-23T12:49:33.000Z",
+  "updated_at": "2026-11-23T12:49:41.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "speech-to-text",
+    "offline",
+    "quantized",
+    "onnxruntime",
+    "ctc",
+    "citrinet",
+    "conformer",
+    "automatic-speech-recognition",
+    "en",
+    "dataset:google/fleurs",
+    "dataset:openslr/librispeech_asr",
+    "dataset:speechbrain/LoquaciousSet",
+    "dataset:facebook/voxpopuli",
+    "base_model:OpenVoiceOS/stt_en_citrinet_256_gamma_0_25_onnx",
+    "base_model:finetune:OpenVoiceOS/stt_en_citrinet_256_gamma_0_25_onnx",
+    "license:cc-by-4.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 17913319,
+  "storage_human": "18 MB",
+  "context_length": null,
+  "base_model": "OpenVoiceOS/stt_en_citrinet_256_gamma_0_25_onnx, nvidia/stt_en_conformer_ctc_small",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "FLEURS English (US)",
+      "metric": "WER (%)",
+      "value": 9.974582675001717
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "LibriSpeech test-clean",
+      "metric": "WER (%)",
+      "value": 3.407697965187546
+    }
+  ],
+  "sources": []
+}

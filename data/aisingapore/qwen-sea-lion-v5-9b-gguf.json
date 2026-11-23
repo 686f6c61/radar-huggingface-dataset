@@ -1,0 +1,71 @@
+{
+  "schema": 2,
+  "id": "aisingapore/Qwen-SEA-LION-v5-9B-GGUF",
+  "slug": "aisingapore-qwen-sea-lion-v5-9b-gguf",
+  "author": "aisingapore",
+  "url": "https://huggingface.co/aisingapore/Qwen-SEA-LION-v5-9B-GGUF",
+  "created_at": "2026-11-18T09:15:55.000Z",
+  "updated_at": "2026-11-23T10:57:40.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [
+    "en",
+    "zh",
+    "my",
+    "id",
+    "fil",
+    "ms",
+    "ta",
+    "th",
+    "vi"
+  ],
+  "tags": [
+    "gguf",
+    "image-text-to-text",
+    "en",
+    "zh",
+    "my",
+    "id",
+    "fil",
+    "ms",
+    "ta",
+    "th",
+    "vi",
+    "base_model:aisingapore/Qwen-SEA-LION-v5-9B",
+    "base_model:quantized:aisingapore/Qwen-SEA-LION-v5-9B",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 14,
+  "trending_score": 0,
+  "parameters": 9197093888,
+  "parameters_human": "9.20B",
+  "storage_bytes": 42450967362,
+  "storage_human": "42.5 GB",
+  "context_length": 262144,
+  "base_model": "aisingapore/Qwen-SEA-LION-v5-9B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "The 15 Best Personal Development Podcasts to Listen to in 2025",
+      "url": "https://actionableself.com/self-development-resources-tools/best-personal-development-podcasts/",
+      "snippet": "But with over two million podcasts out there, finding the gems that are truly worth your time can be overwhelming. We’ve listened to …"
+    }
+  ]
+}

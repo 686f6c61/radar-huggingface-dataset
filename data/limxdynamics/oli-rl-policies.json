@@ -5,15 +5,16 @@
   "author": "limxdynamics",
   "url": "https://huggingface.co/limxdynamics/oli-rl-policies",
   "created_at": "2026-11-05T08:58:50.000Z",
-  "updated_at": "2026-11-19T03:31:26.000Z",
+  "updated_at": "2026-11-23T06:55:42.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "robotics",
-  "library": "onnx",
+  "library": "limx-dynamics",
   "languages": [
     "en"
   ],
   "tags": [
+    "limx-dynamics",
     "onnx",
     "robotics",
     "reinforcement-learning",
@@ -24,7 +25,6 @@
     "legged-robots",
     "biped",
     "sim2real",
-    "limx-dynamics",
     "oli",
     "en",
     "zh",

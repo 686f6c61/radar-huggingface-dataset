@@ -1,0 +1,90 @@
+{
+  "schema": 2,
+  "id": "ay2r/sqlforge-3b",
+  "slug": "ay2r-sqlforge-3b",
+  "author": "ay2r",
+  "url": "https://huggingface.co/ay2r/sqlforge-3b",
+  "created_at": "2026-11-23T09:54:14.000Z",
+  "updated_at": "2026-11-23T10:05:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gguf",
+    "qwen2",
+    "text-generation",
+    "text-to-sql",
+    "sql",
+    "sqlite",
+    "qlora",
+    "peft",
+    "spider",
+    "bird",
+    "code",
+    "conversational",
+    "en",
+    "dataset:spider",
+    "dataset:bird-bench",
+    "base_model:Qwen/Qwen2.5-Coder-3B-Instruct",
+    "base_model:quantized:Qwen/Qwen2.5-Coder-3B-Instruct",
+    "license:apache-2.0",
+    "model-index",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3085938688,
+  "parameters_human": "3.09B",
+  "storage_bytes": 11398727756,
+  "storage_human": "11.4 GB",
+  "context_length": 32768,
+  "base_model": "Qwen/Qwen2.5-Coder-3B-Instruct",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "Text-to-SQL",
+      "dataset": "Spider 1.0 dev",
+      "metric": "Execution accuracy (greedy)",
+      "value": 78.5
+    },
+    {
+      "task": "Text-to-SQL",
+      "dataset": "Spider 1.0 dev",
+      "metric": "Execution accuracy (+ column fix + self-correction)",
+      "value": 80.5
+    },
+    {
+      "task": "Text-to-SQL",
+      "dataset": "BIRD dev (500-question subset)",
+      "metric": "Execution accuracy (greedy)",
+      "value": 53.1
+    },
+    {
+      "task": "Text-to-SQL",
+      "dataset": "BIRD dev (500-question subset)",
+      "metric": "Execution accuracy (+ self-correction)",
+      "value": 54.1
+    }
+  ],
+  "sources": []
+}

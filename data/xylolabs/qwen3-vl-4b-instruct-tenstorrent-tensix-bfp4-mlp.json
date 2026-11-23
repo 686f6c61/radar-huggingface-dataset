@@ -5,7 +5,7 @@
   "author": "Xylolabs",
   "url": "https://huggingface.co/Xylolabs/Qwen3-VL-4B-Instruct-Tenstorrent-Tensix-BFP4-MLP",
   "created_at": "2026-11-17T09:00:49.000Z",
-  "updated_at": "2026-11-19T08:36:24.000Z",
+  "updated_at": "2026-11-22T23:37:17.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",

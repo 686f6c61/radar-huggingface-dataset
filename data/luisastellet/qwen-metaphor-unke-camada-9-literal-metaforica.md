@@ -1,104 +1,84 @@
 # luisastellet/qwen-metaphor-unke-camada-9-literal-metaforica
 
 ## Resumen
+El modelo `luisastellet/qwen-metaphor-unke-camada-9-literal-metaforica` es un ajuste fino (fine-tuning) de la familia Qwen3, publicado en Hugging Face por el usuario luisastellet. Con 596.049.920 parametros totales (aproximadamente 0,6 mil millones) y un repositorio de 9,5 GB, se trata de un modelo compacto orientado a generacion de texto y conversacion, etiquetado con la libreria `transformers` y pesos en formato `safetensors`. El nombre sugiere un trabajo experimental centrado en la distincion entre lenguaje literal y metaforico ("camada 9" apunta a una novena iteracion o capa de un experimento seriado).
 
-Este repositorio contiene un modelo de generacion de texto de aproximadamente 596 millones de parametros, publicado por el usuario luisastellet en Hugging Face bajo el identificador `luisastellet/qwen-metaphor-unke-camada-9-literal-metaforica`. Por las etiquetas del repositorio (`qwen3`, `transformers`, `safetensors`, `text-generation`, `conversational`) se trata de un ajuste derivado de la familia Qwen3, y el recuento exacto de parametros (596.049.920) coincide con el de la variante densa Qwen3-0.6B, aunque esta correspondencia no esta confirmada de forma explicita por el autor.
+La relevancia de este modelo es acotada y de caracter experimental: la model card es la plantilla autogenerada de Hugging Face y no contiene informacion sobre datos de entrenamiento, hiperparametros, evaluacion ni procedencia. No obstante, el identificador `qwen3` en las etiquetas y el tamano de parametros permiten situarlo como un derivado pequeno de la familia Qwen3, probablemente pensado para tareas de analisis o generacion de metaforas en castellano o en un contexto multilingue.
 
-El nombre del modelo sugiere un experimento de ajuste fino o de intervencion sobre la novena capa ("camada 9") orientado a distinguir o transformar interpretaciones literales frente a metaforicas, un tipo de trabajo habitual en interpretabilidad y en estudios de representaciones internas en modelos de lenguaje. Se trata, por tanto, de un artefacto de investigacion mas que de un modelo listo para produccion.
-
-La relevancia de este repositorio es limitada y de tipo metodologico: no dispone de model card sustantiva (la existente es la plantilla autogenerada de Hugging Face, con todos los campos marcados como `[More Information Needed]`), cuenta con 0 descargas y 0 "likes" en el momento de la consulta, y no publica licencia, idiomas ni resultados de evaluacion. Cualquier uso en produccion requeriria primero verificar el modelo base, la licencia heredada y el comportamiento real.
+Para un desarrollador o investigador, este modelo debe tratarse como un artefacto de investigacion con documentacion insuficiente: es util como punto de partida para explorar ajustes finos sobre Qwen3 en tareas linguisticas especificas, pero no dispone de garantias de calidad, licencia clara ni resultados reproducibles que permitan recomendarlo para produccion.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | No disponible de forma explicita; etiquetado como `qwen3` (familia transformer denso, decoder-only) |
-| Parametros totales | 596.049.920 (dato real de los safetensors) |
-| Parametros activos | no aplica (no hay indicios de arquitectura MoE) |
+| Arquitectura | transformer (derivado de Qwen3, segun etiqueta `qwen3`; detalles no disponibles) |
+| Parametros totales | 596.049.920 |
+| Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | No se distribuyen cuantizaciones; el repositorio solo contiene safetensors (2,4 GB, consistente con pesos en fp32) |
+| Tipos de cuantizacion | no disponible (pesos publicados en safetensors; no se listan variantes GGUF/AWQ/GPTQ) |
 | Idiomas soportados | no disponible |
 | Licencia | no disponible |
-| Formato de pesos | safetensors (compatible con `transformers`) |
+| Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
+La unica informacion estructural disponible proviene de las etiquetas del repositorio: `transformers`, `safetensors`, `qwen3`, `text-generation` y `conversational`. Esto indica un transformer decoder-only de la familia Qwen3, con aproximadamente 596 millones de parametros, ajustado para generacion de texto conversacional. No se dispone de datos sobre la configuracion exacta de capas, cabeceras de atencion, dimension oculta, funcion de activacion ni sobre el uso de mecanismos como atencion lineal o decodificacion especulativa.
 
-La informacion publicada no describe la arquitectura ni el procedimiento de entrenamiento. La unica evidencia estructural es el etiquetado `qwen3` y el numero de parametros: 596.049.920, una cifra que coincide con el recuento de la variante Qwen3-0.6B, un transformer denso decoder-only. El tamano del repositorio (2,4 GB) es coherente con el almacenamiento de esos pesos en fp32 (596 M x 4 bytes = 2,38 GB), lo que implica que no se han subido variantes en fp16/bf16 ni en formatos cuantizados. No hay informacion sobre el numero de tokens de entrenamiento, la composicion del dataset, el uso de RLHF, DPO u otras tecnicas de alineamiento, ni sobre innovaciones como decodificacion especulativa o atencion lineal.
-
-El nombre del modelo apunta a un ajuste o intervencion sobre la capa 9 con un eje literal-metaforico. Esto es una inferencia a partir del identificador, no un dato confirmado: no se documenta si se trata de un fine-tuning completo, de LoRA fusionado, de un recorte de capas o de una modificacion de activaciones. Sin model card ni paper asociado, la trazabilidad del entrenamiento es nula.
+No hay informacion sobre el volumen de tokens de entrenamiento, la composicion del dataset, el uso de RLHF/DPO/SFT, ni sobre hiperparametros (learning rate, batch size, precision mixta). El nombre del repositorio sugiere un experimento de ajuste fino orientado a la distincion literal/metaforica, posiblemente con un dataset construido por el autor, pero la model card no lo confirma. La referencia `arxiv:1910.09700` presente en las etiquetas corresponde al articulo de Lacoste et al. sobre estimacion de emisiones de carbono, citado en la plantilla generica de Hugging Face, y no a un paper del modelo.
 
 ## Capacidades
-
-- Generacion de texto y uso conversacional: el pipeline declarado es `text-generation` y las etiquetas incluyen `conversational`, por lo que el formato esperado es el de chat multi-turno.
-- Compatibilidad con `transformers` y con `text-generation-inference`: la etiqueta `endpoints_compatible` indica que el autor espera poder servirlo a traves de TGI.
-- Capacidades derivadas del modelo base (razonamiento, codigo, matematicas, tool calling, multilingueismo): no verificadas y no documentadas para este artefacto concreto.
-- Modo "thinking" o razonamiento explicito: no disponible.
-- Vision o audio: no disponible (el pipeline declarado es solo texto).
-- Comportamiento especifico en tareas literales frente a metaforicas: es el eje que sugiere el nombre, pero no hay evaluacion publicada que lo demuestre.
+- Generacion de texto autoregresiva en modo conversacional, segun la etiqueta `conversational`.
+- Ajuste fino orientado (presumiblemente) a tareas de lenguaje literal frente a metaforico, a partir del nombre del repositorio; no verificado en la documentacion.
+- Compatibilidad con `text-generation-inference` y con `endpoints_compatible`, lo que permite desplegarlo tras una API compatible con los endpoints de Hugging Face.
+- Soporte multilingue: no disponible (no se declaran idiomas).
+- Tool calling / function calling: no disponible.
+- Capacidades de agente y razonamiento multi-paso: no disponible.
+- Vision, audio o modo "thinking": no disponible.
 
 ## Casos de uso
-
-- Investigacion en interpretabilidad de representaciones: el modelo puede emplearse como objeto de estudio para analizar como se codifica el lenguaje figurado en una capa concreta, comparando activaciones frente a entradas literales y metaforicas. Es el uso mas plausible dado el nombre del repositorio.
-- Reproduccion de experimentos de "layer intervention": util para replicar o auditar un pipeline que modifica o aisla la novena capa de un modelo Qwen3 pequeno y mide el efecto sobre la salida.
-- Prototipado de bajo coste en local: con menos de 600 M de parametros, sirve para validar tuberias de generacion en un portatil o en CPU sin depender de APIs externas.
-- Generacion de texto controlada en experimentos academicos: util como linea base pequena en estudios comparativos donde el coste computacional es la restriccion principal.
-- Evaluacion de sesgos y de degradacion por fine-tuning: al ser un ajuste pequeno sobre un modelo conocido, permite medir cuanto se desvia el comportamiento respecto al modelo base.
-- Filtrado o clasificacion ligera de texto figurado: si el ajuste funciona como se sugiere, podria usarse como componente de un pipeline que marque usos metaforicos, siempre que se valide empiricamente antes.
-- Docencia: ejemplo practico de modelo ajustado y de como una model card incompleta limita la reproducibilidad.
-
-En ningun caso se recomienda su uso en produccion con usuarios finales sin una evaluacion previa propia, dado que no hay datos de calidad, licencia ni sesgos.
+- Investigacion linguistica sobre metaforas: el modelo puede emplearse como base para experimentos controlados que comparen generaciones literales frente a metaforicas, dado que su nombre y origen apuntan a ese eje; requiere validacion empirica por parte del investigador.
+- Prototipado rapido de chatbots ligeros: con ~0,6 mil millones de parametros cabe en GPU de consumo y permite iterar sobre prompts conversacionales sin coste elevado de inferencia.
+- Generacion de texto asistida en entornos con recursos limitados: al ser un modelo pequeno, puede ejecutarse en estaciones de trabajo modestas o incluso en CPU con cuantizacion, aunque no se publican variantes GGUF.
+- Filtrado y clasificacion de lenguaje figurativo: util como componente en pipelines de analisis de textos literarios, resenas o redes sociales donde interese detectar o reformular metaforas.
+- Base para nuevos ajustes finos: sirve como checkpoint de partida para experimentos de SFT sobre Qwen3 en dominios especificos, especialmente si se dispone de datos etiquetados propios.
+- Docencia y demostraciones de fine-tuning: su tamano compacto y formato safetensors lo hacen adecuado para ilustrar el ciclo completo de publicacion de un modelo en Hugging Face.
+- Evaluacion de robustez conversacional: puede integrarse en suites de pruebas que midan como un modelo pequeno maneja ambiguedad semantica y lenguaje no literal.
 
 ## Benchmarks y rendimiento
-
-No se han publicado resultados de benchmarks en la informacion disponible. El repositorio no incluye seccion de evaluacion cumplimentada (la plantilla aparece con `[More Information Needed]` en todos los campos de resultados) y no hay descargas ni retroalimentacion de la comunidad que permita inferir comportamiento.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
-
-- VRAM estimada para inferencia (calculo a partir de 596 M de parametros):
-  - fp32: unos 2,4 GB solo de pesos, mas memoria para activaciones y cache KV.
-  - fp16/bf16: unos 1,2 GB de pesos; en la practica, menos de 2 GB en total para contextos cortos.
-  - int8: unos 0,6 GB de pesos.
-  - int4: unos 0,3-0,4 GB de pesos.
-- GPU recomendadas: cualquier GPU con 4 GB o mas de VRAM es suficiente (GTX 1650, RTX 3050, RTX 3060, RTX 4060, RTX 4090). Tambien es viable en CPU y en iGPU con memoria compartida. No requiere A100 ni H100 salvo para experimentos de alto throughput en lote.
-- Cabe en GPU de consumo: si, con margen amplio, incluso en las gamas de entrada actuales.
-- Opciones de despliegue:
-  - `transformers` con PyTorch, tal como se distribuye el checkpoint.
-  - Text Generation Inference (TGI), segun la etiqueta `endpoints_compatible`.
-  - vLLM, si la arquitectura base es efectivamente compatible con Qwen3.
-  - llama.cpp u Ollama: requeririan convertir los pesos a GGUF, y esa conversion no se proporciona en el repositorio.
-- Latencia y throughput estimados: no disponible. No hay mediciones publicadas. Como referencia dimensional, un modelo denso de ~600 M de parametros en fp16 sobre una GPU moderna suele generar decenas o cientos de tokens por segundo en decodificacion autorregresiva, pero esta cifra depende de la implementacion, del batch y de la longitud de contexto y no debe tomarse como dato del modelo.
-- Nota: los pesos estan almacenados en fp32 (2,4 GB), por lo que cargarlos directamente en fp32 duplica el uso de memoria respecto a una conversion a fp16.
+- VRAM estimada para inferencia en FP16/BF16: aproximadamente 1,2 GB solo para pesos (596 M parametros × 2 bytes), mas overhead de activaciones y cache KV; en la practica, entre 2 y 4 GB segun longitud de contexto.
+- VRAM estimada en cuantizacion de 8 bits: alrededor de 0,6 GB para pesos; en 4 bits, alrededor de 0,3 GB, mas overhead.
+- GPU recomendadas: cualquier GPU consumer moderna (RTX 3060, RTX 4060, RTX 4090) es sobrada para FP16; tambem funciona en GPUs de datacenter (A100, H100) aunque estan infrautilizadas para este tamano.
+- Cabe en GPU consumer: si, con holgura en tarjetas de 8 GB o mas; incluso tarjetas de 4-6 GB pueden ejecutarlo con cuantizacion.
+- Opciones de despliegue: `transformers` (libreria nativa), `text-generation-inference` (etiqueta presente), y potencialmente llama.cpp/Ollama si se generan conversiones GGUF (no publicadas). vLLM es compatible con arquitecturas Qwen3, pero no se confirma para este checkpoint concreto.
+- Latencia y throughput: no disponibles; por tamano, se espera throughput alto (cientos a miles de tokens por segundo en GPUs modernas con batching), pero no hay mediciones publicadas.
 
 ## Comparativa con modelos similares
 
-La tabla siguiente compara el modelo con alternativas de la misma categoria (modelos densos de menos de 1.000 M de parametros). Los datos de los modelos de referencia provienen de su documentacion publica habitual; los del modelo analizado, de la informacion del repositorio. La licencia del modelo analizado no esta declarada.
+| Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
+|---|---|---|---|---|---|
+| luisastellet/qwen-metaphor-unke-camada-9-literal-metaforica | 596 M | no disponible | no disponible | Hugging Face | Fine-tuning experimental de Qwen3, documentacion minima |
+| Qwen3-0.6B (oficial) | 0,6 B aprox. | no disponible en esta ficha | Apache 2.0 (segun familia Qwen3, a confirmar) | Hugging Face, ampliamente documentado | Base oficial con model card completa y benchmarks publicados |
+| Qwen2.5-0.5B | 0,5 B aprox. | 32 K (segun familia Qwen2.5) | Apache 2.0 (a confirmar) | Hugging Face | Generacion anterior, tambem compacto y conversacional |
+| SmolLM2-360M | 360 M | 8 K aprox. | Apache 2.0 | Hugging Face | Alternativa pequena de Hugging Face, orientada a eficiencia |
 
-| Modelo | Parametros | Contexto | Licencia | Disponibilidad |
-|---|---|---|---|---|
-| luisastellet/qwen-metaphor-unke-camada-9-literal-metaforica | 596 M | no disponible | no disponible | Hugging Face, safetensors, 0 descargas |
-| Qwen3-0.6B (modelo base probable) | 596 M | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | Hugging Face |
-| Qwen2.5-0.5B | ~500 M | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | Hugging Face |
-| SmolLM2-360M | ~360 M | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | Hugging Face |
-| TinyLlama-1.1B | ~1.100 M | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | Hugging Face |
-
-No se dispone de datos de rendimiento comparado (MMLU, HumanEval, GSM8K ni similares) para ninguno de los modelos en el contexto de esta ficha, por lo que no se puede establecer una comparacion cuantitativa.
+La comparativa con modelos oficiales es aproximada: los datos de Qwen3-0.6B, Qwen2.5-0.5B y SmolLM2-360M provienen del conocimiento general de sus familias y deben verificarse en sus model cards respectivas; no se dispone de datos de rendimiento del modelo evaluado para confrontarlos empiricamente.
 
 ## Limitaciones y advertencias
-
-- Model card vacia: todos los campos sustantivos de la plantilla estan marcados como `[More Information Needed]`. No hay informacion sobre datos, entrenamiento, evaluacion ni uso previsto.
-- Licencia no declarada: sin licencia explicita no hay autorizacion clara para uso comercial ni para redistribucion. Verificar la licencia del modelo base (Qwen3) antes de cualquier uso.
-- Modelo base no confirmado: la correspondencia con Qwen3-0.6B es una inferencia basada en el recuento de parametros y en la etiqueta `qwen3`, no una afirmacion del autor.
-- Riesgo de alucinacion: no evaluado. En modelos de este tamano el riesgo es alto en tareas de conocimiento factual y razonamiento complejo.
-- Sesgos: no documentados y no evaluados. Al no conocerse la composicion del dataset de ajuste, no se puede descartar la introduccion de sesgos especificos del corpus utilizado.
-- Contexto e idiomas: no disponibles. No se puede asumir soporte multilingue ni una ventana de contexto concreta sin comprobacion empirica.
-- Ausencia de validacion comunitaria: 0 descargas y 0 "likes" indican que el modelo no ha sido probado por terceros.
-- Fechas incoherentes: los metadatos muestran fecha de creacion y actualizacion en octubre de 2026, posteriores a la fecha habitual de consulta; conviene tratarlos con cautela.
-- Idoneidad para produccion: baja. Es un artefacto de investigacion sin garantias de calidad, estabilidad ni soporte.
-- Reproducibilidad: no hay semilla, hiperparametros, dataset ni script de entrenamiento publicados.
+- Documentacion practicamente inexistente: la model card es la plantilla autogenerada, sin datos de entrenamiento, evaluacion ni uso previsto.
+- Licencia no declarada: no se puede asumir uso comercial permitido; es imprescindible contactar al autor o tratar el modelo como no licenciado para produccion.
+- Idiomas no declarados: no hay garantia de calidad en castellano ni en otros idiomas, pese al posible origen hispanohablante del autor.
+- Riesgo elevado de alucinacion y de comportamiento impredecible por falta de evaluacion publicada y por el ajuste fino experimental.
+- Sesgos desconocidos: al no documentarse el dataset de ajuste, no se pueden identificar sesgos de genero, culturales o politicos.
+- Longitud de contexto no disponible: no se puede planificar su uso en tareas de contexto largo sin medir empiricamente el limite efectivo.
+- Ausencia de variantes cuantizadas publicadas (GGUF, AWQ, GPTQ): limita el despliegue en entornos con herramientas especificas.
+- Nombre del repositorio sugiere un experimento seriado ("camada 9"): puede tratarse de un checkpoint intermedio o de un artefacto de investigacion no destinado a uso general.
+- No se han publicado resultados de benchmarks: cualquier afirmacion de rendimiento por parte de terceros debe verificarse de forma independiente.
 
 ## Enlaces
-
 - Modelo en Hugging Face: https://huggingface.co/luisastellet/qwen-metaphor-unke-camada-9-literal-metaforica
-- Paper referenciado en las etiquetas (Lacoste et al., 2019, sobre estimacion de emisiones, citado en la plantilla de la model card): https://arxiv.org/abs/1910.09700
-- Calculadora de impacto medioambiental citada en la plantilla: https://mlco2.github.io/impact
-- Repositorio, paper, demo y datos de entrenamiento del autor: no disponibles.
+- Referencia citada en las etiquetas (Lacoste et al., 2019, emisiones de carbono): https://arxiv.org/abs/1910.09700
+- Calculadora de impacto medioambiental ML: https://mlco2.github.io/impact
+- Repositorio de la familia Qwen3 (referencia de la arquitectura base): https://huggingface.co/Qwen
+- Documentacion de text-generation-inference: https://github.com/huggingface/text-generation-inference

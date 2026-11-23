@@ -1,0 +1,43 @@
+{
+  "schema": 2,
+  "id": "Faith1453/miryoAI-9b-4bit",
+  "slug": "faith1453-miryoai-9b-4bit",
+  "author": "Faith1453",
+  "url": "https://huggingface.co/Faith1453/miryoAI-9b-4bit",
+  "created_at": "2026-11-23T08:32:32.000Z",
+  "updated_at": "2026-11-23T08:33:46.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "tr",
+    "en"
+  ],
+  "tags": [
+    "tr",
+    "en",
+    "license:gemma",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "context_length": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

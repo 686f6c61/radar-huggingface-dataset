@@ -1,0 +1,43 @@
+{
+  "schema": 2,
+  "id": "1aurent/vit_small_patch16_224.medmae_in1k_mae_ft_CXR",
+  "slug": "1aurent-vit_small_patch16_224-medmae_in1k_mae_ft_cxr",
+  "author": "1aurent",
+  "url": "https://huggingface.co/1aurent/vit_small_patch16_224.medmae_in1k_mae_ft_CXR",
+  "created_at": "2023-11-28T18:05:37.000Z",
+  "updated_at": "2026-11-23T07:52:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "timm",
+  "languages": [],
+  "tags": [
+    "timm",
+    "safetensors",
+    "image-classification",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 35,
+  "trending_score": 0,
+  "parameters": 21671054,
+  "parameters_human": "21.7M",
+  "storage_bytes": 86698056,
+  "storage_human": "87 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

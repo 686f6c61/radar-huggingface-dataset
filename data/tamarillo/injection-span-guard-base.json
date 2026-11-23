@@ -1,0 +1,93 @@
+{
+  "schema": 2,
+  "id": "Tamarillo/injection-span-guard-base",
+  "slug": "tamarillo-injection-span-guard-base",
+  "author": "Tamarillo",
+  "url": "https://huggingface.co/Tamarillo/injection-span-guard-base",
+  "created_at": "2026-11-23T12:36:24.000Z",
+  "updated_at": "2026-11-23T12:37:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "onnx",
+    "safetensors",
+    "modernbert",
+    "token-classification",
+    "prompt-injection",
+    "indirect-prompt-injection",
+    "prompt-localization",
+    "sanitization",
+    "ai-security",
+    "guardrails",
+    "tamarillo",
+    "en",
+    "dataset:hendzh/PromptShield",
+    "dataset:neuralchemy/Prompt-injection-dataset",
+    "dataset:S-Labs/prompt-injection-dataset",
+    "dataset:reshabhs/SPML_Chatbot_Prompt_Injection",
+    "dataset:jackhhao/jailbreak-classification",
+    "dataset:nvidia/Nemotron-RL-Agentic-Indirect-Prompt-Injection-v1",
+    "dataset:fevziegeyurtsevenler/multilingual-prompt-injection",
+    "dataset:mteb/amazon_massive_intent",
+    "base_model:jhu-clsp/mmBERT-base",
+    "base_model:quantized:jhu-clsp/mmBERT-base",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 307532547,
+  "parameters_human": "307.5M",
+  "storage_bytes": 3110757442,
+  "storage_human": "3.1 GB",
+  "context_length": null,
+  "base_model": "jhu-clsp/mmBERT-base",
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tamarillo : conseils de culture et entretien",
+      "url": "https://mieuxjardiner.com/tamarillo-conseils-de-culture-et-entretien/",
+      "snippet": "Sep 3, 2025 · Caractéristiques et origines du tamarillo Pour bien cultiver le tamarillo, il est essentiel de comprendre sa nature et son …"
+    },
+    {
+      "title": "Le tamarillo : un fruit étonnant - Vergers de Gally",
+      "url": "https://www.lesvergersdegally.com/fruit/tamarillo/",
+      "snippet": "Avec seulement 27 calories pour 100 grammes, le tamarillo est un fruit léger qui peut être apprécié sans culpabiliser. Il est riche en …"
+    },
+    {
+      "title": "Tamarillo - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Tamarillo",
+      "snippet": "In Yunnan, China, the Dai people make a tamarillo nanpie, a sauce like dish made with roasted tamarillo, sawtooth coriander, chillies …"
+    },
+    {
+      "title": "Tamarillo : culture et entretien de l'arbre à tomates",
+      "url": "https://www.jardiner-malin.fr/fiche/tamarillo.html",
+      "snippet": "Apr 28, 2012 · Le tamarillo ou arbre à tomates est un petit fruitier offrant de délicieux fruits acidulés. La culture et l'entretien, en terre …"
+    },
+    {
+      "title": "Le Tamarillo ou arbre à tomates - Les Jardins de Mélusine",
+      "url": "https://biodiversitefrance.com/le-tamarillo-arbre-a-tomates/",
+      "snippet": "Le Tamarillo, que l'on nomme aussi Arbre à tomates, est un étonnant petit arbuste qui produit des fruits rouges, au goût acidulé. …"
+    }
+  ]
+}

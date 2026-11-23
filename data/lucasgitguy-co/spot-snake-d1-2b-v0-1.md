@@ -2,98 +2,104 @@
 
 ## Resumen
 
-Spot Snake d1-2B v0.1 es un modelo de decisión derivado de LiquidAI/d1-2B, un modelo de la familia LFM (arquitectura híbrida de Liquid AI) con aproximadamente 1.918 millones de parámetros. Lo desarrolla Lucasgitguy-co y su propósito es muy concreto: seleccionar movimientos en el juego "Spot's Biscuit Snake", un entorno tipo Snake publicado en GitHub. No es un modelo conversacional de propósito general, sino un post-entrenamiento orientado a una tarea de ranking de acciones dentro de un juego.
+Spot Snake d1-2B v0.1 es un modelo de decisión derivado de LiquidAI/d1-2B, ajustado por Lucasgitguy-co para elegir movimientos en el videojuego Spot's Biscuit Snake. El modelo no genera texto libre ni código: recibe el estado de la partida y una lista de movimientos seguros, y devuelve una clasificación sobre cuál de ellos elegir. Se entrenó sobre el dataset Spot Snake Decisions v0.1 para imitar a un profesor heurístico que maximiza el espacio libre disponible en el tablero.
 
-El modelo recibe un estado del juego y una pregunta de elección entre los movimientos que el propio juego marca como seguros, y devuelve el movimiento seleccionado. Aprende de un dataset propio (spot-snake-decisions-v0.1) generado con un profesor heurístico que prioriza mantener el mayor espacio libre en el tablero. El objetivo declarado es imitar a ese profesor, no superarlo ni maximizar puntuación de juego.
+El modelo base es un d1-2B de Liquid AI, con 1.918.181.888 parámetros totales (aproximadamente 1,92 mil millones), arquitectura de tipo `lfm3_vl` (con componentes de visión y lenguaje) y pesos distribuidos en safetensors bf16, GGUF y ONNX. El ajuste se realizó mediante un adaptador de rango 8 en formato propio (no PEFT), posteriormente fusionado en los pesos completos. El repositorio ocupa 11,8 GB e incluye el código de inferencia upstream de Liquid AI sin modificar.
 
-Es relevante como ejemplo de adaptación de un modelo base multimodal (tag lfm3_vl) a un dominio cerrado con un adapter de rango 8 y un pipeline de cuantización a GGUF. La model card reporta una concordancia con el profesor del 99,41% en test frente al 25,32% del modelo base, aunque sin métricas de partida reales (puntuación, win rate o velocidad).
+Su relevancia es acotada: es un ejemplo de post-entrenamiento de un modelo pequeño para una tarea de decisión cerrada dentro de un juego concreto, con métricas de acuerdo con el profesor (99,41 % en test retenido) en lugar de métricas de rendimiento de juego. No se han medido puntuaciones, tasa de victorias ni latencia. La licencia es personalizada (LvW-license-Snake-1.0), lo que limita el uso comercial por herencia de la LFM Open License v1.0 del modelo base.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Híbrida de Liquid AI (familia LFM, tag `lfm3_vl`); detalles internos no disponibles |
-| Parametros totales | 1.918.181.888 (~1,92 B) |
-| Parametros activos | no disponible (no se indica que sea MoE) |
+| Arquitectura | `lfm3_vl` (modelo base LiquidAI/d1-2B; transformer con componentes de visión y lenguaje) |
+| Parámetros totales | 1.918.181.888 (~1,92 mil millones) |
+| Parámetros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | GGUF F16 y Q4_K_M (incluidos en el repo); safetensors en bf16 |
+| Tipos de cuantización | bf16 (pesos completos), GGUF F16, GGUF Q4_K_M, ONNX q4f16 (decoder con gate/up int4 y down int8, bloques de 32) |
 | Idiomas soportados | no disponibles |
-| Licencia | spot-snake-composite: LFM Open License v1.0 (pesos de Liquid AI) + Apache-2.0 (contribuciones nuevas), aplicadas conjuntamente |
-| Formato de pesos | safetensors (bf16, pesos fusionados), adapter propio de rango 8 (formato custom, no PEFT), GGUF (model-f16, model-Q4_K_M, mmproj-f16) |
+| Licencia | LvW-license-Snake-1.0 (LFM Open License v1.0 para el modelo base + Apache-2.0 para las contribuciones nuevas) |
+| Formato de pesos | safetensors (bf16), GGUF (F16, Q4_K_M, bundle), ONNX (q4f16 con fichero de datos externo), adaptador de rango 8 en formato propio |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de LiquidAI/d1-2B (revisión `10e7671d44`) y conserva el código de runtime y el tokenizer originales, que se cargan con `AutoModel.from_pretrained(..., trust_remote_code=True)`. Sobre esa base se entrena un adapter de rango 8 en formato propio (no PEFT) que posteriormente se fusiona para generar los pesos completos en bf16. El repositorio incluye además el proyector de visión sin modificar (`mmproj-f16.gguf`), aunque la model card indica que no ha sido probado.
+El modelo parte de LiquidAI/d1-2B, etiquetado como `lfm3_vl`, que combina un decodificador de lenguaje con un proyector de visión (`mmproj-f16.gguf`, no testeado). El ajuste se realizó mediante un adaptador de rango 8 en un formato personalizado, no compatible con PEFT, que después se fusionó en los pesos completos en bf16. El código de ejecución y el tokenizador son los upstream de Liquid AI, incluidos sin cambios en el repositorio; la carga requiere `trust_remote_code=True`.
 
-El entrenamiento se realiza sobre el dataset spot-snake-decisions-v0.1, en el que el juego ofrece los movimientos seguros y el modelo debe ordenarlos. La supervisión proviene de un profesor heurístico que mantiene el mayor espacio libre posible. Se entrenaron 2 épocas: la concordancia con el profesor pasó del 25,32% del modelo base (1.785 filas de validación) al 98,04% en la primera época y al 99,10% en la segunda. El checkpoint seleccionado alcanza un 99,41% en el conjunto de test reservado (1.708 filas). No se documentan detalles sobre volumen de tokens, composición del dataset ni uso de RLHF o DPO.
+El entrenamiento se hizo sobre el dataset Spot Snake Decisions v0.1, en el que el juego proporciona los movimientos seguros y el modelo debe ordenarlos imitando a un profesor heurístico que conserva el mayor espacio libre. No se documentan el número de tokens, la composición detallada del dataset ni el uso de RLHF o DPO. La innovación técnica destacable es la integración del modelo en el juego mediante una ruta ONNX WebGPU: el fichero `onnx/decoder_q4f16.onnx` es el `decoder_q4f16` de LiquidAI/d1-2B-ONNX (revisión `2fd6148`) con solo el último bloque sustituido por los pesos ajustados, re-cuantizados en el mismo layout (gate y up en int4, down en int8, bloques de 32). El grafo ONNX es el de Liquid AI, sin modificar.
 
 ## Capacidades
 
-- Selección de movimientos en Spot's Biscuit Snake: dado un estado y una pregunta de elección, devuelve uno de los movimientos marcados como seguros por el juego.
-- Ranking de acciones dentro de un conjunto finito y predefinido de opciones.
-- Inferencia vía safetensors con Transformers (>=5.22, <6) y vía GGUF con llama.cpp (revisión `1b6935b` o posterior).
-- Endpoint HTTP propio (`/v1/systemone`) para consultar el modelo con un estado y una pregunta de elección.
-- Compatibilidad declarada con endpoints (tag `endpoints_compatible`).
-- Capacidad multimodal potencial por herencia del modelo base (proyector de visión incluido), aunque no verificada.
-- No se documenta soporte de tool calling, agentes, multi-step reasoning, thinking mode ni capacidades multilingües.
+- Clasificación de movimientos en Spot's Biscuit Snake: recibe el estado y la lista de movimientos seguros y elige uno.
+- Razonamiento de decisión restringido al conjunto de acciones que el juego ya marca como seguras; no genera movimientos nuevos.
+- Soporte de tool calling / function calling: no disponible.
+- Soporte de agentes y razonamiento multi-paso: no disponible.
+- Capacidades multilingües: no disponibles.
+- Capacidades especiales: modo de visión heredado del modelo base (proyector `mmproj-f16.gguf` incluido pero no testeado); no se documenta thinking mode, audio ni otras modalidades.
+- Inferencia en navegador vía ONNX Runtime Web sobre WebGPU (ruta usada por el juego al seleccionar «Model: d1-2B»).
 
 ## Casos de uso
 
-- Automatización de partidas de Spot's Biscuit Snake: el modelo sustituye al jugador humano seleccionando movimientos entre los seguros, manteniendo las comprobaciones de colisión del propio juego como red de seguridad.
-- Evaluación de heurísticas de juego: al imitar a un profesor concreto, sirve para medir cuánto se desvía una política aprendida de una heurística de referencia en un entorno controlado.
-- Investigación en imitación de políticas: caso de estudio de post-entrenamiento de un modelo de ~2 B con un adapter de rango 8 sobre un dataset de decisiones pequeño y específico.
-- Despliegue ligero en local: la variante Q4_K_M permite ejecutar el modelo con llama.cpp en hardware modesto para prototipos de agentes de juego.
-- Generación de datos sintéticos de partidas: usar el modelo como jugador automático para producir trayectorias que alimenten análisis o entrenamientos posteriores.
-- Pruebas de integración de pipelines GGUF: validar que las salidas de las variantes F16 y Q4_K_M coinciden con las de safetensors (la model card reporta 100% de coincidencia en un subconjunto de 32 filas).
+- Integración en Spot's Biscuit Snake como jugador automático: el juego ya ofrece la opción «Model: d1-2B» y ejecuta el ONNX q4f16 en el navegador mediante WebGPU, por lo que el modelo puede desplegarse sin backend.
+- Servidor local de decisión para partidas: `scripts/serve.py` levanta el juego en `http://127.0.0.1:8000` con los pesos safetensors, útil para probar variantes del juego sin depender de la web.
+- Evaluación de heurísticas de juego: al imitar a un profesor concreto, sirve como referencia para comparar políticas alternativas midiendo acuerdo con el profesor sobre el mismo conjunto de estados.
+- Despliegue ligero con llama.cpp: `llama-server -m gguf/model-Q4_K_M.gguf --port 8099` expone el endpoint `/v1/systemone` para consultar decisiones desde otras herramientas o scripts de análisis.
+- Distribución de un único fichero: el bundle GGUF de 1.479 GB agrupa modelo Q4_K_M y proyector de visión, útil para descargas reproducibles con verificación sha256 al desempaquetar.
+- Investigación sobre post-entrenamiento de modelos pequeños: el repositorio incluye `metrics.json`, `training.json` y `reload-check.json`, lo que permite reproducir el ajuste y auditar las comprobaciones de recarga y cuantización.
 
 ## Benchmarks y rendimiento
 
-La model card solo publica concordancia con el profesor (teacher agreement), que mide con qué frecuencia el modelo elige un movimiento aceptado por el profesor. No es puntuación de juego, win rate ni velocidad, y esos valores no se han medido.
+Las métricas publicadas miden acuerdo con el profesor (no puntuación de juego, tasa de victorias ni velocidad):
 
-| Prueba | Concordancia con el profesor |
+| Comprobación | Acuerdo con el profesor |
 |---|---|
-| Modelo base, validación | 25,32% (1.785 filas) |
-| Mejor de 2 épocas, validación | 99,10% (1.785 filas) |
-| Checkpoint seleccionado, test reservado | 99,41% (1.708 filas) |
-| Ficheros recargados, subconjunto de test | 100,00% (32 filas) |
-| model-f16.gguf, mismo movimiento que safetensors | 100,00% (32 filas) |
-| model-Q4_K_M.gguf, mismo movimiento que safetensors | 100,00% (32 filas) |
+| Modelo base, validación | 25,32 % (1.785 filas) |
+| Mejor de 2 épocas, validación | 99,10 % (1.785 filas) |
+| Checkpoint seleccionado, test retenido | 99,41 % (1.708 filas) |
+| Ficheros guardados recargados, subconjunto de test | 100,00 % (32 filas) |
+| `model-f16.gguf`, mismo movimiento que safetensors | 100,00 % (32 filas) |
+| `model-Q4_K_M.gguf`, mismo movimiento que safetensors | 100,00 % (32 filas) |
+| ONNX q4f16 (ONNX Runtime CPU, código del repo), test | 98,95 % (1.708 filas) |
 
-No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, etc.) en la información disponible.
+No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u otros) en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible de forma oficial. Con ~1,92 B parámetros, una estimación orientativa sería de ~4 GB en bf16/F16 y de ~1,5-2 GB en Q4_K_M, sin contar overhead de runtime.
-- GPU recomendadas: no especificadas por el autor. Por tamaño, el modelo debería caber en GPUs de consumo con suficiente VRAM (por ejemplo, RTX 3060 12 GB o superiores) en cuantización Q4_K_M.
-- Cabe en GPU de consumo: previsiblemente sí en cuantización Q4_K_M, aunque no hay confirmación oficial.
-- Opciones de despliegue: Transformers (>=5.22, <6) con `trust_remote_code=True` y llama.cpp (`llama-server`) con los GGUF incluidos; el repo aporta `scripts/serve.py` para servir el juego en local.
-- Latencia y throughput: no disponibles.
+- VRAM estimada: no disponible de forma explícita. Como referencia por tamaño de pesos: bf16 completo requiere en torno a 3,8 GB solo para pesos; GGUF Q4_K_M y ONNX q4f16 reducen el peso a aproximadamente 1,5 GB.
+- GPU recomendadas: no disponibles. El modelo base d1-2B es de tamaño reducido y el despliegue documentado prioriza CPU (ONNX Runtime CPU) y llama.cpp.
+- Compatibilidad con GPU de consumo: no confirmada en la información disponible; por tamaño, el formato Q4_K_M y el ONNX q4f16 son compatibles con GPUs de consumo típicas, pero el autor no lo verifica.
+- Opciones de despliegue: `scripts/serve.py` con safetensors (requiere `transformers>=5.22,<6`, torch y safetensors), `llama-server` de llama.cpp (revisión `1b6935b` o posterior), ONNX Runtime Web sobre WebGPU en navegador.
+- Latencia y throughput: no disponibles; el autor indica explícitamente que la velocidad no se ha medido.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
+| Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Spot Snake d1-2B v0.1 | ~1,92 B | no disponible | Decisión en juego (ranking de movimientos) | LFM Open License v1.0 + Apache-2.0 | Hugging Face, safetensors y GGUF |
-| LiquidAI/d1-2B | ~1,92 B | no disponible | Modelo base multimodal de propósito general | LFM Open License v1.0 | Hugging Face |
-| Alternativas de política de juego de tamaño similar | no disponible | no disponible | no disponible | no disponible | no disponible |
+| Spot Snake d1-2B v0.1 | ~1,92 mil millones | no disponible | Decisión en Spot's Biscuit Snake | LvW-license-Snake-1.0 | Hugging Face (safetensors, GGUF, ONNX) |
+| LiquidAI/d1-2B (base) | ~1,92 mil millones | no disponible | Modelo multimodal de propósito general | LFM Open License v1.0 | Hugging Face |
+| LiquidAI/d1-2B-ONNX | ~1,92 mil millones | no disponible | Decodificador ONNX del base | LFM Open License v1.0 | Hugging Face |
 
-No se dispone de información sobre otros modelos comparables de decisión en juegos con este tamaño y licencia en la documentación proporcionada.
+No se dispone de datos de rendimiento comparables entre estos modelos en la información proporcionada; las métricas de Spot Snake d1-2B miden acuerdo con un profesor heurístico y no son trasladables a los modelos base.
 
 ## Limitaciones y advertencias
 
-- Solo ordena movimientos que el juego ya marca como seguros; es imprescindible mantener las comprobaciones de colisión del propio juego.
-- El profesor es una heurística, no un jugador óptimo; igualarlo es el objetivo declarado, no superar el rendimiento humano ni maximizar puntuación.
+- Solo ordena los movimientos que el juego ya marca como seguros; es imprescindible mantener las comprobaciones de colisión del juego.
+- El profesor es una heurística, no un jugador óptimo; igualarlo es el objetivo declarado, no superar el rendimiento humano.
 - Las puntuaciones de confianza no están calibradas tras el entrenamiento.
-- No se han medido métricas de juego reales (puntuación, win rate, velocidad).
-- El proyector de visión incluido no ha sido probado; las capacidades multimodales no están verificadas.
-- La licencia es compuesta (LFM Open License v1.0 más Apache-2.0); es necesario revisar `LICENSE`, `NOTICE` y `licenses/` antes de cualquier uso comercial.
-- El adapter se distribuye en un formato propio, no PEFT, lo que limita su reutilización con herramientas estándar.
-- El modelo requiere `trust_remote_code=True` y ejecuta código de runtime incluido en el repositorio, lo que implica un riesgo de seguridad a evaluar.
-- No se documentan idiomas soportados ni sesgos conocidos; al ser un modelo de dominio cerrado, su uso fuera de Spot's Biscuit Snake no está validado.
+- No se han medido puntuación de juego, tasa de victorias ni velocidad; el acuerdo con el profesor no equivale a rendimiento en partida.
+- El proyector de visión (`mmproj-f16.gguf`) se incluye sin testear; las capacidades de visión no están verificadas en este ajuste.
+- Sesgos conocidos: no disponibles.
+- Riesgo de alucinación: no evaluado; el modelo está restringido a clasificar entre movimientos seguros, lo que reduce el espacio de salida.
+- Licencia: LvW-license-Snake-1.0 aplica la LFM Open License v1.0 al modelo en su conjunto, por lo que persiste el límite de uso comercial del modelo base; las contribuciones nuevas van bajo Apache-2.0. No es posible relicenciar como MIT o Apache-2.0 puro.
+- El bundle GGUF no puede ejecutarse directamente en llama.cpp; requiere desempaquetado previo con `gguf_bundle.py`.
+- El adaptador de rango 8 está en formato propio, no PEFT, lo que complica su reutilización con herramientas estándar.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/Lucasgitguy-co/spot-snake-d1-2B-v0.1
-- Dataset de decisiones: https://huggingface.co/datasets/Lucasgitguy-co/spot-snake-decisions-v0.1
+- Dataset: https://huggingface.co/datasets/Lucasgitguy-co/spot-snake-decisions-v0.1
 - Modelo base: https://huggingface.co/LiquidAI/d1-2B
+- Modelo base ONNX: https://huggingface.co/LiquidAI/d1-2B-ONNX
 - Juego Spot's Biscuit Snake: https://github.com/Gitguy268/spot-snake
+- Colección Spot Snake models: https://huggingface.co/collections/Lucasgitguy-co/spot-snake-models-6aec255c05f37ecf15f1fe33
+- Informe técnico (paper): docs/paper.md y docs/paper.pdf dentro del repositorio del modelo
+- ONNX Runtime Web: https://onnxruntime.ai/docs/tutorials/web/

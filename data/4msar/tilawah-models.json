@@ -1,0 +1,51 @@
+{
+  "schema": 2,
+  "id": "4msar/tilawah-models",
+  "slug": "4msar-tilawah-models",
+  "author": "4msar",
+  "url": "https://huggingface.co/4msar/tilawah-models",
+  "created_at": "2026-11-23T10:45:28.000Z",
+  "updated_at": "2026-11-23T10:50:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "onnx",
+  "languages": [
+    "ar"
+  ],
+  "tags": [
+    "onnx",
+    "quran",
+    "tajweed",
+    "whisper",
+    "transformers.js",
+    "automatic-speech-recognition",
+    "ar",
+    "base_model:Hisnlabs/tajweed-v2",
+    "base_model:quantized:Hisnlabs/tajweed-v2",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 208179316,
+  "storage_human": "208 MB",
+  "context_length": null,
+  "base_model": "Hisnlabs/tajweed-v2, tarteel-ai/whisper-base-ar-quran",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

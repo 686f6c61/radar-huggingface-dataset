@@ -16,8 +16,6 @@
     "LunarLander-v3",
     "deep-reinforcement-learning",
     "reinforcement-learning",
-    "base_model:tsilva/Level1-1_stable-baselines3-ppo_7d9b9131",
-    "base_model:finetune:tsilva/Level1-1_stable-baselines3-ppo_7d9b9131",
     "model-index",
     "region:us"
   ],

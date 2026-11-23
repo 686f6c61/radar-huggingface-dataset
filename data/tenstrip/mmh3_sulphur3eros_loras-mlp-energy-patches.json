@@ -5,7 +5,7 @@
   "author": "TenStrip",
   "url": "https://huggingface.co/TenStrip/MMH3_Sulphur3Eros_Loras-MLP-energy-patches",
   "created_at": "2026-11-15T22:08:35.000Z",
-  "updated_at": "2026-11-18T23:21:16.000Z",
+  "updated_at": "2026-11-22T20:30:15.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-to-video",
@@ -18,7 +18,7 @@
     "base_model:finetune:Comfy-Org/MiniMax-H3-Image",
     "region:us"
   ],
-  "likes": 27,
+  "likes": 35,
   "downloads_30d": 0,
   "trending_score": 0,
   "parameters": null,

@@ -1,0 +1,49 @@
+{
+  "schema": 2,
+  "id": "ryusuke8318/Qwen3.5-0.8B-JRAG-Reader-r9",
+  "slug": "ryusuke8318-qwen3-5-0-8b-jrag-reader-r9",
+  "author": "ryusuke8318",
+  "url": "https://huggingface.co/ryusuke8318/Qwen3.5-0.8B-JRAG-Reader-r9",
+  "created_at": "2026-11-20T13:26:11.000Z",
+  "updated_at": "2026-11-20T13:26:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "ja"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "text-generation",
+    "conversational",
+    "ja",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:finetune:Qwen/Qwen3.5-0.8B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 2,
+  "trending_score": 0,
+  "parameters": 873438784,
+  "parameters_human": "873.4M",
+  "storage_bytes": 1759750614,
+  "storage_human": "1.8 GB",
+  "context_length": null,
+  "base_model": "Qwen/Qwen3.5-0.8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

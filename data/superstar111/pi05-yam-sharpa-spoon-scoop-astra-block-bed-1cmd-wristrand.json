@@ -5,7 +5,7 @@
   "author": "Superstar111",
   "url": "https://huggingface.co/Superstar111/pi05-yam-sharpa-spoon-scoop-astra-block-bed-1cmd-wristrand",
   "created_at": "2026-11-22T12:44:18.000Z",
-  "updated_at": "2026-11-22T12:47:54.000Z",
+  "updated_at": "2026-11-22T19:40:29.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "robotics",
@@ -34,8 +34,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "Superstar111/b3_v1",
+  "renamed_at": "2026-11-23T05:40:32.035Z",
   "benchmarks": [],
   "sources": [
     {

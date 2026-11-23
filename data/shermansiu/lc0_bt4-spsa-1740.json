@@ -1,0 +1,43 @@
+{
+  "schema": 2,
+  "id": "shermansiu/lc0_BT4-spsa-1740",
+  "slug": "shermansiu-lc0_bt4-spsa-1740",
+  "author": "shermansiu",
+  "url": "https://huggingface.co/shermansiu/lc0_BT4-spsa-1740",
+  "created_at": "2026-01-24T01:46:27.000Z",
+  "updated_at": "2026-11-23T08:59:01.000Z",
+  "license": "gpl-3.0-or-later",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "lc0",
+    "arxiv:2409.12272",
+    "license:gpl-3.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 10,
+  "trending_score": 0,
+  "parameters": 205983980,
+  "parameters_human": "206.0M",
+  "storage_bytes": 1206636700,
+  "storage_human": "1.2 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

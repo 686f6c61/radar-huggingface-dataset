@@ -1,0 +1,87 @@
+{
+  "schema": 2,
+  "id": "OpenMed/Inkling2-Mini-BiomedicalSections-v1",
+  "slug": "openmed-inkling2-mini-biomedicalsections-v1",
+  "author": "OpenMed",
+  "url": "https://huggingface.co/OpenMed/Inkling2-Mini-BiomedicalSections-v1",
+  "created_at": "2026-11-23T07:32:32.000Z",
+  "updated_at": "2026-11-23T10:15:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "inkling2_loop",
+    "image-text-to-text",
+    "medical",
+    "biomedical",
+    "pubmed",
+    "abstracts",
+    "rhetorical-roles",
+    "text-classification",
+    "inkling",
+    "openmed",
+    "en",
+    "arxiv:2508.01630",
+    "base_model:thinkingmachines/Inkling-2-Mini",
+    "base_model:quantized:thinkingmachines/Inkling-2-Mini",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "8-bit",
+    "modelopt",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26388646440,
+  "parameters_human": "26.39B",
+  "storage_bytes": 19555584340,
+  "storage_human": "19.6 GB",
+  "context_length": null,
+  "base_model": "thinkingmachines/Inkling-2-Mini",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "Biomedical abstract sentence role",
+      "dataset": "Sentences from structured biomedical abstracts (300 sentences, 181 articles, not in training)",
+      "metric": "Macro F1 (five roles)",
+      "value": 78.4
+    },
+    {
+      "task": "Biomedical abstract sentence role",
+      "dataset": "Sentences from structured biomedical abstracts (300 sentences, 181 articles, not in training)",
+      "metric": "Accuracy",
+      "value": 78.67
+    },
+    {
+      "task": "Biomedical abstract sentence role",
+      "dataset": "Sentences from structured biomedical abstracts (300 sentences, 181 articles, not in training)",
+      "metric": "F1 methods",
+      "value": 88.19
+    },
+    {
+      "task": "Biomedical abstract sentence role",
+      "dataset": "Sentences from structured biomedical abstracts (300 sentences, 181 articles, not in training)",
+      "metric": "F1 results",
+      "value": 84.38
+    }
+  ],
+  "sources": []
+}

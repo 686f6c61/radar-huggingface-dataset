@@ -1,0 +1,50 @@
+{
+  "schema": 2,
+  "id": "zhengyu1231/ArtiMuse",
+  "slug": "zhengyu1231-artimuse",
+  "author": "zhengyu1231",
+  "url": "https://huggingface.co/zhengyu1231/ArtiMuse",
+  "created_at": "2026-11-23T06:57:15.000Z",
+  "updated_at": "2026-11-23T06:57:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "internvl_chat",
+    "custom_code",
+    "en",
+    "arxiv:2507.14533",
+    "arxiv:2512.21675",
+    "base_model:OpenGVLab/InternVL3-8B",
+    "base_model:finetune:OpenGVLab/InternVL3-8B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7944373760,
+  "parameters_human": "7.94B",
+  "storage_bytes": 15888831920,
+  "storage_human": "15.9 GB",
+  "context_length": null,
+  "base_model": "OpenGVLab/InternVL3-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

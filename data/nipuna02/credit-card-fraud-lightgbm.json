@@ -1,0 +1,69 @@
+{
+  "schema": 2,
+  "id": "nipuna02/credit-card-fraud-lightgbm",
+  "slug": "nipuna02-credit-card-fraud-lightgbm",
+  "author": "nipuna02",
+  "url": "https://huggingface.co/nipuna02/credit-card-fraud-lightgbm",
+  "created_at": "2026-11-23T05:15:18.000Z",
+  "updated_at": "2026-11-23T05:15:21.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "tabular-classification",
+  "library": "lightgbm",
+  "languages": [],
+  "tags": [
+    "lightgbm",
+    "tabular-classification",
+    "fraud-detection",
+    "imbalanced-learning",
+    "dataset:openml/creditcard",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "context_length": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "What retiring a carbon credit means and why it matters",
+      "url": "https://wpay.sg/carbon-credit-tokens/what-retiring-a-carbon-credit-means-and-why-it-matters/",
+      "snippet": "Retiring a carbon credit means permanently removing it from circulation so that it can never be sold or traded again, and its …Read more"
+    },
+    {
+      "title": "Tokenized carbon credits in voluntary carbon markets: the ... - Frontiers",
+      "url": "https://oadoi.org/10.3389/fbloc.2024.1474540",
+      "snippet": "Oct 23, 2024 · By leveraging blockchain technology, KlimaDAO empowers the creation of pools that combine different carbon credit …Read more"
+    },
+    {
+      "title": "Northern Trust Revolutionizes Carbon Credit Market with Blockchain ...",
+      "url": "https://carboncredits.com/northern-trust-revolutionizes-carbon-credit-market-with-blockchain-powered-platform/",
+      "snippet": "Jan 31, 2025 · The Northern Trust Carbon Ecosystem aligns with global sustainability goals by making carbon credit trading more …Read more"
+    },
+    {
+      "title": "The intersection of blockchain technology and carbon markets",
+      "url": "https://www.millerthomson.com/en/insights/esg-and-carbon-finance/intersection-blockchain-technology-carbon-markets/",
+      "snippet": "Blockchain’s distributed ledger technology enables secure and transparent tracking of carbon credits from creation to retirement. …Read more"
+    },
+    {
+      "title": "Blockchain Carbon Credits: How Digital Tokens Are Transforming ...",
+      "url": "https://midlandsinbusiness.com/blockchain-carbon-credits-how-digital-tokens-are-transforming-environmental-accountability",
+      "snippet": "Dec 16, 2025 · Blockchain carbon credits turn environmental claims into verifiable digital assets. Learn how they prevent fraud, …Read more"
+    }
+  ]
+}

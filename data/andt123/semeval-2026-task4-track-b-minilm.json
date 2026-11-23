@@ -1,0 +1,54 @@
+{
+  "schema": 2,
+  "id": "andt123/semeval-2026-task4-track-b-minilm",
+  "slug": "andt123-semeval-2026-task4-track-b-minilm",
+  "author": "andt123",
+  "url": "https://huggingface.co/andt123/semeval-2026-task4-track-b-minilm",
+  "created_at": "2026-11-23T09:31:02.000Z",
+  "updated_at": "2026-11-23T09:38:19.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "feature-extraction",
+    "semeval-2026",
+    "narrative-similarity",
+    "minilm",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 22713216,
+  "parameters_human": "22.7M",
+  "storage_bytes": 90864192,
+  "storage_human": "91 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Day Hiking Essentials Checklist: Everything to Pack",
+      "url": "https://hikingbackpackpro.com/day-hiking-essentials-checklist/",
+      "snippet": "May 12, 2026 · The complete day hiking essentials checklist: the ten essentials plus clothing, food, water and safety gear — a pack …"
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "schema": 2,
+  "id": "Atotti/haru-4b-asr-streaming-ja",
+  "slug": "atotti-haru-4b-asr-streaming-ja",
+  "author": "Atotti",
+  "url": "https://huggingface.co/Atotti/haru-4b-asr-streaming-ja",
+  "created_at": "2026-11-23T01:07:40.000Z",
+  "updated_at": "2026-11-23T01:37:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [
+    "ja"
+  ],
+  "tags": [
+    "safetensors",
+    "haru",
+    "streaming-asr",
+    "japanese",
+    "full-duplex",
+    "automatic-speech-recognition",
+    "ja",
+    "base_model:higurashi-ai/Haru-4B",
+    "base_model:finetune:higurashi-ai/Haru-4B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5270000897,
+  "parameters_human": "5.27B",
+  "storage_bytes": 10560809025,
+  "storage_human": "10.6 GB",
+  "context_length": null,
+  "base_model": "higurashi-ai/Haru-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -2,131 +2,113 @@
 
 ## Resumen
 
-phonon-2-coreml es la compilación en Core ML de FermionResearch/Phonon-2, un modelo de reconocimiento automático de habla (ASR) en inglés desarrollado por Fermion Research. Phonon-2 es a su vez un reentrenamiento con conciencia de cuantización (quantization-aware re-training) de nvidia/parakeet-tdt-0.6b-v3, en el que cada peso del encoder toma uno de cinco valores aprendidos por fila de salida. FluidInference publica aquí el artefacto listo para ejecutarse en Apple Silicon a través de su SDK FluidAudio, con la inferencia delegada al Neural Engine (ANE).
+Phonon-2-coreml es la conversión a Core ML de Phonon-2, un modelo de reconocimiento automático del habla (ASR) en inglés desarrollado por Fermion Research como reentrenamiento con conciencia de cuantización (*quantization-aware training*) de `nvidia/parakeet-tdt-0.6b-v3`. La compilación Core ML la publica FluidInference y está pensada para ejecutarse de forma nativa en Apple Silicon (Neural Engine y GPU) a través de la librería FluidAudio. El modelo conserva la arquitectura TDT (Token-and-Duration Transducer) del original, con tokenizador, ventana de 15 segundos y contrato de decodificación idénticos a los de la versión v3.
 
-El modelo resuelve transcripción de voz totalmente local, sin conexión y de baja latencia en dispositivos Apple. Mantiene el mismo tokenizador, la misma ventana de 15 segundos y el mismo contrato `Decoder` / `JointDecisionv3` que parakeet-tdt-0.6b-v3-coreml, por lo que es intercambiable dentro del SDK mediante `AsrModelVersion.phonon2`. La arquitectura es la de un encoder tipo Conformer (Parakeet) con decodificador TDT (token-and-duration transducer), con aproximadamente 600 millones de parámetros, y el repositorio ocupa 1,5 GB al incluir cinco variantes de encoder.
+La innovación principal reside en la compresión extrema del encoder: cada fila de pesos del encoder toma uno de cinco valores aprendidos, materializados como paletas fp16 (`constexpr_lut_to_dense`) o como máscara de dispersión más paleta sobre los pesos no nulos (`constexpr_lut_to_sparse`). Esto reduce el encoder a entre 176 MB y 470 MB según la variante, sin añadir ruido de recuantización: las cinco variantes producen transcripciones idénticas.
 
-La relevancia actual está en el compromiso entre tamano y velocidad: la variante por defecto ocupa 321 MB, procesa una ventana de 15 s en 18,6 ms en un M5 Pro y alcanza un RTFx de 159× sobre LibriSpeech test-clean con el encoder en el ANE, superando en velocidad al propio parakeet-tdt-0.6b-v3 (149–152×) a costa de 0,20–0,50 puntos de WER. Está publicado bajo licencia CC-BY-4.0 y solo soporta inglés.
+Es relevante ahora porque demuestra que un encoder ASR de 0,6 mil millones de parámetros puede ejecutarse en el Neural Engine de un Apple M5 Pro a 193× en tiempo real sobre LibriSpeech test-clean, con un WER del 2,47 %, a cambio de una penalización de precisión moderada frente al Parakeet v3 original (2,27 %). El modelo está disponible bajo licencia CC-BY-4.0 y solo soporta inglés.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Encoder tipo Conformer (Parakeet) + decodificador TDT (token-and-duration transducer); red de predicción RNNT y joint de un solo paso |
-| Parametros totales | ~600 M (heredados de nvidia/parakeet-tdt-0.6b-v3) |
-| Parametros activos | no aplica (modelo denso, no es MoE) |
-| Longitud de contexto | 15 s de audio por ventana; el audio largo se procesa concatenando ventanas (sin limite de contexto textual) |
-| Tipos de cuantizacion | Paletas aprendidas de 6, 4 y 2 bits por fila o por grupo de filas; variantes densas (`constexpr_lut_to_dense`) y sparse (`constexpr_lut_to_sparse` + `constexpr_sparse_to_dense`); decoder y joint reexportados desde tablas int6 |
-| Idiomas soportados | en (solo inglés) |
-| Licencia | cc-by-4.0 |
-| Formato de pesos | Core ML (`.mlmodelc`); paletas en fp16; vocabulario en `parakeet_vocab.json` |
+| Arquitectura | TDT (Token-and-Duration Transducer), encoder Transformer + decoder RNN-T + joint |
+| Parametros totales | 0,6 mil millones (heredados de parakeet-tdt-0.6b-v3) |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | Ventana de audio de 15 s (variantes de 5,04 s y 10,16 s en el encoder multifunción) |
+| Tipos de cuantizacion | Paletas de 6 bits por 8 filas (dispersa y densa), 4 bits por 4 filas, 2 bits por fila, 3 bits por fila; decoder y joint en fp16 desde tablas int6 |
+| Idiomas soportados | Inglés (`en`) |
+| Licencia | CC-BY-4.0 |
+| Formato de pesos | Core ML (`.mlmodelc`), decodificador y joint fp16 |
 
 ## Arquitectura y entrenamiento
 
-El modelo es una compilación Core ML, no un entrenamiento nuevo: los pesos del encoder proceden del checkpoint Phonon-2 de Fermion Research y se exportan como paletas fp16 con `constexpr_lut_to_dense` (iOS 18 / macOS 15) o como máscara de esparsidad más paleta sobre los pesos no nulos con `constexpr_lut_to_sparse` + `constexpr_sparse_to_dense`. Según la model card, cada encoder contiene los pesos exactos de cinco valores del checkpoint, sin ruido de recuantización anadido, y las cinco variantes producen transcripciones idénticas. El decoder y el joint se reexportan desde las tablas int6 del checkpoint, mientras que el preprocesador y el vocabulario son los mismos que los de parakeet-tdt-0.6b-v3. El encoder de Phonon-2 se deriva de un reentrenamiento con conciencia de cuantización de nvidia/parakeet-tdt-0.6b-v3, con el mismo tokenizador y contrato de decoder que la versión v3.
+El modelo es una compilación Core ML del checkpoint Phonon-2 de Fermion Research, que a su vez es un reentrenamiento con conciencia de cuantización de `nvidia/parakeet-tdt-0.6b-v3`. La arquitectura subyacente es un transductor TDT con encoder Transformer, red de predicción RNN-T (`Decoder.mlmodelc`) y un módulo conjunto de un solo paso con top-64 (`JointDecisionv3.mlmodelc`). El preprocesador y el vocabulario son los de la versión v3, lo que garantiza compatibilidad de tokenizador y de contrato de decodificación.
 
-La decisión de diseno clave está en el coste de las paletas en el Neural Engine: crece con el número de paletas, no con su ancho de bits. Por eso 8 filas por paleta (`Encoder.mlmodelc`, 321 MB) es más rápido que el propio encoder de v3, mientras que las paletas por fila son unas 3× más lentas. Además, el GPU materializa los pesos sparse en cada carga (~150 s de CPU, sin caché), mientras que el ANE los compila una vez (~1 min) y los cachea. La fidelidad de conversión se verificó sobre los primeros 100 archivos de test-clean: las transcripciones Core ML difieren de una decodificación NeMo fp32 de contexto completo del mismo checkpoint en un 0,34 % de WER (1,83 % frente a 1,79 %).
+La compilación Core ML no recuantiza: exporta los pesos exactos de cinco valores del checkpoint como paletas fp16 o como máscara de dispersión más paleta sobre los no nulos. El encoder es un modelo multifunción con tres programas (`enc_5040ms`, `enc_10160ms`, `enc_15000ms`) que comparten un único blob de pesos de 341 MB. Los tres producen el mismo encoder enmascarado y transcripciones idénticas; la elección de ventana solo afecta a la latencia. No se dispone de información sobre el volumen de tokens de entrenamiento, la composición del dataset ni el uso de RLHF/DPO en el material proporcionado.
 
 ## Capacidades
 
-- Transcripción de voz a texto en inglés (`pipeline_tag: automatic-speech-recognition`), con salida de transcripción completa por archivo de audio.
-- Decodificación TDT (token-and-duration transducer) con joint de un solo paso y `top-64`, y red de predicción RNNT en fp16.
-- Procesamiento por ventanas de 15 s, apto para audio largo mediante concatenación de ventanas (probado con un archivo de 3600 s).
-- Ejecución totalmente local y sin conexión, con inferencia en el Apple Neural Engine, GPU o CPU.
-- No soporta tool calling, function calling ni razonamiento multi-paso: es un modelo exclusivamente de reconocimiento de habla, no generativo.
-- Capacidades multilingües: no. Solo inglés (v3 cubre 25 idiomas; Phonon-2 no).
-- Capacidades especiales: no se documentan modos de pensamiento, visión ni audio más allá de la propia transcripción.
+- Reconocimiento automático del habla en inglés con salida de transcripción y marcas temporales a nivel de token.
+- Procesamiento por ventanas de 5,04 s, 10,16 s y 15 s mediante un encoder multifunción que selecciona la ventana más pequeña que contiene el audio.
+- Ejecución en Neural Engine (ANE) y GPU de Apple Silicon, con compilación en caché del ANE (~55 s por función la primera vez).
+- Decodificación TDT con módulo conjunto de un solo paso y top-64, heredada de Parakeet v3.
+- Compatibilidad con la API `AsrManager` de FluidAudio (`AsrModelVersion.phonon2`) y con la CLI `fluidaudiocli`.
+- No soporta tool calling, agentes, visión, audio de entrada más allá de la transcripción ni capacidades multilingües.
 
 ## Casos de uso
 
-- Transcripción local en aplicaciones iOS y macOS: el SDK FluidAudio carga `Encoder.mlmodelc` desde el Neural Engine (`AsrModelVersion.phonon2`) y permite transcribir un archivo con unas pocas líneas de Swift, sin enviar audio a servidores externos.
-- Dictado y notas de voz en el dispositivo: con 18,6 ms por ventana de 15 s, el modelo puede alimentar interfaces de dictado con latencia imperceptible y sin coste de red.
-- Actas y resúmenes de reuniones: procesa audio largo por concatenación de ventanas; en un archivo de 60 minutos (Earnings-22) tarda 7,5 s con RTFx 478×, lo que permite transcribir reuniones completas en segundos antes de pasarlas a un sistema de resumen.
-- Subtitulado y accesibilidad en tiempo real: al ejecutarse en el ANE y no depender de CUDA ni de servidores, encaja en apps de subtitulado en vivo para usuarios con discapacidad auditiva.
-- Indexado y búsqueda de archivos de audio: transcripción masiva de podcasts, grabaciones de llamadas o archivos históricos para generar índices de texto buscables, aprovechando el throughput alto y el bajo consumo del ANE.
-- Procesamiento en segundo plano en iOS: FluidAudio senala el Neural Engine como la única opción para trabajo en segundo plano en iOS, por lo que este encoder es adecuado para tareas diferidas de transcripción dentro de una app.
-- Analítica de contact center: transcripción de llamadas conversacionales en local; conviene tener en cuenta que en audio conversacional largo el WER sube al 17,2 %, por lo que es más adecuado para búsqueda y clasificación gruesa que para transcripción literal de alta fidelidad.
-- Despliegue en dispositivos con almacenamiento limitado: las variantes `Encoder_sparse-g4` (246 MB) y `Encoder_sparse-g1` (176 MB) permiten reducir el peso del modelo en disco a costa de throughput (140× y ~70× de RTFx respectivamente).
+- Transcripción en tiempo real en aplicaciones iOS y macOS: el encoder multifunción permite procesar clips cortos en ~6 ms (ventana de 5 s) en lugar de pagar el coste de una pasada de 15 s, lo que lo hace adecuado para dictado y subtitulado en vivo.
+- Procesamiento por lotes de archivos largos: las grabaciones de una hora se segmentan en pausas sin solapamiento; en un M5 Pro, una hora de Earnings-22 se transcribe en 5,55 s (649×).
+- Subtitulado de reuniones y notas de voz: la ventana de 15 s y el WER del 2,47 % en LibriSpeech test-clean permiten generar transcripciones de calidad para actas y resúmenes posteriores.
+- Transcripción local con privacidad: al ejecutarse íntegramente en el dispositivo mediante Core ML, los datos de audio no salen del equipo, lo que encaja en entornos sanitarios, legales o corporativos con requisitos de confidencialidad.
+- Indexación y búsqueda de archivos de audio: la salida con marcas temporales permite alinear transcripción y audio para búsqueda por palabra clave en archivos de podcasts o grabaciones de clase.
+- Integración en pipelines de accesibilidad: la ejecución en segundo plano en iOS mediante el Neural Engine permite generar subtítulos para personas con discapacidad auditiva sin depender de la nube.
+- Evaluación comparativa de ASR en Apple Silicon: la CLI `asr-benchmark` con `--model-version phonon2` permite medir WER y RTFx sobre LibriSpeech test-clean y test-other para decidir entre variantes de encoder.
 
 ## Benchmarks y rendimiento
 
-Resultados sobre LibriSpeech con FluidAudio `asr-benchmark`, M5 Pro, encoder por defecto en el ANE. WER a nivel de corpus; RTFx = audio total / tiempo de proceso.
+Resultados de FluidAudio `asr-benchmark` en un Apple M5 Pro (macOS 27) con el encoder en el Neural Engine. WER a nivel de corpus; RTFx = audio total / tiempo total de procesamiento.
 
 | Conjunto (ANE) | v3 | Ultra | Phonon-2 |
 |---|---|---|---|
 | test-clean (2620 archivos) WER | 2,27 % | 2,13 % | 2,47 % |
 | test-other (2939 archivos) WER | 4,12 % | 3,81 % | 4,62 % |
-| test-clean RTFx | 149–152× | 151× | 159× |
+| test-clean RTFx | 149–152× | 151× | 193× (escalera) / 159× (forma única) |
 | test-other RTFx | 138× | 142× | 146× |
 
-Ficheros del encoder, una ventana de 15 s en M5 Pro (macOS 27), encoder en el ANE. Los cinco son exactos y dan las mismas transcripciones.
+Rendimiento por variante de encoder (una ventana de 15 s, M5 Pro, ANE):
 
-| Fichero | Tamano | Codificacion | ANE | ANE RTFx | GPU |
+| Archivo | Tamano | Codificacion | ANE | ANE RTFx | GPU |
 |---|---:|---|---:|---:|---|
-| `Encoder.mlmodelc` (por defecto) | 321 MB | máscara sparse + paleta de 6 bits por 8 filas | 18,6 ms | 159× | 16 ms, ~150 s de carga en cada arranque |
-| `Encoder_sparse-g4.mlmodelc` | 246 MB | máscara sparse + paleta de 4 bits por 4 filas | 24,3 ms | 140× | misma advertencia de carga |
-| `Encoder_sparse-g1.mlmodelc` | 176 MB | máscara sparse + paleta de 2 bits por fila | 70 ms | ~70× | misma advertencia de carga |
+| `Encoder.mlmodelc` (por defecto, escalera) | 341 MB | máscara dispersa + paleta de 6 bits por 8 filas, 3 longitudes | 18,6 ms (15 s) / 12 ms (10 s) / 6 ms (5 s) | 193× | ~150 s de carga en cada arranque |
+| `Encoder_sparse-g8.mlmodelc` | 321 MB | máscara dispersa + paleta de 6 bits por 8 filas | 18,6 ms | 159× | 16 ms, pero ~150 s de carga |
+| `Encoder_sparse-g4.mlmodelc` | 246 MB | máscara dispersa + paleta de 4 bits por 4 filas | 24,3 ms | 140× | misma advertencia de carga |
+| `Encoder_sparse-g1.mlmodelc` | 176 MB | máscara dispersa + paleta de 2 bits por fila | 70 ms | ~70× | misma advertencia de carga |
 | `Encoder_lut6.mlmodelc` | 470 MB | paleta densa de 6 bits por 8 filas | 18,6 ms | 155× | 16 ms, 0,6 s de carga |
 | `Encoder_lut3.mlmodelc` | 253 MB | paleta densa de 3 bits por fila | 72 ms | 70× | 16 ms, 0,7 s de carga |
-| v3 `Encoder.mlmodelc` (6 bits, referencia) | 445 MB | — | 23,5 ms | 149–152× | 18 ms |
+| v3 `Encoder.mlmodelc` (referencia) | 445 MB | — | 23,5 ms | 149–152× | 18 ms |
 
-Archivo largo de 60 minutos (Earnings-22, cuatro llamadas concatenadas), 3600 s, M5 Pro, encoder por defecto en el ANE, mejor de 2–3 ejecuciones.
-
-| Modelo | Tiempo de proceso | RTFx | WER |
-|---|---:|---:|---:|
-| v3 | 10,9 s | 331× | 16,5 % |
-| Ultra | 7,7 s | 469× | 13,5 % |
-| Redux | 14,2 s | 254× | 14,8 % |
-| Phonon-2 por defecto (sparse, 321 MB) | 7,5 s | 478× | 17,2 % |
-| Phonon-2 `Encoder_lut6` (470 MB) | 7,4 s | 486× | 17,2 % |
-| Phonon-2 `Encoder_sparse-g4` (246 MB) | 9,0 s | 399× | 17,2 % |
-| Phonon-2 `Encoder_sparse-g1` (176 MB) | 23,4 s | 154× | 17,2 % |
-| Phonon-2 `Encoder_lut3` (253 MB) | 23,6 s | 152× | 17,2 % |
-
-Fidelidad de conversión: 1,83 % de WER frente a 1,79 % de una decodificación NeMo fp32 de contexto completo del mismo checkpoint en los primeros 100 archivos de test-clean (0,34 % de diferencia). La model card menciona que, bajo el protocolo del Open ASR Leaderboard, Phonon-2 queda por detrás de v3 en LibriSpeech (+0,20 / +0,79) pero supera a v3 en AMI (reuniones) y VoxPopuli; no se facilitan las cifras concretas de AMI y VoxPopuli.
+Una hora de Earnings-22 se transcribe en 5,55 s (649×, WER 16,7 %) con la escalera, frente a 7,5 s (480×, WER 17,2 %) con el encoder disperso-g8 anterior.
 
 ## Requisitos de hardware
 
-- Plataforma: exclusivamente Apple Silicon con Neural Engine (iOS 18+ / macOS 15+ para el encoder ANE; decoder y joint requieren iOS 17+). No hay soporte CUDA ni ejecución en GPU NVIDIA.
-- VRAM/memoria para inferencia: el encoder ocupa entre 176 MB (`Encoder_sparse-g1`) y 470 MB (`Encoder_lut6`); el decoder y el joint en fp16 se suman a esa cifra (tamano no disponible). Repositorio completo: 1,5 GB.
-- Opciones de encoder según acelerador: Neural Engine → `Encoder.mlmodelc` (321 MB); GPU → `Encoder_lut3.mlmodelc` (253 MB, pequeno) o `Encoder_lut6.mlmodelc` (470 MB, rápido en cualquier acelerador); minimo tamano → `Encoder_sparse-g1.mlmodelc` (176 MB).
-- Advertencia de carga en GPU: los pesos sparse se materializan en cada arranque (~150 s de CPU, sin caché); el ANE los compila una vez (~1 min) y los cachea.
-- No cabe en GPU de consumo NVIDIA ni se despliega con vLLM, llama.cpp, Ollama o TGI: el único camino soportado es el SDK FluidAudio (Swift) y la CLI `fluidaudiocli`.
-- Rendimiento medido en M5 Pro (macOS 27): 18,6 ms por ventana de 15 s con el encoder por defecto en el ANE, RTFx 159× en test-clean y 478× en un archivo de 60 minutos. Latencia y throughput en otros chips Apple: no disponibles.
+- Ejecución exclusiva en Apple Silicon; requiere iOS 18+ / macOS 15+ para las paletas `constexpr_lut_to_dense` y `constexpr_lut_to_sparse`.
+- VRAM/tamaño en disco: el repositorio ocupa 1,8 GB; el encoder por defecto pesa 341 MB y las variantes oscilan entre 176 MB y 470 MB.
+- GPU recomendadas: Neural Engine de Apple M-series (opción por defecto y única para trabajo en segundo plano en iOS); en GPU, `Encoder_lut3.mlmodelc` (253 MB) o `Encoder_lut6.mlmodelc` (470 MB) evitan la penalización de carga de ~150 s de los encoders dispersos.
+- No está pensado para GPU NVIDIA (A100, H100, RTX 4090); para esos entornos habría que usar el checkpoint original `FermionResearch/Phonon-2` o `nvidia/parakeet-tdt-0.6b-v3`.
+- Despliegue mediante FluidAudio (`AsrModels.downloadAndLoad(version: .phonon2)`), la CLI `fluidaudiocli transcribe` / `asr-benchmark`, o carga local con `AsrModels.loadLocal(from:version:encoderComputeUnits:)`.
+- Latencia: 18,6 ms por ventana de 15 s en ANE; 12 ms para 10 s; 6 ms para 5 s. Primera compilación del ANE de ~55 s por función (cacheada después).
+- Throughput: 193× en LibriSpeech test-clean y 649× en Earnings-22 de una hora con el encoder por defecto.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Ventana | WER test-clean | WER test-other | RTFx test-clean | Licencia | Disponibilidad |
-|---|---|---|---|---|---|---|---|
-| Phonon-2 (este modelo, Core ML) | ~600 M | 15 s | 2,47 % | 4,62 % | 159× | cc-by-4.0 | Hugging Face, via FluidAudio `AsrModelVersion.phonon2` |
-| parakeet-tdt-0.6b-v3 (Core ML) | ~600 M | 15 s | 2,27 % | 4,12 % | 149–152× | no disponible | Hugging Face (FluidInference/parakeet-tdt-0.6b-v3-coreml) |
-| Ultra (FluidAudio) | no disponible | no disponible | 2,13 % | 3,81 % | 151× | no disponible | FluidAudio |
-| Redux (FluidAudio) | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible | FluidAudio |
-| FermionResearch/Phonon-2 (checkpoint fp) | ~600 M | 15 s | 2,47 % (via esta conversion) | 4,62 % | no disponible | no disponible | Hugging Face |
+| Modelo | Parametros | Contexto | WER test-clean | RTFx (ANE) | Licencia | Disponibilidad |
+|---|---|---|---|---|---|---|
+| Phonon-2-coreml (este) | 0,6 B | ventana de 15 s (5,04/10,16/15 s) | 2,47 % | 193× | CC-BY-4.0 | Hugging Face, Core ML |
+| parakeet-tdt-0.6b-v3-coreml | 0,6 B | ventana de 15 s | 2,27 % | 149–152× | no disponible en la información | Hugging Face, Core ML |
+| Parakeet v3 Ultra (referencia de la model card) | 0,6 B | ventana de 15 s | 2,13 % | 151× | no disponible en la información | no disponible |
+| FermionResearch/Phonon-2 (original) | 0,6 B | ventana de 15 s | no disponible | no disponible | no disponible en la información | Hugging Face |
 
-En el conjunto largo conversacional (Earnings-22) el orden se invierte parcialmente: Ultra (13,5 % de WER, 469×), Redux (14,8 %, 254×) y v3 (16,5 %, 331×) superan en precisión a Phonon-2 (17,2 %, 478×), que a cambio es el más rápido de los cuatro.
+Phonon-2-coreml sacrifica entre 0,2 y 0,5 puntos de WER frente a v3 y Ultra, pero mejora el throughput en ANE (193× frente a 149–152×) y reduce el tamaño del encoder (341 MB frente a 445 MB). Frente al checkpoint original Phonon-2, esta versión añade la compilación Core ML y la escalera de ventanas, a costa de quedar restringida al ecosistema Apple.
 
 ## Limitaciones y advertencias
 
-- Solo inglés: no soporta los 25 idiomas de parakeet-tdt-0.6b-v3. Cualquier audio en otro idioma queda fuera de alcance.
-- Precisión inferior a la de su modelo de partida: +0,20 puntos de WER en test-clean y +0,50 en test-other (2,47 % frente a 2,27 % y 4,62 % frente a 4,12 %).
-- Peor rendimiento en audio conversacional largo: 17,2 % de WER en Earnings-22, frente a 13,5 % de Ultra, 14,8 % de Redux y 16,5 % de v3.
-- No se documentan sesgos demográficos, acústicos ni de acento; no hay evaluación de sesgo en la información disponible.
-- Riesgo de error de transcripción (inserciones, sustituciones y omisiones típicas de un ASR), especialmente en audio ruidoso o solapamiento de hablantes. Al no ser generativo, el riesgo de alucinación libre es menor que en un modelo de lenguaje, pero no es nulo en segmentos ambiguos.
-- Requiere hardware Apple: dependencia total de Core ML y del Neural Engine; no hay ruta de despliegue en Linux, Windows o servidores con GPU NVIDIA.
-- Restricción practica de despliegue: el encoder por defecto en GPU tarda ~150 s en cargar por arranque al materializar los pesos sparse sin caché; usar `Encoder_lut3` o `Encoder_lut6` en ese escenario.
-- Licencia CC-BY-4.0: permite uso comercial, pero exige atribución. El repositorio incluye `NOTICE` y `LICENSE` con la atribución upstream, que debe conservarse.
-- Modelo recién publicado y con nula tracción medida (0 descargas, 0 likes en el momento de la consulta); no hay validación independiente de los números de la model card.
-- Las cifras de WER de FluidAudio están por encima de las de la model card original porque FluidAudio decodifica en ventanas de 15 s con un normalizador más simple; ambos modelos comparados pagan el mismo efecto, pero no son directamente comparables con resultados de otros pipelines.
+- Solo reconoce inglés; no hay soporte multilingüe.
+- El WER empeora respecto a v3 (2,47 % frente a 2,27 % en test-clean; 4,62 % frente a 4,12 % en test-other) y de forma más acusada en Earnings-22 (16,7 % frente a 17,2 % del encoder anterior, con mejora en este caso concreto).
+- La cuantización de cinco valores por fila puede degradar el rendimiento en dominios alejados de LibriSpeech (acentos, ruido, jerga técnica); no se han publicado evaluaciones fuera de los conjuntos citados.
+- Los encoders dispersos (`Encoder_sparse-*`) materializan los pesos en la GPU en cada arranque (~150 s de CPU no cacheada); en GPU conviene usar las variantes densas `lut`.
+- La primera carga en el Neural Engine compila cada función (~55 s por función en un M5 Pro); una caché antigua de FluidAudio mantiene el archivo previo hasta borrar el directorio del modelo `phonon-2`.
+- Requiere iOS 18+ / macOS 15+; no funciona en versiones anteriores ni en hardware que no sea Apple Silicon.
+- Licencia CC-BY-4.0: permite uso comercial con atribución; debe conservarse el aviso de atribución upstream incluido en `NOTICE` / `LICENSE`.
+- Riesgo de alucinación en audio con ruido extremo o silencios largos, inherente a los modelos transducer; no se han publicado tasas de inserción específicas.
+- No soporta tool calling, agentes ni otras modalidades; es exclusivamente un modelo ASR.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/FluidInference/phonon-2-coreml
-- Checkpoint base: https://huggingface.co/FermionResearch/Phonon-2
-- Modelo del que deriva la arquitectura: https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3
-- Conversion Core ML de referencia v3: https://huggingface.co/FluidInference/parakeet-tdt-0.6b-v3-coreml
-- SDK FluidAudio (GitHub): https://github.com/FluidInference/FluidAudio
-- Pull request de integracion en FluidAudio: https://github.com/FluidInference/FluidAudio/pull/980
-- Organizacion FluidInference en GitHub: https://github.com/FluidInference
-- Documentacion de modelos FluidInference: https://docs.fluidinference.com/reference/models
-- Coleccion de modelos Core ML de FluidInference: https://huggingface.co/collections/FluidInference/coreml-models-6873d9e310e638c66d22fba9
+- Modelo base: https://huggingface.co/FermionResearch/Phonon-2
+- Parakeet v3 Core ML de referencia: https://huggingface.co/FluidInference/parakeet-tdt-0.6b-v3-coreml
+- Repositorio FluidAudio: https://github.com/FluidInference/FluidAudio
+- PR de integración en FluidAudio (#980): https://github.com/FluidInference/FluidAudio/pull/980
+- PR de la escalera de encoders (#1019): https://github.com/FluidInference/FluidAudio/pull/1019

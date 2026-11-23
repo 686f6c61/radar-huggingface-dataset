@@ -5,7 +5,7 @@
   "author": "altslate",
   "url": "https://huggingface.co/altslate/indic-pii-redactor-base",
   "created_at": "2026-11-19T17:39:06.000Z",
-  "updated_at": "2026-11-20T05:15:06.000Z",
+  "updated_at": "2026-11-22T18:04:30.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "token-classification",
@@ -50,7 +50,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 58,
+  "downloads_30d": 64,
   "trending_score": 0,
   "parameters": 307555617,
   "parameters_human": "307.6M",

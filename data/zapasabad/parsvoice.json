@@ -1,0 +1,41 @@
+{
+  "schema": 2,
+  "id": "zapasAbad/parsvoice",
+  "slug": "zapasabad-parsvoice",
+  "author": "zapasAbad",
+  "url": "https://huggingface.co/zapasAbad/parsvoice",
+  "created_at": "2026-11-10T16:05:30.000Z",
+  "updated_at": "2026-11-23T06:41:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_asr",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 19,
+  "trending_score": 0,
+  "parameters": 2038052480,
+  "parameters_human": "2.04B",
+  "storage_bytes": 97843675247,
+  "storage_human": "97.8 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

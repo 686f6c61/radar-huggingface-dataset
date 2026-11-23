@@ -1,0 +1,49 @@
+{
+  "schema": 2,
+  "id": "SkillFi24/zeralyth-moss-image",
+  "slug": "skillfi24-zeralyth-moss-image",
+  "author": "SkillFi24",
+  "url": "https://huggingface.co/SkillFi24/zeralyth-moss-image",
+  "created_at": "2026-11-23T09:16:22.000Z",
+  "updated_at": "2026-11-23T09:25:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "en",
+    "base_model:OpenMOSS-Team/MOSS-Image-Base",
+    "base_model:adapter:OpenMOSS-Team/MOSS-Image-Base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 146276293,
+  "storage_human": "146 MB",
+  "context_length": null,
+  "base_model": "OpenMOSS-Team/MOSS-Image-Base",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

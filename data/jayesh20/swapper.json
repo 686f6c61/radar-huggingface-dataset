@@ -5,7 +5,7 @@
   "author": "jayesh20",
   "url": "https://huggingface.co/jayesh20/swapper",
   "created_at": "2026-11-22T20:57:10.000Z",
-  "updated_at": "2026-11-22T21:33:26.000Z",
+  "updated_at": "2026-11-22T21:46:07.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -14,6 +14,7 @@
     "en"
   ],
   "tags": [
+    "safetensors",
     "qwen3_5",
     "qwen",
     "qwen3.5",
@@ -31,13 +32,15 @@
   "likes": 0,
   "downloads_30d": 0,
   "trending_score": 0,
-  "parameters": null,
-  "parameters_human": null,
-  "storage_bytes": 19989506,
-  "storage_human": "20 MB",
+  "parameters": 852985920,
+  "parameters_human": "853.0M",
+  "storage_bytes": 3431991714,
+  "storage_human": "3.4 GB",
   "context_length": null,
   "base_model": "Qwen/Qwen3.5-0.8B",
-  "formats": [],
+  "formats": [
+    "safetensors"
+  ],
   "is_conversational": true,
   "gated": false,
   "disabled": false,

@@ -1,0 +1,77 @@
+{
+  "schema": 2,
+  "id": "tencent/WeMM-Ecom-9B",
+  "slug": "tencent-wemm-ecom-9b",
+  "author": "tencent",
+  "url": "https://huggingface.co/tencent/WeMM-Ecom-9B",
+  "created_at": "2026-11-18T09:53:46.000Z",
+  "updated_at": "2026-11-23T11:34:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "wemm",
+    "multimodal",
+    "e-commerce",
+    "conversational",
+    "zh",
+    "en",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:finetune:Qwen/Qwen3.5-9B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 18837256941,
+  "storage_human": "18.8 GB",
+  "context_length": null,
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Home - Tencent",
+      "url": "https://www.tencent.com/",
+      "snippet": "5 days ago · Tencent is: Three friends making dinner plans. And over a billion monthly active users. Learn more about Tencent for …Read more"
+    },
+    {
+      "title": "Tencent - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/Tencent",
+      "snippet": "Tencent (Chinese: 腾讯; pinyin: Téngxùn) is a Chinese multinational technology conglomerate and holding company headquartered …Read more"
+    },
+    {
+      "title": "Tencent 腾讯",
+      "url": "https://www.tencent.com/index.php/zh-cn/index.html",
+      "snippet": "Founded in 1998, Tencent is an Internet-based platform company using technology to enrich the lives of Internet users and assist the …Read more"
+    },
+    {
+      "title": "腾讯网",
+      "url": "https://www.qq.com/",
+      "snippet": "关于腾讯 About Tencent 服务协议 隐私政策 开放平台 商务洽谈 腾讯招聘 腾讯公益 腾讯频道 客服中心 客户端下载 深圳市互联网违法 …Read more"
+    }
+  ]
+}

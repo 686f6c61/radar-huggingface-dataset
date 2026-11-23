@@ -5,7 +5,7 @@
   "author": "lensetek",
   "url": "https://huggingface.co/lensetek/lensetek-edge-loop-3b",
   "created_at": "2026-11-22T01:42:01.000Z",
-  "updated_at": "2026-11-22T01:42:32.000Z",
+  "updated_at": "2026-11-22T06:38:16.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

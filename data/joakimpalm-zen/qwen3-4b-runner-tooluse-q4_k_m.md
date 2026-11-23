@@ -2,93 +2,100 @@
 
 ## Resumen
 
-El modelo `Joakimpalm-Zen/Qwen3-4B-Runner-ToolUse-Q4_K_M` es un adaptador LoRA (Low-Rank Adaptation) entrenado para mejorar la capacidad de tool-calling y function-calling del modelo base Qwen3-4B, cuantizado en GGUF Q4_K_M. El adaptador ha sido desarrollado por Joakimpalm-Zen utilizando el motor de inferencia Xyntetik Runner, un motor de inferencia en C11 de un solo binario que permite entrenar adaptadores directamente sobre el artefacto cuantizado, sin necesidad de una copia en FP16 ni frameworks de entrenamiento Python. El resultado es un adaptador reproducible byte a byte, lo que garantiza que el mismo comando y los mismos datos producen exactamente el mismo archivo.
+Qwen3-4B-Runner-ToolUse-Q4_K_M es un artefacto de inferencia en formato GGUF que combina el modelo base Qwen/Qwen3-4B cuantizado a Q4_K_M con un adaptador LoRA entrenado específicamente para una tarea estrecha de tool calling sintético. Lo desarrolla Joakimpalm-Zen dentro del proyecto Xyntetik Runner, un motor de inferencia en C11 de binario único que también actúa como entrenador. El interés técnico del artefacto no reside en su calidad como modelo de propósito general, sino en el mecanismo que demuestra: el adaptador se entrenó directamente a través de los pesos cuantizados a 4 bits que luego lo sirven, sin copia en FP16 ni framework de entrenamiento en Python, y el resultado es reproducible byte a byte para una misma compilación.
 
-El objetivo principal es mejorar la selección de herramientas y la generación de argumentos JSON en formato de esquema para agentes que necesitan invocar funciones. Según la evaluación reportada, el adaptador eleva la precisión de elección de herramienta correcta de 0,724 a 1,000 y la llamada exacta de 0,690 a 1,000 en un conjunto de evaluación de 29 prompts. Además, se incluye un estudio de tres precisiones (bf16, Q8_0 y Q4_K_M) que demuestra que el entrenamiento a través de la cuantización Q4_K_M produce un adaptador con una divergencia relativa del 12% en el espacio de pesos respecto al entrenado en bf16, aunque el rendimiento en la tarea es idéntico en todos los casos.
+La tarea objetivo es deliberadamente limitada: cuatro herramientas, 158 ejemplos de entrenamiento generados y 29 prompts de validación. Sobre esa distribución, el adaptador alcanza una puntuación exacta de tool-call de 1.000 frente al 0.690 del base Q4_K_M en modo greedy. Fuera de ella, el adaptador no aporta mejora: en un conjunto desplazado de 274 prompts escritos a mano sobre un catálogo de 23 herramientas con nombres solapados, el base realiza 211 llamadas exactas y el adaptador 200 a través de la API de chat.
 
-El adaptador es pequeño (0,3 GB) y se distribuye como GGUF, lo que permite su integración con el motor Xyntetik Runner y otros sistemas que soporten adaptadores GGUF. La licencia Apache 2.0 permite uso comercial y modificación. Aunque se trata de un adaptador específico para una tarea sintética, el enfoque de entrenamiento reproducible sobre cuantización es novedoso y relevante para entornos de producción con recursos limitados.
+El modelo se publica como demostración reproducible de un pipeline de entrenamiento sobre cuantización, no como una mejora general de tool use para Qwen3-4B. La receta (316 pasos con learning rate 1e-4 sobre 158 ejemplos) es de grado memorización: adecuada para fijar un hábito de formato, inadecuada para tareas de conocimiento.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | LoRA sobre Qwen3-4B (transformer decoder) |
-| Parametros totales | 16.515.072 (adaptador LoRA) |
-| Parametros activos | no aplica (adaptador LoRA) |
-| Longitud de contexto | 128 (contexto de entrenamiento) |
-| Tipos de cuantizacion | GGUF Q4_K_M (adaptador y base) |
-| Idiomas soportados | no disponible |
+| Arquitectura | Transformer decoder-only (Qwen3) con adaptador LoRA sobre pesos cuantizados |
+| Parametros totales | 16.515.072 (dato del repositorio en safetensors); el modelo base Qwen3-4B declara 4B |
+| Parametros activos | No aplica (no es MoE) |
+| Longitud de contexto | No disponible en la informacion proporcionada |
+| Tipos de cuantizacion | Q4_K_M (fichero principal); el autor indica merge a F16 o Q8_0, nunca a 4 bits |
+| Idiomas soportados | No disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (adaptador) |
+| Formato de pesos | GGUF (incluye `merged-Q8_0.gguf` y `Qwen3-4B-ToolUse-LoRA.gguf`) |
 
 ## Arquitectura y entrenamiento
-El adaptador LoRA tiene rango 8 en todas las proyecciones (attention q/k/v/output y FFN gate/up/down) y alpha 16. Se entrenó con AdamW (beta 0.9/0.999, weight decay 0.01), learning rate 1e-4, 316 pasos (2 épocas sobre 158 ejemplos), seed 0 y contexto 128. La pérdida pasó de 0.676 a 0.000006. El entrenamiento se realizó sobre el GGUF Q4_K_M del modelo base, congelando todos los pesos y ajustando únicamente los parámetros del adaptador. El motor Xyntetik Runner realiza el forward pass de inferencia como parte del entrenamiento, lo que permite entrenar directamente sobre la cuantización. El proceso es determinista: se verificó que dos ejecuciones de 40 pasos con los mismos datos y semilla producen adaptadores con el mismo sha256.
 
-El dataset de entrenamiento es generado de forma determinista (158 ejemplos) y se encuentra en el repositorio. El estudio de tres precisiones (bf16, Q8_0, Q4_K_M) muestra que el adaptador entrenado a través de Q8_0 es casi idéntico al entrenado en bf16 (coseno 0.99983, divergencia relativa 2%), mientras que el entrenado a través de Q4_K_M diverge un 12% en el espacio de pesos, pero el rendimiento en la tarea es idéntico (1.000 exacto) en todos los casos.
+El modelo base es Qwen3-4B, un transformer decoder-only de la familia Qwen3. Sobre él se aplica un adaptador LoRA entrenado contra el artefacto de inferencia Q4_K_M congelado, ejecutado en CPU por Xyntetik Runner. El forward pass del entrenador es el mismo forward pass de inferencia, de modo que no existe una copia en FP16 intermedia ni un proceso de merge previo al entrenamiento. La receta emplea 316 pasos con learning rate 1e-4 sobre 158 ejemplos generados sintéticamente para cuatro herramientas, con 29 prompts reservados para evaluación.
+
+La reproducibilidad byte a byte es una propiedad de la compilación: ejecutar el mismo comando con las mismas entradas y el mismo build produce el mismo fichero, hash a hash. Un tester independiente reprodujo los bytes en una Tesla T4 y comprobó que una recompilación con un perfil de instrucciones distinto genera bytes de adaptador diferentes. El autor documenta además que el merge debe hacerse a F16 o Q8_0, nunca a 4 bits, por borrado medido de la adaptación.
 
 ## Capacidades
-- Tool-calling y function-calling: selecciona la herramienta correcta entre cuatro herramientas con esquemas distintos y genera argumentos JSON válidos.
-- Generación de JSON estructurado: emite argumentos en formato JSON sin prosa adicional.
-- Rechazo de solicitudes no cubiertas: el adaptador aprende a negarse cuando ninguna herramienta disponible encaja.
-- Preservación de capacidades del modelo base: la evaluación sobre un corpus neutral muestra una NLL/token de 4.063 → 4.026 (Δ −0.037), indicando que el adaptador no degrada el texto general.
-- Compatibilidad con el motor Xyntetik Runner: se sirve con el comando `runner -m base.gguf --lora adaptador.gguf --serve`.
-- Reproducibilidad completa: los checksums sha256 del adaptador, del base y del dataset están publicados.
+
+- Tool calling y function calling restringido al formato aprendido durante el entrenamiento (cuatro herramientas del conjunto sintético).
+- Generación de llamadas exactas en el template de chat empleado en el entrenamiento, con puntuación de 1.000 en el conjunto de validación de 29 prompts en modo greedy.
+- Capacidades heredadas del base Qwen3-4B en generación de texto, razonamiento y código, sin mejora atribuible al adaptador.
+- Entrenamiento continuado y serving por petición del adaptador mediante las opciones `--train`, `--lora` y `--merge-lora` de Xyntetik Runner.
+- Firma de adaptadores y registro de procedencia para auditoría del entrenamiento.
+- No se documentan capacidades de visión, audio ni modo thinking específicas en la informacion proporcionada.
 
 ## Casos de uso
 
-- Asistentes de agentes con llamada a herramientas: un agente conversacional que necesita invocar APIs (por ejemplo, consultar el tiempo, buscar información) puede usar este adaptador para seleccionar y formatear la llamada correcta sin errores.
-- Automatización de flujos de trabajo con APIs: integración en pipelines que requieren llamadas a servicios externos mediante JSON, reduciendo fallos de formato.
-- Sistemas de soporte al cliente con funciones de backend: el modelo puede extraer entidades y rellenar campos de una API de tickets, mejorando la precisión de los argumentos.
-- Entornos de producción con recursos limitados: al ser un adaptador LoRA sobre un modelo cuantizado Q4_K_M, se puede ejecutar en CPU o GPU con poca memoria, ideal para despliegues en edge.
-- Pruebas de robustez de tool-calling: el adaptador sirve como referencia para evaluar la capacidad de tool-calling en modelos pequeños, ya que alcanza un 100% de precisión en su tarea.
-- Reproducibilidad de entrenamiento: el motor Xyntet Runner permite reproducir el adaptador desde cero con los mismos datos, útil para auditorías de IA y cumplimiento normativo.
+- Reproducción de experimentos de entrenamiento: sirve para verificar el mecanismo de entrenamiento LoRA sobre pesos cuantizados ejecutando el mismo comando y comparando hashes, lo que permite auditar pipelines de ajuste sin infraestructura GPU de 16 bits.
+- Validación de tool calling en un dominio cerrado: con cuatro herramientas fijas y un formato estable, el adaptador produce llamadas exactas de forma consistente, adecuado para prototipos de agentes con catálogo reducido y bien definido.
+- Docencia y divulgación técnica: el par adaptador más registro de procedencia permite mostrar de extremo a extremo cómo se entrena, sirve y mergea un LoRA sobre un GGUF de 4 bits.
+- Pruebas de regresión de motores de inferencia: los ficheros `merged-Q8_0.gguf` y `Qwen3-4B-ToolUse-LoRA.gguf` están asignados a filas del roster de soporte de Runner con revalidación por release, útiles como caso de prueba de compatibilidad.
+- Despliegue en CPU sin GPU: al ser GGUF Q4_K_M servible con Runner en un binario C11, encaja en entornos sin acelerador donde solo se necesita el hábito de formato de llamada, no conocimiento general.
+- Estudio de generalización fuera de distribución: el conjunto desplazado de 274 prompts sobre 23 herramientas sirve como banco de pruebas para medir cuánto de un adaptador de formato se transfiere y cuánto se degrada al cambiar el catálogo.
+- Base para adaptadores propios: el walkthrough de entrenamiento sobre GGUF cuantizado permite reutilizar el pipeline con datos propios partiendo del mismo artefacto.
 
 ## Benchmarks y rendimiento
-Los datos de evaluación provienen de la model card del autor. Se evaluaron 29 prompts (greedy, temperatura 0) en una tarea de tool-calling con cuatro herramientas. La tabla compara el modelo base sin adaptador y con el adaptador:
 
-| Métrica | Qwen3-4B Q4_K_M (base) | + adaptador |
+| Evaluacion | Base Qwen3-4B Q4_K_M | Con adaptador |
 |---|---|---|
-| JSON parses | 1.000 | 1.000 |
-| Right tool | 0.724 | 1.000 |
-| Schema args | 0.724 | 1.000 |
-| Exact call | 0.690 | 1.000 |
+| Tool-call exacto en tarea propia (29 prompts, greedy) | 0.690 | 1.000 |
+| Llamadas exactas en conjunto desplazado, API de chat (274 prompts, 23 herramientas) | 211 | 200 |
+| Llamadas exactas en conjunto desplazado, template de entrenamiento | 170 | 176 (dentro del ruido) |
 
-Además, el estudio de tres precisiones (bf16, Q8_0, Q4_K_M) mostró que todos los adaptadores alcanzan un rendimiento de 1.000 exacto en la evaluación sobre el propio base, y que los adaptadores entrenados en bf16 y Q8_0 también logran 1.000 cuando se aplican al base Q4_K_M. No hay más datos de benchmarks (MMLU, HumanEval, etc.) en la información disponible.
+No se han publicado resultados de MMLU, HumanEval, GSM8K ni otros benchmarks generales en la informacion disponible.
 
 ## Requisitos de hardware
 
-- El adaptador es un archivo GGUF de 0.3 GB, que se suma al modelo base Qwen3-4B Q4_K_M (aprox. 2.5-3 GB). En total, la carga en memoria puede ser de ~3-3.5 GB.
-- El motor Xyntetik Runner funciona en CPU (probado en un host EPYC de 128 hilos, con ~45 s/step en el entrenamiento). Para inferencia, se puede usar con `--gpu off` para CPU, o con GPU si se dispone de ella.
-- En una GPU, el adaptador y el base caben en tarjetas con 4 GB de VRAM (por ejemplo, RTX 3050, RTX 3060). Se recomienda una RTX 3060 o superior para inferencia fluida.
-- Opciones de despliegue: además del propio runner, el adaptador puede cargarse con llama.cpp (ya que usa la convención de nombres de adaptadores de llama.cpp) y con vLLM si se convierte a formato compatible.
-- La latencia dependerá del hardware; en CPU se puede esperar una velocidad de ~10-20 tokens/s para un modelo 4B cuantizado, mientras que en GPU se alcanzan 30-50 tokens/s.
+- VRAM estimada: el repositorio ocupa 4.5 GB; el fichero Q4_K_M de un modelo de 4B se sitúa en torno a 2.5-3 GB de pesos, con overhead de contexto adicional no especificado.
+- Cabe en GPU de consumo: el autor reporta reproducción del entrenamiento en una Tesla T4; la inferencia Q4_K_M es viable en tarjetas con 6-8 GB de VRAM.
+- GPU recomendadas: cualquier GPU con al menos 8 GB para el fichero Q4_K_M; el fichero `merged-Q8_0.gguf` requiere más memoria y no se especifica cifra.
+- Despliegue: Xyntetik Runner (binario C11, soporte de `--train`, `--lora`, `--merge-lora`); al ser GGUF, es compatible con el ecosistema llama.cpp, aunque la validación documentada por el autor es la del roster de Runner.
+- Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-No hay datos de comparativa directa con otros adaptadores de tool-calling en la información proporcionada. Se puede comparar con el modelo base sin adaptador (tabla anterior) y con otros modelos de 4B que soportan tool-calling, pero no se dispone de métricas. Por tanto:
-
-| Modelo | Parametros | Contexto | Tool-calling | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3-4B (base) | 4B | 128 (entrenamiento) | 0.724 (right tool) | Apache 2.0 | Hugging Face |
-| Qwen3-4B + adaptador | 4B + 16M | 128 | 1.000 | Apache 2.0 | Hugging Face |
-| Llama-3.2-3B (sin datos) | 3B | 128K | no disponible | Llama 3.2 | no disponible |
-| DeepSeek-R1-Distill-Qwen-1.5B | 1.5B | 32K | no disponible | MIT | Hugging Face |
+| Qwen3-4B-Runner-ToolUse-Q4_K_M | 4B (base) | no disponible | LoRA de tool calling sobre GGUF Q4_K_M | Apache 2.0 | Hugging Face, 411 descargas |
+| Qwen/Qwen3-4B | 4B | no disponible | Modelo base generalista | Apache 2.0 | Hugging Face |
+| Adaptadores LoRA convencionales sobre Qwen3-4B | 4B (base) | no disponible | Entrenamiento en FP16 con merge y cuantización posterior | según autor | Hugging Face |
 
-No se recomienda inferir más sin datos adicionales.
+La diferencia relevante frente a un flujo LoRA convencional no es de rendimiento sino de procedimiento: aquí el adaptador se entrena contra el artefacto cuantizado que lo sirve y la reproducibilidad se limita a una compilación concreta. No se dispone de datos de benchmarks comparativos con otras alternativas en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- La tarea de entrenamiento es sintética y estrecha (cuatro herramientas, plantillas generadas, 29 prompts de evaluación). El adaptador demuestra el mecanismo de entrenamiento y su reproducibilidad, pero no una capacidad general de tool-calling.
-- El entrenamiento de 316 pasos con 158 ejemplos es de memorización; no es adecuado para tareas que requieren conocimiento general o razonamiento complejo.
-- El estudio de precisión se limita a esta tarea; en tareas más difíciles, los adaptadores entrenados con diferentes precisiones podrían divergir más.
-- El adaptador está diseñado para ser utilizado con el motor Xyntetik Runner (≥ v0.2.0). Aunque el formato es compatible con llama.cpp, no se garantiza su funcionamiento en otros motores sin pruebas.
-- El entrenamiento se realizó en CPU; el soporte de entrenamiento CUDA está en desarrollo, pero no se documenta.
-- No se han publicado datos de sesgos, alucinación o comportamiento en otros idiomas. La licencia Apache 2.0 permite uso comercial, pero se recomienda evaluar el modelo en el dominio de aplicación.
+- El adaptador no mejora al base fuera de su distribución: en 274 prompts con 23 herramientas, el base realiza más llamadas exactas (211 frente a 200).
+- La receta de 316 pasos sobre 158 ejemplos es de grado memorización; no debe esperarse generalización a catálogos de herramientas distintos ni a dominios de conocimiento.
+- El merge a 4 bits borra la adaptación de forma medida; solo se recomienda F16 o Q8_0.
+- La reproducibilidad byte a byte depende del build: perfiles de instrucciones distintos generan bytes de adaptador diferentes.
+- Riesgo de alucinación y sesgos: no documentados específicamente en la informacion proporcionada; se heredan los del base Qwen3-4B.
+- Idiomas soportados no declarados; el entrenamiento se realizó sobre un conjunto sintético de dominio estrecho.
+- La licencia Apache 2.0 permite uso comercial, pero el autor desaconseja explícitamente presentar el artefacto como mejora general de tool use.
+- El dato de parámetros totales del repositorio (16.515.072) no coincide con el tamaño nominal de 4B del base; conviene verificar el contenido real de los ficheros antes de dimensionar el despliegue.
 
 ## Enlaces
 
-- [Hugging Face - modelo](https://huggingface.co/Joakimpalm-Zen/Qwen3-4B-Runner-ToolUse-Q4_K_M)
-- [GitHub - Xyntetik Runner](https://github.com/Joakimpalm-Zen/xyntetik-runner)
-- [GitHub - Qwen3 (modelo base)](https://github.com/QwenLM/Qwen3)
-- [Hugging Face - Qwen3-8B (referencia del modelo base)](https://huggingface.co/Qwen/Qwen3-8B)
-- [Hugging Face - bartowski Qwen3-4B GGUF](https://huggingface.co/bartowski/Qwen_Qwen3-4B-GGUF)
+- Modelo en Hugging Face: https://huggingface.co/Joakimpalm-Zen/Qwen3-4B-Runner-ToolUse-Q4_K_M
+- Modelo base: https://huggingface.co/Qwen/Qwen3-4B
+- Repositorio Xyntetik Runner: https://github.com/Joakimpalm-Zen/xyntetik-runner
+- Guía completa de adaptadores: https://github.com/Joakimpalm-Zen/xyntetik-runner/blob/main/docs/lora.md
+- Walkthrough de entrenamiento LoRA sobre GGUF cuantizado: https://github.com/Joakimpalm-Zen/xyntetik-runner/blob/main/docs/train-lora-on-quantized-gguf.md
+- Sección de adaptación del manual: https://github.com/Joakimpalm-Zen/xyntetik-runner/blob/main/MANUAL.md#adaptation
+- Conjunto desplazado de evaluación: https://github.com/Joakimpalm-Zen/xyntetik-runner/blob/main/evals/tooluse-shifted/README.md
+- Roster de soporte de modelos: https://github.com/Joakimpalm-Zen/xyntetik-runner/blob/main/docs/model-support.md
+- Registro de entrenamiento y evaluaciones (dataset): https://huggingface.co/datasets/Joakimpalm-Zen/Qwen3-4B-ToolUse-LoRA-training-record
+- Colección Runner Releases: https://huggingface.co/collections/Joakimpalm-Zen/runner-releases-6aa98baaed03bba0e8a561ae
+- Colección LoRA Training on Quantized Weights: https://huggingface.co/collections/Joakimpalm-Zen/xyntetik-research-lora-training-on-quantized-weights-6aa98bb02859827a8d86618c
+- Resultados de la comunidad: https://github.com/Joakimpalm-Zen/xyntetik-runner/blob/main/docs/community-results.md

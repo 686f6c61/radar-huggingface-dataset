@@ -1,0 +1,43 @@
+{
+  "schema": 2,
+  "id": "ducido/so101-twin-isaac",
+  "slug": "ducido-so101-twin-isaac",
+  "author": "ducido",
+  "url": "https://huggingface.co/ducido/so101-twin-isaac",
+  "created_at": "2026-11-23T10:43:38.000Z",
+  "updated_at": "2026-11-23T10:43:50.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 405416146,
+  "storage_human": "405 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Train an SO-101 Robot From Sim-to-Real With NVIDIA Isaac — Train ...",
+      "url": "http://go/v1/AX8ifOQusj2rawQdKAGQ_m93m6OxByu50nE1g2ckg9SFYtpuP7boOuPyo4Wi0_Em14uIHti0x3YqgyS3GvNvHI-mx04R1d2aak3aHxHidfzCNaeqyUs-O2dAk_B1WCUiXmbNEjKZlIIOwJ1mJciyOxGHR816f4KtL2s_yhOcZ8f84QMAh0lY99TgjgRHBt8tBcmDEV7gB9L2a341pfPGi46vZXFc3M2moGXP-_MzIRw6kwUflVdtQ_FLkN-gqx743RbrDw",
+      "snippet": "Train an SO-101 Robot From Sim-to-Real With NVIDIA Isaac"
+    }
+  ]
+}

@@ -2,114 +2,106 @@
 
 ## Resumen
 
-K2-Horizon-7B-FP8 es la version cuantizada en FP8 del modelo denso K2-Horizon-7B, desarrollado por IFM. Se trata de un modelo decoder-only de tipo transformer denso, miembro intermedio de la familia K2-Horizon, con una ventana de contexto nativa de 524.288 tokens (512K) desde las etapas de midtraining. Segun los pesos en safetensors, el modelo tiene 8.999.178.240 parametros (~9B), aunque la nomenclatura comercial lo presenta como "7B-core".
+K2-Horizon-7B-FP8 es la versión cuantizada en FP8 del modelo K2-Horizon-7B, un modelo denso decoder-only de 7B desarrollado por IFM (Integrated Frontier Models). Se trata del miembro intermedio de la familia K2-Horizon y su principal seña de identidad es una ventana de contexto nativa de 512K tokens (524.288), mantenida desde las etapas de midtraining. El modelo se distribuye con pesos abiertos bajo licencia Apache 2.0, junto con los datos de entrenamiento, el código de entrenamiento y los recursos de evaluación.
 
-La relevancia de esta variante FP8 reside en que reduce el peso en memoria respecto al modelo original en BF16 y habilita inferencia mas rapida en hardware con soporte FP8, manteniendo un rendimiento cercano al del modelo BF16 en las evaluaciones del autor. El proyecto se distribuye de forma completamente abierta: datos de preentrenamiento y midtraining, receta de entrenamiento, codigo de entrenamiento y recursos de evaluacion son publicos.
+La relevancia de esta variante FP8 radica en que reduce la huella de memoria del modelo original en BF16 y habilita inferencia más rápida en hardware con soporte FP8, manteniendo un rendimiento "estrechamente en línea" con el modelo BF16 según las evaluaciones del autor. La cuantización afecta a todas las capas lineales excepto `lm_head`. El modelo está orientado a cargas agénticas, generación de código, contexto largo y razonamiento, y se publica junto con checkpoints intermedios para estudiar la evolución de capacidades a lo largo del entrenamiento.
 
-El problema que aborda es el de disponer de un modelo denso de clase media con contexto muy largo (512K), orientado a tareas agénticas, generacion de codigo, razonamiento y comprension de contexto extenso, con licencia Apache 2.0 que permite uso comercial. La model card reporta resultados competitivos frente a modelos de referencia de mayor tamano, como Gemma 4-12B, Qwen3.5-9B y Granite 4.2-8B.
+El repositorio acumula 410 descargas y 19 likes en Hugging Face, con un tamaño de 11,1 GB y 8.999.178.240 parámetros totales según los safetensors. La información pública disponible sobre arquitectura interna, composición del dataset y proceso de alineación es limitada; los detalles no confirmados se indican como "no disponible" a lo largo de esta ficha.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only denso (familia K2-Horizon) |
-| Parametros totales | 8.999.178.240 (~9B, dato de safetensors) |
-| Parametros activos | no aplica (modelo denso) |
-| Longitud de contexto | 524.288 tokens (512K), nativa desde las etapas de midtraining |
-| Tipos de cuantizacion | FP8 (pesos estaticos con una escala por bloque 128x128; activaciones dinamicas FP8 con una escala por grupo 1x128 en el canal de entrada); el modelo original esta en BF16 |
-| Idiomas soportados | ingles (en) |
+| Arquitectura | Transformer decoder-only denso (familia k2_horizon) |
+| Parámetros totales | 8.999.178.240 (~9B, etiquetado comercialmente como 7B) |
+| Parámetros activos | no disponible (modelo denso, no MoE) |
+| Longitud de contexto | 524.288 tokens (512K), nativa desde midtraining |
+| Tipos de cuantización | FP8 (pesos estáticos, escala por bloque 128×128; activaciones dinámicas, escala por grupo 1×128 en el eje de canales de entrada) |
+| Idiomas soportados | inglés (en) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (con formato compressed-tensors) |
-| Desarrollador | IFM |
-| Modelo base | IFM/K2-Horizon-7B |
-| Libreria | transformers |
-| Tamano del repositorio | 11,1 GB |
-| Descargas / likes | 648 descargas, 8 likes |
-| Fecha de publicacion | 3 de septiembre de 2026 (ultima actualizacion: 3 de septiembre de 2026) |
+| Formato de pesos | safetensors (compressed-tensors), integración vía transformers con `custom_code` |
+| Modelo base | IFM/K2-Horizon-7B (relación: quantized) |
+| Capas cuantizadas | todas las lineales excepto `lm_head` |
+| Tamaño del repo | 11,1 GB |
 
 ## Arquitectura y entrenamiento
 
-K2-Horizon-7B-FP8 es la version cuantizada de un transformer decoder-only denso. La cuantizacion afecta a todas las capas lineales excepto `lm_head`: los pesos se almacenan en FP8 estatico con una escala por bloque de 128x128 y las activaciones se cuantizan dinamicamente en FP8 con una escala por grupo de 1x128 a lo largo de la dimension de canal de entrada. Segun el autor, el modelo FP8 rinde de forma cercana al modelo BF16 original en sus evaluaciones, con menor huella de memoria y mayor velocidad en hardware compatible con FP8.
+K2-Horizon-7B-FP8 es una cuantización del checkpoint BF16 IFM/K2-Horizon-7B, un transformer decoder-only denso de aproximadamente 9.000 millones de parámetros. La innovación técnica más destacable del modelo base es su contexto nativo de 524.288 tokens, introducido desde las etapas de midtraining en adelante, lo que lo sitúa en la gama alta de longitud de contexto para su tamaño. El autor publica checkpoints intermedios para permitir el estudio de la evolución de capacidades durante el entrenamiento, algo poco habitual en modelos de esta escala.
 
-Los datos de entrenamiento proceden de dos conjuntos publicos: IFM/K2-Horizon-Pretrain-Data y IFM/K2-Horizon-Midtrain-Data. El numero total de tokens, la composicion exacta del dataset y si hubo etapas de RLHF o DPO no estan disponibles en la informacion proporcionada. La ventana de contexto de 524.288 tokens se alcanza de forma nativa a partir de las etapas de midtraining. Entre las innovaciones destacadas por el autor figuran la publicacion de checkpoints intermedios (para estudiar la evolucion de capacidades a lo largo del entrenamiento), el contexto nativo de 512K y la apertura completa de datos, receta, codigo de entrenamiento (LLM360/xllm) y codigo de evaluacion (Eval360-V2).
+En cuanto al proceso de cuantización, los pesos se almacenan en FP8 estático con una escala por cada bloque de 128×128, mientras que las activaciones se cuantizan dinámicamente en FP8 con una escala por cada grupo de 1×128 a lo largo de la dimensión de canales de entrada. La capa `lm_head` se mantiene sin cuantizar. El modelo se distribuye en formato `compressed-tensors` y requiere `transformers` con código personalizado (`custom_code`).
+
+Sobre los datos de entrenamiento, la model card referencia los datasets IFM/K2-Horizon-Pretrain-Data e IFM/K2-Horizon-Midtrain-Data, así como un repositorio público de navegación de datos (DATA_NAVIGATOR). No se especifican en la información disponible el número total de tokens, la composición detallada del corpus ni si se aplicaron etapas de RLHF, DPO u otras técnicas de alineación.
 
 ## Capacidades
 
-- Generacion de texto conversacional (el modelo incluye la etiqueta `conversational`).
-- Razonamiento y matematicas de competicion: la model card evalua el modelo en HMMT Feb 2026 (matematicas de competicion).
-- Generacion y resolucion de tareas de ingenieria de software: evaluado en SWE-bench Verified.
-- Contexto largo: ventana nativa de 524.288 tokens, apta para tareas de comprension de documentos extensos.
-- Tareas agénticas: la model card indica que el modelo se evalua en benchmarks de tipo agéntico, ademas de codigo, contexto largo y razonamiento.
-- Capacidades multilingues: limitadas al ingles (`en`) segun la model card.
-- Soporte de tool calling / function calling: no documentado explicitamente en la informacion disponible.
-- Capacidades multimodales (vision, audio): no disponibles en la informacion proporcionada.
-- Modo de razonamiento (thinking mode): no documentado en la informacion disponible.
+- Generación de texto conversacional en inglés.
+- Razonamiento matemático, incluyendo matemáticas de competición (evaluado en HMMT Feb 2026).
+- Generación y resolución de código, con evaluación en ingeniería de software (SWE-bench Verified).
+- Procesamiento de contexto largo: ventana nativa de 512K tokens, adecuada para documentos extensos y conversaciones multi-turno prolongadas.
+- Evaluación en benchmarks agénticos y de razonamiento según la model card.
+- Pesos abiertos con datos y receta de entrenamiento públicos, lo que facilita la reproducibilidad y el ajuste fino.
+- Soporte de tool calling / function calling: no disponible en la información proporcionada.
+- Capacidades multimodales (visión, audio): no disponible.
+- Modo thinking explícito: no disponible.
 
 ## Casos de uso
 
-- Analisis de repositorios y documentacion extensa: con 524.288 tokens de contexto, el modelo puede ingerir codebases o documentacion tecnica completa en una sola llamada y responder preguntas sobre ellos sin fragmentacion.
-- Resolucion de incidencias de software: su evaluacion en SWE-bench Verified (70,6 en la model card) lo hace adecuado para tareas de localizacion y correccion de bugs en pipelines de desarrollo asistido.
-- Generacion de codigo en produccion: puede integrarse en flujos de revision de codigo y generacion asistida, con la ventaja de un despliegue FP8 que reduce coste de VRAM respecto al modelo BF16.
-- Asistente conversacional multi-turno en ingles: la etiqueta `conversational` y el contexto largo permiten mantener historiales de conversacion muy extensos sin perder informacion previa.
-- Razonamiento matematico y resolucion de problemas cuantitativos: los resultados en HMMT Feb 2026 lo orientan a tutoria o asistencia en problemas de matematicas de nivel avanzado.
-- Procesamiento de contratos o expedientes largos: en entornos legales o administrativos en ingles, el contexto de 512K permite analizar documentos completos y extraer clausulas o resumenes.
-- Investigacion sobre entrenamiento de modelos: al publicarse checkpoints intermedios, sirve para estudiar la evolucion de capacidades a lo largo del entrenamiento y comparar etapas.
-- Evaluacion comparativa de cuantizacion: la variante FP8 permite medir en produccion la perdida de calidad y la ganancia de rendimiento frente al modelo BF16 original.
+- Análisis de repositorios de código completos: con 512K tokens de contexto, el modelo puede ingerir múltiples ficheros y trazas de error en una sola pasada para localizar la causa de un fallo o proponer refactorizaciones, sin necesidad de trocear el código en fragmentos.
+- Agente de ingeniería de software: su resultado en SWE-bench Verified (70,6) lo hace adecuado para pipelines que reciben un issue, navegan por el repositorio y generan un parche candidato que luego se valida en CI/CD.
+- Asistencia en matemáticas y razonamiento formal: útil para herramientas educativas o de verificación que requieren resolver problemas de competición o demostraciones paso a paso, dado su rendimiento en HMMT Feb 2026.
+- Procesamiento de documentación legal o técnica extensa: la ventana de 512K permite resumir contratos, manuales o expedientes completos manteniendo coherencia entre secciones, algo inviable en modelos con contexto de 8K-32K.
+- Despliegue en infraestructura con aceleradores FP8: en GPUs con soporte FP8 (H100, H200, L40S), la variante cuantizada reduce la memoria necesaria y acelera la inferencia respecto al BF16, lo que abarata el coste por token en servicios de generación de texto.
+- Investigación sobre entrenamiento y cuantización: la publicación de checkpoints intermedios, datos y código de entrenamiento permite estudiar cómo evolucionan las capacidades y cómo afecta la cuantización FP8 al rendimiento en distintas etapas.
+- Base para ajuste fino supervisado: al ser Apache 2.0 y estar en formato `transformers`, puede adaptarse a dominios verticales (soporte técnico, generación de documentación) con LoRA o fine-tuning completo.
 
 ## Benchmarks y rendimiento
 
-Datos extraidos de la model card. La tabla original esta truncada, por lo que solo se reproducen las filas disponibles. Los valores de los modelos de referencia que no aparecen en la informacion se marcan como no disponibles.
+Resultados publicados en la model card del autor. Las referencias son modelos comparables seleccionados por IFM; el resto de filas de la tabla original no están disponibles en la información proporcionada.
 
 | Benchmark | K2-Horizon-7B | Gemma 4-12B | Qwen3.5-9B | Granite 4.2-8B |
 |---|---|---|---|---|
-| HMMT Feb 2026 (matematicas de competicion) | 73,3 | 63,1 | 65,7 | 66,5 |
-| SWE-bench Verified (ingenieria de software) | 70,6 | 30,6 | no disponible | 47,7 |
+| HMMT Feb 2026 (matemáticas de competición) | 73,3 | 63,1 | 65,7 | 66,5 |
+| SWE-bench Verified (ingeniería de software) | 70,6 | 30,6 | no disponible | 47,7 |
 
-No hay mas resultados de benchmarks en la informacion disponible (la tabla de la model card aparece cortada tras la seccion de codigo). No se dispone de datos desglosados del modelo FP8 frente al BF16 mas alla de la afirmacion del autor de que el rendimiento es cercano al del modelo original.
+No se han publicado en la información disponible resultados de MMLU, HumanEval, GSM8K ni de benchmarks de contexto largo, ni mediciones comparativas entre la variante FP8 y el modelo BF16 original más allá de la afirmación cualitativa del autor de que el rendimiento FP8 está "estrechamente en línea" con BF16.
 
 ## Requisitos de hardware
 
-- Peso en VRAM (solo pesos, estimacion a partir del dato de safetensors): aproximadamente 9 GB en FP8 y aproximadamente 18 GB en BF16.
-- Memoria adicional para cache KV: no disponible. Con una ventana de 524.288 tokens, el consumo de cache KV puede ser muy elevado y depende del numero de capas y cabezas, dato no publicado en la informacion disponible.
-- GPU recomendadas para FP8: hardware con soporte nativo de FP8, como NVIDIA H100, H200 o L40S. Las GPU de arquitectura Ada (por ejemplo, RTX 4090) pueden ejecutar pesos FP8, aunque con aceleracion de calculo FP8 mas limitada.
-- GPU para BF16: A100 (80 GB), H100, L40S o RTX 4090 (24 GB), esta ultima con margen ajustado si se usa contexto muy largo.
-- Cabe en GPU de consumo: si, en tarjetas con 24 GB o mas (RTX 4090, RTX 3090) para pesos FP8 y contextos moderados; el contexto de 512K requiere memoria adicional significativa.
-- Opciones de despliegue: al estar publicado en formato safetensors para `transformers`, es compatible con stacks habituales como vLLM o TGI. No se han publicado pesos GGUF en la informacion disponible, por lo que el uso directo con llama.cpp u Ollama requeriria una conversion previa no documentada.
-- Latencia y throughput estimados: no disponibles.
+- VRAM estimada para inferencia: en FP8, los pesos ocupan aproximadamente 9 GB (11,1 GB de repo incluyendo metadatos y posibles tensores no cuantizados); con overhead de activaciones y caché KV para contexto largo, se recomienda un mínimo de 16-24 GB para contextos moderados.
+- Contexto largo: la caché KV para 512K tokens es el factor dominante de memoria; con arquitecturas GQA estándar y 9B parámetros, puede requerir decenas de GB adicionales, por lo que el contexto completo exige GPUs de 80 GB o configuraciones multi-GPU.
+- GPUs recomendadas: H100, H200 y L40S por su soporte nativo de FP8; A100 no dispone de aceleración FP8 por hardware, por lo que ejecutaría el modelo con conversión a BF16/FP16.
+- GPU de consumo: cabe en RTX 4090 (24 GB) para contextos cortos o moderados; en RTX 3090/4080 (16-24 GB) es viable con contextos reducidos.
+- Opciones de despliegue: `transformers` (requerido, con `custom_code`), vLLM y TGI para servir en producción con soporte FP8; llama.cpp y Ollama no están confirmados para este formato `compressed-tensors`.
+- Latencia y throughput: no disponibles en la información proporcionada; el autor indica únicamente que FP8 habilita inferencia más rápida en hardware compatible.
 
 ## Comparativa con modelos similares
 
-Comparativa basada en los modelos de referencia empleados en la propia model card. Solo se dispone de datos de benchmark para las metricas indicadas; el resto de caracteristicas de los modelos de referencia no estan disponibles.
+| Modelo | Parámetros | Contexto | HMMT Feb 2026 | SWE-bench Verified | Licencia |
+|---|---|---|---|---|---|
+| K2-Horizon-7B-FP8 | ~9B (denso) | 512K | 73,3 | 70,6 | Apache 2.0 |
+| Gemma 4-12B | 12B | no disponible | 63,1 | 30,6 | no disponible |
+| Qwen3.5-9B | 9B | no disponible | 65,7 | no disponible | no disponible |
+| Granite 4.2-8B | 8B | no disponible | 66,5 | 47,7 | no disponible |
 
-| Modelo | Parametros | Contexto | HMMT Feb 2026 | SWE-bench Verified | Licencia | Disponibilidad |
-|---|---|---|---|---|---|---|
-| K2-Horizon-7B | ~9B (denso) | 524.288 tokens | 73,3 | 70,6 | Apache 2.0 | Pesos abiertos en Hugging Face, datos y codigo publicos |
-| Gemma 4-12B | no disponible | no disponible | 63,1 | 30,6 | no disponible | no disponible |
-| Qwen3.5-9B | no disponible | no disponible | 65,7 | no disponible | no disponible | no disponible |
-| Granite 4.2-8B | no disponible | no disponible | 66,5 | 47,7 | no disponible | no disponible |
-
-En los dos benchmarks disponibles, K2-Horizon-7B supera a los tres modelos de referencia citados por el autor, con una diferencia especialmente amplia en SWE-bench Verified. No se dispone de informacion suficiente para comparar contexto, licencia o requisitos de hardware de los modelos de referencia.
+K2-Horizon-7B-FP8 lidera en las dos métricas publicadas frente a los tres modelos de referencia, con una ventaja especialmente amplia en SWE-bench Verified (70,6 frente a 47,7 del siguiente mejor). La comparación está limitada por la ausencia de datos de contexto, licencia y otros benchmarks para los modelos de referencia en la información disponible.
 
 ## Limitaciones y advertencias
 
-- Idioma: el modelo esta entrenado y evaluado unicamente en ingles (`en`), por lo que su rendimiento en castellano u otros idiomas no esta garantizado ni documentado.
-- Riesgo de alucinacion: no se proporcionan datos especificos sobre tasas de alucinacion ni mecanismos de mitigacion; es un riesgo inherente a los modelos generativos, especialmente en tareas de codigo y matematicas.
-- Sesgos: no se documentan evaluaciones de sesgo, toxicidad o equidad en la informacion disponible.
-- Resultados de benchmark: los datos proceden exclusivamente de la model card del autor y no se han verificado de forma independiente. La tabla original esta truncada, por lo que la comparativa esta incompleta.
-- Discrepancia de nomenclatura: el nombre comercial indica "7B", pero el recuento real de parametros en safetensors es de 8.999.178.240 (~9B), lo que debe tenerse en cuenta al planificar recursos.
-- Contexto largo: aunque la ventana es de 524.288 tokens, no se documenta la degradacion de calidad en el extremo superior de la ventana ni el coste de memoria de la cache KV.
-- Cuantizacion FP8: el autor afirma que el rendimiento es cercano al BF16, pero no se aportan metricas desglosadas que cuantifiquen la perdida exacta por tarea.
-- Despliegue en entornos ligeros: no se publican pesos GGUF, lo que limita el uso directo en llama.cpp u Ollama sin conversion adicional.
-- Licencia: Apache 2.0 permite uso comercial, pero conviene revisar las condiciones de los datasets de entrenamiento enlazados para confirmar su compatibilidad con el uso previsto.
-- Fechas: el repositorio esta fechado en septiembre de 2026, con solo 648 descargas y 8 likes, por lo que la validacion por parte de la comunidad es todavia muy limitada.
+- Idioma: el modelo solo declara soporte de inglés; el rendimiento en castellano u otros idiomas no está garantizado ni evaluado.
+- Sesgos: no se documentan análisis de sesgo en la información disponible; al entrenarse sobre un corpus no especificado, puede heredar sesgos presentes en los datos.
+- Alucinación: no se publican tasas de alucinación ni evaluaciones de factualidad; como todo modelo generativo, requiere verificación en aplicaciones críticas.
+- Cuantización FP8: aunque el autor afirma que el rendimiento está en línea con BF16, no se publican comparativas numéricas por benchmark entre ambas variantes; conviene validar la tarea concreta antes de migrar de BF16 a FP8.
+- Contexto largo: el rendimiento efectivo en los 512K tokens no está respaldado por benchmarks de contexto largo publicados; la degradación en posiciones intermedias o finales es un riesgo a testear.
+- Licencia: Apache 2.0 permite uso comercial, pero deben conservarse los avisos de licencia y atribución; los datasets de entrenamiento pueden tener sus propias condiciones.
+- Producción: el modelo requiere `transformers` con `custom_code` y formato `compressed-tensors`, lo que limita la compatibilidad con algunos runners; verificar el soporte en la versión de vLLM/TGI utilizada.
+- Memoria: el contexto completo de 512K es inviable en GPUs de consumo por el tamaño de la caché KV.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/IFM/K2-Horizon-7B-FP8
 - Modelo base (BF16): https://huggingface.co/IFM/K2-Horizon-7B
-- Codigo de entrenamiento (LLM360/xllm): https://github.com/LLM360/xllm
-- Codigo de evaluacion (Eval360-V2): https://github.com/LLM360/Eval360-V2
-- Dataset de preentrenamiento: https://huggingface.co/datasets/IFM/K2-Horizon-Pretrain-Data
+- Código de entrenamiento: https://github.com/ifm-ai/xllm
+- Código de evaluación: https://github.com/ifm-ai/Eval360
+- Navegador de datos de entrenamiento: https://github.com/ifm-ai/DATA_NAVIGATOR
+- Dataset de pretraining: https://huggingface.co/datasets/IFM/K2-Horizon-Pretrain-Data
 - Dataset de midtraining: https://huggingface.co/datasets/IFM/K2-Horizon-Midtrain-Data
-
-La busqueda web realizada no devolvio resultados relevantes sobre este modelo: los enlaces encontrados corresponden a entidades homonimas (ifm electronic, Institut Francais de la Mode, Intergroupe Francophone du Myelome) sin relacion con el modelo.

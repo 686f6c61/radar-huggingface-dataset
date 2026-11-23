@@ -5,7 +5,7 @@
   "author": "s3t4",
   "url": "https://huggingface.co/s3t4/LFM3-1.7B-Gemma-4-12B-Distill-Indonesian-GGUF",
   "created_at": "2026-11-22T15:07:36.000Z",
-  "updated_at": "2026-11-22T15:10:19.000Z",
+  "updated_at": "2026-11-22T15:59:14.000Z",
   "license": "lfm1.0",
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -38,7 +38,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 141,
   "trending_score": 0,
   "parameters": 1728801600,
   "parameters_human": "1.73B",

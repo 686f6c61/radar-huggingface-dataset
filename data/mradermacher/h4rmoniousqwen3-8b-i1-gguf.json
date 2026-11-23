@@ -1,0 +1,43 @@
+{
+  "schema": 2,
+  "id": "mradermacher/H4rmoniousQwen3-8B-i1-GGUF",
+  "slug": "mradermacher-h4rmoniousqwen3-8b-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/H4rmoniousQwen3-8B-i1-GGUF",
+  "created_at": "2026-11-23T07:45:06.000Z",
+  "updated_at": "2026-11-23T07:57:01.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 29306279200,
+  "storage_human": "29.3 GB",
+  "context_length": 40960,
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

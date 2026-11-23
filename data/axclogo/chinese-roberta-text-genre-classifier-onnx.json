@@ -1,0 +1,84 @@
+{
+  "schema": 2,
+  "id": "AxcLogo/chinese-roberta-text-genre-classifier-onnx",
+  "slug": "axclogo-chinese-roberta-text-genre-classifier-onnx",
+  "author": "AxcLogo",
+  "url": "https://huggingface.co/AxcLogo/chinese-roberta-text-genre-classifier-onnx",
+  "created_at": "2026-11-23T07:48:11.000Z",
+  "updated_at": "2026-11-23T07:49:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "onnx",
+  "languages": [
+    "zh"
+  ],
+  "tags": [
+    "onnx",
+    "chinese",
+    "text-classification",
+    "genre-classification",
+    "content-type-classification",
+    "discourse-type",
+    "social-media",
+    "user-generated-content",
+    "complaint-detection",
+    "news-detection",
+    "advertisement-detection",
+    "spam-detection",
+    "content-moderation",
+    "roberta",
+    "bert",
+    "int8",
+    "quantized",
+    "cpu",
+    "zh",
+    "base_model:hfl/chinese-roberta-wwm-ext",
+    "base_model:quantized:hfl/chinese-roberta-wwm-ext",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 111708932,
+  "storage_human": "112 MB",
+  "context_length": null,
+  "base_model": "hfl/chinese-roberta-wwm-ext",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "Chinese text genre classification",
+      "dataset": null,
+      "metric": "Accuracy (held-out, time-split)",
+      "value": 0.865
+    },
+    {
+      "task": "Chinese text genre classification",
+      "dataset": null,
+      "metric": "F1 (first-hand account)",
+      "value": 0.95
+    },
+    {
+      "task": "Chinese text genre classification",
+      "dataset": null,
+      "metric": "F1 (news report)",
+      "value": 0.87
+    }
+  ],
+  "sources": []
+}

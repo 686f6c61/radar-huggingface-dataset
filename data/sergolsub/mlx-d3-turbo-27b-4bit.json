@@ -5,7 +5,7 @@
   "author": "sergolsub",
   "url": "https://huggingface.co/sergolsub/mlx-d3-turbo-27B-4bit",
   "created_at": "2026-11-22T06:51:34.000Z",
-  "updated_at": "2026-11-22T06:51:35.000Z",
+  "updated_at": "2026-11-22T17:09:41.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -13,22 +13,26 @@
   "languages": [],
   "tags": [
     "mlx",
+    "safetensors",
+    "qwen3_5",
+    "custom_code",
     "base_model:vllm-sr/d3-turbo",
     "base_model:finetune:vllm-sr/d3-turbo",
     "license:apache-2.0",
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 68,
   "trending_score": 0,
-  "parameters": null,
-  "parameters_human": null,
-  "storage_bytes": 0,
-  "storage_human": null,
+  "parameters": 26085330160,
+  "parameters_human": "26.09B",
+  "storage_bytes": 14890689319,
+  "storage_human": "14.9 GB",
   "context_length": null,
   "base_model": "vllm-sr/d3-turbo",
   "formats": [
-    "mlx"
+    "mlx",
+    "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
@@ -36,8 +40,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "sergolsub/d3-turbo-27B-MLX-4bit",
+  "renamed_at": "2026-11-23T12:17:50.767Z",
   "benchmarks": [],
   "sources": []
 }

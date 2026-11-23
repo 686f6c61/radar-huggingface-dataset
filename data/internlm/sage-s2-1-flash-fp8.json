@@ -5,7 +5,7 @@
   "author": "internlm",
   "url": "https://huggingface.co/internlm/Sage-S2.1-Flash-FP8",
   "created_at": "2026-11-13T15:04:23.000Z",
-  "updated_at": "2026-11-16T08:30:22.000Z",
+  "updated_at": "2026-11-23T03:41:24.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -14,11 +14,12 @@
   "tags": [
     "safetensors",
     "glm5_next",
+    "arxiv:2611.21072",
     "fp8",
     "region:us"
   ],
-  "likes": 19,
-  "downloads_30d": 550,
+  "likes": 20,
+  "downloads_30d": 610,
   "trending_score": 15,
   "parameters": 321323031390,
   "parameters_human": "321.32B",

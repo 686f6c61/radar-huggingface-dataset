@@ -2,96 +2,100 @@
 
 ## Resumen
 
-ToolSpace-8B es un modelo agéntico de 8 mil millones de parámetros desarrollado por dongguanting, basado en Qwen3-8B y entrenado con trayectorias ToolSpace y aprendizaje por refuerzo (agent RL) para el uso de herramientas en horizontes largos (long-horizon tool use). El proyecto se presenta en el paper *ToolSpace: Scaling Tool-Centric Environment Synthesis for Long-Horizon Agents*.
+ToolSpace-8B es un modelo de lenguaje especializado en uso de herramientas (tool use) y razonamiento agéntico de horizonte largo, desarrollado por el autor dongguanting sobre el backbone Qwen3-8B. El modelo se entrena con trayectorias sintetizadas por ToolSpace, un pipeline que construye un grafo de composición de herramientas a partir de trazas de ejecución reales y genera tareas cross-environment mediante recorridos con rollback y verificación basada en ejecución. Sobre esas trayectorias se aplica un ajuste supervisado (SFT) seguido de aprendizaje por refuerzo agéntico on-policy.
 
-El problema que aborda es la escasez de datos de entrenamiento realistas para agentes que encadenan múltiples herramientas: ToolSpace construye un grafo de composición de herramientas a partir de trazas reales de ejecución, capturando dependencias de datos, de estado y de reintento, y sintetiza tareas entre entornos mediante recorridos con estado consciente (state-aware walks) con rollback. Solo se conservan las trayectorias que superan una verificación basada en ejecución.
+La relevancia del modelo radica en su enfoque: en lugar de entrenar únicamente con datos de function calling aislados, ToolSpace captura dependencias de datos, estado y reintentos entre herramientas, lo que permite abordar tareas multi-paso que requieren encadenar llamadas y recuperarse de fallos. Es un transformer denso de 8.190.735.360 parámetros con una longitud de contexto de 65.536 tokens, distribuido en formato BF16 Safetensors y con licencia MIT.
 
-Es relevante porque los benchmarks de agentes muestran que los modelos base de tamaño medio rinden muy mal en tareas agénticas multi-paso (Qwen3-8B obtiene una media de 7,2 en los siete benchmarks evaluados), y ToolSpace-8B con agent RL eleva esa media a 20,7. La familia incluye variantes de 35B-A3B y 744B-A40B, además de esta versión de 8B densa.
+El checkpoint publicado corresponde a la variante de 8B de una familia que incluye también versiones de 35B-A3B y 744B-A40B. Está pensado para servir como endpoint compatible con OpenAI mediante vLLM, con parsers específicos para tool calling y razonamiento.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer denso (base Qwen3-8B) |
+| Arquitectura | Transformer denso (backbone Qwen3-8B) |
 | Parametros totales | 8.190.735.360 |
-| Parametros activos | No aplica (modelo denso, no MoE) |
+| Parametros activos | No aplica (modelo denso) |
 | Longitud de contexto | 65.536 tokens |
-| Tipos de cuantizacion | No disponible (pesos publicados en BF16) |
+| Tipos de cuantizacion | No disponible en la informacion proporcionada (pesos publicados en BF16) |
 | Idiomas soportados | No disponible |
 | Licencia | MIT |
-| Formato de pesos | Safetensors (BF16) |
+| Formato de pesos | BF16 Safetensors |
 
 ## Arquitectura y entrenamiento
 
-ToolSpace-8B es un modelo denso de 8B parámetros derivado de Qwen3-8B. Su aportación principal no es arquitectónica sino de datos y entrenamiento: el pipeline ToolSpace construye un grafo de composición de herramientas a partir de trazas reales de ejecución, en el que se modelan tres tipos de dependencias (datos, estado y reintento). A partir de ese grafo se sintetizan tareas que cruzan varios entornos mediante recorridos conscientes del estado, con capacidad de rollback para explorar rutas alternativas.
+El modelo parte de Qwen3-8B, un transformer denso de 8B parámetros, y se especializa mediante un pipeline de dos fases: ajuste supervisado sobre trayectorias generadas por ToolSpace y, posteriormente, aprendizaje por refuerzo agéntico on-policy. ToolSpace construye un grafo de composición de herramientas a partir de trazas de ejecución reales, capturando dependencias de datos, de estado y de reintento entre llamadas. A partir de ese grafo sintetiza tareas cross-environment mediante recorridos state-aware con rollback, y conserva únicamente las trayectorias que superan una verificación basada en ejecución.
 
-El entrenamiento consta de dos fases: un fine-tuning supervisado (SFT) con las trayectorias ToolSpace verificadas por ejecución, seguido de aprendizaje por refuerzo agéntico on-policy (agent RL) sobre esas mismas tareas. La verificación basada en ejecución garantiza que solo las trayectorias que producen resultados correctos entran en el dataset, lo que reduce el ruido habitual en datos sintéticos de agentes.
+La innovación técnica principal no reside en la arquitectura del transformer, sino en el método de síntesis de entornos y datos de entrenamiento orientado a horizonte largo: el filtrado por ejecución reduce el ruido de trayectorias inválidas y el RL on-policy refina la política del agente sobre el entorno sintetizado. El contexto de 65.536 tokens permite mantener historiales de conversación y estado de herramientas extensos. No se detalla en la información disponible el número total de tokens de entrenamiento ni la composición exacta del dataset.
 
 ## Capacidades
 
-- Generación de texto conversacional con plantilla de chat incluida en el repositorio.
-- Function calling / tool calling: el modelo está entrenado específicamente para invocar herramientas; se sirve con `--tool-call-parser hermes` en vLLM.
-- Uso de herramientas en horizontes largos: encadenamiento multi-paso de herramientas con dependencias de datos, estado y reintentos, incluyendo tareas que cruzan varios entornos.
-- Razonamiento con modo de razonamiento: se recomienda el parser `deepseek_r1` para el reasoning, lo que indica salida con bloque de razonamiento separado.
-- Exposición de endpoint compatible con la API de OpenAI cuando se sirve con vLLM.
-- Capacidades multilingües: no disponible explícitamente (heredadas en la práctica de Qwen3-8B, pero sin confirmación del autor).
+- Generación de texto conversacional orientada a tareas agénticas.
+- Uso de herramientas y function calling, con soporte de tool choice automático en vLLM mediante el parser `hermes`.
+- Razonamiento multi-paso y de horizonte largo: encadenamiento de llamadas a herramientas con dependencias de estado y reintentos.
+- Recuperación ante fallos dentro de una trayectoria (rollback y reintento), según el diseño del pipeline de entrenamiento.
+- Modo de razonamiento explícito, servido con el parser `deepseek_r1` en vLLM.
+- Compatibilidad con endpoints OpenAI a través de vLLM.
+- Capacidades multilingües: no disponible en la información proporcionada.
+- Visión y audio: no disponibles.
 
 ## Casos de uso
 
-- Orquestación de agentes multi-herramienta: el modelo puede planificar y ejecutar cadenas de llamadas a herramientas con dependencias de estado, adecuado para flujos donde una acción depende del resultado de la anterior.
-- Automatización de tareas de oficina: en OfficeQA Pro y los benchmarks de automatización obtiene 34,3 y 12,0, lo que lo hace viable para pipelines que rellenan documentos, consultan hojas de cálculo o gestionan correo mediante APIs.
-- Operaciones bancarias y financieras asistidas: en τ³-Bench Banking alcanza 11,3, aplicable a asistentes que consultan cuentas, realizan transferencias simuladas o gestionan políticas en entornos de banca.
-- Asistentes con function calling en producción: la compatibilidad con vLLM y el endpoint OpenAI permite integrarlo directamente en backends que ya usan el formato de tool calling de OpenAI.
-- Investigación en agentes long-horizon: el repositorio de evaluación público permite reproducir los benchmarks, útil como baseline para investigación en RL agéntico.
-- Chatbot con herramientas integradas: la ventana de contexto de 65.536 tokens permite mantener conversaciones largas con resultados de herramientas acumulados sin truncamiento frecuente.
-- Clasificación y consulta de APIs: en BFCL V4 obtiene 67,5, indicativo de buen desempeño en llamadas a funciones sencillas y composiciones cortas.
+- Automatización de flujos de trabajo empresariales: el modelo puede encadenar llamadas a APIs internas con dependencias de estado, adecuado por su entrenamiento en trayectorias con dependencias de datos y reintentos, evaluado en AutomationBench (34,3).
+- Agentes de atención al cliente con acceso a sistemas: gestión de conversaciones multi-turno con contexto de hasta 65.536 tokens y ejecución de acciones como consultas de pedidos o modificaciones de cuenta mediante tool calling.
+- Asistentes de operaciones sobre suites ofimáticas y ofimática en la nube: tareas multi-aplicación evaluadas en OfficeQA Pro (12,0) y SkillsBench (4,1), donde el modelo debe coordinar herramientas heterogéneas.
+- Automatización de tareas de empleo y reclutamiento simulado: flujos evaluados en JobBench (15,5), con pasos secuenciales sobre múltiples herramientas.
+- Integración en pipelines de agentes con vLLM: despliegue como endpoint compatible con OpenAI (`--enable-auto-tool-choice --tool-call-parser hermes`) para orquestadores tipo LangChain o frameworks propios.
+- Evaluación e investigación en agentes de horizonte largo: el repositorio incluye un directorio de evaluación con comandos y configuraciones para reproducir los benchmarks, útil para investigadores que comparan métodos de síntesis de entornos.
+- Servicios financieros simulados: τ³-Bench Banking (11,3) refleja capacidad para tareas de dominio bancario con herramientas, aunque con margen de mejora.
 
 ## Benchmarks y rendimiento
 
-Resultados de la Tabla 1 del paper ToolSpace (media no ponderada sobre los siete benchmarks):
+Resultados de la Tabla 1 del paper ToolSpace. El promedio (Avg.) es la media no ponderada de los siete benchmarks.
 
-| Modelo | AutomationBench | SkillsBench | JobBench | τ³-Bench Banking | BFCL V4 | Harvey LAB | OfficeQA Pro | Media |
+| Modelo | AutomationBench | SkillsBench | JobBench | τ³-Bench Banking | BFCL V4 | Harvey LAB | OfficeQA Pro | Avg. |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
 | Qwen3-8B | 0,0 | 0,1 | 0,1 | 4,1 | 42,8 | 0,0 | 3,0 | 7,2 |
 | ToolSpace-8B (SFT) | 32,3 | 3,9 | 13,1 | 10,3 | 65,3 | 0,0 | 12,0 | 19,6 |
 | ToolSpace-8B + Agent RL (este checkpoint) | 34,3 | 4,1 | 15,5 | 11,3 | 67,5 | 0,0 | 12,0 | 20,7 |
 
-No se han publicado resultados en benchmarks generalistas (MMLU, HumanEval, GSM8K) en la información disponible.
+El salto más pronunciado respecto a Qwen3-8B se da en AutomationBench (+34,3 puntos) y BFCL V4 (+24,7 puntos). Harvey LAB permanece en 0,0 en todas las variantes.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia en BF16: aproximadamente 16-17 GB solo de pesos (el repositorio ocupa 16,4 GB), más la KV cache según la longitud de contexto; con contexto de 65.536 tokens se recomienda holgura adicional.
-- GPU recomendadas: una RTX 4090 (24 GB) puede alojar el modelo en BF16 con contexto moderado; para contexto completo de 65.536 tokens o mayor throughput, GPUs tipo A100 40GB/80GB o H100.
-- En GPUs de consumo con menos de 24 GB sería necesaria cuantización (GGUF/AWQ), aunque no hay versiones cuantizadas publicadas en la información disponible.
-- Despliegue: vLLM es el método documentado por el autor (con parsers `hermes` para tool calling y `deepseek_r1` para razonamiento); al ser un modelo basado en Qwen3 con formato transformers y safetensors, debería funcionar también con TGI, llama.cpp (tras conversión a GGUF) y Ollama, aunque sin confirmación oficial.
-- Latencia y throughput: no disponible.
+- VRAM estimada para inferencia en BF16: aproximadamente 16,4 GB solo para pesos, más overhead de KV cache; con contexto completo de 65.536 tokens el consumo crece de forma significativa.
+- Cuantización: no se especifican tipos soportados en la información disponible; al ser un modelo transformers/Safetensors, es convertible a GGUF/AWQ/GPTQ con herramientas externas, pero no hay datos oficiales de calidad tras cuantizar.
+- GPU recomendadas: A100 80 GB o H100 para servir con contexto completo y concurrencia; una RTX 4090 (24 GB) puede alojar los pesos en BF16 pero con margen limitado para KV cache a contexto largo.
+- Despliegue: vLLM es la opción documentada por el autor, con `--max-model-len 65536`, `--enable-auto-tool-choice`, `--tool-call-parser hermes` y `--reasoning-parser deepseek_r1`. No se documentan otras opciones (llama.cpp, Ollama, TGI) en la información disponible.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Media agéntica (7 benchmarks) | Licencia | Disponibilidad |
-|---|---|---|---:|---|---|
-| ToolSpace-8B | 8,19B (denso) | 65.536 | 20,7 | MIT | Pesos públicos en Hugging Face |
-| Qwen3-8B (base) | 8,19B (denso) | No disponible en la ficha | 7,2 | Apache 2.0 | Pesos públicos |
-| ToolSpace-35B-A3B | 35B total / ~3B activos (MoE) | No disponible | No disponible | No disponible | Pesos públicos en Hugging Face |
-| ToolSpace-744B-A40B | 744B total / ~40B activos (MoE) | No disponible | No disponible | No disponible | Pesos públicos en Hugging Face |
+| Modelo | Parametros | Contexto | Avg. (7 benchmarks) | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| ToolSpace-8B + Agent RL | 8,19B (denso) | 65.536 | 20,7 | MIT | Hugging Face |
+| Qwen3-8B (base) | 8B (denso) | no disponible | 7,2 | no disponible en la informacion | Hugging Face |
+| ToolSpace-35B-A3B | 35B totales / 3B activos (MoE) | no disponible | no disponible | no disponible en la informacion | Hugging Face |
+| ToolSpace-744B-A40B | 744B totales / 40B activos (MoE) | no disponible | no disponible | no disponible en la informacion | Hugging Face |
+
+La comparativa más directa es con su backbone Qwen3-8B, sobre el que mejora el promedio de 7,2 a 20,7. Las variantes mayores de la misma familia (35B-A3B y 744B-A40B) se anuncian en la model card, pero no se aportan sus resultados en la información disponible.
 
 ## Limitaciones y advertencias
 
-- Rendimiento agéntico aún modesto en términos absolutos: la media de 20,7 indica que falla con frecuencia en tareas long-horizon complejas; no es un modelo fiable sin supervisión en producción crítica.
-- Puntuación de 0,0 en Harvey LAB y resultados bajos en SkillsBench (4,1) y τ³-Bench Banking (11,3): capacidades muy desiguales según el dominio.
-- No hay datos de benchmarks generalistas publicados, por lo que no se puede verificar si el entrenamiento agéntico ha degradado capacidades de chat, código o razonamiento general (riesgo conocido de catastrophic forgetting en fine-tunings especializados).
-- Idiomas soportados no documentados por el autor.
-- No hay versiones cuantizadas oficiales publicadas, lo que limita el despliegue en hardware de consumo.
-- Licencia MIT: sin restricciones para uso comercial, aunque conviene revisar también la licencia del modelo base Qwen3-8B (Apache 2.0) en usos derivados.
-- Modelo muy reciente (publicado en octubre de 2026) con pocas descargas (203): escaso histórico de validación por la comunidad.
-- Riesgo de alucinación: no documentado específicamente, pero como todo modelo de lenguaje, puede generar llamadas a herramientas incorrectas o inventar parámetros; se recomienda validación de argumentos antes de ejecutar acciones con efectos reales.
+- Harvey LAB se mantiene en 0,0 en todas las variantes, lo que indica una carencia específica en ese tipo de tareas de dominio legal.
+- SkillsBench (4,1) y τ³-Bench Banking (11,3) muestran un rendimiento bajo en términos absolutos: el modelo sigue siendo débil en tareas de habilidades y banca comparado con el estado del arte.
+- Riesgo de alucinación en llamadas a herramientas: aunque el entrenamiento filtra trayectorias por verificación de ejecución, en producción pueden generarse argumentos o secuencias de llamadas inválidas.
+- Sesgos conocidos: no disponibles en la información proporcionada; al heredar el backbone Qwen3-8B, arrastra los sesgos de sus datos de preentrenamiento.
+- Idiomas soportados no documentados; no se garantiza un rendimiento multilingüe más allá del comportamiento del backbone.
+- La licencia MIT permite uso comercial, pero conviene verificar las condiciones del modelo base Qwen3-8B y de los datos de entrenamiento sintetizados.
+- El contexto de 65.536 tokens exige planificación de memoria en despliegue; a máxima longitud el KV cache puede dominar el consumo de VRAM.
+- Modelo con pocas descargas (409) y reciente (octubre de 2026): ecosistema y validación comunitaria limitados.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/dongguanting/ToolSpace-8B
+- Paper: https://huggingface.co/papers/2611.05036
 - Repositorio de código: https://github.com/dongguanting/ToolSpace
 - Directorio de evaluación: https://github.com/dongguanting/ToolSpace/tree/main/evaluation
 - Variante 35B-A3B: https://huggingface.co/dongguanting/ToolSpace-35B-A3B
 - Variante 744B-A40B: https://huggingface.co/dongguanting/ToolSpace-744B-A40B
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B
-- Paper: *ToolSpace: Scaling Tool-Centric Environment Synthesis for Long-Horizon Agents* (enlace directo no disponible)

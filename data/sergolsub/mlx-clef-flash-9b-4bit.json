@@ -5,7 +5,7 @@
   "author": "sergolsub",
   "url": "https://huggingface.co/sergolsub/mlx-clef-flash-9B-4bit",
   "created_at": "2026-11-22T04:23:21.000Z",
-  "updated_at": "2026-11-22T04:23:22.000Z",
+  "updated_at": "2026-11-22T17:09:31.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -13,22 +13,25 @@
   "languages": [],
   "tags": [
     "mlx",
+    "safetensors",
+    "qwen3_5",
     "base_model:Cloudflare/clef-flash",
     "base_model:finetune:Cloudflare/clef-flash",
     "license:apache-2.0",
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 57,
   "trending_score": 0,
-  "parameters": null,
-  "parameters_human": null,
-  "storage_bytes": 0,
-  "storage_human": null,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 6763795612,
+  "storage_human": "6.8 GB",
   "context_length": null,
   "base_model": "Cloudflare/clef-flash",
   "formats": [
-    "mlx"
+    "mlx",
+    "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
@@ -36,8 +39,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "sergolsub/clef-flash-9B-MLX-4bit",
+  "renamed_at": "2026-11-23T12:17:48.280Z",
   "benchmarks": [],
   "sources": []
 }

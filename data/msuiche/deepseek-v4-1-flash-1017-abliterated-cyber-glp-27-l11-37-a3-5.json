@@ -5,7 +5,7 @@
   "author": "msuiche",
   "url": "https://huggingface.co/msuiche/DeepSeek-V4.1-Flash-1017-abliterated-cyber-GLP-27-L11-37-a3.5",
   "created_at": "2026-10-29T18:05:53.000Z",
-  "updated_at": "2026-10-31T05:41:59.000Z",
+  "updated_at": "2026-11-22T18:49:50.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -32,7 +32,7 @@
     "region:us"
   ],
   "likes": 3,
-  "downloads_30d": 228,
+  "downloads_30d": 244,
   "trending_score": 0,
   "parameters": 138240,
   "parameters_human": "138240",

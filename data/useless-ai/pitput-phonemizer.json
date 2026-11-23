@@ -1,0 +1,49 @@
+{
+  "schema": 2,
+  "id": "useless-ai/pitput-phonemizer",
+  "slug": "useless-ai-pitput-phonemizer",
+  "author": "useless-ai",
+  "url": "https://huggingface.co/useless-ai/pitput-phonemizer",
+  "created_at": "2026-11-23T11:09:00.000Z",
+  "updated_at": "2026-11-23T11:09:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [
+    "he"
+  ],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "hebrew",
+    "g2p",
+    "phonemization",
+    "phonemes",
+    "he",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 10083873,
+  "parameters_human": "10.1M",
+  "storage_bytes": 40346436,
+  "storage_human": "40 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -2,97 +2,123 @@
 
 ## Resumen
 
-Valen-Decision-1.5-27B-GGUF es la variante en formato GGUF del modelo Valen-Decision-1.5-27B, desarrollado por Valen-Team. No es un modelo generativo de propósito general, sino un modelo de decisión (decision model) que recibe texto e imágenes como entrada y devuelve salidas tipadas y estructuradas: probabilidades para predicados, etiquetas de clasificación y acciones detectadas en vídeo. Está construido sobre el modelo base Qwen/Qwen3.5-27B, del que hereda la arquitectura y los pesos, con un entrenamiento específico orientado a tareas de decisión estructurada.
+Valen-Decision-1.5-27B es un modelo de decisión estructurada desarrollado por Valen-Team, afinado a partir de Qwen/Qwen3.8-27B. No es un modelo conversacional de propósito general: su función es recibir un estado (mensajes de texto, imágenes o vídeo) y devolver, en una sola pasada hacia delante, probabilidades para preguntas de tipo `predicate`, `choice` y `score`, además de cajas delimitadoras (`bbox`) para preguntas de localización visual. Está pensado para tareas de clasificación, enrutamiento y verificación con salida tipada.
 
-El modelo resuelve un problema concreto: sustituir pipelines ad hoc de clasificación y enrutado (tickets de soporte, moderación de imágenes de producto, etiquetado de vídeo) por un único modelo que emite decisiones tipadas en una sola pasada forward, con un protocolo de API definido (SystemOne y Decisions). Es relevante porque unifica tareas de visión-lenguaje y clasificación bajo un esquema de salida estructurado y compartido (shared-state), lo que simplifica la integración en producción.
+El modelo se publica en cinco tamaños (0.8B, 2B, 4B, 9B y 27B) y en tres formatos: pesos nativos para Transformers, ONNX y GGUF para el runtime propio de llama.cpp de Valen (versión 0.2.0). Esta ficha cubre la variante GGUF de 27B, que incluye un fichero de texto en Q8_0 (25,43 GiB) y un fichero de visión F32 separado (1,72 GiB) necesario para peticiones de imagen y bbox.
 
-Con 26.099.270.173 parámetros (unos 26,1B) y una licencia Apache 2.0, se distribuye en GGUF, aunque la model card advierte que las cuantizaciones Q4 y Q5 no superaron los controles de calidad y solo se recomiendan F32 y Q8_0. El repositorio ocupa 52,2 GB.
+La relevancia actual del modelo radica en su enfoque: en lugar de generar texto libre que luego hay que parsear, expone directamente distribuciones de probabilidad sobre candidatos definidos por el usuario, lo que simplifica la integración en pipelines de producción que necesitan decisiones auditables y deterministas. La licencia es Apache 2.0 y el modelo base es Qwen3.8-27B.
 
 ## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer (derivada de Qwen/Qwen3.5-27B), con código personalizado (`trust_remote_code`) |
-| Parametros totales | 26.099.270.173 (~26,1B) |
-| Parametros activos | no disponible (no se indica que sea MoE) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | GGUF; solo F32 y Q8_0 recomendados (Q4 y Q5 fallaron los controles de calidad) |
+| Arquitectura | Transformer con atención bidireccional por bloques (block-bidirectional attention) y cabeza de grounding bbox; derivado de Qwen3.8-27B |
+| Parámetros totales | 25.638.540.077 |
+| Parámetros activos | no disponible (no es MoE según la información disponible) |
+| Longitud de contexto | no disponible (el ejemplo de servicio usa `-c 4096`) |
+| Tipos de cuantización | Q8_0 (texto); visión en F32 |
 | Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (repo con tamaño de 52,2 GB); existen pesos nativos y ONNX en otras variantes del proyecto |
+| Formato de pesos | GGUF (runtime Valen llama.cpp 0.2.0); también existen pesos nativos y ONNX en otros repos |
+| Tamaño del repo | 81,4 GB |
+| Ficheros GGUF | `Valen-Decision-1.5-27B-Q8_0.gguf` (25,43 GiB), `vision-native-limits-F32.gguf` (1,72 GiB) |
+| Modelo base | Qwen/Qwen3.8-27B |
+| Pipeline | image-text-to-text |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de Qwen/Qwen3.5-27B y conserva su arquitectura transformer, pero se ha reentrenado para una tarea de decisión estructurada en lugar de generación libre de texto. La entrada es multimodal (texto e imagen, con soporte de vídeo en el código fuente aunque no en el paquete GGUF precompilado 0.1.0) y la salida es tipada: probabilidades de predicados, elecciones y puntuaciones emitidas en una única pasada forward. El modelo usa un mecanismo de estado compartido (shared-state) y requiere cargarse con `trust_remote_code=True` y `attn_implementation="sdpa"`.
+El modelo parte de Qwen3.8-27B y se afina para producir salidas estructuradas. La model card menciona dos innovaciones técnicas concretas: atención bidireccional por bloques (block-bidirectional attention) y una cabeza de grounding bbox. Con una sola pasada hacia delante, el modelo devuelve probabilidades para preguntas de predicado, elección y puntuación, y una caja delimitadora por cada pregunta bbox. La inferencia se expone mediante dos endpoints del runtime: `/v1/systemone` y `/v1/decisions`, que aceptan el esquema nativo de decisiones y devuelven las mismas cifras.
 
-El autor publica el código de entrenamiento y el conjunto de datos de entrenamiento (Valen-Training-General-100k), lo que permite afinar el modelo para tareas propias. No se detalla en la información disponible el número de tokens de entrenamiento, la composición exacta del dataset ni si se aplicaron técnicas de RLHF o DPO. La model card menciona explícitamente que el paquete GGUF precompilado 0.1.0 no compila soporte directo de vídeo, y que las pruebas históricas de vídeo con compilación desde fuente no cualifican al binario precompilado.
+No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni si se emplearon RLHF, DPO u otras técnicas de alineación. La model card indica explícitamente que los datos de entrenamiento de Valen-Decision-1.5 no son públicos. Sí se publica el código de entrenamiento en el repositorio de GitHub del proyecto, lo que permite afinar el modelo sobre datos propios.
 
 ## Capacidades
 
-- Clasificación de mensajes de cliente y enrutado de tickets mediante predicados con probabilidad asociada.
-- Verificación de imágenes contra requisitos definidos (por ejemplo, cribado de imágenes de producto).
-- Identificación de acciones en vídeo (en compilaciones desde fuente; no en el GGUF precompilado 0.1.0).
-- Salida estructurada y tipada: probabilidades, elecciones y puntuaciones en una sola pasada forward.
-- Soporte de dos formatos de API de decisión: SystemOne (Jev) y Decisions (OpenAI), con el mismo modelo.
-- Entrada image-text-to-text con salida tipada (image-text-to-typed-output).
-- Mecanismo de estado compartido (shared-state) para flujos multi-pregunta.
-- No se documentan capacidades de generación de texto libre, código, matemáticas ni tool calling en la información disponible.
+- Clasificación con salida tipada: devuelve probabilidades sobre candidatos definidos por el usuario para preguntas de tipo `choice`, `score`, `predicate` y `noul`.
+- Entrada multimodal: procesa texto e imágenes (pipeline image-text-to-text).
+- Grounding visual: genera cajas delimitadoras (`bbox`) con confianza asociada para preguntas de localización.
+- Salida estructurada en una sola pasada: toda la petición se evalúa de una vez, sin generación autoregresiva de texto libre.
+- Soporte de estado compartido (`shared-state`) entre preguntas dentro de una misma petición.
+- Integración vía API compatible con endpoints (`/v1/systemone`, `/v1/decisions`).
+- Capacidad de análisis de vídeo (la model card menciona identificación de acciones en vídeos como caso de uso).
+- No se documentan capacidades de tool calling, function calling ni razonamiento multi-paso en la información disponible.
+- Capacidades multilingües: no disponible.
 
 ## Casos de uso
 
-- Enrutado de tickets de soporte: el modelo clasifica el mensaje del cliente con predicados y devuelve probabilidades, lo que permite dirigir cada ticket al equipo adecuado con un umbral de confianza configurable. El Cookbook oficial incluye un tutorial específico de ticket routing.
-- Cribado de imágenes de producto: se definen requisitos como predicados y el modelo evalúa si la imagen los cumple, emitiendo una probabilidad por criterio. Útil en marketplaces que necesitan validar automáticamente fotos de catálogo.
-- Etiquetado de vídeo: detección de acciones y etiquetas en vídeo para indexación o moderación, siempre que se use una compilación con soporte de vídeo (no el GGUF precompilado 0.1.0).
-- Moderación de contenido multimodal: verificación de texto e imagen contra políticas definidas como predicados, con salida probabilística que permite fijar umbrales de revisión humana.
-- Servicio C++ en CPU Linux: despliegue con el runtime personalizado de Valen sobre GGUF en entornos sin GPU, orientado a servicios de decisión de baja latencia.
-- Integración vía API HTTP: uso del endpoint gratuito `api.valen-team.workers.dev/v1/decisions` para prototipado sin descargar pesos ni disponer de GPU.
-- Fine-tuning para dominios propios: el autor publica código y datos de entrenamiento, de modo que se puede adaptar el modelo a taxonomías de decisión específicas de una organización.
+- Clasificación de sentimiento y enrutamiento de tickets: el modelo recibe el mensaje del cliente como estado y devuelve la distribución de probabilidad sobre categorías predefinidas, lo que permite umbrales de confianza y derivación a revisión humana cuando la probabilidad es baja.
+- Verificación de imágenes de producto contra requisitos: con el fichero de visión, el modelo evalúa si una imagen cumple criterios definidos (presencia de elementos, encuadre) y devuelve probabilidades por criterio, útil en catálogos de e-commerce.
+- Localización de objetos mediante bbox: para preguntas de grounding, devuelve cajas delimitadoras con confianza, aplicable a inspección visual y anotación semiautomática.
+- Etiquetado de acciones en vídeo: la model card cita la identificación de acciones en vídeos como flujo de trabajo soportado, con la misma mecánica de preguntas tipadas.
+- Moderación de contenido con criterios explícitos: al definir los candidatos como categorías de política, la salida probabilística permite fijar umbrales y registrar la decisión con su incertidumbre.
+- Clasificación por lotes en pipelines de datos: el runtime admite paralelismo (`--parallel`) y evaluación en una sola pasada, lo que encaja en procesos de etiquetado masivo sin generación de texto.
+- Fine-tuning sobre dominios propios: al publicarse el código de entrenamiento, es posible adaptar el modelo a taxonomías internas partiendo de los pesos nativos.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La model card menciona controles de calidad (quality gates) que descartaron las cuantizaciones Q4 y Q5, y una validación P1 sobre imágenes fijas con el binario precompilado y el modelo 0.8B Q8_0, pero no se aportan cifras de MMLU, HumanEval, GSM8K ni métricas comparables.
+La model card menciona un "Decision Index" como métrica de evaluación en la que los tamaños mayores obtienen mejores puntuaciones, pero no se proporcionan los valores numéricos en la información disponible, por lo que no se presenta tabla comparativa de benchmarks.
+
+Sí se documenta una comparación de fidelidad entre el runtime GGUF 0.2.0 y la inferencia nativa en FP32 con `model.predict`, sobre seis peticiones (texto, imagen y cuatro peticiones bbox) en CPU Linux x86-64:
+
+| Fichero | Diferencia máx. probabilidad | Diferencia máx. caja | Diferencia máx. confianza bbox |
+|---|---:|---:|---:|
+| Q8_0 | 0,00252 | 0,0553 | 0,0113 |
+
+El umbral de aceptación de la release es una diferencia de probabilidad de hasta 0,08. Los recuentos de tokens fueron idénticos en todas las peticiones.
 
 ## Requisitos de hardware
 
-- VRAM estimada: no disponible de forma explícita. Con ~26,1B parámetros, la inferencia en Q8_0 requiere del orden de 26-30 GB de memoria solo para los pesos, más overhead; en F32 sería considerablemente mayor. El autor advierte que el tamaño de fichero no equivale al requisito de RAM.
-- GPU recomendadas: el ejemplo oficial de carga usa una GPU NVIDIA con CUDA; no se especifican modelos concretos (A100, H100, RTX 4090) en la información disponible.
-- GPU de consumo: no confirmado. Un modelo de ~26B en Q8_0 no cabe en GPUs de consumo de 24 GB sin offloading o cuantización inferior, y las cuantizaciones Q4/Q5 no están recomendadas por el autor.
-- Opciones de despliegue: runtime personalizado de Valen sobre GGUF (C++ en CPU Linux); SGLang/vLLM para despliegue en GPU; ONNX Runtime (Python/JavaScript) para aplicaciones offline; Transformers con `trust_remote_code`. El autor indica que no se reclama soporte en llama.cpp u Ollama oficiales sin modificar.
+- VRAM/RAM para inferencia: el fichero de texto Q8_0 ocupa 25,43 GiB; el fichero de visión F32 añade 1,72 GiB. En total, en torno a 27 GiB solo para pesos, más overhead de contexto y buffers.
+- GPU: no se documentan requisitos de GPU para el runtime GGUF; el ejemplo oficial de servicio usa CPU con `-ngl 0` y `--device none`.
+- CPU: el runtime Linux x86-64 requiere Ubuntu 22.04 o superior, glibc 2.35 o superior y soporte AVX2/FMA/F16C/BMI2.
+- GPU de consumo: no disponible; con 25,43 GiB en Q8_0 no cabe en GPUs de consumo de 24 GB o menos sin cuantización adicional, y no se listan otras cuantizaciones en este repositorio.
+- Despliegue: runtime propio Valen llama.cpp 0.2.0 (`./serve`), con endpoints `/v1/systemone` y `/v1/decisions`. No se documenta compatibilidad con vLLM, Ollama o TGI en la información disponible.
+- Parámetros de servicio del ejemplo oficial: `-c 4096 -b 4096 -ub 4096 -t 4 --parallel 1 --no-warmup`; para peticiones mayores hay que subir `-c`, `-b` y `-ub` conjuntamente.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Tarea | Licencia | Formato |
-|---|---|---|---|---|---|
-| Valen-Decision-1.5-27B-GGUF | ~26,1B | no disponible | Decisión estructurada multimodal | Apache 2.0 | GGUF |
-| Qwen/Qwen3.5-27B (modelo base) | ~27B | no disponible | Generación de propósito general | no disponible en esta ficha | no disponible |
-| Alternativas de clasificación multimodal | no disponible | no disponible | Clasificación imagen-texto | no disponible | no disponible |
+No se dispone de datos de benchmarks ni de modelos directamente comparables en la información proporcionada. Como referencia estructural se incluyen los otros tamaños de la misma familia:
 
-No se dispone de datos de rendimiento de modelos comparables en la información proporcionada, por lo que la comparación cuantitativa no está disponible.
+| Modelo | Parámetros | Formato | Licencia | Disponibilidad |
+|---|---|---|---|---|
+| Valen-Decision-1.5-27B-GGUF | 25.638.540.077 | GGUF | Apache 2.0 | Hugging Face |
+| Valen-Decision-1.5-9B | no disponible | nativo, ONNX, GGUF | Apache 2.0 | Hugging Face |
+| Valen-Decision-1.5-4B | no disponible | nativo, ONNX, GGUF | Apache 2.0 | Hugging Face; también en API gratuita y Space |
+| Valen-Decision-1.5-2B | no disponible | nativo, ONNX, GGUF | Apache 2.0 | Hugging Face; también en API gratuita y Space |
+| Valen-Decision-1.5-0.8B | no disponible | nativo, ONNX, GGUF | Apache 2.0 | Hugging Face; también en API gratuita y Space |
+
+Comparativa con modelos de propósito general de tamaño similar: no disponible.
 
 ## Limitaciones y advertencias
 
-- Las cuantizaciones GGUF Q4 y Q5 no superaron los controles de calidad del autor; solo F32 y Q8_0 están recomendadas.
-- El paquete GGUF precompilado 0.1.0 no incluye soporte directo de vídeo; las pruebas de vídeo históricas se hicieron con compilación desde fuente y no cualifican al binario precompilado.
-- No se reclama compatibilidad con llama.cpp u Ollama oficiales sin modificar; requiere el runtime personalizado de Valen o backends como SGLang/vLLM.
-- La validación P1 solo cubre imágenes fijas sobre el binario precompilado con el modelo 0.8B Q8_0, y no se extiende a otros tamaños.
-- El modelo requiere `trust_remote_code=True`, lo que implica ejecutar código del autor.
-- No se documentan sesgos conocidos, riesgo de alucinación ni cobertura idiomática; al ser un modelo de decisión con salida probabilística, conviene fijar umbrales y revisión humana en producción.
-- La licencia Apache 2.0 permite uso comercial, pero el modelo base Qwen3.5-27B puede tener condiciones propias que conviene verificar.
-- El repositorio registra 0 descargas y 0 likes en el momento de la consulta, lo que sugiere una adopción aún muy limitada.
+- Modelo especializado en decisiones estructuradas: no está pensado como chat generativo abierto; su salida son probabilidades sobre candidatos y cajas, no texto libre.
+- Datos de entrenamiento no públicos: no es posible auditar la composición del dataset ni evaluar sesgos de origen con la información disponible.
+- Idiomas soportados no documentados: no hay garantía de comportamiento multilingüe más allá de lo que herede del modelo base.
+- Riesgo de calibración: las probabilidades deben validarse contra datos propios antes de fijar umbrales en producción; la model card recomienda políticas de incertidumbre en sus tutoriales.
+- Dependencia de runtime propio: el GGUF requiere el runtime Valen llama.cpp 0.2.0, no el llama.cpp estándar, lo que limita las opciones de despliegue y añade un paso de verificación de integridad (SHA256SUMS, MANIFEST.json).
+- Fichero de visión separado: las peticiones de imagen y bbox necesitan descargar además `vision-native-limits-F32.gguf`; el servicio solo texto funciona únicamente con el fichero Q8_0.
+- Contexto de ejemplo limitado a 4096 tokens: no se documenta la longitud máxima real; peticiones grandes requieren ajustar los parámetros del servidor.
+- Licencia Apache 2.0: permite uso comercial, pero conviene revisar las condiciones del modelo base Qwen3.8-27B y las notas de licencia de los tutoriales del proyecto.
+- Sin datos de benchmarks públicos: la evaluación se limita al "Decision Index" mencionado sin cifras, lo que dificulta comparaciones objetivas con alternativas.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/Valen-Team/Valen-Decision-1.5-27B-GGUF
-- Modelo base: https://huggingface.co/Qwen/Qwen3.5-27B
-- Web y demo gratuita: https://valen-team.github.io/
-- Repositorio de código y entrenamiento: https://github.com/Valen-Team/Valen
-- Dataset de entrenamiento: https://huggingface.co/datasets/Valen-Team/Valen-Training-General-100k
+- Modelo en Hugging Face: https://huggingface.co/Valen-Team/Valen-Decision-1.5-27B-GGUF
+- Pesos nativos 27B: https://huggingface.co/Valen-Team/Valen-Decision-1.5-27B
+- ONNX 27B: https://huggingface.co/Valen-Team/Valen-Decision-1.5-27B-ONNX
+- Tamaño 9B: https://huggingface.co/Valen-Team/Valen-Decision-1.5-9B
+- Tamaño 4B: https://huggingface.co/Valen-Team/Valen-Decision-1.5-4B
+- Tamaño 2B: https://huggingface.co/Valen-Team/Valen-Decision-1.5-2B
+- Tamaño 0.8B: https://huggingface.co/Valen-Team/Valen-Decision-1.5-0.8B
+- Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
+- API gratuita y demo web: https://valen-team.github.io/
+- Space de playground: https://huggingface.co/spaces/Valen-Team/Valen-API
+- Código de entrenamiento: https://github.com/Valen-Team/Valen
+- Release del runtime GGUF 0.2.0: https://github.com/Valen-Team/Valen/releases/tag/gguf-runtime-v0.2.0
+- Guía GGUF: https://valen-team.github.io/docs/valen/gguf/
 - Cookbook: https://valen-team.github.io/cookbook/
-- Guía de elección de versión: https://valen-team.github.io/docs/valen/choosing/
-- Documentación de API: https://valen-team.github.io/docs/valen/api/
-- Quickstart de Transformers: https://valen-team.github.io/docs/valen/quickstart/
-- Validación: https://valen-team.github.io/cookbook/validation/
-- Demo en vídeo: https://raw.githubusercontent.com/Valen-Team/Valen/main/assets/demos/valen-decision-1.5-demo.mp4
-- API SystemOne (Jev): https://docs.typesafe.ai/api/system-one
-- API Decisions (OpenAI): https://developers.openai.com/api/docs/guides/decisions
+- Cookbook, API básica: https://valen-team.github.io/cookbook/api-quickstart/
+- Cookbook, inferencia local: https://valen-team.github.io/cookbook/local-inference/
+- Cookbook, enrutamiento de tickets: https://valen-team.github.io/cookbook/ticket-routing/
+- Cookbook, cribado de imágenes de producto: https://valen-team.github.io/cookbook/product-screening/
+- Cookbook, etiquetado de vídeo: https://valen-team.github.io/cookbook/video-tagging/

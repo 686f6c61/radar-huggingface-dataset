@@ -2,107 +2,108 @@
 
 ## Resumen
 
-Granite-4.1-8B en formato LiteRT-LM es la conversión on-device del modelo instruct denso `ibm-granite/granite-4.1-8b` de IBM, empaquetada por la comunidad `litert-community` para el runtime LiteRT-LM de Google (antes TensorFlow Lite). El paquete distribuye dos ficheros `.litertlm` —uno int8 y otro int4— que incorporan el grafo GPU-composite y están pensados para ejecución local en dispositivos edge: móviles Android, portátiles Apple Silicon y estaciones de trabajo sin GPU de datacenter. Resuelve el problema de llevar un LLM de 8B con contexto largo y alineación para tool calling a hardware de consumo, sacrificando ventana de contexto (4096 tokens en estos ficheros frente a los 128K del modelo original) a cambio de latencias interactivas.
+Granite-4.1-8B en formato LiteRT-LM es una conversión del modelo denso `ibm-granite/granite-4.1-8b` de IBM al formato `.litertlm`, pensado para el runtime LiteRT-LM de Google (orientado a despliegue en dispositivo, edge y móvil). El paquete lo publica el colectivo `litert-community` e incluye dos ficheros: uno con cuantización int8 y otro con cuantización int4, ambos con grafo compuesto para GPU. La conversión se realizó con litert-torch 0.9.4 y se probó con litert-lm 0.18.0.
 
-El modelo base es un transformer decoder-only denso con GQA, RoPE, SwiGLU, RMSNorm y embeddings de entrada/salida compartidos: 40 capas, hidden size 4096, 32 cabezas de atención con 8 KV heads y vocabulario de 100.352 tokens. IBM lo entrenó mediante supervised fine-tuning sobre datasets de instrucciones abiertos y datos sintéticos internos, seguido de alineación con aprendizaje por refuerzo para tool calling, seguimiento de instrucciones y chat, con publicación el 29 de abril de 2026. La conversión se realizó con litert-torch 0.9.4 y se validó contra litert-lm 0.18.0.
+El modelo base es un transformer decoder-only denso de 8.791.592.960 parámetros en bf16 (8,38 B sin la copia almacenada de la tabla de salida atada), con 40 capas, hidden size 4096, GQA con 32 cabezas de atención y 8 cabezas KV, vocabulario de 100.352 tokens con embeddings atados, y ventana de contexto de 128K en el modelo original. IBM lo publicó el 29 de abril de 2026 como modelo instruct de contexto largo, ajustado con datasets abiertos de instrucciones y datos sintéticos internos, con SFT y alineamiento por refuerzo para tool calling, seguimiento de instrucciones y chat.
 
-La relevancia actual viene de que es una de las pocas conversiones LiteRT-LM de un modelo de 8B con licencia Apache 2.0 y alineación específica para function calling, con métricas de rendimiento publicadas tanto en Mac Studio M4 Max (58,3 tok/s en GPU con int4) como en Galaxy S26 (5,3–5,4 tok/s en GPU). El repo ocupa 28,2 GB y acumula 372 descargas desde su creación en octubre de 2026.
+Su relevancia ahora es práctica: permite ejecutar un modelo de 8B con calidad instruct en hardware de consumo y en teléfonos, con rendimiento medido de 58,3 tok/s en un Mac Studio M4 Max y 5,3–5,4 tok/s en un Galaxy S26, manteniendo una precisión en GSM8K (n=100) de 93 con int4 frente a 96 del bf16 de referencia. La licencia Apache 2.0 facilita su adopción comercial.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only denso (GQA, RoPE, SwiGLU, RMSNorm, embeddings entrada/salida atados) |
-| Parametros totales | 8.791.592.960 en bf16 (8,38 B sin la copia almacenada de la tabla de salida atada) |
+| Arquitectura | Transformer decoder-only denso (GQA, RoPE, SwiGLU, RMSNorm, embeddings de entrada/salida atados) |
+| Parametros totales | 8.791.592.960 en bf16 (8,38 B sin la copia de la tabla de salida atada) |
 | Parametros activos | no disponible (modelo denso, no MoE) |
-| Longitud de contexto | 4096 tokens en los ficheros LiteRT-LM (128K en el modelo base IBM) |
-| Tipos de cuantizacion | int8 dynamic en capas lineales con activaciones float; int4 blockwise-32 + OCTAV en lineales con embedding int8 |
-| Idiomas soportados | 12 idiomas segun IBM (de ingles a chino); lista concreta no disponible en la informacion proporcionada |
+| Longitud de contexto | 128K en el modelo base; 4096 tokens en los ficheros LiteRT-LM |
+| Tipos de cuantizacion | int8 (lineales en int8 dinámico, activaciones float) e int4 (blockwise-32 + OCTAV en lineales, embedding int8) |
+| Idiomas soportados | 12 idiomas segun IBM (del ingles al chino); lista concreta no disponible en la informacion proporcionada |
 | Licencia | Apache 2.0 |
-| Formato de pesos | `.litertlm` (LiteRT-LM); pesos originales en safetensors en el repo base de IBM |
+| Formato de pesos | `.litertlm` (LiteRT-LM); ficheros de 8,95 GB (int8) y 5,15 GB (int4) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base sigue una arquitectura transformer decoder-only densa con 40 capas, hidden size 4096, 32 cabezas de atención y 8 KV heads (GQA, ratio 4:1), RoPE para codificación posicional, SwiGLU en las MLP y RMSNorm. El vocabulario de 100.352 tokens usa embeddings de entrada y salida atados, lo que explica la diferencia entre los 8.791.592.960 parámetros contados por el Hub (incluye una copia almacenada de la tabla de salida) y los 8,38 B efectivos. IBM entrenó el base con supervised fine-tuning sobre datasets de instrucciones abiertos más datos sintéticos internos, y después aplicó alineación por aprendizaje por refuerzo orientada a tool calling, instruction following y chat.
+El modelo base es un transformer decoder-only denso con 40 capas, hidden size 4096, 32 cabezas de atención con 8 cabezas KV (GQA), RoPE, activación SwiGLU, normalización RMSNorm y embeddings de entrada/salida atados con vocabulario de 100.352 tokens. IBM lo describe como ajustado desde Granite-4.1-8B-Base sobre datasets abiertos de instrucciones y datos sintéticos recopilados internamente, con supervised fine-tuning y alineamiento mediante reinforcement learning orientado a tool calling, seguimiento de instrucciones y conversación.
 
-La conversión a LiteRT-LM introduce dos optimizaciones técnicas destacables. Primero, el grafo GPU-composite: las 7 firmas de decoder de ambos ficheros se delegan completamente al delegate GPU (OpenCL en Android, Metal en macOS), con las firmas de embedding de 4 operaciones ejecutándose en CPU. Segundo, la receta de cuantización int4 usa bloques de 32 elementos más OCTAV sobre las capas lineales, mientras la tabla de embedding se almacena en int8 y en una sección separada del fichero (419.484.080 bytes), lo que permite cargarla independientemente y mantener el fichero principal por debajo de límites prácticos de memoria. Los ficheros declaran activaciones fp16 por defecto; forzar fp32 en int8 mantiene la corrección pero ralentiza un 15 %.
+La conversión a LiteRT-LM aplica dos recetas distintas: int8 dinámico en las capas lineales con activaciones en coma flotante, y int4 blockwise de tamaño 32 con OCTAV en las lineales más un embedding en int8. En ambos casos la tabla de embeddings se separa en una sección propia (419.484.080 bytes). Los ficheros incorporan un grafo compuesto para GPU y, por defecto, activaciones fp16 en el runtime; declarar fp32 mantuvo la corrección pero resultó un 15 % más lento. Las 7 firmas del decoder de ambos ficheros se delegaron completamente en la GPU del Mac, y las 7 del fichero int4 en la GPU del Galaxy S26 mediante el delegado OpenCL (1860 / 1661 / 1693 operaciones).
 
 ## Capacidades
 
-- Generación de texto e instrucciones multi-turno en contexto largo (hasta 4096 tokens en estos ficheros).
-- Razonamiento aritmético y matemático de varios pasos (GSM8K con formato `#### <número>`).
-- Tool calling y function calling, alineados explícitamente por IBM mediante RL.
-- Seguimiento de instrucciones y formato de chat con plantilla del bundle (sin turno de sistema).
-- Extracción de información estructurada (fechas, entidades) desde texto libre.
-- Conversación multi-turno con memoria de turnos previos verificada en pruebas de tres turnos.
-- Generación de salida larga sin repetición de frases (verificado hasta 512 tokens).
-- Capacidades multilingües limitadas a los 12 idiomas declarados por IBM (lista concreta no disponible).
-- No incluye visión, audio ni modo thinking extendido según la información disponible.
+- Generación de texto y razonamiento de tipo instruct, con contexto largo en el modelo base (128K) y 4096 tokens en estos ficheros.
+- Resolución de problemas matemáticos paso a paso (evaluado en GSM8K con formato `#### <número>`).
+- Tool calling y function calling, reforzados explícitamente durante el alineamiento por refuerzo de IBM.
+- Seguimiento de instrucciones y conversación multi-turno; verificado con conversaciones de tres turnos en ambos ficheros y backends.
+- Capacidad multilingüe: 12 idiomas según IBM, aunque la lista concreta no está disponible en la información proporcionada.
+- Extracción de información estructurada (por ejemplo, fechas en texto) mediante instrucciones directas.
+- Generación de salidas largas: en la prueba de hasta 512 tokens no se repitieron frases.
+- No se documentan capacidades de visión, audio ni modo thinking explícito en la información disponible.
 
 ## Casos de uso
 
-- Asistente de extracción de datos en móvil: el modelo responde a prompts como extraer fechas o entidades de un texto, ejecutándose localmente en un Galaxy S26 a 5,3–5,4 tok/s en GPU, sin enviar datos a la nube y cumpliendo requisitos de privacidad.
-- Chatbot de atención al cliente on-device: con 4096 tokens de contexto puede sostener conversaciones multi-turno (verificado en pruebas de tres turnos) manteniendo coherencia entre turnos y sin coste de inferencia por servidor.
-- Automatización de respuestas aritméticas en apps educativas: GSM8K con 93–95 puntos en int4/int8 permite resolver problemas de matemáticas de primaria/secundaria en el dispositivo, con formato de respuesta controlado por plantilla.
-- Agente local con tool calling en pipelines de automatización personal: la alineación RL para function calling permite invocar APIs locales (calendario, ficheros, domótica) desde un móvil o portátil sin depender de conectividad.
-- Prototipado rápido en Mac Studio o portátil Apple Silicon: 58,3 tok/s en GPU con int4 y 5,81 s para prefill de 1024 tokens más 256 decodificados a contexto 2048 hacen viable iterar sobre prompts y evaluar calidad antes de desplegar en servidor.
-- Procesamiento de documentos en edge con ventana de 4096 tokens: resumen, clasificación y extracción de campos sobre fragmentos de texto en dispositivos sin GPU dedicada, usando el fichero int4 de 5,15 GB como opción de menor huella.
-- Evaluación de calidad de cuantización en CI: los scripts de verificación publicados (8 preguntas con `--temperature 0`) permiten integrar comprobaciones de regresión de calidad en pipelines de conversión de modelos.
+- Asistentes en dispositivo móvil: el fichero int4 (5,15 GB) se ejecuta en la GPU de un Galaxy S26 a 5,3–5,4 tok/s, lo que permite integrar un asistente conversacional local sin depender de la nube.
+- Extracción de entidades y datos estructurados: el ejemplo oficial extrae fechas de un texto ("The meeting moved from May 3 to May 17"), adecuado para pipelines de procesamiento documental en edge.
+- Automatización de agentes con tool calling: el ajuste por RL en tool calling permite construir agentes que invocan APIs o funciones en aplicaciones de escritorio y móviles.
+- Razonamiento matemático y resolución de problemas: con 93/100 en GSM8K en int4, sirve para tutores o asistentes educativos que resuelven problemas paso a paso en local.
+- Procesamiento por lotes en estación de trabajo: en un Mac Studio M4 Max el int4 decodifica a 58,3 tok/s, suficiente para tareas de generación y resumen a escala moderada sin GPU dedicada.
+- Chat multi-turno con contexto moderado: la ventana de 4096 tokens de estos ficheros cubre conversaciones y documentos de extensión media en aplicaciones embebidas.
+- Prototipado y demos offline: el formato `.litertlm` y el binario precompilado de Android simplifican el despliegue en ferias, entornos sin conectividad o pruebas de concepto en hardware de consumo.
 
 ## Benchmarks y rendimiento
 
-Resultados publicados por el autor de la conversión. Las puntuaciones GSM8K son comparables solo dentro de esta tabla; no son equiparables al 92,49 de IBM (8-shot, distinto setup de prompt). IFEval no se ejecutó para este modelo.
+Precisión en GSM8K (n=100, preguntas 0–99, greedy, máximo 1024 tokens de salida, proceso nuevo por pregunta, GPU del Mac; comparable solo dentro de esta tabla y no con el 92,49 de IBM, que usa 8-shot y otro setup):
 
 | Configuracion | GSM8K (n=100) |
 |---|---|
-| bf16 referencia (transformers, MPS) | 96 |
-| int8, litert-lm Mac GPU | 95 |
-| int4, litert-lm Mac GPU | 93 |
+| bf16 de referencia (transformers, MPS) | 96 |
+| int8, litert-lm GPU Mac | 95 |
+| int4, litert-lm GPU Mac | 93 |
 
-Rendimiento medido (prefill de 1024 tokens más 256 tokens decodificados, contexto 2048):
+Tiempo para un prefill de 1024 tokens más 256 tokens decodificados con contexto 2048:
 
-| Configuracion | Mac M4 Max | Galaxy S26 | Pixel 8a |
+| Configuracion | Mac M4 Max (s) | Galaxy S26 (s) | Pixel 8a |
 |---|---|---|---|
-| int4 GPU | 5,81 s | 58,7 s y 59,6 s (dos ejecuciones) | detenido por regla de memoria |
-| int8 GPU | 6,98 s | no ejecutado | no ejecutado (fichero mayor que RAM del movil) |
-| int8 CPU | 35,3 s | no ejecutado | no ejecutado |
-| int4 CPU | 41,8 s | no ejecutado | no ejecutado |
+| int4 GPU | 5,81 | 58,7 y 59,6 (dos ejecuciones) | detenido por la regla de memoria |
+| int8 GPU | 6,98 | no ejecutado | no ejecutado (el fichero supera la RAM del teléfono) |
+| int8 CPU | 35,3 | no ejecutado | no ejecutado |
+| int4 CPU | 41,8 | no ejecutado | no ejecutado |
 
-Throughput de decodificación: 58,3 tok/s en Mac Studio M4 Max GPU con int4; 5,3–5,4 tok/s en Galaxy S26 GPU con int4. Corrección: 8/8 en las 8 preguntas de verificación para int8 e int4 en CPU y GPU, igual que bf16.
+Velocidad de decodificación: 58,3 tok/s en Mac Studio M4 Max (int4, GPU) y 5,3–5,4 tok/s en Galaxy S26 (int4, GPU). Corrección en el chequeo de 8 preguntas: 8/8 para int8 e int4 en CPU y GPU, y 8/8 para bf16. IFEval no se ejecutó para este modelo.
 
 ## Requisitos de hardware
 
-- VRAM/memoria estimada: int8 ocupa 8,95 GB (8.949.972.992 bytes) y int4 5,15 GB (5.152.096.256 bytes) en disco; en ejecución hay que sumar activaciones fp16 y overhead del runtime.
-- GPU recomendadas: Apple Silicon (M4 Max validado), GPU Android con delegate OpenCL (Galaxy S26 validado); GPUs de datacenter (A100, H100, RTX 4090) no están documentadas para este runtime en la información disponible.
-- Cabe en consumer GPU: sí en Apple Silicon de gama alta con int4; en móvil Android de gama alta con int4 (Galaxy S26); Pixel 8a no puede con ninguno de los dos ficheros según la regla de memoria del autor (int8 supera la RAM del dispositivo).
-- iOS: no medido; ambas secciones principales de pesos superan 2 GiB (int8 7,94 GiB, int4 4,41 GiB), lo que bloquea la carga según la explicación en la ficha de `granite-4.1-3b`.
-- Opciones de despliegue: runtime LiteRT-LM 0.18.0 (Python API y binario Android precompilado); conversión reproducible con litert-torch 0.9.4. vLLM, llama.cpp, Ollama y TGI no aplican a este formato.
-- Latencia y throughput: ver tabla de rendimiento; int4 es más rápido en las dos GPUs medidas, mientras en CPU de Mac int8 supera a int4 (prefill el doble más rápido).
+- VRAM/RAM estimada: el fichero int4 ocupa 5,15 GB y el int8 8,95 GB; la sección principal de pesos es de 4,41 GiB (int4) y 7,94 GiB (int8), más 419.484.080 bytes de embeddings.
+- GPU de escritorio: Mac Studio M4 Max validado (58,3 tok/s en int4); no se documentan pruebas en A100, H100 ni RTX 4090.
+- Móvil: Galaxy S26 validado con int4 en GPU; el Pixel 8a no pudo ejecutar int4 por la regla de memoria del proyecto y el int8 no cabe en su RAM.
+- iOS: no medido; ambas secciones principales superan los 2 GiB, lo que según la card es un obstáculo en iOS.
+- Consumer GPU: no hay datos específicos de RTX 4090 u otras GPU de consumo en la información disponible.
+- Despliegue: runtime LiteRT-LM (`litert-lm run`), con backends CPU y GPU (`--backend gpu`) y opción `--cache no`; binario precompilado de Android mencionado en la card. No se documenta soporte de vLLM, llama.cpp, Ollama ni TGI.
+- Latencia: prefill de 1024 tokens más 256 decodificados en 5,81 s (int4 GPU, Mac) y 58,7–59,6 s (int4 GPU, Galaxy S26); en CPU del Mac, int8 es más rápido que int4 por un prefill aproximadamente el doble de rápido.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Formato / runtime | Licencia | Rendimiento publicado |
+| Modelo | Parametros | Contexto | Formato | Licencia | Notas |
 |---|---|---|---|---|---|
-| granite-4.1-8b (esta ficha) | 8,79 B (8,38 B efectivos) | 4096 (128K en base) | `.litertlm` / LiteRT-LM | Apache 2.0 | GSM8K 93–96 (n=100) |
-| ibm-granite/granite-4.1-8b (base) | 8,79 B | 128K | safetensors / transformers | Apache 2.0 | GSM8K 92,49 (8-shot, IBM) |
-| litert-community/granite-4.1-3b | no disponible en esta informacion | no disponible | `.litertlm` / LiteRT-LM | Apache 2.0 | no disponible |
-| Otras conversiones LiteRT-LM de 8B | no disponible | no disponible | `.litertlm` | no disponible | no disponible |
+| litert-community/granite-4.1-8b | 8,79 B (bf16) | 4096 en estos ficheros (128K en el base) | `.litertlm` int8/int4 | Apache 2.0 | Conversión edge con rendimiento medido en Mac y Android |
+| litert-community/granite-4.1-3b | no disponible | no disponible | `.litertlm` | Apache 2.0 (segun el modelo base) | Conversión menor de la misma familia, citada en la card |
+| ibm-granite/granite-4.1-8b | 8,79 B | 128K | safetensors (bf16) | Apache 2.0 | Modelo original; mayor contexto y referencia de precisión (GSM8K 92,49 en 8-shot) |
+
+No se dispone de datos de benchmarks comparables con otras familias de modelos del mismo tamaño en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Ventana de contexto reducida a 4096 tokens frente a los 128K del modelo base; no apta para documentos largos o conversaciones extensas.
-- IFEval no fue evaluado por el autor de la conversión, por lo que la calidad de seguimiento de instrucciones no está cuantificada para estos ficheros.
-- GSM8K pierde 3 puntos en int4 y 1 punto en int8 respecto a bf16; toda pérdida se concentra en preguntas que bf16 acierta, sin errores nuevos introducidos por la cuantización.
-- Sesgos conocidos del modelo base IBM no están documentados en la información disponible; al ser un instruct model entrenado con datos sintéticos internos, existe riesgo de alucinación no mitigado por la conversión.
-- El fichero int8 no cabe en móviles con menos RAM que el Pixel 8a según la regla del autor, y ninguno de los dos ficheros es cargable en iOS por el límite de 2 GiB por sección.
-- Licencia Apache 2.0 permite uso comercial, pero conviene revisar los términos del modelo base IBM y las dependencias del runtime LiteRT-LM antes de producción.
-- La plantilla del bundle no incluye turno de sistema; prompts que dependan de instrucciones de sistema pueden comportarse distinto que en transformers.
-- Las activaciones fp16 por defecto pueden afectar reproducibilidad numérica frente a bf16; declarar fp32 en int8 mantiene la corrección pero cuesta un 15 % de velocidad.
+- La ventana de contexto de los ficheros LiteRT-LM es de 4096 tokens, muy inferior a los 128K del modelo base; no sirve para documentos largos sin truncar.
+- El fichero int4 pierde precisión frente a bf16 en GSM8K (93 frente a 96); tres preguntas cambian de correctas a incorrectas.
+- El int8 no cabe en la RAM de un Pixel 8a y ninguno de los dos ficheros se ha validado en iOS por el límite de 2 GiB por sección.
+- No se ha ejecutado IFEval, por lo que el seguimiento de instrucciones no está cuantificado en esta conversión.
+- Los resultados de GSM8K solo son comparables dentro de la tabla de la card, no con las cifras publicadas por IBM.
+- No se documentan sesgos concretos, tasas de alucinación ni restricciones adicionales de la licencia Apache 2.0 más allá de las habituales; la lista de 12 idiomas no está detallada.
+- El rendimiento depende del runtime y del delegado: en CPU del Mac, int4 es más lento que int8 en prefill, y declarar activaciones fp32 reduce la velocidad un 15 %.
+- El proyecto tiene 424 descargas y 0 likes en el momento de la consulta, lo que indica validación comunitaria limitada.
 
 ## Enlaces
 
-- Hugging Face (esta conversión): https://huggingface.co/litert-community/granite-4.1-8b
-- Modelo base IBM: https://huggingface.co/ibm-granite/granite-4.1-8b
-- Conversión hermana de 3B: https://huggingface.co/litert-community/granite-4.1-3b
+- Hugging Face: https://huggingface.co/litert-community/granite-4.1-8b
+- Modelo base: https://huggingface.co/ibm-granite/granite-4.1-8b
 - Runtime LiteRT-LM: https://github.com/google-ai-edge/LiteRT-LM
+- Conversión hermana de 3B: https://huggingface.co/litert-community/granite-4.1-3b
 - Script de verificación de calidad: https://github.com/john-rocky/hf-to-litertlm/blob/main/scripts/verify_quality.py

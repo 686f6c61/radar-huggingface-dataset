@@ -49,31 +49,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "android - Google maps v2: Authorization failure - Stack Overflow",
-      "url": "https://stackoverflow.com/questions/17184718/google-maps-v2-authorization-failure",
-      "snippet": "Jun 19, 2013 · Activate the Google Maps Android API v2 service in the Google API's console. Also, after making changes do a full …"
-    },
-    {
-      "title": "Google Maps Api v3 - getBounds is undefined - Stack Overflow",
-      "url": "https://stackoverflow.com/questions/2832636/google-maps-api-v3-getbounds-is-undefined",
-      "snippet": "I'm switching from v2 to v3 google maps api and got a problem with gMap.getBounds() function. I need to get the bounds of my map …"
-    },
-    {
-      "title": "Mettre à jour Google Maps",
-      "url": "https://support.google.com/maps/answer/3615175?hl=fr&co=GENIE.Platform%3DAndroid",
-      "snippet": "Mettre à jour Google Maps Conseil : Si vous rencontrez des problèmes de téléchargement et de mise à jour de Google Maps, vous …"
-    },
-    {
-      "title": "Communauté Google Maps",
-      "url": "https://support.google.com/maps/community?hl=fr",
-      "snippet": "Disparition de mon entreprise de Google et Google Maps. Pourquoi, qui, comment? Mon numero de telephone sais integrée dans …"
-    },
-    {
-      "title": "Google Maps - Reddit",
-      "url": "https://www.reddit.com/r/GoogleMaps/",
-      "snippet": "r/GoogleMaps is participating in ongoing protests regarding changes to Reddit's API accessibility. The subreddit may reopen at some …"
-    }
-  ]
+  "sources": []
 }

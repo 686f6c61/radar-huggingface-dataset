@@ -5,7 +5,7 @@
   "author": "Thox-ai",
   "url": "https://huggingface.co/Thox-ai/thox-micro-125m-instruct",
   "created_at": "2026-09-25T22:59:52.000Z",
-  "updated_at": "2026-11-08T05:08:43.000Z",
+  "updated_at": "2026-11-22T10:21:09.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -16,6 +16,7 @@
   "tags": [
     "transformers",
     "safetensors",
+    "gguf",
     "llama",
     "text-generation",
     "thox",
@@ -44,11 +45,12 @@
   "trending_score": 0,
   "parameters": 123587328,
   "parameters_human": "123.6M",
-  "storage_bytes": 495394898,
-  "storage_human": "495 MB",
-  "context_length": null,
+  "storage_bytes": 744584082,
+  "storage_human": "745 MB",
+  "context_length": 1024,
   "base_model": "Thox-ai/thox-micro-125m",
   "formats": [
+    "gguf",
     "safetensors"
   ],
   "is_conversational": true,

@@ -2,78 +2,85 @@
 
 ## Resumen
 
-Qwen-3.8-27B-Thinkingcap-Q2_Q3 es una cuantización GGUF publicada por el usuario CompressedGemma a partir de un modelo base denominado Qwen-3.8-27B-Thinkingcap. El repositorio contiene pesos en formato GGUF con cuantizaciones de 2 y 3 bits (Q2/Q3), pensados para reducir el requisito de VRAM hasta el punto de que el modelo pueda ejecutarse en tarjetas gráficas de 12 GB, según indica el propio autor en la model card.
+Qwen-3.8-27B-Thinkingcap-Q2_Q3 es una cuantizacion GGUF publicada por el usuario CompressedGemma a partir de un modelo base de la familia Qwen, con 27.320.697.856 parametros totales segun los metadatos de safetensors del repositorio. El nombre sugiere una variante "Thinkingcap" de Qwen con capacidad de razonamiento extendido, empaquetada en cuantizaciones mixtas Q2/Q3 para reducir el peso a 21,8 GB en el repositorio. El modelo se distribuye bajo etiqueta apache-2.0 en los metadatos de Hugging Face, aunque la propia model card declara una licencia PolyForm Small Business 1.0.0 con una concesion adicional de uso personal, lo que constituye una discrepancia relevante para uso comercial.
 
-La información disponible es muy limitada: el repositorio no incluye pipeline declarado, no especifica idiomas soportados y no aporta datos sobre arquitectura, número de parámetros, longitud de contexto nativa ni proceso de entrenamiento. La model card se limita a mostrar un ejemplo de uso con `llama-server` (prompt sobre una página HTML5 con un teseracto rotatorio y proyección 4D) y los parámetros de inferencia empleados, además de una captura del resultado.
+El interes practico del modelo reside en su perfil de despliegue: segun el autor, la variante GGUF cabe en una GPU de 12 GB de VRAM con una ventana de contexto de 30.000 tokens y cuantizacion de cache KV en q5_0, configuracion que se ha probado con llama-server. Esto lo situa en el segmento de modelos de ~27B ejecutables en hardware de consumo de gama alta, algo poco habitual en ese rango de parametros.
 
-Por tanto, esta ficha debe interpretarse como una descripción del artefacto de cuantización y de su configuración de despliegue, no como una evaluación del modelo base. Cualquier dato sobre capacidades, entrenamiento o rendimiento del modelo original queda fuera del alcance de la información proporcionada y se marca como no disponible.
+No obstante, la informacion publicada es muy escasa: no hay datos de arquitectura, composicion del dataset de entrenamiento, benchmarks, idiomas soportados ni pipeline declarado. La ficha se completa con los datos disponibles y marca explicitamente como "no disponible" todo aquello que no consta en la informacion proporcionada.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (el nombre sugiere familia Qwen, sin confirmar) |
-| Parámetros totales | no disponible (el nombre incluye "27B", sin confirmar) |
-| Parámetros activos | no disponible |
-| Longitud de contexto | no disponible a nivel de modelo; el autor ejecuta con `-c 30000` |
-| Tipos de cuantización | Q2 y Q3 (GGUF); caché KV en `q5_0` según la model card |
+| Arquitectura | no disponible (presumiblemente transformer decoder-only de la familia Qwen, no confirmado) |
+| Parametros totales | 27.320.697.856 |
+| Parametros activos | no disponible (no se indica que sea MoE) |
+| Longitud de contexto | 30.000 tokens segun la configuracion de ejemplo del autor (no confirmado como contexto nativo maximo) |
+| Tipos de cuantizacion | GGUF Q2/Q3 mixta (archivo Qwen-3.8-27B-thinkingcap-Q2-Q3.gguf); cache KV en q5_0 en el ejemplo |
 | Idiomas soportados | no disponible |
-| Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (`Qwen-3.8-27B-thinkingcap-Q2-Q3.gguf`) |
+| Licencia | apache-2.0 en metadatos de Hugging Face; PolyForm Small Business 1.0.0 + BottleCap personal-use grant en la model card |
+| Formato de pesos | GGUF (unico artefacto descrito); el repositorio declara 21,8 GB |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información sobre la arquitectura del modelo base: la model card no describe si se trata de un transformer denso, un modelo MoE, un híbrido o cualquier otra variante. Tampoco se documenta el número de tokens de entrenamiento, la composición del dataset ni si hubo fases de RLHF, DPO u otro ajuste por preferencias.
+No se ha publicado informacion sobre la arquitectura interna del modelo base ni sobre el proceso de entrenamiento en la documentacion disponible. El nombre ("Qwen-3.8-27B-Thinkingcap") apunta a un derivado de la familia Qwen con un modo de razonamiento o "thinking" incorporado, pero no se detalla si emplea attention lineal, decodificacion especulativa, mezcla de expertos ni ninguna otra innovacion tecnica. Tampoco consta el numero de tokens de entrenamiento, la composicion del dataset ni si se aplicaron fases de RLHF o DPO.
 
-El único detalle técnico verificable es el proceso de cuantización: el autor publica pesos GGUF en precisiones de 2 y 3 bits, lo que implica una compresión agresiva respecto a los pesos originales (presumiblemente en BF16/FP16). La model card indica que, con cuantización de caché KV en `q5_0` y una ventana de 30 000 tokens, el modelo cabe en una GPU de 12 GB. No se documenta qué herramienta de cuantización se empleó (llama.cpp, imatrix u otra) ni si se aplicaron calibraciones específicas por capa.
+Lo unico verificable es el proceso de cuantizacion: el autor distribuye un unico archivo GGUF con cuantizacion mixta Q2/Q3, pensado para reducir el peso por debajo de los 22 GB y permitir su carga en GPUs de 12 GB con cuantizacion de cache KV q5_0. La model card incluye una invocacion concreta de llama-server con `-c 30000 -ngl 999 --cache-type-k q5_0 --cache-type-v q5_0 --jinja` y parametros de muestreo (temp 0.8, top-p 0.9, min-p 0.05, top-k 40), lo que confirma compatibilidad con el ecosistema llama.cpp y con plantillas de chat en formato Jinja.
 
 ## Capacidades
 
-- Generación de texto y código: el único ejemplo publicado muestra la generación de una página HTML5 con un teseracto rotatorio y una matriz de proyección 4D, lo que evidencia capacidad para producir código front-end funcional.
-- Razonamiento con "thinking": el nombre del modelo incluye "Thinkingcap", lo que sugiere un modo de razonamiento extendido, aunque no se documenta su funcionamiento ni su formato de activación.
-- Soporte de tool calling / function calling: no disponible en la información proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingües: no disponible; el repositorio no declara idiomas.
-- Capacidades especiales (visión, audio, etc.): no disponible.
+- Generacion de texto conversacional: el tag `conversational` y el uso de `--jinja` indican soporte de plantillas de chat multi-turno.
+- Razonamiento extendido: el sufijo "Thinkingcap" sugiere un modo de razonamiento o cadena de pensamiento, aunque no se documenta su funcionamiento ni como activarlo o desactivarlo.
+- Generacion de codigo: la unica demostracion publicada es la generacion de una pagina HTML5 con un teseracto rotatorio y proyeccion 4D, lo que evidencia capacidad para producir codigo funcional en una sola pasada.
+- Tool calling / function calling: no disponible (no se documenta).
+- Soporte de agentes y razonamiento multi-paso: no disponible (no se documenta).
+- Capacidades multilingues: no disponible (no se declaran idiomas).
+- Vision, audio u otras modalidades: no disponible; la unica imagen de la model card es una captura del resultado, no una entrada multimodal.
 
 ## Casos de uso
 
-- Prototipado de interfaces web en local: el ejemplo de la model card (generación de una página HTML5 con animación 3D/4D) ilustra el uso para generar código front-end directamente en una estación de trabajo con GPU de 12 GB.
-- Asistencia de código en equipos con hardware limitado: al caber en tarjetas consumer, permite desplegar un asistente de programación local sin depender de APIs externas.
-- Experimentación con cuantizaciones agresivas: útil para investigadores que quieran medir la degradación de calidad de Q2/Q3 frente a precisiones mayores sobre el mismo modelo base.
-- Despliegue en entornos aislados o sin conectividad: el formato GGUF y `llama-server` permiten ejecutar el modelo en máquinas on-premise sin acceso a internet.
-- Generación de documentación técnica y snippets: el modelo puede emplearse para producir ejemplos de código y explicaciones en flujos de trabajo de desarrollo.
-- Evaluación comparativa de servidores de inferencia: la configuración publicada (`llama-server` con `--jinja`, `--cache-type-k q5_0`, `--cache-type-v q5_0`) sirve como referencia reproducible para comparar latencia y calidad en GPUs de 12 GB.
-- Base para fine-tuning o destilación: al estar en Apache 2.0, los pesos pueden reutilizarse como punto de partida, aunque la cuantización Q2/Q3 no es el formato idóneo para reentrenar.
+- Prototipado de interfaces 3D en el navegador: el modelo puede generar paginas HTML5 con WebGL o Canvas a partir de una descripcion breve, como demuestra el ejemplo del teseracto; es util para maquetas rapidas de visualizaciones interactivas.
+- Asistente de codigo en estaciones de trabajo con GPU de 12 GB: al caber en una RTX 3060 de 12 GB o una RTX 4070 Ti, permite ejecutar un modelo de 27B en local para autocompletado y generacion de fragmentos, sin depender de la nube.
+- Razonamiento asistido en entornos con requisitos de privacidad: el despliegue local con llama.cpp evita enviar datos a terceros, adecuado para borradores de analisis sobre documentacion interna dentro de la ventana de 30.000 tokens configurada.
+- Experimentacion academica con cuantizacion extrema: el archivo Q2/Q3 sirve para estudiar la degradacion de calidad frente a pesos completos en un modelo de ~27B, comparando con variantes Q4 o Q8 del mismo base.
+- Generacion de documentacion tecnica y explicaciones de codigo: el modo conversacional con plantilla Jinja permite integrarlo en flujos de preguntas y respuestas sobre repositorios, siempre que se validen las respuestas por el riesgo de alucinacion.
+- Servidor de inferencia ligero con llama-server: la configuracion publicada (`--host 0.0.0.0 --port 8080`) habilita exponer el modelo como API compatible con endpoints en una red local para pruebas de integracion.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La model card únicamente incluye una captura del resultado del prompt de ejemplo y los parámetros de inferencia, sin métricas de MMLU, HumanEval, GSM8K ni similares.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: el autor afirma que el modelo cabe en una GPU de 12 GB con contexto de 30 000 tokens y caché KV en `q5_0`.
-- GPU recomendadas: no se especifican modelos concretos; por el requisito de 12 GB encajan tarjetas como RTX 3060 de 12 GB, RTX 4070 Ti, RTX 4080 o superiores, así como A100/H100 si se busca mayor throughput.
-- ¿Cabe en GPU consumer? Sí, según la model card, en tarjetas de 12 GB o más con la configuración indicada.
-- Opciones de despliegue: `llama-server` (llama.cpp) con los parámetros documentados: `-ngl 999`, `-c 30000`, `--cache-type-k q5_0`, `--cache-type-v q5_0`, `--jinja`, `--temp 0.8`, `--top-p 0.9`, `--min-p 0.05`, `--top-k 40`. No se documenta compatibilidad con vLLM, TGI u Ollama.
-- Latencia y throughput: no disponible.
+- VRAM estimada: el autor indica que el modelo cabe en una GPU de 12 GB con contexto de 30.000 tokens y cache KV en q5_0; el archivo GGUF ocupa 21,8 GB en disco, por lo que la carga requiere offload parcial o cuantizacion adicional de la cache para ajustarse a 12 GB.
+- GPU recomendadas: RTX 3060 12 GB, RTX 4070 Ti 12 GB o superiores para el perfil ajustado; A100, H100 o RTX 4090 (24 GB) para cargar el modelo completo en VRAM con mayor contexto.
+- Cabe en GPU de consumo: si, segun el autor, en tarjetas de 12 GB con la configuracion indicada; en tarjetas de 24 GB (RTX 3090, RTX 4090) con mas margen para contexto y cache.
+- Opciones de despliegue: llama.cpp / llama-server (configuracion documentada por el autor), y por compatibilidad de formato GGUF, teoricamente Ollama y otros runners basados en llama.cpp; vLLM y TGI no soportan GGUF de forma nativa en su configuracion estandar.
+- Latencia y throughput: no disponibles; no se publican mediciones de tokens por segundo.
 
 ## Comparativa con modelos similares
 
-No disponible. La información proporcionada no identifica el modelo base con certeza ni ofrece datos de rendimiento que permitan una comparación rigurosa con alternativas de la misma categoría.
+| Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| Qwen-3.8-27B-Thinkingcap-Q2_Q3 | 27,3B | 30.000 configurados en el ejemplo | GGUF Q2/Q3 | apache-2.0 en metadatos; PolyForm Small Business 1.0.0 en model card | Hugging Face, 409 descargas |
+| Modelo base Qwen de ~27B (sin identificar) | no disponible | no disponible | no disponible | no disponible | no disponible |
+| Alternativas de ~27B en GGUF | no disponible | no disponible | GGUF | no disponible | no disponible |
+
+No se dispone de datos de benchmarks ni de especificaciones verificables de modelos comparables en la informacion proporcionada, por lo que no es posible establecer una comparacion cuantitativa fiable.
 
 ## Limitaciones y advertencias
 
-- La cuantización Q2/Q3 es agresiva y puede degradar de forma notable la coherencia, el razonamiento y la calidad del código frente a los pesos originales; no se aportan evaluaciones que cuantifiquen esa pérdida.
-- No se documenta el modelo base, por lo que no es posible verificar la procedencia de los pesos ni la cadena de licencias más allá de la declaración Apache 2.0 del repositorio.
-- El repositorio no declara idiomas soportados; el rendimiento en castellano es desconocido.
-- No hay información sobre sesgos, alineación o filtros de seguridad del modelo original.
-- Riesgo de alucinación: no evaluado en la información disponible.
-- El número de descargas y likes es cero, y el repositorio se creó y actualizó en un intervalo de minutos, lo que sugiere que no ha pasado por revisión comunitaria.
-- Uso comercial: la licencia Apache 2.0 lo permite en principio, pero conviene verificar la licencia del modelo base original antes de desplegarlo en producción.
+- Ambiguedad de licencia: los metadatos de Hugging Face declaran apache-2.0, pero la model card especifica PolyForm Small Business 1.0.0 con una concesion de uso personal. Esta discrepancia debe resolverse antes de cualquier uso comercial; la licencia PolyForm Small Business restringe el uso por parte de empresas que superen ciertos umbrales de ingresos.
+- Cuantizacion agresiva: Q2/Q3 implica perdida de calidad frente a pesos completos, especialmente en tareas de razonamiento y codigo; no se han publicado evaluaciones de la degradacion.
+- Riesgo de alucinacion: sin benchmarks ni documentacion de entrenamiento, no hay garantias sobre la fiabilidad factual del modelo en produccion.
+- Falta de documentacion: se desconocen idiomas soportados, contexto nativo maximo, comportamiento del modo "thinking" y soporte real de tool calling.
+- Procedencia incierta: el autor no identifica el modelo base exacto ni el proceso de cuantizacion, lo que dificulta la trazabilidad y la reproducibilidad.
+- Adopcion muy baja: 409 descargas y 0 likes en el momento de la consulta, sin senales de validacion por parte de la comunidad.
+- Sin garantias de soporte: no hay issues, discusiones ni mantenimiento documentado por parte del autor.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/CompressedGemma/Qwen-3.8-27B-Thinkingcap-Q2_Q3
-- Imagen de ejemplo citada en la model card: https://cdn-uploads.huggingface.co/production/uploads/69de1a493a21cb7c029dc694/66OY4J7wa9fqgsZ-UpUcL.png
-- No se han encontrado en la información proporcionada enlaces a papers, blogs, repositorios de código ni demos adicionales.
+- Repositorio en Hugging Face: https://huggingface.co/CompressedGemma/Qwen-3.8-27B-Thinkingcap-Q2_Q3
+- Imagen de demostracion citada en la model card: https://cdn-uploads.huggingface.co/production/uploads/69de1a493a21cb7c029dc694/t2dHyBUdDAdNIwBuFjDwG.png
+- llama.cpp (runtime empleado en la configuracion de ejemplo): no se proporciona enlace en la informacion disponible
+- Paper, blog o repositorio del modelo base: no disponible

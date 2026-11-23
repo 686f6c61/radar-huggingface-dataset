@@ -38,11 +38,11 @@
     "conversational"
   ],
   "likes": 1,
-  "downloads_30d": 153,
+  "downloads_30d": 208,
   "trending_score": 0,
   "parameters": 26895998464,
   "parameters_human": "26.90B",
-  "storage_bytes": 305761169920,
+  "storage_bytes": 305784507072,
   "storage_human": "305.8 GB",
   "context_length": 262144,
   "base_model": "thelamapi/next3-pro",
@@ -55,8 +55,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "thelamapi/next3-pro-i1-GGUF",
+  "renamed_at": "2026-11-23T12:51:53.181Z",
   "benchmarks": [],
   "sources": []
 }

@@ -42,7 +42,7 @@
     "region:us"
   ],
   "likes": 1,
-  "downloads_30d": 419,
+  "downloads_30d": 459,
   "trending_score": 0,
   "parameters": 377540611,
   "parameters_human": "377.5M",
@@ -61,32 +61,67 @@
   "removal_pattern": null,
   "renamed_to": null,
   "renamed_at": null,
-  "benchmarks": [],
-  "sources": [
+  "benchmarks": [
     {
-      "title": "Hot MILF Solo Porn Pics - PornPics.com",
-      "url": "https://www.pornpics.com/tags/milf-solo/",
-      "snippet": "Check out the best naked milf solo porn pics for FREE on PornPics.com. ️Find the hottest milf solo xxx photos right now!"
+      "task": "Natural Language Inference",
+      "dataset": "FineCat-NLI (test)",
+      "metric": "Accuracy",
+      "value": 0.8388
     },
     {
-      "title": "Solo MILF Pics",
-      "url": "https://www.imilfpics.com/category/solo-milf/",
-      "snippet": "Solo MILF Porn MILF Hairy Pussy Legs Piercing Stockings Nipples Blonde Shaved Lingerie Flashing Lu Elissa Skyler Haven Becky …"
+      "task": "Natural Language Inference",
+      "dataset": "MultiNLI (validation matched)",
+      "metric": "Accuracy",
+      "value": 0.9127
     },
     {
-      "title": "Sexy MILF Solo Porn Pics & Naked Photos - PornPics.com",
-      "url": "https://www.pornpics.com/?q=sexy+milf+solo",
-      "snippet": "Grab the hottest Sexy MILF Solo porn pictures right now at PornPics.com. New FREE Sexy MILF Solo photos added every day."
+      "task": "Natural Language Inference",
+      "dataset": "MultiNLI (validation mismatched)",
+      "metric": "Accuracy",
+      "value": 0.9131
     },
     {
-      "title": "Solo pictures with horny milfs - milf pussy pics",
-      "url": "https://www.milfpussypics.net/solo/",
-      "snippet": "Hot amateur milfs and mature pornstars in free Solo porn pics. Solo galleries updates on daily basis."
+      "task": "Natural Language Inference",
+      "dataset": "SNLI (test)",
+      "metric": "Accuracy",
+      "value": 0.9303
     },
     {
-      "title": "Older MILFS Solo Porn Pics & MILF Sex Photos - IdealMilf.com",
-      "url": "https://idealmilf.com/search/older-milfs-solo/",
-      "snippet": "Delve into the impressive variety of Older Milfs Solo pics at IdealMILF.com. Dont miss out on the daily updates with new MILF porn …"
+      "task": "Natural Language Inference",
+      "dataset": "ANLI round 1 (test)",
+      "metric": "Accuracy",
+      "value": 0.791
+    },
+    {
+      "task": "Natural Language Inference",
+      "dataset": "ANLI round 2 (test)",
+      "metric": "Accuracy",
+      "value": 0.64
+    },
+    {
+      "task": "Natural Language Inference",
+      "dataset": "ANLI round 3 (test)",
+      "metric": "Accuracy",
+      "value": 0.5833
+    },
+    {
+      "task": "Natural Language Inference",
+      "dataset": "WANLI (test)",
+      "metric": "Accuracy",
+      "value": 0.7694
+    },
+    {
+      "task": "Natural Language Inference",
+      "dataset": "LingNLI (validation)",
+      "metric": "Accuracy",
+      "value": 0.8714
+    },
+    {
+      "task": "Natural Language Inference",
+      "dataset": "45-dataset NLI / zero-shot / grounding benchmark (macro average)",
+      "metric": "Macro accuracy",
+      "value": 0.8234
     }
-  ]
+  ],
+  "sources": []
 }

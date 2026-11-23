@@ -2,104 +2,87 @@
 
 ## Resumen
 
-El modelo `zho-100mb-after-wc-zipf-newlex-after-ckpt500-packed-bfdiso_seed10` es un modelo de lenguaje generativo de tipo transformer decoder-only (familia GPT-2) desarrollado por el usuario de Hugging Face `francesca9805`. Se trata de un ajuste fino (fine-tuning) supervisado del modelo base `francesca9805/ppt-wc-zipf-newlex-zho-after-100mb-packed-bfdiso_seed10`, realizado con la librería TRL de Hugging Face mediante SFT (supervised fine-tuning). Con 124.770.816 parametros, se situa en el rango de GPT-2 small, lo que lo convierte en un modelo pequeno orientado a experimentacion mas que a produccion a gran escala.
+El modelo `zho-100mb-after-wc-zipf-newlex-after-ckpt500-packed-bfdiso_seed10` es un ajuste fino (SFT) del checkpoint `francesca9805/ppt-wc-zipf-newlex-zho-after-100mb-packed-bfdiso_seed10`, publicado por el usuario de Hugging Face francesca9805. Se trata de un modelo de generacion de texto de tipo GPT-2 con 124.770.816 parametros totales, entrenado con la libreria TRL (version 0.23.0) sobre Transformers 4.56.2 y PyTorch 2.11.0. El nombre del repositorio sugiere un experimento centrado en tokenizacion y preprocesado de texto en chino (prefijo `zho`, codigo ISO 639-3 del chino), con un corpus de aproximadamente 100 MB y variantes de tokenizacion relacionadas con Zipf y "newlex".
 
-El identificador del modelo y la ejecucion de entrenamiento asociada (proyecto `new-tokenizers`, cuenta `f-padovani-university-of-groningen` en Weights & Biases) sugieren que forma parte de una linea de investigacion sobre tokenizacion y curricula de datos: los segmentos `zho` (codigo ISO 639-3 del chino), `100mb`, `wc`, `zipf`, `newlex`, `packed`, `ckpt500` y `bfdiso` apuntan a experimentos con corpus de aproximadamente 100 MB, distribuciones de frecuencia tipo Zipf, lexicos nuevos o modificados, empaquetado de secuencias y un checkpoint intermedio. Esta interpretacion es una inferencia a partir del nombre y no esta confirmada en la informacion disponible.
+El modelo resuelve, en principio, la tarea generica de generacion de texto condicionada por instrucciones, aunque su naturaleza experimental (nombre basado en hiperparametros y pipeline de datos, no en un producto) indica que su interes es mas academico que de produccion. La model card es una plantilla autogenerada por TRL, sin informacion sobre composicion del dataset, idiomas soportados, licencia ni evaluacion. Es relevante ahora unicamente como artefacto de investigacion reproducible dentro de una linea de experimentos de tokenizacion, no como alternativa a modelos de proposito general.
 
-Su relevancia es limitada para uso comercial, pero puede ser util como artefacto reproducible en investigacion sobre tokenizacion, como punto de partida para fine-tuning de bajo coste y como banco de pruebas de pipelines de generacion de texto en entornos con recursos muy reducidos. No se han publicado datos de contexto, licencia explicita ni resultados de benchmarks en la informacion proporcionada.
+El modelo base pertenece a la misma familia de experimentos (`ppt-wc-zipf-newlex-...`), lo que apunta a una cadena de checkpoints intermedios sobre un GPT-2 pequeno. No se dispone de informacion sobre el numero de tokens de entrenamiento, la composicion del corpus ni el proceso de alineacion mas alla de que se uso SFT.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only tipo GPT-2 (inferido del tag `gpt2`) |
+| Arquitectura | GPT-2 (transformer decoder-only, segun tag `gpt2`) |
 | Parametros totales | 124.770.816 |
-| Parametros activos | No aplica (no es MoE) |
+| Parametros activos | no aplica (no es MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible (solo se publican pesos en safetensors; no se documentan variantes GGUF, AWQ ni GPTQ) |
-| Idiomas soportados | no disponible (el identificador `zho` sugiere chino, sin confirmar) |
-| Licencia | no disponible (la model card solo declara `licence: license`, sin texto) |
+| Tipos de cuantizacion | no disponible (pesos en safetensors; compatible con cuantizacion estandar de transformers/GGUF, pero no publicada por el autor) |
+| Idiomas soportados | no disponible (el prefijo `zho` sugiere chino, sin confirmacion en la model card) |
+| Licencia | no disponible (la model card indica `licence: license`, sin especificar) |
 | Formato de pesos | safetensors |
-| Libreria | transformers |
-| Pipeline | text-generation |
-| Modelo base | francesca9805/ppt-wc-zipf-newlex-zho-after-100mb-packed-bfdiso_seed10 |
-| Metodo de ajuste | SFT con TRL 0.23.0 |
-| Tamano del repositorio | 4.5 GB |
-| Fecha de creacion | 2026-10-12 |
-| Ultima actualizacion | 2026-10-12 |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura corresponde a un transformer decoder-only de la familia GPT-2, segun el tag `gpt2` del repositorio y el pipeline de generacion de texto. Con 124.770.816 parametros, el modelo coincide practicamente con la configuracion de GPT-2 small (124M). No se dispone de informacion sobre el numero de capas, dimensiones de embedding, numero de cabezas de atencion ni mecanismo de atencion (completa o lineal). Tampoco se documenta la longitud de contexto efectiva, aunque el backbone GPT-2 suele operar con ventanas de 1024 tokens; este dato no esta confirmado para esta variante.
+La arquitectura es un transformer decoder-only de la familia GPT-2, con 124,77 millones de parametros, lo que corresponde aproximadamente al tamano de GPT-2 small (124M). El tag `gpt2` en Hugging Face confirma la familia arquitectonica. No se dispone de informacion sobre el numero de capas, dimensiones ocultas, cabezas de atencion ni longitud de contexto maxima, mas alla de lo que se puede inferir del tamano estandar de GPT-2 small (12 capas, 768 dimensiones, 12 cabezas, contexto de 1024 tokens), dato que no esta confirmado en la informacion proporcionada.
 
-El entrenamiento se realizo mediante SFT con TRL 0.23.0, sobre Transformers 4.56.2, PyTorch 2.11.0, Datasets 4.8.4 y Tokenizers 0.22.1. El modelo parte de un checkpoint base ya ajustado (identificador con el prefijo `ppt-`) y el nombre indica que este es el resultado tras el checkpoint 500 (`ckpt500`) y una fase posterior de entrenamiento (`after`). La model card solo incluye el procedimiento de uso mediante `pipeline` y el enlace a la ejecucion de Weights & Biases; no se detallan el volumen de tokens, la composicion del dataset, el uso de RLHF o DPO, ni innovaciones tecnicas como decodificacion especulativa.
-
-Los segmentos del nombre (`wc`, `zipf`, `newlex`, `packed`, `bfdiso`) apuntan a un experimento controlado sobre tokenizacion y distribucion de datos, probablemente variando el vocabulario o la frecuencia lexica y empaquetando secuencias completas. Se trata de una hipotesis razonable a partir del identificador, no de un dato confirmado.
+El entrenamiento se realizo mediante SFT (supervised fine-tuning) con TRL 0.23.0, partiendo del checkpoint `ppt-wc-zipf-newlex-zho-after-100mb-packed-bfdiso_seed10`. El nombre del modelo base y del propio modelo indican una cadena de experimentos: `ppt` (posiblemente pre-training o pipeline de preprocesado), `wc` (word count), `zipf` (distribucion de Zipf aplicada a tokenizacion o vocabulario), `newlex` (nuevo lexico o vocabulario), `zho` (chino), `100mb` (tamano del corpus), `packed` (secuencias empaquetadas), `bfdiso` (posiblemente bfloat16 + dataset iso) y `seed10`. No hay informacion sobre el numero de tokens de entrenamiento, la mezcla de datos, el uso de RLHF/DPO (solo SFT) ni innovaciones tecnicas como decodificacion especulativa o atencion lineal. El run de entrenamiento esta registrado en Weights & Biases bajo el proyecto `new-tokenizers` del usuario `f-padovani-university-of-groningen`.
 
 ## Capacidades
 
-- Generacion de texto autoregresiva basica, condicionada por un prompt de usuario en formato de mensaje (`role: user`).
-- Conversacion de un solo turno o multi-turno sencilla, segun el ejemplo de `pipeline` de la model card.
-- Ajuste fino mediante SFT, lo que permite adaptarlo a dominios concretos con relativamente pocos recursos.
-- Ejecucion en GPU y CPU sin requisitos de memoria elevados, dado su tamano de 124M de parametros.
-- Compatibilidad declarada con text-generation-inference y endpoints, segun los tags.
-- Soporte de tool calling / function calling: no disponible; no se documenta.
-- Soporte de agentes y razonamiento multi-paso: no disponible; no se documenta.
-- Capacidades multilingues: no disponible; el identificador sugiere orientacion al chino, sin confirmacion.
-- Capacidades especiales (modo thinking, vision, audio, decodificacion especulativa): no disponible; no se documenta ninguna.
-- Razonamiento avanzado, matematicas y generacion de codigo: probablemente muy limitadas por el tamano del modelo, aunque no hay datos publicados que lo confirmen.
+- Generacion de texto autoregresiva condicionada por un mensaje de usuario en formato de chat (la model card muestra un ejemplo con `pipeline` y una lista de mensajes con rol `user`).
+- Ajuste por instrucciones mediante SFT: el modelo ha sido entrenado para responder a preguntas en formato conversacional, aunque no se especifica la calidad ni el idioma de las respuestas.
+- No se documenta soporte de tool calling ni function calling.
+- No se documenta soporte de agentes ni razonamiento multi-paso.
+- Capacidades multilingues: no disponibles; el prefijo `zho` sugiere entrenamiento orientado a chino, sin confirmacion.
+- No se documentan capacidades especiales (modo thinking, vision, audio, etc.).
+- No se documenta ventana de contexto extendida ni atencion eficiente.
 
 ## Casos de uso
 
-- Prototipado rapido de pipelines de generacion de texto: por su tamano de 124M de parametros, permite iterar sobre prompt engineering, plantillas de chat y formateo de datos en minutos, sin necesidad de infraestructura GPU dedicada.
-- Investigacion sobre tokenizacion y curricula de datos: el modelo forma parte de una serie de experimentos con identificadores de vocabulario y distribucion lexica, por lo que sirve como punto de comparacion reproducible frente a otras variantes de la misma familia.
-- Fine-tuning de bajo coste en dominios especificos: al ser un modelo pequeno, se puede reentrenar con SFT sobre un corpus reducido (decenas de MB) en una unica GPU consumer, util para validar metodologias antes de escalar a modelos mayores.
-- Generacion de texto en entornos con recursos limitados: puede desplegarse en CPU, portatiles o dispositivos edge para tareas de autocompletado, resumen breve o generacion de plantillas.
-- Aumento de datos sinteticos: util para generar variaciones de frases o ejemplos adicionales en experimentos de NLP donde no se requiere alta fidelidad semantica.
-- Evaluacion comparativa de checkpoints: al existir varios modelos base de la misma serie (`ppt-`, `zho-100mb-`, `after-ckpt500`), permite estudiar el efecto de cada etapa de entrenamiento sobre la perplejidad y la calidad de generacion.
-- Docencia y aprendizaje: adecuado como ejemplo didactico de fine-tuning con TRL, formato de chat y publicacion de modelos en Hugging Face, por su tamano manejable y su trazabilidad con Weights & Biases.
+- Experimentacion academica en tokenizacion: el modelo sirve como checkpoint reproducible para comparar el efecto de distintas variantes de tokenizacion (Zipf, "newlex") sobre la generacion de texto en chino, dado que su nombre codifica el pipeline de datos empleado.
+- Reproduccion de experimentos de SFT con TRL: permite reproducir el run registrado en Weights & Biases y comparar hiperparametros con otros checkpoints de la misma familia (`ppt-wc-zipf-newlex-...`).
+- Generacion de texto de bajo coste en prototipos: con 124M de parametros, cabe en cualquier GPU consumer y permite iterar rapidamente en demos de generacion condicionada por instrucciones, aunque sin garantias de calidad.
+- Evaluacion de pipelines de datos en chino: util para medir como afecta el preprocesado (empaquetado, vocabulario, distribucion Zipf) a la perplejidad y coherencia en un corpus de ~100 MB.
+- Baseline para comparativas de modelos pequenos: sirve como referencia de 124M parametros frente a otros GPT-2 small ajustados, en estudios de escalado o de tokenizacion.
+- Pruebas de integracion con `text-generation-inference` y `endpoints_compatible`: el tag indica compatibilidad con TGI y endpoints de Hugging Face, util para validar despliegues de modelos pequenos en infraestructura estandar.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye metricas de MMLU, HumanEval, GSM8K, perplejidad ni evaluaciones multilingues, y tampoco se ha encontrado informacion adicional en la busqueda web.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: aproximadamente 0,25 GB en fp16, 0,13 GB en int8 y 0,07 GB en int4, calculado a partir de los 124,77M de parametros (cifras estimadas, no publicadas por el autor).
-- GPU recomendadas: cualquier GPU con mas de 1 GB de VRAM es suficiente; se puede usar una NVIDIA T4, GTX 1650, RTX 3060, RTX 4090 o superiores sin limitacion practica por memoria.
-- Cabe en GPU consumer: si, en practicamente cualquier GPU consumer moderna e incluso en GPUs integradas con suficiente memoria compartida.
-- Cabe en CPU: si; la inferencia en CPU es viable para generacion de pocos tokens, con latencia mayor.
-- Opciones de despliegue: `transformers` (pipeline de text-generation), text-generation-inference (segun los tags), y conversion manual a GGUF para llama.cpp u Ollama (no se publican pesos GGUF en el repositorio). vLLM y TGI pueden funcionar, aunque no se documenta compatibilidad explicita.
-- Latencia y throughput estimados: no disponibles; no se publican mediciones.
+- VRAM estimada para inferencia en fp32: aproximadamente 0,5 GB solo para pesos (124,77M x 4 bytes), mas overhead de activaciones y KV cache; en la practica, menos de 2 GB para contexto corto.
+- VRAM estimada en fp16/bf16: aproximadamente 0,25 GB para pesos; cabe holgadamente en cualquier GPU consumer.
+- VRAM estimada en cuantizacion de 8 bits: aproximadamente 0,13 GB para pesos.
+- GPU recomendadas: cualquier GPU con al menos 2-4 GB de VRAM (GTX 1650, RTX 3060, RTX 4090, A100, H100); el modelo no requiere GPU de datacenter.
+- Cabe en GPU consumer: si, en practicamente todas las GPU consumer modernas, e incluso en CPU para inferencia de baja latencia.
+- Opciones de despliegue: `transformers` (pipeline), `text-generation-inference` (tag `text-generation-inference`), endpoints compatibles de Hugging Face (tag `endpoints_compatible`); no se documenta soporte explicito de vLLM, llama.cpp u Ollama, aunque al ser GPT-2 es probable que sea convertible a GGUF.
+- Latencia y throughput estimados: no disponibles; por tamano, se espera un throughput alto (cientos o miles de tokens por segundo en GPU moderna) y latencia de decodificacion de milisegundos por token, pero no hay mediciones publicadas.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+| Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| zho-100mb-after-wc-zipf-newlex-after-ckpt500-packed-bfdiso_seed10 | 124,77M | no disponible | no disponible | safetensors | Modelo de investigacion, ajustado con SFT; sin benchmarks publicados |
-| GPT-2 small | 124M | 1024 tokens | MIT (segun OpenAI) | safetensors, PyTorch | Referencia historica de la misma arquitectura; ampliamente soportado |
-| DistilGPT-2 | 82M | 1024 tokens | Apache 2.0 | safetensors, PyTorch | Version destilada, mas ligera y rapida que GPT-2 small |
-| Pythia-160M | 160M | 2048 tokens | Apache 2.0 | safetensors | Modelo de investigacion con checkpoints intermedios publicados y evaluaciones estandar |
+| `francesca9805/zho-100mb-after-wc-zipf-newlex-after-ckpt500-packed-bfdiso_seed10` | 124,77M | no disponible | no disponible | Hugging Face (403 descargas) | GPT-2 small ajustado con SFT; experimental |
+| GPT-2 small (OpenAI) | 124M | 1024 tokens | MIT | Hugging Face, multiples mirrors | Modelo base de referencia; sin ajuste por instrucciones |
+| DistilGPT-2 | 82M | 1024 tokens | Apache 2.0 | Hugging Face | Version destilada de GPT-2; sin ajuste por instrucciones |
+| SmolLM-135M (HuggingFaceTB) | 135M | 2048 tokens | Apache 2.0 | Hugging Face | Modelo moderno de 135M con contexto mayor y entrenamiento mas reciente |
 
-La comparacion se limita a parametros, contexto y licencia, ya que no se han publicado resultados de rendimiento para el modelo analizado. GPT-2 small, DistilGPT-2 y Pythia-160M son alternativas establecidas en el mismo rango de tamano, con licencias claras y documentacion de benchmarks, a diferencia de este modelo.
+La comparativa es aproximada: no hay datos de rendimiento del modelo evaluado, por lo que la comparacion se limita a parametros, contexto y licencia. El modelo evaluado carece de licencia declarada, lo que lo hace menos adecuado para uso comercial que GPT-2 small (MIT) o SmolLM-135M (Apache 2.0).
 
 ## Limitaciones y advertencias
 
-- Ausencia de licencia explicita: el tag declara `licence: license` sin texto asociado, por lo que el uso comercial queda en una situacion juridica indeterminada. Se recomienda contactar con el autor antes de cualquier uso en produccion.
-- No hay informacion sobre los idiomas soportados; si el modelo esta entrenado predominantemente en chino, su rendimiento en castellano u otras lenguas sera probablemente pobre.
-- Tamano reducido (124M de parametros): alta probabilidad de alucinaciones, incoherencias a partir de pocos cientos de tokens y baja fidelidad factual.
-- Sin datos de contexto publicados: no se puede garantizar el comportamiento en conversaciones largas ni el punto exacto de degradacion.
-- Sin benchmarks publicados: no hay evidencia cuantitativa de calidad, lo que dificulta compararlo con alternativas consolidadas.
-- Ausencia de documentacion sobre sesgos: no se describe la composicion del corpus de entrenamiento, por lo que no se pueden evaluar sesgos de genero, raza, religion o ideologia.
-- Modelo de investigacion con 0 descargas y 1 like: no ha pasado por validacion de la comunidad ni por procesos de red teaming.
-- Riesgo de reproduccion de contenido problematico si el corpus base contiene texto sin filtrar; el autor no documenta ningun filtrado.
-- No se declara soporte de tool calling, agentes ni funciones estructuradas, por lo que no es adecuado para flujos de automatizacion complejos sin adaptacion adicional.
-- Para produccion, se recomienda preferir alternativas con licencia clara (Apache 2.0 o MIT) y benchmarks publicados, y considerar este modelo unicamente como referencia de investigacion.
+- Sesgos conocidos: no documentados; al ser un ajuste de GPT-2 sobre un corpus de ~100 MB en chino (segun el nombre), es probable que herede sesgos del corpus y del modelo base, sin filtros documentados.
+- Riesgo de alucinacion: alto, propio de un modelo de 124M parametros sin alineacion documentada mas alla de SFT; no hay evaluacion de fidelidad.
+- Limitaciones de contexto o idioma: la longitud de contexto no esta documentada; el prefijo `zho` sugiere foco en chino, pero no se confirma el soporte de otros idiomas.
+- Restricciones de licencia para uso comercial: la licencia no esta disponible (`licence: license`), por lo que no se puede asumir uso comercial permitido; se debe contactar con el autor.
+- Caveats para produccion: la model card es una plantilla autogenerada por TRL sin informacion sobre datos, evaluacion ni limitaciones; el nombre del modelo codifica hiperparametros experimentales, lo que sugiere un artefacto de investigacion, no un modelo listo para produccion. El repo ocupa 9,0 GB, lo que incluye probablemente checkpoints intermedios u optimizador, no solo los pesos finales.
+- El modelo base es a su vez un experimento de la misma familia, por lo que la cadena de entrenamiento no esta documentada de forma independiente.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/francesca9805/zho-100mb-after-wc-zipf-newlex-after-ckpt500-packed-bfdiso_seed10
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/zho-100mb-after-wc-zipf-newlex-after-ckpt500-packed-bfdiso_seed10
 - Modelo base: https://huggingface.co/francesca9805/ppt-wc-zipf-newlex-zho-after-100mb-packed-bfdiso_seed10
-- Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/ngw4ndkv
+- Run de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/v227mdul
 - Repositorio de TRL: https://github.com/huggingface/trl
-- La busqueda web no ha devuelto enlaces relevantes sobre este modelo; los resultados obtenidos no guardan relacion con el contenido tecnico y se han descartado.

@@ -5,7 +5,7 @@
   "author": "amd",
   "url": "https://huggingface.co/amd/Qwen3-ASR-1.7B-hf-w4a16-llmcompressor",
   "created_at": "2026-11-22T09:53:00.000Z",
-  "updated_at": "2026-11-22T09:53:27.000Z",
+  "updated_at": "2026-11-23T06:05:42.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

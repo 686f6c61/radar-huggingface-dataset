@@ -24,8 +24,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 0,
-  "storage_human": null,
+  "storage_bytes": 1066070702,
+  "storage_human": "1.1 GB",
   "context_length": null,
   "base_model": "togethercomputer/gemma-3-12b-it",
   "formats": [

@@ -2,97 +2,99 @@
 
 ## Resumen
 
-Audio8-TTS-Realistic-0.6b-ROCmFPX es una distribucion en formato GGUF del modelo de sintesis de voz Edge0/Audio8-TTS-Realistic-0.6b, publicada por el usuario Harsha001. El modelo original es un TTS multilingue de aproximadamente 497 millones de parametros (0,5 B) que convierte texto en audio a 44,1 kHz, y esta version lo empaqueta para el runtime ROCmFPX, un fork de llama.cpp escrito en C++ nativo sobre ggml que no depende de Python ni de PyTorch.
+Audio8-TTS-Realistic-0.6b-ROCmFPX es una distribucion en formato GGUF del modelo de sintesis de voz (text-to-speech) Edge0/Audio8-TTS-Realistic-0.6b, publicada por el usuario Harsha001 para el fork ROCmFPX de llama.cpp. El modelo base es un TTS multilingue de aproximadamente 497 millones de parametros que convierte texto en audio a 44,1 kHz, y esta version empaqueta los pesos en cuantizaciones de 8, 6 y 4 bits acompanadas de un fichero `mmproj` en BF16 que contiene el predictor de codigos y el decodificador de audio.
 
-La relevancia de esta ficha esta en el empaquetado, no en el modelo base: ofrece cuantizaciones especificas (Q8_0 estandar, Q6_K y Q4_0 con escalas por tensor de ROCmFPX) junto con un fichero `mmproj` en BF16 que contiene el predictor de codigos y el decodificador de audio. El objetivo declarado es ejecutar TTS en hardware modesto, con especial atencion a las GPU AMD Strix Halo mediante Vulkan, y tambien en CPU y CUDA.
+La relevancia de esta ficha radica en que permite ejecutar un modelo TTS completo sin Python ni PyTorch, sobre un runtime nativo en C++ basado en ggml. El repositorio esta optimizado explicitamente para hardware AMD (Strix Halo con Vulkan y kernels ROCm del fork), aunque el runtime tambien funciona en CPU y CUDA. Con ficheros de entre 0,35 y 0,52 GB para el modelo de texto, el consumo de memoria es muy bajo para los estandares actuales.
 
-El modelo cubre 25 idiomas, entre ellos espanol, ingles, chino, japones, aleman, frances, portugues o arabe, y se distribuye bajo licencia Apache 2.0. No soporta clonacion de voz en este runtime: genera audio con una voz propia fija, con un maximo de unos 47 segundos por llamada.
+El modelo cubre 24 idiomas (entre ellos espanol, ingles, chino, japones, aleman, frances, portugues, arabe e hindi) y esta publicado bajo licencia Apache 2.0, lo que facilita su integracion en productos comerciales. No obstante, conviene senalar que la validacion de calidad documentada por el autor se limita a frases en ingles, y que la clonacion de voz no esta soportada en este runtime.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer tipo Qwen2 (24 capas) para el modelo de texto, mas predictor de codigos (4 capas) y decodificador de audio arktts, ambos en el fichero mmproj |
-| Parametros totales | 497.473.504 (0,5 B) |
-| Parametros activos | No aplica (no es MoE) |
-| Longitud de contexto | No disponible |
-| Tipos de cuantizacion | Q8_0 (0,53 GB), Q6_K_ROCMFPX (0,45 GB), Q4_0_ROCMFP4_STRIX (0,35 GB); mmproj en BF16 (0,58 GB) |
-| Idiomas soportados | zh, en, ja, ko, de, fr, es, it, ru, ar, fi, hi, id, ms, nl, no, pl, pt, sv, th, tr, vi, yue (25) |
+| Arquitectura | Transformer tipo Qwen2 (24 capas) para el modelo de texto + predictor de codigos (4 capas) + decodificador de audio arktts |
+| Parametros totales | 497.473.504 (segun safetensors del modelo base) |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | Q8_0 ROCmFPX (8 bits), Q6_K ROCmFPX (6 bits, recomendada), Q4_0 ROCmFP4 STRIX (4 bits); mmproj en BF16 |
+| Idiomas soportados | zh, en, ja, ko, de, fr, es, it, ru, ar, fi, hi, id, ms, nl, no, pl, pt, sv, th, tr, vi, yue (24 idiomas) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (para llama.cpp / ROCmFPX) |
+| Formato de pesos | GGUF (llama.cpp / ROCmFPX) |
 
 ## Arquitectura y entrenamiento
 
-El sistema se divide en tres componentes. El modelo de texto, con arquitectura tipo Qwen2 de 24 capas y empaquetado como GGUF estandar de llama.cpp, lee el texto de entrada y selecciona el token de habla principal de cada trama de audio, a un ritmo de 21,5 tramas por segundo de audio. El predictor de codigos, de 4 capas pequenas e incluido en el mmproj, completa los otros 9 codigos de cada trama. Por ultimo, el decodificador de audio basado en el codec arktts, tambien en el mmproj, convierte los 10 codigos por trama en audio PCM a 44,1 kHz.
+El pipeline de inferencia se divide en tres componentes. El modelo de texto, con arquitectura tipo Qwen2 de 24 capas y empaquetado como GGUF convencional de llama, lee el texto de entrada y selecciona el token de habla principal de cada trama de audio, a una tasa de 21,5 tramas por segundo. El predictor de codigos, de 4 capas pequenas e incluido en el fichero `mmproj`, completa los otros 9 codigos de cada trama. Por ultimo, el decodificador de audio basado en el codec arktts transforma los 10 codigos por trama en audio PCM a 44,1 kHz.
 
-No se dispone de informacion sobre el volumen de datos de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de RLHF o DPO en el modelo base. La model card unicamente documenta los parametros de muestreo heredados de la referencia: top-k 50, top-p 0,9, temperatura 0,7 y una regla RAS contra repeticiones. La innovacion tecnica destacable de esta publicacion es el formato ROCmFPX, que anade escalas por tensor a las cuantizaciones para habilitar rutas rapidas en GPU AMD, y la separacion entre modelo de texto y mmproj, que permite intercambiar cuantizaciones del primero sin recargar el decodificador.
+Los parametros de muestreo siguen la referencia del modelo original: top-k 50, top-p 0,9, temperatura 0,7 y una regla RAS contra repeticiones. No se dispone de informacion sobre el volumen de tokens de entrenamiento, la composicion del dataset ni el uso de RLHF o DPO en la informacion proporcionada. La innovacion tecnica principal de esta distribucion no esta en el entrenamiento sino en la cuantizacion: los ficheros ROCmFPX incorporan escalas por tensor que requieren el fork ROCmFPX (commit `8a705e2f7` o superior) y sus kernels especificos para AMD.
 
 ## Capacidades
 
-- Sintesis de voz multilingue a partir de texto plano en 25 idiomas, incluidos espanol, ingles, chino, japones, coreano, aleman, frances, italiano, portugues, ruso y arabe.
-- Generacion de audio a 44,1 kHz con una duracion maxima de aproximadamente 47 segundos por llamada (1024 tramas).
-- Generacion determinista mediante semilla (`-s <seed>`), util para pruebas reproducibles.
-- Ejecucion sin Python ni PyTorch: runtime C++ nativo sobre ggml.
-- Compatibilidad con CPU, Vulkan (incluida AMD Strix Halo) y CUDA.
-- No soporta clonacion de voz en este runtime; el modelo habla con una voz propia fija.
-- No dispone de tool calling, capacidades de agente, vision ni audio de entrada.
+- Sintesis de voz multilingue en 24 idiomas, seleccionando el idioma implicitamente a partir del texto de entrada (sin conmutador de idioma).
+- Generacion de hasta aproximadamente 47 segundos de audio por llamada (1024 tramas).
+- Salida de audio a 44,1 kHz mediante el decodificador arktts.
+- Reproducibilidad determinista del audio fijando una semilla (`-s <seed>`).
+- Inferencia nativa en C++ sobre ggml, sin dependencias de Python ni PyTorch.
+- Ejecucion en CPU, Vulkan (incluida AMD Strix Halo) y CUDA.
+- No soporta clonacion de voz a partir de una grabacion de referencia en este runtime; el modelo habla con su propia voz.
+- No se documentan capacidades de tool calling, agentes, vision ni audio de entrada.
 
 ## Casos de uso
 
-- Narracion de articulos y documentacion: el modelo convierte texto en audio de forma local y sin dependencias de Python, lo que permite integrarlo en generadores de sitios estaticos que produzcan versiones en audio de cada entrada.
-- Accesibilidad en aplicaciones de escritorio: lectura en voz alta de contenido para usuarios con discapacidad visual, ejecutandose en CPU o en una GPU integrada sin necesidad de servicios en la nube.
-- Asistentes de voz embebidos en dispositivos con GPU AMD Strix Halo: el binario `llama-tts` con backend Vulkan y la cuantizacion Q4_0_ROCMFP4_STRIX (0,35 GB) caben en equipos de gama alta de consumo y permiten respuestas habladas sin conexion.
-- Generacion de locuciones para prototipos y demos: con semilla fija se obtiene siempre el mismo audio, lo que facilita la revision y el control de versiones de los recursos de audio generados.
-- Pruebas de internacionalizacion: el soporte de 25 idiomas permite generar muestras habladas en espanol, portugues, arabe o vietnamita para validar interfaces multilingues antes de contratar voces profesionales.
-- Investigacion en TTS de bajo coste: la tabla de fidelidad frente a PyTorch incluida en la model card permite estudiar el impacto de cada cuantizacion en la calidad de la seleccion de tokens de habla.
+- Narracion de articulos y documentacion: el modelo puede leer texto en cualquiera de los 24 idiomas soportados y generar un WAV de hasta 47 segundos por llamada, encadenando llamadas para textos largos con una semilla fija para mantener consistencia de voz.
+- Generacion de audiolibros y podcasts: con un consumo de 0,35-0,52 GB para el modelo de texto y 0,58 GB para el mmproj, se puede desplegar en un servidor modesto o incluso en un mini-PC con GPU integrada AMD, procesando capitulos por fragmentos.
+- Accesibilidad y lectores de pantalla: la inferencia nativa en C++ y la ausencia de dependencias Python facilitan empaquetar el runtime dentro de aplicaciones de escritorio, reduciendo el peso del instalador frente a soluciones basadas en PyTorch.
+- Localizacion de contenido audiovisual: al cubrir espanol, portugues, frances, aleman, arabe, hindi o chino, entre otros, permite generar pistas de voz para versiones dobladas de material ya escrito, sin cambiar de modelo.
+- Prototipado en hardware AMD Strix Halo: la cuantizacion Q4_0 ROCmFP4 STRIX esta pensada especificamente para estas APU, lo que permite probar TTS en equipos sin GPU NVIDIA dedicada.
+- Integracion en pipelines de CI/CD para pruebas de regresion de audio: la reproducibilidad con semilla y la comparacion documentada contra la referencia PyTorch (coseno de logits de 0,99949 en Q6_K) permiten detectar degradaciones en la salida de voz de forma automatizada.
+- Sistemas de aviso y notificaciones por voz: la baja huella de memoria y la ejecucion en CPU permiten generar mensajes cortos en tiempo casi real en entornos con recursos limitados.
 
 ## Benchmarks y rendimiento
 
-La model card no incluye benchmarks estandar (MMLU, HumanEval, etc.), pero si una comparacion de fidelidad frente a la referencia en PyTorch con teacher forcing, sobre una frase de prueba en ingles de 113 tramas:
+El autor publica una comparacion de fidelidad frente a la referencia PyTorch con teacher forcing (frase de prueba en ingles, 113 tramas). No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, etc.) en la informacion disponible, ya que no aplican a un modelo TTS.
 
-| Modelo de texto (mmproj BF16) | Coseno de logits de texto | Aciertos de token semantico | Aciertos del predictor de codigos |
+| Modelo de texto (mmproj BF16) | Coseno de logits de texto | Aciertos semanticos | Aciertos del predictor de codigos |
 |---|---|---|---|
 | F32 (mmproj F32) | 0,9999993 | 114 / 114 | 1010 / 1017 |
 | BF16 | 0,999997 | 114 / 114 | 1008 / 1017 |
 | Q8_0 | 0,99987 | 113 / 114 | 963 / 1017 |
-| Q6_K_ROCMFPX | 0,99949 | 105 / 114 | 930 / 1017 |
-| Q4_0_ROCMFP4_STRIX | 0,9952 | 93 / 114 | 720 / 1017 |
+| Q6_K ROCmFPX | 0,99949 | 105 / 114 | 930 / 1017 |
+| Q4_0 ROCmFP4 STRIX | 0,9952 | 93 / 114 | 720 / 1017 |
 
-El decodificador de audio alcanza un coseno de 0,9999998 frente a PyTorch. Whisper transcribe palabra por palabra la salida libre de todos los ficheros del repositorio en ingles con varias semillas; otros idiomas no se han probado. La velocidad solo se ha medido en una CPU con carga, sin cifras publicadas de GPU.
+El decodificador de audio alcanza un coseno de 0,9999998 frente a PyTorch. Whisper transcribe palabra por palabra la salida en ejecucion libre de todos los ficheros del repositorio en ingles (dos frases, varias semillas); otros idiomas no fueron probados. La velocidad solo se midio en una CPU con carga, sin cifras de GPU publicadas.
 
 ## Requisitos de hardware
 
-- VRAM estimada: muy baja. El modelo de texto ocupa entre 0,35 GB (Q4_0) y 0,53 GB (Q8_0), y el mmproj BF16 anade 0,58 GB; en total, entre aproximadamente 1 GB y 1,1 GB de pesos.
-- GPU recomendadas: cualquier GPU con soporte Vulkan o CUDA; el autor apunta especificamente a AMD Strix Halo con la cuantizacion Q4_0_ROCMFP4_STRIX.
-- Cabe en GPU de consumo: si, en practicamente cualquier GPU integrada o dedicada reciente, y tambien en CPU.
-- Opciones de despliegue: exclusivamente el fork ROCmFPX de llama.cpp (commit `8a705e2f7` o posterior) mediante el binario `llama-tts`; los ficheros Q6_K y Q4_0 requieren este fork por sus escalas por tensor, mientras que el Q8_0 es un GGUF estandar.
-- Latencia y throughput: no disponibles; el autor no ha publicado mediciones en GPU.
+- VRAM estimada: aproximadamente 0,93 GB en Q6_K (0,45 GB del modelo de texto + 0,58 GB del mmproj), 1,10 GB en Q8_0 y 0,93 GB en Q4_0 STRIX.
+- GPU recomendadas: AMD Strix Halo (objetivo principal de la cuantizacion Q4_0 ROCmFP4 STRIX), GPU AMD con soporte Vulkan y GPU NVIDIA con CUDA. No se especifican modelos concretos como A100, H100 o RTX 4090 en la informacion disponible.
+- Cabe holgadamente en cualquier GPU de consumo con al menos 2 GB de VRAM y tambien funciona en CPU.
+- Opciones de despliegue: exclusivamente el fork ROCmFPX de llama.cpp (binario `llama-tts`), compilado con `-DGGML_VULKAN=ON` para Vulkan o con soporte CUDA. No se mencionan vLLM, Ollama ni TGI.
+- Latencia y throughput: no disponibles; el autor indica que solo midio velocidad en una CPU con carga y solicita datos de la comunidad.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Idiomas | Licencia | Formato |
+| Modelo | Parametros | Contexto | Idiomas | Licencia | Formato / runtime |
 |---|---|---|---|---|---|
-| Audio8-TTS-Realistic-0.6b-ROCmFPX | 0,5 B | no disponible | 25 | Apache 2.0 | GGUF |
-| Edge0/Audio8-TTS-Realistic-0.6b | 0,5 B | no disponible | 25 | Apache 2.0 | safetensors (PyTorch) |
-| Alternativas TTS open source de tamano comparable | no disponible | no disponible | no disponible | no disponible | no disponible |
+| Audio8-TTS-Realistic-0.6b-ROCmFPX | 497 M | no disponible | 24 | Apache 2.0 | GGUF / ROCmFPX (llama.cpp) |
+| Edge0/Audio8-TTS-Realistic-0.6b (base) | 497 M | no disponible | 24 | Apache 2.0 | Pesos originales (PyTorch) |
+| Otros modelos TTS de tamano similar | no disponible | no disponible | no disponible | no disponible | no disponible |
 
-La unica comparacion documentada es con el modelo base en PyTorch, del que esta version es una conversion GGUF con perdida minima segun la tabla de fidelidad. No se dispone de datos de otros modelos TTS comparables en la informacion proporcionada.
+La informacion proporcionada no incluye datos de benchmarks ni especificaciones de modelos TTS alternativos que permitan una comparacion cuantitativa rigurosa.
 
 ## Limitaciones y advertencias
 
-- No soporta clonacion de voz: el modelo habla siempre con su propia voz, lo que limita casos de uso que requieran una identidad vocal concreta.
-- Duracion maxima de audio de aproximadamente 47 segundos por llamada; textos mas largos deben trocearse.
-- La validacion de calidad solo se ha realizado en ingles con Whisper; el rendimiento en los otros 24 idiomas, incluido el espanol, no esta verificado.
-- Las cuantizaciones ROCmFPX Q6_K y Q4_0 degradan la seleccion del predictor de codigos de forma notable (930/1017 y 720/1017 frente a 1010/1017 en F32), lo que puede afectar a la naturalidad del audio.
-- Los ficheros ROCmFPX requieren un fork concreto de llama.cpp (commit `8a705e2f7` o posterior); no funcionan en llama.cpp estandar ni en Ollama.
-- Riesgo de alucinacion acustica: como todo TTS generativo, puede producir artefactos, repeticiones o pronunciaciones erroneas, mitigado parcialmente por la regla RAS.
-- No hay datos publicados sobre sesgos de voz (genero, acento, edad) ni sobre el origen de los datos de entrenamiento del modelo base.
-- La licencia Apache 2.0 permite uso comercial, pero conviene verificar las condiciones del modelo base Edge0/Audio8-TTS-Realistic-0.6b y del codec arktts antes de desplegar en produccion.
-- El repositorio tiene muy pocas descargas y ninguna validacion de la comunidad; la velocidad en GPU no esta medida por el autor.
+- La validacion de calidad documentada se limita al ingles; el resto de los 24 idiomas no han sido probados por el autor.
+- La clonacion de voz no esta soportada en el runtime ROCmFPX; el modelo usa una voz fija propia.
+- La cuantizacion Q4_0 ROCmFP4 STRIX degrada notablemente el predictor de codigos (720/1017 aciertos frente a 1010/1017 en F32), por lo que puede afectar a la naturalidad del audio.
+- Los ficheros ROCmFPX requieren el fork ROCmFPX (commit `8a705e2f7` o superior); no son compatibles con llama.cpp estandar.
+- Cada llamada genera como maximo unos 47 segundos de audio, lo que obliga a fragmentar textos largos.
+- No hay cifras de latencia ni throughput en GPU publicadas, solo una medicion en CPU con carga.
+- Riesgo de artefactos o repeticiones en la sintesis: el muestreo incorpora una regla RAS contra repeticiones, lo que sugiere que el problema existe en el modelo base.
+- No se dispone de informacion sobre sesgos de voz, acentos o calidad por idioma.
+- La licencia Apache 2.0 permite uso comercial, pero conviene verificar las condiciones del modelo base y del runtime (llama.cpp es MIT).
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/Harsha001/Audio8-TTS-Realistic-0.6b-ROCmFPX
 - Modelo base: https://huggingface.co/Edge0/Audio8-TTS-Realistic-0.6b
 - Runtime ROCmFPX: https://github.com/HarshaVardhan3002/ROCmFPX
-- llama.cpp (proyecto original): https://github.com/ggml-org/llama.cpp
+- llama.cpp: https://github.com/ggml-org/llama.cpp

@@ -1,0 +1,74 @@
+{
+  "schema": 2,
+  "id": "asemqaffaf/AsemLLM-runs",
+  "slug": "asemqaffaf-asemllm-runs",
+  "author": "asemqaffaf",
+  "url": "https://huggingface.co/asemqaffaf/AsemLLM-runs",
+  "created_at": "2026-11-16T09:27:14.000Z",
+  "updated_at": "2026-11-23T08:12:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "asemllm",
+    "text-generation",
+    "causal-lm",
+    "decoder-only",
+    "transformer",
+    "from-scratch",
+    "common-lisp",
+    "sbcl",
+    "cpu-training",
+    "apple-silicon",
+    "small-language-model",
+    "research",
+    "research-artifacts",
+    "catastrophic-forgetting",
+    "induction-heads",
+    "en",
+    "dataset:HuggingFaceFW/fineweb-edu",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27584641,
+  "parameters_human": "27.6M",
+  "storage_bytes": 58331772267,
+  "storage_human": "58.3 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "Language modeling",
+      "dataset": "FineWeb-Edu (filtered, held-out validation split, 269,696 tokens)",
+      "metric": "Validation perplexity",
+      "value": 71.65
+    },
+    {
+      "task": "Language modeling",
+      "dataset": "FineWeb-Edu (filtered, held-out validation split, 269,696 tokens)",
+      "metric": "Validation cross-entropy (nats per token)",
+      "value": 4.2718
+    }
+  ],
+  "sources": []
+}

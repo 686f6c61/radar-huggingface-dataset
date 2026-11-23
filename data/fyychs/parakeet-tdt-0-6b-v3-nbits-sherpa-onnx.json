@@ -5,7 +5,7 @@
   "author": "fyychs",
   "url": "https://huggingface.co/fyychs/parakeet-tdt-0.6b-v3-nbits-sherpa-onnx",
   "created_at": "2026-11-22T15:07:56.000Z",
-  "updated_at": "2026-11-22T15:08:41.000Z",
+  "updated_at": "2026-11-22T17:05:17.000Z",
   "license": "cc-by-4.0",
   "license_family": "oss",
   "pipeline_tag": "automatic-speech-recognition",

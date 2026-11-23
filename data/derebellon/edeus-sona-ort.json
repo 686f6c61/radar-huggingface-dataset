@@ -5,8 +5,8 @@
   "author": "derebellon",
   "url": "https://huggingface.co/derebellon/edeus-sona-ort",
   "created_at": "2026-09-27T17:57:50.000Z",
-  "updated_at": "2026-11-22T00:07:49.000Z",
-  "license": "edeus-smartepi-proprietary",
+  "updated_at": "2026-11-23T05:10:32.000Z",
+  "license": "proprietary",
   "license_family": "non-commercial",
   "pipeline_tag": "automatic-speech-recognition",
   "library": "onnxruntime",
@@ -14,17 +14,18 @@
     "es"
   ],
   "tags": [
-    "onnxruntime",
     "clinical",
     "medical",
-    "spanish",
     "asr",
     "speech-to-text",
+    "spanish",
+    "colombia",
     "on-device",
     "onnx",
-    "streaming",
     "automatic-speech-recognition",
     "es",
+    "base_model:moonshine-ai/moonshine-streaming-small-es",
+    "base_model:finetune:moonshine-ai/moonshine-streaming-small-es",
     "license:other",
     "region:us"
   ],
@@ -36,7 +37,7 @@
   "storage_bytes": 477534799,
   "storage_human": "478 MB",
   "context_length": null,
-  "base_model": null,
+  "base_model": "openai/whisper-small, moonshine-ai/moonshine-streaming-small-es, nvidia/parakeet-tdt-0.6b-v3",
   "formats": [
     "onnx"
   ],

@@ -2,89 +2,95 @@
 
 ## Resumen
 
-`gmezan/nllb-quechua-spanish` es un modelo de traduccion automatica neuronal entrenado para el par de idiomas quechua-espanol, publicado en Hugging Face por el usuario gmezan. El modelo se construye sobre la arquitectura M2M-100 (tag `m2m_100`), un transformer encoder-decoder disenado originalmente por Facebook AI para traduccion multilingue, y cuenta con 615.073.792 parametros totales segun los pesos en safetensors. El repositorio ocupa 2,5 GB y se distribuye en formato safetensors compatible con la libreria `transformers`.
+`gmezan/nllb-quechua-spanish` es un modelo de traduccion automatica neuronal especializado en el par de idiomas castellano-quechua (y viceversa), publicado en Hugging Face por el usuario gmezan. Se trata de un ajuste fino (fine-tuning) del modelo M2M-100 de Meta AI, segun indica la etiqueta de arquitectura `m2m_100` y la referencia al paper arXiv:1910.09700, que corresponde precisamente a la publicacion original de M2M-100. El modelo resuelve el problema de la traduccion entre una lengua de altos recursos como el castellano y una lengua indigena andina de bajos recursos como el quechua, un par para el que los modelos multilingues genericos suelen ofrecer un rendimiento pobre.
 
-La relevancia de este modelo radica en su enfoque sobre un par de idiomas de bajos recursos: el quechua es una lengua indigena andina con escasa representacion en los sistemas de traduccion comerciales, y las variantes especializadas quechua-espanol son poco frecuentes. Al partir de la arquitectura m2m_100, el modelo hereda el diseno multilingue de M2M-100, aunque el autor no ha documentado que idiomas adicionales conserva ni el proceso exacto de ajuste.
+El modelo cuenta con 615.073.792 parametros totales, lo que lo situa en la gama de los modelos de traduccion de tamano medio, manejables en hardware de consumo con cuantizacion. El repositorio ocupa 17,3 GB, coherente con pesos almacenados en varios formatos o en precision completa. La model card publicada es una plantilla autogenerada por Hugging Face sin contenido sustantivo: no documenta autor, datos de entrenamiento, licencia ni idiomas de forma explicita, aunque la denominacion del modelo y las evaluaciones incluidas permiten inferir su proposito.
 
-La model card esta practicamente vacia: se trata de la plantilla autogenerada por Hugging Face sin completar, por lo que no hay informacion sobre datos de entrenamiento, hiperparametros, licencia ni evaluacion. Esto limita seriamente la evaluacion rigurosa del modelo y obliga a tratar cualquier uso en produccion con cautela hasta que el autor publique documentacion adicional.
+La relevancia actual del modelo radica en su especializacion: los sistemas de traduccion de proposito general rara vez cubren con calidad las lenguas indigenas de America Latina, y este tipo de ajustes finos representa un esfuerzo por colmar ese vacio con recursos limitados. Las evaluaciones publicadas en la propia model card aportan metricas BLEU y chrF++ sobre un conjunto de test de 12.671 frases, lo que permite una valoracion cuantitativa aunque modesta del rendimiento.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer encoder-decoder (M2M-100, tag `m2m_100`) |
+| Arquitectura | Transformer encoder-decoder (M2M-100) |
 | Parametros totales | 615.073.792 |
 | Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible (pesos publicados en safetensors, presumiblemente fp32/bf16) |
-| Idiomas soportados | quechua y espanol (segun el nombre del modelo); resto no disponible |
+| Tipos de cuantizacion | no disponible (pesos publicados en safetensors) |
+| Idiomas soportados | castellano (spa_Latn) y quechua (quy_Latn) |
 | Licencia | no disponible |
 | Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
 
-El modelo emplea la arquitectura M2M-100, un transformer encoder-decoder con atencion multi-cabeza estandar, introducido en el paper *Beyond English-Centric Multilingual Machine Translation* (Fan et al., 2020, arXiv:1910.09700). M2M-100 se diseno para traduccion directa entre pares de idiomas sin pivotar por el ingles, y sus variantes publicadas van desde 418M hasta 12B de parametros. Con 615M de parametros, este checkpoint se situa en el rango de la variante pequena, lo que sugiere un ajuste fino sobre una base preentrenada de ese tamano, aunque el autor no lo confirma.
+El modelo se basa en la arquitectura M2M-100, un transformer encoder-decoder multilingue disenado por Meta AI para traduccion directa entre pares de idiomas sin depender del ingles como pivote. La etiqueta `m2m_100` y la referencia al paper arXiv:1910.09700 confirman esta base. Con 615 millones de parametros, corresponde a una de las variantes de menor tamano de la familia M2M-100, lo que facilita su despliegue.
 
-No se dispone de informacion sobre el corpus de entrenamiento (numero de tokens, procedencia de los pares quechua-espanol, tecnicas de filtrado o aumentacion de datos), ni sobre si se aplicaron tecnicas de RLHF, DPO u otro ajuste por preferencias. Tampoco se documentan innovaciones tecnicas adicionales como decodificacion especulativa o atencion lineal. La unica referencia tecnica disponible es el paper original de M2M-100, citado en los tags del repositorio.
+La informacion disponible no detalla el procedimiento de entrenamiento: no se especifican el numero de tokens utilizados, la composicion del corpus de ajuste fino, ni si se emplearon tecnicas de RLHF o DPO. La model card incluye unicamente una seccion de resultados de evaluacion con marcas de tiempo que sugieren un entrenamiento por epocas (se documentan al menos `epoch-1` y `epoch-2`), con un conjunto de test denominado `gmezan/quechua-spanish-parallel` y una referencia a `americasnlp2024/jw300`, lo que indica el uso de corpus paralelos vinculados a la competicion AmericasNLP 2024 y al corpus JW300. No se documentan innovaciones tecnicas adicionales como decodificacion especulativa o atencion lineal.
 
 ## Capacidades
 
-- Traduccion automatica de texto entre quechua y espanol (bidireccional segun el nombre del modelo, aunque no se especifica el sentido exacto ni si ambos estan cubiertos).
-- Generacion de texto condicionada a una tarea de traduccion (`text2text-generation`), propia de la familia m2m_100.
-- Compatibilidad con la API de `transformers` y con endpoints compatibles (tag `endpoints_compatible`).
-- Capacidades multilingues adicionales: no disponible; no se documenta si conserva otros idiomas del preentrenamiento M2M-100.
-- Tool calling / function calling: no disponible (no es una capacidad tipica de esta arquitectura).
-- Razonamiento multi-paso o modo agente: no disponible.
-- Vision, audio u otras modalidades: no disponibles.
+- Traduccion automatica bidireccional entre castellano y quechua (spa_Latn a quy_Latn y quy_Latn a spa_Latn).
+- Generacion de texto condicionada a tarea (`text2text-generation`), propia de los modelos encoder-decoder.
+- Manejo de texto en escritura latina para ambos idiomas, segun los codigos de idioma empleados en las evaluaciones.
+- No se documenta soporte de tool calling ni function calling.
+- No se documenta soporte de agentes ni razonamiento multi-paso.
+- No se documenta capacidad de vision, audio ni modo de razonamiento explicito.
+- Cobertura multilingue limitada al par castellano-quechua segun la evidencia disponible.
 
 ## Casos de uso
 
-- Traduccion de documentacion administrativa y sanitaria al quechua: el modelo puede emplearse para generar versiones en quechua de formularios, avisos o material informativo dirigido a comunidades andinas, reduciendo la dependencia de traductores humanos para textos de baja complejidad.
-- Subtitulado y localizacion de contenido audiovisual: integrado en un pipeline de ASR + traduccion, permitiria generar subtitulos en espanol a partir de audio en quechua o viceversa, aprovechando la naturaleza seq2seq del modelo.
-- Preservacion linguistica y corpus paralelos: el modelo puede usarse para generar traducciones preliminares que, tras revision humana, alimenten corpus paralelos quechua-espanol, un recurso escaso y valioso para la investigacion en lenguas de bajos recursos.
-- Atencion ciudadana bilingue: en portales o chatbots de administraciones publicas en regiones andinas, el modelo podria traducir consultas y respuestas entre quechua y espanol, siempre con supervision humana dada la falta de evaluacion publicada.
-- Investigacion en traduccion de bajos recursos: sirve como punto de partida (baseline) o para ajuste fino adicional en experimentos academicos sobre pares de idiomas con pocos datos, dado su tamano moderado y su compatibilidad con `transformers`.
-- Educacion bilingue: traduccion de materiales didacticos y glosarios para escuelas interculturales bilingues, donde el volumen de textos justifica la automatizacion pero se requiere revision por docentes.
-- Prototipado rapido de servicios de traduccion: al ser un checkpoint ligero (615M parametros), puede desplegarse en entornos con recursos limitados para validar productos antes de invertir en modelos mayores o en servicios comerciales.
+- Traduccion de documentacion administrativa al quechua: el modelo puede traducir comunicados, formularios y avisos oficiales del castellano al quechua, contribuyendo a la accesibilidad de servicios publicos para hablantes de esta lengua andina.
+- Subtitulado y localizacion de contenidos educativos: util para generar subtitulos en quechua a partir de material audiovisual en castellano, apoyando iniciativas de educacion bilingue intercultural.
+- Digitalizacion y traduccion de patrimonio oral y escrito: traduccion de textos historicos, relatos y transcripciones del quechua al castellano para su catalogacion en archivos y bibliotecas.
+- Atencion ciudadana en lengua indigena: integracion en chatbots o sistemas de mensajeria para responder consultas en quechua traduciendolas al castellano y viceversa, con la advertencia de que el rendimiento medido es limitado.
+- Investigacion linguistica y creacion de corpus: generacion de traducciones preliminares que sirvan como punto de partida para anotadores humanos en la construccion de corpus paralelos de mayor calidad.
+- Preservacion y difusion cultural: traduccion de material literario y divulgativo hacia el quechua para publicaciones comunitarias, siempre con revision humana dada la calidad medida.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+Los datos de evaluacion publicados en la model card corresponden al split de test de `gmezan/quechua-spanish-parallel` (12.671 frases) y a la referencia `americasnlp2024/jw300`.
+
+| Epoca | Direccion | n | BLEU | chrF++ | Throughput |
+|---|---|---:|---:|---:|---:|
+| epoch-1 | spa_Latn -> quy_Latn | 12671 | 7,39 | 32,08 | 12,16 frases/s |
+| epoch-1 | quy_Latn -> spa_Latn | 12671 | 12,78 | 31,21 | 12,16 frases/s |
+| epoch-2 | spa_Latn -> quy_Latn | 1267 | no disponible (truncado) | no disponible (truncado) | 14,67 frases/s |
+
+No se han publicado en la informacion disponible resultados comparativos con otros modelos ni metricas de benchmarks estandar como MMLU, HumanEval o GSM8K, que ademas no aplican a un modelo de traduccion.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: con 615M parametros, en fp32 se requieren aproximadamente 2,5 GB de VRAM; en fp16/bf16, unos 1,3 GB; en cuantizacion de 8 bits, en torno a 0,7 GB (estimaciones teoricas a partir del numero de parametros, no verificadas por el autor).
-- GPU recomendadas: cualquier GPU consumer moderna con 4 GB o mas de VRAM (GTX 1650, RTX 3050, RTX 4060) es suficiente para inferencia en fp16; para lotes grandes o baja latencia, se recomiendan RTX 4090, A100 o H100.
-- Cabe en GPU consumer: si, practicamente en cualquier GPU con 4 GB o mas de VRAM.
-- Opciones de despliegue: `transformers` (con `M2M100ForConditionalGeneration`), y potencialmente servidores compatibles como TGI o vLLM si soportan la arquitectura m2m_100; llama.cpp y Ollama no estan confirmados para esta arquitectura y formato.
-- Latencia y throughput: no disponibles; no se han publicado mediciones.
+- VRAM estimada para inferencia en fp16: aproximadamente 1,3 GB solo para pesos (615 M de parametros), mas memoria para activaciones y cache, tipicamente 2-4 GB en total.
+- VRAM estimada en cuantizacion de 8 bits: en torno a 0,7-1 GB para pesos; en 4 bits, alrededor de 0,4-0,5 GB.
+- GPU recomendadas: cualquier GPU consumer moderna es suficiente, incluidas RTX 3060, RTX 4060, RTX 4090; tambien funciona en GPU de datacenter como A100 o H100, aunque estan sobredimensionadas para este tamano.
+- Cabe holgadamente en GPU consumer e incluso en CPU para inferencia por lotes con latencia aceptable.
+- Opciones de despliegue: transformers (libreria nativa), vLLM y TGI para servido con encoder-decoder, y conversion a GGUF para llama.cpp u Ollama si se generan dichos formatos.
+- Throughput medido en la evaluacion publicada: 12,16 frases/s en epoch-1 y 14,67 frases/s en epoch-2, aunque no se especifica el hardware empleado.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| `gmezan/nllb-quechua-spanish` | 615M | no disponible | quechua, espanol | no disponible | Hugging Face |
-| `facebook/m2m100_418M` | 418M | 1024 tokens (posiciones sinusoidales) | 100 idiomas | MIT | Hugging Face |
-| `facebook/nllb-200-distilled-600M` | 600M | 1024 tokens | 200 idiomas | CC-BY-NC 4.0 | Hugging Face |
-| `Helsinki-NLP/opus-mt-qu-es` | no disponible | no disponible | quechua, espanol | CC-BY 4.0 (segun modelo OPUS-MT) | Hugging Face |
+| Modelo | Parametros | Idiomas | Contexto | BLEU spa->quy | Licencia |
+|---|---|---:|---|---:|---|
+| gmezan/nllb-quechua-spanish | 615 M | castellano, quechua | no disponible | 7,39 | no disponible |
+| M2M-100 (base original) | 418 M / 1,2 B | 100 idiomas | no disponible | no disponible | MIT (segun publicacion original) |
+| NLLB-200 (variantes pequenas) | 600 M | 200 idiomas | no disponible | no disponible | CC-BY-NC (segun publicacion original) |
 
-La comparativa se basa en caracteristicas publicas de los modelos alternativos; no hay datos de rendimiento del modelo evaluado que permitan una comparacion cuantitativa. El modelo de Helsinki-NLP (OPUS-MT) es el competidor directo mas cercano por par de idiomas, mientras que NLLB-200 distilled 600M ofrece cobertura multilingue amplia pero con licencia no comercial.
+La comparativa cuantitativa con alternativas no esta disponible en la informacion proporcionada; los datos de M2M-100 y NLLB-200 se citan solo como referencia de categoria y sus licencias corresponden a las publicaciones originales, no a este ajuste fino.
 
 ## Limitaciones y advertencias
 
-- La model card esta vacia (plantilla autogenerada), por lo que no hay informacion sobre sesgos, datos de entrenamiento ni evaluacion de calidad.
-- Riesgo elevado de alucinacion y de traducciones incorrectas: sin benchmarks publicados no es posible estimar la fidelidad de las traducciones, especialmente en un par de bajos recursos como quechua-espanol.
-- Licencia no especificada: no se puede garantizar el uso comercial. Es imprescindible contactar con el autor antes de cualquier despliegue en produccion.
-- Idiomas soportados no documentados: se desconoce si el ajuste fino ha degradado el resto de idiomas del preentrenamiento M2M-100 (olvido catastrofico).
-- Longitud de contexto no disponible: la arquitectura M2M-100 original usa posiciones sinusoidales con 1024 posiciones, pero no se confirma que este checkpoint mantenga esa configuracion.
-- Variedad dialectal del quechua no especificada: el quechua tiene multiples variantes (Cusco-Collao, Ayacucho-Chanka, Ancash, etc.) y el modelo no indica cual cubre, lo que puede producir traducciones inadecuadas para hablantes de otras variantes.
-- Sin likes ni descargas en el momento de la consulta: no hay evidencia de uso comunitario ni validacion por terceros.
-- Fecha de creacion y actualizacion muy proximas (12 de noviembre de 2026): el modelo es reciente y no ha sido revisado por la comunidad.
+- La model card es una plantilla autogenerada sin informacion sustantiva: no se documentan sesgos, datos de entrenamiento ni procedencia del corpus.
+- La licencia no esta declarada, lo que impide determinar si el uso comercial esta permitido; debe consultarse al autor antes de cualquier despliegue productivo.
+- El rendimiento medido es modesto: BLEU de 7,39 en castellano a quechua y 12,78 en sentido inverso, con chrF++ en torno a 31-32, lo que indica calidad limitada y necesidad de revision humana.
+- Riesgo de alucinacion y de traducciones incorrectas en terminologia especializada, nombres propios y estructuras gramaticales propias del quechua.
+- Cobertura limitada a un unico par de idiomas; no es un modelo multilingue de proposito general.
+- La evaluacion se realizo sobre un unico conjunto de test vinculado a AmericasNLP 2024, por lo que la generalizacion a otros dominios no esta verificada.
+- El repositorio de 17,3 GB sugiere la presencia de multiples artefactos o pesos duplicados; conviene revisar los archivos antes de descargar.
+- No se documenta la longitud de contexto soportada, lo que dificulta planificar el procesamiento de documentos largos.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/gmezan/nllb-quechua-spanish
-- Paper de M2M-100 (referenciado en los tags): https://arxiv.org/abs/1910.09700
-- Repositorio de M2M-100 en fairseq: https://github.com/facebookresearch/fairseq/tree/main/examples/m2m_100
-- Modelo base de referencia M2M-100 en Hugging Face: https://huggingface.co/facebook/m2m100_418M
-- Modelo alternativo OPUS-MT quechua-espanol: https://huggingface.co/Helsinki-NLP/opus-mt-qu-es
+- Paper de M2M-100 (arXiv:1910.09700): https://arxiv.org/abs/1910.09700
+- Conjunto de evaluacion referenciado (AmericasNLP 2024 / JW300): no disponible como enlace directo en la informacion proporcionada
+- Repositorio del corpus de evaluacion `gmezan/quechua-spanish-parallel`: no disponible como enlace directo en la informacion proporcionada

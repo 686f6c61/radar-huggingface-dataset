@@ -2,105 +2,89 @@
 
 ## Resumen
 
-Astheral (nombre distribuido: Llama-3.1-Astheral) es un ajuste fino experimental de tipo asistente desarrollado por SEE7 a partir de NousResearch/DeepHermes-3-Llama-3-8B-Preview, que a su vez se apoya en Meta Llama 3.1 8B. No se trata de un modelo preentrenado desde cero: el repositorio contiene los pesos fusionados resultantes de un entrenamiento LoRA de rango 16 sobre las proyecciones de atención, junto con el adaptador LoRA guardado por separado. El objetivo declarado es adaptar un modelo de 8B a respuestas concisas, formatos de salida solicitados, código sencillo, roleplay ficticio y explicaciones legítimas de administración de redes.
+Astheral es un modelo de generación de texto de 8.030.261.248 parámetros (8,03 B) publicado por el usuario SEE7 en Hugging Face. Se trata de un ajuste fino supervisado del checkpoint NousResearch/DeepHermes-3-Llama-3-8B-Preview, que a su vez deriva de la familia Llama 3.1 de Meta. El modelo se distribuye con pesos fusionados en BF16 resultantes de una ejecución QLoRA de rango 16, y está orientado a instrucciones y conversación en inglés.
 
-La relevancia del modelo es limitada y fundamentalmente metodológica: el autor publica de forma transparente el conjunto de entrenamiento sintético (345 ejemplos), la validación (32 ejemplos), la configuración, los logs del entrenador y las salidas crudas de la evaluación, lo que permite auditar el run completo. El modelo conserva los dos modos del upstream DeepHermes (Instruct y Thinking), seleccionables mediante convención de system prompt, no mediante una API dedicada como la de Qwen.
+La relevancia del modelo es limitada y muy específica: se trata de un experimento de ajuste fino de un único autor, con un volumen de entrenamiento reducido (1.713 ejemplos y 180 pasos de optimizador) y una adopción mínima en la plataforma (404 descargas y 2 likes en el momento de la consulta). No obstante, hereda la arquitectura y la ventana de contexto de Llama 3.1 8B, lo que lo hace potencialmente utilizable como punto de partida para prototipos o para estudiar el efecto de un ajuste fino ligero sobre DeepHermes-3.
 
-Conviene subrayar que el propio autor advierte de que las mejoras de capacidad deben evaluarse a partir de los resultados registrados y no darse por supuestas: el conocimiento general, la mayor parte de la capacidad de código y el razonamiento proceden de DeepHermes y de Llama. El entrenamiento se realizó en una única A100-SXM4-80GB con 88 pasos de optimizador y solo valida ejemplos cortos, por lo que el rendimiento en contexto largo no está verificado.
+El modelo soporta modos "instruct" y "thinking", y el Space asociado permite instrucciones de proyecto y hasta 4.096 tokens generados. La licencia aplicable es la Llama 3.1, con las restricciones habituales de la comunidad Llama.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (Llama 3.1), ajuste fino LoRA rango 16 sobre proyecciones de atención |
+| Arquitectura | Transformer decoder-only (familia Llama 3.1), pesos fusionados de un ajuste QLoRA rango 16 |
 | Parametros totales | 8.030.261.248 (8,03 B) |
-| Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | La configuración upstream permite contexto largo; el fine-tune solo se entrenó con ejemplos cortos y no valida rendimiento en contexto largo (longitud exacta no disponible) |
-| Tipos de cuantizacion | no disponible (el repositorio distribuye pesos en BF16; no se documentan cuantizaciones publicadas) |
-| Idiomas soportados | en (inglés) |
-| Licencia | llama3.1 (se incluyen LICENSE de Llama 3.1 y UPSTREAM_LLAMA3_LICENSE del upstream) |
-| Formato de pesos | safetensors (pesos fusionados) más adaptador LoRA separado |
+| Parametros activos | No aplica (modelo denso) |
+| Longitud de contexto | No disponible en la informacion proporcionada (el modelo base Llama 3.1 8B soporta 128K, pero no se confirma para este checkpoint) |
+| Tipos de cuantizacion | BF16 (pesos publicados); no se documentan otras cuantizaciones en la model card |
+| Idiomas soportados | Inglés (en) |
+| Licencia | Llama 3.1 |
+| Formato de pesos | Safetensors (BF16) |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un transformer decoder-only de la familia Llama 3.1 con 8.030.261.248 parámetros, derivado por fine-tuning de NousResearch/DeepHermes-3-Llama-3-8B-Preview (revisión 53d902c7dcfa4c749a3b455149064f82af2e2549), cuyo base declarado es Meta Llama 3.1 8B. El ajuste consiste en LoRA de rango 16 aplicado a las proyecciones de atención, entrenado sobre un dataset sintético pequeño incluido en el repositorio que cubre respuestas concisas, formatos de salida solicitados, declaraciones honestas de capacidad, código simple, roleplay ficticio, explicaciones de administración de redes y aritmética con soluciones breves.
+El modelo es un transformer decoder-only denso de 8,03 B parámetros, heredado de Llama 3.1 8B a través de DeepHermes-3-Llama-3-8B-Preview. El ajuste fino se realizó con QLoRA de rango 16, generando 41.943.040 parámetros de adaptador, sobre un conjunto de 1.713 ejemplos de entrenamiento y 180 pasos de optimizador. Los pesos publicados son los adaptadores fusionados con el modelo base en BF16, de modo que el checkpoint se carga directamente con Transformers sin necesidad de aplicar LoRA en tiempo de inferencia.
 
-El run registrado se ejecutó en una NVIDIA A100-SXM4-80GB con 345 ejemplos de entrenamiento, 32 de validación y 88 pasos de optimizador; la pérdida de validación pasó de 2,6547 a 0,0081. No se documenta el número de tokens de entrenamiento ni el uso de RLHF o DPO. La innovación destacable no es arquitectónica sino de reproducibilidad: se publican train.py, train.jsonl, validation.jsonl, settings.json, trainer_log.json, evaluation.json, base_outputs.json, astheral_outputs.json y reload_smoke_test.json, de modo que el run completo es auditable. El modo Thinking no es una API nativa: es una convención aprendida de system prompt heredada del upstream que puede no seguirse con precisión.
+No se documenta en la información disponible la composición del dataset de ajuste, el número de tokens de entrenamiento, ni si se aplicaron etapas de RLHF o DPO. Tampoco se detallan innovaciones técnicas propias más allá de la herencia del modelo base (DeepHermes-3), que incorpora modos de razonamiento "thinking" e "instruct". El volumen de entrenamiento es muy reducido, lo que sugiere un ajuste de estilo o de formato más que una modificación sustancial de capacidades.
 
 ## Capacidades
 
-- Generación de texto conversacional en modo Instruct, con respuestas directas.
-- Modo Thinking heredado de DeepHermes, activado mediante system prompt, para razonamiento explícito paso a paso.
-- Aritmética básica y soluciones breves trabajadas (el autor documenta un fallo en el problema de conteo agrupado: devolvió 9 en lugar de 18).
-- Generación de código sencillo: la muestra de función mediana superó seis comprobaciones funcionales remotas (longitud par/impar, valores negativos, singleton, duplicados y error con entrada vacía).
-- Cumplimiento de formatos de salida solicitados, con al menos un fallo documentado en el caso de formato de dos líneas.
-- Roleplay ficticio y explicaciones de administración de redes legítima.
-- Declaraciones honestas de capacidad (el modelo puede indicar sus propias limitaciones).
-- Personalización mediante la opción --system del script de inferencia, que sustituye las instrucciones por defecto.
-- Soporte de tool calling / function calling: no disponible (no documentado).
-- Soporte de agentes y razonamiento multi-paso: no disponible (no documentado).
-- Capacidades multilingües: solo inglés declarado.
-- Vision, audio o modalidades adicionales: no disponible.
+- Generación de texto conversacional e instruccional en inglés.
+- Modo "thinking" (razonamiento explícito) y modo "instruct", heredados de DeepHermes-3.
+- Soporte de conversaciones multi-turno a través de la plantilla de chat del modelo base.
+- Generación de hasta 4.096 tokens en el Space alojado (límite de la demo, no necesariamente del modelo).
+- Soporte de instrucciones de proyecto en el Space (system prompt persistente).
+- No se documenta soporte de tool calling, function calling, agentes, visión, audio ni capacidades multimodales.
+- Capacidades multilingües: limitadas al inglés según la model card.
 
 ## Casos de uso
 
-- Asistente conversacional de propósito general en inglés: el modelo puede mantener diálogos multi-turno en modo Instruct, adecuado para prototipos y demos donde se requiere un 8B ligero con pesos abiertos y licencia Llama 3.1.
-- Razonamiento explícito supervisado: el modo Thinking permite obtener cadenas de razonamiento visibles para depuración de pipelines o para tareas educativas, con la advertencia de que el cambio de modo es una convención de system prompt y no una API garantizada.
-- Generación de código sencillo en herramientas internas: útil para producir funciones cortas y autocontenidas (como la función mediana validada), no para refactorizaciones complejas ni bases de código extensas.
-- Formateo estructurado de respuestas: el ajuste entrena el cumplimiento de formatos solicitados (listas, respuestas concisas), lo que lo hace apropiado para tareas de extracción o resumen con formato fijo, verificando siempre la salida por el fallo documentado en el caso de dos líneas.
-- Roleplay y generación creativa controlada: el dataset incluye roleplay ficticio, por lo que puede emplearse en prototipos de personajes o narrativa interactiva en inglés.
-- Explicaciones técnicas de administración de redes: el modelo fue ajustado con ejemplos de explicaciones legítimas de administración de sistemas, útil como asistente de documentación técnica interna.
-- Evaluación y auditoría de fine-tunes: dado que el repositorio publica dataset, configuración, logs y salidas crudas, sirve como caso de estudio reproducible para investigadores que quieran replicar o comparar pipelines LoRA sobre Llama 3.1 8B.
+- Prototipado de asistentes conversacionales en inglés: el modelo puede cargarse en BF16 con Transformers y usarse como base para demos de chat con system prompt e historial multi-turno, aprovechando el formato instruct heredado de DeepHermes-3.
+- Experimentación académica sobre ajuste fino ligero: al ser un QLoRA de rango 16 con solo 1.713 ejemplos, sirve como caso de estudio reproducible para medir el impacto de un ajuste de bajo coste sobre un modelo base de 8 B.
+- Evaluación comparativa de modos de razonamiento: permite contrastar respuestas en modo "thinking" frente a modo "instruct" sobre las mismas preguntas, útil para investigar el efecto del razonamiento explícito en tareas de lógica sencilla.
+- Generación de texto asistida en inglés para borradores y resúmenes: adecuado para tareas de redacción no críticas donde el coste de un 8 B en BF16 sea asumible.
+- Base para fine-tunes posteriores: al estar publicado en safetensors BF16 y con licencia Llama 3.1, puede servir como punto de partida para nuevos adaptadores LoRA en dominios específicos.
+- Despliegue en demo con Gradio/Spaces: el autor ya ofrece un Space funcional con instrucciones de proyecto, lo que facilita replicar el entorno para pruebas internas.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible. El autor solo reporta una suite automática estrecha y sintética:
-
-| Metrica | Base (DeepHermes 3 8B Preview) | Astheral |
-|---|---|---|
-| Comprobaciones automáticas comparables | 2/8 | 6/8 |
-| Pérdida de validación (antes / después) | 2,6547 | 0,0081 |
-| Problema de conteo agrupado | no disponible | fallo (devolvió 9 en lugar de 18) |
-| Formato de dos líneas | no disponible | fallo |
-| Función mediana (comprobaciones funcionales remotas) | no disponible | 6/6 superadas |
-| Presupuesto de generación | 256 tokens (instruct) / 512 (thinking) | 256 tokens (instruct) / 512 (thinking) |
-
-El propio autor advierte de que dos respuestas del modelo base en modo Thinking agotaron el presupuesto antes de terminar, por lo que el 2/8 frente a 6/8 mide únicamente las comprobaciones específicas dentro de ese presupuesto y no una ganancia general de razonamiento. La identidad se comprobó por separado y se excluyó del cómputo comparable.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: los pesos en BF16 requieren aproximadamente 16 GB más memoria de runtime; el autor recomienda una GPU remota de 24 GB o más para contextos modestos.
-- GPU recomendadas: NVIDIA A100-SXM4-80GB (la usada en el entrenamiento) u H100 para despliegues con contexto amplio; RTX 4090 (24 GB) es suficiente para BF16 en contextos cortos.
-- Cabe en GPU de consumo: sí, en tarjetas con 24 GB o más en BF16 (RTX 4090, RTX 3090); en tarjetas de 16 GB requeriría cuantización, que no está documentada en el repositorio.
-- Opciones de despliegue: transformers con el script inference.py incluido; el tag text-generation-inference sugiere compatibilidad con TGI y endpoints_compatible. No se documentan recetas para vLLM, llama.cpp u Ollama.
-- Latencia y throughput estimados: no disponible.
+- VRAM estimada para inferencia en BF16: aproximadamente 16 GB solo para pesos (8,03 B × 2 bytes), más overhead de KV cache y activaciones; en la práctica se recomiendan 20-24 GB para contextos moderados.
+- GPU recomendadas: A100 40/80 GB, H100, L40S o RTX A6000 para BF16 sin cuantizar; RTX 4090 (24 GB) puede alojar el modelo en BF16 con contexto limitado.
+- GPU de consumo: cabe en RTX 4090 y, con cuantización a 8 bits o 4 bits (no documentada por el autor, pero aplicable vía bitsandbytes/llama.cpp), en GPUs de 12-16 GB como RTX 4080 o 4070 Ti.
+- Opciones de despliegue: Transformers (BF16, según la model card), text-generation-inference (tag incluido en el repo), vLLM y llama.cpp son compatibles con la arquitectura Llama 3.1, aunque no se documentan recetas específicas para este checkpoint.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| SEE7/Astheral | 8,03 B | Configuración upstream larga; no validado en el fine-tune | Suite estrecha 6/8; sin benchmarks estándar | llama3.1 | Hugging Face, 0 descargas |
-| NousResearch/DeepHermes-3-Llama-3-8B-Preview | no disponible en la información | no disponible | Base del fine-tune; 2/8 en la misma suite estrecha | llama3 | Hugging Face (upstream) |
-| Meta Llama 3.1 8B | no disponible en la información | no disponible | Base declarado del upstream; sin datos en esta ficha | llama3.1 | Hugging Face (upstream) |
+| Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
+|---|---|---|---|---|
+| SEE7/Astheral | 8,03 B | No disponible (base Llama 3.1: 128K) | Llama 3.1 | Hugging Face + Space |
+| NousResearch/DeepHermes-3-Llama-3-8B-Preview | 8 B | 128K (según model card del base) | Llama 3.1 | Hugging Face |
+| meta-llama/Llama-3.1-8B-Instruct | 8 B | 128K | Llama 3.1 | Hugging Face |
+| mistralai/Mistral-7B-Instruct-v0.3 | 7,2 B | 32K | Apache 2.0 | Hugging Face |
 
-No se dispone de datos de benchmarks ni de especificaciones completas de los modelos comparables en la información proporcionada, por lo que la comparación se limita a la relación de derivación y a la licencia.
+Astheral se posiciona como un derivado de DeepHermes-3 con un ajuste fino adicional muy ligero; frente a Llama 3.1 8B Instruct y Mistral 7B Instruct, su principal diferencia es el soporte de modo "thinking" heredado y un conjunto de entrenamiento propio no documentado en detalle. No se dispone de datos de rendimiento comparativo.
 
 ## Limitaciones y advertencias
 
-- Sesgos conocidos: no documentados por el autor; al derivar de Llama 3.1 y DeepHermes, hereda los sesgos de sus datos de preentrenamiento, no evaluados en este run.
-- Riesgo de alucinación: no cuantificado; el ajuste se realizó sobre 345 ejemplos sintéticos y no incluye evaluación de factualidad.
-- El modo Thinking es una convención de system prompt aprendida y puede no seguirse con precisión; no equivale a una API de razonamiento dedicada.
-- El fine-tune solo se entrenó con ejemplos cortos: el rendimiento en contexto largo no está validado pese a que la configuración upstream lo permita.
-- Solo inglés declarado; sin capacidades multilingües verificadas.
-- El autor no establece capacidad frontier, superioridad general, eliminación de todos los rechazos aprendidos ni una política de seguridad completa.
-- Fallos documentados y publicados: conteo agrupado (devolvió 9 en lugar de 18) y formato de dos líneas.
-- La comparación 2/8 frente a 6/8 está limitada por el presupuesto de tokens (256 instruct / 512 thinking) y no mide una ganancia general de razonamiento.
-- Restricciones de licencia: licencia llama3.1 con los términos upstream aplicables; el repositorio incluye ambas licencias (Llama 3.1 y Llama 3 del upstream) sin conceder derechos adicionales. Revisar NOTICE antes de uso comercial.
-- El repositorio tiene 0 descargas y 0 likes en el momento de la consulta y fue creado en noviembre de 2026; no hay validación por parte de la comunidad.
-- El modelo base upstream declara licencia llama3 mientras su base declarada es Llama 3.1, una discrepancia de metadatos que el autor conserva explícitamente.
+- Volumen de entrenamiento muy reducido (1.713 ejemplos, 180 pasos), lo que limita la magnitud y la generalización del ajuste.
+- Solo inglés documentado; no se garantiza comportamiento correcto en castellano u otros idiomas.
+- Riesgo de alucinación inherente a los modelos de 8 B, no mitigado de forma documentada.
+- Sesgos potenciales heredados de Llama 3.1 y de DeepHermes-3, sin evaluación de sesgos publicada por el autor.
+- Licencia Llama 3.1: uso comercial permitido con condiciones (política de uso aceptable, atribución "Built with Llama", nomenclatura del modelo y restricciones para empresas con más de 700 millones de usuarios mensuales).
+- No se documentan evaluaciones de seguridad, red teaming ni filtros de contenido.
+- Adopción muy baja (404 descargas, 2 likes), lo que reduce la probabilidad de que los fallos hayan sido reportados por la comunidad.
+- Sin datos de benchmarks ni de latencia/throughput; no recomendable para producción crítica sin una evaluación propia previa.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/SEE7/Astheral
+- Space de chat: https://huggingface.co/spaces/SEE7/Astheral
+- Resultados de entrenamiento y evaluación: https://huggingface.co/SEE7/Astheral/tree/main/v3-results
+- Experimentos extendidos: https://huggingface.co/SEE7/Astheral/tree/v3-expanded-20261113
 - Modelo base: https://huggingface.co/NousResearch/DeepHermes-3-Llama-3-8B-Preview
-- Revisión del modelo base citada: 53d902c7dcfa4c749a3b455149064f82af2e2549
+- Licencia Llama 3.1: https://llama.meta.com/llama3_1/license/

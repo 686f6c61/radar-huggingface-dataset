@@ -2,103 +2,108 @@
 
 ## Resumen
 
-Flint Pascal Q8 GGUF es una cuantización GGUF del modelo Flint (RecursiveSI/flint), un transformer denso de 39.785.287.456 parámetros (unos 39,8 mil millones) desarrollado por RecursiveSI. El modelo base está orientado a razonamiento con modo "thinking", generación de código, llamada a herramientas y lectura de contextos de hasta 262.144 tokens. Esta variante concreta la publica el usuario CinderellaMan bajo licencia Apache 2.0 y está pensada específicamente para tarjetas NVIDIA antiguas de arquitectura Pascal (compute capability 6.1), como las P106-090 y P104 de rigs de minería retirados, la serie GTX 10 y las Tesla P4/P40.
+Flint Pascal Q8 GGUF es una cuantización del modelo Flint (RecursiveSI/flint), un transformer de 39.785.287.456 parámetros (aproximadamente 39,8 mil millones) con capacidad de razonamiento previo a la respuesta, generación de código, tool calling y una ventana de contexto de hasta 262.144 tokens. La ha publicado el usuario CinderellaMan bajo licencia Apache 2.0, y su propósito es hacer viable la inferencia de un modelo de este tamaño en tarjetas NVIDIA antiguas de arquitectura Pascal (compute capability 6.1), en particular las P106-090 y P104 de rigs de minería retirados, la serie GTX 10 y las Tesla P4/P40.
 
-La innovación de esta ficha no está en el modelo en sí, sino en la receta de cuantización: parte del Q8_0 de Unsloth y mueve a Q5_0 los tensores que menos calidad aportan, logrando un archivo de 40,4 GB frente a los 42,3 GB del Q8_0 original. Según el autor, esto reduce un 11,0 % los bytes leídos por token generado y mantiene una divergencia KL frente al modelo original de 16 bits dentro de dos errores estándar de la del Q8_0, es decir, prácticamente la misma calidad.
+La innovación principal no está en el modelo base, sino en la mezcla de cuantizaciones: parte del Q8_0 de Unsloth y mueve a Q5_0 los tensores cuya pérdida de calidad resulta menos costosa, logrando un archivo de 40,4 GB frente a los 42,3 GB del Q8_0 puro, con un 11,0 % menos de bytes leídos por token generado. El autor reporta que la divergencia KL respecto al modelo original en 16 bits queda dentro de dos errores estándar de la del Q8_0, y que en una repetición emparejada de las mismas sesiones de agente cada token se generó en 0,941 del tiempo del Q8_0, con la misma velocidad de lectura de prompt.
 
-El interés actual es de nicho pero muy concreto: permite ejecutar un modelo de casi 40B con contexto completo de 262.144 tokens en hardware obsoleto y de bajo coste, agregando nueve GPU de 6 GB en un rig de minería. El autor reporta 47,4 tokens/s en generación con un agente de código sobre ese hardware, frente a 45,9 tokens/s del Q8_0 de Unsloth en el mismo motor.
+El modelo está pensado para despliegues con muchas GPU de gama baja agregadas por PCIe, no para hardware moderno: el autor indica explícitamente que en una GPU moderna o en un Mac conviene usar el Q8_0 de Unsloth. Su interés actual reside en reutilizar hardware de minería amortizado para ejecutar agentes de código con contexto completo, un nicho muy concreto pero con métricas publicadas y reproducibles.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer denso (modelo base Flint; detalles internos no disponibles) |
-| Parametros totales | 39.785.287.456 (~39,8B) |
-| Parametros activos | No aplica (modelo denso, no MoE) |
+| Arquitectura | Transformer (modelo base Flint; detalles internos de capas y atención no disponibles) |
+| Parametros totales | 39.785.287.456 (aproximadamente 39,8 mil millones) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | 262.144 tokens |
-| Tipos de cuantizacion | Mezcla Q8_0 / Q5_0 / F16 (tensores de menor impacto movidos a Q5_0) |
-| Idiomas soportados | No disponible |
+| Tipos de cuantizacion | Mezcla de Q8_0 y Q5_0 (tensores seleccionados en Q5_0), más F16 para determinados tensores; el archivo usa únicamente tipos nativos de llama.cpp |
+| Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (compatible con llama.cpp; optimizado con kernels Pascal en Miner Llama v3) |
+| Formato de pesos | GGUF (archivo `flint-pascal-Q8.gguf`, 40,4 GB) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base Flint es un transformer denso de 39,8B parámetros con modo de razonamiento previo a la respuesta ("thinks before it answers"), capacidad de escritura de código y de llamada a herramientas, y una ventana de contexto de 262.144 tokens. No se dispone de información sobre la composición del dataset de entrenamiento, el número de tokens vistos, ni si se aplicaron técnicas de RLHF, DPO u otras etapas de alineamiento; esos datos no están disponibles en la información proporcionada.
+El modelo base es Flint, de RecursiveSI, descrito en la model card como un modelo de 39,8 mil millones de parámetros que "piensa antes de responder", escribe código, llama a herramientas y lee hasta 262.144 tokens de contexto. No se dispone de información sobre el número de capas, la configuración de atención, el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas de RLHF o DPO; esos datos no están disponibles en la información proporcionada.
 
-La aportación técnica de esta variante es la cuantización selectiva: se parte del Q8_0 de Unsloth y se degradan a Q5_0 únicamente los tensores con menor coste de calidad, con el objetivo de reducir el ancho de banda de memoria, que en las tarjetas Pascal consume algo más de la mitad del tiempo por token generado. El autor reporta una divergencia KL frente al modelo de 16 bits dentro de dos errores estándar de la del Q8_0, y un tiempo de generación por token de 0,941 veces el del Q8_0 en una repetición emparejada de las mismas sesiones de agente. El archivo usa solo tipos nativos de llama.cpp (Q8_0, Q5_0, F16), por lo que carga en llama.cpp estándar, aunque los kernels específicos de Pascal y las ganancias de velocidad descritas se miden con el fork Miner Llama v3.
+La contribución técnica de esta ficha es la cuantización mixta: se parte del Q8_0 de Unsloth y se degradan a Q5_0 los tensores con menor impacto en calidad, reduciendo el tamaño de 42,3 GB a 40,4 GB y los bytes leídos por token en un 11,0 %. El autor valida la pérdida con divergencia KL frente al original en 16 bits, situándola dentro de dos errores estándar de la del Q8_0. El archivo es compatible con llama.cpp estándar, aunque las ganancias de velocidad en Pascal requieren el fork Miner Llama (v3.0 o v4.0), que incorpora kernels específicos y variables de entorno de planificación (`LLAMA_KV_SEQ_RM_BOUND`, `LLAMA_SERVER_YIELD`, `LLAMA_SAMPLING_TOP_K_ROWS`, `GGML_CUDA_GRAPHS_FORCE`, `LLAMA_SCHED_PER_SIZE_RESERVE`) y flags como `--ctx-checkpoints-vram` y `--ubatch-taper`.
 
 ## Capacidades
 
-- Generación de texto conversacional y razonamiento con modo "thinking" previo a la respuesta.
-- Generación y corrección de código, incluyendo tareas de bug-fixing con ejecución real de tests (Python y JavaScript en las pruebas del autor).
-- Llamada a herramientas y function calling, con compatibilidad con clientes OpenAI-compatible a través del servidor de llama.cpp.
-- Flujos de agente multi-turno con contexto creciente, validado en el agent check del autor con 12 tareas encadenadas.
-- Contexto largo de hasta 262.144 tokens, suficiente para sesiones de agente prolongadas o análisis de repositorios extensos.
-- Capacidades multilingües: no disponible (no se especifican idiomas en la información proporcionada).
+- Generación de texto conversacional y razonamiento con modo de pensamiento previo a la respuesta (thinking antes de contestar).
+- Generación y corrección de código en Python y JavaScript, verificado en tareas con ejecución real de tests.
+- Tool calling y function calling, con soporte para agentes de múltiples pasos.
+- Ventana de contexto de 262.144 tokens, adecuada para sesiones de agente con contexto creciente turno a turno.
+- Compatibilidad con clientes OpenAI-compatible mediante `llama-server` (flag `--alias flint`, endpoint HTTP en el puerto 8080).
+- Capacidades multilingües: no disponibles en la información proporcionada.
+- No se documentan capacidades de visión ni de audio.
 
 ## Casos de uso
 
-- Agente de código en rig de minería reacondicionado: desplegar el modelo con Miner Llama v3 sobre nueve P106-090 de 6 GB y el contexto completo de 262.144 tokens para tareas de corrección de bugs con ejecución de tests, aprovechando los 47,4 tokens/s reportados y el reparto tensorial por capas (`-ts 6,6,5,5,6,5,5,6,6`).
-- Automatización de mantenimiento de repositorios pequeños: el modelo puede leer archivos completos y contexto de conversación acumulado gracias a la ventana de 262K, lo que permite pipelines de parcheo iterativo sin truncar el historial.
-- Servidor local OpenAI-compatible para herramientas de desarrollo: arrancar `llama-server` con `--alias flint` y apuntar clientes compatibles (IDE, CLI de agente) al endpoint local, sin depender de APIs en la nube.
-- Laboratorio de bajo coste para investigación en agentes: el hardware objetivo (GPU Pascal de segunda mano) abarata la experimentación con modelos de ~40B y contextos largos, a cambio de menor throughput que GPU modernas.
-- Evaluación de cuantizaciones mixtas: usar esta ficha como referencia para estudiar el compromiso calidad/velocidad de mezclas Q8_0+Q5_0 frente a Q8_0 puro, con la métrica de divergencia KL y la repetición emparejada de sesiones que publica el autor.
-- Inferencia offline en entornos con restricciones de red: al ser pesos GGUF y servidor local, el modelo puede operar sin conectividad externa una vez descargado, útil en entornos aislados.
+- Agentes de corrección de bugs en producción: el modelo puede recibir un repositorio, ejecutar tests y aplicar parches en sesiones multi-turno; el banco de pruebas del autor usa doce tareas de corrección en Python y JavaScript con ejecución real de tests y contexto creciente, y reporta 11 y 12 aciertos de 12 en dos ejecuciones con Miner Llama v4.0.
+- Reutilización de rigs de minería como nodos de inferencia: con nueve P106-090 de 6 GB (unos 41 GB de VRAM agregada más espacio para contexto) se ejecuta el contexto completo de 262.144 tokens, lo que permite montar un servidor de agentes con hardware amortizado.
+- Servidor local OpenAI-compatible para herramientas de desarrollo: `llama-server` expone un endpoint al que se pueden apuntar clientes compatibles con la API de OpenAI, útil para integrar el modelo en IDEs, CLIs de agente o pipelines internos sin depender de la nube.
+- Automatización de tareas de refactorización con contexto largo: la ventana de 262.144 tokens permite cargar archivos completos o varios módulos de un proyecto sin trocear, manteniendo coherencia entre turnos.
+- Evaluación y benchmarking de cuantizaciones en hardware legacy: el archivo sirve como referencia reproducible para medir el impacto de la mezcla Q8_0/Q5_0 frente al Q8_0 puro en divergencia KL y velocidad, con datos publicados por el autor.
+- Despliegue en entornos con restricciones de red o de privacidad: al ejecutarse íntegramente en local sobre GPUs propias, el modelo evita el envío de código o datos a servicios externos, algo relevante para auditorías o código propietario.
+- Formación y experimentación con planificación de memoria multi-GPU: la configuración documentada (`-ts 6,6,5,5,6,5,5,6,6`, `-ngl 99`, `-fa on`, `-b 512 -ub 128`) sirve como plantilla para repartir un modelo de 40 GB entre tarjetas pequeñas con tensor split.
 
 ## Benchmarks y rendimiento
 
-Los datos publicados por el autor corresponden a su agent check (12 tareas de bug-fixing con el agente pi, contexto de 262.144 tokens, nueve P106-090, una ejecución por fila). No son benchmarks académicos estándar (MMLU, HumanEval, GSM8K) y no se han publicado resultados de esos benchmarks en la información disponible.
+Datos publicados por el autor en el banco `agent_check` (doce tareas de corrección de bugs con el agente de código pi, nueve P106-090, contexto de 262.144 tokens, una ejecución por fila salvo indicación):
 
-| Motor y archivo | Tareas superadas | Generación (tok/s) | Lectura de prompt (tok/s) | Primer token por turno (mediana) |
+| Motor y archivo | Tareas superadas | Generación (tokens/s) | Lectura de prompt (tokens/s) | Primer token por turno (mediana) |
 |---|---|---|---|---|
+| Miner Llama v4.0, este archivo, dos ejecuciones | 11 de 12; 12 de 12 | 49,32; 46,99 | 219,7; 204,1 | 1,74 s; 1,82 s |
+| Miner Llama v3.0, este archivo, dos ejecuciones | 11 de 12; 12 de 12 | 48,55; 48,02 | 179,2; 181,3 | 2,65 s; 2,61 s |
 | llama.cpp estándar b12076, Unsloth Q8_0, contexto 65.536 | 10 de 12 | 14,4 | 148 | 4,13 s |
-| Miner Llama v3 (`1f7215948`), Unsloth Q8_0 | 12 de 12 | 45,9 | 168 | 2,67 s |
-| Miner Llama v3 (`1551f5fe1`), este archivo | 12 de 12 | 47,4 | 175 | 2,66 s |
-| Miner Llama v2.0 (`37e717ff6`), este archivo | 12 de 12 | 47,1 | — | — |
+| Miner Llama v3, Unsloth Q8_0 | 12 de 12 | 45,9 | 168 | 2,67 s |
 
-Datos adicionales reportados: este archivo genera un 3,3 % más rápido que el Q8_0 de Unsloth en la build de release (47,4 frente a 45,9 tok/s), con una mediana por tarea de 1,0 frente a 1,2 minutos; el total de las doce tareas fue de 22,3 frente a 19,2 minutos porque las sesiones escribieron más texto. La divergencia KL frente al modelo de 16 bits queda dentro de dos errores estándar de la del Q8_0, y el tiempo por token generado es 0,941 veces el del Q8_0 en repetición emparejada.
+El autor reporta además que, en una repetición emparejada de las mismas sesiones de agente, este archivo generó cada token en 0,941 del tiempo del Q8_0 con la misma velocidad de prompt, y que su divergencia KL frente al modelo original en 16 bits está dentro de dos errores estándar de la del Q8_0. No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: unos 41 GB de memoria de GPU más espacio para el contexto; el contexto completo de 262.144 tokens requiere nueve tarjetas de 6 GB.
-- GPU objetivo: NVIDIA Pascal con compute capability 6.1 (P106-090, P104, GTX 10, Tesla P4/P40); las velocidades publicadas se miden solo en P106-090.
-- Controladores: Ubuntu 24.04 o superior con driver NVIDIA 580, el último disponible para Pascal.
-- GPU modernas: el autor recomienda usar el Q8_0 de Unsloth en GPU modernas o Mac; esta ficha está medida solo en Pascal.
-- Consumer GPU: no cabe en una GPU de consumo de 24 GB o menos; requiere agregación multi-GPU.
-- Despliegue: llama.cpp estándar (carga el archivo, sin kernels Pascal) o Miner Llama v3.0 desde las releases del fork del autor; servidor con `llama-server` y API compatible con OpenAI.
-- Throughput reportado: 47,4 tok/s de generación y 175 tok/s de lectura de prompt en el rig de nueve P106-090; primer token por turno con mediana de 2,66 s.
-- Host de referencia: Celeron de 2 núcleos con 4 GB de RAM, cada tarjeta en un lane PCIe 1.0.
+- VRAM estimada: unos 41 GB de memoria de GPU para los pesos, más espacio adicional para el contexto; el contexto completo de 262.144 tokens requiere nueve tarjetas de 6 GB.
+- GPU objetivo: NVIDIA Pascal con compute capability 6.1, es decir, P106-090 y P104 de rigs de minería, GTX 10 y Tesla P4/P40. La velocidad solo está medida en P106-090.
+- Controlador: Ubuntu 24.04 o superior con el driver NVIDIA 580, el último disponible para Pascal.
+- No cabe en una única GPU de consumo moderna por tamaño; el autor recomienda usar el Q8_0 de Unsloth en GPU modernas o Mac en lugar de este archivo.
+- Opciones de despliegue: Miner Llama v3.0 o v4.0 (fork de llama.cpp con kernels para Pascal, recomendado para velocidad) o llama.cpp estándar y aplicaciones construidas sobre él (el archivo usa solo tipos nativos Q8_0, Q5_0 y F16).
+- Throughput medido: 47,4 tokens/s en el rig de referencia con la build de Miner Llama v3 y contexto completo; 49,32 y 46,99 tokens/s con v4.0; latencia de primer token de 1,74 y 1,82 s en v4.0 frente a 2,65 y 2,61 s en v3.0.
+- En llama.cpp estándar sobre el mismo rig, con Q8_0 y contexto de 65.536, el rendimiento cae a 14,4 tokens/s de generación y 4,13 s hasta el primer token.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Formato | Licencia | Notas |
+| Modelo | Parámetros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| Flint Pascal Q8 GGUF (esta ficha) | 39,8B | 262.144 | GGUF mixto Q8_0/Q5_0 | Apache 2.0 | 40,4 GB; optimizado para Pascal; 47,4 tok/s en el rig del autor |
-| Unsloth Flint Q8_0 | 39,8B | 262.144 | GGUF Q8_0 | Apache 2.0 (según modelo base) | 42,3 GB; 45,9 tok/s en el mismo rig; recomendado en GPU modernas |
-| Flint Pascal Q5 GGUF (mismo autor) | 39,8B | 262.144 | GGUF Q5 | Apache 2.0 | 29,4 GB; para seis a ocho tarjetas o máxima velocidad en nueve, con menor calidad |
-| Flint 16 bits (RecursiveSI/flint) | 39,8B | 262.144 | Pesos originales | Apache 2.0 | Referencia de calidad; requiere hardware moderno o mucha memoria |
+| Flint Pascal Q8 GGUF (este) | 39,8 mil millones | 262.144 | Apache 2.0 | GGUF (Q8_0/Q5_0 mixto, 40,4 GB) | Optimizado para Pascal; 47,4 tokens/s en el rig de referencia |
+| Unsloth Flint Q8_0 | 39,8 mil millones | 262.144 | Apache 2.0 (según modelo base) | GGUF (Q8_0, 42,3 GB) | Referencia de calidad; 45,9 tokens/s en el mismo rig con Miner Llama v3 |
+| Flint Pascal Q5 GGUF | 39,8 mil millones | 262.144 | Apache 2.0 | GGUF (29,4 GB) | Para seis a ocho tarjetas de 6 GB, a menor calidad |
+| Flint (RecursiveSI/flint) | 39,8 mil millones | 262.144 | no disponible en la información proporcionada | safetensors (modelo original en 16 bits) | Modelo base sin cuantizar |
 
 ## Limitaciones y advertencias
 
-- Las mediciones de velocidad están hechas exclusivamente en P106-090; el rendimiento en otras Pascal (P104, GTX 10, P4/P40) no está verificado.
-- La ganancia de velocidad depende de Miner Llama v3; en llama.cpp estándar el archivo carga, pero no se reportan las ventajas de los kernels Pascal.
-- El contexto completo de 262.144 tokens no cabe en el host de referencia con llama.cpp estándar (la máscara de atención no entra en 4 GB), lo que limita ese motor a 65.536 tokens en ese hardware.
-- No hay datos publicados de sesgos, tasas de alucinación ni evaluación multilingüe del modelo base en la información disponible.
-- La licencia Apache 2.0 permite uso comercial, pero conviene verificar las condiciones del modelo base RecursiveSI/flint y de los pesos de Unsloth de los que deriva la cuantización.
-- El hardware objetivo es obsoleto (driver 580 es el último para Pascal) y depende de un fork no oficial de llama.cpp para el máximo rendimiento; riesgo de mantenimiento a medio plazo.
-- El modelo base es de razonamiento con modo "thinking", lo que incrementa los tokens generados y, por tanto, la latencia total frente a modelos sin razonamiento explícito.
+- La velocidad solo está medida en tarjetas P106-090; el rendimiento en otras GPU Pascal (P104, GTX 10, Tesla P4/P40) no está documentado y puede diferir.
+- El archivo está optimizado para Pascal: en GPU modernas o Mac el autor recomienda el Q8_0 de Unsloth, por lo que este archivo no es la mejor opción fuera de ese hardware.
+- La cuantización mixta Q8_0/Q5_0 introduce una pérdida de calidad respecto al modelo en 16 bits; el autor la acota con divergencia KL, pero no se publican resultados en benchmarks estándar que permitan verificarla de forma independiente.
+- Sesgos conocidos: no disponibles en la información proporcionada.
+- Riesgo de alucinación: no cuantificado en la información proporcionada; es un riesgo inherente a los modelos generativos de este tamaño.
+- Idiomas soportados: no disponibles; no se puede confirmar cobertura multilingüe.
+- Requiere Ubuntu 24.04 o superior y el driver NVIDIA 580, el último para Pascal, lo que limita la actualización futura del entorno.
+- El despliegue con contexto completo exige nueve tarjetas de 6 GB y un host modesto (el rig de referencia usa un Celeron de 2 núcleos con 4 GB de RAM y PCIe 1.0), una configuración poco habitual fuera de entornos de minería.
+- Licencia Apache 2.0 permite uso comercial, pero conviene verificar la licencia y condiciones del modelo base Flint, no disponibles en la información proporcionada.
 
 ## Enlaces
 
-- Hugging Face (esta ficha): https://huggingface.co/CinderellaMan/Flint-Pascal-Q8-GGUF
+- Hugging Face del modelo: https://huggingface.co/CinderellaMan/Flint-Pascal-Q8-GGUF
 - Modelo base Flint: https://huggingface.co/RecursiveSI/flint
-- Q8_0 de Unsloth (referencia): https://huggingface.co/unsloth/flint-GGUF/tree/20468edfc38ab43d6914cc88b08cbecb05d0fc62
-- Flint Pascal Q5 GGUF (mismo autor): https://huggingface.co/CinderellaMan/Flint-Pascal-Q5-GGUF
-- Fork Miner Llama (releases): https://github.com/Cinderella-Man/miner-llama/releases
-- Guía de instalación en rigs de minería: https://github.com/Cinderella-Man/llms-on-crypto-mining-rigs/blob/main/docs/setup.md
-- Página de Flint en el repositorio del autor: https://github.com/Cinderella-Man/llms-on-crypto-mining-rigs/blob/main/models/flint/README.md
-- Release flint-v3: https://github.com/Cinderella-Man/llms-on-crypto-mining-rigs/blob/main/release/flint-v3/README.md
-- Agent check (benchmark del autor): https://github.com/Cinderella-Man/llms-on-crypto-mining-rigs/tree/main/bench/agent_check
-- Datos 2026-11-05_release_regression: https://github.com/Cinderella-Man/llms-on-crypto-mining-rigs/blob/main/docs/data/2026-11-05_release_regression/README.md
-- Datos 2026-10-27_flint_near_q8: https://github.com/Cinderella-Man/llms-on-crypto-mining-rigs/blob/main/docs/data/2026-10-27_flint_near_q8/README.md
+- Q8_0 de Unsloth: https://huggingface.co/unsloth/flint-GGUF/tree/20468edfc38ab43d6914cc88b08cbecb05d0fc62
+- Flint Pascal Q5 GGUF: https://huggingface.co/CinderellaMan/Flint-Pascal-Q5-GGUF
+- Repositorio llms-on-crypto-mining-rigs: https://github.com/Cinderella-Man/llms-on-crypto-mining-rigs
+- Guía de instalación: https://github.com/Cinderella-Man/llms-on-crypto-mining-rigs/blob/main/docs/setup.md
+- Releases de Miner Llama: https://github.com/Cinderella-Man/miner-llama/releases
+- Página de Flint en el repositorio: https://github.com/Cinderella-Man/llms-on-crypto-mining-rigs/blob/main/models/flint/README.md
+- Release Flint v4: https://github.com/Cinderella-Man/llms-on-crypto-mining-rigs/blob/main/release/flint-v4/README.md
+- Release Flint v3: https://github.com/Cinderella-Man/llms-on-crypto-mining-rigs/blob/main/release/flint-v3/README.md
+- Banco agent_check: https://github.com/Cinderella-Man/llms-on-crypto-mining-rigs/tree/main/bench/agent_check
 - Agente pi: https://github.com/earendil-works/pi
+- Datos de la ejecución 2026-11-14: https://github.com/Cinderella-Man/llms-on-crypto-mining-rigs/blob/main/docs/data/2026-11-14_r159_flint_release_agent/README.md
+- Datos de la regresión 2026-11-05: https://github.com/Cinderella-Man/llms-on-crypto-mining-rigs/blob/main/docs/data/2026-11-05_release_regression/README.md

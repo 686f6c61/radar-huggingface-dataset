@@ -12,8 +12,8 @@
   "library": null,
   "languages": [],
   "tags": [
-    "base_model:Comfy-Org/Wan_2.1_ComfyUI_repackaged",
-    "base_model:finetune:Comfy-Org/Wan_2.1_ComfyUI_repackaged",
+    "base_model:Comfy-Org/Wan-2.1",
+    "base_model:finetune:Comfy-Org/Wan-2.1",
     "license:apache-2.0",
     "region:us"
   ],

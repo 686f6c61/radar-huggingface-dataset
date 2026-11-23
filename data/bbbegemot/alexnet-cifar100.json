@@ -5,7 +5,7 @@
   "author": "bbbegemot",
   "url": "https://huggingface.co/bbbegemot/alexnet-cifar100",
   "created_at": "2026-11-22T13:40:01.000Z",
-  "updated_at": "2026-11-22T13:50:48.000Z",
+  "updated_at": "2026-11-22T15:49:58.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "image-classification",

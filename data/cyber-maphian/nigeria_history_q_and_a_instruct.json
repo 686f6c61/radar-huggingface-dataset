@@ -1,0 +1,42 @@
+{
+  "schema": 2,
+  "id": "Cyber-Maphian/Nigeria_History_Q_and_A_Instruct",
+  "slug": "cyber-maphian-nigeria_history_q_and_a_instruct",
+  "author": "Cyber-Maphian",
+  "url": "https://huggingface.co/Cyber-Maphian/Nigeria_History_Q_and_A_Instruct",
+  "created_at": "2026-11-23T07:22:43.000Z",
+  "updated_at": "2026-11-23T07:25:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 494032768,
+  "parameters_human": "494.0M",
+  "storage_bytes": 999519716,
+  "storage_human": "1000 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

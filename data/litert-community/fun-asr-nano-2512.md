@@ -2,109 +2,100 @@
 
 ## Resumen
 
-Fun-ASR-Nano-2512 es un modelo de reconocimiento automático del habla (ASR) extremo a extremo desarrollado por Tongyi Lab (Alibaba) y empaquetado por la comunidad litert-community en el formato LiteRT-LM para inferencia en dispositivo. Combina un codificador de audio SenseVoice SAN-M de 70 capas con un adaptador de 2 capas que alimenta un modelo de lenguaje Qwen3-0.6B, encargado de generar la transcripción. El resultado es un pipeline audio-a-texto en un único fichero `.litertlm` de 1,26 GB, ejecutable sin dependencias de servidor.
+Fun-ASR-Nano-2512 en formato LiteRT-LM es una conversión del modelo de reconocimiento automático del habla (ASR) end-to-end de Tongyi Lab (FunAudioLLM) al formato `.litertlm` de Google, pensada para inferencia en dispositivo (*on-device*) y en el borde (*edge*). El modelo original combina un codificador de audio SenseVoice SAN-M de 70 capas con un adaptador de 2 capas que alimenta un modelo de lenguaje Qwen3-0.6B, encargado de generar la transcripción. Esta conversión empaqueta todo el pipeline (audio a texto) en un único fichero de 1,26 GB que se ejecuta sobre el runtime LiteRT-LM sin necesidad de modificar el runtime ni el conversor.
 
-El modelo cubre chino (incluyendo 7 dialectos y 26 acentos regionales), inglés y japonés, y admite listas de hotwords en el prompt para sesgar la transcripción hacia vocabulario específico. La licencia Apache-2.0 permite uso comercial sin restricciones adicionales. Su relevancia actual radica en que lleva ASR de calidad cercana a la referencia a dispositivos móviles y edge, con un consumo de memoria moderado y sin necesidad de conexión.
+La relevancia de esta ficha reside en que permite ejecutar ASR multilingüe (chino con 7 dialectos y 26 acentos regionales, inglés y japonés) completamente en local, sobre hardware móvil y sin conexión. La versión publicada el 2026-11-17 reescribe el grafo de prefill/decode para GPU manteniendo los pesos intactos, lo que multiplica el rendimiento de decodificación del LM: en un Galaxy S26 pasa de 26,75 tok/s a 51,45 tok/s en GPU. En CPU se mantiene en el rango de 21,43 a 22,66 tok/s tras un prefill de 1.024 tokens.
 
-Esta ficha describe la conversión a LiteRT-LM del checkpoint original FunAudioLLM/Fun-ASR-Nano-2512, cuantizado a int8 en los pesos del LM y fp16 en el codificador de audio, con ventana de audio fija de 30,24 segundos por mensaje.
+El modelo acepta *hotwords* en el prompt para sesgar la transcripción hacia vocabulario específico (nombres propios, terminología técnica) y admite instrucciones de tarea (transcripción con o sin normalización de texto inversa, idioma de salida). No incluye marcas de tiempo porque el checkpoint no tiene pesos de decodificador CTC. La licencia es Apache-2.0, lo que facilita su uso comercial.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Encoder de audio SenseVoice SAN-M (70 capas) + adaptador (2 capas) + LM Qwen3-0.6B |
-| Parametros totales | No disponible (el LM es de 0,6 mil millones; el encoder no publica recuento) |
-| Parametros activos | No aplica (no es MoE) |
-| Longitud de contexto | No disponible para el LM; ventana de audio fija de 30,24 s (504 frames de 960 muestras a 16 kHz) |
-| Tipos de cuantizacion | LM int8 dinámico con tabla de embeddings int8 y activaciones fp32; encoder fp16 en pesos, cómputo fp32 |
-| Idiomas soportados | Chino (7 dialectos, 26 acentos), inglés, japonés |
+| Arquitectura | Híbrida: codificador de audio SenseVoice SAN-M (70 capas) + adaptador (2 capas) + LM Qwen3-0.6B (transformer decoder) |
+| Parámetros totales | no disponible (el LM es Qwen3-0.6B; el total del pipeline no se declara) |
+| Parámetros activos | no aplica (no es MoE) |
+| Longitud de contexto | Ventana de audio fija de 30,24 s (504 frames de 960 muestras a 16 kHz); contexto de texto del LM no disponible |
+| Tipos de cuantización | LM int8 dinámico (pesos) con tabla de embeddings int8; codificador de audio fp16 en pesos y fp32 en cómputo |
+| Idiomas soportados | Chino (7 dialectos, 26 acentos regionales), inglés, japonés |
 | Licencia | Apache-2.0 |
-| Formato de pesos | `.litertlm` (bundle LiteRT-LM); modelo base en safetensors/PyTorch |
+| Formato de pesos | `.litertlm` (LiteRT-LM); modelo base en formato original no disponible en esta ficha |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es un pipeline híbrido de dos etapas. La primera es un codificador de audio SenseVoice SAN-M de 70 capas que procesa características fbank con front-end LFR, seguido de un adaptador de 2 capas que proyecta las representaciones de audio al espacio del modelo de lenguaje. La segunda etapa es un Qwen3-0.6B que recibe los embeddings de audio insertados en un prompt ChatML y genera la transcripción token a token. El runtime de LiteRT-LM trocea el PCM de 16 kHz en frames de 60 ms, ejecuta el codificador y entrega hasta 63 embeddings por ventana de 30,24 s.
+El pipeline sigue un diseño encoder-adaptor-decoder. El codificador de audio es un SenseVoice SAN-M de 70 capas que procesa una ventana fija de 30,24 s de PCM a 16 kHz, con un front-end de *fbank* + LFR (log filter bank con reducción de frecuencia). Un adaptador de 2 capas proyecta las representaciones acústicas al espacio de embeddings del LM. El decodificador es Qwen3-0.6B, que genera la transcripción token a token en modo greedy (top-k 1). El runtime LiteRT-LM corta el PCM en frames de 60 ms, ejecuta el codificador de audio y coloca los embeddings resultantes en un prompt ChatML; el encoder devuelve hasta 63 embeddings por ventana.
 
-No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas de RLHF o DPO en la model card proporcionada. La innovación técnica destacable es el empaquetado en un único fichero LiteRT-LM con secciones separadas (`tf_lite_audio_encoder_hw`, `tf_lite_prefill_decode`, `tf_lite_embedder`, tokenizer y metadatos) que permite ejecutar el pipeline completo en CPU o GPU móvil (WebGPU/OpenCL) sin modificar el runtime ni el conversor. El modelo no incluye cabecera CTC ni timestamps, ya que el checkpoint no contiene pesos de decodificador CTC.
+El fichero `.litertlm` se descompone en cuatro secciones: `tf_lite_audio_encoder_hw` (473 MB, front-end fbank + LFR, encoder SAN-M y adaptador), `tf_lite_prefill_decode` (622 MB, Qwen3-0.6B int8), `tf_lite_embedder` (159 MB, tabla de embeddings int8) y `HF_Tokenizer_Zlib` (2,1 MB, tokenizer Qwen3), más un `LlmMetadataProto` de 1,7 KB con plantilla de prompt, tokens de parada y ajustes de audio. No se dispone de información sobre el número de tokens de entrenamiento, composición del dataset ni si hubo RLHF/DPO en la información proporcionada. La innovación técnica destacable de esta conversión es la reescritura del grafo de prefill/decode para GPU (OpenCL en Android, WebGPU sobre Metal en Apple) manteniendo los pesos, que casi duplica el throughput de decodificación en el dispositivo de referencia.
 
 ## Capacidades
 
-- Transcripción de voz a texto extremo a extremo en chino, inglés y japonés.
-- Soporte de dialectos chinos (7) y acentos regionales (26).
-- Instrucciones de tarea en el prompt: transcripción por defecto (`语音转写：`), transcripción sin normalización inversa de texto (`语音转写，不进行文本规整：`) y transcripción forzada a un idioma (`语音转写成英文：`, etc.).
-- Hotwords: lista de términos en el prompt para sesgar la transcripción hacia vocabulario específico (nombres propios, jerga técnica).
-- Procesamiento de audio en ventanas de hasta 30,24 s por mensaje; el runtime trocea clips más largos.
-- Ejecución en dispositivo (on-device) en CPU y GPU móvil mediante LiteRT-LM.
-- No soporta timestamps ni alineación temporal.
-- No soporta tool calling, agentes ni razonamiento multi-paso (es un modelo ASR, no un LLM conversacional general).
+- Reconocimiento automático del habla end-to-end: audio PCM 16 kHz mono en WAV, texto como salida.
+- Multilingüe: chino (incluye 7 dialectos y 26 acentos regionales), inglés y japonés.
+- Instrucciones de tarea en el prompt: transcripción por defecto (`语音转写：`), transcripción sin normalización de texto inversa (`语音转写，不进行文本规整：`) y transcripción forzada a un idioma (`语音转写成英文：`, con `中文`, `英文`, `日文`).
+- Soporte de *hotwords*: lista de términos en el prompt para sesgar la transcripción hacia vocabulario específico (nombres propios, terminología).
+- Ejecución on-device sin conexión sobre el runtime LiteRT-LM, con rutas de cómputo en CPU y GPU (OpenCL, WebGPU/Metal).
+- Procesamiento de audio largo mediante segmentación externa en trozos de hasta 30 s y conversaciones independientes por trozo.
+- No soporta marcas de tiempo (sin rama CTC en el checkpoint).
+- No se declaran capacidades de tool calling, agentes ni multi-step reasoning en la información disponible.
 
 ## Casos de uso
 
-- Transcripción de reuniones y notas de voz en móvil: el bundle de 1,26 GB cabe en un dispositivo Android de gama alta y permite dictado offline en chino, inglés o japonés sin enviar audio a la nube, con ventanas de 30 s que el runtime segmenta automáticamente.
-- Subtitulado de vídeo en producción: dividiendo el audio en fragmentos de 30 s en pausas naturales y usando una conversación nueva por fragmento, se obtiene una WER de 10/143 en el clip de prueba de 60,2 s, equivalente al modelo original.
-- Atención al cliente con reconocimiento de vocabulario específico: el soporte de hotwords permite sesgar la transcripción hacia nombres de producto, marcas o términos técnicos del dominio, reduciendo errores en nombres propios.
-- Aplicaciones de accesibilidad: dictado por voz en tiempo real en dispositivos edge para usuarios con movilidad reducida, con ejecución local que preserva la privacidad del audio.
-- Transcripción multilingüe en centros de llamadas: el modelo cubre chino, inglés y japonés en un solo bundle, útil para entornos con clientes de los tres idiomas y despliegue en hardware sin GPU dedicada.
-- Investigación en ASR en dispositivo: base reproducible para comparar cuantización int8/fp16 frente a la referencia fp32 en `funasr`, con métricas publicadas de WER y CER por idioma.
-- Integración en apps móviles con LiteRT-LM: el formato `.litertlm` y las secciones separadas permiten cargar solo el encoder o el LM según el perfil de memoria del dispositivo.
+- Transcripción de notas de voz en aplicaciones móviles: el modelo cabe en 1,26 GB y se ejecuta en un Galaxy S26 a 51,45 tok/s en GPU, lo que permite transcribir mensajes de hasta 30 s en el propio dispositivo sin enviar audio a la nube y preservando la privacidad.
+- Subtitulado y actas de reuniones: segmentando el audio en trozos de hasta 30 s cortados en pausas y uniendo las transcripciones, se obtiene un WER de 10/143 en el clip de prueba de 60,2 s, idéntico al del modelo original sobre el clip completo, lo que lo hace apto para reuniones y clases grabadas.
+- Dictado multilingüe en inglés y japonés: con la instrucción de idioma de salida (`语音转写成英文：` o `日文`) y una ventana de 30 s, se puede integrar en teclados y asistentes de escritura para usuarios que alternan idiomas.
+- Reconocimiento de vocabulario especializado con *hotwords*: en dominios como medicina, legal o nombres propios, la lista de términos en el prompt reduce errores; en la prueba con LibriSpeech, el WER bajó de 10/68 a 8/68 al incluir los *hotwords* correctos.
+- Transcripción de audio en el borde para dispositivos IoT y wearables: el formato `.litertlm` y las rutas CPU/GPU de LiteRT-LM permiten desplegar en hardware con recursos limitados sin depender de un servidor.
+- Preprocesado de voz en pipelines de datos: transcripción masiva de clips cortos en local para generar datasets de texto a partir de audio, con la opción de desactivar la normalización de texto inversa para preservar la forma hablada.
+- Accesibilidad: conversión de voz a texto en tiempo real para personas con discapacidad auditiva, aprovechando la latencia de decodificación en GPU en dispositivos móviles de gama alta.
 
 ## Benchmarks y rendimiento
 
-Resultados publicados en la model card sobre 25 clips (5 de ejemplo del modelo y 20 de LibriSpeech dev-clean, 448 palabras), decodificación greedy, una conversación por clip, encoder en CPU:
+Los datos disponibles comparan esta conversión con el modelo original en `funasr` 1.4.16 (fp32, decodificación greedy) sobre 25 clips: 5 de ejemplo (zh, en, ja, ko, yue) y 20 de LibriSpeech dev-clean (448 palabras).
 
-| Runtime | Backend LM | Texto idéntico a referencia | WER inglés |
+| Runtime | Backend del LM | Texto idéntico a la referencia | WER inglés |
 |---|---|---|---|
-| Referencia: `funasr` 1.4.16, fp32 PyTorch | — | — | 4,46 % (20/448) |
+| Referencia: `funasr`, fp32 PyTorch | — | — | 4,46 % (20/448) |
 | LiteRT-LM 0.17.1 (Python), Apple M4 Max | CPU | 21/25 | 4,24 % (19/448) |
 | LiteRT-LM 0.17.1 (Python), Apple M4 Max | GPU (WebGPU sobre Metal) | 24/25 | 4,46 % (20/448) |
 | LiteRT-LM v0.16.1 CLI, Galaxy S26 (SM-S942Q) | CPU | 21/25 | 4,46 % (20/448) |
 | LiteRT-LM v0.16.1 CLI, Galaxy S26 (SM-S942Q) | GPU (OpenCL) | 24/25 | 4,46 % (20/448) |
 
-Resultados en FLEURS test (50 clips por idioma, mismas condiciones):
-
-| Idioma | Métrica | Bundle (Mac CPU) | Referencia (`funasr` fp32) |
-|---|---|---|---|
-| Inglés | WER | 5,48 % | 5,13 % |
-| Mandarín | CER | 6,86 % | 6,86 % |
-| Japonés | CER | 6,81 % | 6,95 % |
-
-Pruebas adicionales: con encoder y LM en fp32 el runtime iguala la referencia en 25/25 clips, por lo que las diferencias se atribuyen a la cuantización. Con instrucción sin normalización inversa, 20 clips de LibriSpeech dieron WER 17/448 frente a 16/448 de la referencia, con 16 de 20 transcripciones idénticas. Con hotwords en un clip de LibriSpeech, la WER bajó de 10/68 a 8/68 (referencia: 11/68 a 6/68).
+Rendimiento de decodificación del LM en Galaxy S26 (LiteRT-LM v0.19.0, tras prefill de 1.024 tokens): 51,45 y 51,43 tok/s en GPU con el fichero actual, frente a 26,75 y 26,76 tok/s del fichero anterior; en CPU, de 21,43 a 22,66 tok/s en cuatro ejecuciones. Con el codificador y el LM en fp32, el texto coincide con la referencia en 25/25 clips, por lo que las diferencias observadas se atribuyen a la cuantización. Con la instrucción sin normalización de texto inversa, 20 clips de LibriSpeech dieron un WER inglés de 17/448 (el original, 16/448; 16 de 20 transcripciones idénticas). No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM/RAM estimada: el bundle ocupa 1,26 GB en disco; en ejecución cabe holgadamente en dispositivos con 2-3 GB de RAM libre.
-- Desglose de memoria por sección: encoder de audio 473 MB, LM int8 621 MB, tabla de embeddings int8 159 MB, tokenizer 2,1 MB.
-- GPU recomendadas: no requiere GPU dedicada; funciona en CPU de Apple M4 Max y en GPU móvil (WebGPU sobre Metal, OpenCL en Galaxy S26).
-- Cabe en GPU de consumo: sí, cualquier GPU con más de 2 GB de VRAM puede alojar el bundle; también en CPU sin aceleración.
-- Opciones de despliegue: LiteRT-LM (Python 0.17.1, CLI v0.16.1); el modelo base original se ejecuta con `funasr` 1.4.16 en PyTorch fp32.
-- Latencia y throughput: no disponibles en la información proporcionada.
+- Tamaño del fichero: 1,26 GB (encoder 473 MB + prefill/decode 622 MB + embedder 159 MB + tokenizer 2,1 MB).
+- VRAM/RAM estimada para inferencia: no disponible de forma explícita; el fichero completo ocupa 1,26 GB y debe residir en memoria, más el estado del runtime.
+- GPU recomendadas: no se declaran modelos de escritorio; el modelo está orientado a GPU móviles e integradas (OpenCL en Android, WebGPU sobre Metal en Apple). El hardware de referencia es un Galaxy S26 (SM-S942Q) y un Apple M4 Max.
+- ¿Cabe en GPU de consumo? No hay datos para RTX 4090 u otras GPU de escritorio; el diseño es para dispositivo móvil y borde.
+- Opciones de despliegue: runtime LiteRT-LM (Python, CLI y librería) en versiones 0.19.0 a 0.19.2 para este fichero; versiones anteriores no se probaron con él. No se mencionan vLLM, llama.cpp, Ollama ni TGI.
+- Latencia y throughput: 51,45 tok/s en GPU y 21,43–22,66 tok/s en CPU en Galaxy S26 tras prefill de 1.024 tokens; en Apple M4 Max no se declaran cifras de throughput, solo WER y coincidencia de texto.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto/ventana | Idiomas | Licencia | Formato |
+| Modelo | Parámetros | Contexto de audio | Idiomas | Licencia | Formato/despliegue |
 |---|---|---|---|---|---|
-| Fun-ASR-Nano-2512 (este bundle) | LM 0,6 B + encoder SAN-M | 30,24 s por mensaje | zh, en, ja | Apache-2.0 | `.litertlm` |
-| FunAudioLLM/Fun-ASR-Nano-2512 (original) | LM 0,6 B + encoder SAN-M | No disponible | zh, en, ja | Apache-2.0 | safetensors/PyTorch |
-| Whisper (variantes pequeñas) | No disponible en la información | No disponible | Multilingüe | MIT (según variante) | safetensors, GGUF, etc. |
-| Qwen3-ASR | No disponible en la información | No disponible | No disponible | No disponible | No disponible |
+| Fun-ASR-Nano-2512 (LiteRT-LM) | LM Qwen3-0.6B + encoder SAN-M 70 capas (total no disponible) | 30,24 s por ventana | zh, en, ja | Apache-2.0 | `.litertlm`, LiteRT-LM on-device |
+| FunAudioLLM/Fun-ASR-Nano-2512 (original) | mismo pipeline | no disponible en esta ficha | zh, en, ja | Apache-2.0 | PyTorch, `funasr` 1.4.16 |
+| Whisper (variantes de OpenAI) | no disponible en esta ficha | 30 s | multilingüe amplio | MIT/Apache-2.0 según variante | PyTorch, GGUF, ONNX, etc. |
+| SenseVoice (FunAudioLLM) | no disponible en esta ficha | no disponible en esta ficha | multilingüe | no disponible en esta ficha | PyTorch, `funasr` |
 
-No se dispone de datos de benchmarks comparativos con Whisper u otros modelos ASR en la información proporcionada; la comparación se limita a la referencia fp32 del mismo modelo.
+La comparación cuantitativa directa solo está disponible frente al modelo original: misma calidad de transcripción (WER 4,46 % en inglés, 20/448) con un fichero autocontenido y ejecución on-device. Frente a Whisper y SenseVoice no se aportan métricas en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Ventana de audio fija de 30,24 s por mensaje: clips más largos se trocean por el runtime y, si no se separan en conversaciones nuevas, el modelo solo transcribe la primera ventana (WER 83/143 en un clip de 60,2 s frente a 10/143 al dividirlo).
-- Enviar dos fragmentos como dos turnos de una misma conversación provoca repetición del inicio del primero (WER 22/143).
-- Sin timestamps: el checkpoint no incluye pesos de decodificador CTC, por lo que no hay rama CTC ni alineación temporal.
-- La cuantización int8 introduce diferencias menores frente a fp32: grafías de apellidos, puntuación en dos clips y kana en el ejemplo coreano.
-- El encoder toma la longitud del clip del último sample no nulo, por lo que el silencio digital al final se trata como padding.
-- Se recomienda PCM WAV mono a 16 kHz; la decodificación MP3 del runtime difiere del texto obtenido con WAV decodificado por ffmpeg en 3 de 5 muestras oficiales.
-- El modelo cubre chino, inglés y japonés; no se garantiza calidad en otros idiomas.
-- Riesgo de alucinación y sesgos: no documentado en la información proporcionada.
-- Licencia Apache-2.0 permite uso comercial, pero se debe verificar la licencia del modelo base y de los datos de entrenamiento originales.
+- Ventana de audio fija de 30,24 s: un clip más largo enviado en un solo mensaje se corta en varias ventanas y el modelo solo transcribe el habla de la primera (WER 83/143 en el clip de 60,2 s). Es obligatorio segmentar externamente y usar una conversación nueva por trozo; enviar los trozos como turnos de una misma conversación provoca repetición del inicio (WER 22/143).
+- Sin marcas de tiempo: el checkpoint no incluye pesos de decodificador CTC, por lo que no hay rama CTC ni alineamientos temporales.
+- Diferencias por cuantización: en CPU se observan variaciones en la grafía de nombres propios ("Birket", "Burkett", "Burkitt"); con encoder y LM en fp32 el texto coincide con la referencia en 25/25 clips.
+- Formato de entrada: se recomienda PCM 16 kHz mono en WAV; el runtime puede decodificar MP3, pero en 3 de 5 muestras MP3 oficiales el texto difirió del obtenido al decodificar el mismo audio a WAV con ffmpeg.
+- El silencio digital al final del clip se trata como relleno porque el encoder toma la longitud del último sample no nulo; en las pruebas no cambió ninguna transcripción.
+- Cobertura lingüística limitada a chino (con dialectos y acentos), inglés y japonés; el coreano y el cantonés aparecen solo en los clips de ejemplo y no se declaran como idiomas soportados.
+- Riesgo de alucinación y sesgos: no se documentan en la información disponible; como todo ASR generativo, puede producir texto plausible no presente en el audio, especialmente con ruido o acentos fuera de la cobertura declarada.
+- Compatibilidad de runtime restringida: el fichero actual solo se probó con LiteRT-LM 0.19.0 a 0.19.2; versiones anteriores no se validaron.
+- Licencia Apache-2.0: permite uso comercial, pero conviene revisar las condiciones del modelo base FunAudioLLM/Fun-ASR-Nano-2512 y de Qwen3-0.6B para obligaciones adicionales de atribución.
 
 ## Enlaces
 
-- Hugging Face del bundle: https://huggingface.co/litert-community/Fun-ASR-Nano-2512
+- Modelo en Hugging Face: https://huggingface.co/litert-community/Fun-ASR-Nano-2512
 - Modelo base: https://huggingface.co/FunAudioLLM/Fun-ASR-Nano-2512
 - Runtime LiteRT-LM: https://github.com/google-ai-edge/LiteRT-LM
-- Repositorio FunASR: https://github.com/modelscope/FunASR (referenciado como `funasr` 1.4.16 en la model card)

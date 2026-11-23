@@ -2,88 +2,93 @@
 
 ## Resumen
 
-Narra es un modelo publicado en Hugging Face por el usuario u organizacion DeepNarra bajo el identificador `DeepNarra/Narra`. La unica informacion verificable disponible en el momento de redactar esta ficha es su licencia (Apache 2.0), su region declarada (us) y las fechas de creacion y ultima actualizacion (3 de octubre de 2026, ambas identicas). No se ha publicado pipeline, idiomas soportados, arquitectura, numero de parametros ni ningun otro dato tecnico.
+DeepNarra Narra 1.0 es un modelo de generación de texto de muy pequeño tamaño (28,5 millones de parámetros totales) desarrollado por la organización DeepNarra. Se presenta como un modelo de tipo "edge" orientado a inferencia soberana en hardware modesto, con una arquitectura poco convencional que combina atención lineal con compuertas por bloques (Gated Linear Attention, GLA), un mecanismo de estabilización basado en la teoría de Lyapunov y una mezcla de expertos jerárquica (H-MoE) con 92 sub-expertos organizados en 23 macro-ramas y un experto compartido. El modelo declara una ventana de contexto estrictamente fijada en 131.072 tokens (128K).
 
-La model card del repositorio no contiene mas que el bloque de metadatos de licencia: no hay descripcion del modelo, ni detalles de entrenamiento, ni instrucciones de uso, ni resultados de evaluacion. El repositorio registra 0 descargas y 0 likes, lo que indica que no ha tenido difusion ni validacion por parte de la comunidad.
+La propuesta diferencial del modelo es triple: un contexto largo bloqueado y estable, un estado recurrente de memoria constante (O(1)) con serialización declarada de 6 bytes por estado, y una cuantización ternaria nativa BitNet b1.58 en formato TQ1_0 que reduce el peso del GGUF a 5,85 MB. El autor publica una cifra de rendimiento medida de 325,2 tokens por segundo con 49,20 ms de latencia por paso sobre una Tesla T4, así como un recuento exacto de parámetros verificable en safetensors.
 
-La busqueda web realizada no ha devuelto ningun resultado relevante sobre este modelo: los unicos enlaces recuperados no guardan ninguna relacion con DeepNarra ni con modelos de lenguaje, por lo que se han descartado como fuentes. En consecuencia, esta ficha se limita a documentar la ausencia de informacion y a marcar explicitamente como "no disponible" cada especificacion que no puede confirmarse. No se debe asumir ninguna capacidad, tamano ni rendimiento que no este respaldado por documentacion oficial.
+Es relevante ahora porque explora un nicho poco poblado: modelos de contexto muy largo con coste de memoria constante y huella de despliegue mínima, lo que interesa a quienes investigan razonamiento latente continuo, decodificación especulativa y despliegue en dispositivos con recursos limitados. La licencia Apache-2.0 facilita su uso comercial, aunque la información pública sobre calidad real del modelo es muy escasa y el repositorio es de reciente creación con métricas de adopción prácticamente nulas.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | no disponible |
-| Parametros totales | no disponible |
-| Parametros activos | no disponible |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible |
-| Idiomas soportados | no disponible |
-| Licencia | Apache 2.0 |
-| Formato de pesos | no disponible |
+| Arquitectura | DeepNarraNarraHMoEForCausalLM: Gated Linear Attention (GLA) por bloques con estabilidad de Lyapunov y H-MoE de 92 sub-expertos |
+| Parámetros totales | 28.519.602 (28,5M) |
+| Parámetros activos | ~6,2M por token (23 macro-motores × top-2 micro-expertos + experto compartido de base) |
+| Longitud de contexto | 131.072 tokens (128K), estrictamente fijada |
+| Tipos de cuantización | Ternaria nativa BitNet b1.58 en formato TQ1_0 (1,58 bits por peso); safetensors en precisión completa |
+| Idiomas soportados | Inglés y multilingüe (según etiquetas del autor; no se detalla la lista de idiomas) |
+| Licencia | Apache-2.0 |
+| Formato de pesos | safetensors (108,94 MB, 1.330 tensores) y GGUF TQ1_0 (5,85 MB, 1.330 tensores) |
 
 ## Arquitectura y entrenamiento
 
-No disponible. La model card publicada en `DeepNarra/Narra` no incluye ninguna descripcion de la arquitectura (transformer, MoE, SSM o hibrida), ni del volumen de tokens de entrenamiento, ni de la composicion del dataset, ni de si se aplicaron tecnicas de alineacion como RLHF, DPO o similares.
+El modelo abandona el transformer denso convencional en favor de una columna vertebral de atención lineal con compuertas (GLA) procesada por bloques, con actualización de estado recurrente del tipo S_t = α_t ⊙ S_{t-1} + K_t^T V_t y salida O_t = Q_t S_t. Esta formulación permite memoria de inferencia constante, independiente de la longitud de contexto. Sobre esa base se aplica una cota de estabilidad de Lyapunov que limita la norma espectral y la energía del estado recurrente (V(S_t) = Tr(S_t^T P S_t) ≤ 100,0), con el objetivo declarado de evitar desbordamientos y deriva del estado a lo largo de los 128K tokens. El estado recurrente se serializa con un pool de flotantes de taper adaptativo de 6 bytes por estado.
 
-Tampoco se dispone de informacion sobre innovaciones tecnicas, metodos de decodificacion, estrategias de atencion o cualquier otro detalle de implementacion. El repositorio no contiene documentacion adicional, paper, blog tecnico ni repositorio de codigo asociado.
+La capa de mezcla de expertos es jerárquica: un experto compartido de base actúa como tronco, 23 macro-ramas organizan la computación y 92 micro-expertos especializados se activan con enrutamiento top-2, lo que da los ~6,2M de parámetros activos por token. El autor no detalla el número exacto de tokens de entrenamiento ni la composición cuantitativa del dataset; sí atribuye el entrenamiento a FineWeb-Edu, Aya Collection y CodeFeedback-Filtered-Instruction, además de una corriente sintética de razonamiento procedimental verificada con SymPy y datos de instrucciones de no_robots. No se documenta si hubo RLHF, DPO u otra fase de alineamiento preferencial.
 
 ## Capacidades
 
-No disponible. Al no existir model card, documentacion tecnica ni evaluaciones publicadas, no es posible determinar que tareas sabe realizar el modelo.
-
-Los aspectos que quedan sin confirmar son, entre otros:
-
-- Generacion de texto, razonamiento, codigo o matematicas.
-- Soporte de tool calling o function calling.
-- Soporte de agentes y razonamiento multi-paso.
-- Cobertura multilingue.
-- Capacidades multimodales (vision, audio) o modos especiales de razonamiento.
-
-Cualquier afirmacion sobre estas capacidades seria una suposicion no respaldada por la informacion disponible.
+- Generación de texto autoregresiva con pipeline `text-generation` y compatibilidad declarada con la librería `transformers`.
+- Razonamiento latente continuo y retención de documentos largos hasta 131.072 tokens sin degradación por attention sink, según el autor.
+- Procesamiento de contexto largo con memoria de inferencia constante, apto para flujos de lectura extensa sin crecimiento del estado.
+- Capacidades multilingües declaradas, con inglés como idioma principal y cobertura multilingüe no detallada.
+- Razonamiento procedimental matemático derivado de la corriente sintética verificada con SymPy.
+- Instrucciones de código, a partir del dataset CodeFeedback-Filtered-Instruction.
+- Despliegue en formato ternario nativo TQ1_0 con `Modelfile` incluido para Ollama.
+- No se documenta soporte explícito de tool calling, function calling, agentes multi-paso, visión ni audio.
 
 ## Casos de uso
 
-No disponible. Sin especificaciones tecnicas (tamano, contexto, idiomas, licencia de uso practico y rendimiento medido) no es posible recomendar casos de uso concretos ni justificar su idoneidad para escenarios de produccion. Definir aplicaciones sin esos datos introduciria afirmaciones no verificables.
-
-Para poder elaborar esta seccion seria necesario que el autor publicase, como minimo:
-
-- Arquitectura y numero de parametros, para estimar requisitos de inferencia.
-- Longitud de contexto, para valorar tareas de documento largo o conversacion multi-turno.
-- Idiomas soportados, para evaluar despliegues en castellano.
-- Resultados de benchmarks, para comparar con alternativas.
+- Procesamiento de documentos extensos en el borde: el modelo puede ingerir contratos, informes o expedientes de hasta 128K tokens en un único paso con memoria constante, lo que lo hace adecuado para despliegues en dispositivos con RAM limitada donde un transformer denso de contexto equivalente no cabría.
+- Clasificación y extracción de información en corpus largos: con contexto fijado y estado recurrente estable, se puede usar para resumir o etiquetar actas, transcripciones o registros técnicos sin truncar el documento.
+- Asistente embebido en aplicaciones de escritorio o móviles: el GGUF ternario de 5,85 MB permite distribuirlo dentro de un binario o paquete de aplicación y ejecutarlo en CPU sin GPU dedicada.
+- Investigación en razonamiento latente: sirve como banco de pruebas reproducible para estudiar atención lineal con compuertas, estabilización de Lyapunov y enrutamiento jerárquico de expertos a pequeña escala.
+- Generación de código asistida en entornos con restricciones: su entrenamiento sobre CodeFeedback permite integrarlo en editores o pipelines ligeros de autocompletado y sugerencias, aunque la calidad en tareas complejas no está validada públicamente.
+- Filtrado y moderación de contenido en streaming: la latencia declarada de 49,20 ms por paso y el bajo coste de memoria permiten procesar flujos continuos de texto en tiempo casi real sobre una única GPU de gama media.
+- Prototipado de agentes con contexto persistente: el estado recurrente serializable en 6 bytes facilita guardar y restaurar sesiones largas sin reinyectar todo el historial.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks en la información disponible. El autor declara una política de "Zero Fake Scores" y solo publica métricas de ingeniería verificables: 325,2 tokens/s y 49,20 ms de latencia por paso medidos en una Tesla T4, además del recuento exacto de 28.519.602 parámetros y el tamaño de 5,85 MB del GGUF TQ1_0.
 
 ## Requisitos de hardware
 
-No disponible. No hay datos sobre el tamano del modelo, el formato de pesos ni las tecnicas de cuantizacion soportadas, por lo que no es posible estimar:
-
-- VRAM necesaria para inferencia en distintas precisiones.
-- GPUs recomendadas (A100, H100, RTX 4090 u otras).
-- Si el modelo cabe en GPU de consumo.
-- Opciones de despliegue compatibles (vLLM, llama.cpp, Ollama, TGI, entre otras).
-- Latencia y throughput esperados.
+- VRAM estimada: inferior a 1 GB en cualquier cuantización; el GGUF TQ1_0 ocupa 5,85 MB y el safetensors en precisión completa 108,94 MB, por lo que el modelo cabe holgadamente en memoria unificada de CPU.
+- GPU recomendadas: el autor verifica funcionamiento en una Tesla T4; cualquier GPU con al menos 1 GB de memoria libre es suficiente, incluidas GTX 1650, RTX 3050 o superiores.
+- Cabe en GPU de consumo: sí, en todas las GPU de consumo actuales e incluso en iGPU y CPU exclusivamente.
+- Opciones de despliegue: Ollama mediante el `Modelfile` incluido, llama.cpp para el GGUF TQ1_0, y carga directa con `safetensors` y `transformers` para inspección o inferencia en precisión completa.
+- Latencia y throughput: 325,2 tokens/s y 49,20 ms por paso en Tesla T4, según medición del autor.
 
 ## Comparativa con modelos similares
 
-No disponible. No se conocen modelos comparables porque se desconoce la categoria del modelo (tamano, modalidad, arquitectura y tarea objetivo). Sin esos datos, cualquier tabla comparativa seria especulativa.
+| Modelo | Parámetros | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|
+| DeepNarra Narra 1.0 | 28,5M totales / ~6,2M activos | 131.072 | Apache-2.0 | safetensors, GGUF TQ1_0 | GLA con Lyapunov y H-MoE de 92 sub-expertos; sin benchmarks públicos |
+| Qwen2.5-0.5B | 0,5B | 32.768 | Apache-2.0 | safetensors, GGUF | Transformer denso convencional; benchmarks públicos extensos |
+| SmolLM2-135M | 135M | 8.192 | Apache-2.0 | safetensors, GGUF | Transformer denso pequeño orientado a edge; benchmarks publicados |
+| BitNet b1.58 2B4T | 2B | 4.096 | MIT | safetensors ternario | Referencia de cuantización ternaria nativa; benchmarks publicados |
+
+La comparativa es aproximada: Narra compite por nicho (contexto largo con memoria constante y huella mínima) más que por calidad absoluta, y a diferencia de las alternativas no ofrece resultados de evaluación pública que permitan situarlo en tareas estándar.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de documentacion: la model card solo contiene la declaracion de licencia, sin descripcion, instrucciones de uso ni limitaciones declaradas por el autor.
-- Cero adopcion verificable: 0 descargas y 0 likes en el momento de la consulta, lo que implica ausencia de validacion independiente por parte de la comunidad.
-- Sin resultados de evaluacion: no hay benchmarks publicos que permitan estimar calidad, sesgos o fiabilidad.
-- Riesgo de alucinacion: no cuantificado ni documentado; se desconoce por completo su comportamiento en este aspecto.
-- Sesgos conocidos: no disponible. No se ha publicado informacion sobre datos de entrenamiento ni sobre analisis de sesgo.
-- Limitaciones de contexto e idioma: no disponible.
-- Licencia: Apache 2.0 permite uso comercial, modificacion y redistribucion, siempre que se conserven los avisos de copyright y licencia correspondientes. No obstante, la licencia por si sola no garantiza la idoneidad tecnica del modelo.
-- Advertencia para produccion: no se recomienda integrar este modelo en sistemas en produccion sin antes obtener del autor la documentacion tecnica completa y realizar una evaluacion propia.
-- Fechas: creacion y ultima actualizacion coinciden (3 de octubre de 2026), lo que sugiere que el repositorio no ha recibido mantenimiento posterior a su publicacion inicial.
+- Ausencia total de benchmarks públicos: no hay datos de MMLU, HumanEval, GSM8K ni evaluaciones de contexto largo que permitan validar las capacidades declaradas.
+- Con 28,5M de parámetros totales y ~6,2M activos, la capacidad de razonamiento y conocimiento factual será muy limitada en comparación con modelos de cientos de millones o miles de millones de parámetros; no es apto para tareas que exijan conocimiento amplio o razonamiento complejo.
+- Riesgo elevado de alucinación y de respuestas incoherentes en dominios no cubiertos por los datos de entrenamiento, dado el tamaño reducido y la falta de documentación sobre el volumen de tokens.
+- El contexto está "estrictamente bloqueado" a 131.072 tokens según el autor; no se documenta comportamiento con entradas más cortas ni si el modelo requiere relleno hasta esa longitud, lo que puede afectar al coste y a la calidad en usos conversacionales breves.
+- Idiomas: solo se declara inglés y "multilingüe" sin lista concreta; el rendimiento en castellano no está verificado.
+- La licencia Apache-2.0 permite uso comercial, pero parte de los datos de atribución (no_robots) está bajo CC-BY-NC-4.0, lo que introduce una posible ambigüedad sobre el uso comercial derivado de ese subconjunto.
+- El repositorio tiene 404 descargas, 0 likes y fue creado en octubre de 2026; no hay evidencia de adopción, mantenimiento ni validación por terceros.
+- Las afirmaciones sobre estabilidad de Lyapunov, estado recurrente de 6 bytes y velocidad en T4 provienen únicamente del autor y no han sido replicadas de forma independiente.
+- No se documenta soporte de tool calling, agentes, visión ni audio; no debe asumirse su disponibilidad en producción.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/DeepNarra/Narra
-
-No se han encontrado otros enlaces relevantes (papers, blogs, repositorios o demos) en la busqueda web realizada. Los resultados devueltos por el buscador no guardaban relacion con el modelo y se han descartado.
+- Modelo en Hugging Face: https://huggingface.co/DeepNarra/Narra
+- Organización DeepNarra: https://huggingface.co/DeepNarra
+- Licencia Apache-2.0: http://www.apache.org/licenses/LICENSE-2.0
+- Dataset FineWeb-Edu: https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu
+- Dataset Aya Collection: https://huggingface.co/datasets/CohereForAI/aya_collection
+- Dataset CodeFeedback-Filtered-Instruction: https://huggingface.co/datasets/m-a-p/CodeFeedback-Filtered-Instruction
+- Dataset no_robots: https://huggingface.co/datasets/HuggingFaceH4/no_robots

@@ -25,8 +25,8 @@
     "base_model:huihui-ai/Huihui-Qwen3.5-4B-abliterated",
     "region:us"
   ],
-  "likes": 0,
-  "downloads_30d": 176,
+  "likes": 1,
+  "downloads_30d": 169,
   "trending_score": 0,
   "parameters": 42467328,
   "parameters_human": "42.5M",

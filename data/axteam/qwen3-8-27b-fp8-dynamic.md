@@ -2,93 +2,109 @@
 
 ## Resumen
 
-Qwen3.8-27B-FP8-dynamic es una cuantización en FP8 (dinámica) del modelo multimodal Qwen3.8-27B de Qwen, realizada por axteam y orientada específicamente al despliegue eficiente con vLLM. El modelo base es un LLM denso con arquitectura híbrida (atención lineal más atención completa), capacidades de visión (image-text-to-text) y una cabecera de predicción multi-token (MTP). La cuantización emplea el esquema W8A8: pesos en FP8 E4M3 con escala por canal de salida y activaciones FP8 dinámicas por token, sin necesidad de calibración.
+Qwen3.8-27B-FP8-dynamic es una cuantizacion en FP8 de 8 bits del modelo multimodal Qwen/Qwen3.8-27B, publicada por el usuario axteam. No se trata de un modelo nuevo entrenado desde cero, sino de una version post-entrenamiento (PTQ, sin reentrenamiento) pensada para servir el modelo original de forma eficiente con vLLM. El resultado conserva la arquitectura hibrida del original (atencion lineal mas atencion completa), su caracter denso, su torre de vision y su cabeza de prediccion multi-token (MTP), con 27.781.427.952 parametros totales y un peso en disco de aproximadamente 31,2 GB.
 
-Su relevancia radica en que reduce el tamaño en disco de unos 54 GB (estimado en BF16 para 27,78 mil millones de parámetros) a unos 29,1 GB, manteniendo una fidelidad muy alta respecto al original: la perplexidad solo empeora un 0,5 % y el acuerdo top-1 del siguiente token se sitúa en el 97,3 %. Esto permite servir un modelo de 27B en una sola GPU de gama alta con buen throughput, conservando el modo de razonamiento (thinking), la entrada de imágenes y el tokenizador original.
+La relevancia de esta ficha radica en que demuestra que la cuantizacion dinamica en FP8 puede mantener la fidelidad respecto al modelo BF16 original con una perdida minima: en la evaluacion interna del autor la perplejidad sube solo un 0,5% y la concordancia top-1 de siguiente token alcanza el 97,3%. Ademas, la model card documenta una correccion de configuracion relevante (revision del 2026-11-02) que afectaba a la carga de los pesos de vision en vLLM, un detalle critico para cualquiera que despliegue el modelo en produccion.
+
+El modelo esta bajo licencia Apache-2.0, lo que facilita su uso comercial, y esta etiquetado como image-text-to-text, es decir, acepta entradas de imagen y texto. Su publicacion es reciente (creado el 2026-10-27 y actualizado el 2026-11-02) y acumula 413 descargas y 3 likes en el momento de redactar esta ficha.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Hibrida (atencion lineal + atencion completa), densa, multimodal (vision), con cabecera MTP |
-| Parametros totales | 27.781.427.952 (~27,78 B) |
-| Parametros activos | no disponible (modelo denso: todos los parametros activos) |
-| Longitud de contexto | no disponible en la ficha (los ejemplos de vLLM usan `--max-model-len 32768`) |
-| Tipos de cuantizacion | FP8 dinamico (W8A8, FP8 E4M3 por canal de salida, activaciones FP8 por token); vision tower, MTP, normas, embeddings y LM head en BF16 |
-| Idiomas soportados | no disponible (el conjunto de evaluacion interno incluye ingles y coreano) |
+| Arquitectura | Hibrida (atencion lineal + atencion completa), densa, multimodal con vision y cabeza MTP |
+| Parametros totales | 27.781.427.952 |
+| Parametros activos | no aplica (modelo denso, no MoE) |
+| Longitud de contexto | no disponible en la informacion proporcionada (el ejemplo de uso sugiere `--max-model-len 32768`) |
+| Tipos de cuantizacion | FP8 dinamico (W8A8, esquema `FP8_DYNAMIC` de compressed-tensors) |
+| Idiomas soportados | no disponibles |
 | Licencia | Apache-2.0 |
-| Formato de pesos | safetensors (compressed-tensors `FP8_DYNAMIC`) |
+| Formato de pesos | safetensors con compressed-tensors (`float-quantized`) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base, Qwen/Qwen3.8-27B, combina capas de atencion lineal con capas de atencion completa en una arquitectura hibrida, lo que reduce el coste de la KV-cache en secuencias largas. Es un modelo denso (no MoE) con capacidades multimodales: incorpora un vision tower y un proyector para entrada de imagen-texto, y una cabecera de prediccion multi-token (MTP) que puede acelerar la decodificacion. El chat template incluye por defecto el modo thinking (razonamiento explicito), desactivable mediante `chat_template_kwargs={"enable_thinking": False}`.
+El modelo base Qwen3.8-27B emplea una arquitectura hibrida que combina capas de atencion lineal con capas de atencion completa, lo que reduce el coste computacional del contexto largo frente a un transformer puramente de atencion cuadratica. Es un modelo denso (no mezcla de expertos) de aproximadamente 27,8 mil millones de parametros, multimodal (incluye torre de vision y proyector) y con una cabeza de prediccion multi-token (MTP), habitualmente utilizada para decodificacion especulativa. Esta version concreta no introduce cambios arquitectonicos: es una cuantizacion post-entrenamiento sin reentrenamiento ni calibracion (escalas de pesos estaticas sin datos, "data-free").
 
-Esta version es una cuantizacion post-entrenamiento (PTQ) sin reentrenamiento, por lo que el comportamiento es fiel al original. El esquema es FP8 dinamico sin calibracion: los pesos usan FP8 E4M3 con una escala estatica por canal de salida (data-free), y las activaciones se cuantizan dinamicamente por token en tiempo de inferencia. Se mantienen en BF16 el vision tower y el proyector, la cabecera MTP, todas las RMSNorm, los embeddings de tokens, el LM head y las partes no lineales del modulo de atencion lineal (`conv1d`, `A_log`, `dt_bias`) para preservar la calidad. No hay informacion sobre datos de entrenamiento, numero de tokens ni RLHF/DPO en la documentacion disponible.
+La cuantizacion aplica W8A8: pesos en FP8 E4M3 con escala por canal de salida y activaciones FP8 dinamicas por token. Se mantienen en BF16 la torre de vision y el proyector (`model.visual.*`), la cabeza MTP (`mtp.*`), todas las RMSNorm, los embeddings de tokens, la LM head y las partes no lineales del modulo SSM (`linear_attn.conv1d/A_log/dt_bias`); en total, cerca del 12% de los parametros de esta build quedan sin cuantizar para preservar la calidad. El tokenizador, la `chat_template` y la `generation_config` son identicos a los del original, y el `config.json` es el original mas un bloque `quantization_config`. No se dispone de informacion sobre el numero de tokens de entrenamiento ni sobre la composicion del dataset del modelo base en la informacion proporcionada.
 
 ## Capacidades
 
-- Generacion de texto conversacional con chat template identico al original.
-- Razonamiento con modo thinking activado por defecto (desactivable via `enable_thinking`).
-- Comprension de imagenes: entrada multimodal image-text-to-text mediante mensajes `image_url` (URL o data URI).
-- Prediccion multi-token (MTP) para acelerar la generacion.
-- Arquitectura hibrida con atencion lineal, beneficiosa para contextos largos.
-- Servible como API compatible con OpenAI mediante vLLM.
-- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
-- Capacidades agenticas: no disponible en la informacion proporcionada.
+- Generacion de texto y razonamiento conversacional multi-turno.
+- Procesamiento multimodal image-text-to-text: acepta imagenes junto con texto (torre de vision en BF16).
+- Razonamiento y resolucion de problemas matematicos (evaluado en GSM8K).
+- Conocimiento general y academico (evaluado en MMLU, ARC-Challenge, Winogrande).
+- Capacidades multilingues parcialmente evidenciadas por las evaluaciones en coreano (KMMLU, HAE-RAE); el conjunto completo de idiomas no esta disponible.
+- Cabeza de prediccion multi-token (MTP), util para decodificacion especulativa y aceleracion de inferencia.
+- Servido como API compatible con OpenAI mediante vLLM.
+- Soporte de tool calling / function calling y de agentes: no confirmado explicitamente en la informacion proporcionada.
 
 ## Casos de uso
 
-- Servidor de inferencia autoalojado compatible con OpenAI: `vllm serve` levanta un endpoint en el puerto 8000 que cualquier cliente estandar puede consumir, ideal para sustituir APIs de pago en entornos privados.
-- Analisis y descripcion de imagenes en aplicaciones: el pipeline image-text-to-text permite enviar imagenes por URL o data URI para generar descripciones, extraer informacion visual o responder preguntas sobre documentos escaneados.
-- Chatbots con razonamiento: el modo thinking por defecto permite desplegar asistentes que razonan paso a paso en tareas complejas, con la opcion de desactivarlo para respuestas rapidas.
-- Inferencia por lotes offline en Python: la API `llm.chat()` de vLLM permite procesar grandes volumenes de prompts (clasificacion, resumen, extraccion) sin exponer un servicio.
-- Despliegue en una sola GPU de gama alta: con ~29,1 GB de pesos en FP8, el modelo cabe en una GPU con 40-48 GB de VRAM, reduciendo el coste de servir un 27B multimodal.
-- Servido solo-texto con ahorro de memoria: anadiendo `--limit-mm-per-prompt '{"image": 0, "video": 0}'` se libera el presupuesto de memoria del encoder de vision en cargas de trabajo puramente textuales.
+- Servicio de inferencia multimodal en produccion: desplegar el modelo con `vllm serve` para atender peticiones de imagen y texto a traves de una API compatible con OpenAI, aprovechando el formato FP8 para reducir el peso en memoria (31,2 GB) frente al BF16 original.
+- Asistente conversacional multi-turno: usar la `chat_template` original para construir dialogos con historial; el contexto de hasta 32.768 tokens sugerido en el ejemplo permite mantener conversaciones largas con documentos adjuntos.
+- Analisis de imagenes con descripcion y respuesta: el modelo puede describir imagenes sinteticas (el autor verifico con una imagen de prueba con un circulo rojo, un cuadrado azul y el texto "QWEN TEST 2026") y responder preguntas sobre ellas, adecuado para tareas de accesibilidad o catalogacion.
+- Razonamiento matematico asistido: los resultados en GSM8K (76,88 en la variante FP8) lo hacen util para tutoria o resolucion de problemas paso a paso en entornos educativos.
+- Evaluacion comparativa de tecnicas de cuantizacion: al publicar resultados medidos frente a AWQ-8bit, NVFP4A16, NVFP4 y AWQ-4bit con el mismo harness, sirve como referencia para equipos que deciden que esquema de cuantizacion adoptar.
+- Despliegue en infraestructura con GPUs Ada, Hopper o Blackwell: al ejecutar matematicas FP8 de forma nativa en sm89 o superior, es adecuado para clusters con L40S, H100 o B200, con particionado por tensor (`--tensor-parallel-size`) cuando los pesos no caben en una sola GPU.
+- Prototipado rapido con transformers: para entornos sin vLLM, se puede cargar con `transformers>=5.2.0` y `compressed-tensors>=0.15.0` (verificado en CPU con otros modelos de la familia).
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K, etc.) en la informacion disponible. La model card incluye medidas de fidelidad respecto al original BF16 (conjunto interno mixto ingles/coreano, 100 prompts, respuestas greedy):
+Resultados medidos por el autor con lm-evaluation-harness sobre vLLM, greedy, prompts de estilo completion sin chat template. MMLU es la variante generativa, no directamente comparable con puntuaciones obtenidas por log-likelihood.
 
-| Metrica | Este modelo (FP8) | Original BF16 |
+| Benchmark | BF16 (original) | FP8-dynamic (este repo) | AWQ-8bit | NVFP4A16 | NVFP4 | AWQ-4bit |
+|---|---|---|---|---|---|---|
+| MMLU (5-shot, generativo) | 62,42 | 62,15 (99,6%) | 62,48 (100,1%) | 62,55 (100,2%) | 63,47 (101,7%) | 63,40 (101,6%) |
+| GSM8K (5-shot, estricto) | 70,43 | 76,88 (109,1%) | 70,81 (100,5%) | 49,81 (70,7%) | 47,54 (67,5%) | 76,42 (108,5%) |
+| ARC-Challenge (0-shot) | 58,62 | 58,36 (99,6%) | 58,79 (100,3%) | 58,70 (100,1%) | 57,76 (98,5%) | 59,56 (101,6%) |
+| Winogrande (5-shot) | 79,08 | 79,56 (100,6%) | 79,32 (100,3%) | 79,48 (100,5%) | 80,03 (101,2%) | 79,72 (100,8%) |
+| KMMLU (5-shot, directo) | 65,72 | 65,71 (100,0%) | 65,77 (100,1%) | 65,37 (99,5%) | 64,82 (98,6%) | 65,19 (99,2%) |
+| HAE-RAE (0-shot) | 76,35 | 76,54 (100,2%) | 76,90 (100,7%) | 75,89 (99,4%) | 75,80 (99,3%) | 76,44 (100,1%) |
+| **Media** | **68,77** | **69,87 (101,6%)** | **69,01 (100,3%)** | **65,30 (95,0%)** | **64,90 (94,4%)** | **70,12 (102,0%)** |
+
+Evaluacion de fidelidad frente al original BF16 en un conjunto interno mixto ingles/coreano de 100 prompts:
+
+| Metrica | Este modelo | BF16 original |
 |---|---|---|
-| Perplexity (menor = mas cercano) | 1,3651 | 1,3586 (+0,5 %) |
-| Acuerdo top-1 siguiente token | 97,3 % | 99,4 % |
-
-Estas metricas miden fidelidad al modelo base, no rendimiento en tareas absolutas.
+| Perplejidad (menor = mas cercano) | 1,3651 | 1,3586 (+0,5%) |
+| Concordancia top-1 de siguiente token | 97,3% | 99,4% |
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: ~29,1 GB solo de pesos en FP8; con KV-cache BF16 y contexto moderado, se recomienda una GPU con 40-48 GB de VRAM. Con `--kv-cache-dtype fp8` la KV-cache se reduce aproximadamente a la mitad, facilitando contextos largos o batches grandes.
-- GPU recomendadas: NVIDIA A100 40/80 GB, H100, H200 o RTX 6000 Ada/Blackwell de 48 GB. En consumer: una RTX 4090 (24 GB) no basta para los pesos completos; seria necesario offload o no es viable segun la informacion disponible.
-- Consumer GPU: no cabe completo en GPUs de 24 GB; viable en GPUs de 32 GB solo si se gestiona cuidadosamente la KV-cache (por ejemplo, FP8 y contexto reducido), aunque no esta documentado oficialmente.
-- Despliegue: vLLM (recomendado y objetivo de la cuantizacion, formato compressed-tensors `FP8_DYNAMIC`); llama.cpp y Ollama no son compatibles con este formato segun la informacion disponible. Requiere transformers con soporte de `qwen3_5` y compressed-tensors.
-- Latencia y throughput: no disponibles; la cabecera MTP sugiere aceleracion de decodificacion, pero no hay cifras publicadas.
+- VRAM estimada para inferencia: los pesos ocupan 31,2 GB; hay que sumar la cache KV (crece con la longitud de contexto y las peticiones concurrentes) y unos pocos GB para activaciones y CUDA graphs.
+- GPU recomendadas: NVIDIA Turing (sm75, p. ej. T4) o superior. Las matematicas FP8 nativas requieren Ada, Hopper o Blackwell (sm89+), como L40S, H100 o B200. En Turing y Ampere, vLLM cambia automaticamente a FP8 solo de pesos. V100 (sm70) no es compatible.
+- Cabe en GPU de consumo: no hay confirmacion en la informacion proporcionada; con 31,2 GB de pesos no cabe en GPUs de consumo de 24 GB sin particionado ni cuantizacion adicional.
+- Opciones de despliegue: vLLM (runtime probado, 0.32.0; la arquitectura esta en vLLM >= 0.17.0) y transformers (>=5.2.0 con compressed-tensors >=0.15.0). No se mencionan llama.cpp, Ollama ni TGI.
+- Latencia y throughput: no disponibles en la informacion proporcionada. Solo se ejecuto en B200 segun el autor.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Cuantizacion | Multimodal | Contexto | Licencia |
-|---|---|---|---|---|---|
-| axteam/Qwen3.8-27B-FP8-dynamic | 27,78 B (denso) | FP8 dinamico W8A8 | Si (vision) | no disponible (ejemplos con 32K) | Apache-2.0 |
-| Qwen/Qwen3.8-27B (original) | 27,78 B (denso) | BF16 | Si (vision) | no disponible | Apache-2.0 |
-| Qwen3-32B | 32,8 B (denso) | BF16 y cuantizaciones comunitarias | No (solo texto) | 32K (documentado para Qwen3) | Apache-2.0 |
-| Qwen3-30B-A3B | 30,5 B (MoE, 3,3 B activos) | BF16 y cuantizaciones comunitarias | No (solo texto) | 32K (documentado para Qwen3) | Apache-2.0 |
+Comparacion con las variantes de cuantizacion del mismo modelo base reportadas por el autor:
 
-Frente al original BF16, esta version ofrece el mismo comportamiento con ~29,1 GB en disco y fidelidad del 97,3 % top-1. Frente a Qwen3-30B-A3B (MoE), este modelo denso tiene mayor coste por token pero mayor ancho de computo por paso; los datos de contexto y benchmarks de los alternativos se indican segun documentacion publica de la familia Qwen3 y pueden no coincidir exactamente con la generacion Qwen3.8.
+| Modelo | Parametros | Contexto | Media de benchmarks | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| Qwen3.8-27B-FP8-dynamic (este) | 27,8 B | no disponible | 69,87 (101,6%) | Apache-2.0 | Hugging Face |
+| Qwen3.8-27B AWQ-8bit | 27,8 B (aprox.) | no disponible | 69,01 (100,3%) | Apache-2.0 | Hugging Face |
+| Qwen3.8-27B NVFP4 | 27,8 B (aprox.) | no disponible | 64,90 (94,4%) | Apache-2.0 | Hugging Face |
+| Qwen3.8-27B AWQ-4bit | 27,8 B (aprox.) | no disponible | 70,12 (102,0%) | Apache-2.0 | Hugging Face |
+
+No se dispone de datos para comparar con modelos de otros desarrolladores de la misma categoria en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- Sesgos conocidos: no disponibles; hereda los del modelo base Qwen3.8-27B, cuya documentacion de sesgos no esta incluida en la informacion proporcionada.
-- Riesgo de alucinacion: inherente a todo LLM; la cuantizacion FP8 introduce una desviacion minima (acuerdo top-1 del 97,3 % frente al original), pero no la elimina.
-- Limitaciones de idioma: no hay lista oficial de idiomas soportados; el conjunto de evaluacion interno cubre ingles y coreano.
-- La cuantizacion es PTQ sin calibracion con datos; en tareas muy sensibles a precision conviene validar contra el original BF16.
-- El formato compressed-tensors `FP8_DYNAMIC` esta pensado para vLLM en hardware con soporte FP8 (Hopper/Ada o superior); la compatibilidad con otros runtimes no esta documentada.
-- El modo thinking esta activado por defecto, lo que aumenta la longitud de las respuestas y el consumo de tokens; hay que desactivarlo explicitamente si no se desea.
-- Licencia Apache-2.0: sin restricciones relevantes para uso comercial, respetando los terminos de la licencia original de Qwen.
-- Descargas muy bajas (39) y sin validacion comunitaria amplia: es una cuantizacion de terceros (axteam), no oficial de Qwen.
+- La correccion de configuracion del 2026-11-02 es critica: las descargas anteriores a esa fecha (revision `6a6dba4`) cargan mal los pesos de vision en vLLM 0.32 y producen respuestas incorrectas con imagenes. Es necesario descargar de nuevo `config.json`.
+- La cuantizacion FP8 puede degradar ligeramente tareas no cubiertas por los benchmarks; la fidelidad medida es del 97,3% en concordancia top-1, no del 100%.
+- Los resultados de MMLU usan la variante generativa de lm-eval y no son directamente comparables con puntuaciones obtenidas por log-likelihood.
+- Sesgos conocidos del modelo base: no disponibles en la informacion proporcionada.
+- Riesgo de alucinacion: inherente a los modelos de lenguaje; no cuantificado en la informacion disponible.
+- Idiomas soportados: no disponibles; solo se evidencia evaluacion en ingles y coreano.
+- Restricciones de licencia: Apache-2.0 permite uso comercial, pero conviene revisar el fichero LICENSE del modelo base enlazado por el autor.
+- Requiere versiones muy concretas de dependencias (vLLM 0.32.0, torch 2.13 con CUDA 13.0, transformers >=5.16.1,<5.20 y compressed-tensors 0.17.0); no se debe actualizar compressed-tensors por separado.
+- Solo se ha probado en B200; el comportamiento en otras GPUs no esta verificado experimentalmente por el autor.
 
 ## Enlaces
 
-- Modelo cuantizado: https://huggingface.co/axteam/Qwen3.8-27B-FP8-dynamic
+- Modelo en Hugging Face: https://huggingface.co/axteam/Qwen3.8-27B-FP8-dynamic
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3.8-27B/blob/main/LICENSE
-- Paper, blog oficial o demos: no disponibles en la informacion proporcionada.
+- lm-evaluation-harness: https://github.com/EleutherAI/lm-evaluation-harness

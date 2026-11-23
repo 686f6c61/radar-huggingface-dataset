@@ -2,51 +2,51 @@
 
 ## Resumen
 
-Gryphe-Gemma-4-31B-StyleTune-GGUF es una cuantización en formato GGUF del modelo Gryphe/Gemma-4-31B-StyleTune, publicada por el usuario dexgeh. El modelo base es un ajuste de estilo (style-tune) sobre una variante Gemma 4 de 31B parámetros, orientado a generación conversacional, instrucciones y escritura creativa. Esta publicación concreta no aporta pesos nuevos: redistribuye el modelo base en cuantizaciones GGUF optimizadas para inferencia local con llama.cpp.
+Gryphe-Gemma-4-31B-StyleTune-GGUF es una cuantización en formato GGUF del modelo Gryphe/Gemma-4-31B-StyleTune, publicada por el usuario dexgeh en Hugging Face. Se trata de un derivado de la familia Gemma 4 de Google, afinado por Gryphe (autor conocido en la comunidad por sus variantes orientadas a escritura creativa y roleplay) para mejorar el estilo conversacional y la generación literaria. Esta versión concreta no introduce ningún entrenamiento adicional: es únicamente un reempaquetado en cuantizaciones personalizadas para su uso con llama.cpp y herramientas compatibles.
 
-El interés de esta ficha reside en que ofrece una vía práctica para ejecutar un modelo de aproximadamente 32.100 millones de parámetros en hardware de consumo o estaciones de trabajo con GPU única, gracias a cuantizaciones selectivas por tensor que preservan en alta precisión las capas sensibles (normalizaciones, embeddings, atención) y comprimen las capas FFN. El autor documenta dos recetas propias (MY-Q4_K_XL de ~20 GB y MY-Q6_K_XL de ~28 GB) generadas con llama-quantize a partir de los pesos BF16 de bartowski.
+El modelo base cuenta con 32.106.631.740 parámetros (aproximadamente 32,1 mil millones), lo que lo sitúa en la gama alta de modelos densos de tamaño medio-grande. El repositorio ocupa 48,1 GB, coherente con un conjunto de cuantizaciones que incluyen desde formatos de alta precisión hasta variantes Q4 y Q6 optimizadas manualmente por el autor del reempaquetado. La licencia declarada es Apache 2.0, lo que facilita su uso comercial sin restricciones adicionales más allá de las obligatorias de atribución.
 
-La licencia declarada es Apache 2.0, lo que facilita el uso comercial, aunque conviene verificar la licencia del modelo base original de Gemma, ya que las condiciones de la familia Gemma pueden imponer restricciones adicionales que prevalezcan sobre la licencia declarada en esta cuantización.
+La relevancia de esta ficha radica en que ofrece una vía práctica para ejecutar un modelo de 31B con calidad de escritura creativa en hardware de consumo o en servidores modestos, mediante cuantizaciones GGUF que reducen el peso a rangos de 20-28 GB. Es una opción interesante para desarrolladores que necesitan un modelo conversacional con matices estilísticos y no quieren depender de infraestructura de GPU de datacenter.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (familia Gemma 4, según tags del modelo base) |
+| Arquitectura | Transformer denso (familia Gemma 4, según modelo base; detalles específicos no disponibles) |
 | Parametros totales | 32.106.631.740 |
-| Parametros activos | no disponible (no se indica que sea MoE) |
+| Parametros activos | no disponible (modelo denso, no MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | GGUF: MY-Q4_K_XL (~20 GB), MY-Q6_K_XL (~28 GB); pesos fuente BF16 |
-| Idiomas soportados | no disponible |
+| Tipos de cuantizacion | GGUF: Q8_0, Q6_K (variante MY-Q6_K_XL, ~28 GB), Q4_0 (variante MY-Q4_K_XL, ~20 GB); el repo incluye además otras cuantizaciones estándar |
+| Idiomas soportados | no disponibles (el modelo base Gemma suele ser multilingüe, pero no se documenta en esta ficha) |
 | Licencia | apache-2.0 |
-| Formato de pesos | GGUF (safetensors en el modelo base) |
+| Formato de pesos | GGUF |
 
 ## Arquitectura y entrenamiento
 
-El modelo base Gryphe/Gemma-4-31B-StyleTune es un ajuste de estilo sobre una variante Gemma 4 de 31B parámetros. Los tags de la model card indican naturaleza conversacional, instruct y de escritura creativa, lo que sugiere un fine-tuning orientado a tono, prosa y diálogo más que a tareas de razonamiento puro. No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas de RLHF o DPO en el ajuste de estilo.
+La arquitectura subyacente corresponde al modelo base Gryphe/Gemma-4-31B-StyleTune, que a su vez deriva de la familia Gemma 4 de Google. Se trata de un transformer denso con aproximadamente 32,1 mil millones de parámetros. El sufijo "StyleTune" indica un ajuste fino orientado a estilo, típicamente mediante SFT (supervised fine-tuning) sobre datasets de escritura creativa, narrativa y diálogo, aunque los detalles exactos del dataset, número de tokens y metodología (RLHF, DPO, etc.) no están documentados en la información disponible.
 
-Esta publicación es exclusivamente una cuantización. El autor parte de los pesos BF16 de bartowski/Gryphe_Gemma-4-31B-StyleTune-GGUF y aplica llama-quantize con una política de tipos por tensor: mantiene en F32 las normalizaciones, layer_output_scale y rope_freqs, asigna Q6_K a las proyecciones de atención (k, q, output, v), a las FFN (up, down, gate) y a token_embd en la variante MY-Q4_K_XL; en la variante MY-Q6_K_XL aplica Q4_0 a atención, FFN y embeddings. Esta estrategia mixta busca preservar calidad en capas críticas mientras reduce el tamaño total. No se documentan innovaciones arquitectónicas propias (decodificación especulativa, atención lineal, etc.).
+Esta publicación concreta no entrena el modelo: parte de los pesos BF16 de bartowski/Gryphe_Gemma-4-31B-StyleTune-GGUF y aplica cuantización con `llama-quantize`. El autor define dos recetas personalizadas: una Q6_K_XL que mantiene normas y tensores de escala en F32 y asigna Q6_K a atención, FFN y embeddings (resultado ~28 GB), y una Q4_K_XL que usa Q4_0 en esos mismos bloques (resultado ~20 GB). Ambas preservan el tensor de salida y usan `--leave-output-tensor` para evitar degradar la capa final. Esta estrategia de cuantización selectiva busca preservar calidad en capas sensibles (normalizaciones, rope, output) mientras reduce el peso en los bloques de mayor tamaño.
 
 ## Capacidades
 
-- Generación de texto conversacional multi-turno, orientada a diálogo natural.
-- Seguimiento de instrucciones (instruct) para tareas guiadas por prompt.
-- Escritura creativa: narrativa, prosa estilizada y generación literaria, según los tags del modelo base.
-- Ajuste de estilo (style-tune): el modelo está entrenado para adoptar un tono y registro concretos definidos por Gryphe.
-- Soporte de tool calling / function calling: no disponible en la información proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
-- Capacidades multilingües: no disponible en la información proporcionada.
-- Capacidades especiales (thinking mode, visión, audio): no disponible en la información proporcionada.
+- Generación de texto conversacional multi-turno, orientada a diálogo instructivo.
+- Escritura creativa: narrativa, ficción, roleplay y estilización literaria (razón principal del ajuste StyleTune).
+- Razonamiento general y respuesta a instrucciones (hereda capacidades del modelo base Gemma 4).
+- Capacidades multilingües: no documentadas explícitamente en esta ficha; dependen del modelo base.
+- Soporte de tool calling / function calling: no documentado en la información disponible.
+- Soporte de agentes y razonamiento multi-paso: no documentado.
+- Modo thinking, visión o audio: no documentado.
+- Compatible con endpoints (tag `endpoints_compatible`) y con el ecosistema llama.cpp.
 
 ## Casos de uso
 
-- Escritura creativa asistida: el modelo puede generar narrativa, diálogos y prosa estilizada gracias a su ajuste específico de estilo, adecuado para autores que buscan un tono concreto en borradores y variaciones.
-- Asistente conversacional local: con ~20 GB en MY-Q4_K_XL, puede desplegarse en una GPU de 24 GB para chatbots de escritorio o prototipos sin depender de la nube.
-- Generación de contenido editorial: redacción de artículos, guiones o ficción con un registro controlado, aprovechando el style-tune del modelo base.
-- Prototipado de aplicaciones de chat: integración vía llama.cpp u Ollama para validar flujos conversacionales antes de migrar a modelos mayores o a APIs.
-- Investigación sobre cuantización: las recetas MY-Q4_K_XL y MY-Q6_K_XL documentadas permiten estudiar el impacto de políticas de tipos por tensor en la calidad de salida frente al BF16 original.
-- Despliegue en estaciones de trabajo con GPU única: la variante Q6_K_XL (~28 GB) encaja en GPUs de 32 GB o superiores, ofreciendo mayor fidelidad que la Q4 para tareas sensibles al estilo.
-- Fine-tuning posterior o adaptación de dominio: al estar en GGUF, sirve como referencia de inferencia, aunque para reentrenamiento conviene partir del modelo base en safetensors.
+- Escritura creativa asistida: el ajuste StyleTune está específicamente orientado a generar prosa con estilo literario, por lo que encaja en herramientas de ayuda a novelistas, guionistas o generadores de ficción interactiva.
+- Roleplay y chatbots de personaje: la cuantización Q4_K_XL (~20 GB) permite desplegar un modelo de 31B en una sola GPU de 24 GB, habilitando asistentes conversacionales con personalidad y contexto largo en entornos de consumo.
+- Generación de contenido editorial: borradores de artículos, correos y textos de marketing donde se prioriza calidad estilística sobre velocidad extrema.
+- Prototipado local de asistentes conversacionales: mediante llama.cpp u Ollama, un equipo puede validar flujos de diálogo sin depender de APIs externas, gracias a la licencia Apache 2.0.
+- Investigación en estilometría y ajuste fino: sirve como punto de partida para estudiar cómo las cuantizaciones selectivas (Q6_K_XL vs Q4_K_XL) afectan a la calidad estilística de un modelo afinado.
+- Despliegue en servidores modestos: la variante Q4 (~20 GB) puede ejecutarse en GPUs de 24 GB (RTX 3090/4090) o en configuraciones CPU+GPU con llama.cpp, ofreciendo un modelo de 31B a coste reducido.
+- Fine-tuning posterior o destilación: al estar en GGUF no es directamente entrenable, pero los pesos BF16 del modelo base sí permiten ajustes adicionales para dominios específicos.
 
 ## Benchmarks y rendimiento
 
@@ -54,38 +54,36 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: ~20 GB para MY-Q4_K_XL y ~28 GB para MY-Q6_K_XL, más overhead de contexto KV cache (dependiente de la longitud de contexto, no disponible).
-- GPU recomendadas: A100 40/80 GB, H100, L40S 48 GB para las variantes de mayor precisión; RTX 4090 24 GB o RTX A6000 48 GB para la variante Q4.
-- Cabe en GPU de consumo: sí, la variante MY-Q4_K_XL (~20 GB) entra en RTX 4090 24 GB; la MY-Q6_K_XL (~28 GB) requiere GPUs de 32 GB o más (por ejemplo, RTX 5090 si dispone de esa VRAM, o A100 40 GB).
-- Opciones de despliegue: llama.cpp, Ollama, y servidores compatibles con GGUF; el tag endpoints_compatible sugiere compatibilidad con endpoints tipo OpenAI a través de herramientas de inferencia.
-- Latencia y throughput estimados: no disponibles en la información proporcionada.
+- VRAM estimada: ~28 GB para la variante MY-Q6_K_XL y ~20 GB para MY-Q4_K_XL (según el propio autor); el repositorio completo ocupa 48,1 GB.
+- GPU recomendadas: para Q6_K_XL, A100 40GB, H100, RTX A6000 (48 GB) o dos GPUs de 24 GB; para Q4_K_XL, una RTX 3090 o RTX 4090 de 24 GB es suficiente.
+- ¿Cabe en GPU de consumo? Sí: la variante Q4 (~20 GB) entra en RTX 3090/4090 (24 GB). La Q6 (~28 GB) no cabe en una sola GPU de consumo de 24 GB.
+- Opciones de despliegue: llama.cpp (formato nativo), Ollama, LM Studio, servidores compatibles con GGUF; el tag `endpoints_compatible` sugiere compatibilidad con endpoints de inferencia estándar.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Formato | Licencia | Notas |
+| Modelo | Parámetros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| dexgeh/Gryphe-Gemma-4-31B-StyleTune-GGUF | 32,1 B | no disponible | GGUF | apache-2.0 | Cuantización mixta MY-Q4_K_XL / MY-Q6_K_XL |
-| Gryphe/Gemma-4-31B-StyleTune (base) | 32,1 B | no disponible | safetensors | no disponible | Modelo original style-tune |
-| bartowski/Gryphe_Gemma-4-31B-StyleTune-GGUF | 32,1 B | no disponible | GGUF | no disponible | Cuantizaciones estándar de referencia |
-| Otros modelos Gemma de ~30B | no disponible | no disponible | varios | Gemma license | No se dispone de datos comparativos verificados |
-
-No se dispone de datos de rendimiento comparativo (benchmarks) entre estas variantes en la información proporcionada.
+| Gryphe-Gemma-4-31B-StyleTune-GGUF (este) | 32,1B | no disponible | Apache 2.0 | GGUF | Cuantización selectiva Q4/Q6, orientado a estilo |
+| Gryphe/Gemma-4-31B-StyleTune (base) | 32,1B | no disponible | Apache 2.0 (según tag) | safetensors/BF16 | Pesos completos, requiere ~64 GB en BF16 |
+| bartowski/Gryphe_Gemma-4-31B-StyleTune-GGUF | 32,1B | no disponible | Apache 2.0 | GGUF | Cuantizaciones estándar del mismo base |
+| Gemma 4 31B (familia base) | ~31B | no disponible | Apache 2.0 | safetensors/GGUF | Modelo original de Google sin ajuste de estilo |
 
 ## Limitaciones y advertencias
 
-- Sesgos conocidos: no documentados en la información proporcionada; al ser un style-tune sobre Gemma, hereda los sesgos del modelo base, no evaluados aquí.
-- Riesgo de alucinación: no cuantificado; los modelos conversacionales de este tamaño pueden generar contenido plausible pero incorrecto, especialmente en dominios factuales.
-- Limitaciones de contexto o idioma: la longitud de contexto y los idiomas soportados no están disponibles; no se debe asumir cobertura multilingüe sin verificación.
-- Restricciones de licencia: la cuantización declara Apache 2.0, pero el modelo base pertenece a la familia Gemma y puede estar sujeto a la Gemma Terms of Use; conviene revisar la licencia del modelo original antes de uso comercial.
-- Caveat de producción: las recetas de cuantización mixta del autor no han sido validadas con benchmarks públicos; la calidad frente al BF16 es incierta y debería evaluarse en el dominio de uso.
-- Popularidad y soporte: 29 descargas y 0 likes en el momento de la consulta, lo que indica escasa validación comunitaria.
-- Fecha de creación declarada (2026-10-30) y tags de "gemma4" deben tratarse con cautela; verificar la procedencia del modelo base antes de desplegarlo.
+- No hay información sobre sesgos del modelo base ni del ajuste StyleTune; se recomienda evaluar en el dominio de uso antes de producción.
+- Riesgo de alucinación inherente a modelos de esta escala; el ajuste creativo puede aumentar la propensión a generar contenido ficticio convincente pero inexacto.
+- Longitud de contexto no documentada: no se puede garantizar el rendimiento en ventanas largas sin pruebas propias.
+- Idiomas soportados no documentados; el comportamiento multilingüe depende del modelo base y no está verificado para esta cuantización.
+- Las cuantizaciones Q4_0 aplicadas a atención y FFN pueden degradar la calidad respecto a Q6_K o BF16; el autor no publica métricas comparativas.
+- Aunque la licencia es Apache 2.0, conviene verificar las condiciones del modelo base Gemma 4 de Google, que pueden incluir términos adicionales de uso aceptable.
+- El repositorio tiene pocas descargas (412) y ningún "like", lo que sugiere poca validación comunitaria; úsese con cautela en entornos críticos.
+- No es directamente entrenable en formato GGUF; para fine-tuning hay que recurrir a los pesos del modelo base.
 
 ## Enlaces
 
-- Hugging Face (esta cuantización): https://huggingface.co/dexgeh/Gryphe-Gemma-4-31B-StyleTune-GGUF
+- Hugging Face (este repositorio): https://huggingface.co/dexgeh/Gryphe-Gemma-4-31B-StyleTune-GGUF
 - Modelo base: https://huggingface.co/Gryphe/Gemma-4-31B-StyleTune
-- Pesos BF16 de origen: https://huggingface.co/bartowski/Gryphe_Gemma-4-31B-StyleTune-GGUF
-- llama.cpp (herramienta llama-quantize): https://github.com/ggerganov/llama.cpp
+- Cuantizaciones de referencia (bartowski): https://huggingface.co/bartowski/Gryphe_Gemma-4-31B-StyleTune-GGUF
+- llama.cpp (herramienta de cuantización e inferencia): https://github.com/ggerganov/llama.cpp
 - Ollama: https://ollama.com
-- No se han encontrado papers, blogs ni demos adicionales en la información proporcionada.

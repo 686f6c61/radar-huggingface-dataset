@@ -2,96 +2,98 @@
 
 ## Resumen
 
-Haas-ja-v1.0 es un modelo de reconocimiento automatico del habla (ASR) para japones desarrollado por Third Intelligence. Sigue el diseno Parakeet-TDT de NVIDIA: un codificador FastConformer de 24 capas con tamano oculto de 1.024 y un decodificador Token-and-Duration Transducer (TDT) cuya red de prediccion sustituye la LSTM habitual por dos capas de Kimi Delta Attention (KDA). El checkpoint original almacena los pesos en bfloat16 y se distribuye bajo licencia Apache 2.0.
+Haas-ja-v1.0 para LiteRT es la conversión optimizada del modelo de reconocimiento automático de voz (ASR) en japonés `third-intelligence/Haas-ja-v1.0`, publicada por la comunidad `litert-community`. El modelo original emplea una arquitectura FastConformer con decodificación TDT (Token-and-Duration Transducer) y capas de atención Kimi Delta Attention (KDA) en la red de predicción, orientada a transcripción de audio de 16 kHz. Esta versión traduce los pesos a formato TensorFlow Lite (`.tflite`) para su ejecución en dispositivos Android mediante LiteRT 2.3.0, con rutas específicas para NPU, GPU y CPU.
 
-La ficha que nos ocupa, `litert-community/Haas-ja-v1.0`, no es el modelo original sino una conversion del mismo a LiteRT (`.tflite`) realizada con litert-torch 0.9.4 y ai-edge-quantizer 0.10.0 para LiteRT 2.3.0, orientada a ejecucion en dispositivos Android con aceleracion por NPU, GPU y CPU. La conversion incluye grafos de codificador en int8 (para CPU) y float16 (para GPU y NPU) en tres ventanas de 10, 20 y 30 segundos, ademas del front end log-mel, el decodificador TDT cuantizado y el tokenizer SentencePiece original.
+La relevancia de esta ficha radica en que demuestra un caso real de despliegue de ASR de alta calidad en hardware móvil: sobre la NPU de un Galaxy S26 transcribe 184 veces más rápido que tiempo real, con una tasa de error de caracteres (CER estricta) del 3,7009 % en el conjunto de test japonés de FLEURS, frente al 3,6886 % de la referencia PyTorch en float32. Es decir, la cuantización y compilación apenas degradan la precisión mientras multiplican la velocidad.
 
-Su relevancia radica en que demuestra ASR japones de alta precision ejecutandose integramente en un telefono movil: en un Galaxy S26 los codificadores float16 alcanzan 134x tiempo real sobre NPU y los int8 46x sobre CPU, con un CER estricto del 3,7009 % en el conjunto de test FLEURS japones (650 enunciados), practicamente identico al 3,6886 % de la referencia float32 en PyTorch.
+El repositorio incluye variantes del encoder para ventanas de 10, 15, 20 y 30 segundos, en int8 (CPU) y float16 (GPU/NPU), además de un front-end log-mel, el decodificador TDT y un runner de línea de comandos para Android. La licencia es Apache 2.0 y el modelo solo soporta japonés.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | FastConformer (24 capas, hidden size 1.024) + decodificador TDT con red de prediccion de 2 capas Kimi Delta Attention |
-| Parametros totales | no disponible |
+| Arquitectura | FastConformer con decodificador TDT (Token-and-Duration Transducer); red de predicción con dos capas Kimi Delta Attention (KDA) |
+| Parametros totales | no disponible (el encoder f16 en un solo fichero ocupa 1.335.000.480 bytes; el int8 de 30 s, 665.458.528 bytes) |
 | Parametros activos | no aplica (no es MoE) |
-| Longitud de contexto | ventanas de audio de hasta 30 s (480.000 muestras a 16 kHz); grafos de 10, 20 y 30 s |
-| Tipos de cuantizacion | int8 (pesos y activaciones en capas lineales y convoluciones 1x1 del subsampling; convoluciones depthwise y tablas de posicion relativa en float32) y float16 (pesos en capas lineales y convoluciones; entradas de LayerNorm reescaladas) |
-| Idiomas soportados | japones (ja) |
+| Longitud de contexto | ventanas de audio de hasta 30 s (480.000 muestras a 16 kHz); variantes de 10, 15, 20 y 30 s |
+| Tipos de cuantizacion | int8 (pesos y activaciones en capas lineales y convoluciones 1x1; depthwise y tablas de posición relativa en float32), float16 (pesos en lineales y convoluciones, LayerNorm rescalado para evitar desbordamiento) |
+| Idiomas soportados | japonés (ja) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | TFLite (`.tflite`) para LiteRT; el modelo base original usa `.nemo` en bfloat16 |
+| Formato de pesos | TensorFlow Lite (`.tflite`); tokenizador SentencePiece (`tokenizer.model`) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base sigue la receta Parakeet-TDT de NVIDIA: un codificador FastConformer de 24 capas con dimension oculta de 1.024 y un decodificador Token-and-Duration Transducer que predice simultaneamente tokens y duraciones, lo que permite decodificacion no autorregresiva por saltos. La innovacion principal respecto al TDT original es la red de prediccion, compuesta por dos capas de Kimi Delta Attention en lugar de una LSTM, lo que facilita el mantenimiento de estado entre pasos y su exportacion a grafos moviles.
+El modelo base es un FastConformer de reconocimiento de voz en japonés con decodificación TDT, una variante de transducer que predice conjuntamente tokens y duraciones. La red de predicción incorpora dos capas de Kimi Delta Attention (KDA), un mecanismo de atención lineal recurrente. El pipeline completo es: audio mono a 16 kHz, troceado en ventanas de 30 s (480.000 muestras), front-end log-mel (pre-énfasis 0,97, STFT de 512 puntos, ventana de 400 muestras, salto de 160, 128 bins mel, normalización por bin sobre frames válidos), encoder y decodificación TDT greedy.
 
-La conversion a LiteRT reutiliza el codigo de generacion de grafos de `litert-community/parakeet-ultra`, plegando la escala de entrada del codificador (32) en la capa lineal del subsampling. El front end log-mel reproduce el `AudioToMelSpectrogramPreprocessor` de NeMo tal como lo configura el checkpoint: pre-enfasis 0,97, STFT de 512 puntos, ventana de 400 muestras, hop de 160, 128 bins mel, logaritmo con guarda 2^-24 y normalizacion por bin sobre los frames validos, usando los valores de ventana y banco de filtros almacenados en el checkpoint. No se dispone de informacion sobre el volumen ni la composicion del dataset de entrenamiento, ni sobre si se aplicaron tecnicas de RLHF o DPO.
+La conversión se realizó con `litert-torch` 0.9.4 para LiteRT 2.3.0. Cada grafo del encoder contiene el encoder completo; las distintas longitudes de ventana solo evitan el trabajo de padding en audio corto. Según la model card, en float32 las variantes de ventana produjeron los mismos tokens que la referencia PyTorch en las 650 utterances de FLEURS (131/489/30 en los grafos de 10/20/30 s, y 351 de las 489 que caben en el grafo de 15 s). No se detallan en la información disponible el número de tokens de entrenamiento ni la composición del dataset original, ni si hubo RLHF o DPO.
 
 ## Capacidades
 
-- Transcripcion de voz a texto en japones a partir de audio mono a 16 kHz.
-- Procesamiento por ventanas de hasta 30 s, con grafos especificos de 10, 20 y 30 s que evitan el trabajo de padding en audios cortos.
-- Decodificacion greedy TDT con prediccion conjunta de tokens y duraciones.
-- Ejecucion en dispositivo (on-device) en Android mediante LiteRT, con backends NPU, GPU y CPU.
-- Front end log-mel integrado como grafo TFLite independiente, sin dependencias de NeMo en tiempo de inferencia.
-- Tokenizacion SentencePiece compatible byte a byte con la del modelo original.
-- No soporta tool calling, agentes, vision ni audio mas alla del ASR; no dispone de modo thinking.
+- Reconocimiento automático de voz (ASR) en japonés a partir de audio mono de 16 kHz.
+- Transcripción de audio largo mediante troceado en ventanas fijas de 30 s, con unión de textos sin separador.
+- Ejecución en tres backends: NPU (Qualcomm SM8850, compilado con QAIRT 2.50.0.260828), GPU y CPU, con ficheros específicos por backend.
+- Ejecución en CPU de escritorio desde Python, además de Android.
+- Selección automática de bucket por longitud de ventana (10, 15, 20 o 30 s) para minimizar el cómputo de padding.
+- Front-end log-mel autocontenido en TFLite, sin dependencia de NeMo en tiempo de inferencia.
+- No soporta tool calling, agentes, visión ni audio más allá de la transcripción; no es un modelo generativo de propósito general.
 
 ## Casos de uso
 
-- Subtitulado y transcripcion en tiempo real en aplicaciones Android: los codificadores float16 sobre NPU transcriben 134x mas rapido que tiempo real en un Galaxy S26, lo que permite procesar audio en directo por ventanas de 30 s sin conexion.
-- Dictado por voz offline en moviles: el conjunto int8 (1,94 GB con mel y decodificador) corre a 46x tiempo real sobre CPU, adecuado para teclados y asistentes que deben funcionar sin red.
-- Transcripcion de reuniones y notas de voz: la segmentacion en ventanas de 30 s y la union de textos sin separador permiten procesar grabaciones largas de forma secuencial en el dispositivo.
-- Indexacion y busqueda de archivos de audio japoneses: al ejecutarse localmente, permite generar transcripciones masivas sin enviar datos a servicios en la nube, relevante por privacidad.
-- Accesibilidad para personas con discapacidad auditiva: generacion de subtitulos en directo en terminales Android con aceleracion NPU/GPU.
-- Prototipado e investigacion en ASR japones: la licencia Apache 2.0 y la disponibilidad de grafos separados (mel, codificador, decodificador) facilitan experimentos con cuantizacion y comparacion de backends.
-- Integracion en pipelines de evaluacion: el runner de linea de comandos (`haas_asr_runner.cc`) y `tdt_text.py` permiten medir CER sobre corpus como FLEURS de forma reproducible.
+- Transcripción de voz en tiempo real en Android: el modelo corre a 184x tiempo real en la NPU de un Galaxy S26 (63x en GPU, 46x en CPU), lo que permite subtitulado en directo de conversaciones sin enviar audio a la nube.
+- Dictado por voz en aplicaciones móviles: con ventanas de 10 s y el encoder int8 (616 MB) se puede ofrecer dictado offline en dispositivos de gama alta sin conexión.
+- Subtitulado de reuniones y notas de voz: el troceado en ventanas de 30 s y la unión de textos permiten procesar grabaciones largas por bloques, con la salvedad de que los cortes son fijos y no en pausas.
+- Asistentes de voz embebidos para japonés: la baja latencia en NPU y el front-end mel incluido simplifican la integración en pipelines de comandos de voz.
+- Transcripción por lotes en servidor con CPU: los ficheros int8 (hasta 665 MB para 30 s) permiten desplegar en CPU sin GPU, con el runner de escritorio vía Python.
+- Investigación en eficiencia de ASR: la comparación entre variantes int8 y f16 con la referencia PyTorch (CER 3,7009 % frente a 3,6886 %) sirve como caso de estudio de cuantización en transductores.
+- Prototipado de aplicaciones de accesibilidad: transcripción offline de audio para personas con discapacidad auditiva en dispositivos Android.
 
 ## Benchmarks y rendimiento
 
-| Metrica | Valor | Entorno |
-|---|---|---|
-| CER estricto (FLEURS ja, 650 enunciados) | 3,7009 % | Galaxy S26, NPU, codificador float16 |
-| CER estricto (referencia) | 3,6886 % | PyTorch float32, mismo audio |
-| Velocidad relativa | 134x tiempo real | Galaxy S26, NPU, float16, pipeline host activo |
-| Velocidad relativa | 63x tiempo real | Galaxy S26, GPU, float16, serie en telefono caliente |
-| Velocidad relativa | 46x tiempo real | Galaxy S26, CPU, int8, serie en telefono caliente |
-| CER reportado por terceros | 6,12 % | Modelo original, fuente externa (tech-insider.org) |
+| Metrica | Valor |
+|---|---|
+| CER estricta en FLEURS japonés (NPU) | 3,7009 % |
+| CER estricta en FLEURS japonés (PyTorch float32) | 3,6886 % |
+| Velocidad en NPU (Galaxy S26) | 184x tiempo real |
+| Velocidad en GPU (Galaxy S26) | 63x tiempo real |
+| Velocidad en CPU (Galaxy S26) | 46x tiempo real |
+| Utterances evaluadas | 650 (la más larga, 28,2 s) |
+
+No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K u otros) en la información disponible, ya que el modelo es exclusivamente de ASR.
 
 ## Requisitos de hardware
 
-- VRAM/RAM: el conjunto int8 ocupa 1,94 GB en disco (mel + codificador + decodificador); el conjunto float16 ocupa 3,67 GB.
-- Tamano por fichero: codificadores int8 de 616 MB (10 s), 641 MB (20 s) y 665 MB (30 s); codificadores float16 de 1,19 GB (10 s), 1,22 GB (20 s) y 1,24 GB (30 s); decodificador int8 de 6,5 MB; mel de 1,6 a 2,9 MB.
-- GPU recomendadas: no aplica para servidor; el objetivo son SoC moviles Android con NPU y GPU integradas (validado en Galaxy S26).
-- Cabe en dispositivos consumer moviles: si, con los grafos int8 en CPU o float16 en GPU/NPU.
-- Opciones de despliegue: LiteRT 2.3.0 mediante su API C (runner incluido `haas_asr_runner.cc` y `build_android.sh`); no esta pensado para vLLM, llama.cpp, Ollama ni TGI, que no soportan este formato.
-- Latencia y throughput: 134x, 63x y 46x tiempo real segun backend (NPU float16, GPU float16, CPU int8) en Galaxy S26; el rendimiento esta en ajuste continuo segun el autor.
+- VRAM/RAM estimada: 1,35 GB en NPU con el fichero único `sm8850`; 4,88 GB en NPU si se compilan los cuatro ficheros f16 en el teléfono; 3,67 GB en GPU (tres ficheros f16); 1,94 GB en CPU y escritorio (ficheros int8).
+- GPU recomendadas: no se especifican modelos de escritorio; en móvil se valida sobre Qualcomm SM8850 (Galaxy S26). Para NPU se requiere compilación específica con QAIRT 2.50.0.260828.
+- Cabe en GPU de consumo: no disponible la confirmación para RTX 4090 u otras; el encoder f16 de 30 s ocupa 1,24 GB, por lo que en teoría cabría en GPUs con 8 GB o más, pero no hay datos de rendimiento publicados para escritorio.
+- Opciones de despliegue: LiteRT 2.3.0 (C API) en Android mediante los runners `haas_asr_runner` y `haas_asr_runner_p8`; ejecución desde Python en CPU de escritorio. No se mencionan vLLM, llama.cpp, Ollama ni TGI, que no aplican a este formato.
+- Latencia y throughput: 184x tiempo real en NPU, 63x en GPU y 46x en CPU del Galaxy S26; no se publican latencias absolutas ni throughput en escritorio.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | CER japones | Licencia | Formato |
+| Modelo | Parametros | Contexto | CER FLEURS ja | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Haas-ja-v1.0 (LiteRT) | no disponible | ventanas de 30 s | 3,7009 % (NPU, FLEURS) | Apache 2.0 | TFLite |
-| third-intelligence/Haas-ja-v1.0 | no disponible | ventanas de 30 s | 3,6886 % (float32, FLEURS); 6,12 % reportado por terceros | Apache 2.0 | NeMo (.nemo) |
-| litert-community/parakeet-ultra | no disponible | ventanas de 30 s | no disponible (modelo para ingles) | no disponible | TFLite |
+| Haas-ja-v1.0 (LiteRT) | no disponible | ventanas de 30 s | 3,7009 % (NPU) | Apache 2.0 | Hugging Face, TFLite |
+| third-intelligence/Haas-ja-v1.0 (original) | no disponible | ventanas de 30 s | 3,6886 % (float32) | Apache 2.0 | Hugging Face, NeMo |
+| Alternativas ASR japonés (p. ej. Whisper) | no disponible en la información | no disponible | no disponible | no disponible | no disponible |
 
-No se dispone de datos de benchmarks de otros modelos ASR japoneses comparables en la informacion proporcionada.
+No se dispone en la información proporcionada de datos de benchmarks de modelos alternativos comparables, por lo que la comparativa se limita al modelo original frente a su conversión.
 
 ## Limitaciones y advertencias
 
-- Solo soporta japones; no es multilingue.
-- La segmentacion de audio largo se hace en cortes fijos de 30 s, no en pausas; el autor no ha medido el efecto en palabras que cruzan un corte (el codigo original `transcribe_longform` corta en puntos de silencio).
+- Solo soporta japonés; no hay capacidades multilingües.
+- El troceado de audio largo se hace en puntos fijos de 30 s, no en pausas; no se midió el efecto en palabras que cruzan un corte (el código original `transcribe_longform` corta en puntos silenciosos).
 - Las ventanas de menos de 320 muestras se descartan sin generar texto.
-- El CER de referencia se midio solo en enunciados de hasta 30 s (el mas largo de FLEURS es de 28,2 s), por lo que la precision en audio mas largo no esta validada.
-- Riesgo de alucinacion y errores en nombres propios, numeros y dominios especializados no cuantificado en la informacion disponible.
-- Los sesgos del modelo original no estan documentados en la informacion proporcionada.
-- La licencia Apache 2.0 permite uso comercial, pero el modelo base y la conversion son responsabilidad de sus respectivos autores; verificar la cadena de atribucion.
-- Las velocidades reportadas corresponden exclusivamente a los ficheros `.tflite` de este repositorio con la API C de LiteRT 2.3.0, no a LiteRT-LM ni a otras conversiones.
-- El rendimiento esta en proceso de ajuste segun el autor; las cifras pueden variar entre dispositivos y versiones de LiteRT.
+- Las rutas GPU, CPU y el script de escritorio no tienen par de 15 s: una ventana de más de 160.000 muestras pasa a 20 o 30 s, con más padding.
+- Riesgo de alucinación y errores en audio con ruido, acentos o dominios no representados; no se documentan sesgos específicos en la información disponible.
+- La ejecución en NPU requiere compilación específica para el SoC (SM8850) y QAIRT 2.50.0.260828; no es portable a otros aceleradores sin recompilar.
+- La licencia Apache 2.0 permite uso comercial, pero conviene verificar las condiciones del modelo base original.
+- El rendimiento en escritorio solo se valida en CPU vía Python; no hay datos de GPU de escritorio.
 
 ## Enlaces
 
-- Repositorio LiteRT: https://huggingface.co/litert-community/Haas-ja-v1.0
+- Modelo en Hugging Face: https://huggingface.co/litert-community/Haas-ja-v1.0
 - Modelo base original: https://huggingface.co/third-intelligence/Haas-ja-v1.0
-- Conversion de referencia (parakeet-ultra): https://huggingface.co/litert-community/parakeet-ultra
-- Analisis externo con CER del 6,12 %: https://tech-insider.org/haas-ja-v1-0-japanese-asr-6-12-percent-cer-open-model-2026/
+- LiteRT: https://ai.google.dev/edge/litert
+- litert-torch: https://github.com/google-ai-edge/litert-torch
+- NeMo (front-end AudioToMelSpectrogramPreprocessor): https://github.com/NVIDIA/NeMo
+- QAIRT (Qualcomm AI Runtime): https://www.qualcomm.com/developer/software/qualcomm-ai-engine-direct

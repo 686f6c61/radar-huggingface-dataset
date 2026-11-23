@@ -2,92 +2,90 @@
 
 ## Resumen
 
-On the way (identificador RANITBAG/on_the_way) es un modelo multimodal publicado en Hugging Face por el usuario RANITBAG, distribuido bajo licencia Apache 2.0 y etiquetado con el pipeline de generación de texto. La model card y las etiquetas del repositorio lo asocian al proyecto MiniMind-O (etiquetas minimind-o, minimind, omni, multimodal), lo que lo sitúa en la familia de modelos ómnimodales de pequeño tamaño orientados a conversación. Cubre modalidades declaradas de texto, imagen (image-to-text) y audio (text-to-speech y audio-to-audio), y admite los idiomas chino (zh) e inglés (en).
+Rivinity es un proyecto de modelo de lenguaje decoder-only multilingue orientado a inferencia en CPU, desarrollado por el usuario RANITBAG. Se distribuye bajo licencia Apache-2.0 y su repositorio ocupa 0,6 GB. A pesar de su etiquetado como modelo de generacion de texto, la model card es explicita: se encuentra en fase de "pre-training hardening" y **el modelo no ha sido entrenado**. Los pesos publicados son de inicializacion aleatoria, por lo que cualquier salida carece de calidad util.
 
-El modelo es relevante para quienes buscan alternativas compactas y permisivas para experimentación multimodal: el repositorio ocupa 0,6 GB, una cifra compatible con modelos pequeños que pueden moverse en hardware de consumo. Sin embargo, la información pública disponible es mínima: no se publican en la model card datos de arquitectura, número de parámetros, longitud de contexto, dataset de entrenamiento ni resultados de evaluación.
+La arquitectura si esta definida y bloqueada (V1): 8 capas, dimension oculta de 768, atencion con GQA (8 cabezas de consulta y 4 de clave-valor, head_dim 96), RoPE con theta 1.000.000 y una FFN de tipo MoE con 4 expertos y enrutamiento Top-1. El vocabulario es de 48.006 tokens y el contexto objetivo de configuracion es de 32.768 tokens, aunque el autor aclara que no es un contexto entrenado.
 
-La ficha que sigue se ha redactado exclusivamente a partir de los metadatos del repositorio y de la model card. Cualquier dato no confirmado se marca explícitamente como "no disponible", incluyendo las cifras de rendimiento y las especificaciones de arquitectura.
+Su relevancia actual es limitada como modelo y alta como andamiaje de ingenieria: incluye tokenizador multilingue, pipeline de entrenamiento conectado de extremo a extremo, subsistema de web grounding con RAG, contrato de generacion con presupuesto de tokens y 656 tests en CPU verificados. Es, por tanto, una base reproducible para quien quiera entrenar o auditar un LLM pequeno multilingue, no un modelo listo para produccion.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (etiquetado como omni/multimodal, sin detalle en la model card) |
-| Parámetros totales | no disponible (tamaño del repositorio: 0,6 GB) |
-| Parámetros activos | no disponible (no se indica si es MoE) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantización | no disponible |
-| Idiomas soportados | chino (zh) e inglés (en) |
-| Licencia | Apache 2.0 |
-| Formato de pesos | no disponible (librería declarada: transformers / pytorch) |
+| Arquitectura | Transformer decoder-only con MoE en la FFN (4 expertos, Top-1), GQA, SwiGLU, RoPE |
+| Parametros totales | no disponible (no publicado; repo de 0,6 GB incluye codigo, tests y tokenizador) |
+| Parametros activos | no disponible (MoE Top-1 sobre 4 expertos) |
+| Longitud de contexto | 32.768 tokens (objetivo de configuracion, no contexto entrenado) |
+| Tipos de cuantizacion | no disponible (conversion GGUF con contrato de metadatos validado; runtime bloqueado) |
+| Idiomas soportados | en, hi, bn, ta, te, zh, ja, ko, ar, es, fr, de (12 declarados en la model card; bateria de tokenizador de 28 idiomas) |
+| Licencia | Apache-2.0 |
+| Formato de pesos | no disponible (pesos sin entrenar; soporte de conversion a GGUF en el repositorio) |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información detallada sobre la arquitectura interna del modelo. La model card únicamente remite al repositorio de GitHub del proyecto MiniMind-O y al informe técnico arXiv:2605.03937, sin describir la topología (transformer, MoE, SSM, híbrida), el número de parámetros ni la estrategia de atención. Las etiquetas declaradas (omni, multimodal, text-to-speech, audio-to-audio, image-to-text, minimind) apuntan a un modelo ómnimodal con entrada y salida en varias modalidades, pero no permiten confirmar detalles técnicos concretos.
+La arquitectura V1 bloqueada consta de 8 capas con dimension oculta 768. La atencion usa GQA con 8 cabezas de consulta y 4 de clave-valor, head_dim 96, con RMSNorm aplicado a consultas y claves. La posicion se codifica con RoPE theta 1.000.000. La FFN es un MoE de 4 expertos con enrutamiento Top-1 y expertos SwiGLU de dimension intermedia 2432. Los embeddings de tokens estan atados a la cabeza LM. El vocabulario T48 tiene 48.006 entradas (48.000 base mas 6 tokens de control con ids 48000-48005). Las clases se exponen en el paquete `rivinity` con `model_type: "rivinity"` y validacion en tiempo de construccion que rechaza combinaciones invalidas.
 
-Tampoco hay información verificable sobre el corpus de entrenamiento (número de tokens, composición, proporción por idioma), sobre la existencia de fases de ajuste fino alineado (RLHF, DPO u otras) ni sobre innovaciones técnicas específicas como decodificación especulativa o mecanismos de atención lineal. Todo ello debe considerarse "no disponible" a partir del material consultado.
+No ha habido entrenamiento real. El pipeline esta conectado de extremo a extremo (manifiesto, entrenamiento, checkpoint y reanudacion) sobre un fixture sintetico de 12 idiomas, pero el autor confirma que no existe ninguna ejecucion de entrenamiento con datos reales. Tampoco hay datos publicados sobre numero de tokens, composicion del corpus, RLHF o DPO. La unica evidencia a nivel de datos es la bateria multilingue del tokenizador (28 idiomas), que mide eficiencia de tokenizacion, no comprension. El soporte de `<think>` es gestion de formato y presupuesto de tokens, no una capacidad de razonamiento medida.
 
 ## Capacidades
 
-- Generación de texto conversacional: la etiqueta conversational y el pipeline text-generation indican uso orientado a diálogo.
-- Procesamiento de imagen: la etiqueta image-to-text indica capacidad declarada de describir o interpretar imágenes.
-- Síntesis de voz: la etiqueta text-to-speech apunta a generación de audio a partir de texto.
-- Procesamiento de audio: la etiqueta audio-to-audio sugiere transformación o respuesta en el dominio de audio.
-- Naturaleza ómnimodal: las etiquetas omni y multimodal indican integración de varias modalidades en un mismo modelo.
-- Multilingüismo limitado: los idiomas declarados son chino e inglés, sin constancia de otros.
-- Tool calling / function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Modo de razonamiento explícito (thinking mode): no disponible.
-- Capacidades de código y matemáticas: no disponible.
+- Generacion de texto autoregresiva con decodificacion greedy y por muestreo, cache KV y equivalencia entre streaming y no streaming (contrato verificado en tests).
+- Contrato de presupuesto de generacion con `max_total_tokens`, `max_thinking_tokens` y `max_answer_tokens`, mas alias heredados.
+- Tokenizacion multilingue para 12 idiomas declarados y bateria de eficiencia sobre 28 idiomas.
+- Subsistema de web grounding: crawler con HTTP de la biblioteca estandar y Crawl4AI opcional, politica SSRF, cache SQLite, sanitizador, enrutador y proveedores de busqueda.
+- RAG con contrato unificado de `Evidence` (local y web), capsulas, citas `[E#]` y estados de insuficiencia de evidencia.
+- Soporte de tool calling y agentes: no disponible como capacidad del modelo; el repositorio incluye herramientas web seguras, pero no hay funcionamiento de modelo entrenado.
+- Vision, audio o modo talker: no disponibles por diseno (modelo solo texto).
+- Razonamiento, codigo, matematicas y capacidades conversacionales reales: no disponibles, al no existir pesos entrenados.
 
 ## Casos de uso
 
-- Atención al cliente en chino e inglés: dado su carácter conversacional y sus dos idiomas declarados, puede emplearse para gestionar diálogos multi-turno en escenarios bilingües de soporte, siempre que se valide antes su calidad real de respuesta.
-- Descripción automática de imágenes: la capacidad image-to-text permite generar pies de foto, alt-text accesible o resúmenes de imágenes en catálogos y gestores documentales.
-- Accesibilidad y lectura en voz alta: la etiqueta text-to-speech habilita la conversión de texto en audio para lectores de pantalla, audiolibros o asistentes de voz.
-- Interfaces de voz conversacionales: la combinación de audio-to-audio con generación de texto permite construir prototipos de asistentes que reciben y devuelven voz.
-- Investigación en modelos ómnimodales de pequeño tamaño: al ocupar apenas 0,6 GB, resulta adecuado como banco de pruebas académico para estudiar el comportamiento de arquitecturas multimodales compactas bajo licencia permisiva.
-- Prototipado rápido en entornos con recursos limitados: su tamaño reducido permite experimentar en estaciones de trabajo o portátiles sin infraestructura de GPU de gran escala, siempre que se confirme compatibilidad con frameworks de inferencia habituales.
-- Enriquecimiento de bases de conocimiento multimodales: podría emplearse para etiquetar automáticamente imágenes y audio con descripciones textuales en pipelines de datos.
+- Base para entrenamiento desde cero de un LLM pequeno multilingue: la arquitectura bloqueada, el tokenizador T48 y el pipeline manifiesto-checkpoint permiten iniciar un preentrenamiento reproducible sin disenar la pila desde cero.
+- Investigacion sobre MoE de bajo numero de expertos: el diseno Top-1 con 4 expertos y SwiGLU permite estudiar enrutamiento, balanceo de carga y coste de activacion en un modelo que cabe en CPU.
+- Evaluacion de tokenizadores multilingues: la bateria de 28 idiomas y el informe `reports/multilingual_report.json` sirven para comparar eficiencia de tokenizacion entre familias linguisticas (indicas, sinicas, semiticas, europeas).
+- Prototipado de sistemas RAG con citas: el contrato `Evidence`, las capsulas y las citas `[E#]` permiten construir y testear una capa de grounding con estados de insuficiencia antes de disponer de un modelo entrenado.
+- Auditoria de seguridad en pipelines web: el modelo de amenazas, la politica SSRF y los tests de seguridad sirven como referencia para crawlers y herramientas web en agentes.
+- Verificacion de compatibilidad GGUF: el conversor y el contrato de metadatos permiten validar el formato de exportacion, aunque el runtime con llama.cpp esta bloqueado en el entorno del autor.
+- Docencia y formacion: los 656 tests en CPU y la documentacion de arquitectura, pipeline y grounding constituyen un material practico para explicar el ciclo de vida de un LLM.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible.
+No se han publicado resultados de benchmarks en la informacion disponible. El autor indica que las ejecuciones del framework de benchmarks estan etiquetadas como `FRAMEWORK_ONLY` y que no existen mediciones reales del modelo. No se deben interpretar como resultados de rendimiento.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible. El tamaño del repositorio (0,6 GB) sugiere que podría caber en GPU de consumo, pero no se confirma el tamaño real de los pesos ni el pico de memoria.
-- GPU recomendadas: no disponible.
-- Compatibilidad con GPU de consumo: probable por el tamaño del repositorio, sin confirmación oficial.
-- Opciones de despliegue: la librería declarada es transformers (PyTorch). No se documentan integraciones con vLLM, llama.cpp, Ollama o TGI.
-- Latencia y throughput: no disponible.
-- Requisito especial: la etiqueta custom_code indica que la carga del modelo puede requerir código personalizado (trust_remote_code), lo que debe tenerse en cuenta en despliegues de producción.
+- VRAM estimada: no disponible. Con 8 capas, hidden 768 y vocabulario 48.006, el modelo es de escala pequena y cabria con holgura en GPU de consumo, pero no hay recuento de parametros publicado para calcular cifras exactas.
+- GPU recomendadas: no disponible. El proyecto esta disenado como "CPU-first"; por tamano, una GPU de consumo moderna seria suficiente, pero no hay medicion que lo confirme.
+- Inferencia en CPU: es el objetivo declarado del proyecto; los 656 tests se ejecutan en CPU.
+- Opciones de despliegue: el paquete `rivinity` con `transformers`; conversion a GGUF validada a nivel de metadatos, con runtime en llama.cpp bloqueado y no probado. vLLM, TGI y Ollama no estan documentados.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Licencia | Estado |
 |---|---|---|---|---|
-| RANITBAG/on_the_way | no disponible | no disponible | Apache 2.0 | Hugging Face |
-| Modelos comparables | no disponible | no disponible | no disponible | no disponible |
+| Rivinity (RANITBAG/on_the_way) | no disponible | 32.768 (objetivo) | Apache-2.0 | Prototipo sin entrenar |
+| TinyLlama-1.1B | 1,1 B | 2.048 | Apache-2.0 | Entrenado y publicado |
+| Qwen2.5-0.5B | 0,5 B | 32.768 | Apache-2.0 | Entrenado y publicado |
+| SmolLM2-360M | 0,36 B | 8.192 | Apache-2.0 | Entrenado y publicado |
 
-No se dispone de datos suficientes para establecer una comparativa fiable con alternativas de la misma categoría. La model card remite al proyecto MiniMind-O, que sería la referencia natural de comparación, pero no se han aportado especificaciones ni resultados de evaluación de ninguno de los dos.
+La comparacion es estructural: Rivinity comparte categoria (modelo pequeno, licencia permisiva, contexto largo) con estos modelos, pero se diferencia en que incorpora un MoE Top-1 y en que no tiene pesos entrenados. No hay datos de rendimiento que permitan compararlo en tareas.
 
 ## Limitaciones y advertencias
 
-- Documentación extremadamente escasa: la model card no aporta especificaciones técnicas ni resultados de evaluación, lo que dificulta valorar su idoneidad para producción.
-- Riesgo de alucinación: no cuantificado, pero inherente a cualquier modelo generativo sin datos publicados de fiabilidad.
-- Sesgos conocidos: no documentados.
-- Limitación de idioma: solo se declaran chino e inglés; no hay constancia de soporte para castellano ni otras lenguas.
-- Contexto: se desconoce la longitud máxima de contexto, dato crítico para aplicaciones multi-turno o con documentos largos.
-- Código personalizado: la etiqueta custom_code implica posible necesidad de ejecutar código del autor (trust_remote_code), lo que introduce riesgo de seguridad en entornos no controlados.
-- Adopción nula: cero descargas y cero "me gusta" en el momento de la consulta, sin evidencia de uso en la comunidad.
-- Licencia: Apache 2.0 permite uso comercial, pero persisten las incógnitas sobre procedencia de datos de entrenamiento y posibles reclamaciones de terceros.
-- Fechas del repositorio: creado y actualizado el 2026-09-29, sin historial de versiones ni mantenimiento posterior documentado.
+- Pesos sin entrenar: todas las salidas son de calidad de inicializacion aleatoria. No debe usarse en produccion ni evaluarse como modelo funcional.
+- La capacidad multilingue es un objetivo de diseno con evidencia a nivel de tokenizador, no una capacidad medida del modelo.
+- El contexto de 32.768 tokens es un objetivo de configuracion, no un contexto entrenado; no hay validacion de atencion a larga distancia.
+- El soporte de `<think>` es gestion de formato y presupuesto, no razonamiento verificado.
+- La compatibilidad con llama.cpp esta bloqueada y no probada; el contrato GGUF solo cubre conversion y metadatos.
+- Riesgo de alucinacion y sesgos: no evaluables sin entrenamiento; no hay datos.
+- Limitaciones del subsistema web: limitacion de tasa por proceso, sin autenticacion ni cookies por diseno, y Crawl4AI lanza un navegador real cuando se habilita, lo que exige mantenerlo parcheado.
+- Licencia Apache-2.0 permite uso comercial, pero el autor advierte de revisar las licencias de corpus y datasets en `training/data_manifest.py` antes de cualquier redistribucion; no se incluye corpus de produccion.
+- Componentes heredados de un proyecto upstream estan en cuarentena en `legacy/` con atribucion; conviene revisarlos antes de reutilizar codigo.
 
 ## Enlaces
 
 - Hugging Face: https://huggingface.co/RANITBAG/on_the_way
-- Perfil del autor: https://huggingface.co/RANITBAG
-- Repositorio GitHub del proyecto: https://github.com/jingyaogong/minimind-o
-- Informe técnico: https://arxiv.org/abs/2605.03937
-- Otro repositorio del autor: https://huggingface.co/RANITBAG/gan
+- Crawl4AI (dependencia opcional): https://github.com/unclecode/crawl4ai
+- Documentacion interna citada en la model card: `docs/RIVINITY_ARCHITECTURE.md`, `docs/RIVINITY_MULTILINGUAL.md`, `docs/RIVINITY_WEB_GROUNDING.md`, `docs/RIVINITY_DATA_PIPELINE.md`, `docs/RIVINITY_PRETRAINING_READINESS.md`, `docs/RIVINITY_MIGRATION.md`, `docs/RIVINITY_REPO_FORENSIC_AUDIT.md`, `docs/RIVINITY_WEB_THREAT_MODEL.md`
+- Paper, blog o demo adicionales: no disponibles

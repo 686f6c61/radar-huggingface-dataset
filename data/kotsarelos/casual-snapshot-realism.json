@@ -39,31 +39,5 @@
   "renamed_to": "kstathop/Casual-Snapshot-Realism",
   "renamed_at": "2026-11-11T03:09:19.931Z",
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "InThinking",
-      "url": "https://inthinking.net/",
-      "snippet": "InThinking supports international schools with high quality professional development & interactive subject sites"
-    },
-    {
-      "title": "Krea2 RAW - Casual Snapshot Realism - krea2 | Krea 2 LoRA | Civitai",
-      "url": "https://civitai.red/models/2790570/krea2-raw-casual-snapshot-realism?modelVersionId=3144693",
-      "snippet": "Tired of the plastic, airbrushed, and overly stylized \"perfect AI\" look? This LoRA is designed specifically to inject authentic, casual smartphone photography characteristics into your generations. Trained natively on the Krea-2 RAW base model using high-resolution, naturally captioned amateur snapshots, it perfectly captures the micro-textures and beautiful imperfections of everyday phone ..."
-    },
-    {
-      "title": "Log in to the wiki - inthinking.net",
-      "url": "https://inthinking.net/login",
-      "snippet": "InThinking supports international schools with high quality professional development & interactive subject sites"
-    },
-    {
-      "title": "Krea2 RAW - Casual Snapshot Realism - V1 | TensorHub Art",
-      "url": "https://tensorhub.art/models/1023135750406799605",
-      "snippet": "Tired of the plastic, airbrushed, and overly stylized \"perfect AI\" look? This LoRA is designed specifically to inject authentic, casual smartphone photography characteristics into your generations. Trained natively on the Krea-2 RAW base model using high-resolution, naturally captioned amateur snapshots, it perfectly captures the micro-textures and beautiful imperfections of everyday phone ..."
-    },
-    {
-      "title": "Log in | InThinking",
-      "url": "https://student.thinkigcse.net/login",
-      "snippet": "InThinking IB Subject Sites offer a comprehensive range of resources for new & experienced IBDP & IGCSE teachers. Each site – …"
-    }
-  ]
+  "sources": []
 }

@@ -5,7 +5,7 @@
   "author": "paradoxailab",
   "url": "https://huggingface.co/paradoxailab/pwm-dyn-v0.4.1-pems08",
   "created_at": "2026-11-18T22:27:57.000Z",
-  "updated_at": "2026-11-18T22:27:59.000Z",
+  "updated_at": "2026-11-22T11:44:33.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "time-series-forecasting",
@@ -39,8 +39,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "PARADOXAIlabs/pwm-dyn-v0.4.1-pems08",
+  "renamed_at": "2026-11-23T11:34:45.194Z",
   "benchmarks": [],
   "sources": []
 }

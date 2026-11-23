@@ -5,7 +5,7 @@
   "author": "sergolsub",
   "url": "https://huggingface.co/sergolsub/mlx-elephant-v1-9B-4bit",
   "created_at": "2026-11-22T03:18:46.000Z",
-  "updated_at": "2026-11-22T03:18:46.000Z",
+  "updated_at": "2026-11-22T17:09:25.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -13,22 +13,26 @@
   "languages": [],
   "tags": [
     "mlx",
+    "safetensors",
+    "qwen3_5",
     "base_model:baselabs/elephant-1",
-    "base_model:finetune:baselabs/elephant-1",
+    "base_model:quantized:baselabs/elephant-1",
     "license:mit",
+    "8-bit",
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 65,
   "trending_score": 0,
-  "parameters": null,
-  "parameters_human": null,
-  "storage_bytes": 0,
-  "storage_human": null,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 7432316281,
+  "storage_human": "7.4 GB",
   "context_length": null,
   "base_model": "baselabs/elephant-1",
   "formats": [
-    "mlx"
+    "mlx",
+    "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
@@ -36,8 +40,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "sergolsub/elephant-v1-9B-MLX-4bit",
+  "renamed_at": "2026-11-23T12:17:55.065Z",
   "benchmarks": [],
   "sources": []
 }

@@ -5,7 +5,7 @@
   "author": "groxaxo",
   "url": "https://huggingface.co/groxaxo/Inkling-2-Mini-GPTQ-PRO-Selective-INT4",
   "created_at": "2026-11-22T05:08:31.000Z",
-  "updated_at": "2026-11-22T22:51:54.000Z",
+  "updated_at": "2026-11-23T00:10:29.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",

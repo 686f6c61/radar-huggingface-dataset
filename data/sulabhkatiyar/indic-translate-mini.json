@@ -5,7 +5,7 @@
   "author": "sulabhkatiyar",
   "url": "https://huggingface.co/sulabhkatiyar/indic-translate-mini",
   "created_at": "2026-11-22T17:18:45.000Z",
-  "updated_at": "2026-11-22T17:20:05.000Z",
+  "updated_at": "2026-11-23T09:48:29.000Z",
   "license": "upstream-data-licences",
   "license_family": "unknown",
   "pipeline_tag": "translation",
@@ -26,6 +26,7 @@
   ],
   "tags": [
     "onnx",
+    "indic-translate-mini",
     "translation",
     "indic",
     "int8",
@@ -42,6 +43,7 @@
     "mr",
     "as",
     "or",
+    "arxiv:2207.04672",
     "license:other",
     "region:us"
   ],

@@ -1,0 +1,54 @@
+{
+  "schema": 2,
+  "id": "Ronin48LLC/Lamarck-Inkling-2-Mini-Unbound",
+  "slug": "ronin48llc-lamarck-inkling-2-mini-unbound",
+  "author": "Ronin48LLC",
+  "url": "https://huggingface.co/Ronin48LLC/Lamarck-Inkling-2-Mini-Unbound",
+  "created_at": "2026-11-23T09:10:00.000Z",
+  "updated_at": "2026-11-23T09:10:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "lora",
+    "moe",
+    "inkling",
+    "text-generation",
+    "thinking",
+    "base_model:nokeepai/Inkling-2-Mini-Unbound",
+    "base_model:finetune:nokeepai/Inkling-2-Mini-Unbound",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 466407024,
+  "storage_human": "466 MB",
+  "context_length": null,
+  "base_model": "nokeepai/Inkling-2-Mini-Unbound",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Inkling 2 Mini | Hacker News",
+      "url": "http://go/v1/AaT5rSR9041tawQDYAHyNL9ybaaD3j-sn_-UIwdlgaJTkKSKIU6PdZJ62AR7YTiojzQl6N9uJu6LnDwyZIYTrvSO5cOU69V6je9wyjNI5qL7E7nQrIHXRnC5kysFQw7Vstb5_A-PR1drEqh0059SrboxnW7W1JA4WLo72I8SbLuAp73bTmol7KEsWs648CIxbqMFypG6hD89dWSVgX_2Dw",
+      "snippet": "Hope that folks find this model more amenable to local usage - the sizing was largely informed by what folks on this subreddit ask for the most haha · There are two particularly interesting aspects of this model for local users:"
+    }
+  ]
+}

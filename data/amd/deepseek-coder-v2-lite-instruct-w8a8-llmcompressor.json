@@ -5,7 +5,7 @@
   "author": "amd",
   "url": "https://huggingface.co/amd/DeepSeek-Coder-V2-Lite-Instruct-w8a8-llmcompressor",
   "created_at": "2026-11-22T09:36:51.000Z",
-  "updated_at": "2026-11-22T09:38:07.000Z",
+  "updated_at": "2026-11-23T06:05:37.000Z",
   "license": "deepseek-license",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

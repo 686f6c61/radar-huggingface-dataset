@@ -2,98 +2,104 @@
 
 ## Resumen
 
-Granite-4.0-h-350m es un modelo de lenguaje de 350 millones de parámetros desarrollado originalmente por IBM, aquí distribuido por la comunidad `litert-community` en formato LiteRT-LM (`.litertlm`) para inferencia en dispositivo (*on-device*) mediante el runtime LiteRT-LM de Google. Se trata de una conversión cuantizada del modelo base `ibm-granite/granite-4.0-h-350m`, no de un modelo nuevo, y su relevancia radica en que demuestra que arquitecturas híbridas modernas pueden ejecutarse en hardware de consumo y teléfonos móviles.
+Granite-4.0-h-350m es la variante más pequeña de la familia Granite 4.0 de IBM, un modelo de lenguaje de 350 millones de parámetros construido sobre una arquitectura híbrida que combina bloques Mamba2 (selective-scan) con bloques de atención con consultas agrupadas (GQA). Esta ficha concreta corresponde a la conversión del modelo original al formato LiteRT-LM (`.litertlm`), publicada por la comunidad `litert-community` para inferencia en dispositivo (*on-device*) mediante el runtime LiteRT-LM de Google.
 
-La arquitectura es híbrida: 28 bloques Mamba2 (selective-scan) intercalados con 4 bloques de atención con consultas agrupadas (GQA). Los bloques Mamba2 mantienen estado recurrente conv + SSM por capa en lugar de una caché KV creciente, por lo que el consumo de memoria se mantiene prácticamente plano respecto a la longitud de contexto; solo las 4 capas de atención conservan KV cache. Esta característica es lo que hace viable el despliegue en hardware con recursos limitados.
+El interés de esta versión no reside en el modelo base, sino en el empaquetado: ofrece tres ficheros optimizados para *edge* (fp16, int8 e int8 para GPU) que permiten ejecutar un LLM en teléfonos Android y en placas como Raspberry Pi 5 sin acceso a red. La arquitectura híbrida es clave aquí, porque los 28 bloques Mamba2 mantienen estado recurrente (conv + SSM) en lugar de una caché KV creciente, de modo que el consumo de memoria permanece prácticamente plano al aumentar el contexto; solo las 4 capas de atención conservan KV.
 
-El repositorio ofrece tres ficheros: fp16 (723 MB), int8 dinámico con pesos únicamente (436 MB) e int8 reexportado para GPU (481 MB). La verificación a nivel de logits contra la referencia en PyTorch es exacta en cada posición de decodificación (diferencia máxima por posición ≤ 3,9e-4, correlación 1,000000, top-1 idéntico). La licencia es Apache 2.0.
+La relevancia actual es doble: por un lado, valida que un modelo de 350M con licencia Apache 2.0 puede desplegarse en hardware de consumo con latencias medibles; por otro, documenta con transparencia los problemas de integración del runtime (reutilización de estado entre conversaciones, limitaciones del delegado GPU), lo que resulta útil para quien evalúe LiteRT-LM en producción.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
 | Arquitectura | Híbrida: 28 bloques Mamba2 (selective-scan) + 4 bloques de atención GQA |
-| Parametros totales | 350 millones (modelo base); parámetros activos no aplica (no es MoE) |
-| Parametros activos | no disponible (no es un modelo MoE) |
-| Longitud de contexto | no disponible en la información proporcionada |
-| Tipos de cuantizacion | fp16 (convs/SSM en fp32); int8 dinámico weight-only; int8 reexportado con activaciones fp32 para GPU |
-| Idiomas soportados | no disponible |
+| Parametros totales | 350M (modelo base); tamaño de repo 5,8 GB |
+| Parametros activos | No aplica (no es MoE) |
+| Longitud de contexto | No disponible en la información proporcionada |
+| Tipos de cuantizacion | fp16 (float-casting en lineales y embedding, convs/SSM en fp32); int8 dinámico weight-only (lineales y embedding, convs/SSM en float); int8 GPU con activaciones fp32 declaradas |
+| Idiomas soportados | No disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | `.litertlm` (LiteRT-LM); modelo base en safetensors |
-| Tamano de ficheros | fp16: 723 MB; int8: 436 MB; int8_gpu: 481 MB |
-| Tamano del repositorio | 5,8 GB |
-| Runtime | LiteRT-LM 0.15.0, 0.16.1, 0.17.1, 0.18.0 y 0.19.2 |
+| Formato de pesos | `.litertlm` (LiteRT-LM): `granite-4.0-h-350m_fp16.litertlm` (723 MB), `granite-4.0-h-350m_int8.litertlm` (436 MB), `granite-4.0-h-350m_int8_gpu.litertlm` (481 MB) |
 
 ## Arquitectura y entrenamiento
 
-El modelo emplea una arquitectura híbrida en la que 28 bloques Mamba2 (selective-scan) se intercalan con 4 bloques de atención con consultas agrupadas (GQA). Los bloques Mamba2 portan estado recurrente conv + SSM por capa en lugar de una caché KV que crece con el contexto, de modo que la memoria permanece casi constante al aumentar la longitud de la secuencia; solo las 4 capas de atención mantienen KV cache. Los buffers de estado conv/SSM de Mamba2 se enlazan mediante el mecanismo de *state binding* generalizado de LiteRT-LM 0.15 (`ExecutorMetadata`); la versión 0.14 del runtime no puede enlazarlos.
+El modelo base es Granite 4.0-h de IBM, con una arquitectura híbrida en la que 28 bloques Mamba2 se intercalan con 4 bloques de atención con consultas agrupadas. Los bloques Mamba2 transportan estado recurrente por capa (convolución y estado SSM) en vez de una caché KV que crece con el contexto; solo las cuatro capas de atención mantienen KV. El resultado es un consumo de memoria casi constante respecto a la longitud de secuencia, lo que explica su idoneidad para dispositivos con RAM limitada.
 
-La información disponible no detalla el volumen de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas de RLHF o DPO en el modelo base; estos datos corresponden a la model card original de IBM, no incluida en la información proporcionada. La conversión a LiteRT-LM sí está documentada en detalle: la exportación en coma flotante coincide exactamente con el modelo de Hugging Face en cada posición de decodificación (comparación con *teacher forcing* de 8 pasos, diferencia máxima de logit por posición ≤ 3,9e-4, correlación 1,000000, top-1 idéntico en todas las posiciones), tanto en la ruta de prefill por chunks como en la de decodificación paso a paso (ventana convolucional rotada y recurrencia de estado SSM). El fichero no antepone token BOS, en coherencia con la plantilla de chat oficial de Granite; a escala 350M esto importa, ya que anteponer `<|end_of_text|>` degrada mediblemente las respuestas greedy.
+La conversión a LiteRT-LM enlaza los buffers de estado conv/SSM de Mamba2 mediante el *state binding* generalizado introducido en LiteRT-LM 0.15 (`ExecutorMetadata`); la versión 0.14 no puede enlazarlos. El fichero `_int8_gpu` reexporta los mismos pesos int8 con el *selective scan* reescrito como matmuls batched de rango ≤ 4 y con `prefer_activation_type = "fp32"` declarado, lo que permite ejecutar el grafo en GPU; es 45 MB mayor porque cada firma corta de prefill se rellena hasta un bloque completo de 256 tokens con una constante almacenada en lugar de una operación `PAD`.
+
+No se dispone de información sobre el volumen de tokens de entrenamiento, la composición del dataset ni las etapas de alineación (RLHF/DPO) del modelo base en la documentación proporcionada. La verificación de la conversión sí está documentada: una exportación en coma flotante coincide con el modelo de referencia de Hugging Face en cada posición de decodificación (comparación teacher-forced de 8 pasos, max|logit diff| ≤ 3,9e-4 por posición, correlación 1,000000, top-1 idéntico en todas las posiciones), tanto en la ruta de prefill por bloques como en la de decodificación paso a paso. Ambos ficheros superan una prueba de cordura de 8 preguntas con 8/8 aciertos frente a la referencia.
 
 ## Capacidades
 
-- Generación de texto autoregresiva en formato de chat (pipeline `text-generation`).
-- Razonamiento básico y respuesta a preguntas de cultura general a escala 350M.
-- Conversación multi-turno mediante plantilla de chat oficial de Granite.
-- Inferencia en dispositivo (*on-device*) en CPU y GPU de teléfonos y placas SBC.
-- Ejecución con memoria casi plana respecto a la longitud de contexto gracias a los bloques Mamba2.
-- Soporte de tool calling / function calling: la información disponible se interrumpe en ese punto y no permite confirmarlo.
-- Capacidades multimodales (visión, audio): no disponibles.
-- Modo *thinking* explícito: no disponible.
+- Generación de texto en formato de chat, con plantilla oficial de Granite; el fichero no antepone token BOS, en línea con la plantilla oficial (anteponer `<|end_of_text|>` degrada mediblemente las respuestas greedy a esta escala).
+- Razonamiento y respuesta a preguntas de propósito general, heredados del modelo base Granite 4.0-h.
+- Inferencia *on-device* sin conexión de red, sobre CPU y GPU según el fichero elegido.
+- Ejecución en Android (LiteRT-LM 0.16.0) y en Linux/ARM (Raspberry Pi 5), además de CPU de Mac.
+- Compatibilidad verificada con LiteRT-LM 0.15.0, 0.16.1, 0.17.1, 0.18.0 y 0.19.2 en CPU de Mac para los tres ficheros; `_int8_gpu` también funciona en GPU de Mac con 0.19.2.
+- Soporte de *tool calling*: la model card se interrumpe en la sección "Tool calls", por lo que no se puede confirmar el alcance ni el formato exacto en esta conversión.
+- Capacidades multilingües: no disponibles en la información proporcionada.
+- No se documentan modos de *thinking*, visión ni audio para esta variante.
 
 ## Casos de uso
 
-- Asistentes de texto embebidos en aplicaciones Android: el fichero int8 (436 MB) se ejecuta en CPU de un Galaxy S26 a 11,5 tok/s de decodificación, suficiente para respuestas cortas en asistentes locales sin conexión.
-- Procesamiento de lenguaje natural en placas SBC: en una Raspberry Pi 5 con CPU y 4 hilos, el modelo decodifica a 3,8 tok/s con prefill de 8 tok/s, adecuado para tareas por lotes de clasificación o resumen de textos breves.
-- Prototipado de pipelines de IA generativa en el borde: al mantener memoria casi plana con la longitud de contexto, permite procesar documentos largos en dispositivos con RAM limitada sin crecimiento de la caché KV.
-- Filtrado y etiquetado local de contenido: clasificación de mensajes, extracción de entidades o moderación en el propio dispositivo, evitando enviar datos a la nube.
-- Aplicaciones de privacidad estricta: al ejecutarse íntegramente en el dispositivo, es apto para datos sanitarios o personales que no pueden salir del terminal.
-- Evaluación comparativa de runtimes de inferencia: sirve como banco de pruebas reproducible (métricas TTFT, prefill y decode publicadas para Galaxy S26, Pixel 8a y Raspberry Pi 5) para comparar LiteRT-LM con otras alternativas.
-- Docencia y experimentación con arquitecturas híbridas Mamba2 + atención: el modelo permite estudiar el comportamiento del estado recurrente frente a la caché KV en hardware asequible.
+- Asistentes de texto sin conexión en aplicaciones Android: con el fichero int8 (436 MB) y un consumo de RAM de aproximadamente 2,1 GB en iPhone, el modelo puede gestionar conversaciones de chat locales sin enviar datos a la nube; encaja en apps de notas, correo o productividad que requieran privacidad por diseño.
+- Clasificación y extracción de información en el dispositivo: resumen de mensajes, etiquetado de correos o extracción de campos de texto libre en un teléfono, aprovechando que el estado recurrente de Mamba2 mantiene la memoria plana y evita picos al procesar documentos largos.
+- Automatización en Raspberry Pi 5: con 3,8 tok/s de decodificación y 8 tok/s de prefill en CPU a 4 hilos, es viable para tareas por lotes no interactivas, como generar descripciones de sensores, registrar eventos en lenguaje natural o responder consultas de una base de conocimiento local.
+- Prototipado de pipelines de agentes en el borde: al ser un modelo pequeño con plantilla de chat, sirve como planificador ligero o enrutador de intenciones antes de delegar en un modelo mayor, reduciendo coste y latencia en la primera etapa.
+- Evaluación de runtimes *edge*: útil como banco de pruebas para medir TTFT, prefill y decodificación de LiteRT-LM en distintos dispositivos (Galaxy S26, Pixel 8a, Raspberry Pi 5) antes de comprometerse con un modelo mayor de la misma familia, como `granite-4.0-h-1b`.
+- Docencia y experimentación con arquitecturas híbridas: permite estudiar en hardware asequible el comportamiento de Mamba2 con estado recurrente frente a atención clásica, incluida la verificación de que la memoria no crece con el contexto.
+- Generación de texto en dispositivos con GPU Mali/Adreno: usando `_int8_gpu` (481 MB) en lugar de fp16, que el delegado WebGPU rechaza por operaciones `DEQUANTIZE` y `EMBEDDING_LOOKUP` y tensores de rango 5.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks de calidad (MMLU, HumanEval, GSM8K) en la información disponible. Sí se han publicado mediciones de rendimiento en dispositivo:
+No se han publicado resultados de benchmarks de calidad (MMLU, HumanEval, GSM8K) en la información disponible. Sí se han publicado mediciones de rendimiento en dispositivo, recogidas en el proyecto edge-compat:
 
-| Dispositivo | Runtime | Backend | Decode (tok/s) | Prefill (tok/s) | TTFT |
-|---|---|---|---|---|---|
-| Galaxy S26 (fp16) | LiteRT-LM 0.16.0 | GPU | no ejecutó (`engine_create_failed`) | — | — |
-| Galaxy S26 (fp16) | LiteRT-LM 0.16.0 | CPU | 9,5 | 9 | 25,05 s |
-| Raspberry Pi 5 (fp16) | LiteRT-LM 0.16.1 | CPU, 4 hilos | 3,8 | 8 | 30,43 s |
-| Galaxy S26 (int8) | LiteRT-LM 0.16.0 | GPU | no ejecutó (`engine_create_failed`) | — | — |
-| Galaxy S26 (int8) | LiteRT-LM 0.16.0 | CPU | 11,5 | 11 | 21,39 s |
-| Pixel 8a (int8) | LiteRT-LM 0.16.0 | CPU | 8,9 | 8 | 28,01 s |
+| Dispositivo | Fichero | Runtime | Backend | Decode | Prefill | TTFT |
+|---|---|---|---|---|---|---|
+| Galaxy S26 | fp16 | LiteRT-LM 0.16.0 | GPU | No ejecutado (`engine_create_failed`) | — | — |
+| Galaxy S26 | fp16 | LiteRT-LM 0.16.0 | CPU | 9,5 tok/s | 9 tok/s | 25,05 s |
+| Raspberry Pi 5 (4 hilos) | fp16 | LiteRT-LM 0.16.1 | CPU | 3,8 tok/s | 8 tok/s | 30,43 s |
+| Galaxy S26 | int8 | LiteRT-LM 0.16.0 | GPU | No ejecutado (`engine_create_failed`) | — | — |
+| Galaxy S26 | int8 | LiteRT-LM 0.16.0 | CPU | 11,5 tok/s | 11 tok/s | 21,39 s |
+| Pixel 8a | int8 | LiteRT-LM 0.16.0 | CPU | 8,9 tok/s | 8 tok/s | 28,01 s |
 
-Verificación de correctitud: 8/8 aciertos en una prueba de sanidad de 8 preguntas, coincidiendo con la referencia de Hugging Face; barrido de longitudes de prompt de 12 a 200 tokens sin errores.
+## Requisitos de hardware
+
+- VRAM/RAM estimada: el fichero int8 ocupa 436 MB y el runtime alcanza un pico de aproximadamente 2,1 GB en iPhone; el fp16 ocupa 723 MB y el runtime lo descomprime a fp32 en RAM, con un pico de aproximadamente 3,7 GB en iPhone. El `_int8_gpu` ocupa 481 MB.
+- GPU recomendadas: en Mac, el fichero `_int8_gpu` funciona con LiteRT-LM 0.19.2; el fp16 es solo CPU en el backend GPU de Mac con 0.18.0. En Android, el delegado GPU rechazó el fichero fp16 en Galaxy S26 con LiteRT-LM 0.16.0.
+- ¿Cabe en GPU de consumo? No hay datos de ejecución en GPU dedicada (RTX 4090, etc.). En el ámbito *edge*, sí cabe en teléfonos de gama alta y en Raspberry Pi 5; en Mac funciona en CPU.
+- Opciones de despliegue: exclusivamente el runtime LiteRT-LM (versiones 0.15.0, 0.16.1, 0.17.1, 0.18.0 y 0.19.2 verificadas en CPU de Mac). No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI, dado el formato propietario `.litertlm`.
+- Latencia y throughput: ver tabla de benchmarks. El TTFT es alto para uso interactivo (21-30 s en los dispositivos medidos), mientras que la decodificación se mantiene entre 3,8 y 11,5 tok/s.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Arquitectura | Contexto | Formato | Licencia |
+| Modelo | Parámetros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| granite-4.0-h-350m (LiteRT-LM) | 350M | Híbrida Mamba2 + GQA | no disponible | `.litertlm` | Apache 2.0 |
-| ibm-granite/granite-4.0-h-350m | 350M | Híbrida Mamba2 + GQA | no disponible | safetensors (base) | Apache 2.0 |
-| litert-community/granite-4.0-h-1b | 1B | Híbrida Mamba2 + GQA | no disponible | `.litertlm` | no disponible en la información |
+| litert-community/granite-4.0-h-350m | 350M | No disponible | `.litertlm` (fp16, int8, int8 GPU) | Apache 2.0 | Hugging Face, 1189 descargas |
+| litert-community/granite-4.0-h-1b | 1B (no confirmado en la información) | No disponible | `.litertlm` | Apache 2.0 (presumible, no confirmado) | Hugging Face |
+| ibm-granite/granite-4.0-h-350m | 350M | No disponible | Pesos originales (PyTorch/safetensors, no confirmado) | Apache 2.0 | Hugging Face |
 
-La comparación con alternativas de otros fabricantes (por ejemplo, modelos de 0,3-0,5B de otras familias) no está disponible en la información proporcionada.
+La comparativa se limita a las variantes de la misma familia documentadas en la información disponible; no se dispone de datos de benchmarks que permitan comparar calidad frente a alternativas de otros fabricantes.
 
 ## Limitaciones y advertencias
 
-- Reutilización de estado del motor: si se reutiliza un mismo objeto `Engine` entre conversaciones cuyos prompts comparten un prefijo común creciente, la respuesta puede cortarse tras unos pocos tokens. En el fichero int8 aparece con longitudes de plantilla de chat de 33 a 37; en `_int8_gpu`, de 37 a 41. Un `Engine` nuevo por conversación funciona correctamente en todas las longitudes probadas. La causa es el runtime, no los pesos (issue LiteRT-LM#3165); existe un parche en `main` desde el 3 de noviembre de 2026 (commit e1f86b05) que aún no está en ninguna release (v0.19.1 no lo incluye).
-- El fichero fp16 no funciona en el backend GPU de Mac de litert-lm 0.18.0: el delegado WebGPU rechaza DEQUANTIZE, EMBEDDING_LOOKUP y tensores de rango 5, y no se crea motor. En Android GPU con 0.16.0, el Galaxy S26 también rechazó el fichero fp16.
-- En GPU debe usarse el fichero `_int8_gpu`; los ficheros fp16 e int8 originales son para CPU.
-- En teléfonos se recomienda int8: el runtime de CPU desempaqueta los pesos fp16 a fp32 en RAM (~3,7 GB de pico en iPhone frente a ~2,1 GB con int8).
-- El modelo no antepone BOS por diseño; añadirlo degrada las respuestas greedy a esta escala.
-- No se dispone de información sobre sesgos, riesgo de alucinación específico, cobertura de idiomas ni restricciones adicionales de uso comercial más allá de la licencia Apache 2.0.
-- A 350M de parámetros, la calidad de razonamiento y la fiabilidad factual son limitadas; no es adecuado para tareas que exijan precisión alta sin verificación externa.
-- La información sobre soporte de tool calling está truncada en la fuente y no puede confirmarse.
+- Reutilización de estado del motor: si se reutiliza un objeto `Engine` entre conversaciones cuyos prompts comparten un prefijo común creciente, una respuesta puede cortarse a los pocos tokens. En el fichero int8 ocurre con longitudes de plantilla de chat de 33 a 37; en `_int8_gpu`, de 37 a 41. La causa es que el runtime arrastra estado recurrente entre conversaciones (LiteRT-LM#3165), no los pesos. Un `Engine` nuevo por conversación funciona correctamente en todas las longitudes probadas. Hay un arreglo en la rama principal de LiteRT-LM desde el 3 de noviembre de 2026 (commit e1f86b05), pero ninguna versión publicada lo incluye todavía (v0.19.1 no lo lleva).
+- GPU en Android: el fichero fp16 y el int8 original fallaron al crear el motor en Galaxy S26 con LiteRT-LM 0.16.0. Para GPU debe usarse `_int8_gpu`.
+- GPU en Mac: el fichero fp16 no es compatible con el backend GPU de litert-lm 0.18.0, porque el delegado WebGPU rechaza `DEQUANTIZE`, `EMBEDDING_LOOKUP` y tensores de rango 5.
+- Token BOS: el fichero no antepone BOS, a diferencia del `generate()` de Hugging Face. Anteponer `<|end_of_text|>` degrada las respuestas greedy a esta escala.
+- Idiomas soportados: no documentados; no se puede garantizar calidad fuera del inglés.
+- Sesgos y alucinaciones: no se documentan evaluaciones específicas para esta conversión; a 350M de parámetros, la tasa de alucinación y la fidelidad factual son limitadas por capacidad, no solo por cuantización.
+- Licencia: Apache 2.0 permite uso comercial, pero conviene revisar los términos del modelo base y del runtime LiteRT-LM por separado.
+- Contexto máximo: no disponible; el diseño híbrido reduce el coste de memoria, pero no se especifica la ventana soportada.
+- Tool calling: la model card se interrumpe en esa sección, por lo que no se puede confirmar su funcionamiento en esta conversión.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/litert-community/granite-4.0-h-350m
 - Modelo base: https://huggingface.co/ibm-granite/granite-4.0-h-350m
-- Modelo hermano de 1B: https://huggingface.co/litert-community/granite-4.0-h-1b
+- Variante de 1B de la misma familia: https://huggingface.co/litert-community/granite-4.0-h-1b
 - Runtime LiteRT-LM: https://github.com/google-ai-edge/litert-lm
-- Ficha de compatibilidad en dispositivo (fp16): https://github.com/john-rocky/edge-compat/blob/main/cards/granite-4.0-h-350m-fp16/CARD.md
-- Ficha de compatibilidad en dispositivo (int8): https://github.com/john-rocky/edge-compat/blob/main/cards/granite-4.0-h-350m-int8/CARD.md
 - Issue de reutilización de estado: https://github.com/google-ai-edge/LiteRT-LM/issues/3165
-- Commit con el parche: https://github.com/google-ai-edge/LiteRT-LM/commit/e1f86b05bf8a731331622a2622440e9f93d9a9f5
+- Commit con el arreglo (rama principal): https://github.com/google-ai-edge/LiteRT-LM/commit/e1f86b05bf8a731331622a2622440e9f93d9a9f5
+- Ficha de rendimiento fp16 en edge-compat: https://github.com/john-rocky/edge-compat/blob/main/cards/granite-4.0-h-350m-fp16/CARD.md
+- Ficha de rendimiento int8 en edge-compat: https://github.com/john-rocky/edge-compat/blob/main/cards/granite-4.0-h-350m-int8/CARD.md

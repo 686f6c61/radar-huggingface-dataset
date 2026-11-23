@@ -5,7 +5,7 @@
   "author": "jstarks",
   "url": "https://huggingface.co/jstarks/Gemma-4-12B-Weight-Space-Programming",
   "created_at": "2026-11-14T22:24:53.000Z",
-  "updated_at": "2026-11-16T10:48:30.000Z",
+  "updated_at": "2026-11-23T05:05:22.000Z",
   "license": "gemma",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -41,7 +41,7 @@
     "imatrix"
   ],
   "likes": 0,
-  "downloads_30d": 522,
+  "downloads_30d": 528,
   "trending_score": 0,
   "parameters": 11907350576,
   "parameters_human": "11.91B",

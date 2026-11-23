@@ -5,7 +5,7 @@
   "author": "positron-ai",
   "url": "https://huggingface.co/positron-ai/Ministral-3-3B-Instruct-2512",
   "created_at": "2026-08-31T01:21:19.000Z",
-  "updated_at": "2026-08-31T01:23:47.000Z",
+  "updated_at": "2026-11-17T22:22:32.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -22,7 +22,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 26,
+  "downloads_30d": 54,
   "trending_score": 0,
   "parameters": 3849090048,
   "parameters_human": "3.85B",

@@ -2,91 +2,94 @@
 
 ## Resumen
 
-WeMM-Video-9B es un modelo multimodal bilingue (chino-ingles) desarrollado por Tencent para la comprension y el razonamiento conjunto de audio y video. Acepta entradas de texto, imagen, audio y video, y genera respuestas en texto. La familia WeMM-Video se presenta como un sistema nativo para el entendimiento audio-visual, no como un adaptador de un modelo de lenguaje sobre un codificador visual, sino como un runtime propio ("WeMM native runtime") con componentes separados para lenguaje, vision y audio.
+WeMM-Video-9B-GGUF es la distribucion cuantizada en formato GGUF (receta Q4_K_M) del modelo multimodal WeMM-Video-9B, desarrollado por Tencent. Forma parte de la familia WeMM-Video, orientada a la comprension y el razonamiento conjunto de audio y video (audio-visual understanding and reasoning), y es capaz de aceptar texto, imagenes, audio y video como entrada para generar respuestas en texto. El repositorio incluye tres componentes empaquetados de forma independiente: el modelo de lenguaje, el codificador visual con su proyector y el codificador de audio con su proyector.
 
-El repositorio que nos ocupa, `tencent/WeMM-Video-9B-GGUF`, es la distribucion cuantizada en formato GGUF con receta Q4_K_M del modelo base `tencent/WeMM-Video-9B`. El bundle se compone de tres ficheros: el modelo de lenguaje con tokenizador y plantilla de chat (`language.gguf`, 10,41 GiB), el codificador visual y proyector (`mmproj.gguf`, 0,86 GiB) y el codificador de audio y proyector (`audio.gguf`, 2,01 GiB). El tag `qwen3_5` en Hugging Face sugiere una base arquitectonica derivada de la familia Qwen, aunque la model card no lo confirma explicitamente.
+El modelo se apoya en la arquitectura `qwen3_5` (segun la etiqueta del repositorio) y esta pensado para ejecutarse mediante el runtime nativo propio de WeMM, no mediante llama.cpp generico. Es un modelo bilingue chino-ingles y esta publicado bajo licencia Apache 2.0, lo que facilita su adopcion tanto en investigacion como en productos comerciales.
 
-La relevancia de esta ficha radica en que se trata de una publicacion reciente (noviembre de 2026) con licencia Apache 2.0, lo que facilita su adopcion comercial, y en que ofrece una via de despliegue en CPU a traves del runtime nativo de WeMM, un escenario poco habitual en modelos multimodales de video y audio. No obstante, la informacion publica disponible es muy limitada: no hay benchmarks, no se detalla la composicion del dataset de entrenamiento y el numero de parametros reportado en safetensors (1.078.789.128) no concuerda con la denominacion "9B" del modelo, lo que obliga a tratar ese dato con cautela.
+Su relevancia actual radica en que ofrece comprension omni-modal (video con banda sonora, audio e imagen) en un tamano manejable de aproximadamente 9B parametros nominales y con una cuantizacion que reduce el peso del modelo de lenguaje a unos 10,41 GiB, lo que lo hace viable en hardware de gama alta de consumo si se dispone del runtime adecuado.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | No disponible (tag `qwen3_5` en Hugging Face; multimodal con codificadores separados de vision y audio) |
-| Parametros totales | 1.078.789.128 segun safetensors del repo base; la denominacion comercial es "9B" (dato no coherente, ver limitaciones) |
-| Parametros activos | No disponible |
-| Longitud de contexto | No disponible |
-| Tipos de cuantizacion | GGUF Q4_K_M (tensores seleccionados de atencion y entrada/salida en BF16) |
-| Idiomas soportados | Ingles (en) y chino (zh) |
-| Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (`language.gguf`, `mmproj.gguf`, `audio.gguf`) |
+| Arquitectura | qwen3_5 (transformer multimodal con codificador visual y codificador de audio) |
+| Parametros totales | 1.078.789.128 (dato de safetensors del modelo base); la denominacion comercial es 9B |
+| Parametros activos | no disponible |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | Q4_K_M (tensores seleccionados de atencion y entrada/salida en BF16) |
+| Idiomas soportados | en, zh |
+| Licencia | apache-2.0 |
+| Formato de pesos | GGUF (language.gguf, mmproj.gguf, audio.gguf) |
 
 ## Arquitectura y entrenamiento
 
-La informacion publica no detalla la arquitectura interna mas alla de que se trata de un modelo multimodal con componentes diferenciados: un modelo de lenguaje con tokenizador y plantilla de chat, un codificador visual con proyector y un codificador de audio con proyector. El tag `qwen3_5` sugiere que el backbone linguistico podria derivar de la familia Qwen, pero la model card no lo confirma ni aporta detalles sobre el numero de capas, dimensiones ocultas o mecanismo de atencion. Tampoco se especifica si emplea atencion completa, atencion lineal u otra variante.
+WeMM-Video-9B es un modelo multimodal que combina un modelo de lenguaje base de la familia Qwen 3.5 con un codificador visual (y su proyector) y un codificador de audio (y su proyector), de forma que el modelo puede procesar conjuntamente fotogramas de video e imagen junto con la pista de audio original. La distribucion GGUF separa explicitamente estos tres bloques: `language.gguf` (modelo de lenguaje, tokenizador y plantilla de chat, 10,41 GiB), `mmproj.gguf` (codificador visual y proyector, 0,86 GiB) y `audio.gguf` (codificador de audio y proyector, 2,01 GiB).
 
-No se han publicado datos sobre el volumen de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas de alineacion como RLHF o DPO. La unica informacion sobre el proceso de cuantizacion es que la receta Q4_K_M preserva en BF16 tensores seleccionados de atencion y de entrada/salida, con un ambito de precision documentado en `scope.json` y un manifiesto en `manifest.json`. El modelo base es `tencent/WeMM-Video-9B`, y este repositorio es una conversion cuantizada del mismo.
+La receta de cuantizacion Q4_K_M mantiene en BF16 tensores seleccionados de atencion y de entrada/salida, lo que preserva precision en las partes mas sensibles del modelo. No se dispone en la informacion proporcionada de detalles sobre el numero de tokens de entrenamiento, la composicion del dataset ni sobre si se aplicaron tecnicas de RLHF o DPO. El informe tecnico asociado (arXiv 2611.26409) se titula "WeMM-Video: Pushing the Frontiers of Open-Source Omni-Modal Video Understanding" y esta firmado por Changli Tang, Jie Yang, Tianyi Wang, Lei Li, Daoze Zhang, Zijie Xin, Zhan Liu, Li Li, Jinchang Xu, Fengyun Rao, Chao Zhang y Jing Lyu.
 
 ## Capacidades
 
-- Generacion de texto a partir de entradas multimodales: texto, imagen, audio y video.
-- Comprension de video: procesa fotogramas de video (con `--video` y control de `--max-frames`) para describir lo que ocurre en pantalla.
-- Comprension audio-visual conjunta: con `--video-audio` procesa simultaneamente los fotogramas y la pista de sonido original, permitiendo describir la escena y resumir el habla.
-- Transcripcion de audio: la model card incluye un ejemplo de transcripcion de habla en ingles.
-- Descripcion de imagenes: ejemplo incluido de descripcion de una imagen fija.
-- Razonamiento aritmetico basico sobre texto: el ejemplo de la model card resuelve un problema de duracion de reunion ("A 20-minute meeting starts at 09:45. When does it end?").
-- Soporte bilingue chino-ingles.
-- No se documenta soporte de tool calling ni de function calling.
-- No se documenta soporte explicito de agentes o razonamiento multi-paso.
-- No se documenta modo de pensamiento (thinking mode) ni otras capacidades especiales.
+- Comprension de video: procesa secuencias de fotogramas (`--video`, con control del numero de fotogramas mediante `--max-frames`) y describe o razona sobre lo que ocurre en pantalla.
+- Comprension audio-visual conjunta: con `--video-audio` procesa fotogramas y la banda sonora original de forma simultanea, permitiendo describir la escena y resumir el habla.
+- Comprension de imagen: acepta imagenes individuales y responde preguntas sobre su contenido.
+- Comprension y transcripcion de audio: acepta archivos de audio y puede transcribir el habla (el ejemplo de la model card transcribe una locucion en ingles).
+- Generacion de texto y razonamiento: incluye ejemplos de razonamiento aritmetico simple en modo texto ("A 20-minute meeting starts at 09:45. When does it end?").
+- Capacidad multilingue limitada a chino e ingles.
+- Soporte de peticiones solo texto (sin adjuntar medios).
+- No se documenta en la informacion disponible soporte de tool calling, function calling, modo thinking explicito ni capacidades de agente multi-paso.
 
 ## Casos de uso
 
-- Analisis de reuniones y videoconferencias: el modelo puede procesar la pista de audio de una grabacion para transcribir y resumir el habla, y combinarla con los fotogramas para describir la escena, gracias al modo `--video-audio` que procesa ambas modalidades de forma conjunta.
-- Indexado y descripcion de archivos audiovisuales: util para generar metadatos descriptivos de videos en bibliotecas o plataformas, usando `--video` con un numero controlado de fotogramas (`--max-frames`) para ajustar el coste computacional al tamano del catalogo.
-- Accesibilidad: generacion de descripciones de contenido visual y resumenes de audio para personas con discapacidad visual o auditiva, aprovechando la capacidad de describir la escena y resumir el habla en una sola pasada.
-- Transcripcion y analisis de material de archivo historico: el ejemplo de la model card con material del Apolo 11 sugiere su uso para transcribir grabaciones y describir imagenes de archivo, un escenario donde el procesamiento en CPU puede ser suficiente para lotes pequenos.
-- Despliegue en entornos sin GPU: al distribuirse en GGUF y contar con un runtime nativo de CPU validado por el autor, es adecuado para estaciones de trabajo, servidores sin acelerador o entornos edge donde no se dispone de CUDA.
-- Prototipado rapido de aplicaciones multimodales: el launcher `native/run_hf.py` descarga automaticamente los tres componentes desde el Hub, lo que permite validar flujos de imagen, audio y video con pocas lineas de comando antes de invertir en infraestructura.
-- Investigacion en comprension audio-visual: con licencia Apache 2.0, sirve como base para experimentos academicos sobre razonamiento conjunto de audio y video en ingles y chino.
+- Analisis de reuniones y videoconferencias: el modelo puede recibir el video con su pista de audio y generar un resumen de la escena junto con la sintesis del habla, aprovechando el procesamiento conjunto de fotogramas y sonido mediante `--video-audio`.
+- Moderacion y catalogacion de contenido audiovisual: permite describir automaticamente lo que ocurre en un clip (acciones en pantalla, habla asociada) para etiquetar y clasificar grandes volumenes de video.
+- Accesibilidad: generacion de descripciones de escenas y transcripciones de audio para personas con discapacidad visual o auditiva, combinando la salida de descripcion visual y la transcripcion del habla.
+- Analisis de material de archivo historico: el propio ejemplo de la model card usa metraje del Apolo 11 (imagen, audio y video), un escenario realista para digitalizar y describir fondos documentales.
+- Asistentes de soporte sobre imagenes: atencion de consultas donde el usuario adjunta una fotografia (por ejemplo, un producto o un documento) y el modelo responde en ingles o chino.
+- Investigacion en comprension omni-modal: al estar bajo Apache 2.0 y con pesos GGUF, sirve como base reproducible para experimentos academicos de video-text-to-text en entornos con recursos limitados.
+- Procesamiento en local con runtime nativo: el bundle permite ejecutar inferencia en CPU (con offload opcional a CUDA) para prototipos y pruebas sin depender de infraestructura cloud.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La unica validacion reportada por el autor es que el runtime nativo de CPU de WeMM cargo el bundle y completo comprobaciones de generacion para texto, imagen, audio y video con pista de sonido.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card remite a los resultados de evaluacion de la variante WeMM-Video-35B-A3B para la comparacion de benchmarks del informe tecnico, pero no incluye cifras propias para este modelo.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible de forma oficial. Como referencia de orden de magnitud, el bundle Q4_K_M ocupa aproximadamente 13,28 GiB en disco (10,41 + 0,86 + 2,01 GiB), por lo que un despliegue integro en GPU requeriria al menos esa cantidad de memoria mas el overhead del runtime.
-- GPU recomendadas: no especificadas por el autor. Por tamano del bundle, una GPU con 24 GB (RTX 4090, A10G, L4 con limitaciones) seria el minimo razonable para cargar los tres componentes; A100 o H100 permitirian margen para contexto y lotes mayores.
-- Compatibilidad con GPU de consumo: probable en RTX 4090 (24 GB) si se cargan los tres ficheros; en GPUs de 16 GB o menos habria que valorar la descarga parcial de componentes o la offload a CPU.
-- Opciones de despliegue: el autor documenta exclusivamente el runtime nativo de WeMM (`native/run_hf.py`), con soporte de offload a CUDA segun la guia nativa. No se menciona compatibilidad con llama.cpp, Ollama, vLLM ni TGI, y el tag `custom_code` sugiere que el modelo requiere codigo propio.
-- Latencia y throughput: no disponibles. El autor solo confirma que el runtime de CPU completo las comprobaciones de generacion.
+- El bundle GGUF ocupa 14,3 GB en el repositorio; los tres archivos suman aproximadamente 13,28 GiB (10,41 GiB + 0,86 GiB + 2,01 GiB).
+- Para cargar el conjunto completo en memoria/VRAM se necesita al menos ese espacio, mas el overhead del runtime y de las activaciones; una GPU de 16 GB o mas deberia ser suficiente para el conjunto en Q4_K_M, aunque la cifra exacta no esta documentada.
+- El runtime nativo de WeMM permite ejecucion en CPU y ofrece offload a CUDA (segun la guia `native/README.md`), por lo que es posible ejecutarlo sin GPU, con mayor latencia.
+- Opciones de despliegue: exclusivamente el runtime nativo de WeMM (`native/run_hf.py` con `huggingface_hub`). No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI.
+- Latencia y throughput estimados: no disponible.
+- Es importante mantener los tres archivos GGUF en la misma revision del Hub y fijarla con `--revision`.
 
 ## Comparativa con modelos similares
 
-No disponible. La informacion proporcionada no incluye modelos comparables de la misma categoria (multimodales de video y audio con licencia permisiva) ni datos de rendimiento que permitan establecer una comparacion rigurosa. La model card no cita alternativas ni benchmarks frente a otros sistemas.
+| Modelo | Parametros | Contexto | Modalidades | Licencia | Formato |
+|---|---|---|---|---|---|
+| WeMM-Video-9B-GGUF (este) | ~9B (nominal) | no disponible | texto, imagen, audio, video | apache-2.0 | GGUF |
+| WeMM-Video-35B-A3B | 35B (A3B, MoE) | no disponible | texto, imagen, audio, video | no disponible en la informacion | no disponible |
+| Otros modelos omni-modales de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
+
+La unica alternativa documentada en la informacion proporcionada es la variante mayor de la misma familia, WeMM-Video-35B-A3B, que sirve como referencia de evaluacion en el informe tecnico. No se dispone de datos para comparar con modelos de otros desarrolladores.
 
 ## Limitaciones y advertencias
 
-- Incoherencia en el recuento de parametros: el dato de safetensors del repo base indica 1.078.789.128 parametros, mientras que la denominacion del modelo es "9B". Esta discrepancia no queda explicada en la informacion disponible y debe verificarse antes de dimensionar infraestructura.
-- Ausencia total de benchmarks: no hay datos publicados de MMLU, HumanEval, GSM8K ni de evaluaciones multimodales, lo que impide estimar su calidad relativa frente a alternativas.
-- Cobertura linguistica limitada a ingles y chino; no se documenta soporte de castellano ni de otros idiomas.
-- Longitud de contexto no documentada, lo que dificulta planificar casos de uso con entradas largas (por ejemplo, videos extensos o conversaciones multi-turno prolongadas).
-- Dependencia de un runtime propietario: el modelo requiere el WeMM native runtime y no se documenta compatibilidad con ecosistemas estandar como llama.cpp u Ollama, pese al formato GGUF. El tag `custom_code` refuerza esta dependencia.
-- Riesgo de alucinacion no cuantificado: al no haber evaluaciones publicadas, no es posible estimar la tasa de errores en transcripcion, descripcion o razonamiento.
-- Sesgos desconocidos: no se documenta la composicion del dataset de entrenamiento ni se han publicado analisis de sesgo.
-- Restricciones de licencia: el modelo se distribuye bajo Apache 2.0, lo que permite uso comercial, pero los componentes de terceros incluidos siguen sujetos a sus terminos originales, segun indica la model card.
-- Madurez temprana: el repositorio se creo en noviembre de 2026 y no registra descargas ni valoraciones, por lo que no existe evidencia de uso en produccion por parte de la comunidad.
-- Consistencia del bundle: el autor advierte de que los tres ficheros GGUF deben mantenerse en la misma revision del Hub; mezclar revisiones puede romper la inferencia.
+- Idiomas: solo se declaran ingles y chino; el rendimiento en castellano no esta garantizado ni documentado.
+- Riesgo de alucinacion: no se documentan tasas de error ni evaluaciones de fidelidad; como todo modelo generativo, puede producir descripciones inexactas de videos o transcripciones erroneas.
+- Sesgos: no se dispone de informacion sobre sesgos conocidos ni sobre el proceso de alineacion.
+- Dependencia del runtime: el modelo requiere el runtime nativo de WeMM y no funciona con llama.cpp generico, lo que limita las opciones de despliegue y la portabilidad.
+- Integridad del bundle: los tres archivos GGUF deben provenir de la misma revision; mezclar revisiones puede producir fallos.
+- Contexto: la longitud de contexto no esta documentada, lo que dificulta planificar el procesamiento de videos largos; el ejemplo usa `--max-frames 16`.
+- Licencia: Apache 2.0 permite uso comercial, pero los componentes de terceros incluidos siguen sujetos a sus terminos originales (ver el archivo LICENSE del repositorio GitHub).
+- Inconsistencia de parametros: la etiqueta comercial indica 9B, mientras que el dato de safetensors del modelo base registra 1.078.789.128 parametros; conviene verificar el conteo real antes de dimensionar hardware.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/tencent/WeMM-Video-9B-GGUF
 - Modelo base: https://huggingface.co/tencent/WeMM-Video-9B
-- Proyecto en GitHub: https://github.com/Tencent/WeMM-Video
-- Coleccion de modelos WeMM-Video: https://huggingface.co/collections/tencent/wemm-video
+- Coleccion WeMM-Video: https://huggingface.co/collections/tencent/wemm-video
+- Informe tecnico (arXiv): https://arxiv.org/abs/2611.26409
+- Pagina del paper en Hugging Face: https://huggingface.co/papers/2611.26409
+- Repositorio GitHub: https://github.com/Tencent/WeMM-Video
 - Guia del runtime nativo: https://github.com/Tencent/WeMM-Video/blob/main/native/README.md
-- Ejecucion desde el Hub: https://github.com/Tencent/WeMM-Video/blob/main/native/README.md#run-from-the-hub
+- Evaluacion de WeMM-Video-35B-A3B: https://huggingface.co/tencent/WeMM-Video-35BA3B#evaluation
 - Licencia y atribuciones de terceros: https://github.com/Tencent/WeMM-Video/blob/main/LICENSE
-- Ambito de precision de la cuantizacion: https://huggingface.co/tencent/WeMM-Video-9B-GGUF/blob/main/scope.json
-- Manifiesto del bundle: https://huggingface.co/tencent/WeMM-Video-9B-GGUF/blob/main/manifest.json

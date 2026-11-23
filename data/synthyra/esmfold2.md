@@ -2,90 +2,84 @@
 
 ## Resumen
 
-Synthyra/ESMFold2 es un modelo de lenguaje de proteínas (protein language model) desarrollado por Synthyra que empaqueta el checkpoint `biohub/ESMFold2` con el runtime FastPLMs para su uso a través de la interfaz estándar de Hugging Face Transformers. El modelo acepta secuencias de aminoácidos o especificaciones de complejos moleculares (proteínas, DNA, RNA, ligandos) y predice estructuras tridimensionales de alta resolución, con salida en formato PDB o CIF. Está pensado para tareas de predicción de estructura, diseño de proteínas y análisis de interacciones biomoleculares.
+ESMFold2 es un modelo de predicción de estructura de proteínas desarrollado originalmente por Biohub (checkpoint `biohub/ESMFold2`) y empaquetado por Synthyra con el runtime FastPLMs para su uso con Hugging Face Transformers. El modelo acepta secuencias de aminoácidos en bruto o especificaciones tipadas de complejos moleculares (multicadena y multimolécula) y produce estructuras tridimensionales en formato PDB o mmCIF, junto con métricas de confianza como pTM y pLDDT.
 
-El modelo se presenta como el sucesor de ESMFold y establece un nuevo estado del arte en predicción de estructura a partir de secuencia única, con la opción de incorporar alineamientos múltiples de secuencias (MSA) para mejorar la precisión. Según la documentación disponible, supera a otros modelos en la tasa de aprobación DockQ en complejos proteína-proteína y anticuerpo-antígeno del conjunto Foldbench. Con 234,8 millones de parámetros, es un modelo relativamente compacto, lo que facilita su despliegue en entornos con recursos limitados.
+El checkpoint es un ESMFold2 completo de 48 bloques con aproximadamente 234,8 millones de parámetros, lo que lo sitúa en la gama de modelos de proteínas de tamaño medio. Incorpora una cabeza de confianza activa y un trunk de difusión para el plegamiento, con soporte opcional de condicionamiento por MSA (alineamiento múltiple de secuencias). Además de la tarea principal de plegamiento, el repositorio expone clases de clasificación de secuencia y de token que reutilizan el backbone preentrenado.
 
-La relevancia actual del modelo radica en su capacidad para abordar el plegamiento de proteínas y el diseño de interacciones con una velocidad de inferencia significativamente mayor que los métodos basados en MSA, manteniendo una precisión competitiva. Además, su licencia MIT permite su uso comercial sin restricciones, lo que lo convierte en una opción atractiva para aplicaciones industriales en biotecnología y farmacología.
+Su relevancia actual radica en que ofrece un pipeline de plegamiento de proteínas completo y ejecutable dentro del ecosistema Transformers estándar, con licencia MIT, lo que facilita su integración en flujos de trabajo de bioinformática y su uso comercial sin las restricciones habituales de otros modelos de estructura proteica.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer (encoder) basado en ESMFold2, con runtime FastPLMs |
+| Arquitectura | ESMFold2 (transformer con trunk de plegamiento y cabeza de difusión), 48 bloques |
 | Parametros totales | 234.822.979 |
-| Parametros activos | No aplica (modelo denso) |
-| Longitud de contexto | No disponible |
-| Tipos de cuantizacion | No disponible |
-| Idiomas soportados | No disponible (modelo de secuencias de aminoacidos, no idiomas naturales) |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | no disponible (pesos publicados en safetensors; el ejemplo de carga usa float32 con backbone en bf16) |
+| Idiomas soportados | no disponible (modelo de proteínas, no de lenguaje natural) |
 | Licencia | MIT |
 | Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
 
-El modelo se basa en la arquitectura ESMFold2, que es un transformer codificador diseñado específicamente para secuencias de proteínas. A diferencia de ESMFold original, ESMFold2 incorpora un mecanismo de difusión para la generación de coordenadas atómicas y permite el condicionamiento con MSA cuando está disponible. El checkpoint empaquetado en este repositorio utiliza el runtime FastPLMs, que proporciona una implementación optimizada para Transformers, con soporte para backends de atención como `sdpa`, `eager` y `flex_attention`.
+ESMFold2 es un modelo de plegamiento de proteínas que combina un backbone tipo transformer (estilo ESM) con un trunk de plegamiento y una cabeza de difusión para generar coordenadas atómicas. El checkpoint empaquetado es la variante completa de 48 bloques, con una cabeza de confianza habilitada que devuelve campos de confianza (pTM, pLDDT) junto con la estructura. El modelo soporta inferencia a partir de una única secuencia y, opcionalmente, inferencia condicionada por MSA, que puede adjuntarse a cada cadena proteica en entradas multicadena y multimolécula.
 
-No se han publicado detalles sobre el entrenamiento de este checkpoint concreto: no se especifican el número de tokens de entrenamiento, la composición del dataset ni si se utilizaron técnicas de RLHF o DPO. La model card indica que las cabezas de clasificación de secuencia y token se inicializan aleatoriamente sobre el backbone preentrenado, por lo que requieren fine-tuning antes de ser interpretadas como predicciones. El modelo base está diseñado para predicción de estructura, mientras que las tareas de clasificación son capacidades adicionales que deben entrenarse.
+El runtime FastPLMs está embebido en el repositorio y se carga mediante `trust_remote_code=True`. El modelo permite seleccionar el backend de atención entre `eager`, `sdpa` y `flex_attention`, y expone un mecanismo de chunking (`set_chunk_size`) para gestionar el consumo de memoria durante el plegamiento. El proceso de plegamiento se controla mediante parámetros como `num_loops`, `num_sampling_steps`, `num_diffusion_samples` y `seed`. No se dispone de información sobre el volumen de tokens de entrenamiento, la composición del dataset ni el uso de RLHF o DPO en la documentación proporcionada.
 
 ## Capacidades
 
-- Prediccion de estructura 3D de proteinas a partir de secuencia unica, con salida en formato PDB o CIF.
-- Prediccion de estructuras de complejos biomoleculares que incluyen proteinas, DNA, RNA, ligandos y modificaciones covalentes.
-- Condicionamiento opcional con MSA (alineamientos multiples de secuencia) para mejorar la precision.
-- Extraccion de caracteristicas (feature extraction) de secuencias de aminoacidos, util para tareas de representacion y transfer learning.
-- Clasificacion de secuencias y clasificacion a nivel de residuo (token classification), con cabezas entrenables sobre el backbone.
-- Soporte para backends de atencion eficientes: `sdpa` y `flex_attention`, ademas del clasico `eager`.
-- Generacion de estructuras con control de numero de loops de refinamiento y pasos de muestreo.
-- Capacidad de manejar entradas tipadas para complejos multimolecula, incluyendo condiciones de bolsillo (pocket) y distogramas.
+- Predicción de estructura de proteínas a partir de secuencias de aminoácidos en bruto, con salida en PDB y mmCIF.
+- Plegamiento de complejos multicadena y multimolécula mediante especificaciones tipadas (`StructurePredictionInput`, `ProteinInput`).
+- Inferencia condicionada por MSA opcional para cadenas proteicas.
+- Salida de métricas de confianza: pTM y pLDDT por residuo.
+- Control del proceso de difusión mediante número de pasos de muestreo, número de muestras y semilla.
+- Clasificación de secuencia y clasificación de token sobre el backbone preentrenado (cabezas nuevas sin entrenar, requieren fine-tuning).
+- Soporte de fine-tuning con PEFT/LoRA sobre el checkpoint cargado.
+- Selección de backend de atención (`eager`, `sdpa`, `flex_attention`) y gestión de memoria mediante chunking.
+- No se documentan capacidades de tool calling, agentes, visión, audio ni procesamiento de lenguaje natural.
 
 ## Casos de uso
 
-- Prediccion de estructura de proteinas de novo: el modelo puede plegar secuencias sin necesidad de MSA, lo que lo hace adecuado para proteinas sin homologos conocidos. Un investigador puede pasar una secuencia de aminoacidos y obtener coordenadas atomicas en formato PDB en un solo paso.
-- Diseño de interacciones proteina-proteina: gracias a su alto rendimiento en DockQ, el modelo es util para predecir como dos proteinas interactuan entre si, lo que permite disenar mutaciones que estabilicen o debiliten la interaccion.
-- Docking de anticuerpo-antigeno: el modelo puede predecir la estructura de complejos anticuerpo-antigeno, facilitando el diseño racional de anticuerpos terapeuticos.
-- Descubrimiento de farmacos: al aceptar ligandos (definidos por SMILES) y DNA/RNA, el modelo puede predecir estructuras de complejos proteina-ligando, ayudando en la identificacion de sitios de union y en el diseño de moleculas candidatas.
-- Clasificacion funcional de proteinas: tras un fine-tuning de la cabeza de clasificacion, el modelo puede asignar funciones biologicas a secuencias, por ejemplo, predecir si una proteina es una enzima o un factor de transcripcion.
-- Anotacion de residuos funcionales: con la cabeza de token classification, se pueden identificar residuos clave en la secuencia (por ejemplo, sitios activos o de union), lo que es valioso para la ingenieria de proteinas.
-- Generacion de proteinas funcionales: segun la documentacion de Biohub, el modelo permite buscar en el espacio latente del modelo ESMC para generar nuevas proteinas con funciones deseadas, aunque esta capacidad requiere acceso al modelo ESMC subyacente.
+- Predicción de estructura de proteínas individuales: el modelo pliega una secuencia de aminoácidos y devuelve un archivo PDB o mmCIF con las coordenadas atómicas, útil para caracterizar proteínas sin estructura experimental resuelta.
+- Modelado de complejos proteína-proteína: mediante entradas multicadena tipadas, se pueden plegar dos o más cadenas simultáneamente, lo que permite estudiar interfaces de interacción.
+- Análisis de confianza estructural: las salidas de pTM y pLDDT permiten filtrar predicciones de baja calidad antes de usarlas en pipelines downstream, por ejemplo en cribados de candidatos.
+- Fine-tuning para clasificación de secuencias: usando la clase de clasificación de secuencia y PEFT/LoRA, se puede adaptar el backbone a tareas como predicción de función proteica o clasificación de familias, entrenando únicamente la cabeza y los adaptadores.
+- Anotación a nivel de residuo: la clase de clasificación de token permite predecir etiquetas por posición biológica (por ejemplo, sitios activos o regiones de unión), tras entrenar la cabeza correspondiente.
+- Integración en pipelines de bioinformática: al cargarse con la interfaz estándar de Transformers (`AutoModel.from_pretrained`), el modelo puede incorporarse a flujos existentes basados en Python y PyTorch, con soporte de ejecución en CUDA.
+- Experimentación con condicionamiento por MSA: en entornos de investigación, se puede comparar el plegamiento con y sin MSA para evaluar el impacto del alineamiento en la calidad de la estructura predicha.
+- Despliegue en entornos aislados: la documentación menciona la posibilidad de construir un artefacto local con manifiesto fijado para ejecución sin red, adecuado para infraestructuras air-gapped.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks numericos en la informacion disponible. La documentacion de GitHub menciona que ESMFold2 supera a otros modelos en la tasa de aprobacion DockQ en los conjuntos Foldbench de complejos proteina-proteina y anticuerpo-antigeno, pero no se proporcionan cifras concretas. Tampoco se ofrecen comparaciones con ESMFold, AlphaFold2 u otros modelos en terminos de TM-score, RMSD o velocidad de inferencia.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- El modelo requiere una GPU con soporte CUDA. El entorno validado oficialmente es una NVIDIA GH200 en Linux aarch64.
-- No se especifican requisitos minimos de VRAM, pero dado que el modelo tiene 234,8 millones de parametros y se distribuye en safetensors, una GPU con al menos 1-2 GB de VRAM podria ser suficiente para inferencia en precision FP16, aunque esto es una estimacion no confirmada.
-- No se garantiza el funcionamiento en CPU, Windows o macOS para tareas de estructura; la documentacion indica que solo se ha validado en el entorno mencionado.
-- Para despliegue, se puede utilizar el pipeline estandar de Transformers con `trust_remote_code=True`. Tambien es posible usar vLLM u otras herramientas de inferencia, aunque no se mencionan explicitamente.
-- La inferencia con el backend `sdpa` es la recomendada para un rendimiento optimo. El backend `flex_attention` ofrece flexibilidad adicional pero puede requerir mas configuracion.
+- VRAM estimada para inferencia: no disponible de forma explícita; con 234,8 M de parámetros, los pesos en float32 ocupan aproximadamente 0,94 GB, y en bf16 alrededor de 0,47 GB, a lo que hay que sumar el consumo del trunk de plegamiento, la difusión y las activaciones intermedias (modulables con `set_chunk_size`).
+- GPU recomendadas: la documentación indica que la validación se ejecuta en Docker sobre cualquier dispositivo CUDA compatible, sin exigir un producto de GPU concreto.
+- Compatibilidad con GPU de consumo: no se especifica; por el tamaño del checkpoint es plausible en GPUs de consumo con suficiente VRAM, pero no hay confirmación en la información disponible.
+- Opciones de despliegue: carga mediante Transformers con `trust_remote_code=True`; el runtime FastPLMs está embebido en el repositorio. No se documentan integraciones con vLLM, llama.cpp, Ollama o TGI.
+- Requisitos de software: Python 3.12-3.14, PyTorch 2.14 y Transformers 5.17.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Disponibilidad |
-|---|---|---|---|---|
-| Synthyra/ESMFold2 | 234,8 M | No disponible | MIT | Hugging Face |
-| ESMFold (original) | ~650 M | No disponible | MIT | Hugging Face |
-| AlphaFold2 | ~93 M (Evoformer) + 8 M (Structure module) | No aplica | Apache 2.0 (codigo) | Codigo abierto, pesos con restricciones |
-| ESMC 6B (base de ESMFold2) | 6 B | No disponible | No especificada | No publico |
-
-ESMFold2 se posiciona como un sucesor directo de ESMFold, con mejoras en la prediccion de complejos y en la velocidad (modo de secuencia unica). AlphaFold2 es el estandar de referencia para prediccion de estructura, pero requiere MSA y es mas lento. La principal ventaja de ESMFold2 es su capacidad de trabajar sin MSA y su rendimiento superior en interacciones proteina-proteina, segun la documentacion. No se dispone de datos comparativos cuantitativos para una evaluacion objetiva.
+No disponible. La información proporcionada no incluye datos de rendimiento ni comparaciones con otros modelos de plegamiento de proteínas.
 
 ## Limitaciones y advertencias
 
-- El modelo requiere `trust_remote_code=True` al cargarlo, lo que implica ejecutar codigo remoto del repositorio. Esto supone un riesgo de seguridad si el repositorio se ve comprometido.
-- Las cabezas de clasificacion de secuencia y token se inicializan aleatoriamente; sus salidas no son interpretables hasta que se realiza un fine-tuning.
-- No se garantiza el funcionamiento en CPU o sistemas sin CUDA. El entorno validado es especificamente NVIDIA GH200 en Linux aarch64, por lo que otros entornos pueden presentar comportamientos inesperados.
-- No se han publicado datos sobre la longitud maxima de secuencia soportada ni sobre el rendimiento en secuencias muy largas.
-- El modelo puede producir estructuras con errores de plegamiento, especialmente en regiones de baja confianza (pLDDT bajo). Se recomienda validar las predicciones con herramientas experimentales.
-- Aunque la licencia MIT permite uso comercial, el modelo empaqueta codigo de FastPLMs que puede tener dependencias adicionales; se debe revisar la licencia de cada componente.
-- La documentacion menciona que el modelo soporta MSA condicionado, pero no se especifica como se construye el MSA ni su impacto en el rendimiento.
+- Las cabezas de clasificación de secuencia y de token se inicializan de nuevo y no están entrenadas; sus logits no deben interpretarse como predicciones hasta realizar un fine-tuning específico.
+- No se documentan sesgos conocidos del modelo; al tratarse de un modelo de proteínas, los sesgos relevantes estarían en la distribución de entrenamiento, que no se detalla.
+- Riesgo de alucinación estructural: no se aportan datos sobre la fiabilidad del modelo en secuencias fuera de distribución; se recomienda usar las métricas de confianza (pTM, pLDDT) como filtro.
+- Limitaciones de contexto e idioma: no disponibles; el modelo no procesa lenguaje natural.
+- La licencia MIT permite uso comercial, pero debe verificarse la procedencia del checkpoint original (`biohub/ESMFold2`) y las dependencias del runtime FastPLMs.
+- El modelo requiere `trust_remote_code=True`, lo que implica ejecutar código del repositorio; conviene auditar el código antes de desplegarlo en producción.
+- El consumo de memoria puede ser elevado en complejos grandes; es necesario ajustar `set_chunk_size` y el número de pasos de difusión.
+- La documentación de la model card está generada automáticamente desde `src/fastplms/models.toml` y puede no cubrir todos los detalles de implementación.
 
 ## Enlaces
 
-- [Modelo en Hugging Face](https://huggingface.co/Synthyra/ESMFold2)
-- [Variante Experimental](https://huggingface.co/Synthyra/ESMFold2-Experimental)
-- [Variante Fast](https://huggingface.co/Synthyra/ESMFold2-Fast)
-- [Pagina de Synthyra sobre ESMFold2 y Test-Time Compute](https://synthyra.com/models/esmfold-ttt)
-- [Biohub Platform - ESMFold2](https://www.biohub.ai/models/esmfold2)
-- [Repositorio GitHub de referencia (atong01/esmfold2)](https://github.com/atong01/esmfold2/blob/main/README.md)
+- [Hugging Face: Synthyra/ESMFold2](https://huggingface.co/Synthyra/ESMFold2)
+- Checkpoint original: `biohub/ESMFold2` (referenciado en la model card; no se proporciona URL directa en la información disponible)
+- Requisitos de instalación: https://huggingface.co/Synthyra/ESMFold2/resolve/main/requirements.txt

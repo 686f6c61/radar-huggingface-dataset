@@ -5,7 +5,7 @@
   "author": "byjameson",
   "url": "https://huggingface.co/byjameson/atom-zero-49m",
   "created_at": "2026-11-21T22:34:39.000Z",
-  "updated_at": "2026-11-22T02:57:48.000Z",
+  "updated_at": "2026-11-22T19:20:00.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -20,6 +20,9 @@
     "rag",
     "source-cited",
     "small-language-model",
+    "squad",
+    "knowledge-graph",
+    "skills",
     "en",
     "license:apache-2.0",
     "region:us"

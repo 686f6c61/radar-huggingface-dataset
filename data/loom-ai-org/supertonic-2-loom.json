@@ -5,7 +5,7 @@
   "author": "loom-ai-org",
   "url": "https://huggingface.co/loom-ai-org/supertonic-2-loom",
   "created_at": "2026-08-11T12:19:36.000Z",
-  "updated_at": "2026-10-21T13:39:15.000Z",
+  "updated_at": "2026-11-22T21:37:58.000Z",
   "license": "other",
   "license_family": "oss",
   "pipeline_tag": "text-to-speech",
@@ -33,7 +33,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 77,
+  "downloads_30d": 75,
   "trending_score": 0,
   "parameters": 66626307,
   "parameters_human": "66.6M",

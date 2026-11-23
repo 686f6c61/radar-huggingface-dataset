@@ -5,7 +5,7 @@
   "author": "Xylolabs",
   "url": "https://huggingface.co/Xylolabs/Z-Image-Turbo-Tenstorrent-Tensix-Components",
   "created_at": "2026-11-15T07:04:08.000Z",
-  "updated_at": "2026-11-19T08:14:37.000Z",
+  "updated_at": "2026-11-22T10:47:37.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-to-image",

@@ -1,0 +1,48 @@
+{
+  "schema": 2,
+  "id": "mradermacher/xDAN-L2-Thinking-Coder-OlympicCoder-32B-GGUF",
+  "slug": "mradermacher-xdan-l2-thinking-coder-olympiccoder-32b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/xDAN-L2-Thinking-Coder-OlympicCoder-32B-GGUF",
+  "created_at": "2025-03-23T00:19:35.000Z",
+  "updated_at": "2026-11-23T05:27:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:xDAN2099/xDAN-L2-Thinking-Coder-OlympicCoder-32B",
+    "base_model:quantized:xDAN2099/xDAN-L2-Thinking-Coder-OlympicCoder-32B",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 3,
+  "trending_score": 0,
+  "parameters": 32763876352,
+  "parameters_human": "32.76B",
+  "storage_bytes": 224000856608,
+  "storage_human": "224.0 GB",
+  "context_length": 32768,
+  "base_model": "xDAN2099/xDAN-L2-Thinking-Coder-OlympicCoder-32B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

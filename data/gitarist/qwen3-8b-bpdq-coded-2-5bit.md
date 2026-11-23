@@ -2,62 +2,58 @@
 
 ## Resumen
 
-BPDQ coded 2.5-bit es una cuantización extrema del modelo Qwen3-8B de Alibaba Qwen, publicada por el usuario `gitarist` en Hugging Face. No se trata de un modelo entrenado desde cero, sino de una reescritura de los pesos lineales de Qwen3-8B en tres planos de bits por peso, con codificación de los dos planos bajos por bloques de 8 pesos, de forma que cada bloque ocupa 18 bits. Sumando coeficientes fp16 cada 256 columnas, el resultado son 2,5 bits por peso en las capas lineales, con embeddings a 4 bits y cabeza de salida a 8 bits, en un repositorio de 3,8 GB.
+Qwen3-8B-BPDQ-coded-2.5bit es una versión cuantizada a 2,5 bits por peso de los pesos lineales del modelo Qwen3-8B de Alibaba Qwen, publicada por el usuario gitarist en Hugging Face. La cuantización emplea una técnica propia denominada BPDQ (bit-plane decomposition quantization), que descompone cada peso lineal en tres planos de bits y codifica los dos planos inferiores por bloques de ocho pesos mediante códigos de paridad y el código de Reed-Muller RM(1,3). El resultado son 18 bits por cada ocho pesos, más coeficientes fp16 cada 256 columnas.
 
-El interés técnico está en el método de compresión: combina codificación block-Babai, un codeword de peso par de 7 bits para el segundo plano y un código Reed-Muller RM(1,3) de 3 bits para el tercero, lo que permite reconstruir los pesos con una penalización de calidad medible (KL de 0,254 frente a fp16 en WikiText-2) y sin necesidad de recalcular quantización en tiempo de carga. Sobre esa base se aplicaron 3.056 pasos de QAT con destilación de conocimiento y 250 pasos de GRPO para recuperar capacidades.
+El modelo base es un transformer denso de la familia Qwen3, con aproximadamente 8.200 millones de parámetros en su forma original. El repositorio cuantizado ocupa 6,9 GB y contiene 2.304.134.400 parámetros en safetensors, lo que refleja la compresión agresiva de los pesos lineales. La licencia es Apache 2.0, heredada del modelo base, y el pipeline declarado es text-generation con soporte para conversación.
 
-La relevancia práctica es doble: por un lado, permite ejecutar un modelo de aproximadamente 8 mil millones de parámetros en una única GPU consumer con un consumo de memoria muy inferior al de las cuantizaciones de 4 bits habituales; por otro, el precio a pagar es un deterioro claro en tareas de conocimiento factual y en tool calling multi-turno, por lo que su nicho son despliegues con requisitos estrictos de VRAM y cargas de trabajo conversacionales o de razonamiento acotado. La integración requiere un módulo Python propio (`bpdq`) que registra el método de cuantización en vLLM, y solo funciona en CUDA con sm80 o superior.
+Su relevancia radica en que demuestra que es posible reducir un modelo de 8B a 2,5 bits por peso manteniendo un promedio del 74,5 % en una batería de 12 tareas, frente al 80,6 % del modelo fp16, con un throughput de decodificación de hasta 7.700 tokens por segundo en una única RTX 4090 con vLLM. Es una pieza interesante para investigación en cuantización extrema y para despliegues con restricciones severas de memoria, aunque con degradaciones notables en tareas de conocimiento factual y generación de código.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (heredada de Qwen3-8B), con pesos lineales cuantizados en planos de bits codificados (BPDQ) |
-| Parametros totales | Modelo base Qwen3-8B (~8,2 mil millones); el índice de safetensors del repo declara 1.001.803.008 elementos almacenados, correspondientes a la representación empaquetada a 2,5 bits |
-| Parametros activos | No aplica (no es un modelo MoE) |
-| Longitud de contexto | No especificada en la model card; corresponde a la del modelo base Qwen3-8B (32.768 tokens nativos, ampliables a 131.072 con YaRN segun la documentacion de Qwen) |
-| Tipos de cuantizacion | BPDQ 2,5 bits en pesos lineales (3 planos de bits por peso; 18 bits por bloque de 8 pesos; coeficientes fp16 cada 256 columnas); embeddings a 4 bits; cabeza de salida a 8 bits |
-| Idiomas soportados | No disponible (la model card no declara idiomas; se heredan los del modelo base Qwen3-8B) |
+| Arquitectura | Transformer denso (Qwen3), pesos lineales en 2,5 bits con codificación BPDQ |
+| Parámetros totales | 2.304.134.400 (safetensors del repo cuantizado); modelo base Qwen3-8B de ~8B |
+| Parámetros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible en la información proporcionada (heredada del Qwen3-8B base) |
+| Tipos de cuantización | BPDQ a 2,5 bits/peso en lineales; embedding a 4 bits; head a 8 bits |
+| Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors con tensores empaquetados, mas modulo Python `bpdq` para vLLM/Transformers; no hay GGUF, GPTQ ni AWQ publicados |
+| Formato de pesos | safetensors (requiere el paquete `bpdq` para vLLM o transformers) |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura subyacente es la de Qwen3-8B: un transformer decoder-only denso con atención completa, sin mezcla de expertos y con modo de razonamiento explícito ("think"). Lo que cambia es la representación de los pesos. Cada peso lineal se descompone en tres planos de bits: el primero se almacena tal cual, el segundo como codeword de peso par (7 bits) y el tercero como uno de los 8 codewords del código Reed-Muller RM(1,3) (3 bits). Eso da 18 bits por cada 8 pesos; añadiendo coeficientes fp16 compartidos cada 256 columnas, la tasa efectiva queda en 2,5 bits por peso. Las matrices de embedding se guardan a 4 bits y la cabeza de salida a 8 bits, lo que explica que el repositorio ocupe 3,8 GB en disco.
+El modelo parte de Qwen3-8B, un transformer denso con atención estándar y mecanismos de razonamiento tipo thinking. Sobre él se aplica la receta BPDQ: cada peso lineal se representa con tres planos de bits. El primer plano se almacena tal cual; el segundo se codifica como palabra de código de peso par (7 bits); el tercero se codifica como uno de los ocho codewords del código Reed-Muller RM(1,3) (3 bits). Esto da 18 bits por cada ocho pesos, y con coeficientes fp16 cada 256 columnas el total es de 2,5 bits por peso.
 
-El proceso de construcción descrito por el autor tiene tres fases: primero una codificación block-Babai de los pesos originales, después 3.056 pasos de QAT con destilación de conocimiento desde el modelo fp16 (KD QAT) y finalmente 250 pasos de GRPO. No se detallan la composición del dataset de destilación, el tamaño del lote, la tasa de aprendizaje ni los hiperparámetros de GRPO. La decodificación es la estándar del transformer; la innovación se concentra en el esquema de compresión y en el kernel de reconstrucción al vuelo que implementa el método `bpdq` para vLLM.
+El proceso de entrenamiento consistió en una codificación block-Babai inicial, seguida de 3.056 pasos de destilación con QAT (quantization-aware training) y 250 pasos adicionales de GRPO (Group Relative Policy Optimization). La decodificación requiere CUDA con capacidad de cómputo sm80 o superior, y se integra con vLLM registrando el método de cuantización `bpdq`.
 
 ## Capacidades
 
-- Generación de texto conversacional multi-turno, con soporte del modo de razonamiento de Qwen3 (`think` / no-think) heredado del modelo base.
-- Razonamiento matemático de tipo escolar: 84,2 en GSM8K sin modo think y 87,6 con presupuesto de pensamiento de 1.024 tokens.
-- Generación de código en Python: 71,3 en HumanEval y 57,6 en MBPP.
-- Tool calling / function calling: 93,8 en BFCL simple, 93,0 en multiple, 93,5 en parallel, 87,0 en parallel-multiple y 81,7 en irrelevance.
-- Seguimiento de instrucciones con formato estricto: 76,3 en IFEval (prompt strict).
-- Conocimiento factual limitado: 37,3 en TriviaQA 5-shot, muy por debajo de fp16.
-- Capacidades de agente multi-paso: parciales; el apartado multi-turno de BFCL cae a 31,0 frente a 45,0 en fp16.
-- Capacidades multilingües: no verificadas en la información disponible; dependen íntegramente de lo que conserve el proceso de cuantización sobre Qwen3-8B.
-- No se documentan capacidades de visión ni de audio (el modelo base es solo texto).
+- Generación de texto y conversación multi-turno, heredadas de Qwen3-8B.
+- Razonamiento con modo thinking (los benchmarks GSM8K distinguen entre nothink y think @1024).
+- Generación de código (HumanEval, MBPP) con degradación respecto a fp16.
+- Matemáticas y razonamiento aritmético (GSM8K).
+- Tool calling y function calling, evaluado con BFCL en escenarios simple, multiple, parallel, parallel-multiple, irrelevance y multi-turn.
+- Seguimiento de instrucciones (IFEval).
+- Capacidades multilingües: no disponibles en la información proporcionada.
+- No se documentan capacidades de visión ni audio en la información disponible.
 
 ## Casos de uso
 
-- Despliegue de un asistente conversacional en una única GPU consumer: con 3,8 GB de pesos, el modelo cabe holgadamente en tarjetas de 8-12 GB, dejando el resto de VRAM para caché KV y permitiendo atender varias sesiones concurrentes con contexto largo.
-- Generación de código asistida en entornos con presupuesto de memoria: sus 71,3 en HumanEval lo hacen utilizable para autocompletado y generación de funciones Python, integrándolo en el IDE o en un servicio interno donde no se pueda asumir una GPU de 24 GB para el modelo en fp16.
-- Enrutamiento y orquestación de herramientas: los 93,8 / 93,0 / 93,5 en las pruebas BFCL de llamada simple, múltiple y paralela permiten usarlo como "tool router" barato que decide qué función invocar antes de delegar la ejecución en un modelo mayor.
-- Extracción y formateo de datos estructurados: con 76,3 en IFEval, es adecuado para tareas de resumen con plantilla fija, clasificación con formato JSON y normalización de registros, donde el coste por token importa más que el conocimiento enciclopédico.
-- Razonamiento matemático por lotes (batch offline): 87,6 en GSM8K con 1.024 tokens de pensamiento lo hacen viable para procesar grandes volúmenes de problemas aritméticos o de verificación de cálculos en pipelines nocturnos, con throughput agregado alto gracias a los 7.000 tok/s a batch 256 que reporta el autor.
-- Servicio de alto rendimiento en vLLM: los 231 tok/s a batch 1 y 4.500 tok/s a batch 32 en una RTX 4090 permiten montar un endpoint de inferencia de bajo coste para resúmenes, reescritura y respuestas cortas.
-- Prototipado e investigación sobre cuantización extrema: sirve como caso de estudio reproducible de QAT con destilación más GRPO sobre un esquema de codificación de planos de bits, útil para grupos que investiguen compresión por debajo de 3 bits.
-- Base para fine-tuning ligero en dominios acotados: al estar bajo Apache 2.0 y ocupar poco, se puede adaptar con LoRA a un dominio concreto (por ejemplo, soporte técnico interno) donde el conocimiento factual del modelo base sea irrelevante.
+- Investigación en cuantización extrema: el modelo sirve como referencia reproducible para estudiar el impacto de 2,5 bits/peso en distintas tareas, con métricas KL frente a fp16 y batería de benchmarks publicada.
+- Despliegue con memoria muy limitada: al ocupar 3,1 GB en disco y permitir vLLM con un solo GPU, encaja en entornos donde no cabe un 8B en fp16 ni en cuantizaciones de 4 bits.
+- Servicio de alto throughput: con 7.700 tok/s a batch 256 en una RTX 4090, es adecuado para pipelines de generación masiva donde la latencia por token no es crítica pero el volumen sí.
+- Asistentes conversacionales con tool calling: mantiene BFCL simple en 93,8 frente a 94,5 de fp16, por lo que puede usarse en agentes que invocan funciones con esquemas bien definidos.
+- Experimentación con decodificación especulativa o destilación: su naturaleza cuantizada y su receta QAT + GRPO lo hacen útil como alumno o como objetivo de comparación.
+- Prototipado en estaciones de trabajo con una sola GPU consumer: permite probar flujos de Qwen3-8B sin necesidad de A100/H100, aceptando la pérdida de calidad en conocimiento factual.
+- Evaluación de robustez de agentes multi-turno: los resultados BFCL multi-turn (31,0 frente a 45,0) permiten estudiar cómo la cuantización afecta al razonamiento encadenado.
 
 ## Benchmarks y rendimiento
 
-Datos publicados por el autor en la model card:
-
-| Metrica | fp16 (Qwen3-8B) | Este modelo (2,5 bits) |
+| Métrica | fp16 | Este modelo |
 |---|---|---|
-| bits/peso (capas lineales) | 16 | 2,5 |
-| KL frente a fp16, WikiText-2 | 0 | 0,254 |
+| bits/peso (lineales) | 16 | 2,5 |
+| KL a fp16, WikiText-2 | 0 | 0,254 |
 | GSM8K nothink | 91,7 | 84,2 |
 | GSM8K think @1024 | 83,0 | 87,6 |
 | HumanEval | 82,9 | 71,3 |
@@ -70,45 +66,45 @@ Datos publicados por el autor en la model card:
 | BFCL parallel-multiple | 91,0 | 87,0 |
 | BFCL irrelevance | 83,8 | 81,7 |
 | BFCL multi-turn | 45,0 | 31,0 |
-| Media de 12 tareas | 80,6 | 74,5 |
+| Promedio 12 tareas | 80,6 | 74,5 |
 
-Throughput de decodificación medido por el autor con vLLM en una RTX 4090: 231 tok/s con batch 1, 900 con batch 4, 4.500 con batch 32 y 7.000 con batch 256.
+Throughput de decodificación con vLLM 0.28 en una RTX 4090: 260 tok/s a batch 1, 970 a batch 4, 3.280 a batch 16, 5.040 a batch 32, 6.560 a batch 64 y 7.700 a batch 256.
 
 ## Requisitos de hardware
 
-- Pesos en disco y en memoria: 3,8 GB. Estimación de VRAM para inferencia: aproximadamente 4-5 GB para pesos más caché KV; el consumo real depende de la longitud de contexto y del número de secuencias concurrentes (estimación propia, no publicada por el autor).
-- GPU compatibles: solo CUDA con compute capability sm80 o superior, es decir, A100, H100, A10, L4, RTX 3090, RTX 4090 y series posteriores. Quedan fuera GPUs anteriores a Ampere, Apple Silicon, ROCm y CPU.
-- Cabe en GPU consumer: sí, en cualquier tarjeta con 8 GB o más (RTX 3060 Ti/4060 Ti, RTX 3070/4070, RTX 3080/4080, RTX 4090). La RTX 4090 es la referencia usada por el autor para las cifras de throughput.
-- Opciones de despliegue: exclusivamente vLLM con el módulo `bpdq` importado previamente (`LLM(..., quantization="bpdq", dtype="float16")` o `vllm serve ... --quantization bpdq --dtype float16`). El autor indica que `bpdq.load(MODEL_DIR)` devuelve un modelo de Transformers, pero no documenta soporte para llama.cpp, Ollama, TGI ni TensorRT-LLM.
-- Latencia y throughput: 231 tok/s por secuencia a batch 1 y hasta 7.000 tok/s agregados a batch 256 en una RTX 4090, según el autor.
+- VRAM estimada: el repo pesa 6,9 GB y el autor indica 3,1 GB en disco para los pesos; en inferencia con vLLM y dtype float16 hay que sumar caché KV y overhead del runtime, por lo que se recomienda al menos 8-12 GB de VRAM según longitud de contexto y batch.
+- GPU recomendadas: RTX 4090 (mediciones oficiales), A100, H100 y cualquier GPU con sm80 o superior.
+- Cabe en GPU consumer: sí, en RTX 3090, 4090 y tarjetas con 12 GB o más; en 8 GB puede requerir batch pequeño y contexto corto.
+- Opciones de despliegue: vLLM 0.28 o superior con el paquete `bpdq` registrando la cuantización; transformers mediante `bpdq.load(MODEL_DIR)`. No se documenta soporte para llama.cpp, Ollama ni TGI.
+- Latencia y throughput: 260 tok/s a batch 1 y 7.700 tok/s a batch 256 en una RTX 4090 con vLLM 0.28.
+- Requisito de plataforma: solo CUDA, sm80 o superior.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | bits/peso | Tamano en disco | Contexto | Media 12 tareas | Licencia | Disponibilidad |
-|---|---|---|---|---|---|---|---|
-| Qwen3-8B (fp16) | ~8,2 B | 16 | ~16 GB (no indicado en la info) | 32.768 nativos / 131.072 con YaRN | 80,6 | Apache 2.0 | Hugging Face oficial |
-| Qwen3-8B-BPDQ-coded 2.5bit | ~8,2 B (1.001.803.008 elementos empaquetados) | 2,5 | 3,8 GB | No indicado (heredado del base) | 74,5 | Apache 2.0 | Hugging Face, autor individual, 0 descargas |
-| Cuantizaciones de 4 bits de Qwen3-8B (AWQ/GPTQ) | ~8,2 B | ~4 | ~5-6 GB | Igual que el base | No disponible | Apache 2.0 | Múltiples repos comunitarios |
+| Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| Qwen3-8B (fp16) | ~8B | no disponible | 16 bits | Apache 2.0 | Hugging Face |
+| Qwen3-8B-BPDQ-coded-2.5bit | 2,30B en safetensors (base ~8B) | no disponible | 2,5 bits lineales | Apache 2.0 | Hugging Face |
+| Alternativas de 4 bits (GPTQ/AWQ) de Qwen3-8B | ~8B | no disponible | 4 bits | Apache 2.0 | Hugging Face |
 
-No se dispone de resultados de benchmarks publicados para las alternativas de 4 bits dentro de la información proporcionada, por lo que la comparación numérica directa solo puede hacerse contra el fp16 del propio autor. Frente a la cuantización de 4 bits, este modelo reduce el espacio en disco un 25-35 % adicional a cambio de una pérdida de calidad documentada y de un ecosistema de despliegue mucho más restringido (solo vLLM con módulo propio).
+La comparación cuantitativa directa con otras cuantizaciones de Qwen3-8B no está disponible en la información proporcionada. Frente al modelo fp16, la pérdida media es de 6,1 puntos en la batería de 12 tareas, con caídas especialmente marcadas en TriviaQA (-19,4), HumanEval (-11,6) y BFCL multi-turn (-14,0), y una mejora en GSM8K think @1024 (+4,6).
 
 ## Limitaciones y advertencias
 
-- Pérdida de conocimiento factual muy marcada: TriviaQA 5-shot cae de 56,7 a 37,3, un descenso de casi 20 puntos que anticipa una tasa de alucinación sensiblemente mayor en preguntas abiertas sobre hechos.
-- Deterioro relevante en código: HumanEval baja de 82,9 a 71,3 y MBPP de 66,6 a 57,6. No es recomendable como generador de código en producción sin revisión humana ni tests automáticos.
-- Tool calling multi-turno degradado: BFCL multi-turn cae de 45,0 a 31,0, por lo que los flujos de agente con varias rondas de herramientas son el punto más débil frente al modelo original.
-- Divergencia de distribución medible: KL de 0,254 frente a fp16 en WikiText-2; no es una cuantización "casi sin pérdida" y conviene validar sobre el dominio concreto antes de desplegar.
-- Solo CUDA sm80+: sin soporte para CPU, Apple Silicon, ROCm ni GPUs anteriores a Ampere. Requiere importar el paquete `bpdq` antes de instanciar vLLM, lo que añade un paso de integración no estándar en pipelines existentes.
-- Ecosistema de despliegue cerrado: no hay GGUF, ni soporte en llama.cpp/Ollama/TGI, ni kernels para TensorRT-LLM. La portabilidad es prácticamente nula.
-- Idiomas no declarados: la model card no enumera idiomas y no hay evaluación multilingüe; el rendimiento fuera de inglés es desconocido y probablemente inferior al del base.
-- Madurez y trazabilidad: repositorio publicado por un autor individual, con 0 descargas y 0 likes en el momento de la consulta, sin paper asociado ni evaluación independiente que reproduzca las cifras. Los benchmarks son autodeclarados.
-- Licencia Apache 2.0: permite uso comercial y modificación, pero el aviso de copyright y las condiciones deben mantenerse; conviene verificar además la licencia del modelo base Qwen3-8B, que es la misma.
-- Inconsistencia de conteo de parámetros: el índice de safetensors declara 1.001.803.008 elementos, muy lejos de los ~8,2 B del modelo base, porque los tensores están empaquetados; no debe interpretarse como un modelo de 1 B de parámetros ni usarse para estimar capacidad.
+- Degradación severa en conocimiento factual: TriviaQA 5-shot cae de 56,7 a 37,3, lo que desaconseja su uso en tareas de recuperación de hechos sin verificación externa.
+- Pérdida notable en generación de código: HumanEval baja 11,6 puntos y MBPP 9,0, por lo que no es recomendable para producción de código sin revisión.
+- Razonamiento multi-turno de agentes muy degradado: BFCL multi-turn cae de 45,0 a 31,0.
+- Riesgo de alucinación incrementado por la cuantización extrema y por la caída en conocimiento factual.
+- Solo funciona en CUDA sm80 o superior; no hay soporte documentado para CPU, Metal ni ROCm.
+- Requiere el paquete `bpdq` y una versión concreta de vLLM (0.28 en las mediciones); la compatibilidad con otras versiones no está garantizada.
+- Idiomas soportados no documentados; se heredan del Qwen3-8B base pero no se han evaluado tras la cuantización.
+- Longitud de contexto no especificada en la información disponible; debe asumirse la del modelo base, sin garantías de calidad tras la compresión.
+- Licencia Apache 2.0 permite uso comercial, pero el autor no ofrece garantías sobre el comportamiento del modelo cuantizado.
+- El número de parámetros del safetensors (2,30B) no coincide con el del modelo base (~8B) por la representación comprimida; hay que tenerlo en cuenta al estimar memoria y al integrarlo en herramientas que infieran el tamaño por el checkpoint.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/gitarist/Qwen3-8B-BPDQ-coded-2.5bit
-- Modelo base Qwen3-8B: https://huggingface.co/Qwen/Qwen3-8B
-- Paper, blog o repositorio del método BPDQ: no disponible en la información proporcionada.
-- Demo o espacio de inferencia: no disponible.
-- Enlaces adicionales: la búsqueda web no devolvió resultados relevantes para este modelo.
+- Modelo base: https://huggingface.co/Qwen/Qwen3-8B
+- Repositorio de vLLM: https://github.com/vllm-project/vllm
+- No se han encontrado en la información proporcionada papers, blogs, repositorios del paquete `bpdq` ni demos adicionales.

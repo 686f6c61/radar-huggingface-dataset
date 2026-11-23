@@ -96,16 +96,5 @@
       "value": 7.64
     }
   ],
-  "sources": [
-    {
-      "title": "mehdi-hf/nemotron-asr-streaming-farsi · Hugging Face",
-      "url": "https://huggingface.co/mehdi-hf/nemotron-asr-streaming-farsi",
-      "snippet": "A streaming speech recognition model for Persian (Farsi). It's fine-tuned from NVIDIA's nemotron-3.5-asr-streaming-0.6b on 1,181 hours of openly licensed Persian speech, on the base model's reserved fa-IR language slot."
-    },
-    {
-      "title": "README.md · mehdi-hf/nemotron-asr-streaming-farsi at main",
-      "url": "https://huggingface.co/mehdi-hf/nemotron-asr-streaming-farsi/blob/main/README.md",
-      "snippet": "A streaming speech recognition model for Persian (Farsi). It's fine-tuned from NVIDIA's nemotron-3.5-asr-streaming-0.6b on 1,181 hours of openly licensed Persian speech, on the base model's reserved fa-IR language slot."
-    }
-  ]
+  "sources": []
 }

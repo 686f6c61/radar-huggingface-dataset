@@ -5,7 +5,7 @@
   "author": "stratosphere",
   "url": "https://huggingface.co/stratosphere/qwen3.5-0.8b-slips-immune-summarization",
   "created_at": "2026-11-04T12:09:32.000Z",
-  "updated_at": "2026-11-04T15:19:29.000Z",
+  "updated_at": "2026-11-23T12:22:30.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -41,7 +41,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 457,
+  "downloads_30d": 458,
   "trending_score": 0,
   "parameters": 873438784,
   "parameters_human": "873.4M",

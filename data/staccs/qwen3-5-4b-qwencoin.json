@@ -5,7 +5,7 @@
   "author": "staccs",
   "url": "https://huggingface.co/staccs/Qwen3.5-4B-qwencoin",
   "created_at": "2026-11-13T12:20:43.000Z",
-  "updated_at": "2026-11-13T23:26:28.000Z",
+  "updated_at": "2026-11-23T02:33:10.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -30,7 +30,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 87,
+  "downloads_30d": 93,
   "trending_score": 0,
   "parameters": 7660604096,
   "parameters_human": "7.66B",

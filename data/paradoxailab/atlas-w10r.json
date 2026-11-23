@@ -5,7 +5,7 @@
   "author": "paradoxailab",
   "url": "https://huggingface.co/paradoxailab/atlas-w10r",
   "created_at": "2026-11-18T22:31:55.000Z",
-  "updated_at": "2026-11-18T22:31:58.000Z",
+  "updated_at": "2026-11-22T11:45:14.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "time-series-forecasting",
@@ -41,8 +41,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "PARADOXAIlabs/atlas-w10r",
+  "renamed_at": "2026-11-23T11:34:40.408Z",
   "benchmarks": [],
   "sources": []
 }

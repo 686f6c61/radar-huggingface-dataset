@@ -2,52 +2,51 @@
 
 ## Resumen
 
-LvW-Dictate-1.5B-GGUF es una cuantizacion estatica del modelo LvW-Dictate-1.5B, publicada por el usuario mradermacher en Hugging Face. Se trata de un repositorio de pesos en formato GGUF generados con la herramienta de cuantizacion del autor (etiquetado internamente como `quantize_version: 2` y `convert_type: hf`), pensados para su uso con motores de inferencia compatibles con GGUF como llama.cpp u Ollama. El repositorio original del modelo base es `Lucasgitguy-co/LvW-Dictate-1.5B`, del que no se proporciona informacion adicional en la documentacion disponible.
+LvW-Dictate-1.5B-GGUF es la distribucion en formato GGUF del modelo LvW-Dictate-1.5B, desarrollado originalmente por el usuario Lucasgitguy-co y cuantizado por mradermacher. Se trata de un modelo de lenguaje de 1.078.285.824 parametros (aproximadamente 1,5B nominales) especializado en el post-procesamiento de transcripciones de voz a texto: su tarea principal es la limpieza de dictado, es decir, la eliminacion de disfluencias (muletillas, repeticiones, falsos comienzos) y la normalizacion del texto generado por sistemas ASR.
 
-El modelo base tiene aproximadamente 1.500 millones de parametros, segun se deduce del nombre del checkpoint. El nombre "Dictate" sugiere un posible enfoque hacia tareas de dictado o transcripcion, aunque esta interpretacion no esta confirmada por ninguna fuente en la informacion proporcionada. No se dispone de datos sobre arquitectura, datos de entrenamiento, licencia ni idiomas soportados.
+El modelo parte de una arquitectura transformer estandar en formato Hugging Face y se ofrece aqui en 12 variantes de cuantizacion GGUF que van desde Q2_K (0,5 GB) hasta f16 (2,3 GB), lo que lo hace desplegable en hardware muy modesto, incluido CPU. Esta orientado exclusivamente al ingles y se distribuye bajo licencia Apache 2.0, lo que permite uso comercial sin restricciones adicionales.
 
-La relevancia de esta publicacion es fundamentalmente practica: ofrece una via para ejecutar el modelo en hardware de consumo mediante cuantizaciones de baja precision, sin necesidad de GPU de datacenter. No obstante, la ausencia de model card sustantiva, licencia declarada y resultados de benchmarks limita seriamente su evaluacion rigurosa para entornos de produccion.
+Su relevancia actual radica en que cubre un nicho concreto dentro del pipeline de voz: no compite como modelo de proposito general, sino que actua como etapa de refinado entre un motor ASR y el texto final que consume el usuario o un sistema downstream. Para desarrolladores que construyen aplicaciones de dictado, subtitulado o asistentes por voz, un modelo pequeno y especializado como este puede integrarse en local con un coste computacional minimo.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible |
-| Parametros totales | aproximadamente 1.500 millones (deducido del nombre del checkpoint) |
-| Parametros activos | no disponible (no se indica que sea MoE) |
+| Arquitectura | Transformer (modelo de lenguaje; detalles de capas no disponibles) |
+| Parametros totales | 1.078.285.824 |
+| Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | x-f16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q4_K_M, Q4_K_S, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K, IQ4_XS |
-| Idiomas soportados | no disponible |
-| Licencia | no disponible |
-| Formato de pesos | GGUF (cuantizacion estatica, `output_tensor_quantised: 1`) |
+| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, f16 |
+| Idiomas soportados | ingles (en) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (cuantizaciones estaticas); el modelo base original en safetensors |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion sobre la arquitectura del modelo base LvW-Dictate-1.5B en la documentacion proporcionada. El nombre del checkpoint sugiere un transformer de aproximadamente 1.500 millones de parametros, pero no se confirma ni el tipo de atencion, ni si emplea tecnicas como grouped-query attention, ni la composicion del dataset de entrenamiento.
+La informacion disponible no detalla la arquitectura interna del modelo base mas alla de que se trata de un transformer de aproximadamente 1,5B parametros publicado en formato Hugging Face. La model card del repositorio cuantizado no incluye datos sobre numero de capas, dimensiones ocultas, mecanismo de atencion ni longitud de contexto soportada.
 
-Respecto al proceso de cuantizacion, la model card indica que se han generado cuantizaciones estaticas a partir de los pesos en formato Hugging Face (`convert_type: hf`), con la version 2 del pipeline de cuantizacion del autor y cuantizacion de tensores de salida activada (`output_tensor_quantised: 1`). Se ofrecen tanto cuantizaciones K-quant clasicas (Q2_K a Q8_0) como la variante IQ4_XS del conjunto I-quant. No se documenta si hubo RLHF, DPO ni ninguna fase de alineacion posterior al preentrenamiento.
+Respecto al entrenamiento, la model card lista dos datasets: `Lucasgitguy-co/lvw-dictate-cleanup` y `amaai-lab/DisfluencySpeech`. El primero parece ser un corpus propio de pares de transcripciones con y sin disfluencias; el segundo es un dataset publico orientado a la eliminacion de disfluencias en habla. No se especifica el numero de tokens de entrenamiento, la composicion exacta del dataset, ni si se aplicaron tecnicas de RLHF, DPO o ajuste supervisado. Tampoco se documentan innovaciones tecnicas como decodificacion especulativa o atencion lineal.
 
 ## Capacidades
 
-- Generacion de texto: no confirmada explicitamente, pero esperable en un modelo de lenguaje de 1.5B parametros.
-- Razonamiento y matematicas: no disponible.
-- Generacion de codigo: no disponible.
-- Vision: no disponible.
-- Tool calling / function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingues: no disponible.
-- Modo thinking, audio u otras capacidades especiales: no disponible.
-
-La unica capacidad verificable a partir de la informacion es la de ejecucion en motores de inferencia compatibles con GGUF gracias al formato de pesos publicado.
+- Limpieza de dictado: eliminacion de disfluencias (muletillas, repeticiones, falsos comienzos) en transcripciones ASR en ingles.
+- Post-procesamiento de speech-to-text: normalizacion y refinado del texto crudo generado por motores de reconocimiento de voz.
+- Generacion de texto conversacional: la etiqueta `conversational` sugiere uso en dialogos, aunque no se detalla su alcance.
+- Procesamiento de texto en ingles exclusivamente.
+- No se documenta soporte de tool calling ni function calling.
+- No se documenta soporte de agentes ni razonamiento multi-paso.
+- No se documenta capacidad de vision, audio nativo ni modo de pensamiento (thinking).
+- No se documentan capacidades multilingues mas alla del ingles.
 
 ## Casos de uso
 
-- Despliegue en hardware de consumo: las cuantizaciones Q4_K_M o IQ4_XS permiten ejecutar un modelo de 1.5B parametros en GPUs con 4-6 GB de VRAM o incluso en CPU, lo que facilita prototipado local sin infraestructura cloud.
-- Pruebas de integracion con llama.cpp u Ollama: el repositorio sirve para validar pipelines de inferencia locales con un modelo pequeno antes de escalar a checkpoints mayores.
-- Evaluacion comparativa de cuantizaciones: al ofrecer desde Q2_K hasta x-f16, permite medir la degradacion de calidad frente al modelo en precision completa en tareas concretas.
-- Aplicaciones de dictado o transcripcion asistida: si el nombre "Dictate" refleja el proposito del modelo base, podria emplearse en herramientas de escritura por voz, aunque esta hipotesis no esta confirmada.
-- Experimentacion academica: util como checkpoint ligero para estudiar el efecto de la cuantizacion en modelos de ~1.5B parametros.
-- Inferencia en dispositivos con recursos limitados: la variante Q2_K reduce el peso a aproximadamente 1 GB, viable en entornos embebidos o contenedores con poca memoria.
+- Limpieza de transcripciones de reuniones: tras pasar el audio por un motor ASR, el modelo elimina muletillas y repeticiones para producir actas legibles; su tamano reducido permite ejecutarlo en la misma maquina que el motor ASR sin GPU dedicada.
+- Dictado por voz en editores de texto: integrado como etapa final del pipeline, convierte el texto crudo del reconocedor en prosa limpia antes de insertarlo en el documento, con latencia baja gracias a las cuantizaciones Q4.
+- Subtitulado automatico: post-procesa los subtitulos generados por ASR para eliminar tartamudeos y falsos comienzos, mejorando la legibilidad en plataformas de video.
+- Asistentes de voz locales: en despliegues sin conexion, el modelo cabe en CPU o en GPU de gama baja (Q4_K_M, 0,8 GB) y refina las ordenes dictadas por el usuario antes de pasarlas al modulo de intenciones.
+- Transcripcion de entrevistas y notas de voz: limpia el texto de entrevistas grabadas para facilitar su analisis posterior o su publicacion como articulo.
+- Pipelines de accesibilidad: convierte dictado con disfluencias en texto claro para usuarios con dificultades motoras o del habla, ejecutandose en local por privacidad.
+- Preprocesamiento para NLP downstream: normaliza texto dictado antes de alimentar clasificadores, resumidores o sistemas de extraccion de informacion, reduciendo ruido en la entrada.
 
 ## Benchmarks y rendimiento
 
@@ -55,33 +54,41 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia (aproximada, segun cuantizacion de un modelo de 1.5B parametros):
-  - x-f16: en torno a 3 GB.
-  - Q8_0: en torno a 1,6 GB.
-  - Q5_K_M: en torno a 1,1 GB.
-  - Q4_K_M / IQ4_XS: en torno a 0,9-1 GB.
-  - Q2_K: en torno a 0,6-0,7 GB.
-- GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM para cuantizaciones Q4 o superiores (GTX 1650, RTX 3050, RTX 4060). Para x-f16 se recomienda 6 GB o mas (RTX 3060, RTX 4060 Ti).
-- Cabe en GPU de consumo: si, en la mayoria de GPUs modernas e incluso en iGPU con memoria unificada suficiente.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, llama-cpp-python, y otros motores compatibles con GGUF. vLLM y TGI no soportan GGUF de forma nativa en todas sus versiones.
-- Latencia y throughput estimados: no disponible.
+- VRAM estimada para inferencia: desde aproximadamente 0,5 GB (Q2_K) hasta 2,3 GB (f16), segun la cuantizacion elegida.
+- GPU recomendadas: cualquier GPU consumer con al menos 2-4 GB de VRAM es suficiente; tambien funciona en CPU. No requiere A100 ni H100.
+- Cabe en GPU consumer: si, en practicamente cualquier GPU moderna (GTX 1060 6 GB, RTX 3060, RTX 4090, etc.) e incluso en iGPU con memoria compartida.
+- Opciones de despliegue: llama.cpp, Ollama, y cualquier runtime compatible con GGUF; el modelo base original puede cargarse con transformers.
+- Latencia y throughput estimados: no disponibles en la informacion proporcionada; por el tamano (1,5B) y las cuantizaciones Q4, se espera una latencia de decenas de milisegundos por respuesta corta en GPU consumer, pero no hay mediciones publicadas.
 
 ## Comparativa con modelos similares
 
-No disponible. No se dispone de informacion sobre el modelo base ni sobre alternativas comparables en la documentacion proporcionada, por lo que no es posible establecer una comparativa fiable de parametros, contexto, rendimiento o licencia.
+No se dispone de datos de benchmarks ni de modelos directamente comparables en la informacion proporcionada. Como referencia estructural, se puede contrastar con el modelo base sin cuantizar:
+
+| Modelo | Parametros | Formato | Contexto | Licencia |
+|---|---|---|---|---|
+| mradermacher/LvW-Dictate-1.5B-GGUF | 1.078.285.824 | GGUF (12 cuants) | no disponible | Apache 2.0 |
+| Lucasgitguy-co/LvW-Dictate-1.5B (base) | 1.078.285.824 | safetensors (HF) | no disponible | Apache 2.0 |
+
+No se conocen alternativas especializadas en limpieza de dictado con las que comparar rendimiento de forma documentada.
 
 ## Limitaciones y advertencias
 
-- Ausencia de licencia declarada: no se especifica la licencia del modelo base ni de la cuantizacion, lo que impide determinar si el uso comercial esta permitido. Es imprescindible contactar con el autor del modelo original antes de cualquier despliegue en produccion.
-- Falta de model card sustantiva: no hay informacion sobre arquitectura, datos de entrenamiento, idiomas ni sesgos conocidos.
-- Riesgo de alucinacion: inherente a los modelos de lenguaje; sin evaluacion publicada no puede cuantificarse su magnitud.
-- Posible degradacion por cuantizacion: las variantes Q2_K y Q3_K pueden perder calidad de forma notable en tareas de razonamiento o generacion de codigo.
-- Idiomas no confirmados: no puede garantizarse un rendimiento adecuado en castellano ni en ningun otro idioma concreto.
-- Contexto desconocido: se desconoce la ventana de contexto maxima, lo que impide planificar su uso en conversaciones largas o documentos extensos.
-- Trazabilidad limitada: el repositorio es una cuantizacion de terceros; la responsabilidad sobre el comportamiento del modelo recae en el checkpoint original `Lucasgitguy-co/LvW-Dictate-1.5B`.
-- Cero descargas y cero likes en el momento de la consulta: no hay evidencia de validacion por parte de la comunidad.
+- Solo soporta ingles; no se debe usar para limpiar transcripciones en castellano u otros idiomas.
+- Al ser un modelo de lenguaje generativo, existe riesgo de alucinacion: puede alterar el contenido de la transcripcion en lugar de limitarse a limpiar disfluencias.
+- No se documentan sesgos conocidos, pero al entrenarse sobre datasets especificos de habla en ingles puede heredar sesgos de esos corpus.
+- La longitud de contexto no esta documentada, lo que dificulta planificar su uso con transcripciones largas; conviene trocear la entrada.
+- No hay informacion sobre el rendimiento real en tareas de limpieza (benchmarks ausentes), por lo que su calidad debe validarse en el caso de uso concreto antes de produccion.
+- Las cuantizaciones Q2_K y Q3_K pueden degradar notablemente la calidad; se recomienda Q4_K_M o superior para uso en produccion.
+- La licencia Apache 2.0 permite uso comercial, pero el modelo base y los datasets de entrenamiento podrian tener condiciones adicionales no reflejadas en esta ficha.
+- El repositorio tiene solo 416 descargas y 0 likes en el momento de la consulta, lo que indica adopcion limitada y poca validacion por parte de la comunidad.
 
 ## Enlaces
 
-- Repositorio GGUF: https://huggingface.co/mradermacher/LvW-Dictate-1.5B-GGUF
+- Repositorio Hugging Face (GGUF): https://huggingface.co/mradermacher/LvW-Dictate-1.5B-GGUF
 - Modelo base: https://huggingface.co/Lucasgitguy-co/LvW-Dictate-1.5B
+- Dataset de limpieza de dictado: https://huggingface.co/datasets/Lucasgitguy-co/lvw-dictate-cleanup
+- Dataset de disfluencias: https://huggingface.co/datasets/amaai-lab/DisfluencySpeech
+- Pagina de resumen del cuantizador: https://hf.tst.eu/model#LvW-Dictate-1.5B-GGUF
+- FAQ y peticiones de cuantizacion: https://huggingface.co/mradermacher/model_requests
+- Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Analisis de cuantizaciones (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9

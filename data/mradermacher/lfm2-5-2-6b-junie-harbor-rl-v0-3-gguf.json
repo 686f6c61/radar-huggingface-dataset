@@ -20,8 +20,6 @@
     "coding-agent",
     "tool-use",
     "en",
-    "base_model:vvsotnikov/LFM2.5-2.6B-junie-harbor-rl-v0.3",
-    "base_model:quantized:vvsotnikov/LFM2.5-2.6B-junie-harbor-rl-v0.3",
     "license:other",
     "endpoints_compatible",
     "region:us",

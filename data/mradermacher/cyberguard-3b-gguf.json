@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/CyberGuard-3B-GGUF",
   "created_at": "2026-11-18T20:30:57.000Z",
-  "updated_at": "2026-11-18T20:57:53.000Z",
+  "updated_at": "2026-11-22T21:39:26.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -21,8 +21,8 @@
     "trl",
     "ironllms",
     "en",
-    "base_model:FarrukhMunir1/CyberGuard-3B",
-    "base_model:adapter:FarrukhMunir1/CyberGuard-3B",
+    "base_model:FarrukhMunir1/CyberGaurd-Demo",
+    "base_model:adapter:FarrukhMunir1/CyberGaurd-Demo",
     "license:apache-2.0",
     "endpoints_compatible",
     "region:us",
@@ -36,7 +36,7 @@
   "storage_bytes": 27940892416,
   "storage_human": "27.9 GB",
   "context_length": 32768,
-  "base_model": "FarrukhMunir1/CyberGuard-3B",
+  "base_model": "FarrukhMunir1/CyberGaurd-Demo",
   "formats": [
     "gguf"
   ],

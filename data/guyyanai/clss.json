@@ -23,8 +23,8 @@
     "sequence",
     "sequence-segments",
     "feature-extraction",
-    "base_model:biohub/esm3-sm-open-v1",
-    "base_model:finetune:biohub/esm3-sm-open-v1",
+    "base_model:biohub/esm2_t12_35M_UR50D",
+    "base_model:finetune:biohub/esm2_t12_35M_UR50D",
     "license:apache-2.0",
     "region:us"
   ],

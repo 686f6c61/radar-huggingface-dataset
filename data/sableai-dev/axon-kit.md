@@ -2,95 +2,104 @@
 
 ## Resumen
 
-Axon-Kit es un modelo de lenguaje de tipo decoder-only desarrollado por SableAI-Dev, una empresa que lo enmarca dentro de su sistema Axon. Se trata de la primera versión pública de una familia de modelos nombrados por mustélidos (Kit, Stout, Marten, Fisher) y representa un ejercicio de entrenamiento desde cero sobre una única GPU doméstica. Con 89,3 millones de parámetros, está pensado como un modelo base de generación de texto en ruso, no como un asistente conversacional.
+Axon-Kit es un modelo de lenguaje de tipo GPT decoder-only desarrollado por SableAI-Dev, la primera entrega publica de la familia Axon de SableAI. Se trata de un modelo bilingue ruso-ingles de 99.585.280 parametros entrenado desde cero, sin inicializacion a partir de pesos de terceros, sobre una unica GPU de consumo (NVIDIA RTX 2060 con 6 GB de VRAM). Su proposito es servir como modelo base de generacion de texto para tareas simples y de baja latencia, no como asistente conversacional.
 
-El modelo se entrenó íntegramente desde cero sobre el subconjunto ruso del dataset FineWeb-2, sin inicialización desde pesos preexistentes. Su arquitectura es un transformer decoder-only convencional con LayerNorm, activación GELU, embeddings posicionales aprendidos y un vocabulario byte-level BPE de 16 000 tokens. La ventana de contexto es de 512 tokens, lo que limita su uso a tareas de continuación de texto de corto alcance.
+La relevancia del modelo es fundamentalmente metodologica y educativa: demuestra que es viable entrenar un transformer completo desde cero en hardware de gama de entrada, con un corpus de 268,9 millones de tokens procedente de FineWeb-2 (ruso) y FineWeb-Edu (ingles). No obstante, su utilidad practica en produccion es muy limitada: contexto de 512 tokens, ausencia de ajuste por instrucciones, arquitectura propietaria no compatible con transformers ni vLLM, y un grado de infraentrenamiento reconocido por el propio autor.
 
-Su relevancia es principalmente metodológica: demuestra que es posible entrenar un modelo de lenguaje funcional en hardware de consumo (una RTX 2060 de 6 GB) con un presupuesto de cómputo muy reducido (unas dos horas para la fase final). No obstante, el propio autor advierte que la calidad es limitada: el modelo está claramente infraentrenado, produce texto gramaticalmente plausible pero semánticamente incoherente y no ha pasado por fases de alineación como RLHF o DPO.
+La ficha se basa exclusivamente en la model card publicada y en los metadatos de Hugging Face. No se han publicado resultados de benchmarks estandar, y el modelo no incluye tokenizador estandar ni formato GGUF, lo que condiciona cualquier evaluacion comparativa.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (GPT), LayerNorm, GELU, embeddings posicionales aprendidos |
-| Parametros totales | 89 345 280 |
-| Parametros activos | No aplica (no es MoE) |
+| Arquitectura | Transformer decoder-only con LayerNorm, activacion GELU y embeddings posicionales aprendidos |
+| Parametros totales | 99.585.280 (99,6 M), con pesos de embedding de tokens y capa de salida compartidos |
+| Parametros activos | no aplica (no es MoE) |
 | Longitud de contexto | 512 tokens |
-| Tipos de cuantizacion | No disponible (pesos publicados solo en fp32) |
-| Idiomas soportados | Ruso (principal); inglés listado en metadatos pero no funcional según el autor |
-| Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (fp32, ~357 MB) |
-
-Otros datos técnicos: 16 capas, 10 cabezas de atención, dimensión de modelo 640, vocabulario de 16 000 tokens (byte-level BPE entrenado sobre el mismo corpus), pesos de embedding de tokens y capa de salida compartidos.
+| Tipos de cuantizacion | no disponible; los pesos se distribuyen unicamente en fp32 |
+| Idiomas soportados | Ruso e ingles (bilingue, un unico tokenizador para ambos) |
+| Licencia | Apache 2.0 (codigo y pesos); datos de entrenamiento bajo ODC-By 1.0 |
+| Formato de pesos | `model.safetensors` en fp32, aproximadamente 398 MB (repo de 1,1 GB) |
+| Capas / cabezas / dimension | 16 capas / 10 cabezas de atencion / 640 dimensiones |
+| Vocabulario | 32.000 tokens, byte-level BPE entrenado sobre mezcla ruso-ingles |
+| Compatibilidad | No carga en transformers ni vLLM; requiere el `model.py` incluido en el repo |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es un transformer decoder-only estándar de tipo GPT con 16 capas, 10 cabezas de atención y dimensión oculta de 640. Emplea LayerNorm, activación GELU y embeddings posicionales aprendidos. Los pesos de la matriz de embedding de tokens y de la capa de salida están atados (weight tying), lo que reduce el recuento de parámetros. La implementación es propia y no es compatible con `transformers` ni con vLLM; el código de inferencia se distribuye junto a los pesos en `model.py` y `generate.py`.
+El modelo es un transformer decoder-only de 16 capas con 10 cabezas de atencion y dimension oculta de 640, que emplea LayerNorm, activacion GELU y embeddings posicionales aprendidos (no RoPE ni atencion lineal). Comparte los pesos del embedding de tokens con la capa de salida, lo que reduce el recuento efectivo de parametros. El tokenizador es un byte-level BPE de 32.000 entradas entrenado especificamente sobre la mezcla bilingue, en lugar de reutilizar un vocabulario existente.
 
-El entrenamiento se realizó desde cero sobre el subconjunto `rus_Cyrl` de FineWeb-2, tras descartar documentos de menos de 300 caracteres, quedando aproximadamente 131 millones de tokens. Se reservó el 1 % final del corpus como conjunto de validación, sin deduplicación ni filtrado adicional. El proceso constó de tres etapas (14 000 pasos con batch 8, 1 200 pasos con batch 64 y 5 000 pasos con batch 64) sumando unos 260 millones de tokens procesados, aproximadamente dos pasadas sobre el corpus. Se usó AdamW (betas 0,9/0,95, weight decay 0,1 solo en matrices), learning rate 3e-4 con calentamiento de 200 pasos y decaimiento coseno hasta 3e-5, precisión fp16 con escalado de pérdida automático y recorte de gradiente de 1,0. Todo el entrenamiento se ejecutó en una NVIDIA RTX 2060 de 6 GB a unos 23 500 tokens por segundo, con el corpus residente en RAM y preparación de batches en CPU mediante hilos en segundo plano. No hubo fases de RLHF, DPO ni ajuste por instrucciones.
+El entrenamiento se realizo desde cero sobre 268,9 millones de tokens: 127,6 millones de tokens rusos procedentes de FineWeb-2 (subconjunto `rus_Cyrl`, 125.971 documentos) y 141,2 millones de tokens ingleses de FineWeb-Edu (`sample-10BT`, 125.228 documentos). Se descartaron documentos de menos de 300 caracteres, los dos idiomas se mezclaron a nivel de documento y el 1 % final del corpus se reservo para validacion. No hubo deduplicacion adicional. El regimen de entrenamiento consistio en 20.000 pasos con AdamW (betas 0,9/0,95, weight decay 0,1 solo en matrices), learning rate de 3e-4 con 200 pasos de warmup y decaimiento coseno hasta 3e-5, batch efectivo de 32.768 tokens (64 secuencias de 512 tokens con acumulacion de gradientes de 8), precision fp16 con escalado automatico de perdida y recorte de gradiente de 1,0. En total se procesaron unos 655 millones de tokens, equivalentes a aproximadamente 2,4 epocas sobre el corpus. El entrenamiento se ejecuto en una RTX 2060 de 6 GB a unos 14.000 tokens por segundo, en ejecuciones fragmentadas de una a una hora y media con checkpointing y reanudacion del estado del optimizador. No se aplico RLHF, DPO ni ningun tipo de ajuste por instrucciones.
 
 ## Capacidades
 
-- Generación de texto por continuación de prompt en ruso, con estilo similar al de páginas web.
-- Modelo base sin ajuste por instrucciones: no responde a preguntas ni mantiene diálogos.
-- Sin soporte de tool calling ni function calling.
-- Sin capacidades de agente ni razonamiento multi-paso.
-- Sin capacidades de visión, audio ni modo de razonamiento explícito.
-- Multilingüismo muy limitado: solo ruso funcional; el inglés figura en los metadatos pero el autor indica que el modelo es casi inútil en otros idiomas.
-- Contexto máximo de 512 tokens, insuficiente para documentos largos o conversaciones extensas.
+- Generacion de texto por continuacion de prompt (completion), no instruccion ni dialogo.
+- Capacidad bilingue ruso-ingles con un unico juego de pesos y tokenizador.
+- Modelado de lenguaje a nivel de caracter y subpalabra mediante BPE byte-level, con cobertura de vocabulario abierta.
+- Generacion con muestreo configurable: temperatura (por defecto 0,8) y top-k (por defecto 40).
+- No dispone de tool calling ni function calling.
+- No dispone de modo agente ni razonamiento multi-paso.
+- No dispone de capacidades de vision, audio ni thinking mode.
+- No dispone de ajuste conversacional ni de filtros de seguridad.
 
 ## Casos de uso
 
-- Experimentación educativa en entrenamiento de modelos desde cero: sirve como referencia reproducible para estudiar el pipeline completo (tokenizador, dataset, bucle de entrenamiento, evaluación) en hardware de consumo.
-- Pruebas de infraestructura de inferencia propia: al requerir código personalizado, es útil para validar pipelines de carga de safetensors y generación con PyTorch antes de escalar a modelos mayores.
-- Generación de texto sintético de relleno en ruso: puede producir texto con apariencia lingüística para pruebas de maquetación o carga en sistemas que solo necesitan cadenas de texto plausibles, no contenido fiable.
-- Investigación sobre infraentrenamiento y curvas de pérdida: sus métricas de validación por paso permiten estudiar el comportamiento de modelos pequeños con presupuestos de cómputo reducidos.
-- Base para experimentos de fine-tuning a pequeña escala: su tamaño (89 M de parámetros) permite iterar rápidamente en ajustes sobre dominios concretos en una sola GPU de consumo, aunque el punto de partida es débil.
-- Demostración de arquitecturas GPT minimalistas: útil en docencia para ilustrar weight tying, tokenizadores BPE y estrategias de muestreo (temperatura, top-k) con un modelo real y abierto.
+- Experimentacion educativa en entrenamiento desde cero: el repositorio incluye el codigo (`model.py`) y los hiperparametros completos, lo que permite reproducir o modificar el pipeline de entrenamiento en una GPU de 6 GB como referencia didactica.
+- Generacion de texto creativo de baja exigencia en ruso o ingles: continuacion de frases, parrafos o esbozos narrativos donde la coherencia factual no es critica y se tolera divagacion estilistica.
+- Pruebas de infraestructura de inferencia propia: al requerir unicamente unos 1 GB de VRAM y una API de generacion minima, sirve para validar pipelines de despliegue CUDA personalizados antes de migrar a modelos mayores.
+- Investigacion sobre tokenizadores bilingues: el vocabulario BPE de 32.000 tokens entrenado sobre ruso e ingles permite estudiar el reparto de tokens entre alfabeto cirilico y latino y su efecto en la perplejidad.
+- Baseline para comparativas de modelos pequenos: con perplejidad documentada de 30,5 (ruso) y 32,6 (ingles) sobre el conjunto de validacion, puede emplearse como referencia inferior en estudios de escalado.
+- Generacion de datos sinteticos de relleno o aumentacion de corpus: util para producir texto diverso sin requisitos de veracidad en tareas de preprocesamiento o pruebas de carga.
+- Prototipado de demos de continuacion de texto en entornos con recursos muy limitados, como portatiles con GPU de gama media o entornos de CI con GPU compartida.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K, etc.) en la información disponible. El autor solo reporta pérdida de validación sobre el 1 % reservado del corpus:
+No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K u otros) en la informacion disponible. El autor unicamente reporta perdida de validacion y perplejidad sobre el 1 % reservado del corpus:
 
-| Paso | 250 | 1000 | 2000 | 3000 | 4000 | 5000 |
-|---|---|---|---|---|---|---|
-| Val loss | 3,812 | 3,698 | 3,629 | 3,556 | 3,494 | 3,483 |
+| Idioma | Val loss | Perplejidad | Tokens evaluados |
+|---|---|---|---|
+| Ruso | 3,417 | 30,5 | 455.000 |
+| Ingles | 3,485 | 32,6 | 549.000 |
 
-Pérdida de validación final: 3,48 (perplejidad aproximada de 33 sobre el vocabulario de 16 000 tokens). La evaluación se realizó sobre 40 batches, por lo que las fluctuaciones menores entre puntos (por ejemplo, 3,478 en el paso 4750) se atribuyen a ruido.
+La perplejidad se calcula sobre el vocabulario comun de 32.000 tokens y, segun el autor, no es directamente comparable con la version rusa anterior del modelo (89,3 M de parametros, vocabulario de 16.000 tokens).
 
 ## Requisitos de hardware
 
-- VRAM para inferencia: menos de 1 GB según el autor (pesos fp32 de ~357 MB más activaciones y caché KV para 512 tokens).
-- GPU recomendadas: cualquier GPU NVIDIA con soporte CUDA; el entrenamiento se hizo en una RTX 2060 de 6 GB, por lo que tarjetas de gama media como RTX 3060, RTX 4060 o superiores son más que suficientes para inferencia.
-- Cabe holgadamente en cualquier GPU de consumo, incluidas las de gama baja con 4 GB o más.
-- Opciones de despliegue: solo el código propio incluido en el repositorio (`generate.py` con PyTorch, tokenizers y safetensors). No es compatible con vLLM, llama.cpp, Ollama ni TGI.
-- Latencia y throughput: no se han publicado mediciones de inferencia; el autor solo reporta ~23 500 tokens/s durante el entrenamiento en una RTX 2060.
+- VRAM para inferencia: aproximadamente 1 GB segun el autor, incluyendo pesos en fp32 (unos 398 MB) y estados de ejecucion.
+- GPU recomendadas: cualquier GPU NVIDIA con soporte CUDA y al menos 1-2 GB de VRAM; el modelo se entreno en una RTX 2060 de 6 GB y se ejecuta holgadamente en ella.
+- Cabe en GPU de consumo: si, en practicamente cualquier GPU NVIDIA moderna (GTX 1060 en adelante, RTX 2060/3060/4060, RTX 4090) e incluso en GPUs de portatil con 4 GB o mas.
+- Opciones de despliegue: exclusivamente el script `generate.py` incluido en el repositorio, con PyTorch, `tokenizers` y `safetensors`. No es compatible con vLLM, transformers, llama.cpp, Ollama ni TGI en el estado actual; el autor indica que la conversion a formato estandar esta planificada.
+- Latencia y throughput: no se han publicado mediciones de inferencia. Durante el entrenamiento se alcanzaron unos 14.000 tokens por segundo en una RTX 2060, cifra no extrapolable directamente a generacion autoregresiva.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Idiomas | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| Axon-Kit | 89,3 M | 512 | Ruso | Apache 2.0 | Hugging Face, código propio |
-| GPT-2 small | 124 M | 1024 | Inglés | MIT | Hugging Face, transformers |
-| TinyLlama-1.1B | 1,1 B | 2048 | Inglés (multilingüe parcial) | Apache 2.0 | Hugging Face, transformers, vLLM |
-| Qwen2.5-0.5B | 0,49 B | 32 768 | Multilingüe (incluye ruso) | Apache 2.0 | Hugging Face, transformers, vLLM |
+No se dispone de datos de benchmarks que permitan una comparacion de rendimiento fiable con alternativas. La siguiente tabla compara exclusivamente caracteristicas estructurales verificables:
 
-No se dispone de benchmarks comparativos publicados para Axon-Kit, por lo que la comparación se limita a parámetros, contexto, licencia y disponibilidad. Frente a GPT-2 small, Axon-Kit tiene menos parámetros y menor contexto, pero está especializado en ruso y entrenado desde cero sobre datos web rusos. Frente a modelos como Qwen2.5-0.5B o TinyLlama, la diferencia de escala y de calidad esperada es muy grande, y además Axon-Kit carece de integración con el ecosistema estándar.
+| Modelo | Parametros | Contexto | Idiomas | Licencia | Compatibilidad estandar |
+|---|---|---|---|---|---|
+| Axon-Kit | 99,6 M | 512 | Ruso, ingles | Apache 2.0 | No (arquitectura propia) |
+| GPT-2 small | 124 M | 1.024 | Ingles | MIT | Si (transformers, GGUF) |
+| Qwen2.5-0.5B | 494 M | 32.768 | Multilingue | Apache 2.0 | Si (transformers, vLLM, GGUF) |
+| SmolLM2-135M | 135 M | 8.192 | Ingles (principalmente) | Apache 2.0 | Si (transformers, GGUF) |
+
+La comparacion con GPT-2 small es la mas cercana en orden de magnitud de parametros, aunque Axon-Kit anade cobertura del ruso y carece de la compatibilidad de ecosistema de aquel. Qwen2.5-0.5B y SmolLM2-135M son alternativas modernas con contexto mucho mayor, ajuste por instrucciones y soporte nativo en herramientas de inferencia, por lo que resultan mas adecuadas para cualquier uso en produccion.
 
 ## Limitaciones y advertencias
 
-- Modelo base sin ajuste por instrucciones: no es un chatbot y no responde a preguntas; solo continúa texto.
-- Calidad muy limitada: el propio autor describe el texto generado como gramaticalmente plausible pero semánticamente incoherente, con repeticiones, palabras inventadas y errores de concordancia.
-- Infraentrenamiento evidente: menos de dos pasadas sobre un corpus de 131 M de tokens, sin deduplicación ni filtrado más allá del descarte de documentos cortos.
-- Sesgos heredados de FineWeb-2: al provenir de páginas web, el modelo puede reproducir estereotipos, errores factuales y sesgos presentes en el corpus.
-- Riesgo elevado de alucinación: el autor advierte explícitamente de que no debe usarse donde se requiera fiabilidad.
-- Contexto de solo 512 tokens, insuficiente para documentos largos o conversaciones multi-turno.
-- Solo ruso funcional; el inglés y otros idiomas no son utilizables en la práctica.
-- Sin filtros de seguridad ni moderación de contenido.
-- Incompatibilidad con transformers y vLLM: requiere el código propio del repositorio, lo que complica su integración en producción.
-- Licencia Apache 2.0 para código y pesos, pero los datos de entrenamiento (FineWeb-2, ODC-By 1.0) conservan sus condiciones originales, que deben respetarse en usos derivados.
+- Modelo base sin ajuste por instrucciones ni dialogo: no responde a preguntas, solo continua texto. No debe presentarse como asistente.
+- Infraentrenamiento reconocido por el autor: aproximadamente 2,4 epocas sobre 269 millones de tokens, con perdida de validacion alta y generaciones frecuentemente incoherentes (repeticiones, hechos inventados, cambios de tema).
+- Contexto muy limitado de 512 tokens, insuficiente para la mayoria de tareas de recuperacion o documentos largos.
+- Solo ruso e ingles; el rendimiento en otros idiomas es practicamente nulo. No se entreno con codigo.
+- Riesgo elevado de alucinacion: el corpus procede de web sin deduplicacion adicional ni filtrado de calidad mas alla del umbral de 300 caracteres, por lo que puede reproducir sesgos, errores factuales y contenido de baja calidad de las paginas de origen.
+- Ausencia total de filtros de seguridad: no hay alineacion, moderacion ni rechazo de contenido danino.
+- Incompatibilidad con el ecosistema estandar (transformers, vLLM, llama.cpp, Ollama, TGI): requiere el codigo propietario del repositorio, lo que dificulta su integracion en pipelines existentes y su cuantizacion.
+- Pesos unicamente en fp32: no hay versiones GGUF, AWQ, GPTQ ni cuantizaciones de menor precision publicadas.
+- Licencia Apache 2.0 permisiva para uso comercial del codigo y los pesos, pero los datos de entrenamiento conservan las condiciones ODC-By 1.0 de FineWeb-2 y FineWeb-Edu, que exigen atribucion.
+- Modelo sin mantenimiento garantizado: el autor lo describe como primera pieza de una familia en desarrollo, con planes de sustituirlo por arquitecturas estandar y modelos mayores.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/SableAI-Dev/Axon-Kit
-- Dataset de entrenamiento (FineWeb-2): https://huggingface.co/datasets/HuggingFaceFW/fineweb-2
+- Dataset FineWeb-2: https://huggingface.co/datasets/HuggingFaceFW/fineweb-2
+- Dataset FineWeb-Edu: https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu
+- Repositorio del modelo (codigo `model.py` y `generate.py`): https://huggingface.co/SableAI-Dev/Axon-Kit/tree/main
+- Paper, blog o demo adicionales: no disponible

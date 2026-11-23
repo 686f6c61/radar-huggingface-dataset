@@ -5,7 +5,7 @@
   "author": "fihriaLab",
   "url": "https://huggingface.co/fihriaLab/fihrIA-ASR-0.6B-GGUF",
   "created_at": "2026-11-20T17:36:52.000Z",
-  "updated_at": "2026-11-21T19:20:29.000Z",
+  "updated_at": "2026-11-22T10:30:57.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "automatic-speech-recognition",

@@ -1,0 +1,53 @@
+{
+  "schema": 2,
+  "id": "amDANIEL2024/masse_base",
+  "slug": "amdaniel2024-masse_base",
+  "author": "amDANIEL2024",
+  "url": "https://huggingface.co/amDANIEL2024/masse_base",
+  "created_at": "2026-11-23T12:06:12.000Z",
+  "updated_at": "2026-11-23T12:06:17.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": "pytorch",
+  "languages": [
+    "nyn",
+    "lgg"
+  ],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "masse-seq2seq",
+    "translation",
+    "seq2seq",
+    "transformer",
+    "synthetic-data",
+    "nyn",
+    "lgg",
+    "dataset:amDANIEL2024/tulati",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 89418240,
+  "parameters_human": "89.4M",
+  "storage_bytes": 358508276,
+  "storage_human": "359 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

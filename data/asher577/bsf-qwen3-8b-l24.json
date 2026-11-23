@@ -5,7 +5,7 @@
   "author": "asher577",
   "url": "https://huggingface.co/asher577/bsf-qwen3-8b-l24",
   "created_at": "2026-11-22T00:48:54.000Z",
-  "updated_at": "2026-11-22T01:56:23.000Z",
+  "updated_at": "2026-11-22T21:36:51.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -14,13 +14,11 @@
   "tags": [
     "interpretability",
     "sparse-dictionary",
-    "base_model:Qwen/Qwen3-8B",
-    "base_model:finetune:Qwen/Qwen3-8B",
     "license:apache-2.0",
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 30,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

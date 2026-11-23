@@ -5,7 +5,7 @@
   "author": "jasirjru",
   "url": "https://huggingface.co/jasirjru/shoprank-reranker-minilm-int8",
   "created_at": "2026-11-21T07:13:01.000Z",
-  "updated_at": "2026-11-21T15:54:35.000Z",
+  "updated_at": "2026-11-22T09:12:44.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-ranking",

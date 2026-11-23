@@ -5,14 +5,19 @@
   "author": "codebucketsolutions",
   "url": "https://huggingface.co/codebucketsolutions/snac-24khz-onnx",
   "created_at": "2026-11-14T12:22:53.000Z",
-  "updated_at": "2026-11-14T12:22:55.000Z",
-  "license": null,
-  "license_family": "unknown",
+  "updated_at": "2026-11-22T12:27:28.000Z",
+  "license": "mit",
+  "license_family": "oss",
   "pipeline_tag": null,
-  "library": null,
+  "library": "onnx",
   "languages": [],
   "tags": [
     "onnx",
+    "audio",
+    "codec",
+    "base_model:hubertsiuzdak/snac_24khz",
+    "base_model:quantized:hubertsiuzdak/snac_24khz",
+    "license:mit",
     "region:us"
   ],
   "likes": 0,
@@ -23,7 +28,7 @@
   "storage_bytes": 78950621,
   "storage_human": "79 MB",
   "context_length": null,
-  "base_model": null,
+  "base_model": "hubertsiuzdak/snac_24khz",
   "formats": [
     "onnx"
   ],

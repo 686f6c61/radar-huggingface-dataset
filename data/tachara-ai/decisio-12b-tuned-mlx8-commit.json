@@ -5,7 +5,7 @@
   "author": "tachara-ai",
   "url": "https://huggingface.co/tachara-ai/Decisio-12b-tuned-mlx8-commit",
   "created_at": "2026-10-26T01:23:43.000Z",
-  "updated_at": "2026-10-26T01:40:45.000Z",
+  "updated_at": "2026-11-18T23:33:22.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -25,7 +25,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 48,
+  "downloads_30d": 73,
   "trending_score": 0,
   "parameters": 11907350272,
   "parameters_human": "11.91B",

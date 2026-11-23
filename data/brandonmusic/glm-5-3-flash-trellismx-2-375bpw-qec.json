@@ -1,0 +1,87 @@
+{
+  "schema": 2,
+  "id": "brandonmusic/GLM-5.3-Flash-TrellisMX-2.375bpw-QEC",
+  "slug": "brandonmusic-glm-5-3-flash-trellismx-2-375bpw-qec",
+  "author": "brandonmusic",
+  "url": "https://huggingface.co/brandonmusic/GLM-5.3-Flash-TrellisMX-2.375bpw-QEC",
+  "created_at": "2026-11-23T06:10:24.000Z",
+  "updated_at": "2026-11-23T12:36:42.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "glm5_next",
+    "trellismx",
+    "quantized",
+    "moe",
+    "engram-qec",
+    "glm-5.3-flash",
+    "base_model:zai-org/GLM-5.3-Flash-BF16",
+    "base_model:finetune:zai-org/GLM-5.3-Flash-BF16",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9669466974,
+  "parameters_human": "9.67B",
+  "storage_bytes": 116743376863,
+  "storage_human": "116.7 GB",
+  "context_length": null,
+  "base_model": "zai-org/GLM-5.3-Flash-BF16",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "Distribution fidelity (KL divergence vs BF16 reference)",
+      "dataset": "OOD confirmation (28 x 2K), 28 windows, 57316 scored positions (shipped BF16 Engram)",
+      "metric": "Mean tokenwise KLD (reference || candidate), nats",
+      "value": 0.04508583439706719
+    },
+    {
+      "task": "Distribution fidelity (KL divergence vs BF16 reference)",
+      "dataset": "Sealed final panel (all 25 x 2K), 25 windows, 51175 scored positions (shipped BF16 Engram)",
+      "metric": "Mean tokenwise KLD (reference || candidate), nats",
+      "value": 0.05286200593125694
+    },
+    {
+      "task": "Distribution fidelity (KL divergence vs BF16 reference)",
+      "dataset": "Sealed final panel (clean 17 x 2K), 17 windows, 34799 scored positions (shipped BF16 Engram)",
+      "metric": "Mean tokenwise KLD (reference || candidate), nats",
+      "value": 0.0614313717757276
+    },
+    {
+      "task": "Distribution fidelity (KL divergence vs BF16 reference)",
+      "dataset": "Long-context 8K (24 x 8K), 24 windows, 196584 scored positions (shipped BF16 Engram)",
+      "metric": "Mean tokenwise KLD (reference || candidate), nats",
+      "value": 0.07915470817064775
+    },
+    {
+      "task": "Distribution fidelity (KL divergence vs BF16 reference)",
+      "dataset": "Long-context 32K (8 x 32K), 8 windows, 262136 scored positions (shipped BF16 Engram)",
+      "metric": "Mean tokenwise KLD (reference || candidate), nats",
+      "value": 0.03235691410638439
+    },
+    {
+      "task": "Distribution fidelity (KL divergence vs BF16 reference)",
+      "dataset": "Long-context 64K (6 x 64K), 6 windows, 393210 scored positions (shipped BF16 Engram)",
+      "metric": "Mean tokenwise KLD (reference || candidate), nats",
+      "value": 0.010211220946009809
+    }
+  ],
+  "sources": []
+}

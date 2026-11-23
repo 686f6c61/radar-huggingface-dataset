@@ -1,0 +1,51 @@
+{
+  "schema": 2,
+  "id": "harims95/hobbylm-embed-140m-gguf",
+  "slug": "harims95-hobbylm-embed-140m-gguf",
+  "author": "harims95",
+  "url": "https://huggingface.co/harims95/hobbylm-embed-140m-gguf",
+  "created_at": "2026-11-21T12:36:01.000Z",
+  "updated_at": "2026-11-23T05:38:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "feature-extraction",
+    "sentence-similarity",
+    "mixture-of-experts",
+    "en",
+    "base_model:harims95/hobbylm-embed-140m",
+    "base_model:quantized:harims95/hobbylm-embed-140m",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 14,
+  "trending_score": 0,
+  "parameters": 166279520,
+  "parameters_human": "166.3M",
+  "storage_bytes": 513752512,
+  "storage_human": "514 MB",
+  "context_length": 1024,
+  "base_model": "harims95/hobbylm-embed-140m",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

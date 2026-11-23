@@ -1,0 +1,62 @@
+{
+  "schema": 2,
+  "id": "scikit-plots/Carbon-X",
+  "slug": "scikit-plots-carbon-x",
+  "author": "scikit-plots",
+  "url": "https://huggingface.co/scikit-plots/Carbon-X",
+  "created_at": "2026-11-23T07:57:32.000Z",
+  "updated_at": "2026-11-23T07:57:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "dna",
+    "genomics",
+    "biology",
+    "variant-effect-prediction",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen3-14B",
+    "base_model:finetune:Qwen/Qwen3-14B",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 14822046720,
+  "parameters_human": "14.82B",
+  "storage_bytes": 29656150799,
+  "storage_human": "29.7 GB",
+  "context_length": null,
+  "base_model": "Qwen/Qwen3-14B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Enhancing soil organic carbon estimation with generative AI and Nix ...",
+      "url": "https://www.nature.com/articles/s41598-025-24236-9",
+      "snippet": "18.11.2025 ... Nix-color and spectra-predicted SOC using the RF model using the 30% validation set. In both plots, underestimations were observed for SOC ..."
+    }
+  ]
+}

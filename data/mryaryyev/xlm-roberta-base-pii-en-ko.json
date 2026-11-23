@@ -5,7 +5,7 @@
   "author": "mryaryyev",
   "url": "https://huggingface.co/mryaryyev/xlm-roberta-base-pii-en-ko",
   "created_at": "2026-11-18T13:58:49.000Z",
-  "updated_at": "2026-11-18T15:05:09.000Z",
+  "updated_at": "2026-11-22T03:57:18.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "token-classification",
@@ -34,7 +34,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 27,
+  "downloads_30d": 39,
   "trending_score": 0,
   "parameters": 277464591,
   "parameters_human": "277.5M",

@@ -5,7 +5,7 @@
   "author": "kingjones777",
   "url": "https://huggingface.co/kingjones777/MiMo-V2.6-Distill-Qwen-9B-ROCmFP4-imatrix-GGUF",
   "created_at": "2026-09-24T22:52:11.000Z",
-  "updated_at": "2026-09-24T22:53:13.000Z",
+  "updated_at": "2026-11-23T09:23:14.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -36,7 +36,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 169,
+  "downloads_30d": 152,
   "trending_score": 0,
   "parameters": 8953803264,
   "parameters_human": "8.95B",

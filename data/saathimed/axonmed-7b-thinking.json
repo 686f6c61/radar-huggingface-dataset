@@ -56,7 +56,7 @@
     "region:us"
   ],
   "likes": 1,
-  "downloads_30d": 403,
+  "downloads_30d": 421,
   "trending_score": 0,
   "parameters": 7615616512,
   "parameters_human": "7.62B",
@@ -75,6 +75,37 @@
   "removal_pattern": null,
   "renamed_to": null,
   "renamed_at": null,
-  "benchmarks": [],
+  "benchmarks": [
+    {
+      "task": "Medical Board USMLE Examination",
+      "dataset": "MedQA (USMLE 4-Options)",
+      "metric": "0-shot Accuracy",
+      "value": 64.1
+    },
+    {
+      "task": "Medical Board USMLE Examination",
+      "dataset": "MedQA (USMLE 4-Options)",
+      "metric": "0-shot Normalized Accuracy",
+      "value": 64.1
+    },
+    {
+      "task": "Multiple-Choice Medical QA",
+      "dataset": "MedMCQA (AIIMS / NEET-PG)",
+      "metric": "0-shot Accuracy",
+      "value": 61.15
+    },
+    {
+      "task": "Multiple-Choice Medical QA",
+      "dataset": "MedMCQA (AIIMS / NEET-PG)",
+      "metric": "0-shot Normalized Accuracy",
+      "value": 61.15
+    },
+    {
+      "task": "Biomedical Research QA",
+      "dataset": "PubMedQA",
+      "metric": "0-shot Accuracy",
+      "value": 75.8
+    }
+  ],
   "sources": []
 }

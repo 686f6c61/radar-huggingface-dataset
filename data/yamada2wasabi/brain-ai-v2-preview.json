@@ -1,0 +1,41 @@
+{
+  "schema": 2,
+  "id": "yamada2wasabi/brain-ai-v2-preview",
+  "slug": "yamada2wasabi-brain-ai-v2-preview",
+  "author": "yamada2wasabi",
+  "url": "https://huggingface.co/yamada2wasabi/brain-ai-v2-preview",
+  "created_at": "2026-11-23T06:12:01.000Z",
+  "updated_at": "2026-11-23T06:35:34.000Z",
+  "license": "cc-by-sa-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "ja"
+  ],
+  "tags": [
+    "ja",
+    "license:cc-by-sa-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 426477086,
+  "storage_human": "426 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

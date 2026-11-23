@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/Tenet-14B-Qwen3-Unslop-v2-GGUF",
   "created_at": "2026-11-22T05:20:27.000Z",
-  "updated_at": "2026-11-22T05:48:23.000Z",
+  "updated_at": "2026-11-22T10:20:56.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -42,7 +42,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 21,
+  "downloads_30d": 317,
   "trending_score": 0,
   "parameters": 14768307200,
   "parameters_human": "14.77B",

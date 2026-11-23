@@ -1,0 +1,46 @@
+{
+  "schema": 2,
+  "id": "HDTenEightyP/GPT-FFDNET",
+  "slug": "hdteneightyp-gpt-ffdnet",
+  "author": "HDTenEightyP",
+  "url": "https://huggingface.co/HDTenEightyP/GPT-FFDNET",
+  "created_at": "2026-11-23T07:14:03.000Z",
+  "updated_at": "2026-11-23T07:20:29.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "gpt2",
+    "text-generation-inference",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 174651648,
+  "parameters_human": "174.7M",
+  "storage_bytes": 714150411,
+  "storage_human": "714 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

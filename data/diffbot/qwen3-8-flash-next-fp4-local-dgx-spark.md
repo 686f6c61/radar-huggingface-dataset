@@ -2,127 +2,119 @@
 
 ## Resumen
 
-Qwen3.8-Flash-Next-FP4-Local-DGX-Spark es un checkpoint cuantizado en FP4 del modelo Qwen/Qwen3.8-Flash-Next, empaquetado por el usuario diffbot (no por el equipo de Qwen) para su despliegue en una única estación NVIDIA DGX Spark con GPU GB10 y 128 GB de memoria unificada. El repositorio no modifica los pesos de NVIDIA: lo que aporta es una receta de servicio completa sobre vLLM con los kernels b12x, incluyendo parches de código, una imagen pública fijada y un kernel CUDA propio, todo bajo el directorio `recipe/`. La arquitectura subyacente es un transformer de mezcla de expertos (MoE) con capacidades multimodales de entrada imagen-texto y un módulo MTP (multi-token prediction) usado para decodificación especulativa.
+Qwen3.8-Flash-Next FP4-Local para DGX Spark es una cuantización NVFP4 del modelo multimodal Qwen3.8-Flash-Next de Qwen, empaquetada por diffbot junto con una receta de servicio completa para ejecutarlo en una única NVIDIA DGX Spark (SoC GB10, arquitectura Blackwell, sm_121a). El modelo base es un transformer de mezcla de expertos (MoE) con 125.000 millones de parámetros totales y 6.000 millones activos por token, capacidad de visión y tablas de embeddings n-gram de 51.000 millones de parámetros. Los pesos publicados en este repositorio suman 187.931.804.131 parámetros según los safetensors, un total que incluye las tablas de embeddings n-gram además de los parámetros del transformer.
 
-El interés del modelo es fundamentalmente práctico: demuestra que un MoE de aproximadamente 96.500 millones de parámetros puede servirse de forma interactiva en hardware de escritorio de gama alta con memoria unificada, alcanzando 63-64 tokens/s de decodificación en sesiones de agente de código y hasta 3.150 tokens/s de prefill con prompts de 33.000 tokens. Frente al lanzador estándar de NVIDIA, la receta reduce el tiempo por paso de decodificación de 71,2 a 54,2 ms y eleva el throughput de 46,9 a 64 tokens/s en las mismas sesiones.
+El interés del repositorio no está tanto en la cuantización en sí (procedente de la versión FP4-Local de NVIDIA) como en la receta de inferencia: kernels CUDA personalizados para GB10, un cabezal MTP de decodificación especulativa afinado para cargas agénticas de programación, planificación consciente de caché para varias sesiones de agente y checkpoints de prefix-cache que reducen drásticamente el tiempo hasta el primer token en turnos de seguimiento. El autor reporta 65,3 tok/s de decodificación y 3.236 tok/s de prefill en prompts de 33K tokens, con una calidad prácticamente idéntica al modelo BF16 original (divergencia KL de 0,0465).
 
-La relevancia actual reside en que combina tres piezas que rara vez aparecen juntas en un mismo artefacto: cuantización NVFP4 con calibración ModelOpt, decodificación especulativa con borradores MTP y una receta reproducible de servido con métricas de fidelidad (divergencia KL contra el modelo BF16) y de calidad (GSM8K, HumanEval) publicadas junto al checkpoint. No es un modelo nuevo entrenado desde cero, sino un artefacto de despliegue con garantías medidas.
+Es relevante ahora porque demuestra que un MoE de 125B con visión y ventana de 131K tokens puede servirse con latencia interactiva en hardware de un solo nodo de consumo profesional, usando una API compatible con OpenAI y soporte de tool calling, lo que habilita flujos agénticos locales sin depender de la nube.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer Mixture-of-Experts (MoE) multimodal, con módulo MTP para decodificación especulativa |
-| Parametros totales | 96.486.615.005 (~96,5 mil millones) |
-| Parametros activos | no disponible |
-| Longitud de contexto | 131.000 tokens configurados en la receta (prueba de aguja superada hasta 124.842 tokens) |
-| Tipos de cuantizacion | NVFP4 (W4A16 en expertos enrutados según la receta; W4A4 por defecto en vLLM), caché KV en FP8; opción MOE_A16 con activaciones BF16 |
+| Arquitectura | Transformer de mezcla de expertos (MoE) con visión y tablas de embeddings n-gram; cabezal MTP para decodificación especulativa |
+| Parámetros totales | 187.931.804.131 (safetensors del repo); el modelo base se describe como 125B totales más 51B de embeddings n-gram |
+| Parámetros activos | 6B por token |
+| Longitud de contexto | 131K tokens |
+| Tipos de cuantización | NVFP4 (FP4-Local de NVIDIA, vía modelopt); activaciones en bf16 en todas las llamadas MoE |
 | Idiomas soportados | no disponible |
 | Licencia | nvidia-open-model-agreement (etiquetada como `other` en Hugging Face) |
-| Formato de pesos | safetensors |
-| Tamano del repositorio | 102,3 GB |
-| Libreria de inferencia | vLLM (con kernels b12x y parches propios) |
-| Hardware objetivo | 1 x NVIDIA DGX Spark (GB10, 128 GB de memoria unificada) |
-| Modalidad | image-text-to-text |
+| Formato de pesos | safetensors; librería de servicio vLLM |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es Qwen3.8-Flash-Next, un transformer de mezcla de expertos con capacidades multimodales de entrada (imagen y texto). Sobre esa base, NVIDIA aplicó cuantización NVFP4 mediante ModelOpt, y diffbot añadió una receta de servido que incluye decodificación especulativa con 4 tokens borrador del módulo MTP, gráficos CUDA, caché KV en FP8 y fragmentación del prefill en trozos de 8.192 tokens. La receta fija una fracción de memoria de GPU de 0,73 y opera con kernels b12x, que suman las salidas de los expertos con atómicas BF16.
+El modelo base Qwen3.8-Flash-Next es un transformer MoE con 125B parámetros totales y 6B activos, al que se añaden tablas de embeddings n-gram de 51B parámetros y un codificador visual para entrada de imagen y vídeo. Esta versión concreta no reentrena el modelo: parte de la cuantización NVFP4 de NVIDIA (`nvidia/Qwen3.8-Flash-Next-FP4-Local`) y solo entrena los 29 tensores densos de la capa MTP (91M parámetros), el cabezal borrador de decodificación especulativa, afinado para cargas de trabajo agénticas de programación. Como la decodificación especulativa verifica cada token borrador contra el modelo completo, el cabezal afecta a la velocidad y no a las salidas: 3,48 tokens por paso frente a 3,26 en programación agéntica.
 
-No se dispone de información sobre el volumen de tokens de entrenamiento, la composición del dataset ni si hubo etapas de RLHF o DPO en el modelo base; la model card del repositorio se centra exclusivamente en el proceso de cuantización y servido. La innovación técnica documentada es la actualización de prefill del 1 de noviembre de 2026, que introduce tres cambios: lookahead en PLE (bit-idéntico en logits), un kernel de MoE de prefill con suma de expertos en orden fijo en lugar de atómicas BF16 (mejora la KL de 0,0386-0,0391 a 0,0375 en 6 trozos) y una fusión de HyperConnection en prefill que reduce la divergencia KL un 3,3 % (de 0,04811 a 0,04653, comparación pareada por posición, t = -4,7). El resultado es un aumento del 39-48 % en throughput de prefill respecto al lanzamiento del 21 de octubre.
+La receta de servicio incorpora kernels personalizados de decodificación y prefill para GB10 (sm_121a), incluido un kernel MoE de prefill persistente, kernels fusionados de HyperConnection y normalización, y chunks de prefill de 8.192 tokens. Además, mantiene activaciones en bf16 en todas las llamadas MoE (el stock usa activaciones FP4 en llamadas de tamaño prefill), guarda el checkpoint de prefix-cache de cada prompt justo antes de su final para que un turno de seguimiento solo recalcule el mensaje nuevo, y aplica planificación consciente de caché que prioriza la petición con el prefijo cacheado más largo cuando varias sesiones comparten KV cache. Cada cambio tiene un interruptor de desactivación en `recipe/serve/serve.sh`. No se dispone de información sobre el dataset de entrenamiento del modelo base ni sobre si hubo RLHF o DPO.
 
 ## Capacidades
 
-- Generación de texto y razonamiento conversacional multi-turno, con soporte de modo "thinking" desactivable (los benchmarks de calidad se midieron con thinking off).
-- Comprensión de imágenes combinadas con texto (pipeline image-text-to-text).
-- Generación de código: 96,3-97,0 % en HumanEval con decodificación greedy.
-- Razonamiento matemático: 97,5 % en GSM8K (primeras 200 preguntas).
-- Tool calling / function calling: verificado con `tool_choice=auto` y parseo correcto de las llamadas.
-- Sesiones de agente de código con definiciones de herramientas y llamadas en el historial, incluyendo múltiples pasos de razonamiento.
-- Contexto largo efectivo: recuperación de una aguja planted a 28.842, 96.042 y 124.842 tokens.
-- Decodificación especulativa nativa vía MTP con 4 tokens borrador y 3,4-3,6 tokens aceptados por paso.
-- Capacidades multilingües: no disponible en la información proporcionada.
+- Generación de texto y razonamiento, con modo de razonamiento (`thinking`) configurable mediante el parser `qwen3`.
+- Entrada multimodal: texto, imagen y vídeo (`image-text-to-text`).
+- Programación y matemáticas: GSM8K 97,5 % y HumanEval 97,0 % en la receta publicada.
+- Tool calling y function calling mediante el parser `qwen3_xml` de vLLM.
+- Flujos agénticos multi-turno con definiciones de herramientas y llamadas a herramientas, con prompts de hasta 131K tokens.
+- Decodificación especulativa con cabezal MTP propio, activa por defecto en la receta.
+- Ventana de contexto larga de 131K tokens, con recuperación verificada tipo needle a 29K, 96K y 125K tokens en pruebas con tool calls.
+- API compatible con OpenAI servida en el puerto 8000 con el nombre de modelo `qwen3.8-flash-next`.
+- Capacidades multilingües: no disponible.
 
 ## Casos de uso
 
-- Agente de código en local para un solo desarrollador: la receta está dimensionada para una DGX Spark y sostiene 63-64 tokens/s de decodificación con 0,72-0,76 s de tiempo hasta el primer token en turnos de seguimiento, lo que hace viable un bucle de agente con herramientas sobre un repositorio real sin depender de la nube.
-- Asistente de revisión de código con contexto de repositorio completo: los 131.000 tokens de contexto configurados y la recuperación verificada hasta 124.842 tokens permiten cargar varios ficheros y el historial de cambios en una sola ventana.
-- Procesamiento de documentos con imágenes: al ser image-text-to-text, puede extraer información de capturas, diagramas o páginas escaneadas y combinarla con texto en la misma conversación.
-- Evaluación de calidad de cuantizaciones: el repositorio publica la metodología de divergencia KL contra BF16 con conjuntos de referencia concretos (87 trozos de 4.096 tokens, 178.089 posiciones puntuadas), lo que lo convierte en una base útil para comparar builds GGUF y FP4 en tareas de investigación sobre cuantización.
-- Automatización de soporte técnico con contexto largo: la ventana de 131K tokens permite mantener historiales de incidencia extensos y documentación técnica adjunta sin truncar.
-- Generación de código en pipelines de CI/CD: el soporte de tool calling con `tool_choice=auto` y el throughput de prefill de 3.070-3.150 tokens/s con prompts largos permiten alimentar el modelo con diffs y ficheros de configuración grandes en tiempos de espera razonables.
-- Prototipado de aplicaciones multimodales en hardware de sobremesa: permite validar un producto que combine visión y texto sin aprovisionar clústeres con A100/H100.
+- Programación agéntica local: el modelo puede ejecutar sesiones de agente con definiciones de herramientas y llamadas reales sobre un repositorio, con 65,3 tok/s de decodificación y turnos de seguimiento que arrancan en 0,90 s gracias a los checkpoints de prefix-cache. Es adecuado para equipos que quieren un agente de código sin enviar el código a la nube.
+- Asistente de revisión de código en CI/CD: con HumanEval al 97,0 % y soporte de tool calling, puede integrarse en pipelines que invocan al servidor vLLM vía API compatible con OpenAI para generar parches, explicar diffs o responder preguntas sobre el repositorio.
+- Análisis de documentación técnica extensa: la ventana de 131K tokens y la recuperación verificada a 125K permiten cargar manuales, especificaciones o actas completas y hacer preguntas con referencias cruzadas sin trocear el documento.
+- Procesamiento de capturas y vídeo en soporte técnico: la entrada image-text-to-text permite adjuntar capturas de pantalla de errores o grabaciones cortas de una interfaz y obtener diagnósticos o pasos de reproducción.
+- Automatización de tareas multi-paso con varias sesiones concurrentes: la planificación consciente de caché permite ejecutar cuatro sesiones de agente simultáneas con un tiempo hasta el primer token mediano de 1,0 s, útil para orquestadores que lanzan varios agentes en paralelo sobre el mismo corpus.
+- Despliegue en entornos con requisitos de soberanía del dato: al ejecutarse íntegramente en una DGX Spark local con pesos descargados del Hub, encaja en escenarios donde el texto, las imágenes o el código no pueden salir de la infraestructura propia.
+- Evaluación y prototipado de modelos MoE cuantizados: la receta incluye scripts de benchmark (`test-toolcall.py`, `needle-test.py`, `quality-probe.py`) que permiten reproducir las métricas de calidad y latencia antes de adoptar el modelo en producción.
 
 ## Benchmarks y rendimiento
 
-Calidad (thinking off, decodificación greedy):
+Calidad, frente a vLLM stock en la misma DGX Spark:
 
-| Prueba | Este repo (2026-11-01) | Este repo (2026-10-21) |
+| Métrica | vLLM stock | Esta receta |
 |---|---:|---:|
-| GSM8K (primeras 200) | 97,5 % | 96,5 % |
-| HumanEval | 96,3-97,0 % | 95,7 % |
+| GSM8K (primeros 200) | 97,0 % | 97,5 % |
+| HumanEval | 97,6 % | 97,0 % |
+| Needle a 29K / 96K / 125K tokens, tool calls | pasa | pasa |
+| Divergencia KL frente al modelo BF16 | no disponible | 0,0465 (acuerdo top-1 92,1 %) |
 
-Fidelidad respecto a BF16 (conjunto neutral de AtomicChat, 87 trozos de 4.096 tokens, 178.089 posiciones; PPL BF16 de referencia 4,045):
+Velocidad con una petición a la vez, frente a vLLM stock en la misma DGX Spark (release 2026-11-03):
 
-| Modelo | Tamano | KL media | Top-1 | Ratio PPL |
-|---|---:|---:|---:|---:|
-| Este repo tal como se sirve (W4A16) | 102 GB | 0,0492 | 91,7 % | 1,008 |
-| Mismo checkpoint, FP4 por defecto en vLLM (W4A4) | 102 GB | 0,0665 | 90,4 % | no disponible |
-| Misma config con `A4_PREFILL=1` (dos planos FP4) | 102 GB | 0,0516 | 91,6 % | 1,012 |
-| Misma config con un plano FP4 (por defecto de b12x) | 102 GB | 0,0665 | 90,3 % | 1,012 |
-| Vardaan97 Splash Quality-PLE8 GGUF | 129-157 GB | 0,0126 | no disponible | 1,000 |
-| unsloth UD-Q4_K_XL + tabla n-gram Q8 | 141 GB | 0,0210 | 94,8 % | 1,005 |
-| AtomicChat AD-4.27bpw-Q4_K_M | 95 GB | 0,0842 | 89,5 % | 1,026 |
-
-Rendimiento en una DGX Spark (GB10):
-
-| Escenario | Decodificación | TTFT mediana | Tokens por paso |
+| Métrica | vLLM stock | Esta receta | Mejora |
 |---|---:|---:|---:|
-| Sesiones de agente de código, 2026-10-21 | 63,5-64,0 tok/s | 0,74-0,76 s | 3,40-3,56 |
-| Sesiones de agente de código, lanzador estándar | 46,9 tok/s | no disponible | no disponible |
-| Arnés público de 40 prompts (categorías) | 72,8-73,2 tok/s | 0,28 s | 53,5 ms/paso |
-| Sesiones de agente, actualización 2026-11-01 | sin cambios (53,7-53,8 ms/paso) | 0,72 s | no disponible |
+| Decodificación, programación agéntica | 48,8 tok/s | 65,3 tok/s | 1,34× |
+| Prefill, prompt de 33K tokens | 2.226 tok/s | 3.236 tok/s | 1,45× |
+| Tiempo hasta el primer token, prompt de 112K tokens | 51,3 s | 35,5 s | 1,44× |
+| Tiempo hasta el primer token, turno de seguimiento (mediana) | 3,70 s | 0,90 s | 4,1× |
+| Benchmark de programación agéntica, tiempo de reloj (92 turnos) | 1.161 s | 693 s | 1,68× |
 
-Prefill: 3.150 tok/s con 33K tokens de prompt, 3.070 tok/s con 112K y 2.815-2.850 tok/s con 8,6K (actualización del 1 de noviembre de 2026).
+Sesiones concurrentes, release actual frente a la release 2026-11-03 (75 peticiones, prompts de hasta 131K tokens):
+
+| Métrica | Release 2026-11-03 | Release actual | Mejora |
+|---|---:|---:|---:|
+| Tiempo de reloj, una sesión de agente a la vez | 523,5 s | 469,6 s | 1,11× |
+| Tiempo de reloj, cuatro sesiones a la vez | 1.554,9 s | 390,6 s | 3,98× |
+| Media geométrica de ambas | no disponible | no disponible | 2,11× |
+| Tiempo hasta el primer token, cuatro sesiones (mediana) | 84 s | 1,0 s | no disponible |
+
+Prefill en frío: 3.597 tok/s frente a 3.099–3.118 tok/s de la release 2026-11-03 en un prompt de 25K tokens (aproximadamente un 15 % más rápido); la velocidad de decodificación no cambia. GSM8K y HumanEval se midieron con decodificación greedy y razonamiento desactivado, con una variación de unos 1,5 puntos entre arranques. No se han publicado resultados de benchmarks del modelo base frente a otros modelos en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: el checkpoint ocupa 102,3 GB, por lo que requiere al menos 110-120 GB de memoria disponible; la receta se calibró con una fracción de memoria de GPU de 0,73 sobre 128 GB unificados.
-- GPU objetivo: una única NVIDIA DGX Spark (GB10, arquitectura Blackwell, 128 GB de memoria unificada). Los kernels b12x y la cuantización NVFP4 dependen de esta arquitectura.
-- No cabe en GPU de consumo convencionales (RTX 4090 con 24 GB, RTX 5090 con 32 GB) sin descuantizar o recurrir a builds GGUF de terceros de menor tamaño.
-- Despliegue: vLLM con la imagen fijada en `recipe/serve/serve.sh`, parches propios en `recipe/patches/` y kernels b12x. No se documenta soporte para llama.cpp, Ollama ni TGI en este repositorio.
-- Throughput medido: 63-64 tok/s de decodificación en sesiones de agente, 72,8-73,2 tok/s en el arnés público de 40 prompts, 3.070-3.150 tok/s de prefill con prompts de 33K-112K tokens y 54 ms por paso especulativo.
-- Configuración de servido: trozos de prefill de 8.192 tokens, caché KV en FP8, 4 tokens borrador MTP y gráficos CUDA.
+- Hardware objetivo: una única NVIDIA DGX Spark con SoC GB10 (Blackwell, sm_121a). La receta está afinada específicamente para esta plataforma y no se documenta su funcionamiento en otras GPU.
+- VRAM estimada: el repositorio ocupa 107,1 GB, por lo que se necesita al menos esa capacidad de memoria unificada para cargar los pesos; no se dispone de cifras de memoria pico durante la inferencia.
+- GPU recomendadas: DGX Spark (GB10). No hay datos sobre A100, H100 o RTX 4090 para esta receta.
+- GPU de consumo: no disponible; la receta no menciona compatibilidad con GeForce.
+- Despliegue: vLLM con la imagen pública fijada más b12x, con parches de vLLM y b12x y kernels CUDA personalizados incluidos en `recipe/`. Arranque mediante `recipe/serve/serve.sh`, que expone una API compatible con OpenAI en el puerto 8000. El primer arranque compila y autotunea los kernels en `~/.cache/qwen38-flash-next-spark` (unos 25 minutos); los arranques posteriores tardan unos 5 minutos.
+- Rendimiento: 65,3 tok/s de decodificación en programación agéntica, 3.236 tok/s de prefill con prompt de 33K tokens, 35,5 s hasta el primer token con prompt de 112K tokens, 0,90 s de mediana hasta el primer token en turnos de seguimiento y 1,0 s de mediana con cuatro sesiones concurrentes.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
-|---|---|---|---|---|---|
-| Este repo (Qwen3.8-Flash-Next FP4) | 96,5 B | 131K | nvidia-open-model-agreement | safetensors (NVFP4) | Optimizado para DGX Spark; 63-64 tok/s decode, KL 0,0492 |
-| Vardaan97 Splash Quality-PLE8 GGUF | no disponible | no disponible | no disponible | GGUF | 129-157 GB; KL 0,0126, la más fiel a BF16 de la tabla |
-| unsloth UD-Q4_K_XL + Q8 n-gram | no disponible | no disponible | no disponible | GGUF | 141 GB; KL 0,0210, top-1 94,8 % |
-| AtomicChat AD-4.27bpw-Q4_K_M | no disponible | no disponible | no disponible | GGUF | 95 GB; KL 0,0842, top-1 89,5 % |
+| Modelo | Parámetros | Activos | Contexto | Calidad reportada | Licencia | Disponibilidad |
+|---|---|---|---|---|---|---|
+| Qwen3.8-Flash-Next FP4-Local (esta ficha) | 187,9B en safetensors (125B + 51B embeddings n-gram) | 6B | 131K | GSM8K 97,5 %, HumanEval 97,0 %, KL 0,0465 frente a BF16 | nvidia-open-model-agreement | Hugging Face, receta para DGX Spark |
+| Qwen/Qwen3.8-Flash-Next (BF16) | 125B + 51B embeddings n-gram | 6B | 131K | referencia de calidad del que deriva esta cuantización | no disponible | Hugging Face |
+| nvidia/Qwen3.8-Flash-Next-FP4-Local | no disponible | no disponible | no disponible | no disponible | nvidia-open-model-agreement | Hugging Face |
 
-Los tres alternativos son cuantizaciones del mismo modelo base Qwen3.8-Flash-Next, no modelos distintos. La comparación relevante es de fidelidad frente a BF16 y de encaje en hardware: los builds GGUF de mayor tamaño logran una KL mucho menor (0,0126-0,0210 frente a 0,0492) a costa de 129-157 GB, mientras que este repo prioriza velocidad de servido en vLLM sobre una única DGX Spark. No se dispone de datos de benchmarks frente a otros modelos de la misma categoría (por ejemplo, otros MoE de ~100 B) en la información proporcionada.
+No se dispone de datos de benchmarks ni de especificaciones de modelos de otros fabricantes comparables en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- El checkpoint FP4 de NVIDIA está más lejos de BF16 que los mejores builds GGUF: KL media de 0,0492 frente a 0,0126-0,0210, con una pérdida de top-1 de aproximadamente 3 puntos respecto al mejor GGUF (91,7 % frente a 94,8 %).
-- Las puntuaciones de calidad varían unos 1,5 puntos entre arranques del servidor porque el kernel de decodificación de b12x suma las salidas de expertos con atómicas BF16, lo que introduce no determinismo.
-- La receta está atada a una DGX Spark (GB10) y a kernels b12x; no es portable a otras GPU sin sustituir la ruta de servido.
-- La licencia es nvidia-open-model-agreement, no Apache 2.0 ni MIT: es necesario revisar sus términos antes de cualquier uso comercial, y el campo `license` de Hugging Face aparece como `other`.
-- No se documentan los idiomas soportados; no se puede asumir cobertura multilingüe sin verificación.
-- No se publican datos sobre sesgos, alucinación ni evaluación de seguridad en la información disponible.
-- El conjunto de sesiones de agente usado para medir throughput es privado y no está publicado, por lo que esas cifras no son reproducibles de forma independiente.
-- El rendimiento de prefill y decodificación se midió con la Spark inactiva y sin otros clientes; en producción con concurrencia los valores serán inferiores.
-- El repositorio tiene 132 descargas y 1 like en el momento de la consulta, lo que indica una validación comunitaria muy limitada.
+- La receta está afinada exclusivamente para GB10 (sm_121a) en una DGX Spark; no hay evidencia de que los kernels personalizados funcionen en otras GPU y el rendimiento fuera de esa plataforma es desconocido.
+- La licencia es `nvidia-open-model-agreement`, no una licencia de código abierto estándar; es imprescindible revisar sus términos antes de cualquier uso comercial o de redistribución.
+- El repositorio hereda las limitaciones del modelo base Qwen3.8-Flash-Next, cuyos sesgos, idiomas y riesgos de alucinación no se documentan en la información disponible.
+- La cuantización NVFP4 introduce una divergencia respecto al modelo BF16: KL de 0,0465 y acuerdo top-1 del 92,1 %, lo que implica que aproximadamente un 8 % de las predicciones top-1 difieren del modelo de referencia.
+- Las métricas de calidad varían unos 1,5 puntos entre arranques en GSM8K y HumanEval, por lo que diferencias pequeñas entre configuraciones no deben interpretarse como mejoras reales.
+- El primer arranque requiere compilar y autotunear kernels durante unos 25 minutos, lo que complica despliegues efímeros o autoescalado.
+- El cabezal MTP solo se entrenó para cargas agénticas de programación; su ganancia de velocidad en otras tareas no está documentada.
+- No se especifican los idiomas soportados, por lo que no se puede garantizar un rendimiento adecuado en castellano sin evaluarlo.
+- El modelo acepta imagen y vídeo, pero no se documentan sesgos visuales, resolución máxima soportada ni comportamiento con contenido sensible.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/diffbot/Qwen3.8-Flash-Next-FP4-Local-DGX-Spark
-- Checkpoint original de NVIDIA: https://huggingface.co/nvidia/Qwen3.8-Flash-Next-FP4-Local
+- Modelo en Hugging Face: https://huggingface.co/diffbot/Qwen3.8-Flash-Next-FP4-Local-DGX-Spark
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
-- Conjunto de métricas de referencia (AtomicChat): https://huggingface.co/datasets/AtomicChat/Qwen3.8-Flash-Next-Uncensored-GGUF-metrics
-- Build GGUF Vardaan97 Splash: https://huggingface.co/Vardaan97/Qwen3.8-Flash-Next-Splash-GGUF
-- Build GGUF AtomicChat: https://huggingface.co/AtomicChat/Qwen3.8-Flash-Next-GGUF
-- Licencia: fichero LICENSE del repositorio (nvidia-open-model-agreement)
+- Cuantización original de NVIDIA: https://huggingface.co/nvidia/Qwen3.8-Flash-Next-FP4-Local
+- Dataset de métricas de divergencia KL: https://huggingface.co/datasets/AtomicChat/Qwen3.8-Flash-Next-Uncensored-GGUF-metrics

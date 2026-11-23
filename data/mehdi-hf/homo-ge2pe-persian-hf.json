@@ -5,7 +5,7 @@
   "author": "mehdi-hf",
   "url": "https://huggingface.co/mehdi-hf/Homo-GE2PE-Persian-HF",
   "created_at": "2026-09-09T20:32:46.000Z",
-  "updated_at": "2026-09-09T20:37:57.000Z",
+  "updated_at": "2026-11-22T14:10:25.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-to-speech",
@@ -35,7 +35,7 @@
     "endpoints_compatible",
     "region:us"
   ],
-  "likes": 4,
+  "likes": 5,
   "downloads_30d": 3421,
   "trending_score": 0,
   "parameters": 8264064,

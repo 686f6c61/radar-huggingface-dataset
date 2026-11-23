@@ -1,0 +1,74 @@
+{
+  "schema": 2,
+  "id": "Renesas/Phi-4-mini-instruct-GGUF",
+  "slug": "renesas-phi-4-mini-instruct-gguf",
+  "author": "Renesas",
+  "url": "https://huggingface.co/Renesas/Phi-4-mini-instruct-GGUF",
+  "created_at": "2026-11-23T09:11:18.000Z",
+  "updated_at": "2026-11-23T09:11:19.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "renesas",
+    "x5h",
+    "npx-llm",
+    "text-generation",
+    "base_model:microsoft/Phi-4-mini-instruct",
+    "base_model:finetune:microsoft/Phi-4-mini-instruct",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "context_length": null,
+  "base_model": "microsoft/Phi-4-mini-instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Semiconductor & Embedded System Solutions | Renesas",
+      "url": "https://www.renesas.com/",
+      "snippet": "Renesas is a global company providing high-performance semiconductors and embedded solutions enabling innovation in …Read more"
+    },
+    {
+      "title": "Products | Renesas",
+      "url": "https://www.renesas.com/en/products",
+      "snippet": "Explore the Renesas Products page to efficiently navigate a wide array of semiconductor solutions. Discover microcontrollers, cutting …Read more"
+    },
+    {
+      "title": "Renesas Electronics - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Renesas_Electronics",
+      "snippet": "Renesas Electronics Corporation (Japanese: ルネサス エレクトロニクス株式会社, Hepburn: Runesasu Erekutoronikusu Kabushiki …Read more"
+    },
+    {
+      "title": "Renesas Careers",
+      "url": "https://jobs.renesas.com/",
+      "snippet": "Our People and culture play a key role in making your experience at Renesas rewarding, and we need more talented people across …Read more"
+    },
+    {
+      "title": "Renesas : actualités et articles | L'Embarqué",
+      "url": "https://lembarque.com/entreprise/renesas",
+      "snippet": "Nov 5, 2026 · Le concepteur et fabricant de semi-conducteurs Renesas Electronics est issu de la fusion de NEC Electronics et de …Read more"
+    }
+  ]
+}

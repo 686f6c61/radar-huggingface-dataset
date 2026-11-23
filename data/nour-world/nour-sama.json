@@ -1,0 +1,76 @@
+{
+  "schema": 2,
+  "id": "nour-world/nour-sama",
+  "slug": "nour-world-nour-sama",
+  "author": "nour-world",
+  "url": "https://huggingface.co/nour-world/nour-sama",
+  "created_at": "2026-11-23T08:40:45.000Z",
+  "updated_at": "2026-11-23T08:44:29.000Z",
+  "license": "quran-lab-npl-1.2",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "ar"
+  ],
+  "tags": [
+    "onnx",
+    "quran",
+    "tajweed",
+    "nour-sama",
+    "squeezeformer",
+    "speech-recognition",
+    "phoneme-recognition",
+    "ar",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 629654208,
+  "storage_human": "630 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Prénom Noûr (fille) : signification, origine, caractère, sainte, avis",
+      "url": "https://www.journaldesfemmes.fr/prenoms/nour/prenom-7814",
+      "snippet": "Digne de confiance, Nour est une femme à qui on peut confier ses secrets sans la moindre crainte d'être trahi ou mis à nu. Enfant, …Read more"
+    },
+    {
+      "title": "Nour Biographie : naissance, parcours, famille… - Chérie FM",
+      "url": "https://www.cheriefm.fr/artistes/nour/biographie",
+      "snippet": "Opposée à Mister Mat de l’équipe de Vianney lors de l’ultime épreuve, Nour prend son envol définitif vers une carrière de chanteuse …Read more"
+    },
+    {
+      "title": "Nour (2026) - MyDramaList",
+      "url": "https://mydramalist.com/808228-nour-the-series",
+      "snippet": "Aug 25, 2026 · They insist they saw a mysterious, blue-eyed creature known as a Nour. A Nour is an immortal entity that survives by …Read more"
+    },
+    {
+      "title": "Nour (The Voice) : la triste raison pour laquelle elle a décidé d ...",
+      "url": "https://www.voici.fr/musique/nour-the-voice-la-triste-raison-pour-laquelle-elle-a-decide-darreter-lecole-757782",
+      "snippet": "May 29, 2023 · En 2022, Nour remportait l'émission The Voice aux côtés de son coach, Florent Pagny. Depuis, sa vie a bien changé."
+    },
+    {
+      "title": "Nour The Voice - Facebook",
+      "url": "https://www.facebook.com/Nourthevoice/",
+      "snippet": "Nov 7, 2026 · Nour The Voice Nour, 20 ans, Chanteuse . Plus jeune gagnante THE VOICE France ( ... See more"
+    }
+  ]
+}

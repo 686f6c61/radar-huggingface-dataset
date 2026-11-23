@@ -5,7 +5,7 @@
   "author": "Xylolabs",
   "url": "https://huggingface.co/Xylolabs/Qwen3.6-27B-GGUF",
   "created_at": "2026-11-14T22:20:11.000Z",
-  "updated_at": "2026-11-22T05:41:52.000Z",
+  "updated_at": "2026-11-23T04:45:39.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

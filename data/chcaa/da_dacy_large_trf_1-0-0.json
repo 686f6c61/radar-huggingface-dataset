@@ -1,0 +1,118 @@
+{
+  "schema": 2,
+  "id": "chcaa/da_dacy_large_trf_1.0.0",
+  "slug": "chcaa-da_dacy_large_trf_1-0-0",
+  "author": "chcaa",
+  "url": "https://huggingface.co/chcaa/da_dacy_large_trf_1.0.0",
+  "created_at": "2026-09-09T15:59:24.000Z",
+  "updated_at": "2026-11-23T12:24:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "spacy",
+  "languages": [
+    "da"
+  ],
+  "tags": [
+    "spacy",
+    "dacy",
+    "danish",
+    "token-classification",
+    "pos tagging",
+    "morphological analysis",
+    "lemmatization",
+    "dependency parsing",
+    "named entity recognition",
+    "da",
+    "dataset:universal-dependencies/universal_dependencies",
+    "dataset:alexandrainst/dane",
+    "dataset:alexandrainst/dacoref",
+    "dataset:chcaa/dacy-data",
+    "base_model:KennethEnevoldsen/dfm-sentence-encoder-large",
+    "base_model:finetune:KennethEnevoldsen/dfm-sentence-encoder-large",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 69,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2753093727,
+  "storage_human": "2.8 GB",
+  "context_length": null,
+  "base_model": "KennethEnevoldsen/dfm-sentence-encoder-large",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "NER",
+      "dataset": "DaNE",
+      "metric": "NER Precision",
+      "value": 0.8540669856
+    },
+    {
+      "task": "NER",
+      "dataset": "DaNE",
+      "metric": "NER Recall",
+      "value": 0.9060913706
+    },
+    {
+      "task": "NER",
+      "dataset": "DaNE",
+      "metric": "NER F Score",
+      "value": 0.8793103448
+    },
+    {
+      "task": "TAG",
+      "dataset": "UD Danish DDT",
+      "metric": "TAG (XPOS) Accuracy",
+      "value": 0.9859187847
+    },
+    {
+      "task": "POS",
+      "dataset": "UD Danish DDT",
+      "metric": "POS (UPOS) Accuracy",
+      "value": 0.9859780323
+    },
+    {
+      "task": "MORPH",
+      "dataset": "UD Danish DDT",
+      "metric": "Morph (UFeats) Accuracy",
+      "value": 0.986094882
+    },
+    {
+      "task": "LEMMA",
+      "dataset": "UD Danish DDT",
+      "metric": "Lemma Accuracy",
+      "value": 0.9610374438
+    },
+    {
+      "task": "UNLABELED_DEPENDENCIES",
+      "dataset": "UD Danish DDT",
+      "metric": "Unlabeled Attachment Score (UAS)",
+      "value": 0.9155339149
+    },
+    {
+      "task": "LABELED_DEPENDENCIES",
+      "dataset": "UD Danish DDT",
+      "metric": "Labeled Attachment Score (LAS)",
+      "value": 0.8897903989
+    },
+    {
+      "task": "SENTS",
+      "dataset": "UD Danish DDT",
+      "metric": "Sentences F-Score",
+      "value": 0.9844097996
+    }
+  ],
+  "sources": []
+}

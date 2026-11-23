@@ -5,7 +5,7 @@
   "author": "qualcomm",
   "url": "https://huggingface.co/qualcomm/Mobile-Bert-Uncased-Google",
   "created_at": "2026-01-28T01:46:29.000Z",
-  "updated_at": "2026-11-05T00:44:35.000Z",
+  "updated_at": "2026-11-18T22:16:32.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -21,7 +21,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 5,
+  "downloads_30d": 2,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

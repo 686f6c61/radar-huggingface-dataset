@@ -5,7 +5,7 @@
   "author": "sudhanshu42844",
   "url": "https://huggingface.co/sudhanshu42844/mixtral-healthcare-pretrained-from-scratch",
   "created_at": "2026-11-18T08:21:52.000Z",
-  "updated_at": "2026-11-20T12:33:38.000Z",
+  "updated_at": "2026-11-22T19:41:44.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -16,7 +16,8 @@
   "tags": [
     "pytorch",
     "safetensors",
-    "mixtral-style",
+    "medsparse",
+    "mixtral-inspired",
     "mixture-of-experts",
     "sparse-moe",
     "from-scratch",
@@ -30,7 +31,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 21,
+  "downloads_30d": 41,
   "trending_score": 0,
   "parameters": 38779008,
   "parameters_human": "38.8M",
@@ -47,8 +48,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "sudhanshu42844/medsparse-healthcare-pretrained-from-scratch",
+  "renamed_at": "2026-11-23T12:34:37.544Z",
   "benchmarks": [],
   "sources": []
 }

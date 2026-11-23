@@ -1,0 +1,59 @@
+{
+  "schema": 2,
+  "id": "mdeeps18/qwen3-1.7b-business-insights-engine-gguf",
+  "slug": "mdeeps18-qwen3-1-7b-business-insights-engine-gguf",
+  "author": "mdeeps18",
+  "url": "https://huggingface.co/mdeeps18/qwen3-1.7b-business-insights-engine-gguf",
+  "created_at": "2026-11-18T14:24:36.000Z",
+  "updated_at": "2026-11-18T14:25:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "qwen3",
+    "business-insights",
+    "business-analyst",
+    "q4-k-m",
+    "text-generation",
+    "en",
+    "base_model:Qwen/Qwen3-1.7B",
+    "base_model:quantized:Qwen/Qwen3-1.7B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 2,
+  "trending_score": 0,
+  "parameters": 1720574976,
+  "parameters_human": "1.72B",
+  "storage_bytes": 1107409248,
+  "storage_human": "1.1 GB",
+  "context_length": 40960,
+  "base_model": "Qwen/Qwen3-1.7B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "The Rise of On-Chain Gaming: Building on Starknet with Dojo Engine",
+      "url": "https://www.starknet.io/blog/on-chain-gaming-starknet-dojo/",
+      "snippet": "May 8, 2025 · The best games in history, such as DOTA and Counter-Strike, started as mods of existing games. On-chain games …"
+    }
+  ]
+}

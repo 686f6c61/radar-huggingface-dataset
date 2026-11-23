@@ -2,106 +2,100 @@
 
 ## Resumen
 
-Xylolabs/Qwen3.5-9B-GGUF es una cuantización GGUF del modelo Qwen3.5-9B de Alibaba Qwen, publicada por Xylolabs como referencia técnica para comparaciones con su stack Tensix. El artefacto contiene el decodificador de texto de 32 capas más un módulo MTP (multi-token prediction) en un único fichero GGUF de 5,780 GB, con tipos de tensor F32, Q4_K y Q6_K, y una media de 5,018 bits por peso almacenado. No incluye el codificador ni el proyector de visión.
+Xylolabs/Qwen3.5-9B-GGUF es una conversión a formato GGUF del modelo Qwen3.5-9B desarrollado por Alibaba Qwen, publicada por Xylolabs para su uso con llama.cpp. El repositorio contiene únicamente el archivo `Qwen3.5-9B-Q4_K_M.gguf` (5,780 GB), una cuantización de 4 bits del modelo de texto original. Con 9.197.093.888 parámetros totales, está pensado para inferencia local en hardware de consumo y estaciones de trabajo.
 
-El modelo base tiene 9.197.093.888 parámetros y se distribuye bajo licencia Apache 2.0. Esta exportación conserva los pesos MTP, aunque la ruta de generación verificada por el autor utiliza únicamente el decodificador de texto principal; no se reclama ningún resultado de éxito con el drafter MTP. Está pensada para ejecutarse con llama.cpp (la verificación se hizo con la versión v0.9.0) y declara soporte de inglés y coreano.
+La relevancia de esta conversión radica en su arquitectura híbrida de atención: solo 8 de sus 32 capas emplean atención completa (4 cabezas KV, tamaño de cabeza 256), mientras que el resto mantiene un estado fijo reducido. Esto permite manejar contextos de hasta 256K tokens con un coste de caché KV muy contenido, algo poco habitual en modelos de esta escala. El archivo incluye además el módulo de predicción multi-token (multi-token prediction).
 
-Su relevancia es acotada: no es un lanzamiento de modelo nuevo ni una cuantización de propósito general optimizada para velocidad, sino un fichero de referencia reproducible que preserva exactamente los tensores, la plantilla de chat y el contrato de tokens de una comprobación concreta frente a BF16. Para desarrolladores que necesiten una referencia Q4_K_M estable de Qwen3.5-9B es útil; para despliegues en producción conviene evaluar otras cuantizaciones del mismo modelo base.
+La licencia Apache 2.0 facilita el uso comercial, y el modelo declara soporte para inglés y coreano. El autor de la conversión no está afiliado a Alibaba Qwen, y la model card advierte de que se trata de una cuantización de pesos, no de un modelo entrenado por Xylolabs.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (32 capas) con módulo MTP; codificador de visión omitido |
-| Parametros totales | 9.197.093.888 (modelo base) |
-| Parametros activos | no disponible (no es MoE segun la informacion disponible) |
-| Longitud de contexto | no disponible (los metadatos del modelo se conservan sin cambios; el ejemplo de la model card limita a 2.048 tokens) |
-| Tipos de cuantizacion | Q4_K_M (F32: 184 tensores, Q4_K: 223, Q6_K: 35); media de 5,018 bits por peso |
-| Idiomas soportados | en, ko |
+| Arquitectura | Transformer híbrido con atención completa en 8 de 32 capas y estado fijo en el resto; incluye módulo de predicción multi-token |
+| Parámetros totales | 9.197.093.888 |
+| Parámetros activos | no disponible (no se indica que sea MoE) |
+| Longitud de contexto | hasta 256K tokens (según tabla de hardware de la model card) |
+| Tipos de cuantización | Q4_K_M (único archivo publicado); la model card incluye métricas comparativas de otros formatos (Q8_0, Q6_K, Q5_K_M, Q4_K_M, IQ4_XS, Q3_K_M, IQ3_XXS, Q2_K) |
+| Idiomas soportados | inglés (en), coreano (ko) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (442 tensores del decodificador de texto + 1 modulo MTP + tokenizer + plantilla de chat) |
+| Formato de pesos | GGUF (llama.cpp) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base Qwen3.5-9B es un transformer decoder-only de 32 capas con 9.197 millones de parámetros. Esta exportación GGUF incluye 442 tensores del decodificador de texto y un módulo MTP adicional, además del tokenizer y la plantilla de chat. Los pesos de visión (codificador y proyector) están explícitamente omitidos, por lo que la entrada de imagen no está disponible en este fichero sin una implementación compatible propia.
+El modelo base Qwen3.5-9B emplea una arquitectura transformer con un esquema de atención híbrido: de las 32 capas, solo 8 usan atención completa con 4 cabezas KV y tamaño de cabeza 256; las 24 restantes conservan un estado fijo pequeño en lugar de una caché KV completa. Esta combinación reduce drásticamente el consumo de memoria asociado al contexto largo y permite alcanzar ventanas de 256K tokens en GPUs de 24 GB. El archivo GGUF incorpora el módulo de predicción multi-token del modelo original.
 
-La model card no documenta datos de entrenamiento del modelo base (número de tokens, composición del dataset, etapas de RLHF/DPO). La innovación técnica destacable del artefacto es la preservación del módulo MTP, si bien el autor aclara que la ruta de generación verificada usa el decodificador de texto principal y que integrar un drafter MTP requiere su propia implementación y evaluación. El fichero se generó con llama.cpp v0.9.0 y mantiene el contrato de tokens, stop IDs y presupuestos de generación del modelo original.
+No se dispone de información sobre el volumen de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas de RLHF o DPO en el modelo base, ya que la model card de esta conversión no los detalla. La model card sí documenta el proceso de conversión y cuantización: los pesos se transformaron a GGUF y se cuantizaron a Q4_K_M, con un archivo NOTICE que atribuye la autoría del modelo fuente a su titular de derechos.
 
 ## Capacidades
 
-- Generación de texto conversacional en inglés y coreano, según los idiomas declarados.
-- Razonamiento con modo "thinking" conmutable: el ejemplo usa `--chat-template-kwargs '{"enable_thinking":false}'` para desactivarlo; la evaluación incluye siete recomprobaciones con thinking activado.
-- Plantilla de chat compatible con `--jinja` en llama.cpp.
-- Compatibilidad con endpoints (tag `endpoints_compatible`) para despliegues tipo API.
-- Pesos MTP presentes para decodificación especulativa, sin garantía de funcionamiento declarada por el autor.
-- Capacidades de visión: no disponibles en este fichero (pesos omitidos).
-- Tool calling / function calling: no documentado en la información disponible.
-- Capacidades de agente multi-paso: no documentadas en la información disponible.
+- Generación de texto conversacional en inglés y coreano.
+- Razonamiento multi-turno con ventanas de contexto de hasta 256K tokens.
+- Inferencia local mediante llama.cpp con soporte de plantillas Jinja (`--jinja`).
+- Compatible con endpoints (etiqueta `endpoints_compatible` en el repositorio).
+- Predicción multi-token integrada en el archivo GGUF.
+- No se documentan capacidades de visión, audio, tool calling ni agentes en la información disponible.
 
 ## Casos de uso
 
-- Referencia reproducible para comparación de cuantizaciones: sirve como patrón Q4_K_M fijo frente a BF16 en experimentos de compresión, gracias a la preservación exacta de tensores, plantilla y contrato de tokens.
-- Evaluación de calidad de cuantización en inglés y coreano: los conjuntos de verificación del autor cubren texto plano y chat en ambos idiomas, lo que permite replicar la medición de KL y acuerdo top-1.
-- Inferencia local en estaciones de trabajo: con 5,77 GB de pesos más KV cache, cabe en GPU de consumo con suficiente VRAM y en CPU vía llama.cpp.
-- Prototipado de asistentes conversacionales bilingües en, ko: la plantilla de chat y el modo thinking conmutable facilitan alternar respuestas directas y razonadas.
-- Experimentación con decodificación especulativa: los pesos MTP retenidos permiten a un equipo implementar y evaluar su propio drafter, asumiendo el trabajo de integración.
-- Base para pipelines de generación de texto en entornos con requisitos de licencia permisiva: Apache 2.0 permite uso comercial sin restricciones adicionales del cuantizador.
-- Validación de compatibilidad de llama.cpp: útil para verificar que una build concreta (v0.9.0 en la referencia) reproduce los token IDs y stop IDs esperados.
+- Asistentes conversacionales locales: el modelo puede mantener diálogos multi-turno extensos gracias a su ventana de 256K tokens, ejecutándose íntegramente en una RTX 4090 o RTX 3090 de 24 GB con el archivo Q4_K_M.
+- Procesamiento de documentos largos: resumen y extracción de información sobre contratos, informes o bases de código que superen los 100K tokens, aprovechando la atención híbrida para mantener el coste de memoria bajo.
+- Despliegue en estaciones de trabajo sin GPU dedicada de gama alta: con 5,8 GB de pesos, cabe en Mac Studio con memoria unificada y en configuraciones con dos GPUs de 24 GB repartiendo capas.
+- Prototipado e investigación: al ser una cuantización Apache 2.0, sirve para experimentar con modelos de 9B en entornos académicos sin restricciones de licencia.
+- Aplicaciones en coreano e inglés: traducción, redacción y atención al cliente bilingüe limitada a esos dos idiomas.
+- Inferencia en entornos con requisitos de privacidad: al ejecutarse con llama.cpp de forma local, los datos no salen del equipo, adecuado para sectores regulados.
+- Evaluación comparativa de cuantizaciones: la model card publica métricas de divergencia KL y acuerdo top-1 frente a BF16, útil para decidir qué formato usar en producción.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible. La model card solo reporta una verificación de fidelidad frente a BF16:
+No se han publicado resultados de benchmarks de tareas (MMLU, HumanEval, GSM8K, etc.) en la información disponible. La model card sí incluye métricas de fidelidad de la cuantización frente a BF16, medidas con llama.cpp:
 
-| Metrica | Valor |
-|---|---|
-| Aciertos referencia Q4_K_M | 30/33 + 7/7 |
-| Aciertos pase BF16 emparejado | 31/33 + 7/7 |
-| Respuestas rotas | 0 |
-| Item perdido contabilizado | ko-fact-hangul |
-| Secuencias emparejadas | 8 (2.048 tokens cada una) |
-| Posiciones puntuadas | 16.312 |
-| KL media respecto a BF16 | 0,036694 |
-| Acuerdo top-1 | 90,47 % |
-| Velocidad | no reportada |
+| Cuantización | Tamaño | KL WikiText-2 | Top-1 WikiText-2 | KL held-out | Top-1 held-out |
+|---|---:|---:|---:|---:|---:|
+| Q8_0 (llama.cpp) | 9,786 GB | 0,001778 | 98,461% | 0,000961 | 98,539% |
+| Q6_K (Unsloth) | 7,458 GB | 0,003474 | 97,402% | 0,002531 | 97,490% |
+| Q5_K_M (Unsloth) | 6,578 GB | 0,007391 | 96,534% | 0,005321 | 96,461% |
+| **Q4_K_M (este repo)** | **5,780 GB** | **0,039493** | **91,426%** | **0,035054** | **91,775%** |
+| IQ4_XS (Unsloth) | 5,169 GB | 0,024093 | 92,961% | 0,023098 | 92,814% |
+| Q3_K_M (llama.cpp) | 4,738 GB | 0,127403 | 84,235% | 0,114989 | 85,225% |
+
+El Q4_K_M de este repositorio muestra una divergencia KL de 0,039493 y un acuerdo top-1 del 91,426% en WikiText-2, inferior a otras cuantizaciones de tamaño similar como IQ4_XS de Unsloth (KL 0,024093, top-1 92,961%). Los datos de la model card permiten esta comparación directa entre formatos.
 
 ## Requisitos de hardware
 
-- VRAM mínima para pesos: aproximadamente 5,77 GB solo para los pesos GGUF, más espacio para KV cache y buffers.
-- VRAM práctica estimada: 7-8 GB para contexto corto (2.048 tokens) y 10-12 GB para contextos mayores, aunque la longitud de contexto real del modelo no está disponible en la información proporcionada.
-- GPU de consumo: cabe en tarjetas con 8 GB o más (por ejemplo, RTX 3060 Ti 8 GB, RTX 4060 Ti 16 GB, RTX 4070 en adelante); en 8 GB el margen para KV cache es ajustado.
-- GPU de datacenter: A100, H100 y similares sin problema de capacidad; útiles si se necesita alto throughput con contexto largo.
-- Despliegue: llama.cpp (verificado con v0.9.0), `llama-cli` y `llama cli -hf Xylolabs/Qwen3.5-9B-GGUF:Q4_K_M`; también descarga directa del fichero GGUF.
-- vLLM, TGI, Ollama: no documentados en la información disponible para este artefacto concreto.
-- Latencia y throughput: no reportados por el autor.
+- VRAM estimada: 5,8 GB para los pesos en Q4_K_M; hay que sumar la caché KV en f16 para el contexto deseado y unos 2 GB de sobrecarga del runtime. La model card indica que la suma debe caber en el 90% de la memoria disponible.
+- GPU recomendadas: RTX 4090, RTX 3090 (24 GB) y RTX 5090 (32 GB) con contexto de 256K según la tabla del autor; también RTX 6000 Ada (48 GB), H100 (80 GB), H200 (141 GB), B200 (192 GB) y B300 (288 GB).
+- Cabe en GPU de consumo: sí, en RTX 4090 y RTX 3090 con 24 GB, alcanzando 256K de contexto según la model card.
+- Memoria unificada: Mac Studio M5 Max y M5 Ultra (128-512 GB) y DGX Spark (128 GB) soportan 256K de contexto.
+- Despliegue: llama.cpp (build enlazado en la model card o posterior) mediante `llama-cli -m Qwen3.5-9B-Q4_K_M.gguf --jinja`. No se documentan otras opciones como vLLM, Ollama o TGI en la información disponible.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Formato | Licencia | Notas |
+| Modelo | Parámetros | Contexto | Formato | Licencia | Notas |
 |---|---|---|---|---|---|
-| Xylolabs/Qwen3.5-9B-GGUF | 9,2 B | no disponible | GGUF Q4_K_M | Apache 2.0 | Referencia de cuantización con MTP retenido; sin visión |
-| Qwen/Qwen3.5-9B (base) | 9,2 B | no disponible | safetensors (BF16) | Apache 2.0 | Modelo original completo, incluye visión según la referencia del autor |
-| Qwen3.5-9B-Tensix-BFP4 (Xylolabs) | 9,2 B | no disponible | BFP4 (Tensix) | Apache 2.0 | Variante del mismo autor para comparación en Tensix |
+| Xylolabs/Qwen3.5-9B-GGUF (Q4_K_M) | 9,2B | 256K | GGUF | Apache 2.0 | KL WikiText-2 0,039493; top-1 91,426% |
+| Qwen/Qwen3.5-9B (BF16) | 9,2B | 256K | safetensors | Apache 2.0 | Modelo base de referencia; sin métricas de tarea publicadas en esta ficha |
+| Cuantizaciones Unsloth del mismo modelo (Q4_K_M) | 9,2B | 256K | GGUF | Apache 2.0 | 5,681 GB; KL 0,017267; top-1 94,142% |
+| Cuantizaciones Unsloth del mismo modelo (IQ4_XS) | 9,2B | 256K | GGUF | Apache 2.0 | 5,169 GB; KL 0,024093; top-1 92,961% |
 
-No se dispone de datos de benchmarks comparativos con otras familias de modelos del mismo tamaño en la información proporcionada.
+No se dispone de información sobre otros modelos de 9B comparables (por ejemplo, de otras familias) en los datos proporcionados.
 
 ## Limitaciones y advertencias
 
-- No incluye pesos de visión: el codificador y el proyector están omitidos, por lo que la entrada de imagen no funciona sin una implementación compatible propia.
-- Los pesos MTP se conservan pero no hay reclamación de éxito con el drafter; la ruta verificada es solo el decodificador de texto.
-- La verificación se limita a textos almacenados y prompts cortos (2.048 tokens, 33 prompts); no sustituye una evaluación de tareas reales.
-- Idiomas declarados únicamente inglés y coreano; el rendimiento en castellano no está documentado.
-- Riesgo de alucinación y sesgos del modelo base no cuantificados en la información disponible.
-- La pérdida contabilizada en coreano (ko-fact-hangul) indica degradación medible frente a BF16 en ese ítem.
-- El autor declara el artefacto "as is", sin garantía ni respaldo del upstream (Qwen); la licencia Apache 2.0 del modelo base se mantiene, lo que permite uso comercial.
-- La fecha de creación del repositorio (2026-11-14) y el recuento de descargas (0) indican un artefacto reciente y sin validación comunitaria.
-- Para producción conviene evaluar cuantizaciones alternativas del mismo modelo base y verificar la versión de llama.cpp empleada.
+- Solo se publica un archivo Q4_K_M; no hay variantes de mayor precisión en este repositorio, y el Q4_K_M muestra una fidelidad inferior a otras cuantizaciones de 4 bits según las métricas del propio autor.
+- Idiomas limitados a inglés y coreano; el rendimiento en castellano no está documentado.
+- No se documentan capacidades de tool calling, agentes, visión o audio; no deben asumirse.
+- Riesgo de alucinación inherente a los modelos de lenguaje; no hay evaluaciones de fiabilidad publicadas en esta ficha.
+- Sesgos conocidos: no disponibles en la información proporcionada.
+- La licencia Apache 2.0 permite uso comercial, pero el autor de la conversión (Xylolabs) no está afiliado a Alibaba Qwen; conviene revisar el archivo NOTICE y la licencia del modelo base.
+- Requiere un build de llama.cpp igual o posterior al enlazado en la model card; versiones anteriores pueden no cargar el módulo de predicción multi-token.
+- El contexto de 256K depende del hardware y de la caché KV; en configuraciones con menos memoria hay que reducirlo.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/Xylolabs/Qwen3.5-9B-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Licencia: https://huggingface.co/Xylolabs/Qwen3.5-9B-GGUF/blob/main/LICENSE
-- Variante Tensix BFP4 relacionada: https://huggingface.co/Xylolabs/Qwen3.5-9B-Tensix-BFP4#evaluation
-- Repositorio Tensix de Xylolabs: https://github.com/XylolabsInc/tensix-bfp-gptq
-- Build de llama.cpp usada en la verificación: https://github.com/ggml-org/llama.cpp/tree/cd959bae99ff4bed22bef2604f45241c09bbb8c8
-- Documentación de GGUF en llama.cpp: https://huggingface.co/docs/hub/gguf-llamacpp
+- Build de llama.cpp recomendado: https://github.com/ggml-org/llama.cpp/tree/cd959bae99ff4bed22bef2604f45241c09bbb8c8
+- Repositorio de Xylolabs: https://github.com/XylolabsInc/tensix-bfp-gptq

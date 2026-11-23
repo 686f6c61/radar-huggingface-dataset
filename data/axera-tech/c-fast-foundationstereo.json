@@ -1,0 +1,53 @@
+{
+  "schema": 2,
+  "id": "AXERA-TECH/c-fast-foundationstereo",
+  "slug": "axera-tech-c-fast-foundationstereo",
+  "author": "AXERA-TECH",
+  "url": "https://huggingface.co/AXERA-TECH/c-fast-foundationstereo",
+  "created_at": "2026-10-12T06:37:02.000Z",
+  "updated_at": "2026-11-23T10:18:08.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "Axera",
+    "AX650",
+    "NPU",
+    "stereo-matching",
+    "disparity",
+    "FoundationStereo",
+    "Pulsar2",
+    "en",
+    "base_model:nvidia/c-fast-foundationstereo",
+    "base_model:quantized:nvidia/c-fast-foundationstereo",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 588766079,
+  "storage_human": "589 MB",
+  "context_length": null,
+  "base_model": "nvidia/c-fast-foundationstereo",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

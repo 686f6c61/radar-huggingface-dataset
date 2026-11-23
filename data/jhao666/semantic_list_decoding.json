@@ -5,13 +5,14 @@
   "author": "jhao666",
   "url": "https://huggingface.co/jhao666/Semantic_List_Decoding",
   "created_at": "2026-11-23T01:49:43.000Z",
-  "updated_at": "2026-11-23T01:49:43.000Z",
+  "updated_at": "2026-11-23T02:05:51.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": null,
   "library": null,
   "languages": [],
   "tags": [
+    "safetensors",
     "license:mit",
     "region:us"
   ],
@@ -20,11 +21,13 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 0,
-  "storage_human": null,
+  "storage_bytes": 4463300960,
+  "storage_human": "4.5 GB",
   "context_length": null,
   "base_model": null,
-  "formats": [],
+  "formats": [
+    "safetensors"
+  ],
   "is_conversational": false,
   "gated": false,
   "disabled": false,

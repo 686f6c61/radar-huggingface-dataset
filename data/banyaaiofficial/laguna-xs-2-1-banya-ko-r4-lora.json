@@ -5,7 +5,7 @@
   "author": "banyaaiofficial",
   "url": "https://huggingface.co/banyaaiofficial/laguna-xs-2.1-banya-ko-r4-lora",
   "created_at": "2026-11-20T13:11:01.000Z",
-  "updated_at": "2026-11-20T13:44:56.000Z",
+  "updated_at": "2026-11-22T23:01:52.000Z",
   "license": "openmdw-1.1",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -32,7 +32,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 39,
+  "downloads_30d": 42,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

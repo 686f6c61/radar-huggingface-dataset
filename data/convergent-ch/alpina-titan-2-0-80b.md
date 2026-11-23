@@ -2,92 +2,87 @@
 
 ## Resumen
 
-Alpina Titan 2.0 (también referido como "Chef Murmeli") es un adaptador LoRA publicado por Convergent-ch sobre el modelo base Qwen/Qwen3-Coder-Next. El repositorio no contiene los pesos completos del modelo de 80B: el número "80B" del nombre hace referencia al modelo base original, no al número de parámetros del adaptador. Se trata de un release de investigación con evaluación muy limitada, pensado para personalizar el comportamiento del modelo base mediante PEFT.
+Alpina Titan 2.0 (tambien conocido como Chef Murmeli) es un ajuste fino por LoRA fusionado sobre Qwen/Qwen3-Coder-Next, publicado por Convergent-ch bajo licencia Apache 2.0. Se distribuye como un checkpoint completo en BF16 safetensors de 79.674.391.296 parametros almacenados (159,3 GB de payload tensorial), de modo que puede cargarse directamente con `Qwen3NextForCausalLM` sin aplicar el adaptador por separado. El adaptador original se conserva en el subdirectorio `adapter/` del repositorio.
 
-El adaptador se entrenó durante 360 pasos de adaptación sobre pesos base en BF16, utilizando Transformers 5.3.0, PEFT 0.18.1 y torchao 0.16.0. Las fuentes de entrenamiento incluyen prefijos de SmolLM-Corpus, CodeParrot filtrado, Smol-SmolTalk y self-oss-instruct-sc2-exec-filter-50k. La model card declara comprobaciones de identidad (3/3) y cuatro pruebas simples de Python (4/4), pero advierte explícitamente que estas pruebas no constituyen un benchmark de código ni evidencia de mejora de capacidad general.
+El modelo se presenta explicitamente como un lanzamiento de investigacion con evaluacion muy limitada: solo 360 pasos de adaptacion y comprobaciones cualitativas minimas (3/3 en identidad y 4/4 en cuatro scripts Python simples), que el propio autor advierte que no constituyen un benchmark de codigo ni evidencia de mejora general de capacidades. La relevancia es, por tanto, la de un experimento reproducible de personalizacion sobre una arquitectura Qwen3-Next, no la de un modelo listo para produccion.
 
-Su relevancia es acotada: sirve como ejemplo de adaptación ligera sobre un modelo de código de gran tamaño y como caso de estudio de releases experimentales con documentación de procedencia. No debe confundirse con un modelo completo ni evaluarse con las métricas de un modelo base de 80B.
+La arquitectura subyacente es `qwen3_next` (familia Qwen3-Next, con componentes tipo MoE segun la model card), aunque el numero de parametros activos no se detalla en la informacion disponible. El entrenamiento se realizo con Transformers 5.3.0, PEFT 0.18.1, torchao 0.16.0 y pesos base en BF16.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Adaptador LoRA (PEFT) sobre transformer Qwen/Qwen3-Coder-Next |
-| Parametros totales | No disponible para el adaptador; el modelo base se referencia como 80B |
-| Parametros activos | No disponible (no se indica que el base sea MoE en la informacion proporcionada) |
-| Longitud de contexto | No disponible (heredada del modelo base, no especificada) |
-| Tipos de cuantizacion | No disponible (entrenamiento en BF16; el adaptador se distribuye en safetensors) |
-| Idiomas soportados | en |
-| Licencia | Apache-2.0 |
-| Formato de pesos | safetensors (adaptador PEFT/LoRA) |
+| Arquitectura | Qwen3-Next (`Qwen3NextForCausalLM`), transformer con componentes MoE segun model card |
+| Parametros totales | 79.674.391.296 (parametros almacenados, safetensors) |
+| Parametros activos | no disponible |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | BF16 (release principal); GGUF Q4_K_M publicado por separado para Ollama |
+| Idiomas soportados | en (ingles) |
+| Licencia | apache-2.0 |
+| Formato de pesos | safetensors (BF16, 159,3 GB); GGUF Q4_K_M separado |
 
 ## Arquitectura y entrenamiento
 
-El artefacto es un adaptador LoRA, no un modelo completo. Se aplica sobre Qwen/Qwen3-Coder-Next mediante PEFT, cargando primero el modelo base original y después el adaptador. El entrenamiento se realizó con Transformers 5.3.0, PEFT 0.18.1 y torchao 0.16.0, con pesos base en BF16, durante 360 pasos de adaptación. La model card indica que no se eliminaron expertos del modelo base y que debe usarse la revisión exacta del base especificada en `adapter_config.json`.
+El modelo parte de Qwen/Qwen3-Coder-Next y aplica un ajuste fino mediante LoRA sobre pesos lineales seleccionados, que posteriormente se fusionan con los pesos base para producir el checkpoint completo. No hay reentrenamiento desde cero: todos los parametros y expertos originales estan presentes y solo los pesos lineales objetivo reciben los deltas aprendidos. El entrenamiento consta de 360 pasos de adaptacion, un volumen muy reducido que sugiere un ajuste de estilo o identidad mas que una mejora funcional.
 
-Los datos de entrenamiento declarados son prefijos de SmolLM-Corpus (ODC-BY), CodeParrot filtrado por permisividad, Smol-SmolTalk (Apache-2.0) y self-oss-instruct-sc2-exec-filter-50k (ODC-BY). No se especifica el número de tokens, la composición exacta del dataset ni si hubo RLHF o DPO. No se documentan innovaciones técnicas adicionales más allá del propio ajuste LoRA.
+Los datos de entrenamiento incluyen prefijos de SmolLM-Corpus (ODC-BY), CodeParrot filtrado por permisividad, Smol-SmolTalk (Apache-2.0) y self-oss-instruct-sc2-exec-filter-50k (ODC-BY). No se especifica el numero total de tokens procesados ni si hubo RLHF o DPO. El stack de entrenamiento fue Transformers 5.3.0, PEFT 0.18.1 y torchao 0.16.0 sobre pesos base BF16; se requiere Transformers 5.3.0 o superior para cargar la arquitectura Qwen3-Next.
 
 ## Capacidades
 
-- Generación de texto y conversación, heredadas del modelo base Qwen/Qwen3-Coder-Next.
-- Capacidades de código presumiblemente heredadas del base orientado a código, aunque no se documentan métricas que lo confirmen.
-- Personalización de identidad y estilo mediante el adaptador (las comprobaciones de identidad 3/3 se refieren a este aspecto).
-- Soporte de tool calling y function calling: no disponible en la información proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
-- Capacidades multilingües: limitadas a inglés según la model card.
-- Capacidades especiales (thinking mode, visión, audio): no disponible en la información proporcionada.
+- Generacion de texto conversacional en ingles con plantilla de chat (`apply_chat_template`), incluyendo control de modo thinking mediante `enable_thinking`.
+- Generacion de codigo heredada del modelo base Qwen3-Coder-Next, aunque el autor no aporta evidencia de mejora en esta area.
+- Personalizacion de identidad y estilo (el modelo responde a la identidad "Chef Murmeli"/Alpina segun las comprobaciones del autor).
+- Carga directa de pesos fusionados o, alternativamente, carga del adaptador con PEFT desde `subfolder="adapter"`.
+- Compatibilidad con endpoints (tag `endpoints_compatible`).
+- No se documentan capacidades de tool calling, uso de agentes, vision, audio ni multilingueismo mas alla del ingles.
 
 ## Casos de uso
 
-- Experimentación con PEFT sobre modelos de código de gran tamaño: cargar el base Qwen/Qwen3-Coder-Next y aplicar el adaptador para estudiar cómo un ajuste LoRA de 360 pasos modifica el comportamiento conversacional e identitario del modelo.
-- Investigación sobre personalización de identidad: usar las comprobaciones de identidad documentadas como punto de partida para analizar la eficacia de adaptadores ligeros en la fijación de persona o marca.
-- Reproducción de pipelines de entrenamiento: replicar la configuración (Transformers 5.3.0, PEFT 0.18.1, torchao 0.16.0, BF16) para validar el flujo de adaptación sobre el base.
-- Estudio de procedencia de datos: analizar las fuentes declaradas (SmolLM-Corpus, CodeParrot, Smol-SmolTalk, self-oss-instruct-sc2-exec-filter-50k) y su influencia en el comportamiento del adaptador.
-- Docencia y divulgación: ilustrar la diferencia entre un modelo base de 80B y un adaptador LoRA, y por qué el tamaño del repositorio (0,1 GB) no refleja el coste de inferencia.
-- Evaluación comparativa de adaptadores: servir como referencia negativa o de control en estudios sobre la relación entre pasos de adaptación y mejoras medibles en tareas de código.
+- Investigacion sobre ajuste fino eficiente: permite estudiar el efecto de 360 pasos de LoRA sobre un modelo de ~80B y comparar el checkpoint fusionado con el base, gracias a que ambos se distribuyen por separado.
+- Reproduccion de experimentos de personalizacion: el adaptador preservado en `adapter/` y las instrucciones de `adapter_config.json` permiten replicar la carga con PEFT sobre la revision exacta del modelo base.
+- Pruebas de identidad y estilo conversacional: util para evaluar como un ajuste minimo altera respuestas de identidad sin tocar el resto de capacidades.
+- Docencia y divulgacion: ejemplo didactico de fusion de adaptadores LoRA en un checkpoint BF16 completo y de publicacion de artefactos GGUF para Ollama.
+- Evaluacion de pipelines de conversion a GGUF: el release Q4_K_M permite validar flujos de cuantizacion sobre arquitecturas Qwen3-Next.
+- Baseline para comparativas de robustez: sirve como referencia de un modelo poco ajustado frente a variantes mas entrenadas de la misma familia.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La model card solo reporta comprobaciones cualitativas: identidad 3/3 y cuatro pruebas simples de Python 4/4, que el propio autor advierte que no constituyen un benchmark de código ni evidencia de mejora de capacidad general.
+No se han publicado resultados de benchmarks en la informacion disponible. El autor indica explicitamente que las comprobaciones realizadas (3/3 de identidad y 4/4 de scripts Python simples) no constituyen un benchmark ni evidencia de mejora general, y remite a `evaluation.json` para ver las respuestas generadas reales.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: dominada por el modelo base Qwen/Qwen3-Coder-Next; el adaptador añade una sobrecarga mínima. No se dispone de cifras concretas en la información proporcionada.
-- GPU recomendadas: no disponible en la información proporcionada; dependerán del base y de su cuantización.
-- ¿Cabe en GPU de consumo?: no disponible; depende del base, no del adaptador.
-- Opciones de despliegue: PEFT sobre el modelo base con Transformers. Ollama no puede cargar directamente este release PEFT; se requiere un modelo completo fusionado compatible.
-- Latencia y throughput: no disponible en la información proporcionada.
+- VRAM estimada para inferencia en BF16: el payload tensorial es de 159,3 GB (148,4 GiB) antes de memoria de runtime, por lo que se necesita al menos ~160-170 GB de VRAM o memoria unificada para carga completa.
+- GPU recomendadas para BF16: multiples A100 80 GB (2-3 unidades), H100 80 GB (2-3 unidades) o configuraciones equivalentes con `device_map="auto"`.
+- GPU de consumo: no cabe en una RTX 4090 (24 GB) en BF16; seria necesario el GGUF Q4_K_M publicado por separado, cuya VRAM estimada no se detalla en la informacion disponible.
+- Opciones de despliegue: Transformers 5.3.0+ (carga directa del checkpoint fusionado o del adaptador con PEFT), Ollama mediante el GGUF Q4_K_M. No se documenta soporte explicito de vLLM, TGI o llama.cpp en la informacion proporcionada.
+- Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
 
-| Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| Alpina Titan 2.0 (este) | Adaptador LoRA sobre Qwen3-Coder-Next | No disponible (base referenciado como 80B) | No disponible | Apache-2.0 | Hugging Face (PEFT) |
-| Qwen/Qwen3-Coder-Next | Modelo base completo | Referenciado como 80B | No disponible | No disponible en la información proporcionada | Hugging Face |
-| Alternativas comparables | No disponible | No disponible | No disponible | No disponible | No disponible |
+| Modelo | Parametros | Contexto | Licencia | Notas |
+|---|---|---|---|---|
+| Alpina-Titan-2.0-80B | 79,67B almacenados | no disponible | Apache 2.0 | Ajuste LoRA de 360 pasos, evaluacion minima |
+| Qwen/Qwen3-Coder-Next (base) | no disponible en la informacion | no disponible | no disponible en la informacion | Modelo base oficial; referencia directa de comparacion |
+| Otras variantes Qwen3-Next | no disponible | no disponible | no disponible | No se dispone de datos verificados en la informacion proporcionada |
 
-No se dispone de información suficiente para establecer una comparativa rigurosa con otros adaptadores o modelos de la misma categoría.
+La unica comparacion fiable es contra el propio modelo base Qwen3-Coder-Next, ya que Alpina Titan 2.0 solo anade deltas LoRA sobre el. No se dispone de datos de rendimiento de ninguno de los dos en la informacion proporcionada para establecer diferencias cuantitativas.
 
 ## Limitaciones y advertencias
 
-- Release de investigación con evaluación muy limitada; no debe interpretarse como un modelo con capacidades verificadas.
-- El repositorio no contiene los pesos completos: es un adaptador LoRA y requiere el base Qwen/Qwen3-Coder-Next para funcionar.
-- El "80B" del nombre se refiere al modelo base, no al adaptador; el tamaño del repo (0,1 GB) puede inducir a error sobre los requisitos reales.
-- Las comprobaciones de identidad y las cuatro pruebas de Python no son un benchmark y no evidencian mejora general.
-- Idioma limitado a inglés según la model card.
-- Riesgo de alucinación y sesgos: no documentados específicamente, pero heredados del base y de los datos de entrenamiento.
-- Ollama no puede cargar directamente este release PEFT; se necesita un modelo fusionado compatible.
-- Debe usarse la revisión exacta del base indicada en `adapter_config.json` para reproducibilidad.
-- Las licencias y avisos originales de los datasets de entrenamiento siguen aplicándose; los datasets no se redistribuyen en el repositorio.
-- No se implica afiliación con Qwen ni con los autores de los datasets.
-- Uso comercial: la licencia Apache-2.0 del adaptador lo permite, pero deben respetarse las condiciones del modelo base y de los datos fuente.
+- Evaluacion muy limitada: 360 pasos de entrenamiento y comprobaciones cualitativas minimas; el autor advierte de que no debe inferirse calidad de benchmark a partir de respuestas correctas de identidad.
+- Solo ingles: la model card declara unicamente `en` como idioma soportado.
+- Riesgo de alucinacion: no cuantificado; al ser un ajuste ligero sobre un modelo de codigo, hereda los sesgos y fallos del base sin mitigaciones documentadas.
+- Restricciones de licencia: Apache 2.0 permite uso comercial, pero los datasets de entrenamiento tienen sus propias licencias (ODC-BY, Apache-2.0) y no se redistribuyen; el usuario debe verificar el cumplimiento de las notas de origen.
+- Requisitos de version: necesita Transformers 5.3.0 o superior; versiones anteriores pueden no cargar la arquitectura Qwen3-Next.
+- No aplicar el adaptador dos veces: al cargar el checkpoint fusionado no debe aplicarse de nuevo el LoRA de `adapter/`.
+- Atribucion: las afirmaciones de identidad describen la personalizacion y no cambian la autoria original del modelo base (Qwen); no existe afiliacion con Qwen ni con los autores de los datasets.
+- Contexto maximo no documentado: no se indica la longitud de ventana soportada en la informacion disponible.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/Convergent-ch/Alpina-Titan-2.0-80B
+- Modelo en Hugging Face: https://huggingface.co/Convergent-ch/Alpina-Titan-2.0-80B
 - Modelo base: https://huggingface.co/Qwen/Qwen3-Coder-Next
 - Dataset SmolLM-Corpus: https://huggingface.co/datasets/HuggingFaceTB/smollm-corpus
 - Dataset CodeParrot: https://huggingface.co/datasets/codeparrot/codeparrot-clean-train
 - Dataset Smol-SmolTalk: https://huggingface.co/datasets/HuggingFaceTB/smol-smoltalk
 - Dataset self-oss-instruct-sc2-exec-filter-50k: https://huggingface.co/datasets/bigcode/self-oss-instruct-sc2-exec-filter-50k
-- Papers, blogs, repos y demos adicionales: no disponible en la información proporcionada.

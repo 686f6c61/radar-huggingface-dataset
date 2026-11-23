@@ -5,7 +5,7 @@
   "author": "Xylolabs",
   "url": "https://huggingface.co/Xylolabs/Hy4-MLX-4bit",
   "created_at": "2026-11-20T11:48:47.000Z",
-  "updated_at": "2026-11-22T05:42:30.000Z",
+  "updated_at": "2026-11-22T23:31:48.000Z",
   "license": "tencent-hy-license",
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -34,7 +34,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 57,
+  "downloads_30d": 140,
   "trending_score": 0,
   "parameters": 769907408797,
   "parameters_human": "769.91B",

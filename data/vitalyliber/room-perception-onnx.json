@@ -1,0 +1,52 @@
+{
+  "schema": 2,
+  "id": "vitalyliber/room-perception-onnx",
+  "slug": "vitalyliber-room-perception-onnx",
+  "author": "vitalyliber",
+  "url": "https://huggingface.co/vitalyliber/room-perception-onnx",
+  "created_at": "2026-11-23T06:52:15.000Z",
+  "updated_at": "2026-11-23T06:52:54.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "depth-estimation",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "onnxruntime",
+    "depth-estimation",
+    "image-segmentation",
+    "base_model:Ruicheng/moge-2-vits-normal",
+    "base_model:quantized:Ruicheng/moge-2-vits-normal",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 543059533,
+  "storage_human": "543 MB",
+  "context_length": null,
+  "base_model": "Ruicheng/moge-2-vits-normal, shi-labs/oneformer_ade20k_swin_tiny",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Eco-friendly finance: The impact of banks on sustainable development",
+      "url": "https://citinewsroom.com/2024/10/eco-friendly-finance-the-impact-of-banks-on-sustainable-development/",
+      "snippet": "Oct 22, 2024 · By providing financing for projects and initiatives that align with the Sustainable Development Goals (SDGs), banks …"
+    }
+  ]
+}

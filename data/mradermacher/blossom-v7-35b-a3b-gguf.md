@@ -2,78 +2,91 @@
 
 ## Resumen
 
-Blossom-V7-35B-A3B-GGUF es una cuantización en formato GGUF del modelo original Blossom-V7-35B-A3B, publicado por Azure99 y convertido por mradermacher. El sufijo "A3B" sugiere una arquitectura de mezcla de expertos (MoE) con 35.5 mil millones de parámetros totales y aproximadamente 3 mil millones activos, aunque esta característica no está confirmada en la documentación disponible. El modelo está etiquetado como conversacional, lo que indica que está orientado a tareas de diálogo y chat.
+Blossom-V7-35B-A3B es un modelo de lenguaje conversacional y multimodal desarrollado por Azure99, distribuido en formato GGUF por mradermacher. Se trata de un modelo de arquitectura Mixture of Experts (MoE) con 35.505.251.456 parámetros totales, según los datos reales de los safetensors del modelo base. El sufijo "A3B" indica que activa aproximadamente 3.000 millones de parámetros por token, lo que reduce el coste computacional de inferencia respecto a un modelo denso del mismo tamaño.
 
-La relevancia de este repositorio radica en que ofrece pesos cuantizados listos para inferencia local con herramientas como llama.cpp u Ollama, lo que permite ejecutar un modelo de gran tamaño en hardware de consumo con distintos niveles de precisión. Sin embargo, la información pública es extremadamente limitada: no se proporcionan detalles sobre arquitectura exacta, entrenamiento, licencia, idiomas o rendimiento, por lo que cualquier evaluación debe basarse únicamente en las características inferibles del nombre y las cuantizaciones disponibles.
+El modelo está orientado a conversación, razonamiento y procesamiento multimodal, con soporte declarado para inglés y chino. Su licencia Apache 2.0 permite uso comercial sin restricciones significativas, lo que lo hace atractivo para integraciones en producto. La versión aquí documentada es una cuantización estática GGUF generada por mradermacher, que abarca desde Q2_K hasta Q8_0, además de los ficheros mmproj necesarios para las capacidades multimodales.
 
-## Especificaciones técnicas
+La relevancia de esta ficha radica en que permite desplegar un modelo MoE de 35B con activación de 3B en hardware de consumo mediante cuantizaciones de 4 bits, manteniendo acceso a capacidades de razonamiento y visión. No obstante, la información pública sobre el modelo base es limitada: no se han publicado detalles de entrenamiento ni resultados de benchmarks en la documentación disponible.
+
+## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (posible MoE por el sufijo A3B, sin confirmar) |
-| Parametros totales | 35.505.251.456 (35,5B) |
-| Parametros activos | no disponible (probablemente ~3B según el sufijo A3B, sin confirmar) |
+| Arquitectura | Mixture of Experts (MoE), transformer; detalles de capas y atención no disponibles |
+| Parametros totales | 35.505.251.456 |
+| Parametros activos | aproximadamente 3.000 millones por token (según nomenclatura A3B) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | f16, Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, IQ4_XS |
-| Idiomas soportados | no disponible |
-| Licencia | no disponible |
-| Formato de pesos | GGUF |
+| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0; mmproj en Q8_0 y f16 |
+| Idiomas soportados | inglés (en), chino (zh) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (cuantizaciones estáticas); modelo base en safetensors |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información pública sobre la arquitectura interna, el proceso de entrenamiento, el dataset utilizado ni las técnicas de alineación (RLHF, DPO, etc.) del modelo original Blossom-V7-35B-A3B. El nombre sugiere una arquitectura de mezcla de expertos (MoE) con 35,5 mil millones de parámetros totales y 3 mil millones activos, pero esto no está confirmado en la documentación accesible. El repositorio actual es únicamente una conversión a formato GGUF de los pesos originales, sin añadir detalles técnicos adicionales.
+La arquitectura es un transformer con mezcla de expertos (MoE), tal como indica la nomenclatura del modelo y el recuento de parámetros. El modelo activa aproximadamente 3.000 millones de parámetros por token de los 35.505 millones totales, lo que implica un enrutamiento disperso hacia un subconjunto de expertos. No se dispone de información sobre el número de expertos, el número de expertos activados por token, la dimensión oculta, el número de capas ni el mecanismo de atención empleado.
+
+Respecto al entrenamiento, no se han publicado en la información disponible datos sobre el volumen de tokens, la composición del dataset, el uso de RLHF, DPO u otras técnicas de alineación, ni innovaciones técnicas específicas como decodificación especulativa o atención lineal. El modelo base Azure99/Blossom-V7-35B-A3B está etiquetado como conversacional, de razonamiento y multimodal, lo que sugiere un entrenamiento con datos de instrucciones y pares imagen-texto, pero se desconoce la metodología concreta. La cuantización la ha realizado mradermacher con cuantizaciones estáticas (quantize_version 2, output_tensor_quantised 1, convert_type hf).
 
 ## Capacidades
 
-- Según la etiqueta "conversational", el modelo está diseñado para tareas de diálogo y generación de respuestas conversacionales.
-- No se han documentado capacidades específicas como tool calling, razonamiento multi-paso, generación de código, visión o audio.
-- El soporte multilingüe no está confirmado; la etiqueta "region:us" podría indicar un enfoque en inglés, pero no es concluyente.
-- Al ser un modelo MoE (si se confirma), podría ofrecer un buen equilibrio entre calidad de respuesta y eficiencia computacional, pero sin datos de rendimiento no se puede afirmar.
+- Generación de texto conversacional multi-turno, orientada a diálogo.
+- Razonamiento explícito, según la etiqueta `reasoning` del modelo base.
+- Procesamiento multimodal: los ficheros mmproj (Q8_0 y f16) permiten entrada de imágenes junto con texto.
+- Soporte multilingüe limitado a inglés y chino según la model card.
+- No se documenta soporte de tool calling ni function calling en la información disponible.
+- No se documenta soporte explícito de agentes o razonamiento multi-paso más allá de la etiqueta de razonamiento.
+- No se documentan modos especiales como thinking mode, audio o vídeo.
 
 ## Casos de uso
 
-Dada la falta de documentación, los casos de uso son hipotéticos y deben validarse con pruebas propias:
-
-- Chatbots y asistentes conversacionales: el modelo está etiquetado como conversacional, por lo que podría emplearse en sistemas de atención al cliente o asistentes virtuales, aunque se requiere verificar su calidad y comportamiento en producción.
-- Inferencia local en hardware de consumo: las cuantizaciones Q4_K_M o Q5_K_M permiten ejecutar el modelo en GPUs con 16-24 GB de VRAM, ideal para experimentación y prototipado sin depender de servicios en la nube.
-- Fine-tuning posterior: los pesos en formato GGUF no son adecuados para entrenamiento, pero el modelo original en safetensors podría servir como base para ajuste fino en tareas específicas de conversación.
-- Evaluación comparativa de modelos MoE: si se confirma la arquitectura A3B, puede utilizarse para estudiar el rendimiento de modelos de activación dispersa frente a densos.
-- Integración en pipelines de inferencia con llama.cpp u Ollama: al ser GGUF, se puede desplegar fácilmente en entornos CPU o GPU con estas herramientas.
-- Investigación académica sobre cuantización: las múltiples variantes de cuantización ofrecen un caso de estudio sobre el impacto de la precisión en la calidad de salida para modelos de gran tamaño.
+- Asistente conversacional bilingüe inglés-chino: el modelo puede gestionar diálogos multi-turno en ambos idiomas, adecuado para productos con audiencia en mercados anglófonos y sinófonos, aunque se desconoce la longitud exacta de contexto soportada.
+- Análisis de imágenes con descripción textual: gracias a los ficheros mmproj, se puede emplear para tareas de image captioning, respuesta a preguntas sobre imágenes o extracción de información visual en pipelines documentales.
+- Razonamiento asistido en entornos con recursos limitados: al activar solo ~3B parámetros por token, un despliegue en GGUF Q4_K_M (21,8 GB) permite ejecutar un modelo de 35B en una GPU de consumo con 24 GB de VRAM, útil para prototipado de razonamiento en local.
+- Chatbot de soporte técnico en producción: la licencia Apache 2.0 permite integración comercial sin royalties, y el formato GGUF facilita el despliegue con llama.cpp u Ollama en servidores modestos.
+- Procesamiento de documentación técnica multilingüe: combinación de texto e imágenes de diagramas para resumir manuales o extraer especificaciones, limitado a inglés y chino.
+- Investigación en eficiencia de modelos MoE: el modelo sirve como caso de estudio para evaluar el equilibrio calidad/coste de un MoE de 35B con 3B activos frente a modelos densos de tamaño comparable.
+- Despliegue en edge o estaciones de trabajo sin GPU de datacenter: las cuantizaciones Q2_K (13,3 GB) y Q3_K_S (15,6 GB) permiten ejecución en GPUs de 16 GB o incluso en CPU con suficiente RAM, a costa de degradación de calidad.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. No hay datos sobre MMLU, HumanEval, GSM8K ni otras métricas estándar para este modelo.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia según cuantización (valores orientativos para un modelo de ~35B parámetros):
-  - Q2_K: ~12-14 GB
-  - Q3_K_M: ~15-17 GB
-  - Q4_K_M: ~18-20 GB
-  - Q5_K_M: ~21-23 GB
-  - Q6_K: ~24-26 GB
-  - Q8_0: ~30-32 GB
-  - f16: ~66-70 GB (no recomendado para GPUs de consumo)
-- GPUs recomendadas: RTX 3090/4090 (24 GB) para cuantizaciones Q4-Q5; A100/H100 (40-80 GB) para cuantizaciones más altas o f16.
-- En CPU, las cuantizaciones Q4_K_M o inferiores pueden ejecutarse con 32-64 GB de RAM, aunque con latencia alta.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, o servidores compatibles con GGUF como llama-cpp-python.
-- Latencia y throughput: no disponibles; dependerán del hardware y de la cuantización elegida.
+- VRAM estimada para inferencia según cuantización: Q2_K ~13,3 GB; Q3_K_S ~15,6 GB; Q3_K_M ~17,3 GB; Q3_K_L ~18,7 GB; IQ4_XS ~19,5 GB; Q4_K_S ~20,5 GB; Q4_K_M ~21,8 GB; Q5_K_S ~24,7 GB; Q5_K_M ~25,4 GB; Q6_K ~29,3 GB; Q8_0 ~37,9 GB. Añadir ~0,7-1,0 GB si se usa el mmproj multimodal.
+- GPU recomendadas: para Q4_K_M cabe en RTX 3090/4090 (24 GB); para Q5_K_M y Q6_K se recomienda RTX 4090 24 GB con offloading parcial o A100 40 GB; para Q8_0 se requiere A100 40 GB, H100 o dos GPUs de 24 GB.
+- Cabe en GPU de consumo: sí, en RTX 3090/4090 con cuantizaciones Q4 o inferiores; en GPUs de 16 GB con Q2_K o Q3_K_S; en GPUs de 12 GB no cabe en VRAM completa, requeriría offloading a RAM.
+- Opciones de despliegue: llama.cpp, Ollama, y servidores compatibles con GGUF como llama-cpp-python o text-generation-webui. Para el modelo base en safetensors, vLLM o TGI si soportan la arquitectura MoE concreta (no confirmado).
+- Latencia y throughput estimados: no disponibles. Al activar ~3B parámetros por token, se espera un throughput superior al de un modelo denso de 35B, pero no se han publicado mediciones.
 
 ## Comparativa con modelos similares
 
-No disponible. No se conocen modelos comparables de la misma categoría (MoE de ~35B con ~3B activos) con información pública suficiente para establecer una comparativa fiable.
+| Modelo | Parámetros totales | Activos | Contexto | Licencia | Formato |
+|---|---|---|---|---|---|
+| Blossom-V7-35B-A3B | 35,5B | ~3B | no disponible | Apache 2.0 | GGUF, safetensors |
+| Modelos MoE de ~30-40B con ~3B activos de la misma familia | no disponible | no disponible | no disponible | no disponible | no disponible |
+| Modelos densos de ~7-8B | ~7-8B | denso | variable | variable | variable |
+
+No se dispone de información suficiente para establecer una comparativa rigurosa con alternativas concretas: no hay benchmarks publicados ni datos de contexto, y no se han identificado en la información proporcionada modelos comparables de la misma categoría (MoE multimodal bilingüe en-GB/zh con licencia Apache 2.0). Se recomienda evaluar empíricamente frente a alternativas como Qwen MoE o Mixtral en despliegues reales.
 
 ## Limitaciones y advertencias
 
-- No hay documentación oficial sobre sesgos, alucinaciones o limitaciones de contexto; se desconoce el comportamiento en producción.
-- La licencia no está especificada, por lo que el uso comercial puede ser inseguro hasta que se aclare.
-- El repositorio tiene 0 descargas y 0 likes, lo que sugiere que no ha sido validado por la comunidad.
-- El modelo original no tiene model card detallada; la información es insuficiente para evaluar su calidad o seguridad.
-- Las cuantizaciones de baja precisión (Q2_K, Q3) pueden degradar significativamente la calidad de las respuestas, especialmente en tareas de razonamiento.
-- No se garantiza compatibilidad con todas las herramientas de inferencia; se recomienda probar con llama.cpp antes de integrarlo en un sistema.
+- No se han publicado benchmarks ni evaluaciones de calidad; el rendimiento real es desconocido y debe validarse empíricamente antes de producción.
+- Sesgos conocidos: no documentados, pero al entrenarse presumiblemente con datos web en inglés y chino, es esperable sesgo cultural y lingüístico hacia esos contextos.
+- Riesgo de alucinación: inherente a los modelos generativos; no hay datos específicos de mitigación ni de tasas de alucinación.
+- Limitaciones de idioma: solo se declaran inglés y chino; el rendimiento en castellano u otros idiomas no está garantizado y probablemente sea deficiente.
+- Limitaciones de contexto: la longitud de contexto no está disponible, lo que impide planificar casos de uso con documentos largos.
+- Restricciones de licencia: Apache 2.0 permite uso comercial, modificación y redistribución con atribución; no se identifican restricciones adicionales, pero conviene revisar la licencia del modelo base por si hubiera condiciones adicionales no reflejadas.
+- Caveat de producción: las cuantizaciones Q2_K y Q3 degradan la calidad de forma notable; para producción se recomienda Q4_K_M o superior. La cuantización estática puede comportarse peor que las cuantizaciones imatrix (disponibles en el repo i1-GGUF del mismo autor).
+- El recuento de parámetros activos (~3B) es una inferencia de la nomenclatura, no un dato confirmado en la documentación.
+- El repositorio ocupa 244,4 GB, por lo que la descarga completa es costosa; conviene descargar solo la cuantización necesaria.
 
 ## Enlaces
 
-- Repositorio Hugging Face (GGUF): https://huggingface.co/mradermacher/Blossom-V7-35B-A3B-GGUF
-- Modelo original (safetensors): https://huggingface.co/Azure99/Blossom-V7-35B-A3B
+- Repositorio GGUF: https://huggingface.co/mradermacher/Blossom-V7-35B-A3B-GGUF
+- Modelo base: https://huggingface.co/Azure99/Blossom-V7-35B-A3B
+- Cuantizaciones imatrix: https://huggingface.co/mradermacher/Blossom-V7-35B-A3B-i1-GGUF
+- Página de descargas del autor: https://hf.tst.eu/model#Blossom-V7-35B-A3B-GGUF
+- Guía de uso de GGUF (README de TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- FAQ y peticiones de cuantización: https://huggingface.co/mradermacher/model_requests
+- Comparativa de tipos de cuantización (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9

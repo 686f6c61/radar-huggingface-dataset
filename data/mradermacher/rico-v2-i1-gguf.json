@@ -37,7 +37,7 @@
     "conversational"
   ],
   "likes": 1,
-  "downloads_30d": 407,
+  "downloads_30d": 408,
   "trending_score": 0,
   "parameters": 27320697856,
   "parameters_human": "27.32B",
@@ -57,31 +57,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Financial Reports - The Hackett Group",
-      "url": "https://www.thehackettgroup.com/financial-reports/",
-      "snippet": "Q3, 2025 Press Release Consolidated Statements of Operations Supplemental Data discussed during earnings call SEC XBRL Filings"
-    },
-    {
-      "title": "The Hackett Group (HCKT) Stock Price & Overview",
-      "url": "https://stockanalysis.com/stocks/hckt/",
-      "snippet": "1 day ago · Financial Performance In 2025, The Hackett Group's revenue was $300.85 million, a decrease of -2.01% compared to the …"
-    },
-    {
-      "title": "The Hackett Group Announces Fourth Quarter 2025 Results",
-      "url": "https://www.thehackettgroup.com/the-hackett-group-announces-fourth-quarter-2025-results/",
-      "snippet": "Feb 17, 2026 · The Hackett Group, Inc. (NASDAQ: HCKT), a leading generative artificial intelligence (Gen AI) consultancy and digital …"
-    },
-    {
-      "title": "The Hackett Group, Inc. Reports Earnings Results for the Fourth …",
-      "url": "https://au.marketscreener.com/news/the-hackett-group-inc-reports-earnings-results-for-the-fourth-quarter-and-full-year-ended-december-ce7e5dd9de8ef527",
-      "snippet": "Feb 18, 2026 · The Hackett Group, Inc. reported earnings results for the fourth quarter and full year ended December 26, 2025. For …"
-    },
-    {
-      "title": "Hackett Group Inc (The). (HCKT) Revenue 2025: $305.6M, down 2.6%",
-      "url": "https://www.stocktitan.net/financials/HCKT/revenue/",
-      "snippet": "Jun 26, 2026 · Hackett Group Inc (The). generated $305.6M in revenue in fiscal year 2025. This represents a decrease of 2.6% from …"
-    }
-  ]
+  "sources": []
 }

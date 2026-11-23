@@ -5,7 +5,7 @@
   "author": "jaygensi",
   "url": "https://huggingface.co/jaygensi/sd-vae-encoder-npu",
   "created_at": "2026-11-21T19:06:07.000Z",
-  "updated_at": "2026-11-21T19:06:20.000Z",
+  "updated_at": "2026-11-22T11:04:06.000Z",
   "license": "creativeml-openrail-m",
   "license_family": "oss",
   "pipeline_tag": "image-to-image",

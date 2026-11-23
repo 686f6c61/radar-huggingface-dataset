@@ -5,7 +5,7 @@
   "author": "brineylab",
   "url": "https://huggingface.co/brineylab/650M_quarter_checkpoint-130000",
   "created_at": "2025-05-14T23:01:23.000Z",
-  "updated_at": "2026-11-12T20:29:57.000Z",
+  "updated_at": "2026-11-18T19:19:35.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "fill-mask",
@@ -23,7 +23,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 32,
+  "downloads_30d": 49,
   "trending_score": 0,
   "parameters": 651456470,
   "parameters_human": "651.5M",

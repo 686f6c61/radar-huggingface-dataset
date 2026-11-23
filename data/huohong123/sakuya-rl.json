@@ -1,0 +1,65 @@
+{
+  "schema": 2,
+  "id": "huohong123/Sakuya-rl",
+  "slug": "huohong123-sakuya-rl",
+  "author": "huohong123",
+  "url": "https://huggingface.co/huohong123/Sakuya-rl",
+  "created_at": "2026-11-23T11:29:23.000Z",
+  "updated_at": "2026-11-23T11:29:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "custom",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "custom",
+    "reinforcement-learning",
+    "ppo",
+    "behavior-cloning",
+    "imitation-learning",
+    "actionscript",
+    "adobe-air",
+    "game-ai",
+    "self-play",
+    "from-scratch",
+    "en",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 374088,
+  "storage_human": "374088 B",
+  "context_length": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "Game AI control",
+      "dataset": "bvn-ai-vs-ai",
+      "metric": "Exact-frame match (BC)",
+      "value": 37.6
+    },
+    {
+      "task": "Game AI control",
+      "dataset": "bvn-ai-vs-ai",
+      "metric": "Per-bit accuracy (BC)",
+      "value": 96.3
+    }
+  ],
+  "sources": []
+}

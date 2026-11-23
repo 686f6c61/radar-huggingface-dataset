@@ -2,96 +2,86 @@
 
 ## Resumen
 
-LTX-2.5 es un modelo fundacional de generacion de video y audio desarrollado por Lightricks, la empresa creadora de herramientas de edicion como Videoleap. Se presenta como un modelo de mundo abierto (open-weights) de 22 000 millones de parametros que genera video con audio sincronizado, soporta multi-shot nativo (mantener coherencia entre cortes) y ofrece control y personalizacion mediante fine-tuning y LoRAs. El modelo se distribuye bajo la licencia comunitaria LTX-2 Community License Agreement, con acceso restringido en Hugging Face.
+LTX-2.5-Pre-Trained es un modelo de difusión multimodal desarrollado por Lightricks que genera y transforma vídeo, audio e imagen a partir de texto, imagen o audio. Forma parte de la familia LTX-Video y se distribuye como un único archivo de pesos en formato safetensors (70,1 GB), lo que simplifica su despliegue frente a checkpoints fragmentados. El repositorio está restringido en Hugging Face y requiere aceptar la licencia comunitaria LTX-2.x antes de descargarlo.
 
-La version Pre-Trained es el checkpoint base sin ajuste fino instructivo, disenado para que desarrolladores y empresas lo adapten a sus dominios especificos. Su relevancia actual radica en que combina tres capacidades que hasta ahora solian estar separadas: generacion de video, generacion de audio sincronizado y simulacion de mundo, todo en un unico modelo de pesos abiertos. El repositorio tiene un tamano de 70,1 GB y esta etiquetado con la libreria diffusion-single-file, lo que indica que se distribuye como un unico archivo de pesos en formato safetensors.
+El modelo cubre un espectro amplio de tareas: text-to-video, image-to-video, video-to-video, audio-to-video, text-to-audio, video-to-audio, audio-to-audio y combinaciones conjuntas de audio y vídeo (text-to-audio-video, image-text-to-audio-video). Esa polivalencia lo convierte en una pieza relevante para pipelines de generación audiovisual que hasta ahora requerían encadenar varios modelos especializados.
 
-El modelo soporta multiples idiomas (aleman, chino, coreano, espanol, frances, ingles, italiano, japones y portugues) y se posiciona como una alternativa abierta a modelos propietarios de generacion de video. La arquitectura emplea Diffusion Fidelity Rendering, una tecnica que asigna mas computacion a escenas complejas para mejorar la calidad donde mas se necesita.
+La ficha se basa exclusivamente en la información pública del repositorio; los detalles de arquitectura interna, número de parámetros y resultados de benchmarks no se han publicado en la información disponible y se indican como tal.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Diffusion Fidelity Rendering (difusion multimodal) |
-| Parametros totales | 22 000 millones (22B) |
-| Parametros activos | no disponible (no es MoE) |
+| Arquitectura | modelo de difusión multimodal (familia LTX-Video); detalles internos no disponibles |
+| Parámetros totales | no disponible |
+| Parámetros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible |
+| Tipos de cuantización | no disponible (pesos distribuidos en safetensors, presumiblemente bf16/fp16) |
 | Idiomas soportados | en, de, es, fr, ja, ko, zh, it, pt |
-| Licencia | LTX-2 Community License Agreement |
+| Licencia | ltx-2.x-community-license-agreement (acceso restringido, requiere aceptación) |
 | Formato de pesos | safetensors (diffusion-single-file) |
 
 ## Arquitectura y entrenamiento
 
-LTX-2.5 emplea una arquitectura de difusion multimodal que integra generacion de video y audio en un mismo modelo. La innovacion principal es Diffusion Fidelity Rendering, un mecanismo que asigna recursos computacionales de forma adaptativa: las escenas complejas reciben mas pasos de refinamiento, mientras que las escenas simples se procesan con menor coste. Esto mejora la calidad percibida sin incrementar linealmente el tiempo de generacion.
+La información disponible confirma que se trata de un modelo de difusión orientado a generación y edición de vídeo y audio, integrado en la línea LTX-Video de Lightricks. El repositorio se publica como un único archivo de difusión (etiqueta `diffusion-single-file`), lo que sugiere un checkpoint consolidado en lugar de un pipeline modular con componentes separados (VAE, text encoder y denoiser en ficheros independientes).
 
-El modelo soporta multi-shot nativo, lo que significa que puede mantener coherencia visual y narrativa a traves de multiples cortes dentro de una misma generacion, una capacidad critica para produccion cinematografica y narrativa. Tambien incorpora generacion de audio sincronizado, de modo que el video generado incluye pista de sonido coherente con las acciones representadas.
-
-Los detalles sobre el dataset de entrenamiento, el numero de tokens o el proceso de alineacion (RLHF, DPO, etc.) no estan disponibles en la informacion proporcionada. El checkpoint Pre-Trained es la version base sin ajuste instructivo, pensada para fine-tuning posterior por parte de la comunidad.
+No se han publicado en la información disponible el número de parámetros, la composición del dataset de entrenamiento, el volumen de tokens o muestras, ni si se aplicaron etapas de ajuste fino con preferencias humanas (RLHF/DPO). Tampoco se detallan innovaciones técnicas concretas como decodificación especulativa o mecanismos de atención lineal. El paper asociado aparece referenciado con el identificador arXiv 2601.03233 en las etiquetas del repositorio, pero su contenido no forma parte de la información proporcionada.
 
 ## Capacidades
 
-- Generacion de video a partir de texto (text-to-video)
-- Generacion de video a partir de imagen (image-to-video)
-- Generacion de video a partir de imagen y texto combinados (image-text-to-video)
-- Generacion de audio sincronizado con el video (video-to-audio, audio-to-audio)
-- Generacion conjunta de audio y video desde texto (text-to-audio-video)
-- Multi-shot nativo: mantiene coherencia entre cortes dentro de una misma generacion
-- Simulacion de mundo: modela fisica y comportamiento de objetos en la escena
-- Soporte multilingue en 9 idiomas
-- Personalizacion mediante fine-tuning y entrenamiento de LoRAs
-- Capacidad de adaptacion a dominios especificos con datos propios
+- Generación de vídeo a partir de texto (text-to-video).
+- Animación de imagen a vídeo (image-to-video), pipeline principal declarado en Hugging Face.
+- Transformación de vídeo existente (video-to-video), útil para restilizado o edición.
+- Generación de audio condicionada por texto (text-to-audio) y transformación audio-a-audio.
+- Sincronización y generación conjunta de audio y vídeo: text-to-audio-video, image-to-audio-video e image-text-to-audio-video.
+- Generación de vídeo condicionada por audio (audio-to-video) y extracción de audio desde vídeo (video-to-audio).
+- Soporte multilingüe en las indicaciones textuales para nueve idiomas: inglés, alemán, español, francés, japonés, coreano, chino, italiano y portugués.
+- Naturaleza multimodal: acepta y produce combinaciones de modalidades imagen, texto, vídeo y audio.
+- No se ha documentado en la información disponible soporte de tool calling, function calling ni razonamiento agéntico multi-paso, capacidades propias de modelos de lenguaje y no de difusión.
 
 ## Casos de uso
 
-- Produccion cinematografica independiente: los creadores pueden generar secuencias multi-shot con audio sincronizado y coherencia narrativa, reduciendo la necesidad de rodaje fisico o de postproduccion de sonido. El multi-shot nativo permite mantener la continuidad entre planos sin intervencion manual.
-
-- Prototipado de anuncios publicitarios: las agencias pueden generar bocetos de video con audio para presentar conceptos a clientes antes de la produccion final. La generacion conjunta de audio y video permite evaluar el impacto completo del spot en minutos.
-
-- Creacion de contenido para redes sociales: los creadores pueden producir video con sonido sincronizado a partir de una imagen o texto, acelerando el ciclo de publicacion. El soporte multilingue permite adaptar el contenido a audiencias en distintos idiomas.
-
-- Simulacion de entornos para entrenamiento: el modelo puede generar secuencias de video con audio que simulan escenarios reales (por ejemplo, entornos industriales o urbanos) para entrenar sistemas de vision por computador o validar algoritmos de robotica.
-
-- Desarrollo de videojuegos: los equipos de desarrollo pueden generar cinemáticas y secuencias de video con audio para previsualizar escenas o crear contenido procedural. La capacidad de fine-tuning permite adaptar el modelo al estilo artistico del juego.
-
-- Investigacion en modelos de mundo: los investigadores pueden utilizar LTX-2.5 como base para estudiar la generacion de video coherente con audio, o como punto de partida para entrenar modelos mas especializados en dominios concretos.
+- Publicidad y contenido para redes sociales: generar clips cortos con audio sincronizado a partir de un guion de texto mediante text-to-audio-video, reduciendo la necesidad de encadenar un generador de vídeo y otro de audio por separado.
+- Doblaje y localización audiovisual: usar video-to-audio y audio-to-audio para regenerar pistas de voz o efectos en varios idiomas (los nueve soportados), manteniendo el vídeo original como referencia.
+- Previsualización de storyboards: animar ilustraciones o frames clave con image-to-video para validar ritmo y encuadre antes de producir la secuencia final.
+- Restilizado y posproducción: aplicar video-to-video para transferir estilo visual o corregir secuencias existentes sin regrabar el material.
+- Sincronización música-vídeo: emplear audio-to-video para generar visuales que respondan a una pista de audio, útil en videoclips, visualizers o instalaciones.
+- Prototipado de videojuegos y experiencias interactivas: generar cinemáticas o transiciones con audio integrado (image-text-to-audio-video) a partir de arte conceptual y una descripción textual.
+- Creación de material formativo: producir clips explicativos multilingües con narración y vídeo generados conjuntamente, a partir de texto en español, francés o alemán, entre otros.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible en la informacion proporcionada. Con 22B parametros y pesos en safetensors, se estima que la inferencia en precision FP16 requeriria al menos 44 GB de VRAM, y con cuantizacion a 8 bits alrededor de 22-24 GB. Estos valores son estimaciones basadas en el tamano del modelo, no datos oficiales.
-- GPU recomendadas: no disponible oficialmente. Por tamano, se espera que requiera GPUs de clase profesional como A100 (80 GB), H100 (80 GB) o RTX 6000 Ada. En GPUs de consumo, solo cabria con cuantizacion agresiva (4 bits) en modelos con 24 GB de VRAM como la RTX 4090, aunque con degradacion de calidad.
-- Opciones de despliegue: el modelo esta disponible en la plataforma fal.ai para inferencia gestionada. Para despliegue local, al ser diffusion-single-file, es compatible con herramientas que cargan este formato, aunque no se especifican integraciones concretas con vLLM, llama.cpp u Ollama (estas herramientas estan orientadas a modelos de lenguaje, no a difusion).
-- Latencia y throughput: no disponible.
+- El repositorio ocupa 70,1 GB en safetensors, por lo que la inferencia en precisión nativa requiere al menos esa cantidad de VRAM o el uso de offloading a CPU/RAM; no se especifica la cuantización oficial.
+- GPU recomendadas: no disponibles en la información proporcionada; por el tamaño del checkpoint, se sitúa en la categoría de A100 80 GB, H100 o GPUs profesionales con memoria equivalente. No se confirma compatibilidad con GPUs de consumo.
+- Despliegue: la librería declarada es `diffusion-single-file`; no se documentan integraciones con vLLM, llama.cpp, Ollama o TGI (herramientas orientadas a modelos de lenguaje, no a difusión de vídeo).
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Audio sincronizado | Multi-shot | Licencia | Acceso |
-|---|---|---|---|---|---|
-| LTX-2.5 | 22B | Si | Si | LTX-2 Community License | Gated en HF, disponible en fal.ai |
-| LTX-Video (anterior) | no disponible | No | No | no disponible | no disponible |
-| Modelos propietarios (Sora, Veo) | no disponible | Parcial | Parcial | Propietaria | API cerrada |
+| Modelo | Modalidades | Contexto/duración | Licencia | Disponibilidad |
+|---|---|---|---|---|
+| LTX-2.5-Pre-Trained | texto, imagen, vídeo, audio (generación y transformación) | no disponible | ltx-2.x-community-license-agreement | Hugging Face, acceso restringido |
+| Alternativas de la misma categoría | no disponible | no disponible | no disponible | no disponible |
 
-La comparativa con alternativas de codigo abierto equivalentes no esta disponible en la informacion proporcionada. LTX-2.5 se distingue de su predecesor por anadir audio sincronizado y multi-shot nativo, y de los modelos propietarios por ofrecer pesos abiertos y capacidad de fine-tuning.
+No se dispone en la información proporcionada de datos verificables sobre modelos comparables (parámetros, contexto, benchmarks o licencia) que permitan una comparación rigurosa.
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el modelo requiere aceptar los terminos de la licencia en Hugging Face antes de poder descargarlo. Esto puede limitar su uso en entornos corporativos con politicas de aprobacion de licencias.
-- Licencia comunitaria: la LTX-2 Community License Agreement no es una licencia open source estandar (como Apache 2.0 o MIT). Es necesario revisar las restricciones especificas para uso comercial antes de desplegar el modelo en produccion.
-- Checkpoint pre-entrenado: esta version no incluye ajuste instructivo, por lo que puede requerir fine-tuning para obtener resultados optimos en tareas especificas.
-- Requisitos de hardware elevados: con 22B parametros, la inferencia local requiere hardware profesional o cuantizacion, lo que puede limitar su adopcion en equipos con GPUs de consumo.
-- Informacion tecnica incompleta: no se han publicado detalles sobre el dataset de entrenamiento, la longitud de contexto, los benchmarks o los requisitos de hardware, lo que dificulta la evaluacion rigurosa del modelo.
-- Riesgo de alucinacion visual: como todo modelo generativo, puede producir contenido visual o auditivo que no se corresponda con la realidad o con la intencion del prompt.
-- Sesgos potenciales: no se ha publicado informacion sobre la composicion del dataset de entrenamiento ni sobre los sesgos que pueda contener.
+- Acceso restringido: es necesario aceptar la licencia comunitaria LTX-2.x en Hugging Face antes de descargar los pesos.
+- Licencia `other` (ltx-2.x-community-license-agreement): las condiciones de uso comercial no se detallan en la información disponible y deben revisarse en el texto de la licencia antes de un despliegue en producción.
+- No se han publicado datos sobre sesgos, tasas de alucinación visual o fidelidad de sincronización audio-vídeo; conviene validar cualitativamente antes de usar en producción.
+- El soporte multilingüe se limita a las indicaciones textuales; no se especifica la calidad por idioma ni si el audio generado conserva el idioma solicitado.
+- Tamaño del checkpoint (70,1 GB) y ausencia de guías oficiales de cuantización: el despliegue en hardware de consumo no está garantizado.
+- No se documentan límites de duración de vídeo, resolución de salida ni frecuencia de muestreo de audio.
+- Ausencia de benchmarks publicados impide comparar su rendimiento objetivamente con alternativas.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/Lightricks/LTX-2.5-Pre-Trained
-- Pagina oficial del modelo: https://ltx.io/model/ltx-2-5
-- Guia completa en HackerNoon: https://hackernoon.com/ltx-25-a-complete-guide-to-lightricks-audio-video-ai-model
-- Despliegue en fal.ai: https://fal.ai/ltx-2.5
-- Pagina de LTX 2.5 en ltx.dev: https://ltx.dev/ltx-2-5
-- Paper (referenciado como arxiv:2601.03233): no disponible directamente
+- Paper referenciado en las etiquetas: arXiv 2601.03233 (contenido no incluido en la información disponible)
+- Página de Lightricks en Hugging Face: https://huggingface.co/Lightricks
+- Licencia comunitaria LTX-2.x: disponible en el repositorio de Hugging Face del modelo

@@ -1,0 +1,56 @@
+{
+  "schema": 2,
+  "id": "quxiaoqiya/ChemRoute-Qwen3-VL-4B-figure-lora",
+  "slug": "quxiaoqiya-chemroute-qwen3-vl-4b-figure-lora",
+  "author": "quxiaoqiya",
+  "url": "https://huggingface.co/quxiaoqiya/ChemRoute-Qwen3-VL-4B-figure-lora",
+  "created_at": "2026-11-23T06:40:29.000Z",
+  "updated_at": "2026-11-23T06:46:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "qwen3_vl",
+    "lora",
+    "chemistry",
+    "materials-science",
+    "image-text-to-text",
+    "conversational",
+    "base_model:Qwen/Qwen3-VL-4B-Instruct",
+    "base_model:adapter:Qwen/Qwen3-VL-4B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "context_length": null,
+  "base_model": "Qwen/Qwen3-VL-4B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Cloud computing - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Cloud_computing",
+      "snippet": "Cloud computing can shorten time to market by offering pre-configured tools, scalable resources, and managed services, allowing …Read more"
+    }
+  ]
+}

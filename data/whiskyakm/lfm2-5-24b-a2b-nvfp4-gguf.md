@@ -2,105 +2,95 @@
 
 ## Resumen
 
-LFM2.5-24B-A2B-NVFP4-GGUF es una conversión a GGUF con cuantización NVFP4 del modelo LiquidAI/LFM2.5-24B-A2B, publicada por el usuario WhiskyAKM. LFM2.5-24B-A2B es un modelo de razonamiento desarrollado por Liquid AI, el mayor y último de la familia LFM2.5, disenado para ejecutar agentes locales de forma rápida y privada. Su planteamiento combina una arquitectura Mixture of Experts (MoE) con 24.000 millones de parámetros totales y solo unos 2.450 millones activos por token, lo que reduce el coste computacional de cada token de razonamiento.
+LFM2.5-24B-A2B es un modelo de lenguaje de tipo Mixture of Experts (MoE) desarrollado por Liquid AI, disenado especificamente para tareas de razonamiento y uso de herramientas (tool use) en entornos de agente. Con 24.000 millones de parametros totales pero solo unos 2.450 millones activos por token, el modelo busca ofrecer la calidad de un modelo grande con el coste computacional de uno pequeno, lo que lo hace apto para inferencia en dispositivo (on-device) y despliegues con recursos limitados.
 
-La relevancia de este repositorio concreto es doble. Por un lado, traslada el modelo original a formato GGUF, lo que permite ejecutarlo con llama.cpp y otros motores compatibles, algo imprescindible para despliegues en local y en el borde. Por otro, emplea NVFP4, el formato de coma flotante de 4 bits (E2M1) de NVIDIA, que la model card describe como capaz de preservar una calidad cercana a bfloat16 y de acelerarse en GPUs Blackwell a través de llama.cpp. El resultado es un fichero de unos 13,6 GB para un modelo que soporta 131.072 tokens de contexto y 16 idiomas.
+La arquitectura LFM2.5 combina 30 bloques de convolucion corta con doble compuerta (double-gated short convolution) y 10 bloques de atencion con query agrupada (GQA), lo que se aleja del transformer clasico y reduce el coste de atencion en contextos largos. El modelo soporta una ventana de contexto de 131.072 tokens y fue entrenado con 36 billones de tokens, con un vocabulario de 128.000 entradas y cobertura de 16 idiomas.
 
-El modelo está orientado a tareas agénticas y de uso de herramientas, y su autor lo posiciona como competitivo frente a Qwen3.6-35B-A3B en tareas de agente y tool use, con aproximadamente la mitad de parámetros totales y activos. La licencia es lfm1.0, una licencia propia de Liquid AI, por lo que conviene revisar sus términos antes de cualquier uso comercial.
+Esta ficha describe la version cuantizada a NVFP4 en formato GGUF publicada por WhiskyAKM, que permite ejecutar el modelo con llama.cpp y motores compatibles, con aceleracion especifica en GPUs NVIDIA Blackwell. Es relevante ahora porque compite en tareas agenticas con modelos de mayor tamano (como Qwen3.6-35B-A3B) manteniendo un coste de inferencia bajo.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | LFM2.5 (Mixture of Experts), con 30 bloques double-gated short convolution y 10 capas GQA |
+| Arquitectura | LFM2.5 (Mixture of Experts; 30 bloques de convolucion corta con doble compuerta + 10 bloques GQA) |
 | Parametros totales | 23.971.587.712 (~24,0B) |
 | Parametros activos | ~2,45B |
 | Longitud de contexto | 131.072 tokens |
-| Tipos de cuantizacion | NVFP4 (E2M1, formato de coma flotante de 4 bits de NVIDIA); en este repositorio solo se publica el fichero NVFP4 |
-| Idiomas soportados | Ingles, arabe, chino, frances, aleman, italiano, japones, coreano, portugues, espanol, vietnamita, thai, indonesio, hindi, ruso, polaco |
-| Licencia | lfm1.0 (etiquetada como "other" en Hugging Face) |
-| Formato de pesos | GGUF (llama-cpp) |
-| Tamano del repositorio | 13,6 GB |
-| Numero de capas | 40 |
-| Expertos | 64 por bloque MoE, enrutamiento top-4 |
-| Tamano de vocabulario | 128.000 |
-| Presupuesto de entrenamiento | 36 billones de tokens |
-| Modelo base | LiquidAI/LFM2.5-24B-A2B |
-| Parametros de generacion recomendados | Temperature 0,1; top-k 50; repetition penalty 1,05 |
+| Tipos de cuantizacion | NVFP4 (formato de coma flotante de 4 bits E2M1); el repo solo incluye este formato |
+| Idiomas soportados | Ingles, arabe, chino, frances, aleman, italiano, japones, coreano, portugues, espanol, vietnamita, tailandes, indonesio, hindi, ruso, polaco |
+| Licencia | lfm1.0 (licencia propia de Liquid AI, marcada como "other") |
+| Formato de pesos | GGUF (un unico fichero `lfm2.5-24b-a2b-nvfp4.gguf`); el modelo base original esta en otros formatos no especificados en esta ficha |
 
 ## Arquitectura y entrenamiento
 
-LFM2.5 es una arquitectura MoE de 40 capas que combina dos tipos de bloque: 30 bloques de convolucion corta con doble puerta (double-gated short convolution) y 10 capas de atencion con consultas agrupadas (GQA). Cada bloque MoE incorpora 64 expertos con enrutamiento top-4, de modo que solo se activa una fraccion pequena de la red por token. Con 24B de parametros totales y aproximadamente 2,45B activos, el modelo persigue el coste por token caracteristico de un MoE pequeno manteniendo la capacidad de uno grande. El vocabulario es de 128.000 entradas y el contexto nativo alcanza los 131.072 tokens.
+El modelo emplea una arquitectura hibrida LFM2.5 en la que la mayor parte de las capas (30 de 40) son bloques de convolucion corta con doble compuerta en lugar de atencion, y solo 10 capas usan atencion con query agrupada (GQA). Esta combinacion reduce el coste computacional y de memoria en secuencias largas frente a un transformer denso equivalente. La capa MoE cuenta con 64 expertos por bloque y enrutamiento top-4, lo que explica que de los 24.000 millones de parametros totales solo se activen aproximadamente 2.450 millones por token.
 
-Segun la model card, el modelo se entreno con un presupuesto de 36 billones de tokens. No se detalla en la informacion disponible la composicion exacta del dataset, ni si se aplicaron fases de RLHF, DPO u otras tecnicas de alineacion posteriores al preentrenamiento. La innovacion mas destacada que declara el autor es el modo de razonamiento ("always thinks before it answers") combinado con la eficiencia de un MoE de 2B activos, lo que abarata cada token de pensamiento, y una eficiencia de inferencia hasta 1,7 veces superior a la de MoEs comparables en dispositivos. La cuantizacion NVFP4 anade una capa de optimizacion adicional para GPUs Blackwell.
+El entrenamiento se realizo con un presupuesto de 36 billones de tokens y un vocabulario de 128.000 entradas. La model card indica que el modelo "siempre piensa antes de responder" (reasoning mode por defecto), aunque no se detalla en la informacion disponible si hubo fases de RLHF, DPO u otras tecnicas de alineacion posteriores al preentrenamiento. La version descrita aqui es una conversion a NVFP4 realizada por un tercero (WhiskyAKM) a partir del modelo base oficial, usando imatrix segun las etiquetas del repositorio.
 
 ## Capacidades
 
-- Generacion de texto conversacional con pipeline text-generation.
-- Razonamiento explicito antes de responder: el modelo esta disenado para "pensar" antes de dar la respuesta final.
-- Rendimiento destacado en tareas agénticas y de uso de herramientas (tool calling / function calling), segun la model card.
-- Razonamiento multi-paso y flujos de agente, con enfasis declarado en desempeno "best-in-class" dentro de su categoria.
-- Soporte multilingue en 16 idiomas: ingles, arabe, chino, frances, aleman, italiano, japones, coreano, portugues, espanol, vietnamita, thai, indonesio, hindi, ruso y polaco.
-- Orientacion a ejecucion en dispositivo (on-device) y entornos con recursos limitados, gracias a los ~2,45B parametros activos.
-- No se documentan en la informacion disponible capacidades de vision, audio ni otras modalidades.
+- Generacion de texto y razonamiento paso a paso con modo de pensamiento activado por defecto.
+- Uso de herramientas (tool calling / function calling), con rendimiento destacado en tareas agenticas segun el autor.
+- Razonamiento multi-paso y flujos de agente, orientado a ejecucion en dispositivo.
+- Capacidades multilingues en 16 idiomas, incluidos espanol, arabe, chino, hindi y ruso.
+- Inferencia eficiente gracias al bajo numero de parametros activos por token.
+- Compatibilidad con llama.cpp (CLI y servidor con API compatible con OpenAI).
+- No se mencionan capacidades de vision ni audio en la informacion disponible.
 
 ## Casos de uso
 
-- Agentes locales en el puesto de trabajo: al ejecutarse con llama.cpp y ocupar unos 13,6 GB en NVFP4, puede desplegarse en una estacion de trabajo con GPU Blackwell y operar sin enviar datos a servicios externos, algo relevante para entornos con requisitos de privacidad.
-- Automatizacion de herramientas y APIs: su enfoque en tool use permite construir asistentes que encadenan llamadas a funciones (consultas a bases de datos, operaciones sobre ficheros, peticiones HTTP) con razonamiento intermedio entre pasos.
-- Razonamiento sobre documentos largos: con 131.072 tokens de contexto puede procesar contratos, informes tecnicos o bases de codigo extensas en una sola pasada, sin necesidad de fragmentacion agresiva.
-- Asistencia tecnica multilingue: los 16 idiomas soportados permiten atender consultas en espanol, portugues, arabe, hindi o japones con el mismo modelo, simplificando el mantenimiento de una unica infraestructura.
-- Pipelines de agentes con API compatible con OpenAI: llama-server expone una API compatible, de modo que el modelo puede sustituir a un endpoint remoto en aplicaciones ya construidas sobre ese contrato.
-- Prototipado e investigacion en eficiencia: sirve para estudiar el comportamiento de MoEs con enrutamiento top-4 y cuantizacion de 4 bits en flujos de razonamiento, con un coste en disco y memoria contenido.
-- Despliegues en el borde con GPU: la aceleracion NVFP4 en Blackwell permite servir el modelo en equipos de gama alta para escritorio o en servidores compactos, con menor huella de memoria que una version bf16.
+- Agentes autonomos en dispositivo: el modelo puede ejecutar bucles de razonamiento y llamadas a herramientas con solo ~2,45B parametros activos, lo que permite desplegarlo en portatiles o estaciones de trabajo sin GPU de datacenter.
+- Atencion al cliente automatizada: con 131.072 tokens de contexto puede mantener conversaciones multi-turno largas y consultar historiales extensos o documentacion de soporte en una sola ventana.
+- Asistente de codigo integrado en IDE: el soporte de tool calling permite invocar funciones del editor, ejecutar tests o consultar repositorios, y su bajo coste por token hace viable la generacion continua en local.
+- Procesamiento de documentos multilingues: al cubrir 16 idiomas puede resumir, extraer y clasificar documentacion en espanol, ingles, aleman, arabe o chino dentro del mismo pipeline.
+- Automatizacion de flujos RPA con agentes: el modelo puede planificar pasos, invocar APIs y validar resultados en entornos donde la privacidad exige no enviar datos a la nube.
+- Prototipado rapido de aplicaciones LLM: mediante `llama-server` se expone una API compatible con OpenAI, lo que facilita integrarlo en frameworks existentes sin reescribir el codigo de cliente.
+- Razonamiento sobre bases de conocimiento largas: su contexto de 131k tokens permite analisis de contratos, informes o expedientes completos sin troceado agresivo.
 
 ## Benchmarks y rendimiento
 
-La model card solo reporta un resultado comparativo, en la metrica LiveClaw:
+La model card del repositorio incluye un unico dato comparativo:
 
-| Metrica | LFM2.5-24B-A2B | Qwen3.6-35B-A3B |
+| Benchmark | LFM2.5-24B-A2B | Qwen3.6-35B-A3B |
 |---|---|---|
 | LiveClaw | 48,09 | 38,19 |
 
-No se han publicado en la informacion disponible resultados de MMLU, HumanEval, GSM8K ni otros benchmarks estandar, ni cifras de latencia o throughput medidas. El dato de Qwen3.6-35B-A3B procede de la propia model card del autor y no se ha verificado de forma independiente.
+No se han publicado en la informacion disponible resultados de MMLU, HumanEval, GSM8K u otros benchmarks estandar. El autor afirma ademas que el modelo corre hasta 1,7 veces mas rapido que MoEs comparables en dispositivo, pero no se aportan mediciones detalladas de latencia o throughput.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: el fichero GGUF ocupa 13,6 GB, por lo que se necesitan aproximadamente 14 GB solo para los pesos; hay que anadir la cache KV, cuyo tamano depende de la longitud de contexto efectiva (no se especifica en la informacion disponible).
-- Aceleracion NVFP4: la model card indica que NVFP4 se acelera en GPUs NVIDIA Blackwell a traves de llama.cpp. En generaciones anteriores de GPU no se documenta el nivel de soporte nativo del formato.
-- GPUs recomendadas: familia Blackwell para aprovechar NVFP4 (por ejemplo B200 o RTX 50). No se documentan recomendaciones concretas para A100, H100 ni RTX 4090 en la informacion disponible.
-- Viabilidad en GPU de consumo: probable en tarjetas con al menos 16 GB de VRAM si se usa un contexto moderado, aunque no se confirma oficialmente; con contextos cercanos a 131.072 tokens los requisitos crecen.
-- Opciones de despliegue: llama.cpp mediante llama-cli y llama-server (API compatible con OpenAI). No se mencionan en la informacion disponible integraciones con vLLM, TGI, Ollama ni otros motores.
-- Parametros de generacion sugeridos: temperature 0,1, top-k 50 y repetition penalty 1,05.
-- Latencia y throughput: no disponibles.
+- VRAM estimada para inferencia: al estar cuantizado en NVFP4 (4 bits), el peso del modelo ronda los 12-14 GB, aunque la cifra exacta no se especifica en la informacion disponible.
+- GPU recomendadas: NVIDIA Blackwell (por la aceleracion nativa de NVFP4 en llama.cpp); en otras arquitecturas el formato puede no estar acelerado y requerir conversion o decodificacion por software.
+- Cabe en GPU de consumo con 16 GB o mas de VRAM, como RTX 4080/4090 o superiores, siempre que el motor soporte NVFP4 de forma eficiente.
+- Opciones de despliegue: llama.cpp (CLI `llama-cli` y servidor `llama-server` con API compatible con OpenAI); otros motores GGUF no se mencionan en la informacion disponible.
+- Parametros de generacion recomendados: temperature 0,1, top-k 50 y repetition penalty 1,05.
+- Latencia y throughput estimados: no disponibles mas alla de la afirmacion de hasta 1,7x mas rapido que MoEs comparables.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros totales | Parametros activos | Contexto | LiveClaw | Licencia |
+| Modelo | Parametros totales / activos | Contexto | Benchmark LiveClaw | Licencia | Formato |
 |---|---|---|---|---|---|
-| LFM2.5-24B-A2B (este repositorio, NVFP4 GGUF) | 24,0B | ~2,45B | 131.072 | 48,09 | lfm1.0 |
-| Qwen3.6-35B-A3B | 35B (aprox.) | 3B (aprox.) | no disponible | 38,19 | no disponible |
-| Otros MoE de borde comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
+| LFM2.5-24B-A2B (esta ficha, NVFP4 GGUF) | 24,0B / ~2,45B | 131.072 | 48,09 | lfm1.0 | GGUF |
+| Qwen3.6-35B-A3B | ~35B / ~3B (segun model card) | no disponible | 38,19 | no disponible | no disponible |
+| Otros MoE de tamano similar | no disponible | no disponible | no disponible | no disponible | no disponible |
 
-La unica comparacion documentada es la que ofrece la propia model card frente a Qwen3.6-35B-A3B, un MoE con aproximadamente un 50% mas de parametros totales y activos. No se dispone de datos verificados de otros modelos de la misma categoria en la informacion proporcionada.
+La unica comparacion publicada es frente a Qwen3.6-35B-A3B, que segun el autor tiene aproximadamente un 50% mas de parametros totales y activos. No se dispone de datos de otros modelos comparables en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- Licencia lfm1.0: es una licencia propia de Liquid AI, etiquetada como "other" en Hugging Face. Es imprescindible revisar el texto completo antes de cualquier uso comercial, ya que puede incluir restricciones de escala, atribucion o sectores.
-- Riesgo de alucinacion: no se documentan tasas de alucinacion ni evaluaciones de fidelidad; como cualquier modelo generativo, puede producir contenido incorrecto con apariencia de certeza, especialmente en dominios especializados.
-- Sesgos: no se publica informacion sobre evaluaciones de sesgo, composicion del dataset ni medidas de mitigacion.
-- Cobertura idiomatica desigual: aunque se listan 16 idiomas, no se especifica el nivel de calidad por idioma; es previsible un rendimiento inferior en los idiomas con menos presencia en el corpus de entrenamiento.
-- Contexto: los 131.072 tokens son la longitud nativa declarada, pero no se documenta el rendimiento de recuperacion en contextos muy largos ni si existe degradacion.
-- Cuantizacion NVFP4: la propia model card indica que la aceleracion depende de GPUs Blackwell. En hardware distinto, el rendimiento y la viabilidad practica no estan documentados.
-- Repositorio de terceros: se trata de una conversion realizada por un usuario (WhiskyAKM) y no por Liquid AI; no consta validacion oficial de la calidad de la cuantizacion ni de la equivalencia funcional con el modelo base.
-- Madurez: el repositorio tiene 0 descargas y 0 "likes" en el momento de la consulta, sin evidencia de uso en produccion.
-- No se documentan capacidades multimodales, por lo que no debe asumirse soporte de vision o audio.
+- Licencia lfm1.0: es una licencia propia de Liquid AI, no una licencia open source estandar; es necesario revisar sus terminos antes de un uso comercial.
+- El repositorio es una cuantizacion de terceros (WhiskyAKM), no una publicacion oficial de Liquid AI; la calidad de la cuantizacion NVFP4 puede diferir del modelo original en precision completa.
+- NVFP4 esta optimizado para GPUs NVIDIA Blackwell; en hardware sin soporte nativo el rendimiento puede degradarse o requerir conversion.
+- Riesgo de alucinacion inherente a los modelos de lenguaje, especialmente en tareas de razonamiento largo y uso de herramientas.
+- El modo de razonamiento siempre activo puede incrementar el numero de tokens generados y, por tanto, la latencia en respuestas simples.
+- No se documentan en la informacion disponible sesgos especificos ni evaluaciones de seguridad.
+- Solo se distribuye un unico fichero GGUF en NVFP4; no hay variantes en otros niveles de cuantizacion en este repositorio.
+- La cobertura de 16 idiomas no garantiza el mismo rendimiento en todos ellos; no se aportan metricas por idioma.
 
 ## Enlaces
 
-- Repositorio en Hugging Face: https://huggingface.co/WhiskyAKM/LFM2.5-24B-A2B-NVFP4-GGUF
+- Repositorio Hugging Face: https://huggingface.co/WhiskyAKM/LFM2.5-24B-A2B-NVFP4-GGUF
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-24B-A2B
+- Blog de Liquid AI: https://www.liquid.ai/blog/lfm2-5-24b-a2b
 - Licencia lfm1.0: https://huggingface.co/LiquidAI/LFM2.5-24B-A2B/blob/main/LICENSE
-- Blog de Liquid AI sobre LFM2.5-24B-A2B: https://www.liquid.ai/blog/lfm2-5-24b-a2b
 - llama.cpp: https://github.com/ggerganov/llama.cpp
-- Nota: los resultados de la busqueda web realizada no contenian ningun enlace relacionado con este modelo; no se incluyen por no ser pertinentes.

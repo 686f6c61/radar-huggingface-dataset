@@ -5,7 +5,7 @@
   "author": "optimatechlabs",
   "url": "https://huggingface.co/optimatechlabs/ternzip-9b",
   "created_at": "2026-11-21T15:16:13.000Z",
-  "updated_at": "2026-11-22T02:00:16.000Z",
+  "updated_at": "2026-11-22T15:28:14.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

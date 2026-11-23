@@ -1,0 +1,43 @@
+{
+  "schema": 2,
+  "id": "xpanceo-team/mattergen-base",
+  "slug": "xpanceo-team-mattergen-base",
+  "author": "xpanceo-team",
+  "url": "https://huggingface.co/xpanceo-team/mattergen-base",
+  "created_at": "2025-05-30T05:03:01.000Z",
+  "updated_at": "2026-11-23T10:53:01.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "diffusers:MatterGenPipeline",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 8,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 178550228,
+  "storage_human": "179 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

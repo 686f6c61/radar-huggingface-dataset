@@ -24,12 +24,11 @@
     "dataset:danielrosehill/Read-Aloud-Voice-Sentences",
     "base_model:openai/whisper-large-v3-turbo",
     "base_model:finetune:openai/whisper-large-v3-turbo",
-    "doi:10.57967/hf/7019",
     "license:mit",
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 38,
+  "downloads_30d": 6,
   "trending_score": 0,
   "parameters": 808878080,
   "parameters_human": "808.9M",

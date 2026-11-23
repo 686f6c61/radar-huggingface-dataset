@@ -1,0 +1,48 @@
+{
+  "schema": 2,
+  "id": "sahan323/reuters-gpt2-ssl-assignment2",
+  "slug": "sahan323-reuters-gpt2-ssl-assignment2",
+  "author": "sahan323",
+  "url": "https://huggingface.co/sahan323/reuters-gpt2-ssl-assignment2",
+  "created_at": "2026-11-23T10:34:35.000Z",
+  "updated_at": "2026-11-23T10:34:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "causal-language-modeling",
+    "self-supervised-learning",
+    "en",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 132317314,
+  "storage_human": "132 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

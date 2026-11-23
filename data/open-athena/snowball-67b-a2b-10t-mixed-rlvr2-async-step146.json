@@ -19,12 +19,10 @@
     "asynchronous-rl",
     "mixture-of-experts",
     "megatron",
-    "base_model:open-athena/Grug-67B-A2B-Datakit-SFT-262K-2026.09.11",
-    "base_model:finetune:open-athena/Grug-67B-A2B-Datakit-SFT-262K-2026.09.11",
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 21,
+  "downloads_30d": 20,
   "trending_score": 0,
   "parameters": 67078882816,
   "parameters_human": "67.08B",

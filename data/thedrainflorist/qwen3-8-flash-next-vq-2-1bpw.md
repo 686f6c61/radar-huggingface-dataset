@@ -2,99 +2,100 @@
 
 ## Resumen
 
-TheDrainFlorist/Qwen3.8-Flash-Next-VQ-2.1bpw es una cuantizacion vectorial (VQ) del modelo multimodal Qwen3.8-Flash-Next, desarrollado por el usuario TheDrainFlorist. Este checkpoint reduce el peso del modelo original (aproximadamente 335 GiB en bf16) a 45 GiB, permitiendo su ejecucion en equipos Apple Silicon con 64 GB de memoria unificada usando la libreria MLX sin parches adicionales. El modelo base es un MoE ultra-sparse de 125B parametros (incluyendo una tabla n-gram de 51B) con 6B activos por token, basado en la arquitectura Qwen4 que combina Gated DeltaNet y Qwen Sparse Attention.
+Qwen3.8-Flash-Next-VQ-2.1bpw es una cuantización vectorial (VQ) del modelo Qwen3.8-Flash-Next de Qwen, publicada por el usuario TheDrainFlorist. Se trata de un artefacto de inferencia para Apple Silicon que reduce un MoE de aproximadamente 180B parámetros totales (con 10 de 512 expertos activos y 51,2B en tablas n-gram PLE) hasta unos 45,3 GiB, permitiendo ejecutarlo en máquinas con 64 GB de memoria unificada. El checkpoint incluye su propio runtime VQ como `model.py`, de modo que `mlx-lm` estándar puede ejecutarlo sin parches, aunque la arquitectura base `qwen4_exp` aún no está en ninguna versión publicada de `mlx-lm`.
 
-La cuantizacion se realiza sin datos (data-free), mediante k-means sobre los pesos, e incorpora una "mezcla de leverage" que actualiza selectivamente las capas mas sensibles (capas 0-1 y banda 31-39) para minimizar la perdida de calidad. Los resultados medidos muestran una KL de 390.1 mnats/tok frente al teacher bf16, con un acuerdo top-1 del 78.8% y una perplejidad de 5.903, acercandose al rendimiento del modelo original en tareas de generacion de texto. Este modelo esta pensado para desarrolladores que necesitan ejecutar un frontier MoE en hardware de consumo sin comprometer demasiado la fidelidad.
+El modelo es relevante porque demuestra una vía práctica para servir un MoE de frontera en hardware de consumo Apple, combinando cuantización vectorial data-free con asignación de codebooks por capa elegida mediante divergencia KL. La ficha de Hugging Face reporta 374 descargas y 5 likes, con un repositorio de 129,3 GB que incluye múltiples variantes y artefactos auxiliares.
+
+La información disponible es la model card del autor y los metadatos de Hugging Face. No hay papers, benchmarks estándar (MMLU, HumanEval, GSM8K) ni documentación oficial de Qwen sobre el modelo base en la información proporcionada.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | MoE ultra-sparse con GDN + QSA (Qwen4) |
-| Parametros totales | 125B (modelo base, incluye 51B de tabla n-gram) |
-| Parametros activos | 6B por token (modelo base) |
-| Longitud de contexto | 262.144 tokens (modelo base) |
-| Tipos de cuantizacion | VQ 2.1bpw (vector quantization, 14-bit codes para MoE, 8-bit para n-gram) |
-| Idiomas soportados | Ingles (declarado en la model card) |
-| Licencia | qwen-community-1.0 |
-| Formato de pesos | safetensors, MLX (con runtime embebido en model.py) |
-
-Nota: el checkpoint cuantizado contiene 21.062.769.043 parametros almacenados, pero el modelo base tiene 125B parametros. La model card del autor menciona 180B totales, discrepancia que no se ha podido resolver con las fuentes disponibles.
+| Arquitectura | Transformer MoE (`qwen4_exp`) con tablas de embedding n-gram por capa (PLE) y torre de visión; runtime VQ empaquetado en el checkpoint |
+| Parametros totales | 24.445.301.395 (dato real de safetensors); la model card describe el modelo base como ~180B totales / 10 de 512 expertos activos, 51,2B en n-gram PLE |
+| Parametros activos | 10 de 512 expertos (MoE); cifra exacta de parámetros activos no disponible |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | Cuantización vectorial (VQ) con codebooks data-free: expertos gate/up a d=8/K=16384 (códigos de 14 bits), down_proj a d=4/K=256, tablas PLE a d=8/K=256 (filas de 8 bits); capas 0–1 y banda 27–33, 35, 47 a d=4/K=256 en gate/up; etiquetado 8-bit |
+| Idiomas soportados | en |
+| Licencia | qwen-community-1.0 (etiquetada como `other` en Hugging Face) |
+| Formato de pesos | safetensors (librería `mlx`), con `model.py` empaquetado y `mtp-head-q6.safetensors` para decodificación especulativa |
 
 ## Arquitectura y entrenamiento
 
-El modelo base Qwen3.8-Flash-Next emplea una arquitectura hibrida: tres de cada cuatro capas usan Gated DeltaNet (GDN) para comprimir historial de forma eficiente, mientras que la cuarta capa usa Qwen Sparse Attention (QSA) para recuperacion precisa de contexto largo. Ademas, incorpora una tabla n-gram PLE (Probabilistic Language Embedding) de 51B parametros que mejora la modelizacion de patrones locales. La cuantizacion VQ aplicada por TheDrainFlorist reemplaza los pesos densos por codigos vectoriales (d=8, K=16384 para expertos MoE; d=8, K=256 para tablas n-gram), con una estrategia de "leverage mix" que asigna mayor precision a las capas mas daninas (capas 0-1 y 31-39). El proceso es data-free, basado en k-means/Lloyd sobre los pesos del teacher bf16, con semilla 1234. No se ha realizado entrenamiento adicional; es una conversion puramente de compresion.
+El modelo base es un transformer MoE con 512 expertos, de los cuales 10 se activan por token, más tablas de embedding n-gram por capa (PLE) de 51,2B parámetros y una torre de visión. La arquitectura se identifica como `qwen4_exp` y está implementada en el PR #1788 de ml-explore/mlx-lm, sin fusionar a fecha de 2026-09-09. No se dispone de información sobre el dataset de entrenamiento, número de tokens, composición ni si hubo RLHF o DPO.
+
+Esta publicación no reentrena el modelo: aplica cuantización vectorial data-free mediante la herramienta VQLab. Los codebooks son ajustes k-means sin datos, y la asignación de qué capas reciben el nivel más ancho se eligió con `vqlab alloc-sweep` sobre tres corpus internos (prosa, código y literario) a 12288 tokens, midiendo divergencia KL contra el profesor bf16. La versión v2 (2026-09-17) degradó 46 `down_proj` de d8-K16384 a d4-K256 y promovió gate/up a d4-K256 en las capas 27–33, 35 y 47, reduciendo el tamaño de 45,8 a 45,3 GiB. El runtime incluido incorpora optimizaciones de kernel para geometrías de codebook grandes (hasta 1,46x en prefill en los niveles afectados), una relajación de subvectores irregulares (hasta 1,34x) y una memoización de routing (aproximadamente 2%).
 
 ## Capacidades
 
-- Generacion de texto y conversacion en ingles, con razonamiento avanzado gracias a la arquitectura MoE de alta capacidad.
-- Soporte multimodal (vision): el checkpoint incluye un vision tower bf16 de 0.84 GiB (333 tensores) y el config lleva vision_config + image_token_id, permitiendo tareas de imagen a texto.
-- Procesamiento de contexto largo: 262K tokens de ventana, util para documentos extensos o conversaciones multi-turno.
-- Compresion eficiente de historial mediante Gated DeltaNet, lo que reduce el costo computacional en inferencia.
-- Compatible con MLX y exo (config listo para exo-ready), permitiendo integracion en entornos de Apple Silicon sin parches.
-- No se ha confirmado soporte explicito de tool calling o function calling en la informacion disponible.
+- Generación de texto conversacional y continuaciones de contexto largo, según el pipeline `text-generation`.
+- Procesamiento de visión: el checkpoint incluye torre de visión y ocupa 45,3 GiB con ella.
+- Decodificación especulativa mediante `mtp-head-q6.safetensors`, con aceptación medida de 0,82–0,88.
+- Ejecución distribuida en dos o más Macs mediante Knurlogic, con reparto del modelo entre nodos.
+- Soporte de tool calling y function calling: no disponible en la información proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
+- Capacidades multilingües: limitadas a inglés según la etiqueta de idioma del repositorio.
 
 ## Casos de uso
 
-- Inferencia local en Mac con 64 GB de RAM unificada: el modelo de 45 GiB cabe en memoria unificada de equipos como Mac Studio o MacBook Pro de gama alta, permitiendo ejecutar un frontier MoE sin GPU dedicada.
-- Prototipado rapido de aplicaciones de chat o generacion de texto en entornos Apple: gracias al runtime MLX embebido, se puede cargar y ejecutar el modelo directamente con `mlx-lm` sin configuraciones adicionales.
-- Procesamiento de documentos largos con contexto de 262K tokens: ideal para resumir libros, analisis de contratos o busqueda en bases de conocimiento extensas.
-- Tareas multimodales de vision-lenguaje en local: el vision tower bf16 permite capturar imagenes y generar descripciones o responder preguntas sobre ellas, aunque el modelo esta optimizado para texto.
-- Evaluacion de tecnicas de cuantizacion vectorial: investigadores pueden comparar el rendimiento de VQ frente a cuantizacion afin (q3, q4, etc.) usando las metricas KL y perplejidad publicadas.
-- Despliegue en edge computing con Apple Silicon: al no requerir GPU VRAM, es viable en dispositivos con memoria unificada para aplicaciones de IA generativa en entornos sin conexion.
+- Inferencia local de un MoE de frontera en Mac de 64 GB: el modelo ocupa 45,3 GiB con torre de visión, por lo que cabe en memoria unificada de 64 GB y permite ejecutar un modelo de escala 180B sin GPU dedicada.
+- Servicio distribuido en clúster de Macs: con Knurlogic se reparte un único modelo entre dos o más máquinas, lo que permite sumar memoria unificada y servir el modelo desde una interfaz común.
+- Generación de texto asistida por visión en local: la torre de visión incluida permite tareas de descripción de imágenes y respuesta a preguntas visuales sin salir del dispositivo, útil en entornos con requisitos de privacidad.
+- Decodificación de baja latencia en Apple Silicon: con el cabezal MTP se alcanzan 23,7–25,5 tok/s de decode en un M4 de un solo nodo, adecuado para asistentes interactivos en local.
+- Evaluación e investigación de cuantización vectorial: el checkpoint sirve como referencia reproducible de VQ con asignación de codebooks por capa guiada por KL, con métricas publicadas de perplejidad y KL frente al profesor bf16.
+- Prototipado de pipelines de texto en inglés: al estar limitado a inglés, encaja en flujos de generación, resumen y reescritura en ese idioma sobre hardware Apple, sin depender de servicios en la nube.
 
 ## Benchmarks y rendimiento
 
-La model card del autor proporciona mediciones frente al teacher bf16 (modelo original), evaluadas con 2048 tokens de prosa. Los resultados son:
+No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible. La model card sí reporta métricas de fidelidad frente al profesor bf16 y rendimiento de decode:
 
-| Build | Tamano | KL a bf16 (mnats/tok) | Acuerdo top-1 | Perplejidad |
+| Metrica | v1 | v2 | Cambio | t |
 |---|---|---|---|---|
-| affine q3 (del autor) | 75 GiB | 1083.4 | 61.9% | 12.850 |
-| **Este modelo (VQ 2.1bpw)** | **45 GiB** | **390.1** | **78.8%** | **5.903** |
-| affine q4 (del autor) | 96 GiB | 293.9 | 79.6% | 6.453 |
-| affine q5 (del autor) | 116 GiB | 91.7 | 87.5% | 5.243 |
-| affine q6 (del autor) | 137 GiB | 52.8 | 91.6% | 4.916 |
-| affine q8 (del autor) | 178 GiB | 27.1 | 94.9% | 5.197 |
-| bf16 teacher | 335 GiB | 0 | 100% | 5.166 |
+| KL prosa (millinats/token) | 409,6 | 383,9 | -6,3% | -7,3 |
+| KL código (millinats/token) | 109,4 | 100,1 | -8,5% | -6,1 |
+| KL literario (millinats/token) | 356,9 | 334,0 | -6,4% | -9,2 |
+| Perplejidad prosa | 5,8255 | 5,7485 | — | — |
+| Perplejidad código | 1,7243 | 1,7128 | — | — |
+| Perplejidad literario | 7,8240 | 7,6574 | — | — |
 
-Ademas, se reportan perplejidades en otros corpus: codigo 2.076 (frente a 1.902 del teacher) y literario 8.945 (frente a 7.664). El autor recomienda clasificar por KL, no por perplejidad, ya que esta ultima puede enmascarar errores compensados. No se han publicado resultados de benchmarks estandar como MMLU, HumanEval o GSM8K en la informacion disponible.
+Medido en el runtime anterior a Knurlogic 0.1.3, por lo que no es comparable con las cifras de decode. El rendimiento de decode medido en un M4 de un solo nodo a través de exo es de 23,7–25,5 tok/s con aceptación 0,82–0,88.
 
 ## Requisitos de hardware
 
-- Tamano del checkpoint: 45 GiB (incluye vision tower de 0.84 GiB). Se necesita al menos 64 GB de memoria unificada en Apple Silicon para cargarlo y ejecutarlo con comodidad.
-- GPU: no requiere GPU dedicada; funciona en CPU/GPU unificada de Apple (M-series) via MLX. Equipos con 64 GB de RAM unificada (por ejemplo, Mac Studio M2 Ultra, MacBook Pro M3 Max) son adecuados.
-- Alternativas: si se dispone de GPU NVIDIA, el modelo base original (bf16) requiere 335 GiB, lo cual no es viable en consumer GPU; este cuantizado no esta disenado para CUDA.
-- Opciones de despliegue: `mlx-lm` (stock), exo, y cualquier runtime que soporte MLX. No se menciona compatibilidad con vLLM, llama.cpp u Ollama, ya que el runtime VQ va embebido en el checkpoint.
-- Latencia y throughput: no se han publicado datos de velocidad. Dado que es un MoE con 6B activos, se espera una latencia razonable en hardware Apple Silicon, pero no hay cifras concretas.
+- VRAM/memoria estimada: 45,3 GiB con torre de visión (v2); el repositorio completo ocupa 129,3 GB.
+- Cabe en Mac con 64 GB de memoria unificada; en esa configuración el modelo deja poco margen para otras aplicaciones.
+- GPU recomendadas: Apple Silicon (M-series); el runtime está pensado para `mlx` y Apple Silicon. No hay datos para A100, H100 o RTX 4090.
+- Despliegue: `mlx-lm` con la arquitectura `qwen4_exp` (requiere el PR #1788 o una versión que la incluya), Knurlogic 0.1.3 o superior, y exo como ruta de servicio anterior. No se mencionan vLLM, llama.cpp, Ollama ni TGI.
+- Latencia y throughput: 23,7–25,5 tok/s de decode en M4 de un solo nodo con decodificación especulativa; el presupuesto adicional del cabezal MTP es de aproximadamente 2,2 GiB residentes.
+- Clúster: Knurlogic permite repartir el modelo entre dos o más Macs con la misma versión instalada en cada nodo.
 
 ## Comparativa con modelos similares
 
-Este modelo se compara principalmente con otras cuantizaciones del mismo modelo base (afines) y con el teacher bf16. No se dispone de comparativas con otros modelos de la misma categoria (por ejemplo, otros MoE cuantizados como Mixtral o Qwen3-MoE) en la informacion proporcionada.
+La model card menciona builds afines del mismo autor, convertidos con las mismas herramientas y evaluados con el mismo instrumento, pero no proporciona sus especificaciones completas. No se dispone de datos suficientes para comparar con alternativas externas de la misma categoría.
 
-| Modelo | Tamano | Parametros activos | Contexto | Licencia | Formato |
+| Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Qwen3.8-Flash-Next (bf16) | 335 GiB | 6B | 262K | qwen-community-1.0 | safetensors (bf16) |
-| Este modelo (VQ 2.1bpw) | 45 GiB | 6B | 262K | qwen-community-1.0 | safetensors (MLX, VQ) |
-| Qwen3.8-Flash-Next (affine q4, del autor) | 96 GiB | 6B | 262K | qwen-community-1.0 | safetensors (MLX, affine) |
-
-La principal ventaja de este modelo es su tamano reducido (45 GiB) con una KL de 390.1, que supera al affine q3 (75 GiB, KL 1083.4) y se acerca al affine q4 (96 GiB, KL 293.9) a mitad de tamano. La licencia comunitaria de Qwen permite uso comercial con restricciones (ver limitaciones).
+| Qwen3.8-Flash-Next-VQ-2.1bpw | 24.445.301.395 en safetensors; base ~180B MoE | no disponible | qwen-community-1.0 | Hugging Face, 374 descargas | VQ para Apple Silicon, 45,3 GiB |
+| Qwen3.8-Flash-Next (base) | ~180B totales, 10 de 512 activos | no disponible | qwen-community-1.0 | Hugging Face | Pesos originales; requiere runtime compatible con `qwen4_exp` |
+| Builds afines del mismo autor | no disponible | no disponible | no disponible | mismas herramientas de conversión | Solo citados como referencia de comparación en la model card |
 
 ## Limitaciones y advertencias
 
-- Perdida de fidelidad: la cuantizacion VQ introduce una desviacion de 390.1 mnats/tok en KL frente al teacher bf16, lo que puede manifestarse en errores sutiles de razonamiento o generacion en comparacion con el modelo original.
-- Sesgos del modelo base: Qwen3.8-Flash-Next puede heredar sesgos de los datos de entrenamiento; no se ha realizado alineamiento adicional en esta conversion.
-- Riesgo de alucinacion: como cualquier modelo generativo, puede producir informacion falsa o inconsistente, especialmente en contextos largos o temas especializados.
-- Idioma: la model card declara solo ingles; no se garantiza un rendimiento adecuado en otros idiomas.
-- Restricciones de licencia: la licencia qwen-community-1.0 permite uso comercial, pero impone condiciones (por ejemplo, no usar para servicios que compitan con Qwen, mantener avisos de copyright). Se recomienda revisar el texto completo de la licencia.
-- Limitaciones de hardware: requiere 64 GB de memoria unificada; no es utilizable en GPUs NVIDIA o AMD convencionales sin adaptacion.
-- Sin soporte oficial: es un modelo creado por un tercero, no por Qwen; no hay garantia de mantenimiento o compatibilidad futura con nuevas versiones de MLX.
-- La discrepancia en el numero de parametros (125B vs 180B segun la fuente) no esta resuelta; los usuarios deben verificar la configuracion real antes de desplegar en produccion.
+- Requiere Knurlogic 0.1.3 o superior: versiones anteriores reconstruyen los multiplicadores hash de las tablas PLE con una semilla por defecto incorrecta y leen filas equivocadas en cada token, degradando la salida sin fallar.
+- Con `mlx-lm` estándar es necesario instalar el PR #1788, aún sin fusionar; de lo contrario aparece `ModuleNotFoundError: No module named 'mlx_lm.models.qwen4_exp'`.
+- Idiomas: solo inglés según los metadatos; no se debe asumir calidad en castellano ni en otros idiomas.
+- Licencia `qwen-community-1.0`: es necesario revisar sus términos antes de uso comercial; la información proporcionada no detalla restricciones concretas.
+- La cuantización introduce degradación medible frente al profesor bf16 (KL de 100,1 a 383,9 millinats por token según corpus), con mayor pérdida en prosa y texto literario que en código.
+- Riesgo de alucinación y sesgos: no hay documentación específica en la información disponible.
+- Longitud de contexto: no disponible, lo que impide planificar cargas de trabajo con ventanas largas.
+- En Mac de 64 GB, el modelo con visión ocupa 45,3 GiB y el cabezal de decodificación especulativa añade unos 2,2 GiB, dejando poco margen para el sistema y otras aplicaciones.
+- El repositorio de 129,3 GB implica una descarga considerable y espacio en disco significativo.
 
 ## Enlaces
 
-- Repositorio Hugging Face del modelo: https://huggingface.co/TheDrainFlorist/Qwen3.8-Flash-Next-VQ-2.1bpw
-- Modelo base Qwen3.8-Flash-Next: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
-- Repositorio GitHub de Qwen3.8-Flash-Next: https://github.com/QwenLM/Qwen3.8-Flash-Next/
-- Guia de ejecucion local (unsloth): https://unsloth.ai/docs/models/qwen3.8-next
-- Recetas vLLM para Qwen3.8-Flash-Next: https://recipes.vllm.ai/Qwen/Qwen3.8-Flash-Next
-- Herramienta VQLab usada para la cuantizacion: https://github.com/noahzelezny/VQLab
+- Hugging Face: https://huggingface.co/TheDrainFlorist/Qwen3.8-Flash-Next-VQ-2.1bpw
+- Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
+- Herramienta de cuantización VQLab: https://github.com/noahzelezny/VQLab
+- Runtime Knurlogic: https://github.com/noahzelezny/Knurlogic
+- PR de arquitectura en mlx-lm: https://github.com/ml-explore/mlx-lm/pull/1788

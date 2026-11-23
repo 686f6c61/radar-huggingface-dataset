@@ -1,0 +1,52 @@
+{
+  "schema": 2,
+  "id": "nagohachi/tiny-lm-v3.1-japanese-1.5b-a500m-sft",
+  "slug": "nagohachi-tiny-lm-v3-1-japanese-1-5b-a500m-sft",
+  "author": "nagohachi",
+  "url": "https://huggingface.co/nagohachi/tiny-lm-v3.1-japanese-1.5b-a500m-sft",
+  "created_at": "2026-11-23T07:52:51.000Z",
+  "updated_at": "2026-11-23T07:55:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "ja"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "megatron_gpt_moe",
+    "text-generation",
+    "japanese",
+    "moe",
+    "sft",
+    "chat",
+    "conversational",
+    "custom_code",
+    "ja",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1461371904,
+  "parameters_human": "1.46B",
+  "storage_bytes": 2922915008,
+  "storage_human": "2.9 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

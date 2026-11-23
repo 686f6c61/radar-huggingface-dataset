@@ -1,0 +1,51 @@
+{
+  "schema": 2,
+  "id": "iteshxt/spinneret-ranker-roberta-base",
+  "slug": "iteshxt-spinneret-ranker-roberta-base",
+  "author": "iteshxt",
+  "url": "https://huggingface.co/iteshxt/spinneret-ranker-roberta-base",
+  "created_at": "2026-11-21T09:13:00.000Z",
+  "updated_at": "2026-11-23T04:47:19.000Z",
+  "license": "cc-by-sa-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "roberta",
+    "text-to-sql",
+    "spider",
+    "schema-linking",
+    "en",
+    "dataset:xlangai/spider",
+    "base_model:FacebookAI/roberta-base",
+    "base_model:finetune:FacebookAI/roberta-base",
+    "license:cc-by-sa-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 4,
+  "trending_score": 0,
+  "parameters": 124055040,
+  "parameters_human": "124.1M",
+  "storage_bytes": 7550657966,
+  "storage_human": "7.6 GB",
+  "context_length": null,
+  "base_model": "FacebookAI/roberta-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}
