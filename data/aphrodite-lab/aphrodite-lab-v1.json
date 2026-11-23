@@ -1,0 +1,68 @@
+{
+  "schema": 2,
+  "id": "aphrodite-lab/aphrodite-lab-v1",
+  "slug": "aphrodite-lab-aphrodite-lab-v1",
+  "author": "aphrodite-lab",
+  "url": "https://huggingface.co/aphrodite-lab/aphrodite-lab-v1",
+  "created_at": "2026-11-23T16:10:23.000Z",
+  "updated_at": "2026-11-23T16:11:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gemma4",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 31273088876,
+  "parameters_human": "31.27B",
+  "storage_bytes": 62583982498,
+  "storage_human": "62.6 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Aphrodite - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/Aphrodite",
+      "snippet": "Aphrodite (/ ˌæfrəˈdaɪtiː / ⓘ) [a] is an ancient Greek goddess associated with love and beauty. Aphrodite's main cult centers were …Read more"
+    },
+    {
+      "title": "Aphrodite, déesse de l'amour et de la beauté : Généalogie, mythes et ...",
+      "url": "https://www.dieux-et-heros-grecs.fr/aphrodite.html",
+      "snippet": "Aphrodite est la déesse de l'amour et de la beauté. Ses parents sont Zeus et Dioné selon l'iliade. En tant que fille de Zeus, Aphrodite …Read more"
+    },
+    {
+      "title": "Aphrodite, déesse grecque de l'amour et de la beauté",
+      "url": "https://www.comprendre-la-mythologie.fr/qui-est-aphrodite/",
+      "snippet": "Jun 30, 2026 · Aphrodite est la déesse grecque de l’amour, du désir, de la séduction et de la beauté. Figure majeure du panthéon …Read more"
+    },
+    {
+      "title": "Aphrodite | Mythology, Worship, & Art | Britannica",
+      "url": "https://www.britannica.com/topic/Aphrodite-Greek-mythology",
+      "snippet": "Aphrodite, ancient Greek goddess of sexual love and beauty, identified with Venus by the Romans. Aphrodite was widely worshipped …Read more"
+    },
+    {
+      "title": "Aphrodite : Déesse Fatale de l’Amour - Dieux et Mytho",
+      "url": "https://www.dieux-et-mytho.fr/mythologie-grecque/aphrodite/",
+      "snippet": "Aphrodite est l’une des figures les plus importantes de la mythologie grecque, représentant l’amour, la beauté et la fertilité. Elle est …Read more"
+    }
+  ]
+}

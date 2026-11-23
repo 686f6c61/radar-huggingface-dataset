@@ -1,0 +1,70 @@
+{
+  "schema": 2,
+  "id": "turion-ai/turion-jev-0.8b",
+  "slug": "turion-ai-turion-jev-0-8b",
+  "author": "turion-ai",
+  "url": "https://huggingface.co/turion-ai/turion-jev-0.8b",
+  "created_at": "2026-11-23T15:18:17.000Z",
+  "updated_at": "2026-11-23T15:18:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_text",
+    "text-generation",
+    "decision-model",
+    "decision-index",
+    "system-one",
+    "jev",
+    "routing",
+    "classification",
+    "text-classification",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:finetune:Qwen/Qwen3.5-0.8B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 752393024,
+  "parameters_human": "752.4M",
+  "storage_bytes": 1524816947,
+  "storage_human": "1.5 GB",
+  "context_length": null,
+  "base_model": "Qwen/Qwen3.5-0.8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Own your AI: Company Brain, models and agents — turion.ai",
+      "url": "http://go/v1/AZv_jXtkwWefawRZZAHOMCz8Dxc-y49bqtZEQnKpgCYipZ5lKNNkYO3DkyubXfct45yey44JN6siXJNXYnCcZm8eT003xnNU3dVMZqqynhfelTPdoBGWc9ZmWnHM-8vMfAiINf7dGGcMYjouRCsSVR-tgOTLgvJFN-CQmT2dLT9bqvmNDg",
+      "snippet": "Turion Extract, the model that reads fields out of documents, has the top score on the SystemOne Extract Index, where anyone can check the answers behind each score. Turion Jev, which answers routine questions, is tied #2 on the Decision Index."
+    },
+    {
+      "title": "Turion AI · GitHub",
+      "url": "http://go/v1/AZv_jXtkwWefawRZZAHOMCz8Dxc-y49bqtZEQnKpg7GBRzE6oCsbGWjcKOo8S5G-lLOPQLlVGeFtW-ir4AowOtWzFHlBqnBL_uwJjv3cUwVKLh4ChEATeyUS4fjRWyn9fwuGhrFIcnur7KrW-m739_8R3kAN3exedieC_mJZh8JOSVaXuRnX3vc92SJERu0E",
+      "snippet": "Turion AI has 2 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "turion-ai/turion-jev-31b · Hugging Face",
+      "url": "http://go/v1/AZv_jXtkwWefawRZZAHOMCz8Dxc-y49bqtZEQnKphIm3NM8aWpCCYEkTZyHS06faIxL5COCojPfTpt4C0juhimvujVX84u9tSLAxtaCE29FYAQ44OATn4QIV4fGDA3UbIJGR2ehMSVbXRlk4eH6grxjSQM1Moj60pijJ_0CBkC7JrKDe0a_NraXGg4SFODKG4AEhdAhXLYtcBzfg_BBYsZEI",
+      "snippet": "A training job on the Turion AI model training platform: one NVIDIA B300, about 7.3 hours. ... tasksource/tasksource-jev-typed-decisions: 106,680 rows from 439 source datasets, keeping only sources tagged for commercial use, plus iSarcasmEval (MIT) and ContractNLI (CC BY 4.0), whose original releases allow it."
+    }
+  ]
+}

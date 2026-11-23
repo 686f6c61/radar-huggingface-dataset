@@ -1,0 +1,54 @@
+{
+  "schema": 2,
+  "id": "Kiruba072/DeepSeek-V4-Flash",
+  "slug": "kiruba072-deepseek-v4-flash",
+  "author": "Kiruba072",
+  "url": "https://huggingface.co/Kiruba072/DeepSeek-V4-Flash",
+  "created_at": "2026-11-23T14:48:06.000Z",
+  "updated_at": "2026-11-23T14:48:07.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "deepseek_v4",
+    "text-generation",
+    "arxiv:2606.19348",
+    "license:mit",
+    "endpoints_compatible",
+    "8-bit",
+    "fp8",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 290944616402,
+  "parameters_human": "290.94B",
+  "storage_bytes": 159618149394,
+  "storage_human": "159.6 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - pionxzh/chatgpt-exporter: Export and Share your ChatGPT ...",
+      "url": "https://github.com/pionxzh/chatgpt-exporter",
+      "snippet": "Make sure that the Allow User Scripts is enabled in your browser settings for Tampermonkey. Check out DeepSeek Exporter, a sister …"
+    }
+  ]
+}

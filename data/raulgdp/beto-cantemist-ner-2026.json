@@ -1,0 +1,58 @@
+{
+  "schema": 2,
+  "id": "raulgdp/beto-cantemist-ner-2026",
+  "slug": "raulgdp-beto-cantemist-ner-2026",
+  "author": "raulgdp",
+  "url": "https://huggingface.co/raulgdp/beto-cantemist-ner-2026",
+  "created_at": "2026-11-23T16:18:14.000Z",
+  "updated_at": "2026-11-23T16:32:11.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "token-classification",
+    "generated_from_trainer",
+    "base_model:dccuchile/bert-base-spanish-wwm-cased",
+    "base_model:finetune:dccuchile/bert-base-spanish-wwm-cased",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 109262595,
+  "parameters_human": "109.3M",
+  "storage_bytes": 2185374333,
+  "storage_human": "2.2 GB",
+  "context_length": null,
+  "base_model": "dccuchile/bert-base-spanish-wwm-cased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Optical Ground Stations for Space Communications:Systems …",
+      "url": "https://arxiv.org/pdf/2606.23711",
+      "snippet": "Jun 24, 2026 · Real OGS networks can violate the assumptions through regional cloud systems, maintenance clustering, pass …Read more"
+    },
+    {
+      "title": "SDA-Compatible Bidirectional Space-to-Ground Optical Link: …",
+      "url": "https://www.cailabs.com/blog/aerospace-and-defense/sda-compatible-bidirectional-space-to-ground-optical-link-operational-lessons-from-real-satellite-passes/",
+      "snippet": "Jul 29, 2026 · During real LEO satellite passes over Rennes, France, Cailabs’ Optical Ground Station (OGS) established …Read more"
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "schema": 2,
+  "id": "CUTE-SNAKE/deepseek-uncensored-lore-GGUF",
+  "slug": "cute-snake-deepseek-uncensored-lore-gguf",
+  "author": "CUTE-SNAKE",
+  "url": "https://huggingface.co/CUTE-SNAKE/deepseek-uncensored-lore-GGUF",
+  "created_at": "2026-11-23T15:48:34.000Z",
+  "updated_at": "2026-11-23T15:48:34.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "text-generation",
+    "storytelling",
+    "DeepSeek",
+    "en",
+    "base_model:luvGPT/deepseek-uncensored-lore",
+    "base_model:quantized:luvGPT/deepseek-uncensored-lore",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6910365696,
+  "parameters_human": "6.91B",
+  "storage_bytes": 61714460032,
+  "storage_human": "61.7 GB",
+  "context_length": 4096,
+  "base_model": "luvGPT/deepseek-uncensored-lore",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

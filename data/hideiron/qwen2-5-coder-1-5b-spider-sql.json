@@ -1,0 +1,72 @@
+{
+  "schema": 2,
+  "id": "HideIron/Qwen2.5-Coder-1.5B-Spider-SQL",
+  "slug": "hideiron-qwen2-5-coder-1-5b-spider-sql",
+  "author": "HideIron",
+  "url": "https://huggingface.co/HideIron/Qwen2.5-Coder-1.5B-Spider-SQL",
+  "created_at": "2026-11-23T18:31:37.000Z",
+  "updated_at": "2026-11-23T18:45:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "text-to-sql",
+    "sql",
+    "spider",
+    "sqlite",
+    "lora",
+    "conversational",
+    "en",
+    "dataset:xlangai/spider",
+    "base_model:Qwen/Qwen2.5-Coder-1.5B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-Coder-1.5B-Instruct",
+    "license:apache-2.0",
+    "model-index",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 3098888516,
+  "storage_human": "3.1 GB",
+  "context_length": null,
+  "base_model": "Qwen/Qwen2.5-Coder-1.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "Text-to-SQL",
+      "dataset": "Spider (dev)",
+      "metric": "Execution accuracy",
+      "value": 69.8
+    },
+    {
+      "task": "Text-to-SQL",
+      "dataset": "Spider (dev)",
+      "metric": "Exact-set match",
+      "value": 62.2
+    }
+  ],
+  "sources": []
+}

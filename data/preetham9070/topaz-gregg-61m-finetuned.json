@@ -1,0 +1,52 @@
+{
+  "schema": 2,
+  "id": "preetham9070/topaz-gregg-61m-finetuned",
+  "slug": "preetham9070-topaz-gregg-61m-finetuned",
+  "author": "preetham9070",
+  "url": "https://huggingface.co/preetham9070/topaz-gregg-61m-finetuned",
+  "created_at": "2026-11-23T18:49:09.000Z",
+  "updated_at": "2026-11-23T18:49:56.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-text",
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "gregg-shorthand",
+    "shorthand",
+    "ocr",
+    "handwriting-recognition",
+    "image-to-text",
+    "en",
+    "base_model:amongglue/topaz-gregg-shorthand-61m",
+    "base_model:finetune:amongglue/topaz-gregg-shorthand-61m",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 61236617,
+  "parameters_human": "61.2M",
+  "storage_bytes": 251238500,
+  "storage_human": "251 MB",
+  "context_length": null,
+  "base_model": "amongglue/topaz-gregg-shorthand-61m",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

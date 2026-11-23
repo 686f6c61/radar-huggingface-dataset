@@ -1,0 +1,46 @@
+{
+  "schema": 2,
+  "id": "dageor/bulgarian-mdeberta-sentiment",
+  "slug": "dageor-bulgarian-mdeberta-sentiment",
+  "author": "dageor",
+  "url": "https://huggingface.co/dageor/bulgarian-mdeberta-sentiment",
+  "created_at": "2026-11-23T17:01:29.000Z",
+  "updated_at": "2026-11-23T18:23:43.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "bg"
+  ],
+  "tags": [
+    "safetensors",
+    "deberta-v2",
+    "bg",
+    "dataset:DGurgurov/bulgarian_sa",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 278810882,
+  "parameters_human": "278.8M",
+  "storage_bytes": 1131307417,
+  "storage_human": "1.1 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

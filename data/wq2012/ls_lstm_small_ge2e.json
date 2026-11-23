@@ -5,7 +5,7 @@
   "author": "wq2012",
   "url": "https://huggingface.co/wq2012/ls_lstm_small_ge2e",
   "created_at": "2026-10-15T01:38:21.000Z",
-  "updated_at": "2026-11-21T04:31:50.000Z",
+  "updated_at": "2026-11-22T12:17:33.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "feature-extraction",
@@ -36,7 +36,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 221,
+  "downloads_30d": 249,
   "trending_score": 0,
   "parameters": 1710912,
   "parameters_human": "1.7M",

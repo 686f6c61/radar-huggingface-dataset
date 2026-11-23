@@ -1,0 +1,50 @@
+{
+  "schema": 2,
+  "id": "Tileward-Inc/Tileward-Qwen3.6-35B-A3B-TWX3",
+  "slug": "tileward-inc-tileward-qwen3-6-35b-a3b-twx3",
+  "author": "Tileward-Inc",
+  "url": "https://huggingface.co/Tileward-Inc/Tileward-Qwen3.6-35B-A3B-TWX3",
+  "created_at": "2026-11-16T10:47:09.000Z",
+  "updated_at": "2026-11-23T20:11:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "moe",
+    "text-generation",
+    "base_model:Qwen/Qwen3.6-35B-A3B",
+    "base_model:quantized:Qwen/Qwen3.6-35B-A3B",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "context_length": null,
+  "base_model": "Qwen/Qwen3.6-35B-A3B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "Text Generation",
+      "dataset": "MMLU (5-shot)",
+      "metric": "accuracy",
+      "value": 83.2
+    }
+  ],
+  "sources": []
+}

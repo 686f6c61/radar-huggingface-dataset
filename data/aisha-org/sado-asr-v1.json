@@ -1,0 +1,49 @@
+{
+  "schema": 2,
+  "id": "aisha-org/sado-asr-v1",
+  "slug": "aisha-org-sado-asr-v1",
+  "author": "aisha-org",
+  "url": "https://huggingface.co/aisha-org/sado-asr-v1",
+  "created_at": "2026-03-26T08:53:50.000Z",
+  "updated_at": "2026-11-23T14:23:10.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [
+    "uz"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "whisper",
+    "automatic-speech-recognition",
+    "uz",
+    "base_model:openai/whisper-large-v3",
+    "base_model:finetune:openai/whisper-large-v3",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 3,
+  "downloads_30d": 2,
+  "trending_score": 0,
+  "parameters": 1543490560,
+  "parameters_human": "1.54B",
+  "storage_bytes": 6174112072,
+  "storage_human": "6.2 GB",
+  "context_length": null,
+  "base_model": "openai/whisper-large-v3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

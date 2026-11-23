@@ -1,0 +1,49 @@
+{
+  "schema": 2,
+  "id": "Tileward-Inc/Tileward-Kimi-K3.1-Pro-TWX2.5",
+  "slug": "tileward-inc-tileward-kimi-k3-1-pro-twx2-5",
+  "author": "Tileward-Inc",
+  "url": "https://huggingface.co/Tileward-Inc/Tileward-Kimi-K3.1-Pro-TWX2.5",
+  "created_at": "2026-11-16T02:51:35.000Z",
+  "updated_at": "2026-11-23T20:11:52.000Z",
+  "license": "kimi-k3.1-pro",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "text-generation",
+    "base_model:moonshotai/Kimi-K3.1-Pro",
+    "base_model:quantized:moonshotai/Kimi-K3.1-Pro",
+    "license:other",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "context_length": null,
+  "base_model": "moonshotai/Kimi-K3.1-Pro",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "Text Generation",
+      "dataset": "MMLU (5-shot)",
+      "metric": "accuracy",
+      "value": 90.5
+    }
+  ],
+  "sources": []
+}

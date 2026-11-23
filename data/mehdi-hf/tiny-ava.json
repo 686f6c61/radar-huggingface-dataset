@@ -1,0 +1,49 @@
+{
+  "schema": 2,
+  "id": "mehdi-hf/tiny-ava",
+  "slug": "mehdi-hf-tiny-ava",
+  "author": "mehdi-hf",
+  "url": "https://huggingface.co/mehdi-hf/tiny-ava",
+  "created_at": "2026-11-23T05:26:32.000Z",
+  "updated_at": "2026-11-23T14:34:16.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "fa"
+  ],
+  "tags": [
+    "onnx",
+    "text-to-speech",
+    "persian",
+    "farsi",
+    "tiny-voca",
+    "cpu",
+    "fa",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 10,
+  "downloads_30d": 0,
+  "trending_score": 10,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 42660273,
+  "storage_human": "43 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

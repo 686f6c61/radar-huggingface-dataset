@@ -1,0 +1,51 @@
+{
+  "schema": 2,
+  "id": "kalcy0n/inkling-humanizer",
+  "slug": "kalcy0n-inkling-humanizer",
+  "author": "kalcy0n",
+  "url": "https://huggingface.co/kalcy0n/inkling-humanizer",
+  "created_at": "2026-11-23T17:26:50.000Z",
+  "updated_at": "2026-11-23T17:27:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "lora",
+    "text-editing",
+    "experimental",
+    "inkling2",
+    "text-generation",
+    "en",
+    "base_model:unsloth/Inkling-2-Mini-GGUF",
+    "base_model:adapter:unsloth/Inkling-2-Mini-GGUF",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1626624,
+  "parameters_human": "1.6M",
+  "storage_bytes": 13013792,
+  "storage_human": "13 MB",
+  "context_length": null,
+  "base_model": "unsloth/Inkling-2-Mini-GGUF",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

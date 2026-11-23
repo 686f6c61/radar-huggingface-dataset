@@ -1,0 +1,47 @@
+{
+  "schema": 2,
+  "id": "factlogic/weight-space-editor",
+  "slug": "factlogic-weight-space-editor",
+  "author": "factlogic",
+  "url": "https://huggingface.co/factlogic/weight-space-editor",
+  "created_at": "2026-11-23T15:59:32.000Z",
+  "updated_at": "2026-11-23T16:10:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "pytorch",
+    "model-editing",
+    "research",
+    "en",
+    "dataset:AmazonScience/massive",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 13005,
+  "parameters_human": "13005",
+  "storage_bytes": 517861,
+  "storage_human": "517861 B",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

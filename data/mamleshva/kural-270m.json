@@ -1,0 +1,83 @@
+{
+  "schema": 2,
+  "id": "mamleshva/kural-270m",
+  "slug": "mamleshva-kural-270m",
+  "author": "mamleshva",
+  "url": "https://huggingface.co/mamleshva/kural-270m",
+  "created_at": "2026-11-23T13:19:53.000Z",
+  "updated_at": "2026-11-23T15:10:19.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "ta",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma3_text",
+    "text-generation",
+    "tamil",
+    "gemma3",
+    "sft",
+    "instruction-tuning",
+    "small-language-model",
+    "conversational",
+    "ta",
+    "en",
+    "dataset:abhinand/tamil-alpaca-orca",
+    "dataset:CohereForAI/aya_dataset",
+    "dataset:RajeevanL/tamil_squad-2.0",
+    "dataset:yahma/alpaca-cleaned",
+    "base_model:google/gemma-3-270m-it",
+    "base_model:finetune:google/gemma-3-270m-it",
+    "license:gemma",
+    "model-index",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 268098176,
+  "parameters_human": "268.1M",
+  "storage_bytes": 1110492898,
+  "storage_human": "1.1 GB",
+  "context_length": null,
+  "base_model": "google/gemma-3-270m-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "Commonsense reasoning (zero-shot)",
+      "dataset": "IndicCOPA (Tamil, test)",
+      "metric": "acc_norm",
+      "value": 0.546
+    },
+    {
+      "task": "Sentiment (zero-shot)",
+      "dataset": "IndicSentiment (Tamil, test)",
+      "metric": "acc_norm",
+      "value": 0.495
+    },
+    {
+      "task": "Language modelling",
+      "dataset": "Tamil SQuAD 2.0 validation passages (200, held out)",
+      "metric": "bits per byte (lower is better)",
+      "value": 0.548
+    }
+  ],
+  "sources": []
+}

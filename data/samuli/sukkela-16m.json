@@ -1,0 +1,109 @@
+{
+  "schema": 2,
+  "id": "samuli/sukkela-16M",
+  "slug": "samuli-sukkela-16m",
+  "author": "samuli",
+  "url": "https://huggingface.co/samuli/sukkela-16M",
+  "created_at": "2026-11-22T17:21:02.000Z",
+  "updated_at": "2026-11-23T06:31:15.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "model2vec",
+  "languages": [
+    "fi",
+    "en"
+  ],
+  "tags": [
+    "model2vec",
+    "safetensors",
+    "embeddings",
+    "static-embeddings",
+    "sentence-transformers",
+    "feature-extraction",
+    "sentence-similarity",
+    "finnish",
+    "fi",
+    "en",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16384000,
+  "parameters_human": "16.4M",
+  "storage_bytes": 81920176,
+  "storage_human": "82 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "Belebele fi (question → passage)",
+      "metric": "nDCG@10",
+      "value": 0.869
+    },
+    {
+      "task": null,
+      "dataset": "Belebele en→fi (English question → Finnish passage)",
+      "metric": "nDCG@10",
+      "value": 0.781
+    },
+    {
+      "task": null,
+      "dataset": "Belebele fi→en (Finnish question → English passage)",
+      "metric": "nDCG@10",
+      "value": 0.791
+    },
+    {
+      "task": null,
+      "dataset": "WebFAQ fi",
+      "metric": "nDCG@10",
+      "value": 0.623
+    },
+    {
+      "task": null,
+      "dataset": "MIRACL fi (reduced corpus)",
+      "metric": "nDCG@10",
+      "value": 0.494
+    },
+    {
+      "task": null,
+      "dataset": "FSLDR fi (dev queries, 10k distractors)",
+      "metric": "nDCG@10",
+      "value": 0.389
+    },
+    {
+      "task": null,
+      "dataset": "sukkela-questions (natural)",
+      "metric": "nDCG@10",
+      "value": 0.775
+    },
+    {
+      "task": null,
+      "dataset": "sukkela-questions (keywords)",
+      "metric": "nDCG@10",
+      "value": 0.665
+    },
+    {
+      "task": null,
+      "dataset": "finna-keywords",
+      "metric": "nDCG@10",
+      "value": 0.196
+    }
+  ],
+  "sources": []
+}

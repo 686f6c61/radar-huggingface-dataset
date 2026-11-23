@@ -1,0 +1,96 @@
+{
+  "schema": 2,
+  "id": "Bosalt/TranslateGemma-4-12B-Pilot-LoRA",
+  "slug": "bosalt-translategemma-4-12b-pilot-lora",
+  "author": "Bosalt",
+  "url": "https://huggingface.co/Bosalt/TranslateGemma-4-12B-Pilot-LoRA",
+  "created_at": "2026-11-23T11:33:41.000Z",
+  "updated_at": "2026-11-23T11:33:50.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": "peft",
+  "languages": [
+    "en",
+    "ja",
+    "ko",
+    "id",
+    "ru",
+    "zh",
+    "de",
+    "es",
+    "fr"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "translation",
+    "translategemma",
+    "gemma4",
+    "lora",
+    "qlora",
+    "basalt",
+    "mlx",
+    "apple-silicon",
+    "en",
+    "ja",
+    "ko",
+    "id",
+    "ru",
+    "zh",
+    "de",
+    "es",
+    "fr",
+    "license:gemma",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 163405410,
+  "storage_human": "163 MB",
+  "context_length": null,
+  "base_model": "google/gemma-4-12b-it",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "Technical Markdown Translation",
+      "dataset": "Basalt README Technical Docs (ja, ko, id, ru)",
+      "metric": "chrF++",
+      "value": 80.51
+    },
+    {
+      "task": "Technical Markdown Translation",
+      "dataset": "Basalt README Technical Docs (ja, ko, id, ru)",
+      "metric": "Technical Fidelity (%)",
+      "value": 98.4
+    },
+    {
+      "task": "Technical Markdown Translation",
+      "dataset": "Basalt README Technical Docs (ja, ko, id, ru)",
+      "metric": "COMET (proxy)",
+      "value": 0.8498
+    },
+    {
+      "task": "Technical Markdown Translation",
+      "dataset": "Basalt README Technical Docs (ja, ko, id, ru)",
+      "metric": "MetricX-24 (proxy, lower is better)",
+      "value": 3.75
+    }
+  ],
+  "sources": []
+}

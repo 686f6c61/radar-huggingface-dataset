@@ -1,0 +1,68 @@
+{
+  "schema": 2,
+  "id": "hogwarts-lab/hogwarts-r2-v1",
+  "slug": "hogwarts-lab-hogwarts-r2-v1",
+  "author": "hogwarts-lab",
+  "url": "https://huggingface.co/hogwarts-lab/hogwarts-r2-v1",
+  "created_at": "2026-11-23T20:03:57.000Z",
+  "updated_at": "2026-11-23T20:05:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gemma4",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 31273088876,
+  "parameters_human": "31.27B",
+  "storage_bytes": 62583982498,
+  "storage_human": "62.6 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Harry Potter | Official home of Harry Potter, Hogwarts Sorting, and the ...",
+      "url": "https://www.harrypotter.com/",
+      "snippet": "The Great Hogwarts Baking Quiz Pastry, pie and cake enthusiasts, it’s time to get your aprons on. We’ve whipped together trivia …"
+    },
+    {
+      "title": "Hogwarts - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Hogwarts",
+      "snippet": "Hogwarts School of Witchcraft and Wizardry (/ ˈhɒɡwɔːrts /) is a fictional boarding school of magic in the Harry Potter series by J. K. …"
+    },
+    {
+      "title": "Hogwarts School of Witchcraft and Wizardry - Harry Potter Wiki",
+      "url": "https://harrypotter.fandom.com/wiki/Hogwarts_School_of_Witchcraft_and_Wizardry",
+      "snippet": "Hogwarts School of Witchcraft and Wizardry, often shortened to Hogwarts, was the British wizarding school located in the Scottish …"
+    },
+    {
+      "title": "Official Hogwarts House Sorting Quiz - Wizarding World",
+      "url": "https://www.harrypotter.com/news/discover-your-hogwarts-house-on-wizarding-world",
+      "snippet": "Get sorted into your official Hogwarts House by the Sorting Hat. Are you a Gryffindor, Hufflepuff, Slytherin, or Ravenclaw? Take the …"
+    },
+    {
+      "title": "Hogwarts Legacy 2 – tout ce que l’on sait à ce jour (date de sortie ...",
+      "url": "https://www.journaldugeek.com/dossier/hogwarts-legacy-2-tout-ce-que-lon-sait-a-ce-jour-date-de-sortie-prix-histoire-contexte-gameplay/",
+      "snippet": "Oct 9, 2026 · Découvrez dès maintenant notre dossier complet sur Hogwarts Legacy 2, pour tout savoir sur le prochain jeu de la …"
+    }
+  ]
+}

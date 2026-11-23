@@ -1,0 +1,49 @@
+{
+  "schema": 2,
+  "id": "Tileward-Inc/Tileward-Kimi-K3-TWX3",
+  "slug": "tileward-inc-tileward-kimi-k3-twx3",
+  "author": "Tileward-Inc",
+  "url": "https://huggingface.co/Tileward-Inc/Tileward-Kimi-K3-TWX3",
+  "created_at": "2026-11-16T10:47:07.000Z",
+  "updated_at": "2026-11-23T20:11:56.000Z",
+  "license": "kimi-k3",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "text-generation",
+    "base_model:moonshotai/Kimi-K3",
+    "base_model:quantized:moonshotai/Kimi-K3",
+    "license:other",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "context_length": null,
+  "base_model": "moonshotai/Kimi-K3",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "Text Generation",
+      "dataset": "MMLU (5-shot)",
+      "metric": "accuracy",
+      "value": 90.9
+    }
+  ],
+  "sources": []
+}

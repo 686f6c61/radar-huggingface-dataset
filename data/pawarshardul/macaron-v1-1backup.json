@@ -1,0 +1,80 @@
+{
+  "schema": 2,
+  "id": "pawarshardul/Macaron-V1.1backup",
+  "slug": "pawarshardul-macaron-v1-1backup",
+  "author": "pawarshardul",
+  "url": "https://huggingface.co/pawarshardul/Macaron-V1.1backup",
+  "created_at": "2026-11-23T13:00:46.000Z",
+  "updated_at": "2026-11-23T13:00:46.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "glm_moe_dsa",
+    "macaron",
+    "macaron-v1.1",
+    "glm-5.3",
+    "mixture-of-lora",
+    "personal-agent",
+    "tool-use",
+    "coding-agent",
+    "generative-ui",
+    "ui4a",
+    "eval-results",
+    "text-generation",
+    "conversational",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 753329940480,
+  "parameters_human": "753.33B",
+  "storage_bytes": 1567786223992,
+  "storage_human": "1567.8 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "Chat",
+      "dataset": "ChatBench v2",
+      "metric": "Score",
+      "value": 66.7
+    },
+    {
+      "task": "Agent",
+      "dataset": "AutomationBench",
+      "metric": "Score",
+      "value": 53.7
+    },
+    {
+      "task": "Coding",
+      "dataset": "SWE-Marathon",
+      "metric": "pass@2 (%)",
+      "value": 50
+    },
+    {
+      "task": "Generative UI",
+      "dataset": "UI4ABench v2",
+      "metric": "Score",
+      "value": 83.2
+    }
+  ],
+  "sources": []
+}

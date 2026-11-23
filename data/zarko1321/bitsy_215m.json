@@ -1,0 +1,41 @@
+{
+  "schema": 2,
+  "id": "zarko1321/bitsy_215M",
+  "slug": "zarko1321-bitsy_215m",
+  "author": "zarko1321",
+  "url": "https://huggingface.co/zarko1321/bitsy_215M",
+  "created_at": "2026-11-23T20:05:22.000Z",
+  "updated_at": "2026-11-23T20:10:11.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "llama",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 215000064,
+  "parameters_human": "215.0M",
+  "storage_bytes": 430018744,
+  "storage_human": "430 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,41 @@
+{
+  "schema": 2,
+  "id": "dileepkumar5175/ats_scorer",
+  "slug": "dileepkumar5175-ats_scorer",
+  "author": "dileepkumar5175",
+  "url": "https://huggingface.co/dileepkumar5175/ats_scorer",
+  "created_at": "2026-11-23T15:50:16.000Z",
+  "updated_at": "2026-11-23T15:58:10.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 437967672,
+  "storage_human": "438 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

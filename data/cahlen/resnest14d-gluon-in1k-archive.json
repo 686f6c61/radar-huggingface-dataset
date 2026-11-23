@@ -1,0 +1,40 @@
+{
+  "schema": 2,
+  "id": "cahlen/resnest14d-gluon-in1k-archive",
+  "slug": "cahlen-resnest14d-gluon-in1k-archive",
+  "author": "cahlen",
+  "url": "https://huggingface.co/cahlen/resnest14d-gluon-in1k-archive",
+  "created_at": "2026-11-23T15:21:50.000Z",
+  "updated_at": "2026-11-23T15:22:00.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 10634024,
+  "parameters_human": "10.6M",
+  "storage_bytes": 42550128,
+  "storage_human": "43 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

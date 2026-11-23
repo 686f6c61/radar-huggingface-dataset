@@ -1,0 +1,43 @@
+{
+  "schema": 2,
+  "id": "manhhoangvipbao/lor-model",
+  "slug": "manhhoangvipbao-lor-model",
+  "author": "manhhoangvipbao",
+  "url": "https://huggingface.co/manhhoangvipbao/lor-model",
+  "created_at": "2026-11-23T14:51:27.000Z",
+  "updated_at": "2026-11-23T15:01:57.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1881825088,
+  "parameters_human": "1.88B",
+  "storage_bytes": 1285207680,
+  "storage_human": "1.3 GB",
+  "context_length": 262144,
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,50 @@
+{
+  "schema": 2,
+  "id": "ManuelR12/beto-sarcasmo-bs32",
+  "slug": "manuelr12-beto-sarcasmo-bs32",
+  "author": "ManuelR12",
+  "url": "https://huggingface.co/ManuelR12/beto-sarcasmo-bs32",
+  "created_at": "2026-11-23T17:27:17.000Z",
+  "updated_at": "2026-11-23T17:35:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "es"
+  ],
+  "tags": [
+    "safetensors",
+    "bert",
+    "sarcasmo",
+    "spanish",
+    "text-classification",
+    "es",
+    "base_model:dccuchile/bert-base-spanish-wwm-cased",
+    "base_model:finetune:dccuchile/bert-base-spanish-wwm-cased",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 109852418,
+  "parameters_human": "109.9M",
+  "storage_bytes": 439433208,
+  "storage_human": "439 MB",
+  "context_length": null,
+  "base_model": "dccuchile/bert-base-spanish-wwm-cased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

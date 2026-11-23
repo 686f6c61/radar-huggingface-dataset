@@ -1,0 +1,47 @@
+{
+  "schema": 2,
+  "id": "factlogic/weight-response-predictor",
+  "slug": "factlogic-weight-response-predictor",
+  "author": "factlogic",
+  "url": "https://huggingface.co/factlogic/weight-response-predictor",
+  "created_at": "2026-11-23T15:59:47.000Z",
+  "updated_at": "2026-11-23T16:10:54.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "pytorch",
+    "model-editing",
+    "research",
+    "en",
+    "dataset:AmazonScience/massive",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5875,
+  "parameters_human": "5875",
+  "storage_bytes": 488325,
+  "storage_human": "488325 B",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

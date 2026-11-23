@@ -1,0 +1,52 @@
+{
+  "schema": 2,
+  "id": "JIN0593/CodeRed-Phi-4-mini-health-GGUF",
+  "slug": "jin0593-codered-phi-4-mini-health-gguf",
+  "author": "JIN0593",
+  "url": "https://huggingface.co/JIN0593/CodeRed-Phi-4-mini-health-GGUF",
+  "created_at": "2026-11-23T13:48:20.000Z",
+  "updated_at": "2026-11-23T13:55:13.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "phi-4-mini",
+    "text-generation",
+    "en",
+    "base_model:microsoft/Phi-4-mini-instruct",
+    "base_model:quantized:microsoft/Phi-4-mini-instruct",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3836021856,
+  "parameters_human": "3.84B",
+  "storage_bytes": 2493840320,
+  "storage_human": "2.5 GB",
+  "context_length": 131072,
+  "base_model": "microsoft/Phi-4-mini-instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

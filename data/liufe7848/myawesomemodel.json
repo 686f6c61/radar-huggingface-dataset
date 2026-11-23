@@ -21,7 +21,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 3,
+  "downloads_30d": 0,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
@@ -35,7 +35,7 @@
   "disabled": false,
   "removed": true,
   "removed_at": "2026-11-01T05:59:26.450Z",
-  "removal_pattern": "account_gone",
+  "removal_pattern": "reupload",
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],

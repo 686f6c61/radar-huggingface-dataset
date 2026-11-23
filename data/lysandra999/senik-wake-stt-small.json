@@ -1,0 +1,51 @@
+{
+  "schema": 2,
+  "id": "Lysandra999/Senik-Wake-STT-Small",
+  "slug": "lysandra999-senik-wake-stt-small",
+  "author": "Lysandra999",
+  "url": "https://huggingface.co/Lysandra999/Senik-Wake-STT-Small",
+  "created_at": "2026-11-22T04:31:09.000Z",
+  "updated_at": "2026-11-23T15:51:48.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "whisper",
+    "senik",
+    "senik-family",
+    "automatic-speech-recognition",
+    "wake-word",
+    "speech-to-text",
+    "edge-ai",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 65,
+  "trending_score": 0,
+  "parameters": 241734912,
+  "parameters_human": "241.7M",
+  "storage_bytes": 966995080,
+  "storage_human": "967 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

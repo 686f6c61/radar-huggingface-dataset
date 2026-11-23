@@ -1,0 +1,81 @@
+{
+  "schema": 2,
+  "id": "herald-dictation/herald-cleanup-1.7B-GGUF",
+  "slug": "herald-dictation-herald-cleanup-1-7b-gguf",
+  "author": "herald-dictation",
+  "url": "https://huggingface.co/herald-dictation/herald-cleanup-1.7B-GGUF",
+  "created_at": "2026-11-23T12:57:59.000Z",
+  "updated_at": "2026-11-23T13:05:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "llama.cpp",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "dictation",
+    "herald",
+    "text-generation",
+    "en",
+    "dataset:edinburghcstr/ami",
+    "dataset:openslr/librispeech_asr",
+    "dataset:facebook/voxpopuli",
+    "base_model:Qwen/Qwen3-1.7B",
+    "base_model:finetune:Qwen/Qwen3-1.7B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1720574976,
+  "parameters_human": "1.72B",
+  "storage_bytes": 1834426016,
+  "storage_human": "1.8 GB",
+  "context_length": 40960,
+  "base_model": "Qwen/Qwen3-1.7B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "herald - English-French Dictionary WordReference.com",
+      "url": "https://www.wordreference.com/enfr/herald",
+      "snippet": "herald - traduction anglais-français. Forums pour discuter de herald, voir ses formes composées, des exemples et poser vos …Read more"
+    },
+    {
+      "title": "Herald - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Herald",
+      "snippet": "Heralds were originally messengers sent by monarchs or noblemen to convey messages or proclamations —in this sense being the …Read more"
+    },
+    {
+      "title": "Scotland News, Politics, Sport, Events and Comment - The Herald",
+      "url": "https://www.heraldscotland.com/",
+      "snippet": "Scottish news across Glasgow, Edinburgh, Aberdeen, Dundee, Inverness, Stirling and Perth plus, insight, analysis and opinion for …Read more"
+    },
+    {
+      "title": "Cabinet d'avocats d'affaires à Paris - Herald Avocats",
+      "url": "https://www.herald-avocats.com/",
+      "snippet": "Nos avocats délivrent des services personnalisés et à forte valeur ajoutée tant en conseil que pour la résolution des litiges."
+    },
+    {
+      "title": "Herald - Cabinet d’avocats d’affaires",
+      "url": "https://www.herald-avocats.com/en/",
+      "snippet": "Herald, anciennement Granrut, est un cabinet d'avocats à Paris. Il accompagne les entreprises en conseil et en contentieux dans …Read more"
+    }
+  ]
+}

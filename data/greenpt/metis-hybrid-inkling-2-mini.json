@@ -1,0 +1,72 @@
+{
+  "schema": 2,
+  "id": "GreenPT/metis-hybrid-inkling-2-mini",
+  "slug": "greenpt-metis-hybrid-inkling-2-mini",
+  "author": "GreenPT",
+  "url": "https://huggingface.co/GreenPT/metis-hybrid-inkling-2-mini",
+  "created_at": "2026-11-23T17:24:35.000Z",
+  "updated_at": "2026-11-23T17:24:39.000Z",
+  "license": "mixed-see-card",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "decision-model",
+    "calibration",
+    "jev-compatible",
+    "metis-hybrid",
+    "lora",
+    "pointer-head",
+    "inkling",
+    "base_model:thinkingmachines/Inkling-2-Mini",
+    "base_model:adapter:thinkingmachines/Inkling-2-Mini",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 61315146,
+  "storage_human": "61 MB",
+  "context_length": null,
+  "base_model": "thinkingmachines/Inkling-2-Mini",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GreenPT: privacy-first AI on renewable energy",
+      "url": "https://greenpt.com/",
+      "snippet": "Chat, search, documents and API on European infrastructure powered by renewable energy. Your conversations stay out of model …"
+    },
+    {
+      "title": "GreenPT: privacy-first AI with measured energy and carbon",
+      "url": "https://greenpt.com/us",
+      "snippet": "Chat, search, documents and API with energy and carbon insights. Your conversations stay out of model training. Explore GreenPT …"
+    },
+    {
+      "title": "GreenPT.AI - Sustainable and Privacy Friendly AI",
+      "url": "https://presentation.greenpt.eu/",
+      "snippet": "GreenPT is a sustainable AI platform powered by renewable energy. Privacy-first, EU-hosted, with full transparency on …"
+    },
+    {
+      "title": "GreenPT Chat: private AI for documents, ideas and work",
+      "url": "https://greenpt.com/chat",
+      "snippet": "Ask questions, analyse files and turn ideas into editable documents with GreenPT Chat. Reuse Skills, search the web and …"
+    }
+  ]
+}

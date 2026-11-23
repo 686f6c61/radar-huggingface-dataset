@@ -1,0 +1,51 @@
+{
+  "schema": 2,
+  "id": "Emkay-Voice/alvenir-wav2vec2-base-da-onnx",
+  "slug": "emkay-voice-alvenir-wav2vec2-base-da-onnx",
+  "author": "Emkay-Voice",
+  "url": "https://huggingface.co/Emkay-Voice/alvenir-wav2vec2-base-da-onnx",
+  "created_at": "2026-11-23T18:16:50.000Z",
+  "updated_at": "2026-11-23T18:16:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers.js",
+  "languages": [
+    "da"
+  ],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "wav2vec2",
+    "automatic-speech-recognition",
+    "emkay",
+    "openvoiceos",
+    "da",
+    "base_model:Alvenir/wav2vec2-base-da-ft-nst",
+    "base_model:quantized:Alvenir/wav2vec2-base-da-ft-nst",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 473061941,
+  "storage_human": "473 MB",
+  "context_length": null,
+  "base_model": "Alvenir/wav2vec2-base-da-ft-nst",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

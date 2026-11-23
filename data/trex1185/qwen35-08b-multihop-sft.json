@@ -1,0 +1,41 @@
+{
+  "schema": 2,
+  "id": "trex1185/qwen35-08b-multihop-sft",
+  "slug": "trex1185-qwen35-08b-multihop-sft",
+  "author": "trex1185",
+  "url": "https://huggingface.co/trex1185/qwen35-08b-multihop-sft",
+  "created_at": "2026-11-23T13:09:51.000Z",
+  "updated_at": "2026-11-23T13:10:11.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 852985920,
+  "parameters_human": "853.0M",
+  "storage_bytes": 1726019395,
+  "storage_human": "1.7 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

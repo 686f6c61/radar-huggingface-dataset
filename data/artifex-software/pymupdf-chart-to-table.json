@@ -1,0 +1,64 @@
+{
+  "schema": 2,
+  "id": "artifex-software/pymupdf-chart-to-table",
+  "slug": "artifex-software-pymupdf-chart-to-table",
+  "author": "artifex-software",
+  "url": "https://huggingface.co/artifex-software/pymupdf-chart-to-table",
+  "created_at": "2026-11-19T07:02:25.000Z",
+  "updated_at": "2026-11-23T14:47:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "ko"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "paddleocr_vl",
+    "image-text-to-text",
+    "chart-to-table",
+    "pymupdf",
+    "conversational",
+    "en",
+    "ko",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 18,
+  "trending_score": 0,
+  "parameters": 905601648,
+  "parameters_human": "905.6M",
+  "storage_bytes": 1822469396,
+  "storage_human": "1.8 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Motorola 68HC11 Manuals | ManualsLib",
+      "url": "https://www.manualslib.com/products/Motorola-68hc11-15375920.html",
+      "snippet": "Motorola 68HC11 Technical Reference (67 pages) Brand: Motorola | Category: Microcontrollers | Size: 1 MB Table of Contents Table …Read more"
+    },
+    {
+      "title": "68HC11 Programmer’s Reference Manual - UNAM",
+      "url": "https://biorobotics.fi-p.unam.mx/wp-content/uploads/Courses/arquitectura_de_computadoras/material_de_apoyo/68HC11.pdf",
+      "snippet": "The Motorola M68HC11 REFERENCE MANUAL provides a detailed discussion of the instruction set of the 68HC11. Table 10-1 in …Read more"
+    }
+  ]
+}

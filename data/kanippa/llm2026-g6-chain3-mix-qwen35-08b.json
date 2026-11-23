@@ -1,0 +1,51 @@
+{
+  "schema": 2,
+  "id": "kanippa/llm2026-g6-chain3-mix-qwen35-08b",
+  "slug": "kanippa-llm2026-g6-chain3-mix-qwen35-08b",
+  "author": "kanippa",
+  "url": "https://huggingface.co/kanippa/llm2026-g6-chain3-mix-qwen35-08b",
+  "created_at": "2026-11-23T13:37:26.000Z",
+  "updated_at": "2026-11-23T13:38:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "ja"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "conversational",
+    "ja",
+    "base_model:kanippa/llm2026-g6-ctrl-legacy-qwen35-08b",
+    "base_model:finetune:kanippa/llm2026-g6-ctrl-legacy-qwen35-08b",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 852985920,
+  "parameters_human": "853.0M",
+  "storage_bytes": 1726018555,
+  "storage_human": "1.7 GB",
+  "context_length": null,
+  "base_model": "kanippa/llm2026-g6-ctrl-legacy-qwen35-08b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

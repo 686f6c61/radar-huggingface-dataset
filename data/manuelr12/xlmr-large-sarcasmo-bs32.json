@@ -1,0 +1,50 @@
+{
+  "schema": 2,
+  "id": "ManuelR12/xlmr-large-sarcasmo-bs32",
+  "slug": "manuelr12-xlmr-large-sarcasmo-bs32",
+  "author": "ManuelR12",
+  "url": "https://huggingface.co/ManuelR12/xlmr-large-sarcasmo-bs32",
+  "created_at": "2026-11-23T17:27:56.000Z",
+  "updated_at": "2026-11-23T17:35:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "es"
+  ],
+  "tags": [
+    "safetensors",
+    "xlm-roberta",
+    "sarcasmo",
+    "spanish",
+    "text-classification",
+    "es",
+    "base_model:FacebookAI/xlm-roberta-large",
+    "base_model:finetune:FacebookAI/xlm-roberta-large",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 559892482,
+  "parameters_human": "559.9M",
+  "storage_bytes": 2256716856,
+  "storage_human": "2.3 GB",
+  "context_length": null,
+  "base_model": "FacebookAI/xlm-roberta-large",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

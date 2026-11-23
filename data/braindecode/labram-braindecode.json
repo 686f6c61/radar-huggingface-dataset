@@ -1,0 +1,84 @@
+{
+  "schema": 2,
+  "id": "braindecode/Labram-Braindecode",
+  "slug": "braindecode-labram-braindecode",
+  "author": "braindecode",
+  "url": "https://huggingface.co/braindecode/Labram-Braindecode",
+  "created_at": "2025-10-28T13:58:40.000Z",
+  "updated_at": "2026-11-23T16:22:03.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "braindecode",
+  "languages": [],
+  "tags": [
+    "braindecode",
+    "dataset:BCIC-IV-1",
+    "dataset:Emobrain",
+    "dataset:WAY-EEG-GAL",
+    "dataset:Inria-BCI-Challenge",
+    "dataset:on004362",
+    "dataset:Trujillo2020",
+    "dataset:Trujillo2017",
+    "dataset:SEED",
+    "dataset:SEED-IV",
+    "dataset:SEED-GER",
+    "dataset:SEED-FRA",
+    "dataset:nm000385",
+    "dataset:SPIS-Resting-State",
+    "dataset:nm000216",
+    "dataset:TUAR",
+    "dataset:TUEP",
+    "dataset:TUSZ",
+    "dataset:TUSL",
+    "arxiv:2405.18765",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23462317,
+  "storage_human": "23 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Braindecode — Decode raw EEG, ECoG and MEG with deep learning",
+      "url": "https://braindecode.org/stable/index.html",
+      "snippet": "Braindecode is an open-source PyTorch toolbox for decoding raw EEG, ECoG and MEG with deep learning. Datasets, …Read more"
+    },
+    {
+      "title": "Braindecode API Reference — Braindecode 2.0.0 documentation",
+      "url": "https://braindecode.org/stable/api.html",
+      "snippet": "This module contains the building blocks for Braindecode models. It contains activation functions, convolutional layers, attention …Read more"
+    },
+    {
+      "title": "Braindecode - GitHub",
+      "url": "https://github.com/braindecode",
+      "snippet": "Braindecode is an open-source Python toolbox for decoding raw electrophysiological brain data with deep learning models. - …Read more"
+    },
+    {
+      "title": "Braindecode - Hugging Face",
+      "url": "https://huggingface.co/braindecode",
+      "snippet": "Braindecode is an open-source Python toolbox for decoding raw electrophysiological brain data with deep learning models. It …Read more"
+    },
+    {
+      "title": "braindecode · PyPI",
+      "url": "https://pypi.org/project/braindecode/",
+      "snippet": "Jul 2, 2017 · Additionally, we highly encourage you to cite the article that originally introduced the Braindecode library and has served …Read more"
+    }
+  ]
+}

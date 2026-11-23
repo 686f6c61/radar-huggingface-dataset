@@ -19,8 +19,8 @@
     "affine-h1-merged-salvage",
     "text-generation",
     "conversational",
-    "base_model:kevin954/Affine-5dfqbbh8ev-sft",
-    "base_model:finetune:kevin954/Affine-5dfqbbh8ev-sft",
+    "base_model:kevin957/Affine-5dfqbbh8ev-sft",
+    "base_model:finetune:kevin957/Affine-5dfqbbh8ev-sft",
     "endpoints_compatible",
     "region:us"
   ],

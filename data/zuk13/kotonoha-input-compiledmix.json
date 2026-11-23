@@ -1,0 +1,52 @@
+{
+  "schema": 2,
+  "id": "Zuk13/kotonoha-input-compiledmix",
+  "slug": "zuk13-kotonoha-input-compiledmix",
+  "author": "Zuk13",
+  "url": "https://huggingface.co/Zuk13/kotonoha-input-compiledmix",
+  "created_at": "2026-11-23T13:26:52.000Z",
+  "updated_at": "2026-11-23T13:27:26.000Z",
+  "license": "mixed-component-licenses",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "ja"
+  ],
+  "tags": [
+    "onnx",
+    "kana-kanji-conversion",
+    "japanese-ime",
+    "ja",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 287218449,
+  "storage_human": "287 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kotonoha Yukino 琴乃葉 雪乃 - SeaArt AI Model",
+      "url": "http://go/v1/Ac089tV0JoiUawQ_2AEE_F6LTxeAOgHDFBWNLibxgjZnhmH0jxyFhWCYWPlpSGBPEnLf-Td7UGmKZO6QnXZsNohfdWvJjGOvKOlotqPd1ekD8Eg6JGl6-nuD0TaNWGaXRAwYV_2BzPP_K0NRovEfuC9mLwRRU9k_0H8AQbh-er_snGcFsPPuVS5LybzJlToFZtP8FWyu8NwvNKkLd5APdkWIZpH6QkwYuDutD5PVqE1fffWGiQMB",
+      "snippet": "Explore Kotonoha Yukino 琴乃葉 雪乃 model on SeaArt AI. Transform your idea into professional-quality AI-generated images and videos with our free, easy-to-use platform."
+    }
+  ]
+}

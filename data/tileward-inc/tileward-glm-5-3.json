@@ -1,0 +1,49 @@
+{
+  "schema": 2,
+  "id": "Tileward-Inc/Tileward-GLM-5.3",
+  "slug": "tileward-inc-tileward-glm-5-3",
+  "author": "Tileward-Inc",
+  "url": "https://huggingface.co/Tileward-Inc/Tileward-GLM-5.3",
+  "created_at": "2026-11-16T02:51:36.000Z",
+  "updated_at": "2026-11-23T20:11:53.000Z",
+  "license": "glm-5.3",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "text-generation",
+    "base_model:zai-org/GLM-5.3",
+    "base_model:quantized:zai-org/GLM-5.3",
+    "license:other",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "context_length": null,
+  "base_model": "zai-org/GLM-5.3",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "Text Generation",
+      "dataset": "MMLU (5-shot)",
+      "metric": "accuracy",
+      "value": 86.2
+    }
+  ],
+  "sources": []
+}

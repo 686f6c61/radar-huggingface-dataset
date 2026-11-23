@@ -1,0 +1,42 @@
+{
+  "schema": 2,
+  "id": "rharini938/conceptoon-curio-t5",
+  "slug": "rharini938-conceptoon-curio-t5",
+  "author": "rharini938",
+  "url": "https://huggingface.co/rharini938/conceptoon-curio-t5",
+  "created_at": "2026-11-23T17:05:26.000Z",
+  "updated_at": "2026-11-23T17:07:34.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "t5",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 76961152,
+  "parameters_human": "77.0M",
+  "storage_bytes": 307867048,
+  "storage_human": "308 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}
