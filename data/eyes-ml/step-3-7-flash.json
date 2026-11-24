@@ -1,0 +1,53 @@
+{
+  "schema": 2,
+  "id": "eyes-ml/Step-3.7-Flash",
+  "slug": "eyes-ml-step-3-7-flash",
+  "author": "eyes-ml",
+  "url": "https://huggingface.co/eyes-ml/Step-3.7-Flash",
+  "created_at": "2026-11-24T20:50:59.000Z",
+  "updated_at": "2026-11-24T20:50:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "step3p7",
+    "image-text-to-text",
+    "vision-language",
+    "multimodal",
+    "moe",
+    "conversational",
+    "custom_code",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 201365316160,
+  "parameters_human": "201.37B",
+  "storage_bytes": 402731155575,
+  "storage_human": "402.7 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

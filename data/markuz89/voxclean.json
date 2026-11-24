@@ -1,0 +1,50 @@
+{
+  "schema": 2,
+  "id": "markuz89/voxclean",
+  "slug": "markuz89-voxclean",
+  "author": "markuz89",
+  "url": "https://huggingface.co/markuz89/voxclean",
+  "created_at": "2026-11-24T12:44:23.000Z",
+  "updated_at": "2026-11-24T12:45:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "it"
+  ],
+  "tags": [
+    "gguf",
+    "text-cleanup",
+    "dictation",
+    "it",
+    "base_model:Qwen/Qwen3-0.6B",
+    "base_model:quantized:Qwen/Qwen3-0.6B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 596049920,
+  "parameters_human": "596.0M",
+  "storage_bytes": 1504113280,
+  "storage_human": "1.5 GB",
+  "context_length": 40960,
+  "base_model": "Qwen/Qwen3-0.6B, Qwen/Qwen3-1.7B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

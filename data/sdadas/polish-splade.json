@@ -1,0 +1,53 @@
+{
+  "schema": 2,
+  "id": "sdadas/polish-splade",
+  "slug": "sdadas-polish-splade",
+  "author": "sdadas",
+  "url": "https://huggingface.co/sdadas/polish-splade",
+  "created_at": "2023-10-18T19:13:45.000Z",
+  "updated_at": "2026-11-24T12:59:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "fill-mask",
+  "library": "transformers",
+  "languages": [
+    "pl"
+  ],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "safetensors",
+    "roberta",
+    "fill-mask",
+    "information-retrieval",
+    "pl",
+    "arxiv:2205.04733",
+    "arxiv:2402.13350",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "deploy:azure",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 5405,
+  "trending_score": 0,
+  "parameters": 81967699,
+  "parameters_human": "82.0M",
+  "storage_bytes": 655794781,
+  "storage_human": "656 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

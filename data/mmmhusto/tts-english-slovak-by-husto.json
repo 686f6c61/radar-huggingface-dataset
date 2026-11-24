@@ -1,0 +1,50 @@
+{
+  "schema": 2,
+  "id": "mmmhusto/TTS-English-Slovak-by-husto",
+  "slug": "mmmhusto-tts-english-slovak-by-husto",
+  "author": "mmmhusto",
+  "url": "https://huggingface.co/mmmhusto/TTS-English-Slovak-by-husto",
+  "created_at": "2026-11-24T16:09:01.000Z",
+  "updated_at": "2026-11-24T16:26:02.000Z",
+  "license": "cc-by-sa-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "en",
+    "sk"
+  ],
+  "tags": [
+    "onnx",
+    "safetensors",
+    "text-to-speech",
+    "bilingual",
+    "en",
+    "sk",
+    "license:cc-by-sa-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 41828490,
+  "parameters_human": "41.8M",
+  "storage_bytes": 1236787730,
+  "storage_human": "1.2 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

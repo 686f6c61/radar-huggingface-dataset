@@ -1,0 +1,362 @@
+{
+  "schema": 2,
+  "id": "eduard76/bge-base-financial-matryoshka-3",
+  "slug": "eduard76-bge-base-financial-matryoshka-3",
+  "author": "eduard76",
+  "url": "https://huggingface.co/eduard76/bge-base-financial-matryoshka-3",
+  "created_at": "2026-11-24T17:23:43.000Z",
+  "updated_at": "2026-11-24T17:24:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "bert",
+    "sentence-similarity",
+    "feature-extraction",
+    "dense",
+    "generated_from_trainer",
+    "dataset_size:6300",
+    "loss:MatryoshkaLoss",
+    "loss:MultipleNegativesRankingLoss",
+    "en",
+    "arxiv:1908.10084",
+    "arxiv:2205.13147",
+    "arxiv:1807.03748",
+    "base_model:BAAI/bge-base-en-v1.5",
+    "base_model:finetune:BAAI/bge-base-en-v1.5",
+    "license:apache-2.0",
+    "model-index",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 109482240,
+  "parameters_human": "109.5M",
+  "storage_bytes": 437951328,
+  "storage_human": "438 MB",
+  "context_length": null,
+  "base_model": "BAAI/bge-base-en-v1.5",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 768",
+      "metric": "Cosine Accuracy@1",
+      "value": 0.7214285714285714
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 768",
+      "metric": "Cosine Accuracy@3",
+      "value": 0.85
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 768",
+      "metric": "Cosine Accuracy@5",
+      "value": 0.8742857142857143
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 768",
+      "metric": "Cosine Accuracy@10",
+      "value": 0.9228571428571428
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 768",
+      "metric": "Cosine Precision@1",
+      "value": 0.7214285714285714
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 768",
+      "metric": "Cosine Precision@3",
+      "value": 0.2833333333333333
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 768",
+      "metric": "Cosine Precision@5",
+      "value": 0.17485714285714285
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 768",
+      "metric": "Cosine Precision@10",
+      "value": 0.09228571428571428
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 768",
+      "metric": "Cosine Recall@1",
+      "value": 0.7214285714285714
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 768",
+      "metric": "Cosine Recall@3",
+      "value": 0.85
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 768",
+      "metric": "Cosine Recall@5",
+      "value": 0.8742857142857143
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 768",
+      "metric": "Cosine Recall@10",
+      "value": 0.9228571428571428
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 768",
+      "metric": "Cosine Ndcg@10",
+      "value": 0.8225641046429993
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 768",
+      "metric": "Cosine Mrr@10",
+      "value": 0.7904659863945576
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 768",
+      "metric": "Cosine Map@100",
+      "value": 0.7935371534420144
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 512",
+      "metric": "Cosine Accuracy@1",
+      "value": 0.7257142857142858
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 512",
+      "metric": "Cosine Accuracy@3",
+      "value": 0.8442857142857143
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 512",
+      "metric": "Cosine Accuracy@5",
+      "value": 0.8685714285714285
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 512",
+      "metric": "Cosine Accuracy@10",
+      "value": 0.9214285714285714
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 512",
+      "metric": "Cosine Precision@1",
+      "value": 0.7257142857142858
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 512",
+      "metric": "Cosine Precision@3",
+      "value": 0.2814285714285714
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 512",
+      "metric": "Cosine Precision@5",
+      "value": 0.1737142857142857
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 512",
+      "metric": "Cosine Precision@10",
+      "value": 0.09214285714285712
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 512",
+      "metric": "Cosine Recall@1",
+      "value": 0.7257142857142858
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 512",
+      "metric": "Cosine Recall@3",
+      "value": 0.8442857142857143
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 512",
+      "metric": "Cosine Recall@5",
+      "value": 0.8685714285714285
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 512",
+      "metric": "Cosine Recall@10",
+      "value": 0.9214285714285714
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 512",
+      "metric": "Cosine Ndcg@10",
+      "value": 0.8227718376544799
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 512",
+      "metric": "Cosine Mrr@10",
+      "value": 0.7913401360544218
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 512",
+      "metric": "Cosine Map@100",
+      "value": 0.7944636113930779
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 256",
+      "metric": "Cosine Accuracy@1",
+      "value": 0.7142857142857143
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 256",
+      "metric": "Cosine Accuracy@3",
+      "value": 0.8428571428571429
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 256",
+      "metric": "Cosine Accuracy@5",
+      "value": 0.8657142857142858
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 256",
+      "metric": "Cosine Accuracy@10",
+      "value": 0.9114285714285715
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 256",
+      "metric": "Cosine Precision@1",
+      "value": 0.7142857142857143
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 256",
+      "metric": "Cosine Precision@3",
+      "value": 0.28095238095238095
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 256",
+      "metric": "Cosine Precision@5",
+      "value": 0.17314285714285713
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 256",
+      "metric": "Cosine Precision@10",
+      "value": 0.09114285714285714
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 256",
+      "metric": "Cosine Recall@1",
+      "value": 0.7142857142857143
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 256",
+      "metric": "Cosine Recall@3",
+      "value": 0.8428571428571429
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 256",
+      "metric": "Cosine Recall@5",
+      "value": 0.8657142857142858
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 256",
+      "metric": "Cosine Recall@10",
+      "value": 0.9114285714285715
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 256",
+      "metric": "Cosine Ndcg@10",
+      "value": 0.8151839099303478
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 256",
+      "metric": "Cosine Mrr@10",
+      "value": 0.7842732426303853
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 256",
+      "metric": "Cosine Map@100",
+      "value": 0.7879218772764666
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 128",
+      "metric": "Cosine Accuracy@1",
+      "value": 0.7085714285714285
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 128",
+      "metric": "Cosine Accuracy@3",
+      "value": 0.8242857142857143
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 128",
+      "metric": "Cosine Accuracy@5",
+      "value": 0.8571428571428571
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 128",
+      "metric": "Cosine Accuracy@10",
+      "value": 0.8985714285714286
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 128",
+      "metric": "Cosine Precision@1",
+      "value": 0.7085714285714285
+    }
+  ],
+  "sources": []
+}

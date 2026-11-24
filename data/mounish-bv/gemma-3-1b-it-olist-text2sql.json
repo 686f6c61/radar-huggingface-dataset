@@ -1,0 +1,53 @@
+{
+  "schema": 2,
+  "id": "mounish-bv/gemma-3-1b-it-olist-text2sql",
+  "slug": "mounish-bv-gemma-3-1b-it-olist-text2sql",
+  "author": "mounish-bv",
+  "url": "https://huggingface.co/mounish-bv/gemma-3-1b-it-olist-text2sql",
+  "created_at": "2026-11-24T18:15:59.000Z",
+  "updated_at": "2026-11-24T18:16:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma3_text",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:unsloth/gemma-3-1b-it-unsloth-bnb-4bit",
+    "base_model:finetune:unsloth/gemma-3-1b-it-unsloth-bnb-4bit",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 999885952,
+  "parameters_human": "999.9M",
+  "storage_bytes": 2037884849,
+  "storage_human": "2.0 GB",
+  "context_length": null,
+  "base_model": "unsloth/gemma-3-1b-it-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,93 @@
+{
+  "schema": 2,
+  "id": "rxrejected/blox-fruits-script-2026",
+  "slug": "rxrejected-blox-fruits-script-2026",
+  "author": "rxrejected",
+  "url": "https://huggingface.co/rxrejected/blox-fruits-script-2026",
+  "created_at": "2026-11-24T18:23:37.000Z",
+  "updated_at": "2026-11-24T18:23:38.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en",
+    "ru",
+    "zh",
+    "es",
+    "pt",
+    "tr",
+    "de",
+    "fr",
+    "ja",
+    "ko",
+    "ar",
+    "pl",
+    "vi",
+    "id"
+  ],
+  "tags": [
+    "windows",
+    "windows-11",
+    "x64",
+    "portable",
+    "blox-fruits-script-2026",
+    "en",
+    "ru",
+    "zh",
+    "es",
+    "pt",
+    "tr",
+    "de",
+    "fr",
+    "ja",
+    "ko",
+    "ar",
+    "pl",
+    "vi",
+    "id",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "context_length": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CDC Ebola Passenger Disclosure and Attestation Form",
+      "url": "https://www.cdc.gov/port-health/media/pdfs/2026/10/367886-A_FRM_EbolaAttestation_3_pass.pdf",
+      "snippet": "The U.S. Centers for Disease Control and Prevention (CDC) requires airlines and other aircraft operators to collect this information …"
+    },
+    {
+      "title": "ATTACHMENT A TRAVELER DISCLOSURE AND ATTESTATION …",
+      "url": "https://www.cdc.gov/port-health/media/pdfs/2026/10/CDC-Ebola-Attestation-Order-Attachment-A.pdf",
+      "snippet": "Translations of this attestation approved by CDC will be made available online. In the event of any inconsistency between the English …"
+    },
+    {
+      "title": "Une nouvelle formalité sanitaire mise en place pour se rendre aux …",
+      "url": "https://www.gouv.mc/actualites/une-nouvelle-formalite-sanitaire-mise-en-place-pour-se-rendre-aux-etats-unis-des-le-3-novembre",
+      "snippet": "Oct 29, 2026 · Les compagnies aériennes seront chargées de vérifier cette formalité avant l'embarquement, qui pourra être refusé …"
+    },
+    {
+      "title": "Formulario de los CDC divulgación de información y declaración de ...",
+      "url": "https://www.cdc.gov/port-health/media/pdfs/2026/11/367886-B_FRM_EbolaAttestation_6-es_508.pdf",
+      "snippet": "La presencia en la República Democrática del Congo significa cualquier presencia física, que incluye entrar al país o viajar por el …"
+    }
+  ]
+}

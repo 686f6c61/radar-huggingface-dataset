@@ -5,7 +5,7 @@
   "author": "yqiao0602",
   "url": "https://huggingface.co/yqiao0602/CalibBind",
   "created_at": "2026-11-23T05:24:15.000Z",
-  "updated_at": "2026-11-23T05:32:03.000Z",
+  "updated_at": "2026-11-23T06:46:58.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -25,7 +25,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 35,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

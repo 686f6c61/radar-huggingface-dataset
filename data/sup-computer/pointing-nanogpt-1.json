@@ -1,0 +1,51 @@
+{
+  "schema": 2,
+  "id": "sup-computer/pointing-nanogpt-1",
+  "slug": "sup-computer-pointing-nanogpt-1",
+  "author": "sup-computer",
+  "url": "https://huggingface.co/sup-computer/pointing-nanogpt-1",
+  "created_at": "2026-11-24T13:26:34.000Z",
+  "updated_at": "2026-11-24T13:26:45.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "nanogpt",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "nanogpt",
+    "onnx",
+    "pointing",
+    "char-level",
+    "gpt",
+    "punctuation-restoration",
+    "shakespeare",
+    "text-generation",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 46034044,
+  "storage_human": "46 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

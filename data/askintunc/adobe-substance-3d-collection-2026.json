@@ -1,0 +1,98 @@
+{
+  "schema": 2,
+  "id": "askintunc/adobe-substance-3d-collection-2026",
+  "slug": "askintunc-adobe-substance-3d-collection-2026",
+  "author": "askintunc",
+  "url": "https://huggingface.co/askintunc/adobe-substance-3d-collection-2026",
+  "created_at": "2026-11-24T20:31:46.000Z",
+  "updated_at": "2026-11-24T20:31:47.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en",
+    "ru",
+    "zh",
+    "es",
+    "pt",
+    "tr",
+    "de",
+    "fr",
+    "ja",
+    "ko",
+    "ar",
+    "pl",
+    "vi",
+    "id"
+  ],
+  "tags": [
+    "windows",
+    "windows-11",
+    "x64",
+    "portable",
+    "adobe-substance-3d-collection-2026",
+    "en",
+    "ru",
+    "zh",
+    "es",
+    "pt",
+    "tr",
+    "de",
+    "fr",
+    "ja",
+    "ko",
+    "ar",
+    "pl",
+    "vi",
+    "id",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "context_length": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Black Friday 2026: Termine von Black Week bis Cyber Monday",
+      "url": "https://www.geizschwein.de/26604/black-friday-2026-wann-startet-er-wirklich-alle-wichtigen-termine-von-black-week-bis-cyber-monday/",
+      "snippet": "Wann startet Black Friday 2026 wirklich? Alle Termine auf einen Blick: Black Week, Amazon Black-Friday-Woche, Black Friday am …"
+    },
+    {
+      "title": "Wann ist Black Week 2026? Alle Termine im Überblick - Vodafone.de",
+      "url": "https://www.vodafone.de/featured/article/wann-ist-black-week-black-friday-cyber-monday-271666?msockid=334915f822b26b6d051e0de323c26a0a",
+      "snippet": "Nov 3, 2026 · Der Black Friday findet traditionell am Freitag nach Thanksgiving statt, also nach dem vierten Donnerstag im …"
+    },
+    {
+      "title": "„Black Friday“ und „Black Week“ 2026: Wann sind die Termine dieses …",
+      "url": "https://www.rnd.de/wirtschaft/black-friday-termine-2026-wann-sind-black-week-cyber-monday-und-co-in-diesem-jahr-3T3KW65VZFGSRPNACVMMPDQKVY.html",
+      "snippet": "Nov 16, 2026 · Black Friday 2026 fällt auf den 27. November. Doch viele Angebote starten schon früher. Hier die wichtigsten …"
+    },
+    {
+      "title": "Black Week – Attraktive Deals vom 23.11.2026 bis 30.11.2026",
+      "url": "https://www.brack.ch/blackweek/countdown?msockid=334915f822b26b6d051e0de323c26a0a",
+      "snippet": "1 day ago · Der Countdown zur Black Week 2026 läuft! Ab 23.11. um 00:00 Uhr warten die besten Deals des Jahres – melde dich …"
+    },
+    {
+      "title": "Black Friday 2026: Termine, Black Week & Spartipps - mydealz",
+      "url": "https://www.mydealz.de/magazin/black-friday-termine-besten-spartipps-community-tricks-und-mehr-44407",
+      "snippet": "1 day ago · Black Friday 2026: Alle Termine von der Black Week bis zum Cyber Monday, wichtige Händler, Ratgeber und Spartipps …"
+    }
+  ]
+}

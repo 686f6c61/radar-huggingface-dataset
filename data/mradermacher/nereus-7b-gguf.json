@@ -1,0 +1,53 @@
+{
+  "schema": 2,
+  "id": "mradermacher/Nereus-7B-GGUF",
+  "slug": "mradermacher-nereus-7b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Nereus-7B-GGUF",
+  "created_at": "2024-12-27T08:27:46.000Z",
+  "updated_at": "2026-11-24T14:27:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "merge",
+    "mergekit",
+    "cognitivecomputations/dolphin-2.8-mistral-7b-v02",
+    "NousResearch/Hermes-2-Pro-Mistral-7B",
+    "en",
+    "base_model:saucam/Nereus-7B",
+    "base_model:quantized:saucam/Nereus-7B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 393,
+  "trending_score": 0,
+  "parameters": 7241748480,
+  "parameters_human": "7.24B",
+  "storage_bytes": 63929982976,
+  "storage_human": "63.9 GB",
+  "context_length": 32768,
+  "base_model": "saucam/Nereus-7B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

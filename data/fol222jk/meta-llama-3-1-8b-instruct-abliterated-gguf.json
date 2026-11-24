@@ -1,0 +1,53 @@
+{
+  "schema": 2,
+  "id": "fol222jk/Meta-Llama-3.1-8B-Instruct-abliterated-GGUF",
+  "slug": "fol222jk-meta-llama-3-1-8b-instruct-abliterated-gguf",
+  "author": "fol222jk",
+  "url": "https://huggingface.co/fol222jk/Meta-Llama-3.1-8B-Instruct-abliterated-GGUF",
+  "created_at": "2026-11-24T18:45:54.000Z",
+  "updated_at": "2026-11-24T18:45:54.000Z",
+  "license": "llama3.1",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "text-generation",
+    "base_model:mlabonne/Meta-Llama-3.1-8B-Instruct-abliterated",
+    "base_model:quantized:mlabonne/Meta-Llama-3.1-8B-Instruct-abliterated",
+    "license:llama3.1",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261312,
+  "parameters_human": "8.03B",
+  "storage_bytes": 124792458186,
+  "storage_human": "124.8 GB",
+  "context_length": 131072,
+  "base_model": "mlabonne/Meta-Llama-3.1-8B-Instruct-abliterated",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Meta for Business (formerly Facebook for Business)",
+      "url": "https://fr-fr.facebook.com/latest/home%E2%80%A6/",
+      "snippet": "By logging in, you can navigate to all business tools like Meta Business Suite, Ads Manager and more to help you connect with your …"
+    }
+  ]
+}

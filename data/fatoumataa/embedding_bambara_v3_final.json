@@ -1,0 +1,132 @@
+{
+  "schema": 2,
+  "id": "Fatoumataa/embedding_bambara_v3_final",
+  "slug": "fatoumataa-embedding_bambara_v3_final",
+  "author": "Fatoumataa",
+  "url": "https://huggingface.co/Fatoumataa/embedding_bambara_v3_final",
+  "created_at": "2026-11-24T14:03:39.000Z",
+  "updated_at": "2026-11-24T14:42:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "xlm-roberta",
+    "sentence-similarity",
+    "feature-extraction",
+    "dense",
+    "generated_from_trainer",
+    "dataset_size:2893",
+    "loss:TripletLoss",
+    "arxiv:1908.10084",
+    "arxiv:1703.07737",
+    "model-index",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 278043648,
+  "parameters_human": "278.0M",
+  "storage_bytes": 6681099902,
+  "storage_human": "6.7 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "Information Retrieval",
+      "dataset": "bambara val",
+      "metric": "Cosine Accuracy@1",
+      "value": 0.545
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "bambara val",
+      "metric": "Cosine Accuracy@3",
+      "value": 0.64
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "bambara val",
+      "metric": "Cosine Accuracy@5",
+      "value": 0.69
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "bambara val",
+      "metric": "Cosine Accuracy@10",
+      "value": 0.73
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "bambara val",
+      "metric": "Cosine Precision@3",
+      "value": 0.21333333333333335
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "bambara val",
+      "metric": "Cosine Precision@5",
+      "value": 0.13799999999999998
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "bambara val",
+      "metric": "Cosine Precision@10",
+      "value": 0.073
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "bambara val",
+      "metric": "Cosine Recall@3",
+      "value": 0.64
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "bambara val",
+      "metric": "Cosine Recall@5",
+      "value": 0.69
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "bambara val",
+      "metric": "Cosine Recall@10",
+      "value": 0.73
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "bambara val",
+      "metric": "Cosine Ndcg@10",
+      "value": 0.6334618942689199
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "bambara val",
+      "metric": "Cosine Mrr@10",
+      "value": 0.6030119047619046
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "bambara val",
+      "metric": "Cosine Map@100",
+      "value": 0.611833250516638
+    }
+  ],
+  "sources": []
+}

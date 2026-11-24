@@ -1,0 +1,73 @@
+{
+  "schema": 2,
+  "id": "sudiptoHaldar/qwen3-4b-finqa-program-merged",
+  "slug": "sudiptohaldar-qwen3-4b-finqa-program-merged",
+  "author": "sudiptoHaldar",
+  "url": "https://huggingface.co/sudiptoHaldar/qwen3-4b-finqa-program-merged",
+  "created_at": "2026-11-24T14:06:57.000Z",
+  "updated_at": "2026-11-24T14:31:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "finqa",
+    "finance",
+    "question-answering",
+    "program-synthesis",
+    "merged-lora",
+    "conversational",
+    "en",
+    "dataset:bevaya/FinQA",
+    "arxiv:2505.09388",
+    "base_model:Qwen/Qwen3-4B",
+    "base_model:finetune:Qwen/Qwen3-4B",
+    "license:apache-2.0",
+    "model-index",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 8056404654,
+  "storage_human": "8.1 GB",
+  "context_length": null,
+  "base_model": "Qwen/Qwen3-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "Writing a program that answers a question about a financial report",
+      "dataset": "FinQA, this project's own split by company (not an official split)",
+      "metric": "Execution accuracy, loaded in 4-bit",
+      "value": 72.34
+    },
+    {
+      "task": "Writing a program that answers a question about a financial report",
+      "dataset": "FinQA, this project's own split by company (not an official split)",
+      "metric": "Execution accuracy, at full precision",
+      "value": 71.54
+    }
+  ],
+  "sources": []
+}

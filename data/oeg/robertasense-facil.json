@@ -1,0 +1,61 @@
+{
+  "schema": 2,
+  "id": "oeg/RoBERTaSense-FACIL",
+  "slug": "oeg-robertasense-facil",
+  "author": "oeg",
+  "url": "https://huggingface.co/oeg/RoBERTaSense-FACIL",
+  "created_at": "2025-09-25T07:49:57.000Z",
+  "updated_at": "2026-11-24T18:57:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "es"
+  ],
+  "tags": [
+    "safetensors",
+    "roberta",
+    "easy-to-read",
+    "meaning-preservation",
+    "text-classification",
+    "es",
+    "base_model:IsGarrido/roberta-base-bne",
+    "base_model:finetune:IsGarrido/roberta-base-bne",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 6,
+  "downloads_30d": 17,
+  "trending_score": 0,
+  "parameters": 124644866,
+  "parameters_human": "124.6M",
+  "storage_bytes": 997213185,
+  "storage_human": "997 MB",
+  "context_length": null,
+  "base_model": "IsGarrido/roberta-base-bne",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "oeg/RoBERTaSense-FACIL · Hugging Face",
+      "url": "https://huggingface.co/oeg/RoBERTaSense-FACIL",
+      "snippet": "RoBERTaSense-FACIL (RoBERTa Fine-tuned for Accessible Comprehension In Language) is a Spanish RoBERTa model fine …Read more"
+    },
+    {
+      "title": "RoBERTaSense-FACIL: A Technical Report and Model Selection",
+      "url": "https://zenodo.org/records/17674467",
+      "snippet": "Nov 21, 2025 · RoBERTaSense-FACIL is a Spanish Transformer-based model fine-tuned to evaluate meaning preservation in Easy …Read more"
+    }
+  ]
+}

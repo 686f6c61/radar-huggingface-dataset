@@ -1,0 +1,100 @@
+{
+  "schema": 2,
+  "id": "Uddipan242/verbatim-sum-24m",
+  "slug": "uddipan242-verbatim-sum-24m",
+  "author": "Uddipan242",
+  "url": "https://huggingface.co/Uddipan242/verbatim-sum-24m",
+  "created_at": "2026-11-24T15:25:05.000Z",
+  "updated_at": "2026-11-24T15:25:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "summarization",
+  "library": "onnx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "verbatim-sum-24m",
+    "summarization",
+    "extractive-summarization",
+    "webgpu",
+    "cpu",
+    "wasm",
+    "quantized",
+    "4-bit",
+    "zero-hallucination",
+    "minilm",
+    "en",
+    "dataset:abisee/cnn_dailymail",
+    "dataset:gopalkalpande/bbc-news-summary",
+    "dataset:EdinburghNLP/xsum",
+    "dataset:FiscalNote/billsum",
+    "dataset:ccdv/pubmed-summarization",
+    "dataset:knkarthick/dialogsum",
+    "base_model:sentence-transformers/all-MiniLM-L6-v2",
+    "base_model:quantized:sentence-transformers/all-MiniLM-L6-v2",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 19755604,
+  "storage_human": "20 MB",
+  "context_length": null,
+  "base_model": "sentence-transformers/all-MiniLM-L6-v2",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "Multi-domain extractive summarization",
+      "dataset": "Multi-domain unseen test split (6 corpora, 1,200 docs)",
+      "metric": "ROUGE-1 (unstemmed, 1,200 docs)",
+      "value": 32.7
+    },
+    {
+      "task": "Multi-domain extractive summarization",
+      "dataset": "Multi-domain unseen test split (6 corpora, 1,200 docs)",
+      "metric": "ROUGE-2 (unstemmed, 1,200 docs)",
+      "value": 13.1
+    },
+    {
+      "task": "Multi-domain extractive summarization",
+      "dataset": "Multi-domain unseen test split (6 corpora, 1,200 docs)",
+      "metric": "ROUGE-L (unstemmed, 1,200 docs)",
+      "value": 22.61
+    },
+    {
+      "task": "Multi-domain extractive summarization",
+      "dataset": "Multi-domain unseen test split (6 corpora, 1,200 docs)",
+      "metric": "ROUGE-1 (stemmed rouge-score, 600 docs)",
+      "value": 36.34
+    },
+    {
+      "task": "Multi-domain extractive summarization",
+      "dataset": "Multi-domain unseen test split (6 corpora, 1,200 docs)",
+      "metric": "ROUGE-L (stemmed rouge-score, 600 docs)",
+      "value": 24.42
+    },
+    {
+      "task": "Multi-domain extractive summarization",
+      "dataset": "Multi-domain unseen test split (6 corpora, 1,200 docs)",
+      "metric": "Verbatim grounding (0% hallucination)",
+      "value": 100
+    }
+  ],
+  "sources": []
+}

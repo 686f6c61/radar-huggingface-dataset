@@ -1,0 +1,62 @@
+{
+  "schema": 2,
+  "id": "davitlive5/Lapillus-v3",
+  "slug": "davitlive5-lapillus-v3",
+  "author": "davitlive5",
+  "url": "https://huggingface.co/davitlive5/Lapillus-v3",
+  "created_at": "2026-11-24T14:29:33.000Z",
+  "updated_at": "2026-11-24T15:59:57.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "nemo",
+  "languages": [
+    "hy"
+  ],
+  "tags": [
+    "nemo",
+    "automatic-speech-recognition",
+    "armenian",
+    "fastconformer",
+    "telephony",
+    "hy",
+    "base_model:davitlive5/Lapillus-v1",
+    "base_model:finetune:davitlive5/Lapillus-v1",
+    "license:cc-by-4.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3164710265,
+  "storage_human": "3.2 GB",
+  "context_length": null,
+  "base_model": "davitlive5/Lapillus-v1",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "ArmBench-ASR Common Voice test",
+      "metric": "WER (normalised, our evaluation, beam 8 + LM + NLM)",
+      "value": 3.78
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "ArmBench-ASR FLEURS test",
+      "metric": "WER (normalised, our evaluation, beam 8 + LM + NLM)",
+      "value": 4.4
+    }
+  ],
+  "sources": []
+}

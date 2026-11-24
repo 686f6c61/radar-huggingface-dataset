@@ -1,0 +1,40 @@
+{
+  "schema": 2,
+  "id": "armnet/diffusion_so101_insert_gear_in_gripper",
+  "slug": "armnet-diffusion_so101_insert_gear_in_gripper",
+  "author": "armnet",
+  "url": "https://huggingface.co/armnet/diffusion_so101_insert_gear_in_gripper",
+  "created_at": "2026-11-24T15:47:06.000Z",
+  "updated_at": "2026-11-24T15:47:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5557072656,
+  "storage_human": "5.6 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

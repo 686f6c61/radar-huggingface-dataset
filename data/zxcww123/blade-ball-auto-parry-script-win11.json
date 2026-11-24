@@ -1,0 +1,98 @@
+{
+  "schema": 2,
+  "id": "zxcww123/blade-ball-auto-parry-script-win11",
+  "slug": "zxcww123-blade-ball-auto-parry-script-win11",
+  "author": "zxcww123",
+  "url": "https://huggingface.co/zxcww123/blade-ball-auto-parry-script-win11",
+  "created_at": "2026-11-24T16:37:41.000Z",
+  "updated_at": "2026-11-24T16:37:42.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en",
+    "ru",
+    "zh",
+    "es",
+    "pt",
+    "tr",
+    "de",
+    "fr",
+    "ja",
+    "ko",
+    "ar",
+    "pl",
+    "vi",
+    "id"
+  ],
+  "tags": [
+    "windows",
+    "windows-11",
+    "x64",
+    "portable",
+    "blade-ball-auto-parry-script-win11",
+    "en",
+    "ru",
+    "zh",
+    "es",
+    "pt",
+    "tr",
+    "de",
+    "fr",
+    "ja",
+    "ko",
+    "ar",
+    "pl",
+    "vi",
+    "id",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "context_length": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Montage rotule de suspension gauche (pièces non incluses) - NORAUTO",
+      "url": "https://www.norauto.fr/p/montage-rotule-de-suspension-gauche-pieces-non-incluses-F0508.html?msockid=05160580b478612211631d9bb50c60a3",
+      "snippet": "La rotule de suspension est un élément mécanique qui compose le train roulant de votre véhicule. Le train roulant est garant d’une …"
+    },
+    {
+      "title": "Montage de la rotule de suspension droite - Norauto",
+      "url": "https://www.norauto.fr/p/montage-de-la-rotule-de-suspension-droite-F0512.html?msockid=05160580b478612211631d9bb50c60a3",
+      "snippet": "La rotule de suspension est un élément mécanique qui compose le train roulant de votre véhicule. Le train roulant est garant d’une …"
+    },
+    {
+      "title": "Prix d’une rotule de suspension en 2026 : pièce et pose",
+      "url": "https://www.captain-drive.com/prix-changement-rotule-de-suspension/",
+      "snippet": "Oct 8, 2019 · Norauto facture le montage d’une rotule de suspension à partir de 64,95 € par côté, pièce non incluse, pour deux …"
+    },
+    {
+      "title": "Prix Changement Rotule de Suspension : Coûts, Options et Conseils",
+      "url": "https://www.euautopieces.fr/blog/prix-changement-rotule-de-suspension-couts-options-et-conseils/",
+      "snippet": "Aug 31, 2026 · Le prix du changement de rotule de suspension varie entre 80€ et 350€ en France, selon le modèle de véhicule et le …"
+    },
+    {
+      "title": "Prix triangle de suspension 2026 : Norauto, Feu Vert, Midas",
+      "url": "https://www.captain-drive.com/quand-prix-changer-triangle-de-suspension/",
+      "snippet": "Feb 12, 2021 · Comptez 150 à 350 € pour remplacer un triangle de suspension sur une citadine ou une compacte, pièce, pose et …"
+    }
+  ]
+}

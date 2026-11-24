@@ -1,0 +1,70 @@
+{
+  "schema": 2,
+  "id": "davitlive5/sonabo-v1",
+  "slug": "davitlive5-sonabo-v1",
+  "author": "davitlive5",
+  "url": "https://huggingface.co/davitlive5/sonabo-v1",
+  "created_at": "2026-11-19T14:31:01.000Z",
+  "updated_at": "2026-11-24T16:01:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "qwen-tts",
+  "languages": [
+    "hy"
+  ],
+  "tags": [
+    "qwen-tts",
+    "safetensors",
+    "qwen3_tts",
+    "text-to-speech",
+    "tts",
+    "armenian",
+    "eastern-armenian",
+    "voice-cloning",
+    "streaming",
+    "qwen3-tts",
+    "hy",
+    "arxiv:2601.15621",
+    "base_model:Qwen/Qwen3-TTS-12Hz-0.6B-Base",
+    "base_model:finetune:Qwen/Qwen3-TTS-12Hz-0.6B-Base",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 2,
+  "trending_score": 0,
+  "parameters": 914643008,
+  "parameters_human": "914.6M",
+  "storage_bytes": 2511637364,
+  "storage_human": "2.5 GB",
+  "context_length": null,
+  "base_model": "Qwen/Qwen3-TTS-12Hz-0.6B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "Armenian TTS eval set (112 sentences per voice)",
+      "metric": "WER (ASR round-trip, female voice)",
+      "value": 4.89
+    },
+    {
+      "task": null,
+      "dataset": "Armenian TTS eval set (112 sentences per voice)",
+      "metric": "WER (ASR round-trip, male voice)",
+      "value": 5.03
+    }
+  ],
+  "sources": []
+}

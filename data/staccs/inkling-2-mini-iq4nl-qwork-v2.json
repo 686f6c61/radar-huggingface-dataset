@@ -5,7 +5,7 @@
   "author": "staccs",
   "url": "https://huggingface.co/staccs/inkling-2-mini-iq4nl-qwork-v2",
   "created_at": "2026-11-23T02:35:40.000Z",
-  "updated_at": "2026-11-23T02:45:37.000Z",
+  "updated_at": "2026-11-23T03:33:17.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -28,7 +28,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 232,
   "trending_score": 0,
   "parameters": 26070385152,
   "parameters_human": "26.07B",

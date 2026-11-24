@@ -1,0 +1,40 @@
+{
+  "schema": 2,
+  "id": "316usman/skywork-reward-v2-0.6b-lora-general-holdout-vendor-threat",
+  "slug": "316usman-skywork-reward-v2-0-6b-lora-general-holdout-vendor-threat",
+  "author": "316usman",
+  "url": "https://huggingface.co/316usman/skywork-reward-v2-0.6b-lora-general-holdout-vendor-threat",
+  "created_at": "2026-11-24T19:25:37.000Z",
+  "updated_at": "2026-11-24T19:25:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 40426368,
+  "storage_human": "40 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

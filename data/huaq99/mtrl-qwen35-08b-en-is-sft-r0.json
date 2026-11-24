@@ -1,0 +1,52 @@
+{
+  "schema": 2,
+  "id": "huaq99/mtrl-qwen35-08b-en-is-sft-r0",
+  "slug": "huaq99-mtrl-qwen35-08b-en-is-sft-r0",
+  "author": "huaq99",
+  "url": "https://huggingface.co/huaq99/mtrl-qwen35-08b-en-is-sft-r0",
+  "created_at": "2026-11-24T12:45:02.000Z",
+  "updated_at": "2026-11-24T12:53:21.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "translation",
+  "library": "peft",
+  "languages": [
+    "en",
+    "is"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "translation",
+    "mtrl",
+    "sft",
+    "en",
+    "is",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:adapter:Qwen/Qwen3.5-0.8B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 43346432,
+  "storage_human": "43 MB",
+  "context_length": null,
+  "base_model": "Qwen/Qwen3.5-0.8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

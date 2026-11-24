@@ -1,0 +1,50 @@
+{
+  "schema": 2,
+  "id": "seshataitech/Seshat-ohada-8B-track-d-d003",
+  "slug": "seshataitech-seshat-ohada-8b-track-d-d003",
+  "author": "seshataitech",
+  "url": "https://huggingface.co/seshataitech/Seshat-ohada-8B-track-d-d003",
+  "created_at": "2026-11-24T12:51:18.000Z",
+  "updated_at": "2026-11-24T13:10:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "fr"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "syscohada",
+    "accounting",
+    "text-generation",
+    "fr",
+    "base_model:seshataitech/Seshat-ohada-8B-track-c-curriculum001",
+    "base_model:adapter:seshataitech/Seshat-ohada-8B-track-c-curriculum001",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 174655536,
+  "storage_human": "175 MB",
+  "context_length": null,
+  "base_model": "seshataitech/Seshat-ohada-8B-track-c-curriculum001",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

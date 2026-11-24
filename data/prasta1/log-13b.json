@@ -1,0 +1,73 @@
+{
+  "schema": 2,
+  "id": "prasta1/LOG-13B",
+  "slug": "prasta1-log-13b",
+  "author": "prasta1",
+  "url": "https://huggingface.co/prasta1/LOG-13B",
+  "created_at": "2026-11-24T18:25:01.000Z",
+  "updated_at": "2026-11-24T18:32:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "text-generation",
+    "causal-lm",
+    "dense",
+    "effluent-series",
+    "log",
+    "arxiv:2604.01188",
+    "en",
+    "dataset:EleutherAI/pile",
+    "dataset:allenai/c4",
+    "dataset:togethercomputer/RedPajama-Data-1T",
+    "dataset:HuggingFaceFW/fineweb",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "context_length": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "Text Generation",
+      "dataset": "MMLU (5-shot)",
+      "metric": "Accuracy",
+      "value": 58.4
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "HellaSwag (10-shot)",
+      "metric": "Accuracy (normalized)",
+      "value": 79.2
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "GSM8K (8-shot, CoT)",
+      "metric": "Accuracy",
+      "value": 41.6
+    }
+  ],
+  "sources": []
+}

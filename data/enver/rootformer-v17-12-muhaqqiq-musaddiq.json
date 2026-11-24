@@ -1,0 +1,87 @@
+{
+  "schema": 2,
+  "id": "enver/rootformer-v17.12-muhaqqiq-musaddiq",
+  "slug": "enver-rootformer-v17-12-muhaqqiq-musaddiq",
+  "author": "enver",
+  "url": "https://huggingface.co/enver/rootformer-v17.12-muhaqqiq-musaddiq",
+  "created_at": "2026-11-24T19:37:03.000Z",
+  "updated_at": "2026-11-24T19:39:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": "vllm",
+  "languages": [
+    "ar",
+    "en"
+  ],
+  "tags": [
+    "vllm",
+    "safetensors",
+    "qwen3_5",
+    "classical-arabic",
+    "arabic-to-english",
+    "machine-translation",
+    "turath",
+    "rootformer",
+    "bpe-free",
+    "sibawayh",
+    "fp8",
+    "islamic-studies",
+    "quran-citation-grounded",
+    "translation",
+    "ar",
+    "en",
+    "base_model:Qwen/Qwen3.5-27B",
+    "base_model:finetune:Qwen/Qwen3.5-27B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 54159790107,
+  "storage_human": "54.2 GB",
+  "context_length": null,
+  "base_model": "Qwen/Qwen3.5-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Enver Pasha - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Enver_Pasha",
+      "snippet": "Along with Ahmed Niyazi, Enver was hailed as \"hero of the revolution\". However, a series of crises in the empire, including the 31 …Read more"
+    },
+    {
+      "title": "Enver — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Enver",
+      "snippet": "Enver Vous pouvez partager vos connaissances en l’améliorant () selon les recommandations des projets correspondants. Enver est …Read more"
+    },
+    {
+      "title": "Prénom Enver : Origine - Caractère - Signification - Etymologie",
+      "url": "https://www.parents.fr/prenoms/enver-40000",
+      "snippet": "Signification et étymologie du prénom Enver Le prénom Enver est d'origine turque. Il peut aussi s'écrire Eniver. Ce prénom signifie « …Read more"
+    },
+    {
+      "title": "Video Game Studio & Online Gaming Platform | ENVER",
+      "url": "https://www.enver.com/",
+      "snippet": "ENVER is a video game studio building viral, social gaming worlds. Discover an online gaming platform designed for creators, …Read more"
+    },
+    {
+      "title": "Enver Hoxha - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Enver_Hoxha",
+      "snippet": "Enver Halil Hoxha[a] (16 October 1908 – 11 April 1985) was an Albanian politician, revolutionary, and communist political theorist who …Read more"
+    }
+  ]
+}

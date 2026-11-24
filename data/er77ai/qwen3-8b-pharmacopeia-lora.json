@@ -1,0 +1,50 @@
+{
+  "schema": 2,
+  "id": "er77ai/Qwen3-8B-pharmacopeia-lora",
+  "slug": "er77ai-qwen3-8b-pharmacopeia-lora",
+  "author": "er77ai",
+  "url": "https://huggingface.co/er77ai/Qwen3-8B-pharmacopeia-lora",
+  "created_at": "2026-11-24T13:44:24.000Z",
+  "updated_at": "2026-11-24T13:46:31.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "ru"
+  ],
+  "tags": [
+    "safetensors",
+    "lora",
+    "pharmacopeia",
+    "russian",
+    "development",
+    "ru",
+    "base_model:Qwen/Qwen3-8B",
+    "base_model:adapter:Qwen/Qwen3-8B",
+    "license:agpl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 174655536,
+  "storage_human": "175 MB",
+  "context_length": null,
+  "base_model": "Qwen/Qwen3-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

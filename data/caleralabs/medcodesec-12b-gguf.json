@@ -1,0 +1,127 @@
+{
+  "schema": 2,
+  "id": "CaleraLabs/medcodesec-12b-gguf",
+  "slug": "caleralabs-medcodesec-12b-gguf",
+  "author": "CaleraLabs",
+  "url": "https://huggingface.co/CaleraLabs/medcodesec-12b-gguf",
+  "created_at": "2026-11-24T15:23:21.000Z",
+  "updated_at": "2026-11-24T17:11:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "medical-coding",
+    "healthcare-rcm",
+    "icd-10-cm",
+    "icd-10-pcs",
+    "hcpcs",
+    "ncci",
+    "hipaa-safe",
+    "local-inference",
+    "ollama",
+    "calera-bedrock",
+    "text-generation",
+    "en",
+    "base_model:google/gemma-4-12B-it",
+    "base_model:quantized:google/gemma-4-12B-it",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 11907350576,
+  "parameters_human": "11.91B",
+  "storage_bytes": 23967942400,
+  "storage_human": "24.0 GB",
+  "context_length": 262144,
+  "base_model": "google/gemma-4-12B-it",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "Clinical Coding Audit, Sequencing & NCCI Bundling Verification",
+      "dataset": "MedCodeBench v1.0 & v2.0 (CMS FY2026/FY2027 + Drug/Neoplasm/PCS/NCCI)",
+      "metric": "MedCodeBench v1.0 Base Gemma 4 12B Standalone (240 cases)",
+      "value": 27.5
+    },
+    {
+      "task": "Clinical Coding Audit, Sequencing & NCCI Bundling Verification",
+      "dataset": "MedCodeBench v1.0 & v2.0 (CMS FY2026/FY2027 + Drug/Neoplasm/PCS/NCCI)",
+      "metric": "MedCodeBench v1.0 MedCodeSec-12B Standalone (BF16, 240 cases)",
+      "value": 73.33
+    },
+    {
+      "task": "Clinical Coding Audit, Sequencing & NCCI Bundling Verification",
+      "dataset": "MedCodeBench v1.0 & v2.0 (CMS FY2026/FY2027 + Drug/Neoplasm/PCS/NCCI)",
+      "metric": "MedCodeBench v1.0 MedCodeSec-12B Standalone (Q8_0, 240 cases)",
+      "value": 74.17
+    },
+    {
+      "task": "Clinical Coding Audit, Sequencing & NCCI Bundling Verification",
+      "dataset": "MedCodeBench v1.0 & v2.0 (CMS FY2026/FY2027 + Drug/Neoplasm/PCS/NCCI)",
+      "metric": "MedCodeBench v1.0 MedCodeSec-12B Standalone (Q4_K_M, 240 cases)",
+      "value": 73.33
+    },
+    {
+      "task": "Clinical Coding Audit, Sequencing & NCCI Bundling Verification",
+      "dataset": "MedCodeBench v1.0 & v2.0 (CMS FY2026/FY2027 + Drug/Neoplasm/PCS/NCCI)",
+      "metric": "MedCodeBench v1.0 MedCodeSec-12B + Calera ICX (240 cases, 0.0% hallucination)",
+      "value": 100
+    },
+    {
+      "task": "Clinical Coding Audit, Sequencing & NCCI Bundling Verification",
+      "dataset": "MedCodeBench v1.0 & v2.0 (CMS FY2026/FY2027 + Drug/Neoplasm/PCS/NCCI)",
+      "metric": "MedCodeBench v2.0 MedCodeSec-12B Standalone (BF16 / Q8_0 / Q4_K_M, 540 cases)",
+      "value": 67.59
+    },
+    {
+      "task": "Clinical Coding Audit, Sequencing & NCCI Bundling Verification",
+      "dataset": "MedCodeBench v1.0 & v2.0 (CMS FY2026/FY2027 + Drug/Neoplasm/PCS/NCCI)",
+      "metric": "MedCodeBench v2.0 MedCodeSec-12B Q8_0 + Calera ICX (540 cases, 0.0% hallucination)",
+      "value": 100
+    },
+    {
+      "task": "Clinical Coding Audit, Sequencing & NCCI Bundling Verification",
+      "dataset": "MedCodeBench v1.0 & v2.0 (CMS FY2026/FY2027 + Drug/Neoplasm/PCS/NCCI)",
+      "metric": "Adversarial Red-Team Suite MedCodeSec-12B Standalone Q8_0 (48 cases)",
+      "value": 72.92
+    },
+    {
+      "task": "Clinical Coding Audit, Sequencing & NCCI Bundling Verification",
+      "dataset": "MedCodeBench v1.0 & v2.0 (CMS FY2026/FY2027 + Drug/Neoplasm/PCS/NCCI)",
+      "metric": "Adversarial Red-Team Suite MedCodeSec-12B Q8_0 + Calera ICX (48 cases)",
+      "value": 100
+    },
+    {
+      "task": "Clinical Coding Audit, Sequencing & NCCI Bundling Verification",
+      "dataset": "MedCodeBench v1.0 & v2.0 (CMS FY2026/FY2027 + Drug/Neoplasm/PCS/NCCI)",
+      "metric": "Out-of-Box Zero-Flag llama-cli Usability Gate G-PRE-09 (Q8_0 / Q4_K_M)",
+      "value": 100
+    },
+    {
+      "task": "Clinical Coding Audit, Sequencing & NCCI Bundling Verification",
+      "dataset": "MedCodeBench v1.0 & v2.0 (CMS FY2026/FY2027 + Drug/Neoplasm/PCS/NCCI)",
+      "metric": "Layer 2 Held-Out MIMIC-IV Demo Non-CMS Fabrication Rate (+ Calera ICX, 123 admissions)",
+      "value": 0
+    }
+  ],
+  "sources": []
+}

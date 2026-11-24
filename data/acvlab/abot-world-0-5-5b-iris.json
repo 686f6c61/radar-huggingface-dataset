@@ -1,0 +1,43 @@
+{
+  "schema": 2,
+  "id": "acvlab/ABot-World-0-5-5B-Iris",
+  "slug": "acvlab-abot-world-0-5-5b-iris",
+  "author": "acvlab",
+  "url": "https://huggingface.co/acvlab/ABot-World-0-5-5B-Iris",
+  "created_at": "2026-11-24T15:26:39.000Z",
+  "updated_at": "2026-11-24T15:30:49.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "ci2v",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5270329536,
+  "parameters_human": "5.27B",
+  "storage_bytes": 27819416009,
+  "storage_human": "27.8 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

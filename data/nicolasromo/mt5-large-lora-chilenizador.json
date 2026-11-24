@@ -1,0 +1,51 @@
+{
+  "schema": 2,
+  "id": "NicolasRomo/mt5-large-lora-chilenizador",
+  "slug": "nicolasromo-mt5-large-lora-chilenizador",
+  "author": "NicolasRomo",
+  "url": "https://huggingface.co/NicolasRomo/mt5-large-lora-chilenizador",
+  "created_at": "2026-11-24T13:21:57.000Z",
+  "updated_at": "2026-11-24T13:22:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [
+    "es"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "chilean-spanish",
+    "text2text-generation",
+    "mt5",
+    "es",
+    "base_model:google/mt5-large",
+    "base_model:adapter:google/mt5-large",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 18915328,
+  "storage_human": "19 MB",
+  "context_length": null,
+  "base_model": "google/mt5-large",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

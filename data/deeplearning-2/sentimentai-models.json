@@ -1,0 +1,43 @@
+{
+  "schema": 2,
+  "id": "Deeplearning-2/sentimentai-models",
+  "slug": "deeplearning-2-sentimentai-models",
+  "author": "Deeplearning-2",
+  "url": "https://huggingface.co/Deeplearning-2/sentimentai-models",
+  "created_at": "2026-11-24T16:36:17.000Z",
+  "updated_at": "2026-11-24T16:36:57.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "aspect-based-sentiment-analysis",
+    "semeval-2014",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "context_length": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

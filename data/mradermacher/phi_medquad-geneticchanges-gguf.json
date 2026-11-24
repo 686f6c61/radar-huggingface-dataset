@@ -1,0 +1,47 @@
+{
+  "schema": 2,
+  "id": "mradermacher/Phi_medquad-geneticchanges-GGUF",
+  "slug": "mradermacher-phi_medquad-geneticchanges-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Phi_medquad-geneticchanges-GGUF",
+  "created_at": "2025-02-28T13:47:22.000Z",
+  "updated_at": "2026-11-24T14:27:01.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:emilykang/Phi_medquad-geneticchanges",
+    "base_model:quantized:emilykang/Phi_medquad-geneticchanges",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 70,
+  "trending_score": 0,
+  "parameters": 2779683840,
+  "parameters_human": "2.78B",
+  "storage_bytes": 24997207424,
+  "storage_human": "25.0 GB",
+  "context_length": 2048,
+  "base_model": "emilykang/Phi_medquad-geneticchanges",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

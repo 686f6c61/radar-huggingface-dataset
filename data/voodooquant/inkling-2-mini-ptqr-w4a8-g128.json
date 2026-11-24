@@ -5,7 +5,7 @@
   "author": "voodooquant",
   "url": "https://huggingface.co/voodooquant/Inkling-2-Mini-PTQR-W4A8-G128",
   "created_at": "2026-11-23T17:27:26.000Z",
-  "updated_at": "2026-11-23T17:51:32.000Z",
+  "updated_at": "2026-11-23T18:33:40.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -35,7 +35,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 18,
   "trending_score": 0,
   "parameters": 26779413632,
   "parameters_human": "26.78B",
@@ -52,8 +52,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "voodooquant/Inkling-2-Mini-INT4-PTQR",
+  "renamed_at": "2026-11-24T13:54:32.349Z",
   "benchmarks": [],
   "sources": []
 }

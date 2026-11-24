@@ -1,0 +1,52 @@
+{
+  "schema": 2,
+  "id": "suynar/whisper-small-uyghur",
+  "slug": "suynar-whisper-small-uyghur",
+  "author": "suynar",
+  "url": "https://huggingface.co/suynar/whisper-small-uyghur",
+  "created_at": "2026-11-24T18:37:32.000Z",
+  "updated_at": "2026-11-24T18:37:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [
+    "ug"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "whisper",
+    "asr",
+    "uyghur",
+    "lo-ra",
+    "ug",
+    "dataset:mozilla-foundation/common_voice_11_0",
+    "base_model:openai/whisper-small",
+    "base_model:adapter:openai/whisper-small",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1621653084,
+  "storage_human": "1.6 GB",
+  "context_length": null,
+  "base_model": "openai/whisper-small",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

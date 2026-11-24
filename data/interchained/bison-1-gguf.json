@@ -1,0 +1,50 @@
+{
+  "schema": 2,
+  "id": "Interchained/bison-1-GGUF",
+  "slug": "interchained-bison-1-gguf",
+  "author": "Interchained",
+  "url": "https://huggingface.co/Interchained/bison-1-GGUF",
+  "created_at": "2026-11-24T16:57:01.000Z",
+  "updated_at": "2026-11-24T16:57:43.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "decision-model",
+    "llama.cpp",
+    "hearth",
+    "interchained",
+    "en",
+    "base_model:baselabs/bison-1",
+    "base_model:finetune:baselabs/bison-1",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "context_length": null,
+  "base_model": "baselabs/bison-1",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -5,7 +5,7 @@
   "author": "tencent",
   "url": "https://huggingface.co/tencent/WeMM-Video-35BA3B-GGUF",
   "created_at": "2026-11-17T08:55:25.000Z",
-  "updated_at": "2026-11-21T02:38:42.000Z",
+  "updated_at": "2026-11-24T07:00:38.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "video-text-to-text",
@@ -34,7 +34,7 @@
     "region:us"
   ],
   "likes": 5,
-  "downloads_30d": 4338,
+  "downloads_30d": 5047,
   "trending_score": 0,
   "parameters": 1070382088,
   "parameters_human": "1.07B",

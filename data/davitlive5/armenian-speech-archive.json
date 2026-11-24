@@ -1,0 +1,47 @@
+{
+  "schema": 2,
+  "id": "davitlive5/armenian-speech-archive",
+  "slug": "davitlive5-armenian-speech-archive",
+  "author": "davitlive5",
+  "url": "https://huggingface.co/davitlive5/armenian-speech-archive",
+  "created_at": "2026-11-24T14:33:53.000Z",
+  "updated_at": "2026-11-24T14:37:32.000Z",
+  "license": "other",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "nemo",
+  "languages": [
+    "hy"
+  ],
+  "tags": [
+    "nemo",
+    "onnx",
+    "armenian",
+    "archive",
+    "hy",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4415093516,
+  "storage_human": "4.4 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

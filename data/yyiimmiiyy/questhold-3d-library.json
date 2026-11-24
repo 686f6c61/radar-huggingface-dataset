@@ -1,0 +1,46 @@
+{
+  "schema": 2,
+  "id": "yyiimmiiyy/questhold-3d-library",
+  "slug": "yyiimmiiyy-questhold-3d-library",
+  "author": "yyiimmiiyy",
+  "url": "https://huggingface.co/yyiimmiiyy/questhold-3d-library",
+  "created_at": "2026-11-24T15:05:39.000Z",
+  "updated_at": "2026-11-24T15:05:56.000Z",
+  "license": "cc0-1.0-and-own",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "3d",
+    "game-assets",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 161661626,
+  "storage_human": "162 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "如何将整个wikipedia导出成一个纯文本文件?",
+      "url": "https://www.zhihu.com/question/21425170",
+      "snippet": "jwpl - Java-based Wikipedia Library -- An application programming interface for Wikipedia ，提供了API，可以直接由给定的词条名导 …Read more"
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "veripazari",
   "url": "https://huggingface.co/veripazari/turkish-gpt2-large",
   "created_at": "2026-11-23T18:09:31.000Z",
-  "updated_at": "2026-11-23T18:09:45.000Z",
+  "updated_at": "2026-11-23T18:53:35.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -28,7 +28,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 30,
   "trending_score": 0,
   "parameters": 774030080,
   "parameters_human": "774.0M",

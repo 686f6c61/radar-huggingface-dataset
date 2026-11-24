@@ -1,0 +1,93 @@
+{
+  "schema": 2,
+  "id": "okyak/adobe-acrobat-pro-2026-x64-patcher-2026",
+  "slug": "okyak-adobe-acrobat-pro-2026-x64-patcher-2026",
+  "author": "okyak",
+  "url": "https://huggingface.co/okyak/adobe-acrobat-pro-2026-x64-patcher-2026",
+  "created_at": "2026-11-24T16:41:49.000Z",
+  "updated_at": "2026-11-24T16:41:50.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en",
+    "ru",
+    "zh",
+    "es",
+    "pt",
+    "tr",
+    "de",
+    "fr",
+    "ja",
+    "ko",
+    "ar",
+    "pl",
+    "vi",
+    "id"
+  ],
+  "tags": [
+    "windows",
+    "windows-11",
+    "x64",
+    "portable",
+    "adobe-acrobat-pro-2026-x64-patcher-2026",
+    "en",
+    "ru",
+    "zh",
+    "es",
+    "pt",
+    "tr",
+    "de",
+    "fr",
+    "ja",
+    "ko",
+    "ar",
+    "pl",
+    "vi",
+    "id",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "context_length": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Cardano Staking: How to Earn Passive Income - BitDegree.org",
+      "url": "https://www.bitdegree.org/crypto/tutorials/cardano-staking",
+      "snippet": "Aug 21, 2026 · Get started with Cardano staking and learn how Cardano proof of stake works to earn crypto rewards with this step …Read more"
+    },
+    {
+      "title": "Cardano Staking: How to Earn Rewards By Staking ADA - 99Bitcoins",
+      "url": "https://99bitcoins.com/cryptocurrency/best-crypto-staking-coins/cardano/",
+      "snippet": "Dec 18, 2025 · Discover Cardano staking in 2026! Earn ADA rewards, boost passive income, and choose the best staking pools with …Read more"
+    },
+    {
+      "title": "How to Stake Cardano? ADA Staking Guide for Beginners",
+      "url": "https://www.mexc.com/learn/article/how-to-stake-cardano-ada-staking-guide-for-beginners/1",
+      "snippet": "Oct 28, 2026 · Looking to earn passive income with your Cardano holdings? Staking ADA offers a straightforward way to generate …Read more"
+    },
+    {
+      "title": "How to Stake Cardano: A Beginner’s Guide to ADA Staking",
+      "url": "https://www.gate.com/crypto-wiki/article/how-to-stake-cardano-a-beginner-s-guide-to-staking-ada-20260108",
+      "snippet": "Jan 8, 2026 · This comprehensive Cardano staking guide helps beginners earn 2–5% annual passive income with as little as 5 …Read more"
+    }
+  ]
+}

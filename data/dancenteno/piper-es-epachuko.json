@@ -1,0 +1,49 @@
+{
+  "schema": 2,
+  "id": "Dancenteno/piper-es-epachuko",
+  "slug": "dancenteno-piper-es-epachuko",
+  "author": "Dancenteno",
+  "url": "https://huggingface.co/Dancenteno/piper-es-epachuko",
+  "created_at": "2026-11-24T20:22:17.000Z",
+  "updated_at": "2026-11-24T20:23:34.000Z",
+  "license": "cc0-1.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "piper",
+  "languages": [
+    "es"
+  ],
+  "tags": [
+    "piper",
+    "onnx",
+    "tts",
+    "spanish",
+    "public-domain",
+    "text-to-speech",
+    "es",
+    "license:cc0-1.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 63516051,
+  "storage_human": "64 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

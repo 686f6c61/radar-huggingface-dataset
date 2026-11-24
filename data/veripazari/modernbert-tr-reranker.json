@@ -5,7 +5,7 @@
   "author": "veripazari",
   "url": "https://huggingface.co/veripazari/modernbert-tr-reranker",
   "created_at": "2026-11-23T18:10:38.000Z",
-  "updated_at": "2026-11-23T18:10:40.000Z",
+  "updated_at": "2026-11-23T18:53:39.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-ranking",
@@ -34,7 +34,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 25,
   "trending_score": 0,
   "parameters": 149365249,
   "parameters_human": "149.4M",

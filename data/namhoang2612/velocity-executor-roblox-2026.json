@@ -1,0 +1,93 @@
+{
+  "schema": 2,
+  "id": "namhoang2612/velocity-executor-roblox-2026",
+  "slug": "namhoang2612-velocity-executor-roblox-2026",
+  "author": "namhoang2612",
+  "url": "https://huggingface.co/namhoang2612/velocity-executor-roblox-2026",
+  "created_at": "2026-11-24T16:41:32.000Z",
+  "updated_at": "2026-11-24T16:41:33.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en",
+    "ru",
+    "zh",
+    "es",
+    "pt",
+    "tr",
+    "de",
+    "fr",
+    "ja",
+    "ko",
+    "ar",
+    "pl",
+    "vi",
+    "id"
+  ],
+  "tags": [
+    "windows",
+    "windows-11",
+    "x64",
+    "portable",
+    "velocity-executor-roblox-2026",
+    "en",
+    "ru",
+    "zh",
+    "es",
+    "pt",
+    "tr",
+    "de",
+    "fr",
+    "ja",
+    "ko",
+    "ar",
+    "pl",
+    "vi",
+    "id",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "context_length": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "How to Get Help with Notepad in Windows - wikihow.com",
+      "url": "https://www.wikihow.com/Get-Help-with-Notepad-in-Windows",
+      "snippet": "Oct 28, 2026 · Are you having issues with Notepad, or just trying to figure out all the new features? Notepad’s support documentation …Read more"
+    },
+    {
+      "title": "Get Help With Notepad in Windows 11/10: Complete Guide",
+      "url": "https://techbaked.com/get-help-notepad-windows/",
+      "snippet": "Sep 29, 2026 · Learn how to use Notepad in Windows 11 and 10, including shortcuts, word wrap, find and replace, saving files, …Read more"
+    },
+    {
+      "title": "How to Use Notepad: An Easy- to-Follow Guide for Beginners - wikiHow",
+      "url": "https://www.wikihow.com/Use-Notepad",
+      "snippet": "Oct 28, 2026 · In this tutorial, we'll teach you how to use Notepad in Windows 11 and 10, with helpful Notepad tips and tricks for …Read more"
+    },
+    {
+      "title": "Get Help with Notepad in Windows: 9 Master Tricks You Need to Know",
+      "url": "https://tinhn.com/en/get-help-with-notepad-in-windows/",
+      "snippet": "Jul 3, 2026 · Get help with Notepad in Windows 10 & 11: fix crashes, repair via Microsoft Store, reinstall, use AI features, log-file …Read more"
+    }
+  ]
+}

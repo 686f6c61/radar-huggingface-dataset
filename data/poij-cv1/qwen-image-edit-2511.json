@@ -1,0 +1,51 @@
+{
+  "schema": 2,
+  "id": "Poij-cv1/Qwen-Image-Edit-2511",
+  "slug": "poij-cv1-qwen-image-edit-2511",
+  "author": "Poij-cv1",
+  "url": "https://huggingface.co/Poij-cv1/Qwen-Image-Edit-2511",
+  "created_at": "2026-11-24T15:14:42.000Z",
+  "updated_at": "2026-11-24T15:14:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-image",
+  "library": "diffusers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "image-to-image",
+    "en",
+    "zh",
+    "arxiv:2508.02324",
+    "license:apache-2.0",
+    "diffusers:QwenImageEditPlusPipeline",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 20430401088,
+  "parameters_human": "20.43B",
+  "storage_bytes": 57710671694,
+  "storage_human": "57.7 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

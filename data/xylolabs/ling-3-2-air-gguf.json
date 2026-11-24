@@ -1,0 +1,61 @@
+{
+  "schema": 2,
+  "id": "Xylolabs/Ling-3.2-air-GGUF",
+  "slug": "xylolabs-ling-3-2-air-gguf",
+  "author": "Xylolabs",
+  "url": "https://huggingface.co/Xylolabs/Ling-3.2-air-GGUF",
+  "created_at": "2026-11-24T12:38:00.000Z",
+  "updated_at": "2026-11-24T12:45:16.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "gguf",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "llama-cpp",
+    "quantized",
+    "moe",
+    "image-text-to-text",
+    "en",
+    "zh",
+    "base_model:inclusionAI/Ling-3.2-air",
+    "base_model:quantized:inclusionAI/Ling-3.2-air",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 127486405600,
+  "parameters_human": "127.49B",
+  "storage_bytes": 81268819552,
+  "storage_human": "81.3 GB",
+  "context_length": 262144,
+  "base_model": "inclusionAI/Ling-3.2-air",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "How to apply for a visitor visa - Canada.ca",
+      "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/visit-canada/apply-visitor-visa.html",
+      "snippet": "The reason you’re travelling to Canada determines the way you apply and the documents you need to submit with your visa …Read more"
+    }
+  ]
+}

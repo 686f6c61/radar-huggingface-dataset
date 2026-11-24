@@ -1,0 +1,105 @@
+{
+  "schema": 2,
+  "id": "ai-babai/Yuanbao-Reranker-0.6B-GGUF",
+  "slug": "ai-babai-yuanbao-reranker-0-6b-gguf",
+  "author": "ai-babai",
+  "url": "https://huggingface.co/ai-babai/Yuanbao-Reranker-0.6B-GGUF",
+  "created_at": "2026-11-24T16:22:39.000Z",
+  "updated_at": "2026-11-24T17:24:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-ranking",
+  "library": "gguf",
+  "languages": [
+    "ru",
+    "en",
+    "zh",
+    "multilingual"
+  ],
+  "tags": [
+    "gguf",
+    "reranker",
+    "text-ranking",
+    "russian",
+    "llama-cpp",
+    "llama-server",
+    "node-llama-cpp",
+    "qmd",
+    "open-webui",
+    "rag",
+    "information-retrieval",
+    "qwen3",
+    "apple-silicon",
+    "q8_0",
+    "q4_k_m",
+    "ru",
+    "en",
+    "zh",
+    "multilingual",
+    "arxiv:2611.10405",
+    "base_model:Yuanbao-Search/Yuanbao-Reranker-0.6B",
+    "base_model:quantized:Yuanbao-Search/Yuanbao-Reranker-0.6B",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 595778560,
+  "parameters_human": "595.8M",
+  "storage_bytes": 2235728332,
+  "storage_human": "2.2 GB",
+  "context_length": 40960,
+  "base_model": "Yuanbao-Search/Yuanbao-Reranker-0.6B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "Document reranking",
+      "dataset": "RuBQ Horizon pilot (150 queries, 3,656 pairs)",
+      "metric": "nDCG@10",
+      "value": 0.8479845659664136
+    },
+    {
+      "task": "Document reranking",
+      "dataset": "RuBQ Horizon pilot (150 queries, 3,656 pairs)",
+      "metric": "MRR@10",
+      "value": 0.8407777777777777
+    },
+    {
+      "task": "Document reranking",
+      "dataset": "RuBQ Horizon pilot (150 queries, 3,656 pairs)",
+      "metric": "nDCG@10",
+      "value": 0.8487614236632546
+    },
+    {
+      "task": "Document reranking",
+      "dataset": "RuBQ Horizon pilot (150 queries, 3,656 pairs)",
+      "metric": "MRR@10",
+      "value": 0.8390740740740741
+    },
+    {
+      "task": "Document reranking",
+      "dataset": "RuBQ Horizon pilot (150 queries, 3,656 pairs)",
+      "metric": "nDCG@10",
+      "value": 0.8475904943681829
+    },
+    {
+      "task": "Document reranking",
+      "dataset": "RuBQ Horizon pilot (150 queries, 3,656 pairs)",
+      "metric": "MRR@10",
+      "value": 0.8407777777777777
+    }
+  ],
+  "sources": []
+}

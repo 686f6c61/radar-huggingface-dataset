@@ -1,0 +1,75 @@
+{
+  "schema": 2,
+  "id": "KRAFTON/Raon-1-mini-dflash2",
+  "slug": "krafton-raon-1-mini-dflash2",
+  "author": "KRAFTON",
+  "url": "https://huggingface.co/KRAFTON/Raon-1-mini-dflash2",
+  "created_at": "2026-11-24T15:04:05.000Z",
+  "updated_at": "2026-11-24T18:23:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "vllm",
+  "languages": [],
+  "tags": [
+    "vllm",
+    "safetensors",
+    "qwen3",
+    "raon",
+    "dflash",
+    "speculative-decoding",
+    "text-generation",
+    "base_model:KRAFTON/Raon-1-mini",
+    "base_model:finetune:KRAFTON/Raon-1-mini",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 677776640,
+  "parameters_human": "677.8M",
+  "storage_bytes": 1355562136,
+  "storage_human": "1.4 GB",
+  "context_length": null,
+  "base_model": "KRAFTON/Raon-1-mini",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "home | KRAFTON",
+      "url": "https://www.krafton.com/en/",
+      "snippet": "KRAFTON will further expand our original IPs and build immersive, virtual worlds, where our fans play together and share fun …"
+    },
+    {
+      "title": "KRAFTON",
+      "url": "https://accounts.krafton.com/",
+      "snippet": "Creating a KRAFTON Player Account opens up a world of opportunities. We use your KRAFTON Player Account as a vessel to …"
+    },
+    {
+      "title": "Krafton - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Krafton",
+      "snippet": "Krafton ... KRAFTON, Inc. (Korean: 주식회사 크래프톤) is a South Korean video game publisher and holding company based in …"
+    },
+    {
+      "title": "Games - KRAFTON",
+      "url": "https://www.krafton.com/en/games/",
+      "snippet": "Action, Adventure PC Console inZOI"
+    },
+    {
+      "title": "Welcome to Krafton ID - NEWS - PUBG: BATTLEGROUNDS",
+      "url": "https://pubg.com/en/news/1634",
+      "snippet": "Aug 25, 2021 · Registering for your Krafton ID grants you access to information about Krafton games as well as an added benefit of …"
+    }
+  ]
+}

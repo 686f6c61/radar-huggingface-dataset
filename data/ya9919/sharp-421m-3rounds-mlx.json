@@ -5,7 +5,7 @@
   "author": "ya9919",
   "url": "https://huggingface.co/ya9919/sharp-421m-3rounds-mlx",
   "created_at": "2026-10-19T20:42:51.000Z",
-  "updated_at": "2026-11-17T07:23:00.000Z",
+  "updated_at": "2026-11-18T07:57:48.000Z",
   "license": "s2-mas-controlled-research-v1.2",
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -26,7 +26,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 33,
   "trending_score": 0,
   "parameters": 421293830,
   "parameters_human": "421.3M",
@@ -43,8 +43,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "ya9919/YN-421m-3rounds-mlx",
+  "renamed_at": "2026-11-24T14:08:24.271Z",
   "benchmarks": [],
   "sources": []
 }

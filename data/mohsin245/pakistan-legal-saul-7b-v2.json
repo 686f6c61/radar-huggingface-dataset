@@ -1,0 +1,53 @@
+{
+  "schema": 2,
+  "id": "Mohsin245/Pakistan-Legal-Saul-7b-v2",
+  "slug": "mohsin245-pakistan-legal-saul-7b-v2",
+  "author": "Mohsin245",
+  "url": "https://huggingface.co/Mohsin245/Pakistan-Legal-Saul-7b-v2",
+  "created_at": "2026-11-24T20:11:02.000Z",
+  "updated_at": "2026-11-24T20:17:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "mistral",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:Equall/Saul-7B-Instruct-v1",
+    "base_model:finetune:Equall/Saul-7B-Instruct-v1",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7241732096,
+  "parameters_human": "7.24B",
+  "storage_bytes": 28967455459,
+  "storage_human": "29.0 GB",
+  "context_length": null,
+  "base_model": "Equall/Saul-7B-Instruct-v1",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -28,7 +28,7 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 499714888,
+  "storage_bytes": 499721497,
   "storage_human": "500 MB",
   "context_length": null,
   "base_model": "unsloth/Qwen2.5-7B-Instruct",

@@ -1,0 +1,69 @@
+{
+  "schema": 2,
+  "id": "rousseau/clap-htsat-unfused-burn",
+  "slug": "rousseau-clap-htsat-unfused-burn",
+  "author": "rousseau",
+  "url": "https://huggingface.co/rousseau/clap-htsat-unfused-burn",
+  "created_at": "2026-11-24T20:09:17.000Z",
+  "updated_at": "2026-11-24T20:09:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "burn",
+  "languages": [],
+  "tags": [
+    "burn",
+    "audio",
+    "clap",
+    "base_model:laion/clap-htsat-unfused",
+    "base_model:finetune:laion/clap-htsat-unfused",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 618379008,
+  "storage_human": "618 MB",
+  "context_length": null,
+  "base_model": "laion/clap-htsat-unfused",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Formez-vous au code de la route avec Codes Rousseau",
+      "url": "https://public.codesrousseau.fr/",
+      "snippet": "Que vous souhaitiez passer votre permis voiture, moto, poids lourd ou bateau, Codes Rousseau dispose de tous les outils …"
+    },
+    {
+      "title": "Jean-Jacques Rousseau - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/Jean-Jacques_Rousseau",
+      "snippet": "After some correspondence with Rousseau, which included an eighteen-page letter from Rousseau describing the reasons for his …"
+    },
+    {
+      "title": "Jean-Jacques Rousseau - LAROUSSE",
+      "url": "https://www.larousse.fr/encyclopedie/personnage/Jean-Jacques_Rousseau/141649",
+      "snippet": "Rousseau, qui souffre d'un délire de persécution, consacre ses trois dernières œuvres à l'introspection et à l'écriture de soi : les …"
+    },
+    {
+      "title": "Jean-Jacques Rousseau | Biography, Education, Philosophy, …",
+      "url": "https://www.britannica.com/biography/Jean-Jacques-Rousseau",
+      "snippet": "Nov 13, 2026 · Jean-Jacques Rousseau, Swiss-born philosopher, writer, and political theorist whose treatises and novels inspired …"
+    },
+    {
+      "title": "Rousseau : une pensée révolutionnaire - Les-Philosophes.fr",
+      "url": "https://www.les-philosophes.fr/auteur-rousseau.html",
+      "snippet": "Dans cette page consacrée à Jean-Jacques Rousseau, découvrez : des résumés d'œuvres, les travaux de commentateurs, une …"
+    }
+  ]
+}

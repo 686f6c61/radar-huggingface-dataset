@@ -1,0 +1,83 @@
+{
+  "schema": 2,
+  "id": "sudiptoHaldar/qwen3-4b-finqa-program-qlora",
+  "slug": "sudiptohaldar-qwen3-4b-finqa-program-qlora",
+  "author": "sudiptoHaldar",
+  "url": "https://huggingface.co/sudiptoHaldar/qwen3-4b-finqa-program-qlora",
+  "created_at": "2026-11-24T14:00:11.000Z",
+  "updated_at": "2026-11-24T14:00:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "qlora",
+    "finqa",
+    "finance",
+    "question-answering",
+    "program-synthesis",
+    "text-generation",
+    "conversational",
+    "en",
+    "dataset:bevaya/FinQA",
+    "arxiv:2505.09388",
+    "base_model:Qwen/Qwen3-4B",
+    "base_model:adapter:Qwen/Qwen3-4B",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 77550430,
+  "storage_human": "78 MB",
+  "context_length": null,
+  "base_model": "Qwen/Qwen3-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "Writing a program that answers a question about a financial report",
+      "dataset": "FinQA, this project's own split by company (not the official test split)",
+      "metric": "Execution accuracy",
+      "value": 73.19
+    },
+    {
+      "task": "Writing a program that answers a question about a financial report",
+      "dataset": "FinQA, this project's own split by company (not the official test split)",
+      "metric": "Program match",
+      "value": 68.05
+    },
+    {
+      "task": "Writing a program that answers a question about a financial report",
+      "dataset": "FinQA, this project's own split by company (not the official test split)",
+      "metric": "Answer accuracy",
+      "value": 66.98
+    },
+    {
+      "task": "Writing a program that answers a question about a financial report",
+      "dataset": "FinQA, this project's own split by company (not the official test split)",
+      "metric": "Replies in the format",
+      "value": 100
+    }
+  ],
+  "sources": []
+}

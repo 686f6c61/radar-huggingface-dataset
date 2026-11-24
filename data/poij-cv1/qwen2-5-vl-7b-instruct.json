@@ -1,0 +1,65 @@
+{
+  "schema": 2,
+  "id": "Poij-cv1/Qwen2.5-VL-7B-Instruct",
+  "slug": "poij-cv1-qwen2-5-vl-7b-instruct",
+  "author": "Poij-cv1",
+  "url": "https://huggingface.co/Poij-cv1/Qwen2.5-VL-7B-Instruct",
+  "created_at": "2026-11-24T15:14:07.000Z",
+  "updated_at": "2026-11-24T15:14:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2_5_vl",
+    "image-text-to-text",
+    "multimodal",
+    "conversational",
+    "en",
+    "arxiv:2309.00071",
+    "arxiv:2409.12191",
+    "arxiv:2308.12966",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8292166656,
+  "parameters_human": "8.29B",
+  "storage_bytes": 16584414560,
+  "storage_human": "16.6 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Alphaneural",
+      "url": "http://go/v1/AbhsDy_LEnV1awWpuAGdFfOcSGptR2hWo73PODkEhYwkjaVM__abTd4F9nztUo3SNU0k6VF0DjW9tDXYueJaAvSnrUJz0TuX0b2qcAFkbKpmul-Y1BqUwRxA2pYQ9aYC6G9Ic7oKEwxHzjhJcd2oOXCUSLwMTjfxLM2YaFWFlAtEPy_wb1YQ132OIbZ1-ChWP9ev_lSbKPqE7CnsDF-Cd-7fO43EKyaYQlSelGrnBA8",
+      "snippet": "We enhance both training and inference speeds by strategically implementing window attention into the ViT. The ViT architecture is further optimized with SwiGLU and RMSNorm, aligning it with the structure of the Qwen2.5 LLM. We have three models with 3, 7 and 72 billion parameters. This repo contains the instruction-tuned 7B Qwen2.5-VL model."
+    },
+    {
+      "title": "Qwen2.5-VL-7B-Instruct download | SourceForge.net",
+      "url": "http://go/v1/AbhsDy_LEnV1awWpuAGdFfOcSGptR2hWo73PODkEi53Ipmv2u1YveJg_LjaSG7TedclH1ayIynVFjl2frZW1-0cnRd2TaOk-LD9HU6FHzyzyqtU1cANktH17ae5W9vMgVRG3qG_QB1rGtnAlJiQ73eS6qCum-QEH2bs6kK-nLCio-CaYbpcWLDI2RH-EJl1KNsme4aBP6_g9kiZFl_qpY4Gg-xID7q-AskcE",
+      "snippet": "Qwen2.5-VL-7B-Instruct is a multimodal vision-language model developed by the Qwen team, designed to handle text, images, and long videos with high precision. Fine-tuned from Qwen2.5-VL, this 7-billion-parameter model can interpret visual content ..."
+    }
+  ]
+}

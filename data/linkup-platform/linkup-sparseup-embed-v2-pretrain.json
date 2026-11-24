@@ -1,0 +1,79 @@
+{
+  "schema": 2,
+  "id": "Linkup-Platform/linkup-sparseup-embed-v2-pretrain",
+  "slug": "linkup-platform-linkup-sparseup-embed-v2-pretrain",
+  "author": "Linkup-Platform",
+  "url": "https://huggingface.co/Linkup-Platform/linkup-sparseup-embed-v2-pretrain",
+  "created_at": "2026-11-19T13:08:38.000Z",
+  "updated_at": "2026-11-24T12:53:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "sentence-transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "modernbert",
+    "sparse",
+    "custom-code",
+    "splade",
+    "sparse-retrieval",
+    "feature-extraction",
+    "custom_code",
+    "en",
+    "dataset:lightonai/embeddings-pre-training-curated",
+    "arxiv:2611.09680",
+    "base_model:answerdotai/ModernBERT-base",
+    "base_model:finetune:answerdotai/ModernBERT-base",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 43,
+  "trending_score": 0,
+  "parameters": 149707140,
+  "parameters_human": "149.7M",
+  "storage_bytes": 599044232,
+  "storage_human": "599 MB",
+  "context_length": null,
+  "base_model": "answerdotai/ModernBERT-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "École de coaching : RNCP 6, CPF, +4 000 coachs formés",
+      "url": "https://www.linkup-coaching.com/",
+      "snippet": "“ Linkup est une école de coaching performante, structurée et qui continue après la certification à proposer des outils de performance. ”"
+    },
+    {
+      "title": "Sage LinkUp Experts",
+      "url": "https://www.linkup-sage.com/index.html",
+      "snippet": "Tableau de bord Achats Factures fournisseurs Documents achats Fournisseurs Ventes Factures clients Documents ventes Clients …"
+    },
+    {
+      "title": "Linkup | The Web Search API for AI",
+      "url": "https://www.linkup.so/",
+      "snippet": "Integrate in one line of code Linkup works with the OpenAI SDK wrapper, LangChain, CrewAI, and dozens of other frameworks. Drop …"
+    },
+    {
+      "title": "Formation coach professionnel RNCP 6 : 96% de réussite, CPF",
+      "url": "https://www.linkup-coaching.com/formations/devenir-coach-professionnel",
+      "snippet": "Jul 3, 2015 · Linkup Coaching propose trois voies d'accès pour intégrer notre formation coach professionnel certifiante. Chaque …"
+    }
+  ]
+}

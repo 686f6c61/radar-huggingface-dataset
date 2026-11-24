@@ -5,7 +5,7 @@
   "author": "useless-ai",
   "url": "https://huggingface.co/useless-ai/pitput",
   "created_at": "2026-11-18T10:03:55.000Z",
-  "updated_at": "2026-11-22T06:19:36.000Z",
+  "updated_at": "2026-11-24T11:59:27.000Z",
   "license": "private-research-only",
   "license_family": "unknown",
   "pipeline_tag": "text-to-speech",
@@ -15,6 +15,7 @@
   ],
   "tags": [
     "pytorch",
+    "safetensors",
     "text-to-speech",
     "tts",
     "hebrew",
@@ -25,15 +26,17 @@
     "region:us"
   ],
   "likes": 3,
-  "downloads_30d": 37,
+  "downloads_30d": 42,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 42833756,
-  "storage_human": "43 MB",
+  "storage_bytes": 128906144,
+  "storage_human": "129 MB",
   "context_length": null,
   "base_model": null,
-  "formats": [],
+  "formats": [
+    "safetensors"
+  ],
   "is_conversational": false,
   "gated": false,
   "disabled": false,

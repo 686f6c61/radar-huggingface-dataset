@@ -5,7 +5,7 @@
   "author": "zjgkkn",
   "url": "https://huggingface.co/zjgkkn/qwen3.5-2b-steam-reviews-lora",
   "created_at": "2026-11-22T14:04:52.000Z",
-  "updated_at": "2026-11-22T14:41:51.000Z",
+  "updated_at": "2026-11-24T10:55:44.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -28,7 +28,7 @@
     "region:us"
   ],
   "likes": 2,
-  "downloads_30d": 18,
+  "downloads_30d": 22,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

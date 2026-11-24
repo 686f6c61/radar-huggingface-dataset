@@ -1,0 +1,40 @@
+{
+  "schema": 2,
+  "id": "EllaPriest45/QwenImage2.1_base",
+  "slug": "ellapriest45-qwenimage2-1_base",
+  "author": "EllaPriest45",
+  "url": "https://huggingface.co/EllaPriest45/QwenImage2.1_base",
+  "created_at": "2026-09-23T12:02:35.000Z",
+  "updated_at": "2026-11-24T15:01:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 14,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 29914651504,
+  "storage_human": "29.9 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

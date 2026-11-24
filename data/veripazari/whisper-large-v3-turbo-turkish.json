@@ -1,0 +1,61 @@
+{
+  "schema": 2,
+  "id": "veripazari/whisper-large-v3-turbo-turkish",
+  "slug": "veripazari-whisper-large-v3-turbo-turkish",
+  "author": "veripazari",
+  "url": "https://huggingface.co/veripazari/whisper-large-v3-turbo-turkish",
+  "created_at": "2026-11-24T17:25:50.000Z",
+  "updated_at": "2026-11-24T17:25:51.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [
+    "tr"
+  ],
+  "tags": [
+    "transformers",
+    "tensorboard",
+    "safetensors",
+    "whisper",
+    "automatic-speech-recognition",
+    "generated_from_trainer",
+    "tr",
+    "dataset:mozilla-foundation/common_voice_17_0",
+    "base_model:openai/whisper-large-v3-turbo",
+    "base_model:finetune:openai/whisper-large-v3-turbo",
+    "license:mit",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 808878080,
+  "parameters_human": "808.9M",
+  "storage_bytes": 3235627885,
+  "storage_human": "3.2 GB",
+  "context_length": null,
+  "base_model": "openai/whisper-large-v3-turbo",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "Common Voice 17.0",
+      "metric": "Wer",
+      "value": 18.92291759135967
+    }
+  ],
+  "sources": []
+}

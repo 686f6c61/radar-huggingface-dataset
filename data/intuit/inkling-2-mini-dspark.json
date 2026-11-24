@@ -1,0 +1,71 @@
+{
+  "schema": 2,
+  "id": "intuit/Inkling-2-Mini-dspark",
+  "slug": "intuit-inkling-2-mini-dspark",
+  "author": "intuit",
+  "url": "https://huggingface.co/intuit/Inkling-2-Mini-dspark",
+  "created_at": "2026-11-24T18:28:16.000Z",
+  "updated_at": "2026-11-24T18:30:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "inkling2_loop",
+    "speculative-decoding",
+    "dspark",
+    "draft-model",
+    "base_model:thinkingmachines/Inkling-2-Mini",
+    "base_model:quantized:thinkingmachines/Inkling-2-Mini",
+    "license:apache-2.0",
+    "modelopt",
+    "region:us"
+  ],
+  "likes": 3,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 635801416,
+  "storage_human": "636 MB",
+  "context_length": null,
+  "base_model": "thinkingmachines/Inkling-2-Mini",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Intuit®: Outdo your financial goals—all in one place",
+      "url": "https://www.intuit.com/",
+      "snippet": "Experts guide and help you get it right Real experts are there when you want them, to review your work and guide your next move, …"
+    },
+    {
+      "title": "Intuit Accounts - Sign In",
+      "url": "https://accounts.intuit.com/signin",
+      "snippet": "By selecting Sign in for your Intuit Account, you agree to our Terms. Our Privacy Policy applies to your personal data."
+    },
+    {
+      "title": "Intuit : Ouvrir une session | Ouvrir une session pour accéder à votre ...",
+      "url": "https://www.intuit.com/fr-ca/sign-in/",
+      "snippet": "Besoin d’aide? You can also reach out by calling Intuit Phone Support at 1-800-446-8848."
+    },
+    {
+      "title": "Intuit - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Intuit",
+      "snippet": "Intuit Canada ULC, an indirect wholly owned subsidiary of Intuit, is a developer of financial management and tax preparation …"
+    },
+    {
+      "title": "QuickBooks Online Login: Sign in to Access Your QuickBooks Account",
+      "url": "https://quickbooks.intuit.com/login/?msockid=12b7d7ef8c1e6cdb3ef0cff48d7f6d52",
+      "snippet": "1. 84% of customers say their books are more accurate when they use QuickBooks, powered by Intuit Intelligence: based on a …"
+    }
+  ]
+}

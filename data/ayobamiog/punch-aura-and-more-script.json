@@ -1,0 +1,93 @@
+{
+  "schema": 2,
+  "id": "Ayobamiog/punch-aura-and-more-script",
+  "slug": "ayobamiog-punch-aura-and-more-script",
+  "author": "Ayobamiog",
+  "url": "https://huggingface.co/Ayobamiog/punch-aura-and-more-script",
+  "created_at": "2026-11-24T20:10:22.000Z",
+  "updated_at": "2026-11-24T20:10:22.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en",
+    "ru",
+    "zh",
+    "es",
+    "pt",
+    "tr",
+    "de",
+    "fr",
+    "ja",
+    "ko",
+    "ar",
+    "pl",
+    "vi",
+    "id"
+  ],
+  "tags": [
+    "windows",
+    "windows-11",
+    "x64",
+    "portable",
+    "punch-aura-and-more-script",
+    "en",
+    "ru",
+    "zh",
+    "es",
+    "pt",
+    "tr",
+    "de",
+    "fr",
+    "ja",
+    "ko",
+    "ar",
+    "pl",
+    "vi",
+    "id",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "context_length": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI News | Latest News | Insights Powering AI-Driven Business Growth",
+      "url": "https://www.artificialintelligence-news.com/",
+      "snippet": "4 days ago · AI News delivers the latest updates in artificial intelligence, machine learning, deep learning, enterprise AI, and …Read more"
+    },
+    {
+      "title": "Artificial Intelligence News -- ScienceDaily",
+      "url": "https://www.sciencedaily.com/news/computers_math/artificial_intelligence/",
+      "snippet": "Nov 12, 2026 · Artificial Intelligence News. Everything on AI including futuristic robots with artificial intelligence, computer models of …Read more"
+    },
+    {
+      "title": "AI News | Latest Headlines and Developments | Reuters",
+      "url": "https://www.reuters.com/technology/artificial-intelligence/",
+      "snippet": "5 days ago · Explore the latest artificial intelligence news with Reuters - from AI breakthroughs and technology trends to regulation, …Read more"
+    },
+    {
+      "title": "Google News - Artificial intelligence - Latest",
+      "url": "https://news.google.com/topics/CAAqJAgKIh5DQkFTRUFvSEwyMHZNRzFyZWhJRlpXNHRSMElvQUFQAQ",
+      "snippet": "Read full articles, watch videos, browse thousands of titles and more on the \"Artificial intelligence\" topic with Google News."
+    }
+  ]
+}

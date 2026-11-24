@@ -1,0 +1,48 @@
+{
+  "schema": 2,
+  "id": "amir0907/dots-s2st-qwen2.5-2b-expanded-initialized",
+  "slug": "amir0907-dots-s2st-qwen2-5-2b-expanded-initialized",
+  "author": "amir0907",
+  "url": "https://huggingface.co/amir0907/dots-s2st-qwen2.5-2b-expanded-initialized",
+  "created_at": "2026-11-24T17:50:05.000Z",
+  "updated_at": "2026-11-24T17:51:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "audio-to-audio",
+  "library": null,
+  "languages": [
+    "en",
+    "fa"
+  ],
+  "tags": [
+    "safetensors",
+    "dots_s2st",
+    "audio-to-audio",
+    "en",
+    "fa",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3743148600,
+  "parameters_human": "3.74B",
+  "storage_bytes": 7875701571,
+  "storage_human": "7.9 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

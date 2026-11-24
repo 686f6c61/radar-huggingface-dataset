@@ -1,0 +1,81 @@
+{
+  "schema": 2,
+  "id": "Linkup-Platform/linkup-sparseup-embed-v2",
+  "slug": "linkup-platform-linkup-sparseup-embed-v2",
+  "author": "Linkup-Platform",
+  "url": "https://huggingface.co/Linkup-Platform/linkup-sparseup-embed-v2",
+  "created_at": "2026-11-18T14:36:20.000Z",
+  "updated_at": "2026-11-24T12:53:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "sentence-transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "modernbert",
+    "sparse",
+    "sentence-similarity",
+    "custom-code",
+    "splade",
+    "sparse-retrieval",
+    "matryoshka",
+    "feature-extraction",
+    "custom_code",
+    "en",
+    "dataset:lightonai/embeddings-fine-tuning-filtered-en",
+    "arxiv:2611.09680",
+    "base_model:Linkup-Platform/linkup-sparseup-embed-v2-pretrain",
+    "base_model:finetune:Linkup-Platform/linkup-sparseup-embed-v2-pretrain",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 3,
+  "downloads_30d": 125,
+  "trending_score": 0,
+  "parameters": 149707140,
+  "parameters_human": "149.7M",
+  "storage_bytes": 602795548,
+  "storage_human": "603 MB",
+  "context_length": null,
+  "base_model": "Linkup-Platform/linkup-sparseup-embed-v2-pretrain",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "École de coaching : RNCP 6, CPF, +4 000 coachs formés",
+      "url": "https://www.linkup-coaching.com/",
+      "snippet": "“ Linkup est une école de coaching performante, structurée et qui continue après la certification à proposer des outils de performance. ”"
+    },
+    {
+      "title": "Sage LinkUp Experts",
+      "url": "https://www.linkup-sage.com/index.html",
+      "snippet": "Tableau de bord Achats Factures fournisseurs Documents achats Fournisseurs Ventes Factures clients Documents ventes Clients …Read more"
+    },
+    {
+      "title": "Linkup | The Web Search API for AI",
+      "url": "https://www.linkup.so/",
+      "snippet": "Integrate in one line of code Linkup works with the OpenAI SDK wrapper, LangChain, CrewAI, and dozens of other frameworks. Drop …Read more"
+    },
+    {
+      "title": "Formation coach professionnel RNCP 6 : 96% de réussite, CPF",
+      "url": "https://www.linkup-coaching.com/formations/devenir-coach-professionnel",
+      "snippet": "Jul 3, 2015 · Linkup Coaching propose trois voies d'accès pour intégrer notre formation coach professionnel certifiante. Chaque …Read more"
+    }
+  ]
+}

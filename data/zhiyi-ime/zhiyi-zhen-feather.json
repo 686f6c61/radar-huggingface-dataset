@@ -5,7 +5,7 @@
   "author": "zhiyi-ime",
   "url": "https://huggingface.co/zhiyi-ime/zhiyi-zhen-feather",
   "created_at": "2026-11-21T21:20:21.000Z",
-  "updated_at": "2026-11-23T00:46:59.000Z",
+  "updated_at": "2026-11-23T21:33:01.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
@@ -35,7 +35,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 34,
+  "downloads_30d": 45,
   "trending_score": 0,
   "parameters": 77708316,
   "parameters_human": "77.7M",
