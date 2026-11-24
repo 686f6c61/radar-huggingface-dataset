@@ -5,7 +5,7 @@
   "author": "qvac",
   "url": "https://huggingface.co/qvac/TranscribePsy-250M-EU-sub-gguf",
   "created_at": "2026-09-30T08:06:11.000Z",
-  "updated_at": "2026-11-07T17:40:08.000Z",
+  "updated_at": "2026-11-23T16:40:04.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "automatic-speech-recognition",
@@ -45,7 +45,7 @@
     "region:us"
   ],
   "likes": 5,
-  "downloads_30d": 1519,
+  "downloads_30d": 1344,
   "trending_score": 0,
   "parameters": 283492118,
   "parameters_human": "283.5M",

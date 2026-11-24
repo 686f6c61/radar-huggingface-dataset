@@ -9,11 +9,12 @@
   "license": "gemma",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
-  "library": null,
+  "library": "mediapipe",
   "languages": [
     "en"
   ],
   "tags": [
+    "mediapipe",
     "gguf",
     "gemma",
     "google",
@@ -21,7 +22,6 @@
     "offline-ai",
     "on-device-ai",
     "mobile-ai",
-    "mediapipe",
     "text-generation",
     "en",
     "license:gemma",
@@ -30,7 +30,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 182,
+  "downloads_30d": 185,
   "trending_score": 0,
   "parameters": 2614341888,
   "parameters_human": "2.61B",

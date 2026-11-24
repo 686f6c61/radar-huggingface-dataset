@@ -5,7 +5,7 @@
   "author": "lecturaworld",
   "url": "https://huggingface.co/lecturaworld/lectura-vc-zeroshot-v0",
   "created_at": "2026-11-17T11:35:53.000Z",
-  "updated_at": "2026-11-17T11:36:11.000Z",
+  "updated_at": "2026-11-23T14:59:59.000Z",
   "license": "cc-by-4.0",
   "license_family": "oss",
   "pipeline_tag": "audio-to-audio",
@@ -15,6 +15,7 @@
   ],
   "tags": [
     "onnx",
+    "lectura-vc-zeroshot",
     "voice-conversion",
     "openvoice",
     "audioseal",

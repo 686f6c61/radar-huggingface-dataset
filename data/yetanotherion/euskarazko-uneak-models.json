@@ -1,0 +1,43 @@
+{
+  "schema": 2,
+  "id": "yetanotherion/euskarazko-uneak-models",
+  "slug": "yetanotherion-euskarazko-uneak-models",
+  "author": "yetanotherion",
+  "url": "https://huggingface.co/yetanotherion/euskarazko-uneak-models",
+  "created_at": "2026-11-24T06:51:33.000Z",
+  "updated_at": "2026-11-24T06:51:36.000Z",
+  "license": "mixed",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "language-identification",
+    "speaker-diarization",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 219018550,
+  "storage_human": "219 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

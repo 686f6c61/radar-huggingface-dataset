@@ -5,7 +5,7 @@
   "author": "aidendle94",
   "url": "https://huggingface.co/aidendle94/Inkling-2-Small-DGX-Spark",
   "created_at": "2026-11-16T02:07:27.000Z",
-  "updated_at": "2026-11-21T06:29:18.000Z",
+  "updated_at": "2026-11-23T09:58:45.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -30,7 +30,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 164,
+  "downloads_30d": 172,
   "trending_score": 0,
   "parameters": 383072987216,
   "parameters_human": "383.07B",

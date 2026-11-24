@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/Yoshino2-2B-i1-GGUF",
   "created_at": "2026-11-08T04:26:07.000Z",
-  "updated_at": "2026-11-20T10:54:20.000Z",
+  "updated_at": "2026-11-23T11:59:54.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -29,7 +29,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 2716,
+  "downloads_30d": 2750,
   "trending_score": 0,
   "parameters": 1942653248,
   "parameters_human": "1.94B",

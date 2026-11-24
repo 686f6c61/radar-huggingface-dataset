@@ -9,13 +9,13 @@
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": null,
-  "library": null,
+  "library": "mediapipe",
   "languages": [],
   "tags": [
+    "mediapipe",
     "pytorch",
     "sign-language",
     "arabic-sign-language",
-    "mediapipe",
     "transformer",
     "license:mit",
     "region:us"

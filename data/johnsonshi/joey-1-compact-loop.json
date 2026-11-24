@@ -26,11 +26,11 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 48,
   "trending_score": 0,
   "parameters": 2492923744,
   "parameters_human": "2.49B",
-  "storage_bytes": 5006449014,
+  "storage_bytes": 5006306545,
   "storage_human": "5.0 GB",
   "context_length": null,
   "base_model": "baselabs/joey-1",

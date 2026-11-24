@@ -5,7 +5,7 @@
   "author": "Remek",
   "url": "https://huggingface.co/Remek/basal-omni-2.0-mini-preview-GGUF",
   "created_at": "2026-11-14T16:35:26.000Z",
-  "updated_at": "2026-11-14T16:35:41.000Z",
+  "updated_at": "2026-11-23T13:41:21.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

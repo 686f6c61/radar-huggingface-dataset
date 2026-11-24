@@ -2,110 +2,112 @@
 
 ## Resumen
 
-Nemotron-3-Nano-30B-A3B es un modelo de lenguaje de NVIDIA con arquitectura híbrida que combina capas Mamba-2, capas de mezcla de expertos (MoE) y capas de atención clásica. Cuenta con 30 000 millones de parámetros totales, de los cuales solo 3500 millones están activos por token, lo que lo sitúa en la categoría de modelos eficientes para inferencia. Esta ficha concreta corresponde a la conversión del modelo original en BF16 al formato LiteRT-LM 0.19.1, publicada por la comunidad litert-community para su ejecución en CPU y GPU (WebGPU) mediante el runtime de Google AI Edge.
+Nemotron-3-Nano-30B-A3B es un modelo de lenguaje de NVIDIA con arquitectura híbrida que combina capas Mamba-2, capas de mezcla de expertos (MoE) y capas de atención clásica. Cuenta con 30.000 millones de parámetros totales, de los cuales solo 3.500 millones están activos por token, lo que lo sitúa en la categoría de modelos MoE eficientes en cómputo. El repositorio analizado es una conversión del modelo original en BF16 de NVIDIA al formato LiteRT-LM, orientada a ejecución en dispositivos y navegadores mediante WebGPU y CPU.
 
-El modelo resuelve el problema de desplegar un LLM de razonamiento de gran tamaño en hardware de consumo y estaciones de trabajo sin GPU dedicada de datacenter: los artefactos int4 ocupan entre 20,1 y 20,6 GB y alcanzan 74,6 tokens/s de decodificación en una Apple M4 Max con WebGPU, con un pico de memoria de 22,2 GB. La versión CPU con 8 hilos mantiene 9,77 tokens/s de decodificación con solo 4,4 GB de memoria pico, lo que permite ejecución en portátiles convencionales.
+La conversión la mantiene la comunidad `litert-community` y publica cuatro artefactos cuantizados (int4 y mixed_int4) con ventanas de contexto de 2.048 y 4.096 tokens. El modelo está pensado para generación de texto con razonamiento explícito (modo *thinking* activado por defecto) y soporta inglés, español, francés, alemán, japonés e italiano. Su relevancia actual radica en que demuestra que un MoE de 30B puede ejecutarse en hardware de consumo (Apple M4 Max) con velocidades de decodificación superiores a 70 tokens/s en GPU.
 
-Es relevante ahora porque demuestra que un MoE híbrido de 30B puede ejecutarse fuera de ecosistemas CUDA tradicionales, con cuantización mixta int4/int8, y porque incluye modo de razonamiento (thinking) activado por defecto, soporte multilingüe en seis idiomas y tool calling en formato textual. La licencia es la NVIDIA Nemotron Open Model License, heredada del modelo base.
+La licencia es la NVIDIA Nemotron Open Model License, que no es una licencia de código abierto estándar y requiere revisión para uso comercial. El formato de pesos es propietario de LiteRT-LM (`.litertlm`), lo que limita su portabilidad a otros runtimes como llama.cpp o vLLM.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Híbrida: 52 capas (23 Mamba-2, 23 MoE, 6 attention) |
-| Parámetros totales | 30B |
-| Parámetros activos | 3,5B |
-| Longitud de contexto | 2048 tokens (artefactos ekv2048) y 4096 tokens (artefacto ekv4096) |
-| Tipos de cuantización | int4 (expertos int4, router fp32, token table y lm_head int8); mixed_int4 (matrices no-expertas int8) |
+| Arquitectura | Híbrida: 52 capas (23 Mamba-2, 23 MoE, 6 atención) |
+| Parametros totales | 30.000 millones |
+| Parametros activos | 3.500 millones |
+| Longitud de contexto | 2.048 o 4.096 tokens según artefacto |
+| Tipos de cuantizacion | int4 (expertos en bloques de 128, down projection en bloques de 64), mixed_int4 (expertos en bloques de 32), router fp32, activaciones fp32, token table y lm_head int8 |
 | Idiomas soportados | en, es, fr, de, ja, it |
-| Licencia | NVIDIA Nemotron Open Model License |
-| Formato de pesos | .litertlm (LiteRT-LM 0.19.1) |
+| Licencia | nvidia-nemotron-open-model-license |
+| Formato de pesos | `.litertlm` (LiteRT-LM) |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es un transformer híbrido con 52 capas distribuidas en 23 capas Mamba-2 (modelo de espacio de estados), 23 capas de mezcla de expertos y 6 capas de atención. Esta combinación busca reducir el coste computacional de la atención cuadrática en contextos largos manteniendo la capacidad expresiva de un MoE. El modelo totaliza 30B parámetros con 3,5B activos por token, lo que reduce el coste de inferencia a aproximadamente una novena parte del de un modelo denso equivalente.
+La arquitectura es un transformer híbrido con 52 capas distribuidas en tres tipos: 23 capas Mamba-2 (modelo de espacio de estados), 23 capas de mezcla de expertos y 6 capas de atención. Esta combinación busca reducir el coste computacional del prefill y la decodificación manteniendo capacidad expresiva. El modelo original de NVIDIA se distribuye en BF16 y esta conversión aplica cuantización selectiva: los expertos se cuantizan a int4 (con distintos tamaños de bloque según el artefacto), el router se mantiene en fp32 y las activaciones se declaran en fp32. La tabla de tokens y la cabeza de salida (`lm_head`) se cuantizan a int8.
 
-El modelo base es nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16. La información disponible no detalla el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas de RLHF o DPO. La conversión a LiteRT-LM documenta decisiones técnicas concretas: los expertos de cada capa se agrupan en una única operación `moe` personalizada, la activación relu² se reescribe como `gelu_tanh` (verificada mediante logits), y la salida de cada operación `moe` tiene un segundo consumidor (`moe * 0`) para evitar que ML Drift fusione la operación siguiente. El router se mantiene en fp32 y las activaciones se declaran en fp32.
+No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas de RLHF o DPO en la información proporcionada. La model card de la conversión menciona que el modo *thinking* está activado por defecto y que la activación de los expertos se verificó mediante logits (relu² reescrito como `gelu_tanh`). Cada capa de expertos se implementa como una operación personalizada `moe` en LiteRT-LM.
 
 ## Capacidades
 
-- Generación de texto y razonamiento multi-paso, con modo thinking activado por defecto y desactivable mediante `ThinkingConfig(enable_thinking=False)`.
-- Razonamiento aritmético y de sentido común: en la evaluación del autor, 12/12 respuestas correctas con thinking activado y 11/12 con thinking desactivado.
-- Soporte de tool calling / function calling, devuelto como texto en el formato `<tool_call>` del modelo.
-- Conversaciones multi-turno con contexto de hasta 2048 o 4096 tokens según el artefacto.
+- Generación de texto con razonamiento explícito (modo *thinking* activado por defecto, desactivable).
+- Razonamiento aritmético y conversacional multi-turno (se documenta una prueba de tres turnos con una multiplicación de 17 × 23).
+- Soporte de tool calling: el modelo emite llamadas en formato `<tool_call>` como texto plano, sin integración estructurada en el runtime.
 - Capacidades multilingües en inglés, español, francés, alemán, japonés e italiano.
-- Ejecución en CPU (paquete PyPI `litert-lm`) y en GPU mediante WebGPU (herramienta de línea de comandos compilada desde fuente).
+- Ejecución en GPU mediante WebGPU y en CPU con 8 hilos.
+- No se documentan capacidades de visión, audio ni agentes autónomos multi-paso en la información disponible.
 
 ## Casos de uso
 
-- Asistencia en estación de trabajo sin GPU de datacenter: el artefacto int4 ekv2048 con backend CPU (8 hilos) requiere solo 4,4 GB de memoria pico y decodifica a 9,77 tokens/s, suficiente para tareas interactivas de redacción y análisis en un portátil.
-- Razonamiento aritmético y verificación de cálculos: el modelo resuelve correctamente 12/12 preguntas de evaluación con thinking activado, por lo que es adecuado para validación de operaciones en pipelines de datos donde se necesita trazabilidad del razonamiento.
-- Prototipado de agentes con tool calling: el modelo emite llamadas a herramientas en formato `<tool_call>` que pueden parsearse e integrarse en orquestadores de agentes, aunque el runtime devuelve las llamadas como texto y requiere post-procesado.
-- Aplicaciones multilingües en Europa: con soporte para español, francés, alemán, italiano e inglés, cubre casos de atención al cliente y generación de contenido en los principales mercados europeos sin necesidad de modelos separados por idioma.
-- Despliegue en navegador o aplicaciones web con WebGPU: el backend GPU alcanza 851 tokens/s de prefill y 74,6 tokens/s de decodificación en Apple M4 Max, lo que permite interfaces conversacionales fluidas en el cliente.
-- Procesamiento por lotes en CPU con contexto de 4096 tokens: el artefacto mixed_int4 ekv4096 ofrece 115 tokens/s de prefill y 7,59 tokens/s de decodificación con 6,9 GB de memoria pico, adecuado para tareas de extracción y resumen en servidores sin GPU.
-- Evaluación comparativa de cuantizaciones: los tres artefactos publicados permiten medir el impacto de int4 frente a mixed_int4 en precisión y velocidad sobre el mismo modelo base.
+- Asistente conversacional local en navegador: el artefacto int4 con contexto de 2.048 tokens y 17,8 GB puede ejecutarse vía WebGPU en un equipo Apple M4 Max, permitiendo conversaciones multi-turno sin conexión a servicios en la nube.
+- Razonamiento aritmético asistido en aplicaciones de escritorio: el modo *thinking* por defecto mejora la precisión en operaciones encadenadas, como demuestra la prueba de tres turnos con 17 × 23.
+- Prototipado de agentes con tool calling: aunque las llamadas se devuelven como texto, un orquestador externo puede parsear el formato `<tool_call>` e integrar el modelo en pipelines de automatización.
+- Despliegue en CPU para entornos con recursos limitados: el artefacto int4 ekv2048 consume 4,4 GB de memoria pico en CPU con 8 hilos y decodifica a 12,8 tokens/s, adecuado para estaciones de trabajo sin GPU dedicada.
+- Evaluación de modelos híbridos Mamba-2/MoE en investigación: la conversión permite medir el comportamiento de un MoE de 30B con 3,5B activos en hardware de consumo, comparando precisión y latencia frente al BF16 original.
+- Generación de texto multilingüe en aplicaciones embebidas: el soporte de seis idiomas permite construir interfaces de chat localizadas sin depender de APIs externas.
+- Pruebas de precisión de cuantización: los cuatro artefactos (int4 y mixed_int4, con contextos de 2.048 y 4.096) permiten comparar el impacto de distintas estrategias de cuantización en la exactitud (12/12 con thinking activado, 11/12 con thinking desactivado).
 
 ## Benchmarks y rendimiento
 
-Rendimiento medido por el autor en Apple M4 Max (128 GB), LiteRT-LM v0.19.1:
+Rendimiento medido por LiteRT-LM v0.19.1 en un Apple M4 Max (128 GB) el 2026-11-12 (mediana de 5 procesos GPU o 3 procesos CPU por archivo):
 
-| Artefacto | Backend | Prefill (1024 tokens) | Decode (256 tokens) | Memoria pico |
+| Archivo | Backend | Prefill (1.024 tokens) | Decode (256 tokens) | Memoria pico |
 |---|---|---:|---:|---:|
-| int4 ekv2048 | GPU (WebGPU) | 851 tok/s | 74,6 tok/s | 22,2 GB |
-| int4 ekv2048 | CPU (8 hilos) | 105 tok/s | 9,77 tok/s | 4,4 GB |
-| mixed_int4 ekv2048 | GPU (WebGPU) | 852 tok/s | 71,5 tok/s | 22,6 GB |
-| mixed_int4 ekv2048 | CPU (8 hilos) | 114 tok/s | 7,20 tok/s | 6,4 GB |
-| mixed_int4 ekv4096 | GPU (WebGPU) | 815 tok/s | 67,9 tok/s | 23,2 GB |
-| mixed_int4 ekv4096 | CPU (8 hilos) | 115 tok/s | 7,59 tok/s | 6,9 GB |
+| int4 ekv2048 | GPU (WebGPU) | 852 tokens/s | 75,2 tokens/s | 19,8 GB |
+| int4 ekv2048 | CPU (8 hilos) | 107 tokens/s | 12,8 tokens/s | 4,4 GB |
+| int4 ekv4096 | GPU (WebGPU) | 815 tokens/s | 70,7 tokens/s | 20,4 GB |
+| int4 ekv4096 | CPU (8 hilos) | 106 tokens/s | 12,2 tokens/s | 5,0 GB |
+| mixed_int4 ekv2048 | GPU (WebGPU) | 845 tokens/s | 71,4 tokens/s | 22,6 GB |
+| mixed_int4 ekv2048 | CPU (8 hilos) | 116 tokens/s | 8,00 tokens/s | 6,4 GB |
+| mixed_int4 ekv4096 | GPU (WebGPU) | 809 tokens/s | 67,6 tokens/s | 23,2 GB |
+| mixed_int4 ekv4096 | CPU (8 hilos) | 114 tokens/s | 7,98 tokens/s | 6,9 GB |
 
-Precisión en la evaluación del autor (12 preguntas y un chat de tres turnos, greedy, frente a los pesos bf16 de NVIDIA):
+Precisión (12 preguntas y un chat de tres turnos, greedy, frente a los pesos BF16 de NVIDIA):
 
-| Thinking | Artefactos LiteRT (CPU y GPU) | Modelo fuente |
+| Thinking | Los cuatro archivos, CPU y GPU | Modelo fuente |
 |---|---|---|
-| Activado | 12/12 correctas; Kenji, 391 | no ejecutado |
-| Desactivado | 11/12 correctas; Kenji, 401 (int4 en CPU: 391) | 11/12 correctas; Kenji, 401 |
+| on | 12/12 correctas; Kenji, 391 | no ejecutado |
+| off | 11/12 correctas; Kenji, 401 (int4: 391 en CPU, 411 en GPU) | 11/12 correctas; Kenji, 401 |
 
 No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM/memoria estimada: 22,2 GB en GPU para int4 ekv2048; 22,6 GB para mixed_int4 ekv2048; 23,2 GB para mixed_int4 ekv4096. En CPU, el pico de memoria residente es de 4,4 a 6,9 GB según artefacto.
-- GPU recomendadas: Apple M4 Max (medido). No se dispone de datos para A100, H100 o RTX 4090 en la información proporcionada.
-- GPU de consumo: cabe en GPUs con al menos 24 GB de memoria si el backend soporta WebGPU con ese tamaño de artefacto; no verificado en la información disponible.
-- Despliegue: LiteRT-LM 0.19.1. CPU mediante `pip install litert-lm==0.19.1`; GPU mediante la herramienta `litert_lm_advanced_main` compilada desde fuente con Bazel (v0.19.1, commit 7a03724) y las bibliotecas `libwebgpu_dawn.dylib` y `libGemmaModelConstraintProvider.dylib`.
-- Latencia y throughput: ver tabla de benchmarks. El prefill en GPU ronda 815-852 tok/s y la decodificación 67,9-74,6 tok/s; en CPU el prefill es 105-115 tok/s y la decodificación 7,20-9,77 tok/s.
-- Nota de runtime: es necesario desactivar la caché de GPU (`cache_dir=":nocache"` en Python, `--disable_cache=true` en CLI) porque las ejecuciones que cargaban la caché de programas GPU de una ejecución anterior respondían incorrectamente.
+- VRAM/memoria estimada para inferencia: 19,8-23,2 GB en GPU (WebGPU) según artefacto; 4,4-6,9 GB en CPU con 8 hilos.
+- GPU recomendadas: Apple M4 Max (128 GB) es la plataforma documentada; no se especifican otras GPU.
+- Cabe en GPU de consumo: sí, en un Apple M4 Max con WebGPU; no se documenta compatibilidad con RTX 4090, A100 o H100.
+- Opciones de despliegue: LiteRT-LM 0.19.1 (paquete PyPI para CPU, herramienta de línea de comandos compilada desde fuente para GPU con WebGPU). No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI.
+- Latencia y throughput: prefill de 809-852 tokens/s y decodificación de 67,6-75,2 tokens/s en GPU; prefill de 106-116 tokens/s y decodificación de 7,98-12,8 tokens/s en CPU con 8 hilos.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros totales / activos | Contexto | Licencia | Formato / runtime |
-|---|---|---|---|---|
-| Nemotron-3-Nano-30B-A3B (esta ficha) | 30B / 3,5B | 2048 o 4096 | NVIDIA Nemotron Open Model License | .litertlm, LiteRT-LM |
-| nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16 | 30B / 3,5B | no disponible | NVIDIA Nemotron Open Model License | BF16, safetensors |
-| Alternativas de tamaño similar | no disponible | no disponible | no disponible | no disponible |
+| Modelo | Parámetros totales | Parámetros activos | Contexto | Licencia | Formato |
+|---|---|---|---|---|---|
+| Nemotron-3-Nano-30B-A3B (esta conversión) | 30B | 3,5B | 2.048-4.096 | NVIDIA Nemotron Open Model License | `.litertlm` |
+| Nemotron-3-Nano-30B-A3B (original NVIDIA, BF16) | 30B | 3,5B | no disponible en la información | NVIDIA Nemotron Open Model License | safetensors (BF16) |
+| Alternativas de la misma categoría | no disponible | no disponible | no disponible | no disponible | no disponible |
 
-No se dispone en la información proporcionada de datos de rendimiento de modelos comparables de otros fabricantes con arquitectura híbrida MoE de 30B, por lo que la comparación cuantitativa queda limitada al modelo fuente en BF16.
+No se dispone de datos de benchmarks estándar ni de otros modelos comparables en la información proporcionada para establecer una comparativa de rendimiento.
 
 ## Limitaciones y advertencias
 
-- El estado de Mamba-2 no se reinicia entre conversaciones: es obligatorio crear un Engine por conversación (issue LiteRT-LM #3165). Reutilizar el Engine contamina el contexto entre diálogos.
-- Tras un mensaje que desborda la ventana de contexto, todos los mensajes posteriores de esa conversación fallan con `Task failed with state: 7`; hay que iniciar una conversación nueva.
-- Las llamadas a herramientas se devuelven como texto en formato `<tool_call>`, no como objetos estructurados; el integrador debe parsearlas.
-- Las respuestas largas con `send_message` bloqueante que sigan generando tras 10 minutos fallan con `DEADLINE_EXCEEDED`; usar `send_message_async` o limitar `max_output_tokens`.
-- La ventana de contexto es reducida (2048 o 4096 tokens) en comparación con modelos actuales de 128K o más, lo que limita casos de uso con documentos extensos.
-- Solo se declaran seis idiomas (en, es, fr, de, ja, it); no hay soporte declarado para otros.
-- El backend GPU de LiteRT-LM 0.18.0 solo soporta la activación 'gelu' en la operación `moe`; la versión 0.19.1 es requisito para este modelo.
-- La licencia NVIDIA Nemotron Open Model License es distinta de las licencias Apache 2.0 o MIT; es necesario revisar sus términos antes de uso comercial.
-- No se han publicado datos sobre sesgos, tasa de alucinación ni evaluaciones de seguridad en la información disponible.
-- La cuantización int4 puede degradar la precisión en tareas distintas a las evaluadas; la evaluación del autor se limita a 12 preguntas y un chat de tres turnos.
+- La licencia NVIDIA Nemotron Open Model License no es una licencia de código abierto estándar; debe revisarse antes de cualquier uso comercial.
+- El formato `.litertlm` es específico de LiteRT-LM y no es portable a otros runtimes habituales (llama.cpp, vLLM, TGI).
+- El estado de Mamba-2 no se reinicia entre conversaciones: es obligatorio crear un `Engine` por conversación (issue LiteRT-LM #3165).
+- Las llamadas a herramientas se devuelven como texto en formato `<tool_call>`, sin validación estructurada.
+- Si un mensaje desborda la ventana de contexto, todos los mensajes posteriores de esa conversación fallan con `Task failed with state: 7`; es necesario iniciar una conversación nueva.
+- Las respuestas bloqueantes que superan los 10 minutos fallan con `DEADLINE_EXCEEDED`; se recomienda `send_message_async` o limitar `max_output_tokens`.
+- Es necesario desactivar la caché de GPU (`cache_dir=":nocache"` o `--disable_cache=true`): se observaron respuestas incorrectas al cargar cachés de ejecuciones anteriores en macOS.
+- La ventana de contexto máxima es de 4.096 tokens, muy inferior a la de modelos contemporáneos, lo que limita tareas de documento largo.
+- No se documentan sesgos conocidos ni tasas de alucinación en la información disponible.
+- El rendimiento solo está validado en Apple M4 Max; no hay datos para GPU NVIDIA o AMD.
+- La cuantización int4 reduce la precisión en modo *thinking* desactivado (11/12 frente a 12/12 con thinking activado).
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/litert-community/Nemotron-3-Nano-30B-A3B
 - Modelo base: https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16
 - Mediciones detalladas: https://huggingface.co/litert-community/Nemotron-3-Nano-30B-A3B/blob/main/MEASUREMENTS.md
-- LiteRT-LM (Google AI Edge): https://github.com/google-ai-edge/LiteRT-LM
-- Issue de reinicio de estado Mamba-2: https://github.com/google-ai-edge/LiteRT-LM/issues/3165
-- Licencia NVIDIA Nemotron Open Model License: https://www.nvidia.com/en-us/agreements/enterprise-software/nvidia-nemotron-open-model-license/
+- LiteRT-LM (repositorio): https://github.com/google-ai-edge/LiteRT-LM
+- Issue LiteRT-LM #3165: https://github.com/google-ai-edge/LiteRT-LM/issues/3165
+- Licencia: https://www.nvidia.com/en-us/agreements/enterprise-software/nvidia-nemotron-open-model-license/
 - Paper referenciado (arXiv:2512.20848): https://arxiv.org/abs/2512.20848

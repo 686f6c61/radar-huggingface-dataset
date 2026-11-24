@@ -2,96 +2,90 @@
 
 ## Resumen
 
-philosophy-lm es un modelo de lenguaje causal de tipo base, entrenado desde cero por el desarrollador independiente gustavecortal sobre un corpus especializado en filosofia y psicologia. Con 112,7 millones de parametros totales (80M declarados por el autor, de los cuales 61M no corresponden a embeddings), se situa en la categoria de modelos pequenos, pero incorpora decisiones arquitectonicas poco habituales en esa escala: un embedding de n-gramas con 31M de parametros, atencion hibrida local/global y atencion con grouped-query attention.
+PhiloLM es un modelo de lenguaje de 112,7 millones de parámetros entrenado desde cero (no es un ajuste fino de un modelo preexistente) sobre un corpus abierto de filosofía, PhiloText. Lo desarrolla Gustave Cortal y se distribuye bajo licencia Apache-2.0. El modelo resuelve un nicho concreto: la generación de texto con registro y vocabulario filosófico en inglés, con un coste computacional muy bajo y la posibilidad de ejecutarse íntegramente en el navegador mediante un motor WebAssembly de 8 bits.
 
-El modelo no esta ajustado por instrucciones: su funcion es continuar texto en el registro de sus fuentes (enciclopedias, resenas de libros, Wikipedia, libros de dominio publico, manuales y paginas educativas). Su interes practico radica en que se distribuye acompanado de un motor WebAssembly de 8 bits que lo ejecuta en el navegador sobre CPU, con una degradacion de solo 0,2% en bits por byte respecto a float32.
+Arquitectónicamente es un transformer decoder-only con una innovación poco habitual: incorpora un embedding de bigramas que se suma a las primeras 128 dimensiones del flujo residual, combinando información de n-gramas con atención causal. Usa atención local con ventana de 256 tokens intercalada con atención global, QK norm y RoPE parcial. El contexto de entrenamiento es de 2.048 tokens.
 
-Es relevante ahora como ejemplo reproducible de entrenamiento de un modelo pequeno y especializado con recursos muy limitados: el autor lo entreno en 15,2 horas sobre una unica GPU Intel Arc A770 de 16 GB, con licencia Apache 2.0 y pesos en safetensors. Para desarrolladores e investigadores resulta util como banco de pruebas de tecnicas de eficiencia (embeddings consultados en lugar de multiplicados, cuantizacion SmoothQuant, decodificacion con cache) y como modelo de dominio acotado para generacion de prosa filosofica.
+Su relevancia actual es doble: por un lado, demuestra que es posible entrenar un modelo de lenguaje funcional en 15,2 horas sobre una única GPU de consumo (Intel Arc A770 de 16 GB); por otro, su licencia permisiva y su tamaño lo hacen adecuado para experimentación educativa, despliegue en entornos con recursos limitados y estudio de arquitecturas alternativas. Es un modelo base, sin ajuste por instrucciones.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer causal con atencion hibrida local/global, SwiGLU y embedding de n-gramas |
-| Parametros totales | 112.752.208 (80M declarados por el autor, 61M no-embedding, mas 31M de embedding de n-gramas) |
-| Parametros activos | No aplica (no es MoE) |
-| Longitud de contexto | 4.096 tokens |
-| Tipos de cuantizacion | 8 bits para matrices (escala por fila) y entradas (escala por token), 4 bits para la tabla de bigramas, bfloat16 para cache de claves y valores; pesos originales en float32 |
-| Idiomas soportados | Ingles unicamente |
-| Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (PyTorch); `core.bin` de 98 MB y `core.wasm` para el motor web |
+| Arquitectura | Transformer decoder-only con embedding de bigramas, atención local (ventana de 256 tokens) y global, QK norm y RoPE parcial |
+| Parametros totales | 112.752.208 |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | 2.048 tokens (ventana de entrenamiento) |
+| Tipos de cuantizacion | 8 bits (motor WebAssembly propio); no se documentan otros formatos |
+| Idiomas soportados | inglés (en) |
+| Licencia | Apache-2.0 |
+| Formato de pesos | safetensors (transformers); core.wasm + core.bin para el motor WebAssembly |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un transformer causal de 16 capas con dimension oculta de 576 y layout 4 x (3 x (atencion local -> SwiGLU) -> 1 x (atencion global -> SwiGLU)). La atencion local emplea 9 cabezas de 64 dimensiones con ventana de 256 tokens; la global usa 9 cabezas de consulta y 3 cabezas de clave-valor de 64 dimensiones, de las cuales 32 dimensiones de clave sin rotary embedding provienen del token anterior. Incorpora QK-norm y una puerta sigmoide sobre la salida de cada cabeza, con rotary embedding en 32 de las 64 dimensiones (base 10.000) y SwiGLU con dimension intermedia de 1.512. El tokenizer es un BPE a nivel de byte con vocabulario de 32.768, atado a la capa de salida.
+El modelo sigue un diseño decoder-only de 112M parámetros con cuatro grupos de cuatro bloques cada uno (16 bloques). Dentro de cada grupo hay tres bloques de atención local con ventana de 256 tokens y un bloque de atención global con 9 cabezas de consulta y 3 cabezas clave-valor (GQA). Cada bloque incluye RMSNorm previo, atención causal con QK norm y RoPE parcial, seguido de una red feed-forward SwiGLU con conexiones residuales. La particularidad principal es el embedding de bigramas: el vector de bigrama, multiplicado por una escala aprendida, se añade a las primeras 128 de las 576 dimensiones del flujo residual, inyectando información de coocurrencia de pares de tokens en cada paso. La cabeza LM está atada al embedding de tokens.
 
-La innovacion mas destacable es el embedding de n-gramas: una tabla hasheada de 245.760 filas de bigramas con 128 valores cada una (con patron de signo fijo ±1) que se suma a las primeras 128 dimensiones ocultas antes de cada bloque. Al leerse en lugar de multiplicarse, aporta 31M de parametros con coste computacional casi nulo. El entrenamiento uso 450,8 millones de tokens de filosofia y psicologia (26,8% Essential-Web, 30,9% FineWeb-Edu, 14,3% Gutenberg y Standard Ebooks, 6,5% Stanford Encyclopedia of Philosophy, 10,2% Wikipedia, 4,2% Notre Dame Philosophical Reviews, 3,0% PubMed Central, 2,3% Internet Encyclopedia of Philosophy y 1,9% textos de historia de la psicologia y manuales abiertos), con 1.450 millones de tokens objetivo en cuatro pasadas y cada documento leido como maximo cuatro veces. Se uso Muon (lr 0.005) para matrices ocultas y AdamW (lr 0.003) para el resto, con schedule coseno hasta el 10%, ventanas de 1.024 tokens que pasan a 2.048 a partir del primer cuarto, y mezcla final de pesos con su media movil exponencial del ultimo 17% del entrenamiento. No se menciona RLHF ni DPO.
+El entrenamiento procesó 1.450 millones de tokens en cuatro pasadas ponderadas por fuente sobre los 450,8 millones de tokens de entrenamiento de PhiloText. Se empleó atención con máscara a nivel de documento, ventanas que crecen de 1.024 a 2.048 tokens, el optimizador Muon para las matrices de pesos ocultas y AdamW para el resto de parámetros. La última pasada da más peso a fuentes de referencia y textos primarios seleccionados. Los pesos publicados son una mezcla de los pesos finales con una media móvil exponencial del tramo final del entrenamiento. El entrenamiento completo requirió 15,2 horas en una Intel Arc A770 de 16 GB.
 
 ## Capacidades
 
-- Generacion de texto por continuacion en registro enciclopedico y academico sobre filosofia y psicologia.
-- Prosa argumentativa de dominio acotado: historia de la filosofia, teoria psicologica, resenas academicas y ensayo.
-- Generacion condicionada por documento: cada documento se separa con el token de fin de texto y solo atiende a si mismo.
-- Ejecucion en navegador sobre CPU mediante WebAssembly con SIMD y hasta cuatro hilos.
-- Decodificacion con cache de claves y valores, procesando el prompt en bloques de 16 tokens.
-- No soporta tool calling ni function calling.
-- No soporta agentes ni razonamiento multi-paso.
-- No dispone de modo thinking, vision ni audio.
-- No es multilingue: solo ingles.
+- Generación de texto en inglés con registro académico y vocabulario filosófico: continuaciones de ensayos, definiciones de conceptos y paráfrasis de argumentos.
+- Razonamiento discursivo básico sobre temas de filosofía (ética, epistemología, metafísica, fenomenología), limitado a la coherencia de un párrafo.
+- Capacidad multilingüe: únicamente inglés.
+- Tool calling / function calling: no disponible.
+- Soporte de agentes y razonamiento multi-paso: no disponible.
+- Modo thinking, visión o audio: no disponible.
+- Ejecución en navegador mediante motor WebAssembly de 8 bits, aproximadamente tres veces más rápido que PyTorch en CPU.
+- Generación rápida en CPU mediante `generate_fast.py` con wasmtime, numpy y tokenizers.
 
 ## Casos de uso
 
-- Generacion de prosa filosofica de relleno: dado un titulo o un inicio de parrafo, el modelo continua en el registro de enciclopedias y resenas, util para prototipar interfaces de escritura asistida sin coste de API.
-- Demostracion educativa de entrenamiento desde cero: el repositorio incluye `model.py`, `decode.py` y `generate.py`, lo que permite estudiar la implementacion completa de atencion hibrida y embedding de n-gramas en un modelo que cabe en 0,5 GB.
-- Inferencia en el navegador sin servidor: con `core.bin` (98 MB) y `core.wasm` se puede ofrecer generacion de texto en una pagina web sin backend, a unas 250 tokens por segundo en un Intel Core i5-14400F con cuatro hilos.
-- Banco de pruebas de cuantizacion: la comparacion publicada entre float32 (0,9349 bits por byte) y la forma web (0,9369) permite evaluar el impacto de SmoothQuant con alpha 0.7 y cuantizacion de 8 y 4 bits en un modelo pequeno.
-- Generacion de datos sinteticos de dominio: util para aumentar corpus de filosofia y psicologia con texto estilisticamente coherente, siempre con revision humana por el riesgo de invencion de hechos.
-- Investigacion sobre eficiencia de embeddings: la tabla de bigramas de 245.760 filas permite experimentar con representaciones consultadas en lugar de multiplicadas y medir su efecto en perplejidad.
-- Prototipado de autocompletado en editores de texto tecnicos o academicos, limitado a ingles y a continuaciones de hasta 4.096 tokens.
+- Experimentación educativa sobre arquitecturas transformer: el código y los pesos permiten estudiar el efecto del embedding de bigramas y de la mezcla de atención local y global en un modelo que cabe en una GPU de consumo.
+- Generación de borradores de texto filosófico: útil para producir párrafos iniciales sobre conceptos como justicia, causalidad o identidad personal que luego un humano revisa y corrige.
+- Despliegue en el navegador sin servidor: el motor WebAssembly de 8 bits permite ofrecer una demo interactiva de generación de texto sin coste de infraestructura de GPU.
+- Prototipado de pipelines de generación en CPU: con 112M parámetros y cuantización a 8 bits, se puede integrar en aplicaciones de escritorio o entornos embebidos donde no hay GPU disponible.
+- Investigación sobre entrenamiento de bajo coste: sirve como caso de referencia reproducible (15,2 horas en una Arc A770) para estudiar optimizadores como Muon y estrategias de ponderación de fuentes.
+- Generación de material de apoyo para docencia de filosofía: producir ejemplos de estilo y vocabulario que el profesorado puede editar, siempre con verificación posterior de citas y atribuciones.
+- Estudio de sesgos y alucinación en modelos pequeños: su tendencia documentada a inventar citas lo convierte en un caso útil para investigar detección de atribuciones falsas.
 
 ## Benchmarks y rendimiento
 
-| Medida | Valor |
-|---|---|
-| Split de test, 3.048 documentos en ventanas de 4.096 tokens | 0,9368 bits por byte |
-| Validacion, 60 documentos (primeros 1.024 tokens), float32 | 0,9349 bits por byte |
-| Mismos documentos, forma web (`core.bin`) | 0,9369 bits por byte |
-
-No se han publicado resultados en benchmarks estandar (MMLU, HumanEval, GSM8K) en la informacion disponible. El autor solo reporta bits por byte sobre sus propios splits, sin comparacion con otros modelos.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia en float32: aproximadamente 0,45 GB para los 112,7M de parametros; en 8 bits, alrededor de 0,12 GB mas overhead de cache.
-- Cabe holgadamente en cualquier GPU de consumo: RTX 3060, RTX 4060, RTX 4090, e incluso en iGPU y CPU.
-- GPU de datacenter (A100, H100) innecesarias; el modelo se entreno en una Intel Arc A770 de 16 GB en 15,2 horas.
-- Despliegue via PyTorch con safetensors, o mediante el motor WebAssembly propio (`core.wasm` y `core-plain.wasm` para navegadores sin SIMD).
-- No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI en la informacion disponible.
-- Throughput medido: unas 250 tokens por segundo en un Intel Core i5-14400F con cuatro hilos en el navegador; latencia no reportada de forma independiente.
+- VRAM estimada para inferencia en precisión completa (fp32): aproximadamente 0,45 GB solo para pesos, más activaciones y caché KV; en la práctica cabe holgadamente en cualquier GPU con 4 GB o más.
+- VRAM estimada con cuantización a 8 bits: en torno a 0,12 GB para los pesos, más overhead del runtime.
+- GPU recomendadas: cualquier GPU moderna con al menos 4 GB; el entrenamiento se realizó en una Intel Arc A770 de 16 GB, lo que indica que una GPU de consumo es suficiente.
+- Cabe en GPU de consumo: sí, en tarjetas como RTX 3060, RTX 4060, RTX 4090 o Intel Arc A770, y también en CPU.
+- Opciones de despliegue: transformers con `trust_remote_code=True`; motor WebAssembly propio vía wasmtime (`generate_fast.py`); no se documentan integraciones con vLLM, llama.cpp, Ollama ni TGI.
+- Latencia y throughput: no se publican cifras absolutas; el autor indica que el motor WebAssembly de 8 bits es aproximadamente tres veces más rápido que PyTorch en CPU.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
+| Modelo | Parametros | Contexto | Licencia | Enfoque | Disponibilidad |
 |---|---|---|---|---|---|
-| philosophy-lm | 112,7M (61M no-embedding) | 4.096 | Apache 2.0 | Hugging Face y demo web | Base, solo ingles, dominio filosofia y psicologia, motor WASM propio |
-| GPT-2 small | 124M | 1.024 | MIT | Hugging Face | Base generalista en ingles, sin atencion hibrida ni embedding de n-gramas |
-| SmolLM-135M | 135M | 2.048 | Apache 2.0 | Hugging Face | Base generalista multilingue con receta moderna, sin motor web |
-| Pythia-160M | 160M | 2.048 | Apache 2.0 | Hugging Face | Base de investigacion con checkpoints intermedios, solo ingles |
+| PhiloLM | 112,7M | 2.048 | Apache-2.0 | Filosofía, entrenado desde cero, motor WASM | Hugging Face, demo web |
+| GPT-2 small | 124M | 1.024 | MIT | Texto general, entrenado desde cero | Hugging Face |
+| Pythia-160M | 160M | 2.048 | Apache-2.0 | Texto general, suite de investigación | Hugging Face |
+| TinyLlama-1.1B | 1.100M | 2.048 | Apache-2.0 | Texto general, ajustado por instrucciones | Hugging Face |
 
-No se dispone de datos de rendimiento comparables entre estos modelos en la informacion proporcionada; la comparacion se limita a parametros, contexto, licencia y disponibilidad.
+La comparación se limita a parámetros, contexto y licencia, ya que no hay benchmarks publicados de PhiloLM que permitan contrastar rendimiento. Frente a GPT-2 small y Pythia-160M, PhiloLM ofrece un dominio especializado y ejecución en navegador, pero carece de la documentación de evaluación y el ecosistema de herramientas de aquellos. Frente a TinyLlama, es mucho más pequeño y no está ajustado por instrucciones.
 
 ## Limitaciones y advertencias
 
-- Es un modelo base: continua texto y no sigue instrucciones ni responde preguntas.
-- Inventa hechos, fechas y atribuciones con tono enciclopedico; el autor documenta que afirmo que la teoria de los suenos de Freud "fue introducida en 1890 por Wilhelm Roux".
-- Tiende a repetirse y a perder el hilo argumental en continuaciones largas.
-- Solo ingles; parte de sus fuentes son libros del siglo XIX y principios del XX, con las visiones de su epoca.
-- El autor advierte explicitamente de no usarlo para fines medicos o psicologicos.
-- Sin ajuste por instrucciones ni por preferencias humanas (no hay RLHF ni DPO documentado).
-- Sin datos de sesgo sistematico mas alla de la advertencia sobre el sesgo de epoca de las fuentes.
-- La licencia Apache 2.0 permite uso comercial, pero la calidad y fiabilidad del contenido generado no estan garantizadas.
-- El modelo tiene 0 descargas y 0 likes en Hugging Face en el momento de la consulta, por lo que no hay validacion independiente de la comunidad.
+- Es un checkpoint base sin ajuste por instrucciones: no sigue instrucciones de forma fiable y puede repetirse o perder coherencia argumentativa.
+- Riesgo alto de alucinación de citas y atribuciones: el propio autor advierte de que puede inventar referencias; cualquier uso factual requiere verificación contra las fuentes originales.
+- Solo soporta inglés; no hay capacidades multilingües.
+- Contexto limitado a 2.048 tokens, insuficiente para documentos largos o conversaciones multi-turno extensas.
+- Entrenado sobre un corpus filosófico específico, lo que puede introducir sesgos de selección de fuentes y un registro poco adecuado para otros dominios.
+- No se documentan evaluaciones de sesgo, toxicidad ni robustez.
+- No dispone de soporte de tool calling ni de integración con frameworks de agentes.
+- La licencia Apache-2.0 permite uso comercial, pero la ausencia de garantías y de evaluación de calidad hace desaconsejable su uso en producción sin validación previa.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/gustavecortal/philosophy-lm
-- Demo en navegador: https://gustavecortal.com/philosophy-lm/
+- Dataset PhiloText: https://huggingface.co/datasets/gustavecortal/PhiloText
+- Demo web en el navegador: https://gustavecortal.com/philosophy-lm/
+- Cita del autor: Cortal, Gustave (2026), "PhiloLM: a small language model trained on philosophy", https://huggingface.co/gustavecortal/PhiloLM

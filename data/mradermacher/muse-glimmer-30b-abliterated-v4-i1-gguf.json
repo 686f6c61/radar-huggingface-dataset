@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/Muse-Glimmer-30B-abliterated-v4-i1-GGUF",
   "created_at": "2026-11-11T16:39:38.000Z",
-  "updated_at": "2026-11-20T17:59:40.000Z",
+  "updated_at": "2026-11-23T18:41:13.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -25,7 +25,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 6500,
+  "downloads_30d": 6702,
   "trending_score": 0,
   "parameters": 27854794240,
   "parameters_human": "27.85B",

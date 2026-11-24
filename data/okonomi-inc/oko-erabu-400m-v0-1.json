@@ -5,7 +5,7 @@
   "author": "okonomi-inc",
   "url": "https://huggingface.co/okonomi-inc/Oko-Erabu-400M-v0.1",
   "created_at": "2026-11-09T12:23:41.000Z",
-  "updated_at": "2026-11-22T23:20:27.000Z",
+  "updated_at": "2026-11-23T12:25:31.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "other",
@@ -33,7 +33,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 13,
+  "downloads_30d": 28,
   "trending_score": 0,
   "parameters": 395881664,
   "parameters_human": "395.9M",

@@ -5,7 +5,7 @@
   "author": "dealignai",
   "url": "https://huggingface.co/dealignai/Inkling-2-Mini-UNCENSORED-NVFP4",
   "created_at": "2026-11-23T10:37:44.000Z",
-  "updated_at": "2026-11-23T11:09:27.000Z",
+  "updated_at": "2026-11-23T12:43:04.000Z",
   "license": "dealignai-community-v0.3",
   "license_family": "non-commercial",
   "pipeline_tag": "image-text-to-text",
@@ -47,7 +47,7 @@
     "modelopt",
     "region:us"
   ],
-  "likes": 0,
+  "likes": 3,
   "downloads_30d": 0,
   "trending_score": 0,
   "parameters": 30465509928,

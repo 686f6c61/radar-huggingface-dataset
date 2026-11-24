@@ -22,7 +22,7 @@
     "base_model:finetune:jameslahm/yolov10m",
     "region:us"
   ],
-  "likes": 9,
+  "likes": 10,
   "downloads_30d": 0,
   "trending_score": 0,
   "parameters": null,

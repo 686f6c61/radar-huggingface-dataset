@@ -5,7 +5,7 @@
   "author": "VertexAGI",
   "url": "https://huggingface.co/VertexAGI/sunstone-image-1-preview",
   "created_at": "2026-11-23T18:24:29.000Z",
-  "updated_at": "2026-11-23T18:25:06.000Z",
+  "updated_at": "2026-11-23T18:36:15.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-to-image",

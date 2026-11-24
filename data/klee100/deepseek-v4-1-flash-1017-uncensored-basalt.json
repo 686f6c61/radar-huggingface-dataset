@@ -9,7 +9,7 @@
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": null,
-  "library": null,
+  "library": "basalt",
   "languages": [],
   "tags": [
     "basalt",

@@ -9,11 +9,11 @@
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
-  "library": null,
+  "library": "basalt",
   "languages": [],
   "tags": [
-    "gguf",
     "basalt",
+    "gguf",
     "gsq-rco",
     "iq3_s",
     "base_model:Qwen/Qwen3.8-27B",
@@ -25,7 +25,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 767,
+  "downloads_30d": 785,
   "trending_score": 0,
   "parameters": 26895998464,
   "parameters_human": "26.90B",

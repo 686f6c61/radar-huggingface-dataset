@@ -1,0 +1,51 @@
+{
+  "schema": 2,
+  "id": "mradermacher/MiMo-V2.6-Flash-RL-heretic-GGUF",
+  "slug": "mradermacher-mimo-v2-6-flash-rl-heretic-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/MiMo-V2.6-Flash-RL-heretic-GGUF",
+  "created_at": "2026-11-24T06:31:37.000Z",
+  "updated_at": "2026-11-24T07:24:07.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "mimo",
+    "abliterated",
+    "heretic",
+    "en",
+    "base_model:makhdoomhussainraza/MiMo-V2.6-Flash-RL-heretic",
+    "base_model:quantized:makhdoomhussainraza/MiMo-V2.6-Flash-RL-heretic",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1318620160,
+  "parameters_human": "1.32B",
+  "storage_bytes": 293577470848,
+  "storage_human": "293.6 GB",
+  "context_length": null,
+  "base_model": "makhdoomhussainraza/MiMo-V2.6-Flash-RL-heretic",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

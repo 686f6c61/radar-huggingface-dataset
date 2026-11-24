@@ -5,7 +5,7 @@
   "author": "kingjones777",
   "url": "https://huggingface.co/kingjones777/Nex-N2.5-mini-ROCmFP4-GGUF",
   "created_at": "2026-09-17T02:15:48.000Z",
-  "updated_at": "2026-09-17T03:22:20.000Z",
+  "updated_at": "2026-11-23T09:31:20.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -40,7 +40,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 141,
+  "downloads_30d": 126,
   "trending_score": 0,
   "parameters": 34660610688,
   "parameters_human": "34.66B",

@@ -1,0 +1,53 @@
+{
+  "schema": 2,
+  "id": "Megiola/albanian-ner-mdeberta-v3-wikiann",
+  "slug": "megiola-albanian-ner-mdeberta-v3-wikiann",
+  "author": "Megiola",
+  "url": "https://huggingface.co/Megiola/albanian-ner-mdeberta-v3-wikiann",
+  "created_at": "2026-11-24T09:30:29.000Z",
+  "updated_at": "2026-11-24T09:30:48.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [
+    "sq"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "deberta-v2",
+    "token-classification",
+    "ner",
+    "albanian",
+    "sq",
+    "dataset:unimelb-nlp/wikiann",
+    "base_model:microsoft/mdeberta-v3-base",
+    "base_model:finetune:microsoft/mdeberta-v3-base",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 278224135,
+  "parameters_human": "278.2M",
+  "storage_bytes": 1128960351,
+  "storage_human": "1.1 GB",
+  "context_length": null,
+  "base_model": "microsoft/mdeberta-v3-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

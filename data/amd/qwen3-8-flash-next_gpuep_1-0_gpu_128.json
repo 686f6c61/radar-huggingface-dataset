@@ -5,7 +5,7 @@
   "author": "amd",
   "url": "https://huggingface.co/amd/Qwen3.8-Flash-Next_gpuep_1.0_gpu_128",
   "created_at": "2026-10-28T10:02:28.000Z",
-  "updated_at": "2026-11-05T02:11:30.000Z",
+  "updated_at": "2026-11-24T02:26:02.000Z",
   "license": "qwen-community-1.0",
   "license_family": "non-commercial",
   "pipeline_tag": "image-text-to-text",

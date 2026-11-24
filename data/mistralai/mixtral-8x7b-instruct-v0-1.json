@@ -1,0 +1,64 @@
+{
+  "schema": 2,
+  "id": "mistralai/Mixtral-8x7B-Instruct-v0.1",
+  "slug": "mistralai-mixtral-8x7b-instruct-v0-1",
+  "author": "mistralai",
+  "url": "https://huggingface.co/mistralai/Mixtral-8x7B-Instruct-v0.1",
+  "created_at": "2023-12-10T18:47:12.000Z",
+  "updated_at": "2026-11-24T08:18:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "vllm",
+  "languages": [
+    "fr",
+    "it",
+    "de",
+    "es",
+    "en"
+  ],
+  "tags": [
+    "vllm",
+    "safetensors",
+    "mixtral",
+    "fr",
+    "it",
+    "de",
+    "es",
+    "en",
+    "base_model:mistralai/Mixtral-8x7B-v0.1",
+    "base_model:finetune:mistralai/Mixtral-8x7B-v0.1",
+    "license:apache-2.0",
+    "eval-results",
+    "deploy:sagemaker",
+    "region:us"
+  ],
+  "likes": 4783,
+  "downloads_30d": 304925,
+  "trending_score": 0,
+  "parameters": 46702792704,
+  "parameters_human": "46.70B",
+  "storage_bytes": 190496794867,
+  "storage_human": "190.5 GB",
+  "context_length": null,
+  "base_model": "mistralai/Mixtral-8x7B-v0.1",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mistralai · PyPI",
+      "url": "https://pypi.org/project/mistralai/",
+      "snippet": "Dec 11, 2023 · The Mistral class implements the context manager protocol and registers a finalizer function to close the underlying …Read more"
+    }
+  ]
+}

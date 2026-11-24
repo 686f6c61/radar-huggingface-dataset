@@ -5,7 +5,7 @@
   "author": "Xylolabs",
   "url": "https://huggingface.co/Xylolabs/Cosmos3-Nano-Text-GGUF",
   "created_at": "2026-11-14T15:27:15.000Z",
-  "updated_at": "2026-11-23T04:43:53.000Z",
+  "updated_at": "2026-11-23T13:40:30.000Z",
   "license": "openmdw-1.1",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -31,7 +31,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 1443,
+  "downloads_30d": 1495,
   "trending_score": 0,
   "parameters": 8190735360,
   "parameters_human": "8.19B",

@@ -5,7 +5,7 @@
   "author": "enazif",
   "url": "https://huggingface.co/enazif/mayaku-n-det-street",
   "created_at": "2026-11-23T19:36:21.000Z",
-  "updated_at": "2026-11-23T19:36:24.000Z",
+  "updated_at": "2026-11-24T00:43:00.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "object-detection",
@@ -13,6 +13,8 @@
   "languages": [],
   "tags": [
     "mayaku",
+    "coreml",
+    "openvino",
     "object-detection",
     "traffic",
     "street",
@@ -24,8 +26,6 @@
     "int8",
     "onnx",
     "tensorrt",
-    "openvino",
-    "coreml",
     "license:apache-2.0",
     "region:us"
   ],
@@ -34,8 +34,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 22405191,
-  "storage_human": "22 MB",
+  "storage_bytes": 48803165,
+  "storage_human": "49 MB",
   "context_length": null,
   "base_model": null,
   "formats": [

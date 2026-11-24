@@ -5,7 +5,7 @@
   "author": "ReDiverse",
   "url": "https://huggingface.co/ReDiverse/ReDiverse",
   "created_at": "2026-10-11T22:39:07.000Z",
-  "updated_at": "2026-11-19T16:57:17.000Z",
+  "updated_at": "2026-11-23T05:05:03.000Z",
   "license": "rediverse-weights",
   "license_family": "unknown",
   "pipeline_tag": "text-to-image",
@@ -22,7 +22,7 @@
     "region:us"
   ],
   "likes": 2,
-  "downloads_30d": 0,
+  "downloads_30d": 3,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

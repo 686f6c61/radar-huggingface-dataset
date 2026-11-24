@@ -33,8 +33,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "Solictous/HiDream-O1-Image-GGUF",
+  "renamed_at": "2026-11-24T05:41:31.396Z",
   "benchmarks": [],
   "sources": []
 }

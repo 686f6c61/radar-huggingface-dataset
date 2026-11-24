@@ -9,11 +9,12 @@
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "multiple-choice",
-  "library": null,
+  "library": "peft",
   "languages": [
     "en"
   ],
   "tags": [
+    "peft",
     "safetensors",
     "lev",
     "log-analysis",
@@ -30,8 +31,8 @@
     "license:apache-2.0",
     "region:us"
   ],
-  "likes": 0,
-  "downloads_30d": 0,
+  "likes": 2,
+  "downloads_30d": 32,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

@@ -5,7 +5,7 @@
   "author": "Sqersters",
   "url": "https://huggingface.co/Sqersters/MinVoid-1.1",
   "created_at": "2026-11-22T23:02:06.000Z",
-  "updated_at": "2026-11-22T23:02:17.000Z",
+  "updated_at": "2026-11-23T15:27:48.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -25,7 +25,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 28,
   "trending_score": 0,
   "parameters": 2959232,
   "parameters_human": "3.0M",

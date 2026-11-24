@@ -5,7 +5,7 @@
   "author": "akal-lm",
   "url": "https://huggingface.co/akal-lm/Akal-1B-GGUF",
   "created_at": "2026-11-13T05:50:55.000Z",
-  "updated_at": "2026-11-22T03:04:59.000Z",
+  "updated_at": "2026-11-24T02:28:28.000Z",
   "license": "gemma",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

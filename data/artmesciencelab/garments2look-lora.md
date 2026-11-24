@@ -2,94 +2,84 @@
 
 ## Resumen
 
-Garments2Look-LoRA es un conjunto de dos adaptadores LoRA de rango 32 entrenados sobre el modelo base Qwen/Qwen-Image-Edit-2509 para virtual try-on a nivel de conjunto completo (outfit), es decir, no solo una prenda sino varias prendas y accesorios combinados en una sola imagen de salida. Lo desarrolla ArtmeScienceLab y se publica como adaptadores, no como modelo completo: para usarlo hay que descargar por separado el modelo base Qwen-Image-Edit-2509 y aplicar despues el checkpoint correspondiente.
+Garments2Look-LoRA es un adaptador LoRA de difusion disenado para la generacion de looks de moda a partir de prendas de vestir, es decir, una tarea de virtual try-on y edicion de imagen orientada al sector textil. Lo desarrolla ArtmeScienceLab y se distribuye a traves de Hugging Face con acceso restringido (gated), lo que obliga a aceptar condiciones de uso antes de descargarlo. El adaptador se monta sobre los modelos base Qwen/Qwen-Image-2.1 y Qwen/Qwen-Image-Edit-2509, ambos de la familia Qwen-Image, lo que lo situa en el ecosistema de modelos de difusion para edicion de imagen con instrucciones.
 
-El sistema resuelve un problema concreto del sector moda: dada una imagen de una persona y un collage OOTD (outfit of the day) con los articulos de referencia, generar una imagen de esa misma persona vistiendo el conjunto objetivo. Se ofrecen dos variantes de tarea: inpainting (la imagen de la persona llega con las regiones de ropa enmascaradas en gris 128) y editing (se parte de la persona con su ropa original y se sustituye por el conjunto de referencia).
+El modelo resuelve el problema de componer una imagen de persona vestida con una prenda concreta manteniendo coherencia visual, una tarea con demanda creciente en comercio electronico, catalogos y probadores virtuales. Se publica como LoRA, por lo que no requiere reentrenar el modelo base completo y reduce los requisitos de almacenamiento y computo respecto a un fine-tuning integral. El repositorio ocupa 1,3 GB y la libreria de referencia es diffusers.
 
-Ambos checkpoints se entrenaron con 20.000 muestras durante 2 epocas y se distribuyen en formato safetensors dentro de un repositorio de 0,9 GB. La relevancia actual viene de que el flujo de dos referencias (persona + collage) con control explicito de orden de capas mediante prompt numerado es poco habitual en adaptadores publicos de try-on, aunque el proyecto es muy reciente y con adopcion practicamente nula (0 descargas, 1 like en el momento de redactar esta ficha).
+La relevancia actual viene de la combinacion de un adaptador ligero con un modelo base de generacion y edicion de imagen de ultima generacion, lo que permite a equipos pequenos incorporar virtual try-on en sus pipelines sin disponer de infraestructura de entrenamiento a gran escala. La informacion publica disponible es limitada: no se detallan la licencia, los datos de entrenamiento ni resultados de benchmarks.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Adaptadores LoRA (rango 32) sobre Qwen/Qwen-Image-Edit-2509; arquitectura interna del modelo base no detallada en la informacion disponible |
-| Parametros totales | no disponible (no se publica el recuento de parametros de los adaptadores; repositorio de 0,9 GB) |
-| Parametros activos | no aplica (no es un modelo MoE) |
-| Longitud de contexto | no disponible; la entrada es de dos imagenes mas un prompt de texto, con imagenes alineadas a multiplos de 16 dentro de un presupuesto de 1.048.576 pixeles |
-| Tipos de cuantizacion | no disponible; los checkpoints se distribuyen en safetensors y la cuantizacion aplicable depende del modelo base |
+| Arquitectura | LoRA (adaptador de bajo rango) sobre modelo de difusion Qwen-Image |
+| Parametros totales | no disponible (adaptador LoRA; el modelo base no se especifica en la informacion) |
+| Parametros activos | no aplica (no es MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | no disponible |
 | Idiomas soportados | ingles (en) |
 | Licencia | no disponible |
-| Formato de pesos | safetensors |
+| Formato de pesos | no disponible (repositorio diffusers de 1,3 GB) |
 
 ## Arquitectura y entrenamiento
 
-Se trata de adaptadores LoRA de rango 32 sobre el modelo de edicion de imagen Qwen-Image-Edit-2509. Se publican dos checkpoints con nombres explicitos: `Qwen-Image-Edit-2509-LoRA-2-refer-20k-inpainting-epoch-1.safetensors` y `Qwen-Image-Edit-2509-LoRA-2-refer-20k-editing-epoch-1.safetensors`. En ambos casos el entrenamiento uso 20.000 muestras y 2 epocas completas; el sufijo `epoch-1` es zero-indexado, de modo que corresponde al checkpoint guardado tras la segunda epoca. El nombre `2-refer` indica la configuracion de dos referencias de entrada (imagen de la persona y collage OOTD).
+El adaptador es un LoRA, una tecnica de ajuste eficiente que congela los pesos del modelo base e introduce matrices de bajo rango entrenables en determinadas capas. Se aplica sobre Qwen/Qwen-Image-2.1 y Qwen/Qwen-Image-Edit-2509, modelos de difusion de la familia Qwen-Image orientados a generacion y edicion de imagen. La pipeline declarada en Hugging Face es image-to-image, coherente con una tarea de edicion en la que se parte de una imagen de entrada (persona y/o prenda) y se genera una imagen de salida con el look compuesto.
 
-La entrada del sistema son dos imagenes mas un prompt de texto que enumera los articulos con instrucciones de estilo y orden de capas. En la tarea de inpainting, la primera imagen es la persona con las regiones de ropa enmascaradas en gris con valor 128, y no se pasa una mascara separada al script de inferencia. En la tarea de editing, la primera imagen es la persona con su conjunto original, que se sustituye por el conjunto de referencia. El dataset asociado es ArtmeScienceLab/Garments2Look y existe un articulo asociado presentado como CVPR 2026. El entorno de entrenamiento e inferencia probado es Python 3.10, PyTorch 2.7.1 con CUDA 12.8 y una GPU NVIDIA H200. La model card indica que las actualizaciones de codigo y los ejemplos de entrenamiento estan preparados en local y pendientes de publicacion en el repositorio de GitHub.
+No se dispone de informacion publica sobre el numero de tokens o imagenes de entrenamiento, la composicion del dataset, el uso de RLHF/DPO ni innovaciones tecnicas especificas del adaptador. El tag inpainting sugiere que el entrenamiento o el uso previsto incluye mascaras de region para aplicar la prenda sobre zonas concretas de la imagen. Tampoco se detalla la configuracion del LoRA (rango, alpha, capas objetivo).
 
 ## Capacidades
 
-- Virtual try-on a nivel de conjunto completo: combina varias prendas y accesorios en una sola generacion, no una prenda aislada.
-- Dos modos de tarea independientes con checkpoint propio: inpainting sobre imagen con regiones enmascaradas y editing sobre imagen con ropa original.
-- Entrada de dos referencias simultaneas: imagen de persona y collage OOTD de los articulos objetivo.
-- Seguimiento de prompt estructurado: el prompt enumera los articulos de forma numerada, indica instrucciones de estilo (por ejemplo, desabrochado, remetido) y define el orden de capas, como `(1) -> (6) -> (2)` en el ejemplo publicado.
-- Preservacion de atributos en la tarea de inpainting: el ejemplo de la model card indica mantener identidad, pose y fondo de la figura 1 sin cambios.
-- Generacion de imagen a imagen reproducible: semilla por defecto 123, 40 pasos de muestreo y escala de guia (CFG) 4.0, con guardado de un PNG y un JSON con el prompt y los parametros de cada ejecucion.
-- Control de resolucion: las imagenes se alinean a multiplos de 16 dentro de un presupuesto de 1.048.576 pixeles.
-- No se documenta soporte de tool calling, function calling, agentes, audio, vision general ni modo de razonamiento explicito.
+- Generacion de imagenes de moda: compone un look completo a partir de una o varias prendas de vestir.
+- Virtual try-on: viste a una persona con una prenda concreta manteniendo la identidad visual de la entrada.
+- Edicion de imagen image-to-image: transforma una imagen existente segun la prenda o el estilo objetivo.
+- Inpainting: aplicacion de la prenda sobre regiones enmascaradas de la imagen.
+- Integracion con diffusers: se carga como adaptador LoRA sobre los modelos base Qwen-Image.
+- Idioma de trabajo: ingles, segun los metadatos del repositorio.
+- No se documenta soporte de tool calling, agentes, vision adicional, audio ni modo de razonamiento explicito.
 
 ## Casos de uso
 
-- Catalogos de e-commerce: generar la misma prenda sobre distintas personas y poses a partir de una foto de estudio, reduciendo el coste de sesiones fotograficas por cada variante de color o talla.
-- Probador virtual en tienda online: el usuario sube una foto propia y un collage con las prendas que quiere probar, y el modelo devuelve una previsualizacion del conjunto completo con accesorios.
-- Estilismo asistido: dado un collage OOTD de referencia, producir la imagen de la persona vistiendo exactamente esa combinacion respetando el orden de capas indicado en el prompt, util para herramientas de recomendacion de outfits.
-- Pruebas de surtido para compradores de moda: evaluar visualmente como funciona una combinacion de prendas y accesorios antes de fabricar o comprar stock, generando variantes sobre un mismo modelo.
-- Marketing y redes sociales: crear imagenes de look completo por temporada o campana a partir de un collage de producto, manteniendo la identidad de la persona de referencia en la variante de inpainting.
-- Aumento de datos para otros modelos: generar pares persona-conjunto etiquetados para entrenar sistemas de recomendacion, recuperacion visual o deteccion de prendas.
-- Postproduccion de fotografia de producto: sustituir la ropa de una sesion ya realizada por prendas de un collage de referencia sin repetir el rodaje, usando el checkpoint de editing.
-- Prototipado de diseno: visualizar como queda una prenda nueva combinada con el resto del outfit de una persona concreta antes de disponer de una muestra fisica.
+- Probador virtual en comercio electronico: el cliente sube una foto y una prenda del catalogo y el modelo genera una imagen de como le queda, reduciendo devoluciones por talla o expectativa visual.
+- Creacion de catalogos de moda: a partir de una fotografia de producto se generan imagenes de la prenda puesta sobre modelos, sin sesion fotografica adicional.
+- Previsualizacion de combinaciones de ropa: componer looks completos combinando varias prendas para herramientas de estilismo o recomendacion.
+- Edicion de imagen para marketing: adaptar fotografias de producto a distintos contextos o poses mediante image-to-image e inpainting.
+- Prototipado rapido en diseno de moda: visualizar como queda un diseno sobre una persona antes de fabricar la muestra fisica.
+- Automatizacion de contenido para redes sociales: generar variantes visuales de una prenda con el adaptador LoRA sobre el modelo base en un pipeline diffusers.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye tablas comparativas (FID, CLIP, SSIM, LPIPS ni metricas especificas de try-on) ni comparaciones cuantitativas con otros sistemas de virtual try-on.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible en la informacion proporcionada. Solo se indica que el entorno probado es una NVIDIA H200.
-- GPU de referencia: NVIDIA H200, con PyTorch 2.7.1 y CUDA 12.8 bajo Python 3.10.
-- Los adaptadores LoRA en si ocupan poco (el repositorio completo pesa 0,9 GB), pero el modelo base Qwen-Image-Edit-2509 debe cargarse integro en memoria y no se documenta su huella de VRAM en la informacion disponible.
-- Encaje en GPU de consumo: no confirmado; dado que el entorno de referencia es una H200, no hay datos que permitan afirmar que quepa en GPUs de consumo tipo RTX 4090.
-- Opciones de despliegue: el proyecto proporciona un script propio (`scripts/inference/inference.py`) con `--task inpainting` o `--task editing`, `--model-dir`, `--lora`, `--origin`, `--ootd`, `--prompt-file`, `--output`, `--seed`, `--steps` y `--cfg-scale`. La libreria declarada es diffusers, por lo que la integracion pasa por ese ecosistema. No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI, que no son aplicables a este tipo de modelo.
-- Latencia y throughput: no disponible. Los unicos parametros publicados son 40 pasos de muestreo y CFG 4.0 por generacion.
-- Seleccion de GPU: se realiza mediante la variable de entorno `CUDA_VISIBLE_DEVICES`.
+- VRAM estimada: no disponible en la informacion proporcionada; depende del modelo base Qwen-Image sobre el que se monta el LoRA y de la precision de inferencia.
+- GPU recomendadas: no disponible. Al tratarse de un adaptador sobre un modelo de difusion de gran tamano, se requiere una GPU con VRAM suficiente para el modelo base completo.
+- Cabe en GPU consumer: no disponible; el repositorio del adaptador ocupa 1,3 GB, pero el modelo base condiciona el requisito real de memoria.
+- Opciones de despliegue: diffusers (libreria declarada); no se documentan otras opciones como vLLM, llama.cpp u Ollama, que no aplican a modelos de difusion de imagen.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos de rendimiento ni de especificaciones de modelos comparables en la informacion proporcionada, por lo que no es posible establecer una comparativa fiable con alternativas de la misma categoria. La unica comparacion documentada es interna, entre los dos checkpoints del propio repositorio:
+| Modelo | Tipo | Modelo base | Contexto | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| Garments2Look-LoRA | LoRA de difusion para virtual try-on | Qwen-Image-2.1 / Qwen-Image-Edit-2509 | no disponible | no disponible | gated en Hugging Face |
+| Alternativas de virtual try-on | no disponible | no disponible | no disponible | no disponible | no disponible |
 
-| Checkpoint | Tarea | Entrada figura 1 | Mascara | Entrenamiento |
-|---|---|---|---|---|
-| `...-inpainting-epoch-1.safetensors` | Inpainting | Persona con regiones de ropa enmascaradas en gris 128 | Implicita en la imagen | 20K muestras, 2 epocas, rango 32 |
-| `...-editing-epoch-1.safetensors` | Editing | Persona con su conjunto original | No aplica | 20K muestras, 2 epocas, rango 32 |
+No se dispone de informacion suficiente para establecer una comparativa con alternativas concretas de la misma categoria.
 
 ## Limitaciones y advertencias
 
-- Licencia no disponible: sin licencia declarada no se puede asumir permiso de uso comercial. Conviene contactar con el autor antes de integrarlo en produccion.
-- Idioma limitado al ingles: los prompts y las instrucciones de estilo deben redactarse en ingles; no hay evidencia de soporte multilingue.
-- Adopcion practicamente nula: 0 descargas y 1 like en el momento de redactar la ficha, sin comunidad que haya validado el comportamiento fuera del ejemplo publicado.
-- Codigo pendiente de publicacion: la model card indica que las actualizaciones de codigo y los ejemplos de entrenamiento estan preparados en local y pendientes de subir al repositorio de GitHub, por lo que los comandos pueden no reproducirse tal cual.
-- Dependencia fuerte del formato de entrada: en inpainting la mascara debe venir ya incrustada en la imagen como gris 128 y no se pasa como argumento aparte; en editing la imagen de origen debe mostrar ropa existente. Un uso incorrecto de ese contrato de entrada degrada el resultado.
-- Sensibilidad al orden del collage: el orden de los articulos del collage debe coincidir con el prompt numerado, de lo contrario la correspondencia entre prenda y numero se rompe.
-- Riesgo de alucinacion visual: no se publican metricas de fidelidad de prenda, textura, logotipos ni de preservacion de identidad, por lo que pueden aparecer artefactos, fusiones de prendas o cambios no deseados en la persona o el fondo.
-- Sin benchmarks: no hay numeros que permitan estimar la calidad frente a alternativas comerciales o academicas de virtual try-on.
-- Sesgos no evaluados: no se documenta ninguna evaluacion de sesgo por tono de piel, complexion, genero o tipo corporal, un aspecto critico en moda y una fuente habitual de fallos en este tipo de sistemas.
-- Datos del articulo no verificables en esta busqueda: la referencia indicada es arXiv 2603.14153 (CVPR 2026) y la busqueda web realizada no devolvio resultados relevantes sobre el modelo, por lo que no se ha podido contrastar informacion adicional.
-- Coste de inferencia alto: requiere cargar el modelo base completo y ejecutar 40 pasos de difusion por imagen, sin datos publicos de latencia.
+- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en Hugging Face antes de la descarga.
+- Licencia no disponible: no se puede confirmar si el uso comercial esta permitido; es un riesgo para produccion.
+- Idiomas: los metadatos solo declaran ingles, lo que puede limitar instrucciones o prompts en castellano.
+- Dependencia del modelo base: el comportamiento final depende de Qwen-Image-2.1 y Qwen-Image-Edit-2509, incluidos sus sesgos y limitaciones.
+- Sin datos de entrenamiento ni benchmarks: no es posible evaluar la calidad, la robustez ni el riesgo de artefactos o alucinaciones visuales.
+- Riesgo de sesgos: al ser un modelo de moda, puede reproducir sesgos de representacion corporal, genero o etnia presentes en los datos de entrenamiento, aunque no se documentan.
+- Uso responsable: en virtual try-on conviene tratar imagenes personales con consentimiento y cumplir la normativa de proteccion de datos.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/ArtmeScienceLab/Garments2Look-LoRA
-- Modelo base: https://huggingface.co/Qwen/Qwen-Image-Edit-2509
-- Repositorio de codigo y entrenamiento: https://github.com/ArtmeScienceLab/Garments2Look
-- Dataset: https://huggingface.co/datasets/ArtmeScienceLab/Garments2Look
-- Articulo (CVPR 2026): https://arxiv.org/abs/2603.14153
+- Hugging Face: https://huggingface.co/ArtmeScienceLab/Garments2Look-LoRA
+- Modelo base Qwen-Image-2.1: https://huggingface.co/Qwen/Qwen-Image-2.1
+- Modelo base Qwen-Image-Edit-2509: https://huggingface.co/Qwen/Qwen-Image-Edit-2509
+- Paper referenciado (arxiv:2603.14153): https://arxiv.org/abs/2603.14153

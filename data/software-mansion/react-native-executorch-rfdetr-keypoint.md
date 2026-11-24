@@ -2,86 +2,102 @@
 
 ## Resumen
 
-Este repositorio aloja el modelo RFDetr en su variante de estimación de pose (keypoint) para la librería React Native ExecuTorch, desarrollada por Software Mansion. El modelo está exportado en formato `.pte` con los backends XNNPack, CoreML y MLX, listo para ejecutarse de forma local en dispositivos móviles mediante el runtime ExecuTorch de Meta. Su propósito principal es permitir la estimación de puntos clave del cuerpo humano (pose) sin conexión, preservando la privacidad de los datos del usuario.
+rfdetr-keypoint es un modelo de deteccion de puntos clave (keypoint detection) derivado del detector de objetos RF-DETR de Roboflow, exportado por Software Mansion como programas ExecuTorch `.pte` listos para ejecutarse en dispositivo. No se distribuye como pesos de PyTorch convencionales, sino como artefactos compilados para cuatro combinaciones de backend y precision (CoreML fp16, Vulkan fp16, XNNPACK fp32 y XNNPACK int8), pensados para consumirse desde la libreria React Native ExecuTorch.
 
-La relevancia actual radica en la creciente demanda de aplicaciones móviles con capacidades de visión por computador en el dispositivo, evitando la latencia y los costes de servidores en la nube. Al estar integrado con React Native ExecuTorch, permite a desarrolladores de React Native desplegar modelos de visión de forma declarativa y sencilla, con compatibilidad garantizada con el runtime de ExecuTorch en segundo plano.
+El modelo resuelve la deteccion de esqueletos humanos sobre imagen, con salida compatible con la metrica OKS de COCO keypoint. Su relevancia actual esta en el despliegue movil: permite inferencia de un detector transformer con atencion deformable directamente en el telefono, sin servidor, con un artefacto int8 de 56,6 MB y una perdida de precision muy contenida respecto a fp32 (70,00 frente a 70,37 de mAP50-95 OKS en las primeras 500 imagenes de val2017 de COCO).
 
-El modelo se exportó con ExecuTorch versión 1.3.0, por lo que no se garantiza compatibilidad hacia adelante con versiones futuras del runtime. El repositorio tiene un tamaño de 0,7 GB y la licencia es Apache 2.0, lo que permite uso comercial sin restricciones adicionales.
+La ficha se limita a lo publicado en el repositorio: el autor no documenta numero de parametros, longitud de contexto (no aplica, es un modelo de vision), composicion del dataset de entrenamiento ni resultados de benchmarks mas alla del dato de OKS citado. El repositorio ocupa 1,0 GB, aunque los artefactos `.pte` publicados suman aproximadamente 337 MB.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | RFDetr (basada en DETR, deteccion de objetos y keypoints) |
+| Arquitectura | RF-DETR (transformer con atencion deformable) para deteccion de keypoints |
 | Parametros totales | no disponible |
-| Parametros activos | no aplicable (no es MoE) |
-| Longitud de contexto | no aplicable (modelo de vision) |
-| Tipos de cuantizacion | no disponible |
-| Idiomas soportados | no disponible |
+| Parametros activos | no aplica (no es MoE) |
+| Longitud de contexto | no aplica (modelo de vision) |
+| Tipos de cuantizacion | fp16 (CoreML, Vulkan), fp32 (XNNPACK), int8 dinamico 8da8w en capas Linear (XNNPACK) |
+| Idiomas soportados | no disponible (no aplica) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | `.pte` (ExecuTorch, con backends XNNPack, CoreML y MLX) |
+| Formato de pesos | ExecuTorch `.pte` (compilado), con `config.json` por backend |
+| Backends publicados | coreml, vulkan, xnnpack |
+| Runtime compatible | ExecuTorch v1.4.1 |
+| Tamano de artefactos | CoreML fp16 71,5 MB; Vulkan fp16 70,0 MB; XNNPACK fp32 139 MB; XNNPACK int8 56,6 MB |
+| Tarea (pipeline) | keypoint-detection |
+| Region declarada | us |
 
 ## Arquitectura y entrenamiento
 
-RFDetr es un modelo de detección de objetos y estimación de pose desarrollado por Roboflow, basado en la arquitectura DETR (Detection Transformer). Utiliza un transformer de visión para predecir directamente los puntos clave del cuerpo humano, sin necesidad de propuestas de regiones ni anclajes. El modelo se exportó a ExecuTorch en su variante de keypoint, específicamente para estimación de pose, y se compiló con los backends XNNPack (para Android), CoreML y MLX (para iOS), lo que permite una ejecución eficiente en dispositivos móviles.
+La arquitectura subyacente es RF-DETR, el detector de Roboflow basado en transformer con atencion deformable, adaptado aqui a la tarea de keypoint detection. El repositorio no aporta detalles sobre el backbone, el numero de capas, el tamano del modelo ni el esquema de entrenamiento; unicamente referencia el repositorio upstream (github.com/roboflow/rf-detr) como origen. Tampoco se documenta el volumen de tokens o imagenes de entrenamiento, la composicion del dataset ni si hubo fases de ajuste fino especificas para keypoints.
 
-No se proporcionan detalles sobre el dataset de entrenamiento, el número de tokens de datos de imagen o el proceso de optimización (RLHF, DPO, etc.). La información disponible se limita a la exportación técnica del modelo al formato `.pte` con ExecuTorch 1.3.0, sin especificar el número de parámetros ni la resolución de entrada requerida. La innovación principal de este paquete no está en el modelo en sí, sino en la integración con React Native ExecuTorch, que facilita su despliegue en aplicaciones móviles multiplataforma.
+La innovacion tecnica relevante esta en la exportacion, no en el entrenamiento. La variante int8 aplica cuantizacion dinamica 8da8w (activaciones int8, pesos int8 por canal) exclusivamente a las capas Linear, dejando en fp32 las convoluciones y, de forma deliberada, los offsets de la atencion deformable y las cabezas de clase, caja y keypoint. Esa selectividad explica que la degradacion sea minima (0,37 puntos de mAP50-95 OKS). El backend MLX fue exportado pero no publicado; el motivo queda registrado en `mlx/NOTES.md`.
 
 ## Capacidades
 
-- Estimación de pose humana: detecta puntos clave del cuerpo (articulaciones, extremidades, etc.) en imágenes o vídeo.
-- Inferencia en el dispositivo: ejecución local sin conexión, sin necesidad de servidores externos.
-- Compatibilidad multiplataforma: exportado para backends XNNPack (Android), CoreML y MLX (iOS), lo que permite su uso en ambas plataformas móviles.
-- Integración con React Native: se usa a través de la librería `react-native-executorch`, que ofrece una interfaz declarativa para cargar y ejecutar el modelo.
-- Formato optimizado para runtime: los archivos `.pte` están listos para el runtime ExecuTorch, sin pasos adicionales de conversión.
-- No se han documentado capacidades de generación de texto, razonamiento, código o matemáticas, ya que es un modelo puramente de visión.
+- Deteccion de puntos clave sobre imagen, con salida evaluable mediante OKS de COCO keypoint.
+- Deteccion de personas y de sus keypoints en una sola pasada (cabezas de clase, caja y keypoint diferenciadas).
+- Inferencia en dispositivo en Android, iOS y entornos con Vulkan, CoreML o XNNPACK.
+- Ejecucion con cuantizacion int8 para reducir el artefacto a 56,6 MB con perdida de precision marginal.
+- Integracion directa con React Native ExecuTorch mediante las constantes del registro de modelos de la libreria.
+- No soporta tool calling, agentes, texto, vision generativa, audio ni capacidades multilingues: es un modelo puramente discriminativo de vision.
 
 ## Casos de uso
 
-- Aplicaciones de fitness y entrenamiento: la estimación de pose permite analizar la postura del usuario durante ejercicios, detectar errores de forma y contar repeticiones en tiempo real, todo en el dispositivo para garantizar la privacidad.
-- Guías de yoga y pilates: el modelo puede evaluar la correcta alineación del cuerpo en cada postura y ofrecer retroalimentación visual o auditiva sin depender de servicios en la nube.
-- Análisis de ergonomía en entornos laborales: integrado en una app de RRHH o de bienestar, puede evaluar la postura del trabajador frente a una cámara y alertar sobre posiciones de riesgo para la espalda.
-- Realidad aumentada para estética o moda: superponer elementos virtuales sobre las articulaciones detectadas para probar ropa o accesorios de forma virtual, con baja latencia al ejecutarse localmente.
-- Accesibilidad para personas con movilidad reducida: aplicaciones de control por gestos que interpretan movimientos de brazos o manos como comandos, sin necesidad de hardware especializado.
-- Análisis de deportes de élite: captura de la técnica de un atleta en vídeo, con seguimiento de la pose en tiempo real para análisis de rendimiento y comparativa con modelos ideales.
-- Investigación en biomecánica: recogida de datos de pose en estudios de campo con dispositivos móviles, sin la necesidad de sistemas de captura de movimiento caros.
+- Analisis de postura en aplicaciones de fitness: el modelo estima keypoints corporales por fotograma en el propio telefono, lo que permite contar repeticiones y corregir la forma del ejercicio sin enviar video a un servidor.
+- Rehabilitacion y fisioterapia: seguimiento de rangos de movimiento articulares en sesiones grabadas con la camara del dispositivo, aprovechando la variante CoreML fp16 en iOS para mantener latencia baja.
+- Deteccion de caidas en entornos domesticos: procesamiento local de la camara de un dispositivo movil o embebido, con la variante XNNPACK int8 por su menor huella de memoria y su idoneidad en hardware limitado.
+- Animacion y captura de movimiento de bajo coste: extraccion de esqueletos 2D para controlar avatares o rigs en tiempo real en apps React Native, sin infraestructura de GPU en la nube.
+- Analitica deportiva en el borde: conteo de personas y extraccion de poses en grabaciones de entrenamiento para generar metricas agregadas, con Vulkan fp16 como opcion en Android.
+- Preprocesado para modelos de accion: los keypoints sirven como entrada compacta a clasificadores de gesto o de actividad que se ejecutan a continuacion en el mismo dispositivo, reduciendo el coste frente a procesar la imagen completa.
+- Control por gestos en interfaces: uso de keypoints de manos y brazos para interaccion sin contacto en aplicaciones de accesibilidad o quioscos.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. No se incluyen métricas de precisión (p. ej., mAP, PCK) ni comparativas con otros modelos de estimación de pose. El rendimiento en términos de latencia y throughput dependerá del dispositivo y del backend utilizado (XNNPack, CoreML, MLX), pero no se aportan cifras concretas.
+Unico dato publicado por el autor: COCO keypoint (OKS) mAP50-95 sobre las primeras 500 imagenes de val2017.
+
+| Variante | Precision | OKS mAP50-95 |
+|---|---|---|
+| XNNPACK fp32 | fp32 | 70,37 |
+| XNNPACK int8 (8da8w) | int8 | 70,00 |
+
+No se han publicado resultados de benchmarks adicionales (por ejemplo, latencia o throughput por dispositivo) en la informacion disponible.
 
 ## Requisitos de hardware
 
-- Dispositivos móviles: el modelo está diseñado para ejecutarse en smartphones Android (con XNNPack) y iOS (con CoreML o MLX).
-- VRAM estimada: no disponible; depende del tamaño del modelo y de la cuantización, pero al estar optimizado para móviles se espera que quepa en memoria de dispositivos con 4-8 GB de RAM.
-- GPU: no se requiere GPU dedicada; se ejecuta en la CPU o en la NPU del dispositivo según el backend.
-- Opciones de despliegue: exclusivamente a través de la librería React Native ExecuTorch; no se mencionan alternativas como vLLM, llama.cpp u Ollama.
-- Latencia y throughput: no disponibles. La latencia dependerá del hardware del dispositivo y del backend seleccionado.
+- Huella en disco de los artefactos: 56,6 MB (XNNPACK int8), 70,0 MB (Vulkan fp16), 71,5 MB (CoreML fp16) y 139 MB (XNNPACK fp32). La VRAM/RAM necesaria para inferencia no esta documentada.
+- Cabe en GPU de consumo y en moviles: el objetivo declarado es la ejecucion en dispositivo, no en servidor.
+- Backends por plataforma: CoreML para iOS/macOS, Vulkan para Android con soporte Vulkan, XNNPACK como ruta portable en CPU.
+- Despliegue mediante el runtime ExecuTorch v1.4.1 y la libreria React Native ExecuTorch; no se distribuyen pesos para vLLM, llama.cpp, Ollama ni TGI, que ademas no aplican a este tipo de modelo.
+- Latencia y throughput estimados: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-No se dispone de información de rendimiento comparativo con otros modelos de estimación de pose como MediaPipe BlazePose, OpenPose o MoveNet, ya que no se han publicado benchmarks. La principal diferencia es que este paquete está optimizado para su uso en React Native con ExecuTorch, mientras que los otros modelos suelen requerir soluciones nativas o librerías específicas. La licencia Apache 2.0 permite uso comercial sin restricciones, lo que lo hace atractivo frente a alternativas con licencias más restrictivas.
+| Modelo | Tipo | Parametros | Contexto | OKS mAP50-95 | Licencia | Formato |
+|---|---|---|---|---|---|---|
+| rfdetr-keypoint (este) | RF-DETR keypoint, exportado | no disponible | no aplica | 70,00 (int8) / 70,37 (fp32) | Apache 2.0 | ExecuTorch `.pte` |
+| RF-DETR upstream (roboflow/rf-detr) | Detector transformer | no disponible | no aplica | no disponible | no disponible en esta ficha | PyTorch |
+| YOLOv8-pose | CNN detector de pose | no disponible | no aplica | no disponible | AGPL-3.0 (variante Ultralytics) | PyTorch, ONNX, otros |
+| MediaPipe Pose | CNN de pose en dispositivo | no disponible | no aplica | no disponible | Apache 2.0 | TFLite |
 
-| Modelo | Arquitectura | Formato | Licencia | Integración React Native |
-|---|---|---|---|---|
-| RFDetr keypoint (este) | Transformer (DETR) | `.pte` (ExecuTorch) | Apache 2.0 | Sí, nativa |
-| MediaPipe Blaze | CNN | TFLite | Apache 2.0 | Requiere wrappers adicionales |
-| MoveNet | CNN | TFLite | Apache 2.0 | Requiere wrappers adicionales |
+La comparativa se limita a categoria y formato: no se dispone de resultados de benchmarks de las alternativas en la informacion proporcionada, por lo que no procede comparar cifras de precision. La diferencia practica de este modelo frente a las alternativas es el empaquetado ExecuTorch con variantes por backend y una variante int8 validada.
 
 ## Limitaciones y advertencias
 
-- Compatibilidad con ExecuTorch 1.3.0: no se garantiza compatibilidad con versiones anteriores del runtime, por lo que es necesario usar la versión exacta especificada en la librería.
-- Sin datos de precisión: no se han publicado métricas de rendimiento de la estimación de pose, por lo que no se puede evaluar su calidad frente a otros modelos.
-- Enfoque exclusivo en visión: no soporta tareas de lenguaje o razonamiento, solo detección de puntos clave.
-- Dependencia de la librería React Native ExecuTorch: su uso fuera de este entorno requiere configurar manualmente el runtime ExecuTorch compatible.
-- Riesgo de sesgos: al ser un modelo de pose, puede presentar sesgos en la detección según la diversidad de los datos de entrenamiento originales de RFDetr, aunque no se especifican.
-- Sin documentación sobre el dataset de entrenamiento: no se puede evaluar la robustez ante casos extremos o condiciones de baja iluminación.
+- Modelo exclusivamente de vision: no procesa texto ni mantiene conversaciones; cualquier uso como LLM es invalido.
+- Sin garantia de compatibilidad hacia delante en ExecuTorch: los `.pte` estan compilados para la version 1.4.1 y un runtime mas antiguo puede fallar al cargarlos.
+- La variante int8 solo cuantiza capas Linear; las convoluciones y las cabezas permanecen en fp32, de modo que el ahorro de tamano no implica aceleracion uniforme en todas las capas.
+- El unico dato de calidad publicado corresponde a las primeras 500 imagenes de val2017; no hay evaluacion sobre dominios distintos de COCO (interiores, oclusiones severas, camaras de vigilancia, etc.).
+- Riesgo de fallo en escenas con oclusiones, multitud o personas de cuerpo parcial, inherente a los detectores de keypoint 2D; no cuantificado por el autor.
+- Sesgos demograficos y de contexto no documentados; al no publicarse la composicion del dataset de entrenamiento, no es posible evaluar su cobertura.
+- Licencia Apache 2.0 permite uso comercial, pero conviene verificar la licencia del modelo upstream RF-DETR y de sus datos de entrenamiento antes de un despliegue en produccion.
+- El autor no documenta numero de parametros ni requisitos de memoria, lo que dificulta el dimensionado previo en dispositivos de gama baja.
+- El backend MLX no esta publicado; no debe asumirse su disponibilidad.
 
 ## Enlaces
 
-- [Hugging Face - software-mansion/react-native-executorch-rfdetr-keypoint](https://huggingface.co/software-mansion/react-native-executorch-rfdetr-keypoint)
-- [React Native ExecuTorch (GitHub)](https://github.com/software-mansion/react-native-executorch)
-- [Documentación de inicio rápido](https://docs.swmansion.com/react-native-executorch/docs/fundamentals/getting-started)
-- [Página oficial de React Native ExecuTorch](https://executorch.swmansion.com/)
-- [Ejecución de RFDetr original (GitHub de Roboflow)](https://github.com/roboflow/rf-detr)
-- [Documentación de ExecuTorch](https://pytorch.org/executorch/stable/index.html)
+- Modelo en Hugging Face: https://huggingface.co/software-mansion/react-native-executorch-rfdetr-keypoint
+- Modelo upstream RF-DETR: https://github.com/roboflow/rf-detr
+- Libreria React Native ExecuTorch: https://www.npmjs.com/package/react-native-executorch
+- Documentacion de descarga de modelos: https://docs.swmansion.com/react-native-executorch/docs/fundamentals/downloading-models
+- Nota de compatibilidad de ExecuTorch: https://github.com/pytorch/executorch/blob/main/runtime/COMPATIBILITY.md
+- Nota sobre el backend MLX no publicado: https://huggingface.co/software-mansion/react-native-executorch-rfdetr-keypoint/blob/main/mlx/NOTES.md

@@ -5,7 +5,7 @@
   "author": "kingjones777",
   "url": "https://huggingface.co/kingjones777/Nex-N2.5-mini-ROCmFP4-imatrix-GGUF",
   "created_at": "2026-09-17T02:42:18.000Z",
-  "updated_at": "2026-09-17T03:22:25.000Z",
+  "updated_at": "2026-11-23T09:38:56.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -39,7 +39,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 93,
+  "downloads_30d": 78,
   "trending_score": 0,
   "parameters": 446571248,
   "parameters_human": "446.6M",

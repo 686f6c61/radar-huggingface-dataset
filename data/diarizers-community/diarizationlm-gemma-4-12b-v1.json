@@ -5,7 +5,7 @@
   "author": "diarizers-community",
   "url": "https://huggingface.co/diarizers-community/DiarizationLM-Gemma-4-12B-v1",
   "created_at": "2026-11-23T00:44:32.000Z",
-  "updated_at": "2026-11-23T00:47:16.000Z",
+  "updated_at": "2026-11-23T13:44:24.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",

@@ -5,7 +5,7 @@
   "author": "StrandsAgents",
   "url": "https://huggingface.co/StrandsAgents/strands-decider-E2B-gemma4-v2-2611",
   "created_at": "2026-11-17T17:53:58.000Z",
-  "updated_at": "2026-11-20T23:57:54.000Z",
+  "updated_at": "2026-11-23T23:16:39.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-classification",

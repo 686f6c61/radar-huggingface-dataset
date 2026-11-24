@@ -43,16 +43,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Qwen/Qwen3.5-2B · Hugging Face",
-      "url": "https://huggingface.co/Qwen/Qwen3.5-2B",
-      "snippet": "Image-Text-to-Text model with 2B parameters, built with Transformers. Download, explore files and run it on Hugging Face."
-    },
-    {
-      "title": "Qwen3.5-2B - Qualcomm AI Hub",
-      "url": "https://aihub.qualcomm.com/models/qwen3_5_2b",
-      "snippet": "Qwen3.5-2B Balanced 2B parameter model from the Qwen3.5 series for on‑device inference. Qwen3.5 is the latest multilingual language model series from Alibaba Cloud with improved reasoning and instruction‑following capabilities over Qwen3."
-    }
-  ]
+  "sources": []
 }

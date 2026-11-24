@@ -5,7 +5,7 @@
   "author": "qvac",
   "url": "https://huggingface.co/qvac/TranscribePsy-250M-EU-sub-coreml",
   "created_at": "2026-09-30T08:06:27.000Z",
-  "updated_at": "2026-11-07T17:40:14.000Z",
+  "updated_at": "2026-11-23T16:40:06.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "automatic-speech-recognition",
@@ -46,7 +46,7 @@
     "region:us"
   ],
   "likes": 4,
-  "downloads_30d": 99,
+  "downloads_30d": 102,
   "trending_score": 0,
   "parameters": 14634134,
   "parameters_human": "14.6M",

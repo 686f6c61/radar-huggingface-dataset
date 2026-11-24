@@ -2,85 +2,83 @@
 
 ## Resumen
 
-Bielik-One-11B-v3.1-r1-GGUF es una distribucion en formato GGUF del modelo Bielik-One-11B-v3.1-r1, publicada por el usuario jglowa en Hugging Face. El nombre indica un modelo de aproximadamente 11.000 millones de parametros, en su version 3.1 y variante r1, presumiblemente orientada a razonamiento. La familia Bielik es conocida en el ecosistema open source como una serie de modelos de lenguaje en polaco desarrollada por SpeakLeash, aunque la model card publicada no confirma explicitamente esa autoria ni el linaje concreto de esta version.
+Bielik-One-11B-v3.1-r1-GGUF es la conversión al formato GGUF del modelo Bielik-One-11B-v3.1-r1, publicado por el usuario jglowa a partir de los pesos originales del repositorio speakleash/Bielik-One-11B-v3.1-r1. Se trata de un modelo de 11.173.081.088 parámetros (aproximadamente 11,2 mil millones) orientado a la toma de decisiones estructuradas y etiquetado como modelo conversacional multilingüe. La familia Bielik es un proyecto polaco de modelos de lenguaje de gran escala, aunque la información disponible no detalla la autoría original más allá del repositorio speakleash.
 
-La relevancia de esta publicacion radica en su formato: al tratarse de una cuantizacion GGUF, el modelo esta pensado para inferencia local con llama.cpp y herramientas derivadas como Ollama o LM Studio, lo que permite ejecutarlo en hardware de consumo. Sin embargo, la informacion disponible es extremadamente limitada: la model card solo declara la licencia Apache 2.0 y no incluye especificaciones tecnicas, datos de entrenamiento, benchmarks ni instrucciones de uso.
+La relevancia de esta ficha radica en que ofrece una versión cuantizada y lista para su uso con llama.cpp, lo que permite desplegar un modelo de 11B en hardware de consumo. El repositorio ocupa 40,9 GB, lo que indica la presencia de múltiples niveles de cuantización. La licencia Apache 2.0 facilita su uso comercial, y la etiqueta "endpoints_compatible" sugiere compatibilidad con APIs de inferencia estándar.
 
-Por tanto, esta ficha se limita a documentar lo verificable y marca explicitamente como "no disponible" todo aquello que el autor no ha publicado. Cualquier dato sobre arquitectura interna, contexto, idiomas o rendimiento debe considerarse pendiente de confirmacion por parte del publicador original.
+No obstante, la información disponible es notablemente escasa: no se especifican detalles de arquitectura, datos de entrenamiento, benchmarks ni rendimiento medido. Esta ficha refleja fielmente esa limitación e indica "no disponible" en todos aquellos campos que no pueden verificarse a partir de las fuentes proporcionadas.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | no disponible (presumiblemente transformer decoder-only, sin confirmar) |
-| Parametros totales | aproximadamente 11B (inferido del nombre, no confirmado en la model card) |
-| Parametros activos | no disponible (no se indica que sea MoE) |
+| Arquitectura | no disponible |
+| Parámetros totales | 11.173.081.088 (~11,2B) |
+| Parámetros activos | no aplica (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible (el repositorio es GGUF; los niveles concretos no se detallan) |
-| Idiomas soportados | no disponible (la familia Bielik se asocia al polaco, sin confirmar para esta version) |
-| Licencia | Apache 2.0 |
-| Formato de pesos | GGUF |
+| Tipos de cuantización | no disponible (el repo GGUF de 40,9 GB sugiere múltiples niveles, pero no se detallan) |
+| Idiomas soportados | multilingual, pl, en, sq, be, bs, bg, hr, cs, da, et, fi, fr, el, es, is, lt, nl, de, no, pt, ru, ro, sr, hbs, sv, sk, sl, tr, uk, hu, it, lv |
+| Licencia | apache-2.0 |
+| Formato de pesos | GGUF (para llama.cpp); pesos originales presumiblemente safetensors en el repo base |
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura en la model card disponible. Por el nombre del modelo y la practica habitual de la familia Bielik, cabe esperar un transformer decoder-only de aproximadamente 11.000 millones de parametros, pero este dato no esta confirmado en la informacion proporcionada. Tampoco se especifica si emplea atencion con ventana deslizante, atencion lineal, mezcla de expertos u otra innovacion arquitectonica.
+No se dispone de información sobre la arquitectura interna del modelo en la documentación proporcionada. Por el tamaño (11,2B parámetros) y la familia a la que pertenece, es plausible que se trate de un transformer decoder-only denso, pero esto no puede confirmarse con los datos disponibles. Tampoco se especifican el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron fases de RLHF, DPO o ajuste supervisado.
 
-Respecto al entrenamiento, no hay datos sobre volumen de tokens, composicion del corpus, uso de RLHF, DPO u otras tecnicas de alineamiento. El sufijo "r1" sugiere una variante orientada a razonamiento o destilada a partir de trazas de razonamiento, pero se trata de una inferencia a partir del nombre y no de un dato documentado. La unica informacion tecnica cierta es que el artefacto distribuido es una conversion a GGUF, lo que implica un proceso de cuantizacion sobre los pesos originales en precision completa o media.
+La model card del repositorio GGUF es mínima y se limita a declarar la licencia, el modelo base y las etiquetas. Las etiquetas "decision-model", "merged" y "structured-decisions" sugieren que el modelo base podría haber sido fusionado (merge) a partir de otros modelos y orientado a producir decisiones estructuradas, pero no se aporta documentación técnica que lo confirme. Cualquier afirmación sobre innovaciones como decodificación especulativa, atención lineal o arquitecturas híbridas sería especulativa y, por tanto, se omite.
 
 ## Capacidades
 
-- Generacion de texto autoregresiva: capacidad basica esperada en cualquier modelo de esta familia, aunque no documentada en la model card.
-- Razonamiento multi-paso: el sufijo "r1" apunta a este uso, sin confirmacion oficial.
-- Codigo y matematicas: no disponible.
-- Soporte de tool calling o function calling: no disponible.
-- Soporte de agentes: no disponible.
-- Capacidades multilingues: no disponible; la familia Bielik se asocia historicamente al polaco, pero esta version no lo declara.
-- Modo thinking o vision: no disponible.
-- Ejecucion local via GGUF: capacidad cierta por el formato del repositorio, compatible con llama.cpp y derivados.
+- Generación de texto conversacional multi-turno, según la etiqueta "conversational".
+- Producción de decisiones estructuradas, según las etiquetas "decision-model" y "structured-decisions".
+- Soporte multilingüe amplio: la lista de idiomas incluye más de 30 lenguas europeas (polaco, inglés, español, alemán, francés, italiano, portugués, ruso, ucraniano, checo, eslovaco, esloveno, croata, serbio, búlgaro, danés, sueco, noruego, finés, estonio, letón, lituano, islandés, griego, turco, húngaro, albanés, bielorruso, bosnio, entre otros).
+- Compatibilidad con llama.cpp y con endpoints de inferencia estándar (etiqueta "endpoints_compatible").
+- No se documenta soporte de tool calling, function calling, agentes, visión, audio ni modo de razonamiento explícito ("thinking mode"). Estos extremos se consideran no disponibles.
 
 ## Casos de uso
 
-- Inferencia local en estaciones de trabajo: al distribuirse en GGUF, el modelo puede cargarse con llama.cpp u Ollama en equipos sin GPU dedicada de gran capacidad, siempre que se elija una cuantizacion adecuada a la RAM disponible.
-- Prototipado rapido de asistentes conversacionales: util para equipos que quieran evaluar la familia Bielik sin depender de infraestructura cloud, aunque la ausencia de benchmarks obliga a validar la calidad con evaluaciones propias.
-- Procesamiento de texto en polaco (si se confirma el soporte): la familia Bielik se ha orientado a este idioma, lo que la haria adecuada para tareas de redaccion, resumen o clasificacion en ese idioma.
-- Despliegue en entornos con requisitos de privacidad: al ejecutarse en local, los datos no salen del perimetro del usuario, lo que encaja en escenarios con datos sensibles.
-- Evaluacion comparativa interna: como artefacto de codigo abierto con licencia Apache 2.0, sirve para pruebas de calidad frente a otros modelos de ~11B antes de comprometerse con una solucion en produccion.
-- Integracion en pipelines de generacion aumentada por recuperacion (RAG): el modelo puede emplearse como generador en un sistema RAG, aunque la falta de datos sobre contexto maximo limita la planificacion del chunking hasta confirmar la ventana real.
-- Fine-tuning posterior: la licencia Apache 2.0 permite adaptaciones y uso comercial, si bien la falta de documentacion sobre el entrenamiento original hace recomendable verificar la procedencia de los datos antes de un ajuste fino en produccion.
+- Clasificación y etiquetado de documentos multilingües: el modelo puede emplearse para asignar categorías o decisiones estructuradas a textos en cualquiera de las más de 30 lenguas listadas, aprovechando su orientación a "structured-decisions".
+- Enrutamiento de solicitudes en sistemas de atención al cliente: al ser conversacional y multilingüe, puede clasificar la intención del usuario y derivar la conversación al departamento adecuado en entornos europeos con múltiples idiomas.
+- Moderación de contenido con criterios estructurados: la orientación a decisiones permite definir reglas de aceptación, rechazo o revisión y obtener salidas consistentes para pipelines de moderación.
+- Extracción de campos en formularios y documentos administrativos: útil en organismos que operan en varios idiomas europeos (por ejemplo, tramitación transfronteriza), donde se requiere normalizar respuestas estructuradas.
+- Asistente conversacional local en hardware de consumo: gracias al formato GGUF y a llama.cpp, puede desplegarse en estaciones de trabajo sin GPU dedicada de gama alta, manteniendo conversaciones multi-turno en varios idiomas.
+- Preetiquetado de datasets para entrenamiento: puede utilizarse como anotador automático de decisiones o categorías en corpus multilingües, reduciendo el coste de anotación manual antes de una revisión humana.
+- Filtrado y triaje de correo o tickets en soporte técnico: clasificación de incidencias por prioridad y tipo, con salida estructurada que alimenta sistemas de gestión.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: no disponible de forma oficial. Como referencia orientativa para un modelo de ~11B en GGUF, las cuantizaciones de 4 bits suelen requerir del orden de 6-8 GB, las de 5-6 bits entre 8 y 10 GB, y las de 8 bits en torno a 11-12 GB, aunque estas cifras son estimaciones generales y no datos del autor.
-- GPU recomendadas: no especificadas. Por tamano, una RTX 3090 o RTX 4090 con 24 GB permitiria cargar cuantizaciones altas con holgura; GPUs de 12-16 GB podrian alojar cuantizaciones de 4-6 bits.
-- Cabe en GPU de consumo: probablemente si, en cuantizaciones de 4-6 bits, aunque no hay confirmacion oficial.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio y otros motores compatibles con GGUF. vLLM y TGI no consumen GGUF de forma nativa sin conversion.
+- VRAM estimada: no disponible de forma oficial. Como referencia orientativa basada en el tamaño de parámetros (11,2B), una cuantización de 4 bits requeriría aproximadamente 6-7 GB de VRAM solo para los pesos, más el overhead de contexto; una de 8 bits rondaría los 12-13 GB. Estas cifras son estimaciones derivadas del número de parámetros y no datos publicados por el autor.
+- GPU recomendadas: no disponibles. Por tamaño, cabría en GPUs de consumo con suficiente VRAM (por ejemplo, RTX 4090 de 24 GB) en cuantizaciones de 4-8 bits, pero no se ha verificado.
+- Cabe en GPU de consumo: probablemente sí en cuantizaciones bajas (4 bits) con GPUs de 8 GB o más, aunque no confirmado.
+- Opciones de despliegue: llama.cpp (formato nativo GGUF) y, presumiblemente, servidores compatibles con GGUF como Ollama o llama-server; no se confirma soporte de vLLM o TGI.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
-|---|---|---|---|---|---|
-| Bielik-One-11B-v3.1-r1-GGUF | ~11B (inferido) | no disponible | Apache 2.0 | GGUF | Sin benchmarks publicados en la informacion disponible |
-| Alternativas de ~11B en GGUF | no disponible | no disponible | no disponible | no disponible | No se dispone de datos verificables para una comparacion rigurosa |
+No se dispone de información suficiente para establecer una comparativa rigurosa con modelos alternativos de la misma categoría. La tabla siguiente refleja únicamente los datos verificables del modelo y deja como "no disponible" los campos que no pueden contrastarse.
 
-No se dispone de informacion suficiente para establecer una comparativa fiable con modelos concretos de la misma categoria. La ausencia de benchmarks y de especificaciones en la model card impide contrastar rendimiento, contexto o calidad frente a alternativas.
+| Modelo | Parámetros | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|
+| Bielik-One-11B-v3.1-r1-GGUF | ~11,2B | no disponible | Apache 2.0 | GGUF | Modelo de decisiones estructuradas multilingüe |
+| Alternativas comparables | no disponible | no disponible | no disponible | no disponible | No se identifican en la información proporcionada |
 
 ## Limitaciones y advertencias
 
-- Documentacion practicamente inexistente: la model card no incluye arquitectura, contexto, idiomas ni datos de entrenamiento, lo que dificulta evaluar su idoneidad para produccion.
-- Sin benchmarks: no hay evidencia publicada de calidad en tareas estandar (MMLU, HumanEval, GSM8K u otras), por lo que cualquier afirmacion de rendimiento seria especulativa.
-- Riesgo de alucinacion: inherente a los modelos generativos; sin evaluaciones publicadas no es posible acotar su magnitud en este caso.
-- Sesgos: no documentados. Al desconocerse la composicion del corpus de entrenamiento, no se pueden identificar sesgos linguisticos, culturales o de dominio.
-- Idiomas: no confirmados. Si el modelo sigue la tradicion de la familia Bielik, el polaco seria el idioma principal, con un rendimiento en castellano potencialmente inferior y sin garantias.
-- Licencia Apache 2.0: permite uso comercial y modificacion, pero el publicador del GGUF no es necesariamente el autor original del modelo; conviene verificar la cadena de procedencia antes de un despliegue comercial.
-- Repositorio sin descargas ni interacciones: cero descargas y cero likes en el momento de la consulta, lo que reduce la senal de validacion por parte de la comunidad.
-- Formato GGUF: no apto para entrenamiento directo; requiere conversion o uso de los pesos originales para fine-tuning.
-- Fecha de creacion futura en los metadatos: el repositorio figura creado el 2026-11-12, lo que puede indicar un error de metadatos o una publicacion programada; conviene tratarlo con cautela.
+- La documentación técnica es mínima: no se detallan arquitectura, datos de entrenamiento, contexto máximo ni benchmarks, lo que dificulta evaluar su idoneidad en producción.
+- Riesgo de alucinación inherente a los modelos generativos; no se documentan medidas específicas de mitigación.
+- Sesgos desconocidos: al no publicarse la composición del dataset ni el proceso de ajuste, no es posible evaluar sesgos de género, etnia, idioma o dominio.
+- Cobertura idiomática declarada amplia, pero sin métricas por idioma; el rendimiento en lenguas minoritarias (por ejemplo, islandés, letón o albanés) no está verificado.
+- Al ser una conversión GGUF de un modelo base, puede presentar degradación de calidad respecto a los pesos originales en función de la cuantización elegida; el autor no documenta qué niveles incluye ni sus efectos.
+- Licencia Apache 2.0: permite uso comercial, pero conviene revisar las condiciones del modelo base speakleash/Bielik-One-11B-v3.1-r1, ya que la información disponible no aclara posibles términos adicionales.
+- No se confirma soporte de tool calling ni de agentes, por lo que no debe asumirse su uso en pipelines que dependan de function calling.
+- El etiquetado "merged" sugiere una fusión de modelos, práctica que puede introducir comportamientos inconsistentes no documentados.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/jglowa/Bielik-One-11B-v3.1-r1-GGUF
+- Repositorio Hugging Face del modelo GGUF: https://huggingface.co/jglowa/Bielik-One-11B-v3.1-r1-GGUF
+- Modelo base: https://huggingface.co/speakleash/Bielik-One-11B-v3.1-r1
+- No se han encontrado en la información proporcionada otros enlaces a papers, blogs, repositorios o demos.

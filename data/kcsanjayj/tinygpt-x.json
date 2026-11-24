@@ -1,0 +1,52 @@
+{
+  "schema": 2,
+  "id": "kcsanjayj/TinyGPT-X",
+  "slug": "kcsanjayj-tinygpt-x",
+  "author": "kcsanjayj",
+  "url": "https://huggingface.co/kcsanjayj/TinyGPT-X",
+  "created_at": "2026-11-24T04:25:07.000Z",
+  "updated_at": "2026-11-24T04:26:08.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "small-language-model",
+    "trained-from-scratch",
+    "en",
+    "dataset:roneneldan/TinyStories",
+    "license:mit",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 13891584,
+  "parameters_human": "13.9M",
+  "storage_bytes": 55573872,
+  "storage_human": "56 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

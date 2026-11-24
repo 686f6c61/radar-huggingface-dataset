@@ -5,7 +5,7 @@
   "author": "Sompote",
   "url": "https://huggingface.co/Sompote/GeoTech-SLM-9B-LoRA",
   "created_at": "2026-11-23T03:43:31.000Z",
-  "updated_at": "2026-11-23T04:02:25.000Z",
+  "updated_at": "2026-11-23T04:26:20.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

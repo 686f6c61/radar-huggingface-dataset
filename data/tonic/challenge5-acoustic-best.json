@@ -5,7 +5,7 @@
   "author": "Tonic",
   "url": "https://huggingface.co/Tonic/challenge5-acoustic-best",
   "created_at": "2026-11-21T15:53:53.000Z",
-  "updated_at": "2026-11-22T05:35:59.000Z",
+  "updated_at": "2026-11-24T05:50:05.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -20,7 +20,6 @@
     "drone-detection",
     "paris-hackathon-2026",
     "license:apache-2.0",
-    "model-index",
     "region:us"
   ],
   "likes": 0,
@@ -28,8 +27,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 2919444,
-  "storage_human": "3 MB",
+  "storage_bytes": 11677881,
+  "storage_human": "12 MB",
   "context_length": null,
   "base_model": null,
   "formats": [

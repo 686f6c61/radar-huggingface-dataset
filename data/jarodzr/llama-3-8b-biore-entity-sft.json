@@ -5,7 +5,7 @@
   "author": "jarodzr",
   "url": "https://huggingface.co/jarodzr/Llama-3-8B-BioRE-ENTITY-SFT",
   "created_at": "2026-04-23T16:17:24.000Z",
-  "updated_at": "2026-11-21T13:27:24.000Z",
+  "updated_at": "2026-11-21T14:18:26.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",

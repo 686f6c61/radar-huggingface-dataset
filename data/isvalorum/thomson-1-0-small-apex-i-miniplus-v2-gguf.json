@@ -70,31 +70,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Breaking News, Latest News and Videos | CNN",
-      "url": "https://www.cnn.com/",
-      "snippet": "View the latest news and breaking news today for U.S., world, weather, entertainment, politics and health at CNN.com."
-    },
-    {
-      "title": "World news - breaking news, video, headlines and opinion | CNN",
-      "url": "https://www.cnn.com/world",
-      "snippet": "View CNN world news today for international news and videos from Europe, Asia, Africa, the Middle East and the Americas."
-    },
-    {
-      "title": "CNN - Wikipedia",
-      "url": "https://en.wikipedia.org/wiki/CNN",
-      "snippet": "CNN ... Cable News Network, Inc.[2] (CNN) is an American multinational news media company and the flagship namesake property …"
-    },
-    {
-      "title": "CNN.com - Breaking News, U.S., World, Weather, Entertainment",
-      "url": "https://www.cnn.com/index2.html",
-      "snippet": "CNN.com delivers the latest breaking news and information on the latest top stories, weather, business, entertainment, politics, and …"
-    },
-    {
-      "title": "US - CNN",
-      "url": "https://www.cnn.com/us",
-      "snippet": "Photo illustration by CNN/Amy Sussman/Getty Images/ABC7 Los Angeles/AP/Orange County Corrections Department"
-    }
-  ]
+  "sources": []
 }

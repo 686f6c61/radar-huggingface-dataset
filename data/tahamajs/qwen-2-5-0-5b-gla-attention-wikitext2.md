@@ -2,109 +2,100 @@
 
 ## Resumen
 
-`tahamajs/qwen-2.5-0.5b-gla-attention-wikitext2` es un experimento de investigación publicado en Hugging Face por el usuario tahamajs, consistente en un transplante de atención sobre el modelo base Qwen2.5-0.5B. El autor sustituye el mecanismo de atención original por uno denominado `gla_attention` (registrado en un `ATTENTION_REGISTRY` propio, presumiblemente del framework NeuralOps) siguiendo un patrón de cirugía identificado como `hybrid_3_1`, es decir, una mezcla híbrida de capas con atención original y capas con atención GLA en proporción 3 a 1.
+`tahamajs/qwen-2.5-0.5b-gla-attention-wikitext2` es un checkpoint experimental derivado de `Qwen/Qwen2.5-0.5B` en el que se ha realizado una cirugía de atención sobre 18 de las 24 capas del decoder, sustituyendo la atención softmax GQA original por el operador `gla_attention` (Gated Linear Attention) de la librería NeuralOps. Las 6 capas restantes conservan la atención GQA nativa como anclas de recuperación contextual, siguiendo un patrón híbrido 3:1. El modelo lo publica el usuario tahamajs como parte del "Attention Surgery Zoo" de NeuralOps, un proyecto de investigación sobre atención subcuadrática.
 
-El modelo tiene 519.096.508 parámetros reales según los pesos en safetensors (1,2 GB en fp32/bf16), lo que confirma que se trata de una modificación estructural del Qwen2.5-0.5B original, no de un modelo entrenado desde cero. El ajuste se realiza mediante destilación de conocimiento sobre el dataset WikiText-2 (`wikitext-2-raw-v1`) durante 182,4 segundos en una NVIDIA RTX 3090.
+El modelo no es un modelo de propósito general: es un artefacto de investigación para estudiar la viabilidad de sustituir atención softmax por atención lineal en modelos compactos de 0,5B parámetros mediante destilación de representaciones ocultas sobre WikiText-2. Con 519.096.508 parámetros totales (frente a los 494M del base, por la expansión de cabezas KV en el adaptador), el checkpoint se distribuye en safetensors con pesos completos en FP16 (~990 MB) más un adaptador.
 
-La relevancia de esta ficha es limitada desde el punto de vista de producción: los datos publicados por el propio autor muestran una perplejidad causal (PPL) de 400580,78 tanto antes como después de la destilación, con un delta de +0,00, lo que indica que el proceso de ajuste no mejoró el modelo y que este se encuentra en un estado claramente no funcional para generación de texto. Se documenta aquí como artefacto de investigación sobre transplantes de atención, no como modelo utilizable.
+La relevancia actual es metodológica: documenta de forma transparente un resultado negativo. La perplejidad en validación de WikiText-2 tras la destilación es de 400.580,78 frente a 15,38 del profesor, es decir, la destilación no recupera nada (delta 0,00). Es un caso útil para quienes investigan atención lineal, destilación y límites de la cirugía de atención en modelos pequeños.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer basado en Qwen2.5-0.5B con atención sustituida por `gla_attention` en patrón híbrido `hybrid_3_1` |
+| Arquitectura | Transformer decoder de Qwen2 con 18/24 capas sustituidas por `gla_attention` (Gated Linear Attention, familia linear) y 6/24 capas con GQA softmax nativa (híbrido 3:1) |
 | Parametros totales | 519.096.508 |
 | Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible (solo se publican pesos safetensors) |
-| Idiomas soportados | no disponible |
-| Licencia | no disponible |
-| Formato de pesos | safetensors |
-| Modelo base | Qwen2.5-0.5B |
-| Dataset de ajuste | WikiText-2 (`wikitext-2-raw-v1`) |
-| Patrón de cirugía | `hybrid_3_1` |
-| PPL causal pre-destilación | 400580,78 |
-| PPL causal post-destilación | 400580,78 |
-| Delta de PPL | +0,00 |
-| Tiempo de destilación | 182,4 s en NVIDIA RTX 3090 |
-| Descargas / likes | 0 / 0 |
-| Fecha de creación | 2026-11-10 |
-| Fecha de actualización | 2026-11-10 |
+| Longitud de contexto | no disponible (entrenado/evaluado a longitud de secuencia 512) |
+| Tipos de cuantizacion | no disponible (pesos publicados en FP16 completo + adaptador) |
+| Idiomas soportados | inglés (declarado en la model card); resto no disponible |
+| Licencia | MIT |
+| Formato de pesos | safetensors (FP16 completo, ~990,14 MB, más adaptador) |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de Qwen2.5-0.5B, un transformer decoder-only denso de aproximadamente 500 millones de parámetros, y le aplica una cirugía estructural que reemplaza parte de las capas de atención por un mecanismo denominado `gla_attention`. El patrón `hybrid_3_1` sugiere que por cada tres capas se conserva la atención original y una se sustituye por GLA, aunque la model card no detalla qué capas concretas se modifican ni la definición exacta de `gla_attention` (podría tratarse de Gated Linear Attention u otra variante propietaria del framework NeuralOps). No se especifica si el mecanismo incorpora decodificación especulativa, atención lineal o compuertas recurrentes.
+El modelo parte de Qwen2.5-0.5B (24 capas, dimensión oculta D=896, 14 cabezas de consulta, 2 cabezas KV, dimensión de cabeza 64). La cirugía sustituye la atención en los índices de capa [0, 1, 2, 4, 5, 6, 8, 9, 10, 12, 13, 14, 16, 17, 18, 20, 21, 22] por `GLAttention`, una capa de atención lineal con recurrencia S_t = exp(g_t) · S_{t-1} + (K_t / sqrt(d))^T · V_t y salida O_t = Q_t · S_t, donde g_t = logsigmoid(gate_logits / tau) ≤ 0. Las capas [3, 7, 11, 15, 19, 23] mantienen la GQA softmax preentrenada. Cada capa transplantada hereda los tensores `q_proj`, `k_proj`, `v_proj` y `o_proj` del profesor, con expansión de cabezas KV de 2 a 14 mediante un adaptador (`QwenAttentionAdapter`) y manejo de RoPE con theta = 1.000.000. El kernel usa despacho a tres niveles: CUDA, Triton y PyTorch.
 
-El ajuste se realiza mediante destilación de conocimiento sobre WikiText-2 durante 182,4 segundos en una RTX 3090, un tiempo extremadamente corto que sugiere un número muy reducido de pasos o un subconjunto mínimo del dataset. Los datos publicados son concluyentes: la perplejidad causal es idéntica antes y después de la destilación (400580,78), con delta +0,00. Una PPL de ese orden de magnitud indica que el modelo no ha aprendido la distribución del lenguaje y que la destilación no ha tenido efecto medible, probablemente por un fallo en el pipeline de entrenamiento, una inicialización incorrecta de las capas transplantadas o una incompatibilidad entre el mecanismo GLA y el resto de la arquitectura. No se documenta RLHF, DPO ni ninguna otra fase de alineamiento.
+El entrenamiento consistió en destilación de representaciones ocultas en dos etapas sobre WikiText-2 (`wikitext-2-raw-v1`), con caché offline de representaciones del profesor en una RTX 3090 de 24 GB (0 MB de VRAM del profesor en GPU). La etapa 1 (30% del presupuesto, 6 pasos) congela embeddings, MLP y `lm_head` y entrena solo módulos de atención y layernorms con AdamW (lr=2.0e-4, weight decay 0.01, clipping 1.0), objetivo MSE por capa + 0.25·(1 − cos). La etapa 2 (70% del presupuesto, 11 pasos) hace destilación extremo a extremo con lr=6.0e-5 y peso 0.50 en el término coseno. El resultado es que la destilación no reduce la perplejidad: la métrica post-KD es idéntica a la pre-KD.
 
 ## Capacidades
 
-- No se han documentado capacidades funcionales en la información disponible.
-- Generación de texto: no verificada; la PPL publicada (400580,78) indica que el modelo no produce texto coherente.
-- Razonamiento, código y matemáticas: no disponible.
-- Tool calling / function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingües: no disponible.
-- Capacidades especiales (thinking mode, visión, audio): no disponible.
-- El único interés técnico documentado es servir como banco de pruebas para el transplante de atención `gla_attention` del framework NeuralOps.
+- Generación de texto causal autorregresiva, heredada de la interfaz de Qwen2.5-0.5B.
+- Razonamiento y conocimiento general: nominalmente presentes por herencia del base, pero degradados de forma severa según la perplejidad medida (400.580,78 en WikiText-2).
+- Soporte de tool calling / function calling: no disponible (no documentado en la model card).
+- Soporte de agentes y razonamiento multi-paso: no disponible (no documentado).
+- Capacidades multilingües: solo inglés declarado; el resto no disponible.
+- Capacidades especiales (thinking mode, visión, audio): no disponibles.
+- Valor como artefacto de investigación: permite reproducir y auditar el efecto de la cirugía de atención y del protocolo de destilación de NeuralOps.
 
 ## Casos de uso
 
-- Investigación sobre transplantes de atención: el modelo sirve como artefacto para estudiar cómo afecta la sustitución de capas de atención por `gla_attention` en un transformer denso pequeño, comparando la PPL resultante con la del Qwen2.5-0.5B original. Es el uso principal y prácticamente el único documentado.
-- Reproducción de experimentos de cirugía de modelos: el patrón `hybrid_3_1` y el registro `ATTENTION_REGISTRY` permiten reproducir el pipeline de modificación estructural y verificar si el fallo de destilación es reproducible o depende de la configuración del entorno.
-- Docencia sobre pipelines de destilación: el caso ilustra un fallo típico en el que la PPL no mejora tras la destilación, útil para enseñar a diagnosticar problemas de inicialización o de compatibilidad de capas.
-- Auditoría de model cards: sirve como ejemplo de publicación transparente de métricas negativas (delta de PPL +0,00), útil para discutir buenas prácticas de documentación en Hugging Face.
-- Pruebas de compatibilidad de frameworks: puede emplearse para validar si el framework NeuralOps carga correctamente pesos safetensors con capas de atención no estándar.
-- No se recomienda su uso en atención al cliente, generación de código en producción, RAG, agentes ni ninguna aplicación que requiera generación de texto fiable, dado que el modelo no supera la validación de perplejidad.
+- Investigación sobre atención lineal: usar el checkpoint como referencia reproducible para estudiar por qué la sustitución de atención softmax por GLA colapsa la perplejidad en modelos de 0,5B, comparando contra el profesor Qwen2.5-0.5B.
+- Auditoría de protocolos de destilación: el par pre-KD/post-KD con delta 0,00 permite evaluar si el esquema de destilación de representaciones (MSE + coseno, 17 pasos totales) es suficiente o está mal calibrado.
+- Desarrollo y test de la librería NeuralOps: sirve para validar el adaptador `QwenAttentionAdapter`, la expansión GQA 2→14 y el despacho de kernels CUDA/Triton/PyTorch en un caso real.
+- Estudio de arquitecturas híbridas: el layout 3:1 (18 capas lineales + 6 softmax) permite experimentar con distintas proporciones y posiciones de capas ancla.
+- Reproducción de infraestructura de bajo coste: el pipeline de caché offline de representaciones (0 MB de VRAM del profesor) es reutilizable en una única RTX 3090 para otros experimentos de destilación.
+- Docencia y divulgación: ejemplo concreto y medido de los límites de la cirugía de atención y de la diferencia entre "entrenar" y "recuperar capacidad".
 
 ## Benchmarks y rendimiento
 
-| Metrica | Valor |
-|---|---|
-| Perplejidad causal pre-destilación (WikiText-2) | 400580,78 |
-| Perplejidad causal post-destilación (WikiText-2) | 400580,78 |
-| Delta de PPL | +0,00 |
-| Tiempo de destilación | 182,4 s (RTX 3090) |
+Datos declarados por el autor (no verificados) sobre WikiText-2 (`wikitext-2-raw-v1`), split de validación, longitud de secuencia 512, batch_size=8, grad_accum=4, en una NVIDIA GeForce RTX 3090 de 24 GB.
 
-No se han publicado resultados de benchmarks en la información disponible (MMLU, HumanEval, GSM8K u otros). Los únicos datos numéricos son los de perplejidad del propio autor, que indican un modelo no funcional.
+| Metrica | Valor | Notas |
+|---|---:|---|
+| Perplejidad del profesor (`Qwen/Qwen2.5-0.5B`) | 15,38 | Referencia GQA softmax exacta |
+| Perplejidad del estudiante pre-KD (zero-shot) | 400.580,78 | Tras el transplante de 18/24 capas |
+| Perplejidad del estudiante post-KD | 400.580,78 | Tras destilación de representaciones en 2 etapas |
+| Delta absoluto de perplejidad | +0,00 | Cambio logrado por la destilación |
+| Reducción relativa de perplejidad | 0,00% | Recuperación desde el pico post-cirugía |
+
+No se han publicado en la información disponible resultados de MMLU, HumanEval, GSM8K ni otros benchmarks estándar.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: aproximadamente 1,0-1,1 GB en fp16/bf16 (519 M de parámetros × 2 bytes), y alrededor de 0,5 GB en cuantización de 8 bits. El repo ocupa 1,2 GB, consistente con pesos en fp32 o con metadatos adicionales.
-- GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM; el autor usó una RTX 3090 para la destilación.
-- Cabe en GPU de consumo: sí, en cualquier GPU moderna (RTX 3060, RTX 4060, RTX 4090, e incluso iGPU con memoria unificada suficiente).
-- Opciones de despliegue: al ser safetensors con arquitectura Qwen2 modificada, la carga con vLLM, TGI o llama.cpp requeriría soporte explícito para el mecanismo `gla_attention`; no se documenta compatibilidad con ninguna de estas herramientas. La carga con `transformers` estándar probablemente falle sin el registro de atención de NeuralOps.
-- Latencia y throughput estimados: no disponible. Dado el estado no funcional del modelo, las mediciones de throughput carecen de sentido práctico.
+- VRAM estimada para inferencia: los pesos FP16 (~990 MB) caben en menos de 2 GB de VRAM; con overhead de activaciones, por debajo de 4 GB en la mayoría de configuraciones.
+- GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM; el autor usó una RTX 3090 (24 GB) para el pipeline de destilación, no para inferencia.
+- Cabe en GPU de consumo: sí, en RTX 3060, RTX 4060, RTX 4090 y similares; también en iGPU con suficiente memoria compartida si se cuantiza.
+- Opciones de despliegue: la librería `neuralops` es la vía documentada; vLLM, llama.cpp, Ollama y TGI no están confirmados para este operador `gla_attention`, por lo que su uso requeriría portar la capa.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | PPL WikiText-2 | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Perplejidad WikiText-2 (val) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| tahamajs/qwen-2.5-0.5b-gla-attention-wikitext2 | 519 M | no disponible | 400580,78 | no disponible | Hugging Face (0 descargas) |
-| Qwen2.5-0.5B (base original) | ~494 M | 32 768 tokens (según documentación pública de Qwen) | no disponible en esta ficha | Apache 2.0 (según documentación pública de Qwen) | Hugging Face |
-| SmolLM2-360M | ~360 M | 8192 tokens (según documentación pública) | no disponible en esta ficha | Apache 2.0 (según documentación pública) | Hugging Face |
-| Qwen3-0.6B | ~600 M | 32 768 tokens (según documentación pública) | no disponible en esta ficha | Apache 2.0 (según documentación pública) | Hugging Face |
+| Este modelo (qwen-2.5-0.5b-gla-attention-wikitext2) | 519.096.508 | no disponible (evaluado a 512) | 400.580,78 (post-KD) | MIT | Hugging Face |
+| Qwen/Qwen2.5-0.5B (profesor) | ~494M | 32.768 tokens (según ficha del base) | 15,38 | Apache 2.0 | Hugging Face |
+| Qwen/Qwen2.5-1.5B | ~1.540M | 32.768 tokens (según ficha del base) | no disponible en esta información | Apache 2.0 | Hugging Face |
+| Modelos con atención lineal pura (p. ej. variantes GLA) | variable | variable | no disponible | variable | variable |
 
-La comparación relevante es contra el Qwen2.5-0.5B original: el modelo aquí documentado no mejora ninguna métrica publicada y no declara licencia ni idiomas, por lo que en la práctica no es un sustituto utilizable de su propio modelo base.
+La comparación directa con el profesor es la más informativa: mismo tamaño y mismo tokenizador, pero una diferencia de perplejidad de más de cuatro órdenes de magnitud.
 
 ## Limitaciones y advertencias
 
-- Modelo no funcional para generación de texto: la PPL causal de 400580,78 (idéntica antes y después de la destilación) indica que no ha aprendido la distribución del lenguaje.
-- La destilación no produjo ninguna mejora (delta +0,00) en 182,4 segundos de entrenamiento, lo que apunta a un fallo en el pipeline o a una incompatibilidad del mecanismo `gla_attention` con la arquitectura base.
-- Licencia no disponible: no se puede asumir uso comercial permitido; hay que contactar con el autor antes de cualquier uso.
-- Idiomas no declarados: se desconoce si conserva las capacidades multilingües del Qwen2.5-0.5B original.
-- Longitud de contexto no documentada: no se puede asumir la ventana de 32 768 tokens del modelo base.
-- Riesgo de alucinación: máximo, dado que el modelo no genera texto coherente; cualquier salida debe considerarse ruido.
-- Sesgos: no evaluados ni documentados.
-- Compatibilidad: requiere el registro de atención de NeuralOps (`ATTENTION_REGISTRY`) para cargarse; no se garantiza su funcionamiento con `transformers`, vLLM, llama.cpp u Ollama estándar.
-- Repositorio con 0 descargas y 0 likes: sin validación por parte de la comunidad.
-- No usar en producción bajo ninguna circunstancia.
+- Calidad de generación severamente degradada: una perplejidad de 400.580,78 en WikiText-2 implica que el modelo no produce texto coherente en la práctica; no debe usarse en producción.
+- La destilación no recuperó capacidad alguna (delta 0,00), lo que sugiere que el protocolo de 17 pasos es insuficiente o que la cirugía destruye información no recuperable con este esquema.
+- Riesgo de alucinación: muy alto, consecuencia directa del colapso de la distribución de probabilidad.
+- Idiomas: solo inglés declarado; no hay evidencia de capacidades multilingües.
+- Contexto: no se documenta la longitud de contexto soportada; la evaluación se hizo a 512 tokens.
+- Licencia MIT: permite uso comercial, pero la calidad del modelo hace inviable cualquier uso real más allá de la investigación.
+- Dependencia de la librería `neuralops` y del operador `gla_attention`: no es un checkpoint estándar de `transformers` y requiere el código del proyecto para cargarse.
+- Los benchmarks son declarados por el autor y no están verificados (`verified: false`).
+- El modelo base Qwen2.5-0.5B tiene su propia licencia Apache 2.0; conviene revisar la compatibilidad al redistribuir.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/tahamajs/qwen-2.5-0.5b-gla-attention-wikitext2
-- Modelo base Qwen2.5-0.5B: https://huggingface.co/Qwen/Qwen2.5-0.5B
+- Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B
+- Repositorio NeuralOps: https://github.com/tahamajs/NeuralOps
+- Implementación de `gla_attention`: https://github.com/tahamajs/NeuralOps/blob/main/neuralops/layers/linear/gla_attention.py
+- Licencia del proyecto: https://github.com/tahamajs/NeuralOps/blob/main/LICENSE
 - Dataset WikiText-2: https://huggingface.co/datasets/Salesforce/wikitext
-- Paper de Gated Linear Attention (referencia genérica, no confirmada como la implementación usada): https://arxiv.org/abs/2312.06635
-- Perfil del autor en Hugging Face: https://huggingface.co/tahamajs
-- Framework NeuralOps: no disponible (no se ha encontrado enlace en la información proporcionada)

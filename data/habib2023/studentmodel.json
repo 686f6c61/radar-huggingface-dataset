@@ -5,7 +5,7 @@
   "author": "habib2023",
   "url": "https://huggingface.co/habib2023/StudentModel",
   "created_at": "2026-11-23T14:14:09.000Z",
-  "updated_at": "2026-11-23T14:22:45.000Z",
+  "updated_at": "2026-11-23T16:20:26.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
@@ -14,6 +14,8 @@
     "ar"
   ],
   "tags": [
+    "safetensors",
+    "bert",
     "hate-speech-detection - maghreb-arabic - text-classification - cyberbullying",
     "text-classification",
     "ar",
@@ -22,13 +24,15 @@
   "likes": 0,
   "downloads_30d": 0,
   "trending_score": 0,
-  "parameters": null,
-  "parameters_human": null,
-  "storage_bytes": 0,
-  "storage_human": null,
+  "parameters": 147482882,
+  "parameters_human": "147.5M",
+  "storage_bytes": 589960913,
+  "storage_human": "590 MB",
   "context_length": null,
   "base_model": null,
-  "formats": [],
+  "formats": [
+    "safetensors"
+  ],
   "is_conversational": false,
   "gated": false,
   "disabled": false,

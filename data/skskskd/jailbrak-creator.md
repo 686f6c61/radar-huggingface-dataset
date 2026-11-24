@@ -2,91 +2,95 @@
 
 ## Resumen
 
-Skskskd/jailbrak-creator es un modelo de generación de texto publicado en Hugging Face por el usuario Skskskd el 29 de octubre de 2026. Se distribuye en formato safetensors bajo la librería transformers, con la etiqueta de arquitectura `qwen2` y un total de 494.032.768 parámetros (aproximadamente 0,49 millares de millones). El repositorio ocupa 2,0 GB y no registra descargas ni valoraciones en el momento de la consulta.
+jailbreak-creator es un ajuste fino (fine-tune) del modelo Qwen2.5-0.5B-Instruct, desarrollado por Hycaro bajo el sello SynastrIA Networks. Su propósito declarado es generar prompts adversarios (jailbreaks) a partir de un objetivo descrito en texto, orientados a la evaluación de la robustez de seguridad de otros modelos de lenguaje. Se trata, por tanto, de una herramienta de red teaming y no de un modelo de propósito general: el autor lo presenta explícitamente como un artefacto para entornos controlados y con autorización sobre el sistema evaluado.
 
-El interés técnico del modelo es limitado pero identificable: el recuento exacto de parámetros coincide con el de la familia Qwen2.5-0.5B de Alibaba, lo que sugiere que se trata de un ajuste fino (fine-tuning) sobre esa base, aunque la model card no lo confirma en ningún punto. El nombre del repositorio, "jailbrak-creator", apunta a un ajuste orientado a la generación de prompts de evasión de barreras de seguridad, si bien no existe documentación que describa el dataset, el procedimiento de entrenamiento ni los objetivos.
+Técnicamente es un transformer causal decoder-only de arquitectura Qwen2 con 494.032.768 parámetros (aproximadamente 0,5B), pesos en BF16 y formato safetensors. Hereda el tokenizador y la plantilla de chat del modelo base, lo que permite aplicar `apply_chat_template` con el formato de conversación de Qwen2.5. El repositorio ocupa 2,0 GB y acumula 329 descargas en Hugging Face.
 
-La relevancia práctica es la de un artefacto de investigación de pequeño tamaño: cabe en cualquier GPU de consumo e incluso en CPU, pero carece de licencia declarada, de idiomas especificados, de longitud de contexto documentada y de cualquier evaluación publicada. La model card es la plantilla automática de Hugging Face con todos los campos marcados como "[More Information Needed]", por lo que la mayor parte de las especificaciones que siguen deben considerarse no disponibles.
+Su relevancia es acotada pero específica: cubre un nicho poco atendido, la generación automatizada de casos de prueba adversarios en portugués de Brasil (PT-BR), el único idioma declarado en la model card. La información pública sobre datos de entrenamiento, hiperparámetros y evaluación es prácticamente inexistente, y la propia model card deja secciones con marcadores `TODO`, lo que limita seriamente cualquier evaluación de su eficacia real.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only de la familia Qwen2 (según etiqueta `qwen2` del repositorio); detalles concretos no disponibles |
-| Parametros totales | 494.032.768 (dato real de safetensors) |
-| Parametros activos | no aplica (no es un modelo MoE) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible; solo se publican pesos en safetensors, sin variantes GGUF, AWQ, GPTQ ni bitsandbytes. El tamaño del repo (2,0 GB) es coherente con pesos en fp32 (494 M x 4 bytes ≈ 1,98 GB) |
-| Idiomas soportados | no disponible (no declarados en la model card) |
-| Licencia | no disponible (sin licencia declarada; por defecto, todos los derechos reservados) |
-| Formato de pesos | safetensors (transformers); no hay GGUF ni otros formatos en el repositorio |
+| Arquitectura | Qwen2, transformer decoder-only causal |
+| Parametros totales | 494.032.768 (aproximadamente 0,5B) |
+| Parametros activos | no aplica (modelo denso, no MoE) |
+| Longitud de contexto | no disponible (heredada de Qwen2.5-0.5B-Instruct; no confirmada en la model card) |
+| Tipos de cuantizacion | no disponible (pesos publicados en BF16; no se documentan variantes GGUF, AWQ ni GPTQ) |
+| Idiomas soportados | PT-BR (portugués de Brasil), según la model card |
+| Licencia | OpenRAIL-M (etiqueta `openrail` en Hugging Face) |
+| Formato de pesos | safetensors, BF16 |
+| Modelo base | Qwen/Qwen2.5-0.5B-Instruct |
+| Libreria | transformers |
+| Tamano del repositorio | 2,0 GB |
+| Hardware de entrenamiento | 2x NVIDIA T4 (Kaggle) |
 
 ## Arquitectura y entrenamiento
 
-La única información estructural disponible es la etiqueta `qwen2` del repositorio, que sitúa el modelo en la familia Qwen2 de Alibaba: un transformer decoder-only con normalización RMSNorm, atención con RoPE y, en las variantes pequeñas, atención con consultas agrupadas (GQA). No hay confirmación documental del número de capas, dimensión oculta, número de cabezas ni vocabulario. El recuento de parámetros (494.032.768) coincide exactamente con el de Qwen2.5-0.5B, lo que hace muy probable que sea un fine-tuning de ese checkpoint base, pero se trata de una inferencia, no de un dato declarado por el autor.
+La arquitectura es la de Qwen2.5-0.5B-Instruct: un transformer decoder-only causal con atención completa, sin componentes MoE ni mecanismos híbridos SSM. El ajuste fino se realizó sobre los pesos del modelo instructivo de referencia, y la model card confirma que el tokenizador incluye la plantilla de chat original, de modo que la inferencia debe realizarse con `apply_chat_template` y el rol `user` describiendo el escenario de prueba.
 
-No existe ninguna información sobre el entrenamiento: se desconoce el número de tokens, la composición del dataset, si hubo ajuste supervisado, RLHF, DPO o cualquier otra etapa de alineamiento. Tampoco se documentan hiperparámetros, infraestructura de cómputo ni impacto ambiental. La referencia `arxiv:1910.09700` que aparece en las etiquetas corresponde al artículo de Lacoste et al. sobre el calculador de impacto medioambiental (mlco2), citado en la plantilla estándar de model card, y no a un paper descriptivo del modelo.
+El apartado de entrenamiento está incompleto en la documentación pública: la sección de datos de entrenamiento contiene un `TODO` sin describir origen, tamaño, idioma ni filtrado del dataset, y la sección de procedimiento tampoco especifica si se empleó SFT completo, LoRA u otra técnica, ni épocas, learning rate, batch size o precisión mixta. Lo único documentado es el hardware (2x T4 en Kaggle) y el tipo tensorial de salida (BF16). No consta información sobre RLHF, DPO ni ninguna innovación técnica de decodificación.
 
 ## Capacidades
 
-- Generación de texto autoregresiva y conversación multi-turno, según la etiqueta `conversational` del repositorio.
-- Compatibilidad con Text Generation Inference (etiqueta `text-generation-inference`) y con endpoints compatibles (etiqueta `endpoints_compatible`), lo que permite desplegarlo como servicio HTTP estándar.
-- Carga directa con transformers mediante `AutoModelForCausalLM`, sin dependencias específicas más allá de la librería.
-- Capacidad de razonamiento, matemáticas, código, tool calling, agentes o modo "thinking": no documentada y, por el tamaño del modelo, esperablemente muy limitada. No hay evidencia publicada.
-- Capacidades multimodales (visión, audio): no disponibles.
-- Capacidades multilingües: no documentadas; no se declara ningún idioma.
-- Comportamiento de alineamiento: presumiblemente alterado respecto al modelo base, a juzgar por el nombre del repositorio, aunque no hay documentación que lo confirme.
+- Generación de texto condicionada a una descripción de escenario: produce candidatos de prompt adversarial a partir de un objetivo en lenguaje natural.
+- Generación de prompts de jailbreak orientados a red teaming de LLM y a la evaluación de guardrails y clasificadores de seguridad.
+- Construcción de datasets de evaluación de robustez, según el uso previsto declarado por el autor.
+- Conversación multi-turno mediante la plantilla de chat heredada de Qwen2.5, con `add_generation_prompt=True`.
+- Generación con muestreo configurable (`do_sample`, `temperature`); el ejemplo del autor usa `max_new_tokens=256` y `temperature=0.8`.
+- Idioma: PT-BR como idioma declarado; no se documenta soporte multilingüe adicional.
+- No se documenta soporte de tool calling, function calling, razonamiento multi-paso, visión, audio ni modo de pensamiento explícito.
 
 ## Casos de uso
 
-- Pruebas de humo de pipelines de despliegue: por su tamaño (0,49 B de parámetros, 2,0 GB en disco) sirve para validar extremo a extremo una integración con transformers, TGI o un endpoint compatible antes de mover el mismo código a un modelo mayor.
-- Inferencia en hardware muy limitado: prototipos en CPU, Raspberry Pi o GPUs de gama baja con 4 GB de VRAM, donde un modelo de 7 B no cabría o sería demasiado lento.
-- Generación de texto sintético para tests de software: rellenar fixtures, mensajes de ejemplo o datos falsos en pipelines de CI, aceptando que la calidad del contenido será baja y requiere revisión.
-- Experimentación académica sobre seguridad de LLM: el nombre del modelo sugiere entrenamiento orientado a evasión de barreras, por lo que puede emplearse como sujeto de estudio en trabajos de red teaming y evaluación de clasificadores de contenido, siempre dentro de un entorno controlado y con revisión ética.
-- Etiquetado y clasificación de texto ligera: con fine-tuning específico sobre la base de 0,49 B puede abordar tareas acotadas de clasificación o extracción en entornos con presupuesto de cómputo mínimo.
-- Evaluación comparativa de técnicas de alineamiento: útil como contrapunto "no alineado" frente al modelo base Qwen2.5-0.5B-Instruct en estudios que midan la eficacia de filtros y salvaguardas.
+- Red teaming automatizado de LLM propios: el modelo genera lotes de prompts adversarios a partir de un objetivo descrito, que se envían al modelo objetivo y cuyas respuestas se clasifican con un juez humano o automático, tal como describe la sección de uso downstream de la model card.
+- Evaluación de guardrails y filtros de contenido: los prompts generados sirven como conjunto de prueba para medir la tasa de falsos negativos de clasificadores de seguridad antes de desplegarlos en producción.
+- Construcción de datasets de robustez en PT-BR: al ser un modelo entrenado para portugués de Brasil, permite generar casos de prueba en ese idioma, un nicho con menos recursos que el inglés.
+- Auditoría de sistemas de terceros con autorización: el modelo encaja en un flujo de pentesting de LLM donde el equipo de seguridad documenta y reporta las vulnerabilidades encontradas a los responsables del sistema.
+- Investigación académica sobre alineación y seguridad: generación de corpus adversarios para estudiar la transferibilidad de jailbreaks entre modelos de distinta familia y tamaño.
+- Pruebas de regresión de seguridad en CI: integrado en un pipeline que ejecuta un conjunto fijo de objetivos contra cada nueva versión de un modelo desplegado, para detectar degradaciones de robustez entre releases.
+- Prototipado de bajo coste: con 0,5B de parámetros y pesos BF16, puede ejecutarse en GPUs de gama media dentro de un entorno aislado, lo que facilita montar un banco de pruebas local sin depender de APIs externas.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
-
-La model card no incluye ninguna sección de evaluación cumplimentada, y el repositorio no declara métricas de MMLU, HumanEval, GSM8K, MT-Bench ni de ninguna otra suite. Cualquier cifra que se atribuya a este modelo sin una evaluación propia debe considerarse no verificada.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye métricas de eficacia de los jailbreaks generados (por ejemplo, tasa de éxito contra modelos objetivo), ni evaluaciones de calidad lingüística, ni comparaciones cuantitativas con otras herramientas de red teaming.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: en fp32, entre 2,5 y 3 GB contando caché KV y overhead del runtime; en fp16/bf16, entre 1,3 y 1,8 GB; en int8, en torno a 0,8-1,1 GB; en int4, alrededor de 0,5-0,8 GB. Son estimaciones por tamaño, no medidas publicadas.
-- GPU recomendadas: cualquier GPU con 4 GB o más de VRAM es suficiente. RTX 3050, RTX 4060, RTX 3060, T4, L4 y A10 funcionan sin problema; A100 y H100 son sobredimensionadas para este modelo y solo tienen sentido para servir muchos lotes en paralelo.
-- Cabe holgadamente en GPU de consumo: sí, en cualquier tarjeta moderna con 4 GB o más, y también en CPU con 4-8 GB de RAM.
-- Opciones de despliegue: transformers (nativo), TGI (etiqueta declarada), vLLM y任何 servidor compatible con la API de OpenAI. Para llama.cpp u Ollama sería necesario convertir previamente los pesos a GGUF, ya que el repositorio solo contiene safetensors.
-- Latencia y throughput: no disponibles. En una RTX 4090, un modelo de 0,5 B en fp16 puede superar con holgura el millar de tokens por segundo en batch, pero no hay mediciones publicadas para este checkpoint concreto.
+- VRAM estimada para inferencia en BF16: en torno a 1 GB para los pesos (494M parámetros x 2 bytes), más overhead de activaciones y caché KV; con `device_map="auto"` cabe holgadamente en GPUs de 4-8 GB.
+- GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM; el autor entrenó en 2x NVIDIA T4, que es también un objetivo razonable de inferencia.
+- Cabe en GPU de consumo: sí, en tarjetas como RTX 3060, RTX 4060, RTX 4070 o superiores; también en GPUs de portátil con 6-8 GB.
+- Opciones de despliegue: transformers (flujo documentado por el autor) y text-generation-inference (etiqueta `text-generation-inference` en el repositorio). No se documentan recetas para vLLM, llama.cpp, Ollama ni TGI más allá de la etiqueta.
+- Latencia y throughput: no disponibles; no se publican mediciones.
 
 ## Comparativa con modelos similares
 
-Los datos de la columna de este modelo provienen del repositorio; los de las alternativas son de referencia a partir de sus model cards públicas y deben verificarse antes de usarse en producción.
+| Modelo | Parametros | Contexto | Proposito | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| jailbreak-creator | 494M | no disponible | Generacion de prompts adversarios (PT-BR) | OpenRAIL-M | Hugging Face |
+| Qwen2.5-0.5B-Instruct | 494M | no disponible en esta ficha | Asistente generalista multilingue | Apache 2.0 (modelo base) | Hugging Face |
+| Herramientas de red teaming basadas en LLM de mayor tamano (p. ej. variantes de 7B-70B) | 7B-70B | variable | Generacion de ataques y evaluacion de seguridad | variable | variable |
 
-| Modelo | Parametros | Contexto | Licencia | Disponibilidad |
-|---|---|---|---|---|
-| Skskskd/jailbrak-creator | 494 M | no disponible | no disponible | Hugging Face, solo safetensors |
-| Qwen2.5-0.5B-Instruct | 494 M | 32.768 tokens | Apache 2.0 | Hugging Face, transformers, GGUF, vLLM |
-| Qwen3-0.6B | ~600 M | 32.768 tokens | Apache 2.0 | Hugging Face, transformers, GGUF |
-| Llama-3.2-1B-Instruct | 1.240 M | 128.000 tokens | Llama 3.2 Community License | Hugging Face, gated, transformers, GGUF |
-
-Frente a las alternativas, el modelo evaluado no aporta ninguna ventaja documentada: carece de licencia, de contexto declarado, de evaluación y de formatos cuantizados listos para usar. Su única singularidad aparente es el ajuste orientado a evasión de salvaguardas, que no es una capacidad deseable en producción.
+La comparación directa con el modelo base es la más informativa: jailbreak-creator comparte arquitectura y tamaño con Qwen2.5-0.5B-Instruct, pero sustituye el comportamiento de asistente generalista por la generación de prompts adversarios en PT-BR, con una licencia más restrictiva (OpenRAIL-M frente a Apache 2.0 del base). Frente a herramientas de red teaming de mayor tamaño, la principal desventaja es la capacidad del modelo: 0,5B limita la coherencia y la sofisticación de los ataques generados, como admite el propio autor.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de licencia: sin un archivo LICENSE ni una declaración en la model card, rige el régimen por defecto de derechos de autor, lo que impide legalmente su uso comercial o su redistribución sin autorización expresa del autor.
-- Documentación inexistente: la model card es la plantilla automática de Hugging Face con todos los campos vacíos; no se documentan datos de entrenamiento, hiperparámetros, evaluación ni uso previsto.
-- Riesgo de desalineamiento: el identificador "jailbrak-creator" sugiere un ajuste destinado a producir contenido que evade filtros de seguridad. No debe desplegarse de cara al público sin una batería propia de evaluaciones de seguridad y sin capas de moderación externas.
-- Alucinación: en un modelo de 0,49 B de parámetros la tasa de afirmaciones factualmente incorrectas es estructuralmente alta; no es apto para tareas que requieran precisión factual sin verificación humana.
-- Contexto y multilingüismo desconocidos: al no declararse la longitud de contexto, cualquier uso con prompts largos requiere validación empírica previa; tampoco hay garantía de calidad en castellano.
-- Sesgos heredados: al derivar presumiblemente de Qwen2.5, arrastra los sesgos de su corpus de preentrenamiento, agravados por la ausencia de etapas de alineamiento documentadas.
-- Sin benchmarks: no existe ninguna evidencia publicada de calidad, lo que impide compararlo de forma rigurosa con alternativas y desaconseja su uso en producción.
-- Trazabilidad: el repositorio no registra descargas ni valoraciones y no enlaza a paper, demo ni repositorio de código; no hay forma de contactar con el autor ni de verificar el proceso de entrenamiento.
+- Modelo de 0,5B: las salidas pueden ser repetitivas, incoherentes o poco eficaces como jailbreaks, según reconoce la model card.
+- Genera texto adversarial por diseño: los prompts producidos pueden contener contenido ofensivo o inducir comportamiento inseguro en otros modelos.
+- Hereda los sesgos y limitaciones del modelo base Qwen2.5-0.5B-Instruct y de los datos de ajuste fino, que no están documentados.
+- No hay garantía de que los jailbreaks generados funcionen contra ningún modelo objetivo concreto.
+- Documentación de entrenamiento incompleta: datos, método e hiperparámetros figuran como `TODO`, lo que impide reproducir el ajuste o auditar su procedencia.
+- Restricciones de licencia: OpenRAIL-M impone cláusulas de uso responsable; conviene revisar el texto completo antes de cualquier uso comercial o de redistribución.
+- El uso previsto exige entorno controlado, autorización explícita sobre el sistema evaluado y revisión humana; no debe exponerse públicamente vía API sin controles.
+- El único idioma declarado es PT-BR; no se documenta calidad en castellano ni en otros idiomas.
+- La model card enlaza a un repositorio distinto (`SynastriaNetworks/jailbreak-creator`) del ID publicado en Hugging Face (`Skskskd/jailbrak-creator`), lo que genera ambigüedad sobre la fuente canónica.
+- Los identificadores de fecha del repositorio (creación en 2026) no son verificables de forma independiente.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/Skskskd/jailbrak-creator
-- Articulo citado en las etiquetas (Lacoste et al., 2019, sobre impacto medioambiental): https://arxiv.org/abs/1910.09700
-- Calculador de impacto ML referenciado en la plantilla: https://mlco2.github.io/impact
-- Paper, blog, repositorio de código o demo del modelo: no disponibles
+- Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
+- Repositorio citado en la model card: https://huggingface.co/SynastriaNetworks/jailbreak-creator
+- Organización del autor: https://huggingface.co/SynastriaNetworks
+- Paper o demo: no disponible
+- Contacto del autor: gustajunq@synastria.dev

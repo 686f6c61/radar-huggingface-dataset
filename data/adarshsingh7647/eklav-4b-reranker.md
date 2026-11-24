@@ -2,86 +2,99 @@
 
 ## Resumen
 
-Eklav-4B-Reranker es un modelo de reranking de pasajes desarrollado por AdarshSingh7647, construido a partir del modelo base Qwen/Qwen3-4B. Su principal innovación es el método de entrenamiento denominado Eklav, que consiste en una destilación de cadena de pensamiento (CoT) condicionada a pistas parciales del razonamiento del profesor. En lugar de imitar la traza completa de razonamiento, el estudiante recibe una traza parcial (con la parte final de la respuesta eliminada) y debe continuar el razonamiento por sí mismo para producir la respuesta. Este enfoque reduce los FLOPs de entrenamiento en un 31% respecto a la destilación CoT estándar, manteniendo o mejorando el rendimiento en tareas de reranking.
+Eklav-4B-Reranker (publicado en la model card como Eklav-Passage-4B) es un modelo de reranking de pasajes en modo pointwise, obtenido por fine-tuning del modelo base Qwen/Qwen3-4B. Lo desarrolla AdarshSingh7647 y se distribuye con la librería transformers en formato safetensors. Su función es, dada una consulta y un pasaje, emitir un razonamiento y terminar con la etiqueta `true` o `false`; la puntuación de relevancia se calcula como la probabilidad normalizada del token `true` en el último paso de logprobs.
 
-El modelo está diseñado específicamente para la tarea de reranking de pasajes en sistemas de recuperación aumentada por generación (RAG) y búsqueda semántica. Con 4.022 millones de parámetros, se posiciona como una opción de tamaño medio que puede ejecutarse en hardware de consumo. Los resultados reportados en el benchmark BRIGHT muestran una mejora del 8% en nDCG@10 (promedio de 12 dominios) frente a la destilación CoT completa con el mismo modelo base y datos de entrenamiento, alcanzando un promedio de 31.5 en nDCG@10.
+El interés técnico del modelo no está tanto en la tarea (reranking) como en el método de entrenamiento, denominado Eklav: el razonamiento del profesor se inyecta como pista en el prompt y la pérdida se calcula únicamente sobre la respuesta final. Según la model card, esta variante supera a la versión entrenada con SFT estándar (Std-SFT) en el benchmark BRIGHT con nDCG@10, con 31,5 frente a 29,3 puntos sobre el mismo backbone Qwen3-4B.
 
-La relevancia actual de este modelo radica en la creciente demanda de rerankers eficientes y precisos para mejorar la calidad de los resultados en pipelines de RAG, donde los recuperadores iniciales suelen devolver resultados ruidosos que necesitan una segunda etapa de refinamiento.
+Se trata de un modelo de 4.022.468.096 parámetros (4B, denso), con un repositorio de 8,1 GB, orientado a pipelines de recuperación aumentada (RAG) y búsqueda semántica donde se requiere una segunda fase de reordenación con razonamiento explícito. La información pública disponible es limitada: la model card no detalla licencia, idiomas ni composición del dataset de entrenamiento.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer (basada en Qwen3-4B) |
+| Arquitectura | Transformer decoder-only (derivado de Qwen3-4B) |
 | Parametros totales | 4.022.468.096 |
-| Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | no disponible (heredada de Qwen3-4B, no especificada) |
-| Tipos de cuantizacion | no disponible (checkpoint en bf16) |
+| Parametros activos | no disponible (modelo denso, no MoE) |
+| Longitud de contexto | no disponible en la model card; el ejemplo de uso configura `max_model_len=20000` en vLLM |
+| Tipos de cuantizacion | no disponible (el repo solo contiene safetensors; no se publican GGUF ni AWQ/GPTQ) |
 | Idiomas soportados | no disponible |
 | Licencia | no disponible |
-| Formato de pesos | safetensors (merged bf16) |
+| Formato de pesos | safetensors (librería transformers) |
 
 ## Arquitectura y entrenamiento
 
-El modelo se basa en la arquitectura transformer de Qwen3-4B, un modelo de lenguaje de 4.000 millones de parámetros. No se especifican detalles adicionales sobre la arquitectura interna, como el número de capas o cabezas de atención, ya que se heredan del modelo base.
+El modelo parte de Qwen3-4B, un transformer decoder-only denso de aproximadamente 4B parámetros. Sobre esa base se aplica un fine-tuning supervisado para la tarea de reranking pointwise, con un formato de salida que fuerza al modelo a producir primero un bloque de razonamiento y después una etiqueta binaria (` true` o ` false`). El chat template se invoca con `enable_thinking=True`, de modo que el modo de razonamiento de Qwen3 permanece activo durante la inferencia.
 
-El entrenamiento utiliza el método Eklav, una variante de destilación de cadena de pensamiento (CoT) condicionada a pistas. En lugar de entrenar al modelo para reproducir la traza completa de razonamiento del profesor, se le presenta una traza parcial (con la parte final de la respuesta eliminada) y se le pide que continúe el razonamiento y genere la respuesta final. Esto reduce los FLOPs de entrenamiento en un 31% en comparación con la destilación CoT estándar, manteniendo el mismo modelo base y los mismos datos de entrenamiento. El resultado es un modelo que aprende a razonar de forma más autónoma, en lugar de memorizar la salida del profesor.
-
-El checkpoint se publica como un modelo fusionado (merged) en formato bf16, listo para usar con la librería transformers.
+La innovación declarada es el método Eklav: durante el entrenamiento, el razonamiento producido por un modelo profesor se proporciona como pista dentro del prompt del alumno, y la función de pérdida se aplica solo a la respuesta final (la etiqueta true/false), no al razonamiento intermedio. La model card compara esta estrategia con un SFT estándar sobre el mismo backbone, reportando mejoras consistentes en BRIGHT nDCG@10. No se especifican en la información disponible el número de tokens de entrenamiento, la composición del dataset, ni si hubo etapas de RLHF o DPO.
 
 ## Capacidades
 
-- Reranking de pasajes: el modelo está especializado en ordenar documentos o pasajes según su relevancia para una consulta dada, tarea fundamental en sistemas RAG.
-- Razonamiento de cadena de pensamiento: gracias al entrenamiento con destilación CoT, el modelo puede generar razonamientos intermedios antes de emitir una puntuación o decisión de relevancia.
-- Generación de texto: al ser un modelo de lenguaje causal, puede generar texto libre, aunque su uso principal es el reranking.
-- Integración con pipelines de recuperación: puede utilizarse como segunda etapa tras un recuperador inicial (por ejemplo, BM25 o embeddings) para refinar los resultados.
-- Compatibilidad con transformers: se carga fácilmente con `AutoModelForCausalLM` y `AutoTokenizer`, lo que facilita su integración en entornos Python.
-- Multilingüismo: no se especifican idiomas soportados, pero al derivar de Qwen3-4B, es probable que herede las capacidades multilingües de este (aunque no se confirma).
+- Reranking de pasajes pointwise: evalúa pares consulta-pasaje y devuelve una probabilidad de relevancia calibrada mediante normalización de logprobs sobre los tokens `true` y `false`.
+- Razonamiento explícito antes de la decisión: genera una cadena de pensamiento que puede auditarse para depurar decisiones de recuperación.
+- Generación de texto conversacional: al conservar el pipeline `text-generation` y el chat template de Qwen3, mantiene capacidades generales de conversación multi-turno.
+- Integración con vLLM: el ejemplo oficial usa `vllm.LLM` con `SamplingParams` y `logprobs=20`, lo que permite despliegue de alto throughput.
+- Compatibilidad con text-generation-inference y endpoints compatibles, según los tags del repositorio.
+- Soporte de tool calling / function calling: no documentado en la información disponible.
+- Capacidades multimodales (visión, audio): no disponibles; el modelo es exclusivamente de texto.
+- Capacidades multilingües: no documentadas.
 
 ## Casos de uso
 
-- Mejora de resultados en sistemas RAG: el modelo puede utilizarse como reranker tras un recuperador inicial para reordenar los pasajes más relevantes antes de pasarlos al generador. Su capacidad de razonamiento permite capturar matices semánticos que los recuperadores basados en embeddings pueden pasar por alto.
-- Búsqueda semántica en dominios específicos: gracias a su entrenamiento en BRIGHT (que cubre 12 dominios), puede adaptarse a tareas de búsqueda en áreas como finanzas, medicina o legislación, donde la relevancia requiere comprensión profunda.
-- Filtrado de resultados en motores de búsqueda internos: empresas con grandes volúmenes de documentos pueden emplearlo para refinar los resultados de búsqueda, reduciendo el ruido y mejorando la precisión.
-- Sistemas de preguntas y respuestas sobre documentos: en pipelines de QA extractiva o generativa, el reranker puede seleccionar los pasajes más prometedores antes de la generación de la respuesta, mejorando la exactitud final.
-- Análisis de relevancia en investigación académica: investigadores que necesiten ordenar artículos o referencias según su pertinencia a una consulta pueden usar el modelo como herramienta de apoyo.
-- Asistentes virtuales con recuperación de conocimiento: el modelo puede integrarse en asistentes que necesiten consultar bases de conocimiento extensas, priorizando la información más relevante para responder al usuario.
+- Segunda fase de RAG: tras una recuperación inicial con un retriever bi-encoder (por ejemplo, embeddings densos), el modelo reordena los 20-50 candidatos mejor puntuados. Su razonamiento permite filtrar pasajes superficialmente similares pero no relevantes, un escenario habitual en dominios técnicos.
+- Búsqueda en dominios especializados (BRIGHT): el benchmark con el que se evalúa está orientado a consultas complejas en áreas como código, finanzas o medicina, donde los retrievers léxicos fallan; el modelo aporta señal semántica adicional.
+- Filtrado de contexto para asistentes documentales: dado un corpus de manuales internos, puntuar cada fragmento antes de inyectarlo en el prompt de un LLM generador reduce coste de tokens y alucinaciones.
+- Evaluación de calidad de datasets de recuperación: usar las puntuaciones true/false como etiquetas débiles para auditar pares consulta-documento en un corpus de entrenamiento.
+- Moderación y verificación de respuestas: comprobar si un pasaje citado respalda realmente una afirmación, aprovechando la salida binaria y la traza de razonamiento.
+- Enrutado de consultas a bases de conocimiento: puntuar un mismo pasaje contra varias consultas candidatas para decidir qué índice consultar primero.
+- Investigación sobre destilación con pistas de razonamiento: replicar el método Eklav con otros backbones o tareas de clasificación binaria.
 
 ## Benchmarks y rendimiento
 
-La model card reporta los siguientes resultados en el benchmark BRIGHT (nDCG@10, promedio de 12 dominios):
+Resultados publicados en la model card (BRIGHT nDCG@10). Las columnas Qwen3-8B, GLM-Z1-9B y Qwen3-14B corresponden a los mismos métodos aplicados sobre otros backbones, según la tabla del autor:
 
-| Metrica | Valor |
-|---|---|
-| BRIGHT promedio (nDCG@10) | 31.5 |
-| Mejora vs. destilación CoT completa | +8% |
-| Reducción de FLOPs de entrenamiento | -31% |
+| Metodo | Qwen3-4B | Qwen3-8B | GLM-Z1-9B | Qwen3-14B |
+|---|---|---|---|---|
+| Std-SFT | 29,3 | 31,5 | 30,1 | 32,5 |
+| Eklav | 31,5 | 34,2 | 33,2 | 34,7 |
 
-No se proporcionan resultados en otros benchmarks como MMLU, HumanEval o GSM8K. Tampoco se incluyen comparaciones con otros modelos de reranking en la información disponible.
+No se han publicado en la información disponible resultados de MMLU, HumanEval, GSM8K ni de otros benchmarks de propósito general para este checkpoint.
 
 ## Requisitos de hardware
 
-- VRAM estimada: al tratarse de un modelo de 4.000 millones de parámetros en bf16, el checkpoint ocupa aproximadamente 8 GB (el tamaño del repositorio es de 8.1 GB). Para inferencia, se recomienda al menos 10-12 GB de VRAM para cargar el modelo en bf16 sin cuantización.
-- GPU recomendadas: una GPU con 12 GB o más de VRAM, como la RTX 3060, RTX 4070, RTX 4090, o GPUs de datacenter como A10, A100 o H100. En GPUs con menos VRAM, sería necesario aplicar cuantización (no especificada en la información).
-- Compatibilidad con hardware de consumo: sí, es posible ejecutarlo en GPUs de consumo con 12 GB o más, aunque la velocidad dependerá de la generación de la GPU.
-- Opciones de despliegue: al ser un modelo de transformers, puede servirse con vLLM, TGI (Text Generation Inference) o directamente con la librería transformers. También es compatible con endpoints de Hugging Face.
-- Latencia y throughput: no se proporcionan datos específicos. Para un modelo de 4B en bf16, se puede esperar una latencia de decenas de milisegundos por consulta en GPUs modernas, pero esto depende del hardware y la implementación.
+- VRAM estimada en fp16/bf16: aproximadamente 8 GB solo para pesos, más overhead de KV cache; con `max_model_len=20000` y lotes moderados, un presupuesto realista de 16-24 GB es razonable.
+- VRAM estimada en cuantización de 8 bits: alrededor de 4-5 GB de pesos; en 4 bits, alrededor de 2,5-3 GB (no se publican checkpoints cuantizados oficiales, habría que generarlos).
+- GPU recomendadas: A100 40/80 GB o H100 para servir con vLLM a alto throughput y lotes grandes; L40S o RTX 6000 Ada para despliegues de producción con latencia moderada.
+- GPU de consumo: cabe en RTX 4090 (24 GB) en bf16 con contexto moderado, y en RTX 3090/4080 con cuantización o contextos más cortos.
+- Opciones de despliegue: vLLM es la ruta documentada por el autor (necesaria para acceder a logprobs y al stop string del razonamiento); también es viable transformers con `generate` y `output_scores`, y TGI por los tags del repo. llama.cpp/Ollama requerirían convertir los pesos a GGUF, no publicado.
+- Latencia y throughput: no disponibles. Cabe esperar latencias altas por pasaje, ya que el modelo genera hasta 4096 tokens de razonamiento antes de emitir la etiqueta; para reranking a gran escala conviene limitar `max_tokens` o usar decodificación con presupuesto reducido.
 
 ## Comparativa con modelos similares
 
-No se dispone de información comparativa con otros modelos de reranking en la documentación proporcionada. Los rerankers más comunes en el ecosistema (como BGE-reranker, Cohere Rerank o modelos basados en T5) no aparecen en los datos disponibles, por lo que no es posible realizar una comparación objetiva con cifras concretas.
+| Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| Eklav-4B-Reranker | 4,02B | no disponible (ejemplo con 20k) | Reranking pointwise con razonamiento | no disponible | Hugging Face, safetensors |
+| Std-SFT-Passage-4B | 4,02B (Qwen3-4B) | no disponible | Reranking pointwise con razonamiento | no disponible | Hugging Face, mismo autor |
+| Rank1-7B (jhu-clsp) | 7B | no disponible | Reranking pointwise con razonamiento | no disponible en esta ficha | Hugging Face, citado como referencia de formato |
+| Qwen3-4B (base) | 4,02B | 32k en la familia Qwen3 (no confirmado aquí) | Generación de texto general | Apache 2.0 en el modelo base (no confirmado para este fine-tune) | Hugging Face |
+
+El modelo se posiciona como alternativa de 4B a rerankers con razonamiento de mayor tamaño (Rank1-7B) y a variantes del mismo backbone entrenadas con SFT estándar, con la ventaja de coste de inferencia del backbone pequeño y la desventaja de una latencia por consulta elevada debido al razonamiento.
 
 ## Limitaciones y advertencias
 
-- Sesgos y alucinaciones: al ser un modelo de lenguaje, puede generar razonamientos incorrectos o alucinados, especialmente en dominios fuera de sus datos de entrenamiento. No se han publicado evaluaciones de sesgos.
-- Limitaciones de contexto: no se especifica la longitud máxima de contexto, pero al derivar de Qwen3-4B, es probable que herede sus límites (típicamente 32K tokens, aunque no confirmado). Para tareas de reranking, esto suele ser suficiente.
-- Idiomas: no se especifican los idiomas soportados. Aunque Qwen3-4B es multilingüe, no hay garantía de que el fine-tuning haya preservado todas las capacidades.
-- Licencia: la licencia no está disponible en la información proporcionada. Esto supone un riesgo para uso comercial, ya que no se conocen las restricciones.
-- Datos de entrenamiento: no se detalla la composición del dataset de entrenamiento ni su procedencia, lo que dificulta evaluar posibles sesgos o limitaciones de dominio.
-- Rendimiento en producción: al ser un modelo relativamente nuevo (creado en agosto de 2026) con pocas descargas (7), su robustez en entornos de producción no está ampliamente validada.
+- Licencia no declarada: no se puede confirmar el uso comercial; hay que contactar con el autor o asumir la licencia del modelo base (Qwen3-4B), lo que introduce incertidumbre legal.
+- Idiomas no documentados: no hay garantía de calidad fuera del inglés, idioma implícito en los ejemplos y en BRIGHT.
+- Riesgo de alucinación en el razonamiento: la traza de pensamiento puede contener afirmaciones incorrectas aunque la etiqueta final sea correcta; no debe usarse como explicación fiable sin verificación.
+- Coste de inferencia: generar hasta 4096 tokens por par consulta-pasaje hace inviable el reranking de cientos de candidatos sin recortar el presupuesto de razonamiento.
+- Dependencia de logprobs: la puntuación se obtiene del logprob del token `true`; cambios en el tokenizador o en el stop string pueden desalinear el cálculo (el propio autor advierte de un posible off-by-one con vLLM).
+- Sesgos: no documentados; al heredar el corpus de Qwen3-4B, es previsible que arrastre sesgos del modelo base.
+- Contexto máximo no confirmado: el ejemplo usa 20.000 tokens, pero no se especifica el límite real del checkpoint; pasajes largos pueden truncarse.
+- Madurez: 331 descargas y 0 likes en el momento de la consulta, sin validación externa independiente de los resultados reportados.
+- Uso en producción: al ser un fine-tune para una tarea concreta, no debe emplearse como modelo generativo general sin evaluar la degradación respecto al base.
 
 ## Enlaces
 
-- [Modelo en Hugging Face](https://huggingface.co/AdarshSingh7647/Eklav-4B-Reranker)
-- [Modelo base Qwen/Qwen3-4B](https://huggingface.co/Qwen/Qwen3-4B)
-- No se proporcionan enlaces a papers, blogs o repositorios adicionales en la información disponible.
+- Modelo en Hugging Face: https://huggingface.co/AdarshSingh7647/Eklav-4B-Reranker
+- Versión Std-SFT: https://huggingface.co/AdarshSingh7647/Std-SFT-Passage-4B
+- Código del método Eklav: https://github.com/AdarshSingh7647/Eklavya
+- Modelo base: https://huggingface.co/Qwen/Qwen3-4B
+- Referencia de formato Rank1: https://huggingface.co/jhu-clsp/rank1-7b

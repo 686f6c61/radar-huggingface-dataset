@@ -5,7 +5,7 @@
   "author": "rharini938",
   "url": "https://huggingface.co/rharini938/conceptoon-curio-t5",
   "created_at": "2026-11-23T17:05:26.000Z",
-  "updated_at": "2026-11-23T17:07:34.000Z",
+  "updated_at": "2026-11-24T03:53:58.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -18,7 +18,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 26,
   "trending_score": 0,
   "parameters": 76961152,
   "parameters_human": "77.0M",
@@ -30,7 +30,7 @@
     "safetensors"
   ],
   "is_conversational": false,
-  "gated": false,
+  "gated": true,
   "disabled": false,
   "removed": false,
   "removed_at": null,

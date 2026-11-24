@@ -1,0 +1,48 @@
+{
+  "schema": 2,
+  "id": "BlessJ/decision-gemma4-31b",
+  "slug": "blessj-decision-gemma4-31b",
+  "author": "BlessJ",
+  "url": "https://huggingface.co/BlessJ/decision-gemma4-31b",
+  "created_at": "2026-11-24T09:17:12.000Z",
+  "updated_at": "2026-11-24T09:19:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "gemma4",
+    "text-classification",
+    "en",
+    "base_model:MachinePulseAI/karpo-decision-31B",
+    "base_model:finetune:MachinePulseAI/karpo-decision-31B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 31273088876,
+  "parameters_human": "31.27B",
+  "storage_bytes": 62583982498,
+  "storage_human": "62.6 GB",
+  "context_length": null,
+  "base_model": "MachinePulseAI/karpo-decision-31B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

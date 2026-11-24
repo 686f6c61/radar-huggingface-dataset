@@ -1,0 +1,61 @@
+{
+  "schema": 2,
+  "id": "anmolsehgal/gtzan-genre-classification",
+  "slug": "anmolsehgal-gtzan-genre-classification",
+  "author": "anmolsehgal",
+  "url": "https://huggingface.co/anmolsehgal/gtzan-genre-classification",
+  "created_at": "2026-11-24T11:20:37.000Z",
+  "updated_at": "2026-11-24T11:20:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "audio-classification",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "joblib",
+    "safetensors",
+    "audio",
+    "audio-classification",
+    "music",
+    "genre-classification",
+    "gtzan",
+    "cnn",
+    "from-scratch",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": null,
+  "storage_human": null,
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "A deep music genres classification model based on CNN with Squeeze ...",
+      "url": "http://go/v1/AQSMys-1v3cPawVzHAFdoFEIaH-mB7g8iv5rpl_LgFHzL_L8NxKbXzZidp84-DGfZhGKl0YB_eBqhZtzmXASkcGfoh-WwbO_DbzL-lHl4tgCDO-8yMQzYDol1GvUgU4sIZkEBtTNPpXss2-1Vq7esWib-mVAowP6mRo2aLXJg4OeZW1itnJTj586cPKzmhc7ExN_6_3tmdlL3rNTk0sG",
+      "snippet": "With the development of mobile terminals and Internet technology, people have increasingly convenient mediums to obtain digital music. However, complex music genres and massive music libraries have brought great challenges to music information retrieval. Music genres are high-level labels for music information, which would consume a lot of time and resources when manually tagged."
+    },
+    {
+      "title": "An Enhanced CNN Architecture for Music Genre Classification on ...",
+      "url": "http://go/v1/AQSMys-1v3cPawVzHAFdoFEIaH-mB7g8iv5rpl_LgnZlLUypL1bgLE69JSIZa-Sw1zgvEGfW1zLq7egJEN2BKqeBgKZpZ-GSQdla39c6hT7MKdZu30mAPr3iHPUoJHAoxqInbGSyfp1qyXlF1CwQO0uPM93VmW0yJ5EU-2AjAsiYXd1MkSUH6vHIn-baTS-cLuo9QRZ8Y7NfGTTfRzj5JQA",
+      "snippet": "A principal objective within contemporary Music Information Retrieval (MIR) research is the development of automated systems for genre classification, especially due to the exponential proliferation of digital audio content on platforms such ..."
+    }
+  ]
+}

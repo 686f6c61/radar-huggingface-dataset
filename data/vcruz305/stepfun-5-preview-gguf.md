@@ -2,90 +2,94 @@
 
 ## Resumen
 
-vcruz305/StepFun-5-Preview-GGUF es un repositorio de pesos cuantizados en formato GGUF publicado por el usuario vcruz305 en Hugging Face, que empaqueta una supuesta variante del modelo StepFun-5 Preview en version cuantizada de 1 bit y ejecutable con llama.cpp. El repositorio esta etiquetado como moe (mixture of experts), quantized y 1-bit, con licencia Apache 2.0 y pipeline de text-generation. Se trata, por tanto, de una publicacion de terceros y no de un lanzamiento oficial del desarrollador original del modelo base.
+StepFun-5-Preview es un modelo de lenguaje de tipo Mixture-of-Experts (MoE) disperso de gran escala, con aproximadamente 598.040 millones de parámetros en el tronco de texto y 602.970 millones en el checkpoint completo. Desarrollado por StepFun, emplea 352 expertos enrutados con enrutamiento top-8 y unos 16.000 millones de parámetros activos por token, distribuidos en 95 capas (92 de texto y 3 de predicción multi-token). Su ventana de contexto alcanza 1.048.576 tokens y su vocabulario es de 128.896 entradas.
 
-El dato de parametros registrado en la metadata del repositorio es de 435.636.928 parametros totales (aproximadamente 436 millones), una cifra notablemente baja para un modelo de la familia StepFun y que ademas contrasta con el tamano declarado del repositorio, 347,6 GB. Esa incoherencia (menos de 500 millones de parametros frente a mas de 300 GB de ficheros) no esta explicada en la informacion disponible y sugiere o bien un error en la metadata de safetensors, o bien la presencia de multiples variantes de cuantizacion y ficheros auxiliares en el mismo repositorio.
+El repositorio analizado, `vcruz305/StepFun-5-Preview-GGUF`, no es una publicación oficial del modelo, sino una conversión a formato GGUF realizada por un tercero para su ejecución con llama.cpp. Incluye cuantizaciones extremas de 1 y 2 bits (IQ1_S y Q2_K) pensadas para desplegar un modelo de clase 600B en hardware de gama alta para inferencia local, como una estación DGX Spark o dos nodos equivalentes. El autor advierte explícitamente que el repositorio es privado y no constituye un lanzamiento general.
 
-El acceso esta restringido: es un repositorio gated que exige aceptar condiciones en Hugging Face antes de poder descargar los pesos. Con 1 descarga y 0 likes en el momento de la consulta, se trata de una publicacion practicamente sin validacion comunitaria. No hay informacion disponible sobre arquitectura detallada, datos de entrenamiento, longitud de contexto, idiomas soportados ni resultados de benchmarks.
+La relevancia de esta ficha radica en que documenta una de las pocas vías prácticas para ejecutar un MoE de casi 600.000 millones de parámetros en hardware de consumo profesional, a costa de una degradación medible de la calidad en la variante de 1 bit. Además, el repositorio incluye archivos complementarios (codificador visual, capas MTP e indexador de atención dispersa) que llama.cpp no puede ejecutar actualmente, lo que limita el uso real a la generación de texto.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (el repositorio solo indica la etiqueta "moe", sin detalle de capas, atencion ni configuracion) |
-| Parametros totales | 435.636.928 (segun metadata de safetensors); dato en conflicto con el tamano de 347,6 GB del repositorio |
-| Parametros activos | no disponible |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | 1 bit (etiqueta del repositorio); no se especifica el listado de variantes ni los tipos GGUF concretos |
+| Arquitectura | Transformer MoE disperso (sparse MoE), 95 capas (92 de texto + 3 MTP) |
+| Parametros totales | 602,97 B en el checkpoint completo; 598,04 B en el tronco de texto |
+| Parametros activos | ~16 B por token (352 expertos enrutados, top-8) |
+| Longitud de contexto | 1.048.576 tokens (ventana deslizante de 512 en capas SWA) |
+| Tipos de cuantizacion | IQ1_S (1,599 bpw), Q2_K (2,908 bpw), Q3_K_M (3,811 bpw) |
 | Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF; la metadata de parametros procede de safetensors |
-| Acceso | restringido (gated): requiere aceptar condiciones en Hugging Face |
-| Pipeline | text-generation |
+| Formato de pesos | GGUF (25 shards por cuantizacion); archivos complementarios BF16 en GGUF |
 
 ## Arquitectura y entrenamiento
 
-La unica informacion estructural disponible es la etiqueta "moe" del repositorio, que apunta a una arquitectura de mezcla de expertos, combinada con la etiqueta "quantized" y "1-bit". No se dispone de detalles sobre el numero de expertos, el mecanismo de enrutamiento, la dimension del modelo, el tipo de atencion, la estrategia de decodificacion ni la configuracion de entrenamiento del modelo original StepFun-5 Preview. Tampoco hay informacion sobre el proceso de alineacion (RLHF, DPO u otros), la composicion del dataset ni el numero de tokens de entrenamiento.
+El modelo sigue una arquitectura transformer con mezcla de expertos dispersa: 352 expertos enrutados con selección top-8 por token, enrutamiento sigmoide, sesgo de router aplicado tras la activación solo para la selección, pesos normalizados sobre el conjunto seleccionado y escalados por 3,0. Combina capas de atención completa con capas de atención de ventana deslizante (512 tokens); las capas de atención completa rotan 96 de las 192 dimensiones de cabeza, con `rope.freq_base = 1e7` en las capas completas y `freq_base_swa = 1e4` en las deslizantes. Incorpora además tres capas de predicción multi-token (MTP) y un mecanismo de atención dispersa comprimida mediante un indexador (`sparse_indexer_*`) con escala softmax constante de 0,08496.
 
-Conviene subrayar que este repositorio no es un artefacto de entrenamiento, sino una conversion/empaquetado de pesos a GGUF realizada por un tercero. La eleccion de una cuantizacion de 1 bit es una decision de compresion agresiva, habitualmente orientada a minimizar el uso de memoria a costa de una perdida notable de calidad en la generacion, aunque no hay ningun dato publicado en esta informacion que permita cuantificar esa degradacion.
+No se dispone de información sobre el volumen de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas de RLHF o DPO. El repositorio documenta que las cuantizaciones se generaron a partir de una conversión BF16 con corrección de RoPE y una importance matrix v2 de dominios mixtos, de modo que todas las variantes comparten cobertura y metadatos y difieren únicamente en el ancho de bits. Los archivos complementarios incluyen un codificador de percepción visual tipo ViT (47 capas, anchura 1536, imagen 728, patch 14, activación quick_gelu) con 1,981 B de parámetros, las tres capas MTP con 2,5159 B y el indexador de atención dispersa con 0,4356 B.
 
 ## Capacidades
 
-- Generacion de texto: el pipeline declarado es text-generation, por lo que la funcion esperada es la generacion autoregresiva de texto.
-- Mezcla de expertos: la etiqueta "moe" sugiere una arquitectura con enrutamiento por expertos, pero no se especifica su comportamiento ni el numero de parametros activos por token.
-- Ejecucion local mediante llama.cpp: al distribuirse en GGUF, esta pensado para inferencia en CPU y GPU con el ecosistema llama.cpp.
-- Tool calling / function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingues: no disponible (el campo de idiomas esta vacio en la ficha de Hugging Face).
-- Capacidades especiales (modo thinking, vision, audio): no disponible.
-- Cuantizacion extrema: la variante de 1 bit esta pensada para escenarios con restricciones severas de memoria, con la contrapartida de calidad que ello implica.
+- Generación de texto autoregresiva en inglés, con calidad gramatical y temática mantenida incluso en la cuantización IQ1_S, según el autor.
+- Razonamiento de múltiples pasos y contexto largo: la ventana de 1.048.576 tokens permite procesar documentos extensos, aunque llama.cpp ejecuta las capas de atención completa en modo denso.
+- Predicción multi-token (MTP): las capas 92-94 permiten decodificación especulativa, si bien llama.cpp no implementa su runtime en la arquitectura `step35`.
+- Percepción visual: el codificador `mmproj-BF16.gguf` aporta capacidad de imagen, pero ningún runtime de llama.cpp lo carga actualmente.
+- Atención dispersa comprimida: el indexador permite seleccionar los top-512 tokens relevantes, aunque llama.cpp no aplica ni su selección ni su escala softmax.
+- Soporte de tool calling, function calling y agentes: no disponible en la información proporcionada.
+- Capacidades multilingües: no disponible; el autor solo menciona inglés en sus pruebas.
 
 ## Casos de uso
 
-- Pruebas de cuantizacion extrema en laboratorio: el repositorio permite evaluar como se comporta un modelo etiquetado como MoE cuando se comprime a 1 bit, comparando la perplejidad y la coherencia del texto frente a cuantizaciones de 4 u 8 bits. Es el uso mas defendible dada la ausencia de validacion publica.
-- Experimentacion con llama.cpp en hardware muy limitado: al ser un GGUF de 1 bit, puede cargarse en equipos sin GPU dedicada para comprobar si la generacion resulta utilizable en entornos de bajos recursos.
-- Generacion de texto de prototipo en local: para hacer pruebas de integracion de un pipeline de text-generation con llama-cpp-python antes de decidir si merece la pena desplegar una variante de mayor precision.
-- Reproduccion y auditoria de artefactos de terceros: util para verificar que contiene realmente el repositorio, dado el conflicto entre los 436 millones de parametros declarados y los 347,6 GB de tamano.
-- Docencia y demostraciones sobre cuantizacion: sirve como ejemplo practico de como se publica un GGUF comunitario, que diferencias hay entre licencia del modelo base y licencia del empaquetado, y por que los repositorios gated requieren aceptar condiciones.
-- Despliegue en produccion: no recomendable con la informacion disponible, ya que no hay benchmarks, ni ficha de idiomas, ni garantias de procedencia del artefacto frente al modelo original.
+- Inferencia local de un MoE de clase 600B en una sola estación DGX Spark: la variante IQ1_S (111,32 GiB) cabe en una caja de 128 GB y permite generar texto coherente sin infraestructura de centro de datos.
+- Despliegue en dos nodos GB10 con la cuantización Q2_K (202,45 GiB): ofrece mayor profundidad de razonamiento que IQ1_S a cambio de duplicar el hardware, adecuado para laboratorios con dos estaciones.
+- Experimentación con arquitecturas MoE masivas: permite a investigadores estudiar el comportamiento de 352 expertos y enrutamiento top-8 sin disponer del checkpoint BF16 completo.
+- Evaluación comparativa de cuantizaciones extremas: el repositorio incluye tres anchos de bits (1,599, 2,908 y 3,811 bpw) con la misma importance matrix, lo que facilita medir la degradación por compresión.
+- Generación de texto en pipelines de llama.cpp: mediante `llama-cli` o `llama-server` con `-ngl 99`, integrable en scripts de generación por lotes con temperatura 0 para tareas deterministas.
+- Reproducción y verificación de metadatos RoPE: el archivo `metadata-rope.txt` y los 902 tensores verificados byte a byte permiten auditar conversiones de checkpoints MoE con atención híbrida.
+- Pruebas de decodificación especulativa: las capas MTP en `MTP/mtp-Step-5-Preview-BF16.gguf` sirven como material de referencia para implementar el runtime en futuras versiones de llama.cpp.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. No hay datos de MMLU, HumanEval, GSM8K, MT-Bench ni de ninguna otra evaluacion, ni para el modelo en precision original ni para la variante cuantizada a 1 bit. Tampoco se han publicado mediciones de perplejidad, velocidad de generacion (tokens por segundo) ni consumo de memoria durante la inferencia.
+No se han publicado resultados de benchmarks en la informacion disponible. El autor solo menciona una degradación medible de la profundidad de razonamiento en IQ1_S respecto al checkpoint BF16, sin cifras concretas de perplejidad ni de tareas estándar.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: depende enteramente del numero real de parametros, que no esta claro. Si se toma el dato de 435.636.928 parametros, una cuantizacion de 1 bit ocuparia del orden de 60-80 MB de pesos, mas el espacio del contexto y el runtime; en FP16 serian unos 870 MB y en 8 bits unos 440 MB. Si en cambio el modelo real es de escala mucho mayor, como sugiere el tamano de 347,6 GB del repositorio, las cifras serian incomparablemente superiores. No es posible dar una estimacion fiable.
-- GPU recomendadas: no disponible.
-- Compatibilidad con GPU de consumo: no verificable con los datos disponibles. Con la hipotesis de ~436 millones de parametros en 1 bit cabria en cualquier GPU de consumo e incluso en CPU, pero esa hipotesis no esta confirmada.
-- Opciones de despliegue: llama.cpp y sus envoltorios habituales (llama-cpp-python, Ollama, LM Studio, koboldcpp, llama.cpp server). vLLM y TGI no ofrecen soporte completo y nativo de GGUF cuantizado, por lo que su uso no esta garantizado.
-- Latencia y throughput estimados: no disponible.
-- Almacenamiento: el repositorio ocupa 347,6 GB, un requisito de disco considerable independientemente de la variante que se descargue.
+- IQ1_S: 111,32 GiB en disco y en memoria; cabe en una única estación de 128 GB (DGX Spark o GB10-class). Requiere 25 shards.
+- Q2_K: 202,45 GiB; requiere dos estaciones GB10-class. Se subieron 20 de los 25 shards en el momento de la consulta.
+- Q3_K_M: 265,29 GiB; requiere tres estaciones GB10-class.
+- GPU recomendadas: no disponible de forma explícita; el autor cita exclusivamente hardware GB10 / DGX Spark-class y no menciona A100, H100 ni RTX 4090.
+- Viabilidad en GPU de consumo: no disponible; el tamaño mínimo de 111,32 GiB excede la VRAM de cualquier GPU consumer actual.
+- Opciones de despliegue: llama.cpp con arquitectura `step35` (cualquier build reciente); se invoca con `llama-cli -m <shard-1> -ngl 99` y el cargador resuelve los shards restantes. No se mencionan vLLM, Ollama ni TGI.
+- Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
 
-No disponible. La informacion proporcionada no incluye modelos comparables, ni datos de rendimiento del modelo base StepFun-5 Preview frente a alternativas, ni especificaciones verificables de esta variante cuantizada que permitan establecer una comparacion minima.
-
-| Modelo | Parametros | Contexto | Licencia | Formato | Estado |
+| Modelo | Parametros totales | Parametros activos | Contexto | Licencia | Formato |
 |---|---|---|---|---|---|
-| vcruz305/StepFun-5-Preview-GGUF | 435.636.928 (segun metadata, en conflicto con el tamano del repo) | no disponible | Apache 2.0 | GGUF | gated, sin benchmarks publicados |
-| Alternativa comparable | no disponible | no disponible | no disponible | no disponible | no disponible |
+| StepFun-5-Preview (este repo, GGUF) | 602,97 B | ~16 B | 1.048.576 | Apache 2.0 | GGUF (IQ1_S, Q2_K, Q3_K_M) |
+| StepFun-5-Preview (checkpoint BF16) | 602,97 B | ~16 B | 1.048.576 | Apache 2.0 | safetensors/BF16 |
+| Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
+
+No se dispone de información sobre modelos comparables de la misma categoría (MoE disperso de clase 600B con cuantizaciones GGUF) en la documentación proporcionada.
 
 ## Limitaciones y advertencias
 
-- Incoherencia de datos: los 435.636.928 parametros declarados en la metadata de safetensors no encajan con un tamano de repositorio de 347,6 GB. Cualquier estimacion de recursos o de calidad basada en esa cifra es poco fiable.
-- Cuantizacion de 1 bit: la compresion extrema suele degradar de forma apreciable la coherencia, el razonamiento y la fidelidad factual. No hay evaluaciones publicadas que cuantifiquen esa perdida en este caso.
-- Sin benchmarks: no existe ninguna medicion publicada de rendimiento, por lo que no se puede afirmar ni negar su utilidad en tareas concretas.
-- Riesgo de alucinacion: no cuantificado en la informacion disponible, pero inherente a cualquier modelo de lenguaje generativo y potencialmente agravado por la cuantizacion de 1 bit.
-- Sesgos conocidos: no disponible.
-- Limitaciones de contexto e idioma: se desconoce la longitud de contexto soportada y la lista de idiomas. El campo de idiomas de la ficha esta vacio.
-- Procedencia del artefacto: se trata de una publicacion de terceros (vcruz305) y no de un lanzamiento oficial del desarrollador del modelo base. Conviene verificar la trazabilidad de los pesos antes de cualquier uso serio y comprobar si la licencia Apache 2.0 declarada en el repositorio es compatible con la licencia del modelo original, dato que no se aporta.
-- Acceso restringido: el repositorio es gated y exige aceptar condiciones en Hugging Face, lo que anade friccion y limita la reproducibilidad automatizada.
-- Adopcion nula: 1 descarga y 0 likes en el momento de la consulta implican ausencia de validacion por parte de la comunidad.
-- Uso comercial: la licencia declarada es Apache 2.0, permisiva en principio, pero al desconocerse la licencia del modelo base subyacente no puede confirmarse que el uso comercial este cubierto en todos los supuestos.
-- Busqueda web no concluyente: los resultados de la busqueda realizada no contienen ningun enlace relevante sobre este modelo ni sobre StepFun-5 Preview; los dominios devueltos no guardan relacion con la ficha y se han descartado por completo.
+- El repositorio es privado y no constituye un lanzamiento general del modelo; su disponibilidad y mantenimiento no están garantizados.
+- IQ1_S es "literate but degraded": produce inglés gramatical y sobre el tema, pero la profundidad de razonamiento se pierde de forma medible. No sustituye al checkpoint BF16 ni a una cuantización de 2 bits en dos cajas.
+- Los expertos enrutados en IQ1_S se ejecutan a 1,5625 bpw, una compresión aproximada de 10:1 sobre 584B parámetros; la pérdida es inevitable independientemente de la calibración.
+- Los 161 tensores `sparse_indexer_*` y los 23 tensores `ssmax_s` están ausentes: llama.cpp no tiene runtime para la atención dispersa comprimida, por lo que las 23 capas de atención completa se ejecutan densas. En contextos de hasta 512 tokens la selección top-512 es irrelevante, pero la escala softmax constante (0,08496 frente a 0,07217 de llama.cpp) no se aplica.
+- El codificador visual (`mmproj-BF16.gguf`) y las capas MTP no tienen runtime en llama.cpp: el modelo solo puede usarse para texto en la práctica.
+- Q2_K está incompleto en el momento de la consulta (20 de 25 shards subidos), lo que impide su descarga completa.
+- No hay información sobre sesgos, riesgo de alucinación, rendimiento multilingüe ni resultados de benchmarks; no se pueden evaluar estos aspectos para producción.
+- La licencia Apache 2.0 permite uso comercial, pero la ausencia de datos de evaluación impide garantizar calidad en entornos productivos.
+- El contexto efectivo en llama.cpp está limitado por la ejecución densa de la atención completa y por la ventana deslizante de 512; no se ha verificado el comportamiento a 1M de tokens con este runtime.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/vcruz305/StepFun-5-Preview-GGUF
-- No se han encontrado en la busqueda web enlaces relevantes al modelo, a su paper, a su repositorio de codigo ni a demos. El resto de resultados devueltos por el buscador no estan relacionados con este modelo y no se incluyen.
+- Repositorio Hugging Face: https://huggingface.co/vcruz305/StepFun-5-Preview-GGUF
+- Importance matrix: https://huggingface.co/vcruz305/Step-5-Preview-GGUF-imatrix
+- Metadatos RoPE: https://huggingface.co/vcruz305/StepFun-5-Preview-GGUF/blob/main/metadata-rope.txt
+- Cuantización IQ1_S: https://huggingface.co/vcruz305/StepFun-5-Preview-GGUF/tree/main/IQ1_S
+- Cuantización Q2_K: https://huggingface.co/vcruz305/StepFun-5-Preview-GGUF/tree/main/Q2_K
+- Cuantización Q3_K_M: https://huggingface.co/vcruz305/StepFun-5-Preview-GGUF/tree/main/Q3_K_M
+- llama.cpp: https://github.com/ggml-org/llama.cpp
+- Perfil de Unsloth (convención de nombres citada): https://huggingface.co/unsloth

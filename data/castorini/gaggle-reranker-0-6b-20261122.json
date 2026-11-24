@@ -5,7 +5,7 @@
   "author": "castorini",
   "url": "https://huggingface.co/castorini/gaggle-reranker-0.6b-20261122",
   "created_at": "2026-11-23T18:44:44.000Z",
-  "updated_at": "2026-11-23T18:45:07.000Z",
+  "updated_at": "2026-11-23T19:49:02.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-ranking",

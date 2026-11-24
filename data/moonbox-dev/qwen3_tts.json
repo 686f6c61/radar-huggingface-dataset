@@ -40,8 +40,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "moonbox-dev/Qwen3-TTS-12Hz-MLX-PyTorch",
+  "renamed_at": "2026-11-24T10:43:39.043Z",
   "benchmarks": [],
   "sources": []
 }

@@ -5,7 +5,7 @@
   "author": "kingjones777",
   "url": "https://huggingface.co/kingjones777/Agents-A1-Abliterated-MTP-ROCmFP4-GGUF",
   "created_at": "2026-09-01T06:12:56.000Z",
-  "updated_at": "2026-09-01T21:27:06.000Z",
+  "updated_at": "2026-11-23T09:55:32.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -33,7 +33,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 206,
+  "downloads_30d": 191,
   "trending_score": 0,
   "parameters": 35505251456,
   "parameters_human": "35.51B",

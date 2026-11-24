@@ -5,7 +5,7 @@
   "author": "ProKope-AI",
   "url": "https://huggingface.co/ProKope-AI/ProKope-SecAudit-4B",
   "created_at": "2026-11-23T01:16:58.000Z",
-  "updated_at": "2026-11-23T03:21:35.000Z",
+  "updated_at": "2026-11-23T05:00:12.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -39,7 +39,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 2,
   "trending_score": 0,
   "parameters": 4022468096,
   "parameters_human": "4.02B",

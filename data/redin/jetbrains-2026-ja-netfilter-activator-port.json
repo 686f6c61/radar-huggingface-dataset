@@ -1,0 +1,98 @@
+{
+  "schema": 2,
+  "id": "Redin/jetbrains-2026-ja-netfilter-activator-port",
+  "slug": "redin-jetbrains-2026-ja-netfilter-activator-port",
+  "author": "Redin",
+  "url": "https://huggingface.co/Redin/jetbrains-2026-ja-netfilter-activator-port",
+  "created_at": "2026-11-24T11:27:30.000Z",
+  "updated_at": "2026-11-24T11:27:31.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en",
+    "ru",
+    "zh",
+    "es",
+    "pt",
+    "tr",
+    "de",
+    "fr",
+    "ja",
+    "ko",
+    "ar",
+    "pl",
+    "vi",
+    "id"
+  ],
+  "tags": [
+    "windows",
+    "windows-11",
+    "x64",
+    "portable",
+    "jetbrains-2026-ja-netfilter-activator-port",
+    "en",
+    "ru",
+    "zh",
+    "es",
+    "pt",
+    "tr",
+    "de",
+    "fr",
+    "ja",
+    "ko",
+    "ar",
+    "pl",
+    "vi",
+    "id",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "context_length": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Diwali 2026: कब है दिवाली? नोट करें लक्ष्मी पूजा का मुहूर्त और …",
+      "url": "https://www.aajtak.in/religion/news/story/diwali-2026-date-lakshmi-puja-shubh-muhurat-8-november-tvisz-dskc-2676013-2026-10-21",
+      "snippet": "Oct 21, 2026 · (Diwali 2026 Date) हिंदू पंचांग के अनुसार, साल 2026 में दिवाली का पर्व रविवार, 8 नवंबर को मनाया जाएगा. यह त्योहार …Read more"
+    },
+    {
+      "title": "दिवाली 2026: तिथियाँ, लक्ष्मी पूजा मुहूर्त और 5 दिन की गाइड",
+      "url": "https://hindi.hindutone.com/festivals/diwali-2026/",
+      "snippet": "Jun 4, 2026 · दिवाली (लक्ष्मी पूजा) 2026 रविवार, 8 नवंबर को है। धनतेरस से भाई दूज तक पाँच दिन, लक्ष्मी-गणेश पूजा मुहूर्त व विधि और …Read more"
+    },
+    {
+      "title": "दिवाली 2026 की तारीख और लक्ष्मी पूजन मुहूर्त | राहुल आर्य",
+      "url": "https://www.astrorahularya.com/hi/blog/diwali-2026-date/",
+      "snippet": "Oct 6, 2026 · तारीख, लक्ष्मी पूजन मुहूर्त और पाँचों दिन. 2026 में दिवाली रविवार, 8 नवंबर 2026 को है। इसी शाम लक्ष्मी पूजन होगा, …Read more"
+    },
+    {
+      "title": "दिवाली 2026 की तारीख और लक्ष्मी पूजा मुहूर्त: 8 नवंबर",
+      "url": "https://hindi.hindutone.com/festivals/diwali-2026-date-lakshmi-puja-muhurat/",
+      "snippet": "Oct 7, 2026 · दिवाली (लक्ष्मी पूजा) 2026 रविवार, 8 नवंबर को है — और हर कोई यही पूछता है कि मुहूर्त क्या है। हिंदूटोन की यह …Read more"
+    },
+    {
+      "title": "दिवाली 2026: तिथि, मुहूर्त और लक्ष्मी पूजन | Diwali 2026",
+      "url": "https://www.bhaktilok.in/festivals/diwali-2026",
+      "snippet": "दिवाली 2026 का पाँच दिवसीय महापर्व 8 नवंबर से 12 नवंबर तक मनाया जाएगा। जानिए धनतेरस, लक्ष्मी पूजन, गोवर्धन पूजा और भाई दूज …Read more"
+    }
+  ]
+}

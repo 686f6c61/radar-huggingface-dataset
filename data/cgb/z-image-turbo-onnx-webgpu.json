@@ -5,7 +5,7 @@
   "author": "cgb",
   "url": "https://huggingface.co/cgb/z-image-turbo-onnx-webgpu",
   "created_at": "2026-11-23T06:32:03.000Z",
-  "updated_at": "2026-11-23T06:34:16.000Z",
+  "updated_at": "2026-11-24T00:17:31.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-to-image",

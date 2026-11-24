@@ -5,7 +5,7 @@
   "author": "aufklarer",
   "url": "https://huggingface.co/aufklarer/VAP-OTO-CoreML",
   "created_at": "2026-10-30T22:55:45.000Z",
-  "updated_at": "2026-10-31T10:13:40.000Z",
+  "updated_at": "2026-11-23T16:04:06.000Z",
   "license": "cc-by-4.0",
   "license_family": "oss",
   "pipeline_tag": "voice-activity-detection",
@@ -14,17 +14,7 @@
     "en"
   ],
   "tags": [
-    "coreml",
     "vap-oto-coreml",
-    "voice-activity-projection",
-    "turn-taking",
-    "stereo",
-    "audio",
-    "voice-activity-detection",
-    "en",
-    "base_model:viks66/VAP_checkpoints",
-    "base_model:finetune:viks66/VAP_checkpoints",
-    "license:cc-by-4.0",
     "region:us"
   ],
   "likes": 0,

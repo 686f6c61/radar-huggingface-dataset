@@ -1,0 +1,118 @@
+{
+  "schema": 2,
+  "id": "SohamW11/rosfix-assist",
+  "slug": "sohamw11-rosfix-assist",
+  "author": "SohamW11",
+  "url": "https://huggingface.co/SohamW11/rosfix-assist",
+  "created_at": "2026-11-24T07:56:23.000Z",
+  "updated_at": "2026-11-24T07:56:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-ranking",
+  "library": "rosfix",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "rosfix",
+    "ros2",
+    "robotics",
+    "static-analysis",
+    "rust",
+    "configuration",
+    "program-repair",
+    "text-ranking",
+    "en",
+    "dataset:SohamW11/rosfix-knowledge-packs",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "context_length": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "Repair-value ranking with abstention",
+      "dataset": "rosfix synthetic corruptions, held-out packages and names, fold 0 (answer offered, n=1062)",
+      "metric": "Correct picks (learned)",
+      "value": 69.49
+    },
+    {
+      "task": "Repair-value ranking with abstention",
+      "dataset": "rosfix synthetic corruptions, held-out packages and names, fold 0 (answer offered, n=1062)",
+      "metric": "Correct picks (lexical baseline)",
+      "value": 54.14
+    },
+    {
+      "task": "Repair-value ranking with abstention",
+      "dataset": "rosfix synthetic corruptions, held-out packages and names, fold 0 (answer offered, n=1062)",
+      "metric": "Wrong picks (learned)",
+      "value": 0.19
+    },
+    {
+      "task": "Abstention when the answer is absent",
+      "dataset": "rosfix synthetic corruptions, held-out packages and names, fold 0 (answer absent, n=729)",
+      "metric": "Correct abstentions (learned)",
+      "value": 99.31
+    },
+    {
+      "task": "Abstention when the answer is absent",
+      "dataset": "rosfix synthetic corruptions, held-out packages and names, fold 0 (answer absent, n=729)",
+      "metric": "Correct abstentions (lexical baseline)",
+      "value": 96.57
+    },
+    {
+      "task": "Wrong edits over all cases",
+      "dataset": "rosfix synthetic corruptions, held-out packages and names, fold 0 (all, n=1791)",
+      "metric": "Wrong edits (learned)",
+      "value": 0.39
+    },
+    {
+      "task": "Wrong edits over all cases",
+      "dataset": "rosfix synthetic corruptions, held-out packages and names, fold 0 (all, n=1791)",
+      "metric": "Wrong edits (lexical baseline)",
+      "value": 1.68
+    },
+    {
+      "task": "5-fold cross-validation (pooled)",
+      "dataset": "rosfix synthetic corruptions, 5 package folds, name-disjoint (n=3005)",
+      "metric": "Correct (learned)",
+      "value": 43.19
+    },
+    {
+      "task": "5-fold cross-validation (pooled)",
+      "dataset": "rosfix synthetic corruptions, 5 package folds, name-disjoint (n=3005)",
+      "metric": "Correct (lexical baseline)",
+      "value": 26.66
+    },
+    {
+      "task": "5-fold cross-validation (pooled)",
+      "dataset": "rosfix synthetic corruptions, 5 package folds, name-disjoint (n=3005)",
+      "metric": "Wrong edits (learned)",
+      "value": 1.6
+    },
+    {
+      "task": "5-fold cross-validation (pooled)",
+      "dataset": "rosfix synthetic corruptions, 5 package folds, name-disjoint (n=3005)",
+      "metric": "Wrong edits (lexical baseline)",
+      "value": 1.96
+    }
+  ],
+  "sources": []
+}

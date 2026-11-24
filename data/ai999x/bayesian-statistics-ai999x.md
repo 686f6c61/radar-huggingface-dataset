@@ -2,123 +2,104 @@
 
 ## Resumen
 
-bayesian-statistics-ai999x es un motor determinista de estadística bayesiana para Python, desarrollado por Ibnul Jaif Farabi bajo la organización AI999X. No es un modelo de lenguaje generativo: se trata de un solucionador neuro-simbólico en el que una capa de lectura basada en reglas interpreta la pregunta en inglés y la dirige a una de sus 78 capacidades simbólicas certificadas (teorema de Bayes, posteriores conjugados, intervalos de credibilidad, factores de Bayes, análisis de decisión, propagación de incertidumbre, Monte Carlo y análisis de sensibilidad). Cada respuesta se calcula, se verifica (por sustitución, comprobación dimensional o cálculo independiente) y se devuelve junto con pasos, fórmulas en LaTeX, unidades y supuestos; si no puede verificarla, emite un rechazo explícito.
+Bayesian Statistics (bayesian-statistics-ai999x) es un motor de cálculo determinista publicado por AI999X en Hugging Face bajo licencia Apache 2.0. No es un modelo de lenguaje generativo: es un solucionador especializado que cubre 78 cálculos organizados en 12 temas de estadística bayesiana (teorema de Bayes, priors y posteriores conjugados, intervalos de credibilidad, factores de Bayes, estimación Monte Carlo, propagación de incertidumbre, análisis de sensibilidad y análisis de decisión). Cada cálculo devuelve la fórmula, los pasos intermedios, las unidades y, cuando una entrada falta o está fuera de rango, una explicación en lenguaje natural en lugar de un número.
 
-Su relevancia práctica está en el nicho de aplicaciones que necesitan aritmética estadística auditable sin conexión: docencia, corrección automática de ejercicios y pipelines que no pueden permitirse una alucinación. El autor declara siete resultados posibles (SOLVED, NEEDS_INPUT, AMBIGUOUS, INVALID_INPUT, OUT_OF_SCOPE, UNRECOGNIZED_FORMAT, INTERNAL_ERROR) y afirma que las 378 respuestas documentadas se reproducen de forma idéntica en Windows y Linux con Python 3.10 a 3.14. El paquete se distribuye como wheel puro de Python (sympy, mpmath), funciona solo en CPU y no requiere GPU, red ni clave de API.
+El paquete se distribuye como una biblioteca de Rust con un total declarado de 4.715.520 parámetros en safetensors, aunque en la práctica funciona como un motor compilado que se ofrece por cuatro vías: aplicación de escritorio para Windows y Linux, interfaz de línea de comandos, interfaz web y paquete de Python (`pip install bayesian-statistics-ai999x`). Todo el cómputo se ejecuta localmente, sin conexión a red, lo que el autor presenta como garantía de "cero alucinación": los resultados son reproducibles y no dependen de muestreo probabilístico de un LLM.
 
-Conviene señalar una discrepancia relevante antes de evaluarlo: la model card lo describe como Python puro, mientras que el repositorio de Hugging Face declara 4.715.520 parámetros en safetensors y etiquetas onnx y safetensors. La model card también marca `inference: false`, por lo que el widget de inferencia de Hugging Face no está operativo. El modelo está en versión 1.0.3, con licencia Apache-2.0, solo inglés y 35 descargas en el momento de la consulta.
+Su relevancia actual reside en el nicho de asistentes técnicos verificables para docencia y análisis cuantitativo: frente a un chatbot generalista, este motor ofrece respuestas exactas y auditables en problemas de estadística bayesiana, con soporte declarado de Python 3.10 a 3.14 en Windows y Linux (x86-64) y una build pura en Python para macOS y ARM. El modelo está etiquetado únicamente en inglés y su pipeline declarado es question-answering.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Motor neuro-simbólico determinista: lectura de la pregunta basada en reglas más 78 capacidades simbólicas certificadas (no es un transformer generativo) |
-| Parametros totales | 4.715.520 (según safetensors del repositorio); la model card describe el paquete como Python puro, sin detallar a qué corresponden esos pesos |
-| Parametros activos | No aplica (no es un modelo MoE) |
-| Longitud de contexto | No disponible; no aplica, la entrada se limita a formas de pregunta documentadas y a llamadas tipadas |
-| Tipos de cuantizacion | No disponible; no aplica al runtime declarado (CPU, sympy y mpmath) |
-| Idiomas soportados | Inglés (`en`) |
-| Licencia | Apache-2.0 |
-| Formato de pesos | safetensors y ONNX (etiquetas del repositorio); distribución principal como wheel de Python `bayesian_statistics_ai999x-1.0.3-py3-none-any.whl` |
-| Tarea (pipeline) | question-answering (etiquetas adicionales: sentence-similarity, feature-extraction) |
-| Versión | 1.0.3 (knowledge pack 1.0.1) |
-| Capacidades certificadas | 78 procedimientos |
-| Respuestas doradas | 378 respuestas documentadas |
-| Runtime | Solo CPU, offline; sin GPU, sin red, sin clave de API |
-| Plataformas probadas | Windows (Python 3.13); Linux x86-64 (Python 3.10, 3.11, 3.12, 3.13, 3.14) |
-| Dependencias declaradas | sympy, mpmath |
-| Tamaño del repositorio | 0,1 GB |
-| Descargas / likes | 35 / 0 |
-| Fecha de creación / actualización | 2026-10-25 / 2026-10-28 |
-| Autor / organización | Ibnul Jaif Farabi / AI999X |
+| Arquitectura | Motor de cálculo determinista compilado en Rust (no es un transformer ni un LLM generativo) |
+| Parametros totales | 4.715.520 (según safetensors) |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible (no aplica; el motor resuelve cálculos individuales, no conversaciones) |
+| Tipos de cuantizacion | no disponible (no aplica; no se publican pesos cuantizables) |
+| Idiomas soportados | en |
+| Licencia | apache-2.0 |
+| Formato de pesos | safetensors (repo de 0.0 GB); distribución adicional como binarios de escritorio, CLI y paquete de Python |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura declarada es un motor determinista híbrido: una capa de comprensión de lenguaje basada en reglas que reconoce formas de pregunta documentadas y extrae sus parámetros, acoplada a un conjunto de 78 rutinas simbólicas certificadas que realizan el cálculo exacto con sympy y mpmath. No hay evidencia en la información disponible de un transformer, de pesos de atención ni de un proceso de entrenamiento con descenso de gradiente; el autor no publica corpus, número de tokens, composición del dataset ni fases de RLHF o DPO.
+La información disponible no describe una arquitectura de red neuronal. El autor presenta el producto como "un motor compilado" con 78 cálculos en 12 temas, cada uno con fórmula, pasos y unidades, implementado en Rust y expuesto a través de cuatro interfaces (escritorio, CLI, navegador y Python). El paquete de Python instala el mismo motor compilado en Windows y Linux x86-64, y una build pura en Python en el resto de plataformas, con la promesa de respuestas idénticas. El tamaño del repositorio (0.0 GB) y la ausencia de una descripción de dataset de entrenamiento, tokens, RLHF o DPO son coherentes con un artefacto de ingeniería de software más que con un modelo entrenado.
 
-El mecanismo de garantía es la verificación posterior al cálculo: cada resultado se sustituye de vuelta en la fórmula, se comprueba dimensionalmente o se contrasta con un cálculo independiente antes de devolverse. La interfaz expone dos vías, `ask()` para preguntas en inglés documentado y `solve(capability_id, **inputs)` para llamadas tipadas garantizadas, y cada salida incluye pasos, LaTeX, unidades y supuestos. El paquete declara ejecución offline sobre CPU con resultados idénticos entre plataformas, lo que sugiere aritmética de precisión arbitraria en lugar de inferencia neuronal; no se documenta ninguna innovación de decodificación, atención lineal ni atención especulativa.
+No se documentan innovaciones de inferencia como decodificación especulativa, atención lineal o modos de razonamiento. La "innovación" declarada es de tipo metodológico: determinismo, ejecución offline y devolución de una razón legible cuando una entrada no es válida, en lugar de un valor inventado. Los tags del modelo (conjugate prior, posterior, credible interval, Bayes factor, Sobol indices, Monte Carlo, Morris elementary effects, Gauss-Hermite) describen el catálogo de métodos cubiertos, no capas de una red.
 
 ## Capacidades
 
-- Resolución de problemas de estadística bayesiana con pasos intermedios, fórmulas en LaTeX, unidades y supuestos explícitos.
-- Teorema de Bayes y cálculo de valores predictivos en pruebas diagnósticas (PPV, NPV, tasa de falsos descubrimientos, probabilidad de positivo).
-- Posteriores conjugados, con salida de media, parámetros y distribución posterior (por ejemplo, beta-binomial).
-- Intervalos de credibilidad y factores de Bayes para comparación de modelos o prioris.
-- Análisis de decisión y análisis de sensibilidad, incluidos índices de Sobol.
-- Propagación de incertidumbre y estimación por Monte Carlo.
-- Dos modos de invocación: `ask()` sobre lenguaje natural documentado y `solve(capability_id, **inputs)` con entradas tipadas.
-- Rechazo explícito en lugar de respuesta aproximada, con siete estados de salida diferenciados.
-- Integración como herramienta determinista dentro de pipelines o de agentes: el LLM redacta, el solver calcula.
-- No soporta tool calling nativo, ni agentes autónomos, ni razonamiento multi-paso abierto, ni visión, audio o modo de pensamiento; tampoco generación de texto libre.
+- Resolución de 78 cálculos de estadística bayesiana agrupados en 12 temas, con fórmula, pasos intermedios y unidades.
+- Cálculo de valores predictivos positivo y negativo de una prueba diagnóstica.
+- Posteriores conjugados, incluido el modelo beta-binomial, e intervalos de densidad máxima (HDI) de un posterior beta.
+- Factores de Bayes para hipótesis binomiales simples.
+- Valor esperado de la información perfecta (EVPI) y análisis de decisión asociado.
+- Propagación de incertidumbre en productos y cocientes.
+- Estimación Monte Carlo y cuadratura de Gauss-Hermite para esperanzas bajo una normal.
+- Análisis de sensibilidad global: índices de Sobol y cribado de efectos elementales de Morris.
+- Devolución de una explicación en lenguaje natural cuando falta una entrada o está fuera de rango, en lugar de un resultado numérico.
+- Ejecución totalmente offline, sin llamadas a servicios externos.
+- Cuatro interfaces de uso: aplicación de escritorio (Windows, Linux), CLI `bayesian-statistics`, interfaz web y paquete de Python 3.10+.
+- No se declaran capacidades de tool calling, agentes, razonamiento multi-paso libre, visión ni audio.
 
 ## Casos de uso
 
-- Corrección automática de ejercicios de estadística bayesiana: el motor recibe el enunciado en una de las formas documentadas y devuelve el resultado con pasos, lo que permite a una plataforma educativa comparar la respuesta del alumno con una referencia verificada y mostrar la fórmula en LaTeX.
-- Docencia y material didáctico de tests diagnósticos: a partir de sensibilidad, especificidad y prevalencia se obtienen PPV, NPV y tasa de falsos positivos, útiles para ilustrar la paradoja del falso positivo en clase de bioestadística sin depender de una calculadora manual.
-- Corrección de guiones clínicos o de laboratorio en prototipos: cálculo reproducible de valores predictivos para validar hojas de cálculo o informes internos antes de publicarlos.
-- Análisis de sensibilidad en ingeniería y modelos de riesgo: cálculo de índices de Sobol y propagación de incertidumbre sobre modelos paramétricos, con resultado determinista y auditable para anexos técnicos.
-- Comparación de prioris en revisión de literatura o meta-análisis: factores de Bayes y posteriores conjugados calculados de forma explícita para documentar la elección de priori en una sección de métodos.
-- Test de regresión numérica en CI/CD: al ser determinista y reproducible entre plataformas, el solver puede fijar valores esperados en tests de una librería estadística y fallar cuando un cambio altera un resultado.
-- Entornos air-gapped o de cumplimiento estricto: sustituye a una API externa en flujos donde no se permite salida a red, ya que corre offline en CPU sin clave de API.
-- Herramienta de apoyo a un LLM: el modelo de lenguaje interpreta la pregunta libre y llama a `solve()`; el solver aporta el número verificado y el LLM solo redacta la explicación, reduciendo el riesgo de cifras inventadas.
+- Docencia de estadística bayesiana: el motor devuelve la fórmula y los pasos de cada ejercicio, lo que permite usarlo como solucionador de referencia en asignaturas de inferencia bayesiana sin que el alumno reciba solo el resultado final.
+- Corrección automática de ejercicios: al ser determinista y offline, un pipeline de evaluación puede comparar la salida del motor con la respuesta del estudiante y reproducir exactamente el mismo resultado en Windows, Linux y en la build pura de Python.
+- Análisis de pruebas diagnósticas en entornos clínicos o epidemiológicos: el cálculo de valores predictivos positivo y negativo a partir de sensibilidad, especificidad y prevalencia se obtiene con pasos auditables, útil para informes que deben justificar cada cifra.
+- Priorización de experimentos y decisiones bajo incertidumbre: el cálculo de EVPI permite estimar cuánto vale obtener información adicional antes de decidir, integrable en hojas de cálculo o scripts de análisis de decisión.
+- Auditoría de sensibilidad de modelos cuantitativos: los índices de Sobol y el cribado de Morris permiten identificar qué entradas dominan la varianza de un modelo, ejecutándose localmente sobre datos que no deben salir de la organización.
+- Propagación de incertidumbre en cálculos de ingeniería o finanzas: el tratamiento de productos y cocientes con sus incertidumbres asociadas se resuelve con pasos explícitos, adecuado para memorias técnicas que exigen trazabilidad.
+- Integración en herramientas internas vía Python: `pip install bayesian-statistics-ai999x` permite invocar los cálculos desde notebooks o servicios sin dependencia de red, lo que facilita su uso en entornos con restricciones de conectividad.
 
 ## Benchmarks y rendimiento
 
-Datos declarados por el autor en el model-index; ninguna de las métricas está marcada como verificada de forma independiente (`verified: false`).
+Datos declarados por el autor en el model-index (no verificados de forma independiente):
 
-| Tarea | Dataset | Métrica | Valor | Nota del autor |
+| Tarea | Dataset | Métrica | Valor | Nota |
 |---|---|---|---|---|
-| Question answering (bayesian statistics) | Golden answers, 378 preguntas documentadas, Windows y Linux con Python 3.10-3.14 | accuracy | 1,000 | "identical on every platform" |
-| Question answering (bayesian statistics) | Capability search, 12.998 preguntas verificadas reservadas de todos los modelos AI999X | recall@1 | 0,918 | "right capability first" |
-| Question answering (bayesian statistics) | Capability search, 12.998 preguntas verificadas reservadas de todos los modelos AI999X | recall@5 | 0,988 | "in the top five" |
+| Question answering (estadística bayesiana) | Golden answers (378 preguntas documentadas, Windows + Linux, Python 3.10-3.14) | Accuracy | 1.0 | "identical on every platform"; `verified: false` |
 
-No se han publicado resultados de MMLU, HumanEval, GSM8K ni de otros benchmarks estándar de modelos de lenguaje en la información disponible, y en todo caso no serían aplicables a un motor simbólico de dominio cerrado. Tampoco se publican latencias ni throughput.
+No se han publicado en la información disponible resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u otros) ni comparaciones con modelos de lenguaje. El único dato es la exactitud reportada por el autor sobre su propio conjunto de 378 preguntas, sin verificación externa.
 
 ## Requisitos de hardware
 
-- VRAM: no aplica; el runtime declarado es solo CPU y no requiere GPU.
-- RAM: no se especifica cifra; el repositorio ocupa 0,1 GB y las dependencias son sympy y mpmath, por lo que el consumo esperado es modesto, pero no hay dato oficial.
-- GPU recomendadas: ninguna. El autor indica explícitamente que no hace falta GPU.
-- Compatibilidad con GPU de consumo: irrelevante, funciona en cualquier CPU con Python 3.10, 3.11, 3.12, 3.13 o 3.14.
-- Plataformas verificadas: Windows con Python 3.13 y Linux x86-64 con Python 3.10 a 3.14.
-- Opciones de despliegue: `pip install bayesian-statistics-ai999x`, instalación directa del wheel desde el repositorio de Hugging Face, o empaquetado en una imagen de contenedor. No hay soporte declarado para vLLM, llama.cpp, Ollama ni TGI, porque no es un modelo de pesos en el sentido habitual.
-- Latencia y throughput: no disponibles. La naturaleza determinista y simbólica implica tiempos dependientes del problema, no del tamaño del lote.
-- Almacenamiento: 0,1 GB de repositorio más el entorno de Python.
+- VRAM estimada para inferencia: no aplica; el motor no requiere GPU y no se distribuyen pesos para aceleración por hardware.
+- GPU recomendadas: ninguna; la ejecución es en CPU.
+- Compatibilidad con GPU de consumo: no aplica.
+- Plataformas soportadas: Windows y Linux x86-64 con binarios compilados; macOS y ARM mediante build pura en Python.
+- Versiones de Python: 3.10 a 3.14 según la documentación del autor.
+- Opciones de despliegue: aplicación de escritorio, CLI `bayesian-statistics`, interfaz web y paquete de Python. No se mencionan vLLM, llama.cpp, Ollama ni TGI, que no son aplicables a este artefacto.
+- Latencia y throughput: no disponibles; al ser cálculo determinista local, dependen del cálculo concreto y del hardware, pero no se publican cifras.
 
 ## Comparativa con modelos similares
 
-| Alternativa | Tipo | Parámetros | Contexto | Licencia | Observaciones |
-|---|---|---|---|---|---|
-| bayesian-statistics-ai999x | Motor simbólico determinista de dominio cerrado | 4.715.520 declarados en safetensors (no aplica al runtime Python) | No aplica | Apache-2.0 | Solo inglés, 78 capacidades, salida con pasos y rechazo explícito |
-| SymPy | Librería de matemática simbólica | No disponible | No aplica | BSD-3-Clause (según el proyecto) | Requiere que el desarrollador formule el problema en su API; no interpreta lenguaje natural ni incluye flujos bayesianos preconfigurados |
-| Wolfram Alpha / Wolfram Language | Servicio y lenguaje de cálculo simbólico | No disponible | No aplica | Propietaria | Cobertura matemática mucho mayor, pero dependencia de servicio externo y sin ejecución offline gratuita |
-| Modelos de lenguaje de propósito general (API) | Transformer generativo | No disponible | No disponible | Propietaria | Pueden explicar estadística bayesiana en inglés libre, pero no garantizan exactitud numérica ni determinismo entre plataformas |
+No se dispone de información sobre modelos comparables en la documentación proporcionada. Como referencia categórica, este artefacto se diferencia de un LLM generalista en que no genera texto libre ni requiere GPU, y de una librería estadística convencional en que devuelve pasos, unidades y explicaciones de entradas inválidas. No se han encontrado en la información disponible alternativas equivalentes con datos verificables para establecer una tabla comparativa.
 
-La comparación cuantitativa de rendimiento frente a estas alternativas no está disponible: el autor solo publica métricas internas sobre sus propios conjuntos de evaluación, sin comparación cruzada con otras herramientas.
+| Modelo | Parámetros | Contexto | Licencia | Enfoque |
+|---|---|---|---|---|
+| bayesian-statistics-ai999x | 4.715.520 (declarados) | no aplica | apache-2.0 | Motor determinista de cálculos bayesianos |
+| Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
 
-- Dominio cerrado: cubre únicamente estadística bayesiana dentro de 78 capacidades certificadas; cualquier cuestión fuera de ese alcance devuelve OUT_OF_SCOPE.
-- Idioma único: solo inglés. No hay soporte declarado de castellano ni de otras lenguas, ni siquiera para las formas de pregunta de `ask()`.
-- No genera texto libre: no es un modelo conversacional y no puede redactar explicaciones largas, resumir documentos ni mantener un diálogo multi-turno.
-- Cobertura de entrada limitada: `ask()` solo reconoce formas de pregunta documentadas; el resto requiere la interfaz tipada `solve()`, lo que traslada el trabajo de formateo al desarrollador.
-- Métricas no verificadas: los tres resultados del model-index figuran con `verified: false` y proceden de conjuntos de evaluación propios (`ai999x-evaluation`), sin validación externa ni comparación con terceros.
-- Discrepancia de artefactos: la model card describe Python puro, pero el repositorio declara 4.715.520 parámetros en safetensors y etiquetas ONNX; conviene auditar qué contienen esos ficheros antes de integrarlos en un entorno regulado.
-- Inferencia desactivada en Hugging Face: `inference: false`, por lo que no se puede probar desde el widget del repositorio; hay que instalar el paquete.
-- Adopción muy baja: 35 descargas y 0 likes en el momento de la consulta, sin comunidad ni issues públicos documentados, lo que reduce la probabilidad de que los fallos estén ya detectados por terceros.
-- Riesgo de alucinación bajo por diseño, pero no nulo en la fase de interpretación: si la capa de reglas malinterpreta una pregunta en lenguaje natural y la mapea a una capacidad válida, la aritmética será correcta y el resultado irrelevante. El estado AMBIGUOUS mitiga, no elimina, este riesgo.
-- Licencia Apache-2.0: permite uso comercial y modificación con atribución y conservación del aviso de licencia; no hay cláusulas de uso restringido declaradas, pero tampoco garantías ni soporte del autor.
-- Autor único y mantenimiento unipersonal: la versión 1.0.3 y el knowledge pack 1.0.1 sugieren un proyecto joven; conviene fijar la versión en producción y planificar sustituto.
+- El alcance está limitado a 78 cálculos en 12 temas de estadística bayesiana; no es un asistente conversacional general ni responde preguntas fuera de ese catálogo.
+- El único idioma declarado es inglés (`en`); no se garantiza soporte de consultas en castellano.
+- El resultado de accuracy 1.0 procede del propio autor sobre su conjunto "Golden answers" de 378 preguntas y está marcado como `verified: false`; no debe interpretarse como validación independiente.
+- La etiqueta "zero-hallucination" es una afirmación de marketing del autor: el motor evita inventar cifras, pero la corrección del resultado depende de que las entradas y el modelo estadístico elegido sean adecuados.
+- No se documentan sesgos, pero al ser un motor determinista el riesgo relevante no es el sesgo estadístico del modelo sino el uso incorrecto de supuestos (por ejemplo, aplicar un posterior conjugado cuando la verosimilitud no lo es).
+- La licencia Apache 2.0 permite uso comercial, pero el autor no ofrece garantías sobre la idoneidad de los cálculos para decisiones críticas; conviene validar los resultados en contextos regulados.
+- La build pura en Python para macOS y ARM se presenta como equivalente, pero no se publican pruebas de paridad más allá de la afirmación del autor.
+- El repositorio ocupa 0.0 GB y no se detalla el contenido exacto de los safetensors; la naturaleza real de los "4.715.520 parámetros" no está descrita en la información disponible.
+- No hay soporte declarado de tool calling, agentes, visión, audio ni modos de razonamiento, por lo que no debe evaluarse como un LLM.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/AI999X/bayesian-statistics-ai999x
-- Paquete en PyPI: https://pypi.org/project/bayesian-statistics-ai999x/
-- Guía de capacidades (carpeta docs del repositorio): https://huggingface.co/AI999X/bayesian-statistics-ai999x/tree/main/docs
-- Material de evaluación: https://huggingface.co/AI999X/bayesian-statistics-ai999x/tree/main/evaluation
-- Licencia: https://huggingface.co/AI999X/bayesian-statistics-ai999x/blob/main/LICENSE
-- Wheel de instalación directa: https://huggingface.co/AI999X/bayesian-statistics-ai999x/resolve/main/dist/bayesian_statistics_ai999x-1.0.3-py3-none-any.whl
-- Organización AI999X en Hugging Face: https://huggingface.co/AI999X
-- Sitio web del proyecto: https://ai999x.com
-- Apoyo al desarrollo: https://buymeacoffee.com/ibnuljaiffarabi
-- Paper, blog técnico o demo interactiva: no disponibles en la información proporcionada.
+- Página del modelo en el sitio del autor: https://www.ai999x.com/models/bayesian-statistics-ai999x/
+- Aplicación de escritorio, Windows: https://github.com/AI999X/ai999x-desktop/releases/download/v1.6.7/ai999x-bayesian-statistics-1.6.7-windows-x86_64.zip
+- Aplicación de escritorio, Linux: https://github.com/AI999X/ai999x-desktop/releases/download/v1.6.7/ai999x-bayesian-statistics-1.6.7-linux-x86_64.tar.gz
+- CLI, Windows: https://github.com/AI999X/ai999x-desktop/releases/download/v1.6.7/ai999x-cli-1.6.7-windows-x86_64.zip
+- CLI, Linux: https://github.com/AI999X/ai999x-desktop/releases/download/v1.6.7/ai999x-cli-1.6.7-linux-x86_64.tar.gz
+- Demostración en vídeo (MP4): https://www.ai999x.com/?ax_shot=bayesian-statistics-ai999x/clip.mp4
+- Repositorio de escritorio en GitHub: https://github.com/AI999X/ai999x-desktop

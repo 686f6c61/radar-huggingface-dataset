@@ -5,7 +5,7 @@
   "author": "nchapman",
   "url": "https://huggingface.co/nchapman/sabi-noema-W4A16-HGPTQ",
   "created_at": "2026-11-19T04:09:54.000Z",
-  "updated_at": "2026-11-19T04:11:39.000Z",
+  "updated_at": "2026-11-23T22:40:00.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -31,7 +31,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 23,
+  "downloads_30d": 37,
   "trending_score": 0,
   "parameters": 29105255152,
   "parameters_human": "29.11B",

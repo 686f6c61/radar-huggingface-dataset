@@ -5,7 +5,7 @@
   "author": "rashadaziz",
   "url": "https://huggingface.co/rashadaziz/bypass-lanes-scaling",
   "created_at": "2026-11-23T17:51:21.000Z",
-  "updated_at": "2026-11-23T17:53:42.000Z",
+  "updated_at": "2026-11-23T20:31:56.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -14,12 +14,6 @@
     "en"
   ],
   "tags": [
-    "gpt",
-    "language-modeling",
-    "residual-stream",
-    "scaling",
-    "en",
-    "dataset:HuggingFaceFW/fineweb-edu",
     "region:us"
   ],
   "likes": 0,

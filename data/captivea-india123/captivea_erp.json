@@ -1,0 +1,67 @@
+{
+  "schema": 2,
+  "id": "Captivea-india123/Captivea_ERP",
+  "slug": "captivea-india123-captivea_erp",
+  "author": "Captivea-india123",
+  "url": "https://huggingface.co/Captivea-india123/Captivea_ERP",
+  "created_at": "2026-11-24T08:12:28.000Z",
+  "updated_at": "2026-11-24T08:24:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Partenaire Odoo Gold en France | Transformez votre quotidien | Captivea",
+      "url": "https://www.captivea.com/fr_FR",
+      "snippet": "Depuis plus de 20 ans, Captivea déploie Odoo dans le monde entier avec une obsession : la réussite et l’autonomie de ses clients. …"
+    },
+    {
+      "title": "Odoo Gold Partner in USA | Transform your everyday | Captivea",
+      "url": "https://www.captivea.com/",
+      "snippet": "Odoo Gold Partner since 2014, Captivea changes the daily work of every team with Odoo ERP, web, BI and AI. 200+ experts in 9 …"
+    },
+    {
+      "title": "CAPTIVEA - francenum.gouv.fr",
+      "url": "https://www.francenum.gouv.fr/activateurs/captivea",
+      "snippet": "3 days ago · Captivea est un intégrateur certifié Gold Partner d’Odoo, spécialisé dans la mise en œuvre de solutions ERP sur …"
+    },
+    {
+      "title": "Société CAPTIVEA : Chiffre d'affaires, statuts, extrait d ... - Pappers",
+      "url": "https://www.pappers.fr/entreprise/captivea-501030811",
+      "snippet": "Aug 2, 2022 · CAPTIVEA à CHAMBERY (73000) : Bilans, statuts, chiffre d'affaires, dirigeants, actionnaires, levées de fonds, …"
+    },
+    {
+      "title": "Captivea - Odoo",
+      "url": "https://www.odoo.com/fr_FR/customers/captivea-351158?msockid=0c0743b6f00c6ebc2a885badf12c6f80",
+      "snippet": "Elle gère la communication de plus de 2000 points de vente pour 20 grandes enseignes en France, avec une équipe de 25 …"
+    }
+  ]
+}

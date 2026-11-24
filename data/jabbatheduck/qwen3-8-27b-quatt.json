@@ -9,7 +9,7 @@
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
-  "library": null,
+  "library": "basalt",
   "languages": [],
   "tags": [
     "basalt",

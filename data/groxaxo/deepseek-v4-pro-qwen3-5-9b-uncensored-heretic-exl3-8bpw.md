@@ -2,92 +2,100 @@
 
 ## Resumen
 
-Esta ficha describe una cuantizacion EXL3 del modelo `xtools-at/DeepSeek-V4-Pro-Qwen3.5-9B-UNCENSORED-heretic`, publicada por el usuario groxaxo bajo licencia Apache-2.0. No se trata de un modelo entrenado desde cero, sino de una conversion de pesos orientada a inferencia eficiente con ExLlamaV3: los pesos lineales principales se almacenan a 8 bits por peso (bpw) como objetivo, con un head de salida tambien a 8 bits, la torre de vision a 6 bits y las capas MTP a 4 bits, mientras que los embeddings de tokens se mantienen en BF16.
+Esta ficha describe una cuantización EXL3 a 8 bits por peso del modelo `xtools-at/DeepSeek-V4-Pro-Qwen3.5-9B-UNCENSORED-heretic`, publicada por el usuario groxaxo. No se trata de un modelo original, sino de una conversión de pesos pensada para su uso con ExLlamaV3 y backends compatibles como TabbyAPI. El nombre comercial mezcla referencias a DeepSeek-V4-Pro y Qwen3.5, pero la arquitectura real declarada en las etiquetas es `qwen3_5`, y el recuento efectivo de parámetros en los tensores safetensors es de 5.336.124.800 (aproximadamente 5,3 mil millones), muy por debajo de los 9B que sugiere el identificador.
 
-El modelo base declara una arquitectura de la familia Qwen 3.5 (tag `qwen3_5`) con 5.336.124.800 parametros reales segun los safetensors del repositorio, pese a que el nombre comercial del checkpoint indica "9B". El repositorio ocupa 10,7 GB y contiene 10.672.495.208 bytes de pesos, coherente con un esquema de cuantizacion mixto que supera la estimacion uniforme de 8 bits por la sobrecarga de embeddings, escalas y metadatos.
+El modelo base es una variante "uncensored" y "heretic", lo que en la práctica indica que se ha aplicado algún proceso de eliminación o atenuación de rechazos y alineamiento de seguridad sobre un modelo Qwen 3.5. La cuantización EXL3 preserva la plantilla de chat y el tokenizador originales, e incluye componentes adicionales (torre de visión y capas MTP) cuantizados a menor precisión. El repositorio ocupa 10,7 GB, con un archivo de pesos de 10.672.495.208 bytes.
 
-La relevancia de esta publicacion es practica: ofrece un artefacto listo para servir con ExLlamaV3 o TabbyAPI, con plantilla de chat y tokenizer originales preservados, y con trazabilidad de la revision de origen (`e4bfa83c...`) y de los argumentos del conversor (1.6.6, codebook `mul1`, calibracion de 250 filas x 2048 tokens). No incluye resultados de benchmarks propios ni validacion de la ventana de contexto completa, la torre de vision o las capas MTP.
+La relevancia de esta ficha es doble: por un lado, documenta un artefacto de cuantización con métricas de divergencia KL y pruebas de generación de código reproducibles; por otro, advierte de la ambigüedad del etiquetado del modelo base y de la falta de información pública sobre idiomas, benchmarks estándar y detalles de entrenamiento. Es un artefacto orientado a experimentación local en GPUs de consumo, no a despliegues de producción sin validación previa.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer de la familia Qwen 3.5 (tag `qwen3_5`), con torre de vision y capas MTP segun la model card del conversor |
-| Parametros totales | 5.336.124.800 (segun safetensors del repo) |
-| Parametros activos | no disponible (no se declara MoE) |
-| Longitud de contexto | no disponible (la model card indica que la cuantizacion no altera el limite configurado de la arquitectura, pero no se explicita la cifra) |
-| Tipos de cuantizacion | EXL3: pesos lineales principales a 8 bpw, head a 8 bits, vision a 6 bits, MTP a 4 bits, embeddings en BF16; codebook `mul1`; escalas automaticas; KV cache Q8 en las pruebas locales |
+| Arquitectura | Transformer denso de la familia Qwen 3.5 (etiqueta `qwen3_5`); incluye torre de visión y capas MTP segun la model card |
+| Parametros totales | 5.336.124.800 (recuento real en safetensors); el identificador indica 9B, no confirmado |
+| Parametros activos | no disponible (no es MoE segun la informacion disponible) |
+| Longitud de contexto | 131.072 tokens (limite de servidor/cache usado en la evaluacion); limite nativo configurado no confirmado |
+| Tipos de cuantizacion | EXL3 8 bpw en pesos lineales principales; cabeza de salida 8 bits; torre de vision 6 bits; capas MTP 4 bits; embeddings en BF16 |
 | Idiomas soportados | no disponible |
-| Licencia | Apache-2.0 |
-| Formato de pesos | safetensors (ExLlamaV3 / EXL3), 10.672.495.208 bytes |
+| Licencia | apache-2.0 |
+| Formato de pesos | safetensors (EXL3, libreria `exllamav3`) |
 
 ## Arquitectura y entrenamiento
 
-La informacion disponible no describe el entrenamiento del modelo base: la model card de esta cuantizacion remite explicitamente a la model card upstream y senala que sus afirmaciones sobre entrenamiento, destilacion y rendimiento son "claims" del autor original, no verificados por esta conversion. Lo unico documentado a nivel tecnico es el proceso de cuantizacion: conversor ExLlamaV3 1.6.6, codebook `mul1`, calibracion con un corpus empaquetado de 250 filas x 2048 tokens y escalas de salida en modo automatico.
+La informacion disponible no describe el entrenamiento del modelo base: no se indican numero de tokens, composicion del dataset, ni si hubo RLHF, DPO u otras fases de alineamiento. Lo que si se detalla es el proceso de cuantizacion. Se aplico el conversor ExLlamaV3 1.6.6 sobre la revision `e4bfa83c72896cbb4990c909967d6f27bb97bac4` del modelo base, sin adaptador LoRA, con codebook `mul1` y calibracion sobre un corpus empaquetado de 250 filas de 2048 tokens. Los pesos lineales principales se cuantizaron a 8 bits por peso, mientras que embeddings se mantuvieron en BF16 y la cabeza de salida, la torre de vision y las capas MTP recibieron precisiones diferenciadas (8, 6 y 4 bits respectivamente).
 
-El checkpoint base se presenta como un modelo de la familia Qwen 3.5 con componentes adicionales: una torre de vision (cuantizada a 6 bits) y capas MTP (multi-token prediction, a 4 bits). El nombre del repositorio sugiere una ascendencia que incluye `Jackrong/DeepSeek-V4-Pro-Qwen3.5-9B`, es decir, un modelo Qwen 3.5 de ~9B (nominal) adaptado o fusionado con pesos asociados a DeepSeek-V4-Pro. No se dispone de datos sobre numero de tokens de entrenamiento, composicion del dataset, uso de RLHF/DPO ni innovaciones de atencion mas alla de lo que implica la etiqueta `qwen3_5`. El sufijo "UNCENSORED-heretic" indica un ajuste orientado a eliminar rechazos de contenido, sin que se documenten los metodos concretos empleados.
+El resultado es un artefacto de 10,7 GB, superior a lo que cabria esperar de una cuantizacion uniforme a 8 bits, porque escalas, metadatos, embeddings y componentes auxiliares se almacenan aparte. La model card indica que la cuantizacion no altera el limite de contexto configurado de la arquitectura, pero el consumo de memoria depende de la longitud de contexto y de que componentes se carguen. Se conservan el tokenizador y la plantilla de chat originales, y se incluye un archivo `conversion.json` con el pin de origen, sumas de comprobacion de tensores y argumentos reproducibles del conversor.
 
 ## Capacidades
 
-- Generacion de texto conversacional y continuacion de texto, segun el pipeline declarado (`text-generation`) y la plantilla de chat original preservada.
-- Razonamiento y codigo: capacidad inferida del linaje Qwen 3.5, no verificada por benchmarks en la informacion disponible.
-- Vision: el checkpoint incluye una torre de vision cuantizada a 6 bits, aunque la model card advierte que las pruebas de humo no validan dicha torre.
-- Prediccion multi-token (MTP): presente como capas cuantizadas a 4 bits, sin validacion documentada.
-- Tool calling / function calling: no disponible en la informacion proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
-- Capacidades multilingues: no disponibles; el campo de idiomas del repositorio esta vacio.
-- Modo "uncensored": el ajuste heretic del modelo base busca reducir rechazos, pero no se documenta su alcance ni su metodologia.
-- Thinking mode: no disponible en la informacion proporcionada.
+- Generacion de texto conversacional y de codigo, segun las pruebas recogidas en la model card (ejercicios de HumanEval y TerminalBench).
+- Modo "thinking" activado mediante la plantilla de chat original, usado en la evaluacion con temperatura 0,6, top-p 0,95 y top-k 20.
+- Soporte de tool calling y uso agentico a traves de OpenCode en modo automatico, con permisos de herramientas habilitados.
+- Componentes de vision presentes en el checkpoint (torre de vision cuantizada a 6 bits), aunque no se han validado en la evaluacion publicada.
+- Capas MTP (multi-token prediction) incluidas en el checkpoint, cuantizadas a 4 bits, sin evaluacion publicada de su funcionamiento.
+- Capacidades multilingues: no disponibles en la informacion proporcionada.
+- Al ser una variante "uncensored/heretic", se espera una menor tasa de rechazos ante peticiones sensibles, aunque este comportamiento no se cuantifica en la model card.
 
 ## Casos de uso
 
-- Despliegue local de chat con ExLlamaV3 o TabbyAPI: cargar la carpeta directamente con ExLlamaV3 1.6.6 permite servir un asistente conversacional en una unica GPU, usando la plantilla de chat original incluida y KV cache Q8.
-- Prototipado de asistentes sin filtros editoriales: el ajuste "heretic" del modelo base lo hace adecuado para entornos de investigacion donde se necesita estudiar el comportamiento del modelo ante prompts que otros checkpoints rechazan, siempre con las salvaguardas externas oportunas.
-- Experimentacion con cuantizacion mixta: util para evaluar el impacto de 8 bpw en pesos lineales frente a 6 bits en vision y 4 bits en MTP, comparando calidad y uso de memoria con el checkpoint BF16 de origen.
-- Generacion de texto por lotes en pipelines offline: el formato EXL3 y el backend ExLlamaV3 permiten throughput alto en tareas de continuacion de texto, resumen o clasificacion generativa sobre corpus grandes.
-- Evaluacion de linajes Qwen 3.5 fusionados: sirve como artefacto reproducible (revision fijada, `conversion.json` con checksums) para estudiar el comportamiento de modelos Qwen 3.5 con pesos de otras familias.
-- Banco de pruebas de vision en modelos cuantizados: permite medir la degradacion de la torre de vision a 6 bits frente al original, aunque requiere validacion adicional porque la model card no la cubre.
+- Experimentacion local con modelos sin filtros de seguridad: util para investigadores que estudian el comportamiento de modelos "uncensored" y comparan tasas de rechazo frente al modelo base alineado, cargando el checkpoint con ExLlamaV3 o TabbyAPI.
+- Generacion de codigo asistida en entornos controlados: la evaluacion con OpenCode sobre ejercicios de HumanEval y TerminalBench demuestra que el modelo puede operar como agente de codigo con tool calling, aunque con una tasa de exito estricta de 5/10 en la muestra evaluada.
+- Pruebas de cuantizacion y analisis de fidelidad: el repositorio incluye metricas de divergencia KL frente al checkpoint BF16 de referencia, lo que lo convierte en un caso de estudio para medir el impacto de EXL3 a 8 bpw sobre 248.077 tokens de vocabulario.
+- Despliegue en GPU de consumo para prototipos: con 10,7 GB de pesos y cuantizacion EXL3, cabe en GPUs de 12 GB como la RTX 3060 usada en las pruebas, con cache KV en Q8 y contexto limitado.
+- Evaluacion de pipelines agenticos: sirve para probar integraciones con OpenCode u otros entornos agenticos que requieran plantilla de chat con thinking y presupuestos de contexto configurables (80.000 tokens en la evaluacion).
+- Investigacion sobre sesgos y seguridad: al ser una variante "heretic", permite analizar que tipos de contenido se generan sin rechazo y documentar riesgos antes de cualquier uso supervisado.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card solo menciona pruebas de humo (`smoke-test.json`) de generacion de texto corta y determinista, que el propio autor aclara que no constituyen un benchmark de codigo ni validan la ventana de contexto completa, la torre de vision ni las capas MTP.
+La model card no incluye benchmarks estandar como MMLU, GSM8K o HumanEval en formato clasico. Proporciona, en cambio, metricas de fidelidad de cuantizacion y una prueba agentica acotada:
+
+| Metrica | 8 bpw | 6 bpw | 5 bpw |
+|---|---:|---:|---:|
+| KL media (nats, menor es mejor) | 0,000132 | 0,001128 | 0,003654 |
+| Acuerdo top-1 con referencia | 99,54% | 98,38% | 97,74% |
+| Aprobados estrictos (10 ejercicios) | 5/10 | 5/10 | 5/10 |
+| Tokens de generacion por segundo | 34,9 | 42,4 | 44,7 |
+| Minutos en tarea principal | 45,4 | 47,7 | 42,1 |
+| Tokens de finalizacion reportados | 76.995 | 76.971 | 71.721 |
+
+La divergencia KL se midio en nats a temperatura 1 sobre el vocabulario completo de 248.077 tokens, sin truncamiento top-k, comparando contra el checkpoint BF16 original cargado en el runtime FP16 de ExLlamaV3. La sonda cubrio 8.192 posiciones de siguiente token: 4.096 de prosa de WikiText-2 raw test y 4.096 de codigo Python de HumanEval. Las pruebas de correccion usaron OpenCode v2.2.7 en modo automatico sobre los ejercicios HumanEval 1, 6, 32, 39, 76, 99, 101, 132, 141 y el ejercicio `pytorch-model-cli` de TerminalBench, con un grader reconstruido no certificado. Las mediciones son ejecuciones unicas sobre una RTX 3060 de 12 GB compartida, por lo que no deben interpretarse como benchmarks generales.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: el repositorio pesa 10,7 GB en disco; con KV cache Q8 y contexto moderado, se puede estimar un consumo en torno a 11-13 GB de VRAM, aunque la cifra exacta depende de la longitud de contexto y de que componentes se carguen (la model card lo indica explicitamente).
-- GPU recomendadas: RTX 4090 (24 GB) o RTX 3090 (24 GB) para contexto moderado; A100 40/80 GB o H100 para contextos largos y mayor concurrencia.
-- Cabe en GPU de consumo: si, en tarjetas con 16 GB o mas, siempre que se limite el contexto y la KV cache; en 12 GB el margen es muy ajustado.
-- Opciones de despliegue: ExLlamaV3 1.6.6 (libreria declarada) y backends compatibles como TabbyAPI. No se declara compatibilidad con vLLM, llama.cpp, Ollama ni TGI.
-- Latencia y throughput: no disponibles en la informacion proporcionada.
+- VRAM estimada: los pesos ocupan 10.672.495.208 bytes (unos 10,7 GB); con cache KV en Q8 y contexto moderado, se necesita una GPU de al menos 12 GB para inferencia basica.
+- GPU recomendadas: RTX 3060 12 GB (usada en la evaluacion), RTX 4070 Ti / 4080 / 4090 para mayor margen de contexto, y A100 o H100 para contextos largos cercanos a 131.072 tokens.
+- Cabe en GPU de consumo: si, en modelos con 12 GB o mas, siempre que se limite el contexto y se gestione la cache KV.
+- Opciones de despliegue: ExLlamaV3 1.6.6 o backends compatibles como TabbyAPI; no se mencionan vLLM, llama.cpp, Ollama ni TGI para este formato EXL3.
+- Latencia y throughput: 34,9 tokens/s de generacion a 8 bpw en una RTX 3060 12 GB compartida, con batch size 1 y chunk size 512; las variantes de menor precision alcanzan 42,4 y 44,7 tokens/s.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Formato / cuantizacion | Licencia | Notas |
+| Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| groxaxo/DeepSeek-V4-Pro-Qwen3.5-9B-UNCENSORED-heretic-EXL3-8bpw | 5.336.124.800 | no disponible | EXL3 safetensors, 8 bpw mixto | Apache-2.0 | Objeto de esta ficha; 0 descargas y 0 likes en el momento de la consulta |
-| xtools-at/DeepSeek-V4-Pro-Qwen3.5-9B-UNCENSORED-heretic | no disponible | no disponible | Pesos originales (BF16 presumiblemente) | Apache-2.0 (declarada) | Modelo base de esta cuantizacion; referencia para comparar calidad |
-| Jackrong/DeepSeek-V4-Pro-Qwen3.5-9B | no disponible | no disponible | no disponible | no disponible | Ascendencia del modelo base segun la model card |
+| Este artefacto (EXL3 8 bpw) | 5,34B reales | 131.072 configurado | EXL3 8 bpw | apache-2.0 | Hugging Face, 337 descargas |
+| Modelo base `xtools-at/DeepSeek-V4-Pro-Qwen3.5-9B-UNCENSORED-heretic` | no confirmado (etiqueta 9B) | no disponible | BF16 original | no disponible en esta ficha | Hugging Face |
+| Variantes EXL3 6 bpw y 5 bpw del mismo autor | 5,34B reales | 131.072 configurado | EXL3 6 y 5 bpw | apache-2.0 | Hugging Face |
+| Qwen 3.5 9B (familia de referencia) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
-No se dispone de datos de rendimiento comparado entre estas variantes en la informacion proporcionada.
+No se dispone de datos de benchmarks comparables con alternativas de la misma categoria en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- El nombre comercial "9B" no coincide con los 5.336.124.800 parametros reales del repositorio; conviene usar la cifra de safetensors para planificar memoria.
-- La model card advierte que las afirmaciones de entrenamiento, destilacion y rendimiento del modelo upstream no han sido verificadas por el autor de la cuantizacion.
-- Las pruebas de humo no validan la ventana de contexto completa, la torre de vision ni las capas MTP; no hay garantia de que estos componentes funcionen correctamente tras la cuantizacion.
-- El ajuste "UNCENSORED-heretic" reduce los rechazos del modelo base, lo que implica un riesgo elevado de generar contenido inapropiado o danino; requiere filtros y politicas de uso externas en cualquier despliegue real.
-- Riesgo de alucinacion no cuantificado: no hay benchmarks ni evaluaciones de fidelidad publicadas.
-- Idiomas soportados no declarados; no se puede asumir un rendimiento multilingue concreto.
-- La licencia Apache-2.0 permite uso comercial, pero se hereda del modelo upstream y no cubre posibles reclamaciones sobre los datos de entrenamiento originales.
-- El repositorio tiene 0 descargas y 0 likes, sin senales de validacion por parte de la comunidad.
-- El formato EXL3 limita el despliegue a ExLlamaV3 y backends compatibles; no es portable a llama.cpp, Ollama o vLLM sin reconversion.
-- La fecha de creacion del repositorio (2026-11-11) es posterior a la de la mayoria de checkpoints publicos; conviene verificar la integridad de los pesos antes de usarlos en produccion.
+- El identificador del modelo sugiere 9B parametros, pero el recuento real en safetensors es de 5,34B; el etiquetado puede inducir a error sobre el tamano y el rendimiento esperado.
+- El nombre mezcla referencias a DeepSeek-V4-Pro y Qwen3.5; la arquitectura declarada es `qwen3_5`, pero no hay documentacion publica que aclare el origen exacto del modelo base.
+- La variante "uncensored/heretic" implica una reduccion deliberada de filtros de seguridad; no es adecuada para aplicaciones orientadas al publico sin moderacion adicional.
+- La evaluacion de codigo se limita a 10 ejercicios con un grader reconstruido no certificado; una tasa de 5/10 no permite extrapolar correccion general.
+- La sonda KL cubre solo contexto corto (513 tokens de entrada) y no evalua contexto largo, vision ni MTP; los resultados no garantizan fidelidad en ventanas de 131.072 tokens.
+- No hay informacion sobre idiomas soportados, sesgos conocidos ni datos de entrenamiento; el riesgo de alucinacion no esta cuantificado.
+- La licencia apache-2.0 se hereda del artefacto de cuantizacion, pero no se confirma que el modelo base tenga la misma licencia ni que su uso comercial este permitido.
+- El formato EXL3 requiere ExLlamaV3 1.6.6 o compatible; no es portable a otros runtimes sin reconversion.
+- Las mediciones de rendimiento provienen de una unica ejecucion en una GPU compartida, por lo que la variabilidad puede ser alta.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/groxaxo/DeepSeek-V4-Pro-Qwen3.5-9B-UNCENSORED-heretic-EXL3-8bpw
-- Modelo base: https://huggingface.co/xtools-at/DeepSeek-V4-Pro-Qwen3.5-9B-UNCENSORED-heretic
-- Revision del modelo base citada: https://huggingface.co/xtools-at/DeepSeek-V4-Pro-Qwen3.5-9B-UNCENSORED-heretic/tree/e4bfa83c72896cbb4990c909967d6f27bb97bac4
-- Ascendencia declarada: https://huggingface.co/Jackrong/DeepSeek-V4-Pro-Qwen3.5-9B
-- ExLlamaV3 (libreria de inferencia): no se proporciona enlace en la informacion disponible
-- TabbyAPI (backend compatible): no se proporciona enlace en la informacion disponible
+- Modelo base: https://huggingface.co/xtools-at/DeepSeek-V4-Pro-Qwen3.5-9B-UNCENSORED-heretic/tree/e4bfa83c72896cbb4990c909967d6f27bb97bac4
+- Manifiesto KL (referenciado en la model card): `evaluation/kl-manifest.json` dentro del repositorio
+- Archivo de conversion: `conversion.json` dentro del repositorio
+- Pruebas de humo: `smoke-test.json` dentro del repositorio, si esta presente

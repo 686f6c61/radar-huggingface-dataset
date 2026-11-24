@@ -2,84 +2,99 @@
 
 ## Resumen
 
-WILLAY es un adaptador LoRA (PEFT) desarrollado por SZL Holdings sobre el modelo base Qwen/Qwen2.5-0.5B-Instruct. Su propósito no es ser un asistente general, sino actuar como una "voz de identidad" (estate voice) que sigue la doctrina interna de la empresa: un modelo de 0.5B que sabe qué afirmaciones puede hacer SZL y cuáles debe rechazar. El nombre proviene del quechua *willay* ("contar, decir") y refleja su función de portavoz doctrinal.
+WILLAY es un modelo de generación de texto publicado por SZLHOLDINGS dentro de su catálogo de artefactos de IA gobernada ("governed-AI estate"). Se trata de un ajuste fino del modelo base Qwen/Qwen2.5-0.5B-Instruct, distribuido en formato safetensors y con licencia Apache 2.0. El repositorio ocupa 2,0 GB y acumula 338 descargas y 1 like en el momento de la consulta.
 
-El adaptador se entrenó mediante fine-tuning supervisado (SFT) con la librería TRL sobre un dataset propio llamado `szl-1-doctrine-sft`. Su objetivo principal es evitar que el modelo infle métricas (por ejemplo, contar teoremas de Lean) o presente formatos como GGUF como si fueran pesos firmados. Es un ejemplo de gobernanza de IA aplicada a la identidad corporativa, con un enfoque de "boca de doctrina" en lugar de un asistente conversacional genérico.
+Con 494.032.768 parámetros totales, el modelo se sitúa en la gama ultracompacta de la familia Qwen2.5. La librería declarada es PEFT, lo que indica que el artefacto publicado probablemente incorpora pesos derivados de un entrenamiento con adaptadores (LoRA u otra técnica de ajuste eficiente), aunque la model card no detalla la configuración exacta ni el proceso de fusión de pesos.
 
-El repositorio contiene dos adaptadores LoRA con configuraciones distintas (repo raíz y subcarpeta `adapter-unsloth/`), ambos sobre el mismo modelo base pero con diferentes rangos y módulos objetivo. No se han publicado resultados de evaluación para ninguno de ellos.
+La relevancia de WILLAY es limitada y muy específica: no compite en capacidades generales con modelos de su categoría, sino que se presenta como un artefacto trazable dentro de una infraestructura de auditoría ("receipts", snapshots fechados, SVG deterministas). Su interés principal es el de un caso de estudio sobre gobernanza y reproducibilidad de artefactos, más que el de un modelo de propósito general para producción.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Qwen2.5-0.5B-Instruct (base) + adaptador LoRA (PEFT) |
-| Parametros totales | 0.5B (modelo base) + adaptador: 4.3 MB (repo raíz) o 17.6 MB (`adapter-unsloth/`) |
-| Parametros activos | No aplica (no es MoE) |
-| Longitud de contexto | No especificada en la documentacion del adaptador; heredada del modelo base Qwen2.5-0.5B-Instruct |
-| Tipos de cuantizacion | No aplica directamente (adaptador); el modelo base admite cuantizacion estandar (p. ej. bitsandbytes) |
-| Idiomas soportados | No disponibles |
-| Licencia | Apache-2.0 |
-| Formato de pesos | safetensors (PEFT) |
+| Arquitectura | Transformer decoder-only (derivada de Qwen2; familia Qwen2.5) |
+| Parametros totales | 494.032.768 |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible en la informacion proporcionada (el modelo base Qwen2.5-0.5B-Instruct soporta 32.768 tokens, pero no se confirma para este ajuste) |
+| Tipos de cuantizacion | no disponible (repo en safetensors; no se publican GGUF ni cuantizaciones) |
+| Idiomas soportados | no disponible |
+| Licencia | apache-2.0 |
+| Formato de pesos | safetensors |
+| Libreria | peft |
+| Modelo base | Qwen/Qwen2.5-0.5B-Instruct |
+| Tamano del repositorio | 2,0 GB |
+| Pipeline | text-generation |
+| Descargas / likes | 338 / 1 |
 
 ## Arquitectura y entrenamiento
 
-WILLAY es un adaptador LoRA, no un checkpoint completo. Se entrena sobre Qwen2.5-0.5B-Instruct, un modelo transformer causal de 0.5B parámetros. El entrenamiento se realizó con SFT (supervised fine-tuning) usando la librería TRL de Hugging Face, sobre el dataset `szl-1-doctrine-sft`. No se han publicado detalles sobre el número de tokens, la composición del dataset ni si se aplicaron técnicas adicionales como RLHF o DPO.
+La arquitectura subyacente es la de Qwen2.5-0.5B-Instruct: un transformer decoder-only con atención causal estándar, normalización RMSNorm, embeddings RoPE y capas MLP con activación SwiGLU. No se trata de un modelo MoE ni de una arquitectura híbrida SSM. El tamaño de 494 millones de parámetros coincide con el del checkpoint base, lo que sugiere que el ajuste no alteró la topología de la red.
 
-El repositorio incluye dos variantes de adaptador:
-
-- **Repo raíz**: r=16, alpha=32, módulos objetivo `q_proj` y `v_proj`, pesos de 4.3 MB.
-- **`adapter-unsloth/`**: r=8, alpha=16, módulos objetivo `q_proj`, `k_proj`, `v_proj`, `o_proj`, `gate_proj`, `up_proj`, `down_proj`, pesos de 17.6 MB.
-
-Ambos adaptadores se entrenaron contra bases distintas (el repo raíz contra `Qwen/Qwen2.5-0.5B-Instruct` y la variante Unsloth contra `unsloth/qwen2.5-0.5b-instruct-unsloth-bnb-4bit`). La card advierte explícitamente que no son intercambiables y que emparejarlos con la base incorrecta produce un modelo que carga y genera, pero no es el que se entrenó.
+No se dispone de información sobre el volumen de tokens de entrenamiento, la composición del dataset, ni sobre si se aplicaron fases de RLHF, DPO o preferencia. La model card declara explícitamente que cualquier afirmación de entrenamiento o evaluación reside en ficheros de "receipts" del ecosistema del autor, y que lo no documentado allí se etiqueta como UNKNOWN. La librería PEFT indica uso de adaptadores, pero se desconoce si los pesos publicados son adaptadores sin fusionar o el modelo completo tras la fusión.
 
 ## Capacidades
 
-- Generación de texto conversacional siguiendo la doctrina de SZL Holdings.
-- Rechazo de afirmaciones no verificadas o infladas (por ejemplo, no contar teoremas de Lean sin evidencia, no presentar GGUF como pesos firmados).
-- Comportamiento de "boca de doctrina": responde según las directrices de la empresa, no como un asistente general.
-- No se documentan capacidades de tool calling, agentes, razonamiento multi-paso, visión ni audio.
-- El modelo base (Qwen2.5-0.5B-Instruct) tiene capacidades multilingües limitadas, pero la card no especifica idiomas soportados para el adaptador.
+- Generación de texto conversacional e instructiva heredada del modelo base Qwen2.5-0.5B-Instruct.
+- Razonamiento básico y respuesta a instrucciones de complejidad baja; el tamaño de 0,5B limita el razonamiento multi-paso.
+- Generación de código y matemáticas elementales, con fiabilidad limitada por la escala del modelo.
+- Soporte de tool calling y function calling: no confirmado para este artefacto concreto; el modelo base lo soporta de forma parcial.
+- Capacidades de agente y razonamiento multi-paso: no confirmadas; el tamaño del modelo hace poco realista un uso agéntico fiable.
+- Capacidades multilingües: no disponibles en la información proporcionada.
+- Modo "thinking", visión o audio: no disponibles; es un modelo exclusivamente de texto.
+- Trazabilidad de artefacto: la model card incorpora gráficos SVG deterministas generados a partir de un snapshot de auditoría fechado (2026-11-20T03:48:04Z).
 
 ## Casos de uso
 
-- **Voz oficial de la empresa en canales automatizados**: WILLAY puede gestionar respuestas en chatbots o sistemas de atención al cliente donde se requiera que el mensaje se ajuste estrictamente a la doctrina corporativa, evitando promesas o cifras no verificadas.
-- **Filtro de contenido antes de publicación**: integrado en un pipeline de revisión, el modelo puede marcar o rechazar textos que contengan afirmaciones no autorizadas sobre la empresa (por ejemplo, métricas de Lean o formatos de pesos).
-- **Entrenamiento de otros modelos**: al ser un adaptador pequeño, puede usarse como referencia o semilla para fine-tuning de modelos más grandes que deban seguir las mismas directrices de identidad.
-- **Experimentación en gobernanza de IA**: sirve como caso de estudio para implementar "constituciones" o doctrinas en modelos de lenguaje, especialmente en entornos de investigación sobre alineación y control de agentes.
-- **Integración en sistemas de soporte con preguntas frecuentes**: puede responder consultas sobre la empresa, sus productos o su postura oficial, siempre dentro de los límites definidos por la doctrina.
-- **Demostración de adaptadores PEFT**: útil para desarrolladores que quieran ver cómo se aplica un LoRA de identidad sobre un modelo base pequeño, con código de ejemplo en la documentación.
+- Clasificación y etiquetado de texto a pequeña escala: el modelo cabe en CPU o en GPU de gama baja y puede procesar lotes de textos cortos para tareas de categorización, con la ventaja de un coste de inferencia mínimo.
+- Prototipado rápido de asistentes conversacionales: sirve para validar flujos de diálogo multi-turno en entornos de desarrollo antes de migrar a un modelo mayor, gracias a su reducido requisito de memoria.
+- Generación de respuestas en entornos con recursos restringidos: despliegue en dispositivos edge o contenedores sin GPU dedicada, donde un modelo de 0,5B es viable en cuantización de 8 o 4 bits.
+- Filtrado y preprocesado en pipelines de datos: resumen extractivo o reformateo de registros antes de pasarlos a un modelo de mayor tamaño, actuando como etapa barata de normalización.
+- Evaluación de infraestructura de gobernanza: caso de prueba para verificar flujos de auditoría, versionado de artefactos y reproducción de snapshots dentro del ecosistema SZLHOLDINGS.
+- Educación y experimentación con PEFT: al estar publicado con la librería peft y un modelo base conocido, resulta útil para estudiar cómo se empaquetan y distribuyen adaptadores sobre Qwen2.5.
+- Generación de texto auxiliar en aplicaciones de bajo riesgo: borradores, plantillas o variaciones de copy donde los errores se revisan manualmente y no hay consecuencias críticas.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card indica explícitamente: "No evaluation numbers exist for this model" y "evals: none-this-run". No se debe citar WILLAY como evidencia de rendimiento en adherencia a doctrina hasta que exista una evaluación con datos reservados.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card declara explícitamente que no se afirma ningún número de benchmark más allá de lo medido en una auditoría fechada, y que los datos no presentes se etiquetan como UNKNOWN. No se dispone de resultados de MMLU, HumanEval, GSM8K ni de comparativas medidas para este artefacto.
 
 ## Requisitos de hardware
 
-- **VRAM estimada**: el modelo base Qwen2.5-0.5B-Instruct ocupa aproximadamente 1 GB en FP16; con cuantización (p. ej. 4 bits) puede reducirse a ~0.3-0.5 GB. El adaptador añade solo unos pocos MB.
-- **GPU recomendadas**: cualquier GPU con al menos 2 GB de VRAM es suficiente; también puede ejecutarse en CPU para inferencia de baja latencia.
-- **Compatibilidad con GPU de consumo**: sí, cabe en tarjetas como GTX 1060, RTX 2060, RTX 3060, etc.
-- **Opciones de despliegue**: al ser un adaptador PEFT, se carga con `transformers` + `peft` (ver ejemplo en la documentación). No se menciona soporte directo en vLLM, Ollama o TGI para este adaptador específico; habría que fusionar los pesos o usar la integración LoRA de vLLM si es compatible.
-- **Latencia y throughput**: al ser un modelo de 0.5B, la generación es rápida (del orden de decenas de tokens por segundo en GPU moderna), pero no se proporcionan cifras oficiales.
+- VRAM estimada para inferencia en fp16/bf16: aproximadamente 1 GB solo para pesos (494M parámetros × 2 bytes), más overhead de activaciones y caché KV; en la práctica, alrededor de 1,5-2 GB.
+- VRAM estimada en cuantización de 8 bits: en torno a 0,5-0,7 GB para pesos.
+- VRAM estimada en cuantización de 4 bits: en torno a 0,3-0,4 GB para pesos.
+- GPU recomendadas: cualquier GPU consumer moderna es suficiente; RTX 3060, RTX 4060, RTX 4090 o superiores no suponen ninguna restricción. También es viable en CPU.
+- Cabe holgadamente en GPU consumer, incluidos portátiles con 4-6 GB de VRAM, e incluso en placas integradas con suficiente memoria compartida.
+- Opciones de despliegue: transformers con PEFT para cargar el artefacto tal cual; vLLM y TGI para servir en GPU; llama.cpp u Ollama requerirían conversión previa a GGUF, que no se distribuye en el repositorio.
+- Latencia y throughput: no disponibles. Por escala, se espera un throughput alto en GPU (cientos de tokens por segundo en lotes), pero no hay mediciones publicadas que lo confirmen.
 
 ## Comparativa con modelos similares
 
-No se dispone de información sobre modelos comparables directos. WILLAY es un adaptador de identidad único, sin equivalentes documentados en la misma categoría. Como referencia, se puede comparar con el modelo base sin adaptar (Qwen2.5-0.5B-Instruct), que ofrece capacidades generales de conversación pero sin las restricciones doctrinales. No hay datos de rendimiento para establecer una comparación cuantitativa.
+| Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
+|---|---|---|---|---|---|
+| SZLHOLDINGS/WILLAY | 494M | no disponible | Apache 2.0 | Hugging Face, safetensors + PEFT | Ajuste de Qwen2.5-0.5B-Instruct con énfasis en trazabilidad |
+| Qwen/Qwen2.5-0.5B-Instruct | 494M | 32.768 tokens | Apache 2.0 | Hugging Face, safetensors y GGUF | Modelo base; documentación completa y benchmarks publicados |
+| Qwen/Qwen2.5-1.5B-Instruct | 1,54B | 32.768 tokens | Apache 2.0 | Hugging Face, safetensors y GGUF | Misma familia, mayor capacidad a costa de más VRAM |
+| meta-llama/Llama-3.2-1B-Instruct | 1,24B | 128.000 tokens | Llama 3.2 Community License | Hugging Face, safetensors y GGUF | Contexto mucho mayor; licencia con restricciones de uso |
+
+La comparación directa más pertinente es con el propio modelo base: WILLAY no documenta mejoras medibles sobre Qwen2.5-0.5B-Instruct, por lo que la elección entre ambos depende de si se necesita el empaquetado PEFT y la infraestructura de auditoría del autor, o bien la documentación y el soporte de cuantizaciones del modelo original.
 
 ## Limitaciones y advertencias
 
-- **Es un adaptador, no un modelo completo**: no incluye `config.json`; requiere cargar el modelo base declarado y aplicar el adaptador con PEFT. Cargar el repo directamente con `AutoModelForCausalLM.from_pretrained` fallará.
-- **Dos adaptadores con bases distintas**: emparejar el adaptador equivocado con la base incorrecta produce un modelo que carga y genera, pero no es el entrenado. La card lo advierte explícitamente.
-- **Sin evaluación**: no hay ningún benchmark ni métrica de calidad publicada. No se debe utilizar como evidencia de rendimiento en tareas de adherencia a doctrina.
-- **Alcance limitado**: no es un asistente general; su uso previsto es exclusivamente como voz de identidad de SZL Holdings. Fuera de ese contexto, su utilidad es muy reducida.
-- **Sesgos del modelo base**: al ser un fine-tuning sobre Qwen2.5-0.5B-Instruct, hereda los sesgos y limitaciones de ese modelo, incluyendo posibles alucinaciones y falta de conocimiento actualizado.
-- **Restricciones de licencia**: Apache-2.0 permite uso comercial, pero el modelo está diseñado para un propósito muy específico; su uso fuera de ese ámbito puede no ser apropiado.
-- **Documentación escasa**: la model card es deliberadamente breve y remite a un "atelier" externo; no hay información sobre el dataset de entrenamiento, hiperparámetros completos ni procedencia de los datos.
+- Ausencia total de benchmarks medidos: no hay evidencia publicada de que el ajuste mejore al modelo base en ninguna tarea.
+- Model card mínima: no se documentan datos de entrenamiento, hiperparámetros, composición del dataset ni proceso de alineación.
+- Idiomas no declarados: no se puede confirmar el soporte multilingüe ni el rendimiento por idioma.
+- Contexto no confirmado: aunque el modelo base soporta 32.768 tokens, no se garantiza que el ajuste conserve esa ventana.
+- Riesgo de alucinación elevado por escala: con 0,5B de parámetros, la fiabilidad factual es baja y no es apto para tareas de alta precisión sin verificación humana.
+- Sesgos: no documentados; se heredan los del modelo base y los del dataset de ajuste, que se desconoce.
+- Licencia Apache 2.0: permite uso comercial, pero el usuario asume toda la responsabilidad sobre el comportamiento del artefacto y sobre posibles obligaciones derivadas del modelo base.
+- Trazabilidad incompleta para terceros: las "receipts" referenciadas viven en el ecosistema del autor y no se incluyen en el repositorio de Hugging Face, lo que impide verificar de forma independiente las afirmaciones de la model card.
+- Popularidad muy baja (1 like, 338 descargas): no hay comunidad ni informes de terceros que validen su comportamiento en producción.
+- No se distribuyen cuantizaciones GGUF ni versiones optimizadas, lo que añade trabajo si se quiere desplegar con llama.cpp u Ollama.
 
 ## Enlaces
 
-- [Hugging Face - SZLHOLDINGS/WILLAY](https://huggingface.co/SZLHOLDINGS/WILLAY)
-- [FriendliAI - WILLAY API & Inference Endpoint](https://friendli.ai/models/SZLHOLDINGS/WILLAY)
-- [Documentación de la API de WILLAY (SZL Holdings)](https://holdings.a-11-oy.com/docs-site/developers/willay_api.html)
-- [GitHub - szl-holdings/developers (WILLAY_API.md)](https://github.com/szl-holdings/developers/blob/main/WILLAY_API.md)
-- [Developer Hub de SZL Holdings](https://holdings.a-11-oy.com/docs-site/developers/)
-- [Consola a11oy](https://a-11-oy.com/console)
+- Modelo en Hugging Face: https://huggingface.co/SZLHOLDINGS/WILLAY
+- Organización del autor: https://huggingface.co/SZLHOLDINGS
+- Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
+- Repositorio de la herramienta de generación de tarjetas: https://github.com/szl-holdings/estate-cards
+- Organización en GitHub (referenciada en la model card): https://github.com/szl-holdings

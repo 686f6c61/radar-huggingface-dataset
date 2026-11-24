@@ -1,0 +1,54 @@
+{
+  "schema": 2,
+  "id": "wiz-io/custom-code-model",
+  "slug": "wiz-io-custom-code-model",
+  "author": "wiz-io",
+  "url": "https://huggingface.co/wiz-io/custom-code-model",
+  "created_at": "2026-11-24T11:14:39.000Z",
+  "updated_at": "2026-11-24T11:16:04.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "wiz-test",
+    "custom_code",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2,
+  "parameters_human": "2",
+  "storage_bytes": 88,
+  "storage_human": "88 B",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Wiz : Cybersécurité IA pour toutes vos applications cloud et IA",
+      "url": "https://www.wiz.io/fr-fr",
+      "snippet": "Wiz relie le code, le cloud et l’exécution en une seule plateforme de cybersécurité agentique. Prévenez les risques, détectez les …Read more"
+    },
+    {
+      "title": "Wiz: AI Cybersecurity for All Your Cloud and AI Applications",
+      "url": "https://www.wiz.io/",
+      "snippet": "Wiz connects code, cloud, and runtime into one agentic cybersecurity platform. Prevent risk, detect threats, and start secure – across …Read more"
+    }
+  ]
+}

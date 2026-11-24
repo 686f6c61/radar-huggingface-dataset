@@ -2,99 +2,102 @@
 
 ## Resumen
 
-Moon-Beam-8B-A1B-tvbox-GGUF es una cuantización extrema en formato GGUF del modelo tablinum/Moon-Beam-8B-A1B-Preview, publicada por el usuario hyperionaidev dentro del proyecto smolmaxxing. El objetivo declarado no es otro que demostrar que un modelo de mezcla de expertos (MoE) de 8.000 millones de parámetros totales puede ejecutarse en hardware de consumo marginal: concretamente, en un Xiaomi TV Box S (3.ª generación) con cuatro núcleos Cortex-A55 y aproximadamente 1 GB de RAM utilizable, a 7,2 tokens por segundo en conversación real.
+Moon-Beam-8B-A1B-tvbox-GGUF es una cuantización extrema del modelo tablinum/Moon-Beam-8B-A1B-Preview, un transformer de mezcla de expertos (MoE) de 7.744 millones de parámetros totales con 128 expertos y aproximadamente 1.000 millones de parámetros activos por token. Lo publica el usuario hyperionaidev dentro del proyecto smolmaxxing, cuyo objetivo es ejecutar modelos de lenguaje en hardware de gama muy baja, en este caso una Xiaomi TV Box S de tercera generación con cuatro núcleos Cortex-A55 y aproximadamente 1 GB de RAM utilizable.
 
-El modelo base, Moon-Beam-8B-A1B, es un MoE de 128 expertos construido sobre inclusionAI Ling-3.0-tiny y combinado con la biblioteca de conocimiento recuperable de Tablinum (el "engram"). La versión aquí descrita cuantiza los expertos a Q2_K con una matriz de importancia (imatrix) derivada de muestras de Wikipedia y Project Gutenberg, mientras que el resto de componentes (atención, DeltaNet, experto compartido, embeddings y cabeza de salida) se mantienen en Q4_K. El resultado es un archivo de 2,75 GB.
+El archivo GGUF (2,75 GB) emplea expertos en Q2_K con matriz de importancia (imatrix) y el resto de componentes en Q4_K, e incorpora una cabeza de salida podada a 60.000 filas de las 157.184 originales mediante un tensor `output_ids`. El modelo base deriva de inclusionAI Ling-3.0 y se distribuye con licencia MIT.
 
-La relevancia de esta ficha es doble: por un lado, documenta una técnica de despliegue en el límite del hardware (paginación de expertos desde almacenamiento flash, enrutamiento consciente de caché y prefetch precalculado); por otro, advierte de que el archivo requiere un llama.cpp parcheado y una cabeza de salida podada a 60.000 filas, lo que rompe la compatibilidad con herramientas estándar como Ollama o LM Studio.
+Su relevancia es fundamentalmente experimental: demuestra que un MoE de 8B puede generar texto coherente a 7,2 tok/s en un dispositivo con 1 GB de RAM paginando expertos desde almacenamiento flash bajo demanda. No obstante, requiere un llama.cpp parcheado y no funciona con herramientas estándar como Ollama o LM Studio.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Mezcla de expertos (MoE) con 128 expertos, basada en inclusionAI Ling-3.0-tiny; incluye componentes DeltaNet y experto compartido |
-| Parametros totales | 7.744.178.176 (8B) |
-| Parametros activos | Aproximadamente 1B por token (A1B) |
-| Longitud de contexto | 131.072 tokens en metadatos; ejecutado a 1.024 tokens en el TV Box |
-| Tipos de cuantizacion | Expertos en Q2_K con imatrix; atención, DeltaNet, experto compartido, embeddings y cabeza en Q4_K; caché KV en q8_0 en la configuración de referencia |
-| Idiomas soportados | No disponible (la model card menciona corpus en inglés y multilingüe para la selección de la cabeza, pero no declara lista de idiomas) |
+| Arquitectura | Transformer MoE (mezcla de expertos) con 128 expertos y componentes DeltaNet; derivado de inclusionAI Ling-3.0 |
+| Parametros totales | 7.744.178.176 (7,74B) |
+| Parametros activos | Aproximadamente 1B por token (segun el nombre A1B; valor exacto no disponible) |
+| Longitud de contexto | 131.072 tokens en metadatos; probado a 1.024 tokens en TV Box |
+| Tipos de cuantizacion | Expertos Q2_K con imatrix; attention, DeltaNet, experto compartido, embeddings y cabeza en Q4_K; cache KV q8_0 |
+| Idiomas soportados | No disponible (la cabeza podada prioriza ingles y multilingue frecuente; tokens raros y no latinos mayoritariamente excluidos de la generacion) |
 | Licencia | MIT |
 | Formato de pesos | GGUF (archivo `mb-q2-h60.gguf`, 2,75 GB) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es un transformer de mezcla de expertos con 128 expertos, 8.000 millones de parámetros totales y aproximadamente 1.000 millones activos por token. Integra componentes DeltaNet junto con un experto compartido, y se apoya en la biblioteca de conocimiento recuperable de Tablinum (engram) sobre el modelo Ling-3.0-tiny de inclusionAI. La información disponible no detalla el volumen de tokens de entrenamiento, la composición exacta del dataset ni si se aplicaron fases de RLHF o DPO.
+El modelo base es un transformer de mezcla de expertos con 128 expertos y 7,74B parametros totales, construido sobre inclusionAI Ling-3.0 e integrando componentes DeltaNet ademas de atencion clasica. La variante aqui publicada es una cuantizacion, no un reentrenamiento: los expertos se comprimen a Q2_K usando una imatrix calculada sobre una muestra de Wikipedia y Project Gutenberg, mientras que el resto de tensores se mantienen en Q4_K para preservar calidad.
 
-La innovación de esta publicación concreta es de despliegue, no de entrenamiento. Los expertos se cuantizan a Q2_K usando una imatrix calculada sobre una muestra de Wikipedia y Project Gutenberg, y se paginan bajo demanda desde almacenamiento flash. El llama.cpp parcheado incorpora un paginador de expertos (`GGML_MOE_PAGER`), un sesgo de enrutamiento que favorece expertos ya residentes en RAM (`GGML_MOE_BIAS`), un pool de expertos por capa (`GGML_MOE_POOL`), prefetch precalculado (`GGML_MOE_PREFETCH_K`, `GGML_MOE_PREFETCH_AHEAD`), arranque en caliente con lista de expertos (`GGML_MOE_WARM`) y una caché de repack en disco (`GGML_REPACK_CACHE`). Además, la cabeza de salida se poda de 157.184 a 60.000 filas mediante un tensor `output_ids`, seleccionadas por frecuencia de token en un corpus inglés y multilingüe.
+La innovacion principal de esta ficha no esta en el entrenamiento sino en el runtime: el proyecto smolmaxxing aplica un parche a llama.cpp (commit `8642541` mas `patches/llama.cpp-v0.8.0-tvbox.patch`) que implementa paginacion de expertos desde flash, enrutamiento consciente de cache, prefetch pre-gate y warm start. Ademas, la cabeza de salida se poda a 60.000 filas seleccionadas por frecuencia de token en un corpus ingles y multilingue, lo que reduce el coste de la capa final. No se dispone de informacion sobre el volumen de tokens de entrenamiento, composicion del dataset ni si hubo RLHF o DPO en el modelo base.
 
 ## Capacidades
 
-- Generación de texto conversacional en inglés y, según la model card, con cobertura parcial de tokens multilingües en la cabeza de salida.
-- Razonamiento y generación de texto general propio del modelo base Moon-Beam-8B-A1B-Preview.
-- Ejecución en entornos de muy baja memoria mediante paginación de expertos desde flash.
-- Ajuste de calidad y velocidad en tiempo de ejecución variando el número de expertos por token (6 por defecto, 8 para mayor calidad a costa de aproximadamente un 5 % de velocidad).
-- Mitigación de bucles degenerativos mediante penalización de repetición (`--repeat-penalty 1.15 --repeat-last-n 256`).
-- No se documenta soporte de tool calling, function calling, agentes multi-paso, visión ni audio en la información disponible.
-- No se documenta un modo "thinking" explícito.
+- Generacion de texto conversacional multi-turno, con calidad medida de 0,996 bits por byte en perplejidad sobre un texto fijo de 22 KB (mejor que Bonsai-8B, que obtiene 0,974 en el mismo texto).
+- Razonamiento basico y respuesta a instrucciones heredados del modelo base Moon-Beam-8B-A1B-Preview.
+- Soporte de contexto largo en metadatos (131.072 tokens), aunque en el dispositivo objetivo se ejecuta a 1.024 tokens.
+- Capacidad multilingue limitada por la poda de la cabeza: solo puede generar tokens del subconjunto de 60.000 filas, lo que excluye la mayoria de tokens no latinos y poco frecuentes.
+- No se documenta soporte de tool calling, function calling, agentes, vision ni audio en la informacion disponible.
+- No se documenta modo thinking ni capacidades especiales adicionales.
 
 ## Casos de uso
 
-- Inferencia en dispositivos de gama ultra baja: el caso de referencia es un Xiaomi TV Box S con 4× Cortex-A55 y ~1 GB de RAM, donde el modelo genera a 7,2 tok/s con ~1,14 GB de RSS en modo headless. Sirve para asistentes locales de texto en televisores, decodificadores o placas SBC con poca memoria.
-- Demostración e investigación de paginación de expertos MoE: el archivo y el parche permiten estudiar técnicas de enrutamiento consciente de caché, prefetch y arranque en caliente sobre modelos MoE reales, comparando calidad (bits por byte) frente a velocidad.
-- Evaluación de cuantización Q2_K con imatrix: útil para medir la degradación de perplejidad al cuantizar expertos a 2 bits manteniendo el resto en Q4_K, con una referencia concreta de 0,996 bits por byte frente a 0,974 de Bonsai-8B en el mismo texto.
-- Prototipado de asistentes conversacionales offline: al no requerir conexión ni GPU, permite validar flujos de chat multi-turno en entornos sin red, aceptando el coste de calidad de una cuantización agresiva.
-- Pruebas de robustez frente a bucles degenerativos: el modelo documenta que los expertos Q2_K derivan en repeticiones tras 250-300 palabras sin penalización, lo que lo convierte en un banco de pruebas para estrategias de sampling y penalización.
-- Integración en pipelines de CI para validar compatibilidad de llama.cpp: permite comprobar que builds parcheados cargan correctamente tensores `output_ids` y cabezas podadas, detectando regresiones en el soporte de GGUF no estándar.
+- Inferencia en dispositivos de gama muy baja: el caso principal es ejecutar un LLM de 8B en una TV Box Android con 1 GB de RAM, usando paginacion de expertos desde flash. Es adecuado porque el runtime parcheado mantiene solo un pool reducido de expertos en memoria (43 por capa por defecto).
+- Demostracion e investigacion de tecnicas de compresion MoE: sirve para estudiar el impacto de Q2_K con imatrix y de la poda de cabeza en la calidad, comparando bits por byte frente a otras cuantizaciones.
+- Asistentes conversacionales offline en hardware embebido: con 7,2 tok/s y ~1,14 GB RSS en modo headless, puede alimentar interfaces de chat locales sin conexion.
+- Pruebas de concepto de LLM en entornos con restricciones de memoria (Raspberry Pi, mini-PC, routers con almacenamiento): el enfoque de repack cache de 2,6 GB permite operar con RAM muy limitada.
+- Generacion de texto corto y respuestas acotadas: dado que sin penalizacion de repeticion el modelo entra en bucles tras 250-300 palabras, encaja en tareas de respuesta breve (resumenes de una frase, clasificacion generativa, completado corto).
+- Evaluacion comparativa de runtimes: util para medir latencia y throughput de llama.cpp parcheado frente a configuraciones estandar en el mismo hardware.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible. Los únicos datos medidos son de calidad por perplejidad y de velocidad en el dispositivo de referencia:
-
-| Metrica | Configuracion | Valor |
+| Metrica | Valor | Contexto |
 |---|---|---|
-| Calidad (bits/byte, menor es mejor) | Top-6 expertos, bias 0,25, prefetch, repeat penalty | 0,996 |
-| Calidad (bits/byte) | Top-8 expertos, bias 0,2 | 0,963 |
-| Calidad de referencia (bits/byte) | Bonsai-8B sobre el mismo texto | 0,974 |
-| Velocidad de chat real | Xiaomi TV Box S (3.ª gen.) | 7,2 tok/s |
-| Velocidad de chat real | Top-8 expertos | ~6,9 tok/s |
-| RAM (RSS) | Modo headless | ~1,14 GB |
-| Respuestas largas con bucle | Configuración por defecto | 2 de 8 |
+| Calidad (bits/byte, menor es mejor) | 0,996 | Configuracion por defecto: top-6 expertos, bias 0,25, prefetch, repeat penalty |
+| Calidad (bits/byte) | 0,963 | Top-8 expertos, bias 0,2 |
+| Calidad de referencia Bonsai-8B | 0,974 | Mismo texto de 22 KB |
+| Throughput en chat real | 7,2 tok/s | Xiaomi TV Box S (3rd Gen), 4x Cortex-A55, ~1 GB RAM |
+| Throughput con top-8 | ~6,9 tok/s | Misma TV Box |
+| RAM (RSS) | ~1,14 GB | Modo headless |
+| Almacenamiento adicional | 2,6 GB | Cache de repack en flash |
+| Tasa de respuestas largas con bucle | 2 de 8 | Sin repeat penalty; se corrige con `--repeat-penalty 1.15 --repeat-last-n 256` |
+
+No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM/RAM estimada: ~1,14 GB de RSS en modo headless con paginación de expertos; en un equipo con RAM suficiente, el archivo de 2,75 GB se carga con todos los expertos residentes.
-- Almacenamiento: el GGUF de 2,75 GB más una caché de repack de 2,6 GB en flash.
-- GPU recomendadas: no se documentan; el caso de referencia es CPU pura (4× Cortex-A55). Cualquier GPU con al menos 3-4 GB de VRAM podría alojar el modelo completo, aunque no se han publicado mediciones.
-- Cabe en GPU de consumo: previsiblemente sí en tarjetas con 4 GB o más (GTX 1650, RTX 3050, etc.), aunque no hay datos medidos en la información disponible.
-- Opciones de despliegue: exclusivamente llama.cpp parcheado del repositorio smolmaxxing (llama.cpp en el commit `8642541` con `patches/llama.cpp-v0.8.0-tvbox.patch`). Ollama, LM Studio y llama.cpp estándar no cargan el archivo.
-- Latencia y throughput: 7,2 tok/s en el TV Box de referencia con top-6 expertos; ~6,9 tok/s con top-8. Sin datos para otros hardware.
+- VRAM/RAM estimada: ~1,14 GB RSS en modo headless con paginacion de expertos; en una maquina con RAM suficiente, el modelo completo en Q2_K/Q4_K ocupa aproximadamente 2,75 GB mas overhead de runtime.
+- GPU recomendadas: no se documentan; el caso objetivo es CPU ARM de 4 nucleos (Cortex-A55). En GPU, cualquier tarjeta con 4 GB o mas de VRAM deberia poder cargar el archivo completo sin paginacion, aunque no hay mediciones publicadas.
+- Cabe en GPU de consumo: si, previsiblemente en GTX 1650, RTX 3050, RTX 4060 y superiores con 4-8 GB de VRAM, aunque no se aportan datos medidos.
+- Opciones de despliegue: exclusivamente llama.cpp parcheado del repositorio smolmaxxing (llama-server con variables `GGML_MOE_PAGER`, `GGML_MOE_POOL`, `GGML_MOE_BIAS`, `LLAMA_MOE_USED`, `GGML_MOE_PREFETCH_K`, `GGML_MOE_PREFETCH_AHEAD`, `GGML_MOE_WARM`, `GGML_REPACK_CACHE`). No es compatible con llama.cpp estandar, Ollama, LM Studio ni TGI.
+- Latencia y throughput: 7,2 tok/s en TV Box; 144 ms por token segun la figura del autor. No hay datos para otras plataformas.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Activos | Contexto | Licencia | Formato | Notas |
-|---|---|---|---|---|---|---|
-| Moon-Beam-8B-A1B-tvbox-GGUF | 8B (MoE, 128 expertos) | ~1B | 131.072 (metadatos) | MIT | GGUF Q2_K/Q4_K | Requiere llama.cpp parcheado; cabeza podada a 60K |
-| Moon-Beam-8B-A1B-Preview (base) | 8B (MoE, 128 expertos) | ~1B | 131.072 | MIT | Safetensors (no confirmado) | Modelo original de Tablinum sobre Ling-3.0-tiny |
-| Bonsai-8B | No disponible | No disponible | No disponible | No disponible | No disponible | Referencia de calidad: 0,974 bits/byte frente a 0,996 de este archivo |
+| Modelo | Parametros | Contexto | Calidad (bits/byte) | Licencia | Despliegue |
+|---|---|---|---|---|---|
+| Moon-Beam-8B-A1B-tvbox-GGUF | 7,74B totales, ~1B activos (MoE) | 131.072 (metadatos); 1.024 en TV | 0,996 | MIT | llama.cpp parcheado |
+| Bonsai-8B | No disponible | No disponible | 0,974 | No disponible | No disponible |
+| Moon-Beam-8B-A1B-Preview (base) | 7,74B totales, ~1B activos (MoE) | 131.072 | No disponible | MIT | llama.cpp estandar, otros runtimes |
 
-No se dispone de datos suficientes para comparar rendimiento en benchmarks estándar con alternativas de la misma categoría.
+La comparativa con alternativas de la misma categoria (MoE de ~8B en GGUF) no esta disponible en la informacion proporcionada mas alla de la referencia a Bonsai-8B en la metrica de perplejidad.
 
 ## Limitaciones y advertencias
 
-- Compatibilidad rota: el archivo incluye un tensor `output_ids` y una cabeza podada que impiden su carga en llama.cpp estándar, Ollama y LM Studio.
-- Cabeza de salida reducida: solo puede generar 60.000 de los 157.184 tokens del vocabulario; los tokens raros y no latinos quedan en su mayoría fuera, lo que limita la generación multilingüe aunque las prompts puedan usar el vocabulario completo.
-- Bucles degenerativos: los expertos Q2_K derivan en repeticiones tras 250-300 palabras sin `--repeat-penalty 1.15 --repeat-last-n 256`.
-- Calidad degradada por cuantización: 0,996 bits/byte frente a 0,974 de Bonsai-8B en el mismo texto de referencia; la cuantización Q2_K de expertos es agresiva.
-- Contexto efectivo limitado en el dispositivo de referencia: aunque los metadatos declaran 131.072 tokens, la ejecución en el TV Box usa 1.024 tokens.
-- Sin datos de sesgos, alucinación o evaluación de seguridad en la información disponible.
-- Licencia MIT: permite uso comercial, pero el autor no ofrece garantías sobre el comportamiento en producción.
-- El campo `general.name` del metadato es "Merged R1B", heredado del archivo fuente, lo que puede confundir en auditorías.
+- Requiere un binario de llama.cpp parcheado especifico; no carga en llama.cpp estandar, Ollama, LM Studio ni otras herramientas convencionales.
+- La cabeza de salida podada a 60.000 tokens impide generar tokens raros y la mayoria de caracteres no latinos; el multilingue real esta severamente limitado.
+- Sin penalizacion de repeticion (`--repeat-penalty 1.15 --repeat-last-n 256`) el modelo entra en bucles tras 250-300 palabras: 2 de cada 8 respuestas largas fallan en la configuracion medida.
+- La cuantizacion Q2_K en expertos degrada la calidad respecto al modelo base; la perplejidad medida (0,996 bits/byte) es peor que la de un modelo de 8B denso de referencia (Bonsai-8B, 0,974).
+- El contexto practico probado es de solo 1.024 tokens en el dispositivo objetivo, muy por debajo de los 131.072 declarados en metadatos.
+- Riesgo de alucinacion y sesgos no evaluados: no se publican analisis de sesgo ni evaluaciones de robustez.
+- El campo `general.name` en metadatos dice "Merged R1B", heredado del archivo fuente, lo que puede confundir en auditorias.
+- Uso comercial permitido por licencia MIT, pero la viabilidad practica en produccion esta limitada por el throughput (7,2 tok/s) y la necesidad de hardware especifico o runtime parcheado.
+- El rendimiento en GPU no esta medido; las cifras de velocidad solo aplican a la TV Box de referencia.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/hyperionaidev/Moon-Beam-8B-A1B-tvbox-GGUF
 - Modelo base: https://huggingface.co/tablinum/Moon-Beam-8B-A1B-Preview
-- GGUF de origen: https://huggingface.co/tablinum/Moon-Beam-8B-A1B-GGUF-Preview
+- Fuente de la cuantizacion: tablinum/Moon-Beam-8B-A1B-GGUF-Preview (Q8_0)
 - Proyecto smolmaxxing: https://github.com/hyperionaidev/smolmaxxing
-- Write-up del experimento: https://github.com/hyperionaidev/smolmaxxing/blob/main/EXPERIMENT.md
+- Write-up experimental (EXPERIMENT.md §19): https://github.com/hyperionaidev/smolmaxxing/blob/main/EXPERIMENT.md
+- Scoreboard del proyecto: https://github.com/hyperionaidev/smolmaxxing#scoreboard
+- Quick start del runtime parcheado: https://github.com/hyperionaidev/smolmaxxing#quick-start
 - llama.cpp: https://github.com/ggml-org/llama.cpp
+- inclusionAI Ling-3.0: no disponible (enlace directo no proporcionado)

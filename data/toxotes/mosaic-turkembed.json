@@ -5,7 +5,7 @@
   "author": "Toxotes",
   "url": "https://huggingface.co/Toxotes/mosaic-turkembed",
   "created_at": "2026-11-23T14:46:05.000Z",
-  "updated_at": "2026-11-23T14:50:08.000Z",
+  "updated_at": "2026-11-23T20:43:09.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "sentence-similarity",
@@ -33,7 +33,7 @@
     "endpoints_compatible",
     "region:us"
   ],
-  "likes": 0,
+  "likes": 1,
   "downloads_30d": 0,
   "trending_score": 0,
   "parameters": 117653760,
@@ -51,8 +51,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "Toxotes/mosaic-embed",
+  "renamed_at": "2026-11-24T06:00:17.407Z",
   "benchmarks": [],
   "sources": []
 }

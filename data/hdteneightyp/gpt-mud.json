@@ -1,0 +1,46 @@
+{
+  "schema": 2,
+  "id": "HDTenEightyP/GPT-MUD",
+  "slug": "hdteneightyp-gpt-mud",
+  "author": "HDTenEightyP",
+  "url": "https://huggingface.co/HDTenEightyP/GPT-MUD",
+  "created_at": "2026-10-15T19:13:14.000Z",
+  "updated_at": "2026-11-24T04:36:31.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "gpt2",
+    "text-generation-inference",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 15,
+  "trending_score": 0,
+  "parameters": 47187200,
+  "parameters_human": "47.2M",
+  "storage_bytes": 770371439,
+  "storage_human": "770 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

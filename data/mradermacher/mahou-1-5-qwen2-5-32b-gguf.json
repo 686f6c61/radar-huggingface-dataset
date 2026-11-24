@@ -1,0 +1,50 @@
+{
+  "schema": 2,
+  "id": "mradermacher/Mahou-1.5-Qwen2.5-32B-GGUF",
+  "slug": "mradermacher-mahou-1-5-qwen2-5-32b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Mahou-1.5-Qwen2.5-32B-GGUF",
+  "created_at": "2025-03-16T23:57:36.000Z",
+  "updated_at": "2026-11-24T07:29:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "dataset:flammenai/MahouMix-v1",
+    "base_model:flammenai/Mahou-1.5-Qwen2.5-32B",
+    "base_model:quantized:flammenai/Mahou-1.5-Qwen2.5-32B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 73,
+  "trending_score": 0,
+  "parameters": 32759790592,
+  "parameters_human": "32.76B",
+  "storage_bytes": 223968490400,
+  "storage_human": "224.0 GB",
+  "context_length": 131072,
+  "base_model": "flammenai/Mahou-1.5-Qwen2.5-32B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

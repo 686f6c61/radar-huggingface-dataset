@@ -5,7 +5,7 @@
   "author": "openamer-max",
   "url": "https://huggingface.co/openamer-max/openamer-max-vl-8b",
   "created_at": "2026-11-18T12:34:27.000Z",
-  "updated_at": "2026-11-21T11:39:09.000Z",
+  "updated_at": "2026-11-23T17:23:59.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -18,7 +18,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 54,
+  "downloads_30d": 57,
   "trending_score": 0,
   "parameters": 8190735360,
   "parameters_human": "8.19B",

@@ -5,7 +5,7 @@
   "author": "millrace-ai",
   "url": "https://huggingface.co/millrace-ai/qwenpu-bonsai-4b-stock-prism",
   "created_at": "2026-11-16T17:39:37.000Z",
-  "updated_at": "2026-11-18T01:04:38.000Z",
+  "updated_at": "2026-11-24T02:53:20.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -29,7 +29,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 627,
+  "downloads_30d": 649,
   "trending_score": 0,
   "parameters": 11840714242,
   "parameters_human": "11.84B",

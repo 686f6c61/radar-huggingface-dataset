@@ -64,8 +64,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "Bosalt/TranslateGemma-4-12B-Pilot-LoRA",
+  "renamed_at": "2026-11-24T08:46:59.676Z",
   "benchmarks": [
     {
       "task": "Technical Markdown Translation",

@@ -21,7 +21,7 @@
     "base_model:finetune:onnx-community/yolov10b",
     "region:us"
   ],
-  "likes": 4,
+  "likes": 5,
   "downloads_30d": 0,
   "trending_score": 0,
   "parameters": null,

@@ -18,7 +18,7 @@
     "region:us"
   ],
   "likes": 1,
-  "downloads_30d": 332,
+  "downloads_30d": 338,
   "trending_score": 0,
   "parameters": 494032768,
   "parameters_human": "494.0M",
@@ -38,31 +38,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "WILLAY API & Inference Endpoint - FriendliAI",
-      "url": "https://friendli.ai/models/SZLHOLDINGS/WILLAY",
-      "snippet": "Deploy WILLAY with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
-    },
-    {
-      "title": "WILLAY API Reference · SZL Holdings",
-      "url": "https://holdings.a-11-oy.com/docs-site/developers/willay_api.html",
-      "snippet": "WILLAY is a11oy&#x27;s governed inverse of the hidden-governor pattern in frontier AI. Every request passes through five transparent policy classifiers. A declined request returns a cryptographically-signed DSSE receipt naming the exact rule that fired — not a black-box rejection."
-    },
-    {
-      "title": "developers/WILLAY_API.md at main · szl-holdings/developers",
-      "url": "https://github.com/szl-holdings/developers/blob/main/WILLAY_API.md",
-      "snippet": "WILLAY is a11oy&#x27;s governed inverse of the hidden-governor pattern in frontier AI. Every request passes through five transparent policy classifiers. A declined request returns a cryptographically-signed DSSE receipt naming the exact rule that fired — not a black-box rejection. Honest caveats (required in all usage):"
-    },
-    {
-      "title": "Developer Hub · SZL Holdings",
-      "url": "https://holdings.a-11-oy.com/docs-site/developers/",
-      "snippet": "SZL Holdings builds a formally-verified governance gate for agentic AI. This section is the developer-facing entry point: quickstart, full API reference, MCP integration, and runnable examples. Build your own \"organ\" on the same substrate the shipping flagships use."
-    },
-    {
-      "title": "Λ 0.915 · a11oy console",
-      "url": "https://a-11-oy.com/console",
-      "snippet": "The orchestrating brain of the SZL governed-AI substrate: command center, governed decisions, signed receipts, formula knowledge base, model router. Every view reads a live endpoint."
-    }
-  ]
+  "sources": []
 }

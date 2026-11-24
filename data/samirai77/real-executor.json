@@ -1,0 +1,98 @@
+{
+  "schema": 2,
+  "id": "samirai77/real-executor",
+  "slug": "samirai77-real-executor",
+  "author": "samirai77",
+  "url": "https://huggingface.co/samirai77/real-executor",
+  "created_at": "2026-11-24T06:56:55.000Z",
+  "updated_at": "2026-11-24T06:56:57.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en",
+    "ru",
+    "zh",
+    "es",
+    "pt",
+    "tr",
+    "de",
+    "fr",
+    "ja",
+    "ko",
+    "ar",
+    "pl",
+    "vi",
+    "id"
+  ],
+  "tags": [
+    "windows",
+    "windows-11",
+    "x64",
+    "portable",
+    "real-executor",
+    "en",
+    "ru",
+    "zh",
+    "es",
+    "pt",
+    "tr",
+    "de",
+    "fr",
+    "ja",
+    "ko",
+    "ar",
+    "pl",
+    "vi",
+    "id",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "context_length": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "About Real Executor - Official Project Real Team",
+      "url": "https://projectreal.gg/en/about/",
+      "snippet": "May 15, 2026 · Learn about Real Executor, the official Project Real team, our Roblox Lua executor, community, release history, and …Read more"
+    },
+    {
+      "title": "Download Real Executor for Windows - Official Site",
+      "url": "https://projectreal.gg/en/download/",
+      "snippet": "Download Real Executor for Windows from the official Project Real website. Start free, avoid fake download pages, and follow the …Read more"
+    },
+    {
+      "title": "Executor-AI",
+      "url": "https://executor-ai.com/",
+      "snippet": "Executor-AI builds autonomous executors that eliminate repetitive work, automate operations, and accelerate productivity using next …Read more"
+    },
+    {
+      "title": "React Native ExecuTorch – On-device AI & LLM toolkit for React …",
+      "url": "https://executorch.swmansion.com/",
+      "snippet": "React Native ExecuTorch lets you run LLMs and AI models locally on device in React Native. Build privacy-first, fast, and offline …Read more"
+    },
+    {
+      "title": "GitHub - software-mansion/react-native-executorch: High-performance ...",
+      "url": "https://github.com/software-mansion/react-native-executorch",
+      "snippet": "It lets you run machine learning models directly on the user's phone with zero network calls, full offline capability, and guaranteed …Read more"
+    }
+  ]
+}

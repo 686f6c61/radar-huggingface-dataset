@@ -1,0 +1,51 @@
+{
+  "schema": 2,
+  "id": "Dijo-404/madhan-tts-finetuned",
+  "slug": "dijo-404-madhan-tts-finetuned",
+  "author": "Dijo-404",
+  "url": "https://huggingface.co/Dijo-404/madhan-tts-finetuned",
+  "created_at": "2026-11-24T11:50:19.000Z",
+  "updated_at": "2026-11-24T11:51:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "qwen3-tts",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "qwen3-tts",
+    "safetensors",
+    "qwen3_tts",
+    "voice-cloning",
+    "kural-tts",
+    "text-to-speech",
+    "en",
+    "base_model:Qwen/Qwen3-TTS-12Hz-0.6B-Base",
+    "base_model:finetune:Qwen/Qwen3-TTS-12Hz-0.6B-Base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 914643008,
+  "parameters_human": "914.6M",
+  "storage_bytes": 4342398164,
+  "storage_human": "4.3 GB",
+  "context_length": null,
+  "base_model": "Qwen/Qwen3-TTS-12Hz-0.6B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

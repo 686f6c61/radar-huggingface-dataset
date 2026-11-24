@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/Kanata-S1-3B-i1-GGUF",
   "created_at": "2026-11-23T02:35:37.000Z",
-  "updated_at": "2026-11-23T03:10:05.000Z",
+  "updated_at": "2026-11-23T03:49:12.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -36,16 +36,17 @@
     "base_model:quantized:K-Ai-Official/Kanata-S1-3B",
     "license:apache-2.0",
     "endpoints_compatible",
-    "region:us"
+    "region:us",
+    "imatrix"
   ],
   "likes": 1,
-  "downloads_30d": 0,
+  "downloads_30d": 725,
   "trending_score": 0,
-  "parameters": 1887800,
-  "parameters_human": "1.9M",
-  "storage_bytes": 7631200,
-  "storage_human": "8 MB",
-  "context_length": null,
+  "parameters": 3402836480,
+  "parameters_human": "3.40B",
+  "storage_bytes": 39945498208,
+  "storage_human": "39.9 GB",
+  "context_length": 131072,
   "base_model": "K-Ai-Official/Kanata-S1-3B",
   "formats": [
     "gguf"

@@ -1,0 +1,69 @@
+{
+  "schema": 2,
+  "id": "WANG-XIXI/ViDiHand",
+  "slug": "wang-xixi-vidihand",
+  "author": "WANG-XIXI",
+  "url": "https://huggingface.co/WANG-XIXI/ViDiHand",
+  "created_at": "2026-11-24T08:07:17.000Z",
+  "updated_at": "2026-11-24T08:08:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "hand-pose-estimation",
+    "3d-hand-reconstruction",
+    "mano",
+    "video-diffusion",
+    "arxiv:2611.30597",
+    "arxiv:2606.30308",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 10827051194,
+  "storage_human": "10.8 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ViDiHand: The Surprising Effectiveness of Video Diffusion Models ...",
+      "url": "https://huggingface.co/blog/Xingang-Pan/vidihand",
+      "snippet": "05.10.2026 ... WANG-XIXI. Follow · JCK's avatar. JCK. ChengKai2025. Follow · Yufei Liu's ... For embodied AI, hand motion reconstruction is used mostly ..."
+    },
+    {
+      "title": "ViDiHand: The Surprising Effectiveness of Video Diffusion Models ...",
+      "url": "https://github.com/NTUYWANG103/ViDiHand",
+      "snippet": "ViDiHand: The Surprising Effectiveness of Video Diffusion Models for Hand Motion Reconstruction. Yuxi Wang, Chengkai Jin, Yufei Liu, Wenqi Ouyang, Tianyi Wei ..."
+    },
+    {
+      "title": "ACE-Ego-Hand: Repurposing Video Diffusion Models for Occlusion ...",
+      "url": "https://www.alphaxiv.org/abs/2608.20308",
+      "snippet": "01.09.2026 ... Xixi Wang. HL. Hao Li · GZ. Ganlong Zhao. KC. Kaitong Cai. CJ. Chengkai Jin ... The closest predecessor, ViDiHand, already used a video-diffusion ..."
+    },
+    {
+      "title": "NTUYWANG103 (WANGXIXI) - GitHub",
+      "url": "https://github.com/NTUYWANG103",
+      "snippet": "ViDiHand ViDiHand Public. Official PyTorch Implementation of Paper \"The Surprising Effectiveness of Video Diffusion Models for Hand Motion Reconstruction\"."
+    },
+    {
+      "title": "a Unified World Action Model for Egocentric Dexterous Manipulation",
+      "url": "https://arxiv.org/html/2610.22363v1",
+      "snippet": "15.10.2026 ... Concurrent works ViDiHand (Wang et al., 2026a) and ACE-Ego-Hand (Liu ... (2026) Yufei Liu, Xixi Wang, Hao Li, Ganlong Zhao, Kaitong Cai ..."
+    }
+  ]
+}

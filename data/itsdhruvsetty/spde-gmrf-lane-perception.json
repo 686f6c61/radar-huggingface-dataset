@@ -38,8 +38,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "dhruvsetty/spde-gmrf-lane-perception",
+  "renamed_at": "2026-11-24T09:20:54.141Z",
   "benchmarks": [],
   "sources": []
 }

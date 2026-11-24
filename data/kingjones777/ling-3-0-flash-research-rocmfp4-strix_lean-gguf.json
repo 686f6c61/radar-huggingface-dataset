@@ -5,7 +5,7 @@
   "author": "kingjones777",
   "url": "https://huggingface.co/kingjones777/Ling-3.0-flash-Research-ROCmFP4-STRIX_LEAN-GGUF",
   "created_at": "2026-08-23T01:44:57.000Z",
-  "updated_at": "2026-08-23T12:50:36.000Z",
+  "updated_at": "2026-11-23T18:31:46.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -31,7 +31,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 57,
+  "downloads_30d": 81,
   "trending_score": 0,
   "parameters": 127486405600,
   "parameters_human": "127.49B",

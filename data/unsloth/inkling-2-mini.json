@@ -1,0 +1,75 @@
+{
+  "schema": 2,
+  "id": "unsloth/Inkling-2-Mini",
+  "slug": "unsloth-inkling-2-mini",
+  "author": "unsloth",
+  "url": "https://huggingface.co/unsloth/Inkling-2-Mini",
+  "created_at": "2026-11-24T11:55:31.000Z",
+  "updated_at": "2026-11-24T11:57:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "inkling2_loop",
+    "image-text-to-text",
+    "conversational",
+    "moe",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "8-bit",
+    "modelopt",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26388646440,
+  "parameters_human": "26.39B",
+  "storage_bytes": 20191385756,
+  "storage_human": "20.2 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Unsloth - Run and Train Models Locally",
+      "url": "https://unsloth.ai/",
+      "snippet": "Unsloth is an open-source, no-code deskop UI for training and running open models on your local hardware."
+    },
+    {
+      "title": "Introducing Unsloth Desktop | Unsloth Documentation",
+      "url": "https://unsloth.ai/docs/desktop",
+      "snippet": "Whether your model is running through Unsloth’s inference or your own remote OpenAI-compatible endpoint, you can give it access …"
+    },
+    {
+      "title": "unsloth · PyPI",
+      "url": "https://pypi.org/project/unsloth/",
+      "snippet": "The core Unsloth package remains licensed under Apache 2.0, while certain optional components, such as the Unsloth Studio UI are …"
+    },
+    {
+      "title": "Unsloth Docs | Unsloth Documentation",
+      "url": "https://unsloth.ai/docs",
+      "snippet": "🦥 Unsloth Docs Unsloth is an open-source framework for running and training LLMs. Unsloth lets you run and train AI models on your …"
+    },
+    {
+      "title": "Unsloth Installation | Unsloth Documentation",
+      "url": "https://unsloth.ai/docs/get-started/install",
+      "snippet": "Unsloth can be installed in three distinct ways: Unsloth Desktop, the native app; Unsloth Studio, the browser-based web UI; or …"
+    }
+  ]
+}

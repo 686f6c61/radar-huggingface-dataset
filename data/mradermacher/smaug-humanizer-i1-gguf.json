@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/Smaug-Humanizer-i1-GGUF",
   "created_at": "2026-10-27T08:28:46.000Z",
-  "updated_at": "2026-11-20T14:37:46.000Z",
+  "updated_at": "2026-11-23T15:21:41.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -31,7 +31,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 8248,
+  "downloads_30d": 8359,
   "trending_score": 0,
   "parameters": 11907350576,
   "parameters_human": "11.91B",

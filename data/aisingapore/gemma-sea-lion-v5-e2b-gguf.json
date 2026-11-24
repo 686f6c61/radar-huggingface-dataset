@@ -46,7 +46,7 @@
   "trending_score": 0,
   "parameters": 4647450147,
   "parameters_human": "4.65B",
-  "storage_bytes": 22538089544,
+  "storage_bytes": 22537879166,
   "storage_human": "22.5 GB",
   "context_length": 131072,
   "base_model": "aisingapore/Gemma-SEA-LION-v5-E2B",

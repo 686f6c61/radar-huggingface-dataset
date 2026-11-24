@@ -2,124 +2,112 @@
 
 ## Resumen
 
-`mradermacher/tolk-7B-GGUF` es un conjunto de cuantizaciones GGUF del modelo `RaspizdAI/tolk-7B`, publicadas por el usuario mradermacher (nethype GmbH) para su uso con llama.cpp y otros motores de inferencia compatibles con este formato. No se trata de un modelo entrenado desde cero, sino de una conversión estática a 12 variantes de cuantización (de Q2_K a f16) del checkpoint original, que presumiblemente se distribuye en safetensors para transformers.
+tolk-7B-GGUF es la versión cuantizada en formato GGUF del modelo tolk-7B, desarrollado originalmente por RaspizdAI y convertido a GGUF por mradermacher, un publicador habitual de cuantizaciones para la comunidad de inferencia local. El modelo base es un transformer de 7.615.616.512 parámetros (aproximadamente 7,6 mil millones) orientado a conversación, con soporte declarado para ruso e inglés y licencia MIT, lo que lo hace atractivo para uso comercial y para despliegues en hardware de consumo.
 
-El modelo base ocupa 7.615.616.512 parámetros (unos 7,6 mil millones) y declara soporte para ruso e inglés, con licencia MIT y etiqueta de uso conversacional. La arquitectura, la longitud de contexto y el proceso de entrenamiento del modelo original no se detallan ni en la model card del cuantizador ni en la información disponible, por lo que buena parte de las especificaciones quedan marcadas como no disponibles en esta ficha.
+La relevancia de esta ficha radica en que el repositorio GGUF ofrece una matriz completa de cuantizaciones estáticas (desde Q2_K de 3,1 GB hasta f16 de 15,3 GB), lo que permite ejecutar el modelo en un espectro amplio de hardware, desde GPUs de consumo con 6-8 GB de VRAM hasta estaciones de trabajo. Sin embargo, la información pública disponible es escasa: no se documentan la longitud de contexto, el proceso de entrenamiento, los datos utilizados ni resultados de benchmarks.
 
-Su relevancia práctica radica en la posibilidad de ejecutar un modelo de 7,6 B en hardware de consumo gracias a las variantes Q4_K_M (4,8 GB) y Q4_K_S (4,6 GB), y en que la licencia MIT elimina las restricciones comerciales típicas de otros modelos de tamaño similar. El repositorio completo pesa 68,1 GB porque incluye todas las cuantizaciones, aunque basta con descargar el archivo concreto que se vaya a utilizar.
+Esta ficha se limita a los datos verificables del repositorio y de la model card del cuantizador. Cualquier dato no confirmado se marca explícitamente como "no disponible" para evitar inferencias no fundamentadas.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (el recuento de parametros y el formato GGUF apuntan a un transformer denso, sin confirmacion en la informacion proporcionada) |
-| Parametros totales | 7.615.616.512 (segun safetensors del modelo base) |
-| Parametros activos | no aplica (no hay indicios de que sea MoE) |
-| Longitud de contexto | no disponible |
+| Arquitectura | Transformer (detalles específicos no disponibles) |
+| Parametros totales | 7.615.616.512 (≈7,6 B) |
+| Parametros activos | No aplica (no es MoE según la información disponible) |
+| Longitud de contexto | No disponible |
 | Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, f16 |
-| Idiomas soportados | ru (ruso), en (ingles) |
+| Idiomas soportados | Ruso (ru), inglés (en) |
 | Licencia | MIT |
-| Formato de pesos | GGUF (cuantizaciones); el modelo base se distribuye en safetensors segun los metadatos de transformers |
-| Tamano del repositorio | 68,1 GB (todas las cuantizaciones juntas) |
+| Formato de pesos | GGUF (cuantizaciones estáticas); el modelo base en safetensors |
+| Tamano del repo | 68,1 GB |
 | Modelo base | RaspizdAI/tolk-7B |
-| Cuantizador | mradermacher (metodo estatico, quantize_version 2, output_tensor_quantised 1, convert_type hf) |
-| Descargas / likes | 0 / 0 en el momento de la consulta |
-| Fecha de publicacion | 2026-09-19 (segun metadatos de Hugging Face) |
-
-Tamano por archivo de cuantizacion (datos de la model card):
-
-| Tipo | Tamano (GB) | Nota del autor |
-|---|---|---|
-| Q2_K | 3,1 | |
-| Q3_K_S | 3,6 | |
-| Q3_K_M | 3,9 | calidad inferior |
-| Q3_K_L | 4,2 | |
-| IQ4_XS | 4,4 | |
-| Q4_K_S | 4,6 | rapido, recomendado |
-| Q4_K_M | 4,8 | rapido, recomendado |
-| Q5_K_S | 5,4 | |
-| Q5_K_M | 5,5 | |
-| Q6_K | 6,4 | muy buena calidad |
-| Q8_0 | 8,2 | rapido, mejor calidad |
-| f16 | 15,3 | 16 bpw, excesivo |
+| Libreria declarada | transformers |
+| Pipeline | No disponible |
 
 ## Arquitectura y entrenamiento
 
-No hay informacion disponible sobre la arquitectura interna del modelo `RaspizdAI/tolk-7B` mas alla del recuento de parametros (7.615.616.512) y de su publicacion bajo `library_name: transformers`. La model card del repositorio GGUF se limita a describir el proceso de cuantizacion y no incluye datos sobre el numero de capas, el tipo de atencion, el uso de GQA/MQA, la funcion de activacion ni el tamano de la ventana de contexto.
+La información disponible confirma únicamente que se trata de un transformer de aproximadamente 7,6 mil millones de parámetros, derivado del modelo RaspizdAI/tolk-7B. No se dispone de detalles sobre el número de capas, dimensiones ocultas, mecanismo de atención, número de cabezas ni sobre posibles innovaciones arquitectónicas (atención lineal, decodificación especulativa, arquitecturas híbridas, etc.).
 
-Tampoco se documenta el corpus de entrenamiento: se desconoce el numero de tokens, la composicion del dataset, si hubo fases de ajuste supervisado, RLHF o DPO, y si el modelo base es un fine-tune de otro checkpoint o un entrenamiento desde cero. La unica innovacion tecnica documentada en esta ficha es de la propia cuantizacion: se trata de cuantizaciones estaticas (no ponderadas ni con imatrix), generadas con `quantize_version: 2` y `output_tensor_quantised: 1`; el autor indica que las versiones weighted/imatrix no estaban disponibles en el momento de la publicacion y que pueden solicitarse mediante una discusion de la comunidad.
+Tampoco hay datos públicos sobre el proceso de entrenamiento: número de tokens, composición del corpus, uso de RLHF, DPO u otras técnicas de alineación. La model card del cuantizador no incluye información del autor original más allá de la referencia al modelo base. Los tags del repositorio indican uso conversacional y soporte bilingüe ru/en, pero no se documenta la proporción de cada idioma en los datos de entrenamiento ni la metodología de ajuste.
+
+Las cuantizaciones son estáticas y generadas con el pipeline de mradermacher (quantize_version 2, output_tensor_quantised 1, convert_type hf). No se han publicado cuantizaciones con imatrix (weighted) para este modelo en el momento de la consulta, lo que implica que las cuantizaciones de baja precisión (Q2_K, Q3_K) pueden degradar más la perplejidad que sus equivalentes con imatrix.
 
 ## Capacidades
 
-- Generacion de texto conversacional: la etiqueta `conversational` del repositorio indica que el modelo base esta orientado a dialogos multi-turno.
-- Soporte bilingue ruso-ingles: los idiomas declarados son unicamente `ru` y `en`; no hay constancia de otros idiomas, incluido el espanol.
-- Inferencia local en CPU y GPU: el formato GGUF permite ejecucion en llama.cpp y derivados, algo que no es posible con el checkpoint safetensors original sin GPU.
-- Despliegue en endpoints: la etiqueta `endpoints_compatible` sugiere compatibilidad con infraestructura de endpoints de Hugging Face.
-- Razonamiento, codigo, matematicas y vision: no disponible; no hay ninguna mencion a estas capacidades en la informacion proporcionada.
-- Tool calling / function calling: no disponible.
-- Uso como agente o razonamiento multi-paso: no disponible.
-- Modo de pensamiento explicito (thinking mode): no disponible.
-- Capacidades de audio o multimodalidad: no disponible.
+- Generación de texto conversacional en ruso e inglés, según los idiomas declarados en la model card.
+- Conversación multi-turno: el tag "conversational" sugiere un ajuste orientado a diálogo, aunque no se documenta el formato de prompt exacto.
+- Inferencia local mediante llama.cpp y ecosistemas compatibles con GGUF.
+- No se documenta soporte de tool calling, function calling ni agentes.
+- No se documenta modo de razonamiento explícito (thinking mode), visión, audio ni otras modalidades.
+- No se documentan capacidades específicas de código o matemáticas; no hay benchmarks que las respalden.
+- Compatibilidad con endpoints (tag "endpoints_compatible"), lo que indica que puede servirse a través de infraestructura compatible con la API de Hugging Face.
 
 ## Casos de uso
 
-- Asistente conversacional en ruso: un despliegue con llama.cpp u Ollama sirviendo la variante Q4_K_M (4,8 GB) permite mantener dialogos en ruso en una estacion de trabajo sin GPU dedicada, con el modelo cargado integramente en memoria.
-- Traduccion ru-en en local: dado que el modelo declara ambos idiomas, puede emplearse para tareas de traduccion o reformulacion entre ruso e ingles en entornos con requisitos de privacidad, sin enviar texto a APIs externas.
-- Prototipado rapido de aplicaciones de chat: la licencia MIT y la disponibilidad inmediata en GGUF permiten integrar el modelo en pruebas de concepto y demos internas sin tramites de licencia.
-- Generacion de texto creativo y redaccion asistida en ruso: la variante Q6_K (6,4 GB) ofrece un equilibrio entre calidad y tamano para tareas de escritura donde la latencia no es critica.
-- Procesamiento de texto por lotes en CPU: con Q4_K_S (4,6 GB) o IQ4_XS (4,4 GB) se puede ejecutar inferencia sobre grandes volumenes de documentos en servidores sin GPU, aceptando menor throughput.
-- Fine-tuning posterior a partir de los pesos base: aunque este repositorio solo contiene GGUF, el modelo original `RaspizdAI/tolk-7B` en safetensors seria el punto de partida para especializaciones adicionales (los detalles de entrenamiento no estan documentados).
-- Evaluacion comparativa de calidad de cuantizaciones: el repositorio incluye 12 variantes del mismo modelo, lo que lo hace util para medir la degradacion de perplejidad entre Q2_K, Q4_K_M, Q6_K y f16 en un mismo checkpoint.
+- Asistente conversacional bilingüe ru/en en local: el modelo puede desplegarse con llama.cpp u Ollama en una estación de trabajo y gestionar diálogos multi-turno en ruso e inglés, aprovechando la cuantización Q4_K_M (4,8 GB) para un equilibrio entre calidad y velocidad.
+- Prototipado rápido en hardware de consumo: con la cuantización Q4_K_S (4,6 GB) cabe en GPUs de 8 GB de VRAM, lo que permite iterar sobre prompts y flujos conversacionales sin infraestructura cloud.
+- Procesamiento de texto en entornos con requisitos de privacidad: al ser un modelo MIT ejecutable en local, puede usarse para resumir o reformular documentos internos en ruso sin enviar datos a terceros.
+- Base para fine-tuning específico de dominio: el modelo base en safetensors (RaspizdAI/tolk-7B) puede ajustarse con datos propios y posteriormente cuantizarse a GGUF para despliegue, gracias a la licencia MIT.
+- Evaluación comparativa de cuantizaciones: el repositorio ofrece 12 variantes de cuantización, lo que permite medir el impacto de la precisión en la calidad de las respuestas para un caso de uso concreto antes de fijar una versión en producción.
+- Chat de soporte en ruso para comunidades técnicas: con Q8_0 (8,2 GB) en una GPU de 12-16 GB se obtiene la máxima calidad disponible en GGUF, adecuada para respuestas conversacionales donde la fidelidad al idioma es crítica.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card del repositorio GGUF no incluye cifras de MMLU, HumanEval, GSM8K ni de ningun otro conjunto de evaluacion, y la busqueda web realizada no devolvio resultados relevantes sobre el modelo (los resultados obtenidos correspondian a foros de examenes de aptitud sin relacion con el proyecto). Tampoco se aportan mediciones de perplejidad para las distintas cuantizaciones, mas alla de la referencia generica a un grafico comparativo de tipos de cuantizacion enlazado por el autor.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM/RAM para inferencia segun cuantizacion (tamano de pesos, sin contar cache KV ni overhead del runtime): Q2_K ~3,1 GB; Q3_K_S ~3,6 GB; Q3_K_M ~3,9 GB; Q3_K_L ~4,2 GB; IQ4_XS ~4,4 GB; Q4_K_S ~4,6 GB; Q4_K_M ~4,8 GB; Q5_K_S ~5,4 GB; Q5_K_M ~5,5 GB; Q6_K ~6,4 GB; Q8_0 ~8,2 GB; f16 ~15,3 GB.
-- Overhead adicional: hay que sumar el contexto (cache KV) y el propio proceso de llama.cpp. La longitud de contexto no esta documentada, por lo que no puede calcularse con precision el consumo por token; de forma orientativa, en modelos densos de ~7 B con contexto de 4-8k el coste adicional suele situarse en el rango de 0,5-1,5 GB, cifra no confirmada para este modelo.
-- GPU de consumo: las variantes Q4_K_S y Q4_K_M (4,6-4,8 GB) caben en GPUs con 8 GB de VRAM (RTX 3060 Ti, RTX 4060, RTX 2070) y con holgura en 12 GB (RTX 3060 12 GB, RTX 4070) o 16 GB (RTX 4060 Ti 16 GB, RTX 4080). La variante Q8_0 (8,2 GB) requiere al menos 10-12 GB de VRAM, y f16 (15,3 GB) exige 16-24 GB o descarga parcial a CPU.
-- GPU de datacenter: A100 (40/80 GB), H100 (80 GB), L40S (48 GB) y A6000 (48 GB) pueden alojar cualquier variante, incluida f16, con margen para contextos largos y varias peticiones concurrentes.
-- Ejecucion en CPU: viable en todas las cuantizaciones; con Q4_K_M se recomienda un minimo de 8 GB de RAM libre y, para Q8_0, 12-16 GB.
-- Opciones de despliegue: llama.cpp, llama-cpp-python, Ollama (importando el GGUF), LM Studio, koboldcpp, text-generation-webui y servidores basados en llama.cpp. Los motores orientados a safetensors (vLLM, TGI) requieren el checkpoint original `RaspizdAI/tolk-7B`, no estas cuantizaciones, o soporte GGUF experimental segun version.
-- Latencia y throughput: no disponible. No se han publicado mediciones de tokens por segundo ni de latencia por peticion para ninguna de las variantes.
+- VRAM estimada para inferencia (sin contar overhead de contexto y KV cache):
+  - Q2_K: ~3,1 GB
+  - Q3_K_S: ~3,6 GB
+  - Q3_K_M: ~3,9 GB
+  - Q3_K_L: ~4,2 GB
+  - IQ4_XS: ~4,4 GB
+  - Q4_K_S: ~4,6 GB
+  - Q4_K_M: ~4,8 GB
+  - Q5_K_S: ~5,4 GB
+  - Q5_K_M: ~5,5 GB
+  - Q6_K: ~6,4 GB
+  - Q8_0: ~8,2 GB
+  - f16: ~15,3 GB
+- GPU recomendadas:
+  - GPUs de consumo con 8 GB (RTX 3060 Ti, RTX 4060, RTX 3070): Q4_K_S o Q4_K_M con contexto moderado.
+  - GPUs de consumo con 12-16 GB (RTX 3060 12 GB, RTX 4070 Ti, RTX 4080): Q5_K_M, Q6_K o Q8_0.
+  - GPUs profesionales (A100, H100): f16 o Q8_0 con contexto largo, aunque el modelo no aprovecha el exceso de VRAM más allá de permitir mayor batch y contexto.
+- Cabe en GPU de consumo: sí, desde 6-8 GB de VRAM con cuantizaciones Q2_K a Q4_K_M.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, y servidores compatibles con GGUF; el tag "endpoints_compatible" sugiere también despliegue vía endpoints de Hugging Face. No se documenta soporte explícito de vLLM o TGI para el formato GGUF.
+- Latencia y throughput: no disponibles; dependen del hardware, la cuantización y la longitud de contexto, que no está documentada.
 
 ## Comparativa con modelos similares
 
-Datos del modelo base de esta ficha tomados de la informacion disponible (varios campos no estan publicados). Los datos de los modelos alternativos provienen de la documentacion publica de cada proyecto y pueden variar con el tiempo.
+No se dispone de datos de benchmarks ni de especificaciones completas (contexto, entrenamiento) que permitan una comparación rigurosa con alternativas. La siguiente tabla recoge únicamente los datos verificables de este modelo frente a referencias genéricas de la misma categoría, marcando como "no disponible" lo que no se puede confirmar.
 
-| Modelo | Parametros | Contexto | Licencia | Idiomas declarados | Formato GGUF |
+| Modelo | Parametros | Contexto | Idiomas | Licencia | Formato GGUF |
 |---|---|---|---|---|---|
-| tolk-7B (base) | 7.615.616.512 | no disponible | MIT | ru, en | Si, 12 cuantizaciones (este repositorio) |
-| Qwen2.5-7B | ~7,6 B | 128k tokens (configuracion estandar del proyecto) | Apache 2.0 | multilingue, incluye ruso e ingles | Si, cuantizaciones de la comunidad |
-| Llama-3.1-8B | ~8,03 B | 128k tokens | Llama 3.1 Community License | ingles principalmente | Si, cuantizaciones de la comunidad |
-| Mistral-7B-v0.3 | ~7,25 B | 32k tokens | Apache 2.0 | ingles principalmente | Si, cuantizaciones de la comunidad |
+| tolk-7B (este) | ≈7,6 B | No disponible | ru, en | MIT | Sí (12 cuantizaciones) |
+| Alternativa 7B bilingüe ru/en | No disponible | No disponible | No disponible | No disponible | No disponible |
+| Alternativa 7B conversacional | No disponible | No disponible | No disponible | No disponible | No disponible |
 
-Diferencias relevantes: frente a Llama-3.1-8B, la licencia MIT de tolk-7B es menos restrictiva para uso comercial; frente a Qwen2.5-7B y Mistral-7B-v0.3, el punto fuerte de tolk-7B es su orientacion declarada al ruso, aunque no hay benchmarks publicados que permitan comparar calidad. La comparacion de rendimiento entre estos modelos no puede realizarse con la informacion disponible, ya que no existen resultados de evaluacion para tolk-7B.
+No se identifican en la información proporcionada modelos comparables concretos con datos verificables; se indica "no disponible" para evitar comparaciones sin fundamento.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de benchmarks: no hay ningun dato publicado de MMLU, HumanEval, GSM8K u otras pruebas, ni del modelo base ni de las cuantizaciones, por lo que el rendimiento real es desconocido.
-- Documentacion minima: la model card describe unicamente el proceso de cuantizacion; no hay informacion sobre arquitectura, contexto, datos de entrenamiento, sesgos ni alineacion.
-- Idiomas limitados: solo se declaran ruso e ingles. El espanol no figura entre los idiomas soportados, por lo que su calidad en castellano es impredecible.
-- Riesgo de alucinacion: no cuantificado ni evaluado por el autor; al no haber datos de entrenamiento ni de ajuste, no puede estimarse la frecuencia de respuestas inventadas.
-- Degradacion por cuantizacion: Q2_K y Q3_K_S conllevan perdida de calidad notable en modelos de este tamano; el autor marca explicitamente Q3_K_M como "lower quality". Para produccion se recomienda Q4_K_M o superior.
-- Riesgo de contenido: el nombre y origen del modelo base no aportan informacion sobre filtrado de contenido; no se documentan medidas de seguridad ni moderacion.
-- Licencia: MIT en el repositorio de cuantizacion y en el modelo base segun los metadatos, lo que permite uso comercial; conviene verificar la model card del repositorio original por si se anaden condiciones adicionales.
-- Sin cuantizaciones ponderadas: el autor indica que no hay variantes weighted/imatrix, que suelen ofrecer mejor relacion calidad-tamano en cuantizaciones pequenas.
-- Metadatos inconsistentes: la fecha de publicacion registrada (2026-09-19) es posterior a la fecha de consulta habitual de los repositorios, lo que sugiere un posible error en los metadatos de Hugging Face.
-- Adopcion nula: 0 descargas y 0 likes en el momento de la consulta, lo que implica ausencia de validacion por parte de la comunidad y mayor riesgo de problemas no detectados.
-- Contexto desconocido: al no documentarse la ventana de contexto, no puede garantizarse el comportamiento en conversaciones largas ni en tareas de resumen de documentos extensos.
-- Sin soporte de tool calling documentado: no debe asumirse compatibilidad con function calling o flujos de agentes sin validacion previa.
+- Ausencia de benchmarks: no hay evidencia publicada sobre MMLU, HumanEval, GSM8K ni evaluaciones de calidad conversacional, por lo que el rendimiento real es desconocido.
+- Idiomas limitados: solo se declaran ruso e inglés; el rendimiento en castellano u otros idiomas no está garantizado y probablemente sea deficiente.
+- Contexto desconocido: al no documentarse la longitud de contexto, no se puede planificar su uso en tareas de contexto largo sin pruebas empíricas.
+- Riesgo de alucinación: inherente a los modelos de 7B sin datos de alineación documentados; no se especifican técnicas de RLHF/DPO aplicadas.
+- Cuantizaciones estáticas sin imatrix: las variantes de baja precisión (Q2_K, Q3_K) pueden degradar la calidad más que cuantizaciones ponderadas equivalentes.
+- Sesgos: no documentados; al no conocerse la composición del corpus de entrenamiento, no se pueden evaluar sesgos de género, políticos o culturales.
+- Licencia MIT: permite uso comercial sin restricciones adicionales, pero el usuario asume la responsabilidad sobre el cumplimiento de las licencias de los datos de entrenamiento originales, que no se detallan.
+- Modelo base poco documentado: la falta de información sobre RaspizdAI/tolk-7B en la model card del cuantizador limita la evaluación de su procedencia y calidad.
+- Fecha de creación futura en los metadatos (2026-09-19): conviene verificar la integridad y vigencia del repositorio antes de usarlo en producción.
 
 ## Enlaces
 
 - Repositorio GGUF: https://huggingface.co/mradermacher/tolk-7B-GGUF
 - Modelo base: https://huggingface.co/RaspizdAI/tolk-7B
-- Pagina de resumen y descargas del cuantizador: https://hf.tst.eu/model#tolk-7B-GGUF
-- README de referencia sobre uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
-- Grafico comparativo de tipos de cuantizacion (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png
-- Notas de Artefact2 sobre cuantizaciones: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
-- Preguntas frecuentes y solicitudes de cuantizacion: https://huggingface.co/mradermacher/model_requests
-- Resultados de la busqueda web: no se encontraron enlaces relevantes al modelo; los resultados obtenidos correspondian a foros de examenes de aptitud sin relacion con el proyecto.
+- Página de descargas del cuantizador: https://hf.tst.eu/model#tolk-7B-GGUF
+- README de referencia para uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Guía sobre tipos de cuantización (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- FAQ y solicitudes de cuantización de mradermacher: https://huggingface.co/mradermacher/model_requests

@@ -5,7 +5,7 @@
   "author": "fylume",
   "url": "https://huggingface.co/fylume/yaob-next-n10k-c4b",
   "created_at": "2026-11-22T20:31:11.000Z",
-  "updated_at": "2026-11-22T20:31:14.000Z",
+  "updated_at": "2026-11-24T06:48:18.000Z",
   "license": "composite-see-components",
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -34,8 +34,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "fylume/yaob-n10k-c4b-pairing",
+  "renamed_at": "2026-11-24T08:40:45.629Z",
   "benchmarks": [],
   "sources": []
 }

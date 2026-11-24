@@ -5,7 +5,7 @@
   "author": "amd",
   "url": "https://huggingface.co/amd/Qwen3.8-27B_gpuep_1.0_gpu_128",
   "created_at": "2026-08-17T11:24:23.000Z",
-  "updated_at": "2026-11-17T05:21:51.000Z",
+  "updated_at": "2026-11-24T02:30:10.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",

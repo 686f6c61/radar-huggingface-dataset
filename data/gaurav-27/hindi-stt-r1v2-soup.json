@@ -1,0 +1,53 @@
+{
+  "schema": 2,
+  "id": "Gaurav-27/hindi-stt-r1v2-soup",
+  "slug": "gaurav-27-hindi-stt-r1v2-soup",
+  "author": "Gaurav-27",
+  "url": "https://huggingface.co/Gaurav-27/hindi-stt-r1v2-soup",
+  "created_at": "2026-11-24T06:17:22.000Z",
+  "updated_at": "2026-11-24T06:20:57.000Z",
+  "license": "mixed-see-card",
+  "license_family": "unknown",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [
+    "hi"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "automatic-speech-recognition",
+    "whisper",
+    "hindi",
+    "model-soup",
+    "wise-ft",
+    "hi",
+    "base_model:Trelis/tara",
+    "base_model:finetune:Trelis/tara",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3087229512,
+  "storage_human": "3.1 GB",
+  "context_length": null,
+  "base_model": "Trelis/tara",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -2,50 +2,50 @@
 
 ## Resumen
 
-lolo_Q8y_Dialect_v5_E2B es un ajuste fino (fine-tune) del modelo base `unsloth/gemma-4-E2B-it`, desarrollado por Qusai Al-duaij (qalduaij) dentro de la denominada familia lolo de inteligencia artificial. Su objetivo declarado es la preservación y documentación del dialecto kuwaití (Q8y) y su patrimonio marítimo y social, así como la generación de narrativa radiofónica y dramática kuwaití. Se distribuye bajo licencia Apache 2.0 y está etiquetado para los idiomas árabe e inglés.
+lolo_Q8y_Dialect_v5_E2B es un ajuste fino (fine-tuning mediante LoRA) del modelo unsloth/gemma-4-E2B-it, desarrollado por el autor independiente Qusai Al-duaij (qalduaij) dentro de su ecosistema "lolo AI". El modelo está especializado en árabe kuwaití (dialecto coloquial y patrimonial) y se distribuye como un modelo compacto orientado a ejecución local y en el borde ("edge"), con variantes en formato GGUF para Ollama y LM Studio además de los pesos en safetensors.
 
-El modelo parte de la arquitectura Gemma 4 E2B en su variante instruct, sobre la que se ha aplicado un ajuste supervisado (el tag `unsloth` sugiere el uso de la librería Unsloth para el entrenamiento). Cuenta con 5.123.178.051 parámetros totales según los pesos en safetensors, y el repositorio ocupa 19,1 GB, lo que incluye pesos en safetensors y GGUF.
+El modelo parte de la arquitectura Gemma 4 E2B ("Effective 2B"), un transformer multimodal de tipo image-text-to-text. El repositorio declara 5.123.178.051 parámetros en los pesos safetensors, lo que refleja el tamaño real del checkpoint base (no los "2B efectivos" del nombre comercial). El ajuste se realiza con LoRA de rango 32 y alpha 64, y el autor declara una política lingüística de árabe estándar formal combinada con el dialecto kuwaití, además de capacidades cruzadas árabe-inglés.
 
-Es relevante ahora por su especialización vertical: frente a los modelos generalistas multilingües, este fine-tune se centra en un dialecto árabe concreto con un corpus de referencia declarado (la enciclopedia del dialecto kuwaití de Khaled Al-Rashid, un estudio de la Dra. Suha Naja y 62 fuentes audiovisuales y textuales de entrevistas, series y obras de teatro kuwaitíes). No obstante, el modelo tiene 0 descargas y 0 likes en el momento de la ficha, y no se han publicado benchmarks.
+Su relevancia es acotada pero concreta: cubre un nicho poco atendido (dialecto kuwaití) con un modelo pequeño, licencia Apache 2.0 y artefactos listos para despliegue local (GGUF Q4_K_M de 3,19 GB y Q8_0 de 4,63 GB), lo que lo hace utilizable en hardware de consumo. No obstante, se trata de un proyecto personal en desarrollo, sin benchmarks publicados ni validación independiente.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (base Gemma 4 E2B instruct) |
-| Parametros totales | 5.123.178.051 |
-| Parametros activos | no disponible |
+| Arquitectura | Transformer multimodal (image-text-to-text) derivada de Gemma 4 E2B; ajuste fino con LoRA (r=32, alpha=64) |
+| Parametros totales | 5.123.178.051 (según safetensors del repositorio) |
+| Parametros activos | no disponible (no se declara arquitectura MoE para esta variante) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | GGUF (incluido en el repo); Q8 en el nombre del modelo; otras no disponibles |
-| Idiomas soportados | arabe (ar), ingles (en) |
+| Tipos de cuantizacion | GGUF Q4_K_M (3,19 GB) y Q8_0 (4,63 GB); pesos safetensors y adaptador LoRA en safetensors |
+| Idiomas soportados | Árabe (incluido dialecto kuwaití) e inglés (ar, en) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors, GGUF |
+| Formato de pesos | safetensors (modelo y adaptador LoRA), GGUF, config.json, chat_template.jinja |
 
 ## Arquitectura y entrenamiento
 
-El modelo hereda la arquitectura del transformer decoder-only de Gemma 4 E2B en su variante instruct (`unsloth/gemma-4-E2B-it`). No se dispone de información sobre el número de tokens de entrenamiento, la composición exacta del dataset ni si se aplicaron técnicas de RLHF o DPO en el ajuste. El tag `unsloth` indica que el fine-tune se realizó con la librería Unsloth, orientada a entrenamiento eficiente en memoria.
+El modelo se construye sobre unsloth/gemma-4-E2B-it, un transformer multimodal de la familia Gemma 4 en su variante "Effective 2B" orientada a dispositivos de borde. Sobre esa base se aplica un ajuste fino con LoRA de rango 32 y alpha 64, cuyo adaptador (adapter_model.safetensors, 368,68 MB) se publica junto al modelo completo. El repositorio incluye además el tokenizador, la plantilla de chat y la configuración de procesador, lo que sugiere que se conserva la capacidad multimodal del modelo base, aunque la model card no detalla el uso de imagen en el ajuste.
 
-La model card declara que el ajuste se apoya en un corpus lingüístico específico: la enciclopedia del dialecto kuwaití del investigador Khaled Al-Rashid, un estudio de la Dra. Suha Naja y 62 fuentes audiovisuales y textuales (entrevistas, series y obras de teatro kuwaitíes). El objetivo técnico declarado es doble: fidelidad fonética y léxica al dialecto kuwaití (incluyendo fenómenos de inversión fonética y vocabulario como `قاعد`, `صج`, `شنو`, `شحقه`, `وايد`, `أثاري`, `يتراوالي`) y generación de narrativa radiofónica continua sin acotaciones de dirección intercaladas. No se documentan innovaciones arquitectónicas adicionales (decodificación especulativa, atención lineal, etc.).
+El autor declara que la base de conocimiento lingüístico proviene de "diccionarios fonéticos y patrimoniales y de textos radiofónicos y dramáticos kuwaitíes verificados". No se especifican el número de tokens de entrenamiento, la composición exacta del dataset, ni si hubo etapas de RLHF o DPO adicionales sobre el ajuste supervisado. Tampoco se documentan innovaciones técnicas propias más allá del ajuste LoRA y la política lingüística declarada (árabe estándar formal más dialecto kuwaití, con cruce árabe-inglés).
 
 ## Capacidades
 
-- Generación de texto conversacional en árabe, con especialización declarada en dialecto kuwaití.
-- Generación de narrativa radiofónica y televisiva continua, con voz de locutor o narrador y sin instrucciones de dirección intercaladas.
-- Documentación y preservación léxica del dialecto kuwaití y de su patrimonio marítimo y social.
-- Redacción de guiones dramáticos kuwaitíes.
-- Conversación multi-turno (tag `conversational`).
-- Soporte de inglés como segundo idioma declarado.
-- Compatibilidad con endpoints (tag `endpoints_compatible`).
-- No se documenta soporte de tool calling, function calling, agentes, razonamiento multi-paso, visión, audio ni modo de pensamiento explícito.
+- Generación de texto conversacional en árabe kuwaití (dialecto coloquial y patrimonial) y en árabe estándar formal.
+- Traducción y cruce lingüístico árabe-inglés.
+- Procesamiento image-text-to-text heredado del pipeline declarado del modelo base (Gemma 4 E2B).
+- Conversación multi-turno mediante plantilla de chat propia (chat_template.jinja).
+- Despliegue local vía Ollama y LM Studio con los artefactos GGUF incluidos.
+- No se documenta soporte explícito de tool calling, function calling ni razonamiento multi-paso con agentes.
+- No se documenta modo "thinking", audio ni otras capacidades especiales.
 
 ## Casos de uso
 
-- Producción de guiones radiofónicos: el modelo puede redactar monólogos y piezas de locución en dialecto kuwaití con fluidez continua, sin acotaciones de dirección, lo que encaja con el flujo de trabajo de emisoras locales.
-- Preservación lingüística y documentación: útil para generar textos de referencia, ejemplos de uso y material didáctico sobre el dialecto kuwaití a partir de su corpus de entrenamiento declarado.
-- Guionización dramática: redacción de diálogos para series y obras de teatro costumbristas kuwaitíes, aprovechando el registro coloquial aprendido.
-- Contenido divulgativo sobre patrimonio marítimo y social: generación de piezas narrativas sobre historia y tradiciones kuwaitíes para museos, centros culturales o medios.
-- Asistencia editorial para medios en árabe: borradores de piezas breves en registro coloquial kuwaití que un editor humano revisa y ajusta antes de publicar.
-- Prototipado de asistentes conversacionales en dialecto: base para experimentar con chatbots orientados a audiencias kuwaitíes, aunque sin datos de rendimiento publicados que garanticen calidad en producción.
+- Asistentes conversacionales en kuwaití para atención al cliente local: el modelo puede mantener diálogos multi-turno en dialecto kuwaití, un registro que los modelos generalistas rara vez cubren con naturalidad, y ejecutarse en local sin enviar datos a la nube.
+- Traducción y adaptación árabe-inglés en entornos institucionales kuwaitíes: útil para preprocesar documentación bilingüe o normalizar texto dialectal hacia árabe formal.
+- Despliegue en el borde y en dispositivos con recursos limitados: los GGUF Q4_K_M (3,19 GB) y Q8_0 (4,63 GB) permiten ejecución en portátiles y estaciones de trabajo sin GPU dedicada de gran tamaño.
+- Prototipado de aplicaciones de voz o radio: dado el origen declarado del corpus (textos radiofónicos y dramáticos), encaja en la generación de guiones o respuestas con registro dialectal kuwaití.
+- Investigación lingüística sobre dialecto kuwaití: como modelo pequeño y de licencia permisiva, sirve para experimentar con normalización, transliteración o análisis de registro coloquial.
+- Integración en pipelines de Hugging Face Transformers: el repositorio incluye config, tokenizer y plantilla de chat, lo que facilita su uso programático en prototipos de investigación.
+- Educación y demostraciones de IA soberana local: el modelo se presenta como parte de una iniciativa de "IA soberana" kuwaití, adecuado para talleres o demos de despliegue local sin dependencia de servicios externos.
 
 ## Benchmarks y rendimiento
 
@@ -53,34 +53,39 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: con 5.123.178.051 parámetros, en FP16 se requieren aproximadamente 10,2 GB solo para los pesos; en cuantización de 8 bits, unos 5,1 GB; en 4 bits, unos 2,6 GB, a los que hay que sumar la memoria para el contexto y el runtime.
-- GPU recomendadas: no disponible en la información proporcionada. Por tamaño, cabría en GPUs de consumo con al menos 12-16 GB de VRAM en FP16, y en GPUs de 8 GB con cuantización de 8 o 4 bits, aunque el autor no lo especifica.
-- Cabe en GPU de consumo: previsiblemente sí en tarjetas de 8 GB o más con cuantización, si bien no hay confirmación del autor.
-- Opciones de despliegue: al incluir pesos GGUF en el repositorio, es compatible con llama.cpp y con entornos derivados como Ollama; el tag `endpoints_compatible` sugiere despliegue vía endpoints de Hugging Face. No se documenta compatibilidad explícita con vLLM o TGI.
-- Latencia y throughput estimados: no disponible.
+- VRAM estimada para inferencia: aproximadamente 3,5-4 GB con cuantización Q4_K_M y 5-5,5 GB con Q8_0, considerando pesos más overhead de contexto.
+- Pesos completos en safetensors: unos 10 GB en fp16 (5.123 millones de parámetros), más memoria para activaciones y KV cache.
+- GPU recomendadas: RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4090, A100 o H100 para mayor throughput; el modelo es pequeño y no requiere GPU de centro de datos.
+- Cabe en GPU de consumo: sí, en tarjetas con 8 GB o más de VRAM usando GGUF Q4_K_M o Q8_0; también es viable en CPU con llama.cpp u Ollama.
+- Opciones de despliegue: Ollama (`ollama run hf.co/qalduaij/lolo_Q8y_Dialect_v5_E2B:Q8_0` o `:Q4_K_M`), LM Studio, llama.cpp (GGUF), Transformers con safetensors y el adaptador LoRA.
+- Latencia y throughput estimados: no disponibles; no se han publicado mediciones.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Idiomas | Licencia | Especializacion |
+| Modelo | Parametros | Contexto | Idiomas | Licencia | Notas |
 |---|---|---|---|---|---|
-| lolo_Q8y_Dialect_v5_E2B | 5.123.178.051 | no disponible | ar, en | Apache 2.0 | Dialecto kuwaití y narrativa radiofónica |
-| unsloth/gemma-4-E2B-it (base) | no disponible en la informacion | no disponible | multilingue (no detallado) | no disponible en la informacion | Modelo instruct generalista |
-| Alternativas de dialecto arabe | no disponible | no disponible | no disponible | no disponible | no disponible |
-
-No se dispone de información sobre otros modelos comparables de la misma categoría (fine-tunes de dialecto árabe sobre Gemma 4) en la documentación proporcionada.
+| lolo_Q8y_Dialect_v5_E2B | 5.123 M (checkpoint real) | no disponible | ar, en | Apache 2.0 | Especializado en dialecto kuwaití; GGUF incluidos |
+| unsloth/gemma-4-E2B-it (base) | no disponible en la informacion | no disponible | multilingüe (Gemma) | licencia Gemma (no confirmada aquí) | Modelo base sin especialización dialectal |
+| lolo_Q8y_Dialect_v4_26B_A4B | no disponible | no disponible | ar, en | no disponible | Generación anterior del mismo autor, arquitectura MoE (Gemma 4 26B-A4B) |
+| lolo_Q8y_Dialect_v3_31B | no disponible | no disponible | ar, en | no disponible | Generación anterior, Gemma 4 31B, mayor tamaño |
 
 ## Limitaciones y advertencias
 
-- Sesgos conocidos: no documentados por el autor; al entrenarse sobre un corpus de medios y obras de teatro kuwaitíes, puede reproducir estereotipos o registros propios de ese material.
-- Riesgo de alucinación: no evaluado; no hay benchmarks ni evaluaciones publicadas que cuantifiquen la fiabilidad factual.
-- Limitaciones de contexto e idioma: la longitud de contexto no está documentada; el soporte lingüístico declarado se limita a árabe e inglés, con sesgo fuerte hacia el dialecto kuwaití, lo que puede degradar el rendimiento en árabe estándar moderno o en otros dialectos.
-- Restricciones de licencia: Apache 2.0 permite uso comercial, pero conviene verificar las condiciones del modelo base `unsloth/gemma-4-E2B-it` y de la licencia Gemma subyacente antes de un despliegue comercial.
-- Caveats para producción: el modelo tiene 0 descargas y 0 likes, no cuenta con benchmarks ni evaluaciones independientes, y su model card está redactada principalmente en árabe; no se recomienda su uso en producción sin una evaluación propia.
-- El nombre del modelo incluye "Q8y" y "Q8", lo que puede inducir a confusión sobre si se refiere a cuantización Q8 o al gentilicio kuwaití (Q8y); el repositorio incluye tanto safetensors como GGUF.
+- Proyecto personal en desarrollo: el propio autor declara no ser programador profesional ni contar con equipo científico, y que el modelo sigue evolucionando.
+- Ausencia total de benchmarks publicados: no hay evidencia cuantitativa de calidad, lo que impide compararlo objetivamente con alternativas.
+- Riesgo de alucinación no evaluado: al ser un ajuste fino sobre un modelo pequeño, la fiabilidad factual en dominios especializados no está verificada.
+- Cobertura limitada a árabe e inglés: no se declaran otros idiomas; el rendimiento en árabe estándar frente a dialecto kuwaití puede variar y no está medido.
+- Longitud de contexto no documentada: no se puede planificar su uso en tareas de contexto largo sin verificación empírica.
+- Licencia Apache 2.0 declarada, pero conviene verificar la licencia del modelo base Gemma 4 E2B, que puede imponer condiciones adicionales al uso comercial derivado.
+- Capacidades multimodales heredadas pero no validadas en el ajuste: el pipeline image-text-to-text no garantiza que el fine-tuning preserve el rendimiento en visión.
+- Sin soporte documentado de tool calling ni agentes: no recomendable para pipelines que dependan de function calling sin pruebas previas.
+- Corpus de entrenamiento no auditado: la composición del dataset (textos radiofónicos y dramáticos) puede introducir sesgos de registro o de contenido no evaluados.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/qalduaij/lolo_Q8y_Dialect_v5_E2B
+- Modelo en Hugging Face: https://huggingface.co/qalduaij/lolo_Q8y_Dialect_v5_E2B
 - Modelo base: https://huggingface.co/unsloth/gemma-4-E2B-it
-- Unsloth: https://github.com/unslothai/unsloth
-- No se han encontrado en la búsqueda web papers, blogs, repositorios ni demos adicionales asociados a este modelo.
+- Sitio del autor: https://www.alduaij.uk
+- Discusiones del modelo: https://huggingface.co/qalduaij/lolo_Q8y_Dialect_v5_E2B/discussions
+- Modelo de la familia (general): https://huggingface.co/qalduaij/lolo_Q8y_General
+- Modelo de la familia (legal): https://huggingface.co/qalduaij/lolo_Q8y_Legal

@@ -1,0 +1,80 @@
+{
+  "schema": 2,
+  "id": "maxvision/Qwen3.5-9B-Analgesia-GGUF",
+  "slug": "maxvision-qwen3-5-9b-analgesia-gguf",
+  "author": "maxvision",
+  "url": "https://huggingface.co/maxvision/Qwen3.5-9B-Analgesia-GGUF",
+  "created_at": "2026-11-24T09:55:35.000Z",
+  "updated_at": "2026-11-24T10:07:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "qwen3.5",
+    "activation-steering",
+    "interpretability",
+    "ai-welfare",
+    "text-generation",
+    "en",
+    "base_model:maxvision/Qwen3.5-9B-Analgesia",
+    "base_model:quantized:maxvision/Qwen3.5-9B-Analgesia",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9197093888,
+  "parameters_human": "9.20B",
+  "storage_bytes": 33973470976,
+  "storage_human": "34.0 GB",
+  "context_length": 262144,
+  "base_model": "maxvision/Qwen3.5-9B-Analgesia",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MaxVision | Rugged Portable Workstations, Servers & Displays",
+      "url": "https://www.maxvision.com/",
+      "snippet": "From shipboard consoles to UAV ground control stations, our rugged MaxVision systems deliver mission-critical compute, display, …"
+    },
+    {
+      "title": "Maxvision Technology Corp.",
+      "url": "https://en.maxvision.com.cn/",
+      "snippet": "Data Security At Maxvision, the security of sensitive data is strongly emphasized. Therefore, we make a firm commitment that: Data …"
+    },
+    {
+      "title": "Rugged Portable Workstations & Edge Servers | MaxVision",
+      "url": "https://www.maxvision.com/products/",
+      "snippet": "MaxVision delivers high-performance, fully customizable portable workstations, servers, computers and displays built from the …"
+    },
+    {
+      "title": "Qui est Maxvision ? - Robot Magazine",
+      "url": "https://www.robot-magazine.fr/qui-est-maxvision/",
+      "snippet": "Maxvision est une entreprise technologique spécialisée dans la robotique intelligente et l’intelligence artificielle. Elle développe des …"
+    },
+    {
+      "title": "MaxVision",
+      "url": "https://www.maxvision.io/",
+      "snippet": "MaxVision equips professional A/V and music industry manufacturers with time tested tools to visualize data and track sell-through …"
+    }
+  ]
+}

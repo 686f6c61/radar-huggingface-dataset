@@ -1,0 +1,49 @@
+{
+  "schema": 2,
+  "id": "RainyBot/SeGo-pi-RealMan-RightHandBottle",
+  "slug": "rainybot-sego-pi-realman-righthandbottle",
+  "author": "RainyBot",
+  "url": "https://huggingface.co/RainyBot/SeGo-pi-RealMan-RightHandBottle",
+  "created_at": "2026-11-24T04:41:23.000Z",
+  "updated_at": "2026-11-24T04:43:02.000Z",
+  "license": "apache-2.0-and-gemma-terms",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "robotics",
+    "openpi",
+    "pi0",
+    "pytorch",
+    "realman",
+    "en",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3238048528,
+  "parameters_human": "3.24B",
+  "storage_bytes": 6489160463,
+  "storage_human": "6.5 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

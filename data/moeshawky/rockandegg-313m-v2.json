@@ -5,7 +5,7 @@
   "author": "moeshawky",
   "url": "https://huggingface.co/moeshawky/RockAndEgg-313M-v2",
   "created_at": "2026-11-02T23:55:59.000Z",
-  "updated_at": "2026-11-16T19:31:18.000Z",
+  "updated_at": "2026-11-23T12:35:54.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "feature-extraction",
@@ -35,7 +35,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 589,
+  "downloads_30d": 609,
   "trending_score": 0,
   "parameters": 312892928,
   "parameters_human": "312.9M",

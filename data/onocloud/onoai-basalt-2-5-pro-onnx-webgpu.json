@@ -9,19 +9,19 @@
   "license": "onocloud-sovereign-license",
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
-  "library": "onnxruntime-genai",
+  "library": "basalt",
   "languages": [
     "en",
     "ar"
   ],
   "tags": [
-    "onnxruntime-genai",
+    "basalt",
     "onnx",
     "qwen2",
     "onocloud",
     "onoai",
-    "basalt",
     "webgpu",
+    "onnxruntime-genai",
     "transformers-js",
     "code-generation",
     "flowcode",

@@ -5,7 +5,7 @@
   "author": "egolearn",
   "url": "https://huggingface.co/egolearn/babycl-resnext50-walkingtours-supcon-seed1337",
   "created_at": "2026-11-20T22:41:46.000Z",
-  "updated_at": "2026-11-20T22:42:01.000Z",
+  "updated_at": "2026-11-23T22:53:50.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "feature-extraction",
@@ -40,8 +40,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "egolearn/babycl-resnext50-walkingtours",
+  "renamed_at": "2026-11-24T08:11:17.565Z",
   "benchmarks": [],
   "sources": []
 }

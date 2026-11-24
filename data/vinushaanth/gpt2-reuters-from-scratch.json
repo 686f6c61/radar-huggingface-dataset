@@ -1,0 +1,52 @@
+{
+  "schema": 2,
+  "id": "Vinushaanth/gpt2-reuters-from-scratch",
+  "slug": "vinushaanth-gpt2-reuters-from-scratch",
+  "author": "Vinushaanth",
+  "url": "https://huggingface.co/Vinushaanth/gpt2-reuters-from-scratch",
+  "created_at": "2026-11-24T06:07:08.000Z",
+  "updated_at": "2026-11-24T06:12:15.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 30713856,
+  "parameters_human": "30.7M",
+  "storage_bytes": 122862968,
+  "storage_human": "123 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "adding directory to sys.path /PYTHONPATH - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/16114391/adding-directory-to-sys-path-pythonpath",
+      "snippet": "I am trying to import a module from a particular directory. The problem is that if I use sys.path.append(mod_directory) to append the …Read more"
+    }
+  ]
+}

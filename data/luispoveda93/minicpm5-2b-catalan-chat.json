@@ -26,7 +26,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 329,
+  "downloads_30d": 308,
   "trending_score": 0,
   "parameters": 2516756480,
   "parameters_human": "2.52B",
@@ -46,31 +46,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Classic Fish Cakes - The Daring Gourmet",
-      "url": "https://www.daringgourmet.com/classic-fish-cakes/",
-      "snippet": "May 30, 2023 · Delightfully crispy on the outside, tender, moist and flaky on the inside, this BEST fish cakes recipe is the perfect way …"
-    },
-    {
-      "title": "The Best Fish Cakes Recipe - Southside Kitchen",
-      "url": "https://southsidekitchen.com/fish-cakes/",
-      "snippet": "May 16, 2021 · A straightforward recipe that creates the most delicious fish cakes you’ll ever eat! Served with a side of my Tartare …"
-    },
-    {
-      "title": "Crispy Fish Cakes - Taste of Home",
-      "url": "https://www.tasteofhome.com/recipes/golden-fish-cakes/",
-      "snippet": "Jan 7, 2026 · These irresistibly crispy fish cakes are packed with protein and savory seasonings. Forget about frozen fish sticks. This …"
-    },
-    {
-      "title": "Best Ever Fish Cakes Recipe In 30Min - Kitchen Rice",
-      "url": "https://www.kitchenrice.com/best-ever-homemade-fish-cakes-recipe/",
-      "snippet": "May 29, 2025 · Discover how to make the Best Ever Homemade Fish Cakes Recipe, Crispy outside, flaky inside, and bursting with …"
-    },
-    {
-      "title": "The Crispiest Lightest Homemade Tasty Fish Cakes Recipe",
-      "url": "https://seafood-portal.com/recipes/crispy-homemade-fish-cakes/",
-      "snippet": "Oct 20, 2025 · These homemade fish cakes are a triumph of texture and flavour. Serve them piping hot alongside a vibrant salad or …"
-    }
-  ]
+  "sources": []
 }

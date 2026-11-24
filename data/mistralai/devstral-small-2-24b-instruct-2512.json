@@ -5,7 +5,7 @@
   "author": "mistralai",
   "url": "https://huggingface.co/mistralai/Devstral-Small-2-24B-Instruct-2512",
   "created_at": "2025-11-28T11:27:11.000Z",
-  "updated_at": "2026-07-15T12:20:36.000Z",
+  "updated_at": "2026-11-24T08:48:30.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -25,7 +25,7 @@
     "region:us"
   ],
   "likes": 718,
-  "downloads_30d": 18300,
+  "downloads_30d": 17681,
   "trending_score": 7,
   "parameters": 24011361280,
   "parameters_human": "24.01B",

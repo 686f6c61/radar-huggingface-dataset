@@ -5,7 +5,7 @@
   "author": "divinetribe",
   "url": "https://huggingface.co/divinetribe/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-MLX-8bit",
   "created_at": "2026-10-15T18:15:42.000Z",
-  "updated_at": "2026-11-22T15:22:11.000Z",
+  "updated_at": "2026-11-23T15:58:48.000Z",
   "license": "openmdw-1.1",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -31,7 +31,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 1238,
+  "downloads_30d": 1292,
   "trending_score": 0,
   "parameters": 74885081096,
   "parameters_human": "74.89B",

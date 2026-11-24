@@ -1,0 +1,92 @@
+{
+  "schema": 2,
+  "id": "mistralai/Mistral-Large-Instruct-2411",
+  "slug": "mistralai-mistral-large-instruct-2411",
+  "author": "mistralai",
+  "url": "https://huggingface.co/mistralai/Mistral-Large-Instruct-2411",
+  "created_at": "2024-11-14T20:03:52.000Z",
+  "updated_at": "2026-11-24T08:07:22.000Z",
+  "license": "mrl",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "vllm",
+  "languages": [
+    "en",
+    "fr",
+    "de",
+    "es",
+    "it",
+    "pt",
+    "zh",
+    "ja",
+    "ru",
+    "ko"
+  ],
+  "tags": [
+    "vllm",
+    "safetensors",
+    "mistral",
+    "mistral-common",
+    "en",
+    "fr",
+    "de",
+    "es",
+    "it",
+    "pt",
+    "zh",
+    "ja",
+    "ru",
+    "ko",
+    "license:other",
+    "eval-results",
+    "region:us"
+  ],
+  "likes": 290,
+  "downloads_30d": 14557,
+  "trending_score": 0,
+  "parameters": 122610069504,
+  "parameters_human": "122.61B",
+  "storage_bytes": 490441047010,
+  "storage_human": "490.4 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mistral | N°1 de l'IA souveraine, modèles open weight",
+      "url": "https://mistral.ai/fr/",
+      "snippet": "Mistral AI conçoit des modèles de pointe à poids ouverts que vous possédez. Personnaliser avec Forge, déployer les agents avec …Read more"
+    },
+    {
+      "title": "Mistral | #1 in Sovereign AI: Frontier Open Models You Own",
+      "url": "https://mistral.ai/",
+      "snippet": "Mistral AI builds frontier open-weight models you own. Customize with Forge, deploy agents with Studio, run on-prem, your VPC, or …Read more"
+    },
+    {
+      "title": "Login - Mistral AI",
+      "url": "https://chat.mistral.ai/login",
+      "snippet": "We couldn't resume your sign-in. Make sure cookies are enabled for this site, then try again. Try again"
+    },
+    {
+      "title": "mistralai · PyPI",
+      "url": "https://pypi.org/project/mistralai/",
+      "snippet": "Dec 11, 2023 · The Mistral class implements the context manager protocol and registers a finalizer function to close the underlying …Read more"
+    },
+    {
+      "title": "Login - Mistral AI",
+      "url": "https://console.mistral.ai/home",
+      "snippet": "Access and manage Mistral AI's products, user settings, billing, and administrative tasks through the unified Administration Console."
+    }
+  ]
+}

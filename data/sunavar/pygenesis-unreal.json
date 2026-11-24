@@ -5,7 +5,7 @@
   "author": "SuNavar",
   "url": "https://huggingface.co/SuNavar/Pygenesis-Unreal",
   "created_at": "2026-11-20T15:18:53.000Z",
-  "updated_at": "2026-11-20T16:02:21.000Z",
+  "updated_at": "2026-11-23T09:04:58.000Z",
   "license": "llama3.1",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -31,7 +31,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 214,
+  "downloads_30d": 216,
   "trending_score": 0,
   "parameters": 8030261312,
   "parameters_human": "8.03B",

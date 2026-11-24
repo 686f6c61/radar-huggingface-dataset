@@ -9,7 +9,7 @@
   "license": "qwen-community-license-1.0",
   "license_family": "non-commercial",
   "pipeline_tag": "text-generation",
-  "library": null,
+  "library": "basalt",
   "languages": [],
   "tags": [
     "basalt",

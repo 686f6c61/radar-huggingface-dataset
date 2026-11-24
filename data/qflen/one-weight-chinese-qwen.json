@@ -5,7 +5,7 @@
   "author": "qflen",
   "url": "https://huggingface.co/qflen/one-weight-chinese-qwen",
   "created_at": "2026-11-23T08:13:29.000Z",
-  "updated_at": "2026-11-23T08:15:33.000Z",
+  "updated_at": "2026-11-23T09:52:27.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -32,7 +32,7 @@
     "region:us"
   ],
   "likes": 1,
-  "downloads_30d": 0,
+  "downloads_30d": 53,
   "trending_score": 0,
   "parameters": 494032768,
   "parameters_human": "494.0M",

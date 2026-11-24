@@ -9,7 +9,7 @@
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
-  "library": null,
+  "library": "basalt",
   "languages": [],
   "tags": [
     "basalt",

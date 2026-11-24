@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/Room-Tone-31B-i1-GGUF",
   "created_at": "2026-11-08T16:47:05.000Z",
-  "updated_at": "2026-11-20T19:07:29.000Z",
+  "updated_at": "2026-11-23T19:50:03.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -34,7 +34,7 @@
     "not-for-all-audiences"
   ],
   "likes": 0,
-  "downloads_30d": 6321,
+  "downloads_30d": 6642,
   "trending_score": 0,
   "parameters": 30697345596,
   "parameters_human": "30.70B",

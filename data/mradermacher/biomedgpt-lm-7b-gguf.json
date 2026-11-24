@@ -1,0 +1,50 @@
+{
+  "schema": 2,
+  "id": "mradermacher/BioMedGPT-LM-7B-GGUF",
+  "slug": "mradermacher-biomedgpt-lm-7b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/BioMedGPT-LM-7B-GGUF",
+  "created_at": "2026-11-24T06:00:04.000Z",
+  "updated_at": "2026-11-24T06:06:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "medical",
+    "en",
+    "dataset:biomed",
+    "base_model:gmxn/BioMedGPT-LM-7B",
+    "base_model:quantized:gmxn/BioMedGPT-LM-7B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6738415616,
+  "parameters_human": "6.74B",
+  "storage_bytes": 59564796800,
+  "storage_human": "59.6 GB",
+  "context_length": 4096,
+  "base_model": "gmxn/BioMedGPT-LM-7B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

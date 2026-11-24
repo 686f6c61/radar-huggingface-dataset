@@ -5,7 +5,7 @@
   "author": "racai",
   "url": "https://huggingface.co/racai/borg",
   "created_at": "2026-11-23T15:22:24.000Z",
-  "updated_at": "2026-11-23T15:33:31.000Z",
+  "updated_at": "2026-11-24T08:19:00.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -18,7 +18,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 47,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

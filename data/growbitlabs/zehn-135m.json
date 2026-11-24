@@ -50,16 +50,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Open AI Models | GrowBitLabs",
-      "url": "https://growbitlabs.com/open-models",
-      "snippet": "Small models for serious retrieval. GrowBitLabs publishes practical model releases for semantic search, private RAG, local-first AI products, and efficient deployment paths where control matters."
-    },
-    {
-      "title": "Chamath’s AI coding startup 8090 raises $135M - TNW",
-      "url": "https://thenextweb.com/news/chamath-palihapitiya-8090-135m-series-a-ai-coding",
-      "snippet": "Chamath Palihapitiya has raised $135M led by Salesforce for 8090, his AI coding startup, and is stepping in as CEO for the first time since Facebook."
-    }
-  ]
+  "sources": []
 }

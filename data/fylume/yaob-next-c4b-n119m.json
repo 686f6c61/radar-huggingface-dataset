@@ -5,7 +5,7 @@
   "author": "fylume",
   "url": "https://huggingface.co/fylume/yaob-next-c4b-n119m",
   "created_at": "2026-11-23T10:56:04.000Z",
-  "updated_at": "2026-11-23T12:11:46.000Z",
+  "updated_at": "2026-11-24T06:04:54.000Z",
   "license": "composite-see-licenses",
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -25,8 +25,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 45460424688,
-  "storage_human": "45.5 GB",
+  "storage_bytes": 90920840862,
+  "storage_human": "90.9 GB",
   "context_length": null,
   "base_model": null,
   "formats": [
@@ -38,8 +38,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "fylume/yaob-n119m-c4b",
+  "renamed_at": "2026-11-24T08:40:44.832Z",
   "benchmarks": [],
   "sources": []
 }

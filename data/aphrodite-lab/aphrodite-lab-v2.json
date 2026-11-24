@@ -1,0 +1,68 @@
+{
+  "schema": 2,
+  "id": "aphrodite-lab/aphrodite-lab-v2",
+  "slug": "aphrodite-lab-aphrodite-lab-v2",
+  "author": "aphrodite-lab",
+  "url": "https://huggingface.co/aphrodite-lab/aphrodite-lab-v2",
+  "created_at": "2026-11-24T10:36:40.000Z",
+  "updated_at": "2026-11-24T10:39:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gemma4",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 31273088876,
+  "parameters_human": "31.27B",
+  "storage_bytes": 62583982530,
+  "storage_human": "62.6 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Aphrodite, déesse grecque de l'amour et de la beauté",
+      "url": "https://www.comprendre-la-mythologie.fr/qui-est-aphrodite/",
+      "snippet": "Jun 30, 2026 · Aphrodite est la déesse grecque de l’amour, du désir, de la séduction et de la beauté. Figure majeure du panthéon …"
+    },
+    {
+      "title": "Aphrodite - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Aphrodite",
+      "snippet": "Aphrodite (/ ˌæfrəˈdaɪtiː / ⓘ) [a] is an ancient Greek goddess associated with love and beauty. Aphrodite's main cult centers were …"
+    },
+    {
+      "title": "Aphrodite, déesse de l'amour et de la beauté : Généalogie, mythes et ...",
+      "url": "https://www.dieux-et-heros-grecs.fr/aphrodite.html",
+      "snippet": "Aphrodite est la déesse de l'amour et de la beauté. Ses parents sont Zeus et Dioné selon l'iliade. En tant que fille de Zeus, Aphrodite …"
+    },
+    {
+      "title": "Aphrodite (Vénus), Déesse de l'Amour - Mythologie Grecque",
+      "url": "https://lamythologie.fr/mythologie-grecque/dieux-olympiens/aphrodite/",
+      "snippet": "Dans la mythologie archaïque, Aphrodite est la fille de Zeus et de Dioné (parèdre de Zeus et parfois déesse de la vie agraire). A une …"
+    },
+    {
+      "title": "Aphrodite | Mythologie grecque",
+      "url": "https://www.dictionnaire-mythologie.com/aphrodite.html",
+      "snippet": "Aphrodite Aphrodite est la déesse de l’Amour, de la Beauté, de la Sexualité, de la Procréation. Elle siège auprès de Zeus sur le mont …"
+    }
+  ]
+}

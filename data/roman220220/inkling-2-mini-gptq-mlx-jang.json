@@ -5,7 +5,7 @@
   "author": "roman220220",
   "url": "https://huggingface.co/roman220220/Inkling-2-Mini-gptq-mlx-jang",
   "created_at": "2026-11-23T02:05:20.000Z",
-  "updated_at": "2026-11-23T02:05:57.000Z",
+  "updated_at": "2026-11-23T02:38:16.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -31,7 +31,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 93,
   "trending_score": 0,
   "parameters": 26706454912,
   "parameters_human": "26.71B",

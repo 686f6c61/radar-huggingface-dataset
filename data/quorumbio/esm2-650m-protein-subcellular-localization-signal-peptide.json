@@ -1,0 +1,82 @@
+{
+  "schema": 2,
+  "id": "quorumbio/esm2-650m-protein-subcellular-localization-signal-peptide",
+  "slug": "quorumbio-esm2-650m-protein-subcellular-localization-signal-peptide",
+  "author": "quorumbio",
+  "url": "https://huggingface.co/quorumbio/esm2-650m-protein-subcellular-localization-signal-peptide",
+  "created_at": "2026-11-24T04:39:37.000Z",
+  "updated_at": "2026-11-24T04:50:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "onnx",
+    "safetensors",
+    "biology",
+    "bioinformatics",
+    "protein",
+    "protein-language-model",
+    "subcellular-localization",
+    "signal-peptide",
+    "esm2",
+    "uniprot",
+    "dataset:quorumbio/swissprot-subcellular-localization-signal-peptide",
+    "base_model:biohub/esm2_t33_650M_UR50D",
+    "base_model:quantized:biohub/esm2_t33_650M_UR50D",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 651056064,
+  "parameters_human": "651.1M",
+  "storage_bytes": 5855606228,
+  "storage_human": "5.9 GB",
+  "context_length": null,
+  "base_model": "facebook/esm2_t33_650M_UR50D",
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "Protein subcellular localization (10 classes, multi-label)",
+      "dataset": "Swiss-Prot homology-partitioned split (test)",
+      "metric": "Macro AUROC",
+      "value": 0.935
+    },
+    {
+      "task": "Protein subcellular localization (10 classes, multi-label)",
+      "dataset": "Swiss-Prot homology-partitioned split (test)",
+      "metric": "Macro F1 (validation-chosen thresholds)",
+      "value": 0.655
+    },
+    {
+      "task": "Signal peptide presence",
+      "dataset": "Swiss-Prot homology-partitioned split (test)",
+      "metric": "AUROC",
+      "value": 0.992
+    },
+    {
+      "task": "Signal peptide presence",
+      "dataset": "Swiss-Prot homology-partitioned split (test)",
+      "metric": "MCC (validation-chosen threshold)",
+      "value": 0.946
+    }
+  ],
+  "sources": []
+}

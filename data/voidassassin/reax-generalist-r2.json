@@ -1,0 +1,42 @@
+{
+  "schema": 2,
+  "id": "voidassassin/reax-generalist-r2",
+  "slug": "voidassassin-reax-generalist-r2",
+  "author": "voidassassin",
+  "url": "https://huggingface.co/voidassassin/reax-generalist-r2",
+  "created_at": "2026-11-24T10:03:25.000Z",
+  "updated_at": "2026-11-24T10:25:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gemma4",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 31273088876,
+  "parameters_human": "31.27B",
+  "storage_bytes": 125130311770,
+  "storage_human": "125.1 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

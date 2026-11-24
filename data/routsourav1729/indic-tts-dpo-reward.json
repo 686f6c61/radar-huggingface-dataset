@@ -5,7 +5,7 @@
   "author": "routsourav1729",
   "url": "https://huggingface.co/routsourav1729/indic-tts-dpo-reward",
   "created_at": "2026-11-23T06:05:21.000Z",
-  "updated_at": "2026-11-23T06:05:22.000Z",
+  "updated_at": "2026-11-23T07:20:00.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-to-speech",
@@ -17,9 +17,10 @@
   "tags": [
     "text-to-speech",
     "dpo",
+    "grpo",
     "reward-model",
-    "preference-data",
     "speech-evaluation",
+    "cfg-distillation",
     "hi",
     "en",
     "region:us"

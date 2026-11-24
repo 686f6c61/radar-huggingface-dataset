@@ -5,10 +5,10 @@
   "author": "UltimateIntent",
   "url": "https://huggingface.co/UltimateIntent/DarkGlimmer-30B-GGUF",
   "created_at": "2026-11-15T00:47:32.000Z",
-  "updated_at": "2026-11-18T12:37:57.000Z",
+  "updated_at": "2026-11-23T19:29:25.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
-  "pipeline_tag": "text-generation",
+  "pipeline_tag": "image-text-to-text",
   "library": "gguf",
   "languages": [
     "en"
@@ -23,10 +23,9 @@
     "heretic",
     "mature-fiction",
     "nsfw",
-    "text-only",
     "not-for-all-audiences",
     "erp",
-    "text-generation",
+    "image-text-to-text",
     "en",
     "base_model:meta-models/Muse-Glimmer-30B",
     "base_model:finetune:meta-models/Muse-Glimmer-30B",
@@ -35,7 +34,7 @@
     "region:us",
     "conversational"
   ],
-  "likes": 17,
+  "likes": 18,
   "downloads_30d": 8680,
   "trending_score": 0,
   "parameters": 27854794240,

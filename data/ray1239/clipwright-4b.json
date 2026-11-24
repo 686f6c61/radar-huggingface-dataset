@@ -32,7 +32,7 @@
     "region:us"
   ],
   "likes": 2,
-  "downloads_30d": 334,
+  "downloads_30d": 336,
   "trending_score": 0,
   "parameters": 4326350848,
   "parameters_human": "4.33B",
@@ -53,16 +53,5 @@
   "renamed_to": "mohammed-usmani/clipwright-4b",
   "renamed_at": "2026-11-13T03:50:25.262Z",
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Ray1239 (Mohammed Usmani) - Hugging Face",
-      "url": "https://huggingface.co/Ray1239/models",
-      "snippet": "Ray1239/finetuned-sentiment-model-roberta Text Classification • 0.1B•Updated Jun 30, 2025• 3"
-    },
-    {
-      "title": "Ray1239/ffmpeg-model · Hugging Face",
-      "url": "https://huggingface.co/Ray1239/ffmpeg-model",
-      "snippet": "Instructions to use Ray1239/ffmpeg-model with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Notebooks Google Colab Kaggle Local AppsSettings llama.cpp How to use Ray1239/ffmpeg-model with llama.cpp: Install (macOS, Linux)"
-    }
-  ]
+  "sources": []
 }

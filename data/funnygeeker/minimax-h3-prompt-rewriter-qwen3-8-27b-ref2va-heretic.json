@@ -5,7 +5,7 @@
   "author": "funnygeeker",
   "url": "https://huggingface.co/funnygeeker/MiniMax-H3-Prompt-Rewriter-Qwen3.8-27B-Ref2VA-heretic",
   "created_at": "2026-11-16T13:05:30.000Z",
-  "updated_at": "2026-11-17T15:52:32.000Z",
+  "updated_at": "2026-11-23T20:28:13.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",

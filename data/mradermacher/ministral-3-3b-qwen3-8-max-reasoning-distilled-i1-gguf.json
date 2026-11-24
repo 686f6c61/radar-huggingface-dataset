@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/Ministral-3-3B-Qwen3.8-Max-Reasoning-Distilled-i1-GGUF",
   "created_at": "2026-10-27T09:41:01.000Z",
-  "updated_at": "2026-11-20T15:44:22.000Z",
+  "updated_at": "2026-11-23T16:28:12.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -33,7 +33,7 @@
     "imatrix"
   ],
   "likes": 1,
-  "downloads_30d": 5680,
+  "downloads_30d": 5904,
   "trending_score": 0,
   "parameters": 3429006336,
   "parameters_human": "3.43B",

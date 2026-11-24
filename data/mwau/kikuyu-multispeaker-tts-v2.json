@@ -1,0 +1,52 @@
+{
+  "schema": 2,
+  "id": "Mwau/kikuyu-multispeaker-tts-v2",
+  "slug": "mwau-kikuyu-multispeaker-tts-v2",
+  "author": "Mwau",
+  "url": "https://huggingface.co/Mwau/kikuyu-multispeaker-tts-v2",
+  "created_at": "2026-11-24T04:58:46.000Z",
+  "updated_at": "2026-11-24T05:28:10.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-speech",
+  "library": "transformers",
+  "languages": [
+    "kik"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "vits",
+    "feature-extraction",
+    "kikuyu",
+    "text-to-speech",
+    "multi-speaker",
+    "VITS",
+    "low-resource-language",
+    "custom_code",
+    "kik",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 86370358,
+  "parameters_human": "86.4M",
+  "storage_bytes": 345582280,
+  "storage_human": "346 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

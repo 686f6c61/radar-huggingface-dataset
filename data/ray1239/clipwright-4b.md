@@ -2,109 +2,117 @@
 
 ## Resumen
 
-Clipwright 4B (V3) es un modelo de lenguaje especializado en la ejecución autónoma de tareas de procesamiento multimedia. Lo desarrolla Ray1239 (Mohammed Usmani) y se construye como un adaptador LoRA sobre el modelo base Qwen/Qwen3.5-4B, con 4.326.350.848 parámetros totales. Su función es convertir instrucciones en lenguaje natural sobre ficheros de vídeo, audio, imagen y PDF en secuencias de comandos de shell reales ejecutadas contra ffmpeg, ffprobe, ImageMagick, SoX y ExifTool, leyendo los resultados y corrigiendo sus propios errores en bucle hasta producir los ficheros de salida.
+Clipwright 4B es un adaptador LoRA sobre Qwen3.5-4B especializado en la ejecución autónoma de tareas de procesamiento multimedia mediante herramientas de línea de comandos. Lo desarrolla Ray1239 (Mohammed Usmani) y resuelve un problema concreto: que un modelo de 4B parámetros sea capaz de encadenar llamadas a ffmpeg, ffprobe, ImageMagick, SoX y ExifTool dentro de un bucle agente, leer los resultados, verificar su propio trabajo y corregir errores antes de entregar los ficheros de salida.
 
-El modelo resuelve un problema concreto: la orquestación de herramientas multimedia de línea de comandos es propensa a errores de sintaxis, opciones incompatibles y rutas mal construidas. Clipwright encapsula todas esas herramientas en una única función `run(cmd, foreach)` y se entrena para razonar sobre el resultado de cada llamada, de modo que el agente puede detectar fallos, reformular comandos y verificar la salida antes de responder. Es relevante para pipelines de postproducción, automatización de catálogos de medios y tareas de reparación de ficheros, donde un modelo generalista suele fallar por desconocimiento de la sintaxis exacta de estas utilidades.
+El modelo se distribuye como adaptador PEFT (rango 32, alpha 64, sobre todas las capas lineales) y también en formato GGUF cuantizado para su uso directo con llama.cpp. Su entrenamiento combina SFT sobre 12.095 ejemplos verificados (46 tipos de trabajos multimedia) con dos rondas de GRPO cuyo reward es la comprobación automática del fichero de salida contra una especificación oculta, lo que lo convierte en un caso interesante de RL con verificación real de resultados en lugar de preferencias humanas.
 
-La arquitectura subyacente es un transformer denso de 4B parámetros con ventana de contexto de 32.768 tokens (según el comando de arranque recomendado con `-c 32768`). El modelo se distribuye bajo licencia Apache 2.0, con pesos en formato GGUF cuantizado Q8_0 y el adaptador PEFT en safetensors, y está etiquetado como compatible con endpoints y con llama.cpp.
+Es relevante ahora porque demuestra que un modelo pequeño, con un entrenamiento bien diseñado y un único tool genérico (`run(cmd, foreach)`), puede resolver tareas de postproducción multimedia de forma fiable en hardware de consumo, con una tasa de éxito del 89% en su benchmark interno de 368 tareas.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer denso (Qwen3.5-4B) con adaptador LoRA (r32, alpha 64, todas las capas lineales) |
-| Parametros totales | 4.326.350.848 |
-| Parametros activos | No aplica (modelo denso, no MoE) |
-| Longitud de contexto | 32.768 tokens (configuración recomendada `-c 32768`); no se especifica el máximo nativo del modelo base |
-| Tipos de cuantizacion | Q8_0 (GGUF); el adaptador PEFT se distribuye sin cuantizar en safetensors |
-| Idiomas soportados | No disponible (la model card no declara idiomas; el prompt de sistema y los ejemplos están en inglés) |
+| Arquitectura | Transformer decoder-only (Qwen3.5-4B) con adaptador LoRA (r=32, alpha=64, todas las capas lineales) |
+| Parametros totales | 4.326.350.848 (modelo base); el adaptador LoRA se suma sobre los pesos congelados |
+| Parametros activos | no aplica (no es MoE) |
+| Longitud de contexto | 32.768 tokens (configuración recomendada en llama.cpp: `-c 32768`) |
+| Tipos de cuantizacion | Q8_0 (4,6 GB), Q5_K_M (3,2 GB); Q4_K_M existe pero no se publica por pérdida de ~5 puntos |
+| Idiomas soportados | no disponible (la model card no especifica idiomas; hereda los del base Qwen3.5-4B) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (Q8_0, 4,6 GB) y safetensors (adaptador PEFT) |
+| Formato de pesos | safetensors (adaptador PEFT), GGUF (Q8_0, Q5_K_M) |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un ajuste fino mediante LoRA de rango 32 y alpha 64 aplicado a todas las capas lineales de Qwen/Qwen3.5-4B, un transformer denso de 4B parámetros. El adaptador se fusiona en el modelo base para producir el GGUF Q8_0 distribuido, y también se publica por separado para cargarlo sobre el base original. La innovación no está en la arquitectura, sino en el esquema de interacción: una única herramienta `run(cmd, foreach)` que ejecuta comandos de shell en un sandbox, con entradas en `in/` (solo lectura) y salidas en `out/`, y un bucle de tool calling en el que el modelo recibe `exit_code`, `stdout` o `error` y un resumen de los ficheros generados.
+El modelo es un adaptador LoRA sobre Qwen3.5-4B, un transformer decoder-only de 4.326 millones de parámetros. El adaptador se aplica a todas las capas lineales con rango 32 y alpha 64. El entrenamiento se realizó en cuatro etapas sobre Google Colab: primero SFT sobre 12.095 ejemplos verificados que cubren 46 tipos de trabajos multimedia (una época en L4); después 100 pasos de GRPO con 8 tareas × 8 intentos por paso y reward binario (1 si la salida pasa la verificación, con penalización menor por pasos extra); a continuación una segunda fase de SFT sobre 2.318 filas nuevas que enseñan un paso de comprobación tras escribir la salida y la recuperación ante comandos fallidos, más 1.500 filas de replay para evitar olvido catastrófico (LR 3e-5); y finalmente 100 pasos de GRPO v7 con 16 tareas × 8 intentos, un pool ponderado hacia los tipos de trabajo más débiles, omisión de tareas ya resueltas al 100%, LR 1e-5 y sin término KL (A100).
 
-El entrenamiento se realizó sobre 12.095 ejemplos que cubren 46 tipos de trabajos reales: edición (cortes, superposiciones, crossfades, picture-in-picture, voiceovers), entrega (presets de plataforma, límites de tamaño, subtítulos, miniaturas), audio (limpieza, ducking, pausas, sincronización), reparación (VFR, entrelazado, relación de aspecto, ficheros corruptos), imágenes, PDF, metadatos y privacidad. La model card indica que cada ejemplo se ejecutó sobre ficheros reales y su salida se verificó antes de conservarlo. El entrenamiento consistió en una época sobre una GPU Colab L4 con una duración de 6 horas y 50 minutos. No se especifica el número de tokens de entrenamiento ni la composición exacta del dataset más allá de la taxonomía de tareas.
+La innovación técnica central es la verificación estricta: cada ejemplo de entrenamiento se ejecutó sobre ficheros reales y su salida se comprobó contra una especificación oculta (duración, dimensiones, códecs, loudness, frames en instantes concretos, pitch, silencio, sincronía, metadatos, número de páginas o hechos en una respuesta escrita) antes de conservarse. El mismo chequeo se usa como reward en GRPO. El modelo opera con un único tool `run(cmd, foreach)` en formato OpenAI function calling, ejecutado en un sandbox sin red y con entradas de solo lectura.
 
 ## Capacidades
 
-- Generación de comandos de shell para ffmpeg, ffprobe, ImageMagick (`magick`), SoX y ExifTool, con sintaxis verificada contra las versiones 8-9 de ffmpeg y 7 de ImageMagick.
-- Tool calling mediante una única función `run(cmd, foreach)` en formato OpenAI, con soporte de ejecución iterativa y corrección de errores a partir de `exit_code` y `stdout`.
-- Razonamiento multi-paso: lee el resultado de cada comando, reformula si falla y continúa hasta completar la tarea o determinar que no es posible.
-- Edición de vídeo: cortes, superposiciones, crossfades, picture-in-picture y colocación de voiceovers.
-- Entrega para plataformas: presets de codificación, ajuste a límites de tamaño, incrustación de subtítulos y generación de miniaturas.
-- Procesamiento de audio: limpieza de ruido, ducking, eliminación de pausas y sincronización.
-- Reparación de medios: corrección de VFR, desentrelazado, ajuste de relación de aspecto y recuperación de ficheros dañados.
-- Procesamiento de imágenes y PDF: conversión, manipulación y recuento o extracción de páginas.
-- Gestión de metadatos y privacidad con ExifTool.
-- Respuesta a preguntas sobre ficheros (propiedades, contenido, características técnicas).
-- Detección de ambigüedad: solicita aclaración cuando la petición no es ejecutable tal cual.
-- Declaración explícita de límites: indica cuándo una tarea no se puede realizar.
+- Generación de comandos de ffmpeg y ffprobe para edición de vídeo y audio: recorte, conversión, extracción de frames, generación de GIFs, cambio de resolución y códec.
+- Procesamiento de imágenes y PDF con ImageMagick 7 (`magick`): redimensionado, conversión de formato, composición, extracción de páginas.
+- Procesamiento de audio con SoX: normalización de loudness, cambio de pitch, eliminación de silencios, conversión de sample rate.
+- Lectura y escritura de metadatos con ExifTool, incluyendo tareas de privacidad (eliminación de metadatos sensibles).
+- Bucle agente multi-paso: ejecuta un comando, lee el resultado, comprueba la salida contra la petición y corrige errores de forma autónoma.
+- Tool calling en formato OpenAI function calling con el esquema `run(cmd, foreach)`.
+- Respuesta a preguntas sobre ficheros (duración, resolución, códecs, metadatos) sin necesidad de modificarlos.
+- Gestión de ambigüedad: pregunta cuando la petición no está clara y declara cuándo algo no se puede hacer.
+- Capacidades multilingües: no disponibles de forma explícita (heredadas del base Qwen3.5-4B).
 
 ## Casos de uso
 
-- Automatización de postproducción de vídeo: el modelo recibe una instrucción como "haz un preview de 10 segundos en GIF de talk.mp4" y genera la secuencia de ffmpeg adecuada, verifica la duración y las dimensiones del resultado y corrige si el comando falla. Es adecuado porque conoce la sintaxis exacta de ffmpeg 8-9 y comprueba la salida antes de responder.
-- Preparación de entregables para plataformas sociales: aplica presets de codificación, ajusta el bitrate para respetar límites de tamaño e incrusta subtítulos, tareas en las que el modelo alcanza 18/24 en la evaluación del autor.
-- Limpieza y normalización de audio: eliminación de ruido, ducking de música bajo voz y sincronización de pistas mediante SoX y ffmpeg, con verificación de loudness y silencios en la salida.
-- Reparación de catálogos de medios heredados: corrección de ficheros con VFR, entrelazado o relación de aspecto incorrecta, un grupo de tareas en el que el modelo resuelve 15/18 casos de la evaluación.
-- Procesamiento por lotes de imágenes y PDF: conversión de formatos, redimensionado y extracción de páginas con ImageMagick, con recuento de páginas verificado.
-- Saneado de metadatos y privacidad antes de publicar material: eliminación de coordenadas GPS, autoría y otra información sensible con ExifTool, grupo en el que obtiene 7/9.
-- Asistente de consulta sobre ficheros: responde preguntas técnicas sobre un medio (códecs, resolución, duración, pistas de audio) ejecutando ffprobe y leyendo la salida.
-- Integración en pipelines de CI/CD de medios: al exponer una API compatible con OpenAI y funcionar con llama.cpp, puede desplegarse como servicio que recibe ficheros y devuelve artefactos procesados en `out/`.
+- Postproducción automatizada de vídeo para redes sociales: el modelo recibe un vídeo y una petición como "haz un preview de 10 segundos en GIF" y encadena ffmpeg y ffprobe para recortar, redimensionar y convertir, verificando duración y dimensiones del resultado antes de entregarlo.
+- Normalización de audio para podcasting: usa SoX para aplicar loudness normalization, eliminar silencios y convertir sample rate, comprobando el resultado con ffprobe y corrigiendo si la duración o el nivel no coinciden con lo pedido.
+- Procesamiento por lotes de imágenes para catálogo de e-commerce: recibe un directorio de imágenes y aplica redimensionado, conversión de formato y limpieza de metadatos con ImageMagick y ExifTool, con el modo `foreach` del tool para iterar sobre múltiples ficheros.
+- Limpieza de metadatos por privacidad antes de publicar documentos: usa ExifTool para eliminar EXIF, GPS y metadatos de autor de imágenes y PDFs, verificando después que los campos sensibles han desaparecido.
+- Extracción de información de ficheros multimedia: responde preguntas como "¿cuántos frames por segundo tiene este vídeo?" o "¿qué codec de audio usa?" ejecutando ffprobe y devolviendo los datos en lenguaje natural.
+- Reparación de ficheros dañados o mal codificados: el modelo detecta comandos fallidos, lee el error y reintenta con una sintaxis alternativa, una capacidad entrenada explícitamente en la fase SFT v7b.
+- Automatización de pipelines de entrega a plataformas: convierte un master a los formatos y resoluciones exigidos por cada plataforma (H.264, AAC, 1080p, 30fps) verificando códec, dimensiones y duración de cada salida.
 
 ## Benchmarks y rendimiento
 
-La model card reporta una evaluación propia de 154 tareas escritas a mano (2 a 4 por tipo de trabajo) sobre ficheros no vistos en entrenamiento, con decodificación greedy, una ejecución por tarea y hasta 15 comandos. Cada tarea se puntúa ejecutando los comandos del modelo y comprobando la salida (duración, dimensiones, códecs, loudness, fotogramas en instantes dados, pitch, silencio, sincronización, metadatos, número de páginas o hechos en una respuesta escrita). Se incluyen 21 soluciones deliberadamente incorrectas que son rechazadas por las comprobaciones. Los intervalos son de Wilson al 95%.
+Resultados publicados por el autor. Todas las puntuaciones se obtienen ejecutando los comandos del modelo y comprobando los ficheros de salida. Decodificación greedy, una ejecución por tarea, hasta 15 comandos.
 
-| Grupo de tareas | Clipwright 4B | Clipwright V2 0.8B |
+**test_v3** (368 tareas sobre 46 tipos de trabajo, medios retenidos, peticiones reformuladas por otro modelo):
+
+| Modelo | Test (230) | Dev (138) | Total | Detenido por bucle |
+|---|---|---|---|---|
+| V4 | 191 | 114 | 305 (83%) | 16 |
+| SFT v7b | 204 | 117 | 321 (87%) | 15 |
+| GRPO v7 (esta revisión) | 208 | 121 | 329 (89%) | 8 |
+
+**test_v2** (154 tareas escritas a mano, medios retenidos):
+
+| Grupo de trabajo | GRPO v7 | V4 |
 |---|---|---|
-| Edición | 27/42 | 1/42 |
-| Social y entrega | 18/24 | 7/24 |
-| Audio | 17/23 | 3/23 |
-| Reparación | 15/18 | 8/18 |
-| Imágenes y PDF | 16/18 | 6/18 |
-| Metadatos y privacidad | 7/9 | 2/9 |
-| Preguntas sobre ficheros | 7/10 | 1/10 |
-| Errores, ambigüedad, límites | 8/10 | 4/10 |
-| **Total** | **115/154, 75% [67-81]** | 32/154, 21% [15-28] |
+| Edición | 35/42 | 33/42 |
+| Social y entrega | 20/24 | 19/24 |
+| Audio | 20/23 | 19/23 |
+| Reparación | 18/18 | 17/18 |
+| Imágenes y PDFs | 18/18 | 17/18 |
+| Metadatos y privacidad | 8/9 | 7/9 |
+| Preguntas sobre ficheros | 8/10 | 8/10 |
+| Errores, ambigüedad, límites | 10/10 | 9/10 |
+| Total | 137/154 (89%) | 129/154 (84%) |
 
-El 4B resuelve 85 tareas que V2 falla y falla 2 que V2 resuelve (test exacto pareado, p < 1e-21). El GGUF Q8_0 ofrece el mismo resultado que el adaptador sin fusionar en las 16 tareas de una comprobación aleatoria. No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible.
+**Cuantización** (test_v3 dev, 138 tareas, llama.cpp en Mac): Q5_K_M 126, Q8_0 125, Q4_K_M 118.
+
+Como referencia, el modelo profesor de 27B que generó los datos de entrenamiento originales obtuvo 119/154 en test_v2.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: el GGUF Q8_0 ocupa 4,6 GB, por lo que requiere aproximadamente 5-6 GB de VRAM o memoria unificada, más el espacio para el contexto de 32.768 tokens.
-- GPU recomendadas: cualquier GPU con al menos 8 GB de VRAM para Q8_0 con contexto completo; A100, H100 o L4 para despliegues concurrentes. El entrenamiento se realizó en una Colab L4.
-- Cabe en GPU de consumo: sí, en tarjetas con 8 GB o más (RTX 3060 8 GB, RTX 4060, RTX 4070, RTX 4090) usando llama.cpp. En GPUs con menos memoria puede recurrirse a cuantizaciones menores, aunque no se distribuyen en el repositorio.
-- Opciones de despliegue: llama.cpp mediante `llama-server -hf Ray1239/clipwright-4b:Q8_0 --jinja -c 32768`; el adaptador PEFT puede cargarse sobre Qwen/Qwen3.5-4B con las librerías de Hugging Face. El modelo está etiquetado como compatible con endpoints.
+- VRAM estimada: Q5_K_M requiere aproximadamente 3,2 GB de pesos más overhead de contexto; Q8_0 requiere aproximadamente 4,6 GB más overhead. Con contexto de 32.768 tokens, el consumo total de KV cache añade varios GB adicionales.
+- GPU recomendadas: cualquier GPU con 8 GB o más para Q8_0; 6 GB para Q5_K_M. Entrenado en Colab L4 (SFT) y A100 (GRPO final).
+- Cabe en GPU de consumo: sí, en RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070, RTX 4080, RTX 4090 y Apple Silicon con 8 GB o más de memoria unificada.
+- Opciones de despliegue: llama.cpp (`llama-server -hf mohammed-usmani/clipwright-4b:Q8_0 --jinja -c 32768`), y el adaptador PEFT sobre Qwen3.5-4B con transformers. La web app del repositorio de GitHub (`app/run.sh`) ejecuta el bucle agente completo.
 - Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Clipwright 4B (V3) | 4,33B | 32.768 | Agente multimedia (ffmpeg, ImageMagick, SoX, ExifTool) | Apache 2.0 | Hugging Face (GGUF + PEFT) |
-| Clipwright V2 0.8B | 0,8B (aproximado) | No disponible | Agente multimedia, misma familia | No disponible | Hugging Face |
-| Qwen/Qwen3.5-4B | 4B | No disponible | Modelo generalista base | No disponible | Hugging Face |
+| Clipwright 4B (GRPO v7) | 4,3B | 32.768 | Agente multimedia con ffmpeg/ImageMagick/SoX/ExifTool | Apache 2.0 | Hugging Face (GGUF + PEFT) |
+| Qwen3.5-4B (base) | 4,3B | no disponible | Modelo generalista | Apache 2.0 | Hugging Face |
+| Profesor de 27B del autor | 27B | no disponible | Generación de datos de entrenamiento; 119/154 en test_v2 | no disponible | no disponible |
 
-La comparación directa con modelos generalistas de tamaño similar no está disponible en la información proporcionada. El único punto de referencia cuantitativo es Clipwright V2 0.8B, que obtiene 32/154 (21%) frente a 115/154 (75%) del 4B en la evaluación del autor.
+No se dispone de comparativas publicadas frente a otros modelos especializados en tool calling multimedia en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Las ediciones dependientes de marcas temporales son el punto más débil: voiceover colocado en un instante concreto (0/4), inserción de un clip en un timestamp (1/4), corte de un highlight alrededor de un momento (1/3), eliminación de pausas (1/3) y localización de timestamps (1/3).
-- En 15 de las 154 tareas repitió el mismo comando fallido tres veces hasta ser detenido, lo que puede generar bucles improductivos en producción si no se impone un límite de iteraciones.
-- Los ficheros de prueba son sintéticos; material real con códecs poco habituales o daño puede degradar el rendimiento.
-- Entrenado sobre sintaxis de ffmpeg 8-9 e ImageMagick 7 (`magick`); versiones anteriores o distintas pueden producir comandos inválidos.
-- El modelo informa de lo que ha hecho, pero la model card recomienda verificar manualmente las salidas importantes.
-- Riesgo de alucinación en la descripción de resultados: puede afirmar propiedades de los ficheros generados que no coincidan con la salida real si no se valida el contenido de `out/`.
-- Es imprescindible ejecutarlo en un sandbox: genera comandos de shell reales con capacidad de escritura en el sistema de ficheros.
-- No se declaran idiomas soportados; el prompt de sistema y los ejemplos están en inglés, por lo que el uso en castellano no está validado.
-- Licencia Apache 2.0: permite uso comercial, pero no se ofrece garantía ni soporte del autor.
+- La principal carencia es la cobertura más allá de los 46 tipos de trabajo entrenados: en peticiones basadas en preguntas de Stack Exchange retenidas acierta 135 de 172 (78%), y solo 16 de 30 (53%) cuando el trabajo requiere un filtro raro en sus datos de entrenamiento.
+- En pruebas manuales falló en la creación de un GIF a partir de frames concretos, en un efecto de voz robótica y en peticiones vagas de "limpiar el ruido".
+- Puede declarar "Done" sobre una salida que no coincide plenamente con la petición; hay que verificar manualmente las salidas importantes.
+- Los ficheros de test son sintéticos, por lo que material real con códecs extraños o dañados puede dar peores resultados.
+- Entrenado con sintaxis de ffmpeg 8 a 9 e ImageMagick 7 (`magick`); versiones anteriores pueden generar comandos incompatibles.
+- Requiere ejecución en sandbox (sin red, entradas de solo lectura): los comandos que genera son reales y pueden modificar o borrar ficheros.
+- Licencia Apache 2.0: permite uso comercial, pero el modelo base Qwen3.5-4B tiene su propia licencia que debe verificarse por separado.
+- Riesgo de alucinación en respuestas sobre ficheros: puede describir propiedades de un fichero sin haber ejecutado ffprobe; conviene forzar la llamada al tool.
+- Idiomas soportados no documentados; el rendimiento en castellano no está evaluado.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/Ray1239/clipwright-4b
-- Modelo V2 0.8B: https://huggingface.co/Ray1239/clipwright-0.8b
-- Perfil del autor: https://huggingface.co/Ray1239/models
-- Modelo previo ffmpeg-model del autor: https://huggingface.co/Ray1239/ffmpeg-model
+- Repositorio de código, entorno y evaluaciones: https://github.com/mohammed-usmani/clipwright
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
+- Revisión v3 (solo SFT): tag `v3` en el repositorio de Hugging Face
+- Revisión v4 (primer GRPO): tag `v4` en el repositorio de Hugging Face

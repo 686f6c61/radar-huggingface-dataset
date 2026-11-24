@@ -1,0 +1,68 @@
+{
+  "schema": 2,
+  "id": "paradise-lab/paradise-r2-v2",
+  "slug": "paradise-lab-paradise-r2-v2",
+  "author": "paradise-lab",
+  "url": "https://huggingface.co/paradise-lab/paradise-r2-v2",
+  "created_at": "2026-11-24T10:39:52.000Z",
+  "updated_at": "2026-11-24T10:42:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gemma4",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 31273088876,
+  "parameters_human": "31.27B",
+  "storage_bytes": 62583982498,
+  "storage_human": "62.6 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Paradise - Série TV 2025 - AlloCiné",
+      "url": "https://www.allocine.fr/series/ficheserie_gen_cserie=36027.html",
+      "snippet": "Découvrez la série TV Paradise de Dan Fogelman avec Sterling K. Brown (Xavier Collins), Julianne Nicholson (Sinatra/Samantha)."
+    },
+    {
+      "title": "Paradise (2025 TV series) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Paradise_(2025_TV_series)",
+      "snippet": "Paradise is an American post-apocalyptic political thriller television series created by Dan Fogelman and starring Sterling K. Brown, …"
+    },
+    {
+      "title": "Coldplay - Paradise (Official Video) - YouTube",
+      "url": "https://www.youtube.com/watch?v=1G4isv_Fylg",
+      "snippet": "Oct 18, 2011 · Coldplay's tenth studio album Moon Music available to listen/ buy now! https://coldplay.lnk.to/MoonMusic 🌙Coldplay - …"
+    },
+    {
+      "title": "The Paradise (film) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/The_Paradise_%28film%29",
+      "snippet": "The Paradise is a 2026 Indian Telugu -language action film directed by Srikanth Odela and produced by Sudhakar Cherukuri under …"
+    },
+    {
+      "title": "Le Paradise",
+      "url": "https://clubparadisejonquera.com/",
+      "snippet": "Découvrez le Paradise à La Jonquère, votre destination ultime pour un divertissement exaltant. Spectacles de cabaret envoûtants, …"
+    }
+  ]
+}

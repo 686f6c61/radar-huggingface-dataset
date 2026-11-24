@@ -2,125 +2,124 @@
 
 ## Resumen
 
-Qwen3-VL-2B-Instruct-RKLLM es un empaquetado del modelo multimodal Qwen3-VL-2B-Instruct de Alibaba Cloud, convertido por HanzoHuang para ejecutarse en las NPU de las placas Rockchip RK3576 y RK3588 mediante RKLLM Toolkit 1.3.1 y RKNN Toolkit2 2.5.0. No se trata de un modelo nuevo ni de un reentrenamiento: es una exportación cuantizada del modelo base de 2B parámetros, distribuida como un fichero `.rkllm` para el modelo de lenguaje y un fichero `.rknn` para el encoder de visión.
+Qwen3-VL-2B-Instruct-RKLLM es una conversión del modelo multimodal Qwen3-VL-2B-Instruct de Alibaba Qwen al formato RKLLM, pensada para ejecutarse en los SoC Rockchip RK3576 y RK3588 (placas tipo reComputer). El autor de la conversión es HanzoHuang, que publica los artefactos listos para el runtime NPU de Rockchip junto con un contenedor Docker compatible con la API de OpenAI. No se trata de un modelo nuevo ni de un fine-tune: los pesos del modelo base se mantienen y lo que cambia es el formato, la cuantización y el grafo de ejecución para la NPU.
 
-El problema que resuelve es concreto: permitir inferencia visión-lenguaje local en hardware embebido sin GPU, con un consumo de RAM adicional de entre 2,57 y 3,18 GB y velocidades de decodificación de 9,02 a 14,05 tokens por segundo según placa y cuantización. El runtime admite texto y una única imagen como entrada, y devuelve texto; no soporta vídeo ni audio.
+El modelo base es un transformer multimodal de 2.000 millones de parámetros que acepta texto e imagen y devuelve texto. En esta conversión la longitud de contexto de exportación es de 8192 tokens, aunque las pruebas funcionales se hicieron a 4096 y el benchmark de velocidad a 2048. La entrada de visión está fijada a RGB 448×448, batch 1, 196 tokens de imagen.
 
-Su relevancia es la de un artefacto de despliegue para edge computing: ventana de exportación de 8192 tokens, API compatible con OpenAI servida desde un contenedor Docker, y variantes W4A16-g128 y W8A8 para ajustar memoria y velocidad. La licencia Apache 2.0 del modelo base facilita el uso comercial, aunque la validación publicada se limita a pruebas funcionales y numéricas, no a benchmarks amplios de calidad.
+Su relevancia es práctica: permite llevar un VLM de 2B a placas embebidas de bajo consumo con cuantizaciones W4A16-g128 y W8A8, con un consumo de RAM adicional de entre 2,57 y 3,18 GB según placa y cuantización, y velocidades de decodificación de 9 a 14 tokens por segundo. Es una pieza para prototipos de visión en el borde, no para despliegues de alta calidad.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | VLM denso del linaje Qwen3-VL (transformer multimodal), distribuido como modelo de lenguaje y encoder de visión separados |
-| Parámetros totales | 2B (aproximadamente 2000 millones), según el nombre del modelo base; desglose por componente no disponible |
-| Parámetros activos | No aplica: modelo denso, no MoE |
-| Longitud de contexto | 8192 tokens en la exportación; 4096 validados en pruebas de API; 2048 en el benchmark de velocidad |
-| Tipos de cuantización | W4A16-g128 con GRQ y W8A8 para el modelo de lenguaje; encoder de visión en RKNN |
-| Idiomas soportados | No disponible |
+| Arquitectura | Transformer multimodal (VLM) del modelo base Qwen3-VL-2B-Instruct; convertido a RKLLM para NPU Rockchip |
+| Parametros totales | 2B (modelo base Qwen3-VL-2B-Instruct) |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | 8192 tokens en exportación; 4096 validados en pruebas de API; 2048 en el benchmark de velocidad |
+| Tipos de cuantizacion | W4A16-g128 (GRQ) y W8A8 (cuantización normal) para el modelo de lenguaje; encoder de visión en RKNN |
+| Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | `.rkllm` (modelo de lenguaje) y `.rknn` (encoder de visión); no se listan safetensors ni GGUF |
-| Plataformas soportadas | Rockchip RK3576 y RK3588 |
-| Entrada | Texto más una imagen RGB de 448 × 448, batch 1, 196 tokens de imagen |
-| Salida | Texto |
-| Tamaño de artefactos | Lenguaje: 1,74 GiB (RK3576 W4A16-g128), 2,28 GiB (RK3576 W8A8), 2,22 GiB (RK3588 W8A8); visión: 0,81 GiB (RK3576) y 0,80 GiB (RK3588) |
-| Runtime | RKLLM 1.3.1 y RKNN Toolkit2 2.5.0; contenedor `rkllm-docker` con API compatible con OpenAI |
-| Tamaño del repositorio | 8,4 GB |
+| Formato de pesos | `.rkllm` (modelo de lenguaje) y `.rknn` (encoder de visión) |
+| Toolkit de conversión | RKLLM Toolkit 1.3.1 y RKNN Toolkit2 2.5.0 |
+| Entrada / salida | texto + una imagen → texto (vídeo y audio no soportados en este runtime) |
+| Resolución de imagen | RGB 448×448, batch 1, 196 tokens de imagen, mean/std 0.5 |
+| Placas soportadas | RK3576 (2 núcleos NPU) y RK3588 (3 núcleos NPU) |
+| Tamaño del repo | 8,4 GB |
 
 ## Arquitectura y entrenamiento
 
-El modelo subyacente es Qwen3-VL-2B-Instruct, un VLM de Alibaba Cloud con arquitectura transformer densa que combina un encoder de visión con un modelo de lenguaje. La información disponible no detalla la composición del dataset de entrenamiento, el número de tokens, ni si hubo fases de RLHF o DPO. Tampoco se documenta ningún reentrenamiento o ajuste fino por parte del autor de la conversión: el proceso descrito es exclusivamente de exportación y cuantización.
+El modelo subyacente es Qwen3-VL-2B-Instruct, un transformer multimodal de la familia Qwen3-VL que procesa texto e imágenes y genera texto. Esta publicación no entrena ni ajusta el modelo: parte del checkpoint de ModelScope `Qwen/Qwen3-VL-2B-Instruct` en la revisión `ae9985b208c074c10cfbe3a61b5cb7268cdc9c53` y lo exporta con RKLLM Toolkit 1.3.1 y RKNN Toolkit2 2.5.0. Los pesos de origen no se modifican; los arreglos de compatibilidad de exportación seleccionan las cuatro salidas de visión de ancho de lenguaje bajo Transformers 5 e importan solo la familia de modelos de calibración solicitada.
 
-La conversión fija la entrada visual en RGB a 448 × 448, con 196 tokens de imagen, normalización mean/std de 0.5, padding a cuadrado con RGB 127 y redimensionado bilineal. La salida del encoder sigue el orden pooler más tres características deepstack por token. La calibración se realizó con los 20 ejemplos imagen-texto del SDK, capturados mediante el procesador de origen y un hook de entrada del modelo de lenguaje; W4A16-g128 usa GRQ y W8A8 usa cuantización normal, con carga en float32 sobre CUDA y reparto en dos núcleos NPU en RK3576 y tres en RK3588. Se aplicaron correcciones de compatibilidad para seleccionar las cuatro salidas de visión con Transformers 5.
-
-La fidelidad numérica del encoder de visión frente a los embeddings originales en float32 es de 0,99767705 en RK3576 y 0,99805251 en RK3588 (similitud coseno). Los tres artefactos superaron siete comprobaciones funcionales de API en su placa objetivo: aritmética, peticiones independientes, SSE, recuerdo exacto de conversación, descripción de imagen, color de imagen por SSE y texto posterior a una imagen.
+La calibración de cuantización se hizo con los 20 ejemplos de imagen y texto del SDK, capturados con el procesador de origen y un hook en la entrada del modelo de lenguaje. W4A16-g128 usa GRQ y W8A8 usa cuantización normal. La carga en float32 se realizó en CUDA y la ejecución reparte el trabajo entre dos núcleos NPU en RK3576 y tres en RK3588. La imagen se rellena a cuadrado con RGB 127 y se redimensiona bilinealmente; la salida de visión sigue el orden pooler más tres features deepstack por token. La fidelidad numérica del encoder de visión frente a los embeddings float32 originales es de 0,99767705 (coseno) en RK3576 y 0,99805251 en RK3588.
 
 ## Capacidades
 
-- Generación de texto e inferencia imagen-a-texto con una sola imagen por petición.
-- Respuesta a preguntas visuales (VQA) y descripción de imágenes, verificadas en las pruebas de humo del autor.
-- Conversaciones multi-turno con recuperación exacta del contexto, según la prueba de "exact conversation recall".
-- Streaming de respuestas mediante Server-Sent Events (SSE).
-- Servicio HTTP con interfaz compatible con OpenAI para peticiones de imagen, a través del contenedor `rkllm-docker`.
-- Procesamiento local en NPU, sin dependencia de GPU ni de servicios en la nube.
-- Sin soporte de vídeo ni audio en este runtime.
-- Tool calling o function calling: no documentado.
-- Soporte de agentes y razonamiento multi-paso: no documentado para este runtime.
-- Modo thinking explícito: no documentado.
-- Cobertura multilingüe: no disponible en la información proporcionada.
+- Generación de texto e imagen a texto: descripción de imágenes, respuesta a preguntas sobre una imagen y chat multimodal de un solo turno de imagen.
+- Conversión de texto a texto con contexto de hasta 8192 tokens en exportación, aunque solo 4096 están validados funcionalmente.
+- Razonamiento aritmético básico, verificado en las pruebas de humo de la API.
+- Recuerdo exacto de conversación dentro de la ventana de contexto, verificado en las pruebas de API.
+- Streaming de respuestas vía SSE, verificado en las pruebas de API.
+- Servicio compatible con la API de OpenAI a través del contenedor `ghcr.io/hanzo-huang/rkllm-docker`, incluidas peticiones de imagen.
+- Una sola imagen por petición; no hay soporte de vídeo ni de audio en este runtime.
+- No se documentan tool calling, function calling ni capacidades de agente multi-paso en la información disponible.
 
 ## Casos de uso
 
-- **Atención visual en kioscos y tótems interactivos**: el modelo puede describir productos o responder preguntas sobre una imagen capturada por la cámara del dispositivo, con inferencia local y sin enviar datos a la nube. Es adecuado por su bajo consumo de RAM (2,57-3,18 GB adicionales) y su integración mediante API compatible con OpenAI.
-- **Inspección visual en línea de producción**: clasificación y descripción de defectos visibles en una imagen fija de 448 × 448. La resolución fija y la cuantización limitan la precisión, por lo que encaja mejor como primer filtro o como asistente para operarios que como sistema de metrología.
-- **Domótica y robótica de bajo consumo**: interpretación de lo que ve una cámara doméstica o un robot móvil para decidir acciones simples, ejecutándose íntegramente en la NPU de la placa y liberando la CPU para el control de actuadores.
-- **Descripción de imágenes para accesibilidad**: generación de texto alternativo en dispositivos portátiles o paneles informativos, con la ventaja de que la imagen no abandona el dispositivo.
-- **Verificación documental en almacén o punto de venta**: consultas sobre una fotografía de una etiqueta, un albarán o un estante para responder preguntas concretas en lenguaje natural, integrado en una aplicación de terminal ligera.
-- **Prototipado e investigación en edge AI**: banco de pruebas para medir latencia, consumo y degradación por cuantización en cargas multimodales sobre RK3576 y RK3588, con artefactos versionados y sumas SHA-256 publicadas.
-- **Asistentes de campo con requisitos de privacidad**: técnicos que fotografían equipos o instalaciones y formulan preguntas sin conexión, manteniendo las imágenes dentro del hardware local.
+- Inspección visual en el borde: desplegar el modelo en una placa RK3576 o RK3588 para describir o clasificar imágenes capturadas por una cámara local, sin depender de la nube. El encoder fijo a 448×448 y los 196 tokens de imagen acotan el coste por inferencia.
+- Asistente de documentación con OCR ligero: enviar una imagen de un documento o etiqueta y pedir extracción de texto o resumen. La ventana de 4096 tokens validados permite incluir instrucciones largas junto a la imagen.
+- Chat de atención al cliente en kiosco embebido: el modelo mantiene el hilo de conversación dentro del contexto y responde en streaming por SSE, lo que encaja con interfaces de chat locales en dispositivos sin conectividad.
+- Prototipado rápido de producto con Docker: el contenedor expone un endpoint compatible con OpenAI en el puerto 8001, de modo que se puede integrar con clientes existentes y validar la viabilidad de un caso de uso antes de invertir en hardware mayor.
+- Monitorización industrial con verificación visual: usar el modelo para responder preguntas concretas sobre una imagen de una línea de producción (por ejemplo, presencia de un componente o color de un indicador), con la latencia de 9 a 14 tokens/s que ofrecen estas placas.
+- Educación y demos de IA en el borde: ejecutar un VLM de 2B en hardware de bajo consumo para talleres o demostraciones, con un consumo de RAM adicional de 2,57 a 3,18 GB que cabe en placas de 8 GB.
+- Filtrado previo en pipelines de datos: generar descripciones automáticas de imágenes en un dispositivo local antes de enviarlas a un modelo mayor en servidor, reduciendo ancho de banda y coste.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks de calidad (MMLU, HumanEval, GSM8K, etc.) en la información disponible. El autor indica explícitamente que las pruebas realizadas son comprobaciones funcionales y numéricas, no un benchmark amplio de calidad.
+No se han publicado resultados de benchmarks de calidad (MMLU, HumanEval, GSM8K, etc.) en la información disponible. El autor indica explícitamente que las pruebas realizadas son comprobaciones funcionales y numéricas de humo, no un benchmark amplio de calidad.
 
-Rendimiento medido el 2026-10-22:
+Rendimiento medido el 2026-10-22 (decodificación nativa, mediana de tres ejecuciones de 128 tokens tras un calentamiento de 32 tokens, greedy, EOS ignorado, contexto 2048):
 
-| Placa | Cuantización | Decodificación (tok/s) | RAM de arranque (GB) | RAM estable (GB) |
+| Placa | Cuantización | Decode tok/s | RAM al arrancar (GB) | RAM estable (GB) |
 |---|---|---:|---:|---:|
 | RK3576 | W4A16-g128 | 11,11 | 2,60 | 2,57 |
 | RK3576 | W8A8 | 9,02 | 3,18 | 3,18 |
 | RK3588 | W8A8 | 14,05 | 3,03 | 3,07 |
 
-Metodología: mediana de la tasa nativa de decodificación sobre tres ejecuciones de 128 tokens, tras un calentamiento de 32 tokens, decodificación greedy, EOS ignorado y contexto de 2048. La RAM es el uso adicional sobre una línea base de cinco segundos en reposo: pico de carga muestreado y mediana en estado listo tras diez segundos, en GB decimales. El encoder correspondiente está cargado y `embed_flash=1`. El tiempo hasta el primer token no se publica (permanece en el informe privado). La medición de RK3576 W8A8 se realizó con swap zram desactivado temporalmente.
+La RAM indicada es el uso adicional sobre una línea base en reposo de cinco segundos, en GB decimales, con el encoder correspondiente cargado y `embed_flash=1`. La medición de RK3576 W8A8 se hizo con swap zram desactivado temporalmente.
 
-| Placa | Similitud coseno del encoder de visión frente a float32 |
-|---|---:|
-| RK3576 | 0,99767705 |
-| RK3588 | 0,99805251 |
+Ficheros publicados:
+
+| Placa | Cuantización | Tamaño | Fichero de lenguaje |
+|---|---|---:|---|
+| RK3576 | W4A16-g128 | 1,74 GiB | `Qwen3-VL-2B-Instruct_RK3576_w4a16_g128.rkllm` |
+| RK3576 | W8A8 | 2,28 GiB | `Qwen3-VL-2B-Instruct_RK3576_w8a8.rkllm` |
+| RK3588 | W8A8 | 2,22 GiB | `Qwen3-VL-2B-Instruct_RK3588_w8a8.rkllm` |
+
+| Placa | Tamaño | Encoder de visión |
+|---|---:|---|
+| RK3576 | 0,81 GiB | `Qwen3-VL-2B-Instruct_vision_RK3576.rknn` |
+| RK3588 | 0,80 GiB | `Qwen3-VL-2B-Instruct_vision_RK3588.rknn` |
 
 ## Requisitos de hardware
 
-- **NPU Rockchip obligatoria**: RK3576 o RK3588. El formato `.rkllm`/`.rknn` no se ejecuta en GPU convencional sin una reconversión.
-- **VRAM**: no aplica; el modelo usa memoria del sistema. Uso adicional medido de 2,57 GB (RK3576 W4A16-g128), 3,18 GB (RK3576 W8A8) y 3,03-3,07 GB (RK3588 W8A8).
-- **Almacenamiento**: entre 2,54 y 3,09 GiB por combinación de modelo de lenguaje y encoder de visión; el repositorio completo ocupa 8,4 GB.
-- **GPU consumer**: no es compatible de forma directa. Para ejecutar el modelo base en una RTX 4090, A100 o H100 sería necesario usar los pesos originales de Qwen3-VL-2B-Instruct con otro runtime, no estos artefactos.
-- **Opciones de despliegue**: contenedor `ghcr.io/hanzo-huang/rkllm-docker:env-latest` con el comando `serve --max_context_len 4096`, variables `MODEL_KIND=vlm`, `TARGET_PLATFORM`, `MODEL_FILE`, `VISION_MODEL_FILE` y `RKLLM_EMBED_FLASH=1`. No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI.
-- **Latencia y throughput**: 11,11 tok/s en RK3576 W4A16-g128, 9,02 tok/s en RK3576 W8A8 y 14,05 tok/s en RK3588 W8A8. El tiempo hasta el primer token no está disponible.
-- **Contexto en producción**: el ejemplo de arranque usa 4096 tokens; la exportación es de 8192, pero el autor advierte que no se ha validado contexto mayor en estas placas.
-- **Consideración térmica y de relojes**: las mediciones dependen de la placa, los relojes, la refrigeración y la carga de fondo.
+- Hardware objetivo: SoC Rockchip RK3576 o RK3588 con NPU. No está pensado para GPU de escritorio ni para CPU x86.
+- RAM adicional necesaria: 2,57 GB (RK3576 W4A16-g128), 3,18 GB (RK3576 W8A8) y 3,07 GB (RK3588 W8A8), medidos como uso por encima de la línea base en reposo.
+- Núcleos NPU utilizados: dos en RK3576 y tres en RK3588.
+- GPU recomendadas: no aplica; el runtime es NPU Rockchip. La carga de pesos en float32 durante la conversión se hizo en CUDA, pero la inferencia no usa GPU.
+- ¿Cabe en GPU de consumo? No es el caso de uso; los artefactos `.rkllm` y `.rknn` no son ejecutables en CUDA.
+- Despliegue: contenedor Docker `ghcr.io/hanzo-huang/rkllm-docker:env-latest` con variables `MODEL_KIND=vlm`, `TARGET_PLATFORM`, `MODEL_FILE`, `VISION_MODEL_FILE` y `RKLLM_EMBED_FLASH=1`; endpoint compatible con OpenAI en el puerto 8001. Requiere `--privileged` y montaje de `/dev`.
+- Throughput: 11,11 tok/s (RK3576 W4A16-g128), 9,02 tok/s (RK3576 W8A8) y 14,05 tok/s (RK3588 W8A8) en decodificación nativa con contexto 2048.
+- Latencia del primer token: no disponible (el autor la mantiene en un informe privado).
+- El contexto de ejecución recomendado en los comandos de ejemplo es 4096; no se ha validado contexto mayor en estas placas.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Plataforma | Rendimiento | Licencia |
-|---|---|---:|---|---|---|
-| Qwen3-VL-2B-Instruct-RKLLM (este repositorio) | 2B | 8192 en exportación; 4096 validado | NPU RK3576/RK3588 | 9,02-14,05 tok/s según placa y cuantización | Apache 2.0 |
-| Qwen3-VL-2B-Instruct original | 2B | No disponible en la información proporcionada | GPU/CPU con Transformers u otros runtimes | No disponible | Apache 2.0 |
-| Qwen3-VL-2B-Instruct para Qualcomm AI Hub | 2B | No disponible en la información proporcionada | Dispositivos Qualcomm con exportación optimizada | No disponible en la información proporcionada | Apache 2.0 del modelo base; condiciones del exportador no disponibles |
+| Modelo | Parámetros | Contexto | Formato / hardware | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| Qwen3-VL-2B-Instruct-RKLLM (esta ficha) | 2B | 8192 exportado / 4096 validado | `.rkllm` + `.rknn`, NPU RK3576 y RK3588 | Apache 2.0 | Hugging Face, 327 descargas |
+| Qwen3-VL-2B-Instruct (modelo base) | 2B | no disponible en la información | safetensors, GPU/CPU con Transformers | Apache 2.0 | Hugging Face |
+| Otras conversiones RKLLM de VLMs pequeños | no disponible | no disponible | `.rkllm`, NPU Rockchip | depende del modelo base | no disponible en la información |
 
-La comparación relevante no es de calidad, sino de formato de despliegue: este repositorio es la única de las tres opciones lista para ejecutarse en NPU Rockchip sin trabajo adicional de conversión. Frente al modelo original, pierde flexibilidad de contexto y resolución de imagen, y gana ejecución local con un consumo de memoria acotado. Frente a la exportación de Qualcomm, cambia el fabricante de silicio objetivo.
+No se dispone de datos de benchmarks que permitan comparar la calidad de esta conversión con alternativas. La comparación relevante es de formato y despliegue: frente al modelo base, esta versión gana ejecutabilidad en NPU Rockchip y pierde flexibilidad (resolución de imagen fija, sin vídeo ni audio, contexto validado menor).
 
 ## Limitaciones y advertencias
 
-- **Una sola imagen por petición** y resolución fija de 448 × 448 con 196 tokens visuales; no hay soporte de vídeo ni audio en este runtime.
-- **Pérdida por cuantización**: la similitud coseno del encoder de visión es de aproximadamente 0,998, y el autor advierte que la cuantización y la resolución fija pueden reducir la precisión.
-- **Contexto no validado por encima de 4096 tokens**: la exportación es de 8192, pero las pruebas funcionales usaron 4096 y el benchmark 2048. No hay evidencia publicada de estabilidad con contextos mayores.
-- **Ausencia de benchmarks de calidad**: no hay MMLU, HumanEval, GSM8K ni evaluaciones equivalentes; las pruebas son de humo funcional y numérico.
-- **Riesgo de alucinación**: inherente al modelo base Qwen3-VL-2B-Instruct; no se documentan mitigaciones específicas en esta conversión.
-- **Sesgos**: no se documentan evaluaciones de sesgo. Al heredar el modelo base, es previsible que arrastre los sesgos de sus datos de entrenamiento, no disponibles en la información proporcionada.
-- **Idiomas**: no se especifica la lista de idiomas soportados; no debe asumirse cobertura multilingüe sin verificación.
-- **Licencia**: Apache 2.0 permite uso comercial, pero deben revisarse las condiciones del modelo base, del SDK de Rockchip y de la imagen Docker del runtime, no detalladas aquí.
-- **Dependencia de hardware**: el artefacto está ligado a RK3576 y RK3588; no es portable a otras NPU o GPU sin reconversión.
-- **Madurez**: el repositorio registra 0 descargas y 0 likes en el momento de la consulta, y es una conversión de la comunidad, no una publicación oficial de Qwen.
-- **Tool calling y agentes**: no documentados; no deben asumirse en producción sin pruebas propias.
-- **Medición con swap desactivado**: la cifra de RK3576 W8A8 se obtuvo desactivando temporalmente zram; en un despliegue real con swap activo el comportamiento de memoria puede diferir.
+- Las pruebas publicadas son comprobaciones funcionales y numéricas de humo, no un benchmark de calidad; la cuantización y la resolución fija de imagen pueden reducir la precisión frente al modelo base.
+- La resolución de imagen está fijada a 448×448 con 196 tokens de imagen; imágenes con detalles finos o texto pequeño pueden perder información.
+- Solo se admite una imagen por petición y no hay soporte de vídeo ni de audio en este runtime.
+- El contexto de exportación es 8192 tokens, pero solo se han validado 4096 en pruebas de API y 2048 en el benchmark; contextos mayores no están verificados en estas placas.
+- El rendimiento depende de la placa, la frecuencia, la refrigeración y la carga de fondo; las cifras de tok/s y RAM son mediciones puntuales del 2026-10-22.
+- La medición de RK3576 W8A8 requirió desactivar temporalmente el swap zram; con crecimiento de swap en segundo plano las mediciones se descartaron.
+- No se documentan sesgos conocidos, comportamiento multilingüe ni riesgos específicos de alucinación en la información disponible; se heredan los del modelo base Qwen3-VL-2B-Instruct.
+- La licencia Apache 2.0 permite uso comercial, pero conviene revisar también la licencia y las condiciones del modelo base y de los toolkits de Rockchip utilizados en la conversión.
+- Los artefactos están atados a la versión del runtime RKLLM 1.3.1; cambios de versión del runtime o del SDK pueden romper la compatibilidad.
+- El contenedor requiere `--privileged` y acceso a `/dev`, lo que implica privilegios elevados en el dispositivo de despliegue.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/HanzoHuang/Qwen3-VL-2B-Instruct-RKLLM
-- Modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen3-VL-2B-Instruct
-- Modelo base en ModelScope: https://www.modelscope.ai/models/Qwen/Qwen3-VL-2B-Instruct
-- Runtime y documentación: https://github.com/Hanzo-Huang/rkllm-docker
-- Imagen Docker: ghcr.io/hanzo-huang/rkllm-docker:env-latest
-- Qwen3-VL-2B-Instruct en Qualcomm AI Hub: https://aihub.qualcomm.com/models/qwen3_vl_2b_instruct
-- Exportación para Qualcomm en GitHub: https://github.com/qualcomm/ai-hub-models/blob/main/src/qai_hub_models/models/qwen3_vl_2b_instruct/README.md
-- Ficha en The Applied: https://theapplied.co/models/qwen-qwen3-vl-2b-instruct
+- Modelo en Hugging Face: https://huggingface.co/HanzoHuang/Qwen3-VL-2B-Instruct-RKLLM
+- Modelo base: https://huggingface.co/Qwen/Qwen3-VL-2B-Instruct
+- Runtime Docker del autor: https://github.com/Hanzo-Huang/rkllm-docker
+- reComputer AI Lab (guías de despliegue en RK3588): https://sensecraft.seeed.cc/ai-lab/en/models?device=rk3588
+- README en chino: README_zh-CN.md (incluido en el repositorio del modelo)
+- Licencia: LICENSE (incluido en el repositorio del modelo)

@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/gemma-4-31B-it-ARA-heretic-i1-GGUF",
   "created_at": "2026-11-08T04:13:53.000Z",
-  "updated_at": "2026-11-20T10:54:26.000Z",
+  "updated_at": "2026-11-23T11:59:59.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -32,7 +32,7 @@
     "conversational"
   ],
   "likes": 2,
-  "downloads_30d": 19480,
+  "downloads_30d": 19999,
   "trending_score": 0,
   "parameters": 30697345596,
   "parameters_human": "30.70B",

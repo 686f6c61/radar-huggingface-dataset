@@ -60,16 +60,5 @@
   "renamed_to": "txgsync/Qwen3.8-Flash-Next-NanoSeedLM-TCQ4",
   "renamed_at": "2026-11-11T07:54:12.287Z",
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "txgsync/Qwen3.8-Flash-Next-NanoSeedLM-P4 · Hugging Face",
-      "url": "https://huggingface.co/txgsync/Qwen3.8-Flash-Next-NanoSeedLM-P4",
-      "snippet": "How to use txgsync/Qwen3.8-Flash-Next-NanoSeedLM-P4 with MLX: # Make sure mlx-vlm is installed # pip install --upgrade mlx-vlm from mlx_vlm import load, generate from mlx_vlm.prompt_utils import apply_chat_template from mlx_vlm.utils import load_config # Load the model model, processor = load ..."
-    },
-    {
-      "title": "Qwen3.8-Flash-Next-NanoSeedLM-P4 - Hugging Face",
-      "url": "https://huggingface.co/txgsync/Qwen3.8-Flash-Next-NanoSeedLM-P4/commit/4157e09722a4b18996acd4731e42f438cd614315",
-      "snippet": "txgsync / Qwen3.8-Flash-Next-NanoSeedLM-P4 Like 0 Image-Text-to-Text MLX Safetensors qwen4_exp qwen3.8-flash-next Mixture of Experts mlx-vlm omlx apple-silicon custom_code research-preview seedlm nanoseedlm nslm lfsr seeds conversational 4-bit precision arxiv:2410.10714 License:qwen-community-1.0 Model card FilesFiles and versions xet Community ..."
-    }
-  ]
+  "sources": []
 }

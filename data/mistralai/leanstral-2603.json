@@ -1,0 +1,45 @@
+{
+  "schema": 2,
+  "id": "mistralai/Leanstral-2603",
+  "slug": "mistralai-leanstral-2603",
+  "author": "mistralai",
+  "url": "https://huggingface.co/mistralai/Leanstral-2603",
+  "created_at": "2026-03-11T14:01:29.000Z",
+  "updated_at": "2026-11-24T08:12:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "vllm",
+  "languages": [],
+  "tags": [
+    "vllm",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 182,
+  "downloads_30d": 139,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 120959761547,
+  "storage_human": "121.0 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mistralai · PyPI",
+      "url": "https://pypi.org/project/mistralai/",
+      "snippet": "Dec 11, 2023 · The Mistral class implements the context manager protocol and registers a finalizer function to close the underlying …"
+    }
+  ]
+}

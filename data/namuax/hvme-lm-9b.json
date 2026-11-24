@@ -5,7 +5,7 @@
   "author": "namuax",
   "url": "https://huggingface.co/namuax/hvme-lm-9b",
   "created_at": "2026-11-22T02:16:15.000Z",
-  "updated_at": "2026-11-22T02:19:07.000Z",
+  "updated_at": "2026-11-23T07:19:25.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -33,7 +33,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 3,
+  "downloads_30d": 19,
   "trending_score": 0,
   "parameters": 8953803264,
   "parameters_human": "8.95B",

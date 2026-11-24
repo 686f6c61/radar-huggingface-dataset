@@ -67,16 +67,10 @@
   "benchmarks": [
     {
       "task": "statistics question answering",
-      "dataset": "Golden answers (609 documented questions, Windows + Linux Python 3.10-3.14)",
+      "dataset": "Golden answers (625 documented questions, Windows + Linux Python 3.10-3.14)",
       "metric": "identical on every platform",
       "value": 1
     }
   ],
-  "sources": [
-    {
-      "title": "Cyber Security Tips, Facts & Statistics for 2026",
-      "url": "https://www.security.org/digital-safety/cyber-security-tips/",
-      "snippet": "Jul 14, 2026 · This detailed guide provides 25 cybersecurity tips, highlighting software updates, strong passwords, and VPNs as …"
-    }
-  ]
+  "sources": []
 }

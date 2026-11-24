@@ -1,0 +1,78 @@
+{
+  "schema": 2,
+  "id": "bhc6/ECT-LLaVA-OneVision-7B",
+  "slug": "bhc6-ect-llava-onevision-7b",
+  "author": "bhc6",
+  "url": "https://huggingface.co/bhc6/ECT-LLaVA-OneVision-7B",
+  "created_at": "2026-11-22T07:11:39.000Z",
+  "updated_at": "2026-11-24T06:37:10.000Z",
+  "license": "qicd-research-only",
+  "license_family": "unknown",
+  "pipeline_tag": "video-text-to-text",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "llava-onevision",
+    "proactive-assistant",
+    "mistake-detection",
+    "video",
+    "egocentric",
+    "task-guidance",
+    "video-text-to-text",
+    "base_model:llava-hf/llava-onevision-qwen2-7b-ov-hf",
+    "base_model:adapter:llava-hf/llava-onevision-qwen2-7b-ov-hf",
+    "license:other",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 6,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 645981584,
+  "storage_human": "646 MB",
+  "context_length": null,
+  "base_model": "llava-hf/llava-onevision-qwen2-7b-ov-hf",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "Proactive mistake feedback (official turn-based protocol)",
+      "dataset": "QICD (Advanced Planning)",
+      "metric": "IC-Acc (instruction completion, %)",
+      "value": 49.6
+    },
+    {
+      "task": "Proactive mistake feedback (official turn-based protocol)",
+      "dataset": "QICD (Advanced Planning)",
+      "metric": "Mistake F1",
+      "value": 0.171
+    },
+    {
+      "task": "Proactive mistake feedback (official turn-based protocol)",
+      "dataset": "Ego-MC-Bench (zero-shot transfer)",
+      "metric": "IC-Acc (instruction completion, %)",
+      "value": 64
+    },
+    {
+      "task": "Proactive mistake feedback (official turn-based protocol)",
+      "dataset": "Ego-MC-Bench (zero-shot transfer)",
+      "metric": "Mistake F1",
+      "value": 0.09
+    }
+  ],
+  "sources": []
+}

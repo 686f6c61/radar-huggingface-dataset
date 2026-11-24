@@ -19,8 +19,8 @@
     "siheung",
     "rag",
     "vllm",
-    "base_model:chaitalibh/finegrained-grpo-highag-0825",
-    "base_model:finetune:chaitalibh/finegrained-grpo-highag-0825",
+    "base_model:cogarobotics/finegrained-grpo-highag-0825",
+    "base_model:finetune:cogarobotics/finegrained-grpo-highag-0825",
     "endpoints_compatible",
     "region:us"
   ],

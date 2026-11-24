@@ -1,0 +1,74 @@
+{
+  "schema": 2,
+  "id": "gatilin/nava-joint-av-dit",
+  "slug": "gatilin-nava-joint-av-dit",
+  "author": "gatilin",
+  "url": "https://huggingface.co/gatilin/nava-joint-av-dit",
+  "created_at": "2026-11-24T09:58:53.000Z",
+  "updated_at": "2026-11-24T10:00:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-video",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "ti2v",
+    "diffusion-transformer",
+    "multimodal",
+    "audio",
+    "video",
+    "model-extraction",
+    "text-to-video",
+    "base_model:baidu/NAVA",
+    "base_model:finetune:baidu/NAVA",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 25188108008,
+  "storage_human": "25.2 GB",
+  "context_length": null,
+  "base_model": "baidu/NAVA",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "baidu/NAVA · Hugging Face",
+      "url": "https://huggingface.co/baidu/NAVA",
+      "snippet": "May 28, 2026 · NAVA is a 6.3 B-parameter joint audio-video generator that synthesizes synchronized video and audio from a single …Read more"
+    },
+    {
+      "title": "Model Portfolio - a gatilin Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/gatilin/model-portfolio",
+      "snippet": "Oct 27, 2026 · A categorized index of public models and research components, with documented scope, dependencies, and release …Read more"
+    },
+    {
+      "title": "GitHub - Ardynai/nava: Official Code of NAVA: Native Audio-Visual ...",
+      "url": "https://github.com/Ardynai/nava",
+      "snippet": "NAVA is a Native Audio-Visual Alignment framework that formulates joint audio-video generation as context-conditioned native audio …Read more"
+    },
+    {
+      "title": "NAVA/nava_src/models/nava/configs/model/dit/joint_5b_5d20s5d",
+      "url": "https://github.com/ernie-research/NAVA/blob/main/nava_src/models/nava/configs/model/dit/joint_5b_5d20s5d.json",
+      "snippet": "Official Code of NAVA: Native Audio-Visual Alignment for Generation. - …Read more"
+    },
+    {
+      "title": "NAVA · Native Audio-Visual Alignment for Generation",
+      "url": "https://ernie-research.github.io/NAVA/",
+      "snippet": "NAVA: Native Audio-Visual Alignment for Generation — an Align-then-Fuse MMDiT framework for joint audio-video generation."
+    }
+  ]
+}

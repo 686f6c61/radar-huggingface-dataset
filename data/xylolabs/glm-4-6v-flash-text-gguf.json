@@ -5,7 +5,7 @@
   "author": "Xylolabs",
   "url": "https://huggingface.co/Xylolabs/GLM-4.6V-Flash-Text-GGUF",
   "created_at": "2026-11-14T17:35:06.000Z",
-  "updated_at": "2026-11-22T23:31:38.000Z",
+  "updated_at": "2026-11-24T01:04:12.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

@@ -5,7 +5,7 @@
   "author": "TravelDistillation",
   "url": "https://huggingface.co/TravelDistillation/Travel-granite4_tiny7b_to_micro3b_RCAEval_2_newReward_C_Macro_Micro_beta2_0.7",
   "created_at": "2026-11-23T19:01:19.000Z",
-  "updated_at": "2026-11-23T19:01:29.000Z",
+  "updated_at": "2026-11-23T19:12:27.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",

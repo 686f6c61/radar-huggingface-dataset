@@ -1,0 +1,93 @@
+{
+  "schema": 2,
+  "id": "Anish1509/fortnite-external-box-esp-softaim-2026",
+  "slug": "anish1509-fortnite-external-box-esp-softaim-2026",
+  "author": "Anish1509",
+  "url": "https://huggingface.co/Anish1509/fortnite-external-box-esp-softaim-2026",
+  "created_at": "2026-11-24T06:59:38.000Z",
+  "updated_at": "2026-11-24T06:59:39.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en",
+    "ru",
+    "zh",
+    "es",
+    "pt",
+    "tr",
+    "de",
+    "fr",
+    "ja",
+    "ko",
+    "ar",
+    "pl",
+    "vi",
+    "id"
+  ],
+  "tags": [
+    "windows",
+    "windows-11",
+    "x64",
+    "portable",
+    "fortnite-external-box-esp-softaim-2026",
+    "en",
+    "ru",
+    "zh",
+    "es",
+    "pt",
+    "tr",
+    "de",
+    "fr",
+    "ja",
+    "ko",
+    "ar",
+    "pl",
+    "vi",
+    "id",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "context_length": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Government of Gujarat GENERAL ADMINISTRATION …",
+      "url": "https://gad.gujarat.gov.in/personnel/Images/pdf/general_holidays_2027.pdf",
+      "snippet": "PART - I PUBLIC HOLIDAYS, 2027 No. GS/34/2026/GAD/PBH/e-file/1/2026/4611/ Protocol: The Government of Gujarat is pleased …"
+    },
+    {
+      "title": "Gujarat Holidays 2027 – National & State Holiday List",
+      "url": "https://gujaratcalendar.com/holidays/2027",
+      "snippet": "Oct 9, 2026 · Complete list of Gujarat public holidays 2027 — national and state holidays with dates and days."
+    },
+    {
+      "title": "Gujarat Holiday List 2027 PDF: જાહેર રજાઓ, Optional & Bank Holidays",
+      "url": "https://gujaratgr.in/gujarat-government-holiday-list-2027/",
+      "snippet": "Nov 5, 2026 · આ લેખમાં તમને આખું Gujarat Government Holiday List 2027 તારીખ, વાર અને તિથિ સાથે, Long Weekend પ્લાનિંગ …"
+    },
+    {
+      "title": "Government of Gujarat GENERAL ADMINISTRATION …",
+      "url": "https://gujaratgr.in/wp-content/uploads/2026/11/Holiday-Notification-2027_compressed-1.pdf",
+      "snippet": "Note : (2) The Government of Gujarat is also pleased to declare Thursday, the 1st April, 2027 to be Public Holiday for Banks, Pay & …"
+    }
+  ]
+}

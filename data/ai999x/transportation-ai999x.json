@@ -71,7 +71,7 @@
   "benchmarks": [
     {
       "task": "transportation question answering",
-      "dataset": "Golden answers (536 documented questions, Windows + Linux Python 3.10-3.14)",
+      "dataset": "Golden answers (563 documented questions, Windows + Linux Python 3.10-3.14)",
       "metric": "identical on every platform",
       "value": 1
     }

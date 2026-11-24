@@ -5,7 +5,7 @@
   "author": "shefowl",
   "url": "https://huggingface.co/shefowl/nemotron-3.5-asr-streaming-0.6b-pl",
   "created_at": "2026-11-21T11:44:42.000Z",
-  "updated_at": "2026-11-21T12:24:51.000Z",
+  "updated_at": "2026-11-23T21:00:50.000Z",
   "license": "openmdw-1.1",
   "license_family": "oss",
   "pipeline_tag": "automatic-speech-recognition",
@@ -15,7 +15,6 @@
   ],
   "tags": [
     "nemo",
-    "gguf",
     "speech-recognition",
     "streaming",
     "polish",
@@ -25,12 +24,12 @@
     "automatic-speech-recognition",
     "pl",
     "base_model:nvidia/nemotron-3.5-asr-streaming-0.6b",
-    "base_model:quantized:nvidia/nemotron-3.5-asr-streaming-0.6b",
+    "base_model:finetune:nvidia/nemotron-3.5-asr-streaming-0.6b",
     "license:other",
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 72,
+  "downloads_30d": 81,
   "trending_score": 0,
   "parameters": 648268960,
   "parameters_human": "648.3M",
@@ -38,9 +37,7 @@
   "storage_human": "5.1 GB",
   "context_length": null,
   "base_model": "nvidia/nemotron-3.5-asr-streaming-0.6b",
-  "formats": [
-    "gguf"
-  ],
+  "formats": [],
   "is_conversational": false,
   "gated": false,
   "disabled": false,

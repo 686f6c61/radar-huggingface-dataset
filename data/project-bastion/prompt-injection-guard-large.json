@@ -1,0 +1,78 @@
+{
+  "schema": 2,
+  "id": "Project-Bastion/prompt-injection-guard-large",
+  "slug": "project-bastion-prompt-injection-guard-large",
+  "author": "Project-Bastion",
+  "url": "https://huggingface.co/Project-Bastion/prompt-injection-guard-large",
+  "created_at": "2026-11-24T08:28:03.000Z",
+  "updated_at": "2026-11-24T08:28:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "onnx",
+    "safetensors",
+    "roberta",
+    "text-classification",
+    "prompt-injection",
+    "llm-security",
+    "guardrails",
+    "security",
+    "classification",
+    "transformers.js",
+    "en",
+    "base_model:FacebookAI/roberta-large",
+    "base_model:quantized:FacebookAI/roberta-large",
+    "license:apache-2.0",
+    "model-index",
+    "text-embeddings-inference",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 355361794,
+  "parameters_human": "355.4M",
+  "storage_bytes": 3205915013,
+  "storage_human": "3.2 GB",
+  "context_length": null,
+  "base_model": "FacebookAI/roberta-large",
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "Prompt injection detection (PromptShield test",
+      "dataset": "PromptShield test",
+      "metric": "AUROC",
+      "value": 0.947
+    },
+    {
+      "task": "Prompt injection detection (PromptShield test",
+      "dataset": "PromptShield test",
+      "metric": "TPR at 1% FPR",
+      "value": 0.213
+    },
+    {
+      "task": "Prompt injection detection (fresh short prompts",
+      "dataset": "SalutefaceAAC/prompt-injection-classification test (386 prompts)",
+      "metric": "AUROC",
+      "value": 0.9975
+    }
+  ],
+  "sources": []
+}

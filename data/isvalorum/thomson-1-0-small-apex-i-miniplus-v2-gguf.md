@@ -2,117 +2,98 @@
 
 ## Resumen
 
-Thomson-1.0-Small APEX-I-MiniPlus-V2-GGUF es una cuantizacion personalizada, publicada por el usuario IsValorum, del modelo multimodal thomsonreuters/Thomson-1.0-Small. El modelo base es un Mixture of Experts (MoE) de unos 34.660.610.688 parametros (34,66 B) especializado por Thomson Reuters en analisis juridico, auditoria normativa, cumplimiento fiscal e inteligencia documental, con soporte de vision para documentos escaneados. Esta version no es un modelo nuevo: es una receta de cuantizacion tensor a tensor que comprime los pesos originales a un formato GGUF de 3,38 bits por peso (BPW), con un archivo principal de 14,63 GB (13,63 GiB) y un proyector de vision mmproj en Q8_0 de 610 MB.
+Thomson-1.0-Small-APEX-I-MiniPlus-V2-GGUF es una cuantizacion GGUF del modelo Thomson-1.0-Small, desarrollado originalmente por Thomson Reuters y cuantizado de forma independiente por IsValorum. Se trata de un modelo multimodal de tipo image-text-to-text con arquitectura MoE (mezcla de expertos), orientado a tareas de analisis documental, ambito legal y auditoria. El repositorio incluye pesos en formato GGUF optimizados para inferencia con llama.cpp, con un proyector visual multimodal incluido.
 
-La relevancia de esta ficha es doble. Por un lado, permite ejecutar un MoE de 35 B con arquitectura Qwen3_5Moe en equipos de consumo, gracias a que solo activa aproximadamente 3,2 B de parametros por token (8 expertos de 256 por capa). Por otro, el autor incluye explicitamente el proyector multimodal, algo que segun la propia model card se omite con frecuencia en cuantizaciones comunitarias, y calibra la compresion con matrices de importancia derivadas de corpus legal y financiero (510 entradas calibradas sobre 550 fragmentos densos de legislacion, auditorias y registros regulatorios).
+El modelo base cuenta con 34.660.610.688 parametros totales (aproximadamente 34,7 mil millones) y esta disenado para procesar contextos muy largos, con soporte declarado de hasta 256K tokens. La cuantizacion APEX-I-MiniPlus aplica una receta personalizada tensor por tensor que preserva las compuertas de enrutamiento en F32, protege la cabeza de salida en Q6_K y mantiene las compuertas de atencion en Q8_0, diferenciandose de las cuantizaciones genericas de la comunidad.
 
-Conviene tratar esta publicacion con cautela: la model card esta redactada en tono comercial, reconoce que la version V2.1 la sustituye, y no aporta resultados reproducibles de benchmarks. El repositorio tiene 63 descargas y 0 likes en el momento de la consulta, por lo que la validacion independiente es practicamente inexistente. Esta ficha se limita a los datos publicados y marca como no disponible todo lo que no consta.
+La relevancia de esta ficha radica en que permite ejecutar un modelo MoE de ~34,7B con capacidades multimodales y contexto extendido en hardware de consumo, incluyendo inferencia total o parcial en RAM del sistema. El repositorio ocupa 15,3 GB y se distribuye bajo licencia Apache 2.0, lo que facilita su adopcion en entornos comerciales.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer MoE multimodal, clase Qwen3_5MoeForConditionalGeneration (40 capas, 256 micro-expertos por capa, dimension intermedia 512, 8 expertos activos por token) mas proyector de vision |
-| Parametros totales | 34.660.610.688 (34,66 B), segun metadatos safetensors del modelo base |
-| Parametros activos | Aproximadamente 3,2 B por token (dato declarado por el autor de la cuantizacion) |
-| Longitud de contexto | 256K tokens (segun la model card); contexto nativo exacto del modelo base: no disponible |
-| Tipos de cuantizacion | Receta propietaria APEX-I-MiniPlus-V2 de 3,38 BPW en el archivo principal; proyector mmproj en Q8_0. Planes anunciados para V2.1: expertos compartidos a Q5_K, atencion periodica a Q4_K (attn_q/k/v) y Q6_K (attn_output), escalas recurrentes en F32. No se publican variantes completas Q2/Q3/Q4/Q5/Q6/Q8 del conjunto |
-| Idiomas soportados | en (solo ingles declarado) |
-| Licencia | apache-2.0 (etiquetada en el repositorio; los terminos del modelo base de Thomson Reuters no se detallan y conviene verificarlos) |
-| Formato de pesos | GGUF para llama.cpp; incluye proyector multimodal mmproj separado en GGUF |
-
-Ficheros publicados:
-
-| Fichero | Tamano | Formato | Funcion |
-|---|---|---|---|
-| Thomson-1.0-Small.APEX-I-MiniPlus-V2.gguf | 14,63 GB (13,63 GiB) | APEX-I personalizada (3,38 BPW) | Pesos principales |
-| mmproj-thomsonreuters_Thomson-1.0-Small-Q8_0.gguf | 610 MB (582 MiB) | Q8_0 | Proyector de vision (necesario para OCR y analisis de documentos escaneados) |
-
-Nota de consistencia: 34,66 B de parametros a 3,38 bits equivalen a unos 14,6 GB, coherente con el tamano del fichero principal declarado.
+| Arquitectura | MoE (mezcla de expertos), basada en qwen35moe; transformer con enrutamiento por expertos |
+| Parametros totales | 34.660.610.688 (~34,7B) |
+| Parametros activos | no disponible |
+| Longitud de contexto | hasta 256K tokens (segun la model card) |
+| Tipos de cuantizacion | GGUF con receta APEX-I-MiniPlus custom (IQ3_S, IQ4_NL, Q3_K, Q5_K, Q6_K, Q8_0, F32 en compuertas de enrutamiento) |
+| Idiomas soportados | en, zh, es, fr, de, pt, it, ru, ja, ko, vi, th, ar |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (llama.cpp); incluye proyector multimodal mmproj en Q8_0 |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura del modelo base es un MoE de tipo Qwen3_5Moe con decodificacion autorregresiva, 40 capas, 256 expertos finos de dimension intermedia 512 y un enrutador que activa 8 expertos por token. Esto da una relacion de activacion muy baja (aproximadamente 3,2 B de 34,66 B), lo que explica el interes por cuantizarlo: el coste de computo por token se aproxima al de un modelo de 3 B, mientras que la capacidad total almacenada es de 35 B. El modelo incorpora un proyector de vision que lo convierte en image-text-to-text, segun el pipeline declarado en Hugging Face.
+El modelo base Thomson-1.0-Small emplea una arquitectura MoE (mezcla de expertos) identificada en los tags como qwen35moe, con un total de aproximadamente 34,7 mil millones de parametros. La cuantizacion preserva las compuertas de enrutamiento en F32 sin comprimir, lo cual es critico en modelos MoE porque el enrutamiento determina que expertos se activan en cada token. La cabeza de salida de tokens se mantiene en Q6_K y las compuertas de atencion en Q8_0, mientras que los expertos compartidos de la fundacion se elevan a Q5_K en las 40 capas en la edicion V2.1.
 
-Sobre el entrenamiento no hay informacion en los datos proporcionados: no se detalla el numero de tokens, la composicion del dataset, ni si hubo RLHF, DPO u otras fases de alineamiento. Lo unico verificable en esta publicacion es el proceso de cuantizacion: recetas manuales tensor a tensor, uso de imatrix con 510 entradas calibradas obtenidas de 550 fragmentos densos de derecho estatutario, auditorias financieras y expedientes regulatorios, y compresion selectiva por tipo de tensor que eleva los expertos compartidos y las proyecciones de atencion por encima de la media. El autor sostiene que las recetas comunitarias genericas comprimen los expertos nucleares a IQ2_S de 2 bits y dejan la cabeza de salida sin proteger en Q3_K_M, lo que en su opinion provoca picos de perplejidad y colapso del razonamiento; no aporta mediciones que respalden esa afirmacion.
+No se dispone de informacion detallada sobre el numero de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de RLHF o DPO en la informacion proporcionada. La model card menciona que el modelo esta orientado a razonamiento profundo y tareas legales/financieras, y que la cuantizacion fue validada con una perplejidad de 5,3338 ± 0,1254 en WikiText-2 para la edicion V2.1 (delta de aproximadamente +0,05 respecto a la linea base sin cuantizar, ~5,28). Esta edicion V2 del repositorio mantiene una proteccion teorica adicional en capas de borde (10 capas en IQ3_S, expertos compartidos IQ4_NL y compuertas de atencion Q8_0), aunque la propia model card indica que en inferencia practica la diferencia de calidad respecto a V2.1 es practicamente imperceptible.
 
 ## Capacidades
 
-- Generacion de texto conversacional, segun la etiqueta conversational del repositorio.
-- Razonamiento especializado en dominio juridico, auditoria estatutaria, cumplimiento fiscal y analisis de documentacion compleja (es la especializacion declarada del modelo base).
-- Procesamiento de imagen y texto (image-text-to-text): analisis de PDF escaneados, tablas y OCR, siempre que se cargue el proyector mmproj junto con el modelo principal.
-- Capacidades multimodales habilitadas explicitamente en esta cuantizacion, a diferencia de otras publicaciones que omiten el proyector.
-- Eficiencia de inferencia propia de un MoE con aproximadamente 3,2 B de parametros activos por token.
-- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
-- Soporte de agentes y razonamiento multi-paso explicito: no disponible en la informacion proporcionada.
-- Modo thinking o razonamiento extendido: no disponible en la informacion proporcionada.
-- Capacidades multilingues: limitadas a ingles (idioma unico declarado).
-- Capacidades de audio: no disponibles.
+- Generacion de texto y razonamiento profundo en dominios legales, financieros y de auditoria.
+- Procesamiento multimodal image-text-to-text: analisis de imagenes, OCR y parseo de tablas mediante el proyector visual mmproj en Q8_0.
+- Soporte de contexto largo de hasta 256K tokens, adecuado para documentos legales y financieros extensos.
+- Capacidades multilingues en 13 idiomas: ingles, chino, espanol, frances, aleman, portugues, italiano, ruso, japones, coreano, vietnamita, tailandes y arabe.
+- Inferencia conversacional multi-turno.
+- Compatibilidad con endpoints (tag endpoints_compatible).
+- Disenado para auditoria y revision documental automatizada.
+- No se especifica en la informacion disponible soporte explicito de tool calling, function calling ni modo de razonamiento extendido (thinking mode).
 
 ## Casos de uso
 
-- Revision de contratos corporativos: el modelo puede procesar documentos extensos (hasta 256K tokens declarados) para extraer clausulas, obligaciones y fechas, y el proyector de vision permite trabajar directamente sobre PDF escaneados sin una fase previa de OCR externa.
-- Analisis de expedientes regulatorios: con la ventana de contexto larga y la especializacion declarada del modelo base, es adecuado para contrastar un documento nuevo contra normativa previamente cargada en contexto en lugar de depender de recuperacion externa.
-- Auditoria de estados financieros: lectura de tablas e imagenes de balances junto con texto para detectar inconsistencias entre cifras y notas, aprovechando la entrada multimodal.
-- Extraccion estructurada de documentos fiscales: digitalizacion de formularios y declaraciones escaneadas, con salida en formato estructurado para su carga en un ERP o en un sistema de gestion documental.
-- Asistente interno de cumplimiento normativo: despliegue en una estacion de trabajo con 24 GB de VRAM para responder consultas de empleados citando la normativa cargada, sin enviar documentacion sensible a servicios en la nube.
-- Procesamiento por lotes en portatil: gracias a que el fichero principal ocupa 13,63 GiB, es viable ejecutar clasificacion y resumen de documentos con offload parcial a RAM en equipos sin GPU dedicada de gran capacidad.
-- Investigacion sobre cuantizacion de MoE: el repositorio documenta decisiones de compresion por tensor (imatrix, expertos compartidos, capas de atencion periodica), lo que lo convierte en material de estudio para quien investigue tecnicas de cuantizacion selectiva en modelos con enrutado disperso.
+- Revision de contratos y documentos legales: el modelo puede procesar contratos de decenas o cientos de paginas en una sola pasada gracias a su ventana de 256K tokens, identificando clausulas criticas y discrepancias entre secciones sin necesidad de fragmentar el documento.
+- Auditoria documental automatizada: con capacidades multimodales, puede extraer datos de facturas, balances y estados financieros escaneados (OCR y parseo de tablas) y contrastarlos con registros estructurados, reduciendo la revision manual en procesos de compliance.
+- Analisis de expedientes financieros multi-idioma: al soportar 13 idiomas, permite revisar informes de filiales internacionales en su idioma original y consolidar hallazgos en un unico flujo, util para equipos de auditoria global.
+- Asistente de investigacion juridica: integrado en un pipeline RAG con llama.cpp, puede responder consultas sobre jurisprudencia y normativa manteniendo contexto de conversacion largo, adecuado para despachos con grandes volumenes de documentacion.
+- Despliegue en estaciones de trabajo sin GPU dedicada: la edicion V2.1 esta optimizada para streaming en RAM del sistema (DDR4/DDR5) con velocidades de 24 a 28+ tok/s, lo que permite ejecutar el modelo en portatiles o servidores sin VRAM suficiente para los 15,3 GB de pesos.
+- Procesamiento de documentacion escaneada en produccion: el proyector visual Q8_0 cargado en VRAM permite OCR y extraccion de tablas con baja latencia mientras los pesos principales se transmiten desde RAM, util para digitalizacion masiva de archivos.
+- Generacion de resumenes ejecutivos de informes anuales: con contexto de 256K tokens puede sintetizar informes de cientos de paginas en resumenes estructurados, manteniendo trazabilidad hacia las secciones originales.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye cifras de MMLU, HumanEval, GSM8K ni de evaluaciones juridicas especificas para esta cuantizacion, y tampoco se aportan resultados del modelo base.
-
-Los unicos datos cuantitativos de rendimiento presentes son afirmaciones del autor sobre velocidad de decodificacion, no verificadas de forma independiente:
-
-| Metrica | Valor declarado | Alcance |
+| Metrica | Valor | Contexto |
 |---|---|---|
-| Throughput en streaming con offload agresivo | 24 a 28+ tokens/s | Correspondiente al build V2.1 anunciado, con la mayor parte de los pesos en RAM DDR4 y VRAM minima |
+| Perplejidad WikiText-2 (V2.1) | 5,3338 ± 0,1254 | Delta de ~+0,05 respecto a la linea base sin cuantizar (~5,28) |
+| Perplejidad WikiText-2 (linea base) | ~5,28 | Modelo sin cuantizar |
+| Throughput streaming en RAM (V2.1) | +24 a 28+ tok/s | Inferencia en RAM del sistema con offload parcial |
+| Throughput estimado en RAM | 20 a 45 tok/s | Segun CPU y ancho de banda DDR4/DDR5 |
 
-Las comparaciones con cuantizaciones planas de 2 y 3 bits (IQ2_S, Q3_K_S, IQ3_S) que aparecen en la model card son cualitativas y sin cifras asociadas.
+No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) en la informacion disponible. La model card menciona un benchmark independiente de la familia APEX-I-MiniPlus con referencia Occamy V2, pero no se detallan las cifras en la informacion proporcionada.
 
 ## Requisitos de hardware
 
-Estimaciones derivadas de los tamanos de fichero publicados; el KV cache y el consumo real dependen del runtime y de la longitud de contexto efectiva, y no se detallan en la informacion disponible.
-
-- VRAM minima para pesos completos en GPU: aproximadamente 14,2 GiB (13,63 GiB del modelo principal mas 0,57 GiB del proyector), sin contar KV cache.
-- GPU de 24 GB (RTX 3090, RTX 4090, RTX A5000): la model card afirma que permite ejecutar el contexto completo de 256K completamente en VRAM.
-- GPU de 16 GB (RTX 4080, RTX 4060 Ti 16 GB, A4000): caben los pesos con margen limitado para contexto; el contexto maximo util no esta cuantificado en la informacion disponible.
-- GPU de 12 GB o menos, e integradas: viables solo con offload parcial a RAM del sistema; el autor reporta entre 24 y 28+ tokens/s en ese escenario.
-- Portatiles con DDR4/DDR5: la model card incluye una seccion de benchmarks en portatil, pero no se proporcionan los resultados numericos de esas pruebas.
-- Consumer GPU: si, cabe en tarjetas de gama alta y en configuraciones de gama media mediante offload.
-- Opciones de despliegue: llama.cpp y sus derivados (llama-server, Ollama, LM Studio, koboldcpp) al ser formato GGUF. Motores como vLLM o TGI no son la via natural para GGUF y requeririan convertir el modelo base a safetensors.
-- Latencia: no disponible. Throughput: 24 a 28+ tokens/s declarados con offload agresivo (afirmacion del autor).
-- Etiquetas adicionales del repositorio: endpoints_compatible, unsloth-studio, imatrix.
+- VRAM estimada: los pesos ocupan aproximadamente 14,7 GB (edicion V2.1) o 15,3 GB (repositorio V2). Con el proyector visual mmproj en Q8_0 y overhead de contexto, se recomienda un minimo de 18-20 GB de VRAM para carga completa.
+- La model card afirma que el contexto completo de 256K puede ejecutarse en VRAM en configuraciones de 24 GB ("The 24GB Miracle"), lo que incluye GPUs como RTX 3090, RTX 4090 o RTX 5090.
+- Cabe en GPUs de consumo de 24 GB (RTX 3090, 4090, 5090) con contexto extendido; en GPUs de 16 GB requerira offload parcial a RAM del sistema.
+- Inferencia total o parcial en RAM del sistema viable en equipos con DDR4/DDR5, con rendimiento de 20 a 45 tok/s segun ancho de banda de memoria.
+- Opciones de despliegue: llama.cpp (formato nativo GGUF), y por extension cualquier frontend compatible como Ollama o LM Studio. El tag endpoints_compatible sugiere compatibilidad con endpoints de inferencia.
+- Latencia y throughput: se reportan +24 a 28+ tok/s en streaming desde RAM para la edicion V2.1, eliminando los bloqueos de dequantizacion AVX2 en CPU. No se detallan cifras de throughput en GPU en la informacion disponible.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos de benchmarks ni de especificaciones detalladas de alternativas directas, por lo que la comparacion se limita a lo declarado en la documentacion y a los tamanos de fichero publicados.
-
-| Alternativa | Parametros | Contexto | Peso / formato | Licencia | Notas |
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| Thomson-1.0-Small APEX-I-MiniPlus-V2 (esta ficha) | 34,66 B totales, ~3,2 B activos | 256K declarados | 13,63 GiB, APEX-I 3,38 BPW + mmproj Q8_0 | apache-2.0 | Incluye proyector de vision; V2.1 anunciada como sustituta |
-| thomsonreuters/Thomson-1.0-Small (modelo base) | 34,66 B totales | no disponible | safetensors en BF16 (aproximadamente 69 GB, estimacion a 2 bytes por parametro) | no disponible en la informacion | Referencia de maxima calidad; requiere hardware muy superior |
-| Cuantizaciones planas Q3_K_S / IQ3_S del mismo base | 34,66 B totales | no disponible | no disponible | apache-2.0 (segun el repositorio) | El autor afirma que rinden por debajo de esta receta; sin datos verificables |
-| Recetas comunitarias APEX-I-Mini de 2 bits | 34,66 B totales | no disponible | no disponible | no disponible | El autor sostiene que comprimen expertos a IQ2_S y omiten el proyector de vision |
+| Thomson-1.0-Small APEX-I-MiniPlus V2 (este) | ~34,7B (MoE) | 256K | Apache 2.0 | GGUF | Multimodal, cuantizacion custom con proteccion de enrutadores |
+| Thomson-1.0-Small APEX-I-MiniPlus V2.1 | ~34,7B (MoE) | 256K | Apache 2.0 | GGUF | Edicion recomendada por el autor, ~14,7 GB, PPL 5,3338 |
+| Cuantizaciones APEX-I-Mini genericas de la comunidad | ~34,7B (MoE) | 256K | Apache 2.0 | GGUF | Expertos en IQ2_S, cabeza de salida en Q3_K_M; segun el autor, mayor perplejidad y errores de sintaxis |
+| Thomson-1.0-Small sin cuantizar | ~34,7B (MoE) | 256K | Apache 2.0 | safetensors | Linea base, PPL ~5,28 en WikiText-2 |
+
+No se dispone de datos de benchmarks comparativos con modelos de otras familias en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- Sesgos conocidos: no se documenta ningun analisis de sesgos en la informacion proporcionada.
-- Riesgo de alucinacion: relevante en dominio juridico y fiscal, donde una cita o una cifra inventada puede tener consecuencias graves. No hay evaluaciones publicadas de fidelidad factual para esta cuantizacion.
-- Perdida por cuantizacion: 3,38 BPW es una compresion agresiva. Aunque la receta es selectiva por tensor, no se aportan mediciones de perplejidad ni comparaciones numericas frente al modelo base en BF16.
-- Idioma: unicamente ingles declarado. No hay soporte multilingue verificado, lo que limita su uso en documentacion en castellano sin evaluacion previa.
-- Contexto: los 256K tokens son una cifra declarada en la model card, no verificada de forma independiente para esta cuantizacion concreta.
-- Version obsoleta: la propia model card indica que la V2 aqui descrita queda sustituida por la V2.1, con mejoras en expertos compartidos (Q5_K), anclas de atencion (Q4_K y Q6_K) y escalas recurrentes en F32.
-- Licencia: el repositorio se etiqueta como apache-2.0, pero los terminos aplicables al modelo base de Thomson Reuters no se detallan. Antes de un uso comercial conviene verificar la licencia del modelo original, ya que puede imponer restricciones adicionales.
-- Validacion de la comunidad: 63 descargas y 0 likes. No hay evaluaciones de terceros, ni issues publicos, ni resultados reproducibles.
-- Tono de la documentacion: la model card usa lenguaje promocional ("la especificacion definitiva", "elimina este defecto de forma permanente") y comparaciones sin datos. Las afirmaciones de superioridad frente a otras cuantizaciones deben tratarse como no verificadas.
-- Uso profesional: no debe emplearse como sustituto de asesoramiento juridico o fiscal cualificado.
+- La cuantizacion introduce una degradacion de calidad medible: delta de perplejidad de aproximadamente +0,05 respecto al modelo sin cuantizar en WikiText-2, aunque el autor la califica de despreciable.
+- El modelo esta especializado en dominios legal, financiero y de auditoria; su rendimiento en otros dominios no esta documentado.
+- Riesgo de alucinacion inherente a los modelos de lenguaje, especialmente critico en contextos legales y de auditoria donde los errores pueden tener consecuencias regulatorias. Se recomienda validacion humana.
+- La model card no documenta sesgos conocidos ni evaluaciones de seguridad o alineacion.
+- No se especifica soporte explicito de tool calling ni function calling, lo que limita su uso en pipelines agente automatizados sin capas adicionales.
+- El tag de idiomas de Hugging Face indica solo "en" como idioma principal, aunque los metadatos de la model card listan 13 idiomas; conviene validar el rendimiento real en espanol y otros idiomas antes de produccion.
+- La licencia Apache 2.0 permite uso comercial, pero el modelo base es de Thomson Reuters y conviene verificar las condiciones del modelo original.
+- Las cifras de rendimiento (tok/s) son proyecciones del autor y dependen fuertemente del hardware, la configuracion de memoria y el backend de inferencia.
+- El repositorio tiene un numero bajo de descargas (331) y cero likes en el momento de la consulta, lo que limita la validacion comunitaria de la cuantizacion.
 
 ## Enlaces
 
-- Repositorio de la cuantizacion: https://huggingface.co/IsValorum/Thomson-1.0-Small-APEX-I-MiniPlus-V2-GGUF
+- Repositorio Hugging Face: https://huggingface.co/IsValorum/Thomson-1.0-Small-APEX-I-MiniPlus-V2-GGUF
+- Edicion recomendada V2.1: https://huggingface.co/IsValorum/Thomson-1.0-Small-APEX-I-MiniPlus-V2.1-GGUF
 - Modelo base: https://huggingface.co/thomsonreuters/Thomson-1.0-Small
-- Catalogo del autor (donde se anuncia la V2.1): https://huggingface.co/IsValorum
-- llama.cpp (runtime compatible con GGUF): https://github.com/ggml-org/llama.cpp
-- Los resultados de busqueda web proporcionados no contienen informacion relevante sobre este modelo: devuelven unicamente paginas generales de CNN sin relacion con Thomson-1.0-Small, con la cuantizacion APEX-I ni con Thomson Reuters. No se han localizado papers, blogs ni demos adicionales.
+- Apoyo al autor: https://ko-fi.com/isvalorum

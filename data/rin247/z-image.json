@@ -5,7 +5,7 @@
   "author": "Rin247",
   "url": "https://huggingface.co/Rin247/Z-Image",
   "created_at": "2026-10-23T09:40:49.000Z",
-  "updated_at": "2026-11-02T00:00:02.000Z",
+  "updated_at": "2026-11-23T20:16:50.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-to-image",
@@ -19,6 +19,8 @@
     "weight-only",
     "image",
     "text-to-image",
+    "base_model:Tongyi-MAI/Z-Image",
+    "base_model:quantized:Tongyi-MAI/Z-Image",
     "diffusers:ZImagePipeline",
     "region:us"
   ],
@@ -30,7 +32,7 @@
   "storage_bytes": 33308548786,
   "storage_human": "33.3 GB",
   "context_length": null,
-  "base_model": null,
+  "base_model": "Tongyi-MAI/Z-Image",
   "formats": [
     "diffusers",
     "safetensors"

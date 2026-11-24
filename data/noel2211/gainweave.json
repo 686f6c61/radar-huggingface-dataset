@@ -1,0 +1,53 @@
+{
+  "schema": 2,
+  "id": "Noel2211/GainWeave",
+  "slug": "noel2211-gainweave",
+  "author": "Noel2211",
+  "url": "https://huggingface.co/Noel2211/GainWeave",
+  "created_at": "2026-11-16T15:41:32.000Z",
+  "updated_at": "2026-11-24T11:23:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-image",
+  "library": "pytorch",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "pytorch",
+    "hdr",
+    "gainweave",
+    "image-to-image",
+    "text-to-image",
+    "safetensors",
+    "en",
+    "zh",
+    "base_model:Alpha-VLLM/Lumina-Image-2.0",
+    "base_model:adapter:Alpha-VLLM/Lumina-Image-2.0",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 2,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 560648,
+  "storage_human": "560648 B",
+  "context_length": null,
+  "base_model": "Alpha-VLLM/Lumina-Image-2.0",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

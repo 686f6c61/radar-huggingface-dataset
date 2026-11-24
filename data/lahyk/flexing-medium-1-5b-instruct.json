@@ -5,7 +5,7 @@
   "author": "lahyk",
   "url": "https://huggingface.co/lahyk/Flexing-medium-1.5B-Instruct",
   "created_at": "2026-11-23T19:05:52.000Z",
-  "updated_at": "2026-11-23T19:06:06.000Z",
+  "updated_at": "2026-11-24T08:51:36.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -16,6 +16,7 @@
   ],
   "tags": [
     "safetensors",
+    "gguf",
     "qwen2",
     "python",
     "code",
@@ -27,8 +28,9 @@
     "ru",
     "en",
     "base_model:Qwen/Qwen2.5-1.5B-Instruct",
-    "base_model:finetune:Qwen/Qwen2.5-1.5B-Instruct",
+    "base_model:quantized:Qwen/Qwen2.5-1.5B-Instruct",
     "license:apache-2.0",
+    "endpoints_compatible",
     "region:us"
   ],
   "likes": 0,
@@ -36,11 +38,12 @@
   "trending_score": 0,
   "parameters": 1543714304,
   "parameters_human": "1.54B",
-  "storage_bytes": 3098888798,
-  "storage_human": "3.1 GB",
-  "context_length": null,
+  "storage_bytes": 15330857617,
+  "storage_human": "15.3 GB",
+  "context_length": 32768,
   "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
   "formats": [
+    "gguf",
     "safetensors"
   ],
   "is_conversational": true,

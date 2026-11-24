@@ -1,0 +1,78 @@
+{
+  "schema": 2,
+  "id": "bhc6/ECT-Qwen3-VL-4B",
+  "slug": "bhc6-ect-qwen3-vl-4b",
+  "author": "bhc6",
+  "url": "https://huggingface.co/bhc6/ECT-Qwen3-VL-4B",
+  "created_at": "2026-11-22T07:07:34.000Z",
+  "updated_at": "2026-11-24T06:37:08.000Z",
+  "license": "qicd-research-only",
+  "license_family": "unknown",
+  "pipeline_tag": "video-text-to-text",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "qwen3-vl",
+    "proactive-assistant",
+    "mistake-detection",
+    "video",
+    "egocentric",
+    "task-guidance",
+    "video-text-to-text",
+    "base_model:Qwen/Qwen3-VL-4B-Instruct",
+    "base_model:adapter:Qwen/Qwen3-VL-4B-Instruct",
+    "license:other",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 6,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 528557816,
+  "storage_human": "529 MB",
+  "context_length": null,
+  "base_model": "Qwen/Qwen3-VL-4B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "Proactive mistake feedback (official turn-based protocol)",
+      "dataset": "QICD (Advanced Planning)",
+      "metric": "IC-Acc (instruction completion, %)",
+      "value": 40.3
+    },
+    {
+      "task": "Proactive mistake feedback (official turn-based protocol)",
+      "dataset": "QICD (Advanced Planning)",
+      "metric": "Mistake F1",
+      "value": 0.227
+    },
+    {
+      "task": "Proactive mistake feedback (official turn-based protocol)",
+      "dataset": "Ego-MC-Bench (zero-shot transfer)",
+      "metric": "IC-Acc (instruction completion, %)",
+      "value": 61.7
+    },
+    {
+      "task": "Proactive mistake feedback (official turn-based protocol)",
+      "dataset": "Ego-MC-Bench (zero-shot transfer)",
+      "metric": "Mistake F1",
+      "value": 0.175
+    }
+  ],
+  "sources": []
+}

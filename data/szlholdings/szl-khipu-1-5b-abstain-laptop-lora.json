@@ -5,7 +5,7 @@
   "author": "SZLHOLDINGS",
   "url": "https://huggingface.co/SZLHOLDINGS/SZL-Khipu-1.5B-abstain-laptop-lora",
   "created_at": "2026-10-25T05:10:47.000Z",
-  "updated_at": "2026-11-16T13:06:58.000Z",
+  "updated_at": "2026-11-23T01:06:39.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -13,10 +13,6 @@
   "languages": [],
   "tags": [
     "safetensors",
-    "research-artifact",
-    "experimental",
-    "receipt-bound",
-    "license:apache-2.0",
     "region:us"
   ],
   "likes": 0,

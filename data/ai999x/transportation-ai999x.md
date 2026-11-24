@@ -2,106 +2,107 @@
 
 ## Resumen
 
-transportation-ai999x es un motor de resolución de problemas de ingeniería del transporte escrito en Python y distribuido por la organización AI999X (autor: Ibnul Jaif Farabi). No es un modelo de lenguaje generativo al uso: la model card lo describe como un sistema neuro-simbólico determinista que interpreta preguntas en inglés sencillo (o llamadas tipadas) y las resuelve con uno de sus 77 procedimientos certificados, devolviendo el resultado junto con pasos, fórmulas en LaTeX, unidades y supuestos. Cubre dinámica de vehículos, distancias de frenado y visibilidad, flujo de tráfico, geometría de carreteras, explotación ferroviaria, planificación de rutas y capacidad de transporte público.
+Transportation (transportation-ai999x) es un motor de cálculo determinista empaquetado como modelo de question-answering para ingeniería del transporte. Lo desarrolla AI999X y resuelve 81 cálculos repartidos en 16 temas: dinámica de vehículos, distancias de frenado y visibilidad, flujo de tráfico, geometría de carreteras, operación ferroviaria, planificación de rutas y capacidad de transporte público. Cada cálculo devuelve su fórmula, los pasos intermedios, las unidades y una explicación en lenguaje natural; cuando una entrada falta o está fuera de rango, devuelve una razón en texto en lugar de un número inventado.
 
-El paquete se ejecuta íntegramente en CPU, sin GPU, sin clave de API y sin conexión de red, y declara un conjunto de 536 respuestas doradas reproducidas de forma idéntica en Windows y Linux sobre Python 3.10 a 3.14. Su diseño prioriza la ausencia de respuestas incorrectas: cuando no puede verificar un resultado, devuelve uno de siete estados explícitos (SOLVED, NEEDS_INPUT, AMBIGUOUS, INVALID_INPUT, OUT_OF_SCOPE, UNRECOGNIZED_FORMAT, INTERNAL_ERROR) en lugar de improvisar.
+El punto clave es que no es un modelo neuronal generativo: los pesos publicados son safetensors de 4.715.520 parámetros (unos 4,7 M) que acompañan a un motor compilado en Rust. La inferencia se ejecuta de forma local y offline en cuatro formatos: aplicación de escritorio (Windows y Linux), línea de comandos, navegador y paquete de Python. La licencia es Apache 2.0 y el idioma declarado es únicamente inglés.
 
-Es relevante para el nicho edtech y de herramientas de ingeniería porque propone lo contrario de un LLM: solución exacta, reproducible y auditable en lugar de generación probabilística. Conviene señalar, no obstante, que el repositorio contiene pesos en safetensors con 4.715.520 parámetros declarados, lo que sugiere un componente neuronal (probablemente clasificación de intención o similitud semántica) que la model card no describe en detalle; la documentación pública se centra en la capa simbólica.
+Es relevante para docentes, estudiantes y equipos de ingeniería que necesitan respuestas reproducibles y auditables en lugar de texto plausible. El autor declara cero alucinaciones y resultados idénticos verificados en Windows y Linux sobre Python 3.10 a 3.14, aunque la métrica aparece marcada como no verificada en el model-index.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Motor neuro-simbólico determinista: lectura basada en reglas + 77 capacidades simbólicas certificadas; pesos neuronales auxiliares en safetensors/ONNX (composición exacta no documentada) |
-| Parametros totales | 4.715.520 (según safetensors del repositorio) |
-| Parametros activos | No aplica (no es un modelo MoE) |
-| Longitud de contexto | No disponible (no es un modelo generativo con ventana de contexto; acepta las formas de pregunta documentadas) |
-| Tipos de cuantizacion | No disponible; se distribuye wheel de Python con pesos ONNX y safetensors sin información de cuantización |
+| Arquitectura | Motor de cálculo determinista compilado en Rust, empaquetado con pesos safetensors; no es un transformer generativo |
+| Parametros totales | 4.715.520 (4,7 M) |
+| Parametros activos | No aplica (no es MoE) |
+| Longitud de contexto | No disponible (no es un modelo de contexto conversacional) |
+| Tipos de cuantizacion | No disponible; el motor se distribuye como binario compilado y build Python puro |
 | Idiomas soportados | Inglés (en) |
-| Licencia | Apache-2.0 |
-| Formato de pesos | safetensors, ONNX; distribución principal como wheel de PyPI (`transportation_ai999x-1.0.1-py3-none-any.whl`) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | safetensors; distribución adicional como ZIP/TAR.GZ (escritorio y CLI) y paquete pip |
 
 ## Arquitectura y entrenamiento
 
-La model card define el sistema como un motor híbrido: una capa de lectura que interpreta preguntas en inglés o llamadas tipadas (`solve(capability_id, **inputs)`) y una capa simbólica que ejecuta procedimientos certificados sobre SymPy y mpmath. Cada resultado se somete a una comprobación posterior (sustitución inversa, análisis dimensional o contraste con un cálculo independiente) antes de devolverse. El paquete incluye un "knowledge pack" versión 1.0.0 y 77 procedimientos que cubren dinámica de vehículos, frenado, flujo de tráfico, geometría viaria, ferrocarril, rutas y capacidad de tránsito.
+La ficha técnica describe un único motor compilado que implementa 81 cálculos de ingeniería del transporte agrupados en 16 temas. No se documenta una arquitectura de red neuronal, ni número de tokens de entrenamiento, ni fases de RLHF o DPO. El comportamiento es determinista por diseño: cada consulta se resuelve aplicando la fórmula correspondiente con validación de rangos y unidades, y la salida incluye los pasos intermedios. Los pesos safetensors (4,7 M de parámetros) acompañan al motor, pero la model card no detalla su función exacta dentro del pipeline.
 
-No se documenta en la información disponible el proceso de entrenamiento de los componentes neuronales: no hay datos sobre número de tokens, composición del corpus, ni uso de RLHF o DPO. Tampoco se detalla si los 4.715.520 parámetros en safetensors corresponden a un encoder de frases, a un clasificador de intención o a ambos. La innovación declarada no es algorítmica en el sentido habitual, sino de ingeniería de fiabilidad: taxonomía cerrada de siete estados de salida, reproducibilidad bit a bit entre plataformas y rechazo explícito cuando falta un dato de entrada.
+La innovación destacable no es algorítmica en el sentido habitual, sino de ingeniería de producto: el mismo motor se compila para escritorio y CLI, se expone en navegador y se distribuye como paquete de Python. En Windows y Linux x86-64, `pip install transportation-ai999x` instala el motor compilado; en macOS y ARM instala una build Python puro que, según el autor, ofrece las mismas respuestas. El autor declara resultados idénticos entre plataformas sobre un conjunto de 563 preguntas documentadas.
 
 ## Capacidades
 
-- Resolución de problemas de dinámica de vehículos: distancia de parada y de visibilidad, frenado, velocidad segura en curva con peralte y rozamiento lateral.
-- Ingeniería de tráfico: flujo, colas en intersecciones semaforizadas, demora uniforme, capacidad y niveles de servicio.
-- Geometría de carreteras: curvas, peralte, distancias de visibilidad y trazado.
-- Explotación ferroviaria y planificación de transporte: capacidad, rutas y asignación.
-- Búsqueda de ruta más rápida sobre grafos con pesos de distancia y velocidad (algoritmo no especificado en la información disponible).
-- Interfaz de doble entrada: `ask()` para preguntas en inglés documentado y `solve(capability_id, **inputs)` tipado y garantizado.
-- Salida explicativa: pasos intermedios, fórmulas en LaTeX, unidades, supuestos y capacidad utilizada.
-- Taxonomía de siete estados de resultado con rechazo explícito en lugar de estimación.
-- Ejecución offline en CPU, sin red, sin clave de API y sin GPU.
-- Tareas auxiliares declaradas por los tags: token classification, text classification, sentence similarity, feature extraction y búsqueda semántica.
-- No dispone de: generación de texto libre, visión, audio, tool calling genérico, razonamiento multi-paso abierto ni modo "thinking".
+- Resolución paso a paso de 81 cálculos de ingeniería del transporte en 16 temas, con fórmula, unidades y explicación.
+- Distancias de visibilidad y frenado, incluida la componente de pendiente.
+- Geometría de carreteras: peralte, curvas verticales, velocidad segura en curva horizontal.
+- Flujo de tráfico: modelo de Greenshields, onda de choque, nivel de servicio en autopista a partir de densidad.
+- Sincronización semafórica y teoría de colas (retardo uniforme D/D/1).
+- Dinámica de vehículos: gradiente de subviraje y velocidad característica o crítica (modelo de bicicleta).
+- Operación ferroviaria: tiempos de recorrido y planificación de rutas.
+- Elasticidades directas y cruzadas de probabilidades de elección logit.
+- Cargas equivalentes por eje según la ley de cuarta potencia.
+- Validación de entradas: devuelve una razón en texto cuando falta un dato o está fuera de rango, en lugar de un número.
+- Ejecución offline y local; sin llamadas a servicios externos.
+- Interfaz de escritorio con escenas y gráficos generados a partir del resultado calculado.
+- No soporta tool calling genérico, agentes multi-paso ni visión; su alcance es el catálogo de cálculos documentado.
 
 ## Casos de uso
 
-- Corrección automática de ejercicios de ingeniería del transporte: el motor recibe el enunciado y devuelve resultado, pasos y supuestos, lo que permite comparar con la solución del alumno y señalar en qué paso diverge.
-- Tutoría offline en entornos sin conectividad: al ejecutarse solo en CPU y sin red, puede desplegarse en aulas, portátiles de campo o dispositivos edge donde no se permite enviar datos a la nube.
-- Generación de bancos de problemas verificados: las 536 respuestas doradas sirven como base de tests de regresión para materiales docentes o para validar ejercicios nuevos.
-- Validación cruzada en pipelines de cálculo viario: integrado como dependencia Python, comprueba resultados de hojas de cálculo o scripts propios en distancias de visibilidad, curvas y capacidad semaforizada.
-- Herramienta de apoyo en obra y campo: cálculo de velocidad segura en curva o distancia de parada desde un portátil sin conexión, con trazabilidad de fórmulas y unidades.
-- Componente de evaluación para LLM: usar sus respuestas deterministas como referencia frente a las que produce un modelo generativo en las mismas preguntas de transporte.
-- Preprocesado semántico en buscadores técnicos: los tags de sentence similarity y feature extraction permiten indexar documentación de transporte, aunque no se detalla el rendimiento de estas tareas.
+- Docencia de ingeniería del transporte: el alumnado plantea un problema de distancia de visibilidad y obtiene la fórmula, los pasos y las unidades, lo que permite corregir el procedimiento y no solo el resultado final.
+- Corrección de ejercicios y tutoría: con 563 preguntas doradas documentadas, el motor sirve como referencia reproducible para comparar entregas y detectar errores de unidades.
+- Verificación en gabinete de proyectos viarios: cálculo rápido de peralte, curvas verticales y velocidad segura en curva para comprobar hipótesis antes de pasar al software de diseño geométrico.
+- Análisis de capacidad y niveles de servicio: estimación de densidad y nivel de servicio en un segmento básico de autopista para prefactibilidad de ampliaciones.
+- Estudios de sincronización semafórica: retardo uniforme y formación de colas en un cruce con demanda conocida, útil para priorizar intersecciones en un plan de movilidad.
+- Planificación de rutas y tiempos de recorrido: cálculo de la ruta más rápida sobre una red con longitudes y velocidades por enlace, y estimación de tiempos de recorrido ferroviario.
+- Integración en pipelines de Python: el paquete `transportation-ai999x` permite incorporar los cálculos a cuadernos de análisis o a scripts de validación de datos de aforo.
+- Uso en campo sin conectividad: la aplicación de escritorio y la CLI funcionan offline en Windows y Linux, lo que facilita consultas en oficina técnica o en visitas de obra.
 
 ## Benchmarks y rendimiento
 
-| Tarea | Dataset | Metrica | Resultado | Verificado |
-|---|---|---|---|---|
-| Question answering de transporte | Golden answers (536 preguntas documentadas, Windows + Linux, Python 3.10-3.14, tipo `ai999x-evaluation`) | accuracy | 1,0 (100 %) | No (declarado por el autor; `verified: false`) |
+Datos declarados por el autor en el model-index:
 
-No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, BBH u otros) en la información disponible. La única métrica reportada mide reproducibilidad sobre el propio conjunto de preguntas del autor, no capacidad general ni comparación con terceros; debe interpretarse como consistencia interna, no como calidad absoluta.
+| Tarea | Conjunto de evaluación | Métrica | Valor | Verificado |
+|---|---|---|---|---|
+| Question answering (transporte) | Golden answers (563 preguntas documentadas, Windows + Linux, Python 3.10-3.14) | Accuracy | 1,0 (idéntico en cada plataforma) | No |
+
+No se han publicado otros resultados de benchmarks (MMLU, HumanEval, GSM8K u otros) en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM: 0 GB. El sistema está diseñado para ejecutarse exclusivamente en CPU; no requiere GPU.
-- GPU recomendadas: ninguna. No hay soporte CUDA declarado.
-- Compatibilidad con GPU de consumo: irrelevante; el despliegue objetivo es CPU, incluyendo entornos edge.
-- RAM y CPU: no se especifican requisitos mínimos; el tamaño del repositorio es de 0,1 GB y las dependencias declaradas son SymPy y mpmath.
-- Sistemas y versiones probados: Windows con Python 3.13; Linux x86-64 con Python 3.10, 3.11, 3.12, 3.13 y 3.14.
-- Opciones de despliegue: `pip install transportation-ai999x` desde PyPI o instalación directa del wheel alojado en Hugging Face; uso como librería Python (`import transportation_ai999x`). No aplica despliegue con vLLM, TGI, llama.cpp u Ollama.
-- Latencia y throughput: no disponibles en la información proporcionada. Al ser cálculo simbólico sobre CPU, la latencia dependerá del procedimiento concreto y no de un coste de inferencia neuronal dominante.
+- VRAM estimada para inferencia: no aplica en el sentido habitual; el motor se ejecuta en CPU y los pesos ocupan unos pocos megabytes (repositorio de 0,0 GB según Hugging Face).
+- GPU recomendadas: no se requiere GPU.
+- Cabe en cualquier equipo de consumo: Windows o Linux x86-64 para la build compilada; macOS y ARM mediante la build Python puro.
+- Opciones de despliegue: aplicación de escritorio (Windows/Linux), CLI `transportation`, navegador en la página del modelo y paquete `pip install transportation-ai999x` para Python 3.10 o superior.
+- Latencia y throughput: no disponibles; al ser cálculo determinista local, la latencia depende del cálculo concreto y del equipo, no de un motor de inferencia neuronal.
+- No se documenta compatibilidad con vLLM, llama.cpp, Ollama ni TGI, ya que no es un modelo de lenguaje generativo.
 
 ## Comparativa con modelos similares
 
-| Criterio | transportation-ai999x | LLM generativo de propósito general | Librería simbólica (tipo SymPy/SciPy) | Motor de conocimiento comercial (tipo Wolfram\|Alpha) |
-|---|---|---|---|---|
-| Parametros | 4.715.520 declarados en safetensors | Variable según modelo (no disponible aquí) | No aplica (no es un modelo entrenado) | No disponible |
-| Contexto | No disponible; acepta formas de pregunta documentadas | Ventana de tokens variable | No aplica | No aplica |
-| Determinismo | Sí, por diseño; 536 respuestas idénticas entre plataformas | No | Sí | No documentado |
-| Cobertura de dominio | 77 capacidades cerradas de transporte | Abierta, con riesgo de error | Abierta pero requiere formular el cálculo | Amplia, genérica |
-| Ejecución offline | Sí, CPU, sin red | Posible con pesos locales y hardware adecuado | Sí | No |
-| Licencia | Apache-2.0 | Variable según modelo | Licencia permisiva del proyecto correspondiente | Propietaria |
-| Disponibilidad | PyPI + Hugging Face; 0 descargas y 0 likes en el momento de la ficha | Amplia | Amplia | Comercial |
+| Modelo | Tipo | Parámetros | Contexto | Licencia | Enfoque |
+|---|---|---|---|---|---|
+| transportation-ai999x | Motor determinista + pesos safetensors | 4,7 M | No aplica | Apache 2.0 | 81 cálculos de ingeniería del transporte con pasos |
+| LLM generalista (p. ej. Llama, Qwen) | Transformer generativo | Miles de millones | Decenas de miles de tokens | Variable | Texto libre; riesgo de alucinación en cálculos |
+| Software de diseño geométrico (p. ej. AutoCAD Civil 3D, OpenRoads) | Herramienta CAD profesional | No aplica | No aplica | Comercial | Diseño y modelado, no resolución explicada de ejercicios |
 
-No se dispone de datos públicos de comparación directa con otros solucionadores de ingeniería del transporte, por lo que la comparativa es cualitativa.
+No se dispone de datos de benchmarks comparativos con estas alternativas en la información proporcionada. La comparación cualitativa se limita al tipo de herramienta y su encaje de uso.
 
 ## Limitaciones y advertencias
 
-- Ámbito cerrado: solo responde a las 77 capacidades y a las formas de pregunta documentadas; cualquier cuestión fuera de ese conjunto devuelve OUT_OF_SCOPE o UNRECOGNIZED_FORMAT.
-- Un solo idioma: la interfaz de lenguaje natural está en inglés; no hay soporte declarado de castellano.
-- Naturaleza no generativa: no redacta explicaciones libres, no mantiene conversaciones multi-turno y no razona sobre problemas abiertos.
-- Riesgo de alucinación bajo por diseño (rechaza en lugar de estimar), pero esa misma política puede producir rechazos en problemas resolubles si la entrada no encaja en el formato esperado.
-- La métrica de accuracy 1,0 está declarada por el autor, marcada como no verificada y medida sobre su propio conjunto de 536 preguntas; no equivale a una evaluación independiente.
-- Adopción nula en el momento de la ficha (0 descargas, 0 likes) y ausencia de validación por terceros; conviene tratarlo como proyecto emergente de un único autor.
-- Falta de documentación sobre la capa neuronal: no se detalla qué hacen los 4.715.520 parámetros en safetensors ni cómo se entrenaron, lo que dificulta auditar esa parte.
-- Licencia Apache-2.0 permite uso comercial y modificación, con obligación de conservar avisos de copyright y licencia y de indicar cambios; no hay cláusulas de uso restringido declaradas.
-- Para producción: fijar la versión del paquete y del knowledge pack (1.0.0) y cubrir con tests propios los procedimientos críticos, dado que no existe garantía externa de estabilidad entre versiones.
+- Solo admite inglés; no hay soporte declarado de castellano ni de otros idiomas.
+- El alcance está cerrado a los 81 cálculos documentados en 16 temas; no responde preguntas fuera de ese catálogo.
+- No es un modelo generativo: no redacta informes, no razona sobre texto libre ni mantiene conversaciones abiertas.
+- La métrica de accuracy 1,0 aparece marcada como no verificada en el model-index; conviene tratarla como declaración del autor.
+- La evaluación se limita a 563 preguntas doradas sobre Windows y Linux con Python 3.10-3.14; no cubre macOS ni ARM de forma nativa con el motor compilado.
+- En macOS y ARM se instala una build Python puro; el autor afirma respuestas idénticas, pero el rendimiento puede diferir.
+- No se documentan sesgos, pues no hay entrenamiento sobre corpus lingüístico; el riesgo principal es de alcance (interpretar mal una pregunta fuera del catálogo) y no de alucinación de cifras.
+- Licencia Apache 2.0: permite uso comercial y modificación con atribución; conviene revisar el archivo LICENSE del repositorio para los términos exactos.
+- Para producción, validar que las fórmulas y constantes coinciden con la normativa aplicable en la jurisdicción del proyecto (por ejemplo, AASHTO frente a normas nacionales), ya que la model card no especifica la fuente normativa de cada cálculo.
+- El repositorio tiene un tamaño de 0,0 GB y 332 descargas; es un proyecto con poca tracción comunitaria, sin likes, lo que reduce la base de validación externa.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/AI999X/transportation-ai999x
-- Paquete en PyPI: https://pypi.org/project/transportation-ai999x/
-- Guía de capacidades (docs): https://huggingface.co/AI999X/transportation-ai999x/tree/main/docs
-- Evaluación: https://huggingface.co/AI999X/transportation-ai999x/tree/main/evaluation
-- Organización AI999X en Hugging Face: https://huggingface.co/AI999X
-- Sitio web: https://ai999x.com
-- Apoyo al desarrollo: https://buymeacoffee.com/ibnuljaiffarabi
-- Licencia: https://huggingface.co/AI999X/transportation-ai999x/blob/main/LICENSE
+- Hugging Face: https://huggingface.co/AI999X/transportation-ai999x
+- Página del modelo con demo en navegador: https://www.ai999x.com/models/transportation-ai999x/
+- Capacidades del modelo: https://www.ai999x.com/models/transportation-ai999x/#capabilities
+- Aplicación de escritorio, Windows: https://github.com/AI999X/ai999x-desktop/releases/download/v1.6.7/ai999x-transportation-1.6.7-windows-x86_64.zip
+- Aplicación de escritorio, Linux: https://github.com/AI999X/ai999x-desktop/releases/download/v1.6.7/ai999x-transportation-1.6.7-linux-x86_64.tar.gz
+- CLI, Windows: https://github.com/AI999X/ai999x-desktop/releases/download/v1.6.7/ai999x-cli-1.6.7-windows-x86_64.zip
+- CLI, Linux: https://github.com/AI999X/ai999x-desktop/releases/download/v1.6.7/ai999x-cli-1.6.7-linux-x86_64.tar.gz
+- Vídeo de demostración: https://www.ai999x.com/?ax_shot=transportation-ai999x/clip.mp4

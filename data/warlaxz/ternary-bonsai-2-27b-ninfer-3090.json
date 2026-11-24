@@ -5,7 +5,7 @@
   "author": "WarlaxZ",
   "url": "https://huggingface.co/WarlaxZ/Ternary-Bonsai-2-27B-NInfer-3090",
   "created_at": "2026-10-15T12:08:23.000Z",
-  "updated_at": "2026-11-23T12:01:32.000Z",
+  "updated_at": "2026-11-23T14:08:43.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",

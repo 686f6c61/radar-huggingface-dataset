@@ -5,7 +5,7 @@
   "author": "WarlaxZ",
   "url": "https://huggingface.co/WarlaxZ/Inkling-2-Mini-NInfer-V100",
   "created_at": "2026-11-21T07:12:46.000Z",
-  "updated_at": "2026-11-21T07:15:26.000Z",
+  "updated_at": "2026-11-23T19:43:38.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",

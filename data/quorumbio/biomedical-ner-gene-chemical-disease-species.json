@@ -5,7 +5,7 @@
   "author": "quorumbio",
   "url": "https://huggingface.co/quorumbio/biomedical-ner-gene-chemical-disease-species",
   "created_at": "2026-11-23T04:05:59.000Z",
-  "updated_at": "2026-11-23T04:08:57.000Z",
+  "updated_at": "2026-11-23T17:04:51.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "token-classification",
@@ -48,7 +48,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 38,
   "trending_score": 0,
   "parameters": 108901645,
   "parameters_human": "108.9M",

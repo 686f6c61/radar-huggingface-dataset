@@ -5,7 +5,7 @@
   "author": "muyleanging",
   "url": "https://huggingface.co/muyleanging/sota-khmer-asr",
   "created_at": "2026-11-10T23:52:44.000Z",
-  "updated_at": "2026-11-23T08:37:24.000Z",
+  "updated_at": "2026-11-24T00:18:45.000Z",
   "license": "sota-preview",
   "license_family": "unknown",
   "pipeline_tag": "automatic-speech-recognition",
@@ -36,8 +36,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 546314395,
-  "storage_human": "546 MB",
+  "storage_bytes": 685917082,
+  "storage_human": "686 MB",
   "context_length": null,
   "base_model": null,
   "formats": [
@@ -49,8 +49,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": "muyleanging/Sota-ASR-Khmer-ONNX",
-  "renamed_at": "2026-11-12T07:04:36.227Z",
+  "renamed_to": "muyleanging/Sota-ASR-Khmer-26M-ONNX",
+  "renamed_at": "2026-11-24T11:37:49.014Z",
   "benchmarks": [
     {
       "task": "Automatic Speech Recognition",

@@ -5,7 +5,7 @@
   "author": "Xylolabs",
   "url": "https://huggingface.co/Xylolabs/Wan2.2-UMT5-Tenstorrent-Tensix-Components",
   "created_at": "2026-11-14T23:52:41.000Z",
-  "updated_at": "2026-11-22T10:47:34.000Z",
+  "updated_at": "2026-11-23T06:43:13.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-to-video",

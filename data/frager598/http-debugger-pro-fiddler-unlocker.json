@@ -1,0 +1,98 @@
+{
+  "schema": 2,
+  "id": "frager598/http-debugger-pro-fiddler-unlocker",
+  "slug": "frager598-http-debugger-pro-fiddler-unlocker",
+  "author": "frager598",
+  "url": "https://huggingface.co/frager598/http-debugger-pro-fiddler-unlocker",
+  "created_at": "2026-11-24T07:02:33.000Z",
+  "updated_at": "2026-11-24T07:02:34.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en",
+    "ru",
+    "zh",
+    "es",
+    "pt",
+    "tr",
+    "de",
+    "fr",
+    "ja",
+    "ko",
+    "ar",
+    "pl",
+    "vi",
+    "id"
+  ],
+  "tags": [
+    "windows",
+    "windows-11",
+    "x64",
+    "portable",
+    "http-debugger-pro-fiddler-unlocker",
+    "en",
+    "ru",
+    "zh",
+    "es",
+    "pt",
+    "tr",
+    "de",
+    "fr",
+    "ja",
+    "ko",
+    "ar",
+    "pl",
+    "vi",
+    "id",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "context_length": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CIC",
+      "url": "https://www.cic.fr/fr/authentification.html",
+      "snippet": "Astuces : Nos conseils pour sécuriser vos opérations et données."
+    },
+    {
+      "title": "Filbanque : gérer vos comptes bancaires en ligne | CIC",
+      "url": "https://www.cic.fr/fr/particuliers/comptes/filbanque.html",
+      "snippet": "5 days ago · Modifier une option, ajouter ou supprimer des fonctionnalités, tout est possible grâce à votre application CIC ou votre …Read more"
+    },
+    {
+      "title": "Connectez-vous à votre compte | CIC Épargne Retraite Entreprises",
+      "url": "https://www.cic-ere.fr/fr/identification/authentification.html",
+      "snippet": "Pour cela, vous devez activer l'option dans votre espace connecté : rubrique \"Mon profil\" puis \"Mes services\". Et si vous ne vous …Read more"
+    },
+    {
+      "title": "Connexion à votre Espace Client | CIC Factoring Solutions",
+      "url": "https://connect.cic-factoringsolutions.eu/fr/identification/authentification.html",
+      "snippet": "Retrouvez-nous sur LinkedIn © Crédit Mutuel Factoring - 2026 Tous droits réservés"
+    },
+    {
+      "title": "Connexion espace client | Assurance Retraite Entreprise",
+      "url": "https://www.assurances-collectives.cm-cic.com/fr/identification/authentification.html",
+      "snippet": "Besoin d'aide ? Mot de passe oublié ?"
+    }
+  ]
+}

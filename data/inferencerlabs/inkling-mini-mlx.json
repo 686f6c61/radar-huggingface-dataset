@@ -24,8 +24,8 @@
     "base_model:quantized:thinkingmachines/Inkling-2-Mini",
     "region:us"
   ],
-  "likes": 3,
-  "downloads_30d": 195,
+  "likes": 4,
+  "downloads_30d": 289,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
@@ -43,8 +43,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "inferencerlabs/Inkling-2-Mini-MLX",
+  "renamed_at": "2026-11-24T09:14:07.284Z",
   "benchmarks": [],
   "sources": []
 }

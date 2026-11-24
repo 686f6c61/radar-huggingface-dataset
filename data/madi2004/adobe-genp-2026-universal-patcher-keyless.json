@@ -1,0 +1,93 @@
+{
+  "schema": 2,
+  "id": "Madi2004/adobe-genp-2026-universal-patcher-keyless",
+  "slug": "madi2004-adobe-genp-2026-universal-patcher-keyless",
+  "author": "Madi2004",
+  "url": "https://huggingface.co/Madi2004/adobe-genp-2026-universal-patcher-keyless",
+  "created_at": "2026-11-24T11:48:21.000Z",
+  "updated_at": "2026-11-24T11:48:22.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en",
+    "ru",
+    "zh",
+    "es",
+    "pt",
+    "tr",
+    "de",
+    "fr",
+    "ja",
+    "ko",
+    "ar",
+    "pl",
+    "vi",
+    "id"
+  ],
+  "tags": [
+    "windows",
+    "windows-11",
+    "x64",
+    "portable",
+    "adobe-genp-2026-universal-patcher-keyless",
+    "en",
+    "ru",
+    "zh",
+    "es",
+    "pt",
+    "tr",
+    "de",
+    "fr",
+    "ja",
+    "ko",
+    "ar",
+    "pl",
+    "vi",
+    "id",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "context_length": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Viajes a la Luna: cuántas veces se ha ido y cuándo fue la última vez",
+      "url": "https://www.nationalgeographic.com.es/llegada-del-hombre-a-la-luna/cuantas-veces-hemos-llegado-a-luna_14284",
+      "snippet": "Nov 17, 2026 · Tras la gesta de la misión Apolo 11 de lograr de llevar al primer hombre a la Luna en 1969, cinco de las seis misiones …"
+    },
+    {
+      "title": "Más de 50 años sin ir a la luna: así fue la última vez que la NASA ...",
+      "url": "https://www.elconfidencial.com/tecnologia/2026-03-13/fdlz01-50-anos-hombre-mision-luna-1qrt_4319824/",
+      "snippet": "Mar 13, 2026 · Durante tres días de diciembre de 1972, los astronautas Eugene Cernan y Harrison Schmitt recorrieron un valle …"
+    },
+    {
+      "title": "¿Por qué los humanos no han vuelto a la Luna en más de 50 años?",
+      "url": "https://cnnespanol.cnn.com/2026/02/14/ciencia/humanos-volver-luna-50-anos-trax",
+      "snippet": "Feb 14, 2026 · El comandante Gene Cernan, la última persona en caminar sobre la Luna, durante la última misión de aterrizaje lunar …"
+    },
+    {
+      "title": "El último hombre en pisar la luna: su célebre insulto en ... - Infobae",
+      "url": "https://www.infobae.com/historias/2026/01/16/el-ultimo-hombre-en-pisar-la-luna-su-celebre-insulto-en-pleno-vuelo-y-la-trama-de-uno-de-los-mayores-secretos-de-la-carrera-espacial/",
+      "snippet": "Jan 16, 2026 · Eugene Cernan se convirtió en el último hombre en pisar la luna durante la misión Apolo XVII en 1972."
+    }
+  ]
+}

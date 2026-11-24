@@ -5,7 +5,7 @@
   "author": "jalenluorion",
   "url": "https://huggingface.co/jalenluorion/Qwen3.6-35B-A3B-moved-store",
   "created_at": "2026-11-20T23:58:09.000Z",
-  "updated_at": "2026-11-23T04:35:07.000Z",
+  "updated_at": "2026-11-23T22:43:53.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -17,6 +17,7 @@
     "apple-silicon",
     "ios",
     "moved-store",
+    "prefetchable-store",
     "base_model:Qwen/Qwen3.6-35B-A3B",
     "base_model:finetune:Qwen/Qwen3.6-35B-A3B",
     "license:apache-2.0",
@@ -27,8 +28,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 32401014734,
-  "storage_human": "32.4 GB",
+  "storage_bytes": 33739753182,
+  "storage_human": "33.7 GB",
   "context_length": null,
   "base_model": "Qwen/Qwen3.6-35B-A3B",
   "formats": [
@@ -40,8 +41,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "jalenluorion/Qwen3.6-35B-A3B-prefetchable-store",
+  "renamed_at": "2026-11-24T09:23:02.536Z",
   "benchmarks": [],
   "sources": []
 }

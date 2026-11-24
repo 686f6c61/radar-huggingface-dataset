@@ -5,7 +5,7 @@
   "author": "mostwanted002",
   "url": "https://huggingface.co/mostwanted002/Inkling-2-Mini-abliterated-Quark-AWQ-MXFP4",
   "created_at": "2026-11-23T11:10:37.000Z",
-  "updated_at": "2026-11-23T11:11:49.000Z",
+  "updated_at": "2026-11-24T07:32:35.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -19,7 +19,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 34,
   "trending_score": 0,
   "parameters": 13818667008,
   "parameters_human": "13.82B",

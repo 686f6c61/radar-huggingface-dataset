@@ -2,96 +2,98 @@
 
 ## Resumen
 
-`tahamajs/qwen-2.5-0.5b-compressed-mha-attention-wikitext2` es un modelo derivado de Qwen2.5-0.5B en el que el autor ha sustituido el mecanismo de atencion original por un modulo denominado `compressed_mha_attention`, registrado dentro de un framework propio llamado NeuralOps. El modelo se ha sometido a un proceso de destilacion de conocimiento sobre el conjunto de datos WikiText-2 para recuperar la coherencia del modelo base tras la intervencion quirurgica en la arquitectura.
+`tahamajs/qwen-2.5-0.5b-compressed-mha-attention-wikitext2` es un checkpoint experimental de Qwen2.5-0.5B en el que se ha realizado una "cirugía de atención": 18 de las 24 capas del decodificador han sido sustituidas por el operador `compressed_mha_attention` (implementación `CompressedDistilBertAttention` basada en SVD truncada conjunta) de la librería NeuralOps. El resultado es un transformer híbrido que combina atención comprimida en el 75% de las capas con atención GQA nativa de Qwen2 en el 25% restante, entrenado posteriormente mediante destilación de conocimiento en dos etapas sobre WikiText-2.
 
-El resultado reportado por el autor es una perplejidad causal de 78,13 tras la destilacion, frente a una perplejidad de 366.648,51 antes de la misma. La intervencion se realizo sobre el checkpoint Qwen2.5-0.5B, un transformer decoder-only de aproximadamente 501,8 millones de parametros, y el modelo resultante se distribuye en formato safetensors con un peso total de repositorio de 1,1 GB.
+El modelo lo publica el autor independiente `tahamajs` como parte del proyecto NeuralOps "Attention Surgery Zoo", un banco de pruebas para evaluar la viabilidad de sustituir operadores de atención estándar por alternativas subcuadráticas en modelos causales pequeños. Con 501.827.200 parámetros totales y un tamaño de repositorio de 1,1 GB, no pretende competir con modelos de producción, sino servir como referencia reproducible de qué ocurre al transplantar atención comprimida en un LM causal de 0,5B.
 
-La relevancia de esta publicacion es experimental: se trata de un artefacto de investigacion sobre tecnicas de compresion de atencion y destilacion, no de un modelo listo para produccion. No hay informacion publicada sobre licencia, idiomas, pipeline ni evaluaciones estandar, y el numero de descargas y likes es cero en el momento de la consulta.
+Su relevancia es metodológica: documenta con telemetría detallada el colapso inmediato tras el transplante (perplejidad de 366.648,51 en zero-shot) y la recuperación del 99,98% mediante destilación (perplejidad final de 78,13 frente a 15,38 del profesor). Es un artefacto de investigación, no un modelo listo para despliegue en producción.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (Qwen2) con atencion sustituida por `compressed_mha_attention` (patron `hybrid_3_1`) |
-| Parametros totales | 501.827.200 |
-| Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible (solo se distribuyen pesos safetensors) |
-| Idiomas soportados | no disponible |
-| Licencia | no disponible |
-| Formato de pesos | safetensors |
+| Arquitectura | Transformer decoder-only híbrido (Qwen2 + atención comprimida SVD en 18/24 capas) |
+| Parámetros totales | 501.827.200 |
+| Parámetros activos | No aplica (no es MoE) |
+| Longitud de contexto | No disponible (el modelo base Qwen2.5-0.5B soporta 32.768 tokens, pero la model card no lo confirma para este checkpoint) |
+| Tipos de cuantización | No disponible (pesos publicados en FP16 completo, 957,21 MB, más adaptador) |
+| Idiomas soportados | Inglés (declarado en la model card) |
+| Licencia | MIT |
+| Formato de pesos | safetensors (FP16 completo + adaptador) |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de Qwen2.5-0.5B, un transformer decoder-only con atencion causal estandar, y aplica lo que el autor denomina "cirugia" de atencion: la sustitucion del modulo de atencion por una implementacion `compressed_mha_attention` registrada en `ATTENTION_REGISTRY` del framework NeuralOps. El patron de sustitucion se identifica como `hybrid_3_1`, aunque la model card no detalla en que consiste exactamente dicha hibridacion ni cuantas capas se ven afectadas. No se especifica la dimension oculta, el numero de cabezas, el vocabulario ni la ventana de contexto del checkpoint resultante.
+El modelo parte de Qwen2.5-0.5B: 24 capas, dimensión oculta D=896, 14 cabezas de consulta y 2 cabezas KV (GQA), dimensión por cabeza de 64 y RoPE con theta de 1.000.000. Sobre esa base se aplica una topología `hybrid_3_1`: las capas en los índices [0, 1, 2, 4, 5, 6, 8, 9, 10, 12, 13, 14, 16, 17, 18, 20, 21, 22] usan `compressed_mha_attention` envuelto en un `QwenAttentionAdapter`, mientras que las capas [3, 7, 11, 15, 19, 23] conservan la atención GQA softmax original como anclas de enrutamiento contextual global. Cada capa transplantada hereda los tensores `q_proj`, `k_proj`, `v_proj` y `o_proj` del profesor, con expansión de cabezas KV de 2 a 14, evitando proyecciones sin inicializar. El operador comprimido soporta máscara causal, GQA y RoPE, y despacha kernels en tres niveles (CUDA / Triton / PyTorch).
 
-El entrenamiento consiste en una destilacion de conocimiento sobre WikiText-2 (`wikitext-2-raw-v1`), un corpus de texto en ingles de Wikipedia. El autor reporta una perplejidad causal previa a la destilacion de 366.648,51, lo que indica que la sustitucion del mecanismo de atencion rompe por completo el modelo base, y una perplejidad posterior de 78,13, lo que sugiere una recuperacion parcial de la coherencia. El tiempo de destilacion reportado es de 180,2 segundos en una NVIDIA RTX 3090. No se documentan hiperparametros, numero de tokens de entrenamiento, composicion del dataset mas alla de WikiText-2, ni si se aplico RLHF o DPO.
+El entrenamiento consiste en destilación de representaciones ocultas en dos etapas, ejecutada en una NVIDIA GeForce RTX 3090 de 24 GB con caché offline de representaciones del profesor (0 MB de VRAM del profesor en GPU). La etapa 1 (30% del presupuesto, 107 pasos) congela embeddings, MLP y `lm_head`, y entrena solo módulos de atención y layer norms con AdamW (lr=2.0e-4, weight decay 0.01, clipping de gradiente 1.0), pesos maestros en FP32 con AMP FP16 y objetivo MSE por capa más 0.25·(1 − coseno) entre estados ocultos del estudiante y del profesor. El dataset es WikiText-2 (`wikitext-2-raw-v1`), con secuencias de longitud 512, batch de 8 y acumulación de gradiente de 4.
 
 ## Capacidades
 
-- Generacion de texto autoregresiva heredada estructuralmente de Qwen2.5-0.5B, aunque no se ha evaluado su calidad fuera de la perplejidad en WikiText-2.
-- Razonamiento y codigo: no disponible; no hay evaluaciones publicadas que confirmen que estas capacidades del modelo base se preserven tras la sustitucion de atencion y la destilacion.
-- Tool calling / function calling: no disponible; no se documenta soporte.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingues: no disponible; el unico corpus de ajuste documentado es WikiText-2 en ingles.
-- Capacidades especiales (vision, audio, thinking mode): no disponible.
+- Generación de texto causal autorregresiva en inglés.
+- Razonamiento básico y continuación de texto, heredado del profesor Qwen2.5-0.5B, aunque degradado por la destilación.
+- No se documenta soporte de tool calling ni function calling en la model card.
+- No se documenta soporte de agentes ni razonamiento multi-paso.
+- Capacidad multilingüe limitada al inglés declarado (Qwen2.5 base es multilingüe, pero la destilación se hizo solo sobre WikiText-2 en inglés).
+- No dispone de modo thinking, visión ni audio.
+- Sirve como banco de pruebas para evaluar operadores de atención alternativos en modelos causales pequeños.
 
 ## Casos de uso
 
-- Investigacion sobre compresion de atencion: el modelo sirve como artefacto reproducible para estudiar el impacto de sustituir el mecanismo de atencion en un transformer pequeno y el coste de recuperacion mediante destilacion sobre WikiText-2.
-- Experimentos de destilacion de conocimiento: la diferencia entre perplejidad pre y post destilacion (366.648,51 frente a 78,13) permite analizar la eficacia de la destilacion como tecnica de reparacion tras una intervencion arquitectonica.
-- Benchmarking de frameworks de atencion alternativa: util para comparar implementaciones de atencion comprimida dentro del ecosistema NeuralOps frente a la atencion MHA original de Qwen2.
-- Prototipado en entornos con recursos limitados: con 501,8 millones de parametros y pesos safetensors de aproximadamente 1,1 GB, el modelo cabe en GPUs de consumo para pruebas de inferencia, aunque su calidad no esta validada.
-- Estudio de perplejidad en corpus controlados: permite replicar el protocolo de evaluacion sobre WikiText-2 y comparar con otras variantes derivadas del mismo checkpoint base.
-- Docencia y divulgacion: ejemplo practico de cirugia de modulos en modelos preentrenados y de los riesgos de degradacion asociados.
+- Investigación en eficiencia de atención: permite medir el impacto real de sustituir atención softmax por atención comprimida SVD en un LM causal, con telemetría de perplejidad antes y después de la destilación.
+- Reproducción de experimentos de destilación: el pipeline de dos etapas (alineamiento de subespacio con backbone congelado y ajuste posterior) es replicable con la librería NeuralOps y sirve como referencia metodológica.
+- Benchmark de operadores: útil para comparar `compressed_mha_attention` frente a otras alternativas del Attention Surgery Zoo sobre la misma base Qwen2.5-0.5B y el mismo dataset.
+- Prototipado de arquitecturas híbridas: la topología 3:1 (18 capas comprimidas, 6 nativas) ofrece un punto de partida para estudiar el equilibrio entre complejidad subcuadrática y capacidad de recuperación de inducción.
+- Docencia y divulgación: ejemplo didáctico de cirugía de atención y destilación de representaciones en un modelo pequeño que cabe en una GPU de consumo.
+- Validación de infraestructura: con 957 MB en FP16, sirve para probar pipelines de carga, serialización y despliegue con la librería `neuralops` en entornos con recursos limitados.
 
 ## Benchmarks y rendimiento
 
-| Metrica | Valor reportado |
-|---|---|
-| Perplejidad causal pre-destilacion (WikiText-2) | 366.648,51 |
-| Perplejidad causal post-destilacion (WikiText-2) | 78,13 |
-| Delta de perplejidad | -366.570,37 |
-| Tiempo de destilacion (NVIDIA RTX 3090) | 180,2 s |
+Datos declarados por el autor (no verificados) sobre WikiText-2 `wikitext-2-raw-v1`, split de validación, longitud de secuencia 512:
 
-No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K u otros) en la informacion disponible.
+| Métrica | Valor | Notas |
+|---|---:|---|
+| Perplejidad del profesor (Qwen2.5-0.5B) | 15,38 | Referencia GQA softmax causal exacta |
+| Perplejidad del estudiante pre-destilación (zero-shot) | 366.648,51 | Inmediatamente tras el transplante de 18/24 capas |
+| Perplejidad del estudiante post-destilación | 78,13 | Tras destilación de representaciones en dos etapas |
+| Delta absoluto de perplejidad | −366.570,37 | Cambio logrado por la destilación |
+| Reducción relativa de perplejidad | 99,98% | Recuperación desde el pico post-cirugía |
+
+No se han publicado resultados de MMLU, HumanEval, GSM8K ni otros benchmarks estándar en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia en precision completa (fp16/bf16): aproximadamente 1 GB para los pesos de 501,8 millones de parametros, mas memoria para el contexto y activaciones.
-- VRAM estimada en cuantizacion de 8 bits: alrededor de 0,5-0,6 GB; en 4 bits, alrededor de 0,3-0,4 GB (estimacion teorica, no confirmada por el autor).
-- GPU recomendadas: cualquier GPU con al menos 2-4 GB de VRAM para fp16; el autor uso una NVIDIA RTX 3090 para la destilacion.
-- Cabe en GPU de consumo: si, previsiblemente en RTX 3060, RTX 4060 y superiores, aunque no se ha verificado el soporte del modulo de atencion personalizado en runtimes estandar.
-- Opciones de despliegue: no disponible; al tratarse de una atencion personalizada fuera de la implementacion estandar de Qwen2, es probable que requiera el framework NeuralOps del autor y no funcione directamente en vLLM, llama.cpp, Ollama o TGI sin adaptacion.
-- Latencia y throughput: no disponibles.
+- VRAM estimada para inferencia en FP16: en torno a 1 GB para pesos (957,21 MB) más overhead de activaciones y caché KV, manejable en cualquier GPU con 4 GB o más.
+- GPU recomendadas: RTX 3090, RTX 4090, A100 o H100 para experimentación; cualquier GPU consumer moderna (RTX 3060 en adelante) es suficiente por tamaño.
+- Cabe en GPU de consumo: sí, con holgura; el entrenamiento de destilación se realizó en una RTX 3090 de 24 GB.
+- Opciones de despliegue: la model card declara la librería `neuralops` como dependencia; no se documenta compatibilidad con vLLM, llama.cpp, Ollama ni TGI, y el operador de atención personalizado probablemente requiere el runtime de NeuralOps.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Estado |
-|---|---|---|---|---|
-| tahamajs/qwen-2.5-0.5b-compressed-mha-attention-wikitext2 | 501,8 M | no disponible | no disponible | Experimental, 0 descargas |
-| Qwen2.5-0.5B (modelo base) | 494 M aprox. | 32.768 tokens (segun documentacion publica de Qwen) | Apache 2.0 (segun documentacion publica de Qwen) | Produccion, ampliamente adoptado |
-| Qwen2.5-1.5B | 1.500 M aprox. | 32.768 tokens (segun documentacion publica de Qwen) | Apache 2.0 (segun documentacion publica de Qwen) | Produccion |
+| Modelo | Parámetros | Contexto | Perplejidad WikiText-2 | Licencia | Disponibilidad |
+|---|---|---:|---:|---|---|
+| qwen-2.5-0.5b-compressed-mha-attention-wikitext2 | 501,8 M | No disponible | 78,13 (post-KD) | MIT | Hugging Face |
+| Qwen/Qwen2.5-0.5B (profesor) | 494 M | 32.768 | 15,38 | Apache 2.0 | Hugging Face |
+| Qwen2.5-0.5B-Instruct | 494 M | 32.768 | No disponible | Apache 2.0 | Hugging Face |
 
-La comparativa se limita al linaje Qwen2.5 porque no se dispone de datos de rendimiento del modelo derivado mas alla de la perplejidad en WikiText-2. No se han identificado otros modelos comparables con atencion comprimida y destilacion sobre WikiText-2 en la informacion proporcionada.
+La comparación directa con el profesor muestra una degradación de perplejidad de aproximadamente 5 veces (78,13 frente a 15,38), a cambio de una arquitectura con atención comprimida en el 75% de las capas. No se dispone de datos de otros checkpoints del Attention Surgery Zoo en la información proporcionada para ampliar la comparativa.
 
 ## Limitaciones y advertencias
 
-- Artefacto de investigacion: el modelo no ha sido evaluado en tareas downstream y su calidad real mas alla de la perplejidad en WikiText-2 es desconocida.
-- Perplejidad elevada: 78,13 en WikiText-2 es un valor alto para un modelo de este tamano; el modelo base Qwen2.5-0.5B obtiene valores muy inferiores en el mismo corpus segun referencias publicas, lo que sugiere una degradacion significativa.
-- Sesgos: no documentados; al haberse ajustado solo sobre WikiText-2 (Wikipedia en ingles), puede heredar sesgos del corpus y del modelo base.
-- Riesgo de alucinacion: no evaluado; la destilacion sobre un unico corpus pequeno puede aumentar la generacion de texto incoherente fuera de dominio.
-- Limitaciones de contexto e idioma: no se documenta la ventana de contexto efectiva ni el soporte multilingue; el unico idioma de ajuste es el ingles.
-- Restricciones de licencia: la licencia no esta declarada en el repositorio, lo que impide determinar si el uso comercial esta permitido. El modelo base Qwen2.5-0.5B se distribuye bajo Apache 2.0 segun su documentacion publica, pero el derivado no hereda automaticamente dicha declaracion en este repositorio.
-- Compatibilidad: la atencion personalizada `compressed_mha_attention` probablemente requiere el framework NeuralOps del autor; no se garantiza la carga en transformers, vLLM o llama.cpp estandar.
-- Soporte nulo: cero descargas y cero likes en el momento de la consulta, sin issues ni discusion documentada.
-- Fecha de creacion inusual (2026-11-10) en los metadatos, lo que conviene verificar antes de citar el artefacto.
+- Degradación sustancial de calidad: la perplejidad post-destilación (78,13) es unas 5 veces peor que la del modelo base (15,38); no es apto para producción sin ajuste adicional.
+- Riesgo elevado de alucinación y texto incoherente, especialmente fuera del dominio de WikiText-2 usado en la destilación.
+- Entrenado y evaluado únicamente en inglés sobre WikiText-2; el soporte multilingüe del Qwen2.5 base no está garantizado tras la cirugía y la destilación.
+- La ventana de contexto efectiva no está documentada; la destilación usó secuencias de 512 tokens, por lo que el rendimiento más allá de esa longitud es incierto.
+- Requiere la librería `neuralops` y su operador `compressed_mha_attention`; no es un checkpoint estándar de transformers y la compatibilidad con runtimes convencionales no está confirmada.
+- Los benchmarks son declarados por el autor y no están verificados (`verified: false` en el model-index).
+- Licencia MIT permite uso comercial, pero el modelo base Qwen2.5-0.5B es Apache 2.0; conviene revisar las condiciones de ambos.
+- Artefacto de investigación: no se recomienda su uso en aplicaciones reales de atención al cliente, generación de código o agentes.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/tahamajs/qwen-2.5-0.5b-compressed-mha-attention-wikitext2
-- Modelo base Qwen2.5-0.5B: no disponible en la informacion proporcionada
-- Paper o blog de NeuralOps: no disponible
-- Repositorio del framework NeuralOps: no disponible
-- Dataset WikiText-2: no disponible en la informacion proporcionada
-- Demo o espacio asociado: no disponible
+- Modelo en Hugging Face: https://huggingface.co/tahamajs/qwen-2.5-0.5b-compressed-mha-attention-wikitext2
+- Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B
+- Repositorio NeuralOps: https://github.com/tahamajs/NeuralOps
+- Implementación del operador: https://github.com/tahamajs/NeuralOps/blob/main/neuralops/layers/svd/compressed_mha_attention.py
+- Licencia: https://github.com/tahamajs/NeuralOps/blob/main/LICENSE
+- Dataset WikiText-2: https://huggingface.co/datasets/Salesforce/wikitext

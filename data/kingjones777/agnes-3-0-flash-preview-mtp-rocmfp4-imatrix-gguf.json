@@ -5,7 +5,7 @@
   "author": "kingjones777",
   "url": "https://huggingface.co/kingjones777/Agnes-3.0-Flash-Preview-MTP-ROCmFP4-imatrix-GGUF",
   "created_at": "2026-09-16T23:31:56.000Z",
-  "updated_at": "2026-09-17T00:56:56.000Z",
+  "updated_at": "2026-11-23T09:46:05.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -42,7 +42,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 101,
+  "downloads_30d": 100,
   "trending_score": 0,
   "parameters": 32661228864,
   "parameters_human": "32.66B",

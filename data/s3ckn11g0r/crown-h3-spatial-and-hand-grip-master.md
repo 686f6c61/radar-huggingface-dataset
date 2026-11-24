@@ -2,87 +2,98 @@
 
 ## Resumen
 
-CROWN-H3-Spatial-And-Hand-Grip-Master es un LoRA de concepto para el modelo de generación de vídeo MiniMax H3, desarrollado por el creador independiente NineCrowns (bajo la marca [CROWN]). No se trata de un modelo base, sino de un adaptador de bajo rango que se aplica sobre los pesos de MiniMax H3 en sus variantes Ref2VA, I2VA y T2VA para corregir dos problemas estructurales concretos de la generación de vídeo con personajes y armas: la colocación de la mano sobre la empuñadura de una espada y la oclusión espacial entre dos personajes que se cruzan en profundidad.
+CROWN-H3-Spatial-And-Hand-Grip-Master es un LoRA (Low-Rank Adaptation) para el modelo de generación de vídeo MiniMax H3, desarrollado por el creador independiente NineCrowns bajo el alias S3ckn11g0r. No se trata de un modelo fundacional, sino de un adaptador de bajo rango que se aplica sobre los pesos del modelo base MiniMax H3 en sus variantes Ref2VA, I2VA y T2VA para corregir dos problemas estructurales concretos de la generación de vídeo: la colocación anatómicamente correcta de la mano sobre la empuñadura de un arma y la coherencia de identidad en escenas con dos personajes que se cruzan en el espacio.
 
-El adaptador se entrenó con metraje real de artes marciales y bloqueos dramáticos, sobre un clúster de 8 GPU NVIDIA B200, con rango 64 y alpha 64, aplicado únicamente a los bloques de vídeo 10 a 49 del transformer, y con un adaptador de des-destilación de Ostris. El repositorio ocupa 1,0 GB y contiene un único archivo safetensors de 910,06 MB.
+El adaptador se entrenó sobre metraje real de artes marciales y esgrima, con un rango 64 y alpha 64, aplicado exclusivamente a los bloques de vídeo 10 a 49 del transformer, e incorpora un adaptador de des-destilación de Ostris. El resultado es un LoRA de 910 MB que se activa mediante tres palabras disparadoras y que se usa típicamente con un peso entre 0,65 y 0,75 en ComfyUI.
 
-Su relevancia es acotada pero específica: resuelve fallos de coherencia anatómica y espacial que los modelos de vídeo actuales cometen con frecuencia en escenas de combate o de cruce de personajes, sin necesidad de reentrenar el modelo base. Está pensado para flujos de trabajo en ComfyUI y para producción de clips cortos con personajes de referencia.
+Su relevancia es acotada pero práctica: resuelve fallos recurrentes (dedos que agarran la hoja en lugar del mango, empuñaduras flotantes, espadas que se curvan, intercambio de caras cuando dos personajes se cruzan) en un nicho muy específico como es la generación de vídeo de escenas de combate con armas blancas. No es un modelo de propósito general ni sustituye al modelo base.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | LoRA (adaptador de bajo rango) sobre el transformer de vídeo de MiniMax H3; aplicado a bloques de vídeo 10-49 |
-| Parametros totales | no disponible (el archivo pesa 910,06 MB; rango 64, alpha 64) |
+| Arquitectura | LoRA sobre transformer de difusión de vídeo MiniMax H3 (bloques de vídeo 10-49, rank 64 / alpha 64) |
+| Parametros totales | no disponible (adaptador LoRA de 910,06 MB en safetensors) |
 | Parametros activos | no aplica (no es MoE) |
 | Longitud de contexto | no disponible (depende del modelo base MiniMax H3) |
-| Tipos de cuantizacion | no disponible; el archivo distribuido es safetensors en precisión de entrenamiento |
-| Idiomas soportados | no disponible (los prompts del modelo base no se documentan en esta ficha) |
+| Tipos de cuantizacion | no disponible (los pesos se distribuyen en safetensors; la cuantización aplica al modelo base) |
+| Idiomas soportados | no disponible (las palabras disparadoras son en inglés; el modelo base determina el soporte idiomático de los prompts) |
 | Licencia | bespoke-lora-license (licencia personalizada del autor, enlazada a su perfil de Civitai) |
 | Formato de pesos | safetensors (`CROWN_H3_Spatial_And_Hand_Grip_Master_V1_r64.safetensors`) |
 
 ## Arquitectura y entrenamiento
 
-El LoRA se entrena sobre MiniMax H3, un modelo de generación de vídeo texto-a-vídeo y referencia-a-vídeo que combina un transformer de vídeo con un codificador multimodal Qwen3-VL de 32B y un VAE de vídeo. El adaptador se inyecta exclusivamente en los bloques de vídeo 10 a 49, con rango 64 y alpha 64, lo que concentra la modificación en las capas intermedias de atención y feed-forward del transformer de vídeo y deja intactas las capas iniciales y finales.
+El LoRA se entrena sobre MiniMax H3, un modelo de generación de vídeo texto-a-vídeo y referencia-a-vídeo. El adaptador aplica un rango 64 con alpha 64 únicamente sobre los bloques de vídeo 10 a 49 del transformer, dejando intactos el resto de bloques y, presumiblemente, los módulos de audio y de codificación de referencia. El entrenamiento se realizó en un clúster de 8 GPU NVIDIA B200 e incorpora el adaptador de des-destilación de Ostris, una técnica que busca recuperar capacidad expresiva tras procesos de destilación del modelo base.
 
-El entrenamiento se realizó con material real de artes marciales y bloqueos dramáticos, en un clúster de 8 NVIDIA B200, e incorpora un adaptador de des-destilación de Ostris. La configuración de inferencia documentada por el autor es de 25 pasos, sampler euler con scheduler beta, CFG 1.0 y un desplazamiento de sigma específico (shift_video 12.0, shift_audio 3.0). El peso recomendado del LoRA es de 0,65 a 0,75; el vídeo de demostración se generó solo con este LoRA a 0,65.
+El conjunto de datos está compuesto, según el autor, al 100 % por metraje real de artes marciales, combate con armas y bloqueos dramáticos. No se especifican el número de clips, la resolución, la duración total ni la composición exacta del dataset. El objetivo del entrenamiento es doble: por un lado, forzar un agarre de cinco dedos por debajo de la guarda con una hoja rígida y recta durante estocadas, cortes y paradas; por otro, permitir que dos personajes se crucen en primer y segundo plano con intercambio de posición izquierda-derecha sin que se produzca intercambio de rostros ni de vestuario.
+
+La configuración de inferencia documentada por el autor es de 25 pasos, sampler euler con beta, cfg 1.0 y MiniMaxH3SigmaShift con shift_video 12.0 y shift_audio 3.0, sobre el modelo base `minimax_h3_ref2va_bf16.safetensors` junto con el codificador de texto `qwen3vl_32b_minimax_h3_bf16.safetensors` y el VAE de vídeo `minimax_h3_video_vae_fp32.safetensors`.
 
 ## Capacidades
 
-- Generación de vídeo texto-a-vídeo y referencia-a-vídeo con el modelo base MiniMax H3 (variantes Ref2VA, I2VA y T2VA).
-- Control de agarre de empuñadura con los cinco dedos por debajo de la guarda, evitando que el personaje sujete la hoja o que la empuñadura flote (trigger `crown_grip`).
-- Mantenimiento de geometría rígida y recta de la hoja durante cortes lineales, estocadas y paradas cruzadas.
-- Cruce espacial en profundidad entre dos personajes con intercambio de posición izquierda-derecha y oclusión primer plano-fondo, preservando rasgos faciales y vestuario sin intercambio de caras (trigger `crown_spatial`).
-- Combinación de ambos comportamientos mediante el trigger compuesto `crown_spatial_grip`.
-- Compatibilidad con flujos de trabajo de ComfyUI.
-- No se documentan capacidades de tool calling, agentes, audio o multilingüismo más allá de lo que herede el modelo base.
+- Generación de vídeo de escenas de combate con armas blancas mediante palabras disparadoras (`crown_spatial_grip`, `crown_grip`, `crown_spatial`).
+- Agarre de empuñadura con los cinco dedos por debajo de la guarda, evitando que el personaje sujete la hoja afilada.
+- Mantenimiento de geometría rígida y recta de la hoja durante cortes lineales, estocadas y paradas hoja contra hoja.
+- Cruce espacial de dos personajes en primer y segundo plano con intercambio de posición izquierda-derecha en modo Ref2VA.
+- Preservación de la estructura facial y del vestuario de cada personaje durante el cruce, sin intercambio de caras ni mezcla de ropa.
+- Compatibilidad con los modos Ref2VA, I2VA y T2VA de MiniMax H3, según declara el autor.
+- Integración con ComfyUI y con flujos en la nube de RunningHub.
+- No se documentan capacidades de tool calling, razonamiento multi-paso, audio nativo propio ni otras modalidades distintas del vídeo.
 
 ## Casos de uso
 
-- Previsualización de escenas de combate cuerpo a cuerpo: el LoRA permite generar clips de esgrima o artes marciales donde la mano agarra correctamente la empuñadura y la hoja no se deforma, útil para animáticas de producciones de acción.
-- Storyboards de duelos con dos personajes: con `crown_spatial` se pueden generar cruces en X donde los personajes se intercambian en profundidad sin que se mezclen caras ni vestuarios, adecuado para planificar secuencias de persecución o confrontación.
-- Producción de contenido para videojuegos: generación de cinemáticas o tráilers de combate con espadas que requieren coherencia anatómica en las manos y física rígida del arma.
-- Publicidad y moda con coreografía de movimiento: escenas donde dos modelos se cruzan en primer y segundo plano manteniendo identidad, útil para spots con reparto múltiple.
-- Contenido para redes sociales de temática marcial: clips cortos de artes marciales con detalle anatómico correcto en el agarre del arma, generados en ComfyUI con el LoRA a peso 0,65-0,75.
-- Investigación en coherencia de vídeo generado: banco de pruebas para estudiar cómo los adaptadores de bajo rango corrigen sesgos estructurales (manos, oclusión, identidad) en modelos de difusión de vídeo.
-- Iteración de previsualización en pipelines de VFX: generación rápida de referencias de bloqueo y parada de espada antes de pasar a producción con captura de movimiento.
+- Previsualización de secuencias de esgrima y artes marciales: el LoRA permite generar planos de combate con armas donde la empuñadura y la hoja se mantienen coherentes, útil para storyboards de cine o animación antes de rodar o animar la escena definitiva.
+- Generación de tráilers o teasers de videojuegos de acción: escenas de dos personajes que se cruzan y desenvainan armas pueden producirse con identidades estables, reduciendo el número de tomas descartadas por intercambio de caras.
+- Contenido para redes sociales de temática marcial: creadores que publican clips de combate coreografiado pueden usar el LoRA en ComfyUI para obtener planos cortos con agarre correcto del arma sin retoques manuales.
+- Prototipado de cinemáticas para proyectos indie: estudios pequeños sin captura de movimiento pueden generar bloqueos y cruces de personajes con coherencia espacial para evaluar la puesta en escena.
+- Ilustración de referencia para cómics y novela gráfica: el LoRA genera fotogramas de referencia con anatomía de la mano creíble sobre la empuñadura, que sirven como base para el dibujante.
+- Demostraciones técnicas de control de identidad en vídeo generativo: investigadores pueden usar el adaptador como caso de estudio de preservación de identidad en oclusiones cruzadas dentro de un pipeline de MiniMax H3.
+- Pruebas de integración en flujos ComfyUI en la nube: el autor publica workflows de RunningHub que permiten evaluar el LoRA sin disponer de hardware local capaz de mover el modelo base.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks en la informacion disponible. El autor no incluye métricas cuantitativas (FVD, CLIP score, precisión de keypoints de mano, tasa de intercambio de identidad) ni comparaciones numéricas con otros LoRA o con el modelo base sin adaptador.
 
 ## Requisitos de hardware
 
-- El LoRA en sí ocupa 910,06 MB en safetensors, pero requiere cargar el modelo base MiniMax H3 completo (transformer de vídeo, codificador Qwen3-VL de 32B y VAE de vídeo) para inferencia.
-- El entrenamiento se realizó en un clúster de 8 NVIDIA B200; no se documentan requisitos de VRAM para inferencia.
-- No se dispone de datos sobre si el modelo base cabe en GPU de consumo (RTX 4090, etc.); el codificador Qwen3-VL de 32B y el transformer de vídeo sugieren requisitos de VRAM elevados, pero no se confirman en la información disponible.
-- Despliegue documentado: ComfyUI, con los archivos `minimax_h3_ref2va_bf16.safetensors`, `qwen3vl_32b_minimax_h3_bf16.safetensors` y `minimax_h3_video_vae_fp32.safetensors`.
-- No se documentan latencia ni throughput estimados.
+- El LoRA en sí ocupa 910,06 MB en safetensors y se carga junto al modelo base; no requiere VRAM adicional significativa más allá de la del propio adaptador.
+- El requisito real lo marca MiniMax H3: el autor cita un codificador de texto Qwen3-VL de 32B en bf16 y un VAE de vídeo en fp32, lo que implica un consumo de VRAM elevado no cuantificado en la información disponible.
+- GPU recomendadas: el entrenamiento se realizó en 8×NVIDIA B200; para inferencia no se especifican modelos concretos de GPU.
+- No se confirma que el conjunto quepa en GPU de consumo (RTX 4090 u otras); el autor sugiere explícitamente que la versión original de H3 puede no ejecutarse en tarjetas domésticas y ofrece alternativas en la nube.
+- Opciones de despliegue: ComfyUI (local o en la nube vía RunningHub) y los workflows publicados por el autor en RunningHub Global y RunningHub China.
+- Latencia y throughput: no disponibles. La configuración de referencia usa 25 pasos con sampler euler y cfg 1.0.
 
 ## Comparativa con modelos similares
 
-| Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| CROWN-H3-Spatial-And-Hand-Grip-Master | LoRA sobre MiniMax H3 | no disponible (910 MB) | no disponible | bespoke-lora-license | Hugging Face, Civitai, RunningHub |
-| MiniMax H3 (base) | Modelo de vídeo texto/referencia-a-vídeo | no disponible | no disponible | no disponible en esta ficha | Requiere acceso al modelo base |
-| Otros LoRA de concepto para vídeo | Adaptadores de bajo rango | variable | no disponible | variable | Civitai, Hugging Face |
+| Modelo | Tipo | Base | Parametros | Contexto | Licencia | Disponibilidad |
+|---|---|---|---|---|---|---|
+| CROWN-H3-Spatial-And-Hand-Grip-Master | LoRA de vídeo | MiniMax H3 | 910 MB (r64) | no disponible | bespoke-lora-license | Hugging Face, Civitai, RunningHub |
+| LoRA genéricos de MiniMax H3 en Civitai | LoRA de vídeo | MiniMax H3 | no disponible | no disponible | variable según autor | Civitai |
+| Modelos texto-a-vídeo fundacionales (p. ej. familia Wan, HunyuanVideo) | Modelo completo | propio | miles de millones | no disponible | variable | Hugging Face |
 
-No se dispone de información suficiente para comparar parámetros, contexto o rendimiento con alternativas concretas de la misma categoría.
+No se dispone de datos de rendimiento comparativos entre este LoRA y otras alternativas; la comparación se limita a tipo de artefacto, modelo base y licencia.
 
 ## Limitaciones y advertencias
 
-- Es un LoRA de concepto, no un modelo autónomo: sin el modelo base MiniMax H3 y sus componentes (Qwen3-VL 32B, VAE de vídeo) no es funcional.
-- La licencia es bespoke-lora-license, una licencia personalizada enlazada al perfil de Civitai del autor; es imprescindible revisar sus términos antes de cualquier uso comercial.
-- El entrenamiento se centró en escenas de combate con espada y cruces de dos personajes; fuera de ese dominio el adaptador puede degradar la generación o introducir artefactos.
-- El peso recomendado es 0,65-0,75; valores superiores pueden sobreajustar el estilo y valores inferiores pueden no activar los triggers.
-- No se documentan sesgos, tasas de alucinación ni evaluación cualitativa independiente; el único material de validación es el vídeo de demostración del autor.
-- No se documentan idiomas soportados ni comportamiento multilingüe de los prompts.
-- El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, por lo que no hay validación de la comunidad.
-- El modelo se publicó con fecha de creación 2026-11-11 según los metadatos de Hugging Face; conviene verificar la vigencia de los enlaces y del modelo base.
+- Es un LoRA, no un modelo autónomo: requiere el modelo base MiniMax H3 (Ref2VA, I2VA o T2VA) y sus componentes auxiliares para funcionar.
+- El entrenamiento se centró en escenas de combate con armas y cruces de dos personajes; fuera de ese dominio el adaptador puede degradar la calidad o introducir artefactos.
+- El peso recomendado es estrecho (0,65-0,75); valores fuera de ese rango pueden romper el equilibrio entre el LoRA y el modelo base.
+- La licencia es personalizada (`bespoke-lora-license`) y remite al perfil de Civitai del autor; no se detallan en la información disponible las condiciones exactas de uso comercial, por lo que debe consultarse el enlace de licencia antes de utilizarlo en producción.
+- No se documentan sesgos demográficos, culturales ni de representación del dataset de entrenamiento.
+- Riesgo de alucinación visual inherente a los modelos de difusión de vídeo: anatomía de manos, física de la hoja o identidades pueden fallar en composiciones alejadas de las condiciones de entrenamiento.
+- No se especifican los idiomas soportados en los prompts; el comportamiento multilingüe dependerá del codificador de texto Qwen3-VL del modelo base.
+- El autor promociona servicios de terceros y un sitio externo en la model card; conviene tratarlos como enlaces comerciales ajenos al artefacto.
+- No hay métricas publicadas que cuantifiquen la mejora frente al modelo base sin LoRA.
 
 ## Enlaces
 
 - Hugging Face: https://huggingface.co/S3ckn11g0r/CROWN-H3-Spatial-And-Hand-Grip-Master
-- Civitai del autor: https://civitai.com/user/NineCrowns
-- Modelo en Civitai: https://civitai.com/models/3042756
-- RunningHub Online Cloud: https://www.runninghub.ai/model/public/2120439267540602881
+- Civitai (página oficial del modelo): https://civitai.com/models/3042756
+- Civitai (perfil del autor y licencia): https://civitai.com/user/NineCrowns
+- RunningHub Global (LoRA): https://www.runninghub.ai/model/public/2120439267540602881
+- RunningHub Global (workflow ComfyUI): https://www.runninghub.ai/workflow/2120529855524020226
+- RunningHub Global (webapp): https://www.runninghub.ai/ai-detail/2120529871293157377
+- RunningHub China (LoRA): https://www.runninghub.cn/model/public/2120452083391488001
+- RunningHub China (workflow): https://www.runninghub.cn/workflow/2120527387225059329
+- RunningHub China (webapp): https://www.runninghub.cn/ai-detail/2120527407072505857
+- Sitio externo promocionado por el autor: https://h3xron.xyz

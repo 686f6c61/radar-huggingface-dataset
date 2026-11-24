@@ -5,7 +5,7 @@
   "author": "roskosmos19",
   "url": "https://huggingface.co/roskosmos19/Orca-2-4B-hight",
   "created_at": "2026-09-06T11:16:11.000Z",
-  "updated_at": "2026-11-13T14:34:55.000Z",
+  "updated_at": "2026-11-23T15:53:44.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -23,7 +23,10 @@
     "Rhea",
     "4b",
     "conversational",
+    "en",
     "dataset:roskosmos19/Rhea-Coding",
+    "base_model:Aquiles-ai/Athenea-4B-Coding",
+    "base_model:finetune:Aquiles-ai/Athenea-4B-Coding",
     "license:apache-2.0",
     "text-generation-inference",
     "endpoints_compatible",
@@ -37,7 +40,7 @@
   "storage_bytes": 8058649220,
   "storage_human": "8.1 GB",
   "context_length": null,
-  "base_model": null,
+  "base_model": "Aquiles-ai/Athenea-4B-Coding",
   "formats": [
     "safetensors"
   ],

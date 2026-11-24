@@ -5,7 +5,7 @@
   "author": "kingjones777",
   "url": "https://huggingface.co/kingjones777/LFM2-24B-A2B-ROCmFPX-GGUF",
   "created_at": "2026-08-17T01:14:07.000Z",
-  "updated_at": "2026-08-17T01:26:59.000Z",
+  "updated_at": "2026-11-23T19:56:44.000Z",
   "license": "lfm1.0",
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -36,7 +36,7 @@
     "conversational"
   ],
   "likes": 1,
-  "downloads_30d": 53,
+  "downloads_30d": 85,
   "trending_score": 0,
   "parameters": 23843661440,
   "parameters_human": "23.84B",

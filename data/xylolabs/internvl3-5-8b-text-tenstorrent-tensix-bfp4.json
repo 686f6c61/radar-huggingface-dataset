@@ -5,7 +5,7 @@
   "author": "Xylolabs",
   "url": "https://huggingface.co/Xylolabs/InternVL3.5-8B-Text-Tenstorrent-Tensix-BFP4",
   "created_at": "2026-11-22T09:22:23.000Z",
-  "updated_at": "2026-11-22T09:24:57.000Z",
+  "updated_at": "2026-11-23T06:36:50.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -36,7 +36,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 17,
   "trending_score": 0,
   "parameters": 8190735360,
   "parameters_human": "8.19B",

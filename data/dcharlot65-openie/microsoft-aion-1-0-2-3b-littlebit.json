@@ -1,0 +1,62 @@
+{
+  "schema": 2,
+  "id": "dcharlot65-openie/Microsoft-Aion-1.0-2.3B-LittleBit",
+  "slug": "dcharlot65-openie-microsoft-aion-1-0-2-3b-littlebit",
+  "author": "dcharlot65-openie",
+  "url": "https://huggingface.co/dcharlot65-openie/Microsoft-Aion-1.0-2.3B-LittleBit",
+  "created_at": "2026-11-24T11:10:25.000Z",
+  "updated_at": "2026-11-24T11:10:27.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "jouledb",
+  "languages": [],
+  "tags": [
+    "jouledb",
+    "littlebit",
+    "sub-1-bit",
+    "svf",
+    "thermodynamic-ai",
+    "kubernetes-native",
+    "base_model:microsoft/Aion-1.0-Instruct-2.3B",
+    "base_model:finetune:microsoft/Aion-1.0-Instruct-2.3B",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 13430853,
+  "storage_human": "13 MB",
+  "context_length": null,
+  "base_model": "microsoft/Aion-1.0-Instruct-2.3B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bing",
+      "url": "https://www.bing.com/",
+      "snippet": "Search smarter with Microsoft Bing, an AI-powered search engine for finding information, exploring media, and navigating maps."
+    },
+    {
+      "title": "Zoeken - Microsoft Bing",
+      "url": "https://nl.bing.com/",
+      "snippet": "Zoek met Microsoft Bing, gebruik AI om informatie te vinden en ontdek webpagina's, afbeeldingen, video's, kaarten en meer. Een …Read more"
+    },
+    {
+      "title": "Search - Microsoft Bing",
+      "url": "https://in.bing.com/",
+      "snippet": "Bing is a smart search engine powered by AI, helping users find information, explore content, and discover answers efficiently."
+    }
+  ]
+}

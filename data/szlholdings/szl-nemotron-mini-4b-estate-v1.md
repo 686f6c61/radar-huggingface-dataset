@@ -2,85 +2,98 @@
 
 ## Resumen
 
-SZL-Nemotron-Mini-4B-Estate-v1 es un ajuste fino (fine-tune) del modelo nvidia/Nemotron-Mini-4B-Instruct, publicado por la organizacion SZLHOLDINGS dentro de lo que el autor denomina su "governed-AI estate". Se trata de un modelo de generacion de texto de 4.190.509.056 parametros (aproximadamente 4,19 mil millones) distribuido en formato safetensors y pensado para su uso con la libreria transformers. El modelo hereda la arquitectura y las capacidades del Nemotron Mini 4B Instruct de NVIDIA, sobre el que el autor ha aplicado un entrenamiento adicional cuyos detalles no se documentan en la model card.
+SZL-Nemotron-Mini-4B-Estate-v1 es un ajuste fino (fine-tune) del modelo base `nvidia/Nemotron-Mini-4B-Instruct`, publicado por la organizacion SZLHOLDINGS dentro de lo que denomina su "estate" de IA gobernada: un catalogo de modelos, datasets y Spaces con trazabilidad declarada mediante recibos (receipts) auditables. El modelo cuenta con 4.190.509.056 parametros segun los pesos en safetensors, se distribuye en formato safetensors para la libreria transformers y esta orientado a generacion de texto en ingles.
 
-La relevancia de esta publicacion es limitada y fundamentalmente practica: ofrece una variante de un modelo pequeno y ligero (4B) bajo la licencia nvidia-open-model-license, con un peso en disco de 8,4 GB en el repositorio. El modelo base Nemotron-Mini-4B-Instruct esta disenado para instrucciones y generacion de texto en ingles, y este derivado mantiene ese enfoque segun los metadatos disponibles (idioma declarado: en).
+El modelo hereda la arquitectura y el grueso del entrenamiento del Nemotron-Mini-4B-Instruct de NVIDIA, sobre el que SZLHOLDINGS aplica un ajuste adicional del que la model card no detalla ni el volumen de datos, ni la composicion del dataset, ni la metodologia (no se especifica RLHF, DPO ni SFT). La ficha del autor es explicitamente conservadora: declara que cualquier afirmacion sobre entrenamiento o evaluacion que no este respaldada por recibos medidos se etiqueta como UNKNOWN, y no publica cifras de benchmarks.
 
-La model card es deliberadamente parca en informacion tecnica: no se detallan los datos de entrenamiento del ajuste, no se aportan resultados de benchmarks y se remite a ficheros de "receipts" externos que no estan incluidos en la informacion disponible. Esto limita seriamente la evaluacion independiente del modelo y obliga a tratar cualquier afirmacion de rendimiento como no verificada.
+Su relevancia practica es limitada pero concreta: ofrece un checkpoint de 4B parametros, ligero y desplegable en hardware consumer, bajo la licencia open model de NVIDIA, con un encuadre de gobernanza y trazabilidad que puede resultar atractivo para equipos que necesitan documentar procedencia y auditoria de sus modelos. No obstante, la ausencia de evidencia medible de calidad limita su uso como referencia de rendimiento.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (derivado de nvidia/Nemotron-Mini-4B-Instruct; arquitectura del base no detallada en la informacion proporcionada) |
-| Parametros totales | 4.190.509.056 (4,19 B) |
-| Parametros activos | no aplica (no se indica que sea MoE) |
+| Arquitectura | no disponible (hereda la del base `nvidia/Nemotron-Mini-4B-Instruct`; no detallada en la informacion proporcionada) |
+| Parametros totales | 4.190.509.056 |
+| Parametros activos | no aplica (no es MoE segun la informacion disponible) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible (el repositorio contiene pesos safetensors; no se documentan variantes GGUF/AWQ/GPTQ) |
+| Tipos de cuantizacion | no disponible (solo se distribuyen pesos safetensors; no se listan variantes GGUF/AWQ/GPTQ) |
 | Idiomas soportados | en (ingles) |
-| Licencia | nvidia-open-model-license |
+| Licencia | nvidia-open-model-license (NVIDIA Open Model License Agreement, junio 2024) |
 | Formato de pesos | safetensors |
+| Libreria | transformers |
+| Tamano del repositorio | 8,4 GB |
+| Modelo base | nvidia/Nemotron-Mini-4B-Instruct |
+| Autor | SZLHOLDINGS |
+| Pipeline | text-generation |
+| Descargas | 895 |
+| Fecha de creacion | 2026-11-05 |
+| Ultima actualizacion | 2026-11-23 |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion detallada sobre la arquitectura interna en la documentacion proporcionada. El modelo es un fine-tune de nvidia/Nemotron-Mini-4B-Instruct, por lo que se asume que conserva la arquitectura del modelo base, pero la model card no especifica si se trata de un transformer denso, un modelo hibrido o cualquier otra variante, ni detalla el numero de capas, dimensiones ocultas o mecanismo de atencion.
+No se dispone de detalle arquitectonico propio en la informacion proporcionada. El modelo es un derivado de `nvidia/Nemotron-Mini-4B-Instruct`, por lo que su arquitectura subyacente corresponde a la del modelo de NVIDIA (familia Nemotron-Mini de 4B parametros), pero la model card de SZLHOLDINGS no especifica tipo de transformer, atencion, posiciones ni estrategia de contexto. Los pesos publicados suman 4.190.509.056 parametros, coherente con un modelo denso de aproximadamente 4B.
 
-Respecto al entrenamiento, la model card indica explicitamente que las afirmaciones sobre entrenamiento y evaluacion "viven en sus ficheros de receipt" dentro del "estate mesh" del autor, y que cualquier dato no registrado alli se considera UNKNOWN. No se proporcionan el numero de tokens de entrenamiento, la composicion del dataset, ni si se emplearon tecnicas de RLHF, DPO o SFT en el ajuste. Tampoco se documentan innovaciones tecnicas especificas (decodificacion especulativa, atencion lineal, etc.). En consecuencia, todos estos apartados deben considerarse no disponibles.
+En cuanto al entrenamiento, la model card declara explicitamente que las afirmaciones de entrenamiento y evaluacion residen en ficheros de recibos del "estate mesh" y que todo lo no receiptado se considera UNKNOWN. Se han identificado ficheros con nombre de recibo en el repositorio (`receipts/eval/fleet-confabulation-sweep-20261108.json`, `receipts/eval/reasoning-eval-2026-11-06.json`), pero el escaneo estricto del autor los clasifica como RECEIPT_FILES_NO_DONE: hay ficheros con nombre de recibo, pero no existe un `DONE.json` con estado MEASURED, `eval_rc=0` y marca temporal que satisfaga el umbral estricto. Por tanto, no hay evidencia validada de volumen de tokens, composicion del dataset, tecnicas de alineamiento (RLHF/DPO) ni innovaciones tecnicas destacables.
 
 ## Capacidades
 
-- Generacion de texto en ingles: el modelo esta etiquetado para la tarea text-generation y declara soporte unicamente para ingles.
-- Seguimiento de instrucciones: al derivar de un modelo "-Instruct", se espera que mantenga la capacidad de responder a instrucciones, aunque no se documenta el alcance de dicho ajuste.
-- Razonamiento y codigo: no se documenta explicitamente en la informacion disponible; debe considerarse no verificado.
-- Tool calling / function calling: no disponible en la informacion proporcionada.
+- Generacion de texto en ingles: el pipeline declarado es `text-generation`.
+- Razonamiento y respuesta instruccional: heredado del base `Nemotron-Mini-4B-Instruct`, aunque no hay evidencia medida propia en la model card.
+- Tool calling / function calling: no disponible en la informacion proporcionada (no se declara explicitamente).
 - Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
-- Capacidades multilingues: limitadas al ingles segun los metadatos; no se declaran otros idiomas.
-- Capacidades especiales (thinking mode, vision, audio): no disponibles.
+- Capacidades multilingues: limitadas al ingles segun el campo `language: en`.
+- Capacidades especiales (thinking mode, vision, audio): no disponibles en la informacion proporcionada.
+- Trazabilidad y gobernanza: el artefacto se enmarca en un sistema de recibos y auditoria con marcas temporales, lo que constituye una caracteristica diferencial de proceso, no de capacidad del modelo.
 
 ## Casos de uso
 
-- Prototipado rapido de asistentes conversacionales en ingles: con 4,19 B de parametros y pesos safetensors, el modelo puede cargarse en una GPU de consumo para experimentar con pipelines de generacion de texto sin requerir infraestructura de gran escala.
-- Fine-tuning adicional sobre dominios especificos: al ser un modelo pequeno y ya ajustado a instrucciones, sirve como punto de partida para tareas de adaptacion con LoRA o QLoRA en entornos con recursos limitados.
-- Generacion de texto en aplicaciones de baja latencia: el tamano reducido permite despliegues en una sola GPU, adecuado para tareas de completado o resumen en ingles donde la latencia importa mas que la profundidad de razonamiento.
-- Evaluacion comparativa de fine-tunes: util para investigadores que quieran contrastar el efecto de ajustes sobre Nemotron-Mini-4B-Instruct frente al modelo base, siempre que se disponga de los receipts del autor.
-- Despliegue en entornos con licencia permisiva: la nvidia-open-model-license permite ciertos usos comerciales bajo condiciones; conviene revisar los terminos antes de integrarlo en productos.
-- Educacion y experimentacion: su tamano manejable lo hace apropiado para cursos o talleres sobre fine-tuning y despliegue de LLMs en ingles.
+- Generacion de texto asistida en ingles: el modelo puede emplearse para redaccion, resumen y reescritura de documentos en ingles, aprovechando su tamano de 4B parametros para despliegue en una sola GPU consumer.
+- Clasificacion y extraccion de informacion: con 4B parametros y pesos safetensors, puede integrarse en pipelines de transformers para tareas de etiquetado, extraccion de entidades o enrutamiento de consultas, donde la latencia importa mas que el rendimiento puntero.
+- Prototipado rapido de asistentes conversacionales: adecuado para entornos de desarrollo y demos internas en ingles, con requisitos de memoria moderados.
+- Experimentacion academica con modelos derivados: util para investigadores que estudian ajustes finos sobre bases conocidas y necesitan checkpoints con procedencia documentada.
+- Evaluacion de gobernanza y auditoria de modelos: el encuadre de recibos permite usar el artefacto como caso de estudio para pipelines de trazabilidad y verificacion de procedencia en organizaciones reguladas.
+- Despliegue en entornos con recursos limitados: al ser un modelo de 4B parametros en safetensors, puede servirse en infraestructura modesta para cargas de trabajo internas no criticas.
+- Base para ajustes adicionales: puede servir como punto de partida para fine-tuning especifico de dominio en ingles, dado su tamano manejable y su licencia permisiva para uso comercial bajo condiciones.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card afirma explicitamente que no se aserta ningun numero de benchmark mas alla de lo que una auditoria fechada haya medido, y remite a ficheros de receipt externos que no se incluyen en la documentacion proporcionada.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card declara explicitamente que no se afirma ninguna cifra de benchmark mas alla de lo que una auditoria fechada haya medido, y el escaneo estricto clasifica la evidencia de evaluacion como UNKNOWN (sin `DONE.json` en el umbral estricto). Los ficheros `receipts/eval/fleet-confabulation-sweep-20261108.json` y `receipts/eval/reasoning-eval-2026-11-06.json` existen pero no han sido validados como evidencia medible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: en precision fp16, aproximadamente 8,4 GB solo para los pesos (4,19 B x 2 bytes); con overhead de activaciones y cache KV, se recomienda al menos 10-12 GB. En cuantizacion de 8 bits, en torno a 4,2 GB; en 4 bits, aproximadamente 2,1 GB (estimaciones teoricas, no confirmadas por el autor).
-- GPU recomendadas: para fp16, una RTX 4090 (24 GB) o A100/H100 si se requiere mayor throughput; para cuantizacion 4/8 bits, GPUs consumer como RTX 3060 (12 GB) o RTX 4060 Ti (16 GB) pueden ser suficientes.
-- Cabe en GPU consumer: si, en modelos con 8 GB o mas de VRAM en cuantizacion, y en 12-16 GB en fp16.
-- Opciones de despliegue: transformers (libreria declarada); no se documentan integraciones con vLLM, llama.cpp, Ollama o TGI, aunque al ser un modelo compatible con transformers es probable que pueda convertirse a GGUF, si bien esto no esta confirmado.
+- VRAM estimada para inferencia: no disponible de forma oficial; por tamano (4.190.509.056 parametros), en fp16 se requieren aproximadamente 8,4 GB solo para pesos, mas memoria para KV cache y overhead; en int8 en torno a 4,2 GB; en int4 en torno a 2,1 GB (estimaciones por tamano, no cifras publicadas por el autor).
+- GPU recomendadas: no disponibles en la informacion proporcionada. Por tamano, cabe en GPUs consumer con 8-16 GB de VRAM en cuantizaciones de 8 o 4 bits; en fp16 necesita al menos 12-16 GB efectivos.
+- Cabe en consumer GPU: probable en cuantizacion (no confirmado por el autor); en fp16 requiere GPU de gama alta consumer o profesional.
+- Opciones de despliegue: transformers (libreria declarada). No se confirma compatibilidad con vLLM, llama.cpp, Ollama o TGI en la informacion proporcionada; al distribuirse solo en safetensors, seria necesario convertir pesos para motores que requieran GGUF.
 - Latencia y throughput estimados: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Disponibilidad |
-|---|---|---|---|---|
-| SZL-Nemotron-Mini-4B-Estate-v1 | 4,19 B | no disponible | nvidia-open-model-license | Hugging Face (SZLHOLDINGS) |
-| nvidia/Nemotron-Mini-4B-Instruct | ~4 B (modelo base) | no disponible en la informacion | nvidia-open-model-license | Hugging Face (NVIDIA) |
-| Alternativas de tamano similar (p. ej. Qwen2.5-3B/7B, Llama-3.2-3B) | 3-7 B | 32K-128K segun modelo | Apache 2.0 / Llama license | Hugging Face |
+| Modelo | Parametros | Contexto | Licencia | Formato | Evidencia de rendimiento |
+|---|---|---|---|---|---|
+| SZL-Nemotron-Mini-4B-Estate-v1 | 4.190.509.056 | no disponible | nvidia-open-model-license | safetensors | UNKNOWN (sin recibos validados) |
+| nvidia/Nemotron-Mini-4B-Instruct (base) | ~4B | no disponible en esta ficha | nvidia-open-model-license | safetensors | publicado por NVIDIA (no verificado aqui) |
+| Alternativas de tamano 4B (familia Llama, Qwen, Phi) | ~3-4B | variable | variable (comunidad o propietaria) | safetensors, GGUF | benchmarks publicos por sus autores |
 
-No se dispone de datos de rendimiento comparativo para este modelo, por lo que la comparativa se limita a parametros, licencia y disponibilidad. Cualquier comparacion de calidad queda fuera del alcance de la informacion proporcionada.
+La comparativa directa con alternativas de la misma categoria no puede completarse con datos verificados en esta ficha: el modelo derivado no aporta cifras medibles, y las alternativas de 4B de otros proveedores no se detallan en la informacion proporcionada. Cualquier comparacion de rendimiento seria especulativa.
 
 ## Limitaciones y advertencias
 
-- Sesgos conocidos: no documentados en la informacion proporcionada; al derivar de un modelo entrenado principalmente en ingles, es probable que herede sesgos del corpus original, pero no hay datos verificables.
-- Riesgo de alucinacion: no cuantificado; como todo LLM de 4B, es esperable un riesgo de alucinacion mayor que en modelos de mayor tamano, aunque no se aportan evaluaciones.
-- Limitaciones de contexto o idioma: el modelo declara soporte unicamente para ingles; no se especifica la longitud de contexto, lo que impide planificar su uso en tareas de contexto largo.
-- Restricciones de licencia: la nvidia-open-model-license impone condiciones de uso (incluida la necesidad de cumplir con los terminos de NVIDIA); debe revisarse antes de cualquier uso comercial.
-- Caveat para produccion: la ausencia de benchmarks, de documentacion del entrenamiento y de receipts accesibles hace que el modelo no sea recomendable para produccion sin una evaluacion independiente previa. La model card advierte que cualquier dato no registrado en sus receipts es UNKNOWN.
-- Trazabilidad: el autor remite a un "estate mesh" externo para verificar afirmaciones; sin acceso a esos ficheros, la mayoria de las capacidades declaradas no son verificables.
+- Ausencia de evidencia medida: la model card declara UNKNOWN para evaluacion y entrenamiento; no hay `DONE.json` en el umbral estricto, por lo que no se puede verificar calidad, sesgos ni robustez.
+- Riesgo de alucinacion: no cuantificado por el autor; los recibos de "confabulation sweep" existen como ficheros pero no estan validados como evidencia.
+- Idioma: solo ingles (`language: en`); no se declara soporte multilingue.
+- Contexto: no disponible; no se puede planificar uso con ventanas largas sin verificar el base.
+- Licencia: NVIDIA Open Model License Agreement (junio 2024); permite uso comercial bajo condiciones especificas que deben revisarse en el texto oficial antes de produccion.
+- Procedencia del ajuste: no se documenta el dataset, volumen ni metodologia del fine-tune de SZLHOLDINGS, lo que impide auditar posibles sesgos introducidos.
+- Madurez: 895 descargas y 0 likes en el momento de la consulta; ecosistema de soporte limitado y sin garantias de mantenimiento.
+- Formato unico: solo safetensors; requiere conversion para motores de inferencia que no consuman transformers directamente.
+- Uso en produccion: no recomendado como componente critico sin evaluacion propia, dado que el autor no aporta metricas verificables.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/SZLHOLDINGS/SZL-Nemotron-Mini-4B-Estate-v1
-- Organizacion del autor: https://huggingface.co/SZLHOLDINGS
+- Hugging Face: https://huggingface.co/SZLHOLDINGS/SZL-Nemotron-Mini-4B-Estate-v1
+- Organizacion SZLHOLDINGS: https://huggingface.co/SZLHOLDINGS
+- Repositorio canonico declarado (org): https://github.com/szl-holdings
+- Herramienta de generacion de fichas: https://github.com/szl-holdings/estate-cards
+- Licencia NVIDIA Open Model License (junio 2024): https://developer.download.nvidia.com/licenses/nvidia-open-model-license-agreement-june-2024.pdf
 - Modelo base: https://huggingface.co/nvidia/Nemotron-Mini-4B-Instruct
-- Repositorio de la organizacion (referenciado en la card): https://github.com/szl-holdings
-- Herramienta de generacion de cards (referenciada): https://github.com/szl-holdings/estate-cards

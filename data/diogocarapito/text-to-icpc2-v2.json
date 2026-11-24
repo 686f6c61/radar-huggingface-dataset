@@ -5,7 +5,7 @@
   "author": "diogocarapito",
   "url": "https://huggingface.co/diogocarapito/text-to-icpc2-v2",
   "created_at": "2026-11-22T07:08:05.000Z",
-  "updated_at": "2026-11-22T07:11:31.000Z",
+  "updated_at": "2026-11-24T01:12:55.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "sentence-similarity",

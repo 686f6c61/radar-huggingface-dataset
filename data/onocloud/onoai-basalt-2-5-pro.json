@@ -9,11 +9,12 @@
   "license": "onocloud-sovereign-license",
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
-  "library": "transformers",
+  "library": "basalt",
   "languages": [
     "en"
   ],
   "tags": [
+    "basalt",
     "safetensors",
     "qwen2",
     "code",
@@ -21,7 +22,6 @@
     "onoai",
     "sovereign",
     "onocloud",
-    "basalt",
     "enterprise",
     "text-generation",
     "conversational",

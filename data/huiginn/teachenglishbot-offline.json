@@ -1,0 +1,51 @@
+{
+  "schema": 2,
+  "id": "Huiginn/teachenglishbot-offline",
+  "slug": "huiginn-teachenglishbot-offline",
+  "author": "Huiginn",
+  "url": "https://huggingface.co/Huiginn/teachenglishbot-offline",
+  "created_at": "2026-11-24T09:39:35.000Z",
+  "updated_at": "2026-11-24T09:40:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "onnxruntime",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "onnxruntime",
+    "pronunciation",
+    "english-learning",
+    "offline",
+    "onnx",
+    "automatic-speech-recognition",
+    "en",
+    "base_model:facebook/wav2vec2-lv-60-espeak-cv-ft",
+    "base_model:finetune:facebook/wav2vec2-lv-60-espeak-cv-ft",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5299425148,
+  "storage_human": "5.3 GB",
+  "context_length": null,
+  "base_model": "facebook/wav2vec2-lv-60-espeak-cv-ft, hexgrad/Kokoro-82M, openai/whisper-base.en",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

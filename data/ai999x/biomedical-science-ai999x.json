@@ -71,7 +71,7 @@
   "benchmarks": [
     {
       "task": "biomedical science question answering",
-      "dataset": "Golden answers (561 documented questions, Windows + Linux Python 3.10-3.14)",
+      "dataset": "Golden answers (649 documented questions, Windows + Linux Python 3.10-3.14)",
       "metric": "identical on every platform",
       "value": 1
     }

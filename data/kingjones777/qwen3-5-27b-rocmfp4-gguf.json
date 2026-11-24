@@ -5,7 +5,7 @@
   "author": "kingjones777",
   "url": "https://huggingface.co/kingjones777/Qwen3.5-27B-ROCmFP4-GGUF",
   "created_at": "2026-08-17T18:56:33.000Z",
-  "updated_at": "2026-08-17T19:02:33.000Z",
+  "updated_at": "2026-11-23T13:13:52.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -31,7 +31,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 60,
+  "downloads_30d": 102,
   "trending_score": 0,
   "parameters": 26895998464,
   "parameters_human": "26.90B",

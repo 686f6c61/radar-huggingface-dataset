@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/LightOnOCR-3-0.8B-MTP-Repacked-i1-GGUF",
   "created_at": "2026-11-05T11:54:34.000Z",
-  "updated_at": "2026-11-20T16:51:10.000Z",
+  "updated_at": "2026-11-23T17:33:30.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -36,7 +36,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 2331,
+  "downloads_30d": 2370,
   "trending_score": 0,
   "parameters": 772845888,
   "parameters_human": "772.8M",

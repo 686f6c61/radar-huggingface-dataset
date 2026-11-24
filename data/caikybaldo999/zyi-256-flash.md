@@ -2,90 +2,97 @@
 
 ## Resumen
 
-ZYI-256 Flash es un modelo de generación de imágenes a partir de texto (text-to-image) desarrollado por el usuario de Hugging Face `caikybaldo999`. Se trata de un modelo pequeno, de 343 millones de parámetros, construido con una arquitectura DiT (Diffusion Transformer) con flow matching rectificado, capaz de generar imágenes de 256×256 píxeles. El modelo se entrena desde cero en aproximadamente 5 horas sobre una única GPU NVIDIA RTX PRO 6000 de 96 GB, lo que lo convierte en un caso interesante de modelo de difusión de bajo coste computacional.
+ZYI-256 Flash es un modelo de generación de imágenes texto-a-imagen desarrollado por el usuario independiente caikybaldo999, publicado en Hugging Face bajo licencia Apache 2.0. Se trata de un modelo pequeño, de 343 millones de parámetros, construido con una arquitectura DiT (Diffusion Transformer) entrenada con flow matching (rectified flow), que genera imágenes de resolución fija 256×256 píxeles. Su relevancia radica en que demuestra que es posible entrenar un modelo de difusión desde cero en unas pocas horas sobre una única GPU profesional (RTX PRO 6000 de 96 GB), con un presupuesto computacional muy reducido.
 
-El modelo resuelve el problema de generar imágenes de baja resolución con un coste de entrenamiento e inferencia muy reducido, empleando un espacio latente compacto (DC-AE f32c32, 64 tokens) y un codificador de texto congelado (`google/flan-t5-base`, 96 tokens). Ademas de la generación texto-imagen, la versión actual incorpora edición de imágenes basada en instrucciones (instruction-based image editing) mediante condicionamiento en contexto, reutilizando la misma arquitectura.
+El modelo utiliza un autoencoder latente DC-AE (f32c32) que comprime cada imagen a solo 64 tokens, y un codificador de texto congelado `google/flan-t5-base` que produce hasta 96 tokens de contexto textual. Esta combinación mantiene el coste de inferencia y entrenamiento muy bajo, a cambio de una calidad limitada y una resolución modesta. En su versión 2.x incorpora además edición de imágenes por instrucción (estilo InstructPix2Pix) mediante condicionamiento in-context de la imagen fuente.
 
-Es relevante ahora porque demuestra que es posible entrenar un modelo de difusión funcional con recursos muy limitados (una sola GPU, pocas horas) y publicarlo con licencia Apache 2.0, lo que facilita la experimentación y el estudio de arquitecturas DiT a pequena escala. El repositorio tiene 722 descargas y 3 likes, y un tamano de 63,2 GB.
+La model card documenta tres fases de entrenamiento sucesivas (base, fine-tuning y edición), así como un LoRA experimental para generación de GIF de 8 fotogramas. El modelo está claramente orientado a experimentación, prototipado rápido y docencia, más que a producción con calidad fotorrealista.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | DiT con rectified flow (flow matching) |
-| Parametros totales | 343M |
-| Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | no disponible (text encoder flan-T5-base, 96 tokens; latente 64 tokens) |
-| Tipos de cuantizacion | no disponible |
-| Idiomas soportados | no disponible (los prompts en inglés funcionan mejor; captions de entrenamiento en inglés) |
+| Arquitectura | DiT (Diffusion Transformer) con rectified flow / flow matching |
+| Parámetros totales | 343M |
+| Parámetros activos | no aplica (no es MoE) |
+| Longitud de contexto | 96 tokens de texto (flan-T5-base) + 64 tokens latentes de imagen |
+| Tipos de cuantización | no disponible (pesos en bf16 según entrenamiento; el repo no documenta GGUF ni cuantizaciones publicadas) |
+| Idiomas soportados | no disponible oficialmente; los prompts en inglés funcionan mejor según el autor |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (libreria pytorch; script `zyi256.py`) |
+| Formato de pesos | safetensors (repo PyTorch; script `zyi256.py` para carga) |
 
-Detalles adicionales de arquitectura: hidden size 1024, profundidad 20, 16 cabezas, 2D RoPE, QK-norm, adaLN-single, SwiGLU, cross-attention, pesos EMA. Espacio latente DC-AE f32c32 (`mit-han-lab/dc-ae-f32c32-sana-1.0-diffusers`), 32×8×8 = 64 tokens. Resolución 256×256.
+Detalles arquitectónicos adicionales documentados: hidden size 1024, profundidad 20, 16 cabezas de atención, 2D RoPE, QK-norm, adaLN-single, SwiGLU, cross-attention y pesos EMA. Espacio latente DC-AE f32c32 (`mit-han-lab/dc-ae-f32c32-sana-1.0-diffusers`), 32×8×8 = 64 tokens. Resolución fija 256×256.
 
 ## Arquitectura y entrenamiento
 
-El modelo emplea una arquitectura DiT (Diffusion Transformer) con rectified flow (flow matching). Consta de 20 bloques con hidden size 1024 y 16 cabezas de atención, e incorpora innovaciones como 2D RoPE, QK-norm, adaLN-single, SwiGLU, cross-attention y pesos EMA. El texto se codifica con `google/flan-t5-base` congelado (96 tokens) y la imagen se proyecta a un espacio latente compacto mediante DC-AE f32c32, produciendo 64 tokens (32×8×8). La edición de imágenes se realiza mediante condicionamiento en contexto: la imagen fuente se codifica con el DC-AE y sus 64 tokens se unen a la misma secuencia que los 64 tokens objetivo, compartiendo posiciones 2D RoPE y un embedding "source" aprendido (los únicos pesos nuevos).
+El modelo es un Diffusion Transformer (DiT) que opera en el espacio latente de un autoencoder DC-AE y se entrena con rectified flow (flow matching). La imagen latente se representa con solo 64 tokens (32 canales, 8×8), lo que reduce drásticamente el coste de atención. El texto se codifica con `google/flan-t5-base` congelado, limitado a 96 tokens. La atención cruzada entre tokens de texto e imagen, junto con 2D RoPE, QK-norm, adaLN-single y SwiGLU, conforma el bloque transformer repetido en 20 capas con 16 cabezas.
 
-El entrenamiento base utilizó 1.226.758 imágenes de `LucasFang/FLUX-Reason-6M` (quality score ≥ 7), con caption corto o largo aleatorio por muestra, 9.544 pasos con batch size 1024, optimizador AdamW con lr 0.0002, schedule coseno y bf16, sobre una única RTX PRO 6000 (~5 h incluyendo descarga, codificación y entrenamiento). El fine-tuning posterior anadio 10.233 pasos (total 42.981) con 2.139.181 imágenes nuevas del mismo dataset, lr 0.0001. La actualización v2.1 incorpora loss ponderada por region (pose detector que marca cara y manos con peso 3×, y región de texto sintético con peso 3×), mezcla de datos ampliada (imágenes de personas 2×, texto real 2×, captions de conteo 2×, 100.000 imágenes sintéticas de texto, 15% edición de imágenes), spelling de texto entre comillas, annealing con el 35% superior de imágenes por calidad en el último 30% del entrenamiento, y +15.669 pasos adicionales (334.736 imágenes FLUX-Reason, 40.000 pares de edición, 5,7 h). La edición se entreno con +18.613 pasos desde los pesos previos (40% texto-imagen / 60% edición), usando 1.000.000 de imágenes de FLUX-Reason-6M y 190.988 pares de edición de `TIGER-Lab/OmniEdit-Filtered-1.2M` (MIT), en 6,5 h. No se utilizó DPO (preference tuning) en v2.
+El entrenamiento base utilizó 1.226.758 imágenes de `LucasFang/FLUX-Reason-6M` filtradas por calidad (score ≥ 7), con pasos de 9.544 a batch size 1024, optimizador AdamW con lr 0,0002, scheduler coseno y precisión bf16, todo sobre una única RTX PRO 6000 (~5 h incluyendo descarga y codificación). El fine-tuning posterior añadió 10.233 pasos (total 42.981) con 2.139.181 imágenes nuevas del mismo dataset a lr 0,0001. La fase de edición añadió 18.613 pasos con mezcla 40% texto-a-imagen / 60% edición, usando 1.000.000 de imágenes de FLUX-Reason-6M y 190.988 pares de edición de `TIGER-Lab/OmniEdit-Filtered-1.2M` (MIT). La versión v2.1 incorpora pérdida ponderada por región (3× en cara y manos detectadas por pose detector, 3× en región de texto sintético), mezcla de datos con imágenes de personas y texto real al doble de peso, 100.000 imágenes sintéticas de texto, 15% de edición, y annealing final con el 35% superior por calidad. No se empleó DPO ni RLHF según la model card.
 
 ## Capacidades
 
-- Generación de texto a imagen a 256×256 píxeles.
-- Edición de imágenes basada en instrucciones en inglés (anadir, eliminar, intercambiar, atributos, entorno y estilo), mediante `pipe.edit(...)`.
-- Buen rendimiento en paisajes, interiores, comida, objetos y estilos de pintura.
-- Generación de texto en imagen (signos, palabras entre comillas) con modo `spell=True` que deletrea el texto en el prompt.
-- Capacidad limitada de conteo (captions de conteo en el entrenamiento).
-- Soporte multilingue: no disponible; los prompts en inglés funcionan mejor.
-- Tool calling / function calling: no disponible (no es un modelo de lenguaje).
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades especiales: edición de imágenes, spelling de texto, condicionamiento en contexto.
+- Generación de imágenes texto-a-imagen a resolución fija 256×256.
+- Edición de imágenes por instrucción en inglés (añadir, quitar, intercambiar, cambiar atributos, entorno y estilo), con condicionamiento in-context de la imagen fuente.
+- Renders aceptables de paisajes, interiores, comida, objetos y estilos pictóricos.
+- Generación de texto legible en imágenes mediante prompt con deletreo explícito (`"OPEN" (O P E N)`) y parámetro `spell=True`.
+- Control de generación por pasos de muestreo y escala CFG (por ejemplo, `steps=28`, `cfg=4.5`).
+- Generación por lotes con semilla (`n`, `seed`) para reproducibilidad.
+- LoRA experimental para generación de GIF de 8 fotogramas a 256×256 (previsión del siguiente cuadro).
+- No soporta tool calling, function calling, agentes, razonamiento multi-paso ni capacidades de audio o vídeo más allá del LoRA experimental de GIF.
 
 ## Casos de uso
 
-- Generación rápida de prototipos visuales: el modelo genera imágenes de 256×256 en pocos pasos (28 pasos, cfg 4.5 en el ejemplo), adecuado para maquetas y pruebas de concepto de bajo coste.
-- Edición de imágenes por instrucciones en flujos de trabajo creativos: `pipe.edit(Image.open("photo.jpg"), "make it winter, add snow")` permite modificar fotos existentes sin reentrenar, util para variaciones rápidas de estilo o entorno.
-- Investigación y docencia sobre modelos de difusión: al ser un DiT de 343M entrenado en ~5 h en una sola GPU, sirve como banco de pruebas reproducible para estudiar flow matching y arquitecturas DiT.
-- Generación de imágenes para datasets sinteticos: puede producir imágenes de paisajes, objetos e interiores para aumentar datasets de entrenamiento de otros modelos, con la ventaja de su licencia Apache 2.0.
-- Aplicaciones de bajo consumo en entornos con recursos limitados: su tamano reducido y espacio latente compacto (64 tokens) permiten despliegue en hardware modesto comparado con modelos de difusión de miles de millones de parámetros.
-- Generación de carteles y rotulos con texto: gracias al modo `spell=True` y al entrenamiento con texto sintetico, puede generar signos con palabras legibles en tamanos pequenos y medianos, util para mockups de senaletica.
-- Edición de atributos y entorno en catalogos de producto: cambiar estilo, fondo o atributos de objetos en imágenes de producto mediante instrucciones, aunque con limitaciones en detalles finos por la baja resolución.
+- Prototipado rápido de pipelines texto-a-imagen: el modelo se entrena e infiere en una sola GPU, lo que permite iterar sobre arquitecturas DiT y esquemas de flow matching sin grandes presupuestos de cómputo.
+- Docencia e investigación en difusión: su tamaño (343M) y su código autocontenido (`zyi256.py`) lo hacen adecuado para estudiar el efecto de DC-AE, 2D RoPE, adaLN-single y flow matching en un entorno controlado.
+- Generación de miniaturas y avatares de baja resolución: para iconos, placeholders o imágenes de 256×256 en interfaces y prototipos donde no se requiere fotorrealismo.
+- Edición rápida de imágenes por instrucción: añadir nieve, cambiar el entorno o el estilo de una foto con `pipe.edit(...)` en flujos de previsualización o pruebas de concepto.
+- Generación de texto en carteles sintéticos: con `spell=True` y prompts que deletrean la palabra, útil para prototipos de señalética o mockups de baja resolución.
+- Experimentación con GIFs: el LoRA `gif/inference.py` permite generar animaciones de 8 fotogramas para pruebas de concepto de vídeo generativo a baja resolución.
+- Aumento de datos sintéticos: generar imágenes 256×256 controladas por caption para datasets de entrenamiento de clasificadores o detectores en dominios acotados (paisajes, objetos, comida).
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible de forma explícita; el modelo tiene 343M parámetros, por lo que en bf16 los pesos ocupan aproximadamente 0,7 GB, mas el text encoder flan-T5-base congelado y el DC-AE. El entrenamiento se realizo en una RTX PRO 6000 de 96 GB, pero la inferencia deberia caber en GPUs consumer.
-- GPU recomendadas: no disponible; el autor solo reporta entrenamiento en 1× NVIDIA RTX PRO 6000 (96 GB).
-- ¿Cabe en GPU consumer? No confirmado en la informacion, pero por tamano (343M) es plausible en GPUs con suficiente VRAM para el pipeline completo (modelo + flan-T5-base + DC-AE).
-- Opciones de despliegue: script propio `zyi256.py` con `ZyiPipeline` (via `huggingface_hub`), librerias torch, diffusers, transformers, safetensors, sentencepiece. No se mencionan vLLM, llama.cpp, Ollama ni TGI (no aplicables a difusion).
-- Latencia y throughput estimados: no disponibles.
+- Entrenamiento documentado: 1× NVIDIA RTX PRO 6000 (96 GB) para todas las fases (base ~5 h, fine-tuning ~5,7 h, edición ~6,5 h).
+- VRAM de inferencia: no disponible de forma explícita; con 343M parámetros en bf16 los pesos ocupan aproximadamente 0,7 GB, más el codificador de texto flan-T5-base (~0,5 GB en bf16) y el DC-AE. Debería caber holgadamente en GPUs consumer de 8 GB o más, aunque el autor no publica cifras medidas.
+- GPU recomendadas: cualquier GPU con soporte bf16 y al menos 8 GB de VRAM para inferencia; RTX PRO 6000 o A100/H100 para reentrenamiento.
+- Cabe en GPU consumer: sí, previsiblemente en RTX 3060/4060 (8-12 GB) y superiores, aunque no hay medición oficial.
+- Opciones de despliegue: script propio `zyi256.py` sobre PyTorch, `diffusers` y `transformers`; no se documenta soporte para vLLM, llama.cpp, Ollama ni TGI (son herramientas para LLM, no aplicables directamente).
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-No disponible. La informacion proporcionada no incluye datos de benchmarks ni comparaciones con otros modelos de difusion de tamano o tarea similar.
+| Modelo | Parámetros | Resolución | Contexto texto | Licencia | Edición por instrucción |
+|---|---|---|---|---|---|
+| ZYI-256 Flash | 343M | 256×256 | 96 tokens (flan-T5-base) | Apache 2.0 | Sí (v2.x) |
+| Stable Diffusion 1.5 | ~860M UNet | 512×512 | 77 tokens (CLIP) | CreativeML OpenRAIL-M | No nativa |
+| SDXL-Turbo | ~2,6B | 512×512 | 77 tokens (CLIP) | Stability AI Community | No nativa |
+| Sana (mit-han-lab) | ~0,6B | 1024×1024 | T5 | Apache 2.0 (según variante) | No nativa |
+
+La comparación es orientativa: ZYI-256 Flash es sustancialmente más pequeño y de menor resolución que SD 1.5 o SDXL-Turbo, y su ventana de texto es mayor que la de CLIP (96 vs 77 tokens) pero con un encoder más ligero. No se dispone de benchmarks comparativos publicados.
 
 ## Limitaciones y advertencias
 
-- Debil en anatomia animal, caras, manos y texto legible.
-- No sigue relaciones espaciales de forma fiable (por ejemplo, "a red ball on top of a blue box").
-- La baja resolucion (256×256) limita ediciones finas (texto, objetos pequenos, caras).
-- Las imagenes se recortan al centro para formar un cuadrado.
-- Los prompts en ingles funcionan mejor; el soporte multilingue no esta confirmado.
-- Riesgo de alucinacion visual y de generar contenido incorrecto en escenas complejas.
-- Sesgos conocidos: no disponibles en la informacion proporcionada.
-- Licencia Apache 2.0: permite uso comercial, pero se recomienda verificar los terminos de los datasets de entrenamiento (FLUX-Reason-6M y OmniEdit-Filtered-1.2M, este ultimo MIT) y del text encoder flan-T5-base.
-- Caveat para produccion: es un modelo de investigacion a pequena escala; la calidad en caras, manos y texto es limitada y no se han publicado evaluaciones cuantitativas.
+- Resolución fija de 256×256: insuficiente para producción fotorrealista o impresión.
+- Anatomía animal, caras, manos y texto legible son puntos débiles reconocidos por el autor.
+- No sigue relaciones espaciales de forma fiable (por ejemplo, "una bola roja encima de una caja azul").
+- Los prompts en inglés funcionan mejor; el multilingüismo no está garantizado ni documentado.
+- Riesgo de alucinación visual y de artefactos en detalles finos, especialmente en edición (texto, objetos pequeños, caras).
+- La edición recorta las imágenes a cuadrado, lo que puede eliminar información del original.
+- Licencia Apache 2.0 permite uso comercial, pero el modelo se distribuye sin garantías y el autor no documenta evaluación de sesgos.
+- Repo de 63,2 GB: incluye pesos de varias revisiones y material auxiliar; conviene descargar solo la revisión necesaria.
+- Modelo de autor individual, con poca validación externa (485 descargas, 3 likes en el momento de la consulta): no recomendado como dependencia crítica en producción sin evaluación propia.
 
 ## Enlaces
 
 - Hugging Face: https://huggingface.co/caikybaldo999/zyi-256-flash
-- Revision v2.1: https://huggingface.co/caikybaldo999/zyi-256-flash/tree/v2.1
-- Revision v1.2-edit: https://huggingface.co/caikybaldo999/zyi-256-flash/tree/v1.2-edit
-- Revision v1.0-base: https://huggingface.co/caikybaldo999/zyi-256-flash/tree/v1.0-base
-- Dataset FLUX-Reason-6M: https://huggingface.co/datasets/LucasFang/FLUX-Reason-6M
-- Dataset OmniEdit-Filtered-1.2M: https://huggingface.co/datasets/TIGER-Lab/OmniEdit-Filtered-1.2M
-- DC-AE f32c32: https://huggingface.co/mit-han-lab/dc-ae-f32c32-sana-1.0-diffusers
-- Text encoder flan-T5-base: https://huggingface.co/google/flan-t5-base
+- Revisión base v1.0: https://huggingface.co/caikybaldo999/zyi-256-flash/tree/v1.0-base
+- Revisión edición v1.2-edit: https://huggingface.co/caikybaldo999/zyi-256-flash/tree/v1.2-edit
+- Revisión v2.1: https://huggingface.co/caikybaldo999/zyi-256-flash/tree/v2.1
+- Dataset de entrenamiento: https://huggingface.co/datasets/LucasFang/FLUX-Reason-6M
+- Dataset de edición: https://huggingface.co/datasets/TIGER-Lab/OmniEdit-Filtered-1.2M
+- Autoencoder DC-AE: https://huggingface.co/mit-han-lab/dc-ae-f32c32-sana-1.0-diffusers
+- Codificador de texto: https://huggingface.co/google/flan-t5-base

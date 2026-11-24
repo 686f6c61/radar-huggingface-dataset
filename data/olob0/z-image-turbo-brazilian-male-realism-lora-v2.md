@@ -1,94 +1,76 @@
 # olob0/z-image-turbo-brazilian-male-realism-lora-v2
 
 ## Resumen
+z-image-turbo-brazilian-male-realism-lora-v2 es un adaptador LoRA de texto a imagen desarrollado por el usuario olob0 sobre el modelo base Tongyi-MAI/Z-Image-Turbo. Su proposito es especializar la generacion de imagenes en retratos fotorrealistas de hombres brasilenos, con enfasis en texturas de piel naturales, iluminacion de tipo movil (smartphone candid) y escenarios tropicales o rurales propios de Brasil. Se distribuye como pesos de difusion en formato diffusers y ocupa 0.2 GB en el repositorio.
 
-`olob0/z-image-turbo-brazilian-male-realism-lora-v2` es un adaptador LoRA de texto a imagen publicado por el usuario olob0 sobre el modelo base `Tongyi-MAI/Z-Image-Turbo`. Su funcion es especializar la generacion del modelo base hacia retratos fotorealistas de hombres brasilenos, con una estetica concreta de fotografia casual de movil ("raw smartphone candid"), luz tropical dura y escenarios de playa, campo o vegetacion exuberante.
+El modelo resuelve un problema concreto de sesgo y representacion: los modelos generativos generalistas suelen producir rostros homogeneos y poco fieles a la diversidad fenotipica de America Latina. Esta LoRA introduce un token de activacion (BRZMLRELSM) que condiciona la generacion hacia rasgos, tonos de piel, barbas y contextos culturales especificos. Es relevante para desarrolladores que construyan aplicaciones de generacion de imagenes con requisitos de representacion regional.
 
-El adaptador se activa mediante la palabra disparadora `BRZMLRELSM`, que debe anteponerse al prompt. Los ejemplos de la model card muestran prompts muy largos y descriptivos, con detalle explicito de rasgos faciales, textura de piel, vestuario y direccion de la luz, lo que indica que el LoRA responde mejor a descripciones densas que a instrucciones cortas.
-
-Es relevante porque cubre un nicho poco representado en los modelos generativos: la representacion visual de hombres latinoamericanos y brasilenos con realismo fotografico y sin estilizacion. El repositorio ocupa 0,2 GB, tiene licencia CC BY 4.0 y, en el momento de la consulta, acumula 130 descargas y 3 likes. Los detalles internos del modelo base (parametros, contexto, datos de entrenamiento) no se incluyen en la informacion proporcionada.
+La ficha se basa en la informacion publicada en Hugging Face. No se dispone de detalles sobre el dataset de entrenamiento, hiperparametros, numero de pasos ni evaluaciones cuantitativas, por lo que varios apartados se marcan como no disponibles.
 
 ## Especificaciones tecnicas
-
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Adaptador LoRA sobre el modelo de difusion texto a imagen `Tongyi-MAI/Z-Image-Turbo` (arquitectura interna del base no disponible en la informacion proporcionada) |
-| Parametros totales | No disponible (el repositorio ocupa 0,2 GB y contiene solo los pesos del adaptador) |
-| Longitud de contexto | No aplica: modelo texto a imagen; resolucion de salida no disponible |
-| Tipos de cuantizacion | No disponible; al ser un adaptador, la cuantizacion aplicable depende del modelo base |
-| Idiomas soportados | Ingles (`en` en la metadata); los tags del autor mencionan portugues, Brasil y LATAM, pero no se declara soporte linguistico formal para ellos |
-| Licencia | CC BY 4.0 |
-| Formato de pesos | Formato `diffusers` (adaptador LoRA); extension exacta de los ficheros no disponible |
-| Palabra disparadora | `BRZMLRELSM` |
-| Modelo base | `Tongyi-MAI/Z-Image-Turbo` |
-| Libreria declarada | diffusers |
-| Tamano del repositorio | 0,2 GB |
-| Fecha de creacion / actualizacion | 2026-04-29 / 2026-10-25 |
-| Descargas / likes | 130 / 3 |
+| Arquitectura | LoRA sobre modelo de difusion (base: Tongyi-MAI/Z-Image-Turbo) |
+| Parametros totales | no disponible |
+| Parametros activos | no aplica (no es MoE) |
+| Longitud de contexto | no disponible (modelo de imagen, no de texto) |
+| Tipos de cuantizacion | no disponible |
+| Idiomas soportados | en (prompts en ingles; contenido cultural brasileno) |
+| Licencia | cc-by-4.0 |
+| Formato de pesos | diffusers (safetensors, segun libreria diffusers) |
 
 ## Arquitectura y entrenamiento
+Se trata de un adaptador LoRA (Low-Rank Adaptation) aplicado sobre el modelo de difusion Z-Image-Turbo de Tongyi-MAI. La LoRA modifica un subconjunto de pesos del modelo base para desplazar la distribucion generativa hacia el dominio objetivo: retratos masculinos brasilenos con realismo fotografico. El modelo base es un text-to-image turbo, lo que implica inferencia con pocos pasos de muestreo.
 
-Se trata de un adaptador LoRA (Low-Rank Adaptation) que no modifica los pesos del modelo base, sino que inyecta matrices de bajo rango en capas concretas del modelo de difusion para desplazar su distribucion de salida hacia el dominio objetivo. El modelo base es `Tongyi-MAI/Z-Image-Turbo`, un generador texto a imagen de la familia Z-Image; la informacion proporcionada no detalla el numero de parametros, el tipo de backbone (DiT, UNet u otro), el rango del adaptador ni las capas adaptadas.
-
-No se han publicado en la informacion disponible datos sobre el dataset de entrenamiento: numero de imagenes, resolucion, procedencia, proceso de captions, uso de tecnicas como DreamBooth, LoRA clasico o fine-tuning con regularizacion, ni hiperparametros (learning rate, pasos, batch size). Tampoco se documenta si hubo etapas de curado o filtrado de datos. La unica innovacion observable es la especializacion estetica: los ejemplos de la model card reproducen un estilo consistente de retrato fotografico movil con luz natural dura, alta textura de piel y detalle en elementos culturales brasilenos (gorras con logos, camisetas con texto en portugues como "MADE IN ROÇA", escenarios de playa tropical y campo agricola).
+No se ha publicado informacion sobre el numero de imagenes de entrenamiento, la composicion del dataset, el rango de la LoRA, la tasa de aprendizaje ni si se emplearon tecnicas como regularizacion o captions automaticos. Tampoco se documenta si hubo curacion manual de datos o filtrado de calidad. Toda esa informacion figura como no disponible.
 
 ## Capacidades
-
-- Generacion de imagenes fotorealistas de hombres brasilenos y latinoamericanos con rasgos, tonos de piel y vello facial variados (complexion clara, oliva, envejecida, con barba densa o canosa).
-- Reproduccion de estetica de fotografia amateur de movil: angulos altos o bajos, primerisimos planos, encuadres asimetricos, desenfoque de fondo y textura de piel con poros y brillo.
-- Iluminacion natural realista: sol tropical directo, sombras duras de visera o de copa de arbol, luz difusa de dia nublado.
-- Escenarios especificos: playas tropicales, paseos de madera, vegetacion densa, campos agricolas con maquinaria, bosques de pinos.
-- Detalle en vestuario y objetos: gorras con logos, camisetas con texto impreso, botas, jeans, tractores.
-- Composicion de escena compleja: figuras secundarias desenfocadas, profundidad de campo, horizontes definidos.
-- Activacion por palabra disparadora (`BRZMLRELSM`) combinada con prompts descriptivos largos en ingles.
-- Integracion como LoRA en pipelines de `diffusers` sobre el modelo base; no es un modelo autonomo.
+- Generacion de imagenes fotorrealistas de hombres brasilenos mediante el token de activacion BRZMLRELSM.
+- Reproduccion de texturas de piel detalladas: poros, brillo oleoso, arrugas, vello facial y barbas densas.
+- Simulacion de estetica de fotografia movil: selfies en angulo alto, luz natural dura, sombras marcadas y fondos tropicales.
+- Escenarios contextuales: playas, follaje tropical, entornos rurales con maquinaria agricola y retratos en exteriores.
+- Control mediante prompts descriptivos largos en ingles; admite descripcion de vestuario, iluminacion y composicion.
+- Compatible con el pipeline text-to-image de diffusers junto al modelo base Z-Image-Turbo.
+- No se documenta soporte de tool calling, agentes, vision, audio ni modo de razonamiento (no aplica a un modelo de imagen).
 
 ## Casos de uso
-
-- Generacion de casting visual sintetico: crear retratos consistentes de hombres brasilenos de distintas edades y complexiones para maquetas de producto, storyboards o pruebas de concepto, usando `BRZMLRELSM` mas una descripcion de rasgos y vestuario.
-- Publicidad dirigida al mercado brasileno y latinoamericano: producir imagenes de estilo "real", no de estudio, para campanas en redes sociales que buscan autenticidad y no una estetica editorial.
-- Contenido editorial y reportajes simulados: ilustrar articulos sobre turismo, vida costera o agricultura en Brasil con imagenes de apariencia documental.
-- Prototipado de moda y merchandising: validar visualmente prendas, gorras y camisetas con texto impreso sobre un modelo humano antes de producir muestras fisicas.
-- Bases de datos sinteticas para vision por computador: generar variaciones controladas de rostros y escenas para aumentar datasets de deteccion de personas o segmentacion, con la cautela de sesgo que implica un unico dominio estetico.
-- Previsualizacion de localizaciones: explorar como queda un retrato con luz de mediodia en playa, campo o selva antes de organizar un rodaje real.
-- Ilustracion de personajes para narrativa o videojuegos con ambientacion brasilena, manteniendo coherencia de estilo entre imagenes mediante la misma palabra disparadora y prompts base.
+- Generacion de avatares y retratos para aplicaciones de contenido regional: la LoRA produce rostros masculinos brasilenos coherentes con fenotipos locales, util para plataformas que necesitan representacion diversa en America Latina.
+- Creacion de material publicitario con estetica de fotografia espontanea: marcas que buscan imagenes tipo selfie o candid con luz natural dura pueden generar escenas realistas sin sesion fotografica.
+- Ilustracion de contenidos editoriales sobre Brasil: articulos, blogs y redes sociales que requieran imagenes de hombres brasilenos en contextos de playa, campo o ciudad.
+- Prototipado rapido en estudios de diseno: generacion de referencias visuales para casting, vestuario y localizaciones antes de una produccion real.
+- Generacion de datasets sinteticos controlados: creacion de rostros con atributos especificos (barba, tono de piel, edad) para entrenar o evaluar otros sistemas de vision.
+- Aplicaciones de entretenimiento y personalizacion: generacion de retratos personalizados con estetica brasilena para apps de ocio o comunidades creativas.
 
 ## Benchmarks y rendimiento
-
-No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye metricas cuantitativas (FID, CLIP score, preferencia humana) ni comparaciones medidas frente a otros adaptadores o al modelo base. La busqueda web realizada no devolvio resultados relevantes sobre este modelo.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
-
-- El adaptador ocupa 0,2 GB, por lo que su huella en VRAM es marginal; el requisito real lo determina el modelo base `Tongyi-MAI/Z-Image-Turbo`, cuyas necesidades de VRAM no se detallan en la informacion proporcionada.
-- VRAM estimada para inferencia: no disponible.
-- GPU recomendadas: no disponible; depende enteramente del modelo base.
-- Viabilidad en GPU de consumo: no se puede confirmar sin los requisitos del modelo base.
-- Despliegue: la libreria declarada es `diffusers`, cargando el LoRA sobre el base (por ejemplo, con la API de adaptadores LoRA de diffusers). El soporte en otros runtimes (ComfyUI, vLLM, TGI, llama.cpp) no esta confirmado en la informacion disponible; llama.cpp y TGI no son aplicables a un modelo de difusion de este tipo.
-- Latencia y throughput: no disponibles.
+- VRAM estimada: no disponible de forma especifica; depende del modelo base Z-Image-Turbo y del pipeline de difusion empleado. La LoRA en si ocupa 0.2 GB en disco.
+- GPU recomendadas: no disponible. Al ser un modelo de difusion turbo, se espera que requiera una GPU con memoria suficiente para el modelo base completo, pero no se documentan cifras.
+- Compatibilidad con GPU de consumo: no disponible; depende del modelo base y de la cuantizacion aplicada.
+- Opciones de despliegue: libreria diffusers (Python); no se documentan integraciones con vLLM, llama.cpp, Ollama ni TGI (no aplicables a difusion en este formato).
+- Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
-
-| Modelo | Tipo | Parametros | Resolucion / contexto | Licencia | Disponibilidad |
+| Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `olob0/z-image-turbo-brazilian-male-realism-lora-v2` | LoRA sobre modelo de difusion | No disponible (repo de 0,2 GB) | No disponible | CC BY 4.0 | Publico en Hugging Face, 130 descargas |
-| `Tongyi-MAI/Z-Image-Turbo` (modelo base) | Modelo de difusion texto a imagen | No disponible en la informacion proporcionada | No disponible | No disponible en la informacion proporcionada (consultar la model card del base) | Publico en Hugging Face |
-| Otros LoRA de retrato fotorealista | Adaptadores LoRA | No disponible | No disponible | No disponible | No se han identificado alternativas comparables en la informacion disponible |
+| z-image-turbo-brazilian-male-realism-lora-v2 | LoRA sobre difusion | no disponible | no aplica | cc-by-4.0 | Hugging Face, 335 descargas |
+| Modelos LoRA de retrato regional (genericos) | LoRA sobre difusion | no disponible | no aplica | variable | no disponible |
+| Modelo base Tongyi-MAI/Z-Image-Turbo | difusion text-to-image | no disponible | no aplica | no disponible | Hugging Face |
+
+No se dispone de datos cuantitativos de rendimiento ni de alternativas directamente comparables con metricas publicadas en la informacion proporcionada.
 
 ## Limitaciones y advertencias
-
-- Requiere la palabra disparadora `BRZMLRELSM`; sin ella el adaptador puede no activarse o hacerlo de forma debil.
-- Sesgo de dominio claro: entrenado para hombres brasilenos en escenarios tropicales. Es previsible un rendimiento degradado con mujeres, ninos, personas de otras regiones o escenarios no representados.
-- Riesgo de alucinacion visual: anatomia de manos y dedos, simetria facial, coherencia de extremidades y renderizado de texto en prendas o carteles pueden fallar, especialmente en encuadres complejos.
-- El texto impreso en ropa o logos puede aparecer deformado o con faltas de ortografia.
-- La model card esta redactada integramente en ingles; los prompts de ejemplo tambien, y no se documenta rendimiento con prompts en portugues o castellano.
-- Licencia CC BY 4.0: permite uso comercial con atribucion obligatoria al autor y al modelo; conviene revisar tambien la licencia del modelo base `Tongyi-MAI/Z-Image-Turbo`, que no se detalla en la informacion proporcionada y que puede imponer condiciones adicionales al ser un modelo derivado.
-- Riesgo de generar rostros que recuerden a personas reales; en produccion conviene aplicar filtros de similitud y declarar el contenido como generado por IA.
-- No hay documentacion sobre el dataset de entrenamiento, por lo que no se puede evaluar si hubo consentimiento de las personas retratadas ni que sesgos demograficos contiene.
-- Al ser un adaptador, cualquier cambio en el modelo base (version, cuantizacion) puede alterar los resultados; conviene fijar la revision exacta del base.
-- Sin metricas publicadas, la evaluacion de calidad es subjetiva y depende de la inspeccion de las muestras de la model card.
+- Sesgos: la LoRA esta especializada en un fenotipo masculino brasileno concreto; puede reproducir estereotipos o reducir la diversidad dentro de esa categoria.
+- Riesgo de alucinacion visual: como todo modelo generativo, puede producir anatomias incorrectas, manos deformes o incoherencias en escenas complejas.
+- Idioma: los prompts de ejemplo estan en ingles; no se documenta soporte de prompts en portugues o castellano.
+- Contexto: no aplica ventana de contexto de texto; la calidad depende de la longitud y precision del prompt.
+- Licencia cc-by-4.0: permite uso comercial con atribucion, pero conviene verificar las condiciones del modelo base Z-Image-Turbo, que pueden imponer restricciones adicionales.
+- Documentacion escasa: no hay informacion sobre datos de entrenamiento, hiperparametros ni evaluaciones, lo que dificulta valorar su robustez en produccion.
+- Uso responsable: la generacion de rostros realistas de personas plantea riesgos de suplantacion o desinformacion; debe acompanarse de medidas de trazabilidad y consentimiento.
 
 ## Enlaces
-
 - Modelo en Hugging Face: https://huggingface.co/olob0/z-image-turbo-brazilian-male-realism-lora-v2
 - Modelo base: https://huggingface.co/Tongyi-MAI/Z-Image-Turbo
-- Resultados de la busqueda web: no se han encontrado enlaces relevantes sobre este modelo (papers, blogs, repos o demos) en la informacion disponible.
+- Libreria diffusers: https://github.com/huggingface/diffusers
+- Licencia CC BY 4.0: https://creativecommons.org/licenses/by/4.0/

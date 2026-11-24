@@ -2,90 +2,93 @@
 
 ## Resumen
 
-Llama-3.1-70B Topo-Governed es una release en formato GGUF del modelo base meta-llama/Llama-3.1-70B, publicada por el autor frankmorales2020 bajo la etiqueta de Sovereign Machine Laboratory (SOMALA). El modelo parte de los pesos oficiales de Llama 3.1 70B y los reempaqueta mediante cuantizacion Q4_K_M con llama.cpp, anadiendo un marco de "gobernanza" denominado Topological Continual Backpropagation (Topo-CBP) y Arithmetic Spectral Theory (AST), segun la model card del autor.
+Llama-3.1-70B Topo-Governed es una cuantizacion GGUF del modelo base meta-llama/Llama-3.1-70B, publicada por el autor frankmorales2020 bajo la denominacion de Sovereign Machine Laboratory (SOMALA). El modelo se presenta como una version "gobernada" del transformer original de Meta, a la que se asocia un marco teorico propio denominado Topological Continual Backpropagation (Topo-CBP) y Arithmetic Spectral Theory (AST), orientado a inferencia cognitiva determinista y a dominios de seguridad critica.
 
-La arquitectura subyacente es la del transformer de Llama 3.1 70B: 80 capas con Grouped-Query Attention y una ventana de contexto declarada de 131.072 tokens. El autor indica que la ventana operativa probada es mas reducida, entre 2.048 y 8.192 tokens. El artefacto cuantizado ocupa 39,60 GB (42,5 GB en disco) frente a los aproximadamente 141,1 GB de los pesos en BFloat16, lo que supone una reduccion de mas del 69 % del espacio.
+Tecnicamente, el artefacto es un transformer Llama-3.1 de 70.553.706.560 parametros (80 capas, Grouped-Query Attention) cuantizado a Q4_K_M con llama.cpp, con un peso medio de 4,82 bits por peso (BPW) y un tamano de 39,60 GB en disco (42,5 GB en el repositorio). La ventana de contexto nominal del modelo base es de 131.072 tokens, aunque el autor indica una ventana operativa probada de 2.048 a 8.192 tokens.
 
-Su relevancia practica es acotada: se trata de una cuantizacion de un modelo ya existente, no de un modelo nuevo entrenado desde cero. Resulta de interes para quien quiera ejecutar un Llama 3.1 70B en CPU o en estaciones de trabajo con memoria abundante mediante llama.cpp, Ollama o llama-server con API compatible con OpenAI. No se han publicado resultados de benchmarks propios ni detalles verificables del proceso de gobernanza Topo-CBP mas alla de lo que declara el autor.
+Su relevancia practica es limitada pero concreta: permite ejecutar un modelo de 70B en CPU de gama alta o en estaciones de trabajo con memoria abundante mediante llama.cpp, Ollama o llama-server, sin necesidad de GPUs de datacenter. La model card no documenta un proceso de entrenamiento adicional verificable sobre el modelo base, ni resultados de benchmarks, por lo que debe tratarse como una distribucion cuantizada con envoltorio conceptual propio mas que como un modelo nuevo.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer (Llama 3.1), 80 capas, Grouped-Query Attention |
-| Parametros totales | 70.553.706.560 (70,55 B) |
+| Arquitectura | Transformer Llama-3.1 (80 capas, Grouped-Query Attention) |
+| Parametros totales | 70.553.706.560 |
 | Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | 131.072 tokens declarados; ventana operativa probada 2.048-8.192 tokens |
-| Tipos de cuantizacion | Q4_K_M (4,82 BPW de media, mezcla 4/5/6 bits); normativas en F32 |
-| Idiomas soportados | en (segun model card) |
-| Licencia | llama3.1 (Llama 3.1 Community License) |
-| Formato de pesos | GGUF (unico artefacto publicado) |
+| Longitud de contexto | 131.072 tokens nominales; ventana operativa probada 2.048-8.192 tokens |
+| Tipos de cuantizacion | Q4_K_M (4,82 BPW; mezcla Q4_K / Q5_K / Q6_K, normalizaciones en F32) |
+| Idiomas soportados | en (ingles) |
+| Licencia | llama3.1 |
+| Formato de pesos | GGUF (llama.cpp); repo de 42,5 GB, artefacto de 39,60 GB |
 
 ## Arquitectura y entrenamiento
 
-El modelo es una cuantizacion del checkpoint oficial meta-llama/Llama-3.1-70B, por lo que hereda su arquitectura: transformer decoder-only de 80 bloques con atencion de consultas agrupadas (GQA), normalizacion RMSNorm y capas feed-forward con activacion SwiGLU. No se ha realizado un reentrenamiento desde cero; el autor describe un proceso de "gobernanza topologica" (Topo-CBP) y una capa teorica denominada Arithmetic Spectral Theory (AST) aplicada sobre los pesos, pero la model card no detalla el numero de tokens, la composicion del dataset ni si hubo fases de RLHF o DPO adicionales. Los datos de entrenamiento originales corresponden a los de Llama 3.1, que Meta no desglosa con precision en su model card publica.
+El modelo es un transformer decoder-only de la familia Llama-3.1, con 80 bloques, Grouped-Query Attention y un mapa de pesos original en BFloat16 de aproximadamente 141,1 GB. La cuantizacion Q4_K_M distribuye la precision de forma no uniforme: `token_embd.weight` y las proyecciones de atencion (`attn_q`, `attn_k`, `attn_output`) y de feed-forward (`ffn_gate`, `ffn_up`) en Q4_K; `output.weight` y parte de `attn_v` y `ffn_down` en Q5_K o Q6_K; y las capas de normalizacion (`output_norm`, `attn_norm`) en F32. Esta asignacion busca preservar el generador de logits y las proyecciones de valor a costa de comprimir el resto.
 
-La innovacion tecnica declarada es el esquema de cuantizacion mixta: los tensores de embedding de vocabulario y las proyecciones de atencion se mantienen en Q4_K, las proyecciones de valor y las down-projections del feed-forward suben a Q5_K o Q6_K, el generador de logits (output.weight) se preserva en Q6_K y todas las capas de normalizacion quedan en F32. Este reparto busca conservar la fidelidad semantica en los puntos mas sensibles del grafo. No se aportan metricas de perplejidad ni comparaciones cuantitativas frente al modelo en BF16 que respalden la afirmacion de preservacion semantica.
+No se documenta en la informacion disponible ningun entrenamiento adicional, ajuste fino, RLHF o DPO sobre el modelo base. El marco Topo-CBP/AST se describe en la model card como un "governance framework" conceptual, sin detallar hiperparametros, volumen de datos ni metodologia reproducible. Los cuadernos enlazados (TOPO_CBP_LLAMA2GGUF.ipynb y FIVE_AGENTIC_GGUF_TOPO_CBP.ipynb) contienen el procedimiento de conversion a GGUF y un ejemplo agentico, no una receta de entrenamiento verificada.
 
 ## Capacidades
 
-- Generacion de texto conversacional multi-turno, con soporte del formato de chat de Llama 3.1 (`<|start_header_id|>`, `<|eot_id|>`).
-- Razonamiento general y respuesta a preguntas sobre dominios tecnicos, incluido el ambito de sistemas de seguridad critica que el autor destaca.
-- Generacion de codigo y explicaciones tecnicas, heredadas del modelo base Llama 3.1 70B.
-- Capacidad multilingue limitada en la practica: la model card declara unicamente ingles (`en`), aunque el modelo base soporta varios idiomas.
-- Despliegue como servidor con API compatible con OpenAI mediante `llama-server`, lo que habilita integracion con clientes que usan el esquema `/v1/chat/completions`.
-- Ejecucion en CPU pura (`n_gpu_layers=0`) o con offload parcial o total a GPU.
-- No se documenta soporte explicito de tool calling, function calling, agentes multi-paso ni modos de razonamiento extendido (thinking) en la informacion disponible.
+- Generacion de texto conversacional en ingles con formato de chat Llama-3.1 (`<|start_header_id|>`, `<|eot_id|>`).
+- Razonamiento general y respuesta a instrucciones heredados del modelo base Llama-3.1-70B.
+- Generacion de codigo y explicaciones tecnicas, segun las capacidades del modelo base.
+- Servido como API compatible con OpenAI mediante `llama-server` (`/v1/chat/completions`).
+- Ejecucion en CPU pura (`n_gpu_layers=0`) o con offload parcial/total a GPU.
+- Integracion con `llama-cpp-python`, `llama-cli`, `llama-server` y, por formato GGUF, con Ollama.
+- Capacidades agenticas y de tool calling: no documentadas de forma especifica en la informacion disponible; dependen del modelo base y del prompt, no de un ajuste propio.
+- Capacidades multilingues: limitadas al ingles segun el campo `language` de la model card.
+- Modo thinking, vision o audio: no disponibles.
 
 ## Casos de uso
 
-- Inferencia en CPU para entornos sin GPU: el artefacto Q4_K_M de 39,60 GB cabe en estaciones de trabajo con 48-64 GB de RAM y se ejecuta con `llama.cpp` usando `n_gpu_layers=0`, lo que permite desplegar un 70B en hardware commodity.
-- Servicio local compatible con OpenAI: mediante `llama-server` se expone un endpoint `/v1/chat/completions` que permite sustituir llamadas a la API de OpenAI por inferencia local en herramientas ya existentes, sin reescribir el cliente.
-- Asistencia tecnica en dominios de seguridad critica: el autor orienta el modelo a explicar invariantes deterministas, verificacion formal de maquinas de estado y control de vuelo autonomo; encaja en prototipado de asistentes internos para ingenieria de sistemas.
-- Generacion y revision de documentacion tecnica en ingles: con contexto operativo de 2.048-8.192 tokens puede procesar especificaciones, articulos o informes medianos y producir resumenes o borradores.
-- Offload parcial a GPU en workstations con 24 GB de VRAM: cargando parte de las capas en una RTX 4090 y el resto en RAM del sistema se obtiene una latencia mejor que en CPU pura, manteniendo el modelo completo en memoria.
-- Despliegue en servidores de inferencia conmemoria alta: en maquinas con 41 GB o mas de VRAM (A100 80 GB, H100, o dos GPU de 24 GB) se puede hacer offload total con `n_gpu_layers` alto para obtener el maximo throughput.
-- Experimentacion educativa sobre cuantizacion: el desglose tensor a tensor de la model card sirve como caso de estudio de como repartir precisiones en un transformer grande.
+- Inferencia local en CPU de gama alta: desplegar un 70B cuantizado en servidores sin GPU usando `llama.cpp` con `n_threads` ajustado a los nucleos fisicos, aprovechando el artefacto de 39,60 GB y `use_mmap=False` para evitar paginacion.
+- Servicio interno compatible con OpenAI: levantar `llama-server` en el puerto 8080 y consumirlo con el cliente oficial de OpenAI, lo que permite sustituir dependencias de API externas en prototipos y herramientas internas.
+- Asistencia tecnica en dominios de seguridad critica: usar el system prompt orientado a ingenieria de sistemas deterministas para generar documentacion, revisiones de invariantes y explicaciones de verificacion formal, con temperatura baja (0,2) para reducir variabilidad.
+- Generacion de codigo en pipelines locales: integrar `llama-cpp-python` en scripts de CI o herramientas de desarrollo para autocompletado, explicacion de funciones y generacion de tests, sin salida a Internet.
+- Procesamiento por lotes en estaciones de trabajo: ejecutar resumenes y extraccion de informacion sobre documentos en ingles con ventanas de 2.048-8.192 tokens, el rango que el autor declara probado.
+- Experimentacion educativa con cuantizacion: usar los cuadernos enlazados para estudiar el mapeo de precision por grupo de tensores (Q4_K/Q5_K/Q6_K/F32) y su efecto en la calidad de salida.
+- Base para prototipos agenticos: emplear el cuaderno FIVE_AGENTIC_GGUF_TOPO_CBP como punto de partida para orquestar varios agentes sobre el mismo endpoint local.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye MMLU, HumanEval, GSM8K ni metricas de perplejidad comparativas frente al modelo base en BF16 o frente a otras cuantizaciones.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye metricas de MMLU, HumanEval, GSM8K ni comparaciones cuantitativas con otras cuantizaciones del modelo base.
 
 ## Requisitos de hardware
 
-- VRAM para offload total: aproximadamente 41 GB segun la propia model card; en la practica, 42,5 GB en disco mas overhead de contexto.
-- Memoria RAM para ejecucion en CPU: 42,5 GB minimo para el fichero GGUF, recomendable 64 GB para dejar margen al contexto y al sistema.
-- GPU recomendadas para offload total: A100 80 GB, H100 80 GB, o configuraciones multi-GPU que sumen 48 GB o mas (por ejemplo, dos RTX 4090 o dos RTX 3090).
-- GPU consumer: una RTX 4090 de 24 GB no permite cargar el modelo completo; es viable el offload parcial combinado con RAM del sistema.
-- Opciones de despliegue: `llama.cpp` (CLI `llama-cli`), `llama-cpp-python`, `llama-server` con API compatible con OpenAI, y Ollama por compatibilidad con GGUF (etiqueta presente en el repo).
-- Latencia y throughput: no disponibles. La model card no aporta mediciones de tokens por segundo ni latencias de primer token.
+- VRAM para offload total en GPU: aproximadamente 41 GB segun la model card (artefacto de 39,60 GB mas overhead de contexto y cache KV).
+- Memoria RAM para ejecucion en CPU: al menos 42,5 GB libres; se recomienda 64 GB o mas para margen de contexto y sistema operativo.
+- GPU recomendadas para offload total: A100 80 GB, H100 80 GB, o configuraciones multi-GPU que sumen 48 GB o mas (por ejemplo, 2x RTX 4090 de 24 GB con offload parcial).
+- GPU de consumo: una RTX 4090 de 24 GB no permite offload total; es viable con offload parcial de capas, aceptando latencia mayor. GPUs de 8-16 GB solo admiten offload marginal.
+- Opciones de despliegue: `llama.cpp` (`llama-cli`, `llama-server`), `llama-cpp-python`, Ollama por compatibilidad GGUF.
+- Latencia y throughput: no disponibles en la informacion proporcionada. Dependen fuertemente del numero de hilos, del ancho de banda de memoria y del grado de offload.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Notas |
 |---|---|---|---|---|---|
-| Llama-3.1-70B Topo-Governed (este) | 70,55 B | 131.072 declarados (probado 2.048-8.192) | GGUF Q4_K_M | llama3.1 | Cuantizacion de Llama 3.1 70B con marco Topo-CBP/AST declarado |
-| meta-llama/Llama-3.1-70B (original) | 70,55 B | 131.072 | safetensors BF16 | llama3.1 | Modelo base oficial; requiere ~141 GB en BF16 |
-| Llama-3.1-70B-Instruct GGUF (cuantizaciones comunitarias Q4_K_M) | 70,55 B | 131.072 | GGUF | llama3.1 | Alternativa directa sin capa de gobernanza declarada; mismo esquema de cuantizacion estandar |
-| Llama-3.3-70B-Instruct | 70,55 B | 131.072 | safetensors, GGUF | llama3.3 | Generacion posterior de Meta con mejoras de rendimiento declaradas por el fabricante |
+| Llama-3.1-70B Topo-Governed (este) | 70,55B | 131.072 nominales / 2.048-8.192 probados | GGUF Q4_K_M | llama3.1 | Cuantizacion de comunidad con envoltorio Topo-CBP/AST |
+| meta-llama/Llama-3.1-70B (base) | 70,55B | 131.072 | Safetensors BF16 | llama3.1 | Referencia oficial; requiere ~141 GB en BF16 |
+| Cuantizaciones GGUF comunitarias de Llama-3.1-70B (p. ej. Q4_K_M estandar) | 70,55B | 131.072 | GGUF Q4_K_M | llama3.1 | Mismo esquema de cuantizacion sin marco adicional declarado |
+| Llama-3.1-8B (alternativa de menor tamano) | 8,03B | 131.072 | Safetensors / GGUF | llama3.1 | Cabe en GPU de consumo de 16-24 GB; menor calidad en tareas complejas |
 
-No se dispone de datos de benchmarks que permitan comparar el rendimiento real de esta cuantizacion frente a las alternativas.
+No se dispone de datos de rendimiento comparado en la informacion proporcionada; la comparativa se limita a parametros, contexto, formato y licencia.
 
 ## Limitaciones y advertencias
 
-- La model card declara solo ingles como idioma soportado; el rendimiento en castellano no esta documentado y puede degradarse respecto al modelo base.
-- La ventana de contexto probada (2.048-8.192 tokens) es muy inferior a los 131.072 tokens teoricos; usar contextos largos en produccion sin validacion previa es arriesgado.
-- No hay benchmarks publicados que respalden las afirmaciones sobre preservacion semantica del esquema de cuantizacion mixta ni sobre el marco Topo-CBP/AST.
-- La licencia llama3.1 impone restricciones de uso comercial (politica de uso aceptable de Meta, obligaciones de atribucion y limite de 700 millones de usuarios mensuales para licenciatarios) que deben revisarse antes de un despliegue en producto.
-- Riesgo de alucinacion inherente a los modelos Llama 3.1 70B, sin mitigaciones adicionales documentadas por el autor.
-- Sesgos heredados del corpus de entrenamiento original de Meta, no evaluados en esta release.
-- El repositorio tiene un volumen de descargas bajo (153) y cero likes, sin senales de validacion por parte de la comunidad; conviene tratar el artefacto con cautela y verificar su integridad antes de usarlo en produccion.
-- El autor no publica pesos en safetensors ni en otras precisiones; solo existe el GGUF Q4_K_M, lo que limita la comparacion con el modelo base.
+- No se documenta ningun entrenamiento o ajuste adicional verificable; el prefijo "Topo-Governed" no implica mejoras medibles frente al modelo base.
+- Ausencia total de benchmarks publicados: no hay evidencia cuantitativa de que la cuantizacion preserve la calidad del modelo original mas alla de lo esperable en Q4_K_M.
+- Ventana operativa declarada de solo 2.048-8.192 tokens frente a los 131.072 nominales; usar contextos largos puede degradar la coherencia.
+- Solo ingles segun la model card; el rendimiento en castellano no esta garantizado ni evaluado.
+- Riesgo de alucinacion inherente a los modelos Llama-3.1, agravado por la cuantizacion a 4 bits en capas de atencion y feed-forward.
+- La licencia llama3.1 impone restricciones de uso comercial y obligaciones de atribucion; debe revisarse la politica de Meta antes de produccion.
+- El marco Topo-CBP/AST se presenta con terminologia no estandar y sin publicacion revisada por pares en la informacion disponible; tratarlo como propuesta conceptual, no como garantia de determinismo.
+- El autor indica `use_mmap=False` en los ejemplos, lo que incrementa el consumo de RAM al cargar el modelo completo en memoria.
+- Modelo con 0 likes y 359 descargas en el momento de la consulta: ecosistema minimo, sin validacion independiente de la comunidad.
 
 ## Enlaces
 
 - Hugging Face: https://huggingface.co/frankmorales2020/llama-3.1-70b-topo-governed-gguf
-- Arbol de ficheros: https://huggingface.co/frankmorales2020/llama-3.1-70b-topo-governed-gguf/tree/main
-- Codigo de cuantizacion (notebook): https://github.com/frank-morales2020/AST/blob/main/TOPO_CBP_LLAMA2GGUF.ipynb
-- Codigo de agente (notebook): https://github.com/frank-morales2020/AST/blob/main/FIVE_AGENTIC_GGUF_TOPO_CBP.ipynb
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-70B
+- Codigo de conversion a GGUF: https://github.com/frank-morales2020/AST/blob/main/TOPO_CBP_LLAMA2GGUF.ipynb
+- Codigo agentico: https://github.com/frank-morales2020/AST/blob/main/FIVE_AGENTIC_GGUF_TOPO_CBP.ipynb
+- Articulo (Medium): https://medium.com/ai-simplified-in-plain-english/the-architecture-of-determinism-governing-the-multi-agent-clinical-pipeline-5d83a08c36a7

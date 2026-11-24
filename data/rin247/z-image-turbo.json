@@ -5,7 +5,7 @@
   "author": "Rin247",
   "url": "https://huggingface.co/Rin247/Z-Image-Turbo",
   "created_at": "2026-10-23T10:33:54.000Z",
-  "updated_at": "2026-11-02T00:00:28.000Z",
+  "updated_at": "2026-11-23T20:16:51.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-to-image",
@@ -19,6 +19,8 @@
     "weight-only",
     "image",
     "text-to-image",
+    "base_model:Tongyi-MAI/Z-Image-Turbo",
+    "base_model:quantized:Tongyi-MAI/Z-Image-Turbo",
     "diffusers:ZImagePipeline",
     "region:us"
   ],
@@ -30,7 +32,7 @@
   "storage_bytes": 34467503249,
   "storage_human": "34.5 GB",
   "context_length": null,
-  "base_model": null,
+  "base_model": "Tongyi-MAI/Z-Image-Turbo",
   "formats": [
     "diffusers",
     "safetensors"

@@ -5,7 +5,7 @@
   "author": "kingjones777",
   "url": "https://huggingface.co/kingjones777/Ornith-1.5-35B-A3B-Abliterated-ROCmFP4-COHERENT-GGUF",
   "created_at": "2026-08-30T15:12:41.000Z",
-  "updated_at": "2026-08-30T20:47:05.000Z",
+  "updated_at": "2026-11-23T14:02:42.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -31,7 +31,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 66,
+  "downloads_30d": 115,
   "trending_score": 0,
   "parameters": 34660610688,
   "parameters_human": "34.66B",

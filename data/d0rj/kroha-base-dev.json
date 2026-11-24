@@ -1,0 +1,377 @@
+{
+  "schema": 2,
+  "id": "d0rj/Kroha-base-dev",
+  "slug": "d0rj-kroha-base-dev",
+  "author": "d0rj",
+  "url": "https://huggingface.co/d0rj/Kroha-base-dev",
+  "created_at": "2026-11-24T07:55:05.000Z",
+  "updated_at": "2026-11-24T07:59:31.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "tensorboard",
+    "safetensors",
+    "kroha_routed_norm",
+    "text-generation",
+    "kroha",
+    "looped",
+    "custom_code",
+    "training-checkpoint",
+    "multi-token-prediction",
+    "conversational",
+    "dataset:HPLT/HPLT3.0",
+    "dataset:HuggingFaceBio/FineDNA",
+    "dataset:HuggingFaceFW/finepdfs-edu",
+    "dataset:HuggingFaceFW/fineweb-2",
+    "dataset:HuggingFaceFW/fineweb-edu",
+    "dataset:HuggingFaceTB/finemath",
+    "dataset:OneAdder/hill-mari-book-corpus",
+    "dataset:OneAdder/mari-pdf-corpus",
+    "dataset:OneAdder/meadow-mari-marnii-corpus",
+    "dataset:RafaelUI/ru_science",
+    "dataset:adeshkin/khakas-monolingual-corpus",
+    "dataset:alexantonov/chuvash_mono",
+    "dataset:allenai/dolma3_dolmino_mix-100B-1025",
+    "dataset:codeparrot/codeparrot-clean-train",
+    "dataset:d0rj/SNeG-data-1.0",
+    "dataset:deepvk/cultura_ru_edu",
+    "dataset:epfml/FineWeb2-HQ",
+    "dataset:mlfoundations/dclm-baseline-1.0",
+    "dataset:openbmb/Ultra-FineWeb-L3",
+    "dataset:openbmb/UltraData-Code",
+    "dataset:openbmb/UltraData-Math",
+    "dataset:wikimedia/wikipedia",
+    "base_model:d0rj/Kroha-base",
+    "base_model:finetune:d0rj/Kroha-base",
+    "license:cc-by-4.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 71685904,
+  "parameters_human": "71.7M",
+  "storage_bytes": 2404022073,
+  "storage_human": "2.4 GB",
+  "context_length": null,
+  "base_model": "d0rj/Kroha-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "arc_challenge (0-shot)",
+      "dataset": "arc_challenge",
+      "metric": "arc_challenge: acc_norm,none; 0-shot (unscaled)",
+      "value": 0.22610921501706485
+    },
+    {
+      "task": "arc_easy (0-shot)",
+      "dataset": "arc_easy",
+      "metric": "arc_easy: acc_norm,none; 0-shot (unscaled)",
+      "value": 0.36826599326599324
+    },
+    {
+      "task": "arithmark3 (0-shot)",
+      "dataset": "arithmark3",
+      "metric": "arithmark3: acc_norm,none; 0-shot (unscaled)",
+      "value": 0.338
+    },
+    {
+      "task": "balanced_copa (0-shot)",
+      "dataset": "balanced_copa",
+      "metric": "balanced_copa: acc,none; 0-shot (unscaled)",
+      "value": 0.527
+    },
+    {
+      "task": "blimp (0-shot)",
+      "dataset": "blimp",
+      "metric": "blimp: acc,none; 0-shot (unscaled)",
+      "value": 0.7441641791044776
+    },
+    {
+      "task": "boolq (0-shot)",
+      "dataset": "boolq",
+      "metric": "boolq: acc,none; 0-shot (unscaled)",
+      "value": 0.6055045871559633
+    },
+    {
+      "task": "commonsense_qa (0-shot)",
+      "dataset": "commonsense_qa",
+      "metric": "commonsense_qa: acc,none; 0-shot (unscaled)",
+      "value": 0.20638820638820637
+    },
+    {
+      "task": "hellaswag (0-shot)",
+      "dataset": "hellaswag",
+      "metric": "hellaswag: acc_norm,none; 0-shot (unscaled)",
+      "value": 0.2944632543318064
+    },
+    {
+      "task": "lambada_openai (0-shot)",
+      "dataset": "lambada_openai",
+      "metric": "lambada_openai: acc,none; 0-shot (unscaled)",
+      "value": 0.25926644673006016
+    },
+    {
+      "task": "mmlu_continuation (0-shot)",
+      "dataset": "mmlu_continuation",
+      "metric": "mmlu_continuation: acc,none; 0-shot (unscaled)",
+      "value": 0.2466885059108389
+    },
+    {
+      "task": "openbookqa (0-shot)",
+      "dataset": "openbookqa",
+      "metric": "openbookqa: acc_norm,none; 0-shot (unscaled)",
+      "value": 0.26
+    },
+    {
+      "task": "piqa (0-shot)",
+      "dataset": "piqa",
+      "metric": "piqa: acc_norm,none; 0-shot (unscaled)",
+      "value": 0.5554951033732318
+    },
+    {
+      "task": "sciq (0-shot)",
+      "dataset": "sciq",
+      "metric": "sciq: acc_norm,none; 0-shot (unscaled)",
+      "value": 0.687
+    },
+    {
+      "task": "truthfulqa_mc2 (0-shot)",
+      "dataset": "truthfulqa_mc2",
+      "metric": "truthfulqa_mc2: acc,none; 0-shot (unscaled)",
+      "value": 0.4309439862757557
+    },
+    {
+      "task": "winogrande (0-shot)",
+      "dataset": "winogrande",
+      "metric": "winogrande: acc,none; 0-shot (unscaled)",
+      "value": 0.5074980268350434
+    },
+    {
+      "task": "bananamind_base (0-shot)",
+      "dataset": "bananamind_base",
+      "metric": "bananamind_base: raw_accuracy,none; 0-shot (unscaled)",
+      "value": 0.52
+    },
+    {
+      "task": "social_iqa (0-shot)",
+      "dataset": "social_iqa",
+      "metric": "social_iqa: acc,none; 0-shot (unscaled)",
+      "value": 0.3679631525076766
+    },
+    {
+      "task": "race (0-shot)",
+      "dataset": "race",
+      "metric": "race: acc,none; 0-shot (unscaled)",
+      "value": 0.26220095693779905
+    },
+    {
+      "task": "mmlu (5-shot)",
+      "dataset": "mmlu",
+      "metric": "mmlu: acc,none; 5-shot (unscaled)",
+      "value": 0.26264064948013105
+    },
+    {
+      "task": "triviaqa (0-shot)",
+      "dataset": "triviaqa",
+      "metric": "triviaqa: exact_match,remove_whitespace; 0-shot (unscaled)",
+      "value": 0.0035109228711547036
+    },
+    {
+      "task": "gsm8k (5-shot)",
+      "dataset": "gsm8k",
+      "metric": "gsm8k: exact_match,flexible-extract; 5-shot (unscaled)",
+      "value": 0.01819560272934041
+    },
+    {
+      "task": "hendrycks_math500 (0-shot)",
+      "dataset": "hendrycks_math500",
+      "metric": "hendrycks_math500: exact_match,none; 0-shot (unscaled)",
+      "value": 0.002
+    },
+    {
+      "task": "bbh (3-shot)",
+      "dataset": "bbh",
+      "metric": "bbh: exact_match,get-answer; 3-shot (unscaled)",
+      "value": 0.20488404238980187
+    },
+    {
+      "task": "humaneval (0-shot)",
+      "dataset": "humaneval",
+      "metric": "humaneval: pass@1,create_test; 0-shot (unscaled)",
+      "value": 0.036585365853658534
+    },
+    {
+      "task": "mbpp (3-shot)",
+      "dataset": "mbpp",
+      "metric": "mbpp: pass_at_1,none; 3-shot (unscaled)",
+      "value": 0
+    },
+    {
+      "task": "mbpp_plus (3-shot)",
+      "dataset": "mbpp_plus",
+      "metric": "mbpp_plus: pass_at_1,none; 3-shot (unscaled)",
+      "value": 0.0026455026455026454
+    },
+    {
+      "task": "mmlu_pro_mc0 (0-shot)",
+      "dataset": "mmlu_pro_mc0",
+      "metric": "mmlu_pro_mc0: acc,none; 0-shot (unscaled)",
+      "value": 0.11328125
+    },
+    {
+      "task": "global_mmlu_full_ru (5-shot)",
+      "dataset": "global_mmlu_full_ru",
+      "metric": "global_mmlu_full_ru: acc,none; 5-shot (unscaled)",
+      "value": 0.2647058823529412
+    },
+    {
+      "task": "mmlu_prox_ru_mc0 (0-shot)",
+      "dataset": "mmlu_prox_ru_mc0",
+      "metric": "mmlu_prox_ru_mc0: acc,none; 0-shot (unscaled)",
+      "value": 0.11318989710009354
+    },
+    {
+      "task": "mera_rummlu_mc0 (0-shot)",
+      "dataset": "mera_rummlu_mc0",
+      "metric": "mera_rummlu_mc0: acc,none; 0-shot (unscaled)",
+      "value": 0.23108763916642877
+    },
+    {
+      "task": "include_base_44_russian (0-shot)",
+      "dataset": "include_base_44_russian",
+      "metric": "include_base_44_russian: acc,none; 0-shot (unscaled)",
+      "value": 0.2807971014492754
+    },
+    {
+      "task": "rublimp_sum_ll (0-shot)",
+      "dataset": "rublimp_sum_ll",
+      "metric": "rublimp_sum_ll: acc,none; 0-shot (unscaled)",
+      "value": 0.9198888888888889
+    },
+    {
+      "task": "rucola_dev (0-shot)",
+      "dataset": "rucola_dev",
+      "metric": "rucola_dev: mcc,none; 0-shot (unscaled)",
+      "value": 0.002637654467725006
+    },
+    {
+      "task": "sberquad_dev (0-shot)",
+      "dataset": "sberquad_dev",
+      "metric": "sberquad_dev: f1,none; 0-shot (unscaled)",
+      "value": 0.07848110874929681
+    },
+    {
+      "task": "rsg_danetqa (0-shot)",
+      "dataset": "rsg_danetqa",
+      "metric": "rsg_danetqa: acc,none; 0-shot (unscaled)",
+      "value": 0.48964677222898906
+    },
+    {
+      "task": "rsg_parus (0-shot)",
+      "dataset": "rsg_parus",
+      "metric": "rsg_parus: acc,none; 0-shot (unscaled)",
+      "value": 0.64
+    },
+    {
+      "task": "rsg_rcb (0-shot)",
+      "dataset": "rsg_rcb",
+      "metric": "rsg_rcb: acc,none; 0-shot (unscaled)",
+      "value": 0.32272727272727275
+    },
+    {
+      "task": "rsg_russe (0-shot)",
+      "dataset": "rsg_russe",
+      "metric": "rsg_russe: acc,none; 0-shot (unscaled)",
+      "value": 0.3850676072898295
+    },
+    {
+      "task": "rsg_rwsd (0-shot)",
+      "dataset": "rsg_rwsd",
+      "metric": "rsg_rwsd: acc,none; 0-shot (unscaled)",
+      "value": 0.5147058823529411
+    },
+    {
+      "task": "rsg_terra (0-shot)",
+      "dataset": "rsg_terra",
+      "metric": "rsg_terra: acc,none; 0-shot (unscaled)",
+      "value": 0.48534201954397393
+    },
+    {
+      "task": "belebele_rus_Cyrl (0-shot)",
+      "dataset": "belebele_rus_Cyrl",
+      "metric": "belebele_rus_Cyrl: acc,none; 0-shot (unscaled)",
+      "value": 0.24888888888888888
+    },
+    {
+      "task": "xnli_ru (0-shot)",
+      "dataset": "xnli_ru",
+      "metric": "xnli_ru: acc,none; 0-shot (unscaled)",
+      "value": 0.39759036144578314
+    },
+    {
+      "task": "xquad_ru (0-shot)",
+      "dataset": "xquad_ru",
+      "metric": "xquad_ru: f1,none; 0-shot (unscaled)",
+      "value": 0.02652058354691999
+    },
+    {
+      "task": "xwinograd_ru (0-shot)",
+      "dataset": "xwinograd_ru",
+      "metric": "xwinograd_ru: acc,none; 0-shot (unscaled)",
+      "value": 0.546031746031746
+    },
+    {
+      "task": "xstorycloze_ru (0-shot)",
+      "dataset": "xstorycloze_ru",
+      "metric": "xstorycloze_ru: acc,none; 0-shot (unscaled)",
+      "value": 0.5208471211118465
+    },
+    {
+      "task": "mgsm_native_cot_ru (8-shot)",
+      "dataset": "mgsm_native_cot_ru",
+      "metric": "mgsm_native_cot_ru: exact_match,flexible-extract; 8-shot (unscaled)",
+      "value": 0.016
+    },
+    {
+      "task": "arc_ru (0-shot)",
+      "dataset": "arc_ru",
+      "metric": "arc_ru: acc_norm,none; 0-shot (unscaled)",
+      "value": 0.2446535500427716
+    },
+    {
+      "task": "hellaswag_ru (0-shot)",
+      "dataset": "hellaswag_ru",
+      "metric": "hellaswag_ru: acc_norm,none; 0-shot (unscaled)",
+      "value": 0.29227782571182054
+    },
+    {
+      "task": "truthfulqa_ru_mc2 (0-shot)",
+      "dataset": "truthfulqa_ru_mc2",
+      "metric": "truthfulqa_ru_mc2: acc,none; 0-shot (unscaled)",
+      "value": 0.4753698298393998
+    },
+    {
+      "task": "global_piqa_completions_rus_cyrl (0-shot)",
+      "dataset": "global_piqa_completions_rus_cyrl",
+      "metric": "global_piqa_completions_rus_cyrl: acc_norm,none; 0-shot (unscaled)",
+      "value": 0.64
+    }
+  ],
+  "sources": []
+}

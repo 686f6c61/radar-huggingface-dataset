@@ -67,18 +67,6 @@
       "dataset": "Golden answers (378 documented questions, Windows + Linux Python 3.10-3.14)",
       "metric": "identical on every platform",
       "value": 1
-    },
-    {
-      "task": "bayesian statistics question answering",
-      "dataset": "Capability search, 12998 held-out verified questions across all AI999X models",
-      "metric": "right capability first",
-      "value": 0.918
-    },
-    {
-      "task": "bayesian statistics question answering",
-      "dataset": "Capability search, 12998 held-out verified questions across all AI999X models",
-      "metric": "in the top five",
-      "value": 0.988
     }
   ],
   "sources": []

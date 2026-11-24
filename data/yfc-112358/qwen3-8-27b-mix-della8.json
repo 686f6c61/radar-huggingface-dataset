@@ -5,7 +5,7 @@
   "author": "YFC-112358",
   "url": "https://huggingface.co/YFC-112358/Qwen3.8-27B-Mix-DELLA8",
   "created_at": "2026-11-23T09:38:45.000Z",
-  "updated_at": "2026-11-23T10:48:55.000Z",
+  "updated_at": "2026-11-23T13:38:26.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -14,8 +14,8 @@
   "tags": [
     "safetensors",
     "qwen3_5",
-    "base_model:YFC-112358/Qwen3.8-27B-pi-AuxMix-v1",
-    "base_model:finetune:YFC-112358/Qwen3.8-27B-pi-AuxMix-v1",
+    "base_model:YFC-112358/Qwen3.8-27B-Mix",
+    "base_model:finetune:YFC-112358/Qwen3.8-27B-Mix",
     "region:us"
   ],
   "likes": 0,
@@ -26,7 +26,7 @@
   "storage_bytes": 55582996525,
   "storage_human": "55.6 GB",
   "context_length": null,
-  "base_model": "YFC-112358/Qwen3.8-27B-pi-AuxMix-v1",
+  "base_model": "YFC-112358/Qwen3.8-27B-Mix",
   "formats": [
     "safetensors"
   ],
@@ -36,8 +36,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "YFC-112358/Qwen3.8-27B-Mix-Final",
+  "renamed_at": "2026-11-24T06:16:29.342Z",
   "benchmarks": [],
   "sources": []
 }

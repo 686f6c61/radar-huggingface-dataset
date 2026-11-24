@@ -5,7 +5,7 @@
   "author": "henriquegalvao",
   "url": "https://huggingface.co/henriquegalvao/lumi-4b-embedding",
   "created_at": "2026-11-18T16:39:02.000Z",
-  "updated_at": "2026-11-23T01:47:02.000Z",
+  "updated_at": "2026-11-23T19:47:33.000Z",
   "license": "uso-nao-comercial",
   "license_family": "unknown",
   "pipeline_tag": "feature-extraction",
@@ -52,7 +52,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 22,
   "trending_score": 0,
   "parameters": 3562515040,
   "parameters_human": "3.56B",

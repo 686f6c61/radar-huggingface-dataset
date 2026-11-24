@@ -5,7 +5,7 @@
   "author": "ahmedihamdy",
   "url": "https://huggingface.co/ahmedihamdy/Ornith-1.5-35B-A3B-OptiQ-DFLASH2-4bit",
   "created_at": "2026-11-17T20:16:32.000Z",
-  "updated_at": "2026-11-17T20:26:35.000Z",
+  "updated_at": "2026-11-23T12:35:03.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -40,7 +40,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 61,
+  "downloads_30d": 71,
   "trending_score": 0,
   "parameters": 34660608768,
   "parameters_human": "34.66B",
@@ -58,8 +58,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "ahmedihamdy/Ornith-1.5-35B-A3B-OptiQ-4bit-vision-DFLASH2",
+  "renamed_at": "2026-11-24T06:35:32.442Z",
   "benchmarks": [],
   "sources": []
 }

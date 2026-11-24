@@ -1,0 +1,50 @@
+{
+  "schema": 2,
+  "id": "VittorioNevashedelo/fieldatlas-reader-qwen3-4b",
+  "slug": "vittorionevashedelo-fieldatlas-reader-qwen3-4b",
+  "author": "VittorioNevashedelo",
+  "url": "https://huggingface.co/VittorioNevashedelo/fieldatlas-reader-qwen3-4b",
+  "created_at": "2026-11-24T09:16:42.000Z",
+  "updated_at": "2026-11-24T09:16:49.000Z",
+  "license": "cc-by-sa-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "question-answering",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "qlora",
+    "question-answering",
+    "retrieval-augmented-generation",
+    "en",
+    "base_model:Qwen/Qwen3-4B-Instruct-2507",
+    "base_model:finetune:Qwen/Qwen3-4B-Instruct-2507",
+    "license:cc-by-sa-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "context_length": null,
+  "base_model": "Qwen/Qwen3-4B-Instruct-2507",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

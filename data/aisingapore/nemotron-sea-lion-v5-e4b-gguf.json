@@ -45,7 +45,7 @@
   "trending_score": 0,
   "parameters": 7518069290,
   "parameters_human": "7.52B",
-  "storage_bytes": 34637295924,
+  "storage_bytes": 34637087736,
   "storage_human": "34.6 GB",
   "context_length": 65536,
   "base_model": "aisingapore/Nemotron-SEA-LION-v5-E4B",

@@ -1,0 +1,67 @@
+{
+  "schema": 2,
+  "id": "Bhoidy/nyx-image-36m",
+  "slug": "bhoidy-nyx-image-36m",
+  "author": "Bhoidy",
+  "url": "https://huggingface.co/Bhoidy/nyx-image-36m",
+  "created_at": "2026-11-24T08:23:38.000Z",
+  "updated_at": "2026-11-24T08:23:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "text-to-image",
+    "pixel-art",
+    "rectified-flow",
+    "discrete-diffusion",
+    "diffusion",
+    "mdlm",
+    "transformer",
+    "onnx",
+    "safetensors",
+    "edge-ai",
+    "dataset:Angais/pixel-art-atlas-1.4m",
+    "dataset:azyg0s/pixelart-172k",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "Native 32x32 Pixel Art Generation",
+      "dataset": "azyg0s/pixelart-172k",
+      "metric": "Parameters",
+      "value": 35989840
+    },
+    {
+      "task": "16x16 Pixel Art Generation",
+      "dataset": "Angais/pixel-art-atlas-1.4m",
+      "metric": "Parameters",
+      "value": 26335232
+    }
+  ],
+  "sources": []
+}

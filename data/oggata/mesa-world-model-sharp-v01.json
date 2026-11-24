@@ -34,7 +34,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 131,
+  "downloads_30d": 132,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
@@ -51,8 +51,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": "mesa-wm/mesa-world-model-sharp-v01",
-  "renamed_at": "2026-11-13T07:25:24.064Z",
+  "renamed_to": "mesa-wm/mesa-world-model-sharp-v1.0",
+  "renamed_at": "2026-11-24T11:57:54.420Z",
   "benchmarks": [],
   "sources": []
 }

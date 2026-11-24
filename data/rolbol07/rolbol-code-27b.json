@@ -35,7 +35,7 @@
     "region:us"
   ],
   "likes": 1,
-  "downloads_30d": 108,
+  "downloads_30d": 140,
   "trending_score": 0,
   "parameters": 27781427952,
   "parameters_human": "27.78B",
@@ -52,8 +52,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "RolBolSystems/RolBol-Code-27B",
+  "renamed_at": "2026-11-24T05:18:40.911Z",
   "benchmarks": [],
   "sources": []
 }

@@ -5,7 +5,7 @@
   "author": "kingjones777",
   "url": "https://huggingface.co/kingjones777/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-Heretic-ROCmFP4-FAST-imatrix-GGUF",
   "created_at": "2026-09-16T23:00:42.000Z",
-  "updated_at": "2026-09-17T01:39:34.000Z",
+  "updated_at": "2026-11-23T09:42:29.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -33,7 +33,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 138,
+  "downloads_30d": 124,
   "trending_score": 0,
   "parameters": 460730096,
   "parameters_human": "460.7M",

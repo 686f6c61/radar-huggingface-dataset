@@ -5,7 +5,7 @@
   "author": "Xylolabs",
   "url": "https://huggingface.co/Xylolabs/gemma-4-E4B-it-Tenstorrent-Tensix-BFP4-PLE4-Cal4x",
   "created_at": "2026-11-15T10:31:21.000Z",
-  "updated_at": "2026-11-22T09:15:45.000Z",
+  "updated_at": "2026-11-24T02:36:08.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "any-to-any",

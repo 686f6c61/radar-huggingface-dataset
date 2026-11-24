@@ -2,103 +2,96 @@
 
 ## Resumen
 
-CARE Gemma 4 E2B-it Math seed 43 es un ajuste fino del modelo multimodal Gemma 4 E2B-it de Google DeepMind, publicado por el investigador Hector G. Rodriguez. El modelo ha sido post-entrenado con CARE (Cross-question Abstention Reward Estimation), una técnica de aprendizaje por refuerzo descrita en el paper *Cross-Question Reliable Reinforcement Learning* (Rodriguez y Rohrbach). El objetivo no es mejorar la precisión matemática per se, sino enseñar al modelo a verbalizar una puntuación de confianza calibrada junto a cada respuesta, de modo que un sistema pueda abstenerse o derivar a un humano o a un modelo mayor cuando la confianza sea baja.
+CARE-Gemma-4-E2B-it-Math-seed43 es un ajuste fino (post-entrenamiento) del modelo multimodal google/gemma-4-E2B-it de Google DeepMind, publicado por el autor hector-gr. El modelo se entrena sobre el conjunto de datos Big-Math-Digits (mehuldamani/big-math-digits) con el objetivo de que verbalice la confianza en sus propias respuestas matemáticas, siguiendo el método CARE (Cross-question Abstention Reward Estimation) descrito en el artículo *Cross-Question Reliable Reinforcement Learning* de Hector G. Rodriguez y Marcus Rohrbach.
 
-El checkpoint parte de Gemma 4 E2B-it, un transformer multimodal (texto, imagen y audio) con aproximadamente 5.500 millones de parámetros totales según los pesos en safetensors, y ha sido ajustado exclusivamente sobre el dataset Big-Math-Digits. El post-entrenamiento es solo de texto: los codificadores de visión y audio se congelaron y no se evaluaron.
+El problema que aborda es la predicción selectiva: permitir que un sistema se abstenga o derive a un humano o a un modelo más potente las preguntas en las que no está seguro. A diferencia de los enfoques puntuales que premian confianza 1 en aciertos y 0 en fallos, CARE calcula recompensas sobre conjuntos de pares pregunta-respuesta, induciendo un umbral de abstención por cada tolerancia al riesgo. Según el resumen del autor, esto eleva la cobertura a riesgo del 5 % (C@5) en MATH-500, GSM8K y Big-Math-Digits del 0,8 % al 42,4 % frente a recompensas puntuales de coincidencia con la corrección.
 
-La relevancia del modelo es metodológica: CARE sustituye la recompensa binaria punto a punto (confianza 1 si acierta, 0 si falla) por una recompensa relativa entre preguntas del mismo lote. Según el paper, esto eleva la cobertura a un 5 % de riesgo (C@5) en matemáticas del 0,8 % al 42,4 % frente a recompensas de coincidencia de corrección. Este checkpoint concreto (semilla 43) reporta C@5 en dominio de 3,5 % y fuera de dominio de 19,2 %.
+El checkpoint tiene 5.506.950.723 parámetros según los pesos en safetensors y un repositorio de 11 GB. Es un ajuste de solo texto: los codificadores de visión y audio del modelo base quedaron congelados y el uso multimodal no se ha evaluado. Se distribuye bajo licencia Apache 2.0.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer multimodal (familia Gemma 4), fine-tune de `google/gemma-4-E2B-it`; codificadores de visión y audio congelados |
-| Parametros totales | 5.506.950.723 (según safetensors) |
-| Parametros activos | no disponible |
-| Longitud de contexto | no disponible (la evaluación usa un límite de generación de 4096 tokens) |
-| Tipos de cuantizacion | no disponible (pesos publicados en safetensors; no se documentan GGUF ni otras cuantizaciones) |
+| Arquitectura | Transformer multimodal (Gemma 4 E2B-it) con ajuste fino de solo texto; detalles internos no disponibles |
+| Parámetros totales | 5.506.950.723 |
+| Parámetros activos | no disponible |
+| Longitud de contexto | no disponible (la generación se evalúa con límite de 4096 tokens) |
+| Tipos de cuantización | no disponible |
 | Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
 | Formato de pesos | safetensors (librería transformers) |
 
 ## Arquitectura y entrenamiento
 
-El modelo hereda la arquitectura de Gemma 4 E2B-it: un transformer multimodal con torres de visión y audio que, en este checkpoint, permanecen congeladas. El ajuste fino es de tipo RL (aprendizaje por refuerzo) centrado en la calibración de la confianza verbalizada, no en la capacidad de resolución matemática. El entrenamiento se realizó sobre el dataset `mehuldamani/big-math-digits`, con configuración documentada en `training_config.yaml`: batch por dispositivo de 4, acumulación de gradiente de 96 y longitud máxima de completado de 4096 tokens.
+El modelo parte de google/gemma-4-E2B-it (revisión 70af34e20bd4b7a91f0de6b22675850c43922a03), un modelo multimodal de Gemma 4 con codificadores de visión y audio. El post-entrenamiento es exclusivamente de texto: los codificadores multimodal se congelaron y no se evaluó el uso multimodal. No se detalla en la información disponible la composición exacta del dataset más allá de Big-Math-Digits, ni el número de tokens de entrenamiento.
 
-La innovación central es CARE. En lugar de premiar cada respuesta contra su propia etiqueta binaria de corrección, CARE calcula, para cada lote de pares pregunta-respuesta, umbrales de abstención a varios niveles de tolerancia al riesgo y recompensa cada confianza por situarse en el lado correcto del umbral inducido por el conjunto. Así, la confianza de una respuesta se refuerza en relación con las demás preguntas, preservando la información de ordenación que la recompensa binaria destruye al empujar los valores a 0 y 1. La evaluación se realizó con una sola completación, temperatura 0 y el prompt de sistema exacto incluido en `system_prompt.txt`, usando la plantilla de chat guardada y todos los EOS IDs de `generation_config.json`.
+El entrenamiento aplica el método CARE, un esquema de aprendizaje por refuerzo que calcula recompensas sobre conjuntos de pares pregunta-respuesta en lugar de forma individual. Para cada tolerancia al riesgo se induce un umbral de abstención a partir de las confidencias del conjunto, y cada confianza se premia por situarse en el lado correcto del umbral. La configuración de entrenamiento incluye batch por dispositivo de 4, acumulación de gradientes de 96 y longitud máxima de completion de 4096 tokens (training_config.yaml). El modelo produce salidas con etiquetas `<answer>...</answer>` y `<confidence>...</confidence>`, y requiere el system prompt exacto de system_prompt.txt, la plantilla de chat guardada y todos los EOS IDs de generation_config.json.
 
 ## Capacidades
 
-- Generación de texto conversacional y resolución de problemas matemáticos (dominio principal del ajuste: Big-Math-Digits).
-- Verbalización de confianza: cada salida incluye etiquetas `<answer>...</answer>` y `<confidence>...</confidence>`.
-- Predicción selectiva: permite ordenar respuestas por confianza y fijar un umbral de abstención sobre datos de validación.
-- Razonamiento de múltiples pasos en problemas matemáticos y de conocimiento general (evaluado fuera de dominio en CommonsenseQA, GPQA, SimpleQA, TriviaQA y HotpotQA).
-- Capacidad multimodal heredada de Gemma 4 E2B-it (imagen y audio), aunque no evaluada y con los codificadores congelados.
-- Soporte de tool calling y function calling: no disponible en la información proporcionada.
-- Capacidades de agente autónomo: no disponible en la información proporcionada.
-- Capacidades multilingües: no disponibles en la información proporcionada.
+- Generación de texto y razonamiento matemático con verbalización de confianza en la respuesta.
+- Predicción selectiva: asigna una puntuación de confianza que permite ordenar respuestas y fijar umbrales de abstención o derivación.
+- Salida estructurada con las etiquetas `<answer>` y `<confidence>`.
+- Conversación multi-turno mediante plantilla de chat (pipeline text-generation, tag conversational).
+- Soporte de tool calling / function calling: no disponible en la información proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
+- Capacidades multilingües: no disponible en la información proporcionada.
+- Capacidades especiales: no se ha evaluado el uso multimodal (visión y audio congelados durante el ajuste).
 
 ## Casos de uso
 
-- Enrutamiento con abstención en asistentes matemáticos: el modelo responde y emite una confianza; el sistema compara esa puntuación con un umbral calibrado en un conjunto de validación y deriva a un modelo mayor o a un humano las respuestas por debajo del umbral, reduciendo el riesgo de error en producción.
-- Evaluación automática con control de riesgo: en pipelines de corrección de ejercicios, se puede fijar una tolerancia (por ejemplo, 5 % de riesgo) y aceptar solo el subconjunto de respuestas cuya cobertura garantice ese nivel de error.
-- Triaje en atención al cliente técnica: para consultas con componente de cálculo (facturación, dosis, conversiones de unidades), el modelo emite confianza y el sistema escala a un agente humano cuando la certeza es insuficiente.
-- Generación aumentada con verificación selectiva: en lugar de verificar todas las respuestas con un segundo modelo, se verifica solo aquellas con confianza baja, reduciendo coste computacional.
-- Investigación en calibración y uncertainty quantification: sirve como checkpoint de referencia (semilla 43) para reproducir los resultados del paper y comparar con recompensas binarias punto a punto.
-- Filtrado de datos sintéticos: al generar pares pregunta-respuesta matemáticos, se descartan los de confianza baja para construir datasets de entrenamiento más limpios.
-- Sistemas de tutoría adaptativa: el tutor puede mostrar la respuesta con un indicador de seguridad y recomendar revisión docente cuando la confianza sea baja.
+- Enrutamiento con abstención en asistentes matemáticos: el modelo responde y adjunta una confianza; un umbral fijado sobre datos de validación permite derivar a un humano o a un modelo mayor las respuestas de baja confianza, maximizando la cobertura a un riesgo controlado.
+- Evaluación de riesgo en pipelines de resolución automática: en un servicio de resolución de problemas matemáticos, ordenar las respuestas por confianza y aplicar un umbral de cobertura al 5 % permite acotar la tasa de error aceptable por el usuario.
+- Triaje en atención al estudiante: clasificar las consultas en "resueltas con seguridad" frente a "requieren revisión docente", usando la confianza verbalizada como señal de derivación.
+- Generación de datos etiquetados por confianza: producir pares respuesta-confianza para entrenar o calibrar modelos de enrutamiento o de estimación de incertidumbre en dominios matemáticos.
+- Investigación en calibración y RLHF: servir como checkpoint de referencia (seed 43) para reproducir y comparar el método CARE frente a recompensas puntuales de coincidencia con la corrección.
+- Filtrado de respuestas en bases de conocimiento: descartar automáticamente las respuestas por debajo de un umbral de confianza antes de incorporarlas a un corpus de entrenamiento o a una base documental.
 
 ## Benchmarks y rendimiento
 
-Resultados de predicción selectiva reportados en la model card para este checkpoint (valores en %; C@r es cobertura a riesgo r; AURC, menor es mejor). ID: big-math-digits, math-500, gsm8k. OOD: commonsenseqa, gpqa, simpleqa, trivia, hotpotqa.
+Resultados de predicción selectiva del checkpoint (valores en %; C@r es cobertura a riesgo r; AURC menor es mejor). ID: big-math-digits, math-500, gsm8k. OOD: commonsenseqa, gpqa, simpleqa, trivia, hotpotqa.
 
-| Metrica | ID | OOD |
-|---|---:|---:|
-| C@0 | 0,0 | 2,2 |
-| C@1 | 0,0 | 2,5 |
-| C@5 | 3,5 | 19,2 |
-| C@10 | 42,1 | 39,4 |
-| AURC (menor es mejor) | 15,3 | 34,7 |
-| Accuracy | 73,3 | 54,6 |
+| Conjunto | C@0 | C@1 | C@5 | C@10 | AURC ↓ | Exactitud |
+|---|---:|---:|---:|---:|---:|---:|
+| ID | 0,7 | 0,7 | 0,7 | 32,5 | 15,0 | 74,4 |
+| OOD | 0,6 | 0,6 | 9,0 | 20,6 | 36,7 | 53,8 |
 
-La model card indica que la tabla de Gemma del paper reporta la media de las semillas 43 y 44, por lo que estos valores corresponden a una sola semilla y no son directamente comparables con la media publicada. No se han proporcionado resultados de MMLU, HumanEval, GSM8K estándar ni otros benchmarks en la información disponible.
+El artículo reporta, para la tabla de Gemma, la media de las semillas 43 y 44. No se han publicado en la información disponible resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) más allá de estos datos de predicción selectiva.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible en la información proporcionada. Como referencia orientativa, un modelo de 5.500 millones de parámetros en FP16 requiere del orden de 11 GB solo para pesos, a lo que hay que sumar caché KV y overhead del runtime; en cuantización de 8 bits bajaría a unos 5,5-6 GB y en 4 bits a unos 3-3,5 GB, aunque no se documentan cuantizaciones oficiales.
-- GPU recomendadas: no disponible en la información proporcionada. Por tamaño, cabría en GPU de consumo con suficiente VRAM (por ejemplo, RTX 4090 de 24 GB en FP16), pero el requisito de un runtime compatible con Gemma 4 limita las opciones.
-- Cabe en GPU de consumo: probablemente sí en FP16 con 24 GB o más, y en cuantizaciones de 8/4 bits en GPUs de 8-12 GB, aunque sin confirmación oficial.
-- Opciones de despliegue: transformers (librería declarada). El modelo requiere un runtime capaz de ejecutar Gemma 4; no se documentan integraciones con vLLM, llama.cpp, Ollama ni TGI.
-- Latencia y throughput: no disponibles en la información proporcionada.
-- Nota: el repo ocupa 11,0 GB, coherente con pesos en FP16/BF16.
+- VRAM estimada para inferencia: no disponible de forma explícita; con 5.506.950.723 parámetros, en fp16 se requieren aproximadamente 11 GB solo para pesos, más memoria para activaciones y caché KV.
+- GPU recomendadas: no disponible en la información proporcionada.
+- Cabe en GPU de consumo: no confirmado en la información disponible; por tamaño de pesos, los modelos de 24 GB de VRAM serían el límite inferior razonable en precisión reducida, aunque no se documenta.
+- Opciones de despliegue: transformers (librería declarada); requiere un runtime compatible con Gemma 4 y la plantilla de chat y generation_config.json guardados. No se documentan vLLM, llama.cpp, Ollama ni TGI.
+- Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
+| Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| CARE Gemma 4 E2B-it Math seed 43 | 5.506.950.723 | no disponible | Fine-tune RL para confianza verbalizada en matemáticas | Apache 2.0 | Hugging Face |
-| google/gemma-4-E2B-it (base) | no disponible | no disponible | Modelo multimodal base sin calibración de confianza | Apache 2.0 | Hugging Face |
-| Gemma 4 E2B-it con recompensa binaria punto a punto | no disponible | no disponible | Post-entrenamiento con recompensas de coincidencia de corrección (referencia del paper) | no disponible | no disponible |
+| CARE-Gemma-4-E2B-it-Math-seed43 | 5.506.950.723 | no disponible | Ajuste CARE para confianza verbalizada en matemáticas | Apache 2.0 | Hugging Face |
+| google/gemma-4-E2B-it (base) | no disponible | no disponible | Multimodal generalista sin post-entrenamiento de confianza | Apache 2.0 | Hugging Face |
+| Alternativas de predicción selectiva (p. ej. RLCR, Damani et al. 2025) | no disponible | no disponible | Recompensas binarias de corrección | no disponible | no disponible |
 
-No se dispone de datos de benchmarks de los modelos comparables en la información proporcionada, por lo que la comparación cuantitativa de rendimiento no está disponible.
+No se dispone en la información proporcionada de datos comparativos de rendimiento frente a estos modelos.
 
 ## Limitaciones y advertencias
 
-- Una puntuación de confianza no es una garantía de corrección; debe calibrarse un umbral sobre datos de validación representativos del dominio de despliegue.
-- El ajuste se realizó solo sobre Big-Math-Digits: el rendimiento en dominios ajenos a matemáticas es menor (accuracy OOD de 54,6 % frente a 73,3 % en dominio) y la calibración puede degradarse.
-- Los codificadores de visión y audio están congelados y el uso multimodal no se ha evaluado; no debe asumirse un comportamiento fiable en imagen o audio.
-- Es imprescindible usar el prompt de sistema exacto de `system_prompt.txt`, la plantilla de chat guardada y todos los EOS IDs de `generation_config.json`; desviarse de esta configuración puede invalidar la calibración.
-- La evaluación se hizo con una sola completación y temperatura 0; el comportamiento con muestreo múltiple o temperaturas altas no está documentado.
-- El checkpoint corresponde a una sola semilla (43); la variabilidad entre semillas no se refleja en esta ficha.
-- Requiere un runtime compatible con Gemma 4, lo que puede limitar el despliegue en herramientas estándar de inferencia.
-- Sesgos conocidos: no disponibles en la información proporcionada; al heredar el modelo base, es razonable esperar los sesgos del corpus de entrenamiento de Gemma, pero no se documentan.
-- Riesgo de alucinación: no cuantificado en la información proporcionada; la confianza verbalizada está pensada precisamente para mitigar el impacto, no para eliminar el error.
-- Licencia Apache 2.0, que permite uso comercial; se incluyen la licencia y el aviso de modificación del modelo base, que deben conservarse.
+- Una puntuación de confianza no garantiza la corrección de la respuesta; debe calibrarse un umbral sobre datos de validación adecuados.
+- El ajuste es de solo texto: los codificadores de visión y audio están congelados y el uso multimodal no se ha evaluado.
+- Requiere el system prompt exacto, la plantilla de chat y todos los EOS IDs; su uso fuera de esa configuración puede degradar la calidad de la confianza verbalizada.
+- La evaluación se realizó con una única completion, temperatura 0 y límite de 4096 tokens; otros ajustes de decodificación no están validados.
+- Sesgos conocidos: no disponible en la información proporcionada.
+- Riesgo de alucinación: no cuantificado en la información disponible; la exactitud ID reportada es del 74,4 % y la OOD del 53,8 %.
+- Limitaciones de contexto e idioma: no disponibles.
+- Licencia Apache 2.0, que permite uso comercial; se incluyen la licencia y el aviso de modificación del modelo base.
+- El método CARE está diseñado para escenarios con tolerancia al riesgo no nula; confianzas extremas (0 o 1) aportan poca información comparativa entre respuestas.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/hector-gr/CARE-Gemma-4-E2B-it-Math-seed43
 - Modelo base: https://huggingface.co/google/gemma-4-E2B-it
 - Dataset de entrenamiento: https://huggingface.co/datasets/mehuldamani/big-math-digits
-- Paper citado: *Cross-Question Reliable Reinforcement Learning*, Hector G. Rodriguez y Marcus Rohrbach (no se proporciona URL en la información disponible)
-- Trabajo relacionado citado: *RLCR: Beyond Binary Rewards: Training LMs to Reason About Their Uncertainty* (Damani et al., 2025) (no se proporciona URL en la información disponible)
+- Artículo CARE: *Cross-Question Reliable Reinforcement Learning*, Hector G. Rodriguez y Marcus Rohrbach (enlace no disponible)
+- Artículo RLCR: *Beyond Binary Rewards: Training LMs to Reason About Their Uncertainty*, Damani et al., 2025 (enlace no disponible)

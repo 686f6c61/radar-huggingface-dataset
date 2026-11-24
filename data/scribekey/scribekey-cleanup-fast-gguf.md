@@ -2,108 +2,100 @@
 
 ## Resumen
 
-ScribeKey Fast es un modelo de limpieza de transcripciones: recibe texto ya transcrito (no audio) y devuelve esa misma transcripcion normalizada, con puntuacion, mayusculas, muletillas eliminadas y un registro ajustable. Lo desarrolla ScribeKey y esta disenado para ejecutarse en el propio dispositivo dentro de un flujo de dictado, no como asistente conversacional general. Esta ficha cubre la build GGUF Q8_0 publicada, de 354.483.968 parametros (clase 350M) y 361,7 MiB en disco.
+ScribeKey Fast es un modelo de limpieza de transcripciones (transcript cleanup) para ingles, desarrollado por ScribeKey. No es un asistente conversacional general ni un modelo de reconocimiento de voz: recibe texto ya transcrito y devuelve ese texto normalizado, corrigiendo muletillas, autocorrecciones habladas y puntuacion. La version aqui descrita es la cuantizacion GGUF Q8_0 del checkpoint `v1.1`, publicada en octubre de 2026.
 
-El modelo es una continuacion de Sotto (de juanquivilla) sobre el base LFM2.5-350M-Base de Liquid AI, y sustituye a Sotto en el producto de ScribeKey. La release `v1` corresponde al paquete `v1-rc1-attribution` con el texto de la model card actualizado; los bytes de los pesos, los terminos y los controles de prompt y runtime no cambian respecto al RC. El experimento interno asociado es `v7-replay-tgt`.
+El modelo parte de la familia LFM2.5 de Liquid AI: concretamente deriva de Sotto (de juanquivilla), construido sobre LFM2.5-350M-Base. Con 354.483.968 parametros totales, es un modelo de clase 350M disenado para ejecutarse en local con latencia baja, incluido en telefonos moviles. Su relevancia actual esta en el nicho de dictado y post-procesado de ASR, donde un modelo pequeno y especializado puede superar a un LLM grande en coste y latencia.
 
-Su relevancia practica esta en el nicho: un modelo pequeno, con latencia de decenas o cientos de milisegundos en movil y una interfaz de prompt muy restringida (tres controles de estilo, estructura y contexto), pensado para integrarse en teclados y apps de dictado con requisitos de privacidad. La contrapartida es que solo existe evaluacion frente a modelos internos y que las propias intervalos de confianza publicados no permiten afirmar superioridad frente a su predecesor.
+La version `v1.1` sustituye a `v1` manteniendo arquitectura, tamano, prompt y controles, y mejora el tratamiento de autocorrecciones habladas. La distribucion se hace bajo una licencia compuesta (terminos propios de ScribeKey mas LFM Open License v1.0), no bajo Apache ni MIT.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | No detallada en la informacion disponible; derivada del modelo base LFM2.5-350M-Base de Liquid AI |
+| Arquitectura | Transformer derivado de LFM2.5-350M-Base (via Sotto); detalles de capas no disponibles |
 | Parametros totales | 354.483.968 |
-| Parametros activos | No aplica (no se documenta una arquitectura MoE) |
-| Longitud de contexto | 4.096 tokens en la configuracion de referencia (`llama-server -c 4096`); no se documenta la longitud nativa maxima |
-| Tipos de cuantizacion | Q8_0 unicamente; el autor indica que no incluye bits menores por falta de evaluacion de calidad |
-| Idiomas soportados | Ingles (`en`) |
-| Licencia | `scribekey-fast-model-terms-v1.0-with-lfm-open-license-v1.0` (LFM Open License v1.0 con condiciones de ingresos, mas terminos adicionales de ScribeKey) |
-| Formato de pesos | GGUF |
-| Fichero publicado | `scribekey-cleanup-fast-350m-v1-Q8_0.gguf`, 379.219.904 bytes (361,7 MiB), SHA-256 `bbce6fe5dc52080366ea65768f96e8d6265c45c1925d9a2e3d03de32856295cc` |
-| Modelo base | `scribekey/scribekey-cleanup-fast` (relacion: quantized) |
-| Herramienta de conversion | llama.cpp, commit `4c1a0af40d88c7fbb3b15c85bf2e8016d1d5b64c` (pin de runtime de ScribeKey) |
-| Tarea | Limpieza y normalizacion de transcripciones de voz a texto |
-| Plantilla de chat | Hereda la plantilla LFM, pero el autor indica explicitamente que no debe usarse el formateo automatico: modo completion en crudo con el prompt de tarea |
+| Parametros activos | no disponible (no se indica que sea MoE) |
+| Longitud de contexto | 4096 tokens (valor usado en el ejemplo de despliegue con `-c 4096`); maximo nativo no disponible |
+| Tipos de cuantizacion | Solo Q8_0 evaluada y publicada; cuantizaciones de menor bit no incluidas por no haber sido evaluadas |
+| Idiomas soportados | Ingles (en) |
+| Licencia | scribekey-fast-model-terms-v1.0-with-lfm-open-license-v1.0 (LFM Open License v1.0 con condicion de ingresos comerciales) |
+| Formato de pesos | GGUF (fichero `scribekey-cleanup-fast-350m-v1.1-Q8_0.gguf`, 379.219.904 bytes / 361,7 MiB) |
 
 ## Arquitectura y entrenamiento
 
-La model card no describe la arquitectura interna ni el proceso de entrenamiento. Lo que si documenta es la cadena de derivacion: LFM2.5-350M-Base de Liquid AI, pasado por Sotto (de juanquivilla, con aviso MIT preservado en `NOTICE`) y continuado por ScribeKey como ScribeKey Fast. La release publica es la `v1`, experimento `v7-replay-tgt`. No se indican numero de tokens de entrenamiento, composicion del dataset, ni si hubo RLHF o DPO; el autor senala ademas que el historial de datos heredado de Sotto no se ha reconstruido de forma independiente.
+El modelo es una continuacion de Sotto, que a su vez se basa en LFM2.5-350M-Base de Liquid AI. La model card no detalla el numero de capas, cabezas de atencion ni si emplea atencion lineal u otras variantes de la familia LFM; esa informacion figura como no disponible. El checkpoint conserva la plantilla de chat heredada de LFM, pero el autor advierte explicitamente de que no debe usarse el formateo automatico de chat: la inferencia debe hacerse en modo de completado crudo con un prompt de tarea exacto que incluye un token BOS (`<|startoftext|>`), un bloque `### Input:` con controles y texto, y un bloque `### Output:`.
 
-El rasgo tecnico definitorio no es la arquitectura sino la interfaz: el prompt es fijo y con plantilla propia. Se construye como `<|startoftext|>### Input:\n{control}\n{raw}\n\n### Output:\n`, donde `control` contiene tres etiquetas obligatorias: estilo (`casual`, `semi-casual`, `semi-formal`, `formal`), estructura (`prose`, `lists`) y contexto (`general`, `email`). La decodificacion evaluada es greedy (`temperature 0`, `top_k 1`, `top_p 1.0`, `repeat_penalty 1.0`, `seed 42`), con un unico BOS, sin mensaje de sistema, sin modo thinking y con `n_predict` de 256 y parada en `###` y `<|im_end|>`. El autor indica que el formateo de listas se completa en la app despues de la generacion, no en el modelo.
+El prompt incorpora tres controles discretos: estilo (`casual`, `semi-casual`, `semi-formal`, `formal`), estructura (`prose`, `lists`) y contexto (`general`, `email`). La decodificacion recomendada es greedy (`temperature 0`, `top_k 1`, `top_p 1.0`, `repeat_penalty 1.0`, `seed 42`), sin mensaje de sistema y sin modo thinking. La conversion y cuantizacion se realizaron con un pin concreto de llama.cpp (`4c1a0af40d88c7fbb3b15c85bf2e8016d1d5b64c`).
 
-Como comprobacion de inferencia, el autor ejecuto dos casos de humo publicos en CPU con BF16 dos veces cada uno, obteniendo salidas identicas (`bf16-smoke.json`); lo califica explicitamente como chequeo de inferencia, no como benchmark de calidad BF16.
+No se publican datos sobre volumen de tokens de entrenamiento, composicion del dataset ni si hubo RLHF o DPO. La model card menciona que el historial de datos heredado de Sotto no ha sido reconstruido de forma independiente y que las fuentes de entrenamiento incluyen datos CC BY y CC BY-SA.
 
 ## Capacidades
 
-- Limpieza de transcripciones en ingles: eliminacion de muletillas, correccion de puntuacion y mayusculas, normalizacion de texto dictado.
-- Control de registro en cuatro niveles: `casual`, `semi-casual`, `semi-formal` y `formal` (por defecto, `semi-casual`).
-- Control de estructura de salida: `prose` o `lists`.
-- Control de contexto de aplicacion: `general` o `email` (por defecto `semi-formal`/`email` en apps de correo).
-- Generacion de texto condicionada a tarea, en modo completion en crudo, con prompt fijo y determinista.
-- No soporta tool calling ni function calling segun la informacion disponible.
-- No se documentan capacidades de agente, razonamiento multi-paso, vision, audio ni modo thinking; de hecho, el autor prohibe explicitamente el modo thinking en la inferencia evaluada.
-- Multilingue: no. Solo ingles.
-- No es un asistente conversacional general: el autor lo declara fuera de alcance.
+- Limpieza de transcripciones en ingles: eliminacion de muletillas, correccion de puntuacion y normalizacion de texto dictado.
+- Tratamiento de autocorrecciones habladas (mejorado en `v1.1` respecto a `v1`).
+- Control de estilo de salida en cuatro niveles (casual, semi-casual, semi-formal, formal).
+- Control de estructura de salida: prosa o listas.
+- Control de contexto de aplicacion: general o correo electronico.
+- Inferencia en modo completado crudo con prompt de tarea especifico.
+- No soporta tool calling, function calling ni razonamiento multi-paso.
+- No soporta vision ni audio: la entrada es siempre texto transcrito.
+- Monolingue: solo ingles.
 
 ## Casos de uso
 
-- Limpieza en tiempo real de dictado en teclado movil: el modelo recibe la transcripcion cruda del ASR y devuelve texto con puntuacion y registro adecuado antes de insertarlo en el campo de texto. La latencia medida en un S25 Ultra (p50/p95 de 155/178 ms en entradas cortas) encaja con la interaccion de teclado.
-- Redaccion de correos por voz: con el control `semi-formal`/`email`, convierte un dictado coloquial en un parrafo de correo con registro y estructura adecuados; la app aplica despues el formato de lista si hace falta.
-- Post-procesado de pipelines de ASR en servidor: al ser un GGUF de 361,7 MiB, se puede desplegar con `llama-server` en CPU junto al motor de reconocimiento (el autor cita a Parakeet residente en la misma maquina) para normalizar lotes de transcripciones antes de almacenarlas.
-- Notas de reunion y actas: el control `lists` permite obtener enumeraciones de acciones o puntos tratados a partir de una transcripcion larga, dentro de la ventana de 4.096 tokens configurada.
-- Accesibilidad y dictado asistido: usuarios con movilidad reducida pueden dictar sin revisar manualmente mayusculas, puntuacion ni muletillas, manteniendo el texto en el dispositivo.
-- Procesamiento offline con requisitos de privacidad: al caber en un movil o en un portatil sin GPU dedicada, permite limpiar transcripciones sin enviar contenido a un servicio externo.
-- Normalizacion de subtitulos y transcripciones de audio: eliminacion de repeticiones y muletillas del ASR antes de publicar subtitulos, con un modelo de 350M que se puede ejecutar por CPU en paralelo al resto del pipeline.
+- Dictado en aplicaciones de notas: el modelo recibe la transcripcion ASR y devuelve texto con puntuacion y sin muletillas, con estilo semi-casual y estructura en prosa por defecto.
+- Redaccion de correos por voz: con contexto `email` y estilo semi-formal, convierte un dictado desordenado en un cuerpo de correo legible antes de insertarlo en el cliente de correo.
+- Post-procesado en pipelines de ASR: se coloca como etapa posterior a un motor de reconocimiento de voz para normalizar la salida sin cambiar el contenido factico.
+- Formateo de listas dictadas: con estructura `lists`, transforma enumeraciones habladas en listas; el autor indica que el formateo final de listas se realiza en la app tras la generacion.
+- Asistentes de voz en movil: su tamano de 350M y su formato GGUF Q8_0 (361,7 MiB) permiten ejecucion local en telefono con latencia baja, evitando enviar transcripciones a la nube.
+- Herramientas de accesibilidad: limpieza de texto dictado para usuarios con dificultades motoras, donde las autocorrecciones habladas son frecuentes y el modelo `v1.1` las trata mejor que `v1`.
+- Integracion en editores de texto y suites ofimaticas: normalizacion de dictado antes de insertar el texto en el documento, con control de estilo segun la aplicacion destino.
 
 ## Benchmarks y rendimiento
 
-No se han publicado puntuaciones absolutas en la informacion disponible. El autor publica unicamente deltas relativos sobre el benchmark interno CleanBench v1 (3.366 casos, 3.358 puntuados), evaluados en el limite de la app con `semi-casual`/`prose`/`general`:
+La model card reporta una evaluacion sobre un conjunto held-out congelado de ScribeKey de 7.516 filas, comparando `v1.1` con `v1` en configuracion semi-casual/prose/general en el limite de la aplicacion:
 
-| Benchmark / metrica | Resultado de esta build (Q8_0) | Comparacion | Intervalo de confianza 95% |
-|---|---|---|---|
-| CleanBench v1, inserciones exactas | Diferencia de +1,9 pp | Frente a Sotto v6 | −0,1 a +3,9 pp |
-| CleanBench v1, tasa de edicion de tokens | Diferencia de −0,001 | Frente a Sotto v6 | −0,010 a +0,009 |
-| CleanBench v1, inserciones exactas | Diferencia de −1,2 pp | Frente a S1-mini | −3,3 a +1,1 pp |
-| CleanBench v1, metrica de valores nuevos | 4,6% | Absoluta | No disponible |
+| Metrica | Resultado de v1.1 frente a v1 |
+|---|---|
+| Tasa de edicion de tokens de autocorreccion | −0,036 (IC 95%: −0,046 a −0,026) |
+| Exact match | +3,3 puntos (+2,4 a +4,3) |
+| Cambios en entrada limpia | −0,9 puntos |
+| Valores facticos nuevos | −0,3 puntos (−0,7 a +0,1) |
 
-El propio autor advierte que estos intervalos no establecen superioridad ni equivalencia frente a Sotto v6 ni frente a S1-mini. No hay datos publicados de MMLU, HumanEval, GSM8K ni de benchmarks estandar, y no serian representativos para un modelo de limpieza de transcripciones. El p95 de 2.101 ms para entradas largas en S25 Ultra que se cita habitualmente corresponde a la variante `v7-replay`, no a este candidato final.
+No se publican resultados de benchmarks estandar (MMLU, HumanEval, GSM8K u otros) en la informacion disponible. El autor senala que dos casos de humo BF16 en CPU con entradas publicas se ejecutaron dos veces con salidas identicas, pero lo califica como comprobacion de inferencia, no como benchmark de calidad.
 
 ## Requisitos de hardware
 
-- VRAM estimada: los pesos Q8_0 ocupan 361,7 MiB; con cache KV para 4.096 tokens y overhead del runtime, el consumo se mantiene holgadamente por debajo de 1 GB en la practica.
-- Cabe en cualquier GPU consumer con 1 GB o mas de VRAM, y tambien en CPU y en dispositivos moviles. El autor midio la latencia en un Samsung Galaxy S25 Ultra mediante el helper directo.
-- GPU recomendadas: no se documenta ninguna recomendacion de GPU de datacenter (A100, H100); el modelo esta pensado para ejecucion local en movil y en CPU.
-- Despliegue documentado: `llama-server` de llama.cpp con el commit fijado `4c1a0af40d88c7fbb3b15c85bf2e8016d1d5b64c`, endpoint `/completion` compatible con el formato OpenAI-like de llama.cpp. El tag del repo incluye `endpoints_compatible`.
-- No se documentan ni se han evaluado despliegues con vLLM, TGI, Ollama ni otras herramientas; el unico runtime validado es llamacpp.
-- Configuracion de referencia: `-c 4096 -t 2 --temp 0 --seed 42`.
-- Latencia medida (S25 Ultra, helper directo, con Parakeet residente): entradas cortas p50 155 ms / p95 178 ms; entradas largas p50 1.702 ms / p95 2.718 ms. El rendimiento en gama media y el rendimiento end-to-end del producto no se han medido.
-- Throughput (tokens por segundo) no disponible en la informacion proporcionada.
+- VRAM estimada: el fichero Q8_0 ocupa 361,7 MiB, por lo que la inferencia cabe holgadamente en cualquier GPU consumer con al menos 1 GB de memoria libre, ademas del overhead del runtime.
+- GPU recomendadas: cualquier GPU consumer moderna (RTX 4090, RTX 3060 o superiores) es mas que suficiente; tambien tarjetas de datacenter (A100, H100) aunque resultan sobredimensionadas para este modelo.
+- Cabe en GPU consumer: si, en practicamente todas las GPU consumer actuales, y tambien en CPU.
+- Opciones de despliegue: llama.cpp (`llama-server`), con el fichero GGUF; el autor documenta el comando exacto con `-c 4096 -t 2 --temp 0 --seed 42`. Otros runtimes compatibles con GGUF no se mencionan en la model card.
+- Latencia: la latencia y memoria de este fichero concreto no se han medido. Para `v1`, con la misma arquitectura y tamano de fichero, se midieron en un S25 Ultra 155/178 ms (p50/p95) en casos cortos y 1.702/2.718 ms en casos largos.
+- Throughput: no disponible.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Rendimiento en CleanBench v1 | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Idiomas | Licencia | Formato |
 |---|---|---|---|---|---|
-| ScribeKey Fast 350M v1 (Q8_0) | 354.483.968 | 4.096 tokens en la config evaluada | Referencia; +1,9 pp de inserciones exactas frente a Sotto v6 (IC95% −0,1 a +3,9) | Terminos ScribeKey v1.0 + LFM Open License v1.0 (umbral de 10 M USD de ingresos) | Hugging Face, GGUF Q8_0 |
-| Sotto v6 (predecesor, de juanquivilla) | No disponible | No disponible | Base de comparacion del delta anterior | MIT segun el aviso preservado en `NOTICE`, sujeto a los terminos de los datos de origen | Referenciado como predecesor; disponibilidad actual no verificada |
-| S1-mini | No disponible | No disponible | ScribeKey Fast obtiene −1,2 pp de inserciones exactas (IC95% −3,3 a +1,1), sin superioridad demostrada | No disponible | No disponible |
-| LFM2.5-350M-Base (Liquid AI) | Clase 350M (cifra exacta no disponible) | No disponible | No evaluado en CleanBench v1 | LFM Open License v1.0 con condicion de ingresos | Hugging Face, via Liquid AI |
+| ScribeKey Fast (este) | 354,5 M | 4096 (configurado) | en | Terminos ScribeKey + LFM Open License v1.0 | GGUF Q8_0 |
+| ScribeKey Fast v1 | 354,5 M | 4096 (configurado) | en | Terminos ScribeKey + LFM Open License v1.0 | GGUF (tag `v1`) |
+| LFM2.5-350M-Base (Liquid AI) | clase 350M | no disponible | no disponible | LFM Open License v1.0 | no disponible |
+| Sotto (juanquivilla) | clase 350M | no disponible | no disponible | MIT (segun NOTICE) | no disponible |
 
-La comparacion es limitada: no hay datos publicos de parametros ni de contexto de Sotto v6, S1-mini ni del base de Liquid AI en la informacion proporcionada, y las diferencias observadas no son estadisticamente concluyentes. No se han identificado en la busqueda web alternativas publicas del mismo nicho (limpieza de transcripciones) con datos comparables.
+La comparativa con modelos de proposito general de mayor tamano no resulta informativa: ScribeKey Fast esta especializado en limpieza de transcripciones y no compite en tareas de razonamiento o codigo. No se dispone de datos publicos de benchmarks comparables frente a otros modelos de limpieza de transcriptos.
 
 ## Limitaciones y advertencias
 
-- Fidelidad no garantizada: el autor indica explicitamente que la salida puede no ser fiel y recomienda mantener la transcripcion cruda y un mecanismo de fallback.
-- La metrica de valores nuevos del benchmark es del 4,6%, por lo que nombres propios, cifras, negaciones y omisiones requieren verificacion.
-- Los formatos de lista y de correo pueden ser incorrectos; el formateo de listas se completa en la app, no en el modelo.
-- Solo ingles. No hay soporte multilingue documentado.
-- No es un asistente conversacional: usarlo con plantilla de chat automatica, mensajes de sistema o modo thinking queda fuera de la inferencia evaluada y degrada el comportamiento esperado.
-- Ambito de evaluacion estrecho: un unico benchmark interno (CleanBench v1, 3.366 casos), con intervalos de confianza que impiden afirmar superioridad o equivalencia frente a Sotto v6 y S1-mini. No hay benchmarks publicos independientes ni reproduccion por terceros.
-- Cualificacion incompleta: el rendimiento en gama media y el end-to-end del producto estan pendientes; el p95 de 2.101 ms citado frecuentemente corresponde a `v7-replay`, no a esta build final. Las pruebas BF16 en CPU son un chequeo de inferencia, no una evaluacion de calidad.
-- Solo se publica Q8_0. No hay builds de 4 o 5 bits con evaluacion de calidad, lo que limita el despliegue en entornos con restricciones severas de memoria.
-- Licencia: no es Apache ni MIT. Hereda la LFM Open License v1.0 con su condicion de ingresos; las organizaciones con ingresos anuales iguales o superiores a 10 millones de USD deben obtener terminos separados de Liquid AI antes del uso comercial. Es necesario conservar `ADDITIONAL_TERMS.md`, `LICENSE`, `NOTICE` y `MODIFICATIONS.md` al redistribuir, marcar los cambios y mantener el nombre ScribeKey Fast y el credito al editor en selectores y documentacion; las derivadas modificadas deben indicar "Derived from ScribeKey Fast by ScribeKey".
-- Los datos de origen incluyen material CC BY y CC BY-SA y el aviso MIT de Sotto; el autor no resuelve si la clausula share-alike alcanza a los pesos del modelo. No se distribuyen textos ni audios de origen ni las filas ocultas del benchmark.
-- El historial de datos heredado de Sotto no se ha reconstruido de forma independiente, y no se implica respaldo de los proyectos upstream.
+- Solo ingles; no soporta otros idiomas.
+- Riesgo de infidelidad: la salida no esta garantizada como fiel al contenido original. Nombres, numeros, negaciones y omisiones requieren verificacion manual.
+- El autor recomienda conservar las transcripciones originales y un mecanismo de fallback en produccion.
+- El formateo de listas y el diseno de correos pueden ser incorrectos.
+- No es un asistente conversacional: no debe usarse para chat general, tool calling ni razonamiento multi-paso.
+- La plantilla de chat heredada de LFM no debe usarse de forma automatica; hay que emplear el prompt de tarea exacto en modo completado crudo.
+- Licencia restrictiva: LFM Open License v1.0 incluye una condicion de ingresos comerciales; las organizaciones con ingresos anuales iguales o superiores a 10 millones de USD deben obtener terminos separados de Liquid AI antes del uso comercial. No es Apache ni MIT.
+- Obligaciones de atribucion: al redistribuir hay que conservar `ADDITIONAL_TERMS.md`, `LICENSE`, `NOTICE` y `MODIFICATIONS.md`, marcar los cambios y mantener el nombre ScribeKey Fast y el credito al publicador en selectores de modelos y documentacion. Las derivadas modificadas deben acreditar "Derived from ScribeKey Fast by ScribeKey".
+- La model card no resuelve si las clausulas share-alike de las fuentes CC BY/CC BY-SA alcanzan a los pesos del modelo.
+- No se han publicado cuantizaciones de menor bit; solo Q8_0 ha sido evaluada.
 - Sesgos conocidos: no documentados en la informacion disponible.
 
 ## Enlaces
@@ -111,12 +103,7 @@ La comparacion es limitada: no hay datos publicos de parametros ni de contexto d
 - Modelo en Hugging Face: https://huggingface.co/scribekey/scribekey-cleanup-fast-GGUF
 - Modelo base: https://huggingface.co/scribekey/scribekey-cleanup-fast
 - Terminos adicionales: https://huggingface.co/scribekey/scribekey-cleanup-fast-GGUF/blob/main/ADDITIONAL_TERMS.md
-- Licencia: https://huggingface.co/scribekey/scribekey-cleanup-fast-GGUF/blob/main/LICENSE
-- Aviso de atribucion: https://huggingface.co/scribekey/scribekey-cleanup-fast-GGUF/blob/main/NOTICE
-- Registro de modificaciones: https://huggingface.co/scribekey/scribekey-cleanup-fast-GGUF/blob/main/MODIFICATIONS.md
-- Resultados de evaluacion: https://huggingface.co/scribekey/scribekey-cleanup-fast-GGUF/blob/main/evaluation.json
-- Ejemplos: https://huggingface.co/scribekey/scribekey-cleanup-fast-GGUF/blob/main/examples.json
-- Plantilla de prompt de tarea: https://huggingface.co/scribekey/scribekey-cleanup-fast-GGUF/blob/main/prompt-template.jinja
-- Pruebas de humo BF16: https://huggingface.co/scribekey/scribekey-cleanup-fast-GGUF/blob/main/bf16-smoke.json
-- Pesos: https://huggingface.co/scribekey/scribekey-cleanup-fast-GGUF/blob/main/scribekey-cleanup-fast-350m-v1-Q8_0.gguf
-- La busqueda web realizada no ha devuelto enlaces tecnicos relevantes sobre este modelo; los resultados obtenidos no guardan relacion con el contenido de la ficha y se han descartado.
+- Fichero de pesos: https://huggingface.co/scribekey/scribekey-cleanup-fast-GGUF/blob/main/scribekey-cleanup-fast-350m-v1.1-Q8_0.gguf
+- Otros ficheros citados en la model card: `prompt-template.jinja`, `evaluation.json`, `examples.json`, `bf16-smoke.json`, `LICENSE`, `NOTICE`, `MODIFICATIONS.md` (en el repositorio de Hugging Face)
+- LFM2.5-350M-Base (Liquid AI): no disponible en la informacion proporcionada
+- Sotto (juanquivilla): no disponible en la informacion proporcionada
